@@ -7,12 +7,18 @@ cell where its sign differs from the settled sign. Cells where A and its witness
 misreading is invisible here, so this is a LOWER bound on one reader's error); split cells whose look was `doubt` are
 reported three ways: dropped (central), charged to both readers (upper), and charged to neither (lower).
 LAG-V2 (9 Oct 2026) adds one row: the committed v2 transcription against the same settles (central/lower/upper).
-  python3 lag_marks.py [--check]    writes lag_marks.tsv; --check exits 1 if stale."""
+  python3 lag_marks.py [--check]    writes lag_marks.tsv; --check exits 1 if stale.
+LAG-HIRES (13 Oct 2026) adds options, defaults unchanged: --look FILE (settles table, default lag_marks_look.tsv),
+--out FILE (default lag_marks.tsv), --v6179 FILE (the 6179 transcription for the v2 row, default ciphertext_6179_v2.tsv).
+  python3 lag_marks.py --look lag_hires_look.tsv --out lag_hires.tsv --v6179 ciphertext_6179_v3.tsv [--check]"""
 import os, sys, collections
+def opt(name, default):
+    return sys.argv[sys.argv.index(name) + 1] if name in sys.argv else default
+LOOK, OUT, V6179 = opt("--look", "lag_marks_look.tsv"), opt("--out", "lag_marks.tsv"), opt("--v6179", "ciphertext_6179_v2.tsv")
 HERE = os.path.dirname(os.path.abspath(__file__))
 rd = lambda f: [l.split("\t") for l in open(os.path.join(HERE, f), encoding="utf-8").read().splitlines()[1:] if l.strip()]
 cells = rd("lag_marks_cells.tsv")
-look = {(r[0], r[1]): r for r in rd("lag_marks_look.tsv")}   # unit tag (6179/6467), line.pos -> row
+look = {(r[0], r[1]): r for r in rd(LOOK)}   # unit tag (6179/6467), line.pos -> row
 N = {}   # aligned comparisons per unit, from lag_err.tsv (LAG-ERR)
 for r in rd("lag_err.tsv"):
     if not r[0].startswith(("TOTAL", "6179 A-vs", "6467 A-vs")):
@@ -62,7 +68,7 @@ def v2signs(f):
         if c[0]:
             m[f"{c[0]}.{c[1]}"] = c[2]
     return m
-V2 = {"6179": v2signs("ciphertext_6179_v2.tsv"), "6467": v2signs("ciphertext_6467_v2.tsv")}
+V2 = {"6179": v2signs(V6179), "6467": v2signs("ciphertext_6467_v2.tsv")}
 nv2 = sum(len(v) for v in V2.values())
 vs = vd = vdw = 0
 for (tag, cell), lk in look.items():
@@ -75,9 +81,9 @@ for (tag, cell), lk in look.items():
         vs += v != lk[2]
 lines.append("")
 lines.append("v2_vs_settled\tn_tokens\tsettled_cells\tdoubt_cells\tv2_wrong_sure\tv2_differs_doubt\tcentral\tlower\tupper")
-lines.append(f"v2 (6179+6467)\t{nv2}\t{len(look)}\t{vd}\t{vs}\t{vdw}\t{vs/(nv2-vd):.3f}\t{vs/nv2:.3f}\t{(vs+vd)/nv2:.3f}")
+lines.append(f"{'v2' if V6179.endswith('v2.tsv') else os.path.basename(V6179)} (6179+6467)\t{nv2}\t{len(look)}\t{vd}\t{vs}\t{vdw}\t{vs/(nv2-vd):.3f}\t{vs/nv2:.3f}\t{(vs+vd)/nv2:.3f}")
 out = "\n".join(lines) + "\n\nunit\tcell\tA\twitness\tsettled\tlook\twrong\n" + "".join("\t".join(d) + "\n" for d in detail)
-p = os.path.join(HERE, "lag_marks.tsv")
+p = os.path.join(HERE, OUT)
 if "--check" in sys.argv:
     sys.exit(0 if os.path.exists(p) and open(p, encoding="utf-8").read() == out else 1)
 open(p, "w", encoding="utf-8").write(out)

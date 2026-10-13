@@ -149,5 +149,11 @@
       "siblings/12630_contact.jpg",
       "siblings/12631_contact.jpg"
     ]
+  },
+  "crops_hires_13_oct_2026": {
+    "added": "13 Oct 2026, LAG-HIRES",
+    "source": "https://resources.huygens.knaw.nl/media/wvo/images/06000-06999/06179.pdf (embedded JPEGs via pdfimages -j: p2 2237x3142, p3 2208x3189, ~288 ppi; PDF not kept)",
+    "regen": "tools/iiif_lines.py --image <p2.jpg> --region 300,1800,1937,560 --centres 68,238,304,367,435,504 --top-margin 40 --bottom-margin 26; --image <p3.jpg> --region 360,540,1800,330 --centres 71,132,225,276 --top-margin 42 --bottom-margin 24; halves (mid +-120 px) upscaled 1.5x -> <line>a/b.jpg; z_*.jpg reconciler zooms 2x",
+    "files": "images/crops_hires/ (p2L22..p2L28 = page lines; p3L7..p3L9)"
   }
 }

@@ -2053,3 +2053,98 @@ Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (no reading
 - [x] image-check: WC-LAGARDE settled 9 cells; LAG-MARKS settled 41 of 57 split cells, 16 left doubt (resolution-limited); LAG-V2 carried the 7 sure settles into v2
 - [x] retry: syllabary re-scored on the revised spec (negative holds, <= 0.107); wordcode score-gap gate at 0.071 run (negative, <= 0.071 only); wordcode err-only retries [retired], instrument tools/families/wordcode.py via family_run.py (third attempt; control below gate at 0.125), reopens only with a different instrument or pooled ciphertext
 Verdict: keep going: 0 internal gaps; cheapest next: the open siblings step (a same-system pooling sweep for more ciphertext), or a higher-resolution image of 6179 for the doubt cells; rule-7 checks done (LAG-CHECK, both exit 0)
+
+## LAG-HIRES (13 Oct 2026, account 2, LANE DEFAULT-A2-0710, Opus + one Sonnet look)
+
+**Job:** LAG-CHECK's gaps 1 and 3: the LAG-MARKS doubt cells and the two `10`/`18` cells, which were limited by the 150-dpi renders. Box 07:18-08:33 UTC.
+
+**Prior work** (`tools/prior_work.py la-garde-1577 --item-spec 'shelfmark=KHA A 11/XIV C/G-1;date=1577-11-28;sender=La Garde;recipient=Willem van Oranje' --step-type transcribe --offline`): **exit 4**. It owed 1-own, 2-leaf, 3-tomokiyo, 3-solver and 4-editions. Each was `--record`ed from LAG-MARKS' 9 Oct checks (see that section). 1-own was first recorded DONE by mistake and then corrected to CLEAR. The re-run gave **exit 0** ("proceed on the residue: whole item"). One line per check:
+1. Own work (ROOM.md, NOTES.md, HYPOTHESES.md): the live claim is this job. No earlier native-resolution settle exists. CLEAR.
+2. Leaf: 6179 p2/p3 show no gloss or clear copy; the owed crops are 6467's margin. CONTEXT.
+3. Tomokiyo and the solver repositories: as LAG-MARKS, 9 Oct 2026. CLEAR.
+4. Editions: Gachard t.5 p.423 prints the clear part only, and Groen VI omits the cipher. KNOWN-PART, which does not touch the cipher passages.
+
+**Step 1, resolution.** Two requests to resources.huygens.knaw.nl, both 200: 06179.pdf and 06467.pdf. `pdfimages -list` gives:
+
+| PDF | page | embedded image | ppi | vs the 1241x1754 render |
+|---|---|---|---|---|
+| 06179 | 2 | 2237x3142 RGB JPEG | 286 | **1.80x linear** |
+| 06179 | 3 | 2208x3189 RGB JPEG | 290 | **1.78x** |
+| 06467 | 2 | 831x1244 gray JPEG | 113 | **0.67x**, below the existing render |
+
+6179 clears the brief's ~1.5x bar, so step 2 ran. The 6467 PDF cannot settle 6467's two doubt cells (p2L6.3 and p2L11.8). Neither PDF was kept: the folder is near its 30 MB cap, and both re-fetch from the URLs in `images/manifest.json`.
+
+**Crop step** (pasted; native pixels):
+- `tools/iiif_lines.py --image 06179-p2.jpg --region 300,1800,1937,560 --centres 68,238,304,367,435,504 --top-margin 40 --bottom-margin 26` gives page lines L22, L24, L25, L26, L27 and L28.
+- `--image 06179-p3.jpg --region 360,540,1800,330 --centres 71,132,225,276 --top-margin 42 --bottom-margin 24` gives L6 to L9.
+- Each line was cut into halves (overlap 240 px) and upscaled 1.5x. The reconciler also made 2x zooms.
+- All committed in `images/crops_hires/` (1.8 MB; regen in `images/manifest.json` "crops_hires_13_oct_2026").
+
+**Look.** One blind Sonnet call covered the 14 cells on 6179. Candidates came from every reader's value, listed alphabetically with no pass named, and each cell was located by its bare-number neighbours. Result: 4 sure, 10 doubt. The reconciler (this worker) then re-looked every cell on the 2x zooms against the hand's own letter forms:
+- **8 is a loop with a rising ascender** (e.g. p2L28 `.8.10.10.8.8.`).
+- **0 is round**.
+- **The ring-on-stem mark** has a crossbar.
+
+| Cell | LAG-MARKS (150 dpi) | blind look | settled (LAG-HIRES) | |
+|---|---|---|---|---|
+| p2L22.10 | 10 doubt | 10 doubt | 10 | **doubt** (0+tilde / 6 / looped 8 not separable) |
+| p2L22.15 | [mark]3 doubt | 3 doubt | **3** | sure: the stroke runs on into the b of "bien" below |
+| p2L24.8 | 2 doubt | 2 sure | **2** | sure |
+| p2L24.12 | 29^ doubt | 29^ sure | 29^ | **doubt** (4 vs 9 not separable in this hand; the bar is clear) |
+| p2L24.21 | 11 doubt | 11 doubt | **11** | sure: no bar (the 11^ two groups earlier has one) |
+| p2L26.6 | 18 doubt | 18 doubt | **18** | sure: looped 8 with ascender |
+| p2L27.8 | [mark]16 doubt | 16 doubt | [mark]16 | **doubt** (ring-and-stem mark or a descender from the line above) |
+| p2L27.13 | 10 doubt | 18 sure | **18** | sure: same 8 as p2L26.6; the 10 later in the line has a round 0 |
+| p2L27.16 | [mark]12 doubt | [mark]12 doubt | **[mark]12** | sure: ring-on-stem with crossbar |
+| p2L27.28 | 10 doubt | 16^ doubt | **16^** | sure: bar, and the 6 matches the line's other 16 |
+| p2L28.20 | 4 doubt | 4^ sure | **4^** | sure: distinct bar |
+| p3L7.4 | [mark]15 doubt | [mark]15 doubt | **[mark]15** | sure |
+| p3L8.7 | 10 doubt | 10 doubt | 10 | **doubt** (the stroke may be the next mark's crossbar) |
+| p3L9.13 | [mark]11 doubt | [mark]11 doubt | **[mark]11** | sure |
+
+Outcome: 10 of the 14 settled, and 4 stay doubt, plus 6467's 2 untouched. Doubt cells fall from 16 to 6. The two `10`/`18` cells (gap 3) **both read 18**; LAG-MARKS left p2L27.13 at 10.
+
+**Carried forward, never silently.** `build_v3.py` (`--check` exit 0) writes two files:
+- **`lag_hires_look.tsv`**: LAG-MARKS' table with the 14 cells replaced. It adds a provenance column naming the old value.
+- **`ciphertext_6179_v3.tsv`**: v2 with 13 tokens set to H.
+  - Changed: p2L26.6 10->18, p2L27.13 10->18 and p2L28.20 4->4^.
+  - Confirmed from M to H: p2L22.15, p2L24.8, p2L24.21, p2L27.15-16, p2L27.28, p3L7.3-4 and p3L9.12-13.
+  - Its provenance column reads `v2` on every other token.
+
+**v2 is left untouched**, because the committed family runs and their `--check` TSVs are built on it. `lag_marks.py` gained `--look/--out/--v6179` options; their defaults are unchanged, and the default `--check` still exits 0.
+
+**Re-measure** (`python3 lag_marks.py --look lag_hires_look.tsv --out lag_hires.tsv --v6179 ciphertext_6179_v3.tsv`, `--check` exit 0). The statistic and the doubt handling are the same as LAG-MARKS:
+
+| Comparison | Aligned | Splits | Doubt | A wrong | W wrong | central | lower | upper |
+|---|---|---|---|---|---|---|---|---|
+| A vs B | 112 | 12 | 3 | 6 | 4 | 0.046 | 0.045 | 0.071 |
+| A vs L1 | 233 | 51 | 5 | 14 | 34 | 0.105 | 0.103 | 0.124 |
+| **Pooled** | 345 | 63 | 8 | 20 | 38 | **0.086** | 0.084 | **0.107** (74/690 = 0.1072) |
+
+LAG-MARKS gave 0.071 central and 0.067-0.125 bounds. **Read-out:** the bracket narrows from 0.067-0.125 to 0.084-0.107.
+- The upper bound now sits **at** LAG-SYL's 0.107 licensing level (0.1072, over it in the fourth place). It is no longer at 0.125.
+- The central figure **rose**, because the cells that settled went against the readers: pass A read 10 at both `18` cells.
+- The error therefore lies **between 0.071 and 0.107**. It is not clearly below 0.107, so the covered-band claim is still not made, and it is clearly **not below 0.071**.
+- Per the brief, no re-test is named. Wordcode stays at or above its 0.071 crossover, so its err-only retries stay [retired]. Syllabary's coverage remains undecided by a hair.
+- Against the transcription now on file: v3 differs from **0** sure settles. The tool prints 3, but those are p2L27.16, p3L7.4 and p3L9.13, where v3 carries the mark as its own preceding token, a representation difference only. With the 4 doubt cells, v3 reads 0.013-0.038.
+
+No family was re-run (brief). Grades: 0 cipher tokens read (H 0, C 0, S 0, M 0, I 0); no reading. Status unchanged (`open`).
+
+Requests: resources.huygens.knaw.nl 2 (both 200, huygens take/release posted). Vision: 1 Sonnet call (16 half-line crops) plus reconciler zooms (7 crops).
+
+Files: `build_v3.py`, `lag_hires_look.tsv`, `ciphertext_6179_v3.tsv`, `lag_hires.tsv`, `lag_marks.py` (options only), `images/crops_hires/`, `images/manifest.json`, `prior-work.tsv`, `look.tsv` (tool-written), and this section.
+
+## Remaining gaps (LAG-HIRES, 13 Oct 2026)
+Read so far: 0 of 229 base-code / 239 marks-kept tokens graded H/C/S (no reading exists; homophonic/masc excluded by LAG-GAP; syllabary (regular) excluded at error <= 0.107; wordcode (codes=marked) excluded at error <= 0.071 only; target one-reader marks-kept error now 0.086 central, 0.084-0.107 bounds, LAG-HIRES at ~288 ppi)
+- six doubt cells, marks-kept error 0.084-0.107 - blocker: needs-physical-access; four 6179 cells (p2L22.10, p2L24.12, p2L27.8, p3L8.7) stay unseparable on the WVO PDF's ~288 ppi scan (the best public image) and two 6467 cells have only a 113 ppi PDF; the KHA originals (or a KHA reproduction) are the only route left
+- running-key / code-layer designs at N=229 - blocker: too-short; LAG-NEXT: the running_key control reads 27% with no noise on the target's 15 message lengths; reopens only with more same-system ciphertext (pooling) or a different instrument
+
+## Escalation (LAG-HIRES, 13 Oct 2026)
+- [ ] siblings: Gachard / WVO sibling sweep done in ZX2-LAG2; same-system pooling for N is still the route to power for running key and wordcode, no new sibling found
+- [n/a] clear-pages: no clear page of this cipher identified; margin words placed in A2-LAG
+- [n/a] known-keys: no period key for this correspondent located
+- [x] print: Groen VI pp. 249-251 omits the cipher (footnote read); GSME/LMSAC read in OX-LAG; Gachard t.5 p.423 calendar summarises the clear part only (LAG-MARKS)
+- [n/a] key-rebuild: needs a family whose verdict statistic passes on its control decodes first
+- [x] image-check: WC-LAGARDE settled 9 cells; LAG-MARKS settled 41 of 57 at 150 dpi; LAG-HIRES settled 10 of the remaining 14 on 6179 at ~288 ppi (WVO PDF); 6 left need the original
+- [x] retry: syllabary re-scored on the revised spec (negative holds, <= 0.107); wordcode err-only retries [retired], instrument tools/families/wordcode.py via family_run.py; measured error 0.084-0.107 does not fall below wordcode's 0.071 crossover, so no re-test is named
+Verdict: keep going: 0 internal gaps; cheapest next: the open siblings step (a same-system pooling sweep for more ciphertext); the six doubt cells wait on the KHA original (needs-physical-access)

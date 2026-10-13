@@ -1,0 +1,200 @@
+line	pos	group	conf	alt	note	provenance
+p2L22	1	15	H			v2
+p2L22	2	16	H			v2
+p2L22	3	22	H			v2
+p2L22	4	23	H			v2
+p2L22	5	1	H			v2
+p2L22	6	10	H			v2
+p2L22	7	3	H			v2
+p2L22	8	14	H			v2
+p2L22	9	5	H			v2
+p2L22	10	10~	M	B:16/C:10	digit majority 10, mark disputed	v2
+p2L22	11	11	H			v2
+p2L22	12	11^	M	C:11	literal majority	v2
+p2L22	13	13	H			v2
+p2L22	14	14^	H		LAG-MARKS 9 Oct 2026 sure image settle 14^ (v2 had 14); lag_marks_look.tsv; applied LAG-V2	v2
+p2L22	15	3	H		literal majority	LAG-HIRES 13 Oct 2026: WVO 06179.pdf embedded scan ~288 ppi, blind Sonnet look + reconciler by eye; v2 was 3 M
+p2L22	16	15^	H		LAG-MARKS 9 Oct 2026 sure image settle 15^ (v2 had 15); lag_marks_look.tsv; applied LAG-V2	v2
+p2L22	17	17	M	C:19	literal majority	v2
+p2L22	18	12	H			v2
+p2L22	19	15	H			v2
+p2L22	20	6	H			v2
+p2L22	21	19	H			v2
+p2L22	22	14	H			v2
+p2L24	1	10	H			v2
+p2L24	2	16^	H			v2
+p2L24	3	14	H			v2
+p2L24	4	7	H			v2
+p2L24	5	17	H			v2
+p2L24	6	22	H			v2
+p2L24	7	10	H			v2
+p2L24	8	2	H		literal majority	LAG-HIRES 13 Oct 2026: WVO 06179.pdf embedded scan ~288 ppi, blind Sonnet look + reconciler by eye; v2 was 2 M
+p2L24	9	1	H			v2
+p2L24	10	12	H			v2
+p2L24	11	19^	M	C:19	literal majority	v2
+p2L24	12	24^	M	B:29^/C:24	digit majority 24, mark disputed	v2
+p2L24	13	14	H			v2
+p2L24	14	20	H			v2
+p2L24	15	2^	H			v2
+p2L24	16	6	H			v2
+p2L24	17	17	M	C:17^	literal majority	v2
+p2L24	18	20^	H			v2
+p2L24	19	11^	H		LAG-MARKS 9 Oct 2026 sure image settle 11^ (v2 had 11); lag_marks_look.tsv; applied LAG-V2	v2
+p2L24	20	8	H			v2
+p2L24	21	11	H		literal majority	LAG-HIRES 13 Oct 2026: WVO 06179.pdf embedded scan ~288 ppi, blind Sonnet look + reconciler by eye; v2 was 11 M
+p2L24	22	6	H			v2
+p2L24	23	1	H			v2
+p2L24	24	2	H			v2
+p2L24	25	20	H			v2
+p2L25	1	9^	H			v2
+p2L25	2	9	H			v2
+p2L25	3	14^	H			v2
+p2L25	4	3	H			v2
+p2L25	5	20	H			v2
+p2L25	6	14	H			v2
+p2L25	7	5	H			v2
+p2L25	8	15	H			v2
+p2L25	9	10	H			v2
+p2L26	1	24	H			v2
+p2L26	2	1	H			v2
+p2L26	3	2	H			v2
+p2L26	4	11	H			v2
+p2L26	5	21	H			v2
+p2L26	6	18	H		literal majority	LAG-HIRES 13 Oct 2026: WVO 06179.pdf embedded scan ~288 ppi, blind Sonnet look + reconciler by eye; v2 was 10 M
+p2L26	7	3	H			v2
+p2L26	8	4	H			v2
+p2L27	1	29^	H			v2
+p2L27	2	12	M	C:9	literal majority	v2
+p2L27	3	24	H			v2
+p2L27	4	21	H			v2
+p2L27	5	6	H			v2
+p2L27	6	10	H			v2
+p2L27	7	20	H			v2
+p2L27	8	16	M	B:[mark]16	literal majority	v2
+p2L27	9	4	H			v2
+p2L27	10	7^	M	C:7	literal majority	v2
+p2L27	11	11	H			v2
+p2L27	12	17	H			v2
+p2L27	13	18	H		literal majority	LAG-HIRES 13 Oct 2026: WVO 06179.pdf embedded scan ~288 ppi, blind Sonnet look + reconciler by eye; v2 was 10 M
+p2L27	14	16	H			v2
+p2L27	15	[mark]	H		only A read this line	LAG-HIRES 13 Oct 2026: WVO 06179.pdf embedded scan ~288 ppi, blind Sonnet look + reconciler by eye; v2 was [mark] M
+p2L27	16	12	H		literal majority	LAG-HIRES 13 Oct 2026: WVO 06179.pdf embedded scan ~288 ppi, blind Sonnet look + reconciler by eye; v2 was 12 M
+p2L27	17	15	H			v2
+p2L27	18	7^	M	C:7	literal majority	v2
+p2L27	19	10	H			v2
+p2L27	20	23^	M	C:23	literal majority	v2
+p2L27	21	16	H			v2
+p2L27	22	3	H			v2
+p2L27	23	11^	M	C:11	literal majority	v2
+p2L27	24	19	H			v2
+p2L27	25	3	H			v2
+p2L27	26	5	H			v2
+p2L27	27	1	H			v2
+p2L27	28	16^	H		digit majority 16, mark disputed	LAG-HIRES 13 Oct 2026: WVO 06179.pdf embedded scan ~288 ppi, blind Sonnet look + reconciler by eye; v2 was 16^ M
+p2L27	29	1	H			v2
+p2L28	1	16	H			v2
+p2L28	2	10^	M	C:10	literal majority	v2
+p2L28	3	7	H			v2
+p2L28	4	23^	M	C:23	literal majority	v2
+p2L28	5	17	H			v2
+p2L28	6	24	H			v2
+p2L28	7	29^	M	C:24	literal majority	v2
+p2L28	8	12^	M	C:12	literal majority	v2
+p2L28	9	16	H			v2
+p2L28	10	10^	M	C:10	literal majority	v2
+p2L28	11	8	H			v2
+p2L28	12	18^	H		WC-LAGARDE 26 Sept 2026: settled 18^ (two independent blind crop reads describe a 1-stroke feeding a single closed loop under one continuous overline) -- images/crops_wc/6179p2_p2L28_pos12_zoom5x.png	v2
+p2L28	13	10	H			v2
+p2L28	14	8	H			v2
+p2L28	15	16	H			v2
+p2L28	16	4	H			v2
+p2L28	17	6	H			v2
+p2L28	18	22	H			v2
+p2L28	19	24	H			v2
+p2L28	20	4^	H		literal majority	LAG-HIRES 13 Oct 2026: WVO 06179.pdf embedded scan ~288 ppi, blind Sonnet look + reconciler by eye; v2 was 4 M
+p3L6	1	8	H			v2
+p3L6	2	16	H			v2
+p3L6	3	9	H			v2
+p3L6	4	21	H			v2
+p3L6	5	5	H			v2
+p3L6	6	10^	M	B:10	digit majority 10, mark disputed	v2
+p3L6	7	18^	H		WC-LAGARDE 26 Sept 2026: confirmed 18^ on crop (clear 1+8 digit shapes under one overline, not a free-standing mark) -- images/crops_wc/6179p3_L6_pos78_7x.png	v2
+p3L6	8	1~	H		WC-LAGARDE 26 Sept 2026: settled 1~ (digit 1 under the loop-crossbar flourish, not a plain 9 -- compared directly against p3L6 pos3's own 9 on the same line) -- two independent blind reads -- images/crops_wc/6179p3_L6_pos8_10x.png	v2
+p3L6	9	16	H			v2
+p3L6	10	19	H			v2
+p3L6	11	1	H			v2
+p3L6	12	13	H			v2
+p3L6	13	8	H			v2
+p3L6	14	10	H			v2
+p3L6	15	[mark]	H			v2
+p3L6	16	2	H		WC-LAGARDE 26 Sept 2026: settled 2 (crop shows a bare small loop-tail digit right after the free-standing mark at pos15, no leading 1-stroke for a 12) -- images/crops_wc/6179p3_L6_pos1516_7x.png	v2
+p3L6	17	12	H			v2
+p3L6	18	9	H			v2
+p3L6	19	20	H			v2
+p3L6	20	21	H			v2
+p3L7	1	8	H			v2
+p3L7	2	2	H			v2
+p3L7	3	[mark]	H		only A read this line	LAG-HIRES 13 Oct 2026: WVO 06179.pdf embedded scan ~288 ppi, blind Sonnet look + reconciler by eye; v2 was [mark] M
+p3L7	4	15	H		digit majority 15, mark disputed	LAG-HIRES 13 Oct 2026: WVO 06179.pdf embedded scan ~288 ppi, blind Sonnet look + reconciler by eye; v2 was 15 M
+p3L7	5	6	H		WC-LAGARDE 26 Sept 2026: confirmed 6 (crop shows a clear overlined 6-shape, not an 8) -- images/crops_wc/6179p3_L7_pos56_v2.png	v2
+p3L7	6	18	H		WC-LAGARDE 26 Sept 2026: confirmed 18 (crop shows 1-stroke plus 8-loop, no closed-oval 10 shape) -- images/crops_wc/6179p3_L7_pos56_v2.png	v2
+p3L7	7	12	H			v2
+p3L7	8	5	H			v2
+p3L7	9	9	H			v2
+p3L7	10	12	H			v2
+p3L7	11	[mark]	H			v2
+p3L7	12	18	H			v2
+p3L7	13	14	H			v2
+p3L7	14	24	H			v2
+p3L7	15	17	H			v2
+p3L7	16	21	H			v2
+p3L7	17	18	H		WC-LAGARDE 26 Sept 2026: confirmed 18 (crop shows 1-stroke plus 8-loop before the overlined 12 and the free-standing mark that precede vre Sgre) -- images/crops_wc/6179p3_L7_pos17_v2.png	v2
+p3L7	18	12	H			v2
+p3L7	19	[mark]	H			v2
+p3L8	1	1	H			v2
+p3L8	2	16	H			v2
+p3L8	3	7	H			v2
+p3L8	4	17	H			v2
+p3L8	5	2^	M	B:2	digit majority 2, mark disputed	v2
+p3L8	6	6	H			v2
+p3L8	7	10	M	B:10^	digit majority 10, mark disputed	v2
+p3L8	8	[mark]	H			v2
+p3L8	9	10	H			v2
+p3L8	10	3	H			v2
+p3L8	11	9	H			v2
+p3L8	12	21	H			v2
+p3L8	13	23	H		LAG-MARKS 9 Oct 2026 sure image settle 23 (v2 had 23^); lag_marks_look.tsv; applied LAG-V2	v2
+p3L8	14	5	H			v2
+p3L8	15	3	H			v2
+p3L8	16	[mark]	H			v2
+p3L8	17	2	H			v2
+p3L8	18	13	H			v2
+p3L8	19	23^	M	B:23	digit majority 23, mark disputed	v2
+p3L8	20	5	H			v2
+p3L8	21	1	H			v2
+p3L8	22	10	H			v2
+p3L8	23	8^	M	B:8	digit majority 8, mark disputed	v2
+p3L8	24	[mark]	H			v2
+p3L8	25	24^	M	B:24	digit majority 24, mark disputed	v2
+p3L9	1	20	H		LAG-MARKS 9 Oct 2026 sure image settle 20 (v2 had 20^); lag_marks_look.tsv; applied LAG-V2	v2
+p3L9	2	8	H			v2
+p3L9	3	9	M	B:9^	digit majority 9, mark disputed	v2
+p3L9	4	9^	H			v2
+p3L9	5	13	H			v2
+p3L9	6	7	H			v2
+p3L9	7	22	H			v2
+p3L9	8	3	H			v2
+p3L9	9	8	H			v2
+p3L9	10	4	H			v2
+p3L9	11	14	H			v2
+p3L9	12	[mark]	H		only A read this line	LAG-HIRES 13 Oct 2026: WVO 06179.pdf embedded scan ~288 ppi, blind Sonnet look + reconciler by eye; v2 was [mark] M
+p3L9	13	11	H		digit majority 11, mark disputed	LAG-HIRES 13 Oct 2026: WVO 06179.pdf embedded scan ~288 ppi, blind Sonnet look + reconciler by eye; v2 was 11 M
+p3L9	14	19	H			v2
+p3L9	15	7	H			v2
+p3L9	16	15	H			v2
+		8	M		insertion by passB after A idx 109, not in A	v2
+		[mark]	M		insertion by L1 after A idx 35, not in A	v2
+		8	M		insertion by L1 after A idx 105, not in A	v2
+		8	M		insertion by L1 after A idx 109, not in A	v2
+		10	M		insertion by L1 after A idx 4, not in A	v2
+		17	M		insertion by L1 after A idx 79, not in A	v2
