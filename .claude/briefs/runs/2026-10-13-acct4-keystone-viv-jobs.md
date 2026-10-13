@@ -58,7 +58,7 @@ Steps, in order:
    (consecutive H/S letters per line and across line ends), the judge score (`tools/judge_plaintext.py` with the folder's spec if
    one exists, else the fr16 corpus score), and the five longest stretches as text. No file under the folder root changes. If the
    gate fails, skip step 3, log "untested-by-this-tool at this error" only if the ceiling (truth-in-lattice) explains it, else FAIL.
-Price: disk-only Opus, floor 2.5; dev 2 folds x 4 lam + confirm + ink 63 (9 pages) are script runs, under a minute each; cap 6.
+Price: vision calls: 0 x USD 0 = 0; disk-only Opus, floor 2.5; dev 2 folds x 4 lam + confirm + ink 63 (9 pages) are script runs, under a minute each; cap 6.
 Done line: the gate verdict first, with the dev and confirm numbers side by side, then whether step 3 ran and its longest run.
 
 ### VIV-67 (Opus, cap 12, box 150 min, openapi.bnf.fr <= 14 requests): a second known-plaintext pair in the target's own volume, ink 67/68
@@ -83,7 +83,7 @@ build_vivonne_confirm2.py builds confirm2 (split=dev; register it in BENCHMARK-T
 VIV-LAT's recipe and any later reader can be scored on a second leaf of this hand. If the alignment control fails, stop after
 step 4 and report the numbers; no truth file is registered. Report err_2reader for f.201r and, by the N5-VIVK route, the committed
 f.201r reconciliation's own err against the new truth (say it is circular, as confirm2's committed figure is).
-Price: 2 + 4 Sonnet subagent calls (~1.4 each per README) + the worker's own reconciliation (one unit each for f.201r and the
+Price: vision calls: 6 x USD 1.4 = 8.4 (2 + 4 Sonnet subagent calls, per README per-pass rate) + the worker's own reconciliation (one unit each for f.201r and the
 decipherment, bMALS rule) + alignment scripts: 8 units x 1.4 = 11.2 -> cap 12; stop before starting a unit that would cross 80% of
 cap or box. If f.201r's cipher block is short (under 15 lines), add f.201v as the second page only if under 50% of the cap.
 Done line: alignment share vs shuffled p95 first, then err_2reader, the unkeyed-label table's totals, and whether the truth item
