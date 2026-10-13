@@ -15377,3 +15377,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 20:31 | LAG-RETRO | huygens take for LANE DEFAULT-A2-2013 (account 2)
 2026-10-13 20:30 | COL26-11B worker | claim colbert26-lathuillerie-1644: second blind word-pairing pass for 11 = le (PREREG-COL26-WP instrument unchanged), cap 3.5, box 20:30-21:30 UTC, disk only, for LANE DEFAULT-A2-2013 (account 2)
 2026-10-13 20:32 | BAL167-GPLUS worker (Opus) | openapi.bnf.fr take (20:4x UTC) for LANE DEFAULT-A2-2013 (account 2)
+2026-10-13 20:32 | SYL-1LC worker | claim: fr15575-syllabic-1592-95, single-letter-class --try control for the no.54 legend marks (cap 2.5, box 20:30-21:20 UTC, disk only) for LANE DEFAULT-A2-2013 (account 2)
