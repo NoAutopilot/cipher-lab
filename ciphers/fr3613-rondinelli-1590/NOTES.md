@@ -1,5 +1,5 @@
 blocked
-Gomberville 1665 seconde partie (Gallica bpt6k64451005) view 262 (printed p.213, Henri IV to Nevers, Camp de Coeures, 10 Nov 1590) read as image by this worker, no Rondinelli; views 263-273, 387-393, 443-452 NOT read (Gallica 503/challenge page from view 263, one retry timed out, stopped), so blocked, not open.
+Gomberville 1665 seconde partie (Gallica bpt6k64451005) read as page images by this worker: printed pp.213-224, 338-344 and 394-403 (views 262-273, 387-393, 443-452), letter absent, no Rondinelli, no cifra, no Italian letter there; status stays blocked because the individual blog-site searches and the fr.3995 recipient-side tables are still unread (see BNF-RONDI2).
 
 # Hercole Rondinelli to the duc de Nevers, Paris, 11 Nov 1590 -- BnF Français 3613 no.33, fol. 62
 
@@ -34,6 +34,21 @@ Instrument: Gallica `ark:/12148/bpt6k64451005/f<N>.highres`. View 262 fetched an
 Requests this job: gallica.bnf.fr 7 (1 reset, 1 HTTP 500 on an IIIF path, 262 ok, 263 challenge, 264-265 503, 263 retry timeout); no other host.
 
 ## Gate
+```
+fr3613-rondinelli-1590: blocked (line 1) -- already terminal, nothing to gate
+exit 0
+```
+
+
+## BNF-RONDI2 (13 Oct 2026, account 2)
+Window 06:21-06:5x UTC by `date -u`. Route: `openapi.bnf.fr/iiif/image/v3/ark:/12148/bpt6k64451005/f<N>/full/1600,/0/default.jpg`, descriptive User-Agent, 2 s apart; no contact with gallica.bnf.fr. Request log: `images/gomb/request.log` (28 requests, all HTTP 200, 533-685 KB each; sha256 in `images/gomb/manifest.json`).
+Views read as images (one read each): 263-273 (printed pp.214-224), 387-393 (pp.338-344; view 392's header is misprinted "341"), 443-452 (pp.394-403). Per-view rows: `gomb_views.tsv`.
+Content: 263-273 Henri IV to Nevers, 15 Nov-29 Dec 1590, all French; 387-393 Flamenville's letter from Sedan 12 Oct 1590 and Nevers's reply to the King, Châteauthierry 15 Dec 1590; 443-452 d'Aumont, La Chère, de Gèvre, Chabouille and d'O letters and Nevers's "Articles et faits" with the King's answers (Attichy 18 Nov 1590).
+Result: not found in the views named. Rondinelli, any cifra, and any Italian letter from Paris of Nov 1590 do not appear on any of the 28 views (reading by this worker, 1600 px images; body text read at heading level, not word by word on every line). Together with BNF-GOMB's whole-volume ContentSearch (Rondinelli 0, Cifra 0), the edition shows no sign of this letter in the named views.
+Still unread for the check-solved sources: the three blogs individually (Cipherbrain, Cryptiana blog, Cipher Mysteries) and the recipient-side cipher tables in fr.3995; line 1 stays `blocked`.
+Requests this job: openapi.bnf.fr 28; no other host.
+
+### Gate
 ```
 fr3613-rondinelli-1590: blocked (line 1) -- already terminal, nothing to gate
 exit 0
