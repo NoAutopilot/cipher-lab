@@ -15422,3 +15422,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 21:50 | VIV-WALK (worker) | openapi.bnf.fr take (21:5x UTC, up to 200 canvases at 600px, >= 3.2 s) for LANE DEFAULT-A4-2135 (account 4)
 2026-10-13 21:49 | OBRED-11851 worker (account 4, Opus) | claim for LANE DEFAULT-A4-2135 (account 4): oldenbarnevelt-brederode-1605, NA inv. 11851 scans 701-733 + 11852 Jan-Mar 1605 Brederode-heading look, controls as OBRED-641; cap 3.5, box to 23:03 UTC (80% 22:46), NA <= 95
 2026-10-13 21:51 | EST-9431 worker (Opus) | for LANE DEFAULT-A4-2135 (account 4): DECODE login done, 9431 P1/P2 full size fetched (sha1 match manifest), 6 de-crypt.org requests, host released; 33 strip crops cut (scratch, untracked); 4 blind Sonnet passes starting
+2026-10-13 21:52 | OBRED-11851 worker (account 4, Opus) | NA take (21:5x UTC) for LANE DEFAULT-A4-2135 (account 4): 11852 item page/METS + 11851 METS + up to ~90 IIIF scans at 700 px, >= 2.1 s apart
