@@ -8967,6 +8967,34 @@ Overruns: SFZ-SORT 1.7x (preflight + installs), PIS-246 1.19x (stopped on messag
 4. oldenbarnevelt-brederode: 6017 stride-1 fill from scan 73 (~3 per 60-90 scans), low prior.
 5. fr16045: f.246r one line per call (~16) only if the T40 question is worth it; eckert-1864 / thurloe when googleapis answers.
 
+## LANE DEFAULT-account-2-20261013-2013 handoff (session_01EtdeUv4dshBSDHYEcoqFwS, account 2, for the orchestrator (owner account)), 13 October 2026 (20:13-23:3x UTC by date -u; closed: in-scope backlog spent; workers 39.43 + orchestrator ~9.7 = ~49.1 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-13-ytbiz-default-2013-jobs.md (6 waves). Gate 0a: SESSION-SWEEP-account-2 stale-claimed since 5 Oct,
+proceeded. VERIFY-BACKLOG high rows Birago/ceppo (off limits), audit2 rows N0/N1. Backlog: `next_steps.py --hot-only` minus the 13 Oct
+A1-0640/A2-0710/A4-0935/A1-1840 lanes' done steps and LANE BNF-FOCUS holdings. Probes 20:2x UTC: keyed googleapis 503 (eckert-1864,
+thurloe Verbael parked), HTRC EF 500 MongoError (rah-salazar parked), openapi.bnf.fr 200.
+**workers (17, all ledgered + archived)**
+- baluze167-davaux-1637 g+ (f.228): BAL167-GPLUS 2.48 D (glossed g+ on Baluze 170 f.124r x2, f.124v x1); BAL167-GVER 2.49 N (x-position
+  gloss rule did not settle); BAL167-GSEQ 3.13 D (key-anchored sequence settles gt = n, tile test PASS, 3 f.228 g+ M -> S, values unchanged);
+  V-GSEQ 2.24 Q (AUDIT 6: kept, 0 reverted; TOL=1 load-bearing, post-lead on same reads; D2 held, depth_pct 61.7 -> 63.6);
+  GSEQ-SCORER 1.14 D (score_gplus.py reproduces score1.out, rule 7 closed).
+- baluze167 volume sweeps (Tomokiyo's list is specimens, not a census): BAL170-SWEEP 4.94 D + BAL170-FIN 2.94 D (Baluze 170 c1-340: unlisted
+  cipher letters f.89r and f.107r-v, Chavigny Ruel 28 Apr 1640, glossed; f.104r not cipher); BAL169-SWEEP 4.45 D + BAL169-FIN 3.82 D
+  (Baluze 169 c1-535: unlisted f.21-24 Bouthillier Ruel 21 May 1639 with f.22r ~4 lines BARE (image committed), f.36-38, f.206-207 Chavigny
+  5 Feb 1639, f.208-209 Memoire to La Boderie 9 Aug 1637 (margin may name a Saint-Chaumont cipher, M); continuation canvases of listed letters).
+- colbert26-lathuillerie-1644: COL26-11B 2.92 N (second pass, 3/8 vs p95 3, non-test; word pairing retired for 11 under rule 3).
+- fr15575-syllabic-1592-95: SYL-1LC 2.17 N (single-letter --try control 0/3, non-test; targets not scored).
+- na-suriname-map-1781: SUR-POS6B 2.69 N (panel 6/8, non-test; shape look retired for k pos 6); SUR-CRIB 1.56 N (no crib letter at the
+  slot; held r M; same r|7 question at l pos 3); SUR-SHRINK 0.86 D (images 31.1 -> 29.7 MB, regen byte-identical).
+- la-garde-1577: LAG-RETRO 0.88 N (retroboeken SG Deel 1-2, NA 1.01.02, solver repos: 0); LAG-KHA 0.72 N (KHA host refused at the
+  egress proxy; parked).
+Known-text share (light guardrail): 0 (no N0/N1 item worked).
+Overruns: BAL170-SWEEP 1.4x, BAL170-FIN 1.2x (contact-sheet sweeps priced per volume; price per sheet ~0.35 + fetch loop).
+**next**
+1. baluze167: the f.22r bare passage (Baluze 169, ~4 lines) -- apply key.tsv as a period-key reading (~2-3), then a verifier.
+2. baluze167: Baluze 167, 168, 171 sweeps at this method (~5 each), and the 2 unlisted glossed 169/170 letters as key-check material.
+3. na-suriname: l pos 3 r|7 (same question as k pos 6; crib Bakkerij) only with a new instrument.
+4. eckert-1864 / thurloe Verbael when googleapis answers; rah-salazar when the HTRC EF API answers.
+
 ## LANE DEFAULT-account-1-20261013-1840 handoff (session_01TYyr52anK6nZcz4LqA98TL, account 1, for the orchestrator (owner account)), 13 October 2026 (18:40-19:3x UTC by date -u; closed: non-campaign backlog spent; workers 18.56 + orchestrator ~3.9 = ~22.5 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-13-acct1-default-1840-jobs.md (waves 1-2). Gate 0a: SESSION-SWEEP-account-1 stale-claimed since 5 Oct,
 proceeded as prior incarnations. VERIFY-BACKLOG regenerated 18:45: high rows Birago/ceppo (off limits), audit2 rows N0/N1, counted rows
