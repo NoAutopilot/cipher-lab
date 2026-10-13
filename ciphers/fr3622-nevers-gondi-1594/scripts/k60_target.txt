@@ -1,0 +1,5 @@
+lexicon fr16 (3 files, len>=4, count>=2): 22571 words
+tokens 134, keyed 110, unkeyed 24: {'z': 6, 'h': 7, 'I': 7, '6+': 1, 'a': 3}
+S = 7; run tokens 126-127: + c
+decoded values there: nostre a|s
+shuffles >= S: 899/5000; p = 0.17980; (ge+1)/(n+1) = 0.17996

@@ -1,0 +1,1 @@
+negative err=0.0 texts=200 shuf=5000: power(p<=0.01) = 0/200 = 0.000; S median 6, min 4, max 7

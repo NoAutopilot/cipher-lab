@@ -1,0 +1,4 @@
+control err=0.0 texts=200 shuf=5000: power(p<=0.01) = 78/200 = 0.390; S median 9, min 5, max 13
+control err=0.15 texts=200 shuf=5000: power(p<=0.01) = 17/200 = 0.085; S median 9, min 5, max 11
+control err=0.25 texts=200 shuf=5000: power(p<=0.01) = 11/200 = 0.055; S median 9, min 5, max 9
+control err=0.35 texts=200 shuf=5000: power(p<=0.01) = 3/200 = 0.015; S median 9, min 5, max 10
