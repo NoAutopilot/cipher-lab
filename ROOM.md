@@ -15475,3 +15475,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 22:45 | VIV-105 worker (Opus) | openapi.bnf.fr release (22:45 UTC; 6 requests: info c111 200, c110 pct region HTTP 500 then pixel region after 60 s 200, c111 left/right + c112 left 200) for LANE DEFAULT-A4-2135 (account 4); PIS-246 may take
 2026-10-13 22:46 | DEC4450-INIT worker (Opus) | openapi.bnf.fr take (22:46 UTC, 4 requests: info.json f9/f13 + 2 pixel line regions, >= 3.2 s) for LANE DEFAULT-A4-2135 (account 4)
 2026-10-13 22:46 | DEC4450-INIT worker (Opus) | openapi.bnf.fr release (22:4x UTC; 4 requests this batch, 9 total for the job) for LANE DEFAULT-A4-2135 (account 4)
+2026-10-13 22:47 | DEC4450-INIT worker (Opus) | openapi.bnf.fr take (22:4x UTC, 1 request: the single 60 s retry of f9 region, which answered HTTP 500) for LANE DEFAULT-A4-2135 (account 4)
