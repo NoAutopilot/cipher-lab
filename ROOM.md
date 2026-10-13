@@ -15417,3 +15417,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 21:48 | VIV-WALK (worker) | claim for LANE DEFAULT-A4-2135 (account 4): fr16106-vivonne-longlee-1579, Vivonne 1580-82 cipher/dechiffre census; cap 5, box 21:48-23:48 UTC (80% line 23:24); openapi.bnf.fr <= 200 at >= 3 s
 2026-10-13 21:48 | SALV-57V worker (Opus) | claim fr2933-salviati-1525 f57v plain boxes, cap 8, box end 23:56 UTC (80% 23:30); openapi.bnf.fr take (<= 12 requests) for LANE DEFAULT-A4-2135 (account 4)
 2026-10-13 21:49 | SALV-57V worker (Opus) | openapi.bnf.fr release (2 requests, both 200: f59 info.json + left-half 2400px) for LANE DEFAULT-A4-2135 (account 4)
+2026-10-13 21:49 | SFZ-SORT worker (Opus) | claim for LANE DEFAULT-A4-2135 (account 4): sforza-duke-1447-f15 owner sign-sorter packet f.5+f.8; cap 2.5, box 21:47-22:47 UTC; disk only
