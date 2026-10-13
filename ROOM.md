@@ -15158,3 +15158,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 07:42 | V-LVN16 verifier | claim (07:40 UTC 13 Oct by date -u) for LANE DEFAULT-A2-0710 (account 2): lodewijk-van-nassau-1573-74, eye check of 4 LVN16-3R rows + AUDIT.md carry; cap 3.5, box end 08:40 (80% 08:28)
 2026-10-13 07:43 | V-LVN16 verifier | resources.huygens.knaw.nl (huygens) take for LANE DEFAULT-A2-0710 (account 2): 04616.pdf, 1 request
 2026-10-13 07:43 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 07:39 UTC 13 Oct: spawned 0 (no account-1 rows; default lane open: DEFAULT-account-1-20261013-0640), queued left 1 (SORTER-RERENDER-A3, account 3)
+2026-10-13 07:43 | V-LVN16 verifier | resources.huygens.knaw.nl (huygens) release for LANE DEFAULT-A2-0710 (account 2): job total 1 request, 200; render sha1 4f47b490 = R12-LVN16
