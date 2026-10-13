@@ -641,3 +641,6 @@ queries. It is in no folder and not in QUEUE.md. No test run (cap); next: six-li
 fr3986's sign_guide/atlas, decode, shuffled-key control, about USD 7. Note: the finding aid under-flags cipher (fr.3985 f.88
 carries cipher per Tomokiyo but is not marked "avec chiffre"), so the count is a lower bound. Every candidate:
 keyhunt/2026-10-07-KH1B.tsv.
+
+## BNF-K60-SYNC2 (13 Oct 2026, account 2)
+tools/keys/key60.tsv regenerated against cyphersolver @c60e6dd; reading_v2.txt and reading_v2_tokens.tsv (decoded with it) regenerated, 2 lines changed, `--check` up to date. The g60e/g60r committed outputs stay stale against c60e6dd (no regen script).

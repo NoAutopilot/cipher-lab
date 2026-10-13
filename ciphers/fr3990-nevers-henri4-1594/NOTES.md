@@ -91,3 +91,6 @@ Requests: gallica.bnf.fr 3 for this leaf (thumbnail, twice because of one connec
 ## Status blocked (24 Sept 2026, 20:52 UTC, LANE R5 orchestrator)
 
 Key no.60 applied mechanically by LANE R5 F1-F3 does not read: blind pass agreement 37-55%, blocked on identifying this copyist's sign forms, not on the key. Next: LANE R5 G builds a no.60 sign atlas from the interlined leaves of the same copyist (fr.3985 f.126-130, fr.3986 f.151/152) and re-runs F1's leaves; if that passes 80%, this letter follows.
+
+## BNF-K60-SYNC2 (13 Oct 2026, account 2)
+tools/keys/key60.tsv regenerated against cyphersolver @c60e6dd; reading.txt and reading_tokens.tsv regenerated (3 lines changed), `--check` up to date. Grade counts unchanged (M 437, U 65).

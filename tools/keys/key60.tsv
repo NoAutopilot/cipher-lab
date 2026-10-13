@@ -2,7 +2,7 @@
 # BnF fr.3995 ff.108-111 (Gallica btv1b525085665 canvases 208-213). Reconstruction and numbering: Satoshi
 # Tomokiyo, Cryptiana (cryptiana.web.fc2.com, nevers.htm and henryiv2.htm). Transcription of the tables and
 # glyph tags: Daniel Bourdeau, github.com/dbourdeau/cyphersolver nevers1593/key60.txt + decode60.py
-# (commit a0d5a07349e98cfc47d41608cd88722a219c44a3; code MIT, text CC BY 4.0). Converted by tools/keys/key60_from_bourdeau.py, 24 Sept 2026.
+# (commit c60e6dd891e090f163aef42f19e3cacb27c24cf4; code MIT, text CC BY 4.0). Converted by tools/keys/key60_from_bourdeau.py, 24 Sept 2026.
 # Tags are Bourdeau's descriptive stand-ins (see his key60.txt for the shapes). grade M = crib-read cursive
 # form or value marked uncertain by him; Tomokiyo's own table is an image on henryiv2.htm, not compared here.
 sign	value	grade	source	note
@@ -11,16 +11,20 @@ o	a	H	table
 x	a|d	M	table	Bourdeau decode60.py value a
 ·q	a	H	table	
 o'	a	H	table	
-ꝝ	b	H	table	
+o–	b	H	table	
+∞	b	H	table	
 oo	b	H	table	
 14	b	H	table	
 n~	b	H	table	
+∩	b	H	table	
 //	c	H	table	
 ∠	c	H	table	
-·x	c	H	table	
+c~	c	H	table	
+o–o	c	H	table	
 =	d	H	table	
-‡|	d	H	table	
+‡	d	H	table	
 .x.	d	H	table	
+·x	d	H	table	
 uij	d	H	table	
 f	e	H	table	
 ue	e	H	table	
@@ -39,19 +43,23 @@ c+	g	H	table
 5+	g	H	table	
 g+	gu	H	table	
 q++	g	H	table	
+∩+	g	H	table	
 V+	g	H	table	
 8o'	g	H	table	
 ξ	h	H	table	
 z8	h	H	table	
 uu+	h	H	table	
-4+	bien	H	table	
+4+	i	H	table	
+4+b	bien	H	table	
 to	i	H	table	
-++	u	H	table	
+++	i	H	table	
+ⱶⱶ	u	H	table	
+♀	u	H	table	
 u+	aussi	H	table	
-‡	i	H	table	
 d+	i	H	table	
-2+	p|i	M	table	Bourdeau decode60.py value p
-2+'	u	H	table	
+2+	p|i	M	table	Bourdeau decode60.py value u|i
+n+	p	H	table	
+ſ+	l	H	table	
 ꝗ	l	H	table	
 cH	l	H	table	
 t	ru	H	table	
@@ -59,7 +67,7 @@ p~	l	H	table
 t'	m	H	table	
 ʃ	m	H	table	
 ß	n	H	table	
-ccc	m	H	table	
+ɱ	m	H	table	
 m	m	H	table	
 ſ	m	H	table	
 A	m	H	table	
@@ -70,6 +78,7 @@ s	n	H	table
 TL	n	H	table	
 1	n	M	crib-f151	
 π	o	H	table	
+Δ|	o	H	table	
 ᛉ	o	H	table	
 Δ	o	H	table	
 X	o	H	table	
@@ -101,6 +110,7 @@ La	t	H	table
 .xx.	t	H	table	
 xx	t	H	table	
 v'	u	H	table	
+‡o	u	H	table	
 ll	bon	H	table	
 20	u	H	table	
 4	x	H	table	
@@ -138,7 +148,9 @@ o-''	fo	H	table
 w	fu	H	table	
 λ	la	M	crib-f151	
 +o	le	H	table	
+–o–	tu	H	table	
 o-	tu	H	table	
+–o	fo	H	table	
 V	lo	H	table	
 q'	lu	H	table	
 rp	ma	H	table	

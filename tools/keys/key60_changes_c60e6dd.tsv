@@ -1,0 +1,6 @@
+# Key no.60 sync to D. Bourdeau cyphersolver c60e6dd (12 Oct 2026; issue #32, R. Weglarek, checked by D. Bourdeau on fr.3995 images;
+# text CC BY 4.0). BNF-K60-SYNC2, 13 Oct 2026. Same mapping as ciphers/fr3986-nevers-revol-1593/key_changes_c60e6dd.tsv.
+# tools/keys/key60.tsv uses Bourdeau's own tags, so it was regenerated whole by tools/keys/key60_from_bourdeau.py against cyphersolver @c60e6dd
+# (the fr3986 tag mapping was not applied: tag sets differ, e.g. ls+ is ours, his is ſ+). Row diff vs a0d5a07: see git diff of key60.tsv.
+# Rows removed 10: ꝝ b, ·x c, ‡| d, 4+ bien, ++ u, ‡ i, 2+' u, ccc m (and 2+ p|i value text); added/changed 22 incl. 4+ i, 4+b bien, ++ i, ⱶⱶ u, ♀ u, n+ p, ſ+ l, ɱ m, Δ| o, ‡o u, –o– tu, –o fo, 2+ p|i (note u|i), o– b, ∞ b, ∩ b, c~ c, o–o c, ‡ d, ·x d, ∩+ g.
+# Unmapped: none (his own tags). Note 2+ keeps value p|i in the TSV because AMBIG in key60_from_bourdeau.py is hard-coded; his value is now u|i: tool follow-up.

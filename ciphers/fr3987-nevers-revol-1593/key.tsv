@@ -5,9 +5,9 @@
 sign	value	grade	source
 dbl	n|m	M	key60 f.111 col2 '# ß'; ß = n (f.111 col1) or m (f.109 sheet)
 +	nostre	H	f.111 col2 '+ nre'
-++	u	H	f.111 col1 '++ u'
-2+	p|i	M	f.111 '2+ p'; crib f.151 also i
-4+	bien	H	f.111 col1 '4+ bien'
+++	u|i|d	M	key60 @c60e6dd (issue #32, R. Weglarek; checked by D. Bourdeau on fr.3995 images); sheet ++ = i, copyist form = u (his ⱶⱶ/♀), one stem two bars = d (his ‡); our tag does not separate the shapes
+2+	u|i	M	key60 @c60e6dd (issue #32, R. Weglarek; checked by D. Bourdeau on fr.3995 images); 2+ = u, J (f.111) / i (crib f.151); the p-sign is n+
+4+	i|bien	M	key60 @c60e6dd (issue #32, R. Weglarek; checked by D. Bourdeau on fr.3995 images); open 4+ = i (sheet), closed 4 with cross = bien (f.111); our tag does not separate open/closed
 8+	tous	H	f.111 col1 '8+ tous'
 d+	i	H	f.111 col1
 u+	aussi	H	f.111 col1
@@ -80,3 +80,5 @@ oto	y	H	f.111 col2
 o-	tu	H	f.111 col3
 tt	po	H	f.110v col3
 ff	g|paris	M	f.110v col3 'ff -> g', 'ff' -> paris'
+n+	p	H	key60 @c60e6dd (issue #32, R. Weglarek; checked by D. Bourdeau on fr.3995 images); f.111 col1 'n+ (p-sign) p' (formerly tagged 2+)
+ls+	l	H	key60 @c60e6dd (issue #32, R. Weglarek; checked by D. Bourdeau on fr.3995 images); sheet l first homophone ſ+ (our ls = ſ, + appended per sign_guide)

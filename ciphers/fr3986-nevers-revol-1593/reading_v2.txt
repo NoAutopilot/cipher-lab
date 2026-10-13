@@ -9,5 +9,5 @@ f198v_L15r1	m x comme p
 f198v_L15r2	qu'il l bo
 f198v_L15r3	di p de a n li te r la p a le x bo bon la di ri moins so n
 f198v_L16r1	r u pour h
-f198v_L16r2	nostre re u
-f198v_L19r1	i
+f198v_L16r2	nostre re i
+f198v_L19r1	d

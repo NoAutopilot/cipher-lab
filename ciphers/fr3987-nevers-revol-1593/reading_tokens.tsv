@@ -23,7 +23,7 @@ f66_L07	21	2	sa	M
 f66_L07	22	4	x|i	M
 f66_L07	23	v+	p	M
 f66_L07	24	e	e|to	M
-f66_L07	25	4+	bien	M
+f66_L07	25	4+	i|bien	M
 f66_L07	26	g	de|f	M
 f66_L07	27	lam	la	H
 f66_L07	28	alpha	co	M
@@ -32,7 +32,7 @@ f66_L07	30	x	a	M
 f66_L07	31	pl	so	M
 f66_L07	32	x	a	H
 f66_L07	33	o	a	H
-f66_L07	34	4+	bien	M
+f66_L07	34	4+	i|bien	M
 f66_L07	35	X	o	M
 f66_L07	36	T	n	M
 f66_L07	37	n	et	M
@@ -48,7 +48,7 @@ f66_L08	4	dbl	n|m	M
 f66_L08	5	j	?	U
 f66_L08	6	7	p|s	M
 f66_L08	7	h	?	U
-f66_L08	8	++	u	M
+f66_L08	8	++	u|i|d	M
 f66_L08	9	y	s	H
 f66_L08	10	5'	?	U
 f66_L08	11	I	?	U
@@ -56,7 +56,7 @@ f66_L08	12	j	?	U
 f66_L08	13	X	o	M
 f66_L08	14	r	s	M
 f66_L08	15	d	be|a	M
-f66_L08	16	4+	bien	M
+f66_L08	16	4+	i|bien	M
 f66_L08	17	b	s	M
 f66_L08	18	2	sa	M
 f66_L08	19	dbl	n|m	M
@@ -151,9 +151,9 @@ f66_L11	5	r	s	M
 f66_L11	6	j	?	U
 f66_L11	7	5'	?	U
 f66_L11	8	n	et	M
-f66_L11	9	2+	p|i	M
+f66_L11	9	2+	u|i	M
 f66_L11	10	d	be|a	M
-f66_L11	11	2+	p|i	M
+f66_L11	11	2+	u|i	M
 f66_L11	12	del	a	H
 f66_L11	13	2	sa	M
 f66_L11	14	inT	n	M
@@ -209,7 +209,7 @@ f66_L15	5	1	n	M
 f66_L15	6	o	a	H
 f66_L15	7	v	li|lo	M
 f66_L15	8	y	s	H
-f66_L15	9	4+	bien	M
+f66_L15	9	4+	i|bien	M
 f66_L15	10	g	de|f	M
 f66_L15	11	I	?	U
 f66_L15	12	inT	n	H
@@ -249,7 +249,7 @@ f66_L17	4	5	comme	H
 f66_L17	5	x	a	H
 f66_L17	6	X	o	M
 f66_L17	7	9	e|do	M
-f66_L17	8	4+	bien	M
+f66_L17	8	4+	i|bien	M
 f66_L17	9	alpha	co	M
 f66_L17	10	r	s	M
 f66_L17	11	s	n	M
@@ -291,7 +291,7 @@ f66_L20	14	tt	po	M
 f66_L20	15	X	o	M
 f66_L20	16	v	li|lo	M
 f66_L20	17	w	fu|j'ay	M
-f66_L20	18	4+	bien	M
+f66_L20	18	4+	i|bien	M
 f66_L20	19	f'	?	U
 f66_L20	20	x	a	H
 f66_L20	21	g	de|f	M
