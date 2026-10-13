@@ -1640,6 +1640,7 @@ ciphertext_draft.tsv s:g+ rows), g+ M -> S. `python3 tools/decode_key.py ciphers
 the fr17 judge was not re-run. H/S on f.228 now 98/154 (63.6%); depth not changed here (a verifier's call, rule 4a); AUDIT.md not touched.
 Limits: arms are small (P+ 2, P- 3; one tile moves a rate by 0.33-0.5); a single tile read; the exemplar and both P+ tiles are from one
 letter (f.124), the T tiles from f.228. Network: none. Subagents: 1 Sonnet (tile read).
+**Scorer (GSEQ-SCORER, 13 Oct 2026, rule-7 gap named in AUDIT 6).** `balshape/gplus/score_gplus.py` regenerates balshape/gplus/score1.out from tileread1.tsv and r20261013/key_private.tsv (PREREG-BAL-GPLUS (b) gates G1/G2); output byte-identical to the committed score1.out, `--check` exits 0 (and 1 on a read with one P+ answer flipped). No grade or score file changed.
 
 ## Remaining gaps (BAL167-GSEQ, 13 Oct 2026)
 Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv). Of the 5 bare passages, 3 (169 ff.52-53, 97-98,
