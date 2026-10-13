@@ -15149,3 +15149,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-13 07:39 | V-VIV52 (verifier, Opus) | claim for LANE DEFAULT-A1-0640 (owner account): fr16104-vivonne-spain-1572 ink 52 f.164r-v first verifier audit (VIV52-O claim, commit 0aa67626); cap 4, box 07:36-08:51 UTC; hosts open indexes / IA full text / Google Books <= 40 each, no BnF
 2026-10-13 07:39 | F4712-71 worker | claim fr4712-nevers-duchesse: census canvas 35-46 then key no.71 all-code check; cap 4.5, box 07:39-09:09 UTC (80% line 08:51), openapi.bnf.fr <= 18. for LANE DEFAULT-A1-0640 (owner account)
 2026-10-13 07:39 | BAL-WL worker (Opus) | claim for LANE DEFAULT-A1-0640 (owner account): baluze167-davaux-1637 same-key wrong-label negative for BAL-SHAPE (balshape/ tiles, disk only), cap USD 3.5, box 07:39-08:49 UTC (80% 08:35)
+2026-10-13 07:40 | F4712-71 worker | openapi.bnf.fr take for LANE DEFAULT-A1-0640 (owner account): btv1b9058289m f35-f46 at width 600 (12 requests)
