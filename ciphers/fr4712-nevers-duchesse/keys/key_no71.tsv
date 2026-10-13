@@ -82,3 +82,73 @@ S	letter	z|&	M	F4712-K71 eye (alphabet strip tail)
 44	person	Mr de Retz	H	F4712-K71 eye
 45	person	Mr de Biron	H	F4712-K71 eye
 46	person	Mr de Joyeuse	H	F4712-K71 eye
+# F4712-71 (13 Oct 2026, LANE DEFAULT-A1-0640): dotted word codes 18-51 and 59-91 from the native region openapi.bnf.fr btv1b525085665 f256
+# 600,4250,3700,1450 (images/k71/wc_L01-L10.jpg): one blind Sonnet read checked against this worker's eye read; disagreement 0 codes, 3 words doubtful (M).
+# Note: 59 and 73-80 already exist above as other kinds or other columns; rows here are the 'Motz' column values (the key reuses figures by column).
+18	word	en	H	F4712-71 blind read + eye
+19	word	et	H	F4712-71 blind read + eye
+20	word	est	H	F4712-71 blind read + eye
+21	word	fort	H	F4712-71 blind read + eye
+22	word	je	H	F4712-71 blind read + eye
+23	word	j'ay	H	F4712-71 blind read + eye
+24	word	il	H	F4712-71 blind read + eye
+25	word	la	H	F4712-71 blind read + eye
+26	word	le	H	F4712-71 blind read + eye
+27	word	les	H	F4712-71 blind read + eye
+28	word	luy	M	F4712-71 blind read + eye
+29	word	son	M	F4712-71 blind read + eye
+30	word	ma	H	F4712-71 blind read + eye
+31	word	me	H	F4712-71 blind read + eye
+32	word	moy	H	F4712-71 blind read + eye
+33	word	mon	H	F4712-71 blind read + eye
+34	word	mort	H	F4712-71 blind read + eye
+35	word	ne	H	F4712-71 blind read + eye
+36	word	n'a	M	F4712-71 blind read + eye
+37	word	n'ay	H	F4712-71 blind read + eye
+38	word	non	H	F4712-71 blind read + eye
+39	word	nous	H	F4712-71 blind read + eye
+40	word	ou	H	F4712-71 blind read + eye
+41	word	par	H	F4712-71 blind read + eye
+42	word	pour	H	F4712-71 blind read + eye
+43	word	plus	H	F4712-71 blind read + eye
+44	word	pas	H	F4712-71 blind read + eye
+45	word	paix	H	F4712-71 blind read + eye
+46	word	que	H	F4712-71 blind read + eye
+47	word	qui	H	F4712-71 blind read + eye
+48	word	qu'il	H	F4712-71 blind read + eye
+49	word	sa	H	F4712-71 blind read + eye
+50	word	se	H	F4712-71 blind read + eye
+51	word	ses	H	F4712-71 blind read + eye
+59	word	armee	H	F4712-71 blind read + eye
+60	word	artillerye	H	F4712-71 blind read + eye
+61	word	afin	H	F4712-71 blind read + eye
+62	word	alle	H	F4712-71 blind read + eye
+63	word	bien	H	F4712-71 blind read + eye
+64	word	catholicques	H	F4712-71 blind read + eye
+65	word	comme	H	F4712-71 blind read + eye
+66	word	deffiance	H	F4712-71 blind read + eye
+67	word	desespoir	H	F4712-71 blind read + eye
+68	word	dire	H	F4712-71 blind read + eye
+69	word	dissimule	H	F4712-71 blind read + eye
+70	word	ennemis	H	F4712-71 blind read + eye
+71	word	elle	H	F4712-71 blind read + eye
+72	word	escrit	H	F4712-71 blind read + eye
+73	word	espoir	H	F4712-71 blind read + eye
+74	word	faict	H	F4712-71 blind read + eye
+75	word	faire	H	F4712-71 blind read + eye
+76	word	filz	H	F4712-71 blind read + eye
+77	word	frere	H	F4712-71 blind read + eye
+78	word	femme	H	F4712-71 blind read + eye
+79	word	fault	H	F4712-71 blind read + eye
+80	word	guerre	H	F4712-71 blind read + eye
+81	word	garnison	H	F4712-71 blind read + eye
+82	word	huguenotz	H	F4712-71 blind read + eye
+83	word	intelligence	H	F4712-71 blind read + eye
+84	word	jour	H	F4712-71 blind read + eye
+85	word	lettre	H	F4712-71 blind read + eye
+86	word	leuee|lence	M	F4712-71 blind read + eye
+87	word	ligue	H	F4712-71 blind read + eye
+88	word	mary	H	F4712-71 blind read + eye
+89	word	mois	H	F4712-71 blind read + eye
+90	word	menaces	H	F4712-71 blind read + eye
+91	word	propos	H	F4712-71 blind read + eye
