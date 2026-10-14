@@ -250,3 +250,61 @@ Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0
 - [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
 - [ ] retry: G1 after the sort (anchored learner on reader A FAIL 0.422, 8 Oct), then S3 on f.15
 Verdict: keep going: 2 internal gaps; cheapest next: open DECODE scat. 1597 nos. 12-40 by heading (one login, ~45 requests), ~$2
+
+## SFZ-DEC2 (14 Oct 2026 18:51-19:0x UTC, account 1, LANE DEFAULT-A1-1840-14): DECODE scat. 1597 nos. 12-35 by heading -- two sheets headed "Filippo Maria Duca di Milano"
+Job: open DECODE scat. 1597 nos. 12-40 by heading (SFZ-DEC's next band), one browser login, <= 50 requests; for each record heading,
+date, correspondent and whether it is a Visconti / Barbavara / Aragon or 1446-47 key; no decode.
+- **Prior work.** `tools/prior_work.py sforza-duke-1447-f15 --item-spec 'it1584 f.15' --step-type lookup --offline`: exit 4, the one LEAD is
+  this job's own ROOM claim; plaintext UNCHECKED (generic: no unit ids). By hand: check 1 (own work) SFZ-DEC opened nos. 1-11 and 78 only;
+  check 3 (solvers) Bourdeau read the headings of 1597 nos. 2-36 for Maino/Amidani (../sforza-maino-1446/NOTES.md) but his heading list is
+  not in this repository (sources/cyphersolver has no scat. 1597 file, grep 14 Oct 2026); Cipher Mysteries (SFZ-KEYS) already reports two
+  Filippo Maria Visconti keys in the 1597 set (Pelling and Knowles, 13 Apr 2023). Check 4 (editions): not applicable (a key lookup).
+- **Route.** A login-free RecordsList page carries no image filenames, nor does the logged-in one (checked once each), so each record
+  needs RecordsView then its PDF. One browser login (tools/decode_browser_login.js 5312 --listen); requests: 1 login-free list,
+  the login run (login + RecordsView/5312), 46 listen requests (1 logged-in list page, 22 RecordsView, 23 PDFs); all 200, none the
+  forbidden placeholder. That reached the 50-request limit at **no. 35**; nos. 36-40 not opened. All PDFs are one page.
+  Table: `decode_1597/records.tsv` (rows 5312-5335); files and sha1s: `decode_1597/manifest.json` (PDFs not committed).
+- **What nos. 12-35 are** (heading as read, one reader): 12 Io. Stephanus Castilioneus a Bartholomeo Chalco; 13 Carazolus et Salicetus /
+  Card. Ascanio Maria Sforza Visconti; 15 Antonio da Pistoia 1458; 16 Andreas Biragus (one name, Francesco Piccinino); **17 period
+  parchment "Zifra Oratorum Illustris et Excelse Comunitatis Mediolani ... ad Serenissimum dominum Aragonum Regem", dated MCCCCXLVII**
+  (the inventory's 1447 Aragon-orators parchment: the Milanese Comunità's, i.e. after the Duke's death, not his); 18 Nicodemus (pencil:
+  1451); 19 Cum Nicodemo Romae; 20 Cum ... duce Calabrie; 21 Duca di Milano con Bartolomeo da Recanati, Dec. 1458; 22 Ducalis cum Branda
+  Castiliono Neapoli; **23 "Filippo Maria Duca di Milano"** (homophonic alphabet, bigram table ab..vo, 12 words, nomenclator: Duca di
+  Milano, Roma, Duca di Ferrara, Conte d'Urbino, Papa, Veneziani, Re de Ragona, S. Malatesti); **24 "Filipo Maria Duca di Milano"**
+  (smaller: alphabet, syllables, words: Dux Mediolani, Papa, Re de Ragona, Ambassadore); 25 1460, Naples; 26 unheaded (same alphabet as
+  27); 27 Re Ferdinando di Napoli con Bartolomeo da Recanati; 28-29 Ottone del Carretto (29 "a Roma"); 30 Antonio da Trezzo 1458-;
+  31 Re Ferdinando d'Aragona con Francesco Sforza, Feb. 1459-60; 32 Bartolomeo da Recanati 1458; 33 a modern "Traduzione" of the Carretto
+  key; 34 unheaded period sheet (Legatus, Consistorium: Rome); 35 Sigismondo Malatesta. Nos. 23 and 24 are later fair copies (pencil 178,
+  177), in the same copyist's hand as nos. 2-11. No sheet headed Barbavara in 12-35.
+- **Sign check (SFZ-DEC's method, one reader, by eye, grade M, NOT blind: the reader knew the seven pairs while looking).** The seven
+  sign-letter pairs graded C from the Duke's glosses (O=a, Y=o, N8=d, N2=h, N11=r, ce=r, cu=n; ../sforza-italien1584-1447/duke/key.tsv,
+  shapes per duke_labels.md) against each key's columns:
+  **no. 23: 5 of 7** -- the o with a long right tail stands under a; a y-shape under o; a "<o"-like curl under d; the double-barred
+  vertical (‡) under h; a u/ʋ shape under n; r's column (L, ∂) carries neither N11 nor the e-shape. No. 23's o column also has a ß-like
+  sign, the Duke's K (=o, grade M). **No. 24: 0-1 of 7** (the o-tail stands under b). Every other sheet in 12-35, and the 1447 orators'
+  parchment (no. 17), 0 of 7; SFZ-DEC's ten keys 0-1 of 7. A stock-overlap count with a shuffled control was again not run (shuffling the
+  Duke's text cannot change which shapes it uses: rule 3, a non-test); the comparison set is the other keys of the same box, all 0-1 of 7.
+- **Result:** DECODE scat. 1597 no. 23 (R5323), a later fair copy headed "Filippo Maria Duca di Milano", is a candidate for the key of the
+  Duke's slips f.5/f.8 (and so f.15): 5 of the 7 C pairs agree by eye against at most 1 of 7 on 31 other keys of the box. This is a lead,
+  graded M, from an unblinded single reader; nothing here is a reading. It matches Pelling and Knowles's report (Cipher Mysteries, 13 Apr
+  2023) of two Filippo Maria Visconti keys in the 1597 set, the larger corresponding to enciphered letters at the BnF.
+- **ASMi request (REQUEST.md, held at gate 7):** no longer needed to *locate* the Duke's keys -- they are on DECODE (R5323, R5324) and
+  the 1447 Aragon parchment is R5317. It stays relevant only for permission to reproduce the sheets (DECODE files are not committed) or for
+  the 79 documents DECODE lacks; the redraft is the lane's call.
+- Requests: de-crypt.org about 50 (see Route). Cost not visible to this session.
+
+## Remaining gaps (SFZ-DEC2, 14 Oct 2026)
+Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0.441 mean held-out, 2 units; anchored 0.422); a candidate period key located (DECODE scat. 1597 no. 23, R5323, 5/7 C pairs by eye, grade M)
+- R5323 key check - blocker: not-attempted; the 5/7 agreement is one unblinded reader; next: a blind second reader (separate session, not told the Duke's values) transcribes R5323's alphabet columns into key_r5323.tsv in duke_labels.md labels, then the C-pair agreement is scored by script against key.tsv with the other 1597 keys as the null, ~$2
+- f.15 decode - blocker: not-attempted; the owner's blind sort (ASKS row 165) remains the transcription route for f.15 itself; next: if R5323 passes the blind check, apply it to f.5/f.8 against their glosses (decode_key.py, G1 gate unchanged) before f.15, ~$2
+- f.17 blanks vs f.15 - blocker: not-attempted; whether f.15's cipher fills f.17's two blanks is unexamined; next: only after a readable key, ~$1
+
+## Escalation (SFZ-DEC2, 14 Oct 2026)
+- [x] siblings: the Duke's glossed pairs f.5/f.7 and f.8/f.10 used; f.23-24/f.26, f.30-31/f.29, f.36-37/f.35 not yet
+- [x] clear-pages: f.17 (same-day clear letter) noted as context; no copy of f.15 exists in the volume per Mazzatinti
+- [x] known-keys: DECODE scat. 1597 nos. 1-35 and 78 opened (SFZ-DEC, SFZ-DEC2); nos. 23 and 24 headed "Filippo Maria Duca di Milano", no. 23 agrees 5/7 with the Duke's C pairs by eye (grade M); no. 17 is the 1447 Milan orators-to-Aragon parchment; nos. 36-114 and 169-171 not opened (not needed for the Duke unless R5323 fails its blind check)
+- [ ] print: no print of f.15 located (check-solved above); verifier pass belongs to a later reading
+- [x] key-rebuild: attempted, G1 FAIL
+- [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
+- [ ] retry: blind check of R5323, then the period key against the f.5/f.8 glosses, then S3 on f.15
+Verdict: keep going: 3 internal gaps; cheapest next: blind transcription of DECODE R5323's alphabet columns and a scripted C-pair score against the 1597 null, ~$2
