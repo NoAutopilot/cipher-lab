@@ -592,5 +592,71 @@
    "tracked": false,
    "regen": "regen_monl140.sh"
   }
+ ],
+ "monlalign": [
+  {
+   "file": "images/scratchalign/c272.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060724s/f272/full/1400,/0/default.jpg",
+   "leaf": "f.140r",
+   "sha1": "8f2545bebfd1180f975407fe644ba3f1ec9cb06e",
+   "fetched": "2026-10-14",
+   "job": "MONL-ALIGN",
+   "tracked": false,
+   "regen": "regen_monlalign.sh"
+  },
+  {
+   "file": "images/scratchalign/c273.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060724s/f273/full/1400,/0/default.jpg",
+   "leaf": "f.140v",
+   "sha1": "f0954a0eaad956d72b62c2dbb04e943c8d601028",
+   "fetched": "2026-10-14",
+   "job": "MONL-ALIGN",
+   "tracked": false,
+   "regen": "regen_monlalign.sh"
+  },
+  {
+   "file": "images/scratchalign/c274.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060724s/f274/full/1400,/0/default.jpg",
+   "leaf": "f.141r",
+   "sha1": "d9ec5f711fce8de021ea181e628a8aee9196f14a",
+   "fetched": "2026-10-14",
+   "job": "MONL-ALIGN",
+   "tracked": false,
+   "regen": "regen_monlalign.sh"
+  },
+  {
+   "file": "images/scratchalign/crops/src_image_v3_ark_12148_btv1b9060724s_f272_560_1250_2980_5250.jpg",
+   "url": "native region, see regen_monlalign.sh",
+   "sha1": "958bea93bfbe475f31a7e253ccae9950a5b4887f",
+   "fetched": "2026-10-14",
+   "job": "MONL-ALIGN",
+   "tracked": false,
+   "regen": "regen_monlalign.sh"
+  },
+  {
+   "file": "images/scratchalign/crops/src_image_v3_ark_12148_btv1b9060724s_f273_1000_1300_2650_4000.jpg",
+   "url": "native region, see regen_monlalign.sh",
+   "sha1": "da2ac11545d4d495a29cdaf252807e0eaed589d4",
+   "fetched": "2026-10-14",
+   "job": "MONL-ALIGN",
+   "tracked": false,
+   "regen": "regen_monlalign.sh"
+  },
+  {
+   "file": "images/scratchalign/crops/src_image_v3_ark_12148_btv1b9060724s_f274_650_1250_2800_1800.jpg",
+   "url": "native region, see regen_monlalign.sh",
+   "sha1": "fb4e4c60d5271f8727fee3924433d64ea3493219",
+   "fetched": "2026-10-14",
+   "job": "MONL-ALIGN",
+   "tracked": false,
+   "regen": "regen_monlalign.sh"
+  },
+  {
+   "file": "images/scratchalign/crops/f140r|f140v|f141r_Lnn_s1|s2.jpg",
+   "count": 136,
+   "how": "tools/iiif_lines.py --deskew-region --mask-neighbours (31/26/11 lines x 2 segments)",
+   "tracked": false,
+   "regen": "regen_monlalign.sh"
+  }
  ]
 }
