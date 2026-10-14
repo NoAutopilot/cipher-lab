@@ -164,7 +164,7 @@ WebSearch 2. Cost not visible to this session.
 ## Remaining gaps (SFZ-KEYS, 14 Oct 2026)
 Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0.441 mean held-out, 2 units; anchored 0.422)
 - f.15 decode - blocker: waiting-on ASKS row 165 (the owner's blind sort of f.5+f.8, packet built by SFZ-SORT 13 Oct 2026, sorter/README.md); a Duke key that passes G1 is needed first; next after the sort: dateline check, sign_sorter_apply.py, then g1_duke.py / g1_duke_anchored.py unchanged, ~$2
-- period Duke key - blocker: needs-physical-access; the ASMi scat. 1597 Filippo Maria Visconti keys (one 1446-47) and the 1447 Aragon orators' parchment are not digitised and not in Cerioni vol. II (SFZ-KEYS above); a photoreproduction order is owner-side
+- period Duke key - blocker: needs-physical-access; the ASMi scat. 1597 Filippo Maria Visconti keys (one 1446-47) and the 1447 Aragon orators' parchment are not digitised and not in Cerioni vol. II (SFZ-KEYS above); a photoreproduction order is owner-side; quote request drafted in REQUEST.md (SFZ-REQ, 14 Oct 2026), waiting-on ASKS row 166 (gate-7 check, then the person sends)
 - f.17 blanks vs f.15 - blocker: not-attempted; whether f.15's cipher fills f.17's two blanks is unexamined; next: only after a readable key, ~$1
 
 ## Escalation (SFZ-KEYS, 14 Oct 2026)
