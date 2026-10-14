@@ -362,3 +362,19 @@ registered outcome: the flagged share per truth item before/after a three-vote r
 truth files rebuilt ONLY as new items suffixed -3 beside the old ones, never replacing them). Report the flagged share and the passA/
 passB err_true on the -3 items beside the old. Price: vision calls: 6 x USD 1.4 = 8.4; cap 10; stop before a page that would cross
 80%. ROOM lines "for LANE VIV-KEYSTONE (account 4)", done line to the parent session_01D7XWmthshMVqxumdDvitPh.
+
+### VIV-PACKET3B (Opus, cap 6, box 60 min, openapi.bnf.fr <= 2): publish the f.191r packet with hand-cut boxes and an f pile
+Why: VIV-PACKET3 built the page but its box check failed (15 of 40 boxes hold no whole sign, 15 a sign no pass wrote there: the
+pen-unit map is offset on f.191r), so it was rightly not published. VIV-FKEY found the f-sign is the g-like glyph the readers label g
+(16 of 315 label-g positions on the truth leaves sit on a clerk f, 26x enriched; tiles in tx/viv63_fkey/f_tiles.tsv), so the packet can
+also carry an f pile. Steps: PREREG-VIVPACKET3.md Addendum B first (parent's decision: option "hand-cut boxes per question"): for each
+of the 40 question tiles (and the pile members drawn from f.102r/f.103r/f.201r, where the pen-unit map was already label-aware), the
+worker sets the box by eye on the line crop so it holds exactly the sign the vote names at that position (one Opus look per line crop,
+several boxes per look; log every box in tx/sorter_f191/boxes_handcut.tsv with the old box beside it); re-run the box check and paste
+it (gate: >= 36 of 40 hold the whole sign); add pile "f" = the truth-f tiles of tx/viv63_fkey/f_tiles.tsv that have a usable box (cap
+12), and keep pile g = truth-r tiles only, so the owner can tell the two apart; everything else as VIV-PACKET3 built it (blind, one
+truth letter per pile, R12 sentence in the lede, no fix-the-cut). Preflight + cvd_check, commit under tx/sorter_f191/, publish with
+the Artifact tool (title "Vivonne f.191r: the signs that break the best lines"). The consuming test stays as registered in
+PREREG-VIVPACKET3, with one addition registered now: an owner placement into pile f at a position keys that position's token as f
+(grade S, owner-read) in the re-vote. Price: vision calls: 10 x USD 0.3 = 3 (box looks on line crops, several boxes per look);
+Opus floor 2.5; cap 6. Done line: the artifact URL first, then the box-check numbers before/after, then pile f's member count.
