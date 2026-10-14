@@ -101,3 +101,22 @@ session was BAL169-F22 (session_01ThV43oDmKJK4XeTgdCDTXN); you are separate. N-c
 dated section; do not rewrite earlier sections); correct any over-claim; SECOND-OPINIONS-QUEUE row only if N3+. JSTOR-QUEUE rows in both
 families (i) and (ii). Hosts: archive.org (be-api fts, advancedsearch), Google Books API (country=US, key; 503 at 06:5x -- one retry after
 a pause, then log unreachable), OpenAlex/S2 with keys, 1.5 s apart.
+
+## Wave 4 (07:5x UTC 14 Oct; last of the lane) -- the named next steps of wave 3
+Common rules and hosts as above. Each job is its folder's own named cheapest next; read the wave-3 worker's NOTES section first.
+Pre-register before scoring; rule 3 control first; no key.tsv overwrite (`--try` tests, never edits); grades per rule 4; gaps_check.
+
+### SALV-TRY (Opus, cap 2.5, box 45 min, disk only): fr2933-salviati-1525, `--try nt^=ss` on key_lasry.tsv
+SALV-LKEY's named next ("--try nt^=ss (f54r L14 vs his excerpt), ~2"). `python3 tools/decode_key.py ciphers/fr2933-salviati-1525 --try ...`
+at every occurrence, its own control, with his f.54r L13-15 excerpt (salviati1525/NOTES.md) as the known answer for that line only; then
+re-score the two SALV-LKEY statistics (word hits, 4-gram) with the same 300 permuted keys. Accepted value M unless --try's control passed for
+its class. Report both numbers before/after; NEAR numbers in the done line. Do not start a further mapping pass.
+
+### C1161-V2 (Opus, cap 2.5, box 45 min, disk only): clair1161-avis-flandre-1688, his nomenclature digit pairs as units (V2)
+C1161-LKEY's named next ("V2 digit pairs as units, ~1.5"; PREREG condition in its PREREG file). Same gate and permuted control as V1;
+conflicts with our key stay recorded both ways (rule 4). Report V2 vs p99 and faces gaining a licensed stretch.
+
+### BAL167-FIN (Opus, cap 3.5, box 60 min, openapi.bnf.fr <= 200 at >= 3 s): baluze167-davaux-1637, Baluze 167 canvases 251-429
+Exactly BAL167-SWEEP's method (its NOTES section), canvases 251 to the volume's end (429 per BAL167-SWEEP; confirm from the manifest), <= 12
+looks at 1000 px; controls = listed 167 ff.127, 143, 157, 205 in range. Take/release ROOM lines. New survey.tsv rows only; volumes gap line
+(167 done; 168, 171 remain); Verdict; gaps_check. No transcription.
