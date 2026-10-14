@@ -3,6 +3,7 @@
 and write tx/dec67_norm.txt (ink 41's tx/dec_norm.txt is left untouched).
 
     python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_merge_dec.py f205r f205v
+    python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_merge_dec.py f215r f215v --out dec70_norm.txt   # VIV-70 (ink 71)
 """
 import difflib, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -12,7 +13,11 @@ import merge_dec as md  # noqa: E402
 
 def main():
     allnorm = []
-    for page in sys.argv[1:]:
+    args = sys.argv[1:]
+    outname = 'dec67_norm.txt'
+    if '--out' in args:
+        k = args.index('--out'); outname = args[k + 1]; del args[k:k + 2]
+    for page in args:
         rl = lambda q: [l for l in open(os.path.join(HERE, f'dec_{page}_{q}.txt'), encoding='utf-8').read().splitlines() if l.strip()]
         wa = [w for w in ' \n '.join(rl('passA')).split(' ') if w]
         wb = [w for w in ' \n '.join(rl('passB')).split(' ') if w]
@@ -34,7 +39,7 @@ def main():
         n = md.norm(merged)
         allnorm.append(n)
         print(f'{page}: words A {na} B {nb}, agreeing words {eqw} ({eqw / max(na, nb):.3f}), merged letters {len(n)}')
-    open(os.path.join(HERE, 'dec67_norm.txt'), 'w').write(''.join(allnorm) + '\n')
+    open(os.path.join(HERE, outname), 'w').write(''.join(allnorm) + '\n')
 
 
 if __name__ == '__main__':
