@@ -2776,6 +2776,12 @@ tx/sorter_human/labels.tsv --db <dir> --out settled.tsv --page tx/sorter_human/s
   about half; the half he misses is one look-alike pair (3 vs z, the d-sign), the same pair pass B and VIV-67's split table name first
   (3/z 15). That is a pile-exemplar question (do the 3 and z piles show the distinction?) before it is a reading question. A second
   owner ask on this hand, if any, targets that pair with its exemplars side by side, and only once R12 is fixed.
+- Pile check (parent, 02:4x UTC, from the page's own embedded tiles): the "z" pile the page showed the owner is dominated by
+  3-shaped glyphs (8 of 8 examples drawn from the committed f.201r labels are 3-like), while the "3" pile mixes 9-, m-, g- and
+  Z-like shapes with 3-shapes. His four "wrong" placements therefore follow the page's own examples: the committed f.201r labels
+  carry the 3/z confusion (VIV-67's first split pair, 15 columns), and a blind pile sort inherits it. The scoring stands as registered,
+  but these four are a page defect (pile exemplars built from unsettled labels), not evidence about the owner's eye. The VIV-CLS map
+  is too thin (46% coverage) to tally truth per label-z tile cleanly (label z: truth a 3, u 2, r 2, none d; label 3: a 2, d 1).
 
 ## Remaining gaps (VIV-F191 refresh, 14 Oct 2026; supersedes the VIV-70B list, all its other lines kept)
 Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 read with key.tsv, gloss check PASS (N5-VIV54), window look-alike pass + re-decode, b2 + wrong-key PASS (N7-VIV54L); ink 53 Ink 52 f.164r-v read (VIV52-O, 13 Oct 2026): H 2,217 / M 404 / U 106 of 2,727, b2 + 200-wrong-key PASS.
