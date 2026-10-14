@@ -108,3 +108,19 @@ Pile F (item 3): 6 of the 11 label-g truth-f positions on the three leaves have 
 the other 5 were not hand-cut (the page was not built). Eyed: f.102r L04, L26 and f.103r L35 hold one whole sign, a looped-top stem with a lower loop,
 visibly unlike the truth-r g tiles (g with a descender); f.102r L15 holds two signs, f.103r L22 and f.201r L18 only the top. Pile named `F`, not `f`:
 key.tsv code f already means l. Pile g truth-r only (asserted); one g member (f.102r L23) looks d-like. Report-only, not a test.
+
+## Addendum C (14 Oct 2026, 04:3x UTC by date -u; parent's decision, session_01D7XWmthshMVqxumdDvitPh, 04:2x UTC; written and pushed before the page is built; no answer exists)
+1. The page is published with the **34 question tiles whose hand-cut box passed** the Addendum B check (tx/sorter_f191/boxes_handcut.tsv `check` = pass),
+   same qids, same tray order minus the dropped six. Addendum B item 2's gate (>= 36) is superseded for this page by the parent: its purpose, that no
+   badly cut box reaches the owner, is met by dropping the failures.
+2. Dropped by name: **Q12, Q13, Q25** (label V, the long diagonal stroke, fused into or crossing a neighbour), **Q18** (under an ink blot), **Q24** (the
+   L loop overlaps the Z-like 3), **Q26** (the two-tick e; a tile holds one tick). These six are not readable as single tiles on this page; their
+   positions stay as committed (M/U or split) and the re-vote leaves them unchanged.
+3. Pile **F** (plaintext f; key code f means l): only the members that held one whole sign in Addendum B's eye check -- f.102r L04
+   (f102r_L04_s1_01_007), f.102r L26 (f102r_L26_s2_01_011), f.103r L35 (f103r_L35_s2_01_013); the other three map tiles (f.102r L15 two signs, f.103r
+   L22 and f.201r L18 top only) are listed in tx/sorter_f191/f_drop.tsv and left out. The five label-g truth-f positions with no single map tile are not
+   added. Pile F is a three-tile pile and is named as such in the build line. Pile g stays truth-r only. All other piles as registered (section 3),
+   f.201r members included (host budget raised by the parent to 4 requests so the f.201r crops can be re-fetched).
+4. Section 5's consuming test stands on the 34, with Addendum B item 5 (a placement in F keys the position as f, grade S, owner-read).
+5. Page as section 4: blind, title "Vivonne f.191r: the signs that break the best lines", R12 sentence in the lede, preflight + cvd_check pasted,
+   committed under tx/sorter_f191/ (HTML < 3 MB), published with the Artifact tool.
