@@ -1,4 +1,4 @@
-# PREREG test 4c -- erba-2006 (ERBA-CASE, LANE DEFAULT-A2-2209-14, account 2; written 14 Oct 2026 ~23:22 UTC, before any score)
+# PREREG test 4c -- erba-2006 (ERBA-CASE, LANE DEFAULT-A2-2209-14, account 2; written 14 Oct 2026 23:18 UTC by date -u, before any score)
 
 A different design on test 4b's instrument, per NOTES.md "## Next step (ERBA-SIB, 14 Oct 2026)": case-sensitive letter classes.
 Not a third attempt at the case-folded design (test 4 / 4b).
