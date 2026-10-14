@@ -594,5 +594,1217 @@
    "command": "python3 tools/iiif_lines.py --image \"images/scratch/c275/src_c275_1000,4880,3796,420.jpg\" --out images/scratch/c275/crops --prefix b167c275 --debug (run in the target folder; 2 lines x 2 segments)",
    "job": "BAL167-C275"
   }
+ ],
+ "bal168tail2_fetches": [
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f523/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:29:12Z",
+   "http": 200,
+   "bytes": 30552,
+   "sha1": "3c0c7f1feaafda014c023c0fda95400a60dec4d6",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f524/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:29:18Z",
+   "http": 200,
+   "bytes": 11436,
+   "sha1": "0400882ef2fae0db91d5bdd094cc20c195e45788",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f525/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:29:23Z",
+   "http": 200,
+   "bytes": 15040,
+   "sha1": "909e9689a55cc4d525bc452a5026233abbe5596c",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f526/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:29:30Z",
+   "http": 200,
+   "bytes": 31310,
+   "sha1": "6b8601ef9cc5607f43a12490ef8d5f20840d8184",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f527/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:29:37Z",
+   "http": 200,
+   "bytes": 30440,
+   "sha1": "e13cee11c6d0961b17a4692d3fed2905c77e7a3e",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f528/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:29:45Z",
+   "http": 200,
+   "bytes": 12444,
+   "sha1": "785544eb764dbe0e184e1539db242c71123c7a63",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f529/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:29:50Z",
+   "http": 200,
+   "bytes": 18275,
+   "sha1": "e58582244c58ff5bff2ec917826e230b56f7b3d0",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f530/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:29:59Z",
+   "http": 200,
+   "bytes": 37821,
+   "sha1": "e054e5a931797a63f6d705bae769bc5f5a7a0c44",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f531/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:30:05Z",
+   "http": 200,
+   "bytes": 20678,
+   "sha1": "49c79972c9d2b37b91eabe63f03e7ed1e8833e0f",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f532/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:30:11Z",
+   "http": 200,
+   "bytes": 15947,
+   "sha1": "72c8e2edbe11c0086cea153b6b179ace9af87206",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f533/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:30:22Z",
+   "http": 200,
+   "bytes": 20390,
+   "sha1": "6c917869b8361e8546bb94f0757b916494c66284",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f534/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:30:28Z",
+   "http": 200,
+   "bytes": 46356,
+   "sha1": "86f8bf84f7620b2396babd7a4c891a58c23a1c43",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f535/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:30:35Z",
+   "http": 200,
+   "bytes": 47153,
+   "sha1": "c8d4e6d080771521123ae450a9b9eadc2dfd1c87",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f536/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:30:40Z",
+   "http": 200,
+   "bytes": 43467,
+   "sha1": "6080765f540899b89c4e8fc9bd70c98187fa7612",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f537/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:30:45Z",
+   "http": 200,
+   "bytes": 45953,
+   "sha1": "027137d7acfb8853e8d0058cc7f29ef05838a720",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f538/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:30:52Z",
+   "http": 200,
+   "bytes": 41150,
+   "sha1": "3604b5b1de38fb68e1e6fc3f526eccd9da1d94c4",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f539/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:31:00Z",
+   "http": 200,
+   "bytes": 43056,
+   "sha1": "9b43d845c125add595d808d7af9b26751262c29f",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f540/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:31:05Z",
+   "http": 200,
+   "bytes": 31176,
+   "sha1": "bcd99719a06935afbbff4cae71fe99ed748ae221",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f541/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:31:10Z",
+   "http": 200,
+   "bytes": 17196,
+   "sha1": "d0b1caa6c9559fb7eef2b3979bb4d20aef28db43",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f542/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:31:15Z",
+   "http": 200,
+   "bytes": 31847,
+   "sha1": "37ad221214872d7c4cbf49fe3ff5ed6892cd0192",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f543/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:31:20Z",
+   "http": 200,
+   "bytes": 31075,
+   "sha1": "74cf45fcaffb32ad303834ccea17e548ee05d10e",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f544/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:31:35Z",
+   "http": 200,
+   "bytes": 30226,
+   "sha1": "104aff0a6b3186fc5fea17bf0f32ab542a3e8177",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f545/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:31:52Z",
+   "http": 200,
+   "bytes": 22229,
+   "sha1": "44743c98c9a0d7cf43d8f87db7aebe6eb7a3cc61",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f546/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:31:56Z",
+   "http": 200,
+   "bytes": 32129,
+   "sha1": "5b5394daee1505d8a644a8669abf51fdb307edc9",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f547/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:32:00Z",
+   "http": 200,
+   "bytes": 17124,
+   "sha1": "480e9bf734174606f50f41846282743c033b8424",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f548/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:32:04Z",
+   "http": 200,
+   "bytes": 16048,
+   "sha1": "64cf486ed5642f19e3c2ff2384aeb5b45e5231b6",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f549/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:32:09Z",
+   "http": 200,
+   "bytes": 18041,
+   "sha1": "23a473e6a66e2ca89d28eed5831442f975deb9ab",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f550/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:32:14Z",
+   "http": 200,
+   "bytes": 39815,
+   "sha1": "21295adf1d78da13348673c898f97b9aa37705fd",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f551/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:32:18Z",
+   "http": 200,
+   "bytes": 28411,
+   "sha1": "9200f1730a7742cee22afc1288313869725ab78e",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f552/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:32:26Z",
+   "http": 200,
+   "bytes": 14964,
+   "sha1": "f11df9b678419435a9596f0947e0302dc2496149",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f553/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:32:31Z",
+   "http": 200,
+   "bytes": 20145,
+   "sha1": "1980c1061cf52dd8c22d8e9d527920a8ab96b883",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f554/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:32:50Z",
+   "http": 200,
+   "bytes": 38915,
+   "sha1": "e2d9d2c09ef148297660cfc9b3f74bf3fbdac6d8",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f555/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:32:59Z",
+   "http": 200,
+   "bytes": 37918,
+   "sha1": "2145b8d40c28c1f5078b8a6364b1babee4e867f9",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f556/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:33:04Z",
+   "http": 200,
+   "bytes": 38503,
+   "sha1": "7f28a02ca03214a6a9e7cb56661c7c48b67c5a20",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f557/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:33:14Z",
+   "http": 200,
+   "bytes": 34456,
+   "sha1": "e6444bbb8db603f69c14e2fbe23303f9d01dbe86",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f558/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:33:20Z",
+   "http": 0,
+   "bytes": null,
+   "sha1": null,
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2",
+   "note": "connection reset (curl 56); retried once after 60 s"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f558/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:34:21Z",
+   "http": 200,
+   "bytes": 13825,
+   "sha1": "ee3e5cd30fa7a7e70a85b22a6505ae30ba0e8812",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2",
+   "note": "retry of the reset request"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f559/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:34:29Z",
+   "http": 200,
+   "bytes": 16944,
+   "sha1": "8ccb3ad0ed21cf8b0659bfabda27f266aa87a47f",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f560/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:34:37Z",
+   "http": 200,
+   "bytes": 34176,
+   "sha1": "3e69d86f283b834585fb2c3df87f960d2fc99e62",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f561/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:34:41Z",
+   "http": 200,
+   "bytes": 34373,
+   "sha1": "b12ba02edf81454c8457441f745a2975971b8db1",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f562/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:34:45Z",
+   "http": 200,
+   "bytes": 28851,
+   "sha1": "294d5fa1293b74168305b85e084f12cf20877347",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f563/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:34:59Z",
+   "http": 200,
+   "bytes": 17104,
+   "sha1": "3a9d24622edf36f13632a9fd1be005a1bfd3cbfe",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f564/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:35:03Z",
+   "http": 200,
+   "bytes": 31145,
+   "sha1": "a2ef598a52f820526f55b5a6d2a88ecc4cd4d34b",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f565/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:35:07Z",
+   "http": 200,
+   "bytes": 28061,
+   "sha1": "8a1cdddd73c2f7d939cdbf0d272ef6894b7a3f5d",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f566/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:35:12Z",
+   "http": 200,
+   "bytes": 28466,
+   "sha1": "3b2dc1f1927766c28f5e3c9be1b3d892e89b5fda",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f567/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:35:16Z",
+   "http": 200,
+   "bytes": 22782,
+   "sha1": "3e900095210436d073c40da737109793ef98deee",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f568/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:35:21Z",
+   "http": 200,
+   "bytes": 28221,
+   "sha1": "b1e1cd86b06da110d563e9f84d82a50eec0b469e",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f569/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:35:25Z",
+   "http": 200,
+   "bytes": 23866,
+   "sha1": "d3a31dec96337b359e993bb8833d8094b5f18e07",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f570/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:35:32Z",
+   "http": 200,
+   "bytes": 14858,
+   "sha1": "7e1b55acf8c0d86dd04991a272e543c46c96dea4",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f571/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:35:38Z",
+   "http": 200,
+   "bytes": 17265,
+   "sha1": "42096064bf6aa42c0a59f79eefe51f19b59fcea0",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f572/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:35:45Z",
+   "http": 200,
+   "bytes": 29256,
+   "sha1": "e6e421efcfcea32797eb8e1d0b8a7d94a3ca0e8e",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f573/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:35:52Z",
+   "http": 200,
+   "bytes": 21087,
+   "sha1": "af0697a943856bda73ca1c29242f7441db22ed4e",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f574/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:35:57Z",
+   "http": 200,
+   "bytes": 38033,
+   "sha1": "84af7cd83d8ed5b5c7b62aa2bddfac1d459db031",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f575/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:36:02Z",
+   "http": 200,
+   "bytes": 35953,
+   "sha1": "d5691e111d054eb04e9b4ef7e64bf197b3463229",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f576/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:36:08Z",
+   "http": 200,
+   "bytes": 34577,
+   "sha1": "f62e6d4b01cd9cde8c1d26378b0e2568b40f4e9b",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f577/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:36:12Z",
+   "http": 200,
+   "bytes": 33613,
+   "sha1": "af11350e70c07a71bfcf3f8324ee1d34842a0163",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f578/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:36:17Z",
+   "http": 200,
+   "bytes": 33959,
+   "sha1": "4e674961604ab8af16e5ae852a61443685549f99",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f579/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:36:21Z",
+   "http": 200,
+   "bytes": 33492,
+   "sha1": "05d1a93dd9c6bb4df0c17aa86a6b114b460013c6",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f580/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:36:26Z",
+   "http": 200,
+   "bytes": 38238,
+   "sha1": "9d39960649ad6950d77d2977bba2c6a66fac6ea8",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f581/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:36:30Z",
+   "http": 200,
+   "bytes": 29593,
+   "sha1": "b19aba14e7b3e421e5cb36a8ef05a6f7c76b918e",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f582/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:36:34Z",
+   "http": 200,
+   "bytes": 27469,
+   "sha1": "2ba46df382d3a8989dad7fc5af280598be323b32",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f583/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:36:39Z",
+   "http": 200,
+   "bytes": 28085,
+   "sha1": "c7431962682f9866d7121432b0688b5bc342d6df",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f584/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:36:43Z",
+   "http": 200,
+   "bytes": 29574,
+   "sha1": "5c86498ab7311d9d197446292938c82c3f8f79cc",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f585/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:36:48Z",
+   "http": 200,
+   "bytes": 29865,
+   "sha1": "3a5ef9f0c13f493e59c5de3388ce6079b509e80e",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f586/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:36:52Z",
+   "http": 200,
+   "bytes": 31609,
+   "sha1": "01a42ad779237b02e474cf8077d2c82a400d374c",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f587/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:36:57Z",
+   "http": 200,
+   "bytes": 22356,
+   "sha1": "b7b068cfae006bfcbdc37c0f270bae65f2e27352",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f588/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:40:07Z",
+   "http": 200,
+   "bytes": 13474,
+   "sha1": "283a9edadc9f04a7b62de533e951af8c9fb0321d",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f589/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:40:14Z",
+   "http": 200,
+   "bytes": 18040,
+   "sha1": "ea88404a72bf190ad0c1e48fc3f6c8c39898e04e",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f590/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:40:18Z",
+   "http": 200,
+   "bytes": 40604,
+   "sha1": "2af87d68bec42d261a1581d3668450bb8c3c6494",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f591/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:40:24Z",
+   "http": 200,
+   "bytes": 27926,
+   "sha1": "1ea1600c387138b02a76cbdff576bbe8e50479de",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f592/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:40:30Z",
+   "http": 200,
+   "bytes": 14090,
+   "sha1": "5a09eb4b26fba82a784d7dbaae83c81e4d4dbab5",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f593/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:40:37Z",
+   "http": 200,
+   "bytes": 16695,
+   "sha1": "83304de61e96cadfea8b395c9d82bc6e9c046532",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f594/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:40:41Z",
+   "http": 200,
+   "bytes": 31044,
+   "sha1": "c368ad446d72cf01c18ae3fdab2b247854575bb2",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f595/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:40:45Z",
+   "http": 200,
+   "bytes": 29119,
+   "sha1": "8ff7eb051f3384cd1e6cf1ba913fff7478e8e8d8",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f596/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:40:49Z",
+   "http": 200,
+   "bytes": 30743,
+   "sha1": "aa8043bcdfe6ea69131badd9d6a93621ab67493e",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f597/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:40:54Z",
+   "http": 200,
+   "bytes": 32194,
+   "sha1": "6118fda75e76aa87afbfad028b485ccd6345264c",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f598/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:40:58Z",
+   "http": 200,
+   "bytes": 29849,
+   "sha1": "f9c886f29dd3a5bcb0380ce5438b68564c9d690c",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f599/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:41:03Z",
+   "http": 200,
+   "bytes": 30181,
+   "sha1": "3959eecc263dc9aa70629c50527c3e3e5b8927d1",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f600/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:41:10Z",
+   "http": 200,
+   "bytes": 30172,
+   "sha1": "92b2423c47ad2f5b660e45836638714e045f5420",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f601/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:41:14Z",
+   "http": 200,
+   "bytes": 32878,
+   "sha1": "7e94a926e6792bb595cec99222f4a4f190c6f275",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f602/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:41:18Z",
+   "http": 200,
+   "bytes": 38166,
+   "sha1": "b9f5e1f737bffc335087a1eecf85a2dbd0dcf565",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f603/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:41:26Z",
+   "http": 200,
+   "bytes": 22187,
+   "sha1": "222702a87b91284e2455b0ab0f4aecd9ab04a228",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f604/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:41:34Z",
+   "http": 200,
+   "bytes": 32603,
+   "sha1": "064bf87ca60352b61a3dec03d9e620f2d689c594",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f605/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:41:38Z",
+   "http": 200,
+   "bytes": 21783,
+   "sha1": "1485523591fbc4850864a902970e90774f908b3f",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f606/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:41:46Z",
+   "http": 200,
+   "bytes": 32775,
+   "sha1": "bd704c2ae4a9e5ed28f3cf08235efdefa4c34cf3",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f607/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:41:51Z",
+   "http": 200,
+   "bytes": 15622,
+   "sha1": "40bc89a8d4c2973e108ec2a918917c27410338c9",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f608/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:41:55Z",
+   "http": 200,
+   "bytes": 15847,
+   "sha1": "677867fed27daa9509e0ffcfa8ee6d04466de3ba",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f609/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:42:03Z",
+   "http": 200,
+   "bytes": 17114,
+   "sha1": "90f8efb0ec1bdd9f6233dbd5d88d2517d82f5be0",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f610/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:42:07Z",
+   "http": 200,
+   "bytes": 34926,
+   "sha1": "d639c29b3230159448d9fb590248f5fa498e089d",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f611/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:42:11Z",
+   "http": 200,
+   "bytes": 31562,
+   "sha1": "c4abaebcc8043dc180975847981f6bb6753109cc",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f612/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:42:15Z",
+   "http": 200,
+   "bytes": 31362,
+   "sha1": "bca4a36d21de82d034847d6fe3fc9bcfcfa7b870",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f613/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:42:19Z",
+   "http": 200,
+   "bytes": 32391,
+   "sha1": "fd82e6a55400ba32b3ef160720169d4076e06db3",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f614/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:42:24Z",
+   "http": 200,
+   "bytes": 42805,
+   "sha1": "8d48c18f0f5151fdd3a2a22671922ed33845ddd4",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f615/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:42:29Z",
+   "http": 200,
+   "bytes": 29016,
+   "sha1": "355eb401d158b161fe061c1fd4f3b271d99a8882",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f616/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:42:39Z",
+   "http": 200,
+   "bytes": 14699,
+   "sha1": "60c9be661eed26f90f177c535cd8bd60c53e108b",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f617/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:42:44Z",
+   "http": 200,
+   "bytes": 17372,
+   "sha1": "c8af1daf3dc91fd5316716a76a8a40375414e3c6",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f618/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:42:48Z",
+   "http": 200,
+   "bytes": 33721,
+   "sha1": "0757832a80e2bff21bb51c3a96cb9119722a77d2",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f619/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:42:52Z",
+   "http": 200,
+   "bytes": 34709,
+   "sha1": "e4010c4ceb3191d30f319ac948aae812ab8b7931",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f620/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:42:56Z",
+   "http": 200,
+   "bytes": 29839,
+   "sha1": "bd48127878c079a91159c7e127c5deca55c70490",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f621/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:43:01Z",
+   "http": 200,
+   "bytes": 20919,
+   "sha1": "bfef9955304fde72092fd76fe9d2ee8ca65402a8",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f622/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:43:05Z",
+   "http": 200,
+   "bytes": 45336,
+   "sha1": "b155cafd68a92747b5670b416f9233c893cb3747",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f623/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:43:29Z",
+   "http": 200,
+   "bytes": 31977,
+   "sha1": "c7ae1eeea991ca8515dccbf3e7c79b617ded4a3f",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f624/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:43:33Z",
+   "http": 200,
+   "bytes": 32330,
+   "sha1": "ecb16b4bf7f9f39c2c60f2d0ac9d60f2989d5e67",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f625/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:43:37Z",
+   "http": 200,
+   "bytes": 31138,
+   "sha1": "11d8fc124ec09e02043a81efe0b4f9104af64f94",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f626/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:43:41Z",
+   "http": 200,
+   "bytes": 30595,
+   "sha1": "a9499f6338e378838304ea930de86577f1f0b2bd",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f627/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:43:47Z",
+   "http": 200,
+   "bytes": 31301,
+   "sha1": "a0df25a62bce271a607adee1b2e5ae021852c037",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f628/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:43:51Z",
+   "http": 200,
+   "bytes": 20529,
+   "sha1": "2e3292e84189e5836e55442ad6f81d6cd69c016c",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f629/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:43:56Z",
+   "http": 200,
+   "bytes": 18871,
+   "sha1": "fbc2ccf4f1280ef501bbf979f624b501143057d1",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f630/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:44:02Z",
+   "http": 200,
+   "bytes": 46271,
+   "sha1": "aa39ca6fc870e9984af211ac9954b73d44b90a46",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f631/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:44:10Z",
+   "http": 200,
+   "bytes": 29698,
+   "sha1": "f3e047b9ae6be2217e0a6b2e9fefa0029f2f3d99",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f632/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:44:14Z",
+   "http": 200,
+   "bytes": 36769,
+   "sha1": "b07cb18039cddd7c6ad93953569135dd19420e29",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f633/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:44:34Z",
+   "http": 200,
+   "bytes": 23761,
+   "sha1": "73ae2026bf145dd6f66450b6ff09662b52b58291",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f634/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:44:47Z",
+   "http": 200,
+   "bytes": 32648,
+   "sha1": "e21756f3cec49b35ae94bf163055b1c961b95624",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f635/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:44:56Z",
+   "http": 200,
+   "bytes": 16922,
+   "sha1": "89cd61b5dd283b01f02197af936cc6e0aa0583c7",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f636/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:45:02Z",
+   "http": 200,
+   "bytes": 14227,
+   "sha1": "5e06efd7778585dfe201adc2c8a918e98ded064e",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f637/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:45:13Z",
+   "http": 200,
+   "bytes": 18737,
+   "sha1": "76440e597407a418fe4d87f1ad838285bbdb8909",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f638/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:45:19Z",
+   "http": 200,
+   "bytes": 35970,
+   "sha1": "01bdbb5f1a63ba86971938f0242db8f93821c128",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f639/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:45:24Z",
+   "http": 200,
+   "bytes": 29683,
+   "sha1": "5a2a57b6203dca543c1549dede24c833d3f057d0",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f640/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:45:33Z",
+   "http": 200,
+   "bytes": 42244,
+   "sha1": "19bb922b5b8ca6da8dc0636f8618aeb01c3bdd20",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f641/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:45:38Z",
+   "http": 200,
+   "bytes": 45825,
+   "sha1": "782d69be486112523e6af440973337f3ad8d69ad",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f642/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:45:42Z",
+   "http": 200,
+   "bytes": 47529,
+   "sha1": "fec8030f20ada74544b2004756e008a93b90d7cf",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f643/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:45:52Z",
+   "http": 200,
+   "bytes": 43455,
+   "sha1": "f698ab3e3fd97f98b3c83ea4f1508c7cb9407c27",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f644/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:45:58Z",
+   "http": 200,
+   "bytes": 27437,
+   "sha1": "c45d1346dd5eabfd64aa01887854bf5e17175ad6",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f645/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:46:14Z",
+   "http": 0,
+   "bytes": null,
+   "sha1": null,
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2",
+   "note": "connection reset (curl 56); retried once after 60 s"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f645/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:47:15Z",
+   "http": 200,
+   "bytes": 22063,
+   "sha1": "d0d3b6add3c8b4904a9d28456185cb7bd650c696",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2",
+   "note": "retry of the reset request"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f646/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:47:21Z",
+   "http": 200,
+   "bytes": 9934,
+   "sha1": "fcead1ffe77a1a69dfae7aef6bf63aa9730888bf",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f647/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:47:27Z",
+   "http": 200,
+   "bytes": 9127,
+   "sha1": "2be49e309512378a7e69afe62bf29bc1e481e468",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f648/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:47:34Z",
+   "http": 200,
+   "bytes": 10245,
+   "sha1": "a9bae9a7a4a1391b60cff7e120a3eca7f35bbb00",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f649/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:47:45Z",
+   "http": 200,
+   "bytes": 53949,
+   "sha1": "e03b704241789055a3a4f069b827644b1ea3d7ba",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f650/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:48:12Z",
+   "http": 200,
+   "bytes": 55639,
+   "sha1": "c3d218e4226ac2df297600759e54c2cbac9f83b0",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f651/full/300,/0/default.jpg",
+   "fetched": "2026-10-14T19:48:25Z",
+   "http": 200,
+   "bytes": 45374,
+   "sha1": "34623a121228f4591007e83e922ec50409e07061",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f599/full/1000,/0/default.jpg",
+   "fetched": "2026-10-14T19:49:10Z",
+   "http": 200,
+   "bytes": 286863,
+   "sha1": "96875e3eb43a00008b79f5e3f692121819b36ad4",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f600/full/1000,/0/default.jpg",
+   "fetched": "2026-10-14T19:49:15Z",
+   "http": 200,
+   "bytes": 287047,
+   "sha1": "cd58d76ee67a1d961493c6350ca8543a9909b0a6",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f601/full/1000,/0/default.jpg",
+   "fetched": "2026-10-14T19:49:20Z",
+   "http": 200,
+   "bytes": 305095,
+   "sha1": "f3139f56a2a953711bf7585f8c7a1726befbf264",
+   "kept": "not kept (session scratch); regen from url",
+   "job": "BAL168-TAIL2"
+  }
  ]
 }
