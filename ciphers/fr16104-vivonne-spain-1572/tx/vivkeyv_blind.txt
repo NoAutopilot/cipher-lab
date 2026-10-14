@@ -1,0 +1,12 @@
+VIV-KEYV blind shape call, 14 Oct 2026, one Sonnet subagent, montage from tx/vivkeyv_tiles.py (tiles shuffled, seed 20261014, opaque ids, no values or labels shown).
+Prompt: group the 12 marked signs by shape; one line per group; confidence per tile; name any two-piece compound.
+Answer (verbatim):
+G1: T02, T04, T10 | "e" with a leading tail, a loop and a descending hook on the right (e+n-like, hooked right stroke)
+G2: T01, T03 | loop/curl plus a "z/x"-like crossed stroke with a long descending right leg (marked sign is the crossed "x" form)
+G3: T05, T09, T11, T12 | small oval/loop on top of a zigzag base stroke (a "g/Q" shape with a Z-like tail)
+G4: T07 | flat "o" or "t"-like body with a crossbar and a stroke to the right (ligature-like)
+G5: T06, T08 | small hooked loop beside a closed "6" or "8" shape (dotted comma-like stroke on the left)
+confidence per tile: T01=M T02=H T03=M T04=H T05=H T06=M T07=L T08=M T09=H T10=H T11=H T12=H
+Compound: T01 and T03 look like a two-piece compound. The marked loop is joined to a crossed "x/y" shape with a long descending right leg. T05, T09, T11 and T12 may each pair the oval-and-zigzag sign with a small "s"-like curl on its right, but that curl looks like a separate sign. T07 may be compound with the "r"-like hook on its right. T02, T04 and T10 mark the "en"-like sign, which could also be two pieces, an "e" loop plus an "n" hook.
+Unblinded (tx/vivkeyv_tiles.tsv): G1 = k4, a6, k3 (ink-67 comm- x2 + ink-63 comm- x1); G2 = k1, k2 (ink-67 comm-, darker scan, same e + descender compound); G3 = c9-c12 (all four "e s" faict-type); G4 = a5 (ink-63 comm-, L); G5 = b7, b8 (both "e 6" pl-type).
+No faict-type or pl-type tile is grouped with any comm- tile; the one ink-63 comm- tile at H/M confidence (a6) groups with ink-67 comm- tiles.

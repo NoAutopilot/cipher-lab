@@ -743,3 +743,78 @@ depth_check: AUDIT 5's (N5-VIVK held-out key + PREREG-VIV52O gates re-run byte-i
   into its question 2 would lead the second opinion instead of testing it; the verifier who checks the SO answer reads it against this section.
 - Next steps that would move the class: view the heads of the post-19 Sept dechiffré leaves (~$1, closes the misplacement residual); Google Books
   phrase pass when the host answers; Flament/Ribera owner-side (gaps already list them).
+
+## AUDIT 7 (VIV-KEYV, 14 Oct 2026) -- the key row e -> m, and a depth re-check of inks 63, 53, 54 (and 52)
+Account-4 verifier for LANE VIV-KEYSTONE, session_019WmhaR2eNEdc3vaKCMLazF, 01:11-01:3x UTC 14 Oct 2026 by date -u. Separate session from the solver
+(VIV-KEY, session_01LKz9dh5PrZ8UTS7hEMnrdF). Brief: .claude/briefs/runs/2026-10-13-acct4-keystone-viv-jobs.md "Wave 3" / "VIV-KEYV".
+**Claim under audit:** key.tsv row "e -> m, grade C, clerk anchors ink 67 (4/5, all in comm-)" and the readings of inks 63, 53, 54 (and 52) re-decoded
+under it (NOTES "VIV-KEY", PREREG-VIVKEY.md).
+
+### 1. What the row rests on
+- Four ink-67 positions (f.201r L05:53 "command", L10:59, L12:36, L13:14 "comme"), one leaf, one word family; ink 40 gave label e no anchor; a fifth
+  ink-67 e aligns to s. In all four the following token (label n x3, label @ x1) also aligns to m (benchmark-tx/vivonne1573-f201r-dev.truth.tsv,
+  status `excluded:letter-off-key`): the clerk's "mm" sits on the pair "e n" / "e @", not on e alone.
+- Tomokiyo's table (sources/cryptiana/web/henryiii_Vivonne1.png, read by this verifier): the sheet's tile for label e (glyphs/sheet_tomokiyo_v1.tsv
+  tile 04, box 134,22,146,38, "epsilon-like looped stroke") sits in **col g row 1**; col m holds "II", a circled 6, an "np"-like sign (row 3) and an
+  "om"-like sign (row 5); col f row 1 is the large looped g-like sign. key_tomokiyo.tsv has no row for col g row 1 or col f row 1. **Tomokiyo's table
+  gives no sign that is plainly our label e an m value**; the nearest m sign in shape to the "e n" compound is col m row 3 (not settled here).
+- The crossword (`decode_key.py --try`, non-blind, VIV-KEY's paste): e = m rejected, e = i preferred, on all 161 ink-63 positions together.
+
+### 2. Shape look (openapi.bnf.fr 3 requests, HTTP 200: c206 f201r, c199 f193v, c198 f192v native regions; no image committed)
+Line crops regenerated (manifest "viv67" commands; images/p63 commands of NOTES with `--iiif-host openapi`), 12 tiles cut and positioned by this
+verifier (tx/vivkeyv_tiles.tsv, rebuilt by tx/vivkeyv_tiles.py): 4 ink-67 comm- anchors, and 8 ink-63 label-e tokens chosen by context class --
+2 in "d e n" (o-mm-, "cco[e]tande-"), 2 in "e 6" ("[e]6oox" = plus), 4 in "e s" ("[e]s tz : #" = faict). Tile choice was NOT blind (the verifier picked
+contexts after seeing the lines); the grouping was. **By eye:** label e covers at least three different written signs in ink 63: (A) a small closed
+e-loop joined to a following n-like stroke with a long descender -- the same "e n" compound as every ink-67 comm- anchor; (B) a hooked open c before
+6 ("plus" contexts); (C) a large looped g-like sign with a zigzag tail, the col f row 1 sign of Tomokiyo's table ("faict", "France" contexts; D07-VIV53
+already put 6 of 16 ink-53 label-e positions on col f row 1 at H/M in both blind passes). **One blind Sonnet call** (shuffled, opaque ids, no values;
+tx/vivkeyv_blind.txt): five groups -- all four (C) tiles together (G3, all H), both (B) tiles together (G5), the ink-63 (A) tile a6 with two ink-67
+anchors (G1, H), the other two ink-67 anchors as G2 (M; darker scan, same compound) and the second ink-63 (A) tile alone at L (G4). No (B) or (C) tile
+is grouped with any comm- tile.
+**Context count, ink 63 (reading_piece63.tsv):** of 161 label-e tokens, 40 are followed by label n; 15 of those are "d e n s p" (o + e n + an =
+"-omman-", the "co_tandeur" x5 of AUDIT 3 and more); 25 are followed by s, 18 by l, 14 by d, 12 by m. So the e-loop compound (A) is roughly a quarter to
+a third of the label; the rest are other signs.
+
+### 3. Ruling on the row: **downgrade C -> M (listed, not settled)**
+- The anchors are real and the shape look supports them for sign (A): the ink-67 comm- sign and ink 63's "d e n" sign are the same compound, and 15
+  ink-63 "o e n an" contexts read "-omman-" under it. But the row's unit is the *label*, and label e merges at least three signs, of which (B) and (C)
+  stand in p and f contexts. A whole-label m is therefore wrong at most of its 161 ink-63 positions; that explains the crossword's rejection of m and
+  its drift to a filler vowel (i), so the crossword is explained, not refuted.
+- Even for (A) the value is "e n" = mm (or one m sign read as a compound), and the row reads only e; label n there stays t ("comtande-"). So the row
+  does not yet give the word it was built from.
+- Brief's rule: "M at most unless the shape look says the glyph is the same and the crossword's i preference is explained" -- the glyph is the same
+  only for a sub-sign of the label; M. Not reverted: the m value is right for (A) and the M grade keeps it out of every H count and depth run.
+- Edit made by this verifier: key.tsv row e, grade C -> M, note appended. Re-decoded, each `--check` exit 0: tx/viv63_decode.py, viv53G_decode.py,
+  viv54L_decode.py, viv53L_decode.py, viv53_decode.py, viv54_decode.py, viv52_decode.py. Gates not re-run: the decode letters are unchanged (only grades
+  moved), so VIV-KEY's b2 / 200-wrong-key results (which cannot discriminate this row anyway) stand as computed.
+- Next (named in NOTES gaps): split label e by shape into (A) e-loop compound, (B) hooked c, (C) col-f-row-1 sign, as a transcription relabel on the
+  existing line crops (tools/lookalike_pass.py or the owner's sign sorter with three piles), then key rows per sign with their own anchors: (A) -> m(m)
+  with the following n, (C) -> f (Tomokiyo col f row 1), (B) -> p (candidate; col p row 1 not checked by shape here).
+
+### 4. Depth re-check (rule 4a; AUDIT 2's measure: every M/U breaks a run, across line ends)
+| ink (file) | H / M / U after this ruling | H % | longest all-H run | D |
+|---|---|---|---|---|
+| 63 (reading_piece63.tsv) | 12,290 / 2,530 / 942 of 15,762 | 78.0 | 40 ("leaqesoailquonttousouautoutrailantcereoe", f.191v L27-28), salad | **D1** |
+| 53 (reading_piece53_G.tsv) | 3,744 / 456 / 180 of 4,380 | 85.5 | 41, salad | **D1** |
+| 54 (reading_piece54_L.tsv) | 1,491 / 279 / 184 of 1,954 | 76.3 | 26, salad | **D1** |
+| 52 (reading_piece52.tsv, f.164r-v) | 2,217 / 411 / 99 of 2,727 | 81.3 | 24, salad | **D1** |
+H counts return to their pre-VIV-KEY values (VIV-KEY's 78 ink-63 H tokens on label e are now M); U stays at VIV-KEY's lower figure. No stretch reaches
+the ~42-letter authentication distance; no code value reads in two contexts at H; this verifier cannot write one true, specific sentence about the content
+from the H text. D1, "fragments read", on all four. Not counted as unique solves.
+
+### 5. Classification
+N-class: **N3 unchanged** on inks 63, 53, 54 and 52 (no novelty search re-run; nothing in this audit bears on prior print). Key: **published**
+(Tomokiyo, credited) plus VIV-ANCHOR's V -> n (C) and label e -> m (now M, ours, from clerk anchors). Safe sentences of AUDITs 2, 3, 5-6 stand. Unsafe,
+added: "key.tsv gives label e the value m" without "grade M, label merges three signs"; "the decode reads 'commandeur'" (it reads "comtande-": the n after
+e is still keyed t).
+
+### 6. Propagation and postmortem
+- status.json: the four Saint-Gouard items' depth fields refreshed (depth D1, depth_pct 78.0 / 85.5 / 76.3 / 81.3, U counts 942 / 180 / 184 / 99,
+  depth_note, depth_by, depth_date 14 Oct 2026, fields_source + AUDIT 7); `tools/depth_check.py` exit 0, all four listed D1, not counted.
+- SECOND-OPINIONS-QUEUE.tsv rows SO-VIV52/53/54/63: no edit. Their prompts quote by-eye phrases and AUDIT 3's repaired "commandeur" (five times), not
+  the H decode; this ruling changes grades only, and the decode letters VIV-KEY changed (U '_' -> m) appear in no quoted phrase except as the repaired
+  "commandeur", which this audit's shape look supports for the (A) compound. A dated note was not added, to avoid leading the second opinion.
+- Postmortem: VIV-KEY's own write-up was candid (it named the comm- concentration, the non-discriminating gates and the crossword's dissent); the
+  over-reach was the grade C on a merged label from four positions in one word family. The pattern to avoid: a per-label anchor rule (VIV-ANCHOR's)
+  assumes a label is one sign; on this hand the labels c, o, e, p, y are known merges (NOTES D1-F16104K, VIV-ANCHOR's label-p CONFLICT), so a row from
+  anchors that all sit in one word family needs a shape check of the label's *other* occurrences before C.

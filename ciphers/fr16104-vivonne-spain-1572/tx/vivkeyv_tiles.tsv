@@ -1,0 +1,13 @@
+tile	source_id	crop	x_centre	class_by_context	context	blind_group	blind_conf
+T01	k1	p67/c206_f201r_L05_s2.jpg	1388	ink67 comm- anchor (clerk m)	f201r L05:53 command	G2	M
+T02	k4	p67/c206_f201r_L13_s1.jpg	834	ink67 comm- anchor (clerk m)	f201r L13:14 comme	G1	H
+T03	k2	p67/c206_f201r_L10_s2.jpg	1339	ink67 comm- anchor (clerk m)	f201r L10:59 comme	G2	M
+T04	a6	p63/c198_f192v_L11_s2.jpg	42	ink63 "d e n" (o-mm-) context	f192v L11 "cco[e]n" (comm-)	G1	H
+T05	c11	p63/c198_f192v_L23_s2.jpg	927	ink63 "e s" (fa-) context	f192v L23 "[e]s tz:#" (faict)	G3	H
+T06	b7	p63/c199_f193v_L26_s1.jpg	164	ink63 "e 6" (pl-) context	f193v L26 "[e]6ad" 	G5	M
+T07	a5	p63/c199_f193v_L27_s2.jpg	835	ink63 "d e n" (o-mm-) context	f193v L27 "cco[e]n" (comm-)	G4	L
+T08	b8	p63/c199_f193v_L26_s1.jpg	575	ink63 "e 6" (pl-) context	f193v L26 "[e]6oox" (plus)	G5	M
+T09	c10	p63/c198_f192v_L28_s1.jpg	565	ink63 "e s" (fa-) context	f192v L28 "[e]s tz:#" (faict)	G3	H
+T10	k3	p67/c206_f201r_L12_s2.jpg	760	ink67 comm- anchor (clerk m)	f201r L12:36 comme	G1	H
+T11	c9	p63/c198_f192v_L15_s1.jpg	70	ink63 "e s" (fa-) context	f192v L15 "[e]s tz:#" (faict)	G3	H
+T12	c12	p63/c199_f193v_L26_s1.jpg	1403	ink63 "e s" (fa-) context	f193v L26 "[e]s::tz"	G3	H
