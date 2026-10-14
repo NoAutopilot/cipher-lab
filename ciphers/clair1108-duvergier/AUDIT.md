@@ -205,3 +205,5 @@ Requests: be-api.us.archive.org 10 + 3, archive.org 2, www.googleapis.com 10 + 2
 api.semanticscholar.org 2 (429), api.archives-ouvertes.fr 2. No logins, no credentials printed.
 
 `python3 tools/depth_check.py` (5 Oct 2026, after this audit; the item is N0, not counted): `unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0` exit 0
+
+Prior-work notice (14 Oct 2026): George Lasry's "BnF cipher research" (10 Oct 2026; published in dbourdeau/cyphersolver, dde5b0ea) reads this leaf; item-level match recorded, no class changed here; see NOTES.md section "Lasry BnF research check (14 Oct 2026, LQ-REC4)".

@@ -348,3 +348,21 @@ Dupuy 264, fr.3897); DECODE lists on disk; dbourdeau/cyphersolver and aaymeloglu
 "translat" of Ernest of Lüneburg to the Chancellor, Celle, 28 Jan [1520], four days after f.28; its Latin original (possibly
 in this cipher) was not found in any catalogue reached. Dupuy 264 f.47 (Joachim "de Moltzain", 12 Mar s.a., Latin) is not
 digitised (no Gallica link) and not catalogued as cipher. No test run. Rows: `keyhunt/2026-10-07-KH1A.tsv`.
+
+## Lasry BnF research check (14 Oct 2026, LQ-REC4)
+
+Record check only (no re-solving, no key edit, no re-grading). Our status stays `found-solved` (AUDIT.md N1); no AUDIT class changed.
+
+| | ours | his (`dupuy468`) |
+|---|---|---|
+| shelfmark / leaf | BnF Dupuy 468 f.28r-v (canvases 63-64) | BnF Dupuy 468, f28r-v, PDF65-66 / Gallica 63-64 (selected letter f28r-f29r); 2/3 pages transcribed + 1 in part, 2/2 cipher pages deciphered |
+| sender -> recipient | Ernest of Brunswick-Luneburg and Joachim von Moltzan -> Francis I (Latin) | "Ernestus dux and Joachimus; probably Ernst of Brunswick-Luneburg and Joachim von Maltzan" -> Francis I |
+| date | 24 Jan 1520 (RTA JR II p.122, AUDIT N1) | no year; "c.1518-1520; 1519 remains plausible" |
+| size | 687 cipher tokens; reading H 640, M 17, S 24, unread 6 (a 663 of 687 figure appears in the older status block) | 684 elements, 660 identified (96.5%) |
+| key | 21 letter signs, 5 word signs, from the gloss | 30 symbols: 20 letter signs, 6 nomenclature, 3 nulls?, 1 unidentified; "extent: complete" |
+| match | **match** (same leaf, sender, recipient); **dates differ**: his is undated-with-context, ours is the printed 24 Jan 1520 | |
+
+Side by side (his excerpt, final four cipher lines of f28r; our reading.txt r26-r29): ours "...tunc optimum erit ut <CHRISTIANISSIMUS> hoc fedus petat velle inire / hoc modo etiam si aliquem noluissent esse in federe ... hoc modo astricti erunt esse"; his "Tunc optimum erit ut christianissimus hoc fedus petat velle inire; hoc modo etiam si aliquando noluissent esse in federe cu[m] christianissimo, hoc modo astricti erunt esse confederatores christianissimi." Agreement, one word differing in the overlap (ours "aliquem", his "aliquando"), not adjudicated here.
+
+What changes for our work: nothing in status or grades. His dating is the catalogue's open range; ours rests on RTA's print (AUDIT N1), which his note does not mention. Credit: George Lasry (result: transcription, key and reading, "BnF cipher research", 10 Oct 2026, with ChatGPT Astra 6 and Anthropic Opus 5.5); D. Bourdeau (publication, github.com/dbourdeau/cyphersolver commit dde5b0ea, checked at HEAD b0af20a, text CC BY 4.0). Snapshot: sources/cyphersolver/2026-10-14-lasry/dupuy468/.
+

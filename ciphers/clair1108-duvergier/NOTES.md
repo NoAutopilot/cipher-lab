@@ -454,3 +454,21 @@ Vergier item), free-text "Vergier chiffres", "Vergier Dunkerque" (adds only fr.1
 1696" (0). **Unread digitised siblings outside this folder: 0.** Inside it, fol.247v (canvas f251, about 60-70 groups) is still
 uncut; next: native fetch and `tools/decode_key.py` with key_1696.tsv, about $2. Vergier's other dispatches (AN Marine B3) are
 not reachable from the cloud. Every candidate: `keyhunt/2026-10-07-KH1C.tsv`.
+
+## Lasry BnF research check (14 Oct 2026, LQ-REC4)
+
+Record check only (no re-solving, no key edit, no re-grading). Our status stays `solved` (AUDIT.md N0, letters A and B); no AUDIT class changed.
+
+| | ours | his (`vergier1696`) |
+|---|---|---|
+| shelfmark | BnF Clairambault 1108 | BnF Clairambault 1108 |
+| letters | A: fol.249v-250r (26 Mar 1696, Boulogne); B: fol.261v-262r (undated, about 20-27 Mar 1696); fol.247v noted, not transcribed | six letters, 10, 20, 26, 29, 30 March 1696 and 6 April 1696?; ff247r-251v, 256v-257v, 260v-262r; 17/17 pages transcribed, 12/12 cipher pages deciphered |
+| sender -> recipient | Vergier -> Pontchartrain(?) | Jacques Vergier -> Monseigneur, probably Jerome de Pontchartrain |
+| size | 667 tokens (C 584, M 82, U 1) | 1,212 elements, 1,209 identified (99.8%) |
+| key | key_1696.tsv from the interlinear gloss | 152 codes: 31 letter, 116 nomenclature, 5 nulls; "key recovered based on adjacent plaintext; extent: complete" |
+| match | letter A **match** (fol.249v-250r inside his ff247r-251v, dated 26 Mar); letter B **match** (fol.261v-262r inside his ff260v-262r; his dating of the letter not read here); fol.247v **covered by his range** (ours untranscribed) | |
+
+Side by side (his excerpt f249v, our f253L R01-R07): ours "Milord Myddleton et J'ay eu une longue conference avec luy ... plus empresse que de coustume pour l'entreprise ... il croyoit et je trouve que c'est avec assez de raison que l'affaire est presque impraticable" ; his "...dit seulement qu'il croyoit, et je trouve que c'est avec assez de raison, que l'affaire est a present presque impracticable sur la coste de Kent ...". Agreement on the overlap.
+
+What changes for our work: his reading reaches the six letters where we hold two; the nine unglossed groups at the head of f265R R01 (AUDIT B') and fol.247v fall inside his stated range and are worth an image comparison against his transcription, if wanted. No such comparison was made in this check. Credit: George Lasry (result: transcription, key and reading, "BnF cipher research", 10 Oct 2026, with ChatGPT Astra 6 and Anthropic Opus 5.5); D. Bourdeau (publication, github.com/dbourdeau/cyphersolver commit dde5b0ea, checked at HEAD b0af20a, text CC BY 4.0). Snapshot: sources/cyphersolver/2026-10-14-lasry/vergier1696/.
+

@@ -87,3 +87,19 @@ Drop N10 from the board as a cryptanalysis/recovery candidate. If wanted, a tran
 plain text (French/Italian palaeography, not code-breaking) is a "contribution"-lane task (README "What
 counts as a result") — image already captured (`images/btv1b10034035f_f80_cipher-and-decipher.jpg`), no
 further TNA/BnF access route or copy order needed, the volume is already digitised and public domain.
+
+## Lasry BnF research check (14 Oct 2026, LQ-REC4)
+
+Record check only. Our status stays `found-solved`; the folder has no AUDIT.md and no reading on disk, so there is no plaintext side-by-side.
+
+| | ours | his (`dupuy155`) |
+|---|---|---|
+| shelfmark | BnF Dupuy 155, item "(41)", Gallica ark btv1b10034035f | BnF Dupuy 155, f41r-45r |
+| date / sender -> recipient | 10 May 1597; Francesco Guicciardini (BnF subject heading), ambassador in Spain -> Ferdinand I, Grand Duke of Tuscany; Italian; chateau d'If | 10 May 1597; Francesco Guicciardini? -> Ferdinando I de Medici, Grand Duke of Tuscany; chateau d'If |
+| what we hold | check-solved only: three leaves viewed (canvases f78, f80, f84), each with a parallel decipherment under the cipher lines | 2/9 pages transcribed + 1 in part; 1,952 elements, 1,946 identified; 41 codes (20 letter signs, 19 nomenclature, 2 unidentified); extent: partial |
+| match | **match** (same item, shelfmark, date, addressee); his extent is **partial** | |
+
+His excerpt (f41r rows 9-14) begins "[ante]cessore et nel mio. Et se Vostra Altezza nel principio fusse contentata di por quel luogo in mano di una terza persona..."; we have no transcription to set beside it. His entry also names a key in another volume (Dupuy 63 f48, 23 April 1597; Cryptiana's reconstructed key matches 27 values in his two transcribed pages), a cross-reference we had not logged.
+
+What changes for our work: nothing in status. Remaining pages of the letter are not covered by his reading (his own "partial"); the plaintext on the leaves is the contemporary gloss, so any further transcription is a contribution-lane task as already noted under Next. Credit: George Lasry (result: transcription, key and reading, "BnF cipher research", 10 Oct 2026, with ChatGPT Astra 6 and Anthropic Opus 5.5); D. Bourdeau (publication, github.com/dbourdeau/cyphersolver commit dde5b0ea, checked at HEAD b0af20a, text CC BY 4.0). Snapshot: sources/cyphersolver/2026-10-14-lasry/dupuy155/.
+

@@ -401,3 +401,21 @@ in the record; folders clair577-* already wait on ASKS row 94). Not yet checked 
 digitised there: letters of Marie-Louise of Poland in Clairambault 407 f.14 (1646), 420 f.144 (Mar 1649), 424 f.46 (Dec 1649) and
 de Lumbres in 406 f.300/323, 407 f.36, 419 f.237, 421 f.27; next: SRU for those volumes and one native fetch per folio, about $1.
 Every candidate: `keyhunt/2026-10-07-KH1C.tsv`.
+
+## Lasry BnF research check (14 Oct 2026, LQ-REC4)
+
+Record check only (no re-solving, no key edit, no re-grading). Our status stays `solved` (AUDIT.md N0); no AUDIT class changed.
+
+| | ours | his (`brienne1067`) |
+|---|---|---|
+| shelfmark | BnF Clairambault 1067 | BnF Clairambault 1067 |
+| leaves | fol.226r (last 2 cipher lines), 226v, 227r; 30 cipher lines | ff226-227 and continuation, interlinear on PDF50-53, letter ends PDF55; 4/4 cipher pages |
+| date / sender -> recipient | 19 May 1646, Brienne -> Queen of Poland | Compiegne, 19 May 1646, Brienne -> Queen of Poland |
+| size | 338 tokens (C 307, M 31, no H) | 350 elements, 349 identified (99.7%) |
+| key | key_1646.tsv from the leaf's interlinear gloss | 88 symbols/codes: 25 letter signs, 61 nomenclature, 2 nulls; "key recovered based on adjacent plaintext; extent: complete" |
+| match | **match** (same leaf, date, sender, recipient); his extent is a little wider (continuation to PDF55) | |
+
+Side by side (his excerpt is f226v, our dechiffre.tsv f226v_C03-C05): ours "assez tost respondre / aux Ministres de Mr de / Mantoue quand ilz" (Mantoue graded M); his "...ce seroit assez tost respondre aux ministres de Monsieur de Mantoue quand ilz renouvelleroient leurs instances". The wording agrees on every word of the overlap. His interlinear is the same contemporary gloss we aligned.
+
+What changes for our work: nothing in status or grades. His 350 vs our 338 elements is a count difference to settle at the image, not here. Credit: George Lasry (result: transcription, key and reading, "BnF cipher research", 10 Oct 2026, with ChatGPT Astra 6 and Anthropic Opus 5.5); D. Bourdeau (publication, github.com/dbourdeau/cyphersolver commit dde5b0ea, checked at HEAD b0af20a, text CC BY 4.0). Snapshot: sources/cyphersolver/2026-10-14-lasry/brienne1067/.
+

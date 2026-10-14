@@ -328,3 +328,5 @@ comparison; and the regenerated line r04 applies the Mecklenburg word-sign where
 must never be quoted without the exception (see NOTES.md and ASSIGNMENTS row 25).
 
 Desenclos check, 4 Oct 2026 (DESENCLOS-PREMISE, account 3): no hit. Searched 17 open full texts of the 36 items in sources/desenclos/2026-10-04/bibliography.tsv (HAL PDFs, DSpace Tartu HistoCrypt 2024/2025 PDFs, OpenEdition HTML; built from HAL, theses.fr, OpenAlex, Semantic Scholar, CrossRef, Google Books) for this item's shelfmark, sender/recipient, place and date (terms.tsv, search-log.tsv, search.py); none names this item, its key or its plaintext. Not read: her 2014 thesis (theses.fr: not online) and 2017/2021 cryptography chapters (not open; JSTOR-QUEUE rows of 4 Oct 2026).
+
+Prior-work notice (14 Oct 2026): George Lasry's "BnF cipher research" (10 Oct 2026; published in dbourdeau/cyphersolver, dde5b0ea) reads this leaf; item-level match recorded, no class changed here; see NOTES.md section "Lasry BnF research check (14 Oct 2026, LQ-REC4)".
