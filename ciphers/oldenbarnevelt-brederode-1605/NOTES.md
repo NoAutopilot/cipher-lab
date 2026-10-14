@@ -1545,3 +1545,57 @@ Read so far: unmeasured; nothing decoded -- no. 92 (121 groups) and the scan-187
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv two blind passes agreeing 59/59 (OBRED-187)
 - [x] retry: Den Tex (abridged edition) read twice (25 Sept; OBRED-SG 10 Oct 2026): no cipher, key or Stettin note; brievenboek 11851 596-733 and 11852 2-104 completed with controls (OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A)
 Verdict: keep going: 1 internal gap; cheapest next: a stride-3 screen of inv. 6018 (1618, 577 scans, ~$5 over two NA sessions); inv. 6016-6017 (1602-1617) are finished with no third numeral block, so the expected yield of the later liassen is low (OBRED-6017E)
+
+## OBRED-6018 (14 Oct 2026, 22:22-22:4x UTC by date -u, account 2, Opus; for LANE DEFAULT-A2-2209-14)
+
+Brief: stride-3 screen of NA 1.01.02 inv. 6018 (Liassen Agent Brederode, 1618, 577 scans) for a third numeral text in the no. 92 /
+scan-187 table, by the method of OBRED-S3 / OBRED-6017E. Nothing decoded; no gate computed.
+
+- Prior-work step: `prior_work.py oldenbarnevelt-brederode-1605 --item-spec 'NL-HaNA 1.01.02 inv. 6018 scans 1-577 (stride-3 screen)'
+  --step-type read` exit 4: 1 LEAD (this job's own claim), 1 LOOK (the target-level look.tsv crop of no. 92, not a 6018 scan), 2
+  UNCHECKED, 2 UNCHECKED-NET; the four non-net rows recorded CLEAR in `prior-work.tsv` (adhoc-d64c4d). Check 1: no earlier section ran
+  any of inv. 6018 (grep `6018`: only the lias table and the gap lines). Check 5 not applicable.
+- Scope: scans 1, 4, ..., 577 (= 1 mod 3), **193 of 577**.
+- Route: METS `8ab6959a-...` from `nl_brederode_lias.tsv` (1 request, 577 scans, matches the item page count), `screen_tools/na_fetch.py`,
+  IIIF `/full/700,/0/default.jpg`, 2.1 s apart, descriptive User-Agent; 3 scans at `/full/1200,/0/default.jpg`. 22 sheets by
+  `screen_tools/contact_sheets.py` with its new `SHEET_SCANS=9` option (4x3 sheets, nine scans plus the three disk controls; the default
+  3x3 mode is unchanged and still reproduces the 6017E key), seed 6018, tile letters only; controls as OBRED-6017B..E (CTRL-CIPHER = inv.
+  2016 scan 31, CTRL-PLAIN = inv. 6016 order 261, CTRL-PS = scan 187 at 1200 px; disk, no request). Every call was written to
+  `images/6018_screen_sheetcalls.txt` and pushed (0ab8a2cb9) before the key (`images/6018_screen_sheetkey.json`) was opened. One reader,
+  this worker's own eye, no subagent. 700 px scans stay outside git; sha1s in `images/manifest.json` (`obred_6018`);
+  `screen_tools/regen_6018.sh` re-derives scans and sheets and checks the key (rebuild from disk reproduced the key).
+- **Controls: 66 of 66 placed correctly (22 sheets x 3), checked mechanically against the key. No sheet is a non-test.**
+- **Result, inv. 6018 stride 3: no numeral-code block, key table or interlinear decipherment on any of the 193 scans**
+  (`images/6018_screen.tsv`, 193 rows). Content: the 1618 run of the liasse, January to December, mostly Dutch letters to the States
+  General signed P. Brederode (several with paraph; datelines read at sheet size from about March to December 1618, approximate),
+  address leaves with red seals, openings, blank versos; also Latin pieces (numbered articles, a delegate list, a letter dated in roman
+  numerals MDCXVIII), French, Italian and Spanish copies and avvisi, and 'Post data' paragraphs in prose. Three tiles called doubtful at
+  sheet size were re-looked at 1200 px and are plain (committed as `images/na_101_02_6018_p0NNN_1200.jpg`):
+  - 214: a pasted slip of faded prose on the left, a short Dutch note headed "Brederode" on the right; no numerals.
+  - 379: a Latin letter (Bern legates, the Longueville matter, the Elector); the marks along the right edge are cut-off text of the
+    leaves beneath.
+  - 460: an inverted address on a blank verso, show-through on the left.
+- Requests: `service.archief.nl` **197** (1 METS, 193 at 700 px, 3 at 1200 px), all HTTP 200, no 403/429/challenge; brief cap 220. NA
+  take and release lines in ROOM.md.
+- Where it was not found, and the limits: **every third scan only** -- 384 of the 577 scans of inv. 6018 were not looked at, and inv.
+  6019-6024 (3,664 scans) not at all; a one-leaf numeral postscript is a third as likely to be sampled as a run of three. Tiles were
+  about 525 px wide on a sheet read at about 1,568 px, close to OBRED-S3's 400 px; a block of a dozen groups or fewer inside prose
+  could escape; one reader; the controls are a French cipher letter and the target's own postscript. A negative for these 193 scans at
+  this resolution, not for inv. 6018 as a whole.
+
+## Remaining gaps (OBRED-6018, 14 Oct 2026)
+Read so far: unmeasured; nothing decoded -- no. 92 (121 groups) and the scan-187 postscript (59 groups) are both unread; they share 26 values, above chance (OBRED-187)
+- no. 92 and the 187 postscript, pooled (180 tokens, 130 distinct values) - blocker: too-short; OBRED-DP: name band 588-751 stands alone (G2 PASS), shared order beyond one pair absent (G1 FAIL), so a crib test is unfalsifiable at this N; more text in the same table is the step
+- the later liassen NA 1.01.02 inv. 6018-6024 (1618-1637, 4,241 scans, all digitised, METS ids in `nl_brederode_lias.tsv`) - blocker: not-attempted; inv. 6016 and 6017 (1602-1617) looked at in full, inv. 6018 at stride 3 (OBRED-6018: 193 scans, controls 66/66), no third numeral block in any; next: the 384 unsampled scans of inv. 6018 (two NA sessions at stride-1 fill, ~$6) or a stride-3 screen of inv. 6019 (1619, 649 scans, ~217 requests, ~$4), only if a later cipher use by the agent is worth testing -- five years of his letters (1614-1618) show none at the depth screened
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done: brievenboek inv. 11851 scans 596-733 and inv. 11852 scans 2-104 (about 23 Oct 1604 - 6 Apr 1605) all looked at with controls (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B 18/18 and 30/30, OBRED-11852A 24/24): no numeral block, no Brederode, Stettin or Heidelberg heading; the register appears to copy ordinaris letters, not an agent's letters (M)
+
+## Escalation (OBRED-6018, 14 Oct 2026)
+- [x] siblings: scan 187 is a second code text sharing 26 values with no. 92 (OBRED-187); all of inv. 6016 and 6017 looked at (OBRED-0259, OBRED-S1, OBRED-S2, YX-OBR; OBRED-S3 plus the stride-1 fill OBRED-11851, OBRED-641, OBRED-6017B/C/D/E) and inv. 6018 at stride 3 (OBRED-6018, controls 66/66): no third numeral block in 1602-1618 at the depth screened; inv. 6018 fill and 6019-6024 not yet screened
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187: Stettin, 17 Oct 1604, to the griffier of the States General); it carries no gloss of the code
+- [x] known-keys: the 10 Aug 1598 Van Aerssen slip excluded for no. 92 by design (R10-OBRED98); Buzanval syllabary inv. 2028 excluded (R9-OBRED4); DECODE 1600s and Palatine/Hessian keys screened (OLD-DKEY, R8-OBRED2, R9-OBRED3)
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII has no decipherment or key note near the Brederode entries (OBRED-DP)
+- [ ] key-rebuild: design_prior and structure done (OBRED-DP); a crib/run-length test waits on a third text in the same table, none found in 6016, 6017 (complete), 6018 (stride 3), 11851 596-733 or 11852 2-104; next: a stride-3 screen of inv. 6019 (1619) or the 6018 fill for a third text, then the crib consistency test with a synthetic matched control, ~$4-6 for the screen
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv two blind passes agreeing 59/59 (OBRED-187)
+- [x] retry: Den Tex (abridged edition) read twice (25 Sept; OBRED-SG 10 Oct 2026): no cipher, key or Stettin note; brievenboek 11851 596-733 and 11852 2-104 completed with controls (OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A)
+Verdict: keep going: 1 internal gap; cheapest next: a stride-3 screen of inv. 6019 (1619, 649 scans, ~$4) or the stride-1 fill of inv. 6018 (384 scans, ~$6); 1602-1618 show no third numeral block at the depth screened, so the expected yield of the later liassen is low (OBRED-6018)

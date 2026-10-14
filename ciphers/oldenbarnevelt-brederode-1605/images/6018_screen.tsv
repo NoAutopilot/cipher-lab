@@ -1,0 +1,194 @@
+scan	sheet	tile	content	numeral_code_block
+1	1	A	A letter with grey card	no
+4	1	E	E letter end with signature+paraph	no
+7	1	G	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+10	1	I	I,J address leaves + letter openings	no
+13	1	L	D,L signature leaves (Brederode)	no
+16	1	B	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+19	1	K	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+22	1	J	I,J address leaves + letter openings	no
+25	1	D	D,L signature leaves (Brederode)	no
+28	2	J	D,J grey cards	no
+31	2	G	C,G signature+date endings	no
+34	2	L	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+37	2	I	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+40	2	K	K address leaf with seal	no
+43	2	F	F blank opening	no
+46	2	C	C,G signature+date endings	no
+49	2	E	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+52	2	D	D,J grey cards	no
+55	3	H	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+58	3	E	E,I address leaves	no
+61	3	F	F letter with two signatures and short mark line 'V.S.F.' (plain)	no
+64	3	J	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+67	3	A	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+70	3	D	D,L signature endings	no
+73	3	G	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+76	3	I	E,I address leaves	no
+79	3	L	D,L signature endings	no
+82	4	A	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+85	4	J	J grey card	no
+88	4	B	B,D,E signature endings (B with paraph)	no
+91	4	K	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+94	4	L	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+97	4	C	C,I address leaves + openings	no
+100	4	E	B,D,E signature endings (B with paraph)	no
+103	4	I	C,I address leaves + openings	no
+106	4	D	B,D,E signature endings (B with paraph)	no
+109	5	G	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+112	5	B	B grey card	no
+115	5	C	C signature ending dated May 1618	no
+118	5	H	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+121	5	E	E,F letter openings	no
+124	5	D	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+127	5	F	A,F address leaves (F seal)	no
+130	5	J	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+133	5	A	A,F address leaves (F seal)	no
+136	6	K	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+139	6	H	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+142	6	C	C opening	no
+145	6	G	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+148	6	I	A,I signature endings with paraph	no
+151	6	D	D address leaf + opening	no
+154	6	A	A,I signature endings with paraph	no
+157	6	E	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+160	6	B	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+163	7	G	G address leaf with seal + Latin/Italian text	no
+166	7	I	I faint	no
+169	7	F	F grey card + Avvisi heading	no
+172	7	A	A French text in long lines	no
+175	7	J	J Italian list with marginal numbers (item counts, plain)	no
+178	7	E	E Spanish letter	no
+181	7	L	K,L Italian letters	no
+184	7	K	K,L Italian letters	no
+187	7	B	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+190	8	D	A,B,D,H,J,L Latin text	no
+193	8	L	A,B,D,H,J,L Latin text	no
+196	8	J	A,B,D,H,J,L Latin text	no
+199	8	H	A,B,D,H,J,L Latin text	no
+202	8	A	A,B,D,H,J,L Latin text	no
+205	8	B	A,B,D,H,J,L Latin text	no
+208	8	G	G Latin + blank	no
+211	8	C	C pasted slips of short-line prose	no
+214	8	I	1200 px re-look: lower pasted slip of faded prose, no numerals; right page a short Dutch note headed 'Brederode'	no
+217	9	F	F,I letter openings / address leaf	no
+220	9	A	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+223	9	L	H,L numbered Latin articles (article numbers)	no
+226	9	C	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+229	9	D	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+232	9	K	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+235	9	B	B Latin numbered articles (VIII, IX...) and heading	no
+238	9	H	H,L numbered Latin articles (article numbers)	no
+241	9	I	F,I letter openings / address leaf	no
+244	10	H	H,I,K signature endings (K with paraph)	no
+247	10	E	E Italian/French dense prose	no
+250	10	L	L blank opening	no
+253	10	F	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+256	10	A	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+259	10	D	D address leaf with seal + opening	no
+262	10	K	H,I,K signature endings (K with paraph)	no
+265	10	I	H,I,K signature endings (K with paraph)	no
+268	10	J	J Dutch + Italian	no
+271	11	J	J vertical docket note on blank verso (plain)	no
+274	11	E	E dense prose with short subscribed note	no
+277	11	H	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+280	11	A	A,K endings dated May 1618 (French/Italian)	no
+283	11	D	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+286	11	G	G address leaf + opening	no
+289	11	C	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+292	11	K	A,K endings dated May 1618 (French/Italian)	no
+295	11	B	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+298	12	A	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+301	12	J	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+304	12	K	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+307	12	D	D address leaf + grey card	no
+310	12	E	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+313	12	C	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+316	12	B	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+319	12	L	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+322	12	I	I signature ending with paraph dated July 1618	no
+325	13	B	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+328	13	F	A,F address leaves (F seal) + openings	no
+331	13	C	C,D endings with 'Post data' paragraphs (prose)	no
+334	13	J	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+337	13	A	A,F address leaves (F seal) + openings	no
+340	13	D	C,D endings with 'Post data' paragraphs (prose)	no
+343	13	L	L opening dated 1618 + folded slip	no
+346	13	G	G blank opening	no
+349	13	H	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+352	14	L	L blank with yellow card	no
+355	14	E	E,H address leaves	no
+358	14	A	A,C,F,H signature endings (Aug 1618), F with French letter signed	no
+361	14	D	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+364	14	H	A,C,F,H signature endings (Aug 1618), F with French letter signed	no
+367	14	B	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+370	14	C	A,C,F,H signature endings (Aug 1618), F with French letter signed	no
+373	14	K	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+376	14	F	A,C,F,H signature endings (Aug 1618), F with French letter signed	no
+379	15	B	1200 px re-look: Latin letter (Bern legates, Longueville affair); right-edge marks are cut-off text of underlying leaves	no
+382	15	K	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+385	15	A	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+388	15	F	F,I signature endings with paraph	no
+391	15	L	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+394	15	G	G Latin/Dutch with subscribed signatures	no
+397	15	D	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+400	15	H	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+403	15	I	F,I signature endings with paraph	no
+406	16	E	B,E,J Latin prose (B dated Sept 1618)	no
+409	16	J	B,E,J Latin prose (B dated Sept 1618)	no
+412	16	B	B,E,J Latin prose (B dated Sept 1618)	no
+415	16	G	G Dutch prose	no
+418	16	D	D short docket on blank	no
+421	16	C	C grey cards + opening dated Oct 1618	no
+424	16	K	K French/Italian copies	no
+427	16	H	A,H French prose	no
+430	16	A	A,H French prose	no
+433	17	I	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+436	17	K	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+439	17	H	H vertical marginal docket (plain)	no
+442	17	G	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+445	17	L	A,J,L address leaves + openings dated Oct 1618	no
+448	17	B	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+451	17	J	A,J,L address leaves + openings dated Oct 1618	no
+454	17	F	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+457	17	A	A,J,L address leaves + openings dated Oct 1618	no
+460	18	D	1200 px re-look: inverted address on a blank verso, show-through left; plain	no
+463	18	F	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+466	18	C	C blank with yellow card	no
+469	18	G	G address leaf with seal + grey card + 'Post data' opening	no
+472	18	L	L address leaf + opening dated Oct 1618	no
+475	18	E	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+478	18	I	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+481	18	H	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+484	18	A	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+487	19	F	F Latin ending with roman-numeral date MDCXVIII	no
+490	19	H	H,L address leaves with seal	no
+493	19	A	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+496	19	G	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+499	19	K	I,K signature endings with paraph (Oct 1618)	no
+502	19	D	D Latin list of names with titles (a delegate list, plain)	no
+505	19	I	I,K signature endings with paraph (Oct 1618)	no
+508	19	B	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+511	19	L	H,L address leaves with seal	no
+514	20	I	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+517	20	D	D,K address leaves (K seal + grey card)	no
+520	20	H	A,H signature endings (Nov 1618)	no
+523	20	L	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+526	20	E	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+529	20	J	J 'Post data' heading	no
+532	20	K	D,K address leaves (K seal + grey card)	no
+535	20	A	A,H signature endings (Nov 1618)	no
+538	20	G	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+541	21	K	K signature ending with paraph Dec 1618	no
+544	21	A	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+547	21	H	H blank-ish page with a short pasted note of prose	no
+550	21	J	J heading 'Extract ...' prose	no
+553	21	D	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+556	21	E	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+559	21	C	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+562	21	B	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+565	21	L	Dutch/Latin/French prose (sheet-level call: no numeral block)	no
+568	22	F	B,C,F Dutch prose (C signature ending dated Dec 1618)	no
+571	22	B	B,C,F Dutch prose (C signature ending dated Dec 1618)	no
+574	22	C	B,C,F Dutch prose (C signature ending dated Dec 1618)	no
+577	22	D	D grey card on blank	no
