@@ -142,3 +142,27 @@ f93	left	81v	Italian notarial act continued, clear	no	no	no	none seen	600	F4712-
 f93	right	82r	end of the act with notary's signum and subscription (M)	no	no	no	notarial signum	600	F4712-C83
 f94	left	82v	show-through, faint writing	no	no	n/a	none	600	F4712-C83
 f94	right	83r	blank leaf with a short docket (M)	no	no	n/a	none	600	F4712-C83
+f95	left	83v	docket written vertically (endorsement), otherwise blank	no	no	n/a	none	600	F4712-C95
+f95	right	84r	letter in clear to "Monsieur", subscribed and signed (M)	no	no	no	none seen	600	F4712-C95
+f96	left	84v	show-through, faint	no	no	n/a	none	600	F4712-C95
+f96	right	85r	letter in clear "Monsieur", opening lines struck, signed (M)	no	no	no	none seen	600	F4712-C95
+f97	left	85v	struck lines (cancelled draft)	no	no	n/a	none	600	F4712-C95
+f97	right	86r	letter in clear with a long marginal note; upside-down lines at the head (M)	no	no	no	none seen	600	F4712-C95
+f98	left	86v	show-through; short vertical docket	no	no	n/a	none	600	F4712-C95
+f98	right	87r	letter in clear headed "A Monsieur ..." (M), upside-down lines at the head	no	no	no	none seen	600	F4712-C95
+f99	left	87v	show-through; short docket	no	no	n/a	none	600	F4712-C95
+f99	right	88r	letter in clear "Monsieur" with a long marginal note, addressed "A Monsieur le Conte de ..." at foot (M)	no	no	no	none seen	600	F4712-C95
+f100	left	88v	show-through; vertical marginal lines	no	no	n/a	none	600	F4712-C95
+f100	right	89r	drafts in clear: upside-down lines, a paragraph, "Au ... Don Vincent" and "A Monseigneur le Duc" (M)	no	no	no	none seen	600	F4712-C95
+f101	left	89v	end of a letter in clear naming "Don Jacomo" (M); subscription "Monsieur monsieur le Duc" and pen trials ("A Mons", "M")	no	no	no	none	600	F4712-C95; checked on a local 4x enlargement
+f101	right	90r	long letter in clear, dense hand	no	no	no	none seen	600	F4712-C95
+f102	left	90v	blank	no	no	n/a	none	600	F4712-C95
+f102	right	91r	memorandum in clear paragraphs; a few single numerals inside the prose (M), no figure runs	no	no	no	isolated numerals in prose	600	F4712-C95; checked on a local 4x enlargement
+f103	left	91v	blank	no	no	n/a	none	600	F4712-C95
+f103	right	92r	commission or order in clear naming the sieur de Marillac, marechal de camp (M)	no	no	no	none seen	600	F4712-C95
+f104	left	92v	show-through	no	no	n/a	none	600	F4712-C95
+f104	right	93r	short letter in clear with a large initial monogram, dated "de Malte ce 22 juillet 159-" (M), signed	no	no	no	none	600	F4712-C95; checked on a local 4x enlargement
+f105	left	93v	show-through of f.93r (mirror)	no	no	n/a	none	600	F4712-C95
+f105	right	94r	blank leaf with a docket and seal trace (foliation not read; M)	no	no	n/a	none	600	F4712-C95
+f106	left	94v	address panel with wax seal remnant and docket	no	no	n/a	none	600	F4712-C95
+f106	right	95r	letter in clear "A Monsieur ... Conseil d'Estat" (M) with a long marginal note	no	no	no	none seen	600	F4712-C95
