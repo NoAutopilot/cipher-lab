@@ -1,0 +1,6 @@
+vivonne1573-f103r-confirm2 [confirm2] as measured: err_true(0.75-indel align) 0.291 (311/1068) | standard SER (unit-cost Levenshtein) 0.284 (303/1068): S 238 D 58 I 7 | wrong 234 deleted 60 inserted 17 | excluded 965 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 234/1008 = 0.232 | coverage 1008/1068 = 0.944
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.146 (73/500) | standard SER (unit-cost Levenshtein) 0.130 (65/500): S 36 D 22 I 7 | wrong 32 deleted 24 inserted 17 | excluded 1533 | lines missing 0 (0 signs counted deleted) [568 flagged] | position errors 56/500 = 0.112 | insertions 17 / read 1890 = 0.009
+    reader abstentions 0 | accepted-token error 32/476 = 0.067 | coverage 476/500 = 0.952
+  top confusions (truth value <- read): c<-<deleted> x23, s<-d x17, l<-<deleted> x7, a<-m x7, i<-m x7, u<-<deleted> x7, e<-d x6, r<-d x5
+split confirm2: err_true(0.75-indel align) 0.291 (311/1068) | standard SER 0.284 (303/1068)

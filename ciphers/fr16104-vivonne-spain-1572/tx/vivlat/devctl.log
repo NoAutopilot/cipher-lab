@@ -1,0 +1,24 @@
+{
+ "err_meas": 0.268,
+ "err_meas_n": "331/1234",
+ "err_fx": 0.116,
+ "err_fx_n": "79/679",
+ "paired_meas": {
+  "lines": 36,
+  "improved": 11,
+  "worsened": 4,
+  "tied": 21,
+  "p": 0.1185,
+  "fixed": 28,
+  "broken": 13
+ },
+ "paired_fx": {
+  "lines": 36,
+  "improved": 10,
+  "worsened": 2,
+  "tied": 24,
+  "p": 0.0386,
+  "fixed": 18,
+  "broken": 8
+ }
+}

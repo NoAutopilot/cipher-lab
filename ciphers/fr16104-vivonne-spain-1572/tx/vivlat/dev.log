@@ -1,0 +1,222 @@
+{
+ "folds": {
+  "odd": 19,
+  "even": 17
+ },
+ "lam": {
+  "real_1": {
+   "err_meas": 0.259,
+   "err_meas_n": "319/1234",
+   "err_fx": 0.115,
+   "err_fx_n": "78/679",
+   "paired_meas": {
+    "lines": 36,
+    "improved": 20,
+    "worsened": 4,
+    "tied": 12,
+    "p": 0.0015,
+    "fixed": 52,
+    "broken": 24
+   },
+   "paired_fx": {
+    "lines": 36,
+    "improved": 14,
+    "worsened": 4,
+    "tied": 18,
+    "p": 0.0309,
+    "fixed": 24,
+    "broken": 12
+   },
+   "truth_in_lattice_by_heldfold_matrix": {
+    "odd": {
+     "all": {
+      "truth_in_lattice": 43,
+      "top1_wrong": 144,
+      "share": 0.299
+     },
+     "fx": {
+      "truth_in_lattice": 13,
+      "top1_wrong": 18,
+      "share": 0.722
+     }
+    },
+    "even": {
+     "all": {
+      "truth_in_lattice": 39,
+      "top1_wrong": 135,
+      "share": 0.289
+     },
+     "fx": {
+      "truth_in_lattice": 21,
+      "top1_wrong": 27,
+      "share": 0.778
+     }
+    }
+   }
+  },
+  "real_2": {
+   "err_meas": 0.256,
+   "err_meas_n": "316/1234",
+   "err_fx": 0.111,
+   "err_fx_n": "75/679",
+   "paired_meas": {
+    "lines": 36,
+    "improved": 20,
+    "worsened": 4,
+    "tied": 12,
+    "p": 0.0015,
+    "fixed": 48,
+    "broken": 18
+   },
+   "paired_fx": {
+    "lines": 36,
+    "improved": 14,
+    "worsened": 3,
+    "tied": 19,
+    "p": 0.0127,
+    "fixed": 24,
+    "broken": 10
+   },
+   "truth_in_lattice_by_heldfold_matrix": {
+    "odd": {
+     "all": {
+      "truth_in_lattice": 43,
+      "top1_wrong": 144,
+      "share": 0.299
+     },
+     "fx": {
+      "truth_in_lattice": 13,
+      "top1_wrong": 18,
+      "share": 0.722
+     }
+    },
+    "even": {
+     "all": {
+      "truth_in_lattice": 39,
+      "top1_wrong": 135,
+      "share": 0.289
+     },
+     "fx": {
+      "truth_in_lattice": 21,
+      "top1_wrong": 27,
+      "share": 0.778
+     }
+    }
+   }
+  },
+  "real_4": {
+   "err_meas": 0.266,
+   "err_meas_n": "328/1234",
+   "err_fx": 0.115,
+   "err_fx_n": "78/679",
+   "paired_meas": {
+    "lines": 36,
+    "improved": 14,
+    "worsened": 5,
+    "tied": 17,
+    "p": 0.0636,
+    "fixed": 31,
+    "broken": 13
+   },
+   "paired_fx": {
+    "lines": 36,
+    "improved": 11,
+    "worsened": 2,
+    "tied": 23,
+    "p": 0.0225,
+    "fixed": 19,
+    "broken": 8
+   },
+   "truth_in_lattice_by_heldfold_matrix": {
+    "odd": {
+     "all": {
+      "truth_in_lattice": 43,
+      "top1_wrong": 144,
+      "share": 0.299
+     },
+     "fx": {
+      "truth_in_lattice": 13,
+      "top1_wrong": 18,
+      "share": 0.722
+     }
+    },
+    "even": {
+     "all": {
+      "truth_in_lattice": 39,
+      "top1_wrong": 135,
+      "share": 0.289
+     },
+     "fx": {
+      "truth_in_lattice": 21,
+      "top1_wrong": 27,
+      "share": 0.778
+     }
+    }
+   }
+  },
+  "real_8": {
+   "err_meas": 0.271,
+   "err_meas_n": "334/1234",
+   "err_fx": 0.121,
+   "err_fx_n": "82/679",
+   "paired_meas": {
+    "lines": 36,
+    "improved": 11,
+    "worsened": 5,
+    "tied": 20,
+    "p": 0.2101,
+    "fixed": 24,
+    "broken": 12
+   },
+   "paired_fx": {
+    "lines": 36,
+    "improved": 9,
+    "worsened": 3,
+    "tied": 24,
+    "p": 0.146,
+    "fixed": 15,
+    "broken": 8
+   },
+   "truth_in_lattice_by_heldfold_matrix": {
+    "odd": {
+     "all": {
+      "truth_in_lattice": 43,
+      "top1_wrong": 144,
+      "share": 0.299
+     },
+     "fx": {
+      "truth_in_lattice": 13,
+      "top1_wrong": 18,
+      "share": 0.722
+     }
+    },
+    "even": {
+     "all": {
+      "truth_in_lattice": 39,
+      "top1_wrong": 135,
+      "share": 0.289
+     },
+     "fx": {
+      "truth_in_lattice": 21,
+      "top1_wrong": 27,
+      "share": 0.778
+     }
+    }
+   }
+  }
+ },
+ "top1_alone": {
+  "err_meas": 0.28,
+  "err_meas_n": "345/1234",
+  "err_fx": 0.13,
+  "err_fx_n": "88/679"
+ },
+ "mats_real": {
+  "odd": "dev/real_heldodd.topk.tsv",
+  "even": "dev/real_heldeven.topk.tsv"
+ },
+ "mats_shuf1": {
+  "odd": "dev/shuf1_heldodd.topk.tsv",
+  "even": "dev/shuf1_heldeven.topk.tsv"
+ }
+}

@@ -1,0 +1,8 @@
+vivonne1573-f102r-dev2 [dev] as measured: err_true(0.75-indel align) 0.271 (334/1234) | standard SER (unit-cost Levenshtein) 0.268 (331/1234): S 270 D 31 I 30 | wrong 266 deleted 33 inserted 35 | excluded 614 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 266/1201 = 0.222 | coverage 1201/1234 = 0.973
+paired real_lam8.pooled.tsv vs top1.tsv on vivonne1573-f102r-dev2 [as measured]: 36 lines; lines improved 11, worsened 5, tied 20; line sign test p = 0.2101; unit-cost edits base 345 -> output 331 over 1234 scored signs | beside, sign-level position McNemar: 1234 common scored signs; base wrong 311, output wrong 299; fixed 24, broken 12; exact p = 0.0652
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.121 (82/679) | standard SER (unit-cost Levenshtein) 0.118 (80/679): S 38 D 12 I 30 | wrong 35 deleted 12 inserted 35 | excluded 1169 | lines missing 0 (0 signs counted deleted) [555 flagged] | position errors 47/679 = 0.069 | insertions 35 / read 1813 = 0.019
+    reader abstentions 0 | accepted-token error 35/667 = 0.052 | coverage 667/679 = 0.982
+paired real_lam8.pooled.tsv vs top1.tsv on vivonne1573-f102r-dev2 [flagged excluded (truth-verifier flags only)]: 36 lines; lines improved 9, worsened 3, tied 24; line sign test p = 0.1460; unit-cost edits base 88 -> output 80 over 679 scored signs | beside, sign-level position McNemar: 679 common scored signs; base wrong 54, output wrong 47; fixed 15, broken 8; exact p = 0.2100
+  top confusions (truth value <- read): s<-d x26, a<-S x12, e<-2 x9, c<-<deleted> x8, a<-m x7, r<-y x6, a<-<deleted> x6, a<-2 x5
+split dev: err_true(0.75-indel align) 0.271 (334/1234) | standard SER 0.268 (331/1234)

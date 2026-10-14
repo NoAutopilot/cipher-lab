@@ -1,0 +1,21 @@
+{
+ "lines": 19,
+ "positions": 1917,
+ "misses": 423,
+ "deleted": 54,
+ "signs": 32,
+ "top_offdiag": [
+  "x<-tz p 0.277 (excess 0.274)",
+  "z<-: p 0.232 (excess 0.220)",
+  "P<-y p 0.211 (excess 0.200)",
+  "L<-oo p 0.174 (excess 0.163)",
+  "h<-R p 0.155 (excess 0.138)",
+  "oo<-V p 0.155 (excess 0.135)",
+  "Zu<-a p 0.155 (excess 0.135)",
+  "7<-x p 0.143 (excess 0.129)",
+  "k<-@ p 0.141 (excess 0.125)",
+  "f<-g p 0.146 (excess 0.125)",
+  "z<-j p 0.134 (excess 0.122)",
+  "6<-k p 0.130 (excess 0.111)"
+ ]
+}

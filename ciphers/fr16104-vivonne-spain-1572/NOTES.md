@@ -499,6 +499,7 @@ Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-
 check PASS (0.609 vs null p95 0.354), judge not a gate, H 1,475 / M 318 / U 197 of 1,990 tokens, much of it still unreadable letter strings.
 Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53 (and 38, whose twin is deciphered).
 - ink 54 clean reading - blocker: not-attempted; err_2reader 0.19-0.22 and the ': :' pair read as two signs leave long unreadable stretches; next: a third pass / tools/lookalike_pass.py on the split signs of f.173r-v, the ': :' pair as one sign, re-decode, ~$4
+- Lattice decode of ink 63 with a learnt confusion matrix (VIV-LAT, 14 Oct 2026) - blocker: not-attempted; dev f.102r gained (fx lines 14/3, p 0.013, lam 2) but the confirm2 look FAILed (3/6, err 0.296 vs 0.291) with truth in the lattice for only 29/234 of the top-1 errors: untested-by-this-tool at this error; next: a reader step that puts the true sign among the candidates (a per-sign top-3 pass with probabilities on this hand, or a confusion matrix learnt per reader on the same reader set that reads the target), re-gated on confirm2 only with a new design, ~$6
 - Judge calibration for this hand - blocker: not-attempted; the fr16 judge FAILs the known-good f.103r control at this noise; next: score a lower-noise control (the clerk decipherment's own text, or f.103r after a lookalike pass) to see whether the judge can gate at all, ~$2
 - Kervyn de Lettenhove, Les Huguenots et les Gueux (1884) - blocker: not-attempted; Google Books hit for Saint-Gouard Sept 1572; next: find the IA copy and grep for "7 septembre" / "Saint-Gouard", ~$1
 - fr.16105 ink 63 (10 Oct 1573) cipher block ff.190r-194r - blocker: not-attempted; no decipherment in the volume (N5-VIVTAB); next: crops + two blind passes per page against tx/SIGNS.md, decode with key.tsv, ~$15-20
@@ -2154,7 +2155,54 @@ ses"). One 1600 px view, read by this worker's eye; no subagent or vision call. 
 ink 52. With VIV-DECH, VIV-DECH2 and VIV-HEADS, every post-19 Sept 1572 dechiffre head in fr.16104 named in the residual has now been viewed; no
 decipherment of the 5 Sept 1572 letter to the Queen found among them. Nothing to flag. Requests: openapi.bnf.fr 1. Cost: not visible to this session.
 
-## Remaining gaps (VIV52-O refresh, 13 Oct 2026; supersedes the VIV52 list, all its other lines kept)
+## VIV-LAT (14 Oct 2026, 00:00-00:1x UTC by date -u, account-4 worker for LANE VIV-KEYSTONE): key-constrained lattice decode with a confusion matrix learnt on this hand
+Measurement only (PREREG-VIVLAT.md, pushed c65d5063 before any score); key.tsv, reading_piece63.tsv, status.json untouched. Runner
+`tx/vivlat/run_vivlat.py` (prep / dev / devctl / devplain / confirm --lam 2), results `tx/vivlat/dev_result.json`,
+`tx/vivlat/confirm_result.json`, every tx_bench output under `tx/vivlat/dev/*.bench.txt` and `tx/vivlat/confirm/*.bench.txt`.
+Instrument: tools/key_decode_lattice.py from-passes A B --confusion-matrix M --matrix-only (spread 0.3), decode --lang fr16; M =
+learn-confusion on passes A, B, Z vs truth (add-0.5 over the 32 key signs); baseline = argmax of the plain two-reader lattice;
+scorer tools/tx_bench.py --exclude-flagged --paired.
+
+Prior work (tools/prior_work.py --item-spec 'shelfmark=BnF fr.16105;folio=103r;sender=Saint-Gouard;recipient=Charles IX'
+--step-type decode --known-answer item:vivonne1573-f103r-confirm2, exit 4): plaintext KNOWN (expected: the clerk decipherment is
+the benchmark's truth); the four LEAD rows are this folder's own [x] clear-pages/siblings lines (N4-VIV2, N4-VIV3, N5-VIVK), i.e.
+the source of the truth, not a prior run of this step; grep of NOTES.md and benchmark-tx/txeng*/ for a lattice run on this hand: none.
+
+Step 1, dev (vivonne1573-f102r-dev2, two folds odd/even lines, M from the other fold, pooled): plain top-1 err as measured 0.280
+(345/1234), flagged-excluded 0.130 (88/679).
+
+| lam | err meas | err fx | fx lines impr/wors (p) | fx signs fixed/broken | meas lines impr/wors (p) |
+|---|---|---|---|---|---|
+| 1 | 0.259 | 0.115 | 14/4 (0.031) | 24/12 | 20/4 (0.0015) |
+| **2** | **0.256** | **0.111** | **14/3 (0.013)** | **24/10** | **20/4 (0.0015)** |
+| 4 | 0.266 | 0.115 | 11/2 (0.023) | 19/8 | 14/5 (0.064) |
+| 8 | 0.271 | 0.121 | 9/3 (0.146) | 15/8 | 11/5 (0.210) |
+
+Chosen lam 2 (dev rule: largest improved - worsened); dev stop rule passed. Controls at lam 2 (not gating): off-diagonal-shuffled
+M 0.268 / 0.116, fx lines 10/2 (p 0.039); plain lattice + LM with no M 0.271 / 0.119, fx lines 10/3 (p 0.092). Most of the dev gain
+is the language model and generic flip mass, not the learnt confusion pattern (real M adds about 0.005 err_fx over the shuffled
+one). Truth-in-lattice on the held folds (top-1 wrong scored positions whose truth set meets the lattice candidates): 82/279
+(odd 43/144, even 39/135) all, 34/45 flagged-excluded.
+
+Step 2, confirm, one look (vivonne1573-f103r-confirm2, lam 2, M from all of dev2, passA_S2 + passB_S2):
+
+| | err meas | err fx |
+|---|---|---|
+| plain top-1 | 0.291 (311/1068) | 0.146 (73/500) |
+| lattice lam 2 | 0.296 (316/1068) | 0.150 (75/500) |
+
+Gate (a) fx lines improved 3 / worsened 6, p 0.508 (signs fixed 4 / broken 6): FAIL; (b) 0.296 > 0.291: FAIL; (c) real key rank 1
+of 101 value-shuffled keys, z 4.93 (lattice mean 4-gram -1.229 vs shuffles mean -1.868, max -1.566); top-1 decode rank 1, z 4.21:
+PASS. 140 positions changed. **Gate verdict: FAIL.** Truth-in-lattice on confirm2: 29/234 = 0.124 of the top-1's wrong scored
+positions (flagged-excluded 5/32 = 0.156); the plain lattice 7/234 = 0.030. Under 50%: the ceiling explains the failure (the
+learnt flip rarely puts the true sign in the lattice on the S2 readers, whose errors differ from the dev readers'), so it is
+logged untested-by-this-tool at this error, not a negative on the idea (TX-DECODE 27/97 shape). Step 3 (ink 63) not run, by
+the registered rule. The dev gain did not transfer from the dv1 readers to the S2 readers; a confusion matrix learnt on one
+reader set is not a property of the hand alone.
+Suggestion (not done, outside the brief): add this result to tools/data/tool_shelf.tsv's `key_decode_lattice.py
+--confusion-matrix` row (second hand, dev PASS / confirm FAIL, ceiling 0.124).
+
+## Remaining gaps (VIV-LAT refresh, 14 Oct 2026; supersedes the VIV52-O list, all its other lines kept)
 Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 read with key.tsv, gloss check PASS (N5-VIV54), window look-alike pass + re-decode, b2 + wrong-key PASS (N7-VIV54L); ink 53 Ink 52 f.164r-v read (VIV52-O, 13 Oct 2026): H 2,217 / M 404 / U 106 of 2,727, b2 + 200-wrong-key PASS.
 ff.170r-171v read, b2 + wrong-key PASS (N6-VIV53B), window look-alike pass + ': :' join + re-decode, b2 + wrong-key PASS again (N7-VIV53L); ink 63 ff.190r-194r read in full (f.194r L5-10 added by N7-VIV63G): b2 PASS on every part (N6-VIV63, N6-VIV63B,
 N6-VIV63C, N7-VIV63G), whole piece -1.548 vs p99 -1.836, wrong-key specificity PASS (real 0.288 vs p99 0.064), H 12,151 / M 2,329 / U 1,282 of 15,762 tokens. VIV-ANCHOR (8 Oct 2026): key.tsv V -> n (grade C, clerk word anchors) re-decodes all three inks: H 12,290 / M 2,369 / U 1,103 of 15,762 (63), 3,744 / 440 / 196 (53), 1,491 / 272 / 191 (54); b2 and 200-wrong-key gates PASS on each under new seeds.
@@ -2178,15 +2226,15 @@ Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, w
 - Spanish-side copies (AGS Estado K) and Gachard vol. I - blocker: needs-physical-access; AGS is not digitised in a route this worker could open
 - ink 52 print search on the decoded fragments (G3) - blocker: not-attempted; done by V-VIV52 (13 Oct 2026, print-check-52.tsv: generic hits only) except Google Books (HTTP 503 all session); next: rerun `tools/print_check.py ciphers/fr16104-vivonne-spain-1572 --phrases ciphers/fr16104-vivonne-spain-1572/phrases_52.txt --only gbooks` when the host answers, ~$0.3
 - ink 52 La Ferriere f.191v lead (V-VIV52, AUDIT 5) - blocker: not-attempted; answered by VIV-191V (13 Oct 2026): f.191v (c208 left) is the clerk decipherment ("dechiffré de la precedente", ink 58, docket 19 Sept 1572) of the 19 Sept 1572 letter to the Queen whose cipher ends f.190r, and carries the Infante / "peau de l'ours" passage La Ferriere quotes; not ink 52 (no ink-52 phrase seen, other date, other leaves), so ink 52 gains no plaintext; next: only a side step, align the 19 Sept cipher (ff.188v-190r, first page on c204 or earlier) with ff.191r-192r as a known-plaintext pair, crops + two blind passes as tx/vivk_test.py, ~$15
-## Escalation (13 Oct 2026, VIV52-O; from the VIV52 list)
+## Escalation (14 Oct 2026, VIV-LAT refresh; from the VIV52-O list)
 - [x] siblings: ink 38 located; ink 40 vs 41 aligned (N5-VIVK); decipherment 51 found (N5-VIV5S); per-piece table (N5-VIVTAB); ink 54 read (N5-VIV54); ink 53 ff.170r-171v read (N6-VIV53, N6-VIV53B); ink 63 ff.190r-194r read in full (N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G); ink 52 f.164r-v read (VIV52-O)
 - [x] clear-pages: decipherments 41, 44, 51, 68, 71, 76 are on the leaves; inks 54 and 53 interlinear words used as gloss checks (N5-VIV54 PASS, N6-VIV53 FAIL at the floor); f.171v has none (N6-VIV53B); ink 63 has none (order gate b2 instead)
 - [x] known-keys: Tomokiyo's 1572-74 key on disk and held-out PASS (N5-VIVK); applied to inks 54, 53 and 63
 - [x] print: Gachard I-II, d'Ars (book 1884 and RQH 35 article, L51), Catherine IV-V, Groen IV read; Ribera 2007 snippets (L50); d'Ars re-checked by date and by k-mer/phrase overlap against inks 53, 54, 63 (VIV-BREMOND); Kervyn I-VI grepped (N6-KERV); print_check on ink 54, 53 and 63 phrases (pc63b/, pc63c/); Gachard I-II, d'Ars, Catherine IV and X re-grepped for ink 52 (VIV52, none)
 - [retired] key-rebuild: tools/stream_align.py from a flat start did not converge on this material (Arm A, 2 of 30 codes); a published key exists
 - [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; native regions of f.173r-v, ff.170r-171v, ff.190r-194r (N5-VIV54, N6-VIV53, N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G); ink 52 c178-c183 viewed at 1200 px and f.164r-v native regions via openapi.bnf.fr (VIV52-O, 13 Oct 2026): no dechiffre, no gloss; ink 52 misplaced-decipherment residual (V2-VIV52, AUDIT 6) closed 13 Oct 2026: dechiffre heads of inks 56, 60, 62 (VIV-DECH), 83, 89, 91 + 78 close (VIV-DECH2), 78, 97 (VIV-HEADS) and 101 (VIV-101, f.300r, c322, 24 Dec, King) viewed, each the decipherment of its own letter, none ink 52
-- [ ] retry: ink 53 f/m/p key cells for the U labels (AUDIT 4; whole-label test negative, D1-F16104K; hand-placed per-position shape judge NON-TEST, control 4-5/12 vs 8/12, D07-VIV53; clerk word anchors on ink 40, VIV-ANCHOR 8 Oct 2026: control 5/7 PASS, V -> n assigned, f/m/p/qu under 3 positions, f on label p a conflict; next instrument: ink 50/51 known plaintext or sign sorter); ink 63 key questions on the key image (context table done, N7-VIV63G); ink 63 label questions (lookalike pass, overlap dedup); ink 53 residual unsettled tiles and kept gaps (window look-alike pass N7-VIV53L; gap re-read R7A-VIV53, 137/270 settled); ink 54 sorter/window audit (lookalike pass done, N7-VIV54L) and the col-u-row-3 relabel (key cell found, N7-VIV54Q; window judge NON-TEST, N7-VIV54R; hand-placed judge NON-TEST 0/18, DEF1-VIV54; next instrument: sign sorter / clerk alignment, hand-placed per-position crops)
-Verdict: keep going: 16 internal gaps; ink 52 f.164r-v read at D1 (VIV52-O, 13 Oct 2026, b2 + wrong-key PASS; audit 1 N3 D1, V-VIV52; audit 2 N3 D1 upheld, V2-VIV52, misplaced-decipherment residual added; inks 56, 60, 62 dechiffre heads viewed by VIV-DECH and inks 83, 89, 91 (+78 close, a Dec body) by VIV-DECH2 and inks 78, 97 heads by VIV-HEADS, 13 Oct 2026: not ink 52; and ink 101 head by VIV-101 (f.300r, 24 Dec, King): not ink 52; residual closed); f.191v viewed (VIV-191V, 13 Oct 2026: decipherment of the 19 Sept letter, not ink 52); cheapest next: the owner sorts tx/sorter_fp/sorter_viv_fp.html (D4-VIV), ~$0 agent cost; then ink 52 ff.165r-168v via openapi.bnf.fr, ~$34 (24 units), and the ink 50/51 known plaintext for f, m, p, ~$15
+- [ ] retry: ink 53 f/m/p key cells for the U labels (AUDIT 4; whole-label test negative, D1-F16104K; hand-placed per-position shape judge NON-TEST, control 4-5/12 vs 8/12, D07-VIV53; clerk word anchors on ink 40, VIV-ANCHOR 8 Oct 2026: control 5/7 PASS, V -> n assigned, f/m/p/qu under 3 positions, f on label p a conflict; next instrument: ink 50/51 known plaintext or sign sorter); ink 63 key questions on the key image (context table done, N7-VIV63G); ink 63 label questions (lookalike pass, overlap dedup); ink 53 residual unsettled tiles and kept gaps (window look-alike pass N7-VIV53L; gap re-read R7A-VIV53, 137/270 settled); ink 54 sorter/window audit (lookalike pass done, N7-VIV54L) and the col-u-row-3 relabel (key cell found, N7-VIV54Q; window judge NON-TEST, N7-VIV54R; hand-placed judge NON-TEST 0/18, DEF1-VIV54; next instrument: sign sorter / clerk alignment, hand-placed per-position crops); ink 63 noise: key-constrained lattice with a learnt confusion matrix (VIV-LAT, 14 Oct 2026: dev PASS, confirm2 FAIL, truth-in-lattice 0.124 -- next instrument: a reader that puts the true sign in the lattice)
+Verdict: keep going: 16 internal gaps; VIV-LAT (14 Oct 2026) lattice decode confirm2 FAIL at a 0.124 truth-in-lattice ceiling, ink 63 not re-decoded; ink 52 f.164r-v read at D1 (VIV52-O, 13 Oct 2026, b2 + wrong-key PASS; audit 1 N3 D1, V-VIV52; audit 2 N3 D1 upheld, V2-VIV52, misplaced-decipherment residual added; inks 56, 60, 62 dechiffre heads viewed by VIV-DECH and inks 83, 89, 91 (+78 close, a Dec body) by VIV-DECH2 and inks 78, 97 heads by VIV-HEADS, 13 Oct 2026: not ink 52; and ink 101 head by VIV-101 (f.300r, 24 Dec, King): not ink 52; residual closed); f.191v viewed (VIV-191V, 13 Oct 2026: decipherment of the 19 Sept letter, not ink 52); cheapest next: the owner sorts tx/sorter_fp/sorter_viv_fp.html (D4-VIV), ~$0 agent cost; then ink 52 ff.165r-168v via openapi.bnf.fr, ~$34 (24 units), and the ink 50/51 known plaintext for f, m, p, ~$15
 ## Siblings (8 Oct 2026)
 
 SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 6 listed, 6 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.

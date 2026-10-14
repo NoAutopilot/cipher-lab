@@ -1,0 +1,81 @@
+{
+ "lam": 2,
+ "lattice": {
+  "err_meas": 0.296,
+  "err_meas_n": "316/1068",
+  "err_fx": 0.15,
+  "err_fx_n": "75/500",
+  "paired_meas": {
+   "lines": 36,
+   "improved": 6,
+   "worsened": 9,
+   "tied": 21,
+   "p": 0.6072,
+   "fixed": 11,
+   "broken": 16
+  },
+  "paired_fx": {
+   "lines": 36,
+   "improved": 3,
+   "worsened": 6,
+   "tied": 27,
+   "p": 0.5078,
+   "fixed": 4,
+   "broken": 6
+  }
+ },
+ "top1": {
+  "err_meas": 0.291,
+  "err_meas_n": "311/1068",
+  "err_fx": 0.146,
+  "err_fx_n": "73/500"
+ },
+ "control": {
+  "lattice": {
+   "real": -1.2285068568294129,
+   "rank": 1,
+   "z": 4.930437428054993,
+   "shuf_mean": -1.8680759213174085,
+   "shuf_max": -1.5656472984460272
+  },
+  "top1": {
+   "real": -1.5353237884655149,
+   "rank": 1,
+   "z": 4.212014623469201,
+   "shuf_mean": -2.0975136637158087,
+   "shuf_max": -1.6888022275933607
+  },
+  "n_shuffles": 100
+ },
+ "changed": 140,
+ "truth_in_lattice": {
+  "all": {
+   "truth_in_lattice": 11,
+   "top1_wrong": 46,
+   "share": 0.239
+  },
+  "fx": {
+   "truth_in_lattice": 5,
+   "top1_wrong": 19,
+   "share": 0.263
+  }
+ },
+ "truth_in_plain_lattice": {
+  "all": {
+   "truth_in_lattice": 6,
+   "top1_wrong": 46,
+   "share": 0.13
+  },
+  "fx": {
+   "truth_in_lattice": 2,
+   "top1_wrong": 19,
+   "share": 0.105
+  }
+ },
+ "gate": {
+  "a": false,
+  "b": false,
+  "c": true,
+  "PASS": false
+ }
+}
