@@ -1,0 +1,93 @@
+# Key no.70 nomenclator (word columns), BnF fr.3995 f.131r (Gallica btv1b525085665 canvas f252), read 14 Oct 2026 by NO70-WORDS
+# from ciphers/fr3993-gonzague-nevers-1595/images/key70/key70_nomen_left.jpg + _right.jpg (crops: images/no70/crops/).
+# Two blind Sonnet passes (A top-down, B reversed order) + reconciliation by the worker. Alphabet and nulls: fr3993 keys/key_no70.tsv.
+# value prefixes: NN/ = Arabic figure with bar (digit code); L:x = place letter code; W:x = word letter code (second series); R: = Roman numeral.
+# Only the NN/ rows can occur in an all-digit string. Code 55 is absent from the table. grade H-period = read from the period key sheet.
+value	meaning	grade	source	note
+54/	Boullon	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+56/	Le Roy	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+57/	Roine d'angleterre	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+58/	Mr de Neuers	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+59/	Mr de Retelois	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes; meaning spelling M (passes: Retelois/Rebelais)
+60/	Mr de Montpensier	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+61/	Mr de Lauerdin	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes; meaning spelling M (Lauerdin/Lauerdini)
+62/	Mr de Balagny	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+63/	Madde de Balagny	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+64/	Mr de Rosne	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+65/	Conte de fuentes	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+66/	Mr le conte de st Pol	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+67/	Duc maurice	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+68/	Clerge	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+69/	Magistrat	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+70/	Peuple	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+71/	Soldats	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+72/	Infanterie	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+73/	Cauallerie	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+74/	Regiment de champagne	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+75/	Espagnolz	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+76/	Valons	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+77/	Alemans	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+78/	Italiens	H	fr3995-f131r	Arabic figure with bar; codes agree in both blind passes
+L:a	Paris	H	fr3995-f131r	place column, letter code
+L:b	Lion	H	fr3995-f131r	place column, letter code
+L:c	st Quentin	H	fr3995-f131r	place column, letter code
+L:d	Corbie	H	fr3995-f131r	place column, letter code
+L:e	Peronne	H	fr3995-f131r	place column, letter code; meaning spelling M (Peronne?)
+L:f	Guyse	H	fr3995-f131r	place column, letter code
+L:g	Maubert fontaine	H	fr3995-f131r	place column, letter code
+L:h	Mouzon	H	fr3995-f131r	place column, letter code
+L:i	Cambray	H	fr3995-f131r	place column, letter code
+L:l	Arras	H	fr3995-f131r	place column, letter code
+L:m	Baspaume	H	fr3995-f131r	place column, letter code
+L:n	valenciennes	H	fr3995-f131r	place column, letter code
+L:o	Douay	H	fr3995-f131r	place column, letter code
+L:p	Artois	H	fr3995-f131r	place column, letter code
+L:q	Hainault	H	fr3995-f131r	place column, letter code
+L:r	flandres	H	fr3995-f131r	place column, letter code
+L:s	franche conte	H	fr3995-f131r	place column, letter code
+sign:ville	Ville	M	fr3995-f131r	heading sign (open square); not transcribed further
+sign:cittadelle	cittadelle	M	fr3995-f131r	heading sign (square open below)
+W:a	tranchees	H	fr3995-f131r	word column, letter code
+W:b	forts	H	fr3995-f131r	word column, letter code
+W:c	aproches	H	fr3995-f131r	word column, letter code
+W:d	Artillerie	H	fr3995-f131r	word column, letter code
+W:e	Viures	H	fr3995-f131r	word column, letter code
+W:f	Argent	H	fr3995-f131r	word column, letter code
+W:g	malade	H	fr3995-f131r	word column, letter code
+W:h	blesse	H	fr3995-f131r	word column, letter code
+W:i	more	H	fr3995-f131r	word column, letter code
+W:k	pris	H	fr3995-f131r	word column, letter code
+W:l	forcee	H	fr3995-f131r	word column, letter code
+W:m	capitulaon ou traitte	H	fr3995-f131r	word column, letter code; meaning M
+W:n	effouuance	H	fr3995-f131r	word column, letter code; meaning M
+W:o	secours	H	fr3995-f131r	word column, letter code
+W:p	jour	H	fr3995-f131r	word column, letter code
+W:q	nuict	H	fr3995-f131r	word column, letter code
+W:r	messager	H	fr3995-f131r	word column, letter code
+W:s	hommes	H	fr3995-f131r	word column, letter code
+W:t	armee	H	fr3995-f131r	word column, letter code
+W:u	lettre	H	fr3995-f131r	word column, letter code
+W:x	ennemys	H	fr3995-f131r	word column, letter code
+W:y	sedition	H	fr3995-f131r	word column, letter code
+W:z	garnison	H	fr3995-f131r	word column, letter code
+R:i	toutesfois	M	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:ij	Neantmoins	M	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:iij	pour	M	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:iiij	par	M	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:v	lesquelles	M	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:vi	lequel	M	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:vij	qui	M	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:viij	que	M	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:ix	encore	H	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:x	non	H	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:xi	poinct	H	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:xij	faute	M	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:xiij	sont	M	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:xiiij	faire	M	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:xv	enuoyer	H	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:xvi	enuoye	M	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence; enuoye and nouuelles both read as xvi/xvj: 21 rows for i-xx, one duplicate
+R:xvj	nouuelles	M	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence; enuoye and nouuelles both read as xvi/xvj: 21 rows for i-xx, one duplicate
+R:xvij	nous	M	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:xviij	vous	M	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence; Tomokiyo nevers.htm: xviii = vous (fr.3982 f.51)
+R:xix	nos	H	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
+R:xx	vos	H	fr3995-f131r	Roman numeral in minim ligature; value M where the ligature is read by sequence
