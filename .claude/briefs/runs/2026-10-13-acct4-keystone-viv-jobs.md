@@ -253,3 +253,44 @@ benchmark-tx/vivonne1573-f211r-dev.truth.tsv (split=dev, build_vivonne_f201r.py'
 tx/viv70_labels.py (counts only, no key edit); else stop and report. Done line: share vs p95 and rank first, then whether the truth
 item was registered, then the label totals. ROOM lines "for LANE VIV-KEYSTONE (account 4)", done line to the parent
 session_01D7XWmthshMVqxumdDvitPh.
+
+## Wave 5 (02:2x UTC 14 Oct 2026; VIV-ESPLIT done and archived; VIV-70B running on account 2)
+Results read: VIV-ESPLIT: label y's held-out split passes its registered gate but not the always-l baseline (0.408 vs 0.447; only l and
+h separate per class), the ink-63 split scores like a random split, label e untestable at N 15; no key edit (NOTES "VIV-ESPLIT",
+tx/viv63_esplit/owner_questions.tsv). VIV-70B (account 2, halfway 02:15): the pre-registered trim rule passes (0.769 vs p95 0.522,
+rank 1/201), truth vivonne1573-f211r-dev built (398 scored; passA 0.138 / 0.006, passB 0.166 / 0.036). The day's diagnosis: on
+positions whose truth is unambiguous the readers err at 1-4% (f.201r 0.037, f.211r 0.006 flagged-excluded); the salad in ink 63 comes
+from merged and unkeyed labels (U + M 22%), from crop quality on its steeper pages (f.193r err_2reader 0.297 vs f.201r 0.201, f.211r
+0.154) and from truth that is itself half-flagged. Same rules as waves 1-4. The owner's page (VIV-HUMAN) is unanswered; no second ask
+goes to him before it is scored.
+
+### VIV-F191 (Opus, cap 10, box 120 min, openapi.bnf.fr <= 3): one page of ink 63 read to the standard the truth leaves reach, aimed at one clause above the authentication distance
+Why: D2 needs one clause above about 42 letters with no liberty and one true sentence (rule 4a). f.191r carries ink 63's longest runs
+(AUDIT 3: L11, 32 letters). Its passes were two blind Sonnet reads on first-cut crops (N6-VIV63), err_2reader about 0.2-0.3 by page,
+with `--follow-slope` bands known to snap onto neighbouring lines on this hand (gaps list). The truth leaves show the same readers reach
+1-4% on well-cut crops where the truth is certain, so the page-level gap is crop and pass count, not the readers. Steps: 0. PREREG-
+VIVF191.md before any pass: the crop recipe, the pass count, the reconciliation rule (tools/reconcile_passes.py over three passes, the
+tx/reconcile_vivk.py label rules), the statistics (err_2reader pairwise before/after; b2 and 200-wrong-key on the page under new seeds;
+longest clean run per AUDIT 2's measure; the registered stretch statistic of tx/viv53L_stretches.py or its ink-63 twin vs its
+random-relabel null), and the stop rule. 1. Re-fetch the f.191r native region (images/p63/manifest.json; canvas 196, 1 request) and
+cut it with `tools/iiif_lines.py` -- first add the deskew option the gaps list names ("deskew the region by a fitted angle before a
+flat cut, what N6-VIV63C did by hand with PIL", with an offline test in tools/tests/; Usage 8: an option on the shared tool, never a
+private script), check the --debug overlay, paste the command; crops under 1600 px. 2. Two fresh blind Sonnet passes on the new crops
+(one page per call, tx/SIGNS.md conventions) plus the two existing passes (tx/f191r_passA/B.tsv, aligned to the new line set by
+line id); reconcile four passes (majority, the vivk rules); err_2reader for each pair. 3. Re-decode the page under key.tsv
+(tx/viv63_decode.py's method, grades per token; M for every position where the four passes split 2-2 or worse), the gates, the
+stretch statistic, the five longest clean stretches as text with their grades. 4. Write tx/viv63_f191/ (passes, rec, decode, stats)
+and a table of the M/U/split tokens inside the five longest stretches with tile ids and line positions (tx/viv63_f191/
+owner_questions.tsv) -- the material for a later, clause-level owner ask; do not build a page. Do not change reading_piece63.tsv
+(a reading change is the verifier's to admit: the parent spawns one if a stretch clears the distance). Price: vision calls: 2 x USD
+1.4 = 2.8; reconciliation 1 unit; the deskew option ~1; Opus floor 2.5; cap 10. Done line: longest clean run before/after and whether
+any stretch clears 42 letters with no liberty, then err_2reader pairs, then the gates.
+
+### Account-2 row VIV-67B (Opus, cap 12, box 150 min, openapi.bnf.fr <= 10; account 2): the rest of ink 67 against ink 68
+Exactly VIV-67's method (NOTES "VIV-67"; VIV-70B's PREREG trim rule for a cipher block shorter than its decipherment window) on
+f.201v and f.202r (canvases 206 left? -- no: f.201v is canvas 207 left, f.202r canvas 207 right; confirm by eye on a 600 px overview)
+against the unaligned tail of dec67 (the last 401 letters of tx/dec67_norm.txt) extended by ff.206r-206v (canvases 211 right, 212 left)
+read in two blind passes each. Outputs with the 67B names (tx/f201v_*, f202r_*, dec_f206r_*, dec_f206v_*, tx/dec67b_norm.txt,
+tx/vivk67b_result.json), the benchmark item vivonne1573-f201v-dev (and f202r) registered only if the registered alignment gate
+passes; label table counts only. PREREG-VIV67B.md first. Price: vision calls: 8 x USD 1.4 = 11.2 -> cap 12; stop before a unit that
+would cross 80%. ROOM lines "for LANE VIV-KEYSTONE (account 4)", done line to the parent session_01D7XWmthshMVqxumdDvitPh.
