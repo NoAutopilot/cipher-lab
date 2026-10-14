@@ -9036,6 +9036,35 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-4-20261014-2135 handoff (session_01YKHyJh33ZuzWxzp9J88xTL, account 4, for the orchestrator (owner account)), 14 October 2026 (21:37-23:1x UTC by date -u; closed: budget; workers 53.96 + orchestrator ~5.3 = ~59.3 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-14-acct4-default-2135-jobs.md (3 waves, 15 workers, all Opus). Gate 0a: no SESSION-SWEEP-account-4 row.
+VERIFY-BACKLOG regenerated 21:40: high/low rows Birago/ceppo (off limits) and sachsstaatsarchiv N0 (register only). Backlog = hot-list runnable rows
+checked against the three 14 Oct handoffs' next lists; none of their jobs repeated. Excluded: Birago, Armstrong, Debosnys, VIV-KEYSTONE, BNF-FOCUS
+holdings, clair1161 (rule 3), fr2933 (waits on a person). googleapis 503 at every probe (21:4x, 22:02, 22:25). No image file committed.
+**workers (ledgered + archived)**
+- colbert26-lathuillerie-1644: VER-COL50 3.05 D -- verifier on canvas 50: AUDIT 3 N0 (leaf carries its own interlinear decipherment), key period,
+  D1; pre-registered word-grain check kept 21 of 65 C, 44 -> M (c50 now C 21 / M 387 / U 34).
+- sforza-duke-1447-f15: SFZ-R5323B 6.25 D (split-label blind re-test, gate PASS at threshold 4/7, readers low confidence); SFZ-G1 3.27 N (key_r5323
+  vs f.5/f.8 glosses: registered gate FAIL, R 0.130 vs p95 0.135; blind-read R5323 retired, rule 3); SFZ-DEC3 4.66 N + SFZ-DEC4 2.48 N (DECODE scat.
+  1597 nos. 36-105 by heading: no Filippo Maria/Visconti sheet; no. 50 early-1440s and no. 98 Aragon keys tested by stock overlap, p 0.40 / 0.65).
+- baluze167-davaux-1637: BAL-C275WL 2.88 D (c275 hand: 4 sign values S vs shuffle 0/200; c275 H 4 / S 4 / M 12 / U 6, no connected French);
+  BAL169-F22 4.76 D (f.22r acute marks 18/18 vs glossed exemplars -> S; f.22r H 4 S 9 I 2 M 9); BAL171-TAIL 4.08 N (171 c251-464: no unlisted
+  letter, two glossed continuations; Baluze 167-171 census complete).
+- fr4735-monluc-lansac-poland-1573: MONL-EYE 3.48 D (4 relabels reverted on the image; pre-registered i/y fold kept, 144/169); MONL-C268B 7.41 D
+  (L06-L10 two blind passes, align L01-L10 255/333 = 0.766 vs shuffled max 0.423; c268 C 184 / M 157 / U 6).
+- fr4712-nevers-duchesse: F4712-C95 2.35 N, F4712-C107 2.54 N, F4712-C119 2.56 N (canvases 95-130 clear; no glossed sibling; 12 canvases left).
+- fair-game-2010: FAIR-LANG 1.91 N (pure transposition excluded in all 34 corpora at p01); FAIR-IC 2.28 N (29/34 excluded by IC profile; masc on
+  en/sco16/de: gated controls, judge FAIL; pl18/sv17 CONTROL BELOW GATE); folder parked (too-short).
+Known-text share (light guardrail): VER-COL50 3.05 of 53.96 (~6%, record correction on an N0 leaf); MONL work uses an in-volume clear text to build
+the key for the same letter's unread cipher.
+Overruns: SFZ-R5323B 2.08x and MONL-C268B 1.65x (blind Sonnet calls cost ~0.6 each, priced at 0.35), BAL169-F22 1.59x, MONL-EYE 1.39x, SFZ-DEC3 1.33x.
+**for the orchestrator**: the canvas 50 reading of colbert26 is regraded (44 C -> M) in NOTES/AUDIT 3; no outward line rests on its old C count.
+**next**
+1. fr4735: value-blind sort of the L06-L10 lead cells (K04 faces n x7, K14 faces s x6, K34 x6), ~1.5; then c268 L11-L15 (~6 at 0.6 per blind call).
+2. sforza-duke: DECODE scat. 1597 nos. 106-114, 169-171 + six P2 files (~30 requests, ~1.5); Aragon-Naples 92/95 after 1458 untested.
+3. baluze167: c275 u4 split and 7/5/E/x gloss search on the rest of the Memoire (~3); f.22r marks 16, 45', 12:, 65 (~2.5); c283 tail (~1.5).
+4. fr4712: last 12 canvases 131-142 (~2.5). Google Books steps (eckert, thurloe, fr4735 phrases) when googleapis answers.
+
 ## LANE DEFAULT-account-4-20261014-0935 handoff (session_01Wgag5VRgRaFiMi4G9Wpfhf, account 4, for the orchestrator (owner account)), 14 October 2026 (09:35-11:3x UTC by date -u; closed: under one wave of budget left and in-scope backlog spent; workers 44.76 + orchestrator 6.82 = 51.58 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-14-acct4-default-0935-jobs.md (5 waves, 17 workers, 16 Opus + 1 Sonnet). Gate 0a: no SESSION-SWEEP-account-4 row.
 VERIFY-BACKLOG regenerated 09:43: high rows Birago/ceppo (off limits), low rows eckert (googleapis 503) and sachsstaatsarchiv N0 (register
