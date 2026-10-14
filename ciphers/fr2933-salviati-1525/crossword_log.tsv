@@ -1,0 +1,2 @@
+time	target	hypothesis	occurrences	statistic	null_pos_p95	null_val_p95	verdict	flag
+2026-10-14 07:49	ciphers/fr2933-salviati-1525	nt^=ss	88	-768.5		-187.2	reject	non-blind

@@ -11,6 +11,11 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 import judge_plaintext as J
 draws = int(sys.argv[sys.argv.index("--draws") + 1]) if "--draws" in sys.argv else 300
 allkey = {r["sign"]: r for r in csv.DictReader(open(os.path.join(D, "key_lasry.tsv"), encoding="utf-8"), delimiter="\t")}
+# SALV-TRY (14 Oct 2026): --set SIGN=VALUE[,...] overrides values in memory (key_lasry.tsv never written); --out FILE writes the
+# result there instead of score.json and skips cipher_runs/judge_input (so SALV-LKEY's committed outputs stay as they are).
+sets = dict(p.split("=", 1) for p in sys.argv[sys.argv.index("--set") + 1].split(",")) if "--set" in sys.argv else {}
+out = sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else None
+for s_, v_ in sets.items(): allkey[s_] = dict(allkey[s_], value=v_)
 key = {s: r for s, r in allkey.items() if r["class"] != "amb"}  # ambiguous a|b rows graded M, not read (PREREG 1)
 toks = list(csv.DictReader(open(os.path.join(D, "ciphertext_lasry.tsv"), encoding="utf-8"), delimiter="\t"))
 runs, cur, prev = [], [], None   # runs of (leaf, sign)
@@ -56,6 +61,8 @@ res = {"draws": draws, "target": {n: round(v, 4) for n, v in tgt.items()},
        "rank_above": {n: sum(1 for x in ctl[n] if x >= tgt[n]) for n in tgt},
        "mapped_share": {lf: f"{mapped[lf]}/{tot[lf]}" for lf in leaves},
        "mapped_all": f"{sum(mapped.values())}/{sum(tot.values())}", "ambiguous_M": {lf: amb[lf] for lf in leaves}, "letters": len(J.fold(text(base)))}
+if out:
+    res["set"] = sets; json.dump(res, open(out, "w"), indent=1); print(json.dumps(res, indent=1)); sys.exit(0)
 open(os.path.join(D, "cipher_runs_lasry.txt"), "w", encoding="utf-8").write(
     "\n".join(f"{r[0][0]}: " + "".join(base.get(s, ".") for _, s in r) for r in runs) + "\n")
 open(os.path.join(D, "judge_input_lasry.txt"), "w", encoding="utf-8").write(text(base).replace(" ", "\n") + "\n")

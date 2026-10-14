@@ -1,4 +1,4 @@
-# PREREG-SALV-TRY (14 Oct 2026, written 07:5x UTC by date -u, before any --try run or re-score)
+# PREREG-SALV-TRY (14 Oct 2026, written 07:48 UTC by date -u, before any --try run or re-score)
 
 Worker SALV-TRY (Opus), LANE DEFAULT-A1-0640-14 (account 1), brief `.claude/briefs/runs/2026-10-14-acct1-default-0640-jobs.md`
 "Wave 4" + row SALV-TRY. Hypothesis: our sign `nt^` (95 tokens, mapped to his u/v cell by both SALV-LKEY passes, value u, grade M)
