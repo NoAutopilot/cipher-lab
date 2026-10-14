@@ -1871,3 +1871,53 @@ H 56, S 42, M 28, I 27, U 1 of 154 after BAL167-GSEQ (g+ 3 M -> S, values unchan
 - [x] image-check: glossed Baluze 170 crops f.233r/f.239r/f.258r on disk (BAL-CROP); f.301r, f.320v-321r (BAL167-GHV); f.64r, f.124r-v (BAL167-GPLUS); f.124 gt letter settled and g+ tiles confirmed (BAL167-GSEQ); Baluze 170 volume sweep finished with 1000 px looks (BAL170-FIN); Baluze 169 swept end to end, 169 f.22r at 1000 px on disk (BAL169-SWEEP, BAL169-FIN)
 - [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run (BAL-CROP, BAL-WL, BAL167-GHV, BAL167-GSEQ)
 Verdict: keep going: 2 internal gaps; cheapest next: the 169 f.22r bare passage (~$3, period key application with key.tsv; the published key reads its siblings); then the 167/168/171 volume sweeps (~$3.5 each); the 168 f.246 step once L71 answers
+
+## BAL169-F22 (14 Oct 2026, account 1, for LANE DEFAULT-A1-0640-14), 06:59-07:1x UTC by date -u
+Brief: the lane's ROOM.md wave-2 spawn line (06:52 UTC) "baluze167 Baluze 169 f.22r bare passage, period key, Opus cap 4.5"; the job row
+itself is missing from .claude/briefs/runs/2026-10-14-acct1-default-0640-jobs.md on main (flagged in ROOM.md), so the method is the
+previous gap entry's next step (native crop + two blind passes + period key with key.tsv, the 169 ff.52/97/142 method). Intake gate:
+`baluze167-davaux-1637: partial (line 1)` exit 0. PREREG `bal169f22/PREREG-BAL169F22.md` pushed (11cf25541) before any pass.
+**Crop.** openapi.bnf.fr, 2 requests (c48 info.json, 4760x6850; one region 1285,1140,2950,810 at max), both HTTP 200, taken and released in
+ROOM.md; region kept as images/b169sweep/src_c048_f22r_1285,1140,2950,810.jpg; `tools/iiif_lines.py --image ... --prefix b169f22r` ->
+4 lines x 2 segments (images/crops/b169f22r_L01-L04_s1/s2, debug overlay checked). The cipher is not a block: it is 24 cipher tokens
+spread through lines 1-4 of f.22r, between clear French words; no interlinear gloss at native resolution.
+**Passes and gate.** 2 Sonnet calls (prompt bal169f22/prompt_pass{A,B}.txt = passes/passA_prompt.txt). Both passes have the same 22 tokens
+in the same order (17 numerals, 7 letter signs). They differ only on the marks of 3 numerals: 12/12:, 13/13: and 16/16' (L03). That is a
+split of 0.136, above the 0.10 gate, so this worker reconciled by eye from the crops, as the PREREG states. tools/reconcile_passes.py
+gives 61.9%, but it counts the multi-word shape descriptions as tokens (bal169f22/rec/). Reconciled sheet: passes/reconciled_b169f22r.tsv.
+This is the same hand problem D4-B167 found: every 1 is a dotted i, so 1-bearing numerals are M; 45 and 65 show no mark (M).
+The letter signs were settled from context in this letter only, all M: crossed-4 hook = f; underlined y = r; h = n; m with crossed 4 = m;
+barred 7/4 = a; y with curl = u. These agree with D4-B167's values for this hand family (h = n, y+ = r, crossed-4 forms carry a/t/d/f/g).
+**Reading** (reading_b169f22r.txt, fourth decode.json job; `python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check` -> "reading
+up to date", exit 0). Grades of the 24 cipher tokens: H 4 (95' en, 94' don, 81= Milandre, 70' sa), I 1 (100' faire, key row I), M 19.
+The letter signs and 1-bearing numerals are M. Clear words are in capitals in reading_b169f22r.txt, cipher in lower case:
+  "Elle croyoit qu'elle seroit obligee de [se de f / faire de Milandre] auquel cas on seroit tres aise icy qu'elle [en] voulust
+   [don ne r le co m ma n de ment a Mr de / ra n sa u] dont j'escris presentement au S. de la Boderie."
+The numerals give connected French that joins the clear words on both sides: "se deffaire de Milandre" (81= Milandre, H) ... "qu'elle en
+voulust donner le commandement a Mr de Ransau". The name is read from M-graded tokens: 13: Mr (key H, mark M here), then ra-n-sa-u.
+No identification of the persons is asserted here.
+No spec exists for this target, so there is no judge_plaintext run, and no rule-7 fresh re-derivation yet. Rule 4: H 4 / I 1 / M 19; no C
+or S, so this is a cryptanalytic result on a published key, not an H-grade reading. Where not found: this job searched no printed edition
+for the passage. The earlier Avenel VI whole-volume grep covers Richelieu's own letters only, not this Bouthillier despatch of 21 May 1639.
+Subagents: 2 Sonnet calls; reconciliation by this worker from 5 crop views. Requests: openapi.bnf.fr 2.
+
+## Remaining gaps (BAL169-F22, 14 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv; the unlisted glossed letters, 170 f.89r, 170 f.107r-v, 169 f.36-38, 169 f.206-207 and 169 f.208-209, are not yet counted in that figure). Of the 5 listed bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: N3, D2 (AUD1-B167). 170 f.228r-v: N3, D2 at about 56% (V-BAL167).
+168 f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled. 169 f.22r (unlisted, BAL169-SWEEP): 24 tokens read with the published key (BAL169-F22: H 4, I 1, M 19), not audited.
+- 168 f.246-247v bare passage - blocker: waiting-on LOCAL-QUEUE L71 (owner's browser: does the Papiers de Richelieu item print the cipher passage in clear); next if it does: align the printed text to the two-pass transcription with tools/interlinear_align.py (known plaintext for the f.247 hand), ~$3; if not: the f.247-hand glossed-text search (survey.tsv's d'Avaux-side leaves), ~$3
+- 170 f.228-229 novelty (N3 -> N4) - blocker: waiting-on LOCAL-QUEUE L71 and SO-BAL170-F228 (SECOND-OPINIONS-QUEUE.tsv); the edition's notes are snippet-only from the cloud and a second opinion is owed before N4
+- 169 f.22r reading audit - blocker: not-attempted; read by BAL169-F22 (M 19 of 24); next: a separate verifier session re-derives from the crops and key.tsv with tools/decode_key.py --check (rule 7) and runs the print search on the decoded phrase ("commandement a Mr de Ransau", "se deffaire de Milandre"), ~$2.5
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census (N9-BAL found unlisted f.110r in 168; BAL170-SWEEP + BAL170-FIN found unlisted glossed cipher on 170 f.89r and f.107r-v and continuation canvases 252, 271; BAL169-SWEEP + BAL169-FIN found 169 f.21-24 (bare f.22r), f.36-38, f.206-207 and f.208-209 (glossed) and continuation canvases 170-188, 224, 231-232, 297-302, 344-347, 375, 389, 467-471); Baluze 170 done (canvases 1-340); Baluze 169 done (canvases 1-535); next: the same sweep of 167, 168 and 171, ~$3.5 each (about 5 jobs at this method across the three)
+
+## Escalation (14 Oct 2026, BAL169-F22)
+- [x] siblings: davaux-1633 and DECODE records 2756-2762 checked (Siblings section above)
+- [x] clear-pages: leaf survey done; 170 f.230r is the clear close of the f.228 letter (D1-BAL170); 169 f.22r's cipher sits inside clear text (BAL169-F22)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.229 letter values carried to f.228; 169 f.22r read with key.tsv (BAL169-F22)
+- [ ] print: Avenel, Négociations secrètes, Guébriant, Bougeant, Mercure, Siri, IA, Google Books (UNA3-BAL), OpenAlex, CrossRef done; untried: the Papiers de Richelieu 1636-1642 volume by page (L71); a phrase search on the 169 f.22r decode
+- [x] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); shape control with a same-key wrong-label negative PASSED (BAL-WL, 31 M -> S); hook/v PASSED on read 2 (BAL167-GHV, 8 M -> S; audited V-GHV, AUDIT 5); g+ gloss letter settled by key-anchored sequence and tile test PASSED (BAL167-GSEQ, 3 M -> S; re-audited V-GSEQ, AUDIT 6; scorer committed, GSEQ-SCORER)
+- [x] image-check: glossed Baluze 170 crops f.233r/f.239r/f.258r on disk (BAL-CROP); f.301r, f.320v-321r (BAL167-GHV); f.64r, f.124r-v (BAL167-GPLUS); f.124 gt letter settled and g+ tiles confirmed (BAL167-GSEQ); Baluze 170 volume sweep finished with 1000 px looks (BAL170-FIN); Baluze 169 swept end to end (BAL169-SWEEP, BAL169-FIN); 169 f.22r native crops (BAL169-F22)
+- [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run (BAL-CROP, BAL-WL, BAL167-GHV, BAL167-GSEQ)
+Verdict: keep going: 2 internal gaps; cheapest next: the 169 f.22r verifier audit and phrase search (~$2.5); then the 167/168/171 volume sweeps (~$3.5 each); the 168 f.246 step once L71 answers
+
+`python3 tools/gaps_check.py baluze167-davaux-1637` (BAL169-F22, 14 Oct 2026): "OK keep-going baluze167-davaux-1637: keep going: 2 internal gap(s), 1 step(s) untried"

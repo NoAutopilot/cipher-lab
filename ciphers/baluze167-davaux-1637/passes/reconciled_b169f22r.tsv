@@ -1,0 +1,11 @@
+# BAL169-F22, 14 Oct 2026. Eye reconciliation of passes A/B (cipher-token split 3/22 = 0.136 > 0.10 gate; the tool's 61.9% counts
+# multi-word shape descriptions as tokens) from the native crops images/crops/b169f22r_L01-L04_s1/s2. Numerals as seen; every 1 in this
+# hand is a dotted i (D4-B167), so a dot or acute on a 1-bearing numeral is ambiguous: such numerals carry ? (value = the key's marked
+# reading the context fits). 45 and 65 show no mark at native resolution (key has only 45'/65' readings that fit): ?. s:<shape>=<letter>?
+# letter signs, letter settled from context in this letter only (crossed-4 hook = f; underlined y = r; h = n; m-with-crossed-4 = m;
+# barred 7/4 = a; y with curl = u), all M.
+line	tokens
+L01	{Elle croyoit qu'elle seroit obligee de} 71'? 16'? s:hook4=f?
+L02	100' 16'? 81= {auquel cas on seroit tres aise icy qu'elle}
+L03	95' {voulust} 94' 51'? s:yunder=r? 41'? 13'? s:m4=m? 45'? s:h=n? 16'? 12:? s:bar74=a? 13:? 16'?
+L04	65'? s:h=n? 70' s:ycurl=u? {dont j'escris presentement au S. de}

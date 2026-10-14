@@ -1,0 +1,64 @@
+line	position	sign	confidence	alt	why
+L01	1	{Elle	H		agree
+L01	2	croyoit	H		agree
+L01	3	qu'elle	H		agree
+L01	4	seroit	H		agree
+L01	5	obligée	H		agree
+L01	6	de}	H		agree
+L01	7	71'	H		agree
+L01	8	16'	H		agree
+L01	9	L:?(m/n-like	M	A:-	gap
+L01	10	L:?(n/u-shape	M	B:hook	differ
+L01	11	with	H		agree
+L01	12	crossed	H		agree
+L01	13	4	M	A:-	gap
+L01	14	tail)	M	B:shape)	differ
+L02	1	100'	H		agree
+L02	2	16'	H		agree
+L02	3	81=	H		agree
+L02	4	{auquel	H		agree
+L02	5	cas	H		agree
+L02	6	on	H		agree
+L02	7	seroit	H		agree
+L02	8	frais	M	B:tres	differ
+L02	9	cause	H		agree
+L02	10	icy	H		agree
+L02	11	quelle}	M	B:qu'elle}	differ
+L03	1	95'	H		agree
+L03	2	{voulust}	H		agree
+L03	3	94'	H		agree
+L03	4	51'	M		agree-flagged
+L03	5	L:y|x?(y-shape	M	B:L:?(y-shape	differ
+L03	6	with	H		agree
+L03	7	horizontal	M	A:-	gap
+L03	8	underbar)	M	B:bar)	differ
+L03	9	41'	H		agree
+L03	10	13'	H		agree
+L03	11	L:?(m-shape	M	B:L:?(n/m-like	differ
+L03	12	with	H		agree
+L03	13	dot	M	A:-	gap
+L03	14	crossed	M	B:and	differ
+L03	15	bar)	H		agree
+L03	16	45	H		agree
+L03	17	L:?(h-shape)	M	B:L:?(h-like)	differ
+L03	18	16'	H		agree
+L03	19	12	M	B:12:	differ
+L03	20	L:?(y/7-shape	M	B:L:?(7/4-like	differ
+L03	21	with	H		agree
+L03	22	crossbar)	M	B:bar)	differ
+L03	23	13	M	B:13:	differ
+L03	24	16	M	B:16'	differ
+L04	1	65	H		agree
+L04	2	L:?(h-like)	M	A:-	gap
+L04	3	70'	M	A:-	gap
+L04	4	L:?(h-shape	M	B:L:?(y-like	differ
+L04	5	with	H		agree
+L04	6	tail)	M	B:-	gap
+L04	7	70'	M	B:large	differ
+L04	8	L:?(y/v-shape)	M	B:curl)	differ
+L04	9	{dont	H		agree
+L04	10	j'escris	H		agree
+L04	11	presentement	H		agree
+L04	12	au	H		agree
+L04	13	S.	H		agree
+L04	14	de}	H		agree

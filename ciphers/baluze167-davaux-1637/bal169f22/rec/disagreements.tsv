@@ -1,0 +1,25 @@
+line	col	A	B	flagged	crop
+L01	9	-	L:?(m/n-like		
+L01	10	L:?(n/u-shape	hook		
+L01	13	-	4		
+L01	14	tail)	shape)	A	
+L02	8	frais	tres		
+L02	11	quelle}	qu'elle}		
+L03	5	L:y|x?(y-shape	L:?(y-shape		
+L03	7	-	horizontal		
+L03	8	underbar)	bar)		
+L03	11	L:?(m-shape	L:?(n/m-like		
+L03	13	-	dot		
+L03	14	crossed	and		
+L03	17	L:?(h-shape)	L:?(h-like)		
+L03	19	12	12:	B	
+L03	20	L:?(y/7-shape	L:?(7/4-like		
+L03	22	crossbar)	bar)		
+L03	23	13	13:	B	
+L03	24	16	16'	B	
+L04	2	-	L:?(h-like)		
+L04	3	-	70'		
+L04	4	L:?(h-shape	L:?(y-like		
+L04	6	tail)	-		
+L04	7	70'	large		
+L04	8	L:?(y/v-shape)	curl)		

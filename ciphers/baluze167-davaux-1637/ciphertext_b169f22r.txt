@@ -1,0 +1,7 @@
+# Baluze 169 f.22r lines 1-4 (letter f.21-24, Bouthillier, Ruel 21 May 1639; bare cipher groups inside clear French), reconciled by
+# BAL169-F22 (14 Oct 2026) from two blind Sonnet passes and the native crops; see passes/reconciled_b169f22r.tsv for shapes and marks.
+# Letter signs: L:x = letter settled from context in this letter (all M by their ?). w: = clear words on the leaf.
+b169f22r L01 | w:Elle w:croyoit w:qu'elle w:seroit w:obligee w:de 71'? 16'? L:f?
+b169f22r L02 | 100' 16'? 81= w:auquel w:cas w:on w:seroit w:tres w:aise w:icy w:qu'elle
+b169f22r L03 | 95' w:voulust 94' 51'? L:r? 41'? 13'? L:m? 45'? L:n? 16'? 12:? L:a? 13:? 16'?
+b169f22r L04 | 65'? L:n? 70' L:u? w:dont w:j'escris w:presentement w:au w:S. w:de
