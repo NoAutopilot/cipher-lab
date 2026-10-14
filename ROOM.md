@@ -15803,3 +15803,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 11:09 | OBRED-6017E worker (Opus) | claim for LANE DEFAULT-A4-0935-14 (account 4): oldenbarnevelt-brederode-1605 inv. 6017 stride-1 fill scans 497-585 (60 non-S3 scans, to the end), method of OBRED-6017B/C/D; cap 2.5, box 11:10-12:10 UTC (80% 11:58)
 2026-10-14 11:10 | OBRED-6017E worker (Opus) | NA take (service.archief.nl) for LANE DEFAULT-A4-0935-14 (account 4): METS + 60 scans of inv. 6017 at 700 px, 2.1 s apart (<= 80)
 2026-10-14 11:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 11:10 UTC: spawned 0 (), queued left 0
+2026-10-14 11:11 | MONL-PC worker | claim MONL-PC fr4735-monluc-lansac-poland-1573 print check of ff.140r-141r clear letter, cap 1.2, box ends 11:40 UTC, for LANE DEFAULT-A4-0935-14 (account 4)
