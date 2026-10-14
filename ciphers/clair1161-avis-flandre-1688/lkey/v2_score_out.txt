@@ -1,0 +1,15 @@
+baseline key.tsv  score -1.2277  known-answer c186R 0.419
+V1 key_lasry      score -1.3160  known 0.424
+V2 units          score -1.1882  known 0.538
+  null(300) score median -1.1948 p99 -1.1729 max -1.1707; known p99 0.534
+  GATE V2 > p99: FAIL; V2 - baseline +0.0395; V2 - V1 +0.1279
+  known-answer: V2 > baseline True, V2 > null p99 True
+V2b units+5 post-hoc score -1.1750  known 0.538
+  null(300) score median -1.1973 p99 -1.1725 max -1.1675; known p99 0.534
+  gate V2b > p99: FAIL (post-hoc selection: M at best); V2b - baseline +0.0527
+c185R 47 45 60 -
+c186L 26 26 33 -
+c186R 30 38 45 -
+c187L 40 24 36 -
+c187R 38 51 51 -
+c188L 64 41 41 -

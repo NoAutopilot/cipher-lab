@@ -1,0 +1,12 @@
+{
+ "note": "C1161-V2 (14 Oct 2026): lkey/ciphertext_v2.tsv (Lasry nomenclature digit pairs as units) under lkey/key_v2.tsv; ciphertext.tsv and key.tsv untouched. See lkey/PREREG-C1161-V2.md.",
+ "jobs": [
+  {
+   "ciphertext": "lkey/ciphertext_v2.tsv",
+   "key": "lkey/key_v2.tsv",
+   "style": "spaced",
+   "reading": "lkey/reading_v2.txt",
+   "tokens": "lkey/reading_v2_tokens.tsv"
+  }
+ ]
+}

@@ -2419,3 +2419,72 @@ Verdict: keep going: 3 internal gaps; cheapest next: V2 with Lasry's digit-pair 
 OK keep-going clair1161-avis-flandre-1688: keep going: 3 internal gap(s), 2 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## Lasry nomenclature digit pairs as units, V2 (14 Oct 2026, C1161-V2)
+
+Account-1 Opus worker C1161-V2 for LANE DEFAULT-A1-0640-14 (brief `.claude/briefs/runs/2026-10-14-acct1-default-0640-jobs.md`, Wave 4),
+07:48-07:5x UTC 14 Oct by date -u. Disk only, 0 requests to any host. Instrument: the nomenclature block of George Lasry's key sheet
+(`sources/cyphersolver/2026-10-14-lasry/clair1161/lasry_p073_1.png`; "BnF cipher research", 10 Oct 2026; published by D. Bourdeau,
+cyphersolver dde5b0ea; text CC BY 4.0). PREREG `lkey/PREREG-C1161-V2.md` pushed in 21cced6af before any V2 score (fresh PREREG: the
+LKEY one made V2 conditional on two-pass digit mapping, which cannot happen because his codes are typeset digits with no exemplar crop;
+the mapping here is label-name identity, so every unit token is graded M).
+
+Build (`lkey/v2_build.py`): `lkey/ciphertext_v2.tsv` merges, greedily within a line, adjacent signs forming one of his ten codes into a
+unit (77 x77, 76 x16, 44 x10, 37 x9, 48 x4 = 116 units from 232 digit tokens; 62 55 52 30 60 absent: we have no label 5, and 62/30/60
+never occur adjacent); `lkey/key_v2.tsv` = key.tsv + his ten values; `lkey/key_v2b.tsv` adds the five LKEY post-hoc-positive values
+(8 c, rc s, tz l, c f, L s; z kept at t). `python3 tools/decode_key.py ciphers/clair1161-avis-flandre-1688 --config
+ciphers/clair1161-avis-flandre-1688/lkey/decode_v2.json --check` exit 0 (and decode_v2b.json exit 0). ciphertext.tsv and key.tsv untouched.
+
+Score and control (`lkey/v2_score.py`, output `lkey/v2_score_out.txt`; fr16 4-gram, mean log10 per letter; null = his ten nomenclature
+values permuted among his ten codes, 300 draws, seed 1; V2b null also permutes the five letter signs' values):
+```
+baseline key.tsv  score -1.2277  known-answer c186R 0.419
+V1 key_lasry      score -1.3160  known 0.424
+V2 units          score -1.1882  known 0.538
+  null(300) score median -1.1948 p99 -1.1729 max -1.1707; known p99 0.534
+  GATE V2 > p99: FAIL; V2 - baseline +0.0395; V2 - V1 +0.1279
+  known-answer: V2 > baseline True, V2 > null p99 True
+V2b units+5 post-hoc score -1.1750  known 0.538
+  null(300) score median -1.1973 p99 -1.1725 max -1.1675; known p99 0.534
+  gate V2b > p99: FAIL (post-hoc selection: M at best); V2b - baseline +0.0527
+```
+**Gate V2 > p99: FAIL** (-1.1882 vs -1.1729). Reading pairs as his units raises the whole-decode score over our key.tsv (+0.040) and over
+V1 (+0.128), but his assignment of words to codes does not beat other assignments of the same ten function words: the null is close to
+non-discriminating for this statistic, because any of de/le/il/ou/est/que spliced into French text scores about as well. Known-answer
+statistic on c186R (cover of his f163r excerpt by matching blocks >= 4): 0.538 vs baseline 0.419 and null p99 0.534 -- above p99 by
+0.004, pre-registered as descriptive, not a gate. Line level, c186R L01-02 (ours / V2 / his excerpt):
+`p a r i i u l x` / `p a r de u l x` / "par deulx"; `m a n i i` / `m a n de` / "mandé" -- both 77 units on these lines read his words.
+
+Faces (`lkey/v2_score.tsv`, longest lexicon-covered run, baseline / V2 / V2b): c185R 47/45/60, c186L 26/26/33, c186R 30/38/45,
+c187L 40/24/36, c187R 38/51/51, c188L 64/41/41. **0 faces gain a licensed stretch** (the gate failed; c186R and c187R move by >= 5 but are
+not licensed by this test).
+
+Data conflict (rule 4, recorded both ways, not settled): units override 212 S tokens of ours (7 = i x179, 4 = o x24, 3 = e x9) and 20 M
+tokens (6 x16, 8 x4). Our key reads 77 as "i i"; his sheet reads 77 as "de"; the c186R known answer favours his on the two lines shown.
+
+Grades (rule 4) under V2: tokens 3292 (units counted once): C 353, S 1702, M 1204, U 33, H 0, I 0. No H token; the 116 units are M (value
+from his sheet, mapping by label name). Our key.tsv reading stays the folder's reading.
+Credit: key and nomenclature George Lasry; publication D. Bourdeau, cyphersolver dde5b0ea, CC BY 4.0.
+
+## Remaining gaps (C1161-V2, 14 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H (unchanged). Prior work: George Lasry's reading of ff.162r-164v (cyphersolver `clair1161`, 6/6 transcribed, 2/6 deciphered, 4 in part). Concordance with his key (C1161-LKEY): 16 agree, 10 disagree, 24 unmapped; V1 FAIL; V2 (his digit-pair nomenclature as units) FAIL vs permuted-nomenclature control (-1.1882 vs p99 -1.1729), known-answer on c186R 0.538 vs null p99 0.534.
+- digit-pair nomenclature 77/76/44/37/48 and the S-sign conflicts 7 (i vs b) and S (u vs n) - blocker: not-attempted; V2 run, whole-decode gate FAIL with a null near non-discriminating for function words; next: a known-answer gate on c186R alone -- align our V2 decode to his full f163r paragraph token by token and count unit and letter agreements vs the permuted null, pre-registered, ~$1
+- 24 unmapped labels (incl. th 208 tokens, +, d, o, ls, eloop, K, 6r, iii, x) and z (passes agreed on his a:2, decode says t) - blocker: not-attempted; description-only matching could not separate them; next: blind matching with atlas-style exemplar crops of each of our labels beside his sheet (two passes, one call per label group), ~$2
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 (14 U tokens left under V1) - blocker: not-attempted; outside labels_v2, so not in the matching passes; next: the exemplar-crop matching above, then the owner sign sorter if any stay open, ~$1
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (C1161-V2, 14 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); whole volume (342 canvases) swept at 300 px, no other cipher or glossed leaf (D1A-C1161)
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under key.tsv; his f163r paragraph matches the same gloss (LQ-C1161); no other glossed leaf in the volume (D1A-C1161)
+- [ ] known-keys: fr16142 and fr.3281 f.4 NO FIT (N4-C1, D2-C1161PRU); Lasry's key: V1 FAIL (C1161-LKEY), V2 digit pairs as units FAIL on the whole-decode gate, known-answer 0.538 vs p99 0.534 (C1161-V2); next: c186R token-level known-answer gate against his f163r paragraph, ~$1
+- [x] print: no printed edition located by check-solved and Premise check; Lasry's "BnF cipher research" (10 Oct 2026, published by D. Bourdeau 13 Oct) located by LQ-C1161 as prior work on these leaves
+- [retired] key-rebuild: instrument c186R gloss match (G) for per-sign and joint value changes -- per-sign 0/9 (GLOSS9), joint gain inside the window null (VER-C1161J); reopens only with a longer clear text or new material (his reading may be that material)
+- [ ] image-check: split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); planted audit NON-TEST (D2-C1161AUD); next: exemplar-crop matching of our 24 unmapped labels against his sheet, then the owner's sign sorter on what stays contested
+- [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); V1 and V2/V2b decodes --check exit 0 (C1161-LKEY, C1161-V2)
+Verdict: keep going: 3 internal gaps; cheapest next: c186R token-level known-answer gate against his f163r paragraph under a fresh PREREG, ~$1
+
+`python3 tools/gaps_check.py clair1161-avis-flandre-1688` (C1161-V2, 14 Oct 2026):
+```
+OK keep-going clair1161-avis-flandre-1688: keep going: 3 internal gap(s), 2 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```
