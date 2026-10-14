@@ -301,3 +301,81 @@ Read so far: 0 of 67 marked letters read (tests 1-2, R12D-FAIR, R12D-FAIR2 and D
 - [x] image-check: GF4-BATCH22 reconciled all 67 visible letters against the screenshots
 - [x] retry: marker-scheme sweep (13 scheme families, 118 candidates per order) run 8 Oct 2026, control 60/60, null 0/40, target 0 PASS both orders (D2-FAIR)
 Verdict: keep going: 2 internal gaps; cheapest next: full-credit-text marker schemes from the screenshots, ~$3
+
+## FAIR-CRED: full-credit-text marker schemes (account 4, 14 Oct 2026, 10:13-10:2x UTC)
+
+Answers D2-FAIR's first gap ("marker schemes that need the full credit text"). Prior work: `tools/prior_work.py
+fair-game-2010 --item-spec ... --step-type transcribe --offline` exit 4 (LEAD = this job's own claim; LOOK leaf-gloss;
+UNCHECKED Tomokiyo/solver caches by unit), all four recorded in `prior-work.tsv` (CLEAR/CONTEXT, citing this file's
+25 Sept and 3 Oct checks); no ROOM claim on fair-game-2010 in the 6 hours before 10:13 UTC.
+
+Images: Rossignol's 25 screenshots re-fetched once (`regen_screens.sh`; klausschmeh.net 23, scienceblogs.de 2, 3.2 s
+apart, no 403/429), kept untracked under `images/scratch/`, sha1s in `images/manifest.json`. `cred/make_crops.py` cuts
+one strip per marked row (the marked row and up to two rows below, x 150-1110, 2x) into 6 contact sheets (65 strips:
+SHOPMAN and FRANCO carry two marks each). Two blind passes: A by the worker, B by a Sonnet subagent that saw only the
+sheets (6 + 6 image reads; reconciliation by script). `cred/reconcile_credits.py` (`--check`) -> `cred/credit_lines.tsv`:
+the cell holding each mark (role column 22, name column 22, single-column heading/music/thanks row 23, by the mark's
+x, name column from x~681), the other column, the next visible row. Pass agreement: every text field identical once
+the column placement of single-column rows is ignored (the only kind of difference, 46 cells); one marked-cell split
+(#30 `E` vs `ER`) settled `E` by GF4-BATCH22's colour blob; one crop-edge truncation (#58 `Musi?`) settled from the
+same line in the left column. Right-hand music-column text past x=1110 and the last line (#68 `...in Gree?`) are cut by
+the crop; no scheme reads those letters.
+
+Sweep: `cred/cred_sweep.py` (`--check`), pre-registered in `cred/PREREG-FAIR-CRED.md` (commit 64150f54c, pushed before
+any score). Two deviations, both before any score: (i) the decoy word pool gained the transcribed credit words, since
+Pride + marked words had no Z-initial word (C1 could not plant the Z of a window); (ii) a scheme that cannot spell a
+planted window is recorded non-plantable (a non-test), as D2-FAIR did for S7-S9: C9 (last letter of the cell) cannot
+end in J. Schemes C1 next credit's first letter, C2 cell first letter, C3/C4 letter after/before crossing word
+boundaries, C5 other column's first letter, C6 next role's first letter, C7 next word's first letter, C8 initial of
+the cell's last word, C9 cell's last letter, C10 letter at the same position in the row below; sequence variants on
+C1 and C3; 90 candidates per sweep and order.
+
+| | result |
+|---|---|
+| planted control (5 Pride windows, seed 20261014, per scheme) | 12 of 13 schemes 4/5 (G1 met), top-ranked 4-5/5; C9 non-plantable. The miss is the same window every time: window 2 fails the judge on its own (-0.933, cover 0.836), so 4/5 is the judge's ceiling on these windows |
+| null, family-wise (20 order shuffles + 20 random-record decoys) | 0/40 (G2 met) |
+| target, scroll order | 0 of 90 PASS; best C3+decim61 -1.816 (null_p99 -1.821, real_p05 -0.926), cover 0.545 |
+| target, column order | 0 of 90 PASS; best C1+decim52 -1.855, cover below 0.4 |
+
+Per-mark strings (scroll order, from credit_lines.tsv): C1 `KTMDKTSSAADAJJMSHJKCRSGKDDMRABWYNAIHOKIDRASPGGRFJNWUWAWEBPB`
+(59), C2 `USCDSSANFPKSSSBSRTSAKSPDELBPFFUJAPDHAFNFJAKPFLOGGBDOMSPTCAKCAWGOKPR`, C8
+`MPAGPPCTGHHGSSWRGWTCDKUEAKBWEMMWDMMYAKDHLAUSPFBFFSCLCMBGLRKMAWBAHLG`, C9
+`RNTNEERNDDTGNNSYRSSKYNNRNNHHTARNRRERSLRNSITHRIYOOHRCSRYEDXRCEVNALLE`; all in `cred/results.tsv`.
+
+CLI judge on the top three (rule 7, pasted):
+```
+TWRAAINSTAFETABUUOUAEISCPATESEAGEOREIMEDRSADLORIACLAMRVYOEUANREEYO  (scroll C3_next_x+S11_decim61)
+FAIL language: score=-1.816, null_p99=-1.821, real_p05=-0.926, real_median=-0.811, mode=both, N=66
+FAIL words: cover=0.545, min=0.6, real_text_median_cover=0.939
+FAIL - fair-game-2010 (a PASS is a gate for a verifier, not a reading; rule 10)
+KIJEIJUWAFMTPGTDKBHMWYDJRSGKMRCPOSANANASGDDARBKHWAJWBARDKSS  (scroll C1_nextcredit_first+S11_decim38)
+FAIL length: got=59, min=65, max=69
+FAIL language: score=-1.85, null_p99=-1.85, real_p05=-0.937, real_median=-0.812, mode=both, N=59
+FAIL words: cover=0.254, min=0.6, real_text_median_cover=0.932
+KGYJDJIRSUKKAWRMJPPBSTRNKKNHSSWIDDEARJBGWHMFACTWOGAADDABSAM  (scroll C1_nextcredit_first+S11_decim45)
+FAIL length: got=59, min=65, max=69
+FAIL language: score=-1.878, null_p99=-1.85, real_p05=-0.937, real_median=-0.812, mode=both, N=59
+FAIL words: cover=0.356, min=0.6, real_text_median_cover=0.932
+```
+
+Verdict: control-backed negative for "the marks point at English plaintext through the surrounding credit text" under
+these 12 plantable scheme families (C9 a non-test), both orders, N 30-67 (control 4/5 at the judge's own ceiling, null
+0/40). Conditional on: (i) the en judge's unknown reliability (EN-FOLDS); (ii) plaintext planted directly, so a scheme
+followed by a further cipher step is not covered; (iii) the crops read only the marked row and up to two rows below:
+"next credit" is the next visible row in the screenshot, which for 8 marks (#21, #23, #33, #53, #57, #60, #61, #68)
+lay outside the strip and was dropped; (iv) "capitals" as a case signal not run (3 lower-case marks, nothing to plant).
+Requests: klausschmeh.net 23, scienceblogs.de 2 (regen_screens.sh), none other. Subagents: 1 (pass B, Sonnet).
+
+## Remaining gaps (FAIR-CRED, 14 Oct 2026)
+Read so far: 0 of 67 marked letters read (tests 1-2, R12D-FAIR, R12D-FAIR2, D2-FAIR and FAIR-CRED are negatives or non-tests)
+- transposition or non-English hypotheses - blocker: not-attempted; no family run yet; next: a columnar/route transposition family with matched control at N=67, ~$3
+
+## Escalation (FAIR-CRED, 14 Oct 2026)
+- [n/a] siblings: a single film-credit cryptogram with no sibling texts
+- [x] clear-pages: the credits' clear line DEMOCRACY ONLY WORKS IF YOU DO YOUR PART tested as a crib, no isomorph placement in either order
+- [n/a] known-keys: no key material exists for a film-credit puzzle
+- [x] print: web and blog sweep of 3 Oct 2026 found no published decipherment
+- [retired] key-rebuild: injective substitution by tools/families/masc_inj.py word-pattern beam, CONTROL BELOW GATE 0.576 at N=67 (R12D-FAIR2); masc anneal and masc_words already run, a third substitution instrument needs new material
+- [x] image-check: GF4-BATCH22 reconciled all 67 visible letters against the screenshots; FAIR-CRED transcribed every marked credit row (two blind passes)
+- [x] retry: full-credit-text marker schemes (C1-C10, 90 candidates per order) run 14 Oct 2026, control 4/5 on 12 schemes, null 0/40, target 0 PASS both orders (FAIR-CRED)
+Verdict: keep going: 1 internal gap; cheapest next: columnar/route transposition family with matched control at N=67, ~$3

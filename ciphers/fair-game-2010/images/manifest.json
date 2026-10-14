@@ -1,0 +1,230 @@
+{
+ "note": "FAIR-CRED 14 Oct 2026: Rossignol's 25 end-credit screenshots, untracked; crops images/scratch/cred/ from cred/make_crops.py",
+ "files": [
+  {
+   "file": "images/scratch/BFG01.png",
+   "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2017/06/BFG01.png",
+   "fetched": "2026-10-14",
+   "bytes": 76877,
+   "sha1": "d1b2fa42afa41c55be148e45d27a7e3da4ea7f1f",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG02.png",
+   "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2017/06/BFG02.png",
+   "fetched": "2026-10-14",
+   "bytes": 300206,
+   "sha1": "ba78b1ff95aadbb1938d3aa10194530ea0e4a47e",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG03.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG03.png",
+   "fetched": "2026-10-14",
+   "bytes": 385388,
+   "sha1": "a53206fcf936328581c631e6c680beb4881506ab",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG04.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG04-1.png",
+   "fetched": "2026-10-14",
+   "bytes": 289137,
+   "sha1": "7a67b1f0390ba7c19d7f7b176f6a4f78621b33d8",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG05.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG05.png",
+   "fetched": "2026-10-14",
+   "bytes": 352434,
+   "sha1": "0c6fa47c6732799f32c46eeba65a6252861a9455",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG06.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG06.png",
+   "fetched": "2026-10-14",
+   "bytes": 358712,
+   "sha1": "ccfa36056f4a2f986b46cabb024ba2dcbefda3ed",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG07.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG07.png",
+   "fetched": "2026-10-14",
+   "bytes": 249759,
+   "sha1": "0ce02151e75687c3f0bfc80f699475a90052b0be",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG08.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG08.png",
+   "fetched": "2026-10-14",
+   "bytes": 326489,
+   "sha1": "1f4e3a58ce86a72503ccb2312016f6c7871ff6e1",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG09.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG09.png",
+   "fetched": "2026-10-14",
+   "bytes": 162240,
+   "sha1": "526782718dcaab9e0b6cb6e676d298e063bad686",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG10.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG10.png",
+   "fetched": "2026-10-14",
+   "bytes": 36779,
+   "sha1": "a73c21654941b0a1bec67885bd6186798ca48344",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG11.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG11.png",
+   "fetched": "2026-10-14",
+   "bytes": 319899,
+   "sha1": "cbbbd76fa2eaf1e6057d46fb23a22b1e8f418790",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG12.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG12.png",
+   "fetched": "2026-10-14",
+   "bytes": 250467,
+   "sha1": "3d6bda57eaf0bb009248075975991ff6baab4494",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG13.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG13.png",
+   "fetched": "2026-10-14",
+   "bytes": 268561,
+   "sha1": "e3c3fb1f3d1872d8376a7be40a47650be50e2678",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG14.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG14.png",
+   "fetched": "2026-10-14",
+   "bytes": 299746,
+   "sha1": "9ca10c3804a67007035cd680327e4d42d471bc5a",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG15.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG15.png",
+   "fetched": "2026-10-14",
+   "bytes": 388198,
+   "sha1": "b4340452081a407e9760bdcf6a6f7fd3dc74511b",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG16.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG16.png",
+   "fetched": "2026-10-14",
+   "bytes": 368439,
+   "sha1": "9553ed30732573b67a3f3bfc68218fe0da9f67a4",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG17.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG17.png",
+   "fetched": "2026-10-14",
+   "bytes": 400281,
+   "sha1": "ef19f364cecc44546ae4989f7f4ff53ba356da54",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG18.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG18.png",
+   "fetched": "2026-10-14",
+   "bytes": 443082,
+   "sha1": "29e9cea39b712a66aa5e838a3ee9ccd9004e4e9d",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG19.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG19.png",
+   "fetched": "2026-10-14",
+   "bytes": 349532,
+   "sha1": "ae2b629899f39f90aa374234ab0854b3d1ed08d5",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG20.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG20.png",
+   "fetched": "2026-10-14",
+   "bytes": 382144,
+   "sha1": "7ca3dc24343ac5a097e3653efb364046bbae4ec7",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG21.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG21.png",
+   "fetched": "2026-10-14",
+   "bytes": 362940,
+   "sha1": "45cd4950a804004fd16714db476da9cbca2f02e5",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG22.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG22.png",
+   "fetched": "2026-10-14",
+   "bytes": 476941,
+   "sha1": "364c7cc613294c4d570102facc9320313c861333",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG23.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG23.png",
+   "fetched": "2026-10-14",
+   "bytes": 279350,
+   "sha1": "f911c3f0e590ad717ff1c249ce1cbabe2541a12d",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG24.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG24.png",
+   "fetched": "2026-10-14",
+   "bytes": 371122,
+   "sha1": "a3923ffa3582e5b14a13f57d88c51a40a9cc920d",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  },
+  {
+   "file": "images/scratch/BFG25.png",
+   "url": "https://klausschmeh.net/wp-content/uploads/2026/06/BFG25.png",
+   "fetched": "2026-10-14",
+   "bytes": 325012,
+   "sha1": "ead7b28e44a05cfb9602c95c474a951655112a32",
+   "tracked": false,
+   "regen": "sh ciphers/fair-game-2010/regen_screens.sh; python3 ciphers/fair-game-2010/cred/make_crops.py"
+  }
+ ]
+}

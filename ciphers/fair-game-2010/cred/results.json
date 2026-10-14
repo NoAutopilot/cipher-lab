@@ -1,0 +1,352 @@
+{
+ "N": 67,
+ "control": {
+  "C10_below": {
+   "recovered": 4,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "C1_nextcredit_first": {
+   "recovered": 4,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "C1_nextcredit_first+S10_reverse": {
+   "recovered": 4,
+   "top_ranked": 4,
+   "trials": 5
+  },
+  "C1_nextcredit_first+S12_interleave": {
+   "recovered": 4,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "C2_cell_first": {
+   "recovered": 4,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "C3_next_x": {
+   "recovered": 4,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "C3_next_x+S11_decim2": {
+   "recovered": 4,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "C4_prev_x": {
+   "recovered": 4,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "C5_other_first": {
+   "recovered": 4,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "C6_next_role_first": {
+   "recovered": 4,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "C7_nextword_first": {
+   "recovered": 4,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "C8_lastword_first": {
+   "recovered": 4,
+   "top_ranked": 5,
+   "trials": 5
+  },
+  "C9_cell_last": {
+   "non_plantable": "cannot plant J under C9_cell_last",
+   "recovered": 0,
+   "top_ranked": 0,
+   "trials": 5
+  }
+ },
+ "gates": {
+  "G1_all_schemes": false,
+  "G1_failing": [
+   "C9_cell_last"
+  ],
+  "G2": true
+ },
+ "null": {
+  "candidates_per_sweep": 90,
+  "false_pass": 0,
+  "rate": 0.0,
+  "sweeps": 40
+ },
+ "target": {
+  "column": {
+   "n_pass": 0,
+   "passing": [],
+   "per_mark": {
+    "C10_below": {
+     "cover": 0.412,
+     "null_p99": -1.766,
+     "pass": false,
+     "real_p05": -0.944,
+     "score": -2.063,
+     "text": "SYRCUCSAAMDSSIASEREIAEKYOCNDLSGINDSASAYBDDTTIHTNPAN"
+    },
+    "C1_nextcredit_first": {
+     "cover": 0.203,
+     "null_p99": -1.85,
+     "pass": false,
+     "real_p05": -0.937,
+     "score": -2.193,
+     "text": "KTMDKTSSAADAJJMSHJKCRSGKDDMRABWYNAIHOKIDRASPGGRFJNWWUAWEPBB"
+    },
+    "C2_cell_first": {
+     "cover": 0.299,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.246,
+     "text": "USCDSSANFPKSSSBSRTSAKSPDELBPFFUJAPDHAFNFJAKPFLOGGBDOMSPTACCKAWGKOPR"
+    },
+    "C3_next_x": {
+     "cover": 0.561,
+     "null_p99": -1.821,
+     "pass": false,
+     "real_p05": -0.926,
+     "score": -2.129,
+     "text": "TATDMOTAEAYEPMLEFCICEASEARTIRINSEORANAEOUIUGLEAOADOAUEARSYUSVWEBRR"
+    },
+    "C4_prev_x": {
+     "cover": 0.476,
+     "null_p99": -1.82,
+     "pass": false,
+     "real_p05": -0.919,
+     "score": -2.251,
+     "text": "USYOSNUTDSRHOBMASHESRUILOTVEMAGPMDOFINCAIPWGNCNOYANIRHMEKELRAEP"
+    },
+    "C5_other_first": {
+     "cover": 0.273,
+     "null_p99": -1.791,
+     "pass": false,
+     "real_p05": -0.945,
+     "score": -1.943,
+     "text": "MJSJSSMACRASVVGCDBASJPUSDHAACZPKASTPMWJDMCCI"
+    },
+    "C6_next_role_first": {
+     "cover": 0.225,
+     "null_p99": -1.759,
+     "pass": false,
+     "real_p05": -0.973,
+     "score": -2.217,
+     "text": "FFPJBASKSCOOSBRRAFSPJSBUAPAGSAPPCFSSTMTB"
+    },
+    "C7_nextword_first": {
+     "cover": 0.233,
+     "null_p99": -1.674,
+     "pass": false,
+     "real_p05": -0.965,
+     "score": -2.098,
+     "text": "MPPCGDWWCKEAKWRMAKLLBMDBIOHELM"
+    },
+    "C8_lastword_first": {
+     "cover": 0.194,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.158,
+     "text": "MPAGPPCTGHHGSSWRGWTCDKUEAKBWEMMWDMMYAKDHLAUSPFBFFSCLCMBGRMLKAWBHALG"
+    },
+    "C9_cell_last": {
+     "cover": 0.284,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.143,
+     "text": "RNTNEERNDDTGNNSYRSSKYNNRNNHHTARNRRERSLRNSITHRIYOOHRCSRYEXCDREVNLALE"
+    }
+   },
+   "top": [
+    {
+     "cover": 0.322,
+     "null_p99": -1.85,
+     "pass": false,
+     "real_p05": -0.937,
+     "scheme": "C1_nextcredit_first+S11_decim52",
+     "score": -1.855,
+     "text": "KUGIYDJDDEJAIRRJSBWGKWKHAMWFRAMCJTBWPOBGSATARDNDKAKPNSHASMS"
+    },
+    {
+     "cover": 0.339,
+     "null_p99": -1.85,
+     "pass": false,
+     "real_p05": -0.937,
+     "scheme": "C1_nextcredit_first+S11_decim21",
+     "score": -1.914,
+     "text": "KSSKDRABWJAWHKBRADDGSANANASOBCRMKGSRJDYUMHPKDTGPTMFAWWJIEJI"
+    },
+    {
+     "cover": 0.305,
+     "null_p99": -1.85,
+     "pass": false,
+     "real_p05": -0.937,
+     "scheme": "C1_nextcredit_first+S11_decim30",
+     "score": -1.919,
+     "text": "KWTYMNDAKITHSOSKAIADDRAAJSJPMGSGHRJFKJCNRWSWGUKADWDEMPRBABB"
+    },
+    {
+     "cover": 0.305,
+     "null_p99": -1.85,
+     "pass": false,
+     "real_p05": -0.937,
+     "scheme": "C1_nextcredit_first+S12_interleave",
+     "score": -1.919,
+     "text": "KWTYMNDAKITHSOSKAIADDRAAJSJPMGSGHRJFKJCNRWSWGUKADWDEMPRBABB"
+    },
+    {
+     "cover": 0.237,
+     "null_p99": -1.85,
+     "pass": false,
+     "real_p05": -0.937,
+     "scheme": "C1_nextcredit_first+S11_decim25",
+     "score": -1.926,
+     "text": "KDWHASNBKJMDTWESRJKDAACGDHTMWJSAABDNSRSYPGFJIKBWRGAOMRUKPAI"
+    }
+   ]
+  },
+  "scroll": {
+   "n_pass": 0,
+   "passing": [],
+   "per_mark": {
+    "C10_below": {
+     "cover": 0.451,
+     "null_p99": -1.766,
+     "pass": false,
+     "real_p05": -0.944,
+     "score": -2.006,
+     "text": "SYRCUCSAAMDSSIASEREIAEKYOCNDLSGINDSASAYBDDTITHTNAPN"
+    },
+    "C1_nextcredit_first": {
+     "cover": 0.203,
+     "null_p99": -1.85,
+     "pass": false,
+     "real_p05": -0.937,
+     "score": -2.2,
+     "text": "KTMDKTSSAADAJJMSHJKCRSGKDDMRABWYNAIHOKIDRASPGGRFJNWUWAWEBPB"
+    },
+    "C2_cell_first": {
+     "cover": 0.358,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.251,
+     "text": "USCDSSANFPKSSSBSRTSAKSPDELBPFFUJAPDHAFNFJAKPFLOGGBDOMSPTCAKCAWGOKPR"
+    },
+    "C3_next_x": {
+     "cover": 0.5,
+     "null_p99": -1.821,
+     "pass": false,
+     "real_p05": -0.926,
+     "score": -2.115,
+     "text": "TATDMOTAEAYEPMLEFCICEASEARTIRINSEORANAEOUIUGLEAOADOAUEAYRUSSVWBERR"
+    },
+    "C4_prev_x": {
+     "cover": 0.476,
+     "null_p99": -1.82,
+     "pass": false,
+     "real_p05": -0.919,
+     "score": -2.228,
+     "text": "USYOSNUTDSRHOBMASHESRUILOTVEMAGPMDOFINCAIPWGNCNOYANIREHKMELRAEP"
+    },
+    "C5_other_first": {
+     "cover": 0.273,
+     "null_p99": -1.791,
+     "pass": false,
+     "real_p05": -0.945,
+     "score": -1.943,
+     "text": "MJSJSSMACRASVVGCDBASJPUSDHAACZPKASTPMWJDMCCI"
+    },
+    "C6_next_role_first": {
+     "cover": 0.225,
+     "null_p99": -1.759,
+     "pass": false,
+     "real_p05": -0.973,
+     "score": -2.217,
+     "text": "FFPJBASKSCOOSBRRAFSPJSBUAPAGSAPPCFSSTMTB"
+    },
+    "C7_nextword_first": {
+     "cover": 0.1,
+     "null_p99": -1.674,
+     "pass": false,
+     "real_p05": -0.965,
+     "score": -2.113,
+     "text": "MPPCGDWWCKEAKWRMAKLLBMDBOIEHLM"
+    },
+    "C8_lastword_first": {
+     "cover": 0.224,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.048,
+     "text": "MPAGPPCTGHHGSSWRGWTCDKUEAKBWEMMWDMMYAKDHLAUSPFBFFSCLCMBGLRKMAWBAHLG"
+    },
+    "C9_cell_last": {
+     "cover": 0.254,
+     "null_p99": -1.837,
+     "pass": false,
+     "real_p05": -0.92,
+     "score": -2.1,
+     "text": "RNTNEERNDDTGNNSYRSSKYNNRNNHHTARNRRERSLRNSITHRIYOOHRCSRYEDXRCEVNALLE"
+    }
+   },
+   "top": [
+    {
+     "cover": 0.545,
+     "null_p99": -1.821,
+     "pass": false,
+     "real_p05": -0.926,
+     "scheme": "C3_next_x+S11_decim61",
+     "score": -1.816,
+     "text": "TWRAAINSTAFETABUUOUAEISCPATESEAGEOREIMEDRSADLORIACLAMRVYOEUANREEYO"
+    },
+    {
+     "cover": 0.254,
+     "null_p99": -1.85,
+     "pass": false,
+     "real_p05": -0.937,
+     "scheme": "C1_nextcredit_first+S11_decim38",
+     "score": -1.85,
+     "text": "KIJEIJUWAFMTPGTDKBHMWYDJRSGKMRCPOSANANASGDDARBKHWAJWBARDKSS"
+    },
+    {
+     "cover": 0.356,
+     "null_p99": -1.85,
+     "pass": false,
+     "real_p05": -0.937,
+     "scheme": "C1_nextcredit_first+S11_decim45",
+     "score": -1.878,
+     "text": "KGYJDJIRSUKKAWRMJPPBSTRNKKNHSSWIDDEARJBGWHMFACTWOGAADDABSAM"
+    },
+    {
+     "cover": 0.339,
+     "null_p99": -1.85,
+     "pass": false,
+     "real_p05": -0.937,
+     "scheme": "C1_nextcredit_first+S11_decim21",
+     "score": -1.89,
+     "text": "KSSKDRABWJAWHKBRADDGSANANASOPCRMKGSRJDYWMHBKDTGPTMFAWUJIEJI"
+    },
+    {
+     "cover": 0.47,
+     "null_p99": -1.821,
+     "pass": false,
+     "real_p05": -0.926,
+     "scheme": "C3_next_x+S11_decim25",
+     "score": -1.926,
+     "text": "TROARSIGTIUENWEEMIAMEESOTSREURADEOSCUATAYAVCLDREPABAAONYLOREAAEUFI"
+    }
+   ]
+  }
+ }
+}
