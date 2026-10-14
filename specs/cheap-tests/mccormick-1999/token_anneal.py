@@ -34,6 +34,12 @@ per type, bMCC4's setting) and an incremental scorer (`--fast`, same objective: 
 text, checked against the full scorer by `--selftest`). Adds per-run diagnostics: token-weighted recovery, the
 pool ceiling (share of truth types whose word is in the anneal's candidate pool) and recovery on repeated
 (shared-code) types. No target run in this mode. Default behaviour without these flags is unchanged.
+
+Word-level code-word anneal (MCC-WORD, LANE DEFAULT-A2-2209-14, 14 Oct 2026): `--control-only --objective wordbigram
+--n-tokens N --seeds 1,2,3 --null [--lm heldout|insample] [--pool 1000] [--sweeps 200]` scores whole-word bigrams (top
+`--pool` words, numbers/single letters break the chain) and Gibbs-anneals each code type over the pool on the total
+log-prob scale; same control generator; reports the found total against the truth's total (search vs objective).
+PREREG and results: ciphers/mccormick-1999/PREREG-MCC-WORD.md, NOTES.md "MCC-WORD". Test: tools/tests/test_mcc_wordbigram.py.
 """
 import argparse
 import json

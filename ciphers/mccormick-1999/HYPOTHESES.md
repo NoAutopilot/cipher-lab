@@ -23,3 +23,13 @@ sweep, PREREG-MCC-SWEEP.md. CONTROL type recovery mean 0.004 / 0.002 / 0.001 / 0
 temperature on the total log-prob scale (addendum 1): type 0.008 / 0.001 / 0.001 / 0.000, token 0.037 / 0.001 / 0.030 /
 0.000. Gate 0.5 (type and token) met at no N; TARGET not run. Untestable by this instrument (as designed) at N <= 8,000;
 not too-short, not refuted. Next: a word-level code-word anneal, control first (NOTES.md MCC-SWEEP).
+
+MCC-WORD (14 Oct 2026, 22:28-22:42 UTC by date -u, account 2, LANE DEFAULT-A2-2209-14; hand-written note outside the tool
+table): token/nomenclator family, second instrument -- word-level code-word anneal (`token_anneal.py --objective
+wordbigram`: whole-word bigram LM, total-scale Gibbs anneal, code types from a 1,000-word pool), control-only sweep,
+PREREG-MCC-WORD.md (e57f59f5f). Primary arm (LM held out from the control's source): CONTROL token recovery mean 0.069 /
+0.108 / 0.104 / 0.106, type 0.020 / 0.007 / 0.003 / 0.002 at 132 / 500 / 2,000 / 8,000 tokens (3 seeds; shuffled-order
+null token max 0.060 / 0.107 / 0.042 / 0.031; token ceiling 0.64-0.79). Diagnostic arm (LM in-sample): token 0.063 /
+0.095 / 0.096 / 0.086, null max 0.129 / 0.109 / 0.101 / 0.092. Found total > truth total on all 24 runs: the objective's
+optimum is not the truth (search not the limit). Read gate (token >= 0.5 and above null max) met at no N; TARGET not
+run. Untestable by this instrument at N <= 8,000; not too-short, not refuted.

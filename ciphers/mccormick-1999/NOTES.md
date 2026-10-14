@@ -654,3 +654,53 @@ Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 
 - [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
 - [x] retry: MCC-SWEEP ran the token anneal's control length sweep (132-8,000 x 3 seeds, prereg and total-scale temperature): reads at no N; masc/homophonic not retried (shuffle floor is the limit, not the setting)
 Verdict: keep going: 1 internal gaps; cheapest next: word-level code-word anneal control sweep (132-8,000 tokens x 3 seeds, no target run unless the control reads at 132), ~$3
+
+## MCC-WORD: word-level code-word anneal, control sweep (14 Oct 2026, 22:25-22:4x UTC by date -u; disk/CPU only)
+Worker MCC-WORD (account 2, LANE DEFAULT-A2-2209-14). Prior work: `tools/prior_work.py mccormick-1999 --item-spec
+'shelfmark=FBI notes;sender=McCormick' --step-type decode --offline` exit 4 (LEAD = this job's own claim, recorded CLEAR in
+prior-work.tsv; other rows CLEAR from MCC-SWEEP 11 Oct, two UNCHECKED-NET generic rows not reached offline). Check 1: grep
+of this NOTES.md, HYPOTHESES.md and NEAR.md for a word-level anneal -- only MCC-SWEEP's proposal, never run. No host requests.
+- Instrument: `specs/cheap-tests/mccormick-1999/token_anneal.py --control-only --objective wordbigram` (option added, default
+  path unchanged; offline test `tools/tests/test_mcc_wordbigram.py` OK). Whole-word bigram LM (Jelinek-Mercer 0.8, top
+  1,000 words + UNK + boundary; numbers and single letters break the chain), heat-bath annealing on the total log-prob
+  scale (T 3.0 -> 0.05, 200 sweeps + greedy, 2 restarts), code types drawn from the 1,000-word pool. Control generator
+  bMCC4's, unchanged. Null: code-token order shuffled. PREREG-MCC-WORD.md (e57f59f5f) pushed before any seed 1-3 score.
+  Results: `families/word/control_n*.json` (primary, LM held out: tools/data/en/ Pride, Gatsby, Huck Finn) and
+  `families/word/control_insample_n*.json` (diagnostic, LM includes the control's own Holmes + Moby-Dick).
+
+| N tokens | token recovery mean (seeds) | null token max | type recovery mean | token ceiling | read? |
+|---|---|---|---|---|---|
+| 132 | 0.069 (0.086/0.026/0.095) | 0.060 | 0.020 | 0.68 | no |
+| 500 | 0.108 (0.107/0.109/0.109) | 0.107 | 0.007 | 0.68 | no |
+| 2,000 | 0.104 (0.101/0.112/0.099) | 0.042 | 0.003 | 0.72 | no |
+| 8,000 | 0.106 (0.108/0.099/0.110) | 0.031 | 0.002 | 0.72 | no |
+| in-sample LM, 132 / 500 / 2,000 / 8,000 | 0.063 / 0.095 / 0.096 / 0.086 | 0.129 / 0.109 / 0.101 / 0.092 | 0.013-0.001 | 0.74-0.76 | no |
+
+- Search vs objective: on all 24 runs the found assignment scores higher than the truth under the same LM (e.g. 132:
+  -369 vs -475; 8,000: -23,584 vs -29,465), so the search reaches the objective's optimum region and that optimum is not
+  the text. Token recovery sits at about 0.10 at every length (the common function words), clearing the order-shuffled
+  null at 2,000-8,000 but nowhere near 0.5; repeated-type recovery 0.03-0.15. Why: about 90% of the scheme's code types
+  are one-occurrence placeholders, and a context-only objective (character 4-grams in bMCC4/MCC-SWEEP, whole-word bigrams
+  here) has no evidence about a singleton except its neighbours, which are themselves unknown codes. Length adds tokens,
+  not constraints per singleton.
+- Result (PREREG wording): reads at no N <= 8,000 in either arm, so the word-level code-word anneal is **untestable by
+  this instrument at N <= 8,000** -- not too-short, not refuted; no target run. The token/nomenclator family now has two
+  context-only instruments (char-4-gram, word-bigram) failing their own controls for the same structural reason. The
+  genuinely different instrument is one that uses the code's own letters as evidence: an abbreviation / consonant-
+  skeleton constrained code-word model (each code may stand only for words whose skeleton or abbreviation it matches,
+  e.g. WLD -> would; control from an abbreviated held-out stream). Status unchanged: open.
+
+## Remaining gaps (MCC-WORD, 14 Oct 2026)
+Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 rate the proposed ones
+- a reading of the two notes - blocker: no-key-material; cheap tests 2-5 above are the logged families, and the Cipher Mysteries thread (all 163 comments, D2-PRINT4) adds no key, crib or new ciphertext
+- the token/nomenclator family at the target's 132 tokens (char-4-gram anneal and word-bigram anneal both untestable at N <= 8,000: MCC-SWEEP, MCC-WORD) - blocker: not-attempted; context-only objectives cannot identify one-occurrence codes; next: an abbreviation/consonant-skeleton constrained code-word model (code letters as evidence, control from an abbreviated held-out stream, control first), ~$3
+
+## Escalation (MCC-WORD, 14 Oct 2026)
+- [n/a] siblings: no other note by the same writer is known in public (Leads, Web and blog check)
+- [n/a] clear-pages: no clear text by the writer to align is public
+- [n/a] known-keys: no key of any kind is known for these notes
+- [x] print: Web and blog check (2 Oct) and the full Cipher Mysteries thread (D2-PRINT4); no accepted reading in print
+- [ ] key-rebuild: cheap tests 2-4 logged; char-4-gram token anneal (MCC-SWEEP) and word-bigram code-word anneal (MCC-WORD) both untestable at N <= 8,000; untried instrument: an abbreviation/consonant-skeleton constrained code-word model (~$3, control first; the Gregg-lexicon variant needs a corpus not on disk, ~USD 6)
+- [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
+- [x] retry: MCC-SWEEP ran the token anneal's control length sweep (132-8,000 x 3 seeds): reads at no N; masc/homophonic not retried (shuffle floor is the limit, not the setting)
+Verdict: keep going: 1 internal gaps; cheapest next: abbreviation/consonant-skeleton constrained code-word model, control sweep first (132-8,000 tokens x 3 seeds), ~$3
