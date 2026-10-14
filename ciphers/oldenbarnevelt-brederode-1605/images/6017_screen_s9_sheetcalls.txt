@@ -1,0 +1,91 @@
+# OBRED-6017E sheet calls, written before the key is opened. Calls: CIPHER / PLAIN-COVER / PS (numeral block under signature) / scan:<content>; numeral_code_block yes/no/look
+1A scan: faint offset/show-through left, near-blank right with a few lines; no
+1B scan: Dutch prose over two pages, no signature; no
+1C PS
+1D scan: faint text left with signature, near-blank right; no
+1E scan: Dutch letter ending, signed, dateline Heidelberg ? Oct 1617; no
+1F scan: address leaf (folded, sideways) left, Dutch prose with paragraph initials right; no
+1G PLAIN-COVER
+1H scan: address leaf (upside-down) left, Dutch prose with paragraph initials right; no
+1I CIPHER
+2A PLAIN-COVER
+2B scan: Dutch prose over two pages, no signature; no
+2C scan: address leaf with red seal left, Dutch letter opening right, docket "? Oct 1617"; no
+2D scan: Dutch prose over two pages; no
+2E scan: Dutch prose left, letter end signed right, dateline Heidelberg ? Oct 1617, docket "? Oct 1617"; no
+2F scan: Dutch prose over two pages; no
+2G CIPHER
+2H scan: address leaf (sideways) left, Dutch letter opening right, docket "? Oct 1617"; no
+2I PS
+3A PS
+3B PLAIN-COVER
+3C scan: faint show-through, near-blank both pages; no
+3D scan: Dutch letter end signed P. Brederode with paraph, Heidelberg 21 Oct 1617; no
+3E scan: Dutch letter end signed P. Brederode, Heidelberg ? Oct 1617, blank right; no
+3F CIPHER
+3G scan: Dutch letter end signed P. Brederode, dated ? Oct 1617; no
+3H scan: address leaf with red seal left, Dutch letter opening right, docket "26 Oct 1617"; no
+3I scan: Dutch prose over two pages, docket "? Oct 1617"; no
+4A scan: address leaf with red seal left, Dutch letter opening right, docket "? Nov 1617"; no
+4B scan: address leaf (sideways) left, Dutch letter opening right, docket "31 Oct 1617"; no
+4C scan: Dutch letter end signed, Heidelberg ? Oct 1617, blank right with folio number; no
+4D scan: Dutch prose over two pages; no
+4E PS
+4F scan: Dutch prose over two pages; no
+4G PLAIN-COVER
+4H scan: Dutch prose over two pages; no
+4I CIPHER
+5A scan: Dutch prose over two pages with paragraph initials; no
+5B scan: Dutch prose over two pages, a Latin phrase line at top right; no
+5C PS
+5D scan: Dutch letter end signed P. Brederode with paraph, Heidelberg ? Nov 1617; no
+5E scan: Dutch letter end signed P. Brederode with paraph, Heidelberg 17 Nov 1617; no
+5F scan: blank opening, faint show-through; no
+5G PLAIN-COVER
+5H scan: address leaf with red seal (upside-down) left, Dutch letter opening right, docket "? Nov 1617"; no
+5I CIPHER
+6A scan: Dutch prose left, letter end signed P. Brederode with paraph right, Heidelberg ? Nov 1617; no
+6B CIPHER
+6C scan: Dutch prose over two pages; no
+6D PS
+6E scan: Dutch prose over two pages, a few Latin lines at right; no
+6F scan: address leaf with red seal (sideways) left, Dutch letter opening right, docket "? Nov / ? Dec 1617"; no
+6G scan: address leaf with red seal left, Dutch letter opening right, docket "? Dec 1617"; no
+6H scan: blank opening, faint show-through; no
+6I PLAIN-COVER
+7A CIPHER
+7B PS
+7C scan: Dutch prose over two pages; no
+7D scan: Italian prose (avviso/copy) over two pages, prose only; no
+7E scan: address leaf with red seal (sideways) left, Dutch letter opening right, docket "? Dec 1617"; no
+7F scan: address leaf (sideways) left, Dutch letter opening right, docket "? Dec 1617"; no
+7G PLAIN-COVER
+7H scan: Dutch prose left, Italian prose right (copy/avviso), prose only; no
+7I scan: blank opening, faint show-through; no
+8A CIPHER
+8B scan: address/cover leaf (sideways) left, French letter "Magnifiques Seigneurs ..." right; no
+8C scan: Dutch letter end signed P. Brederode with paraph, Heidelberg ? Dec 1617; no
+8D PS
+8E scan: dorse with docket (sideways) left, French letter "Magnifiques Seigneurs ..." right (Swiss-cantons address); no
+8F scan: French prose over two pages (continued); no
+8G scan: French prose over two pages ("Les Seigneurs des ligues Grises ..."); no
+8H scan: dorse with docket left, Italian prose right ("... l'Amb. di Spagna ..."); no
+8I PLAIN-COVER
+9A scan: Latin document over two pages (Grisons/Raetian treaty text, capital-letter headings, marginal item labels), prose only; no
+9B scan: dorse with docket (sideways) left, Latin letter opening right; no
+9C scan: blank opening, faint show-through; no
+9D scan: Latin prose with capital-letter heading (Grey Leagues), prose only; no
+9E CIPHER
+9F scan: folded leaf left, Dutch letter opening right with pasted-in slip of Dutch minute text, docket "22 Dec 1617"; no
+9G scan: dorse with docket left, heavily corrected Dutch draft (minute) right; no
+9H PS
+9I PLAIN-COVER
+10A scan: Dutch prose over two pages with paragraph initials; no
+10B scan: address leaf with red seal (sideways) left, Dutch letter opening right, docket "30 Dec 1617"; no
+10C scan: Dutch letter end signed, Heidelberg 30 Dec 1617, blank right; no
+10D PLAIN-COVER
+10E scan: Dutch prose left, letter end signed right, Heidelberg ? Dec 1617; no
+10F scan: Dutch prose over two pages; no
+10G PS
+10H CIPHER
+10I scan: single address leaf with red seal and colour/grey card (end of volume?); no

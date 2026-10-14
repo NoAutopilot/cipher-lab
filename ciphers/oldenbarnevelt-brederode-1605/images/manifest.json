@@ -3167,5 +3167,433 @@
     "sha1": "677ccf5c215c672bf4e1de7018279e081abef284"
    }
   ]
+ },
+ "obred_6017e": {
+  "job": "OBRED-6017E, 14 Oct 2026 11:0x-11:2x UTC, account 4",
+  "tracked": "no image file committed (lane rule); regenerate with screen_tools/regen_6017e.sh",
+  "route": "METS b060ccbc-a7f8-4174-a34f-c25e5ff9e526 via screen_tools/na_fetch.py, IIIF /full/700,/0/default.jpg",
+  "sheets": "10 contact sheets, seed 6497, key images/6017_screen_s9_sheetkey.json",
+  "files": [
+   {
+    "inv": "6017",
+    "scan": 497,
+    "width": 700,
+    "bytes": 50904,
+    "sha1": "94544f657d977ac58b00423f3cd3b94f800b788d"
+   },
+   {
+    "inv": "6017",
+    "scan": 498,
+    "width": 700,
+    "bytes": 67054,
+    "sha1": "2792e03bcc7e9765a758ecde70df2d14d58a4d96"
+   },
+   {
+    "inv": "6017",
+    "scan": 500,
+    "width": 700,
+    "bytes": 29620,
+    "sha1": "477d1d906d023a64cf39150ed69fa0c0bcb2767c"
+   },
+   {
+    "inv": "6017",
+    "scan": 501,
+    "width": 700,
+    "bytes": 53163,
+    "sha1": "463e3ccb731f18601aa178bb20833cc8f05b0dfa"
+   },
+   {
+    "inv": "6017",
+    "scan": 503,
+    "width": 700,
+    "bytes": 64772,
+    "sha1": "bb561ac42027ef29dd3592ea824d15f772b89f2d"
+   },
+   {
+    "inv": "6017",
+    "scan": 504,
+    "width": 700,
+    "bytes": 30229,
+    "sha1": "2838783b94e6bbd81cd0b4a1a39d2f9eb33a4fba"
+   },
+   {
+    "inv": "6017",
+    "scan": 506,
+    "width": 700,
+    "bytes": 66172,
+    "sha1": "0d1f15132f8f5815eca3812434446d82ff170301"
+   },
+   {
+    "inv": "6017",
+    "scan": 507,
+    "width": 700,
+    "bytes": 64647,
+    "sha1": "166a3047b8e269c4fc3ff343fca171e233bfc8b1"
+   },
+   {
+    "inv": "6017",
+    "scan": 509,
+    "width": 700,
+    "bytes": 56341,
+    "sha1": "e879d0a7d694f09caaa28febcbda994ced735b90"
+   },
+   {
+    "inv": "6017",
+    "scan": 510,
+    "width": 700,
+    "bytes": 68315,
+    "sha1": "e6fde1f3f6fd89d628d7c7f0a503f470c0a38639"
+   },
+   {
+    "inv": "6017",
+    "scan": 512,
+    "width": 700,
+    "bytes": 55191,
+    "sha1": "49e4e741c999113fdb338136172b578341626772"
+   },
+   {
+    "inv": "6017",
+    "scan": 513,
+    "width": 700,
+    "bytes": 52290,
+    "sha1": "5e0e3d22f2d6dd1e036f4825cb21ab1d9d107089"
+   },
+   {
+    "inv": "6017",
+    "scan": 515,
+    "width": 700,
+    "bytes": 55773,
+    "sha1": "e42001616c32f1639b55e67f720d63e4407a055e"
+   },
+   {
+    "inv": "6017",
+    "scan": 516,
+    "width": 700,
+    "bytes": 29022,
+    "sha1": "55c70edaec8f7bcf2088206c545bb683e6de013a"
+   },
+   {
+    "inv": "6017",
+    "scan": 518,
+    "width": 700,
+    "bytes": 65221,
+    "sha1": "599880cdba9e0e0b17b456c30e51cd950f1a7907"
+   },
+   {
+    "inv": "6017",
+    "scan": 519,
+    "width": 700,
+    "bytes": 56318,
+    "sha1": "269fd5cc88ba024115af9522d79d76d783d84f6e"
+   },
+   {
+    "inv": "6017",
+    "scan": 521,
+    "width": 700,
+    "bytes": 49065,
+    "sha1": "6c90ce119dbd5b1f75cb78b84bf16630de469336"
+   },
+   {
+    "inv": "6017",
+    "scan": 522,
+    "width": 700,
+    "bytes": 39252,
+    "sha1": "2fdb206a86ae446e663f418d525cbe1f7287e12f"
+   },
+   {
+    "inv": "6017",
+    "scan": 524,
+    "width": 700,
+    "bytes": 66229,
+    "sha1": "2b1d00f1e1e0af17c2d2f31264910a76bb6bd771"
+   },
+   {
+    "inv": "6017",
+    "scan": 525,
+    "width": 700,
+    "bytes": 65101,
+    "sha1": "138c36bce1d68d9a87a19306db5cae4e29ddc579"
+   },
+   {
+    "inv": "6017",
+    "scan": 527,
+    "width": 700,
+    "bytes": 51034,
+    "sha1": "5f86ce2314f30ce14c2646f4960b50ef909ea779"
+   },
+   {
+    "inv": "6017",
+    "scan": 528,
+    "width": 700,
+    "bytes": 68711,
+    "sha1": "5b4abe6b65c7f1da3c8fd0b9f32a327f54b64784"
+   },
+   {
+    "inv": "6017",
+    "scan": 530,
+    "width": 700,
+    "bytes": 45020,
+    "sha1": "0b840252cbab20f8286c98de2fbb7f5e5a7da920"
+   },
+   {
+    "inv": "6017",
+    "scan": 531,
+    "width": 700,
+    "bytes": 49768,
+    "sha1": "280c66345a13283f9341dae8c55253c4e0817d0b"
+   },
+   {
+    "inv": "6017",
+    "scan": 533,
+    "width": 700,
+    "bytes": 62093,
+    "sha1": "ed1093a7a911208102b2b55f0bb290ae814f8c81"
+   },
+   {
+    "inv": "6017",
+    "scan": 534,
+    "width": 700,
+    "bytes": 28492,
+    "sha1": "80abb959e63aef3a8827f9d0d0f00586474c5b01"
+   },
+   {
+    "inv": "6017",
+    "scan": 536,
+    "width": 700,
+    "bytes": 62053,
+    "sha1": "e48e14aaf6f737f57135059182c7fdf1b7d0b7dc"
+   },
+   {
+    "inv": "6017",
+    "scan": 537,
+    "width": 700,
+    "bytes": 60107,
+    "sha1": "d7d7e61b8de2761700a41240e5ef8b53b5f5eeb5"
+   },
+   {
+    "inv": "6017",
+    "scan": 539,
+    "width": 700,
+    "bytes": 50442,
+    "sha1": "2fa189061677148822061ae18b87af32a81e2836"
+   },
+   {
+    "inv": "6017",
+    "scan": 540,
+    "width": 700,
+    "bytes": 53683,
+    "sha1": "8e3d935a646d61aa271d938d732350a5e7ca7c2c"
+   },
+   {
+    "inv": "6017",
+    "scan": 542,
+    "width": 700,
+    "bytes": 68033,
+    "sha1": "956ec7c68681df17fde2bdc544b5fb44ad83f5f2"
+   },
+   {
+    "inv": "6017",
+    "scan": 543,
+    "width": 700,
+    "bytes": 54343,
+    "sha1": "5350acd1897e0ebb89d6cad24fe35f8e7ca00bc0"
+   },
+   {
+    "inv": "6017",
+    "scan": 545,
+    "width": 700,
+    "bytes": 53290,
+    "sha1": "5634c116209ad52a546aae23606505e0faaa99a5"
+   },
+   {
+    "inv": "6017",
+    "scan": 546,
+    "width": 700,
+    "bytes": 71712,
+    "sha1": "6b1a779cb259a3a3305eee889fc9ca243333df29"
+   },
+   {
+    "inv": "6017",
+    "scan": 548,
+    "width": 700,
+    "bytes": 26840,
+    "sha1": "c5cda0202261174309e143025dbee84b586f17b0"
+   },
+   {
+    "inv": "6017",
+    "scan": 549,
+    "width": 700,
+    "bytes": 45573,
+    "sha1": "71e8350e4d5717e481ed91538cf0390d4bdc17b4"
+   },
+   {
+    "inv": "6017",
+    "scan": 551,
+    "width": 700,
+    "bytes": 53506,
+    "sha1": "d3fbe160132f71a3ecce5bef8bb4ab0dde1636f6"
+   },
+   {
+    "inv": "6017",
+    "scan": 552,
+    "width": 700,
+    "bytes": 52662,
+    "sha1": "d8d11dbb8217f4310b7bf95ee8f62b8007a984a6"
+   },
+   {
+    "inv": "6017",
+    "scan": 554,
+    "width": 700,
+    "bytes": 25956,
+    "sha1": "8821df3411c95263b53ad8ff0d1b4502feb993b2"
+   },
+   {
+    "inv": "6017",
+    "scan": 555,
+    "width": 700,
+    "bytes": 49303,
+    "sha1": "939065674b8d001b3ad2987cedb4ee911de291f1"
+   },
+   {
+    "inv": "6017",
+    "scan": 557,
+    "width": 700,
+    "bytes": 49977,
+    "sha1": "38f3310c3cd9c88cb937f24bb6aac2752ba36706"
+   },
+   {
+    "inv": "6017",
+    "scan": 558,
+    "width": 700,
+    "bytes": 62939,
+    "sha1": "bf32a1f4f08dc58a5e810fcf09929ef44a88e4c1"
+   },
+   {
+    "inv": "6017",
+    "scan": 560,
+    "width": 700,
+    "bytes": 49157,
+    "sha1": "99cab4ed4ce685f789358fdf6bfa076a86f240ac"
+   },
+   {
+    "inv": "6017",
+    "scan": 561,
+    "width": 700,
+    "bytes": 50427,
+    "sha1": "281c54cc3642cdb984a962947a6961ebb83d2016"
+   },
+   {
+    "inv": "6017",
+    "scan": 563,
+    "width": 700,
+    "bytes": 45039,
+    "sha1": "2c380f6422ac70b567dd128ec50f4e0571462f7b"
+   },
+   {
+    "inv": "6017",
+    "scan": 564,
+    "width": 700,
+    "bytes": 58425,
+    "sha1": "93408e908bcee038d7130d8cf1be0cb6755d9dd3"
+   },
+   {
+    "inv": "6017",
+    "scan": 566,
+    "width": 700,
+    "bytes": 50228,
+    "sha1": "978de3dfa23f3f487e3e23df2766a905685a3b0d"
+   },
+   {
+    "inv": "6017",
+    "scan": 567,
+    "width": 700,
+    "bytes": 42895,
+    "sha1": "561a6b4866f68ced763953edf12e26dfb1a9126b"
+   },
+   {
+    "inv": "6017",
+    "scan": 569,
+    "width": 700,
+    "bytes": 44929,
+    "sha1": "a5df5d9819d00b4b4bba15a82ced2d0390cc47df"
+   },
+   {
+    "inv": "6017",
+    "scan": 570,
+    "width": 700,
+    "bytes": 57043,
+    "sha1": "bebe4d9e2a05675c5f9db09a1edec18ab1f2a0c4"
+   },
+   {
+    "inv": "6017",
+    "scan": 572,
+    "width": 700,
+    "bytes": 49944,
+    "sha1": "814d90c3e207d2e87d42a061196778c44dd13e8c"
+   },
+   {
+    "inv": "6017",
+    "scan": 573,
+    "width": 700,
+    "bytes": 43179,
+    "sha1": "de9647b6e68a9f931fc922368cbad63d49ef4aa3"
+   },
+   {
+    "inv": "6017",
+    "scan": 575,
+    "width": 700,
+    "bytes": 26809,
+    "sha1": "851c295e32299b9919d19c06fbda2d53eacbb4a6"
+   },
+   {
+    "inv": "6017",
+    "scan": 576,
+    "width": 700,
+    "bytes": 44067,
+    "sha1": "dbdca7b94497468665a3926792f3447808b5cafa"
+   },
+   {
+    "inv": "6017",
+    "scan": 578,
+    "width": 700,
+    "bytes": 67863,
+    "sha1": "9917f43bba16bfcabbd2e03c3ad41ba7a5f5d48b"
+   },
+   {
+    "inv": "6017",
+    "scan": 579,
+    "width": 700,
+    "bytes": 57011,
+    "sha1": "5758588d844526e20c4c5ef523c931ab4ec692f3"
+   },
+   {
+    "inv": "6017",
+    "scan": 581,
+    "width": 700,
+    "bytes": 46533,
+    "sha1": "6e0cb4a7ba1a20fef038ffd7089cd1d067e98193"
+   },
+   {
+    "inv": "6017",
+    "scan": 582,
+    "width": 700,
+    "bytes": 61958,
+    "sha1": "0c4000d0ebc2006f10da30c1cc1295a53140711f"
+   },
+   {
+    "inv": "6017",
+    "scan": 584,
+    "width": 700,
+    "bytes": 35653,
+    "sha1": "c98fac4b8a5e49d64169087daec5a3302563d9cc"
+   },
+   {
+    "inv": "6017",
+    "scan": 585,
+    "width": 700,
+    "bytes": 49612,
+    "sha1": "cd60b41c256c8045df05983dfb589f30abfb0ed5"
+   }
+  ]
  }
 }

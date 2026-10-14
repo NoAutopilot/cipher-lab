@@ -1,0 +1,61 @@
+scan	sheet	tile	content	numeral_code_block
+497	1	H	address leaf (upside-down) left, Dutch prose with paragraph initials right	no
+498	1	B	Dutch prose over two pages, no signature	no
+500	1	A	faint offset/show-through left, near-blank right with a few lines	no
+501	1	F	address leaf (folded, sideways) left, Dutch prose with paragraph initials right	no
+503	1	E	Dutch letter ending, signed, dateline Heidelberg ? Oct 1617	no
+504	1	D	faint text left with signature, near-blank right	no
+506	2	D	Dutch prose over two pages	no
+507	2	F	Dutch prose over two pages	no
+509	2	H	address leaf (sideways) left, Dutch letter opening right, docket "? Oct 1617"	no
+510	2	B	Dutch prose over two pages, no signature	no
+512	2	E	Dutch prose left, letter end signed right, dateline Heidelberg ? Oct 1617, docket "? Oct 1617"	no
+513	2	C	address leaf with red seal left, Dutch letter opening right, docket "? Oct 1617"	no
+515	3	G	Dutch letter end signed P. Brederode, dated ? Oct 1617	no
+516	3	C	faint show-through, near-blank both pages	no
+518	3	I	Dutch prose over two pages, docket "? Oct 1617"	no
+519	3	D	Dutch letter end signed P. Brederode with paraph, Heidelberg 21 Oct 1617	no
+521	3	H	address leaf with red seal left, Dutch letter opening right, docket "26 Oct 1617"	no
+522	3	E	Dutch letter end signed P. Brederode, Heidelberg ? Oct 1617, blank right	no
+524	4	D	Dutch prose over two pages	no
+525	4	F	Dutch prose over two pages	no
+527	4	B	address leaf (sideways) left, Dutch letter opening right, docket "31 Oct 1617"	no
+528	4	H	Dutch prose over two pages	no
+530	4	C	Dutch letter end signed, Heidelberg ? Oct 1617, blank right with folio number	no
+531	4	A	address leaf with red seal left, Dutch letter opening right, docket "? Nov 1617"	no
+533	5	D	Dutch letter end signed P. Brederode with paraph, Heidelberg ? Nov 1617	no
+534	5	F	blank opening, faint show-through	no
+536	5	B	Dutch prose over two pages, a Latin phrase line at top right	no
+537	5	A	Dutch prose over two pages with paragraph initials	no
+539	5	H	address leaf with red seal (upside-down) left, Dutch letter opening right, docket "? Nov 1617"	no
+540	5	E	Dutch letter end signed P. Brederode with paraph, Heidelberg 17 Nov 1617	no
+542	6	C	Dutch prose over two pages	no
+543	6	A	Dutch prose left, letter end signed P. Brederode with paraph right, Heidelberg ? Nov 1617	no
+545	6	F	address leaf with red seal (sideways) left, Dutch letter opening right, docket "? Nov / ? Dec 1617"	no
+546	6	E	Dutch prose over two pages, a few Latin lines at right	no
+548	6	H	blank opening, faint show-through	no
+549	6	G	address leaf with red seal left, Dutch letter opening right, docket "? Dec 1617"	no
+551	7	H	Dutch prose left, Italian prose right (copy/avviso), prose only	no
+552	7	D	Italian prose (avviso/copy) over two pages, prose only	no
+554	7	I	blank opening, faint show-through	no
+555	7	F	address leaf (sideways) left, Dutch letter opening right, docket "? Dec 1617"	no
+557	7	E	address leaf with red seal (sideways) left, Dutch letter opening right, docket "? Dec 1617"	no
+558	7	C	Dutch prose over two pages	no
+560	8	C	Dutch letter end signed P. Brederode with paraph, Heidelberg ? Dec 1617	no
+561	8	B	address/cover leaf (sideways) left, French letter "Magnifiques Seigneurs ..." right	no
+563	8	E	dorse with docket (sideways) left, French letter "Magnifiques Seigneurs ..." right (Swiss-cantons address)	no
+564	8	G	French prose over two pages ("Les Seigneurs des ligues Grises ...")	no
+566	8	F	French prose over two pages (continued)	no
+567	8	H	dorse with docket left, Italian prose right ("... l'Amb. di Spagna ...")	no
+569	9	B	dorse with docket (sideways) left, Latin letter opening right	no
+570	9	A	Latin document over two pages (Grisons/Raetian treaty text, capital-letter headings, marginal item labels), prose only	no
+572	9	D	Latin prose with capital-letter heading (Grey Leagues), prose only	no
+573	9	G	dorse with docket left, heavily corrected Dutch draft (minute) right	no
+575	9	C	blank opening, faint show-through	no
+576	9	F	folded leaf left, Dutch letter opening right with pasted-in slip of Dutch minute text, docket "22 Dec 1617"	no
+578	10	F	Dutch prose over two pages	no
+579	10	E	Dutch prose left, letter end signed right, Heidelberg ? Dec 1617	no
+581	10	B	address leaf with red seal (sideways) left, Dutch letter opening right, docket "30 Dec 1617"	no
+582	10	A	Dutch prose over two pages with paragraph initials	no
+584	10	C	Dutch letter end signed, Heidelberg 30 Dec 1617, blank right	no
+585	10	I	single address leaf with red seal and colour/grey card (end of volume?)	no
