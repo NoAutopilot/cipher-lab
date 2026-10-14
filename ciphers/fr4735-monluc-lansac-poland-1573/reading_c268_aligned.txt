@@ -1,0 +1,7 @@
+# c268 (f.138) cipher lines 1-5 (pass A base, K38 relabel), decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py (MONL-ALIGN, 14 Oct 2026).
+# Grades: C = table letter equals the clear letter of ff.140r-141r (clear_f140.tsv) it faces in align_c268.py; fills of unkeyed signs from exceptions_c268.tsv; M otherwise (conf M token, contradiction, or facing an unsure clear word). C 92, M 85
+L01	l e s p e r u i t e u r s d e lempereur q u i n p e s p a r g n e n t l h o n
+L02	e u r l a r a c e l a r e p u t a t i o n n i l a c o n p c i e n c e n u
+L03	p o p l o n f a i t p a r l e r l e r o p n e d a l n e l a r c q u i n
+L04	u p e n p n i n l a i s e t n o n e a t a e n t e a d r e q u i l e s t
+L05	e e o p i l a t i r e n t n e l a y n e x onc l u p i o n q q i l

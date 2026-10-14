@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """MONL-ALIGN (14 Oct 2026): align the c268 (f.138) cipher lines 1-5 against the reconciled clear text of ff.140r-141r.
 
-Usage: python3 align_c268.py [--draws 200] [--seed 140] [--check]
+Usage: python3 align_c268.py [--draws 200] [--seed 140] [--check] [--clear passes/align/f140r_passA.tsv]
 
 Inputs: ciphertext_c268.tsv (pass A base, K38 relabel; the transcription as committed), key.tsv (Tomokiyo's published Monluc
 Cipher 1 table), clear_f140.tsv (MONL-ALIGN reconciled clear text of ff.140r-141r; a word in [..] is unsure, still used).
@@ -13,13 +13,23 @@ a clear letter no token takes costs -2 (an omission); an unkeyed sign (?...) or 
 extra / fill. Statistic: confirm share of keyed tokens (confirmed / keyed).
 Controls (rule 3; each can move the statistic): (1) shuffled clear: the clear letter's words dealt in random order, the same
 alignment, --draws times; (2) a clear text of a different letter: f.139 (c270_text.txt), the letter's clear continuation.
-Writes align_c268.tsv (per token) and results_align_c268.json; --check exits 1 when either is stale (rule 7).
+Writes align_c268.tsv (per token), results_align_c268.json, votes_c268.tsv and exceptions_c268.tsv (decode.json job c268); --check exits 1 when either is stale (rule 7).
 """
 import argparse, json, random, re, sys, unicodedata
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 MAXCHUNK = 14
+# unkeyed signs the clear text fills (MONL-ALIGN): C where the chunk is the same at every occurrence of the sign or a
+# whole clear word; M where the chunk boundary is set by the alignment alone. Asserted against the alignment on each run.
+FILLS = {
+    ('L01', 16): ('lempereur', 'C', 'W:mihil + W:Cur = lempereur (clear f.140r L07), name pair; letters on mihil'),
+    ('L01', 17): ('NULL', 'C', 'second word of the lempereur pair'),
+    ('L02', 8): ('c', 'C', 'h_bar = c (3/3 occurrences in L01-L05)'), ('L02', 34): ('c', 'C', 'h_bar = c (3/3 occurrences in L01-L05)'),
+    ('L03', 32): ('c', 'C', 'h_bar = c (3/3 occurrences in L01-L05)'),
+    ('L02', 26): ('c', 'C', 'double_slash = c in conscience'), ('L02', 30): ('c', 'C', 'double_slash = c in conscience'),
+    ('L05', 22): ('onc', 'M', 'double_slash in conclusion; chunk boundary set by the alignment'),
+}
 
 
 def fold(s):
@@ -43,14 +53,17 @@ def load_tokens():
     return toks
 
 
+CLEAR = 'clear_f140.tsv'
+
+
 def load_clear():
     words = []
-    for l in list(open(HERE / 'clear_f140.tsv', encoding='utf-8'))[1:]:
+    for l in list(open(HERE / CLEAR, encoding='utf-8'))[1:]:
         f = l.rstrip('\n').split('\t')
         for w in f[2].split():
             fw = fold(w)
             if fw:
-                words.append((f[0], f[1], fw))
+                words.append((f[0], f[1], fw, w.startswith('[') and not w.startswith('[?')))
     return words
 
 
@@ -95,10 +108,11 @@ def align(toks, clear):
     return score, path, (path[0][1] if path else 0), end
 
 
-def classify(toks, clear, path):
+def classify(toks, clear, path, unsure=None):
     out = []
     for ti, a, b in path:
         t, chunk = toks[ti], clear[a:b]
+        uns = bool(unsure and any(unsure[a:b]))
         if t['value'] is None:
             kind = 'fill' if chunk else 'fill-empty'
         elif not chunk:
@@ -107,7 +121,7 @@ def classify(toks, clear, path):
             kind = 'confirm'
         else:
             kind = 'contradict'
-        out.append({**t, 'clear': chunk, 'kind': kind, 'cpos': a})
+        out.append({**t, 'clear': chunk, 'kind': kind, 'cpos': a, 'unsure': uns})
     return out
 
 
@@ -122,8 +136,9 @@ def run(draws, seed):
     toks = load_tokens()
     words = load_clear()
     clear = ''.join(w[2] for w in words)
+    unsure = [w[3] for w in words for _ in w[2]]
     score, path, a, b = align(toks, clear)
-    rows = classify(toks, clear, path)
+    rows = classify(toks, clear, path, unsure)
     real = stats(rows)
     rng = random.Random(seed)
     ws = [w[2] for w in words]
@@ -138,7 +153,7 @@ def run(draws, seed):
     other = stats(classify(toks, c270, p))
     # map the aligned clear span back to its page/line
     pos, spans = 0, []
-    for pg, ln, w in words:
+    for pg, ln, w, _u in words:
         if pos + len(w) > a and pos < b:
             spans.append(f'{pg}:{ln}')
         pos += len(w)
@@ -152,9 +167,21 @@ def run(draws, seed):
                      if r['value'] is None],
            'contradictions': [{'line': r['line'], 'pos': r['pos'], 'sign': r['sign'], 'conf': r['conf'],
                                'table': r['value'], 'clear': r['clear']} for r in rows if r['kind'] == 'contradict']}
-    tsv = 'line\tpos\tsign\tconf\ttable\tclear\tkind\n' + ''.join(
-        f"{r['line']}\t{r['pos']}\t{r['sign']}\t{r['conf']}\t{r['value'] or ''}\t{r['clear']}\t{r['kind']}\n" for r in rows)
-    return tsv, json.dumps(res, indent=1, ensure_ascii=False) + '\n'
+    res['real']['facing_unsure_clear'] = sum(r['unsure'] for r in rows)
+    tsv = 'line\tpos\tsign\tconf\ttable\tclear\tkind\tclear_unsure\n' + ''.join(
+        f"{r['line']}\t{r['pos']}\t{r['sign']}\t{r['conf']}\t{r['value'] or ''}\t{r['clear']}\t{r['kind']}\t{int(r['unsure'])}\n"
+        for r in rows)
+    # decode_key.py inputs (decode.json job c268): a vote is the clear letter a keyed token faces, only where that letter
+    # comes from a word the reconciled clear reads without brackets; a fill is an unkeyed sign's chunk (FILLS below).
+    votes = 'line\tpos\tvalue\n' + ''.join(f"{r['line']}\t{r['pos']}\t{r['clear']}\n" for r in rows
+                                         if r['value'] is not None and len(r['clear']) == 1 and not r['unsure'])
+    exc = 'line\tpos\tvalue\tgrade\tnote\n'
+    for r in rows:
+        if CLEAR == 'clear_f140.tsv' and r['value'] is None and (r['line'], r['pos']) in FILLS:
+            v, g, note = FILLS[(r['line'], r['pos'])]
+            assert r['clear'] == v.replace('NULL', '') or g == 'M', (r['line'], r['pos'], r['clear'], v)
+            exc += f"{r['line']}\t{r['pos']}\t{v}\t{g}\t{note}\n"
+    return tsv, json.dumps(res, indent=1, ensure_ascii=False) + '\n', votes, exc
 
 
 def main():
@@ -162,13 +189,19 @@ def main():
     ap.add_argument('--draws', type=int, default=200)
     ap.add_argument('--seed', type=int, default=140)
     ap.add_argument('--check', action='store_true')
+    ap.add_argument('--clear', help='sensitivity run: another clear TSV (e.g. a single blind pass); prints, writes nothing')
     a = ap.parse_args()
-    tsv, js = run(a.draws, a.seed)
-    ft, fj = HERE / 'align_c268.tsv', HERE / 'results_align_c268.json'
+    global CLEAR
+    if a.clear:
+        CLEAR = a.clear
+        print(run(a.draws, a.seed)[1]); return
+    outs = dict(zip(['align_c268.tsv', 'results_align_c268.json', 'votes_c268.tsv', 'exceptions_c268.tsv'], run(a.draws, a.seed)))
     if a.check:
-        ok = ft.exists() and fj.exists() and ft.read_text(encoding='utf-8') == tsv and fj.read_text(encoding='utf-8') == js
+        ok = all((HERE / f).exists() and (HERE / f).read_text(encoding='utf-8') == t for f, t in outs.items())
         print('align_c268: OK' if ok else 'align_c268: STALE'); sys.exit(0 if ok else 1)
-    ft.write_text(tsv, encoding='utf-8'); fj.write_text(js, encoding='utf-8')
+    for f, t in outs.items():
+        (HERE / f).write_text(t, encoding='utf-8')
+    js = outs['results_align_c268.json']
     print(js)
 
 

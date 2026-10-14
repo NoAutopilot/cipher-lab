@@ -1,0 +1,307 @@
+{
+ "real": {
+  "keyed": 169,
+  "confirm": 136,
+  "contradict": 28,
+  "extra": 5,
+  "confirm_share": 0.8047,
+  "facing_unsure_clear": 20
+ },
+ "score": 208.3,
+ "clear_span": [
+  "f.140r:L07",
+  "f.140r:L10"
+ ],
+ "clear_letters": 2816,
+ "shuffled_clear": {
+  "draws": 200,
+  "seed": 140,
+  "mean": 0.4018,
+  "p95": 0.432,
+  "max": 0.4556,
+  "ge_real": 0
+ },
+ "other_letter_c270": {
+  "keyed": 169,
+  "confirm": 64,
+  "contradict": 78,
+  "extra": 27,
+  "confirm_share": 0.3787
+ },
+ "fills": [
+  {
+   "line": "L01",
+   "pos": 16,
+   "sign": "W:mihil",
+   "clear": "lempereur"
+  },
+  {
+   "line": "L01",
+   "pos": 17,
+   "sign": "W:Cur",
+   "clear": ""
+  },
+  {
+   "line": "L02",
+   "pos": 8,
+   "sign": "?h_bar",
+   "clear": "c"
+  },
+  {
+   "line": "L02",
+   "pos": 26,
+   "sign": "?double_slash",
+   "clear": "c"
+  },
+  {
+   "line": "L02",
+   "pos": 30,
+   "sign": "?double_slash",
+   "clear": "c"
+  },
+  {
+   "line": "L02",
+   "pos": 34,
+   "sign": "?h_bar",
+   "clear": "c"
+  },
+  {
+   "line": "L03",
+   "pos": 32,
+   "sign": "?h_bar",
+   "clear": "c"
+  },
+  {
+   "line": "L05",
+   "pos": 22,
+   "sign": "?double_slash",
+   "clear": "onc"
+  }
+ ],
+ "contradictions": [
+  {
+   "line": "L01",
+   "pos": 5,
+   "sign": "K05",
+   "conf": "H",
+   "table": "e",
+   "clear": "u"
+  },
+  {
+   "line": "L01",
+   "pos": 22,
+   "sign": "K34",
+   "conf": "H",
+   "table": "p",
+   "clear": "y"
+  },
+  {
+   "line": "L02",
+   "pos": 6,
+   "sign": "K36",
+   "conf": "H",
+   "table": "r",
+   "clear": "f"
+  },
+  {
+   "line": "L02",
+   "pos": 23,
+   "sign": "K29",
+   "conf": "H",
+   "table": "i",
+   "clear": "y"
+  },
+  {
+   "line": "L02",
+   "pos": 29,
+   "sign": "K14",
+   "conf": "H",
+   "table": "p",
+   "clear": "s"
+  },
+  {
+   "line": "L02",
+   "pos": 36,
+   "sign": "K12",
+   "conf": "H",
+   "table": "n",
+   "clear": "d"
+  },
+  {
+   "line": "L03",
+   "pos": 1,
+   "sign": "K14",
+   "conf": "H",
+   "table": "p",
+   "clear": "r"
+  },
+  {
+   "line": "L03",
+   "pos": 3,
+   "sign": "K34",
+   "conf": "H",
+   "table": "p",
+   "clear": "y"
+  },
+  {
+   "line": "L03",
+   "pos": 21,
+   "sign": "K34",
+   "conf": "M",
+   "table": "p",
+   "clear": "y"
+  },
+  {
+   "line": "L03",
+   "pos": 22,
+   "sign": "K12",
+   "conf": "M",
+   "table": "n",
+   "clear": "d"
+  },
+  {
+   "line": "L03",
+   "pos": 26,
+   "sign": "K62",
+   "conf": "M",
+   "table": "l",
+   "clear": "n"
+  },
+  {
+   "line": "L03",
+   "pos": 29,
+   "sign": "K62",
+   "conf": "M",
+   "table": "l",
+   "clear": "m"
+  },
+  {
+   "line": "L04",
+   "pos": 1,
+   "sign": "K19",
+   "conf": "H",
+   "table": "u",
+   "clear": "y"
+  },
+  {
+   "line": "L04",
+   "pos": 5,
+   "sign": "K14",
+   "conf": "H",
+   "table": "p",
+   "clear": "s"
+  },
+  {
+   "line": "L04",
+   "pos": 6,
+   "sign": "K12",
+   "conf": "H",
+   "table": "n",
+   "clear": "a"
+  },
+  {
+   "line": "L04",
+   "pos": 8,
+   "sign": "K12",
+   "conf": "H",
+   "table": "n",
+   "clear": "a"
+  },
+  {
+   "line": "L04",
+   "pos": 9,
+   "sign": "K62",
+   "conf": "H",
+   "table": "l",
+   "clear": "m"
+  },
+  {
+   "line": "L04",
+   "pos": 15,
+   "sign": "K12",
+   "conf": "H",
+   "table": "n",
+   "clear": "d"
+  },
+  {
+   "line": "L04",
+   "pos": 23,
+   "sign": "K12",
+   "conf": "H",
+   "table": "n",
+   "clear": "t"
+  },
+  {
+   "line": "L04",
+   "pos": 26,
+   "sign": "K22",
+   "conf": "M",
+   "table": "a",
+   "clear": "n"
+  },
+  {
+   "line": "L05",
+   "pos": 2,
+   "sign": "K05",
+   "conf": "H",
+   "table": "e",
+   "clear": "c"
+  },
+  {
+   "line": "L05",
+   "pos": 4,
+   "sign": "K34",
+   "conf": "H",
+   "table": "p",
+   "clear": "s"
+  },
+  {
+   "line": "L05",
+   "pos": 7,
+   "sign": "K41",
+   "conf": "H",
+   "table": "a",
+   "clear": "z"
+  },
+  {
+   "line": "L05",
+   "pos": 14,
+   "sign": "K12",
+   "conf": "H",
+   "table": "n",
+   "clear": "d"
+  },
+  {
+   "line": "L05",
+   "pos": 18,
+   "sign": "K40",
+   "conf": "H",
+   "table": "y",
+   "clear": "u"
+  },
+  {
+   "line": "L05",
+   "pos": 21,
+   "sign": "K20",
+   "conf": "M",
+   "table": "x",
+   "clear": "c"
+  },
+  {
+   "line": "L05",
+   "pos": 25,
+   "sign": "K14",
+   "conf": "H",
+   "table": "p",
+   "clear": "s"
+  },
+  {
+   "line": "L05",
+   "pos": 30,
+   "sign": "K15",
+   "conf": "M",
+   "table": "q",
+   "clear": "u"
+  }
+ ]
+}

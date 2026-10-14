@@ -716,3 +716,88 @@ Read so far: unmeasured as a reading; f.86 150 tokens C 83 / M 64 / U 3 against 
 - [x] image-check: c268 lines 1-5 look-alike window re-read (MONL-LOOK); f.86 curl sort (MONLUC-CURL); f.140r lines 5-12 at 1600 px (MONL-140)
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 3 internal gaps; cheapest next: transcribe ff.140r-141r (two blind passes + reconciliation) and align c268 against it, ~$9
+
+## MONL-ALIGN: ff.140r-141r transcribed and c268 lines 1-5 aligned against it (14 Oct 2026, account 4, Opus, for LANE DEFAULT-A4-0935-14)
+
+Brief: .claude/briefs/runs/2026-10-14-acct4-default-0935-jobs.md, MONL-ALIGN (Wave 3). Read MONL-140 first (above). No print or
+edition search was run: whether this clear letter is printed (Noailles, a Monluc or Lansac edition, Lettres de Catherine de Medicis)
+is **not searched** in this job.
+
+**Route and crops.** openapi.bnf.fr IIIF v3, `btv1b9060724s`, c272 = f.140r, c273 = f.140v, c274 = f.141r (MONL-140's map). 10 requests,
+all HTTP 200 (3 info.json, 3 overviews at 1400 px, 4 native text regions, one c273 re-fetch to take in the last line). Line crops by
+`tools/iiif_lines.py --iiif-host openapi --deskew-region --mask-neighbours` (the hand slopes about -2 to -3 deg; without deskew the
+row profile found 27 of 30 lines on f.140r): f.140r 31 bands (30 lines + a blank), f.140v 26, f.141r 11, two segments each, 136
+crops. All untracked (`images/scratchalign/`, self-ignoring .gitignore); manifest key `monlalign` in images/manifest.json;
+`regen_monlalign.sh` re-derives every image and crop.
+
+**Transcription (units: 6 blind Sonnet passes, one per page per pass, line crops only, + 1 reconciliation by this worker).**
+passes/align/{f140r,f140v,f141r}_pass{A,B}.tsv. The passes are weak on this hand: word agreement A vs B (sequence match on folded
+words) f.140r 265/409 = 0.648, f.140v 145/287 = 0.505, f.141r 88/135 = 0.652; both readers called their own pass low confidence
+(18-123 bracketed words a page). Agreement, not accuracy. Reconciled clear text: `clear_f140.tsv` (68 lines; `how` column).
+- f.140r L06-L10 (the lines facing c268): read by this worker's own eye from the line crops (`how` = eye). **Not blind**: I had read
+  MONL-140's table and reading_c268.txt before reading these lines, so the three words I settled partly by context are bracketed
+  ([poursuiteurs], [honneur], [encores]) and every token facing a bracketed letter gets no vote (below).
+- Every other line: picked word by word from passes A and B by this worker without an image re-read (`how` = A/B); [?] where
+  neither pass gave a plausible word. These lines are a rough clear text, good enough to locate the cipher span, not a reading.
+- Content (from the reconciled text, unsure words aside): f.140r L01-L06 opens "Madame, nous sommes venuz du point ou se retrouuent
+  les plaideurs quand le proces est sur le bureau ...", then L07-L10 "Les poursuiteurs de lempereur qui ny espargnent honneur, la face,
+  la reputaon ny la conscience du roy. Lon faict parler le Roy de dannemarc qui ny pensa jamais, et donne a attendre quil est mort.
+  Encores ilz tirent de la une conclusion quil est impossible que monseigneur sceust venir pardeca"; f.140v carries Balagny, "esleu Roy",
+  the jewels, and after "Madame" a postscript "Depuis ceste lettre escripte jauoys eu lalarme du palatin de Sendomierz ..."; f.141r
+  Lasqui (Laski), Sendomierz, ending "auec vne grande sedition (Ce que je spere naduiendra pas". No date or signature on the leaves.
+
+**Alignment (`align_c268.py`, `--check` for rule 7).** I did not use `tools/interlinear_align.py`: its modes take numeral groups
+(`align`) or a separate symbol stream with free per-symbol meanings (`stream`), whereas the question here is how a fixed published
+table's letters sit against the clear text. align_c268.py is one dynamic-programming alignment of the whole c268 token stream
+(ciphertext_c268.tsv, 177 tokens, pass A base with the K38 relabel) against a free local span of the whole 2,816-letter clear letter:
+keyed token = one clear letter (+2 equal / -1 differs) or none (-2); a clear letter with no token -2; an unkeyed sign (?h_bar,
+?double_slash) or W: word token takes 0-14 clear letters.
+- **Where it lands:** f.140r L07-L10 (five c268 lines onto four clear lines). MONL-140's by-eye match is confirmed, and its l.6-11
+  narrows to L07-L10. f.140r L01-L06 precede the c268 span, so they should face the end of c264 (f.136), which is not transcribed; not
+  aligned here.
+- **Statistic: share of keyed tokens whose table letter equals the clear letter they face.** Real 136/169 = **0.805** (contradict 28,
+  extra 5). Controls: (1) shuffled clear (the letter's words in random order, same alignment, 200 draws, seed 140): mean 0.402, p95
+  0.432, max 0.456, 0/200 at or above the real share; (2) a different clear letter, f.139 (c270_text.txt): 0.379. **Blindness check:**
+  the same alignment against single blind pass A alone gives 0.615 and against pass B alone 0.621 (shuffled-clear max 0.468 / 0.438), both
+  landing on f.140r L07-L10. So the location and the match do not depend on my non-blind reconciliation; the higher figure (0.805) does in
+  part. The control can fail differently from the target: a wrong clear text moves the share, which (2) shows.
+- **Tokens the clear text confirms under the current key (C):** 90 keyed tokens graded C through `decode_key.py --check`. These are tokens
+  that read conf H, face their own table letter, and face a clear word read without brackets. Another 46 confirmations stay M: 33 are conf
+  M tokens (an A/B split) and 13 face a bracketed clear word.
+- **Tokens it contradicts:** 28 (21 conf H, 7 conf M), graded M. Three signs recur and are leads for an image check, not key edits:
+  **K12** (table n) faces d at L02:36, L03:22, L04:15, L05:14 (each word-initial: "du", "de", "donne", "de la"), plus a/t in the
+  L04 "pensa jamais ... a attendre" stretch where the alignment is loose; **K34** (table p) faces y at L01:22, L03:3, L03:21 ("ny", "roy",
+  "ny"); **K14** (table p) faces s at L02:29, L04:5, L05:25 ("conscience", "pensa", "conclusion"). Each could be a pass A cell-id slip
+  (look-alike cells) or a table reading error in the published key; the c268 image decides. The other contradictions are single, mostly
+  in L04-L05 where the decode is weakest.
+- **Name/code groups it fills (exceptions_c268.tsv):** W:mihil + W:Cur (L01:16-17) = "lempereur" (the clear "de lempereur qui"), graded
+  C as a pair (mihil carries the word, Cur null). ?h_bar = c at all 3 occurrences (L02:8 "face", L02:34 "conscience", L03:32
+  "dannemarc"), and ?double_slash = c twice in "conscience" (L02:26, L02:30). These 5 are graded M only because their tokens are conf M
+  (uncertain_conf). The value is C-shaped; the sign identity is not settled. ?double_slash at L05:22 takes "onc" in "conclusion" (M:
+  the chunk boundary is set by the alignment alone).
+- **Grades (decode_key.py, job c268 in decode.json):** c268 lines 1-5, 177 tokens: **C 92 / M 85** (C = 90 confirmed keyed + the
+  lempereur pair). `reading_c268_aligned.txt`, `reading_tokens_c268.tsv`; `python3 ../../tools/decode_key.py . --check` -> "reading up to
+  date" (exit 0); `python3 align_c268.py --check` -> "align_c268: OK". score_c268.py's reading_c268.txt and its outputs are untouched.
+- What this does not show: the remaining ~870 signs of c268, all of c264, and whether the clear text is a decipherment or the
+  original draft. A judge run on the aligned reading was not done (the clear text, not the judge, is the evidence here).
+Requests: openapi.bnf.fr 10, all 200. Subagents: 6 Sonnet transcription calls. No key.tsv edit.
+
+## Remaining gaps (MONL-ALIGN, 14 Oct 2026)
+Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines 1-5 (177 tokens) C 92 / M 85 against the ff.140r-141r clear text (align confirm 0.805 vs shuffled-clear max 0.456); rest of c268 and all of c264 not transcribed.
+- rest of c268 (about 870 signs) and c264 against the ff.140r-141r clear text - blocker: not-attempted; the alignment now locates c268 L01-L05 at f.140r L07-L10, so c268 L06 on should run from f.140r L10 and c264's end should face f.140r L01-L06; next: two blind cipher passes of the next c268 band plus reconciliation, then align_c268.py on the longer stream, ~$3 per 5-10 lines
+- the recurring contradictions K12=d, K34=y, K14=s - blocker: not-attempted; found in this job, whose brief ran no image re-check of the cipher; next: an image check of the 10 positions (pass A cell id vs the table cell, crops of c268 L01-L05 already on disk by regen) and decode_key.py --try on any value that survives, ~$1.5
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py); the c268 alignment above now supplies known plaintext, so a judge is no longer the only check on this key
+- a clean clear text of ff.140r-141r away from the c268 span - blocker: not-attempted; the A/B passes agree 0.51-0.65 word for word, and only f.140r L06-L10 was read by eye; next: an eye reconciliation of f.140r L01-L05 (to face c264) and of the rest as the cipher alignment reaches it, ~$1 per page
+- print check of the clear letter (Noailles vols I-III, Lettres de Catherine de Medicis) - blocker: not-attempted; outside this job's brief (a lookup noted as not searched); next: phrase search of "poursuiteurs de lempereur" / "Roy de dannemarc qui ny pensa" in the IA OCR with tools/print_check.py, ~$1
+- ff.211-223, f.87 margin, ff.50/56/60/80, items 17/18/112-120 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONL-ALIGN, 14 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [x] clear-pages: ff.140r-141r transcribed (two blind passes + reconciliation, MONL-ALIGN) and shown to be the clear text of c268 L01-L05 (0.805 vs shuffled-clear max 0.456)
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell (MONLUC-KEY) and now checked against known plaintext on c268 L01-L05 (90 C, 28 contradictions)
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2, no Monluc decipherment found; the clear letter itself not phrase-searched (gap above)
+- [ ] key-rebuild: the c268 alignment fills h_bar = c, double_slash = c, mihil+Cur = lempereur; recurring K12/K34/K14 contradictions not yet image-checked (gap above)
+- [x] image-check: c268 lines 1-5 look-alike window re-read (MONL-LOOK); f.140r L06-L10 read by eye from native line crops (MONL-ALIGN)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 5 internal gaps; cheapest next: image-check the 10 K12/K34/K14 contradiction positions on c268 L01-L05 and --try the survivors, ~$1.5; then the next c268 band against f.140r L10 on
+partial

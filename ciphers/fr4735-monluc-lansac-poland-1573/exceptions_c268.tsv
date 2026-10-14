@@ -1,0 +1,9 @@
+line	pos	value	grade	note
+L01	16	lempereur	C	W:mihil + W:Cur = lempereur (clear f.140r L07), name pair; letters on mihil
+L01	17	NULL	C	second word of the lempereur pair
+L02	8	c	C	h_bar = c (3/3 occurrences in L01-L05)
+L02	26	c	C	double_slash = c in conscience
+L02	30	c	C	double_slash = c in conscience
+L02	34	c	C	h_bar = c (3/3 occurrences in L01-L05)
+L03	32	c	C	h_bar = c (3/3 occurrences in L01-L05)
+L05	22	onc	M	double_slash in conclusion; chunk boundary set by the alignment
