@@ -109,3 +109,70 @@ Verdict: keep going: 1 internal gap; cheapest next: known-keys check of Cerioni 
 gallica.bnf.fr: 5 overview canvases at 1400 px (c9-c13), 2 info.json, 4 native regions (c9, c10, c11, c12) = 11, one at a
 time, >= 2 s apart, no errors. archive.org: 4 (advancedsearch 2, download 1 `_djvu.txt`); be-api.us.archive.org: 1;
 googleapis.com/books: 2. No other host.
+
+## SFZ-KEYS (14 Oct 2026, account 4, LANE DEFAULT-A4-0935-14): known-keys check, Cerioni 1970 and the ASMi cipher series
+Job: find any printed or digitised key of 1447 (or 1440s Visconti) and, if a table is readable, count sign-stock overlap with f.5/f.8/f.15.
+No decode. Sources, one line each (route, query, result), 14 Oct 2026 09:48-09:59 UTC:
+- **Internet Archive** (advancedsearch): `creator:(Cerioni)` 21 hits, none the book; `title:(diplomazia sforzesca)` 0;
+  `title:(cifrari) AND (milano OR sforza OR visconti)` 0. **Cerioni 1970 is not on IA.** Meister, *Die Geheimschrift im Dienste der
+  päpstlichen Kurie* (1906), IA `diegeheimschrift00meis`, `_djvu.txt` downloaded once and grepped (Mailand/Visconti/Sforza/1446/1447):
+  p. 22 states that the Visconti cipher of the late 14th century is not known ("daß wir die Geheimschrift der Visconti aus dieser Zeit
+  nicht kennen"); no Visconti key of the 1440s printed there. Meister 1902 (*Die Anfänge der modernen diplomatischen Geheimschrift*):
+  no IA copy found by title search.
+- **Google Books API** (key, country=US): Cerioni 1970 = volume `EncKAQAAIAAJ`, NO_PAGES (snippet search only). Snippets seen: vol. I has a
+  biographical index of Sforza agents (e.g. "PUSTERLA Baldassarre ... alla morte di Filippo Maria parteggia..."; "FIGINO Lancellotto ...
+  presso lo Sforza già nel 1447"); a passage on "cifrari che sono stati riuniti ... [corrispondenza con] Filippo Maria Visconti, con i
+  rappresentanti del conte presso di lui"; key entries of the form "Il cifrario comprende 154 segni, di cui 77 per l'alfabeto ... tav. 41"
+  (a 1485 key); a citation of "Manoscritti italiani 1594, f. 147" (BnF italien 1594) and "1594, f. 126t" as key/letter sources. No
+  snippet gives a 1446-47 Visconti key table. Google Books answered HTTP 503 on 9 of 16 calls (each retried once after 20 s); stopped
+  there per the good-citizen rule. Rivista delle biblioteche e degli archivi 1903/1904 (`7he1XZKjGJcC`, full view) shows a "cifrario"
+  snippet next to Filippo Maria Visconti: not opened (a later follow-up, see below).
+- **OpenAlex** (key): `Visconti cifrari` 10 hits and `Sforza cipher Visconti Milan fifteenth` 9 hits; nothing on a 1440s Visconti key
+  ("Crittografia: tra successi e fallimenti", 2019, doi 10.54103/2531-5994/31106, is a general survey, not opened). Semantic Scholar not
+  run (key_livecheck: 429 at 09:48 UTC).
+- **HathiTrust bibliographic/HTRC EF**: not reached. No HathiTrust record number for Cerioni 1970 was found (web search, 1 query);
+  openlibrary.org (to get an OCLC number) reset the connection twice and was left alone.
+- **ASMi online inventory** (archiviodistatomilano.cultura.gov.it, "Carteggio Visconteo-Sforzesco. Potenze sovrane e altre voci", PDF,
+  258 pp., 1,811,078 bytes, sha1 a47f1c92bb4f5b847429fe9d0eb285c41abbe54c, fetched once, not committed; URL
+  https://archiviodistatomilano.cultura.gov.it/fileadmin/risorse/Patrimonio_archivistico/Fondi_e_Inventari/Visconteo-Sforzesco__1183-1593_/Potenze_sovrane_e_altre_voci-VS_2-1.pdf),
+  serie 13 "Cancelleria segreta. Chiavi e cifrari", 1447-1736, pp. 215-217, studied by Cerioni. **scat. 1597** (1447-1486, 194 docs) is
+  the relevant unit: it holds "cifra degli oratori di Milano al re d'Aragona, pergamena di mm 270x210, 1447" and doc. n° 78 "Documenti
+  diplomatici. Repubblica Ambrosiana. 1447... Cifre". (Compare f.18 of italien 1584: instruction to the Duke's ambassadors to Aragon,
+  s.d., SFZ-0.) scat. 1591 carries an undated key with a shirt "Decreti viscontei 1439". Not digitised: the inventory gives no image link,
+  and the archive told an outside researcher that no finer inventory of scatt. 1591/1597/1598 exists beyond Cerioni (below).
+- **Cipher Mysteries** (ciphermysteries.com/2011/06/28/milanese-enciphered-letters-call-for-help, whole page fetched once, 1,132,639 bytes,
+  comments to July 2026; SFZ-0 had read only the first 100,000 characters). Comments of 13 Apr 2023 (N. Pelling and M. Knowles): ASMi's
+  1597 set holds **two cipher keys for Filippo Maria Visconti**, "one dates from 1446 to 1447 and I think the other fits within that time
+  range"; both look like keys **reconstructed from enciphered letters** ("generated cipher keys"); a key headed "Marcolinus de Barbavarjis"
+  is "the same key as the larger Filippo Maria Visconti key"; that key "appears to have been used to communicate with then condottieri
+  Francesco Sforza"; and "in the Bibliothèque Nationale de France - Archivio Sforzesco collection ... one can see enciphered letters that
+  correspond to the more complex of the two cipher keys". Cerioni vol. I refers to these keys but vol. II (the plates) does not reproduce
+  them (Knowles, 13 Apr 2023). Knowles holds ASMi photoreproductions; they are not published on the page. Which BnF letters he matched is
+  not stated, so whether italien 1584 f.5/f.8/f.15 are among them is unknown.
+
+Result: a period key that is plausibly the Duke's 1446-47 key (or a sibling: the Barbavara key, the 1447 Aragon orators' key) is
+**located at ASMi, Carteggio Visconteo-Sforzesco, Cancelleria segreta, scat. 1597**, but no image or printed table of it is reachable from
+here, so the sign-stock overlap count was **not run** (no table to compare). Nothing here is a reading or a key value.
+Follow-ups (not run, beyond this brief): (1) a REQUEST.md / ASKS row for an ASMi photoreproduction of scat. 1597's Filippo Maria
+Visconti keys, the "Marcolinus de Barbavarjis" key and the 1447 Aragon parchment (owner-side, a copy order); (2) an outreach draft to
+the Cipher Mysteries correspondents asking which BnF letters match the larger key (the person's to send, rule 7 gates); (3) open
+Rivista delle biblioteche 1904 `7he1XZKjGJcC` (full view) at its "cifrario"/Filippo Maria snippet.
+Requests: archive.org 6 (advancedsearch 5, download 1); googleapis.com/books 16 (9 answered 503); api.openalex.org 2;
+ciphermysteries.com 2 (one Mod_Security 406, one 200); archiviodistatomilano.cultura.gov.it 1; openlibrary.org 2 (connection reset);
+WebSearch 2. Cost not visible to this session.
+
+## Remaining gaps (SFZ-KEYS, 14 Oct 2026)
+Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0.441 mean held-out, 2 units; anchored 0.422)
+- f.15 decode - blocker: waiting-on ASKS row 165 (the owner's blind sort of f.5+f.8, packet built by SFZ-SORT 13 Oct 2026, sorter/README.md); a Duke key that passes G1 is needed first; next after the sort: dateline check, sign_sorter_apply.py, then g1_duke.py / g1_duke_anchored.py unchanged, ~$2
+- period Duke key - blocker: needs-physical-access; the ASMi scat. 1597 Filippo Maria Visconti keys (one 1446-47) and the 1447 Aragon orators' parchment are not digitised and not in Cerioni vol. II (SFZ-KEYS above); a photoreproduction order is owner-side
+- f.17 blanks vs f.15 - blocker: not-attempted; whether f.15's cipher fills f.17's two blanks is unexamined; next: only after a readable key, ~$1
+
+## Escalation (SFZ-KEYS, 14 Oct 2026)
+- [x] siblings: the Duke's glossed pairs f.5/f.7 and f.8/f.10 used; f.23-24/f.26, f.30-31/f.29, f.36-37/f.35 not yet
+- [x] clear-pages: f.17 (same-day clear letter) noted as context; no copy of f.15 exists in the volume per Mazzatinti
+- [x] known-keys: SFZ-KEYS 14 Oct 2026: Cerioni 1970 snippet-only (Google Books NO_PAGES, not on IA); Duke's 1446-47 keys located at ASMi scat. 1597, not digitised; sign-stock comparison not possible
+- [ ] print: no print of f.15 located (check-solved above); verifier pass belongs to a later reading
+- [x] key-rebuild: attempted, G1 FAIL
+- [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
+- [ ] retry: G1 after the sort (anchored learner on reader A FAIL 0.422, 8 Oct), then S3 on f.15
+Verdict: keep going: 1 internal gap; cheapest next: write the ASMi scat. 1597 photoreproduction request (REQUEST.md + ASKS row) for the Filippo Maria Visconti 1446-47 keys, ~$0.5
