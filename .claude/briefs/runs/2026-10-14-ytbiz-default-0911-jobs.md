@@ -110,3 +110,6 @@ The folder's "While waiting" action: `tools/print_check.py ciphers/fr3975-vieuvi
 maire de ville", "St Aignen", 30 Sept 1587) in phrases.txt (create or extend it; keep existing lines), against IA full text, Google Books
 (country=US, key; on 503 one retry after 60 s, then log unreachable) and OpenAlex (key). Paste the summary in a dated NOTES section;
 'no hits' is a search result, never a novelty verdict. Status stays `blocked`.
+
+Wave 2 sessions (spawned 09:40 UTC): PW-FIX session_01Hf212v6xmX38n1YDCggzeK; COL26-C33 session_014jfMUt7CUyscq8Me7FDKP5;
+SALV-MAP3 session_01TbESZH67oRC4ekVXV6WsfV; F3975-PC (Sonnet) session_01G7dWAzhhEQnu8Lg4zKxxvi.
