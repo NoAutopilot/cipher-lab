@@ -1,0 +1,4 @@
+# fair-game-2010 transposition seed 1 restarts 4 14 Oct 2026 19:23 UTC; control mean 0.889 (0.000-0.985); score -189.775
+# {"best": "colK w12 order [0, 6, 5, 9, 7, 10, 8, 11, 2, 4, 3, 1]", "top5": [[-189.8, "colK w12 order [0, 6, 5, 9, 7, 10, 8, 11, 2, 4, 3, 1]"], [-197.1, "colK w11 order [1, 4, 9, 10, 5, 3, 7, 2, 6, 0, 8]"], [-200.6, "colK w10 order [5, 7, 4, 8, 0, 9, 3, 6, 2, 1]"], [-204.1, "colK w9 order [5, 2, 0, 3, 1, 6, 4, 8, 7]"], [-208.6, "colK w5 order [3, 4, 2, 1, 0]"]], "n_candidates": 462}
+ctngjepmrmereousroceandnsafewphcya
+aq?krhrifaudtworcumshouankaaowdftr

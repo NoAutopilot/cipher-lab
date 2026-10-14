@@ -379,3 +379,75 @@ Read so far: 0 of 67 marked letters read (tests 1-2, R12D-FAIR, R12D-FAIR2, D2-F
 - [x] image-check: GF4-BATCH22 reconciled all 67 visible letters against the screenshots; FAIR-CRED transcribed every marked credit row (two blind passes)
 - [x] retry: full-credit-text marker schemes (C1-C10, 90 candidates per order) run 14 Oct 2026, control 4/5 on 12 schemes, null 0/40, target 0 PASS both orders (FAIR-CRED)
 Verdict: keep going: 1 internal gap; cheapest next: columnar/route transposition family with matched control at N=67, ~$3
+
+## FAIR-TRANS: pure transposition family with matched control (account 1, LANE DEFAULT-A1-1840-14, 14 Oct 2026, 19:09-19:3x UTC)
+
+Answers FAIR-CRED's remaining gap ("columnar/route transposition family with matched control at N=67"). Disk only, no
+requests, no subagents. No shared tool carried a pure transposition family (columnar_homophonic is a transposition OF
+a substitution), so one was added as an option of the shared runner (Usage 8): `tools/families/transposition.py`,
+registered in `tools/families/__init__.py` and `tools/family_run.py --help`, offline test
+`tools/tests/test_transposition_family.py` (5 designs read back, ok). It searches keyed columnar widths 2-12 in both
+orientations (colK: rows written, keyed columns read; colKi: the inverse), exhaustive orders to width 7 and an anneal
+above, plus 462 candidates in all with every keyless route (unkeyed columnar, column boustrophedon and clockwise spiral
+at widths 2-34, rail fence 2-12), each inverted and on the reversed text; quadgram score. Whole reversal, decimation and
+two-line interleave were already run by D2-FAIR and are not repeated. Gates pre-registered before any score:
+`trans/PREREG-FAIR-TRANS.md` (commit b6a0d6b89, confirmed on origin/main before the first run).
+
+Data: GF4-BATCH22's image-checked orders (`test2/`) with the unknown restored at line 1 position 4, so the grid keeps
+its true cell count: `trans/scroll68.txt`, `trans/column68.txt` (N=68, two lines of 34; the `?` is masked in the
+control at the same cipher position); `trans/scroll67.txt`, `trans/column67.txt` with it dropped, as the earlier tests
+did (weaker: a dropped cell shifts every later grid position). Pre-registered gate deviation: none. Two fixes to the
+instrument made during the offline test, before any target score: control windows start at a word start (as a
+message does), and recovery is block6 (share of truth letters in common runs of 6+), because a colKi decode at width 9
+reads every clause correctly but in a rotated block order that the quadgram score cannot rank (strict 0.343, block6
+0.985 on the same decode); the strict measure is printed beside it in every log.
+
+| | result |
+|---|---|
+| G0 letter counts (a transposition keeps them): `trans/unigram_check.py` (`--check`), `trans/unigram.json` | target -3.160 per letter; rank 0.001 among 2000 English 67-letter word-start windows (p01 -3.090, median -2.892): below p01 |
+| G1 control, 28 designs, N=68, `?` masked (`trans/run_scroll68.log`) | mean block6 0.889 (gate 0.80 met); colK w2-8 7/7 >= 0.97, colK w9-12 1/4 (w9 0.000, w10 0.985, w11 0.441, w12 0.000), colKi w2-12 11/11 >= 0.91, routes 6/6 >= 0.94 |
+| G1b wide-width rerun, colK w9-12 only, 12 restarts x 15000 iters (`trans/run_*_w912.log`) | control 0.868 (0.985, 0.985, 0.985, 0.515) |
+| target scroll68 / column68 / scroll67 / column67 (standard search) | best colK w12 / w12 / w10 / w12, quadgram -189.8 / -190.4 / -197.8 / -197.2; judge FAIL -1.589 / -1.541 / -1.592 / -1.502 |
+| target scroll68 / column68, wide-width search | best colK w11 / w12, -185.5 / -190.8; judge FAIL -1.531 / -1.532 |
+| shuffle floor, 10 shuffles of scroll68, standard search | quadgram -200.9 to -185.6; judge -1.781 to -1.496 (all FAIL) |
+| shuffle floor, 4 shuffles, wide-width search | quadgram -192.8 to -188.4; judge -1.594 to -1.525 |
+| correctly read controls, for scale | quadgram -111 to -157 |
+
+The target's best decodes sit inside the band of its own shuffled letters on both measures (two of ten standard
+shuffles score higher on quadgrams and on the judge) and 30+ quadgram points below the weakest correctly read control.
+CLI judge on the two best scroll decodes (rule 7, pasted):
+```
+ctngjepmrmereousroceandnsafewphcyaaq?krhrifaudtworcumshouankaaowdftr   (scroll68, colK w12)
+ok   length: got=67, min=65, max=69
+FAIL language: score=-1.589, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67
+FAIL words: cover=0.403, min=0.6, real_text_median_cover=0.94
+acjgtccnountersoahupransweaoffindr?rhkrhrsqaaomuretcfwmyadwadeomkeup   (scroll68, colK w11, wide search)
+ok   length: got=67, min=65, max=69
+FAIL language: score=-1.531, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67
+FAIL words: cover=0.522, min=0.6, real_text_median_cover=0.94
+```
+
+Verdict: control-backed negative for "the 67 marks are English plaintext under a single keyed columnar (widths 2-12,
+both orientations) or one of the keyless routes listed", both orders, N=68 and N=67 (control 0.889, gate 0.80; target
+indistinguishable from its shuffle floor). Independently, the letter counts alone sit at the 0.1% tail of English
+67-letter windows (G0), which no transposition can change. Conditional on: (i) the en judge's unknown reliability
+(EN-FOLDS), though the quadgram comparison against the shuffle floor and the correctly read controls does not use the
+judge; (ii) keyed columnar at widths 9, 11 and 12 is only partly covered (control 1/4 at standard search; 3/4 at the
+wide-width search, where w12 seed 4 still read 0.515), so a key at those widths is less excluded than the rest;
+(iii) not covered: double transposition, Myszkowski, widths above 12 keyed, a transposition followed by a
+substitution, non-English plaintext. Requests: none. Subagents: none. HYPOTHESES.md rows: 4 standard, 2 wide-width,
+14 shuffle-floor rows, all `transposition`.
+
+## Remaining gaps (FAIR-TRANS, 14 Oct 2026)
+Read so far: 0 of 67 marked letters read (tests 1-2, R12D-FAIR, R12D-FAIR2, D2-FAIR, FAIR-CRED and FAIR-TRANS are negatives or non-tests)
+- non-English plaintext under the transposition and marker families - blocker: not-attempted; G0 puts the letter counts at the 0.1% tail of English, which a non-English plaintext could explain; next: G0 letter-count rank per language (fr, de, es, it corpora in tools/data) and, for any language where the target is not in the tail, `family_run.py --family transposition --langs` with one matched control per language, ~$1
+
+## Escalation (FAIR-TRANS, 14 Oct 2026)
+- [n/a] siblings: a single film-credit cryptogram with no sibling texts
+- [x] clear-pages: the credits' clear line DEMOCRACY ONLY WORKS IF YOU DO YOUR PART tested as a crib, no isomorph placement in either order
+- [n/a] known-keys: no key material exists for a film-credit puzzle
+- [x] print: web and blog sweep of 3 Oct 2026 found no published decipherment
+- [retired] key-rebuild: injective substitution by tools/families/masc_inj.py word-pattern beam, CONTROL BELOW GATE 0.576 at N=67 (R12D-FAIR2); masc anneal and masc_words already run, a third substitution instrument needs new material
+- [x] image-check: GF4-BATCH22 reconciled all 67 visible letters against the screenshots; FAIR-CRED transcribed every marked credit row (two blind passes)
+- [x] retry: pure transposition family (keyed columnar w2-12 both orientations, 462 route candidates) run 14 Oct 2026, control 0.889 (gate 0.80), target inside its shuffle floor both orders, letter counts at the 0.1% tail of English (FAIR-TRANS)
+Verdict: keep going: 1 internal gap; cheapest next: per-language letter-count rank and transposition --langs, ~$1

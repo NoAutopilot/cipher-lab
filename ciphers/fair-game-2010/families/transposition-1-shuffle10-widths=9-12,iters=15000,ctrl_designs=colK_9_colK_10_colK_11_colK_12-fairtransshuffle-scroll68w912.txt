@@ -1,0 +1,4 @@
+# fair-game-2010 transposition seed 1 restarts 12 14 Oct 2026 19:28 UTC; control mean 0.985 (0.985-0.985); score -192.829; TARGET LETTERS SHUFFLED (seed 10, false-positive floor)
+# {"best": "colK w11 order [3, 8, 4, 2, 6, 1, 10, 7, 9, 0, 5]", "top5": [[-192.8, "colK w11 order [3, 8, 4, 2, 6, 1, 10, 7, 9, 0, 5]"], [-193.0, "colK w12 order [0, 11, 3, 8, 4, 7, 5, 6, 2, 10, 1, 9]"], [-193.6, "colK w10 order [2, 5, 7, 8, 9, 0, 4, 6, 3, 1]"], [-204.9, "colK w9 order [6, 5, 1, 4, 2, 3, 8, 7, 0]"], [-210.8, "route colU w4 rev"]], "n_candidates": 448}
+hpswgecukitroytoach?asquernerofamf
+nfrowarruukcpcdmemaneanjhdoardsawt
