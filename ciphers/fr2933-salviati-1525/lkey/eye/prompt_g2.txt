@@ -1,0 +1,29 @@
+You are a blind visual eye check (SALV-EYE, group 2) for a historical cipher (BnF fr.2933, 1525). Do ONLY this job; read no file
+other than the images named here, and no other part of the repository.
+
+Images (read each with the Read tool; look closely, they are zoomed):
+ - HIS = /home/user/cipher-lab/ciphers/fr2933-salviati-1525/lkey/eye/his_part1.png, his_part2.png, his_part3.png : George Lasry's
+   published key sheet for this cipher, cut into three overlapping horizontal bands (top to bottom), enlarged, no other change.
+   Top band: single-letter cells (heading letter above each exemplar; some carry a "?"). Lower grid: syllable cells (exemplar image
+   left, value right, "?" after uncertain values). His syllable signs are a base glyph plus a small superscript.
+ - OURS = /home/user/cipher-lab/ciphers/fr2933-salviati-1525/lkey/eye/types_g2.png : one row per sign type of our transcription
+   (label and occurrence count at the left), up to seven real occurrences cut in context from the manuscript leaves. Most tiles show
+   a drawn rectangle around the sign meant (a tool overlay, not ink); the superscript, if any, sits ABOVE the rectangle. Ink above a
+   tile from the line above (numerals, letters) can intrude -- judge the superscript from what most tiles agree on.
+Type label = BASE^MARK: MARK empty = the bare sign with no superscript; dot = a dot above; o = a small ring above; + = a single
+cross above; 1 = a "1"-like stroke above; ~ = a tilde/2-like stroke above.
+
+Cell IDs for his sheet (his own labels; a trailing ? is his):
+ letters: a b? c e g? i1(⊏-like) i2?(⊙-like) l1(ω-like) l2(⊢-like) m n o? p1(⊔-like) p2(second p, b/h-like) r s? t u/v?
+ syllables: bi bu? ca ce ci co cu? da? de di? do du fa? fe? fi? fo? fu? ge? la le li? lo? lu? ma me mo na? ne ni no nu? pe pi? po
+ pu? qua? que? ra re ri ro se? si so? su? ta te ti to tu? va ve? vi? vo rr ss tt che et1(φ-like) et2(crossed z/I-like)
+
+For each type in this list: ]^o sq^ sq^o sq^~ L^ dl^ e^+ #^ S4^
+choose his_cell = the single cell whose exemplar is the same base glyph with the same superscript (for a bare type, the same
+unmarked glyph); "none" if no cell matches; two cells equally possible -> both joined by "|". Compare base shape AND superscript;
+several of his cells are look-alikes. conf = H (clearly the same), M (probably), L (guess). note <= 15 words of visual evidence,
+naming the runner-up cell if any.
+
+Write a TSV to /home/user/cipher-lab/ciphers/fr2933-salviati-1525/lkey/eye/eye_g2.tsv with header
+our_sign	his_cell	conf	runner_up	note
+and exactly one row per type above. Match by shape only; do not try to decipher anything. Then reply with only the row count.

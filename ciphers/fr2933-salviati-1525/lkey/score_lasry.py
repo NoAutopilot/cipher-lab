@@ -16,6 +16,10 @@ allkey = {r["sign"]: r for r in csv.DictReader(open(os.path.join(D, "key_lasry.t
 sets = dict(p.split("=", 1) for p in sys.argv[sys.argv.index("--set") + 1].split(",")) if "--set" in sys.argv else {}
 out = sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else None
 for s_, v_ in sets.items(): allkey[s_] = dict(allkey[s_], value=v_)
+# SALV-EYE (14 Oct 2026, PREREG-SALV-EYE.md 5): --drop SIGN[,...] removes rows in memory (the sign goes unread), with any
+# combination row SIGN|... as in map3/ablate.py; key_lasry.tsv is never written. Use with --out.
+drops = sys.argv[sys.argv.index("--drop") + 1].split(",") if "--drop" in sys.argv else []
+allkey = {s_: r_ for s_, r_ in allkey.items() if not any(s_ == d_ or s_.startswith(d_ + "|") for d_ in drops)}
 key = {s: r for s, r in allkey.items() if r["class"] != "amb"}  # ambiguous a|b rows graded M, not read (PREREG 1)
 toks = list(csv.DictReader(open(os.path.join(D, "ciphertext_lasry.tsv"), encoding="utf-8"), delimiter="\t"))
 runs, cur, prev = [], [], None   # runs of (leaf, sign)

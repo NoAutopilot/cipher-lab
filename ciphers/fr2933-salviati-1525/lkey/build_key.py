@@ -51,7 +51,19 @@ for t in csv.DictReader(open(os.path.join(D, "ciphertext_lasry.tsv"), encoding="
         got = {rows[c][0] for c in comp if c in rows}
         if all(c in rows for c in comp) and len(got) == 1 and rows[comp[0]][2] != "amb":
             rows[s] = (got.pop(), "M" if any(rows[c][1] == "M" for c in comp) else "H", rows[comp[0]][2], "combination of " + ",".join(comp))
-out = ["sign\tvalue\tgrade\tclass\tsource\tnote"] + [f"{s}\t{v}\t{g}\t{c}\tpublished\t{n}" for s, (v, g, c, n) in sorted(rows.items())]
+# SALV-EYE (14 Oct 2026, PREREG-SALV-EYE.md 3-4): a dated column eye_20261014 from lkey/eye/eye_g*.tsv -- eye-confirmed when the
+# eye's normalised value set equals the row's value exactly, eye-contested otherwise, empty for types the eye check did not cover.
+# Values, grades and rows are unchanged by it.
+E = {}
+for part in (1, 2):
+    f = os.path.join(D, "eye", f"eye_g{part}.tsv")
+    if os.path.exists(f):
+        for r in csv.DictReader(open(f, encoding="utf-8"), delimiter="\t"):
+            E[r["our_sign"].strip()] = vset(r["his_cell"].strip())
+def eye(s, v):
+    return "" if s not in E else ("eye-confirmed" if E[s] == v else "eye-contested")
+out = ["sign\tvalue\tgrade\tclass\tsource\tnote" + ("\teye_20261014" if E else "")] + \
+      [f"{s}\t{v}\t{g}\t{c}\tpublished\t{n}" + (f"\t{eye(s, v)}" if E else "") for s, (v, g, c, n) in sorted(rows.items())]
 txt = "\n".join(out) + "\n"; p = os.path.join(D, "key_lasry.tsv")
 if "--check" in sys.argv:
     sys.exit(0 if open(p, encoding="utf-8").read() == txt else 1)
