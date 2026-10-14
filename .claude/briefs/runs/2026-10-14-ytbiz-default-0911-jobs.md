@@ -72,3 +72,41 @@ numbers in the done line.
 Wave 1 sessions (spawned 09:18-09:19 UTC): VER-C1161 session_016GoR3EqtEdxzfmHoRRt2c7; BAL22-SHAPE session_019SaTMkgRiMG8k7SSuRE41q;
 BAL168-SWEEP session_011uwbJK2BBjfS7U3PXzkdfe; EST-REG session_01MRywkZ3DWozgcPvosR6STm; GB-2 session_011LgUEf4G3FrFsLQrofwrYE;
 SALV-TRY20 session_019bAX6RALYPv2Z6t4PvSQio.
+
+## Wave 2 (09:5x UTC 14 Oct)
+Wave 1 results: VER-C1161 AUDIT 3 (clair1161 N3 -> N0, status.json/NEAR updated by the lane); BAL22-SHAPE (f.22r H 4 S 5 I 2 M 13);
+EST-REG (9431 registered; vs Clair 421 0 same-code); GB-2 (Verbael located in full view, unread after 503; eckert control 503);
+SALV-TRY20 (0 of 31 accepted, --try route retired). Many `parallel` actions in next_steps are stale (already run): check 1 first.
+
+### PW-FIX (Opus, cap 3, box 60 min, disk only): tools/prior_work.py check 3 false CLEAR on a solver snapshot that names the shelfmark
+VER-C1161's ROOM flag (09:29 UTC): check 3-solver printed CLEAR for clair1161 (BnF Clairambault 1161 ff.162r-164v) although
+sources/cyphersolver/2026-10-14-lasry/clair1161/ names the shelfmark. Reproduce first (paste the command and the CLEAR row), find why the
+snapshot is not matched (cache_paths in tools/data/prior_portals.tsv, the term list, the per-target subfolder layout of the 2026-10-14-lasry
+snapshot), fix it in the tool, and add offline tests in tools/tests/test_prior_work.py: must-catch = this case (a dated Lasry snapshot
+folder naming the shelfmark -> LEAD or CONTEXT, never CLEAR); must-not-block = a same-volume different-folio snapshot (e.g. a Lasry folder
+for another item of the same volume) stays at most CONTEXT. Update the docstring's must-catch/must-not-block kinds (CLAUDE.md 8a). Run the
+full tools/tests/test_prior_work.py and paste the count. Then re-run prior_work.py on the other Lasry same-volume folders listed in
+sources/cyphersolver/2026-10-14-lasry/ours_same_volume.tsv (read-only, no --record) and list any CLEAR that now flips, in the done line.
+Not a solver job; SYSTEM.md only if a new file is added.
+
+### COL26-C33 (Opus, cap 5, box 90 min): colbert26-lathuillerie-1644, word-grain pairing of c33 for 20 = i (D2-COL26's named next)
+The folder's escalation line "word-grain pairing of c33 (9 lines) to firm 20 = i at word grain (line grain missed the gate narrowly);
+~$4.5; source: D2-COL26". Read D2-COL26, COL26-WP and COL26-11B first: the word-pairing instrument failed its instrument check twice for
+11 = le on canvases 20-21; run the same instrument check on c33 FIRST (PREREG pushed before), and if it fails, stop there and log
+"non-test at this N" -- a third failure of the same instrument check retires word pairing for this folder (rule 3 third-attempt clause).
+Units: crop step (tools/iiif_lines.py, pasted), two blind reads of the c33 gloss/cipher words (~1.2 each), reconciliation (~0.8), pairing +
+control (~0.8). Gallica IIIF only if c33 crops are not on disk (<= 20 requests, >= 2 s, browser UA). No key.tsv edit; --try for 20 = i.
+
+### SALV-MAP3 (Opus, cap 4.5, box 90 min, disk only): fr2933-salviati-1525, third blind mapping pass of the 20 disagreement types
+The folder's gap line: "a third blind mapping pass of the 20 disagreement types (and nt^, eps^7) against his key sheet, image-only ...
+next: one Opus subagent call per atlas part with the two earlier passes withheld, then decode and score_lasry.py, ~$4". Image-only, the
+earlier passes withheld from the subagent; per-type 2-of-3 majority with the earlier passes; PREREG first (what counts as a settled type,
+the score gate as SALV-LKEY: word hits and 4-gram vs the same 300 permuted keys). key_lasry.tsv updated only for 2-of-3 types, dated note;
+our key.tsv untouched. NEAR numbers before/after in the done line. If the gate still misses, the published-key step is [retired] with the
+instrument named (rule 3) -- say so in the gap line and Escalation.
+
+### F3975-PC (Sonnet, cap 1, box 30 min): fr3975-vieuville-1587, print_check on the letter's clear phrases
+The folder's "While waiting" action: `tools/print_check.py ciphers/fr3975-vieuville-1587` with the readable clear phrases ("eschevins et
+maire de ville", "St Aignen", 30 Sept 1587) in phrases.txt (create or extend it; keep existing lines), against IA full text, Google Books
+(country=US, key; on 503 one retry after 60 s, then log unreachable) and OpenAlex (key). Paste the summary in a dated NOTES section;
+'no hits' is a search result, never a novelty verdict. Status stays `blocked`.
