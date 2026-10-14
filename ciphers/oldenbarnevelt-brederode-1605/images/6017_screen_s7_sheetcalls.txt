@@ -1,0 +1,145 @@
+# OBRED-6017C sheet calls, written before the key is opened. Calls: CIPHER / PLAIN-COVER / PS (numeral block under signature) / scan:<content>; numeral_code_block yes/no/look
+1A scan: Dutch letter opening, address panel folded at left (1616?); no
+1B scan: Dutch prose continued over two pages, paragraphs; no
+1C CIPHER
+1D scan: blank opening; no
+1E PLAIN-COVER
+1F PS
+1G scan: Dutch letter signed P. Brederode, Heydelberg .. Martii 1616, postscript in prose; no
+1H scan: Dutch letter signed P. Brederode, Heydelberg 1? Martii 1616; no
+1I scan: Dutch letter signed (Brederode), Heydelberg, date 1616, flourish; no
+2A scan: blank opening; no
+2B scan: Dutch letter end signed P. Brederode, Heydelberg .. April 1616; no
+2C PS
+2D scan: Dutch letter dated (2?7 March / April 1616), address leaf with seal; no
+2E scan: Dutch letter docketed 13 Maart 1616, address leaf with seal; no
+2F scan: Dutch prose over two pages, paragraphs, no signature block; no
+2G PLAIN-COVER
+2H scan: Dutch prose over two pages; no
+2I CIPHER
+3A CIPHER
+3B scan: blank opening; no
+3C scan: Dutch letter docketed 6 May 1616 (p.27?), address leaf with seal; no
+3D scan: Dutch prose over two pages, ends short; no
+3E scan: Dutch letter docketed 14 May 1616, address leaf with seal; no
+3F PS
+3G scan: Dutch prose over two pages, dense; no
+3H PLAIN-COVER
+3I scan: Dutch prose over two pages, dense; no
+4A scan: blank opening; no
+4B PLAIN-COVER
+4C scan: Dutch prose over two pages (faint, paler ink); no
+4D scan: Dutch prose over two pages, dense; no
+4E scan: Dutch prose over two pages, ends short; no
+4F CIPHER
+4G PS
+4H scan: Dutch letter docketed 28 May / 1? June 1616, address leaf; no
+4I scan: French letter short, signed, dated (May 1616?), left margin date; no
+5A scan: Dutch letter docketed (June/July 1616), address leaf, seal; no
+5B PLAIN-COVER
+5C PS
+5D CIPHER
+5E scan: Dutch prose over two pages, dense; no
+5F scan: Dutch piece headed 'Ratenbank'(?) with itemised paragraphs (list of persons/titles), endorsement at foot (Heidelberg? July 1616); no
+5G scan: faint show-through, end of letter signed (Brederode) lower left; no
+5H scan: Dutch letter signed P. Brederode, Heydelberg 1616; no
+5I scan: Dutch letter signed P. Brederode, Heydelberg 1616; no
+6A scan: Dutch prose over two pages, pale ink; no
+6B scan: Dutch prose over two pages, paragraphs; no
+6C PLAIN-COVER
+6D scan: Dutch prose over two pages, pale ink; no
+6E scan: Dutch prose, right page only; no
+6F scan: near-blank, show-through, faint endorsement at lower left; no
+6G CIPHER
+6H PS
+6I scan: Dutch letter signed P. Brederode, Heydelberg .. 1616; no
+7A scan: Dutch letter docketed (? July 1616), address leaf with seal; no
+7B CIPHER
+7C scan: Dutch letter end signed P. Brederode, inserted slip; no
+7D scan: Dutch letter docketed (2? July 1616), address leaf with seal; no
+7E scan: Dutch letter end, subscription, left page only; no
+7F scan: near-blank with slip, faint endorsement lower left; no
+7G PLAIN-COVER
+7H PS
+7I scan: Dutch letter over two pages, subscription (unsigned at sheet size); no
+8A PLAIN-COVER
+8B scan: Dutch letter docketed (6 Aug 1616), address leaf with seal; no
+8C PS
+8D scan: Dutch letter end signed P. Brederode; no
+8E scan: Dutch letter over two pages, signed (Brederode) faint; no
+8F scan: Dutch letter end signed P. Brederode; no
+8G CIPHER
+8H scan: Dutch letter end signed P. Brederode, Heydelberg .. Augusti 1616; no
+8I scan: Dutch prose over two pages; no
+9A CIPHER
+9B scan: Dutch prose over two pages, endorsement lower left; no
+9C scan: Dutch letter end signed P. Brederode, dated (? Augusti 1616); no
+9D scan: Dutch letter docketed (27 Sept 1616), address leaf; no
+9E scan: Dutch letter docketed (17 Aug 1616), address leaf with seal; no
+9F PLAIN-COVER
+9G scan: Dutch letter end, Heydelberg .. Augusti 1616, subscription; no
+9H PS
+9I scan: Dutch prose over two pages, docket (? Sept 1616) top right, marginal name note; no
+10A scan: Dutch letter docketed (? Oct 1616), address leaf with seal; no
+10B scan: near-blank leaf, faint lines, docket top right (Oct 1616); no
+10C scan: near-blank, faint show-through notes; no
+10D CIPHER
+10E PS
+10F scan: Dutch prose over two pages, pale ink, subscription; no
+10G PLAIN-COVER
+10H scan: Dutch letter docketed (? Oct 1616), address leaf with seal; no
+10I scan: Dutch letter end signed P. Brederode, Heydelberg .. Octob. 1616; no
+11A scan: Dutch prose over two pages (long letter, Savoy/Spain content?); no
+11B scan: Dutch letter docketed (? Nov 1616), address leaf; no
+11C CIPHER
+11D scan: Dutch letter end signed P. Brederode, Heydelberg .. Novemb. 1616; no
+11E scan: Dutch prose over two pages (long letter continued); no
+11F PS
+11G scan: Dutch prose over two pages (long letter continued); no
+11H PLAIN-COVER
+11I scan: Dutch prose over two pages (long letter continued); no
+12A scan: Dutch letter docketed (15/21 Dec 1616), address leaf; no
+12B scan: French prose over two pages (copy/extract); no
+12C CIPHER
+12D scan: Latin prose over two pages (copy); no
+12E PLAIN-COVER
+12F scan: Dutch prose on right page, vertical marginal note at fold; no
+12G scan: French letter over two pages (copy), Dutch on left; no
+12H PS
+12I scan: Dutch letter end signed, Heydelberg 6 Decemb. 1616; no
+13A scan: German prose over two pages (copy); no
+13B scan: German prose over two pages (copy); no
+13C PLAIN-COVER
+13D scan: German prose over two pages (copy); no
+13E PS
+13F CIPHER
+13G scan: German piece headed '..Satzisten'(?) with address leaf and seal; no
+13H scan: German prose over two pages (copy); no
+13I scan: German piece headed 'Decretum ... Maximiliano wegen der Succession in Hungern'; no
+14A scan: Dutch letter, left page note 'Bylage van Brederode 15/21 Dec 1616', docket 15 Dec 1616; no
+14B scan: Dutch letter end, Heydelberg .. Decemb. 1616, subscription; no
+14C PS
+14D scan: Dutch piece headed (Copie/Extract? to Brederode), marginal flourish/mark at left; no
+14E CIPHER
+14F scan: Dutch piece headed 'Die Staten generael ..', with endorsement 'Brederode', dated 1616; no
+14G scan: German piece end, dated (? Martii Anno 1616/17); no
+14H scan: Dutch prose over two pages; no
+14I PLAIN-COVER
+15A PLAIN-COVER
+15B scan: Dutch prose over two pages; no
+15C CIPHER
+15D scan: drafts (minuut) with corrections, headed 'Brederode' / 'Aen ..', heavily struck; no
+15E scan: Dutch letter docketed (2? Dec 1616 / 2 Jan 1617), single leaf with blue slip; no
+15F PS
+15G scan: Dutch draft (minuut) 'Brederode', with slip 'Johan van ..', Hage 29 .. 1616; no
+15H scan: blank single leaf; no
+15I scan: damaged near-blank opening, faint text; no
+16A scan: Dutch prose over two pages; no
+16B scan: Dutch prose over two pages; no
+16C scan: Dutch letter end signed P. Brederode, Heydelberg 2? Decemb. 1616; no
+16D scan: Dutch letter end, Heydelberg 2? (Januarij 1617?), subscription; no
+16E CIPHER
+16F PLAIN-COVER
+16G scan: Dutch letter docketed (21 Dec 1616), address leaf with seal; no
+16H scan: Dutch prose over two pages; no
+16I PS
