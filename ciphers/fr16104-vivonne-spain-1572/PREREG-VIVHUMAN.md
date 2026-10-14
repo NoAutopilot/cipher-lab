@@ -102,3 +102,18 @@ off-key or unaligned rows. A pile with no members cannot be shown, so the page c
 tiles in pile 3?"). A contact sheet of every 3/z/h/k tile with its truth row (scratch only) shows the one surviving z tile (truth a) and
 the clerk-split z tiles (truth a) are themselves 3-shaped: on this hand the key's z (a) and 3 (d) signs look alike, so the attempt-1
 z pile was not only mislabelled d-signs. **Attempt 2 was not built or published**; the rule is not loosened here. Handed to the parent.
+
+## Addendum C (14 Oct 2026, 02:5x UTC by date -u; the parent's decision on the empty pile 3, written and pushed BEFORE the attempt-2 page is built)
+The parent (session_01D7XWmthshMVqxumdDvitPh, 02:5x UTC) chose the exemplar source for the look-alike piles. Replaces Addendum B rule 2
+only; rules 1, 3, 4 of Addendum B stand.
+2'. **Piles 3, z, S, k, h, L, l, s:** every member is a truth-consistent tile from ANY of the three truth leaves of this hand: f.102r
+   (`benchmark-tx/vivonne1573-f102r-dev2.truth.tsv`, map `tx/vivcls/train/map_r2_f102r.tsv`), f.103r
+   (`benchmark-tx/vivonne1573-f103r-confirm2.truth.tsv`, map `tx/vivcls/train/map_r2_f103r.tsv`) and f.201r (as Addendum B: map
+   `tx/vivcls/real/map_r2_f201r.tsv` via passA's alignment). A tile qualifies iff it is the only op-1:1 tile on its position, the
+   position's truth row has status `scored` and an EMPTY flag, and the committed label (the row's `ref_sign`) lies in the row's truth set;
+   the pile label is that `ref_sign`. The eight question tiles are never pile members. Both piles of each look-alike pair are drawn by
+   this one rule, so neither is privileged. **Each pile is capped at 12 members**, sampled with `random.Random(20261014)` from the
+   qualifying tiles in (leaf, line, position) order; a pile with fewer than 3 members is shown with what it has and named in the build
+   result below. Every other pile is f.201r's as in attempt 1.
+   f.102r and f.103r tiles are shown on their own line crops (images/c105_*, c106_* as committed in images/manifest.json, no new request);
+   f.201r tiles on the f.201r region as before. The page stays blind (labels only).
