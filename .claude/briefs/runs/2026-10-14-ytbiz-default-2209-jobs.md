@@ -125,3 +125,26 @@ action) per CLAUDE.md 8a; docstring states the scope. Run the full `next_steps.p
 class. Do not commit NEXT-STEPS.tsv unless the tool's docstring says to. (b) na-oldenbarnevelt-2442-1605 NOTES.md lines ~1699 and ~1745
 still name "(o5) verifier re-grade" as next; AUDIT 6 (V-OLD-O5, 10 Oct) ran it. Add one dated line under each pointing to AUDIT 6 and
 naming the real next step (ASKS 161 sign sort, section 26); confirm Remaining gaps / Escalation / Verdict agree; `gaps_check.py`.
+
+## Wave 3 (23:1x UTC 14 Oct)
+Wave 2 closed (ledgered): MCC-WORD 2.85 N, TUSC-XM 2.41 N (non-test), ERBA-SIB 2.27 N, NS-PARKED 2.19 D; KAL-BIG running. Common rules
+and the wave 2 preamble (grep AUDIT.md section titles too) apply. Lane spend at 23:1x about 28 of 60.
+
+### ERBA-CASE (Opus, cap 2.5, box 55 min, disk/CPU only): erba-2006, the case-sensitive letter-class variant
+NOTES.md "## Next step (ERBA-SIB, 14 Oct 2026)" (line ~278): capitalised tokens (`Ro`, `Mi`, `Pi`, `Cu`, `NE`/`Ne`) as their own classes,
+K about 13, on the same test-4b instrument at the same N (ciphertext plus ciphertext_siblings_2013.txt, conditional on the press text, rule
+2), same per-seed control gate (every seed >= 0.60). Identifiability at K about 13 must be shown by the matched control first; target and
+10 nulls only if it passes. Pre-register before scoring (as PREREG 17121b8df). Intake gate (23:1x UTC, pasted): `erba-2006: open (line 3)
+-- edition/page or full-text-search citation found within 6 lines`, exit 0. This is a different design (not a third attempt at the
+case-folded one). Rows into HYPOTHESES.md; update gaps, `gaps_check.py`.
+
+### NO70-WORDS (Opus, cap 2.5, box 60 min, disk first; openapi.bnf.fr <= 10 at >= 3 s with take/release only for a missing crop):
+fr3982-nevers-toscana-1592, transcribe the key no.70 word columns and re-screen
+NOTES.md Remaining gaps "Key no.70 nomenclator" (line ~212) and the Verdict (line ~222): only the alphabet of the no.70 key (f.131r) is
+transcribed; transcribe its word columns (crop step pasted, `tools/iiif_lines.py --image ... --out ...`; two blind passes + one
+reconciliation unit at ~1.5 each; stop before a unit that crosses 80% of cap) into the folder's keys file for no.70 (value, meaning,
+grade H-period), then re-screen f.25 with q7test/screen.py (or the BNF-Q7-SCREEN instrument) including word codes, with its power check
+at the measured transcription error (0.115, upper 0.160, BNF-Q7-ERR). A screen whose power at that error is under its gate is a non-test,
+logged so; the owner's looped-sign check (ASKS row) stays the blocker for key identification. Intake gate (23:1x UTC, pasted):
+`fr3982-nevers-toscana-1592: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0. Update gaps,
+`gaps_check.py`.
