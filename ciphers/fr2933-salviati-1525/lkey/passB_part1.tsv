@@ -1,0 +1,98 @@
+our_sign	his_cell	conf	note
+a^	none	M	his a cell is a crossed y, not cursive a
+a^1	ma	M	a with 1-stroke and dots above, as ma
+a^~	me	H	a with 2/tilde above, as me
+a^5	mo	M	a with 5 above, as mo
+a^7	none	L	no a-base cell with 7
+a^dot	ma	L	ma exemplar carries dots beside 1
+a^o	none	L	no a-base cell with ring
+e^	none	M	his e cell is n-like hook, not looped e
+e^dot	none	L	no looped-e cell with dot only
+e^#	de|do|du	M	looped e under double-barred cross: de, do, du
+e^+	da|di	M	looped e under single cross: da, di
+e^ot	none	L	no looped-e cell with ring+stroke
+e^o	none	L	no looped-e cell with ring
+g^	none	M	all 9-base cells carry a mark
+g^~	re	H	9 with 2/tilde above, as re
+g^1	ra	H	9 with 1 above, as ra
+g^dot	none	L	no 9 cell with dot only
+g^5	ro	H	9 with 5 above, as ro
+g^7	ri	M	9 with 7 above, as ri
+g^o	none	L	no 9 cell with ring
+g^#	none	L	no 9 cell with double cross
+g^ot	none	L	no 9 cell with ring+stroke
+g^+	none	L	no 9 cell with single cross
+y^	a	M	his a: crossed looped-tail y with colon
+y^dot	none	L	no y cell with dot mark
+y^1	none	L	no marked y cell
+y^5	none	L	no marked y cell
+y^~	none	L	no marked y cell
+y^7	none	L	no marked y cell
+y^#	none	L	no marked y cell
+y^ot	none	L	no marked y cell
+y^o	none	L	no marked y cell
+psi^	s?	M	his s? is forked psi-like y with tick
+psi^#	none	L	no marked psi cell
+psi^~	none	L	no marked psi cell
+psi^dot	none	L	no marked psi cell
+psi^+	none	L	no marked psi cell
+m^	none	M	m-base cells all carry superscripts
+m^~	pe	H	m with 2/tilde above, as pe
+m^1	pu?	L	pu shows 3 above m; 1 possibly misread 3
+m^5	po	H	m with 5 above, as po
+m^7	pi?	H	m with 7 above, as pi
+m^dot	none	L	no m cell with dot
+w^	r	M	r cell: w with long lead-in and tail; g? also w-like
+w^dot	none	L	no marked w cell
+w^#	none	L	no marked w cell
+w^~	none	L	no marked w cell
+w^5	none	L	no marked w cell
+w^1	none	L	no marked w cell
+wd^	l1	H	omega joined to tall right stroke, as l1
+wd^~	none	L	no marked l1 cell
+wd^#	none	L	no marked l1 cell
+v^	e	L	his e is small hooked n/v with lead-in
+v^1	none	L	no marked v cell
+v^5	none	L	no marked v cell
+v^#	none	L	no marked v cell
+v^dot	none	L	no marked v cell
+v^7	none	L	no marked v cell
+v^ot	none	L	no marked v cell
+N^	none	L	no bold N/И cell; e cell closest but smaller
+N^1	none	L	no marked N cell
+N^dot	none	L	no marked N cell
+nt^	u/v?	H	n joined to crossed stroke, as u/v
+nt^dot	none	L	no marked nt cell
+nt^~	none	L	no marked nt cell
+nt^1	none	L	no marked nt cell
+bh^	o?	M	hooked tall stem with lead-in, as o?; p2 less similar
+bh^dot	none	L	no marked o? cell
+bh^7	none	L	no marked o? cell
+bh^~	none	L	no marked o? cell
+p^	none	M	plain-script P with loop; no such cell
+p^1	none	L	no matching cell
+p^dot	none	L	no matching cell
+p^5	none	L	no matching cell
+f^	t	H	long f with crossbar and side dashes, as t
+f^dot	none	L	no marked t cell
+f^5	none	L	no marked t cell
+f^ot	none	L	no marked t cell
+ch^	none	M	c+looped h; che cell is H with 10
+S^	m	L	his m is small hooked s-like sign with dot
+S^#	none	L	no marked S cell
+S^dot	none	L	no marked S cell
+S^7	none	L	no marked S cell
+S^1	none	L	no marked S cell
+Z^	et2	M	crossed Z with dots, as second et
+Z^dot	et2	L	et2 shows dots beside crossed Z
+Z^ot	le|lo?	M	ring+stroke over ⊐-like Z base, as le/lo
+Z^#	none	L	no Z/⊐ cell with double cross
+Z^~	none	L	no Z/⊐ cell with tilde
+Z^7	none	L	no Z/⊐ cell with 7
+Z^o	la|li?|lu?	M	small ring over ⊐ base: la, li, lu
+S7^	n	H	plain 7, as letter n
+S7^#	ne|no|nu?	M	7 under double-barred cross: ne, no, nu
+S7^~	none	L	no 7 cell with tilde
+S7^+	na?|ni	M	7 with single cross: na above, ni crossing
+S7^dot	none	L	no 7 cell with dot
+S7^1	none	L	no 7 cell with 1

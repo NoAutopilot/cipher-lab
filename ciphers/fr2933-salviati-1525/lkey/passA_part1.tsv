@@ -1,0 +1,98 @@
+our_sign	his_cell	conf	note
+a^	none	L	bare bold a; his a-cell is y-like, not a
+a^1	ma	M	ma: cursive a with short upright stroke above
+a^~	me	H	me: a with 2/tilde stroke above
+a^5	mo	M	mo: a with 5-like mark above
+a^7	none	L	no a-base cell with 7 above
+a^dot	none	L	ma has dots beside, but not a dot mark
+a^o	none	L	no a-base cell with ring
+e^	none	L	looped e never shown bare on his sheet
+e^dot	none	L	no looped-e cell with dot only
+e^#	de|do|du	M	de/do/du all looped e under double-barred cross
+e^+	da?|di?	M	da?/di? looped e under single cross
+e^ot	none	L	no looped-e cell with ring+stroke
+e^o	none	L	no looped-e cell with ring
+g^	none	L	no bare 9-glyph cell
+g^~	re	H	re: 9 with tilde/2 stroke above
+g^1	ra	H	ra: 9 with 1 above
+g^dot	none	L	no 9 cell with plain dot
+g^5	ro	H	ro: 9 with 5 above
+g^7	ri	M	ri: 9 with 7-like mark above
+g^o	none	L	no 9 cell with ring
+g^#	none	L	no 9 cell with double cross
+g^ot	none	L	no 9 cell with ring+stroke
+g^+	none	L	no 9 cell with single cross
+y^	a	M	his a exemplar: looped-tail y followed by colon
+y^dot	none	L	no marked y cell
+y^1	none	L	no marked y cell
+y^5	none	L	no marked y cell
+y^~	none	L	no marked y cell
+y^7	none	L	no marked y cell
+y^#	none	L	no marked y cell
+y^ot	none	L	no marked y cell
+y^o	none	L	no marked y cell
+psi^	s?	M	s?: forked psi-like y with straight tail
+psi^#	none	L	no marked psi cell
+psi^~	none	L	no marked psi cell
+psi^dot	none	L	no marked psi cell
+psi^+	none	L	no marked psi cell
+m^	none	L	his m-cell is small 3/z hook, not cursive m
+m^~	pe	H	pe: cursive m under tilde/2
+m^1	none	L	m cells carry 2,7,5,3 only
+m^5	po	H	po: cursive m with 5 above
+m^7	pi?	H	pi?: cursive m with 7 above
+m^dot	none	L	no cursive m with dot
+w^	r	H	r: w with long lead-in stroke from left
+w^dot	none	L	no marked w cell
+w^#	none	L	no marked w cell
+w^~	none	L	no marked w cell
+w^5	none	L	no marked w cell
+w^1	none	L	no marked w cell
+wd^	l1	H	l1: omega joined to tall right stroke
+wd^~	none	L	no marked omega-stroke cell
+wd^#	none	L	no marked omega-stroke cell
+v^	e	L	his e: small hooked squiggle, possibly our curved v
+v^1	none	L	no hooked-v cell with marks
+v^5	none	L	no hooked-v cell with marks
+v^#	none	L	no hooked-v cell with marks
+v^dot	none	L	no hooked-v cell with marks
+v^7	none	L	no hooked-v cell with marks
+v^ot	none	L	no hooked-v cell with marks
+N^	none	L	no bold И glyph on his sheet
+N^1	none	L	no bold И glyph on his sheet
+N^dot	none	L	no bold И glyph on his sheet
+nt^	u/v?	H	u/v?: n joined to crossed stroke, n+
+nt^dot	none	L	no marked n+ cell
+nt^~	none	L	no marked n+ cell
+nt^1	none	L	no marked n+ cell
+bh^	p2|b?	M	tall stem small hook; p2 b/h-like, b? similar
+bh^dot	bi	L	bi: b-like stem with mark above
+bh^7	none	L	no b/h cell with 7
+bh^~	none	L	no b/h cell with tilde
+p^	none	L	our looped crossed p resembles no cell (p1 is box)
+p^1	none	L	no match
+p^dot	none	L	no match
+p^5	none	L	no match
+f^	t	H	t: long f with crossbar and lead strokes
+f^dot	none	L	fa/fe/fi bases are L-shaped, not f
+f^5	none	L	fa/fe/fi bases are L-shaped, not f
+f^ot	none	L	no crossed-f cell with ring+stroke
+ch^	che	L	che cell tall H-like with 10; ours c+looped h
+S^	o?	M	o?: tall S/long-s shape with stroke
+S^#	none	L	no marked S cell
+S^dot	none	L	no marked S cell
+S^7	none	L	no marked S cell
+S^1	none	L	no marked S cell
+Z^	et2	M	et2: crossed z/I glyph, unmarked
+Z^dot	et2	L	et2 has trailing dot; else unmarked Z
+Z^ot	le|lo?	M	le/lo?: reversed-E Z-like base under ring+stroke
+Z^#	none	L	no Z cell with double cross
+Z^~	none	L	no Z cell with tilde
+Z^7	none	L	no Z cell with 7
+Z^o	la|lu?	L	la/lu?: reversed-E base under small ring
+S7^	n	H	n: plain 7-shaped sign
+S7^#	ne|no|nu?	M	ne/no/nu? all 7 under double-barred cross
+S7^~	none	L	no 7 cell with tilde
+S7^+	na?	M	na?: 7 with single cross above
+S7^dot	none	L	no 7 cell with dot
+S7^1	none	L	no 7 cell with 1

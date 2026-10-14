@@ -1,0 +1,87 @@
+our_sign	his_cell	conf	note
+S4^	ge?	M	4-shape over crossed stem, like ge? exemplar
+S4^~	none	L	no S4-base cell with 2-mark
+S4^1	none	L	no S4-base cell with 1-mark
+S4^5	none	L	no S4-base cell with 5-mark
+S4^o	none	L	no S4-base cell with ring
+lam^	none	M	all lambda cells carry a digit above
+lam^5	to	H	lambda with 5 above
+lam^1	ta	H	lambda with 1 above
+lam^dot	none	L	no lambda cell with dot
+lam^7	ti	H	lambda with 7 above
+lam^~	te	H	lambda with 2-like stroke above
+lam^#	none	L	no lambda cell with double cross
+lam^o	none	L	no lambda cell with ring
+Lx^	none	L	nearest is ss (2 with cross), different base
+Lx^dot	none	L	no Lx-like cell
+Lx^#	none	L	no Lx-like cell
+Lx^5	none	L	no Lx-like cell
+L^	fa?|fe?	L	L with 1 or 2 inside angle, both seen
+L^~	fe?	L	fe? has 2 inside, ours above
+L^dot	none	L	no L cell with dot above
+L^7	fi?	M	L with 7, as fi?
+H^	none	L	only che, which carries 10 above
+H^1	che	M	H with 10 above matches che
+H^o	che	L	the 0 of 10 may be read as ring
+H^5	none	L	no H cell with 5
+H^#	none	L	no H cell with double cross
+H^~	none	L	no H cell with 2-mark
+H^dot	none	L	no H cell with dot
+K^	none	M	no K glyph on his sheet
+K^1	none	M	no K glyph on his sheet
+tee^	l2	H	vertical with right bar, same as l2
+tee^dot	none	L	l2 unmarked only
+tee^1	none	L	l2 unmarked only
+tee^~	none	L	l2 unmarked only
+tee^5	none	L	l2 unmarked only
++^	t	M	single cross with descender, like t -f-
++^dot	none	L	no marked cross cell
++^ot	none	L	no marked cross cell
+#^	none	L	his double cross appears only as superscript
+#^dot	none	L	no on-line double cross cell
+#^#	none	L	no on-line double cross cell
+#^~	none	L	no on-line double cross cell
+#^o	none	L	no on-line double cross cell
+#^ot	none	L	no on-line double cross cell
+eps^	c	M	bare epsilon, c has only left tick
+eps^5	co	H	epsilon with 5 above
+eps^1	ca	H	epsilon with 1 above
+eps^7	ci	H	epsilon with 7 above
+eps^~	ce	H	epsilon with 2-stroke above
+eps^dot	none	L	no epsilon cell with dot
+eps^#	none	L	no epsilon cell with double cross
+eps^o	none	L	no epsilon cell with ring
+dl^	b?|bi	L	delta-tilde resembles cursive br of b?/bi
+dl^1	none	L	no marked br cell with 1
+rz^	e	H	low hooked wave on line, same as e
+rz^1	none	L	e unmarked only
+rz^~	none	L	e unmarked only
+rz^dot	none	L	e unmarked only
+rz^#	none	L	e unmarked only
+phi^	et1	H	slashed o on long stem, same as et1
+phi^5	none	L	et1 unmarked only
+phi^dot	none	L	et1 unmarked only
+phi^1	none	L	et1 unmarked only
+o.^	i2?	H	ring with dot inside, same as i2?
+o.^dot	none	L	i2? unmarked only
+o.^1	none	L	i2? unmarked only
+o.^ot	none	L	i2? unmarked only
+o.^o	none	L	i2? unmarked only
+o.^~	none	L	i2? unmarked only
+[^	i1	H	square box open right, same as i1
+[^1	none	L	i1 unmarked only
+[^dot	none	L	i1 unmarked only
+[^~	none	L	i1 unmarked only
+]^	none	M	all box-open-left cells carry ring above
+]^o	la	H	box open left with small o above
+]^ot	le|lo?	M	ring plus stroke above, le and lo? alike
+]^dot	none	L	li?/lu? dots accompany ring, not alone
+]^#	none	L	no box-left cell with double cross
+]^~	none	L	no box-left cell with 2-mark
+sq^	qua?	M	closed square, qua? mark tiny caret only
+sq^ot	que?	L	que? square carries 4+-like mark above
+sq^1	none	L	no square cell with 1
+sq^~	none	L	no square cell with 2-mark
+sq^#	que?	L	que? mark could read as double cross
+sq^o	qua?	L	qua? caret might read as small ring
+U^	p1	H	square cup open top, same as p1
