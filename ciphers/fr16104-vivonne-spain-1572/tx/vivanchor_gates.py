@@ -4,6 +4,8 @@ V_strict stretch on ink 53; longest H run per ink (descriptive). Same code paths
 and tx/viv54L_test.spec(); the registered result files are not touched.
 
     python3 ciphers/fr16104-vivonne-spain-1572/tx/vivanchor_gates.py {63|53|54|runs} [--draws 200] [--wrong 200]
+        [--seed SEED --tag TAG]   (VIV-KEY, 14 Oct 2026: a later key change re-runs the same gates under its own seed;
+                                   writes tx/<TAG>_gates_<ink>.json; defaults reproduce VIV-ANCHOR's seed and file names)
 
 Writes tx/vivanchor_gates_<ink>.json.
 """
@@ -63,7 +65,8 @@ def main():
     if ink == 'runs':
         r = runs(); json.dump(r, open(os.path.join(HERE, 'vivanchor_gates_runs.json'), 'w'), indent=1, ensure_ascii=False)
         print(json.dumps(r, indent=1, ensure_ascii=False)); return
-    seed = f'20261008VA-{ink}'
+    seed = sys.argv[sys.argv.index('--seed') + 1] if '--seed' in sys.argv else f'20261008VA-{ink}'
+    tag = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else 'vivanchor'
     t.SEED = seed
     k = {c: v for c, (v, g) in vd.key().items()}
     model = jp.NgramModel([jp.read_corpus(p) for p in t.FR16])
@@ -93,7 +96,7 @@ def main():
         V, form = g.strict_vocab()
         res['V_strict'] = len(V)
         res['stretch_after'] = g.stretches(lambda p: g.page_tokens(p, fold), V, form, 200, seed + '-stretch')
-    json.dump(res, open(os.path.join(HERE, f'vivanchor_gates_{ink}.json'), 'w'), indent=1, ensure_ascii=False)
+    json.dump(res, open(os.path.join(HERE, f'{tag}_gates_{ink}.json'), 'w'), indent=1, ensure_ascii=False)
     for x in ('C1_f103r', c2n, 'target'):
         r = res[x]; print(ink, x, r['letters'], r['s'], 'b2 p99', r['b2']['null_p99'], r['b2']['pass'], r['b2']['headroom_ok'])
     print(ink, 'verdict b2', res['verdict_b2'], '| wrong keys', res['verdict_wrong_keys'], res['target']['c'])
