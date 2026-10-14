@@ -32,3 +32,18 @@ utc	item_id	look_row_id	role	folio	canvas	image	source	status
 2026-10-08 23:21	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	after-3	230r			folio arithmetic	answered CLEAR (recorded)
 2026-10-08 23:21	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	after-4	230v			folio arithmetic	answered CLEAR (recorded)
 2026-10-08 23:21	adhoc-b14983	adhoc-b14983:2-leaf:b02fa2	unit			louisxiii_davaux.png	manifest	answered CLEAR (recorded)
+2026-10-14 19:30	adhoc-a29176	adhoc-a29176:2-leaf:3ca102	unit			louisxiii_davaux.png	manifest	owed
+2026-10-14 19:30	adhoc-a29176	adhoc-a29176:2-leaf:3ca102	unit			gplus/b170_c131_pct_73_52_5_27_5.jpg	manifest	owed
+2026-10-14 19:30	adhoc-a29176	adhoc-a29176:2-leaf:3ca102	unit			gplus/b170_c132_pct_15_32_5_20_5.jpg	manifest	owed
+2026-10-14 19:30	adhoc-a29176	adhoc-a29176:2-leaf:3ca102	unit			images/b169sweep/c048_f22r_1000.jpg	manifest	owed
+2026-10-14 19:30	adhoc-0ba410	adhoc-0ba410:2-leaf:d64b59	cipher-page	135r			folio arithmetic	owed
+2026-10-14 19:30	adhoc-0ba410	adhoc-0ba410:2-leaf:d64b59	facing	134v			folio arithmetic	owed
+2026-10-14 19:30	adhoc-0ba410	adhoc-0ba410:2-leaf:d64b59	before-2	134r			folio arithmetic	owed
+2026-10-14 19:30	adhoc-0ba410	adhoc-0ba410:2-leaf:d64b59	after-1	135v			folio arithmetic	owed
+2026-10-14 19:30	adhoc-0ba410	adhoc-0ba410:2-leaf:d64b59	after-2	136r			folio arithmetic	owed
+2026-10-14 19:30	adhoc-0ba410	adhoc-0ba410:2-leaf:d64b59	after-3	136v			folio arithmetic	owed
+2026-10-14 19:30	adhoc-0ba410	adhoc-0ba410:2-leaf:d64b59	after-4	137r			folio arithmetic	owed
+2026-10-14 19:30	adhoc-0ba410	adhoc-0ba410:2-leaf:d64b59	unit			louisxiii_davaux.png	manifest	owed
+2026-10-14 19:30	adhoc-0ba410	adhoc-0ba410:2-leaf:d64b59	unit			gplus/b170_c131_pct_73_52_5_27_5.jpg	manifest	owed
+2026-10-14 19:30	adhoc-0ba410	adhoc-0ba410:2-leaf:d64b59	unit			gplus/b170_c132_pct_15_32_5_20_5.jpg	manifest	owed
+2026-10-14 19:30	adhoc-0ba410	adhoc-0ba410:2-leaf:d64b59	unit			images/b169sweep/c048_f22r_1000.jpg	manifest	owed
