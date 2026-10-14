@@ -141,3 +141,7 @@ Write PREREG-FAIR-IC.md before any score: IC and sorted-frequency profile of the
 (and of homophonic-free random strings as the floor); languages above their own p01 survive; then `family_run.py --family masc --langs` on the
 survivors only (matched control per language first; CONTROL BELOW GATE is not a negative). HYPOTHESES.md rows. NOTES "## FAIR-IC", gaps + Verdict,
 gaps_check.
+
+## Sessions (wave 3, spawned 22:27 UTC 14 Oct)
+SFZ-DEC4 session_01V7t1HX7kyXGhNVe6996yvw; MONL-C268B session_01Vmh8E5hAwJZNQ6JkFA2uNW; F4712-C119 session_01SY69FeQ7PSLZ1rGdJcuY69;
+FAIR-IC session_017s9xbeADeb2LvrDPSpcvCM.
