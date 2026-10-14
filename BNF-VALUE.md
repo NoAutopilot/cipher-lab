@@ -337,7 +337,7 @@ the strongest new material (a held key or a sibling folder) once reproduced. Re-
   13 Oct spend 33.43 of 40 (15 workers). Waiting on the owner: ASKS 163 (fr.3982 f.25, 21 crops, ~10 min) and ASKS 164
   (fr.3613 f.62r sorter, ~40 min); both backlog, never blocking.
 
-## Wave 35 (14 Oct 2026, 06:1x-06:4x UTC by date -u): George Lasry's BnF research published
+## Wave 35 (14 Oct 2026, 06:12-06:2x UTC by date -u): George Lasry's BnF research published
 
 - D. Bourdeau's cyphersolver repository published George Lasry's "BnF cipher research" (10 Oct 2026; 55 target folders, commit
   dde5b0ea, 13 Oct 2026 21:01 UTC -- after this lane's 13 Oct close). Snapshots of the folders that touch this lane:

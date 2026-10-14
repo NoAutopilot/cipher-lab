@@ -147,5 +147,5 @@ Preflight (default blind mode, `tools/sorter_preflight.py`): template PASS; answ
 Next: ASKS 164 (owner sorts the focus tiles; `tools/sign_sorter_apply.py`), then machine passes against the settled labels.
 
 
-## Found solved elsewhere (LANE BNF-FOCUS, 14 Oct 2026 06:3x UTC by date -u)
+## Found solved elsewhere (LANE BNF-FOCUS, 14 Oct 2026 06:1x UTC by date -u)
 BnF fr.3613 ff.62r-v, Rondinelli to Nevers, 11 Nov 1590 is deciphered by George Lasry ("BnF cipher research", 10 Oct 2026; with ChatGPT Astra 6 and Anthropic Opus 5.5), published in D. Bourdeau's cyphersolver repository 13 Oct 2026 (targets/rondinelli1590, commit dde5b0ea): 2/2 pages transcribed, key of 32 symbols, 655 of 656 elements identified (99.8%), method "read after matching with key from external sources", extent complete. The lane found it at the daily re-screen of Bourdeau's repository at HEAD b0af20a (14 Oct). Our work on this item stops here: no further transcription, key test or ASKS row. What we have on disk (transcriptions, key blocks, sorter, controls) stays as a record; any comparison with his reading is a separate, later job and is not run by this lane. Credit: George Lasry (result), D. Bourdeau (publication; text CC BY 4.0), S. Tomokiyo (key numbering).

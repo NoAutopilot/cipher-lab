@@ -72,5 +72,5 @@ Requests this job: github.com (cyphersolver clone/fetch) 3; Gallica 0; BnF hosts
 Status unchanged: open. Next: more no.60 ciphertext of the same office and month to pool (ITERATE.md "Next best attempt").
 
 
-## Found solved elsewhere (LANE BNF-FOCUS, 14 Oct 2026 06:3x UTC by date -u)
+## Found solved elsewhere (LANE BNF-FOCUS, 14 Oct 2026 06:1x UTC by date -u)
 BnF fr.3622, Nevers to M. de Gondi, 27 Mar 1594 (our f.91) is deciphered in part by George Lasry ("BnF cipher research", 10 Oct 2026), published in cyphersolver 13 Oct 2026 (targets/nevers1594gondi, commit dde5b0ea): 3/3 pages transcribed in part, key of 54 symbols, 230 of 245 elements identified (93.9%), method "read after matching with key from external sources", extent partial. The lane found it at the daily re-screen of Bourdeau's repository at HEAD b0af20a (14 Oct). Our work on this item stops here: no further transcription, key test or ASKS row. What we have on disk (transcriptions, key blocks, sorter, controls) stays as a record; any comparison with his reading is a separate, later job and is not run by this lane. Credit: George Lasry (result), D. Bourdeau (publication; text CC BY 4.0), S. Tomokiyo (key numbering).

@@ -9160,7 +9160,7 @@ Waiting on the owner (backlog, never blocking): ASKS 163 (fr.3982 f.25, 21 crops
 3. Runnable now, cheap: Tomokiyo's published Tuscan reconstructions (guicciardini1.png Speziali 1955, guicciardini2.png Monts de Savasse 1997) as key files for f.25 (~$2; no screen run until 163 lands); fr.3622 N-scaling statistic design (~$4, disk only).
 4. BNF-VALUE queue rows left: Q4/Q5 not online (reproduction batch), Q8 = the Sega memoirs (edition question, desk row), fr.4698/4700 left to Bourdeau (his catalogue 331).
 
-**Update 14 Oct 2026 06:4x UTC (LANE BNF-FOCUS, account 2):** George Lasry's BnF research (cyphersolver dde5b0ea, published 13 Oct
+**Update 14 Oct 2026 06:1x UTC by date -u (LANE BNF-FOCUS, account 2):** George Lasry's BnF research (cyphersolver dde5b0ea, published 13 Oct
 21:01 UTC) reads Rondinelli (fr.3613 f.62), Sega (fr.3613 f.148) and Nevers to Gondi (fr.3622 f.91): those three folders are now
 found-solved and ASKS 164 is withdrawn; next-list item 2 is void. Items 1, 3 (Tuscan keys only) and 4 stand; fr.3622's N-scaling
 statistic is void for f.91. Thirteen other folders share a volume with his items (BNF-VALUE.md Wave 35) -- their owners check them.
