@@ -5034,6 +5034,43 @@ Open for the next verifier or solver lane:
 3. Leads not run: Costabili key in ASMo Cifrario sec. XV B.4 (Lang 2018 p.156); Posthius cipher from Camerarius II (Aerztebriefe regest);
    Pisany f.302v print search beyond Aubery.
 
+## LANE DEFAULT-account-2-20261014-0911 handoff (session_019GFKerGc4HE6YqTNNSX8vk, account 2, for the orchestrator (owner account)), 14 October 2026 (09:11-11:2x UTC by date -u; closed: in-scope backlog spent; workers 41.83 + orchestrator ~7.6 = ~49.4 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-14-ytbiz-default-0911-jobs.md (5 waves). Gate 0a: SESSION-SWEEP-account-2 stale-claimed since 5 Oct,
+proceeded. VERIFY-BACKLOG regenerated 09:16: high rows Birago/ceppo (off limits), rest audit2 on N0/N1; the owed clair1161 AUDIT re-class taken
+as the verifier job. Backlog: `next_steps.py --hot-only` runnable rows minus the 13-14 Oct lanes' done steps; many `parallel` cells were stale
+(already run: fr3975, fr5761, c296, blathwayt, brochado, matignon). From wave 3, two in flight (check-in 98). googleapis 200 at 09:2x, then 503
+for every later probe (09:24-10:37).
+**workers (14, all ledgered + archived)**
+- clair1161-avis-flandre-1688: VER-C1161 2.85 Q -- AUDIT 3: every face prior work (Lasry), N3 -> N0 (f163r + 1 face in full, 4 in part), key
+  of record published, text known in part, D1 unchanged, SO-C1161 withdrawn; status.json results[117] and NEAR row updated by the lane.
+- tools/prior_work.py: PW-FIX 2.12 D -- check 3 false CLEAR on a dated solver snapshot fixed (folio lines bound to the heading volume); 137 PASS.
+- baluze167-davaux-1637: BAL22-SHAPE 3.53 D (169 f.22r letter signs, both blind reads pass gates, 5 M -> S, f -> I: H 4 S 5 I 2 M 13, --check
+  exit 0); BAL168-SWEEP 3.05 D + BAL168-FIN 2.68 D (Baluze 168 c1-484: unlisted glossed cipher letter f.122, c258-262, glosses overlap the f.110
+  letter; f.110 letter continues on c237; no bare passage; c485-651 not swept); BAL171-SWEEP 5.67 D- (171 c1-250, no unlisted letter; c55 =
+  f.25r glossed opening of the listed f.25 letter).
+- fr2933-salviati-1525: SALV-TRY20 1.88 N (0 of 31 --try candidates; route retired, rule 3); SALV-MAP3 4.18 D (third blind mapping, 14/20 types
+  2-of-3; 4-gram PREREG gate PASS 0/300; words 342 vs p99 276); SALV-EYE 3.94 N (5 of the settled types eye-contested; without them the gate
+  misses, 4/300; --check fresh). NEAR row carries all three.
+- clair571-estrades-1645: EST-REG 2.81 D (9431 in KEY-DESIGN/KEY-OFFICES via a key_design.py loader option + test; vs Clair 421: 0 same-code).
+- colbert26-lathuillerie-1644: COL26-C33 4.17 N (instrument check clears both passes; 20 = i 2/5 FAIL-LOWPOWER); COL26-C51 2.26 N (TOO-SHORT at
+  stage 0, pooled N 10, power 0.16).
+- eckert-1864 + thurloe-printed: GB-2 2.15 D (Verbael located in full view on Google Books, vZzvg46MRdEC / T2JVAAAAYAAJ, contents unread after
+  503; eckert GP13 control 503).
+- fr3975-vieuville-1587: F3975-PC 0.54 N (stale step, already run 5-6 Oct; stopped at check 1).
+Known-text share (light guardrail): ~7% (VER-C1161, a record correction on an item now N0).
+Overruns: BAL22-SHAPE 1.18x, GB-2 1.08x, SALV-EYE 1.13x, BAL171-SWEEP 1.42x (interrupted at 4.65; no messaging route to a cloud worker, it
+finished and pushed on its own; the per-sheet price ~0.35 misses the 1000 px looks, priced ~0.15 each in BAL168-FIN, which landed at 0.67x).
+Duplicate: COL26-C33 was briefed in both this lane and LANE DEFAULT-A4-0935-14; the account-4 copy stopped at prior-work check 1.
+**for the orchestrator**: fr2933 needs a person's look at S^/bh^ against Lasry's sheet (~1) before the Lasry-key PASS can be relied on; the
+board line for clair1161 now reads N0 (key published).
+**next**
+1. thurloe-printed: read the Verbael (vZzvg46MRdEC / T2JVAAAAYAAJ; gb2_verbael_snip.py ready) for Beverning 27 June / 22 Aug 1653 and No. 37
+   pp.252-253 when googleapis answers 200 (~0.5); eckert-1864: a second control of another form, then GP13 E589-E592 (~0.3).
+2. baluze167: 168 f.122 letter -- copy of or same matter as f.110 (image compare, ~1.5); Baluze 168 c485-651 and 171 c251-end sweeps (~3 each,
+   price 1000 px looks at ~0.15); 167 c275/c283 looks (~0.5).
+3. fr2933: the person's look (above); then a verifier only if the gate holds on eye-confirmed types.
+4. colbert26: 20 = i needs ~25 occurrences; next is the ~6 word-key check on one glossed sibling leaf (COL26-C51's named step).
+
 ## LANE DEFAULT-account-1-20261014-0640 handoff (session_01E1t93edi7dJdePSmqpBJwW, account 1, for the orchestrator (owner account)), 14 October 2026 (06:40-08:2x UTC by date -u; closed: in-scope backlog spent; workers 37.07 + orchestrator ~6.5 = ~43.6 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-14-acct1-default-0640-jobs.md (4 waves). Gate 0a: SESSION-SWEEP-account-1 stale-claimed since 5 Oct,
 proceeded. VERIFY-BACKLOG regenerated 06:50: high rows Birago/ceppo (off limits), rest audit2 on N0/N1. First wave answered LANE
