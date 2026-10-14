@@ -2011,3 +2011,62 @@ Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (su
 Verdict: keep going: 2 internal gaps; cheapest next: the 169 f.22r letter-sign shape check (~$2.5); then 167 canvases 251-429 (~$2.5) and the 168/171 volume sweeps (~$3.5 each); the 168 f.246 step once L71 answers
 
 `python3 tools/gaps_check.py baluze167-davaux-1637` (VER-BAL22, 14 Oct 2026): "OK keep-going baluze167-davaux-1637: keep going: 2 internal gap(s), 1 step(s) untried"
+
+## BAL167-FIN (14 Oct 2026, account 1, for LANE DEFAULT-A1-0640-14), 07:51-08:1x UTC by date -u
+
+Brief: `.claude/briefs/runs/2026-10-14-acct1-default-0640-jobs.md` Wave 4 row BAL167-FIN; method exactly `## BAL167-SWEEP`. Baluze 167
+(ark btv1b9001489r): the cached manifest (sources/gallica-manifests/btv1b9001489r.json) has 429 canvases, so 251-429 is the volume's end.
+Canvases 251-429 fetched at `300,` from openapi.bnf.fr (IIIF v3, one at a time, >= 3.1 s; take 07:51 with the claim, release in the done
+line), kept in scratch (not committed; images/ stays as found), assembled into contact sheets of 20 (5 x 4, canvas numbers burned in),
+judged by my own eye; 8 looks at `1000,` (c267, 275, 283, 299, 301, 326, 420, 421; six of them read). openapi.bnf.fr: 187 requests (179 + 8),
+all HTTP 200. Prior work: `prior_work.py baluze167-davaux-1637 --item-spec 'Baluze 167 canvases 251-429 cipher-leaf sweep' --step-type
+lookup --fetch` exit 0 ("proceed on the residue: whole item"; generic UNCHECKED rows only, no specific hold).
+
+**Control (by eye, not blind; I knew where they were):** every survey.tsv cipher canvas for 167 inside 251-429 shows digit-group rows at
+sheet scale: 260, 261, 262, 293, 320, 417, 418 (7/7). Folio: in this range canvas = 2f+6 (survey anchors c260 = f.127r, c292 = f.143r,
+c320 = f.157r, c416 = f.205r; c420 shows the folio number "207" at 1000 px). This is one more than BAL167-SWEEP's 2f+5 for c1-250: the offset
+changes somewhere between c185 and c260, not located. Folio numbers below are derived, not read (except f.207).
+
+| canvas | folio (derived) | cipher | glossed | letter | survey.tsv |
+|---|---|---|---|---|---|
+| 266-285 | f.130r-139v | yes, dense on 267-284 (266 bottom only; 285 top two lines) | yes at 1000 px on c267 ("du ieune Oxestern", "la tresve", "agreable", "six ans" above the runs), c275 ("Chanr Oxestern", "la ratification") and c283 ("a Amsterdam", "les deux cent cinquante mil livres", "les Regimens dudit Langrave"); at least one run on c275 ("est difficile a 7 5 i 65 ...", one line) and one on c283 ("19 71 96 n 76 6 46") have nothing directly above (the gloss of the line above may carry, as noted for c260 in survey.tsv) | continuation of the listed f.127 Memoire (opens c260, "servira de response aux depesches du Sr D'Avaux"), signed Louis / Bouthillier, St Germain ... Oct 1637 on c285 | listed row (cipher_canvases 260-262) left untouched |
+| 298-301 | f.146r-147v | yes (298-300 dense; 301 top three lines) | yes (c299 at 1000 px: "employer le sieur Hubald", "a Dantzic", "commandement de six mil hommes de pied", "venir par la mer et par la Holande en France" above the runs) | continuation of the listed f.143 Memoire (opens c292, "Memoire au Sr D'Avaux Ambassadeur extraordinaire du Roy en Allemagne"), signed Louis / Bouthillier, St Germain en Laye ... Nov 1637 on c301 | listed row (cipher_canvases 293) left untouched |
+| 324-329 | f.159r-161v | yes (all dense; 329 top half) | yes (c326 at 1000 px: "indefiniment", "par le traitte de Coulogne", "la garantie", "contre le Roy" above every run) | continuation of the listed f.157 Memoire (opens c320), signed Louis / Bouthillier, St Germain ... Dec 1637 on c329 | listed row (cipher_canvases 320) left untouched |
+| 419-421 | f.206v-207v | yes (419 several runs; 420 dense; 421 lower half) | yes (c420 at 1000 px: "trouppes de Lunebourg", "Madame la Langrave et Milander", "un tel secours", "la levee de ces trouppes" above every run) | continuation of the listed f.205 Memoire (opens c416), signed Louis / Bouthillier, St Germain ... Dec 1637 on c421 | listed row (cipher_canvases 417, 418) left untouched |
+
+Not cipher: 251, 253-255, 257-258, 286-287, 291, 302-303, 309-311, 330-331, 335, 338-339, 355, 361, 364-365, 375-377, 380, 391-393, 395, 406-407,
+414-415, 422-426 blanks, backs and faint bleed-through; 252, 304-308, 332-337, 340-354, 366-374, 382-390, 394, 400-403, 408-411 drafts in a fast
+hand with struck-through words (several signed "de Chavigny", c252 Oct 1637, c354, c374, c394 and c411 Dec 1637); 256, 362-363, 404-405, 412-413
+Latin letters; 288 a German letter (4 Nov 1637); 259, 290, 381, 399 address covers (c290 docketed "Lettres ... a Mr D'Avaux ... 1637"); 263-265
+clear pages of the f.127 Memoire; 292, 294-297 clear pages of the f.143 Memoire; 312-318 a clear "Monseigneur" letter in a fast hand; 321-323
+clear pages of the f.157 Memoire; 356-360 a clear Memoire to d'Avaux (Paris, Dec 1637; no digit rows seen at sheet scale); 378-379 a clear royal
+letter signed Louis / Bouthillier (Dec 1637); 396-398 a clear private letter ("Mon fils"); 416 clear page of the f.205 Memoire; 427-429 marbled
+endpapers. At 300 px a draft page could hide a few digit groups among struck words; none was re-looked.
+
+**Result for Baluze 167 canvases 251-429 (volume end).** Unlisted cipher letters: 0. Unlisted cipher canvases of the four listed letters
+(f.127: 266-285; f.143: 298-301; f.157: 324-329; f.205: 419-421), each with words above its runs at 1000 px; two short runs (c275, c283) seen
+with nothing directly above them, a lead for an image check, not an established bare passage. With BAL167-SWEEP, Baluze 167 is now swept end
+to end (canvases 1-429): no unlisted cipher letter in the volume. No transcription; words above runs are a lead, not a gloss reading.
+survey.tsv not edited (no unlisted letter; continuation cells left as found). Report what was found and where it was not found; no novelty
+class.
+
+## Remaining gaps (BAL167-FIN, 14 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv; the unlisted glossed letters, 170 f.89r, 170 f.107r-v, 169 f.36-38, 169 f.206-207 and 169 f.208-209, are not yet counted in that figure). Of the 5 listed bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: N3, D2 (AUD1-B167). 170 f.228r-v: N3, D2 at about 56% (V-BAL167).
+168 f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled. 169 f.22r (unlisted, BAL169-SWEEP): 24 tokens read with the published key (BAL169-F22: H 4, I 1, M 19); audited VER-BAL22, AUDIT 7: N3, D1.
+- 168 f.246-247v bare passage - blocker: waiting-on LOCAL-QUEUE L71 (owner's browser: does the Papiers de Richelieu item print the cipher passage in clear); next if it does: align the printed text to the two-pass transcription with tools/interlinear_align.py (known plaintext for the f.247 hand), ~$3; if not: the f.247-hand glossed-text search (survey.tsv's d'Avaux-side leaves), ~$3
+- 170 f.228-229 novelty (N3 -> N4) - blocker: waiting-on LOCAL-QUEUE L71 and SO-BAL170-F228 (SECOND-OPINIONS-QUEUE.tsv); the edition's notes are snippet-only from the cloud and a second opinion is owed before N4
+- 169 f.22r letter signs and name - blocker: not-attempted; audited by VER-BAL22 (AUDIT 7: N3, D1; f and a are context fits, I not M; the name after "commandement" rests on context-chosen tokens); next: a blind shape check of the six letter signs against Tomokiyo's table and glossed exemplars (BAL-WL method) plus a fresh rule-7 re-derivation, ~$2.5
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census (N9-BAL found unlisted f.110r in 168; BAL170-SWEEP + BAL170-FIN found unlisted glossed cipher on 170 f.89r and f.107r-v and continuation canvases 252, 271; BAL169-SWEEP + BAL169-FIN found 169 f.21-24 (bare f.22r), f.36-38, f.206-207 and f.208-209 (glossed) and continuation canvases 170-188, 224, 231-232, 297-302, 344-347, 375, 389, 467-471); BAL167-SWEEP found in 167 c1-250 no unlisted letter, only glossed continuation canvases of listed letters (146-149, 156-157, 172, 179-181, 188); Baluze 170 done (canvases 1-340); Baluze 169 done (canvases 1-535); BAL167-FIN found in 167 c251-429 no unlisted letter, only cipher continuation canvases of the listed f.127 (266-285), f.143 (298-301), f.157 (324-329) and f.205 (419-421) letters, glossed at 1000 px except a few short runs on c275 and c283 with nothing directly above; Baluze 170 done (canvases 1-340); Baluze 169 done (canvases 1-535); Baluze 167 done (canvases 1-429); next: the same sweep of 168 and 171, ~$3.5 each
+
+## Escalation (14 Oct 2026, BAL167-FIN)
+- [x] siblings: davaux-1633 and DECODE records 2756-2762 checked (Siblings section above)
+- [x] clear-pages: leaf survey done; 170 f.230r is the clear close of the f.228 letter (D1-BAL170); 169 f.22r's cipher sits inside clear text (BAL169-F22)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.229 letter values carried to f.228; 169 f.22r read with key.tsv (BAL169-F22)
+- [ ] print: Avenel, Négociations secrètes, Guébriant, Bougeant, Mercure, Siri, IA, Google Books (UNA3-BAL), OpenAlex, CrossRef done; untried: the Papiers de Richelieu 1636-1642 volume by page (L71); Google Books for the 169 f.22r phrases (HTTP 503 on 14 Oct, VER-BAL22; IA, OpenAlex, CrossRef done)
+- [x] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); shape control with a same-key wrong-label negative PASSED (BAL-WL, 31 M -> S); hook/v PASSED on read 2 (BAL167-GHV, 8 M -> S; audited V-GHV, AUDIT 5); g+ gloss letter settled by key-anchored sequence and tile test PASSED (BAL167-GSEQ, 3 M -> S; re-audited V-GSEQ, AUDIT 6; scorer committed, GSEQ-SCORER)
+- [x] image-check: glossed Baluze 170 crops f.233r/f.239r/f.258r on disk (BAL-CROP); f.301r, f.320v-321r (BAL167-GHV); f.64r, f.124r-v (BAL167-GPLUS); f.124 gt letter settled and g+ tiles confirmed (BAL167-GSEQ); Baluze 170 volume sweep finished with 1000 px looks (BAL170-FIN); Baluze 169 swept end to end (BAL169-SWEEP, BAL169-FIN); 169 f.22r native crops (BAL169-F22); Baluze 167 c1-250 swept with 8 looks at 1000 px (BAL167-SWEEP); Baluze 167 c251-429 swept with 8 looks at 1000 px (BAL167-FIN)
+- [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run (BAL-CROP, BAL-WL, BAL167-GHV, BAL167-GSEQ)
+Verdict: keep going: 2 internal gaps; cheapest next: the 169 f.22r letter-sign shape check (~$2.5); then the 168/171 volume sweeps (~$3.5 each); the 168 f.246 step once L71 answers
+
+`python3 tools/gaps_check.py baluze167-davaux-1637` (BAL167-FIN, 14 Oct 2026): "OK keep-going baluze167-davaux-1637: keep going: 2 internal gap(s), 1 step(s) untried"
