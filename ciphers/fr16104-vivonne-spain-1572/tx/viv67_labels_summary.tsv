@@ -1,0 +1,20 @@
+label	status	n	aligned	top_aligned	top_aligned_conf>=0.5
+y	M (key.tsv y=h)	44	36	r:11,l:9,n:4,e:4	r:11,l:9,e:4,h:3
+o	outside published key	30	16	p:5,e:3,i:3,r:2	p:5,e:3,i:2,r:2
+c	outside published key	25	18	p:8,e:5,u:2,i:2	p:8,e:5,u:2,i:2
+S	M (key.tsv S=b)	24	15	b:10,a:1,e:1,g:1	b:10,a:1,g:1,n:1
+V	outside published key	17	13	n:7,s:2,t:1,m:1	n:7,s:2,t:1,m:1
+{curl}	outside published key	7	6	d:1,q:1,e:1,s:1	d:1,q:1,s:1,z:1
+t	outside published key	7	5	g:1,r:1,s:1,u:1	g:1,r:1,s:1,e:1
+2	outside published key	6	5	e:3,u:1,m:1	e:3,u:1,m:1
+i	outside published key	6	3	q:1,p:1,i:1	q:1,i:1
+b	M (key.tsv b=z)	5	5	z:2,f:1,p:1,m:1	z:2,f:1,p:1,m:1
+r	outside published key	5	4	l:1,q:1,m:1,p:1	l:1,q:1,m:1,p:1
+e	outside published key	5	5	m:4,s:1	m:4,s:1
+Z	outside published key	3	2	l:1,y:1	l:1,y:1
+5	outside published key	2	1	a:1	a:1
+8	outside published key	2	2	m:1,a:1	m:1,a:1
+l	outside published key	2	1	o:1	o:1
+{scribble}	outside published key	1	1	p:1	p:1
+{blot}	outside published key	1	0		
+H	outside published key	1	0		

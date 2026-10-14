@@ -1,0 +1,34 @@
+{
+ "item": "vivonne1573-f201r-dev",
+ "seed": 20261014,
+ "control_published": {
+  "real": 0.7443,
+  "aligned_keyed": 1009,
+  "null_mean": 0.4525,
+  "null_p95": 0.5073,
+  "null_max": 0.5274,
+  "rank": 1,
+  "window": [
+   98,
+   1901
+  ],
+  "n_letters": 2102,
+  "n_signs": 1270,
+  "verdict": "PASS"
+ },
+ "control_keytsv_report_only": {
+  "real": 0.7388,
+  "aligned_keyed": 1026,
+  "null_mean": 0.4566,
+  "null_p95": 0.4979,
+  "null_max": 0.5305,
+  "rank": 1,
+  "window": [
+   98,
+   1901
+  ],
+  "n_letters": 2102,
+  "n_signs": 1270,
+  "verdict": "PASS"
+ }
+}

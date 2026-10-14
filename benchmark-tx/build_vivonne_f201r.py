@@ -88,10 +88,11 @@ def control(seq, let, key, draws=200):
         rng.shuffle(vv)
         sh.append(share(dict(zip(ids, vv)))[0])
     s = sorted(sh)
+    q = 189 if draws == 200 else int(0.95 * draws) - 1  # 200 draws: sorted[189], confirm2's index
     rank = 1 + sum(1 for x in sh if x >= real)
-    return {'real': round(real, 4), 'aligned_keyed': nk, 'null_mean': round(sum(sh) / len(sh), 4), 'null_p95': round(s[189], 4),
+    return {'real': round(real, 4), 'aligned_keyed': nk, 'null_mean': round(sum(sh) / len(sh), 4), 'null_p95': round(s[q], 4),
             'null_max': round(s[-1], 4), 'rank': rank, 'window': [lo, hi], 'n_letters': len(let), 'n_signs': len(seq),
-            'verdict': 'PASS' if rank == 1 and real > s[189] else 'FAIL'}
+            'verdict': 'PASS' if rank == 1 and real > s[q] else 'FAIL'}
 
 
 def main():

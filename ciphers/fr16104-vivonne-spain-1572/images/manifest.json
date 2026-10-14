@@ -10923,7 +10923,7 @@
   {
    "file": "fr16105_c107_f104_head.jpg",
    "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009663p/f107/pct:52,2,46,32/1600,/0/default.jpg",
-   "what": "fr.16105 f.104r head: docket '8 Juin 1573', heading 'dechiffré de la precedente', old ink no. 41, stamped 104 (N4-VIV2, 4 Oct 2026)"
+   "what": "fr.16105 f.104r head: docket '8 Juin 1573', heading 'dechiffr\u00e9 de la precedente', old ink no. 41, stamped 104 (N4-VIV2, 4 Oct 2026)"
   },
   {
    "file": "fr16105_c112_f108v_end_norm.jpg",
@@ -11116,7 +11116,7 @@
    "canvas": 262,
    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f262/full/1600,/0/default.jpg",
    "file": "images/pdech/ov_c262_1600.jpg",
-   "note": "f.240v address leaf endorsed '... St Gouard au Roy ... Novembre 1572' | f.241r HEAD of ink 78: docket '7 Novembre 1572', 'dechiffré de la precedente', ink 78 beside stamped 241",
+   "note": "f.240v address leaf endorsed '... St Gouard au Roy ... Novembre 1572' | f.241r HEAD of ink 78: docket '7 Novembre 1572', 'dechiffr\u00e9 de la precedente', ink 78 beside stamped 241",
    "fetched": "2026-10-13 VIV-HEADS"
   },
   {
@@ -11151,7 +11151,7 @@
    "canvas": 310,
    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f310/full/1600,/0/default.jpg",
    "file": "images/pdech/ov_c310_1600.jpg",
-   "note": "f.287v address leaf endorsed '... 18 decemb.' | f.288r HEAD of ink 97: docket '17 Decembre 1572', 'dechiffré de la precedente', ink 97 beside stamped 288",
+   "note": "f.287v address leaf endorsed '... 18 decemb.' | f.288r HEAD of ink 97: docket '17 Decembre 1572', 'dechiffr\u00e9 de la precedente', ink 97 beside stamped 288",
    "fetched": "2026-10-13 VIV-HEADS"
   },
   {
@@ -11178,5 +11178,27 @@
    "note": "f.299v ink 100 cipher ends, plain postscript 'Sire, depuis ma lettre escripte le Seigneur Cayas ...', close 'de Madrid ... decembre 1572', signed De Vivonne | f.300r HEAD of ink 101: docket '24 decemb. 1572', 'dechiffre de la precedente', ink 101 beside stamped 300",
    "fetched": "2026-10-13 VIV-101"
   }
- ]
+ ],
+ "viv67": {
+  "job": "VIV-67, 14 Oct 2026, LANE VIV-KEYSTONE (account 4)",
+  "committed_images": "none (all crops untracked under images/p67/)",
+  "overviews_600px": [
+   "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f206/full/600,/0/default.jpg",
+   "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f210/full/600,/0/default.jpg",
+   "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f211/full/600,/0/default.jpg"
+  ],
+  "native_regions": {
+   "f201r (c206 right)": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f206/4100,350,3650,5350/max/0/default.jpg",
+   "f205r (c210 right)": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f210/4300,350,3600,5500/max/0/default.jpg",
+   "f205v (c211 left)": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f211/150,100,3750,5750/max/0/default.jpg"
+  },
+  "regenerate": [
+   "python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 206 --iiif-host openapi --region 4100,350,3650,5350 --out ciphers/fr16104-vivonne-spain-1572/images/p67 --prefix c206_f201r --debug   # fetch once (its crops are discarded)",
+   "python3 tools/iiif_lines.py --image ciphers/fr16104-vivonne-spain-1572/images/p67/src_image_v3_ark_12148_btv1b9009663p_f206_4100_350_3650_5350.jpg --region 680,1500,2970,3700 --out ciphers/fr16104-vivonne-spain-1572/images/p67 --prefix c206_f201r --follow-slope 400 --distance 70 --max-width 1560 --overlap 150 --debug   # the 25 x 2 crops the passes read",
+   "python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 210 --iiif-host openapi --region 4300,350,3600,5500 --out ciphers/fr16104-vivonne-spain-1572/images/p67 --prefix c210_f205r --distance 120 --lines-per-crop 3 --max-width 1900 --overlap 400 --debug   # fetch",
+   "python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 211 --iiif-host openapi --region 150,100,3750,5750 --out ciphers/fr16104-vivonne-spain-1572/images/p67 --prefix c211_f205v --distance 120 --lines-per-crop 3 --max-width 1900 --overlap 400 --debug   # fetch",
+   "python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py ciphers/fr16104-vivonne-spain-1572/images/p67/src_image_v3_ark_12148_btv1b9009663p_f210_4300_350_3600_5500.jpg --out ciphers/fr16104-vivonne-spain-1572/images/p67/dec --prefix c210_f205r --strips 8",
+   "python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py ciphers/fr16104-vivonne-spain-1572/images/p67/src_image_v3_ark_12148_btv1b9009663p_f211_150_100_3750_5750.jpg --out ciphers/fr16104-vivonne-spain-1572/images/p67/dec --prefix c211_f205v --strips 7"
+  ]
+ }
 }
