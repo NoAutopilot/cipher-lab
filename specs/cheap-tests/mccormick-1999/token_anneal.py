@@ -354,6 +354,166 @@ def recovery_fraction(assign, truth):
     return ok / len(truth)
 
 
+# ---------------------------------------------------------------- word-level code-word anneal (MCC-WORD, 14 Oct 2026)
+
+HELDOUT_EN = [ROOT / "tools" / "data" / "en" / f for f in ("pg1342_pride.txt", "pg64317_gatsby.txt", "pg76_huckfinn.txt")]
+WB_LAMBDA = 0.8      # Jelinek-Mercer weight of the bigram term against the unigram
+
+
+def corpus_words_from(paths):
+    words = []
+    for p in paths:
+        words += re.findall(r"[A-Za-z]+", jp.read_corpus(p))
+    return [w.lower() for w in words]
+
+
+class WordBigram:
+    """Whole-word bigram model over a closed vocabulary: the top `pool` corpus words, plus UNK (any other word) and
+    BND (a boundary: start of text, and every number or single-letter token, which break the word chain on both the
+    control and the target). log P(w|v) = log(lam P_ml(w|v) + (1-lam) P_uni(w)), add-one unigram. Dense matrix
+    L[v, w] (natural log), v, w in 0..V+1 (V = UNK, V+1 = BND)."""
+
+    def __init__(self, words, pool, lam=WB_LAMBDA):
+        import numpy as np
+        freq = Counter(words)
+        self.pool = [w for w, _ in freq.most_common(pool)]
+        self.idx = {w: i for i, w in enumerate(self.pool)}
+        V = len(self.pool)
+        self.UNK, self.BND, self.size = V, V + 1, V + 2
+        ids = [self.idx.get(w, self.UNK) for w in words]
+        uni = np.ones(self.size)
+        for i in ids:
+            uni[i] += 1
+        uni[self.BND] = 1.0
+        uni /= uni.sum()
+        big = np.zeros((self.size, self.size))
+        np.add.at(big, (np.array(ids[:-1]), np.array(ids[1:])), 1.0)
+        rows = big.sum(axis=1, keepdims=True)
+        ml = np.divide(big, rows, out=np.zeros_like(big), where=rows > 0)
+        lam_row = np.where(rows > 0, lam, 0.0)
+        self.L = np.log(lam_row * ml + (1 - lam_row) * uni[None, :])
+        self.weights = [freq[w] for w in self.pool]
+
+    def seq_ids(self, toks, assign):
+        """token list -> word-id list (code tokens through assign; other tokens BND)."""
+        out = []
+        for k, v in toks:
+            out.append(self.idx.get(assign.get(v, ""), self.UNK) if k == "code" else self.BND)
+        return out
+
+    def total(self, toks, assign):
+        ids = [self.BND] + self.seq_ids(toks, assign)
+        return float(sum(self.L[a, b] for a, b in zip(ids[:-1], ids[1:]) if b != self.BND))
+
+
+def wordbigram_solve(toks, wb, rng, sweeps=200, restarts=2, t0=3.0, t1=0.05, init=None):
+    """Heat-bath (Gibbs) annealing over code types: each type's word is resampled from softmax(dscore/T) over the
+    whole pool, dscore = the exact total log-prob of the text with that type set to each candidate (others fixed);
+    T geometric t0 -> t1 over `sweeps`, then one greedy sweep. Objective = WordBigram.total (natural log, total scale)."""
+    import numpy as np
+    nprng = np.random.default_rng(rng.randrange(2 ** 31))
+    codes = sorted(set(v for k, v in toks if k == "code"))
+    pos = {}
+    for i, (k, v) in enumerate(toks):
+        if k == "code":
+            pos.setdefault(v, []).append(i)
+    is_code = [k == "code" for k, _ in toks]
+    vals = [v for _, v in toks]
+    V = len(wb.pool)
+    Lp = wb.L[:, :V]          # candidate columns (pool words only)
+    diag = np.diag(wb.L)[:V]
+    w = np.array(wb.weights, dtype=float)
+    w /= w.sum()
+    best_a, best_s = None, -1e300
+    for r in range(restarts):
+        cur = {c: int(nprng.choice(V, p=w)) for c in codes}
+        if init:
+            cur.update({c: wb.idx[init[c]] for c in codes if init.get(c) in wb.idx})
+
+        def wid(i):
+            return cur[vals[i]] if is_code[i] else wb.BND
+
+        def cand_scores(c):
+            s = np.zeros(V)
+            for i in pos[c]:
+                prev_same = i > 0 and is_code[i - 1] and vals[i - 1] == c
+                if prev_same:
+                    s += diag
+                else:
+                    s += Lp[wid(i - 1) if i > 0 else wb.BND]
+                if i + 1 < len(toks):
+                    nxt_same = is_code[i + 1] and vals[i + 1] == c
+                    if not nxt_same and is_code[i + 1]:
+                        s += wb.L[:V, wid(i + 1)]
+            return s
+
+        nsw = sweeps + 1
+        for sw in range(nsw):
+            greedy = sw == sweeps
+            T = t0 * (t1 / t0) ** (sw / max(1, sweeps - 1))
+            order = list(codes)
+            rng.shuffle(order)
+            for c in order:
+                s = cand_scores(c)
+                if greedy:
+                    cur[c] = int(np.argmax(s))
+                else:
+                    z = (s - s.max()) / T
+                    p = np.exp(z)
+                    p /= p.sum()
+                    cur[c] = int(nprng.choice(V, p=p))
+        assign = {c: wb.pool[cur[c]] for c in codes}
+        sc = wb.total(toks, assign)
+        if sc > best_s:
+            best_s, best_a = sc, assign
+    return best_s, best_a
+
+
+def wordbigram_sweep(a, real_toks, words, frequent):
+    """MCC-WORD control sweep (PREREG-MCC-WORD.md): bMCC4's control generator unchanged, the word-bigram solver."""
+    import time
+    lm_paths = HELDOUT_EN if a.lm == "heldout" else HELDOUT_EN + list(CORPORA)
+    wb = WordBigram(corpus_words_from(lm_paths), a.pool)
+    n = a.n_tokens or len(real_toks)
+    kinds_seq = tile_kinds(real_toks, n)
+    runs, used = [], set()
+    for seed in [int(x) for x in a.seeds.split(",")]:
+        crng = random.Random(1000 + seed)
+        ctoks, truth = build_control(kinds_seq, words, frequent, crng, used)
+        t = time.time()
+        sc, asg = wordbigram_solve(ctoks, wb, crng, a.sweeps, a.restarts)
+        row = {"seed": seed, "n_tokens": n, "code_types": len(truth), "score": sc,
+               "recovery": recovery_fraction(asg, truth), "secs": round(time.time() - t, 1)}
+        row.update(diagnostics(asg, truth, ctoks, wb.pool))
+        row["truth_total"] = wb.total(ctoks, truth)
+        if a.null:
+            srng = random.Random(2000 + seed)
+            ps = [i for i, (k, _) in enumerate(ctoks) if k == "code"]
+            vs = [ctoks[i][1] for i in ps]
+            srng.shuffle(vs)
+            stoks = list(ctoks)
+            for i, v in zip(ps, vs):
+                stoks[i] = ("code", v)
+            _, sa = wordbigram_solve(stoks, wb, srng, a.sweeps, a.restarts)
+            row["null_recovery"] = recovery_fraction(sa, truth)
+            row["null_token_recovery"] = diagnostics(sa, truth, stoks, wb.pool)["token_recovery"]
+        runs.append(row)
+        print(json.dumps(row), file=sys.stderr)
+    m = lambda key: sum(r[key] for r in runs) / len(runs)  # noqa: E731
+    out = {"mode": "wordbigram-control", "lm": a.lm, "pool_size": a.pool, "sweeps": a.sweeps, "restarts": a.restarts,
+           "n_tokens": n, "runs": runs, "recovery_mean": m("recovery"), "token_recovery_mean": m("token_recovery"),
+           "pool_ceiling_types_mean": m("pool_ceiling_types"), "pool_ceiling_tokens_mean": m("pool_ceiling_tokens"),
+           "gate": {"threshold": a.gate, "met": m("recovery") >= a.gate}}
+    if a.null:
+        nt = [r["null_token_recovery"] for r in runs]
+        out["null_token_recovery_max"] = max(nt)
+        out["token_read"] = out["token_recovery_mean"] >= a.gate and min(r["token_recovery"] for r in runs) > max(nt)
+    print(json.dumps({k: out[k] for k in out if k != "runs"}))
+    if a.out:
+        Path(a.out).write_text(json.dumps(out, indent=1))
+    return 0 if out.get("token_read", out["gate"]["met"]) else 3
+
+
 # ---------------------------------------------------------------- main
 
 
@@ -374,6 +534,14 @@ def main():
                     help="--fast only: Metropolis test on the mean-score change (bMCC4) or on it x n-gram count")
     ap.add_argument("--null", action="store_true",
                     help="also run each control with its code-token order shuffled among the code slots (rng 2000+seed)")
+    ap.add_argument("--objective", choices=["char4", "wordbigram"], default="char4",
+                    help="char4: bMCC4's char 4-gram anneal (default); wordbigram: MCC-WORD whole-word bigram Gibbs anneal "
+                         "(--control-only only)")
+    ap.add_argument("--lm", choices=["heldout", "insample"], default="heldout",
+                    help="wordbigram: LM trained on tools/data/en/ (held out from the control's Holmes+Moby-Dick draw) "
+                         "or on those plus Holmes+Moby-Dick (in-sample upper bound, diagnostic only)")
+    ap.add_argument("--pool", type=int, default=1000, help="wordbigram: candidate word pool (top LM-corpus words)")
+    ap.add_argument("--sweeps", type=int, default=200, help="wordbigram: annealing sweeps over all code types")
     a = ap.parse_args()
 
     text = CIPHER_FILE.read_text()
@@ -389,6 +557,8 @@ def main():
 
     if a.selftest:
         return selftest(model, pool_words, pool_weights, real_toks, words, frequent)
+    if a.control_only and a.objective == "wordbigram":
+        return wordbigram_sweep(a, real_toks, words, frequent)
     if a.control_only:
         return control_sweep(a, real_toks, words, frequent, pool_words, pool_weights, model)
 
