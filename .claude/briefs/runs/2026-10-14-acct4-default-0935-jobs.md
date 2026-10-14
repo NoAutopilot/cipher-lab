@@ -90,3 +90,18 @@ Verdict (SFZ-KEYS): "write the ASMi scat. 1597 photoreproduction request (REQUES
 ~$0.5". Follow an existing REQUEST.md in this repo as the model; the institution's public contact address from its own page with the date;
 subject, recipient and sign-off lines left for the person; no personal data (rule 9); one ASKS.md row. Not sent: the draft needs a gate-7
 `checked:` line from a separate session before anyone sends it (say so in the ASKS row).
+
+## Wave 4 (10:4x UTC 14 Oct; after wave 3 reports)
+
+### OUT-CHECK-SFZ (Opus, cap 2, box 30 min, gate 7): fact-check ciphers/sforza-duke-1447-f15/REQUEST.md
+A separate session from its drafter SFZ-REQ (CLAUDE.md Outreach gate 7). Falsify every clause against the folder's NOTES.md (SFZ-KEYS,
+SFZ-REQ sections) and the Archivio di Stato di Milano's own pages (contact address and the photoreproduction/tariff page, read today; record
+URL and date): the fondo, serie, cartella number (scat. 1597) and the description of each requested item against the inventory SFZ-KEYS cites,
+the Italian, the recipient address. Rule 10 wording; outreach/README.md rules 1 (AI disclosure in the first paragraph), 1a (voice), 1c (no other
+open draft to the same address). Write the `checked:` line naming corrections; fix any failing clause in the file; add the CONTRIBUTIONS.md row
+(status "checked, not sent") if the outreach convention calls for one; update the ASKS row. Push; done line. Do not send anything; do not create a
+mail draft; no personal data.
+
+### OBRED-6017D (Opus, cap 3.5, box 75 min, NA <= 100 at >= 1.5 s): oldenbarnevelt-brederode-1605 inv. 6017 fill from scan 352 to the end
+As OBRED-6017B/C (same method, controls first), scans 352 onward to the end of inv. 6017 (156 scans left per OBRED-6017C); record the last
+scan screened and, if the inventory is finished, set the siblings rung and the Verdict accordingly.
