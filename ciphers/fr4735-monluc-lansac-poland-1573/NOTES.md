@@ -658,3 +658,61 @@ Read so far: unmeasured as a reading; f.86 150 tokens C 83 / M 64 / U 3 against 
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 3 internal gaps; cheapest next: ff.140-141 look for a Monluc 28 Apr text, ~$1 (when Gallica answers)
 - Rule 7 (labels unchanged): `python3 score_c268.py --check` -> "OK c268 outputs current"; `python3 k07_c268.py --check` -> "k07_c268: OK". Judge not re-run (decode unchanged; last FAIL -1.300 stands).
+
+## MONL-140: ff.140-141 looked at for a Monluc 28 Apr clear text (14 Oct 2026, account 4, Opus, for LANE DEFAULT-A4-0935-14)
+
+Prior work: `tools/prior_work.py fr4735-monluc-lansac-poland-1573 --item-spec 'BnF fr.4735 ff.140-141' --step-type lookup --offline`
+exit 0 ("proceed on the residue: whole item"; 4 generic UNCHECKED rows, none specific). Check 1 (own work): no earlier look at f.140 beyond
+NC-MONL2's one-line "clear letter 'Madame, nous sommes...'", class d; f.141 never looked at.
+
+**Route.** openapi.bnf.fr IIIF v3 (Gallica 403), `btv1b9060724s`, canvas map from the anchors above (c270 = f.139): c272 = f.140r (pencil
+"140" read on the image), c273 = f.140v, c274 = f.141r (pencil "141"), c275 = f.142r (pencil "142"; so f.141v has no canvas of its own or is
+blank, not checked). 5 requests: c272-c275 at `full/1400,`, plus c272 `pct:13,30,67,17` at 1600 px (lines 5-12). Images untracked
+(`images/scratch140/`, manifest key `monl140`, `regen_monl140.sh`). No subagent; read by this worker's own eye; no key test (brief).
+
+**What the leaves are.** ff.140r-141r are one clear letter in a clerk's hand, opening "Madame, nous sommes ..." (f.140r line 1), running over
+f.140v (which ends a paragraph, then "Madame R..." and a short postscript-like block "Lon escrit ..." / "Depuis ceste lettre escripte ...
+l'alarme du palatin de Sendomierz ...") and ending on f.141r line 11 ("... ce que je spere n'aviendra pas"), no signature, no date on the
+leaves seen. f.142r is a different item (a Latin-style oration in French, "Si aucun de vous messieurs ...", on the election of a king). Contents
+of f.140-141 mention l'empereur, le roy de Dannemarc, Monseigneur (Anjou), the palatins (Lasqui = Łaski, Sendomierz), "Balagny", the election:
+an election-campaign report to the queen mother, consistent with item 54/55 (28 Apr 1573, to the queen mother) but **the date is not read on
+the leaves**, so the identification with the 28 Apr letter is inferred from position (straight after the cipher pages ff.132-138) and content.
+
+**Match against the cipher leaves' known clear words (c268 = f.138, lines 1-5, `reading_c268.txt`).** f.140r lines 6-11, read from the 1600 px
+strip (my reading, M where marked ?):
+
+| c268 decode (Tomokiyo key, K38 relabel) | f.140r clear (line) |
+|---|---|
+| L01 `les pe ruiteurs de qui np espargnent lhon` | l.7 "Les [pour?]suiteurs de lempereur qui ny espargnent honneur" |
+| L02 `eur la ra_e la reputation ni la _onp_ien_e nu` | l.7-8 "la fa[ce?] la reputa[ti]on / ny la conscience du" |
+| L03 `poplonfaitparlerlerop ne dal nelar_ quin` | l.8 "roy. Lon faict parler le Roy de dannemarc qui ny" |
+| L04 `upenpninlaisetnoneataenteadrequilest` | l.8-9 "pensa jamais. et donne a attendre quil est" |
+| L05 `eeopilatirentnelaynex_lupionqqil` | l.9-10 "mort(?) ... Ilz tirent / de la une conclusion quil" |
+
+Every one of the five c268 lines has its counterpart in sequence, including the c268 word gaps the decode could not read (L02 "conscience",
+L03 "de Dannemarc" against the decode's `dal nelar_`, L05 "conclusion"); "lempereur" in the clear has no letters in the c268 L01 decode
+(`de qui`), consistent with a name code there. f.140r lines 1-6 precede c268 line 1, so they should match the end of the cipher on f.136
+(c264) or the top of the same letter; not compared (f.136 not transcribed). So **f.140r-141r is a clear text of the letter whose cipher
+runs onto f.138 (c268)**: an in-volume decipherment (or a clear duplicate) of that letter, not a separate letter. This is an image-level
+comparison by one reader, not a transcription: the clear lines above are M-grade readings, and no token in key.tsv or any reading changes.
+
+What this opens: c268 (about 1,050 signs) and probably part of c264 now have a clear text to align against (known plaintext, grade C once
+transcribed and aligned), which is also the long glossed material the judge-control gap lacked (147 letters on f.86). Not done here (brief:
+no key test). Where not found: no date or signature on ff.140r-141r; nothing on f.140-141 matches the f.86 gloss (different letter, 5 Feb).
+
+## Remaining gaps (MONL-140, 14 Oct 2026)
+Read so far: unmeasured as a reading; f.86 150 tokens C 83 / M 64 / U 3 against its own gloss, judge FAIL -1.672; c268 lines 1-5 decoded with 10 C-curl tokens relabelled K38 = t (M), ungraded, judge FAIL -1.300; ff.140r-141r found to be a clear text of the letter whose cipher runs onto c268 (five of five c268 lines matched in order by eye, MONL-140), not yet transcribed or aligned.
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py); MONL-140's ff.140-141 clear text could lift this once transcribed (next gap)
+- known-plaintext alignment of c268 (and c264) against ff.140r-141r - blocker: not-attempted; the clear text was found in this job, which ran no transcription (brief); next: two blind passes of the f.140r-141r clear text (line crops via tools/iiif_lines.py --iiif-host openapi, about 50 lines, 4 units) plus one reconciliation, then tools/interlinear_align.py against c268/c264 passes, ~$9
+- rest of c268, c264, c258 and f.210 - blocker: not-attempted; next: transcribe after the alignment above shows which lines ff.140-141 cover; the 3-unit protocol per 5-10 lines, ~$3 per leaf
+- ff.211-223, f.87 margin, ff.50/56/60/80, items 17/18/112-120 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONL-140, 14 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [x] clear-pages: ff.140r-141r looked at (MONL-140): a clear text of the letter ciphered on f.138, five of five c268 lines matched in order by eye
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell (MONLUC-KEY), per sign form on f.86 (MONLUC-2) and c268 (MONLUC-K07); the C-curl form matched to the table's K38 (MONLUC-BLIND)
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2, no Monluc decipherment found
+- [ ] key-rebuild: C-curl = K38 written on c268 and f.86; planned step: align c268/c264 against the ff.140-141 clear text (interlinear_align.py) to confirm the key and read the unkeyed signs
+- [x] image-check: c268 lines 1-5 look-alike window re-read (MONL-LOOK); f.86 curl sort (MONLUC-CURL); f.140r lines 5-12 at 1600 px (MONL-140)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 3 internal gaps; cheapest next: transcribe ff.140r-141r (two blind passes + reconciliation) and align c268 against it, ~$9

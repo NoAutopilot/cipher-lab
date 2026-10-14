@@ -540,5 +540,57 @@
    "band": 4,
    "date": "07 Oct 2026"
   }
+ ],
+ "monl140": [
+  {
+   "file": "images/scratch140/c272.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060724s/f272/full/1400,/0/default.jpg",
+   "leaf": "f.140r",
+   "sha1": "8f2545bebfd1180f975407fe644ba3f1ec9cb06e",
+   "fetched": "2026-10-14",
+   "job": "MONL-140",
+   "tracked": false,
+   "regen": "regen_monl140.sh"
+  },
+  {
+   "file": "images/scratch140/c273.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060724s/f273/full/1400,/0/default.jpg",
+   "leaf": "f.140v",
+   "sha1": "f0954a0eaad956d72b62c2dbb04e943c8d601028",
+   "fetched": "2026-10-14",
+   "job": "MONL-140",
+   "tracked": false,
+   "regen": "regen_monl140.sh"
+  },
+  {
+   "file": "images/scratch140/c274.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060724s/f274/full/1400,/0/default.jpg",
+   "leaf": "f.141r",
+   "sha1": "d9ec5f711fce8de021ea181e628a8aee9196f14a",
+   "fetched": "2026-10-14",
+   "job": "MONL-140",
+   "tracked": false,
+   "regen": "regen_monl140.sh"
+  },
+  {
+   "file": "images/scratch140/c275.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060724s/f275/full/1400,/0/default.jpg",
+   "leaf": "f.142r",
+   "sha1": "9d61b16777131e3ea87caa5ca33b6c459637bd92",
+   "fetched": "2026-10-14",
+   "job": "MONL-140",
+   "tracked": false,
+   "regen": "regen_monl140.sh"
+  },
+  {
+   "file": "images/scratch140/c272_l5-12.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060724s/f272/pct:13,30,67,17/1600,/0/default.jpg",
+   "leaf": "f.140r lines 5-12",
+   "sha1": "40f2228610913abee8a57cd2067d5f7a5c21c40e",
+   "fetched": "2026-10-14",
+   "job": "MONL-140",
+   "tracked": false,
+   "regen": "regen_monl140.sh"
+  }
  ]
 }
