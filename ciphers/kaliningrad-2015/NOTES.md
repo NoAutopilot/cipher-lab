@@ -705,3 +705,25 @@ Seed 1's decode scored -3140 against the truth's -2396, so the anneal had not co
 iters on 5 seeds (~$1.5 CPU, about 25 min on 4 cores), or a two-stage instrument that fixes width and column order first from the
 sign-adjacency statistic and then runs the homophonic anneal on the untransposed stream. If the larger budget still misses the
 gate, the third-attempt clause (rule 3) retires this tool for the hypothesis.
+
+## KAL-BIG, columnar_homophonic at a larger budget (R15-KAL14's named second attempt), 14 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-14-ytbiz-default-2209-jobs.md` "KAL-BIG" (LANE DEFAULT-A2-2209-14, account 2). CPU only, no
+hosts, no subagents. Intake gate (lane orchestrator, 22:44 UTC): open, exit 0.
+Prior work before the priced step: `tools/prior_work.py kaliningrad-2015 --item-spec 'shelfmark=Kaliningrad bottle 2015'
+--step-type decode --offline` exit 4, all generic holds: 3-tomokiyo and 3-solver UNCHECKED by unit (no folio/R-id) -- covered
+by hand by this folder's own "Solver-repo check (bourdeau, 2 Oct 2026)", "Web and blog check" and check-solved sections, both
+solver repositories grepped there; 4-editions UNCHECKED-NET (a 2015 find has no edition; check-solved records none); 2-leaf LOOK
+(2 crops owed for a gloss/clear-copy check) unchecked in this CPU-only job, not a blocker for a control-gated family run.
+Check 1: no NOTES.md or AUDIT.md section after R15-KAL14 ran this budget.
+Sizing: timing runs on an unregistered control seed 9 (scratch, not scored) gave about 27 microseconds per anneal step, about
+4.5 min a seed at restarts 6 x 150000 iters x widths 2-12, so 5 seeds fit with no cut; the run took 23 min, serial.
+Pre-registered in HYPOTHESES.md "KAL-BIG" (3ad0264d0, time fix e32ab8ce3) before the scored run.
+**Result: control 0.135 / 0.176 / 0.834 / 0.144 / 0.165, mean 0.291, CONTROL BELOW GATE (0.6); target and shuffle not decoded.**
+The true width was picked on 5 of 5 seeds (7/10/5/12/9); the column order was found on one. Second attempt with only the
+budget changed, mean moved 0.322 -> 0.291: by rule 3's third-attempt clause the joint-anneal instrument is retired for this
+hypothesis, "untested-by-this-tool" at N 1066, not refuted. Status stays `open`; no reading. Rule 10: nothing here is a reading.
+Next step (different instrument, ~$2-3 CPU): the two-stage solve -- width from the per-width score (this run shows it is
+reliable), column order from the sign-adjacency statistic between column ends, then the homophonic anneal on the untransposed
+stream; its own matched control first. `tools/gaps_check.py`: SKIP for an `open` target (no Remaining gaps/Escalation sections).
+Verdict: keep going (no outside blocker).

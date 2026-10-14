@@ -1272,3 +1272,29 @@ python3 tools/family_run.py ciphers/kaliningrad-2015/families/r15_kal13/spec_s1s
   --seeds 5 --restarts 6 --gate 0.6 --param profile=target --param widths=2-12 --param iters=150000 \
   --param ctrl_widths=7,10,5,12,9 --target-only-if-gated --decode-tag convB --label "KAL-BIG columnar x homophonic ru s1s, conv B, restarts 6 iters 150000"
 ```
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 14 Oct 2026 23:24 | columnar_homophonic | N=1066 K=28 restarts=6 corpus=s1s.txt.gz profile=target,widths=2-12,iters=150000,ctrl_widths=7,10,5,12,9 | 1-5 | 0.291 (0.135-0.834) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | KAL-BIG columnar x homophonic ru s1s, conv B, restarts 6 iters 150000 |
+
+### KAL-BIG result (14 Oct 2026, 23:01-23:24 UTC by date -u; pre-registration 3ad0264d0/e32ab8ce3 before the scored run)
+
+| seed | true width | width picked | control score | recovery (shift -12..12) |
+|---|---|---|---|---|
+| 1 | 7 | 7 | -3461.9 | 0.135 |
+| 2 | 10 | 10 | -3318.0 | 0.176 |
+| 3 | 5 | 5 | -2674.4 | **0.834** |
+| 4 | 12 | 12 | -3262.8 | 0.144 |
+| 5 | 9 | 9 | -3272.6 | 0.165 |
+
+Control mean **0.291** against gate 0.6: CONTROL BELOW GATE; the target and its shuffle were not decoded. At 2.5x the iterations and
+3x the restarts of R15-KAL14 the solver picks the true width on 5 of 5 seeds (R15-KAL14 run 2: 1 of 3 sure), but reads only one;
+on the other four it stays at -3260 to -3460, far from the converged -2674 of seed 3 -- the column order is the part it cannot
+find. Seed 1, which read 0.795 at the smaller budget, reads 0.135 here (a different anneal path, not a better one). The numbers
+did not move together toward the gate (mean 0.322 -> 0.291), so by the pre-registered wording and rule 3's third-attempt clause:
+**columnar transposition of a homophonic Russian (ru19_lat s1s) substitution is untestable by this instrument (joint anneal over
+column order and key) at N 1066**, logged "untested-by-this-tool", not refuted. A third attempt needs a different instrument: the
+two-stage one (width, then column order, fixed first from the sign-adjacency statistic -- this run says the width is the easy
+part -- then the homophonic anneal on the untransposed stream, which reads a width-1 control at 0.99). Not run here.
