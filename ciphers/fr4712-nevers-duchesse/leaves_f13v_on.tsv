@@ -190,3 +190,27 @@ f117	left	106v	blank (show-through)	no	no	n/a	none	600	F4712-C107
 f117	right	107r	financial account: places (Lyon, Paris, Champagne, Bourges, Poitou ...) against sums in Roman numerals with "lz", descriptions of tailles and traites; "108" struck at head, "107" beside (M)	no	no	n/a	Roman-numeral sums	600+1600	F4712-C107; checked at 1600 px, an account, not code
 f118	left	107v	same account continued, Roman-numeral sums; foot: Arabic-figure columns with labels and totals (e.g. 249427, 74446, 332127; M)	no	no	n/a	Arabic-figure sums	600+1600	F4712-C107; figure columns checked at 1600 px: additions with item labels, not code groups
 f118	right	108r	letter patent in clear "Henry par la grace de Dieu roy de France et de Pologne" (M)	no	no	no	none seen	600	F4712-C107
+f119	left	108v	blank leaf (stamp only)	no	no	n/a	none	600	F4712-C119
+f119	right	109r	letter in clear "Monsieur", signed with subscription at foot (M)	no	no	no	none seen	600	F4712-C119
+f120	left	109v	address panel "A Monsieur ... le duc de Nevers" (M) with two wax seals	no	no	n/a	none	600	F4712-C119
+f120	right	110r	letter/memoir in clear, dense hand, dated line at head (M)	no	no	no	none seen	600	F4712-C119
+f121	left	110v	same text in clear, continued, short marginal note	no	no	no	none seen	600	F4712-C119
+f121	right	111r	same text in clear, ends mid-page	no	no	no	none seen	600	F4712-C119
+f122	left	111v	show-through, faint lines	no	no	n/a	none	600	F4712-C119
+f122	right	112r	letter in clear "Monsieur", large hand; foot: address and pen trials/draft lines "J'ay receu vre lre ...", "... de Celles" (M)	no	no	no	a lone "30" beside "a Monsieur" (M)	600+1600	F4712-C119; lower half checked at 1600 px
+f123	left	112v	show-through and a short address block	no	no	n/a	none	600	F4712-C119
+f123	right	114r	letter in clear "Monsieur" with several signatures at foot (M); foliation read 114 at 3x crop, no f.113 seen	no	no	no	none seen	600+fol crop	F4712-C119
+f124	left	114v	address "A Monsieur Monsr de ..." (M) with show-through and flourishes	no	no	n/a	none	600	F4712-C119
+f124	right	115r	letter in clear "Monseigneur", dense (M)	no	no	no	none seen	600+fol crop	F4712-C119
+f125	left	115v	four lines in clear and a signature flourish	no	no	no	none seen	600	F4712-C119
+f125	right	116r	blank	no	no	n/a	none	600	F4712-C119
+f126	left	116v	docket panel, five short lines (M)	no	no	n/a	none	600	F4712-C119
+f126	right	117r	document in clear, articles marked by marginal strokes and brackets (M)	no	no	no	none seen	600	F4712-C119
+f127	left	117v	same document in clear, continued	no	no	no	none seen	600	F4712-C119
+f127	right	118r	same document in clear, continued, paragraphs	no	no	no	none seen	600	F4712-C119
+f128	left	118v	show-through	no	no	n/a	none	600	F4712-C119
+f128	right	119r	letter in clear "Monseigneur", signed with subscription (M)	no	no	no	none seen	600	F4712-C119
+f129	left	119v	faint show-through of a short letter	no	no	n/a	none	600	F4712-C119
+f129	right	120r	blank with a faint docket	no	no	n/a	none	600	F4712-C119
+f130	left	120v	address panel "A Monseigneur ..." (M)	no	no	n/a	none	600	F4712-C119
+f130	right	121r	list "Du parlement de Tholose": ~40 place names (Gaillac, Castres, Narbonne, Castelnaudary ...; M) with dotted leaders to sums in Roman numerals (c l., m c l. ...) and marginal corrections	no	no	n/a	Roman-numeral sums	600+1600	F4712-C119; list checked at 1600 px, sums not code
