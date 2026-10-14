@@ -278,7 +278,39 @@ Requests: WebSearch 3; www.tgcom24.mediaset.it 1 (404); www.ilgiornale.it 1 (200
 
 ## Next step (ERBA-SIB, 14 Oct 2026)
 
-next: a different design, not this one again -- the case-sensitive letter-class variant (capitalised tokens `Ro`, `Mi`, `Pi`, `Cu`,
+[done 14 Oct 2026 by ERBA-CASE, see Cheap test 4c] next: a different design, not this one again -- the case-sensitive letter-class variant (capitalised tokens `Ro`, `Mi`, `Pi`, `Cu`,
 `NE`/`Ne` as their own classes, K about 13) on the same instrument at the same N with the same per-seed control gate (identifiability
 at K about 13 must be shown by the control first), ~$2. More material would help more: an image of the 2013 yellow sheet or of the
 other bibles (Davidsch 2017: at least three) -- none reachable from the cloud on 14 Oct 2026. Who acts: agent.
+
+## Cheap test 4c (14 Oct 2026, ERBA-CASE, LANE DEFAULT-A2-2209-14, account 2): case-sensitive letter classes, K = 13
+
+Check 1: no later NOTES.md section and no AUDIT.md ran this design. Prior work: `tools/prior_work.py erba-2006 --item-spec
+'item_id=bible-page-plus-siblings-case;...;language=it' --step-type decode --fetch` exit 4 (owed: 1-own LEAD = this job's own claim;
+2-leaf LOOK; 3-solver, 3-tomokiyo UNCHECKED); all four recorded in `prior-work.tsv` (CLEAR x3, leaf CONTEXT: no gloss on the bible-page
+image; 2013 sheet unreachable). 3-editions: none exists (check-solved above). Disk and CPU only, zero network requests.
+
+Pre-registered `specs/cheap-tests/erba-2006/PREREG-test4c.md`, pushed 4782c7243 before any score. Same instrument, N and gate as test
+4b (21 words / 120 letters with the 2013 press siblings, conditional on that press text, rule 2; 8 restarts x 16,000 moves; it21news
+dictionary; every control seed >= 0.60). Design change only: the 13 case-kept token types (cu, Cu, mi, Mi, fi, Fi, un, Ro, ne, Ne, NE,
+Pi, me) as 13 letter classes; random keys drawn surjective. Command `test4_wordconstrained.py --siblings --case --budget 4 --jobs 4`
+(added `--case` option; calls without it unchanged), output `test4c_output.txt`, 5 min wall.
+
+| run | solver letter accuracy | true-key oracle | solver score >= true key |
+|---|---|---|---|
+| primary control, 5 seeds, matched design (random surjective 13-class key), same word lists as test 4b | 0.900, 0.283, 0.892, 0.833, 0.117 (mean 0.605, **min 0.117**) | mean 0.900 (0.833-1.000) | 3/5 |
+| target and 10 nulls | not run (control-first order) | | |
+
+Verdict by the registered rule: **CONTROL BELOW GATE** -- the target was not decoded. This design is **untestable by this instrument at
+K=13, N=120 at this budget**; not refuted, nothing read. The miss is search, not identifiability: in both failing seeds the true key
+scores far above the solver's (100.7 vs 49.3; 107.6 vs 29.8) and the oracle reads 0.875 and 1.000, so at K=13 the dictionary constraint
+does pick out the true partition -- the anneal (single-letter reassignment moves, 8 restarts) does not reach it in 2 of 5 runs. First
+attempt of this design (rule 3's third-attempt clause not engaged).
+
+## Next step (ERBA-CASE, 14 Oct 2026)
+
+next: the same K=13 design with a search fix, not a budget knob alone -- add a letter-swap move and more restarts (e.g. 32 x 16,000),
+or seed restarts from splits of test 4b's case-folded best keys; re-run the matched control first with the same every-seed >= 0.60 gate,
+target and 10 nulls only if it passes, ~$2. Rule 3's third-attempt clause: if a second search-side change still misses, log the design
+"untested by this instrument" and stop on it. More material (an image of the 2013 yellow sheet or of the other bibles) would still
+help more; none reachable from the cloud on 14 Oct 2026. Who acts: agent.

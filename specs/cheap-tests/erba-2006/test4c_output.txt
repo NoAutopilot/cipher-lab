@@ -1,0 +1,20 @@
+TEST 4c (ERBA-CASE): K=13 case=True siblings=True budget=4x (RESTARTS 8 x ITERS 16000) jobs=4
+target: 21 words, 120 letters, lengths [2, 7, 6, 10, 1, 12, 11, 11, 8, 9, 4, 3, 1, 6, 3, 2, 4, 5, 6, 2, 7]; dictionary top 40000 of 33502 types
+PRIMARY CONTROL (gate: every seed >= 0.60): length-profile-matched held-out tokens
+  seed 0: solver acc 0.900  oracle 0.900  solver score 97.5 vs true 97.3  solver>=true
+    plain : in piccola italia conferenza e formalizzate transizione occidentale africano scrittore dopo eco e queste gli di poco sfide figura se farmaci
+    decode: in piccola italia conferenza e ? transizione occidentale africano scrittore dopo eco e queste gli di poco sfide figura se farmaci
+  seed 1: solver acc 0.283  oracle 0.875  solver score 49.3 vs true 100.7  solver<true
+    plain : in svedese vaheed abitazioni e stupefacenti compromesso riscontrata concreto venatorio cioe che e mentre che di alla degli gruppo di fornito
+    decode: in ? ? ? e ? ? ? consueto ? come che e ? che di alla degli ? di riuniti
+  seed 2: solver acc 0.892  oracle 0.892  solver score 88.9 vs true 88.8  solver>=true
+    plain : da tranvia flavia terrorismo e interessanti veterinaria considerato hollande tesoriere aver per e sabato con di alla serve quella di padrone
+    decode: da ? ? terrorismo e interessanti veterinaria considerato hollande tesoriere aver per e sabato con di alla serve quella di padrone
+  seed 3: solver acc 0.833  oracle 0.833  solver score 92.3 vs true 92.3  solver>=true
+    plain : vi tentato stella repubblica i accertamento organizzato sostitutivo putativa eventuali tale che l andava piu da meno hanno italia di carboni
+    decode: vi tentato stella repubblica i accertamento organizzato ? ? eventuali tale che l andava piu la meno hanno italia di carboni
+  seed 4: solver acc 0.117  oracle 1.000  solver score 29.8 vs true 107.6  solver<true
+    plain : in durante ancora calciatori l classificato qualificano produttrice potevano personale sono del e parete piu il babi varie grazie il diffuso
+    decode: in ? ? ? e ? ? ? ? ? bene dal a foggia piu il voti corsa ? il ?
+  mean solver acc 0.605, min 0.117 (gate: all >= 0.6); mean oracle 0.900; solver>=true 3/5
+VERDICT: CONTROL BELOW GATE (min seed 0.117 < 0.6) -- target not decoded (control-first order).
