@@ -1,0 +1,110 @@
+line	pos	value	grade	reason
+50a01	2	pour	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a01	4	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a02	6	pour	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a02	8	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a03	2	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a03	4	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a03	8	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a03	11	se	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a03	14	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a03	17	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a04	1	vous	M	COL26-C50 14 Oct 2026: no-gloss: row has no gloss, nothing on the leaf checks this token
+50a04	5	h	M	COL26-C50 14 Oct 2026: no-gloss: row has no gloss, nothing on the leaf checks this token
+50a05	4	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a05	10	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a05	15	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a06	8	de	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a06	15	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a07	4	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a07	5	m	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a07	6	n	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a08	3	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a08	12	de	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a08	13	b	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a08	16	de	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a08	19	a	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a08	20	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a09	3	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a09	6	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a09	12	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a10	3	pour	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a10	5	c	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a11	1	se	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a11	6	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a11	16	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a11	17	pour	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a11	22	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a11	23	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a12	1	p	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a12	2	c	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a12	5	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a13	2	la	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a13	8	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a13	10	h	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50a13	11	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a13	17	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a13	21	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a13	22	se	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a14	3	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a14	9	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a14	16	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b01	11	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b01	18	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b01	20	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b01	23	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b02	4	c	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b03	3	u	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b04	2	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b04	3	pour	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b04	5	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b04	10	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b04	13	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b05	1	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b05	3	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b05	6	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b05	7	se	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b05	11	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b05	15	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b07	2	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b07	6	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b07	11	m	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b07	13	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b09	1	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b09	4	ux	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b09	6	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b09	11	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b09	12	pour	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b09	13	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b09	14	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b09	21	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b09	25	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b10	1	pour	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b10	11	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b10	17	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b10	19	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b10	23	pour	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b10	25	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b11	4	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b11	11	que	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b11	18	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b11	20	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b11	21	de	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b11	22	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b11	24	a	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b11	26	c	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b12	2	ez	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b12	6	la	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b12	7	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b12	8	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b12	10	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b12	12	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b12	13	se	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b13	6	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b15	12	h	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b15	13	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b15	16	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b15	19	b	M	COL26-C50 14 Oct 2026: walk-miss: A2-COL15 ordered walk did not find the value in this row's gloss at this place
+50b15	20	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b15	23	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50b16	3	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50

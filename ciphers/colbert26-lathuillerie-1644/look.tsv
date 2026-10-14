@@ -14,3 +14,17 @@ utc	item_id	look_row_id	role	folio	canvas	image	source	status
 2026-10-13 06:57	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	after-2	27r			folio arithmetic	answered CLEAR (recorded)
 2026-10-13 06:57	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	after-3	27v			folio arithmetic	answered CLEAR (recorded)
 2026-10-13 06:57	adhoc-fb1d1c	adhoc-fb1d1c:2-leaf:8ef686	after-4	28r			folio arithmetic	answered CLEAR (recorded)
+2026-10-14 19:31	adhoc-c8db9e	adhoc-c8db9e:2-leaf:2f6911	cipher-page		50		canvas arithmetic	owed
+2026-10-14 19:31	adhoc-c8db9e	adhoc-c8db9e:2-leaf:2f6911	before-1		49		canvas arithmetic	owed
+2026-10-14 19:31	adhoc-c8db9e	adhoc-c8db9e:2-leaf:2f6911	before-2		48		canvas arithmetic	owed
+2026-10-14 19:31	adhoc-c8db9e	adhoc-c8db9e:2-leaf:2f6911	after-1		51		canvas arithmetic	owed
+2026-10-14 19:31	adhoc-c8db9e	adhoc-c8db9e:2-leaf:2f6911	after-2		52		canvas arithmetic	owed
+2026-10-14 19:31	adhoc-c8db9e	adhoc-c8db9e:2-leaf:2f6911	after-3		53		canvas arithmetic	owed
+2026-10-14 19:31	adhoc-c8db9e	adhoc-c8db9e:2-leaf:2f6911	after-4		54		canvas arithmetic	owed
+2026-10-14 19:31	adhoc-c8db9e	adhoc-c8db9e:2-leaf:2f6911	cipher-page		50		canvas arithmetic	answered KNOWN-PART (recorded)
+2026-10-14 19:31	adhoc-c8db9e	adhoc-c8db9e:2-leaf:2f6911	before-1		49		canvas arithmetic	answered KNOWN-PART (recorded)
+2026-10-14 19:31	adhoc-c8db9e	adhoc-c8db9e:2-leaf:2f6911	before-2		48		canvas arithmetic	answered KNOWN-PART (recorded)
+2026-10-14 19:31	adhoc-c8db9e	adhoc-c8db9e:2-leaf:2f6911	after-1		51		canvas arithmetic	answered KNOWN-PART (recorded)
+2026-10-14 19:31	adhoc-c8db9e	adhoc-c8db9e:2-leaf:2f6911	after-2		52		canvas arithmetic	answered KNOWN-PART (recorded)
+2026-10-14 19:31	adhoc-c8db9e	adhoc-c8db9e:2-leaf:2f6911	after-3		53		canvas arithmetic	answered KNOWN-PART (recorded)
+2026-10-14 19:31	adhoc-c8db9e	adhoc-c8db9e:2-leaf:2f6911	after-4		54		canvas arithmetic	answered KNOWN-PART (recorded)
