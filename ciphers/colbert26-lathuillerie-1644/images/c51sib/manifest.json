@@ -1,0 +1,178 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "c51_L01.jpg",
+   "source_url": "",
+   "source_file": "canvas51_full.jpg",
+   "box": [
+    370,
+    208,
+    1250,
+    376
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     112,
+     188,
+     242,
+     322,
+     578,
+     638
+    ]
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "c51_L02.jpg",
+   "source_url": "",
+   "source_file": "canvas51_full.jpg",
+   "box": [
+    370,
+    284,
+    1250,
+    441
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     112,
+     188,
+     242,
+     322,
+     578,
+     638
+    ]
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "c51_L03.jpg",
+   "source_url": "",
+   "source_file": "canvas51_full.jpg",
+   "box": [
+    370,
+    349,
+    1250,
+    508
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     112,
+     188,
+     242,
+     322,
+     578,
+     638
+    ]
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "c51_L04.jpg",
+   "source_url": "",
+   "source_file": "canvas51_full.jpg",
+   "box": [
+    370,
+    416,
+    1250,
+    676
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     112,
+     188,
+     242,
+     322,
+     578,
+     638
+    ]
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "c51_L05.jpg",
+   "source_url": "",
+   "source_file": "canvas51_full.jpg",
+   "box": [
+    370,
+    584,
+    1250,
+    834
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     112,
+     188,
+     242,
+     322,
+     578,
+     638
+    ]
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "c51_L06.jpg",
+   "source_url": "",
+   "source_file": "canvas51_full.jpg",
+   "box": [
+    370,
+    742,
+    1250,
+    900
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     112,
+     188,
+     242,
+     322,
+     578,
+     638
+    ]
+   },
+   "date": "14 Oct 2026"
+  }
+ ]
+}

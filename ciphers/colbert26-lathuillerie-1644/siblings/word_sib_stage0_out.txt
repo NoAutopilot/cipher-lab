@@ -1,0 +1,6 @@
+COL26-SIB word-grain test of key_f23 C on one sibling leaf; key_f23 C codes 24: 10 12 16 18 22 23 24 25 28 30 33 36 40 43 48 49 51 53 65 69 78 89 97 98
+c51: 6 rows, gloss words 24, K = 23 codes (excluded ['30']), ideal N (K occurrences in glossed rows) 18, pool 977 words
+c51: synthetic power q=0.25: 1.000 over 300 synthetic leaves (N within +-3 of 18)  <- gated
+c51: synthetic power q=0.00: 1.000 over 300 synthetic leaves (N within +-3 of 18)  (sensitivity, not gated)
+c51: synthetic power q=0.40: 1.000 over 300 synthetic leaves (N within +-3 of 18)  (sensitivity, not gated)
+c51: STAGE 0 VERDICT live
