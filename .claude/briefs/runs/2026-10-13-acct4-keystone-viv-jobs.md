@@ -159,3 +159,55 @@ Price: vision calls: 6 x USD 1.4 = 8.4 (2 cipher + 4 decipherment Sonnet calls) 
 stop before a unit that would cross 80% of cap or box. If the ink-70 cipher does not start on f.211r (a plain head longer than a
 page), take the first page that is mostly cipher and the decipherment pages that match its opening. Done line: alignment share vs
 shuffled p95 first, then err_2reader, the label table totals, and whether the truth item was registered.
+
+## Wave 3 (01:1x UTC 14 Oct 2026; VIV-KEY and VIV-CLS done and archived)
+Results read: VIV-KEY added key.tsv row e -> m at grade C (4 of 5 ink-67 anchors, all inside "comm-"; ink 40 had none); the b2 and
+200-wrong-key gates PASS on inks 63, 53, 54 but a post-hoc e = i passes them too, so they cannot pick the letter; decode_key --try on
+ink 63 rejects e = m and prefers i (non-blind, weak at this noise); ink 63 U 1,103 -> 942, longest H run 40 unchanged, no new clause
+(NOTES "VIV-KEY", PREREG-VIVKEY.md). VIV-CLS gate FAIL: a pen-unit tile kNN trained on f.102r + f.103r reads f.201r at 0.313 vs passA
+0.154 on the 415 covered positions, top-3 holds the truth for 0.359 of passA's errors, coverage 0.46 (NOTES "VIV-CLS"). Same rules as
+waves 1-2. Account 2 runs VIV-70 (ink 70/71 pair) in parallel from WORK-QUEUE.
+
+### VIV-KEYV (Opus verifier, cap 6, box 90 min, openapi.bnf.fr <= 4): rule on the e -> m key row, write AUDIT 7, propagate
+You are a verifier, not the solver (CLAUDE.md "Two hats"): you do not protect VIV-KEY's conclusion. Claim under audit: key.tsv row
+"e -> m, grade C, clerk anchors ink 67 (4/5, all in comm-)", and the readings of inks 63, 53, 54 re-decoded under it (VIV-KEY, 14 Oct
+2026). Steps: 1. Read NOTES "VIV-KEY" (its "For the verifier" paragraph), PREREG-VIVKEY.md, tx/viv67_labels.tsv rows for label e,
+AUDIT.md AUDIT 2-4 (the depth measure used), and the key sheet glyphs/sheet_tomokiyo_v1.png (label e is Tomokiyo's e-like sign; the
+published key gives it no value in key.tsv -- check key_tomokiyo.tsv and say what Tomokiyo's table has for it). 2. Shape look: cut the
+four ink-67 "comm-" tiles (f201r L05:53, L10:59, L12:36, L13:14; regenerate the f.201r crops with the manifest "viv67" commands, 1
+native request) and 8 ink-63 label-e tiles (positions from reading_piece63.tsv / tx/rec_f19x, crops regenerated from images/p63/
+manifest.json, <= 3 requests) and compare by eye and with one blind Sonnet call ("same sign or not", tiles shuffled, no values
+shown): is the ink-67 "comm-" sign the same glyph as ink 63's label e, or a doubled-m / "mm" ligature the readers also label e? 3. Weigh
+the four single-leaf anchors (one word family) against the crossword's preference for i on 161 ink-63 positions; decide: keep at C,
+downgrade to M (listed, not settled), or revert. A row that rests on one word family on one leaf is M at most unless the shape look
+says the glyph is the same and the crossword's i preference is explained. 4. Depth re-check (rule 4a) on the current
+reading_piece63.tsv, 53 and 54 files with AUDIT 2's longest-run measure; write "## AUDIT 7 (VIV-KEYV, 14 Oct 2026)" in AUDIT.md with
+the per-item classification (N3 unchanged unless you find otherwise; D per item), the key-row verdict, and the propagation (status.json
+depth fields via tools/depth_check.py; any SECOND-OPINIONS-QUEUE.tsv row for this target that quotes a changed reading). If you revert
+or downgrade, make the key.tsv edit yourself, re-run the three decode scripts with --check, and say so. 5. Report what was found and
+where it was not found; do not classify novelty beyond carrying the existing N3. Price: vision calls: 1 x USD 1.5 = 1.5; Opus floor
+2.5; cap 6. Done line: the key-row verdict first (keep C / M / revert, and why), then D per item, then what was propagated.
+
+### VIV-HUMAN (Opus, cap 8, box 90 min, openapi.bnf.fr <= 2): the owner's blind packet -- can a person read this hand where the machines fail?
+Why: the owner offered (13 Oct 2026) to read or review signs; rule (e) of the handoff allows a sorter ask only with a pre-registered
+test that consumes it within a day. This is that test. The question: on positions where the blind readers are wrong against a reliable
+truth, does a person's eye get them right? If yes, a person's read of the disputed positions of ink 63 is the instrument that reaches
+D2; if no, no reader of any kind will, and the lane turns to key-side and alignment work. Material: f.201r (truth vivonne1573-f201r-dev,
+flags: use only UNFLAGGED scored positions, where the two clerk reads agree, so the truth is reliable), passes
+benchmark-tx/outputs/vivonne1573-f201r-dev/ (passA, passB) and tx/f201r_rec.tsv. Sets: W = unflagged scored positions where passA
+or passB (or both) is wrong against the truth value; R = unflagged scored positions where both are right. Sample with seed 20261014:
+30 from W (all of W if fewer), 12 from R; shuffle; these are the question tiles. Build: regenerate the f.201r crops (manifest "viv67",
+1 request); build the page with `tools/sign_sorter.py` ONLY (read its docstring and --help; `--signs` = every f.201r sign with its
+committed rec label as the pile label, BLIND: no values, no decode choices, no reader weights; `--focus` = the 42 question tiles,
+`--focus-to-tray`; `--lede` two sentences telling the owner what to do: each tile in the tray is one sign, put it in the pile whose
+signs look the same, or "new sign" if none does, about 15 minutes; `--cipher-lines` so R01/R02 hold); run `tools/sorter_preflight.py`
+and `tools/cvd_check.py` and paste both outputs; the page must pass every row of tools/data/sorter_owner_requirements.tsv that the
+preflight checks. Write PREREG-VIVHUMAN.md BEFORE the page is built: the sets, the seed, the scoring rule (owner's pile label -> key value
+vs truth value; "new sign" counts as wrong unless the truth position is off-key), the interpretation rule: owner correct share on W
+>= 0.60 AND on R >= 0.90 -> "a person is an instrument for disputed positions of this hand"; on W < 0.40 -> "not an instrument"; between
+-> undecided; and how the answers are consumed (tools/sign_sorter_apply.py export -> tx/vivhuman/score.py, which the worker writes and
+tests on a synthetic export before the owner answers). Deliver: commit the page under tx/sorter_human/ (HTML with embedded tiles under
+3 MB; no page image; this mirrors tx/sorter_fp/, the D4-VIV precedent) AND publish it with the Artifact tool (title "Vivonne f.201r:
+42 signs to place", icon "grid"); put the artifact URL and the repo path in the done line and in NOTES "VIV-HUMAN". Do not score anything;
+the parent scores when the owner answers. Price: vision calls: 0 x USD 0 = 0; Opus floor 2.5; the sorter build and preflight
+(browser emulation) are the cost; cap 8. Done line: the artifact URL first, then |W| and |R| and the preflight verdict.
