@@ -15848,3 +15848,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 17:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 17:10 UTC: spawned 0 (), queued left 0
 2026-10-14 17:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 17:35 UTC 14 Oct by date -u: spawned 0 (no queued account-4 rows; autofill held, default lane < 12 h since DEFAULT-account-4-20261014-0935), queued left 0
 2026-10-14 17:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 17:39 UTC 14 Oct: spawned 0 (autofill: default lane < 12 h, next 18:40 UTC), queued left 1 (SORTER-RERENDER-A3, account 3, stood down)
+2026-10-14 17:56 | LANE VIV-KEYSTONE (account 4, parent session_01D7XWmthshMVqxumdDvitPh) | check-in 22 (17:5x UTC 14 Oct by date -u): owner packet F5Z4DJ8vDxFoRwa5zFpXMU still unanswered; nothing in flight; no change. Next check-in 18:57 UTC.
