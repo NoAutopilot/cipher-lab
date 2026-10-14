@@ -1247,3 +1247,28 @@ anneal had not fully converged). Seed 2 (width 10) scored -3557, no width standi
 **Verdict by the pre-registered wording: columnar transposition of a homophonic Russian (ru19_lat s1s) substitution is untestable
 by this instrument at N 1066 and this budget (restarts 2, 60000 iters, widths 2-12).** Not a negative on the target; the target and
 its shuffle were never decoded. Conditional on Ernst's transcript and convention B.
+
+### KAL-BIG pre-registration (14 Oct 2026, 23:06 UTC by date -u, before any scored run): R15-KAL14's named second attempt
+
+Brief `.claude/briefs/runs/2026-10-14-ytbiz-default-2209-jobs.md` "KAL-BIG" (LANE DEFAULT-A2-2209-14, account 2). Same family
+(`columnar_homophonic`), same convention B cipher (`families/r14_kal12/cipher_marked_B.txt`, N 1066, K 28), same spec, corpus
+(ru19_lat s1s) and shift-tolerant `score_recovery` (-12..12) as R15-KAL14 run 2; only the budget changes.
+- Budget: restarts 6 per width, iters 150000, widths 2-12, t0 1.0, order_p 0.25, uni_weight 1.0; seeds 1-5, control widths
+  7/10/5/12/9 by seed (the family default). Sizing (timing runs on an unregistered control seed 9, output to scratch, not
+  scored here): about 27 microseconds per anneal step, so about 4.5 min per seed, about 23 min for the 5-seed control, inside
+  80% of the 70-minute box with no seed cut; one process, serial, no other CPU job.
+- Gate: control mean recovery >= 0.6. If not met: CONTROL BELOW GATE, target not run. This is then the second attempt at an
+  unchanged instrument with only the budget knob turned (rule 3 third-attempt clause): logged "untestable by this instrument
+  at N 1066" and the next attempt must be a different instrument -- the two-stage instrument (width and column order fixed
+  first from the sign-adjacency statistic, then the homophonic anneal on the untransposed stream), not run in this job.
+- If met: family_run decodes the target in the same command (`--target-only-if-gated`); a reading is claimed only on a judge
+  PASS of the target with the `--shuffle-target 1` decode FAIL. The shuffle run re-runs the control (about 28 min) and is run
+  in this job only if it fits 80% of the box; otherwise the target result is reported as "gated, shuffle owed", no reading.
+
+Command:
+```
+python3 tools/family_run.py ciphers/kaliningrad-2015/families/r15_kal13/spec_s1s.json --family columnar_homophonic \
+  --cipher ciphers/kaliningrad-2015/families/r14_kal12/cipher_marked_B.txt --tokens space --corpus tools/data/ru19_lat/s1s.txt.gz \
+  --seeds 5 --restarts 6 --gate 0.6 --param profile=target --param widths=2-12 --param iters=150000 \
+  --param ctrl_widths=7,10,5,12,9 --target-only-if-gated --decode-tag convB --label "KAL-BIG columnar x homophonic ru s1s, conv B, restarts 6 iters 150000"
+```
