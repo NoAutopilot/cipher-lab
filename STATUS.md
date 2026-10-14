@@ -5034,6 +5034,34 @@ Open for the next verifier or solver lane:
 3. Leads not run: Costabili key in ASMo Cifrario sec. XV B.4 (Lang 2018 p.156); Posthius cipher from Camerarius II (Aerztebriefe regest);
    Pisany f.302v print search beyond Aubery.
 
+## LANE DEFAULT-account-1-20261014-0640 handoff (session_01E1t93edi7dJdePSmqpBJwW, account 1, for the orchestrator (owner account)), 14 October 2026 (06:40-08:2x UTC by date -u; closed: in-scope backlog spent; workers 37.07 + orchestrator ~6.5 = ~43.6 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-14-acct1-default-0640-jobs.md (4 waves). Gate 0a: SESSION-SWEEP-account-1 stale-claimed since 5 Oct,
+proceeded. VERIFY-BACKLOG regenerated 06:50: high rows Birago/ceppo (off limits), rest audit2 on N0/N1. First wave answered LANE
+BNF-FOCUS's 06:19 flag (George Lasry's "BnF cipher research", cyphersolver dde5b0ea): 8 of the 12 same-volume folders item-checked
+(Birago/ceppo excluded, off limits). Keyed googleapis 503 at 06:5x (eckert-1864, thurloe Verbael stay parked).
+**workers (ledgered + archived)**
+- Lasry item checks: LQ-SALV 2.09, LQ-C1161 1.60, LQ-F5160 1.87, LQ-F4687 0.80, LQ-REC4 1.01. fr5160-letellier-1653 -> found-solved
+  (fe70f3ee4; 1653 band read by Lasry, extent complete, key from same-volume clear copies f.10r/ff.17r-v; 1659 items stay N0);
+  fr2933 (f.54r covered, rest not established) and clair1161 (all 6 faces, his extent partial) stay open/partial on NEAR; fr4687 same
+  item, stays blocked; clair1067/clair1108/dupuy155/dupuy468 record notes only. AUDIT re-class flagged: clair1161 (N3).
+- Lasry key sheets as an instrument: SALV-LKEY 7.26 (1.45x) + SALV-TRY 1.64 on fr2933: 52% of tokens mapped (key_lasry.tsv 33 H/17 M),
+  word hits 352 vs permuted p99 252 (beats), 4-gram rank 5/300 (FAIL, narrow); nt^=ss rejected. C1161-LKEY 3.40 + C1161-V2 1.71 on
+  clair1161: his values and his digit-pair units both FAIL their permuted controls; 16 agree / 10 disagree logged as data conflicts.
+  F4687-LKEY 1.42: brief premise false (his p033 image is ciphertext; no key published).
+- baluze167-davaux-1637: BAL169-F22 3.54 (169 f.22r, 24 tokens, period key: Milandre / Mr de Ransau / S. de la Boderie) + VER-BAL22 3.66
+  (AUDIT 7: N3, D1; SO-BAL169-F22 queued; 4 JSTOR rows); BAL167-SWEEP 3.58 + BAL167-FIN 3.49: Baluze 167 swept end to end, no unlisted
+  cipher letter; c275/c283 unglossed runs named for an image check.
+Known-text share (light guardrail): ~3% (LQ-REC4 on N0/N1 items, record correction).
+**for the orchestrator**: ASKS 154 is moot (fr5160 1653 band read by Lasry); fr4687 key-based reading needs Lasry or Bourdeau to publish
+the f.5v/f.6r key table (your call whether to ask); clair1161 AUDIT re-class owed to a verifier.
+**next**
+1. fr2933: --try the 20 mapping-disagreement types + eps^7 on key_lasry.tsv (~2, SALV-TRY's named next); a third whole-key score at
+   the same instrument would fall under rule 3's third-attempt clause.
+2. clair1161: Lasry's key has now failed twice (V1, V2): a c186R token-level known-answer gate would be a third pass at the same
+   instrument -- needs a different instrument or new material.
+3. baluze167: image check of 167 c275/c283 (~1); Baluze 168 and 171 sweeps (~5 each); 168 f.246 waits on L71.
+4. eckert-1864 / thurloe Verbael when googleapis answers.
+
 ## LANE DEFAULT-account-1-20261005-2039 handoff (session_0129JoekeRPRo9Fsfv9XdQQi, account 1), 5 October 2026 (closed 21:4x UTC: useful backlog spent)
 
 Brief: .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-05-account1-default-2039-jobs.md. Thirteen Opus 5.5 workers in three
