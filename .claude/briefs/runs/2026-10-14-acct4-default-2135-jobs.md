@@ -108,3 +108,7 @@ Verdict: "per-language letter-count rank and transposition --langs, ~$1". Read F
 tools/data (list them), rank the target's letter counts among windows of the same N; then the transposition family with `family_run.py --langs`
 (one matched control per language first; a language whose control misses its gate is CONTROL BELOW GATE, not a negative). Both numbers per
 language in HYPOTHESES.md. NOTES "## FAIR-LANG", gaps + Verdict, gaps_check.
+
+## Sessions (wave 2, spawned 22:04 UTC 14 Oct)
+SFZ-G1 session_01B9oowW1x1EA7S93Et928a9; BAL171-TAIL session_01B6ALuUj7fzQC9wmomjU7cF; BAL169-F22 session_01Y42nNr4JeNdgn8mdQPMjGj;
+F4712-C107 session_015VLdSojpDv9svHyMFbNfTq; FAIR-LANG session_01KcK5ciU7cmeVRFGVRKdMWD.
