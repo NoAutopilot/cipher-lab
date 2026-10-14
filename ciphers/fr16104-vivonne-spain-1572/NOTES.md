@@ -2202,15 +2202,96 @@ reader set is not a property of the hand alone.
 Suggestion (not done, outside the brief): add this result to tools/data/tool_shelf.tsv's `key_decode_lattice.py
 --confusion-matrix` row (second hand, dev PASS / confirm FAIL, ceiling 0.124).
 
-## Remaining gaps (VIV-LAT refresh, 14 Oct 2026; supersedes the VIV52-O list, all its other lines kept)
+## VIV-67 (14 Oct 2026, 00:01-00:2x UTC by date -u, account-4 worker for LANE VIV-KEYSTONE): ink 67 / ink 68, a second known-plaintext pair of this hand
+Brief: .claude/briefs/runs/2026-10-13-acct4-keystone-viv-jobs.md "VIV-67". Measurement only: key.tsv, reading_piece63.tsv, status.json and
+every committed reading untouched. PREREG-VIV67.md pushed (1a2ace2f) before any pass, decode or alignment.
+
+Prior work (`tools/prior_work.py fr16104-vivonne-spain-1572 --item-spec 'fr.16105 f.201r ink 67 cipher + ff.205r-205v ink 68 dechiffre'
+--step-type transcribe`, exit 4; ink 67 has no items.tsv row): owed LOOK 2-leaf (answered by this job's 600 px overview of c206/c210/c211,
+below: plain head + cipher on f.201r, no gloss on the cipher leaf; the decipherment is on its own leaves) and UNCHECKED 3-tomokiyo / 3-solver /
+4-editions (by hand: Tomokiyo's henryiii.htm page covers the key only, no ink-67 plaintext on disk; neither solver cache names fr.16105 f.201r;
+the ink-67 plaintext is the clerk's ink 68 by construction, so this known-answer step does not depend on print). Novelty not in question
+(a period decipherment is the truth); no N-class (rule 10).
+
+**Leaves (by eye, 600 px overviews, openapi.bnf.fr):** c206 right = f.201r, "20 Octobre 1573 / Madrid", "du s.r de S.t Goard au Roy", ink "67 / 201":
+four plain lines ("Sire, Encores quil ne se presente occasion de consequence ... de sa certaine") then 24 cipher lines; c210 right = f.205r, "dechiffre de
+la precedente", ink "68 / 205", opening "Sire. Encores quil ne se presente ..." (as piece_table row 68); c211 left = f.205v. Offset canvas = folio + 5 here.
+
+**Crops** (pasted per Usage 6; overlays checked; a first 3 x 1600 px cut with the text starting mid-s1 and a second at x 800 that clipped
+line starts were discarded before any pass):
+```
+$ python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 206 --iiif-host openapi --region 4100,350,3650,5350 --out ciphers/fr16104-vivonne-spain-1572/images/p67 --prefix c206_f201r --follow-slope 400 --distance 70 --max-width 1600 --overlap 150 --debug
+  (fetch; 29 bands incl. header and duplicate slope bands -- crops discarded)
+$ python3 tools/iiif_lines.py --image .../images/p67/src_image_v3_ark_12148_btv1b9009663p_f206_4100_350_3650_5350.jpg --region 680,1500,2970,3700 --out ciphers/fr16104-vivonne-spain-1572/images/p67 --prefix c206_f201r --follow-slope 400 --distance 70 --max-width 1560 --overlap 150 --debug
+  region 2970x3700, 25 lines, 25 bands x 2 segments; pitch 126 distance 70 prominence 223.3; wrote 50 crops   (L01 = 4th plain line, L02-L25 cipher)
+$ python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 210 --iiif-host openapi --region 4300,350,3600,5500 ... --lines-per-crop 3 --debug   (fetch; crops discarded)
+$ python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 211 --iiif-host openapi --region 150,100,3750,5750 ... --lines-per-crop 3 --debug   (fetch; crops discarded)
+$ python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py <c210 src> --out images/p67/dec --prefix c210_f205r --strips 8   # ink-minimum strips, halves sharing 400 px
+$ python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py <c211 src> --out images/p67/dec --prefix c211_f205v --strips 7
+```
+Line detection on the widely spaced clerk hand is unreliable (as N5-VIVK found), so the decipherment pages were read from ink-minimum strips
+(checked by eye: every cut falls between lines). No image is committed; images/manifest.json "viv67" holds the URLs and the regenerate commands.
+
+**Passes** (6 Sonnet subagent calls, blind, one page per call): f.201r A and B (tx/SIGNS.md); ff.205r, 205v A and B (tx/DEC_READ.md).
+- Cipher: tools/reconcile_passes.py then tx/reconcile_vivk.py's six label rules unchanged -> tx/f201r_rec.tsv, 1,339 signs; **err_2reader 0.201**
+  (agree 1,070 / 1,340 aligned, 270 disagreement columns; label rules settled 17, 172 splits left at pass A, 81 one-pass gaps). Top splits:
+  3/z 15, o/p 14, c/u 12, S/s 11, h/k 9, o/u 7, n/r 7. Tokenisation fix (tx/viv67_prep.py, before reconcile_passes): the whitespace tokenizer split
+  multi-word [PLAIN:...] groups (L01's plain line, and "[PLAIN:Il non]" which both readers wrote inside L12 and L17) into 17 word tokens that entered
+  the cipher stream; joined into one token, re-reconciled; the gating control was the same to four places before and after (0.7443).
+- Decipherment: tx/viv67_merge_dec.py (tx/merge_dec.py's rules, imported) -> tx/dec67_norm.txt, 2,102 letters; A/B word agreement f.205r 0.661
+  (pass B wrote 36 output lines for ~24 manuscript lines, partly repeating the h1/h2 overlap), f.205v 0.803. tx/dec_norm.txt (ink 41) untouched.
+
+**Gate (PREREG-VIV67; benchmark-tx/build_vivonne_f201r.py, tx/vivk67_result.json):** whole f.201r stream (1,270 collapsed codes) vs whole dec67
+(2,102 letters), confirm2's align() and control, seed 20261014:
+| key | real match share | aligned keyed | 200 value-shuffled keys mean / p95 / max | rank | verdict |
+|---|---|---|---|---|---|
+| published (key_tomokiyo.tsv), gating | **0.744** | 1,009 | 0.453 / 0.507 / 0.527 | 1 of 201 | **PASS** |
+| key.tsv full set (report only, 50 draws) | 0.739 | 1,026 | 0.457 / 0.498 / 0.531 | 1 of 51 | PASS |
+For comparison, ink 40 f.103r (confirm2 control): 0.605 vs p95 0.498. Aligned span dec67[298:1701] (control window +-200 = [98:1901]): the ~300 letters before it are the four plain lines
+(not in cipher) and the 401 letters after it are not reached by f.201r -- consistent with the cipher continuing on f.201v.
+
+**Truth item registered:** benchmark-tx/vivonne1573-f201r-dev.truth.tsv (split=dev, BENCHMARK-TX.tsv row, sha256 6c145337...; `--check` ok):
+1,339 positions, 894 scored (unaligned 178, off-key 82, align-uncertain 67, letter-off-key 62, key-M y 36 / S 15 / b 5); flags at build: align-conflict 163,
+clerk-split 356, unflagged 454; no verifier flags file yet. Scores (tools/tx_bench.py, as measured / flagged-excluded): passA 0.185 / 0.037, passB 0.199 /
+0.046, committed reconciliation 0.160 / 0.000 -- the committed figure is circular (the truth was aligned to it), as confirm2's is.
+
+**Unkeyed and M labels against the clerk letter** (tx/viv67_labels.py -> tx/viv67_labels.tsv per occurrence with DP confidence, tx/viv67_labels_summary.tsv;
+counts only, NO key edit; top aligned letters, all occurrences / at local confidence >= 0.5):
+| label | status | n | aligned | top aligned | conf >= 0.5 |
+|---|---|---|---|---|---|
+| y | M (y=h) | 44 | 36 | r 11, l 9, n 4, e 4 | r 11, l 9, e 4, h 3 |
+| o (single) | outside key | 30 | 16 | p 5, e 3, i 3, r 2 | p 5, e 3, i 2, r 2 |
+| c | outside key | 25 | 18 | p 8, e 5, u 2, i 2 | same |
+| S | M (S=b) | 24 | 15 | b 10, a 1, e 1, g 1 | b 10 |
+| V | outside published key (key.tsv V=n, C) | 17 | 13 | n 7, s 2, t 1, m 1 | same |
+| t | outside key | 7 | 5 | g, r, s, u 1 each | -- |
+| {curl} | outside key | 7 | 6 | scattered | -- |
+| 2 | outside key | 6 | 5 | e 3, u 1, m 1 | same |
+| i | outside key | 6 | 3 | q, p, i 1 each | -- |
+| b | M (b=z) | 5 | 5 | z 2, f, p, m 1 each | same |
+| r | outside key | 5 | 4 | l, q, m, p 1 each | -- |
+| e | outside key | 5 | 5 | m 4, s 1 | same |
+| Z | outside key | 3 | 2 | l 1, y 1 | -- |
+| l, 5, 8, H, {scribble}, {blot} | outside key | 1-2 each | | | |
+Totals: 193 occurrences of 19 labels, 138 aligned. Read beside ink 40's anchors (VIV-ANCHOR): V -> n again the top letter (7 of 13); S's published value b is
+the top letter (10 of 15) on this leaf, where ink 40 had a above b; y does not take h (r 11, l 9: the reader label y still merges more than one sign); e -> m
+(4 of 5) matches N7-VIV63G's weak "m(m)" proposal; c and single o both lean p (8 of 18, 5 of 16), 2 leans e (3 of 5). Interpretation only, no gate run on
+any label; a key change is a later PREREG'd job with the wrong-key control.
+
+Not done (brief met at step 4 + outputs): f.201v-203r (the rest of ink 67) and ff.205v end-207 (rest of ink 68) not fetched; no lattice/VIV-LAT recipe
+run on the new item; no verifier flags. Requests: openapi.bnf.fr 6 (3 x 600 px overviews, 3 native regions, all HTTP 200, >= 3 s apart, take/release
+lines in ROOM.md); gallica.bnf.fr 0. Subagent calls: 6 Sonnet (2 cipher, 4 decipherment). Cost not visible to this session.
+
+## Remaining gaps (VIV-67 refresh, 14 Oct 2026; supersedes the VIV-LAT list, all its other lines kept)
 Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 read with key.tsv, gloss check PASS (N5-VIV54), window look-alike pass + re-decode, b2 + wrong-key PASS (N7-VIV54L); ink 53 Ink 52 f.164r-v read (VIV52-O, 13 Oct 2026): H 2,217 / M 404 / U 106 of 2,727, b2 + 200-wrong-key PASS.
 ff.170r-171v read, b2 + wrong-key PASS (N6-VIV53B), window look-alike pass + ': :' join + re-decode, b2 + wrong-key PASS again (N7-VIV53L); ink 63 ff.190r-194r read in full (f.194r L5-10 added by N7-VIV63G): b2 PASS on every part (N6-VIV63, N6-VIV63B,
 N6-VIV63C, N7-VIV63G), whole piece -1.548 vs p99 -1.836, wrong-key specificity PASS (real 0.288 vs p99 0.064), H 12,151 / M 2,329 / U 1,282 of 15,762 tokens. VIV-ANCHOR (8 Oct 2026): key.tsv V -> n (grade C, clerk word anchors) re-decodes all three inks: H 12,290 / M 2,369 / U 1,103 of 15,762 (63), 3,744 / 440 / 196 (53), 1,491 / 272 / 191 (54); b2 and 200-wrong-key gates PASS on each under new seeds.
+Ink 67 f.201r checked against its decipherment 68 (ff.205r-205v) with Tomokiyo's key (VIV-67, 14 Oct 2026: 0.744 vs shuffled p95 0.507, rank 1 of 201; benchmark item vivonne1573-f201r-dev).
 Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, whose twin is deciphered).
 - ink 63 N4 (audit 1 done 4 Oct 2026 by VIV63-A1, AUDIT.md AUDIT 3: N3, D1 fragments read, key published; recipient the King; no decipherment in fr.16105 c95-c248) - blocker: not-attempted; d'Ars 1884 book (VIV-BREMOND) and d'Ars's RQH 35 (1884) article pp.386-412 (L51, DESK-LAND) both checked: neither cites 10 Oct 1573; Ribera 2007 seen as Google Books snippets only (L50: note 139 not visible); fr.16105 c1-c94 and the fr.16106 pieces Gachard skips not viewed; next: Ribera 2007 in full through the owner's interlibrary loan (ILL-SWEEP batch), reading note 139 and every 1573 Saint-Gouard citation, ~owner minutes + $0.5 to land
 - Flament 1996 (L'ambassade du marquis de Saint-Gouard en Espagne, maîtrise Lille 3, 158 p.) - blocker: needs-physical-access; only copy located Lille, Bib. G. Lefebvre, cote D 1996 3, "Non disponible pour le PEB" (SUDOC 201366568, L52, 4 Oct 2026); no digitised copy
 - tools/iiif_lines.py on steep, uneven line slopes - blocker: not-attempted; --follow-slope (and --centres with it) snapped bands onto neighbouring lines on f.194r; next: an option to deskew the region by a fitted angle before a flat cut (what N6-VIV63C did by hand with PIL), with an offline test, ~$2
-- ink 63 key questions (y, single o, c, e, 2, r) - blocker: not-attempted; V settled as an n homophone by VIV-ANCHOR (8 Oct 2026, 7 of 8 clerk-anchored ink-40 positions, control 5/7 PASS; key.tsv row V, grade C); context table (N7-VIV63G, tx/viv63g_keyctx.tsv): y->l and e as an "m(m)" sign remain weak proposals; in ink 40 the clerk anchors give 2 (u 2, m 1), o (p 2), c (p 1), e (0): none reaches 3 positions; next: the ink 50/51 known plaintext (fr.16104 ff.157-159v against ff.162r-163r: crops + two blind passes, then tx/vivanchor.py on that stream), ~$15
+- ink 63 key questions (y, single o, c, e, 2, r) - blocker: not-attempted; V settled as an n homophone by VIV-ANCHOR (8 Oct 2026, 7 of 8 clerk-anchored ink-40 positions, control 5/7 PASS; key.tsv row V, grade C); context table (N7-VIV63G, tx/viv63g_keyctx.tsv): y->l and e as an "m(m)" sign remain weak proposals; in ink 40 the clerk anchors give 2 (u 2, m 1), o (p 2), c (p 1), e (0): none reaches 3 positions; ink 67 f.201r against its decipherment 68 (VIV-67, tx/viv67_labels_summary.tsv, counts only): c p 8 / e 5 of 18, single o p 5 of 16, 2 e 3 of 5, e m 4 of 5, y r 11 / l 9 (not h), S b 10 of 15, V n 7 of 13 -- c, o, e and S now reach 3+ aligned positions on one leaf, but no per-label gate has been run; next: a PREREG'd per-label anchor test on the ink 67 stream (tx/vivanchor.py's gates on tx/f201r_rec.tsv vs tx/dec67_norm.txt, wrong-key control), disk only, ~$2; then ink 67 f.201v-203r for more occurrences, ~$12
 - ink 63 label splits and overlap duplication - blocker: not-attempted; r/z, 2/z (f.193v 25x), c/e and 6/b (f.192r, 19x) left at pass A; readers wrote some s1/s2 overlaps twice (f.192r L06, L34; f.193r L07); f.193r err_2reader 0.297; next: tools/lookalike_pass.py on those pairs + a pre-registered overlap-dedup step in tx/viv63_clean.py, re-decode, ~$4
 - ink 53 D2 (depth re-check done 6 Oct 2026, D1-F16104I, AUDIT.md AUDIT 4: hold D1, H 85.2%) - blocker: not-attempted; three instruments on f, m, p now: whole-label key-cell n-gram rank (D1-F16104K, negative), hand-placed shape judge (D07-VIV53, NON-TEST), and clerk word anchors on ink 40 (VIV-ANCHOR, PREREG-VIVANCHOR: control PASS, but f, m, p each under 3 decided positions: m 4 split 3:2/2:1/z:1, p 3 split o:2/c:1; f 4 of 6 on label p, which the key reads n -- a CONFLICT, key unchanged: "affaires" is written p p twice, so readers' label p merges an f-sign); V -> n moved 16 ink-53 letters, longest H run 41 (unchanged, salad), V_strict top-1 20 (unchanged, null p99 24); next: the ink 50/51 known plaintext (fr.16104 ff.157-159v vs ff.162r-163r) for more f, m, p anchors, then split label p by shape at the anchored f positions, ~$15
 - ink 53 residual label questions - blocker: not-attempted; the 270 one-reader gaps were window re-read under PREREG-R7VIV53G (decoy control PASS): 121 settled present, 16 removed, 133 still flagged; the 82 UNSETTLED split tiles, the ': :'-as-null alternative and "rauldhoit" (f.171r L15) remain; f.171v gap windows mostly unfindable (65 of 87 kept, the reader called 56 NONE but mostly at L) -- the window x-estimate drifts on that page; next: hand-placed per-tile crops (DEF1-VIV54's method) for the 82 splits + the 133 kept gaps, or the owner's sign sorter, ~$2.5
@@ -2226,15 +2307,17 @@ Pieces with no decipherment located: fr.16105 63, fr.16104 52, 53, 54 (and 38, w
 - Spanish-side copies (AGS Estado K) and Gachard vol. I - blocker: needs-physical-access; AGS is not digitised in a route this worker could open
 - ink 52 print search on the decoded fragments (G3) - blocker: not-attempted; done by V-VIV52 (13 Oct 2026, print-check-52.tsv: generic hits only) except Google Books (HTTP 503 all session); next: rerun `tools/print_check.py ciphers/fr16104-vivonne-spain-1572 --phrases ciphers/fr16104-vivonne-spain-1572/phrases_52.txt --only gbooks` when the host answers, ~$0.3
 - ink 52 La Ferriere f.191v lead (V-VIV52, AUDIT 5) - blocker: not-attempted; answered by VIV-191V (13 Oct 2026): f.191v (c208 left) is the clerk decipherment ("dechiffré de la precedente", ink 58, docket 19 Sept 1572) of the 19 Sept 1572 letter to the Queen whose cipher ends f.190r, and carries the Infante / "peau de l'ours" passage La Ferriere quotes; not ink 52 (no ink-52 phrase seen, other date, other leaves), so ink 52 gains no plaintext; next: only a side step, align the 19 Sept cipher (ff.188v-190r, first page on c204 or earlier) with ff.191r-192r as a known-plaintext pair, crops + two blind passes as tx/vivk_test.py, ~$15
-## Escalation (14 Oct 2026, VIV-LAT refresh; from the VIV52-O list)
-- [x] siblings: ink 38 located; ink 40 vs 41 aligned (N5-VIVK); decipherment 51 found (N5-VIV5S); per-piece table (N5-VIVTAB); ink 54 read (N5-VIV54); ink 53 ff.170r-171v read (N6-VIV53, N6-VIV53B); ink 63 ff.190r-194r read in full (N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G); ink 52 f.164r-v read (VIV52-O)
+- ink 67 rest (f.201v-203r) against ink 68 (ff.205v end-207) - blocker: not-attempted; f.201r only (VIV-67, 14 Oct 2026); the last 401 letters of dec67 (end of f.205v) lie past f.201r's aligned span; next: c206 left/c207-c208 and c211-c212 native regions on openapi.bnf.fr, 2 blind passes per page, the same build (benchmark item extended or a second dev item), ~$12 per two cipher pages
+- vivonne1573-f201r-dev flags - blocker: not-attempted; align-conflict 163 and clerk-split 356 automatic flags, no verifier verdicts (confirm2 had TXV-VIV); f.205r decipherment read at word agreement 0.661; next: a TXV-VIV-style verifier pass on the 163 align-conflict positions, ~$3
+## Escalation (14 Oct 2026, VIV-67 refresh; from the VIV-LAT list)
+- [x] siblings: ink 38 located; ink 40 vs 41 aligned (N5-VIVK); ink 67 f.201r vs 68 aligned (VIV-67, PASS); decipherment 51 found (N5-VIV5S); per-piece table (N5-VIVTAB); ink 54 read (N5-VIV54); ink 53 ff.170r-171v read (N6-VIV53, N6-VIV53B); ink 63 ff.190r-194r read in full (N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G); ink 52 f.164r-v read (VIV52-O)
 - [x] clear-pages: decipherments 41, 44, 51, 68, 71, 76 are on the leaves; inks 54 and 53 interlinear words used as gloss checks (N5-VIV54 PASS, N6-VIV53 FAIL at the floor); f.171v has none (N6-VIV53B); ink 63 has none (order gate b2 instead)
 - [x] known-keys: Tomokiyo's 1572-74 key on disk and held-out PASS (N5-VIVK); applied to inks 54, 53 and 63
 - [x] print: Gachard I-II, d'Ars (book 1884 and RQH 35 article, L51), Catherine IV-V, Groen IV read; Ribera 2007 snippets (L50); d'Ars re-checked by date and by k-mer/phrase overlap against inks 53, 54, 63 (VIV-BREMOND); Kervyn I-VI grepped (N6-KERV); print_check on ink 54, 53 and 63 phrases (pc63b/, pc63c/); Gachard I-II, d'Ars, Catherine IV and X re-grepped for ink 52 (VIV52, none)
 - [retired] key-rebuild: tools/stream_align.py from a flat start did not converge on this material (Arm A, 2 of 30 codes); a published key exists
 - [x] image-check: fr.16104 c170-191 and fr.16105 c95-112, c192-248 viewed; native regions of f.173r-v, ff.170r-171v, ff.190r-194r (N5-VIV54, N6-VIV53, N6-VIV63, N6-VIV63B, N6-VIV63C, N7-VIV63G); ink 52 c178-c183 viewed at 1200 px and f.164r-v native regions via openapi.bnf.fr (VIV52-O, 13 Oct 2026): no dechiffre, no gloss; ink 52 misplaced-decipherment residual (V2-VIV52, AUDIT 6) closed 13 Oct 2026: dechiffre heads of inks 56, 60, 62 (VIV-DECH), 83, 89, 91 + 78 close (VIV-DECH2), 78, 97 (VIV-HEADS) and 101 (VIV-101, f.300r, c322, 24 Dec, King) viewed, each the decipherment of its own letter, none ink 52
 - [ ] retry: ink 53 f/m/p key cells for the U labels (AUDIT 4; whole-label test negative, D1-F16104K; hand-placed per-position shape judge NON-TEST, control 4-5/12 vs 8/12, D07-VIV53; clerk word anchors on ink 40, VIV-ANCHOR 8 Oct 2026: control 5/7 PASS, V -> n assigned, f/m/p/qu under 3 positions, f on label p a conflict; next instrument: ink 50/51 known plaintext or sign sorter); ink 63 key questions on the key image (context table done, N7-VIV63G); ink 63 label questions (lookalike pass, overlap dedup); ink 53 residual unsettled tiles and kept gaps (window look-alike pass N7-VIV53L; gap re-read R7A-VIV53, 137/270 settled); ink 54 sorter/window audit (lookalike pass done, N7-VIV54L) and the col-u-row-3 relabel (key cell found, N7-VIV54Q; window judge NON-TEST, N7-VIV54R; hand-placed judge NON-TEST 0/18, DEF1-VIV54; next instrument: sign sorter / clerk alignment, hand-placed per-position crops); ink 63 noise: key-constrained lattice with a learnt confusion matrix (VIV-LAT, 14 Oct 2026: dev PASS, confirm2 FAIL, truth-in-lattice 0.124 -- next instrument: a reader that puts the true sign in the lattice)
-Verdict: keep going: 16 internal gaps; VIV-LAT (14 Oct 2026) lattice decode confirm2 FAIL at a 0.124 truth-in-lattice ceiling, ink 63 not re-decoded; ink 52 f.164r-v read at D1 (VIV52-O, 13 Oct 2026, b2 + wrong-key PASS; audit 1 N3 D1, V-VIV52; audit 2 N3 D1 upheld, V2-VIV52, misplaced-decipherment residual added; inks 56, 60, 62 dechiffre heads viewed by VIV-DECH and inks 83, 89, 91 (+78 close, a Dec body) by VIV-DECH2 and inks 78, 97 heads by VIV-HEADS, 13 Oct 2026: not ink 52; and ink 101 head by VIV-101 (f.300r, 24 Dec, King): not ink 52; residual closed); f.191v viewed (VIV-191V, 13 Oct 2026: decipherment of the 19 Sept letter, not ink 52); cheapest next: the owner sorts tx/sorter_fp/sorter_viv_fp.html (D4-VIV), ~$0 agent cost; then ink 52 ff.165r-168v via openapi.bnf.fr, ~$34 (24 units), and the ink 50/51 known plaintext for f, m, p, ~$15
+Verdict: keep going: 18 internal gaps; VIV-67 (14 Oct 2026) second known-plaintext pair ink 67/68 PASS (0.744 vs p95 0.507), dev item vivonne1573-f201r-dev registered, c/o/e/S label counts reach 3+ on one leaf (no key edit); VIV-LAT (14 Oct 2026) lattice decode confirm2 FAIL at a 0.124 truth-in-lattice ceiling, ink 63 not re-decoded; ink 52 f.164r-v read at D1 (VIV52-O, 13 Oct 2026, b2 + wrong-key PASS; audit 1 N3 D1, V-VIV52; audit 2 N3 D1 upheld, V2-VIV52, misplaced-decipherment residual added; inks 56, 60, 62 dechiffre heads viewed by VIV-DECH and inks 83, 89, 91 (+78 close, a Dec body) by VIV-DECH2 and inks 78, 97 heads by VIV-HEADS, 13 Oct 2026: not ink 52; and ink 101 head by VIV-101 (f.300r, 24 Dec, King): not ink 52; residual closed); f.191v viewed (VIV-191V, 13 Oct 2026: decipherment of the 19 Sept letter, not ink 52); cheapest next: the owner sorts tx/sorter_fp/sorter_viv_fp.html (D4-VIV), ~$0 agent cost; then ink 52 ff.165r-168v via openapi.bnf.fr, ~$34 (24 units), and the ink 50/51 known plaintext for f, m, p, ~$15
 ## Siblings (8 Oct 2026)
 
 SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 6 listed, 6 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
