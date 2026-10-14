@@ -469,3 +469,49 @@ Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0
 - [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
 - [ ] retry: build key_r5323.tsv from two blind passes and test it against the f.5/f.8 glosses (G1 unchanged), then S3 on f.15
 Verdict: keep going: 4 internal gaps; cheapest next: key_r5323.tsv from two blind passes and decode_key.py on f.5/f.8 against their glosses, ~$2
+
+## SFZ-G1 (14 Oct 2026 22:05-22:2x UTC by date -u, account 4, LANE DEFAULT-A4-2135-14): key_r5323.tsv against the f.5/f.8 glosses -- registered gate FAIL (p 0.14 vs value permutations; both units under their own p95)
+Job: SFZ-R5323B's named next step: a key from the two blind passes, decoded on f.5/f.8 and scored against their period glosses (f.7, f.10).
+- **Prior work.** `tools/prior_work.py sforza-duke-1447-f15 --item-spec 'shelfmark=BnF italien 1584;folio=8;date=1447-01-10;...' --step-type
+  key --offline`: exit 4, three own-work LEADs (escalation lines of SFZ-D/SFZ-SORT and SFZ-DEC2's claim), none a key test of R5323 on f.5/f.8;
+  recorded CLEAR in prior-work.tsv. Its two plaintext KNOWN rows are Cryptiana valle.htm (Anjou 1583, f.5-9 of another volume): a
+  folio-number collision, not this item. The f.5/f.8 plaintexts are known by design (their glosses are the known answer).
+- **PREREG** `PREREG-SFZ-G1.md` with `g1/build_key.py` and `g1/score_g1.py`, pushed a94d400c9 before any key was built or decode run.
+- **No new blind calls.** SFZ-R5323B's eight reader TSVs already list every letter column of R5323 in both label groups, so the two passes
+  the brief asks for exist; 0 Sonnet calls here.
+- **Key** (`python3 g1/build_key.py [--check]`, log g1/build.log): 13 labels with exactly one agreed letter (grade S): 3=i 8=u D=e N2=h
+  N6=i N8=d O=a b=i c=m cu=n d=r f=s t=b. Left out as agreed in two or more columns: # (g/h/t), N4 (e/r), g (g/t), l (e/g), q (p/z).
+  Control keys from the 11 other sheets by the same rule: 0-10 rows.
+- **Decode** `python3 tools/decode_key.py ciphers/sforza-duke-1447-f15/g1` (g1/decode.json; ciphertext the committed SFZ-D transcriptions
+  ../sforza-italien1584-1447/duke/ciphertext_f5/f8.tsv): f.5 896 tokens S 285 U 611; f.8 865 tokens S 305 U 560 (coverage 0.335 pooled);
+  `--check` exit 0. Readings g1/reading_f5.txt, reading_f8.txt are test output, not readings of anything.
+- **Result** (`python3 g1/score_g1.py`, g1/score.out): pooled gloss agreement R 0.1295 (f.5 0.1172, f.8 0.1422); value-permutation null
+  (1000, seed 1447) mean 0.1178, p95 0.1352, p = 0.1429; unit p95 f.5 0.1317, f.8 0.1434; 11 other-key controls 0.000-0.102 (max R5312).
+  Gate: (a) FAIL, (b) pass (0.1295 > 0.1022), (c) FAIL -> **FAIL**, logged as registered, not re-tuned. Loose key (16 rows, not gated) 0.1437.
+- **Scorer change after the PREREG push (disclosed).** The pre-registered pure-Python alignment was too slow for 2000 alignments; it is
+  kept as `align_py` and the same recurrence was vectorised (`align`): equal on 30 random pairs and on both real units (105, 123 matches).
+- **Post hoc, not scored.** Clause (b) passes on coverage, not reading: the controls key fewer tokens (0.003-0.287). Against the Duke's
+  own alignment key (../sforza-italien1584-1447/duke/key.tsv, mostly M, from a failed G1) 6 of the 13 rows agree (O, N8, N2, cu -- four of
+  the seven C pairs the identification gate scored -- plus f=s and 8=u/v); 7 disagree (3, D, N6, b, c, d, t). Keyed tokens matched the gloss
+  at about 39% (228 of 590) against about 35% under permutation; a right key with right cells should match most keyed tokens.
+- **Grade.** The R5323 identification is not supported by the glosses at the blind readers' transcription of the sheet. Whether the
+  failure is the sheet or the readers' cell placement cannot be told from this test: blind Sonnet reading of R5323 is retired as the
+  instrument (attempts SFZ-R5323, SFZ-R5323B, SFZ-G1; rule 3 third-attempt clause). Nothing here is a reading.
+- Requests: none (disk only). Sonnet calls 0. Cost not visible to this session.
+
+## Remaining gaps (SFZ-G1, 14 Oct 2026)
+Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0.441 mean held-out, 2 units; anchored 0.422); DECODE R5323: blind identification gate PASS at threshold (SFZ-R5323B) but its blind-read key FAILs the f.5/f.8 gloss gate (SFZ-G1, p 0.14), so no period key is identified
+- R5323 key - blocker: not-attempted; blind Sonnet reading of the sheet is retired (SFZ-R5323, SFZ-R5323B, SFZ-G1), the untried instrument is a person's cell-by-cell read of R5323's alphabet block, then the same g1 scorer unchanged; next: draft an ASKS row for that read, ~$0.5
+- f.15 decode - blocker: waiting-on ASKS row 165 (the owner's blind sort of f.5+f.8 signs) for the transcription route; no key is identified for f.15
+- f.17 blanks vs f.15 - blocker: not-attempted; whether f.15's cipher fills f.17's two blanks is unexamined; next: only after a readable key, ~$1
+- DECODE scat. 1597 rest - blocker: not-attempted; nos. 79-114 and 169-171 unopened, and the twelve unheaded sheets in 36-77 not C-pair checked; next: one login by the guess route (~45 requests), C-pair check of any 1440s sheet against the f.5/f.8 glosses with g1/score_g1.py, ~$2
+
+## Escalation (SFZ-G1, 14 Oct 2026)
+- [x] siblings: the Duke's glossed pairs f.5/f.7 and f.8/f.10 used; f.23-24/f.26, f.30-31/f.29, f.36-37/f.35 not yet
+- [x] clear-pages: f.17 (same-day clear letter) noted as context; no copy of f.15 exists in the volume per Mazzatinti
+- [ ] known-keys: DECODE scat. 1597 nos. 1-78 opened by heading; R5323 identification gate PASS at 4/7 (SFZ-R5323B) but its key FAILs the f.5/f.8 glosses (SFZ-G1); nos. 79-114 and 169-171 not opened
+- [ ] print: no print of f.15 located (check-solved above); verifier pass belongs to a later reading
+- [x] key-rebuild: attempted, G1 FAIL
+- [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
+- [ ] retry: DECODE scat. 1597 nos. 79-114 and 169-171 by heading, then any 1440s sheet through the g1 gloss scorer
+Verdict: keep going: 3 internal gaps; cheapest next: DECODE scat. 1597 nos. 79-114 and 169-171 by heading, one login (~45 requests), ~$2

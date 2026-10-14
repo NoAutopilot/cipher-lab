@@ -3,6 +3,7 @@
 Reads the decode_key.py token files for the R5323 key; decodes the control keys and permutations in-process with the same
 token sequence (sign column of those token files).   python3 score_g1.py > score.out"""
 import os, random, glob
+import numpy as np
 H = os.path.dirname(os.path.abspath(__file__)); D = os.path.join(H, '..', '..', 'sforza-italien1584-1447', 'duke')
 UNITS = [('f5', 'tokens_f5.tsv', 'clear_f7.txt'), ('f8', 'tokens_f8.tsv', 'clear_f10.txt')]
 
@@ -16,8 +17,8 @@ def tokens(fn):
     si, vi = hdr.index('sign'), hdr.index('value')
     return [(r.split('\t')[si], r.split('\t')[vi]) for r in rows[1:] if r]
 
-def align(dec, g):
-    # global alignment, match +1, mismatch 0, gap -0.5; returns number of matched letters on one optimal path
+def align_py(dec, g):
+    # reference implementation as pre-registered (pure Python); kept for the equality check
     n, m = len(dec), len(g); G = -0.5
     prev = [(j * G, 0) for j in range(m + 1)]
     for i in range(1, n + 1):
@@ -28,6 +29,21 @@ def align(dec, g):
             cur[j] = max(a, b, c)
         prev = cur
     return prev[m][1]
+
+def align(dec, g):
+    # same recurrence vectorised (SFZ-G1, 22:2x UTC: the pure-Python form was too slow for 2000 alignments). Lexicographic
+    # (score, matches) encoded as one integer: 2*score*W + matches (W > any match count); the in-row gap is a cumulative max.
+    W = 1 << 12; GAP = -W; MT = 2 * W + 1
+    garr = np.frombuffer(g.encode(), dtype=np.uint8)
+    m = len(g); J = np.arange(m + 1, dtype=np.int64)
+    prev = J * GAP
+    for i, ch in enumerate(dec, 1):
+        hit = (garr == ord(ch)) if ch != '?' else np.zeros(m, bool)
+        base = np.empty(m + 1, np.int64); base[0] = i * GAP
+        base[1:] = np.maximum(prev[:-1] + np.where(hit, MT, 2 * W * 0), prev[1:] + GAP)
+        cur = np.maximum.accumulate(base - J * GAP) + J * GAP
+        prev = cur
+    return int(prev[m] % W)
 
 def decode(signs, key): return [key.get(s, '?') for s in signs]
 

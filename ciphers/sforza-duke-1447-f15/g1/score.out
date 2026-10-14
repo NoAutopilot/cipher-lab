@@ -1,0 +1,21 @@
+# R5323 key: 13 rows; tokens f5 896 f8 865; gloss letters f5 968 f8 889
+unit	A	n	rate	coverage
+f5	105	896	0.1172	0.318
+f8	123	865	0.1422	0.353
+pooled	228	1761	0.1295	0.335
+# permutation null (1000, seed 1447): pooled mean 0.1178 p95 0.1352 max 0.1528; p = 0.1429
+# unit p95: f5 0.1317 f8 0.1434
+control	rows	f5_rate	f8_rate	pooled	coverage
+R5302	7	0.0837	0.1006	0.0920	0.279
+R5304	3	0.0257	0.0220	0.0239	0.196
+R5305	4	0.0413	0.0393	0.0403	0.195
+R5306	1	0.0033	0.0035	0.0034	0.003
+R5309	5	0.0346	0.0277	0.0312	0.076
+R5310	5	0.0379	0.0243	0.0312	0.097
+R5311	4	0.0446	0.0520	0.0483	0.093
+R5312	10	0.1060	0.0983	0.1022	0.287
+R5313	0	0.0000	0.0000	0.0000	0.000
+R5315	5	0.0815	0.0879	0.0846	0.203
+R5324	7	0.0859	0.1029	0.0943	0.219
+# sensitivity (loose key, 16 rows, not gated): pooled 0.1437
+# gate: (a) p<=0.01 False; (b) R 0.1295 > max control 0.1022 True; (c) both units > own p95 False: FAIL

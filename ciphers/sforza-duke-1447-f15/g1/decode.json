@@ -1,0 +1,6 @@
+{"jobs": [
+ {"ciphertext": "../../sforza-italien1584-1447/duke/ciphertext_f5.tsv", "key": "key_r5323.tsv", "format": "rows",
+  "reading": "reading_f5.txt", "tokens": "tokens_f5.tsv", "style": "spaced", "default_grade": "S"},
+ {"ciphertext": "../../sforza-italien1584-1447/duke/ciphertext_f8.tsv", "key": "key_r5323.tsv", "format": "rows",
+  "reading": "reading_f8.txt", "tokens": "tokens_f8.tsv", "style": "spaced", "default_grade": "S"}
+]}
