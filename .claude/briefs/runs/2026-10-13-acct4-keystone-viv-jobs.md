@@ -312,3 +312,53 @@ the f.201r crops with the manifest "viv67" command (1 request), reuse tx/vivhuma
 tx/sorter_human2/ (HTML with embedded tiles under 3 MB, no page image) and publish with the Artifact tool (title "Vivonne f.201r:
 8 signs, second try", icon "grid"). Done line: the artifact URL first, then the pile member counts before/after the filter.
 Price: vision calls: 0 x USD 0 = 0; Opus floor 2.5; cap 6.
+
+## Wave 6 (03:3x UTC 14 Oct 2026; VIV-F191B, VIV-HUMAN2, VIV-67B done)
+Results read: VIV-F191B (NOTES "VIV-F191B"): f.191r four-pass vote (pass D defective from L22, so three passes there), longest all-H run
+32 -> 37 ("ceroaungtresgrandeouaconsdecestaaaire"), V_strict top-1 17 -> 21 (null p99 16), gates PASS; no stretch clears 42; the
+non-H tokens inside the five best stretches are the s/S (-> a) and 3/z (-> d) pairs, and "aaaire" = affaire(s) with the f-sign read as
+label s. VIV-HUMAN2: the owner reads the 3/z pair right when the piles are clean (7/8); R13/R14: a pile is one sign, from certain-answer
+tiles. VIV-67B (account 2): f.201v truth registered (fourth leaf; c -> p 14 of 37 on three leaves). Four truth leaves now: f.102r,
+f.103r, f.201r, f.201v, plus f.211r. Same rules as before.
+
+### VIV-FKEY (Opus, cap 6, box 75 min, disk only): the f-sign -- one letter, pooled anchors from every truth leaf, PREREG'd row
+Why: key.tsv has no row for f; the clerk anchors put f on label p (VIV-ANCHOR, "affaires" p p) and now on label s (VIV-F191B L31
+"aaaire"); f is in affaires, faire, faict, France, fort -- the words the best stretches stumble on. Instrument: VIV-KEY's (NOTES "VIV-KEY",
+PREREG-VIVKEY.md) restricted to the value f, with the anchors pooled over all truth leaves (tx/vivanchor_result.json for ink 40;
+tx/viv67_labels.tsv, tx/viv70_labels.tsv, the VIV-67B label file for f.201v) plus the per-position truth files themselves (every scored
+position whose truth letter is f: which reader label sits there, on each leaf). PREREG-VIVFKEY.md first: the decision rule (a label
+holds f only where the truth-f positions' label distribution and that label's own truth distribution make f its majority or a clean
+sub-shape -- if label p or s is mostly a or n and f only sometimes, the answer is a SPLIT (f-shape within the label), not a row: say so and
+write the tile ids of the truth-f positions to tx/viv63_fkey/f_tiles.tsv for the packet below), the gates (b2 + 200 wrong keys on inks
+63, 53, 54; decode_key --try f=... with its control), the stop rule. If a row or a split passes, apply it as VIV-KEY did (key.tsv grade C
+with counts, decode scripts --check, before/after H/M/U and longest runs per ink); a verifier follows. If not, no edit, numbers logged.
+Price: vision calls: 0 x USD 0 = 0; Opus floor 2.5; cap 6. Done line: row / split / neither first, with the pooled counts per label.
+
+### VIV-PACKET3 (Opus, cap 8, box 75 min, openapi.bnf.fr <= 2): the owner's packet for f.191r's best neighbourhood, clean piles, re-decode pre-registered
+Why: VIV-HUMAN2 showed the owner reads this hand's disputed pairs right when every pile is one sign from certain-answer tiles; f.191r
+L08-L16 and L29-L32 hold the longest stretches and the M/U/split tokens that break them. Build (PREREG-VIVPACKET3.md first): question
+tiles = every token on f.191r lines L08-L16 and L29-L32 whose vote grade is M or U or whose four passes split (tx/viv63_f191/rec.tsv,
+decode.tsv, f191.py's vote columns), capped at 40 by stretch priority (the five V_strict stretches first, then by line), starting in
+the tray; piles = one per key sign, members ONLY truth-consistent tiles from the truth leaves (label in the truth set at a scored
+unflagged position; f.102r, f.103r, f.201r, f.201v, f.211r; cap 12 per pile, seed 20261014; a sign with no qualifying tile gets no pile
+and is listed in the Addendum) -- never f.191r's own committed labels; blind; the lede: place each tile in the pile whose signs look the
+same, "new sign" if none, do not use fix-the-cut (R12). Crops: f.191r via the VIV-F191 manifest command (1 request), tiles cut on the
+reader token x-spans the way VIV-HUMAN's build_inputs did (reuse it with options), and a pile-purity check pasted: for each pile, one
+blind Sonnet call "how many distinct shapes" is NOT used -- instead list per pile the truth letters of its members (must be one letter)
+and show a contact sheet in the Addendum. Consuming test, registered now: the owner's placements -> labels -> re-vote those positions
+(owner label replaces the plurality where he placed; "new sign" leaves U) -> re-decode f.191r with tx/viv63_f191/f191.py --stats ->
+longest all-H run and V_strict before/after, with the same gates; the parent runs it when he answers; a stretch above 42 with no
+liberty goes to a verifier. Publish with the Artifact tool (title "Vivonne f.191r: the signs that break the best lines"), commit under
+tx/sorter_f191/ (HTML under 3 MB). Price: vision calls: 0 x USD 0 = 0; Opus floor 2.5; preflight/cvd; cap 8. Done line: the artifact
+URL first, then the question count and the pile count with any sign that got no pile.
+
+### Account-2 row VIV-DECH3 (Opus, cap 10, box 120 min, openapi.bnf.fr <= 6; account 2): a third blind read of the clerk decipherment pages to cut the truth's own noise
+Why: about half the scored positions on every truth leaf are "flagged" (the two blind reads of the clerk's French disagree), which
+caps every gate on this hand and turns reader error into truth noise. Pages: ff.205r-205v (ink 68, the f.201r truth), ff.206r-206v
+(f.201v), ff.104r-108v only L-ranges that feed f.102r/f.103r (read tx/DEC_READ.md and the dec_f10x pass files: 6 pages max). Method:
+one fresh blind Sonnet pass per page on the ink-minimum strips (tx/viv67_strips.py; crops regenerated from the manifests, 1 request per
+page), merged by the existing tx/merge_dec.py / tx/viv67_merge_dec.py rules as a third vote; PREREG-VIVDECH3.md first with the
+registered outcome: the flagged share per truth item before/after a three-vote rebuild (build scripts re-run with the third pass; the
+truth files rebuilt ONLY as new items suffixed -3 beside the old ones, never replacing them). Report the flagged share and the passA/
+passB err_true on the -3 items beside the old. Price: vision calls: 6 x USD 1.4 = 8.4; cap 10; stop before a page that would cross
+80%. ROOM lines "for LANE VIV-KEYSTONE (account 4)", done line to the parent session_01D7XWmthshMVqxumdDvitPh.
