@@ -74,3 +74,37 @@ SFZ-R5323B session_017TMxTsnr48MLUs2Zx6yoBD; SFZ-DEC3 session_01HM8Vw4zHfWwTyQFo
 ## Wave 2 candidates (not yet briefed)
 MONL-C268B (next c268 band, after MONL-EYE, ~4); BAL169-F22 (numeral-mark image check, after BAL-C275WL, ~2.5); FAIR-LANG (fair-game-2010
 per-language letter-count rank + transposition --langs, ~2); GB steps (eckert E591-592, thurloe Verbael, fr4735 phrases) when googleapis answers.
+
+## Wave 1 results (ledgered 22:0x UTC): VER-COL50 3.05 D, BAL-C275WL 2.88 D, SFZ-R5323B 6.25 D (2.08x), SFZ-DEC3 4.66 N, F4712-C95 2.35 N; MONL-EYE live.
+
+## Wave 2 (22:1x UTC 14 Oct). Same common rules. googleapis still 503 at 22:02.
+
+### SFZ-G1 (Opus, cap 4, box 60 min, disk only; de-crypt.org <= 15 only if the R5323 PDFs are not reproducible from r5323/regen.sh): sforza-duke-1447-f15
+Verdict: "key_r5323.tsv from two blind passes and decode_key.py on f.5/f.8 against their glosses, ~$2". Read SFZ-R5323, SFZ-R5323B and
+PREREG-SFZ-R5323B first. Write PREREG-SFZ-G1.md and commit it before any decode: the gloss-agreement statistic on f.5/f.8 (letters agreeing
+with the period gloss), the null (the same key with values permuted within its alphabet, 1000x, and the 11 other-key controls), and the gate.
+Build key_r5323.tsv only from what both blind passes agree on (each row graded from the passes; disagreements M or left out), decode with
+`tools/decode_key.py` (decode.json job), `--check` exit 0. Price any further blind call at ~0.6 each (SFZ-R5323B: 8 calls = 2x cap): at most 4.
+A PASS licenses a key test on f.15 only in a later job; do not read f.15 here. NOTES "## SFZ-G1", gaps + Verdict, gaps_check.
+
+### BAL171-TAIL (Opus, cap 3.5, box 75 min, openapi.bnf.fr <= 230): baluze167-davaux-1637 Baluze 171 canvases 251-464
+Verdict item "Baluze 171 canvases 251-464 (~$3)". Same method as BAL171-SWEEP / BAL168-TAIL (read both): 300 px per canvas (~1 request each),
+1000 px looks only on candidate cipher canvases (<= 10, ~0.15 each). Release openapi.bnf.fr between batches of ~65 so BAL169-F22 can take it.
+NOTES "## BAL171-TAIL", sweep table rows, gaps + Verdict, gaps_check.
+
+### BAL169-F22 (Opus, cap 3, box 60 min, openapi.bnf.fr <= 15): baluze167-davaux-1637 169 f.22r numeral-mark image check
+Gap: "169 f.22r name and remaining signs ... next: an image check of the 1-bearing numeral marks on f.22r (the four acutes VER-BAL22 saw: 71',
+51', 41', 13') against glossed exemplars of the same hand, BAL-WL method, ~$2.5". Read BAL169-F22, VER-BAL22, BAL22-SHAPE and BAL-C275WL (its
+shuffle-control form). Native crops of the four marks beside >= 3 glossed exemplars each; a mark call is S only with a within-run gloss shuffle
+control (200x) as in BAL-C275WL; re-read f.22r via its decode job, `--check` exit 0. Take/release openapi.bnf.fr (BAL171-TAIL shares it).
+Append NOTES "## BAL169-F22B" after BAL171-TAIL's section if it lands first (rebase; never edit another job's section). gaps + Verdict, gaps_check.
+
+### F4712-C107 (Opus, cap 2.5, box 45 min, openapi.bnf.fr <= 20): fr4712-nevers-duchesse census canvases 107-118
+F4712-C95's next: "canvases 107-118 (f.95v on, 36 left), ~1.5". Same method as F4712-C95. Take/release openapi.bnf.fr. NOTES "## F4712-C107",
+census rows, gaps + Verdict, gaps_check.
+
+### FAIR-LANG (Opus, cap 2.5, box 45 min, disk only): fair-game-2010 per-language letter-count rank + transposition --langs
+Verdict: "per-language letter-count rank and transposition --langs, ~$1". Read FAIR-CRED and FAIR-TRANS. For each language with a corpus in
+tools/data (list them), rank the target's letter counts among windows of the same N; then the transposition family with `family_run.py --langs`
+(one matched control per language first; a language whose control misses its gate is CONTROL BELOW GATE, not a negative). Both numbers per
+language in HYPOTHESES.md. NOTES "## FAIR-LANG", gaps + Verdict, gaps_check.
