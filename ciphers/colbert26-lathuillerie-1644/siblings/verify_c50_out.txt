@@ -1,0 +1,70 @@
+reader	covered	hits	ctrl_mean	p95	max	P
+DA1-COL	56	21	6.97	11	17	0.0000
+DA1-COL2	56	19	6.66	11	16	0.0000
+line	pos	code	value	da1	col2	verdict
+50a01	3	24	n	hit:ont	hit:ont	C
+50a02	1	48	c	hit:compt	hit:compt	C
+50a02	2	22	m	hit:compt	hit:compt	C
+50a02	3	25	p	hit:compt	hit:compt	C
+50a02	7	24	n	miss:sont	miss:sont	M word-grain-miss
+50a03	3	51	de	hit:desmordent	miss:desmordent	C
+50a03	7	51	de	miss:et	miss:et	M word-grain-miss
+50a03	15	12	c	miss:quoy	miss:quoy	M word-grain-miss
+50a03	19	51	de	miss:fort	miss:fort	M word-grain-miss
+50a05	11	51	de	-	-	M no-word-pairing
+50a05	13	25	p	-	-	M no-word-pairing
+50a06	2	78	u	miss:la	miss:la	M word-grain-miss
+50a06	4	10	a	hit:lorraine	hit:lorraine	C
+50a08	4	22	m	miss:et	miss:et	M word-grain-miss
+50a08	10	12	c	-	miss:duch	M word-grain-miss
+50a09	7	12	c	-	-	M no-word-pairing
+50a09	9	36	ez	-	-	M no-word-pairing
+50a10	7	10	a	miss:ueritablement	miss:ueritablement	M word-grain-miss
+50a11	8	10	a	miss:charles	miss:charles	M word-grain-miss
+50a11	11	12	c	miss:quil	miss:charles	M word-grain-miss
+50a11	12	12	c	miss:quil	miss:quil	M word-grain-miss
+50a11	13	65	s	miss:ny	miss:ny	M word-grain-miss
+50a11	20	10	a	-	-	M no-word-pairing
+50a13	14	10	a	miss:leur	miss:leur	M word-grain-miss
+50a14	10	12	c	-	-	M no-word-pairing
+50a14	13	48	c	hit:recommencer	hit:recommencer	C
+50a14	14	22	m	hit:recommencer	hit:recommencer	C
+50b01	7	12	c	miss:dur	miss:oules	M word-grain-miss
+50b01	8	24	n	miss:oules	miss:oules	M word-grain-miss
+50b01	13	78	u	miss:espagnolz	miss:espagnolz	M word-grain-miss
+50b01	19	53	d	miss:en	miss:en	M word-grain-miss
+50b04	6	10	a	hit:auroint	hit:auroint	C
+50b05	25	69	s	miss:iam	miss:iam	M word-grain-miss
+50b06	4	10	a	miss:de	miss:de	M word-grain-miss
+50b06	5	51	de	miss:nostre	miss:nostre	M word-grain-miss
+50b07	1	51	de	hit:desunion	hit:desunion	C
+50b07	5	24	n	-	-	M no-word-pairing
+50b07	7	51	de	hit:de	hit:de	C
+50b07	12	53	d	miss:pouuoir	miss:pouuoir	M word-grain-miss
+50b08	3	51	de	hit:remede	hit:remede	C
+50b09	8	51	de	-	-	M no-word-pairing
+50b09	23	78	u	miss:partane	miss:partant	M word-grain-miss
+50b10	4	10	a	miss:ayt	miss:peu	M word-grain-miss
+50b10	9	51	de	hit:fondement	hit:fondement	C
+50b10	12	51	de	miss:fondement	miss:fondement	M word-grain-miss
+50b10	14	10	a	hit:faire	hit:faire	C
+50b10	16	51	de	hit:dessus	miss:dessus	C
+50b10	22	33	ux	miss:quils	miss:quils	M word-grain-miss
+50b11	7	69	s	miss:execut	miss:execut	M word-grain-miss
+50b11	9	36	ez	miss:execut	miss:execut	M word-grain-miss
+50b12	5	10	a	hit:auons	hit:auons	C
+50b12	14	22	m	hit:ensemble	hit:ensemble	C
+50b13	2	10	a	miss:leur	miss:leur	M word-grain-miss
+50b13	5	10	a	hit:alliance	hit:alliance	C
+50b13	12	48	c	miss:bien	-	M word-grain-miss
+50b14	2	78	u	hit:plus	hit:plus	C
+50b15	2	22	m	miss:par	miss:par	M word-grain-miss
+50b15	4	24	n	miss:impetuosite	miss:impetuosite	M word-grain-miss
+50b15	5	24	n	miss:impetuosite	miss:impetuosite	M word-grain-miss
+50b15	9	78	u	miss:par	miss:par	M word-grain-miss
+50b15	10	10	a	hit:raison	hit:raison	C
+50b15	18	10	a	hit:abbandonnent	hit:abbandonnent	C
+50b15	21	53	d	miss:abbandonnent	miss:abbandonnent	M word-grain-miss
+50b16	5	10	a	miss:ayderoient	miss:ayderoient	M word-grain-miss
+50b16	7	51	de	miss:ayderoient	miss:ayderoient	M word-grain-miss
+kept C 21 of 65; lowered to M 44

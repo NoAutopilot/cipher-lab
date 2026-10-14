@@ -108,3 +108,47 @@ line	pos	value	grade	reason
 50b15	20	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
 50b15	23	n	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
 50b16	3	s	M	COL26-C50 14 Oct 2026: not-in-A2-COL15: C on f.23 after 3 Oct 2026, not tested on canvas 50
+50a02	7	n	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a03	7	de	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a03	15	c	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a03	19	de	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a05	11	de	M	VER-COL50 14 Oct 2026: no-word-pairing: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a05	13	p	M	VER-COL50 14 Oct 2026: no-word-pairing: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a06	2	u	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a08	4	m	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a08	10	c	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a09	7	c	M	VER-COL50 14 Oct 2026: no-word-pairing: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a09	9	ez	M	VER-COL50 14 Oct 2026: no-word-pairing: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a10	7	a	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a11	8	a	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a11	11	c	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a11	12	c	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a11	13	s	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a11	20	a	M	VER-COL50 14 Oct 2026: no-word-pairing: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a13	14	a	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50a14	10	c	M	VER-COL50 14 Oct 2026: no-word-pairing: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b01	7	c	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b01	8	n	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b01	13	u	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b01	19	d	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b05	25	s	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b06	4	a	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b06	5	de	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b07	5	n	M	VER-COL50 14 Oct 2026: no-word-pairing: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b07	12	d	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b09	8	de	M	VER-COL50 14 Oct 2026: no-word-pairing: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b09	23	u	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b10	4	a	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b10	12	de	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b10	22	ux	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b11	7	s	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b11	9	ez	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b13	2	a	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b13	12	c	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b15	2	m	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b15	4	n	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b15	5	n	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b15	9	u	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b15	21	d	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b16	5	a	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md
+50b16	7	de	M	VER-COL50 14 Oct 2026: word-grain-miss: value not at its slot in its paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md

@@ -212,3 +212,93 @@ key. **D1 ("fragments read") for both leaves.** status.json results[145] already
 
 Postmortem: no over-claim. Correction carried: AUDIT 1 s.4's "longest C stretch 10 letters" is 11 at HEAD (grade change, not an error).
 No SECOND-OPINIONS-QUEUE row exists or is owed (N0). PROGRESS.tsv: no row (none added). Requests: none (disk only).
+
+## AUDIT 3 (verifier VER-COL50, account 4, LANE DEFAULT-A4-2135-14, 14 Oct 2026, 21:47-22:0x UTC by date -u): canvas 50
+
+Separate session from every solver of this folder, including COL26-C50 (account 1) and A2-COL15 (account 2), and from AUDIT 1, its
+addendum and AUDIT 2. Brief `.claude/briefs/runs/2026-10-14-acct4-default-2135-jobs.md` job VER-COL50. Claim under audit (NOTES.md,
+COL26-C50): "canvas 50 442: H 0, C 65, S 0, M 343, I 0, U 34".
+
+### 1. Item
+
+| Item | Leaf | Date, place | Sender -> recipient | Cipher | Period decipherment on the leaf |
+|---|---|---|---|---|---|
+| c50 | Mel. Colbert 26, fol. 46 (Gallica btv1b10035069t, canvas 50) | letter closed "A la Haye le 23e Janvier 1648" (canvas 51) | La Thuillerie -> (Servien; leaves.tsv) | two-digit nomenclator, 442 positions in 30 rows (6 unsettled) | yes: interlinear gloss over all rows but 50a04 (siblings/c5051_reconciled.tsv) |
+
+Distinctive content (from the period gloss, not our key): "La Lorraine ne deuroit pas estre restituee", "le Duché de Bar nous demeurant
+auec les Trois Eueschez", "Seroit rendue au Duc Charles", "quil y ayt peu de fondement a faire dessus eux", "pas vn des Traictez",
+"par impetuosite que par raison Ils nous abbandonnent", "telles nouuelles de Naples". Solver's search: COL26-C50 ran prior_work.py
+(own work, leaf, solver repos, Tomokiyo) and no print search.
+
+### 2. Rule 7 re-derivation
+At start (HEAD c3d336627): `tools/decode_key.py ciphers/colbert26-lathuillerie-1644 --check` "reading up to date", exit 0, c50 C 65 /
+M 343 / U 34; `siblings/c50_reading_inputs.py --check` "c50 inputs up to date", exit 0. Reproduced. After this audit's regrade (section
+3): both exit 0, c50 C 21 / M 387 / U 34; f.23 and f.24 unchanged (C 125, C 27).
+
+### 3. The C licence (brief job 1)
+A2-COL15's pre-registered test (65/97 vs length-matched max 59 of 5000) cleared canvas 50 as a unit: key_f23 is supported as the key
+of this leaf, and canvas 50 may enter a key revision as a unit that cleared (rule 3 per-unit clause). It does not place single tokens:
+its walk looks for the value anywhere after the previous match, and random f.23 French windows of the same length score 44.1 of 97 by
+the same walk. COL26-C50 named this itself. Ruling: **a token on this leaf is C only where its own gloss places the value at that
+token**, the D2V-COL26 precedent (a sibling-key PASS applied to a leaf with its own gloss is checked token by token before C).
+
+Check, pre-registered (PREREG-VER-COL50.md + siblings/verify_c50.py, pushed f22f165bf before the run), demotion only: keep C iff one of
+the two blind word pairings already on disk (DA1-COL word_pairs_da1.tsv, DA1-COL2 word_pairs_col2.tsv; both cleared their c50 instrument
+check, 31/110 and 31/107 vs Control W p95 19/18) puts the token in a gloss word with its value at the proportional slot +-1
+(word_da1.py's hit rule, unchanged). Output siblings/verify_c50_out.txt:
+
+```
+reader    covered hits ctrl_mean p95 max P
+DA1-COL   56      21   6.97      11  17  0.0000
+DA1-COL2  56      19   6.66      11  16  0.0000
+kept C 21 of 65; lowered to M 44 (36 word-grain-miss, 8 no-word-pairing)
+```
+Control W permutes the gloss words over canvas 50's word spans, so it moves which word sits over each token and can differ from the
+target (rule 3). The 21 kept: 24 n (ont), 48 c / 22 m / 25 p (compte), 51 de x6 (desmordent, desunion, de, remede, fondement, dessus),
+10 a x7 (lorraine, auroint, faire, auons, alliance, raison, abbandonnent), 48 c / 22 m (recommencer), 22 m (ensemble), 78 u (plus).
+Of the 21 about 7 would hit by chance (control mean), so even these are "consistent with the leaf's gloss", not individually proven.
+Every multi-letter value COL26-C50 cited as weightier (97 pour, 98 vous, 49 que, 28 la, 33 ux, 36 ez) is either a walk-miss already or
+lowered here, except 51 de. Wired (rule 7): verify_c50_lower.tsv -> c50_reading_inputs.py -> exceptions_c50.tsv ("VER-COL50 ..."
+reason per row); decode_key.py regenerated reading_c50.txt / reading_tokens_c50.tsv. Post-run edit to verify_c50.py: token selection only
+(its own exception rows count back into the 65), so `--check` runs at HEAD; same 65 tokens, same output.
+
+### 4. Grades and depth (rule 4, 4a)
+
+| Item | H | C | S | M | I | U | % C | longest C stretch |
+|---|---|---|---|---|---|---|---|---|
+| c50 | 0 | 21 | 0 | 387 | 0 | 34 | 4.8 | 3 letters (50a02, "c m p" in "compte") |
+
+No H, no S; the C is known plaintext from the leaf's own gloss placed at the token, not a reading from the key. Judge (rule 7), pasted:
+```
+FAIL language: score=-1.401, null_p99=-1.891, real_p05=-0.879, real_median=-0.782, mode=both, N=852
+ok   words: cover=0.724, min=0.4, real_text_median_cover=0.945
+FAIL - colbert26-lathuillerie-1644 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+(grade-only change; reading text unchanged). **Depth D1 ("fragments read")**: no stretch near any authentication distance, no code read
+in two contexts from the key alone; the text is the gloss's. `tools/depth_check.py` exit 0 (status.json unchanged by this audit; the
+folder's results row covers f.23/f.24; whether canvas 50 joins it is the orchestrator's call).
+
+### 5. Novelty search (rule 10)
+The plaintext is the period interlinear decipherment written on the leaf itself, so N0 holds whatever print shows; searches run for the
+log only. `tools/print_check.py --phrases phrases_c50.txt --only ia,ia-global,openalex,crossref` (6 gloss phrases; print-check-c50.tsv;
+requests archive.org 1, be-api 6, OpenAlex 6, CrossRef 6): Le Clerc *Negociations secretes* vols 1-4 no hit; IA global full text no hit;
+OpenAlex no relevant record; CrossRef loose matches only, none about this letter. Google Books (googleapis): unreachable this window
+(lane-wide 503 at 21:4x UTC 14 Oct), not called. APW (apw.digitale-sammlungen.de): not searched this session (outside the hosts briefed).
+Families (b) sender/recipient editions, (c) documentary editions beyond Le Clerc, (d) BnF finding aid: carried from AUDIT 1 s.5 (cc955062
+names no cipher). JSTOR: no row added -- no print can move an item whose decipherment is on the leaf below N0, and AUDIT 1's four rows
+cover the correspondence.
+
+### 6. Classification
+
+| Item | Class | Key | Text | Safe sentence |
+|---|---|---|---|---|
+| c50 | **N0** | period (key_f23, rebuilt by us from f.23's interlinear gloss; applied here) | known (the leaf's own interlinear gloss; not located in print) | "The 23 Jan 1648 cipher on Mel. Colbert 26 f.46 carries its own contemporary decipherment; the nomenclator rebuilt from f.23's gloss fits this leaf as a whole and places 21 of 442 tokens where that gloss puts them -- fragments, not a decipherment." |
+
+Unsafe: "canvas 50 read", "65 of 442 tokens read", "deciphered", any first/unread wording. Confidence high for N0. D1. No
+SECOND-OPINIONS-QUEUE row (N0).
+
+### 7. Postmortem
+Over-claim corrected: COL26-C50 graded 65 tokens C on a unit-level pass whose per-token walk is satisfied by chance about 45% of the time;
+44 lowered to M (NOTES.md COL26-C50 counts, Remaining gaps and Verdict carried). The solver flagged the risk itself and asked for this
+ruling. A brief applying a sibling key to a leaf with its own gloss should name the per-token placement check (word grain or tighter)
+as the C condition, not the unit walk. Hosts: archive.org 1, be-api.us.archive.org 6, api.openalex.org 6, api.crossref.org 6.

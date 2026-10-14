@@ -15,8 +15,10 @@ def hit(t, j, k, v):  # word_da1.py's rule, unchanged
     L = len(t); o = round(j * L / k)
     return any(0 <= s and s + len(v) <= L and t[s:s + len(v)] == v for s in (o - 1, o, o + 1))
 toks = {r['line']: r['tokens'].split() for r in csv.DictReader(open(f'{H}/c5051_reconciled.tsv'), delimiter='\t') if r['line'].startswith('50')}
+# the 65 COL26-C50 C tokens: graded C now, or lowered by this script's own rows (wiring edit after the run, so --check works at HEAD)
+mine = {(r['line'], r['pos']) for r in csv.DictReader(open(f'{T}/exceptions_c50.tsv'), delimiter='\t') if r['reason'].startswith('VER-COL50')}
 Ctok = [(r['line'], int(r['pos']), r['sign'], norm(r['value'])) for r in csv.DictReader(open(f'{T}/reading_tokens_c50.tsv'), delimiter='\t')
-        if r['grade'] == 'C']
+        if r['grade'] == 'C' or (r['line'], r['pos']) in mine]
 assert len(Ctok) == 65, len(Ctok)
 def spans(fn):
     out = []

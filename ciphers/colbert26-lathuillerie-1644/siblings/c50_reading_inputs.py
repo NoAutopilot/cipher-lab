@@ -35,6 +35,14 @@ for r in rows:
                    'no-gloss: row has no gloss, nothing on the leaf checks this token' if not g else
                    'walk-miss: A2-COL15 ordered walk did not find the value in this row\'s gloss at this place')
             ex.append(f'{L}\t{i}\t{key[t][0]}\tM\tCOL26-C50 14 Oct 2026: {why}')
+# VER-COL50 (verifier, 14 Oct 2026, PREREG-VER-COL50.md): per-token word-grain check lowered these C tokens to M
+VF = f'{H}/verify_c50_lower.tsv'
+if os.path.exists(VF):
+    tokmap = {r['line']: r['tokens'].split() for r in rows}
+    for r in csv.DictReader(open(VF), delimiter='\t'):
+        code = tokmap[r['line']][int(r['pos']) - 1]
+        ex.append(f"{r['line']}\t{r['pos']}\t{key[code][0]}\tM\tVER-COL50 14 Oct 2026: {r['reason']}: value not at its slot in its "
+                  "paired gloss word under either blind word pairing (DA1-COL, DA1-COL2), PREREG-VER-COL50.md")
 out = {f'{T}/ciphertext_c50.tsv': '\n'.join(ct) + '\n', f'{T}/exceptions_c50.tsv': '\n'.join(ex) + '\n'}
 if '--check' in sys.argv:
     bad = [p for p, s in out.items() if not os.path.exists(p) or open(p).read() != s]
