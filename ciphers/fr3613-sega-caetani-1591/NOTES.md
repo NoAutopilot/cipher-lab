@@ -1,4 +1,5 @@
-blocked
+found-solved
+BnF fr.3613 ff.148r-v, Sega to Cardinal Caetano, 9 Jan 1591: deciphered by George Lasry ("BnF cipher research", 10 Oct 2026), published in cyphersolver 13 Oct 2026 (targets/sega1591, commit dde5b0ea): read with the published historical key 65, 100 of 100 elements identified, extent complete. Snapshot: sources/cyphersolver/2026-10-14-lasry/sega1591/ (LANE BNF-FOCUS, 14 Oct 2026). Was `blocked` before 14 Oct.
 Meister 1906 (archive.org diegeheimschrift00meis, full text) read by this worker pp.420-421 and grepped whole-volume for Sega/Caetani/Rondinelli; no printed edition of Sega's 1590-91 letters could be opened (Acta Nuntiaturae Gallicae not on archive.org, searched 8 Oct 2026), so the verdict is blocked, not open.
 
 # Sega (bishop of Piacenza) to Cardinal Caetani, Paris, 9 January 1591 -- BnF Français 3613 no.88, fol. 148
@@ -69,3 +70,7 @@ Read so far: unmeasured; the loose-ends pass of 8 Oct 2026 did not measure the r
 - [ ] image-check: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 - [ ] retry: not assessed in the loose-ends pass of 8 Oct 2026; the next worker on this folder fills it
 Verdict: keep going: 1 internal gaps; cheapest next: read the chapter's footnotes through OpenEdition or a Google Books snippet (country=US) for an edition of the Sega 1591 letters, ~$1
+
+
+## Found solved elsewhere (LANE BNF-FOCUS, 14 Oct 2026 06:3x UTC by date -u)
+BnF fr.3613 ff.148r-v, Sega to Cardinal Caetano, 9 Jan 1591 is deciphered by George Lasry ("BnF cipher research", 10 Oct 2026), published in cyphersolver 13 Oct 2026 (targets/sega1591, commit dde5b0ea): read with the published historical key 65, 100 of 100 elements identified, extent complete. The lane found it at the daily re-screen of Bourdeau's repository at HEAD b0af20a (14 Oct). Our work on this item stops here: no further transcription, key test or ASKS row. What we have on disk (transcriptions, key blocks, sorter, controls) stays as a record; any comparison with his reading is a separate, later job and is not run by this lane. Credit: George Lasry (result), D. Bourdeau (publication; text CC BY 4.0), S. Tomokiyo (key numbering).

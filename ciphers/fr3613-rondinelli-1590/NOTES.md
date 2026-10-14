@@ -1,4 +1,5 @@
-open
+found-solved
+BnF fr.3613 ff.62r-v, Rondinelli to Nevers, 11 Nov 1590: deciphered by George Lasry ("BnF cipher research", 10 Oct 2026; with ChatGPT Astra 6 and Anthropic Opus 5.5), published in D. Bourdeau's cyphersolver repository 13 Oct 2026 (targets/rondinelli1590, commit dde5b0ea): 2/2 pages transcribed, key of 32 symbols, 655 of 656 elements identified (99.8%), method "read after matching with key from external sources", extent complete. Snapshot: sources/cyphersolver/2026-10-14-lasry/rondinelli1590/ (LANE BNF-FOCUS, 14 Oct 2026). Was `open` before 14 Oct.
 Gomberville 1665 seconde partie (Gallica bpt6k64451005) read as page images by this worker (BNF-RONDI2, openapi.bnf.fr): printed pp.213-224, 338-344 and 394-403, letter absent; whole-volume ContentSearch Rondinelli 0 (BNF-GOMB); blogs searched individually 13 Oct 2026 (BNF-RONDI3), 0 relevant hits; premise (d) now reached: the key table for this sender is in fr.3995 fol.63r (see BNF-RONDI3).
 
 # Hercole Rondinelli to the duc de Nevers, Paris, 11 Nov 1590 -- BnF Français 3613 no.33, fol. 62
@@ -144,3 +145,7 @@ Window 16:10-16:2x UTC by date -u. Disk only, no network, no reading, no decode.
 Tiles 720 (ink groups, over-split a little on purpose; the draft has 698 tokens), 10 starting piles (shape clusters, no values, no machine labels), focus 312 tiles aligned by position to the 324 columns where tx/passA.tsv and tx/passB.tsv differ. Right-edge scan bar trimmed (xmax 3360).
 Preflight (default blind mode, `tools/sorter_preflight.py`): template PASS; answerable PASS (312 focus tiles, 10 piles of 10); right line PASS (720 tiles, 17 of 17 lines, 4 shape flags = 0.6% under the 5% limit); contact sheet PASS (24 tiles, eye before publishing); colour PASS (cvd_check); gestures and pan SKIP (run at publish). preflight: PASS.
 Next: ASKS 164 (owner sorts the focus tiles; `tools/sign_sorter_apply.py`), then machine passes against the settled labels.
+
+
+## Found solved elsewhere (LANE BNF-FOCUS, 14 Oct 2026 06:3x UTC by date -u)
+BnF fr.3613 ff.62r-v, Rondinelli to Nevers, 11 Nov 1590 is deciphered by George Lasry ("BnF cipher research", 10 Oct 2026; with ChatGPT Astra 6 and Anthropic Opus 5.5), published in D. Bourdeau's cyphersolver repository 13 Oct 2026 (targets/rondinelli1590, commit dde5b0ea): 2/2 pages transcribed, key of 32 symbols, 655 of 656 elements identified (99.8%), method "read after matching with key from external sources", extent complete. The lane found it at the daily re-screen of Bourdeau's repository at HEAD b0af20a (14 Oct). Our work on this item stops here: no further transcription, key test or ASKS row. What we have on disk (transcriptions, key blocks, sorter, controls) stays as a record; any comparison with his reading is a separate, later job and is not run by this lane. Credit: George Lasry (result), D. Bourdeau (publication; text CC BY 4.0), S. Tomokiyo (key numbering).

@@ -28,3 +28,10 @@ Queries (WebSearch, standard): "Nevers Scipione Gonzaga 1590 cipher letter BnF f
 
 ## While waiting
 One action that depends on nobody: with Gallica reachable from a browser session, view the five leaves ff.104, 108, 177, 179, 181 plus the cipher leaves of nos.2-5 and 12-16 at low resolution, and the neighbouring decipherment leaves of nos.38-41 and 67-69 (are they the same key as no.35?). Alternatively read Gomberville seconde partie Feb-Jul 1590 via a local browser (LOCAL-QUEUE row). The ark is btv1b9058291p.
+
+## Lasry's BnF research touches this pool (LANE BNF-FOCUS, 14 Oct 2026 06:3x UTC by date -u)
+D. Bourdeau's cyphersolver repository (HEAD b0af20a, commit dde5b0ea, 13 Oct 2026) now publishes George Lasry's "BnF cipher
+research" (10 Oct 2026), which includes `scipion1585` (Scipion de Gonzague to Nevers, fr.4696; "not established for Français
+4698") and `gondi1594` (Girolamo Gondi to Nevers, 15 May 1594, fr.4700 ff.9r-10r, 3/6 pages deciphered). Snapshots:
+sources/cyphersolver/2026-10-14-lasry/. Which of this pool's items (fr.4698 nos.2-5, 47, 92; fr.4700 nos.38-46) they cover is an
+item-level check not yet run; the pool stays with Bourdeau (his catalogue 331) and this lane does not work it.

@@ -336,3 +336,17 @@ the strongest new material (a held key or a sibling folder) once reproduced. Re-
 - Wave 34 (16:1x UTC): BNF-RONDI-SORT (1.00) built the blind sorter for f.62r (720 tiles, 312 focus), ASKS 164. Lane day closed:
   13 Oct spend 33.43 of 40 (15 workers). Waiting on the owner: ASKS 163 (fr.3982 f.25, 21 crops, ~10 min) and ASKS 164
   (fr.3613 f.62r sorter, ~40 min); both backlog, never blocking.
+
+## Wave 35 (14 Oct 2026, 06:1x-06:4x UTC by date -u): George Lasry's BnF research published
+
+- D. Bourdeau's cyphersolver repository published George Lasry's "BnF cipher research" (10 Oct 2026; 55 target folders, commit
+  dde5b0ea, 13 Oct 2026 21:01 UTC -- after this lane's 13 Oct close). Snapshots of the folders that touch this lane:
+  sources/cyphersolver/2026-10-14-lasry/.
+- **Now found-solved** (item-level match: same leaf and date): fr3613-rondinelli-1590 (Lasry: 655/656 elements, complete),
+  fr3613-sega-caetani-1591 (published key 65, complete), fr3622-nevers-gondi-1594 f.91 (230/245, partial). ASKS 164 withdrawn.
+  Our transcriptions, key blocks and controls on these stay as a record; no comparison is run by this lane.
+- **Not in his list**: fr3982-nevers-toscana-1592 (f.25) and fr3985-gievre-1593 (f.89) stay open; ASKS 163 stays.
+- **Same-volume overlaps for other lanes' folders** (volume match, not item match; each owner checks the item):
+  birago-fr3252-1571-72 birago-nevers-1571 ceppo-nevers-fr3251-1570s clair1067-brienne-poland-1646 clair1108-duvergier clair1161-avis-flandre-1688 dupuy155-1597 dupuy468-anhalt fr2933-salviati-1525 fr4687-paleologue-nevers fr5160-letellier-1653 nevers-birago-fr3251-1572 -- table in sources/cyphersolver/2026-10-14-lasry/ours_same_volume.tsv.
+- Lesson: two independent groups worked the same BnF Nevers volumes in the same week; the daily solver-repository re-screen caught it
+  within 9 hours of publication. Spend 14 Oct so far: 0 workers.
