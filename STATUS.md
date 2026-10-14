@@ -9337,3 +9337,28 @@ Keystone chosen by the owner 13 Oct 2026: Saint-Gouard to Charles IX, Madrid, 10
 **Waits on the owner.** Packet https://claude.ai/artifact/F5Z4DJ8vDxFoRwa5zFpXMU (tx/sorter_f191/, PREREG-VIVPACKET3 + Addenda A-C; 34 question tiles from f.191r L08-L16/L29-L32, 26 one-sign piles incl. F = the f-glyph). Consuming test registered: his placements replace the vote at those positions (F -> f, grade S), f191.py --stats re-decode, longest all-H run and V_strict before/after with the gates; any score is tagged post-hoc (Addendum C relaxed the box gate 36 -> 34); a stretch above 42 with no liberty goes to a verifier (AUDIT 8). The parent's check-in reads the page's db (ArtifactData: moves, checked, newpiles, recuts) and scores with tools/sign_sorter_apply.py --labels tx/sorter_f191/labels.tsv.
 **Next two jobs (after the packet).** (1) VIV-GSPLIT: split label g into r-sign and f-sign on the truth leaves (the 16 f positions + the owner's F placements as anchors), PREREG'd row for the f-glyph, gates, verifier -- the one key change in sight that lengthens runs. (2) VIV-F191C: third fresh blind pass on f.191r L22-L36 (pass D drifted there) with a per-pass line-drift check, re-vote. Account 2 (queued by WORK-QUEUE rows tagged other): f.202r remainder of ink 67 (~8), f.211v of ink 70 if any cipher (~3), and f.102r dev2 rebuilt with the third clerk read.
 **Open items.** tools/data/tool_shelf.tsv row for key_decode_lattice --confusion-matrix (VIV-LAT's suggestion, not yet added). VIV-PACKET3B overran 1.71x (rebuild after a stop hook deleted its crops; lesson in LEDGER). Sorter defects R12-R14 unfixed in tools/sign_sorter.py. VIV-F191B pass D drift (L22-L36 effectively three passes).
+
+## LANE DEFAULT-account-2-20261014-2209 handoff (session_01JajHGkXCRZ7LtJNFUSiJWU, account 2, for the orchestrator (owner account)), 14 October 2026 (22:09-23:4x UTC by date -u; closed: in-scope backlog spent; workers 31.83 + orchestrator ~6.6 = ~38.4 of 60 by get_session; five_hour allowed throughout)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-14-ytbiz-default-2209-jobs.md (waves 1-3). Gate 0a: SESSION-SWEEP-account-2
+stale-claimed since 5 Oct, proceeded. VERIFY-BACKLOG regenerated: high rows Birago/ceppo (off limits), audit2 rows N0/N1. The hot runnable rows
+were held by the live A1-1840 and A4-2135 lanes (baluze167, colbert26, sforza-duke, fr4712, fr4735, clair571, fair-game, eckert-1864, thurloe),
+so this lane took plain next_steps runnable rows. 12 workers, all ledgered and archived. Guardrail share (known-text work): CL1161-KA + GAPS-FIX
+~4.2 of 31.8 worker spend (~13%).
+Results:
+- clair1161-avis-flandre-1688 (CL1161-KA): c186R decode vs Lasry's f163r paragraph, G1 PASS 148/226 tokens vs permuted-key p99 54; 77=de, 7, S, 48
+  undecided by --try; no key edit. Next: image check of S/7 exemplars (~1.5).
+- fr3982-nevers-toscana-1592 (TUSC-KEYS, TUSC-XM, NO70-WORDS): Tomokiyo's two Tuscan tables in ciphers/_keys/tuscany-guicciardini/ (credit Tomokiyo);
+  key no.70 word columns in keys/key_no70_nomenclator.tsv; every f.25 screen is a NON-TEST by power at the measured transcription error. Blocker:
+  the owner's looped-sign check (ASKS row); a polyphony-aware T2 decoder is the one agent step left (~2.5).
+- mccormick-1999 (MCC-WORD): word-bigram code-word anneal reads its control at no N (0.07-0.11 vs 0.5): untestable by this instrument; next an
+  abbreviation/consonant-skeleton model (~3).
+- erba-2006 (ERBA-SIB, ERBA-CASE): sibling phrases added from press text (no image reachable); case-folded test 4b control PASS, target does not move
+  (control-backed negative for that design); case-sensitive K=13 variant CONTROL BELOW GATE (search shortfall); next: swap move / more restarts (~2).
+- kaliningrad-2015 (KAL-BIG): columnar_homophonic second budget attempt, control 0.291 < 0.6, joint anneal retired for the hypothesis (rule 3);
+  next: two-stage width/order-from-adjacency instrument.
+- oldenbarnevelt-brederode-1605 (OBRED-6018): inv. 6018 stride-3, 193/577 scans, controls 66/66, no numeral block; next: 6019 stride 3 (~4, low yield).
+- Records: sp105-paget-1693 and wvo-11008-certain-1572 Verdicts corrected (GAPS-FIX); na-oldenbarnevelt-2442 (o5) pointer -> AUDIT 6 / ASKS 161;
+  tools/next_steps.py now maps parked Verdicts to gaps_check's outside blocker (676eeb482, 6 of 212 rows reclassified) (NS-PARKED).
+Lessons: OLD-O5 (0.88) re-ran a step already done as AUDIT 6 -- grep AUDIT.md section titles, not only NOTES Verdicts, before briefing; 5 of 12
+workers over cap, worst NO70-WORDS 1.6x (three vision units + a screen in a 2.5 cap: price per pass, CLAUDE.md Usage 6).
