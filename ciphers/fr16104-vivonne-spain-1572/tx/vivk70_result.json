@@ -1,0 +1,34 @@
+{
+ "item": "vivonne1573-f211r-dev",
+ "seed": 20261014,
+ "control_published": {
+  "real": 0.6996,
+  "aligned_keyed": 456,
+  "null_mean": 0.6022,
+  "null_p95": 0.6614,
+  "null_max": 0.7007,
+  "rank": 2,
+  "window": [
+   200,
+   2413
+  ],
+  "n_letters": 2614,
+  "n_signs": 519,
+  "verdict": "FAIL"
+ },
+ "control_keytsv_report_only": {
+  "real": 0.6888,
+  "aligned_keyed": 466,
+  "null_mean": 0.5978,
+  "null_p95": 0.6493,
+  "null_max": 0.6609,
+  "rank": 1,
+  "window": [
+   200,
+   2413
+  ],
+  "n_letters": 2614,
+  "n_signs": 519,
+  "verdict": "PASS"
+ }
+}

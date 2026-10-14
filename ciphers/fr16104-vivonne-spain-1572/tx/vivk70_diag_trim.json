@@ -1,0 +1,19 @@
+{
+ "post_hoc": true,
+ "trim_letters": 773,
+ "control_published": {
+  "real": 0.7689,
+  "aligned_keyed": 437,
+  "null_mean": 0.458,
+  "null_p95": 0.5222,
+  "null_max": 0.5719,
+  "rank": 1,
+  "window": [
+   0,
+   733
+  ],
+  "n_letters": 773,
+  "n_signs": 519,
+  "verdict": "PASS"
+ }
+}

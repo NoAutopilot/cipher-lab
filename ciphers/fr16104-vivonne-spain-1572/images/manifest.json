@@ -10923,7 +10923,7 @@
   {
    "file": "fr16105_c107_f104_head.jpg",
    "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9009663p/f107/pct:52,2,46,32/1600,/0/default.jpg",
-   "what": "fr.16105 f.104r head: docket '8 Juin 1573', heading 'dechiffr\u00e9 de la precedente', old ink no. 41, stamped 104 (N4-VIV2, 4 Oct 2026)"
+   "what": "fr.16105 f.104r head: docket '8 Juin 1573', heading 'dechiffré de la precedente', old ink no. 41, stamped 104 (N4-VIV2, 4 Oct 2026)"
   },
   {
    "file": "fr16105_c112_f108v_end_norm.jpg",
@@ -11116,7 +11116,7 @@
    "canvas": 262,
    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f262/full/1600,/0/default.jpg",
    "file": "images/pdech/ov_c262_1600.jpg",
-   "note": "f.240v address leaf endorsed '... St Gouard au Roy ... Novembre 1572' | f.241r HEAD of ink 78: docket '7 Novembre 1572', 'dechiffr\u00e9 de la precedente', ink 78 beside stamped 241",
+   "note": "f.240v address leaf endorsed '... St Gouard au Roy ... Novembre 1572' | f.241r HEAD of ink 78: docket '7 Novembre 1572', 'dechiffré de la precedente', ink 78 beside stamped 241",
    "fetched": "2026-10-13 VIV-HEADS"
   },
   {
@@ -11151,7 +11151,7 @@
    "canvas": 310,
    "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009609w/f310/full/1600,/0/default.jpg",
    "file": "images/pdech/ov_c310_1600.jpg",
-   "note": "f.287v address leaf endorsed '... 18 decemb.' | f.288r HEAD of ink 97: docket '17 Decembre 1572', 'dechiffr\u00e9 de la precedente', ink 97 beside stamped 288",
+   "note": "f.287v address leaf endorsed '... 18 decemb.' | f.288r HEAD of ink 97: docket '17 Decembre 1572', 'dechiffré de la precedente', ink 97 beside stamped 288",
    "fetched": "2026-10-13 VIV-HEADS"
   },
   {
@@ -11211,5 +11211,27 @@
    "python3 ciphers/fr16104-vivonne-spain-1572/tx/vivcls/seg.py"
   ],
   "source_url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f206/4100,350,3650,5350/max/0/default.jpg (as tools/iiif_lines.py --iiif-host openapi builds it)"
+ },
+ "viv70": {
+  "job": "VIV-70, 14 Oct 2026, for LANE VIV-KEYSTONE (account 4), account-2 worker",
+  "committed_images": "none (all crops untracked under images/p70/)",
+  "overviews_600px": [
+   "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f216/full/600,/0/default.jpg",
+   "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f220/full/600,/0/default.jpg",
+   "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f221/full/600,/0/default.jpg"
+  ],
+  "native_regions": {
+   "f211r (c216 right)": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f216/4100,350,3650,5350/max/0/default.jpg",
+   "f215r (c220 right)": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f220/4300,350,3600,5500/max/0/default.jpg",
+   "f215v (c221 left)": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f221/150,100,3750,5750/max/0/default.jpg"
+  },
+  "regenerate": [
+   "python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 216 --iiif-host openapi --region 4100,350,3650,5350 --out ciphers/fr16104-vivonne-spain-1572/images/p70 --prefix c216_f211r --debug   # fetch once (its crops are discarded)",
+   "python3 tools/iiif_lines.py --image ciphers/fr16104-vivonne-spain-1572/images/p70/src_image_v3_ark_12148_btv1b9009663p_f216_4100_350_3650_5350.jpg --region 250,2960,3400,1340 --out ciphers/fr16104-vivonne-spain-1572/images/p70 --prefix c216_f211r --follow-slope 400 --distance 60 --max-width 1560 --overlap 150 --debug   # 12 bands; band L10 duplicated L09 and was deleted, L11/L12 renamed L10/L11: the 11 x 3 crops the passes read",
+   "python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 220 --iiif-host openapi --region 4300,350,3600,5500 --out ciphers/fr16104-vivonne-spain-1572/images/p70 --prefix c220_f215r --distance 120 --lines-per-crop 3 --max-width 1900 --overlap 400 --debug   # fetch (crops discarded)",
+   "python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 221 --iiif-host openapi --region 150,100,3750,5750 --out ciphers/fr16104-vivonne-spain-1572/images/p70 --prefix c221_f215v --distance 120 --lines-per-crop 3 --max-width 1900 --overlap 400 --debug   # fetch (crops discarded)",
+   "python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py ciphers/fr16104-vivonne-spain-1572/images/p70/src_image_v3_ark_12148_btv1b9009663p_f220_4300_350_3600_5500.jpg --out ciphers/fr16104-vivonne-spain-1572/images/p70/dec --prefix c220_f215r --strips 8",
+   "python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py ciphers/fr16104-vivonne-spain-1572/images/p70/src_image_v3_ark_12148_btv1b9009663p_f221_150_100_3750_5750.jpg --out ciphers/fr16104-vivonne-spain-1572/images/p70/dec --prefix c221_f215v --strips 7"
+  ]
  }
 }
