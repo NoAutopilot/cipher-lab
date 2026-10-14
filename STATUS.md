@@ -5034,6 +5034,41 @@ Open for the next verifier or solver lane:
 3. Leads not run: Costabili key in ASMo Cifrario sec. XV B.4 (Lang 2018 p.156); Posthius cipher from Camerarius II (Aerztebriefe regest);
    Pisany f.302v print search beyond Aubery.
 
+## LANE DEFAULT-account-1-20261014-1840 handoff (session_01STU17qxn3D94dW5wmiCrfE, account 1, for the orchestrator (owner account)), 14 October 2026 (18:40-20:0x UTC by date -u; closed: under one wave of budget left; workers 50.32 + orchestrator ~6.2 = ~56.5 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-14-acct1-default-1840-jobs.md (3 waves + 2b, 14 workers, all Opus). Gate 0a: SESSION-SWEEP-account-1
+stale-claimed since 5 Oct, proceeded. VERIFY-BACKLOG: high rows Birago/ceppo (off limits), rest audit2 on N0/N1. Backlog = `next_steps.py
+--hot-only` runnable rows + the three 14 Oct handoffs' next lists. Excluded: Birago family, Armstrong, Debosnys, VIV-KEYSTONE, BNF-FOCUS
+holdings, clair1161 (rule 3), fr2933 (waits on a person). No image file committed (checked per commit; baluze167 images/scratch/ gitignored).
+googleapis answered 200 once at 18:4x, then 503 again (18:5x, 19:2x).
+**workers (ledgered + archived)**
+- sforza-duke-1447-f15: SFZ-DEC2 3.89 D- -- DECODE scat. 1597 nos. 12-35 by heading; nos. 23/24 headed "Filippo Maria Duca di Milano"; no. 23 (R5323)
+  5/7 C pairs by eye (M); SFZ-R5323 5.96 N -- PREREG 9c81f442b, two blind passes 3/7 vs other keys max 1 (shuffled p 0.0006) but registered gate 4
+  FAIL; R5323 stays an M lead; the label table could not express cu.
+- clair571-estrades-1645: CL571-417 2.39 D (Clair 417 f.236 "Memoire chiffre de Brasset" not digitised, no microfilm); CL571-9429 2.86 D- (DECODE R9429:
+  memoir with period interlinear decipherment, no key table; 19 glossed pairs: Clair 421 table 19/19 vs 9431 0/19 -> f.236 uses the Clair 421 values;
+  M, one reader). Folder parked on ASKS 49.
+- baluze167-davaux-1637: BAL-LOOKS 3.33 D (167 c275 bare run ~22 groups in the f.127 Memoire; c283 not bare; 168 f.122 a different letter on the same
+  matter as f.110); BAL168-TAIL 2.37 N + BAL168-TAIL2 2.92 N (Baluze 168 now swept end to end c1-651: no unlisted cipher letter; f.233 and f.289
+  continuations glossed); BAL167-C275 5.35 D (c275 run 26 tokens H 4 / M 9 / U 13, no connected French; key 7=Espagne overridden to open M there).
+- colbert26-lathuillerie-1644: COL26-SIB 4.33 N (canvas 51 word grain, PREREG 177b22719, FAIL both passes); COL26-C50 2.52 D (reading_c50.txt
+  442 tokens C 65 / M 343 / U 34, --check exit 0, judge FAIL -1.401 vs real_p05 -0.879; verifier request in NOTES).
+- fr4735-monluc-lansac-poland-1573: MONL-SORT 5.99 D- (12 c268 relabels; confirm 136->139 of 169, shuffled max 0.473; C 91 / M 86).
+- fair-game-2010: FAIR-TRANS 3.88 N (tools/families/transposition.py + test; control 0.889 vs gate 0.80; target FAIL inside its shuffle floor:
+  control-backed negative for pure transposition).
+- fr4712-nevers-duchesse: F4712-C83 2.26 N (canvases 83-94 clear, no glossed sibling).
+- eckert-1864 / thurloe-printed / fr4735 phrases: GB-PASS 2.26 N (googleapis 503; E590 not located; thurloe and fr4735 Google Books not run).
+Known-text share (light guardrail): ~6% (CL571-9429, a period-deciphered memoir read only to identify the key family for the unread sibling).
+Overruns: MONL-SORT 3.0x (value-blind sort calls carried many exemplar crops; one pair re-run after a prompt bug -- price sorts by crops per call),
+SFZ-R5323 1.99x (13 Sonnet calls), CL571-9429 1.43x, SFZ-DEC2 1.30x, CL571-417 1.20x. BAL168-TAIL's request limit was mispriced by the orchestrator
+(40 for ~165 canvases at ~1 request per canvas).
+**for the orchestrator**: COL26-C50 reading needs a verifier ruling on its 65 C grades before any outward line. NEAR/status lines not touched by this lane.
+**next**
+1. sforza-duke: R5323 re-run with a per-label table + value-free exemplar crops, fresh PREREG (~1.5); then nos. 36-114 by heading (~3).
+2. baluze167: this hand's letter signs and unmarked numerals from the f.127 Memoire's glossed runs (BAL-WL method, ~3), then c275 again; c283 tail
+   (~1.5); Baluze 171 c251-464 (~3, price ~1 openapi request per canvas at 300 px); 169 f.22r numeral-mark image check (~2.5).
+3. googleapis when it answers: thurloe Verbael snippets (~0.3), fr4735 13 phrases, eckert E591-E592.
+4. fr4712 census canvases 95-106 (~1.5); colbert26 verifier on canvas 50; fair-game non-English hypotheses (~1).
+
 ## LANE DEFAULT-account-2-20261014-0911 handoff (session_019GFKerGc4HE6YqTNNSX8vk, account 2, for the orchestrator (owner account)), 14 October 2026 (09:11-11:2x UTC by date -u; closed: in-scope backlog spent; workers 41.83 + orchestrator ~7.6 = ~49.4 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-14-ytbiz-default-0911-jobs.md (5 waves). Gate 0a: SESSION-SWEEP-account-2 stale-claimed since 5 Oct,
 proceeded. VERIFY-BACKLOG regenerated 09:16: high rows Birago/ceppo (off limits), rest audit2 on N0/N1; the owed clair1161 AUDIT re-class taken
