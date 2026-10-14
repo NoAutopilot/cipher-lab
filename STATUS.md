@@ -9163,7 +9163,11 @@ Waiting on the owner (backlog, never blocking): ASKS 163 (fr.3982 f.25, 21 crops
 **Update 14 Oct 2026 06:1x UTC by date -u (LANE BNF-FOCUS, account 2):** George Lasry's BnF research (cyphersolver dde5b0ea, published 13 Oct
 21:01 UTC) reads Rondinelli (fr.3613 f.62), Sega (fr.3613 f.148) and Nevers to Gondi (fr.3622 f.91): those three folders are now
 found-solved and ASKS 164 is withdrawn; next-list item 2 is void. Items 1, 3 (Tuscan keys only) and 4 stand; fr.3622's N-scaling
-statistic is void for f.91. Thirteen other folders share a volume with his items (BNF-VALUE.md Wave 35) -- their owners check them.
+statistic is void for f.91. Twelve other folders share a volume with his items (BNF-VALUE.md Wave 35) -- their owners check them.
+Tuscan candidate keys for fr.3982 f.25, held until ASKS 163 lands (no point testing on an 11.5%-error text): Tomokiyo guicciardini2.png
+(ca.1590, after Monts de Savasse 1997), guicciardini1.png (1593, after Speziali 1955), and the 1597 key Lasry used for Dupuy 155
+(Cryptiana's reconstruction from Dupuy 63 f.48). The lane spends nothing more on 14 Oct unless 163 is answered or the orchestrator
+re-plans the lane in view of Lasry's overlap.
 
 ## LANE VIV-KEYSTONE handoff (session_01D7XWmthshMVqxumdDvitPh, account-4 parent, standing lane, kept current), 14 October 2026 (23:36 UTC 13 Oct - 05:3x UTC 14 Oct by date -u; open, waiting on the owner's packet; workers 71.56 on account 4 by get_session + account-2 rows VIV-70, VIV-70B, VIV-67B, VIV-DECH3 (costs not visible here); five_hour allowed throughout, resets 07:30 UTC)
 Keystone chosen by the owner 13 Oct 2026: Saint-Gouard to Charles IX, Madrid, 10 Oct 1573 (`ciphers/fr16104-vivonne-spain-1572`, ink 63, BnF fr.16105 ff.190r-194r; 15,762 signs, published key). State: N3, D1 held (AUDIT 7, VIV-KEYV). Brief: `.claude/briefs/runs/2026-10-13-acct4-keystone-viv-jobs.md` (waves 1-6, account-2 rows). Rules from hub-seed/HANDOFF-ACCOUNT3-2026-10-13.md (a)-(e) applied throughout: max two jobs in flight, get_session every 30 min, no reading or key change without a verifier, no owner ask without a PREREG'd consumer.
