@@ -2758,6 +2758,25 @@ b2 -1.454 vs p99 -1.815 PASS (controls C1 -1.695 vs -1.902, C2 -1.657 vs -1.832 
 
 Requests: openapi.bnf.fr 1 (HTTP 200), gallica.bnf.fr 0. Subagent calls: 2 Sonnet (pass C completed reading, unsaved; pass D stopped). Cost not visible to this session.
 
+## VIV-HUMAN result (parent, account 4, 14 Oct 2026, 02:3x UTC by date -u): the owner's blind placements scored
+The owner answered the page (https://claude.ai/artifact/WAPAiDSVDwYjvDotTgBFhA) at 02:28-02:31 UTC; db exported with ArtifactData
+(tx/vivhuman/answers_2026-10-14/db/: 21 moves, 3 recuts, 2 checked, 2 newpiles), applied with `tools/sign_sorter_apply.py --labels
+tx/sorter_human/labels.tsv --db <dir> --out settled.tsv --page tx/sorter_human/sorter_viv_human.html` (mode blind, 577 tiles, 21 moved,
+3 recuts), scored with tx/vivhuman/score.py exactly as PREREG-VIVHUMAN.md fixed before the page was built (score.txt, per_tile.tsv).
+- **W (reader-wrong, truth certain), n 12: 5 correct (0.417); 4 wrong; 2 "new sign"; 1 unanswered.** All four wrong placements are the
+  same pair: the d-sign the readers label 3 placed in pile z (Q04, Q14, Q15, Q19; pass B wrote z at each, pass A 3). The two "new sign"
+  calls are Q12 (truth L/g = r; both readers L or l) and Q23 (truth s/P/z = a; readers S/s). The unanswered W tile (Q25) and the
+  unanswered R tile (Q24) are the two the owner recut: the page wrote them to `checked` with pile unsorted and never let him place
+  them (his report, now sorter requirement R12 in tools/data/sorter_owner_requirements.tsv).
+- **R (reader-right, truth certain), n 11: 10 correct (0.909); 1 unanswered (the recut tile).**
+- **Verdict by the registered rule: undecided** (W 0.417 sits between 0.40 and 0.60; R 0.909 is at the 0.90 line only with the lost tile
+  counted against it). Not threshold-shopped: with the two cut-lost tiles excluded post hoc, W would read 5/11 = 0.455 and R 10/10, still
+  undecided -- reported here as a sensitivity note, not the verdict.
+- What it changed: nothing in the key or any reading. What it says: where the machine readers fail on this hand, a person recovers
+  about half; the half he misses is one look-alike pair (3 vs z, the d-sign), the same pair pass B and VIV-67's split table name first
+  (3/z 15). That is a pile-exemplar question (do the 3 and z piles show the distinction?) before it is a reading question. A second
+  owner ask on this hand, if any, targets that pair with its exemplars side by side, and only once R12 is fixed.
+
 ## Remaining gaps (VIV-F191 refresh, 14 Oct 2026; supersedes the VIV-70B list, all its other lines kept)
 Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 read with key.tsv, gloss check PASS (N5-VIV54), window look-alike pass + re-decode, b2 + wrong-key PASS (N7-VIV54L); ink 53 Ink 52 f.164r-v read (VIV52-O, 13 Oct 2026): H 2,217 / M 404 / U 106 of 2,727, b2 + 200-wrong-key PASS.
 ff.170r-171v read, b2 + wrong-key PASS (N6-VIV53B), window look-alike pass + ': :' join + re-decode, b2 + wrong-key PASS again (N7-VIV53L); ink 63 ff.190r-194r read in full (f.194r L5-10 added by N7-VIV63G): b2 PASS on every part (N6-VIV63, N6-VIV63B,
