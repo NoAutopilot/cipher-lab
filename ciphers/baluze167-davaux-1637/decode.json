@@ -78,8 +78,11 @@
     "# Baluze 169 f.22r lines 1-4 bare cipher groups (BAL169-F22, 14 Oct 2026): reconciled transcription read with Tomokiyo's",
     "# D'Avaux table (published key, credited). Letter signs and 1-bearing numerals are M (see ciphertext_b169f22r.txt). Regenerate:",
     "# python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check",
+    "# BAL22-SHAPE (14 Oct 2026): 5 letter-sign tokens confirmed by a blind same-key wrong-label shape check move M -> S; f -> I (balshape/f22/).",
     "# Grades: {grades_sorted}"
-   ]
+   ],
+   "exceptions": "balshape/f22/exceptions_b169f22r.tsv",
+   "exception_grade_overrides_conf": true
   }
  ]
 }

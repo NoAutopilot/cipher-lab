@@ -1,0 +1,31 @@
+tile	same	conf	best	note
+X01	no	high	NONE	digit-like 4 3 shape
+X02	yes	high	a	y over horizontal bar with descender
+X03	yes	high	a	y over cross
+X04	no	high	p	three minims uuu
+X05	no	high	p	three minims uuu
+X06	yes	high	n	h-shaped with hook
+X07	yes	high	n	h-shaped
+X08	yes	high	t	u with cross
+X09	no	high	s	long f with crossbar
+X10	yes	high	n	h-shaped
+X11	yes	high	a	y over cross
+X12	no	high	a	y over cross not u
+X13	no	high	n	h-shaped not curly u
+X14	yes	high	c	q stem with loop
+X15	no	low	r	curly y with bar
+X16	yes	high	l	small n
+X17	yes	low	c	q with curl at left
+X18	no	high	s	double f with bar
+X19	yes	high	s	long f
+X20	no	high	t	u with cross
+X21	yes	low	r	loop y with long bar
+X22	yes	low	f	hump form with cross
+X23	no	high	c	q shape
+X24	no	high	c	q shape
+X25	yes	high	n	h-shaped
+X26	yes	high	g	small r-like curl
+X27	yes	high	n	h-shaped
+X28	no	high	n	h-shaped not r
+X29	yes	high	m	minims with cross
+X30	yes	low	u	curly z-like form

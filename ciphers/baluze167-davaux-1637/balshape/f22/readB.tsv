@@ -1,0 +1,31 @@
+tile	same	conf	best	note
+X01	no	high	a	y with low crossbar through stem
+X02	no	low	NONE	4-and-3 like figure
+X03	no	high	t	u with small cross
+X04	no	high	t	u with cross, bar above
+X05	no	high	c	q with straight stem
+X06	no	low	b	curled hook top, loop
+X07	yes	high	a	y with long horizontal bar
+X08	yes	high	g	small z/r curl form
+X09	no	high	n	h with tail, stem
+X10	yes	high	r	y with swept bar through
+X11	yes	high	n	h shape with stem
+X12	no	high	p	minims uum
+X13	no	high	c	q stem
+X14	no	high	s	long f with bar, proposal s fits
+X15	yes	high	n	h with stem
+X16	no	low	s	double f with bar
+X17	no	low	b	curl ɣ with hook above
+X18	yes	high	m	minims with cross
+X19	yes	high	n	h with stem
+X20	yes	low	r	y loop with long bar
+X21	yes	high	p	minims
+X22	yes	high	n	h with stem
+X23	yes	high	s	f with bar
+X24	no	high	a	y with cross
+X25	yes	high	c	q stem
+X26	no	high	m	minims with cross
+X27	yes	high	n	h with stem
+X28	yes	high	l	small n/u
+X29	no	high	n	h with stem
+X30	no	high	a	y with cross

@@ -1,7 +1,8 @@
 # Baluze 169 f.22r lines 1-4 bare cipher groups (BAL169-F22, 14 Oct 2026): reconciled transcription read with Tomokiyo's
 # D'Avaux table (published key, credited). Letter signs and 1-bearing numerals are M (see ciphertext_b169f22r.txt). Regenerate:
 # python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check
-# Grades: H 4, I 1, M 19
+# BAL22-SHAPE (14 Oct 2026): 5 letter-sign tokens confirmed by a blind same-key wrong-label shape check move M -> S; f -> I (balshape/f22/).
+# Grades: H 4, I 2, M 13, S 5
 b169f22r L01	ELLE CROYOIT QU'ELLE SEROIT OBLIGEE DE se de f
 b169f22r L02	faire de Milandre AUQUEL CAS ON SEROIT TRES AISE ICY QU'ELLE
 b169f22r L03	en VOULUST don ne r le co m ma n de ment a Mr de

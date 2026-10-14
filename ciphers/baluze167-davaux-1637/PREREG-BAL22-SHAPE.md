@@ -1,4 +1,4 @@
-# PREREG-BAL22-SHAPE (BAL22-SHAPE worker, LANE DEFAULT-A2-0911-14, account 2), written 14 Oct 2026 09:4x UTC by date -u,
+# PREREG-BAL22-SHAPE (BAL22-SHAPE worker, LANE DEFAULT-A2-0911-14, account 2), written 14 Oct 2026 09:27 UTC by date -u (header first said 09:4x, a typing error corrected after the push; the commit time is the record),
 # pushed in its own commit BEFORE any tile read for this job
 
 Target: the 7 letter-sign tokens of Baluze 169 f.22r (reading_tokens_b169f22r.tsv: L01/8 f, L03/4 r, L03/7 m, L03/9 n, L03/12 a,

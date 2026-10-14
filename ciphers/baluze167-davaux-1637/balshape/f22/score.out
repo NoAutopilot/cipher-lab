@@ -1,0 +1,33 @@
+read A: P+ 11/12 = 0.917 G1 PASS; P- 0/11 = 0.000 G2 PASS
+   P- X04 true p proposed u: no high best p
+   P- X05 true p proposed u: no high best p
+   P- X09 true s proposed r: no high best s
+   P- X12 true a proposed u: no high best a
+   P- X13 true n proposed u: no high best n
+   P- X15 true r proposed n: no low best r
+   P- X18 true s proposed m: no high best s
+   P- X20 true t proposed u: no high best t
+   P- X23 true c proposed m: no high best c
+   P- X24 true c proposed m: no high best c
+   P- X28 true n proposed r: no high best n
+read B: P+ 9/11 = 0.818 G1 PASS; P- 0/12 = 0.000 G2 PASS
+   P- X01 true a proposed u: no high best a
+   P- X03 true t proposed a: no high best t
+   P- X04 true t proposed u: no high best t
+   P- X05 true c proposed u: no high best c
+   P- X06 true c proposed a: no low best b
+   P- X09 true n proposed m: no high best n
+   P- X12 true p proposed f: no high best p
+   P- X13 true c proposed f: no high best c
+   P- X16 true s proposed a: no low best s
+   P- X24 true a proposed f: no high best a
+   P- X29 true n proposed m: no high best n
+   P- X30 true a proposed r: no high best a
+T tiles:
+  T:L04/1 value n: A yes high best n; B yes high best n -> CONFIRMED
+  T:L03/12 value a: A yes high best a; B yes high best a -> CONFIRMED
+  T:L03/4 value r: A yes low best r; B yes low best r -> CONFIRMED
+  T:L01/8 value f: A yes low best f; B no high best m -> not confirmed
+  T:L03/9 value n: A yes high best n; B yes high best n -> CONFIRMED
+  T:L03/7 value m: A yes high best m; B yes high best m -> CONFIRMED
+  T:L04/3 value u: A yes low best u; B no low best b -> not confirmed

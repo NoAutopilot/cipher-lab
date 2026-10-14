@@ -1,0 +1,7 @@
+folio	line	pos	value	grade	reason
+b169f22r	L03	4	r	S	BAL22-SHAPE: tile CONFIRMED (PREREG-BAL22-SHAPE, read A G1 0.917 G2 0.000, read B G1 0.818 G2 0.000, balshape/f22/score.out)
+b169f22r	L03	7	m	S	BAL22-SHAPE: tile CONFIRMED (PREREG-BAL22-SHAPE, read A G1 0.917 G2 0.000, read B G1 0.818 G2 0.000, balshape/f22/score.out)
+b169f22r	L03	9	n	S	BAL22-SHAPE: tile CONFIRMED (PREREG-BAL22-SHAPE, read A G1 0.917 G2 0.000, read B G1 0.818 G2 0.000, balshape/f22/score.out)
+b169f22r	L03	12	a	S	BAL22-SHAPE: tile CONFIRMED (PREREG-BAL22-SHAPE, read A G1 0.917 G2 0.000, read B G1 0.818 G2 0.000, balshape/f22/score.out)
+b169f22r	L04	1	n	S	BAL22-SHAPE: tile CONFIRMED (PREREG-BAL22-SHAPE, read A G1 0.917 G2 0.000, read B G1 0.818 G2 0.000, balshape/f22/score.out)
+b169f22r	L01	8	f	I	BAL22-SHAPE: not confirmed (read A yes low; read B no high, best m); context fit, I per VER-BAL22 / PREREG-BAL22-SHAPE

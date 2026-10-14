@@ -784,3 +784,5 @@ rule asks none, and the "Ransau" clause rests on context-chosen tokens.
 - Next step for the reading: a blind shape check of the six letter signs against Tomokiyo's table and glossed exemplars (the BAL-WL
   method), and a fresh rule-7 re-derivation; the commander's name stays unread until then.
 - SECOND-OPINIONS-QUEUE row SO-BAL169-F22 appended (N3).
+
+BAL22-SHAPE (14 Oct 2026, account 2, solver job, no class change): blind shape check of the 7 letter signs of 169 f.22r, both reads passed the same-key wrong-label gates; 5 tokens M -> S, f -> I, u stays M; f.22r now H 4, S 5, I 2, M 13. See NOTES.md "## BAL22-SHAPE".
