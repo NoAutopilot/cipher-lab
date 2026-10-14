@@ -1,0 +1,87 @@
+our_sign	his_cell	conf	note
+S4^	t|ge?	L	slashed cross-4 shape resembles his -f- t and 4+ ge
+S4^~	none	L	no cell with this base under tilde
+S4^1	none	L	no matching base with 1 mark
+S4^5	none	L	no matching base with 5 mark
+S4^o	none	L	no matching base with ring mark
+lam^	none	M	his lambda cells all carry a superscript digit
+lam^5	to	H	lambda with 5 above, as his to
+lam^1	ta	H	lambda with 1 above, as his ta
+lam^dot	none	M	no lambda cell with dot mark
+lam^7	ti	H	lambda with 7 above, as his ti
+lam^~	te	H	lambda with 2/tilde stroke above, as his te
+lam^#	none	M	no lambda cell with double cross
+lam^o	none	M	no lambda cell with ring
+Lx^	u/v?	M	lambda/n with bar crossing right leg like his n+
+Lx^dot	none	L	no crossed-lambda cell with dot
+Lx^#	none	L	no crossed-lambda cell with double cross
+Lx^5	none	L	no crossed-lambda cell with 5
+L^	fa?|fo?	L	L with inner digit; inner digit decides f-syllable
+L^~	fe?	M	L with 2/tilde-like stroke, as fe?
+L^dot	none	L	no L cell with dot mark
+L^7	fi?	M	L with 7, as fi?
+H^	che	L	H base only appears as che (with 10)
+H^1	che	H	H with 10 above, digit 1 of 10
+H^o	che	M	ring may be the 0 of 10
+H^5	none	M	only H cell carries 10
+H^#	none	M	only H cell carries 10
+H^~	none	M	only H cell carries 10
+H^dot	none	M	only H cell carries 10
+K^	none	H	no K glyph on his sheet
+K^1	none	H	no K glyph on his sheet
+tee^	l2	H	vertical with right bar, his second l
+tee^dot	none	M	his l2 is unmarked
+tee^1	none	M	his l2 is unmarked
+tee^~	none	M	his l2 is unmarked
+tee^5	none	M	his l2 is unmarked
++^	t	M	single cross on line like his -f- t
++^dot	none	L	no marked cross cell
++^ot	none	L	no marked cross cell
+#^	et2	L	some crossed-z exemplars resemble his crossed z et
+#^dot	none	L	his double-crosses are superscripts, not on-line base
+#^#	none	L	no on-line double-cross cell
+#^~	none	L	no on-line double-cross cell
+#^o	none	L	no on-line double-cross cell
+#^ot	none	L	no on-line double-cross cell
+eps^	c	H	bare epsilon with leading tick, his c
+eps^5	co	H	epsilon with 5 above, as co
+eps^1	ca	H	epsilon with 1 above, as ca
+eps^7	ci	H	epsilon with 7 above, as ci
+eps^~	ce	H	epsilon with 2/tilde above, as ce
+eps^dot	none	M	no epsilon cell with dot
+eps^#	none	M	his # cells use e-loop base, not epsilon
+eps^o	none	M	no epsilon cell with ring
+dl^	r	L	delta with long tail vaguely like his tailed r
+dl^1	none	L	no tailed-delta cell with 1
+rz^	e	H	low lying-z wave on line, his e
+rz^1	none	M	his e is unmarked
+rz^~	none	M	his e is unmarked
+rz^dot	none	M	his e is unmarked
+rz^#	none	M	his e is unmarked
+phi^	et1	H	slashed o on long stem, his phi-like et
+phi^5	none	M	his et1 shown unmarked
+phi^dot	none	M	his et1 shown unmarked
+phi^1	none	M	his et1 shown unmarked
+o.^	i2?	H	ring with inner dot, his second i
+o.^dot	none	M	his i2 unmarked
+o.^1	none	M	his i2 unmarked
+o.^ot	none	M	his i2 unmarked
+o.^o	none	M	his i2 unmarked
+o.^~	none	M	his i2 unmarked
+[^	i1	H	box open right, his first i
+[^1	none	M	his i1 unmarked
+[^dot	none	M	his i1 unmarked
+[^~	none	M	his i1 unmarked
+]^	none	M	his box-open-left cells all marked
+]^o	la|lu?	M	box open left with small ring above
+]^ot	le|lo?	M	box open left with ring+stroke above
+]^dot	li?	L	li? shows ring with dots; weak
+]^#	none	L	no box-left cell with double cross
+]^~	none	L	no box-left cell with tilde
+sq^	none	L	his square cells carry marks
+sq^ot	que?	L	que? square with mark above, partly matches
+sq^1	none	L	no square cell with 1
+sq^~	qua?	M	square with caret/tilde-like hat, as qua?
+sq^#	que?	L	que? has cross-like mark above square
+sq^o	none	L	no square cell with ring
+U^	p1	H	square cup open top, his first p

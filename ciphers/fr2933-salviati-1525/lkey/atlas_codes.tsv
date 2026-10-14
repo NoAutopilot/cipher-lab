@@ -1,0 +1,37 @@
+code	desc	count	marks_seen
+a	bold cursive a	74	1:23 ~:12 5:12 7:7 dot:3 o:1
+e	looped e (ℓ-like): ONE bowl closed by a loop at the top, the stroke rising into the loop; usually carries # or + above. Not eps.	162	dot:55 #:46 +:20 ot:2 o:1
+g	9/g-shaped sign	252	~:49 1:23 dot:22 5:15 7:10 o:3 #:2 ot:2 +:2
+y	cursive y with a looped tail	183	dot:11 1:6 5:6 ~:6 7:4 #:3 ot:1 o:1
+psi	ψ-like forked y (two arms, straight tail)	50	#:1 ~:1 dot:1 +:1
+m	cursive m (often carries ~ above)	72	~:36 1:12 5:7 7:4 dot:1
+w	cursive w/ω, often with a lead-in stroke from the left	174	dot:6 #:4 ~:2 5:1 1:1
+wd	ω joined to a tall right stroke (like "ud")	34	~:1 #:1
+v	curved v with a hooked left arm (ṽ-like)	24	1:10 5:4 #:4 dot:2 7:1 ot:1
+N	cursive N / И	44	1:1 dot:1
+nt	n joined to a crossed stroke (looks like n+), ONE sign	88	dot:4 ~:4 1:1
+bh	þ/b-like: tall straight stem with a small hooked loop at the upper right, often a lead-in stroke from the left (the only h/b-like cipher code; plain-script b, h, d, ll are '_')	126	dot:9 7:2 ~:1
+p	p with loop, its stem crossed	50	1:3 dot:1 5:1
+f	long f/ſ with a crossbar	51	dot:5 5:2 ot:1
+ch	c followed by a tall looped h (che abbreviation?)	21	
+S	S/ʃ-shaped sign	86	#:3 dot:3 7:1 1:1
+Z	Z-shaped sign	129	dot:19 ot:14 #:4 ~:3 7:2 o:2
+S7	7-shaped sign	203	#:26 ~:12 +:9 dot:7 1:3
+S4	4-shape with a foot: a slash crossing a ⊥	66	~:3 1:2 5:1 o:1
+lam	Λ lambda: two strokes meeting at the top	161	5:16 1:12 dot:9 7:7 ~:5 #:3 o:1
+Lx	Λ with a bar crossing its right leg (looks like "4" or "Λ+")	55	dot:3 #:2 5:1
+L	L (often a small 1 or 7 written inside the angle, which is part of the sign)	36	~:5 dot:3 7:1
+H	H	61	1:42 o:29 5:4 #:2 ~:1 dot:1
+K	K	18	1:3
+tee	⊢: vertical stroke with a bar to the right	86	dot:1 1:1 ~:1 5:1
++	single cross standing on the line (t-like)	38	dot:3 ot:1
+#	double-barred cross standing ON the line (not a superscript)	58	dot:10 #:3 ~:2 o:2 ot:2
+eps	ε epsilon: TWO open bowls stacked, open to the right, no closed loop; marks above are rare. Not e.	111	5:27 1:23 7:11 ~:10 dot:4 #:1 o:1
+dl	δ with a long tilde tail (δ~)	50	1:1
+rz	low shape on the line like "ɿ2" / a lying z, left hook then wave	70	1:1 ~:1 dot:1 #:1
+phi	φ: small slashed o on a long stem	50	5:2 dot:2 1:1
+o.	⊙ ring with a dot inside (a ʔ-shaped sign that falls here is not o.)	75	dot:6 1:1 ot:1 o:1 ~:1
+[	⊏ square box open to the RIGHT	16	1:1 dot:1 ~:1
+]	⊐ square box open to the LEFT	96	o:63 ot:22 dot:10 #:2 ~:1
+sq	□ closed square box	21	ot:5 1:2 ~:1 #:1 o:1
+U	⊔ square cup open at the TOP	13	

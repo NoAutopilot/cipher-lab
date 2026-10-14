@@ -1,0 +1,25 @@
+You are a blind visual-matching pass (PASS_ID) for a historical cipher. Do ONLY this job; read nothing else in the repository.
+
+Images (read each with the Read tool):
+ - HIS = /home/user/cipher-lab/sources/cyphersolver/2026-10-14-lasry/salviati1525/lasry_p031_1.png : George Lasry's published key sheet
+   for BnF fr.2933 (a syllabary). Top band: single-letter cells (heading letter above each exemplar; some carry a "?" under them).
+   Lower grid: syllable cells (exemplar image left, value right, "?" after uncertain values).
+ - OURS = /home/user/cipher-lab/ciphers/fr2933-salviati-1525/glyphs/ATLAS_PART : our sign atlas, one row per sign code (code name
+   and count at the left, ten exemplar crops from the same letter). Codes in this part: CODES.
+ - Text for our codes (code, description, count, marks_seen = our superscript-mark labels seen on that code, with counts):
+   /home/user/cipher-lab/ciphers/fr2933-salviati-1525/lkey/atlas_codes.tsv (read only the rows for the codes above).
+
+Our transcription writes each sign as BASE^MARK: BASE is our code; MARK is the small superscript written above it, labelled
+1, 5, 7, 3 (digits), ~ (a tilde/2-like stroke), # (double-barred cross), + (single cross), dot, o (small ring), ot (ring+stroke),
+or empty. His sheet's syllable signs are a base glyph plus a small superscript too.
+
+Use these cell IDs for his sheet (his own labels; a trailing ? is his):
+ letters: a b? c e g? i1(⊏-like) i2?(⊙-like) l1(ω-like) l2(⊢-like) m n o? p1(⊔-like) p2(second p, b/h-like) r s? t u/v?
+ syllables: bi bu? ca ce ci co cu? da? de di? do du fa? fe? fi? fo? fu? ge? la le li? lo? lu? ma me mo na? ne ni no nu? pe pi? po
+ pu? qua? que? ra re ri ro se? si so? su? ta te ti to tu? va ve? vi? vo rr ss tt che et1(φ-like) et2(crossed z/I-like)
+
+Write a TSV to OUTFILE with header `our_sign	his_cell	conf	note` and one row for EVERY our_sign in this list: each code in this
+part bare (CODE^) and each CODE^MARK from its marks_seen. his_cell = the single cell whose exemplar is the same base glyph with the
+same superscript (or, for a bare sign, the same unmarked glyph); "none" if no cell on his sheet matches; if two cells are equally
+possible write both joined by "|". conf = H (clearly the same), M (probably), L (guess). note: <= 12 words of visual evidence.
+Match by shape only; do not try to decipher anything. After writing the file, reply with only the row count and a 3-line summary.
