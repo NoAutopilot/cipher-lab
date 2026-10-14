@@ -70,5 +70,115 @@
    ],
    "not_committed_note": "Baluze 169 canvases 1-280 at 300, and 1000, looks at c52, c79, c109, c177, c224, c231 kept in scratch only; re-fetch from https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f<canvas>/full/300,/0/default.jpg"
   }
+ ],
+ "bal_looks_fetches": [
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f275/full/1600,/0/default.jpg",
+   "fetched": "2026-10-14T18:56:35Z",
+   "http": 200,
+   "bytes": 529786,
+   "sha1": "24e04a0e69052bfa3bc78e8853a38c31e900d488",
+   "kept": "untracked scratch (images/scratch/ballooks/), not committed",
+   "job": "BAL-LOOKS"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f283/full/1600,/0/default.jpg",
+   "fetched": "2026-10-14T18:56:41Z",
+   "http": 200,
+   "bytes": 556725,
+   "sha1": "485a83492c0b20d0bc403b8cd26fc335344f9aec",
+   "kept": "untracked scratch (images/scratch/ballooks/), not committed",
+   "job": "BAL-LOOKS"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f234/full/1600,/0/default.jpg",
+   "fetched": "2026-10-14T18:56:47Z",
+   "http": 200,
+   "bytes": 790895,
+   "sha1": "5efa709a53311006f7c53d30245d9156c58ad6be",
+   "kept": "untracked scratch (images/scratch/ballooks/), not committed",
+   "job": "BAL-LOOKS"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f237/full/1600,/0/default.jpg",
+   "fetched": "2026-10-14T18:56:54Z",
+   "http": 200,
+   "bytes": 759025,
+   "sha1": "3f322e7e35c83a795211931627960f87a2efc936",
+   "kept": "untracked scratch (images/scratch/ballooks/), not committed",
+   "job": "BAL-LOOKS"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f259/full/1600,/0/default.jpg",
+   "fetched": "2026-10-14T18:56:59Z",
+   "http": 200,
+   "bytes": 804702,
+   "sha1": "e579b0b28d8851412ffa126caf32a09461c76744",
+   "kept": "untracked scratch (images/scratch/ballooks/), not committed",
+   "job": "BAL-LOOKS"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f260/full/1600,/0/default.jpg",
+   "fetched": "2026-10-14T18:57:05Z",
+   "http": 200,
+   "bytes": 799833,
+   "sha1": "119f03da2c0f7019c3bd50a8f7384482ce52341c",
+   "kept": "untracked scratch (images/scratch/ballooks/), not committed",
+   "job": "BAL-LOOKS"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f261/full/1600,/0/default.jpg",
+   "fetched": "2026-10-14T18:57:10Z",
+   "http": 200,
+   "bytes": 773345,
+   "sha1": "995d25ab68edb3f4a640f52d26de7098a21b64b0",
+   "kept": "untracked scratch (images/scratch/ballooks/), not committed",
+   "job": "BAL-LOOKS"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f282/full/1600,/0/default.jpg",
+   "fetched": "2026-10-14T18:58:19Z",
+   "http": 200,
+   "bytes": 555275,
+   "sha1": "0e2a9613a93159319e310c6955278222e7e85238",
+   "kept": "untracked scratch (images/scratch/ballooks/), not committed",
+   "job": "BAL-LOOKS"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f252/full/1000,/0/default.jpg",
+   "fetched": "2026-10-14T18:58:24Z",
+   "http": 200,
+   "bytes": 306325,
+   "sha1": "d9b4e1f743771a93b4f8d46edacf13b1bd7ab57b",
+   "kept": "untracked scratch (images/scratch/ballooks/), not committed",
+   "job": "BAL-LOOKS"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f258/full/1000,/0/default.jpg",
+   "fetched": "2026-10-14T18:59:24Z",
+   "http": 200,
+   "bytes": 351690,
+   "sha1": "95329fd5b1812757b5a3d7ec285b002c4248efb1",
+   "kept": "untracked scratch (images/scratch/ballooks/), not committed",
+   "job": "BAL-LOOKS"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f262/full/1000,/0/default.jpg",
+   "fetched": "2026-10-14T18:59:28Z",
+   "http": 200,
+   "bytes": 278903,
+   "sha1": "8060a6a1c416239e314e635a559263ff348893e3",
+   "kept": "untracked scratch (images/scratch/ballooks/), not committed",
+   "job": "BAL-LOOKS"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f238/full/1000,/0/default.jpg",
+   "fetched": "2026-10-14T18:59:33Z",
+   "http": 200,
+   "bytes": 232602,
+   "sha1": "c25f937c68bfb1b1a09973a9cd565b563445116a",
+   "kept": "untracked scratch (images/scratch/ballooks/), not committed",
+   "job": "BAL-LOOKS"
+  }
  ]
 }
