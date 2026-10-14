@@ -209,17 +209,17 @@ two blind machine passes against those labels, re-measured. ciphertext_v2.tsv (B
 Read so far: unmeasured, no key reads the letter yet
 - Key identification for f.25 - blocker: waiting-on ASKS row 'fr.3982 f.25 looped sign and lines L00/L06' (the owner's sign check); the transcription's measured error (0.115, upper 0.160, BNF-Q7-ERR) is above the band most key controls cover, so no.46, no.70, no.45 and no.73 are non-tests and only no.62 is excluded
 - Tuscan table T2 (Tomokiyo after Monts de Savasse 1997) - blocker: not-attempted; TUSC-XM's first-alternative decode has no power on a polyphonic table (0.00-0.03); next: a decoder that tries every alternative of each cell (best path under the it16 4-gram model) with the same PREREG nulls and power check, ~$2.5. T1 (Guicciardini-Sillery 1593) is held by the transcription row above (power 0.49 at 16%, 0.62 under 8-loss)
-- Key no.70 nomenclator - blocker: not-attempted; only the alphabet of f.131r is transcribed, and the alphabet screen (p_a 0.078) cannot see a fit carried by word codes; next: transcribe the word columns and re-screen, ~$2
+- Key no.70 nomenclator - blocker: waiting-on ASKS row 'fr.3982 f.25 looped sign and lines L00/L06' (the owner's sign check); the word columns are transcribed (NO70-WORDS, 14 Oct 2026, keys/key_no70_nomenclator.tsv) and the re-screen with the 24 barred-figure codes ran (PREREG-NO70-WORDS.md), but its power is 0.76 at 0.160 error and 0.70 under 8-loss, under the 0.80 licence: NON-TEST at this transcription; re-run `q7test/no70w/no70w.py power` and the target on the next measured transcription
 
 ## Escalation (BNF-Q7-SCREEN, 13 Oct 2026)
 - [ ] siblings: other Nevers-Tuscany letters of 1592-93 in fr.3982-3987 (Tomokiyo: Aug and Nov 1593) not yet located; planned: notice items of fr.3985/fr.3987 by bnf_findingaid.py
 - [n/a] clear-pages: the minute has no clear copy on the leaf (BNF-Q7-ID leaf look)
-- [ ] known-keys: no.62 [retired by BNF-Q7-TEST, structural misfit, power 0.99-1.00]; no.46 and no.70 alphabet no fit (BNF-Q7-SCREEN, screen power 0.85/0.94 at 10%, p_a 0.43/0.078, p_b 0.16/0.26); planned: fr.3995 tables no.44, 45, 47, 56, 35, 63 through q7test/screen.py; Tomokiyo's two published Tuscan tables (TUSC-KEYS, ciphers/_keys/tuscany-guicciardini/) screened by TUSC-XM (14 Oct 2026, PREREG-TUSC-XM.md): both NON-TEST (T1 power 0.49 at 16% error, 0.62 under 8-loss; T2 power <= 0.03 even clean, first-alternative decode cannot read its polyphony); target p_key 0.34 / 0.39, not a negative
+- [ ] known-keys: no.62 [retired by BNF-Q7-TEST, structural misfit, power 0.99-1.00]; no.46 and no.70 alphabet no fit (BNF-Q7-SCREEN, screen power 0.85/0.94 at 10%, p_a 0.43/0.078, p_b 0.16/0.26); no.70 alphabet + barred-figure word codes (NO70-WORDS, 14 Oct 2026): NON-TEST (power 0.94/0.76/0.70 at 0.115/0.160/8-loss; target p_a 0.060, p_b 0.255, no word code on the best path); planned: fr.3995 tables no.44, 45, 47, 56, 35, 63 through q7test/screen.py; Tomokiyo's two published Tuscan tables (TUSC-KEYS, ciphers/_keys/tuscany-guicciardini/) screened by TUSC-XM (14 Oct 2026, PREREG-TUSC-XM.md): both NON-TEST (T1 power 0.49 at 16% error, 0.62 under 8-loss; T2 power <= 0.03 even clean, first-alternative decode cannot read its polyphony); target p_key 0.34 / 0.39, not a negative
 - [x] print: Canestrini-Desjardins vol. V OCR searched, Gomberville seconde partie 1591-1594 read (BNF-Q7-ID)
 - [ ] key-rebuild: not attempted; a 260-digit string is short for cryptanalysis without a table
 - [x] image-check: leaf read at native resolution, two blind digit passes agree 0.905 (BNF-Q7-KEY)
 - [ ] retry: none yet
-Verdict: keep going: 2 internal gaps; cheapest next: transcribe the no.70 word columns and re-screen, ~$2 (the Tuscan table T2 needs a polyphony-aware decoder, ~$2.5)
+Verdict: keep going: 1 internal gap; cheapest next: a polyphony-aware decoder for the Tuscan table T2, ~$2.5 (the no.70 word-code screen is done and waits, with key identification, on the owner's looped-sign check)
 
 ## BNF-Q7-TAB (13 Oct 2026, account 2)
 Transcription only; no decode, no screen run, no novelty class. Brief: .claude/briefs/runs/2026-10-13-ytbiz-bnf-q7-tab.md. Images and URLs: images/fr3995/manifest.json. Credit: numbering and identification Tomokiyo (nevers.htm).
@@ -352,4 +352,43 @@ PREREG-TUSC-XM.md (dc1afacb7, 22:50 UTC). Script and outputs: q7test/tusc_xm/ (t
   T1. T2: the instrument itself cannot read T2 (first alternative of a polyphonic cell), so its FAIL is a non-test of the instrument, not
   of the table; next is a decoder over all alternatives. All of this is conditional on ciphertext.tsv (BNF-Q7-ERR, rule 2).
 - Requests: none (disk only). Cost not visible to this session.
+
+## NO70-WORDS (14 Oct 2026, account 2)
+Worker NO70-WORDS (Opus) for LANE DEFAULT-A2-2209-14. Transcription of the key no.70 word columns and a re-screen of f.25; no
+reading, no novelty class. Brief: .claude/briefs/runs/2026-10-14-ytbiz-default-2209-jobs.md "### NO70-WORDS".
+- Check 1: no earlier section here or in ciphers/fr3993-gonzague-nevers-1595 (NOTES.md, AUDIT.md sections) transcribed the
+  f.131r word columns (fr3993's own gap line still reads "not-attempted"). Prior work: `tools/prior_work.py fr3982-nevers-toscana-1592
+  --item-spec 'key no.70 f.131r word columns' --step-type key --offline` exit 0 (generic UNCHECKED rows only: Tomokiyo, solver repos,
+  editions). By hand: Tomokiyo nevers.htm (local snapshot) "no.70 (fol.130) (August 1595)" describes the nomenclator ("Letters, figures
+  with an overbar, and Roman numerals ... names and words (in French)"; xviii = vous) but prints no word list; no other transcription
+  of the word columns found on disk.
+- Source: the on-disk crops ciphers/fr3993-gonzague-nevers-1595/images/key70/key70_nomen_left.jpg + _right.jpg (NV01-READ, 3 Oct).
+  One overview of fr.3995 f252 (openapi.bnf.fr, 1200 px, `images/no70/f131r_1200.jpg`) confirmed the crops hold the whole table
+  (column 2 starts at Boullon 54; nothing above it).
+- Crop step (pasted): `python3 tools/iiif_lines.py --image <scratch>/nomen_stitched.jpg --region 0,0,890,2800 | 885,0,880,2800 |
+  1760,0,2000,2800 --out ciphers/fr3982-nevers-toscana-1592/images/no70/crops --prefix no70_c1|no70_c2|no70_c34 --lines-per-crop 5
+  --debug` -> 19/22/22 lines, 4+5+5 strip crops (manifest.json there; the stitched source is the two fr3993 crops side by side,
+  4850x2800).
+- Two blind Sonnet passes (A top-down; B bottom-up, crop order reversed), crop paths only, no key. Codes: column 2 (barred Arabic
+  figures) 24/24 agree (54, 56-78; 55 is absent from the table; B marked 70 "?", the overview reads 70); place column a-s 17/17; word
+  column a-z 23/23 (B's "L?" for garnison is z by sequence and A). Roman-numeral column: the minim ligatures (n = ii, m = iii, v-loop)
+  split the passes; reconciled by eye on the crops: i toutesfois ... viij que, ix encore, x non, xi poinct, xij faute, xiij sont,
+  xiiij faire, xv enuoyer, xvi enuoye, xvj nouuelles, xvij nous, xviij vous (Tomokiyo's xviii = vous agrees), xix nos, xx vos -- 21
+  rows for i-xx, so one value repeats (enuoye/nouuelles both read xvi); graded M except ix, x, xi, xv, xix, xx. Meaning spellings
+  differ in a few names (59 Retelois/Rebelais, 61 Lauerdin/Lauerdini); codes do not.
+- Written: `keys/key_no70_nomenclator.tsv` (87 rows: 24 barred figures + 17 places + 23 words, H-period; 2 heading signs and 15 Roman
+  numerals M, 6 Roman H) and `q7test/key_no70_full_codes.tsv` (alphabet + nulls + the 24 barred figures, as polyphones of the same two
+  digits, since ciphertext.tsv records no bars). The letter- and Roman-coded columns cannot occur in f.25's all-digit string.
+- Re-screen (PREREG-NO70-WORDS.md, b7b2ff373, pushed before any score): `q7test/no70w/no70w.py power` (50 held-out Italian windows,
+  100+100 nulls, seed 70; `q7test/no70w/power.out`): **C1 0.115 power 0.94, C2 0.160 power 0.76, C3 8-loss + 0.07 power 0.70**
+  (det_b binding each time). Licence (>= 0.80 at C2 and C3) **not met: NON-TEST**. Target, as pre-registered (`q7test/no70w/target.out`):
+  S -1.2593, null (a) mean -1.512 / p99 -1.160, null (b) mean -1.332 / p99 -1.107, **p_a 0.060, p_b 0.255, no fit**; best path 55
+  letters, 39 nulls, 76 skips, and **no barred-figure word code on it** -- S is the alphabet-only value of 13 Oct to four decimals.
+  Read: the word codes add nothing the decoder uses on this transcription, and the run is a non-test either way (power).
+- Declared limits: the control's Italian windows never use a word code (the meanings are French names and nouns), so it measures the
+  decoder with the word codes present, not text that uses them; f.25 as transcribed has no 8, while no.70 writes d, h, o, t and nulls
+  with 8 (38, 48, 68, 87, 89, 08, 18) -- the looped-sign question (BNF-Q7-ERR) decides that, not this screen.
+- One-line suggestion (not done here, other target): fr3993-gonzague-nevers-1595's unread nomenclator signs (xiiij, m, X ...) can now be
+  looked up in keys/key_no70_nomenclator.tsv (xiiij = faire, m = iij = pour, x = non), with `decode_key.py --try` and its control.
+- Requests: openapi.bnf.fr 1 (f252 overview, 200). Cost not visible to this session.
 
