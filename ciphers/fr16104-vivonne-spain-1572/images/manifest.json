@@ -11243,5 +11243,25 @@
    "python3 tools/iiif_lines.py --image ciphers/fr16104-vivonne-spain-1572/images/p67/fetch/src_image_v3_ark_12148_btv1b9009663p_f206_4100_350_3650_5350.jpg --region 680,1500,2970,3700 --out ciphers/fr16104-vivonne-spain-1572/images/p67/cut --prefix c206_f201r --follow-slope 400 --distance 70 --max-width 1560 --overlap 150 --debug",
    "python3 ciphers/fr16104-vivonne-spain-1572/tx/vivhuman/build_inputs.py   # tx/sorter_human/pages/f201r.jpg (untracked) + signs/labels/focus"
   ]
+ },
+ "viv67b": {
+  "job": "VIV-67B, 14 Oct 2026, for LANE VIV-KEYSTONE (account 4)",
+  "committed_images": "none (all crops untracked under images/p67b/; decipherment strips were cut in the session scratchpad)",
+  "overviews_600px": [
+   "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f207/full/600,/0/default.jpg",
+   "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f211/full/600,/0/default.jpg",
+   "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f212/full/600,/0/default.jpg"
+  ],
+  "native_regions": {
+   "f201v (c207 left)": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f207/150,350,3850,5450/max/0/default.jpg",
+   "f206r (c211 right)": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f211/4050,300,3800,5600/max/0/default.jpg",
+   "f206v (c212 left)": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f212/150,100,3750,5750/max/0/default.jpg"
+  },
+  "regenerate": [
+   "python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 207 --iiif-host openapi --region 150,350,3850,5450 --out ciphers/fr16104-vivonne-spain-1572/images/p67b --prefix c207_f201v --debug   # fetch once (its crops are discarded)",
+   "python3 tools/iiif_lines.py --image ciphers/fr16104-vivonne-spain-1572/images/p67b/src_image_v3_ark_12148_btv1b9009663p_f207_150_350_3850_5450.jpg --region 830,480,2980,4150 --out ciphers/fr16104-vivonne-spain-1572/images/p67b --prefix c207_f201v --follow-slope 400 --distance 70 --max-width 1560 --overlap 150 --debug   # the 32 x 3 crops the passes read (cut from the native source BEFORE iiif_lines shrinks reference copies over 30 MB: keep the src at native size)",
+   "curl -A \"cipher-lab research script (contact via repository)\" -o SCRATCH/f211_native.jpg \"https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f211/4050,300,3800,5600/max/0/default.jpg\"; python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py SCRATCH/f211_native.jpg --out SCRATCH/dec --prefix c211_f206r --strips 8",
+   "curl -A \"cipher-lab research script (contact via repository)\" -o SCRATCH/f212_native.jpg \"https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f212/150,100,3750,5750/max/0/default.jpg\"; python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py SCRATCH/f212_native.jpg --out SCRATCH/dec --prefix c212_f206v --strips 7"
+  ]
  }
 }

@@ -11,6 +11,7 @@ unchanged); only the target string, the clerk-split mask and the line ids differ
     python3 benchmark-tx/build_vivonne_f201v.py --check          # exit 1 if any written file is stale
 """
 import difflib, hashlib, json, os, sys
+import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -65,7 +66,7 @@ def clerk_mask_b():
 def target():
     """PREREG-VIV67B: T = last 401 letters of dec67 + dec67b; returns (T, mask) untrimmed."""
     l67 = rd_letters('dec67_norm.txt')
-    T = list(l67[-TAIL:]) + list(rd_letters('dec67b_norm.txt'))
+    T = np.concatenate([np.asarray(l67[-TAIL:]), np.asarray(rd_letters('dec67b_norm.txt'))]).astype(np.asarray(l67).dtype)
     mask = b67.clerk_mask(len(l67))[-TAIL:] + clerk_mask_b()
     assert len(mask) == len(T)
     return T, mask

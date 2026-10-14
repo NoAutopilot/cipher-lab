@@ -1,0 +1,38 @@
+{
+ "item": "vivonne1573-f201v-dev",
+ "seed": 20261014,
+ "prereg": "PREREG-VIV67B.md",
+ "target_letters": 1977,
+ "target_untrimmed": 2317,
+ "n_codes": 1609,
+ "control_published": {
+  "real": 0.7142,
+  "aligned_keyed": 1123,
+  "null_mean": 0.4392,
+  "null_p95": 0.4981,
+  "null_max": 0.5113,
+  "rank": 1,
+  "window": [
+   0,
+   1780
+  ],
+  "n_letters": 1977,
+  "n_signs": 1609,
+  "verdict": "PASS"
+ },
+ "control_keytsv_report_only": {
+  "real": 0.7016,
+  "aligned_keyed": 1153,
+  "null_mean": 0.4378,
+  "null_p95": 0.4955,
+  "null_max": 0.5195,
+  "rank": 1,
+  "window": [
+   0,
+   1780
+  ],
+  "n_letters": 1977,
+  "n_signs": 1609,
+  "verdict": "PASS"
+ }
+}

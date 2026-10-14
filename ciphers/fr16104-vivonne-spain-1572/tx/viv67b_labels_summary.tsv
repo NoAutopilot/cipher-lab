@@ -1,0 +1,24 @@
+label	status	n	aligned	top_aligned	top_aligned_conf>=0.5
+c	outside published key	53	37	p:14,u:5,l:3,q:3	p:14,u:4,l:2,o:2
+V	outside published key	36	25	s:6,n:5,u:3,a:3	s:6,n:5,u:2,p:2
+y	M (key.tsv y=h)	35	30	l:8,r:7,h:6,i:3	l:8,r:7,h:6,i:3
+2	outside published key	31	20	m:4,e:3,n:2,a:2	m:4,e:3,o:1,u:1
+o	outside published key	26	13	s:3,l:2,f:2,m:1	s:3,l:2,f:2,m:1
+S	M (key.tsv S=b)	15	8	b:3,s:2,a:1,r:1	b:3,s:2,a:1,r:1
+π	outside published key	9	5	m:2,s:1,r:1,n:1	m:2,s:1,r:1,n:1
+t	outside published key	7	5	i:2,r:2,u:1	i:2,r:1,u:1
+e	outside published key	6	5	p:3,s:1,c:1	p:3,s:1,c:1
+l	outside published key	6	5	a:1,u:1,t:1,z:1	a:1,u:1,t:1,z:1
+A	M (key.tsv A=c)	5	3	r:2,c:1	c:1,r:1
+b	M (key.tsv b=z)	5	3	l:1,x:1,i:1	l:1,x:1,i:1
+8	outside published key	4	4	r:1,i:1,a:1,o:1	r:1,i:1,a:1,o:1
+~	outside published key	4	4	e:2,l:1,t:1	e:2,t:1
+H	outside published key	3	1	n:1	n:1
+9	outside published key	2	2	m:1,a:1	m:1,a:1
+D	outside published key	2	1	s:1	s:1
+,	outside published key	1	1	d:1	d:1
+w	outside published key	1	1	s:1	
+E	outside published key	1	1	u:1	
+{loop}	outside published key	1	0		
+I	outside published key	1	1	u:1	
+1	outside published key	1	1	c:1	c:1
