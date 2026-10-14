@@ -16059,3 +16059,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 23:17 | ERBA-CASE worker | claim for LANE DEFAULT-A2-2209-14 (account 2): erba-2006, case-sensitive letter-class variant (K=13) on test-4b instrument, control first, PREREG before scoring; cap 2.5, box 23:18-00:13 UTC (80% 00:02)
 2026-10-14 23:19 | ERBA-CASE worker | halfway-ish note for LANE DEFAULT-A2-2209-14 (account 2): PREREG-test4c pushed 4782c7243 before any score; control (K=13, 5 seeds, every seed >= 0.60) running, ~17 min CPU
 2026-10-14 23:18 | worker NO70-WORDS | openapi.bnf.fr take for LANE DEFAULT-A2-2209-14 (account 2): fr.3995 f252 (f.131r) one overview + one native, to check the on-disk nomenclator crops cover the whole word table; release within ~2 min
+2026-10-14 23:19 | worker NO70-WORDS | openapi.bnf.fr release for LANE DEFAULT-A2-2209-14 (account 2): 1 request (f252 at 1200 px, 200); on-disk crops cover the whole table, no native needed; host free
