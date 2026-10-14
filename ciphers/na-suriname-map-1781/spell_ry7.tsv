@@ -1,0 +1,19 @@
+item	value	note
+corpus_rows	53	crib_2038 + crib_2042, normalised
+corpus_words	176	
+ka_N	238	t 83, e 155
+ka_acc_real	0.950	
+ka_acc_real_t	0.928	
+ka_acc_real_e	0.961	
+ka_acc_shuffle_mean	0.662	200 seeds
+ka_acc_shuffle_p95	0.710	
+ka_median_abs_delta_correct	2.433	
+G1	PASS	acc>=0.80, per-class>=0.60, acc>=shuffle p95+0.10
+k6_word	snedertyen	slot 6
+k6_delta_real	-0.835	>0 favours e (sign 7), <0 t (sign r)
+k6_delta_shuffle_p05_p95	-1.004;1.750	
+k6_G2	FAIL	
+l3_word	baktrey	slot 3
+l3_delta_real	1.400	>0 favours e (sign 7), <0 t (sign r)
+l3_delta_shuffle_p05_p95	-0.368;1.520	
+l3_G2	FAIL	
