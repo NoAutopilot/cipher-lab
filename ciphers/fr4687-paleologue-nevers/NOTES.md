@@ -898,3 +898,33 @@ Our only candidate is the `suofratel` crib (A2-PAL series, sections above), a ca
 4. No AUDIT.md in this folder: no N-class to correct, no AUDIT re-class flag. No Remaining gaps / Escalation sections to close (target is
    `blocked`); `python3 tools/gaps_check.py fr4687-paleologue-nevers` -> "SKIP fr4687-paleologue-nevers: status blocked; sections not required".
 Where not found: no key, no full plaintext, no reading of canvases 9-10 in his files; his heading covers "ff5v-7v" only.
+
+## Lasry key sheet on canvases 8-10 (14 Oct 2026, F4687-LKEY) -- stopped before any score: the image is not a key
+
+Clock 07:28 UTC 14 Oct by `date -u` (claim); LANE DEFAULT-A1-0640-14 (account 1), wave 3. Intake gate pasted:
+`fr4687-paleologue-nevers: blocked (line 1) -- already terminal, nothing to gate`, exit 0. Disk only: 0 network requests (no clone,
+no hub page, no BnF/Gallica). Prior-work gate (`tools/prior_work.py`): not run (unchecked); no priced step was reached.
+
+**Finding.** The brief's instrument, "his key (paleologue1562/lasry_p033_1.png)", is not a key sheet. Read by eye at full size
+(1800 x 660 px): it is a crop of three rows of the cipher itself (digits and `y`, no letters or values beside them, no table), the
+same three rows the cyphersolver spot-check quotes ("4 9 3 20 5 4 8 4 ... / 17 22 9 8 5 73 ... / 2 4 4 4 18 6 4 17 22 ..."), with
+the marginal clear-text ends at the left edge. His NOTES.md says "no key table in the PDF", and his profile.json has `"key": "unknown"`
+and nothing more than "Key: 17 numerical code classes". LQ-F4687 (section above, item 2) had already recorded "His key is not
+published". So there is nothing to map to our labels, nothing to apply, and no control to run: no PREREG was written, no
+`key_lasry.tsv`, no decode block, no score. The canvas-8 known-answer gate was not pre-registered because no decode exists to gate.
+
+**One record fact from the crop (disk only; our tokens not re-graded).** Its third row, which LQ-F4687 left unlocated, is our
+`f8_right_L12`:
+- his crop: `2 4 4 4 18 6 4 17 22 6 18 y 4 17 3 2 7 6 4 13 2 6 2 4 8 15 y 6 7 9 20 184` (spot-check reading of his image, start only quoted there; rest read by eye here from his crop)
+- ours:     `2 9 9 9 18 6 9 17 22 6 18 y 4 17 3 2 7 6 4 13 2 6 2 4 8 15 y 6 7 9 20 184`
+Identical except a 4/9 shape split at four early positions. The other two rows are our f8_L10 and f8_L11 (LQ-F4687). So all three of
+his rows are in our canvas 8 lines L10, L11, right_L12, consistent with his excerpt "f6r, cipher rows 8-10".
+
+**Where not found.** No key values, value table or sign-to-letter mapping in his snapshot (NOTES.md, profile.json, lasry_p033_1.png);
+no reading of canvases 9-10. Canvas 8 still has only his one-line excerpt ("Averia dat volontier a cuatr cento mila scudi per aver
+cuel stato ...") as a comparison text, with no key to derive it.
+
+**Status.** Stays `blocked` (head line: Ferrari 1999 / LOCAL-QUEUE L33). What still blocks a key-based reading here: his key table is
+not in the published files. Suggested next step (the parent's or owner's to decide, not done here): ask G. Lasry or D. Bourdeau for
+his f5v/f6r key table (17 code classes), then rerun this job as briefed (map, apply, permuted-key control, canvas 8 as the known
+answer gating canvases 9-10). Until then the "known keys" rung has no material for this folder. `tools/gaps_check.py`: SKIP (blocked).
