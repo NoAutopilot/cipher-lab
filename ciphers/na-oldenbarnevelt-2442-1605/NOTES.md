@@ -1701,6 +1701,8 @@ addendum, depth under the bar), ~$2.5; the stretch is held down by word-level M 
 joins tokens, not by sign disagreement alone -- a pre-registered word-boundary-insensitive S test (match the sign string across
 token boundaries) would be the next instrument, ~$1, before any third pass (none allowed by the 10% rule).
 
+*Pointer update (NS-PARKED, account 2, 14 Oct 2026): step (o5) above ran on 10 Oct 2026 as AUDIT 6 (V-OLD-O5, AUDIT.md: D1 kept, depth_pct 18.0, N3 carried). The real next step is the person's sign sort on the OLD-O2 L4/L7 crops (ASKS 161, `sorter/a2o/`, section 26), then `tools/sign_sorter_apply.py` and a key-constrained re-read; status stays open.*
+
 ## 25. OLD-WB, 10 Oct 2026: word-boundary-insensitive S test on leaves 4/5/7 (OLD-O2's named instrument) -- stretch capped by sign disagreement at 17 digits; status stays open
 
 Brief: `.claude/briefs/runs/2026-10-10-ytbiz-family-0209-jobs.md`, "### OLD-WB" (account 2, LANE FAMILY-A2n, 02:44 UTC start by
@@ -1746,6 +1748,8 @@ registered reading rule changed), so no `--check` re-run of the reading was need
 with this section's numbers beside them, ~$2.5. A longer stretch now needs fewer sign disagreements, i.e. a person's sign sort on
 the L4/L7 masked crops (the 10% rule bars a third machine pass), not a further scoring rule: the boundary-insensitive instrument is
 spent at 17 digits on these passes.
+
+*Pointer update (NS-PARKED, account 2, 14 Oct 2026): step (o5) above ran on 10 Oct 2026 as AUDIT 6 (V-OLD-O5, AUDIT.md: D1 kept, depth_pct 18.0, N3 carried). The real next step is the person's sign sort on the OLD-O2 L4/L7 crops (ASKS 161, `sorter/a2o/`, section 26), then `tools/sign_sorter_apply.py` and a key-constrained re-read; status stays open.*
 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026; updated R7-OLDA, R13-OLDSEG, R14-OLDF, R14-OLDF2 and R15-OLDUV, 6 Oct 2026)
 

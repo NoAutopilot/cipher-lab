@@ -527,3 +527,97 @@ def test_no_remaining_gaps_keeps_prose_next_step(tmp_path):
     rows = ns.build_rows(str(ciphers_dir), LEDGER, NEAR)
     assert rows[0]["next_step"] == ns.one_line(ns.extract_next_step(RUNNABLE_NOTES))
     assert rows[0]["next_step"].startswith("Next step: cut fresh line crops")
+
+
+# NS-PARKED (14 Oct 2026): a parked Verdict whose gap lines name only rule 5's outside blockers read
+# `runnable`. One fixture per shape seen in the 14 Oct backlog read (bullet-tuscany-1944,
+# craven-rupert-1648, scorpion-1991, siena-concistoro-2308), trimmed to the lines that matter.
+def _parked(gap_lines, verdict="Verdict: parked: every gap has an outside blocker", extra=""):
+    return ("# t\n\nstatus: partial\n\n## Remaining gaps (fixture, 14 Oct 2026)\nRead so far: 0 of 44 letters\n"
+            + "".join("- %s\n" % g for g in gap_lines)
+            + "\n## Escalation (fixture, 14 Oct 2026)\n"
+            + "".join("- [x] %s: done in the fixture\n" % s for s in
+                      ("siblings", "clear-pages", "known-keys", "print", "key-rebuild", "image-check", "retry"))
+            + verdict + "\n" + extra)
+
+
+PARKED_SHAPES = {
+    # bullet-tuscany-1944: too-short then needs-physical-access
+    "bullet-like": (_parked([
+        "44-letter body under periodic keys - blocker: too-short; family_run.py periodic_vigenere control 5.3-6.1% at N=44",
+        "the possible 45th sign before RSUA - blocker: needs-physical-access; the only public image is an 821 px press copy",
+    ]), "too-short"),
+    # craven-rupert-1648: the Verdict itself names no-key-material, the first gap line is illegible-free
+    "craven-like": (_parked([
+        "the 40 legible groups - blocker: no-key-material; every glossed sibling tested and excluded",
+        "the struck group X and the torn 18? on f.134r - blocker: illegible; a blotted strike-out and a tear",
+    ], verdict="Verdict: parked: no-key-material (BL f.142 needs the BL image service)"), "no-key-material"),
+    # scorpion-1991: too-short, illegible, needs-physical-access
+    "scorpion-like": (_parked([
+        "S1 and S5 readings - blocker: too-short; S1 N=70 and S5 N=180 sit below the unicity distance, controls below gate",
+        "the crossed-out S5 row - blocker: illegible; hatched over in the only published scan",
+        "the further Scorpion letters - blocker: needs-physical-access; held by law enforcement and never published",
+    ]), "too-short"),
+    # siena-concistoro-2308: one no-key-material gap, the Verdict names it in parentheses
+    "siena-like": (_parked([
+        "the no. 7 nomenclator layer and key - blocker: no-key-material; ciphertext-only route untestable at N<=481",
+    ], verdict="Verdict: parked: every gap has an outside blocker (no-key-material)"), "no-key-material"),
+}
+
+
+def test_parked_outside_vocabulary_matches_gaps_check():
+    import gaps_check as gc
+    assert ns.OUTSIDE_BLOCKERS == gc.OUTSIDE
+    assert set(gc.OUTSIDE) <= ns.PARALLEL_BLOCKERS
+
+
+def test_parked_shapes_are_never_runnable(tmp_path):
+    """Must catch: the four 14 Oct shapes classify as their gaps_check outside blocker, not runnable."""
+    ciphers_dir = tmp_path / "ciphers"
+    for name, (text, _) in PARKED_SHAPES.items():
+        write_notes(ciphers_dir, name, text)
+    rows = {r["folder"]: r for r in ns.build_rows(str(ciphers_dir), LEDGER, NEAR)}
+    for name, (_, want) in PARKED_SHAPES.items():
+        assert rows[name]["next_step"].startswith("Verdict: parked"), name
+        assert rows[name]["blocker"] == want, (name, rows[name]["blocker"])
+        assert rows[name]["parallel"] != "--", name  # a blocked class reads the While waiting section
+
+
+def test_parked_without_any_named_blocker_is_triage_not_runnable(tmp_path):
+    ciphers_dir = tmp_path / "ciphers"
+    write_notes(ciphers_dir, "bare-parked", _parked(["the rest - blocker: open-codes; scattered codes"]))
+    rows = ns.build_rows(str(ciphers_dir), LEDGER, NEAR)
+    assert rows[0]["blocker"] == "needs-triage"
+
+
+def test_parked_keep_going_row_stays_runnable(tmp_path):
+    """Must NOT block: a "keep going" row with a runnable cheapest next stays runnable, even when one of
+    its gap lines carries an outside blocker."""
+    ciphers_dir = tmp_path / "ciphers"
+    text = _parked([
+        "the 40 legible groups - blocker: not-attempted; siblings untried; next: spec test 2, ~$3",
+        "the struck group X - blocker: illegible; a blotted strike-out",
+    ], verdict="Verdict: keep going: 1 internal gap; cheapest next: spec test 2, ~$3")
+    write_notes(ciphers_dir, "keep-going", text)
+    rows = ns.build_rows(str(ciphers_dir), LEDGER, NEAR)
+    assert rows[0]["blocker"] == "runnable"
+    assert rows[0]["parallel"] == "--"
+
+
+def test_parked_blocked_row_keeps_class_and_parallel_action(tmp_path):
+    """Must NOT block: a parked row a keyword already classed (needs-person, from LOCAL-QUEUE) keeps that
+    class, and its `parallel` cell still comes from "## While waiting"."""
+    ciphers_dir = tmp_path / "ciphers"
+    text = _parked([
+        "a contemporary decipherment - blocker: waiting-on LOCAL-QUEUE L45 and the Bodleian's reply",
+        "the torn corner - blocker: illegible; tear through two groups",
+    ], extra="\n## While waiting (14 Oct 2026)\n- run print_check on the decoded phrases, disk only\n")
+    write_notes(ciphers_dir, "blocked-parallel", text)
+    rows = ns.build_rows(str(ciphers_dir), LEDGER, NEAR)
+    assert rows[0]["blocker"] == "needs-person"
+    assert "run print_check on the decoded phrases" in rows[0]["parallel"]
+
+
+def test_parked_blocker_ignores_non_parked_verdicts():
+    assert ns.parked_blocker("Verdict: keep going: 1 internal gap; cheapest next: x", "- a - blocker: illegible; y") is None
+    assert ns.parked_blocker("", "") is None

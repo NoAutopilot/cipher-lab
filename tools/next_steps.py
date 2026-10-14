@@ -65,6 +65,16 @@ missing image) still set the blocker class. Must catch: a thurloe-shaped NOTES w
 with no Remaining gaps/Escalation sections (or sections with no Verdict line) keeps the prose next
 step exactly as before. Both tested in tools/tests/test_next_steps.py.
 
+Fixed 14 Oct 2026 (NS-PARKED, flagged by GAPS-FIX): a "Verdict: parked" row whose gap lines name only rule 5's
+outside blockers (too-short, illegible, no-key-material, needs-physical-access, waiting-on) matched no
+BLOCKER_PATTERNS keyword and read `runnable`. Such a row now takes that outside blocker as its class, in
+tools/gaps_check.py's own vocabulary (`parked_blocker()`), or `needs-triage` when a parked verdict names none;
+those five classes join PARALLEL_BLOCKERS, so their `parallel` cell is read from "## While waiting". Must catch: the
+bullet-tuscany / craven-rupert / scorpion / siena-concistoro shapes. Must NOT change: a "keep going" row with a
+runnable cheapest next stays `runnable`; a parked row a keyword already placed in a needs-* class keeps that class and
+its `parallel` action. All tested in tools/tests/test_next_steps.py (test_parked_*). NEXT-STEPS.tsv is regenerated
+by running the tool; this fix does not by itself require committing it.
+
 Usage:
   tools/next_steps.py [--ciphers-dir ciphers] [--ledger LEDGER.md] [--near NEAR.md] [--out NEXT-STEPS.tsv]
   tools/next_steps.py --check     exit nonzero if NEXT-STEPS.tsv on disk is stale against the folders
@@ -156,6 +166,12 @@ BLOCKER_PATTERNS = (
 # genuinely-blocked kinds, never `runnable` or `needs-triage` (a row with no next step has nothing
 # to run in parallel with either).
 PARALLEL_BLOCKERS = frozenset(name for name, _ in BLOCKER_PATTERNS)
+
+# tools/gaps_check.py's OUTSIDE vocabulary (rule 5), copied here because gaps_check imports this module
+# at load time; tools/tests/test_next_steps.py asserts the two tuples stay equal (NS-PARKED, 14 Oct 2026).
+OUTSIDE_BLOCKERS = ("no-key-material", "too-short", "illegible", "needs-physical-access", "waiting-on")
+PARALLEL_BLOCKERS = PARALLEL_BLOCKERS | frozenset(OUTSIDE_BLOCKERS)
+PARKED_RE = re.compile(r"Verdict:\s*parked\b", re.IGNORECASE)
 
 WHILE_WAITING_RE = re.compile(r'^#{1,6}\s*while waiting', re.IGNORECASE)
 BULLET_RE = re.compile(r'^(?:[-*+]|\d+[.)])\s+(.*)$')
@@ -327,6 +343,36 @@ def classify_blocker(next_step_text):
     return "runnable"
 
 
+def parked_blocker(verdict, gaps_body):
+    """The rule-5 outside blocker behind a "Verdict: parked" row, in tools/gaps_check.py's own
+    vocabulary (OUTSIDE_BLOCKERS), or None.
+
+    Why (NS-PARKED, 14 Oct 2026, flagged by GAPS-FIX in ROOM 22:27): a parked Verdict's gap lines say
+    "blocker: too-short" / "illegible" / "no-key-material" / "needs-physical-access", none of which
+    BLOCKER_PATTERNS' keywords match, so classify_blocker() fell through to `runnable` and a parked
+    folder (bullet-tuscany-1944, craven-rupert-1648, scorpion-1991, siena-concistoro-2308, fair-game-2010,
+    wvo-11008-certain-1572 on 14 Oct) sat in the runnable backlog a lane takes job 1 from.
+
+    Order: an outside blocker named in the Verdict text itself ("parked: no-key-material (...)") wins,
+    first by position; else the first outside blocker among the gap lines, parsed with
+    gaps_check.parse_gaps (file order). Returns None for a non-parked verdict, or a parked one whose
+    text and gap lines name no outside blocker. Scope: called by build_rows() only when the keyword
+    classification would otherwise read `runnable` or `needs-triage` -- a parked row that already
+    lands in a needs-* class keeps it, so readers grepping needs-image / needs-person rows see no churn.
+    Must catch and must not block: tools/tests/test_next_steps.py (test_parked_*)."""
+    if not verdict or not PARKED_RE.match(verdict):
+        return None
+    tail = verdict.split("parked", 1)[1].lower()
+    named = [(tail.find(b), b) for b in OUTSIDE_BLOCKERS if b in tail]
+    if named:
+        return min(named)[1]
+    import gaps_check as gc
+    for g in gc.parse_gaps(gaps_body.splitlines(), []):
+        if g["outside"]:
+            return g["blocker"]
+    return None
+
+
 def estimate_cost_band(next_step_text):
     """The cost band for a next-step block. What this must catch: an empty or whitespace-only
     block (no instruction to price) bands as `?`, never the cheapest band `S` -- the same failure
@@ -386,7 +432,7 @@ def build_rows(ciphers_dir, ledger_text, near_text):
             block = verdict
             # whole line, not one_line()'s trigger-sentence pick, so "keep going: N" is never cut off
             next_step = verdict if len(verdict) <= 200 else verdict[:199].rstrip() + "…"
-            class_text = verdict + ("\n" + gaps_body if re.match(r"Verdict:\s*parked", verdict, re.I) else "")
+            class_text = verdict + ("\n" + gaps_body if PARKED_RE.match(verdict) else "")
         else:
             block = extract_next_step(text)
             next_step = one_line(block)
@@ -395,6 +441,9 @@ def build_rows(ciphers_dir, ledger_text, near_text):
         # keyword past the truncation limit (CODEX-REVIEW-2026-09-27.md section 2) must still be
         # caught, and an empty block must still classify needs-triage/? rather than runnable/S.
         blocker = classify_blocker(class_text)
+        if verdict and blocker in ("runnable", "needs-triage") and PARKED_RE.match(verdict):
+            # a parked row is never runnable (NS-PARKED): its outside blocker, else triage
+            blocker = parked_blocker(verdict, gaps_body) or "needs-triage"
         cost_band = estimate_cost_band(class_text)
         if blocker in PARALLEL_BLOCKERS:
             bullet = extract_while_waiting(text)
