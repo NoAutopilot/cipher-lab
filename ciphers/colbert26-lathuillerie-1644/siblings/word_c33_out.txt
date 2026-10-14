@@ -1,0 +1,13 @@
+COL26-C33 word-grain test, unit c33: 9 rows, 131 groups, 45 gloss words
+positive-control C codes: 10 12 18 22 23 24 25 28 33 36 40 43 48 49 51 53 65 69 78 89 97 98; alpha = 0.05/6 = 0.00833
+STAGE 0 (idealised pairing bound)
+code	value	N	H_ideal	words_ok	P_min	verdict
+20	i	6	6	4/45	0.00000	live
+p1: 45 word spans (0 rows dropped); instrument C-code occ 25 H 8 ctrl mean 2.93 p95 6 max 10 P 0.0029 -> CLEARS
+p1: 20 i N 5 H 2 ctrl mean 0.56 p95 2 P 0.0959 power_at_N 0.064
+p1: 20 spans: ueoid[T1 12-14]; inutilement[B2 0-5]; point[B4 7-9]; tenir[B4 10-11]; la[B5 1-1]
+p2: 45 word spans (0 rows dropped); instrument C-code occ 26 H 8 ctrl mean 3.10 p95 6 max 10 P 0.0068 -> CLEARS
+p2: 20 i N 5 H 2 ctrl mean 0.57 p95 2 P 0.0917 power_at_N 0.051
+p2: 20 spans: ueoid[T1 12-14]; inutilement[B2 0-5]; point[B4 7-9]; tenir[B4 10-11]; la[B5 1-1]
+VERDICT 20 = i: FAIL-LOWPOWER
+diagnostic: words placed by both passes 44, exact span agreement 23, within one group each end 44

@@ -57,3 +57,9 @@ interlinear/c20c21_word_wp_pool.py; outputs interlinear/c20c21_word_wp_pool_out.
 | hypothesis | control | target | verdict |
 |---|---|---|---|
 | 11 = le (word-level pairing, pooled two passes) | instrument 83 de + 31 que: H 3/8 vs Control W mean 1.60, p95 3, P 0.191 | not scored | NON-TEST; untested-by-this-tool (second attempt, readers agree 0.862 exact) |
+
+## COL26-C33, 14 Oct 2026: canvas 33 20 = i, word-level pairing, two blind passes
+
+| hypothesis | control | target | verdict |
+|---|---|---|---|
+| 20 = i (word-level pairing, c33, held out) | instrument key_f23 pre-DA1-COL C codes: p1 H 8/25 vs Control W mean 2.93, p95 6, P 0.0029; p2 8/26 vs mean 3.10, p95 6, P 0.0068 (both CLEAR) | p1 2/5 vs mean 0.56, p95 2, P 0.096; p2 2/5 vs mean 0.57, p95 2, P 0.092 (alpha 0.00833) | FAIL-LOWPOWER (power at N 5: 0.06/0.05); not a negative |
