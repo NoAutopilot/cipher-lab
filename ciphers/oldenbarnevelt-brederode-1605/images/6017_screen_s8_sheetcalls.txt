@@ -1,0 +1,145 @@
+# OBRED-6017D sheet calls, written before the key is opened. Calls: CIPHER / PLAIN-COVER / PS (numeral block under signature) / scan:<content>; numeral_code_block yes/no/look
+1A scan: Dutch letter, end of text and signature (Brederode), Heydelberg ? Febr 1617; no
+1B scan: blank opening, guard strip; no
+1C PS
+1D scan: Dutch prose continued over two pages, initial flourishes; no
+1E scan: address leaf (left, upside-down) and Dutch letter opening right, docket "? Feb 1617"; no
+1F scan: near-blank opening, faint offset, short marginal lines lower right; no
+1G CIPHER
+1H scan: address leaf (left) and Dutch letter opening right, docket "? Feb 1617"; no
+1I PLAIN-COVER
+2A PS
+2B scan: near-blank opening, faint lines top left, flourish; no
+2C scan: Dutch prose continued over two pages, ends at foot right; no
+2D PLAIN-COVER
+2E scan: Dutch letter end, signed (Brederode), dateline "... Febr 1617" (?); no
+2F scan: address leaf with seal (left) and Dutch letter opening right, docket "? April 1617"; no
+2G CIPHER
+2H scan: address leaf with seal (left) and Dutch letter opening right, docket "? Maert 1617"; no
+2I scan: Dutch prose continued over two pages; no
+3A scan: Latin prose over two pages (oration/letter to princes, "Hispaniae ... Germaniae"), stamp stains; no
+3B scan: Latin prose over two pages, continued; no
+3C scan: Latin prose over two pages, continued; no
+3D PLAIN-COVER
+3E scan: Dutch letter end, signed (Brederode), Heydelberg ? April 1617; right page blank with offset; no
+3F scan: address leaf with seal (left) and Dutch letter opening right, docket "? April 1617"; no
+3G scan: Latin prose left page, right page blank, stamp stains; no
+3H PS
+3I CIPHER
+4A scan: Dutch letter (opening right, docket "? April 1617"), left page blank with a short marginal note in words (6-7 short lines, no figures); no
+4B PS
+4C scan: French prose left ending "Fait a Heilbron ... 1617 ... Avril"? (Union / Elector Palatine), right blank; no
+4D PLAIN-COVER
+4E CIPHER
+4F scan: Dutch prose left, French text right ("Sur ce que par la proposition ... Electeur Palatin ... Duc de Savoye"); no
+4G scan: Latin prose left, right blank with stains; no
+4H scan: blank left, right French heading over Dutch letter ("Sur ce que ... 28 April 1617"); no
+4I scan: French prose over two pages, ends "Fait a Heilbron ... Avril 1617"; no
+5A scan: Dutch prose over two pages (docket "? April 1617" on flap); no
+5B scan: Dutch prose over two pages, continued; no
+5C scan: Dutch prose over two pages, continued, paragraph initials; no
+5D scan: near-blank opening (offset, flap "? April 1617"); no
+5E scan: Dutch prose over two pages, continued; no
+5F scan: address leaf (left) and Dutch letter opening right, docket "? April 1617"; no
+5G PLAIN-COVER
+5H PS
+5I CIPHER
+6A CIPHER
+6B PS
+6C scan: Dutch letter end, signed (Brederode), dateline "... 2? April 1617"; no
+6D scan: address leaf with seal (left) and German letter opening right (large initial), docket at foot "... April 1617"; no
+6E scan: German prose, ends "Dat. Hailbron, den 11. Aprilis Ao 1617"; no
+6F scan: German letter close right, signature/date "... Aprilis Anno 1617", left blank; no
+6G scan: Dutch prose over two pages; no
+6H PLAIN-COVER
+6I scan: German prose over two pages (large initial right); no
+7A CIPHER
+7B scan: Dutch letter end, signed (Brederode), Heydelberg ? Mai 1617; right page faint; no
+7C scan: blank left with offset, Dutch letter opening right, docket "? Mai 1617"; no
+7D scan: list of princes of the Union (Friedrich Pfalzgraf, Johann Sigismund Markgraf zu Brandenburg, ...), headed "Hailbron den 11. Aprilis 1617", names only, no figures; no
+7E PS
+7F scan: near-blank opening, faint lines; no
+7G scan: Dutch letter end signed P. Brederode, Heydelberg ? Mai 1617, and German piece right ("Georg Friedrich von Gottes gnaden Marggrave ..."); no
+7H PLAIN-COVER
+7I scan: Dutch prose over two pages; no
+8A scan: Dutch prose over two pages; no
+8B PS
+8C scan: Dutch prose over two pages (inserted leaf); no
+8D scan: Dutch letter end, initialled and signed P. Brederode, Heydelberg 2 Junij 1617; no
+8E CIPHER
+8F PLAIN-COVER
+8G scan: address leaf with seal (left) and Dutch letter opening right, docket "? Mai 1617"; no
+8H scan: address leaf (left) and Dutch letter opening right, docket "? May 1617"; no
+8I scan: Dutch letter end, signed (Brederode), Heydelberg 19 Maij 1617, seal on right; no
+9A scan: Dutch prose over two pages (treaty/alliance discussion); no
+9B scan: Dutch prose over two pages, continued; no
+9C scan: Dutch letter end, signed P. Brederode, Heydelberg ? Julij 1617; right page faint; no
+9D scan: Dutch prose over two pages; no
+9E scan: Dutch prose over two pages; no
+9F scan: Dutch prose over two pages; no
+9G PS
+9H PLAIN-COVER
+9I CIPHER
+10A PS
+10B scan: Dutch prose over two pages (alliance, Savoye, "Republique"); no
+10C PLAIN-COVER
+10D CIPHER
+10E scan: Dutch letter end, signed (Brederode), Heydelberg 28 Julij 1617, right blank; no
+10F scan: address leaf (left) and Dutch letter opening right, docket "? Julij / ? Aug 1617"; no
+10G scan: Dutch letter end, signed (Brederode), Heydelberg ? Julij 1617; offset only; no
+10H scan: address leaf with seal (left) and Dutch letter opening right, docket "? Julij 1617"; no
+10I scan: Dutch prose over two pages; no
+11A scan: near-blank opening, short vertical note in words on left page edge, docket "? Aug 1617"; no
+11B scan: Dutch letter, signed (Brederode), Heydelberg 3? Augusti 1617, right blank; no
+11C CIPHER
+11D PS
+11E scan: German letter close, signed (Pfalz chancery, "Signatum ... Julij Anno 1617"), right blank; no
+11F scan: address leaf with seal (left) and Dutch letter opening right, docket "? Aug 1617"; no
+11G scan: French prose over two pages (Duc de Savoye, Republique de Venise); no
+11H PLAIN-COVER
+11I scan: Dutch letter end signed P. Brederode, Heydelberg 3 Augusti 1617, and French letter right ("Serenissime Prince ..."); no
+12A scan: Dutch letter end, signed P. Brederode, Heydelberg ? Septembris 1617, address flap left; no
+12B scan: address leaf with seal (left) and Dutch letter opening right, docket "? Sept 1617"; no
+12C CIPHER
+12D scan: blank left, French letter right ("Monseigneur ... ", dense, ends "... Septembre 1617", signed); no
+12E scan: Dutch letter end signed P. Brederode, Heydelberg 12 Augusti 1617, right blank torn; no
+12F PLAIN-COVER
+12G PS
+12H scan: Dutch prose over two pages; no
+12I scan: Dutch prose left, French prose right ("... Prince ..."); no
+13A scan: Dutch letter end, signed P. Brederode, Heydelberg 5 Septembris 1617; no
+13B scan: address leaf (left) and Dutch letter opening right, docket "15 Sept 1617"; no
+13C CIPHER
+13D scan: Dutch prose over two pages; no
+13E scan: itemised Dutch account/list in numbered articles (Roman item numbers, sums "f." at line ends), docket "? Sept 1617"; amounts in a list, not code groups; no
+13F scan: address leaf (left) and "Memorie" in numbered Dutch articles right, docket "? Sept 1617"; no
+13G PS
+13H PLAIN-COVER
+13I scan: address leaf with seal (left) and Dutch letter opening right, docket "? Sept 1617"; no
+14A PLAIN-COVER
+14B CIPHER
+14C PS
+14D scan: Dutch prose over two pages, marginal notes left; no
+14E scan: Dutch prose over two pages; no
+14F scan: Dutch prose over two pages, marginal notes; no
+14G scan: Dutch prose over two pages; no
+14H scan: address leaf (left) and Dutch letter opening right, docket "15 Sept 1617"; no
+14I scan: Dutch prose over two pages; no
+15A PLAIN-COVER
+15B scan: Dutch prose over two pages (docket "? Sept 1617" on flap); no
+15C PS
+15D scan: Dutch prose over two pages; no
+15E scan: address leaf with seal (left) and Dutch letter opening right, docket "? Sept 1617"; no
+15F scan: address leaf with seal (left) and Dutch letter opening right, docket "? Sept / ? Oct 1617"; no
+15G scan: Dutch letter end, signed (Brederode), Franckfort? ?? Septembris 1617, right blank; no
+15H CIPHER
+15I scan: address leaf (left) and Dutch letter opening right, docket "? Sept 1617"; no
+16A PS
+16B scan: address leaf with seal (left) and Dutch letter opening right, docket "2? Sept 1617"; no
+16C scan: Dutch letter end, signed P. Brederode, Franckfort 30 Sept / Octobris 1617; no
+16D scan: Dutch prose over two pages; no
+16E scan: Dutch prose over two pages; no
+16F PLAIN-COVER
+16G scan: Dutch letter end, signed P. Brederode (date "... 1617"), Dutch prose left; no
+16H CIPHER
+16I scan: Dutch letter end, signed (Brederode), Franckfort ?? Octobris 1617; no
