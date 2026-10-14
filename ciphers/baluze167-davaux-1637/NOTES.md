@@ -1881,9 +1881,9 @@ previous gap entry's next step (native crop + two blind passes + period key with
 ROOM.md; region kept as images/b169sweep/src_c048_f22r_1285,1140,2950,810.jpg; `tools/iiif_lines.py --image ... --prefix b169f22r` ->
 4 lines x 2 segments (images/crops/b169f22r_L01-L04_s1/s2, debug overlay checked). The cipher is not a block: it is 24 cipher tokens
 spread through lines 1-4 of f.22r, between clear French words; no interlinear gloss at native resolution.
-**Passes and gate.** 2 Sonnet calls (prompt bal169f22/prompt_pass{A,B}.txt = passes/passA_prompt.txt). Both passes have the same 22 tokens
+**Passes and gate.** 2 Sonnet calls (prompt bal169f22/prompt_pass{A,B}.txt = passes/passA_prompt.txt). Both passes have the same 24 tokens
 in the same order (17 numerals, 7 letter signs). They differ only on the marks of 3 numerals: 12/12:, 13/13: and 16/16' (L03). That is a
-split of 0.136, above the 0.10 gate, so this worker reconciled by eye from the crops, as the PREREG states. tools/reconcile_passes.py
+split of 3/24 = 0.125, above the 0.10 gate, so this worker reconciled by eye from the crops, as the PREREG states. tools/reconcile_passes.py
 gives 61.9%, but it counts the multi-word shape descriptions as tokens (bal169f22/rec/). Reconciled sheet: passes/reconciled_b169f22r.tsv.
 This is the same hand problem D4-B167 found: every 1 is a dotted i, so 1-bearing numerals are M; 45 and 65 show no mark (M).
 The letter signs were settled from context in this letter only, all M: crossed-4 hook = f; underlined y = r; h = n; m with crossed 4 = m;

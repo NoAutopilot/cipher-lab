@@ -1,4 +1,4 @@
-# BAL169-F22, 14 Oct 2026. Eye reconciliation of passes A/B (cipher-token split 3/22 = 0.136 > 0.10 gate; the tool's 61.9% counts
+# BAL169-F22, 14 Oct 2026. Eye reconciliation of passes A/B (cipher-token split 3/24 = 0.125 > 0.10 gate; the tool's 61.9% counts
 # multi-word shape descriptions as tokens) from the native crops images/crops/b169f22r_L01-L04_s1/s2. Numerals as seen; every 1 in this
 # hand is a dotted i (D4-B167), so a dot or acute on a 1-bearing numeral is ambiguous: such numerals carry ? (value = the key's marked
 # reading the context fits). 45 and 65 show no mark at native resolution (key has only 45'/65' readings that fit): ?. s:<shape>=<letter>?
