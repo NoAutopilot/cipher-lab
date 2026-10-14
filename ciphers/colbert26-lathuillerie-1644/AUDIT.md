@@ -213,7 +213,7 @@ key. **D1 ("fragments read") for both leaves.** status.json results[145] already
 Postmortem: no over-claim. Correction carried: AUDIT 1 s.4's "longest C stretch 10 letters" is 11 at HEAD (grade change, not an error).
 No SECOND-OPINIONS-QUEUE row exists or is owed (N0). PROGRESS.tsv: no row (none added). Requests: none (disk only).
 
-## AUDIT 3 (verifier VER-COL50, account 4, LANE DEFAULT-A4-2135-14, 14 Oct 2026, 21:47-22:0x UTC by date -u): canvas 50
+## AUDIT 3 (verifier VER-COL50, account 4, LANE DEFAULT-A4-2135-14, 14 Oct 2026, 21:47-21:54 UTC by date -u): canvas 50
 
 Separate session from every solver of this folder, including COL26-C50 (account 1) and A2-COL15 (account 2), and from AUDIT 1, its
 addendum and AUDIT 2. Brief `.claude/briefs/runs/2026-10-14-acct4-default-2135-jobs.md` job VER-COL50. Claim under audit (NOTES.md,
