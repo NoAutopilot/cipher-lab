@@ -118,3 +118,27 @@ f81	left	69v	address panel 'A Monseigneur ...' (M)	no	no	n/a	none	600	F4712-C71
 f81	right	70r	printed document (Conseil privé, 'Messire Arnaud Sorbin ... Evesque de Nevers', M)	no	no	no	none (print)	600	F4712-C71
 f82	left	70v	blank (show-through)	no	no	n/a	none	600	F4712-C71
 f82	right	71r	petition in clear 'Plaise à Monseigneur ...' (M)	no	no	no	none seen	600	F4712-C71
+f83	left	71v	blank (show-through)	no	no	n/a	none	600	F4712-C83
+f83	right	72r	letter in clear headed 'Tres excellent ...', signed, subscribed (M)	no	no	no	none seen	600	F4712-C83
+f84	left	72v	letter in clear, signed at foot (M)	no	no	no	none seen	600	F4712-C83
+f84	right	73r	letter in clear, dense hand, continuous prose	no	no	no	none seen	600	F4712-C83
+f85	left	73v	continuation in clear, dense prose (checked on a local enlargement of the 600 px file)	no	no	no	none seen	600	F4712-C83
+f85	right	74r	letter in clear 'Messieurs ...' with closing lines and signature (M)	no	no	no	none seen	600	F4712-C83
+f86	left	74v	show-through of f.75r with faint writing; no figure runs (local enlargement)	no	no	n/a	none	600	F4712-C83
+f86	right	75r	letter in clear 'Monsieur ...' (M), continuous prose	no	no	no	none seen	600	F4712-C83
+f87	left	75v	show-through, small mark top right	no	no	n/a	none	600	F4712-C83
+f87	right	76r	letter in clear to 'Monseigneur', signed, dated '... d'aoust' (M)	no	no	no	none seen	600	F4712-C83
+f88	left	76v	address panel 'A Monseigneur ... de Nevers ... en Champagne' (M), seal trace	no	no	n/a	none	600	F4712-C83
+f88	right	77r	memorandum in paragraphs in clear (M)	no	no	no	none seen	600	F4712-C83
+f89	left	77v	blank, folded sheet (show-through)	no	no	n/a	none	600	F4712-C83
+f89	right	78r	long letter in clear, small hand, continuous prose	no	no	no	none seen	600	F4712-C83
+f90	left	78v	continuation in clear, prose	no	no	no	none seen	600	F4712-C83
+f90	right	79r	'Estat du revenu que le roy a en piemont' (M): money sums in a column (livres), not code	no	no	no	money sums	600	F4712-C83
+f91	left	79v	blank fold with endorsement (M)	no	no	n/a	none	600	F4712-C83
+f91	right	80r	Italian notarial act (Carmagnola, Cavalero, M), clear	no	no	no	none (dates, sums in words)	600	F4712-C83
+f92	left	80v	Italian notarial act continued, clear	no	no	no	none seen	600	F4712-C83
+f92	right	81r	Italian notarial act continued, clear, marginal strokes	no	no	no	none seen	600	F4712-C83
+f93	left	81v	Italian notarial act continued, clear	no	no	no	none seen	600	F4712-C83
+f93	right	82r	end of the act with notary's signum and subscription (M)	no	no	no	notarial signum	600	F4712-C83
+f94	left	82v	show-through, faint writing	no	no	n/a	none	600	F4712-C83
+f94	right	83r	blank leaf with a short docket (M)	no	no	n/a	none	600	F4712-C83

@@ -816,6 +816,138 @@
    ],
    "sha1": "03438276e16e233d3c034dd8e72f846a75bc9196",
    "job": "F4712-C71"
+  },
+  {
+   "file": "census/c83_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f83/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "sha1": "0f1106f26799b07a7913a50937994c6faddbd63d",
+   "job": "F4712-C83"
+  },
+  {
+   "file": "census/c84_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f84/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "sha1": "f6b5c90b7a86ca38560c3bfdc66ad81711b73452",
+   "job": "F4712-C83"
+  },
+  {
+   "file": "census/c85_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f85/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "sha1": "9e08818d532243e32e79d0d14933a5f8c0369c6c",
+   "job": "F4712-C83"
+  },
+  {
+   "file": "census/c86_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f86/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "sha1": "c4debb06c0cc4c847994a85017113671a496cd63",
+   "job": "F4712-C83"
+  },
+  {
+   "file": "census/c87_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f87/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    443
+   ],
+   "sha1": "83a7814e85ececc61ba171f9905c8b0526418086",
+   "job": "F4712-C83"
+  },
+  {
+   "file": "census/c88_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f88/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    432
+   ],
+   "sha1": "3138a9333570670b2fb89f5f6bf6b5cdbaafb193",
+   "job": "F4712-C83"
+  },
+  {
+   "file": "census/c89_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f89/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "sha1": "a9c891b61df34eeb259b78a4228e47eecdc61031",
+   "job": "F4712-C83"
+  },
+  {
+   "file": "census/c90_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f90/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    433
+   ],
+   "sha1": "190aca1e6f95e7c83cd348caf575882e4fd45022",
+   "job": "F4712-C83"
+  },
+  {
+   "file": "census/c91_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f91/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    432
+   ],
+   "sha1": "da816c3e50fb2308c7296b1db8be4834260af529",
+   "job": "F4712-C83"
+  },
+  {
+   "file": "census/c92_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f92/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    432
+   ],
+   "sha1": "bb9ddd052c1533e02b83db9a5ff00ff1899ba3c9",
+   "job": "F4712-C83"
+  },
+  {
+   "file": "census/c93_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f93/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "sha1": "e94eed18db9d37b638d0b4156b0372f4722c94b6",
+   "job": "F4712-C83"
+  },
+  {
+   "file": "census/c94_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f94/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "sha1": "6a73b9191ba2678bced18f12b4e5f9595dce4d3e",
+   "job": "F4712-C83"
   }
  ],
  "k71_f133r_wordcols": {
