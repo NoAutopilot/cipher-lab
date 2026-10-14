@@ -1,5 +1,5 @@
 partial
-Verdict: partial -- 6 of f.10r's 37 tokens (S1) carry f.13r's H glosses at grade C (82 82 "D. n.", 21 21 "Berry", 12 12 "b. Pal."; D2-F4712, 8 Oct 2026, applying the owner's ASKS 113 same-writer judgement under PREREG_duchf13.md; pre-registered crib gate met: 6 C >= 3, p 0.029 vs random code sets); the other 31 tokens have no reading (key no.1 a non-test at 37 tokens, DUCH-KEY1B; key no.4 cannot cover f.10r, DUCH-KEY4; key no.71 a control-backed negative as an unmarked letter text, F4712-K71 11 Oct 2026, and as an all-code text on its Motz list, F4712-71 13 Oct 2026; f.13r's list is not key no.1, 0/6). No glossed sibling in ff.13v-95r (F4712-CENSUS, F4712-71, F4712-C39, F4712-C47, F4712-C59, 13 Oct 2026; F4712-C71, F4712-C83, F4712-C95, 14 Oct 2026; canvases 107-142 unviewed). The same-writer basis is one person's "I think the same" against our own "leaning different" on the 8-form, and R11A-F4712's blind digit test was a NON-TEST (6 Oct). See "## Remaining gaps" at the end.
+Verdict: partial -- 6 of f.10r's 37 tokens (S1) carry f.13r's H glosses at grade C (82 82 "D. n.", 21 21 "Berry", 12 12 "b. Pal."; D2-F4712, 8 Oct 2026, applying the owner's ASKS 113 same-writer judgement under PREREG_duchf13.md; pre-registered crib gate met: 6 C >= 3, p 0.029 vs random code sets); the other 31 tokens have no reading (key no.1 a non-test at 37 tokens, DUCH-KEY1B; key no.4 cannot cover f.10r, DUCH-KEY4; key no.71 a control-backed negative as an unmarked letter text, F4712-K71 11 Oct 2026, and as an all-code text on its Motz list, F4712-71 13 Oct 2026; f.13r's list is not key no.1, 0/6). No glossed sibling in ff.13v-108r (F4712-CENSUS, F4712-71, F4712-C39, F4712-C47, F4712-C59, 13 Oct 2026; F4712-C71, F4712-C83, F4712-C95, F4712-C107, 14 Oct 2026; canvases 119-142 unviewed). The same-writer basis is one person's "I think the same" against our own "leaning different" on the 8-form, and R11A-F4712's blind digit test was a NON-TEST (6 Oct). See "## Remaining gaps" at the end.
 Gomberville (ed.), *Les Mémoires de M. le duc de Nevers* (1665; Google Books H2eV4wAmIr0C and three other copies) full-text searched by this worker (NV-INTAKE, 3 Oct 2026) via the Books API with `&country=US`: "duchesse ma femme" hits only Nevers' 1593-94 Roman legation speech ("...qu'à la Duchesse ma femme, à mes terres...", also in the *Discours de la legation* 1594) and "Madame ma femme" 0 -- no letter to the duchess with a cipher passage printed there.
 
 # BnF fr.4712 f.10, the duc de Nevers to the duchesse de Nevers, undated: 37-number cipher passage -- NV-09
@@ -839,3 +839,45 @@ Read so far: 6 of 37 f.10r tokens at C under S1 (16%), f13_carry.tsv; 31 tokens 
 - [x] image-check: f.10r read from crops (DUCH-KEY1B) and checked at native resolution for marks (none, F4712-71); f.13r two blind passes agree on all 34 codes (DUCH-F13); code 40 gloss third model read a NON-TEST (F4712-40), model reader retired for that gloss, owner's eye ASKS 162
 - [x] retry: hand question retried by a blind digit test (R11A-F4712, NON-TEST) and settled by the person's look (ASKS 113)
 Verdict: keep going: 1 internal gap and the sibling census; cheapest next: census of canvases 107-118 (f.95v onward) at 600 px via openapi.bnf.fr, ~$1.5
+
+## F4712-C107 (worker for LANE DEFAULT-A4-2135-14, account 4, 14 Oct 2026, 22:08-22:1x UTC by date -u): census canvases 107-118 (ff.95v-108r) -- no cipher, no glossed sibling
+Brief `.claude/briefs/runs/2026-10-14-acct4-default-2135-jobs.md` "### F4712-C107", method of F4712-C95. Prior work: `tools/prior_work.py
+fr4712-nevers-duchesse --item-spec 'shelfmark=BnF fr.4712;folio=95v-108r;canvas=107-118;date=1592-10-01' --step-type lookup --offline` exit 0
+(no specific holds); its Tomokiyo CONTEXT rows naming "f.95", "f.97" and "f.101" (Pimentel to Fuentes 1595; "El conde de Benasco" to Philip II,
+Genoa 1597) all sit under GL.htm's heading "Fuentes-Pimentel Cipher (1595): BnF es.336" and its es.336 list (html2text lines 235-261), folio-number
+collisions, not fr.4712; the volume-level row is generic; solver caches CLEAR; aymeloglu cache and editions UNCHECKED-NET (generic). No decode.
+Host: openapi.bnf.fr IIIF v3 (ark btv1b9058289m), **14 requests, all HTTP 200**: f107-f118 at width 600 (12), one at a time >= 3.4 s, each checked
+as a JPEG; plus two 1600 px regions for the figure columns on ff.107r-v (`f117/pct:50,0,50,100/1600,` and `f118/pct:0,55,50,45/1600,`). Files
+`images/census/c107_600.jpg` ... `c118_600.jpg`, `c117_r_1600.jpg`, `c118_lowl_1600.jpg` (untracked), entries with sha1 under `census_f13v_on` in
+images/manifest.json (job F4712-C107); regenerate with `curl -A "cipher-lab research script (contact via repository)" -o images/census/cN_600.jpg
+https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/fN/full/600,/0/default.jpg` for N = 107..118 and the two region URLs in the manifest.
+No subagent call, no transcription.
+- Map: c107 = f.95v | f.96r ... c118 = f.107v | f.108r (foliation top right read 96-100 and 102-108 at 600 px). **Foliation gap, M:** c111's
+  recto reads "100" and c112's "102"; f.101 was not seen as a separate number, so either one of the two numbers is misread at 600 px or the
+  foliation skips 101 (no duplicate opening in this block). f.107r carries "108" struck with "107" beside it. Per leaf in `leaves_f13v_on.tsv`
+  (24 rows appended; c112's recto logged "101r or 102r").
+- Contents: letters in clear to "Monseigneur" / "Monsieur" / "Sire", several signed (ff.95v-100r, 104r-v, 106r, M); ends of letters "Madame de ..."
+  (ff.99r-v, M); a memoir in clear paragraphs naming Chasteau-Regnault and Madame de Nevers' properties (ff.101/102r-103v, M); an oath formula "Vous
+  jurez et promettez a Dieu ..." with a pasted docket "forme du serment ... de la principaulte d'Arches" (ff.105r-v, M); a financial account of
+  tailles and traites by place (Lyon, Paris, Champagne, Bourges, Poitou ...) in Roman-numeral sums with "lz", and at the foot of f.107v Arabic-figure
+  columns with item labels and totals (e.g. 249427, 74446, 332127; M) -- **checked at 1600 px: additions, not code groups**; a letter patent "Henry par
+  la grace de Dieu roy de France et de Pologne" (f.108r, M). **No figure runs in letter text, no dotted codes, no interlinear code glosses** on any leaf
+  ff.95v-108r.
+- Result: no glossed sibling of f.10r in ff.95v-108r. f.10r tokens read by this job: 0.
+- Canvases 119-142 (f.108v onward, 24 canvases) remain unviewed. Not continued (brief).
+
+## Remaining gaps (F4712-C107, 14 Oct 2026)
+Read so far: 6 of 37 f.10r tokens at C under S1 (16%), f13_carry.tsv; 31 tokens unread
+- f.10r tokens outside f.13r's H-glossed codes (31 of 37) - blocker: no-key-material; key no.1 is a non-test at 37 tokens (DUCH-KEY1B), key no.4 cannot cover f.10r (DUCH-KEY4), key no.71 is a control-backed negative both as an unmarked letter text (F4712-K71) and as an all-code Motz text (F4712-71); ff.13v-108r carry no glossed sibling (F4712-CENSUS, F4712-71, F4712-C39, F4712-C47, F4712-C59, F4712-C71, F4712-C83, F4712-C95, F4712-C107; f.35r-v is the Pasquier letter in a mixed digit/sign cipher; ff.38r-41r carry 1609 dates, M; ff.107r-v are an account in sums, not code); next: census of canvases 119-130 (f.108v onward, 12 requests at 600 px), ~$1.5 per 12 canvases via openapi.bnf.fr, 24 canvases left
+- same-writer basis of the six C carries - blocker: not-attempted; one person's eye vs our 8-form reading, the machine digit test was a NON-TEST; next: a digit-rich f.13r/f.10r comparison or a palaeographer's look, ~$2
+- f.13r code 40 gloss (Vill. vs Lill.) and code 93 conflict - blocker: waiting-on ASKS 162 (the owner's eye on images/f13r/g40 t2/t4 and recon_1/recon_2 tiles 93a/93b); model-reader instrument retired for this gloss (F4712-40 NON-TEST, g40_read.tsv); neither code occurs on f.10r under S1
+
+## Escalation (F4712-C107, 14 Oct 2026)
+- [ ] siblings: ff.13v-108r censused, no glossed sibling in the f.10r figure system (F4712-CENSUS, F4712-71, F4712-C39, F4712-C47, F4712-C59, F4712-C71, F4712-C83, F4712-C95, F4712-C107); f.35r-v is Tomokiyo's Pasquier letter (mixed digit/sign cipher, no interlinear gloss at 1600 px); canvases 119-142 (f.108v onward, 24 canvases) unviewed; f.101 foliation doubt (M); planned: same census, 12 canvases per job
+- [x] clear-pages: ff.9, 11, 12 checked, no cipher (DUCH-LEAVES); f.13r's glossed codes used as the crib (DUCH-F13); ff.13v-34v and ff.36r-108r clear (F4712-CENSUS, F4712-71, F4712-C39, F4712-C47, F4712-C59, F4712-C71, F4712-C83, F4712-C95, F4712-C107)
+- [x] known-keys: key no.1 applied (non-test, DUCH-KEY1B), key no.4 tried (design mismatch, DUCH-KEY4), key no.71 applied with matched controls as a letter text (F4712-K71) and as an all-code Motz text (F4712-71), control-backed negative both ways
+- [x] print: Gomberville's Mémoires (1665) full-text searched (NV-INTAKE, 3 Oct 2026), no cipher passage printed
+- [n/a] key-rebuild: 37 tokens is far below any cryptanalytic length for a code of this size
+- [x] image-check: f.10r read from crops (DUCH-KEY1B) and checked at native resolution for marks (none, F4712-71); f.13r two blind passes agree on all 34 codes (DUCH-F13); code 40 gloss third model read a NON-TEST (F4712-40), model reader retired for that gloss, owner's eye ASKS 162
+- [x] retry: hand question retried by a blind digit test (R11A-F4712, NON-TEST) and settled by the person's look (ASKS 113)
+Verdict: keep going: 1 internal gap and the sibling census; cheapest next: census of canvases 119-130 (f.108v onward) at 600 px via openapi.bnf.fr, ~$1.5

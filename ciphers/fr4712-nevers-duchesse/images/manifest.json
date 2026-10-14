@@ -1080,6 +1080,160 @@
    ],
    "sha1": "f25373c00977c062215690a8412f719327591148",
    "job": "F4712-C95"
+  },
+  {
+   "file": "census/c107_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f107/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    427
+   ],
+   "sha1": "cf34cd7e6a5c44959ef390c5c2384ab61d359298",
+   "job": "F4712-C107"
+  },
+  {
+   "file": "census/c108_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f108/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    428
+   ],
+   "sha1": "9003eaa62a7b4a8f374d9a85d5e709d39482fe2e",
+   "job": "F4712-C107"
+  },
+  {
+   "file": "census/c109_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f109/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "sha1": "326cc8e43fe1d02a1423bff75de33ad57edb5a35",
+   "job": "F4712-C107"
+  },
+  {
+   "file": "census/c110_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f110/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "sha1": "836488a5d463bc4863b217af35a5eb0d561b8fa6",
+   "job": "F4712-C107"
+  },
+  {
+   "file": "census/c111_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f111/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "sha1": "8a3c9f34e55b6147fc2adcee2b5e5c9c304f7457",
+   "job": "F4712-C107"
+  },
+  {
+   "file": "census/c112_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f112/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    429
+   ],
+   "sha1": "0d85ad41f0f4dbd7c67eb500fe48634728ac0a62",
+   "job": "F4712-C107"
+  },
+  {
+   "file": "census/c113_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f113/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    427
+   ],
+   "sha1": "28dfe305f3eb2c5c6a9c895bb19bf018aa0a73d0",
+   "job": "F4712-C107"
+  },
+  {
+   "file": "census/c114_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f114/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    427
+   ],
+   "sha1": "77c578497cb477d6cf3750ea4e6cade26e78e497",
+   "job": "F4712-C107"
+  },
+  {
+   "file": "census/c115_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f115/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "sha1": "e84daadcf4adf2a6707ff62157393dc9219011d1",
+   "job": "F4712-C107"
+  },
+  {
+   "file": "census/c116_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f116/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "sha1": "c9d35311574d1fe9828cedbb801907c9eca96c80",
+   "job": "F4712-C107"
+  },
+  {
+   "file": "census/c117_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f117/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "sha1": "e769aff5e71081cf0b523a421b76120e869bd622",
+   "job": "F4712-C107"
+  },
+  {
+   "file": "census/c118_600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f118/full/600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    600,
+    415
+   ],
+   "sha1": "35ca7f538a0cf465b535f7662f64492cbdafa26e",
+   "job": "F4712-C107"
+  },
+  {
+   "file": "census/c117_r_1600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f117/pct:50,0,50,100/1600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    1600,
+    2213
+   ],
+   "sha1": "acf9a0071b1623b87580425b104fda322a0f3add",
+   "job": "F4712-C107"
+  },
+  {
+   "file": "census/c118_lowl_1600.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f118/pct:0,55,50,45/1600,/0/default.jpg",
+   "date": "14 Oct 2026",
+   "size": [
+    1600,
+    995
+   ],
+   "sha1": "b32188bc6835cffc779e33e2881341d8b5b0cdb5",
+   "job": "F4712-C107"
   }
  ],
  "k71_f133r_wordcols": {
