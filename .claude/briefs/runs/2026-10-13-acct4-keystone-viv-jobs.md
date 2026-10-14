@@ -211,3 +211,45 @@ tests on a synthetic export before the owner answers). Deliver: commit the page 
 42 signs to place", icon "grid"); put the artifact URL and the repo path in the done line and in NOTES "VIV-HUMAN". Do not score anything;
 the parent scores when the owner answers. Price: vision calls: 0 x USD 0 = 0; Opus floor 2.5; the sorter build and preflight
 (browser emulation) are the cost; cap 8. Done line: the artifact URL first, then |W| and |R| and the preflight verdict.
+
+## Wave 4 (01:5x UTC 14 Oct 2026; VIV-KEYV and VIV-HUMAN done and archived; VIV-70 done on account 2)
+Results read: VIV-KEYV downgraded e -> m to M: label e merges at least three signs, (A) e-loop + n compound (the comm- anchors, 15 ink-63
+"-omman-"), (B) a hooked open c before 6 (plus), (C) Tomokiyo col f row 1 (faict, France); D1 held on all four inks, AUDIT 7 written,
+status.json propagated (NOTES "VIV-KEYV", tx/vivkeyv_tiles.tsv, tx/vivkeyv_blind.txt). VIV-HUMAN published the owner's page
+(https://claude.ai/artifact/WAPAiDSVDwYjvDotTgBFhA, tx/sorter_human/): only 13 unflagged single-tile rows exist on f.201r where a
+reader is wrong -- on positions where the clerk's own decipherment is unambiguous the readers err at about 3%; the error that makes
+ink 63 salad sits in the merged and unkeyed labels (U + M = 22% of its tokens) and in positions whose truth is itself uncertain.
+VIV-70 (account 2): f.211r vs ff.215r-215v FAILs the registered gate by the rank rule (0.700 vs p95 0.661, rank 2 of 201) because
+f.211r carries only 10 cipher lines against a 2,614-letter target; the post-hoc trimmed alignment (0.769 vs p95 0.522, rank 1) licenses
+nothing until a trim rule is pre-registered (NOTES "VIV-70"). Same rules as waves 1-3.
+
+### VIV-ESPLIT (Opus, cap 10, box 120 min, openapi.bnf.fr <= 4): split the merged labels e and y into their signs, key each sign from its own anchors
+Why: the readers' label inventory conflates distinct glyphs (VIV-KEYV: label e >= 3 signs; VIV-67: label y aligns r 11 / l 9 / n 4 / e 4),
+and every conflated label is M or U in the decode. Resolving two labels moves up to 161 + ~250 ink-63 tokens from M/U toward H and
+is the first step that can lengthen the clean runs. Instrument order (tools first, Usage 8): (1) the three truth leaves give
+supervised within-label classes: for every reader-label-e and label-y position on f.102r, f.103r, f.201r with a scored truth row,
+the truth value is the class (e: m vs the (B) and (C) values; y: r / l / n / e / h); tiles from VIV-CLS's label-aware map
+(tx/vivcls/map_signs.tsv; regenerate the f.201r crops with the manifest "viv67" command, 1 request) and, where the map has no tile,
+a window cut on the reader token's x-span estimated from the line's token count (say which); features as glyph_atlas.py's; a
+within-label classifier (3-5 classes) with leave-one-leaf-out; gate per label: held-out within-label accuracy above the majority
+class with a one-sided binomial p < 0.05, and a permuted-label control near chance. (2) Apply the passing classifier to ink 63's
+label-e and label-y tokens (crops from images/p63/manifest.json, <= 3 requests), write tx/viv63_esplit/ with the per-token sub-label
+and confidence, and re-decode under provisional sub-sign rows (e_A -> m, e_B / e_C and y_r / y_l / y_n per their class value) with the
+b2 and 200-wrong-key gates under new seeds, plus `decode_key.py --try` per sub-sign. (3) Key edit only if (1) and (2) pass for that
+label: split the label in the ciphertext files the decode scripts read (document the mapping in tx/viv63_esplit/README.md so
+`--check` still reproduces), add the sub-sign rows at grade C with counts, re-run every decode script with --check; report H/M/U
+before/after, longest clean run per AUDIT 2's measure, and the five longest stretches as text. A verifier follows any key edit (the
+parent spawns it); if nothing passes, no edit, log the numbers. Where the machine split is undecided on a shape group, write the
+tile ids to tx/viv63_esplit/owner_questions.tsv for a later sorter ask (do not build a page). PREREG-VIVESPLIT.md before any
+held-out score. Price: vision calls: 1 x USD 1.5 = 1.5 (one blind grouping check at most); Opus floor 2.5; cap 10; stop before a
+unit that would cross 80% of cap or box. Done line: per label the held-out gate numbers first, then the ink-63 gates, then U/M/H
+before and after if an edit was made.
+
+### Account-2 row VIV-70B (Opus, cap 3, box 60 min, disk only; account 2): pre-register the trim rule, register the f.211r truth, label table
+Exactly VIV-70's own "Next" (NOTES "VIV-70"): write PREREG-VIV70B.md FIRST with a trim rule derived without looking at the f.211r
+alignment (the ink-67 ratio: target letters = cipher codes x (dec67 aligned letters / f.201r codes), window +-200 as confirm2's), then
+re-run the alignment and the 200-shuffled-key control under it ONCE; if real ranks 1 and clears p95, build and register
+benchmark-tx/vivonne1573-f211r-dev.truth.tsv (split=dev, build_vivonne_f201r.py's recipe) and run tx/viv67_labels.py's method as
+tx/viv70_labels.py (counts only, no key edit); else stop and report. Done line: share vs p95 and rank first, then whether the truth
+item was registered, then the label totals. ROOM lines "for LANE VIV-KEYSTONE (account 4)", done line to the parent
+session_01D7XWmthshMVqxumdDvitPh.
