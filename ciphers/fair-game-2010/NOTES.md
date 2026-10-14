@@ -504,3 +504,61 @@ Read so far: 0 of 67 marked letters read (tests 1-2, R12D-FAIR, R12D-FAIR2, D2-F
 - [x] image-check: GF4-BATCH22 reconciled all 67 visible letters against the screenshots; FAIR-CRED transcribed every marked credit row (two blind passes)
 - [x] retry: per-language letter-count rank over 34 corpora (all below p01) and transposition --langs on the three nearest (controls 0.884-0.958, no decode clears its own real_p05) run 14 Oct 2026 (FAIR-LANG)
 Verdict: keep going: 1 internal gap; cheapest next: substitution-invariant profile rank per language, then masc --langs on what survives, ~$1
+
+## FAIR-IC: substitution-invariant profile rank per language, then masc --langs (account 4, LANE DEFAULT-A4-2135-14, 14 Oct 2026, 22:32-22:3x UTC)
+
+Answers FAIR-LANG's remaining gap ("substitution in a non-English language"). Disk only, no requests, no subagents.
+Pre-registered before any score: `ic/PREREG-FAIR-IC.md` (commit e296b5719).
+
+P0 (`ic/ic_rank.py`, `--check` exit 0, `ic/ic_rank.json`): for all 34 LANG_CORPORA keys, the 67 marks' index of
+coincidence (target 0.0498) and the L1 distance of their sorted letter-count profile to the mean sorted profile,
+each ranked among the same 2000 word-start N=67 windows of that corpus FAIR-LANG used (matched control: real text of
+that language at the same N), with 200 uniform-random strings as the floor. Both statistics are unchanged by any
+simple substitution and any transposition.
+
+| | result |
+|---|---|
+| survive both cuts (5) | pl18 (IC rank 0.106, profile 0.489), sv17 (0.017, 0.096), sco16 (0.017, 0.055), en (0.014, 0.089), de (0.014, 0.066) |
+| excluded (29) | IC below the key's own p01: en18 0.0085, de17/de1600 0.006, la17 0.0035, nl16/nl18/fr18/la/la18 0.0025, da19 0.001, every es, fr, it and pt key 0.0005 or 0.000 |
+| power of the IC cut | 90-100% of uniform-random strings fall below each key's p01 (pl18 lowest, 0.905) |
+
+So the marks' letters are as flat as the flattest 1-2% of 67-letter windows of English, German, Scots or Swedish, and
+flatter than 99% of windows in every Romance key, Dutch, Danish and Latin: a simple substitution of a Romance-language
+plaintext is excluded at p01 by a statistic no substitution can change.
+
+P1 (`ic/run_masc_langs_scroll.log`; `tools/family_run.py --family masc --langs pl18,sv17,sco16,en,de --seeds 3
+--restarts 8 --gate 0.6`, order=scroll; matched control per language first, from its own corpus, N=67 K=21):
+
+| lang | control mean (range) | gated | own-language judge score vs real_p05 | margin |
+|---|---|---|---|---|
+| en | 0.622 (0.433-0.791) | yes | -0.985 vs -0.920 | -0.065 FAIL |
+| sco16 | 0.622 (0.030-0.955) | yes | -1.166 vs -0.951 | -0.215 FAIL |
+| de | 0.701 (0.687-0.731) | yes | -1.618 vs -0.499 | -1.119 FAIL |
+| pl18 | 0.294 (0.045-0.493) | no | not run | CONTROL BELOW GATE (non-test) |
+| sv17 | 0.483 (0.149-0.910) | no | not run | CONTROL BELOW GATE (non-test) |
+
+No decode clears its own language's real_p05, so the registered column-order run was not triggered. The en decode is
+the same one GAPS71 r32 found (-0.985), now behind a control that clears 0.6 on 3 seeds (GAPS71's 5-seed mean was
+0.537-0.591): the controls clear the gate by a few points with seed ranges as wide as 0.03-0.96, so a FAIL here is a
+weak negative. HYPOTHESES.md: 5 family_run rows (their judge column is the spec's English judge; the own-language
+numbers are the table above, from the log's LANGS ranking). Decodes: `families/masc-1-*-lang{en,sco16,de}.txt`.
+
+Verdict: control-backed negative at p01 for "simple substitution (or substitution plus transposition) of plaintext in
+any of the 29 excluded keys" (every Romance, Dutch, Danish, Latin and 18th-c. English corpus); weak control-backed
+negative for simple substitution of English, Scots and German in scroll order; Polish and Swedish untestable by masc at
+N=67 (CONTROL BELOW GATE). Conditional on the corpora's era and register (mostly 16th-19th-c.; the film is 2010
+English) and on test2's scroll order. Requests: none. Subagents: none.
+
+## Remaining gaps (FAIR-IC, 14 Oct 2026)
+Read so far: 0 of 67 marked letters read (tests 1-2, R12D-FAIR, R12D-FAIR2, D2-FAIR, FAIR-CRED, FAIR-TRANS, FAIR-LANG and FAIR-IC are negatives or non-tests)
+- substitution of Polish or Swedish plaintext - blocker: too-short; the masc matched control reads 0.294 (pl18) and 0.483 (sv17) at N=67 K=21 against gate 0.6 (ic/run_masc_langs_scroll.log), so 67 letters cannot carry the test; the IC and profile cuts, which do not need a solver, leave both languages in
+
+## Escalation (FAIR-IC, 14 Oct 2026)
+- [n/a] siblings: a single film-credit cryptogram with no sibling texts
+- [x] clear-pages: the credits' clear line DEMOCRACY ONLY WORKS IF YOU DO YOUR PART tested as a crib, no isomorph placement in either order
+- [n/a] known-keys: no key material exists for a film-credit puzzle
+- [x] print: web and blog sweep of 3 Oct 2026 found no published decipherment
+- [retired] key-rebuild: injective substitution by tools/families/masc_inj.py word-pattern beam, CONTROL BELOW GATE 0.576 at N=67 (R12D-FAIR2); masc anneal and masc_words already run, a third substitution instrument needs new material
+- [x] image-check: GF4-BATCH22 reconciled all 67 visible letters against the screenshots; FAIR-CRED transcribed every marked credit row (two blind passes)
+- [x] retry: IC and sorted-profile rank over 34 corpus keys (29 excluded at p01) and masc --langs on the 5 survivors (en, sco16, de gated and FAIL; pl18, sv17 CONTROL BELOW GATE) run 14 Oct 2026 (FAIR-IC)
+Verdict: parked: every gap has an outside blocker

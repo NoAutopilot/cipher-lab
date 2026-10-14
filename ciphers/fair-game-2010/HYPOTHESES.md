@@ -116,3 +116,13 @@ L1 (declared supplementary, outside the registered gate: none of the 34 qualifie
 | fr | 0.954 | -1.724 / -0.978 / -0.746 | -1.680 / -0.978 / -0.702 | FAIL both orders (control gated) |
 | nl16 | 0.958 | -1.712 / -0.875 / -0.837 | -1.626 / -0.875 / -0.751 | FAIL both orders (control gated) |
 
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 14 Oct 2026 22:34 | masc | N=67 K=21 restarts=8 corpus=bc.wbp.lodz.pl.Pamietniki_do_panowania_Augusta_II_91967.txt.gz+bc.radom.pl.11-359.txt.gz+bc.wbp.lodz.pl.Listy_Jana_III_Krola_Polskiego_a_96549.txt.gz+ojczystespomink01johngoog.txt.gz+pamitnikiksakit01kitogoog.txt.gz | 1-3 | 0.294 (0.045-0.493) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | FAIR-IC P1 masc --langs order=scroll |
+| 14 Oct 2026 22:35 | masc | N=67 K=21 restarts=8 corpus=rikskanslerenax00akadgoog.txt.gz+rikskanslerenax00palagoog.txt.gz+rikskanslerenax00styfgoog.txt.gz+rikskanslerenax01palagoog.txt.gz+rikskanslerenax02akadgoog.txt.gz+rikskanslerenax03akadgoog.txt.gz | 1-3 | 0.483 (0.149-0.910) | not run (CONTROL BELOW GATE) | - | no (gate 0.6) | FAIR-IC P1 masc --langs order=scroll |
+| 14 Oct 2026 22:35 | masc | N=67 K=21 restarts=8 corpus=worksofjohnkn01knox.txt.gz+worksofjohnkn02knox.txt.gz+adiurnalremarka00thomgoog.txt.gz+historielifeofki00colvuoft.txt.gz+registerofprivyc0002jjoh.txt.gz | 1 | 0.622 (0.030-0.955) | -148.599 | FAIL language: score=-1.341, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.6) | FAIR-IC P1 masc --langs order=scroll |
+| 14 Oct 2026 22:35 | masc | N=67 K=21 restarts=8 corpus=pg1661_holmes.txt+pg2701_mobydick.txt | 1 | 0.622 (0.433-0.791) | -150.915 | FAIL language: score=-0.985, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.6) | FAIR-IC P1 masc --langs order=scroll |
+| 14 Oct 2026 22:36 | masc | N=67 K=21 restarts=8 corpus=composed_enhg.txt | 1 | 0.701 (0.687-0.731) | -151.704 | FAIL language: score=-1.44, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.6) | FAIR-IC P1 masc --langs order=scroll |

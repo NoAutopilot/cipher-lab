@@ -1,0 +1,66 @@
+=== --langs: pl18 ===
+family masc: simple substitution (homophonic_anneal.py, one sign per letter; control has the target's K distinct letters)
+spec specs/fair-game-2010.json slug fair-game-2010
+ciphertext: 1 message(s), N=67 signs, K=21 distinct, tokens=letters
+corpora: tools/data/pl18/bc.wbp.lodz.pl.Pamietniki_do_panowania_Augusta_II_91967.txt.gz, tools/data/pl18/bc.radom.pl.11-359.txt.gz, tools/data/pl18/bc.wbp.lodz.pl.Listy_Jana_III_Krola_Polskiego_a_96549.txt.gz, tools/data/pl18/ojczystespomink01johngoog.txt.gz, tools/data/pl18/pamitnikiksakit01kitogoog.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params -
+row -> ciphers/fair-game-2010/HYPOTHESES.md; decode -> ciphers/fair-game-2010/families/masc-1-bcwbplodzplpamie-langpl18.txt
+CONTROL seed 1: N=67 K=21 recovery 0.343 score -153.47
+CONTROL seed 2: N=67 K=21 recovery 0.493 score -143.44
+CONTROL seed 3: N=67 K=21 recovery 0.045 score -163.70
+CONTROL BELOW GATE: mean 0.294 < 0.6; target not run; row appended to ciphers/fair-game-2010/HYPOTHESES.md
+=== --langs: sv17 ===
+family masc: simple substitution (homophonic_anneal.py, one sign per letter; control has the target's K distinct letters)
+spec specs/fair-game-2010.json slug fair-game-2010
+ciphertext: 1 message(s), N=67 signs, K=21 distinct, tokens=letters
+corpora: tools/data/sv17/rikskanslerenax00akadgoog.txt.gz, tools/data/sv17/rikskanslerenax00palagoog.txt.gz, tools/data/sv17/rikskanslerenax00styfgoog.txt.gz, tools/data/sv17/rikskanslerenax01palagoog.txt.gz, tools/data/sv17/rikskanslerenax02akadgoog.txt.gz, tools/data/sv17/rikskanslerenax03akadgoog.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params -
+row -> ciphers/fair-game-2010/HYPOTHESES.md; decode -> ciphers/fair-game-2010/families/masc-1-rikskanslerenax0-langsv17.txt
+CONTROL seed 1: N=67 K=21 recovery 0.910 score -130.41
+CONTROL seed 2: N=67 K=21 recovery 0.149 score -141.60
+CONTROL seed 3: N=67 K=21 recovery 0.388 score -142.52
+CONTROL BELOW GATE: mean 0.483 < 0.6; target not run; row appended to ciphers/fair-game-2010/HYPOTHESES.md
+=== --langs: sco16 ===
+family masc: simple substitution (homophonic_anneal.py, one sign per letter; control has the target's K distinct letters)
+spec specs/fair-game-2010.json slug fair-game-2010
+ciphertext: 1 message(s), N=67 signs, K=21 distinct, tokens=letters
+corpora: tools/data/sco16/worksofjohnkn01knox.txt.gz, tools/data/sco16/worksofjohnkn02knox.txt.gz, tools/data/sco16/adiurnalremarka00thomgoog.txt.gz, tools/data/sco16/historielifeofki00colvuoft.txt.gz, tools/data/sco16/registerofprivyc0002jjoh.txt.gz
+control seeds [1, 2, 3], restarts 8, gate 0.6, params -
+row -> ciphers/fair-game-2010/HYPOTHESES.md; decode -> ciphers/fair-game-2010/families/masc-1-worksofjohnkn01k-langsco16.txt
+CONTROL seed 1: N=67 K=21 recovery 0.881 score -134.58
+CONTROL seed 2: N=67 K=21 recovery 0.955 score -127.56
+CONTROL seed 3: N=67 K=21 recovery 0.030 score -150.38
+TARGET best score -148.599; decode -> ciphers/fair-game-2010/families/masc-1-worksofjohnkn01k-langsco16.txt; judge: FAIL language: score=-1.341, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67
+row appended to ciphers/fair-game-2010/HYPOTHESES.md
+=== --langs: en ===
+family masc: simple substitution (homophonic_anneal.py, one sign per letter; control has the target's K distinct letters)
+spec specs/fair-game-2010.json slug fair-game-2010
+ciphertext: 1 message(s), N=67 signs, K=21 distinct, tokens=letters
+corpora: tools/data/pg1661_holmes.txt, tools/data/pg2701_mobydick.txt
+control seeds [1, 2, 3], restarts 8, gate 0.6, params -
+row -> ciphers/fair-game-2010/HYPOTHESES.md; decode -> ciphers/fair-game-2010/families/masc-1-pg1661holmes-langen.txt
+CONTROL seed 1: N=67 K=21 recovery 0.433 score -146.27
+CONTROL seed 2: N=67 K=21 recovery 0.791 score -132.64
+CONTROL seed 3: N=67 K=21 recovery 0.642 score -139.65
+TARGET best score -150.915; decode -> ciphers/fair-game-2010/families/masc-1-pg1661holmes-langen.txt; judge: FAIL language: score=-0.985, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67
+row appended to ciphers/fair-game-2010/HYPOTHESES.md
+=== --langs: de ===
+family masc: simple substitution (homophonic_anneal.py, one sign per letter; control has the target's K distinct letters)
+spec specs/fair-game-2010.json slug fair-game-2010
+ciphertext: 1 message(s), N=67 signs, K=21 distinct, tokens=letters
+corpora: tools/data/de16/composed_enhg.txt
+control seeds [1, 2, 3], restarts 8, gate 0.6, params -
+row -> ciphers/fair-game-2010/HYPOTHESES.md; decode -> ciphers/fair-game-2010/families/masc-1-composedenhg-langde.txt
+CONTROL seed 1: N=67 K=21 recovery 0.731 score -148.05
+CONTROL seed 2: N=67 K=21 recovery 0.687 score -145.71
+CONTROL seed 3: N=67 K=21 recovery 0.687 score -143.10
+TARGET best score -151.704; decode -> ciphers/fair-game-2010/families/masc-1-composedenhg-langde.txt; judge: FAIL language: score=-1.44, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67
+row appended to ciphers/fair-game-2010/HYPOTHESES.md
+
+LANGS ranking (margin = judge score - real_p05 in the decode's own language; >= 0 clears that language's real-text 5th percentile)
+rank	lang	control_mean	gated	score	real_p05	margin
+1	en	0.622	yes	-0.985	-0.92	-0.065
+2	sco16	0.622	yes	-1.166	-0.951	-0.215
+3	de	0.701	yes	-1.618	-0.499	-1.119
+-	pl18	0.294	no	None	None	None
+-	sv17	0.483	no	None	None	None
