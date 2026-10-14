@@ -208,17 +208,18 @@ two blind machine passes against those labels, re-measured. ciphertext_v2.tsv (B
 ## Remaining gaps (BNF-Q7-SCREEN, 13 Oct 2026)
 Read so far: unmeasured, no key reads the letter yet
 - Key identification for f.25 - blocker: waiting-on ASKS row 'fr.3982 f.25 looped sign and lines L00/L06' (the owner's sign check); the transcription's measured error (0.115, upper 0.160, BNF-Q7-ERR) is above the band most key controls cover, so no.46, no.70, no.45 and no.73 are non-tests and only no.62 is excluded
+- Tuscan table T2 (Tomokiyo after Monts de Savasse 1997) - blocker: not-attempted; TUSC-XM's first-alternative decode has no power on a polyphonic table (0.00-0.03); next: a decoder that tries every alternative of each cell (best path under the it16 4-gram model) with the same PREREG nulls and power check, ~$2.5. T1 (Guicciardini-Sillery 1593) is held by the transcription row above (power 0.49 at 16%, 0.62 under 8-loss)
 - Key no.70 nomenclator - blocker: not-attempted; only the alphabet of f.131r is transcribed, and the alphabet screen (p_a 0.078) cannot see a fit carried by word codes; next: transcribe the word columns and re-screen, ~$2
 
 ## Escalation (BNF-Q7-SCREEN, 13 Oct 2026)
 - [ ] siblings: other Nevers-Tuscany letters of 1592-93 in fr.3982-3987 (Tomokiyo: Aug and Nov 1593) not yet located; planned: notice items of fr.3985/fr.3987 by bnf_findingaid.py
 - [n/a] clear-pages: the minute has no clear copy on the leaf (BNF-Q7-ID leaf look)
-- [ ] known-keys: no.62 [retired by BNF-Q7-TEST, structural misfit, power 0.99-1.00]; no.46 and no.70 alphabet no fit (BNF-Q7-SCREEN, screen power 0.85/0.94 at 10%, p_a 0.43/0.078, p_b 0.16/0.26); planned: fr.3995 tables no.44, 45, 47, 56, 35, 63 through q7test/screen.py; Tomokiyo's two published Tuscan tables transcribed as keys (TUSC-KEYS, 14 Oct 2026, ciphers/_keys/tuscany-guicciardini/), not yet screened: planned a pre-registered tools/key_crossmatch.py run with its shuffled control on ciphertext.tsv, conditional on its looped-sign problem
+- [ ] known-keys: no.62 [retired by BNF-Q7-TEST, structural misfit, power 0.99-1.00]; no.46 and no.70 alphabet no fit (BNF-Q7-SCREEN, screen power 0.85/0.94 at 10%, p_a 0.43/0.078, p_b 0.16/0.26); planned: fr.3995 tables no.44, 45, 47, 56, 35, 63 through q7test/screen.py; Tomokiyo's two published Tuscan tables (TUSC-KEYS, ciphers/_keys/tuscany-guicciardini/) screened by TUSC-XM (14 Oct 2026, PREREG-TUSC-XM.md): both NON-TEST (T1 power 0.49 at 16% error, 0.62 under 8-loss; T2 power <= 0.03 even clean, first-alternative decode cannot read its polyphony); target p_key 0.34 / 0.39, not a negative
 - [x] print: Canestrini-Desjardins vol. V OCR searched, Gomberville seconde partie 1591-1594 read (BNF-Q7-ID)
 - [ ] key-rebuild: not attempted; a 260-digit string is short for cryptanalysis without a table
 - [x] image-check: leaf read at native resolution, two blind digit passes agree 0.905 (BNF-Q7-KEY)
 - [ ] retry: none yet
-Verdict: keep going: 1 internal gaps; cheapest next: pre-registered key_crossmatch screen of the two Tuscan tables (ciphers/_keys/tuscany-guicciardini/) against f.25 with shuffled control, ~$2
+Verdict: keep going: 2 internal gaps; cheapest next: transcribe the no.70 word columns and re-screen, ~$2 (the Tuscan table T2 needs a polyphony-aware decoder, ~$2.5)
 
 ## BNF-Q7-TAB (13 Oct 2026, account 2)
 Transcription only; no decode, no screen run, no novelty class. Brief: .claude/briefs/runs/2026-10-13-ytbiz-bnf-q7-tab.md. Images and URLs: images/fr3995/manifest.json. Credit: numbering and identification Tomokiyo (nevers.htm).
@@ -322,4 +323,33 @@ and Monts de Savasse (1997).
   profile comparison with f.25 made.
 - Tool note (one line, not acted on): every `ciphers/_keys/*` key appears twice in KEY-DESIGN.tsv (once as its own
   duplicate_of), the same for the Gonzaga key already there; key_design.py discovery double-counts EXTRA_KEY_GLOBS paths.
+
+## TUSC-XM (14 Oct 2026, account 2)
+Worker TUSC-XM (Opus) for LANE DEFAULT-A2-2209-14. Screen only; no reading, no key edit, no novelty class. Tables: S. Tomokiyo,
+Cryptiana guicciardini.htm (T1 after Speziali 1955; T2 after Monts de Savasse 1997). Rule written and pushed before any score:
+PREREG-TUSC-XM.md (dc1afacb7, 22:50 UTC). Script and outputs: q7test/tusc_xm/ (tusc_xm.py, power.out, target.out).
+- Prior work: `tools/prior_work.py fr3982-nevers-toscana-1592 --item-spec 'f.25' --step-type decode --offline` exit 4 (LOOK 2-leaf,
+  UNCHECKED 3-solver, 3-tomokiyo, UNCHECKED-NET 3-solver aaymeloglu, 4-editions); the three owed rows recorded CLEAR from this file's
+  Check-solved, Leaf look and TUSC-KEYS sections (prior-work.tsv); the two -NET rows unchecked here (disk-only job; check-solved covers them).
+  Check 1: no earlier section or AUDIT.md ran this screen (no AUDIT.md in the folder).
+- Instrument: ciphertext.tsv L01-L06 (260 digits, `?` removed, **no digit 8**), fixed two-figure pairs in frames 0 and 1, T = max
+  4-gram score (it16 minus the held-out file), nulls 1000 class-shuffled keys (tools/key_crossmatch.py shuffled_key_by_class) and 200
+  order shuffles. Gate p_key <= 0.005 and T > order p99.
+- **Power (100 synthetics each, 260 digits):**
+
+| table | C0 clean | C1 0.115 | C2 0.160 | C3 8-loss + 0.07 |
+|---|---|---|---|---|
+| T1 | 0.91 | 0.71 | 0.49 | 0.62 |
+| T2a (two-figure codes only) | 0.00 | 0.03 | 0.00 | 0.03 |
+| T2b (single figures allowed) | 0.01 | 0.02 | 0.00 | 0.01 |
+
+  Specificity (C0 cross-table synthetics): T1-enciphered scored with T2 0.00, T2-enciphered scored with T1 0.00.
+- **Target:** T1 T -1.7315, p_key 0.340, order p99 -1.5329, coverage 0.685/0.674 -> FAIL; T2 T -1.3954, p_key 0.389, order p99
+  -1.2200, coverage 0.808/0.822 -> FAIL.
+- **Verdict per the PREREG licence (power >= 0.8 at C2 and C3): both NON-TEST.** T1: the screen reads T1 clean (0.91) but not at the
+  transcription's measured error band or under the looped-sign loss; a T1 miss here says nothing either way. Besides, ciphertext.tsv has
+  no 8, and T1 needs 8 for h (18), t (28), or (78), sa-so (80-83), ar/as (75, 85); the looped-sign settlement (ASKS row) is what moves
+  T1. T2: the instrument itself cannot read T2 (first alternative of a polyphonic cell), so its FAIL is a non-test of the instrument, not
+  of the table; next is a decoder over all alternatives. All of this is conditional on ciphertext.tsv (BNF-Q7-ERR, rule 2).
+- Requests: none (disk only). Cost not visible to this session.
 

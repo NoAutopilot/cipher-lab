@@ -1,0 +1,2 @@
+{"T": -1.7315, "p_key": 0.3397, "null_key_max": -1.444, "order_p99": -1.5329, "cov_f0": 0.685, "cov_f1": 0.674, "table": "T1", "digits": 260, "verdict": "FAIL"}
+{"T": -1.3954, "p_key": 0.3886, "null_key_max": -1.1094, "order_p99": -1.22, "cov_f0": 0.808, "cov_f1": 0.822, "table": "T2", "digits": 260, "verdict": "FAIL"}
