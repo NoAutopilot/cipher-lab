@@ -852,3 +852,49 @@ names it. Requests this step: none (compute only, no network). Subagents/vision 
 ## While waiting (RUN4-WAITBF, 4 Oct 2026)
 
 - Action that depends on nobody: the different instrument this folder names for `suofratel` -- a nomenclator-aware solve reading the 1x/2x + y inventory as code groups, not letters, with its own matched control run first (tools/family_run.py discipline), ~$3, once a lane brief names it. Ferrari 1999 (LOCAL-QUEUE L33) stays the outside blocker for the status word.
+
+## Lasry BnF research check (14 Oct 2026, LQ-F4687)
+
+Clock 06:5x UTC 14 Oct by `date -u`. Record check only (no solving, no key edits, no re-grading of our tokens). Hosts: github.com, one shallow
+sparse clone of dbourdeau/cyphersolver (HEAD b0af20a, 13 Oct 2026; folder added in dde5b0ea), 1 request; no BnF/Gallica fetches. Snapshot of
+his folder, unmodified: `sources/cyphersolver/2026-10-14-lasry/paleologue1562/` (NOTES.md, profile.json, lasry_p033_1.png).
+Prior-work gate (`tools/prior_work.py`): not run (unchecked); this job is the github.com record check only.
+
+**His entry (quoted from his NOTES.md / profile.json):** "Marguerite Paléologue (catalogue attribution for ff1 onward) → Louis de Gonzague,
+duke of Nevers, 1562-1564 (catalogue group; individual dates unchecked), BnF Français 4687 — ff5v-7v"; "4/4 pages transcribed in part; 2/4 pages
+deciphered in part"; "Ciphertext-only: Yes"; "Key: 17 numerical code classes; some written forms remain uncertain"; "f5v/f6r: 241 elements
+transcribed and deciphered. f6v/f7v: 356 base signs transcribed, none deciphered; code groups unresolved"; contents "Italian family
+correspondence mentioning Milan, a stable master, Carlo, a brother, and an offer of scudi for a state. The letter remains partly unread."; his
+profile.json outcome: method "key recovered from ciphertext-only", extent "partial". His one printed excerpt (f6r, cipher rows 8-10):
+"Averia dat volontier a cuatr cento mila scudi per aver cuel stato et pareva ? ascoltase ? parla". His Gallica link is
+https://gallica.bnf.fr/ark:/12148/btv1b90075058/f8.item, the same ark and canvas 8 as ours. Credit: George Lasry (result, with ChatGPT Astra 6
+and Anthropic Opus 5.5, "BnF cipher research", 10 Oct 2026); D. Bourdeau (publication, cyphersolver dde5b0ea; text CC BY 4.0).
+
+| Our item | Ours | His | Match |
+|---|---|---|---|
+| Items 1-3, fr.4687 (catalogue: 1562-1564, Marguerite Paléologue → Louis de Gonzague), same ark btv1b90075058 | cipher on Gallica canvases 8, 9, 10; 900 signs transcribed (f8 532, f9 138, f10 230; digits 0-9 plus y, no group boundaries); status `blocked`; no reading, no key | ff5v-7v: sender/recipient/date/ark identical to our catalogue attribution (he too takes it from the catalogue, dates unchecked) | **same item** |
+| Canvas 8 (our "f.6", Gallica f8) | 532 signs, lines f8_L2-L11, f8_left_L1-L4, f8_right_L12 | f5v/f6r, link f8.item: 241 elements transcribed and deciphered | **match** on the leaf; his reading is partial in extent |
+| Canvas 9 (our "f.7") | 138 signs (f9_L6, f9_top_L1-L3) | his f6v/f7v: 356 base signs transcribed, none deciphered; which canvases these are is not stated in the files published | **partial / unconfirmed**: his unread pages may be our canvases 9-10; nothing of his to compare |
+| Canvas 10 (our "f.8", postscript after "lase le mie le posete brusare") | 230 signs (f10_L2-L7) | as above | **partial / unconfirmed**, as canvas 9 |
+
+**Sample comparison of his two numeric crops with ours (digits only, not a re-grading).** His spot-check (in his NOTES.md, made by the
+cyphersolver maintainer on the Gallica image) lists the f6r bottom rows as "4 9 3 20 5 4 8 4 ...", "17 22 9 8 5 73 ...", "2 4 4 4 18 6 4 17 22
+...". Ours: f8_L10 opens `493205484` (all H), the same as his first row with his "20" as our 2,0; f8_L11 opens `17220857 3` (`1722` H, `0` H,
+`8` M, `5 7 3` M) against his "17 22 9 8 5 73", one sign differing (his 9, our 0); his third row, `244418641722`, is not found at a line start in our
+f8 lines (nearest f8_L4 `244819...`), unlocated. So canvas 8 is the same leaf and two of his three crop rows sit in our lines L10-L11; our
+tokens stay as graded.
+
+**Plaintext side by side:** we hold no reading (H 0, C 0, S 0), so no comparison of plaintext lines is possible; his one excerpt is above.
+Our only candidate is the `suofratel` crib (A2-PAL series, sections above), a candidate graded M, not a reading; his excerpt does not contain it
+(it is about "four hundred thousand scudi", "quello stato"), and I do not adjudicate between them.
+
+**What changes for our work.**
+1. Status stays `blocked` (head line, Ferrari 1999 / L33): we hold canvases 8-10, his reading covers only canvas 8 in part (241 of our 532 signs'
+   worth of elements, counted by him in elements, not our signs), and canvases 9-10 are not shown as read by him. Not `found-solved`.
+2. His key is not published (no key table in the report per his own spot-check), so nothing of his can be merged; the margin glosses on f6r that
+   his spot-check mentions ("questo e quello ...", "Sera ... che segui") are the same marginal phrases we noted on this leaf (line 189 above).
+3. His folder is a prior work for canvas 8 of any future reading: a later session reading canvas 8 compares with his excerpt and asks him or
+   D. Bourdeau for the key table before any new run (suggestion only; the owner or parent decides the contact).
+4. No AUDIT.md in this folder: no N-class to correct, no AUDIT re-class flag. No Remaining gaps / Escalation sections to close (target is
+   `blocked`); `python3 tools/gaps_check.py fr4687-paleologue-nevers` -> "SKIP fr4687-paleologue-nevers: status blocked; sections not required".
+Where not found: no key, no full plaintext, no reading of canvases 9-10 in his files; his heading covers "ff5v-7v" only.
