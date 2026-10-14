@@ -90,6 +90,21 @@ def main():
         kt = [t for t in ta if not t.startswith('W:')]
         toks += kt
         lines.append(f"{lab}\t{''.join(key.get(t, '_') for t in ta if not t.startswith('W:'))}")
+    # MONL-C268B (14 Oct 2026): c268 L06-L10 from two blind passes (passes/c268b_passA.tsv, c268b_passB.tsv) reconciled from
+    # the native line crops (passes/c268b_reconciled.tsv; conf H where both passes agree and the crop holds it, M otherwise).
+    rec = HERE / 'passes' / 'c268b_reconciled.tsv'
+    if rec.exists():
+        bl = {}
+        for ln in rec.read_text().splitlines()[1:]:
+            f = ln.split('\t')
+            bl.setdefault(f[0], []).append(f)
+        for lab in sorted(bl):
+            for f in bl[lab]:
+                rows.append(f"{f[0]}\t{f[1]}\t{f[2]}\t{f[3]}\t{f[4]}\t{'c268b-recon' if f[2] != f[4] else ''}\n")
+                agree += f[3] == 'H'
+            ta = [f[2] for f in bl[lab]]
+            toks += [t for t in ta if not t.startswith('W:')]
+            lines.append(f"{lab}\t{''.join(key.get(t, '_') for t in ta if not t.startswith('W:'))}")
     dec = norm(''.join(key.get(t, '') for t in toks))
     j = judge(dec)
     rng = random.Random(a.seed)
@@ -117,7 +132,7 @@ def main():
                    c270_shuffle_mean=round(sum(ctl) / len(ctl) / len(dec), 4), c270_shuffle_p95=round(ctl[189] / len(dec), 4),
                    c270_shuffle_max=round(ctl[-1] / len(dec), 4))
     outs = {HERE / 'ciphertext_c268.tsv': 'line\tpos\tsign\tconf\tpass_a\trelabel\n' + ''.join(rows),
-            HERE / 'reading_c268.txt': '# c268 (f.138) first 5 cipher lines, Tomokiyo Monluc Cipher 1 table, pass A base, 10 C-curl tokens relabelled K38 (MONLUC-RELABEL), 8 K12->K04 and 4 K34->K53 (MONL-SORT); _ = unkeyed sign;'
+            HERE / 'reading_c268.txt': '# c268 (f.138) cipher lines 1-10 (L06-L10 MONL-C268B), Tomokiyo Monluc Cipher 1 table, pass A base, 10 C-curl tokens relabelled K38 (MONLUC-RELABEL), 4 K12->K04 (MONL-SORT less 4 MONL-EYE reverts) and 4 K34->K53 (MONL-SORT); _ = unkeyed sign;'
                                        ' W: words dropped. Not graded: see NOTES.md.\n' + '\n'.join(lines) + '\n',
             HERE / 'results_c268.json': json.dumps(res, indent=1, default=str) + '\n'}
     if a.check:

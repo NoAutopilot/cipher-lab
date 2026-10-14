@@ -658,5 +658,14 @@
    "tracked": false,
    "regen": "regen_monlalign.sh"
   }
- ]
+ ],
+ "monlc268b": {
+  "date": "14 Oct 2026",
+  "job": "MONL-C268B",
+  "source_url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060724s/f268/600,2060,3100,660/max/0/default.jpg",
+  "source_file": "images/scratch268b/src_c268_600_2060_3100_660.jpg (untracked)",
+  "crops": "images/scratch268b/crops/c268b_L01-L05_s1/s2.jpg (untracked) = c268 L06-L10; segments x 0-1700 and 1400-3100 of the region after a -3.25 deg deskew",
+  "regen": "sh regen_monlc268b.sh",
+  "requests": "openapi.bnf.fr 4 (overview 1000 px, two discarded regions that cut L06/L10, this region)"
+ }
 }

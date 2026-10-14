@@ -1,0 +1,171 @@
+line	pos	sign	conf	pass_a	pass_b	how
+L06	1	K26	H	K26	K26	both passes
+L06	2	K37	H	K37	K37	both passes
+L06	3	K38	M	K63	K63	eye: C-curl Z: K38 (MONLUC-RELABEL convention; passes K63)
+L06	4	K19	H	K19	K19	both passes
+L06	5	K04	H	K04	K04	both passes
+L06	6	K34	H	K34	K34	both passes
+L06	7	K33	H	K33	K33	both passes
+L06	8	K67	H	K67	K67	both passes
+L06	9	K09	H	K09	K09	both passes
+L06	10	K02	H	K02	K02	both passes
+L06	11	K10	H	K10	K10	both passes
+L06	12	K05	H	K05	K05	both passes
+L06	13	K15	H	K15	K15	both passes
+L06	14	K39	H	K39	K39	both passes
+L06	15	K05	H	K05	K05	both passes
+L06	16	K62	H	K62	K62	both passes
+L06	17	K33	H	K33	K33	both passes
+L06	18	K04	H	K04	K04	both passes
+L06	19	K14	H	K14	K14	both passes
+L06	20	K26	H	K26	K26	both passes
+L06	21	K09	H	K09	K09	both passes
+L06	22	K07	H	K07	K07	both passes
+L06	23	K04	H	K04	K04	both passes
+L06	24	K05	H	K05	K05	both passes
+L06	25	K39	H	K39	K39	both passes
+L06	26	K36	M	?x[b_with_diamond]	K14	eye: stem with diamond foot = K36 (A ?x, B K14)
+L06	27	K37	H	K37	K37	both passes
+L06	28	?double_slash	H	?double_slash	?double_slash	both passes
+L06	29	K26	H	K26	K26	both passes
+L06	30	K19	H	K19	K19	both passes
+L06	31	K38	M	K61	?x[looped_z]	eye: C-curl Z = K38 (A K61, B ?x[looped z])
+L06	32	K39	H	K39	K39	both passes
+L06	33	K05	H	K05	K05	both passes
+L06	34	K04	H	K04	K04	both passes
+L06	35	K09	H	K09	K09	both passes
+L06	36	K36	M	?x[b_with_diamond]	K36	eye: stem with diamond foot = K36 (A ?x, B K36)
+L07	1	K34	H	K34	K34	both passes
+L07	2	K12	M	K12	K04	eye: 9 whose descender curves left = K12 (A K12, B K04)
+L07	3	K36	M	K14	K14	eye: stem with diamond foot = K36 (both passes K14; eye override)
+L07	4	K04	H	K04	K04	both passes
+L07	5	K05	H	K05	K05	both passes
+L07	6	K19	H	K19	K19	both passes
+L07	7	K41	H	K41	K41	both passes
+L07	8	K22	H	K22	K22	both passes
+L07	9	K15	H	K15	K15	both passes
+L07	10	K42	H	K42	K42	both passes
+L07	11	K33	H	K33	K33	both passes
+L07	12	K34	H	K34	K34	both passes
+L07	13	K29	H	K29	K29	both passes
+L07	14	K05	H	K05	K05	both passes
+L07	15	K34	H	K34	K34	both passes
+L07	16	K41	H	K41	K41	both passes
+L07	17	K12	M	K12	-	eye: one 9 (curving) then b; B inserted K19
+L07	18	K14	H	K14	K14	both passes
+L07	19	K05	H	K05	K05	both passes
+L07	20	K22	H	K22	K22	both passes
+L07	21	K39	H	K39	K39	both passes
+L07	22	K33	H	K33	K33	both passes
+L07	23	K09	H	K09	K09	both passes
+L07	24	K14	H	K14	K14	both passes
+L07	25	K34	H	K34	K34	both passes
+L07	26	K41	H	K41	K41	both passes
+L07	27	K38	M	K63	K63	eye: C-curl Z = K38 (both K63)
+L07	28	K09	H	K09	K09	both passes
+L07	29	K37	H	K37	K37	both passes
+L07	30	K06	H	K06	K06	both passes
+L07	31	K41	H	K41	K41	both passes
+L07	32	K09	M	-	K09	eye: theta (A K21, B K09)
+L07	33	K38	M	-	K63	eye: C-curl Z = K38 (A none, B K63)
+L08	1	K05	H	K05	K05	both passes
+L08	2	K41	H	K41	K41	both passes
+L08	3	K16	H	K16	K16	both passes
+L08	4	K62	H	K62	K62	both passes
+L08	5	K41	M	K41	K41	eye: A K08 not on the crop (B omits)
+L08	6	K14	H	K14	K14	both passes
+L08	7	K05	H	K05	K05	both passes
+L08	8	?double_slash	H	?double_slash	?double_slash	both passes
+L08	9	K33	H	K33	K33	both passes
+L08	10	K04	H	K04	K04	both passes
+L08	11	K12	H	K12	K12	both passes
+L08	12	K26	H	K26	K26	both passes
+L08	13	K33	H	K33	K33	both passes
+L08	14	K36	H	K36	K36	both passes
+L08	15	K22	H	K22	K22	both passes
+L08	16	K09	H	K09	K09	both passes
+L08	17	K14	H	K14	K14	both passes
+L08	18	K33	H	K33	K33	both passes
+L08	19	K04	H	K04	K04	both passes
+L08	20	K24	H	K24	K24	both passes
+L08	21	W:uing	H	W:uing	W:uing	both passes
+L08	22	K14	H	K14	K14	both passes
+L08	23	K34	H	K34	K34	both passes
+L08	24	K06	H	K06	K06	both passes
+L08	25	K22	H	K22	K22	both passes
+L08	26	K39	H	K39	K39	both passes
+L08	27	K38	M	K19	K19	eye: C-curl Z = K38 (both K19)
+L08	28	K09	H	K09	K09	both passes
+L08	29	K10	H	K10	K10	both passes
+L08	30	K15	H	K15	K15	both passes
+L08	31	K39	H	K39	K39	both passes
+L08	32	K05	H	K05	K05	both passes
+L09	1	K29	H	K29	K29	both passes
+L09	2	K05	H	K05	K05	both passes
+L09	3	K40	M	K43	K40	eye: box sign closer to K40 (A K43, B K40)
+L09	4	K06	H	K06	K06	both passes
+L09	5	K05	H	K05	K05	both passes
+L09	6	K67	H	K67	K67	both passes
+L09	7	K05	H	K05	K05	both passes
+L09	8	K15	M	K15	K15	eye: B inserted K37; crop has r then c
+L09	9	K39	H	K39	K39	both passes
+L09	10	K26	H	K26	K26	both passes
+L09	11	?h_bar	M	?h_bar	K35	eye: h with looped ascender, no clear bar; A ?h_bar, B K35
+L09	12	K05	M	K05	K37	eye
+L09	13	K11	M	K11	K11	eye: one sign double-cross with p loop (A K11 K29, B K11)
+L09	14	K33	H	K33	K33	both passes
+L09	15	K34	H	K34	K34	both passes
+L09	16	K05	M	K05	K37	eye: r (A K05, B K37)
+L09	17	K04	H	K04	K04	both passes
+L09	18	K32	H	K32	K32	both passes
+L09	19	K33	H	K33	K33	both passes
+L09	20	K39	H	K39	K39	both passes
+L09	21	K14	H	K14	K14	both passes
+L09	22	K41	H	K41	K41	both passes
+L09	23	K01	H	K01	K01	both passes
+L09	24	K19	M	K19	K63	eye: flat-top z with tail K19 (A K19, B K63)
+L09	25	K38	M	K19	K63	eye: C-curl Z = K38 (A K19, B K63)
+L09	26	K41	H	K41	K41	both passes
+L09	27	K04	H	K04	K04	both passes
+L09	28	K38	M	K63	K63	eye: C-curl Z = K38 (both K63)
+L09	29	K25	H	K25	K25	both passes
+L09	30	K33	H	K33	K33	both passes
+L09	31	K14	H	K14	K14	both passes
+L09	32	K26	H	K26	K26	both passes
+L09	33	K04	M	K12	K04	eye: q with straight blunt stem K04 (A K12, B K04); B inserted K05
+L09	34	K05	M	K05	K37	eye: r (A K05, B K37)
+L10	1	K11	H	K11	K11	both passes
+L10	2	K34	H	K34	K34	both passes
+L10	3	K26	H	K26	K26	both passes
+L10	4	?double_slash	H	?double_slash	?double_slash	both passes
+L10	5	K08	H	K08	K08	both passes
+L10	6	K05	H	K05	K05	both passes
+L10	7	K11	H	K11	K11	both passes
+L10	8	K05	H	K05	K05	both passes
+L10	9	K04	H	K04	K04	both passes
+L10	10	K38	M	K19	K38	eye: C-curl Z = K38 (A K19, B K38)
+L10	11	K15	H	K15	K15	both passes
+L10	12	K19	H	K19	K19	both passes
+L10	13	K41	H	K41	K41	both passes
+L10	14	K06	H	K06	K06	both passes
+L10	15	K22	M	K01	K22	eye: g with foot sweeping left = K22 form (A K01, B K22)
+L10	16	K09	H	K09	K09	both passes
+L10	17	K38	H	K38	K38	both passes
+L10	18	?double_slash	H	?double_slash	?double_slash	both passes
+L10	19	K05	H	K05	K05	both passes
+L10	20	K10	M	K11	K11	eye: plain double cross, no loop = K10 (both K11; eye override)
+L10	21	K39	M	K39	K19	eye: y with z tail; K39 vs K19 unsettled (A K39, B K19)
+L10	22	K34	H	K34	K34	both passes
+L10	23	K15	H	K15	K15	both passes
+L10	24	K19	H	K19	K19	both passes
+L10	25	K09	H	K09	K09	both passes
+L10	26	K26	H	K26	K26	both passes
+L10	27	K34	H	K34	K34	both passes
+L10	28	K38	H	K38	K38	both passes
+L10	29	K04	M	K01	K04	eye: (A K01, B K04)
+L10	30	K04	H	K04	K04	both passes
+L10	31	K19	H	K19	K19	both passes
+L10	32	K05	H	K05	K05	both passes
+L10	33	K04	H	K04	K04	both passes
+L10	34	K19	H	K19	K19	both passes
+L10	35	K41	H	K41	K41	both passes

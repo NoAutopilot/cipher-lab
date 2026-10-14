@@ -1,6 +1,11 @@
-# c268 (f.138) first 5 cipher lines, Tomokiyo Monluc Cipher 1 table, pass A base, 10 C-curl tokens relabelled K38 (MONLUC-RELABEL), 8 K12->K04 and 4 K34->K53 (MONL-SORT); _ = unkeyed sign; W: words dropped. Not graded: see NOTES.md.
+# c268 (f.138) cipher lines 1-10 (L06-L10 MONL-C268B), Tomokiyo Monluc Cipher 1 table, pass A base, 10 C-curl tokens relabelled K38 (MONLUC-RELABEL), 4 K12->K04 (MONL-SORT less 4 MONL-EYE reverts) and 4 K34->K53 (MONL-SORT); _ = unkeyed sign; W: words dropped. Not graded: see NOTES.md.
 L01	lesperuiteursdequiniespargnentlhon
 L02	eurlara_elareputationnila_onp_ien_edu
 L03	poilonfaitparlerleroidedalnelar_quin
 L04	upenpninlaisetdoneataenteadrequilest
 L05	eeoiilatirentdelaynex_lupionqqil
+L06	estudposiblequelodpeigdeurs_eutuedir
+L07	pnrdeuaaqeopiepanpeauoippatisfait
+L08	earlape_odneoraipodcppfautilque
+L09	ieyfeseque_emopednoupaautadtdopede
+L10	mpe_hemedtquafait_elupquieptdduedua

@@ -176,3 +176,173 @@ L05	29	K15	H	q	q	confirm	0
 L05	30	K15	M	q	u	contradict	0
 L05	31	K29	H	i	i	confirm	0
 L05	32	K10	H	l	l	confirm	0
+L06	1	K26	H	e	e	confirm	0
+L06	2	K37	H	s	s	confirm	0
+L06	3	K38	M	t	t	confirm	0
+L06	4	K19	H	u	i	contradict	0
+L06	5	K04	H	d	m	contradict	0
+L06	6	K34	H	p	p	confirm	0
+L06	7	K33	H	o	o	confirm	0
+L06	8	K67	H	s	s	confirm	0
+L06	9	K09	H	i	i	confirm	0
+L06	10	K02	H	b	b	confirm	0
+L06	11	K10	H	l	l	confirm	0
+L06	12	K05	H	e	e	confirm	0
+L06	13	K15	H	q	q	confirm	0
+L06	14	K39	H	u	u	confirm	0
+L06	15	K05	H	e	e	confirm	0
+L06	16	K62	H	l	m	contradict	0
+L06	17	K33	H	o	o	confirm	0
+L06	18	K04	H	d	n	contradict	0
+L06	19	K14	H	p	s	contradict	0
+L06	20	K26	H	e	e	confirm	0
+L06	21	K09	H	i	i	confirm	0
+L06	22	K07	H	g	g	confirm	0
+L06	23	K04	H	d	n	contradict	0
+L06	24	K05	H	e	e	confirm	0
+L06	25	K39	H	u	u	confirm	0
+L06	26	K36	M	r	r	confirm	0
+L06	27	K37	H	s	s	confirm	0
+L06	28	?double_slash	H		c	fill	0
+L06	29	K26	H	e	e	confirm	0
+L06	30	K19	H	u	u	confirm	0
+L06	31	K38	M	t	t	confirm	0
+L06	32	K39	H	u	u	confirm	0
+L06	33	K05	H	e	e	confirm	0
+L06	34	K04	H	d	n	contradict	0
+L06	35	K09	H	i	i	confirm	0
+L06	36	K36	M	r	r	confirm	0
+L07	1	K34	H	p	p	confirm	0
+L07	2	K12	M	n	a	contradict	0
+L07	3	K36	M	r	r	confirm	0
+L07	4	K04	H	d	d	confirm	0
+L07	5	K05	H	e	e	confirm	0
+L07	6	K19	H	u	c	contradict	0
+L07	7	K41	H	a	a	confirm	0
+L07	8	K22	H	a	a	confirm	0
+L07	9	K15	H	q	q	confirm	0
+L07	10	K42	H	e	u	contradict	0
+L07	11	K33	H	o	o	confirm	0
+L07	12	K34	H	p	i	contradict	0
+L07	13	K29	H	i	i	confirm	0
+L07	14	K05	H	e	e	confirm	0
+L07	15	K34	H	p	p	confirm	0
+L07	16	K41	H	a	e	contradict	0
+L07	17	K12	M	n	n	confirm	0
+L07	18	K14	H	p	s	contradict	0
+L07	19	K05	H	e	e	confirm	0
+L07	20	K22	H	a	a	confirm	0
+L07	21	K39	H	u	u	confirm	0
+L07	22	K33	H	o	o	confirm	0
+L07	23	K09	H	i	i	confirm	0
+L07	24	K14	H	p	r	contradict	0
+L07	25	K34	H	p	s	contradict	0
+L07	26	K41	H	a	a	confirm	0
+L07	27	K38	M	t	t	confirm	0
+L07	28	K09	H	i	i	confirm	0
+L07	29	K37	H	s	s	confirm	0
+L07	30	K06	H	f	f	confirm	0
+L07	31	K41	H	a	a	confirm	0
+L07	32	K09	M	i	i	confirm	0
+L07	33	K38	M	t	t	confirm	0
+L08	1	K05	H	e	p	contradict	0
+L08	2	K41	H	a	a	confirm	0
+L08	3	K16	H	r	r	confirm	0
+L08	4	K62	H	l	m	contradict	0
+L08	5	K41	M	a	a	confirm	0
+L08	6	K14	H	p	s	contradict	0
+L08	7	K05	H	e	e	confirm	0
+L08	8	?double_slash	H		c	fill	0
+L08	9	K33	H	o	o	confirm	0
+L08	10	K04	H	d	n	contradict	0
+L08	11	K12	H	n	d	contradict	0
+L08	12	K26	H	e	e	confirm	0
+L08	13	K33	H	o	o	confirm	0
+L08	14	K36	H	r	r	confirm	0
+L08	15	K22	H	a	a	confirm	0
+L08	16	K09	H	i	i	confirm	0
+L08	17	K14	H	p	s	contradict	0
+L08	18	K33	H	o	o	confirm	0
+L08	19	K04	H	d	n	contradict	0
+L08	20	K24	H	c	m	contradict	0
+L08	21	W:uing	H		ais	fill	0
+L08	22	K14	H	p	s	contradict	0
+L08	23	K34	H	p	i	contradict	0
+L08	24	K06	H	f	f	confirm	0
+L08	25	K22	H	a	a	confirm	0
+L08	26	K39	H	u	u	confirm	0
+L08	27	K38	M	t	t	confirm	0
+L08	28	K09	H	i	i	confirm	0
+L08	29	K10	H	l	l	confirm	0
+L08	30	K15	H	q	q	confirm	0
+L08	31	K39	H	u	u	confirm	0
+L08	32	K05	H	e	e	confirm	0
+L09	1	K29	H	i	i	confirm	0
+L09	2	K05	H	e	e	confirm	0
+L09	3	K40	M	i	n	contradict	0
+L09	4	K06	H	f	f	confirm	0
+L09	5	K05	H	e	e	confirm	0
+L09	6	K67	H	s	s	confirm	0
+L09	7	K05	H	e	e	confirm	0
+L09	8	K15	M	q	q	confirm	0
+L09	9	K39	H	u	u	confirm	0
+L09	10	K26	H	e		extra	0
+L09	11	?h_bar	M			fill-empty	0
+L09	12	K05	M	e	e	confirm	0
+L09	13	K11	M	m		extra	0
+L09	14	K33	H	o		extra	0
+L09	15	K34	H	p	d	contradict	0
+L09	16	K05	M	e	e	confirm	0
+L09	17	K04	H	d		extra	0
+L09	18	K32	H	n	n	confirm	0
+L09	19	K33	H	o	o	confirm	0
+L09	20	K39	H	u	u	confirm	0
+L09	21	K14	H	p	s	contradict	0
+L09	22	K41	H	a	a	confirm	0
+L09	23	K01	H	a	a	confirm	0
+L09	24	K19	M	u	u	confirm	0
+L09	25	K38	M	t	t	confirm	0
+L09	26	K41	H	a	a	confirm	0
+L09	27	K04	H	d	n	contradict	0
+L09	28	K38	M	t	t	confirm	0
+L09	29	K25	H	d	d	confirm	0
+L09	30	K33	H	o	o	confirm	0
+L09	31	K14	H	p		extra	0
+L09	32	K26	H	e		extra	0
+L09	33	K04	M	d		extra	0
+L09	34	K05	M	e		extra	0
+L10	1	K11	H	m		extra	0
+L10	2	K34	H	p		extra	0
+L10	3	K26	H	e		extra	0
+L10	4	?double_slash	H			fill-empty	0
+L10	5	K08	H	h		extra	0
+L10	6	K05	H	e	n	contradict	0
+L10	7	K11	H	m	n	contradict	0
+L10	8	K05	H	e	e	confirm	0
+L10	9	K04	H	d		extra	0
+L10	10	K38	M	t		extra	0
+L10	11	K15	H	q	q	confirm	0
+L10	12	K19	H	u	u	confirm	0
+L10	13	K41	H	a	a	confirm	0
+L10	14	K06	H	f	f	confirm	0
+L10	15	K22	M	a	a	confirm	0
+L10	16	K09	H	i	i	confirm	0
+L10	17	K38	H	t		extra	0
+L10	18	?double_slash	H			fill-empty	0
+L10	19	K05	H	e		extra	0
+L10	20	K10	M	l		extra	0
+L10	21	K39	M	u	c	contradict	0
+L10	22	K34	H	p	t	contradict	0
+L10	23	K15	H	q	q	confirm	0
+L10	24	K19	H	u	u	confirm	0
+L10	25	K09	H	i	i	confirm	0
+L10	26	K26	H	e	e	confirm	0
+L10	27	K34	H	p	s	contradict	0
+L10	28	K38	H	t	t	confirm	0
+L10	29	K04	M	d	a	contradict	0
+L10	30	K04	H	d	d	confirm	0
+L10	31	K19	H	u	u	confirm	0
+L10	32	K05	H	e	e	confirm	0
+L10	33	K04	H	d	n	contradict	0
+L10	34	K19	H	u	u	confirm	0
+L10	35	K41	H	a	a	confirm	0

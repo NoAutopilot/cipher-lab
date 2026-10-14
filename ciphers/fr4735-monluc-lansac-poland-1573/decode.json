@@ -77,7 +77,7 @@
    "disagree_grade": "M",
    "unvoted_grade": "M",
    "header": [
-    "# c268 (f.138) cipher lines 1-5 (pass A base, K38 relabel), decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py (MONL-ALIGN, 14 Oct 2026).",
+    "# c268 (f.138) cipher lines 1-10 (L01-L05 pass A base, K38 relabel; L06-L10 MONL-C268B reconciled passes), decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py (MONL-ALIGN, 14 Oct 2026).",
     "# Grades: C = table letter equals the clear letter of ff.140r-141r (clear_f140.tsv) it faces in align_c268.py; fills of unkeyed signs from exceptions_c268.tsv; M otherwise (conf M token, contradiction, or facing an unsure clear word). {grades_sorted}"
    ],
    "token_columns": [

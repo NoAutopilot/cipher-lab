@@ -1017,3 +1017,72 @@ Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines
 - [x] image-check: the 4 doubtful K04 relabels re-cut at native resolution and compared with the key-sheet cells (MONL-EYE, non-blind)
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 5 internal gaps; cheapest next: value-blind K12|K22 sort of L04:6/L04:8 and the c268 K22 tokens, ~$1; then the next c268 band against f.140r L10 on
+
+## MONL-C268B: c268 L06-L10 transcribed (two blind passes + reconciliation) and aligned with L01-L05 against ff.140r-141r (14 Oct 2026, account 4, Opus, for LANE DEFAULT-A4-2135-14)
+
+Brief: .claude/briefs/runs/2026-10-14-acct4-default-2135-jobs.md, MONL-C268B (Wave 3). Read MONL-ALIGN, MONL-SORT, MONL-EYE first. No print
+or edition search in this job.
+
+**Route and crops (pasted).** openapi.bnf.fr IIIF v3, `btv1b9060724s` c268: 4 requests, all HTTP 200 (overview 1000 px; two native
+regions discarded because they cut L06 at the top and L10 at the bottom; the kept region `600,2060,3100,660`). Crop step, before any subagent
+call: `python3 ../../tools/iiif_lines.py --image images/scratch268b/src_c268_600_2060_3100_660.jpg --out images/scratch268b/crops --prefix c268b --deskew-region --mask-neighbours --debug --max-width 1700 --overlap 150`
+-> "rotated -3.25 deg ... 6 lines, 6 bands x 2 segments; pitch 105"; debug overlay checked: bands 1-5 = c268 L06-L10 (band 6 = top of L11,
+unused). Untracked (images/scratch268b/, self-ignoring .gitignore); manifest key `monlc268b`; `regen_monlc268b.sh` re-derives region and crops.
+The overview shows f.138 opens with 6 clear lines ("Madame, Nous sommes venuz ...") before the cipher; c268 L01 is the "... mihil Cur ..." line.
+
+**Transcription (units: 10 blind Sonnet calls, one line per call per pass, + 1 reconciliation by this worker).** Prompt passes/c268b_prompt.md
+(ids-only key sheet images/keysheet_monluc1_ids.png, two overlapping segments, no value, reading or clear text shown); answers
+passes/c268b_passA_raw.txt / _passB_raw.txt, token files passes/c268b_passA.tsv / passB.tsv. Pass agreement (sequence match): **151/178 = 0.848**
+(L06 33/40, L07 29/34, L08 32/33, L09 26/36, L10 31/35); MONLUC-KEY's L01-L05 pair agreed 0.73. Agreement, not accuracy.
+**Reconciliation** (passes/c268b_reconciled.tsv, `how` column per token), done from the crops **before** I opened the f.140r L10-L14 clear text
+(blind to the clear text; not blind to the key sheet ids or to the folder's earlier sign conventions): 170 signs, **142 conf H** (both passes
+agree and the crop holds it), **28 conf M** (one pass, or an eye decision). The eye decisions apply the folder's own conventions: C-curl Z
+forms written K38 as MONLUC-RELABEL did (10 tokens: L06:3, 31; L07:27, 33; L08:27; L09:25, 28; L10:10, 17, 28; three of these both passes
+filed K63/K19); stem with diamond foot = K36 (L06:26, L06:36, and L07:3 against both passes' K14); K04 straight blunt stem vs K12 curving
+descender (MONL-EYE's rule) at L07:2 and L09:33; L10:20 plain double cross K10 against both passes' K11; dropped insertions not on the crop
+(A's K08 in L08; B's K37s and a K05 in L09; B's K19 in L07). L09:11 (h with looped ascender) stays ?h_bar at M; L10:21 K39 vs K19 unsettled (M).
+
+**Decode and alignment (rule 7; `score_c268.py` now appends the reconciled L06-L10 rows to ciphertext_c268.tsv; `align_c268.py` unchanged in
+method, i/y fold default, plus a print-only `--lines` option for a sub-stream).** L06 decodes "estudposiblequelodpeigdeurs_eutuedir", i.e. the
+clear "est impossible que monseigneur sceust venir" with the K04-for-n slips below. Confirm share of keyed tokens, shuffled-clear control 200
+draws seed 140, f.139 (c270) other-letter control:
+| stream | keyed | confirm | share | contradict | extra | shuffled mean | p95 | max | >= real | f.139 | clear span |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| L01-L05 alone (`--lines`) | 169 | 144 | 0.852 | 20 | 5 | 0.414 | 0.450 | 0.485 | 0/200 | 0.414 | f.140r L07-L10 |
+| **L06-L10 alone** (`--lines`) | 164 | 111 | **0.677** | 36 | 17 | 0.378 | 0.415 | 0.421 | 0/200 | 0.329 | f.140r L10-L13 |
+| **L01-L10** (committed run) | 333 | 255 | **0.766** | 56 | 22 | 0.377 | 0.399 | 0.423 | 0/200 | 0.348 | f.140r L07-L13 |
+Inside the L01-L10 run, L06-L10 tokens: 111 confirm / 36 contradict / 17 extra of 164 keyed (93 of the confirms are conf H tokens). The band
+lands where MONL-ALIGN predicted: from f.140r L10 ("... venir") through L11-L13 ("pardeca A quoy Je pense auoir satisfaict par ma seconde
+oraison Mais si fault il que Je confesse ... qua faict ... qui est aduenu a Paris"). Those clear lines are MONL-ALIGN's rough A/B pick, not an
+eye reading, which is part of why L06-L10 confirm less than L01-L05 (the extras cluster in L12-L13's [?] words).
+**Recurring contradictions (leads for a value-blind sort, not key edits):** K04 (table d) faces n 7 times (L06:18, 23, 34; L08:19; L09:27;
+L10:33; and L08:10) -- the reverse of MONL-SORT's K12->K04 split, i.e. the readers file some K12 (n) as K04; K14 (table p) faces s 6 times
+(L06:19; L07:18; L08:6, 17, 22; L09:21) -- MONL-K12's non-blind "hooked K17 form" lead, which MONL-SORT's sort did not support on L01-L05,
+now recurs on a second band; K34 (table p) faces i/s/d/t 6 times (L07:12, 25; L08:23; L09:15; L10:22, 27) -- MONL-SORT's K34|K53 split again.
+**Grades (decode_key.py, job c268):** c268 L01-L10, 347 tokens: **C 184 / M 157 / U 6** (L01-L05 unchanged C 93 / M 84; L06-L10 C 91 / M 73 /
+U 6: the U are 5 ?double_slash and 1 ?h_bar with no FILLS entry -- the alignment's chunks for them are in align_c268.tsv, not graded).
+`python3 ../../tools/decode_key.py . --check` "reading up to date" (exit 0); `python3 align_c268.py --check` "align_c268: OK" (exit 0);
+`python3 score_c268.py --check` "OK c268 outputs current" (exit 0). Judge (score_c268.py, fr16): FAIL at N 333 (-1.422 vs real_p05 -0.887), shuffled decodes
+0/100 PASS, best -1.794: the judge remains a non-test for this key (MONLUC-KEY's positive control), the alignment is the evidence.
+key.tsv unchanged; c172 unchanged (C 83 / M 64 / U 3).
+Requests: openapi.bnf.fr 4, all 200. Subagents: 10 Sonnet (one line each). Cost not visible to this session.
+
+## Remaining gaps (MONL-C268B, 14 Oct 2026)
+Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines 1-10 (347 tokens) C 184 / M 157 / U 6 against the ff.140r-141r clear text (align confirm 255/333 = 0.766, L06-L10 alone 111/164 = 0.677, vs shuffled-clear max 0.423 / 0.421).
+- K04-for-n, K14-for-s and K34 contradictions on L06-L10 (19 tokens) - blocker: not-attempted; found in this job; next: a value-blind sort of the c268 L01-L10 K04|K12, K14|K17 and K34|K53 tokens (MONL-SORT's build_tiles.py and reconcile.py on the new band), then align_c268.py --check, ~$1.5
+- L04:6 and L04:8 (K12, face a; left-sweeping foot like K22 = a) - blocker: not-attempted; carried from MONL-EYE; next: fold into the same value-blind sort as a K12|K22 cell pair, ~$0 extra
+- rest of c268 (about 700 signs, L11 on) and c264 against the ff.140r-141r clear text - blocker: not-attempted; outside this job's brief; next: two blind cipher passes of c268 L11-L15 plus reconciliation (regen_monlc268b.sh region moved down 500 px), then align_c268.py, ~$3 per 5 lines
+- a clean clear text of ff.140r-141r away from L06-L10 - blocker: not-attempted; f.140r L11-L13 (facing c268 L06-L10) are rough A/B picks with [?] words, which caps the L06-L10 confirm share; next: an eye reconciliation of f.140r L11-L16 and L01-L07 against the line crops, ~$1 per page
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py); the c268 alignment supplies known plaintext instead
+- print check of the clear letter in Google Books (13 of the 14 phrases.txt lines) and the editions by identifier (Noailles vols I-III, Lettres de Catherine de Medicis) - blocker: not-attempted; IA full text and OpenAlex done, no hits on all 14 (MONL-PC); Google Books 13 of 14 unsearched (503, MONL-PC, MONL-PC2); next: `tools/print_check.py ... --only gbooks` when googleapis answers, ~$1
+- ff.211-223, f.87 margin, ff.50/56/60/80, items 17/18/112-120 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONL-C268B, 14 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [x] clear-pages: ff.140r-141r transcribed and shown to be the clear text of c268 L01-L10 (MONL-ALIGN, MONL-C268B)
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell and checked against known plaintext on c268 L01-L10
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2; the clear letter phrase-searched in IA full text and OpenAlex, no hits (MONL-PC); Google Books for it pending (gap above)
+- [x] key-rebuild: --try rejects K12=d and K34=y (MONL-K12); blind sort relabels (MONL-SORT), 4 reverted on the image (MONL-EYE); i/y fold kept; L06-L10 recurring contradictions logged as sort leads (gap above)
+- [x] image-check: c268 L06-L10 native crops cut and reconciled by eye (MONL-C268B); the 4 doubtful K04 relabels re-cut (MONL-EYE)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 6 internal gaps; cheapest next: value-blind sort of the c268 L01-L10 K04|K12, K14|K17, K34|K53 (and L04:6/8 K12|K22) tokens, then align_c268.py --check, ~$1.5; then c268 L11-L15

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """MONL-ALIGN (14 Oct 2026): align the c268 (f.138) cipher lines 1-5 against the reconciled clear text of ff.140r-141r.
 
-Usage: python3 align_c268.py [--draws 200] [--seed 140] [--check] [--clear passes/align/f140r_passA.tsv] [--no-fold-iy]
+Usage: python3 align_c268.py [--draws 200] [--seed 140] [--check] [--clear passes/align/f140r_passA.tsv] [--no-fold-iy] [--lines L06,...,L10]
 
 Inputs: ciphertext_c268.tsv (pass A base, K38 relabel; the transcription as committed), key.tsv (Tomokiyo's published Monluc
 Cipher 1 table), clear_f140.tsv (MONL-ALIGN reconciled clear text of ff.140r-141r; a word in [..] is unsure, still used).
@@ -39,6 +39,7 @@ def fold(s):
     return s.replace('y', 'i') if FOLD_IY else s
 
 
+LINES = None  # MONL-C268B: --lines L06,L07,... restricts the token stream (sensitivity run, prints, writes nothing)
 FOLD_IY = True  # MONL-EYE (PREREG-MONL-IY.md): y -> i fold kept, all three registered conditions met; --no-fold-iy for the unfolded run
 
 
@@ -52,6 +53,8 @@ def load_tokens():
     for f in rows:
         sign = f[2]
         val = key.get(sign)
+        if LINES and f[0] not in LINES:
+            continue
         toks.append({'line': f[0], 'pos': int(f[1]), 'sign': sign, 'conf': f[3],
                      'value': fold(val) if val else None})
     return toks
@@ -196,8 +199,12 @@ def main():
     ap.add_argument('--clear', help='sensitivity run: another clear TSV (e.g. a single blind pass); prints, writes nothing')
     ap.add_argument('--no-fold-iy', action='store_true',
                     help='sensitivity run without the MONL-EYE y -> i fold (PREREG-MONL-IY.md); prints, writes nothing')
+    ap.add_argument('--lines', help='sensitivity run on these c268 lines only, e.g. L06,L07,L08,L09,L10 (MONL-C268B); prints, writes nothing')
     a = ap.parse_args()
-    global CLEAR, FOLD_IY
+    global CLEAR, FOLD_IY, LINES
+    if a.lines:
+        LINES = set(a.lines.split(','))
+        print(run(a.draws, a.seed)[1]); return
     if a.no_fold_iy:
         FOLD_IY = False
         print(run(a.draws, a.seed)[1]); return
