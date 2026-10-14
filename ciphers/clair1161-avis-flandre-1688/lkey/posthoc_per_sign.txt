@@ -1,0 +1,11 @@
+# POST-HOC (not in PREREG, no gate): single-sign swap ours->his, delta 4-gram score vs key.tsv baseline -1.2278
+# null per sign: same sign set to each of 20 random letters, p95 of delta
+/	n=19	->m	delta -0.0078	null p95 +0.0024	worse than ours
+8	n=31	d>c	delta +0.0033	null p95 +0.0031	better than ours
+L	n=7	n>s	delta +0.0008	null p95 +0.0012	better than ours
+c	n=4	s>f	delta +0.0006	null p95 +0.0002	better than ours
+phi	n=49	l>g	delta -0.0146	null p95 -0.0053	worse than ours
+rc	n=17	e>s	delta +0.0025	null p95 +0.0023	better than ours
+to	n=6	s>e	delta -0.0018	null p95 +0.0000	worse than ours
+tz	n=20	e>l	delta +0.0016	null p95 +0.0000	better than ours
+z	n=189	t>a	delta -0.0761	null p95 -0.0003	worse than ours

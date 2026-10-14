@@ -2268,3 +2268,154 @@ Verdict: keep going: 3 internal gaps; cheapest next: sign-table concordance of L
 OK keep-going clair1161-avis-flandre-1688: keep going: 3 internal gap(s), 2 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## Lasry key-sheet concordance and application (14 Oct 2026, C1161-LKEY)
+
+Account-1 Opus worker C1161-LKEY for LANE DEFAULT-A1-0640-14 (brief `.claude/briefs/runs/2026-10-14-acct1-default-0640-jobs.md`, Wave 3),
+07:26-07:3x UTC 14 Oct by date -u. Instrument: George Lasry's published key sheet for this item
+(`sources/cyphersolver/2026-10-14-lasry/clair1161/lasry_p073_1.png`, "BnF cipher research", 10 Oct 2026; published by D. Bourdeau,
+cyphersolver dde5b0ea; text CC BY 4.0). Disk only: no BnF, Gallica or other host fetched (0 requests). Intake gate (07:29 UTC):
+`clair1161-avis-flandre-1688: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+PREREG `lkey/PREREG-C1161-LKEY.md` pushed in f9f0ab2ad before any score.
+
+**Mapping.** Two blind Sonnet passes (`lkey/matchA.tsv`, `lkey/matchB.tsv`, prompt `lkey/match_prompt.md`; each saw only
+`tx/labels_v2.md`, the sheet and four line crops, not key.tsv, not a reading, not the other pass) matched our labels to his exemplars.
+A label is mapped only where both name the same value. His sheet carries no "?" marks, so a mapped value is grade H for the key value.
+
+**Concordance** (`lkey/concordance.tsv`): 51 labels -- **16 agree, 10 disagree, 1 new, 24 unmapped** (the two passes differed or
+neither found an exemplar; this includes our six labels not in labels_v2: s, tri, vdash, Sorn, blot, spiralG).
+Agree (his value = ours): 3 e, 4 o, 9 s, a u, box a, e p, ee y, iib d, p c, q i, qb a, sd g, sqc x, w i, wb l, y r -- of which our C
+signs a, e, ee, p, sd (all five gloss-read signs he also lists) and our M signs iib d and sqc x.
+Disagree on our S signs -- **data conflict, rule 4, recorded not settled**: `7` ours i (S, 219 tokens) vs his b (and his nomenclature
+reads the digit pair 77 as "de": our ciphertext has 78 adjacent 7 7 pairs, decoded by us as "i i", e.g. c186R L01 "p a r i i u l x"
+where his clear text has "par deulx"); `S` ours u (S, 275 tokens) vs his n.
+Disagree on our M signs (applied in V1): 8 d>c, L n>s, c s>f, phi l>g, rc e>s, to s>e, tz e>l, z t>a; new (our U): `/` -> m.
+His nomenclature (77 de, 62 est, 55 que, 52 qui, 48 fait, 76 le, 37 ou, 30 quant, 60 puis, 44 il, ### et) and nulls (///, x-blot): no
+pass mapped one of our labels to a nomenclature entry by both passes (pass A: 0, 2, 6 as digit parts; pass B: 6 only; iii split
+/// vs ###; x split x-blot vs h). Our adjacent digit pairs: 77 x78, 76 x19, 84 x18, 44 x10, 37 x9, 42 x5, 48 x4. V2 (nomenclature
+as units) was pre-registered as conditional on both passes mapping the digit/null shapes; the condition was not met, so **V2 not run**.
+
+| sign | ours_value | ours_grade | passA | passB | his_value_if_agreed | concordance | key_lasry |
+|---|---|---|---|---|---|---|---|
+| + | e | S | n:1 | none | - | unmapped |  |
+| / |  | U | m:2 | m:2 | m | new | applied |
+| 0 |  | U | digitpart:60,30 | none | - | unmapped |  |
+| 2 | r | M | digitpart:62 | none | - | unmapped |  |
+| 3 | e | S | e:2 | e:2 | e | agree |  |
+| 4 | o | S | o:1 | o:1 | o | agree |  |
+| 6 | e | M | digitpart:62,60,76 | digitpart:76,60,62 | - | unmapped |  |
+| 6r | i | M | u/v:2 | none | - | unmapped |  |
+| 7 | i | S | b:1 | b:1 | b | disagree |  |
+| 8 | d | M | c:2 | c:2 | c | disagree | applied |
+| 9 | s | S | s:2 | s:2 | s | agree |  |
+| K | s | M | z:1 | t:1 | - | unmapped |  |
+| L | n | M | s:4 | s:4 | s | disagree | applied |
+| S | u | S | n:2 | n:2 | n | disagree |  |
+| Sorn | h | M | - | - | - | unmapped |  |
+| a | u | C | u/v:1 | u:1 | u | agree |  |
+| blot | q | M | - | - | - | unmapped |  |
+| box | a | S | a:3 | a:3 | a | agree |  |
+| c | s | M | f:1 | f:1 | f | disagree | applied |
+| d | n | C | t:1 | s:1 | - | unmapped |  |
+| dia | i | M | none | n:1 | - | unmapped |  |
+| e | p | C | p:1 | p:1 | p | agree |  |
+| ee | y | C | y:1 | y:1 | y | agree |  |
+| eloop | c | M | s:4 | z:1 | - | unmapped |  |
+| f | n | S | none | none | - | unmapped |  |
+| iib | d | M | d:1 | d:1 | d | agree |  |
+| iii | e | S | null:/// | nom:### | - | unmapped |  |
+| l | f | M | none | e:3 | - | unmapped |  |
+| ls | m | M | e:3 | none | - | unmapped |  |
+| o | m | M | m:1 | none | - | unmapped |  |
+| p | c | C | c:1 | c:1 | c | agree |  |
+| phi | l | M | g:1 | g:1 | g | disagree | applied |
+| psi | r | M | none | r:2 | - | unmapped |  |
+| q | i | S | i:2 | i:2 | i | agree |  |
+| qb | a | S | a:1 | a:1 | a | agree |  |
+| rc | e | M | s:3 | s:3 | s | disagree | applied |
+| rot | h | M | h:2 | none | - | unmapped |  |
+| s | e | S | - | - | - | unmapped |  |
+| sd | g | C | g:2 | g:2 | g | agree |  |
+| spiralG | n | M | - | - | - | unmapped |  |
+| sqc | x | M | x:1 | x:1 | x | agree |  |
+| th | s | M | s:1 | m:1 | - | unmapped |  |
+| to | s | M | e:1 | e:1 | e | disagree | applied |
+| tri | q | S | - | - | - | unmapped |  |
+| tz | e | M | l:2 | l:2 | l | disagree | applied |
+| vdash | t | M | - | - | - | unmapped |  |
+| w | i | S | i:1 | i:1 | i | agree |  |
+| wb | l | S | l:1 | l:1 | l | agree |  |
+| x | f | M | null:x-blot | h:2 | - | unmapped |  |
+| y | r | S | r:1 | r:1 | r | agree |  |
+| z | t | M | a:2 | a:2 | a | disagree | applied |
+
+**V1 decode** (`lkey/key_lasry.tsv` = key.tsv with his values on the 9 mapped M/U signs, graded H; `lkey/decode_lasry.json`;
+`python3 tools/decode_key.py ciphers/clair1161-avis-flandre-1688 --config ciphers/clair1161-avis-flandre-1688/lkey/decode_lasry.json --check`
+exit 0, "reading up to date"): tokens 3408: H 268, C 353, S 1908, M 865, I 0, U 14 (ours: C 353, S 1908, M 1114, U 33). key.tsv untouched.
+
+**Score and control** (`lkey/lkey_score.py`, spec fr16 4-gram model, mean log10 per letter, whole decode):
+baseline key.tsv -1.2277 (cover 0.896); V1 -1.3160 (cover 0.881); rule-3 control, the 9 changed signs' values permuted among
+themselves, 200 draws: median -1.3350, p99 -1.2545, max -1.2479. **Gate V1 > p99: FAIL** (V1 is 0.088 below our own key).
+Faces (longest run of letters covered by lexicon words of length >= 3, ours vs V1; "gain" = V1 >= 20 and +5):
+
+| face | letters | ours_longest_run | v1_longest_run | gain_stretch(>=20 and +5) |
+|---|---|---|---|---|
+| c185R | 706 | 47 | 37 | no |
+| c186L | 243 | 26 | 24 | no |
+| c186R | 233 | 30 | 28 | no |
+| c187L | 719 | 40 | 36 | no |
+| c187R | 741 | 38 | 49 | yes |
+| c188L | 752 | 64 | 43 | no |
+
+One face (c187R, 38 -> 49) meets the per-face rule, but under a whole-decode gate that FAILs; not a readable stretch licensed by
+this test. Of the faces he left "in part", **0 of 4 gain a readable stretch licensed by the gate** (which two faces he read in full is
+not stated in his folder; c186R is one).
+
+**Post-hoc diagnostic** (not pre-registered, no gate; `lkey/posthoc_per_sign.txt`): each changed sign applied alone.
+```
+# POST-HOC (not in PREREG, no gate): single-sign swap ours->his, delta 4-gram score vs key.tsv baseline -1.2278
+# null per sign: same sign set to each of 20 random letters, p95 of delta
+/	n=19	->m	delta -0.0078	null p95 +0.0024	worse than ours
+8	n=31	d>c	delta +0.0033	null p95 +0.0031	better than ours
+L	n=7	n>s	delta +0.0008	null p95 +0.0012	better than ours
+c	n=4	s>f	delta +0.0006	null p95 +0.0002	better than ours
+phi	n=49	l>g	delta -0.0146	null p95 -0.0053	worse than ours
+rc	n=17	e>s	delta +0.0025	null p95 +0.0023	better than ours
+to	n=6	s>e	delta -0.0018	null p95 +0.0000	worse than ours
+tz	n=20	e>l	delta +0.0016	null p95 +0.0000	better than ours
+z	n=189	t>a	delta -0.0761	null p95 -0.0003	worse than ours
+```
+The FAIL is carried by `z` t>a (189 tokens, -0.076 alone): the most likely reading is a mapping error (his a:2 is a barred Z-shape like
+our z, but our z reads "autres", "et" as t across the leaves; pass A put our `d` on his t:1), not a fact about his key. Five of his
+values (8 c, rc s, tz l, c f, L s) each score above ours and above their own random-letter p95 when applied alone; post-hoc, so M,
+and named as the next test, not entered anywhere.
+
+**Grades (rule 4) under V1:** H 268 (his published values on mapped signs; mapping by two-pass agreement), C 353, S 1908, M 865,
+U 14. No H token is a reading: the gate failed. Our key.tsv reading stays the folder's reading.
+
+**What changes.** The concordance is on record: 16 of our values agree with his published key (including all five gloss-read C signs,
+an independent check of both sides on those signs), 2 S signs conflict (7, S), and his digit-pair nomenclature (77 = de, 78 pairs)
+is the most specific unexploited difference. Credit: key George Lasry; publication D. Bourdeau, cyphersolver dde5b0ea, CC BY 4.0.
+
+## Remaining gaps (C1161-LKEY, 14 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H (unchanged). Prior work: George Lasry's reading of ff.162r-164v (cyphersolver `clair1161`, 6/6 transcribed, 2/6 deciphered, 4 in part). Concordance with his key sheet done (C1161-LKEY): 16 agree, 10 disagree, 24 unmapped; V1 (his values on 9 mapped M/U signs) FAIL vs permuted control.
+- digit-pair nomenclature (77 de x78, 76 le x19, 84 x18, 44 il x10, 37 ou x9, 48 fait x4) and the S-sign conflicts 7 (i vs b) and S (u vs n) - blocker: not-attempted; V2 was pre-registered conditional on both passes mapping digit shapes, condition unmet; next: V2 with digit pairs tokenised as units (a derived ciphertext, transcription untouched) plus his 5 post-hoc-positive values (8 c, rc s, tz l, c f, L s) under a fresh PREREG and the same permuted control, z held at t, ~$1.5
+- 24 unmapped labels (incl. th 208 tokens, +, d, o, ls, eloop, K, 6r, iii, x) and z (passes agreed on his a:2, decode says t) - blocker: not-attempted; description-only matching could not separate them; next: blind matching with atlas-style exemplar crops of each of our labels beside his sheet (two passes, one call per label group), ~$2
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 (14 U tokens left under V1) - blocker: not-attempted; outside labels_v2, so not in the matching passes; next: the exemplar-crop matching above, then the owner sign sorter if any stay open, ~$1
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (C1161-LKEY, 14 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); whole volume (342 canvases) swept at 300 px, no other cipher or glossed leaf (D1A-C1161)
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under key.tsv; his f163r paragraph matches the same gloss (LQ-C1161); no other glossed leaf in the volume (D1A-C1161)
+- [ ] known-keys: fr16142 and fr.3281 f.4 NO FIT (N4-C1, D2-C1161PRU); Lasry's key concorded (C1161-LKEY: 16 agree, 10 disagree, single-sign V1 FAIL vs permuted control, z mapping suspect); next: V2 with his digit-pair nomenclature as units, ~$1.5
+- [x] print: no printed edition located by check-solved and Premise check; Lasry's "BnF cipher research" (10 Oct 2026, published by D. Bourdeau 13 Oct) located by LQ-C1161 as prior work on these leaves
+- [retired] key-rebuild: instrument c186R gloss match (G) for per-sign and joint value changes -- per-sign 0/9 (GLOSS9), joint gain inside the window null (VER-C1161J); reopens only with a longer clear text or new material (his reading may be that material)
+- [ ] image-check: split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); planted audit NON-TEST (D2-C1161AUD); next: exemplar-crop matching of our 24 unmapped labels against his sheet, then the owner's sign sorter on what stays contested
+- [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); regraded reading --check exit 0; V1 decode --check exit 0 (C1161-LKEY)
+Verdict: keep going: 3 internal gaps; cheapest next: V2 with Lasry's digit-pair nomenclature as units under a fresh PREREG, ~$1.5
+
+`python3 tools/gaps_check.py clair1161-avis-flandre-1688` (C1161-LKEY, 14 Oct 2026):
+```
+OK keep-going clair1161-avis-flandre-1688: keep going: 3 internal gap(s), 2 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```

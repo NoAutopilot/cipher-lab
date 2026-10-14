@@ -1,0 +1,7 @@
+face	letters	ours_longest_run	v1_longest_run	gain_stretch(>=20 and +5)
+c185R	706	47	37	no
+c186L	243	26	24	no
+c186R	233	30	28	no
+c187L	719	40	36	no
+c187R	741	38	49	yes
+c188L	752	64	43	no

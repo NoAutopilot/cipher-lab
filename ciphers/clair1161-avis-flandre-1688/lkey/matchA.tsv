@@ -1,0 +1,46 @@
+label	sheet	confidence	note
+q	i:2	med	long straight descender, no bar
+qb	a:1	high	q with crossed descender
+9	s:2	med	bowl, short tail
+e	p:1	med	epsilon with dot
+ee	y:1	high	looped Latin e
+c	f:1	med	small raised hook
+th	s:1	med	oval crossed by bar
++	n:1	med	plain cross (sheet one has extra low bar)
+dia	none	low	o:1 is a thick cross with blob, possibly dia or 4
+to	e:1	med	cross followed by raised dot/o
+p	c:1	med	stem with bowl upper right; r:2 alternative
+phi	g:1	med	small circle with vertical stroke
+psi	none	low	no trident on sheet
+w	i:1	high	small w
+wb	l:1	high	w with bar above
+y	r:1	med	cursive y shape
+S	n:2	med	hooked S
+ls	e:3	low	tall stem with curled top
+sd	g:2	low	small dotted stroke
+z	a:2	high	z with bar
+iii	null:///	high	three strokes
+iib	d:1	high	#
+tz	l:2	low	t over S/3 composite
+K	z:1	low	ornate curl form
+rot	h:2	low	ornate fused hook-loop
+L	s:4	low	large looped form; same exemplar as eloop
+eloop	s:4	low	large looped with underline
+rc	s:3	high	Rc flourish
+box	a:3	high	small closed square
+sqc	x:1	high	open-right square
+6r	u/v:2	low	6-like with hook
+d	t:1	low	bar-crossed raised form
+a	u/v:1	low	filled triangular blob, doubtful
+o	m:1	low	oval with dot
+x	null:x-blot	med	x blot
+l	none	low	
+f	none	low	
+0	digitpart:60,30	med	only in pairs
+2	digitpart:62	med	only in pair
+3	e:2	high	ʒ form
+4	o:1	low	also digitpart:44,48
+6	digitpart:62,60,76	med	only in pairs
+7	b:1	high	also digitpart:77,76
+8	c:2	high	also digitpart:48
+/	m:2	high	light slash

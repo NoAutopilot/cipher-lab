@@ -1,0 +1,46 @@
+label	sheet	confidence	note
+q	i:2	low	bowl with long stem, uncrossed
+qb	a:1	med	q with crossed descender
+9	s:2	med	small 9 short tail
+e	p:1	med	epsilon with dot
+ee	y:1	high	looped e
+c	f:1	med	hooked c
+th	m:1	low	oval with bar/dot
++	none	low	plain cross not clearly shown; n:1/o:1 have extras
+dia	n:1	low	cross with blob
+to	e:1	med	cross plus raised dot/o
+p	c:1	med	stem with bowl upper right
+phi	g:1	high	circle with stroke
+psi	r:2	low	stem with fork top
+w	i:1	med	small w
+wb	l:1	high	w with bar
+y	r:1	med	cursive y
+S	n:2	low	hooked S
+ls	none	low	no tall long-s clearly
+sd	g:2	low	dotted small ʃ
+z	a:2	high	z with bar
+iii	nom:###	med	could be null:///
+iib	d:1	high	hash
+tz	l:2	med	t over ʒ
+K	t:1	low	ornate bar-R with dot
+rot	none	low	h:2 ornate is alternative
+L	s:4	med	large looped capital
+eloop	z:1	med	large looped ℰ with underline
+rc	s:3	high	r-curl plus c
+box	a:3	high	small square
+sqc	x:1	high	open-right square
+6r	none	low	u/v:2 alternative
+d	s:1	low	bar across ascender
+a	u:1	low	filled triangle, a-like
+o	none	low	raised o only within to
+x	h:2	low	x-like cross with e
+l	e:3	low	small tall stem
+f	none	low
+0	none	low
+2	none	low
+3	e:2	med	ʒ
+4	o:1	med	4-shape
+6	digitpart:76,60,62	low	u/v:2 also resembles 6
+7	b:1	high	also digitpart:77,76
+8	c:2	high	printed digit 8
+/	m:2	high	light diagonal slash

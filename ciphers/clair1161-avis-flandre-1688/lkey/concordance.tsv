@@ -1,0 +1,52 @@
+sign	ours_value	ours_grade	passA	passB	his_value_if_agreed	concordance	key_lasry
++	e	S	n:1	none	-	unmapped	
+/		U	m:2	m:2	m	new	applied
+0		U	digitpart:60,30	none	-	unmapped	
+2	r	M	digitpart:62	none	-	unmapped	
+3	e	S	e:2	e:2	e	agree	
+4	o	S	o:1	o:1	o	agree	
+6	e	M	digitpart:62,60,76	digitpart:76,60,62	-	unmapped	
+6r	i	M	u/v:2	none	-	unmapped	
+7	i	S	b:1	b:1	b	disagree	
+8	d	M	c:2	c:2	c	disagree	applied
+9	s	S	s:2	s:2	s	agree	
+K	s	M	z:1	t:1	-	unmapped	
+L	n	M	s:4	s:4	s	disagree	applied
+S	u	S	n:2	n:2	n	disagree	
+Sorn	h	M	-	-	-	unmapped	
+a	u	C	u/v:1	u:1	u	agree	
+blot	q	M	-	-	-	unmapped	
+box	a	S	a:3	a:3	a	agree	
+c	s	M	f:1	f:1	f	disagree	applied
+d	n	C	t:1	s:1	-	unmapped	
+dia	i	M	none	n:1	-	unmapped	
+e	p	C	p:1	p:1	p	agree	
+ee	y	C	y:1	y:1	y	agree	
+eloop	c	M	s:4	z:1	-	unmapped	
+f	n	S	none	none	-	unmapped	
+iib	d	M	d:1	d:1	d	agree	
+iii	e	S	null:///	nom:###	-	unmapped	
+l	f	M	none	e:3	-	unmapped	
+ls	m	M	e:3	none	-	unmapped	
+o	m	M	m:1	none	-	unmapped	
+p	c	C	c:1	c:1	c	agree	
+phi	l	M	g:1	g:1	g	disagree	applied
+psi	r	M	none	r:2	-	unmapped	
+q	i	S	i:2	i:2	i	agree	
+qb	a	S	a:1	a:1	a	agree	
+rc	e	M	s:3	s:3	s	disagree	applied
+rot	h	M	h:2	none	-	unmapped	
+s	e	S	-	-	-	unmapped	
+sd	g	C	g:2	g:2	g	agree	
+spiralG	n	M	-	-	-	unmapped	
+sqc	x	M	x:1	x:1	x	agree	
+th	s	M	s:1	m:1	-	unmapped	
+to	s	M	e:1	e:1	e	disagree	applied
+tri	q	S	-	-	-	unmapped	
+tz	e	M	l:2	l:2	l	disagree	applied
+vdash	t	M	-	-	-	unmapped	
+w	i	S	i:1	i:1	i	agree	
+wb	l	S	l:1	l:1	l	agree	
+x	f	M	null:x-blot	h:2	-	unmapped	
+y	r	S	r:1	r:1	r	agree	
+z	t	M	a:2	a:2	a	disagree	applied

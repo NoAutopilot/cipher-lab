@@ -1,0 +1,12 @@
+{
+ "note": "C1161-LKEY (14 Oct 2026): our ciphertext.tsv under lkey/key_lasry.tsv (key.tsv with George Lasry's published values applied only to our M/U signs whose label->exemplar mapping two blind passes agreed on). key.tsv is untouched.",
+ "jobs": [
+  {
+   "ciphertext": "ciphertext.tsv",
+   "key": "lkey/key_lasry.tsv",
+   "style": "spaced",
+   "reading": "lkey/reading_lasry.txt",
+   "tokens": "lkey/reading_lasry_tokens.tsv"
+  }
+ ]
+}
