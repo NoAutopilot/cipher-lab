@@ -1,0 +1,252 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "c33T_L01.jpg",
+   "source_url": "",
+   "source_file": "canvas33_full.jpg",
+   "box": [
+    340,
+    380,
+    1230,
+    512
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     78,
+     142,
+     210,
+     275
+    ]
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "c33T_L02.jpg",
+   "source_url": "",
+   "source_file": "canvas33_full.jpg",
+   "box": [
+    340,
+    440,
+    1230,
+    578
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     78,
+     142,
+     210,
+     275
+    ]
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "c33T_L03.jpg",
+   "source_url": "",
+   "source_file": "canvas33_full.jpg",
+   "box": [
+    340,
+    506,
+    1230,
+    644
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     78,
+     142,
+     210,
+     275
+    ]
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "c33T_L04.jpg",
+   "source_url": "",
+   "source_file": "canvas33_full.jpg",
+   "box": [
+    340,
+    572,
+    1230,
+    700
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     78,
+     142,
+     210,
+     275
+    ]
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "c33B_L01.jpg",
+   "source_url": "",
+   "source_file": "canvas33_full.jpg",
+   "box": [
+    180,
+    1044,
+    1200,
+    1156
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     75,
+     114,
+     170,
+     240,
+     302
+    ]
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "c33B_L02.jpg",
+   "source_url": "",
+   "source_file": "canvas33_full.jpg",
+   "box": [
+    180,
+    1092,
+    1200,
+    1204
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     75,
+     114,
+     170,
+     240,
+     302
+    ]
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "c33B_L03.jpg",
+   "source_url": "",
+   "source_file": "canvas33_full.jpg",
+   "box": [
+    180,
+    1140,
+    1200,
+    1267
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     75,
+     114,
+     170,
+     240,
+     302
+    ]
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "c33B_L04.jpg",
+   "source_url": "",
+   "source_file": "canvas33_full.jpg",
+   "box": [
+    180,
+    1203,
+    1200,
+    1333
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     75,
+     114,
+     170,
+     240,
+     302
+    ]
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "c33B_L05.jpg",
+   "source_url": "",
+   "source_file": "canvas33_full.jpg",
+   "box": [
+    180,
+    1269,
+    1200,
+    1380
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     75,
+     114,
+     170,
+     240,
+     302
+    ]
+   },
+   "date": "14 Oct 2026"
+  }
+ ]
+}
