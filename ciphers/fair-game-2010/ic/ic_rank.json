@@ -1,0 +1,687 @@
+{
+ "N": 67,
+ "windows": 2000,
+ "target_ic": 0.04975,
+ "langs": {
+  "en": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.014,
+    "p01": 0.04885,
+    "median": 0.06287,
+    "random_median": 0.03844,
+    "random_share_below_p01": 0.97
+   },
+   "profile": {
+    "target": 13.587,
+    "pct_rank": 0.089,
+    "p99": 17.189,
+    "median": 9.653,
+    "random_median": 23.519,
+    "random_share_above_p99": 0.895
+   },
+   "survives": true,
+   "min_rank": 0.014
+  },
+  "en18": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0085,
+    "p01": 0.04975,
+    "median": 0.06513,
+    "random_median": 0.03844,
+    "random_share_below_p01": 0.975
+   },
+   "profile": {
+    "target": 14.886,
+    "pct_rank": 0.055,
+    "p99": 17.589,
+    "median": 9.909,
+    "random_median": 24.84,
+    "random_share_above_p99": 0.91
+   },
+   "survives": false,
+   "min_rank": 0.0085
+  },
+  "de": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0135,
+    "p01": 0.04794,
+    "median": 0.06875,
+    "random_median": 0.03844,
+    "random_share_below_p01": 0.965
+   },
+   "profile": {
+    "target": 14.705,
+    "pct_rank": 0.066,
+    "p99": 18.58,
+    "median": 10.381,
+    "random_median": 24.161,
+    "random_share_above_p99": 0.885
+   },
+   "survives": true,
+   "min_rank": 0.0135
+  },
+  "fr": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0,
+    "p01": 0.05608,
+    "median": 0.07282,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 17.869,
+    "pct_rank": 0.024,
+    "p99": 19.879,
+    "median": 10.391,
+    "random_median": 27.851,
+    "random_share_above_p99": 0.965
+   },
+   "survives": false,
+   "min_rank": 0.0
+  },
+  "fr16": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0,
+    "p01": 0.05518,
+    "median": 0.07372,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 18.607,
+    "pct_rank": 0.0185,
+    "p99": 25.366,
+    "median": 10.456,
+    "random_median": 28.592,
+    "random_share_above_p99": 0.675
+   },
+   "survives": false,
+   "min_rank": 0.0
+  },
+  "it": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0,
+    "p01": 0.05834,
+    "median": 0.07237,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 19.549,
+    "pct_rank": 0.0035,
+    "p99": 17.378,
+    "median": 9.568,
+    "random_median": 29.546,
+    "random_share_above_p99": 0.985
+   },
+   "survives": false,
+   "min_rank": 0.0
+  },
+  "it16dip": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0,
+    "p01": 0.05744,
+    "median": 0.07191,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 19.259,
+    "pct_rank": 0.0025,
+    "p99": 16.969,
+    "median": 9.37,
+    "random_median": 29.258,
+    "random_share_above_p99": 0.99
+   },
+   "survives": false,
+   "min_rank": 0.0
+  },
+  "it15": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0,
+    "p01": 0.05699,
+    "median": 0.07237,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 19.574,
+    "pct_rank": 0.003,
+    "p99": 17.741,
+    "median": 9.782,
+    "random_median": 29.572,
+    "random_share_above_p99": 0.985
+   },
+   "survives": false,
+   "min_rank": 0.0
+  },
+  "it19": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0,
+    "p01": 0.0597,
+    "median": 0.07327,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 20.204,
+    "pct_rank": 0.001,
+    "p99": 17.471,
+    "median": 9.347,
+    "random_median": 30.203,
+    "random_share_above_p99": 0.99
+   },
+   "survives": false,
+   "min_rank": 0.0
+  },
+  "it21news": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0,
+    "p01": 0.05834,
+    "median": 0.07327,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 20.607,
+    "pct_rank": 0.001,
+    "p99": 16.313,
+    "median": 9.57,
+    "random_median": 30.607,
+    "random_share_above_p99": 0.995
+   },
+   "survives": false,
+   "min_rank": 0.0
+  },
+  "sco16": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0165,
+    "p01": 0.04794,
+    "median": 0.06332,
+    "random_median": 0.03844,
+    "random_share_below_p01": 0.965
+   },
+   "profile": {
+    "target": 14.395,
+    "pct_rank": 0.055,
+    "p99": 17.23,
+    "median": 9.65,
+    "random_median": 24.303,
+    "random_share_above_p99": 0.905
+   },
+   "survives": true,
+   "min_rank": 0.0165
+  },
+  "pt": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0,
+    "p01": 0.05925,
+    "median": 0.07644,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 20.401,
+    "pct_rank": 0.0045,
+    "p99": 18.401,
+    "median": 9.921,
+    "random_median": 30.284,
+    "random_share_above_p99": 0.99
+   },
+   "survives": false,
+   "min_rank": 0.0
+  },
+  "nl18": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0025,
+    "p01": 0.05292,
+    "median": 0.08141,
+    "random_median": 0.03844,
+    "random_share_below_p01": 0.995
+   },
+   "profile": {
+    "target": 19.066,
+    "pct_rank": 0.024,
+    "p99": 21.586,
+    "median": 11.499,
+    "random_median": 28.67,
+    "random_share_above_p99": 0.925
+   },
+   "survives": false,
+   "min_rank": 0.0025
+  },
+  "nl16": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0025,
+    "p01": 0.05382,
+    "median": 0.07915,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 17.217,
+    "pct_rank": 0.042,
+    "p99": 19.83,
+    "median": 11.195,
+    "random_median": 26.672,
+    "random_share_above_p99": 0.94
+   },
+   "survives": false,
+   "min_rank": 0.0025
+  },
+  "pl18": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.106,
+    "p01": 0.04432,
+    "median": 0.05699,
+    "random_median": 0.03844,
+    "random_share_below_p01": 0.905
+   },
+   "profile": {
+    "target": 9.2,
+    "pct_rank": 0.489,
+    "p99": 17.029,
+    "median": 9.151,
+    "random_median": 18.712,
+    "random_share_above_p99": 0.635
+   },
+   "survives": true,
+   "min_rank": 0.106
+  },
+  "pt18": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0,
+    "p01": 0.05699,
+    "median": 0.07417,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 19.743,
+    "pct_rank": 0.004,
+    "p99": 18.5,
+    "median": 9.873,
+    "random_median": 29.728,
+    "random_share_above_p99": 0.98
+   },
+   "survives": false,
+   "min_rank": 0.0
+  },
+  "fr18": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0025,
+    "p01": 0.05382,
+    "median": 0.07191,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 17.118,
+    "pct_rank": 0.017,
+    "p99": 17.854,
+    "median": 10.375,
+    "random_median": 27.082,
+    "random_share_above_p99": 0.98
+   },
+   "survives": false,
+   "min_rank": 0.0025
+  },
+  "fr1810": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0,
+    "p01": 0.05699,
+    "median": 0.07463,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 19.303,
+    "pct_rank": 0.0085,
+    "p99": 18.66,
+    "median": 10.342,
+    "random_median": 29.29,
+    "random_share_above_p99": 0.98
+   },
+   "survives": false,
+   "min_rank": 0.0
+  },
+  "fr1840": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0005,
+    "p01": 0.05789,
+    "median": 0.07553,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 19.737,
+    "pct_rank": 0.003,
+    "p99": 18.125,
+    "median": 10.438,
+    "random_median": 29.732,
+    "random_share_above_p99": 0.98
+   },
+   "survives": false,
+   "min_rank": 0.0005
+  },
+  "fr17": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0,
+    "p01": 0.05654,
+    "median": 0.07372,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 17.95,
+    "pct_rank": 0.011,
+    "p99": 18.189,
+    "median": 10.189,
+    "random_median": 27.936,
+    "random_share_above_p99": 0.98
+   },
+   "survives": false,
+   "min_rank": 0.0
+  },
+  "es": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0005,
+    "p01": 0.05789,
+    "median": 0.07237,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 18.423,
+    "pct_rank": 0.0045,
+    "p99": 16.767,
+    "median": 9.547,
+    "random_median": 28.407,
+    "random_share_above_p99": 0.985
+   },
+   "survives": false,
+   "min_rank": 0.0005
+  },
+  "da19": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.001,
+    "p01": 0.05337,
+    "median": 0.07191,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 17.397,
+    "pct_rank": 0.0185,
+    "p99": 18.289,
+    "median": 10.233,
+    "random_median": 27.396,
+    "random_share_above_p99": 0.98
+   },
+   "survives": false,
+   "min_rank": 0.001
+  },
+  "es17c": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0005,
+    "p01": 0.05744,
+    "median": 0.07237,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 18.785,
+    "pct_rank": 0.0085,
+    "p99": 17.716,
+    "median": 9.792,
+    "random_median": 28.767,
+    "random_share_above_p99": 0.98
+   },
+   "survives": false,
+   "min_rank": 0.0005
+  },
+  "es18": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0005,
+    "p01": 0.05473,
+    "median": 0.07101,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 17.984,
+    "pct_rank": 0.003,
+    "p99": 16.199,
+    "median": 9.812,
+    "random_median": 27.958,
+    "random_share_above_p99": 0.985
+   },
+   "survives": false,
+   "min_rank": 0.0005
+  },
+  "es18p": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0,
+    "p01": 0.05518,
+    "median": 0.0701,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 17.661,
+    "pct_rank": 0.011,
+    "p99": 17.922,
+    "median": 9.84,
+    "random_median": 27.633,
+    "random_share_above_p99": 0.98
+   },
+   "survives": false,
+   "min_rank": 0.0
+  },
+  "es17c7": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0005,
+    "p01": 0.05699,
+    "median": 0.07237,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 18.638,
+    "pct_rank": 0.0065,
+    "p99": 17.422,
+    "median": 9.701,
+    "random_median": 28.618,
+    "random_share_above_p99": 0.985
+   },
+   "survives": false,
+   "min_rank": 0.0005
+  },
+  "es17a": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0005,
+    "p01": 0.05563,
+    "median": 0.07101,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 18.3,
+    "pct_rank": 0.004,
+    "p99": 17.304,
+    "median": 9.851,
+    "random_median": 28.287,
+    "random_share_above_p99": 0.98
+   },
+   "survives": false,
+   "min_rank": 0.0005
+  },
+  "es1600": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0,
+    "p01": 0.0588,
+    "median": 0.07237,
+    "random_median": 0.03844,
+    "random_share_below_p01": 1.0
+   },
+   "profile": {
+    "target": 18.27,
+    "pct_rank": 0.0035,
+    "p99": 16.812,
+    "median": 9.797,
+    "random_median": 28.245,
+    "random_share_above_p99": 0.985
+   },
+   "survives": false,
+   "min_rank": 0.0
+  },
+  "la": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0025,
+    "p01": 0.05156,
+    "median": 0.06513,
+    "random_median": 0.03844,
+    "random_share_below_p01": 0.995
+   },
+   "profile": {
+    "target": 15.326,
+    "pct_rank": 0.0275,
+    "p99": 16.687,
+    "median": 9.541,
+    "random_median": 25.3,
+    "random_share_above_p99": 0.98
+   },
+   "survives": false,
+   "min_rank": 0.0025
+  },
+  "la18": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0025,
+    "p01": 0.05156,
+    "median": 0.06513,
+    "random_median": 0.03844,
+    "random_share_below_p01": 0.995
+   },
+   "profile": {
+    "target": 15.326,
+    "pct_rank": 0.0275,
+    "p99": 16.687,
+    "median": 9.541,
+    "random_median": 25.3,
+    "random_share_above_p99": 0.98
+   },
+   "survives": false,
+   "min_rank": 0.0025
+  },
+  "la17": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.0035,
+    "p01": 0.05111,
+    "median": 0.06513,
+    "random_median": 0.03844,
+    "random_share_below_p01": 0.99
+   },
+   "profile": {
+    "target": 14.93,
+    "pct_rank": 0.0425,
+    "p99": 18.154,
+    "median": 9.75,
+    "random_median": 24.894,
+    "random_share_above_p99": 0.9
+   },
+   "survives": false,
+   "min_rank": 0.0035
+  },
+  "de17": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.006,
+    "p01": 0.05111,
+    "median": 0.06965,
+    "random_median": 0.03844,
+    "random_share_below_p01": 0.99
+   },
+   "profile": {
+    "target": 15.604,
+    "pct_rank": 0.057,
+    "p99": 18.698,
+    "median": 10.534,
+    "random_median": 25.315,
+    "random_share_above_p99": 0.91
+   },
+   "survives": false,
+   "min_rank": 0.006
+  },
+  "de1600": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.006,
+    "p01": 0.05066,
+    "median": 0.0701,
+    "random_median": 0.03844,
+    "random_share_below_p01": 0.985
+   },
+   "profile": {
+    "target": 15.659,
+    "pct_rank": 0.053,
+    "p99": 19.552,
+    "median": 10.349,
+    "random_median": 25.434,
+    "random_share_above_p99": 0.88
+   },
+   "survives": false,
+   "min_rank": 0.006
+  },
+  "sv17": {
+   "ic": {
+    "target": 0.04975,
+    "pct_rank": 0.017,
+    "p01": 0.04885,
+    "median": 0.06377,
+    "random_median": 0.03844,
+    "random_share_below_p01": 0.97
+   },
+   "profile": {
+    "target": 13.741,
+    "pct_rank": 0.0955,
+    "p99": 17.839,
+    "median": 9.783,
+    "random_median": 23.692,
+    "random_share_above_p99": 0.87
+   },
+   "survives": true,
+   "min_rank": 0.017
+  }
+ }
+}
