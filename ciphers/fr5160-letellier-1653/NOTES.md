@@ -1,6 +1,7 @@
 # BnF fr.5160 — Loménie de Brienne (père et fils) to Abel Servien, 1653-1661
 
 Status: open
+Prior work, 14 Oct 2026: the 1653 letters (f.1-3, f.9, f.18v-20) are read in George Lasry's "BnF cipher research" (10 Oct 2026, published in dbourdeau/cyphersolver dde5b0ea, entry brienne5160, extent complete); the 1659 items rest on f.68r and f.87. See "## Lasry BnF research check (14 Oct 2026, LQ-F5160)".
 Full-text search by this worker (GF-A2-8, 2 Oct 2026), Internet Archive be-api over the whole collection and the Google Books API (country=US): "pour le ruiner dans l'esprit de monsieur son fils" (f.87) and "mesintelligence d'entre le filz et la mere" (f.67) quoted, 0 exact hits each; Brienne + Servien + chiffre + 1659, 4,905 IA and 55 Google Books hits, top hits Chéruel's Mazarin volumes and Cosnac (titles only, these hits were not opened). No printed edition of the Brienne-Servien 1653-61 letters is known here; the volume's Gallica images (btv1b9060495t) are the text.
 
 > **Verifier correction, 24 Sept 2026 (AUDIT.md):** f.86 and f.88 are N0 (their contemporary decipherment is f.87).
@@ -2495,3 +2496,67 @@ Read so far: f.86+f.88 169 of 539 cipher tokens C (AUDIT.md Audit 2, D1); f.67 C
 - [x] image-check: f.1-2, f.9, f.67, f.86, f.88 reconciled from native crops; canvas 11-12 and canvas 32 split positions arbitrated from native openapi.bnf.fr crops (F5160-ARB, 13 Oct: 33 of 37 settled, 4 left A|B in arbitration_c11c32.tsv, one possible omitted db logged)
 - [x] retry: every failed fetch has been retried and closed; the 13 Oct f11 reset recovered on its one retry
 Verdict: parked: 1653 band waiting-on ASKS 154 (Brienne 1653 minutes); every escalation step is done or retired
+
+## Lasry BnF research check (14 Oct 2026, LQ-F5160)
+
+Worker LQ-F5160 (record check, not cryptanalysis), LANE DEFAULT-A1-0640-14 (account 1). Brief: .claude/briefs/runs/2026-10-14-acct1-default-0640-jobs.md.
+Source: George Lasry, "BnF cipher research" (10 Oct 2026), entry `brienne5160`, published in github.com/dbourdeau/cyphersolver
+(commit dde5b0ea; HEAD read b0af20a4, 13 Oct 2026 16:14 -0500), snapshot unmodified at `sources/cyphersolver/2026-10-14-lasry/brienne5160/`
+(NOTES.md, profile.json, lasry_p095_1.png). Hub page not fetched. No BnF/Gallica request this job.
+
+His entry, quoted: "14/14 pages transcribed; 13/13 cipher pages deciphered"; "Key: 136 symbols/codes: 25 letter signs, 101 in
+nomenclature, 7 nulls ?, 3 unidentified"; "Ciphertext: 1,356 elements, 1,308 identified (96.5%); 40 nulls ?, 3 unidentified, 5 cancelled";
+"Ciphertext-only: No"; "Plaintext in another folio of the same volume: Same volume: literal plaintext of letter B at f10r; literal
+plaintext of letter C at ff17r–v. Letter A uses the same key."; pages "Gallica ff1r–3r", "Gallica ff9r–v", "Gallica ff18r–21r";
+date "10 January and 1 August 1653; letter B undated". Method (Bourdeau's classification): "key recovered based on adjacent plaintext;
+extent: complete". Bourdeau's spot-check, 13 Oct 2026: f9r (canvas 24) "36 60 33 n 39 x 21 , 6 28 ... -> de la co-n-du-i-te , que vo...",
+verdict "confirmed" (a sample, not a re-solution).
+
+### Item match, per folio (leaf identity from this folder's census tables, NOTES "Census pass" and "1653 band: natives")
+
+| our item | our shelfmark / folio (canvas) | our date, sender -> recipient | ours: what is read | his item | match |
+|---|---|---|---|---|---|
+| f.1-3 letter, first block | fr.5160 f.1r-2 (canvases 8-10) | Paris, January 1653 (census read "2 janvier", the native read of canvas 12 "x janvier" = 10 Jan), Brienne -> Servien | transcribed and reconciled (`ciphertext_f1.tsv`); 0 tokens read; key rebuild retired (rule 3) | letter A, "Gallica ff1r–3r", 10 Jan 1653, "uses the same key" | **match** (same leaves; his 10 Jan agrees with our native read, not the census "2 janvier") |
+| f.1-3 letter, second block | f.2v-3r (canvases 11-12) | same letter | two passes + image arbitration (`ciphertext_c11.tsv`, F5160-ARB 13 Oct); 0 read | letter A, ff1r–3r | **match** |
+| f.9 letter | f.9r-v (canvases 24-25) | undated, Brienne -> Servien | reconciled (`ciphertext_f9.tsv`); 0 read | letter B, "Gallica ff9r–v", undated; clear text "at f10r" | **match**. Our census (24 Sept) row for canvas 26 = f.10 already said "opening phrase echoes f24's ciphered letter but this copy is uncoded (possibly a plain duplicate)"; the 2 Oct Premise check and every later Escalation line recorded "no clear copy on any canvas 4-36" -- that was wrong for f.10r |
+| f.19-20 letter (canvas 32 transcribed; 30, 31, 33 mixed, untranscribed) | f.18v-20 (canvases 30-33; dateline "1 aoust 1653" on canvas 35 = f.21) | 1 Aug 1653, Brienne -> Servien | canvas 32 two passes + arbitration (`ciphertext_c32.tsv`); 0 read | letter C, "Gallica ff18r–21r", 1 Aug 1653; clear text "at ff17r–v"; his excerpt (f18r) on the Duke of Mantua | **match** (canvas 29, likely f.17v, was never fetched by us: two resets, 24 Sept) |
+| f.67 | f.67 (canvases 129-130) | "A Paris ce 10 8bre 1659", Brienne -> Servien (Ennemond, AUDIT) | C 435 / M 111 of 546 from the f.68r clear copy; AUDIT N0 | none (his pages stop at f.21) | **no match** (same volume, different item) |
+| f.68r | f.68r | clear copy of f.67's cipher passages | used as the known plaintext | none | **no match** |
+| f.86 + f.88 | f.86, f.88 (canvases 168-169, 172-173) | 21 Nov 1659, Brienne -> Servien | 169 of 539 C from the f.87 decipherment; AUDIT N0, D1 | none | **no match** |
+| f.87 | f.87 (canvas 170) | "Dechiffré de la lettre ... du 21 9.bre 1659" | period decipherment, our key source | none | **no match** |
+
+Plaintext side by side (step 4): not applicable. We hold no reading of any matched item (0 of 972 tokens of the 1653 band read);
+his excerpt (f18r, "Les sages en jugent autrement je m'en remettray à leurs sentimens. Pour avoir droit de se plaindre du duc de
+Mantoue ...") has nothing of ours to set beside it. His count, 13 cipher pages and 1,356 elements, against ours: f.1-3 + f.9 752 tokens,
+c11 113, c32 107 (972 transcribed); canvases 30, 31, 33 (our "mixed" pages of letter C) were never transcribed here, which fits his larger
+total. No re-solving, no key edit, no re-grading.
+
+Credit: George Lasry, result (with ChatGPT Astra 6 and Anthropic Opus 5.5, per his entry); D. Bourdeau, publication and spot-check,
+cyphersolver dde5b0ea; text CC BY 4.0.
+
+**What changes for our work.** Every 1653-band item this folder holds (letters A, B, C: f.1-3, c11-12, f.9, f.18v-20/c32) is covered by
+Lasry's reading, extent complete per his report, and two clear copies we did not use exist in the volume (f.10r for letter B, ff17r-v
+for letter C). The 1653 gap (waiting-on ASKS 154, the Brienne 1653 minutes in Français 20661-20662) is closed by prior work: the minutes
+are no longer needed for these three letters. The 1659 items (f.67, f.86, f.88) are outside his coverage and were already N0 through the
+volume's own clear copy (f.68r) and decipherment (f.87). So no cryptanalytic piece of this folder remains ours. Status kept `open` per the
+brief (only some items are matched by him; the rest rest on period decipherments); the lane orchestrator decides whether the head becomes
+`found-solved` (1653 by Lasry, 1659 by f.68r/f.87). ASKS 154 can be closed or reworded for the lane orchestrator. AUDIT.md covers only the
+1659 items (N0), none matched, so no re-class flag; one prior-work line appended there.
+Optional, not run: aligning our f.9 and c32 transcriptions to the f.10r and ff17r-v clear copies with `tools/interlinear_align.py` would
+reproduce a key locally (it would repeat his result, at about USD 2-3 with two Gallica/openapi fetches).
+Not checked: his full report PDF and the hub page (brief allowed twice; not needed for the item match); his key table itself.
+
+## Remaining gaps (LQ-F5160, 14 Oct 2026)
+Read so far: f.86+f.88 169 of 539 cipher tokens C (AUDIT.md, D1); f.67 C 435 / M 111 of 546; 1653 band 0 of 972 by us, covered by Lasry's reading (1,308 of 1,356 elements identified, 96.5%, his report)
+- 1653 band local key (letters A, B, C; f.1-3, c11-12, f.9, c32) - blocker: not-attempted; the reading itself is closed by prior work (Lasry, cyphersolver dde5b0ea, NOTES "Lasry BnF research check"); only a local reproduction remains, optional; next: align f.9 to the f.10r clear copy and c32 to ff17r-v with tools/interlinear_align.py if the lane orchestrator wants our own key, ~$2.5
+
+## Escalation (LQ-F5160, 14 Oct 2026)
+- [x] siblings: canvas walks 4-367 complete (walk_37_159.tsv, walk_160_367.tsv; canvas 45 D1A-CAN 8 Oct); sibling volumes and Colbert 26 part III read whole (AM-LOOK 7 Oct)
+- [ ] clear-pages: f.68r and f.87 used for the 1659 band; for the 1653 band the f.10r (letter B) and ff17r-v (letter C) clear copies named by Lasry were not used here (the 2 Oct "no clear copy on canvases 4-36" line was wrong for f.10r); planned step: the optional alignment above
+- [x] known-keys: all four office keys trialled under matched controls on all four 1653 pieces (trial_1653.tsv, trial_1653_c11c32.tsv): none reads
+- [x] print: read items print-checked (print-check.tsv, print-check-f67.tsv); Lasry's report (10 Oct 2026, cyphersolver dde5b0ea) logged as prior work for the 1653 band
+- [retired] key-rebuild: ciphertext-only instruments tools/nomenclator_anneal.py and word_solve.py failed the matched control three times (PREREG-F5160-POOL.md, PREREG-F5160-WORD.md); the clear copies are new material, under clear-pages
+- [x] image-check: f.1-2, f.9, f.67, f.86, f.88 reconciled from native crops; c11-12 and c32 arbitrated (F5160-ARB, 13 Oct)
+- [x] retry: every failed fetch retried and closed; canvas 29 (likely f.17v) never fetched, falls under the clear-pages step
+Verdict: keep going: 1 internal gaps; cheapest next: optional f.9/f.10r and c32/ff17r-v alignment, ~$2.5 (the reading itself is closed by prior work, Lasry)
+`python3 tools/gaps_check.py fr5160-letellier-1653` (14 Oct 2026): `OK keep-going fr5160-letellier-1653: keep going: 1 internal gap(s), 1 step(s) untried` / `gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped`, exit 0.

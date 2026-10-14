@@ -376,3 +376,5 @@ api.semanticscholar.org 3 (one 429), api.archives-ouvertes.fr 1, theses.hal.scie
 credentials printed, no subagents.
 
 `python3 tools/depth_check.py` (5 Oct 2026, after this audit; the item is N0, not counted): `unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0` exit 0
+
+Prior-work notice (14 Oct 2026, LQ-F5160): George Lasry's "BnF cipher research" (cyphersolver dde5b0ea, entry brienne5160) reads the 1653 letters of this volume (ff1r-3r, 9r-v, 18r-21r); it does not cover f.67, f.86, f.87 or f.88, the items classed above, so no N-class here is affected. See NOTES.md "## Lasry BnF research check (14 Oct 2026, LQ-F5160)".
