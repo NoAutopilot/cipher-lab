@@ -1,0 +1,7 @@
+line	pos	pass_a	monl_sort	monl_eye	faces	shape_seen	action
+L04	6	K12	K04	K12	a	bowl, descender sweeps left into a horizontal foot (like K22 at L04:26 and K12, not the K04 cell's straight blunt stem)	revert
+L04	8	K12	K04	K12	a	as L04:6: descender sweeps left into a foot	revert
+L04	23	K12	K04	K12	t	descender curves down-left and tapers (as K12 at L04:4), not straight	revert
+L05	12	K12	K04	K12	n	descender curves down-left and tapers (as L04:4); L05:14 two signs on is the straight blunt K04 form	revert
+L04	15	K12	K04	K04	d	straight vertical blunt stem, as the K04 cell (reference, not under check)	keep
+L05	14	K12	K04	K04	d	straight vertical blunt stem, as the K04 cell (reference, not under check)	keep

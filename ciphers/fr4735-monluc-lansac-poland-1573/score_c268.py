@@ -52,6 +52,10 @@ RELABEL = {('L01', 32): ('K19', 'K38'), ('L02', 16): ('K63', 'K38'), ('L02', 18)
 MONL_SORT = {('L02', 36): ('K12', 'K04'), ('L03', 22): ('K12', 'K04'), ('L04', 6): ('K12', 'K04'), ('L04', 8): ('K12', 'K04'),
              ('L04', 15): ('K12', 'K04'), ('L04', 23): ('K12', 'K04'), ('L05', 12): ('K12', 'K04'), ('L05', 14): ('K12', 'K04'),
              ('L01', 22): ('K34', 'K53'), ('L03', 3): ('K34', 'K53'), ('L03', 21): ('K34', 'K53'), ('L05', 4): ('K34', 'K53')}
+# MONL-EYE (14 Oct 2026): eye check at native resolution (k12/eye_monl.tsv) -- these 4 lack the straight blunt stem of the K04 cell
+# and of the K04 tokens L04:15/L05:14 beside them; their descenders curve or sweep left (the K12 form). Reverted to pass A's K12.
+MONL_EYE_REVERT = {('L04', 6), ('L04', 8), ('L04', 23), ('L05', 12)}
+MONL_SORT = {k: v for k, v in MONL_SORT.items() if k not in MONL_EYE_REVERT}
 TAG = {**{k: 'blind-sort' for k in RELABEL}, **{k: 'monl-sort' for k in MONL_SORT}}
 RELABEL = {**RELABEL, **MONL_SORT}
 

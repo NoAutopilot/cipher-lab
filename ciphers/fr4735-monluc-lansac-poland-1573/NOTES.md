@@ -958,3 +958,62 @@ Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines
 - [x] image-check: the 10 contradiction positions looked at (MONL-K12, non-blind); all K12/K14/K34 tokens of c268 L01-L05 and c172 sorted blind twice (MONL-SORT)
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 6 internal gaps; cheapest next: eye check of the 4 doubtful K04 relabels (L05:12, L04:6/8/23) and an i/y fold in align_c268.py, ~$1
+
+## MONL-EYE: eye check of the 4 doubtful K04 relabels and a pre-registered i/y fold (14 Oct 2026, account 4, Opus, for LANE DEFAULT-A4-2135-14)
+
+Brief: .claude/briefs/runs/2026-10-14-acct4-default-2135-jobs.md, MONL-EYE (MONL-SORT's Verdict). Disk only: no host requests, no
+subagents. Read MONL-ALIGN, MONL-K12 and MONL-SORT first.
+
+**(a) Eye check (non-blind: I knew the clear letter each token faces).** Renders regenerated from the recorded commands (untracked):
+sort/win/ by MONL-SORT's `lookalike_pass.py windows ... --run s268_win` line; sort/candidates.png by `python3 sort/build_tiles.py`
+(it also rewrote sort/c268_tiles.tsv, restored with git checkout); taller native re-cuts k12/win/eye_L45_left.png, eye_zoom.png,
+eye_zoom2.png cut by PIL from images/src_ark_12148_btv1b9060724s_f268_700_1500_2800_650.jpg (regions x 200-620 / 900-1350 / 1250-1900,
+y 400-650). The s268 window ticks sit one sign off at the start of L04, so tokens were placed by counting along ciphertext_c268.tsv.
+The key-sheet cells differ in the stem: **K04 = a 9 with a straight vertical stem ending blunt; K12 = a 9 whose stem curves down-left**.
+The two relabelled tokens that face d (L04:15, L05:14) show the straight blunt stem. The four doubtful ones do not (k12/eye_monl.tsv):
+| token | faces | shape seen | action |
+|---|---|---|---|
+| L04:6 | a | descender sweeps left into a horizontal foot | revert to K12 |
+| L04:8 | a | as L04:6 | revert to K12 |
+| L04:23 | t | descender curves down-left and tapers (as the K12 at L04:4) | revert to K12 |
+| L05:12 | n | descender curves down-left and tapers; L05:14, two signs on, is the straight K04 form | revert to K12 |
+Transcription edit: score_c268.py `MONL_EYE_REVERT` drops these 4 from MONL_SORT (8 K12 -> K04 relabels become 4: L02:36, L03:22, L04:15,
+L05:14). L05:12 now confirms n. Lead only, not applied: L04:6 and L04:8 have the left-sweeping foot of the K22 (a) at L04:26, and both
+face a in "pensa jamais"; a value-blind K12|K22 sort would test it.
+
+**(b) i/y fold.** PREREG-MONL-IY.md pushed in 1af023571 before any run: `--fold-iy` folds y -> i in clear, table and the f.139 control;
+kept only if, with it, the shuffled-clear max < 0.50, 0/200 draws reach the real share, and real minus shuffled mean does not shrink.
+Baseline is the post-revert stream (200 draws, seed 140 for both):
+| | real confirm | share | shuffled mean | p95 | max | >= real | f.139 |
+|---|---|---|---|---|---|---|---|
+| without fold | 140/169 | 0.828 | 0.408 | 0.438 | 0.485 | 0/200 | 0.402 |
+| with fold | 144/169 | 0.852 | 0.414 | 0.450 | 0.485 | 0/200 | 0.414 |
+All three conditions met (max 0.485 < 0.50; 0/200; margin 0.421 -> 0.439), so the fold is now the script default (`--no-fold-iy`
+prints the unfolded run). The 4 new confirms: K53 = i facing y at L01:22, L03:3, L03:21, and K29 = i facing y at L02:23. L05:4 (K53, faces
+s at an unsure clear word) and L04:1 (K19 = u, faces y) still contradict.
+
+**Effect.** c268 lines 1-5: confirm 139/169 = 0.822 (MONL-SORT) -> 140/169 = 0.828 (reverts) -> 144/169 = 0.852 (fold); contradict 25 -> 24
+-> 20. Grades C 91 / M 86 -> C 92 / M 85 (reverts; L05:12 is conf H again and confirms) -> **C 93 / M 84** (fold; three of the four new
+confirms are conf M tokens, so they stay M). key.tsv unchanged; c172 unchanged (C 83 / M 64 / U 3).
+Rule 7: `python3 ../../tools/decode_key.py . --check` "reading up to date" (exit 0); `python3 align_c268.py --check` "align_c268: OK" (exit 0);
+`python3 score_c268.py --check` "OK c268 outputs current" (exit 0).
+Requests: none to any host. Subagents: none.
+
+## Remaining gaps (MONL-EYE, 14 Oct 2026)
+Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines 1-5 (177 tokens) C 93 / M 84 against the ff.140r-141r clear text (align confirm 144/169 = 0.852 with the i/y fold, vs shuffled-clear max 0.485).
+- L04:6 and L04:8 (K12, face a; left-sweeping foot like K22 = a) - blocker: not-attempted; found in this job (non-blind eye); next: a value-blind sort of the c268 K12 and K22 tokens against the K12|K22 cells, then align_c268.py --check, ~$1
+- rest of c268 (about 870 signs) and c264 against the ff.140r-141r clear text - blocker: not-attempted; outside this job's brief; next: two blind cipher passes of the next c268 band plus reconciliation, then align_c268.py on the longer stream, ~$3 per 5-10 lines
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py); the c268 alignment supplies known plaintext instead
+- a clean clear text of ff.140r-141r away from the c268 span - blocker: not-attempted; f.140r L07 "[poursuiteurs]" unsettled (MONL-K12's "serviteurs" lead unsupported by MONL-SORT); next: an eye reconciliation of f.140r L01-L07 against the line crops, ~$1 per page
+- print check of the clear letter in Google Books (13 of the 14 phrases.txt lines) and the editions by identifier (Noailles vols I-III, Lettres de Catherine de Medicis) - blocker: not-attempted; IA full text and OpenAlex done, no hits on all 14 (MONL-PC); Google Books 13 of 14 unsearched (503, MONL-PC, MONL-PC2); next: `tools/print_check.py ... --only gbooks` when googleapis answers, ~$1
+- ff.211-223, f.87 margin, ff.50/56/60/80, items 17/18/112-120 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONL-EYE, 14 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [x] clear-pages: ff.140r-141r transcribed and shown to be the clear text of c268 L01-L05 (MONL-ALIGN)
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell and checked against known plaintext on c268 L01-L05
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2; the clear letter phrase-searched in IA full text and OpenAlex, no hits (MONL-PC); Google Books for it pending (gap above)
+- [x] key-rebuild: --try rejects K12=d and K34=y (MONL-K12); blind sort relabels 8 K12 -> K04 and 4 K34 -> K53 (MONL-SORT), 4 of the K04 relabels reverted on the image (MONL-EYE); i/y fold pre-registered and kept
+- [x] image-check: the 4 doubtful K04 relabels re-cut at native resolution and compared with the key-sheet cells (MONL-EYE, non-blind)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 5 internal gaps; cheapest next: value-blind K12|K22 sort of L04:6/L04:8 and the c268 K22 tokens, ~$1; then the next c268 band against f.140r L10 on

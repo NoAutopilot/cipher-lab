@@ -1,13 +1,13 @@
 {
  "real": {
   "keyed": 169,
-  "confirm": 139,
-  "contradict": 25,
+  "confirm": 144,
+  "contradict": 20,
   "extra": 5,
-  "confirm_share": 0.8225,
+  "confirm_share": 0.8521,
   "facing_unsure_clear": 20
  },
- "score": 217.3,
+ "score": 232.3,
  "clear_span": [
   "f.140r:L07",
   "f.140r:L10"
@@ -16,17 +16,17 @@
  "shuffled_clear": {
   "draws": 200,
   "seed": 140,
-  "mean": 0.4028,
-  "p95": 0.432,
-  "max": 0.4734,
+  "mean": 0.4136,
+  "p95": 0.4497,
+  "max": 0.4852,
   "ge_real": 0
  },
  "other_letter_c270": {
   "keyed": 169,
-  "confirm": 69,
-  "contradict": 89,
+  "confirm": 70,
+  "contradict": 88,
   "extra": 11,
-  "confirm_share": 0.4083
+  "confirm_share": 0.4142
  },
  "fills": [
   {
@@ -88,28 +88,12 @@
    "clear": "u"
   },
   {
-   "line": "L01",
-   "pos": 22,
-   "sign": "K53",
-   "conf": "M",
-   "table": "i",
-   "clear": "y"
-  },
-  {
    "line": "L02",
    "pos": 6,
    "sign": "K36",
    "conf": "H",
    "table": "r",
    "clear": "f"
-  },
-  {
-   "line": "L02",
-   "pos": 23,
-   "sign": "K29",
-   "conf": "H",
-   "table": "i",
-   "clear": "y"
   },
   {
    "line": "L02",
@@ -126,22 +110,6 @@
    "conf": "H",
    "table": "p",
    "clear": "r"
-  },
-  {
-   "line": "L03",
-   "pos": 3,
-   "sign": "K53",
-   "conf": "M",
-   "table": "i",
-   "clear": "y"
-  },
-  {
-   "line": "L03",
-   "pos": 21,
-   "sign": "K53",
-   "conf": "M",
-   "table": "i",
-   "clear": "y"
   },
   {
    "line": "L03",
@@ -165,7 +133,7 @@
    "sign": "K19",
    "conf": "H",
    "table": "u",
-   "clear": "y"
+   "clear": "i"
   },
   {
    "line": "L04",
@@ -178,17 +146,17 @@
   {
    "line": "L04",
    "pos": 6,
-   "sign": "K04",
-   "conf": "M",
-   "table": "d",
+   "sign": "K12",
+   "conf": "H",
+   "table": "n",
    "clear": "a"
   },
   {
    "line": "L04",
    "pos": 8,
-   "sign": "K04",
-   "conf": "M",
-   "table": "d",
+   "sign": "K12",
+   "conf": "H",
+   "table": "n",
    "clear": "a"
   },
   {
@@ -202,9 +170,9 @@
   {
    "line": "L04",
    "pos": 23,
-   "sign": "K04",
-   "conf": "M",
-   "table": "d",
+   "sign": "K12",
+   "conf": "H",
+   "table": "n",
    "clear": "t"
   },
   {
@@ -241,18 +209,10 @@
   },
   {
    "line": "L05",
-   "pos": 12,
-   "sign": "K04",
-   "conf": "M",
-   "table": "d",
-   "clear": "n"
-  },
-  {
-   "line": "L05",
    "pos": 18,
    "sign": "K40",
    "conf": "H",
-   "table": "y",
+   "table": "i",
    "clear": "u"
   },
   {

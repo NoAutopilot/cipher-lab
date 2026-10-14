@@ -20,7 +20,7 @@ L01	18	K15	H	q	q	confirm	0
 L01	19	K39	M	u	u	confirm	0
 L01	20	K09	H	i	i	confirm	0
 L01	21	K12	M	n	n	confirm	0
-L01	22	K53	M	i	y	contradict	0
+L01	22	K53	M	i	i	confirm	0
 L01	23	K26	H	e	e	confirm	0
 L01	24	K37	H	s	s	confirm	0
 L01	25	K34	H	p	p	confirm	0
@@ -57,7 +57,7 @@ L02	19	K09	H	i		extra	0
 L02	20	K33	H	o	o	confirm	0
 L02	21	K12	H	n	n	confirm	0
 L02	22	K32	H	n	n	confirm	0
-L02	23	K29	H	i	y	contradict	0
+L02	23	K29	H	i	i	confirm	0
 L02	24	K10	H	l	l	confirm	0
 L02	25	K22	H	a	a	confirm	0
 L02	26	?double_slash	M		c	fill	0
@@ -74,7 +74,7 @@ L02	36	K04	M	d	d	confirm	0
 L02	37	K19	H	u	u	confirm	0
 L03	1	K14	H	p	r	contradict	0
 L03	2	K33	H	o	o	confirm	0
-L03	3	K53	M	i	y	contradict	0
+L03	3	K53	M	i	i	confirm	0
 L03	4	K10	H	l	l	confirm	0
 L03	5	K33	H	o	o	confirm	0
 L03	6	K12	H	n	n	confirm	0
@@ -92,7 +92,7 @@ L03	17	K10	H	l	l	confirm	0
 L03	18	K26	H	e	e	confirm	0
 L03	19	K36	M	r	r	confirm	0
 L03	20	K33	M	o	o	confirm	0
-L03	21	K53	M	i	y	contradict	0
+L03	21	K53	M	i	i	confirm	0
 L03	22	K04	M	d	d	confirm	0
 L03	23	K05	M	e	e	confirm	0
 L03	24	K25	M	d	d	confirm	0
@@ -108,14 +108,14 @@ L03	33	K15	M	q	q	confirm	0
 L03	34	K63	M	u	u	confirm	0
 L03	35	K59	M	i	i	confirm	0
 L03	36	K12	M	n	n	confirm	0
-L04	1	K19	H	u	y	contradict	0
+L04	1	K19	H	u	i	contradict	0
 L04	2	K34	H	p	p	confirm	0
 L04	3	K26	H	e	e	confirm	0
 L04	4	K12	H	n	n	confirm	0
 L04	5	K14	H	p	s	contradict	0
-L04	6	K04	M	d	a	contradict	0
+L04	6	K12	H	n	a	contradict	0
 L04	7	K29	H	i	i	confirm	0
-L04	8	K04	M	d	a	contradict	0
+L04	8	K12	H	n	a	contradict	0
 L04	9	K62	H	l	m	contradict	0
 L04	10	K41	H	a	a	confirm	0
 L04	11	K09	H	i	i	confirm	0
@@ -130,7 +130,7 @@ L04	19	K22	M	a	a	confirm	0
 L04	20	K38	M	t		extra	0
 L04	21	K41	H	a	a	confirm	0
 L04	22	K05	H	e		extra	0
-L04	23	K04	M	d	t	contradict	0
+L04	23	K12	H	n	t	contradict	0
 L04	24	K38	M	t	t	confirm	0
 L04	25	K26	H	e	e	confirm	0
 L04	26	K22	M	a	n	contradict	0
@@ -155,13 +155,13 @@ L05	8	K38	M	t	t	confirm	0
 L05	9	K09	H	i	i	confirm	0
 L05	10	K36	H	r	r	confirm	0
 L05	11	K05	H	e	e	confirm	0
-L05	12	K04	M	d	n	contradict	0
+L05	12	K12	H	n	n	confirm	0
 L05	13	K38	M	t	t	confirm	0
 L05	14	K04	M	d	d	confirm	0
 L05	15	K05	H	e	e	confirm	0
 L05	16	K30	H	l	l	confirm	0
 L05	17	K41	H	a	a	confirm	0
-L05	18	K40	H	y	u	contradict	0
+L05	18	K40	H	i	u	contradict	0
 L05	19	K12	H	n	n	confirm	0
 L05	20	K05	H	e	e	confirm	0
 L05	21	K20	M	x	c	contradict	0

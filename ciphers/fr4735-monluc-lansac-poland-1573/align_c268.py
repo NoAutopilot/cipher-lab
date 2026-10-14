@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """MONL-ALIGN (14 Oct 2026): align the c268 (f.138) cipher lines 1-5 against the reconciled clear text of ff.140r-141r.
 
-Usage: python3 align_c268.py [--draws 200] [--seed 140] [--check] [--clear passes/align/f140r_passA.tsv]
+Usage: python3 align_c268.py [--draws 200] [--seed 140] [--check] [--clear passes/align/f140r_passA.tsv] [--no-fold-iy]
 
 Inputs: ciphertext_c268.tsv (pass A base, K38 relabel; the transcription as committed), key.tsv (Tomokiyo's published Monluc
 Cipher 1 table), clear_f140.tsv (MONL-ALIGN reconciled clear text of ff.140r-141r; a word in [..] is unsure, still used).
 Method (no cryptanalysis; every meaning comes from the clear text): one dynamic-programming alignment of the whole c268 token
 stream against a local span of the whole clear letter (free start and end in the clear). A keyed token takes one clear
-letter (+2 when it equals its table letter, i/j, u/v folded; -1 when it differs = a contradiction) or none (-2, an extra sign);
+letter (+2 when it equals its table letter, i/j/y, u/v folded (y since MONL-EYE); -1 when it differs = a contradiction) or none (-2, an extra sign);
 a clear letter no token takes costs -2 (an omission); an unkeyed sign (?...) or a W: word token takes 0-14 clear letters at
 0 (-0.1 per letter) -- these are the name/code groups the clear text fills. Per token the result is confirm / contradict /
 extra / fill. Statistic: confirm share of keyed tokens (confirmed / keyed).
@@ -35,7 +35,11 @@ FILLS = {
 def fold(s):
     s = unicodedata.normalize('NFD', s.lower())
     s = ''.join(c for c in s if c.isalpha() and ord(c) < 128)
-    return s.replace('j', 'i').replace('v', 'u')
+    s = s.replace('j', 'i').replace('v', 'u')
+    return s.replace('y', 'i') if FOLD_IY else s
+
+
+FOLD_IY = True  # MONL-EYE (PREREG-MONL-IY.md): y -> i fold kept, all three registered conditions met; --no-fold-iy for the unfolded run
 
 
 def load_tokens():
@@ -190,8 +194,13 @@ def main():
     ap.add_argument('--seed', type=int, default=140)
     ap.add_argument('--check', action='store_true')
     ap.add_argument('--clear', help='sensitivity run: another clear TSV (e.g. a single blind pass); prints, writes nothing')
+    ap.add_argument('--no-fold-iy', action='store_true',
+                    help='sensitivity run without the MONL-EYE y -> i fold (PREREG-MONL-IY.md); prints, writes nothing')
     a = ap.parse_args()
-    global CLEAR
+    global CLEAR, FOLD_IY
+    if a.no_fold_iy:
+        FOLD_IY = False
+        print(run(a.draws, a.seed)[1]); return
     if a.clear:
         CLEAR = a.clear
         print(run(a.draws, a.seed)[1]); return
