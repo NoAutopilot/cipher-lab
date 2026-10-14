@@ -1,0 +1,23 @@
+# OBRED-6018 sheet calls, written before key.json is opened. Format: sheet<TAB>CTRL-CIPHER<TAB>CTRL-PLAIN<TAB>CTRL-PS<TAB>numeral-hit tiles<TAB>notes
+1	F	C	H	none	A letter with grey card; D,L signature leaves (Brederode); E letter end with signature+paraph; I,J address leaves + letter openings; others Dutch prose
+2	H	B	A	none	C,G signature+date endings; D,J grey cards; F blank opening; K address leaf with seal; others Dutch prose
+3	B	C	K	none	D,L signature endings; E,I address leaves; F letter with two signatures and short mark line 'V.S.F.' (plain); others Dutch prose
+4	F	H	G	none	B,D,E signature endings (B with paraph); C,I address leaves + openings; J grey card; others Dutch prose
+5	L	I	K	none	A,F address leaves (F seal); B grey card; C signature ending dated May 1618; E,F letter openings; others Dutch prose
+6	L	J	F	none	A,I signature endings with paraph; D address leaf + opening; C opening; others Dutch prose
+7	H	C	D	none	A French text in long lines; E Spanish letter; F grey card + Avvisi heading; G address leaf with seal + Latin/Italian text; J Italian list with marginal numbers (item counts, plain); K,L Italian letters; I faint
+8	E	K	F	none?	A,B,D,H,J,L Latin text; C pasted slips of short-line prose; G Latin + blank; I pasted lower slip with faint short marks in rows -- RE-LOOK at 1200 px
+9	J	G	E	none	B Latin numbered articles (VIII, IX...) and heading; H,L numbered Latin articles (article numbers); F,I letter openings / address leaf; others prose
+10	B	G	C	none	D address leaf with seal + opening; E Italian/French dense prose; H,I,K signature endings (K with paraph); J Dutch + Italian; L blank opening
+11	F	L	I	none	A,K endings dated May 1618 (French/Italian); E dense prose with short subscribed note; G address leaf + opening; J vertical docket note on blank verso (plain); others Dutch prose
+12	F	G	H	none	D address leaf + grey card; I signature ending with paraph dated July 1618; others Dutch prose
+13	I	K	E	none	A,F address leaves (F seal) + openings; C,D endings with 'Post data' paragraphs (prose); D signature with paraph dated July 1618; G blank opening; L opening dated 1618 + folded slip
+14	G	I	J	none	A,C,F,H signature endings (Aug 1618), F with French letter signed; E,H address leaves; L blank with yellow card
+15	E	J	C	none?	B Latin prose on left, right page carries a vertical column of isolated marks along the outer edge -- RE-LOOK at 1200 px; F,I signature endings with paraph; G Latin/Dutch with subscribed signatures; others prose
+16	F	L	I	none	A,H French prose; B,E,J Latin prose (B dated Sept 1618); C grey cards + opening dated Oct 1618; D short docket on blank; K French/Italian copies; G Dutch prose
+17	E	D	C	none	A,J,L address leaves + openings dated Oct 1618; H vertical marginal docket (plain); others Dutch/German prose
+18	K	J	B	none?	C blank with yellow card; D blank page with a faint short column of marks centre -- RE-LOOK at 1200 px; G address leaf with seal + grey card + 'Post data' opening; L address leaf + opening dated Oct 1618; others prose
+19	C	E	J	none	D Latin list of names with titles (a delegate list, plain); F Latin ending with roman-numeral date MDCXVIII; H,L address leaves with seal; I,K signature endings with paraph (Oct 1618); others prose
+20	B	C	F	none	A,H signature endings (Nov 1618); D,K address leaves (K seal + grey card); J 'Post data' heading; others prose
+21	I	G	F	none	H blank-ish page with a short pasted note of prose; J heading 'Extract ...' prose; K signature ending with paraph Dec 1618; others prose
+22	A	G	E	none	B,C,F Dutch prose (C signature ending dated Dec 1618); D grey card on blank
