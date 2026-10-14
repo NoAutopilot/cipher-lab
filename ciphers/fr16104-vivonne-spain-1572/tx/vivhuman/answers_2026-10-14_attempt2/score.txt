@@ -1,0 +1,1 @@
+attempt 2, the 8 retried tiles only (PREREG-VIVHUMAN Addenda B/C): W 6/7 = 0.857, R 1/1; 1 unanswered (Q04 left in unsorted with a 'checked' mark). score.py's pooled output on this settled.tsv (W 9/12, R 11/11) counts attempt-1 tiles kept in their committed piles on the attempt-2 page and is NOT the attempt-2 figure.

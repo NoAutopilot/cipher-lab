@@ -2868,6 +2868,27 @@ Requests: openapi.bnf.fr 1; subagent calls 0. Cost not visible to this session.
 **Finding (contact sheet, scratch, 14 Oct 2026):** on this hand the key's z sign (clerk letter a) and 3 sign (clerk letter d) are both 3-shaped: the f.201r z tiles at truth-a positions (one scored unflagged, three clerk-split) look like Q04/Q14/Q15/Q19 (truth d); the 11 truth-consistent 3 tiles of the three leaves are 3-shapes, while the 9 truth-consistent z tiles are mixed (x-like, s-like and 3-like shapes under one label). So a person (or reader) separating 3 from z by shape alone is asked to split one shape between two key values; the attempt-1 "wrong" placements are at least partly this, not only mislabelled exemplars. An eye impression (d rounder top, a flatter) is untested.
 **Resumed on the parent's decision (02:5x UTC):** PREREG-VIVHUMAN Addendum C pushed ab01d98ac before the build: look-alike piles drawn from all three truth leaves (f.102r, f.103r, f.201r) by one rule (only 1:1 tile, scored unflagged row, label in truth set), cap 12, seed 20261014. `build_inputs.py --attempt 2` now does this (f.102r/f.103r tiles on their committed line crops, untracked copies in tx/sorter_human2/pages/); attempt 1 still rebuilds byte-identically. Piles shown: 3 11, z 9, s 12, L 5, h 5, k 2 (under 3, shown); S and l none qualify (no pile). Built with tools/sign_sorter.py (blind, `mode blind`), title "Vivonne f.201r: 8 signs, second try", lede with the R12 sentence; 537 tiles, 37 piles, 1.9 MB. Preflight (`python3 tools/sorter_preflight.py ciphers/fr16104-vivonne-spain-1572/tx/sorter_human2/sorter_viv_human2.html`): PASS template, answerable (8 focus tiles, 36 named piles of 37, 0 unanswerable), right line (537 tiles, 0 off the 30 listed lines, 4 = 0.7% shape outliers), contact sheet (eyed), colour, gestures (217 checks), pan; preflight: PASS, exit 0. cvd_check --palette sorter_light: PASS, exit 0. **Published:** https://claude.ai/artifact/M1MRM2J7ZgF1VxCoqiJZgx (private to the owner, capabilities db; moves and piles listed empty after publishing). Scoring (the parent, when answered): as attempt 1 with --labels tx/sorter_human2/labels.tsv and --page tx/sorter_human2/sorter_viv_human2.html, then score.py restricted to the 8 tiles; reported as attempt 2 beside attempt 1 (Addendum B rule 4).
 
+## VIV-HUMAN2 result (parent, account 4, 14 Oct 2026, 03:0x UTC by date -u): attempt 2 on the eight retried tiles
+Page https://claude.ai/artifact/M1MRM2J7ZgF1VxCoqiJZgx (tx/sorter_human2/, PREREG-VIVHUMAN Addenda B and C, piles for the look-alike
+labels drawn from the three truth leaves). The owner answered at 03:0x UTC; db in tx/vivhuman/answers_2026-10-14_attempt2/ (7 moves,
+1 checked), applied with sign_sorter_apply (blind, 537 tiles, 7 moved), scored by hand on the eight retried tiles (per_tile.tsv,
+score.txt; score.py's pooled output on this page counts attempt-1 tiles kept in their committed piles and is not the attempt-2 figure).
+- **Attempt 2: 7 of 8 correct, 1 unanswered.** The three retried 3-vs-z tiles (Q14, Q15, Q19) went to pile 3 (truth d): correct. Q04
+  (the fourth) was opened and marked "checked" but left in unsorted: unanswered. Q12 -> L (truth r): correct. Q23 -> z (truth a):
+  correct. Q24 -> to (truth q) and Q25 -> n (truth t), the two tiles lost to R12 on attempt 1: both correct. By set: W 6/7 (0.857),
+  R 1/1.
+- Registered interpretation on attempt 2's own tiles: W >= 0.60 and R >= 0.90 -> "a person is an instrument for disputed positions of
+  this hand", qualified by n 8 and by the fact that these tiles were seen once before (attempt 1 withheld the truth, so no answer
+  leaked, but familiarity cannot be excluded). Attempt 1 stands as recorded (undecided). Descriptive only: the two attempts together
+  resolve 11 of the 12 W tiles and 11 of 11 R tiles.
+- Owner's notes, logged as sorter requirements: R14 (tiles arrived badly cut without his cutting them; label-defined piles still mix
+  shapes "that I can clearly see" even after the truth filter). The second note is a finding about the readers' label inventory,
+  not the page: a label such as z or s groups several glyphs on this hand (VIV-KEYV found the same for e), so a pile defined by a
+  machine label cannot be pure. The page's own cvd and preflight checks do not test pile purity; R13/R14 now say they must.
+- What it changes for the lane: the disputed positions of ink 63's best stretches (VIV-F191B's owner_questions.tsv) can go to the
+  owner as a clean-pile packet with a PREREG'd re-decode and a verifier behind it; the 3/z (d/a) pair is readable by a person when the
+  piles are built from certain-answer tiles, so it is not a context-only pair.
+
 ## Remaining gaps (VIV-HUMAN2 refresh, 14 Oct 2026; supersedes the VIV-F191 list, all its other lines kept)
 Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 read with key.tsv, gloss check PASS (N5-VIV54), window look-alike pass + re-decode, b2 + wrong-key PASS (N7-VIV54L); ink 53 Ink 52 f.164r-v read (VIV52-O, 13 Oct 2026): H 2,217 / M 404 / U 106 of 2,727, b2 + 200-wrong-key PASS.
 ff.170r-171v read, b2 + wrong-key PASS (N6-VIV53B), window look-alike pass + ': :' join + re-decode, b2 + wrong-key PASS again (N7-VIV53L); ink 63 ff.190r-194r read in full (f.194r L5-10 added by N7-VIV63G): b2 PASS on every part (N6-VIV63, N6-VIV63B,

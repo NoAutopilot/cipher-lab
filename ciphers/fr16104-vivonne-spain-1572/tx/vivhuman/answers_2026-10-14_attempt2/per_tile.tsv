@@ -1,0 +1,9 @@
+qid	set	sid	truth_set	plain	passA	passB	attempt1	attempt2	attempt2_ok
+Q04	W	f201r_L04_s1_01_019	3|h|k	d	3	z	z	unsorted	unanswered
+Q14	W	f201r_L03_s2_01_014	3|h|k	d	3	z	z	3	correct
+Q15	W	f201r_L05_s2_01_015	3|h|k	d	3	z	z	3	correct
+Q19	W	f201r_L18_s1_01_007	3|h|k	d	3	z	z	3	correct
+Q12	W	f201r_L13_s2_01_020	L|g	r	L	l	unsorted-b	L	correct
+Q23	W	f201r_L22_s2_01_019	P|s|z	a	S	s	unsorted-c	z	correct
+Q24	R	f201r_L21_s2_01_007	@|to	q	to	to	unsorted	to	correct
+Q25	W	f201r_L22_s2_01_004	#|R|n	t	R	t	unsorted	n	correct
