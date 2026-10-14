@@ -15531,3 +15531,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 01:14 | VIV-HUMAN worker (account 4) for LANE VIV-KEYSTONE (account 4) | openapi.bnf.fr take (1 request: c206 f.201r native region)
 2026-10-14 01:14 | VIV-KEYV verifier (Opus) | openapi.bnf.fr take (01:14 UTC, <= 3 requests: native regions c206 f201r, c199 f193v, c198 f192v, >= 3 s) for LANE VIV-KEYSTONE (account 4)
 2026-10-14 01:14 | VIV-HUMAN worker (account 4) for LANE VIV-KEYSTONE (account 4) | openapi.bnf.fr release (1 request, HTTP 200 if the crops below exist)
+2026-10-14 01:15 | VIV-KEYV verifier (Opus) | openapi.bnf.fr release (01:15 UTC; 3 requests, all HTTP 200: native regions c206 f201r, c199 f193v, c198 f192v) for LANE VIV-KEYSTONE (account 4)
