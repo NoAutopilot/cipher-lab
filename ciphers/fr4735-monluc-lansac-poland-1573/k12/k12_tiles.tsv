@@ -1,0 +1,11 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+k12	L02	36	K12	K12		check	contradiction	K04,K12,K25	K12 ?h_bar K05	K19		
+k12	L03	22	K12	K12		check	contradiction	K04,K12,K25	K36 K33 K34	K05 K25 K41		
+k12	L04	15	K12	K12		check	contradiction	K04,K12,K25	K37 K26 K38	K33 K66 K26		
+k12	L05	14	K12	K12		check	contradiction	K04,K12,K25	K05 K12 K38	K05 K30 K41		
+k12	L01	22	K34	K34		check	contradiction	K21,K34,K40,K53	K39 K09 K12	K26 K37 K34		
+k12	L03	3	K34	K34		check	contradiction	K21,K34,K40,K53	K14 K33	K10 K33 K12		
+k12	L03	21	K34	K34		check	contradiction	K21,K34,K40,K53	K26 K36 K33	K12 K05 K25		
+k12	L02	29	K14	K14		check	contradiction	K14,K17,K37,K67	?double_slash K33 K12	?double_slash K29 K26		
+k12	L04	5	K14	K14		check	contradiction	K14,K17,K37,K67	K34 K26 K12	K12 K29 K12		
+k12	L05	25	K14	K14		check	contradiction	K14,K17,K37,K67	?double_slash K10 K39	K09 K33 K12		

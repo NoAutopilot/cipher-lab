@@ -801,3 +801,57 @@ Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 5 internal gaps; cheapest next: image-check the 10 K12/K34/K14 contradiction positions on c268 L01-L05 and --try the survivors, ~$1.5; then the next c268 band against f.140r L10 on
 partial
+
+## MONL-K12: image check of the 10 K12/K34/K14 contradiction positions on c268 L01-L05 (14 Oct 2026, account 4, Opus, for LANE DEFAULT-A4-0935-14)
+
+Brief: .claude/briefs/runs/2026-10-14-acct4-default-0935-jobs.md, MONL-K12 (Wave 5; MONL-ALIGN's Verdict). Disk only: no host requests,
+no subagents. **Not blind**: I had read MONL-ALIGN's alignment (the clear letter each token faces) before looking, so nothing below is
+applied to ciphertext_c268.tsv, key.tsv or the grades; it is a lead for a value-blind sort.
+
+**Crops (pasted).** Strips from the folder's own MONLUC-KEY bands (look268/strips/, untracked, regen `python3 look268/build_tiles.py`
+from the repo root). `k12/k12_tiles.tsv` (the 10 positions, candidates = the cell the key gives plus the table cells for the clear
+letter: d K04/K25, y K21/K40 + K53, s K17/K37/K67) ->
+`python3 ../../tools/lookalike_pass.py windows --tiles k12/k12_tiles.tsv --passc look268/c268_passC.tsv --crops-glob 'look268/strips/c268_{line}.jpg' --out k12 --run k12_win --status all --desc look268/desc.tsv`
+-> 10 windows, 2 montages (k12/win/, untracked). The strips cut descenders, so L02-L04 were also re-cut taller (centre -60/+95 px)
+from images/src_..._f268_700_1500_2800_650.jpg with the bands' own shear (a = -0.032), k12/win/tall_{a,b}.png, untracked. L05 sits at
+y 586 of a 650 px source region, so its descenders are cut by the region itself and are not visible on disk.
+
+**What the image shows (my eye, non-blind):**
+| sign | positions | clear | shape seen | lead |
+|---|---|---|---|---|
+| K12 (n) | L02:36, L03:22, L04:15, L05:14 | d | a "q": bowl with a straight vertical stem. The confirmed-n K12 tokens beside them (L02 "m 9 F", "m 9 b", L03 "9 r", "9 o g") are a "9" whose tail sweeps left | pass A merged two cells: the straight-stem form is the table's K04 (d, drawn as a straight-stem 9); K04 is never labelled in c268 pass A. 3 of 4 clear on the image; L05:14 tail cut (also L05:12, an n, cannot be told apart there) |
+| K14 (p) | L02:29, L04:5, L05:25 | s | a tall stem hooked over at the top with a closed bowl at the lower right ("b" with a hooked ascender). The confirmed-p K14 at L02:14 is a different, "ß"-like form | pass A merged two forms under K14; the hooked one is nearest the table's K17 (s), which pass A never labels in c268. The same hooked form is L01:4, which MONL-ALIGN aligned to the bracketed "[poursuiteurs]": read as s, L01:1-12 decode "les s e r v i t e u r s" = **"les serviteurs" de lempereur**, so the bracketed clear word is probably wrong at f.140r L07 |
+| K34 (p) | L01:22, L03:3, L03:21 | y ("ny", "roy", "ny") | a small "ß" whose foot sweeps down-left; the confirmed-p K34 (L01:25 "esp-") is upright with a straight stem | weak: the sweeping form is closer to K53 (i, a long-tailed beta), which would read "ni", "roi", "ni"; the two beta cells are close on the table and in the hand |
+
+**--try (its own controls; key.tsv never written; logged in crossword_log.tsv, flag non-blind).**
+`python3 tools/decode_key.py ciphers/fr4735-monluc-lansac-poland-1573 --try K12=d,K14=s,K34=y --try-log ciphers/fr4735-monluc-lansac-poland-1573/crossword_log.tsv`
+- K12=d: n 20, statistic -389.3 bits, **reject** (n reads better at its other occurrences). The value K12 = n stands; the d tokens are
+  a different sign (lead: K04), not a second value of K12.
+- K34=y: n 7, -17.8 bits, **reject**.
+- K14=s: n 18 (both jobs), +122.4 bits over p, value-class null p95 150.1, positions null could not be built: **undecided**. Not accepted:
+  f.86's gloss confirms K14 = p at 3 tokens (c172 L02:48, L02:54, L03:40), so K14 cannot be s everywhere; the gain fits the image (a
+  second, hooked form labelled K14 in both jobs), not a new value.
+Survivors: no code value survives --try, so **key.tsv is unchanged**. What survives is three relabel leads (K12 -> K04 x4, K14 -> K17 x3
++ L01:4, K34 -> K53 x3), which are transcription questions for a value-blind reader, not key edits.
+
+Rule 7: `python3 ../../tools/decode_key.py . --check` -> "reading up to date" (exit 0); c268 C 92 / M 85 unchanged.
+Requests: none to any host. Subagents: none. Committed: k12/k12_tiles.tsv, k12/k12_win_tiles.tsv, k12/k12_win_prompt.md, k12/.gitignore.
+
+## Remaining gaps (MONL-K12, 14 Oct 2026)
+Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines 1-5 (177 tokens) C 92 / M 85 against the ff.140r-141r clear text (align confirm 0.805 vs shuffled-clear max 0.456); the 10 recurring contradictions image-checked: two-form merges in pass A's K12 and K14 labels, no key value changed.
+- the K12/K14/K34 two-form split - blocker: not-attempted; my eye check was non-blind; next: a value-blind sort of every K12, K14 and K34 token in c268 L01-L05 and c172 into forms against the table cells K04/K12, K14/K17, K34/K53 (one Sonnet call on lookalike_pass windows with those cells cut into the candidate sheet), then relabel and re-run align_c268.py --check, ~$1.5
+- rest of c268 (about 870 signs) and c264 against the ff.140r-141r clear text - blocker: not-attempted; outside this job's brief; next: two blind cipher passes of the next c268 band plus reconciliation, then align_c268.py on the longer stream, ~$3 per 5-10 lines
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py); the c268 alignment supplies known plaintext instead
+- a clean clear text of ff.140r-141r away from the c268 span - blocker: not-attempted; f.140r L07 "[poursuiteurs]" probably reads "serviteurs" (this job); next: an eye reconciliation of f.140r L01-L07 against the line crops, ~$1 per page
+- print check of the clear letter (Noailles vols I-III, Lettres de Catherine de Medicis) - blocker: not-attempted; outside this job's brief; next: phrase search of "serviteurs de lempereur" / "Roy de dannemarc qui ny pensa" with tools/print_check.py, ~$1
+- ff.211-223, f.87 margin, ff.50/56/60/80, items 17/18/112-120 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONL-K12, 14 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [x] clear-pages: ff.140r-141r transcribed and shown to be the clear text of c268 L01-L05 (MONL-ALIGN)
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell and checked against known plaintext on c268 L01-L05
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2; the clear letter itself not phrase-searched (gap above)
+- [ ] key-rebuild: --try rejects K12=d and K34=y, K14=s undecided; the contradictions are two-form label merges awaiting a blind sort (gap above)
+- [x] image-check: the 10 contradiction positions looked at on the c268 strips and taller re-cuts (MONL-K12, non-blind)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 5 internal gaps; cheapest next: value-blind sort of the K12/K14/K34 tokens into K04/K17/K53 forms and relabel, ~$1.5

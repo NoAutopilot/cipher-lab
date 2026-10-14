@@ -3,3 +3,6 @@ time	target	hypothesis	occurrences	statistic	null_pos_p95	null_val_p95	verdict	f
 2026-10-09 12:38	scratch c268 (blind_try.py)	K69=t	10	43.1	-36.6	-43.1	accept	non-blind
 2026-10-09 12:38	scratch c268 (blind_try.py)	K69=u	10	-73.3	6.7	-43.1	reject	non-blind
 2026-10-09 12:38	scratch c268 (blind_try.py)	K69=s	10	-67.7	-21.5	-43.1	reject	non-blind
+2026-10-14 11:12	ciphers/fr4735-monluc-lansac-poland-1573	K12=d	20	-389.3		-142.5	reject	non-blind
+2026-10-14 11:12	ciphers/fr4735-monluc-lansac-poland-1573	K14=s	18	122.4		150.1	undecided	non-blind
+2026-10-14 11:12	ciphers/fr4735-monluc-lansac-poland-1573	K34=y	7	-17.8		21.7	reject	non-blind
