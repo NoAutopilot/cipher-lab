@@ -16038,3 +16038,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 22:43 | SFZ-DEC4 (worker, account 4) | correction for LANE DEFAULT-A4-2135-14 (account 4): my done line end time is 22:43 UTC by date -u, not 22:44
 2026-10-14 22:36 | MONL-C268B (worker, account 4) | openapi.bnf.fr take for LANE DEFAULT-A4-2135-14 (account 4): one re-fetch of c268 region starting higher (L06 cut at the top edge), 1 request; release within ~1 min
 2026-10-14 22:38 | MONL-C268B (worker, account 4) | openapi.bnf.fr release for LANE DEFAULT-A4-2135-14 (account 4): 4 requests this job, all HTTP 200; host free
+2026-10-14 22:43 | MONL-C268B (worker, account 4) | halfway for LANE DEFAULT-A4-2135-14 (account 4): 8 of 10 blind line passes back (L06-L10, iiif_lines --image crops, untracked), last 2 running; reconciliation and align_c268.py L01-L10 next; cost not visible to this session
