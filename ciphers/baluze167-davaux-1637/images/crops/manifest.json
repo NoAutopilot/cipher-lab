@@ -3912,6 +3912,174 @@
    },
    "date": "08 Oct 2026",
    "note": "source region not committed (folder size); re-fetch from source_url, box in native page coords. Clear-text-only lines L01,L02,L15,L19 (f229r) and L07-L11 (f229v) were cut and dropped (no cipher). D1A-B167, 8 Oct 2026"
+  },
+  {
+   "crop": "b169f22r_L01_s1.jpg",
+   "source_url": "",
+   "source_file": "src_c048_f22r_1285,1140,2950,810.jpg",
+   "box": [
+    0,
+    0,
+    1600,
+    181
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 196,
+    "distance": 137,
+    "prominence": 112.6
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "b169f22r_L01_s2.jpg",
+   "source_url": "",
+   "source_file": "src_c048_f22r_1285,1140,2950,810.jpg",
+   "box": [
+    1350,
+    0,
+    2950,
+    181
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 196,
+    "distance": 137,
+    "prominence": 112.6
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "b169f22r_L02_s1.jpg",
+   "source_url": "",
+   "source_file": "src_c048_f22r_1285,1140,2950,810.jpg",
+   "box": [
+    0,
+    181,
+    1600,
+    387
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 196,
+    "distance": 137,
+    "prominence": 112.6
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "b169f22r_L02_s2.jpg",
+   "source_url": "",
+   "source_file": "src_c048_f22r_1285,1140,2950,810.jpg",
+   "box": [
+    1350,
+    181,
+    2950,
+    387
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 196,
+    "distance": 137,
+    "prominence": 112.6
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "b169f22r_L03_s1.jpg",
+   "source_url": "",
+   "source_file": "src_c048_f22r_1285,1140,2950,810.jpg",
+   "box": [
+    0,
+    387,
+    1600,
+    603
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 196,
+    "distance": 137,
+    "prominence": 112.6
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "b169f22r_L03_s2.jpg",
+   "source_url": "",
+   "source_file": "src_c048_f22r_1285,1140,2950,810.jpg",
+   "box": [
+    1350,
+    387,
+    2950,
+    603
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 196,
+    "distance": 137,
+    "prominence": 112.6
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "b169f22r_L04_s1.jpg",
+   "source_url": "",
+   "source_file": "src_c048_f22r_1285,1140,2950,810.jpg",
+   "box": [
+    0,
+    603,
+    1600,
+    796
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 196,
+    "distance": 137,
+    "prominence": 112.6
+   },
+   "date": "14 Oct 2026"
+  },
+  {
+   "crop": "b169f22r_L04_s2.jpg",
+   "source_url": "",
+   "source_file": "src_c048_f22r_1285,1140,2950,810.jpg",
+   "box": [
+    1350,
+    603,
+    2950,
+    796
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 196,
+    "distance": 137,
+    "prominence": 112.6
+   },
+   "date": "14 Oct 2026"
   }
  ]
 }
