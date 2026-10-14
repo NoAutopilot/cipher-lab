@@ -58,3 +58,15 @@ Report: correct share on W (n 13) and on R (n 12), each with the count of new-si
 4. The piles are labelled by the committed reconciliation, which on this leaf is close to the truth (circular); on ink 63 the piles
    would be noisier. A pass here is an upper bound on what the same packet does on ink 63.
 5. Nothing on the page names a key value; the pile names are the transcription's own sign labels (allowed on a blind page).
+
+## Addendum A (14 Oct 2026, 01:2x UTC by date -u; after a first page build, BEFORE publishing and before any answer exists)
+A box check by eye of the 25 question tiles on their line context (the worker could see each tile's committed label and truth set in
+questions.tsv while looking; stated, not hidden): 23 boxes hold exactly the one sign at their position; two do not, both on f.201r L04
+where VIV-CLS's map is crowded by joined pen units:
+- **Q06** (W, f201r_L04_s2_01_015, truth row 42): the box sits on the sign after the s (passA's neighbouring tokens S P m x: the map is off
+  by one there); a person could not answer it right.
+- **Q10** (R, f201r_L04_s2_01_011, truth row 38): the box holds two signs (the 6 and the joined sign after it).
+Both are dropped from the page and from the score (column `excluded` in questions.tsv; nothing is redrawn). The scored sets become
+**W = 12, R = 11** (23 tiles). The interpretation rule's cut points restated on these n, with the shares unchanged:
+W >= 0.60 means 8 or more of 12; R >= 0.90 means 10 or more of 11; W < 0.40 means 4 or fewer of 12. "Incomplete" = fewer than 19 of
+the 23 answered. The page title becomes "Vivonne f.201r: 23 signs to place". Everything else above stands.

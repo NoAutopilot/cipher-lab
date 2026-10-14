@@ -21,6 +21,8 @@ TRUTH = os.path.join(BT, 'vivonne1573-f201r-dev.truth.tsv')
 OUTS = os.path.join(BT, 'outputs', 'vivonne1573-f201r-dev')
 MAP = os.path.join(FOLD, 'tx', 'vivcls', 'real', 'map_r2_f201r.tsv')
 SEED, NW, NR = 20261014, 30, 12
+# PREREG-VIVHUMAN.md Addendum A (box check before publishing, no answer yet): box not on the position's one sign
+EXCLUDED = {'Q06': 'box on the sign after the s (map off by one)', 'Q10': 'box holds two signs (6 and the next)'}
 
 
 def rd(p):
@@ -84,10 +86,11 @@ def build():
     rng.shuffle(q)
     for i, x in enumerate(q, 1):
         x['qid'] = f'Q{i:02d}'
+        x['excluded'] = EXCLUDED.get(x['qid'], '')
     return q, dict(unflagged_scored=n_unfl, covered=n_cov, W=len(W), R=len(R))
 
 
-COLS = ['qid', 'set', 'sid', 'line', 'tpos', 'ref_sign', 'truth', 'plain', 'passA', 'passB', 'a_ok', 'b_ok']
+COLS = ['qid', 'set', 'sid', 'line', 'tpos', 'ref_sign', 'truth', 'plain', 'passA', 'passB', 'a_ok', 'b_ok', 'excluded']
 
 
 def render(q, st):

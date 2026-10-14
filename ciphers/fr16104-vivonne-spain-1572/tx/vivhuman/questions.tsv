@@ -1,27 +1,27 @@
 # VIV-HUMAN answer sheet (PREREG-VIVHUMAN.md): unflagged_scored 454, covered 217, W 13, R 204; seed 20261014
-qid	set	sid	line	tpos	ref_sign	truth	plain	passA	passB	a_ok	b_ok
-Q01	W	f201r_L22_s2_01_021	f201r_L22	51	n	#|R|n	t	n	r	1	0
-Q02	R	f201r_L17_s2_01_015	f201r_L17	42	o	Zu|a|o	u	o	o	1	1
-Q03	R	f201r_L20_s1_01_012	f201r_L20	12	#	#|R|n	t	#	#	1	1
-Q04	W	f201r_L04_s1_01_019	f201r_L04	22	3	3|h|k	d	3	z	1	0
-Q05	R	f201r_L19_s2_01_013	f201r_L19	40	tz	tz	i	tz	tz	1	1
-Q06	W	f201r_L04_s2_01_015	f201r_L04	42	s	P|s|z	a	S	s	0	1
-Q07	R	f201r_L04_s1_01_017	f201r_L04	20	7	7|m	e	7	7	1	1
-Q08	R	f201r_L11_s2_01_024	f201r_L11	58	6	6|f|j	l	6	6	1	1
-Q09	W	f201r_L08_s1_01_009	f201r_L08	11	s	P|s|z	a	S	s	0	1
-Q10	R	f201r_L04_s2_01_011	f201r_L04	38	6	6|f|j	l	6	6	1	1
-Q11	W	f201r_L08_s1_01_007	f201r_L08	9	s	P|s|z	a	S	s	0	1
-Q12	W	f201r_L13_s2_01_020	f201r_L13	56	L	L|g	r	L	l	1	0
-Q13	R	f201r_L11_s1_01_009	f201r_L11	11	tz	tz	i	tz	tz	1	1
-Q14	W	f201r_L03_s2_01_014	f201r_L03	47	3	3|h|k	d	3	z	1	0
-Q15	W	f201r_L05_s2_01_015	f201r_L05	42	3	3|h|k	d	3	z	1	0
-Q16	W	f201r_L15_s2_01_017	f201r_L15	43	@	@|to	q	@	a	1	0
-Q17	R	f201r_L16_s2_01_007	f201r_L16	35	x	x	s	x	x	1	1
-Q18	R	f201r_L18_s2_01_012	f201r_L18	36	#	#|R|n	t	#	#	1	1
-Q19	W	f201r_L18_s1_01_007	f201r_L18	10	3	3|h|k	d	3	z	1	0
-Q20	R	f201r_L23_s1_01_011	f201r_L23	18	o	o	u	o	o	1	1
-Q21	R	f201r_L24_s1_01_003	f201r_L24	3	tz	tz	i	tz	tz	1	1
-Q22	W	f201r_L07_s2_01_022	f201r_L07	53	s	P|s|z	a	S	s	0	1
-Q23	W	f201r_L22_s2_01_019	f201r_L22	49	s	P|s|z	a	S	s	0	1
-Q24	R	f201r_L21_s2_01_007	f201r_L21	33	to	@|to	q	to	to	1	1
-Q25	W	f201r_L22_s2_01_004	f201r_L22	29	R	#|R|n	t	R	t	1	0
+qid	set	sid	line	tpos	ref_sign	truth	plain	passA	passB	a_ok	b_ok	excluded
+Q01	W	f201r_L22_s2_01_021	f201r_L22	51	n	#|R|n	t	n	r	1	0	
+Q02	R	f201r_L17_s2_01_015	f201r_L17	42	o	Zu|a|o	u	o	o	1	1	
+Q03	R	f201r_L20_s1_01_012	f201r_L20	12	#	#|R|n	t	#	#	1	1	
+Q04	W	f201r_L04_s1_01_019	f201r_L04	22	3	3|h|k	d	3	z	1	0	
+Q05	R	f201r_L19_s2_01_013	f201r_L19	40	tz	tz	i	tz	tz	1	1	
+Q06	W	f201r_L04_s2_01_015	f201r_L04	42	s	P|s|z	a	S	s	0	1	box on the sign after the s (map off by one)
+Q07	R	f201r_L04_s1_01_017	f201r_L04	20	7	7|m	e	7	7	1	1	
+Q08	R	f201r_L11_s2_01_024	f201r_L11	58	6	6|f|j	l	6	6	1	1	
+Q09	W	f201r_L08_s1_01_009	f201r_L08	11	s	P|s|z	a	S	s	0	1	
+Q10	R	f201r_L04_s2_01_011	f201r_L04	38	6	6|f|j	l	6	6	1	1	box holds two signs (6 and the next)
+Q11	W	f201r_L08_s1_01_007	f201r_L08	9	s	P|s|z	a	S	s	0	1	
+Q12	W	f201r_L13_s2_01_020	f201r_L13	56	L	L|g	r	L	l	1	0	
+Q13	R	f201r_L11_s1_01_009	f201r_L11	11	tz	tz	i	tz	tz	1	1	
+Q14	W	f201r_L03_s2_01_014	f201r_L03	47	3	3|h|k	d	3	z	1	0	
+Q15	W	f201r_L05_s2_01_015	f201r_L05	42	3	3|h|k	d	3	z	1	0	
+Q16	W	f201r_L15_s2_01_017	f201r_L15	43	@	@|to	q	@	a	1	0	
+Q17	R	f201r_L16_s2_01_007	f201r_L16	35	x	x	s	x	x	1	1	
+Q18	R	f201r_L18_s2_01_012	f201r_L18	36	#	#|R|n	t	#	#	1	1	
+Q19	W	f201r_L18_s1_01_007	f201r_L18	10	3	3|h|k	d	3	z	1	0	
+Q20	R	f201r_L23_s1_01_011	f201r_L23	18	o	o	u	o	o	1	1	
+Q21	R	f201r_L24_s1_01_003	f201r_L24	3	tz	tz	i	tz	tz	1	1	
+Q22	W	f201r_L07_s2_01_022	f201r_L07	53	s	P|s|z	a	S	s	0	1	
+Q23	W	f201r_L22_s2_01_019	f201r_L22	49	s	P|s|z	a	S	s	0	1	
+Q24	R	f201r_L21_s2_01_007	f201r_L21	33	to	@|to	q	to	to	1	1	
+Q25	W	f201r_L22_s2_01_004	f201r_L22	29	R	#|R|n	t	R	t	1	0	
