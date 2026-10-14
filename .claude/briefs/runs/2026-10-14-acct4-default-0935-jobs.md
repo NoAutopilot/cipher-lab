@@ -68,3 +68,25 @@ screenshots once from the source D2-FAIR / GF4-BATCH22 cite (keep untracked; man
 lines carrying a mark (two blind passes on line crops, one reconciliation: price per call), then run the D2-FAIR sweep harness extended with
 those schemes, planted-message control first and a null; target only if the control passes. Output: credit-lines TSV, NOTES "## FAIR-CRED",
 gaps/Verdict.
+
+## Wave 3 (10:1x UTC 14 Oct; after wave 1 reports; FAIR-CRED above is in this wave)
+
+### MONL-ALIGN (Opus, cap 10, box 120 min, openapi.bnf.fr <= 25): fr4735-monluc-lansac-poland-1573 transcribe ff.140r-141r and align c268
+MONL-140 (14 Oct) found ff.140r-141r to be a clear text of the letter whose cipher runs onto f.138 (c268): Verdict "transcribe ff.140r-141r
+(two blind passes + reconciliation) and align c268 against it, ~$9". Read MONL-140 first. Units, priced per call (CLAUDE.md Usage 6): line crops
+of f.140r, f.140v, f.141r with `tools/iiif_lines.py --iiif-host openapi` (crops untracked; manifest + regen command committed); pass A and pass B
+blind per page (6 calls) + 1 reconciliation, ~1.2 each; then align the c268 sign stream (and c264's end if it continues there) against the
+reconciled clear text with `tools/interlinear_align.py` (or decode_key.py's existing reading + a word-level pairing) and report: how many c268
+tokens the clear text confirms under the current key (C), how many it contradicts, and the name/code groups it fills (C, from known plaintext).
+Shuffled-clear control for the alignment score. Grades in the reading only through decode_key.py --check (rule 7). No print/novelty claims:
+whether the clear text is printed (e.g. in a Monluc or Lansac edition) is a lookup to note as not searched if you do not search it.
+Stop before a unit that would cross 80% of cap. Output: clear TSV, alignment TSV, NOTES "## MONL-ALIGN", gaps/Verdict, gaps_check.
+
+### OBRED-6017C (Opus, cap 3.5, box 75 min, NA <= 100 at >= 1.5 s): oldenbarnevelt-brederode-1605 inv. 6017 fill from scan 209
+As OBRED-6017B (same method, controls first), from scan 209 onward; record the last scan screened.
+
+### SFZ-REQ (Opus, cap 1, box 30 min, disk only): sforza-duke-1447-f15 REQUEST.md for the ASMi scat. 1597 keys
+Verdict (SFZ-KEYS): "write the ASMi scat. 1597 photoreproduction request (REQUEST.md + ASKS row) for the Filippo Maria Visconti 1446-47 keys,
+~$0.5". Follow an existing REQUEST.md in this repo as the model; the institution's public contact address from its own page with the date;
+subject, recipient and sign-off lines left for the person; no personal data (rule 9); one ASKS.md row. Not sent: the draft needs a gate-7
+`checked:` line from a separate session before anyone sends it (say so in the ASKS row).
