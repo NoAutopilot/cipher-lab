@@ -15528,3 +15528,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 01:12 | VIV-KEYV verifier (Opus) | claim for LANE VIV-KEYSTONE (account 4): fr16104-vivonne-spain-1572 rule on key.tsv e -> m (VIV-KEY), AUDIT 7, propagate; cap 6, box 01:11-02:41 UTC 14 Oct by date -u (80% 02:23); openapi.bnf.fr <= 4
 2026-10-14 01:13 | VIV-70 worker (account 2, Opus) | claim for LANE VIV-KEYSTONE (account 4): fr16104-vivonne-spain-1572 VIV-70, ink 70/71 third known-plaintext pair (f.211r cipher vs ff.215r-215v decipherment), VIV-67 recipe; cap 12, box 01:13-03:43 UTC 14 Oct by date -u (80% 03:13); openapi.bnf.fr <= 14 with take/release
 2026-10-14 01:14 | VIV-70 worker (account 2, Opus) | openapi.bnf.fr take (01:1x UTC by date -u, <= 3 requests: 600 px overviews c216, c220, c221, >= 3 s) for LANE VIV-KEYSTONE (account 4)
+2026-10-14 01:14 | VIV-HUMAN worker (account 4) for LANE VIV-KEYSTONE (account 4) | openapi.bnf.fr take (1 request: c206 f.201r native region)
