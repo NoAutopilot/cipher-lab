@@ -480,6 +480,39 @@ check("a registry solver repository with no cache and no --clone -> UNCHECKED-NE
 code, out = run(r, "fx-tvol", "--item-spec", "item_id=hc;shelfmark=TNA PRO 30/55/24/76;date=1780-07-06;sender=Clinton;recipient=Haldimand")
 check("Tomokiyo 'Clinton to Haldimand, New York, 6 July 1780, decoded' -> LEAD date-match", "date-match" in out and code == 4, out)
 
+# ---------------------------------------------------------------- 3. solver snapshot: volume in the heading, folio on another line (PW-FIX, 14 Oct 2026)
+LASRY = "sources/cyphersolver/2026-10-14-lasry/"
+lasry_notes = ("# Unidentified -> Unidentified, 1554/1555 a hypothesis, BnF Clairambault 1161\n\nStatus: no write-up\n\n"
+               "- Report status: 6/6 pages transcribed; 2/6 pages deciphered; 4 more in part\n\n"
+               "Gallica Selected pages f162r-f164v\n\nf163r - complete eight-line cipher paragraph\n")
+lasry_prof = '{"documents": [{"id": "clair1161", "read": "read in part", "shelfmark": "BnF Clairambault 1161"}]}\n'
+other_notes = ("# Someone -> Someone, 1600, BnF Clairambault 1161\n\n- Report status: 2/2 pages deciphered\n\n"
+               "Gallica Selected pages f200r-f201v\n")
+other_vol = ("# Someone -> Someone, 1600, BnF Clairambault 1162\n\n- Report status: 2/2 pages deciphered\n\n"
+             "Gallica Selected pages f162r-f164v\n")
+vol_only = "# Someone -> Someone, BnF Clairambault 1161\n\n- Report status: transcribed only\n"
+for slug, extra, want, label in (
+        ("fx-lasry1", {LASRY + "clair1161/NOTES.md": lasry_notes, LASRY + "clair1161/profile.json": lasry_prof}, "LEAD",
+         "must catch: a dated Lasry folder naming the shelfmark in its heading and the folios below -> LEAD, never CLEAR"),
+        ("fx-lasry2", {LASRY + "other1600/NOTES.md": other_notes}, "none",
+         "must NOT block: same volume, different folios (another item of Clairambault 1161) -> no LEAD/KNOWN"),
+        ("fx-lasry3", {LASRY + "other1600/NOTES.md": other_vol}, "none",
+         "must NOT block: same folios in Clairambault 1162 -> no LEAD/KNOWN"),
+        ("fx-lasry4", {LASRY + "volonly/NOTES.md": vol_only}, "CONTEXT",
+         "a solver file naming the unit's volume and no folio -> CONTEXT, not CLEAR")):
+    r = repo(target(slug, items=[item("c1", "BnF Clairambault 1161", "162r-164v")], extra=extra))
+    code, out = run(r, slug, "--item", "c1", "--step-type", "read")
+    rows = [l for l in out.splitlines() if "3-solver" in l and "sources/cyphersolver" in l and "registry" not in l]
+    lead = any(re.search(r"\b(LEAD|KNOWN)\s+3-solver", l) for l in rows)
+    clear = "CLEAR         3-solver" in out
+    if want == "LEAD":
+        ok = lead and not clear and code == 4
+    elif want == "CONTEXT":
+        ok = not lead and not clear and any("CONTEXT       3-solver" in l for l in rows)
+    else:
+        ok = not lead
+    check(f"solver snapshot: {label}", ok, f"exit {code} {out[-500:]}")
+
 # ---------------------------------------------------------------- 5. civil war: the real page shape and same-day entries
 eck2 = dict(eck)
 eck2["ciphers/eckert-1864/sources/mssEC18/p9714.json"] = ("copy", "huntington_p9714_text.json")

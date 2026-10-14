@@ -62,8 +62,10 @@ Checks (scope step = the job itself; scope plaintext = the item's text):
    with' = KEY-SOURCE; 'undeciphered' = no evidence; a volume-level line naming no folio = KEY-SOURCE or CONTEXT; the
    item's date with a correspondent's name = LEAD date-match); DECODE listings ('Partially decrypted' = KNOWN-PART;
    'Decrypted' = LEAD, it may be a key only; 'Non-decrypted' = CONTEXT, a status is evidence of nothing; a cached record
-   page with a cleartext document = LEAD); solver caches and --clone dirs, matched line by line (a reading file naming
-   the unit, not citing cipher-lab and not later than ours = KNOWN; any other mention CONTEXT duplicate-effort-risk; a
+   page with a cleartext document = LEAD); solver caches and --clone dirs, matched line by line, a folio line with no
+   volume of its own bound to the volume(s) its file and folder name (a reading file naming the unit, not citing
+   cipher-lab and not later than ours = KNOWN; an entry whose folder reports 'read'/'deciphered' = LEAD; a file naming
+   the unit's volume and no folio = CONTEXT; any other mention CONTEXT duplicate-effort-risk; a
    solver folder named for this target = CONTEXT, LEAD when it holds reading files and the unit has no folio); a
    registry solver repository with no cache and no --clone is UNCHECKED; holder notes quoted in NOTES/sources naming the
    unit with decipherment wording = LEAD. Sentences are classed with a negation lexicon ('no separate dechiffrement',
@@ -120,14 +122,16 @@ Must catch (tools/tests/test_prior_work.py, offline, sockets guarded): a NOTES '
 (KNOWN, exit 2; --known-answer key-check exit 0); an AUDIT line classing the item as already known (KNOWN); a NOTES period
 gloss on THIS leaf (KNOWN); a hard-wrapped AUDIT paragraph recording a partial period decipherment (KNOWN-PART);
 --register flagging the NEXT-STEPS row whose step is done; an edition window with its control hit (LEAD); a decoded
-phrase printed within 3 days (SUBSTANCE).
+phrase printed within 3 days (SUBSTANCE); a dated solver snapshot folder naming the shelfmark in its heading and the
+folios on a later line (sources/cyphersolver/2026-10-14-lasry/clair1161: LEAD, never CLEAR; PW-FIX, 14 Oct 2026).
 Must NOT block: the E78 shape (KNOWN-PART, exit 0, code words as residue, chosen by entry number on the real page shape);
 a gloss on a DIFFERENT letter on a neighbouring leaf (CONTEXT); 'no interlinear gloss on the leaf' / 'no decipherment
 attached' (CLEAR, never KNOWN); our own depth line and a modal 'more likely to have existed' (no KNOWN); DECODE
 'Non-decrypted' (no KNOWN, no CLEAR); fr.16104 vs fr.16105 at the same folio, also in one sentence (no match); a fetch
 or image-check marker, or 'already'/'thread'/'spread', for a read step (no DONE); a different same-day entry on the same
 ledger page (no DONE); a check that could not run (UNCHECKED, never CLEAR); a claim on another slug that merely contains
-this one; a second-audit on an already-classed item (never DONE).
+this one; a second-audit on an already-classed item (never DONE); a solver snapshot of another item of the same
+volume at other folios, or of the same folios in another volume (no LEAD, no KNOWN).
 
 Rollout: warn-first -- workers run it and paste the output; enforcement on new briefs waits for the leave-one-target-out
 replay and a measured false-block rate on research/PRIOR-WORK-SURVIVORS-2026-10-08.tsv.
@@ -1239,12 +1243,26 @@ def solver_caches(ctx, item, u, terms):
             if re.search(r"profile\.json|NOTES\.md$|README\.md$", p):
                 cvols |= sm.volume_keys(open(p, encoding="utf-8", errors="replace").read()[:20000])
         named = sm.match(u, base, ctx.multi_volume, context_vols=cvols) == "exact"
+        # PW-FIX (14 Oct 2026): a snapshot entry often names the volume in its heading and the folio on another line
+        # ("# ..., BnF Clairambault 1161" / "Gallica Selected pages f162r-f164v"); a folio line with no volume of its
+        # own is bound to the volume(s) the file and its folder name, and counts only when those are all the unit's.
+        # A '# ...' heading that names a volume is the entry's own volume ('Key elsewhere: Dupuy 63' further down
+        # does not make the entry two-volume); without one, every volume the file and its folder name.
+        head = next((l for l in text.splitlines() if l.startswith("#")), "")
+        fvols = {v for v in sm.volume_keys(head) if not v.startswith("hint:")} or \
+            {v for v in sm.volume_keys(text[:200000]) | cvols if not v.startswith("hint:")}
+        own_vol = bool(u.vols & fvols)
+        for line in ([] if named else text.splitlines()):
+            if sm.match(u, line, ctx.multi_volume, context_vols=fvols if own_vol else cvols) == "exact" and (
+                    pat.search(line) or (own_vol and fvols <= u.vols)):
+                named = True
+                break
         if not named:
-            for line in text.splitlines():
-                if pat.search(line) and sm.match(u, line, ctx.multi_volume, context_vols=cvols) == "exact":
-                    named = True
-                    break
-        if not named:
+            if own_vol and fvols <= u.vols and not (sm.leaves(text) or sm.parse(text).canvases) and not sm.parse(text).ids:
+                folders_hit.add(folder)
+                rel = os.path.relpath(path, ctx.root) if path.startswith(ctx.root) else path
+                hits.append(ctx.row(item, "plaintext", "3-solver", rel, "CONTEXT",
+                                    f"solver file names the unit's volume and no folio: may cover this unit, open it: {rel}"))
             continue
         rel = os.path.relpath(path, ctx.root) if path.startswith(ctx.root) else path
         when = (re.search(r"20\d\d-\d\d-\d\d", path) or [""])[0]
@@ -1256,6 +1274,9 @@ def solver_caches(ctx, item, u, terms):
             ours = our_first_reading(ctx) if ours is None else ours
             v = "CONTEXT" if (ours and when and ours < when) else "KNOWN"
             ev = f"solver reading file (snapshot {when or '?'}; ours earliest {ours or 'none'})"
+        elif re.search(r'"read"\s*:\s*"read|(?<!un)(?<!not )(?<!no )\bdeciphered\b', ctxt, re.I):
+            v, ev = "LEAD", (f"solver entry naming the unit reports a reading or decipherment (snapshot {when or '?'}): "
+                             "open it before reading; a key or part reading may be published")
         else:
             v, ev = "CONTEXT", "duplicate-effort-risk (catalogue/planning line, not a reading)"
         folders_hit.add(folder)
