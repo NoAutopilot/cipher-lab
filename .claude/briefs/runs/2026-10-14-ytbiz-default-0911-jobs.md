@@ -132,3 +132,14 @@ glossed, bare, or not cipher). Take/release ROOM lines for openapi.bnf.fr (accou
 survey.tsv rows only; volumes gap line; Verdict; gaps_check. No transcription.
 
 Wave 3 sessions (spawned 09:58 UTC): SALV-EYE session_013uMsc1tmfwy8Tq5769bGer; BAL171-SWEEP session_01DRyrLBsj1mt2ZTVYeSZTNk.
+
+## Wave 4 (10:2x UTC 14 Oct) -- two in flight max
+SALV-EYE: the SALV-MAP3 PASS rests on 5 eye-contested types (gate misses without them); next is a person's look, not a worker.
+googleapis 503 again at 10:20 (Verbael read, eckert control stay parked).
+
+### COL26-C51 (Opus, cap 4.5, box 75 min): colbert26-lathuillerie-1644, pooled held-out word grain for 20 = i
+The folder's line: "pair c51 (3 occurrences of 20, two blind passes) and pool with c33 (COL26-C33) and c62/c63 (DA1-COL3's pass), stage 0
+power check before any vision; ~$4". STAGE 0 FIRST, disk only: compute the pooled N for 20 and the power of the COL26-C33 test at that N
+under its PREREG null; PREREG (pushed) the pooled gate; if power < 0.5, stop there and log "too-short at pooled N=<n>" (no vision call).
+Only if power clears: crop step pasted (tools/iiif_lines.py), two blind word-grain passes of c51 (~1.2 each), reconciliation (~0.8), pooled
+score + control. Gallica IIIF only if c51 crops are not on disk (<= 20 requests, >= 2 s). --try for 20 = i; no key edit.
