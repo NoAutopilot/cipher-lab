@@ -515,3 +515,50 @@ Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0
 - [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
 - [ ] retry: DECODE scat. 1597 nos. 79-114 and 169-171 by heading, then any 1440s sheet through the g1 gloss scorer
 Verdict: keep going: 3 internal gaps; cheapest next: DECODE scat. 1597 nos. 79-114 and 169-171 by heading, one login (~45 requests), ~$2
+
+## SFZ-DEC4 (14 Oct 2026 22:32-22:5x UTC by date -u, account 4, LANE DEFAULT-A4-2135-14): DECODE scat. 1597 nos. 79-105 by heading -- one Aragon sheet (no. 98, Alfonso V with Galceran de Requesens), not the slips' key
+Job: SFZ-G1's named next step: nos. 79-114 and 169-171 by heading, SFZ-DEC3's method; for any Visconti/Barbavara/Aragon or 1446-47 key the
+SFZ-DEC3 stock-overlap test against random stocks; no decode, no blind reads. Credit as SFZ-DEC (Bourdeau's thumbnail scan of the 1597 records).
+- **Route.** One browser login (`tools/decode_browser_login.js 5379 --max-files 0 --delay 2500 --listen`), record N = DECODE 5300+N confirmed
+  on RecordsView/5379 ("Carteggio_Sforzesco_scat._n.1597_79"). Next PDF requested by guessed file id, RecordsView only on a miss (driver kept in
+  the scratchpad, not committed: same logic as SFZ-DEC3). 59 requests (login run 2; listener 57: 14 RecordsView pages, 43 file gets of which
+  27 PDFs and 16 placeholders) reached **no. 105**; one further guess for no. 106 missed and the limit was kept. Multi-page records (81, 85,
+  87, 90, 100, 105) were fetched at P1 only, which in five of them is a later folder cover. Table `decode_1597/records.tsv` (rows 5379-5405),
+  files and sha1s `decode_1597/manifest.json` (PDFs not committed). Headings read by one reader from 110 dpi renders of each page top.
+- **What nos. 79-105 are.** Keys with a Sforza-era heading or nomenclator: 79 (nomenclator Rex Ferdinandus: after 1458), 92 the Duchess of
+  Milan with King Ferdinand ("Mediolani die xvi Martii"), 93 Prospero Camogli ("1459"?), 95 the Duke of Calabria, 97 Giovanni Andrea Bochario,
+  99 a ducal chancellor(?), 101 Francesco Tranchedino; 89 "Zifra Petri [...] Germano fratri suo" (undated); 86 "Anonimo" (later fair copy);
+  102 heading damaged; 104 Italian nomenclator naming the Elettori del Imperio and the Cantoni Cattolici (16th century). Not keys: 80, 88,
+  90, 91 (cipher or mixed letters and a period copy), 82 (an Italian phrase code list), 83 (a clear letter to the Camerlengo). Covers: 81,
+  85 ("Senza nome del Corrispondente che ne faceva uso"), 87, 100, 105. Unheaded keys: 84, 94, 96, 103 (not C-pair checked). **No sheet
+  headed Filippo Maria, Visconti or Barbavara.**
+- **No. 98 (R5398), "Cifra Regie M.tis cum dno Galcerando de Requesens classis capitaneo"** (later margin: "Ciffre", "Cum Cathalanis"(?)).
+  The King's key with Galceran de Requesens, captain of the fleet; the King is most likely Alfonso V of Aragon (died 1458), whose fleet
+  Requesens commanded (inferred from the names, grade I; the date is not on the sheet). It is the only Aragon key in nos. 79-105 that may
+  fall in Filippo Maria's lifetime, but it is a key between the King and his own captain, not one with Milan. Test:
+  - Sign-stock overlap (`dec4/overlap_dec4.py`, output `dec4/overlap_dec4.out`; SFZ-DEC3's statistic and null). Stock `dec4/stock_r5398.tsv`
+    (one reader, by eye, NOT blind, grade M): 18 labels (14 firm). **Coverage 0.413**; random 18-label stocks (10,000, seed 5398) mean 0.450,
+    p95 0.600, P(>=) = 0.65. Firm-only: 0.326 vs mean 0.349, p95 0.499, P(>=) = 0.59. Not above chance.
+  - C pairs by eye: the a column holds a plain o (not the Duke's o with a long tail), m and c; the o, d, h, r and n columns carry none of
+    the Duke's y, "<o", double-barred stroke, xh ligature, cursive r or cursive n: 0 of 7 (1 of 7 if the plain o is counted).
+  - Nos. 92 and 95 are Aragon-of-Naples keys after 1458 (Ferdinand; the Duke of Calabria) and fall after the Duke's death (Aug 1447): not
+    tested.
+- Not opened: nos. 106-114 and 169-171; second pages of 81, 85, 87, 90, 100 and 105.
+- Requests: de-crypt.org 59. No model subagent calls. Cost not visible to this session.
+
+## Remaining gaps (SFZ-DEC4, 14 Oct 2026)
+Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0.441 mean held-out, 2 units; anchored 0.422); DECODE R5323: blind identification gate PASS at threshold (SFZ-R5323B) but its blind-read key FAILs the f.5/f.8 gloss gate (SFZ-G1, p 0.14), so no period key is identified; DECODE scat. 1597 nos. 1-105 opened by heading, none headed Filippo Maria/Visconti/Barbavara; R5398 (Aragon, Requesens) not the slips' key (coverage p 0.65)
+- R5323 key - blocker: not-attempted; blind Sonnet reading of the sheet is retired (SFZ-R5323, SFZ-R5323B, SFZ-G1), the untried instrument is a person's cell-by-cell read of R5323's alphabet block, then the same g1 scorer unchanged; next: draft an ASKS row for that read, ~$0.5
+- f.15 decode - blocker: waiting-on ASKS row 165 (the owner's blind sort of f.5+f.8 signs) for the transcription route; no key is identified for f.15
+- f.17 blanks vs f.15 - blocker: not-attempted; whether f.15's cipher fills f.17's two blanks is unexamined; next: only after a readable key, ~$1
+- DECODE scat. 1597 rest - blocker: not-attempted; nos. 106-114 and 169-171 unopened, P2 of the five cover records (81, 85, 87, 100, 105) and of 90 unfetched, and the unheaded sheets in 36-105 not C-pair checked; next: one login by the guess route, nos. 106-114, 169-171 and the six P2 files (~30 requests), ~$1.5
+
+## Escalation (SFZ-DEC4, 14 Oct 2026)
+- [x] siblings: the Duke's glossed pairs f.5/f.7 and f.8/f.10 used; f.23-24/f.26, f.30-31/f.29, f.36-37/f.35 not yet
+- [x] clear-pages: f.17 (same-day clear letter) noted as context; no copy of f.15 exists in the volume per Mazzatinti
+- [ ] known-keys: DECODE scat. 1597 nos. 1-105 opened by heading (SFZ-DEC, -DEC2, -DEC3, -DEC4); R5323 key FAILs the f.5/f.8 glosses (SFZ-G1); R5350 and R5398 not the slips' key by stock overlap; nos. 106-114 and 169-171 not opened
+- [ ] print: no print of f.15 located (check-solved above); verifier pass belongs to a later reading
+- [x] key-rebuild: attempted, G1 FAIL
+- [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
+- [ ] retry: DECODE scat. 1597 nos. 106-114, 169-171 and the six second pages by heading, then any 1440s sheet through the stock-overlap test and the g1 gloss scorer
+Verdict: keep going: 3 internal gaps; cheapest next: DECODE scat. 1597 nos. 106-114, 169-171 and six P2 files by heading, one login (~30 requests), ~$1.5

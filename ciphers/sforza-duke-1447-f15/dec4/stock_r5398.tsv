@@ -1,0 +1,23 @@
+// R5398 (DECODE scat. 1597 no. 98, "Cifra Regie M.tis cum dno Galcerando de Requesens classis capitaneo") alphabet-block sign stock in duke_labels.md labels.
+// One reader (SFZ-DEC4, 14 Oct 2026), by eye from a 200 dpi render, NOT blind (the reader knew the Duke's labels and C pairs); grade M.
+// Column 'firm' = 1 for a clear shape match, 0 for a doubtful one; the script reports the full stock and the firm-only stock.
+// Shapes with no duke_labels.md label (= , w-shape, inverted v, box, triangle, z with tail, infinity) are omitted.
+label	firm	shape_on_sheet
+g	1	9-shape with descender (under r, row 2; under p)
+8	1	figure 8 (under g, row 4)
+c	1	c-shape (under a, row 4)
+cm	1	cursive m (under a, row 3; under p, row 3)
+cu	1	cursive u (under q, row 4)
+b	1	b-shape (under d, row 1)
+N3	1	2-shape (under z, row 3; under o, row 4)
+q	1	q with stroke (under e, row 2; under p, row 3)
+N6	1	6-shaped open loop (under c, row 2)
+N9	1	reversed c (under d, row 2)
+N13	1	pi (under v, row 4)
+3	1	plain yogh (under 3, row 3)
+x	1	x (last column, row 4)
+f	1	long s with crossbar (under h, row 1)
+N4	0	L-shaped corner (under o, row 4)
+ce	0	e-shape (under e, row 1)
+t	0	dagger/plus (under p, row 2)
+N12	0	two/three dots (under i, row 3; under y, row 1)

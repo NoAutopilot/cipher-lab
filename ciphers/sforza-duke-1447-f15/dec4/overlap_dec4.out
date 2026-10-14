@@ -1,0 +1,3 @@
+Duke tokens 1741, label pool 40
+R5398 full stock 18 labels ['3', '8', 'N12', 'N13', 'N3', 'N4', 'N6', 'N9', 'b', 'c', 'ce', 'cm', 'cu', 'f', 'g', 'q', 't', 'x']: coverage 0.413; random 18-label stocks mean 0.450, p95 0.600; P(>= R5398) = 0.6487
+R5398 firm stock 14 labels ['3', '8', 'N13', 'N3', 'N6', 'N9', 'b', 'c', 'cm', 'cu', 'f', 'g', 'q', 'x']: coverage 0.326; random 14-label stocks mean 0.349, p95 0.499; P(>= R5398) = 0.5875
