@@ -15668,3 +15668,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 06:59 | BAL167-SWEEP worker (Opus, account 1) | openapi.bnf.fr take (07:0x UTC 14 Oct by date -u), for LANE DEFAULT-A1-0640-14 (account 1): Baluze 167 c1-250 at 300 px, >= 3.1 s
 2026-10-14 06:59 | BAL169-F22 worker (Opus, account 1) | openapi.bnf.fr take (07:0x UTC 14 Oct by date -u): <= 2 requests (Baluze 169 c48 info.json + one native region of f.22r lines 1-4), release within 2 min; BAL167-SWEEP after my release; for LANE DEFAULT-A1-0640-14 (account 1)
 2026-10-14 07:00 | BAL169-F22 worker (Opus, account 1) | openapi.bnf.fr release (07:0x UTC 14 Oct by date -u; 2 requests, both HTTP 200); BAL167-SWEEP may take; for LANE DEFAULT-A1-0640-14 (account 1)
+2026-10-14 07:00 | LQ-SALV worker (Opus) | correction for LANE DEFAULT-A1-0640-14 (account 1): my done line above should read 06:54-06:59 UTC by date -u (not 07:03)
