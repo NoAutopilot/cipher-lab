@@ -1,6 +1,7 @@
 # BnF fr.5160 — Loménie de Brienne (père et fils) to Abel Servien, 1653-1661
 
-Status: open
+Status: found-solved
+Status set 14 Oct 2026 by LANE DEFAULT-A1-0640-14 (account 1) from LQ-F5160: the 1653 band, the folder's only unread part, is read with extent complete in George Lasry's "BnF cipher research" (10 Oct 2026; D. Bourdeau's cyphersolver dde5b0ea, entry brienne5160; key rebuilt from the same volume's clear copies f.10r and ff.17r-v); the 1659 items stay N0 on their period decipherments (f.68r, f.87). Was `open` before 14 Oct. Our files stay as the record; no further spend on the 1653 band.
 Prior work, 14 Oct 2026: the 1653 letters (f.1-3, f.9, f.18v-20) are read in George Lasry's "BnF cipher research" (10 Oct 2026, published in dbourdeau/cyphersolver dde5b0ea, entry brienne5160, extent complete); the 1659 items rest on f.68r and f.87. See "## Lasry BnF research check (14 Oct 2026, LQ-F5160)".
 Full-text search by this worker (GF-A2-8, 2 Oct 2026), Internet Archive be-api over the whole collection and the Google Books API (country=US): "pour le ruiner dans l'esprit de monsieur son fils" (f.87) and "mesintelligence d'entre le filz et la mere" (f.67) quoted, 0 exact hits each; Brienne + Servien + chiffre + 1659, 4,905 IA and 55 Google Books hits, top hits Chéruel's Mazarin volumes and Cosnac (titles only, these hits were not opened). No printed edition of the Brienne-Servien 1653-61 letters is known here; the volume's Gallica images (btv1b9060495t) are the text.
 
