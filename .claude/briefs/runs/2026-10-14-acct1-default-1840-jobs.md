@@ -94,3 +94,19 @@ cipher letter, 1000 px looks priced ~0.15 each). Start only after BAL-LOOKS has 
 ### BAL171-TAIL (Opus, cap 4, box 75 min, openapi.bnf.fr <= 45): baluze167-davaux-1637 Baluze 171 canvases 251-464 sweep
 Verdict: "Baluze 171 canvases 251-464 (~$3)". As BAL171-SWEEP's method (it covered c1-250), 1000 px looks priced ~0.15 each. Not concurrently
 with BAL168-TAIL on the host (take/release). NOTES "## BAL171-TAIL", gaps + Verdict.
+
+## Wave 2b (19:1x UTC 14 Oct, from wave 1 results)
+
+### SFZ-R5323 (Opus, cap 3, box 60 min, de-crypt.org: one browser login, <= 15 requests): sforza-duke-1447-f15 blind test of DECODE R5323
+SFZ-DEC2 (14 Oct): no. 23 (R5323, "Filippo Maria Duca di Milano") agrees 5/7 with the f.5/f.8 C pairs by eye, one unblinded reader (M); next
+"blind transcription of R5323 + scripted C-pair score, ~$2". Read SFZ-DEC2. Fetch R5323 (and R5324 if a separate image) at full size once.
+PREREG first (statistic: agreeing C pairs; control: the same score on >= 10 other scat. 1597 keys already on disk or in the same fetch, plus a
+shuffled-value null), then two blind transcriptions of the key table by subagents that do not see the f.5/f.8 pairs (line/strip crops, priced
+per call) + 1 reconciliation, then the scripted score. If the gate passes, apply the key to f.15/f.5/f.8 with `decode_key.py` as grade H only
+for table cells both passes agree on, `--check` exit 0. Scrub the account name from anything saved; no image file in git. NOTES "## SFZ-R5323".
+
+### CL571-9429 (Opus, cap 2, box 45 min, de-crypt.org: one browser login, <= 12 requests): clair571-estrades-1645 fetch DECODE R9429
+Verdict (CL571-417): "fetch DECODE R9429 (Clair 417 f.236, 3 pages) and compare with 9431, ~$1.5". `tools/decode_browser_login.js 9429`
+(`--guess-fullsize` per A2-HDK), the 3 images and 2 documents; say whether the Decrypted status carries a key or a plaintext; compare its code
+stock with keys_decode/9431_key.tsv (same-code count with a shuffled control, no decode campaign). Not concurrently with SFZ-R5323 on the host
+(de-crypt.org take/release). Scrub the account name; no image file in git. NOTES "## CL571-9429", gaps + Verdict.
