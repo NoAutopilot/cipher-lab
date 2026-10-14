@@ -3740,7 +3740,7 @@ Verdict: keep going: 1 internal gap; cheapest next: crib placement-likelihood sc
 
 ## Lasry BnF research check (14 Oct 2026, LQ-SALV)
 Worker LQ-SALV (Opus), brief `.claude/briefs/runs/2026-10-14-acct1-default-0640-jobs.md` "LQ-SALV", LANE DEFAULT-A1-0640-14
-(account 1), 06:54-07:0x UTC by date -u. A record check, not cryptanalysis: no re-solving, no key edit, no token re-graded.
+(account 1), 06:54-06:59 UTC by date -u. A record check, not cryptanalysis: no re-solving, no key edit, no token re-graded.
 Source: George Lasry's `salviati1525` in github.com/dbourdeau/cyphersolver (HEAD b0af20a4a277, folder added in dde5b0ea);
 snapshot unmodified at `sources/cyphersolver/2026-10-14-lasry/salviati1525/` (NOTES.md, profile.json, lasry_p031_1.png = his
 key table). Hub page dbourdeau.github.io/cyphersolver/lasry-bnf.html read once (200): its row gives no per-leaf detail beyond
