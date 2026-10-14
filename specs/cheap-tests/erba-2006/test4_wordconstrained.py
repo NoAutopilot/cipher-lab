@@ -3,7 +3,11 @@
 Pre-registered in PREREG-test4.md (pushed before the scored run). xs = word space; 8 token types = 8 letter classes;
 a cipher word decodes only into an it21news dictionary word with the same class pattern. Control first (5 seeds,
 held-out fold, target's exact word-length profile); target and 10 shuffled nulls only if the control mean >= 0.60.
-Usage: python3 test4_wordconstrained.py [--quick]"""
+Usage: python3 test4_wordconstrained.py [--quick]
+       python3 test4_wordconstrained.py --siblings --budget 4 --jobs 4   (ERBA-SIB, 14 Oct 2026, PREREG-test4b.md): adds the
+       two 2013 press sibling phrases (ciphers/erba-2006/ciphertext_siblings_2013.txt) as two more segments, multiplies ITERS
+       by --budget, runs anneals in --jobs processes with per-job seeds, and gates on EVERY primary control seed >= 0.60
+       (not the mean). Output: test4b_output.txt. The default call is unchanged (rule 7 for test4_output.txt)."""
 import gzip, math, os, random, sys
 from collections import Counter
 import numpy as np
@@ -19,6 +23,12 @@ MAP = {'j': 'i', 'k': 'c', 'w': 'v', 'x': 's', 'y': 'i'}
 K, NDICT, NCTL, RESTARTS, ITERS, GATE, NNULL, UNM = 8, 40000, 5, 8, 4000, 0.60, 10, math.log(0.01)
 TYPES = ['cu', 'mi', 'fi', 'un', 'ro', 'ne', 'pi', 'me']
 if '--quick' in sys.argv: NCTL, RESTARTS, ITERS = 1, 2, 800
+SIB = '--siblings' in sys.argv
+def _opt(name, d):
+    return int(sys.argv[sys.argv.index(name) + 1]) if name in sys.argv else d
+BUDGET, JOBS = _opt('--budget', 1), _opt('--jobs', 1)
+ITERS *= BUDGET
+SIBFILE = os.path.join(ROOT, 'ciphers/erba-2006/ciphertext_siblings_2013.txt')
 
 
 def words(fold):
@@ -32,7 +42,10 @@ def target_words():
     lines = [l.split() for l in open(os.path.join(HERE, 'transcription_bERB.txt')) if l.strip()]
     toks = [[t.rstrip('-').lower() for t in l] for l in lines]
     out = []
-    for s in [sum(toks[0:17], []), sum(toks[17:20], []), sum(toks[20:22], [])]:
+    segs = [sum(toks[0:17], []), sum(toks[17:20], []), sum(toks[20:22], [])]
+    if SIB:
+        segs += [[t.lower() for t in l.split()] for l in open(SIBFILE) if l.strip() and not l.startswith('#')]
+    for s in segs:
         cur = []
         for t in s + ['xs']:
             if t == 'xs':
@@ -155,5 +168,63 @@ def main():
     return 0
 
 
+G = {}
+
+
+def _job(a):
+    kind, seed, payload = a
+    rng = random.Random(seed)
+    dic = G['dic']
+    if kind == 'ctl':
+        tk = rand_partition(rng)
+        cws = [[int(tk[IX[c]]) for c in w] for w in payload]
+        s, k = anneal(dic, cws, rng)
+        _, dec = dic.score(k, cws, True)
+        ts, tdec = dic.score(tk, cws, True)
+        return (acc(dec, payload), acc(tdec, payload), s >= ts - 1e-9, s, ts, ' '.join(payload), ' '.join(d or '?' for d in dec))
+    s, k = anneal(dic, payload, rng)
+    _, dec = dic.score(k, payload, True)
+    return (s, [int(x) for x in k], dec)
+
+
+def main_b():
+    from multiprocessing import Pool
+    rng = random.Random(44)
+    cnt = Counter()
+    for f in LM_FOLDS: cnt.update(words(f))
+    G['dic'] = Dict(cnt)
+    tw = target_words(); lens = [len(w) for w in tw]
+    print(f'TEST 4b (ERBA-SIB): siblings={SIB} budget={BUDGET}x (RESTARTS {RESTARTS} x ITERS {ITERS}) jobs={JOBS}')
+    print(f'target: {len(tw)} words, {sum(lens)} letters, lengths {lens}; dictionary top {NDICT} of {len(cnt)} types')
+    held = list(words(CTL_FOLD)); bylen = {}
+    for w in held: bylen.setdefault(len(w), []).append(w)
+    prim = [('ctl', 1000 + i, [rng.choice(bylen[L]) for L in lens]) for i in range(NCTL)]
+    with Pool(JOBS) as pool:
+        print('PRIMARY CONTROL (gate: every seed >= %.2f): length-profile-matched held-out tokens' % GATE, flush=True)
+        res = pool.map(_job, prim)
+        for i, r in enumerate(res):
+            print(f'  seed {i}: solver acc {r[0]:.3f}  oracle {r[1]:.3f}  solver score {r[3]:.1f} vs true {r[4]:.1f}  '
+                  f'{"solver>=true" if r[2] else "solver<true"}\n    plain : {r[5]}\n    decode: {r[6]}')
+        accs = [r[0] for r in res]
+        print(f'  mean solver acc {sum(accs)/len(accs):.3f}, min {min(accs):.3f} (gate: all >= {GATE}); mean oracle '
+              f'{sum(r[1] for r in res)/len(res):.3f}; solver>=true {sum(r[2] for r in res)}/{len(res)}', flush=True)
+        if min(accs) < GATE:
+            print(f'VERDICT: CONTROL BELOW GATE (min seed {min(accs):.3f} < {GATE}) -- target not decoded (control-first order).')
+            return 3
+        flat = [t for w in tw for t in w]; jobs = [('tgt', 2000, tw)]
+        for i in range(NNULL):
+            rng.shuffle(flat); it = iter(flat); jobs.append(('tgt', 2001 + i, [[next(it) for _ in w] for w in tw]))
+        out = pool.map(_job, jobs)
+    s, k, dec = out[0]; nulls = [o[0] for o in out[1:]]
+    matched = sum(d is not None for d in dec) / len(dec)
+    print(f'TARGET score {s:.1f}, matched words {matched:.2f}; nulls max {max(nulls):.1f} mean {sum(nulls)/len(nulls):.1f}')
+    print('  key: ' + ' '.join(f'{TYPES[c]}={"".join(a for a, kk in zip(A, k) if kk == c)}' for c in range(K)))
+    print('  decode: ' + ' '.join(d or '?' for d in dec))
+    moves = s > max(nulls) and matched >= 0.60
+    print('VERDICT: ' + ('target moves (exceeds all nulls, >=60% matched) -- grade S candidate, needs judge + verifier'
+                         if moves else 'target does not move -- negative under this design at the control\'s power'))
+    return 0
+
+
 if __name__ == '__main__':
-    sys.exit(main())
+    sys.exit(main_b() if (SIB or BUDGET > 1 or JOBS > 1) else main())

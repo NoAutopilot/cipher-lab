@@ -1,0 +1,12 @@
+# erba-2006 -- two sibling phrases in the same digraph system, from Olindo Romano's prison writings (press transcription only).
+# Source: il Giornale, "Il diario di Olindo in cella: un inno (in codice) a Rosa", 18 June 2013
+#   (ilgiornale.it/news/interni/diario-olindo-cella-inno-codice-rosa-928061.html, read 14 Oct 2026 by ERBA-SIB):
+#   «fimine Romixsmecu meficumi xs» e «fi ne xs Romi cufiRome Ro» ("un foglio giallo, con due cuori e tre cerchi gialli").
+#   Tgcom24, "Il diario di Olindo scritto 'in codice' per Rosa", 18 June 2013 (as read 3 Oct 2026 by GF4-BATCH21; the URL
+#   answered 404 on 14 Oct 2026): "Fimine Romixsmecu meficumixs" and "fine xs Romi cufiRome Ro".
+# The two press texts agree token for token; they differ only in spacing. NO press image of the sheet was reachable on
+# 14 Oct 2026 (rule 2): every token below is conditional on the press transcription (grade M as transcription).
+# Separate file on purpose: ciphertext is never silently repaired or merged (CLAUDE.md layout rule).
+# One phrase per line, tokenised into the folder's digraph inventory (cu mi xs fi un ro ne pi me), case kept as printed.
+Fi mi ne Ro mi xs me cu me fi cu mi xs
+fi ne xs Ro mi cu fi Ro me Ro
