@@ -70,3 +70,25 @@ Both are dropped from the page and from the score (column `excluded` in question
 **W = 12, R = 11** (23 tiles). The interpretation rule's cut points restated on these n, with the shares unchanged:
 W >= 0.60 means 8 or more of 12; R >= 0.90 means 10 or more of 11; W < 0.40 means 4 or fewer of 12. "Incomplete" = fewer than 19 of
 the 23 answered. The page title becomes "Vivonne f.201r: 23 signs to place". Everything else above stands.
+
+## Addendum B (14 Oct 2026, 02:4x UTC by date -u; attempt 2, written and pushed BEFORE the attempt-2 page is built)
+Why: the owner asked (02:4x UTC 14 Oct) to try again on the tiles scored against him. The parent's pile check (NOTES "VIV-HUMAN result")
+found the attempt-1 page's "z" pile dominated by 3-shaped tiles and its "3" pile mixed, because the piles were labelled from the committed
+f.201r reconciliation, which carries the 3/z confusion. Attempt 2 changes only the following; it is reported as **attempt 2 beside
+attempt 1, never replacing it**, and attempt 1's score and verdict (W 5/12, R 10/11, undecided) stand as registered.
+1. **Question tiles:** Q04, Q14, Q15, Q19, Q12, Q23 (the six scored against him) and Q24, Q25 (the two lost to the recut defect R12),
+   eight tiles, same sids and boxes as attempt 1, shuffled with `random.Random(20261014)` and starting in the neutral pile `unsorted`
+   and the tray, as before. The owner has seen these tiles once (stated, not hidden: attempt 2 is not a fresh blind sample).
+2. **Piles 3, z, L, l, s, S, h, k** (the look-alike families these tiles touch): a tile carrying one of these committed labels is a pile
+   member only if (a) it maps 1:1 (`tx/vivcls/real/map_r2_f201r.tsv`, op 1:1) to a truth row of
+   `benchmark-tx/vivonne1573-f201r-dev.truth.tsv` with status `scored` and an EMPTY flag column, and (b) its committed label lies in that
+   row's truth set. Tiles of these labels that fail go to no pile and are left out of the page; their count per label is appended below
+   (before/after). A pile left with fewer than 3 members is shown anyway and named here. Every other pile is built as in attempt 1.
+   The page stays blind (sign labels only; no key value, decode choice or reader weight).
+3. **Lede:** one sentence added: do not use "Fix the cut" on this page (a recut tile cannot be placed yet, sorter requirement R12).
+4. **Scoring (unchanged rule, run by the parent, not this job):** the same score.py rule per tile (correct iff the final label is in the
+   tile's truth set; new sign, unanswered, aside etc. wrong), on n = 8: the six W tiles plus Q25 (W) and Q24 (R). Reported per tile and as
+   W k/7, R k/1 for attempt 2, beside attempt 1. **No interpretation-rule verdict is drawn from attempt 2 alone** (n too small, tiles
+   already seen); it answers one question: with truth-consistent 3 and z exemplars, does the owner place the d-sign tiles in pile 3?
+   "Incomplete" = fewer than 7 of the 8 answered.
+Built by `tx/vivhuman/build_inputs.py --attempt 2` (an option on the attempt-1 script, not a copy), output `tx/sorter_human2/`.
