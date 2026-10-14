@@ -1,0 +1,413 @@
+{
+ "seed": "20261014VIVF191",
+ "err_2reader": {
+  "AB": 0.156,
+  "AC": 0.181,
+  "AD": 0.442,
+  "BC": 0.146,
+  "BD": 0.423,
+  "CD": 0.399
+ },
+ "line_mapping": {
+  "same_id_best_of_36": 36,
+  "rows": [
+   [
+    "L01",
+    0.86,
+    0.269
+   ],
+   [
+    "L02",
+    0.81,
+    0.29
+   ],
+   [
+    "L03",
+    0.768,
+    0.235
+   ],
+   [
+    "L04",
+    0.846,
+    0.246
+   ],
+   [
+    "L05",
+    0.786,
+    0.286
+   ],
+   [
+    "L06",
+    0.833,
+    0.267
+   ],
+   [
+    "L07",
+    0.811,
+    0.259
+   ],
+   [
+    "L08",
+    0.82,
+    0.263
+   ],
+   [
+    "L09",
+    0.887,
+    0.259
+   ],
+   [
+    "L10",
+    0.782,
+    0.302
+   ],
+   [
+    "L11",
+    0.836,
+    0.279
+   ],
+   [
+    "L12",
+    0.722,
+    0.284
+   ],
+   [
+    "L13",
+    0.857,
+    0.288
+   ],
+   [
+    "L14",
+    0.745,
+    0.375
+   ],
+   [
+    "L15",
+    0.906,
+    0.362
+   ],
+   [
+    "L16",
+    0.827,
+    0.322
+   ],
+   [
+    "L17",
+    0.865,
+    0.237
+   ],
+   [
+    "L18",
+    0.885,
+    0.263
+   ],
+   [
+    "L19",
+    0.8,
+    0.263
+   ],
+   [
+    "L20",
+    0.745,
+    0.224
+   ],
+   [
+    "L21",
+    0.736,
+    0.222
+   ],
+   [
+    "L22",
+    0.824,
+    0.238
+   ],
+   [
+    "L23",
+    0.816,
+    0.279
+   ],
+   [
+    "L24",
+    0.82,
+    0.22
+   ],
+   [
+    "L25",
+    0.846,
+    0.305
+   ],
+   [
+    "L26",
+    0.875,
+    0.267
+   ],
+   [
+    "L27",
+    0.755,
+    0.273
+   ],
+   [
+    "L28",
+    0.863,
+    0.328
+   ],
+   [
+    "L29",
+    0.878,
+    0.328
+   ],
+   [
+    "L30",
+    0.872,
+    0.276
+   ],
+   [
+    "L31",
+    0.904,
+    0.328
+   ],
+   [
+    "L32",
+    0.833,
+    0.328
+   ],
+   [
+    "L33",
+    0.75,
+    0.339
+   ],
+   [
+    "L34",
+    0.827,
+    0.35
+   ],
+   [
+    "L35",
+    0.684,
+    0.288
+   ],
+   [
+    "L36",
+    0.863,
+    0.277
+   ]
+  ]
+ },
+ "before": {
+  "tokens": 1785,
+  "grades": {
+   "H": 1427,
+   "U": 124,
+   "M": 234
+  },
+  "longest_H_run": {
+   "letters": 32,
+   "text": "raioantentenddredraauroatdangier",
+   "lines": "L11-L11"
+  },
+  "gates": {
+   "letters": 1661,
+   "s": -1.4544,
+   "cover": 0.812,
+   "b1": {
+    "null_median": -2.1539,
+    "null_p99": -1.813,
+    "pass": true,
+    "headroom_ok": true
+   },
+   "b2": {
+    "null_median": -1.8647,
+    "null_p99": -1.8152,
+    "pass": true,
+    "headroom_ok": true
+   },
+   "c": {
+    "wrong_keys": 200,
+    "b2_passes": 19,
+    "margin_median": -0.0619,
+    "margin_p99": 0.0578,
+    "margin_max": 0.0792,
+    "real_margin": 0.3608,
+    "pass": true
+   },
+   "verdict_b2": "PASS",
+   "verdict_wrong_keys": "PASS"
+  },
+  "stretch": {
+   "top": [
+    {
+     "letters": 17,
+     "lines": "L10-L10",
+     "decoded": "oaungtresgrandeou",
+     "words": "o a ung tres grande ou",
+     "grades": "HHHHHHHHHHHHHHHHH",
+     "nonH": 0
+    },
+    {
+     "letters": 16,
+     "lines": "L15-L15",
+     "decoded": "tousioursgrandes",
+     "words": "tous iours grand es",
+     "grades": "HHHHHHHHHHHHHHHH",
+     "nonH": 0
+    },
+    {
+     "letters": 15,
+     "lines": "L31-L31",
+     "decoded": "aaairedesdictes",
+     "words": "a a aire des dict es",
+     "grades": "HHHHHHHHHHHHHHH",
+     "nonH": 0
+    },
+    {
+     "letters": 15,
+     "lines": "L20-L20",
+     "decoded": "aonsieurdesauoa",
+     "words": "a on sieur des au o a",
+     "grades": "HHHHHHHHHHHHHHH",
+     "nonH": 0
+    },
+    {
+     "letters": 14,
+     "lines": "L10-L10",
+     "decoded": "sesioontdedela",
+     "words": "se si o ont de de la",
+     "grades": "HHHHHHHHHHHHHH",
+     "nonH": 0
+    }
+   ],
+   "real_top1": 17,
+   "real_top3mean": 16.0,
+   "null_top1_median": 10,
+   "null_top1_p99": 15,
+   "null_top3mean_p99": 12.67
+  },
+  "clears_42_clean": false
+ },
+ "after": {
+  "tokens": 1739,
+  "grades": {
+   "H": 1367,
+   "U": 132,
+   "M": 240
+  },
+  "longest_H_run": {
+   "letters": 37,
+   "text": "ceroaungtresgrandeouaconsdecestaaaire",
+   "lines": "L10-L11"
+  },
+  "gates": {
+   "letters": 1607,
+   "s": -1.4099,
+   "cover": 0.824,
+   "b1": {
+    "null_median": -2.1319,
+    "null_p99": -1.7728,
+    "pass": true,
+    "headroom_ok": true
+   },
+   "b2": {
+    "null_median": -1.8259,
+    "null_p99": -1.7773,
+    "pass": true,
+    "headroom_ok": true
+   },
+   "c": {
+    "wrong_keys": 200,
+    "b2_passes": 9,
+    "margin_median": -0.0573,
+    "margin_p99": 0.0231,
+    "margin_max": 0.0387,
+    "real_margin": 0.3674,
+    "pass": true
+   },
+   "verdict_b2": "PASS",
+   "verdict_wrong_keys": "PASS"
+  },
+  "stretch": {
+   "top": [
+    {
+     "letters": 21,
+     "lines": "L10-L10",
+     "decoded": "oaungtresgrandeouacon",
+     "words": "o a ung tres grande ou a con",
+     "grades": "HHHHHHHHHHHHHHHHHHHHH",
+     "nonH": 0
+    },
+    {
+     "letters": 17,
+     "lines": "L14-L15",
+     "decoded": "otousioursgrandes",
+     "words": "o tous iours grand es",
+     "grades": "HHHHHHHHHHHHHHHHH",
+     "nonH": 0
+    },
+    {
+     "letters": 15,
+     "lines": "L31-L31",
+     "decoded": "aaairedesdictes",
+     "words": "a a aire des dict es",
+     "grades": "HHMHHHMHHHHHHHH",
+     "nonH": 2
+    },
+    {
+     "letters": 15,
+     "lines": "L20-L20",
+     "decoded": "aonsieurdesauoa",
+     "words": "a on sieur des au o a",
+     "grades": "HHHHHHHHHHHHHHH",
+     "nonH": 0
+    },
+    {
+     "letters": 13,
+     "lines": "L14-L14",
+     "decoded": "oendegrandeia",
+     "words": "o en de grande ia",
+     "grades": "HHHHHHHHHHHHH",
+     "nonH": 0
+    }
+   ],
+   "real_top1": 21,
+   "real_top3mean": 17.67,
+   "null_top1_median": 10,
+   "null_top1_p99": 16,
+   "null_top3mean_p99": 12.67
+  },
+  "clears_42_clean": false
+ },
+ "C1_f103r": {
+  "letters": 1839,
+  "s": -1.6954,
+  "cover": 0.71,
+  "b1": {
+   "null_median": -2.1346,
+   "null_p99": -1.7982,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.9489,
+   "null_p99": -1.9019,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "C2_ink54": {
+  "letters": 1801,
+  "s": -1.6573,
+  "cover": 0.79,
+  "b1": {
+   "null_median": -2.1367,
+   "null_p99": -1.813,
+   "pass": true,
+   "headroom_ok": true
+  },
+  "b2": {
+   "null_median": -1.8786,
+   "null_p99": -1.8322,
+   "pass": true,
+   "headroom_ok": true
+  }
+ },
+ "V_strict": 772
+}
