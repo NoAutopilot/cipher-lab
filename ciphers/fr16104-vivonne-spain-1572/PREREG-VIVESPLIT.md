@@ -82,3 +82,16 @@ scored truth-confirmed positions: 48 / 53 / 58). Control labels by rank: m, o, d
 others 1: no class reaches the rule; untestable as registered. Also a speed-only change: HOG and shape features are computed once
 per item set and cached across folds and permutations (the per-fold standardisation and PCA are unchanged). The first gate run
 was stopped twice (once for speed, once on the missing sixth control label) before any accuracy was printed.
+
+## Addendum B (14 Oct 2026, 02:0x UTC by date -u; written AFTER the step-1 look, before step 2; everything below it is post-hoc)
+Step 1 as registered: label y PASS (G0 control 0.748; G1 acc 0.408 vs p0 0.165, k 42/103; G2 permuted mean 0.230, p95 0.330);
+label e untestable. But the classes are unbalanced (l 46 of 103) and the registered p0 (each fold's training majority) is weak:
+predicting l everywhere would score 0.447, above 0.408. CLAUDE.md rule 3 (AX-NAMES, 26 Sept 2026): a blended held-out figure on
+unbalanced classes licenses nothing without a per-class breakdown. Per class, held-out precision vs base rate (binomial, post-hoc):
+l 28/43 = 0.651 vs 0.447 (p 0.006); h 6/13 = 0.462 vs 0.126 (p 0.003); u 3/7 vs 0.078 (p 0.013); r 4/21 vs 0.184 (p 0.56);
+e 1/15 (p 0.75); n 0/4. So label y holds at least an l-like and an h-like shape group the classifier finds on an unseen leaf;
+r, e, n are not separated. Decision, fixed now: **no key edit in this job** (the per-class licence is post-hoc). Step 2 runs as a
+measurement only, restricted to sub-signs y_l -> l and y_h -> h (key.tsv already reads y as h, so only y_l changes letters):
+refit on all three leaves (same pipeline, six classes), ink-63 label-y tokens on 3 pages (f193v, f193r, f192v: the most y),
+y_l where the posterior of l >= 0.6, all else stays y. Report b2 / 200-wrong-key / decode_key --try as VIV-KEY ran them, judge
+score and longest H run before/after, for the next job to pre-register on.
