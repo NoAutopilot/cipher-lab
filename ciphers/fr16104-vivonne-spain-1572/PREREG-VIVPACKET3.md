@@ -58,3 +58,17 @@ Committed under `tx/sorter_f191/` (HTML under 3 MB; no page image), published wi
    (VIV-F191B, 37 / 21) and after, side by side.
 4. Decision: a stretch of >= 42 letters with no liberty (all H, no M/U inside) goes to a verifier (rule 7 re-derivation); otherwise the
    numbers are logged and f.191r stays D1 material. The owner's placements are not a truth: no accuracy figure is computed from this page.
+
+## Addendum A (14 Oct 2026, 03:4x UTC by date -u; box check before publishing; the page is NOT published and no answer exists)
+Build (`python3 tx/vivhuman/build_inputs.py --packet3`): 150 candidates on L08-L16/L29-L32; 75 tileable under section 2 (63 with no single 1:1
+box on pass C's token, 12 where pass C has no token); 40 taken (tier 1: 3, tier 3: 1, tier 5: 2, the rest by line from L08; the cap is reached on
+L14, so L15-L16 and L29-L32 bar Q10 get no question). Piles: 24 of 32 key codes, each one truth letter (tx/sorter_f191/piles.tsv); no qualifying
+tile for S, A, y, oo, b, Zu, V, e (V and e have no row in the truth files' sets; y, S were never truth-consistent at a scored unflagged row).
+Page built by tools/sign_sorter.py (246 tiles, 25 piles, 1.9 MB; preflight checks run by the build: PASS).
+**Section 2's eye check fails the map:** of the 40 boxes, 15 do not hold one whole sign (a dot, a stroke fragment, empty paper or two signs)
+and 15 hold one whole sign that no pass wrote at that position (the pass-C-to-box map is offset: e.g. Q01 votes x/x/x/2, box on an m; Q02 votes
+S/S/s/s, box on oo); 6 undetermined by eye; 4 plausible (Q05, Q10, Q32, Q34). Per tile: tx/sorter_f191/box_check.tsv. Replacing from the
+remaining 35 tileable candidates (same map, same error rate expected) would give a handful of tiles, not a packet. Rule 2's replacement
+clause cannot rescue a map that is wrong three times in four, so **the page is not published**: tiles on the wrong sign would feed the wrong
+position into section 5's re-vote, and R14 says a badly cut tile is the page's fault. Nothing here changes sections 1, 3 or 5; a rebuild
+needs a different box instrument (parent's decision, written as Addendum B before any rebuild).

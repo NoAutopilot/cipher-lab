@@ -1,0 +1,152 @@
+# PREREG-VIVPACKET3 candidates (f.191r L08-L16/L29-L32 M/U/split), priority order; taken = the page's questions (cap 40)
+qid	tier	line	pos	code	letter	grade	split	votes	ctok	sid	taken	why
+Q06	1	L10	29	z	a	H	1	z/z/3/z	29	f191r_L10_s2_01_006	1	
+Q21	1	L10	35	m	e	H	1	m/m/n/m	36	f191r_L10_s2_01_012	1	
+Q02	1	L10	45	s	a	H	1	S/S/s/s	47	f191r_L10_s2_01_021	1	
+Q10	3	L31	9	s	a	M	1	s/S/s/-	12	f191r_L31_s1_01_009	1	
+	3	L31	13	3	d	M	1	3/z/3/-	16		0	no single 1:1 box on pass C token 16
+Q30	5	L14	8	V	n	H	1	V/S/V/V	9	f191r_L14_s1_01_008	1	
+Q08	5	L14	9	3	d	H	1	z/z/3/3	10	f191r_L14_s1_01_009	1	
+Q12	9	L08	1	V	n	H	1	-/V/V/V	1	f191r_L08_s1_01_001	1	
+Q22	9	L08	2	y	h	M	1	y/y/y/o	2	f191r_L08_s1_01_002	1	
+	9	L08	13	y	h	M	1	y/y/V/x	14		0	no single 1:1 box on pass C token 14
+Q23	9	L08	14	s	a	H	1	S/s/s/s	15	f191r_L08_s1_01_012	1	
+	9	L08	16	y	h	M	1	y/y/y/V	18		0	no single 1:1 box on pass C token 18
+Q38	9	L08	20	r	_	U	0	r/r/r/r	22	f191r_L08_s1_01_019	1	
+Q19	9	L08	21	g	r	M	1	G/G/g/g	23	f191r_L08_s1_01_020	1	
+	9	L08	23	S	b	M	1	S/S/S/s	25		0	no single 1:1 box on pass C token 25
+Q39	9	L08	25	4	g	M	1	4/-/4/-	27	f191r_L08_s2_01_005	1	
+	9	L08	26	g	r	M	1	g/d/-/k			0	pass C has no token here
+Q17	9	L08	28	s	a	H	1	S/s/s/s	29	f191r_L08_s2_01_007	1	
+Q28	9	L08	31	r	_	U	1	r/r/r/n	33	f191r_L08_s2_01_011	1	
+	9	L08	39	3	d	H	1	3/z/3/3	42		0	no single 1:1 box on pass C token 42
+	9	L08	41	V	n	M	1	p/-/V/V	44		0	no single 1:1 box on pass C token 44
+	9	L08	42	y	h	M	1	y/y/y/o	45		0	no single 1:1 box on pass C token 45
+	9	L08	43	s	a	M	1	S/V/s/s	46		0	no single 1:1 box on pass C token 46
+Q25	9	L09	6	V	n	M	1	-/x/V/V	6	f191r_L09_s1_01_005	1	
+	9	L09	7	r	_	U	0	r/r/r/r	7		0	no single 1:1 box on pass C token 7
+Q05	9	L09	23	d	o	M	1	-/-/d/d	25	f191r_L09_s1_01_016	1	
+Q18	9	L09	24	S	b	M	1	S/-/V/e	26	f191r_L09_s1_01_017	1	
+Q29	9	L09	25	y	h	M	1	y/-/r/m	27	f191r_L09_s1_01_018	1	
+	9	L09	26	o	_	U	1	o/d/o/o	28		0	no single 1:1 box on pass C token 28
+	9	L09	27	y	h	M	0	y/y/y/y	29		0	no single 1:1 box on pass C token 29
+Q16	9	L09	28	3	d	H	1	3/3/3/z	30	f191r_L09_s2_01_004	1	
+Q13	9	L09	46	V	n	M	1	a/-/V/V	49	f191r_L09_s2_01_020	1	
+	9	L09	47	y	h	M	1	y/y/y/o	50		0	no single 1:1 box on pass C token 50
+Q33	9	L10	1	z	a	H	1	z/z/2/z	1	f191r_L10_s1_01_001	1	
+Q35	9	L10	3	d	o	M	1	V/V/d/d	3	f191r_L10_s1_01_003	1	
+	9	L10	10	m	e	M	1	m/m/-/-			0	pass C has no token here
+	9	L10	11	r	_	U	1	x/r/r/r	10		0	no single 1:1 box on pass C token 10
+Q34	9	L10	17	3	d	H	1	3/z/3/3	16	f191r_L10_s1_01_013	1	
+Q03	9	L10	23	c	_	U	1	e/c/c/c	23	f191r_L10_s1_01_020	1	
+Q20	9	L10	24	l	_	U	0	l/l/l/l	24	f191r_L10_s1_01_021	1	
+Q31	9	L11	9	s	a	H	1	s/S/s/s	10	f191r_L11_s1_01_009	1	
+	9	L11	13	V	n	M	1	y/V/V/-	14		0	no single 1:1 box on pass C token 14
+	9	L11	14	y	h	M	1	y/y/y/V	15		0	no single 1:1 box on pass C token 15
+	9	L11	16	r	_	U	1	r/r/3/r	18		0	no single 1:1 box on pass C token 18
+Q11	9	L11	18	s	a	H	1	S/s/s/s	20	f191r_L11_s1_01_016	1	
+	9	L11	30	h	d	M	1	h/h/-/-			0	pass C has no token here
+	9	L11	33	3	d	H	1	3/z/3/3	34		0	no single 1:1 box on pass C token 34
+Q24	9	L11	34	L	r	M	1	L/L/3/-	35	f191r_L11_s2_01_009	1	
+Q15	9	L11	35	z	a	M	1	z/z/3/-	36	f191r_L11_s2_01_010	1	
+	9	L11	40	z	a	H	1	z/z/3/z	42		0	no single 1:1 box on pass C token 42
+	9	L11	41	n	t	H	1	n/R/n/n	43		0	no single 1:1 box on pass C token 43
+	9	L11	42	3	d	H	1	3/z/3/3	44		0	no single 1:1 box on pass C token 44
+	9	L11	49	a	u	M	1	e/c/a/a	51		0	no single 1:1 box on pass C token 51
+	9	L11	50	n	t	H	1	n/r/n/n	52		0	no single 1:1 box on pass C token 52
+	9	L12	3	y	h	M	1	y/y/y/o	4		0	no single 1:1 box on pass C token 4
+	9	L12	7	g	r	M	1	d/d/g/g	9		0	no single 1:1 box on pass C token 9
+	9	L12	12	s	a	H	1	s/5/s/s	14		0	no single 1:1 box on pass C token 14
+Q14	9	L12	17	x	s	H	1	x/x/r/r	20	f191r_L12_s1_01_018	1	
+	9	L12	20	z	a	M	1	z/z/tz/3	23		0	no single 1:1 box on pass C token 23
+	9	L12	22	d	o	M	1	S/S/d/d	25		0	no single 1:1 box on pass C token 25
+	9	L12	24	z	a	M	1	z/z/tz/-	27		0	no single 1:1 box on pass C token 27
+Q37	9	L12	32	c	_	U	1	e/c/c/c	36	f191r_L12_s2_01_010	1	
+Q07	9	L12	33	l	_	U	0	l/l/l/l	37	f191r_L12_s2_01_011	1	
+	9	L12	35	t	_	U	1	t/-/-/t			0	pass C has no token here
+	9	L12	36	p	n	H	1	p/p/p/o	39		0	no single 1:1 box on pass C token 39
+Q36	9	L12	37	r	_	U	1	z/r/3/r	41	f191r_L12_s2_01_014	1	
+Q32	9	L12	40	r	_	U	1	r/r/n/r	44	f191r_L12_s2_01_017	1	
+	9	L12	47	o	_	U	1	-/v/o/o	51		0	no single 1:1 box on pass C token 51
+	9	L12	48	g	r	H	1	y/g/g/g	52		0	no single 1:1 box on pass C token 52
+	9	L13	4	3	d	H	1	z/z/3/3	5		0	no single 1:1 box on pass C token 5
+	9	L13	7	r	_	U	0	r/r/r/r	8		0	no single 1:1 box on pass C token 8
+Q40	9	L13	10	2	_	U	1	2/2/3/2	11	f191r_L13_s1_01_010	1	
+Q09	9	L13	13	n	t	H	1	r/r/n/n	14	f191r_L13_s1_01_013	1	
+Q27	9	L13	16	n	t	H	1	n/r/n/n	17	f191r_L13_s1_01_017	1	
+	9	L13	20	3	d	H	1	z/z/3/3	21		0	no single 1:1 box on pass C token 21
+Q26	9	L13	25	e	m	M	1	e/c/a/-	27	f191r_L13_s2_01_007	1	
+	9	L13	34	t	_	U	1	t/z/3/2	36		0	no single 1:1 box on pass C token 36
+	9	L13	35	S	b	M	1	S/S/S/s	37		0	no single 1:1 box on pass C token 37
+Q01	9	L13	43	x	s	H	1	x/x/x/2	45	f191r_L13_s2_01_020	1	
+	9	L13	47	r	_	U	1	r/r/-/-			0	pass C has no token here
+	9	L14	1	g	r	M	1	y/y/g/g	2		0	no single 1:1 box on pass C token 2
+Q04	9	L14	3	a	u	M	1	e/c/a/a	4	f191r_L14_s1_01_004	1	
+	9	L14	19	x	s	M	1	x/x/-/-			0	pass C has no token here
+	9	L14	22	r	_	U	0	r/r/r/r	22	f191r_L14_s1_01_019	0	
+	9	L14	27	y	h	M	1	y/y/-/m			0	pass C has no token here
+	9	L14	30	y	h	M	1	y/y/y/V	30		0	no single 1:1 box on pass C token 30
+	9	L14	32	r	_	U	1	r/r/3/r	33	f191r_L14_s2_01_013	0	
+	9	L14	34	g	r	M	1	g/g/-/-			0	pass C has no token here
+	9	L14	35	s	a	H	1	S/s/s/s	35	f191r_L14_s2_01_015	0	
+	9	L14	40	n	t	H	1	n/-/n/n	40		0	no single 1:1 box on pass C token 40
+	9	L14	41	r	_	U	1	r/r/-/-			0	pass C has no token here
+	9	L14	42	g	r	M	1	g/g/-/-			0	pass C has no token here
+	9	L14	43	s	a	H	1	S/s/s/s	41	f191r_L14_s2_01_020	0	
+	9	L15	19	z	a	M	1	2/z/3/z	21	f191r_L15_s1_01_016	0	
+	9	L15	29	x	s	H	1	x/x/x/-	31	f191r_L15_s1_01_024	0	
+	9	L15	38	n	t	H	1	n/n/n/r	40	f191r_L15_s2_01_013	0	
+	9	L15	39	2	_	U	1	2/2/3/2	41	f191r_L15_s2_01_014	0	
+	9	L15	40	s	a	H	1	S/s/s/s	42	f191r_L15_s2_01_015	0	
+	9	L15	41	g	r	H	1	g/y/g/g	43	f191r_L15_s2_01_016	0	
+	9	L15	43	2	_	U	1	2/z/x/r	45	f191r_L15_s2_01_018	0	
+	9	L15	51	a	u	M	1	a/a/-/-			0	pass C has no token here
+	9	L16	1	z	a	H	1	z/z/3/z	1		0	no single 1:1 box on pass C token 1
+	9	L16	4	3	d	H	1	z/z/3/3	4		0	no single 1:1 box on pass C token 4
+	9	L16	9	V	n	M	1	-/V/V/-	10		0	no single 1:1 box on pass C token 10
+	9	L16	10	y	h	M	1	y/y/y/V	11		0	no single 1:1 box on pass C token 11
+	9	L16	13	3	d	H	1	z/z/3/3	14		0	no single 1:1 box on pass C token 14
+	9	L16	23	S	b	M	1	S/S/S/s	24	f191r_L16_s2_01_005	0	
+	9	L16	35	x	s	H	1	x/x/x/a	36		0	no single 1:1 box on pass C token 36
+	9	L16	37	c	_	U	1	e/c/c/c	38	f191r_L16_s2_01_020	0	
+	9	L16	38	l	_	U	0	l/l/l/l	39	f191r_L16_s2_01_021	0	
+	9	L16	39	y	h	M	1	y/y/y/V	41	f191r_L16_s2_01_023	0	
+	9	L16	41	d	o	H	1	d/d/d/g	43	f191r_L16_s2_01_025	0	
+	9	L16	42	e	m	M	1	e/e/g/e	44	f191r_L16_s2_01_026	0	
+	9	L16	44	S	b	M	1	S/S/S/s	46	f191r_L16_s2_01_028	0	
+	9	L16	49	#	t	M	1	#/#/-/-			0	pass C has no token here
+	9	L29	5	:	c	M	1	o/:/:/J	5	f191r_L29_s1_01_004	0	
+	9	L29	11	c	_	U	1	-/c/c/-	12	f191r_L29_s1_01_009	0	
+	9	L29	12	V	n	M	1	e/V/V/-	13	f191r_L29_s1_01_010	0	
+	9	L29	13	y	h	M	0	y/y/y/o	14	f191r_L29_s1_01_011	0	
+	9	L29	17	s	a	M	1	S/s/s/c	18	f191r_L29_s1_01_014	0	
+	9	L29	26	Z	_	U	1	Z/z/Z/tz	27		0	no single 1:1 box on pass C token 27
+	9	L30	1	y	h	M	1	y/y/V/-	1		0	no single 1:1 box on pass C token 1
+	9	L30	9	n	t	M	1	n/R/n/-	11		0	no single 1:1 box on pass C token 11
+	9	L30	10	r	_	U	0	r/r/r/-	12		0	no single 1:1 box on pass C token 12
+	9	L30	11	z	a	M	1	z/z/3/-	13		0	no single 1:1 box on pass C token 13
+	9	L30	13	p	n	H	1	P/p/P/p	16	f191r_L30_s1_01_015	0	
+	9	L30	19	z	a	M	1	z/z/3/g	22	f191r_L30_s1_01_020	0	
+	9	L30	23	n	t	M	1	n/r/n/-	27		0	no single 1:1 box on pass C token 27
+	9	L30	26	g	r	M	1	g/g/S/-	30	f191r_L30_s2_01_009	0	
+	9	L30	30	Z	_	U	1	Z/z/Z/-	34		0	no single 1:1 box on pass C token 34
+	9	L30	34	4	g	M	1	P/4/4/o	39		0	no single 1:1 box on pass C token 39
+	9	L30	40	y	h	M	0	y/y/y/7	45	f191r_L30_s2_01_022	0	
+	9	L31	2	y	h	M	0	y/y/y/-	3		0	no single 1:1 box on pass C token 3
+	9	L31	4	3	d	M	1	3/z/3/-	5		0	no single 1:1 box on pass C token 5
+	9	L31	6	y	h	M	1	y/V/y/-	8	f191r_L31_s1_01_006	0	
+	9	L31	24	V	n	M	1	-/V/V/a	27	f191r_L31_s2_01_003	0	
+	9	L31	25	y	h	M	0	y/y/y/V	28		0	no single 1:1 box on pass C token 28
+	9	L31	26	o	_	U	0	o/o/o/o	29		0	no single 1:1 box on pass C token 29
+	9	L31	33	V	n	M	1	-/V/V/-	36		0	no single 1:1 box on pass C token 36
+	9	L31	34	y	h	M	0	y/y/y/V	37		0	no single 1:1 box on pass C token 37
+	9	L31	35	o	_	U	1	o/-/o/o	38		0	no single 1:1 box on pass C token 38
+	9	L31	42	y	h	M	0	y/y/y/#	45	f191r_L31_s2_01_015	0	
+	9	L32	3	c	_	U	1	e/c/c/-	4	f191r_L32_s1_01_003	0	
+	9	L32	21	z	a	M	1	z/z/3/d	25	f191r_L32_s1_01_021	0	
+	9	L32	27	y	h	M	1	y/V/y/Z	32	f191r_L32_s2_01_009	0	
+	9	L32	31	3	d	M	1	x/z/3/3	36	f191r_L32_s2_01_012	0	
+	9	L32	34	V	n	M	1	-/V/V/-	39		0	no single 1:1 box on pass C token 39
+	9	L32	35	y	h	M	0	y/y/y/#	40		0	no single 1:1 box on pass C token 40
+	9	L32	39	b	z	M	0	b/b/b/-	45		0	no single 1:1 box on pass C token 45
+	9	L32	44	to	q	M	1	to/to/p/-	50	f191r_L32_s2_01_022	0	

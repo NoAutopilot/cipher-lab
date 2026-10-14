@@ -1,0 +1,42 @@
+# PREREG-VIVPACKET3 Addendum A: worker eye check of the 40 question boxes on their line crops, 14 Oct 2026, before publishing, no answer exists
+qid	line	pos	code	votes	sid	verdict
+Q01	L13	43	x	x/x/x/2	f191r_L13_s2_01_020	whole sign, matches no pass label (map offset)
+Q02	L10	45	s	S/S/s/s	f191r_L10_s2_01_021	whole sign, matches no pass label (map offset)
+Q03	L10	23	c	e/c/c/c	f191r_L10_s1_01_020	shape vs label undetermined by eye
+Q04	L14	3	a	e/c/a/a	f191r_L14_s1_01_004	shape vs label undetermined by eye
+Q05	L09	23	d	-/-/d/d	f191r_L09_s1_01_016	plausible
+Q06	L10	29	z	z/z/3/z	f191r_L10_s2_01_006	not one whole sign
+Q07	L12	33	l	l/l/l/l	f191r_L12_s2_01_011	not one whole sign
+Q08	L14	9	3	z/z/3/3	f191r_L14_s1_01_009	not one whole sign
+Q09	L13	13	n	r/r/n/n	f191r_L13_s1_01_013	whole sign, matches no pass label (map offset)
+Q10	L31	9	s	s/S/s/-	f191r_L31_s1_01_009	plausible
+Q11	L11	18	s	S/s/s/s	f191r_L11_s1_01_016	whole sign, matches no pass label (map offset)
+Q12	L08	1	V	-/V/V/V	f191r_L08_s1_01_001	not one whole sign
+Q13	L09	46	V	a/-/V/V	f191r_L09_s2_01_020	shape vs label undetermined by eye
+Q14	L12	17	x	x/x/r/r	f191r_L12_s1_01_018	shape vs label undetermined by eye
+Q15	L11	35	z	z/z/3/-	f191r_L11_s2_01_010	whole sign, matches no pass label (map offset)
+Q16	L09	28	3	3/3/3/z	f191r_L09_s2_01_004	not one whole sign
+Q17	L08	28	s	S/s/s/s	f191r_L08_s2_01_007	not one whole sign
+Q18	L09	24	S	S/-/V/e	f191r_L09_s1_01_017	whole sign, matches no pass label (map offset)
+Q19	L08	21	g	G/G/g/g	f191r_L08_s1_01_020	shape vs label undetermined by eye
+Q20	L10	24	l	l/l/l/l	f191r_L10_s1_01_021	whole sign, matches no pass label (map offset)
+Q21	L10	35	m	m/m/n/m	f191r_L10_s2_01_012	whole sign, matches no pass label (map offset)
+Q22	L08	2	y	y/y/y/o	f191r_L08_s1_01_002	not one whole sign
+Q23	L08	14	s	S/s/s/s	f191r_L08_s1_01_012	not one whole sign
+Q24	L11	34	L	L/L/3/-	f191r_L11_s2_01_009	whole sign, matches no pass label (map offset)
+Q25	L09	6	V	-/x/V/V	f191r_L09_s1_01_005	not one whole sign
+Q26	L13	25	e	e/c/a/-	f191r_L13_s2_01_007	whole sign, matches no pass label (map offset)
+Q27	L13	16	n	n/r/n/n	f191r_L13_s1_01_017	whole sign, matches no pass label (map offset)
+Q28	L08	31	r	r/r/r/n	f191r_L08_s2_01_011	not one whole sign
+Q29	L09	25	y	y/-/r/m	f191r_L09_s1_01_018	not one whole sign
+Q30	L14	8	V	V/S/V/V	f191r_L14_s1_01_008	shape vs label undetermined by eye
+Q31	L11	9	s	s/S/s/s	f191r_L11_s1_01_009	whole sign, matches no pass label (map offset)
+Q32	L12	40	r	r/r/n/r	f191r_L12_s2_01_017	plausible
+Q33	L10	1	z	z/z/2/z	f191r_L10_s1_01_001	not one whole sign
+Q34	L10	17	3	3/z/3/3	f191r_L10_s1_01_013	plausible
+Q35	L10	3	d	V/V/d/d	f191r_L10_s1_01_003	not one whole sign
+Q36	L12	37	r	z/r/3/r	f191r_L12_s2_01_014	not one whole sign
+Q37	L12	32	c	e/c/c/c	f191r_L12_s2_01_010	not one whole sign
+Q38	L08	20	r	r/r/r/r	f191r_L08_s1_01_019	whole sign, matches no pass label (map offset)
+Q39	L08	25	4	4/-/4/-	f191r_L08_s2_01_005	whole sign, matches no pass label (map offset)
+Q40	L13	10	2	2/2/3/2	f191r_L13_s1_01_010	whole sign, matches no pass label (map offset)

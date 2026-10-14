@@ -11,6 +11,11 @@ truth row passA's token aligns to (truth ref_sign); question tiles (tx/vivhuman/
 --attempt 2 (PREREG-VIVHUMAN.md Addendum B, VIV-HUMAN2): question tiles = ATTEMPT2 only (shuffled, seed 20261014); the other attempt-1
 question tiles go back to their committed piles; a tile labelled in FILTERED is kept only if its truth row is scored, unflagged and its
 label lies in the row's truth set (others left out, counted); output tx/sorter_human2/ (focus.tsv in the shuffled order, filter.tsv).
+
+--packet3 (PREREG-VIVPACKET3.md, VIV-PACKET3): question tiles from f.191r L08-L16/L29-L32 (M/U/split tokens, the five V_strict
+stretches first, cap 40, pen units segmented on the VIV-F191 crops and mapped 1:1 to pass C's tokens); piles one per key.tsv code,
+members only truth-consistent tiles of f.102r, f.103r, f.201r (cap 12, seed 20261014), every tile shown on its own line crop;
+output tx/sorter_f191/ (questions.tsv, piles.tsv, signs/labels/focus/cipher_lines; pages/ and atlas/ untracked).
 """
 import csv, json, os, random, sys, collections
 import numpy as np
@@ -185,5 +190,213 @@ def main(attempt=1):
     print('tiles', len(signs), 'question tiles', len(q), 'piles', len({l['sign'] for l in labels}), 'skipped', dict(skipped))
 
 
-if __name__ == '__main__':
+P3_LINES = [f'L{i:02d}' for i in list(range(8, 17)) + list(range(29, 33))]
+P3_CROPS = os.path.join(FOLD, 'images', 'p63', 'f191')
+P3_CAP = 40
+
+
+def p3_questions(out):
+    """PREREG-VIVPACKET3 section 1-2: candidates, priority, f.191r pen units, 1:1 tile per candidate."""
+    import subprocess
+    sys.path.insert(0, os.path.join(FOLD, 'tx', 'viv63_f191'))
+    import f191, viv53G_decode as g, viv53L_stretches as st, box_token_align as bta
+    P, lines, _, _ = f191.build()
+    s, meta = f191.page_letters(lines)
+    V, _ = g.strict_vocab()
+    tops = st.top(s, V, 5)
+    tier = {}
+    for rank, (ln, b, e, words) in enumerate(tops, 1):
+        for i in range(b, e):
+            tier.setdefault(i, rank)
+    # rec position -> pass C token index (1-based), following f191.build's columns and its oo merge
+    cidx = {}
+    for line in P3_LINES:
+        toks, ci = [], 0
+        for c in f191.cols(P, line):
+            sgn, flag, how = f191.decide(c)
+            k = None
+            if c[2] != '-':
+                ci += 1; k = ci
+            if sgn is None:
+                continue
+            toks.append([sgn, k])
+        seq, i = [], 0
+        while i < len(toks):
+            if toks[i][0] == 'o' and i + 1 < len(toks) and toks[i + 1][0] == 'o':
+                seq.append(None); i += 2
+            else:
+                seq.append(toks[i][1]); i += 1
+        for pos, k in enumerate(seq, 1):
+            cidx[(line, pos)] = k
+    # pen units on the eligible lines' crops (as tx/vivcls/seg.py)
+    man = {e['crop']: e for e in json.load(open(os.path.join(P3_CROPS, 'manifest.json')))['iiif_lines']}
+    cr = {}
+    for c, e in man.items():
+        ln, sg = c.split('_')[3], int(c.split('_s')[-1].split('.')[0])
+        if ln in P3_LINES:
+            cr[(ln, sg)] = dict(path=os.path.join(P3_CROPS, c), x0=e['box'][0], x1=e['box'][2], page=f'f191r_{ln}_s{sg}', crop=c)
+    atl = os.path.join(out, 'atlas')
+    os.makedirs(atl, exist_ok=True)
+    cmd = [sys.executable, os.path.join(sets.REPO, 'tools/glyph_atlas.py'), 'segment', '--out', atl, '--median-h', 'pool']
+    for k, e in sorted(cr.items()):
+        cmd += ['--page', f"{e['page']}={e['path']}"]
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    if r.returncode:
+        sys.exit(r.stdout + r.stderr)
+    byline = collections.defaultdict(list)
+    for row in sets.rd(os.path.join(atl, 'signs.tsv')):
+        _, ln, sgs = row['page'].split('_')
+        sg = int(sgs[1:]); e = cr[(ln, sg)]
+        byline[ln].append(dict(row, seg=sg, xl=e['x0'] + int(row['x']), xc=e['x0'] + int(row['x']) + int(row['w']) / 2))
+    units = []
+    for ln, bs in byline.items():
+        segs = sorted(sg for (l2, sg) in cr if l2 == ln)
+        for b in bs:
+            sg = b['seg']
+            lo = -1e9 if sg == segs[0] else (cr[(ln, sg)]['x0'] + cr[(ln, sg - 1)]['x1']) / 2
+            hi = 1e9 if sg == segs[-1] else (cr[(ln, sg + 1)]['x0'] + cr[(ln, sg)]['x1']) / 2
+            if lo <= b['xc'] < hi:
+                units.append(dict(sid=b['sid'], page='f191r', line=str(int(ln[1:])), x=b['xl'], w=b['w'], crop=cr[(ln, sg)]['crop']))
+    read = [dict(line=f'f191r_{ln}', pos=str(k), sign=t) for ln in P3_LINES for k, t in enumerate(P['C'].get(ln, []), 1)]
+    rows, _ = bta.build_map(units, read)
+    by = collections.defaultdict(list)
+    for m in rows:
+        if m['sid']:
+            by[(m['line'], str(m['pos']))].append(m)
+    tile = {k: v[0]['sid'] for k, v in by.items() if len(v) == 1 and v[0]['op'] == '1:1'}
+    ub = {u['sid']: u for u in units}
+    cand = []
+    for i, m in enumerate(meta):
+        if m['line'] not in P3_LINES:
+            continue
+        v = m['votes']; code = m['code']
+        cells = list(v[:3]) + ([v[3]] if int(m['line'][1:]) <= 21 else [])
+        split = len(set(cells)) > 1
+        if not (m['g'] in 'MU' or split):
+            continue
+        why = '' ; sid = ''
+        k = cidx.get((m['line'], m['pos']))
+        if code == 'oo':
+            why = 'oo token (two columns)'
+        elif k is None:
+            why = 'pass C has no token here'
+        else:
+            sid = tile.get((f"f191r_{m['line']}", str(k)), '')
+            if not sid:
+                why = 'no single 1:1 box on pass C token %d' % k
+        cand.append(dict(tier=tier.get(i, 9), line=m['line'], pos=m['pos'], code=code, grade=m['g'], split=int(split),
+                         votes='/'.join(v), letter=s[i], ctok=k or '', sid=sid, why=why))
+    cand.sort(key=lambda c: (c['tier'], c['line'], c['pos']))
+    take = [c for c in cand if c['sid']][:P3_CAP]
+    for c in cand:
+        c['taken'] = int(c in take)
+    return cand, take, ub
+
+
+def packet3():
+    out = os.path.join(FOLD, 'tx', 'sorter_f191')
+    os.makedirs(os.path.join(out, 'pages'), exist_ok=True)
+    cand, take, ub = p3_questions(out)
+    rng = random.Random(sets.SEED)
+    order = list(take); rng.shuffle(order)
+    for n, c in enumerate(order, 1):
+        c['qid'] = f'Q{n:02d}'
+    key = {r['code']: r['meaning'] for r in sets.rd(os.path.join(FOLD, 'key.tsv'))}
+    crops, signs, labels = {}, [], []
+
+    def add_tile(sid, path, cname, X0, X, w, lab, fam):
+        if cname not in crops:
+            crops[cname] = Image.open(path)
+            crops[cname].save(os.path.join(out, 'pages', cname), quality=92)
+        cy, h = ink_rows(crops[cname], X - X0, X - X0 + w)
+        signs.append(dict(sid=sid, page=cname[:-4], x=X - X0, y=cy, w=w, h=h))
+        labels.append(dict(sid=sid, sign=lab, family=fam))
+    m191 = {e['crop']: e for e in json.load(open(os.path.join(P3_CROPS, 'manifest.json')))['iiif_lines']}
+    for c in order:
+        u = ub[c['sid']]
+        add_tile(c['sid'], os.path.join(P3_CROPS, u['crop']), u['crop'], m191[u['crop']]['box'][0], int(u['x']), int(u['w']),
+                 QPILE, 'to place')
+    # piles: every key code, truth-consistent tiles of the three mapped truth leaves
+    ms = {r['sid']: r for r in sets.rd(os.path.join(FOLD, 'tx', 'vivcls', 'map_signs.tsv'))}
+    pool = collections.defaultdict(list)
+
+    def ok(r, lab):
+        return (r and r['status'] == 'scored' and not r['flag'] and lab in key and lab in set(filter(None, r['truth'].split('|')))
+                and r['plain'] == key[lab])
+    mimg = {e['crop']: e for e in json.load(open(os.path.join(FOLD, 'images', 'manifest.json')))['iiif_lines']}
+    for leaf, (tf, mf) in LEAF2.items():
+        tr = {(r['line'], r['pos']): r for r in sets.rd(os.path.join(sets.BT, tf))}
+        per = collections.defaultdict(list)
+        for m in sets.rd(os.path.join(FOLD, 'tx', 'vivcls', 'train', mf)):
+            if m['op'] == '1:1':
+                per[(m['line'], m['pos'])].append(m['sid'])
+        for (ln, pos), sids in per.items():
+            r = tr.get((ln, pos))
+            if len(sids) != 1 or not r or not ok(r, r['ref_sign']):
+                continue
+            m = ms[sids[0]]
+            cname = next(cn for cn in mimg if cn.endswith('_' + m['crop_page'] + '.jpg'))
+            pool[r['ref_sign']].append((leaf, ln, float(pos), sids[0], os.path.join(FOLD, 'images', cname), cname,
+                                        mimg[cname]['box'][0], int(m['x']), int(m['w']), r['plain']))
+    truth = sets.rd(sets.TRUTH)
+    tl = collections.defaultdict(list)
+    for r in truth:
+        tl[r['line']].append(r)
+    for ln in tl:
+        tl[ln].sort(key=lambda r: float(r['pos']))
+    A = sets.aligned(tl, sets.rd(os.path.join(sets.OUTS, 'passA.tsv')))
+    a2t = {(ln, ap): tp for (ln, tp), (sg, ap) in A.items()}
+    trow = {(r['line'], r['pos']): r for r in truth}
+    per = collections.defaultdict(list)
+    for m in sets.rd(sets.MAP):
+        if m['op'] == '1:1':
+            per[(m['line'], m['pos'])].append(m['sid'])
+    mcut = {e['crop']: e for e in json.load(open(os.path.join(CUT, 'manifest.json')))['iiif_lines']}
+    for (ln, ap), sids in per.items():
+        tp = a2t.get((ln, ap))
+        r = trow.get((ln, tp)) if tp is not None else None
+        if len(sids) != 1 or not r or not ok(r, r['ref_sign']):
+            continue
+        m = ms[sids[0]]
+        cname = 'c206_' + m['crop_page'] + '.jpg'
+        pool[r['ref_sign']].append(('f201r', ln, float(tp), sids[0], os.path.join(CUT, cname), cname, mcut[cname]['box'][0],
+                                    int(m['x']), int(m['w']), r['plain']))
+    piles = []
+    for code in key:
+        c = sorted(pool.get(code, []), key=lambda z: (z[0], z[1], z[2]))
+        pick = c if len(c) <= CAP else random.Random(sets.SEED).sample(c, CAP)
+        for z in pick:
+            add_tile(z[3], z[4], z[5], z[6], z[7], z[8], code, 'pile')
+        by = collections.Counter(z[0] for z in pick)
+        piles.append(dict(code=code, meaning=key[code], qualifying=len(c), shown=len(pick), f102r=by['f102r'], f103r=by['f103r'],
+                          f201r=by['f201r'], truth_letters='|'.join(sorted({z[9] for z in pick})), members=','.join(z[3] for z in pick)))
+    def w(name, cols, rows, head=''):
+        with open(os.path.join(out, name), 'w') as fh:
+            fh.write(head + '\t'.join(cols) + '\n')
+            for r in rows:
+                fh.write('\t'.join(str(r[c]) for c in cols) + '\n')
+    w('signs.tsv', ['sid', 'page', 'x', 'y', 'w', 'h'], signs)
+    w('labels.tsv', ['sid', 'sign', 'family'], labels)
+    with open(os.path.join(out, 'focus.tsv'), 'w') as fh:
+        for c in order:
+            fh.write(f"{c['sid']}\t{c['qid']}: {QUESTION}\n")
+    with open(os.path.join(out, 'cipher_lines.tsv'), 'w') as fh:
+        fh.write('# f.191r question line crops + the f.102r/f.103r/f.201r line crops holding pile tiles; every page image is cipher\n')
+        for pg in sorted({s['page'] for s in signs}):
+            fh.write(pg + '\n')
+    qid = {c['sid']: c['qid'] for c in order}
+    for c in cand:
+        c['qid'] = qid.get(c['sid'], '') if c['taken'] else ''
+    w('questions.tsv', ['qid', 'tier', 'line', 'pos', 'code', 'letter', 'grade', 'split', 'votes', 'ctok', 'sid', 'taken', 'why'], cand,
+      '# PREREG-VIVPACKET3 candidates (f.191r L08-L16/L29-L32 M/U/split), priority order; taken = the page\'s questions (cap 40)\n')
+    w('piles.tsv', ['code', 'meaning', 'qualifying', 'shown', 'f102r', 'f103r', 'f201r', 'truth_letters', 'members'], piles,
+      '# PREREG-VIVPACKET3 piles: one per key.tsv code, truth-consistent tiles only (cap %d, seed %d)\n' % (CAP, sets.SEED))
+    print('candidates', len(cand), 'tileable', sum(bool(c['sid']) for c in cand), 'questions', len(order),
+          'piles', sum(p['shown'] > 0 for p in piles), 'no pile', [p['code'] for p in piles if not p['shown']],
+          'tiles', len(signs), 'pages', len(crops))
+
+
+if __name__ == '__main__' and '--packet3' in sys.argv:
+    packet3()
+elif __name__ == '__main__':
     main(attempt=int(sys.argv[sys.argv.index('--attempt') + 1]) if '--attempt' in sys.argv else 1)
