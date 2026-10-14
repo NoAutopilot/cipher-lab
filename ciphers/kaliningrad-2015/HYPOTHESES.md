@@ -1248,7 +1248,7 @@ anneal had not fully converged). Seed 2 (width 10) scored -3557, no width standi
 by this instrument at N 1066 and this budget (restarts 2, 60000 iters, widths 2-12).** Not a negative on the target; the target and
 its shuffle were never decoded. Conditional on Ernst's transcript and convention B.
 
-### KAL-BIG pre-registration (14 Oct 2026, 23:06 UTC by date -u, before any scored run): R15-KAL14's named second attempt
+### KAL-BIG pre-registration (14 Oct 2026, 23:01 UTC by date -u, before any scored run; pushed 3ad0264d0): R15-KAL14's named second attempt
 
 Brief `.claude/briefs/runs/2026-10-14-ytbiz-default-2209-jobs.md` "KAL-BIG" (LANE DEFAULT-A2-2209-14, account 2). Same family
 (`columnar_homophonic`), same convention B cipher (`families/r14_kal12/cipher_marked_B.txt`, N 1066, K 28), same spec, corpus
