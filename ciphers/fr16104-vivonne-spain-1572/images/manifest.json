@@ -11263,5 +11263,26 @@
    "curl -A \"cipher-lab research script (contact via repository)\" -o SCRATCH/f211_native.jpg \"https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f211/4050,300,3800,5600/max/0/default.jpg\"; python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py SCRATCH/f211_native.jpg --out SCRATCH/dec --prefix c211_f206r --strips 8",
    "curl -A \"cipher-lab research script (contact via repository)\" -o SCRATCH/f212_native.jpg \"https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f212/150,100,3750,5750/max/0/default.jpg\"; python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py SCRATCH/f212_native.jpg --out SCRATCH/dec --prefix c212_f206v --strips 7"
   ]
+ },
+ "vivdech3": {
+  "job": "VIV-DECH3, 14 Oct 2026, for LANE VIV-KEYSTONE (account 4); PREREG-VIVDECH3.md",
+  "committed_images": "none (native regions and strips cut in the session scratchpad, not committed)",
+  "native_regions": {
+   "f205r": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f210/4300,350,3600,5500/max/0/default.jpg",
+   "f205v": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f211/150,100,3750,5750/max/0/default.jpg",
+   "f206r": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f211/4050,300,3800,5600/max/0/default.jpg",
+   "f206v": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f212/150,100,3750,5750/max/0/default.jpg",
+   "f108r": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f111/4200,150,3950,5650/max/0/default.jpg",
+   "f108v": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f112/700,150,3600,5650/max/0/default.jpg"
+  },
+  "regenerate": [
+   "curl -A \"cipher-lab research script (contact via repository)\" -o SCRATCH/f205r.jpg \"https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f210/4300,350,3600,5500/max/0/default.jpg\"; python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py SCRATCH/f205r.jpg --out SCRATCH/dec --prefix c210_f205r --strips 8",
+   "curl -A \"cipher-lab research script (contact via repository)\" -o SCRATCH/f205v.jpg \"https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f211/150,100,3750,5750/max/0/default.jpg\"; python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py SCRATCH/f205v.jpg --out SCRATCH/dec --prefix c211_f205v --strips 7",
+   "curl -A \"cipher-lab research script (contact via repository)\" -o SCRATCH/f206r.jpg \"https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f211/4050,300,3800,5600/max/0/default.jpg\"; python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py SCRATCH/f206r.jpg --out SCRATCH/dec --prefix c211_f206r --strips 8",
+   "curl -A \"cipher-lab research script (contact via repository)\" -o SCRATCH/f206v.jpg \"https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f212/150,100,3750,5750/max/0/default.jpg\"; python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py SCRATCH/f206v.jpg --out SCRATCH/dec --prefix c212_f206v --strips 7",
+   "curl -A \"cipher-lab research script (contact via repository)\" -o SCRATCH/f108r.jpg \"https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f111/4200,150,3950,5650/max/0/default.jpg\"; python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py SCRATCH/f108r.jpg --out SCRATCH/dec --prefix c111_f108r --strips 8",
+   "curl -A \"cipher-lab research script (contact via repository)\" -o SCRATCH/f108v.jpg \"https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f112/700,150,3600,5650/max/0/default.jpg\"; python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py SCRATCH/f108v.jpg --out SCRATCH/dec --prefix c112_f108v --strips 7"
+  ],
+  "passes": "tx/dec_<page>_passC.txt, one blind Sonnet call per page on all strips (prompt tx/DEC_READ.md + whole-page instruction); text returned in the reply and written by the worker"
  }
 }
