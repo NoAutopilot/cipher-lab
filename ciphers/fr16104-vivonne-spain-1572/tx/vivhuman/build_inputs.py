@@ -20,7 +20,7 @@ SRC = os.path.join(FOLD, 'images', 'p67', 'fetch', 'src_image_v3_ark_12148_btv1b
 RX, RY, RW, RH = 680, 1500, 2970, 3700
 OUT = os.path.join(FOLD, 'tx', 'sorter_human')
 QPILE = 'unsorted'
-QUESTION = 'Which pile do its signs look like? If none, "None of these: new sign".'
+QUESTION = 'Which pile holds signs that look like this one? If none does, "None of these: new sign".'
 
 
 def ink_rows(crop, x0, x1, thr=150):

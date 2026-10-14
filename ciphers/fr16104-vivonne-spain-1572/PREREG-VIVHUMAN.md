@@ -59,7 +59,7 @@ Report: correct share on W (n 13) and on R (n 12), each with the count of new-si
    would be noisier. A pass here is an upper bound on what the same packet does on ink 63.
 5. Nothing on the page names a key value; the pile names are the transcription's own sign labels (allowed on a blind page).
 
-## Addendum A (14 Oct 2026, 01:2x UTC by date -u; after a first page build, BEFORE publishing and before any answer exists)
+## Addendum A (14 Oct 2026, 01:1x UTC by date -u; after a first page build, BEFORE publishing and before any answer exists)
 A box check by eye of the 25 question tiles on their line context (the worker could see each tile's committed label and truth set in
 questions.tsv while looking; stated, not hidden): 23 boxes hold exactly the one sign at their position; two do not, both on f.201r L04
 where VIV-CLS's map is crowded by joined pen units:
