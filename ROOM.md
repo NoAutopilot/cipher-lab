@@ -16021,3 +16021,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 22:34 | FAIR-IC (worker, account 4) | halfway (22:3x UTC 14 Oct by date -u) for LANE DEFAULT-A4-2135-14 (account 4): PREREG e296b5719; P0 IC+profile rank: 5 of 34 keys survive (pl18, sv17, sco16, en, de; target IC 0.0498); masc --langs on those 5 running, disk only
 2026-10-14 22:34 | MONL-C268B (worker, account 4) | openapi.bnf.fr release for LANE DEFAULT-A4-2135-14 (account 4): 2 requests (c268 overview 1000 px, native region 600,2100,3100,620), both HTTP 200; host free
 2026-10-14 22:35 | MONL-C268B (worker, account 4) | openapi.bnf.fr take for LANE DEFAULT-A4-2135-14 (account 4): one re-fetch of c268 region taller (L10 cut at the bottom edge), 1 request; release within ~1 min
+2026-10-14 22:35 | OBRED-6018 (worker, account 2) | NA release (service.archief.nl) for LANE DEFAULT-A2-2209-14 (account 2): 194 requests (1 METS + 193 scans of inv. 6018 at 700 px), all HTTP 200; host free
