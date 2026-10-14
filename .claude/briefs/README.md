@@ -40,6 +40,12 @@ Common tail (paste into every brief):
 > or ladder -- do not leave it for a retrospective to notice (RETRO-2026-09-26k proposal 2, malsburg-hessen-1636
 > and fr2933-salviati-1525: both moved in substance this window without their register rows saying so).
 
+> Classifier refusal, fresh session (owner's decision, 14 Oct 2026, UPDATES.md): after one denial the worker stops (above) and never
+> re-issues the action by another route in its own session. The parent may finish the job in a FRESH session only by changing the
+> mechanics so that no subagent writes a file at all (a reader returns its TSV in the reply; the worker saves it under its own permission
+> check), and only for a benign write inside the repository or the scratchpad; a refusal of anything destructive or outward is final and
+> goes to the owner. Design blind-pass briefs this way from the start: say in the brief who writes the reader's file and where.
+
 > Wall-clock box (every worker brief): "stop and push at $<cap> or at <minutes> minutes, whichever first." The box is also a minimum: a worker does not stop early with the job undone while budget and minutes remain; it stops at the cap, at the minutes, or at the brief being met, and says which (LEARN-2026-09-25-1718 item 2, from the R6 common brief).
 
 > Before the first action, also read the last 20 lines of UPDATES.md (changes instituted across both accounts since your brief was written; they override an older brief where they conflict).
