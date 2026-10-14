@@ -2514,3 +2514,81 @@ Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R
 - [ ] image-check: split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); planted audit NON-TEST (D2-C1161AUD); next: exemplar-crop matching of our 24 unmapped labels against his sheet, then the owner's sign sorter on what stays contested
 - [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); V1 and V2/V2b decodes --check exit 0 (C1161-LKEY, C1161-V2)
 Verdict: keep going: 3 internal gaps; cheapest next: c186R token-level known-answer gate against his f163r paragraph under a fresh PREREG, ~$1
+
+## CL1161-KA: c186R token-level known-answer gate against Lasry's f163r paragraph (account-2 worker for LANE DEFAULT-A2-2209-14, 14 Oct 2026, 22:25-22:3x UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-14-ytbiz-default-2209-jobs.md` (CL1161-KA). Disk only, 0 requests to any host. Check 1: no later
+section ran this unit (the V2 and VER-C1161 Verdicts name it as next). Prior work: `tools/prior_work.py clair1161-avis-flandre-1688
+--item-spec 'c186R' --step-type align --offline` exit 0 ("proceed on the residue"; 4 generic UNCHECKED rows, no unit identity fields);
+by hand: the prior work on this face is George Lasry's reading itself (LQ-C1161), which is this job's known answer, not a rival reading.
+Known answer: Lasry's f163r paragraph (`sources/cyphersolver/2026-10-14-lasry/clair1161/NOTES.md` ll.46-49; "BnF cipher research",
+10 Oct 2026; published by D. Bourdeau, cyphersolver dde5b0ea, CC BY 4.0). PREREG `ka/PREREG-CL1161-KA.md` pushed in 8781f228c before
+any score. Script `ka/ka_score.py`, output `ka/ka_score_out.txt` (1000 draws, 64 s).
+
+Method: global Needleman-Wunsch (match +2, mismatch -1, gap -2, wildcard 0) of the c186R V2 decode (`lkey/ciphertext_v2.tsv` under
+`lkey/key_v2.tsv`, 226 tokens, Lasry's digit pairs as units) to his folded paragraph (236 letters, v->u, j->i on both sides); each token
+gets the chunk of his text it aligns to; a token agrees iff chunk == its value.
+```
+G1 V2: agreeing tokens 148/226, letter matches 167/236; null(1000) median 42 p99 54 max 65
+G1 GATE V2 > p99: PASS
+G1 power check (fixed derangement): agreeing 37, letters 57: FAILs gate (valid)
+  descriptive baseline key.tsv: agreeing 142/233, letters 151
+  descriptive V1 key_lasry: agreeing 149/233, letters 156
+  descriptive V2b: agreeing 152/226, letters 170
+G2 qb: n=14 chunks a x14; his 'a' 14 (null p99 2), ours 'o' 0 (null p99 3) -> SUPPORTS his    [power check VALID]
+G2 n77: n=6 chunks ['de', 'de', 'ec', 'de', 'de', 'de']; his 'de' 5 (null p99 0), ours 'ii' 0 (null p99 0) -> SUPPORTS his
+G2 n48: n=1 chunks ['aict']; his 'fait' 0, ours 'od' 0 -> undecided (<3 occurrences)
+G2 7: n=2 chunks ['b', 'b']; his 'b' 2 (null p99 0), ours 'i' 0 (null p99 1) -> undecided (<3 occurrences)
+G2 S: n=14 chunks n x9, u x5; his 'n' 9 (null p99 2), ours 'u' 5 (null p99 2) -> undecided
+```
+**G1 PASS** (148 vs null p99 54; the known-wrong derangement scores 37 and fails, so the gate could fail). This is a whole-key statistic:
+it says the V2 decode of c186R follows Lasry's paragraph far beyond a permuted key, not that any one contested value is right. Our own
+key.tsv (no units) agrees on 142 of 233 tokens; V2 on 148 of 226; V2b on 152 of 226 (descriptive).
+
+**Per conflict class (G2, power check on qb valid).** (a) n77: the c186R alignment supports Lasry's **de** (5 of 6 masked occurrences
+align to "de", 0 to our "i i"; position null p99 0). (b) n48: one occurrence, aligns to "aict" (his text spells "faict"; the "f" falls
+to the preceding token): undecided, and his sheet value "fait" vs his text "faict" is a spelling difference, not a conflict. (c) single
+7 (not in a pair): 2 of 2 align to his **b**, ours i 0: undecided by the pre-registered rule (< 3 occurrences on c186R). (d) S: 9 n vs
+5 u: undecided (his n leads but not by 2x); the u/n split on one label is consistent with two minim shapes merged in our transcription,
+an image question, not settled here.
+
+**--try (PREREG "what follows").** Only n77 was supported, so only it was tried, at every occurrence on the whole ciphertext:
+`python3 tools/decode_key.py ciphers/clair1161-avis-flandre-1688 --config ciphers/clair1161-avis-flandre-1688/ka/decode_try.json --try n77=de
+--try-log ciphers/clair1161-avis-flandre-1688/crossword_log.tsv` (harness `ka/key_v2_n77ii.tsv` = key_v2 with n77 read as our "ii"; output
+`ka/try_n77_de.txt`): "n77=de: n 77, current ii, statistic 152.9 bits over ii; null p95 positions , value class 172.6; undecided (a null
+could not be built ...)". The value-class null (other two-letter values at the same 77 positions) reads as well or better than "de":
+the same near-non-discriminating behaviour for function words that C1161-V2's whole-decode gate showed. So **n77 = de stays M**
+(Lasry's sheet value, supported on c186R by his own paragraph, not confirmed by --try). No key.tsv edit; key.tsv and ciphertext.tsv
+untouched; `decode_key.py ... --check` exit 0 for the main reading and for lkey/decode_v2.json ("reading up to date").
+
+Post-hoc, not pre-registered, no gate (`ka/ka_posthoc.py` -> `ka/ka_posthoc.tsv`): where V2 disagrees with his paragraph on c186R, by
+sign: phi (ours l) aligns to g 4/4 (his sheet value g; C1161-LKEY's single-sign LM test scored phi=g worse than ours: a second conflict
+between the LM and the known answer); q (ours i) to e 5 of 11; iii (ours e) to "et" 3 of 8 (his ### = et); `/` (no value) spread over
+e/a/f/c/q/t; rc (ours e) and c (ours s) align to nothing (null-like) 3/3 and 2/2. Leads for the next test, M at best, entered nowhere.
+
+Grades (rule 4): unchanged -- C 353, S 1908, M 1114, U 33, H 0 under key.tsv; under V2 the 116 units stay M. Lasry supplies every
+value of his paragraph and every nomenclature value tested here (credit, rule 8).
+
+## Remaining gaps (CL1161-KA, 14 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H (unchanged). Prior work: George Lasry's reading of ff.162r-164v (cyphersolver `clair1161`, 6/6 transcribed, 2/6 deciphered, 4 in part). Concordance with his key (C1161-LKEY): 16 agree, 10 disagree, 24 unmapped; V1 FAIL; V2 FAIL on the whole-decode LM gate; c186R token-level known-answer gate PASS (CL1161-KA: 148/226 tokens agree with his f163r paragraph vs permuted-key p99 54); n77 = de supported on c186R (5/6) but --try undecided (value-class null p95 172.6 > 152.9).
+- S-sign conflicts 7 (i vs b: 2/2 b on c186R, < 3 to decide) and S (u vs n: 9 n / 5 u on c186R, undecided), plus post-hoc leads phi g 4/4, q e 5/11, iii "et" 3/8 - blocker: not-attempted; c186R alone is too short to decide them by this gate; next: image check of the S and 7 exemplars for two merged shapes (u vs n minims) with atlas crops beside his sheet, then --try per split, ~$1.5
+- digit-pair nomenclature 76/44/37/48 (absent or single on c186R) and n77 beyond c186R - blocker: not-attempted; the LM-based nulls (V2 gate, --try value class) cannot separate function words; next: the same token-level known-answer alignment on the second face he read in full, once his report's text for it is on disk (record step: fetch his report excerpt for that face, ~$1)
+- 24 unmapped labels (incl. th 208 tokens, +, d, o, ls, eloop, K, 6r, iii, x) and z (passes agreed on his a:2, decode says t) - blocker: not-attempted; description-only matching could not separate them; next: blind matching with atlas-style exemplar crops of each of our labels beside his sheet (two passes, one call per label group), ~$2
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 (14 U tokens left under V1) - blocker: not-attempted; outside labels_v2, so not in the matching passes; next: the exemplar-crop matching above, then the owner sign sorter if any stay open, ~$1
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (CL1161-KA, 14 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); whole volume (342 canvases) swept at 300 px, no other cipher or glossed leaf (D1A-C1161)
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under key.tsv; his f163r paragraph matches the same gloss (LQ-C1161); c186R V2 decode agrees with his paragraph on 148/226 tokens, G1 PASS vs permuted key (CL1161-KA); no other glossed leaf in the volume (D1A-C1161)
+- [ ] known-keys: fr16142 and fr.3281 f.4 NO FIT (N4-C1, D2-C1161PRU); Lasry's key: V1 FAIL (C1161-LKEY), V2 whole-decode FAIL (C1161-V2), c186R known-answer PASS with n77 = de supported 5/6 but --try undecided (CL1161-KA); next: the same alignment on his second fully read face once its text is on disk, ~$1
+- [x] print: no printed edition located by check-solved and Premise check; Vertot, Ambassades de Noailles (1763) vols 1-5 grepped for the f163r paragraph, not found by this method (VER-C1161); Lasry's "BnF cipher research" (10 Oct 2026, published by D. Bourdeau 13 Oct) is prior work on all six faces: AUDIT 3 class N0, key of record published (Lasry)
+- [retired] key-rebuild: instrument c186R gloss match (G) for per-sign and joint value changes -- per-sign 0/9 (GLOSS9), joint gain inside the window null (VER-C1161J); reopens only with a longer clear text or new material (his reading may be that material)
+- [ ] image-check: split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); planted audit NON-TEST (D2-C1161AUD); next: S and 7 exemplar crops checked for merged u/n and i/b shapes, and exemplar-crop matching of our 24 unmapped labels against his sheet, then the owner's sign sorter on what stays contested
+- [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); V1 and V2/V2b decodes --check exit 0 (C1161-LKEY, C1161-V2); main and V2 --check exit 0 again (CL1161-KA)
+Verdict: keep going: 4 internal gaps; cheapest next: image check of the S and 7 exemplars for merged shapes beside Lasry's sheet, then --try per split, ~$1.5
+
+`python3 tools/gaps_check.py clair1161-avis-flandre-1688` (CL1161-KA, 14 Oct 2026):
+```
+OK keep-going clair1161-avis-flandre-1688: keep going: 4 internal gap(s), 2 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```

@@ -1,0 +1,13 @@
+P letters 236; c186R tokens 226
+G1 V2: agreeing tokens 148/226, letter matches 167/236; null(1000) median 42 p99 54 max 65
+G1 GATE V2 > p99: PASS
+G1 power check (fixed derangement): agreeing 37, letters 57: FAILs gate (valid)
+  descriptive baseline key.tsv: agreeing 142/233, letters 151
+  descriptive V1 key_lasry: agreeing 149/233, letters 156
+  descriptive V2b: agreeing 152/226, letters 170
+G2 qb: n=14 chunks ['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a']; his 'a' 14 (null p99 2), ours 'o' 0 (null p99 3) -> SUPPORTS his
+G2 power check qb: supports 'a' True; qb=o supported False -> VALID
+G2 n77: n=6 chunks ['de', 'de', 'ec', 'de', 'de', 'de']; his 'de' 5 (null p99 0), ours 'ii' 0 (null p99 0) -> SUPPORTS his
+G2 n48: n=1 chunks ['aict']; his 'fait' 0 (null p99 0), ours 'od' 0 (null p99 0) -> undecided (<3 occurrences)
+G2 7: n=2 chunks ['b', 'b']; his 'b' 2 (null p99 0), ours 'i' 0 (null p99 1) -> undecided (<3 occurrences)
+G2 S: n=14 chunks ['n', 'u', 'u', 'u', 'n', 'n', 'n', 'u', 'n', 'n', 'n', 'n', 'u', 'n']; his 'n' 9 (null p99 2), ours 'u' 5 (null p99 2) -> undecided

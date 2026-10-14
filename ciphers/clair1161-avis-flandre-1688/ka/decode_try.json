@@ -1,0 +1,12 @@
+{
+ "note": "CL1161-KA (14 Oct 2026): --try harness only; ciphertext_v2 under key_v2 with n77=ii. Never a reading.",
+ "jobs": [
+  {
+   "ciphertext": "lkey/ciphertext_v2.tsv",
+   "key": "ka/key_v2_n77ii.tsv",
+   "style": "spaced",
+   "reading": "ka/try_reading.txt",
+   "tokens": "ka/try_tokens.tsv"
+  }
+ ]
+}
