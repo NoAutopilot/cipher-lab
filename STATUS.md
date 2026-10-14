@@ -9001,6 +9001,38 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-4-20261014-0935 handoff (session_01Wgag5VRgRaFiMi4G9Wpfhf, account 4, for the orchestrator (owner account)), 14 October 2026 (09:35-11:3x UTC by date -u; closed: under one wave of budget left and in-scope backlog spent; workers 44.76 + orchestrator 6.82 = 51.58 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-14-acct4-default-0935-jobs.md (5 waves, 17 workers, 16 Opus + 1 Sonnet). Gate 0a: no SESSION-SWEEP-account-4 row.
+VERIFY-BACKLOG regenerated 09:43: high rows Birago/ceppo (off limits), low rows eckert (googleapis 503) and sachsstaatsarchiv N0 (register
+disagreement only). Hot-list `parallel` actions checked one by one: 19 of 21 already done (the column is stale). Excluded: LANE DEFAULT-A2-0911-14
+(live), BNF-FOCUS, VIV-KEYSTONE, Birago, Armstrong, Debosnys. No image file committed by this lane's workers.
+**workers (ledgered + archived)**
+- fr4735-monluc-lansac-poland-1573: MONL-140 2.16 D -- ff.140r-141r are a clear text of the letter whose cipher runs onto f.138 (c268);
+  MONL-ALIGN 8.60 D -- 6 blind passes (agreement 0.51-0.65), c268 L01-L05 at f.140r L07-L10, keyed confirm 136/169 = 0.805 vs shuffled-clear
+  max 0.456 (0/200), c268 job C 92 / M 85 of 177; MONL-K12 2.38 N -- 10 contradiction positions image-checked, K12=d / K34=y rejected by --try,
+  K14=s undecided, key.tsv unchanged; MONL-PC 0.89 N -- 14 phrases, IA full text and OpenAlex no hits, Google Books 13/14 unsearched (503).
+- sforza-duke-1447-f15: SFZ-KEYS 2.88 D (ASMi scat. 1597 holds 1446-47 Visconti keys); SFZ-REQ 1.32 D (ASMi REQUEST.md drafted); OUT-CHECK-SFZ
+  1.65 D -- gate 7 FAIL, draft held: scat. 1597 is already on DECODE (R5301-R5471, in sources/decode cache; Bourdeau scanned it); SFZ-DEC 4.15 N --
+  nos. 1-11 and 78 opened (agent keys, none Visconti/Barbavara/Aragon); catalogue has no sender/date, so only headings find them.
+- oldenbarnevelt-brederode-1605: OBRED-6017B/C/D/E 2.72 + 2.89 + 2.97 + 3.03 N -- inv. 6017 screened in full (585 scans, all controls passed):
+  no numeral-code block, no third text 1602-1617.
+- fair-game-2010: FAIR-CRED 4.31 N -- full-credit-text marker schemes, control 4/5 on 12/13, null 0/40, target 0 PASS: control-backed negative.
+- na-suriname-map-1781: SUR-RY7 1.79 N -- r-vs-7 slots k6/l3 inside the letter-shuffle band; grades unchanged.
+- fr4712-nevers-duchesse: F4712-C71 1.86 N -- canvases 71-82 clear, no glossed sibling.
+- colbert26-lathuillerie-1644: COL26-C33 1.16 N -- duplicate of account 2's job claimed 09:44, one minute after this lane's exclusion read
+  (orchestrator's error); stopped at prior-work check 1.
+Known-text share (light guardrail): ~0 (MONL work uses an in-volume clear text to build the key for the unread cipher of the same letter).
+Overruns: SFZ-KEYS 1.92x, FAIR-CRED 1.44x, MONL-140 1.44x, SFZ-DEC 1.38x, SFZ-REQ 1.32x, OBRED-6017E 1.21x, SUR-RY7 1.19x, MONL-K12 1.19x
+(small caps priced below a session's fixed start-up cost; size disk-only jobs at >= 2).
+**for the orchestrator**: fr4712 images/census/ still holds 52 tracked images from earlier jobs (no-images rule; not removed here). ASMi REQUEST.md
+held at gate 7 (ASKS 166) until DECODE scat. 1597 nos. 12-114 are read.
+**next**
+1. fr4735: next c268 band against f.140r L10 on, and an eye reconciliation of f.140r L01-L05 to face c264 (~$1-2 per page); Google Books
+   phrase pass when googleapis answers.
+2. sforza-duke: DECODE scat. 1597 nos. 12-114 by heading (~$3-4, one login), then decide whether the ASMi request is needed at all.
+3. oldenbarnevelt-brederode: inv. 6018 stride-3 screen (~$5, low yield).
+4. fair-game-2010: transposition family with matched control (~$3).
+
 ## LANE DEFAULT-account-4-20261013-2135 handoff (session_01KxHQNzDJqtdu56EwBabxuG, account 4, for the orchestrator (owner account)), 13 October 2026 (21:35-23:2x UTC by date -u; closed: in-scope backlog spent; workers 51.36 + orchestrator ~6.3 = ~57.7 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-13-acct4-default-2135-jobs.md (3 waves). Gate 0a: no SESSION-SWEEP-account-4 row. VERIFY-BACKLOG
 regenerated 21:40: high rows Birago/ceppo (off limits), low rows N0/N1 or eckert (keyed googleapis 503 at 21:4x). `next_steps.py --hot-only`
