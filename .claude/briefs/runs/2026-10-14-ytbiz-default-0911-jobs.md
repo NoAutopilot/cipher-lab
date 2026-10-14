@@ -144,3 +144,11 @@ under its PREREG null; PREREG (pushed) the pooled gate; if power < 0.5, stop the
 Only if power clears: crop step pasted (tools/iiif_lines.py), two blind word-grain passes of c51 (~1.2 each), reconciliation (~0.8), pooled
 score + control. Gallica IIIF only if c51 crops are not on disk (<= 20 requests, >= 2 s). --try for 20 = i; no key edit.
 COL26-C51 session_01MHyCn7Mwtaj7tjPX91ZYee (spawned 10:21 UTC). BAL171-SWEEP interrupted 10:2x UTC at 4.65 of cap 4 (fetch of the last sheet in flight; no messaging route to it).
+
+## Wave 5 (10:4x UTC 14 Oct) -- last of the lane (~14 left of 60)
+### BAL168-FIN (Opus, cap 4, box 70 min, openapi.bnf.fr <= 250 at >= 3 s): baluze167-davaux-1637, Baluze 168 canvases 251-end + 167 c275/c283
+Exactly BAL168-SWEEP's method for Baluze 168 canvases 251 to the volume's end (confirm from the manifest; controls = the listed f.246-247
+canvases), <= 8 looks at 1000 px. Then, only if under 70% of cap, two 1000 px looks at Baluze 167 c275 and c283 (BAL167-FIN's unglossed
+runs: glossed, bare, or not cipher). Price: ~0.35 per contact sheet plus ~0.15 per 1000 px look (BAL171-SWEEP ran 1.42x on that miss):
+stop before any unit that crosses 80% of cap. Take/release ROOM lines (account 4's lane also uses the host). New survey.tsv rows only;
+volumes gap line (168 done; 171 c251-end remains); Verdict; gaps_check. No transcription.
