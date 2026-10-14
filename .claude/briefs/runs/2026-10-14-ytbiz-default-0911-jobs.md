@@ -130,3 +130,5 @@ Exactly BAL168-SWEEP's method (300 px contact sheets, <= 15 looks at 1000 px, co
 the same session if under 80% of cap and box, the 167 c275/c283 image check (two looks at 1000 px; BAL167-FIN's named unglossed runs:
 glossed, bare, or not cipher). Take/release ROOM lines for openapi.bnf.fr (account 4's lane also uses it: wait for its release). New
 survey.tsv rows only; volumes gap line; Verdict; gaps_check. No transcription.
+
+Wave 3 sessions (spawned 09:58 UTC): SALV-EYE session_013uMsc1tmfwy8Tq5769bGer; BAL171-SWEEP session_01DRyrLBsj1mt2ZTVYeSZTNk.
