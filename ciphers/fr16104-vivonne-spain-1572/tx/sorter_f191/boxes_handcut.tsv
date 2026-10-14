@@ -1,0 +1,42 @@
+# PREREG-VIVPACKET3 Addendum B (VIV-PACKET3B, 14 Oct 2026): hand-cut question boxes on the f.191r line crops (crop px; y/h from ink rows); old = the pen-unit map box
+qid	line	pos	code	votes	crop	old_x	old_w	new_x	new_w	draft	note	check	check_note
+Q01	L13	43	x	x/x/x/2	c196_f191r_dr_L13_s2	1414	55	1373	31	whole	x after to	pass	
+Q02	L10	45	s	S/S/s/s	c196_f191r_dr_L10_s2	1221	70	1288	42	whole	long s after oo	pass	
+Q03	L10	23	c	e/c/c/c	c196_f191r_dr_L10_s1	1076	59	1326	22	whole	small c	pass	
+Q04	L14	3	a	e/c/a/a	c196_f191r_dr_L14_s1	181	56	238	22	whole	small c-like a	pass	
+Q05	L09	23	d	-/-/d/d	c196_f191r_dr_L09_s1	1105	54	1355	48	whole	d	pass	
+Q06	L10	29	z	z/z/3/z	c196_f191r_dr_L10_s2	271	18	448	28	whole	z after d	pass	
+Q07	L12	33	l	l/l/l/l	c196_f191r_dr_L12_s2	776	17	790	38	whole	looped l	pass	
+Q08	L14	9	3	z/z/3/3	c196_f191r_dr_L14_s1	440	64	527	40	whole	3	pass	
+Q09	L13	13	n	r/r/n/n	c196_f191r_dr_L13_s1	780	52	905	44	whole	n	pass	
+Q10	L31	9	s	s/S/s/-	c196_f191r_dr_L31_s1	612	36	610	37	whole	s before tz	pass	
+Q11	L11	18	s	S/s/s/s	c196_f191r_dr_L11_s1	1056	53	1008	24	whole	s after g	pass	
+Q12	L08	1	V	-/V/V/V	c196_f191r_dr_L08_s1	31	18	35	85	unsure	V = long diagonal stroke rising into the y; faint verso bleed-through left of it inside the box	fail	V stroke boxed with verso bleed-through, not one sign
+Q13	L09	46	V	a/-/V/V	c196_f191r_dr_L09_s2	1064	38	1390	45	unsure	V = diagonal stroke after @, fused into y	fail	V stroke fused into @ loop and the y
+Q14	L12	17	x	x/x/r/r	c196_f191r_dr_L12_s1	1070	43	1072	36	whole	x	pass	
+Q15	L11	35	z	z/z/3/-	c196_f191r_dr_L11_s2	727	33	673	40	whole	small z	pass	
+Q16	L09	28	3	3/3/3/z	c196_f191r_dr_L09_s2	277	8	410	45	whole	3	pass	
+Q17	L08	28	s	S/s/s/s	c196_f191r_dr_L08_s2	385	56	432	31	whole	s after g	pass	
+Q18	L09	24	S	S/-/V/e	c196_f191r_dr_L09_s1	1174	46	1400	30	unsure	sign under an ink blot	fail	sign under an ink blot
+Q19	L08	21	g	G/G/g/g	c196_f191r_dr_L08_s1	1143	43	1268	55	whole	G-shaped g after r	pass	
+Q20	L10	24	l	l/l/l/l	c196_f191r_dr_L10_s1	1194	47	1350	36	whole	looped l	pass	
+Q21	L10	35	m	m/m/n/m	c196_f191r_dr_L10_s2	572	38	763	52	whole	m after g	pass	
+Q22	L08	2	y	y/y/y/o	c196_f191r_dr_L08_s1	43	78	128	44	whole	y	pass	
+Q23	L08	14	s	S/s/s/s	c196_f191r_dr_L08_s1	739	20	832	26	whole	small s after ": y"	pass	
+Q24	L11	34	L	L/L/3/-	c196_f191r_dr_L11_s2	674	48	605	65	unsure	L loop overlaps the preceding Z-like 3	fail	L loop overlaps the Z-like 3, cannot box one sign
+Q25	L09	6	V	-/x/V/V	c196_f191r_dr_L09_s1	196	26	396	52	unsure	V = diagonal stroke fused into the next sign	fail	V stroke crosses the m
+Q26	L13	25	e	e/c/a/-	c196_f191r_dr_L13_s2	325	50	449	15	whole	small e before s	fail	tile holds one tick of the small e (fragment)
+Q27	L13	16	n	n/r/n/n	c196_f191r_dr_L13_s1	951	22	1040	55	whole	n after p	pass	
+Q28	L08	31	r	r/r/r/n	c196_f191r_dr_L08_s2	625	22	638	62	whole	r after oo	pass	
+Q29	L09	25	y	y/-/r/m	c196_f191r_dr_L09_s1	1250	15	1428	20	whole	r-like y after the blot	pass	
+Q30	L14	8	V	V/S/V/V	c196_f191r_dr_L14_s1	393	48	498	32	unsure	V = diagonal stroke into the 3	pass	
+Q31	L11	9	s	s/S/s/s	c196_f191r_dr_L11_s1	401	48	569	21	whole	8-shaped s before tz	pass	
+Q32	L12	40	r	r/r/n/r	c196_f191r_dr_L12_s2	1131	56	1120	42	whole	n-like r	pass	
+Q33	L10	1	z	z/z/2/z	c196_f191r_dr_L10_s1	11	24	128	35	whole	z with bar	pass	
+Q34	L10	17	3	3/z/3/3	c196_f191r_dr_L10_s1	716	44	1018	44	whole	3 with tail	pass	
+Q35	L10	3	d	V/V/d/d	c196_f191r_dr_L10_s1	95	26	225	65	whole	large looped d	pass	
+Q36	L12	37	r	z/r/3/r	c196_f191r_dr_L12_s2	1031	18	942	56	whole	2-like r	pass	
+Q37	L12	32	c	e/c/c/c	c196_f191r_dr_L12_s2	762	14	761	17	whole	small c	pass	
+Q38	L08	20	r	r/r/r/r	c196_f191r_dr_L08_s1	1105	54	1185	75	whole	r after k	pass	
+Q39	L08	25	4	4/-/4/-	c196_f191r_dr_L08_s2	242	64	343	47	whole	4 crossed by the ascender bar from the line above	pass	
+Q40	L13	10	2	2/2/3/2	c196_f191r_dr_L13_s1	662	55	732	37	whole	2	pass	

@@ -16,6 +16,11 @@ label lies in the row's truth set (others left out, counted); output tx/sorter_h
 stretches first, cap 40, pen units segmented on the VIV-F191 crops and mapped 1:1 to pass C's tokens); piles one per key.tsv code,
 members only truth-consistent tiles of f.102r, f.103r, f.201r (cap 12, seed 20261014), every tile shown on its own line crop;
 output tx/sorter_f191/ (questions.tsv, piles.tsv, signs/labels/focus/cipher_lines; pages/ and atlas/ untracked).
+
+--packet3b (PREREG-VIVPACKET3.md Addendum B, VIV-PACKET3B): as --packet3, but every question box is the hand-cut box of
+tx/sorter_f191/boxes_handcut.tsv (crop px; a tile whose `check` is not `pass` is dropped once the check column exists), and pile
+'F' (plaintext f; key code f already means l) = the label-g truth-f positions of tx/viv63_fkey/f_tiles.tsv on f.102r/f.103r/f.201r with one op-1:1 map tile (cap 12, seed 20261014,
+minus any sid listed in tx/sorter_f191/f_drop.tsv); pile g is asserted truth-r only.
 """
 import csv, json, os, random, sys, collections
 import numpy as np
@@ -293,7 +298,7 @@ def p3_questions(out):
     return cand, take, ub
 
 
-def packet3():
+def packet3(b=False):
     out = os.path.join(FOLD, 'tx', 'sorter_f191')
     os.makedirs(os.path.join(out, 'pages'), exist_ok=True)
     cand, take, ub = p3_questions(out)
@@ -312,9 +317,21 @@ def packet3():
         signs.append(dict(sid=sid, page=cname[:-4], x=X - X0, y=cy, w=w, h=h))
         labels.append(dict(sid=sid, sign=lab, family=fam))
     m191 = {e['crop']: e for e in json.load(open(os.path.join(P3_CROPS, 'manifest.json')))['iiif_lines']}
+    hc = {}
+    if b:
+        hc = {r['qid']: r for r in csv.DictReader((l for l in open(os.path.join(out, 'boxes_handcut.tsv')) if not l.startswith('#')),
+                                                   delimiter='\t')}
+        order[:] = [c for c in order if hc[c['qid']].get('check', 'pass') == 'pass']
     for c in order:
         u = ub[c['sid']]
-        add_tile(c['sid'], os.path.join(P3_CROPS, u['crop']), u['crop'], m191[u['crop']]['box'][0], int(u['x']), int(u['w']),
+        X0 = m191[u['crop']]['box'][0]
+        if b:
+            h = hc[c['qid']]
+            assert h['crop'] == u['crop'][:-4] and h['line'] == c['line'] and h['pos'] == str(c['pos']), c['qid']
+            add_tile(c['sid'], os.path.join(P3_CROPS, u['crop']), u['crop'], X0, X0 + int(h['new_x']), int(h['new_w']), QPILE,
+                     'to place')
+            continue
+        add_tile(c['sid'], os.path.join(P3_CROPS, u['crop']), u['crop'], X0, int(u['x']), int(u['w']),
                  QPILE, 'to place')
     # piles: every key code, truth-consistent tiles of the three mapped truth leaves
     ms = {r['sid']: r for r in sets.rd(os.path.join(FOLD, 'tx', 'vivcls', 'map_signs.tsv'))}
@@ -324,6 +341,14 @@ def packet3():
         return (r and r['status'] == 'scored' and not r['flag'] and lab in key and lab in set(filter(None, r['truth'].split('|')))
                 and r['plain'] == key[lab])
     mimg = {e['crop']: e for e in json.load(open(os.path.join(FOLD, 'images', 'manifest.json')))['iiif_lines']}
+    fset = set()
+    if b:
+        for r in csv.DictReader(open(os.path.join(FOLD, 'tx', 'viv63_fkey', 'f_tiles.tsv')), delimiter='\t'):
+            if r['sign'] == 'g' and r['leaf'] in ('f102r', 'f103r', 'f201r'):
+                fset.add((r['line'], float(r['pos'])))
+    fdrop = set()
+    if b and os.path.exists(os.path.join(out, 'f_drop.tsv')):
+        fdrop = {l.split('\t')[0].strip() for l in open(os.path.join(out, 'f_drop.tsv')) if l.strip() and not l.startswith('#')}
     for leaf, (tf, mf) in LEAF2.items():
         tr = {(r['line'], r['pos']): r for r in sets.rd(os.path.join(sets.BT, tf))}
         per = collections.defaultdict(list)
@@ -332,6 +357,11 @@ def packet3():
                 per[(m['line'], m['pos'])].append(m['sid'])
         for (ln, pos), sids in per.items():
             r = tr.get((ln, pos))
+            if b and r and len(sids) == 1 and (ln, float(pos)) in fset and r['ref_sign'] == 'g' and sids[0] not in fdrop:
+                m = ms[sids[0]]
+                cname = next(cn for cn in mimg if cn.endswith('_' + m['crop_page'] + '.jpg'))
+                pool['F'].append((leaf, ln, float(pos), sids[0], os.path.join(FOLD, 'images', cname), cname,
+                                  mimg[cname]['box'][0], int(m['x']), int(m['w']), 'f'))
             if len(sids) != 1 or not r or not ok(r, r['ref_sign']):
                 continue
             m = ms[sids[0]]
@@ -355,6 +385,11 @@ def packet3():
     for (ln, ap), sids in per.items():
         tp = a2t.get((ln, ap))
         r = trow.get((ln, tp)) if tp is not None else None
+        if b and r and len(sids) == 1 and (ln, float(tp)) in fset and r['ref_sign'] == 'g' and sids[0] not in fdrop:
+            m = ms[sids[0]]
+            cname = 'c206_' + m['crop_page'] + '.jpg'
+            pool['F'].append(('f201r', ln, float(tp), sids[0], os.path.join(CUT, cname), cname, mcut[cname]['box'][0],
+                              int(m['x']), int(m['w']), 'f'))
         if len(sids) != 1 or not r or not ok(r, r['ref_sign']):
             continue
         m = ms[sids[0]]
@@ -362,6 +397,8 @@ def packet3():
         pool[r['ref_sign']].append(('f201r', ln, float(tp), sids[0], os.path.join(CUT, cname), cname, mcut[cname]['box'][0],
                                     int(m['x']), int(m['w']), r['plain']))
     piles = []
+    if b:
+        key = dict(key, F='f')
     for code in key:
         c = sorted(pool.get(code, []), key=lambda z: (z[0], z[1], z[2]))
         pick = c if len(c) <= CAP else random.Random(sets.SEED).sample(c, CAP)
@@ -370,6 +407,8 @@ def packet3():
         by = collections.Counter(z[0] for z in pick)
         piles.append(dict(code=code, meaning=key[code], qualifying=len(c), shown=len(pick), f102r=by['f102r'], f103r=by['f103r'],
                           f201r=by['f201r'], truth_letters='|'.join(sorted({z[9] for z in pick})), members=','.join(z[3] for z in pick)))
+    if b:
+        assert all(z[9] == 'r' for z in pool.get('g', [])), 'pile g not truth-r only'
     def w(name, cols, rows, head=''):
         with open(os.path.join(out, name), 'w') as fh:
             fh.write(head + '\t'.join(cols) + '\n')
@@ -396,7 +435,9 @@ def packet3():
           'tiles', len(signs), 'pages', len(crops))
 
 
-if __name__ == '__main__' and '--packet3' in sys.argv:
+if __name__ == '__main__' and '--packet3b' in sys.argv:
+    packet3(b=True)
+elif __name__ == '__main__' and '--packet3' in sys.argv:
     packet3()
 elif __name__ == '__main__':
     main(attempt=int(sys.argv[sys.argv.index('--attempt') + 1]) if '--attempt' in sys.argv else 1)

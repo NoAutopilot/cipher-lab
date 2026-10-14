@@ -93,3 +93,18 @@ Parent's decision (brief "VIV-PACKET3B"): option (b), hand-cut boxes per questio
 5. **Consuming test, one addition (brief):** an owner placement of a question tile into pile `f` keys that position's token as f, grade S
    (owner-read), in section 5's re-vote. Nothing else in section 5 changes. Nothing on this page is scored by this worker.
 6. Lede and page as section 4 (blind, R12 sentence, no fix-the-cut); preflight + cvd_check pasted; committed under tx/sorter_f191/ (HTML < 3 MB).
+
+### Addendum B result (14 Oct 2026, 04:1x UTC by date -u; VIV-PACKET3B; no answer exists, nothing scored)
+Crops regenerated (openapi.bnf.fr 2 requests; f.191r boxes identical to manifest_vivf191.json 72/72); `build_inputs.py --packet3` reproduced VIV-PACKET3's
+inputs exactly before any change. Boxes hand-cut on the line crops (positions counted against f191.py's committed vote sequence), then every box checked
+at 2.5x zoom with a pixel ruler and corrected where off (14 corrected in a second pass); log with old and new boxes and the verdict per tile:
+`tx/sorter_f191/boxes_handcut.tsv` (columns check, check_note).
+**Box check: 34 of 40 hold one whole sign at the voted position (gate >= 36): FAIL.** Before (Addendum A, map boxes): 4 plausible of 40. The six that cannot
+be boxed as one whole sign: Q12, Q13, Q25 (label V, the long diagonal stroke, fused into or crossing its neighbour; Q12 also holds verso bleed-through),
+Q18 (sign under an ink blot), Q24 (the L loop overlaps the Z-like 3 before it), Q26 (the small e is two ticks; the tile holds one). None is a cut fault a
+better box fixes: they are shapes that do not separate on this page. Per item 2 the page is **not published**; the committed tx/sorter_f191 inputs stay
+VIV-PACKET3's; `--packet3b` regenerates the 3b inputs (the six dropped by the check column).
+Pile F (item 3): 6 of the 11 label-g truth-f positions on the three leaves have one op-1:1 map tile (f.102r L04, L15, L26; f.103r L22, L35; f.201r L18);
+the other 5 were not hand-cut (the page was not built). Eyed: f.102r L04, L26 and f.103r L35 hold one whole sign, a looped-top stem with a lower loop,
+visibly unlike the truth-r g tiles (g with a descender); f.102r L15 holds two signs, f.103r L22 and f.201r L18 only the top. Pile named `F`, not `f`:
+key.tsv code f already means l. Pile g truth-r only (asserted); one g member (f.102r L23) looks d-like. Report-only, not a test.
