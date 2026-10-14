@@ -112,3 +112,32 @@ language in HYPOTHESES.md. NOTES "## FAIR-LANG", gaps + Verdict, gaps_check.
 ## Sessions (wave 2, spawned 22:04 UTC 14 Oct)
 SFZ-G1 session_01B9oowW1x1EA7S93Et928a9; BAL171-TAIL session_01B6ALuUj7fzQC9wmomjU7cF; BAL169-F22 session_01Y42nNr4JeNdgn8mdQPMjGj;
 F4712-C107 session_015VLdSojpDv9svHyMFbNfTq; FAIR-LANG session_01KcK5ciU7cmeVRFGVRKdMWD.
+
+## Wave 2 results (ledgered 22:2x UTC): MONL-EYE 3.48 D, F4712-C107 2.54 N, FAIR-LANG 1.91 N, BAL169-F22 4.76 D, SFZ-G1 3.27 N (gate FAIL,
+blind-read R5323 retired); BAL171-TAIL live. Workers so far 35.15.
+
+## Wave 3 (22:3x UTC 14 Oct; last wave). Same common rules. googleapis 503 at 22:25.
+
+### SFZ-DEC4 (Opus, cap 3.5, box 60 min, de-crypt.org: one browser login, <= 60 requests): sforza-duke-1447-f15 scat. 1597 nos. 79-114, 169-171
+Verdict: "DECODE scat. 1597 nos. 79-114 and 169-171 by heading, one login (~45 requests), ~$2" (R5323 failed its gloss gate in SFZ-G1). Same
+method as SFZ-DEC3 (read it; it hit its limit at no. 77 with ~1.4 requests per record: plan for that). Per record: heading, date, correspondent,
+Visconti/Barbavara/Aragon or 1446-47 key; for any such key, the SFZ-DEC3 stock-overlap test against random stocks (no decode, no blind reads:
+blind reading of R5323 is retired). Scrub the account name from anything saved. NOTES "## SFZ-DEC4", known-keys rung + Verdict, gaps_check.
+
+### MONL-C268B (Opus, cap 4.5, box 75 min, openapi.bnf.fr <= 10 only if the line crops are not on disk/regenerable): fr4735-monluc-lansac-poland-1573
+Gap: "rest of c268 (about 870 signs) ... next: two blind cipher passes of the next c268 band plus reconciliation, then align_c268.py on the longer
+stream, ~$3 per 5-10 lines". Read MONL-ALIGN, MONL-SORT, MONL-EYE first. Band: c268 L06-L10 (5 lines). Crop step as a command
+(`tools/iiif_lines.py --image ...`) pasted before the first subagent call; one line per subagent call; 2 passes x 5 lines = 10 calls + 1
+reconciliation, priced ~0.35 each (stop before a unit that would cross 80% of cap). Then `align_c268.py` (with the MONL-EYE --fold-iy default) on
+L01-L10 against ff.140r-141r, with its shuffled-clear control (200x); report confirm counts for L06-L10 alone and for L01-L10. NOTES
+"## MONL-C268B", gaps + Verdict, gaps_check.
+
+### F4712-C119 (Opus, cap 2.5, box 45 min, openapi.bnf.fr <= 20): fr4712-nevers-duchesse census canvases 119-130
+F4712-C107's next: "canvases 119-130, ~1.5 (24 left)". Same method. NOTES "## F4712-C119", census rows, gaps + Verdict, gaps_check.
+
+### FAIR-IC (Opus, cap 2.5, box 45 min, disk only): fair-game-2010 substitution-invariant profile per language, then masc --langs
+Verdict: "substitution-invariant profile rank per language, then masc --langs on what survives, ~$1". Read FAIR-LANG first (and its PREREG).
+Write PREREG-FAIR-IC.md before any score: IC and sorted-frequency profile of the target ranked among same-N windows of each tools/data corpus
+(and of homophonic-free random strings as the floor); languages above their own p01 survive; then `family_run.py --family masc --langs` on the
+survivors only (matched control per language first; CONTROL BELOW GATE is not a negative). HYPOTHESES.md rows. NOTES "## FAIR-IC", gaps + Verdict,
+gaps_check.
