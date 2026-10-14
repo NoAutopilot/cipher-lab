@@ -7,7 +7,10 @@ Usage: python3 test4_wordconstrained.py [--quick]
        python3 test4_wordconstrained.py --siblings --budget 4 --jobs 4   (ERBA-SIB, 14 Oct 2026, PREREG-test4b.md): adds the
        two 2013 press sibling phrases (ciphers/erba-2006/ciphertext_siblings_2013.txt) as two more segments, multiplies ITERS
        by --budget, runs anneals in --jobs processes with per-job seeds, and gates on EVERY primary control seed >= 0.60
-       (not the mean). Output: test4b_output.txt. The default call is unchanged (rule 7 for test4_output.txt)."""
+       (not the mean). Output: test4b_output.txt. The default call is unchanged (rule 7 for test4_output.txt).
+       python3 test4_wordconstrained.py --siblings --case --budget 4 --jobs 4   (ERBA-CASE, 14 Oct 2026, PREREG-test4c.md): case-
+       sensitive letter classes -- the 13 case-kept token types (CASE_TYPES) as K=13 classes; random keys are drawn surjective
+       (every class non-empty) instead of by rejection. Output: test4c_output.txt. Calls without --case are unchanged."""
 import gzip, math, os, random, sys
 from collections import Counter
 import numpy as np
@@ -22,6 +25,9 @@ IX = {c: i for i, c in enumerate(A)}
 MAP = {'j': 'i', 'k': 'c', 'w': 'v', 'x': 's', 'y': 'i'}
 K, NDICT, NCTL, RESTARTS, ITERS, GATE, NNULL, UNM = 8, 40000, 5, 8, 4000, 0.60, 10, math.log(0.01)
 TYPES = ['cu', 'mi', 'fi', 'un', 'ro', 'ne', 'pi', 'me']
+CASE = '--case' in sys.argv
+CASE_TYPES = ['cu', 'Cu', 'mi', 'Mi', 'fi', 'Fi', 'un', 'Ro', 'ne', 'Ne', 'NE', 'Pi', 'me']
+if CASE: K, TYPES = len(CASE_TYPES), CASE_TYPES
 if '--quick' in sys.argv: NCTL, RESTARTS, ITERS = 1, 2, 800
 SIB = '--siblings' in sys.argv
 def _opt(name, d):
@@ -40,11 +46,12 @@ def words(fold):
 
 def target_words():
     lines = [l.split() for l in open(os.path.join(HERE, 'transcription_bERB.txt')) if l.strip()]
-    toks = [[t.rstrip('-').lower() for t in l] for l in lines]
+    cf = (lambda t: t) if CASE else str.lower
+    toks = [[cf(t.rstrip('-')) for t in l] for l in lines]
     out = []
     segs = [sum(toks[0:17], []), sum(toks[17:20], []), sum(toks[20:22], [])]
     if SIB:
-        segs += [[t.lower() for t in l.split()] for l in open(SIBFILE) if l.strip() and not l.startswith('#')]
+        segs += [[cf(t) for t in l.split()] for l in open(SIBFILE) if l.strip() and not l.startswith('#')]
     for s in segs:
         cur = []
         for t in s + ['xs']:
@@ -85,6 +92,10 @@ class Dict:
 
 
 def rand_partition(rng):
+    if CASE:
+        k = np.array([rng.randrange(K) for _ in A]); pos = rng.sample(range(len(A)), K)
+        for c, i in enumerate(pos): k[i] = c
+        return k
     while True:
         k = np.array([rng.randrange(K) for _ in A])
         if len(set(k)) == K: return k
@@ -194,7 +205,7 @@ def main_b():
     for f in LM_FOLDS: cnt.update(words(f))
     G['dic'] = Dict(cnt)
     tw = target_words(); lens = [len(w) for w in tw]
-    print(f'TEST 4b (ERBA-SIB): siblings={SIB} budget={BUDGET}x (RESTARTS {RESTARTS} x ITERS {ITERS}) jobs={JOBS}')
+    print(f'TEST 4{"c (ERBA-CASE)" if CASE else "b (ERBA-SIB)"}: K={K} case={CASE} siblings={SIB} budget={BUDGET}x (RESTARTS {RESTARTS} x ITERS {ITERS}) jobs={JOBS}')
     print(f'target: {len(tw)} words, {sum(lens)} letters, lengths {lens}; dictionary top {NDICT} of {len(cnt)} types')
     held = list(words(CTL_FOLD)); bylen = {}
     for w in held: bylen.setdefault(len(w), []).append(w)
