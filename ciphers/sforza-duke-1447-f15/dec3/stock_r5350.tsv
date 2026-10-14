@@ -1,0 +1,10 @@
+// R5350 (DECODE scat. 1597 no. 50, "Cum duce Mediolani") alphabet-block sign stock in duke_labels.md labels.
+// One reader (SFZ-DEC3, 14 Oct 2026), by eye from a 200 dpi render, NOT blind (the reader knew the Duke's labels and C pairs); grade M.
+// Shapes with no duke_labels.md label (wavy line ~, triple wavy, inverted T, =, infinity, single bar with dots ., hooked bars) are omitted.
+label	shape_on_sheet
+D	division sign (under c)
+N12	three dots (under d)
+t	plus (under e, f)
+N2	single vertical with two crossbars (under k)
+#	double-barred cross (under q, y)
+N13	pi-shape (under n, o, s)

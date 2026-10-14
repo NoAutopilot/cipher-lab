@@ -1,0 +1,16 @@
+Duke tokens 1741, label pool 40
+R5350 stock 6 labels ['#', 'D', 'N12', 'N13', 'N2', 't']: coverage 0.157
+ctl_5302.tsv       stock 18: coverage 0.523
+ctl_5304.tsv       stock 15: coverage 0.565
+ctl_5305.tsv       stock 24: coverage 0.540
+ctl_5306.tsv       stock 15: coverage 0.503
+ctl_5309.tsv       stock 14: coverage 0.369
+ctl_5310.tsv       stock 20: coverage 0.538
+ctl_5311.tsv       stock 21: coverage 0.616
+ctl_5312.tsv       stock 20: coverage 0.415
+ctl_5313.tsv       stock 13: coverage 0.608
+ctl_5315.tsv       stock 17: coverage 0.356
+ctl_5324.tsv       stock 22: coverage 0.588
+passA_5323.tsv     stock 25: coverage 0.639
+passB_5323.tsv     stock 25: coverage 0.621
+random 6-label stocks: mean 0.149, p95 0.266; P(>= R5350) = 0.4008

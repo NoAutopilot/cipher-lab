@@ -412,3 +412,60 @@ Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0
 - [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
 - [ ] retry: build key_r5323.tsv from two blind passes and test it against the f.5/f.8 glosses (G1 unchanged), then S3 on f.15
 Verdict: keep going: 3 internal gaps; cheapest next: key_r5323.tsv from two blind passes and decode_key.py on f.5/f.8 against their glosses, ~$2
+
+## SFZ-DEC3 (14 Oct 2026 21:48-22:0x UTC by date -u, account 4, LANE DEFAULT-A4-2135-14): DECODE scat. 1597 nos. 36-77 by heading -- one 1440s sheet ("Cum duce Mediolani", no. 50), not the slips' key
+Job: LANE DEFAULT-A1-1840-14 next item 1, nos. 36-114 by heading, SFZ-DEC/SFZ-DEC2's method; for any 1446-47 key a sign-stock overlap
+with the Duke's inventory against a control; no decode. Credit as SFZ-DEC (Bourdeau's thumbnail scan of the 1597 records; Pelling and
+Knowles, Cipher Mysteries 13 Apr 2023, on the Filippo Maria keys).
+- **Route.** Waited for SFZ-R5323B's de-crypt.org release (21:50), then one browser login (`tools/decode_browser_login.js 5336 --listen`,
+  2.5 s apart). Record N = DECODE 5300+N, confirmed on RecordsView/5336 ("scat. n.1597_36"). File ids run nearly in sequence, so each
+  next PDF was first requested by guess (`IMG_R<N>_I<previous+1>_P.pdf`; a miss returns a small non-PDF placeholder) and RecordsView was
+  opened only on a miss: 60 requests (login run 2; 58 in the listener: 8 RecordsView pages, 50 file gets of which 42 PDFs and 8
+  placeholders) reached **no. 77**; nos. 79-114 and 169-171 not opened (78 was opened by SFZ-DEC). Nos. 52, 54 and 64 have a second
+  page (P2) not fetched. Table: `decode_1597/records.tsv` (rows 5336-5377); files and sha1s `decode_1597/manifest.json` (PDFs not
+  committed; re-fetch by filename as SFZ-DEC's note says). Headings read by one reader from 110 dpi renders of the top of each page.
+- **What nos. 36-77 are.** Dated or datable headings: 38 Conradino de Georgiis to Savoy, 27 Oct 1467; 56 Jacobus de Calcaterris with the
+  Duke, June 1465(?); 58 **Scipione Barbavara, 22 Sept 1485** (the only Barbavara sheet so far; 57 is the same key); 62 22 Apr 1462;
+  69 the provost of S. Antonio of Cremona and Branda da Castiglione, 26 Aug 1483; 72 Gio. Angelo da Firenze, 27 May 1484. Sforza-era
+  correspondents without a date: 37 and 41 Angelo Geraldini of Amelia; 55 Agostino Rossi(?); 59, 60, 63 Francesco Casati; 64 "Zifra
+  Ill.mi d. ducis cum Petro de Pusterla" (undated; which duke not stated); 66, 67 Filippo Sagramoro; 68 Cristoforo Sagramoro(?); 70
+  Count Girolamo; 71 a protonotary; 73 a Lodovico, Marquis (nomenclator Papa, Rex neapolitanus); 74 and 77 Fieschi; 75 the bishop of
+  Alessandria; 76 Branda da Castiglione. No. 54 is a later folder cover, "Ciffre di diverse sorti di diversi tempi". Unheaded at the
+  top: 39, 40, 42-49, 51-53, 61, 65 (not attributable by heading). **No sheet headed Filippo Maria, Visconti or the Aragon orators.**
+- **No. 50 (R5350), "Cum duce Mediolani".** Period hand, alphabet of bar-and-stroke signs, "Nichil importantes", a syllable table and a
+  nomenclator: Papa, Imperator, Rex Aragonum, Rex Renatus, Dux Sabaudie, Marchio Mantue, Comes Urbini, Bononienses, Senenses,
+  Lucenses, Roma, Neapolis, **Nicolaus Picininus**, Franciscus Picininus, Talianus Furlanus. Niccolò Piccinino died in October 1444, so the
+  sheet is most likely before then: a correspondent's key with Filippo Maria Visconti in the early 1440s (inferred from the names, grade
+  I; the date is not on the sheet). It is not the key of the Duke's slips:
+  - Sign-stock overlap (`dec3/overlap_dec3.py`, output `dec3/overlap_dec3.out`). Statistic: the share of the Duke's 1,741 f.5+f.8 tokens
+    whose duke_labels.md label is in the key's stock. R5350's stock (`dec3/stock_r5350.tsv`, one reader, by eye, NOT blind, grade M) has
+    only 6 labelled shapes (#, D, N12, N13, N2, t; its other signs have no duke_labels label). **Coverage 0.157**; random 6-label stocks
+    from the same 40-label table (10,000, seed 5350): mean 0.149, p95 0.266, P(>= 0.157) = 0.40. The control can differ from the target
+    because it changes which labels are in the stock, which is what coverage counts (SFZ-DEC's shuffled-text control could not). For
+    comparison, the 12 sheets read blind by SFZ-R5323 cover 0.36-0.64 with stocks of 13-25 labels (R5323 0.62-0.64), but they are larger
+    stocks and not a size-matched null.
+  - C pairs by eye: the a column holds wavy and barred signs, no o with a tail; o holds a ⊥-type sign, no y: 0 of 7.
+- **Unheaded sheets, C-pair glance.** Only 48, 52 and 53 were looked at closer (a and o columns, 170 dpi, unblinded): at most 1 of 7
+  each. The other twelve unheaded sheets were not C-pair checked.
+- **ASMi REQUEST.md.** Still not needed to find the Duke's key (R5323 passed its blind gate, SFZ-R5323B); it stays relevant only for
+  reproduction permission or for the inventory documents DECODE lacks, as SFZ-DEC2 said.
+- Cross-target note (one line, not acted on): no. 64 is the (a) Duke's key with Pietro Pusterla; Pusterla's own 1447 slip
+  (../sforza-pusterla-1447-f13) went to Sforza, so this is at best a weak lead there.
+- Requests: de-crypt.org 60. No model subagent calls. Cost not visible to this session.
+
+## Remaining gaps (SFZ-DEC3, 14 Oct 2026)
+Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0.441 mean held-out, 2 units; anchored 0.422); candidate period key DECODE R5323: blind gate PASS (SFZ-R5323B, 4 of 7 C pairs agreed, controls max 1, p < 0.0001), no key built yet
+- R5323 key build - blocker: not-attempted; only the 7 C-pair cells were scored, no full transcription of R5323 exists; next: two blind passes transcribing R5323's whole alphabet block into key_r5323.tsv, agreed cells only, then decode_key.py on f.5/f.8 against their glosses with the G1 gate unchanged, ~$2
+- f.15 decode - blocker: not-attempted; the owner's blind sort (ASKS row 165) remains the transcription route for f.15 itself; next: only after R5323 passes the f.5/f.8 gloss gate, apply it to f.15, ~$2
+- f.17 blanks vs f.15 - blocker: not-attempted; whether f.15's cipher fills f.17's two blanks is unexamined; next: only after a readable key, ~$1
+- DECODE scat. 1597 rest - blocker: not-attempted; nos. 79-114 and 169-171 unopened (nos. 1-78 done), and the twelve unheaded sheets in 36-77 not C-pair checked; next: only if R5323 fails the gloss gate, one login by the guess route (~45 requests), ~$2
+
+## Escalation (SFZ-DEC3, 14 Oct 2026)
+- [x] siblings: the Duke's glossed pairs f.5/f.7 and f.8/f.10 used; f.23-24/f.26, f.30-31/f.29, f.36-37/f.35 not yet
+- [x] clear-pages: f.17 (same-day clear letter) noted as context; no copy of f.15 exists in the volume per Mazzatinti
+- [x] known-keys: DECODE scat. 1597 nos. 1-78 opened by heading (SFZ-DEC, SFZ-DEC2, SFZ-DEC3); R5323 blind gate PASS at 4/7 (SFZ-R5323B); no. 50 "Cum duce Mediolani" (early 1440s by its nomenclator) is not the slips' key (stock coverage 0.157 vs random-stock null mean 0.149, p 0.40); nos. 79-114 and 169-171 not opened
+- [ ] print: no print of f.15 located (check-solved above); verifier pass belongs to a later reading
+- [x] key-rebuild: attempted, G1 FAIL
+- [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
+- [ ] retry: build key_r5323.tsv from two blind passes and test it against the f.5/f.8 glosses (G1 unchanged), then S3 on f.15
+Verdict: keep going: 4 internal gaps; cheapest next: key_r5323.tsv from two blind passes and decode_key.py on f.5/f.8 against their glosses, ~$2
