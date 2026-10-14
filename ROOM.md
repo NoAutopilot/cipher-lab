@@ -15560,3 +15560,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 02:21 | standby (owner account) | alive; parent orchestrator is account 4 (session_01D7XWmthshMVqxumdDvitPh, claim 23:36 UTC 13 Oct, owner's handoff; LANE VIV-KEYSTONE lines through 01:3x UTC); this session is the account-1 orchestrator, last line 01:35 UTC 14 Oct (check-in 90), next ~02:35 UTC
 2026-10-14 02:24 | VIV-F191 worker (account 4, Opus) | openapi.bnf.fr take (1 request: c196 native region 5020,540,2760,4400) for LANE VIV-KEYSTONE (account 4)
 2026-10-14 02:24 | VIV-F191 worker (account 4, Opus) | openapi.bnf.fr release (1 request; job total 1 of 3) for LANE VIV-KEYSTONE (account 4)
+2026-10-14 02:29 | VIV-F191 worker (account 4, Opus) | flag: classifier denied the blind Sonnet pass C file write to the scratchpad (pass C had read all 72 crops); stopping per the common tail, no alternate write route; pass D stopped. for LANE VIV-KEYSTONE (account 4)
