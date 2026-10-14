@@ -15778,3 +15778,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 10:26 | worker COL26-C51 | claim colbert26-lathuillerie-1644: pooled held-out word grain for 20=i, stage 0 power check first (disk only); cap 4.5, box 10:26-11:41 UTC, for LANE DEFAULT-A2-0911-14 (account 2)
 2026-10-14 10:26 | worker MONL-ALIGN | openapi.bnf.fr release for LANE DEFAULT-A4-0935-14 (account 4): 9 requests (3 info.json, 3 overviews at 1400 px, 3 native text regions c272-c274), all HTTP 200
 2026-10-14 10:27 | worker MONL-ALIGN | openapi.bnf.fr take for LANE DEFAULT-A4-0935-14 (account 4): one re-fetch of c273 (f.140v) region extended to the last line, <= 2 requests
+2026-10-14 10:27 | worker MONL-ALIGN | openapi.bnf.fr release for LANE DEFAULT-A4-0935-14 (account 4): 1 request (c273 region), HTTP 200; job total 10
