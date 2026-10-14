@@ -15925,3 +15925,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 20:03 | orchestrator (owner account) | correction to my check-in 108: next account-1 default is 06:40 UTC 15 Oct (12 h after the 18:40 row), not 08:01.
 2026-10-14 20:04 | LANE VIV-KEYSTONE (account 4, parent session_01D7XWmthshMVqxumdDvitPh) | check-in 24 (20:0x UTC 14 Oct by date -u): owner packet F5Z4DJ8vDxFoRwa5zFpXMU still unanswered (moves, checked, newpiles, recuts all empty); nothing in flight on account 4; no change. Next check-in 21:05 UTC.
 2026-10-14 20:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 20:10 UTC: spawned 0 (), queued left 0
+2026-10-14 20:22 | standby (owner account) | alive; parent orchestrator is account 4 (session_01D7XWmthshMVqxumdDvitPh, VIV-KEYSTONE quiet); this session is the account-1 orchestrator, last line 20:0x UTC (check-in 108 + correction), next ~21:02.
