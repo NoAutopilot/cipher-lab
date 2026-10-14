@@ -1,0 +1,145 @@
+label	line	pos	prev	next	context_hint	crop	x0	x1	machine_top	post	why
+e	f193v_L02	57	x	oo							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L03	8	d	y							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L04	12	n	d							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L04	14	d	m		f193v_L04_s1	906	961	e	0.401	label y: classifier top posterior < 0.6
+y	f193v_L04	19	m	y		f193v_L04_s1	1145	1217	u	0.527	label y: classifier top posterior < 0.6
+y	f193v_L04	20	y	m		f193v_L04_s1	1224	1275	l	0.558	label y: classifier top posterior < 0.6
+e	f193v_L04	31	d	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L04	33	n	k		f193v_L04_s2	460	522	n	0.48	label y: classifier top posterior < 0.6
+e	f193v_L04	37	p	g							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L07	48	a	y		f193v_L07_s2	1127	1181	n	0.526	label y: classifier top posterior < 0.6
+y	f193v_L11	6	m	o		f193v_L11_s1	367	395	r	0.492	label y: classifier top posterior < 0.6
+e	f193v_L12	11	m	oo							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L12	42	s	g		f193v_L12_s2	1123	1174	r	0.536	label y: classifier top posterior < 0.6
+e	f193v_L14	16	d	y							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L14	18	y	m		f193v_L14_s1	1044	1106	h	0.393	label y: classifier top posterior < 0.6
+e	f193v_L15	12	m	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L16	13	m	m		f193v_L16_s1	731	797	r	0.532	label y: classifier top posterior < 0.6
+y	f193v_L16	32	y	oo		f193v_L16_s2	248	335	u	0.426	label y: classifier top posterior < 0.6
+y	f193v_L17	10	#	m		f193v_L17_s1	628	676	n	0.415	label y: classifier top posterior < 0.6
+e	f193v_L18	4	D	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L18	11	d	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L18	53	m	y		f193v_L18_s2	1395	1428	r	0.58	label y: classifier top posterior < 0.6
+y	f193v_L18	54	y	a		f193v_L18_s2	1428	1462	h	0.411	label y: classifier top posterior < 0.6
+e	f193v_L19	24	m	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L19	28	m	y		f193v_L19_s2	175	236	n	0.47	label y: classifier top posterior < 0.6
+y	f193v_L19	29	y	oo		f193v_L19_s2	243	289	e	0.584	label y: classifier top posterior < 0.6
+y	f193v_L19	39	m	p		f193v_L19_s2	823	863	n	0.562	label y: classifier top posterior < 0.6
+e	f193v_L19	43	d	m							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L20	4	s	p		f193v_L20_s1	279	328	l	0.545	label y: classifier top posterior < 0.6
+e	f193v_L21	7	R	f							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L21	10	s	p		f193v_L21_s1	658	730	u	0.451	label y: classifier top posterior < 0.6
+e	f193v_L21	18	d	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L21	41	R	L							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L22	17	R	d							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L23	1		L							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L23	29	d	m							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L23	35	R	oo							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L24	19	#	d		f193v_L24_s1	1059	1116	n	0.514	label y: classifier top posterior < 0.6
+e	f193v_L24	34	s	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L25	6	tz	y		f193v_L25_s1	367	404	h	0.48	label y: classifier top posterior < 0.6
+e	f193v_L25	25	n	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L25	30	z	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L26	1		6	B?(next 6)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L26	9	m	6	B?(next 6)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L26	21	#	6	B?(next 6)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L26	25	x	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L27	40	d	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L28	20	m	y		f193v_L28_s1	1209	1311	r	0.44	label y: classifier top posterior < 0.6
+y	f193v_L28	21	y	s		f193v_L28_s1	1316	1354	r	0.563	label y: classifier top posterior < 0.6
+e	f193v_L29	21	m	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L29	38	y	s		f193v_L29_s2	559	607	l	0.571	label y: classifier top posterior < 0.6
+e	f193v_L31	28	s	R							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L32	6	a	m		f193v_L32_s1	397	434	r	0.467	label y: classifier top posterior < 0.6
+e	f193v_L32	15	d	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L32	42	d	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193v_L33	23	x	tz		f193v_L33_s1	1372	1423	l	0.384	label y: classifier top posterior < 0.6
+e	f193v_L34	24	g	l							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L35	11	z	6	B?(next 6)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L35	42	m	L							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193v_L36	15	p	S							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193r_L03	35	d	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193r_L04	13	:	d		f193r_L04_s1	821	867	r	0.502	label y: classifier top posterior < 0.6
+y	f193r_L04	47	g	o		f193r_L04_s2	1125	1178	l	0.495	label y: classifier top posterior < 0.6
+y	f193r_L05	18	p	o		f193r_L05_s1	1056	1103	e	0.534	label y: classifier top posterior < 0.6
+y	f193r_L05	38	s	n		f193r_L05_s2	751	795	l	0.534	label y: classifier top posterior < 0.6
+y	f193r_L07	1		o		f193r_L07_s1	240	256	n	0.36	label y: classifier top posterior < 0.6
+y	f193r_L07	15	m	oo		f193r_L07_s1	808	862	r	0.447	label y: classifier top posterior < 0.6
+y	f193r_L08	37	m	o		f193r_L08_s2	530	588	u	0.563	label y: classifier top posterior < 0.6
+y	f193r_L09	11	m	o		f193r_L09_s1	761	794	l	0.416	label y: classifier top posterior < 0.6
+y	f193r_L11	38	m	2		f193r_L11_s2	797	863	l	0.328	label y: classifier top posterior < 0.6
+y	f193r_L11	42	a	o		f193r_L11_s2	972	1018	h	0.495	label y: classifier top posterior < 0.6
+y	f193r_L12	33	R	m		f193r_L12_s2	802	848	n	0.333	label y: classifier top posterior < 0.6
+y	f193r_L12	36	oo	m		f193r_L12_s2	975	1030	l	0.362	label y: classifier top posterior < 0.6
+y	f193r_L13	28	x	o		f193r_L13_s2	269	307	r	0.446	label y: classifier top posterior < 0.6
+e	f193r_L13	48	a	l							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193r_L15	2	z	:							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193r_L15	20	oo	o		f193r_L15_s1	1279	1331	u	0.555	label y: classifier top posterior < 0.6
+y	f193r_L15	37	6	d		f193r_L15_s2	843	930	r	0.517	label y: classifier top posterior < 0.6
+e	f193r_L15	39	d	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f193r_L16	31	R	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f193r_L16	53	6	o		f193r_L16_s2	1500	1535	e	0.57	label y: classifier top posterior < 0.6
+y	f193r_L17	6	R	d		f193r_L17_s1	494	551	r	0.541	label y: classifier top posterior < 0.6
+y	f193r_L17	18	:	m		f193r_L17_s1	1180	1193	h	0.384	label y: classifier top posterior < 0.6
+y	f193r_L17	22	:	z		f193r_L17_s1	1254	1299	l	0.543	label y: classifier top posterior < 0.6
+y	f193r_L17	55	h	oo		f193r_L17_s2	1193	1236	l	0.504	label y: classifier top posterior < 0.6
+y	f193r_L20	27	x	oo		f193r_L20_s2	397	454	r	0.478	label y: classifier top posterior < 0.6
+y	f193r_L25	4	m	m		f193r_L25_s1	340	406	e	0.489	label y: classifier top posterior < 0.6
+y	f193r_L25	28	L	oo		f193r_L25_s2	197	239	e	0.524	label y: classifier top posterior < 0.6
+y	f193r_L25	40	a	o		f193r_L25_s2	1111	1163	n	0.518	label y: classifier top posterior < 0.6
+y	f193r_L26	4	m	o		f193r_L26_s1	256	271	r	0.478	label y: classifier top posterior < 0.6
+y	f193r_L27	13	n	o		f193r_L27_s1	799	817	r	0.577	label y: classifier top posterior < 0.6
+y	f193r_L28	22	a	oo		f193r_L28_s1	1301	1355	e	0.586	label y: classifier top posterior < 0.6
+y	f193r_L30	47	tz	s		f193r_L30_s2	1283	1327	n	0.54	label y: classifier top posterior < 0.6
+y	f193r_L32	39	g	s		f193r_L32_s2	760	794	n	0.529	label y: classifier top posterior < 0.6
+y	f193r_L33	15	c	m		f193r_L33_s1	948	1000	e	0.415	label y: classifier top posterior < 0.6
+y	f193r_L33	25	a	o		f193r_L33_s2	250	302	u	0.429	label y: classifier top posterior < 0.6
+y	f193r_L37	49	#	d		f193r_L37_s2	1168	1214	n	0.572	label y: classifier top posterior < 0.6
+e	f193r_L37	52	b	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f192v_L01	27	d	a		f192v_L01_s1	1284	1318	l	0.442	label y: classifier top posterior < 0.6
+e	f192v_L02	3	m	d							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f192v_L02	21	m	oo		f192v_L02_s1	1207	1257	e	0.477	label y: classifier top posterior < 0.6
+e	f192v_L02	24	x	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f192v_L02	37	m	m		f192v_L02_s2	637	685	l	0.367	label y: classifier top posterior < 0.6
+y	f192v_L03	46	:	d		f192v_L03_s2	820	834	r	0.409	label y: classifier top posterior < 0.6
+y	f192v_L04	30	:	3		f192v_L04_s2	325	384	n	0.323	label y: classifier top posterior < 0.6
+y	f192v_L04	42	6	oo		f192v_L04_s2	932	994	e	0.477	label y: classifier top posterior < 0.6
+y	f192v_L05	5	m	y		f192v_L05_s1	217	255	r	0.513	label y: classifier top posterior < 0.6
+y	f192v_L05	6	y	s		f192v_L05_s1	255	294	l	0.484	label y: classifier top posterior < 0.6
+e	f192v_L06	34	d	m							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f192v_L07	53	y	oo		f192v_L07_s2	936	973	l	0.336	label y: classifier top posterior < 0.6
+y	f192v_L08	23	x	x		f192v_L08_s1	1093	1156	r	0.579	label y: classifier top posterior < 0.6
+e	f192v_L10	5	7	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f192v_L10	14	z	y							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f192v_L10	46	d	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f192v_L11	28	d	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f192v_L11	41	m	oo		f192v_L11_s2	764	793	n	0.449	label y: classifier top posterior < 0.6
+e	f192v_L12	38	z	d							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f192v_L12	45	a	p		f192v_L12_s2	757	787	h	0.559	label y: classifier top posterior < 0.6
+e	f192v_L13	29	z	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f192v_L13	40	d	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f192v_L13	48	m	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f192v_L14	32	g	oo		f192v_L14_s2	129	186	e	0.499	label y: classifier top posterior < 0.6
+e	f192v_L15	1		s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f192v_L16	4	p	s		f192v_L16_s1	146	161	h	0.286	label y: classifier top posterior < 0.6
+e	f192v_L16	8	d	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f192v_L17	40	s	n		f192v_L17_s2	839	888	n	0.472	label y: classifier top posterior < 0.6
+y	f192v_L17	44	d	o		f192v_L17_s2	973	1023	r	0.533	label y: classifier top posterior < 0.6
+y	f192v_L20	2	x	p		f192v_L20_s1	121	158	r	0.489	label y: classifier top posterior < 0.6
+e	f192v_L22	13	d	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f192v_L22	34	tz	p		f192v_L22_s2	521	565	r	0.448	label y: classifier top posterior < 0.6
+y	f192v_L22	49	:	s		f192v_L22_s2	1155	1184	l	0.457	label y: classifier top posterior < 0.6
+e	f192v_L23	45	m	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f192v_L24	42	L	d							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f192v_L26	13	c	d		f192v_L26_s1	540	587	n	0.376	label y: classifier top posterior < 0.6
+e	f192v_L28	10	m	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f192v_L28	48	z	g							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f192v_L30	45	s	:		f192v_L30_s2	830	850	r	0.558	label y: classifier top posterior < 0.6
+e	f192v_L31	41	z	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f192v_L32	5	p	p		f192v_L32_s1	257	322	u	0.513	label y: classifier top posterior < 0.6
+e	f192v_L32	12	d	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+e	f192v_L33	8	L	s							label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
+y	f192v_L35	14	m	o		f192v_L35_s1	666	719	e	0.434	label y: classifier top posterior < 0.6
+y	f192v_L35	37	b	o		f192v_L35_s2	419	472	r	0.495	label y: classifier top posterior < 0.6
+e	f192v_L36	50	d	n	A?(next n)						label e: no truth class reaches 8; shape groups A/B/C of VIV-KEYV unsettled
