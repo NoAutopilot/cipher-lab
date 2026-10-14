@@ -4021,3 +4021,92 @@ Read so far: about 52% of cipher tokens carry a value from George Lasry's publis
 - [x] retry: DSN irregular at 96 restarts on the SALV-F56V split (SALV-DSN, 11 Oct): control-backed up to 10%, non-test at 14.6%
 Verdict: keep going: 2 internal gaps; cheapest next: a third blind mapping pass of the 20 disagreement types to his key sheet, ~$4
 `python3 tools/gaps_check.py fr2933-salviati-1525` (14 Oct 2026, SALV-TRY20): "OK keep-going fr2933-salviati-1525: keep going: 2 internal gap(s), 2 step(s) untried", exit 0.
+
+## SALV-MAP3: third blind mapping pass of the 20 disagreement types to George Lasry's key sheet (14 Oct 2026, 09:46-09:5x UTC by date -u; LANE DEFAULT-A2-0911-14, account 2)
+Worker SALV-MAP3 (Opus), brief `.claude/briefs/runs/2026-10-14-ytbiz-default-0911-jobs.md` row SALV-MAP3; pre-registration
+`PREREG-SALV-MAP3.md` (pushed f65701b6e before the pass ran or any score). Disk only, no host. Prior work: `tools/prior_work.py
+fr2933-salviati-1525 --item-spec 'BnF fr.2933 f54r-f57v' --step-type key --offline` exit 4; the two LEADs (account-1 lane claim,
+done 08:23; this job's own claim) recorded CLEAR in prior-work.tsv; the UNCHECKED rows are the generic plaintext checks already logged
+by SALV-57V/SALV-CRIB/LQ-SALV. Key source: `published` (George Lasry, via D. Bourdeau's cyphersolver dde5b0ea, CC BY 4.0).
+
+**Pass C (the instrument).** Two Opus subagent calls, one per atlas part, image-only: his sheet `lasry_p031_1.png` and a sheet of our
+atlas rows for the 18 codes involved only (`lkey/map3/build_sheets.py` -> `lkey/map3/sheet_part{1,2}.png`, rows cut unchanged from
+glyphs/atlas.png); prompt = SALV-LKEY's, restricted to the 22 types (`lkey/map3/prompt_part{1,2}.txt`); passes A/B, the key, readings
+and scores withheld. Output `lkey/passC_part{1,2}.tsv`. 2-of-3 rule (PREREG 3) in `lkey/build_key.py` (extended; output identical
+without pass C files, checked): normalised value sets, exact match only.
+
+| type (n) | A | B | C | 2-of-3 |
+|---|---|---|---|---|
+| H^ (14) | che L | none L | che M | che |
+| ch^ (10) | che L | none M | che L | che |
+| Lx^ (43) | u/v? M | none L | u/v? M | u |
+| S^ (68) | o? M | m L | m L | m |
+| bh^ (113) | p2/b? M | o? M | o? M | o |
+| ]^o (55) | la/lu? M | la H | la H | la |
+| S7^+ (12) | na? M | na?/ni M | na? H | na |
+| a^dot (3) | none L | ma L | ma L | ma |
+| sq^ (13), sq^o (1), sq^~ (1) | none/none/qua? | qua?/qua?/none | qua? x3 | qua x3 |
+| L^ (35) | fa?/fo? L | fa?/fe? L | fa?/fe? L | fa/fe (amb, unscored) |
+| dl^ (57) | r L | b?/bi L | b?/bi L | b/bi (amb, unscored) |
+| e^+ (16) | da?/di? M | da/di M | di? M | da/di (A = B normalised; amb, unscored) |
+| m^1 (11) | none | pu? | none | none (unread) |
+| #^, S4^, Z^o, ]^dot, bh^dot | et2/none/t; t,ge/ge/ss,ge; la,lu/la,li,lu/la; li/none/m,li; bi/none/o | | | unsettled |
+| nt^ (88), eps^7 (13) | u/v? H, ci H | same | u/v? H, ci H | confirmed (A = B = C) |
+
+Pass C confirms nt^ = u/v and eps^7 = ci: the third pass does not support SALV-LKEY's f54r L14 suspicion (ss; ti/tu).
+`lkey/key_lasry.tsv`: 50 -> 65 rows (14 settled types, all graded M with the three cells in the note, plus the combination ]^o|o);
+pre-SALV-MAP3 copy `lkey/map3/key_lasry_before.tsv`; our key.tsv: none exists, none written.
+
+**Decode.** `decode_key.py ... --config decode_lasry.json` then `--check`: "reading up to date". Token grades (rule 4), 2,939 sign
+tokens: **H 1,216, M 861, unread 862** (before: H 1,216, M 419, unread 1,304); no C, no S.
+
+**Score vs control (PREREG 5; same script, 300 permuted keys within class, seed 1; before = `lkey/map3/score_before.json`).**
+
+| statistic | before: target / p99 / keys >= | after: target / p99 / keys >= (control mean) |
+|---|---|---|
+| 4-gram, all leaves | -1.386 / -1.368 / 9 of 300 | **-1.360 / -1.399 / 0 of 300** (-1.548) |
+| word hits >= 4 letters | 288 / 244 / 0 | 342 / 276 / 0 (201.5) |
+| f54r | -1.312 / -1.323 / 2 | -1.228 / -1.388 / 0 |
+| f54v | -1.389 / -1.312 / 37 | -1.324 / -1.358 / 3 |
+| f55r | -1.449 / -1.317 / 83 | -1.431 / -1.325 / 36 |
+| f55v | -1.354 / -1.315 / 15 | -1.402 / -1.324 / 33 |
+| f56r | -1.429 / -1.372 / 27 | -1.369 / -1.399 / 2 |
+| f56v | -1.576 / -1.315 / 127 | -1.665 / -1.435 / 180 |
+| f57r | -1.295 / -1.316 / 1 | -1.235 / -1.324 / 0 |
+| f57v | -1.334 / -1.310 / 5 | -1.339 / -1.365 / 2 |
+| tokens mapped (non-amb.) | 1523/2939 | 1857/2939 (63.2%) |
+
+**Pre-registered gate: PASS** -- "the published key, applied through our transcription with the 2-of-3 mapping, reads above chance"
+on the whole-letter 4-gram statistic (0 of 300 permuted keys at or above). Five leaves clear their own p99 (f54r, f54v, f56r, f57r,
+f57v); f55r, f55v and f56v do not, and f56v sits below its control mean. Official judge on the same letters:
+```
+ok   length: got=2546, min=2500, max=4500
+FAIL language: score=-1.36, null_p99=-1.86, real_p05=-0.906, real_median=-0.811, mode=both, N=2546
+FAIL - fr2933-salviati-1525 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Far above the shuffled null, still far below real Italian: a reading above chance, not a reading.
+**Diagnostic, not pre-registered** (`lkey/map3/ablate.py` -> `ablate.json`; the gate's own statistic, so descriptive only): removing
+one settled row at a time, bh^=o (-1.398 without), ]^o=la (-1.379), H^/ch^=che and sq^=qua each lower the score when removed; S^=m
+(-1.314 without) and Lx^=u (-1.347 without) raise it, i.e. those two rows pull the 4-gram mean down. SALV-TRY20's `--try` window
+instrument had rejected bh^=o, S^=m, ]^o=la, Lx^=u, sq^=qua and H^/ch^=che individually against its value-class null; the two
+instruments disagree, as in SALV-TRY. Caveats: pass C is the same model family as passes A and B (independent calls, not independent
+eyes); 8 of the 14 settlements rest on at least one L-graded pass; the gain is in the statistic the gate names, not in readable text.
+Next: a person's eye on the settled types against his sheet (S^, Lx^ first), and a rule-7 re-derivation by a fresh session before
+any reading is described. No novelty classification. Hosts: none. Subagent calls: 2 (Opus).
+
+## Remaining gaps (SALV-MAP3, 14 Oct 2026)
+Read so far: about 63% of cipher tokens carry a value from George Lasry's published key through our 2-of-3 mapping (H 1,216, M 861 of 2,939); the decode beats its permuted-key control on the pre-registered 4-gram gate (-1.360 vs p99 -1.399, 0/300) and on word hits (342 vs 276), but the judge FAILs the language check (-1.36 vs real_p05 -0.906); pages other than f.54r not named in his files
+- an eye check of the 14 settled types (S^ = m and Lx^ = u first, both lowering the 4-gram score) and the 5 unsettled ones (#^, S4^, Z^o, ]^dot, bh^dot) against his sheet - blocker: not-attempted; SALV-MAP3's pass C is the same model family as A and B; next: a person's look in the sign sorter, or one zoomed crop-pair call per type, then re-score with lkey/score_lasry.py, ~$3
+- the Phillipps MS 7293 letter book (BL RP 271/2/4, despatches 17 July 1525-15 May 1527), a possible clear register copy - blocker: needs-physical-access; the original was sold in 1968, holder not recorded, BL image service down since 2023 (Premise check (d))
+- the crib placement-likelihood scorer (SALV-CRIB) - blocker: not-attempted; held behind the published-key route, which now beats its control; next: placement-likelihood scorer, ~$5
+
+## Escalation (SALV-MAP3, 14 Oct 2026)
+- [x] siblings: Premise check (d), 3 Oct 2026: fr.3087 item 90 (3 Oct 1525, two cipher lines per Molini) and siblings.tsv; no decipherment
+- [x] clear-pages: all 8 leaves' plain boxes read (SALV-PLAIN1-3, SALV-57V); the Phillipps 7293 register copy is needs-physical-access
+- [ ] known-keys: George Lasry's published key applied (SALV-LKEY); --try route [retired] after three attempts (SALV-TRY20); third blind mapping pass (SALV-MAP3) settles 14 of 20 disagreement types, 4-gram gate PASS (0/300), judge FAIL; next: eye check of S^, Lx^ and the unsettled types, ~$3
+- [x] print: CSP Spain III/1 for Oct 1525 read (D2-PRINT4); Desjardins/Canestrini and Molini read earlier; context only
+- [ ] key-rebuild: code+mark anneal closed after three attempts; wordcode context option untested-by-this-tool; R8 syllabaries control-backed at 6.4%; isomorph crib count untested-by-this-tool; next: crib placement-likelihood scorer, ~$5
+- [x] image-check: passes A/B/C, SALV-SPLIT, SALV2-J1A/B and SALV-F56V; f.56r pass C optional (~$3, strips on disk)
+- [x] retry: DSN irregular at 96 restarts on the SALV-F56V split (SALV-DSN, 11 Oct): control-backed up to 10%, non-test at 14.6%
+Verdict: keep going: 2 internal gaps; cheapest next: an eye check of the settled and unsettled types against his key sheet, ~$3
+`python3 tools/gaps_check.py fr2933-salviati-1525` (14 Oct 2026, SALV-MAP3): "OK keep-going fr2933-salviati-1525: keep going: 2 internal gap(s), 2 step(s) untried", exit 0.

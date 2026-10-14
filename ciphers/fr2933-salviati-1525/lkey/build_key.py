@@ -15,9 +15,27 @@ def load(p):
     return d
 A, B = load("A"), load("B")
 NORM = {"i1": "i", "i2": "i", "l1": "l", "l2": "l", "p1": "p", "p2": "p", "et1": "et", "et2": "et", "u/v": "u"}
+# SALV-MAP3 (14 Oct 2026, PREREG-SALV-MAP3.md): a third blind pass (passC_part*.tsv, 22 types) settles an A/B disagreement when its
+# normalised value set equals A's or B's exactly; settled rows are graded M, note names all three cells; settled 'none' stays unread.
+C = {}
+for part in (1, 2):
+    f = os.path.join(D, f"passC_part{part}.tsv")
+    if os.path.exists(f):
+        for r in csv.DictReader(open(f, encoding="utf-8"), delimiter="\t"):
+            C[r["our_sign"].strip()] = (r["his_cell"].strip(), r["conf"].strip())
+def vset(cell):
+    return "none" if cell in ("none", "") else "|".join(sorted({NORM.get(c.rstrip("?"), c.rstrip("?")) for c in cell.split("|")}))
 rows = {}
 for s in sorted(A):
     (ca, qa), (cb, qb) = A[s], B.get(s, ("none", ""))
+    if ca != cb and s in C:
+        cc, qc = C[s]; va, vb, vc = vset(ca), vset(cb), vset(cc)
+        maj = va if va == vb else (vc if vc in (va, vb) else None)   # A = B after normalising also counts as 2 of 3
+        if maj and maj != "none":
+            vc = maj; vals = vc.split("|")
+            cls = "amb" if len(vals) > 1 else ("other" if vc in ("che", "et") else ("letter" if len(vc) == 1 else "syllable"))
+            rows[s] = (vc, "M", cls, f"SALV-MAP3 2-of-3 A:{ca}/{qa} B:{cb}/{qb} C:{cc}/{qc}")
+        continue
     if ca != cb or ca == "none":
         continue
     cells = ca.split("|"); q = any(c.endswith("?") for c in cells) or "L" in (qa, qb) or len(cells) > 1

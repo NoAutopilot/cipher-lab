@@ -1,0 +1,38 @@
+You are a blind visual-matching pass (pass C, part 1) for a historical cipher. Do ONLY this job; read nothing else in the repository
+and no other file than the two images named here.
+
+Images (read each with the Read tool):
+ - HIS = /home/user/cipher-lab/sources/cyphersolver/2026-10-14-lasry/salviati1525/lasry_p031_1.png : George Lasry's published key sheet
+   for BnF fr.2933 (a syllabary). Top band: single-letter cells (heading letter above each exemplar; some carry a "?" under them).
+   Lower grid: syllable cells (exemplar image left, value right, "?" after uncertain values).
+ - OURS = /home/user/cipher-lab/ciphers/fr2933-salviati-1525/lkey/map3/sheet_part1.png : rows of our sign atlas, one row per sign
+   code (code name and count at the left, ten exemplar crops from the same letter). Codes on this sheet: a e m nt bh ch S Z S7.
+ - Text for our codes (code, description, count, marks_seen = our superscript-mark labels seen on that code, with counts):
+   a	bold cursive a	74	1:23 ~:12 5:12 7:7 dot:3 o:1
+   e	looped e (ℓ-like): ONE bowl closed by a loop at the top, the stroke rising into the loop; usually carries # or + above. Not eps.	162	dot:55 #:46 +:20 ot:2 o:1
+   m	cursive m (often carries ~ above)	72	~:36 1:12 5:7 7:4 dot:1
+   nt	n joined to a crossed stroke (looks like n+), ONE sign	88	dot:4 ~:4 1:1
+   bh	þ/b-like: tall straight stem with a small hooked loop at the upper right, often a lead-in stroke from the left (the only h/b-like cipher code; plain-script b, h, d, ll are '_')	126	dot:9 7:2 ~:1
+   ch	c followed by a tall looped h (che abbreviation?)	21	
+   S	S/ʃ-shaped sign	86	#:3 dot:3 7:1 1:1
+   Z	Z-shaped sign	129	dot:19 ot:14 #:4 ~:3 7:2 o:2
+   S7	7-shaped sign	203	#:26 ~:12 +:9 dot:7 1:3
+
+Our transcription writes each sign as BASE^MARK: BASE is our code; MARK is the small superscript written above it, labelled
+1, 5, 7, 3 (digits), ~ (a tilde/2-like stroke), # (double-barred cross), + (single cross), dot, o (small ring), ot (ring+stroke),
+or empty. His sheet's syllable signs are a base glyph plus a small superscript too. Look closely at his exemplars (zoom by reading
+the image carefully); several of his cells are look-alikes, so compare base shape AND superscript.
+
+Use these cell IDs for his sheet (his own labels; a trailing ? is his):
+ letters: a b? c e g? i1(⊏-like) i2?(⊙-like) l1(ω-like) l2(⊢-like) m n o? p1(⊔-like) p2(second p, b/h-like) r s? t u/v?
+ syllables: bi bu? ca ce ci co cu? da? de di? do du fa? fe? fi? fo? fu? ge? la le li? lo? lu? ma me mo na? ne ni no nu? pe pi? po
+ pu? qua? que? ra re ri ro se? si so? su? ta te ti to tu? va ve? vi? vo rr ss tt che et1(φ-like) et2(crossed z/I-like)
+
+Write a TSV to /home/user/cipher-lab/ciphers/fr2933-salviati-1525/lkey/passC_part1.tsv with header `our_sign	his_cell	conf	note` and
+exactly one row for each of these our_signs: a^dot e^+ m^1 nt^ bh^ bh^dot ch^ S^ Z^o S7^+
+(CODE^ = the bare sign with no superscript; CODE^MARK = that code carrying that mark; where the atlas row shows no exemplar with the
+mark, judge from the bare shape plus the mark's description.)
+his_cell = the single cell whose exemplar is the same base glyph with the same superscript (or, for a bare sign, the same unmarked
+glyph); "none" if no cell on his sheet matches; if two cells are equally possible write both joined by "|". conf = H (clearly the
+same), M (probably), L (guess). note: <= 12 words of visual evidence.
+Match by shape only; do not try to decipher anything. After writing the file, reply with only the row count and a 3-line summary.
