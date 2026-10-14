@@ -83,6 +83,28 @@
    ],
    "exceptions": "balshape/f22/exceptions_b169f22r.tsv",
    "exception_grade_overrides_conf": true
+  },
+  {
+   "ciphertext": "ciphertext_b167c275.txt",
+   "format": "pipe",
+   "key": "key.tsv",
+   "style": "spaced",
+   "reading": "reading_b167c275.txt",
+   "tokens": "reading_tokens_b167c275.tsv",
+   "m_sources": [],
+   "m_words": [
+    "red in his table",
+    "bracketed"
+   ],
+   "header": [
+    "# Baluze 167 f.135r (c275) bare run inside the glossed f.127 Memoire, Oct 1637 (BAL167-C275, 14 Oct 2026): reconciled transcription read",
+    "# with Tomokiyo's D'Avaux table (published key, credited). Letter signs M; s:<shape> unassigned. Regenerate:",
+    "# python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check",
+    "# The two unmarked 7 tokens (key: Espagne) are overridden to an open M value: the gloss 'pratiquer' sits over the same opening in run 2.",
+    "# Grades: {grades_sorted}"
+   ],
+   "exceptions": "bal167c275/exceptions_b167c275.tsv",
+   "exception_grade_overrides_conf": true
   }
  ]
 }

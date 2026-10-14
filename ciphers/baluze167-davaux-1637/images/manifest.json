@@ -542,5 +542,57 @@
    "kept": "not kept (session scratch); regen from url",
    "job": "BAL168-TAIL"
   }
+ ],
+ "bal167c275_fetches": [
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f275/info.json",
+   "fetched": "2026-10-14T19:38:15Z",
+   "http": 200,
+   "bytes": 321,
+   "sha1": "4a4bdddbd8a269b43381449633c7fc68f55cff8f",
+   "kept": "untracked scratch (images/scratch/c275/), not committed",
+   "job": "BAL167-C275"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f275/full/1600,/0/default.jpg",
+   "fetched": "2026-10-14T19:38:24Z",
+   "http": 200,
+   "bytes": 529700,
+   "sha1": "8b807c7dcdbeb9576bfa883cee6b4a0311ad8a2b",
+   "kept": "untracked scratch (images/scratch/c275/), not committed",
+   "job": "BAL167-C275"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f275/1000,4880,3796,420/max/0/default.jpg",
+   "fetched": "2026-10-14T19:38:44Z",
+   "http": 200,
+   "bytes": 250716,
+   "sha1": "e38a2c08d5b837dbc771e5ea03c2e30dabc775a0",
+   "kept": "untracked scratch (images/scratch/c275/), not committed",
+   "job": "BAL167-C275"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f283/full/1600,/0/default.jpg",
+   "fetched": "2026-10-14T19:38:47Z",
+   "http": 200,
+   "bytes": 556725,
+   "sha1": "485a83492c0b20d0bc403b8cd26fc335344f9aec",
+   "kept": "untracked scratch (images/scratch/c275/), not committed",
+   "job": "BAL167-C275"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f283/pct:20,12.5,80,9/max/0/default.jpg",
+   "fetched": "2026-10-14T19:39:04Z",
+   "http": 200,
+   "bytes": 401776,
+   "sha1": "514b1d914df4323dbbaf27c8649836dc5d3022c6",
+   "kept": "untracked scratch (images/scratch/c275/), not committed",
+   "job": "BAL167-C275"
+  },
+  {
+   "derived": "crops",
+   "command": "python3 tools/iiif_lines.py --image \"images/scratch/c275/src_c275_1000,4880,3796,420.jpg\" --out images/scratch/c275/crops --prefix b167c275 --debug (run in the target folder; 2 lines x 2 segments)",
+   "job": "BAL167-C275"
+  }
  ]
 }

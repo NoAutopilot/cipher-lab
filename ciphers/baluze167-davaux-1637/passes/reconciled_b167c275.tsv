@@ -1,0 +1,11 @@
+# BAL167-C275, 14 Oct 2026. Eye reconciliation of passes A/B (letter signs unlabelled in both: split well above the 0.10 gate) from the
+# native crops images/scratch/c275/crops/b167c275_L01-L02_s1/s2 (untracked; regen in images/manifest.json bal167c275_fetches).
+# Numerals as seen, N' acute; marks on 1-bearing numerals are ambiguous (dotted-i hand, D4-B167): ?. Letter signs: L:x only where the
+# shape map already established for this key family from glossed exemplars gives the letter (h = n, long-s hook = s, w with acute = e;
+# balshape/gloss_labels.tsv, D4-B167), all M; other signs as s:<shape> (no letter assigned): s:i (i-like stroke), s:dloop (d with a
+# loop, written like the ordinal-8), s:E (E/epsilon), s:u4x (u4 with a cross bar; shape class u4 = t or g, D4-B167), s:x (x-form),
+# s:dot (a dot before the long-s at line 2 start; may be a point, not a sign). "7" carries a dot after it in L01 ("7 ."); 7 and 5 show
+# no mark in either run; 30 and 66 in L01 are unmarked (both passes agree, no stroke at native size) (key.tsv has only 7' and 5', both red in Tomokiyo's table).
+line	tokens
+b167c275_L01	{est difficile a} 7 5 s:i 65' 9' 18'? L:n? 30 96' 42' s:dloop 66 L:e? s:E L:s? 5 s:u4x
+b167c275_L02	s:dot? L:s? L:e? s:x 14? s:dloop 81'? 12: 11'? {qui est difficile a} 7 5 s:i 65' 77 s:x 61'? 6'?

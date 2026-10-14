@@ -1,0 +1,7 @@
+# Baluze 167 f.135r (canvas 275), inside the f.127 Memoire (Louis XIII / Bouthillier to d'Avaux, St Germain, Oct 1637): the unglossed run
+# after "qui est difficile a" (L01 to L02 before the clear words) and, for comparison, the following run glossed "pratiquer" over it
+# (its continuation on the next line, "3 30 d 6 w 6", is outside the crops). Reconciled by BAL167-C275 (14 Oct 2026) from two blind
+# Sonnet passes and the native crops; see passes/reconciled_b167c275.tsv for shapes and marks. Letter signs L:x are M; s:<shape> carry no
+# letter. w: = clear words on the leaf.
+b167c275 L01 | w:est w:difficile w:a 7 5 s:i 65' 9' 18'? L:n? 30 96' 42' s:dloop 66 L:e? s:E L:s? 5 s:u4x
+b167c275 L02 | s:dot? L:s? L:e? s:x 14? s:dloop 81'? 12: 11'? w:qui w:est w:difficile w:a 7 5 s:i 65' 77 s:x 61'? 6'?
