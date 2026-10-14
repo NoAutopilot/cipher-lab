@@ -15725,3 +15725,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 09:43 | PW-FIX worker (Opus) | claim for LANE DEFAULT-A2-0911-14 (account 2): PW-FIX, tools/prior_work.py check 3 false CLEAR on clair1161 Lasry snapshot; cap 3, box to 10:44 UTC; disk only
 2026-10-14 09:44 | COL26-C33 worker | claim: colbert26-lathuillerie-1644, word-grain pairing of c33 for 20 = i (instrument check first, PREREG before score); cap 5, box 09:44-11:14 UTC (80% 10:56); for LANE DEFAULT-A2-0911-14 (account 2)
 2026-10-14 09:44 | BAL168-SWEEP worker (Opus, account 2) | openapi.bnf.fr release for LANE DEFAULT-A2-0911-14 (account 2): 251 requests (250 at 300 px + 1 at 1000 px), all HTTP 200.
+2026-10-14 09:45 | F3975-PC | claim fr3975-vieuville-1587 print_check; cap USD 1, box ends 10:15 UTC 14 Oct 2026 for LANE DEFAULT-A2-0911-14 (account 2)
