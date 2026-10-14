@@ -72,3 +72,25 @@ sheet, what counts as a glossed sibling; 1600 px only for a cipher leaf). Census
 (next block 95-106). The fr4712 images/census/ tracked images are not this job's to remove.
 
 ## Wave 2 (as wave 1 reports; filled in below by the lane orchestrator)
+
+### FAIR-TRANS (Opus, cap 3.5, box 75 min, disk only): fair-game-2010 columnar/route transposition family with matched control
+Verdict (FAIR-CRED, 14 Oct): "columnar/route transposition family with matched control at N=67, ~$3". Read D2-FAIR, R12D-FAIR2 and FAIR-CRED
+first (the 67 marked letters, the en judge's EN-FOLDS caveat). Use `tools/family_run.py` if it carries a transposition family; otherwise add one
+as an option to an existing shared tool (Usage 8: no private copy) with an offline test. Control first: synthetic English of N=67 under the same
+transposition grid sizes, gate pre-registered; the target only if the control meets the gate (else CONTROL BELOW GATE, logged). Both numbers in
+HYPOTHESES.md. NOTES "## FAIR-TRANS", gaps + Verdict.
+
+### MONL-SORT (Opus, cap 2, box 60 min, disk only): fr4735-monluc-lansac-poland-1573 value-blind sort of K12/K14/K34 tokens
+Verdict (MONL-K12, 14 Oct): "value-blind sort of the K12/K14/K34 tokens into K04/K17/K53 forms and relabel, ~$1.5". Read MONL-ALIGN and MONL-K12
+first. Crops already on disk (or regen from the committed command; openapi.bnf.fr <= 6 only if a crop is missing). A subagent sorts the token
+crops against exemplar crops of K04/K17/K53 with no key value, reading or label shown (TRANSCRIPTION.md blind first); two blind sorts + 1
+reconciliation, priced per call. Relabel only tokens both sorts agree on; `decode_key.py ciphers/fr4735-monluc-lansac-poland-1573 --check` exit 0
+after, and report how the c268 confirm count (136/169) moves. NOTES "## MONL-SORT", gaps + Verdict.
+
+### BAL168-TAIL (Opus, cap 3.5, box 75 min, openapi.bnf.fr <= 40): baluze167-davaux-1637 Baluze 168 canvases 485-651 sweep
+Verdict: "Baluze 168 canvases 485-651 (~$2.5)". Follow BAL168-SWEEP / BAL168-FIN's method exactly (contact sheets, what counts as an unlisted
+cipher letter, 1000 px looks priced ~0.15 each). Start only after BAL-LOOKS has released openapi.bnf.fr. NOTES "## BAL168-TAIL", gaps + Verdict.
+
+### BAL171-TAIL (Opus, cap 4, box 75 min, openapi.bnf.fr <= 45): baluze167-davaux-1637 Baluze 171 canvases 251-464 sweep
+Verdict: "Baluze 171 canvases 251-464 (~$3)". As BAL171-SWEEP's method (it covered c1-250), 1000 px looks priced ~0.15 each. Not concurrently
+with BAL168-TAIL on the host (take/release). NOTES "## BAL171-TAIL", gaps + Verdict.
