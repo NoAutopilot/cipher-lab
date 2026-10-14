@@ -1,0 +1,26 @@
+[strict] sheet_01 R5311: S_A=0 S_B=0 S_agreed=0 []
+[strict] sheet_02 R5302: S_A=0 S_B=0 S_agreed=0 []
+[strict] sheet_03 R5323: S_A=4 S_B=4 S_agreed=4 ['O=a', 'N8=d', 'N2=h', 'cu=n']  <- target
+[strict] sheet_04 R5304: S_A=0 S_B=0 S_agreed=0 []
+[strict] sheet_05 R5309: S_A=0 S_B=0 S_agreed=0 []
+[strict] sheet_06 R5312: S_A=0 S_B=0 S_agreed=0 []
+[strict] sheet_07 R5324: S_A=0 S_B=1 S_agreed=0 []
+[strict] sheet_08 R5315: S_A=0 S_B=0 S_agreed=0 []
+[strict] sheet_09 R5306: S_A=0 S_B=0 S_agreed=0 []
+[strict] sheet_10 R5305: S_A=0 S_B=1 S_agreed=0 []
+[strict] sheet_11 R5310: S_A=1 S_B=1 S_agreed=1 ['O=a']
+[strict] sheet_12 R5313: S_A=0 S_B=0 S_agreed=0 []
+[strict] R5323 S_agreed=4  max control=1  shuffled p=0.0000  GATE PASS
+[loose] sheet_01 R5311: S_A=0 S_B=0 S_agreed=0 []
+[loose] sheet_02 R5302: S_A=0 S_B=0 S_agreed=0 []
+[loose] sheet_03 R5323: S_A=4 S_B=4 S_agreed=4 ['O=a', 'N8=d', 'N2=h', 'cu=n']  <- target
+[loose] sheet_04 R5304: S_A=0 S_B=0 S_agreed=0 []
+[loose] sheet_05 R5309: S_A=0 S_B=0 S_agreed=0 []
+[loose] sheet_06 R5312: S_A=0 S_B=0 S_agreed=0 []
+[loose] sheet_07 R5324: S_A=0 S_B=1 S_agreed=0 []
+[loose] sheet_08 R5315: S_A=0 S_B=0 S_agreed=0 []
+[loose] sheet_09 R5306: S_A=0 S_B=0 S_agreed=0 []
+[loose] sheet_10 R5305: S_A=0 S_B=1 S_agreed=0 []
+[loose] sheet_11 R5310: S_A=1 S_B=1 S_agreed=1 ['O=a']
+[loose] sheet_12 R5313: S_A=0 S_B=0 S_agreed=0 []
+[loose] R5323 S_agreed=4  max control=1  shuffled p=0.0000  GATE PASS (sensitivity only)

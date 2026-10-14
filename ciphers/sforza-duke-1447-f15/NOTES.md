@@ -358,3 +358,57 @@ Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0
 - [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
 - [ ] retry: R5323 blind check with a per-label table and exemplar crops (attempt 2, changed instrument), then the period key against the f.5/f.8 glosses, then S3 on f.15
 Verdict: keep going: 3 internal gaps; cheapest next: R5323 blind check with a split label table and value-free exemplar crops, fresh PREREG, ~$1.5
+
+## SFZ-R5323B (14 Oct 2026 21:48-22:0x UTC by date -u, account 4, LANE DEFAULT-A4-2135-14): R5323 blind re-test with a split label table and value-free exemplars -- registered gate PASS (4 of 7, threshold 4), every control <= 1
+Job: SFZ-R5323's named next step, attempt 2 of the blind eye-pairing method with a changed instrument (rule 3 third-attempt clause).
+- **Prior work.** Check 1 (own work): SFZ-DEC2 (unblinded eye, 5/7) and SFZ-R5323 (blind, 3/7, FAIL at threshold 4) above are the only
+  looks at R5323; nothing else in the repository transcribes it (grep of ciphers/ and sources/ for R5323/5323, 14 Oct 2026). Checks 2-4 as
+  SFZ-R5323 (same records; a key-sheet test, no edition). Pelling and Knowles (Cipher Mysteries, 13 Apr 2023) report two Filippo Maria
+  keys in the 1597 set; no transcription of R5323 by them in sources/.
+- **Fetch.** One browser login (`r5323/regen.sh`, unchanged): 14 de-crypt.org requests, all 12 PDF sha1s equal to decode_1597/manifest.json.
+  Nothing image-shaped committed; reader packets re-derive with `r5323b/regen.sh <r5323 regen dir> <out dir>`.
+- **PREREG** `PREREG-SFZ-R5323B.md`, pushed e6acd17ff before any reader ran (same 7 C pairs, same 11 control sheets, same gate).
+- **Instrument changes.** (1) Split label table, 40 labels in two groups of 20 (`r5323b/labels_G1.md`, `labels_G2.md`; ca/cr/ce/cu/cm/ci
+  one row each; # with N2, and O/co/Y/N8/cu/ce in the same group). (2) Value-free exemplar crops: 24 labels, one crop each from the f.8
+  line crops on disk (`r5323b/exemplars.json`, `exemplar_sheet.py`), 7 of them C-pair labels, 17 decoys, label text only. (3) One label
+  group per call. (4) The 11 controls read in the same calls as R5323, under neutral names sheet_01..12 (`r5323b/sheet_map.tsv`, seeded
+  shuffle; R5323 = sheet_03), so controls also got two passes. 8 Sonnet calls (2 passes x 2 groups x 2 batches of 6 sheets).
+- **Result** (`python3 r5323b/score_r5323b.py r5323b`, output `r5323b/score.out`; reader TSVs `r5323b/pass*_G*_b*.tsv`):
+
+  | sheet | S_A | S_B | S_agreed (of 7) | pairs agreed |
+  |---|---|---|---|---|
+  | **R5323** | 4 | 4 | **4** | O=a, N8=d, N2=h, cu=n |
+  | R5324 (other "Filipo Maria" sheet) | 0 | 1 | 0 | |
+  | R5310 | 1 | 1 | 1 | O=a |
+  | R5305 | 0 | 1 | 0 | |
+  | 8 other 1597 keys (5302 5304 5306 5309 5311 5312 5313 5315) | 0 | 0 | 0 | |
+  | shuffled-value null on R5323's agreed columns | | | p < 0.0001 (0 of 10,000, seed 5323) | |
+
+  Gate (S_agreed >= 4 AND > max control 1 AND p <= 0.01): **PASS**, at the threshold exactly. Loose line (A/B? tokens) identical.
+- **What changed and what did not (post hoc, not scored).** The two named gaps of SFZ-R5323 both moved: cu=n is now listed by both
+  readers (the split row made u expressible), and both put ‡ under h as N2 (and also # -- both labels sit in G2). Y=o, agreed in SFZ-R5323,
+  dropped out: pass A wrote Y under n, pass B wrote cp under o. N11 and ce under r: neither reader (r read `N4 d` by both, as in
+  SFZ-R5323 and SFZ-DEC2's eye). So the pairs agreed by blind readers across the two attempts are O, Y, N8, N2, cu (5 of 7, the same
+  five as SFZ-DEC2's unblinded eye), but no single attempt agreed on more than 4.
+- **Caveats.** Every reader call took 24-38 s for 6 sheets and described its own read as low-confidence (small, dense sheets; column
+  alignment approximate). The PASS is at the threshold with no margin; one lost pair would have failed it. It is a PASS of the
+  identification gate only: no key_r5323.tsv was built, nothing was decoded, and nothing here is a reading.
+- **Grade.** R5323 moves from an M lead to a candidate period key supported by a passed registered blind gate (matched controls max 1);
+  the identification is cryptanalytic (S-level), not H: the decisive test is the key against the Duke's own glosses on f.5/f.8.
+- Requests: de-crypt.org 14. Sonnet calls 8. Cost not visible to this session.
+
+## Remaining gaps (SFZ-R5323B, 14 Oct 2026)
+Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0.441 mean held-out, 2 units; anchored 0.422); candidate period key DECODE R5323: blind gate PASS (SFZ-R5323B, 4 of 7 C pairs agreed, controls max 1, p < 0.0001), no key built yet
+- R5323 key build - blocker: not-attempted; only the 7 C-pair cells were scored, no full transcription of R5323 exists; next: two blind passes transcribing R5323's whole alphabet block (all columns, both label groups, the r5323b instrument) into key_r5323.tsv, agreed cells only, then decode_key.py on f.5/f.8 and score against their glosses with the G1 gate unchanged (a key that fails the glosses voids the identification), ~$2
+- f.15 decode - blocker: not-attempted; the owner's blind sort (ASKS row 165) remains the transcription route for f.15 itself; next: only after R5323 passes the f.5/f.8 gloss gate, apply it to f.15, ~$2
+- f.17 blanks vs f.15 - blocker: not-attempted; whether f.15's cipher fills f.17's two blanks is unexamined; next: only after a readable key, ~$1
+
+## Escalation (SFZ-R5323B, 14 Oct 2026)
+- [x] siblings: the Duke's glossed pairs f.5/f.7 and f.8/f.10 used; f.23-24/f.26, f.30-31/f.29, f.36-37/f.35 not yet
+- [x] clear-pages: f.17 (same-day clear letter) noted as context; no copy of f.15 exists in the volume per Mazzatinti
+- [x] known-keys: DECODE scat. 1597 nos. 1-35 and 78 opened; R5323 blind gate FAIL at 3/7 (SFZ-R5323), then PASS at 4/7 with the split-label instrument (SFZ-R5323B), controls max 1
+- [ ] print: no print of f.15 located (check-solved above); verifier pass belongs to a later reading
+- [x] key-rebuild: attempted, G1 FAIL
+- [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
+- [ ] retry: build key_r5323.tsv from two blind passes and test it against the f.5/f.8 glosses (G1 unchanged), then S3 on f.15
+Verdict: keep going: 3 internal gaps; cheapest next: key_r5323.tsv from two blind passes and decode_key.py on f.5/f.8 against their glosses, ~$2
