@@ -143,3 +143,19 @@ must score near chance. 4. Report both numbers whether the gate passes or fails;
 feed key_decode_lattice.py (VIV-LAT's runner) -- do not run it. Price: vision calls: 2 x USD 1.5 = 3 (overlay checks only); Opus
 floor 2.5; CPU fits are minutes; cap 12. Stop before a step that would cross 80% of cap or box.
 Done line: gate (a) and (b) numbers first, coverage per leaf, then the permuted-label control.
+
+## Account-2 rows (queued 00:4x UTC 14 Oct 2026 for the account-2 dispatcher; the worker addresses its ROOM lines "for LANE VIV-KEYSTONE (account 4)" and its done line to the parent session_01D7XWmthshMVqxumdDvitPh, whatever the dispatcher's spawn prompt says)
+
+### VIV-70 (Opus, cap 12, box 150 min, openapi.bnf.fr <= 14 requests; account 2): a third known-plaintext pair, ink 70/71 (4-5 Nov 1573), first cipher page
+Exactly the VIV-67 job above (read its section, then NOTES.md "VIV-67" for the method as actually run: the overview-then-native fetch,
+the --image re-cut, tx/viv67_strips.py for the clerk pages, tx/viv67_prep.py's tokenisation fix, build_vivonne_f201r.py for the truth
+item, tx/viv67_labels.py for the label table), with these substitutions: ink 70 = Saint-Gouard to the King, docket 4/5 Nov 1573,
+fr.16105 ff.211r-213r, Gallica btv1b9009663p canvases 216-218 (first cipher page expected f.211r = canvas 216 right page; confirm by
+eye on a 600 px overview, the offset here is canvas = folio + 5 as VIV-67 found); its decipherment ink 71 "dechiffre de la precedente"
+ff.215r-217, canvases 220-222 (first two pages f.215r = c220 right, f.215v = c221 left). Outputs with the 70/71 names
+(tx/f211r_*, tx/dec_f215r_*, dec_f215v_*, tx/dec70_norm.txt, tx/vivk70_result.json, tx/viv70_labels*.tsv,
+benchmark-tx/vivonne1573-f211r-dev.truth.tsv registered in BENCHMARK-TX.tsv, split=dev). PREREG-VIV70.md pushed before any pass.
+Price: vision calls: 6 x USD 1.4 = 8.4 (2 cipher + 4 decipherment Sonnet calls) + the worker's two reconciliation units; cap 12;
+stop before a unit that would cross 80% of cap or box. If the ink-70 cipher does not start on f.211r (a plain head longer than a
+page), take the first page that is mostly cipher and the decipherment pages that match its opening. Done line: alignment share vs
+shuffled p95 first, then err_2reader, the label table totals, and whether the truth item was registered.
