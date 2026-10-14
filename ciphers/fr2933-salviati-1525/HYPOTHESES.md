@@ -264,3 +264,10 @@ window survives 10-15% (F) and 40-65% (B). The isomorph-count statistic cannot d
 homophonic design even with no transcription error: homophony splits repeated letters (F), and where the window survives
 (B) one extra match does not lift H above the nulls. Logged **untested-by-this-tool** (the isomorph crib count) for all
 five cribs in both views -- not a negative for the words. Syllabic/vowel-indicator designs not covered (PREREG).
+
+## SALV-TRY20 (14 Oct 2026, LANE DEFAULT-A2-0911-14): pass-disagreement cells and eps^7 under George Lasry's published key
+`tools/decode_key.py --try` (it16, 200 nulls), one candidate per call, 31 candidates over 19 sign types (PREREG-SALV-TRY20.md): 29 reject,
+2 undecided (n = 1: sq^o, sq^~), 0 accept; eps^7 = ti / tu both reject against ci. No value enters key_lasry.tsv; the whole-key re-score
+was not run (nothing accepted), so the published-key decode stays at 4-gram -1.386 vs permuted p99 -1.368 (9/300), word hits 288 vs
+p99 244 (0/300). Third attempt at this instrument (SALV-LKEY, SALV-TRY, SALV-TRY20): the --try + whole-key re-score route is
+**untested-by-this-tool** beyond this point at our transcription's error (rule 3 third-attempt clause), not a negative against his key.
