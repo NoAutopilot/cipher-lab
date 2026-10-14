@@ -176,3 +176,29 @@ Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0
 - [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
 - [ ] retry: G1 after the sort (anchored learner on reader A FAIL 0.422, 8 Oct), then S3 on f.15
 Verdict: keep going: 1 internal gap; cheapest next: write the ASMi scat. 1597 photoreproduction request (REQUEST.md + ASKS row) for the Filippo Maria Visconti 1446-47 keys, ~$0.5
+
+## OUT-CHECK-SFZ (14 Oct 2026 10:41-10:5x UTC, account 4, LANE DEFAULT-A4-0935-14): gate-7 check of REQUEST.md -- FAIL, held
+Separate session from the drafter (SFZ-REQ). The draft's premise, and SFZ-KEYS's "not digitised" line, are wrong: DECODE lists 115 key
+records of "Milan State Archives, Carteggio_Sforzesco_scat._n.1597_*" (R5301-R5471; plus 64 of scat. 1591 and 29 of scat. 1598) in
+sources/decode/keys-all-2026-09-28-merged.tsv, and Bourdeau thumbnail-scanned all 208 and read the headings of 1597 nos. 2-36
+(ciphers/sforza-maino-1446/NOTES.md, "Where it was not found"). SFZ-KEYS's inventory and blog sources stand; what it missed is this
+repository's own DECODE cache and the sibling folder. Also missing from the draft: rule 1d holdings line, rule 8 prior_contact line, rule 1b
+work paragraph, rule 7 English version, the rule 1 disclosure text. Confirmed: as-mi@cultura.gov.it is the archive's quote address
+(Servizio di fotoriproduzione page, HTTP 200, read 14 Oct 2026 10:43 UTC); no other draft to it (rule 1c). Requests:
+archiviodistatomilano.cultura.gov.it 1. No CONTRIBUTIONS.md row written (a row is for a draft to be sent; this one is held).
+
+## Remaining gaps (OUT-CHECK-SFZ, 14 Oct 2026)
+Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0.441 mean held-out, 2 units; anchored 0.422)
+- f.15 decode - blocker: waiting-on ASKS row 165 (the owner's blind sort of f.5+f.8, packet built by SFZ-SORT 13 Oct 2026, sorter/README.md); a Duke key that passes G1 is needed first; next after the sort: dateline check, sign_sorter_apply.py, then g1_duke.py / g1_duke_anchored.py unchanged, ~$2
+- period Duke key - blocker: not-attempted; the ASMi scat. 1597 keys are on DECODE (R5301-R5471, 115 records); next: list the scat. 1597 records' headings and thumbnails (login-free) to find the Filippo Maria Visconti 1446-47, Barbavara and Aragon-orators keys, then one browser login for full size and the sign-stock overlap count against f.5/f.8/f.15, ~$2
+- f.17 blanks vs f.15 - blocker: not-attempted; whether f.15's cipher fills f.17's two blanks is unexamined; next: only after a readable key, ~$1
+
+## Escalation (OUT-CHECK-SFZ, 14 Oct 2026)
+- [x] siblings: the Duke's glossed pairs f.5/f.7 and f.8/f.10 used; f.23-24/f.26, f.30-31/f.29, f.36-37/f.35 not yet
+- [x] clear-pages: f.17 (same-day clear letter) noted as context; no copy of f.15 exists in the volume per Mazzatinti
+- [ ] known-keys: Cerioni 1970 snippet-only (SFZ-KEYS); the ASMi scat. 1597 keys are on DECODE and not yet opened (OUT-CHECK-SFZ); the ASMi quote request is held at gate 7 until DECODE is read
+- [ ] print: no print of f.15 located (check-solved above); verifier pass belongs to a later reading
+- [x] key-rebuild: attempted, G1 FAIL
+- [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
+- [ ] retry: G1 after the sort (anchored learner on reader A FAIL 0.422, 8 Oct), then S3 on f.15
+Verdict: keep going: 2 internal gaps; cheapest next: read the DECODE scat. 1597 key records (R5301-R5471) for the Filippo Maria Visconti 1446-47 keys, ~$2
