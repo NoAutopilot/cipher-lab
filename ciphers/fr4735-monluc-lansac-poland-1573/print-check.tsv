@@ -1,0 +1,44 @@
+# tools/print_check.py, 14 Oct 2026. A search result, not a novelty verdict (CLAUDE.md rule 10).
+phrase	source	result	detail	url
+poursuiteurs de lempereur	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22poursuiteurs%20de%20lempereur%22
+poursuivans de lempereur	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22poursuivans%20de%20lempereur%22
+poursuyvans de l'empereur	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22poursuyvans%20de%20l%27empereur%22
+Lon faict parler le Roy de dannemarc	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22Lon%20faict%20parler%20le%20Roy%20de%20dannemarc%22
+Roy de dannemarc qui ny pensa jamais	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22Roy%20de%20dannemarc%20qui%20ny%20pensa%20jamais%22
+Roy de Dannemark qui n'y pensa jamais	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22Roy%20de%20Dannemark%20qui%20n%27y%20pensa%20jamais%22
+le Moscouite commande que si on ne le veult eslire	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22le%20Moscouite%20commande%20que%20si%20on%20ne%20le%20veult%20eslire%22
+prenne le filz de lempereur	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22prenne%20le%20filz%20de%20lempereur%22
+le moscovite commande que si on ne le veut eslire	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22le%20moscovite%20commande%20que%20si%20on%20ne%20le%20veut%20eslire%22
+palatin de Sendomierz qui estoit fort esbranle	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22palatin%20de%20Sendomierz%20qui%20estoit%20fort%20esbranle%22
+la toille a este si bien tissue quelle ne se peult deffaire	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22la%20toille%20a%20este%20si%20bien%20tissue%20quelle%20ne%20se%20peult%20deffaire%22
+la toile a esté si bien tissue qu'elle ne se peut deffaire	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22la%20toile%20a%20est%C3%A9%20si%20bien%20tissue%20qu%27elle%20ne%20se%20peut%20deffaire%22
+palatin de Lasqui de sa vanite	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22palatin%20de%20Lasqui%20de%20sa%20vanite%22
+nous sommes venuz du point ou se retrouuent les plaideurs	ia-global	no hits		https://be-api.us.archive.org/fts/v1/search?q=%22nous%20sommes%20venuz%20du%20point%20ou%20se%20retrouuent%20les%20plaideurs%22
+poursuiteurs de lempereur	gbooks	not searched (HTTP 503)		https://www.googleapis.com/books/v1/volumes?q=%22poursuiteurs%20de%20lempereur%22&country=US&maxResults=10
+poursuivans de lempereur	gbooks	not searched (HTTP 503)		https://www.googleapis.com/books/v1/volumes?q=%22poursuivans%20de%20lempereur%22&country=US&maxResults=10
+poursuyvans de l'empereur	gbooks	not searched (HTTP 503)		https://www.googleapis.com/books/v1/volumes?q=%22poursuyvans%20de%20l%27empereur%22&country=US&maxResults=10
+Lon faict parler le Roy de dannemarc	gbooks	not searched (HTTP 503)		https://www.googleapis.com/books/v1/volumes?q=%22Lon%20faict%20parler%20le%20Roy%20de%20dannemarc%22&country=US&maxResults=10
+Roy de dannemarc qui ny pensa jamais	gbooks	not searched (HTTP 503)		https://www.googleapis.com/books/v1/volumes?q=%22Roy%20de%20dannemarc%20qui%20ny%20pensa%20jamais%22&country=US&maxResults=10
+Roy de Dannemark qui n'y pensa jamais	gbooks	not searched (HTTP 503)		https://www.googleapis.com/books/v1/volumes?q=%22Roy%20de%20Dannemark%20qui%20n%27y%20pensa%20jamais%22&country=US&maxResults=10
+le Moscouite commande que si on ne le veult eslire	gbooks	not searched (HTTP 503)		https://www.googleapis.com/books/v1/volumes?q=%22le%20Moscouite%20commande%20que%20si%20on%20ne%20le%20veult%20eslire%22&country=US&maxResults=10
+prenne le filz de lempereur	gbooks	not searched (HTTP 503)		https://www.googleapis.com/books/v1/volumes?q=%22prenne%20le%20filz%20de%20lempereur%22&country=US&maxResults=10
+le moscovite commande que si on ne le veut eslire	gbooks	not searched (HTTP 503)		https://www.googleapis.com/books/v1/volumes?q=%22le%20moscovite%20commande%20que%20si%20on%20ne%20le%20veut%20eslire%22&country=US&maxResults=10
+palatin de Sendomierz qui estoit fort esbranle	gbooks	not searched (HTTP 503)		https://www.googleapis.com/books/v1/volumes?q=%22palatin%20de%20Sendomierz%20qui%20estoit%20fort%20esbranle%22&country=US&maxResults=10
+la toille a este si bien tissue quelle ne se peult deffaire	gbooks	not searched (HTTP 503)		https://www.googleapis.com/books/v1/volumes?q=%22la%20toille%20a%20este%20si%20bien%20tissue%20quelle%20ne%20se%20peult%20deffaire%22&country=US&maxResults=10
+la toile a esté si bien tissue qu'elle ne se peut deffaire	gbooks	not searched (HTTP 503)		https://www.googleapis.com/books/v1/volumes?q=%22la%20toile%20a%20est%C3%A9%20si%20bien%20tissue%20qu%27elle%20ne%20se%20peut%20deffaire%22&country=US&maxResults=10
+palatin de Lasqui de sa vanite	gbooks	not searched (HTTP 503)		https://www.googleapis.com/books/v1/volumes?q=%22palatin%20de%20Lasqui%20de%20sa%20vanite%22&country=US&maxResults=10
+nous sommes venuz du point ou se retrouuent les plaideurs	gbooks	no hits		https://www.googleapis.com/books/v1/volumes?q=%22nous%20sommes%20venuz%20du%20point%20ou%20se%20retrouuent%20les%20plaideurs%22&country=US&maxResults=10
+poursuiteurs de lempereur	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22poursuiteurs%20de%20lempereur%22
+poursuivans de lempereur	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22poursuivans%20de%20lempereur%22
+poursuyvans de l'empereur	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22poursuyvans%20de%20l%27empereur%22
+Lon faict parler le Roy de dannemarc	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22Lon%20faict%20parler%20le%20Roy%20de%20dannemarc%22
+Roy de dannemarc qui ny pensa jamais	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22Roy%20de%20dannemarc%20qui%20ny%20pensa%20jamais%22
+Roy de Dannemark qui n'y pensa jamais	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22Roy%20de%20Dannemark%20qui%20n%27y%20pensa%20jamais%22
+le Moscouite commande que si on ne le veult eslire	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22le%20Moscouite%20commande%20que%20si%20on%20ne%20le%20veult%20eslire%22
+prenne le filz de lempereur	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22prenne%20le%20filz%20de%20lempereur%22
+le moscovite commande que si on ne le veut eslire	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22le%20moscovite%20commande%20que%20si%20on%20ne%20le%20veut%20eslire%22
+palatin de Sendomierz qui estoit fort esbranle	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22palatin%20de%20Sendomierz%20qui%20estoit%20fort%20esbranle%22
+la toille a este si bien tissue quelle ne se peult deffaire	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22la%20toille%20a%20este%20si%20bien%20tissue%20quelle%20ne%20se%20peult%20deffaire%22
+la toile a esté si bien tissue qu'elle ne se peut deffaire	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22la%20toile%20a%20est%C3%A9%20si%20bien%20tissue%20qu%27elle%20ne%20se%20peut%20deffaire%22
+palatin de Lasqui de sa vanite	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22palatin%20de%20Lasqui%20de%20sa%20vanite%22
+nous sommes venuz du point ou se retrouuent les plaideurs	openalex	no hits		https://api.openalex.org/works?per-page=5&search=%22nous%20sommes%20venuz%20du%20point%20ou%20se%20retrouuent%20les%20plaideurs%22

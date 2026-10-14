@@ -855,3 +855,18 @@ Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines
 - [x] image-check: the 10 contradiction positions looked at on the c268 strips and taller re-cuts (MONL-K12, non-blind)
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 5 internal gaps; cheapest next: value-blind sort of the K12/K14/K34 tokens into K04/K17/K53 forms and relabel, ~$1.5
+
+## MONL-PC: print check of the ff.140r-141r clear letter (14 Oct 2026, Sonnet, for LANE DEFAULT-A4-0935-14)
+
+Search result only (rule 10): not a novelty verdict. Transcription searched is clear_f140.tsv, a transcription (not the page image), so a negative is conditional on it (rule 2).
+Phrases: `phrases.txt`, 14 lines (the "poursuiteurs de lempereur" and "Roy de dannemarc qui ny pensa" lines, the Moscouite/filz de lempereur sentence,
+the palatin de Sendomierz and palatin de Lasqui lines, "la toille ... si bien tissue", the opening "plaideurs" line, each with modern/normalised spelling variants).
+Command: `python3 tools/print_check.py ciphers/fr4735-monluc-lansac-poland-1573 --phrases .../phrases.txt --only ia-global,gbooks,openalex --max-requests 120`.
+- IA full text across all items (be-api fts), 14 phrases: **no hits** on all 14.
+- OpenAlex, 14 phrases: **no hits** on all 14.
+- Google Books (key + country=US): 1 of 14 phrases answered (no hits); **13 of 14 were HTTP 503, not searched**. One manual retry after a 20 s pause
+  (3 phrases): 2 more 503, 1 answered 200 (palatin de Sendomierz + esbranle; response not read for hits beyond the status). Google Books is therefore
+  **largely unsearched** (same googleapis 503 as the eckert audit2 park); re-run those 13 phrases when it recovers. No listed-edition sources (sources.tsv absent): no
+  Noailles / Catherine de Medicis / Monluc edition identifier was searched by id; that remains open.
+- Requests: be-api.us.archive.org 14, api.openalex.org 14, www.googleapis.com 17 (14 + 3 retry). Outputs: print-check.tsv, print-check-hosts.tsv.
+Verdict for this gap: print check done on IA full text and OpenAlex (no hits); Google Books pending (503); edition-by-identifier step not run.

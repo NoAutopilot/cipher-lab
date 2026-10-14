@@ -1,0 +1,4 @@
+host	requests	status
+api.openalex.org	14	ok
+be-api.us.archive.org	14	ok
+www.googleapis.com	14	ok (some errors)
