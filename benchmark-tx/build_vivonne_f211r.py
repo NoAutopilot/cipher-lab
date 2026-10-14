@@ -7,6 +7,8 @@ BENCHMARK-TX item built with build_vivonne_confirm2.py's recipe (its functions i
     python3 benchmark-tx/build_vivonne_f211r.py --control-only   # gate only (prints, writes tx/vivk70_result.json)
     python3 benchmark-tx/build_vivonne_f211r.py                  # control + (if PASS) truth, sha256, outputs
     python3 benchmark-tx/build_vivonne_f211r.py --check          # exit 1 if any written file is stale
+    ... --trim-ink67   (VIV-70B, PREREG-VIV70B.md) target = the first int(n x 1403/1270)+200 letters of dec70, the ratio read from
+                       tx/vivk67_result.json (dec67 aligned span / f.201r codes); writes tx/vivk70b_result.json, not vivk70_result.json
 
 Inputs: ciphers/fr16104-vivonne-spain-1572/tx/f211r_rec.tsv (reconciled), f211r_passA/passB.tsv (blind), dec70_norm.txt
 (tx/viv67_merge_dec.py --out dec70_norm.txt), dec_f215r/f215v_passA/passB.txt (clerk-split mask). Control (gating): the whole f.211r stream decoded
@@ -27,7 +29,8 @@ ITEM = 'vivonne1573-f211r-dev'
 TRUTH = os.path.join(HERE, ITEM + '.truth.tsv')
 SHA = TRUTH + '.sha256'
 ODIR = os.path.join(HERE, 'outputs', ITEM)
-RESULT = os.path.join(TX, 'vivk70_result.json')
+TRIM = '--trim-ink67' in sys.argv
+RESULT = os.path.join(TX, 'vivk70b_result.json' if TRIM else 'vivk70_result.json')
 DEC_PAGES = ('f215r', 'f215v')
 SEED = 20261014
 
@@ -62,10 +65,19 @@ def clerk_mask(n_letters):
     return out
 
 
-def load():
+def trim_len(n_codes):
+    """PREREG-VIV70B: ink 67's own ratio, dec67 aligned letters / f.201r codes, from tx/vivk67_result.json; + confirm2's 200 margin."""
+    c = json.load(open(os.path.join(TX, 'vivk67_result.json')))['control_published']
+    aligned = (c['window'][1] - 200) - (c['window'][0] + 200)
+    return int(n_codes * aligned / c['n_signs']) + 200
+
+
+def load(trim=None):
     pub, force, grade = c2.rd_key()
     let = sa.letters(open(os.path.join(TX, 'dec70_norm.txt'), encoding='utf-8').read())
     stream = c2.collapse(c2.raw_tokens(os.path.join(TX, 'f211r_rec.tsv')))
+    if TRIM if trim is None else trim:
+        let = let[:trim_len(len(stream))]
     return pub, force, grade, let, stream
 
 
@@ -99,6 +111,8 @@ def main():
     pub, force, grade, let, stream = load()
     seq = [t[0] for t in stream]
     res = {'item': ITEM, 'seed': SEED, 'control_published': control(seq, let, pub)}
+    if TRIM:
+        res['trim_ink67'] = {'prereg': 'PREREG-VIV70B.md', 'trim_letters': len(let), 'n_codes': len(seq)}
     full = {}
     rows = [l.rstrip('\n').split('\t') for l in open(os.path.join(F, 'key.tsv'), encoding='utf-8')]
     ix = {h: k for k, h in enumerate(rows[0])}
@@ -131,7 +145,8 @@ def truth(pub, force, grade, let, stream, ctl):
         by_val.setdefault(v, set()).add(c)
     seq = [t[0] for t in stream]
     amap, dec = c2.align(seq, let, pub)
-    cmask = clerk_mask(len(let))
+    n_full = len(sa.letters(open(os.path.join(TX, 'dec70_norm.txt'), encoding='utf-8').read()))
+    cmask = clerk_mask(n_full)[:len(let)]
     ok = lambda k: dec[k] >= 0 and k in amap and dec[k] == let[amap[k]]
     keyed = lambda k: dec[k] >= 0 and k in amap
     rows, nex = [], {}
@@ -164,11 +179,12 @@ def truth(pub, force, grade, let, stream, ctl):
         else:
             rows.append((lid, raws[0], code, tr, plain, st, flag))
             nex[st] = nex.get(st, 0) + 1
-    ctrl = ('control: f.211r match share, published key %.3f vs 200 value-shuffled keys mean %.3f p95 %.3f max %.3f, rank %d of 201'
+    ctrl = (('trim rule PREREG-VIV70B (first %d letters of dec70, ink-67 ratio 1403/1270 + 200); ' % len(let) if TRIM else '') +
+            'control: f.211r match share, published key %.3f vs 200 value-shuffled keys mean %.3f p95 %.3f max %.3f, rank %d of 201'
             % (ctl['real'], ctl['null_mean'], ctl['null_p95'], ctl['null_max'], ctl['rank']))
     hdr = ('# Vivonne 1573 (BnF fr.16105 f.211r, Saint-Gouard to Charles IX, docket 4/5 Nov 1573, ink 70) dev item, split=dev: clerk period '
            'decipherment (ink 71, ff.215r-215v) under the published Tomokiyo key (C rows); built by benchmark-tx/build_vivonne_f211r.py '
-           '(VIV-70, PREREG-VIV70.md), recipe of build_vivonne_confirm2.py; no verifier flags yet.\n# %s\n' % ctrl)
+           '(VIV-70, PREREG-VIV70.md; VIV-70B, PREREG-VIV70B.md), recipe of build_vivonne_confirm2.py; no verifier flags yet.\n# %s\n' % ctrl)
     body = hdr + c2.COLS + ''.join('\t'.join(str(x) for x in r) + '\n' for r in rows)
     outs = {}
     for name, path in (('committed', 'f211r_rec.tsv'), ('passA', 'f211r_passA.tsv'), ('passB', 'f211r_passB.tsv')):

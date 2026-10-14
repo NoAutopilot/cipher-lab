@@ -2,6 +2,8 @@
 """VIV-70 (PREREG-VIV70 "If PASS" (a)): every token of tx/f211r_rec.tsv whose label is outside the published key
 (key_tomokiyo.tsv) or M-graded in key.tsv, with the clerk letter the PREREG alignment puts against it and the local DP
 confidence (share of keyed neighbours within 8 positions that decode to their aligned letter). Counts only: no key edit.
+Alignment: PREREG-VIV70B's trimmed target (first int(519 x 1403/1270) + 200 = 773 letters of dec70; b.load(trim=True)), the run
+whose control passed (tx/vivk70b_result.json); the untrimmed PREREG-VIV70 run failed and is never used here.
 
     python3 ciphers/fr16104-vivonne-spain-1572/tx/viv70_labels.py [--check]
 
@@ -16,7 +18,7 @@ import build_vivonne_f211r as b  # noqa: E402
 
 
 def main():
-    pub, force, grade, let, stream = b.load()
+    pub, force, grade, let, stream = b.load(trim=True)
     seq = [t[0] for t in stream]
     amap, dec = b.c2.align(seq, let, pub)
     keyed = lambda k: dec[k] >= 0 and k in amap

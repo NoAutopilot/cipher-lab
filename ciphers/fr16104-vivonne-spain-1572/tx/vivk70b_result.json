@@ -1,0 +1,39 @@
+{
+ "item": "vivonne1573-f211r-dev",
+ "seed": 20261014,
+ "control_published": {
+  "real": 0.7689,
+  "aligned_keyed": 437,
+  "null_mean": 0.458,
+  "null_p95": 0.5222,
+  "null_max": 0.5719,
+  "rank": 1,
+  "window": [
+   0,
+   733
+  ],
+  "n_letters": 773,
+  "n_signs": 519,
+  "verdict": "PASS"
+ },
+ "trim_ink67": {
+  "prereg": "PREREG-VIV70B.md",
+  "trim_letters": 773,
+  "n_codes": 519
+ },
+ "control_keytsv_report_only": {
+  "real": 0.7623,
+  "aligned_keyed": 446,
+  "null_mean": 0.463,
+  "null_p95": 0.5129,
+  "null_max": 0.5452,
+  "rank": 1,
+  "window": [
+   0,
+   733
+  ],
+  "n_letters": 773,
+  "n_signs": 519,
+  "verdict": "PASS"
+ }
+}
