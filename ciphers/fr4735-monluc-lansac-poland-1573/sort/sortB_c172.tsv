@@ -1,0 +1,17 @@
+page	passage	pos	label	conf	note
+c172	L04	24	K14	L	window blank at tick (line end); not found, guess
+c172	L04	19	K12	L	tick over blank area; g before the vertical bar has a left-sweeping tail
+c172	L04	13	K04	H	q with straight stem between g 7 g and the long bar
+c172	L04	8	K14	M	closed bowl b with tall stem hook, after r-theta-z
+c172	L04	4	K14	M	closed b-like form between c-y-theta and gamma-theta-z
+c172	L03	52	K04	H	straight descending stem, no tail, before r g
+c172	L03	40	K14	M	closed b with small top tick (second b)
+c172	L03	38	K14	L	b with tall hooked top and closed bowl; K17 not excluded
+c172	L03	26	K04	M	q with straight stem after y
+c172	L03	5	K14	M	closed b bowl with ascender hook, between y and z
+c172	L02	56	K14	M	closed b before the equals sign
+c172	L02	54	K14	M	small closed b with top tick after the barred sign
+c172	L02	48	K14	M	closed b with small tick after the vertical bar
+c172	L02	30	K14	M	closed b after g r, next to the heavy stroke
+c172	L02	21	K14	M	closed b with ascender arc, before r z
+c172	L02	3	K14	M	closed b with tall hooked stem, between z r and the barred sign

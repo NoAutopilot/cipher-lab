@@ -1,0 +1,34 @@
+page	passage	pos	label	conf	note
+c268	L01	4	K14	M	hooked top over closed bowl, b-like
+c268	L01	21	K12	M	9 with stem tail sweeping left
+c268	L01	22	K53	M	slanted beta, foot sweeps left
+c268	L01	25	K34	H	upright beta, straight stem
+c268	L01	29	K12	M	9 stem curls left at bottom
+c268	L01	31	K12	M	9 stem curls left at bottom
+c268	L02	14	K14	M	b with flat top bar, closed bowl
+c268	L02	21	K12	M	long 9, stem sweeps left at foot
+c268	L02	28	K12	M	long 9, stem sweeps left at foot
+c268	L02	29	K14	M	b-like closed form with top bar
+c268	L02	33	K12	M	9 with left-curving tail
+c268	L02	36	K04	M	q-like 9, straight stem down
+c268	L03	1	K17	L	hooked curl stroke at top, opens right
+c268	L03	3	K53	M	slanted beta, foot sweeps down-left
+c268	L03	6	K12	M	9 with left-curling tail
+c268	L03	11	K34	M	upright beta, straight stem
+c268	L03	21	K53	M	slanted beta, foot flick left
+c268	L03	22	K04	M	9 with straight vertical stem
+c268	L03	27	K12	M	9 with tail sweeping left
+c268	L03	36	K12	M	9 with tail curving left
+c268	L04	2	K34	M	upright beta, straight stem
+c268	L04	4	K12	M	9 with left-curling tail
+c268	L04	5	K14	M	closed b with small top hook
+c268	L04	6	K04	M	9 with straight stem
+c268	L04	8	K04	M	9 with straight stem
+c268	L04	15	K04	M	9 with straight stem
+c268	L04	23	K04	M	9 with straight stem
+c268	L05	4	K53	M	slanted beta
+c268	L05	12	K04	M	9 with straight stem
+c268	L05	14	K04	M	9 with straight stem
+c268	L05	19	K12	L	9 with slight left tail
+c268	L05	25	K14	M	b-like with top hook, closed bowl
+c268	L05	28	K12	M	9 with tail curving left

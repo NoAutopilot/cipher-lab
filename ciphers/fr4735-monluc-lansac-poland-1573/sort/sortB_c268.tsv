@@ -1,0 +1,34 @@
+page	passage	pos	label	conf	note
+c268	L01	4	K14	M	b-like closed bowl with hooked top
+c268	L01	21	K12	L	9 with stem curving left at foot
+c268	L01	22	K53	M	slanted beta, foot sweeping left
+c268	L01	25	K34	M	upright beta with straight stem
+c268	L01	29	K12	L	9 with curved stem, tail to left
+c268	L01	31	K12	L	9 with stem ending in slight left sweep
+c268	L02	14	K14	H	closed b-form with hooked top
+c268	L02	21	K04	M	9 with long, nearly straight stem
+c268	L02	28	K12	M	9 with stem curving left
+c268	L02	29	K14	M	b-like closed form
+c268	L02	33	K12	L	9 with curved stem, left tail
+c268	L02	36	K04	M	9 with straight vertical stem
+c268	L03	1	K17	L	hooked curl above diamond sign; sign hard to isolate
+c268	L03	3	K53	M	slanted beta, foot sweeping down-left
+c268	L03	6	K12	M	9 with stem curving left at foot
+c268	L03	11	K34	M	upright beta, straight stem
+c268	L03	21	K53	M	slanted beta, foot sweeping left
+c268	L03	22	K04	H	9 with straight stem
+c268	L03	27	K12	M	9 with curved stem
+c268	L03	36	K12	L	9 with curved stem, leftward tail
+c268	L04	2	K34	M	upright beta, straight stem
+c268	L04	4	K12	L	small 9 with curved foot
+c268	L04	5	K14	M	closed b with hooked top
+c268	L04	6	K04	M	9 with straight stem
+c268	L04	8	K04	M	9 with straight stem
+c268	L04	15	K04	M	9 with straight stem
+c268	L04	23	K04	M	9 with straight stem
+c268	L05	4	K53	M	slanted beta, foot sweeping left
+c268	L05	12	K04	M	9 with straight stem
+c268	L05	14	K04	M	9 with straight stem
+c268	L05	19	K04	M	9 with stem nearly straight
+c268	L05	25	K14	M	b-like closed form, hooked top
+c268	L05	28	K12	M	9 with stem curving left

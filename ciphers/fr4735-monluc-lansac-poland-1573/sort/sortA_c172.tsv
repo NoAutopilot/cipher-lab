@@ -1,0 +1,17 @@
+page	passage	pos	label	conf	note
+c172	L02	3	K14	M	closed b-form after K38 K05, big arc stroke above it
+c172	L02	21	K14	M	closed b with bowl, between K38 (with arc) and K05
+c172	L02	30	K14	M	closed b, heavy stroke touching it from the left
+c172	L02	48	K14	M	small closed b-like form before y y #
+c172	L02	54	K14	M	closed b after the K11 cross sign, before r
+c172	L02	56	K14	M	closed b between r and the = sign
+c172	L03	5	K14	M	closed b after y, before z
+c172	L03	26	K04	M	9 with straight stem, no leftward tail
+c172	L03	38	K14	M	closed b after y, before z
+c172	L03	40	K14	M	closed b after z, small bowl
+c172	L03	52	K04	M	9 with straight stem down, between # 2 | and r g
+c172	L04	4	K14	M	closed b after c y, before 7
+c172	L04	8	K14	M	closed b after z, before θ
+c172	L04	13	K04	M	straight-stemmed 9 before the ∫ stroke
+c172	L04	19	K04	L	sign not clearly at the tick; straight-stem 9 nearby
+c172	L04	24	K14	L	window blank, sign not found; default to the common b form

@@ -1,0 +1,50 @@
+page	passage	pos	current	sortA	confA	sortB	confB	control	action
+c172	L02	21	K14	K14	M	K14	M		keep-agree
+c172	L02	3	K14	K14	M	K14	M		keep-agree
+c172	L02	30	K14	K14	M	K14	M		keep-agree
+c172	L02	48	K14	K14	M	K14	M	control	keep-agree
+c172	L02	54	K14	K14	M	K14	M	control	keep-agree
+c172	L02	56	K14	K14	M	K14	M		keep-agree
+c172	L03	26	K04	K04	M	K04	M	control	keep-agree
+c172	L03	38	K14	K14	M	K14	L		keep-agree
+c172	L03	40	K14	K14	M	K14	M	control	keep-agree
+c172	L03	5	K14	K14	M	K14	M		keep-agree
+c172	L03	52	K04	K04	M	K04	H	control	keep-agree
+c172	L04	13	K04	K04	M	K04	H	control	keep-agree
+c172	L04	19	K04	K04	L	K12	L	control	keep-split
+c172	L04	24	K14	K14	L	K14	L		keep-agree
+c172	L04	4	K14	K14	M	K14	M		keep-agree
+c172	L04	8	K14	K14	M	K14	M		keep-agree
+c268	L01	21	K12	K12	M	K12	L		keep-agree
+c268	L01	22	K34	K53	M	K53	M		relabel
+c268	L01	25	K34	K34	H	K34	M		keep-agree
+c268	L01	29	K12	K12	M	K12	L		keep-agree
+c268	L01	31	K12	K12	M	K12	L		keep-agree
+c268	L01	4	K14	K14	M	K14	M		keep-agree
+c268	L02	14	K14	K14	M	K14	H		keep-agree
+c268	L02	21	K12	K12	M	K04	M		keep-split
+c268	L02	28	K12	K12	M	K12	M		keep-agree
+c268	L02	29	K14	K14	M	K14	M		keep-agree
+c268	L02	33	K12	K12	M	K12	L		keep-agree
+c268	L02	36	K12	K04	M	K04	M		relabel
+c268	L03	1	K14	K17	L	K17	L		keep-low-conf
+c268	L03	11	K34	K34	M	K34	M		keep-agree
+c268	L03	21	K34	K53	M	K53	M		relabel
+c268	L03	22	K12	K04	M	K04	H		relabel
+c268	L03	27	K12	K12	M	K12	M		keep-agree
+c268	L03	3	K34	K53	M	K53	M		relabel
+c268	L03	36	K12	K12	M	K12	L		keep-agree
+c268	L03	6	K12	K12	M	K12	M		keep-agree
+c268	L04	15	K12	K04	M	K04	M		relabel
+c268	L04	2	K34	K34	M	K34	M		keep-agree
+c268	L04	23	K12	K04	M	K04	M		relabel
+c268	L04	4	K12	K12	M	K12	L		keep-agree
+c268	L04	5	K14	K14	M	K14	M		keep-agree
+c268	L04	6	K12	K04	M	K04	M		relabel
+c268	L04	8	K12	K04	M	K04	M		relabel
+c268	L05	12	K12	K04	M	K04	M		relabel
+c268	L05	14	K12	K04	M	K04	M		relabel
+c268	L05	19	K12	K12	L	K04	M		keep-split
+c268	L05	25	K14	K14	M	K14	M		keep-agree
+c268	L05	28	K12	K12	M	K12	M		keep-agree
+c268	L05	4	K34	K53	M	K53	M		relabel
