@@ -516,7 +516,7 @@ Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0
 - [ ] retry: DECODE scat. 1597 nos. 79-114 and 169-171 by heading, then any 1440s sheet through the g1 gloss scorer
 Verdict: keep going: 3 internal gaps; cheapest next: DECODE scat. 1597 nos. 79-114 and 169-171 by heading, one login (~45 requests), ~$2
 
-## SFZ-DEC4 (14 Oct 2026 22:32-22:5x UTC by date -u, account 4, LANE DEFAULT-A4-2135-14): DECODE scat. 1597 nos. 79-105 by heading -- one Aragon sheet (no. 98, Alfonso V with Galceran de Requesens), not the slips' key
+## SFZ-DEC4 (14 Oct 2026 22:32-22:4x UTC by date -u, account 4, LANE DEFAULT-A4-2135-14): DECODE scat. 1597 nos. 79-105 by heading -- one Aragon sheet (no. 98, Alfonso V with Galceran de Requesens), not the slips' key
 Job: SFZ-G1's named next step: nos. 79-114 and 169-171 by heading, SFZ-DEC3's method; for any Visconti/Barbavara/Aragon or 1446-47 key the
 SFZ-DEC3 stock-overlap test against random stocks; no decode, no blind reads. Credit as SFZ-DEC (Bourdeau's thumbnail scan of the 1597 records).
 - **Route.** One browser login (`tools/decode_browser_login.js 5379 --max-files 0 --delay 2500 --listen`), record N = DECODE 5300+N confirmed
