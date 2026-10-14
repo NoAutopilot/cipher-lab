@@ -1,0 +1,65 @@
+# Cipher between Giacomo Guicciardini (secretary of the Grand Duke of Tuscany) and Sillery, 1593 -- Tomokiyo's table after Speziali (1955), 'Aspects de la Cryptographie au XVIe Siecle', BHR XVII.
+# Credit: reconstruction Speziali 1955; table and arrangement S. Tomokiyo, Cryptiana (cryptiana.web.fc2.com/code/guicciardini.htm). Rule 8: cited, transcribed for screening only.
+# Transcription TUSC-KEYS (14 Oct 2026, account 2): two blind Sonnet passes over the whole image (831x539 typeset table, the image is its own crop) agree on all 54 printed numbers; my own read agrees. Grade H-published = value printed in the published table (a modern published reconstruction, not a period key sheet); M = placement interpreted.
+# Not printed (blank in the table): x y z, cu du ru lu mu su tu, do, ir, es os, en in. Ciphertext design per Tomokiyo: continuous figures, two-figure units for letters and syllables, three-figure code elements (none in this table).
+# 33 sits alone in a second row under the 'a' column (no heading of its own): read as a second figure for a, grade M.
+# office: Grand Duke of Tuscany's secretariat (Giacomo Guicciardini, secretary)
+# years: 1593
+# language: it
+# key_source: published (Speziali 1955; table S. Tomokiyo, Cryptiana guicciardini.htm)
+# home: none (screening table for ciphers/fr3982-nevers-toscana-1592; kept here so that folder's own keys keep their office metadata)
+value	meaning	grade	source	credit
+11	a	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+12	b	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+13	c	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+14	d	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+15	e	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+16	f	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+17	g	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+18	h	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+19	i	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+20	l	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+21	m	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+22	n	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+23	o	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+24	p	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+25	q	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+26	r	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+27	s	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+28	t	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+29	u	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+33	a	M	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955; printed in a second row under the a column	Tomokiyo after Speziali 1955
+40	ca	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+41	ce	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+42	ci	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+43	co	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+45	da	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+46	de	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+47	di	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+50	la	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+51	le	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+52	li	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+53	lo	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+60	ma	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+61	me	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+62	mi	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+63	mo	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+65	an	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+68	on	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+70	ra	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+71	re	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+72	ri	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+73	ro	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+75	ar	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+76	er	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+78	or	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+80	sa	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+81	se	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+82	si	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+83	so	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+85	as	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+87	is	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+90	ta	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+91	te	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+92	ti	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955
+93	to	H-published	Tomokiyo, Cryptiana guicciardini.htm, image guicciardini1.png (snapshot sources/cryptiana/web/, fetched 14 Oct 2026), after Speziali 1955	Tomokiyo after Speziali 1955

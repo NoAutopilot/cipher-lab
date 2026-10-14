@@ -213,12 +213,12 @@ Read so far: unmeasured, no key reads the letter yet
 ## Escalation (BNF-Q7-SCREEN, 13 Oct 2026)
 - [ ] siblings: other Nevers-Tuscany letters of 1592-93 in fr.3982-3987 (Tomokiyo: Aug and Nov 1593) not yet located; planned: notice items of fr.3985/fr.3987 by bnf_findingaid.py
 - [n/a] clear-pages: the minute has no clear copy on the leaf (BNF-Q7-ID leaf look)
-- [ ] known-keys: no.62 [retired by BNF-Q7-TEST, structural misfit, power 0.99-1.00]; no.46 and no.70 alphabet no fit (BNF-Q7-SCREEN, screen power 0.85/0.94 at 10%, p_a 0.43/0.078, p_b 0.16/0.26); planned: fr.3995 tables no.44, 45, 47, 56, 35, 63 through q7test/screen.py
+- [ ] known-keys: no.62 [retired by BNF-Q7-TEST, structural misfit, power 0.99-1.00]; no.46 and no.70 alphabet no fit (BNF-Q7-SCREEN, screen power 0.85/0.94 at 10%, p_a 0.43/0.078, p_b 0.16/0.26); planned: fr.3995 tables no.44, 45, 47, 56, 35, 63 through q7test/screen.py; Tomokiyo's two published Tuscan tables transcribed as keys (TUSC-KEYS, 14 Oct 2026, ciphers/_keys/tuscany-guicciardini/), not yet screened: planned a pre-registered tools/key_crossmatch.py run with its shuffled control on ciphertext.tsv, conditional on its looped-sign problem
 - [x] print: Canestrini-Desjardins vol. V OCR searched, Gomberville seconde partie 1591-1594 read (BNF-Q7-ID)
 - [ ] key-rebuild: not attempted; a 260-digit string is short for cryptanalysis without a table
 - [x] image-check: leaf read at native resolution, two blind digit passes agree 0.905 (BNF-Q7-KEY)
 - [ ] retry: none yet
-Verdict: keep going: 1 internal gaps; cheapest next: transcribe the published Tuscan reconstructions (Tomokiyo guicciardini1.png, guicciardini2.png) as keys while the sign check waits, ~$3
+Verdict: keep going: 1 internal gaps; cheapest next: pre-registered key_crossmatch screen of the two Tuscan tables (ciphers/_keys/tuscany-guicciardini/) against f.25 with shuffled control, ~$2
 
 ## BNF-Q7-TAB (13 Oct 2026, account 2)
 Transcription only; no decode, no screen run, no novelty class. Brief: .claude/briefs/runs/2026-10-13-ytbiz-bnf-q7-tab.md. Images and URLs: images/fr3995/manifest.json. Credit: numbering and identification Tomokiyo (nevers.htm).
@@ -295,3 +295,31 @@ unmeasured until an independent pass is scored against it; no screen may use it 
 
 **Next (not done here):** settle the looped sign (and the 4/+ and heavy-blot signs) in the sign sorter; then two
 blind passes against v2 at full-line crops, L00 included, and re-measure e_hi under the same addendum rule.
+
+## TUSC-KEYS (14 Oct 2026, account 2)
+Worker TUSC-KEYS (Opus) for LANE DEFAULT-A2-2209-14. Transcription only; no decode, no screen run, nothing about f.25 claimed.
+Credit: tables S. Tomokiyo, Cryptiana guicciardini.htm (cryptiana.web.fc2.com/code/guicciardini.htm), after Speziali (1955)
+and Monts de Savasse (1997).
+- **Source images:** sources/cryptiana/web/guicciardini1.png (831x539) and guicciardini2.png (614x538), fetched once,
+  manifest sources/cryptiana/web/manifest_2026-10-14-tusc-keys.tsv (sha1 recorded). Request count: cryptiana.web.fc2.com 2.
+- **Crop step:** both are small typeset tables under 900 px; the brief allows a plain crop for a small table, so each image
+  was its own crop (no iiif_lines.py run; no full manuscript page involved).
+- **Reads:** two blind Sonnet passes per table (table 1: heading-by-heading and number-sorted; table 2: row-wise and
+  column-wise), plus my own read as the reconciliation. Table 1: both passes agree on all 54 printed numbers. Table 2: the
+  two passes' 84 cells are identical after sorting. My read agrees with both. No disagreement to settle.
+- **Keys written** (value, meaning, grade, source, credit): `ciphers/_keys/tuscany-guicciardini/key_tomokiyo_guicciardini1.tsv`
+  (Giacomo Guicciardini to Sillery, 1593: letters a-u = 11-29, plus 33 printed alone under the a column, read as a second a,
+  grade M; 34 syllables in the 40s-90s; 53 H-published, 1 M) and `..._guicciardini2.tsv` (ca.1590, polyphonic grid: single
+  figures 1-9 and two-figure 01-99; multi-meaning cells written a|b; 84 H-published). H-published = value printed in a
+  modern published table, not a period key sheet.
+- **Deviation from the brief, stated:** the brief named `keys/tomokiyo_guicciardini1.tsv` in this folder. tools/key_design.py
+  falls back to a folder's first KEY-OFFICES row for every key in that folder without its own row, so a Tuscan row here
+  relabelled this folder's seven Nevers keys (no.45, 46, 47, 62, 70, 73) as Tuscan in KEY-DESIGN.tsv. The tables went to
+  `ciphers/_keys/` instead (the tool's slot for keys with no home folder, with `# office:` headers), and the `key_` prefix lets
+  tools/key_crossmatch.py discover them. KEY-OFFICES.tsv has two rows; KEY-DESIGN.tsv rebuilt (`key_design.py --check`:
+  current): both tables `syllabary`, language it, 1590s.
+- **No screen run:** none was pre-registered in this job; ciphertext_v2.tsv is out of bounds (BNF-Q7-ERR); no digit
+  profile comparison with f.25 made.
+- Tool note (one line, not acted on): every `ciphers/_keys/*` key appears twice in KEY-DESIGN.tsv (once as its own
+  duplicate_of), the same for the Gonzaga key already there; key_design.py discovery double-counts EXTRA_KEY_GLOBS paths.
+
