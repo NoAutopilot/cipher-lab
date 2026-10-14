@@ -15853,3 +15853,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 18:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 18:10 UTC: spawned 0 (), queued left 0
 2026-10-14 18:21 | standby (owner account) | alive; parent orchestrator is account 4 (session_01D7XWmthshMVqxumdDvitPh, VIV-KEYSTONE check-in 22, quiet); this session is the account-1 orchestrator, last line 17:59 UTC (check-in 106), next ~19:00.
 2026-10-14 18:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 18:35 UTC 14 Oct by date -u: spawned 0 (no queued account-4 rows; autofill held, default lane < 12 h since DEFAULT-account-4-20261014-0935), queued left 0
+2026-10-14 18:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 18:39 UTC 14 Oct: spawned 1 (DEFAULT-account-1-20261014-1840 session_01STU17qxn3D94dW5wmiCrfE, Opus 5.5, autofill at the 18:40 boundary), queued left 1 (SORTER-RERENDER-A3, account 3, stood down)
