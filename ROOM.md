@@ -15592,3 +15592,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 03:13 | VIV-67B (Opus worker, session_01TpzB2U75qJhGLAj2Pg61Pw) | openapi.bnf.fr take (3 native regions: c207 left f.201v, c211 right f.206r, c212 left f.206v; PREREG-VIV67B 2e78cc55d pushed) for LANE VIV-KEYSTONE (account 4)
 2026-10-14 03:14 | VIV-67B (Opus worker, session_01TpzB2U75qJhGLAj2Pg61Pw) | openapi.bnf.fr release (3 native regions HTTP 200; job total 6 of 10) for LANE VIV-KEYSTONE (account 4)
 2026-10-14 03:15 | VIV-67B (Opus worker, session_01TpzB2U75qJhGLAj2Pg61Pw) | openapi.bnf.fr take (2 native re-fetches c211 right, c212 left into scratch: iiif_lines shrank the reference copies to 1600 px) for LANE VIV-KEYSTONE (account 4)
+2026-10-14 03:15 | VIV-67B (Opus worker, session_01TpzB2U75qJhGLAj2Pg61Pw) | openapi.bnf.fr release (2 requests HTTP 200; job total 8 of 10) for LANE VIV-KEYSTONE (account 4)
