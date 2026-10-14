@@ -518,3 +518,53 @@ Read so far: 0% of the target letter (no image of Clair 575 p.1209); candidate k
 - [ ] image-check: request the Clair 575 p.1209 leaf (REQUEST.md, ASKS 49), then apply 9431
 - [n/a] retry: nothing has been tried on the letter itself, there is no failed step to retry
 Verdict: keep going: 1 internal gaps; cheapest next: read the BnF catalogue record for Clairambault 417 f.236, ~$1
+
+## CL571-417 (account 1, LANE DEFAULT-A1-1840-14, 14 Oct 2026, 18:51-19:0x UTC): BnF record for Clairambault 417 f.236
+
+Why: EST-REG left one internal gap, comparing key 9431 (Brasset, Clair 574 p.4-5) with the "Memoire chiffre" of Brasset (Oct 1648) that
+Tomokiyo names at Clair 417 and calls "not found online". This job reads the holding record and its availability flag (CLAUDE.md access
+playbook: the catalogue record, not an image-portal search, says whether an item is digitised).
+
+Prior work: `tools/prior_work.py clair571-estrades-1645 --item-spec 'shelfmark=BnF Clairambault 417;folio=236;sender=Henri Brasset;decode=9429'
+--step-type lookup` exit 4; the two owed rows were EST-REG's own gap line (the step not yet done) and this job's ROOM claim, both `--record`ed
+CLEAR. Tomokiyo cache CLEAR for 417; cached solver files CLEAR; aaymeloglu repo and editions UNCHECKED-NET (not needed for a catalogue read).
+**3-decode LEAD: DECODE record R9429, "BnF Clairambault 417, f 236", 1648, status Decrypted, record type Cipher, 3 pages, 2 documents**
+(sources/decode/records-decrypted-2026-09-24.tsv row 97; already named in the 24 Sept check-solved sweep above, never opened).
+
+**The record.** Volume-level notice cc13826w (Clairambault 312-452), component cd0e37651, read on disk first (snapshot
+sources/bnf-findingaids/2026-10-09/cc13826w.html) and then live (14 Oct 2026 18:57 UTC; unmodified copy
+sources/bnf-findingaids/2026-10-14/cc13826w_cd0e37651.html). URL: https://archivesetmanuscrits.bnf.fr/ark:/12148/cc13826w/cd0e37651
+- Volume: "Clairambault 417 • CVII Règne de Louis XIV. — 1648, septembre-novembre." "420 feuillets."
+- Item: "Fol. 236 • Mémoire chiffré de Brasset (octobre 1648)." (sub-unit FRBNFEAD000013826_d0e37963). Next item "Fol. 238 • Mémoire de
+  Jean de Gron, secrétaire du duc de Courlande." So the piece runs ff. 236-237 at most. Brasset also has a letter at f.121 ("Brasset (121)" in
+  the Présentation du contenu; index "BRASSET (Henri) • Lettres").
+- Access: "En raison de son état de conservation, la consultation de ce document est soumise à autorisation, sur demande motivée."
+- **Availability flag: none.** The record carries no "Version numérisée" line, no gallica.bnf.fr ark and no microfilm/reproduction line; in the
+  9 Oct volume snapshot Clair 417 also lacks the "Consultable sur gallica" picto that 52 volumes of the run carry (411, 412, 413 and 421
+  among the neighbours; 414-420 lack it).
+- Control (same host, same page type, 1 request): Clair 421 (cd0e38834, the Lasry Brasset-Mazarin 1649 volume) carries "Version numérisée :"
+  with gallica.bnf.fr/ark:/12148/btv1b9000758x and "Microfilm en noir et blanc. Cote de consultation en salle de lecture : MF 19898. Cote
+  de la matrice (pour commander une reproduction) : R 180088." (unmodified copy sources/bnf-findingaids/2026-10-14/cc13826w_cd0e38834.html).
+  So the flag shows on this page type when it exists; its absence on 417 reads as "not digitised, no microfilm recorded" on 14 Oct 2026.
+- Not done: no openapi.bnf.fr request (no ark to map), no Gallica.
+
+Reading of the record: it agrees with Tomokiyo's "not found online". The only image route found for f.236 is DECODE R9429 (3 pages,
+status Decrypted, so it may carry a decipherment or key beside the cipher). The DECODE login route worked for 9431 on 13 Oct (EST-9431).
+
+Requests: archivesetmanuscrits.bnf.fr 2 (cd0e37651, cd0e38834), >= 2 s apart, no refusal; openapi.bnf.fr 0. Report what was found and where
+it was not found; novelty is not classified here.
+
+## Remaining gaps (CL571-417, 14 Oct 2026)
+Read so far: 0% of the target letter (no image of Clair 575 p.1209); candidate key 9431 transcribed (358 of 381 rows H) and registered.
+- Test the 9431 key on the letter at Clair 575 p.1209 - blocker: waiting-on ASKS row 49 (BnF reproduction, REQUEST.md); the leaf is not digitised (NX-UNBLOCK, Gallica SRU 0 records)
+- Compare 9431 with the Clair 417 f.236 "Mémoire chiffré de Brasset (octobre 1648)" - blocker: not-attempted; BnF record cd0e37651 has no digitised version or microfilm (CL571-417), but DECODE R9429 lists 3 pages of this leaf, status Decrypted; next: one DECODE browser login (tools/decode_browser_login.js 9429), fetch the 3 images and 2 documents, then type the key or diff the cipher against 9431, ~$1.5
+
+## Escalation (CL571-417, 14 Oct 2026)
+- [n/a] siblings: no sibling cipher leaf of this letter is digitised or on disk
+- [n/a] clear-pages: no clear copy of the letter is known; editions read (GF4-BATCH11) do not print it
+- [ ] known-keys: 9431 transcribed and registered; colbert26 f.24 and the published Clair 421 key compared, no code-level match; Clair 417 f.236 not digitised at the BnF, DECODE R9429 not yet fetched
+- [x] print: Le Clerc II-III, APW II B 2 and d'Estrades 1743 read (GF4-BATCH11, LANE CX); none prints the letter
+- [n/a] key-rebuild: no ciphertext of the target is on disk to rebuild a key from
+- [ ] image-check: request the Clair 575 p.1209 leaf (REQUEST.md, ASKS 49), then apply 9431
+- [n/a] retry: nothing has been tried on the letter itself, there is no failed step to retry
+Verdict: keep going: 1 internal gap; cheapest next: fetch DECODE R9429 (Clair 417 f.236, 3 pages) and compare with 9431, ~$1.5
