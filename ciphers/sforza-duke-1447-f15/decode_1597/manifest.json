@@ -1,0 +1,101 @@
+{
+ "note": "DECODE full-size PDFs of ASMi Carteggio Sforzesco scat. 1597 key records, fetched 14 Oct 2026 by SFZ-DEC in one logged-in browser session; NOT committed (holder's permission needed to publish). Re-fetch: NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 5301 OUT --max-files 0 --listen CMD.txt, then 'get <url>' lines in CMD.txt.",
+ "files": [
+  {
+   "file": "IMG_R5301_I30271_P1.pdf",
+   "record": 5301,
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R5301_I30271_P1.pdf",
+   "bytes": 588653,
+   "sha1": "78c176a84df70a693ff9303c2d6a798657cebdac",
+   "date": "14 Oct 2026"
+  },
+  {
+   "file": "IMG_R5302_I30274_P.pdf",
+   "record": 5302,
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R5302_I30274_P.pdf",
+   "bytes": 226460,
+   "sha1": "419a846603c0bcf1dbf2850c6c4fce55bcc17314",
+   "date": "14 Oct 2026"
+  },
+  {
+   "file": "IMG_R5303_I30275_P1.pdf",
+   "record": 5303,
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R5303_I30275_P1.pdf",
+   "bytes": 212855,
+   "sha1": "f220d39d303937a90b48700d570f7054fce378eb",
+   "date": "14 Oct 2026"
+  },
+  {
+   "file": "IMG_R5304_I30276_P.pdf",
+   "record": 5304,
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R5304_I30276_P.pdf",
+   "bytes": 222968,
+   "sha1": "f369b60b2c1b22b2bd3b83beccc44e03e5cdb68f",
+   "date": "14 Oct 2026"
+  },
+  {
+   "file": "IMG_R5305_I30279_P.pdf",
+   "record": 5305,
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R5305_I30279_P.pdf",
+   "bytes": 238216,
+   "sha1": "01e88a998011966a9cb95b2b136e4367bdb7282e",
+   "date": "14 Oct 2026"
+  },
+  {
+   "file": "IMG_R5306_I30280_P.pdf",
+   "record": 5306,
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R5306_I30280_P.pdf",
+   "bytes": 237710,
+   "sha1": "0a87ceb0d4e15a77ae74ae632292336e70bb11b4",
+   "date": "14 Oct 2026"
+  },
+  {
+   "file": "IMG_R5307_I30281_P1.pdf",
+   "record": 5307,
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R5307_I30281_P1.pdf",
+   "bytes": 248806,
+   "sha1": "6a4c5916f90e594edab0b15ccc986ccc0247dd04",
+   "date": "14 Oct 2026"
+  },
+  {
+   "file": "IMG_R5308_I30282_P.pdf",
+   "record": 5308,
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R5308_I30282_P.pdf",
+   "bytes": 171476,
+   "sha1": "23a675d8cbe17ed373afae8001a80f181a44a14b",
+   "date": "14 Oct 2026"
+  },
+  {
+   "file": "IMG_R5309_I30285_P.pdf",
+   "record": 5309,
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R5309_I30285_P.pdf",
+   "bytes": 193269,
+   "sha1": "3c1fb598f51f9b814c3eafc6fdc1553d5a38b827",
+   "date": "14 Oct 2026"
+  },
+  {
+   "file": "IMG_R5310_I30286_P.pdf",
+   "record": 5310,
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R5310_I30286_P.pdf",
+   "bytes": 154150,
+   "sha1": "b1d15e5cdcaead2b87375b78e0dfd410b8bde716",
+   "date": "14 Oct 2026"
+  },
+  {
+   "file": "IMG_R5311_I30287_P.pdf",
+   "record": 5311,
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R5311_I30287_P.pdf",
+   "bytes": 148072,
+   "sha1": "d5d27467556e62676a849ff7773e1499a83b6ae6",
+   "date": "14 Oct 2026"
+  },
+  {
+   "file": "IMG_R5378_I30371_P.pdf",
+   "record": 5378,
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R5378_I30371_P.pdf",
+   "bytes": 245522,
+   "sha1": "e8f19d9590acf362dcac58f5466f3c4e767e8a37",
+   "date": "14 Oct 2026"
+  }
+ ]
+}

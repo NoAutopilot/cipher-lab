@@ -202,3 +202,51 @@ Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0
 - [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
 - [ ] retry: G1 after the sort (anchored learner on reader A FAIL 0.422, 8 Oct), then S3 on f.15
 Verdict: keep going: 2 internal gaps; cheapest next: read the DECODE scat. 1597 key records (R5301-R5471) for the Filippo Maria Visconti 1446-47 keys, ~$2
+
+## SFZ-DEC (14 Oct 2026 11:09-11:3x UTC, account 4, LANE DEFAULT-A4-0935-14): DECODE scat. 1597 key records, nos. 1-11 and 78 opened
+Job: find the Filippo Maria Visconti 1446-47, Barbavara and Aragon-orators keys among the ASMi Carteggio Sforzesco scat. 1597 records on
+DECODE, and compare their signs with the Duke's slips. Credit: D. Bourdeau (dbourdeau/cyphersolver, it1583/) thumbnail-scanned all 208
+ASMi records of scatt. 1591/1597/1598 and read the headings of 1597 nos. 2-36 for the Maino/Amidani pair (none headed Maino or Amidani;
+no. 14 "Angelus cum cifra Vincentij"); his heading list is not in this repository, so the records were reopened here.
+- **Login-free filter (8 requests).** DECODE's RecordsList accepts `x_c_holder=1597&z_c_holder=LIKE` (115 key records, as the cache).
+  Every scat. 1597 record carries only "1450 - 1555", no sender, receiver or note: `x_sender=Visconti`, `x_receiver=Visconti`,
+  `x_additional_information=Visconti` and `x_start_year<1450` all return "No records found". The catalogue cannot pick the 1440s
+  keys out; only the sheet headings can.
+- **One browser login** (tools/decode_browser_login.js with `--listen`), 26 requests in the session. Full-size files are PDFs named
+  `IMG_R<rec>_I<img>_P[n].pdf`; image ids are not predictable from the record id (a guessed id returned the 5,244-byte forbidden
+  placeholder), so each record needs its RecordsView page first. Twelve records opened; table `decode_1597/records.tsv`, files and
+  sha1s `decode_1597/manifest.json` (PDFs not committed: publishing needs the holder's permission).
+- **What they are.** No. 1 is the box cover. Nos. 2-7 and 9-11 and 78 are later fair copies (one hand, pencil numbers 204-217 and 44),
+  one sheet per correspondent, headed by the correspondent: Angelus de Valeto / Baptista (2), Antonius M. (3), Lanzalotus de Figino (4),
+  Petrus de Monteferrato (5), Antonius (6), Raphael de Pugnellis (7), Cosimo de Medici (9), Robertus de Malatestis a Sagramoro de
+  Arimino 1468 (10), Stephanus Taberna (11), Anonimo (78). No. 8 is an unheaded period sheet in brown ink with a syllable grid and a
+  nomenclator naming "Conte Iacomo" and "Sig. Sigismondo" (so 1450s-60s, not the Duke). **None of the twelve is headed Filippo Maria
+  Visconti, Duca, Barbavara or the Aragon orators.** The DECODE numbering is not the ASMi inventory's: DECODE no. 78 is "Anonimo", not
+  the inventory's doc. 78 "Repubblica Ambrosiana 1447 ... Cifre".
+- **Sign comparison (one reader, by eye, grade M).** A stock-overlap count with a shuffled control was not run: shuffling the Duke's text
+  cannot change which shapes it uses, so that control could not differ from the target (rule 3, the bCAS/AX-5799 shape). Run instead:
+  the seven sign-letter pairs graded C from the glosses (O=a, Y=o, N8=d, N2=h, N11=r, ce=r, cu=n; ../sforza-italien1584-1447/duke/key.tsv)
+  checked against each key. The Duke's own key would agree on most of the seven whose shape it carries; an unrelated key agrees by chance
+  about 1 in 20 per shape. Result: 0 of 7 on ten keys; 1 of 7 on Pugnellis (7) and Malatesta 1468 (10), both the o-with-tail = a
+  pair, which looks like a common chancery convention rather than a shared key. The generic shapes (3, 8, x, ÷, ħ, ∂, 9, +) recur in
+  almost every sheet, so shape presence alone does not single out any key.
+- **Result:** the Duke's 1446-47 key is not among DECODE scat. 1597 nos. 1-11 and 78. Not opened: nos. 12-114 (except 14, Bourdeau's)
+  and 169-171; DECODE holds 115 of the inventory's 194 documents, so the Visconti keys may also be among the 79 not on DECODE.
+- Requests: de-crypt.org 37 (8 login-free RecordsSearch/RecordsList; 3 for the login and RecordsView/5301; 26 in the session: 11
+  RecordsView pages, 15 file gets including the one forbidden guess). Cost not visible to this session.
+
+## Remaining gaps (SFZ-DEC, 14 Oct 2026)
+Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0.441 mean held-out, 2 units; anchored 0.422)
+- f.15 decode - blocker: waiting-on ASKS row 165 (the owner's blind sort of f.5+f.8, packet built by SFZ-SORT 13 Oct 2026, sorter/README.md); a Duke key that passes G1 is needed first; next after the sort: dateline check, sign_sorter_apply.py, then g1_duke.py / g1_duke_anchored.py unchanged, ~$2
+- period Duke key - blocker: not-attempted; DECODE scat. 1597 nos. 1-11 and 78 opened (SFZ-DEC), none Visconti; next: open nos. 12-114 (skip 14) and 169-171 by heading, about 2 requests per record in one login (RecordsView, then the PDF), ~45 per session, so three sessions, ~$2 each; if none is the Duke's, the ASMi request (REQUEST.md, held at gate 7) is redrafted for the documents DECODE lacks
+- f.17 blanks vs f.15 - blocker: not-attempted; whether f.15's cipher fills f.17's two blanks is unexamined; next: only after a readable key, ~$1
+
+## Escalation (SFZ-DEC, 14 Oct 2026)
+- [x] siblings: the Duke's glossed pairs f.5/f.7 and f.8/f.10 used; f.23-24/f.26, f.30-31/f.29, f.36-37/f.35 not yet
+- [x] clear-pages: f.17 (same-day clear letter) noted as context; no copy of f.15 exists in the volume per Mazzatinti
+- [ ] known-keys: Cerioni 1970 snippet-only (SFZ-KEYS); DECODE scat. 1597 nos. 1-11 and 78 opened, none Visconti (SFZ-DEC); nos. 12-114 and 169-171 not opened
+- [ ] print: no print of f.15 located (check-solved above); verifier pass belongs to a later reading
+- [x] key-rebuild: attempted, G1 FAIL
+- [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
+- [ ] retry: G1 after the sort (anchored learner on reader A FAIL 0.422, 8 Oct), then S3 on f.15
+Verdict: keep going: 2 internal gaps; cheapest next: open DECODE scat. 1597 nos. 12-40 by heading (one login, ~45 requests), ~$2
