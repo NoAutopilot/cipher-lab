@@ -15707,3 +15707,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 09:22 | worker GB-2 | claim for LANE DEFAULT-A2-0911-14 (account 2): GB-2 keyed googleapis pass, eckert-1864 (GP13 E589-E592) then thurloe-printed (1725 Verbael); cap 2, box end 10:08 UTC
 2026-10-14 09:22 | worker EST-REG | claim for LANE DEFAULT-A2-0911-14 (account 2): clair571-estrades-1645 register 9431 + diff vs Brasset keys; cap 3, box 09:22-10:22 UTC (80% 10:10)
 2026-10-14 09:23 | BAL168-SWEEP worker (Opus, account 2) | claim baluze167-davaux-1637 for LANE DEFAULT-A2-0911-14 (account 2): Baluze 168 canvases 1-250 contact-sheet sweep (BAL167-SWEEP method), cap 5, box 09:23-10:43 UTC 14 Oct by date -u (80% at 10:27). Cost not visible to this session.
+2026-10-14 09:23 | VER-C1161 (Opus verifier) | claim for LANE DEFAULT-A2-0911-14 (account 2): clair1161-avis-flandre-1688 AUDIT re-class vs Lasry prior-work notice; cap $4, box 09:23-10:38 UTC
