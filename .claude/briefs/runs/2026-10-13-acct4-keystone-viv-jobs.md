@@ -88,3 +88,58 @@ decipherment, bMALS rule) + alignment scripts: 8 units x 1.4 = 11.2 -> cap 12; s
 cap or box. If f.201r's cipher block is short (under 15 lines), add f.201v as the second page only if under 50% of the cap.
 Done line: alignment share vs shuffled p95 first, then err_2reader, the unkeyed-label table's totals, and whether the truth item
 was registered.
+
+## Wave 2 (00:4x UTC 14 Oct 2026; VIV-LAT and VIV-67 done and archived)
+Results read: VIV-LAT gate FAIL, ceiling -- the true sign is in the readers' lattice at only 29/234 of the top-1 errors on f.103r
+(tx/vivlat/, NOTES "VIV-LAT"); a confusion matrix learnt on one reader set does not transfer to another. VIV-67 PASS: f.201r vs
+ff.205r-205v aligns at 0.744 vs 200 shuffled keys p95 0.507 (rank 1/201; ink 40 was 0.605 vs 0.498); truth item
+benchmark-tx/vivonne1573-f201r-dev.truth.tsv registered (894 scored; independent passes 0.185 / 0.037, 0.199 / 0.046); the unkeyed and
+M labels against the clerk letter are in tx/viv67_labels.tsv and tx/viv67_labels_summary.tsv (c -> p 8 / e 5; single o -> p 5; e -> m 4;
+V -> n 7; S -> b 10; 2 -> e 3; y -> r 11 / l 9; NOTES "VIV-67"). key.tsv has NO row for the plaintext letters p, m or f: the ink-67
+anchors put p under labels c and o and m under label e, where ink 40 (VIV-ANCHOR) had c -> p 1, o -> p 2, e -> 0. The same rules as
+wave 1 apply (no reading change without a verifier; PREREG before scoring; no image in git; openapi.bnf.fr only, take/release lines).
+
+### VIV-KEY (Opus, cap 7, box 90 min, disk only, no network, no vision call): key rows for the unkeyed labels from the pooled clerk anchors of ink 40 and ink 67
+Why: U 1,103 of 15,762 tokens in ink 63 are labels outside key.tsv; p and m are common French letters with no key row; AUDIT 3 named
+"co_tandeur" x5 as a probable m gap. New material (the ink-67 anchors) allows a re-run of VIV-ANCHOR's instrument (rule 3's third-
+attempt clause: new material, same tool). Instrument: exactly VIV-ANCHOR's (NOTES "VIV-ANCHOR", PREREG-VIVANCHOR.md, tx/vivanchor.py,
+tx/vivanchor_gates.py: per-label anchor tally with a decision rule, then the b2 order gate and the 200-wrong-key specificity gate on
+each of inks 63, 53, 54 after the key change, under new seeds), with the ink-67 anchors (tx/viv67_labels.tsv, DP confidence) pooled
+with the ink-40 anchors (tx/vivanchor_result.json). Also run `tools/decode_key.py ciphers/fr16104-vivonne-spain-1572 --try
+LABEL=VALUE` for each candidate (MQS-CROSSWORD; read tools/data/tool_shelf.tsv for its grade and its own control) and paste its output.
+Steps: 0. PREREG-VIVKEY.md pushed before any tally: the candidate list (every label with >= 3 aligned positions pooled), the decision
+rule (VIV-ANCHOR's: top letter holds >= 2/3 of aligned positions at local confidence >= 0.5 and >= 3 such positions; a label whose
+top letter differs between ink 40 and ink 67 is a CONFLICT, logged, no row), the gates (b2 and 200-wrong-key on inks 63, 53, 54, new
+seeds; judge score and longest clean run before/after reported, not gated), and the stop rule. 1. Tally and decide per label. 2. For
+each label that passes the rule: add the key.tsv row at grade C (source: clerk anchors ink 40 + ink 67, counts in the note column),
+re-run the decode scripts (tx/viv63_decode.py and the 53/54 ones, `--check` where it exists) and the gates. If any gate fails after
+the change, revert that row and say so. 3. Report before/after H/M/U counts per ink, the judge score and the longest consecutive H
+run per AUDIT 2's measure, with the five longest stretches as text. A reading change here goes to a verifier next (the parent spawns
+it); write the per-token grade counts the verifier needs. Also update the plaintext-p / m entries of "ink 63 key questions" in
+Remaining gaps. Price: vision calls: 0 x USD 0 = 0; disk-only Opus, floor 2.5; cap 7.
+Done line: per label the decision (row / conflict / under 3), then the gate results per ink, then U before/after on ink 63.
+
+### VIV-CLS (Opus, cap 12, box 150 min, openapi.bnf.fr <= 6): a supervised sign classifier trained on the two truth leaves, tested on the third
+Why: the readers' errors are confident (truth-in-lattice 0.124), so no decode over their candidates can fix them; an image-side
+classifier trained on this hand's own truth tiles is the one instrument that can put the true sign among the candidates. Three
+truth leaves of this hand exist now: f.102r (dev2), f.103r (confirm2) and f.201r (dev, VIV-67). Train on f.102r + f.103r, test ONCE on
+f.201r (held out, a different letter). Tools: `tools/glyph_atlas.py` (connected-component tiles, HOG+PCA features, `classify
+--train-labels`; read its --help and tools/data/tool_shelf.tsv rows: weak on Birago, where line reads were already at 0.04-0.06;
+here line reads are 0.185-0.296), `tools/box_token_align.py` (label-aware box-to-token map; the BOXMAP-RESCORE lesson: a width-only map
+put tiles one token off on 10 of 26 lines), `tools/tx_bench.py`. Deps: `pip install opencv-python-headless scikit-learn scikit-image`
+(works through the proxy, confirmed 13 Oct). Any new capability (a supervised fit, a top-k output in pass format) goes into
+glyph_atlas.py as an option with an offline test in tools/tests/, never a private script (Usage 8). Images: f.102r/f.103r line crops
+are on disk (images/c105_f102r_*, c106_f103r_*); f.201r crops are NOT (untracked, VIV-67's container): regenerate them with the exact
+commands in NOTES "VIV-67" (one native region fetch, c206, then the --image cut), 1-2 requests. Steps: 0. PREREG-VIVCLS.md pushed before
+any f.201r score: features, model, training set, the map, the gate. 1. Tiles + map on all three leaves; report the map's coverage
+(share of truth positions with exactly one tile) per leaf -- segmentation failures are reported separately from classification.
+2. Fit on f.102r + f.103r truth-labelled tiles (scored positions only; labels = ref_sign); cross-validate on those two leaves only to
+choose features/k. 3. One look at f.201r: top-1 output in pass format (line, pos, sign) scored by tx_bench as measured and flagged-
+excluded against vivonne1573-f201r-dev, paired by line against passA (benchmark-tx/outputs/vivonne1573-f201r-dev/ or wherever VIV-67
+put it -- read NOTES "VIV-67"); truth-in-top-3 share among passA's wrong positions. Gate: (a) classifier top-1 err as measured on the
+covered positions below passA's on the same positions with lines improved > worsened p < 0.05; (b) truth-in-top-3 >= 0.50 of passA's
+errors on covered positions (the lattice ceiling the readers failed). Control: the same fit with training labels permuted (one run)
+must score near chance. 4. Report both numbers whether the gate passes or fails; if (b) passes, say in one line how the top-3 would
+feed key_decode_lattice.py (VIV-LAT's runner) -- do not run it. Price: vision calls: 2 x USD 1.5 = 3 (overlay checks only); Opus
+floor 2.5; CPU fits are minutes; cap 12. Stop before a step that would cross 80% of cap or box.
+Done line: gate (a) and (b) numbers first, coverage per leaf, then the permuted-label control.
