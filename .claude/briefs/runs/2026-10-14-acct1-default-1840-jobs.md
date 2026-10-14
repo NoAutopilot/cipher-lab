@@ -110,3 +110,22 @@ Verdict (CL571-417): "fetch DECODE R9429 (Clair 417 f.236, 3 pages) and compare 
 (`--guess-fullsize` per A2-HDK), the 3 images and 2 documents; say whether the Decrypted status carries a key or a plaintext; compare its code
 stock with keys_decode/9431_key.tsv (same-code count with a shuffled control, no decode campaign). Not concurrently with SFZ-R5323 on the host
 (de-crypt.org take/release). Scrub the account name; no image file in git. NOTES "## CL571-9429", gaps + Verdict.
+
+## Wave 3 (19:2x UTC 14 Oct)
+
+### BAL168-TAIL2 (Opus, cap 3.5, box 75 min, openapi.bnf.fr <= 140 at >= 3 s): baluze167-davaux-1637 Baluze 168 canvases 523-651
+BAL168-TAIL (14 Oct) swept c485-522 at 300 px and stopped at its 40-request limit (the orchestrator priced ~1 request per canvas too low).
+Same method as BAL168-TAIL / BAL168-FIN; ~135 requests at >= 3 s is ~7 min of fetching. NOTES "## BAL168-TAIL2", gaps + Verdict.
+
+### BAL167-C275 (Opus, cap 5, box 90 min, openapi.bnf.fr <= 8): baluze167-davaux-1637 the 167 c275 bare run, crops + 2 blind passes + decode
+Remaining gap (BAL-LOOKS, 14 Oct): "cut the two line crops (`tools/iiif_lines.py --ark btv1b9001489r --canvas 275 --iiif-host openapi`), two
+blind passes + 1 reconciliation and a decode with key.tsv (`decode_key.py --check`), ~$4.5; the c283 tail can ride the same job". Price per call
+(~1.2 each: 2 passes + 1 reconciliation, c283 tail only if under 60% of cap). Grades per rule 4 (H only where key.tsv is a period key value);
+`decode_key.py ciphers/baluze167-davaux-1637 --check` exit 0; judge output pasted if a reading is written (rule 7). Not concurrently with
+BAL168-TAIL2 on the host (take/release). NOTES "## BAL167-C275", gaps + Verdict.
+
+### COL26-C50 (Opus, cap 3, box 60 min, disk first; openapi.bnf.fr <= 8 only for a missing crop): colbert26-lathuillerie-1644 canvas 50 reading
+Verdict: "a decode job for canvas 50 (cleared its own line-grain key_f23 C test, A2-COL15) as a reading with key_f23 grades, verifier to rule on
+the grade licence, ~$2". Read A2-COL15 and COL26-SIB first. Write the canvas 50 reading through the folder's decode config/`decode_key.py` with
+key_f23 grades as they stand (no grade raised beyond what A2-COL15's test licenses; say which), `--check` exit 0, `tools/judge_plaintext.py`
+output pasted (rule 7), and a one-line verifier request in NOTES (do not verify it yourself). NOTES "## COL26-C50", gaps + Verdict.
