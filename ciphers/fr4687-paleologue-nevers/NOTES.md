@@ -889,8 +889,8 @@ Our only candidate is the `suofratel` crib (A2-PAL series, sections above), a ca
 (it is about "four hundred thousand scudi", "quello stato"), and I do not adjudicate between them.
 
 **What changes for our work.**
-1. Status stays `blocked` (head line, Ferrari 1999 / L33): we hold canvases 8-10, his reading covers only canvas 8 in part (241 of our 532 signs'
-   worth of elements, counted by him in elements, not our signs), and canvases 9-10 are not shown as read by him. Not `found-solved`.
+1. Status stays `blocked` (head line, Ferrari 1999 / L33): we hold canvases 8-10, his reading covers only canvas 8 in part (241 elements by his count against our 532 signs'
+   transcribed, different units), and canvases 9-10 are not shown as read by him. Not `found-solved`.
 2. His key is not published (no key table in the report per his own spot-check), so nothing of his can be merged; the margin glosses on f6r that
    his spot-check mentions ("questo e quello ...", "Sera ... che segui") are the same marginal phrases we noted on this leaf (line 189 above).
 3. His folder is a prior work for canvas 8 of any future reading: a later session reading canvas 8 compares with his excerpt and asks him or
