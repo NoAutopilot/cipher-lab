@@ -2180,3 +2180,91 @@ BnF independently confirms the location our canvas sweep found, and the catalogu
 (record it so in sources.tsv when this folder is next worked). The parent's recommendation to the owner: confirm the document
 and decline the new 150-dpi PDF, since the Gallica images are at least as sharp and the reading already uses them. Desk card
 `bnf-quote-010032`. Nothing else on this target was changed (owner: everything else paused).
+
+## Lasry BnF research check (14 Oct 2026, LQ-C1161)
+
+Account-1 worker LQ-C1161 for LANE DEFAULT-A1-0640-14 (brief `.claude/briefs/runs/2026-10-14-acct1-default-0640-jobs.md`), 06:51-07:0x
+UTC 14 Oct by date -u. A record check, not cryptanalysis: nothing decoded, no key edit, no token regraded. Source: George Lasry's folder
+`targets/clair1161` in github.com/dbourdeau/cyphersolver (HEAD b0af20a4, added in dde5b0ea), snapshotted unmodified to
+`sources/cyphersolver/2026-10-14-lasry/clair1161/` (NOTES.md, profile.json, lasry_p073_1.png). Hosts: github.com 1 (one shallow
+sparse clone); no BnF/Gallica fetch.
+
+**Item match.** Same item, all six cipher faces. His folder cites "Gallica Selected pages f162r-f164v", ark btv1b90010063 f186 -- the
+leaves the BnF itself named for this item (quote DEV-2610-010032, section above) and the run this folder reads.
+
+| field | ours | his (`targets/clair1161`) | match |
+|---|---|---|---|
+| shelfmark | BnF Clairambault 1161 | BnF Clairambault 1161 | yes |
+| leaves | c185R, c186L, c186R block, c187L, c187R, c188L = IIIF f186-f189, ink foliation 162-164 (ff.162r-164v) | "f162r-f164v", 6/6 pages; his spot-check: f162r = canvas 186, f163v-164r = canvas 188 "Aultres advis" | yes (6 of 6) |
+| glossed leaf | c186R block, period marginal gloss beside it | "Matching historical plaintext in the margin of f163r" | yes (c186R = f163r) |
+| sender / recipient | not established | Unidentified / Unidentified | same |
+| date | c. 1570 (see below) | "Unestablished; 1554/1555 remains a hypothesis" | differ, not adjudicated here |
+| signs | 3,389 cipher signs, 57 types, 49 keyed | 3,149 elements, 3,046 identified; 51 accepted forms | counting conventions differ (not reconciled) |
+
+Mapping inferred from the two canvas numberings (ours: c185R = IIIF f186; his canvas 186 = f162r; our c187R carries ink "164"):
+c185R = f162r, c186L = f162v, c186R = f163r, c187L = f163v, c187R = f164r, c188L = f164v.
+
+**His counts, quoted** (his NOTES.md, "His metadata"): "6/6 pages transcribed; 2/6 pages deciphered; 4 more in part"; "Key: 51 accepted
+forms: 38 letter signs, 11 nomenclature entries, 2 nulls, 39 provisional unidentified labels"; "Ciphertext: 3,149 elements, 3,046
+identified; 5 further wordlike groups not classified"; "Method category (our classification): key recovered based on adjacent plaintext;
+extent: partial"; contents "Political notices concerning England and Flanders: English arms and the Tower, religious policy, ships bound
+for Spain, Genoese lending, foreign courtiers, and a reported plan to force entry at Hampton Court." Bourdeau's spot-check (13 Oct):
+"partly confirmed ... The check is a sample, not a re-solution." His profile.json gives `fraction_read` 0.967 (identified/elements,
+"estimated"), outcome extent `partial`.
+
+**Datings, both quoted, not adjudicated.** Ours (N4-C1 "Dating and the slug"): the leaves "sit in the Noailles bundle beside c188R, a
+clear letter signed 'Noailles e. d'Acqs', Paris, [20?] Dec 1570"; the slug's 1688 is the volume's "Année 1688" slot, not the item's date.
+His: "Year: Unestablished;1554/1555 remains a hypothesis"; Bourdeau's note: "Cipher is bound next to an unrelated 1707 certificate copy
+(f161v), so date and context depend on content only; 1554/55 (Mary Tudor, Hampton Court) is his hypothesis." Our c185L is that 1707
+"Copie du Certificat" (N4-C1 1(a)); both sides see the same neighbours and draw on different ones.
+
+**Side by side, c186R = f163r, first lines** (ours: `reading.txt`, decode_key.py, mixed grades; his: report excerpt, "complete
+eight-line cipher paragraph"):
+
+| line | ours (c186R) | his (f163r) |
+|---|---|---|
+| L01 | e a p a r i i u l x / s o i s / e s c r i p t / e | Ce Seigneur a par deulx fois escript et |
+| L02 | m a n i i / n / d i i / r o y u i / e e l e i l a i s s a s t e | mandé à ceste royne qu'elle laissast |
+| L03 | p a s s i r / e n / s i l e i n d e / s / d i s s s m u l a t i o n | passer en silence et dissimulation |
+| L08 | e o m m a u i i r e n p l u s l r a u t r e p o r e e n | commander en plus grand repos. |
+
+Agreement: our decode follows his clear text letter for letter on long runs ("escript", "laissast", "passer en silence", "dissimulation",
+"religion en ce royaulme", "en plus ... repos") with our M-graded slips between them; his reading is fluent over the whole paragraph,
+ours is not. (Line division of his excerpt is ours, by alignment; his report runs it on.) His paragraph also matches the period margin
+gloss this folder read in READ2-C1161 ("...x foys escript et mander / [a l]a royne quelle ... [de l]a Religion en ce Royaulme ...
+[e]n grand Repoz"), which he names as the matching plaintext. No reading of his for the other five faces is in his folder (his report
+has more; not fetched in this wave), so no side by side there.
+
+**Credit.** Transcription, key and reading of `clair1161`: George Lasry ("BnF cipher research", 10 Oct 2026, with ChatGPT Astra 6 and
+Anthropic Opus 5.5); publication: D. Bourdeau, github.com/dbourdeau/cyphersolver, commit dde5b0ea, text CC BY 4.0.
+
+**What changes for our work.** Status stays `partial` (rule 5): his extent is partial (2 of 6 pages deciphered, 4 in part, 39
+provisional labels), so not every item is matched by a complete reading, and no period decipherment exists. All six faces are now
+prior work, not ours alone: c186R (f163r) and one other face are read by him in full; the other four in part. Any further spend here
+starts from his key and reading (report pp.73-74 and his sign table), not from our anneal; the cheapest next step is a sign-table
+concordance of his 51 forms against key.tsv (a record step, ~$1, no BnF fetch). AUDIT.md's N3 for this item is a verifier's to revisit
+(prior-work notice appended there; ROOM flag "AUDIT re-class needed"). The SO-C1161 second-opinion row and NEAR.md row are the lane
+orchestrator's to update.
+
+## Remaining gaps (LQ-C1161, 14 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H (unchanged). Prior work (LQ-C1161): George Lasry's reading of the same ff.162r-164v (cyphersolver `clair1161`, 6/6 transcribed, 2/6 deciphered, 4 in part) covers every face at least in part.
+- 27 M-graded key signs (th, z, eloop, phi, 6r, 8, 2, tz, and the nine LOLO values K, iib, l, ls, o, rot, spiralG, to, x) and the contested S signs 4, S - blocker: not-attempted; Lasry's key (51 accepted forms, 38 letters, 11 nomenclature, 2 nulls) is now prior work covering these signs, not yet concorded with key.tsv; next: sign-table concordance of his report's key (pp.73-74) against key.tsv, record only, ~$1
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 and iii barred vs bare - blocker: not-attempted; 33 U tokens incl. clear words; his "39 provisional unidentified labels" and "5 further wordlike groups" may be the same shapes; next: the same concordance, then the owner sign sorter if any stay open, ~$1
+- the gap between the anneal optimum (-2.67 per letter) and genuine French at the measured error (-2.36 to -2.44 at 8-10%) - blocker: not-attempted; superseded in practice by his fluent f163r paragraph, kept open until the concordance says which of our values differ; next: concordance above, ~$1
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (LQ-C1161, 14 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); whole volume (342 canvases) swept at 300 px, no other cipher or glossed leaf (D1A-C1161)
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under key.tsv; his f163r paragraph matches the same gloss (LQ-C1161); no other glossed leaf in the volume (D1A-C1161)
+- [ ] known-keys: fr16142 and fr.3281 f.4 NO FIT (N4-C1, D2-C1161PRU); Lasry's key for this very item (cyphersolver clair1161, report pp.73-74) is on record and not yet concorded with key.tsv; next: concordance, ~$1
+- [x] print: no printed edition located by check-solved and Premise check; Lasry's "BnF cipher research" (10 Oct 2026, published by D. Bourdeau 13 Oct) located by LQ-C1161 as prior work on these leaves
+- [retired] key-rebuild: instrument c186R gloss match (G) for per-sign and joint value changes -- per-sign 0/9 (GLOSS9), joint gain inside the window null (VER-C1161J); reopens only with a longer clear text or new material (his reading may be that material)
+- [ ] image-check: split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); planted audit NON-TEST (D2-C1161AUD); next: after the concordance, the owner's sign sorter on whatever shapes stay contested
+- [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); regraded reading --check exit 0
+Verdict: keep going: 3 internal gaps; cheapest next: sign-table concordance of Lasry's key against key.tsv (record step, no BnF fetch), ~$1
+
+`python3 tools/gaps_check.py clair1161-avis-flandre-1688` (LQ-C1161, 14 Oct 2026):
+```
+OK keep-going clair1161-avis-flandre-1688: keep going: 3 internal gap(s), 2 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```

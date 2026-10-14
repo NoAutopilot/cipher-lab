@@ -343,3 +343,5 @@ exit 0
 - Lead for the solvers, not actioned (Usage 7): Tomokiyo lists a "Chiffre envoyé en Flandres à monseigneur Des Pruneaux" in BnF
   fr. 3281 (Charles IX / Henry III ciphers page, mirrored in cyphersolver); later than c. 1570 and of unknown design, but a
   French Flanders key on file is a cheap known-keys shape test (~$1).
+
+Prior-work notice (14 Oct 2026, LQ-C1161): George Lasry's "BnF cipher research" (10 Oct 2026; published by D. Bourdeau, github.com/dbourdeau/cyphersolver `targets/clair1161`, commit dde5b0ea) transcribes and partly deciphers the same ff.162r-164v (= c185R-c188L; f163r = c186R read in full, matching the margin gloss). N-class not changed here (verifier's job); see NOTES.md section "Lasry BnF research check (14 Oct 2026, LQ-C1161)".
