@@ -92,3 +92,13 @@ attempt 1, never replacing it**, and attempt 1's score and verdict (W 5/12, R 10
    already seen); it answers one question: with truth-consistent 3 and z exemplars, does the owner place the d-sign tiles in pile 3?
    "Incomplete" = fewer than 7 of the 8 answered.
 Built by `tx/vivhuman/build_inputs.py --attempt 2` (an option on the attempt-1 script, not a copy), output `tx/sorter_human2/`.
+
+### Addendum B, build result (14 Oct 2026, 02:4x UTC by date -u; BEFORE any attempt-2 page was published, no answer exists)
+`tx/vivhuman/build_inputs.py --attempt 2` applied rule 2 as written (tx/sorter_human2/filter.tsv; before -> after, every removal was a
+flagged or unscored row, none a label outside its truth set): **3: 8 -> 0**, z: 18 -> 1, S: 7 -> 0, k: 2 -> 0, L: 4 -> 1, h: 5 -> 3,
+s: 40 -> 22, l: 0 -> 0. The 3 pile is empty: of the 7 scored, unflagged truth rows labelled 3 (all clerk letter d), four are the question
+tiles Q04/Q14/Q15/Q19 themselves and three have no 1:1 tile; the page's other 3-labelled tiles sit on clerk-split, align-conflict,
+off-key or unaligned rows. A pile with no members cannot be shown, so the page cannot ask its own question ("does he place the d-sign
+tiles in pile 3?"). A contact sheet of every 3/z/h/k tile with its truth row (scratch only) shows the one surviving z tile (truth a) and
+the clerk-split z tiles (truth a) are themselves 3-shaped: on this hand the key's z (a) and 3 (d) signs look alike, so the attempt-1
+z pile was not only mislabelled d-signs. **Attempt 2 was not built or published**; the rule is not loosened here. Handed to the parent.

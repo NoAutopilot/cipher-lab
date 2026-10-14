@@ -7,8 +7,12 @@ Tiles: every VIV-CLS round-2 map tile with op 1:1 and one tile per passA token (
 tx/vivcls/map_signs.tsv (line x = source x); y and h from the ink rows of that column span in the sheared line crop, mapped back to the
 region with the crop's own slope fit (region y = a + b*x - half + crop row). Pile label = the committed reconciliation's sign at the
 truth row passA's token aligns to (truth ref_sign); question tiles (tx/vivhuman/questions.tsv) go to the neutral pile 'unsorted'.
+
+--attempt 2 (PREREG-VIVHUMAN.md Addendum B, VIV-HUMAN2): question tiles = ATTEMPT2 only (shuffled, seed 20261014); the other attempt-1
+question tiles go back to their committed piles; a tile labelled in FILTERED is kept only if its truth row is scored, unflagged and its
+label lies in the row's truth set (others left out, counted); output tx/sorter_human2/ (focus.tsv in the shuffled order, filter.tsv).
 """
-import csv, json, os, sys, collections
+import csv, json, os, random, sys, collections
 import numpy as np
 from PIL import Image
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -20,6 +24,8 @@ SRC = os.path.join(FOLD, 'images', 'p67', 'fetch', 'src_image_v3_ark_12148_btv1b
 RX, RY, RW, RH = 680, 1500, 2970, 3700
 OUT = os.path.join(FOLD, 'tx', 'sorter_human')
 QPILE = 'unsorted'
+ATTEMPT2 = ['Q04', 'Q14', 'Q15', 'Q19', 'Q12', 'Q23', 'Q24', 'Q25']
+FILTERED = {'3', 'z', 'L', 'l', 's', 'S', 'h', 'k'}
 QUESTION = 'Which pile holds signs that look like this one? If none does, "None of these: new sign".'
 
 
@@ -42,7 +48,8 @@ def ink_rows(crop, x0, x1, thr=150):
     return int(y0), int(y1 - y0 + 1)
 
 
-def main():
+def main(attempt=1):
+    out = OUT if attempt == 1 else OUT + '2'
     man = {e['crop']: e for e in json.load(open(os.path.join(CUT, 'manifest.json')))['iiif_lines']}
     ms = {r['sid']: r for r in sets.rd(os.path.join(FOLD, 'tx', 'vivcls', 'map_signs.tsv'))}
     truth = sets.rd(sets.TRUTH)
@@ -60,10 +67,12 @@ def main():
         if m['op'] == '1:1':
             per[(m['line'], m['pos'])].append(m['sid'])
     allq = sets.rd(os.path.join(HERE, 'questions.tsv'))
-    q = {r['sid']: r for r in allq if not r['excluded']}
+    q = {r['sid']: r for r in allq if not r['excluded'] and (attempt == 1 or r['qid'] in ATTEMPT2)}
+    trow = {(r['line'], r['pos']): r for r in truth}
+    filt = collections.defaultdict(collections.Counter)   # label -> before/after/out reason
     drop = {r['sid'] for r in allq if r['excluded']}
-    os.makedirs(os.path.join(OUT, 'pages'), exist_ok=True)
-    Image.open(SRC).crop((RX, RY, RX + RW, RY + RH)).save(os.path.join(OUT, 'pages', 'f201r.jpg'), quality=85)
+    os.makedirs(os.path.join(out, 'pages'), exist_ok=True)
+    Image.open(SRC).crop((RX, RY, RX + RW, RY + RH)).save(os.path.join(out, 'pages', 'f201r.jpg'), quality=85)
     crops = {}
     signs, labels, skipped = [], [], collections.Counter()
     for (ln, ap), sids in sorted(per.items(), key=lambda kv: (kv[0][0], int(kv[0][1]))):
@@ -89,23 +98,42 @@ def main():
         if sid in q:
             labels.append(dict(sid=sid, sign=QPILE, family='to place'))
         else:
-            labels.append(dict(sid=sid, sign=ref[(ln, tp)], family='f201r'))
+            lab = ref[(ln, tp)]
+            if attempt == 2 and lab in FILTERED:
+                r = trow[(ln, tp)]
+                filt[lab]['before'] += 1
+                if r['status'] != 'scored' or r['flag']:
+                    filt[lab]['out: row flagged or not scored'] += 1; signs.pop(); continue
+                if lab not in set(filter(None, r['truth'].split('|'))):
+                    filt[lab]['out: label not in truth set'] += 1; signs.pop(); continue
+                filt[lab]['after'] += 1
+            labels.append(dict(sid=sid, sign=lab, family='f201r'))
     missing = set(q) - {s['sid'] for s in signs}
     assert not missing, missing
     def w(name, cols, rows):
-        with open(os.path.join(OUT, name), 'w') as fh:
+        with open(os.path.join(out, name), 'w') as fh:
             fh.write('\t'.join(cols) + '\n')
             for r in rows:
                 fh.write('\t'.join(str(r[c]) for c in cols) + '\n')
     w('signs.tsv', ['sid', 'page', 'x', 'y', 'w', 'h'], signs)
     w('labels.tsv', ['sid', 'sign', 'family'], labels)
-    with open(os.path.join(OUT, 'focus.tsv'), 'w') as fh:
-        for r in sorted(q.values(), key=lambda r: r['qid']):
+    with open(os.path.join(out, 'focus.tsv'), 'w') as fh:
+        order = sorted(q.values(), key=lambda r: r['qid'])
+        if attempt == 2:
+            random.Random(sets.SEED).shuffle(order)
+        for r in order:
             fh.write(f"{r['sid']}\t{r['qid']}: {QUESTION}\n")
-    with open(os.path.join(OUT, 'cipher_lines.tsv'), 'w') as fh:
+    with open(os.path.join(out, 'cipher_lines.tsv'), 'w') as fh:
         fh.write('# f.201r cipher region (lines L01-L25 of the VIV-67 cut); the whole page image is cipher\nf201r\n')
+    if attempt == 2:
+        with open(os.path.join(out, 'filter.tsv'), 'w') as fh:
+            fh.write('# PREREG-VIVHUMAN.md Addendum B pile filter (build_inputs.py --attempt 2)\nlabel\tbefore\tafter\tout_flagged_or_unscored\tout_not_in_truth\n')
+            for lab in sorted(FILTERED):
+                c = filt[lab]
+                fh.write(f"{lab}\t{c['before']}\t{c['after']}\t{c['out: row flagged or not scored']}\t{c['out: label not in truth set']}\n")
+        print({k: dict(v) for k, v in sorted(filt.items())})
     print('tiles', len(signs), 'question tiles', len(q), 'piles', len({l['sign'] for l in labels}), 'skipped', dict(skipped))
 
 
 if __name__ == '__main__':
-    main()
+    main(attempt=int(sys.argv[sys.argv.index('--attempt') + 1]) if '--attempt' in sys.argv else 1)
