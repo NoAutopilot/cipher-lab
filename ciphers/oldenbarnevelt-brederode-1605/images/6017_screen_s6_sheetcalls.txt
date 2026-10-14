@@ -1,0 +1,136 @@
+# OBRED-6017B sheet calls, written before the key is opened. Calls: CIPHER / PLAIN-COVER / PS (numeral block under signature) / scan:<content>; numeral_code_block yes/no/look
+1A PLAIN-COVER
+1B scan: Dutch prose opening, paragraphs; no
+1C scan: mostly blank leaf, short column of marks/short lines mid-right (list?); look
+1D scan: address leaf + Dutch letter dated Dec (1614?); no
+1E CIPHER
+1F scan: Dutch letter with inserted slip (p.561); no
+1G scan: blank leaf/cover; no
+1H scan: Dutch letter with slip, address panel (p.560); no
+1I PS
+2A scan: Dutch prose opening (p.610); no
+2B scan: Dutch letter, 1615 dateline top (p.615); no
+2C CIPHER
+2D PS
+2E scan: address leaf with seal + Dutch letter dated 1615 (p.617); no
+2F scan: Dutch prose opening (p.616); no
+2G scan: Dutch prose opening (p.622); no
+2H scan: Dutch prose opening (p.619); no
+2I PLAIN-COVER
+3A scan: Dutch prose (p.628); no
+3B PS
+3C scan: Dutch prose (p.627); no
+3D PLAIN-COVER
+3E scan: closing + signature "P. Brederode", Frankfurt April 1615 (p.624); no
+3F scan: address leaf with seal + Spanish text "Don Phelippe ..." (p.630); no
+3G scan: closing + signature, Frankfurt 9 April 1615 (p.620?); no
+3H CIPHER
+3I scan: address leaf + Dutch letter dated April 1615 (p.625); no
+4A scan: dense prose, French/Spanish? closing with date (p.655); no
+4B scan: blank verso with endorsement + letter "Extract ... Madrid?" (p.646); no
+4C PLAIN-COVER
+4D scan: prose, Spanish/French hand (p.647); no
+4E scan: endorsement + Spanish letter "Magnifico ..." (p.644); no
+4F scan: Spanish royal letters "Don Phelippe ... Rey", Madrid 1615?, ruled blank lines (p.643); no
+4G scan: Spanish letter "Don Phelippe por la gracia de Dios", Madrid (p.652); no
+4H CIPHER
+4I PS
+5A scan: French letter "... 1615 de Turin?" with endorsement (p.660); no
+5B PLAIN-COVER
+5C scan: Spanish text with endorsement (p.661); no
+5D scan: list of regiments/companies with amount column at right (p.649); numerals are counts/sums in a column against names, not code groups; no
+5E CIPHER
+5F scan: Spanish/Italian prose with margin names (p.643?); no
+5G scan: Dutch prose (p.632); no
+5H PS
+5I scan: Dutch letter opening (p.633); no
+6A PLAIN-COVER
+6B scan: address leaf + Dutch prose (p.680?); no
+6C scan: Dutch letter + second letter dated 1615 (p.668); no
+6D scan: Dutch letter, closing signed "Van Brederode"?, dated April 1615 (p.635); no
+6E CIPHER
+6F scan: Dutch letter dated 1615 (p.664); no
+6G scan: Dutch prose (p.639?); no
+6H scan: blank opening (p.636); no
+6I PS
+7A scan: address leaf with seal + Dutch letter dated 1615 (p.657); no
+7B PLAIN-COVER
+7C CIPHER
+7D scan: Dutch prose (p.676); no
+7E scan: Dutch prose (p.675); no
+7F scan: Dutch letter closing, "Heydelberg desen ... May 1615", signed P. Brederode (p.660?); no
+7G PS
+7H scan: Dutch prose (p.673?); no
+7I scan: Dutch letter, signed, Heydelberg April 1615 (p.666?); no
+8A scan: address leaf with seal + French "Extraict d'une lettre ... May 1615" (p.670); no
+8B scan: Dutch prose (p.669); no
+8C PS
+8D CIPHER
+8E scan: Dutch prose with a Latin line (p.668); no
+8F scan: faint/show-through leaf, almost blank (p.671); no
+8G scan: address leaf with seal + French letter (p.661/172); no
+8H PLAIN-COVER
+8I scan: French letter "Copie d'une lettre ..." 1615 (p.662/173); no
+9A scan: Dutch letter, Heydelberg 24 July 1615, signed P. Brederode (p.682); no
+9B PS
+9C scan: Dutch prose (p.685); no
+9D scan: address leaf with seal + Dutch letter dated 1615 (p.681); no
+9E scan: Dutch letter dated 1615 (p.678); no
+9F CIPHER
+9G scan: Dutch prose + French/Latin second text (p.679); no
+9H PLAIN-COVER
+9I scan: Dutch letter, Heydelberg 10 August 1615, signed P. Brederode (p.686); no
+10A scan: blank opening, stains; no
+10B scan: blank opening (p.691); no
+10C CIPHER
+10D scan: Dutch prose + French letter signed, dated 1615 (p.692?); no
+10E scan: address leaf with seal + French copy "Copie de la lettre ..." dated 1615; no
+10F PS
+10G scan: address leaf with seal + Dutch letter dated Aug 1615 (p.688); no
+10H scan: Dutch prose (p.689); no
+10I PLAIN-COVER
+11A PLAIN-COVER
+11B scan: Dutch prose, stained (p.69x); no
+11C scan: Dutch prose (p.693); no
+11D scan: German list of names/titles with paraphs (signatures copied?), no figures; no
+11E scan: address leaf with seal + Dutch letter dated 1615 (p.69x); no
+11F scan: Dutch prose (p.694); no
+11G scan: dense German/Dutch prose (p.69x); no
+11H PS
+11I CIPHER
+12A scan: Dutch prose (p.697); no
+12B PS
+12C CIPHER
+12D scan: Dutch prose (p.706); no
+12E scan: Dutch prose (p.698); no
+12F scan: Dutch letter, Heydelberg Nov? 1615, signed (p.707); no
+12G PLAIN-COVER
+12H scan: address leaf with seal + Dutch letter 1615 (p.705/704); no
+12I scan: Dutch letter closing, signed, 1615 (p.704?); no
+13A scan: blank opening (p.703); no
+13B PS
+13C CIPHER
+13D scan: address leaf + Dutch letter dated Oct? 1615; no
+13E scan: address leaf + Dutch letter 1615 (p.705?); no
+13F PLAIN-COVER
+13G scan: Dutch prose (p.701?); no
+13H scan: German prose ending "... Anno 1615", blank verso; no
+13I scan: Dutch prose + German prose; no
+14A scan: year divider "1616" (folder cover, not the 1605 control); no
+14B PS
+14C scan: Dutch prose; no
+14D CIPHER
+14E scan: Dutch prose, damaged leaves; no
+14F scan: blank cover leaf; no
+14G PLAIN-COVER
+14H scan: address leaf "Den Hoog Mogenden Heeren Staten Generael" + Dutch prose with a pasted slip of a few written lines (p.683); no
+14I scan: short Dutch paragraph, rest blank; no
+15A CIPHER
+15B scan: Dutch letter, Heydelberg ... 1616?, signed P. Brederode; no
+15C scan: address leaf with seal + Dutch letter dated 1616?; no
+15D PLAIN-COVER
+15E scan: dense German prose with margin notes; no
+15F PS
+15G scan: German "Kurtzer Bericht ..." prose; no
+15H scan: blank opening with pasted leaf; no
+15I scan: Dutch letter, Heydelberg December 1615?, signed P. Brederode; no

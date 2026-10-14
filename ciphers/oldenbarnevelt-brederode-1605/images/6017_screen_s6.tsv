@@ -1,0 +1,91 @@
+scan	sheet	tile	content	numeral_code_block
+74	1	D	address leaf + Dutch letter dated Dec (1614?)	no
+75	1	B	Dutch prose opening, paragraphs	no
+77	1	H	Dutch letter with slip, address panel (p.560)	no
+78	1	F	Dutch letter with inserted slip (p.561)	no
+80	1	C	mostly blank leaf; the short column, looked at 1200 px, is a sideways money addition (94-11½, 95-9½ ... 100-0) with ruled sum lines	no
+81	1	G	blank leaf/cover	no
+83	2	B	Dutch letter, 1615 dateline top (p.615)	no
+84	2	F	Dutch prose opening (p.616)	no
+86	2	A	Dutch prose opening (p.610)	no
+87	2	H	Dutch prose opening (p.619)	no
+89	2	E	address leaf with seal + Dutch letter dated 1615 (p.617)	no
+90	2	G	Dutch prose opening (p.622)	no
+92	3	E	closing + signature "P. Brederode", Frankfurt April 1615 (p.624)	no
+93	3	I	address leaf + Dutch letter dated April 1615 (p.625)	no
+95	3	C	Dutch prose (p.627)	no
+96	3	A	Dutch prose (p.628)	no
+98	3	G	closing + signature, Frankfurt 9 April 1615 (p.620?)	no
+99	3	F	address leaf with seal + Spanish text "Don Phelippe ..." (p.630)	no
+101	4	G	Spanish letter "Don Phelippe por la gracia de Dios", Madrid (p.652)	no
+102	4	F	Spanish royal letters "Don Phelippe ... Rey", Madrid 1615?, ruled blank lines (p.643)	no
+104	4	A	dense prose, French/Spanish? closing with date (p.655)	no
+105	4	E	endorsement + Spanish letter "Magnifico ..." (p.644)	no
+107	4	B	blank verso with endorsement + letter "Extract ... Madrid?" (p.646)	no
+108	4	D	prose, Spanish/French hand (p.647)	no
+110	5	F	Spanish/Italian prose with margin names (p.643?)	no
+111	5	A	French letter "... 1615 de Turin?" with endorsement (p.660)	no
+113	5	C	Spanish text with endorsement (p.661)	no
+114	5	D	list of regiments/companies with amount column at right (p.649); numerals are counts/sums in a column against names, not code groups	no
+116	5	G	Dutch prose (p.632)	no
+117	5	I	Dutch letter opening (p.633)	no
+119	6	D	Dutch letter, closing signed "Van Brederode"?, dated April 1615 (p.635)	no
+120	6	H	blank opening (p.636)	no
+122	6	B	address leaf + Dutch prose (p.680?)	no
+123	6	G	Dutch prose (p.639?)	no
+125	6	C	Dutch letter + second letter dated 1615 (p.668)	no
+126	6	F	Dutch letter dated 1615 (p.664)	no
+128	7	I	Dutch letter, signed, Heydelberg April 1615 (p.666?)	no
+129	7	A	address leaf with seal + Dutch letter dated 1615 (p.657)	no
+131	7	H	Dutch prose (p.673?)	no
+132	7	F	Dutch letter closing, "Heydelberg desen ... May 1615", signed P. Brederode (p.660?)	no
+134	7	E	Dutch prose (p.675)	no
+135	7	D	Dutch prose (p.676)	no
+137	8	G	address leaf with seal + French letter (p.661/172)	no
+138	8	I	French letter "Copie d'une lettre ..." 1615 (p.662/173)	no
+140	8	E	Dutch prose with a Latin line (p.668)	no
+141	8	B	Dutch prose (p.669)	no
+143	8	A	address leaf with seal + French "Extraict d'une lettre ... May 1615" (p.670)	no
+144	8	F	faint/show-through leaf, almost blank (p.671)	no
+146	9	E	Dutch letter dated 1615 (p.678)	no
+147	9	G	Dutch prose + French/Latin second text (p.679)	no
+149	9	D	address leaf with seal + Dutch letter dated 1615 (p.681)	no
+150	9	A	Dutch letter, Heydelberg 24 July 1615, signed P. Brederode (p.682)	no
+152	9	C	Dutch prose (p.685)	no
+153	9	I	Dutch letter, Heydelberg 10 August 1615, signed P. Brederode (p.686)	no
+155	10	G	address leaf with seal + Dutch letter dated Aug 1615 (p.688)	no
+156	10	H	Dutch prose (p.689)	no
+158	10	B	blank opening (p.691)	no
+159	10	E	address leaf with seal + French copy "Copie de la lettre ..." dated 1615	no
+161	10	D	Dutch prose + French letter signed, dated 1615 (p.692?)	no
+162	10	A	blank opening, stains	no
+164	11	D	German list of names/titles with paraphs (signatures copied?), no figures	no
+165	11	G	dense German/Dutch prose (p.69x)	no
+167	11	C	Dutch prose (p.693)	no
+168	11	F	Dutch prose (p.694)	no
+170	11	E	address leaf with seal + Dutch letter dated 1615 (p.69x)	no
+171	11	B	Dutch prose, stained (p.69x)	no
+173	12	I	Dutch letter closing, signed, 1615 (p.704?)	no
+174	12	H	address leaf with seal + Dutch letter 1615 (p.705/704)	no
+176	12	D	Dutch prose (p.706)	no
+177	12	F	Dutch letter, Heydelberg Nov? 1615, signed (p.707)	no
+179	12	A	Dutch prose (p.697)	no
+180	12	E	Dutch prose (p.698)	no
+182	13	E	address leaf + Dutch letter 1615 (p.705?)	no
+183	13	G	Dutch prose (p.701?)	no
+185	13	A	blank opening (p.703)	no
+186	13	D	address leaf + Dutch letter dated Oct? 1615	no
+188	13	I	Dutch prose + German prose	no
+189	13	H	German prose ending "... Anno 1615", blank verso	no
+191	14	I	short Dutch paragraph, rest blank	no
+192	14	H	address leaf "Den Hoog Mogenden Heeren Staten Generael" + Dutch prose with a pasted slip of a few written lines (p.683)	no
+194	14	C	Dutch prose	no
+195	14	E	Dutch prose, damaged leaves	no
+197	14	F	blank cover leaf	no
+198	14	A	year divider "1616" (folder cover, not the 1605 control)	no
+200	15	I	Dutch letter, Heydelberg December 1615?, signed P. Brederode	no
+201	15	C	address leaf with seal + Dutch letter dated 1616?	no
+203	15	G	German "Kurtzer Bericht ..." prose	no
+204	15	E	dense German prose with margin notes	no
+206	15	B	Dutch letter, Heydelberg ... 1616?, signed P. Brederode	no
+207	15	H	blank opening with pasted leaf	no

@@ -1338,3 +1338,56 @@ Read so far: unmeasured; nothing decoded -- no. 92 (121 groups) and the scan-187
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv two blind passes agreeing 59/59 (OBRED-187)
 - [x] retry: Den Tex (abridged edition) read twice (25 Sept; OBRED-SG 10 Oct 2026): no cipher, key or Stettin note; brievenboek 11851 596-733 and 11852 2-104 completed with controls (OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A)
 Verdict: keep going: 1 internal gap; cheapest next: the 6017 stride-1 fill from scan 73 (342 scans left, ~$3 per ~60-90 scans with controls); the digitised brievenboek remainder for both letters' arrival windows is now screened with no register copy (OBRED-11852A)
+
+## OBRED-6017B (14 Oct 2026, 09:52-10:0x UTC by date -u, account 4, Opus; for LANE DEFAULT-A4-0935-14)
+
+Brief: the inv. 6017 stride-1 fill from scan 73 named by OBRED-11852A's Verdict, by OBRED-11851's method (700 px scans, 3x3 contact
+sheets of six scans plus the three disk controls, calls before key). Nothing decoded; no gate computed.
+
+- Prior-work step: `prior_work.py oldenbarnevelt-brederode-1605 --item-spec 'NL-HaNA 1.01.02 inv. 6017 scans 74 onward (stride-1 fill)'
+  --step-type read` exit 4: 1 LEAD (this job's own claim), 1 LOOK (the target-level look.tsv crop of no. 92, not a 6017 scan), 2
+  UNCHECKED (solver caches by unit, Tomokiyo), 2 UNCHECKED-NET (aaymeloglu cache, editions); the three non-net rows recorded CLEAR in
+  `prior-work.tsv` (earlier unit-keyed work on 6017 is OBRED-S3 stride 3, OBRED-11851 scans 2-36, OBRED-641 scans 38-72). Checks 2-4 do
+  not apply beyond the folder's Premise check (a liassen screen, no reading); check 5 does not apply.
+- Scope: scan 73 is one of OBRED-S3's stride-3 samples (1, 4, ..., 583), so the fill starts at 74. Taken here: **the 90 scans of
+  74-207 not sampled by OBRED-S3** (74, 75, 77, 78, ..., 206, 207). With OBRED-S3's samples, every scan 1-207 of inv. 6017 has now been
+  looked at once.
+- Route: METS `b060ccbc-...` (1 request) and `screen_tools/na_fetch.py`, IIIF `/full/700,/0/default.jpg`, 2.1 s apart, descriptive
+  User-Agent. 15 sheets by `screen_tools/contact_sheets.py`, seed 6074, controls CTRL-CIPHER = inv. 2016 scan 31, CTRL-PLAIN = inv. 6016
+  order 261, CTRL-PS = scan 187 at 1200 px (no request), tile letters only. Every call was written to
+  `images/6017_screen_s6_sheetcalls.txt` before the key (`images/6017_screen_s6_sheetkey.json`) was opened. One reader, this worker's own
+  eye, no subagent. Images stay outside git; sha1s in `images/manifest.json` (`obred_6017b`); `screen_tools/regen_6017b.sh` re-derives
+  scans and sheets, and the sheet key re-derived byte-identical from seed 6074.
+- **Controls: 45 of 45 placed correctly (15 sheets x 3), checked mechanically against the key; all 90 scan tiles called as scans. No
+  sheet is a non-test.**
+- **Result, inv. 6017 scans 74-207 (stride-1 fill): no numeral-code block, key table or interlinear decipherment on any of the 90**
+  (`images/6017_screen_s6.tsv`, 90 rows). Content: the 1615 run of the liasse (a blank divider at scan 81, OBRED-S3's year divider at 82)
+  to the 1616 divider (scan 198) and the first 1616 letters. Dutch letters to the States General, many signed P. Brederode from Heidelberg
+  (datelines read at sheet size: April, May, 24 July, 10 August, late 1615; some from Frankfurt, April 1615), address leaves with seals,
+  French copies and extracts of 1615 ("Extraict d'une lettre ...", "Copie de la lettre ..."), Spanish royal letters ("Don Phelippe por la
+  gracia de Dios ...", Madrid), German pieces ("Kurtzer Bericht ..."), blank openings. Figures seen: a list of regiments and companies with
+  an amount column (scan in sheet 5, printed p. about 649), and on scan 80 a sideways money addition (94-11 1/2, 95-9 1/2 ... 100-0, ruled
+  sum lines), checked by one region look at 1200 px; neither is a code-group run. **No Brederode letter in this run carries a numeral
+  postscript or figure block.** Dates and folio numbers in the TSV are read at 700 px and are approximate (marked "?").
+- Requests: `service.archief.nl` **92** (1 METS, 90 scans at 700 px, 1 scan at 1200 px), all HTTP 200, no 403/429/challenge; brief
+  cap 100. NA take and release lines in ROOM.md.
+- Limits: 700 px sheets, one reader; a block of a dozen groups or fewer inside prose could escape; the controls are a French cipher letter
+  and the target's own postscript. Inv. 6017 has **252 scans unlooked** (342 minus these 90; next unlooked scan 209, since 208 is an
+  OBRED-S3 sample). Not a negative for the series elsewhere.
+
+## Remaining gaps (OBRED-6017B, 14 Oct 2026)
+Read so far: unmeasured; nothing decoded -- no. 92 (121 groups) and the scan-187 postscript (59 groups) are both unread; they share 26 values, above chance (OBRED-187)
+- no. 92 and the 187 postscript, pooled (180 tokens, 130 distinct values) - blocker: too-short; OBRED-DP: name band 588-751 stands alone (G2 PASS), shared order beyond one pair absent (G1 FAIL), so a crib test is unfalsifiable at this N; more text in the same table is the step
+- the later liassen NA 1.01.02 inv. 6017-6024 (1614-1637, 4,826 scans, all digitised) - blocker: not-attempted; 6017 scans 1-207 all looked at (OBRED-S3 stride 3; stride-1 fill 2-36 OBRED-11851, 38-72 OBRED-641, 74-207 OBRED-6017B, controls 45/45, no numeral block); next: the other 252 unlooked scans of 6017 at stride 1 from scan 209 (~255 requests over about three NA sessions, ~$3 per 90 scans), only if a later cipher use by the agent in 1614-1617 is worth testing
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done: brievenboek inv. 11851 scans 596-733 and inv. 11852 scans 2-104 (about 23 Oct 1604 - 6 Apr 1605) all looked at with controls (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B 18/18 and 30/30, OBRED-11852A 24/24): no numeral block, no Brederode, Stettin or Heidelberg heading; the register appears to copy ordinaris letters, not an agent's letters (M)
+
+## Escalation (OBRED-6017B, 14 Oct 2026)
+- [x] siblings: scan 187 is a second code text sharing 26 values with no. 92 (OBRED-187); all of inv. 6016 looked at (OBRED-0259, OBRED-S1, OBRED-S2, YX-OBR): no third numeral block; 6017 stride 3 (OBRED-S3) plus scans 2-36, 38-72 and 74-207 at stride 1 (OBRED-11851, OBRED-641, OBRED-6017B): none
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187: Stettin, 17 Oct 1604, to the griffier of the States General); it carries no gloss of the code
+- [x] known-keys: the 10 Aug 1598 Van Aerssen slip excluded for no. 92 by design (R10-OBRED98); Buzanval syllabary inv. 2028 excluded (R9-OBRED4); DECODE 1600s and Palatine/Hessian keys screened (OLD-DKEY, R8-OBRED2, R9-OBRED3)
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII has no decipherment or key note near the Brederode entries (OBRED-DP)
+- [ ] key-rebuild: design_prior and structure done (OBRED-DP); a crib/run-length test waits on a third text in the same table, none found in 6016, 6017 scans 1-207, 11851 596-733 or 11852 2-104; next: a third text from the 6017 fill (from scan 209), then the crib consistency test with a synthetic matched control, ~$3
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv two blind passes agreeing 59/59 (OBRED-187)
+- [x] retry: Den Tex (abridged edition) read twice (25 Sept; OBRED-SG 10 Oct 2026): no cipher, key or Stettin note; brievenboek 11851 596-733 and 11852 2-104 completed with controls (OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A)
+Verdict: keep going: 1 internal gap; cheapest next: the 6017 stride-1 fill from scan 209 (252 scans left, ~$3 per ~90 scans with controls); scans 1-207 (1614 to early 1616) carry no numeral block (OBRED-6017B)
