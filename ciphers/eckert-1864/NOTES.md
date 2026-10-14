@@ -7197,3 +7197,31 @@ Read so far: as ECK-GP13C.
 - [x] image-check: as ECK-GP13B.
 - [x] retry: googleapis 503 on the control at 18:58 UTC, stopped per the job's rule (ECK-GP13D).
 Verdict: keep going: 1 internal gap; cheapest next: the keyed googleapis pass for Grant Papers vol. 13 from the control, ~$0.1 (the 5914/2 page waits on L79)
+
+## GB-2 (14 Oct 2026, account 2, for LANE DEFAULT-A2-0911-14)
+
+Brief: `.claude/briefs/runs/2026-10-14-ytbiz-default-0911-jobs.md` "### GB-2" (a): ECK-GP13D Remaining gaps item 1. The lane probe answered 200 at 09:2x UTC. **Prior work:** `tools/prior_work.py eckert-1864 --item-spec 'googleapis lookup' --step-type lookup --offline`, exit 0, verdict plaintext LEAD (edition rows, i.e. the OR/ORN/Butler spans this pass searches; no own-work row ran these queries after ECK-GP13D). Check 1 by hand: no section after ECK-GP13D ran the queries (grep of NOTES.md, 09:23 UTC).
+
+Run: `fortmonroe/eck_gb2_gb.py` (committed this time: `eck_s65g_gb.py` with the ECK-GP13B/C sliced list, E589's original row removed and `E589 looser` appended; keyed, `country=US`, >= 2 s). Output `fortmonroe/eck_gb2_gb.out` (09:24:09 UTC) and `fortmonroe/eck_gb2_gb_retry.out` (09:25:14 UTC, after a 62 s pause).
+
+| row | query | result |
+|---|---|---|
+| control E531 | `"six vessels" Oriental intitle:Grant` | unsearched: HTTP 503 at 09:24:09 UTC and on the one retry at 09:25:14 UTC; host stopped for this folder. |
+| E590, E591, E592, E589 looser | as ECK-GP13C | unsearched (no control, so no target query). |
+
+Observation, not a test: in the same minutes the thurloe-printed pass of this job got HTTP 200 from the same host and key on two plain queries (09:25:36-38 UTC), then 503 on a third and on its retry. The host is answering intermittently, not refusing the key. This control query has now drawn 503 on all of its eight attempts across 12 and 14 Oct (ECK-GP13B 2, ECK-GP13C 3, ECK-GP13D 1, GB-2 2), so the quoted phrase plus `intitle:` form may be one the API fails on. This is a hypothesis from eight attempts, not a finding. No row record, AUDIT.md section or N-class edited. **Requests:** www.googleapis.com 2 (both 503); no other host.
+
+## Remaining gaps (GB-2, 14 Oct 2026)
+Read so far: as ECK-GP13C.
+- Grant Papers vol. 13 (2-20 Feb 1865) for E590 E591 E592, and a looser E589 query (`Monohansett Monroe`) - blocker: not-attempted; googleapis answered 503 to the control on 14 Oct (09:24 and 09:25 UTC, GB-2), its eighth 503 in eight tries since 12 Oct, while plain queries got 200 in the same minutes; next: re-run with a second control of another form first (e.g. `Oriental "six vessels"` without `intitle:`, or the vol. 13 id's own title query) so a query-specific 503 is told apart from host load, then the sliced list, ~$0.1
+- The printed page of 5914/2 in Grant Papers vol. 14 (Grant to Ord, 10.00 a.m.) - blocker: waiting-on LOCAL-QUEUE L79; be-api gives no page and the IA copy is lending-only (obfuscated to scripts); next: a person reads the page in the IA reader at the 'Gordon's Commission' note (L79, queued), ~$0.05
+
+## Escalation (GB-2, 14 Oct 2026)
+- [x] siblings: as ECK-GP13B.
+- [x] clear-pages: as ECK-GP13B.
+- [x] known-keys: as ECK-GP13B.
+- [ ] print: Grant Papers 13 by Google Books: E590-E592 and looser E589 still to run (gap above); 5914/2's page waits on L79.
+- [n/a] key-rebuild: no key row edited in this pass.
+- [x] image-check: as ECK-GP13B.
+- [x] retry: googleapis 503 on the control at 09:24 UTC, one retry after 62 s, 503 again, stopped per the job's rule (GB-2).
+Verdict: keep going: 1 internal gap; cheapest next: the keyed googleapis pass for Grant Papers vol. 13 with a second-form control first, ~$0.1 (the 5914/2 page waits on L79)
