@@ -1,0 +1,14 @@
+[strict] R5323 S_A=3 ['O=a', 'Y=o', 'N8=d']  S_B=4 ['O=a', 'Y=o', 'N8=d', 'N2=h']  S_agreed=3 ['O=a', 'Y=o', 'N8=d']
+[strict]   control ctl_5324.tsv: S=0 []
+[strict]   control ctl_5302.tsv: S=0 []
+[strict]   control ctl_5304.tsv: S=0 []
+[strict]   control ctl_5305.tsv: S=0 []
+[strict]   control ctl_5306.tsv: S=1 ['Y=o']
+[strict]   control ctl_5309.tsv: S=0 []
+[strict]   control ctl_5310.tsv: S=1 ['O=a']
+[strict]   control ctl_5311.tsv: S=0 []
+[strict]   control ctl_5312.tsv: S=0 []
+[strict]   control ctl_5313.tsv: S=0 []
+[strict]   control ctl_5315.tsv: S=0 []
+[strict] max control S=1  shuffled p=0.0006  GATE FAIL
+[loose (A/B? counted)] max control S=1  shuffled p=0.0006  GATE FAIL (sensitivity only; the strict line is the registered result)

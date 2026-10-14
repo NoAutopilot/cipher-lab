@@ -308,3 +308,53 @@ Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0
 - [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
 - [ ] retry: blind check of R5323, then the period key against the f.5/f.8 glosses, then S3 on f.15
 Verdict: keep going: 3 internal gaps; cheapest next: blind transcription of DECODE R5323's alphabet columns and a scripted C-pair score against the 1597 null, ~$2
+
+## SFZ-R5323 (14 Oct 2026 19:10-19:3x UTC by date -u, account 1, LANE DEFAULT-A1-1840-14): blind test of DECODE R5323 -- registered gate FAIL (3 of 7, threshold 4), above every control
+Job: test SFZ-DEC2's lead (R5323 "Filippo Maria Duca di Milano", 5/7 C pairs by an unblinded eye) with readers who never saw the pairs.
+- **Prior work.** Check 1 (own work): SFZ-DEC2 above is the only look at R5323; no blind pass existed. Checks 2-4 as SFZ-DEC2 (same day,
+  same records; a key-sheet test, no edition). Pelling and Knowles (Cipher Mysteries, 13 Apr 2023) report two Filippo Maria keys in the
+  1597 set; no transcription of R5323 by them located in this repository's sources.
+- **Fetch.** One browser login (tools/decode_browser_login.js 5323 --fetch, 12 PDFs by the filenames in decode_1597/manifest.json): 14
+  de-crypt.org requests, all 200, sha1s equal to the manifest. Nothing committed but text; images re-derive with `r5323/regen.sh`.
+- **PREREG** `PREREG-SFZ-R5323.md`, pushed 9c81f442b before any reader ran. Statistic S = how many of the 7 C pairs (O=a, Y=o, N8=d,
+  N2=h, N11=r, ce=r, cu=n) a blind reader lists in that letter's column; R5323 scored on cells both passes agree on.
+- **Readers.** 13 Sonnet subagent calls, each given only duke_labels.md's shape table (r5323/labels.md; no values, no f.5/f.8, no
+  mention of the Duke): R5323 passes A and B on two 300 dpi strip crops of the alphabet block; one pass each on the top half of R5324 and
+  ten other scat. 1597 keys (5302 5304 5305 5306 5309 5310 5311 5312 5313 5315). Reader TSVs in r5323/; no reconciliation call was run
+  (the gate scores agreed cells only, and on FAIL no key is built).
+- **Result** (`python3 score_r5323.py` in r5323/, output r5323/score.out):
+
+  | sheet | S (of 7) | pairs |
+  |---|---|---|
+  | R5323 pass A | 3 | O=a, Y=o, N8=d |
+  | R5323 pass B | 4 | O=a, Y=o, N8=d, N2=h |
+  | **R5323 agreed** | **3** | O=a, Y=o, N8=d |
+  | R5324 (other "Filipo Maria" sheet) | 0 | |
+  | 10 other 1597 keys | 0,0,0,0,1,0,1,0,0,0 | 5306 Y=o; 5310 O=a |
+  | shuffled-value null on R5323's agreed columns | p = 0.0006 (10,000 perms, seed 5323) | |
+
+  Gate (S_agreed >= 4 AND > max control AND p <= 0.01): **FAIL** on the first clause only (3 < 4); the second (3 > 1) and third
+  (p 0.0006) pass. Logged as registered; the gate is not re-tuned.
+- **What the misses are (post hoc, not scored).** N2=h: pass B read h's ‡ as N2, pass A as # (the two double-barred labels). cu=n:
+  both readers wrote n's first sign as "X:v" -- the label table packs `ca cr ce cu cm ci` into one row, so a u-shape had no
+  separable label to pick; a reader-instrument gap, not evidence either way. N11 and ce under r: neither reader listed them (r column
+  read N4 d by both), as SFZ-DEC2's eye also found. So the blind readers reproduce 3 of SFZ-DEC2's 5 and disagree on one.
+- **Grade.** R5323 stays a lead (M): blind readers agree on 3 of the 7 C pairs against at most 1 on eleven other keys of the same box,
+  but the pre-registered threshold was not met, so no key_r5323.tsv, no decode of f.5/f.8/f.15, no H grade. Nothing here is a reading.
+- Requests: de-crypt.org 14. Sonnet calls 13. Cost not visible to this session.
+
+## Remaining gaps (SFZ-R5323, 14 Oct 2026)
+Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0.441 mean held-out, 2 units; anchored 0.422); candidate period key DECODE R5323: blind readers agree on 3 of 7 C pairs (gate needed 4; controls max 1, shuffled p 0.0006), grade M
+- R5323 key check - blocker: not-attempted; the label instrument could not express cu (u-shape) or settle #/N2; next: split the cursive-letter row of the label table into one row per label (ca, cr, ce, cu, cm, ci) and add an exemplar crop per C-pair label from f.5/f.8 without values, then a fresh PREREG and two blind passes on the same crops (rule 3 third-attempt clause: this would be attempt 2 with a changed instrument), ~$1.5
+- f.15 decode - blocker: not-attempted; the owner's blind sort (ASKS row 165) remains the transcription route for f.15 itself; next: only if R5323 passes a blind check, apply it to f.5/f.8 against their glosses (decode_key.py, G1 unchanged) before f.15, ~$2
+- f.17 blanks vs f.15 - blocker: not-attempted; whether f.15's cipher fills f.17's two blanks is unexamined; next: only after a readable key, ~$1
+
+## Escalation (SFZ-R5323, 14 Oct 2026)
+- [x] siblings: the Duke's glossed pairs f.5/f.7 and f.8/f.10 used; f.23-24/f.26, f.30-31/f.29, f.36-37/f.35 not yet
+- [x] clear-pages: f.17 (same-day clear letter) noted as context; no copy of f.15 exists in the volume per Mazzatinti
+- [x] known-keys: DECODE scat. 1597 nos. 1-35 and 78 opened; R5323 blind-tested (SFZ-R5323): 3/7 agreed vs controls <= 1, gate FAIL at threshold 4
+- [ ] print: no print of f.15 located (check-solved above); verifier pass belongs to a later reading
+- [x] key-rebuild: attempted, G1 FAIL
+- [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
+- [ ] retry: R5323 blind check with a per-label table and exemplar crops (attempt 2, changed instrument), then the period key against the f.5/f.8 glosses, then S3 on f.15
+Verdict: keep going: 3 internal gaps; cheapest next: R5323 blind check with a split label table and value-free exemplar crops, fresh PREREG, ~$1.5
