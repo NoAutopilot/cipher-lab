@@ -113,3 +113,20 @@ maire de ville", "St Aignen", 30 Sept 1587) in phrases.txt (create or extend it;
 
 Wave 2 sessions (spawned 09:40 UTC): PW-FIX session_01Hf212v6xmX38n1YDCggzeK; COL26-C33 session_014jfMUt7CUyscq8Me7FDKP5;
 SALV-MAP3 session_01TbESZH67oRC4ekVXV6WsfV; F3975-PC (Sonnet) session_01G7dWAzhhEQnu8Lg4zKxxvi.
+
+## Wave 3 (10:0x UTC 14 Oct) -- at most two in flight (orchestrator check-in 98)
+Wave 2 results: PW-FIX (prior_work.py fixed, 137 PASS); COL26-C33 (instrument CLEARS, 20 = i FAIL-LOWPOWER); SALV-MAP3 (4-gram PREREG gate
+PASS, 0/300); F3975-PC (stale step, stopped at check 1); BAL168-SWEEP (168 c1-250, no unlisted letter beyond f.110r/c237).
+
+### SALV-EYE (Opus, cap 3.5, box 75 min, disk only): fr2933-salviati-1525, eye check of the SALV-MAP3 settled and unsettled types
+SALV-MAP3's named next ("eye check of settled/unsettled types ~3"; ablation: S^=m and Lx^=u lower the score). Image-only, crops from disk
+(glyphs/atlas + Lasry sheet), one subagent call per type group, blind to the three earlier passes' values; record agree/disagree per type
+against the 2-of-3 value; no key_lasry edit beyond marking a type `eye-confirmed` or `eye-contested` in a dated column; re-score only if a
+type flips (same 300 permuted keys, PREREG gate). Then a fresh `--check` re-derivation of the reading under key_lasry. NEAR numbers in the
+done line; no novelty words; the verifier comes after (lane's call).
+
+### BAL171-SWEEP (Opus, cap 4, box 80 min, openapi.bnf.fr <= 300 at >= 3 s): baluze167-davaux-1637, Baluze 171 canvases 1-250
+Exactly BAL168-SWEEP's method (300 px contact sheets, <= 15 looks at 1000 px, controls = listed 171 cipher canvases in range); then, in
+the same session if under 80% of cap and box, the 167 c275/c283 image check (two looks at 1000 px; BAL167-FIN's named unglossed runs:
+glossed, bare, or not cipher). Take/release ROOM lines for openapi.bnf.fr (account 4's lane also uses it: wait for its release). New
+survey.tsv rows only; volumes gap line; Verdict; gaps_check. No transcription.
