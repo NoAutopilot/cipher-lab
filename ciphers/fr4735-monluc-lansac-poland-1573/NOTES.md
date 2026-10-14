@@ -870,3 +870,25 @@ Command: `python3 tools/print_check.py ciphers/fr4735-monluc-lansac-poland-1573 
   Noailles / Catherine de Medicis / Monluc edition identifier was searched by id; that remains open.
 - Requests: be-api.us.archive.org 14, api.openalex.org 14, www.googleapis.com 17 (14 + 3 retry). Outputs: print-check.tsv, print-check-hosts.tsv.
 Verdict for this gap: print check done on IA full text and OpenAlex (no hits); Google Books pending (503); edition-by-identifier step not run.
+
+## MONL-PC2 (14 Oct 2026, account 1, for LANE DEFAULT-A1-1840-14; job GB-PASS)
+Brief: `.claude/briefs/runs/2026-10-14-acct1-default-1840-jobs.md` "### GB-PASS" (c): re-run the 13 MONL-PC phrases left unsearched in Google Books (503). **Not run.** The job's rule stops googleapis for all three folders if it 503s again; in the same job's eckert-1864 pass (GB-E13, 18:53-18:55 UTC) the host answered 503 on 5 of 10 requests, including after the retry. No request was sent for this folder. Planned command (writes a separate file so MONL-PC's print-check.tsv is kept): `python3 tools/print_check.py ciphers/fr4735-monluc-lansac-poland-1573 --only gbooks --out ciphers/fr4735-monluc-lansac-poland-1573/print-check-gbooks.tsv --max-requests 20`. Nothing here is a novelty verdict (rule 10). **Requests:** none.
+
+## Remaining gaps (MONL-PC2, 14 Oct 2026)
+Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines 1-5 (177 tokens) C 92 / M 85 against the ff.140r-141r clear text (align confirm 0.805 vs shuffled-clear max 0.456); the 10 recurring contradictions image-checked: two-form merges in pass A's K12 and K14 labels, no key value changed.
+- the K12/K14/K34 two-form split - blocker: not-attempted; my eye check was non-blind; next: a value-blind sort of every K12, K14 and K34 token in c268 L01-L05 and c172 into forms against the table cells K04/K12, K14/K17, K34/K53 (one Sonnet call on lookalike_pass windows with those cells cut into the candidate sheet), then relabel and re-run align_c268.py --check, ~$1.5
+- rest of c268 (about 870 signs) and c264 against the ff.140r-141r clear text - blocker: not-attempted; outside this job's brief; next: two blind cipher passes of the next c268 band plus reconciliation, then align_c268.py on the longer stream, ~$3 per 5-10 lines
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py); the c268 alignment supplies known plaintext instead
+- a clean clear text of ff.140r-141r away from the c268 span - blocker: not-attempted; f.140r L07 "[poursuiteurs]" probably reads "serviteurs" (this job); next: an eye reconciliation of f.140r L01-L07 against the line crops, ~$1 per page
+- print check of the clear letter in Google Books (13 of the 14 phrases.txt lines) and the editions by identifier (Noailles vols I-III, Lettres de Catherine de Medicis) - blocker: not-attempted; IA full text and OpenAlex done, no hits on all 14 (MONL-PC); Google Books 13 of 14 unsearched (503, MONL-PC), not re-run on 14 Oct 18:55 UTC because googleapis 503d again in the same job (MONL-PC2); no sources.tsv, so no edition searched by identifier; next: `tools/print_check.py ... --only gbooks --out print-check-gbooks.tsv` when googleapis answers steadily, then a sources.tsv with the Noailles IA ids, ~$0.5
+- ff.211-223, f.87 margin, ff.50/56/60/80, items 17/18/112-120 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONL-PC2, 14 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [x] clear-pages: ff.140r-141r transcribed and shown to be the clear text of c268 L01-L05 (MONL-ALIGN)
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell and checked against known plaintext on c268 L01-L05
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2; the clear letter phrase-searched in IA full text and OpenAlex, no hits (MONL-PC); Google Books for it pending (gap above)
+- [ ] key-rebuild: --try rejects K12=d and K34=y, K14=s undecided; the contradictions are two-form label merges awaiting a blind sort (gap above)
+- [x] image-check: the 10 contradiction positions looked at on the c268 strips and taller re-cuts (MONL-K12, non-blind)
+- [x] retry: googleapis 503 (MONL-PC, one manual retry after 20 s); host stopped for the whole GB-PASS job on a further 503 at 18:55 UTC 14 Oct (MONL-PC2)
+Verdict: keep going: 5 internal gaps; cheapest next: value-blind sort of the K12/K14/K34 tokens into K04/K17/K53 forms and relabel, ~$1.5

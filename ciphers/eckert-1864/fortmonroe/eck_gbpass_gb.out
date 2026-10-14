@@ -1,0 +1,4 @@
+control A (no intitle)	"six vessels" Oriental	HTTP 503
+control B (GB-2 form)	"six vessels" Oriental intitle:Grant	HTTP 503
+# both controls errored -- host stopped
+# googleapis requests 2

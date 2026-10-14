@@ -1,0 +1,5 @@
+# GB-PASS manual run 18:54:33-39 UTC (39 s after the first 503, before the scheduled 62 s retry fired); recorded from the terminal
+control A (no intitle)	"six vessels" Oriental	NO vol.13 HIT (totalItems 351)
+control B (GB-2 form)	"six vessels" Oriental intitle:Grant	NO vol.13 HIT (totalItems 0)
+# no control returned a vol. 13 hit -- no target query run
+# googleapis requests 2
