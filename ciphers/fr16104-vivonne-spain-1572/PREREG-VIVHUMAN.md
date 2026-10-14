@@ -117,3 +117,9 @@ only; rules 1, 3, 4 of Addendum B stand.
    result below. Every other pile is f.201r's as in attempt 1.
    f.102r and f.103r tiles are shown on their own line crops (images/c105_*, c106_* as committed in images/manifest.json, no new request);
    f.201r tiles on the f.201r region as before. The page stays blind (labels only).
+
+### Addendum C, build result (14 Oct 2026, 02:5x UTC by date -u; built and published, no answer exists)
+tx/sorter_human2/filter.tsv (qualifying -> shown, by leaf f102r/f103r/f201r): **3 11 -> 11 (4/7/0)**, **z 9 -> 9 (5/3/1)**, s 57 -> 12
+(7/0/5), L 5 -> 5 (3/1/1), h 5 -> 5 (0/2/3), **k 2 -> 2 (1/1/0), under 3, shown**; **S 0 and l 0: no qualifying tile, so no pile S or l
+on the page** (a pile with no members cannot be shown; Q23's truth set P|s|z and Q12's L|g do not need S or l). Page: 537 tiles, 37 piles
+(36 named + `unsorted`), the 8 question tiles in the tray; https://claude.ai/artifact/M1MRM2J7ZgF1VxCoqiJZgx.

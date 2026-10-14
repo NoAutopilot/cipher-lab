@@ -26,6 +26,38 @@ OUT = os.path.join(FOLD, 'tx', 'sorter_human')
 QPILE = 'unsorted'
 ATTEMPT2 = ['Q04', 'Q14', 'Q15', 'Q19', 'Q12', 'Q23', 'Q24', 'Q25']
 FILTERED = {'3', 'z', 'L', 'l', 's', 'S', 'h', 'k'}
+CAP = 12
+LEAF2 = {'f102r': ('vivonne1573-f102r-dev2.truth.tsv', 'map_r2_f102r.tsv'),
+         'f103r': ('vivonne1573-f103r-confirm2.truth.tsv', 'map_r2_f103r.tsv')}
+
+
+def extra_leaves(cand, ms, qsids, crops, out):
+    """Addendum C: truth-consistent look-alike tiles of f.102r and f.103r, each shown on its own line crop (page = crop stem)."""
+    man = {e['crop']: e for e in json.load(open(os.path.join(FOLD, 'images', 'manifest.json')))['iiif_lines']}
+    for leaf, (tf, mf) in LEAF2.items():
+        tr = {(r['line'], r['pos']): r for r in sets.rd(os.path.join(sets.BT, tf))}
+        per = collections.defaultdict(list)
+        for m in sets.rd(os.path.join(FOLD, 'tx', 'vivcls', 'train', mf)):
+            if m['op'] == '1:1':
+                per[(m['line'], m['pos'])].append(m['sid'])
+        for (ln, pos), sids in per.items():
+            r = tr.get((ln, pos))
+            if len(sids) != 1 or sids[0] in qsids or not r or r['ref_sign'] not in FILTERED:
+                continue
+            if r['status'] != 'scored' or r['flag'] or r['ref_sign'] not in set(filter(None, r['truth'].split('|'))):
+                continue
+            m = ms[sids[0]]
+            cname = next(c for c in man if c.endswith('_' + m['crop_page'] + '.jpg'))
+            e = man[cname]
+            if cname not in crops:
+                crops[cname] = Image.open(os.path.join(FOLD, 'images', cname))
+            X, w = int(m['x']), int(m['w'])
+            cy, h = ink_rows(crops[cname], X - e['box'][0], X - e['box'][0] + w)
+            pg = cname[:-4]
+            dst = os.path.join(out, 'pages', cname)
+            if not os.path.exists(dst):
+                crops[cname].save(dst, quality=92)
+            cand[r['ref_sign']].append((leaf, ln, int(float(pos)), dict(sid=sids[0], page=pg, x=X - e['box'][0], y=cy, w=w, h=h)))
 QUESTION = 'Which pile holds signs that look like this one? If none does, "None of these: new sign".'
 
 
@@ -69,7 +101,7 @@ def main(attempt=1):
     allq = sets.rd(os.path.join(HERE, 'questions.tsv'))
     q = {r['sid']: r for r in allq if not r['excluded'] and (attempt == 1 or r['qid'] in ATTEMPT2)}
     trow = {(r['line'], r['pos']): r for r in truth}
-    filt = collections.defaultdict(collections.Counter)   # label -> before/after/out reason
+    cand = collections.defaultdict(list)   # Addendum C: look-alike label -> [(leaf, line, pos, sign row)]
     drop = {r['sid'] for r in allq if r['excluded']}
     os.makedirs(os.path.join(out, 'pages'), exist_ok=True)
     Image.open(SRC).crop((RX, RY, RX + RW, RY + RH)).save(os.path.join(out, 'pages', 'f201r.jpg'), quality=85)
@@ -94,20 +126,32 @@ def main(attempt=1):
         f = e['slope_fit']
         xr = X - RX
         yr = f['a'] + f['b'] * xr - f['half_height'] + cy
-        signs.append(dict(sid=sid, page='f201r', x=xr, y=int(round(yr)), w=w, h=h))
+        signs_row = dict(sid=sid, page='f201r', x=xr, y=int(round(yr)), w=w, h=h)
+        signs.append(signs_row)
         if sid in q:
             labels.append(dict(sid=sid, sign=QPILE, family='to place'))
         else:
             lab = ref[(ln, tp)]
             if attempt == 2 and lab in FILTERED:
+                signs.pop()
                 r = trow[(ln, tp)]
-                filt[lab]['before'] += 1
-                if r['status'] != 'scored' or r['flag']:
-                    filt[lab]['out: row flagged or not scored'] += 1; signs.pop(); continue
-                if lab not in set(filter(None, r['truth'].split('|'))):
-                    filt[lab]['out: label not in truth set'] += 1; signs.pop(); continue
-                filt[lab]['after'] += 1
+                if r['status'] == 'scored' and not r['flag'] and lab in set(filter(None, r['truth'].split('|'))):
+                    cand[lab].append(('f201r', ln, int(float(tp)), signs_row))
+                continue
             labels.append(dict(sid=sid, sign=lab, family='f201r'))
+    if attempt == 2:
+        before = collections.Counter(l['sign'] for l in sets.rd(os.path.join(OUT, 'labels.tsv')) if l['family'] == 'f201r')
+        extra_leaves(cand, ms, set(q), crops, out)
+        rng = random.Random(sets.SEED)
+        filt = []
+        for lab in sorted(FILTERED):
+            c = sorted(cand[lab], key=lambda z: (z[0], z[1], z[2]))
+            pick = c if len(c) <= CAP else rng.sample(c, CAP)
+            for z in pick:
+                signs.append(z[3]); labels.append(dict(sid=z[3]['sid'], sign=lab, family='f201r'))
+            by = collections.Counter(z[0] for z in pick)
+            filt.append(dict(label=lab, attempt1_f201r=before.get(lab, 0), qualifying=len(c), shown=len(pick),
+                             f102r=by['f102r'], f103r=by['f103r'], f201r=by['f201r']))
     missing = set(q) - {s['sid'] for s in signs}
     assert not missing, missing
     def w(name, cols, rows):
@@ -126,12 +170,18 @@ def main(attempt=1):
     with open(os.path.join(out, 'cipher_lines.tsv'), 'w') as fh:
         fh.write('# f.201r cipher region (lines L01-L25 of the VIV-67 cut); the whole page image is cipher\nf201r\n')
     if attempt == 2:
+        cols = ['label', 'attempt1_f201r', 'qualifying', 'shown', 'f102r', 'f103r', 'f201r']
         with open(os.path.join(out, 'filter.tsv'), 'w') as fh:
-            fh.write('# PREREG-VIVHUMAN.md Addendum B pile filter (build_inputs.py --attempt 2)\nlabel\tbefore\tafter\tout_flagged_or_unscored\tout_not_in_truth\n')
-            for lab in sorted(FILTERED):
-                c = filt[lab]
-                fh.write(f"{lab}\t{c['before']}\t{c['after']}\t{c['out: row flagged or not scored']}\t{c['out: label not in truth set']}\n")
-        print({k: dict(v) for k, v in sorted(filt.items())})
+            fh.write('# PREREG-VIVHUMAN.md Addendum C pile members (build_inputs.py --attempt 2; cap %d, seed %d)\n' % (CAP, sets.SEED))
+            fh.write('\t'.join(cols) + '\n')
+            for r in filt:
+                fh.write('\t'.join(str(r[c]) for c in cols) + '\n')
+        for r in filt:
+            print(r)
+        with open(os.path.join(out, 'cipher_lines.tsv'), 'w') as fh:
+            fh.write('# f.201r cipher region + the f.102r/f.103r line crops holding pile tiles (Addendum C); every page image is cipher\n')
+            for pg in sorted({s['page'] for s in signs}):
+                fh.write(pg + '\n')
     print('tiles', len(signs), 'question tiles', len(q), 'piles', len({l['sign'] for l in labels}), 'skipped', dict(skipped))
 
 
