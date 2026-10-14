@@ -82,3 +82,46 @@ LEDGER row ~4118, 1.73 on Sonnet) and OBRED-6017E; METS ids in `nl_brederode_lia
 contact sheet of ~12 thumbnails per vision call (~1.0 each on Opus), positive controls mixed in as OBRED-S3 did; stop before a unit that
 would cross 80% of cap or box and hand the remainder on with the exact scan range. Any hit: one native look, then stop and report (no
 decode in this job). Commit the screen TSV and controls. Update gaps, `gaps_check.py`.
+
+## Wave 2 (22:4x UTC 14 Oct)
+Wave 1 closed (ledgered): CL1161-KA 2.59 D-, TUSC-KEYS 3.80 D-, OLD-O5 0.88 Q (already done as AUDIT 6 -- brief's error), GAPS-FIX 1.56 Q,
+OBRED-6018 4.43 N. Common rules as above. Every worker in this wave: grep the folder's AUDIT.md section titles as well as NOTES.md for
+your job's step before the first priced unit (OLD-O5 lesson).
+
+### TUSC-XM (Opus, cap 2.5, box 50 min, disk only): fr3982-nevers-toscana-1592, crossmatch screen of the two Tuscan tables against f.25
+Verdict (line ~221, TUSC-KEYS 14 Oct): pre-registered `tools/key_crossmatch.py` screen of `ciphers/_keys/tuscany-guicciardini/
+key_tomokiyo_guicciardini{1,2}.tsv` against the committed f.25 ciphertext.tsv (NOT ciphertext_v2.tsv, unmeasured per BNF-Q7-ERR), with
+its shuffled control. Intake gate (22:44 UTC, pasted): `fr3982-nevers-toscana-1592: open (line 1) -- edition/page or full-text-search
+citation found within 6 lines`, exit 0. Units: (1) PREREG-TUSC-XM.md pushed before any score (statistic, shuffled-key null >= 1000, gate,
+and a power check: a synthetic f.25-length text enciphered with each table must pass the gate -- if it cannot, the screen is a non-test,
+logged so); (2) score both tables; (3) log rows in HYPOTHESES.md with both numbers; any result is conditional on the transcription's
+known looped-8 sign problem (BNF-Q7-ERR) and says so. No key edit, no reading. Credit Tomokiyo. Update gaps, `gaps_check.py`.
+
+### ERBA-SIB (Opus, cap 2.5, box 55 min, web search + news sites <= 15 requests): erba-2006, the two sibling phrases, then test 4 at 4x budget
+NOTES.md "## Next step (R12D-ERBA4, 6 Oct 2026)" (line ~232): check "Fimine Romixsmecu meficumixs" and "fine xs Romi cufiRome Ro" (Tgcom24 /
+il Giornale, 18 June 2013) against a press image (image over transcription, rule 2: if no image is reachable, say so and treat N as
+conditional on the press transcription), add them to the ciphertext as a separately labelled file (ciphertext.txt is never silently
+repaired), then rerun test 4 (R12D-ERBA4's word-level constrained decoder) with 4x the anneal budget: the matched control at the new N
+first, every control seed must clear 0.60 before the target runs (`tools/family_run.py` if the family is there; else the R12D-ERBA4
+script with a new option, not a copy). Intake gate (22:44 UTC, pasted): `erba-2006: open (line 3) -- edition/page or full-text-search
+citation found within 6 lines`, exit 0. This is the second attempt at this instrument: if the control misses again, log per rule 3. Update
+gaps, `gaps_check.py`.
+
+### KAL-BIG (Opus, cap 3, box 70 min, CPU only): kaliningrad-2015, columnar_homophonic at a larger budget (R15-KAL14's named second attempt)
+NOTES.md "## R15-KAL14" (lines ~683-707): restarts 6-8 at 150000 iters on 5 seeds, control first (same family, same convention B, N 1066,
+K 28, shift-tolerant score_recovery), gate 0.6, target and its shuffle only if the control mean meets the gate. Intake gate (22:44 UTC,
+pasted): `kaliningrad-2015: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0. Pre-register in
+HYPOTHESES.md before scoring. Size the run first: time one seed, project the total, and cut seeds (never iterations) to fit 80% of the box;
+serialize (no concurrent CPU job). If the control misses the gate this is the second attempt; name the two-stage instrument (width/order
+from sign adjacency first) as the different instrument for any third, and do not run it here. Update gaps, `gaps_check.py`.
+
+### NS-PARKED (Opus, cap 2.5, box 50 min, disk only): tools/next_steps.py misclassifies parked rows as runnable; one stale pointer
+(a) GAPS-FIX flagged (ROOM 22:27): `tools/next_steps.py` classifies a row whose Verdict is "parked" with blockers such as illegible,
+too-short or no-key-material as `runnable` (this wave's backlog read showed bullet-tuscany-1944, craven-rupert-1648, scorpion-1991,
+siena-concistoro-2308 as runnable with "Verdict: parked"). Fix the classifier so a parked Verdict with outside blockers maps to the
+blocker class `tools/gaps_check.py` already recognises (reuse its vocabulary, do not invent one); offline test in tools/tests/ covering
+must-catch (those four shapes) and must-not-block (a "keep going" row with a runnable cheapest next; a blocked row with a `parallel`
+action) per CLAUDE.md 8a; docstring states the scope. Run the full `next_steps.py` before/after and paste the count of rows that changed
+class. Do not commit NEXT-STEPS.tsv unless the tool's docstring says to. (b) na-oldenbarnevelt-2442-1605 NOTES.md lines ~1699 and ~1745
+still name "(o5) verifier re-grade" as next; AUDIT 6 (V-OLD-O5, 10 Oct) ran it. Add one dated line under each pointing to AUDIT 6 and
+naming the real next step (ASKS 161 sign sort, section 26); confirm Remaining gaps / Escalation / Verdict agree; `gaps_check.py`.
