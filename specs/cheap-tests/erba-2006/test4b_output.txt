@@ -1,0 +1,23 @@
+TEST 4b (ERBA-SIB): siblings=True budget=4x (RESTARTS 8 x ITERS 16000) jobs=4
+target: 21 words, 120 letters, lengths [2, 7, 6, 10, 1, 12, 11, 11, 8, 9, 4, 3, 1, 6, 3, 2, 4, 5, 6, 2, 7]; dictionary top 40000 of 33502 types
+PRIMARY CONTROL (gate: every seed >= 0.60): length-profile-matched held-out tokens
+  seed 0: solver acc 0.958  oracle 0.958  solver score 108.0 vs true 106.4  solver>=true
+    plain : in piccola italia conferenza e formalizzate transizione occidentale africano scrittore dopo eco e queste gli di poco sfide figura se farmaci
+    decode: in piccola italia conferenza e formalizzata transizione occidentale africano scrittore dopo eco e questa gli di poco sfida figura ha farmaci
+  seed 1: solver acc 0.875  oracle 0.875  solver score 101.0 vs true 101.0  solver>=true
+    plain : in svedese vaheed abitazioni e stupefacenti compromesso riscontrata concreto venatorio cioe che e mentre che di alla degli gruppo di fornito
+    decode: in svedese ? abitazioni e stupefacenti compromesso riscontrata concreto ? cioe che e mentre che di alla degli gruppo di fornito
+  seed 2: solver acc 0.925  oracle 0.925  solver score 98.1 vs true 97.6  solver>=true
+    plain : da tranvia flavia terrorismo e interessanti veterinaria considerato hollande tesoriere aver per e sabato con di alla serve quella di padrone
+    decode: da ? flavin terrorismo e interessanti veterinaria considerato hollande tesoriere aver per e sabato con di alla serve quella di padrona
+  seed 3: solver acc 0.817  oracle 0.817  solver score 97.3 vs true 97.2  solver>=true
+    plain : vi tentato stella repubblica i accertamento organizzato sostitutivo putativa eventuali tale che l andava piu da meno hanno italia di carboni
+    decode: il tentato stella repubblica l accertamento organizzato ? ? eventuali tale che l andava piu da meno hanno italia di carboni
+  seed 4: solver acc 0.917  oracle 0.917  solver score 119.1 vs true 118.4  solver>=true
+    plain : in durante ancora calciatori l classificato qualificano produttrice potevano personale sono del e parete piu il babi varie grazie il diffuso
+    decode: in durante ancora calciatori l classificato qualificano produttrice potevano personale sono del e regata piu il anni serie grazie il diffuso
+  mean solver acc 0.898, min 0.817 (gate: all >= 0.6); mean oracle 0.898; solver>=true 5/5
+TARGET score 38.9, matched words 0.67; nulls max 41.4 mean 31.7
+  key: cu=ghlo mi=a fi=cdpqst un=iz ro=nrv ne=u pi=b me=efm
+  decode: la sintomi ? ? e ? ? ? ? ? urto tra l pagine asl il rete paura flecha su valdner
+VERDICT: target does not move -- negative under this design at the control's power

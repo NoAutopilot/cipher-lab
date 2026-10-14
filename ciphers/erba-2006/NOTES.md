@@ -231,6 +231,54 @@ against xs-as-space with one-letter tokens (test 2 already noted they are long f
 
 ## Next step (R12D-ERBA4, 6 Oct 2026)
 
-next: more ciphertext before more instruments -- check the two sibling phrases printed by Tgcom24 / il Giornale (18 June 2013,
+[done 14 Oct 2026 by ERBA-SIB, see Cheap test 4b] next: more ciphertext before more instruments -- check the two sibling phrases printed by Tgcom24 / il Giornale (18 June 2013,
 "Fimine Romixsmecu meficumixs", "fine xs Romi cufiRome Ro") against a press image and add them to N; with them, rerun test 4
 with 4x the anneal budget (control seeds must then all clear 0.60 before the target), ~$2. Who acts: agent.
+
+## Cheap test 4b (14 Oct 2026, ERBA-SIB, LANE DEFAULT-A2-2209-14, account 2): sibling phrases added, test 4 at 4x budget
+
+Check 1: no later NOTES.md or AUDIT.md section had run this (no AUDIT.md exists). Prior work: `tools/prior_work.py erba-2006 --item-spec
+'item_id=diary-siblings-2013;date=2013-06-18;sender=Olindo Romano;recipient=Rosa Bazzi;language=it' --step-type decode --fetch` exit 4
+(owed: 1-own LEAD = this job's own claim; 2-leaf LOOK; 3-solver and 3-tomokiyo UNCHECKED); all four recorded in `prior-work.tsv`
+(CLEAR x3; the leaf row CONTEXT, image unreachable, see below). 3-editions: no edition exists for a 2013 prison note (check-solved above).
+
+**Press image (rule 2): not reachable.** Tgcom24 article 1101029 answered HTTP 404 on 14 Oct 2026; the il Giornale article
+(18 June 2013, read in full) prints the phrases in its text -- «fimine Romixsmecu meficumi xs» e «fi ne xs Romi cufiRome Ro», on "un
+foglio giallo, con due cuori e tre cerchi gialli" -- but its only image is an unrelated photo; web.archive.org's CDX answered
+connection-reset twice (host stopped). Two web searches for an image found nothing. The il Giornale text agrees token for token with
+Tgcom24's as GF4-BATCH21 read it on 3 Oct (spacing differs only). So the added N is **conditional on the press transcription**. The
+phrases are in `ciphertext_siblings_2013.txt`, a separately labelled file (no `ciphertext.txt` repaired). Tokenised: `Fi mi ne Ro mi
+xs me cu me fi cu mi xs` / `fi ne xs Ro mi cu fi Ro me Ro` (23 tokens; `me` occurs three times, which supports `me` as a token in its
+own right, cf. the me/ne note in Cheap test 1 -- but a press `me` is not an image check of the bible page's me/ne calls). The
+journalist's third string ("cux i A O m", near a yellow heart) is not in the digraph inventory and was not added.
+
+Test (pre-registered `specs/cheap-tests/erba-2006/PREREG-test4b.md`, pushed 17121b8df before any score; script
+`test4_wordconstrained.py --siblings --budget 4 --jobs 4`, an added option on R12D-ERBA4's script, default call unchanged; output
+`test4b_output.txt`, 17 min wall, 4 processes, disk only). N = 21 words / 120 letters; 8 restarts x 16,000 moves (4x test 4).
+
+| run | solver letter accuracy | true-key oracle | other |
+|---|---|---|---|
+| primary control, 5 seeds, held-out 2011-26 tokens at the target's word-length profile (gate: EVERY seed >= 0.60) | **mean 0.898, min 0.817** (all 5 pass) | 0.898 | solver score >= true key 5/5 (search now adequate) |
+| target | -- | -- | score 38.9, 14/21 words (67%) matched; 10 shuffled-token nulls max 41.4, mean 31.7 |
+
+Verdict by the registered rule: control PASS; target **does not move** (does not exceed the null max). The best key's output ("la
+sintomi ? ? e ? ? ? ? ? urto tra l pagine asl il rete paura flecha su valdner") is not a reading and is not graded; every word of 8-12
+tokens again finds no dictionary match. Controls' true-key scores here run about 106-119; the target's 38.9 sits inside the
+shuffled-null band, not near them.
+
+How strong a negative this is: **control-backed** for this one design at this N -- unlike test 4, the control now clears a per-seed
+gate with the solver matching or beating the true key every time, so "search did not find the key" no longer explains the miss.
+Scope, stated narrowly: xs = word space, the 8 case-folded token types as 8 letter classes (polyphonic), Italian it21news vocabulary
+(top 40,000 types of 2005-10 news). Conditional on: the image-checked bible-page transcription (8 me/ne calls open), the press
+transcription of the siblings, case folding (a case-sensitive variant, e.g. `Ro`/`ro`, `NE`/`ne` as distinct classes, was not run),
+and xs being a space. It says nothing about non-letter designs (syllable, word code, bible page/verse references). Nothing was read.
+Status word unchanged (`open`: one design excluded, not every family; rule 5).
+
+Requests: WebSearch 3; www.tgcom24.mediaset.it 1 (404); www.ilgiornale.it 1 (200); web.archive.org 2 (connection reset, stopped).
+
+## Next step (ERBA-SIB, 14 Oct 2026)
+
+next: a different design, not this one again -- the case-sensitive letter-class variant (capitalised tokens `Ro`, `Mi`, `Pi`, `Cu`,
+`NE`/`Ne` as their own classes, K about 13) on the same instrument at the same N with the same per-seed control gate (identifiability
+at K about 13 must be shown by the control first), ~$2. More material would help more: an image of the 2013 yellow sheet or of the
+other bibles (Davidsch 2017: at least three) -- none reachable from the cloud on 14 Oct 2026. Who acts: agent.
