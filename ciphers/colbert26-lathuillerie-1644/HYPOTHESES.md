@@ -63,3 +63,9 @@ interlinear/c20c21_word_wp_pool.py; outputs interlinear/c20c21_word_wp_pool_out.
 | hypothesis | control | target | verdict |
 |---|---|---|---|
 | 20 = i (word-level pairing, c33, held out) | instrument key_f23 pre-DA1-COL C codes: p1 H 8/25 vs Control W mean 2.93, p95 6, P 0.0029; p2 8/26 vs mean 3.10, p95 6, P 0.0068 (both CLEAR) | p1 2/5 vs mean 0.56, p95 2, P 0.096; p2 2/5 vs mean 0.57, p95 2, P 0.092 (alpha 0.00833) | FAIL-LOWPOWER (power at N 5: 0.06/0.05); not a negative |
+
+## COL26-C51, 14 Oct 2026: 20 = i, pooled held-out word grain (c33 + c51 + c63), stage 0
+
+| hypothesis | control | target | verdict |
+|---|---|---|---|
+| 20 = i (word-level pairing, pooled held-out c33 + c51 + c63; c62 excluded, instrument failed) | power rule on the pre-DA1-COL C-code pool (c33 + c63, 47/48 occ, hit 0.32 vs Control W 0.12): power at N 10 = 0.163 (c33 p1), 0.120 (c33 p2) | not scored (no c51 pairing made) | TOO-SHORT at pooled N 10 (power < 0.5); ~25 needed, 10-11 exist; not a negative |

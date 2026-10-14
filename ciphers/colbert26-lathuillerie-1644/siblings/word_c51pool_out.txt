@@ -1,0 +1,4 @@
+p1: N_pool 20 = c33 5 + c51 2 + c63 3 = 10; positive-control pool 47 occ, hit rate 0.319 vs ctrl 0.122; power_at_N 0.163
+p2: N_pool 20 = c33 5 + c51 2 + c63 3 = 10; positive-control pool 48 occ, hit rate 0.312 vs ctrl 0.123; power_at_N 0.120
+sensitivity (not pooled): c62 20-spans 1 (instrument failed in DA1-COL3)
+STAGE 0 VERDICT: too-short at pooled N=10 (power 0.120 < 0.5): stop, no vision
