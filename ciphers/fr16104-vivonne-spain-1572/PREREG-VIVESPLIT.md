@@ -73,3 +73,12 @@ later sorter ask; no page is built.
 Stop at cap 10, 80% of the 120-minute box (03:22 UTC), or the brief met. One look per label at the held-out numbers; no
 re-tuning of features, model, classes or tiers after the look. Any deviation is an addendum pushed before the number it
 affects, and reported as post-hoc.
+
+## Addendum A (14 Oct 2026, 01:5x UTC by date -u; pushed before any y or control accuracy was computed or printed)
+After tiling, the registered class rule (>= 8 pooled tiled items, >= 2 leaves) admits SIX y classes, not the five listed above:
+l 46, r 19, h 13, e 9, n 8, u 8 (s 7, a 7, t 7 and smaller dropped). The rule governs; the five-class list was an expectation.
+The positive control therefore needs a sixth keyed label: **p** (the next most frequent keyed label present on all three leaves at
+scored truth-confirmed positions: 48 / 53 / 58). Control labels by rank: m, o, d, tz, g, p. Label e after tiling: m 5, s 2, i 2,
+others 1: no class reaches the rule; untestable as registered. Also a speed-only change: HOG and shape features are computed once
+per item set and cached across folds and permutations (the per-fold standardisation and PCA are unchanged). The first gate run
+was stopped twice (once for speed, once on the missing sixth control label) before any accuracy was printed.
