@@ -56,6 +56,15 @@ Steps:
   --deskew [WIN] (SLANT-CROP, 5 Oct 2026): the --follow-slope fit, but the region is ROTATED about the line's centre so the
      line is level before the cut (marks keep their shape; a shear distorts it). Armstrong 1808 owner count page: 5 of 27
      axis-aligned boxes clipped an end mark and several took in numerals from the next line.
+  --deskew-region [DEG] (VIV-F191, 14 Oct 2026): rotate the WHOLE region by one angle before line detection, then cut
+     flat bands as without any slope option. With no DEG the angle is fitted read-free: the ink mask (pixels darker than
+     --ink, within --columns) is rotated over -3..+3 deg (0.25 deg steps, then 0.05 around the best) and the angle whose
+     row profile is sharpest (sum of squared row-to-row differences) is kept. For a page whose lines share one tilt but
+     whose per-line --follow-slope/--centres fits snap onto neighbouring lines (fr.16105 f.194r, N6-VIV63C, where this
+     was done by hand with PIL at -1.4 deg). Rotation is about the region centre, PIL BICUBIC, paper filled white, no
+     expand; manifest boxes are in the ROTATED region's coordinates plus the region origin, and every entry carries
+     deskew_region = {deg, centre (native px), how}: to map a box back, rotate it by -deg about that centre.
+     Exclusive with --deskew, --follow-slope and --check-boxes (atlas boxes are in unrotated coordinates).
   --mask-neighbours [--mask-margin PX] [--mask-keep 0.5]: cut each crop PX taller above and below (default 0.4 x pitch)
      and white out (paper colour) each 8-connected ink component (pixels darker than --ink) with less than KEEP of its
      pixels inside the line band. Neighbour-line ink and bleed go; a mark of this line that reaches past the band edge is
@@ -570,6 +579,27 @@ def local_fit(pts, sx0, sx1, win, a, b):
     return float(aa), float(bb)
 
 
+def _profile_sharpness(mask_img, deg):
+    r = np.asarray(mask_img.rotate(deg, resample=Image.BILINEAR, fillcolor=0), dtype=np.float64)
+    p = r.sum(axis=1)
+    return float(np.sum(np.diff(p) ** 2))
+
+
+def region_skew(gray, x0, x1, ink=170, max_deg=3.0):
+    """Read-free skew angle (PIL rotate degrees, counter-clockwise positive) that makes the region's text rows
+    sharpest: coarse 0.25-degree sweep over +-max_deg on a downsampled ink mask, then 0.05 around the best."""
+    m = (np.asarray(gray)[:, x0:x1] < ink).astype(np.uint8) * 255
+    img = Image.fromarray(m)
+    k = max(1, int(np.ceil(img.width / 900)))
+    if k > 1:
+        img = img.resize((max(1, img.width // k), max(1, img.height // k)), Image.BOX)
+    coarse = np.arange(-max_deg, max_deg + 1e-9, 0.25)
+    best = max(coarse, key=lambda d: _profile_sharpness(img, d))
+    fine = np.arange(best - 0.25, best + 0.25 + 1e-9, 0.05)
+    best = max(fine, key=lambda d: _profile_sharpness(img, d))
+    return round(float(best), 2)
+
+
 def sheared_strip(img, sx0, sx1, a, b, half):
     """Cut columns sx0..sx1 as a strip whose centre row follows y = a + b*x (region coordinates)."""
     w, h = sx1 - sx0, 2 * half
@@ -1074,6 +1104,9 @@ def main(argv=None):
     ap.add_argument('--deskew', type=int, nargs='?', const=200, metavar='WIN',
                     help='track each line through WIN-px windows (default 200), fit its slope and ROTATE the region so '
                          'the line is level before cutting (SLANT-CROP, 5 Oct 2026); exclusive with --follow-slope')
+    ap.add_argument('--deskew-region', nargs='?', const='auto', metavar='DEG',
+                    help='rotate the whole region by DEG (or a read-free fitted angle when DEG is omitted) before line '
+                         'detection, then cut flat bands (VIV-F191, 14 Oct 2026)')
     ap.add_argument('--mask-neighbours', action='store_true',
                     help='cut each crop --mask-margin px taller above and below and white out every ink component that '
                          'lies mostly (share inside < --mask-keep) outside the line band: neighbour-line ink goes, '
@@ -1136,6 +1169,8 @@ def main(argv=None):
         return run_box_overlay(a)
     if a.deskew and a.follow_slope:
         ap.error('--deskew and --follow-slope are alternatives (rotate vs shear); give one')
+    if a.deskew_region is not None and (a.deskew or a.follow_slope or a.check_boxes):
+        ap.error('--deskew-region rotates the whole region and cuts flat: not with --deskew, --follow-slope or --check-boxes')
     if a.max_width >= 2500:
         ap.error('--max-width must stay under 2500 px')
     os.makedirs(a.out, exist_ok=True)
@@ -1156,6 +1191,16 @@ def main(argv=None):
     prefix = a.prefix or (f'f{a.canvas}' if a.canvas else os.path.splitext(os.path.basename(src))[0])
     gray = np.asarray(im)
     x0, x1 = (map(int, a.columns.split(':')) if a.columns else (0, im.width))
+    rot = None
+    if a.deskew_region is not None:
+        if a.deskew_region == 'auto':
+            deg, rhow = region_skew(gray, x0, x1, a.ink), 'fitted (row-profile sharpness, read-free)'
+        else:
+            deg, rhow = float(a.deskew_region), 'given'
+        rot = dict(deg=deg, centre=[round(rx + im.width / 2, 1), round(ry + im.height / 2, 1)], how=rhow)
+        im = im.rotate(deg, resample=Image.BICUBIC, fillcolor=255)
+        gray = np.asarray(im)
+        print(f'  deskew-region: rotated {deg:+.2f} deg about the region centre ({rhow})')
     if a.centres:
         centres = sorted(int(v) for v in a.centres.split(','))
         params = dict(pitch_autocorr=0, distance=0, prominence=0.0, centres_given=centres)
@@ -1243,10 +1288,12 @@ def main(argv=None):
         np_ = write_note(a.out, prefix, sent)
         print(f'  overlap note -> {np_}: {sent}')
     if a.dry_run or a.check_only:
-        return dict(centres=centres, bands=bb, segments=segs, params=params, check=check, fits=fits)
+        return dict(centres=centres, bands=bb, segments=segs, params=params, check=check, fits=fits, deskew_region=rot)
     rgb = Image.open(src)
     if a.image and a.region:
         rgb = rgb.crop((rx, ry, rx + rw, ry + rh))
+    if rot:
+        rgb = rgb.convert('RGB').rotate(rot['deg'], resample=Image.BICUBIC, fillcolor=(255, 255, 255))
     entries = []
     date = time.strftime('%d %b %Y', time.gmtime())
     rgbc = rgb.convert('RGB') if slope_win else None
@@ -1291,6 +1338,9 @@ def main(argv=None):
                                        note='crop x = source x - box[0] + 40 (white margin with the marker)')
             if a.shift_segments:
                 extra['shift_segments'] = a.shift_segments
+            if rot:
+                extra['deskew_region'] = rot
+                method += f", --deskew-region {rot['deg']:+.2f} deg (whole region rotated, flat cut)"
             crop.convert('RGB').save(os.path.join(a.out, name), quality=a.quality)
             e = dict(crop=name, source_url=url, source_file=os.path.basename(src), box=box, lines_in_crop=nl, band=bi,
                      segment=si, method=method, params=params, date=date)
@@ -1364,7 +1414,8 @@ def main(argv=None):
         ve = write_views([os.path.join(a.out, e['crop']) for e in entries], views, a.out, a.quality)
         update_views_manifest(a.out, ve)
         print(f'  wrote {len(ve)} views ({",".join(views)}) under {a.out}/views')
-    return dict(centres=centres, bands=bb, segments=segs, params=params, entries=entries, fits=fits, check=check)
+    return dict(centres=centres, bands=bb, segments=segs, params=params, entries=entries, fits=fits, check=check,
+                deskew_region=rot)
 
 
 if __name__ == '__main__':
