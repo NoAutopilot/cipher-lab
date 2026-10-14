@@ -241,17 +241,18 @@ TNA Discovery /records/v1/details, fetched once each: C6822019 (SP 105/60/121), 
 - Hosts: discovery.nationalarchives.gov.uk, 3 term runs of tools/discovery_items.py (paged, >=1.5 s; a count of about 12 requests, tool does not print it), all returned data, no 429/403.
 - Next: an owner-side look at SP 106/10, /40, /42 (needs-physical-access; add to REQUEST.md if a copy order goes ahead). Status unchanged (open).
 
-## Remaining gaps (D2-PRINT4, 8 Oct 2026)
+## Remaining gaps (GAPS-FIX, 14-15 Oct 2026; supersedes D2-PRINT4's 8 Oct sections, whose Verdict named the SP 106 check that SP106-KEY ran on 9 Oct)
 Read so far: unmeasured; no image of SP 105/60 f.135 has been seen (not digitised, IMG-AUDIT)
-- an image of SP 105/60 f.135 (and f.123, the cipher-word sibling) - blocker: needs-physical-access; not digitised (Discovery `digitised` False), copy order in REQUEST.md
-- the item lists of SOAS PP MS 4/02/47 and the unrendered sub-series 01-25 - blocker: waiting-on a reply from SOAS Special Collections (special.collections@soas.ac.uk); the catalogue gives no item level and the 01-25 records do not render (D2-PRINT4)
+- an image of SP 105/60 f.135 (and f.123, the cipher-word sibling) - blocker: needs-physical-access; not digitised (Discovery `digitised` False, IMG-AUDIT), copy order in REQUEST.md, batched under ASKS 134 (TNA page-copy batch)
+- a look at SP 106/10, /40, /42 (the only undated SP 106 sheets that could hold a general table; SP106-KEY, 9 Oct 2026) against the f.123 cipher words - blocker: needs-physical-access; no image of the sheets or of f.123 has been seen, so the comparison cannot run from the catalogue (their Discovery `digitised` flags were not read by SP106-KEY or by this disk-only job); add to the TNA batch (ASKS 134) if a copy order goes ahead
+- the item lists of SOAS PP MS 4/02/47 and the unrendered sub-series 01-25 - blocker: not-attempted; the catalogue gives no item level and the 01-25 records do not render (D2-PRINT4); no enquiry to SOAS Special Collections exists in outreach/, ASKS or SEND-QUEUE (grepped 14 Oct 2026), so the earlier "waiting-on a reply" had nothing sent behind it; next: draft an item-level enquiry to SOAS Special Collections in outreach/ (gate-7 check before any send), ~$0.5
 
-## Escalation (D2-PRINT4, 8 Oct 2026)
+## Escalation (GAPS-FIX, 14-15 Oct 2026)
 - [x] siblings: SOAS PP MS 4/02 titles walked (D2-PRINT4) and the SP 105/60 neighbours listed (Premise check (c)): f.123 cipher words with readings, f.138, f.151, f.168
-- [ ] clear-pages: f.123's "[In cipher]" words with the cataloguer's readings are a crib source once an image exists
-- [x] known-keys: SP 106 key templates re-listed 9 Oct 2026 (SP106-KEY): 67 pieces, none 1685-1702, none names Stepney or Paget; /10, /40, /42 undated and unseen
+- [ ] clear-pages: f.123's "[In cipher]" words with the cataloguer's readings are a crib source once an image exists (copy order, ASKS 134)
+- [x] known-keys: SP 106 key templates re-listed 9 Oct 2026 (SP106-KEY): 67 pieces, none 1685-1702, none names Stepney or Paget; /10, /40, /42 undated and unseen (gap above)
 - [x] print: CSPD W&M vol. 4, Lexington Papers 1851, Google Books sweep (Verdict); no print of the f.135 PS
-- [ ] key-rebuild: needs the image (REQUEST.md)
-- [ ] image-check: copy order, REQUEST.md (needs the person)
+- [ ] key-rebuild: needs the image (REQUEST.md, ASKS 134)
+- [ ] image-check: copy order, REQUEST.md and ASKS 134 (needs the person)
 - [n/a] retry: no failed attempt on this item to retry yet
-Verdict: keep going: 0 internal gaps; cheapest next: check SP 106 key templates for Stepney's 1693-94 cipher against the f.123 cipher words, ~$0.5
+Verdict: keep going: 1 internal gaps; cheapest next: draft an item-level enquiry to SOAS Special Collections for PP MS 4/02/47 and sub-series 01-25 in outreach/ (gate-7 check before send), ~$0.5

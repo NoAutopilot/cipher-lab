@@ -94,22 +94,21 @@ A FAIL at N=39 on a names-only string; the judge's letter-shuffle null is not th
 resources.huygens.knaw.nl (whole KH2-D job): about 40 (WVO searches and detail pages, 6 PDFs, 6 retroboeken
 searches), >= 2 s apart, no 403/429.
 
-## Remaining gaps (W11008-KP, 8 Oct 2026)
-Read so far: 39 of 54 tokens at H under the table, confirmed on sibling 5194 (PASS, see "## 5194 known-plaintext check"); runs 2, 4 and 5 read as three names.
+## Remaining gaps (GAPS-FIX, 14-15 Oct 2026; supersedes W11008-KP's 8 Oct sections, whose one internal gap -- the R2 Groen span in `w5194_gate.py` -- W11008-R2 closed on 8 Oct 2026, see "### W11008-R2" below; `python3 w5194_gate.py --check` -> current, exit 0, 14 Oct 2026)
+Read so far: 39 of 54 tokens at H under the table, confirmed on sibling 5194 (PASS on both runs against Groen's printed words, R2 LCS 20 vs shuffle p95 10, W11008-R2); runs 2, 4 and 5 read as three names.
 - run 3 positions 1-2 (two codes under a stain; pos 3-4 now read 36, 38 at H by the native look of 8 Oct 2026) - blocker: illegible; paper damage at native size, images/p1_L07_s1.jpg and the W11008-KP native crop
 - run 1 position 4 ("1?0", middle digit smudged, a three-digit group outside the table either way) - blocker: illegible; native look 8 Oct 2026
 - run 1 positions 1-3 and run 3 read only "c d" / "c m e" (no word) - blocker: too-short; four and six codes with no clear context that narrows them
-- `w5194_gate.py` R2 span is not Groen's printed text (AUDIT 3, V-11008KP) - blocker: not-attempted; the verifier does not edit the solver's gate; next: set R2's span to "resolu en campagne je me trouve" and regenerate w5194_gate.tsv, ~$0.5
 
-## Escalation (W11008-KP, 8 Oct 2026)
-- [x] siblings: 5194 used as a known-plaintext sibling (PASS); 6222/6223 are clear in Groen with no cipher recorded in WVO
+## Escalation (GAPS-FIX, 14-15 Oct 2026)
+- [x] siblings: 5194 used as a known-plaintext sibling (PASS, span corrected to Groen's print by W11008-R2); 6222/6223 are clear in Groen with no cipher recorded in WVO
 - [n/a] clear-pages: the 11008 leaf is clear text except the five runs
 - [x] known-keys: the 1572 table, confirmed on 5194 by the pre-registered gate
 - [x] print: Groen III and IV searched by KHF-2; 11008 is not printed
 - [n/a] key-rebuild: the table is a period printed table, so nothing needs rebuilding
 - [x] image-check: native look at runs 1 and 3, 8 Oct 2026
 - [n/a] retry: no failed step to retry here
-Verdict: keep going: 1 internal gaps; cheapest next: correct the R2 Groen span in w5194_gate.py, ~$0.5 (AUDIT.md carries the 5194 confirmation since AUDIT 3, 8 Oct 2026)
+Verdict: parked: every gap has an outside blocker
 
 Optional, wider than 11008 (one-line suggestion, not a gap): the rest of 5194 (3 pages, about 1,500 numerals) against
 Groen as a full known-plaintext alignment, for null-usage statistics and to check the interlinear letters; ~$6.
@@ -202,7 +201,7 @@ same correspondence (the named next step in Remaining gaps).
 
 ## While waiting
 
-Not waiting on anyone: the next step (5194 known-plaintext check, ~$2.5) depends on nobody.
+- Action that depends on nobody (GAPS-FIX, 14 Oct 2026; the 5194 known-plaintext check named here before ran on 8 Oct 2026, W11008-KP and W11008-R2): the optional full 5194 alignment against Groen (3 pages, about 1,500 numerals) for null-usage statistics, ~$6 (estimate); wider than 11008, not a gap.
 
 ## Grading and language (KHF-2, 7 Oct 2026)
 
