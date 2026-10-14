@@ -37,7 +37,7 @@ SO-BIR3252-117-47	ciphers/birago-fr3252-1571-72	ciphers/birago-fr3252-1571-72/se
 SO-VIV54	ciphers/fr16104-vivonne-spain-1572	ciphers/fr16104-vivonne-spain-1572/second-opinions/PROMPT-chatgpt-viv54.md	2026-10-04	queued		
 SO-VIV53	ciphers/fr16104-vivonne-spain-1572	ciphers/fr16104-vivonne-spain-1572/second-opinions/PROMPT-chatgpt-viv53.md	2026-10-04	queued		
 SO-VIV63	ciphers/fr16104-vivonne-spain-1572	ciphers/fr16104-vivonne-spain-1572/second-opinions/PROMPT-chatgpt-viv63.md	2026-10-04	queued		
-SO-C1161	ciphers/clair1161-avis-flandre-1688	ciphers/clair1161-avis-flandre-1688/second-opinions/PROMPT-chatgpt.md	2026-10-05	queued		
+SO-C1161	ciphers/clair1161-avis-flandre-1688	ciphers/clair1161-avis-flandre-1688/second-opinions/PROMPT-chatgpt.md	2026-10-05	withdrawn (N0, VER-C1161 14 Oct 2026: Lasry, BnF cipher research 10 Oct 2026, cyphersolver targets/clair1161, deciphers f163r in full, 2/6 faces in full, 4 in part)		
 SO-R2678	ciphers/decode-2678-bnf-colbert127-gravel-1665	ciphers/decode-2678-bnf-colbert127-gravel-1665/second-opinions/PROMPT-chatgpt.md	2026-10-06	queued
 SO-ECKERT-N2M	ciphers/eckert-1864	ciphers/eckert-1864/second-opinions/PROMPT-chatgpt-n2m.md	2026-10-07	queued
 SO-ECKERT-N2R	ciphers/eckert-1864	ciphers/eckert-1864/second-opinions/PROMPT-chatgpt-n2r.md	2026-10-07	queued

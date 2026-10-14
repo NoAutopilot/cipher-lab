@@ -345,3 +345,85 @@ exit 0
   French Flanders key on file is a cheap known-keys shape test (~$1).
 
 Prior-work notice (14 Oct 2026, LQ-C1161): George Lasry's "BnF cipher research" (10 Oct 2026; published by D. Bourdeau, github.com/dbourdeau/cyphersolver `targets/clair1161`, commit dde5b0ea) transcribes and partly deciphers the same ff.162r-164v (= c185R-c188L; f163r = c186R read in full, matching the margin gloss). N-class not changed here (verifier's job); see NOTES.md section "Lasry BnF research check (14 Oct 2026, LQ-C1161)".
+
+## AUDIT 3 (VER-C1161, 14 Oct 2026): re-class after the Lasry prior-work notice
+
+Verifier: worker VER-C1161 (account 2, for LANE DEFAULT-A2-0911-14), brief `.claude/briefs/runs/2026-10-14-ytbiz-default-0911-jobs.md`;
+a session separate from every solver of this folder (incl. LQ-C1161, C1161-LKEY, C1161-V2) and from Audits 1-2. Clock by `date -u`:
+claim 09:23 UTC 14 Oct. No decoding: key.tsv, ciphertext.tsv, reading.txt unchanged. `decode_key.py ... --check`: `tokens 3408: C 353,
+M 1114, S 1908, U 33`, "reading up to date" (same as Audit 2). Earlier sections are not rewritten; where they no longer hold, this
+section says so.
+
+**Claim under audit.** Audit 2's class "N3, confirmed ... no prior plaintext or decipherment located" and its safe sentence, for the six
+cipher faces c185R, c186L, c186R block, c187L, c187R, c188L (= ff.162r, 162v, 163r, 163v, 164r, 164v; mapping LQ-C1161), against
+George Lasry's "BnF cipher research" (report dated 10 Oct 2026, 134 pp., sent to D. Bourdeau 13 Oct, published in summary at
+github.com/dbourdeau/cyphersolver `targets/clair1161`, dde5b0ea; hub page `docs/lasry-bnf.html`).
+
+### A3.1 Searches this session
+
+| family | source | searched by | result |
+|---|---|---|---|
+| (f) solver repo | dbourdeau/cyphersolver, fresh shallow sparse clone, HEAD b0af20a (13 Oct 2026), `targets/clair1161` + `docs/` | diff against `sources/cyphersolver/2026-10-14-lasry/clair1161/NOTES.md`; read `docs/lasry-bnf.html` | snapshot identical to HEAD. Hub row: "BnF Clairambault 1161 / Unidentified -> Unidentified / Unestablished;1554/1555 remains a hypothesis / adjacent plaintext / partial / partly confirmed". The 134-page report itself is **not** published: the hub gives "an excerpt of the decipherment" per item and the folders carry "his metadata, his excerpts and translations". Which second face he read in full is not stated anywhere public |
+| (f) prior_work.py | `tools/prior_work.py clair1161-avis-flandre-1688 --item-spec 'shelfmark=BnF Clairambault 1161;folio=162r-164v' --step-type upgrade-audit --offline` | exit 4 | LEADs = own claims (LQ-C1161/LKEY/V2 lanes, this claim), none covering an audit. **Tool miss:** check 3-solver printed `CLEAR ... no cached solver file names this unit: sources/cyphersolver` although `sources/cyphersolver/2026-10-14-lasry/clair1161/` names "BnF Clairambault 1161" -- a false CLEAR (flagged in ROOM; not fixed here) |
+| (c) printed edition the new dating points to | Vertot, *Ambassades de Messieurs de Noailles en Angleterre* (1763), vols 1-5, IA ambassadesdemess01vert ... 05vert, `_djvu.txt` (2.96 MB) | grep after folding accents/u-v/i-j/y-i, long-s read as [sfl]; phrases from his f163r paragraph | **not found by this method**: "laissast passer", "regaigner sa noblesse", "sa noblesse et peuple", "son filz et elle", "commander en plus", "en plus grand repos", "escript et mande", "quant au faict de la religion", "ce seigneur a par" 0 in all five. Controls read: "religion" 176, "Hampton" 53, "dissimulation" 9 (vol. 4: "i'ai passee en silence & dissimulation", Noailles's own phrase in a 1555 letter, not this passage); "advis de Flandres" 3, all news items in Noailles's dispatches. Why searched: his 1554/55 hypothesis (Mary Tudor, Hampton Court) is Antoine de Noailles's London embassy (1553-56), whose deciphered dispatches Vertot printed. OCR is poor; a miss is a search result, not an absence |
+| (e) Google Books API | `"laissast passer en silence"`, `"regaigner sa noblesse"` (key, country=US) | 2 calls + 1 retry after 60 s | see A3.4 |
+
+Not searched this session (Audit 2's families stand for the other editions): OpenAlex/S2 (nothing a phrase or title query could add
+to the question asked, which is about one identified source); the report PDF (not public).
+
+### A3.2 Chronology (recorded, not a precedence claim)
+
+Our key and reading: Audit 1 dated 4 Oct 2026, Audit 2 5 Oct 2026 (this repository is public). His report: dated 10 Oct 2026; his key
+sheet reads "Updated 09/10/2026" (day/month or month/day not stated -- 9 Oct or 10 Sept; not settled). Our reading is D1 (fragments);
+his is a decipherment of two faces in full and four in part. Rule 10 bars "first" in any case, and a D1 reading carries no claimable
+content; the dates do not change the class.
+
+### A3.3 Classification per face (rule 10) and key
+
+| face (ours = his) | his extent (public) | prior decipherment of this item | class | key of the reading |
+|---|---|---|---|---|
+| c186R block = f163r | "complete eight-line cipher paragraph", plaintext + translation published (13 Oct); also the leaf's own period margin gloss | yes (Lasry; and the period gloss) | **N0** | his: published (Lasry); ours: ours |
+| one further face, unnamed in public | "2/6 pages deciphered" | yes (Lasry), text not public | **N0** | published (Lasry) |
+| the other four faces (which four not stated) | "4 more in part"; contents summary published for the item as a whole ("English arms and the Tower, religious policy, ships bound for Spain, Genoese lending, foreign courtiers, ... Hampton Court") | yes, in part (Lasry), text not public | **N0 (in part)** | published (Lasry), partial |
+
+**No face stays N3.** Every face is transcribed by him (6/6) and at least partly deciphered; on our side no face carries a licensed
+stretch (D1; LKEY V1 and V2 gates FAIL, 0 faces gain a licensed stretch), so there is no reading of ours that could fall into a part he
+left unread. Prior plaintext: yes, in part (his f163r paragraph in full; the item's contents in summary). Prior decipherment: yes
+(Lasry, key recovered from adjacent plaintext, partial; Bourdeau "partly confirmed", a sample). Evidence quality: his published
+metadata, key sheet and excerpt, plus our concordance (C1161-LKEY: 16 of our values agree with his sheet, including all five
+gloss-read C signs) and C1161-V2 (his "77 = de" reads his words on c186R L01-02). Confidence: high that the item is prior work; low on
+which face is which beyond f163r.
+
+**Data conflict (rule 4), recorded, not settled:** C1161-LKEY concordance 16 agree / 10 disagree (S signs 7 ours i vs his b, S ours u
+vs his n; eight M signs; z mapping suspect); V2 units override 212 S and 20 M tokens of ours. Witnesses: our cryptanalytic key.tsv
+(4-5 Oct, gloss-checked at 0.59-0.65 on c186R) vs his published sheet (10 Oct; key from adjacent plaintext). Neither is a period key.
+
+- **Key (status.json `key`):** `published` for the item's reading of record (Lasry's key, credited); our key.tsv stays `ours` but
+  reads only fragments. **Text:** `known` in part (f163r in full; the rest in summary).
+- **Safe sentence:** "George Lasry transcribed all six cipher faces of BnF Clairambault 1161 ff.162r-164v and deciphered two in full
+  and four in part ('BnF cipher research', 10 Oct 2026, published in summary by D. Bourdeau, cyphersolver `targets/clair1161`); our
+  own cryptanalytic key, made before his report, reads these leaves only in fragments, and agrees with his published key sheet on 16
+  sign values and differs on 10 (N0)."
+- **Unsafe sentence:** "We deciphered the Clairambault 1161 'Advis de flandres' before Lasry" -- our reading is D1, nothing of ours
+  reads as a clause, and rule 10 bars precedence wording.
+
+### A3.4 Depth (rule 4a)
+
+Unchanged from Audit 2: **D1 ("fragments read")**, H/C/S 2,261 of 3,375 cipher tokens (67.0%), longest contiguous C/S run 16 letters
+with no clause; no `depth_sentence` from our reading. C1161-LKEY/V2 added no licensed stretch. Unique solve: no.
+
+Google Books (A3.1, last row): first pass 09:27 UTC both calls HTTP 503; one retry after 60 s, both HTTP 503 again: **unreachable** this session (host stopped, good-citizen rule); the two phrases are unsearched on Google Books
+
+### A3.5 Postmortem and corrections
+
+- Audit 2's class (A2.3 "N3, confirmed") and safe sentence ("No prior plaintext or decipherment was located ...") are **superseded**
+  by this section from 14 Oct 2026; they were true of the record searched on 5 Oct (his report did not exist until 10 Oct). Not
+  rewritten in place (brief).
+- `SECOND-OPINIONS-QUEUE.tsv` row SO-C1161 (queued 5 Oct): status set to withdrawn (N0) this session, rule 10 propagation; its prompt
+  asks a second opinion to find a decipherment in print, which is now answered by his folder.
+- No file in the folder calls our reading new, first or unpublished (grep of NOTES.md, AUDIT.md for first/novel/unpublished/never
+  printed/previously unread, 14 Oct: the "first" hits are ordinary English, none about the reading). Nothing to retract.
+- status.json (`results` row: N3 -> N0, `key` ours -> published, `text` unknown -> known in part, `audit_status` three audits) and
+  the NEAR.md row's novelty note are the lane orchestrator's to edit (brief); named here, not edited.
+- Requests this session: github.com 1 (sparse clone), archive.org 6 (1 advancedsearch, 5 `_djvu.txt`), www.googleapis.com 4
+  (2 + 2 retry). One host at a time, >= 1.5 s apart. Subagent calls: 0.

@@ -2488,3 +2488,29 @@ Verdict: keep going: 3 internal gaps; cheapest next: c186R token-level known-ans
 OK keep-going clair1161-avis-flandre-1688: keep going: 3 internal gap(s), 2 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## VER-C1161 (account-2 verifier, 14 Oct 2026, 09:23-09:3x UTC by date -u)
+Verifier for LANE DEFAULT-A2-0911-14. Re-class after the Lasry prior-work notice: see AUDIT.md "AUDIT 3". Result: every face is prior
+work -- f163r (c186R) and one further face N0 (deciphered in full by Lasry), the other four N0 in part; no face stays N3. Depth of our
+reading unchanged, D1. Key of record: published (Lasry); our key.tsv stays ours. SO-C1161 withdrawn (N0). The C1161-LKEY/V2 key
+conflicts (16 agree / 10 disagree) recorded as a rule-4 data conflict, not settled. A new print family searched: Vertot's
+*Ambassades de Noailles* (1763), the edition his 1554/55 dating points to -- the f163r paragraph not found by grep (poor OCR; a search
+result). Status stays `partial` (rule 5: his extent is partial; no period decipherment of the other faces). Not decoded; nothing
+regraded. Tool note: `tools/prior_work.py` check 3-solver printed a false CLEAR for this unit although the Lasry snapshot is on disk.
+
+## Remaining gaps (VER-C1161, 14 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H (unchanged). Prior work: George Lasry's reading of ff.162r-164v (cyphersolver `clair1161`, 6/6 transcribed, 2/6 deciphered, 4 in part). Concordance with his key (C1161-LKEY): 16 agree, 10 disagree, 24 unmapped; V1 FAIL; V2 (his digit-pair nomenclature as units) FAIL vs permuted-nomenclature control (-1.1882 vs p99 -1.1729), known-answer on c186R 0.538 vs null p99 0.534.
+- digit-pair nomenclature 77/76/44/37/48 and the S-sign conflicts 7 (i vs b) and S (u vs n) - blocker: not-attempted; V2 run, whole-decode gate FAIL with a null near non-discriminating for function words; next: a known-answer gate on c186R alone -- align our V2 decode to his full f163r paragraph token by token and count unit and letter agreements vs the permuted null, pre-registered, ~$1
+- 24 unmapped labels (incl. th 208 tokens, +, d, o, ls, eloop, K, 6r, iii, x) and z (passes agreed on his a:2, decode says t) - blocker: not-attempted; description-only matching could not separate them; next: blind matching with atlas-style exemplar crops of each of our labels beside his sheet (two passes, one call per label group), ~$2
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 (14 U tokens left under V1) - blocker: not-attempted; outside labels_v2, so not in the matching passes; next: the exemplar-crop matching above, then the owner sign sorter if any stay open, ~$1
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (VER-C1161, 14 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); whole volume (342 canvases) swept at 300 px, no other cipher or glossed leaf (D1A-C1161)
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under key.tsv; his f163r paragraph matches the same gloss (LQ-C1161); no other glossed leaf in the volume (D1A-C1161)
+- [ ] known-keys: fr16142 and fr.3281 f.4 NO FIT (N4-C1, D2-C1161PRU); Lasry's key: V1 FAIL (C1161-LKEY), V2 digit pairs as units FAIL on the whole-decode gate, known-answer 0.538 vs p99 0.534 (C1161-V2); next: c186R token-level known-answer gate against his f163r paragraph, ~$1
+- [x] print: no printed edition located by check-solved and Premise check; Vertot, Ambassades de Noailles (1763) vols 1-5 grepped for the f163r paragraph, not found by this method (VER-C1161); Lasry's "BnF cipher research" (10 Oct 2026, published by D. Bourdeau 13 Oct) is prior work on all six faces: AUDIT 3 class N0, key of record published (Lasry)
+- [retired] key-rebuild: instrument c186R gloss match (G) for per-sign and joint value changes -- per-sign 0/9 (GLOSS9), joint gain inside the window null (VER-C1161J); reopens only with a longer clear text or new material (his reading may be that material)
+- [ ] image-check: split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); planted audit NON-TEST (D2-C1161AUD); next: exemplar-crop matching of our 24 unmapped labels against his sheet, then the owner's sign sorter on what stays contested
+- [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); V1 and V2/V2b decodes --check exit 0 (C1161-LKEY, C1161-V2)
+Verdict: keep going: 3 internal gaps; cheapest next: c186R token-level known-answer gate against his f163r paragraph under a fresh PREREG, ~$1
