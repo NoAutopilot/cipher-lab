@@ -1,0 +1,96 @@
+# BAL169-F22B (14 Oct 2026, account 4): glossed runs of the same Bouthillier office hand as 169 f.22r, read by this worker's eye at 2400 px
+# (Baluze 169 c79 = f.37v, Bouthillier May 1639; c165 and c177 = the f.80 Memoire, Bouthillier July 1639). Not blind: I knew key.tsv.
+# sign = numeral as written with the mark I see ('= separate rising acute stroke above, :=two dots, plain = no mark; a 1 always carries
+# its own i-dot, which is not counted as a mark); letter signs as in earlier sections. unit = the gloss letters placed over that sign.
+# Only signs I could place under the gloss are listed; '-' = sign present, unit not placeable. note: see NOTES "## BAL169-F22B".
+run	canvas	gloss	pos	sign	unit
+c79a	79	destourner	1	16'	de
+c79a	79	destourner	2	s:tilde	s
+c79a	79	destourner	3	78'	to
+c79a	79	destourner	4	s:r2	u
+c79a	79	destourner	5	s:ybar	r
+c79a	79	destourner	6	51'	ne
+c79a	79	destourner	7	s:ybar	r
+c79b	79	l'inconvenient	1	42'	li
+c79b	79	l'inconvenient	2	s:h	n
+c79b	79	l'inconvenient	3	13'	co
+c79b	79	l'inconvenient	4	s:gt	n
+c79b	79	l'inconvenient	5	81'	ve
+c79b	79	l'inconvenient	6	52'	ni
+c79b	79	l'inconvenient	7	95'	en
+c79b	79	l'inconvenient	8	s:u4	t
+c79c	79	accorder	1	13'	co
+c79c	79	accorder	2	s:ybar	r
+c79c	79	accorder	3	16'	de
+c79c	79	accorder	4	s:ybar	r
+c79d	79	generale	1	26'	ge
+c79d	79	generale	2	51'	ne
+c79d	79	generale	3	65'	ra
+c79d	79	generale	4	41'	le
+c79e	79	tous les	1	28:	tous
+c79e	79	tous les	2	41'	le
+c79e	79	tous les	3	s:tilde	s
+c79f	79	contre	1	13'	co
+c79f	79	contre	2	s:gt	n
+c79f	79	contre	3	s:u4	t
+c79f	79	contre	4	66'	re
+c79g	79	et les	1	s:w	e
+c79g	79	et les	2	s:u4	t
+c79g	79	et les	3	41'	le
+c79g	79	et les	4	s:tilde	s
+c177a	177	semblable	1	s:y	b
+c177a	177	semblable	2	40'	la
+c177a	177	semblable	3	s:y	b
+c177a	177	semblable	4	41'	le
+c177b	177	entre	1	95'	en
+c177b	177	entre	2	s:u4	t
+c177b	177	entre	3	66'	re
+c177c	177	ces gens	1	11'	ce
+c177c	177	ces gens	2	s:p	s
+c177c	177	ces gens	3	26'	ge
+c177c	177	ces gens	4	s:h	n
+c177c	177	ces gens	5	s:p	s
+c177d	177	bonne	1	s:h	n
+c177d	177	bonne	2	51'	ne
+c177e	177	correspondance	1	13'	co
+c177e	177	correspondance	2	6	r
+c177e	177	correspondance	3	66'	re
+c177e	177	correspondance	4	s:p	s
+c177e	177	correspondance	5	58'	po
+c177e	177	correspondance	6	s:h	n
+c177e	177	correspondance	7	15'	da
+c177e	177	correspondance	8	s:h	n
+c177e	177	correspondance	9	11'	ce
+c165a	165	proposer	1	s:mm	p
+c165a	165	proposer	2	68'	ro
+c165a	165	proposer	3	58'	po
+c165a	165	proposer	4	71'	se
+c165a	165	proposer	5	s:ybar	r
+c165b	165	ses	1	71'	se
+c165b	165	ses	2	s:p	s
+c165c	165	se rendra	1	71'	se
+c165c	165	se rendra	2	66'	re
+c165c	165	se rendra	3	s:h	n
+c165c	165	se rendra	4	s:r2	d
+c165c	165	se rendra	5	65'	ra
+c165d	165	se conformera	1	71'	se
+c165d	165	se conformera	2	96'	-
+c165d	165	se conformera	3	23'	fo
+c165d	165	se conformera	4	s:ybar	r
+c165d	165	se conformera	5	46'	me
+c165d	165	se conformera	6	65'	ra
+c165e	165	capable de la raison	1	10'	ca
+c165e	165	capable de la raison	2	55'	pa
+c165e	165	capable de la raison	3	s:ybar	b
+c165e	165	capable de la raison	4	41'	le
+c165e	165	capable de la raison	5	16	de
+c165e	165	capable de la raison	6	40'	la
+c165e	165	capable de la raison	7	65'	ra
+c165e	165	capable de la raison	8	s:p	i
+c165e	165	capable de la raison	9	73'	so
+c165e	165	capable de la raison	10	s:gt	n
+c165f	165	quelle n'en	1	61'	que
+c165f	165	quelle n'en	2	s:n	l
+c165f	165	quelle n'en	3	41'	le
+c165f	165	quelle n'en	4	51'	ne
+c165f	165	quelle n'en	5	s:gt	n

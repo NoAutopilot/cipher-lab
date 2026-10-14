@@ -5,3 +5,7 @@ b169f22r	L03	9	n	S	BAL22-SHAPE: tile CONFIRMED (PREREG-BAL22-SHAPE, read A G1 0.
 b169f22r	L03	12	a	S	BAL22-SHAPE: tile CONFIRMED (PREREG-BAL22-SHAPE, read A G1 0.917 G2 0.000, read B G1 0.818 G2 0.000, balshape/f22/score.out)
 b169f22r	L04	1	n	S	BAL22-SHAPE: tile CONFIRMED (PREREG-BAL22-SHAPE, read A G1 0.917 G2 0.000, read B G1 0.818 G2 0.000, balshape/f22/score.out)
 b169f22r	L01	8	f	I	BAL22-SHAPE: not confirmed (read A yes low; read B no high, best m); context fit, I per VER-BAL22 / PREREG-BAL22-SHAPE
+b169f22r	L01	6	se	S	BAL169-F22B: separate acute stroke seen on f.22r; same-hand glossed exemplars 169 c79/c165/c177 give the key acute value, within-run gloss shuffle 0/200 >= real 18/18 (f22mk/score_marks.out) (71' 4/4)
+b169f22r	L03	3	ne	S	BAL169-F22B: separate acute stroke seen on f.22r; same-hand glossed exemplars 169 c79/c165/c177 give the key acute value, within-run gloss shuffle 0/200 >= real 18/18 (f22mk/score_marks.out) (51' 4/4)
+b169f22r	L03	5	le	S	BAL169-F22B: separate acute stroke seen on f.22r; same-hand glossed exemplars 169 c79/c165/c177 give the key acute value, within-run gloss shuffle 0/200 >= real 18/18 (f22mk/score_marks.out) (41' 6/6)
+b169f22r	L03	6	co	S	BAL169-F22B: separate acute stroke seen on f.22r; same-hand glossed exemplars 169 c79/c165/c177 give the key acute value, within-run gloss shuffle 0/200 >= real 18/18 (f22mk/score_marks.out) (13' 4/4)

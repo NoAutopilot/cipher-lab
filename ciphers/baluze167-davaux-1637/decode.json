@@ -79,6 +79,7 @@
     "# D'Avaux table (published key, credited). Letter signs and 1-bearing numerals are M (see ciphertext_b169f22r.txt). Regenerate:",
     "# python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check",
     "# BAL22-SHAPE (14 Oct 2026): 5 letter-sign tokens confirmed by a blind same-key wrong-label shape check move M -> S; f -> I (balshape/f22/).",
+    "# BAL169-F22B (14 Oct 2026): 4 acute 1-bearing numerals (71' 51' 41' 13') confirmed against same-hand glossed exemplars, shuffle 0/200: M -> S (f22mk/).",
     "# Grades: {grades_sorted}"
    ],
    "exceptions": "balshape/f22/exceptions_b169f22r.tsv",

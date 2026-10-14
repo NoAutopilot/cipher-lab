@@ -1,0 +1,10 @@
+sign	key_value	glossed_n	units	agree	wrong_mark_values	wrong_hits
+71'	se	4	{'se': 4}	4	-	0
+51'	ne	4	{'ne': 4}	4	['alliance', 'duc Bernard']	0
+41'	le	6	{'le': 6}	6	-	0
+13'	co	4	{'co': 4}	4	['sued', 'Mr']	0
+real 18/18; within-run shuffle (200 seeds) mean 4.25, p95 7, max 9; shuffles >= real: 0/200
+call 71' = se: 4/4 -> S
+call 51' = ne: 4/4 -> S
+call 41' = le: 6/6 -> S
+call 13' = co: 4/4 -> S
