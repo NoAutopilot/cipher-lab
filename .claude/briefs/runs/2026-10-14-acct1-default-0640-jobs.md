@@ -52,3 +52,52 @@ folder's own NOTES/inventory and his profile.json/NOTES.md).
 - LQ-REC4 (Sonnet, cap 2, box 50 min): four record-only checks, one section per folder, same steps: clair1067-brienne-poland-1646 vs
   `brienne1067`; clair1108-duvergier vs `vergier1696`; dupuy155-1597 vs `dupuy155`; dupuy468-anhalt vs `dupuy468`. These already read
   `solved` or `found-solved`; their status does not change; flag AUDIT re-class only per step 5.
+
+## Wave 2 (spawned 06:52 UTC 14 Oct; brief text recorded late, 07:3x UTC -- the 06:5x append was skipped by a failed chained pull, so both
+## workers ran from the ROOM spawn line and the folder's own gap lines)
+- BAL169-F22 (Opus, cap 4.5, box 75 min, openapi.bnf.fr <= 12): baluze167-davaux-1637 Baluze 169 f.22r bare passage, crop + two blind
+  passes + reconciliation, period key application with key.tsv and decode_key.py --check, the 169 ff.52/97/142 method. Done 07:04 (H 4 I 1 M 19).
+- BAL167-SWEEP (Opus, cap 5, box 80 min, openapi.bnf.fr <= 300 at >= 3 s): Baluze 167 c1-250 at 300 px, BAL169-SWEEP method, controls the
+  listed 167 cipher canvases, <= 15 looks at 1000 px; survey.tsv new rows only; no transcription.
+Hosts (both): openapi.bnf.fr only, descriptive UA, one request at a time >= 3 s apart, take/release ROOM lines, one retry after 60 s on
+403/429/5xx then stop; never gallica.bnf.fr. The folder's images/ is at 29 MB: never over 30 MB (AX2-SHRINK method or a regen script).
+
+## Wave 3 (07:3x UTC 14 Oct) -- George Lasry's published key sheets as a new instrument; one verifier
+Context: LQ-SALV / LQ-C1161 / LQ-F4687 (NOTES sections "Lasry BnF research check (14 Oct 2026, ...)") found his reading of each item partial
+and his key published as a sheet image in the snapshot (`sources/cyphersolver/2026-10-14-lasry/<folder>/lasry_p0NN_1.png`; text CC BY 4.0,
+credit George Lasry, published by D. Bourdeau, cyphersolver dde5b0ea). A published key is grade-H material where its value is unmarked and
+M where his sheet marks "?"; the mapping from our sign labels to his exemplars is your eye work and is graded by its own agreement (two
+blind subagent matchings of our atlas exemplars to his sheet, each not shown the other; a label is mapped only where both agree, else M).
+Every job: intake gate output pasted (all exit 0 at 07:3x UTC: fr2933 `open (line 1)`, clair1161 `partial (line 1)`, fr4687 `blocked
+(line 1) -- already terminal`); PREREG-<JOB>.md pushed before any score; rule 3 control = the same decode under a key with values permuted
+within sign class (>= 200 draws), scored by the folder's spec judge (`tools/judge_plaintext.py specs/<slug>.json --file ...`) or, with no
+spec, by the count of in-lexicon words of length >= 4 against the permuted-key distribution (p99); the control can differ from the target
+on this statistic (the key changes the text). Apply through the folder's decode layout (decode.json / key file, `tools/decode_key.py
+<t> --check` exit 0), never overwrite our existing key.tsv: write `key_lasry.tsv` beside it and a decode block or decode_lasry.json. Grades
+per rule 4 in NOTES with counts. Disk only, no BnF fetches unless a crop is missing (then openapi.bnf.fr per wave 2 hosts, <= 6). Report
+what was found and where it was not found; do not classify novelty. Update Remaining gaps / Escalation (known-keys rung) / Verdict;
+gaps_check; NEAR.md is the lane's to update, not yours (say the numbers in the done line).
+
+### SALV-LKEY (Opus, cap 5, box 90 min): fr2933-salviati-1525, his 78-symbol syllabary key (salviati1525/lasry_p031_1.png) on our ff.54r-57v
+Our sign inventory: glyphs/atlas.tsv + atlas.png (and labels.json). Units: two blind mapping passes (atlas exemplars vs his sheet, ~1.5
+each, one call per atlas part), your reconciliation (~1), decode + control + judge (~1). Report per leaf the share of tokens mapped, the
+judge score vs the permuted-key p99, and the best stretch. Our transcription's measured pass-to-pass disagreement is 14.6% (SALV-DIAG):
+say whether the decode beats control despite it. NEAR row numbers in the done line.
+
+### C1161-LKEY (Opus, cap 3, box 60 min): clair1161-avis-flandre-1688, his key (clair1161/lasry_p073_1.png) vs our key.tsv
+Named next in LQ-C1161's gap line ("a ~$1 key concordance"). Concordance first: per sign, our value / his value / agree-disagree-new; then
+apply his values only for signs we hold at M/U or unread (`key_lasry.tsv`, decode block), with the permuted-key control; report how many
+of the 4 faces he left "in part" gain readable stretches. Disagreements are a data conflict (rule 4: record both, do not settle).
+
+### F4687-LKEY (Opus, cap 3, box 60 min): fr4687-paleologue-nevers, his key (paleologue1562/lasry_p033_1.png) on our canvases 8-10
+LQ-F4687: canvas 8 matches his deciphered part, canvases 9-10 (his f.6v/f.7v, transcribed by us, unread) unconfirmed. Map, apply, control
+as above; canvas 8 is the known-answer control (agreement with his deciphered text there gates reading 9-10: pre-register the threshold).
+Status stays as the folder's head says unless rule 5 moves it; name what still blocks it.
+
+### VER-BAL22 (Opus, cap 4, box 75 min): verifier, baluze167-davaux-1637 Baluze 169 f.22r reading (BAL169-F22, 14 Oct)
+CLAUDE.md "Verifier brief (template)" in full, claim under audit: the BAL169-F22 section's reading of 169 f.22r ("...obligee de se deffaire
+de Milandre ... qu'elle en voulust donner le commandement a Mr de Ransau dont j'escris ... au S. de la Boderie", H 4 I 1 M 19). The solver
+session was BAL169-F22 (session_01ThV43oDmKJK4XeTgdCDTXN); you are separate. N-class and depth (rule 4a) for this item in AUDIT.md (append a
+dated section; do not rewrite earlier sections); correct any over-claim; SECOND-OPINIONS-QUEUE row only if N3+. JSTOR-QUEUE rows in both
+families (i) and (ii). Hosts: archive.org (be-api fts, advancedsearch), Google Books API (country=US, key; 503 at 06:5x -- one retry after
+a pause, then log unreachable), OpenAlex/S2 with keys, 1.5 s apart.
