@@ -3737,3 +3737,79 @@ Read so far: unmeasured as a reading; no cipher run is read, the folder's famili
 - [x] image-check: passes A/B/C, SALV-SPLIT, SALV2-J1A/B and SALV-F56V; f.56r pass C optional (~$3, strips on disk), not decisive for any open family
 - [x] retry: DSN irregular at 96 restarts on the SALV-F56V split (SALV-DSN, 11 Oct): control 0.844 at err 0.064, 0.733 at 0.10, 0.541 at 0.146; target judge FAIL -- control-backed up to 10%, non-test at 14.6%
 Verdict: keep going: 1 internal gap; cheapest next: crib placement-likelihood scorer with a planted control first, ~$5
+
+## Lasry BnF research check (14 Oct 2026, LQ-SALV)
+Worker LQ-SALV (Opus), brief `.claude/briefs/runs/2026-10-14-acct1-default-0640-jobs.md` "LQ-SALV", LANE DEFAULT-A1-0640-14
+(account 1), 06:54-07:0x UTC by date -u. A record check, not cryptanalysis: no re-solving, no key edit, no token re-graded.
+Source: George Lasry's `salviati1525` in github.com/dbourdeau/cyphersolver (HEAD b0af20a4a277, folder added in dde5b0ea);
+snapshot unmodified at `sources/cyphersolver/2026-10-14-lasry/salviati1525/` (NOTES.md, profile.json, lasry_p031_1.png = his
+key table). Hub page dbourdeau.github.io/cyphersolver/lasry-bnf.html read once (200): its row gives no per-leaf detail beyond
+the folder. Prior work: `tools/prior_work.py fr2933-salviati-1525 --item-spec 'BnF fr.2933 f54r-f57v' --step-type lookup
+--offline` exit 4 -- two LEADs are this job's own claim and the lane's wave line; UNCHECKED 3-solver (cyphersolver) is this job;
+3-tomokiyo and 4-editions rows as recorded in prior-work.tsv by SALV-57V/SALV-CRIB (CLEAR, 13 Oct).
+
+**Item match.** We hold one item: BnF fr.2933 item 11, ff.54r-57v (eight pages, canvases 55 right - 59 left of ark btv1b90600674),
+Johannes cardinal Salviati, 16 Oct 1525, recipient named only in the heading. He holds one item in the same volume.
+
+| field | ours (fr2933-salviati-1525) | his (salviati1525) |
+|---|---|---|
+| shelfmark | BnF Français 2933, item 11 | BnF Français 2933 |
+| folios | ff.54r-57v (8 pages) | "8 pages"; excerpt and image link at "Gallica f54r", canvas f55 |
+| date | 16 Oct 1525 (f.57v dateline "xvj octobr ... 1525") | 16 October 1525 |
+| sender | Jo. cardinal Salviati (f.57v signature; catalogue "JOHANNES, cardinalis de Salviatis") | Giovanni, cardinal Salviati |
+| recipient | heading read "R Dnt~ tanq3 +ang~ Ptr~" (plain boxes, f54r L1) | "Not established"; Bourdeau's spot-check reads the heading "Rdo Dno Lang. Ptri" |
+| f54r L13-15 plain words | "Pure amt [p^] parz" / "maxims" / "stando ancora la cosi ... Come stanno ... Pure" | "Pure a me pare ... maxime. Stando ancora le cose ... come stanno hora" |
+
+**Verdict: match** (same letter: shelfmark, canvas, date, sender, and the plain words of f54r L13-15 agree box for box with his
+excerpt, allowing for our passes' letter-level misreads). Per leaf, from his published files only:
+
+| leaf | his coverage |
+|---|---|
+| f.54r | covered: transcribed and deciphered in part (his excerpt "f54r -- complete lines 13-15" and the spot-checked sign H-10 = "che") |
+| f.54v, f.55r, f.55v, f.56r, f.56v, f.57r, f.57v | not established: his counts are page totals ("2/8 pages transcribed; 1 more in part; 3/8 pages deciphered in part") and neither his folder nor the hub names which pages beyond f.54r |
+
+**His counts, quoted:** "2/8 pages transcribed; 1 more in part; 3/8 pages deciphered in part"; "Ciphertext-only: Yes"; "Key: 78
+symbols: 18 letters, 54 syllables, 3 doubled letters, 3 words"; "Ciphertext: 838 elements, 704 identified; 2 further groups with
+unresolved boundaries; transcription incomplete"; method (Bourdeau's classification) "key recovered from ciphertext-only; extent:
+partial"; Bourdeau's spot-check verdict "partly confirmed" (a sample, not a re-solution). His excerpt, f54r L13-15: "e bisogniera
+trovare qualche modo [?] Pure a me pare che l'essere restituita la possessione basti [?] maxime. Stando ancora le cose [?] di
+Modena [?] come stanno hora, V.S...." His contents line names restoration of possession and imperial territory, the defence and
+government of the state, nobles and people, captains and guards, the archbishop of Toledo, Modena, and letters sent by land and sea.
+
+**Side by side (f54r L13-15).** We hold no reading of any cipher run (HYPOTHESES.md: every family a non-test or control-backed
+negative), so only the plain boxes compare. Ours L13 "... Pure amt [p^] parz", L14 "H [H^o|1 ...] ... maxims", L15 "stando ancora
+la cosi [6 signs] Come stanno [p^] Pure"; his "Pure a me pare che l'essere ... maxime. Stando ancora le cose [?] di Modena [?] come
+stanno hora". Agreement: the plain words are the same words; our "amt/parz/maxims/cosi" are pass misreads of "a me/pare/maxime/
+cose", and the box our passes read as plain "H" right after "parz", opening L14, is the sign his key gives as "che" (H with
+superscript 10, his key table) -- the place where his reading supplies a word our transcription could not.
+
+**What changes for our work.** (1) A ciphertext-only key for this letter now exists in print: Lasry's 78-symbol table (a syllabary:
+consonant base signs with small superscript numerals or dots for the vowel, plus 18 letters, 3 doubled letters, 3 words), which
+fits the "small superscript number floating above the marks" this folder logged on 24 Sept and the base+mark split our passes
+use; our design families (code+mark, R8 syllabaries) were all non-tests or control-backed only below the transcription's 14.6% error,
+none a design exclusion, so nothing here contradicts his design. (2) The key-rebuild rung and the crib-scorer gap are superseded
+as next steps by applying his published key (credited, `published`) to our transcription; that is a separate, briefed job (no key
+edit here). (3) His extent is partial (3/8 pages deciphered in part; 134 of 838 elements unidentified) and he names no page but
+f.54r, so the letter is not `found-solved`; status stays `open` (head line) and the NEAR.md row stays the orchestrator's.
+(4) Novelty (rule 10) for anything we later read on these leaves now has his reading as prior work; no AUDIT.md exists in this
+folder, so no re-class flag is owed.
+Credit: George Lasry, the result ("BnF cipher research", 10 Oct 2026, with ChatGPT Astra 6 and Anthropic Opus 5.5); D. Bourdeau,
+publication and spot-check, github.com/dbourdeau/cyphersolver commit dde5b0ea (13 Oct 2026); text CC BY 4.0.
+Hosts: github.com 1 sparse clone (blobs for one folder); dbourdeau.github.io 1 request (200). No BnF or Gallica request.
+
+## Remaining gaps (LQ-SALV, 14 Oct 2026)
+Read so far: unmeasured as a reading; no cipher run is read by us; George Lasry's published key reads f.54r and two more pages in part (704 of 838 elements identified, his count), pages other than f.54r not named
+- applying Lasry's published 78-symbol key (cyphersolver salviati1525, lasry_p031_1.png) to our base+mark transcription, all 8 leaves, with a wrong-key control - blocker: not-attempted; his key reached this folder on 14 Oct (LQ-SALV); next: map his key table's signs to our atlas codes from his image and our glyph crops, decode with tools/decode_key.py, shuffled-key control first, ~$4
+- the Phillipps MS 7293 letter book (BL RP 271/2/4, despatches 17 July 1525-15 May 1527), a possible clear register copy - blocker: needs-physical-access; the original was sold in 1968, holder not recorded, BL image service down since 2023 (Premise check (d))
+- the crib placement-likelihood scorer (SALV-CRIB) - blocker: not-attempted; superseded as a next step by the published key above, kept only if that key fails its control on our transcription; next: placement-likelihood scorer, ~$5
+
+## Escalation (LQ-SALV, 14 Oct 2026)
+- [x] siblings: Premise check (d), 3 Oct 2026: fr.3087 item 90 (3 Oct 1525, two cipher lines per Molini) and siblings.tsv; no decipherment
+- [x] clear-pages: all 8 leaves' plain boxes read (SALV-PLAIN1-3, SALV-57V); the Phillipps 7293 register copy is needs-physical-access
+- [ ] known-keys: George Lasry's published ciphertext-only key (cyphersolver salviati1525, 14 Oct check LQ-SALV) is untried on our transcription; next: map and apply it with a wrong-key control, ~$4
+- [x] print: CSP Spain III/1 for Oct 1525 read (D2-PRINT4); Desjardins/Canestrini and Molini read earlier; context only
+- [ ] key-rebuild: code+mark anneal closed after three attempts; wordcode context option untested-by-this-tool; R8 syllabaries control-backed at 6.4%; isomorph crib count untested-by-this-tool; held behind the published key above
+- [x] image-check: passes A/B/C, SALV-SPLIT, SALV2-J1A/B and SALV-F56V; f.56r pass C optional (~$3, strips on disk)
+- [x] retry: DSN irregular at 96 restarts on the SALV-F56V split (SALV-DSN, 11 Oct): control-backed up to 10%, non-test at 14.6%
+Verdict: keep going: 2 internal gaps; cheapest next: apply Lasry's published key to our transcription with a wrong-key control, ~$4
+`python3 tools/gaps_check.py fr2933-salviati-1525` (14 Oct 2026, LQ-SALV): "OK keep-going fr2933-salviati-1525: keep going: 2 internal gap(s), 2 step(s) untried", exit 0.
