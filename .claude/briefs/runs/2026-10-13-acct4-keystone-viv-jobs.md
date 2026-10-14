@@ -294,3 +294,21 @@ read in two blind passes each. Outputs with the 67B names (tx/f201v_*, f202r_*, 
 tx/vivk67b_result.json), the benchmark item vivonne1573-f201v-dev (and f202r) registered only if the registered alignment gate
 passes; label table counts only. PREREG-VIV67B.md first. Price: vision calls: 8 x USD 1.4 = 11.2 -> cap 12; stop before a unit that
 would cross 80%. ROOM lines "for LANE VIV-KEYSTONE (account 4)", done line to the parent session_01D7XWmthshMVqxumdDvitPh.
+
+### VIV-HUMAN2 (Opus, cap 6, box 60 min, openapi.bnf.fr <= 2): the owner's second attempt, same tiles, piles rebuilt from truth-consistent examples
+Why: the owner asked (02:4x UTC 14 Oct) to try the scored-against tiles again. The parent's pile check (NOTES "VIV-HUMAN result",
+pile check bullet) found the page's "z" pile was itself full of 3-shaped tiles and the "3" pile a jumble, because the piles were built
+from the committed f.201r labels, which carry the 3/z confusion. Build the same page again with these changes only (PREREG-VIVHUMAN.md
+Addendum B, written and pushed first, scoring and interpretation rules unchanged, reported as "attempt 2" beside attempt 1, never
+replacing it): (1) question tiles = Q04, Q14, Q15, Q19, Q12, Q23 (the six scored against him) and Q24, Q25 (the two lost to the recut
+defect R12), eight tiles, shuffled with seed 20261014 again, starting in the tray; (2) for the piles 3, z, L, l, s, S, h, k (the
+look-alike families these tiles touch), a tile is a pile member only if its committed label lies in the truth set of a scored
+UNFLAGGED truth position it maps to 1:1 (tx/vivcls/real/map_r2_f201r.tsv, op 1:1; truth benchmark-tx/vivonne1573-f201r-dev.truth.tsv);
+tiles of those labels that fail the test go to no pile (left out of the page, counted in the Addendum); every other pile as before;
+blind as before (labels only, no values). If a pile is left with fewer than 3 truth-consistent members, say so in the Addendum and show
+it anyway. (3) The lede adds one sentence: do not use "fix the cut" on this page (a recut tile cannot be placed yet, R12). Regenerate
+the f.201r crops with the manifest "viv67" command (1 request), reuse tx/vivhuman/build_inputs.py and sets.py with the new filters
+(options, not a copy), build with tools/sign_sorter.py only, run tools/sorter_preflight.py and tools/cvd_check.py, commit the page under
+tx/sorter_human2/ (HTML with embedded tiles under 3 MB, no page image) and publish with the Artifact tool (title "Vivonne f.201r:
+8 signs, second try", icon "grid"). Done line: the artifact URL first, then the pile member counts before/after the filter.
+Price: vision calls: 0 x USD 0 = 0; Opus floor 2.5; cap 6.
