@@ -1,0 +1,51 @@
+sign	value	grade	class	source	note
++^	t	H	letter	published	A:t/M B:t/M
+H^1	che	H	other	published	A:che/H B:che/M
+H^1|o	che	M	other	published	combination of H^1,H^o
+H^o	che	M	other	published	A:che/M B:che/L
+H^o|1	che	M	other	published	combination of H^o,H^1
+L^7	fi	M	syllable	published	A:fi?/M B:fi?/M
+L^~	fe	M	syllable	published	A:fe?/M B:fe?/L
+S7^	n	H	letter	published	A:n/H B:n/H
+S7^#	ne|no|nu	M	amb	published	A:ne|no|nu?/M B:ne|no|nu?/M
+U^	p	H	letter	published	A:p1/H B:p1/H
+Z^	et	H	other	published	A:et2/M B:et2/M
+Z^dot	et	M	other	published	A:et2/L B:et2/L
+Z^ot	le|lo	M	amb	published	A:le|lo?/M B:le|lo?/M
+[^	i	H	letter	published	A:i1/H B:i1/H
+]^ot	le|lo	M	amb	published	A:le|lo?/M B:le|lo?/M
+a^1	ma	H	syllable	published	A:ma/M B:ma/M
+a^5	mo	H	syllable	published	A:mo/M B:mo/M
+a^~	me	H	syllable	published	A:me/H B:me/H
+e^#	de|do|du	M	amb	published	A:de|do|du/M B:de|do|du/M
+eps^	c	H	letter	published	A:c/H B:c/M
+eps^1	ca	H	syllable	published	A:ca/H B:ca/H
+eps^1|1	ca	H	syllable	published	combination of eps^1,eps^1
+eps^5	co	H	syllable	published	A:co/H B:co/H
+eps^7	ci	H	syllable	published	A:ci/H B:ci/H
+eps^~	ce	H	syllable	published	A:ce/H B:ce/H
+f^	t	H	letter	published	A:t/H B:t/H
+g^1	ra	H	syllable	published	A:ra/H B:ra/H
+g^5	ro	H	syllable	published	A:ro/H B:ro/H
+g^7	ri	H	syllable	published	A:ri/M B:ri/M
+g^~	re	H	syllable	published	A:re/H B:re/H
+g^~|~	re	H	syllable	published	combination of g^~,g^~
+lam^1	ta	H	syllable	published	A:ta/H B:ta/H
+lam^5	to	H	syllable	published	A:to/H B:to/H
+lam^7	ti	H	syllable	published	A:ti/H B:ti/H
+lam^~	te	H	syllable	published	A:te/H B:te/H
+m^5	po	H	syllable	published	A:po/H B:po/H
+m^7	pi	M	syllable	published	A:pi?/H B:pi?/H
+m^~	pe	H	syllable	published	A:pe/H B:pe/H
+nt^	u	M	letter	published	A:u/v?/H B:u/v?/H
+o.^	i	M	letter	published	A:i2?/H B:i2?/H
+phi^	et	H	other	published	A:et1/H B:et1/H
+psi^	s	M	letter	published	A:s?/M B:s?/M
+rz^	e	H	letter	published	A:e/H B:e/H
+sq^#	que	M	syllable	published	A:que?/L B:que?/L
+sq^ot	que	M	syllable	published	A:que?/L B:que?/L
+tee^	l	H	letter	published	A:l2/H B:l2/H
+v^	e	M	letter	published	A:e/L B:e/L
+w^	r	H	letter	published	A:r/H B:r/M
+wd^	l	H	letter	published	A:l1/H B:l1/H
+y^	a	H	letter	published	A:a/M B:a/M

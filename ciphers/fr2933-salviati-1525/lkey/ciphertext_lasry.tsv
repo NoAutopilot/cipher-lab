@@ -1,4054 +1,4054 @@
-line	pos	sign	conf
-f54r_L01	1	w:R	AB
-f54r_L01	2	w:Dnt~	AB
-f54r_L01	3	w:tanq3	AB
-f54r_L01	4	w:+	AB
-f54r_L01	5	w:+	settled
-f54r_L01	6	w:Ptr~	settled
-f54r_L01	7	w:+	AB
-f54r_L01	8	w:q;	AB
-f54r_L01	9	w:c9	AB
-f54r_L01	10	psi^	settled
-f54r_L01	11	+^	settled
-f54r_L01	12	e^+	M|split2
-f54r_L01	13	[^	AB
-f54r_L01	14	bh^	AB
-f54r_L01	15	m^	settled
-f54r_L01	16	U^	AB
-f54r_L01	17	y^	AB
-f54r_L01	18	nt^	AB
-f54r_L01	19	[^	AB
-f54r_L01	20	bh^	AB
-f54r_L01	21	sq^ot	AB
-f54r_L01	22	psi^	AB
-f54r_L01	23	lam^o	AB
-f54r_L01	24	eps^5	AB
-f54r_L01	25	nt^	settled
-f54r_L01	26	[^	AB
-f54r_L02	1	rz^	AB
-f54r_L02	2	g^~	AB
-f54r_L02	3	m^~	AB
-f54r_L02	4	w^	AB
-f54r_L02	5	w:?	AB
-f54r_L02	6	L^	AB
-f54r_L02	7	g^~	AB
-f54r_L02	8	o.^	AB
-f54r_L02	9	S7^	AB
-f54r_L02	10	lam^dot	AB
-f54r_L02	11	S7^~	AB
-f54r_L02	12	e^#	AB
-f54r_L02	13	g^~	AB
-f54r_L02	14	y^	settled
-f54r_L02	14.5	tee^	B
-f54r_L02	15	K^	AB
-f54r_L02	16	sq^	settled
-f54r_L02	17	]^o	AB
-f54r_L02	18	v^	AB|split2
-f54r_L02	19	bh^dot	AB
-f54r_L02	20	S7^+	AB
-f54r_L02	21	a^~	AB
-f54r_L02	22	S7^~	AB
-f54r_L02	23	lam^~	AB
-f54r_L02	24	e^#	AB
-f54r_L02	25	wd^	AB
-f54r_L02	26	bh^	AB
-f54r_L02	27	K^	AB
-f54r_L02	28	Lx^#	AB
-f54r_L03	1	phi^	AB
-f54r_L03	2	]^o	AB
-f54r_L03	3	nt^	settled
-f54r_L03	3.5	Z^	B
-f54r_L03	4	]^dot|o	AB
-f54r_L03	5	S7^dot	AB
-f54r_L03	6	lam^	settled
-f54r_L03	7	e^dot	AB
-f54r_L03	8	y^	AB
-f54r_L03	9	e^#	AB
-f54r_L03	10	o.^	settled
-f54r_L03	11	w:d	settled
-f54r_L03	12	w:+	settled
-f54r_L03	13	g^	AB
-f54r_L03	14	Z^	AB
-f54r_L03	15	S4^	AB
-f54r_L03	16	w:Tutto	AB
-f54r_L03	17	w:quello	AB
-f54r_L03	18	w:+	AB
-f54r_L03	19	w:+	AB
-f54r_L03	20	w:ch.	settled
-f54r_L03	21	w:s.	settled
-f54r_L03	22	w:s.	settled
-f54r_L03	23	w:desidera	AB
-f54r_L03	24	w:+	AB
-f54r_L03	25	w:+	AB
-f54r_L03	26	w:+	AB
-f54r_L03	27	w:+	AB
-f54r_L03	28	w:N.	AB
-f54r_L03	29	w:S.	AB
-f54r_L03	30	S4^	settled
-f54r_L03	31	S4^	AB
-f54r_L04	1	phi^	AB
-f54r_L04	2	y^	AB
-f54r_L04	3	lam^1	AB
-f54r_L04	4	v^	AB|split2
-f54r_L04	5	]^o	AB
-f54r_L04	6	g^~	AB
-f54r_L04	7	nt^	AB
-f54r_L04	8	S7^	AB
-f54r_L04	9	#^	AB
-f54r_L04	10	y^dot	AB
-f54r_L04	11	nt^	AB
-f54r_L04	12	bh^	AB
-f54r_L04	13	w^	AB
-f54r_L04	14	e^dot	AB
-f54r_L04	15	Z^	AB
-f54r_L04	16	nt^	AB
-f54r_L04	17	S4^	settled
-f54r_L04	18	bh^dot	AB
-f54r_L04	19	S7^#	AB
-f54r_L04	20	m^~	AB
-f54r_L04	21	w^	AB
-f54r_L04	22	m^~	AB
-f54r_L04	23	lam^	AB
-f54r_L04	24	y^	AB
-f54r_L04	25	f^	AB
-f54r_L04	26	w^	AB
-f54r_L05	1	y^	AB
-f54r_L05	2	]^dot|o	AB
-f54r_L05	3	S7^dot	AB
-f54r_L05	4	L^	settled
-f54r_L05	5	]^o	AB
-f54r_L05	6	tee^	AB
-f54r_L05	7	f^	AB
-f54r_L05	8	w^	AB
-f54r_L05	9	bh^	AB
-f54r_L05	10	L^	settled
-f54r_L05	11	H^1	AB
-f54r_L05	12	w:?	AB
-f54r_L05	13	S4^	AB
-f54r_L05	14	w:Piu	AB
-f54r_L05	15	w:+	AB
-f54r_L05	16	w:noltri	AB
-f54r_L05	17	w:+	AB
-f54r_L05	18	w:my	AB
-f54r_L05	19	w:h~n	AB
-f54r_L05	20	w:detto	AB
-f54r_L05	21	w:+	AB
-f54r_L05	22	w:+	AB
-f54r_L05	23	w:Et	AB
-f54r_L05	24	w:+	AB
-f54r_L05	25	w:dic	AB
-f54r_L05	26	w:+	AB
-f54r_L06	1	S4^	AB
-f54r_L06	2	nt^	AB
-f54r_L06	3	S7^	settled
-f54r_L06	4	L^	AB
-f54r_L06	5	e^#	AB
-f54r_L06	6	[^	AB
-f54r_L06	7	S7^	AB
-f54r_L06	8	e^dot	AB
-f54r_L06	9	nt^	AB
-f54r_L06	10	bh^	AB
-f54r_L06	11	]^o	AB
-f54r_L06	12	w:br	AB
-f54r_L06	13	]^ot	AB
-f54r_L06	14	H^1	AB
-f54r_L06	15	f^	AB|split2
-f54r_L06	16	w^	AB
-f54r_L06	17	y^	AB
-f54r_L06	18	m^1	AB
-f54r_L06	19	tee^	AB
-f54r_L06	20	lam^	AB
-f54r_L06	21	rz^	AB
-f54r_L06	22	L^	settled
-f54r_L06	23	L^	AB
-f54r_L06	24	w^	AB
-f54r_L06	25	tee^	AB
-f54r_L06	26	[^	AB
-f54r_L06	27	nt^	AB
-f54r_L06	28	bh^	AB
-f54r_L07	1	]^dot|ot	AB
-f54r_L07	2	phi^	AB
-f54r_L07	3	U^	AB
-f54r_L07	4	w^	AB
-f54r_L07	5	bh^	AB
-f54r_L07	6	a^~	AB
-f54r_L07	7	bh^	M|split2
-f54r_L07	8	bh^	AB
-f54r_L07	9	S7^#	AB
-f54r_L07	10	]^dot|o	AB
-f54r_L07	11	g^~	AB
-f54r_L07	12	psi^	AB
-f54r_L07	13	lam^7	AB
-f54r_L07	14	lam^	settled
-f54r_L07	15	S4^	AB
-f54r_L07	16	dl^	AB
-f54r_L07	17	lam^	AB
-f54r_L07	18	bh^	AB
-f54r_L07	19	S7^#	AB
-f54r_L07	20	e^+	AB
-f54r_L07	21	g^dot|~	AB
-f54r_L07	22	#^	settled
-f54r_L07	23	[^	AB
-f54r_L07	24	bh^	AB
-f54r_L07	25	S7^#	AB
-f54r_L07	26	wd^	AB
-f54r_L07	27	y^	AB
-f54r_L07	28	sq^?	AB
-f54r_L07	29	Z^	AB
-f54r_L07	30	m^~	settled
-f54r_L08	1	g^	AB
-f54r_L08	2	rz^	AB
-f54r_L08	3	tee^	AB
-f54r_L08	4	S4^	AB
-f54r_L08	5	dl^	AB
-f54r_L08	6	Z^dot|~	AB
-f54r_L08	7	eps^~	AB
-f54r_L08	8	g^~	AB
-f54r_L08	9	nt^	settled
-f54r_L08	9.5	Z^	B
-f54r_L08	10	]^	AB
-f54r_L08	11	phi^	AB|split2
-f54r_L08	12	Z^7	AB
-f54r_L08	13	a^~	AB
-f54r_L08	14	dl^	M|split2
-f54r_L08	15	g^~	AB
-f54r_L08	16	psi^	AB
-f54r_L08	17	eps^	AB
-f54r_L08	18	w^	AB
-f54r_L08	19	nt^	AB
-f54r_L08	20	m^5	AB
-f54r_L08	21	]^ot	AB
-f54r_L08	22	S4^	AB
-f54r_L08	23	dl^	AB
-f54r_L08	24	w:Con	AB
-f54r_L09	1	w:lauenuta	AB
-f54r_L09	2	w:<none>	AB
-f54r_L09	3	H^7	settled
-f54r_L09	4	w:Duca	AB
-f54r_L09	5	w:+	AB
-f54r_L09	6	w:Secondo	AB
-f54r_L09	7	w:+	AB
-f54r_L09	8	w:+	AB
-f54r_L09	9	w:mh	AB
-f54r_L09	10	w:Poco	AB
-f54r_L09	11	w:+	AB
-f54r_L09	12	w:credibile	AB
-f54r_L09	13	tee^	settled
-f54r_L09	14	tee^	settled
-f54r_L09	15	w:+	AB
-f54r_L09	16	w:+	AB
-f54r_L09	17	w:?	AB
-f54r_L09	18	Lx^	AB
-f54r_L09	19	g^dot	settled
-f54r_L09	20	w:?	AB
-f54r_L09	21	rz^	AB
-f54r_L09	22	w:?	AB
-f54r_L09	23	S7^	AB
-f54r_L10	1	lam^	AB
-f54r_L10	2	S7^~	AB
-f54r_L10	3	lam^	AB
-f54r_L10	4	g^~	AB
-f54r_L10	5	psi^	AB
-f54r_L10	6	lam^	AB
-f54r_L10	7	lam^	AB
-f54r_L10	8	S^	AB
-f54r_L10	9	[^	AB
-f54r_L10	10	g^	AB
-f54r_L10	11	Z^	AB
-f54r_L10	12	]^o	AB
-f54r_L10	13	m^5	AB
-f54r_L10	14	nt^	AB
-f54r_L10	15	rz^	AB
-f54r_L10	16	nt^dot	AB
-f54r_L10	17	w:ys	AB
-f54r_L10	18	]^o	AB
-f54r_L10	19	g^	AB
-f54r_L10	20	m^~	AB
-f54r_L10	21	g^7	AB
-f54r_L10	22	bh^	AB
-f54r_L10	23	S7^	AB
-f54r_L10	24	g^#|7	AB
-f54r_L10	25	lam^	AB
-f54r_L10	26	H^1|o	AB
-f54r_L11	1	w:?	AB
-f54r_L11	2	w:?	AB
-f54r_L11	3	U^	AB
-f54r_L11	4	g^~	AB
-f54r_L11	5	lam^	AB
-f54r_L11	6	S7^~	AB
-f54r_L11	7	e^#	AB
-f54r_L11	8	m^~	AB
-f54r_L11	9	w^	AB
-f54r_L11	10	lam^	settled
-f54r_L11	10.5	S^	B
-f54r_L11	11	nt^	AB
-f54r_L11	12	rz^	AB
-f54r_L11	13	g^~	AB
-f54r_L11	14	w:m	AB
-f54r_L11	15	lam^	AB
-f54r_L11	16	nt^~	AB
-f54r_L11	17	y^	AB
-f54r_L11	18	p^	AB
-f54r_L11	19	g^?	AB
-f54r_L11	20	y^7	AB
-f54r_L11	21	Z^	AB
-f54r_L11	22	]^dot|ot	AB
-f54r_L11	23	g^	AB
-f54r_L11	24	y^5	AB
-f54r_L11	25	S^	AB
-f54r_L11	26	]^ot	AB
-f54r_L11	27	#^~	AB
-f54r_L11	28	S7^#	AB
-f54r_L12	1	w:?	AB
-f54r_L12	2	w:?	AB
-f54r_L12	3	tee^	AB|split2
-f54r_L12	4	Z^dot	AB
-f54r_L12	5	nt^	AB
-f54r_L12	6	g^1	AB
-f54r_L12	7	a^~	AB
-f54r_L12	8	S7^	AB
-f54r_L12	9	lam^	AB
-f54r_L12	10	e^#	AB
-f54r_L12	11	wd^	AB
-f54r_L12	12	bh^	AB
-f54r_L12	13	K^	AB
-f54r_L12	14	w:K	AB
-f54r_L12	15	tee^	AB
-f54r_L12	16	v^1	AB
-f54r_L12	17	y^5	AB
-f54r_L12	18	]^o	AB
-f54r_L12	19	rz^	AB
-f54r_L12	20	S7^+	AB
-f54r_L12	21	g^~	AB
-f54r_L12	22	lam^	AB
-f54r_L12	23	nt^~	AB
-f54r_L12	24	y^	AB
-f54r_L12	25	e^	AB
-f54r_L12	26	]^	AB|split2
-f54r_L12	27	m^~	AB
-f54r_L12	28	g^7	AB
-f54r_L12	29	bh^	AB
-f54r_L13	1	rz^?|?|1	AB
-f54r_L13	2	w:?	AB
-f54r_L13	3	g^dot	AB
-f54r_L13	4	w^	AB
-f54r_L13	5	S7^	AB
-f54r_L13	6	o.^	AB
-f54r_L13	7	rz^	AB
-f54r_L13	8	g^1	AB
-f54r_L13	9	f^	AB|split2
-f54r_L13	10	w^	AB
-f54r_L13	11	bh^	AB
-f54r_L13	12	Z^?	AB
-f54r_L13	13	g^~	AB
-f54r_L13	14	sq^~	AB
-f54r_L13	15	tee^	settled
-f54r_L13	16	H^1|o	settled
-f54r_L13	17	a^5	settled
-f54r_L13	18	e^dot|+	settled
-f54r_L13	19	S4^	settled
-f54r_L13	20	dl^	settled
-f54r_L13	21	p^	settled
-f54r_L13	22	w:Pure	AB
-f54r_L13	23	w:amt	AB
-f54r_L13	24	w:+	AB
-f54r_L13	25	p^	settled
-f54r_L13	26	w:parz	AB
-f54r_L14	1	w:H	AB
-f54r_L14	2	H^o|1	AB
-f54r_L14	3	]^ot	AB
-f54r_L14	4	nt^	AB
-f54r_L14	5	rz^	AB
-f54r_L14	6	g^~	AB
-f54r_L14	7	g^~	AB
-f54r_L14	8	psi^	AB
-f54r_L14	9	Lx^	AB
-f54r_L14	10	eps^7	M|split2
-f54r_L14	11	lam^1	AB
-f54r_L14	12	]^o	AB
-f54r_L14	13	m^5	AB
-f54r_L14	14	nt^	AB
-f54r_L14	15	rz^	AB
-f54r_L14	16	nt^	AB
-f54r_L14	17	phi^	AB
-f54r_L14	18	S7^#	AB
-f54r_L14	19	w:lryy	AB
-f54r_L14	20	y^	AB
-f54r_L14	21	y^	AB
-f54r_L14	22	lam^	AB
-f54r_L14	23	S4^	AB
-f54r_L14	24	m^	AB
-f54r_L14	25	a^	AB
-f54r_L14	26	#^	AB
-f54r_L14	27	w:maxims	AB
-f54r_L15	1	w:stando	AB
-f54r_L15	2	w:+	AB
-f54r_L15	3	w:ancora	AB
-f54r_L15	4	w:+	AB
-f54r_L15	5	w:la	AB
-f54r_L15	6	w:cosi	AB
-f54r_L15	7	w:+	AB
-f54r_L15	8	S4^	AB
-f54r_L15	9	e^dot|+	AB
-f54r_L15	10	a^5	AB
-f54r_L15	11	e^#	AB
-f54r_L15	12	S7^dot|+	AB
-f54r_L15	13	dl^	AB
-f54r_L15	14	w:Come	AB
-f54r_L15	15	w:+	AB
-f54r_L15	16	w:stanno	AB
-f54r_L15	17	w:+	AB
-f54r_L15	18	p^	settled
-f54r_L15	19	w:Pure	AB
-f54r_L15	20	w:+	AB
-f54r_L15	21	v^	settled
-f54r_L15	22	S^	settled
-f54r_L16	1	w:ricordera	AB
-f54r_L16	2	w:+	AB
-f54r_L16	3	w:quello	AB
-f54r_L16	4	w:+	AB
-f54r_L16	5	w:+	AB
-f54r_L16	6	N^	settled
-f54r_L16	7	w:ch~	AB
-f54r_L16	8	w:+	AB
-f54r_L16	9	w:+	AB
-f54r_L16	10	ch^	settled
-f54r_L16	11	w:li	AB
-f54r_L16	12	p^	settled
-f54r_L16	13	w:Parra	AB
-f54r_L16	14	N^	settled
-f54r_L16	15	w:e	AB
-f54r_L16	16	eps^1|1	AB
-f54r_L16	17	w:Piaciuto	AB
-f54r_L16	18	a^dot	settled
-f54r_L16	19	w:a.s.M~tr	AB
-f54r_L16	20	w:+	AB
-f54r_L16	21	S^	settled
-f54r_L16	22	Lx^	settled
-f54r_L16	23	v^	settled
-f54r_L16	24	eps^	AB
-f54r_L16	25	w:e	AB
-f54r_L16	26	m^	settled
-f54r_L16	27	w:ricordo	AB
-f54r_L16	28	w:+	AB
-f54r_L16	29	w:di	AB
-f54r_L17	1	S^	AB
-f54r_L17	2	w:s.	AB
-f54r_L17	3	w:?	AB
-f54r_L17	4	K^	AB
-f54r_L17	5	a^1	AB
-f54r_L17	6	S7^	AB
-f54r_L17	7	eps^1	AB
-f54r_L17	8	nt^	AB
-f54r_L17	9	Z^	AB
-f54r_L17	10	phi^	AB
-f54r_L17	11	]^o	AB
-f54r_L17	12	U^	AB
-f54r_L17	13	w^	AB
-f54r_L17	14	bh^	AB
-f54r_L17	15	m^5	AB
-f54r_L17	16	psi^	AB
-f54r_L17	17	lam^	AB
-f54r_L17	18	e^#	AB
-f54r_L17	19	wd^	AB
-f54r_L17	20	o.^	AB
-f54r_L17	21	e^dot|+	AB
-f54r_L17	22	y^dot	AB
-f54r_L17	23	S4^	AB
-f54r_L17	24	dl^	AB
-f54r_L17	25	w:Con	AB
-f54r_L17	26	w:+	AB
-f54r_L18	1	w:tentasi	AB
-f54r_L18	2	v^dot	AB
-f54r_L18	3	p^	AB
-f54r_L18	4	w^	AB
-f54r_L18	5	S4^	AB
-f54r_L18	6	e^dot|+	AB
-f54r_L18	7	K^	AB
-f54r_L18	8	w:lx	AB
-f54r_L18	9	w^	AB
-f54r_L18	10	w:lx	AB
-f54r_L18	11	S7^#	AB
-f54r_L18	12	eps^5	AB
-f54r_L18	13	S7^	AB
-f54r_L18	14	L^	AB
-f54r_L18	15	w^	AB
-f54r_L18	16	a^~	AB
-f54r_L18	17	y^	AB
-f54r_L18	18	S^	AB
-f54r_L18	19	dl^+	M|split2
-f54r_L18	20	w:o	AB
-f54r_L18	21	w:la	AB
-f54r_L18	22	w:oppinjoni	AB
-f54r_L19	1	w:dj	AB
-f54r_L19	2	S^	settled
-f54r_L19	3	S^	settled
-f54r_L19	4	eps^	settled
-f54r_L19	5	+^	settled
-f54r_L19	6	w:et	AB
-f54r_L19	7	tee^	settled
-f54r_L19	8	S^	settled
-f54r_L19	9	w:desidera	AB
-f54r_L19	10	w:+	AB
-f54r_L19	11	N^	settled
-f54r_L19	12	w:in	AB
-f54r_L19	13	w:tal	AB
-f54r_L19	14	w:+	AB
-f54r_L19	15	w:Caso	AB
-f54r_L19	16	w:+	AB
-f54r_L19	17	ch^	settled
-f54r_L19	18	w:n.	settled
-f54r_L19	19	w:s.	settled
-f54r_L19	20	Lx^	AB
-f54r_L19	21	U^	AB
-f54r_L19	22	w^	AB
-f54r_L19	23	bh^	AB
-f54r_L19	24	a^~	AB
-f54r_L19	25	w:ad	AB
-f54r_L19	26	]^o	AB
-f54r_L19	27	e^ot	AB
-f54r_L19	28	w:e	AB
-f54v_L01	1	L^dot|~	AB
-f54v_L01	2	S7^	AB
-f54v_L01	3	y^dot|1|dot	AB
-f54v_L01	4	bh^	AB
-f54v_L01	5	S7^#	AB
-f54v_L01	6	e^	AB
-f54v_L01	7	tee^dot	AB
-f54v_L01	8	g^	AB
-f54v_L01	9	bh^dot|dot|dot	AB
-f54v_L01	10	psi^	AB
-f54v_L01	11	lam^	AB
-f54v_L01	12	lam^5|1	AB
-f54v_L01	13	H^5	AB
-f54v_L01	14	y^	AB
-f54v_L01	15	y^	AB|split2
-f54v_L01	16	U^H	settledC
-f54v_L01	17	w^	AB
-f54v_L01	18	bh^	AB
-f54v_L01	19	a^~	AB
-f54v_L01	20	nt^	AB
-f54v_L01	21	w^	AB
-f54v_L01	22	m^~	AB
-f54v_L01	23	w^	AB
-f54v_L01	24	o.^	AB|split2
-f54v_L01	25	tee^	AB
-f54v_L01	26	e^dot	AB
-f54v_L01	27	eps^dot|1	AB
-f54v_L01	28	U^H	settledC
-f54v_L01	29	g^~	settledC
-f54v_L02	1	g^dot|dot	AB
-f54v_L02	2	S7^	AB
-f54v_L02	3	lam^	AB
-f54v_L02	4	S4^~	AB
-f54v_L02	5	dl^	AB
-f54v_L02	6	K^	AB
-f54v_L02	7	g^ot	M|split2
-f54v_L02	8	rz^	AB
-f54v_L02	9	S7^+	AB
-f54v_L02	10	g^	AB
-f54v_L02	11	a^1	AB
-f54v_L02	12	?f54v.2.12^	AB|split2
-f54v_L02	13	e^	AB
-f54v_L02	14	g^1	AB
-f54v_L02	15	U^	AB
-f54v_L02	16	w^	AB
-f54v_L02	17	rz^	AB
-f54v_L02	18	psi^	AB
-f54v_L02	19	lam^5	AB
-f54v_L02	20	phi^	AB
-f54v_L02	21	[^	AB
-f54v_L02	22	tee^	AB
-f54v_L02	23	Z^#	AB
-f54v_L02	24	eps^~	AB
-f54v_L02	25	g^	AB
-f54v_L02	26	y^~	AB
-f54v_L02	27	y^	AB
-f54v_L02	28	g^7	AB
-f54v_L03	1	w:[C]	AB
-f54v_L03	2	eps^5	AB
-f54v_L03	3	w^	AB
-f54v_L03	4	e^	AB
-f54v_L03	5	lam^5	AB
-f54v_L03	6	e^+	M|split2
-f54v_L03	7	L^	AB
-f54v_L03	8	g^~	AB
-f54v_L03	9	Z^	AB
-f54v_L03	10	S7^	AB
-f54v_L03	11	#^dot	split
-f54v_L03	12	psi^	AB
-f54v_L03	13	lam^	AB
-f54v_L03	14	lam^5	AB
-f54v_L03	15	e^+	AB
-f54v_L03	16	H^#	AB
-f54v_L03	17	wd^	AB|split2
-f54v_L03	18	w^	AB
-f54v_L03	19	lam^?	AB
-f54v_L03	20	eps^7	AB
-f54v_L03	21	m^7	AB
-f54v_L03	22	S7^	AB
-f54v_L03	23	w^dot|#	AB
-f54v_L03	24	S7^	AB
-f54v_L03	25	v^dot	M|split2
-f54v_L03	26	]^dot|o	AB
-f54v_L03	27	phi^	AB
-f54v_L04	1	o.^	AB
-f54v_L04	2	tee^	AB
-f54v_L04	3	m^5	M|split2
-f54v_L04	4	m^5	AB|split2
-f54v_L04	5	]^ot	AB
-f54v_L04	6	phi^	AB
-f54v_L04	7	lam^	AB
-f54v_L04	8	S^	AB
-f54v_L04	9	bh^	AB
-f54v_L04	10	lam^	AB
-f54v_L04	11	rz^	AB
-f54v_L04	12	a^5	AB
-f54v_L04	13	S7^	AB
-f54v_L04	14	lam^7	AB
-f54v_L04	15	phi^	AB
-f54v_L04	16	H^1|o	AB
-f54v_L04	17	m^~	AB
-f54v_L04	18	w^	AB
-f54v_L04	19	]^o	AB
-f54v_L04	20	psi^	AB
-f54v_L04	21	f^	AB|split2
-f54v_L04	22	v^	AB|split2
-f54v_L04	23	]^o|dot	AB
-f54v_L04	24	lam^1	AB
-f54v_L04	25	e^	AB
-f54v_L04	26	U^	AB|split2
-f54v_L04	27	psi^	AB
-f54v_L04	28	bh^	AB
-f54v_L04	29	rz^5	M|split2
-f54v_L04	30	?f54v.4.30^	M|split2
-f54v_L05	1	a^~	AB
-f54v_L05	2	g^	M|split2
-f54v_L05	3	rz^	AB
-f54v_L05	4	tee^	AB
-f54v_L05	5	eps^1	AB
-f54v_L05	6	m^7	AB
-f54v_L05	7	lam^	AB
-f54v_L05	8	S7^#	AB
-f54v_L05	9	e^	AB
-f54v_L05	10	wd^	AB
-f54v_L05	11	y^	AB
-f54v_L05	12	nt^7	AB|split2
-f54v_L05	13	y^	AB
-f54v_L05	14	w:[C]	AB
-f54v_L05	15	eps^	AB|split2
-f54v_L05	16	S7^H	settledC
-f54v_L05	17	]^o	AB
-f54v_L05	18	w^	split
-f54v_L05	19	nt^	AB
-f54v_L05	20	y^	AB
-f54v_L05	21	w^	AB
-f54v_L05	22	e^dot	AB
-f54v_L05	23	y^	AB
-f54v_L05	24	phi^	AB
-f54v_L05	25	nt^	AB
-f54v_L05	26	f^	AB
-f54v_L06	1	eps^1	AB
-f54v_L06	2	m^7	AB|split2
-f54v_L06	3	lam^1	AB
-f54v_L06	4	S7^	AB
-f54v_L06	5	#^	AB
-f54v_L06	6	e^	AB
-f54v_L06	7	Z^	AB
-f54v_L06	8	S7^	AB
-f54v_L06	9	lam^~	AB
-f54v_L06	10	e^	AB
-f54v_L06	11	w^	AB
-f54v_L06	12	a^~	AB
-f54v_L06	13	eps^5	AB
-f54v_L06	14	S7^	AB
-f54v_L06	15	L^	AB
-f54v_L06	16	e^	AB
-f54v_L06	17	S7^	AB
-f54v_L06	18	lam^	AB
-f54v_L06	19	H^1|o|~	AB
-f54v_L06	20	e^	AB
-f54v_L06	21	m^~	M|split2
-f54v_L06	22	w:+	AB
-f54v_L06	23	e^	AB
-f54v_L06	24	e^	AB
-f54v_L06	25	dl^	AB|split2
-f54v_L06	26	S4^	AB
-f54v_L06	27	+^	split
-f54v_L07	1	eps^	AB
-f54v_L07	2	+^M	settledC
-f54v_L07	3	w:no	AB
-f54v_L07	4	w:gh'	AB
-f54v_L07	5	w:piace	AB
-f54v_L07	6	w:mettera	AB
-f54v_L07	7	w:+	AB
-f54v_L07	8	w:+	AB
-f54v_L07	9	w:+	AB
-f54v_L07	10	w:+	AB
-f54v_L07	11	w:+	AB
-f54v_L07	12	w:+	AB
-f54v_L07	13	rz^	AB
-f54v_L07	14	tee^	AB
-f54v_L07	15	Z^dot	AB
-f54v_L07	16	Z^	AB
-f54v_L07	17	w^	AB
-f54v_L07	18	Z^	AB
-f54v_L07	19	lam^	AB
-f54v_L07	20	g^5	AB
-f54v_L07	21	Z^	AB
-f54v_L07	22	H^5	AB
-f54v_L07	23	w:H	AB
-f54v_L07	24	w:Costoro	AB
-f54v_L07	25	w:+	AB
-f54v_L07	26	w:Doma~	AB
-f54v_L07	27	w:+	AB
-f54v_L08	1	w:Sono	AB
-f54v_L08	2	w:+	AB
-f54v_L08	3	w:vuole	settledC
-f54v_L08	4	w:+	AB
-f54v_L08	5	w:.s.	AB
-f54v_L08	6	S^H	settledC
-f54v_L08	7	w:M.tn	split
-f54v_L08	8	w:+	AB
-f54v_L08	9	w:+	AB
-f54v_L08	10	w:vt	AB
-f54v_L08	11	w:liberare	AB
-f54v_L08	12	w:+	AB
-f54v_L08	13	w:+	AB
-f54v_L08	14	w:+	AB
-f54v_L08	15	w:tutta	split
-f54v_L08	16	w:+	AB
-f54v_L08	17	w:questa	AB
-f54v_L08	18	w:+	AB
-f54v_L08	19	w:+	split
-f54v_L08	20	w:+	AB
-f54v_L08	21	w:Cosa	split
-f54v_L08	22	w:+	split
-f54v_L08	23	w:sta?	AB
-f54v_L08	24	a^H	settledC
-f54v_L08	25	w:altri	AB
-f54v_L08	26	w:+	AB
-f54v_L08	27	L^	split
-f54v_L09	1	dl^	AB
-f54v_L09	2	Lx^	AB
-f54v_L09	3	[^dot	AB
-f54v_L09	4	S7^	AB
-f54v_L09	5	w:[C]	AB
-f54v_L09	6	#^dot	split
-f54v_L09	7	]^	AB
-f54v_L09	8	w^dot|#	AB
-f54v_L09	9	y^	AB
-f54v_L09	10	nt^	AB
-f54v_L09	11	bh^	AB
-f54v_L09	12	w^	AB
-f54v_L09	13	e^	AB
-f54v_L09	14	f^	AB
-f54v_L09	15	w^	AB
-f54v_L09	16	y^	AB
-f54v_L09	17	nt^	split
-f54v_L09	17.5	S7^M	settledC
-f54v_L09	18	tee^	AB
-f54v_L09	19	K^	AB
-f54v_L09	20	phi^	AB
-f54v_L09	21	rz^5	M|split2
-f54v_L09	22	rz^	AB
-f54v_L09	23	tee^	AB
-f54v_L10	1	]^	split
-f54v_L10	2	y^	AB
-f54v_L10	3	v^	M|split2
-f54v_L10	4	g^	AB
-f54v_L10	5	S7^1	AB
-f54v_L10	6	#^dot	AB
-f54v_L10	7	eps^5	settledC
-f54v_L10	8	S7^	AB
-f54v_L10	9	eps^	split
-f54v_L10	10	tee^	AB
-f54v_L10	11	Lx^	AB
-f54v_L10	12	e^#	AB
-f54v_L10	13	g^~	AB
-f54v_L10	14	y^	AB
-f54v_L10	15	Z^ot	AB
-f54v_L10	16	S7^	AB
-f54v_L10	17	lam^	AB
-f54v_L10	18	H^o|1	AB
-f54v_L10	19	eps^#	AB
-f54v_L10	20	S7^	AB
-f54v_L10	21	eps^	AB
-f54v_L10	22	tee^1	settledC
-f54v_L10	23	nt^	AB
-f54v_L10	24	e^	AB
-f54v_L10	25	S7^5	split
-f54v_L11	1	Z^dot	AB
-f54v_L11	2	y^	AB
-f54v_L11	3	nt^	AB
-f54v_L11	4	bh^	AB
-f54v_L11	5	Z^	AB
-f54v_L11	6	S7^	AB
-f54v_L11	7	p^	AB
-f54v_L11	8	S^	split
-f54v_L11	9	phi^	AB
-f54v_L11	10	w:[C]	settledC
-f54v_L11	11	w:aggiungere	settledC
-f54v_L11	12	w:[C]	AB
-f54v_L11	13	eps^	settledC
-f54v_L11	14	w:et	split
-f54v_L11	15	w:levare	AB
-f54v_L11	16	w:+	AB
-f54v_L11	17	w:+	split
-f54v_L11	18	w:+	AB
-f54v_L11	19	S4^	AB
-f54v_L11	20	y^	AB
-f54v_L11	21	S^	AB
-f54v_L11	22	]^o	AB
-f54v_L11	23	eps^1	AB
-f54v_L11	24	m^7	AB
-f54v_L11	25	S^	split
-f54v_L11	25.5	lam^	settledC
-f54v_L11	26	sq^	AB|split2
-f54v_L12	1	L^	AB
-f54v_L12	2	g^	settledC
-f54v_L12	3	[^	AB
-f54v_L12	4	S7^	AB
-f54v_L12	5	#^	AB
-f54v_L12	6	w^1	AB
-f54v_L12	7	psi^	AB
-f54v_L12	8	]^ot	AB
-f54v_L12	9	+^	settledC
-f54v_L12	10	e^	AB
-f54v_L12	11	tee^	AB
-f54v_L12	12	K^	AB
-f54v_L12	13	g^	AB
-f54v_L12	13.5	g^	settledC
-f54v_L12	14	nt^	AB
-f54v_L12	15	y^	AB
-f54v_L12	16	S4^	AB
-f54v_L12	17	Lx^	AB
-f54v_L12	18	S^	AB
-f54v_L12	19	w:Secondo	AB
-f54v_L12	20	w:+	AB
-f54v_L12	21	w:+	AB
-f54v_L12	22	ch^	AB
-f54v_L12	23	w:parrà	AB
-f54v_L12	24	N^	AB
-f54v_L12	25	eps^	AB
-f54v_L12	26	#^	AB
-f54v_L12	27	p^	AB
-f54v_L12	28	w:expe~	AB
-f54v_L13	1	w:Sarà	AB
-f54v_L13	2	w:+	AB
-f54v_L13	3	eps^	AB
-f54v_L13	4	tee^	AB
-f54v_L13	5	w:et	AB
-f54v_L13	6	w:+	settledC
-f54v_L13	7	w:+	AB
-f54v_L13	8	w:+	AB
-f54v_L13	9	+^	AB
-f54v_L13	10	Lx^	AB
-f54v_L13	11	y^	AB
-f54v_L13	12	S^	AB
-f54v_L13	13	]^o	AB
-f54v_L13	14	S7^dot|dot	AB
-f54v_L13	15	U^	AB
-f54v_L13	16	w^	AB
-f54v_L13	17	o.^	AB
-f54v_L13	18	S7^	AB
-f54v_L13	19	eps^7	settledC
-f54v_L13	20	m^~	AB
-f54v_L13	21	phi^	AB
-f54v_L13	22	y^	AB
-f54v_L13	23	S^	AB
-f54v_L13	24	]^o	AB
-f54v_L13	25	tee^	AB
-f54v_L13	26	f^	AB
-f54v_L13	27	w^	settledC
-f54v_L13	27.5	m^	settledC
-f54v_L13	28	bh^	AB
-f54v_L14	1	w:fra	AB
-f54v_L14	2	w:li	settledC
-f54v_L14	3	w:altri	AB
-f54v_L14	4	w:+	settledC
-f54v_L14	5	w:Cosi	AB
-f54v_L14	6	w:+	AB
-f54v_L14	7	w:vogliono	AB
-f54v_L14	8	w:+	settledC
-f54v_L14	9	w:+	AB
-f54v_L14	10	w:+	AB
-f54v_L14	11	S4^	AB
-f54v_L14	12	dl^	AB
-f54v_L14	13	Lx^	AB
-f54v_L14	14	H^o|1	AB
-f54v_L14	15	]^o	AB
-f54v_L14	16	g^5	AB
-f54v_L14	16.5	g^	settledC
-f54v_L14	17	]^	AB
-f54v_L14	18	g^ot	AB
-f54v_L14	19	psi^	AB
-f54v_L14	20	e^#	AB
-f54v_L14	21	L^~	AB
-f54v_L14	22	g^	AB
-f54v_L14	23	Z^	AB
-f54v_L14	24	phi^	AB
-f54v_L14	25	v^1|5	M|split2
-f54v_L15	1	bh^	AB
-f54v_L15	2	w:[C]	AB
-f54v_L15	3	g^	AB
-f54v_L15	4	Z^ot	AB
-f54v_L15	5	g^	AB
-f54v_L15	6	tee^	AB
-f54v_L15	7	Z^	AB
-f54v_L15	8	H^1	AB
-f54v_L15	9	S4^o	AB
-f54v_L15	10	dl^	AB
-f54v_L15	11	w:Contra	AB
-f54v_L15	12	w:+	settledC
-f54v_L15	13	w:+	AB
-f54v_L15	14	w:Turchi	AB
-f54v_L15	15	w:+	AB
-f54v_L15	16	w:+	AB
-f54v_L15	17	eps^	AB
-f54v_L15	18	+^	AB
-f54v_L15	19	w:luterani	AB
-f54v_L15	20	w:et	settledC
-f54v_L15	21	eps^	AB
-f54v_L15	22	+^	AB
-f54v_L15	23	w:Potr~	settledC
-f54v_L15	24	w:+	AB
-f54v_L16	1	w:essere	split
-f54v_L16	2	w:+	split
-f54v_L16	3	S^	settledC
-f54v_L16	4	w:che	AB
-f54v_L16	5	w:+	split
-f54v_L16	6	w:+	AB
-f54v_L16	7	w:Gra~	split
-f54v_L16	8	w:+	settledC
-f54v_L16	9	w:Cancellieri	AB
-f54v_L16	10	w:+	settledC
-f54v_L16	11	w:+	AB
-f54v_L16	12	w:+	AB
-f54v_L16	13	w:mi	AB
-f54v_L16	14	w:mandera	AB
-f54v_L16	15	w:+	AB
-f54v_L16	16	w:+	AB
-f54v_L16	17	w:la	settledC
-f54v_L16	18	w:nota	AB
-f54v_L16	19	w:d'	AB
-f54v_L16	20	w:quello	AB
-f54v_L16	21	w:+	AB
-f54v_L16	22	w:+	settledC
-f54v_L16	23	w:vogliono	AB
-f54v_L16	24	w:+	AB
-f54v_L17	1	w:mutare	settledC
-f54v_L17	2	w:+	AB
-f54v_L17	3	w:+	AB
-f54v_L17	4	w:+	AB
-f54v_L17	5	w:quanti	AB
-f54v_L17	6	w:+	AB
-f54v_L17	7	ch^+	settledC
-f54v_L17	8	w:et	settledC
-f54v_L17	9	w:questo	AB
-f54v_L17	10	w:Corrieri	AB
-f54v_L17	11	w:+	AB
-f54v_L17	12	w:+	settledC
-f54v_L17	13	w:Parigi	AB
-f54v_L17	14	w:+	AB
-f54v_L17	15	eps^	settledC
-f54v_L17	16	w:et	split
-f54v_L17	17	w:lamandero	AB
-f54v_L17	18	w:+	AB
-f54v_L17	19	w:+	AB
-f54v_L18	1	S4^	AB
-f54v_L18	2	dl^	AB
-f54v_L18	3	+^	AB
-f54v_L18	4	y^	AB|split2
-f54v_L18	5	y^	AB
-f54v_L18	6	lam^1	AB
-f54v_L18	7	H^1|o	AB
-f54v_L18	8	Z^ot	AB
-f54v_L18	9	w^	M|split2
-f54v_L18	10	w^1	split
-f54v_L18	11	o.^	settledC
-f54v_L18	12	bh^	AB
-f54v_L18	13	#^	settledC
-f54v_L18	13.5	S7^	settledC
-f54v_L18	14	g^dot	AB
-f54v_L18	15	lam^	AB
-f54v_L18	16	y^	AB
-f54v_L18	17	L^	AB
-f54v_L18	18	g^	AB
-f54v_L18	19	y^~	AB
-f54v_L18	20	tee^	AB
-f54v_L18	21	K^	AB
-f54v_L18	22	o.^	AB
-f54v_L18	23	S7^	AB
-f54v_L18	24	bh^	AB
-f54v_L18	25	w^	settledC
-f54v_L18	26	S7^	AB
-f54v_L18	27	o.^	AB
-f54v_L18	28	g^5	AB
-f54v_L18	29	phi^	AB
-f54v_L18	30	Z^	AB
-f54v_L18	31	[^	AB|split2
-f54v_L19	1	o.^	AB
-f54v_L19	2	bh^	AB
-f54v_L19	3	S7^	AB
-f54v_L19	4	#^	AB
-f54v_L19	5	L^	AB
-f54v_L19	6	g^~	AB
-f54v_L19	7	m^1	AB
-f54v_L19	8	g^	AB
-f54v_L19	9	S7^~	AB
-f54v_L19	10	lam^	AB
-f54v_L19	11	e^dot|+	AB
-f54v_L19	12	eps^5	AB
-f54v_L19	13	S7^	AB
-f54v_L19	14	U^5	M|split2
-f54v_L19	15	phi^	AB
-f54v_L19	16	Z^	AB
-f54v_L19	17	tee^	AB
-f54v_L19	18	e^+	AB
-f54v_L19	19	e^#	AB
-f54v_L19	20	S7^	settledC
-f54v_L19	21	#^dot|ot	AB
-f54v_L19	22	bh^	AB
-f54v_L19	23	w^	AB
-f54v_L19	24	Z^dot	AB
-f54v_L19	25	e^#	AB
-f54v_L19	26	nt^	AB
-f54v_L19	27	psi^	AB
-f54v_L19	28	w:<none>	AB
-f55r_L01	1	w:<none>	AB
-f55r_L01	2	o.^	AB
-f55r_L01	3	y^	AB
-f55r_L01	4	bh^	AB
-f55r_L01	5	e^	AB
-f55r_L01	6	tee^	AB
-f55r_L01	7	S7^	split
-f55r_L01	8	w^	settledC
-f55r_L01	9	y^	settledC
-f55r_L01	10	lam^	settledC
-f55r_L01	11	wd^~	settledC
-f55r_L01	12	bh^	AB
-f55r_L01	13	g^	AB
-f55r_L01	14	v^	AB|split2
-f55r_L01	15	Z^dot	AB
-f55r_L01	16	nt^	AB
-f55r_L01	17	y^	AB
-f55r_L01	18	e^	AB
-f55r_L01	19	w^	AB
-f55r_L01	20	psi^	split
-f55r_L01	21	e^+	settledC
-f55r_L01	22	w^	AB
-f55r_L01	23	H^5|1	AB
-f55r_L01	24	nt^	AB
-f55r_L01	25	S7^	AB
-f55r_L01	26	g^~	M|split2
-f55r_L01	27	w:[C]	AB
-f55r_L01	28	S^	AB
-f55r_L01	29	S^	AB
-f55r_L02	1	e^	AB
-f55r_L02	2	e^dot|#	AB
-f55r_L02	3	#^dot|~	AB
-f55r_L02	4	bh^	AB
-f55r_L02	5	S7^	AB
-f55r_L02	6	Z^dot	AB
-f55r_L02	7	e^	AB
-f55r_L02	8	wd^	AB
-f55r_L02	9	y^	AB
-f55r_L02	10	a^~	AB
-f55r_L02	11	e^#	settledC
-f55r_L02	12	g^7	settledC
-f55r_L02	13	a^1	AB
-f55r_L02	14	a^1	AB
-f55r_L02	15	S^	AB
-f55r_L02	16	w^	AB
-f55r_L02	17	rz^	AB
-f55r_L02	18	y^	AB
-f55r_L02	19	tee^	AB
-f55r_L02	20	?f55r.2.20^	AB|split2
-f55r_L02	21	g^	AB
-f55r_L02	22	w^	settledC
-f55r_L02	23	?f55r.2.23^	AB|split2
-f55r_L02	24	S7^	AB
-f55r_L02	25	bh^	AB
-f55r_L02	26	g^~	AB
-f55r_L02	27	y^	AB
-f55r_L02	28	S^	AB|split2
-f55r_L02	29	w:[C]	AB
-f55r_L02	30	bh^	AB
-f55r_L02	31	]^o	AB
-f55r_L02	32	lam^5	AB
-f55r_L02	33	phi^	AB
-f55r_L02	34	a^7	AB
-f55r_L03	1	w:[C]	AB
-f55r_L03	2	w:[C]	AB
-f55r_L03	3	m^1	AB
-f55r_L03	4	w^	AB
-f55r_L03	5	]^o	AB
-f55r_L03	6	lam^5	AB
-f55r_L03	7	H^1|5	AB
-f55r_L03	8	e^	AB
-f55r_L03	9	wd^	AB
-f55r_L03	10	y^	AB
-f55r_L03	11	L^	AB
-f55r_L03	12	w^	AB
-f55r_L03	13	tee^	AB
-f55r_L03	14	o.^	AB
-f55r_L03	15	nt^	AB
-f55r_L03	16	bh^	AB
-f55r_L03	17	]^o	AB
-f55r_L03	18	e^	AB
-f55r_L03	19	v^~	M|split2
-f55r_L03	20	phi^	AB
-f55r_L03	21	y^	AB
-f55r_L03	22	nt^	AB
-f55r_L03	23	o.^	settledC
-f55r_L03	24	g^3	split
-f55r_L03	25	g^~	AB
-f55r_L03	26	g^1	AB
-f55r_L03	27	e^	split
-f55r_L04	1	g^~	M|split2
-f55r_L04	2	S4^	AB
-f55r_L04	3	dl^	AB
-f55r_L04	4	p^	settledC
-f55r_L04	5	w:questo	settledC
-f55r_L04	6	w:verso	AB
-f55r_L04	7	w:et	AB
-f55r_L04	8	w:p~	AB
-f55r_L04	9	eps^	AB
-f55r_L04	10	+^	AB
-f55r_L04	11	p^	settledC
-f55r_L04	12	g^	settledC
-f55r_L04	13	w:ogni	AB
-f55r_L04	14	a^dot	AB
-f55r_L04	15	w:altro	AB
-f55r_L04	16	w:+	AB
-f55r_L04	17	w:et	AB
-f55r_L04	18	w:sopra	AB
-f55r_L04	19	w:+	AB
-f55r_L04	20	N^	settledC
-f55r_L04	21	w:addomandar~	AB
-f55r_L04	22	w:+	AB
-f55r_L04	23	w:+	AB
-f55r_L04	24	w:+	AB
-f55r_L04	25	w:+	AB
-f55r_L04	26	w:+	AB
-f55r_L05	1	y^	AB
-f55r_L05	2	w:po	AB
-f55r_L05	3	w:v.	AB
-f55r_L05	4	w:s.	AB
-f55r_L05	5	w:coferisca	AB
-f55r_L05	6	w:+	settledC
-f55r_L05	7	w:tutto	AB
-f55r_L05	8	w:[C]	AB
-f55r_L05	9	w:co~	AB
-f55r_L05	10	w:pagare	settledC
-f55r_L05	11	S^	AB
-f55r_L05	12	S^dot	settledC
-f55r_L05	13	phi^	AB
-f55r_L05	14	a^7	AB
-f55r_L05	15	g^7	AB
-f55r_L05	16	a^1	AB
-f55r_L05	17	S7^	AB
-f55r_L05	18	e^dot|+	settledC
-f55r_L05	19	L^	split
-f55r_L05	20	S7^	AB
-f55r_L05	21	S^	AB
-f55r_L05	22	w^	AB
-f55r_L05	23	o.^	AB|split2
-f55r_L05	24	rz^	AB
-f55r_L05	25	lam^5	AB
-f55r_L06	1	sq^	settledC
-f55r_L06	2	psi^	AB
-f55r_L06	3	lam^5	AB
-f55r_L06	4	eps^5	AB
-f55r_L06	5	nt^	AB
-f55r_L06	6	[^	AB
-f55r_L06	7	rz^	AB
-f55r_L06	8	g^~	AB
-f55r_L06	9	Z^	AB
-f55r_L06	10	]^o	AB
-f55r_L06	11	S7^	AB
-f55r_L06	12	e^#	AB
-f55r_L06	13	eps^5	AB
-f55r_L06	14	S7^	M|split2
-f55r_L06	15	lam^	AB
-f55r_L06	16	S^	AB
-f55r_L06	17	?f55r.6.17^	M|split2
-f55r_L06	18	rz^	AB
-f55r_L06	19	]^ot	AB
-f55r_L06	20	g^	AB
-f55r_L06	21	g^7	AB
-f55r_L06	22	]^o	AB
-f55r_L06	23	lam^	AB
-f55r_L06	24	bh^	AB
-f55r_L06	25	S7^#	AB
-f55r_L06	26	Lx^	AB
-f55r_L06	27	dl^	AB
-f55r_L06	28	w:Aduer~	settledC
-f55r_L06	29	w:+	AB
-f55r_L06	30	w:+	AB
-f55r_L07	1	w:tendo	AB
-f55r_L07	2	w:+	AB
-f55r_L07	3	S^	AB
-f55r_L07	4	S^#	AB
-f55r_L07	5	ch^	AB
-f55r_L07	6	e^	AB
-f55r_L07	7	w:questo	AB
-f55r_L07	8	S4^	settledC
-f55r_L07	9	dl^	AB
-f55r_L07	10	N^	M|split2
-f55r_L07	11	nt^	AB
-f55r_L07	12	S7^+	AB
-f55r_L07	13	bh^	AB
-f55r_L07	14	nt^	AB
-f55r_L07	15	y^	AB
-f55r_L07	16	g^	AB
-f55r_L07	17	bh^	AB
-f55r_L07	18	S7^	AB
-f55r_L07	19	#^	settledC
-f55r_L07	20	g^1	AB
-f55r_L07	21	w^	AB
-f55r_L07	22	y^	settledC
-f55r_L07	23	eps^5	AB|split2
-f55r_L07	24	S7^	AB
-f55r_L07	25	]^o	AB
-f55r_L07	26	sq^	settledC
-f55r_L08	1	Z^	AB
-f55r_L08	2	w:[C]	AB
-f55r_L08	3	bh^	AB
-f55r_L08	4	sq^o	AB
-f55r_L08	5	w^#	AB
-f55r_L08	6	rz^	AB
-f55r_L08	7	lam^	AB
-f55r_L08	8	g^1|~	AB
-f55r_L08	9	]^	AB
-f55r_L08	10	y^ot	AB
-f55r_L08	11	lam^	AB
-f55r_L08	12	lam^	AB
-f55r_L08	13	g^	AB
-f55r_L08	14	bh^	AB
-f55r_L08	15	phi^	AB
-f55r_L08	16	e^	AB
-f55r_L08	17	g^	AB
-f55r_L08	18	bh^	AB
-f55r_L08	19	[^	AB
-f55r_L08	20	o.^	AB|split2
-f55r_L08	21	w:+	AB
-f55r_L08	22	m^~	AB
-f55r_L08	23	w^	AB
-f55r_L08	24	m^~	AB
-f55r_L08	25	lam^	AB
-f55r_L08	26	bh^7	AB
-f55r_L08	27	phi^	AB
-f55r_L08	28	y^	AB
-f55r_L08	29	g^	AB
-f55r_L08	30	Z^	AB
-f55r_L08	31	g^	AB
-f55r_L08	32	Z^	AB
-f55r_L09	1	m^~	AB
-f55r_L09	2	w^	AB
-f55r_L09	3	y^	AB
-f55r_L09	4	a^7	AB
-f55r_L09	5	eps^	AB|split2
-f55r_L09	6	phi^	M|split2
-f55r_L09	7	L^	AB
-f55r_L09	8	w^	AB
-f55r_L09	9	tee^	AB
-f55r_L09	10	o.^	AB|split2
-f55r_L09	11	nt^	AB
-f55r_L09	12	bh^	AB
-f55r_L09	13	]^ot	AB
-f55r_L09	14	nt^	AB
-f55r_L09	15	]^	M|split2
-f55r_L09	16	U^	settledC
-f55r_L09	17	w^	AB
-f55r_L09	18	o.^	AB
-f55r_L09	19	S7^	AB
-f55r_L09	20	eps^7	AB
-f55r_L09	21	m^~	AB
-f55r_L09	22	rz^	AB
-f55r_L09	23	tee^	AB
-f55r_L09	24	a^1	AB
-f55r_L09	25	w:[C]	AB
-f55r_L09	26	bh^	AB
-f55r_L09	27	g^	AB
-f55r_L09	28	Z^	AB
-f55r_L09	29	phi^	AB
-f55r_L09	30	[^	AB
-f55r_L10	1	a^7	settledC
-f55r_L10	2	w^	AB
-f55r_L10	3	tee^	AB
-f55r_L10	4	o.^	AB
-f55r_L10	5	bh^	AB
-f55r_L10	6	g^~	AB
-f55r_L10	7	H^	AB
-f55r_L10	8	L^	AB
-f55r_L10	9	Lx^	AB
-f55r_L10	10	o.^	AB
-f55r_L10	11	a^1	AB
-f55r_L10	12	o.^	AB
-f55r_L10	13	e^	AB
-f55r_L10	14	nt^	AB
-f55r_L10	15	S7^	AB
-f55r_L10	16	S^	split
-f55r_L10	17	w:[C]	AB
-f55r_L10	18	eps^5	AB
-f55r_L10	19	tee^	AB
-f55r_L10	20	sq^?	AB
-f55r_L10	21	]^ot	AB
-f55r_L10	22	tee^	split
-f55r_L10	23	dl^	AB
-f55r_L10	24	p^	AB
-f55r_L10	25	w:Potra	AB
-f55r_L10	26	w:+	AB
-f55r_L10	27	w:+	AB
-f55r_L11	1	w:distinguiamo	AB
-f55r_L11	2	w:+	AB
-f55r_L11	3	w:+	settledC
-f55r_L11	4	w:<none>	AB
-f55r_L11	5	w:ogni	AB
-f55r_L11	6	w:<none>	AB
-f55r_L11	7	w:cosa	AB
-f55r_L11	8	w:+	AB
-f55r_L11	9	phi^	AB
-f55r_L11	10	S7^#	AB
-f55r_L11	11	m^5	settledC
-f55r_L11	12	f^	AB
-f55r_L11	13	w^	AB
-f55r_L11	14	?f55r.11.14^	AB|split2
-f55r_L11	15	m^	AB
-f55r_L11	16	S4^	M|split2
-f55r_L11	17	S4^	AB|split2
-f55r_L11	18	rz^	AB
-f55r_L11	19	H^1	AB
-f55r_L11	20	e^dot|+	AB
-f55r_L11	21	L^	AB
-f55r_L11	22	w^	AB
-f55r_L11	23	tee^	AB
-f55r_L11	24	o.^	AB|split2
-f55r_L11	25	nt^	AB
-f55r_L12	1	Z^dot	AB
-f55r_L12	2	phi^	AB
-f55r_L12	3	w:Et	AB
-f55r_L12	4	dl^	AB
-f55r_L12	5	eps^	AB
-f55r_L12	6	w:rimediarne	AB
-f55r_L12	7	w:+	AB
-f55r_L12	8	w:+	AB
-f55r_L12	9	w:a	AB
-f55r_L12	10	w:tutti	AB
-f55r_L12	11	a^	settledC
-f55r_L12	12	w:e	AB
-f55r_L12	13	w:disordini	settledC
-f55r_L12	14	w:+	AB
-f55r_L12	15	w:+	AB
-f55r_L12	16	w:della	AB
-f55r_L12	17	w:+	AB
-f55r_L12	18	w:chiesa	AB
-f55r_L12	19	w:+	AB
-f55r_L12	20	w:et	split
-f55r_L12	21	w:pericoli	AB
-f55r_L12	22	tee^	AB
-f55r_L12	23	w:+	AB
-f55r_L12	24	w:+	settledC
-f55r_L12	25	w:+	AB
-f55r_L12	26	w:+	AB
-f55r_L12	27	w:+	AB
-f55r_L12	28	N^	AB
-f55r_L12	29	eps^	AB
-f55r_L12	30	+^	AB
-f55r_L12	31	p^	AB
-f55r_L12	32	m^	AB
-f55r_L12	33	w:[C]	AB
-f55r_L12	34	w:+	AB
-f55r_L12	35	bh^	AB
-f55r_L13	1	e^#	AB|split2
-f55r_L13	2	tee^#	AB|split2
-f55r_L13	3	lam^	AB
-f55r_L13	4	w^	AB
-f55r_L13	5	eps^5	AB
-f55r_L13	6	H^	AB
-f55r_L13	7	eps^	AB
-f55r_L13	8	w^	AB
-f55r_L13	9	lam^	AB
-f55r_L13	10	L^7	AB
-f55r_L13	11	eps^5	AB
-f55r_L13	12	S^	settledC
-f55r_L13	13	g^	AB
-f55r_L13	14	H^1|o	AB
-f55r_L13	15	tee^	AB
-f55r_L13	16	bh^	AB
-f55r_L13	17	K^	AB
-f55r_L13	18	v^#|1	AB
-f55r_L13	19	m^1	AB
-f55r_L13	20	w^	AB
-f55r_L13	21	]^o	AB
-f55r_L13	22	Z^	AB
-f55r_L13	23	m^~	AB
-f55r_L13	24	y^	M|split2
-f55r_L13	25	g^	AB
-f55r_L13	26	o.^	AB
-f55r_L13	27	S7^	AB
-f55r_L13	28	y^	AB
-f55r_L13	29	tee^	AB
-f55r_L13	30	f^	AB
-f55r_L13	31	g^	AB
-f55r_L13	32	S^	AB
-f55r_L13	33	m^7	settledC
-f55r_L14	1	nt^	AB
-f55r_L14	2	H^1|o	AB
-f55r_L14	3	o.^	AB
-f55r_L14	4	S7^	AB
-f55r_L14	5	sq^	settledC
-f55r_L14	6	psi^	AB
-f55r_L14	7	lam^	AB
-f55r_L14	8	S4^5	AB
-f55r_L14	9	phi^	AB
-f55r_L14	10	S4^	AB
-f55r_L14	11	S^	AB
-f55r_L14	12	w:Sopra	AB
-f55r_L14	13	w:+	settledC
-f55r_L14	14	N^	AB
-f55r_L14	15	w:modo	AB
-f55r_L14	16	w:+	AB
-f55r_L14	17	w:desidera	AB
-f55r_L14	18	w:+	AB
-f55r_L14	19	w:+	AB
-f55r_L14	20	N^	AB
-f55r_L14	21	w^	AB
-f55r_L14	22	nt^	AB
-f55r_L14	23	rz^	AB
-f55r_L14	24	g^~	AB
-f55r_L14	25	nt^	AB
-f55r_L14	26	S7^	AB
-f55r_L14	27	#^	AB
-f55r_L14	28	lam^dot	AB
-f55r_L14	29	S^	AB
-f55r_L14	30	w:poco	AB
-f55r_L14	31	S7^	AB
-f55r_L15	1	w:Tutti	AB
-f55r_L15	2	w:li	AB
-f55r_L15	3	w:altri	AB
-f55r_L15	4	w:+	settledC
-f55r_L15	5	w:Pratiche	AB
-f55r_L15	6	w:+	AB
-f55r_L15	7	p^	settledC
-f55r_L15	8	S7^	AB
-f55r_L15	9	w:grate	settledC
-f55r_L15	10	w:+	AB
-f55r_L15	11	w:+	AB
-f55r_L15	12	a^5	AB
-f55r_L15	13	tee^	AB
-f55r_L15	14	lam^	AB
-f55r_L15	15	m^5|~	AB
-f55r_L15	16	g^7	AB
-f55r_L15	17	eps^5	AB
-f55r_L15	18	]^	AB
-f55r_L15	19	g^ot	AB
-f55r_L15	20	phi^	AB
-f55r_L15	21	S4^	AB
-f55r_L15	22	dl^	AB
-f55r_L15	23	w:riuscibili	AB
-f55r_L15	24	w:+	AB
-f55r_L15	25	w:+	AB
-f55r_L15	26	p^	settledC
-f55r_L15	27	w:facillima	AB
-f55r_L15	28	w:+	AB
-f55r_L15	29	w:et	AB
-f55r_L16	1	w:riuscibili	settledC
-f55r_L16	2	w:+	AB
-f55r_L16	3	w:+	AB
-f55r_L16	4	w:+	AB
-f55r_L16	5	w:+	AB
-f55r_L16	6	S4^	AB
-f55r_L16	7	Lx^	AB
-f55r_L16	8	sq^ot	AB
-f55r_L16	9	y^	AB
-f55r_L16	10	lam^	AB
-f55r_L16	11	g^	AB
-f55r_L16	12	]^o	AB
-f55r_L16	13	g^	AB
-f55r_L16	14	eps^5	AB
-f55r_L16	15	S7^	AB
-f55r_L16	16	e^#	M|split2
-f55r_L16	17	a^	AB
-f55r_L16	18	w:[C]	AB
-f55r_L16	19	rz^	AB
-f55r_L16	20	S4^	AB
-f55r_L16	21	Lx^	AB
-f55r_L16	22	w:facillima	AB
-f55r_L16	23	w:+	AB
-f55r_L16	24	w:+	AB
-f55r_L16	25	w:+	AB
-f55r_L16	26	eps^	AB
-f55r_L16	27	+^	settledC
-f55r_L16	28	w:et	AB
-f55r_L16	29	w:sanza	AB
-f55r_L16	30	w:+	settledC
-f55r_L16	31	w:+	AB
-f55r_L17	1	w:alcuno	settledC
-f55r_L17	2	w:+	AB
-f55r_L17	3	w:Pericolo	AB
-f55r_L17	4	p^	settledC
-f55r_L17	5	w:[C]	AB
-f55r_L17	6	w:+	AB
-f55r_L17	7	w:+	AB
-f55r_L17	8	w:+	AB
-f55r_L17	9	w:+	AB
-f55r_L17	10	S4^	AB
-f55r_L17	11	dl^	AB
-f55r_L17	12	+^	AB
-f55r_L17	13	v^1|#	AB
-f55r_L17	14	sq^+	settledC
-f55r_L17	15	lam^	AB
-f55r_L17	16	K^	AB
-f55r_L17	17	rz^#	AB
-f55r_L17	18	nt^	AB
-f55r_L17	19	g^	AB
-f55r_L17	20	S7^	AB
-f55r_L17	21	lam^	AB
-f55r_L17	22	phi^5	AB
-f55r_L17	23	S4^	AB
-f55r_L17	24	dl^	AB
-f55r_L17	25	w:inogni	AB
-f55r_L17	26	w:Cosa	AB
-f55r_L18	1	w:Cosa	AB
-f55r_L18	2	w:mostra	settledC
-f55r_L18	3	w:+	AB
-f55r_L18	4	w:sopra	AB
-f55r_L18	5	N^	AB
-f55r_L18	6	w:tutti	split
-f55r_L18	7	w:li	AB
-f55r_L18	8	N^	AB
-f55r_L18	9	w:altri	AB
-f55r_L18	10	w:+	AB
-f55r_L18	11	w:Cose	settledC
-f55r_L18	12	w:+	AB
-f55r_L18	13	w:+	AB
-f55r_L18	14	w:desiderano	AB
-f55r_L18	15	w:+	AB
-f55r_L18	16	w:+	AB
-f55r_L18	17	w:+	AB
-f55r_L18	18	w:+	AB
-f55r_L18	19	w:+	AB
-f55r_L18	20	w:+	AB
-f55r_L18	21	w:di	AB
-f55r_L18	22	w:+	AB
-f55r_L18	23	w:+	AB
-f55r_L18	24	S7^	M|split2
-f55r_L18	25	w:+	AB
-f55r_L18	26	w:+	AB
-f55r_L18	27	S4^dot	AB
-f55r_L18	28	dl^	AB
-f55r_L18	29	+^	AB
-f55r_L18	30	Lx^	AB
-f55r_L19	1	bh^dot	AB
-f55r_L19	2	g^	AB
-f55r_L19	3	w^	AB
-f55r_L19	4	Z^ot	AB
-f55r_L19	5	g^~	AB
-f55r_L19	6	]^o	AB
-f55r_L19	7	L^	AB
-f55r_L19	8	e^	AB
-f55r_L19	9	e^	AB
-f55r_L19	10	g^5	settledC
-f55r_L19	11	e^#	AB
-f55r_L19	12	g^1	AB
-f55r_L19	13	a^5	AB
-f55r_L19	14	tee^	AB
-f55r_L19	15	w:<none>	AB
-f55r_L19	16	Z^ot	AB
-f55r_L19	17	S7^#	AB
-f55r_L19	18	g^dot	AB
-f55r_L19	19	?f55r.19.19^	AB|split2
-f55r_L19	20	psi^	AB
-f55r_L19	21	eps^5	AB
-f55r_L19	22	g^5	AB
-f55r_L19	23	Z^	AB
-f55r_L19	24	w^	AB
-f55r_L19	25	g^	AB
-f55r_L19	26	a^1	AB
-f55r_L19	27	v^	M|split2
-f55v_L01	1	w:Truoua	AB
-f55v_L01	2	w:+	AB
-f55v_L01	3	w:ancora	AB
-f55v_L01	4	w:l'auiso	AB
-f55v_L01	5	w:+	AB
-f55v_L01	6	S4^	AB
-f55v_L01	7	dl^	AB
-f55v_L01	8	phi^	settledC
-f55v_L01	8.5	g^+	settledC
-f55v_L01	9	v^5|1	AB
-f55v_L01	10	w:<none>	AB
-f55v_L01	11	y^	AB
-f55v_L01	12	nt^	AB
-f55v_L01	13	bh^	AB
-f55v_L01	14	w^dot	AB
-f55v_L01	15	e^	AB
-f55v_L01	16	eps^5	AB
-f55v_L01	17	S7^	AB
-f55v_L01	18	p^	AB
-f55v_L01	19	g^	AB
-f55v_L01	20	v^1|1	AB
-f55v_L01	21	m^1	AB
-f55v_L01	22	bh^	AB
-f55v_L01	23	Z^	AB
-f55v_L02	1	S7^+	AB
-f55v_L02	2	g^dot	AB
-f55v_L02	3	S4^~	AB
-f55v_L02	4	dl^	AB
-f55v_L02	5	w:Jo	AB
-f55v_L02	6	w:+	settledC
-f55v_L02	7	w:d~ti	settledC
-f55v_L02	8	w:+	settledC
-f55v_L02	9	w:a.s.	settledC
-f55v_L02	10	w:+	settledC
-f55v_L02	11	w:M~tu	settledC
-f55v_L02	12	w:+	settledC
-f55v_L02	13	S4^	AB
-f55v_L02	14	dl^	AB
-f55v_L02	15	rz^	AB
-f55v_L02	16	+^	settledC
-f55v_L02	17	w^	AB
-f55v_L02	18	o.^	settledC
-f55v_L02	19	rz^	AB
-f55v_L02	20	Z^~	AB
-f55v_L02	21	e^	AB
-f55v_L02	22	wd^	AB
-f55v_L02	23	y^	AB
-f55v_L02	24	e^dot	AB
-f55v_L02	25	psi^	AB
-f55v_L02	26	m^~	AB
-f55v_L03	1	L^	AB
-f55v_L03	2	bh^	AB
-f55v_L03	3	phi^	AB
-f55v_L03	4	y^	AB
-f55v_L03	5	+^	settledC
-f55v_L03	6	g^	AB
-f55v_L03	7	]^o	AB
-f55v_L03	8	lam^	AB
-f55v_L03	9	bh^	AB
-f55v_L03	10	S7^#	AB
-f55v_L03	11	w:Cosj	AB
-f55v_L03	12	w:+	split
-f55v_L03	13	w:Cosj	AB
-f55v_L03	14	w:+	AB
-f55v_L03	15	w:+	AB
-f55v_L03	16	w:+	AB
-f55v_L03	17	w:si	AB
-f55v_L03	18	w:si	AB
-f55v_L03	19	w:+	AB
-f55v_L03	20	w:restassino	AB
-f55v_L03	21	w:+	AB
-f55v_L03	22	w:+	AB
-f55v_L03	23	w:+	AB
-f55v_L03	24	w:+	AB
-f55v_L03	25	w:+	settledC
-f55v_L03	26	w:+	AB
-f55v_L04	1	w:<none>	AB
-f55v_L04	2	w:+	AB
-f55v_L04	3	w:+	settledC
-f55v_L04	4	w:+	AB
-f55v_L04	5	w:dj	AB
-f55v_L04	6	w:+	AB
-f55v_L04	7	w:mn	AB
-f55v_L04	8	w:Purn	settledC
-f55v_L04	9	w:+	AB
-f55v_L04	10	w:bi	AB
-f55v_L04	11	bh^	AB
-f55v_L04	12	S4^	AB
-f55v_L04	13	Lx^	AB
-f55v_L04	14	+^	AB
-f55v_L04	15	lam^	AB
-f55v_L04	16	nt^~	AB
-f55v_L04	17	y^	AB
-f55v_L04	18	g^	AB
-f55v_L04	19	eps^	settledC
-f55v_L04	20	w:<none>	settledC
-f55v_L04	21	rz^	AB
-f55v_L04	22	lam^#	AB
-f55v_L04	23	w:Bisogni	AB
-f55v_L04	24	w:+	AB
-f55v_L04	25	w:+	AB
-f55v_L04	26	w:che	AB
-f55v_L04	27	w:+	AB
-f55v_L04	28	ch^	AB
-f55v_L04	29	sq^ot	AB
-f55v_L04	30	tee^	AB
-f55v_L05	1	e^#	AB
-f55v_L05	2	wd^	AB
-f55v_L05	3	y^	AB
-f55v_L05	4	e^dot|+	AB
-f55v_L05	5	psi^	AB
-f55v_L05	6	m^~	AB
-f55v_L05	7	S7^	AB
-f55v_L05	8	g^	AB
-f55v_L05	9	S7^#	AB
-f55v_L05	10	a^	AB
-f55v_L05	11	S7^+	settledC
-f55v_L05	12	]^o	AB
-f55v_L05	13	g^	AB
-f55v_L05	14	[^~	AB
-f55v_L05	15	S7^+	AB
-f55v_L05	16	S4^	AB
-f55v_L05	17	w:mi	AB
-f55v_L05	18	w:to	AB
-f55v_L05	19	w:v.s.	AB
-f55v_L05	20	w:lo	AB
-f55v_L05	21	w:lo	AB
-f55v_L05	22	w:rifarz	AB
-f55v_L05	23	g^dot	settledC
-f55v_L05	24	w:<none>	AB
-f55v_L05	25	w:+	AB
-f55v_L05	26	w:+	AB
-f55v_L05	27	w:+	AB
-f55v_L05	28	w:+	AB
-f55v_L05	29	eps^	settledC
-f55v_L06	1	w:mi	AB
-f55v_L06	2	w:lo	AB
-f55v_L06	3	w:mandj	AB
-f55v_L06	4	S7^dot	settledC
-f55v_L06	5	S4^	AB
-f55v_L06	6	rz^	AB
-f55v_L06	7	tee^	AB
-f55v_L06	8	m^1	AB
-f55v_L06	9	g^	AB
-f55v_L06	10	S7^~	AB
-f55v_L06	11	lam^	AB
-f55v_L06	12	e^#	AB
-f55v_L06	13	g^	AB
-f55v_L06	14	lam^	AB
-f55v_L06	15	rz^	AB
-f55v_L06	16	S7^#	settledC
-f55v_L06	17	m^~	AB
-f55v_L06	18	w^	AB
-f55v_L06	19	L^	AB
-f55v_L06	20	w:<none>	settledC
-f55v_L06	21	bh^	AB
-f55v_L06	22	phi^	AB
-f55v_L06	23	]^o	AB
-f55v_L06	24	e^	AB
-f55v_L06	25	lam^dot|dot	AB
-f55v_L07	1	e^+	AB
-f55v_L07	2	eps^5	AB
-f55v_L07	3	S7^#	AB
-f55v_L07	4	S7^#	AB
-f55v_L07	5	Z^dot|ot	AB
-f55v_L07	6	eps^	AB
-f55v_L07	7	S7^~	AB
-f55v_L07	8	lam^	AB
-f55v_L07	9	a^5|7	AB
-f55v_L07	10	]^o	AB
-f55v_L07	11	e^dot	AB
-f55v_L07	12	eps^1	AB
-f55v_L07	13	lam^7	settledC
-f55v_L07	14	w:<none>	AB
-f55v_L07	15	m^3	settledC
-f55v_L07	16	lam^	AB
-f55v_L07	17	S7^1	AB
-f55v_L07	18	e^	AB
-f55v_L07	19	e^dot	AB
-f55v_L07	20	#^dot|#	AB
-f55v_L07	21	w:<none>	AB
-f55v_L07	22	lam^5	AB
-f55v_L07	23	a^	AB
-f55v_L07	24	S7^	AB
-f55v_L07	25	]^o	AB
-f55v_L07	26	H^1	AB
-f55v_L07	27	tee^	AB
-f55v_L07	28	K^1	AB
-f55v_L07	29	m^1|5	AB
-f55v_L07	30	w:<none>	settledC
-f55v_L08	1	lam^5	AB
-f55v_L08	2	#^o	AB
-f55v_L08	3	wd^	AB
-f55v_L08	4	bh^	AB
-f55v_L08	5	y^	AB
-f55v_L08	6	y^	AB
-f55v_L08	7	psi^	AB
-f55v_L08	8	y^	AB
-f55v_L08	9	Z^	AB
-f55v_L08	10	g^~	AB
-f55v_L08	11	S4^	AB
-f55v_L08	12	dl^	AB
-f55v_L08	13	H^	AB
-f55v_L08	14	H^1|o	AB
-f55v_L08	15	v^	split
-f55v_L08	16	e^	AB
-f55v_L08	17	a^1	AB
-f55v_L08	18	S7^	AB
-f55v_L08	19	e^+	AB
-f55v_L08	20	S4^	AB
-f55v_L08	21	w:Assaj	AB
-f55v_L08	22	w:+	settledC
-f55v_L08	23	w:+	AB
-f55v_L08	24	w:+	settledC
-f55v_L08	25	w:+	AB
-f55v_L08	26	w:+	settledC
-f55v_L08	27	w:+	AB
-f55v_L08	28	N^	settledC
-f55v_L08	29	w:<none>	AB
-f55v_L09	1	w:?	split
-f55v_L09	2	w:+	split
-f55v_L09	3	w:+	split
-f55v_L09	4	w:+	AB
-f55v_L09	5	w:hw	AB
-f55v_L09	6	w:+	AB
-f55v_L09	7	w:<none>	AB
-f55v_L09	8	ch^	AB
-f55v_L09	9	S4^	AB
-f55v_L09	10	dl^	AB
-f55v_L09	11	tee^	settledC
-f55v_L09	12	Lx^	AB
-f55v_L09	13	g^	AB
-f55v_L09	14	S^	settledC
-f55v_L09	15	S7^	AB
-f55v_L09	16	lam^	AB
-f55v_L09	17	S7^~	AB
-f55v_L09	18	lam^	AB
-f55v_L09	19	g^1	AB
-f55v_L09	20	w:<none>	AB
-f55v_L09	21	e^#	AB
-f55v_L09	22	wd^	AB
-f55v_L09	23	y^	AB
-f55v_L09	24	w:<none>	AB
-f55v_L09	25	w^	AB
-f55v_L09	26	#^#	AB
-f55v_L09	27	w^	AB
-f55v_L09	28	w:<none>	AB
-f55v_L09	29	g^	AB
-f55v_L10	1	]^o	split
-f55v_L10	2	Lx^	settledC
-f55v_L10	3	g^1	AB
-f55v_L10	4	phi^	split
-f55v_L10	5	w:<none>	AB
-f55v_L10	6	lam^3	split
-f55v_L10	7	bh^	AB
-f55v_L10	8	S7^	AB
-f55v_L10	9	#^	AB
-f55v_L10	10	e^	AB
-f55v_L10	11	wd^	AB
-f55v_L10	12	bh^	AB
-f55v_L10	13	y^	AB
-f55v_L10	14	f^	AB
-f55v_L10	15	f^5	AB
-f55v_L10	16	e^	AB
-f55v_L10	17	Z^	AB
-f55v_L10	18	y^	AB
-f55v_L10	19	Lx^	settledC
-f55v_L10	20	w:<none>	AB
-f55v_L10	21	w^	AB
-f55v_L10	22	Lx^dot	settledC
-f55v_L10	23	S7^1	AB
-f55v_L11	1	eps^7	AB
-f55v_L11	2	S7^	AB
-f55v_L11	3	sq^ot	settledC
-f55v_L11	4	w:<none>	settledC
-f55v_L11	5	w:<none>	AB
-f55v_L11	6	#^	AB
-f55v_L11	7	H^1|o	AB
-f55v_L11	8	tee^	split
-f55v_L11	9	w^	AB
-f55v_L11	10	g^	AB
-f55v_L11	11	S7^	AB
-f55v_L11	12	y^	AB
-f55v_L11	13	g^	AB
-f55v_L11	14	]^o	AB
-f55v_L11	15	bh^	AB
-f55v_L11	16	g^	split
-f55v_L11	17	rz^	AB
-f55v_L11	18	g^1	AB
-f55v_L11	19	S7^	AB
-f55v_L11	20	#^	AB
-f55v_L11	21	S4^	AB
-f55v_L11	22	dl^	settledC
-f55v_L11	22.5	f^	settledC
-f55v_L11	23	Lx^	AB
-f55v_L12	1	w:Sanza	AB
-f55v_L12	2	w:+	AB
-f55v_L12	3	w:+	settledC
-f55v_L12	4	w:+	AB
-f55v_L12	5	w:no	AB
-f55v_L12	6	w:+	AB
-f55v_L12	7	w:no	AB
-f55v_L12	8	w:fara	AB
-f55v_L12	9	w:+	AB
-f55v_L12	10	w:<none>	AB
-f55v_L12	11	w:<none>	AB
-f55v_L12	12	w:<none>	AB
-f55v_L12	13	S4^	AB
-f55v_L12	14	y^	AB
-f55v_L12	15	nt^	AB
-f55v_L12	16	bh^	AB
-f55v_L12	17	w^	AB
-f55v_L12	18	e^dot	AB
-f55v_L12	19	phi^	AB
-f55v_L12	20	dl^	AB
-f55v_L12	21	w:Jo	AB
-f55v_L12	22	w:penso	AB
-f55v_L12	23	w:c	AB
-f55v_L12	24	w:+	AB
-f55v_L12	25	w:+	AB
-f55v_L12	26	w:+	AB
-f55v_L13	1	S4^	AB
-f55v_L13	2	Lx^	AB
-f55v_L13	3	tee^	settledC
-f55v_L13	4	w^	AB
-f55v_L13	5	y^	AB
-f55v_L13	6	S7^dot	settledC
-f55v_L13	7	nt^	split
-f55v_L13	8	g^	AB
-f55v_L13	9	H^	AB
-f55v_L13	10	H^1|o	AB
-f55v_L13	11	e^	AB
-f55v_L13	12	H^	AB
-f55v_L13	13	S7^	AB
-f55v_L13	14	#^dot	AB
-f55v_L13	15	e^dot	AB
-f55v_L13	16	S7^	AB
-f55v_L13	17	#^dot	AB
-f55v_L13	18	]^ot	AB
-f55v_L13	19	L^	AB
-f55v_L13	20	g^1	AB
-f55v_L13	21	w:<none>	AB
-f55v_L13	22	S4^	AB
-f55v_L13	23	dl^	AB
-f55v_L13	24	Lx^	AB
-f55v_L14	1	eps^1	AB
-f55v_L14	2	w:<none>	AB
-f55v_L14	3	w:Stato	AB
-f55v_L14	4	w:molto	AB
-f55v_L14	5	w:+	AB
-f55v_L14	6	w:ad	AB
-f55v_L14	7	w:<none>	settledC
-f55v_L14	8	w:proposito	AB
-f55v_L14	9	w:<none>	AB
-f55v_L14	10	w:+	AB
-f55v_L14	11	w:+	AB
-f55v_L14	12	w:+	AB
-f55v_L14	13	w:<none>	settledC
-f55v_L14	14	w:fare	AB
-f55v_L14	15	w:+	AB
-f55v_L14	16	w:intendere	AB
-f55v_L14	17	w:+	AB
-f55v_L14	18	w:+	settledC
-f55v_L14	19	w:a.s.	settledC
-f55v_L14	20	S^	settledC
-f55v_L14	21	lam^	AB
-f55v_L14	22	lam^#	AB
-f55v_L14	23	p^	AB
-f55v_L14	24	Lx^	AB
-f55v_L14	25	w:M~tr	AB
-f55v_L15	1	sq^ot	AB
-f55v_L15	2	w:<none>	AB
-f55v_L15	3	rz^	AB
-f55v_L15	4	U^	AB
-f55v_L15	5	w^	AB
-f55v_L15	6	w:<none>	AB
-f55v_L15	7	S7^5	settledC
-f55v_L15	7.5	H^	settledC
-f55v_L15	8	e^dot	AB
-f55v_L15	9	e^dot|#	AB
-f55v_L15	10	a^~	AB
-f55v_L15	11	S7^#	AB
-f55v_L15	12	eps^dot	AB
-f55v_L15	13	g^	AB
-f55v_L15	14	nt^	AB
-f55v_L15	15	]^o	AB
-f55v_L15	16	w:<none>	AB
-f55v_L15	17	sq^#	AB
-f55v_L15	18	eps^~	settledC
-f55v_L15	19	S7^	AB
-f55v_L15	20	#^	settledC
-f55v_L15	21	rz^	AB
-f55v_L15	22	Z^	AB
-f55v_L15	23	S7^	AB
-f55v_L15	24	lam^#	AB
-f55v_L16	1	a^5	AB
-f55v_L16	2	tee^	AB
-f55v_L16	3	lam^	AB
-f55v_L16	4	g^5	AB
-f55v_L16	5	a^	AB
-f55v_L16	6	g^5	AB
-f55v_L16	7	phi^1	AB
-f55v_L16	8	e^	AB
-f55v_L16	9	psi^	AB
-f55v_L16	10	g^	settledC
-f55v_L16	11	H^o|1	AB
-f55v_L16	12	]^	settledC
-f55v_L16	13	dl^	split
-f55v_L16	14	g^	AB
-f55v_L16	15	S^	AB
-f55v_L16	16	rz^	AB
-f55v_L16	17	g^5	AB
-f55v_L16	18	S7^#	AB
-f55v_L16	19	a^dot	AB
-f55v_L16	20	S^	AB
-f55v_L16	21	tee^	AB
-f55v_L16	22	lam^5	AB
-f55v_L16	23	o.^	AB
-f55v_L16	24	y^	AB
-f55v_L16	25	S7^	AB
-f55v_L16	26	w^	split
-f55v_L16	27	w:<none>	AB
-f55v_L16	28	g^	AB
-f55v_L16	29	Z^	AB
-f55v_L16	30	S4^	AB
-f55v_L16	31	dl^	AB
-f55v_L16	32	+^	AB
-f55v_L17	1	S^	settledC
-f55v_L17	2	w:M~tv	settledC
-f55v_L17	3	S^	split
-f55v_L17	4	w:restato	AB
-f55v_L17	5	w:+	split
-f55v_L17	6	w:+	AB
-f55v_L17	7	w:+	settledC
-f55v_L17	8	w:+	AB
-f55v_L17	9	f^	split
-f55v_L17	10	w:p	settledC
-f55v_L17	11	w:quello	AB
-f55v_L17	12	w:+	AB
-f55v_L17	13	ch^	AB
-f55v_L17	14	bh^dot	settledC
-f55v_L17	15	w:et	AB
-f55v_L17	16	w:si	AB
-f55v_L17	17	w:ho	settledC
-f55v_L17	18	w:fatto	AB
-f55v_L17	19	w:+	AB
-f55v_L17	20	w:+	AB
-f55v_L17	21	w:+	AB
-f55v_L18	1	w:p	split
-f55v_L18	2	w:parte	settledC
-f55v_L18	3	w:+	AB
-f55v_L18	4	w:f.s.s.	settledC
-f55v_L18	5	w:+	settledC
-f55v_L18	6	S^	settledC
-f55v_L18	7	nt^	settledC
-f55v_L18	7.5	S^~	settledC
-f55v_L18	8	w:La	AB
-f55v_L18	9	w:+	AB
-f55v_L18	10	w:M~tr	settledC
-f55v_L18	11	w:+	AB
-f55v_L18	12	w:Ces	AB
-f55v_L18	13	w:+	settledC
-f55v_L18	14	w:vederann	AB
-f55v_L18	15	w:+	settledC
-f55v_L18	16	w:+	AB
-f55v_L18	17	w:+	AB
-f55v_L18	18	w:molto	settledC
-f55v_L18	19	w:+	AB
-f55v_L18	20	w:<none>	AB
-f55v_L18	21	S4^	AB
-f55v_L18	22	dl^	AB
-f55v_L18	23	H^1|o	AB
-f55v_L18	24	]^o	AB
-f55v_L18	25	w:<none>	AB
-f55v_L19	1	eps^7	AB
-f55v_L19	2	Z^	AB
-f55v_L19	3	psi^	AB
-f55v_L19	4	eps^5	AB
-f55v_L19	5	Z^ot	AB
-f55v_L19	6	e^dot|+	AB
-f55v_L19	7	lam^	AB
-f55v_L19	8	wd^	AB
-f55v_L19	9	rz^	AB
-f55v_L19	10	e^#	AB
-f55v_L19	11	g^dot	AB
-f55v_L19	12	y^	AB
-f55v_L19	13	L^	AB
-f55v_L19	14	bh^	AB
-f55v_L19	15	eps^1	AB
-f55v_L19	16	w^	AB
-f55v_L19	17	e^dot	AB
-f55v_L19	18	S7^+	settledC
-f55v_L19	19	]^	AB
-f55v_L19	20	nt^	AB
-f55v_L19	21	S4^	AB
-f55v_L19	22	w:<none>	AB
-f55v_L19	23	eps^	AB
-f55v_L19	24	+^	AB
-f55v_L19	25	w:ment	AB
-f56r_L01	1	w:ha	AB
-f56r_L01	2	w:+	settled
-f56r_L01	3	w:Parlato	AB
-f56r_L01	4	w:+	AB
-f56r_L01	5	w:+	AB
-f56r_L01	6	w:molto	AB
-f56r_L01	7	w:Caldam~te	AB
-f56r_L01	8	w:+	AB
-f56r_L01	9	w:+	settled
-f56r_L01	10	w:+	AB
-f56r_L01	11	w:m	AB
-f56r_L01	12	w:uuolti	AB
-f56r_L01	13	w:+	AB
-f56r_L01	14	ch^	AB
-f56r_L01	15	S4^	AB
-f56r_L01	16	Lx^	settled
-f56r_L01	17	S7^	AB
-f56r_L01	18	#^	AB
-f56r_L01	19	Z^	settled
-f56r_L01	20	nt^	AB
-f56r_L01	21	S7^	AB
-f56r_L01	22	#^	settled
-f56r_L01	23	e^dot	AB
-f56r_L01	24	wd^	AB
-f56r_L01	25	S^	AB
-f56r_L01	26	w:56	settled
-f56r_L02	1	o.^	AB
-f56r_L02	2	g^	AB
-f56r_L02	3	y^	AB
-f56r_L02	4	]^ot	AB
-f56r_L02	5	g^	AB
-f56r_L02	6	S^	AB
-f56r_L02	7	S^	AB
-f56r_L02	8	o.^	settled
-f56r_L02	9	phi^	AB
-f56r_L02	10	m^1	AB
-f56r_L02	11	w^	AB
-f56r_L02	12	S^	AB
-f56r_L02	13	]^o	AB
-f56r_L02	14	H^1|o	AB
-f56r_L02	15	e^+	settled
-f56r_L02	16	m^~	AB
-f56r_L02	17	g^	AB
-f56r_L02	18	S7^	AB
-f56r_L02	19	e^#	AB
-f56r_L02	20	eps^5|dot	AB
-f56r_L02	21	S7^	AB
-f56r_L02	22	]^dot|o	AB
-f56r_L02	23	y^	AB
-f56r_L02	24	tee^	AB
-f56r_L02	25	f^	AB
-f56r_L02	26	w^	AB
-f56r_L02	27	o.^	AB
-f56r_L02	28	g^	AB
-f56r_L02	29	e^#	AB
-f56r_L02	30	nt^	AB
-f56r_L02	31	y^	AB
-f56r_L03	1	?f56r.3.1^	AB|split2
-f56r_L03	2	e^dot	AB
-f56r_L03	3	psi^	AB
-f56r_L03	4	lam^1	AB
-f56r_L03	5	m^~	AB
-f56r_L03	6	g^	AB
-f56r_L03	7	g^~	AB
-f56r_L03	8	H^	AB
-f56r_L03	9	a^	settled
-f56r_L03	9.5	sq^	settled
-f56r_L03	10	psi^	AB
-f56r_L03	11	L^	M|split2
-f56r_L03	12	phi^	AB
-f56r_L03	13	H^#	AB
-f56r_L03	14	v^1|5	AB
-f56r_L03	15	rz^	AB
-f56r_L03	16	nt^	AB
-f56r_L03	17	rz^	AB
-f56r_L03	18	S7^	settled
-f56r_L03	19	e^#	AB
-f56r_L03	20	rz^	M|split2
-f56r_L03	21	psi^	AB
-f56r_L03	22	f^	settled
-f56r_L03	23	w^	AB
-f56r_L03	24	bh^	AB
-f56r_L03	25	eps^1	AB
-f56r_L03	26	w^	AB
-f56r_L03	27	e^dot|dot	AB
-f56r_L04	1	S7^+	settled
-f56r_L04	1.5	S7^	settled
-f56r_L04	2	]^	AB
-f56r_L04	3	g^	AB|split2
-f56r_L04	4	psi^	AB
-f56r_L04	5	m^1	AB
-f56r_L04	6	w^	AB
-f56r_L04	7	S7^	AB
-f56r_L04	8	o.^	settled
-f56r_L04	8.5	nt^	settled
-f56r_L04	9	bh^	AB
-f56r_L04	10	]^ot	AB
-f56r_L04	11	v^	settled
-f56r_L04	12	v^	M|split2
-f56r_L04	13	e^#	AB
-f56r_L04	14	nt^	settled
-f56r_L04	15	rz^	AB
-f56r_L04	16	eps^5	AB
-f56r_L04	17	]^	settled
-f56r_L04	18	S7^	settled
-f56r_L04	18.5	m^	settled
-f56r_L04	19	eps^	AB
-f56r_L04	20	g^~|~	AB
-f56r_L04	21	e^dot|+	AB
-f56r_L04	22	sq^ot	AB
-f56r_L04	23	psi^	AB
-f56r_L04	24	lam^5	AB
-f56r_L04	25	]^o	AB
-f56r_L04	26	S7^+	AB
-f56r_L05	1	lam^	AB
-f56r_L05	2	bh^	AB
-f56r_L05	3	S7^	AB
-f56r_L05	4	#^	AB
-f56r_L05	5	psi^	AB
-f56r_L05	6	eps^	AB
-f56r_L05	7	w^	AB
-f56r_L05	8	o.^	settled
-f56r_L05	9	Z^dot	AB
-f56r_L05	10	S7^#	AB
-f56r_L05	11	e^#	AB
-f56r_L05	12	g^dot	AB
-f56r_L05	13	y^	AB
-f56r_L05	14	a^1	AB
-f56r_L05	15	S7^	AB
-f56r_L05	16	y^#	AB
-f56r_L05	17	dl^	settled
-f56r_L05	18	phi^	AB
-f56r_L05	19	S4^	AB
-f56r_L05	20	dl^	AB
-f56r_L05	21	w:Amsn	AB
-f56r_L05	22	w:m	AB
-f56r_L05	23	w:hn~	AB
-f56r_L05	24	w:+	settled
-f56r_L05	25	w:stritto	AB
-f56r_L05	26	w:+	AB
-f56r_L06	1	w:<none>	AB
-f56r_L06	2	w:<none>	AB
-f56r_L06	3	w:<none>	AB
-f56r_L06	4	w:mirabilm~te	AB
-f56r_L06	5	a^	AB
-f56r_L06	6	w:p̃o	AB
-f56r_L06	7	w:v·	AB
-f56r_L06	8	w:s·	AB
-f56r_L06	9	w:+	AB
-f56r_L06	10	#^#	AB
-f56r_L06	11	y^	AB
-f56r_L06	12	v^	AB
-f56r_L06	13	S^	AB
-f56r_L06	14	w:facci	AB
-f56r_L06	15	w:lopa	AB
-f56r_L06	16	N^	AB
-f56r_L06	17	w:Caldam~te	AB
-f56r_L06	18	w:+	AB
-f56r_L06	19	w:+	AB
-f56r_L06	20	w:+	AB
-f56r_L06	21	eps^	AB
-f56r_L06	22	tee^	AB
-f56r_L06	23	w:solleciti	AB
-f56r_L06	24	w:+	AB
-f56r_L06	25	w:+	AB
-f56r_L06	26	S^	AB
-f56r_L07	1	w:<none>	AB
-f56r_L07	2	w:<none>	settled
-f56r_L07	3	w:<none>	AB
-f56r_L07	4	w:<none>	settled
-f56r_L07	5	w:<none>	AB
-f56r_L07	6	w:<none>	AB
-f56r_L07	7	S^#	AB
-f56r_L07	8	S4^	AB
-f56r_L07	9	y^	AB
-f56r_L07	10	tee^	AB
-f56r_L07	11	L^	AB
-f56r_L07	12	w^	AB
-f56r_L07	13	w^	AB
-f56r_L07	14	tee^	AB
-f56r_L07	15	o.^	AB
-f56r_L07	16	U^1	settled
-f56r_L07	17	rz^	AB
-f56r_L07	18	o.^	AB
-f56r_L07	19	g^	AB
-f56r_L07	20	w^	AB
-f56r_L07	21	Z^dot|ot	AB
-f56r_L07	22	lam^	AB
-f56r_L07	23	bh^	AB
-f56r_L07	24	e^dot|#	AB
-f56r_L07	25	v^#	AB
-f56r_L07	26	y^	AB
-f56r_L07	27	y^	AB
-f56r_L07	28	Z^	AB
-f56r_L07	29	S7^	AB
-f56r_L07	30	e^#	settled
-f56r_L07	31	f^dot	AB
-f56r_L07	32	U^	settled
-f56r_L08	1	w:<none>	AB
-f56r_L08	2	w^	AB
-f56r_L08	3	bh^	AB
-f56r_L08	4	a^~	AB
-f56r_L08	5	nt^	AB
-f56r_L08	6	bh^	AB
-f56r_L08	7	phi^	AB
-f56r_L08	8	o.^	AB
-f56r_L08	9	tee^	AB
-f56r_L08	10	U^	AB
-f56r_L08	11	g^5	AB
-f56r_L08	12	]^o	AB
-f56r_L08	13	S7^	AB
-f56r_L08	14	#^o	AB
-f56r_L08	15	w^	AB
-f56r_L08	16	]^dot|o	AB
-f56r_L08	17	rz^	AB
-f56r_L08	18	a^5	AB
-f56r_L08	19	tee^	AB
-f56r_L08	20	lam^5	AB
-f56r_L08	21	a^1	AB
-f56r_L08	22	]^ot	AB
-f56r_L08	23	y^dot	AB
-f56r_L08	24	U^	AB
-f56r_L08	25	w^	AB
-f56r_L08	26	bh^	AB
-f56r_L08	27	m^	AB
-f56r_L08	28	g^	AB
-f56r_L08	29	lam^	AB
-f56r_L08	30	S^	AB
-f56r_L09	1	y^	AB
-f56r_L09	2	bh^	AB
-f56r_L09	3	g^7	AB
-f56r_L09	4	eps^5	AB
-f56r_L09	5	w^	AB
-f56r_L09	6	e^+	settled
-f56r_L09	7	lam^	AB
-f56r_L09	8	S^	AB
-f56r_L09	9	H^1|o	AB
-f56r_L09	10	a^1	AB
-f56r_L09	11	S7^	AB
-f56r_L09	12	e^dot	AB
-f56r_L09	13	S7^#	AB
-f56r_L09	14	nt^	settled
-f56r_L09	15	S7^#	AB
-f56r_L09	16	o.^	settled
-f56r_L09	17	bh^	settled
-f56r_L09	18	psi^	settled
-f56r_L09	19	e^	AB
-f56r_L09	20	g^dot|~	AB
-f56r_L09	21	eps^5	AB
-f56r_L09	22	S7^	AB
-f56r_L09	23	L^	AB
-f56r_L09	24	S7^	AB
-f56r_L09	25	g^	AB
-f56r_L09	26	#^	AB
-f56r_L09	27	S7^	AB
-f56r_L09	28	lam^	settled
-f56r_L09	29	o.^~	AB
-f56r_L09	30	S7^	AB
-f56r_L10	1	g^	AB
-f56r_L10	2	a^1	AB
-f56r_L10	3	phi^	AB
-f56r_L10	4	S4^	AB
-f56r_L10	5	tee^	AB
-f56r_L10	6	Lx^	AB
-f56r_L10	7	w:M.ta	AB
-f56r_L10	8	nt^	AB
-f56r_L10	9	w:mj	AB
-f56r_L10	10	e^	AB
-f56r_L10	11	w:hn	AB
-f56r_L10	12	w:letto	AB
-f56r_L10	13	ch^	AB
-f56r_L10	14	g^	AB
-f56r_L10	15	w:?	AB
-f56r_L10	16	tee^	AB
-f56r_L10	17	w:ct̃	AB
-f56r_L10	18	w:penſra	AB
-f56r_L10	19	N^	AB
-f56r_L11	1	w:ma	AB
-f56r_L11	2	w:ch̃	AB
-f56r_L11	3	w:gli	AB
-f56r_L11	4	w:+	AB
-f56r_L11	5	w:besognn	AB
-f56r_L11	6	w:+	AB
-f56r_L11	7	w:[C]	AB
-f56r_L11	8	S4^	AB|split2
-f56r_L11	9	psi^	M|split2
-f56r_L11	10	Z^~	M|split2
-f56r_L11	11	g^	AB|split2
-f56r_L11	12	m^~	AB
-f56r_L11	13	w:yt	AB
-f56r_L11	14	bh^	AB
-f56r_L11	15	y^	AB
-f56r_L11	16	tee^	AB
-f56r_L11	17	e^dot	AB
-f56r_L11	18	eps^1|dot	AB
-f56r_L11	19	e^#	AB
-f56r_L11	20	S4^	AB
-f56r_L11	21	dl^	M|split2
-f56r_L12	1	g^	AB
-f56r_L12	2	nt^	AB
-f56r_L12	3	y^	AB
-f56r_L12	4	S4^1	AB
-f56r_L12	5	dl^	AB
-f56r_L12	6	Lx^	AB
-f56r_L12	7	dl^	AB
-f56r_L12	8	S4^	AB
-f56r_L12	9	e^+	AB|split2
-f56r_L12	10	]^o	AB
-f56r_L12	11	Z^	AB
-f56r_L12	12	S7^	AB
-f56r_L12	13	lam^	AB
-f56r_L12	14	sq^	AB
-f56r_L12	15	y^#	AB
-f56r_L12	16	eps^1	AB
-f56r_L12	17	w^	AB
-f56r_L12	18	e^dot|+	AB
-f56r_L12	19	S7^+	AB
-f56r_L12	20	]^ot	AB
-f56r_L12	21	eps^5	AB
-f56r_L12	22	Z^ot	AB
-f56r_L12	23	Z^	AB
-f56r_L13	1	w:y	settled
-f56r_L13	2	w:[C]	settled
-f56r_L13	3	w:[C]	settled
-f56r_L13	4	w:ha	AB
-f56r_L13	5	w:+	AB
-f56r_L13	6	w:inteso	AB
-f56r_L13	7	w:quello	settled
-f56r_L13	8	w:+	AB
-f56r_L13	9	w:+	AB
-f56r_L13	10	w:che	AB
-f56r_L13	11	w:qua	settled
-f56r_L13	12	w:le	settled
-f56r_L13	13	w:+	AB
-f56r_L13	14	w:è	settled
-f56r_L13	15	w:+	AB
-f56r_L13	16	w:+	AB
-f56r_L13	17	w:stato	AB
-f56r_L13	18	w:scripto	AB
-f56r_L13	19	w:+	AB
-f56r_L13	20	w:a	AB
-f56r_L13	21	w:M	settled
-f56r_L13	22	w:[C]	AB
-f56r_L13	23	w:[C]	AB
-f56r_L13	24	w:+	settled
-f56r_L13	25	w:+	settled
-f56r_L14	1	m^1	AB
-f56r_L14	2	f^	AB
-f56r_L14	3	w^	AB
-f56r_L14	4	bh^	AB
-f56r_L14	5	S7^	AB
-f56r_L14	6	#^	AB
-f56r_L14	7	e^+	AB
-f56r_L14	8	S^	AB
-f56r_L14	9	g^	AB
-f56r_L14	10	phi^	settled
-f56r_L14	11	rz^	AB
-f56r_L14	12	Z^	AB
-f56r_L14	13	S7^	AB
-f56r_L14	14	#^dot	AB
-f56r_L14	15	lam^dot	AB
-f56r_L14	16	y^5	AB
-f56r_L14	17	e^dot|#	AB
-f56r_L14	18	]^ot	AB
-f56r_L14	19	w^	AB
-f56r_L14	20	bh^	AB
-f56r_L14	21	S7^	AB
-f56r_L14	22	#^	AB
-f56r_L14	23	dl^	settled
-f56r_L14	24	eps^5	AB
-f56r_L14	25	w:ha	AB
-f56r_L14	26	w:Aduij,	settled
-f56r_L14	27	w:+	settled
-f56r_L14	28	w:+	AB
-f56r_L14	29	w:+	settled
-f56r_L14	30	w:+	AB
-f56r_L15	1	w:<none>	settled
-f56r_L15	2	w:sonn	AB
-f56r_L15	3	w:v.	settled
-f56r_L15	4	w:s.	settled
-f56r_L15	5	w:Sappia	settled
-f56r_L15	6	w:+	settled
-f56r_L15	7	w:+	AB
-f56r_L15	8	w:+	settled
-f56r_L15	9	w:+	AB
-f56r_L15	10	w:+	AB
-f56r_L15	11	w:el	settled
-f56r_L15	12	w:+	AB
-f56r_L15	13	w:tutto	AB
-f56r_L15	14	w:et	settled
-f56r_L15	15	w:+	settled
-f56r_L15	16	w:Pensi	settled
-f56r_L15	17	w:+	settled
-f56r_L15	18	w:quello	settled
-f56r_L15	19	w:+	AB
-f56r_L15	20	w:ha	AB
-f56r_L15	21	w:aduiso	AB
-f56r_L15	22	w:+	AB
-f56r_L15	23	w:+	AB
-f56r_L15	24	w:p.ch	AB
-f56r_L15	25	w:+	settled
-f56r_L16	1	w:sono	AB
-f56r_L16	2	w:+	AB
-f56r_L16	3	w:certo	AB
-f56r_L16	4	w:+	AB
-f56r_L16	5	w:[C]	settled
-f56r_L16	6	w:[C]	settled
-f56r_L16	7	w:[C]	settled
-f56r_L16	8	eps^1	AB
-f56r_L16	9	w^	AB
-f56r_L16	10	e^dot	AB
-f56r_L16	11	S7^+	AB
-f56r_L16	12	]^ot	AB
-f56r_L16	13	y^	AB
-f56r_L16	14	y^	AB
-f56r_L16	15	g^1	AB
-f56r_L16	16	o.^	AB
-f56r_L16	17	S7^	AB
-f56r_L16	18	lam^	AB
-f56r_L16	19	g^~	AB
-f56r_L16	20	bh^	AB
-f56r_L16	21	w^	AB|split2
-f56r_L16	22	S7^	AB
-f56r_L16	23	o.^	AB
-f56r_L16	24	eps^5	AB
-f56r_L16	25	g^	AB
-f56r_L16	26	phi^	AB
-f56r_L16	27	g^	AB
-f56r_L16	28	S7^	AB
-f56r_L16	29	#^	AB
-f56r_L17	1	e^	AB
-f56r_L17	2	Lx^dot	AB
-f56r_L17	3	y^	AB
-f56r_L17	4	eps^5	AB|split2
-f56r_L17	5	S7^	AB
-f56r_L17	6	tee^	AB
-f56r_L17	7	g^	AB
-f56r_L17	8	Lx^	AB
-f56r_L17	9	S4^	AB
-f56r_L17	10	w:Sopra	AB
-f56r_L17	11	w:+	AB
-f56r_L17	12	w:la	settled
-f56r_L17	13	w:medesima	AB
-f56r_L17	14	w:+	AB
-f56r_L17	15	w:+	AB
-f56r_L17	16	w:+	AB
-f56r_L17	17	w:+	AB
-f56r_L17	18	w:materia	settled
-f56r_L17	19	w:+	AB
-f56r_L17	20	w:+	AB
-f56r_L17	21	w:mj	settled
-f56r_L17	22	w:ha	AB
-f56r_L17	23	w:+	settled
-f56r_L17	24	w:par~	AB
-f56r_L17	25	w:+	settled
-f56r_L17	26	w:+	AB
-f56r_L17	27	w:+	settled
-f56r_L17	28	w:+	AB
-f56r_L17	29	w:+	AB
-f56r_L18	1	w:lato	AB
-f56r_L18	2	w:+	AB
-f56r_L18	3	dl^	AB
-f56r_L18	4	+^	AB
-f56r_L18	5	w^	AB
-f56r_L18	6	tee^	AB
-f56r_L18	7	w^	AB
-f56r_L18	8	w^	AB
-f56r_L18	9	y^	AB
-f56r_L18	10	S7^	AB
-f56r_L18	11	eps^1	AB
-f56r_L18	12	S7^	AB
-f56r_L18	13	eps^~	AB
-f56r_L18	14	wd^	AB
-f56r_L18	15	o.^	AB|split2
-f56r_L18	16	rz^	AB
-f56r_L18	17	g^5	AB
-f56r_L18	18	phi^	AB
-f56r_L18	19	y^	AB
-f56r_L18	20	rz^	M|split2
-f56r_L18	21	S^	M|split2
-f56r_L18	22	w^	AB
-f56r_L18	23	a^1	AB
-f56r_L18	24	lam^	AB
-f56r_L18	25	a^7	AB
-f56r_L18	26	H^1	AB
-f56r_L18	27	g^	AB
-f56r_L19	1	w:[C]	AB
-f56r_L19	2	S7^	AB
-f56r_L19	3	w:ag~	AB
-f56r_L19	4	g^dot	M|split2
-f56r_L19	5	o.^	AB
-f56r_L19	6	g^~	AB
-f56r_L19	7	H^1|o	AB
-f56r_L19	8	v^	AB|split2
-f56r_L19	9	y^	AB
-f56r_L19	10	y^	AB
-f56r_L19	11	y^	AB
-f56r_L19	12	S7^	AB
-f56r_L19	13	#^	AB
-f56r_L19	14	]^o	AB
-f56r_L19	15	y^	AB
-f56r_L19	16	y^	AB
-f56r_L19	17	psi^	AB
-f56r_L19	18	eps^	AB
-f56r_L19	19	w^	AB
-f56r_L19	20	o.^	AB|split2
-f56r_L19	21	U^	AB
-f56r_L19	22	lam^	AB
-f56r_L19	23	phi^	AB
-f56r_L19	24	Lx^	AB
-f56r_L19	25	w:Jo	AB
-f56r_L19	26	w:lo	AB
-f56r_L19	27	w:Credo	settled
-f56r_L19	28	w:+	AB
-f56r_L19	29	w:+	AB
-f56r_L19	30	w:+	AB
-f56v_L01	1	bh^	settledC
-f56v_L01	2	ch^	AB
-f56v_L01	3	w:lo	AB
-f56v_L01	4	w:+	AB
-f56v_L01	5	w:Truono	AB
-f56v_L01	6	w:+	AB
-f56v_L01	7	w:g	AB
-f56v_L01	8	w:Truono	settledC
-f56v_L01	9	S^5	M|split2
-f56v_L01	10	dl^	settledC
-f56v_L01	10.5	+^	settledC
-f56v_L01	11	psi^	AB
-f56v_L01	12	nt^	AB
-f56v_L01	13	bh^	AB
-f56v_L01	14	a^5	AB
-f56v_L01	15	a^5	AB
-f56v_L01	16	tee^	AB
-f56v_L01	17	lam^	AB
-f56v_L01	18	S^	AB
-f56v_L01	19	Z^dot|ot	AB
-f56v_L01	20	g^	AB
-f56v_L01	21	lam^7	AB
-f56v_L01	22	rz^~	settled
-f56v_L01	23	g^	AB
-f56v_L01	24	a^5	split
-f56v_L01	25	tee^	AB
-f56v_L01	26	lam^	AB
-f56v_L01	27	S^	AB
-f56v_L01	28	w:li	AB
-f56v_L01	29	bh^dot	AB
-f56v_L01	30	Z^#	AB
-f56v_L01	31	phi^dot	AB
-f56v_L01	32	w^	AB
-f56v_L02	1	v^dot	AB
-f56v_L02	2	y^	settledC
-f56v_L02	3	S7^	AB
-f56v_L02	4	y^5	AB
-f56v_L02	5	w^	AB
-f56v_L02	6	Z^ot	AB
-f56v_L02	7	lam^	AB
-f56v_L02	8	g^~	AB
-f56v_L02	9	e^#	settled
-f56v_L02	10	tee^	AB
-f56v_L02	11	K^1	AB
-f56v_L02	12	phi^5	AB
-f56v_L02	13	U^	AB
-f56v_L02	14	w^	AB
-f56v_L02	15	bh^	AB
-f56v_L02	16	lam^~	AB
-f56v_L02	17	e^~	M|split2
-f56v_L02	18	bh^	AB
-f56v_L02	19	g^	AB
-f56v_L02	20	Z^	AB
-f56v_L02	21	Z^	AB
-f56v_L02	22	g^	AB
-f56v_L02	23	S^	AB
-f56v_L02	24	e^#	settled
-f56v_L02	25	p^1	AB
-f56v_L02	26	eps^o	AB
-f56v_L02	27	tee^	AB
-f56v_L02	28	p^	AB
-f56v_L02	29	w:parmj	AB
-f56v_L03	1	g^dot	settledC
-f56v_L03	2	w:q~	AB
-f56v_L03	3	w:si	AB
-f56v_L03	4	w:+	AB
-f56v_L03	5	w:+	AB
-f56v_L03	6	w:fatto	AB
-f56v_L03	7	w:gra~	AB
-f56v_L03	8	w:gra	AB
-f56v_L03	9	w:Torto	AB
-f56v_L03	10	w:+	AB
-f56v_L03	11	w:+	settledC
-f56v_L03	12	lam^	AB
-f56v_L03	13	nt^	split
-f56v_L03	14	+^	settledC
-f56v_L03	15	y^	AB
-f56v_L03	16	e^+	settled
-f56v_L03	17	e^	settledC
-f56v_L03	18	rz^	AB
-f56v_L03	19	g^7	AB
-f56v_L03	20	g^	AB
-f56v_L03	21	Z^	AB
-f56v_L03	22	S7^	AB
-f56v_L03	23	+^	split
-f56v_L03	24	rz^dot	AB
-f56v_L03	25	S7^	AB
-f56v_L03	26	lam^	AB
-f56v_L03	27	w:<none>	split
-f56v_L03	28	a^	split
-f56v_L03	29	wd^	split
-f56v_L03	30	p^	AB
-f56v_L03	31	w:<none>	AB
-f56v_L03	32	H^	settledC
-f56v_L04	1	w^	AB
-f56v_L04	2	tee^	AB
-f56v_L04	3	rz^	AB
-f56v_L04	4	y^	AB
-f56v_L04	5	lam^	AB
-f56v_L04	6	lam^1	AB
-f56v_L04	7	S7^	AB
-f56v_L04	8	U^	AB
-f56v_L04	9	w^	AB
-f56v_L04	10	bh^	AB
-f56v_L04	11	a^~	AB
-f56v_L04	12	nt^	AB
-f56v_L04	13	bh^	AB
-f56v_L04	14	dl^	AB
-f56v_L04	15	Lx^	AB
-f56v_L04	16	g^	settledC
-f56v_L04	17	w^	AB
-f56v_L04	18	tee^	AB
-f56v_L04	19	Z^dot	settledC
-f56v_L04	20	eps^~	AB
-f56v_L04	21	g^	AB
-f56v_L04	22	Z^	AB
-f56v_L04	23	phi^	AB
-f56v_L04	24	w^	AB
-f56v_L04	25	w^	AB
-f56v_L04	26	psi^	AB
-f56v_L04	27	S7^	AB
-f56v_L04	28	eps^1	AB|split2
-f56v_L04	29	S7^	AB
-f56v_L05	1	eps^~	AB
-f56v_L05	2	wd^	AB
-f56v_L05	3	o.^	AB
-f56v_L05	4	w^	AB
-f56v_L05	5	g^5	AB
-f56v_L05	6	a^	split
-f56v_L05	7	y^	settledC
-f56v_L05	7.5	y^	settledC
-f56v_L05	8	tee^	AB|split2
-f56v_L05	9	e^+	AB
-f56v_L05	10	y^	M|split2
-f56v_L05	11	psi^	AB
-f56v_L05	12	S^	M|split2
-f56v_L05	13	w^	AB
-f56v_L05	14	g^	AB
-f56v_L05	15	m^~	AB
-f56v_L05	16	w^	AB
-f56v_L05	17	m^1	AB
-f56v_L05	18	w^	AB
-f56v_L05	19	lam^~	AB
-f56v_L05	20	e^	AB
-f56v_L05	21	wd^	AB
-f56v_L05	22	bh^7	settled
-f56v_L05	23	K^1	AB
-f56v_L05	24	nt^	split
-f56v_L06	1	w:Ch	AB
-f56v_L06	2	w:faria	AB
-f56v_L06	3	w:+	AB
-f56v_L06	4	w:benn	AB
-f56v_L06	5	w:+	AB
-f56v_L06	6	w:for	AB
-f56v_L06	7	w:+	AB
-f56v_L06	8	w:da	AB
-f56v_L06	9	Lx^	AB
-f56v_L06	10	lam^	AB
-f56v_L06	11	S7^~	AB
-f56v_L06	12	lam^	AB
-f56v_L06	13	g^1|~	AB
-f56v_L06	14	nt^	AB
-f56v_L06	15	S7^	AB
-f56v_L06	16	+^	AB
-f56v_L06	17	dl^5	AB
-f56v_L06	18	S^	settledC
-f56v_L06	18.5	eps^	settledC
-f56v_L06	19	S7^	AB
-f56v_L06	20	S^~	AB
-f56v_L06	21	H^1|o	AB
-f56v_L06	22	m^	AB
-f56v_L06	23	w^	AB
-f56v_L06	24	tee^	AB
-f56v_L06	25	o.^	AB
-f56v_L07	1	w:<none>	AB
-f56v_L07	2	y^	AB
-f56v_L07	3	nt^	AB
-f56v_L07	4	o.^	AB
-f56v_L07	5	S7^	AB
-f56v_L07	6	#^	AB
-f56v_L07	7	]^	settledC
-f56v_L07	7.5	S7^	settledC
-f56v_L07	8	e^#	AB|split2
-f56v_L07	9	L^~	AB
-f56v_L07	10	S7^	settledC
-f56v_L07	11	g^	AB
-f56v_L07	12	bh^	AB
-f56v_L07	13	S7^#	AB
-f56v_L07	14	e^	AB
-f56v_L07	15	wd^	AB
-f56v_L07	16	y^	AB
-f56v_L07	17	y^	AB
-f56v_L07	18	o.^	AB
-f56v_L07	19	rz^	AB
-f56v_L07	20	g^	AB
-f56v_L07	21	e^#	settled
-f56v_L07	22	tee^	AB
-f56v_L07	23	K^	AB
-f56v_L07	24	g^	AB
-f56v_L07	25	e^#	AB
-f56v_L07	26	Z^#	AB
-f56v_L07	27	S7^dot	AB
-f56v_L07	28	+^dot	settledC
-f56v_L07	29	lam^dot	AB
-f56v_L07	30	y^1	AB
-f56v_L07	31	S7^#	AB
-f56v_L07	32	phi^dot	AB
-f56v_L08	1	w:<none>	AB
-f56v_L08	2	L^	AB
-f56v_L08	3	bh^	AB
-f56v_L08	4	g^	AB
-f56v_L08	5	S7^~	AB
-f56v_L08	6	lam^	AB
-f56v_L08	7	S7^	AB
-f56v_L08	8	phi^+	settledC
-f56v_L08	9	e^#	AB
-f56v_L08	10	tee^	AB
-f56v_L08	11	g^	AB
-f56v_L08	12	y^~	AB
-f56v_L08	13	w:a	settledC
-f56v_L08	14	e^dot	AB
-f56v_L08	15	p^1	AB
-f56v_L08	16	phi^~	settledC
-f56v_L08	17	H^o|1	AB
-f56v_L08	18	eps^7	AB
-f56v_L08	19	y^	AB
-f56v_L08	20	psi^	AB
-f56v_L08	21	eps^	settledC
-f56v_L08	22	S7^	AB
-f56v_L08	23	#^dot	AB
-f56v_L08	24	eps^5	AB
-f56v_L08	25	S7^	AB|split2
-f56v_L08	26	f^	AB
-f56v_L08	27	w^	AB
-f56v_L08	28	o.^	AB
-f56v_L08	29	w:b	AB
-f56v_L08	30	o.^dot	AB
-f56v_L08	31	nt^	AB
-f56v_L09	1	w:<none>	AB
-f56v_L09	2	w:<none>	AB
-f56v_L09	3	o.^	AB
-f56v_L09	4	m^~	AB
-f56v_L09	5	w^	AB
-f56v_L09	6	w:e	AB
-f56v_L09	7	L^	M|split2
-f56v_L09	8	+^	settledC
-f56v_L09	9	w:<none>	AB
-f56v_L09	10	sq^	settledC
-f56v_L09	11	wd^	AB
-f56v_L09	12	bh^	AB
-f56v_L09	13	g^	AB
-f56v_L09	14	e^#	AB
-f56v_L09	15	nt^	AB
-f56v_L09	16	o.^	AB
-f56v_L09	17	]^ot	AB
-f56v_L09	18	g^	AB
-f56v_L09	19	Lx^5	AB
-f56v_L09	20	p^	AB
-f56v_L09	21	p^	AB
-f56v_L09	22	w:Potem	AB
-f56v_L09	23	w:+	AB
-f56v_L09	24	w:luarn	AB
-f56v_L09	25	w:+	AB
-f56v_L09	26	w:+	AB
-f56v_L09	27	w:leter	AB
-f56v_L09	28	w:+	AB
-f56v_L09	29	w:+	split
-f56v_L09	30	w:+	AB
-f56v_L10	1	w:cito	AB
-f56v_L10	2	w:+	AB
-f56v_L10	3	w:?	AB
-f56v_L10	4	w:<none>	AB
-f56v_L10	5	w:tutto	AB
-f56v_L10	6	w:+	AB
-f56v_L10	7	sq^	M|split2
-f56v_L10	8	Lx^	AB
-f56v_L10	9	phi^	AB
-f56v_L10	10	]^#	AB
-f56v_L10	11	wd^	AB
-f56v_L10	12	o.^	AB
-f56v_L10	13	S^7	settledC
-f56v_L10	14	H^1	AB
-f56v_L10	15	g^o	AB
-f56v_L10	16	g^	AB
-f56v_L10	17	lam^1	AB
-f56v_L10	18	nt^	AB
-f56v_L10	19	o.^	AB
-f56v_L10	20	S7^	AB
-f56v_L10	21	#^	AB
-f56v_L10	22	Z^dot	AB
-f56v_L11	1	nt^dot|1	AB
-f56v_L11	2	o.^	AB
-f56v_L11	3	rz^	AB
-f56v_L11	4	w:<none>	AB
-f56v_L11	5	tee^	AB
-f56v_L11	6	S7^#	AB
-f56v_L11	7	o.^dot	AB
-f56v_L11	8	y^	settledC
-f56v_L11	9	w^	AB
-f56v_L11	10	a^1	AB
-f56v_L11	11	lam^1	AB
-f56v_L11	12	dl^	AB
-f56v_L11	13	+^	AB
-f56v_L11	14	y^	split
-f56v_L11	15	w:fare	AB
-f56v_L11	16	w:+	AB
-f56v_L11	17	w:+	AB
-f56v_L11	18	w:quali	AB
-f56v_L11	19	w:+	AB
-f56v_L11	20	w:+	AB
-f56v_L12	1	w:impresa	AB
-f56v_L12	2	w:+	AB
-f56v_L12	3	w:+	AB
-f56v_L12	4	w:+	AB
-f56v_L12	5	w:+	AB
-f56v_L12	6	w:con	AB
-f56v_L12	7	w:+	AB
-f56v_L12	8	w:e	split
-f56v_L12	9	w:n	split
-f56v_L12	10	w:fev	AB
-f56v_L12	11	tee^	settledC
-f56v_L12	12	w:h	split
-f56v_L12	13	+^dot	AB
-f56v_L12	14	Lx^	AB
-f56v_L12	15	bh^	AB
-f56v_L12	16	o.^	AB
-f56v_L12	17	S7^	AB
-f56v_L12	18	y^	AB
-f56v_L12	19	e^	AB|split2
-f56v_L12	20	w^	AB
-f56v_L12	21	o.^	AB
-f56v_L12	22	eps^1	settledC
-f56v_L12	23	bh^	AB
-f56v_L12	24	tee^	AB
-f56v_L12	25	f^	AB
-f56v_L12	26	w^	AB
-f56v_L12	27	bh^	AB
-f56v_L13	1	Z^ot	M|split2
-f56v_L13	2	phi^	AB
-f56v_L13	3	H^1|o	settledC
-f56v_L13	3.5	g^7	settledC
-f56v_L13	4	m^~	AB
-f56v_L13	5	S7^	settledC
-f56v_L13	5.5	g^	settledC
-f56v_L13	6	S^	AB
-f56v_L13	7	nt^	AB
-f56v_L13	8	o.^	AB
-f56v_L13	9	e^dot|#	AB
-f56v_L13	10	sq^?	AB
-f56v_L13	11	tee^	AB
-f56v_L13	12	H^1	AB
-f56v_L13	13	a^o	AB
-f56v_L13	14	S^	AB
-f56v_L13	15	e^dot	AB
-f56v_L13	16	e^	AB
-f56v_L13	17	S7^dot	AB
-f56v_L13	18	f^	AB
-f56v_L13	19	w^	AB
-f56v_L13	20	y^	AB
-f56v_L13	21	y^~	settledC
-f56v_L13	21.5	o.^~	split
-f56v_L13	22	S7^	AB
-f56v_L13	23	#^	AB
-f56v_L13	24	w^	AB
-f56v_L14	1	]^o|o	AB
-f56v_L14	2	Lx^	AB
-f56v_L14	3	p^dot	settledC
-f56v_L14	4	w:Pure	AB
-f56v_L14	5	w:+	AB
-f56v_L14	6	w:questo	AB
-f56v_L14	7	w:+	AB
-f56v_L14	8	w:hanno	AB
-f56v_L14	9	w:+	AB
-f56v_L14	10	w:detto	AB
-f56v_L14	11	w:+	AB
-f56v_L14	12	w:p	AB
-f56v_L14	13	w:ri	AB
-f56v_L14	14	w:+	AB
-f56v_L14	15	w:+	AB
-f56v_L14	16	eps^	settledC
-f56v_L14	17	w:et	split
-f56v_L14	18	w:no	AB
-f56v_L14	19	w:poi	AB
-f56v_L14	20	w:+	AB
-f56v_L14	21	w:+	split
-f56v_L14	22	w:uo	settledC
-f56v_L15	1	w:glino	AB
-f56v_L15	2	w:+	split
-f56v_L15	3	w:+	AB
-f56v_L15	4	w:metterlo	AB
-f56v_L15	5	w:+	AB
-f56v_L15	6	Lx^	settledC
-f56v_L15	7	+^	split
-f56v_L15	8	S7^	AB
-f56v_L15	9	wd^#	AB
-f56v_L15	10	bh^	AB
-f56v_L15	11	y^	AB
-f56v_L15	12	nt^	AB
-f56v_L15	13	bh^	AB
-f56v_L15	14	w^	AB
-f56v_L15	15	e^dot	AB
-f56v_L15	16	Lx^	AB
-f56v_L15	17	dl^	AB
-f56v_L15	18	rz^	AB
-f56v_L15	19	w:re	AB
-f56v_L15	20	S^	AB
-f56v_L15	21	w:m	AB
-f56v_L16	1	w:risponde	AB
-f56v_L16	2	w:+	AB
-f56v_L16	3	w:+	AB
-f56v_L16	4	w:+	AB
-f56v_L16	5	w:+	AB
-f56v_L16	6	w:la	AB
-f56v_L16	7	w:+	AB
-f56v_L16	8	w:la	AB
-f56v_L16	9	w:opinioni	AB
-f56v_L16	10	w:+	AB
-f56v_L16	11	w:li	AB
-f56v_L16	12	w:s	AB
-f56v_L16	13	w:s	AB
-f56v_L16	14	w:fu	AB
-f56v_L16	15	w:La	AB
-f56v_L16	16	w:+	AB
-f56v_L16	17	w:prima	AB
-f56v_L16	18	w:+	AB
-f56v_L16	19	w:parte	AB
-f56v_L16	20	w:+	AB
-f56v_L16	21	w:+	AB
-f56v_L16	22	w:mi	AB
-f56v_L16	23	w:piace	AB
-f56v_L16	24	w:+	AB
-f56v_L16	25	w:+	AB
-f56v_L17	1	w:a	AB
-f56v_L17	2	w:questa	AB
-f56v_L17	3	w:ad	AB
-f56v_L17	4	w:secondo	AB
-f56v_L17	5	w:seconda	AB
-f56v_L17	6	w:bisognerà	AB
-f56v_L17	7	w:Altrunti	AB
-f56v_L17	8	w:+	AB
-f56v_L17	9	w:+	AB
-f56v_L17	10	w:+	AB
-f56v_L17	11	w:+	AB
-f56v_L17	12	w:pensiamo	AB
-f56v_L17	13	w:pensare	AB
-f56v_L17	14	w:+	AB
-f56v_L17	15	w:il	AB
-f56v_L17	16	w:modo	AB
-f56v_L17	17	w:+	AB
-f56v_L17	18	w:+	AB
-f56v_L17	19	w:come	AB
-f56v_L17	20	w:+	AB
-f56v_L17	21	w:Cons	AB
-f56v_L17	22	w:p	AB
-f56v_L17	23	w:+	AB
-f56v_L18	1	w:habbi	AB
-f56v_L18	2	w:+	AB
-f56v_L18	3	w:+	AB
-f56v_L18	4	w:ad	AB
-f56v_L18	5	w:a	AB
-f56v_L18	6	w:+	AB
-f56v_L18	7	w:+	AB
-f56v_L18	8	w:+	AB
-f56v_L18	9	w:+	AB
-f56v_L18	10	w:ian	AB
-f56v_L18	11	w:+	AB
-f56v_L18	12	w:Altrimenti	AB
-f56v_L18	13	w:+	AB
-f56v_L18	14	w:+	AB
-f56v_L18	15	w:+	AB
-f56v_L18	16	w:+	AB
-f56v_L18	17	w:+	AB
-f56v_L18	18	w:<none>	AB
-f56v_L18	19	w:_	AB
-f56v_L18	20	S4^	split
-f56v_L18	21	sq^	settledC
-f56v_L18	22	Lx^	settledC
-f56v_L18	23	?f56v.18.23^	M|split2
-f56v_L18	24	w:mattina	AB
-f56v_L18	25	w:questo	AB
-f56v_L18	26	w:+	AB
-f56v_L18	27	w:mattina	AB
-f56v_L18	28	w:+	AB
-f56v_L18	29	w:+	AB
-f56v_L18	30	w:+	AB
-f56v_L19	1	w:E	AB
-f56v_L19	2	w:stato	AB
-f56v_L19	3	w:+	AB
-f56v_L19	4	w:Come	AB
-f56v_L19	5	w:+	AB
-f56v_L19	6	w:molto	AB
-f56v_L19	7	w:+	AB
-f56v_L19	8	w:ad	AB
-f56v_L19	9	w:lungo	AB
-f56v_L19	10	w:+	AB
-f56v_L19	11	w:+	AB
-f56v_L19	12	w:E	AB
-f56v_L19	13	w:+	AB
-f56v_L19	14	w:gra	AB
-f56v_L19	15	w:Cancellhiero	AB
-f56v_L19	16	w:+	AB
-f56v_L19	17	w:+	AB
-f56v_L19	18	w:+	AB
-f56v_L19	19	w:+	AB
-f56v_L19	20	w:+	AB
-f56v_L19	21	w:et	AB
-f56v_L19	22	w:habbiamo	AB
-f56v_L19	23	w:+	AB
-f56v_L19	24	w:+	AB
-f56v_L19	25	w:+	AB
-f56v_L19	26	w:+	AB
-f57r_L01	1	w:Parlato	AB
-f57r_L01	2	w:+	AB
-f57r_L01	3	S4^	AB
-f57r_L01	4	dl^	AB
-f57r_L01	5	tee^	split
-f57r_L01	6	a^5	AB
-f57r_L01	7	tee^	AB
-f57r_L01	8	g^dot	settledC
-f57r_L01	9	#^#	AB
-f57r_L01	10	lam^dot|~	AB
-f57r_L01	11	eps^7	AB
-f57r_L01	12	w^	AB
-f57r_L01	13	eps^1	AB
-f57r_L01	14	]^o	AB
-f57r_L01	15	g^7	AB
-f57r_L01	16	L^	AB
-f57r_L01	17	w^	AB
-f57r_L01	18	a^1	AB
-f57r_L01	19	lam^7	AB
-f57r_L01	20	bh^	AB
-f57r_L01	21	S7^	AB
-f57r_L01	22	#^#	AB
-f57r_L01	23	H^1|o	AB
-f57r_L01	24	Z^dot|ot	AB
-f57r_L01	25	w:v	AB
-f57r_L01	26	w:?	AB
-f57r_L01	27	+^	split
-f57r_L01	28	bh^dot	AB
-f57r_L01	29	w:5	AB
-f57r_L01	30	w:7	AB
-f57r_L02	1	#^	split
-f57r_L02	1.5	S7^#	settledC
-f57r_L02	2	L^dot	AB
-f57r_L02	3	g^	AB
-f57r_L02	4	y^~	AB
-f57r_L02	5	wd^	settledC
-f57r_L02	6	g^	AB
-f57r_L02	7	]^ot	AB
-f57r_L02	8	w:v	AB
-f57r_L02	9	y^	AB
-f57r_L02	10	Z^ot	AB
-f57r_L02	11	eps^	AB
-f57r_L02	12	y^	AB
-f57r_L02	13	[^	AB
-f57r_L02	14	y^	AB
-f57r_L02	15	phi^	AB
-f57r_L02	16	v^1|5	AB
-f57r_L02	17	f^	AB
-f57r_L02	18	w^	AB
-f57r_L02	19	bh^	AB
-f57r_L02	20	Z^	settledC
-f57r_L02	20.5	S7^	split
-f57r_L02	21	y^	AB
-f57r_L02	22	tee^	AB
-f57r_L02	23	f^	AB
-f57r_L02	24	w^	AB
-f57r_L02	25	y^	AB
-f57r_L02	26	eps^5	settledC
-f57r_L02	26.5	g^7	settledC
-f57r_L03	1	w:&	AB
-f57r_L03	2	a^5	AB
-f57r_L03	3	tee^	AB
-f57r_L03	4	lam^	AB
-f57r_L03	5	o.^1	AB
-f57r_L03	6	w:o	AB
-f57r_L03	7	m^	settledC
-f57r_L03	7.5	S7^	settledC
-f57r_L03	8	w^	AB
-f57r_L03	9	lam^1	AB
-f57r_L03	10	S7^	AB
-f57r_L03	11	y^	AB
-f57r_L03	12	g^	AB
-f57r_L03	13	v^	settledC
-f57r_L03	14	w:?	AB
-f57r_L03	15	]^o	AB
-f57r_L03	16	e^#|dot	AB
-f57r_L03	17	eps^	AB
-f57r_L03	18	y^	AB
-f57r_L03	19	o.^	settledC
-f57r_L03	20	g^1	AB
-f57r_L03	21	lam^	AB
-f57r_L03	22	bh^	AB
-f57r_L03	23	S7^#	AB
-f57r_L03	24	e^ot	AB
-f57r_L03	25	wd^	AB
-f57r_L03	26	y^	AB
-f57r_L03	27	eps^5	AB
-f57r_L03	28	S7^	AB
-f57r_L04	1	f^	AB
-f57r_L04	2	w^	AB
-f57r_L04	3	o.^	AB
-f57r_L04	4	w:e	AB
-f57r_L04	5	o.^dot	AB
-f57r_L04	6	lam^	AB
-f57r_L04	7	bh^	AB
-f57r_L04	8	S7^	AB
-f57r_L04	9	#^	AB
-f57r_L04	10	H^1	AB
-f57r_L04	11	g^o	AB
-f57r_L04	12	y^	AB
-f57r_L04	13	y^	AB
-f57r_L04	14	g^1	AB
-f57r_L04	15	e^+	AB
-f57r_L04	16	L^	AB
-f57r_L04	17	g^~	AB
-f57r_L04	18	m^~	AB
-f57r_L04	19	w^	AB
-f57r_L04	20	e^+	AB
-f57r_L04	21	L^dot|~	AB
-f57r_L04	22	S7^	split
-f57r_L04	23	w:g	AB
-f57r_L04	24	bh^	AB
-f57r_L04	25	S7^	AB
-f57r_L04	26	#^	AB
-f57r_L04	27	e^	AB
-f57r_L04	28	wd^	settledC
-f57r_L04	29	y^	settledC
-f57r_L05	1	sq^	AB
-f57r_L05	2	]^o	settledC
-f57r_L05	3	eps^5	AB
-f57r_L05	4	S7^	AB
-f57r_L05	5	f^	AB
-f57r_L05	6	w^	AB
-f57r_L05	7	o.^	AB
-f57r_L05	8	w:e	AB
-f57r_L05	9	lam^	AB
-f57r_L05	10	bh^7	AB
-f57r_L05	11	S7^	AB
-f57r_L05	12	#^	AB
-f57r_L05	13	Z^	AB
-f57r_L05	14	nt^	AB
-f57r_L05	15	o.^	settledC
-f57r_L05	16	rz^	AB
-f57r_L05	17	S7^	AB
-f57r_L05	18	#^	AB
-f57r_L05	19	m^dot	settledC
-f57r_L05	20	lam^	AB
-f57r_L05	21	w^~	AB
-f57r_L05	22	g^dot	AB
-f57r_L05	23	Z^ot	AB
-f57r_L05	24	]^ot	settledC
-f57r_L05	25	g^	AB
-f57r_L05	26	Z^	settledC
-f57r_L05	27	y^	AB
-f57r_L05	28	e^	AB
-f57r_L06	1	nt^	AB
-f57r_L06	2	bh^	AB
-f57r_L06	3	e^dot	AB
-f57r_L06	4	sq^1	AB
-f57r_L06	5	tee^	AB
-f57r_L06	6	H^1|o	AB
-f57r_L06	7	m^1	AB
-f57r_L06	8	w^	AB
-f57r_L06	9	lam^7	AB
-f57r_L06	10	eps^~	AB
-f57r_L06	11	wd^	AB
-f57r_L06	12	y^	AB
-f57r_L06	13	m^~	AB
-f57r_L06	14	w^	AB
-f57r_L06	15	]^o	AB
-f57r_L06	16	eps^~	AB
-f57r_L06	17	S7^	AB
-f57r_L06	18	lam^	AB
-f57r_L06	19	y^7	AB
-f57r_L06	20	g^	split
-f57r_L06	21	]^~	AB
-f57r_L06	22	rz^	AB
-f57r_L06	23	Z^	AB
-f57r_L06	24	rz^	AB
-f57r_L07	1	w^	AB
-f57r_L07	2	eps^7	AB
-f57r_L07	3	S7^	AB
-f57r_L07	4	lam^5	AB
-f57r_L07	5	e^#	AB
-f57r_L07	6	p^1	AB
-f57r_L07	7	o.^o	AB
-f57r_L07	8	bh^	AB
-f57r_L07	9	y^	AB
-f57r_L07	10	bh^	AB
-f57r_L07	11	e^	AB
-f57r_L07	12	w:e	AB
-f57r_L07	13	bh^	AB
-f57r_L07	14	H^1|o	AB
-f57r_L07	15	m^	settledC
-f57r_L07	15.5	S7^	settledC
-f57r_L07	16	f^	AB
-f57r_L07	17	w^	settledC
-f57r_L07	17.5	S7^	settledC
-f57r_L07	18	y^	AB
-f57r_L07	19	w:&	AB
-f57r_L07	20	g^	AB
-f57r_L07	21	w^	AB
-f57r_L07	22	Z^~	AB
-f57r_L07	23	w^	settledC
-f57r_L07	23.5	g^1	settledC
-f57r_L07	24	e^#|dot	AB
-f57r_L07	25	eps^~	AB
-f57r_L08	1	S7^	AB
-f57r_L08	2	lam^5	AB
-f57r_L08	3	a^	settledC
-f57r_L08	4	]^o	AB
-f57r_L08	5	e^	AB
-f57r_L08	6	eps^1	AB
-f57r_L08	7	lam^7	AB
-f57r_L08	8	m^~	AB
-f57r_L08	9	w^	AB
-f57r_L08	10	]^o	AB
-f57r_L08	11	g^~	AB
-f57r_L08	12	g^~	split
-f57r_L08	13	lam^	AB
-f57r_L08	14	lam^	AB
-f57r_L08	15	S^	AB
-f57r_L08	16	lam^	AB
-f57r_L08	17	bh^	AB
-f57r_L08	18	S7^	AB
-f57r_L08	19	#^	AB
-f57r_L08	20	e^dot	AB
-f57r_L08	21	g^~	AB
-f57r_L08	22	#^	settledC
-f57r_L08	22.5	o.^	settledC
-f57r_L08	23	bh^	AB
-f57r_L08	24	]^o	AB
-f57r_L08	25	m^	settledC
-f57r_L08	26	nt^	AB
-f57r_L08	27	rz^	AB
-f57r_L09	1	nt^	AB
-f57r_L09	2	o.^	AB
-f57r_L09	3	#^	split
-f57r_L09	3.5	S7^#	settledC
-f57r_L09	4	#^	split
-f57r_L09	4.5	e^#	settledC
-f57r_L09	5	sq^1	AB
-f57r_L09	6	]^ot	AB
-f57r_L09	7	eps^1	AB
-f57r_L09	8	w:<none>	AB
-f57r_L09	9	e^#	AB
-f57r_L09	10	g^1	AB
-f57r_L09	11	w:H	AB
-f57r_L09	12	o.^	settledC
-f57r_L09	12.5	S7^	settledC
-f57r_L09	13	bh^	settledC
-f57r_L09	13.1	w^	settledC
-f57r_L09	13.2	S7^	settledC
-f57r_L09	13.3	o.^	settledC
-f57r_L09	14	a^5	AB
-f57r_L09	15	e^#	AB
-f57r_L09	16	g^dot	AB
-f57r_L09	17	w:<none>	AB
-f57r_L09	18	g^	settledC
-f57r_L09	19	g^5	AB
-f57r_L09	20	S7^	AB
-f57r_L09	21	eps^	AB
-f57r_L09	22	tee^	AB
-f57r_L10	1	nt^	AB
-f57r_L10	2	e^#	AB
-f57r_L10	3	phi^	AB
-f57r_L10	4	]^o	AB
-f57r_L10	5	e^dot	AB
-f57r_L10	6	psi^	AB
-f57r_L10	7	m^~	settledC
-f57r_L10	8	lam^dot	AB
-f57r_L10	9	H^1|o	AB
-f57r_L10	10	g^	AB
-f57r_L10	11	psi^~	AB
-f57r_L10	12	lam^	AB
-f57r_L10	13	w:o	AB
-f57r_L10	14	e^dot|dot	AB
-f57r_L10	15	a^7	AB
-f57r_L10	16	S7^	split
-f57r_L10	17	bh^	AB
-f57r_L10	18	e^	AB
-f57r_L10	19	g^~	AB
-f57r_L10	20	#^	settledC
-f57r_L11	1	phi^	AB
-f57r_L11	2	phi^	AB
-f57r_L11	3	e^dot	AB
-f57r_L11	4	a^5	AB
-f57r_L11	5	e^dot	AB
-f57r_L11	6	S7^	AB
-f57r_L11	7	g^+	AB
-f57r_L11	8	g^1	AB
-f57r_L11	9	w:&	AB
-f57r_L11	10	eps^5	AB
-f57r_L11	11	S7^~	AB
-f57r_L11	12	o.^	AB
-f57r_L11	13	rz^	AB
-f57r_L11	14	g^~	AB
-f57r_L11	15	o.^	settledC
-f57r_L11	15.5	S7^	settledC
-f57r_L11	16	S7^	AB
-f57r_L11	17	y^	AB
-f57r_L11	18	w^	AB
-f57r_L11	19	+^	settledC
-f57r_L11	20	o.^	AB
-f57r_L11	21	f^dot|dot	AB
-f57r_L12	1	w^	AB
-f57r_L12	2	o.^	AB
-f57r_L12	3	phi^	AB
-f57r_L12	4	v^7	AB
-f57r_L12	5	g^	AB
-f57r_L12	6	y^	AB
-f57r_L12	7	K^	AB
-f57r_L12	8	S^	AB
-f57r_L12	9	o.^	settledC
-f57r_L12	9.5	nt^	settledC
-f57r_L12	10	e^dot	AB
-f57r_L12	11	eps^1	AB
-f57r_L12	12	S^	AB
-f57r_L12	13	K^	AB
-f57r_L12	14	o.^dot	AB
-f57r_L12	15	S7^	AB
-f57r_L12	16	Z^	AB
-f57r_L12	17	psi^	AB
-f57r_L12	18	lam^	AB
-f57r_L12	19	w^	AB
-f57r_L12	20	w:m~	AB
-f57r_L12	21	g^	AB
-f57r_L12	21.5	H^	settledC
-f57r_L12	22	v^ot	AB
-f57r_L13	1	Z^	AB
-f57r_L13	2	nt^	AB
-f57r_L13	3	y^	AB
-f57r_L13	4	w:a	AB
-f57r_L13	5	w^	split
-f57r_L13	6	Z^ot	AB
-f57r_L13	7	nt^	AB
-f57r_L13	8	o.^	AB
-f57r_L13	9	rz^	AB
-f57r_L13	10	S7^#	AB
-f57r_L13	11	]^dot|o	AB
-f57r_L13	12	eps^	AB
-f57r_L13	13	y^	AB
-f57r_L13	14	o.^	AB
-f57r_L13	15	rz^	AB
-f57r_L13	16	g^5	AB
-f57r_L13	17	lam^	split
-f57r_L13	17.5	v^	settledC
-f57r_L13	18	v^5|1	AB
-f57r_L13	19	m^	AB
-f57r_L13	20	bh^	AB
-f57r_L13	21	w^	settledC
-f57r_L13	21.5	o.^	settledC
-f57r_L13	22	o.^	AB
-f57r_L13	23	nt^	AB
-f57r_L14	1	g^1	AB
-f57r_L14	2	g^	AB
-f57r_L14	3	y^~	AB
-f57r_L14	4	bh^	AB
-f57r_L14	5	a^1	AB
-f57r_L14	6	#^	settledC
-f57r_L14	7	o.^	AB
-f57r_L14	8	w^	AB
-f57r_L14	9	S4^	AB
-f57r_L14	10	dl^	settledC
-f57r_L14	11	rz^	AB
-f57r_L14	12	tee^	AB
-f57r_L14	13	eps^1	AB
-f57r_L14	14	S7^	AB
-f57r_L14	15	eps^~	AB
-f57r_L14	16	wd^	AB
-f57r_L14	17	o.^	AB
-f57r_L14	18	rz^	AB
-f57r_L14	19	g^~	AB
-f57r_L14	20	y^	settledC
-f57r_L14	20.5	y^	settledC
-f57r_L14	21	L^	AB
-f57r_L14	22	S7^	AB
-f57r_L14	23	lam^	AB
-f57r_L14	24	w:?	AB
-f57r_L14	25	g^	settledC
-f57r_L14	26	y^	settledC
-f57r_L14	27	H^1|o	AB
-f57r_L15	1	S7^	AB
-f57r_L15	2	w^	AB
-f57r_L15	3	y^	settledC
-f57r_L15	3.5	S^	split
-f57r_L15	4	S7^	AB
-f57r_L15	5	Z^	AB
-f57r_L15	6	y^5	AB
-f57r_L15	7	g^1	AB
-f57r_L15	8	w:?	AB
-f57r_L15	9	H^	settledC
-f57r_L15	10	g^1	AB
-f57r_L15	11	w:&	AB
-f57r_L15	12	Z^	AB
-f57r_L15	13	w:h	AB
-f57r_L15	14	w^	AB
-f57r_L15	15	y^	AB
-f57r_L15	16	S7^	settledC
-f57r_L15	16.5	lam^	settledC
-f57r_L15	17	H^1	AB
-f57r_L15	18	e^o|#	AB
-f57r_L15	19	wd^	AB
-f57r_L15	20	bh^	AB
-f57r_L15	21	y^	AB
-f57r_L15	22	nt^	AB
-f57r_L15	23	bh^	AB
-f57r_L15	24	w^	AB
-f57r_L16	1	w:e	AB
-f57r_L16	2	lam^	AB
-f57r_L16	3	w:o	AB
-f57r_L16	4	bh^	AB
-f57r_L16	5	sq^ot	AB
-f57r_L16	6	wd^	AB
-f57r_L16	7	bh^	AB
-f57r_L16	8	H^o|1	AB
-f57r_L16	9	o.^	AB
-f57r_L16	10	bh^	AB
-f57r_L16	11	psi^	AB
-f57r_L16	12	eps^	AB
-f57r_L16	13	w^	AB
-f57r_L16	14	o.^	AB
-f57r_L16	15	Z^	AB
-f57r_L16	16	e^	AB
-f57r_L16	17	g^dot	AB
-f57r_L16	18	w:b	AB
-f57r_L16	19	w^	AB
-f57r_L16	20	y^	AB
-f57r_L16	21	rz^	AB
-f57r_L16	22	Z^	settledC
-f57r_L16	23	g^5	AB
-f57r_L16	24	phi^	AB
-f57r_L16	25	]^o	AB
-f57r_L17	1	g^	AB
-f57r_L17	2	psi^	AB
-f57r_L17	3	m^~	AB
-f57r_L17	4	w:e	AB
-f57r_L17	5	o.^	AB
-f57r_L17	6	phi^	settledC
-f57r_L17	6.5	w:_	split
-f57r_L17	7	w:?	AB
-f57r_L17	8	S7^	AB
-f57r_L17	9	o.^	AB
-f57r_L17	10	rz^	AB
-f57r_L17	11	w:?	AB
-f57r_L17	12	nt^	AB
-f57r_L17	13	g^~	AB
-f57r_L17	14	S4^	AB
-f57r_L18	1	#^	AB
-f57r_L18	2	#^	AB
-f57r_L18	3	f^	AB
-f57r_L18	4	S7^	split
-f57r_L18	5	S4^1	AB
-f57r_L18	6	dl^	AB
-f57r_L18	7	Z^	AB
-f57r_L18	8	S7^#	AB
-f57r_L18	9	phi^	AB
-f57r_L18	10	L^	AB
-f57r_L18	11	g^	AB
-f57r_L18	12	Z^	AB
-f57r_L18	13	psi^	AB
-f57r_L18	14	lam^5	AB
-f57r_L18	15	rz^	AB
-f57r_L18	16	nt^	AB
-f57r_L18	17	+^ot	AB
-f57r_L18	18	S7^	AB
-f57r_L18	19	w:h	AB
-f57r_L18	20	bh^dot	AB
-f57r_L18	21	S7^	AB
-f57r_L18	22	bh^	settledC
-f57r_L18	23	w^	AB
-f57r_L19	1	o.^	AB
-f57r_L19	2	S7^	AB
-f57r_L19	3	eps^7	AB
-f57r_L19	4	m^~	AB
-f57r_L19	5	phi^	AB
-f57r_L19	6	e^#	AB
-f57r_L19	7	g^	AB
-f57r_L19	8	e^#	AB
-f57r_L19	9	g^	settledC
-f57r_L19	10	]^o	AB
-f57r_L19	11	S7^	AB
-f57r_L19	12	psi^#	AB
-f57r_L19	13	f^	split
-f57r_L19	14	w^	AB
-f57r_L19	15	y^	AB
-f57r_L19	16	K^	AB
-f57r_L19	17	a^7	AB
-f57r_L19	18	eps^7	AB
-f57r_L19	19	lam^	AB
-f57r_L19	20	y^7	AB
-f57r_L19	21	m^~	AB
-f57r_L19	22	g^5	AB
-f57r_L19	23	nt^	settledC
-f57r_L19	24	S7^	AB
-f57r_L19	25	tee^	split
-f57r_L19	25.5	y^7	settledC
-f57r_L19	26	S7^	AB
-f57r_L19	27	eps^7	AB
-f57r_L19	28	eps^5	AB
-f57r_L19	29	S7^	AB
-f57r_L19	30	w:<none>	AB
-f57v_L01	1	]^o|dot	settledC
-f57v_L01	2	o.^dot	AB
-f57v_L01	3	w:Et	settledC
-f57v_L01	4	w:+	settledC
-f57v_L01	5	w:Prometto	settledC
-f57v_L01	6	w:+	AB
-f57v_L01	7	w:+	settledC
-f57v_L01	8	w:aura	AB
-f57v_L01	9	w:+	AB
-f57v_L01	10	w:.s.	AB
-f57v_L01	11	S4^	AB
-f57v_L01	12	dl^	AB
-f57v_L01	13	+^	settledC
-f57v_L01	14	Lx^	AB
-f57v_L01	15	w^1|5	settledC
-f57v_L01	16	y^	AB
-f57v_L01	17	y^	AB
-f57v_L01	18	g^~	AB
-f57v_L01	19	a^	settledC
-f57v_L01	20	S^	settledC
-f57v_L01	21	a^1	settledC
-f57v_L01	22	o.^	AB
-f57v_L01	23	m^7	AB
-f57v_L01	24	nt^	AB
-f57v_L01	25	y^	AB
-f57v_L01	26	S^	AB
-f57v_L02	1	y^	AB
-f57v_L02	2	y^	AB
-f57v_L02	3	Z^	settledC
-f57v_L02	4	g^~	AB
-f57v_L02	5	sq^	AB
-f57v_L02	6	nt^	AB
-f57v_L02	7	psi^	AB
-f57v_L02	8	lam^~	settledC
-f57v_L02	9	w^	AB
-f57v_L02	10	rz^	AB
-f57v_L02	11	#^o	settledC
-f57v_L02	12	w:[C]	AB
-f57v_L02	13	phi^	settledC
-f57v_L02	14	g^	AB
-f57v_L02	15	psi^	AB
-f57v_L02	16	m^~	AB
-f57v_L02	17	w:[C]	AB
-f57v_L02	18	lam^	AB
-f57v_L02	19	o.^ot	AB
-f57v_L02	20	S4^	AB
-f57v_L02	21	dl^	AB
-f57v_L02	22	Lx^	AB
-f57v_L02	23	w:<none>	settledC
-f57v_L03	1	S4^	AB
-f57v_L03	2	dl^	settledC
-f57v_L03	3	Lx^	AB
-f57v_L03	4	e^	settledC
-f57v_L03	5	lam^	AB
-f57v_L03	6	w:[C]	AB
-f57v_L03	7	bh^	AB
-f57v_L03	8	S^	AB
-f57v_L03	9	Z^	AB
-f57v_L03	10	wd^	AB
-f57v_L03	11	w:[C]	AB
-f57v_L03	12	H^	AB
-f57v_L03	13	e^dot	AB
-f57v_L03	14	g^	AB
-f57v_L03	15	w:[C]	AB
-f57v_L03	16	w^	AB
-f57v_L03	17	y^	AB
-f57v_L03	18	y^	AB
-f57v_L03	19	e^	AB
-f57v_L03	20	w:[C]	AB
-f57v_L03	21	w:[C]	AB
-f57v_L03	22	e^#	AB
-f57v_L03	23	wd^	AB
-f57v_L03	24	bh^	AB
-f57v_L03	25	y^	AB
-f57v_L03	26	w^	settledC
-f57v_L04	1	eps^7	AB
-f57v_L04	2	Z^	settledC
-f57v_L04	3	psi^	AB
-f57v_L04	4	eps^5	settledC
-f57v_L04	5	Z^	AB
-f57v_L04	6	e^dot|+	AB
-f57v_L04	7	lam^	AB
-f57v_L04	8	w^1	settledC
-f57v_L04	9	rz^	AB
-f57v_L04	10	e^dot|#	AB
-f57v_L04	11	L^	settledC
-f57v_L04	12	psi^	AB
-f57v_L04	13	eps^	AB
-f57v_L04	14	w^	AB
-f57v_L04	15	[^	AB
-f57v_L04	16	lam^	AB
-f57v_L04	17	y^5	AB
-f57v_L04	18	Z^#	AB
-f57v_L04	19	S7^	AB
-f57v_L04	20	lam^7	AB
-f57v_L04	21	]^o	AB
-f57v_L04	22	Z^	AB
-f57v_L05	1	S7^	AB
-f57v_L05	2	#^	AB
-f57v_L05	3	lam^dot|1	AB
-f57v_L05	4	e^#	settledC
-f57v_L05	5	wd^	AB
-f57v_L05	6	rz^	AB
-f57v_L05	7	dl^#	AB
-f57v_L05	8	e^#	AB
-f57v_L05	9	Z^	settledC
-f57v_L05	10	S7^1	settledC
-f57v_L05	11	lam^	AB
-f57v_L05	12	H^	AB
-f57v_L05	13	m^o|1	AB
-f57v_L05	14	w^	AB
-f57v_L05	15	]^o	AB
-f57v_L05	16	S7^	AB
-f57v_L05	17	#^dot	AB
-f57v_L05	18	e^#	AB
-f57v_L05	19	wd^	AB
-f57v_L05	20	y^	AB
-f57v_L05	21	Z^	AB
-f57v_L05	22	e^dot	settledC
-f57v_L05	23	w:[C]	AB
-f57v_L06	1	w:[C]	AB
-f57v_L06	2	a^1	AB
-f57v_L06	3	lam^	AB
-f57v_L06	4	bh^	AB
-f57v_L06	5	S7^	AB
-f57v_L06	6	#^	AB
-f57v_L06	7	e^dot	AB
-f57v_L06	8	g^5	AB
-f57v_L06	9	w^	AB
-f57v_L06	10	tee^	AB
-f57v_L06	11	o.^	AB
-f57v_L06	12	H^	AB
-f57v_L06	13	w:[C]	AB
-f57v_L06	14	g^dot	AB
-f57v_L06	15	w^	AB
-f57v_L06	16	S7^	AB
-f57v_L06	17	y^	AB
-f57v_L06	18	H^1|o	AB
-f57v_L06	19	m^~	AB
-f57v_L06	20	w:[C]	AB
-f57v_L06	21	w:[C]	AB
-f57v_L06	22	y^	AB
-f57v_L06	23	S^	AB
-f57v_L06	24	L^	AB
-f57v_L06	25	g^~	settledC
-f57v_L06	26	H^	AB
-f57v_L07	1	w^	AB
-f57v_L07	2	tee^	AB
-f57v_L07	3	o.^	AB
-f57v_L07	4	y^	AB
-f57v_L07	5	tee^	AB
-f57v_L07	6	f^	AB
-f57v_L07	7	w^	AB
-f57v_L07	8	Lx^	AB
-f57v_L07	9	dl^	AB
-f57v_L07	10	o.^	AB
-f57v_L07	11	S4^	AB
-f57v_L07	12	dl^	AB
-f57v_L07	13	Lx^	AB
-f57v_L07	14	dl^	AB
-f57v_L07	15	y^	AB
-f57v_L07	16	+^	AB
-f57v_L07	17	w:bn	AB
-f57v_L07	18	w:+	settledC
-f57v_L07	19	dl^	AB
-f57v_L07	20	v^	AB
-f57v_L07	21	w:vary	AB
-f57v_L07	22	L^	settledC
-f57v_L07	23	lam^	AB
-f57v_L07	24	nt^	AB
-f57v_L07	25	w:Din	AB
-f57v_L08	1	w:xvj	settledC
-f57v_L08	2	w:+	AB
-f57v_L08	3	w:octobr	AB
-f57v_L08	4	w:+	AB
-f57v_L08	5	w:+	AB
-f57v_L08	6	Z^	AB
-f57v_L08	7	lam^	AB
-f57v_L08	8	w:1525	AB
-f57v_L08	9	S^	AB
-f57v_L08	10	Z^	AB
-f57v_L08	11	S^	AB
-f57v_L08	12	w:Carlos	AB
-f57v_L08	13	w:+	AB
-f57v_L08	14	tee^	AB
-f57v_L08	15	w:Salviati	AB
-f57v_L08	16	w:+	AB
-f57v_L08	17	w:+	AB
-f57v_L09	1	w:<none>	AB
-f57v_L09	2	w:<none>	AB
-f57v_L09	3	w:<none>	AB
-f57v_L09	4	w:<none>	AB
-f57v_L09	5	w:Jo.	AB
-f57v_L09	6	w:+	AB
-f57v_L09	7	w:Carlos	settledC
-f57v_L09	8	w:+	settledC
-f57v_L09	9	w:<none>	AB
-f57v_L09	10	w:Salviati	AB
-f57v_L09	11	w:+	AB
-f57v_L09	12	w:+	AB
-f57v_L09	13	w:+	AB
-f57v_L09	14	w:+	AB
-f57v_L09	15	w:+	AB
-f57v_L09	16	w:+	AB
-f57v_L10	1	w:<none>	AB
-f57v_L10	2	w:<none>	AB
-f57v_L10	3	w:<none>	AB
-f57v_L10	4	w:<none>	AB
-f57v_L10	5	w:<none>	AB
-f57v_L10	6	w:<none>	AB
-f57v_L11	1	S4^	AB
-f57v_L11	2	dl^	AB
-f57v_L11	3	Lx^	AB
-f57v_L11	4	w:[C]	AB
-f57v_L11	5	eps^1	AB
-f57v_L11	6	S7^	AB
-f57v_L11	7	eps^~	AB
-f57v_L11	8	wd^	AB
-f57v_L11	9	[^1	AB
-f57v_L11	10	]^	AB
-f57v_L11	11	g^	AB
-f57v_L11	12	g^~	AB
-f57v_L11	13	m^5	AB
-f57v_L11	14	o.^dot	split
-f57v_L11	15	H^1	AB
-f57v_L11	16	g^o	AB
-f57v_L11	17	rz^	AB
-f57v_L11	18	psi^	AB
-f57v_L11	19	eps^	AB
-f57v_L11	20	w^	AB
-f57v_L11	21	o.^	AB
-f57v_L11	22	w:[C]	AB
-f57v_L11	23	g^	AB
-f57v_L12	1	phi^	settledC
-f57v_L12	2	lam^	AB
-f57v_L12	3	w:[C]	AB
-f57v_L12	4	w:[C]	AB
-f57v_L12	5	o.^	AB
-f57v_L12	6	w:[C]	AB
-f57v_L12	7	lam^	AB
-f57v_L12	8	w:[C]	AB
-f57v_L12	9	bh^	AB
-f57v_L12	10	o.^	AB
-f57v_L12	11	S7^	AB
-f57v_L12	12	lam^	AB
-f57v_L12	13	S7^~	AB
-f57v_L12	14	e^	AB
-f57v_L12	15	g^~	AB
-f57v_L12	16	e^dot|3	settledC
-f57v_L12	17	w:[C]	AB
-f57v_L12	18	lam^	AB
-f57v_L12	19	g^~	AB
-f57v_L12	20	H^1|o	AB
-f57v_L12	21	tee^	AB
-f57v_L12	22	w:[C]	AB
-f57v_L12	23	psi^dot	AB
-f57v_L12	24	w:[C]	AB
-f57v_L13	1	y^	AB
-f57v_L13	2	w:[C]	AB
-f57v_L13	3	w:[C]	AB
-f57v_L13	4	f^	AB
-f57v_L13	5	w^	AB
-f57v_L13	6	y^	AB
-f57v_L13	7	m^	AB
-f57v_L13	8	#^	AB
-f57v_L13	9	y^	AB
-f57v_L13	10	g^~	AB
-f57v_L13	11	m^~	AB
-f57v_L13	12	w^	AB
-f57v_L13	13	lam^	AB
-f57v_L13	14	nt^~	AB
-f57v_L13	15	y^	AB
-f57v_L13	16	g^	AB
-f57v_L13	17	eps^	AB
-f57v_L13	18	g^	AB
-f57v_L13	19	S^	AB
-f57v_L13	20	y^	settledC
-f57v_L13	21	rz^	AB
-f57v_L13	22	nt^	AB
-f57v_L13	23	rz^	AB
-f57v_L13	24	w:[C]	AB
-f57v_L13	25	w:[C]	AB
-f57v_L14	1	o.^	AB
-f57v_L14	2	S7^	AB
-f57v_L14	3	p^	AB
-f57v_L14	4	g^	AB
-f57v_L14	5	o.^	AB
-f57v_L14	6	S7^	AB
-f57v_L14	7	lam^	AB
-f57v_L14	8	y^~	AB
-f57v_L14	9	S^	AB
-f57v_L14	10	]^o	AB
-f57v_L14	11	g^	AB
-f57v_L14	12	w:[C]	AB
-f57v_L14	13	w:[C]	AB
-f57v_L14	14	nt^	AB
-f57v_L14	15	g^1	AB
-f57v_L14	16	e^dot|+	settledC
-f57v_L14	17	a^1	AB
-f57v_L14	18	e^#	AB
-f57v_L14	19	lam^1	AB
-f57v_L14	20	e^dot	AB
-f57v_L14	21	]^o	AB
-f57v_L14	22	g^	AB
-f57v_L14	23	S7^	AB
-f57v_L14	24	phi^	AB
-f57v_L14	25	]^o	AB
-f57v_L14	26	w:[C]	AB
-f57v_L14	27	w^	AB
-f57v_L14	28	y^	AB
-f57v_L14	29	lam^	AB
-f57v_L14	30	eps^1	AB
-f57v_L14	31	w:[C]	AB
-f57v_L15	1	wd^	AB
-f57v_L15	2	bh^	AB
-f57v_L15	3	y^	AB
-f57v_L15	4	nt^	AB
-f57v_L15	5	bh^	AB
-f57v_L15	6	w^	AB
-f57v_L15	7	e^	settledC
-f57v_L15	8	#^	settledC
-f57v_L15	9	lam^	AB
-f57v_L15	10	w^	AB
-f57v_L15	11	tee^	AB
-f57v_L15	12	w:[C]	AB
-f57v_L15	13	lam^	AB
-f57v_L15	14	m^~	AB
-f57v_L15	15	g^	AB
-f57v_L15	16	g^	AB
-f57v_L15	17	a^1	AB
-f57v_L15	18	S7^	AB
-f57v_L15	19	e^#	AB
-f57v_L15	20	g^1	AB
-f57v_L15	21	m^~	AB
-f57v_L15	22	w^	AB
-f57v_L15	23	a^1	AB
-f57v_L15	24	g^	AB
-f57v_L15	25	S4^~	AB
-f57v_L15	26	dl^	AB
-f57v_L16	1	w:Et	settledC
-f57v_L16	2	w:+	settledC
-f57v_L16	3	w:no	settledC
-f57v_L16	4	w:+	AB
-f57v_L16	5	w:<none>	settledC
-f57v_L16	6	w:bisognera	AB
-f57v_L16	7	w:+	AB
-f57v_L16	8	w:+	settledC
-f57v_L16	9	w:+	AB
-f57v_L16	10	w:+	AB
-f57v_L16	11	w:+	settledC
-f57v_L16	12	w:ch	settledC
-f57v_L16	13	w:v.	settledC
-f57v_L16	14	w:s.	settledC
-f57v_L16	15	w:li	AB
-f57v_L16	16	w:facci	AB
-f57v_L16	17	w:+	settledC
-f57v_L16	18	w:Pagare	settledC
-f57v_L16	19	w:+	AB
-f57v_L16	20	w:+	AB
-f57v_L16	21	w:+	AB
-f57v_L16	22	w:li	AB
-f57v_L16	23	#^	AB
-f57v_L16	24	#^	AB
-f57v_L16	25	#^	AB
-f57v_L16	26	w:d'	AB
-f57v_L16	27	w:piu	settledC
-f57v_L16	28	w:+	settledC
-f57v_L17	1	w:l'habbiamo	AB
-f57v_L17	2	w:+	AB
-f57v_L17	3	w:+	AB
-f57v_L17	4	w:+	AB
-f57v_L17	5	w:+	AB
-f57v_L17	6	w:+	AB
-f57v_L17	7	w:Contentato	AB
-f57v_L17	8	w:+	AB
-f57v_L17	9	w:+	AB
-f57v_L17	10	w:qui	settledC
-f57v_L17	11	w:+	AB
-f57v_L17	12	w::	AB
-f57v_L17	13	w:Ma	settledC
-f57v_L17	14	w:+	settledC
-f57v_L17	15	w:facce~do	AB
-f57v_L17	16	w:+	AB
-f57v_L17	17	w:+	AB
-f57v_L17	18	w:+	AB
-f57v_L17	19	w:gra	settledC
-f57v_L17	20	w:+	settledC
-f57v_L17	21	w:+	settledC
-f57v_L17	22	w:<none>	settledC
-f57v_L17	23	w:dilige~	AB
-f57v_L17	24	w:+	settledC
-f57v_L17	25	w:+	settledC
-f57v_L17	26	w:+	settledC
-f57v_L17	27	w:+	settledC
-f57v_L17	28	w:in	AB
-f57v_L17	29	w:+	AB
-f57v_L17	30	w:v.	settledC
-f57v_L17	31	w:s.	settledC
-f57v_L17	32	w:g	settledC
-f57v_L18	1	w:<none>	AB
-f57v_L18	2	w:<none>	settledC
-f57v_L18	3	w:din	AB
-f57v_L18	4	w:+	AB
-f57v_L18	5	w:+	settledC
-f57v_L18	6	w:e	settledC
-f57v_L18	7	w:l	AB
-f57v_L18	8	w:beueraggio	settledC
-f57v_L18	9	w:+	AB
-f57v_L18	10	w:+	AB
-f57v_L18	11	w:+	settledC
-f57v_L18	12	w:+	AB
-f57v_L18	13	w::	AB
-f57v_L18	14	S4^	AB
-f57v_L18	15	dl^	AB
-f57v_L18	16	Lx^	AB
-f57v_L18	17	w:[C]	AB
-f57v_L18	18	a^	settledC
-f57v_L18	19	w:[C]	AB
-f57v_L18	20	S7^	AB
-f57v_L18	21	#^	AB
-f57v_L18	22	a^1	settledC
-f57v_L18	23	S7^	AB
-f57v_L18	24	e^#	AB
-f57v_L18	25	g^	AB
-f57v_L18	26	m^~	AB
-f57v_L18	27	w^	AB
-f57v_L18	28	lam^~	AB
-f57v_L18	29	nt^	AB
-f57v_L18	30	w:[C]	AB
-f57v_L19	1	w:<none>	AB
-f57v_L19	2	rz^	AB
-f57v_L19	3	tee^	AB
-f57v_L19	4	e^#	AB
-f57v_L19	5	w:[C]	AB
-f57v_L19	6	tee^	AB
-f57v_L19	7	o.^	AB
-f57v_L19	8	eps^	AB
-f57v_L19	9	lam^	AB
-f57v_L19	10	e^dot|+	AB
-f57v_L19	11	sq^	AB
-f57v_L19	12	w:[C]	AB
-f57v_L19	13	psi^	AB
-f57v_L19	14	lam^	AB
-f57v_L19	15	S4^	AB
-f57v_L19	16	Lx^	AB
-f57v_L19	17	w:<none>	AB
-f57v_L20	1	w:L	settledC
-f57v_L20	2	w:apnte	AB
-f57v_L20	3	w:è	settledC
-f57v_L20	4	w:<none>	AB
-f57v_L20	5	w:stata	AB
-f57v_L20	6	w:+	AB
-f57v_L20	7	w:Suggellata	AB
-f57v_L20	8	w:+	AB
-f57v_L20	9	w:+	AB
-f57v_L20	10	w:+	settledC
-f57v_L20	11	w:+	AB
-f57v_L20	12	w:+	AB
-f57v_L20	13	w:+	AB
-f57v_L20	14	w:Dua	settledC
-f57v_L20	15	w:+	AB
-f57v_L20	16	w:+	AB
-f57v_L20	17	w:volta	settledC
-f57v_L20	18	w:+	AB
-f57v_L20	19	w:+	AB
+line	pos	sign	conf	src_pos
+f54r_L01	1	w:R	AB	1
+f54r_L01	2	w:Dnt~	AB	2
+f54r_L01	3	w:tanq3	AB	3
+f54r_L01	4	w:+	AB	4
+f54r_L01	5	w:+	settled	5
+f54r_L01	6	w:Ptr~	settled	6
+f54r_L01	7	w:+	AB	7
+f54r_L01	8	w:q;	AB	8
+f54r_L01	9	w:c9	AB	9
+f54r_L01	10	psi^	settled	10
+f54r_L01	11	+^	settled	11
+f54r_L01	12	e^+	M|split2	12
+f54r_L01	13	[^	AB	13
+f54r_L01	14	bh^	AB	14
+f54r_L01	15	m^	settled	15
+f54r_L01	16	U^	AB	16
+f54r_L01	17	y^	AB	17
+f54r_L01	18	nt^	AB	18
+f54r_L01	19	[^	AB	19
+f54r_L01	20	bh^	AB	20
+f54r_L01	21	sq^ot	AB	21
+f54r_L01	22	psi^	AB	22
+f54r_L01	23	lam^o	AB	23
+f54r_L01	24	eps^5	AB	24
+f54r_L01	25	nt^	settled	25
+f54r_L01	26	[^	AB	26
+f54r_L02	1	rz^	AB	1
+f54r_L02	2	g^~	AB	2
+f54r_L02	3	m^~	AB	3
+f54r_L02	4	w^	AB	4
+f54r_L02	5	w:?	AB	5
+f54r_L02	6	L^	AB	6
+f54r_L02	7	g^~	AB	7
+f54r_L02	8	o.^	AB	8
+f54r_L02	9	S7^	AB	9
+f54r_L02	10	lam^dot	AB	10
+f54r_L02	11	S7^~	AB	11
+f54r_L02	12	e^#	AB	12
+f54r_L02	13	g^~	AB	13
+f54r_L02	14	y^	settled	14
+f54r_L02	15	tee^	B	14.5
+f54r_L02	16	K^	AB	15
+f54r_L02	17	sq^	settled	16
+f54r_L02	18	]^o	AB	17
+f54r_L02	19	v^	AB|split2	18
+f54r_L02	20	bh^dot	AB	19
+f54r_L02	21	S7^+	AB	20
+f54r_L02	22	a^~	AB	21
+f54r_L02	23	S7^~	AB	22
+f54r_L02	24	lam^~	AB	23
+f54r_L02	25	e^#	AB	24
+f54r_L02	26	wd^	AB	25
+f54r_L02	27	bh^	AB	26
+f54r_L02	28	K^	AB	27
+f54r_L02	29	Lx^#	AB	28
+f54r_L03	1	phi^	AB	1
+f54r_L03	2	]^o	AB	2
+f54r_L03	3	nt^	settled	3
+f54r_L03	4	Z^	B	3.5
+f54r_L03	5	]^dot|o	AB	4
+f54r_L03	6	S7^dot	AB	5
+f54r_L03	7	lam^	settled	6
+f54r_L03	8	e^dot	AB	7
+f54r_L03	9	y^	AB	8
+f54r_L03	10	e^#	AB	9
+f54r_L03	11	o.^	settled	10
+f54r_L03	12	w:d	settled	11
+f54r_L03	13	w:+	settled	12
+f54r_L03	14	g^	AB	13
+f54r_L03	15	Z^	AB	14
+f54r_L03	16	S4^	AB	15
+f54r_L03	17	w:Tutto	AB	16
+f54r_L03	18	w:quello	AB	17
+f54r_L03	19	w:+	AB	18
+f54r_L03	20	w:+	AB	19
+f54r_L03	21	w:ch.	settled	20
+f54r_L03	22	w:s.	settled	21
+f54r_L03	23	w:s.	settled	22
+f54r_L03	24	w:desidera	AB	23
+f54r_L03	25	w:+	AB	24
+f54r_L03	26	w:+	AB	25
+f54r_L03	27	w:+	AB	26
+f54r_L03	28	w:+	AB	27
+f54r_L03	29	w:N.	AB	28
+f54r_L03	30	w:S.	AB	29
+f54r_L03	31	S4^	settled	30
+f54r_L03	32	S4^	AB	31
+f54r_L04	1	phi^	AB	1
+f54r_L04	2	y^	AB	2
+f54r_L04	3	lam^1	AB	3
+f54r_L04	4	v^	AB|split2	4
+f54r_L04	5	]^o	AB	5
+f54r_L04	6	g^~	AB	6
+f54r_L04	7	nt^	AB	7
+f54r_L04	8	S7^	AB	8
+f54r_L04	9	#^	AB	9
+f54r_L04	10	y^dot	AB	10
+f54r_L04	11	nt^	AB	11
+f54r_L04	12	bh^	AB	12
+f54r_L04	13	w^	AB	13
+f54r_L04	14	e^dot	AB	14
+f54r_L04	15	Z^	AB	15
+f54r_L04	16	nt^	AB	16
+f54r_L04	17	S4^	settled	17
+f54r_L04	18	bh^dot	AB	18
+f54r_L04	19	S7^#	AB	19
+f54r_L04	20	m^~	AB	20
+f54r_L04	21	w^	AB	21
+f54r_L04	22	m^~	AB	22
+f54r_L04	23	lam^	AB	23
+f54r_L04	24	y^	AB	24
+f54r_L04	25	f^	AB	25
+f54r_L04	26	w^	AB	26
+f54r_L05	1	y^	AB	1
+f54r_L05	2	]^dot|o	AB	2
+f54r_L05	3	S7^dot	AB	3
+f54r_L05	4	L^	settled	4
+f54r_L05	5	]^o	AB	5
+f54r_L05	6	tee^	AB	6
+f54r_L05	7	f^	AB	7
+f54r_L05	8	w^	AB	8
+f54r_L05	9	bh^	AB	9
+f54r_L05	10	L^	settled	10
+f54r_L05	11	H^1	AB	11
+f54r_L05	12	w:?	AB	12
+f54r_L05	13	S4^	AB	13
+f54r_L05	14	w:Piu	AB	14
+f54r_L05	15	w:+	AB	15
+f54r_L05	16	w:noltri	AB	16
+f54r_L05	17	w:+	AB	17
+f54r_L05	18	w:my	AB	18
+f54r_L05	19	w:h~n	AB	19
+f54r_L05	20	w:detto	AB	20
+f54r_L05	21	w:+	AB	21
+f54r_L05	22	w:+	AB	22
+f54r_L05	23	w:Et	AB	23
+f54r_L05	24	w:+	AB	24
+f54r_L05	25	w:dic	AB	25
+f54r_L05	26	w:+	AB	26
+f54r_L06	1	S4^	AB	1
+f54r_L06	2	nt^	AB	2
+f54r_L06	3	S7^	settled	3
+f54r_L06	4	L^	AB	4
+f54r_L06	5	e^#	AB	5
+f54r_L06	6	[^	AB	6
+f54r_L06	7	S7^	AB	7
+f54r_L06	8	e^dot	AB	8
+f54r_L06	9	nt^	AB	9
+f54r_L06	10	bh^	AB	10
+f54r_L06	11	]^o	AB	11
+f54r_L06	12	w:br	AB	12
+f54r_L06	13	]^ot	AB	13
+f54r_L06	14	H^1	AB	14
+f54r_L06	15	f^	AB|split2	15
+f54r_L06	16	w^	AB	16
+f54r_L06	17	y^	AB	17
+f54r_L06	18	m^1	AB	18
+f54r_L06	19	tee^	AB	19
+f54r_L06	20	lam^	AB	20
+f54r_L06	21	rz^	AB	21
+f54r_L06	22	L^	settled	22
+f54r_L06	23	L^	AB	23
+f54r_L06	24	w^	AB	24
+f54r_L06	25	tee^	AB	25
+f54r_L06	26	[^	AB	26
+f54r_L06	27	nt^	AB	27
+f54r_L06	28	bh^	AB	28
+f54r_L07	1	]^dot|ot	AB	1
+f54r_L07	2	phi^	AB	2
+f54r_L07	3	U^	AB	3
+f54r_L07	4	w^	AB	4
+f54r_L07	5	bh^	AB	5
+f54r_L07	6	a^~	AB	6
+f54r_L07	7	bh^	M|split2	7
+f54r_L07	8	bh^	AB	8
+f54r_L07	9	S7^#	AB	9
+f54r_L07	10	]^dot|o	AB	10
+f54r_L07	11	g^~	AB	11
+f54r_L07	12	psi^	AB	12
+f54r_L07	13	lam^7	AB	13
+f54r_L07	14	lam^	settled	14
+f54r_L07	15	S4^	AB	15
+f54r_L07	16	dl^	AB	16
+f54r_L07	17	lam^	AB	17
+f54r_L07	18	bh^	AB	18
+f54r_L07	19	S7^#	AB	19
+f54r_L07	20	e^+	AB	20
+f54r_L07	21	g^dot|~	AB	21
+f54r_L07	22	#^	settled	22
+f54r_L07	23	[^	AB	23
+f54r_L07	24	bh^	AB	24
+f54r_L07	25	S7^#	AB	25
+f54r_L07	26	wd^	AB	26
+f54r_L07	27	y^	AB	27
+f54r_L07	28	sq^?	AB	28
+f54r_L07	29	Z^	AB	29
+f54r_L07	30	m^~	settled	30
+f54r_L08	1	g^	AB	1
+f54r_L08	2	rz^	AB	2
+f54r_L08	3	tee^	AB	3
+f54r_L08	4	S4^	AB	4
+f54r_L08	5	dl^	AB	5
+f54r_L08	6	Z^dot|~	AB	6
+f54r_L08	7	eps^~	AB	7
+f54r_L08	8	g^~	AB	8
+f54r_L08	9	nt^	settled	9
+f54r_L08	10	Z^	B	9.5
+f54r_L08	11	]^	AB	10
+f54r_L08	12	phi^	AB|split2	11
+f54r_L08	13	Z^7	AB	12
+f54r_L08	14	a^~	AB	13
+f54r_L08	15	dl^	M|split2	14
+f54r_L08	16	g^~	AB	15
+f54r_L08	17	psi^	AB	16
+f54r_L08	18	eps^	AB	17
+f54r_L08	19	w^	AB	18
+f54r_L08	20	nt^	AB	19
+f54r_L08	21	m^5	AB	20
+f54r_L08	22	]^ot	AB	21
+f54r_L08	23	S4^	AB	22
+f54r_L08	24	dl^	AB	23
+f54r_L08	25	w:Con	AB	24
+f54r_L09	1	w:lauenuta	AB	1
+f54r_L09	2	w:<none>	AB	2
+f54r_L09	3	H^7	settled	3
+f54r_L09	4	w:Duca	AB	4
+f54r_L09	5	w:+	AB	5
+f54r_L09	6	w:Secondo	AB	6
+f54r_L09	7	w:+	AB	7
+f54r_L09	8	w:+	AB	8
+f54r_L09	9	w:mh	AB	9
+f54r_L09	10	w:Poco	AB	10
+f54r_L09	11	w:+	AB	11
+f54r_L09	12	w:credibile	AB	12
+f54r_L09	13	tee^	settled	13
+f54r_L09	14	tee^	settled	14
+f54r_L09	15	w:+	AB	15
+f54r_L09	16	w:+	AB	16
+f54r_L09	17	w:?	AB	17
+f54r_L09	18	Lx^	AB	18
+f54r_L09	19	g^dot	settled	19
+f54r_L09	20	w:?	AB	20
+f54r_L09	21	rz^	AB	21
+f54r_L09	22	w:?	AB	22
+f54r_L09	23	S7^	AB	23
+f54r_L10	1	lam^	AB	1
+f54r_L10	2	S7^~	AB	2
+f54r_L10	3	lam^	AB	3
+f54r_L10	4	g^~	AB	4
+f54r_L10	5	psi^	AB	5
+f54r_L10	6	lam^	AB	6
+f54r_L10	7	lam^	AB	7
+f54r_L10	8	S^	AB	8
+f54r_L10	9	[^	AB	9
+f54r_L10	10	g^	AB	10
+f54r_L10	11	Z^	AB	11
+f54r_L10	12	]^o	AB	12
+f54r_L10	13	m^5	AB	13
+f54r_L10	14	nt^	AB	14
+f54r_L10	15	rz^	AB	15
+f54r_L10	16	nt^dot	AB	16
+f54r_L10	17	w:ys	AB	17
+f54r_L10	18	]^o	AB	18
+f54r_L10	19	g^	AB	19
+f54r_L10	20	m^~	AB	20
+f54r_L10	21	g^7	AB	21
+f54r_L10	22	bh^	AB	22
+f54r_L10	23	S7^	AB	23
+f54r_L10	24	g^#|7	AB	24
+f54r_L10	25	lam^	AB	25
+f54r_L10	26	H^1|o	AB	26
+f54r_L11	1	w:?	AB	1
+f54r_L11	2	w:?	AB	2
+f54r_L11	3	U^	AB	3
+f54r_L11	4	g^~	AB	4
+f54r_L11	5	lam^	AB	5
+f54r_L11	6	S7^~	AB	6
+f54r_L11	7	e^#	AB	7
+f54r_L11	8	m^~	AB	8
+f54r_L11	9	w^	AB	9
+f54r_L11	10	lam^	settled	10
+f54r_L11	11	S^	B	10.5
+f54r_L11	12	nt^	AB	11
+f54r_L11	13	rz^	AB	12
+f54r_L11	14	g^~	AB	13
+f54r_L11	15	w:m	AB	14
+f54r_L11	16	lam^	AB	15
+f54r_L11	17	nt^~	AB	16
+f54r_L11	18	y^	AB	17
+f54r_L11	19	p^	AB	18
+f54r_L11	20	g^?	AB	19
+f54r_L11	21	y^7	AB	20
+f54r_L11	22	Z^	AB	21
+f54r_L11	23	]^dot|ot	AB	22
+f54r_L11	24	g^	AB	23
+f54r_L11	25	y^5	AB	24
+f54r_L11	26	S^	AB	25
+f54r_L11	27	]^ot	AB	26
+f54r_L11	28	#^~	AB	27
+f54r_L11	29	S7^#	AB	28
+f54r_L12	1	w:?	AB	1
+f54r_L12	2	w:?	AB	2
+f54r_L12	3	tee^	AB|split2	3
+f54r_L12	4	Z^dot	AB	4
+f54r_L12	5	nt^	AB	5
+f54r_L12	6	g^1	AB	6
+f54r_L12	7	a^~	AB	7
+f54r_L12	8	S7^	AB	8
+f54r_L12	9	lam^	AB	9
+f54r_L12	10	e^#	AB	10
+f54r_L12	11	wd^	AB	11
+f54r_L12	12	bh^	AB	12
+f54r_L12	13	K^	AB	13
+f54r_L12	14	w:K	AB	14
+f54r_L12	15	tee^	AB	15
+f54r_L12	16	v^1	AB	16
+f54r_L12	17	y^5	AB	17
+f54r_L12	18	]^o	AB	18
+f54r_L12	19	rz^	AB	19
+f54r_L12	20	S7^+	AB	20
+f54r_L12	21	g^~	AB	21
+f54r_L12	22	lam^	AB	22
+f54r_L12	23	nt^~	AB	23
+f54r_L12	24	y^	AB	24
+f54r_L12	25	e^	AB	25
+f54r_L12	26	]^	AB|split2	26
+f54r_L12	27	m^~	AB	27
+f54r_L12	28	g^7	AB	28
+f54r_L12	29	bh^	AB	29
+f54r_L13	1	rz^?|?|1	AB	1
+f54r_L13	2	w:?	AB	2
+f54r_L13	3	g^dot	AB	3
+f54r_L13	4	w^	AB	4
+f54r_L13	5	S7^	AB	5
+f54r_L13	6	o.^	AB	6
+f54r_L13	7	rz^	AB	7
+f54r_L13	8	g^1	AB	8
+f54r_L13	9	f^	AB|split2	9
+f54r_L13	10	w^	AB	10
+f54r_L13	11	bh^	AB	11
+f54r_L13	12	Z^?	AB	12
+f54r_L13	13	g^~	AB	13
+f54r_L13	14	sq^~	AB	14
+f54r_L13	15	tee^	settled	15
+f54r_L13	16	H^1|o	settled	16
+f54r_L13	17	a^5	settled	17
+f54r_L13	18	e^dot|+	settled	18
+f54r_L13	19	S4^	settled	19
+f54r_L13	20	dl^	settled	20
+f54r_L13	21	p^	settled	21
+f54r_L13	22	w:Pure	AB	22
+f54r_L13	23	w:amt	AB	23
+f54r_L13	24	w:+	AB	24
+f54r_L13	25	p^	settled	25
+f54r_L13	26	w:parz	AB	26
+f54r_L14	1	w:H	AB	1
+f54r_L14	2	H^o|1	AB	2
+f54r_L14	3	]^ot	AB	3
+f54r_L14	4	nt^	AB	4
+f54r_L14	5	rz^	AB	5
+f54r_L14	6	g^~	AB	6
+f54r_L14	7	g^~	AB	7
+f54r_L14	8	psi^	AB	8
+f54r_L14	9	Lx^	AB	9
+f54r_L14	10	eps^7	M|split2	10
+f54r_L14	11	lam^1	AB	11
+f54r_L14	12	]^o	AB	12
+f54r_L14	13	m^5	AB	13
+f54r_L14	14	nt^	AB	14
+f54r_L14	15	rz^	AB	15
+f54r_L14	16	nt^	AB	16
+f54r_L14	17	phi^	AB	17
+f54r_L14	18	S7^#	AB	18
+f54r_L14	19	w:lryy	AB	19
+f54r_L14	20	y^	AB	20
+f54r_L14	21	y^	AB	21
+f54r_L14	22	lam^	AB	22
+f54r_L14	23	S4^	AB	23
+f54r_L14	24	m^	AB	24
+f54r_L14	25	a^	AB	25
+f54r_L14	26	#^	AB	26
+f54r_L14	27	w:maxims	AB	27
+f54r_L15	1	w:stando	AB	1
+f54r_L15	2	w:+	AB	2
+f54r_L15	3	w:ancora	AB	3
+f54r_L15	4	w:+	AB	4
+f54r_L15	5	w:la	AB	5
+f54r_L15	6	w:cosi	AB	6
+f54r_L15	7	w:+	AB	7
+f54r_L15	8	S4^	AB	8
+f54r_L15	9	e^dot|+	AB	9
+f54r_L15	10	a^5	AB	10
+f54r_L15	11	e^#	AB	11
+f54r_L15	12	S7^dot|+	AB	12
+f54r_L15	13	dl^	AB	13
+f54r_L15	14	w:Come	AB	14
+f54r_L15	15	w:+	AB	15
+f54r_L15	16	w:stanno	AB	16
+f54r_L15	17	w:+	AB	17
+f54r_L15	18	p^	settled	18
+f54r_L15	19	w:Pure	AB	19
+f54r_L15	20	w:+	AB	20
+f54r_L15	21	v^	settled	21
+f54r_L15	22	S^	settled	22
+f54r_L16	1	w:ricordera	AB	1
+f54r_L16	2	w:+	AB	2
+f54r_L16	3	w:quello	AB	3
+f54r_L16	4	w:+	AB	4
+f54r_L16	5	w:+	AB	5
+f54r_L16	6	N^	settled	6
+f54r_L16	7	w:ch~	AB	7
+f54r_L16	8	w:+	AB	8
+f54r_L16	9	w:+	AB	9
+f54r_L16	10	ch^	settled	10
+f54r_L16	11	w:li	AB	11
+f54r_L16	12	p^	settled	12
+f54r_L16	13	w:Parra	AB	13
+f54r_L16	14	N^	settled	14
+f54r_L16	15	w:e	AB	15
+f54r_L16	16	eps^1|1	AB	16
+f54r_L16	17	w:Piaciuto	AB	17
+f54r_L16	18	a^dot	settled	18
+f54r_L16	19	w:a.s.M~tr	AB	19
+f54r_L16	20	w:+	AB	20
+f54r_L16	21	S^	settled	21
+f54r_L16	22	Lx^	settled	22
+f54r_L16	23	v^	settled	23
+f54r_L16	24	eps^	AB	24
+f54r_L16	25	w:e	AB	25
+f54r_L16	26	m^	settled	26
+f54r_L16	27	w:ricordo	AB	27
+f54r_L16	28	w:+	AB	28
+f54r_L16	29	w:di	AB	29
+f54r_L17	1	S^	AB	1
+f54r_L17	2	w:s.	AB	2
+f54r_L17	3	w:?	AB	3
+f54r_L17	4	K^	AB	4
+f54r_L17	5	a^1	AB	5
+f54r_L17	6	S7^	AB	6
+f54r_L17	7	eps^1	AB	7
+f54r_L17	8	nt^	AB	8
+f54r_L17	9	Z^	AB	9
+f54r_L17	10	phi^	AB	10
+f54r_L17	11	]^o	AB	11
+f54r_L17	12	U^	AB	12
+f54r_L17	13	w^	AB	13
+f54r_L17	14	bh^	AB	14
+f54r_L17	15	m^5	AB	15
+f54r_L17	16	psi^	AB	16
+f54r_L17	17	lam^	AB	17
+f54r_L17	18	e^#	AB	18
+f54r_L17	19	wd^	AB	19
+f54r_L17	20	o.^	AB	20
+f54r_L17	21	e^dot|+	AB	21
+f54r_L17	22	y^dot	AB	22
+f54r_L17	23	S4^	AB	23
+f54r_L17	24	dl^	AB	24
+f54r_L17	25	w:Con	AB	25
+f54r_L17	26	w:+	AB	26
+f54r_L18	1	w:tentasi	AB	1
+f54r_L18	2	v^dot	AB	2
+f54r_L18	3	p^	AB	3
+f54r_L18	4	w^	AB	4
+f54r_L18	5	S4^	AB	5
+f54r_L18	6	e^dot|+	AB	6
+f54r_L18	7	K^	AB	7
+f54r_L18	8	w:lx	AB	8
+f54r_L18	9	w^	AB	9
+f54r_L18	10	w:lx	AB	10
+f54r_L18	11	S7^#	AB	11
+f54r_L18	12	eps^5	AB	12
+f54r_L18	13	S7^	AB	13
+f54r_L18	14	L^	AB	14
+f54r_L18	15	w^	AB	15
+f54r_L18	16	a^~	AB	16
+f54r_L18	17	y^	AB	17
+f54r_L18	18	S^	AB	18
+f54r_L18	19	dl^+	M|split2	19
+f54r_L18	20	w:o	AB	20
+f54r_L18	21	w:la	AB	21
+f54r_L18	22	w:oppinjoni	AB	22
+f54r_L19	1	w:dj	AB	1
+f54r_L19	2	S^	settled	2
+f54r_L19	3	S^	settled	3
+f54r_L19	4	eps^	settled	4
+f54r_L19	5	+^	settled	5
+f54r_L19	6	w:et	AB	6
+f54r_L19	7	tee^	settled	7
+f54r_L19	8	S^	settled	8
+f54r_L19	9	w:desidera	AB	9
+f54r_L19	10	w:+	AB	10
+f54r_L19	11	N^	settled	11
+f54r_L19	12	w:in	AB	12
+f54r_L19	13	w:tal	AB	13
+f54r_L19	14	w:+	AB	14
+f54r_L19	15	w:Caso	AB	15
+f54r_L19	16	w:+	AB	16
+f54r_L19	17	ch^	settled	17
+f54r_L19	18	w:n.	settled	18
+f54r_L19	19	w:s.	settled	19
+f54r_L19	20	Lx^	AB	20
+f54r_L19	21	U^	AB	21
+f54r_L19	22	w^	AB	22
+f54r_L19	23	bh^	AB	23
+f54r_L19	24	a^~	AB	24
+f54r_L19	25	w:ad	AB	25
+f54r_L19	26	]^o	AB	26
+f54r_L19	27	e^ot	AB	27
+f54r_L19	28	w:e	AB	28
+f54v_L01	1	L^dot|~	AB	1
+f54v_L01	2	S7^	AB	2
+f54v_L01	3	y^dot|1|dot	AB	3
+f54v_L01	4	bh^	AB	4
+f54v_L01	5	S7^#	AB	5
+f54v_L01	6	e^	AB	6
+f54v_L01	7	tee^dot	AB	7
+f54v_L01	8	g^	AB	8
+f54v_L01	9	bh^dot|dot|dot	AB	9
+f54v_L01	10	psi^	AB	10
+f54v_L01	11	lam^	AB	11
+f54v_L01	12	lam^5|1	AB	12
+f54v_L01	13	H^5	AB	13
+f54v_L01	14	y^	AB	14
+f54v_L01	15	y^	AB|split2	15
+f54v_L01	16	U^H	settledC	16
+f54v_L01	17	w^	AB	17
+f54v_L01	18	bh^	AB	18
+f54v_L01	19	a^~	AB	19
+f54v_L01	20	nt^	AB	20
+f54v_L01	21	w^	AB	21
+f54v_L01	22	m^~	AB	22
+f54v_L01	23	w^	AB	23
+f54v_L01	24	o.^	AB|split2	24
+f54v_L01	25	tee^	AB	25
+f54v_L01	26	e^dot	AB	26
+f54v_L01	27	eps^dot|1	AB	27
+f54v_L01	28	U^H	settledC	28
+f54v_L01	29	g^~	settledC	29
+f54v_L02	1	g^dot|dot	AB	1
+f54v_L02	2	S7^	AB	2
+f54v_L02	3	lam^	AB	3
+f54v_L02	4	S4^~	AB	4
+f54v_L02	5	dl^	AB	5
+f54v_L02	6	K^	AB	6
+f54v_L02	7	g^ot	M|split2	7
+f54v_L02	8	rz^	AB	8
+f54v_L02	9	S7^+	AB	9
+f54v_L02	10	g^	AB	10
+f54v_L02	11	a^1	AB	11
+f54v_L02	12	?f54v.2.12^	AB|split2	12
+f54v_L02	13	e^	AB	13
+f54v_L02	14	g^1	AB	14
+f54v_L02	15	U^	AB	15
+f54v_L02	16	w^	AB	16
+f54v_L02	17	rz^	AB	17
+f54v_L02	18	psi^	AB	18
+f54v_L02	19	lam^5	AB	19
+f54v_L02	20	phi^	AB	20
+f54v_L02	21	[^	AB	21
+f54v_L02	22	tee^	AB	22
+f54v_L02	23	Z^#	AB	23
+f54v_L02	24	eps^~	AB	24
+f54v_L02	25	g^	AB	25
+f54v_L02	26	y^~	AB	26
+f54v_L02	27	y^	AB	27
+f54v_L02	28	g^7	AB	28
+f54v_L03	1	w:[C]	AB	1
+f54v_L03	2	eps^5	AB	2
+f54v_L03	3	w^	AB	3
+f54v_L03	4	e^	AB	4
+f54v_L03	5	lam^5	AB	5
+f54v_L03	6	e^+	M|split2	6
+f54v_L03	7	L^	AB	7
+f54v_L03	8	g^~	AB	8
+f54v_L03	9	Z^	AB	9
+f54v_L03	10	S7^	AB	10
+f54v_L03	11	#^dot	split	11
+f54v_L03	12	psi^	AB	12
+f54v_L03	13	lam^	AB	13
+f54v_L03	14	lam^5	AB	14
+f54v_L03	15	e^+	AB	15
+f54v_L03	16	H^#	AB	16
+f54v_L03	17	wd^	AB|split2	17
+f54v_L03	18	w^	AB	18
+f54v_L03	19	lam^?	AB	19
+f54v_L03	20	eps^7	AB	20
+f54v_L03	21	m^7	AB	21
+f54v_L03	22	S7^	AB	22
+f54v_L03	23	w^dot|#	AB	23
+f54v_L03	24	S7^	AB	24
+f54v_L03	25	v^dot	M|split2	25
+f54v_L03	26	]^dot|o	AB	26
+f54v_L03	27	phi^	AB	27
+f54v_L04	1	o.^	AB	1
+f54v_L04	2	tee^	AB	2
+f54v_L04	3	m^5	M|split2	3
+f54v_L04	4	m^5	AB|split2	4
+f54v_L04	5	]^ot	AB	5
+f54v_L04	6	phi^	AB	6
+f54v_L04	7	lam^	AB	7
+f54v_L04	8	S^	AB	8
+f54v_L04	9	bh^	AB	9
+f54v_L04	10	lam^	AB	10
+f54v_L04	11	rz^	AB	11
+f54v_L04	12	a^5	AB	12
+f54v_L04	13	S7^	AB	13
+f54v_L04	14	lam^7	AB	14
+f54v_L04	15	phi^	AB	15
+f54v_L04	16	H^1|o	AB	16
+f54v_L04	17	m^~	AB	17
+f54v_L04	18	w^	AB	18
+f54v_L04	19	]^o	AB	19
+f54v_L04	20	psi^	AB	20
+f54v_L04	21	f^	AB|split2	21
+f54v_L04	22	v^	AB|split2	22
+f54v_L04	23	]^o|dot	AB	23
+f54v_L04	24	lam^1	AB	24
+f54v_L04	25	e^	AB	25
+f54v_L04	26	U^	AB|split2	26
+f54v_L04	27	psi^	AB	27
+f54v_L04	28	bh^	AB	28
+f54v_L04	29	rz^5	M|split2	29
+f54v_L04	30	?f54v.4.30^	M|split2	30
+f54v_L05	1	a^~	AB	1
+f54v_L05	2	g^	M|split2	2
+f54v_L05	3	rz^	AB	3
+f54v_L05	4	tee^	AB	4
+f54v_L05	5	eps^1	AB	5
+f54v_L05	6	m^7	AB	6
+f54v_L05	7	lam^	AB	7
+f54v_L05	8	S7^#	AB	8
+f54v_L05	9	e^	AB	9
+f54v_L05	10	wd^	AB	10
+f54v_L05	11	y^	AB	11
+f54v_L05	12	nt^7	AB|split2	12
+f54v_L05	13	y^	AB	13
+f54v_L05	14	w:[C]	AB	14
+f54v_L05	15	eps^	AB|split2	15
+f54v_L05	16	S7^H	settledC	16
+f54v_L05	17	]^o	AB	17
+f54v_L05	18	w^	split	18
+f54v_L05	19	nt^	AB	19
+f54v_L05	20	y^	AB	20
+f54v_L05	21	w^	AB	21
+f54v_L05	22	e^dot	AB	22
+f54v_L05	23	y^	AB	23
+f54v_L05	24	phi^	AB	24
+f54v_L05	25	nt^	AB	25
+f54v_L05	26	f^	AB	26
+f54v_L06	1	eps^1	AB	1
+f54v_L06	2	m^7	AB|split2	2
+f54v_L06	3	lam^1	AB	3
+f54v_L06	4	S7^	AB	4
+f54v_L06	5	#^	AB	5
+f54v_L06	6	e^	AB	6
+f54v_L06	7	Z^	AB	7
+f54v_L06	8	S7^	AB	8
+f54v_L06	9	lam^~	AB	9
+f54v_L06	10	e^	AB	10
+f54v_L06	11	w^	AB	11
+f54v_L06	12	a^~	AB	12
+f54v_L06	13	eps^5	AB	13
+f54v_L06	14	S7^	AB	14
+f54v_L06	15	L^	AB	15
+f54v_L06	16	e^	AB	16
+f54v_L06	17	S7^	AB	17
+f54v_L06	18	lam^	AB	18
+f54v_L06	19	H^1|o|~	AB	19
+f54v_L06	20	e^	AB	20
+f54v_L06	21	m^~	M|split2	21
+f54v_L06	22	w:+	AB	22
+f54v_L06	23	e^	AB	23
+f54v_L06	24	e^	AB	24
+f54v_L06	25	dl^	AB|split2	25
+f54v_L06	26	S4^	AB	26
+f54v_L06	27	+^	split	27
+f54v_L07	1	eps^	AB	1
+f54v_L07	2	+^M	settledC	2
+f54v_L07	3	w:no	AB	3
+f54v_L07	4	w:gh'	AB	4
+f54v_L07	5	w:piace	AB	5
+f54v_L07	6	w:mettera	AB	6
+f54v_L07	7	w:+	AB	7
+f54v_L07	8	w:+	AB	8
+f54v_L07	9	w:+	AB	9
+f54v_L07	10	w:+	AB	10
+f54v_L07	11	w:+	AB	11
+f54v_L07	12	w:+	AB	12
+f54v_L07	13	rz^	AB	13
+f54v_L07	14	tee^	AB	14
+f54v_L07	15	Z^dot	AB	15
+f54v_L07	16	Z^	AB	16
+f54v_L07	17	w^	AB	17
+f54v_L07	18	Z^	AB	18
+f54v_L07	19	lam^	AB	19
+f54v_L07	20	g^5	AB	20
+f54v_L07	21	Z^	AB	21
+f54v_L07	22	H^5	AB	22
+f54v_L07	23	w:H	AB	23
+f54v_L07	24	w:Costoro	AB	24
+f54v_L07	25	w:+	AB	25
+f54v_L07	26	w:Doma~	AB	26
+f54v_L07	27	w:+	AB	27
+f54v_L08	1	w:Sono	AB	1
+f54v_L08	2	w:+	AB	2
+f54v_L08	3	w:vuole	settledC	3
+f54v_L08	4	w:+	AB	4
+f54v_L08	5	w:.s.	AB	5
+f54v_L08	6	S^H	settledC	6
+f54v_L08	7	w:M.tn	split	7
+f54v_L08	8	w:+	AB	8
+f54v_L08	9	w:+	AB	9
+f54v_L08	10	w:vt	AB	10
+f54v_L08	11	w:liberare	AB	11
+f54v_L08	12	w:+	AB	12
+f54v_L08	13	w:+	AB	13
+f54v_L08	14	w:+	AB	14
+f54v_L08	15	w:tutta	split	15
+f54v_L08	16	w:+	AB	16
+f54v_L08	17	w:questa	AB	17
+f54v_L08	18	w:+	AB	18
+f54v_L08	19	w:+	split	19
+f54v_L08	20	w:+	AB	20
+f54v_L08	21	w:Cosa	split	21
+f54v_L08	22	w:+	split	22
+f54v_L08	23	w:sta?	AB	23
+f54v_L08	24	a^H	settledC	24
+f54v_L08	25	w:altri	AB	25
+f54v_L08	26	w:+	AB	26
+f54v_L08	27	L^	split	27
+f54v_L09	1	dl^	AB	1
+f54v_L09	2	Lx^	AB	2
+f54v_L09	3	[^dot	AB	3
+f54v_L09	4	S7^	AB	4
+f54v_L09	5	w:[C]	AB	5
+f54v_L09	6	#^dot	split	6
+f54v_L09	7	]^	AB	7
+f54v_L09	8	w^dot|#	AB	8
+f54v_L09	9	y^	AB	9
+f54v_L09	10	nt^	AB	10
+f54v_L09	11	bh^	AB	11
+f54v_L09	12	w^	AB	12
+f54v_L09	13	e^	AB	13
+f54v_L09	14	f^	AB	14
+f54v_L09	15	w^	AB	15
+f54v_L09	16	y^	AB	16
+f54v_L09	17	nt^	split	17
+f54v_L09	18	S7^M	settledC	17.5
+f54v_L09	19	tee^	AB	18
+f54v_L09	20	K^	AB	19
+f54v_L09	21	phi^	AB	20
+f54v_L09	22	rz^5	M|split2	21
+f54v_L09	23	rz^	AB	22
+f54v_L09	24	tee^	AB	23
+f54v_L10	1	]^	split	1
+f54v_L10	2	y^	AB	2
+f54v_L10	3	v^	M|split2	3
+f54v_L10	4	g^	AB	4
+f54v_L10	5	S7^1	AB	5
+f54v_L10	6	#^dot	AB	6
+f54v_L10	7	eps^5	settledC	7
+f54v_L10	8	S7^	AB	8
+f54v_L10	9	eps^	split	9
+f54v_L10	10	tee^	AB	10
+f54v_L10	11	Lx^	AB	11
+f54v_L10	12	e^#	AB	12
+f54v_L10	13	g^~	AB	13
+f54v_L10	14	y^	AB	14
+f54v_L10	15	Z^ot	AB	15
+f54v_L10	16	S7^	AB	16
+f54v_L10	17	lam^	AB	17
+f54v_L10	18	H^o|1	AB	18
+f54v_L10	19	eps^#	AB	19
+f54v_L10	20	S7^	AB	20
+f54v_L10	21	eps^	AB	21
+f54v_L10	22	tee^1	settledC	22
+f54v_L10	23	nt^	AB	23
+f54v_L10	24	e^	AB	24
+f54v_L10	25	S7^5	split	25
+f54v_L11	1	Z^dot	AB	1
+f54v_L11	2	y^	AB	2
+f54v_L11	3	nt^	AB	3
+f54v_L11	4	bh^	AB	4
+f54v_L11	5	Z^	AB	5
+f54v_L11	6	S7^	AB	6
+f54v_L11	7	p^	AB	7
+f54v_L11	8	S^	split	8
+f54v_L11	9	phi^	AB	9
+f54v_L11	10	w:[C]	settledC	10
+f54v_L11	11	w:aggiungere	settledC	11
+f54v_L11	12	w:[C]	AB	12
+f54v_L11	13	eps^	settledC	13
+f54v_L11	14	w:et	split	14
+f54v_L11	15	w:levare	AB	15
+f54v_L11	16	w:+	AB	16
+f54v_L11	17	w:+	split	17
+f54v_L11	18	w:+	AB	18
+f54v_L11	19	S4^	AB	19
+f54v_L11	20	y^	AB	20
+f54v_L11	21	S^	AB	21
+f54v_L11	22	]^o	AB	22
+f54v_L11	23	eps^1	AB	23
+f54v_L11	24	m^7	AB	24
+f54v_L11	25	S^	split	25
+f54v_L11	26	lam^	settledC	25.5
+f54v_L11	27	sq^	AB|split2	26
+f54v_L12	1	L^	AB	1
+f54v_L12	2	g^	settledC	2
+f54v_L12	3	[^	AB	3
+f54v_L12	4	S7^	AB	4
+f54v_L12	5	#^	AB	5
+f54v_L12	6	w^1	AB	6
+f54v_L12	7	psi^	AB	7
+f54v_L12	8	]^ot	AB	8
+f54v_L12	9	+^	settledC	9
+f54v_L12	10	e^	AB	10
+f54v_L12	11	tee^	AB	11
+f54v_L12	12	K^	AB	12
+f54v_L12	13	g^	AB	13
+f54v_L12	14	g^	settledC	13.5
+f54v_L12	15	nt^	AB	14
+f54v_L12	16	y^	AB	15
+f54v_L12	17	S4^	AB	16
+f54v_L12	18	Lx^	AB	17
+f54v_L12	19	S^	AB	18
+f54v_L12	20	w:Secondo	AB	19
+f54v_L12	21	w:+	AB	20
+f54v_L12	22	w:+	AB	21
+f54v_L12	23	ch^	AB	22
+f54v_L12	24	w:parrà	AB	23
+f54v_L12	25	N^	AB	24
+f54v_L12	26	eps^	AB	25
+f54v_L12	27	#^	AB	26
+f54v_L12	28	p^	AB	27
+f54v_L12	29	w:expe~	AB	28
+f54v_L13	1	w:Sarà	AB	1
+f54v_L13	2	w:+	AB	2
+f54v_L13	3	eps^	AB	3
+f54v_L13	4	tee^	AB	4
+f54v_L13	5	w:et	AB	5
+f54v_L13	6	w:+	settledC	6
+f54v_L13	7	w:+	AB	7
+f54v_L13	8	w:+	AB	8
+f54v_L13	9	+^	AB	9
+f54v_L13	10	Lx^	AB	10
+f54v_L13	11	y^	AB	11
+f54v_L13	12	S^	AB	12
+f54v_L13	13	]^o	AB	13
+f54v_L13	14	S7^dot|dot	AB	14
+f54v_L13	15	U^	AB	15
+f54v_L13	16	w^	AB	16
+f54v_L13	17	o.^	AB	17
+f54v_L13	18	S7^	AB	18
+f54v_L13	19	eps^7	settledC	19
+f54v_L13	20	m^~	AB	20
+f54v_L13	21	phi^	AB	21
+f54v_L13	22	y^	AB	22
+f54v_L13	23	S^	AB	23
+f54v_L13	24	]^o	AB	24
+f54v_L13	25	tee^	AB	25
+f54v_L13	26	f^	AB	26
+f54v_L13	27	w^	settledC	27
+f54v_L13	28	m^	settledC	27.5
+f54v_L13	29	bh^	AB	28
+f54v_L14	1	w:fra	AB	1
+f54v_L14	2	w:li	settledC	2
+f54v_L14	3	w:altri	AB	3
+f54v_L14	4	w:+	settledC	4
+f54v_L14	5	w:Cosi	AB	5
+f54v_L14	6	w:+	AB	6
+f54v_L14	7	w:vogliono	AB	7
+f54v_L14	8	w:+	settledC	8
+f54v_L14	9	w:+	AB	9
+f54v_L14	10	w:+	AB	10
+f54v_L14	11	S4^	AB	11
+f54v_L14	12	dl^	AB	12
+f54v_L14	13	Lx^	AB	13
+f54v_L14	14	H^o|1	AB	14
+f54v_L14	15	]^o	AB	15
+f54v_L14	16	g^5	AB	16
+f54v_L14	17	g^	settledC	16.5
+f54v_L14	18	]^	AB	17
+f54v_L14	19	g^ot	AB	18
+f54v_L14	20	psi^	AB	19
+f54v_L14	21	e^#	AB	20
+f54v_L14	22	L^~	AB	21
+f54v_L14	23	g^	AB	22
+f54v_L14	24	Z^	AB	23
+f54v_L14	25	phi^	AB	24
+f54v_L14	26	v^1|5	M|split2	25
+f54v_L15	1	bh^	AB	1
+f54v_L15	2	w:[C]	AB	2
+f54v_L15	3	g^	AB	3
+f54v_L15	4	Z^ot	AB	4
+f54v_L15	5	g^	AB	5
+f54v_L15	6	tee^	AB	6
+f54v_L15	7	Z^	AB	7
+f54v_L15	8	H^1	AB	8
+f54v_L15	9	S4^o	AB	9
+f54v_L15	10	dl^	AB	10
+f54v_L15	11	w:Contra	AB	11
+f54v_L15	12	w:+	settledC	12
+f54v_L15	13	w:+	AB	13
+f54v_L15	14	w:Turchi	AB	14
+f54v_L15	15	w:+	AB	15
+f54v_L15	16	w:+	AB	16
+f54v_L15	17	eps^	AB	17
+f54v_L15	18	+^	AB	18
+f54v_L15	19	w:luterani	AB	19
+f54v_L15	20	w:et	settledC	20
+f54v_L15	21	eps^	AB	21
+f54v_L15	22	+^	AB	22
+f54v_L15	23	w:Potr~	settledC	23
+f54v_L15	24	w:+	AB	24
+f54v_L16	1	w:essere	split	1
+f54v_L16	2	w:+	split	2
+f54v_L16	3	S^	settledC	3
+f54v_L16	4	w:che	AB	4
+f54v_L16	5	w:+	split	5
+f54v_L16	6	w:+	AB	6
+f54v_L16	7	w:Gra~	split	7
+f54v_L16	8	w:+	settledC	8
+f54v_L16	9	w:Cancellieri	AB	9
+f54v_L16	10	w:+	settledC	10
+f54v_L16	11	w:+	AB	11
+f54v_L16	12	w:+	AB	12
+f54v_L16	13	w:mi	AB	13
+f54v_L16	14	w:mandera	AB	14
+f54v_L16	15	w:+	AB	15
+f54v_L16	16	w:+	AB	16
+f54v_L16	17	w:la	settledC	17
+f54v_L16	18	w:nota	AB	18
+f54v_L16	19	w:d'	AB	19
+f54v_L16	20	w:quello	AB	20
+f54v_L16	21	w:+	AB	21
+f54v_L16	22	w:+	settledC	22
+f54v_L16	23	w:vogliono	AB	23
+f54v_L16	24	w:+	AB	24
+f54v_L17	1	w:mutare	settledC	1
+f54v_L17	2	w:+	AB	2
+f54v_L17	3	w:+	AB	3
+f54v_L17	4	w:+	AB	4
+f54v_L17	5	w:quanti	AB	5
+f54v_L17	6	w:+	AB	6
+f54v_L17	7	ch^+	settledC	7
+f54v_L17	8	w:et	settledC	8
+f54v_L17	9	w:questo	AB	9
+f54v_L17	10	w:Corrieri	AB	10
+f54v_L17	11	w:+	AB	11
+f54v_L17	12	w:+	settledC	12
+f54v_L17	13	w:Parigi	AB	13
+f54v_L17	14	w:+	AB	14
+f54v_L17	15	eps^	settledC	15
+f54v_L17	16	w:et	split	16
+f54v_L17	17	w:lamandero	AB	17
+f54v_L17	18	w:+	AB	18
+f54v_L17	19	w:+	AB	19
+f54v_L18	1	S4^	AB	1
+f54v_L18	2	dl^	AB	2
+f54v_L18	3	+^	AB	3
+f54v_L18	4	y^	AB|split2	4
+f54v_L18	5	y^	AB	5
+f54v_L18	6	lam^1	AB	6
+f54v_L18	7	H^1|o	AB	7
+f54v_L18	8	Z^ot	AB	8
+f54v_L18	9	w^	M|split2	9
+f54v_L18	10	w^1	split	10
+f54v_L18	11	o.^	settledC	11
+f54v_L18	12	bh^	AB	12
+f54v_L18	13	#^	settledC	13
+f54v_L18	14	S7^	settledC	13.5
+f54v_L18	15	g^dot	AB	14
+f54v_L18	16	lam^	AB	15
+f54v_L18	17	y^	AB	16
+f54v_L18	18	L^	AB	17
+f54v_L18	19	g^	AB	18
+f54v_L18	20	y^~	AB	19
+f54v_L18	21	tee^	AB	20
+f54v_L18	22	K^	AB	21
+f54v_L18	23	o.^	AB	22
+f54v_L18	24	S7^	AB	23
+f54v_L18	25	bh^	AB	24
+f54v_L18	26	w^	settledC	25
+f54v_L18	27	S7^	AB	26
+f54v_L18	28	o.^	AB	27
+f54v_L18	29	g^5	AB	28
+f54v_L18	30	phi^	AB	29
+f54v_L18	31	Z^	AB	30
+f54v_L18	32	[^	AB|split2	31
+f54v_L19	1	o.^	AB	1
+f54v_L19	2	bh^	AB	2
+f54v_L19	3	S7^	AB	3
+f54v_L19	4	#^	AB	4
+f54v_L19	5	L^	AB	5
+f54v_L19	6	g^~	AB	6
+f54v_L19	7	m^1	AB	7
+f54v_L19	8	g^	AB	8
+f54v_L19	9	S7^~	AB	9
+f54v_L19	10	lam^	AB	10
+f54v_L19	11	e^dot|+	AB	11
+f54v_L19	12	eps^5	AB	12
+f54v_L19	13	S7^	AB	13
+f54v_L19	14	U^5	M|split2	14
+f54v_L19	15	phi^	AB	15
+f54v_L19	16	Z^	AB	16
+f54v_L19	17	tee^	AB	17
+f54v_L19	18	e^+	AB	18
+f54v_L19	19	e^#	AB	19
+f54v_L19	20	S7^	settledC	20
+f54v_L19	21	#^dot|ot	AB	21
+f54v_L19	22	bh^	AB	22
+f54v_L19	23	w^	AB	23
+f54v_L19	24	Z^dot	AB	24
+f54v_L19	25	e^#	AB	25
+f54v_L19	26	nt^	AB	26
+f54v_L19	27	psi^	AB	27
+f54v_L19	28	w:<none>	AB	28
+f55r_L01	1	w:<none>	AB	1
+f55r_L01	2	o.^	AB	2
+f55r_L01	3	y^	AB	3
+f55r_L01	4	bh^	AB	4
+f55r_L01	5	e^	AB	5
+f55r_L01	6	tee^	AB	6
+f55r_L01	7	S7^	split	7
+f55r_L01	8	w^	settledC	8
+f55r_L01	9	y^	settledC	9
+f55r_L01	10	lam^	settledC	10
+f55r_L01	11	wd^~	settledC	11
+f55r_L01	12	bh^	AB	12
+f55r_L01	13	g^	AB	13
+f55r_L01	14	v^	AB|split2	14
+f55r_L01	15	Z^dot	AB	15
+f55r_L01	16	nt^	AB	16
+f55r_L01	17	y^	AB	17
+f55r_L01	18	e^	AB	18
+f55r_L01	19	w^	AB	19
+f55r_L01	20	psi^	split	20
+f55r_L01	21	e^+	settledC	21
+f55r_L01	22	w^	AB	22
+f55r_L01	23	H^5|1	AB	23
+f55r_L01	24	nt^	AB	24
+f55r_L01	25	S7^	AB	25
+f55r_L01	26	g^~	M|split2	26
+f55r_L01	27	w:[C]	AB	27
+f55r_L01	28	S^	AB	28
+f55r_L01	29	S^	AB	29
+f55r_L02	1	e^	AB	1
+f55r_L02	2	e^dot|#	AB	2
+f55r_L02	3	#^dot|~	AB	3
+f55r_L02	4	bh^	AB	4
+f55r_L02	5	S7^	AB	5
+f55r_L02	6	Z^dot	AB	6
+f55r_L02	7	e^	AB	7
+f55r_L02	8	wd^	AB	8
+f55r_L02	9	y^	AB	9
+f55r_L02	10	a^~	AB	10
+f55r_L02	11	e^#	settledC	11
+f55r_L02	12	g^7	settledC	12
+f55r_L02	13	a^1	AB	13
+f55r_L02	14	a^1	AB	14
+f55r_L02	15	S^	AB	15
+f55r_L02	16	w^	AB	16
+f55r_L02	17	rz^	AB	17
+f55r_L02	18	y^	AB	18
+f55r_L02	19	tee^	AB	19
+f55r_L02	20	?f55r.2.20^	AB|split2	20
+f55r_L02	21	g^	AB	21
+f55r_L02	22	w^	settledC	22
+f55r_L02	23	?f55r.2.23^	AB|split2	23
+f55r_L02	24	S7^	AB	24
+f55r_L02	25	bh^	AB	25
+f55r_L02	26	g^~	AB	26
+f55r_L02	27	y^	AB	27
+f55r_L02	28	S^	AB|split2	28
+f55r_L02	29	w:[C]	AB	29
+f55r_L02	30	bh^	AB	30
+f55r_L02	31	]^o	AB	31
+f55r_L02	32	lam^5	AB	32
+f55r_L02	33	phi^	AB	33
+f55r_L02	34	a^7	AB	34
+f55r_L03	1	w:[C]	AB	1
+f55r_L03	2	w:[C]	AB	2
+f55r_L03	3	m^1	AB	3
+f55r_L03	4	w^	AB	4
+f55r_L03	5	]^o	AB	5
+f55r_L03	6	lam^5	AB	6
+f55r_L03	7	H^1|5	AB	7
+f55r_L03	8	e^	AB	8
+f55r_L03	9	wd^	AB	9
+f55r_L03	10	y^	AB	10
+f55r_L03	11	L^	AB	11
+f55r_L03	12	w^	AB	12
+f55r_L03	13	tee^	AB	13
+f55r_L03	14	o.^	AB	14
+f55r_L03	15	nt^	AB	15
+f55r_L03	16	bh^	AB	16
+f55r_L03	17	]^o	AB	17
+f55r_L03	18	e^	AB	18
+f55r_L03	19	v^~	M|split2	19
+f55r_L03	20	phi^	AB	20
+f55r_L03	21	y^	AB	21
+f55r_L03	22	nt^	AB	22
+f55r_L03	23	o.^	settledC	23
+f55r_L03	24	g^3	split	24
+f55r_L03	25	g^~	AB	25
+f55r_L03	26	g^1	AB	26
+f55r_L03	27	e^	split	27
+f55r_L04	1	g^~	M|split2	1
+f55r_L04	2	S4^	AB	2
+f55r_L04	3	dl^	AB	3
+f55r_L04	4	p^	settledC	4
+f55r_L04	5	w:questo	settledC	5
+f55r_L04	6	w:verso	AB	6
+f55r_L04	7	w:et	AB	7
+f55r_L04	8	w:p~	AB	8
+f55r_L04	9	eps^	AB	9
+f55r_L04	10	+^	AB	10
+f55r_L04	11	p^	settledC	11
+f55r_L04	12	g^	settledC	12
+f55r_L04	13	w:ogni	AB	13
+f55r_L04	14	a^dot	AB	14
+f55r_L04	15	w:altro	AB	15
+f55r_L04	16	w:+	AB	16
+f55r_L04	17	w:et	AB	17
+f55r_L04	18	w:sopra	AB	18
+f55r_L04	19	w:+	AB	19
+f55r_L04	20	N^	settledC	20
+f55r_L04	21	w:addomandar~	AB	21
+f55r_L04	22	w:+	AB	22
+f55r_L04	23	w:+	AB	23
+f55r_L04	24	w:+	AB	24
+f55r_L04	25	w:+	AB	25
+f55r_L04	26	w:+	AB	26
+f55r_L05	1	y^	AB	1
+f55r_L05	2	w:po	AB	2
+f55r_L05	3	w:v.	AB	3
+f55r_L05	4	w:s.	AB	4
+f55r_L05	5	w:coferisca	AB	5
+f55r_L05	6	w:+	settledC	6
+f55r_L05	7	w:tutto	AB	7
+f55r_L05	8	w:[C]	AB	8
+f55r_L05	9	w:co~	AB	9
+f55r_L05	10	w:pagare	settledC	10
+f55r_L05	11	S^	AB	11
+f55r_L05	12	S^dot	settledC	12
+f55r_L05	13	phi^	AB	13
+f55r_L05	14	a^7	AB	14
+f55r_L05	15	g^7	AB	15
+f55r_L05	16	a^1	AB	16
+f55r_L05	17	S7^	AB	17
+f55r_L05	18	e^dot|+	settledC	18
+f55r_L05	19	L^	split	19
+f55r_L05	20	S7^	AB	20
+f55r_L05	21	S^	AB	21
+f55r_L05	22	w^	AB	22
+f55r_L05	23	o.^	AB|split2	23
+f55r_L05	24	rz^	AB	24
+f55r_L05	25	lam^5	AB	25
+f55r_L06	1	sq^	settledC	1
+f55r_L06	2	psi^	AB	2
+f55r_L06	3	lam^5	AB	3
+f55r_L06	4	eps^5	AB	4
+f55r_L06	5	nt^	AB	5
+f55r_L06	6	[^	AB	6
+f55r_L06	7	rz^	AB	7
+f55r_L06	8	g^~	AB	8
+f55r_L06	9	Z^	AB	9
+f55r_L06	10	]^o	AB	10
+f55r_L06	11	S7^	AB	11
+f55r_L06	12	e^#	AB	12
+f55r_L06	13	eps^5	AB	13
+f55r_L06	14	S7^	M|split2	14
+f55r_L06	15	lam^	AB	15
+f55r_L06	16	S^	AB	16
+f55r_L06	17	?f55r.6.17^	M|split2	17
+f55r_L06	18	rz^	AB	18
+f55r_L06	19	]^ot	AB	19
+f55r_L06	20	g^	AB	20
+f55r_L06	21	g^7	AB	21
+f55r_L06	22	]^o	AB	22
+f55r_L06	23	lam^	AB	23
+f55r_L06	24	bh^	AB	24
+f55r_L06	25	S7^#	AB	25
+f55r_L06	26	Lx^	AB	26
+f55r_L06	27	dl^	AB	27
+f55r_L06	28	w:Aduer~	settledC	28
+f55r_L06	29	w:+	AB	29
+f55r_L06	30	w:+	AB	30
+f55r_L07	1	w:tendo	AB	1
+f55r_L07	2	w:+	AB	2
+f55r_L07	3	S^	AB	3
+f55r_L07	4	S^#	AB	4
+f55r_L07	5	ch^	AB	5
+f55r_L07	6	e^	AB	6
+f55r_L07	7	w:questo	AB	7
+f55r_L07	8	S4^	settledC	8
+f55r_L07	9	dl^	AB	9
+f55r_L07	10	N^	M|split2	10
+f55r_L07	11	nt^	AB	11
+f55r_L07	12	S7^+	AB	12
+f55r_L07	13	bh^	AB	13
+f55r_L07	14	nt^	AB	14
+f55r_L07	15	y^	AB	15
+f55r_L07	16	g^	AB	16
+f55r_L07	17	bh^	AB	17
+f55r_L07	18	S7^	AB	18
+f55r_L07	19	#^	settledC	19
+f55r_L07	20	g^1	AB	20
+f55r_L07	21	w^	AB	21
+f55r_L07	22	y^	settledC	22
+f55r_L07	23	eps^5	AB|split2	23
+f55r_L07	24	S7^	AB	24
+f55r_L07	25	]^o	AB	25
+f55r_L07	26	sq^	settledC	26
+f55r_L08	1	Z^	AB	1
+f55r_L08	2	w:[C]	AB	2
+f55r_L08	3	bh^	AB	3
+f55r_L08	4	sq^o	AB	4
+f55r_L08	5	w^#	AB	5
+f55r_L08	6	rz^	AB	6
+f55r_L08	7	lam^	AB	7
+f55r_L08	8	g^1|~	AB	8
+f55r_L08	9	]^	AB	9
+f55r_L08	10	y^ot	AB	10
+f55r_L08	11	lam^	AB	11
+f55r_L08	12	lam^	AB	12
+f55r_L08	13	g^	AB	13
+f55r_L08	14	bh^	AB	14
+f55r_L08	15	phi^	AB	15
+f55r_L08	16	e^	AB	16
+f55r_L08	17	g^	AB	17
+f55r_L08	18	bh^	AB	18
+f55r_L08	19	[^	AB	19
+f55r_L08	20	o.^	AB|split2	20
+f55r_L08	21	w:+	AB	21
+f55r_L08	22	m^~	AB	22
+f55r_L08	23	w^	AB	23
+f55r_L08	24	m^~	AB	24
+f55r_L08	25	lam^	AB	25
+f55r_L08	26	bh^7	AB	26
+f55r_L08	27	phi^	AB	27
+f55r_L08	28	y^	AB	28
+f55r_L08	29	g^	AB	29
+f55r_L08	30	Z^	AB	30
+f55r_L08	31	g^	AB	31
+f55r_L08	32	Z^	AB	32
+f55r_L09	1	m^~	AB	1
+f55r_L09	2	w^	AB	2
+f55r_L09	3	y^	AB	3
+f55r_L09	4	a^7	AB	4
+f55r_L09	5	eps^	AB|split2	5
+f55r_L09	6	phi^	M|split2	6
+f55r_L09	7	L^	AB	7
+f55r_L09	8	w^	AB	8
+f55r_L09	9	tee^	AB	9
+f55r_L09	10	o.^	AB|split2	10
+f55r_L09	11	nt^	AB	11
+f55r_L09	12	bh^	AB	12
+f55r_L09	13	]^ot	AB	13
+f55r_L09	14	nt^	AB	14
+f55r_L09	15	]^	M|split2	15
+f55r_L09	16	U^	settledC	16
+f55r_L09	17	w^	AB	17
+f55r_L09	18	o.^	AB	18
+f55r_L09	19	S7^	AB	19
+f55r_L09	20	eps^7	AB	20
+f55r_L09	21	m^~	AB	21
+f55r_L09	22	rz^	AB	22
+f55r_L09	23	tee^	AB	23
+f55r_L09	24	a^1	AB	24
+f55r_L09	25	w:[C]	AB	25
+f55r_L09	26	bh^	AB	26
+f55r_L09	27	g^	AB	27
+f55r_L09	28	Z^	AB	28
+f55r_L09	29	phi^	AB	29
+f55r_L09	30	[^	AB	30
+f55r_L10	1	a^7	settledC	1
+f55r_L10	2	w^	AB	2
+f55r_L10	3	tee^	AB	3
+f55r_L10	4	o.^	AB	4
+f55r_L10	5	bh^	AB	5
+f55r_L10	6	g^~	AB	6
+f55r_L10	7	H^	AB	7
+f55r_L10	8	L^	AB	8
+f55r_L10	9	Lx^	AB	9
+f55r_L10	10	o.^	AB	10
+f55r_L10	11	a^1	AB	11
+f55r_L10	12	o.^	AB	12
+f55r_L10	13	e^	AB	13
+f55r_L10	14	nt^	AB	14
+f55r_L10	15	S7^	AB	15
+f55r_L10	16	S^	split	16
+f55r_L10	17	w:[C]	AB	17
+f55r_L10	18	eps^5	AB	18
+f55r_L10	19	tee^	AB	19
+f55r_L10	20	sq^?	AB	20
+f55r_L10	21	]^ot	AB	21
+f55r_L10	22	tee^	split	22
+f55r_L10	23	dl^	AB	23
+f55r_L10	24	p^	AB	24
+f55r_L10	25	w:Potra	AB	25
+f55r_L10	26	w:+	AB	26
+f55r_L10	27	w:+	AB	27
+f55r_L11	1	w:distinguiamo	AB	1
+f55r_L11	2	w:+	AB	2
+f55r_L11	3	w:+	settledC	3
+f55r_L11	4	w:<none>	AB	4
+f55r_L11	5	w:ogni	AB	5
+f55r_L11	6	w:<none>	AB	6
+f55r_L11	7	w:cosa	AB	7
+f55r_L11	8	w:+	AB	8
+f55r_L11	9	phi^	AB	9
+f55r_L11	10	S7^#	AB	10
+f55r_L11	11	m^5	settledC	11
+f55r_L11	12	f^	AB	12
+f55r_L11	13	w^	AB	13
+f55r_L11	14	?f55r.11.14^	AB|split2	14
+f55r_L11	15	m^	AB	15
+f55r_L11	16	S4^	M|split2	16
+f55r_L11	17	S4^	AB|split2	17
+f55r_L11	18	rz^	AB	18
+f55r_L11	19	H^1	AB	19
+f55r_L11	20	e^dot|+	AB	20
+f55r_L11	21	L^	AB	21
+f55r_L11	22	w^	AB	22
+f55r_L11	23	tee^	AB	23
+f55r_L11	24	o.^	AB|split2	24
+f55r_L11	25	nt^	AB	25
+f55r_L12	1	Z^dot	AB	1
+f55r_L12	2	phi^	AB	2
+f55r_L12	3	w:Et	AB	3
+f55r_L12	4	dl^	AB	4
+f55r_L12	5	eps^	AB	5
+f55r_L12	6	w:rimediarne	AB	6
+f55r_L12	7	w:+	AB	7
+f55r_L12	8	w:+	AB	8
+f55r_L12	9	w:a	AB	9
+f55r_L12	10	w:tutti	AB	10
+f55r_L12	11	a^	settledC	11
+f55r_L12	12	w:e	AB	12
+f55r_L12	13	w:disordini	settledC	13
+f55r_L12	14	w:+	AB	14
+f55r_L12	15	w:+	AB	15
+f55r_L12	16	w:della	AB	16
+f55r_L12	17	w:+	AB	17
+f55r_L12	18	w:chiesa	AB	18
+f55r_L12	19	w:+	AB	19
+f55r_L12	20	w:et	split	20
+f55r_L12	21	w:pericoli	AB	21
+f55r_L12	22	tee^	AB	22
+f55r_L12	23	w:+	AB	23
+f55r_L12	24	w:+	settledC	24
+f55r_L12	25	w:+	AB	25
+f55r_L12	26	w:+	AB	26
+f55r_L12	27	w:+	AB	27
+f55r_L12	28	N^	AB	28
+f55r_L12	29	eps^	AB	29
+f55r_L12	30	+^	AB	30
+f55r_L12	31	p^	AB	31
+f55r_L12	32	m^	AB	32
+f55r_L12	33	w:[C]	AB	33
+f55r_L12	34	w:+	AB	34
+f55r_L12	35	bh^	AB	35
+f55r_L13	1	e^#	AB|split2	1
+f55r_L13	2	tee^#	AB|split2	2
+f55r_L13	3	lam^	AB	3
+f55r_L13	4	w^	AB	4
+f55r_L13	5	eps^5	AB	5
+f55r_L13	6	H^	AB	6
+f55r_L13	7	eps^	AB	7
+f55r_L13	8	w^	AB	8
+f55r_L13	9	lam^	AB	9
+f55r_L13	10	L^7	AB	10
+f55r_L13	11	eps^5	AB	11
+f55r_L13	12	S^	settledC	12
+f55r_L13	13	g^	AB	13
+f55r_L13	14	H^1|o	AB	14
+f55r_L13	15	tee^	AB	15
+f55r_L13	16	bh^	AB	16
+f55r_L13	17	K^	AB	17
+f55r_L13	18	v^#|1	AB	18
+f55r_L13	19	m^1	AB	19
+f55r_L13	20	w^	AB	20
+f55r_L13	21	]^o	AB	21
+f55r_L13	22	Z^	AB	22
+f55r_L13	23	m^~	AB	23
+f55r_L13	24	y^	M|split2	24
+f55r_L13	25	g^	AB	25
+f55r_L13	26	o.^	AB	26
+f55r_L13	27	S7^	AB	27
+f55r_L13	28	y^	AB	28
+f55r_L13	29	tee^	AB	29
+f55r_L13	30	f^	AB	30
+f55r_L13	31	g^	AB	31
+f55r_L13	32	S^	AB	32
+f55r_L13	33	m^7	settledC	33
+f55r_L14	1	nt^	AB	1
+f55r_L14	2	H^1|o	AB	2
+f55r_L14	3	o.^	AB	3
+f55r_L14	4	S7^	AB	4
+f55r_L14	5	sq^	settledC	5
+f55r_L14	6	psi^	AB	6
+f55r_L14	7	lam^	AB	7
+f55r_L14	8	S4^5	AB	8
+f55r_L14	9	phi^	AB	9
+f55r_L14	10	S4^	AB	10
+f55r_L14	11	S^	AB	11
+f55r_L14	12	w:Sopra	AB	12
+f55r_L14	13	w:+	settledC	13
+f55r_L14	14	N^	AB	14
+f55r_L14	15	w:modo	AB	15
+f55r_L14	16	w:+	AB	16
+f55r_L14	17	w:desidera	AB	17
+f55r_L14	18	w:+	AB	18
+f55r_L14	19	w:+	AB	19
+f55r_L14	20	N^	AB	20
+f55r_L14	21	w^	AB	21
+f55r_L14	22	nt^	AB	22
+f55r_L14	23	rz^	AB	23
+f55r_L14	24	g^~	AB	24
+f55r_L14	25	nt^	AB	25
+f55r_L14	26	S7^	AB	26
+f55r_L14	27	#^	AB	27
+f55r_L14	28	lam^dot	AB	28
+f55r_L14	29	S^	AB	29
+f55r_L14	30	w:poco	AB	30
+f55r_L14	31	S7^	AB	31
+f55r_L15	1	w:Tutti	AB	1
+f55r_L15	2	w:li	AB	2
+f55r_L15	3	w:altri	AB	3
+f55r_L15	4	w:+	settledC	4
+f55r_L15	5	w:Pratiche	AB	5
+f55r_L15	6	w:+	AB	6
+f55r_L15	7	p^	settledC	7
+f55r_L15	8	S7^	AB	8
+f55r_L15	9	w:grate	settledC	9
+f55r_L15	10	w:+	AB	10
+f55r_L15	11	w:+	AB	11
+f55r_L15	12	a^5	AB	12
+f55r_L15	13	tee^	AB	13
+f55r_L15	14	lam^	AB	14
+f55r_L15	15	m^5|~	AB	15
+f55r_L15	16	g^7	AB	16
+f55r_L15	17	eps^5	AB	17
+f55r_L15	18	]^	AB	18
+f55r_L15	19	g^ot	AB	19
+f55r_L15	20	phi^	AB	20
+f55r_L15	21	S4^	AB	21
+f55r_L15	22	dl^	AB	22
+f55r_L15	23	w:riuscibili	AB	23
+f55r_L15	24	w:+	AB	24
+f55r_L15	25	w:+	AB	25
+f55r_L15	26	p^	settledC	26
+f55r_L15	27	w:facillima	AB	27
+f55r_L15	28	w:+	AB	28
+f55r_L15	29	w:et	AB	29
+f55r_L16	1	w:riuscibili	settledC	1
+f55r_L16	2	w:+	AB	2
+f55r_L16	3	w:+	AB	3
+f55r_L16	4	w:+	AB	4
+f55r_L16	5	w:+	AB	5
+f55r_L16	6	S4^	AB	6
+f55r_L16	7	Lx^	AB	7
+f55r_L16	8	sq^ot	AB	8
+f55r_L16	9	y^	AB	9
+f55r_L16	10	lam^	AB	10
+f55r_L16	11	g^	AB	11
+f55r_L16	12	]^o	AB	12
+f55r_L16	13	g^	AB	13
+f55r_L16	14	eps^5	AB	14
+f55r_L16	15	S7^	AB	15
+f55r_L16	16	e^#	M|split2	16
+f55r_L16	17	a^	AB	17
+f55r_L16	18	w:[C]	AB	18
+f55r_L16	19	rz^	AB	19
+f55r_L16	20	S4^	AB	20
+f55r_L16	21	Lx^	AB	21
+f55r_L16	22	w:facillima	AB	22
+f55r_L16	23	w:+	AB	23
+f55r_L16	24	w:+	AB	24
+f55r_L16	25	w:+	AB	25
+f55r_L16	26	eps^	AB	26
+f55r_L16	27	+^	settledC	27
+f55r_L16	28	w:et	AB	28
+f55r_L16	29	w:sanza	AB	29
+f55r_L16	30	w:+	settledC	30
+f55r_L16	31	w:+	AB	31
+f55r_L17	1	w:alcuno	settledC	1
+f55r_L17	2	w:+	AB	2
+f55r_L17	3	w:Pericolo	AB	3
+f55r_L17	4	p^	settledC	4
+f55r_L17	5	w:[C]	AB	5
+f55r_L17	6	w:+	AB	6
+f55r_L17	7	w:+	AB	7
+f55r_L17	8	w:+	AB	8
+f55r_L17	9	w:+	AB	9
+f55r_L17	10	S4^	AB	10
+f55r_L17	11	dl^	AB	11
+f55r_L17	12	+^	AB	12
+f55r_L17	13	v^1|#	AB	13
+f55r_L17	14	sq^+	settledC	14
+f55r_L17	15	lam^	AB	15
+f55r_L17	16	K^	AB	16
+f55r_L17	17	rz^#	AB	17
+f55r_L17	18	nt^	AB	18
+f55r_L17	19	g^	AB	19
+f55r_L17	20	S7^	AB	20
+f55r_L17	21	lam^	AB	21
+f55r_L17	22	phi^5	AB	22
+f55r_L17	23	S4^	AB	23
+f55r_L17	24	dl^	AB	24
+f55r_L17	25	w:inogni	AB	25
+f55r_L17	26	w:Cosa	AB	26
+f55r_L18	1	w:Cosa	AB	1
+f55r_L18	2	w:mostra	settledC	2
+f55r_L18	3	w:+	AB	3
+f55r_L18	4	w:sopra	AB	4
+f55r_L18	5	N^	AB	5
+f55r_L18	6	w:tutti	split	6
+f55r_L18	7	w:li	AB	7
+f55r_L18	8	N^	AB	8
+f55r_L18	9	w:altri	AB	9
+f55r_L18	10	w:+	AB	10
+f55r_L18	11	w:Cose	settledC	11
+f55r_L18	12	w:+	AB	12
+f55r_L18	13	w:+	AB	13
+f55r_L18	14	w:desiderano	AB	14
+f55r_L18	15	w:+	AB	15
+f55r_L18	16	w:+	AB	16
+f55r_L18	17	w:+	AB	17
+f55r_L18	18	w:+	AB	18
+f55r_L18	19	w:+	AB	19
+f55r_L18	20	w:+	AB	20
+f55r_L18	21	w:di	AB	21
+f55r_L18	22	w:+	AB	22
+f55r_L18	23	w:+	AB	23
+f55r_L18	24	S7^	M|split2	24
+f55r_L18	25	w:+	AB	25
+f55r_L18	26	w:+	AB	26
+f55r_L18	27	S4^dot	AB	27
+f55r_L18	28	dl^	AB	28
+f55r_L18	29	+^	AB	29
+f55r_L18	30	Lx^	AB	30
+f55r_L19	1	bh^dot	AB	1
+f55r_L19	2	g^	AB	2
+f55r_L19	3	w^	AB	3
+f55r_L19	4	Z^ot	AB	4
+f55r_L19	5	g^~	AB	5
+f55r_L19	6	]^o	AB	6
+f55r_L19	7	L^	AB	7
+f55r_L19	8	e^	AB	8
+f55r_L19	9	e^	AB	9
+f55r_L19	10	g^5	settledC	10
+f55r_L19	11	e^#	AB	11
+f55r_L19	12	g^1	AB	12
+f55r_L19	13	a^5	AB	13
+f55r_L19	14	tee^	AB	14
+f55r_L19	15	w:<none>	AB	15
+f55r_L19	16	Z^ot	AB	16
+f55r_L19	17	S7^#	AB	17
+f55r_L19	18	g^dot	AB	18
+f55r_L19	19	?f55r.19.19^	AB|split2	19
+f55r_L19	20	psi^	AB	20
+f55r_L19	21	eps^5	AB	21
+f55r_L19	22	g^5	AB	22
+f55r_L19	23	Z^	AB	23
+f55r_L19	24	w^	AB	24
+f55r_L19	25	g^	AB	25
+f55r_L19	26	a^1	AB	26
+f55r_L19	27	v^	M|split2	27
+f55v_L01	1	w:Truoua	AB	1
+f55v_L01	2	w:+	AB	2
+f55v_L01	3	w:ancora	AB	3
+f55v_L01	4	w:l'auiso	AB	4
+f55v_L01	5	w:+	AB	5
+f55v_L01	6	S4^	AB	6
+f55v_L01	7	dl^	AB	7
+f55v_L01	8	phi^	settledC	8
+f55v_L01	9	g^+	settledC	8.5
+f55v_L01	10	v^5|1	AB	9
+f55v_L01	11	w:<none>	AB	10
+f55v_L01	12	y^	AB	11
+f55v_L01	13	nt^	AB	12
+f55v_L01	14	bh^	AB	13
+f55v_L01	15	w^dot	AB	14
+f55v_L01	16	e^	AB	15
+f55v_L01	17	eps^5	AB	16
+f55v_L01	18	S7^	AB	17
+f55v_L01	19	p^	AB	18
+f55v_L01	20	g^	AB	19
+f55v_L01	21	v^1|1	AB	20
+f55v_L01	22	m^1	AB	21
+f55v_L01	23	bh^	AB	22
+f55v_L01	24	Z^	AB	23
+f55v_L02	1	S7^+	AB	1
+f55v_L02	2	g^dot	AB	2
+f55v_L02	3	S4^~	AB	3
+f55v_L02	4	dl^	AB	4
+f55v_L02	5	w:Jo	AB	5
+f55v_L02	6	w:+	settledC	6
+f55v_L02	7	w:d~ti	settledC	7
+f55v_L02	8	w:+	settledC	8
+f55v_L02	9	w:a.s.	settledC	9
+f55v_L02	10	w:+	settledC	10
+f55v_L02	11	w:M~tu	settledC	11
+f55v_L02	12	w:+	settledC	12
+f55v_L02	13	S4^	AB	13
+f55v_L02	14	dl^	AB	14
+f55v_L02	15	rz^	AB	15
+f55v_L02	16	+^	settledC	16
+f55v_L02	17	w^	AB	17
+f55v_L02	18	o.^	settledC	18
+f55v_L02	19	rz^	AB	19
+f55v_L02	20	Z^~	AB	20
+f55v_L02	21	e^	AB	21
+f55v_L02	22	wd^	AB	22
+f55v_L02	23	y^	AB	23
+f55v_L02	24	e^dot	AB	24
+f55v_L02	25	psi^	AB	25
+f55v_L02	26	m^~	AB	26
+f55v_L03	1	L^	AB	1
+f55v_L03	2	bh^	AB	2
+f55v_L03	3	phi^	AB	3
+f55v_L03	4	y^	AB	4
+f55v_L03	5	+^	settledC	5
+f55v_L03	6	g^	AB	6
+f55v_L03	7	]^o	AB	7
+f55v_L03	8	lam^	AB	8
+f55v_L03	9	bh^	AB	9
+f55v_L03	10	S7^#	AB	10
+f55v_L03	11	w:Cosj	AB	11
+f55v_L03	12	w:+	split	12
+f55v_L03	13	w:Cosj	AB	13
+f55v_L03	14	w:+	AB	14
+f55v_L03	15	w:+	AB	15
+f55v_L03	16	w:+	AB	16
+f55v_L03	17	w:si	AB	17
+f55v_L03	18	w:si	AB	18
+f55v_L03	19	w:+	AB	19
+f55v_L03	20	w:restassino	AB	20
+f55v_L03	21	w:+	AB	21
+f55v_L03	22	w:+	AB	22
+f55v_L03	23	w:+	AB	23
+f55v_L03	24	w:+	AB	24
+f55v_L03	25	w:+	settledC	25
+f55v_L03	26	w:+	AB	26
+f55v_L04	1	w:<none>	AB	1
+f55v_L04	2	w:+	AB	2
+f55v_L04	3	w:+	settledC	3
+f55v_L04	4	w:+	AB	4
+f55v_L04	5	w:dj	AB	5
+f55v_L04	6	w:+	AB	6
+f55v_L04	7	w:mn	AB	7
+f55v_L04	8	w:Purn	settledC	8
+f55v_L04	9	w:+	AB	9
+f55v_L04	10	w:bi	AB	10
+f55v_L04	11	bh^	AB	11
+f55v_L04	12	S4^	AB	12
+f55v_L04	13	Lx^	AB	13
+f55v_L04	14	+^	AB	14
+f55v_L04	15	lam^	AB	15
+f55v_L04	16	nt^~	AB	16
+f55v_L04	17	y^	AB	17
+f55v_L04	18	g^	AB	18
+f55v_L04	19	eps^	settledC	19
+f55v_L04	20	w:<none>	settledC	20
+f55v_L04	21	rz^	AB	21
+f55v_L04	22	lam^#	AB	22
+f55v_L04	23	w:Bisogni	AB	23
+f55v_L04	24	w:+	AB	24
+f55v_L04	25	w:+	AB	25
+f55v_L04	26	w:che	AB	26
+f55v_L04	27	w:+	AB	27
+f55v_L04	28	ch^	AB	28
+f55v_L04	29	sq^ot	AB	29
+f55v_L04	30	tee^	AB	30
+f55v_L05	1	e^#	AB	1
+f55v_L05	2	wd^	AB	2
+f55v_L05	3	y^	AB	3
+f55v_L05	4	e^dot|+	AB	4
+f55v_L05	5	psi^	AB	5
+f55v_L05	6	m^~	AB	6
+f55v_L05	7	S7^	AB	7
+f55v_L05	8	g^	AB	8
+f55v_L05	9	S7^#	AB	9
+f55v_L05	10	a^	AB	10
+f55v_L05	11	S7^+	settledC	11
+f55v_L05	12	]^o	AB	12
+f55v_L05	13	g^	AB	13
+f55v_L05	14	[^~	AB	14
+f55v_L05	15	S7^+	AB	15
+f55v_L05	16	S4^	AB	16
+f55v_L05	17	w:mi	AB	17
+f55v_L05	18	w:to	AB	18
+f55v_L05	19	w:v.s.	AB	19
+f55v_L05	20	w:lo	AB	20
+f55v_L05	21	w:lo	AB	21
+f55v_L05	22	w:rifarz	AB	22
+f55v_L05	23	g^dot	settledC	23
+f55v_L05	24	w:<none>	AB	24
+f55v_L05	25	w:+	AB	25
+f55v_L05	26	w:+	AB	26
+f55v_L05	27	w:+	AB	27
+f55v_L05	28	w:+	AB	28
+f55v_L05	29	eps^	settledC	29
+f55v_L06	1	w:mi	AB	1
+f55v_L06	2	w:lo	AB	2
+f55v_L06	3	w:mandj	AB	3
+f55v_L06	4	S7^dot	settledC	4
+f55v_L06	5	S4^	AB	5
+f55v_L06	6	rz^	AB	6
+f55v_L06	7	tee^	AB	7
+f55v_L06	8	m^1	AB	8
+f55v_L06	9	g^	AB	9
+f55v_L06	10	S7^~	AB	10
+f55v_L06	11	lam^	AB	11
+f55v_L06	12	e^#	AB	12
+f55v_L06	13	g^	AB	13
+f55v_L06	14	lam^	AB	14
+f55v_L06	15	rz^	AB	15
+f55v_L06	16	S7^#	settledC	16
+f55v_L06	17	m^~	AB	17
+f55v_L06	18	w^	AB	18
+f55v_L06	19	L^	AB	19
+f55v_L06	20	w:<none>	settledC	20
+f55v_L06	21	bh^	AB	21
+f55v_L06	22	phi^	AB	22
+f55v_L06	23	]^o	AB	23
+f55v_L06	24	e^	AB	24
+f55v_L06	25	lam^dot|dot	AB	25
+f55v_L07	1	e^+	AB	1
+f55v_L07	2	eps^5	AB	2
+f55v_L07	3	S7^#	AB	3
+f55v_L07	4	S7^#	AB	4
+f55v_L07	5	Z^dot|ot	AB	5
+f55v_L07	6	eps^	AB	6
+f55v_L07	7	S7^~	AB	7
+f55v_L07	8	lam^	AB	8
+f55v_L07	9	a^5|7	AB	9
+f55v_L07	10	]^o	AB	10
+f55v_L07	11	e^dot	AB	11
+f55v_L07	12	eps^1	AB	12
+f55v_L07	13	lam^7	settledC	13
+f55v_L07	14	w:<none>	AB	14
+f55v_L07	15	m^3	settledC	15
+f55v_L07	16	lam^	AB	16
+f55v_L07	17	S7^1	AB	17
+f55v_L07	18	e^	AB	18
+f55v_L07	19	e^dot	AB	19
+f55v_L07	20	#^dot|#	AB	20
+f55v_L07	21	w:<none>	AB	21
+f55v_L07	22	lam^5	AB	22
+f55v_L07	23	a^	AB	23
+f55v_L07	24	S7^	AB	24
+f55v_L07	25	]^o	AB	25
+f55v_L07	26	H^1	AB	26
+f55v_L07	27	tee^	AB	27
+f55v_L07	28	K^1	AB	28
+f55v_L07	29	m^1|5	AB	29
+f55v_L07	30	w:<none>	settledC	30
+f55v_L08	1	lam^5	AB	1
+f55v_L08	2	#^o	AB	2
+f55v_L08	3	wd^	AB	3
+f55v_L08	4	bh^	AB	4
+f55v_L08	5	y^	AB	5
+f55v_L08	6	y^	AB	6
+f55v_L08	7	psi^	AB	7
+f55v_L08	8	y^	AB	8
+f55v_L08	9	Z^	AB	9
+f55v_L08	10	g^~	AB	10
+f55v_L08	11	S4^	AB	11
+f55v_L08	12	dl^	AB	12
+f55v_L08	13	H^	AB	13
+f55v_L08	14	H^1|o	AB	14
+f55v_L08	15	v^	split	15
+f55v_L08	16	e^	AB	16
+f55v_L08	17	a^1	AB	17
+f55v_L08	18	S7^	AB	18
+f55v_L08	19	e^+	AB	19
+f55v_L08	20	S4^	AB	20
+f55v_L08	21	w:Assaj	AB	21
+f55v_L08	22	w:+	settledC	22
+f55v_L08	23	w:+	AB	23
+f55v_L08	24	w:+	settledC	24
+f55v_L08	25	w:+	AB	25
+f55v_L08	26	w:+	settledC	26
+f55v_L08	27	w:+	AB	27
+f55v_L08	28	N^	settledC	28
+f55v_L08	29	w:<none>	AB	29
+f55v_L09	1	w:?	split	1
+f55v_L09	2	w:+	split	2
+f55v_L09	3	w:+	split	3
+f55v_L09	4	w:+	AB	4
+f55v_L09	5	w:hw	AB	5
+f55v_L09	6	w:+	AB	6
+f55v_L09	7	w:<none>	AB	7
+f55v_L09	8	ch^	AB	8
+f55v_L09	9	S4^	AB	9
+f55v_L09	10	dl^	AB	10
+f55v_L09	11	tee^	settledC	11
+f55v_L09	12	Lx^	AB	12
+f55v_L09	13	g^	AB	13
+f55v_L09	14	S^	settledC	14
+f55v_L09	15	S7^	AB	15
+f55v_L09	16	lam^	AB	16
+f55v_L09	17	S7^~	AB	17
+f55v_L09	18	lam^	AB	18
+f55v_L09	19	g^1	AB	19
+f55v_L09	20	w:<none>	AB	20
+f55v_L09	21	e^#	AB	21
+f55v_L09	22	wd^	AB	22
+f55v_L09	23	y^	AB	23
+f55v_L09	24	w:<none>	AB	24
+f55v_L09	25	w^	AB	25
+f55v_L09	26	#^#	AB	26
+f55v_L09	27	w^	AB	27
+f55v_L09	28	w:<none>	AB	28
+f55v_L09	29	g^	AB	29
+f55v_L10	1	]^o	split	1
+f55v_L10	2	Lx^	settledC	2
+f55v_L10	3	g^1	AB	3
+f55v_L10	4	phi^	split	4
+f55v_L10	5	w:<none>	AB	5
+f55v_L10	6	lam^3	split	6
+f55v_L10	7	bh^	AB	7
+f55v_L10	8	S7^	AB	8
+f55v_L10	9	#^	AB	9
+f55v_L10	10	e^	AB	10
+f55v_L10	11	wd^	AB	11
+f55v_L10	12	bh^	AB	12
+f55v_L10	13	y^	AB	13
+f55v_L10	14	f^	AB	14
+f55v_L10	15	f^5	AB	15
+f55v_L10	16	e^	AB	16
+f55v_L10	17	Z^	AB	17
+f55v_L10	18	y^	AB	18
+f55v_L10	19	Lx^	settledC	19
+f55v_L10	20	w:<none>	AB	20
+f55v_L10	21	w^	AB	21
+f55v_L10	22	Lx^dot	settledC	22
+f55v_L10	23	S7^1	AB	23
+f55v_L11	1	eps^7	AB	1
+f55v_L11	2	S7^	AB	2
+f55v_L11	3	sq^ot	settledC	3
+f55v_L11	4	w:<none>	settledC	4
+f55v_L11	5	w:<none>	AB	5
+f55v_L11	6	#^	AB	6
+f55v_L11	7	H^1|o	AB	7
+f55v_L11	8	tee^	split	8
+f55v_L11	9	w^	AB	9
+f55v_L11	10	g^	AB	10
+f55v_L11	11	S7^	AB	11
+f55v_L11	12	y^	AB	12
+f55v_L11	13	g^	AB	13
+f55v_L11	14	]^o	AB	14
+f55v_L11	15	bh^	AB	15
+f55v_L11	16	g^	split	16
+f55v_L11	17	rz^	AB	17
+f55v_L11	18	g^1	AB	18
+f55v_L11	19	S7^	AB	19
+f55v_L11	20	#^	AB	20
+f55v_L11	21	S4^	AB	21
+f55v_L11	22	dl^	settledC	22
+f55v_L11	23	f^	settledC	22.5
+f55v_L11	24	Lx^	AB	23
+f55v_L12	1	w:Sanza	AB	1
+f55v_L12	2	w:+	AB	2
+f55v_L12	3	w:+	settledC	3
+f55v_L12	4	w:+	AB	4
+f55v_L12	5	w:no	AB	5
+f55v_L12	6	w:+	AB	6
+f55v_L12	7	w:no	AB	7
+f55v_L12	8	w:fara	AB	8
+f55v_L12	9	w:+	AB	9
+f55v_L12	10	w:<none>	AB	10
+f55v_L12	11	w:<none>	AB	11
+f55v_L12	12	w:<none>	AB	12
+f55v_L12	13	S4^	AB	13
+f55v_L12	14	y^	AB	14
+f55v_L12	15	nt^	AB	15
+f55v_L12	16	bh^	AB	16
+f55v_L12	17	w^	AB	17
+f55v_L12	18	e^dot	AB	18
+f55v_L12	19	phi^	AB	19
+f55v_L12	20	dl^	AB	20
+f55v_L12	21	w:Jo	AB	21
+f55v_L12	22	w:penso	AB	22
+f55v_L12	23	w:c	AB	23
+f55v_L12	24	w:+	AB	24
+f55v_L12	25	w:+	AB	25
+f55v_L12	26	w:+	AB	26
+f55v_L13	1	S4^	AB	1
+f55v_L13	2	Lx^	AB	2
+f55v_L13	3	tee^	settledC	3
+f55v_L13	4	w^	AB	4
+f55v_L13	5	y^	AB	5
+f55v_L13	6	S7^dot	settledC	6
+f55v_L13	7	nt^	split	7
+f55v_L13	8	g^	AB	8
+f55v_L13	9	H^	AB	9
+f55v_L13	10	H^1|o	AB	10
+f55v_L13	11	e^	AB	11
+f55v_L13	12	H^	AB	12
+f55v_L13	13	S7^	AB	13
+f55v_L13	14	#^dot	AB	14
+f55v_L13	15	e^dot	AB	15
+f55v_L13	16	S7^	AB	16
+f55v_L13	17	#^dot	AB	17
+f55v_L13	18	]^ot	AB	18
+f55v_L13	19	L^	AB	19
+f55v_L13	20	g^1	AB	20
+f55v_L13	21	w:<none>	AB	21
+f55v_L13	22	S4^	AB	22
+f55v_L13	23	dl^	AB	23
+f55v_L13	24	Lx^	AB	24
+f55v_L14	1	eps^1	AB	1
+f55v_L14	2	w:<none>	AB	2
+f55v_L14	3	w:Stato	AB	3
+f55v_L14	4	w:molto	AB	4
+f55v_L14	5	w:+	AB	5
+f55v_L14	6	w:ad	AB	6
+f55v_L14	7	w:<none>	settledC	7
+f55v_L14	8	w:proposito	AB	8
+f55v_L14	9	w:<none>	AB	9
+f55v_L14	10	w:+	AB	10
+f55v_L14	11	w:+	AB	11
+f55v_L14	12	w:+	AB	12
+f55v_L14	13	w:<none>	settledC	13
+f55v_L14	14	w:fare	AB	14
+f55v_L14	15	w:+	AB	15
+f55v_L14	16	w:intendere	AB	16
+f55v_L14	17	w:+	AB	17
+f55v_L14	18	w:+	settledC	18
+f55v_L14	19	w:a.s.	settledC	19
+f55v_L14	20	S^	settledC	20
+f55v_L14	21	lam^	AB	21
+f55v_L14	22	lam^#	AB	22
+f55v_L14	23	p^	AB	23
+f55v_L14	24	Lx^	AB	24
+f55v_L14	25	w:M~tr	AB	25
+f55v_L15	1	sq^ot	AB	1
+f55v_L15	2	w:<none>	AB	2
+f55v_L15	3	rz^	AB	3
+f55v_L15	4	U^	AB	4
+f55v_L15	5	w^	AB	5
+f55v_L15	6	w:<none>	AB	6
+f55v_L15	7	S7^5	settledC	7
+f55v_L15	8	H^	settledC	7.5
+f55v_L15	9	e^dot	AB	8
+f55v_L15	10	e^dot|#	AB	9
+f55v_L15	11	a^~	AB	10
+f55v_L15	12	S7^#	AB	11
+f55v_L15	13	eps^dot	AB	12
+f55v_L15	14	g^	AB	13
+f55v_L15	15	nt^	AB	14
+f55v_L15	16	]^o	AB	15
+f55v_L15	17	w:<none>	AB	16
+f55v_L15	18	sq^#	AB	17
+f55v_L15	19	eps^~	settledC	18
+f55v_L15	20	S7^	AB	19
+f55v_L15	21	#^	settledC	20
+f55v_L15	22	rz^	AB	21
+f55v_L15	23	Z^	AB	22
+f55v_L15	24	S7^	AB	23
+f55v_L15	25	lam^#	AB	24
+f55v_L16	1	a^5	AB	1
+f55v_L16	2	tee^	AB	2
+f55v_L16	3	lam^	AB	3
+f55v_L16	4	g^5	AB	4
+f55v_L16	5	a^	AB	5
+f55v_L16	6	g^5	AB	6
+f55v_L16	7	phi^1	AB	7
+f55v_L16	8	e^	AB	8
+f55v_L16	9	psi^	AB	9
+f55v_L16	10	g^	settledC	10
+f55v_L16	11	H^o|1	AB	11
+f55v_L16	12	]^	settledC	12
+f55v_L16	13	dl^	split	13
+f55v_L16	14	g^	AB	14
+f55v_L16	15	S^	AB	15
+f55v_L16	16	rz^	AB	16
+f55v_L16	17	g^5	AB	17
+f55v_L16	18	S7^#	AB	18
+f55v_L16	19	a^dot	AB	19
+f55v_L16	20	S^	AB	20
+f55v_L16	21	tee^	AB	21
+f55v_L16	22	lam^5	AB	22
+f55v_L16	23	o.^	AB	23
+f55v_L16	24	y^	AB	24
+f55v_L16	25	S7^	AB	25
+f55v_L16	26	w^	split	26
+f55v_L16	27	w:<none>	AB	27
+f55v_L16	28	g^	AB	28
+f55v_L16	29	Z^	AB	29
+f55v_L16	30	S4^	AB	30
+f55v_L16	31	dl^	AB	31
+f55v_L16	32	+^	AB	32
+f55v_L17	1	S^	settledC	1
+f55v_L17	2	w:M~tv	settledC	2
+f55v_L17	3	S^	split	3
+f55v_L17	4	w:restato	AB	4
+f55v_L17	5	w:+	split	5
+f55v_L17	6	w:+	AB	6
+f55v_L17	7	w:+	settledC	7
+f55v_L17	8	w:+	AB	8
+f55v_L17	9	f^	split	9
+f55v_L17	10	w:p	settledC	10
+f55v_L17	11	w:quello	AB	11
+f55v_L17	12	w:+	AB	12
+f55v_L17	13	ch^	AB	13
+f55v_L17	14	bh^dot	settledC	14
+f55v_L17	15	w:et	AB	15
+f55v_L17	16	w:si	AB	16
+f55v_L17	17	w:ho	settledC	17
+f55v_L17	18	w:fatto	AB	18
+f55v_L17	19	w:+	AB	19
+f55v_L17	20	w:+	AB	20
+f55v_L17	21	w:+	AB	21
+f55v_L18	1	w:p	split	1
+f55v_L18	2	w:parte	settledC	2
+f55v_L18	3	w:+	AB	3
+f55v_L18	4	w:f.s.s.	settledC	4
+f55v_L18	5	w:+	settledC	5
+f55v_L18	6	S^	settledC	6
+f55v_L18	7	nt^	settledC	7
+f55v_L18	8	S^~	settledC	7.5
+f55v_L18	9	w:La	AB	8
+f55v_L18	10	w:+	AB	9
+f55v_L18	11	w:M~tr	settledC	10
+f55v_L18	12	w:+	AB	11
+f55v_L18	13	w:Ces	AB	12
+f55v_L18	14	w:+	settledC	13
+f55v_L18	15	w:vederann	AB	14
+f55v_L18	16	w:+	settledC	15
+f55v_L18	17	w:+	AB	16
+f55v_L18	18	w:+	AB	17
+f55v_L18	19	w:molto	settledC	18
+f55v_L18	20	w:+	AB	19
+f55v_L18	21	w:<none>	AB	20
+f55v_L18	22	S4^	AB	21
+f55v_L18	23	dl^	AB	22
+f55v_L18	24	H^1|o	AB	23
+f55v_L18	25	]^o	AB	24
+f55v_L18	26	w:<none>	AB	25
+f55v_L19	1	eps^7	AB	1
+f55v_L19	2	Z^	AB	2
+f55v_L19	3	psi^	AB	3
+f55v_L19	4	eps^5	AB	4
+f55v_L19	5	Z^ot	AB	5
+f55v_L19	6	e^dot|+	AB	6
+f55v_L19	7	lam^	AB	7
+f55v_L19	8	wd^	AB	8
+f55v_L19	9	rz^	AB	9
+f55v_L19	10	e^#	AB	10
+f55v_L19	11	g^dot	AB	11
+f55v_L19	12	y^	AB	12
+f55v_L19	13	L^	AB	13
+f55v_L19	14	bh^	AB	14
+f55v_L19	15	eps^1	AB	15
+f55v_L19	16	w^	AB	16
+f55v_L19	17	e^dot	AB	17
+f55v_L19	18	S7^+	settledC	18
+f55v_L19	19	]^	AB	19
+f55v_L19	20	nt^	AB	20
+f55v_L19	21	S4^	AB	21
+f55v_L19	22	w:<none>	AB	22
+f55v_L19	23	eps^	AB	23
+f55v_L19	24	+^	AB	24
+f55v_L19	25	w:ment	AB	25
+f56r_L01	1	w:ha	AB	1
+f56r_L01	2	w:+	settled	2
+f56r_L01	3	w:Parlato	AB	3
+f56r_L01	4	w:+	AB	4
+f56r_L01	5	w:+	AB	5
+f56r_L01	6	w:molto	AB	6
+f56r_L01	7	w:Caldam~te	AB	7
+f56r_L01	8	w:+	AB	8
+f56r_L01	9	w:+	settled	9
+f56r_L01	10	w:+	AB	10
+f56r_L01	11	w:m	AB	11
+f56r_L01	12	w:uuolti	AB	12
+f56r_L01	13	w:+	AB	13
+f56r_L01	14	ch^	AB	14
+f56r_L01	15	S4^	AB	15
+f56r_L01	16	Lx^	settled	16
+f56r_L01	17	S7^	AB	17
+f56r_L01	18	#^	AB	18
+f56r_L01	19	Z^	settled	19
+f56r_L01	20	nt^	AB	20
+f56r_L01	21	S7^	AB	21
+f56r_L01	22	#^	settled	22
+f56r_L01	23	e^dot	AB	23
+f56r_L01	24	wd^	AB	24
+f56r_L01	25	S^	AB	25
+f56r_L01	26	w:56	settled	26
+f56r_L02	1	o.^	AB	1
+f56r_L02	2	g^	AB	2
+f56r_L02	3	y^	AB	3
+f56r_L02	4	]^ot	AB	4
+f56r_L02	5	g^	AB	5
+f56r_L02	6	S^	AB	6
+f56r_L02	7	S^	AB	7
+f56r_L02	8	o.^	settled	8
+f56r_L02	9	phi^	AB	9
+f56r_L02	10	m^1	AB	10
+f56r_L02	11	w^	AB	11
+f56r_L02	12	S^	AB	12
+f56r_L02	13	]^o	AB	13
+f56r_L02	14	H^1|o	AB	14
+f56r_L02	15	e^+	settled	15
+f56r_L02	16	m^~	AB	16
+f56r_L02	17	g^	AB	17
+f56r_L02	18	S7^	AB	18
+f56r_L02	19	e^#	AB	19
+f56r_L02	20	eps^5|dot	AB	20
+f56r_L02	21	S7^	AB	21
+f56r_L02	22	]^dot|o	AB	22
+f56r_L02	23	y^	AB	23
+f56r_L02	24	tee^	AB	24
+f56r_L02	25	f^	AB	25
+f56r_L02	26	w^	AB	26
+f56r_L02	27	o.^	AB	27
+f56r_L02	28	g^	AB	28
+f56r_L02	29	e^#	AB	29
+f56r_L02	30	nt^	AB	30
+f56r_L02	31	y^	AB	31
+f56r_L03	1	?f56r.3.1^	AB|split2	1
+f56r_L03	2	e^dot	AB	2
+f56r_L03	3	psi^	AB	3
+f56r_L03	4	lam^1	AB	4
+f56r_L03	5	m^~	AB	5
+f56r_L03	6	g^	AB	6
+f56r_L03	7	g^~	AB	7
+f56r_L03	8	H^	AB	8
+f56r_L03	9	a^	settled	9
+f56r_L03	10	sq^	settled	9.5
+f56r_L03	11	psi^	AB	10
+f56r_L03	12	L^	M|split2	11
+f56r_L03	13	phi^	AB	12
+f56r_L03	14	H^#	AB	13
+f56r_L03	15	v^1|5	AB	14
+f56r_L03	16	rz^	AB	15
+f56r_L03	17	nt^	AB	16
+f56r_L03	18	rz^	AB	17
+f56r_L03	19	S7^	settled	18
+f56r_L03	20	e^#	AB	19
+f56r_L03	21	rz^	M|split2	20
+f56r_L03	22	psi^	AB	21
+f56r_L03	23	f^	settled	22
+f56r_L03	24	w^	AB	23
+f56r_L03	25	bh^	AB	24
+f56r_L03	26	eps^1	AB	25
+f56r_L03	27	w^	AB	26
+f56r_L03	28	e^dot|dot	AB	27
+f56r_L04	1	S7^+	settled	1
+f56r_L04	2	S7^	settled	1.5
+f56r_L04	3	]^	AB	2
+f56r_L04	4	g^	AB|split2	3
+f56r_L04	5	psi^	AB	4
+f56r_L04	6	m^1	AB	5
+f56r_L04	7	w^	AB	6
+f56r_L04	8	S7^	AB	7
+f56r_L04	9	o.^	settled	8
+f56r_L04	10	nt^	settled	8.5
+f56r_L04	11	bh^	AB	9
+f56r_L04	12	]^ot	AB	10
+f56r_L04	13	v^	settled	11
+f56r_L04	14	v^	M|split2	12
+f56r_L04	15	e^#	AB	13
+f56r_L04	16	nt^	settled	14
+f56r_L04	17	rz^	AB	15
+f56r_L04	18	eps^5	AB	16
+f56r_L04	19	]^	settled	17
+f56r_L04	20	S7^	settled	18
+f56r_L04	21	m^	settled	18.5
+f56r_L04	22	eps^	AB	19
+f56r_L04	23	g^~|~	AB	20
+f56r_L04	24	e^dot|+	AB	21
+f56r_L04	25	sq^ot	AB	22
+f56r_L04	26	psi^	AB	23
+f56r_L04	27	lam^5	AB	24
+f56r_L04	28	]^o	AB	25
+f56r_L04	29	S7^+	AB	26
+f56r_L05	1	lam^	AB	1
+f56r_L05	2	bh^	AB	2
+f56r_L05	3	S7^	AB	3
+f56r_L05	4	#^	AB	4
+f56r_L05	5	psi^	AB	5
+f56r_L05	6	eps^	AB	6
+f56r_L05	7	w^	AB	7
+f56r_L05	8	o.^	settled	8
+f56r_L05	9	Z^dot	AB	9
+f56r_L05	10	S7^#	AB	10
+f56r_L05	11	e^#	AB	11
+f56r_L05	12	g^dot	AB	12
+f56r_L05	13	y^	AB	13
+f56r_L05	14	a^1	AB	14
+f56r_L05	15	S7^	AB	15
+f56r_L05	16	y^#	AB	16
+f56r_L05	17	dl^	settled	17
+f56r_L05	18	phi^	AB	18
+f56r_L05	19	S4^	AB	19
+f56r_L05	20	dl^	AB	20
+f56r_L05	21	w:Amsn	AB	21
+f56r_L05	22	w:m	AB	22
+f56r_L05	23	w:hn~	AB	23
+f56r_L05	24	w:+	settled	24
+f56r_L05	25	w:stritto	AB	25
+f56r_L05	26	w:+	AB	26
+f56r_L06	1	w:<none>	AB	1
+f56r_L06	2	w:<none>	AB	2
+f56r_L06	3	w:<none>	AB	3
+f56r_L06	4	w:mirabilm~te	AB	4
+f56r_L06	5	a^	AB	5
+f56r_L06	6	w:p̃o	AB	6
+f56r_L06	7	w:v·	AB	7
+f56r_L06	8	w:s·	AB	8
+f56r_L06	9	w:+	AB	9
+f56r_L06	10	#^#	AB	10
+f56r_L06	11	y^	AB	11
+f56r_L06	12	v^	AB	12
+f56r_L06	13	S^	AB	13
+f56r_L06	14	w:facci	AB	14
+f56r_L06	15	w:lopa	AB	15
+f56r_L06	16	N^	AB	16
+f56r_L06	17	w:Caldam~te	AB	17
+f56r_L06	18	w:+	AB	18
+f56r_L06	19	w:+	AB	19
+f56r_L06	20	w:+	AB	20
+f56r_L06	21	eps^	AB	21
+f56r_L06	22	tee^	AB	22
+f56r_L06	23	w:solleciti	AB	23
+f56r_L06	24	w:+	AB	24
+f56r_L06	25	w:+	AB	25
+f56r_L06	26	S^	AB	26
+f56r_L07	1	w:<none>	AB	1
+f56r_L07	2	w:<none>	settled	2
+f56r_L07	3	w:<none>	AB	3
+f56r_L07	4	w:<none>	settled	4
+f56r_L07	5	w:<none>	AB	5
+f56r_L07	6	w:<none>	AB	6
+f56r_L07	7	S^#	AB	7
+f56r_L07	8	S4^	AB	8
+f56r_L07	9	y^	AB	9
+f56r_L07	10	tee^	AB	10
+f56r_L07	11	L^	AB	11
+f56r_L07	12	w^	AB	12
+f56r_L07	13	w^	AB	13
+f56r_L07	14	tee^	AB	14
+f56r_L07	15	o.^	AB	15
+f56r_L07	16	U^1	settled	16
+f56r_L07	17	rz^	AB	17
+f56r_L07	18	o.^	AB	18
+f56r_L07	19	g^	AB	19
+f56r_L07	20	w^	AB	20
+f56r_L07	21	Z^dot|ot	AB	21
+f56r_L07	22	lam^	AB	22
+f56r_L07	23	bh^	AB	23
+f56r_L07	24	e^dot|#	AB	24
+f56r_L07	25	v^#	AB	25
+f56r_L07	26	y^	AB	26
+f56r_L07	27	y^	AB	27
+f56r_L07	28	Z^	AB	28
+f56r_L07	29	S7^	AB	29
+f56r_L07	30	e^#	settled	30
+f56r_L07	31	f^dot	AB	31
+f56r_L07	32	U^	settled	32
+f56r_L08	1	w:<none>	AB	1
+f56r_L08	2	w^	AB	2
+f56r_L08	3	bh^	AB	3
+f56r_L08	4	a^~	AB	4
+f56r_L08	5	nt^	AB	5
+f56r_L08	6	bh^	AB	6
+f56r_L08	7	phi^	AB	7
+f56r_L08	8	o.^	AB	8
+f56r_L08	9	tee^	AB	9
+f56r_L08	10	U^	AB	10
+f56r_L08	11	g^5	AB	11
+f56r_L08	12	]^o	AB	12
+f56r_L08	13	S7^	AB	13
+f56r_L08	14	#^o	AB	14
+f56r_L08	15	w^	AB	15
+f56r_L08	16	]^dot|o	AB	16
+f56r_L08	17	rz^	AB	17
+f56r_L08	18	a^5	AB	18
+f56r_L08	19	tee^	AB	19
+f56r_L08	20	lam^5	AB	20
+f56r_L08	21	a^1	AB	21
+f56r_L08	22	]^ot	AB	22
+f56r_L08	23	y^dot	AB	23
+f56r_L08	24	U^	AB	24
+f56r_L08	25	w^	AB	25
+f56r_L08	26	bh^	AB	26
+f56r_L08	27	m^	AB	27
+f56r_L08	28	g^	AB	28
+f56r_L08	29	lam^	AB	29
+f56r_L08	30	S^	AB	30
+f56r_L09	1	y^	AB	1
+f56r_L09	2	bh^	AB	2
+f56r_L09	3	g^7	AB	3
+f56r_L09	4	eps^5	AB	4
+f56r_L09	5	w^	AB	5
+f56r_L09	6	e^+	settled	6
+f56r_L09	7	lam^	AB	7
+f56r_L09	8	S^	AB	8
+f56r_L09	9	H^1|o	AB	9
+f56r_L09	10	a^1	AB	10
+f56r_L09	11	S7^	AB	11
+f56r_L09	12	e^dot	AB	12
+f56r_L09	13	S7^#	AB	13
+f56r_L09	14	nt^	settled	14
+f56r_L09	15	S7^#	AB	15
+f56r_L09	16	o.^	settled	16
+f56r_L09	17	bh^	settled	17
+f56r_L09	18	psi^	settled	18
+f56r_L09	19	e^	AB	19
+f56r_L09	20	g^dot|~	AB	20
+f56r_L09	21	eps^5	AB	21
+f56r_L09	22	S7^	AB	22
+f56r_L09	23	L^	AB	23
+f56r_L09	24	S7^	AB	24
+f56r_L09	25	g^	AB	25
+f56r_L09	26	#^	AB	26
+f56r_L09	27	S7^	AB	27
+f56r_L09	28	lam^	settled	28
+f56r_L09	29	o.^~	AB	29
+f56r_L09	30	S7^	AB	30
+f56r_L10	1	g^	AB	1
+f56r_L10	2	a^1	AB	2
+f56r_L10	3	phi^	AB	3
+f56r_L10	4	S4^	AB	4
+f56r_L10	5	tee^	AB	5
+f56r_L10	6	Lx^	AB	6
+f56r_L10	7	w:M.ta	AB	7
+f56r_L10	8	nt^	AB	8
+f56r_L10	9	w:mj	AB	9
+f56r_L10	10	e^	AB	10
+f56r_L10	11	w:hn	AB	11
+f56r_L10	12	w:letto	AB	12
+f56r_L10	13	ch^	AB	13
+f56r_L10	14	g^	AB	14
+f56r_L10	15	w:?	AB	15
+f56r_L10	16	tee^	AB	16
+f56r_L10	17	w:ct̃	AB	17
+f56r_L10	18	w:penſra	AB	18
+f56r_L10	19	N^	AB	19
+f56r_L11	1	w:ma	AB	1
+f56r_L11	2	w:ch̃	AB	2
+f56r_L11	3	w:gli	AB	3
+f56r_L11	4	w:+	AB	4
+f56r_L11	5	w:besognn	AB	5
+f56r_L11	6	w:+	AB	6
+f56r_L11	7	w:[C]	AB	7
+f56r_L11	8	S4^	AB|split2	8
+f56r_L11	9	psi^	M|split2	9
+f56r_L11	10	Z^~	M|split2	10
+f56r_L11	11	g^	AB|split2	11
+f56r_L11	12	m^~	AB	12
+f56r_L11	13	w:yt	AB	13
+f56r_L11	14	bh^	AB	14
+f56r_L11	15	y^	AB	15
+f56r_L11	16	tee^	AB	16
+f56r_L11	17	e^dot	AB	17
+f56r_L11	18	eps^1|dot	AB	18
+f56r_L11	19	e^#	AB	19
+f56r_L11	20	S4^	AB	20
+f56r_L11	21	dl^	M|split2	21
+f56r_L12	1	g^	AB	1
+f56r_L12	2	nt^	AB	2
+f56r_L12	3	y^	AB	3
+f56r_L12	4	S4^1	AB	4
+f56r_L12	5	dl^	AB	5
+f56r_L12	6	Lx^	AB	6
+f56r_L12	7	dl^	AB	7
+f56r_L12	8	S4^	AB	8
+f56r_L12	9	e^+	AB|split2	9
+f56r_L12	10	]^o	AB	10
+f56r_L12	11	Z^	AB	11
+f56r_L12	12	S7^	AB	12
+f56r_L12	13	lam^	AB	13
+f56r_L12	14	sq^	AB	14
+f56r_L12	15	y^#	AB	15
+f56r_L12	16	eps^1	AB	16
+f56r_L12	17	w^	AB	17
+f56r_L12	18	e^dot|+	AB	18
+f56r_L12	19	S7^+	AB	19
+f56r_L12	20	]^ot	AB	20
+f56r_L12	21	eps^5	AB	21
+f56r_L12	22	Z^ot	AB	22
+f56r_L12	23	Z^	AB	23
+f56r_L13	1	w:y	settled	1
+f56r_L13	2	w:[C]	settled	2
+f56r_L13	3	w:[C]	settled	3
+f56r_L13	4	w:ha	AB	4
+f56r_L13	5	w:+	AB	5
+f56r_L13	6	w:inteso	AB	6
+f56r_L13	7	w:quello	settled	7
+f56r_L13	8	w:+	AB	8
+f56r_L13	9	w:+	AB	9
+f56r_L13	10	w:che	AB	10
+f56r_L13	11	w:qua	settled	11
+f56r_L13	12	w:le	settled	12
+f56r_L13	13	w:+	AB	13
+f56r_L13	14	w:è	settled	14
+f56r_L13	15	w:+	AB	15
+f56r_L13	16	w:+	AB	16
+f56r_L13	17	w:stato	AB	17
+f56r_L13	18	w:scripto	AB	18
+f56r_L13	19	w:+	AB	19
+f56r_L13	20	w:a	AB	20
+f56r_L13	21	w:M	settled	21
+f56r_L13	22	w:[C]	AB	22
+f56r_L13	23	w:[C]	AB	23
+f56r_L13	24	w:+	settled	24
+f56r_L13	25	w:+	settled	25
+f56r_L14	1	m^1	AB	1
+f56r_L14	2	f^	AB	2
+f56r_L14	3	w^	AB	3
+f56r_L14	4	bh^	AB	4
+f56r_L14	5	S7^	AB	5
+f56r_L14	6	#^	AB	6
+f56r_L14	7	e^+	AB	7
+f56r_L14	8	S^	AB	8
+f56r_L14	9	g^	AB	9
+f56r_L14	10	phi^	settled	10
+f56r_L14	11	rz^	AB	11
+f56r_L14	12	Z^	AB	12
+f56r_L14	13	S7^	AB	13
+f56r_L14	14	#^dot	AB	14
+f56r_L14	15	lam^dot	AB	15
+f56r_L14	16	y^5	AB	16
+f56r_L14	17	e^dot|#	AB	17
+f56r_L14	18	]^ot	AB	18
+f56r_L14	19	w^	AB	19
+f56r_L14	20	bh^	AB	20
+f56r_L14	21	S7^	AB	21
+f56r_L14	22	#^	AB	22
+f56r_L14	23	dl^	settled	23
+f56r_L14	24	eps^5	AB	24
+f56r_L14	25	w:ha	AB	25
+f56r_L14	26	w:Aduij,	settled	26
+f56r_L14	27	w:+	settled	27
+f56r_L14	28	w:+	AB	28
+f56r_L14	29	w:+	settled	29
+f56r_L14	30	w:+	AB	30
+f56r_L15	1	w:<none>	settled	1
+f56r_L15	2	w:sonn	AB	2
+f56r_L15	3	w:v.	settled	3
+f56r_L15	4	w:s.	settled	4
+f56r_L15	5	w:Sappia	settled	5
+f56r_L15	6	w:+	settled	6
+f56r_L15	7	w:+	AB	7
+f56r_L15	8	w:+	settled	8
+f56r_L15	9	w:+	AB	9
+f56r_L15	10	w:+	AB	10
+f56r_L15	11	w:el	settled	11
+f56r_L15	12	w:+	AB	12
+f56r_L15	13	w:tutto	AB	13
+f56r_L15	14	w:et	settled	14
+f56r_L15	15	w:+	settled	15
+f56r_L15	16	w:Pensi	settled	16
+f56r_L15	17	w:+	settled	17
+f56r_L15	18	w:quello	settled	18
+f56r_L15	19	w:+	AB	19
+f56r_L15	20	w:ha	AB	20
+f56r_L15	21	w:aduiso	AB	21
+f56r_L15	22	w:+	AB	22
+f56r_L15	23	w:+	AB	23
+f56r_L15	24	w:p.ch	AB	24
+f56r_L15	25	w:+	settled	25
+f56r_L16	1	w:sono	AB	1
+f56r_L16	2	w:+	AB	2
+f56r_L16	3	w:certo	AB	3
+f56r_L16	4	w:+	AB	4
+f56r_L16	5	w:[C]	settled	5
+f56r_L16	6	w:[C]	settled	6
+f56r_L16	7	w:[C]	settled	7
+f56r_L16	8	eps^1	AB	8
+f56r_L16	9	w^	AB	9
+f56r_L16	10	e^dot	AB	10
+f56r_L16	11	S7^+	AB	11
+f56r_L16	12	]^ot	AB	12
+f56r_L16	13	y^	AB	13
+f56r_L16	14	y^	AB	14
+f56r_L16	15	g^1	AB	15
+f56r_L16	16	o.^	AB	16
+f56r_L16	17	S7^	AB	17
+f56r_L16	18	lam^	AB	18
+f56r_L16	19	g^~	AB	19
+f56r_L16	20	bh^	AB	20
+f56r_L16	21	w^	AB|split2	21
+f56r_L16	22	S7^	AB	22
+f56r_L16	23	o.^	AB	23
+f56r_L16	24	eps^5	AB	24
+f56r_L16	25	g^	AB	25
+f56r_L16	26	phi^	AB	26
+f56r_L16	27	g^	AB	27
+f56r_L16	28	S7^	AB	28
+f56r_L16	29	#^	AB	29
+f56r_L17	1	e^	AB	1
+f56r_L17	2	Lx^dot	AB	2
+f56r_L17	3	y^	AB	3
+f56r_L17	4	eps^5	AB|split2	4
+f56r_L17	5	S7^	AB	5
+f56r_L17	6	tee^	AB	6
+f56r_L17	7	g^	AB	7
+f56r_L17	8	Lx^	AB	8
+f56r_L17	9	S4^	AB	9
+f56r_L17	10	w:Sopra	AB	10
+f56r_L17	11	w:+	AB	11
+f56r_L17	12	w:la	settled	12
+f56r_L17	13	w:medesima	AB	13
+f56r_L17	14	w:+	AB	14
+f56r_L17	15	w:+	AB	15
+f56r_L17	16	w:+	AB	16
+f56r_L17	17	w:+	AB	17
+f56r_L17	18	w:materia	settled	18
+f56r_L17	19	w:+	AB	19
+f56r_L17	20	w:+	AB	20
+f56r_L17	21	w:mj	settled	21
+f56r_L17	22	w:ha	AB	22
+f56r_L17	23	w:+	settled	23
+f56r_L17	24	w:par~	AB	24
+f56r_L17	25	w:+	settled	25
+f56r_L17	26	w:+	AB	26
+f56r_L17	27	w:+	settled	27
+f56r_L17	28	w:+	AB	28
+f56r_L17	29	w:+	AB	29
+f56r_L18	1	w:lato	AB	1
+f56r_L18	2	w:+	AB	2
+f56r_L18	3	dl^	AB	3
+f56r_L18	4	+^	AB	4
+f56r_L18	5	w^	AB	5
+f56r_L18	6	tee^	AB	6
+f56r_L18	7	w^	AB	7
+f56r_L18	8	w^	AB	8
+f56r_L18	9	y^	AB	9
+f56r_L18	10	S7^	AB	10
+f56r_L18	11	eps^1	AB	11
+f56r_L18	12	S7^	AB	12
+f56r_L18	13	eps^~	AB	13
+f56r_L18	14	wd^	AB	14
+f56r_L18	15	o.^	AB|split2	15
+f56r_L18	16	rz^	AB	16
+f56r_L18	17	g^5	AB	17
+f56r_L18	18	phi^	AB	18
+f56r_L18	19	y^	AB	19
+f56r_L18	20	rz^	M|split2	20
+f56r_L18	21	S^	M|split2	21
+f56r_L18	22	w^	AB	22
+f56r_L18	23	a^1	AB	23
+f56r_L18	24	lam^	AB	24
+f56r_L18	25	a^7	AB	25
+f56r_L18	26	H^1	AB	26
+f56r_L18	27	g^	AB	27
+f56r_L19	1	w:[C]	AB	1
+f56r_L19	2	S7^	AB	2
+f56r_L19	3	w:ag~	AB	3
+f56r_L19	4	g^dot	M|split2	4
+f56r_L19	5	o.^	AB	5
+f56r_L19	6	g^~	AB	6
+f56r_L19	7	H^1|o	AB	7
+f56r_L19	8	v^	AB|split2	8
+f56r_L19	9	y^	AB	9
+f56r_L19	10	y^	AB	10
+f56r_L19	11	y^	AB	11
+f56r_L19	12	S7^	AB	12
+f56r_L19	13	#^	AB	13
+f56r_L19	14	]^o	AB	14
+f56r_L19	15	y^	AB	15
+f56r_L19	16	y^	AB	16
+f56r_L19	17	psi^	AB	17
+f56r_L19	18	eps^	AB	18
+f56r_L19	19	w^	AB	19
+f56r_L19	20	o.^	AB|split2	20
+f56r_L19	21	U^	AB	21
+f56r_L19	22	lam^	AB	22
+f56r_L19	23	phi^	AB	23
+f56r_L19	24	Lx^	AB	24
+f56r_L19	25	w:Jo	AB	25
+f56r_L19	26	w:lo	AB	26
+f56r_L19	27	w:Credo	settled	27
+f56r_L19	28	w:+	AB	28
+f56r_L19	29	w:+	AB	29
+f56r_L19	30	w:+	AB	30
+f56v_L01	1	bh^	settledC	1
+f56v_L01	2	ch^	AB	2
+f56v_L01	3	w:lo	AB	3
+f56v_L01	4	w:+	AB	4
+f56v_L01	5	w:Truono	AB	5
+f56v_L01	6	w:+	AB	6
+f56v_L01	7	w:g	AB	7
+f56v_L01	8	w:Truono	settledC	8
+f56v_L01	9	S^5	M|split2	9
+f56v_L01	10	dl^	settledC	10
+f56v_L01	11	+^	settledC	10.5
+f56v_L01	12	psi^	AB	11
+f56v_L01	13	nt^	AB	12
+f56v_L01	14	bh^	AB	13
+f56v_L01	15	a^5	AB	14
+f56v_L01	16	a^5	AB	15
+f56v_L01	17	tee^	AB	16
+f56v_L01	18	lam^	AB	17
+f56v_L01	19	S^	AB	18
+f56v_L01	20	Z^dot|ot	AB	19
+f56v_L01	21	g^	AB	20
+f56v_L01	22	lam^7	AB	21
+f56v_L01	23	rz^~	settled	22
+f56v_L01	24	g^	AB	23
+f56v_L01	25	a^5	split	24
+f56v_L01	26	tee^	AB	25
+f56v_L01	27	lam^	AB	26
+f56v_L01	28	S^	AB	27
+f56v_L01	29	w:li	AB	28
+f56v_L01	30	bh^dot	AB	29
+f56v_L01	31	Z^#	AB	30
+f56v_L01	32	phi^dot	AB	31
+f56v_L01	33	w^	AB	32
+f56v_L02	1	v^dot	AB	1
+f56v_L02	2	y^	settledC	2
+f56v_L02	3	S7^	AB	3
+f56v_L02	4	y^5	AB	4
+f56v_L02	5	w^	AB	5
+f56v_L02	6	Z^ot	AB	6
+f56v_L02	7	lam^	AB	7
+f56v_L02	8	g^~	AB	8
+f56v_L02	9	e^#	settled	9
+f56v_L02	10	tee^	AB	10
+f56v_L02	11	K^1	AB	11
+f56v_L02	12	phi^5	AB	12
+f56v_L02	13	U^	AB	13
+f56v_L02	14	w^	AB	14
+f56v_L02	15	bh^	AB	15
+f56v_L02	16	lam^~	AB	16
+f56v_L02	17	e^~	M|split2	17
+f56v_L02	18	bh^	AB	18
+f56v_L02	19	g^	AB	19
+f56v_L02	20	Z^	AB	20
+f56v_L02	21	Z^	AB	21
+f56v_L02	22	g^	AB	22
+f56v_L02	23	S^	AB	23
+f56v_L02	24	e^#	settled	24
+f56v_L02	25	p^1	AB	25
+f56v_L02	26	eps^o	AB	26
+f56v_L02	27	tee^	AB	27
+f56v_L02	28	p^	AB	28
+f56v_L02	29	w:parmj	AB	29
+f56v_L03	1	g^dot	settledC	1
+f56v_L03	2	w:q~	AB	2
+f56v_L03	3	w:si	AB	3
+f56v_L03	4	w:+	AB	4
+f56v_L03	5	w:+	AB	5
+f56v_L03	6	w:fatto	AB	6
+f56v_L03	7	w:gra~	AB	7
+f56v_L03	8	w:gra	AB	8
+f56v_L03	9	w:Torto	AB	9
+f56v_L03	10	w:+	AB	10
+f56v_L03	11	w:+	settledC	11
+f56v_L03	12	lam^	AB	12
+f56v_L03	13	nt^	split	13
+f56v_L03	14	+^	settledC	14
+f56v_L03	15	y^	AB	15
+f56v_L03	16	e^+	settled	16
+f56v_L03	17	e^	settledC	17
+f56v_L03	18	rz^	AB	18
+f56v_L03	19	g^7	AB	19
+f56v_L03	20	g^	AB	20
+f56v_L03	21	Z^	AB	21
+f56v_L03	22	S7^	AB	22
+f56v_L03	23	+^	split	23
+f56v_L03	24	rz^dot	AB	24
+f56v_L03	25	S7^	AB	25
+f56v_L03	26	lam^	AB	26
+f56v_L03	27	w:<none>	split	27
+f56v_L03	28	a^	split	28
+f56v_L03	29	wd^	split	29
+f56v_L03	30	p^	AB	30
+f56v_L03	31	w:<none>	AB	31
+f56v_L03	32	H^	settledC	32
+f56v_L04	1	w^	AB	1
+f56v_L04	2	tee^	AB	2
+f56v_L04	3	rz^	AB	3
+f56v_L04	4	y^	AB	4
+f56v_L04	5	lam^	AB	5
+f56v_L04	6	lam^1	AB	6
+f56v_L04	7	S7^	AB	7
+f56v_L04	8	U^	AB	8
+f56v_L04	9	w^	AB	9
+f56v_L04	10	bh^	AB	10
+f56v_L04	11	a^~	AB	11
+f56v_L04	12	nt^	AB	12
+f56v_L04	13	bh^	AB	13
+f56v_L04	14	dl^	AB	14
+f56v_L04	15	Lx^	AB	15
+f56v_L04	16	g^	settledC	16
+f56v_L04	17	w^	AB	17
+f56v_L04	18	tee^	AB	18
+f56v_L04	19	Z^dot	settledC	19
+f56v_L04	20	eps^~	AB	20
+f56v_L04	21	g^	AB	21
+f56v_L04	22	Z^	AB	22
+f56v_L04	23	phi^	AB	23
+f56v_L04	24	w^	AB	24
+f56v_L04	25	w^	AB	25
+f56v_L04	26	psi^	AB	26
+f56v_L04	27	S7^	AB	27
+f56v_L04	28	eps^1	AB|split2	28
+f56v_L04	29	S7^	AB	29
+f56v_L05	1	eps^~	AB	1
+f56v_L05	2	wd^	AB	2
+f56v_L05	3	o.^	AB	3
+f56v_L05	4	w^	AB	4
+f56v_L05	5	g^5	AB	5
+f56v_L05	6	a^	split	6
+f56v_L05	7	y^	settledC	7
+f56v_L05	8	y^	settledC	7.5
+f56v_L05	9	tee^	AB|split2	8
+f56v_L05	10	e^+	AB	9
+f56v_L05	11	y^	M|split2	10
+f56v_L05	12	psi^	AB	11
+f56v_L05	13	S^	M|split2	12
+f56v_L05	14	w^	AB	13
+f56v_L05	15	g^	AB	14
+f56v_L05	16	m^~	AB	15
+f56v_L05	17	w^	AB	16
+f56v_L05	18	m^1	AB	17
+f56v_L05	19	w^	AB	18
+f56v_L05	20	lam^~	AB	19
+f56v_L05	21	e^	AB	20
+f56v_L05	22	wd^	AB	21
+f56v_L05	23	bh^7	settled	22
+f56v_L05	24	K^1	AB	23
+f56v_L05	25	nt^	split	24
+f56v_L06	1	w:Ch	AB	1
+f56v_L06	2	w:faria	AB	2
+f56v_L06	3	w:+	AB	3
+f56v_L06	4	w:benn	AB	4
+f56v_L06	5	w:+	AB	5
+f56v_L06	6	w:for	AB	6
+f56v_L06	7	w:+	AB	7
+f56v_L06	8	w:da	AB	8
+f56v_L06	9	Lx^	AB	9
+f56v_L06	10	lam^	AB	10
+f56v_L06	11	S7^~	AB	11
+f56v_L06	12	lam^	AB	12
+f56v_L06	13	g^1|~	AB	13
+f56v_L06	14	nt^	AB	14
+f56v_L06	15	S7^	AB	15
+f56v_L06	16	+^	AB	16
+f56v_L06	17	dl^5	AB	17
+f56v_L06	18	S^	settledC	18
+f56v_L06	19	eps^	settledC	18.5
+f56v_L06	20	S7^	AB	19
+f56v_L06	21	S^~	AB	20
+f56v_L06	22	H^1|o	AB	21
+f56v_L06	23	m^	AB	22
+f56v_L06	24	w^	AB	23
+f56v_L06	25	tee^	AB	24
+f56v_L06	26	o.^	AB	25
+f56v_L07	1	w:<none>	AB	1
+f56v_L07	2	y^	AB	2
+f56v_L07	3	nt^	AB	3
+f56v_L07	4	o.^	AB	4
+f56v_L07	5	S7^	AB	5
+f56v_L07	6	#^	AB	6
+f56v_L07	7	]^	settledC	7
+f56v_L07	8	S7^	settledC	7.5
+f56v_L07	9	e^#	AB|split2	8
+f56v_L07	10	L^~	AB	9
+f56v_L07	11	S7^	settledC	10
+f56v_L07	12	g^	AB	11
+f56v_L07	13	bh^	AB	12
+f56v_L07	14	S7^#	AB	13
+f56v_L07	15	e^	AB	14
+f56v_L07	16	wd^	AB	15
+f56v_L07	17	y^	AB	16
+f56v_L07	18	y^	AB	17
+f56v_L07	19	o.^	AB	18
+f56v_L07	20	rz^	AB	19
+f56v_L07	21	g^	AB	20
+f56v_L07	22	e^#	settled	21
+f56v_L07	23	tee^	AB	22
+f56v_L07	24	K^	AB	23
+f56v_L07	25	g^	AB	24
+f56v_L07	26	e^#	AB	25
+f56v_L07	27	Z^#	AB	26
+f56v_L07	28	S7^dot	AB	27
+f56v_L07	29	+^dot	settledC	28
+f56v_L07	30	lam^dot	AB	29
+f56v_L07	31	y^1	AB	30
+f56v_L07	32	S7^#	AB	31
+f56v_L07	33	phi^dot	AB	32
+f56v_L08	1	w:<none>	AB	1
+f56v_L08	2	L^	AB	2
+f56v_L08	3	bh^	AB	3
+f56v_L08	4	g^	AB	4
+f56v_L08	5	S7^~	AB	5
+f56v_L08	6	lam^	AB	6
+f56v_L08	7	S7^	AB	7
+f56v_L08	8	phi^+	settledC	8
+f56v_L08	9	e^#	AB	9
+f56v_L08	10	tee^	AB	10
+f56v_L08	11	g^	AB	11
+f56v_L08	12	y^~	AB	12
+f56v_L08	13	w:a	settledC	13
+f56v_L08	14	e^dot	AB	14
+f56v_L08	15	p^1	AB	15
+f56v_L08	16	phi^~	settledC	16
+f56v_L08	17	H^o|1	AB	17
+f56v_L08	18	eps^7	AB	18
+f56v_L08	19	y^	AB	19
+f56v_L08	20	psi^	AB	20
+f56v_L08	21	eps^	settledC	21
+f56v_L08	22	S7^	AB	22
+f56v_L08	23	#^dot	AB	23
+f56v_L08	24	eps^5	AB	24
+f56v_L08	25	S7^	AB|split2	25
+f56v_L08	26	f^	AB	26
+f56v_L08	27	w^	AB	27
+f56v_L08	28	o.^	AB	28
+f56v_L08	29	w:b	AB	29
+f56v_L08	30	o.^dot	AB	30
+f56v_L08	31	nt^	AB	31
+f56v_L09	1	w:<none>	AB	1
+f56v_L09	2	w:<none>	AB	2
+f56v_L09	3	o.^	AB	3
+f56v_L09	4	m^~	AB	4
+f56v_L09	5	w^	AB	5
+f56v_L09	6	w:e	AB	6
+f56v_L09	7	L^	M|split2	7
+f56v_L09	8	+^	settledC	8
+f56v_L09	9	w:<none>	AB	9
+f56v_L09	10	sq^	settledC	10
+f56v_L09	11	wd^	AB	11
+f56v_L09	12	bh^	AB	12
+f56v_L09	13	g^	AB	13
+f56v_L09	14	e^#	AB	14
+f56v_L09	15	nt^	AB	15
+f56v_L09	16	o.^	AB	16
+f56v_L09	17	]^ot	AB	17
+f56v_L09	18	g^	AB	18
+f56v_L09	19	Lx^5	AB	19
+f56v_L09	20	p^	AB	20
+f56v_L09	21	p^	AB	21
+f56v_L09	22	w:Potem	AB	22
+f56v_L09	23	w:+	AB	23
+f56v_L09	24	w:luarn	AB	24
+f56v_L09	25	w:+	AB	25
+f56v_L09	26	w:+	AB	26
+f56v_L09	27	w:leter	AB	27
+f56v_L09	28	w:+	AB	28
+f56v_L09	29	w:+	split	29
+f56v_L09	30	w:+	AB	30
+f56v_L10	1	w:cito	AB	1
+f56v_L10	2	w:+	AB	2
+f56v_L10	3	w:?	AB	3
+f56v_L10	4	w:<none>	AB	4
+f56v_L10	5	w:tutto	AB	5
+f56v_L10	6	w:+	AB	6
+f56v_L10	7	sq^	M|split2	7
+f56v_L10	8	Lx^	AB	8
+f56v_L10	9	phi^	AB	9
+f56v_L10	10	]^#	AB	10
+f56v_L10	11	wd^	AB	11
+f56v_L10	12	o.^	AB	12
+f56v_L10	13	S^7	settledC	13
+f56v_L10	14	H^1	AB	14
+f56v_L10	15	g^o	AB	15
+f56v_L10	16	g^	AB	16
+f56v_L10	17	lam^1	AB	17
+f56v_L10	18	nt^	AB	18
+f56v_L10	19	o.^	AB	19
+f56v_L10	20	S7^	AB	20
+f56v_L10	21	#^	AB	21
+f56v_L10	22	Z^dot	AB	22
+f56v_L11	1	nt^dot|1	AB	1
+f56v_L11	2	o.^	AB	2
+f56v_L11	3	rz^	AB	3
+f56v_L11	4	w:<none>	AB	4
+f56v_L11	5	tee^	AB	5
+f56v_L11	6	S7^#	AB	6
+f56v_L11	7	o.^dot	AB	7
+f56v_L11	8	y^	settledC	8
+f56v_L11	9	w^	AB	9
+f56v_L11	10	a^1	AB	10
+f56v_L11	11	lam^1	AB	11
+f56v_L11	12	dl^	AB	12
+f56v_L11	13	+^	AB	13
+f56v_L11	14	y^	split	14
+f56v_L11	15	w:fare	AB	15
+f56v_L11	16	w:+	AB	16
+f56v_L11	17	w:+	AB	17
+f56v_L11	18	w:quali	AB	18
+f56v_L11	19	w:+	AB	19
+f56v_L11	20	w:+	AB	20
+f56v_L12	1	w:impresa	AB	1
+f56v_L12	2	w:+	AB	2
+f56v_L12	3	w:+	AB	3
+f56v_L12	4	w:+	AB	4
+f56v_L12	5	w:+	AB	5
+f56v_L12	6	w:con	AB	6
+f56v_L12	7	w:+	AB	7
+f56v_L12	8	w:e	split	8
+f56v_L12	9	w:n	split	9
+f56v_L12	10	w:fev	AB	10
+f56v_L12	11	tee^	settledC	11
+f56v_L12	12	w:h	split	12
+f56v_L12	13	+^dot	AB	13
+f56v_L12	14	Lx^	AB	14
+f56v_L12	15	bh^	AB	15
+f56v_L12	16	o.^	AB	16
+f56v_L12	17	S7^	AB	17
+f56v_L12	18	y^	AB	18
+f56v_L12	19	e^	AB|split2	19
+f56v_L12	20	w^	AB	20
+f56v_L12	21	o.^	AB	21
+f56v_L12	22	eps^1	settledC	22
+f56v_L12	23	bh^	AB	23
+f56v_L12	24	tee^	AB	24
+f56v_L12	25	f^	AB	25
+f56v_L12	26	w^	AB	26
+f56v_L12	27	bh^	AB	27
+f56v_L13	1	Z^ot	M|split2	1
+f56v_L13	2	phi^	AB	2
+f56v_L13	3	H^1|o	settledC	3
+f56v_L13	4	g^7	settledC	3.5
+f56v_L13	5	m^~	AB	4
+f56v_L13	6	S7^	settledC	5
+f56v_L13	7	g^	settledC	5.5
+f56v_L13	8	S^	AB	6
+f56v_L13	9	nt^	AB	7
+f56v_L13	10	o.^	AB	8
+f56v_L13	11	e^dot|#	AB	9
+f56v_L13	12	sq^?	AB	10
+f56v_L13	13	tee^	AB	11
+f56v_L13	14	H^1	AB	12
+f56v_L13	15	a^o	AB	13
+f56v_L13	16	S^	AB	14
+f56v_L13	17	e^dot	AB	15
+f56v_L13	18	e^	AB	16
+f56v_L13	19	S7^dot	AB	17
+f56v_L13	20	f^	AB	18
+f56v_L13	21	w^	AB	19
+f56v_L13	22	y^	AB	20
+f56v_L13	23	y^~	settledC	21
+f56v_L13	24	o.^~	split	21.5
+f56v_L13	25	S7^	AB	22
+f56v_L13	26	#^	AB	23
+f56v_L13	27	w^	AB	24
+f56v_L14	1	]^o|o	AB	1
+f56v_L14	2	Lx^	AB	2
+f56v_L14	3	p^dot	settledC	3
+f56v_L14	4	w:Pure	AB	4
+f56v_L14	5	w:+	AB	5
+f56v_L14	6	w:questo	AB	6
+f56v_L14	7	w:+	AB	7
+f56v_L14	8	w:hanno	AB	8
+f56v_L14	9	w:+	AB	9
+f56v_L14	10	w:detto	AB	10
+f56v_L14	11	w:+	AB	11
+f56v_L14	12	w:p	AB	12
+f56v_L14	13	w:ri	AB	13
+f56v_L14	14	w:+	AB	14
+f56v_L14	15	w:+	AB	15
+f56v_L14	16	eps^	settledC	16
+f56v_L14	17	w:et	split	17
+f56v_L14	18	w:no	AB	18
+f56v_L14	19	w:poi	AB	19
+f56v_L14	20	w:+	AB	20
+f56v_L14	21	w:+	split	21
+f56v_L14	22	w:uo	settledC	22
+f56v_L15	1	w:glino	AB	1
+f56v_L15	2	w:+	split	2
+f56v_L15	3	w:+	AB	3
+f56v_L15	4	w:metterlo	AB	4
+f56v_L15	5	w:+	AB	5
+f56v_L15	6	Lx^	settledC	6
+f56v_L15	7	+^	split	7
+f56v_L15	8	S7^	AB	8
+f56v_L15	9	wd^#	AB	9
+f56v_L15	10	bh^	AB	10
+f56v_L15	11	y^	AB	11
+f56v_L15	12	nt^	AB	12
+f56v_L15	13	bh^	AB	13
+f56v_L15	14	w^	AB	14
+f56v_L15	15	e^dot	AB	15
+f56v_L15	16	Lx^	AB	16
+f56v_L15	17	dl^	AB	17
+f56v_L15	18	rz^	AB	18
+f56v_L15	19	w:re	AB	19
+f56v_L15	20	S^	AB	20
+f56v_L15	21	w:m	AB	21
+f56v_L16	1	w:risponde	AB	1
+f56v_L16	2	w:+	AB	2
+f56v_L16	3	w:+	AB	3
+f56v_L16	4	w:+	AB	4
+f56v_L16	5	w:+	AB	5
+f56v_L16	6	w:la	AB	6
+f56v_L16	7	w:+	AB	7
+f56v_L16	8	w:la	AB	8
+f56v_L16	9	w:opinioni	AB	9
+f56v_L16	10	w:+	AB	10
+f56v_L16	11	w:li	AB	11
+f56v_L16	12	w:s	AB	12
+f56v_L16	13	w:s	AB	13
+f56v_L16	14	w:fu	AB	14
+f56v_L16	15	w:La	AB	15
+f56v_L16	16	w:+	AB	16
+f56v_L16	17	w:prima	AB	17
+f56v_L16	18	w:+	AB	18
+f56v_L16	19	w:parte	AB	19
+f56v_L16	20	w:+	AB	20
+f56v_L16	21	w:+	AB	21
+f56v_L16	22	w:mi	AB	22
+f56v_L16	23	w:piace	AB	23
+f56v_L16	24	w:+	AB	24
+f56v_L16	25	w:+	AB	25
+f56v_L17	1	w:a	AB	1
+f56v_L17	2	w:questa	AB	2
+f56v_L17	3	w:ad	AB	3
+f56v_L17	4	w:secondo	AB	4
+f56v_L17	5	w:seconda	AB	5
+f56v_L17	6	w:bisognerà	AB	6
+f56v_L17	7	w:Altrunti	AB	7
+f56v_L17	8	w:+	AB	8
+f56v_L17	9	w:+	AB	9
+f56v_L17	10	w:+	AB	10
+f56v_L17	11	w:+	AB	11
+f56v_L17	12	w:pensiamo	AB	12
+f56v_L17	13	w:pensare	AB	13
+f56v_L17	14	w:+	AB	14
+f56v_L17	15	w:il	AB	15
+f56v_L17	16	w:modo	AB	16
+f56v_L17	17	w:+	AB	17
+f56v_L17	18	w:+	AB	18
+f56v_L17	19	w:come	AB	19
+f56v_L17	20	w:+	AB	20
+f56v_L17	21	w:Cons	AB	21
+f56v_L17	22	w:p	AB	22
+f56v_L17	23	w:+	AB	23
+f56v_L18	1	w:habbi	AB	1
+f56v_L18	2	w:+	AB	2
+f56v_L18	3	w:+	AB	3
+f56v_L18	4	w:ad	AB	4
+f56v_L18	5	w:a	AB	5
+f56v_L18	6	w:+	AB	6
+f56v_L18	7	w:+	AB	7
+f56v_L18	8	w:+	AB	8
+f56v_L18	9	w:+	AB	9
+f56v_L18	10	w:ian	AB	10
+f56v_L18	11	w:+	AB	11
+f56v_L18	12	w:Altrimenti	AB	12
+f56v_L18	13	w:+	AB	13
+f56v_L18	14	w:+	AB	14
+f56v_L18	15	w:+	AB	15
+f56v_L18	16	w:+	AB	16
+f56v_L18	17	w:+	AB	17
+f56v_L18	18	w:<none>	AB	18
+f56v_L18	19	w:_	AB	19
+f56v_L18	20	S4^	split	20
+f56v_L18	21	sq^	settledC	21
+f56v_L18	22	Lx^	settledC	22
+f56v_L18	23	?f56v.18.23^	M|split2	23
+f56v_L18	24	w:mattina	AB	24
+f56v_L18	25	w:questo	AB	25
+f56v_L18	26	w:+	AB	26
+f56v_L18	27	w:mattina	AB	27
+f56v_L18	28	w:+	AB	28
+f56v_L18	29	w:+	AB	29
+f56v_L18	30	w:+	AB	30
+f56v_L19	1	w:E	AB	1
+f56v_L19	2	w:stato	AB	2
+f56v_L19	3	w:+	AB	3
+f56v_L19	4	w:Come	AB	4
+f56v_L19	5	w:+	AB	5
+f56v_L19	6	w:molto	AB	6
+f56v_L19	7	w:+	AB	7
+f56v_L19	8	w:ad	AB	8
+f56v_L19	9	w:lungo	AB	9
+f56v_L19	10	w:+	AB	10
+f56v_L19	11	w:+	AB	11
+f56v_L19	12	w:E	AB	12
+f56v_L19	13	w:+	AB	13
+f56v_L19	14	w:gra	AB	14
+f56v_L19	15	w:Cancellhiero	AB	15
+f56v_L19	16	w:+	AB	16
+f56v_L19	17	w:+	AB	17
+f56v_L19	18	w:+	AB	18
+f56v_L19	19	w:+	AB	19
+f56v_L19	20	w:+	AB	20
+f56v_L19	21	w:et	AB	21
+f56v_L19	22	w:habbiamo	AB	22
+f56v_L19	23	w:+	AB	23
+f56v_L19	24	w:+	AB	24
+f56v_L19	25	w:+	AB	25
+f56v_L19	26	w:+	AB	26
+f57r_L01	1	w:Parlato	AB	1
+f57r_L01	2	w:+	AB	2
+f57r_L01	3	S4^	AB	3
+f57r_L01	4	dl^	AB	4
+f57r_L01	5	tee^	split	5
+f57r_L01	6	a^5	AB	6
+f57r_L01	7	tee^	AB	7
+f57r_L01	8	g^dot	settledC	8
+f57r_L01	9	#^#	AB	9
+f57r_L01	10	lam^dot|~	AB	10
+f57r_L01	11	eps^7	AB	11
+f57r_L01	12	w^	AB	12
+f57r_L01	13	eps^1	AB	13
+f57r_L01	14	]^o	AB	14
+f57r_L01	15	g^7	AB	15
+f57r_L01	16	L^	AB	16
+f57r_L01	17	w^	AB	17
+f57r_L01	18	a^1	AB	18
+f57r_L01	19	lam^7	AB	19
+f57r_L01	20	bh^	AB	20
+f57r_L01	21	S7^	AB	21
+f57r_L01	22	#^#	AB	22
+f57r_L01	23	H^1|o	AB	23
+f57r_L01	24	Z^dot|ot	AB	24
+f57r_L01	25	w:v	AB	25
+f57r_L01	26	w:?	AB	26
+f57r_L01	27	+^	split	27
+f57r_L01	28	bh^dot	AB	28
+f57r_L01	29	w:5	AB	29
+f57r_L01	30	w:7	AB	30
+f57r_L02	1	#^	split	1
+f57r_L02	2	S7^#	settledC	1.5
+f57r_L02	3	L^dot	AB	2
+f57r_L02	4	g^	AB	3
+f57r_L02	5	y^~	AB	4
+f57r_L02	6	wd^	settledC	5
+f57r_L02	7	g^	AB	6
+f57r_L02	8	]^ot	AB	7
+f57r_L02	9	w:v	AB	8
+f57r_L02	10	y^	AB	9
+f57r_L02	11	Z^ot	AB	10
+f57r_L02	12	eps^	AB	11
+f57r_L02	13	y^	AB	12
+f57r_L02	14	[^	AB	13
+f57r_L02	15	y^	AB	14
+f57r_L02	16	phi^	AB	15
+f57r_L02	17	v^1|5	AB	16
+f57r_L02	18	f^	AB	17
+f57r_L02	19	w^	AB	18
+f57r_L02	20	bh^	AB	19
+f57r_L02	21	Z^	settledC	20
+f57r_L02	22	S7^	split	20.5
+f57r_L02	23	y^	AB	21
+f57r_L02	24	tee^	AB	22
+f57r_L02	25	f^	AB	23
+f57r_L02	26	w^	AB	24
+f57r_L02	27	y^	AB	25
+f57r_L02	28	eps^5	settledC	26
+f57r_L02	29	g^7	settledC	26.5
+f57r_L03	1	w:&	AB	1
+f57r_L03	2	a^5	AB	2
+f57r_L03	3	tee^	AB	3
+f57r_L03	4	lam^	AB	4
+f57r_L03	5	o.^1	AB	5
+f57r_L03	6	w:o	AB	6
+f57r_L03	7	m^	settledC	7
+f57r_L03	8	S7^	settledC	7.5
+f57r_L03	9	w^	AB	8
+f57r_L03	10	lam^1	AB	9
+f57r_L03	11	S7^	AB	10
+f57r_L03	12	y^	AB	11
+f57r_L03	13	g^	AB	12
+f57r_L03	14	v^	settledC	13
+f57r_L03	15	w:?	AB	14
+f57r_L03	16	]^o	AB	15
+f57r_L03	17	e^#|dot	AB	16
+f57r_L03	18	eps^	AB	17
+f57r_L03	19	y^	AB	18
+f57r_L03	20	o.^	settledC	19
+f57r_L03	21	g^1	AB	20
+f57r_L03	22	lam^	AB	21
+f57r_L03	23	bh^	AB	22
+f57r_L03	24	S7^#	AB	23
+f57r_L03	25	e^ot	AB	24
+f57r_L03	26	wd^	AB	25
+f57r_L03	27	y^	AB	26
+f57r_L03	28	eps^5	AB	27
+f57r_L03	29	S7^	AB	28
+f57r_L04	1	f^	AB	1
+f57r_L04	2	w^	AB	2
+f57r_L04	3	o.^	AB	3
+f57r_L04	4	w:e	AB	4
+f57r_L04	5	o.^dot	AB	5
+f57r_L04	6	lam^	AB	6
+f57r_L04	7	bh^	AB	7
+f57r_L04	8	S7^	AB	8
+f57r_L04	9	#^	AB	9
+f57r_L04	10	H^1	AB	10
+f57r_L04	11	g^o	AB	11
+f57r_L04	12	y^	AB	12
+f57r_L04	13	y^	AB	13
+f57r_L04	14	g^1	AB	14
+f57r_L04	15	e^+	AB	15
+f57r_L04	16	L^	AB	16
+f57r_L04	17	g^~	AB	17
+f57r_L04	18	m^~	AB	18
+f57r_L04	19	w^	AB	19
+f57r_L04	20	e^+	AB	20
+f57r_L04	21	L^dot|~	AB	21
+f57r_L04	22	S7^	split	22
+f57r_L04	23	w:g	AB	23
+f57r_L04	24	bh^	AB	24
+f57r_L04	25	S7^	AB	25
+f57r_L04	26	#^	AB	26
+f57r_L04	27	e^	AB	27
+f57r_L04	28	wd^	settledC	28
+f57r_L04	29	y^	settledC	29
+f57r_L05	1	sq^	AB	1
+f57r_L05	2	]^o	settledC	2
+f57r_L05	3	eps^5	AB	3
+f57r_L05	4	S7^	AB	4
+f57r_L05	5	f^	AB	5
+f57r_L05	6	w^	AB	6
+f57r_L05	7	o.^	AB	7
+f57r_L05	8	w:e	AB	8
+f57r_L05	9	lam^	AB	9
+f57r_L05	10	bh^7	AB	10
+f57r_L05	11	S7^	AB	11
+f57r_L05	12	#^	AB	12
+f57r_L05	13	Z^	AB	13
+f57r_L05	14	nt^	AB	14
+f57r_L05	15	o.^	settledC	15
+f57r_L05	16	rz^	AB	16
+f57r_L05	17	S7^	AB	17
+f57r_L05	18	#^	AB	18
+f57r_L05	19	m^dot	settledC	19
+f57r_L05	20	lam^	AB	20
+f57r_L05	21	w^~	AB	21
+f57r_L05	22	g^dot	AB	22
+f57r_L05	23	Z^ot	AB	23
+f57r_L05	24	]^ot	settledC	24
+f57r_L05	25	g^	AB	25
+f57r_L05	26	Z^	settledC	26
+f57r_L05	27	y^	AB	27
+f57r_L05	28	e^	AB	28
+f57r_L06	1	nt^	AB	1
+f57r_L06	2	bh^	AB	2
+f57r_L06	3	e^dot	AB	3
+f57r_L06	4	sq^1	AB	4
+f57r_L06	5	tee^	AB	5
+f57r_L06	6	H^1|o	AB	6
+f57r_L06	7	m^1	AB	7
+f57r_L06	8	w^	AB	8
+f57r_L06	9	lam^7	AB	9
+f57r_L06	10	eps^~	AB	10
+f57r_L06	11	wd^	AB	11
+f57r_L06	12	y^	AB	12
+f57r_L06	13	m^~	AB	13
+f57r_L06	14	w^	AB	14
+f57r_L06	15	]^o	AB	15
+f57r_L06	16	eps^~	AB	16
+f57r_L06	17	S7^	AB	17
+f57r_L06	18	lam^	AB	18
+f57r_L06	19	y^7	AB	19
+f57r_L06	20	g^	split	20
+f57r_L06	21	]^~	AB	21
+f57r_L06	22	rz^	AB	22
+f57r_L06	23	Z^	AB	23
+f57r_L06	24	rz^	AB	24
+f57r_L07	1	w^	AB	1
+f57r_L07	2	eps^7	AB	2
+f57r_L07	3	S7^	AB	3
+f57r_L07	4	lam^5	AB	4
+f57r_L07	5	e^#	AB	5
+f57r_L07	6	p^1	AB	6
+f57r_L07	7	o.^o	AB	7
+f57r_L07	8	bh^	AB	8
+f57r_L07	9	y^	AB	9
+f57r_L07	10	bh^	AB	10
+f57r_L07	11	e^	AB	11
+f57r_L07	12	w:e	AB	12
+f57r_L07	13	bh^	AB	13
+f57r_L07	14	H^1|o	AB	14
+f57r_L07	15	m^	settledC	15
+f57r_L07	16	S7^	settledC	15.5
+f57r_L07	17	f^	AB	16
+f57r_L07	18	w^	settledC	17
+f57r_L07	19	S7^	settledC	17.5
+f57r_L07	20	y^	AB	18
+f57r_L07	21	w:&	AB	19
+f57r_L07	22	g^	AB	20
+f57r_L07	23	w^	AB	21
+f57r_L07	24	Z^~	AB	22
+f57r_L07	25	w^	settledC	23
+f57r_L07	26	g^1	settledC	23.5
+f57r_L07	27	e^#|dot	AB	24
+f57r_L07	28	eps^~	AB	25
+f57r_L08	1	S7^	AB	1
+f57r_L08	2	lam^5	AB	2
+f57r_L08	3	a^	settledC	3
+f57r_L08	4	]^o	AB	4
+f57r_L08	5	e^	AB	5
+f57r_L08	6	eps^1	AB	6
+f57r_L08	7	lam^7	AB	7
+f57r_L08	8	m^~	AB	8
+f57r_L08	9	w^	AB	9
+f57r_L08	10	]^o	AB	10
+f57r_L08	11	g^~	AB	11
+f57r_L08	12	g^~	split	12
+f57r_L08	13	lam^	AB	13
+f57r_L08	14	lam^	AB	14
+f57r_L08	15	S^	AB	15
+f57r_L08	16	lam^	AB	16
+f57r_L08	17	bh^	AB	17
+f57r_L08	18	S7^	AB	18
+f57r_L08	19	#^	AB	19
+f57r_L08	20	e^dot	AB	20
+f57r_L08	21	g^~	AB	21
+f57r_L08	22	#^	settledC	22
+f57r_L08	23	o.^	settledC	22.5
+f57r_L08	24	bh^	AB	23
+f57r_L08	25	]^o	AB	24
+f57r_L08	26	m^	settledC	25
+f57r_L08	27	nt^	AB	26
+f57r_L08	28	rz^	AB	27
+f57r_L09	1	nt^	AB	1
+f57r_L09	2	o.^	AB	2
+f57r_L09	3	#^	split	3
+f57r_L09	4	S7^#	settledC	3.5
+f57r_L09	5	#^	split	4
+f57r_L09	6	e^#	settledC	4.5
+f57r_L09	7	sq^1	AB	5
+f57r_L09	8	]^ot	AB	6
+f57r_L09	9	eps^1	AB	7
+f57r_L09	10	w:<none>	AB	8
+f57r_L09	11	e^#	AB	9
+f57r_L09	12	g^1	AB	10
+f57r_L09	13	w:H	AB	11
+f57r_L09	14	o.^	settledC	12
+f57r_L09	15	S7^	settledC	12.5
+f57r_L09	16	bh^	settledC	13
+f57r_L09	17	w^	settledC	13.1
+f57r_L09	18	S7^	settledC	13.2
+f57r_L09	19	o.^	settledC	13.3
+f57r_L09	20	a^5	AB	14
+f57r_L09	21	e^#	AB	15
+f57r_L09	22	g^dot	AB	16
+f57r_L09	23	w:<none>	AB	17
+f57r_L09	24	g^	settledC	18
+f57r_L09	25	g^5	AB	19
+f57r_L09	26	S7^	AB	20
+f57r_L09	27	eps^	AB	21
+f57r_L09	28	tee^	AB	22
+f57r_L10	1	nt^	AB	1
+f57r_L10	2	e^#	AB	2
+f57r_L10	3	phi^	AB	3
+f57r_L10	4	]^o	AB	4
+f57r_L10	5	e^dot	AB	5
+f57r_L10	6	psi^	AB	6
+f57r_L10	7	m^~	settledC	7
+f57r_L10	8	lam^dot	AB	8
+f57r_L10	9	H^1|o	AB	9
+f57r_L10	10	g^	AB	10
+f57r_L10	11	psi^~	AB	11
+f57r_L10	12	lam^	AB	12
+f57r_L10	13	w:o	AB	13
+f57r_L10	14	e^dot|dot	AB	14
+f57r_L10	15	a^7	AB	15
+f57r_L10	16	S7^	split	16
+f57r_L10	17	bh^	AB	17
+f57r_L10	18	e^	AB	18
+f57r_L10	19	g^~	AB	19
+f57r_L10	20	#^	settledC	20
+f57r_L11	1	phi^	AB	1
+f57r_L11	2	phi^	AB	2
+f57r_L11	3	e^dot	AB	3
+f57r_L11	4	a^5	AB	4
+f57r_L11	5	e^dot	AB	5
+f57r_L11	6	S7^	AB	6
+f57r_L11	7	g^+	AB	7
+f57r_L11	8	g^1	AB	8
+f57r_L11	9	w:&	AB	9
+f57r_L11	10	eps^5	AB	10
+f57r_L11	11	S7^~	AB	11
+f57r_L11	12	o.^	AB	12
+f57r_L11	13	rz^	AB	13
+f57r_L11	14	g^~	AB	14
+f57r_L11	15	o.^	settledC	15
+f57r_L11	16	S7^	settledC	15.5
+f57r_L11	17	S7^	AB	16
+f57r_L11	18	y^	AB	17
+f57r_L11	19	w^	AB	18
+f57r_L11	20	+^	settledC	19
+f57r_L11	21	o.^	AB	20
+f57r_L11	22	f^dot|dot	AB	21
+f57r_L12	1	w^	AB	1
+f57r_L12	2	o.^	AB	2
+f57r_L12	3	phi^	AB	3
+f57r_L12	4	v^7	AB	4
+f57r_L12	5	g^	AB	5
+f57r_L12	6	y^	AB	6
+f57r_L12	7	K^	AB	7
+f57r_L12	8	S^	AB	8
+f57r_L12	9	o.^	settledC	9
+f57r_L12	10	nt^	settledC	9.5
+f57r_L12	11	e^dot	AB	10
+f57r_L12	12	eps^1	AB	11
+f57r_L12	13	S^	AB	12
+f57r_L12	14	K^	AB	13
+f57r_L12	15	o.^dot	AB	14
+f57r_L12	16	S7^	AB	15
+f57r_L12	17	Z^	AB	16
+f57r_L12	18	psi^	AB	17
+f57r_L12	19	lam^	AB	18
+f57r_L12	20	w^	AB	19
+f57r_L12	21	w:m~	AB	20
+f57r_L12	22	g^	AB	21
+f57r_L12	23	H^	settledC	21.5
+f57r_L12	24	v^ot	AB	22
+f57r_L13	1	Z^	AB	1
+f57r_L13	2	nt^	AB	2
+f57r_L13	3	y^	AB	3
+f57r_L13	4	w:a	AB	4
+f57r_L13	5	w^	split	5
+f57r_L13	6	Z^ot	AB	6
+f57r_L13	7	nt^	AB	7
+f57r_L13	8	o.^	AB	8
+f57r_L13	9	rz^	AB	9
+f57r_L13	10	S7^#	AB	10
+f57r_L13	11	]^dot|o	AB	11
+f57r_L13	12	eps^	AB	12
+f57r_L13	13	y^	AB	13
+f57r_L13	14	o.^	AB	14
+f57r_L13	15	rz^	AB	15
+f57r_L13	16	g^5	AB	16
+f57r_L13	17	lam^	split	17
+f57r_L13	18	v^	settledC	17.5
+f57r_L13	19	v^5|1	AB	18
+f57r_L13	20	m^	AB	19
+f57r_L13	21	bh^	AB	20
+f57r_L13	22	w^	settledC	21
+f57r_L13	23	o.^	settledC	21.5
+f57r_L13	24	o.^	AB	22
+f57r_L13	25	nt^	AB	23
+f57r_L14	1	g^1	AB	1
+f57r_L14	2	g^	AB	2
+f57r_L14	3	y^~	AB	3
+f57r_L14	4	bh^	AB	4
+f57r_L14	5	a^1	AB	5
+f57r_L14	6	#^	settledC	6
+f57r_L14	7	o.^	AB	7
+f57r_L14	8	w^	AB	8
+f57r_L14	9	S4^	AB	9
+f57r_L14	10	dl^	settledC	10
+f57r_L14	11	rz^	AB	11
+f57r_L14	12	tee^	AB	12
+f57r_L14	13	eps^1	AB	13
+f57r_L14	14	S7^	AB	14
+f57r_L14	15	eps^~	AB	15
+f57r_L14	16	wd^	AB	16
+f57r_L14	17	o.^	AB	17
+f57r_L14	18	rz^	AB	18
+f57r_L14	19	g^~	AB	19
+f57r_L14	20	y^	settledC	20
+f57r_L14	21	y^	settledC	20.5
+f57r_L14	22	L^	AB	21
+f57r_L14	23	S7^	AB	22
+f57r_L14	24	lam^	AB	23
+f57r_L14	25	w:?	AB	24
+f57r_L14	26	g^	settledC	25
+f57r_L14	27	y^	settledC	26
+f57r_L14	28	H^1|o	AB	27
+f57r_L15	1	S7^	AB	1
+f57r_L15	2	w^	AB	2
+f57r_L15	3	y^	settledC	3
+f57r_L15	4	S^	split	3.5
+f57r_L15	5	S7^	AB	4
+f57r_L15	6	Z^	AB	5
+f57r_L15	7	y^5	AB	6
+f57r_L15	8	g^1	AB	7
+f57r_L15	9	w:?	AB	8
+f57r_L15	10	H^	settledC	9
+f57r_L15	11	g^1	AB	10
+f57r_L15	12	w:&	AB	11
+f57r_L15	13	Z^	AB	12
+f57r_L15	14	w:h	AB	13
+f57r_L15	15	w^	AB	14
+f57r_L15	16	y^	AB	15
+f57r_L15	17	S7^	settledC	16
+f57r_L15	18	lam^	settledC	16.5
+f57r_L15	19	H^1	AB	17
+f57r_L15	20	e^o|#	AB	18
+f57r_L15	21	wd^	AB	19
+f57r_L15	22	bh^	AB	20
+f57r_L15	23	y^	AB	21
+f57r_L15	24	nt^	AB	22
+f57r_L15	25	bh^	AB	23
+f57r_L15	26	w^	AB	24
+f57r_L16	1	w:e	AB	1
+f57r_L16	2	lam^	AB	2
+f57r_L16	3	w:o	AB	3
+f57r_L16	4	bh^	AB	4
+f57r_L16	5	sq^ot	AB	5
+f57r_L16	6	wd^	AB	6
+f57r_L16	7	bh^	AB	7
+f57r_L16	8	H^o|1	AB	8
+f57r_L16	9	o.^	AB	9
+f57r_L16	10	bh^	AB	10
+f57r_L16	11	psi^	AB	11
+f57r_L16	12	eps^	AB	12
+f57r_L16	13	w^	AB	13
+f57r_L16	14	o.^	AB	14
+f57r_L16	15	Z^	AB	15
+f57r_L16	16	e^	AB	16
+f57r_L16	17	g^dot	AB	17
+f57r_L16	18	w:b	AB	18
+f57r_L16	19	w^	AB	19
+f57r_L16	20	y^	AB	20
+f57r_L16	21	rz^	AB	21
+f57r_L16	22	Z^	settledC	22
+f57r_L16	23	g^5	AB	23
+f57r_L16	24	phi^	AB	24
+f57r_L16	25	]^o	AB	25
+f57r_L17	1	g^	AB	1
+f57r_L17	2	psi^	AB	2
+f57r_L17	3	m^~	AB	3
+f57r_L17	4	w:e	AB	4
+f57r_L17	5	o.^	AB	5
+f57r_L17	6	phi^	settledC	6
+f57r_L17	7	w:_	split	6.5
+f57r_L17	8	w:?	AB	7
+f57r_L17	9	S7^	AB	8
+f57r_L17	10	o.^	AB	9
+f57r_L17	11	rz^	AB	10
+f57r_L17	12	w:?	AB	11
+f57r_L17	13	nt^	AB	12
+f57r_L17	14	g^~	AB	13
+f57r_L17	15	S4^	AB	14
+f57r_L18	1	#^	AB	1
+f57r_L18	2	#^	AB	2
+f57r_L18	3	f^	AB	3
+f57r_L18	4	S7^	split	4
+f57r_L18	5	S4^1	AB	5
+f57r_L18	6	dl^	AB	6
+f57r_L18	7	Z^	AB	7
+f57r_L18	8	S7^#	AB	8
+f57r_L18	9	phi^	AB	9
+f57r_L18	10	L^	AB	10
+f57r_L18	11	g^	AB	11
+f57r_L18	12	Z^	AB	12
+f57r_L18	13	psi^	AB	13
+f57r_L18	14	lam^5	AB	14
+f57r_L18	15	rz^	AB	15
+f57r_L18	16	nt^	AB	16
+f57r_L18	17	+^ot	AB	17
+f57r_L18	18	S7^	AB	18
+f57r_L18	19	w:h	AB	19
+f57r_L18	20	bh^dot	AB	20
+f57r_L18	21	S7^	AB	21
+f57r_L18	22	bh^	settledC	22
+f57r_L18	23	w^	AB	23
+f57r_L19	1	o.^	AB	1
+f57r_L19	2	S7^	AB	2
+f57r_L19	3	eps^7	AB	3
+f57r_L19	4	m^~	AB	4
+f57r_L19	5	phi^	AB	5
+f57r_L19	6	e^#	AB	6
+f57r_L19	7	g^	AB	7
+f57r_L19	8	e^#	AB	8
+f57r_L19	9	g^	settledC	9
+f57r_L19	10	]^o	AB	10
+f57r_L19	11	S7^	AB	11
+f57r_L19	12	psi^#	AB	12
+f57r_L19	13	f^	split	13
+f57r_L19	14	w^	AB	14
+f57r_L19	15	y^	AB	15
+f57r_L19	16	K^	AB	16
+f57r_L19	17	a^7	AB	17
+f57r_L19	18	eps^7	AB	18
+f57r_L19	19	lam^	AB	19
+f57r_L19	20	y^7	AB	20
+f57r_L19	21	m^~	AB	21
+f57r_L19	22	g^5	AB	22
+f57r_L19	23	nt^	settledC	23
+f57r_L19	24	S7^	AB	24
+f57r_L19	25	tee^	split	25
+f57r_L19	26	y^7	settledC	25.5
+f57r_L19	27	S7^	AB	26
+f57r_L19	28	eps^7	AB	27
+f57r_L19	29	eps^5	AB	28
+f57r_L19	30	S7^	AB	29
+f57r_L19	31	w:<none>	AB	30
+f57v_L01	1	]^o|dot	settledC	1
+f57v_L01	2	o.^dot	AB	2
+f57v_L01	3	w:Et	settledC	3
+f57v_L01	4	w:+	settledC	4
+f57v_L01	5	w:Prometto	settledC	5
+f57v_L01	6	w:+	AB	6
+f57v_L01	7	w:+	settledC	7
+f57v_L01	8	w:aura	AB	8
+f57v_L01	9	w:+	AB	9
+f57v_L01	10	w:.s.	AB	10
+f57v_L01	11	S4^	AB	11
+f57v_L01	12	dl^	AB	12
+f57v_L01	13	+^	settledC	13
+f57v_L01	14	Lx^	AB	14
+f57v_L01	15	w^1|5	settledC	15
+f57v_L01	16	y^	AB	16
+f57v_L01	17	y^	AB	17
+f57v_L01	18	g^~	AB	18
+f57v_L01	19	a^	settledC	19
+f57v_L01	20	S^	settledC	20
+f57v_L01	21	a^1	settledC	21
+f57v_L01	22	o.^	AB	22
+f57v_L01	23	m^7	AB	23
+f57v_L01	24	nt^	AB	24
+f57v_L01	25	y^	AB	25
+f57v_L01	26	S^	AB	26
+f57v_L02	1	y^	AB	1
+f57v_L02	2	y^	AB	2
+f57v_L02	3	Z^	settledC	3
+f57v_L02	4	g^~	AB	4
+f57v_L02	5	sq^	AB	5
+f57v_L02	6	nt^	AB	6
+f57v_L02	7	psi^	AB	7
+f57v_L02	8	lam^~	settledC	8
+f57v_L02	9	w^	AB	9
+f57v_L02	10	rz^	AB	10
+f57v_L02	11	#^o	settledC	11
+f57v_L02	12	w:[C]	AB	12
+f57v_L02	13	phi^	settledC	13
+f57v_L02	14	g^	AB	14
+f57v_L02	15	psi^	AB	15
+f57v_L02	16	m^~	AB	16
+f57v_L02	17	w:[C]	AB	17
+f57v_L02	18	lam^	AB	18
+f57v_L02	19	o.^ot	AB	19
+f57v_L02	20	S4^	AB	20
+f57v_L02	21	dl^	AB	21
+f57v_L02	22	Lx^	AB	22
+f57v_L02	23	w:<none>	settledC	23
+f57v_L03	1	S4^	AB	1
+f57v_L03	2	dl^	settledC	2
+f57v_L03	3	Lx^	AB	3
+f57v_L03	4	e^	settledC	4
+f57v_L03	5	lam^	AB	5
+f57v_L03	6	w:[C]	AB	6
+f57v_L03	7	bh^	AB	7
+f57v_L03	8	S^	AB	8
+f57v_L03	9	Z^	AB	9
+f57v_L03	10	wd^	AB	10
+f57v_L03	11	w:[C]	AB	11
+f57v_L03	12	H^	AB	12
+f57v_L03	13	e^dot	AB	13
+f57v_L03	14	g^	AB	14
+f57v_L03	15	w:[C]	AB	15
+f57v_L03	16	w^	AB	16
+f57v_L03	17	y^	AB	17
+f57v_L03	18	y^	AB	18
+f57v_L03	19	e^	AB	19
+f57v_L03	20	w:[C]	AB	20
+f57v_L03	21	w:[C]	AB	21
+f57v_L03	22	e^#	AB	22
+f57v_L03	23	wd^	AB	23
+f57v_L03	24	bh^	AB	24
+f57v_L03	25	y^	AB	25
+f57v_L03	26	w^	settledC	26
+f57v_L04	1	eps^7	AB	1
+f57v_L04	2	Z^	settledC	2
+f57v_L04	3	psi^	AB	3
+f57v_L04	4	eps^5	settledC	4
+f57v_L04	5	Z^	AB	5
+f57v_L04	6	e^dot|+	AB	6
+f57v_L04	7	lam^	AB	7
+f57v_L04	8	w^1	settledC	8
+f57v_L04	9	rz^	AB	9
+f57v_L04	10	e^dot|#	AB	10
+f57v_L04	11	L^	settledC	11
+f57v_L04	12	psi^	AB	12
+f57v_L04	13	eps^	AB	13
+f57v_L04	14	w^	AB	14
+f57v_L04	15	[^	AB	15
+f57v_L04	16	lam^	AB	16
+f57v_L04	17	y^5	AB	17
+f57v_L04	18	Z^#	AB	18
+f57v_L04	19	S7^	AB	19
+f57v_L04	20	lam^7	AB	20
+f57v_L04	21	]^o	AB	21
+f57v_L04	22	Z^	AB	22
+f57v_L05	1	S7^	AB	1
+f57v_L05	2	#^	AB	2
+f57v_L05	3	lam^dot|1	AB	3
+f57v_L05	4	e^#	settledC	4
+f57v_L05	5	wd^	AB	5
+f57v_L05	6	rz^	AB	6
+f57v_L05	7	dl^#	AB	7
+f57v_L05	8	e^#	AB	8
+f57v_L05	9	Z^	settledC	9
+f57v_L05	10	S7^1	settledC	10
+f57v_L05	11	lam^	AB	11
+f57v_L05	12	H^	AB	12
+f57v_L05	13	m^o|1	AB	13
+f57v_L05	14	w^	AB	14
+f57v_L05	15	]^o	AB	15
+f57v_L05	16	S7^	AB	16
+f57v_L05	17	#^dot	AB	17
+f57v_L05	18	e^#	AB	18
+f57v_L05	19	wd^	AB	19
+f57v_L05	20	y^	AB	20
+f57v_L05	21	Z^	AB	21
+f57v_L05	22	e^dot	settledC	22
+f57v_L05	23	w:[C]	AB	23
+f57v_L06	1	w:[C]	AB	1
+f57v_L06	2	a^1	AB	2
+f57v_L06	3	lam^	AB	3
+f57v_L06	4	bh^	AB	4
+f57v_L06	5	S7^	AB	5
+f57v_L06	6	#^	AB	6
+f57v_L06	7	e^dot	AB	7
+f57v_L06	8	g^5	AB	8
+f57v_L06	9	w^	AB	9
+f57v_L06	10	tee^	AB	10
+f57v_L06	11	o.^	AB	11
+f57v_L06	12	H^	AB	12
+f57v_L06	13	w:[C]	AB	13
+f57v_L06	14	g^dot	AB	14
+f57v_L06	15	w^	AB	15
+f57v_L06	16	S7^	AB	16
+f57v_L06	17	y^	AB	17
+f57v_L06	18	H^1|o	AB	18
+f57v_L06	19	m^~	AB	19
+f57v_L06	20	w:[C]	AB	20
+f57v_L06	21	w:[C]	AB	21
+f57v_L06	22	y^	AB	22
+f57v_L06	23	S^	AB	23
+f57v_L06	24	L^	AB	24
+f57v_L06	25	g^~	settledC	25
+f57v_L06	26	H^	AB	26
+f57v_L07	1	w^	AB	1
+f57v_L07	2	tee^	AB	2
+f57v_L07	3	o.^	AB	3
+f57v_L07	4	y^	AB	4
+f57v_L07	5	tee^	AB	5
+f57v_L07	6	f^	AB	6
+f57v_L07	7	w^	AB	7
+f57v_L07	8	Lx^	AB	8
+f57v_L07	9	dl^	AB	9
+f57v_L07	10	o.^	AB	10
+f57v_L07	11	S4^	AB	11
+f57v_L07	12	dl^	AB	12
+f57v_L07	13	Lx^	AB	13
+f57v_L07	14	dl^	AB	14
+f57v_L07	15	y^	AB	15
+f57v_L07	16	+^	AB	16
+f57v_L07	17	w:bn	AB	17
+f57v_L07	18	w:+	settledC	18
+f57v_L07	19	dl^	AB	19
+f57v_L07	20	v^	AB	20
+f57v_L07	21	w:vary	AB	21
+f57v_L07	22	L^	settledC	22
+f57v_L07	23	lam^	AB	23
+f57v_L07	24	nt^	AB	24
+f57v_L07	25	w:Din	AB	25
+f57v_L08	1	w:xvj	settledC	1
+f57v_L08	2	w:+	AB	2
+f57v_L08	3	w:octobr	AB	3
+f57v_L08	4	w:+	AB	4
+f57v_L08	5	w:+	AB	5
+f57v_L08	6	Z^	AB	6
+f57v_L08	7	lam^	AB	7
+f57v_L08	8	w:1525	AB	8
+f57v_L08	9	S^	AB	9
+f57v_L08	10	Z^	AB	10
+f57v_L08	11	S^	AB	11
+f57v_L08	12	w:Carlos	AB	12
+f57v_L08	13	w:+	AB	13
+f57v_L08	14	tee^	AB	14
+f57v_L08	15	w:Salviati	AB	15
+f57v_L08	16	w:+	AB	16
+f57v_L08	17	w:+	AB	17
+f57v_L09	1	w:<none>	AB	1
+f57v_L09	2	w:<none>	AB	2
+f57v_L09	3	w:<none>	AB	3
+f57v_L09	4	w:<none>	AB	4
+f57v_L09	5	w:Jo.	AB	5
+f57v_L09	6	w:+	AB	6
+f57v_L09	7	w:Carlos	settledC	7
+f57v_L09	8	w:+	settledC	8
+f57v_L09	9	w:<none>	AB	9
+f57v_L09	10	w:Salviati	AB	10
+f57v_L09	11	w:+	AB	11
+f57v_L09	12	w:+	AB	12
+f57v_L09	13	w:+	AB	13
+f57v_L09	14	w:+	AB	14
+f57v_L09	15	w:+	AB	15
+f57v_L09	16	w:+	AB	16
+f57v_L10	1	w:<none>	AB	1
+f57v_L10	2	w:<none>	AB	2
+f57v_L10	3	w:<none>	AB	3
+f57v_L10	4	w:<none>	AB	4
+f57v_L10	5	w:<none>	AB	5
+f57v_L10	6	w:<none>	AB	6
+f57v_L11	1	S4^	AB	1
+f57v_L11	2	dl^	AB	2
+f57v_L11	3	Lx^	AB	3
+f57v_L11	4	w:[C]	AB	4
+f57v_L11	5	eps^1	AB	5
+f57v_L11	6	S7^	AB	6
+f57v_L11	7	eps^~	AB	7
+f57v_L11	8	wd^	AB	8
+f57v_L11	9	[^1	AB	9
+f57v_L11	10	]^	AB	10
+f57v_L11	11	g^	AB	11
+f57v_L11	12	g^~	AB	12
+f57v_L11	13	m^5	AB	13
+f57v_L11	14	o.^dot	split	14
+f57v_L11	15	H^1	AB	15
+f57v_L11	16	g^o	AB	16
+f57v_L11	17	rz^	AB	17
+f57v_L11	18	psi^	AB	18
+f57v_L11	19	eps^	AB	19
+f57v_L11	20	w^	AB	20
+f57v_L11	21	o.^	AB	21
+f57v_L11	22	w:[C]	AB	22
+f57v_L11	23	g^	AB	23
+f57v_L12	1	phi^	settledC	1
+f57v_L12	2	lam^	AB	2
+f57v_L12	3	w:[C]	AB	3
+f57v_L12	4	w:[C]	AB	4
+f57v_L12	5	o.^	AB	5
+f57v_L12	6	w:[C]	AB	6
+f57v_L12	7	lam^	AB	7
+f57v_L12	8	w:[C]	AB	8
+f57v_L12	9	bh^	AB	9
+f57v_L12	10	o.^	AB	10
+f57v_L12	11	S7^	AB	11
+f57v_L12	12	lam^	AB	12
+f57v_L12	13	S7^~	AB	13
+f57v_L12	14	e^	AB	14
+f57v_L12	15	g^~	AB	15
+f57v_L12	16	e^dot|3	settledC	16
+f57v_L12	17	w:[C]	AB	17
+f57v_L12	18	lam^	AB	18
+f57v_L12	19	g^~	AB	19
+f57v_L12	20	H^1|o	AB	20
+f57v_L12	21	tee^	AB	21
+f57v_L12	22	w:[C]	AB	22
+f57v_L12	23	psi^dot	AB	23
+f57v_L12	24	w:[C]	AB	24
+f57v_L13	1	y^	AB	1
+f57v_L13	2	w:[C]	AB	2
+f57v_L13	3	w:[C]	AB	3
+f57v_L13	4	f^	AB	4
+f57v_L13	5	w^	AB	5
+f57v_L13	6	y^	AB	6
+f57v_L13	7	m^	AB	7
+f57v_L13	8	#^	AB	8
+f57v_L13	9	y^	AB	9
+f57v_L13	10	g^~	AB	10
+f57v_L13	11	m^~	AB	11
+f57v_L13	12	w^	AB	12
+f57v_L13	13	lam^	AB	13
+f57v_L13	14	nt^~	AB	14
+f57v_L13	15	y^	AB	15
+f57v_L13	16	g^	AB	16
+f57v_L13	17	eps^	AB	17
+f57v_L13	18	g^	AB	18
+f57v_L13	19	S^	AB	19
+f57v_L13	20	y^	settledC	20
+f57v_L13	21	rz^	AB	21
+f57v_L13	22	nt^	AB	22
+f57v_L13	23	rz^	AB	23
+f57v_L13	24	w:[C]	AB	24
+f57v_L13	25	w:[C]	AB	25
+f57v_L14	1	o.^	AB	1
+f57v_L14	2	S7^	AB	2
+f57v_L14	3	p^	AB	3
+f57v_L14	4	g^	AB	4
+f57v_L14	5	o.^	AB	5
+f57v_L14	6	S7^	AB	6
+f57v_L14	7	lam^	AB	7
+f57v_L14	8	y^~	AB	8
+f57v_L14	9	S^	AB	9
+f57v_L14	10	]^o	AB	10
+f57v_L14	11	g^	AB	11
+f57v_L14	12	w:[C]	AB	12
+f57v_L14	13	w:[C]	AB	13
+f57v_L14	14	nt^	AB	14
+f57v_L14	15	g^1	AB	15
+f57v_L14	16	e^dot|+	settledC	16
+f57v_L14	17	a^1	AB	17
+f57v_L14	18	e^#	AB	18
+f57v_L14	19	lam^1	AB	19
+f57v_L14	20	e^dot	AB	20
+f57v_L14	21	]^o	AB	21
+f57v_L14	22	g^	AB	22
+f57v_L14	23	S7^	AB	23
+f57v_L14	24	phi^	AB	24
+f57v_L14	25	]^o	AB	25
+f57v_L14	26	w:[C]	AB	26
+f57v_L14	27	w^	AB	27
+f57v_L14	28	y^	AB	28
+f57v_L14	29	lam^	AB	29
+f57v_L14	30	eps^1	AB	30
+f57v_L14	31	w:[C]	AB	31
+f57v_L15	1	wd^	AB	1
+f57v_L15	2	bh^	AB	2
+f57v_L15	3	y^	AB	3
+f57v_L15	4	nt^	AB	4
+f57v_L15	5	bh^	AB	5
+f57v_L15	6	w^	AB	6
+f57v_L15	7	e^	settledC	7
+f57v_L15	8	#^	settledC	8
+f57v_L15	9	lam^	AB	9
+f57v_L15	10	w^	AB	10
+f57v_L15	11	tee^	AB	11
+f57v_L15	12	w:[C]	AB	12
+f57v_L15	13	lam^	AB	13
+f57v_L15	14	m^~	AB	14
+f57v_L15	15	g^	AB	15
+f57v_L15	16	g^	AB	16
+f57v_L15	17	a^1	AB	17
+f57v_L15	18	S7^	AB	18
+f57v_L15	19	e^#	AB	19
+f57v_L15	20	g^1	AB	20
+f57v_L15	21	m^~	AB	21
+f57v_L15	22	w^	AB	22
+f57v_L15	23	a^1	AB	23
+f57v_L15	24	g^	AB	24
+f57v_L15	25	S4^~	AB	25
+f57v_L15	26	dl^	AB	26
+f57v_L16	1	w:Et	settledC	1
+f57v_L16	2	w:+	settledC	2
+f57v_L16	3	w:no	settledC	3
+f57v_L16	4	w:+	AB	4
+f57v_L16	5	w:<none>	settledC	5
+f57v_L16	6	w:bisognera	AB	6
+f57v_L16	7	w:+	AB	7
+f57v_L16	8	w:+	settledC	8
+f57v_L16	9	w:+	AB	9
+f57v_L16	10	w:+	AB	10
+f57v_L16	11	w:+	settledC	11
+f57v_L16	12	w:ch	settledC	12
+f57v_L16	13	w:v.	settledC	13
+f57v_L16	14	w:s.	settledC	14
+f57v_L16	15	w:li	AB	15
+f57v_L16	16	w:facci	AB	16
+f57v_L16	17	w:+	settledC	17
+f57v_L16	18	w:Pagare	settledC	18
+f57v_L16	19	w:+	AB	19
+f57v_L16	20	w:+	AB	20
+f57v_L16	21	w:+	AB	21
+f57v_L16	22	w:li	AB	22
+f57v_L16	23	#^	AB	23
+f57v_L16	24	#^	AB	24
+f57v_L16	25	#^	AB	25
+f57v_L16	26	w:d'	AB	26
+f57v_L16	27	w:piu	settledC	27
+f57v_L16	28	w:+	settledC	28
+f57v_L17	1	w:l'habbiamo	AB	1
+f57v_L17	2	w:+	AB	2
+f57v_L17	3	w:+	AB	3
+f57v_L17	4	w:+	AB	4
+f57v_L17	5	w:+	AB	5
+f57v_L17	6	w:+	AB	6
+f57v_L17	7	w:Contentato	AB	7
+f57v_L17	8	w:+	AB	8
+f57v_L17	9	w:+	AB	9
+f57v_L17	10	w:qui	settledC	10
+f57v_L17	11	w:+	AB	11
+f57v_L17	12	w::	AB	12
+f57v_L17	13	w:Ma	settledC	13
+f57v_L17	14	w:+	settledC	14
+f57v_L17	15	w:facce~do	AB	15
+f57v_L17	16	w:+	AB	16
+f57v_L17	17	w:+	AB	17
+f57v_L17	18	w:+	AB	18
+f57v_L17	19	w:gra	settledC	19
+f57v_L17	20	w:+	settledC	20
+f57v_L17	21	w:+	settledC	21
+f57v_L17	22	w:<none>	settledC	22
+f57v_L17	23	w:dilige~	AB	23
+f57v_L17	24	w:+	settledC	24
+f57v_L17	25	w:+	settledC	25
+f57v_L17	26	w:+	settledC	26
+f57v_L17	27	w:+	settledC	27
+f57v_L17	28	w:in	AB	28
+f57v_L17	29	w:+	AB	29
+f57v_L17	30	w:v.	settledC	30
+f57v_L17	31	w:s.	settledC	31
+f57v_L17	32	w:g	settledC	32
+f57v_L18	1	w:<none>	AB	1
+f57v_L18	2	w:<none>	settledC	2
+f57v_L18	3	w:din	AB	3
+f57v_L18	4	w:+	AB	4
+f57v_L18	5	w:+	settledC	5
+f57v_L18	6	w:e	settledC	6
+f57v_L18	7	w:l	AB	7
+f57v_L18	8	w:beueraggio	settledC	8
+f57v_L18	9	w:+	AB	9
+f57v_L18	10	w:+	AB	10
+f57v_L18	11	w:+	settledC	11
+f57v_L18	12	w:+	AB	12
+f57v_L18	13	w::	AB	13
+f57v_L18	14	S4^	AB	14
+f57v_L18	15	dl^	AB	15
+f57v_L18	16	Lx^	AB	16
+f57v_L18	17	w:[C]	AB	17
+f57v_L18	18	a^	settledC	18
+f57v_L18	19	w:[C]	AB	19
+f57v_L18	20	S7^	AB	20
+f57v_L18	21	#^	AB	21
+f57v_L18	22	a^1	settledC	22
+f57v_L18	23	S7^	AB	23
+f57v_L18	24	e^#	AB	24
+f57v_L18	25	g^	AB	25
+f57v_L18	26	m^~	AB	26
+f57v_L18	27	w^	AB	27
+f57v_L18	28	lam^~	AB	28
+f57v_L18	29	nt^	AB	29
+f57v_L18	30	w:[C]	AB	30
+f57v_L19	1	w:<none>	AB	1
+f57v_L19	2	rz^	AB	2
+f57v_L19	3	tee^	AB	3
+f57v_L19	4	e^#	AB	4
+f57v_L19	5	w:[C]	AB	5
+f57v_L19	6	tee^	AB	6
+f57v_L19	7	o.^	AB	7
+f57v_L19	8	eps^	AB	8
+f57v_L19	9	lam^	AB	9
+f57v_L19	10	e^dot|+	AB	10
+f57v_L19	11	sq^	AB	11
+f57v_L19	12	w:[C]	AB	12
+f57v_L19	13	psi^	AB	13
+f57v_L19	14	lam^	AB	14
+f57v_L19	15	S4^	AB	15
+f57v_L19	16	Lx^	AB	16
+f57v_L19	17	w:<none>	AB	17
+f57v_L20	1	w:L	settledC	1
+f57v_L20	2	w:apnte	AB	2
+f57v_L20	3	w:è	settledC	3
+f57v_L20	4	w:<none>	AB	4
+f57v_L20	5	w:stata	AB	5
+f57v_L20	6	w:+	AB	6
+f57v_L20	7	w:Suggellata	AB	7
+f57v_L20	8	w:+	AB	8
+f57v_L20	9	w:+	AB	9
+f57v_L20	10	w:+	settledC	10
+f57v_L20	11	w:+	AB	11
+f57v_L20	12	w:+	AB	12
+f57v_L20	13	w:+	AB	13
+f57v_L20	14	w:Dua	settledC	14
+f57v_L20	15	w:+	AB	15
+f57v_L20	16	w:+	AB	16
+f57v_L20	17	w:volta	settledC	17
+f57v_L20	18	w:+	AB	18
+f57v_L20	19	w:+	AB	19

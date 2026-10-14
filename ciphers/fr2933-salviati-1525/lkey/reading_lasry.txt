@@ -1,0 +1,155 @@
+# Our transcription read with George Lasry's published key as mapped by SALV-LKEY (two blind passes, agreed signs only).
+# [sign] = not keyed; a|b = two cells, M; CAPS = plain boxes. Grades per token in reading_lasry_tokens.tsv.
+f54r_L01	R DNT~ TANQ3 + + PTR~ + Q; C9 s t [e^+] i [bh^] [m^] p a u i [bh^] que s [lam^o] co u i
+f54r_L02	e re pe r ? [L^] re i n [lam^dot] [S7^~] de re a l [K^] [sq^] []^o] e [bh^dot] [S7^+] me [S7^~] te de l [bh^] [K^] [Lx^#]
+f54r_L03	et []^o] u et []^dot|o] [S7^dot] [lam^] [e^dot] a de i D + [g^] et [S4^] TUTTO QUELLO + + CH. S. S. DESIDERA + + + + N. S. [S4^] [S4^]
+f54r_L04	et a ta e []^o] re u n [#^] [y^dot] u [bh^] r [e^dot] et u [S4^] [bh^dot] ne pe r pe [lam^] a t r
+f54r_L05	a []^dot|o] [S7^dot] [L^] []^o] l t r [bh^] [L^] che ? [S4^] PIU + NOLTRI + MY H~N DETTO + + ET + DIC +
+f54r_L06	[S4^] u n [L^] de i n [e^dot] u [bh^] []^o] BR le che t r a [m^1] l [lam^] e [L^] [L^] r l i u [bh^]
+f54r_L07	[]^dot|ot] et p r [bh^] me [bh^] [bh^] ne []^dot|o] re s ti [lam^] [S4^] [dl^] [lam^] [bh^] ne [e^+] [g^dot|~] [#^] i [bh^] ne l a [sq^?] et pe
+f54r_L08	[g^] e l [S4^] [dl^] [Z^dot|~] ce re u et []^] et [Z^7] me [dl^] re s c r u po le [S4^] [dl^] CON
+f54r_L09	LAUENUTA <NONE> [H^7] DUCA + SECONDO + + MH POCO + CREDIBILE l l + + ? [Lx^] [g^dot] ? e ? n
+f54r_L10	[lam^] [S7^~] [lam^] re s [lam^] [lam^] [S^] i [g^] et []^o] po u e [nt^dot] YS []^o] [g^] pe ri [bh^] n [g^#|7] [lam^] che
+f54r_L11	? ? p re [lam^] [S7^~] de pe r [lam^] [S^] u e re M [lam^] [nt^~] a [p^] [g^?] [y^7] et []^dot|ot] [g^] [y^5] [S^] le [#^~] ne
+f54r_L12	? ? l et u ra me n [lam^] de l [bh^] [K^] K l [v^1] [y^5] []^o] e [S7^+] re [lam^] [nt^~] a [e^] []^] pe ri [bh^]
+f54r_L13	[rz^?|?|1] ? [g^dot] r n i e ra t r [bh^] [Z^?] re [sq^~] l che mo [e^dot|+] [S4^] [dl^] [p^] PURE AMT + [p^] PARZ
+f54r_L14	H che le u e re re s [Lx^] ci ta []^o] po u e u et ne LRYY a a [lam^] [S4^] [m^] [a^] [#^] MAXIMS
+f54r_L15	STANDO + ANCORA + LA COSI + [S4^] [e^dot|+] mo de [S7^dot|+] [dl^] COME + STANNO + [p^] PURE + e [S^]
+f54r_L16	RICORDERA + QUELLO + + [N^] CH~ + + [ch^] LI [p^] PARRA [N^] E ca PIACIUTO [a^dot] A.S.M~TR + [S^] [Lx^] e c E [m^] RICORDO + DI
+f54r_L17	[S^] S. ? [K^] ma n ca u et et []^o] p r [bh^] po s [lam^] de l i [e^dot|+] [y^dot] [S4^] [dl^] CON +
+f54r_L18	TENTASI [v^dot] [p^] r [S4^] [e^dot|+] [K^] LX r LX ne co n [L^] r me a [S^] [dl^+] O LA OPPINJONI
+f54r_L19	DJ [S^] [S^] c t ET l [S^] DESIDERA + [N^] IN TAL + CASO + [ch^] N. S. [Lx^] p r [bh^] me AD []^o] [e^ot] E
+f54v_L01	[L^dot|~] n [y^dot|1|dot] [bh^] ne [e^] [tee^dot] [g^] [bh^dot|dot|dot] s [lam^] [lam^5|1] [H^5] a a [U^H] r [bh^] me u r pe r i l [e^dot] [eps^dot|1] [U^H] re
+f54v_L02	[g^dot|dot] n [lam^] [S4^~] [dl^] [K^] [g^ot] e [S7^+] [g^] ma [?f54v.2.12^] [e^] ra p r e s to et i l [Z^#] ce [g^] [y^~] a ri
+f54v_L03	[C] co r [e^] to [e^+] [L^] re et n [#^dot] s [lam^] to [e^+] [H^#] l r [lam^?] ci pi n [w^dot|#] n [v^dot] []^dot|o] et
+f54v_L04	i l po po le et [lam^] [S^] [bh^] [lam^] e mo n ti et che pe r []^o] s t e []^o|dot] ta [e^] p s [bh^] [rz^5] [?f54v.4.30^]
+f54v_L05	me [g^] e l ca pi [lam^] ne [e^] l a [nt^7] a [C] c [S7^H] []^o] r u a r [e^dot] a et u t
+f54v_L06	ca pi ta n [#^] [e^] et n te [e^] r me co n [L^] [e^] n [lam^] [H^1|o|~] [e^] pe + [e^] [e^] [dl^] [S4^] t
+f54v_L07	c [+^M] NO GH' PIACE METTERA + + + + + + e l et et r et [lam^] ro et [H^5] H COSTORO + DOMA~ +
+f54v_L08	SONO + VUOLE + .S. [S^H] M.TN + + VT LIBERARE + + + TUTTA + QUESTA + + + COSA + STA? [a^H] ALTRI + [L^]
+f54v_L09	[dl^] [Lx^] [[^dot] n [C] [#^dot] []^] [w^dot|#] a u [bh^] r [e^] t r a u [S7^M] l [K^] et [rz^5] e l
+f54v_L10	[]^] a e [g^] [S7^1] [#^dot] co n c l [Lx^] de re a le n [lam^] che [eps^#] n c [tee^1] u [e^] [S7^5]
+f54v_L11	et a u [bh^] et n [p^] [S^] et [C] AGGIUNGERE [C] c ET LEVARE + + + [S4^] a [S^] []^o] ca pi [S^] [lam^] [sq^]
+f54v_L12	[L^] [g^] i n [#^] [w^1] s le t [e^] l [K^] [g^] [g^] u a [S4^] [Lx^] [S^] SECONDO + + [ch^] PARRÀ [N^] c [#^] [p^] EXPE~
+f54v_L13	SARÀ + c l ET + + + t [Lx^] a [S^] []^o] [S7^dot|dot] p r i n ci pe et a [S^] []^o] l t r [m^] [bh^]
+f54v_L14	FRA LI ALTRI + COSI + VOGLIONO + + + [S4^] [dl^] [Lx^] che []^o] ro [g^] []^] [g^ot] s de fe [g^] et et [v^1|5]
+f54v_L15	[bh^] [C] [g^] le [g^] l et che [S4^o] [dl^] CONTRA + + TURCHI + + c t LUTERANI ET c t POTR~ +
+f54v_L16	ESSERE + [S^] CHE + + GRA~ + CANCELLIERI + + + MI MANDERA + + LA NOTA D' QUELLO + + VOGLIONO +
+f54v_L17	MUTARE + + + QUANTI + [ch^+] ET QUESTO CORRIERI + + PARIGI + c ET LAMANDERO + +
+f54v_L18	[S4^] [dl^] t a a ta che le r [w^1] i [bh^] [#^] n [g^dot] [lam^] a [L^] [g^] [y^~] l [K^] i n [bh^] r n i ro et et i
+f54v_L19	i [bh^] n [#^] [L^] re [m^1] [g^] [S7^~] [lam^] [e^dot|+] co n [U^5] et et l [e^+] de n [#^dot|ot] [bh^] r et de u s <NONE>
+f55r_L01	<NONE> i a [bh^] [e^] l n r a [lam^] [wd^~] [bh^] [g^] e et u a [e^] r s [e^+] r [H^5|1] u n re [C] [S^] [S^]
+f55r_L02	[e^] [e^dot|#] [#^dot|~] [bh^] n et [e^] l a me de ri ma ma [S^] r e a l [?f55r.2.20^] [g^] r [?f55r.2.23^] n [bh^] re a [S^] [C] [bh^] []^o] to et [a^7]
+f55r_L03	[C] [C] [m^1] r []^o] to [H^1|5] [e^] l a [L^] r l i u [bh^] []^o] [e^] [v^~] et a u i [g^3] re ra [e^]
+f55r_L04	re [S4^] [dl^] [p^] QUESTO VERSO ET P~ c t [p^] [g^] OGNI [a^dot] ALTRO + ET SOPRA + [N^] ADDOMANDAR~ + + + + +
+f55r_L05	a PO V. S. COFERISCA + TUTTO [C] CO~ PAGARE [S^] [S^dot] et [a^7] ri ma n [e^dot|+] [L^] n [S^] r i e to
+f55r_L06	[sq^] s to co u i e re et []^o] n de co n [lam^] [S^] [?f55r.6.17^] e le [g^] ri []^o] [lam^] [bh^] ne [Lx^] [dl^] ADUER~ + +
+f55r_L07	TENDO + [S^] [S^#] [ch^] [e^] QUESTO [S4^] [dl^] [N^] u [S7^+] [bh^] u a [g^] [bh^] n [#^] ra r a co n []^o] [sq^]
+f55r_L08	et [C] [bh^] [sq^o] [w^#] e [lam^] [g^1|~] []^] [y^ot] [lam^] [lam^] [g^] [bh^] et [e^] [g^] [bh^] i i + pe r pe [lam^] [bh^7] et a [g^] et [g^] et
+f55r_L09	pe r a [a^7] c et [L^] r l i u [bh^] le u []^] p r i n ci pe e l ma [C] [bh^] [g^] et et i
+f55r_L10	[a^7] r l i [bh^] re [H^] [L^] [Lx^] i ma i [e^] u n [S^] [C] co l [sq^?] le l [dl^] [p^] POTRA + +
+f55r_L11	DISTINGUIAMO + + <NONE> OGNI <NONE> COSA + et ne po t r [?f55r.11.14^] [m^] [S4^] [S4^] e che [e^dot|+] [L^] r l i u
+f55r_L12	et et ET [dl^] c RIMEDIARNE + + A TUTTI [a^] E DISORDINI + + DELLA + CHIESA + ET PERICOLI l + + + + + [N^] c t [p^] [m^] [C] + [bh^]
+f55r_L13	de [tee^#] [lam^] r co [H^] c r [lam^] fi co [S^] [g^] che l [bh^] [K^] [v^#|1] [m^1] r []^o] et pe a [g^] i n a l t [g^] [S^] pi
+f55r_L14	u che i n [sq^] s [lam^] [S4^5] et [S4^] [S^] SOPRA + [N^] MODO + DESIDERA + + [N^] r u e re u n [#^] [lam^dot] [S^] POCO n
+f55r_L15	TUTTI LI ALTRI + PRATICHE + [p^] n GRATE + + mo l [lam^] [m^5|~] ri co []^] [g^ot] et [S4^] [dl^] RIUSCIBILI + + [p^] FACILLIMA + ET
+f55r_L16	RIUSCIBILI + + + + [S4^] [Lx^] que a [lam^] [g^] []^o] [g^] co n de [a^] [C] e [S4^] [Lx^] FACILLIMA + + + c t ET SANZA + +
+f55r_L17	ALCUNO + PERICOLO [p^] [C] + + + + [S4^] [dl^] t [v^1|#] [sq^+] [lam^] [K^] [rz^#] u [g^] n [lam^] [phi^5] [S4^] [dl^] INOGNI COSA
+f55r_L18	COSA MOSTRA + SOPRA [N^] TUTTI LI [N^] ALTRI + COSE + + DESIDERANO + + + + + + DI + + n + + [S4^dot] [dl^] t [Lx^]
+f55r_L19	[bh^dot] [g^] r le re []^o] [L^] [e^] [e^] ro de ra mo l <NONE> le ne [g^dot] [?f55r.19.19^] s co ro et r [g^] ma e
+f55v_L01	TRUOUA + ANCORA L'AUISO + [S4^] [dl^] et [g^+] [v^5|1] <NONE> a u [bh^] [w^dot] [e^] co n [p^] [g^] [v^1|1] [m^1] [bh^] et
+f55v_L02	[S7^+] [g^dot] [S4^~] [dl^] JO + D~TI + A.S. + M~TU + [S4^] [dl^] e t r i e [Z^~] [e^] l a [e^dot] s pe
+f55v_L03	[L^] [bh^] et a t [g^] []^o] [lam^] [bh^] ne COSJ + COSJ + + + SI SI + RESTASSINO + + + + + +
+f55v_L04	<NONE> + + + DJ + MN PURN + BI [bh^] [S4^] [Lx^] t [lam^] [nt^~] a [g^] c <NONE> e [lam^#] BISOGNI + + CHE + [ch^] que l
+f55v_L05	de l a [e^dot|+] s pe n [g^] ne [a^] [S7^+] []^o] [g^] [[^~] [S7^+] [S4^] MI TO V.S. LO LO RIFARZ [g^dot] <NONE> + + + + c
+f55v_L06	MI LO MANDJ [S7^dot] [S4^] e l [m^1] [g^] [S7^~] [lam^] de [g^] [lam^] e ne pe r [L^] <NONE> [bh^] et []^o] [e^] [lam^dot|dot]
+f55v_L07	[e^+] co ne ne [Z^dot|ot] c [S7^~] [lam^] [a^5|7] []^o] [e^dot] ca ti <NONE> [m^3] [lam^] [S7^1] [e^] [e^dot] [#^dot|#] <NONE> to [a^] n []^o] che l [K^1] [m^1|5] <NONE>
+f55v_L08	to [#^o] l [bh^] a a s a et re [S4^] [dl^] [H^] che e [e^] ma n [e^+] [S4^] ASSAJ + + + + + + [N^] <NONE>
+f55v_L09	? + + + HW + <NONE> [ch^] [S4^] [dl^] l [Lx^] [g^] [S^] n [lam^] [S7^~] [lam^] ra <NONE> de l a <NONE> r [#^#] r <NONE> [g^]
+f55v_L10	[]^o] [Lx^] ra et <NONE> [lam^3] [bh^] n [#^] [e^] l [bh^] a t [f^5] [e^] et a [Lx^] <NONE> r [Lx^dot] [S7^1]
+f55v_L11	ci n que <NONE> <NONE> [#^] che l r [g^] n a [g^] []^o] [bh^] [g^] e ra n [#^] [S4^] [dl^] t [Lx^]
+f55v_L12	SANZA + + + NO + NO FARA + <NONE> <NONE> <NONE> [S4^] a u [bh^] r [e^dot] et [dl^] JO PENSO C + + +
+f55v_L13	[S4^] [Lx^] l r a [S7^dot] u [g^] [H^] che [e^] [H^] n [#^dot] [e^dot] n [#^dot] le [L^] ra <NONE> [S4^] [dl^] [Lx^]
+f55v_L14	ca <NONE> STATO MOLTO + AD <NONE> PROPOSITO <NONE> + + + <NONE> FARE + INTENDERE + + A.S. [S^] [lam^] [lam^#] [p^] [Lx^] M~TR
+f55v_L15	que <NONE> e p r <NONE> [S7^5] [H^] [e^dot] [e^dot|#] me ne [eps^dot] [g^] u []^o] <NONE> que ce n [#^] e et n [lam^#]
+f55v_L16	mo l [lam^] ro [a^] ro [phi^1] [e^] s [g^] che []^] [dl^] [g^] [S^] e ro ne [a^dot] [S^] l to i a n r <NONE> [g^] et [S4^] [dl^] t
+f55v_L17	[S^] M~TV [S^] RESTATO + + + + t P QUELLO + [ch^] [bh^dot] ET SI HO FATTO + + +
+f55v_L18	P PARTE + F.S.S. + [S^] u [S^~] LA + M~TR + CES + VEDERANN + + + MOLTO + <NONE> [S4^] [dl^] che []^o] <NONE>
+f55v_L19	ci et s co le [e^dot|+] [lam^] l e de [g^dot] a [L^] [bh^] ca r [e^dot] [S7^+] []^] u [S4^] <NONE> c t MENT
+f56r_L01	HA + PARLATO + + MOLTO CALDAM~TE + + + M UUOLTI + [ch^] [S4^] [Lx^] n [#^] et u n [#^] [e^dot] l [S^] 56
+f56r_L02	i [g^] a le [g^] [S^] [S^] i et [m^1] r [S^] []^o] che [e^+] pe [g^] n de [eps^5|dot] n []^dot|o] a l t r i [g^] de u a
+f56r_L03	[?f56r.3.1^] [e^dot] s ta pe [g^] re [H^] [a^] [sq^] s [L^] et [H^#] [v^1|5] e u e n de e s t r [bh^] ca r [e^dot|dot]
+f56r_L04	[S7^+] n []^] [g^] s [m^1] r n i u [bh^] le e e de u e co []^] n [m^] c re [e^dot|+] que s to []^o] [S7^+]
+f56r_L05	[lam^] [bh^] n [#^] s c r i et ne de [g^dot] a ma n [y^#] [dl^] et [S4^] [dl^] AMSN M HN~ + STRITTO +
+f56r_L06	<NONE> <NONE> <NONE> MIRABILM~TE [a^] P̃O V· S· + [#^#] a e [S^] FACCI LOPA [N^] CALDAM~TE + + + c l SOLLECITI + + [S^]
+f56r_L07	<NONE> <NONE> <NONE> <NONE> <NONE> <NONE> [S^#] [S4^] a l [L^] r r l i [U^1] e i [g^] r [Z^dot|ot] [lam^] [bh^] [e^dot|#] [v^#] a a et n de [f^dot] p
+f56r_L08	<NONE> r [bh^] me u [bh^] et i l p ro []^o] n [#^o] r []^dot|o] e mo l to ma le [y^dot] p r [bh^] [m^] [g^] [lam^] [S^]
+f56r_L09	a [bh^] ri co r [e^+] [lam^] [S^] che ma n [e^dot] ne u ne i [bh^] s [e^] [g^dot|~] co n [L^] n [g^] [#^] n [lam^] [o.^~] n
+f56r_L10	[g^] ma et [S4^] l [Lx^] M.TA u MJ [e^] HN LETTO [ch^] [g^] ? l CT̃ PENSRA [N^]
+f56r_L11	MA CH̃ GLI + BESOGNN + [C] [S4^] s [Z^~] [g^] pe YT [bh^] a l [e^dot] [eps^1|dot] de [S4^] [dl^]
+f56r_L12	[g^] u a [S4^1] [dl^] [Lx^] [dl^] [S4^] [e^+] []^o] et n [lam^] [sq^] [y^#] ca r [e^dot|+] [S7^+] le co le et
+f56r_L13	Y [C] [C] HA + INTESO QUELLO + + CHE QUA LE + È + + STATO SCRIPTO + A M [C] [C] + +
+f56r_L14	[m^1] t r [bh^] n [#^] [e^+] [S^] [g^] et e et n [#^dot] [lam^dot] [y^5] [e^dot|#] le r [bh^] n [#^] [dl^] co HA ADUIJ, + + + +
+f56r_L15	<NONE> SONN V. S. SAPPIA + + + + + EL + TUTTO ET + PENSI + QUELLO + HA ADUISO + + P.CH +
+f56r_L16	SONO + CERTO + [C] [C] [C] ca r [e^dot] [S7^+] le a a ra i n [lam^] re [bh^] r n i co [g^] et [g^] n [#^]
+f56r_L17	[e^] [Lx^dot] a co n l [g^] [Lx^] [S4^] SOPRA + LA MEDESIMA + + + + MATERIA + + MJ HA + PAR~ + + + + +
+f56r_L18	LATO + [dl^] t r l r r a n ca n ce l i e ro et a e [S^] r ma [lam^] [a^7] che [g^]
+f56r_L19	[C] n AG~ [g^dot] i re che e a a a n [#^] []^o] a a s c r i p [lam^] et [Lx^] JO LO CREDO + + +
+f56v_L01	[bh^] [ch^] LO + TRUONO + G TRUONO [S^5] [dl^] t s u [bh^] mo mo l [lam^] [S^] [Z^dot|ot] [g^] ti [rz^~] [g^] mo l [lam^] [S^] LI [bh^dot] [Z^#] [phi^dot] r
+f56v_L02	[v^dot] a n [y^5] r le [lam^] re de l [K^1] [phi^5] p r [bh^] te [e^~] [bh^] [g^] et et [g^] [S^] de [p^1] [eps^o] l [p^] PARMJ
+f56v_L03	[g^dot] Q~ SI + + FATTO GRA~ GRA TORTO + + [lam^] u t a [e^+] [e^] e ri [g^] et n t [rz^dot] n [lam^] <NONE> [a^] l [p^] <NONE> [H^]
+f56v_L04	r l e a [lam^] ta n p r [bh^] me u [bh^] [dl^] [Lx^] [g^] r l et ce [g^] et et r r s n ca n
+f56v_L05	ce l i r ro [a^] a a l [e^+] a s [S^] r [g^] pe r [m^1] r te [e^] l [bh^7] [K^1] u
+f56v_L06	CH FARIA + BENN + FOR + DA [Lx^] [lam^] [S7^~] [lam^] [g^1|~] u n t [dl^5] [S^] c n [S^~] che [m^] r l i
+f56v_L07	<NONE> a u i n [#^] []^] n de fe n [g^] [bh^] ne [e^] l a a i e [g^] de l [K^] [g^] de [Z^#] [S7^dot] [+^dot] [lam^dot] [y^1] ne [phi^dot]
+f56v_L08	<NONE> [L^] [bh^] [g^] [S7^~] [lam^] n [phi^+] de l [g^] [y^~] A [e^dot] [p^1] [phi^~] che ci a s c n [#^dot] co n t r i B [o.^dot] u
+f56v_L09	<NONE> <NONE> i pe r E [L^] t <NONE> [sq^] l [bh^] [g^] de u i le [g^] [Lx^5] [p^] [p^] POTEM + LUARN + + LETER + + +
+f56v_L10	CITO + ? <NONE> TUTTO + [sq^] [Lx^] et []^#] l i [S^7] che [g^o] [g^] ta u i n [#^] et
+f56v_L11	[nt^dot|1] i e <NONE> l ne [o.^dot] a r ma ta [dl^] t a FARE + + QUALI + +
+f56v_L12	IMPRESA + + + + CON + E N FEV l H [+^dot] [Lx^] [bh^] i n a [e^] r i ca [bh^] l t r [bh^]
+f56v_L13	le et che ri pe n [g^] [S^] u i [e^dot|#] [sq^?] l che [a^o] [S^] [e^dot] [e^] [S7^dot] t r a [y^~] [o.^~] n [#^] r
+f56v_L14	[]^o|o] [Lx^] [p^dot] PURE + QUESTO + HANNO + DETTO + P RI + + c ET NO POI + + UO
+f56v_L15	GLINO + + METTERLO + [Lx^] t n [wd^#] [bh^] a u [bh^] r [e^dot] [Lx^] [dl^] e RE [S^] M
+f56v_L16	RISPONDE + + + + LA + LA OPINIONI + LI S S FU LA + PRIMA + PARTE + + MI PIACE + +
+f56v_L17	A QUESTA AD SECONDO SECONDA BISOGNERÀ ALTRUNTI + + + + PENSIAMO PENSARE + IL MODO + + COME + CONS P +
+f56v_L18	HABBI + + AD A + + + + IAN + ALTRIMENTI + + + + + <NONE> _ [S4^] [sq^] [Lx^] [?f56v.18.23^] MATTINA QUESTO + MATTINA + + +
+f56v_L19	E STATO + COME + MOLTO + AD LUNGO + + E + GRA CANCELLHIERO + + + + + ET HABBIAMO + + + +
+f57r_L01	PARLATO + [S4^] [dl^] l mo l [g^dot] [#^#] [lam^dot|~] ci r ca []^o] ri [L^] r ma ti [bh^] n [#^#] che [Z^dot|ot] V ? t [bh^dot] 5 7
+f57r_L02	[#^] ne [L^dot] [g^] [y^~] l [g^] le V a le c a i a et [v^1|5] t r [bh^] et n a l t r a co ri
+f57r_L03	& mo l [lam^] [o.^1] O [m^] n r ta n a [g^] e ? []^o] [e^#|dot] c a i ra [lam^] [bh^] ne [e^ot] l a co n
+f57r_L04	t r i E [o.^dot] [lam^] [bh^] n [#^] che [g^o] a a ra [e^+] [L^] re pe r [e^+] [L^dot|~] n G [bh^] n [#^] [e^] l a
+f57r_L05	[sq^] []^o] co n t r i E [lam^] [bh^7] n [#^] et u i e n [#^] [m^dot] [lam^] [w^~] [g^dot] le le [g^] et a [e^]
+f57r_L06	u [bh^] [e^dot] [sq^1] l che [m^1] r ti ce l a pe r []^o] ce n [lam^] [y^7] [g^] []^~] e et e
+f57r_L07	r ci n to de [p^1] [o.^o] [bh^] a [bh^] [e^] E [bh^] che [m^] n t r n a & [g^] r [Z^~] r ra [e^#|dot] ce
+f57r_L08	n to [a^] []^o] [e^] ca ti pe r []^o] re re [lam^] [lam^] [S^] [lam^] [bh^] n [#^] [e^dot] re [#^] i [bh^] []^o] [m^] u e
+f57r_L09	u i [#^] ne [#^] de [sq^1] le ca <NONE> de ra H i n [bh^] r n i mo de [g^dot] <NONE> [g^] ro n c l
+f57r_L10	u de et []^o] [e^dot] s pe [lam^dot] che [g^] [psi^~] [lam^] O [e^dot|dot] [a^7] n [bh^] [e^] re [#^]
+f57r_L11	et et [e^dot] mo [e^dot] n [g^+] ra & co [S7^~] i e re i n n a r t i [f^dot|dot]
+f57r_L12	r i et [v^7] [g^] a [K^] [S^] i u [e^dot] ca [S^] [K^] [o.^dot] n et s [lam^] r M~ [g^] [H^] [v^ot]
+f57r_L13	et u a A r le u i e ne []^dot|o] c a i e ro [lam^] e [v^5|1] [m^] [bh^] r i i u
+f57r_L14	ra [g^] [y^~] [bh^] ma [#^] i r [S4^] [dl^] e l ca n ce l i e re a a [L^] n [lam^] ? [g^] a che
+f57r_L15	n r a [S^] n et [y^5] ra ? [H^] ra & et H r a n [lam^] che [e^o|#] l [bh^] a u [bh^] r
+f57r_L16	E [lam^] O [bh^] que l [bh^] che i [bh^] s c r i et [e^] [g^dot] B r a e et ro et []^o]
+f57r_L17	[g^] s pe E i et _ ? n i e ? u re [S4^]
+f57r_L18	[#^] [#^] t n [S4^1] [dl^] et ne et [L^] [g^] et s to e u [+^ot] n H [bh^dot] n [bh^] r
+f57r_L19	i n ci pe et de [g^] de [g^] []^o] n [psi^#] t r a [K^] [a^7] ci [lam^] [y^7] pe ro u n l [y^7] n ci co n <NONE>
+f57v_L01	[]^o|dot] [o.^dot] ET + PROMETTO + + AURA + .S. [S4^] [dl^] t [Lx^] [w^1|5] a a re [a^] [S^] ma i pi u a [S^]
+f57v_L02	a a et re [sq^] u s te r e [#^o] [C] et [g^] s pe [C] [lam^] [o.^ot] [S4^] [dl^] [Lx^] <NONE>
+f57v_L03	[S4^] [dl^] [Lx^] [e^] [lam^] [C] [bh^] [S^] et l [C] [H^] [e^dot] [g^] [C] r a a [e^] [C] [C] de l [bh^] a r
+f57v_L04	ci et s co et [e^dot|+] [lam^] [w^1] e [e^dot|#] [L^] s c r i [lam^] [y^5] [Z^#] n ti []^o] et
+f57v_L05	n [#^] [lam^dot|1] de l e [dl^#] de et [S7^1] [lam^] [H^] [m^o|1] r []^o] n [#^dot] de l a et [e^dot] [C]
+f57v_L06	[C] ma [lam^] [bh^] n [#^] [e^dot] ro r l i [H^] [C] [g^dot] r n a che pe [C] [C] a [S^] [L^] re [H^]
+f57v_L07	r l i a l t r [Lx^] [dl^] i [S4^] [dl^] [Lx^] [dl^] a t BN + [dl^] e VARY [L^] [lam^] u DIN
+f57v_L08	XVJ + OCTOBR + + et [lam^] 1525 [S^] et [S^] CARLOS + l SALVIATI + +
+f57v_L09	<NONE> <NONE> <NONE> <NONE> JO. + CARLOS + <NONE> SALVIATI + + + + + +
+f57v_L10	<NONE> <NONE> <NONE> <NONE> <NONE> <NONE>
+f57v_L11	[S4^] [dl^] [Lx^] [C] ca n ce l [[^1] []^] [g^] re po [o.^dot] che [g^o] e s c r i [C] [g^]
+f57v_L12	et [lam^] [C] [C] i [C] [lam^] [C] [bh^] i n [lam^] [S7^~] [e^] re [e^dot|3] [C] [lam^] re che l [C] [psi^dot] [C]
+f57v_L13	a [C] [C] t r a [m^] [#^] a re pe r [lam^] [nt^~] a [g^] c [g^] [S^] a e u e [C] [C]
+f57v_L14	i n [p^] [g^] i n [lam^] [y^~] [S^] []^o] [g^] [C] [C] u ra [e^dot|+] ma de ta [e^dot] []^o] [g^] n et []^o] [C] r a [lam^] ca [C]
+f57v_L15	l [bh^] a u [bh^] r [e^] [#^] [lam^] r l [C] [lam^] pe [g^] [g^] ma n de ra pe r ma [g^] [S4^~] [dl^]
+f57v_L16	ET + NO + <NONE> BISOGNERA + + + + + CH V. S. LI FACCI + PAGARE + + + LI [#^] [#^] [#^] D' PIU +
+f57v_L17	L'HABBIAMO + + + + + CONTENTATO + + QUI + : MA + FACCE~DO + + + GRA + + <NONE> DILIGE~ + + + + IN + V. S. G
+f57v_L18	<NONE> <NONE> DIN + + E L BEUERAGGIO + + + + : [S4^] [dl^] [Lx^] [C] [a^] [C] n [#^] ma n de [g^] pe r te u [C]
+f57v_L19	<NONE> e l de [C] l i c [lam^] [e^dot|+] [sq^] [C] s [lam^] [S4^] [Lx^] <NONE>
+f57v_L20	L APNTE È <NONE> STATA + SUGGELLATA + + + + + + DUA + + VOLTA + +

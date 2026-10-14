@@ -10,7 +10,8 @@ D = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(os.path.d
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 import judge_plaintext as J
 draws = int(sys.argv[sys.argv.index("--draws") + 1]) if "--draws" in sys.argv else 300
-key = {r["sign"]: r for r in csv.DictReader(open(os.path.join(D, "key_lasry.tsv"), encoding="utf-8"), delimiter="\t")}
+allkey = {r["sign"]: r for r in csv.DictReader(open(os.path.join(D, "key_lasry.tsv"), encoding="utf-8"), delimiter="\t")}
+key = {s: r for s, r in allkey.items() if r["class"] != "amb"}  # ambiguous a|b rows graded M, not read (PREREG 1)
 toks = list(csv.DictReader(open(os.path.join(D, "ciphertext_lasry.tsv"), encoding="utf-8"), delimiter="\t"))
 runs, cur, prev = [], [], None   # runs of (leaf, sign)
 for t in toks:
@@ -45,16 +46,16 @@ for _ in range(draws):
         vals = [base[s] for s in ss]; rnd.shuffle(vals); k.update(zip(ss, vals))
     for n, v in scores(k).items(): ctl[n].append(v)
 p99 = lambda xs: sorted(xs)[min(len(xs) - 1, int(0.99 * (len(xs) - 1)))]
-tot = defaultdict(int); mapped = defaultdict(int)
+tot = defaultdict(int); mapped = defaultdict(int); amb = defaultdict(int)
 for r in runs:
     for lf, s in r:
-        tot[lf] += 1; mapped[lf] += s in key
+        tot[lf] += 1; mapped[lf] += s in key; amb[lf] += s in allkey and s not in key
 res = {"draws": draws, "target": {n: round(v, 4) for n, v in tgt.items()},
        "control_p99": {n: round(p99(v), 4) for n, v in ctl.items()},
        "control_mean": {n: round(sum(v) / len(v), 4) for n, v in ctl.items()},
        "rank_above": {n: sum(1 for x in ctl[n] if x >= tgt[n]) for n in tgt},
        "mapped_share": {lf: f"{mapped[lf]}/{tot[lf]}" for lf in leaves},
-       "mapped_all": f"{sum(mapped.values())}/{sum(tot.values())}", "letters": len(J.fold(text(base)))}
+       "mapped_all": f"{sum(mapped.values())}/{sum(tot.values())}", "ambiguous_M": {lf: amb[lf] for lf in leaves}, "letters": len(J.fold(text(base)))}
 open(os.path.join(D, "cipher_runs_lasry.txt"), "w", encoding="utf-8").write(
     "\n".join(f"{r[0][0]}: " + "".join(base.get(s, ".") for _, s in r) for r in runs) + "\n")
 open(os.path.join(D, "judge_input_lasry.txt"), "w", encoding="utf-8").write(text(base).replace(" ", "\n") + "\n")

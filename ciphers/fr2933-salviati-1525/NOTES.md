@@ -3813,3 +3813,87 @@ Read so far: unmeasured as a reading; no cipher run is read by us; George Lasry'
 - [x] retry: DSN irregular at 96 restarts on the SALV-F56V split (SALV-DSN, 11 Oct): control-backed up to 10%, non-test at 14.6%
 Verdict: keep going: 2 internal gaps; cheapest next: apply Lasry's published key to our transcription with a wrong-key control, ~$4
 `python3 tools/gaps_check.py fr2933-salviati-1525` (14 Oct 2026, LQ-SALV): "OK keep-going fr2933-salviati-1525: keep going: 2 internal gap(s), 2 step(s) untried", exit 0.
+
+## SALV-LKEY: George Lasry's published key on our transcription (14 Oct 2026, 07:23-07:3x UTC by date -u; LANE DEFAULT-A1-0640-14, account 1)
+Worker SALV-LKEY (Opus), brief `.claude/briefs/runs/2026-10-14-acct1-default-0640-jobs.md` "Wave 3" + row SALV-LKEY; pre-registration
+`PREREG-SALV-LKEY.md` (pushed 3708eca9e before any mapping or score). Intake gate as recorded in the brief at 07:3x UTC: `open (line 1)`,
+exit 0. Disk only: no BnF, Gallica or github fetch (the snapshot `sources/cyphersolver/2026-10-14-lasry/salviati1525/` from LQ-SALV).
+Key source: `published` -- George Lasry's 78-symbol key sheet `lasry_p031_1.png` (credit George Lasry, published by D. Bourdeau,
+github.com/dbourdeau/cyphersolver dde5b0ea, CC BY 4.0). Our key.tsv: none exists; nothing overwritten.
+
+**Mapping (eye work, graded by agreement).** Two blind subagent passes (A, B), one call per atlas part each (4 calls), each matching
+glyphs/atlas_part1.png / atlas_part2.png exemplars to his sheet's cells, neither shown the other (`lkey/subagent_prompt.txt`,
+`lkey/pass{A,B}_part{1,2}.tsv`, 183 sign types each). Both named the same cell for 46 types (`lkey/build_key.py`); 20 disagreed; the
+rest both "none". Key `lkey/key_lasry.tsv`: 50 rows (46 + 4 combination marks whose parts agree, e.g. H^1|o = che): 33 graded H (his
+value unmarked, neither pass L), 17 M (his "?", a pass's L, or two cells). Four agreed rows name two cells (S7^# ne|no|nu, e^# de|do|du,
+]^ot and Z^ot le|lo): graded M and not read by the score. Fully agreed families: lam^1/~/7/5 = ta/te/ti/to; eps^1/~/7/5 = ca/ce/ci/co;
+g^1/~/5/7 = ra/re/ro/ri; a^1/~/5 = ma/me/mo; m^~/5/7 = pe/po/pi; letters y=a, eps=c, rz=e, [ and o.=i, tee and wd=l, S7=n, U=p, w=r,
+psi=s, f and +=t, nt=u; H^1 = che; phi and Z = et. Our mark labels map to his numerals as 1=a, ~=e (his "2"), 7=i, 5=o.
+Unmapped by disagreement or "none": bh, dl, S, S4, Lx, K, N, ch, p, v-marked, sq bare, # and most dot/o/+ variants (lkey/build_key.py
+prints the list on request; the pass files keep each pass's cell and confidence).
+
+**Decode.** `python3 tools/decode_key.py ciphers/fr2933-salviati-1525 --config ciphers/fr2933-salviati-1525/decode_lasry.json` writes
+`lkey/reading_lasry.txt` and `lkey/reading_lasry_tokens.tsv` from `lkey/ciphertext_lasry.tsv` (`lkey/build_ct.py`: the build_spec.py
+token stream, plain boxes as clear words, positions renumbered per line because split boxes carry 14.5-style positions, the original
+in `src_pos`). `--check` exit 0 ("reading up to date"). Token grades (rule 4), 2,939 sign tokens: **H 1,216, M 419, unread 1,304**;
+no C, no S. H here means the value comes from his published key for a sign both passes matched; the sign identity is still our
+transcription's, at 14.6% pass-to-pass disagreement (SALV-DIAG) and ~6.4-6.9% residual per sign. Cryptanalytic content: none of ours.
+
+**Score vs control (rule 3).** Statistic: cipher runs only, keyed tokens (non-ambiguous) concatenated, it16 4-gram mean log10/letter
+(`lkey/score_lasry.py`, judge_plaintext NgramModel). Control: 300 keys with the 46 non-ambiguous values permuted within class
+(letter / syllable / che-et), same tokens, same coverage, seed 1 (`lkey/score.json`).
+
+| leaf | tokens mapped (non-amb.) | amb. M | target | permuted p99 | permuted keys >= target |
+|---|---|---|---|---|---|
+| f54r | 188/382 | 19 | -1.312 | -1.323 | 2/300 |
+| f54v | 206/384 | 11 | -1.389 | -1.312 | 37/300 |
+| f55r | 207/408 | 13 | -1.449 | -1.317 | 83/300 |
+| f55v | 140/334 | 13 | -1.354 | -1.315 | 15/300 |
+| f56r | 196/364 | 17 | -1.429 | -1.372 | 27/300 |
+| f56v | 162/317 | 13 | -1.576 | -1.315 | 127/300 |
+| f57r | 272/457 | 18 | -1.295 | -1.316 | 1/300 |
+| f57v | 152/293 | 8 | -1.334 | -1.310 | 5/300 |
+| **all** | **1523/2939 (51.8%)** | 112 | **-1.386** | **-1.368** | **9/300** (control mean -1.536) |
+
+Secondary (pre-registered): in-lexicon it16 word hits of >= 4 letters, target 288 vs permuted p99 244 (0/300 at or above; mean 173).
+**Pre-registered gate: FAIL by a small margin** -- the whole-letter 4-gram score is above 97% of permuted keys but not above the p99;
+f54r and f57r clear their own p99 (eight leaves tested, so one leaf over p99 by chance is not unlikely; read them as leads, not passes).
+Official judge on the same letters (`lkey/judge_input_lasry.txt`):
+```
+FAIL length: got=2063, min=2500, max=4500
+FAIL language: score=-1.386, null_p99=-1.865, real_p05=-0.966, real_median=-0.831, mode=both, N=2063
+FAIL - fr2933-salviati-1525 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+(Far above the letter-shuffle null, far below real Italian; the length check fails because half the tokens are unread.)
+Does the decode beat its control despite the 14.6% disagreement? On the primary statistic, no (p ~ 0.03 against a p99 gate); on word
+hits, yes, decisively. Logged as: the published key, mapped through our atlas by two blind passes, reads above chance on word hits and
+just short of the pre-registered 4-gram gate at 52% coverage -- a non-test of his key at our transcription's error and coverage, not
+a negative against it (his transcription is not ours).
+
+**Best stretches** (longest unbroken keyed runs, `lkey/cipher_runs_lasry.txt`): f56r "...trlrran**cancelliero**etae..." and f57r
+"...el**canceliere**aa..."; f54v "e**monti** et che per", "ra **presto** et il", "**principe** eta"; f55r "**principe** el ma";
+f57r "et n'altra cori". Lasry's own contents line names Toledo and the defence of the state; "cancelliere" and "principe" fit, but
+this is a pattern read by eye, not a test.
+**Side by side, f54r L14** (the line after the plain words "Pure a me pare", his excerpt): his "che l'essere restituita la possessione
+basti"; ours "che le[|lo] u e re re s [Lx^] ci ta []^o] po u e u et ne". Agreement is syllable for syllable on che / l'e / e / re / s /
+ta / po / e / ne; it diverges where our `nt^` (both passes: his u/v cell) stands for his "ss" (l'e-ss-ere, po-ss-e-ss-io-ne), and
+eps^7 (ci) where he reads "ti/tu". His "ss" exemplar (z with a cross) and his u/v exemplar (n with a cross) are look-alikes; nt^ is
+95 tokens (3.2%), so a mapping slip there would move every leaf. Not changed here (no key edit, no re-grading): it is the next test.
+Hosts: none (disk only). Subagent calls: 4 (Opus) + this worker's reconciliation.
+
+## Remaining gaps (SALV-LKEY, 14 Oct 2026)
+Read so far: about 52% of cipher tokens carry a value from George Lasry's published key through our two-pass mapping (H 1,216, M 419 of 2,939); the decode beats its permuted-key control on word hits (288 vs p99 244) but misses the pre-registered 4-gram gate (9/300 permuted keys at or above); pages other than f.54r not named in his files
+- testing nt^ = ss (and eps^7 = ti/tu) at every occurrence against his reading, and the 20 pass-disagreement types, with `tools/decode_key.py --try` and the same permuted-key control - blocker: not-attempted; the nt^/ss look-alike surfaced in SALV-LKEY's f54r L14 side by side, 14 Oct; next: --try nt^=ss plus the disagreement list from lkey/pass*_part*.tsv, re-score with lkey/score_lasry.py, ~$2
+- the Phillipps MS 7293 letter book (BL RP 271/2/4, despatches 17 July 1525-15 May 1527), a possible clear register copy - blocker: needs-physical-access; the original was sold in 1968, holder not recorded, BL image service down since 2023 (Premise check (d))
+- the crib placement-likelihood scorer (SALV-CRIB) - blocker: not-attempted; held behind the published-key route above; kept only if that route fails its control after the --try step; next: placement-likelihood scorer, ~$5
+
+## Escalation (SALV-LKEY, 14 Oct 2026)
+- [x] siblings: Premise check (d), 3 Oct 2026: fr.3087 item 90 (3 Oct 1525, two cipher lines per Molini) and siblings.tsv; no decipherment
+- [x] clear-pages: all 8 leaves' plain boxes read (SALV-PLAIN1-3, SALV-57V); the Phillipps 7293 register copy is needs-physical-access
+- [ ] known-keys: George Lasry's published key applied (SALV-LKEY, 14 Oct): 52% mapped, word hits beat control, 4-gram gate missed by a small margin; next: --try nt^=ss and the 20 disagreement types against the same control, ~$2
+- [x] print: CSP Spain III/1 for Oct 1525 read (D2-PRINT4); Desjardins/Canestrini and Molini read earlier; context only
+- [ ] key-rebuild: code+mark anneal closed after three attempts; wordcode context option untested-by-this-tool; R8 syllabaries control-backed at 6.4%; isomorph crib count untested-by-this-tool; held behind the published key above
+- [x] image-check: passes A/B/C, SALV-SPLIT, SALV2-J1A/B and SALV-F56V; f.56r pass C optional (~$3, strips on disk)
+- [x] retry: DSN irregular at 96 restarts on the SALV-F56V split (SALV-DSN, 11 Oct): control-backed up to 10%, non-test at 14.6%
+Verdict: keep going: 2 internal gaps; cheapest next: --try nt^=ss and the pass-disagreement types under Lasry's key, with the permuted-key control, ~$2
+`python3 tools/gaps_check.py fr2933-salviati-1525` (14 Oct 2026, SALV-LKEY): "OK keep-going fr2933-salviati-1525: keep going: 2 internal gap(s), 2 step(s) untried", exit 0.

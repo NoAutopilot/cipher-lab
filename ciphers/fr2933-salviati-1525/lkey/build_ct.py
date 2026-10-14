@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""SALV-LKEY (14 Oct 2026): lay the per-leaf transcription out as a decode_key.py 'tsv' ciphertext (line, pos, sign, conf).
+"""SALV-LKEY (14 Oct 2026): lay the per-leaf transcription out as a decode_key.py 'tsv' ciphertext (line, pos renumbered 1..n per line in file order, sign, conf, src_pos).
 Same token stream as build_spec.py (ciphertext_<leaf>.tsv, the f57r L17 pos>=15 skip, '?' codes as hapax types '?leaf.line.pos'),
 with each sign token as 'code^marks' and each plain box as 'w:<word>' from plain_<leaf>.tsv (or 'w:_' when none).
 conf = the transcription's grade column (AB, M, ?). Writes lkey/ciphertext_lasry.tsv; --check exits 1 if it is stale."""
 import csv, os, sys
 D = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(D)
 LEAVES = ("f54r", "f54v", "f55r", "f55v", "f56r", "f56v", "f57r", "f57v")
-rows = ["line\tpos\tsign\tconf"]; n = 0
+rows = ["line\tpos\tsign\tconf\tsrc_pos"]; n = 0; seq = {}
 for lf in LEAVES:
     plain = {}
     p = os.path.join(T, f"plain_{lf}.tsv")
@@ -16,12 +16,12 @@ for lf in LEAVES:
     for x in csv.DictReader(open(os.path.join(T, f"ciphertext_{lf}.tsv"), encoding="utf-8"), delimiter="\t"):
         if lf == "f57r" and x["line"] == "17" and float(x["pos"]) >= 15:
             continue
-        line = f"{lf}_L{int(x['line']):02d}"
+        line = f"{lf}_L{int(x['line']):02d}"; seq[line] = seq.get(line, 0) + 1; q = seq[line]  # split boxes carry 14.5-style pos
         if x["code"] == "_":
-            rows.append(f"{line}\t{x['pos']}\tw:{plain.get((x['line'], x['pos']), '_')}\t{x['grade']}")
+            rows.append(f"{line}\t{q}\tw:{plain.get((x['line'], x['pos']), '_')}\t{x['grade']}\t{x['pos']}")
         else:
             code = f"?{lf}.{x['line']}.{x['pos']}" if x["code"] == "?" else x["code"]
-            rows.append(f"{line}\t{x['pos']}\t{code}^{x['marks']}\t{x['grade']}"); n += 1
+            rows.append(f"{line}\t{q}\t{code}^{x['marks']}\t{x['grade']}\t{x['pos']}"); n += 1
 out = os.path.join(D, "ciphertext_lasry.tsv"); txt = "\n".join(rows) + "\n"
 if "--check" in sys.argv:
     sys.exit(0 if open(out, encoding="utf-8").read() == txt else 1)
