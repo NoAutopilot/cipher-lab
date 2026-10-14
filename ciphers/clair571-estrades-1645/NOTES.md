@@ -466,3 +466,55 @@ Read so far: 0% of the target letter (no image of Clair 575 p.1209); the candida
 - [ ] image-check: request the Clair 575 p.1209 leaf (REQUEST.md, ASKS 49), then apply 9431
 - [n/a] retry: nothing has been tried on the letter itself, there is no failed step to retry
 Verdict: keep going: 2 internal gaps; cheapest next: register 9431 via a key_design.py loader option, ~$1
+
+## EST-REG (account 2, LANE DEFAULT-A2-0911-14, 14 Oct 2026, 09:22-09:3x UTC): 9431 registered; diff against the published Clair 421 Brasset key
+
+Prior work: `tools/prior_work.py clair571-estrades-1645 --item-spec 'shelfmark=BnF Clairambault 574;folio=p4-5;sender=Henri Brasset;decode=9431'
+--step-type key` exit 4, the one owed row (1-own) being this worker's own ROOM claim; Tomokiyo cache CLEAR, cached solver files CLEAR, DECODE
+N/A (no evidence either way), aaymeloglu repo and editions UNCHECKED-NET. Check 1 by hand: EST-9431 (13 Oct) left both steps not-attempted.
+Check 2: KEYHUNT-2026-10-07.tsv rows for Clair 417 and Clair 421 (both "dropped" for clair1067, not compared). Check 3: Tomokiyo's
+louisxiv0.htm (sources/cryptiana/web, snapshot 19 Sept 2026) prints the Clair 421 f.160 table (Lasry 2023) as two images, says Clair 417's
+"Memoire chiffre de Henri Brasset (octobre 1648)" may use the same cipher and is "not found online", and names "BnF Clair 574 (1645 or 1649)
+(not found online) ... a cipher used by Brasset (f.3-4)" -- the sheet DECODE 9431 carries as p.4-5, so Tomokiyo had seen it named, with no
+table printed. Check 4: no edition prints either key table beyond Tomokiyo's page.
+
+**(1) Registration.** `tools/key_design.py` gains a loader option (EXTRA_DESIGN_GLOBS `ciphers/*/keys_decode/*_key.tsv`; for a table with
+both `series` and `kind` columns, a kind=null row with no plaintext is a declared null and a sign description written twice keeps both
+rows), offline test `tools/tests/test_key_design_keys_decode.py` (10 PASS, including the two must-not-change cases). A wider version of the
+duplicate rule moved ten other KEY-DESIGN rows and was narrowed to this format before commit; with the narrow rule the rebuild adds exactly
+one row against a pre-change rebuild. KEY-DESIGN.tsv row: nomenclator, 381 codes, 358 valued, 23 letters, homophones 2.22 mean (max 3),
+syllable grid yes, 4 nulls, 15 empty, numerals 10-99. KEY-OFFICES.tsv row added (office and correspondents inferred from the nomenclature,
+said so in the row). The rebuild also carried other folders' pending drift (KEY-DESIGN.tsv was stale before this job).
+
+**(2) Diff against Clair 421 (1649).** Tomokiyo's two images (cryptiana.web.fc2.com/code/BrassetMazarin.png, BrassetMazarin2.png; 2
+requests, kept in scratch, not committed) typed to `keys_decode/clair421_published.tsv` (104 rows: 70 syllables/specials with series from
+Tomokiyo's matrix, 34 legible words from Lasry's table with the number only, all words M). Script `keys_decode/diff_421.py [--check]`,
+output `keys_decode/diff_421.txt`:
+- syllables: 61 shared values, **0** at the same code number (null, 421 codes permuted 2,000 times: mean 0.69, p95 2); no 421 series maps
+  onto one 9431 series (421 prime syllables fall in 9431 bar 10 / caret 7 / dot 3).
+- words: 9 shared values in the legible subset (auec, bon, espagne, faire, force, france, mais, monsieur, nostre), **0** at the same number.
+- layout: 9431 is one alphabetical run per series with each CV syllable block inside it (ba-bu 60-64=bar after "Auec", before "Bavieres";
+  adjacent pairs in order 0.735 of 294, value-shuffle null mean 0.503, p95 0.531); Clair 421 keeps its words in 12-40 and the CV syllables in
+  separate runs across prime/overbar/umlaut, numbers 1-9 and 42-91. Code ranges: 9431 10-99, 421 1-91.
+- `tools/key_design.py --compare` (weak shelf tool): V 0.224, D 0.224, S 0.149.
+Reading: the two Brasset keys share the period design family (French nomenclator, marked two-digit series, CV syllable blocks, a delete
+sign) and nothing at the code level; on these counts Clair 421 is not a reissue or re-marking of 9431, and 9431 is not the Clair 421 key.
+This says nothing about whether 9431 opens the Clair 575 letter. Clair 417 (Oct 1648) could not be compared: no table of it is on disk or
+on Tomokiyo's page.
+
+Requests: cryptiana.web.fc2.com 2. Report what was found and where it was not found; novelty is not classified here.
+
+## Remaining gaps (EST-REG, 14 Oct 2026)
+Read so far: 0% of the target letter (no image of Clair 575 p.1209); candidate key 9431 transcribed (358 of 381 rows H) and registered.
+- Test the 9431 key on the letter at Clair 575 p.1209 - blocker: waiting-on ASKS row 49 (BnF reproduction, REQUEST.md); the leaf is not digitised (NX-UNBLOCK, Gallica SRU 0 records)
+- Compare 9431 with the Clair 417 "Memoire chiffre" of Brasset (Oct 1648) - blocker: not-attempted; Tomokiyo calls it not found online (louisxiv0.htm, 19 Sept 2026 snapshot), no table on disk; next: read the BnF catalogue record for Clairambault 417 f.236 and quote its availability flag, then type its key or ciphertext if digitised, ~$1
+
+## Escalation (EST-REG, 14 Oct 2026)
+- [n/a] siblings: no sibling cipher leaf of this letter is digitised or on disk
+- [n/a] clear-pages: no clear copy of the letter is known; editions read (GF4-BATCH11) do not print it
+- [x] known-keys: 9431 transcribed and registered; colbert26 f.24 and the published Clair 421 key compared, no code-level match; Clair 417 pending its catalogue check
+- [x] print: Le Clerc II-III, APW II B 2 and d'Estrades 1743 read (GF4-BATCH11, LANE CX); none prints the letter
+- [n/a] key-rebuild: no ciphertext of the target is on disk to rebuild a key from
+- [ ] image-check: request the Clair 575 p.1209 leaf (REQUEST.md, ASKS 49), then apply 9431
+- [n/a] retry: nothing has been tried on the letter itself, there is no failed step to retry
+Verdict: keep going: 1 internal gaps; cheapest next: read the BnF catalogue record for Clairambault 417 f.236, ~$1

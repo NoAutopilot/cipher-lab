@@ -1,0 +1,108 @@
+# Clair 421 f.160 Brasset-Mazarin cipher (1649), as published by S. Tomokiyo (cryptiana.web.fc2.com/code/louisxiv0.htm,
+# images BrassetMazarin.png, BrassetMazarin2.png) from G. Lasry's reconstruction (2023). Typed by EST-REG 14 Oct 2026 for a
+# design diff against keys_decode/9431_key.tsv only; not a key of this project. Word codes: digits only, series marks not read (M).
+code	series	plaintext	kind	grade	source
+54	prime	ba	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+55	prime	be	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+56	prime	bi	syllable	M	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+57	prime	bo	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+58	prime	bu	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+59	prime	ca	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+60	prime	ce	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+61	prime	ci	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+62	prime	co	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+63	prime	cu	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+71	prime	na	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+72	prime	ne	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+77	prime	ni	syllable	M	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+78	prime	pa	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+79	prime	pe	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+80	prime	re	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+81	prime	ri	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+82	prime	ro	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+83	prime	ru	syllable	M	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+84	prime	sa	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+1	overbar	ta	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+3	overbar	ti	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+5	overbar	tu	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+8	overbar	vi	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+42	overbar	da	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+43	overbar	de	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+44	overbar	di	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+45	overbar	do	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+46	overbar	fe	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+47	overbar	fo	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+48	overbar	fu	syllable	M	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+49	overbar	ga	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+50	overbar	go	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+51	overbar	gu	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+52	overbar	ha	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+53	overbar	he	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+54	overbar	ho	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+55	overbar	li	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+56	overbar	lu	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+57	overbar	lo	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+58	overbar	mi	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+59	overbar	mo	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+80	overbar	no	syllable	M	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+81	overbar	nu	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+83	overbar	po	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+85	overbar	ra	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+86	overbar	se	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+87	overbar	si	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+88	overbar	so	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+89	overbar	su	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+91	overbar	DEL	special	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+2	umlaut	te	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+4	umlaut	to	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+6	umlaut	va	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+7	umlaut	ve	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+9	umlaut	vo	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+42	umlaut	de	syllable	M	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+50	umlaut	les	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+51	umlaut	luy	syllable	M	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+52	umlaut	se	syllable	M	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+56	umlaut	du	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+57	umlaut	fa	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+58	umlaut	fi	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+59	umlaut	ge	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+60	umlaut	gi	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+61	umlaut	gu	syllable	M	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+62	umlaut	la	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+63	umlaut	le	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+65	umlaut	ma	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+66	umlaut	me	syllable	H	BrassetMazarin.png (Tomokiyo matrix after Lasry)
+13	unread	arme	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+16	unread	au	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+15	unread	avec	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+22	unread	angleterre	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+24	unread	bon	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+27	unread	con	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+34	unread	dans	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+32	unread	dict	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+37	unread	est	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+17	unread	et	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+36	unread	faict	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+35	unread	faire	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+39	unread	force	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+33	unread	france	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+40	unread	guerre	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+28	unread	le prince	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+12	unread	monsieur	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+25	unread	mg les estatz	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+18	unread	nostre	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+23	unread	on	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+26	unread	orange	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+21	unread	ou	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+28	unread	par	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+36	unread	plus	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+30	unread	poinct	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+29	unread	port	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+32	unread	pouvoir	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+27	unread	pour	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+33	unread	prince	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+31	unread	pro	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+35	unread	puis	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+14	unread	rien	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+15	unread	mais	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here
+31	unread	espagne	word	M	BrassetMazarin2.png (Lasry 15/06/2023 table); series mark not read here

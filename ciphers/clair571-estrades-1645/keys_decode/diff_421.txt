@@ -1,0 +1,11 @@
+syllables: 9431 73, Clair 421 64, shared 61; same code number 0 []
+  null (421 syllable codes permuted, 2000 draws): mean 0.69, p95 2
+  421 prime syllables fall in 9431 series {'bar': 10, 'caret': 7, 'dot': 3}
+  421 overbar syllables fall in 9431 series {'bar': 3, 'caret': 9, 'dot': 12}
+  421 umlaut syllables fall in 9431 series {'bar': 2, 'caret': 6, 'dot': 9}
+words: 9431 217, Clair 421 (legible subset) 34, shared vocabulary 9 ['auec', 'bon', 'espagne', 'faire', 'force', 'france', 'mais', 'monsieur', 'nostre']
+  shared words at the same code number: 0 []
+alphabetical order within a series (9431): 0.735 of 294 adjacent pairs
+alphabetical order within a series (Clair 421): 0.939 of 66 adjacent pairs
+  null (9431 values shuffled, 200 draws): mean 0.503, p95 0.531
+code ranges (non-sign rows): {'9431': (20, 99), 'Clair 421': (1, 89)}

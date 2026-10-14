@@ -76,6 +76,11 @@ VALUE_NAMES = ['meaning', 'plaintext', 'plain', 'gloss', 'key_values', 'gloss_va
                'word_or_phrase']
 CODE_NAMES = ['code', 'code_or_sign', 'dc8_token', 'sign_code', 'sign', 'token', 'figure', 'group', 'item', 'sign_desc', 'row', 'system', 'id']
 
+# EST-REG (14 Oct 2026): DECODE key sheets transcribed under a keys_decode/ subfolder are named <record>_key.tsv,
+# which key_crossmatch's key*.tsv discovery does not see (ciphers/clair571-estrades-1645/keys_decode/9431_key.tsv).
+# Read here only (KEY-DESIGN, design_prior), not added to key_crossmatch's decode corpus.
+EXTRA_DESIGN_GLOBS = ['ciphers/*/keys_decode/*_key.tsv']
+
 COLUMNS = ['key_path', 'usable', 'reason', 'duplicate_of', 'office', 'correspondents', 'years', 'decade',
            'language', 'design_family', 'n_codes', 'valued', 'distinct_letters', 'homophones_mean',
            'homophones_max', 'nomenclator_words', 'nomenclator_names', 'short_values', 'syllable_grid',
@@ -102,6 +107,11 @@ def load_table(path):
         ci = next((low.index(n) for n in CODE_NAMES if n in low and low.index(n) != vi), None)
         if ci is None:
             ci = 0 if vi != 0 else 1
+        # a key-sheet table with 'series' and 'kind' columns (EST-REG, keys_decode/9431_key.tsv): a kind=null row
+        # with no plaintext is a declared null, and a code written twice (two signs given the same description)
+        # keeps both rows as code, code#2 ... Other tables keep the old last-row-wins reading (a wider rule moved
+        # ten other KEY-DESIGN rows, 14 Oct 2026, so it is scoped to this format).
+        ki = low.index('kind') if 'kind' in low and 'series' in low else None
         key = {}
         for l in lines[1:]:
             cells = l.split('\t')
@@ -110,6 +120,13 @@ def load_table(path):
             code, val = cells[ci].strip(), cells[vi].strip()
             if low[vi] == 'gloss_values':
                 val = re.sub(r'\(\d+\)', '', val.split(';')[0]).strip()
+            if ki is not None and not val and len(cells) > ki and cells[ki].strip().lower() == 'null':
+                val = 'null'
+            if code and ki is not None and code in key:
+                n = 2
+                while f'{code}#{n}' in key:
+                    n += 1
+                code = f'{code}#{n}'
             if code:
                 key[code] = val
         return (key, None) if key else (None, 'no rows parsed')
@@ -245,10 +262,21 @@ def not_a_key(rel):
     return None
 
 
+def extra_design_files(already, root=None):
+    """EXTRA_DESIGN_GLOBS matches under root (default the repository) not already found by key_crossmatch."""
+    root = Path(root) if root else ROOT
+    have = {Path(p).resolve() for p in already}
+    out = set()
+    for pat in EXTRA_DESIGN_GLOBS:
+        out |= {p for p in root.glob(pat) if p.resolve() not in have}
+    return sorted(out)
+
+
 def build(with_signs=False):
     """List of row dicts (and, with with_signs, each usable row's '_key' and '_signs' for design_prior)."""
     offices = read_offices()
     kept, dropped = kx.find_key_files()
+    kept = kept + extra_design_files([p for p in kept] + [p for p, _ in dropped])
     by_lang = kx.reading_files_by_lang()
     rows, key_metas = [], []
     seen_hash = {}
