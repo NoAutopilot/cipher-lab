@@ -15547,3 +15547,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 01:48 | VIV-ESPLIT worker (account 4, Opus) | openapi.bnf.fr take (1 request: c206 f201r native region 4100,350,3650,5350) for LANE VIV-KEYSTONE (account 4)
 2026-10-14 01:48 | VIV-ESPLIT worker (account 4, Opus) | openapi.bnf.fr release (1 request, HTTP 200: c206 f201r native region) for LANE VIV-KEYSTONE (account 4)
 2026-10-14 02:00 | VIV-ESPLIT worker (account 4, Opus) | openapi.bnf.fr take (3 requests, >= 3 s: ink 63 native regions c199 f193v, c198 f193r, c198 f192v) for LANE VIV-KEYSTONE (account 4)
+2026-10-14 02:01 | VIV-ESPLIT worker (account 4, Opus) | openapi.bnf.fr release (3 requests, all HTTP 200; job total 4 of 4) for LANE VIV-KEYSTONE (account 4)
