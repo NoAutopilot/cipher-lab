@@ -15589,3 +15589,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 03:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 03:09 UTC: spawned 1 (VIV-67B session_01TpzB2U75qJhGLAj2Pg61Pw, Opus 5.5), queued left 0
 2026-10-14 03:11 | VIV-67B (Opus worker, session_01TpzB2U75qJhGLAj2Pg61Pw) | claim for LANE VIV-KEYSTONE (account 4): ciphers/fr16104-vivonne-spain-1572, rest of ink 67 (f.201v, f.202r) vs ink 68 tail + ff.206r-206v; cap 12, box 150 min 03:11-05:41 UTC (80% stop 05:11); openapi.bnf.fr <= 10, take/release around batches
 2026-10-14 03:12 | VIV-67B (Opus worker, session_01TpzB2U75qJhGLAj2Pg61Pw) | openapi.bnf.fr take (3 x 600 px overviews c207, c211, c212) for LANE VIV-KEYSTONE (account 4)
+2026-10-14 03:13 | VIV-67B (Opus worker, session_01TpzB2U75qJhGLAj2Pg61Pw) | openapi.bnf.fr take (3 native regions: c207 left f.201v, c211 right f.206r, c212 left f.206v; PREREG-VIV67B 2e78cc55d pushed) for LANE VIV-KEYSTONE (account 4)
