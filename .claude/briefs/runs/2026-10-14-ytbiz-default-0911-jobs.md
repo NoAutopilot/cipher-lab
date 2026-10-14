@@ -68,3 +68,7 @@ Read SALV-LKEY and SALV-TRY sections first. Accepted values M unless --try's con
 (key_lasry.tsv only, with a dated note). Report the word-hit and 4-gram numbers before/after vs the same 300 permuted keys. This is the
 last pass at this instrument (rule 3's third-attempt clause applies to any further whole-key re-score): say so in the gap line. NEAR
 numbers in the done line.
+
+Wave 1 sessions (spawned 09:18-09:19 UTC): VER-C1161 session_016GoR3EqtEdxzfmHoRRt2c7; BAL22-SHAPE session_019SaTMkgRiMG8k7SSuRE41q;
+BAL168-SWEEP session_011uwbJK2BBjfS7U3PXzkdfe; EST-REG session_01MRywkZ3DWozgcPvosR6STm; GB-2 session_011LgUEf4G3FrFsLQrofwrYE;
+SALV-TRY20 session_019bAX6RALYPv2Z6t4PvSQio.
