@@ -78,3 +78,16 @@ segmentation (pen units on a joining hand), not as a classifier negative.
 ## Stop rule
 Stop at cap 12, at 80% of the 150-minute box (02:36 UTC), or when step 5 and the control are reported, whichever first.
 f.201r's truth is looked at once; nothing is re-fitted after it.
+
+## Addendum A (14 Oct 2026 00:5x UTC by date -u; written BEFORE step 5 -- no f.201r tile classified for the gate, f.201r truth unopened)
+- Round-1 classifier (feeds only the round-2 top-k): glyph_atlas defaults `--features hog --metric none --knn 5`, as the PREREG
+  left it unnamed; cross-leaf for the training leaves.
+- Tiles (tx/vivcls/seg.py): 1,655 / 1,835 / 1,139 pen-unit tiles on f.102r / f.103r / f.201r.
+- Training-leaf maps (tx/vivcls/train_report.json): round 1 covered scored 877 / 1,234 (f.102r), 661 / 1,068 (f.103r); round 2
+  622 / 1,234 = **0.504** and 496 / 1,068 = **0.464**; round-2 labels 538 (24 codes) and 423 (23 codes).
+- CV grid (fit one leaf, score the other; err1 = top-1 error on the other leaf's labelled tiles, mean of the two folds):
+  hog/none/5 0.369, hog/none/15 0.391, hog/lda/5 0.361, hog/lda/15 0.381, hzt/none/5 0.359, hzt/none/15 0.388,
+  **hog+zone+topo/lda/5 0.354 (chosen)**, hzt/lda/15 0.365; top-3 miss of the chosen setting 0.267; majority-class error 0.839 / 0.842.
+- Frozen for step 5 and the control: `--features hog+zone+topo --metric lda --knn 5`, fitted on labels_r2_both.tsv (961 tiles).
+- Tooling note: the pass-format output (hybrid, top-3) is written by tx/vivcls/run.py for this look; no glyph_atlas.py option was
+  needed for the fit (`classify --only-train-labels --features --metric --topk` already does it).
