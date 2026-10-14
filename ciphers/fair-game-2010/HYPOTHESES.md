@@ -60,3 +60,59 @@ tools/tests/test_masc_words_family.py); the "lexicon-fix" rows are the pre-regis
 | 14 Oct 2026 19:28 | transposition | N=68 K=22 restarts=12 corpus=pg1661_holmes.txt+pg2701_mobydick.txt widths=9-12,iters=15000,ctrl_designs=colK:9;colK:10;colK:11;colK:12,shuffle_target=10 | 1 | 0.985 (0.985-0.985) | -192.829 | FAIL language: score=-1.566, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.8) | FAIR-TRANS shuffle floor wide-width scroll68 (account 1) |
 | 14 Oct 2026 19:28 | transposition | N=68 K=22 restarts=12 corpus=pg1661_holmes.txt+pg2701_mobydick.txt widths=9-12,iters=15000,ctrl_designs=colK:9;colK:10;colK:11;colK:12,shuffle_target=7 | 1 | 0.985 (0.985-0.985) | -188.844 | FAIL language: score=-1.59, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.8) | FAIR-TRANS shuffle floor wide-width scroll68 (account 1) |
 | 14 Oct 2026 19:28 | transposition | N=68 K=22 restarts=12 corpus=pg1661_holmes.txt+pg2701_mobydick.txt widths=9-12,iters=15000,ctrl_designs=colK:9;colK:10;colK:11;colK:12,shuffle_target=9 | 1 | 0.985 (0.985-0.985) | -188.405 | FAIL language: score=-1.525, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.8) | FAIR-TRANS shuffle floor wide-width scroll68 (account 1) |
+| 14 Oct 2026 22:10 | transposition | N=68 K=22 restarts=4 corpus=worksofjohnkn01knox.txt.gz+worksofjohnkn02knox.txt.gz+adiurnalremarka00thomgoog.txt.gz+historielifeofki00colvuoft.txt.gz+registerofprivyc0002jjoh.txt.gz | 1 | 0.884 (0.000-0.985) | -199.847 | FAIL language: score=-1.808, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.8) | FAIR-LANG supplementary scroll68 (account 4) |
+| 14 Oct 2026 22:12 | transposition | N=68 K=22 restarts=4 corpus=lettresdecatheri01cathuoft_djvu.txt.gz | 1 | 0.954 (0.632-0.985) | -195.010 | FAIL language: score=-1.809, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.8) | FAIR-LANG supplementary scroll68 (account 4) |
+| 14 Oct 2026 22:13 | transposition | N=68 K=22 restarts=4 corpus=marn001bien01.txt.gz+marn001trou01.txt.gz+coor001zede01.txt.gz+spie001twes01.txt.gz+coor001boev01.txt.gz | 1 | 0.958 (0.618-0.985) | -198.233 | FAIL language: score=-2.114, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.8) | FAIR-LANG supplementary scroll68 (account 4) |
+| 14 Oct 2026 22:14 | transposition | N=68 K=22 restarts=4 corpus=worksofjohnkn01knox.txt.gz+worksofjohnkn02knox.txt.gz+adiurnalremarka00thomgoog.txt.gz+historielifeofki00colvuoft.txt.gz+registerofprivyc0002jjoh.txt.gz | 1 | 0.884 (0.000-0.985) | -199.705 | FAIL language: score=-1.771, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.8) | FAIR-LANG supplementary column68 (account 4) |
+| 14 Oct 2026 22:16 | transposition | N=68 K=22 restarts=4 corpus=lettresdecatheri01cathuoft_djvu.txt.gz | 1 | 0.954 (0.632-0.985) | -199.826 | FAIL language: score=-2.064, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.8) | FAIR-LANG supplementary column68 (account 4) |
+| 14 Oct 2026 22:17 | transposition | N=68 K=22 restarts=4 corpus=marn001bien01.txt.gz+marn001trou01.txt.gz+coor001zede01.txt.gz+spie001twes01.txt.gz+coor001boev01.txt.gz | 1 | 0.958 (0.618-0.985) | -190.808 | FAIL language: score=-1.91, null_p99=-1.837, real_p05=-0.92, real_median=-0.802, mode=both, N=67 | yes (gate 0.8) | FAIR-LANG supplementary column68 (account 4) |
+
+### FAIR-LANG (account 4, LANE DEFAULT-A4-2135-14, 14 Oct 2026, 22:07-22:1x UTC): per-language letter-count rank (L0) and transposition --langs (L1)
+
+L0: target letter-count log-likelihood per letter vs 2000 word-start N=67 windows of the language's own corpus (the control), and 200 uniform-random strings for scale. `lang/lang_rank.py --check`, `lang/lang_rank.json`. Pre-registered gate (lang/PREREG-FAIR-LANG.md, 6c4ac8376): pct_rank < 0.01 excludes a pure transposition of that language.
+
+| lang | target ll/letter | rank among own windows | own p01 | own median | uniform-random median | L0 verdict |
+|---|---|---|---|---|---|---|
+| sco16 | -3.1474 | 0.0045 | -3.1045 | -2.8876 | -3.8774 | below p01: excluded |
+| fr | -3.4834 | 0.0025 | -3.0801 | -2.8164 | -3.9963 | below p01: excluded |
+| nl16 | -3.2729 | 0.002 | -3.1278 | -2.8306 | -3.7877 | below p01: excluded |
+| fr1810 | -3.3889 | 0.002 | -3.0944 | -2.7822 | -3.9645 | below p01: excluded |
+| nl18 | -3.2937 | 0.0015 | -3.1262 | -2.8122 | -3.8342 | below p01: excluded |
+| pl18 | -3.301 | 0.0015 | -3.1645 | -2.962 | -3.8815 | below p01: excluded |
+| en | -3.1626 | 0.001 | -3.0843 | -2.8935 | -3.8869 | below p01: excluded |
+| en18 | -3.171 | 0.001 | -3.0658 | -2.8706 | -3.8699 | below p01: excluded |
+| fr16 | -3.4496 | 0.0005 | -3.0734 | -2.8098 | -3.9581 | below p01: excluded |
+| da19 | -3.4599 | 0.0005 | -3.1045 | -2.7893 | -4.1592 | below p01: excluded |
+| es17c7 | -3.4729 | 0.0005 | -3.033 | -2.7953 | -4.1039 | below p01: excluded |
+| de1600 | -3.2884 | 0.0005 | -3.107 | -2.8313 | -4.0167 | below p01: excluded |
+| de | -3.336 | 0.0 | -3.0588 | -2.8491 | -4.0674 | below p01: excluded |
+| it | -3.4805 | 0.0 | -3.0447 | -2.7858 | -4.1423 | below p01: excluded |
+| it16dip | -3.4319 | 0.0 | -3.006 | -2.7942 | -4.1545 | below p01: excluded |
+| it15 | -3.5074 | 0.0 | -3.0113 | -2.7814 | -4.18 | below p01: excluded |
+| it19 | -3.5708 | 0.0 | -2.9351 | -2.77 | -4.3247 | below p01: excluded |
+| it21news | -3.4485 | 0.0 | -3.0093 | -2.7601 | -4.1905 | below p01: excluded |
+| pt | -3.3246 | 0.0 | -3.102 | -2.7698 | -4.0286 | below p01: excluded |
+| pt18 | -3.3072 | 0.0 | -3.1024 | -2.7888 | -3.9789 | below p01: excluded |
+| fr18 | -3.3468 | 0.0 | -3.0794 | -2.8136 | -3.9426 | below p01: excluded |
+| fr1840 | -3.4182 | 0.0 | -3.022 | -2.7618 | -4.0507 | below p01: excluded |
+| fr17 | -3.5084 | 0.0 | -3.0156 | -2.7994 | -4.0417 | below p01: excluded |
+| es | -3.5161 | 0.0 | -2.9971 | -2.8 | -4.1117 | below p01: excluded |
+| es17c | -3.4792 | 0.0 | -3.025 | -2.793 | -4.1086 | below p01: excluded |
+| es18 | -3.4172 | 0.0 | -3.0223 | -2.8096 | -4.0121 | below p01: excluded |
+| es18p | -3.3827 | 0.0 | -3.0359 | -2.8237 | -3.9697 | below p01: excluded |
+| es17a | -3.4162 | 0.0 | -3.0297 | -2.8103 | -4.0408 | below p01: excluded |
+| es1600 | -3.5305 | 0.0 | -2.956 | -2.7919 | -4.1901 | below p01: excluded |
+| la | -3.3802 | 0.0 | -3.1198 | -2.8541 | -3.9731 | below p01: excluded |
+| la18 | -3.3802 | 0.0 | -3.1198 | -2.8541 | -3.9731 | below p01: excluded |
+| la17 | -3.3554 | 0.0 | -3.0905 | -2.8595 | -3.9725 | below p01: excluded |
+| de17 | -3.272 | 0.0 | -3.0903 | -2.8386 | -3.9853 | below p01: excluded |
+| sv17 | -3.2887 | 0.0 | -3.0669 | -2.8858 | -3.9138 | below p01: excluded |
+
+L1 (declared supplementary, outside the registered gate: none of the 34 qualified, so the three highest L0 ranks were run anyway for scale): `family_run.py --family transposition --langs sco16,fr,nl16`, seeds 28, restarts 4, gate 0.80; control in that language's corpus; target judged in its own language (margin = score - real_p05). The en-judge column of the six rows above is the spec's English judge; the own-language numbers are here.
+
+| lang | control mean (gate 0.80) | scroll68 own-language score / real_p05 / margin | column68 own-language score / real_p05 / margin | verdict |
+|---|---|---|---|---|
+| sco16 | 0.884 | -1.656 / -0.951 / -0.705 | -1.800 / -0.951 / -0.849 | FAIL both orders (control gated) |
+| fr | 0.954 | -1.724 / -0.978 / -0.746 | -1.680 / -0.978 / -0.702 | FAIL both orders (control gated) |
+| nl16 | 0.958 | -1.712 / -0.875 / -0.837 | -1.626 / -0.875 / -0.751 | FAIL both orders (control gated) |
+

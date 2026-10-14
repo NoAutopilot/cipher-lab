@@ -1,4 +1,4 @@
-# PREREG-FAIR-LANG (account 4, LANE DEFAULT-A4-2135-14, 14 Oct 2026, written 22:1x UTC before any score)
+# PREREG-FAIR-LANG (account 4, LANE DEFAULT-A4-2135-14, 14 Oct 2026, written 22:0x UTC before any score)
 
 Question: FAIR-TRANS's G0 put the 67 marks' letter counts below p01 of English 67-letter windows. Is there a
 language with a corpus in tools/data (every `LANG_CORPORA` key in tools/judge_plaintext.py, 34 keys) whose letter

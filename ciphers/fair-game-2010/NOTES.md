@@ -451,3 +451,56 @@ Read so far: 0 of 67 marked letters read (tests 1-2, R12D-FAIR, R12D-FAIR2, D2-F
 - [x] image-check: GF4-BATCH22 reconciled all 67 visible letters against the screenshots; FAIR-CRED transcribed every marked credit row (two blind passes)
 - [x] retry: pure transposition family (keyed columnar w2-12 both orientations, 462 route candidates) run 14 Oct 2026, control 0.889 (gate 0.80), target inside its shuffle floor both orders, letter counts at the 0.1% tail of English (FAIR-TRANS)
 Verdict: keep going: 1 internal gap; cheapest next: per-language letter-count rank and transposition --langs, ~$1
+
+## FAIR-LANG: per-language letter-count rank and transposition --langs (account 4, LANE DEFAULT-A4-2135-14, 14 Oct 2026, 22:07-22:1x UTC)
+
+Answers FAIR-TRANS's remaining gap ("non-English plaintext under the transposition and marker families"). Disk only, no
+requests, no subagents. Pre-registered before any score: `lang/PREREG-FAIR-LANG.md` (commit 6c4ac8376).
+
+L0, letter-count rank (`lang/lang_rank.py`, `--check` exit 0, `lang/lang_rank.json`): every language key in
+`tools/judge_plaintext.py` LANG_CORPORA, 34 in all -- en, en18, sco16, de, de17, de1600, fr, fr16, fr17, fr18, fr1810,
+fr1840, it, it15, it16dip, it19, it21news, es, es1600, es17a, es17c, es17c7, es18, es18p, pt, pt18, la, la17, la18,
+nl16, nl18, pl18, da19, sv17 (la and la18 give identical numbers: same text after folding, not looked into). Per key,
+the 67 marks' mean log unigram probability under that corpus, ranked among 2000 word-start 67-letter windows of the
+same corpus (the matched control: real text of that language at the same N), with 200 uniform-random strings for scale.
+
+| | result |
+|---|---|
+| highest ranks | sco16 0.0045, fr 0.0025, nl16 0.0020, fr1810 0.0020, nl18 / pl18 0.0015, en / en18 0.0010 |
+| all 34 keys | below their own p01 (22 of 34 at rank 0.000, below all 2000 windows); registered verdict: a pure transposition of any of these languages is excluded at p01 |
+| scale | the target (en -3.163) sits between real windows (en p01 -3.084, median -2.894) and uniform-random strings (en median -3.887; 200/200 below p01 in every language): far more language-like than random letters, less than any real window |
+
+L1, transposition --langs (declared supplementary: no language qualified under the registered gate, so the three
+highest L0 ranks were run for scale; `lang/run_langs_scroll68.log`, `lang/run_langs_column68.log`; FAIR-TRANS's standard
+search, 28 control designs per language from its own corpus, restarts 4, gate 0.80):
+
+| lang | control mean | scroll68 margin (own-language judge) | column68 margin |
+|---|---|---|---|
+| sco16 | 0.884 (gated) | -0.705 (score -1.656 vs real_p05 -0.951) | -0.849 |
+| fr | 0.954 (gated) | -0.746 (-1.724 vs -0.978) | -0.702 |
+| nl16 | 0.958 (gated) | -0.837 (-1.712 vs -0.875) | -0.751 |
+
+No decode clears its own language's real_p05 in either order. The `families/transposition-1-*-lang*.txt` decodes on
+disk are the column68 run's (the second run wrote the same file names). HYPOTHESES.md rows: 6 family_run rows (their
+judge column is the spec's English judge) plus the "FAIR-LANG" tables with both numbers per language.
+
+Verdict: control-backed negative for "the 67 marks are a pure transposition of plaintext in any of the 34 corpus
+languages": the letter counts, which no transposition changes, sit below p01 of real text in every one; the three
+nearest languages, run through the transposition family with gated controls, read nothing. Conditional on: (i) the
+corpora's era and register (most are 16th-19th-c. letters; the film is 2010 English, and en itself is two novels,
+EN-FOLDS); (ii) a unigram test is blind to anything after a substitution step, so it says nothing about a
+substitution or a transposition-plus-substitution in another language. Requests: none. Subagents: none.
+
+## Remaining gaps (FAIR-LANG, 14 Oct 2026)
+Read so far: 0 of 67 marked letters read (tests 1-2, R12D-FAIR, R12D-FAIR2, D2-FAIR, FAIR-CRED, FAIR-TRANS and FAIR-LANG are negatives or non-tests)
+- substitution (or transposition plus substitution) in a non-English language - blocker: not-attempted; every substitution run so far was English, and L0 cannot see through a substitution; next: a substitution-invariant profile check first (index of coincidence and sorted letter-frequency profile of the 67 marks ranked among each language's N=67 windows, as L0), and a masc --langs run only for languages the profile does not exclude, ~$1
+
+## Escalation (FAIR-LANG, 14 Oct 2026)
+- [n/a] siblings: a single film-credit cryptogram with no sibling texts
+- [x] clear-pages: the credits' clear line DEMOCRACY ONLY WORKS IF YOU DO YOUR PART tested as a crib, no isomorph placement in either order
+- [n/a] known-keys: no key material exists for a film-credit puzzle
+- [x] print: web and blog sweep of 3 Oct 2026 found no published decipherment
+- [retired] key-rebuild: injective substitution by tools/families/masc_inj.py word-pattern beam, CONTROL BELOW GATE 0.576 at N=67 (R12D-FAIR2); masc anneal and masc_words already run, a third substitution instrument needs new material
+- [x] image-check: GF4-BATCH22 reconciled all 67 visible letters against the screenshots; FAIR-CRED transcribed every marked credit row (two blind passes)
+- [x] retry: per-language letter-count rank over 34 corpora (all below p01) and transposition --langs on the three nearest (controls 0.884-0.958, no decode clears its own real_p05) run 14 Oct 2026 (FAIR-LANG)
+Verdict: keep going: 1 internal gap; cheapest next: substitution-invariant profile rank per language, then masc --langs on what survives, ~$1
