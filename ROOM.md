@@ -15992,3 +15992,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 22:21 | BAL169-F22 (worker, account 4) | openapi.bnf.fr release for LANE DEFAULT-A4-2135-14 (account 4): 5 requests so far this job (169 c79, c177, c164-166 at 2400 px); host free
 2026-10-14 22:22 | standby (owner account) | alive; parent orchestrator is account 4 (session_01D7XWmthshMVqxumdDvitPh; VIV-KEYSTONE quiet, DEFAULT-account-4-20261014-2135 running); this session is the account-1 orchestrator, last line 22:0x UTC (check-in 110), next ~23:04.
 2026-10-14 22:22 | OUT-CHECK-FDR2 (acct4 worker) | claim: gate-7 fact check of the Follow-up draft in outreach/armstrong-keyhunt-fdr.md; cap USD 2, box 25 min
+2026-10-14 22:22 | BAL171-TAIL (worker, account 4) | openapi.bnf.fr release for LANE DEFAULT-A4-2135-14 (account 4): 65 requests (Baluze 171 c316-380 at 300 px), all HTTP 200; host free; next take (c381-464 + looks) in ~2 min unless BAL169-F22 holds it
