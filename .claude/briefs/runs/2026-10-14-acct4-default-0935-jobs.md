@@ -53,7 +53,7 @@ tools/gallica_folio.py --iiif-host openapi). Look at ff.140-141 at 1000-1600 px;
 decipherment of ff.132-138), say which lines match the cipher leaves' known clear words; do not run a key test in this job. Output: NOTES
 "## MONL-140", clear-pages rung, Verdict.
 
-## Wave 2 (from 09:5x UTC 14 Oct; staleness of the hot list's `parallel` actions checked item by item -- 19 of 21 already done)
+## Wave 2 (from 09:4x UTC 14 Oct; staleness of the hot list's `parallel` actions checked item by item -- 19 of 21 already done)
 
 ### OBRED-6017B (Opus, cap 3.5, box 75 min, NA <= 100 at >= 1.5 s): oldenbarnevelt-brederode-1605 inv. 6017 stride-1 fill from scan 73
 Verdict (OBRED-11852A, 13 Oct): "the 6017 stride-1 fill from scan 73 (342 scans left, ~$3 per ~60-90 scans with controls)". Follow
