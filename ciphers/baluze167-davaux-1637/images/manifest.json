@@ -1806,5 +1806,52 @@
    "kept": "not kept (session scratch); regen from url",
    "job": "BAL168-TAIL2"
   }
+ ],
+ "bal_c275wl_fetches": [
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f275/full/2400,/0/default.jpg",
+   "fetched": "2026-10-14T21:48Z",
+   "http": 200,
+   "bytes": 1153824,
+   "sha1": "136b45c3a6ea244121b4e367ef73768ec285e9c4",
+   "kept": "untracked scratch (images/scratch/c275wl/), not committed",
+   "job": "BAL-C275WL"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f274/full/2400,/0/default.jpg",
+   "fetched": "2026-10-14T21:48Z",
+   "http": 200,
+   "bytes": 1107552,
+   "sha1": "84117ac39d2ba5863262de78e40b886833589cac",
+   "kept": "untracked scratch (images/scratch/c275wl/), not committed",
+   "job": "BAL-C275WL"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f276/full/2400,/0/default.jpg",
+   "fetched": "2026-10-14T21:48Z",
+   "http": 200,
+   "bytes": 1151278,
+   "sha1": "f9b2bb7b99d52aaccee6855f2ab7da033d7333db",
+   "kept": "untracked scratch (images/scratch/c275wl/), not committed",
+   "job": "BAL-C275WL"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f268/full/2400,/0/default.jpg",
+   "fetched": "2026-10-14T21:48Z",
+   "http": 200,
+   "bytes": 1087299,
+   "sha1": "7d5b9b10aa250db54189ee599467e3d327f3ff54",
+   "kept": "untracked scratch (images/scratch/c275wl/), not committed",
+   "job": "BAL-C275WL"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f283/full/2400,/0/default.jpg",
+   "fetched": "2026-10-14T21:48Z",
+   "http": 200,
+   "bytes": 1195205,
+   "sha1": "743b704a1444b897568a48fc0205484a8e4a8cea",
+   "kept": "untracked scratch (images/scratch/c275wl/), not committed",
+   "job": "BAL-C275WL"
+  }
  ]
 }

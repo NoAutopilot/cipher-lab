@@ -1,0 +1,18 @@
+sign	n	values	value	grade
+14	1	{'cu': 1}	cu	M
+16	1	{'de': 1}	de	M
+30	1	{'s': 1}	s	M
+55	2	{'pa': 2}	pa	M
+6	8	{'r': 8}	r	S
+66	3	{'re': 3}	re	S
+77	2	{'ti': 2}	ti	M
+L:h	4	{'n': 4}	n	S
+L:longs	6	{'s': 6}	s	S
+L:w	6	{'e': 6}	e	S
+s:c	2	{'l': 2}	l	M
+s:dloop	5	{'i': 4, 'u': 1}	i	S
+s:i	4	{'p': 4}	p	S
+s:pbar	2	{'a': 2}	a	M
+s:u4	6	{'t': 4, 'm': 2}	t	M
+real 50/53; shuffle mean 10.76, p95 15, max 21; shuffles >= real: 0/200
+leave-one-run-out real 47/50; shuffled-run held-out mean 9.82, p95 15, max 23; >= real: 0/200

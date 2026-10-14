@@ -1,3 +1,13 @@
 folio	line	pos	value	grade	reason
 b167c275	L01	3	[7]	M	BAL167-C275: key.tsv 7 (unmarked) = Espagne, but the same opening 7 5 i 65 in the next run sits under the gloss "pratiquer" on this leaf; the place-name value is contradicted in context, value left open
 b167c275	L02	13	[7]	M	BAL167-C275: as L01 pos 3; the gloss above this run reads "pratiquer"
+b167c275	L01	5	p	S	BAL-C275WL: glossed runs of the same Memoire c274-276 (c275wl/glossed_pairs.tsv, count_shuffle.out): s:i = p in 4 of 4 glossed occurrences (pratiquer, plein, remplacer, employer)
+b167c275	L01	10	s	M	BAL-C275WL: glossed runs of the same Memoire c274-276 (c275wl/glossed_pairs.tsv, count_shuffle.out): unmarked 30 = s once (assurer); 1 occurrence; key 30' ha is the marked form
+b167c275	L01	13	i	S	BAL-C275WL: glossed runs of the same Memoire c274-276 (c275wl/glossed_pairs.tsv, count_shuffle.out): s:dloop = i in 4 of 5 glossed occurrences (certain, plein, soit, suiects; u once in assurer)
+b167c275	L01	14	re	S	BAL-C275WL: glossed runs of the same Memoire c274-276 (c275wl/glossed_pairs.tsv, count_shuffle.out): unmarked 66 = re in 3 of 3 (particulieres, autres, remplacer); key 66' re
+b167c275	L01	19	[t/m]	M	BAL-C275WL: glossed runs of the same Memoire c274-276 (c275wl/glossed_pairs.tsv, count_shuffle.out): s:u4 class = t in 4 (fust, et, soit, autres) and m in 2 (remplacer, employer) at 2400 px; crossed and plain forms not separated
+b167c275	L02	4	cu	M	BAL-C275WL: glossed runs of the same Memoire c274-276 (c275wl/glossed_pairs.tsv, count_shuffle.out): unmarked 14 = cu once (particulieres); key 14' cu; token read 14? by the passes
+b167c275	L02	5	i	S	BAL-C275WL: glossed runs of the same Memoire c274-276 (c275wl/glossed_pairs.tsv, count_shuffle.out): as L01 pos 13
+b167c275	L02	15	p	S	BAL-C275WL: glossed runs of the same Memoire c274-276 (c275wl/glossed_pairs.tsv, count_shuffle.out): as L01 pos 5
+b167c275	L02	17	ti	M	BAL-C275WL: glossed runs of the same Memoire c274-276 (c275wl/glossed_pairs.tsv, count_shuffle.out): unmarked 77 = ti in 2 of 2 (pratiquer, particulieres); key 77' ti
+b167c275	L02	20	r	M	BAL-C275WL: glossed runs of the same Memoire c274-276 (c275wl/glossed_pairs.tsv, count_shuffle.out): unmarked 6 = r in 8 of 8; this token was read 6'? (mark uncertain) and the gloss pratiquer ends in r

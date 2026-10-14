@@ -1,0 +1,75 @@
+# BAL-C275WL (14 Oct 2026): glossed runs of the Baluze 167 f.127 Memoire (c274-276, f.134r-135v by c=2f+6), read by this worker's eye
+# from openapi.bnf.fr full/2400, images (untracked; regen URLs in ../images/manifest.json bal_c275wl_fetches). One row per cipher sign
+# whose gloss unit I could place; signs I could not place are omitted. sign: N' acute, N unmarked; shapes: s:i i-stroke, s:dloop
+# d with loop, s:u4 u4-form (crossed or not, not separable at 2400 px), L:w w-form, L:h h-form, L:longs long-s, s:pbar p with bar,
+# s:c c-like stroke. gloss = the period interlinear word(s); unit = the letter/syllable I align to this sign.
+run	canvas	gloss	pos	sign	unit
+R1	275	pratiquer	1	s:i	p
+R1	275	pratiquer	2	65'	ra
+R1	275	pratiquer	3	77	ti
+R1	275	pratiquer	4	s:x	-
+R1	275	pratiquer	5	61'	que
+R1	275	pratiquer	6	6	r
+R2	275	certain de s'en	1	11'	ce
+R2	275	certain de s'en	2	6	r
+R2	275	certain de s'en	3	75'	ta
+R2	275	certain de s'en	4	s:dloop	i
+R2	275	certain de s'en	5	L:h	n
+R2	275	certain de s'en	6	16'	de
+R2	275	certain de s'en	7	71'	se
+R2	275	certain de s'en	8	L:h	n
+R3	275	assurer	1	s:pbar	a
+R3	275	assurer	2	L:longs	s
+R3	275	assurer	3	30	s
+R3	275	assurer	4	s:dloop	u
+R3	275	assurer	5	6	r
+R3	275	assurer	6	L:w	e
+R3	275	assurer	7	6	r
+R13	275	la ratification fust	1	24'	fu
+R13	275	la ratification fust	2	L:longs	s
+R13	275	la ratification fust	3	s:u4	t
+R4	274	avec plein	1	86'	avec
+R4	274	avec plein	2	s:i	p
+R4	274	avec plein	3	41'	le
+R4	274	avec plein	4	s:dloop	i
+R4	274	avec plein	5	L:h	n
+R5	274	et	1	L:w	e
+R5	274	et	2	s:u4	t
+R6	274	soit decid[e]	1	73'	so
+R6	274	soit decid[e]	2	s:dloop	i
+R6	274	soit decid[e]	3	s:u4	t
+R6	274	soit decid[e]	4	16'	de
+R6	274	soit decid[e]	5	12'	ci
+R11	276	espargnera	1	L:w	e
+R11	276	espargnera	2	L:longs	s
+R11	276	espargnera	3	55	pa
+R11	276	espargnera	4	6	r
+R11	276	espargnera	5	L:h	n
+R7	276	particulieres	1	55	pa
+R7	276	particulieres	2	6	r
+R7	276	particulieres	3	77	ti
+R7	276	particulieres	4	14	cu
+R7	276	particulieres	5	42	li
+R7	276	particulieres	6	L:w	e
+R7	276	particulieres	7	66	re
+R7	276	particulieres	8	L:longs	s
+R12	276	d'autres	1	s:u4	t
+R12	276	d'autres	2	66	re
+R12	276	d'autres	3	L:longs	s
+R8	276	remplacer	1	66	re
+R8	276	remplacer	2	s:u4	m
+R8	276	remplacer	3	s:i	p
+R8	276	remplacer	4	s:c	l
+R8	276	remplacer	5	s:pbar	a
+R8	276	remplacer	6	11'	ce
+R8	276	remplacer	7	6	r
+R9	276	d'employer	1	16	de
+R9	276	d'employer	2	s:u4	m
+R9	276	d'employer	3	s:i	p
+R9	276	d'employer	4	s:c	l
+R9	276	d'employer	5	L:w	e
+R9	276	d'employer	6	6	r
+R10	276	des suiects	1	16'	de
+R10	276	des suiects	2	L:longs	s
+R10	276	des suiects	3	s:dloop	i
+R10	276	des suiects	4	L:w	e

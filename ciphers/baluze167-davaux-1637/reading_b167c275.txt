@@ -2,6 +2,6 @@
 # with Tomokiyo's D'Avaux table (published key, credited). Letter signs M; s:<shape> unassigned. Regenerate:
 # python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check
 # The two unmarked 7 tokens (key: Espagne) are overridden to an open M value: the gloss 'pratiquer' sits over the same opening in run 2.
-# Grades: H 5, M 12, U 17
-b167c275 L01	EST DIFFICILE A [7] [5] [s:i] ra [9'] do n [30] et li [s:dloop] [66] e [s:E] s [5] [s:u4x]
-b167c275 L02	[s:dot] s e [s:x] [14] [s:dloop] ve ment ce QUI EST DIFFICILE A [7] [5] [s:i] ra [77] [s:x] que bo
+# Grades: H 5, M 16, S 5, U 8
+b167c275 L01	EST DIFFICILE A [7] [5] p ra [9'] do n s et li i re e [s:E] s [5] [t/m]
+b167c275 L02	[s:dot] s e [s:x] cu i ve ment ce QUI EST DIFFICILE A [7] [5] p ra ti [s:x] que r
