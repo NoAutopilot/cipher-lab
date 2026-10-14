@@ -1,0 +1,36 @@
+{
+ "tag": "permuted",
+ "as_measured": {
+  "n": 368,
+  "passA_err": 0.1359,
+  "cls_err": 0.8478,
+  "fixed": 7,
+  "broken": 269,
+  "pos_sign_p": 0.0,
+  "lines_improved": 0,
+  "lines_worsened": 24,
+  "lines_p": 0.0,
+  "passA_wrong": 50,
+  "truth_in_top3_of_passA_wrong": 0.24,
+  "cls_top3_hit": 0.375
+ },
+ "flagged_excluded": {
+  "n": 193,
+  "passA_err": 0.0104,
+  "cls_err": 0.8238,
+  "fixed": 1,
+  "broken": 158,
+  "pos_sign_p": 0.0,
+  "lines_improved": 0,
+  "lines_worsened": 22,
+  "lines_p": 0.0,
+  "passA_wrong": 2,
+  "truth_in_top3_of_passA_wrong": 0.5,
+  "cls_top3_hit": 0.4197
+ },
+ "chance_err": 0.9077,
+ "scored_f201r": 894,
+ "covered_scored": 368,
+ "coverage_vs_passA_map": 0.4116,
+ "coverage_vs_ref_skeleton": 0.3926
+}

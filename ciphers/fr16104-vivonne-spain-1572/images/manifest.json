@@ -11200,5 +11200,16 @@
    "python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py ciphers/fr16104-vivonne-spain-1572/images/p67/src_image_v3_ark_12148_btv1b9009663p_f210_4300_350_3600_5500.jpg --out ciphers/fr16104-vivonne-spain-1572/images/p67/dec --prefix c210_f205r --strips 8",
    "python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py ciphers/fr16104-vivonne-spain-1572/images/p67/src_image_v3_ark_12148_btv1b9009663p_f211_150_100_3750_5750.jpg --out ciphers/fr16104-vivonne-spain-1572/images/p67/dec --prefix c211_f205v --strips 7"
   ]
+ },
+ "vivcls": {
+  "job": "VIV-CLS, 14 Oct 2026, LANE VIV-KEYSTONE (account 4)",
+  "committed_images": "none (crops untracked under images/p67/fetch and images/p67/cut; tiles under tx/vivcls/atlas/)",
+  "requests": "openapi.bnf.fr 1 (HTTP 200)",
+  "regenerate": [
+   "python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 206 --iiif-host openapi --region 4100,350,3650,5350 --out ciphers/fr16104-vivonne-spain-1572/images/p67/fetch --prefix c206_f201r --follow-slope 400 --distance 70 --max-width 1600 --overlap 150",
+   "python3 tools/iiif_lines.py --image ciphers/fr16104-vivonne-spain-1572/images/p67/fetch/src_image_v3_ark_12148_btv1b9009663p_f206_4100_350_3650_5350.jpg --region 680,1500,2970,3700 --out ciphers/fr16104-vivonne-spain-1572/images/p67/cut --prefix c206_f201r --follow-slope 400 --distance 70 --max-width 1560 --overlap 150 --debug",
+   "python3 ciphers/fr16104-vivonne-spain-1572/tx/vivcls/seg.py"
+  ],
+  "source_url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f206/4100,350,3650,5350/max/0/default.jpg (as tools/iiif_lines.py --iiif-host openapi builds it)"
  }
 }

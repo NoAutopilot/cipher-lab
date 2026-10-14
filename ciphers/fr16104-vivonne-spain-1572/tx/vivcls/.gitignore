@@ -1,0 +1,5 @@
+atlas/
+train/cv_*.tsv
+train/topk_r1_*.tsv
+*/classify_all.tsv
+*/classify_all.tsv.metric.json

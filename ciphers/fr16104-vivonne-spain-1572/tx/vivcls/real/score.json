@@ -1,0 +1,36 @@
+{
+ "tag": "real",
+ "as_measured": {
+  "n": 415,
+  "passA_err": 0.1542,
+  "cls_err": 0.3133,
+  "fixed": 16,
+  "broken": 82,
+  "pos_sign_p": 0.0,
+  "lines_improved": 1,
+  "lines_worsened": 20,
+  "lines_p": 0.0,
+  "passA_wrong": 64,
+  "truth_in_top3_of_passA_wrong": 0.3594,
+  "cls_top3_hit": 0.7831
+ },
+ "flagged_excluded": {
+  "n": 217,
+  "passA_err": 0.023,
+  "cls_err": 0.2396,
+  "fixed": 4,
+  "broken": 51,
+  "pos_sign_p": 0.0,
+  "lines_improved": 1,
+  "lines_worsened": 16,
+  "lines_p": 0.0003,
+  "passA_wrong": 5,
+  "truth_in_top3_of_passA_wrong": 0.8,
+  "cls_top3_hit": 0.8571
+ },
+ "chance_err": 0.9083,
+ "scored_f201r": 894,
+ "covered_scored": 415,
+ "coverage_vs_passA_map": 0.4642,
+ "coverage_vs_ref_skeleton": 0.4474
+}

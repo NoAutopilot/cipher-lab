@@ -1,0 +1,22 @@
+{
+ "tag": "real",
+ "features": "hog+zone+topo",
+ "metric": "lda",
+ "knn": 5,
+ "permute": null,
+ "train_labels": 961,
+ "passA_tokens": 1275,
+ "covered_tokens": 579,
+ "changed_vs_passA": 238,
+ "ops": {
+  "2:1": 164,
+  "1:2": 540,
+  "1:1": 579,
+  "unsure": 72,
+  "skiptok": 2
+ },
+ "sha256": {
+  "f201r_cls_hybrid.tsv": "c6bc49c6a90d0ac7b439b9f65248ab6f3d3b5dc24789b43355115e51012c0f88",
+  "f201r_cls_top3.tsv": "defae997971c0a08dcc4fd77c15c352f8205d717cf8b233f8b06664da3252230"
+ }
+}

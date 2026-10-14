@@ -1,0 +1,142 @@
+{
+ "r1_f102r": {
+  "scored": 1234,
+  "covered_scored": 877,
+  "labels": 765
+ },
+ "r1_f103r": {
+  "scored": 1068,
+  "covered_scored": 661,
+  "labels": 564
+ },
+ "r2_f102r": {
+  "scored": 1234,
+  "covered_scored": 622,
+  "coverage": 0.504,
+  "labels": 538,
+  "ops": {
+   "1:2": 684,
+   "1:1": 922,
+   "unsure": 152,
+   "2:1": 180
+  },
+  "codes": 24
+ },
+ "r2_f103r": {
+  "scored": 1068,
+  "covered_scored": 496,
+  "coverage": 0.464,
+  "labels": 423,
+  "ops": {
+   "1:1": 908,
+   "2:1": 110,
+   "1:2": 926,
+   "unsure": 142,
+   "skiptok": 2
+  },
+  "codes": 23
+ },
+ "majority_f102r_to_f103r": 0.8392,
+ "majority_f103r_to_f102r": 0.842,
+ "grid": [
+  {
+   "features": "hog",
+   "metric": "none",
+   "knn": 5,
+   "err1_f102r": 0.3829,
+   "err1_f103r": 0.3546,
+   "err1_mean": 0.3688,
+   "err3_mean": 0.275,
+   "n_f102r": 538,
+   "n_f103r": 423
+  },
+  {
+   "features": "hog",
+   "metric": "none",
+   "knn": 15,
+   "err1_f102r": 0.4089,
+   "err1_f103r": 0.3735,
+   "err1_mean": 0.3912,
+   "err3_mean": 0.2715,
+   "n_f102r": 538,
+   "n_f103r": 423
+  },
+  {
+   "features": "hog",
+   "metric": "lda",
+   "knn": 5,
+   "err1_f102r": 0.3885,
+   "err1_f103r": 0.3333,
+   "err1_mean": 0.3609,
+   "err3_mean": 0.2653,
+   "n_f102r": 538,
+   "n_f103r": 423
+  },
+  {
+   "features": "hog",
+   "metric": "lda",
+   "knn": 15,
+   "err1_f102r": 0.3866,
+   "err1_f103r": 0.3759,
+   "err1_mean": 0.3813,
+   "err3_mean": 0.2616,
+   "n_f102r": 538,
+   "n_f103r": 423
+  },
+  {
+   "features": "hog+zone+topo",
+   "metric": "none",
+   "knn": 5,
+   "err1_f102r": 0.3755,
+   "err1_f103r": 0.3428,
+   "err1_mean": 0.3591,
+   "err3_mean": 0.2654,
+   "n_f102r": 538,
+   "n_f103r": 423
+  },
+  {
+   "features": "hog+zone+topo",
+   "metric": "none",
+   "knn": 15,
+   "err1_f102r": 0.4071,
+   "err1_f103r": 0.3688,
+   "err1_mean": 0.3879,
+   "err3_mean": 0.262,
+   "n_f102r": 538,
+   "n_f103r": 423
+  },
+  {
+   "features": "hog+zone+topo",
+   "metric": "lda",
+   "knn": 5,
+   "err1_f102r": 0.3866,
+   "err1_f103r": 0.3215,
+   "err1_mean": 0.3541,
+   "err3_mean": 0.2671,
+   "n_f102r": 538,
+   "n_f103r": 423
+  },
+  {
+   "features": "hog+zone+topo",
+   "metric": "lda",
+   "knn": 15,
+   "err1_f102r": 0.3848,
+   "err1_f103r": 0.3452,
+   "err1_mean": 0.365,
+   "err3_mean": 0.2565,
+   "n_f102r": 538,
+   "n_f103r": 423
+  }
+ ],
+ "chosen": {
+  "features": "hog+zone+topo",
+  "metric": "lda",
+  "knn": 5,
+  "err1_f102r": 0.3866,
+  "err1_f103r": 0.3215,
+  "err1_mean": 0.3541,
+  "err3_mean": 0.2671,
+  "n_f102r": 538,
+  "n_f103r": 423
+ }
+}

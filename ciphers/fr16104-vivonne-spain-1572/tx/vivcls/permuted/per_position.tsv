@@ -1,0 +1,369 @@
+line	tpos	apos	truth	flag	passA	k1	k2	k3	a_ok	c_ok	c3_ok
+f201r_L02	5	5	7|m	clerk-split	m	s	#	p	1	0	0
+f201r_L02	7	7	tz	align-conflict,clerk-split	#	o	d	6	0	0	0
+f201r_L02	9	9	tz		tz	d	p	m	1	0	0
+f201r_L02	10	10	6|f|j		6	#	o	p	1	0	0
+f201r_L02	18	18	@|to	align-conflict	x	d	tz	j	0	0	0
+f201r_L02	19	19	Zu|a|oo	align-conflict	z	:	m	s	0	0	0
+f201r_L02	20	20	7|m		m	x	p	g	1	0	0
+f201r_L02	22	22	d		d	#	m	j	1	0	0
+f201r_L02	24	24	o		o	d	:	o	1	0	1
+f201r_L02	29	29	o		o	s	#	tz	1	0	0
+f201r_L02	31	31	#|R|n		#	#	j	tz	1	1	1
+f201r_L02	34	34	tz	clerk-split	tz	d	m	s	1	0	0
+f201r_L02	35	35	6|f|j	clerk-split	6	:	tz	m	1	0	0
+f201r_L02	37	37	x	align-conflict	d	x	m	o	0	1	1
+f201r_L02	38	38	d		d	o	d	x	1	0	1
+f201r_L02	40	40	#|R|n		n	:	d	m	1	0	0
+f201r_L02	46	45	6|f|j		6	g	#	x	1	0	0
+f201r_L02	54	52	#|R|n	clerk-split	#	m	:	d	1	0	0
+f201r_L02	55	53	Zu|a|oo	clerk-split	a	m	:	R	1	0	0
+f201r_L02	57	55	x	align-conflict,clerk-split	m	o	tz	s	0	0	0
+f201r_L03	3	2	P|s|z		z	z	tz	4	1	1	1
+f201r_L03	6	5	P|s|z		P	d	o	:	1	0	0
+f201r_L03	8	7	Zu|a|o		o	o	3	d	1	1	1
+f201r_L03	9	8	o		o	d	o	p	1	0	1
+f201r_L03	11	10	Zu|a|oo		a	x	#	d	1	0	0
+f201r_L03	12	11	P|s|z		s	x	m	g	1	0	0
+f201r_L03	19	18	Zu|a|o		o	o	g	m	1	1	1
+f201r_L03	20	19	o		o	d	p	:	1	0	0
+f201r_L03	21	20	Zu|a|oo	align-conflict	x	#	a	tz	0	0	1
+f201r_L03	22	21	7|m		m	m	p	:	1	1	1
+f201r_L03	25	24	x		x	x	tz	m	1	1	1
+f201r_L03	28	26	Zu|a|o		o	m	a	o	1	0	1
+f201r_L03	29	27	o		o	z	p	x	1	0	0
+f201r_L03	44	41	P|s|z	align-conflict,clerk-split	m	m	tz	#	0	0	0
+f201r_L03	47	44	3|h|k		3	tz	d	o	1	0	0
+f201r_L03	50	47	6|f|j		6	m	d	p	1	0	0
+f201r_L03	51	48	P|s|z		s	x	tz	m	1	0	0
+f201r_L03	52	49	p		p	m	#	o	1	0	0
+f201r_L03	60	57	p		p	s	:	m	1	0	0
+f201r_L04	7	6	#|R|n		#	d	tz	m	1	0	0
+f201r_L04	14	12	7|m		m	#	tz	m	1	0	1
+f201r_L04	15	13	x		x	x	g	d	1	1	1
+f201r_L04	16	14	7|m		m	tz	#	m	1	0	1
+f201r_L04	17	15	x		x	d	g	tz	1	0	0
+f201r_L04	18	16	#|R|n		n	#	d	s	1	1	1
+f201r_L04	21	19	#|R|n		#	#	x	o	1	1	1
+f201r_L04	22	20	3|h|k		3	3	4	s	1	1	1
+f201r_L04	23	21	tz		tz	d	tz	j	1	0	1
+f201r_L04	25	23	d		d	s	d	:	1	0	1
+f201r_L04	26	24	tz		tz	#	z	s	1	0	0
+f201r_L04	27	25	#|R|n		n	#	o	p	1	1	1
+f201r_L04	31	29	p		p	x	R	#	1	0	0
+f201r_L04	38	35	6|f|j		6	m	o	#	1	0	0
+f201r_L04	39	36	Zu|a|oo		a	x	:	d	1	0	0
+f201r_L04	41	38	6|f|j		6	L	#	s	1	0	0
+f201r_L04	42	39	P|s|z		S	m	p	g	0	0	0
+f201r_L04	47	44	7|m		m	s	tz	m	1	0	1
+f201r_L04	49	46	x	clerk-split	x	s	tz	m	1	0	0
+f201r_L05	6	4	tz	align-conflict,clerk-split	:	o	:	x	0	0	0
+f201r_L05	10	8	Zu|a|oo	clerk-split	a	o	s	#	1	0	0
+f201r_L05	24	22	d	align-conflict,clerk-split	g	a	R	m	0	0	0
+f201r_L05	32	30	d	clerk-split	d	o	d	p	1	0	1
+f201r_L05	37	34	P|s|z	clerk-split	s	:	tz	d	1	0	0
+f201r_L05	38	35	#|R|n	clerk-split	#	#	m	6	1	1	1
+f201r_L05	39	36	tz	clerk-split	tz	tz	L	d	1	1	1
+f201r_L05	40	37	d	clerk-split	d	a	o	4	1	0	0
+f201r_L05	41	38	p	clerk-split	p	h	#	p	1	0	1
+f201r_L05	44	41	o		o	@	#	d	1	0	0
+f201r_L06	2	2	p		p	m	o	tz	1	0	0
+f201r_L06	6	6	o		o	m	o	a	1	0	1
+f201r_L06	9	9	Zu|a|o		o	p	#	j	1	0	0
+f201r_L06	10	10	o		o	o	6	tz	1	1	1
+f201r_L06	11	11	tz		tz	z	#	d	1	0	0
+f201r_L06	14	14	#|R|n		#	#	x	:	1	1	1
+f201r_L06	15	15	d		d	d	s	o	1	1	1
+f201r_L06	16	16	tz		tz	m	g	x	1	0	0
+f201r_L06	17	17	#|R|n		#	s	#	tz	1	0	1
+f201r_L06	25	23	P|s|z	clerk-split	P	m	s	g	1	0	1
+f201r_L06	26	24	tz	clerk-split	tz	#	tz	:	1	0	1
+f201r_L06	29	27	L|g	clerk-split	g	x	p	d	1	0	0
+f201r_L06	30	28	d	clerk-split	d	o	s	tz	1	0	0
+f201r_L06	31	29	tz	clerk-split	tz	tz	d	x	1	1	1
+f201r_L06	32	30	#|R|n	clerk-split	n	m	s	:	1	0	0
+f201r_L06	33	31	#|R|n	clerk-split	#	#	j	m	1	1	1
+f201r_L06	36	34	o	clerk-split	o	x	7	o	1	0	1
+f201r_L06	37	35	#|R|n	clerk-split	n	:	tz	a	1	0	0
+f201r_L06	38	36	7|m	clerk-split	m	m	j	tz	1	1	1
+f201r_L06	39	37	x	clerk-split	x	x	d	o	1	1	1
+f201r_L06	46	43	x		x	g	p	#	1	0	0
+f201r_L06	49	46	tz		tz	6	d	o	1	0	0
+f201r_L06	50	47	x		x	m	s	@	1	0	0
+f201r_L07	2	2	7|m		m	tz	m	p	1	0	1
+f201r_L07	3	3	p	clerk-split	p	j	m	x	1	0	0
+f201r_L07	5	5	tz	align-conflict,clerk-split	s	:	d	#	0	0	0
+f201r_L07	10	9	tz	clerk-split	tz	m	a	tz	1	0	1
+f201r_L07	11	10	6|f|j	clerk-split	6	m	o	p	1	0	0
+f201r_L07	13	12	#|R|n	clerk-split	#	s	tz	#	1	0	1
+f201r_L07	14	13	L|g	clerk-split	g	:	z	m	1	0	0
+f201r_L07	15	14	d	clerk-split	d	tz	m	j	1	0	0
+f201r_L07	16	15	Zu|a|o	clerk-split	o	m	p	#	1	0	0
+f201r_L07	17	16	o	clerk-split	o	#	s	m	1	0	0
+f201r_L07	18	17	Zu|a|oo	align-conflict,clerk-split	x	tz	:	o	0	0	0
+f201r_L07	19	18	7|m	clerk-split	m	d	#	o	1	0	0
+f201r_L07	20	19	p	clerk-split	p	p	:	d	1	1	1
+f201r_L07	24	23	6|f|j		6	tz	x	g	1	0	0
+f201r_L07	27	26	L|g		g	:	d	#	1	0	0
+f201r_L07	31	30	6|f|j		j	m	x	d	1	0	0
+f201r_L07	34	32	x	align-conflict	x	s	o	m	1	0	0
+f201r_L07	36	34	7|m		m	#	o	x	1	0	0
+f201r_L07	39	37	x	clerk-split	x	6	d	m	1	0	0
+f201r_L07	42	40	x	clerk-split	x	d	4	:	1	0	0
+f201r_L07	49	47	o		o	#	s	j	1	0	0
+f201r_L07	50	48	7|m		7	7	a	#	1	1	1
+f201r_L07	51	49	#|R|n		#	g	o	#	1	0	1
+f201r_L07	53	51	P|s|z		S	z	d	p	0	1	1
+f201r_L07	54	52	6|f|j		6	m	o	d	1	0	0
+f201r_L07	55	53	Zu|a|oo	clerk-split	a	j	m	#	1	0	0
+f201r_L07	58	56	6|f|j	clerk-split	j	d	m	4	1	0	0
+f201r_L08	3	1	p	clerk-split	p	x	tz	d	1	0	0
+f201r_L08	4	2	#|R|n	clerk-split	#	x	a	4	1	0	0
+f201r_L08	5	3	tz	clerk-split	tz	s	o	d	1	0	0
+f201r_L08	6	4	7|m	clerk-split	m	tz	d	m	1	0	1
+f201r_L08	7	5	L|g	clerk-split	g	R	o	p	1	0	0
+f201r_L08	15	12	3|h|k	align-conflict,clerk-split	:	x	d	tz	0	0	0
+f201r_L08	16	13	P|s|z	align-conflict,clerk-split	m	s	m	R	0	1	1
+f201r_L08	19	16	7|m	align-conflict,clerk-split	tz	s	3	#	0	0	0
+f201r_L08	22	19	L|g	align-conflict,clerk-split	p	s	m	3	0	0	0
+f201r_L08	31	28	#|R|n	align-conflict	g	#	g	x	0	1	1
+f201r_L08	39	36	d	align-conflict	tz	4	#	6	0	0	0
+f201r_L08	40	37	x	align-conflict	g	m	#	6	0	0	0
+f201r_L08	42	39	3|h|k	align-conflict,clerk-split	S	s	#	p	0	0	0
+f201r_L08	50	47	P|s|z	clerk-split	z	s	d	m	1	1	1
+f201r_L08	51	48	Zu|a|oo	clerk-split	a	tz	d	o	1	0	0
+f201r_L08	53	49	3|h|k	align-conflict,clerk-split	:	m	o	g	0	0	0
+f201r_L08	56	52	Zu|a|oo	clerk-split	a	g	o	4	1	0	0
+f201r_L09	3	3	7|m	clerk-split	m	#	d	o	1	0	0
+f201r_L09	8	8	x	align-conflict,clerk-split	tz	#	:	x	0	0	1
+f201r_L09	9	9	7|m	clerk-split	m	d	#	g	1	0	0
+f201r_L09	11	11	#|R|n	clerk-split	#	#	o	6	1	1	1
+f201r_L09	14	14	3|h|k	clerk-split	h	m	x	o	1	0	0
+f201r_L10	11	10	P|s|z	clerk-split	s	m	d	tz	1	0	0
+f201r_L10	13	11	p	clerk-split	p	R	m	d	1	0	0
+f201r_L10	20	18	x	align-conflict,clerk-split	m	:	m	R	0	0	0
+f201r_L10	25	23	P|s|z	clerk-split	s	m	x	R	1	0	0
+f201r_L10	26	24	tz	clerk-split	tz	#	x	z	1	0	0
+f201r_L10	42	39	P|s|z		s	m	tz	d	1	0	0
+f201r_L10	58	54	d		d	p	o	:	1	0	0
+f201r_L11	4	3	6|f|j		j	tz	m	#	1	0	0
+f201r_L11	5	4	Zu|a|o		o	m	x	tz	1	0	0
+f201r_L11	9	8	Zu|a|oo	align-conflict	m	tz	o	#	0	0	0
+f201r_L11	13	12	d		d	x	:	d	1	0	1
+f201r_L11	22	20	x	clerk-split	x	#	tz	x	1	0	1
+f201r_L11	25	23	Zu|a|o	clerk-split	o	z	d	o	1	0	1
+f201r_L11	30	28	tz	clerk-split	tz	m	x	tz	1	0	1
+f201r_L11	35	33	Zu|a|o		o	tz	#	d	1	0	0
+f201r_L11	38	36	7|m		m	d	#	o	1	0	0
+f201r_L11	39	37	Zu|a|o		o	#	s	m	1	0	0
+f201r_L11	45	43	Zu|a|o		o	d	o	m	1	0	1
+f201r_L11	46	44	o		o	#	x	3	1	0	0
+f201r_L11	56	54	7|m	clerk-split	m	a	d	m	1	0	1
+f201r_L11	57	55	x	clerk-split	x	o	s	d	1	0	0
+f201r_L11	58	56	6|f|j		6	#	m	z	1	0	0
+f201r_L12	2	2	7|m		m	d	o	g	1	0	0
+f201r_L12	7	7	4	clerk-split	4	m	s	o	1	0	0
+f201r_L12	10	10	P|s|z	clerk-split	s	m	tz	x	1	0	0
+f201r_L12	13	13	#|R|n		#	o	6	:	1	0	0
+f201r_L12	14	14	6|f|j	clerk-split	6	d	3	4	1	0	0
+f201r_L12	16	16	Zu|a|o	clerk-split	o	#	o	a	1	0	1
+f201r_L12	17	17	o	clerk-split	o	p	m	a	1	0	0
+f201r_L12	21	21	P|s|z	clerk-split	s	6	h	s	1	0	1
+f201r_L12	22	22	Zu|a|o	clerk-split	o	tz	g	m	1	0	0
+f201r_L12	23	23	o	clerk-split	o	o	d	g	1	1	1
+f201r_L12	24	24	p	clerk-split	p	x	#	d	1	0	0
+f201r_L12	25	25	7|m	align-conflict,clerk-split	R	#	m	:	0	0	1
+f201r_L12	31	31	7|m	clerk-split	7	g	s	d	1	0	0
+f201r_L12	32	32	#|R|n	clerk-split	#	#	o	p	1	1	1
+f201r_L12	43	42	o|x	align-conflict,clerk-split	o	m	@	o	1	0	1
+f201r_L12	44	43	o	align-conflict,clerk-split	o	tz	d	L	1	0	0
+f201r_L13	7	7	tz	clerk-split	tz	o	tz	p	1	0	1
+f201r_L13	9	9	d	clerk-split	d	m	tz	g	1	0	0
+f201r_L13	10	10	p	clerk-split	p	s	tz	m	1	0	0
+f201r_L13	13	12	d	clerk-split	d	m	:	d	1	0	1
+f201r_L13	20	19	p		p	m	d	tz	1	0	0
+f201r_L13	25	23	4	align-conflict	R	d	tz	g	0	0	0
+f201r_L13	38	36	7|m	clerk-split	m	g	m	o	1	0	1
+f201r_L13	39	37	p	clerk-split	p	d	z	#	1	0	0
+f201r_L13	40	38	#|R|n	clerk-split	n	d	3	x	1	0	0
+f201r_L13	41	39	7|m		m	o	d	#	1	0	0
+f201r_L13	42	40	p		p	p	m	d	1	1	1
+f201r_L13	43	41	3|h|k	align-conflict	z	x	z	#	0	0	0
+f201r_L13	53	51	7|m		7	m	o	#	1	1	1
+f201r_L13	56	54	L|g		L	x	o	tz	1	0	0
+f201r_L14	3	3	o|p	align-conflict,clerk-split	o	6	p	m	1	0	1
+f201r_L14	4	4	o	align-conflict,clerk-split	o	#	o	:	1	0	1
+f201r_L14	10	10	tz		tz	d	tz	o	1	0	1
+f201r_L14	11	11	7|m		m	#	m	3	1	0	1
+f201r_L14	12	12	Zu|a|o		o	o	s	m	1	1	1
+f201r_L14	15	15	7|m	clerk-split	m	tz	3	p	1	0	0
+f201r_L14	20	20	L|g	clerk-split	g	s	o	p	1	0	0
+f201r_L14	26	26	3|h|k	clerk-split	k	p	4	d	1	0	0
+f201r_L14	27	27	Zu|a|o	clerk-split	o	#	m	tz	1	0	0
+f201r_L14	28	28	o	clerk-split	o	o	s	tz	1	1	1
+f201r_L14	32	31	7|m	align-conflict	R	s	#	m	0	0	1
+f201r_L14	35	34	L|g		g	m	R	z	1	0	0
+f201r_L14	41	40	7|m		m	m	tz	g	1	1	1
+f201r_L14	45	44	x		x	m	R	j	1	0	0
+f201r_L14	46	45	#|R|n		n	d	tz	3	1	0	0
+f201r_L14	47	46	6|f|j		6	s	:	tz	1	0	0
+f201r_L14	48	47	d		d	d	p	z	1	1	1
+f201r_L14	49	48	p		p	tz	:	p	1	0	1
+f201r_L14	51	50	Zu|a|oo	clerk-split	a	m	p	o	1	0	0
+f201r_L15	11	10	7|m		m	m	p	o	1	1	1
+f201r_L15	12	11	P|s|z		s	p	R	d	1	0	0
+f201r_L15	16	15	#|R|n		#	m	d	#	1	0	1
+f201r_L15	24	23	tz		tz	s	m	o	1	0	0
+f201r_L15	25	24	x	align-conflict	d	x	o	g	0	1	1
+f201r_L15	26	25	tz		tz	o	s	x	1	0	0
+f201r_L15	27	26	p		p	s	m	6	1	0	0
+f201r_L15	28	27	7|m		7	:	tz	#	1	0	0
+f201r_L15	35	33	tz	clerk-split	tz	m	x	tz	1	0	1
+f201r_L15	37	35	Zu|a|oo	align-conflict	p	p	3	d	0	0	0
+f201r_L15	38	36	#|R|n		#	o	tz	3	1	0	0
+f201r_L15	51	47	P|s|z	align-conflict	d	m	R	s	0	0	1
+f201r_L16	2	2	#|R|n	clerk-split	#	tz	o	d	1	0	0
+f201r_L16	8	8	@|to	align-conflict,clerk-split	s	x	tz	:	0	0	0
+f201r_L16	9	9	Zu|a|o	clerk-split	o	o	tz	s	1	1	1
+f201r_L16	18	18	p	clerk-split	p	d	m	z	1	0	0
+f201r_L16	23	23	#|R|n	clerk-split	R	#	tz	m	1	1	1
+f201r_L16	30	29	7|m	clerk-split	m	tz	o	a	1	0	0
+f201r_L16	32	31	o		o	m	p	o	1	0	1
+f201r_L16	35	34	x		x	:	#	6	1	0	0
+f201r_L16	36	35	#|R|n		n	tz	m	a	1	0	0
+f201r_L16	37	36	3|h|k	align-conflict	z	p	s	z	0	0	0
+f201r_L16	38	37	7|m		m	#	m	p	1	0	1
+f201r_L16	46	45	Zu|a|o	clerk-split	o	d	o	m	1	0	1
+f201r_L16	49	48	P|s|z	clerk-split	s	d	m	j	1	0	0
+f201r_L16	50	49	3|h|k	clerk-split	k	#	x	g	1	0	0
+f201r_L16	53	52	P|s|z		s	d	g	:	1	0	0
+f201r_L16	55	54	o	clerk-split	o	d	p	o	1	0	1
+f201r_L17	1	1	L|g	clerk-split	L	:	d	x	1	0	0
+f201r_L17	2	2	d	clerk-split	d	a	d	tz	1	0	1
+f201r_L17	3	3	6|f|j	align-conflict,clerk-split	z	h	:	o	0	0	0
+f201r_L17	4	4	x		x	m	L	x	1	0	1
+f201r_L17	5	5	d		d	d	#	g	1	1	1
+f201r_L17	6	6	p		p	o	m	d	1	0	0
+f201r_L17	9	9	tz		tz	o	4	tz	1	0	1
+f201r_L17	11	11	#|R|n		#	tz	x	3	1	0	0
+f201r_L17	13	13	7|m		m	p	m	3	1	0	1
+f201r_L17	21	21	3|h|k		k	#	o	x	1	0	0
+f201r_L17	38	38	o		o	o	tz	#	1	1	1
+f201r_L17	47	47	o	align-conflict,clerk-split	o	d	m	z	1	0	0
+f201r_L18	10	10	3|h|k		3	o	d	j	1	0	0
+f201r_L18	12	12	o		o	m	o	a	1	0	1
+f201r_L18	13	13	#|R|n		R	x	o	:	1	0	0
+f201r_L18	14	14	d		d	p	d	m	1	0	1
+f201r_L18	15	15	Zu|a|o		o	m	o	j	1	0	1
+f201r_L18	16	16	o		o	o	j	#	1	1	1
+f201r_L18	26	26	7|m		m	o	#	:	1	0	0
+f201r_L18	29	29	d		d	tz	s	o	1	0	0
+f201r_L18	30	30	p		p	m	p	7	1	0	1
+f201r_L18	47	46	7|m		m	d	x	g	1	0	0
+f201r_L18	49	48	tz		tz	d	s	tz	1	0	1
+f201r_L19	2	2	d		d	x	d	tz	1	0	1
+f201r_L19	3	3	o|p	align-conflict	o	m	tz	#	1	0	0
+f201r_L19	12	11	p		p	o	:	x	1	0	0
+f201r_L19	13	12	#|R|n		#	d	x	#	1	0	1
+f201r_L19	14	13	7|m		m	g	d	x	1	0	0
+f201r_L19	15	14	p		p	p	m	s	1	1	1
+f201r_L19	16	15	3|h|k		h	p	a	4	1	0	0
+f201r_L19	21	20	7|m		m	#	m	tz	1	0	1
+f201r_L19	22	21	Zu|a|o		o	x	4	g	1	0	0
+f201r_L19	23	22	o		o	x	:	o	1	0	1
+f201r_L19	24	23	6|f|j		j	d	6	tz	1	0	1
+f201r_L19	25	24	7|m	align-conflict	R	x	g	tz	0	0	0
+f201r_L19	30	29	6|f|j		6	tz	p	x	1	0	0
+f201r_L19	36	35	o		o	x	z	a	1	0	0
+f201r_L19	38	37	P|s|z		s	s	tz	3	1	1	1
+f201r_L19	39	38	#|R|n		R	j	#	tz	1	0	1
+f201r_L19	40	39	tz		tz	tz	p	d	1	1	1
+f201r_L19	41	40	d		d	o	d	#	1	0	1
+f201r_L19	42	41	p		p	tz	s	3	1	0	0
+f201r_L19	43	42	3|h|k		h	m	tz	x	1	0	0
+f201r_L19	46	45	4	align-conflict	tz	x	d	m	0	0	0
+f201r_L19	47	46	L|g		g	g	s	4	1	1	1
+f201r_L19	49	48	p		p	m	@	x	1	0	0
+f201r_L19	50	49	3|h|k		h	m	:	d	1	0	0
+f201r_L19	51	50	P|s|z		s	m	tz	a	1	0	0
+f201r_L19	54	53	P|s|z		s	s	R	m	1	1	1
+f201r_L19	55	54	L|g		g	:	o	x	1	0	0
+f201r_L20	11	11	7|m		7	p	o	d	1	0	0
+f201r_L20	14	13	x		x	4	g	j	1	0	0
+f201r_L20	15	14	P|s|z		s	4	d	g	1	0	0
+f201r_L20	16	15	3|h|k	clerk-split	3	a	d	o	1	0	0
+f201r_L20	17	16	7|m	clerk-split	m	tz	d	z	1	0	0
+f201r_L20	18	17	6|f|j	align-conflict,clerk-split	x	4	m	p	0	0	0
+f201r_L20	21	20	tz	clerk-split	tz	#	x	p	1	0	0
+f201r_L20	25	24	P|s|z	clerk-split	s	4	d	m	1	0	0
+f201r_L20	26	25	#|R|n	clerk-split	#	d	tz	p	1	0	0
+f201r_L20	43	41	:		:	o	m	#	1	0	0
+f201r_L20	46	44	Zu|a|oo		a	d	j	#	1	0	0
+f201r_L21	1	1	Zu|a|oo		a	m	o	k	1	0	0
+f201r_L21	11	11	x		x	s	tz	3	1	0	0
+f201r_L21	12	12	d		d	o	d	x	1	0	1
+f201r_L21	13	13	o|p	align-conflict	o	tz	m	#	1	0	0
+f201r_L21	15	15	p		p	6	s	h	1	0	0
+f201r_L21	19	19	#|R|n	clerk-split	n	tz	p	z	1	0	0
+f201r_L21	30	29	Zu|a|o		o	m	o	a	1	0	1
+f201r_L21	31	30	o		o	d	o	z	1	0	1
+f201r_L21	32	31	6|f|j		6	#	o	3	1	0	0
+f201r_L21	37	36	d		d	o	#	tz	1	0	0
+f201r_L21	38	37	p		p	p	s	tz	1	1	1
+f201r_L21	41	40	o		o	3	d	:	1	0	0
+f201r_L21	47	45	7|m	clerk-split	m	g	tz	z	1	0	0
+f201r_L21	48	46	x	clerk-split	x	d	g	x	1	0	1
+f201r_L21	52	49	o		o	#	4	g	1	0	0
+f201r_L21	53	50	d	clerk-split	d	d	g	o	1	1	1
+f201r_L21	55	52	x	align-conflict,clerk-split	s	x	m	tz	0	1	1
+f201r_L21	56	53	#|R|n	clerk-split	#	g	d	o	1	0	0
+f201r_L21	57	54	tz	clerk-split	tz	#	:	g	1	0	0
+f201r_L22	9	8	7|m		m	d	o	m	1	0	1
+f201r_L22	10	9	Zu|a|o		o	#	tz	o	1	0	1
+f201r_L22	13	12	L|g		L	m	p	d	1	0	0
+f201r_L22	19	18	d		d	o	#	x	1	0	0
+f201r_L22	29	27	#|R|n		R	d	o	tz	1	0	0
+f201r_L22	31	29	P|s|z		s	6	h	#	1	0	0
+f201r_L22	36	34	d		d	x	z	m	1	0	0
+f201r_L22	37	35	Zu|a|o		o	tz	x	#	1	0	0
+f201r_L22	39	37	#|R|n		R	tz	#	s	1	0	1
+f201r_L22	41	39	p	clerk-split	p	s	a	m	1	0	0
+f201r_L22	43	40	3|h|k	align-conflict,clerk-split	:	j	m	x	0	0	0
+f201r_L22	48	45	p	align-conflict,clerk-split	4	d	j	m	0	0	0
+f201r_L22	51	48	#|R|n		n	tz	L	d	1	0	0
+f201r_L22	54	51	Zu|a|oo		a	d	:	a	1	0	1
+f201r_L22	55	52	6|f|j		6	3	o	m	1	0	0
+f201r_L23	3	3	Zu|a|o	clerk-split	o	:	tz	m	1	0	0
+f201r_L23	8	8	Zu|a|o	clerk-split	o	3	p	#	1	0	0
+f201r_L23	9	9	o	clerk-split	o	tz	o	p	1	0	1
+f201r_L23	16	16	7|m		m	tz	m	x	1	0	1
+f201r_L23	17	17	Zu|a|o		o	o	p	#	1	1	1
+f201r_L23	25	24	p	align-conflict	m	g	tz	R	0	0	0
+f201r_L23	26	25	x		x	6	tz	d	1	0	0
+f201r_L23	27	26	P|s|z	clerk-split	P	#	p	o	1	0	0
+f201r_L23	30	29	tz	clerk-split	tz	d	z	tz	1	0	1
+f201r_L23	37	35	P|s|z		z	m	6	o	1	0	0
+f201r_L23	40	38	o		o	#	m	o	1	0	1
+f201r_L23	57	54	3|h|k	align-conflict	c	o	p	g	0	0	0
+f201r_L23	58	55	L|g		L	d	tz	o	1	0	0
+f201r_L23	59	56	6|f|j		6	d	o	#	1	0	0
+f201r_L24	1	1	x	align-conflict	3	#	L	o	0	0	0
+f201r_L24	3	3	tz		tz	tz	R	:	1	1	1
+f201r_L24	4	4	7|m	align-conflict	p	#	s	p	0	0	0
+f201r_L24	7	7	P|s|z		s	#	3	d	1	0	0
+f201r_L24	8	8	o|p	align-conflict	o	tz	h	d	1	0	0
+f201r_L24	12	12	7|m		m	tz	m	x	1	0	1
+f201r_L24	21	20	Zu|a|o	clerk-split	o	o	g	p	1	1	1
+f201r_L24	25	24	6|f|j|o	align-conflict	o	:	tz	#	1	0	0
+f201r_L24	26	25	o	align-conflict	o	tz	L	k	1	0	0
+f201r_L24	39	36	o	align-conflict	o	m	d	o	1	0	1
+f201r_L25	4	4	p		p	x	s	tz	1	0	0
+f201r_L25	5	5	#|R|n		R	m	#	p	1	0	1
+f201r_L25	10	10	Zu|a|o	clerk-split	o	x	o	z	1	0	1
+f201r_L25	11	11	o	clerk-split	o	#	d	o	1	0	1
+f201r_L25	17	16	Zu|a|oo	align-conflict	:	x	s	m	0	0	0
+f201r_L25	18	17	7|m		m	m	#	x	1	1	1
+f201r_L25	19	18	x	align-conflict	k	k	L	o	0	0	0
+f201r_L25	38	35	7|m	align-conflict,clerk-split	L	m	to	a	0	1	1
+f201r_L25	39	36	p	align-conflict,clerk-split	d	:	x	s	0	0	0
+f201r_L25	40	37	#|R|n	align-conflict,clerk-split	d	p	o	d	0	0	0

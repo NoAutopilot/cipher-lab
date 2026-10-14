@@ -1,0 +1,8 @@
+vivonne1573-f201r-dev [dev] as measured: err_true(0.75-indel align) 0.475 (425/894) | standard SER (unit-cost Levenshtein) 0.474 (424/894): S 388 D 36 I 0 | wrong 365 deleted 45 inserted 15 | excluded 445 | lines missing 0 (0 signs counted deleted)
+    reader abstentions 0 | accepted-token error 365/849 = 0.430 | coverage 849/894 = 0.950
+paired f201r_cls_hybrid.tsv vs passA.tsv on vivonne1573-f201r-dev [as measured]: 25 lines; lines improved 0, worsened 24, tied 1; line sign test p = 0.0000; unit-cost edits base 165 -> output 424 over 894 scored signs | beside, sign-level position McNemar: 894 common scored signs; base wrong 165, output wrong 410; fixed 13, broken 258; exact p = 0.0000
+  flagged excluded (truth-verifier flags only): err_true(0.75-indel align) 0.407 (185/454) | standard SER (unit-cost Levenshtein) 0.383 (174/454): S 157 D 17 I 0 | wrong 151 deleted 19 inserted 15 | excluded 885 | lines missing 0 (0 signs counted deleted) [440 flagged] | position errors 170/454 = 0.374 | insertions 15 / read 1275 = 0.012
+    reader abstentions 0 | accepted-token error 151/435 = 0.347 | coverage 435/454 = 0.958
+paired f201r_cls_hybrid.tsv vs passA.tsv on vivonne1573-f201r-dev [flagged excluded (truth-verifier flags only)]: 25 lines; lines improved 0, worsened 22, tied 3; line sign test p = 0.0000; unit-cost edits base 17 -> output 174 over 454 scored signs | beside, sign-level position McNemar: 454 common scored signs; base wrong 17, output wrong 170; fixed 1, broken 154; exact p = 0.0000
+  top confusions (truth value <- read): u<-d x12, s<-d x12, u<-# x11, a<-m x11, u<-m x10, c<-<deleted> x10, s<-m x9, u<-x x9
+split dev: err_true(0.75-indel align) 0.475 (425/894) | standard SER 0.474 (424/894)

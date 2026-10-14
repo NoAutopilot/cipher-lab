@@ -1,0 +1,21 @@
+{
+ "tag": "permuted",
+ "features": "hog+zone+topo",
+ "metric": "lda",
+ "knn": 5,
+ "permute": 20261014,
+ "train_labels": 961,
+ "passA_tokens": 1275,
+ "covered_tokens": 558,
+ "changed_vs_passA": 499,
+ "ops": {
+  "2:1": 164,
+  "1:1": 558,
+  "unsure": 101,
+  "1:2": 534
+ },
+ "sha256": {
+  "f201r_cls_hybrid.tsv": "7c8f0156ce75df353d9add192d5f4b4d0f71d9007424b8f5b744cc69b8049d16",
+  "f201r_cls_top3.tsv": "ebb8f3e707cb482ee106cbd1bbd40b57d1b7eae40fd66b543c875642df9eb0e8"
+ }
+}
