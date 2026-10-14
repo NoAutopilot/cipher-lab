@@ -568,3 +568,62 @@ Read so far: 0% of the target letter (no image of Clair 575 p.1209); candidate k
 - [ ] image-check: request the Clair 575 p.1209 leaf (REQUEST.md, ASKS 49), then apply 9431
 - [n/a] retry: nothing has been tried on the letter itself, there is no failed step to retry
 Verdict: keep going: 1 internal gap; cheapest next: fetch DECODE R9429 (Clair 417 f.236, 3 pages) and compare with 9431, ~$1.5
+
+## CL571-9429 (account 1, LANE DEFAULT-A1-1840-14, 14 Oct 2026, 19:09-19:2x UTC): DECODE R9429, Clair 417 f.236, fetched and compared with 9431
+
+Prior work (before the fetch): `tools/prior_work.py clair571-estrades-1645 --item-spec 'shelfmark=BnF Clairambault 417;folio=236;sender=Henri
+Brasset;decode=9429' --step-type key` exit 4; the two owed 1-own rows (CL571-417's gap line naming this step; this job's own claim) `--record`ed
+CLEAR. Check 1 (own work): grep of the repo for "9429" finds only sources/decode/records-decrypted-2026-09-24.tsv row and this folder's NOTES
+(CL571-417, 24 Sept check-solved) -- R9429 never fetched. Check 2 (leaf/neighbours): CL571-417 read the BnF record, no digitised version or
+microfilm. Check 3: Tomokiyo cache CLEAR (names Clair 417 only as "not found online", EST-REG); cyphersolver caches CLEAR; aaymeloglu
+UNCHECKED-NET; DECODE status "Decrypted" = the LEAD this job opens. Check 4: no edition prints the f.236 table (EST-REG check 4).
+
+Route: one browser login, `NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 9429 <scratch> --guess-fullsize --max-files 8`;
+10 de-crypt.org requests (login page, login, landing, RecordsView/9429, 3 thumbnails, 3 full-size PNGs), 1.5 s apart, all 200, none the
+forbidden.png placeholder. Full size 1653x2339 each, sha1 in `keys_decode/manifest.json` (images and the saved record page stay in the
+session scratchpad: "not in the public domain", and the page carries the account name).
+
+**What the record is.** RecordsView/9429: Type Cipher, Status Decrypted, Cipher Type "Unknown", Symbol Sets graphic signs + alphabet +
+numerical, author Henri Brasset, 1648, plaintext language French, **Inline Plaintext: Yes**, Additional Information "Encrypted memoir by
+Henri Brasset.", created 18 Jan 2025 by DECODE user pabogi. **Documents 0** on the record page (the 24 Sept grid row said 2; nothing to
+fetch, so no document request was made). The three pages (folio stamps 236, 237 and an unnumbered first page; old pagination 553/555) are
+a cipher text, about 25 lines a page, with a **period interlinear decipherment written above every cipher line**. So "Decrypted" here means
+the leaf carries its own contemporary decipherment; no key table is on the leaf or attached to the record.
+
+**Which key the cipher uses (PREREG-CL571-9429.md, pushed 18a569a60 before scoring).** 19 unique (gloss unit, number) pairs read by eye
+from P1 l.1-2 ("l'Archiduc tira son armée de flandre la conduisit en haynaut / et fit avancer peu a peu avec quelques trouppes") and P3
+l.1 ("Il est natif du Comté de Bourgogne de la ville de Vesoul"), `keys_decode/9429/pairs.tsv`, grade M (one reader, not blind; the
+segmentation was made with the Clair 421 table in mind -- a bias towards 421, reported not removed). Script `keys_decode/9429/score_9429.py
+[--check]` (exit 0), output `score_9429.txt`:
+
+| key | units the key lists | same-number hits | permutation null (2,000) mean / p95 | prereg gate |
+|---|---|---|---|---|
+| 9431 (Brasset, Clair 574 p.4-5) | 17 / 19 | **0** | 0.19 / 1 | does not fit |
+| Clair 421 f.160 (Lasry 2023 via Tomokiyo, typed by EST-REG) | 19 / 19 | **19** | 0.30 / 1 | fits |
+
+9431's numbers for the same units, for the record: ti 75^, ra 52^, armee 55-, de 86-, la 66., co 73-, du 89-, si 64^, na 88., ce 71-,
+pe 30^, ro 55^, bo 63-, go 42., vi 85^, ve 84^, so 65^ (none equal to f.236's 3, 85, 13, 43, 62, 27, 56, 87, 71, 60, 79, 82, 57, 50, 8,
+7, 88). The letter-sign groups on f.236 (a, b, x, n, u, w, theta) look like the same kind of homophone signs both Brasset keys use; not scored.
+Reading (M, cryptanalytic comparison, not a decipherment): the October 1648 memoir at Clair 417 f.236 is written in the Clair 421
+Brasset-Mazarin cipher that Lasry reconstructed for 1649 -- what Tomokiyo's page says it "may" be -- and not in 9431. This says nothing
+direct about the 1645 letter at Clair 575 p.1209: 9431 (1645-1649) stays the nearest-dated key on disk; Clair 421's table becomes a
+second candidate for that letter, since it was in use by Oct 1648 and so may be older than 1649.
+
+Not done (out of brief): no transcription of the 3 pages, no reading beyond the 3 glossed lines above, no rule-4 grading of the gloss;
+Lasry's 2023 paper and Tomokiyo's page may already cite f.236's own gloss -- not checked here (no print or phrase search).
+
+Requests: de-crypt.org 10 (one login). Report what was found and where it was not found; novelty is not classified here.
+
+## Remaining gaps (CL571-9429, 14 Oct 2026)
+Read so far: 0% of the target letter (no image of Clair 575 p.1209); candidate keys on disk: 9431 (358 of 381 rows H) and the published Clair 421 table (104 rows, M words); Clair 417 f.236 shown to use the Clair 421 values (19/19 glossed pairs, 9431 0/19).
+- Test the 9431 key and the Clair 421 table on the letter at Clair 575 p.1209 - blocker: waiting-on ASKS row 49 (BnF reproduction, REQUEST.md); the leaf is not digitised (NX-UNBLOCK, Gallica SRU 0 records)
+
+## Escalation (CL571-9429, 14 Oct 2026)
+- [n/a] siblings: no sibling cipher leaf of this letter is digitised or on disk
+- [n/a] clear-pages: no clear copy of the letter is known; editions read (GF4-BATCH11) do not print it
+- [x] known-keys: 9431 transcribed and registered; colbert26 f.24 and Clair 421 compared with 9431; Clair 417 f.236 (DECODE R9429) fetched and shown to use the Clair 421 values, not 9431
+- [x] print: Le Clerc II-III, APW II B 2 and d'Estrades 1743 read (GF4-BATCH11, LANE CX); none prints the letter
+- [n/a] key-rebuild: no ciphertext of the target is on disk to rebuild a key from
+- [x] image-check: the Clair 575 p.1209 reproduction is requested (REQUEST.md, YX-REQ571 25 Sept; ASKS 49); applying 9431 and the Clair 421 table waits on it
+- [n/a] retry: nothing has been tried on the letter itself, there is no failed step to retry
+Verdict: parked: the one remaining gap waits on ASKS row 49 (BnF reproduction of Clair 575 p.1209)

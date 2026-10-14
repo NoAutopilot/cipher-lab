@@ -1,0 +1,3 @@
+CL571-9429 score: 19 unique (unit, number) pairs from pairs.tsv
+9431: rows 303, units covered 17/19, hits 0, null mean 0.19 p95 1 -> does not fit
+clair421: rows 104, units covered 19/19, hits 19, null mean 0.30 p95 1 -> fits

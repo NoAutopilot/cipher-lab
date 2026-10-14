@@ -5,7 +5,8 @@
  "records": [
   "https://de-crypt.org/decrypt-web/RecordsView/9430",
   "https://de-crypt.org/decrypt-web/RecordsView/9431",
-  "https://de-crypt.org/decrypt-web/RecordsView/9432"
+  "https://de-crypt.org/decrypt-web/RecordsView/9432",
+  "https://de-crypt.org/decrypt-web/RecordsView/9429"
  ],
  "files": [
   {
@@ -175,6 +176,48 @@
    "bytes": 3945208,
    "forbidden_png": false,
    "decode_record_text": "Clairambault 580 p.89-95, 1655-1668, \"Chiffre de Madame d'Estrades\""
+  },
+  {
+   "record": 9429,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9429_I44597_P1.png",
+   "native_px": [
+    1653,
+    2339
+   ],
+   "sha1": "c5b2668c9d55d40173d565f5ceb538d34d55a0d3",
+   "bytes": 2799646,
+   "forbidden_png": false,
+   "decode_record_text": "Clairambault 417 f.236, 1648, Henri Brasset, \"Encrypted memoir by Henri Brasset.\" (fetched 14 Oct 2026 by CL571-9429, account 1; refetch: node tools/decode_browser_login.js 9429 OUT --guess-fullsize --max-files 8)"
+  },
+  {
+   "record": 9429,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9429_I44597_P2.png",
+   "native_px": [
+    1653,
+    2339
+   ],
+   "sha1": "e9e82e91ea3cd72a368884c86e88683a067f5581",
+   "bytes": 2705418,
+   "forbidden_png": false,
+   "decode_record_text": "Clairambault 417 f.236, 1648, Henri Brasset, \"Encrypted memoir by Henri Brasset.\" (fetched 14 Oct 2026 by CL571-9429, account 1; refetch: node tools/decode_browser_login.js 9429 OUT --guess-fullsize --max-files 8)"
+  },
+  {
+   "record": 9429,
+   "page": "3",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9429_I44597_P3.png",
+   "native_px": [
+    1653,
+    2339
+   ],
+   "sha1": "cfb54104c0e151e311619e958f8e5a4436d23462",
+   "bytes": 2650092,
+   "forbidden_png": false,
+   "decode_record_text": "Clairambault 417 f.236, 1648, Henri Brasset, \"Encrypted memoir by Henri Brasset.\" (fetched 14 Oct 2026 by CL571-9429, account 1; refetch: node tools/decode_browser_login.js 9429 OUT --guess-fullsize --max-files 8)"
   }
  ]
 }

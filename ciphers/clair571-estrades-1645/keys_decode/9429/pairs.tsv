@@ -1,0 +1,29 @@
+# CL571-9429 pairs: gloss unit (spellings | separated) and cipher number, read by eye from DECODE R9429 full-size PNGs, 14 Oct 2026.
+# grade M (one unblinded reader). set A = P1 l.1-2 gloss "l'Archiduc tira son armee de flandre la conduisit en haynaut / et fit avancer
+# peu a peu avec quelques trouppes"; set B = P3 l.1 gloss "Il est natif du Comte de Bourgogne de la ville de Vesoul". Mark on the number
+# as seen (bar/dots/prime/none), not used in scoring.
+set	unit	number	mark	context
+A	ti	3	bar	tira
+A	ra	85	none	tira
+A	armee|arme	13	none	armee
+A	de	43	none	de flandre
+A	la	62	dots	la conduisit
+A	con|co	27	none	conduisit
+A	du	56	dots	conduisit
+A	si	87	none	conduisit
+A	ha	52	none	haynaut
+A	na	71	none	haynaut
+A	ce	60	none	avancer
+A	pe	79	none	peu a peu
+A	ro	82	none	trouppes
+B	est	37	none	est
+B	na	71	prime	natif
+B	ti	3	bar	natif
+B	du	56	none	du
+B	con|co	27	none	Comte
+B	bo	57	none	Bourgogne
+B	go	50	none	Bourgogne
+B	la	62	dots	la ville
+B	vi	8	bar	ville
+B	ve	7	dots	Vesoul
+B	so	88	none	Vesoul
