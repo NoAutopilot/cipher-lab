@@ -105,3 +105,27 @@ mail draft; no personal data.
 ### OBRED-6017D (Opus, cap 3.5, box 75 min, NA <= 100 at >= 1.5 s): oldenbarnevelt-brederode-1605 inv. 6017 fill from scan 352 to the end
 As OBRED-6017B/C (same method, controls first), scans 352 onward to the end of inv. 6017 (156 scans left per OBRED-6017C); record the last
 scan screened and, if the inventory is finished, set the siblings rung and the Verdict accordingly.
+
+## Wave 5 (11:0x UTC 14 Oct; each is the named next step of a wave-3/4 report)
+
+### SFZ-DEC (Opus, cap 3, box 60 min, DECODE one browser login, <= 40 requests): sforza-duke-1447-f15 read the DECODE scat. 1597 key records
+Verdict (OUT-CHECK-SFZ): "list the scat. 1597 records' headings and thumbnails (login-free) to find the Filippo Maria Visconti 1446-47,
+Barbavara and Aragon-orators keys, then one browser login for full size and the sign-stock overlap count against f.5/f.8/f.15, ~$2". Start
+from sources/decode/keys-all-2026-09-28-merged.tsv and ciphers/sforza-maino-1446/NOTES.md (what Bourdeau already read; credit him). Login
+route as the 2135 jobs file's EST-9431 (tools/decode_browser_login.js, never print or commit the account name, scrub saved pages). Images
+untracked. Output: which records are 1446-47 Visconti keys (record, heading, date), sign-stock overlap with a shuffled control, NOTES
+"## SFZ-DEC", known-keys rung, Verdict, and whether REQUEST.md is still needed for anything DECODE does not hold (say so; do not edit it beyond a
+one-line pointer).
+
+### MONL-K12 (Opus, cap 2, box 45 min, disk only): fr4735 image-check the 10 K12/K34/K14 contradiction positions on c268 L01-L05
+Verdict (MONL-ALIGN): "image-check the 10 K12/K34/K14 contradiction positions on c268 L01-L05 and --try the survivors, ~$1.5". Crops by the
+folder's regen command (untracked). `decode_key.py ciphers/fr4735-monluc-lansac-poland-1573 --try` on any surviving value (its own control);
+key.tsv changes only through --try's accepted result, graded per rule 4. Output: NOTES "## MONL-K12", gaps/Verdict, --check exit 0.
+
+### MONL-PC (Sonnet, cap 1.2, box 30 min): fr4735 print check of the ff.140r-141r clear letter
+Remaining gap (MONL-ALIGN): phrase search of "poursuiteurs de lempereur" / "Roy de dannemarc qui ny pensa" (and two more distinctive
+phrases from clear_f140.tsv, normalised spelling variants) with tools/print_check.py (IA full text, Google Books with key + country=US,
+OpenAlex). Report hits with volume/page; 'no hits' is a search result, never a novelty verdict. Output: print-check TSVs, NOTES "## MONL-PC".
+
+### OBRED-6017E (Opus, cap 2.5, box 60 min, NA <= 80 at >= 1.5 s): oldenbarnevelt-brederode-1605 inv. 6017 scans 497 to the end
+As OBRED-6017B/C/D; finish the inventory and set the siblings rung and Verdict.
