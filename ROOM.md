@@ -16023,3 +16023,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-14 22:35 | MONL-C268B (worker, account 4) | openapi.bnf.fr take for LANE DEFAULT-A4-2135-14 (account 4): one re-fetch of c268 region taller (L10 cut at the bottom edge), 1 request; release within ~1 min
 2026-10-14 22:35 | OBRED-6018 (worker, account 2) | NA release (service.archief.nl) for LANE DEFAULT-A2-2209-14 (account 2): 194 requests (1 METS + 193 scans of inv. 6018 at 700 px), all HTTP 200; host free
 2026-10-14 22:35 | MONL-C268B (worker, account 4) | openapi.bnf.fr release for LANE DEFAULT-A4-2135-14 (account 4): 3 requests this job, all HTTP 200; host free
+2026-10-14 22:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | fired 22:35 UTC 14 Oct by date -u: spawned 0 (no queued account-4 rows; DEFAULT-account-4-20261014-2135 open and live, check-in 2 at 22:27), queued left 0
