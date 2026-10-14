@@ -1795,7 +1795,7 @@ re-looked.
 
 **Result for Baluze 169 canvases 1-280.** Unlisted cipher letters: 2 (f.21-24 Bouthillier 21 May 1639, its f.22r runs **bare** at 1000 px;
 f.36-38 Bouthillier May 1639, glossed), plus unlisted cipher canvases of three listed letters (f.80 Mémoire c170-188, the largest; f.107/110
-c224; f.112 c231-232). The f.22r runs are the one new bare passage in this sweep (about 4 lines, roughly 40 groups by eye). No transcription.
+c224; f.112 c231-232). The f.22r runs are the one further bare passage in this sweep (about 4 lines, roughly 40 groups by eye). No transcription.
 Words above runs are a lead, not a gloss reading. Report what was found and where it was not found; no novelty class.
 
 ## Remaining gaps (BAL169-SWEEP, 13 Oct 2026)
@@ -1982,3 +1982,32 @@ Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (su
 Verdict: keep going: 2 internal gaps; cheapest next: the 169 f.22r verifier audit and phrase search (~$2.5); then 167 canvases 251-429 (~$2.5) and the 168/171 volume sweeps (~$3.5 each); the 168 f.246 step once L71 answers
 
 `python3 tools/gaps_check.py baluze167-davaux-1637` (BAL167-SWEEP, 14 Oct 2026): "OK keep-going baluze167-davaux-1637: keep going: 2 internal gap(s), 1 step(s) untried"
+
+## VER-BAL22 verifier note on BAL169-F22 (14 Oct 2026, account 1, for LANE DEFAULT-A1-0640-14)
+Separate verifier session; full audit in AUDIT.md "AUDIT 7 f.22r (VER-BAL22)". Rule 7 re-run: "reading up to date", exit 0. Class **N3**,
+depth **D1** (fragments read; H/C/S 4 of 24). Correction to BAL169-F22: of the six letter signs, m (m4), n (h) and r (crossed y) match
+Tomokiyo's table shapes; f (L01, "u4") and a (L03, crossed 7 form, nearest table shape d) are context fits and should be I, not M
+(verifier count H 4, I 3, M 17; reading files not changed here). Four numerals (71', 51', 41', L03 13') carry clear separate acutes and could
+be H. "se deffaire de Milandre" and "donner le commandement" stand; the name "Ransau" is not read. Print search: IA, OpenAlex, CrossRef not
+found; Google Books 503 (unreachable); JSTOR rows queued; SO-BAL169-F22 queued.
+
+## Remaining gaps (VER-BAL22, 14 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv; the unlisted glossed letters, 170 f.89r, 170 f.107r-v, 169 f.36-38, 169 f.206-207 and 169 f.208-209, are not yet counted in that figure). Of the 5 listed bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: N3, D2 (AUD1-B167). 170 f.228r-v: N3, D2 at about 56% (V-BAL167).
+168 f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled. 169 f.22r (unlisted, BAL169-SWEEP): 24 tokens read with the published key (BAL169-F22: H 4, I 1, M 19); audited VER-BAL22, AUDIT 7: N3, D1.
+- 168 f.246-247v bare passage - blocker: waiting-on LOCAL-QUEUE L71 (owner's browser: does the Papiers de Richelieu item print the cipher passage in clear); next if it does: align the printed text to the two-pass transcription with tools/interlinear_align.py (known plaintext for the f.247 hand), ~$3; if not: the f.247-hand glossed-text search (survey.tsv's d'Avaux-side leaves), ~$3
+- 170 f.228-229 novelty (N3 -> N4) - blocker: waiting-on LOCAL-QUEUE L71 and SO-BAL170-F228 (SECOND-OPINIONS-QUEUE.tsv); the edition's notes are snippet-only from the cloud and a second opinion is owed before N4
+- 169 f.22r letter signs and name - blocker: not-attempted; audited by VER-BAL22 (AUDIT 7: N3, D1; f and a are context fits, I not M; the name after "commandement" rests on context-chosen tokens); next: a blind shape check of the six letter signs against Tomokiyo's table and glossed exemplars (BAL-WL method) plus a fresh rule-7 re-derivation, ~$2.5
+- Volumes beyond Tomokiyo's listed folios - blocker: not-attempted; his list is specimens, not a census (N9-BAL found unlisted f.110r in 168; BAL170-SWEEP + BAL170-FIN found unlisted glossed cipher on 170 f.89r and f.107r-v and continuation canvases 252, 271; BAL169-SWEEP + BAL169-FIN found 169 f.21-24 (bare f.22r), f.36-38, f.206-207 and f.208-209 (glossed) and continuation canvases 170-188, 224, 231-232, 297-302, 344-347, 375, 389, 467-471); BAL167-SWEEP found in 167 c1-250 no unlisted letter, only glossed continuation canvases of listed letters (146-149, 156-157, 172, 179-181, 188); Baluze 170 done (canvases 1-340); Baluze 169 done (canvases 1-535); Baluze 167 canvases 1-250 done; next: 167 canvases 251-429 (~$2.5), then the same sweep of 168 and 171, ~$3.5 each
+
+## Escalation (14 Oct 2026, VER-BAL22)
+- [x] siblings: davaux-1633 and DECODE records 2756-2762 checked (Siblings section above)
+- [x] clear-pages: leaf survey done; 170 f.230r is the clear close of the f.228 letter (D1-BAL170); 169 f.22r's cipher sits inside clear text (BAL169-F22)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.229 letter values carried to f.228; 169 f.22r read with key.tsv (BAL169-F22)
+- [ ] print: Avenel, Négociations secrètes, Guébriant, Bougeant, Mercure, Siri, IA, Google Books (UNA3-BAL), OpenAlex, CrossRef done; untried: the Papiers de Richelieu 1636-1642 volume by page (L71); Google Books for the 169 f.22r phrases (HTTP 503 on 14 Oct, VER-BAL22; IA, OpenAlex, CrossRef done)
+- [x] key-rebuild: alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); shape control with a same-key wrong-label negative PASSED (BAL-WL, 31 M -> S); hook/v PASSED on read 2 (BAL167-GHV, 8 M -> S; audited V-GHV, AUDIT 5); g+ gloss letter settled by key-anchored sequence and tile test PASSED (BAL167-GSEQ, 3 M -> S; re-audited V-GSEQ, AUDIT 6; scorer committed, GSEQ-SCORER)
+- [x] image-check: glossed Baluze 170 crops f.233r/f.239r/f.258r on disk (BAL-CROP); f.301r, f.320v-321r (BAL167-GHV); f.64r, f.124r-v (BAL167-GPLUS); f.124 gt letter settled and g+ tiles confirmed (BAL167-GSEQ); Baluze 170 volume sweep finished with 1000 px looks (BAL170-FIN); Baluze 169 swept end to end (BAL169-SWEEP, BAL169-FIN); 169 f.22r native crops (BAL169-F22); Baluze 167 c1-250 swept with 8 looks at 1000 px (BAL167-SWEEP)
+- [x] retry: f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run (BAL-CROP, BAL-WL, BAL167-GHV, BAL167-GSEQ)
+Verdict: keep going: 2 internal gaps; cheapest next: the 169 f.22r letter-sign shape check (~$2.5); then 167 canvases 251-429 (~$2.5) and the 168/171 volume sweeps (~$3.5 each); the 168 f.246 step once L71 answers
+
+`python3 tools/gaps_check.py baluze167-davaux-1637` (VER-BAL22, 14 Oct 2026): "OK keep-going baluze167-davaux-1637: keep going: 2 internal gap(s), 1 step(s) untried"

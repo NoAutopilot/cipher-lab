@@ -693,3 +693,94 @@ be regenerated.
 (c) V-GHV (c) still applies: P- for a ligature sign should be its parts (a bare g, a lone crossed t) and other descender-plus-bar signs,
 not shapes that differ at a glance.
 Regrades: 3 kept, 0 reverted. Requests: none (disk only). Subagents: none.
+
+## AUDIT 7 f.22r (VER-BAL22), 14 Oct 2026, 07:23-07:4x UTC by date -u
+
+Verifier: VER-BAL22 (account 1, Opus), brief `.claude/briefs/runs/2026-10-14-acct1-default-0640-jobs.md` row VER-BAL22, for LANE
+DEFAULT-A1-0640-14. Separate from the solver (BAL169-F22, session_01ThV43oDmKJK4XeTgdCDTXN). Earlier sections are not rewritten.
+Search files in `verbal22/`. No decoding beyond re-running the committed decode; no key edit; no subagent.
+
+### 1. Item under audit
+
+| field | value |
+|---|---|
+| Item | BnF Baluze 169 f.22r lines 1-4 (Gallica ark btv1b9001488b, canvas 48): 24 cipher tokens inside clear French, no interlinear gloss (checked by this verifier on images/b169sweep/src_c048_f22r_1285,1140,2950,810.jpg) |
+| Letter | f.21-24, Claude Bouthillier, Ruel, 21 May 1639 (per BAL169-SWEEP; signature and date not re-read by this verifier); recipient d'Avaux per the volume |
+| Claim under audit | "...obligee de se deffaire de Milandre ... qu'elle en voulust donner le commandement a Mr de Ransau dont j'escris ... au S. de la Boderie", H 4 I 1 M 19 |
+| Rule 7 | `python3 tools/decode_key.py ciphers/baluze167-davaux-1637 --check` re-run here: `ciphertext_b169f22r.txt: tokens 24: H 4, I 1, M 19` / `reading up to date`, exit 0 |
+| Key | Tomokiyo's D'Avaux table (key.tsv). Key source: **published** (credited); 100' faire is an I-grade addition (key.tsv) |
+| Spec / judge | none (no spec for this target): no judge_plaintext run; 24 tokens is too short for one in any case |
+
+### 2. Eye check of the reading against the image and Tomokiyo's table (images/louisxiii_davaux.png)
+
+Numerals. Separate acute strokes, distinct from the i-dot of a written 1, stand over 71, 94, 51, 41, 13 (L03) and 70; 95 and 100 carry
+acutes; 81 has a clear overbar. The solver graded 71', 51', 41', 13' M under the dotted-i rule; on this leaf the acute is a long
+separate stroke, so those four could be H (an under-claim, left as is). A stroke above the 45 region (L03) may belong to 45 or to the
+sign before it: 45' stays M. 12 and the second 13 (L03) show one dot only (the i of the 1): no diaeresis is visible, plain 12 has no table
+value, and 12: ment / 13: Mr are chosen by context (M, right). 65 has no mark; only 65' ra exists in the table (M, right). The 16s carry the
+6's own top flourish, which may or may not be the acute (M, right).
+
+Letter signs (the solver "settled from context in this letter only"):
+| pos | shape on the leaf | solver | Tomokiyo table, nearest shape | verifier |
+|---|---|---|---|---|
+| L01 8 | two minims + crossed 4 ("u4") | f | u4/n4 forms stand under t (and a u4 under g, row 3); f's row-1 form is an m-with-7 hook | context only: **I** |
+| L03 4 | y with a long horizontal bar through the descender | r | crossed y under r (also r on 170 f.229 L4, V-GSEQ P- arm) | supported by the table: M |
+| L03 7 | three minims + crossed 4 ("m4") | m | m4 under m | supported: M |
+| L03 9, L04 1 | h (L04 with tail) | n | h under n | supported: M |
+| L03 12 | y/4 top over a horizontal bar crossed by a vertical stem | a | closest table form is the crossed 7 under **d**; a's form is the plain (circled) 7 | context only, against the nearest table shape: **I** |
+| L04 3 | y with a large curl | u | curled z/3 form under u; plain y is b | weak match: M |
+
+So 2 of the 6 letter values (f, a) rest on context alone, one of them against the nearest table shape. Grading them M over-states them;
+rule 4 calls a value inferred from context I. Verifier grade count for the 24 tokens: **H 4, I 3, M 17** as committed with that
+correction (or H 8, I 3, M 13 if the four clear acutes are promoted; not done here, a solver's regrade). The reading's sense is not in
+doubt for "se [de]f faire de Milandre" and "don ne r le co m ma n de ment": the numerals there are table values and the letter signs m, n, r
+match the table. "a Mr de ra n sa u" rests on 12:, 13:, 65 and the a sign, all chosen by context.
+
+### 3. Independent search log (14 Oct 2026)
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical series: Avenel VI (1638-42) | print_check `ia` rows (6 phrases, verbal22/print-check.tsv); be-api fts in the volume: positive control "Milandre" 1 hit (an analysis "...de Weymar aupres de la landgrave et de Milandre..."), "Ransau" 0, "Rantzau Milandre" 0 | not found |
+| (b) sender/recipient correspondence | Le Clerc, Négociations secrètes t.1 (secretestouchant01lecl), print_check `ia` | not found (collection starts 1642, AUD1-B167) |
+| (c) histories of the campaign | Le Laboureur, Guébriant 1657 (bub_gb_cM5KS3lziccC); Noailles, Guébriant 1913 (lemarchaldegu00noai), print_check `ia` | not found |
+| (d) holding archive / project pages | Tomokiyo louisxiii.htm (on disk): lists Baluze 169 ff.2-6, 46, 80, 52, 107, 112, 97, 129, 142 ... 208; **no f.21-22**. DECODE (sources/decode/records-decrypted-2026-09-24.tsv): Baluze 169 records 2759 (f.2-6) and 2760 (f.208-211) only. Lasry BnF research snapshot (sources/cyphersolver/2026-10-14-lasry/): no Baluze folder | no decipherment of f.22r located |
+| (e) full text IA, Google Books | IA global fts, 6 phrases: 0. Google Books (keyed, country=US): 5 of 6 phrases HTTP 503 in print_check; one retry after a pause on two targeted queries ("deffaire de Milandre"; Milandre Ransau Landgrave): 503 again -> **unreachable**. The one phrase it answered (the clear "dont j'escris presentement au S. de la Boderie") returned a 334-volume word-bag match, no snippet carrying the phrase | IA not found; Google Books unreachable |
+| (f) solver repositories / blogs | as (d); Bourdeau/Aymeloglu catalogues per CS-6 (3 Oct), not re-cloned | not found |
+| (g) scholarship | OpenAlex (keyed) 6 phrases + keywords: no relevant work; CrossRef keywords: top hits are Elizabeth of Bohemia correspondence entries and Hesse-Kassel reference articles, none on this letter; Semantic Scholar: one phrase answered (5 unrelated papers), then HTTP 429, one manual keyed call (Melander Rantzau Hesse 1639) total 0; JSTOR: 4 rows appended to JSTOR-QUEUE.tsv, families (i) and (ii) | not found; S2 partly unreachable; JSTOR queued |
+
+Not searched / unreachable: Google Books (503); the AAE Correspondance politique (Allemagne, Hesse) and Bouthillier's minutes; Acta Pacis
+Westphalicae; Rommel, Geschichte von Hessen VIII (cited in AUD2 as searched for f.228, not run for these phrases); the holding record
+on archivesetmanuscrits. Requests: be-api.us.archive.org 6 (print_check) + 3, www.googleapis.com 6 + 2, api.openalex.org 7,
+api.crossref.org 2, api.semanticscholar.org 2 + 1 (one 429); a first print_check run crashed at write (wrong --out) after making the same
+calls, so these hosts saw about twice the print_check counts. All >= 1.6 s apart.
+
+### 4. Classification
+
+| item | prior plaintext | prior decipherment | class | key | confidence |
+|---|---|---|---|---|---|
+| Baluze 169 f.22r (Bouthillier to d'Avaux, Ruel 21 May 1639, 24 cipher tokens in clear text) | none located | none located (no gloss on the leaf; not in Tomokiyo's list; no DECODE record for f.21-24) | **N3** | published (Tomokiyo's table, credited) | low-moderate: Google Books unreachable for every cipher phrase, S2 partly 429, JSTOR queued, AAE minute not searched |
+
+Why not N4: Google Books, the AAE series and the holding record were not covered. Why not N1/N2: no print of the passage, in clear or in
+cipher, and no reading of it by anyone else, was found.
+
+Depth (rule 4a): H/C/S 4 of 24 = **17%** as committed (8 of 24 = 33% at most with the acute promotions). Cipher clause: the longest H/C/S
+run is two tokens; no stretch reaches the authentication distance once the 19 M/I liberties (mark choices and context-fitted letters)
+are counted. Code clause: 81= Milandre reads in this one context only. **D1: fragments read.** No content sentence is written: at D1 the
+rule asks none, and the "Ransau" clause rests on context-chosen tokens.
+
+- **Safe sentence:** "Fragments of the 24-token cipher passage on Baluze 169 f.22r (Bouthillier to d'Avaux, 21 May 1639) were read by us
+  with Satoshi Tomokiyo's published table; the cipher phrase reads 'se deffaire de Milandre' and 'donner le commandement', with the
+  following name only partly supported; no prior decipherment or print of the passage was located in the sources logged in AUDIT.md
+  (Google Books unreachable)."
+- **Unsafe sentence:** "The passage reads 'donner le commandement a Mr de Rantzau'" or any wording that treats the commander's name as read,
+  or calls the reading new or a first.
+
+### 5. Postmortem and corrections
+- Over-claim corrected: the f and a letter signs are context fits (one against the nearest table shape), I not M; NOTES.md BAL169-F22's
+  "These agree with D4-B167's values" holds for h = n and the crossed y = r only. Correction note appended to NOTES.md; reading files
+  untouched (a regrade is a solver's job: exceptions rows and a re-run of `decode_key.py --check`).
+- Under-claim noted: four numerals with clear separate acutes (71', 51', 41', L03 13') could be H.
+- Wording: NOTES.md BAL169-SWEEP called f.22r "the one new bare passage"; changed to "the one further bare passage" (CLAUDE.md wording rule).
+- Next step for the reading: a blind shape check of the six letter signs against Tomokiyo's table and glossed exemplars (the BAL-WL
+  method), and a fresh rule-7 re-derivation; the commander's name stays unread until then.
+- SECOND-OPINIONS-QUEUE row SO-BAL169-F22 appended (N3).
