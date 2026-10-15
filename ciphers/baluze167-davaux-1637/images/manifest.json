@@ -4640,5 +4640,43 @@
    "job": "BAL-65D",
    "note": "Baluze 168 f.213r, 2400x3556"
   }
+ ],
+ "bal_65e_fetches": [
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f330/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T15:53Z",
+   "http": 200,
+   "sha1": "6b35cf61b15535d8e5a14ab6ddf761f9b0ad630a",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65E",
+   "note": "Baluze 168 f.158r, 2400x3582"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f331/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T15:53Z",
+   "http": 200,
+   "sha1": "5feefa3b67627530f9591d7e52ef69e529ff55d3",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65E",
+   "note": "Baluze 168 c331, 2400x3502"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f332/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T15:53Z",
+   "http": 200,
+   "sha1": "c4e0ed10601c357edce8dbf65e047756892d3c2c",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65E",
+   "note": "Baluze 168 f.159r, 2400x3572"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f331/pct:61.5,27.0,7.5,4.0/max/0/default.jpg",
+   "fetched": "2026-10-15T15:56Z",
+   "http": 200,
+   "sha1": "e9b34dd2145e1459736a591c4397e953c016094b",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65E",
+   "note": "c331 d'esperance 65 at max, 282x220"
+  }
  ]
 }

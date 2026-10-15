@@ -1,6 +1,6 @@
 sign	value	glossed_n	units	agree	wrong_mark_values	wrong_hits
 13:	Mr	4	{'Mr': 4}	4	['sued', 'co']	0
-65	ra	1	{'ra': 1}	1	-	0
-real 5/5; within-run shuffle (200 seeds) mean 2.73, p95 4, max 5; shuffles >= real: 2/200
-call 13: = Mr: 4/4 -> M
-call 65 = ra: 1/1 -> M
+65	ra	2	{'ra': 2}	2	-	0
+real 6/6; within-run shuffle (200 seeds) mean 2.90, p95 4, max 5; shuffles >= real: 0/200
+call 13: = Mr: 4/4 -> S
+call 65 = ra: 2/2 -> M

@@ -76,3 +76,18 @@ b168c438b	168:438	varadin	2	65'	ra
 b168c438c	168:438	courage	3	65'	ra
 b168c438d	168:438	Moravie	2	65'	ra
 b168c440a	168:440	neutralite	4	65'	ra
+# BAL-65E (15 Oct 2026, account 1, LANE DEFAULT-A1-1426-15): Baluze 168 (btv1b9001503k) c330 (f.158r), c331, c332 (f.158 Chavigny letter, survey.tsv
+# row 168/158), full/2400, my eye with 3-8x zooms of each 65 (not blind). Gate per canvas in NOTES.md "## BAL-65E" (c330, c331 PASS; c332 carries no
+# 65 at overview scale, no pairs). Gloss above its cipher. c330 'se relaschera' (K h 7' 66 40 p 9 31' 65): a separate rising stroke in cipher ink
+# above the 6, crossing the gloss underline's tail, not touching the 65 = 65'. c331 'aura' (jl 52 4 x 65, 'il n'y aura'): separate rising stroke
+# above-right of the 5, clear of the gloss 'plus' = 65'. c331 'd'esperance' (16' p 56' 65 h ii): at 2400 px and at max (region pct:61.5,27.0,7.5,4.0)
+# one hairline of uniform grey tone runs from the gloss 'd' (of d'avoir) down to the top of the 6's loop, no gap, no darker segment, no separate stroke
+# above the 6 or 5; a stroke continuous with a gloss letter is gloss (PREREG-BAL-302) = plain 65, full run below (units as placed under the gloss).
+b168c330a	168:330	se relaschera	9	65'	ra
+b168c331a	168:331	aura	5	65'	ra
+b168c331b	168:331	d'esperance	1	16'	de
+b168c331b	168:331	d'esperance	2	p	s
+b168c331b	168:331	d'esperance	3	56'	pe
+b168c331b	168:331	d'esperance	4	65	ra
+b168c331b	168:331	d'esperance	5	h	n
+b168c331b	168:331	d'esperance	6	ii	ce
