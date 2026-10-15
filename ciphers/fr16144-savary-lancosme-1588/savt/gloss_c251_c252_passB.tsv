@@ -1,0 +1,36 @@
+# SAV-GLOSS pass B: one blind Sonnet subagent (no prior reading or print shown), 15 Oct 2026; crops of openapi.bnf.fr regions
+# c251 pct:0,38,82,21 (gloss column x 0-1250 px) and c252 pct:16,19,16,22, cut by tools/iiif_lines.py (3 detected lines per crop).
+# Read bottom-up, reported top-down. "?" uncertain, "[..]" illegible/cut. Every word grade M at best.
+crop	line	text
+g251_L01	1	Pour pau mea dibuceta
+g251_L01	2	pudidetut Jay reputé - cappitai
+g251_L02	1	a Gro Ma^te miseiball
+g251_L02	2	gouuernus. et nest estac
+g251_L02	3	bne le Chef est tellus
+g251_L03	1	annelopp? et laffertion -
+g251_L03	2	quel porte au fammes?
+g251_L03	3	sur le? l Pera quel a.
+g251_L04	1	[..]
+g251_L04	2	[..]
+g251_L04	3	[..]
+g251_L05	1	outiebundaui? [..] corruption
+g251_L05	2	fam? ey? les? aouma?
+g251_L05	3	les? minist?es [..] loy peu
+g251_L06	1	[..] prenoit et grand? Inconueuch?
+g251_L06	2	[..] M^r Sauor? Costo mesiae?
+g252_L01	1	pour [..]
+g252_L01	2	ey? lauropt?
+g252_L01	3	il la a Andrino[..]
+g252_L02	1	asfouch? [..] adua
+g252_L02	2	G Janom? ong Mar?
+g252_L02	3	Gour? Jo? Becun? d?
+g252_L03	1	aduelty? [..] [..]
+g252_L03	2	[..] allex? gusbie?
+g252_L03	3	[..] nue? [..]
+g252_L04	1	[..] l tubu? qui
+g252_L04	2	[..] Sauir? Coy pu
+g252_L04	3	touch? [..] quel f
+g252_L05	1	or? unsilu? [..]
+g252_L05	2	Ca ci aut? su? ge
+g252_L05	3	nduit? [..] [..]
+g252_L06	1	Imehant? l [..]

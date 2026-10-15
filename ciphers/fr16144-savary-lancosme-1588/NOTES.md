@@ -426,3 +426,41 @@ the gloss's sentences in Charrière IV (whole volume, by grep and collation). No
 Suggestion (one line, not done): a two-pass blind transcription of the c251-252 margin gloss on wider native crops (left edge at pct x=0),
 ~2 Sonnet passes + 1 reconcile, ~$2, then add it beside c380's gloss as alignment input for the table recovery gap. Requests: openapi.bnf.fr 5
 (all 200), archive.org 1 (200). Subagent calls: 1 Sonnet read.
+
+## SAV-GLOSS: two blind passes of the c251-252 (f.123r-v) margin gloss (LANE DEFAULT-A1-1140-15, account-1 worker, 15 Oct 2026 12:31-12:4x UTC by date -u)
+Brief: .claude/briefs/runs/2026-10-15-acct1-default-1140-jobs.md, job SAV-GLOSS (SAV-L14's suggestion). Alignment **not** run (waits on the
+owner's sort of c370-375/c380 labels). openapi.bnf.fr 6 requests (info.json + 1000 px overview + one pct region each for c251, c252; all
+200), regions in the session scratchpad only, URLs and the regen command in `images/manifest.json` key `sav_gloss_regions`.
+**Crops (command run before the first subagent call):** `python3 tools/iiif_lines.py --image r251.jpg --out c251 --columns 0:1250 --prefix
+g251 --lines-per-crop 3 --overlap 40 --debug` -> "region 4032x1488, 17 lines, 6 bands x 1 segments; pitch 87 ... wrote 6 crops"; c252 the same
+without --columns -> "region 785x1558, 16 lines, 6 bands ... wrote 6 crops". Debug overlay checked: c251 gloss left edge whole (pct x=0).
+**Passes:** A and B, one blind Sonnet subagent call each on the same 12 crops (B read bottom-up), no prior reading or print shown
+(`savt/gloss_c251_c252_passA.tsv`, `..._passB.tsv`); reconciliation by this Opus session against the two regions
+(`savt/gloss_c251_c252_reconciled.tsv`, beside `savt/gloss_c380_partial.txt`). 3 units (2 passes + 1 reconcile), as briefed.
+**Result:** c251 gloss lines 1-16 reconciled, 10/16 lines with both blind passes supporting the main words, 3 from pass A only, 3 the
+reconciler's; they run: "Sire par mes dernieres precedentes Jay represente a V^re Ma^te le miserable gouuernement de cest estable le Chef est
+tellement enueloppe de l'affection qu'il porte aux femmes & ses delices? qu'il a beaucoup diminue de la splendeur de cest empire & a laisse
+introduire telle outrecuidance & corruption tant en ses armees & en ses ministres & l'on peut preuoir le grand inconuenient ...". c252 gloss
+lines 1-16: 7/16 both passes, much weaker ("en l'Europe", "Andrinopl[e]", "le scauoir? l'on peu[t]", "la crainte?", "reduict & le s[ang]"),
+right edge cut by 1-4 letters. Every word grade M (period gloss read by eye, no key applied). This agrees in substance with SAV-L14's reader B
+on c251 lines 1-15. Not covered: c251 gloss lines 17-~29 (below the region, the request limit was used up; SAV-L14's readB L16-L29 is the
+only read of them) and the right 1-4 letters of each c252 gloss line.
+Not done: alignment, any key edit, any print search (SAV-L14 already found the cipher span not in Charrière IV).
+
+## Remaining gaps (finish-or-blocker pass, 15 Oct 2026, SAV-GLOSS)
+Read so far: 0 of ~5,000 open signs on L25 (c370-c375); L14 c251-252 gloss now two-pass for c251 gloss lines 1-16 and c252 lines 1-16 (grade M).
+- settled alphabet for c370-c375 + c380 - blocker: waiting-on the account-3 orchestrator's reply; the sorter sheet needs the owner's sort (publish sorter/index.html and file the ASKS row, flagged in ROOM.md 3 Oct 2026)
+- 29 Apr 1587 duplicata c370-c375, ~5,000 signs - blocker: waiting-on the account-3 orchestrator's reply; the owner sort of sorter/index.html (flagged in ROOM.md 3 Oct 2026); next after the sort: rerun `savt/align.py` on settled labels with c380 and the c251-252 gloss as plain sides (same PREREG), ~$4
+- the duplicata's original (fr.17020 ff.372-382 inventory) - blocker: needs-physical-access; fr.17020 is not digitised (RUN2-SAV)
+- c251 gloss lines 17-~29 and c252 gloss right edge - blocker: not-attempted; next: one openapi.bnf.fr region (c251 pct:0,57,30,6; c252 pct:16,19,20,22) + 2 blind Sonnet passes + 1 reconcile, ~$2
+
+## Escalation (15 Oct 2026, SAV-GLOSS)
+- [x] siblings: 17 sibling cipher letters with decipherments located (survey.tsv); L14 c251-252 glossed (30 Apr 1586)
+- [x] clear-pages: c380 gloss (A3V3-SAVT) and c251-252 gloss lines 1-16 each two-pass (SAV-GLOSS)
+- [x] known-keys: Tomokiyo's 1588 table tested on c380 against the print (PASS both statistics, weak signal)
+- [x] print: Charrière IV whole volume; L14's cipher span not in print (SAV-L14)
+- [retired] key-rebuild: hard-EM gloss alignment on SV-SORT piles (savt/recover.py) failed its held-out; reopens only with the settled alphabet (new material)
+- [ ] image-check: c251 gloss lines 17-~29 not yet two-pass; next: one region + 2 passes + reconcile, ~$2
+- [n/a] retry: no host failed
+Verdict: keep going: 1 internal gap beside 3 outside blockers; cheapest next: c251 gloss lines 17-~29, one region + 2 passes + reconcile, ~$2; the alignment waits on the owner's sort
+gaps_check (SAV-GLOSS): `OK keep-going fr16144-savary-lancosme-1588: keep going: 1 internal gap(s), 1 step(s) untried`

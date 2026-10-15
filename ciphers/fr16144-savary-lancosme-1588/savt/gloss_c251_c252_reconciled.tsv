@@ -1,0 +1,39 @@
+# SAV-GLOSS reconciliation (Opus, this job's session, 15 Oct 2026) of blind passes A and B (gloss_c251_c252_pass{A,B}.tsv) against the
+# two native regions (c251 pct:0,38,82,21 gloss column x 0-1300; c252 pct:16,19,16,22). Period spelling kept where read; "&" = the clerk's
+# looped et-sign (pass A's "¶"); [..] illegible or cut; "?" after a doubtful word. Every word grade M (eye read of a period decipherment,
+# not H: no key applied). Coverage: c251 gloss lines 1-16 of ~29 (the region stops at about y 59% of the leaf; lines 17-29, "pour sa mere
+# ... se saisist de luy", not in this pass); c252 gloss lines 1-16, right edge of the column cut by 1-4 letters (region x ended at 32%).
+# agree: A+B = both blind passes support the line's main words; A / B = one pass only; R = reconciler's read where both passes failed.
+page	gl	text	agree
+c251	01	Sire par mes dernieres	R
+c251	02	precedentes Jay represente	A+B
+c251	03	a V^re Ma^te le miserable	A+B
+c251	04	gouuernement de cest esta-	A+B
+c251	05	-ble le Chef est tellement	A+B
+c251	06	enueloppe de l'affection	A+B
+c251	07	qu'il porte aux femmes	A+B
+c251	08	& ses delices? qu'il a	R
+c251	09	beaucoup diminue de la	A
+c251	10	splendeur de cest empire &	A
+c251	11	a laisse introduire telle	A
+c251	12	outrecuidance & corruption	A+B
+c251	13	tant en ses armees & en	R
+c251	14	ses ministres & l'on peut	A+B
+c251	15	preuoir le grand inconuenient	A+B
+c251	16	[..] le s^r [..] ceste mesme? [..]	A+B
+c252	01	pour l'alcoran? & le pa[..]	R
+c252	02	en l'Europe & l'a[..]	A+B
+c252	03	il la a Andrinopl[e]	A+B
+c252	04	asseuree? les adua[..]	A
+c252	05	& Janom? ouy Man[..]	A+B
+c252	06	heure Je [..] d[..]	A+B
+c252	07	aduertis? & cest[e] g[..]	A
+c252	08	estoit allee guerre?	R
+c252	09	[..] nuit estoit? [..]	A
+c252	10	est le tresor? qui [..]	A+B
+c252	11	le scauoir? l'on peu[t]	A+B
+c252	12	toute force? qu'il f[..]	A
+c252	13	or? [..] [..]	A+B
+c252	14	la crainte? [..]	A
+c252	15	reduict & le s[ang]	R
+c252	16	meschans? le roy?	R

@@ -11724,5 +11724,38 @@
 "sha1": "5671023d7db74b49a98ff755449f9fa643477a2d",
 "size": "896x236"
 }
+],
+"sav_gloss_regions": [
+{
+"url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060974c/f251/pct:0,38,82,21/max/0/default.jpg",
+"date": "15 Oct 2026",
+"size": [
+4032,
+1488
+],
+"native": [
+4918,
+7088
+],
+"committed": false,
+"use": "c251 margin gloss lines 1-16 (SAV-GLOSS)"
+},
+{
+"url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060974c/f252/pct:16,19,16,22/max/0/default.jpg",
+"date": "15 Oct 2026",
+"size": [
+785,
+1558
+],
+"native": [
+4910,
+7083
+],
+"committed": false,
+"use": "c252 margin gloss lines 1-16 (SAV-GLOSS)"
+},
+{
+"regen": "curl -A \"cipher-lab research script (contact via repository)\" -o r251.jpg <url>; python3 tools/iiif_lines.py --image r251.jpg --out DIR --columns 0:1250 --prefix g251 --lines-per-crop 3 --overlap 40 --debug (c252: no --columns, --prefix g252)"
+}
 ]
 }
