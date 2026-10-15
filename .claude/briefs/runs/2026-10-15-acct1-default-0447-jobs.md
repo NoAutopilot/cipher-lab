@@ -96,3 +96,20 @@ occurrences per sign before any C grade. NOTES "## ELEC-5756", Verdict.
 F4712-HAND's next: "an 8-only blind panel f.10r vs f.13r with a control hand, ~$1". Same PREREG discipline as F4712-HAND (read it): register
 features and control before the look; one blind Sonnet call, value-free crops (<= 12), the f.107v control hand. Grade stays M at most; carries
 stay C on ASKS 113. NOTES "## F4712-8", gaps + Verdict, gaps_check.
+
+## Wave 3 (05:5x UTC 15 Oct)
+MONL-L11 ran 1.35x (8.10 on 6): the worker's own eye reconciliation of 178 signs was unpriced. Count your own image looks as units.
+Intake gate 05:5x UTC (exit 0): fr4735-monluc-lansac-poland-1573, pro3055-clinton-1779.
+
+### MONL-ADH (Opus, cap 4, box 60 min, disk only; openapi.bnf.fr <= 2 only if a crop is missing): fr4735 W:adhuc re-run + value-blind sort
+Verdict: "the pre-registered W:adhuc re-run (~$0.5), then a value-blind sort of the L11-L15 K11|K62, K37, K04|K12 tiles (~$1.5)". Read MONL-L11,
+MONL-VB first. Re-run exactly as pre-registered; then the value-blind sort by MONL-VB's method (<= 12 crops per blind call, no value, no
+machine label, no decode). Apply only relabels both blind calls agree on; align_c268.py --check and the 200 shuffled-clear control. Units:
+2-4 blind calls (~0.5 each) + your own looks (~0.3 each); stop before a unit crossing 3.2. Do not start c268 L16-L20. NOTES "## MONL-ADH",
+gaps + Verdict, gaps_check.
+
+### CLIN-2962 (Opus, cap 5, box 75 min, image-uab.canadiana.ca <= 20): pro3055-clinton-1779 sibling reel cipher 2962
+Verdict: "the remaining sibling reel ciphers (2962, 3004, 3502, 3537, 4152, 4216), ~$3-4.5 a page". Letter 2962 only (one page or column block,
+whichever is its first cipher page): exactly CLIN-247's method (its NOTES section and PREREG): PREREG before passes, iiif_lines.py crops
+(command pasted first), two blind passes + one reconciliation unit, the B2 gate and page-permuted-key control. If 2962 is not on the 1778 key
+(the decoded runs say so), log it and stop. No images in git. NOTES "## CLIN-2962", gaps + Verdict, gaps_check.
