@@ -15,12 +15,12 @@ L01	15	L:e?	?	e	M
 L01	16	s:E		?	U
 L01	17	L:s?	?	s	M
 L01	18	5		?	U
-L01	19	s:u4x		[t/m]	M
+L01	19	s:u4x		m	S
 L02	0	s:dot?	?	?	U
 L02	1	L:s?	?	s	M
 L02	2	L:e?	?	e	M
-L02	3	s:x		?	U
-L02	4	14?	?	cu	M
+L02	3	s:x		c	M
+L02	4	14?	?	t	M
 L02	5	s:dloop		i	S
 L02	6	81'?	?	ve	M
 L02	7	12:		ment	H
@@ -29,7 +29,7 @@ L02	13	7		[7]	M
 L02	14	5		?	U
 L02	15	s:i		p	S
 L02	16	65'		ra	H
-L02	17	77		ti	M
-L02	18	s:x		?	U
+L02	17	77		ti	S
+L02	18	s:x		c	M
 L02	19	61'?	?	que	M
 L02	20	6'?	?	r	M

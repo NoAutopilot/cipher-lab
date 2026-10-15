@@ -3924,5 +3924,142 @@
    "kept": "session scratch only, not committed",
    "job": "BAL-F22R"
   }
+ ],
+ "balc275u4_fetches": [
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f274/full/max/0/default.jpg",
+   "fetched": "2026-10-15T02:45Z",
+   "http": 200,
+   "bytes": 4739295,
+   "sha1": "60c0d5194c022446fe1ca037641bdea5727ac48a",
+   "kept": "untracked scratch (images/scratch/c275u4/), not committed",
+   "job": "BAL-C275U4"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f275/full/max/0/default.jpg",
+   "fetched": "2026-10-15T02:45Z",
+   "http": 200,
+   "bytes": 4675090,
+   "sha1": "c21a49f99787582c1af7593f5aca1b27a6a1569b",
+   "kept": "untracked scratch (images/scratch/c275u4/), not committed",
+   "job": "BAL-C275U4"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f276/full/max/0/default.jpg",
+   "fetched": "2026-10-15T02:45Z",
+   "http": 200,
+   "bytes": 4806183,
+   "sha1": "a8b173848cfc6d2cf03333c7e3f5f20c2cd31814",
+   "kept": "untracked scratch (images/scratch/c275u4/), not committed",
+   "job": "BAL-C275U4"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f266/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:45Z",
+   "http": 200,
+   "bytes": 1136149,
+   "sha1": "04dbd3cbb84c9409088a4a1ab515b850da886d5f",
+   "kept": "untracked scratch (images/scratch/c275u4/), not committed",
+   "job": "BAL-C275U4"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f267/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:45Z",
+   "http": 200,
+   "bytes": 1129027,
+   "sha1": "4b65961453a3eb60762c73a806179a41d6ee4f58",
+   "kept": "untracked scratch (images/scratch/c275u4/), not committed",
+   "job": "BAL-C275U4"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f268/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:45Z",
+   "http": 200,
+   "bytes": 1087299,
+   "sha1": "7d5b9b10aa250db54189ee599467e3d327f3ff54",
+   "kept": "untracked scratch (images/scratch/c275u4/), not committed",
+   "job": "BAL-C275U4"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f269/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:45Z",
+   "http": 200,
+   "bytes": 1122029,
+   "sha1": "dca7ce50e5f80c74b518f6f976991d5bcdc4dd7c",
+   "kept": "untracked scratch (images/scratch/c275u4/), not committed",
+   "job": "BAL-C275U4"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f270/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:45Z",
+   "http": 200,
+   "bytes": 1176390,
+   "sha1": "1bc7f45059a29e7800df580891fbb30be93a95af",
+   "kept": "untracked scratch (images/scratch/c275u4/), not committed",
+   "job": "BAL-C275U4"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f271/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:45Z",
+   "http": 200,
+   "bytes": 1190297,
+   "sha1": "cdc060c35c0f1de1ee157cf407d41e250609829d",
+   "kept": "untracked scratch (images/scratch/c275u4/), not committed",
+   "job": "BAL-C275U4"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f272/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:45Z",
+   "http": 200,
+   "bytes": 1190020,
+   "sha1": "b5877f8d088dd5704921c1d78dc11afc73eef49a",
+   "kept": "untracked scratch (images/scratch/c275u4/), not committed",
+   "job": "BAL-C275U4"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f273/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:45Z",
+   "http": 200,
+   "bytes": 1140214,
+   "sha1": "1d4c52e323c87d3f5e115d787fd1070baf4b2b22",
+   "kept": "untracked scratch (images/scratch/c275u4/), not committed",
+   "job": "BAL-C275U4"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f277/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:45Z",
+   "http": 200,
+   "bytes": 1156744,
+   "sha1": "49e3c37f6fb449fdfee467e4bc97984ff4188ed8",
+   "kept": "untracked scratch (images/scratch/c275u4/), not committed",
+   "job": "BAL-C275U4"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f278/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:45Z",
+   "http": 200,
+   "bytes": 1231457,
+   "sha1": "443510a949ca6084267c3781a93d953a620afdcf",
+   "kept": "untracked scratch (images/scratch/c275u4/), not committed",
+   "job": "BAL-C275U4"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f279/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:45Z",
+   "http": 200,
+   "bytes": 1225671,
+   "sha1": "a72dc0803bb4a348af0299fa7d90ea09b36c0d81",
+   "kept": "untracked scratch (images/scratch/c275u4/), not committed",
+   "job": "BAL-C275U4"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f280/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:45Z",
+   "http": 200,
+   "bytes": 1139612,
+   "sha1": "11d8018e76128e1d85f36f459d5637feec1d793f",
+   "kept": "untracked scratch (images/scratch/c275u4/), not committed",
+   "job": "BAL-C275U4"
+  }
  ]
 }

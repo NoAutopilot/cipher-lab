@@ -11,3 +11,8 @@ b167c275	L02	5	i	S	BAL-C275WL: glossed runs of the same Memoire c274-276 (c275wl
 b167c275	L02	15	p	S	BAL-C275WL: glossed runs of the same Memoire c274-276 (c275wl/glossed_pairs.tsv, count_shuffle.out): as L01 pos 5
 b167c275	L02	17	ti	M	BAL-C275WL: glossed runs of the same Memoire c274-276 (c275wl/glossed_pairs.tsv, count_shuffle.out): unmarked 77 = ti in 2 of 2 (pratiquer, particulieres); key 77' ti
 b167c275	L02	20	r	M	BAL-C275WL: glossed runs of the same Memoire c274-276 (c275wl/glossed_pairs.tsv, count_shuffle.out): unmarked 6 = r in 8 of 8; this token was read 6'? (mark uncertain) and the gloss pratiquer ends in r
+b167c275	L01	19	m	S	BAL-C275U4: at native resolution the u4 class splits by minim count (c275u4/glossed_pairs_u4.tsv, count_shuffle_u4.out): this token is three minims + crossed tail (s:m4); s:m4 = m in 3 of 3 glossed (c276 la somme, si petite somme, remplacer); within-run shuffle 0/200
+b167c275	L02	4	t	M	BAL-C275U4: at native resolution this token shows the two-minim u4 shape with crossed tail (both blind passes read 14?); s:u4 = t in 4 of 5 glossed (fust, et, soit, autres; m once in employer); value S for the sign, M here because the token's shape is one reader's eye against two passes
+b167c275	L02	17	ti	S	BAL-C275U4: unmarked 77 = ti in 3 of 3 glossed (pratiquer, particulieres, c276 petite); key 77' ti; within-run shuffle 0/200
+b167c275	L02	3	c	M	BAL-C275U4: s:x = c once under a gloss (c276 des suiects: 74' su, dloop i, w e, x c); under "pratiquer" x is the c of the period spelling praticquer (not counted); 1 scored occurrence, under the rule's 3
+b167c275	L02	18	c	M	BAL-C275U4: as L02 pos 3; read with the period spelling praticquer under the gloss pratiquer
