@@ -1,0 +1,24 @@
+line	tokens	uncertain	note
+A1			clear French words only, no cipher
+A2	q q T U m q h s n t f Ze o E q h d m 7 o E L U w- q B Ze d	3,5,7,8,12,15	begins with clear words "Le Mar. de Maturnoz"
+A3	q H .v. U f o U 4+ 1 f 7 6 E .v. U ff Ze t f B h 13 c t h 4+ o .v. oo 7 E E h t	3,6,7,8,10,24,28	starts q
+A4	Ze f t w- s t X o 4+ 7 h w- B U q o d m h U o 4 c d e U w- h f o E U 4+ h .v.	4,8,13,14,17,23,25	begins with margin text, ends cut
+B1	H E ff w- q o .v. w- D2 q d f .v.	5,8,10	begins with clear words, then cipher at right
+B2	4+ B 4 14 oo 7 B BOX2 t .v. Ze m U .v. o L 4 h q d 13 7 .v. w- s 3 e q f Ze w- 7	3,4,17,19,20,23,24,26,28	margin text at left
+B3	T U A .v. q L o 4 Z q 7 d oo h .v. b t T q w- 8 oo h d o E U .v. 6 h d o f	4,8,9,11,14,24,26,28	begins with clear words
+B4	U 4+ 3 w- h t 4+ o he U s f f 4+ s f g U BOX2 14 4+ h c s B w- 7 T A U D2 .v. d o	2,9,13,19,23,28	margin text at left
+B5	c o 4+ 7 Z U d .v. h q H B U 4+ 3 U 4+ R o L h 4+ o B U .v. B 4+ o E 4+ 3 U 4+ o	5,8,13,15,18,22,28,31	begins margin text
+B6	7 L t d w- o oo q B s h w- h U f D2 o L h BOX2 t .v. B e w- T 7 B Ze o g oo	3,6,9,10,15,29	margin text at left
+B7	me E 4+ 7 Z U U .v. B q .v. Ze A U 4+ B U q L w- B f o q m M 7 L Ze c g U	1,5,8,11,14,17,20	begins with clear words "me"
+D1	7 T c U t .v. o D2 A B t q 8 h 1 w- t BOX2 Ze h .v. he f U f 8 he U s ?hooked-s E 8 H	3,19,22,23,26,29	starts with clear word at left margin
+D2	f 7 6 13 c n U q M ?hooked-s q w- 7 U M o Ze e U BOX2 h .v. o f L U 7 f U q T 8 he t d .v.	10,11,23,28,31	margin text at left
+D3	d U f 8 H t 7 s 12 M o s w- T D2 14 n U d oo Ze m o q L 6 U s e ?hooked-s w- h f d	2,13,22,25,27	margin word "par" at left
+D4	q ?ff-like n 7 T m U m d D2 B ff m d ?hooked-g c B d h c t B he .v. m 14 f B T c q	2,16,17,22,25	
+D5	N o Ze f U ?hooked-f U ?x-form d h T w- o .v. d n U 14 T d B h d Ze o ff m 4+ o d U	1,7,8,25,28	starts with clear word at left margin
+D6	f m o Ze .v. 13 c B o ?q-form f U w- c o T Ze 7 s m w- h Ze D2 w- B oo o f h	11,16,26,29	
+D7	?hooked-Z U q q ff he Ze oo	1,5,6	line ends with clear French words (Pour cette occasion ...)
+E1	d U f 7 E Ze ?hooked-s A h ?q-form o o U T ?ff h c ff q w- h Ze Ze d .v. m B h e	7,10,19,21	
+E2	e Ze q f 8 8 o 4+ h .v. d U m M D2 B f h o s n o t BOX2 w- 3 d U	2,6,7,12	starts with e-like cursive
+E3	U q ff w- h U s o E f U 104 c o .v. d 14 4+ ff h he e 14 w-	3,5,17,18,20	
+E4	t T w- D2 ?q-form 4+ 6 Ze D2 y h d ff U c t f m h ?hooked ff Ze f 6 b h 4+ t .v. E	5,15,18,20,23	line ends with clear words (Par ... la loue des ...)
+E5		1	whole line clear French cursive, no cipher signs

@@ -1,0 +1,631 @@
+line	position	sign	confidence	alt	why
+A2	1	q	H		agree
+A2	2	q	H		agree
+A2	3	T	H		agree
+A2	4	U	H		agree
+A2	5	m	H		agree
+A2	6	q	H		agree
+A2	7	h	H		agree
+A2	8	s	H		agree
+A2	9	n	H		agree
+A2	10	t	H		agree
+A2	11	f	M	B:d	differ
+A2	12	Ze	H		agree
+A2	13	o	H		agree
+A2	14	E	H		agree
+A2	15	q	H		agree
+A2	16	h	H		agree
+A2	17	d	H		agree
+A2	18	m	H		agree
+A2	19	7	H		agree
+A2	20	o	H		agree
+A2	21	E	H		agree
+A2	22	L	H		agree
+A2	23	U	H		agree
+A2	24	w-	H		agree
+A2	25	q	H		agree
+A2	26	B	H		agree
+A2	27	Ze	H		agree
+A2	28	d	H		agree
+A3	1	q	H		agree
+A3	2	H	H		agree
+A3	3	.v.	H		agree
+A3	4	U	H		agree
+A3	5	f	H		agree
+A3	6	o	H		agree
+A3	7		M	A:-	gap
+A3	8	U	M	B:14	differ
+A3	9	4+	H		agree
+A3	10	1	H		agree
+A3	11	f	M	B:d	differ
+A3	12	7	H		agree
+A3	13	6	H		agree
+A3	14	E	H		agree
+A3	15	.v.	H		agree
+A3	16	M	M	A:-	gap
+A3	17	U	M	B:D2	differ
+A3	18	ff	H		agree
+A3	19	Ze	H		agree
+A3	20	t	H		agree
+A3	21	f	H		agree
+A3	22	B	H		agree
+A3	23	h	H		agree
+A3	24	13	H		agree
+A3	25	c	H		agree
+A3	26	t	H		agree
+A3	27	h	H		agree
+A3	28	4+	H		agree
+A3	29	o	H		agree
+A3	30	.v.	H		agree
+A3	31	oo	H		agree
+A3	32	7	H		agree
+A3	33	E	H		agree
+A3	34	E	H		agree
+A3	35	h	H		agree
+A3	36	t	H		agree
+A4	1	Ze	H		agree
+A4	2	f	H		agree
+A4	3	t	H		agree
+A4	4	w-	H		agree
+A4	5	s	H		agree
+A4	6	t	H		agree
+A4	7	X	H		agree
+A4	8	o	H		agree
+A4	9	4+	H		agree
+A4	10	7	H		agree
+A4	11	h	H		agree
+A4	12	w-	H		agree
+A4	13	B	H		agree
+A4	14	U	M	B:M	differ
+A4	15	q	H		agree
+A4	16	o	H		agree
+A4	17	d	H		agree
+A4	18	m	H		agree
+A4	19	h	H		agree
+A4	20	U	M	B:M	differ
+A4	21	o	H		agree
+A4	22	4	H		agree
+A4	23	c	H		agree
+A4	24	d	H		agree
+A4	25	e	M	B:-	gap
+A4	26	U	H		agree
+A4	27	w-	H		agree
+A4	28	h	H		agree
+A4	29	f	H		agree
+A4	30	o	H		agree
+A4	31	E	H		agree
+A4	32	U	H		agree
+A4	33	4+	M	B:t	differ
+A4	34	h	H		agree
+A4	35	.v.	H		agree
+B1	1	H	H		agree
+B1	2	E	H		agree
+B1	3	ff	H		agree
+B1	4	w-	H		agree
+B1	5	q	H		agree
+B1	6	o	H		agree
+B1	7	.v.	H		agree
+B1	8	w-	H		agree
+B1	9	D2	H		agree
+B1	10	q	H		agree
+B1	11	d	H		agree
+B1	12	f	H		agree
+B1	13	.v.	M	B:V	differ
+B2	1	4+	H		agree
+B2	2	B	H		agree
+B2	3	4	H		agree
+B2	4	14	H		agree
+B2	5	oo	H		agree
+B2	6	7	H		agree
+B2	7	B	H		agree
+B2	8	BOX2	H		agree
+B2	9	t	H		agree
+B2	10	.v.	H		agree
+B2	11	Ze	H		agree
+B2	12	m	H		agree
+B2	13	U	H		agree
+B2	14	.v.	H		agree
+B2	15	o	H		agree
+B2	16	L	H		agree
+B2	17	4	H		agree
+B2	18	h	H		agree
+B2	19	q	H		agree
+B2	20	d	M	B:B	differ
+B2	21	13	H		agree
+B2	22	c	M	A:-	gap
+B2	23	7	H		agree
+B2	24	.v.	H		agree
+B2	25	w-	H		agree
+B2	26	s	H		agree
+B2	27	3	H		agree
+B2	28	e	H		agree
+B2	29	q	H		agree
+B2	30	f	M	B:h	differ
+B2	31	Ze	H		agree
+B2	32	w-	H		agree
+B2	33	7	H		agree
+B3	1	T	H		agree
+B3	2	U	H		agree
+B3	3	A	H		agree
+B3	4	.v.	H		agree
+B3	5	q	H		agree
+B3	6	L	H		agree
+B3	7	o	H		agree
+B3	8	4	H		agree
+B3	9	Z	M	B:Ze	differ
+B3	10	q	H		agree
+B3	11	7	H		agree
+B3	12	d	M	B:U	differ
+B3	13	oo	H		agree
+B3	14	h	H		agree
+B3	15	.v.	H		agree
+B3	16	b	M	B:B	differ
+B3	17	t	H		agree
+B3	18	T	H		agree
+B3	19	q	H		agree
+B3	20	w-	H		agree
+B3	21	8	H		agree
+B3	22	oo	H		agree
+B3	23	h	H		agree
+B3	24	d	H		agree
+B3	25	o	H		agree
+B3	26	E	H		agree
+B3	27	U	H		agree
+B3	28	.v.	M	A:-	gap
+B3	29	.v.	H		agree
+B3	30	6	M	B:h	differ
+B3	31	h	H		agree
+B3	32	d	H		agree
+B3	33	o	H		agree
+B3	34	f	H		agree
+B4	1	U	H		agree
+B4	2	4+	H		agree
+B4	3	3	H		agree
+B4	4	w-	H		agree
+B4	5	h	H		agree
+B4	6	t	H		agree
+B4	7	4+	M	B:t	differ
+B4	8	o	H		agree
+B4	9	he	H		agree
+B4	10	U	H		agree
+B4	11	s	H		agree
+B4	12	f	H		agree
+B4	13	f	M	B:q	differ
+B4	14	4+	H		agree
+B4	15	s	H		agree
+B4	16	f	H		agree
+B4	17	g	H		agree
+B4	18	U	H		agree
+B4	19	BOX2	H		agree
+B4	20	14	H		agree
+B4	21	4+	M	B:4	differ
+B4	22	h	H		agree
+B4	23	c	H		agree
+B4	24	s	H		agree
+B4	25	B	H		agree
+B4	26	w-	H		agree
+B4	27	7	H		agree
+B4	28	T	H		agree
+B4	29	A	H		agree
+B4	30	U	H		agree
+B4	31	D2	H		agree
+B4	32	.v.	H		agree
+B4	33	d	H		agree
+B4	34	o	H		agree
+B5	1	c	M	B:Ze	differ
+B5	2	o	H		agree
+B5	3	4+	H		agree
+B5	4	7	H		agree
+B5	5	Z	H		agree
+B5	6	U	H		agree
+B5	7	d	M	B:v	differ
+B5	8	.v.	H		agree
+B5	9	h	H		agree
+B5	10	q	H		agree
+B5	11	H	H		agree
+B5	12	B	H		agree
+B5	13	U	M	B:Ze	differ
+B5	14	4+	H		agree
+B5	15	3	H		agree
+B5	16	U	H		agree
+B5	17	4+	H		agree
+B5	18	R	H		agree
+B5	19	o	H		agree
+B5	20	L	H		agree
+B5	21	h	H		agree
+B5	22	4+	H		agree
+B5	23	o	H		agree
+B5	24	B	H		agree
+B5	25	U	H		agree
+B5	26	.v.	H		agree
+B5	27	B	H		agree
+B5	28	4+	M	B:4	differ
+B5	29	o	H		agree
+B5	30	E	H		agree
+B5	31	4+	H		agree
+B5	32	3	H		agree
+B5	33	U	H		agree
+B5	34	4+	M	B:4	differ
+B5	35	o	H		agree
+B6	1	7	H		agree
+B6	2	L	M	B:f	differ
+B6	3	t	H		agree
+B6	4	d	H		agree
+B6	5	w-	H		agree
+B6	6	o	H		agree
+B6	7	oo	H		agree
+B6	8	q	H		agree
+B6	9	B	H		agree
+B6	10	7	M	A:-	gap
+B6	11	s	H		agree
+B6	12	h	M	B:-	gap
+B6	13	w-	H		agree
+B6	14	h	H		agree
+B6	15	c	M	A:-	gap
+B6	16	U	H		agree
+B6	17	d	M	A:-	gap
+B6	18	f	M	B:M	differ
+B6	19	D2	H		agree
+B6	20	o	H		agree
+B6	21	L	M	B:f	differ
+B6	22	h	H		agree
+B6	23	BOX2	H		agree
+B6	24	t	H		agree
+B6	25	.v.	H		agree
+B6	26	B	H		agree
+B6	27	e	H		agree
+B6	28	w-	H		agree
+B6	29	T	H		agree
+B6	30	7	H		agree
+B6	31	B	H		agree
+B6	32	Ze	H		agree
+B6	33	o	H		agree
+B6	34	g	H		agree
+B6	35	oo	H		agree
+B7	1	me	M	B:-	gap
+B7	2	E	H		agree
+B7	3	4+	H		agree
+B7	4	7	H		agree
+B7	5	Z	H		agree
+B7	6	U	M	B:-	gap
+B7	7	U	H		agree
+B7	8	.v.	M	B:-	gap
+B7	9	B	M	B:v	differ
+B7	10	q	H		agree
+B7	11	.v.	H		agree
+B7	12	Ze	H		agree
+B7	13	A	H		agree
+B7	14	U	H		agree
+B7	15	4+	M	B:f	differ
+B7	16	B	H		agree
+B7	17	U	H		agree
+B7	18	q	H		agree
+B7	19	L	M	B:f	differ
+B7	20	w-	H		agree
+B7	21	B	H		agree
+B7	22	f	H		agree
+B7	23	o	H		agree
+B7	24	q	H		agree
+B7	25	m	H		agree
+B7	26	M	H		agree
+B7	27	7	H		agree
+B7	28	L	M	B:f	differ
+B7	29	Ze	H		agree
+B7	30	c	H		agree
+B7	31	g	H		agree
+B7	32	U	H		agree
+D1	1	7	H		agree
+D1	2	T	H		agree
+D1	3	c	H		agree
+D1	4	U	H		agree
+D1	5	t	M	B:d	differ
+D1	6	.v.	H		agree
+D1	7	o	H		agree
+D1	8	D2	H		agree
+D1	9	A	H		agree
+D1	10	B	H		agree
+D1	11	t	H		agree
+D1	12	q	H		agree
+D1	13	8	H		agree
+D1	14	h	H		agree
+D1	15	1	H		agree
+D1	16	w-	H		agree
+D1	17	t	H		agree
+D1	18	BOX2	H		agree
+D1	19	Ze	H		agree
+D1	20	h	H		agree
+D1	21	.v.	H		agree
+D1	22	he	H		agree
+D1	23	f	H		agree
+D1	24	U	H		agree
+D1	25	f	H		agree
+D1	26	8	H		agree
+D1	27	he	H		agree
+D1	28	U	H		agree
+D1	29	s	H		agree
+D1	30	?hooked-s	M	B:q	differ
+D1	31	E	H		agree
+D1	32	8	H		agree
+D1	33	H	M	B:dd	differ
+D2	1	f	H		agree
+D2	2	7	H		agree
+D2	3	6	M	B:b	differ
+D2	4	13	H		agree
+D2	5	c	H		agree
+D2	6	n	H		agree
+D2	7	U	H		agree
+D2	8	q	H		agree
+D2	9	M	M	B:m	differ
+D2	10	?hooked-s	M	B:c	differ
+D2	11	q	H		agree
+D2	12	w-	H		agree
+D2	13	7	M	B:T	differ
+D2	14	U	M	B:X	differ
+D2	15	M	M	B:m	differ
+D2	16	o	H		agree
+D2	17	Ze	H		agree
+D2	18	e	H		agree
+D2	19	U	H		agree
+D2	20	BOX2	H		agree
+D2	21	h	H		agree
+D2	22	.v.	H		agree
+D2	23	o	H		agree
+D2	24	f	H		agree
+D2	25	L	M	B:f	differ
+D2	26	U	M	B:R	differ
+D2	27	7	M	B:t	differ
+D2	28	f	H		agree
+D2	29	U	M	B:X	differ
+D2	30	q	H		agree
+D2	31	T	H		agree
+D2	32	8	M	B:B	differ
+D2	33	he	H		agree
+D2	34	t	H		agree
+D2	35	d	H		agree
+D2	36	.v.	H		agree
+D3	1	d	M	B:0	differ
+D3	2	U	H		agree
+D3	3	f	H		agree
+D3	4	8	H		agree
+D3	5	H	M	B:dd	differ
+D3	6	t	H		agree
+D3	7	7	H		agree
+D3	8	s	H		agree
+D3	9	12	H		agree
+D3	10	M	M	B:m	differ
+D3	11	o	H		agree
+D3	12	s	H		agree
+D3	13	w-	H		agree
+D3	14	T	H		agree
+D3	15	D2	H		agree
+D3	16	14	H		agree
+D3	17	n	H		agree
+D3	18	U	H		agree
+D3	19	d	H		agree
+D3	20	oo	H		agree
+D3	21	Ze	M	B:3	differ
+D3	22	m	H		agree
+D3	23	o	H		agree
+D3	24	q	H		agree
+D3	25	L	M	B:-	gap
+D3	26	6	M	B:b	differ
+D3	27	U	H		agree
+D3	28	s	H		agree
+D3	29	e	H		agree
+D3	30	?hooked-s	M	B:o	differ
+D3	31	w-	H		agree
+D3	32	h	H		agree
+D3	33	f	H		agree
+D3	34	d	M	B:t	differ
+D4	1	q	H		agree
+D4	2	?ff-like	M	B:4+	differ
+D4	3	n	M	B:h	differ
+D4	4	7	H		agree
+D4	5	T	H		agree
+D4	6	m	H		agree
+D4	7	U	H		agree
+D4	8	m	H		agree
+D4	9	d	H		agree
+D4	10	D2	H		agree
+D4	11	B	H		agree
+D4	12	ff	M	B:dd	differ
+D4	13	m	H		agree
+D4	14	d	H		agree
+D4	15	?hooked-g	M	B:q	differ
+D4	16	c	H		agree
+D4	17	B	M	B:b	differ
+D4	18	d	H		agree
+D4	19	h	H		agree
+D4	20	c	H		agree
+D4	21	t	H		agree
+D4	22	B	M	B:b	differ
+D4	23	he	H		agree
+D4	24	.v.	H		agree
+D4	25	m	H		agree
+D4	26	14	H		agree
+D4	27	f	H		agree
+D4	28	B	H		agree
+D4	29	T	H		agree
+D4	30	c	H		agree
+D4	31	q	H		agree
+D5	1	N	M	B:h	differ
+D5	2	o	H		agree
+D5	3	Ze	M	B:3	differ
+D5	4	f	H		agree
+D5	5	U	H		agree
+D5	6	?hooked-f	M	B:-	gap
+D5	7	U	M	B:f	differ
+D5	8	?x-form	M	B:X	differ
+D5	9	d	M	B:8	differ
+D5	10	h	H		agree
+D5	11	T	H		agree
+D5	12	w-	H		agree
+D5	13	o	M	B:t	differ
+D5	14	.v.	H		agree
+D5	15	d	H		agree
+D5	16	n	H		agree
+D5	17	U	H		agree
+D5	18	14	H		agree
+D5	19	T	H		agree
+D5	20	d	H		agree
+D5	21	B	M	B:b	differ
+D5	22	h	H		agree
+D5	23	d	M	B:f	differ
+D5	24	Ze	H		agree
+D5	25	o	H		agree
+D5	26	ff	M	B:dd	differ
+D5	27	m	H		agree
+D5	28	4+	H		agree
+D5	29	o	H		agree
+D5	30	d	H		agree
+D5	31	U	H		agree
+D6	1	f	M	B:1	differ
+D6	2	m	H		agree
+D6	3	o	H		agree
+D6	4	Ze	H		agree
+D6	5	.v.	H		agree
+D6	6	13	H		agree
+D6	7	c	H		agree
+D6	8	B	M	B:b	differ
+D6	9	o	H		agree
+D6	10	?q-form	M	B:q	differ
+D6	11	f	H		agree
+D6	12	U	H		agree
+D6	13	w-	H		agree
+D6	14	c	H		agree
+D6	15	o	H		agree
+D6	16	T	H		agree
+D6	17	Ze	H		agree
+D6	18	7	H		agree
+D6	19	s	H		agree
+D6	20	m	H		agree
+D6	21	w-	H		agree
+D6	22	h	H		agree
+D6	23	Ze	M	B:c	differ
+D6	24	D2	H		agree
+D6	25	w-	H		agree
+D6	26	B	H		agree
+D6	27	oo	H		agree
+D6	28	o	H		agree
+D6	29	f	H		agree
+D6	30	h	H		agree
+D7	1	?hooked-Z	M	B:c	differ
+D7	2	U	H		agree
+D7	3	q	H		agree
+D7	4	q	H		agree
+D7	5	ff	M	B:-	gap
+D7	6	he	M	B:dd	differ
+D7	7	Ze	H		agree
+D7	8	oo	H		agree
+E1	1	d	H		agree
+E1	2	U	H		agree
+E1	3	f	H		agree
+E1	4	7	H		agree
+E1	5	E	H		agree
+E1	6	Ze	H		agree
+E1	7	?hooked-s	M	B:f	differ
+E1	8	A	H		agree
+E1	9	h	M	B:-	gap
+E1	10	?q-form	M	B:q	differ
+E1	11	o	M	B:p	differ
+E1	12	o	H		agree
+E1	13	U	M	B:R	differ
+E1	14	T	H		agree
+E1	15	?ff	M	B:-	gap
+E1	16	h	M	B:q	differ
+E1	17	c	H		agree
+E1	18	ff	M	B:dd	differ
+E1	19	q	H		agree
+E1	20	w-	H		agree
+E1	21	h	H		agree
+E1	22	Ze	M	B:c	differ
+E1	23	Ze	M	B:z	differ
+E1	24	d	H		agree
+E1	25	.v.	H		agree
+E1	26	m	H		agree
+E1	27	B	M	B:b	differ
+E1	28	h	H		agree
+E1	29	e	H		agree
+E2	1	e	H		agree
+E2	2	Ze	H		agree
+E2	3	q	H		agree
+E2	4	f	H		agree
+E2	5	8	H		agree
+E2	6	8	H		agree
+E2	7	o	H		agree
+E2	8	4+	H		agree
+E2	9	h	H		agree
+E2	10	.v.	H		agree
+E2	11	d	H		agree
+E2	12	U	H		agree
+E2	13	m	H		agree
+E2	14	M	H		agree
+E2	15	D2	H		agree
+E2	16	B	H		agree
+E2	17	f	H		agree
+E2	18	h	H		agree
+E2	19	o	H		agree
+E2	20	s	H		agree
+E2	21	n	H		agree
+E2	22	o	H		agree
+E2	23	t	H		agree
+E2	24	BOX2	H		agree
+E2	25	w-	H		agree
+E2	26	3	H		agree
+E2	27	d	H		agree
+E2	28	U	H		agree
+E3	1	U	H		agree
+E3	2	q	H		agree
+E3	3	ff	M	B:dd	differ
+E3	4	w-	H		agree
+E3	5	h	H		agree
+E3	6	U	H		agree
+E3	7	s	H		agree
+E3	8	o	H		agree
+E3	9	E	H		agree
+E3	10	f	H		agree
+E3	11	U	H		agree
+E3	12	104	H		agree
+E3	13	c	H		agree
+E3	14	o	H		agree
+E3	15	.v.	H		agree
+E3	16	d	H		agree
+E3	17	14	H		agree
+E3	18	4+	H		agree
+E3	19	ff	M	B:dd	differ
+E3	20	h	H		agree
+E3	21	he	M	B:c	differ
+E3	22	e	H		agree
+E3	23	U	M	A:-	gap
+E3	24	14	H		agree
+E3	25	w-	H		agree
+E4	1	t	M	B:-	gap
+E4	2	T	M	B:-	gap
+E4	3	w-	M	B:-	gap
+E4	4	D2	M	B:-	gap
+E4	5	?q-form	M	B:-	gap
+E4	6	4+	M	B:-	gap
+E4	7	6	M	B:-	gap
+E4	8	Ze	M	B:-	gap
+E4	9	D2	M	B:-	gap
+E4	10	y	M	B:-	gap
+E4	11	h	M	B:-	gap
+E4	12	d	M	B:-	gap
+E4	13	ff	M	B:-	gap
+E4	14	U	M	B:-	gap
+E4	15	c	M	B:-	gap
+E4	16	t	M	B:-	gap
+E4	17	f	M	B:-	gap
+E4	18	m	M	B:-	gap
+E4	19	h	M	B:-	gap
+E4	20	?hooked	M	B:-	gap
+E4	21	ff	M	B:dd	differ
+E4	22	Ze	H		agree
+E4	23	f	H		agree
+E4	24	6	H		agree
+E4	25	b	H		agree
+E4	26	h	H		agree
+E4	27	4+	M	B:-	gap
+E4	28	t	H		agree
+E4	29	.v.	H		agree
+E4	30	E	H		agree

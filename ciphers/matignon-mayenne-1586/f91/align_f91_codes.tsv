@@ -1,0 +1,41 @@
+code	key_value	key_grade	n_aligned	top_chunk	top_share	class
+U		absent	34	e	0.88	candidate-M
+o	i	H	29	a	0.55	undecided
+h	e	H	25	e	0.96	confirmed
+.v.	n	H	22	n	0.95	confirmed
+q	u	H	21	u	0.62	confirmed
+w-	d	H	21	d	0.76	confirmed
+7	o	H	18	o	0.78	confirmed
+f	c|u	M	18	r	0.61	conflict
+B	i|y	M	17	i	0.53	undecided
+d	s	H	15	s	0.47	undecided
+t	e	H	14	e	0.50	undecided
+Ze	t	H	12	t	0.75	confirmed
+4+	m	H	12	m	0.67	confirmed
+T		absent	12	r	0.75	candidate-M
+m	t	H	11	t	0.91	confirmed
+E	i|y	M	10	y	0.30	undecided
+c	p	H	9	l	0.89	conflict
+s	u	H	9	u	0.89	confirmed
+oo	d	H	7	d	0.43	undecided
+D2		absent	7	a	0.86	candidate-M
+14	que	H	5	que	0.40	undecided
+BOX2		absent	5	u	0.60	candidate-M
+8	g	H	5	g	0.60	confirmed
+n	l	H	4	l	1.00	confirmed
+13	qui	H	4	qui	0.50	undecided
+4		absent	4	u	0.50	undecided
+e	r	H	4	r	1.00	confirmed
+A	l	H	4	l	0.75	confirmed
+he	l	H	4	l	1.00	confirmed
+L	r	H	3	r	1.00	confirmed
+H	o	H	2	o	1.00	confirmed
+1		absent	2	s	1.00	candidate-M
+ff	n|o	M	2	n	0.50	undecided
+g	u	H	2	u	1.00	confirmed
+Z	t	H	2	g	1.00	conflict
+3	e	H	2	n	1.00	conflict
+6	i|n|s	M	1	s	1.00	undecided
+X	a	H	1	a	1.00	undecided
+R	p	H	1	p	1.00	undecided
+12	il	H	1	xie	1.00	undecided
