@@ -1,0 +1,78 @@
+leaf	tokid	crop	settled	known	kind	n_digits	n_signs	status	x	y	w	h	rh	rw
+0089	T021	c0089R02_L01	45	4	clean	9	6	unlocated						
+0089	T025	c0089R02_L01	59	9	clean	9	6	unlocated						
+0136	T023	c0136R01_L01	14	4	clean	18	45	unlocated						
+0136	T029	c0136R02_L01	43	4	clean	21	42	unlocated						
+0136	T044	c0136R05_L01	43	4	clean	11	20	unlocated						
+0309	T001	c0309R01_L01	198	9	clean	3	2	unlocated						
+0309	T008	c0309R03_L01	198	9	clean	3	0	unlocated						
+0309	T017	c0309R05_L01	29	9	clean	14	9	unlocated						
+0309	T032	c0309R08_L01	29	9	clean	21	17	unlocated						
+0309	T036	c0309R10_L01	198	9	clean	3	8	unlocated						
+0309	T043	c0309R13_L01	198	9	clean	3	4	unlocated						
+0309	T047	c0309R15_L01	198	9	clean	3	3	located	64	12	42	50	3.571	3.000
+0312	T007	c0312A02_L01	198	9	clean	3	12	unlocated						
+0312	T016	c0312A09_L01	198	9	clean	3	6	unlocated						
+0312	T018	c0312A11_L01	198	9	clean	3	2	unlocated						
+0312	T028	c0312A14_L01	47	4	clean	14	33	unlocated						
+0312	T036	c0312A17_L01	191	9	clean	3	3	located	87	11	23	28	2.000	1.643
+0312	T037	c0312A18_L01	191	9	clean	3	3	located	80	19	29	32	2.667	2.417
+0312	T038	c0312A19_L01	198	9	clean	3	3	located	15	0	27	17	0.872	1.385
+0312	T042	c0312A21_L01	198	9	clean	3	4	unlocated						
+0312	T044	c0312A23_L01	198	9	clean	3	0	unlocated						
+0312	T046	c0312A25_L01	198	9	clean	3	6	unlocated						
+0314	T011	c0314R05_L01	292	9	clean	3	5	unlocated						
+0314	T019	c0314R07_L01	14	4	clean	18	17	unlocated						
+0314	T023	c0314R09_L01	292	9	clean	3	3	located	79	11	26	21	1.000	1.238
+0314	T032	c0314R11_L01	14	4	clean	18	15	unlocated						
+0314	T044	c0314R20_L01	198	9	clean	3	5	unlocated						
+0474	T005	c0474L_L02	9	9	clean	37	69	unlocated						
+0474	T007	c0474L_L02	39	9	clean	37	69	unlocated						
+0474	T026	c0474R_L01	39	9	clean	50	30	unlocated						
+0474	T061	c0474R_L03	4	9	conflict	10	46	unlocated						
+0474	T066	c0474R_L06	34	4	clean	13	25	unlocated						
+0474	T070	c0474R_L06	14	4	clean	13	25	unlocated						
+0474	T072	c0474R_L07	39	9	clean	49	56	unlocated						
+0474	T074	c0474R_L07	29	9	clean	49	56	unlocated						
+0474	T081	c0474R_L07	39	9	clean	49	56	unlocated						
+0474	T094	c0474R_L07	43	4	clean	49	56	unlocated						
+0474	T115	c0474R_L10	14	4	clean	36	63	unlocated						
+0474	T119	c0474R_L10	34	9	conflict	36	63	unlocated						
+0474	T120	c0474R_L10	29	9	clean	36	63	unlocated						
+0474	T123	c0474R_L10	14	4	clean	36	63	unlocated						
+0490	T003	c0490R01_L01	9	9	clean	54	42	unlocated						
+0490	T004	c0490R01_L01	4	4	clean	54	42	unlocated						
+0490	T008	c0490R01_L01	29	9	clean	54	42	unlocated						
+0490	T016	c0490R01_L01	34	4	clean	54	42	unlocated						
+0490	T024	c0490R01_L01	46	4	clean	54	42	unlocated						
+0490	T029	c0490R02_L01	54	4	clean	22	25	unlocated						
+0490	T034	c0490R02_L01	46	4	clean	22	25	unlocated						
+0490	T046	c0490R05_L01	74	4	clean	15	28	unlocated						
+0490	T048	c0490R05_L01	9	9	clean	15	28	unlocated						
+0490	T053	c0490R06_L01	48	4	clean	13	20	unlocated						
+0490	T068	c0490R11_L01	41	9	conflict	16	39	unlocated						
+0490	T074	c0490R11_L01	24	4	clean	16	39	unlocated						
+0490	T083	c0490R12_L01	9	9	clean	34	65	unlocated						
+0490	T087	c0490R12_L01	9	9	clean	34	65	unlocated						
+0490	T094	c0490R13_L01	54	9	conflict	13	64	unlocated						
+0490	T109	c0490R14_L01	54	9	conflict	26	84	unlocated						
+0490	T112	c0490R14_L01	4	9	conflict	26	84	unlocated						
+0490	T138	c0490R17_L01	39	9	clean	35	118	unlocated						
+0490	T144	c0490R17_L01	46	4	clean	35	118	unlocated						
+0490L	U005	c0490L02_L01	59	9	clean	23	26	unlocated						
+0490L	U040	c0490L05_L01	14	4	clean	14	46	unlocated						
+0494	T019	c0494L_L02	9	9	clean	48	38	unlocated						
+0494	T021	c0494L_L02	59	9	clean	48	38	unlocated						
+0494	T035	c0494L_L05	54	9	conflict	47	28	unlocated						
+0494	T085	c0494L_L09	39	9	clean	48	43	unlocated						
+0494	T087	c0494L_L09	24	4	clean	48	43	unlocated						
+0494	T095	c0494L_L09	90	9	clean	48	43	unlocated						
+0494	T097	c0494L_L09	29	9	clean	48	43	unlocated						
+0494	T106	c0494L_L10	14	4	clean	29	29	located	187	39	35	14	1.556	3.889
+0494	T123	c0494L_L14	14	4	clean	33	42	unlocated						
+0494	T133	c0494L_L14	14	4	clean	33	42	unlocated						
+0494	T149	c0494L_L15	54	9	conflict	47	29	unlocated						
+0494	T151	c0494L_L15	54	4	clean	47	29	unlocated						
+0494	T154	c0494L_L15	14	4	clean	47	29	unlocated						
+0494	T157	c0494L_L16	34	4	clean	46	43	unlocated						
+0494	T159	c0494L_L16	46	4	clean	46	43	unlocated						
