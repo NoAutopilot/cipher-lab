@@ -1,0 +1,23 @@
+// R5471 (DECODE scat. 1597 no. 171, later hand "Studi Calligrafia = Ciffre"; nomenclator Rex Romanorum, Rex Renatus, Alf., Dux Burgundie) alphabet-block sign stock in duke_labels.md labels.
+// One reader (SFZ-DEC4 account 1, 15 Oct 2026), by eye from a 220 dpi render, NOT blind (the reader knew the Duke's labels and C pairs); grade M.
+// Column 'firm' = 1 for a clear shape match, 0 for a doubtful one. Shapes with no duke_labels.md label (4, =, curl, V, circled dot, 7, M, 1) omitted.
+label	firm	shape_on_sheet
+3	1	numeral 3 / plain yogh (under a, row 2; under z/3 header)
+N3	1	2-shape (under a, row 3; under q, row 2)
+N12	1	three dots without bar (under b)
+t	1	plus / T (under r; under c, row 3)
+Y	1	y-shape (under d)
+b	1	b / 6 (under e)
+O	1	small o with long tail to the right (under f)
+#	1	double-barred cross (under h, row 1; under g)
+f	1	long s with crossbar (under h, row 2; under i)
+8	1	figure 8 (under h, row 3)
+D	1	division sign (under k, row 3; under x)
+N5	1	long s without crossbar (under l)
+q	1	q / 9-like with stroke (under o)
+x	1	x (under s, row 3)
+N4	1	L-shaped corner (under v)
+g	0	9-shape (under c, row 2)
+h	0	h-like (under d, row 2)
+J	0	yogh-like with descender (under e, row 3)
+P	0	b with barred ascender (under k)

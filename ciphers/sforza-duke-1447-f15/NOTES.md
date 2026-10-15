@@ -562,3 +562,59 @@ Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0
 - [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
 - [ ] retry: DECODE scat. 1597 nos. 106-114, 169-171 and the six second pages by heading, then any 1440s sheet through the stock-overlap test and the g1 gloss scorer
 Verdict: keep going: 3 internal gaps; cheapest next: DECODE scat. 1597 nos. 106-114, 169-171 and six P2 files by heading, one login (~30 requests), ~$1.5
+
+## SFZ-DEC4 account 1 (15 Oct 2026 02:21-02:4x UTC by date -u, LANE DEFAULT-A1-0206-15): DECODE scat. 1597 nos. 106-114, 169-171 and six P2 files by heading -- no sheet headed Filippo Maria; nos. 170-171 are 1440s keys, not the slips' key by stock overlap
+Job: the account-4 SFZ-DEC4's named next step (same job id, run on account 1): nos. 106-114, 169-171 and the second pages of 81, 85, 87, 90,
+100 and 105 by heading, SFZ-DEC3/SFZ-DEC4's method; for any 1446-47 key the stock-overlap test; no decode, no blind reads. Credit as SFZ-DEC
+(Bourdeau's thumbnail scan of the 1597 records).
+- **Prior work.** `tools/prior_work.py sforza-duke-1447-f15 --item-spec 'it1584 f.15' --step-type lookup --offline`: exit 0 (proceed; four
+  generic UNCHECKED rows, no unit ids: a key lookup, recorded in prior-work.tsv). Check 1 by hand: SFZ-DEC..SFZ-DEC4 opened nos. 1-105 at P1
+  only; none of nos. 106-114, 169-171 or the six P2 files had been opened.
+- **Route.** One browser login (`tools/decode_browser_login.js 5406 --max-files 0 --delay 2500 --listen`), record N = DECODE 5300+N for
+  106-114 and 5469-5471 for 169-171 (ids from sources/decode/keys-all-2026-09-28-merged.tsv). A finding for later sweeps: a multi-page
+  record's pages share one file id (`IMG_R5406_I30412_P1.pdf`, `..._P2.pdf`), so a P2 is fetched by its P1 name with P2. Requests: 35
+  (login run 2: login + RecordsView/5406; listener 33: 7 RecordsView pages, 26 file gets = 21 PDFs + 5 placeholder misses), all 200.
+  Table `decode_1597/records.tsv` (rows 5406-5414, 5469-5471; P2 notes on 5381, 5385, 5387, 5390, 5400, 5405); sha1s
+  `decode_1597/manifest.json` (PDFs not committed). Headings read by one reader from 110 dpi renders.
+- **What they are.** Sforza era or later by heading or nomenclator: 106 Agostino Adorno (Genoa, nomenclator Duca de Milan, Re Ferrando);
+  107 and 111 a correspondent "Foroiuliensis" (Re Ferrando: after 1458); 108 Battista Sfondrati (fratello del Turco); 109 the orators at
+  Rome (undated); 110 a cardinal, dated 5 Oct 1484 (Conte Hier.mo); 112 a Roman cardinals' nomenclator with Comes Hieronymus; 169 four
+  code words for the Kings of England, Hungary and Aragon/Spain "suo padre" / "suo fiolo"; 5387 P2 Antonio de Appiano (Castellano de
+  porta Zobia, Paolo Antonio Trotti); 5390 P2 Matteo di Capua (Aragon of Naples); 5400 P2 the Marquis of Mantua (numbered syllabary);
+  5405 P2 a 16th-century code-name list (Lega universale, Parma, Piacenza, Crema, Ast). Not keys: 113 a Japanese iroha table with Italian
+  romanisation; 114 a later cover ("Cifre 106") and a cipher letter on P2; 5385 P2 Greek phrases ("parole Grecche"). 5381 P2 an unheaded,
+  sparse alphabet sheet. **No sheet headed Filippo Maria, Visconti or Barbavara.** P3 of 81, 85, 87, 90, 100 and 105 not fetched.
+- **No. 170 (R5470), "Zifra Andree Biragi cum domino Nicolao [Marco?]"** (later hand: "Studi Calligrafici Cifre"). Its nomenclator names
+  Comunitas Mediolani, Comes Franciscus, Giorgio and Oldrado Lampugnano, Carlo [Gonzaga], Luigi dal Verme, Bartolomeo Colleoni, Francesco
+  Piccinino and Niccolò Guerrieri, and no Duke of Milan: most likely the Ambrosian Republic, Aug 1447-Feb 1450 (inferred from the names,
+  grade I; no date on the sheet), so after the Duke's death. Test (`dec4b/overlap_dec4b.py`, output `dec4b/overlap_dec4b.out`; SFZ-DEC3's
+  statistic and null, seed = record number): stock `dec4b/stock_r5470.tsv` (one reader, by eye, NOT blind, grade M), 11 labels: **coverage
+  0.342**, random 11-label stocks mean 0.275, p95 0.415, P(>=) = 0.21; firm-only 6 labels 0.230 vs mean 0.150, p95 0.269, P = 0.12. Not
+  above chance. C pairs by eye: the o with a long tail stands under b, not a; o, d, h, r, n carry none of the Duke's shapes: 0 of 7.
+- **No. 171 (R5471)** (later hand: "Studi Calligrafia = Ciffre"), no correspondent; nomenclator Rex Francie, Rex Romanorum, Rex Renatus,
+  Alf., Dux Burgundie, Dux Sabaudie, Ducissa Sabaudie. "Rex Romanorum" beside Rex Renatus and Alfonso fits 1440-52 (Frederick III before
+  his imperial coronation; inferred, grade I). Test as above: stock `dec4b/stock_r5471.tsv`, 19 labels: **coverage 0.493**, random mean
+  0.476, p95 0.623, P = 0.43; firm-only 15 labels 0.391 vs mean 0.375, p95 0.523, P = 0.42. Not above chance. C pairs by eye: the o with a
+  long tail stands under f, the y under d: 0 of 7 (1 if the double-barred sign under h is counted as N2).
+- **Result.** With these, every scat. 1597 record on DECODE has been opened at least at its first page (nos. 1-114, 169-171). The sheets
+  headed Filippo Maria are nos. 23 and 24 (SFZ-DEC2); R5323's blind-read key failed the f.5/f.8 glosses (SFZ-G1). Three 1440s-era sheets
+  (50, 170, 171) and one Aragon sheet (98) are not the slips' key by stock overlap. Nothing here is a reading.
+- Requests: de-crypt.org 35. No model subagent calls. Cost not visible to this session.
+
+## Remaining gaps (SFZ-DEC4 account 1, 15 Oct 2026)
+Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0.441 mean held-out, 2 units; anchored 0.422); DECODE R5323: blind identification gate PASS at threshold (SFZ-R5323B) but its blind-read key FAILs the f.5/f.8 gloss gate (SFZ-G1, p 0.14), so no period key is identified; DECODE scat. 1597 nos. 1-114 and 169-171 opened by heading, none headed Filippo Maria other than 23-24; R5350, R5398, R5470, R5471 not the slips' key by stock overlap (p 0.12-0.65)
+- R5323 key - blocker: not-attempted; blind Sonnet reading of the sheet is retired (SFZ-R5323, SFZ-R5323B, SFZ-G1), the untried instrument is a person's cell-by-cell read of R5323's alphabet block, then the same g1 scorer unchanged; next: draft an ASKS row for that read, ~$0.5
+- f.15 decode - blocker: waiting-on ASKS row 165 (the owner's blind sort of f.5+f.8 signs) for the transcription route; no key is identified for f.15
+- f.17 blanks vs f.15 - blocker: not-attempted; whether f.15's cipher fills f.17's two blanks is unexamined; next: only after a readable key, ~$1
+- DECODE scat. 1597 rest - blocker: not-attempted; the unheaded keys (39, 40, 42-49, 51-53, 61, 65, 84, 94, 96, 103, 112, 5381 P2) are not stock-overlap tested and P3 of 81, 85, 87, 90, 100, 105 is unfetched; next: one login re-fetching those files by their manifest names and the dec4b overlap test on each, ~$1.5
+- ASMi documents not on DECODE - blocker: not-attempted; DECODE carries 115 of the inventory's 194 documents of scat. 1597; next: redraft REQUEST.md (held at gate 7) for the missing documents, ~$0.5
+
+## Escalation (SFZ-DEC4 account 1, 15 Oct 2026)
+- [x] siblings: the Duke's glossed pairs f.5/f.7 and f.8/f.10 used; f.23-24/f.26, f.30-31/f.29, f.36-37/f.35 not yet
+- [x] clear-pages: f.17 (same-day clear letter) noted as context; no copy of f.15 exists in the volume per Mazzatinti
+- [x] known-keys: DECODE scat. 1597 nos. 1-114 and 169-171 opened by heading (SFZ-DEC to SFZ-DEC4 account 1); R5323 key FAILs the f.5/f.8 glosses (SFZ-G1); R5350, R5398, R5470, R5471 not the slips' key by stock overlap; unheaded sheets and the ASMi documents DECODE lacks remain
+- [ ] print: no print of f.15 located (check-solved above); verifier pass belongs to a later reading
+- [x] key-rebuild: attempted, G1 FAIL
+- [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
+- [ ] retry: a person's cell-by-cell read of R5323 through the g1 scorer; the unheaded 1597 sheets through the stock-overlap test
+Verdict: keep going: 4 internal gaps; cheapest next: draft the ASKS row for a person's cell-by-cell read of R5323's alphabet block, ~$0.5

@@ -1,0 +1,15 @@
+// R5470 (DECODE scat. 1597 no. 170, "Zifra Andree Biragi cum domino Nicolao [Marco?]") alphabet-row sign stock in duke_labels.md labels.
+// One reader (SFZ-DEC4 account 1, 15 Oct 2026), by eye from a 220 dpi render, NOT blind (the reader knew the Duke's labels and C pairs); grade M.
+// Column 'firm' = 1 for a clear shape match, 0 for a doubtful one. Shapes with no duke_labels.md label (small o, inverted v, triangle, F, -|, triple bar, ~) omitted.
+label	firm	shape_on_sheet
+O	1	small o with long tail to the right (under b)
+g	1	9-shape with descender (under d)
+cm	1	cursive m (under g and under i)
+t	1	plus (under l)
+ce	1	e-shape (under y)
+cu	1	cursive u (under z)
+N3	0	2-shape with tail (under a)
+N6	0	6/sigma-like open loop (under s)
+8	0	figure-8-like delta (under t)
+b	0	b with bar (under u)
+d	0	plain d (under q)
