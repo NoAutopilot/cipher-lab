@@ -1,0 +1,25 @@
+line	tokens	uncertain	note
+C1	d t d B 7 t B D2 d .v. H w- h y t H w- q L 4+ t d c e U q h f 7 L L d 14 A q b M X	3,4,6,7,11,12,15,17,18,24,25,26,30,31,33,35,36,37,38,39	begins with clear words at left; coarse read
+C2	T d w- U c D2 y B U B U n t q o h s L w- d s ?crossed-p U Ze t f Ze h U m c h f M 7 L	2,4,10,12,14,18,21,22,23,25,26,28,29,32,33,34	begins with clear words
+C3	f h d ?bracket-1 c c 7 s f Ze H .v. m d h U T ?crossed-p Ze U T w- d h ?crossed-p Ze U c D2 b q n d d c 7	2,3,4,5,6,9,15,16,17,19,20,23,24,25,30,31	begins with clear words
+C4	f Ze d d q ? w- q 13 T t E s f 14 X q f L c d e B BOX2 o U L t 7 s c U f o	3,4,5,6,8,9,11,12,16,17,18,20,21,23,24,25,31,33,34	begins with clear words
+C5	h Ze e oo B d D2 o .v. f Ze X BOX2 c c b f U n B d L h d t ?hash o he h e 7 o m o q	2,3,5,6,12,13,16,17,19,20,22,24,26,27,29,30	begins with clear words
+C6	U ?hash A D2 X b U D h U m z h d d 7 .v. w- w- s o L q b Ze w- D2 ?hash f A t 14 L d b	2,3,6,7,11,12,17,18,20,21,26,28,30,31,36,37	begins with clear words
+C7	d 14 q d d U 14 + b U q L f h B .v. f 7 b U 14 c 14 + 7 B U E f d H e m t	1,2,4,5,6,9,10,12,13,15,16,21,23,24,26,27,29,30	begins with clear words
+C8	w- h c d L f t K c 7 s T c h d b d + U U .v. t L U f Ze o .v. m c q s e H U f	3,4,5,8,9,13,14,18,19,20,21,24,26,27,29,30,31	begins with clear words
+C9	f m T 7 T o d 13 7 .v. Ze L U A .v. h d T d D2 13 L t w- U .v. m L h E t ff b T U	1,4,5,6,9,10,15,16,24,25,26,36,37	begins with clear words
+C10	d w- b E U q oo h s z c e 7 f B .v. H U U A n U z H q t c o b y .v. ff d w- U	1,10,14,15,16,17,18,19,20,24,28,29,30,31,32	begins with clear words
+C11	q 8 7 d U L .v. h g T z w- 13 d U he d d q U Ze c 7 s L g d q 13 T o c U s T d	1,2,3,10,11,12,13,15,16,18,19,21,22,25,26,27,29,30,31,33,34,35,36	begins with clear words
+C12	U t h .v. Ze 7 d q Ze L U t h .v. m B z B t d m ff U L m o b ff 14 he U d .v.	2,4,5,6,8,9,10,11,12,13,18,20,21,23,24,27,28,30,31,32,33	begins with clear words; ends .v.
+F1	24 E U d L o B .v. d U o Ze L h T w- 14 t d	12,13,14,15,16,17	begins with clear words; low-res lower half
+F2	14 ?{double-bar} B c h ff w- t o 6 m 7 6 .v. U 2 5 U d f f t ?{h-loop} 5 q ?{barred-q} L R D2 ?{ss-lig} U T n X	4,22,23,25,26,28	overlap f f once
+F3	w- 7 L oo q 8 .v. h 6 m w- h n o U ff ?{p-tilde} X B 6 Ze 7 ff 8 U 7 5 A 7 .v. ?{long-s-3} 6 q U	8,9,17,18,29,30	overlap p X B 6 once
+F4	14 d h d q 3 m d 7 .v. w- h ff E B .v. oo o he t T ff U d m o .v. E s 1 n U w- E	2,3,6,7,14,16	overlap oo o he once
+F5	Ze d B b ?{g} T oo t 4 d E o ?{y-lig} tt q 6 X yy U o ?{M} 7 L Ze c 7 U e n h d 5 3 BOX2 e	2,5,13,21	overlap yy U o once
+F6	t U m 4+ 7 B t .v. B v E o 6 Ze h .v. d q L t d 4 o U q n 7 .v. ?{y-hook} 6 h 17 12 o	10,11,19,32	overlap d q L t once
+F7	d U v L h Ze T D2 o d m h q d g L tt f f U 4 E .v. 4 o 4 9 q w- h q 3 6 d B n o	4,19,24,26,27	overlap f f U 4 once; line starts after margin word
+F8	?{tt-lig} s .v. w- c n g d ?{y} q U L h o B U d c h L t 13 n 4 h Ze L o d U T o R n	1,2,9,11	overlap d c h L once
+F9	s L B q Ze w- h A BOX2 B 14 ?{long-s} U g m t o m e t 12 .v. h c U .v. d t	1,2,12	begins with s. ; ends with clear word Jar; overlap g m t o once
+F12	d B Ze o .v. m U q m 14 7 6	3	begins with clear words (Infanterye); upper half all clear text
+F13	c D2 d h w- t oo h n ?{barred-c} 17 12 .v. U 2 5 ?{r} D2 o yy U L X B d o 4 o X tt q 4 lam o	10,17,24	overlap 2 5 r D2 once
+F14	?{tt-lig} L h 14 w- h d 4+ q L o B he B q T ?{struck-gg} ?{f-bar}	1,8,14,16,17	ends with clear words (suppliant Sire); overlap T gg f once

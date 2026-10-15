@@ -1,0 +1,25 @@
+line	tokens	uncertain	note
+C1	d t d ?n 7 t ?c Δ 8 .v. H w h y .t ?th w ?f L L 4 t d ?c U ?c h ?f 7 L L d 14 A g B M x	4,9,10,15,16,22,23,24,27,30	begins with clear words
+C2	T o w U ?c Δ X B U B U n t q o h s L L w o s ?p U Ze t he h U m ?c h ?f M 7 L	5,12,14,18,25,26,32,35	begins with clear words
+C3	?f U ?3 ?c c 7 s he H .v. m o ?fh U t ?p ?p ?c U + w o ?th ?p ?c U c Δ B q n d d c 7	1,3,4,10,13,15,16,23,24,25	begins with clear words
+C4	he o d q ?hh w q 3 .v. T t E 5 d 14 X q q ?f L ?c o e B BOX2 o U L t 7 s ?c U f o	5,6,16,17,20,22,23,32	begins with clear words
+C5	?h Ze ?z e oo ?b d Δ o .v. ?f Ze X BOX2 c ?c B f U U n ?b d L ?th ?n t ?h he h e 7 o m o q	1,3,5,6,14,15,24,26,27	begins with clear word
+C6	U H A Δ ?x B U D h U m ?c h d d 7 .v. w w s o L q B Ze w Δ ff f A t 14 L d B	2,5,10,13,14,22	begins with clear words
+C7	s d 14 q o d U 14 + B U q ?fh h B .v. ?g 7 7 B U 14 ?c 14 4+ 7 B U B d d H e m t	1,2,12,15,16,17,24,28	begins with clear words
+C8	w h ?c o f t ?n c 7 s T ?c h d B t t U U .v. t L U f Ze o .v. m c q s e H U f	3,4,8,9,12,13,14,17,26,27	begins with clear word
+C9	f m t 7 + o d 3 7 .v. Ze L U d .v. h d + o ?x-t Δ 3 L t w U .v. m L h E t ff B + U	1,5,12,19,20,24,31	begins with clear words (pour)
+C10	d w B E U q oo h s X c e 7 ?ff B .v. H U U d n U ?curl-x H q T c t B y .v. ?fh ?fh d w U	2,8,11,14,18,26,27,28,29	begins with clear word
+C11	q 8 7 d U f .v. h g T X w Ze d U he 8 8 q U Ze c 7 s L g B q ?crossed-q 3 .v. T o ?c-curl U s T ?hooked-f	3,9,10,13,22,25,26,30	begins with clear word
+C12	U T h .v. Ze 17 t q Ze E U 4+ h .v. m B ?curl-c t d m H U L m o B ?fh 14 he U d .v.	1,2,5,6,10,12,18,19,24	begins with clear words (pays)
+F1	24 E U d L o B .v. T U ?o Ze L h ?crossed-t ?v 14 t ?lig	1,10,15,16,18,19	begins with clear words (up to 24); 24 may be cut by half boundary; line may continue beyond right edge
+F2	14 H B c h ff w- t 6 m 7 6 .v. U 2 5 U d f f t c h ?hooked-s ?q-barred ?g L R D2 ?fh U T n X	6,7,8,12,24,25,26,28,32	tiny margin text at far left (ignored)
+F3	w- 7 L oo ?q-barred d .v. h 6 m w- h n o U ff ?o-tail X B 6 Ze 7 ff d U 7 5 A 7 .v. ?hooked-3 6 q U	1,5,9,10,17,19,20,22,26,27,33	no clear words
+F4	14 d h d ?q-barred Ze m T 7 .v. w- h ?fh ?8 B .v. oo o he t T ff U d m o .v. E ?s ?1 n U w- E	5,6,13,14,24,28,29	ends with small mark at right edge (ignored)
+F5	Ze T B d ?g T oo t 4 ?crossed-t E o y H ?q-barred 6 X yy U o M 7 L Ze c 7 ?cup e n h T 5 3 BOX2 e	2,5,10,13,14,15,22,26,27,32	no clear words
+F6	t U m ?crossed-t 7 B t .v. d ?v E o 6 Ze h .v. d ?q-barred L t d 4+ o U q n 7 .v. ?y 6 h 17 12 o	4,10,11,28	begins with tiny mark at left edge
+F7	T U ?v L h Ze T D2 o d m h q d ?g f H ?f f U 4 E .v. 4 o 4+ 9 ?q-barred w- h q Ze 6 d B n o	3,7,15,16,18,25,26,27,31	faint margin text at far left (ignored); 4 vs 4+ uncertain
+F8	?H-crossed d .v. w c n ?g T ?y q U L h ?o-loop B U T c h L t 13 n 4+ h Ze f o d U T o R n	1,2,7,8,9,14,28,30	clear tiny margin text at far left (ignored)
+F9	f d q Ze w h A BOX2 b 14 ?hooked-s U ?g m t o m e t 12 .v. h c U .v. d t	1,2,3,7,11,12,13,15	begins with clear "s." (ignored) and ends with clear word Jay
+F12	T b Ze o .v. m U q m 14 7 6	1,2,3,10,11,12	begins with clear words (ending Infanterye); 14 has crossed 4
+F13	c D2 ?d-ligature h w t oo h n ?cent-sign 17 12 .v. U 2 5 ?r D2 o yy U L X B d o 4+ 6 X ?hh q 4+ lam o	3,10,11,16,19,24,28	no clear words
+F14	?crossed-x f h 14 w- h T t ?g f o B he ?8 q T ?struck-gq ?small-f d	1,7,8,9,11,12,15,17,18	ends with d then clear words; first sign may be neighbour
