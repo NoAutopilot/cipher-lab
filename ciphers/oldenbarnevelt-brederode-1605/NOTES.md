@@ -1993,3 +1993,48 @@ Read so far: unmeasured for no. 92 and 187 (nothing applied to them); inv. 6019 
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
 - [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
 Verdict: keep going: 3 internal gaps; no key leaf on inv. 6019 533-565 and no key receipt in the S.G. resolutions of 11-28 Oct 1619, but res. 1779 (11 Oct) records a Brederode memorie deciphered by Maurits and a better cipher asked of him; cheapest next: inv. 6019 stride-1 from 532 back to the 2 Oct 1619 letter for that memorie (~$1.5), and the band-interval decode (~$3)
+
+## OBRED-BAND (15 Oct 2026, 09:07-09:1x UTC by date -u, account 2, Opus; for LANE DEFAULT-A2-0810-15)
+
+Brief: band-interval decode of no. 92 / the scan-187 postscript from the 1619 glossed pairs, with a held-out leaf check against a
+shuffled-band control and a power check at the target's own counts; names left as codes; never key.tsv. Disk and CPU only, 0 requests.
+
+- Prior-work step: `prior_work.py ... --step-type decode` exit 4 (own claim LEAD, LOOK, 2 UNCHECKED, 2 UNCHECKED-NET); the four non-net
+  rows recorded CLEAR in `prior-work.tsv` (adhoc-34c751). No earlier band decode; OBRED-TRY ran --try only.
+- PREREG `obred187/PREREG-OBREDBAND.md` pushed in its own commit (8e9bcd573) before any statistic. Pairs = OBRED-TRY's rule (C,
+  single letter, i/j u/v/w folded): 555 has 30, 556 has 11. Script `obred187/band/band.py` (`--check` up to date), output `band_gate.json`.
+- **Power (synthetic, assumed design):** alphabetical homophonic list on 1..587, band widths ~ nl16 letter frequency, train 30 / test 11,
+  1,000-draw shuffled null, 200 simulations: power 1.00 (gate 0.70). At the application's own count (41 pooled pairs -> 180 tokens):
+  one-letter intervals 41.9% of tokens, all correct, interval hit 1.00 -- an upper bound, since the synthetic list has no transcription
+  or gloss error and perfectly clean bands.
+- **Held-out check, primary (fit 555, score 556): PASS.** S 0.171 (hit 8/11 = 0.727, mean width 3.45, nearest-code exact 0.455) vs
+  shuffled-band null mean 0.034, p95 0.104, max 0.416, p 0.0107 (10,000 draws, seed 1619). Reverse (fit 556, score 555; not gated):
+  S 0.199 (hit 0.80, width 3.9) vs p95 0.141, p 0.0033. H-read groups only (not gated): S 0.191 (n 7) vs p95 0.117, p 0.0073.
+  The three held-out misses are 415 (s, bands give r), 337 (p, bands give o) -- two of the logged rule-4 conflicts, which score as
+  misses by construction -- and 458 (glossed v "n shape", between 457 t and 459 t on 555).
+- **Application (as registered, grade M): `obred187/band/reading_92_187.tsv`.** 180 tokens: 37 name codes (588-751) left as codes;
+  72 (40.0%) fall in a one-letter interval, 115 (63.9%) in an interval of width <= 2, the rest wider (codes above 530 get n..z because the
+  M-group 530 carries an n gloss). Expected accuracy of the one-letter calls on the real data is below the synthetic 1.00: the real held-out
+  hit rate is 0.73-0.80, and band edges (r/s, o/p, d/e) are where the 1619 glosses themselves conflict. Each token is an interval of
+  letters, not a reading; no word or sense is claimed from the interval string, and nothing went into key.tsv.
+- Where it was not found, and the limits: one statistic and one predictor (nearest-glossed-neighbour interval); band edges are the
+  weak point; the 1619 list is assumed to be the 1604-05 list (OBRED-556's overlap gate); no language model or segmentation was applied
+  to the intervals (that would be the next instrument, and it needs its own control).
+
+## Remaining gaps (OBRED-BAND, 15 Oct 2026)
+Read so far: no. 92 and the 187 postscript as band intervals only (M): 72 of 180 tokens (40.0%) one-letter, 115 (63.9%) width <= 2, 37 name codes (OBRED-BAND; held-out check fit 555 -> 556 S 0.171 vs shuffled-band p95 0.104, p 0.011, power 1.00); inv. 6019 scans 555-556 carry 81 groups (58 H-read) with 45 C-graded period glosses; the S.G. resolution of 11 Oct 1619 records that Maurits had a Brederode memorie deciphered (OBRED-KEYHUNT)
+- no. 92 and the 187 postscript beyond letter intervals - blocker: not-attempted; band intervals pass a held-out check but give letters, not words; next: a constrained segmentation of the interval strings (each token's letter set, nl16 lexicon, tools/segmenter.py or decode_key --consistency --auto-segment) with a matched control on a synthetic band text at the same counts and a shuffled-interval null, PREREG first, graded M, ~$3
+- the 1619 key, the deciphered memorie and the "instructie ende sleutel" - blocker: not-attempted; not minuted in the S.G. resolutions of 11-28 Oct 1619 beyond res. 1779 and not on inv. 6019 533-565 (OBRED-KEYHUNT, OBRED-549, OBRED-552); next: inv. 6019 stride-1 from 532 backward to the 2 Oct 1619 letter, ~15 NA requests at 1000 px, ~$1.5
+- the later liassen NA 1.01.02 inv. 6020-6024 and the 6019 stride-1 fill after 565 - blocker: not-attempted; outside this brief; next: a stride-3 screen of inv. 6020 (~$4)
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A): no numeral block, no Brederode, Stettin or Heidelberg heading (M)
+
+## Escalation (OBRED-BAND, 15 Oct 2026)
+- [x] siblings: scan 187 shares 26 values with no. 92 (OBRED-187); inv. 6019 scans 555-556 (Oggersheim, 14 Oct 1619) share 42 values with no. 92/187, clearing the shuffled-code control (OBRED-556); the letter's start (554) carries no groups (OBRED-552)
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187); the 1619 letter's prose and margin summaries read in part (OBRED-556); 533-554 and 558-565 seen by eye (OBRED-552, OBRED-549, OBRED-KEYHUNT)
+- [ ] known-keys: the 10 Aug 1598 Van Aerssen slip, Buzanval inv. 2028, DECODE 1600s and Palatine/Hessian keys screened (R10-OBRED98, R9-OBRED4, OLD-DKEY, R8-OBRED2, R9-OBRED3); the 1619 "instructie ende sleutel" is not on inv. 6019 533-565 and its receipt is not minuted in the S.G. resolutions of 11-28 Oct 1619 (OBRED-KEYHUNT); next: inv. 6019 stride-1 from 532 backward to the 2 Oct 1619 letter, ~$1.5
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII has no decipherment or key note near the Brederode entries (OBRED-DP); Resolutiën S.G. NR 4 (1619-1620) has res. 1779 and no key receipt (OBRED-KEYHUNT)
+- [ ] key-rebuild: band-interval decode passes its held-out leaf check (S 0.171 vs p95 0.104, p 0.011, power 1.00) and gives no. 92/187 as letter intervals, 40.0% one-letter (OBRED-BAND); next: constrained segmentation of the interval strings with a synthetic-band control and shuffled-interval null, ~$3
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
+- [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
+Verdict: keep going: 3 internal gaps; band intervals from the 1619 glosses pass a held-out leaf check (fit 555 -> 556 S 0.171 vs shuffled-band p95 0.104, p 0.011, power 1.00) and put 40.0% of no. 92/187's 180 tokens in a one-letter interval (M); cheapest next: inv. 6019 stride-1 from 532 back to the 2 Oct 1619 letter (~$1.5), then a constrained segmentation of the interval strings with its own control (~$3)

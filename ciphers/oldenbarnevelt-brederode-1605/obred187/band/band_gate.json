@@ -1,0 +1,56 @@
+{
+ "application": {
+  "n": 180,
+  "name": 37,
+  "one": 72,
+  "two": 115
+ },
+ "gate": "PASS",
+ "n_pairs": {
+  "555": 30,
+  "556": 11
+ },
+ "power": {
+  "app_interval_hit": 1.0,
+  "app_one_letter_acc": 1.0,
+  "app_one_letter_share": 0.4193,
+  "design": "alphabetical homophonic 1..587, widths ~ nl16 letter frequency (assumed)",
+  "draws": 1000,
+  "n_app": 180,
+  "power": 1.0,
+  "sims": 200
+ },
+ "primary_555_to_556": {
+  "S": 0.1712,
+  "hit": 0.7273,
+  "n": 11,
+  "nn": 0.4545,
+  "null_max": 0.4156,
+  "null_mean": 0.0343,
+  "null_p95": 0.1039,
+  "p": 0.0107,
+  "width": 3.4545
+ },
+ "reverse_556_to_555": {
+  "S": 0.1994,
+  "hit": 0.8,
+  "n": 30,
+  "nn": 0.3333,
+  "null_max": 0.2488,
+  "null_mean": 0.0703,
+  "null_p95": 0.1406,
+  "p": 0.0033,
+  "width": 3.9
+ },
+ "sensitivity_hread_555_to_556": {
+  "S": 0.1905,
+  "hit": 0.8571,
+  "n": 7,
+  "nn": 0.5714,
+  "null_max": 0.2762,
+  "null_mean": 0.0283,
+  "null_p95": 0.1167,
+  "p": 0.0073,
+  "width": 4.1429
+ }
+}

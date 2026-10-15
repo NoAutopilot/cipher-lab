@@ -18,3 +18,9 @@ Sonnet call (not told values or conflict). Rule: a side is corrected only if bot
 - Observation, not used to settle any conflict (PREREG step 1): all three sit at the edge of two letters' code ranges under statistic B
   (r ~390-415 / s ~433; o and p ~337; d ~73-100 / e ~97-133), consistent with an ordered homophone table whose boundaries the glossator
   or the table drew differently -- a hypothesis, untested.
+
+## OBRED-BAND (15 Oct 2026): band-interval held-out check (PREREG obred187/PREREG-OBREDBAND.md, 8e9bcd573)
+| hypothesis | control | control number | target number | verdict |
+|---|---|---|---|---|
+| 1619 letter codes lie in alphabetical bands (fit 555, predict 556) | shuffled-band null, 10,000 draws; synthetic power at 30/11 pairs | null p95 0.104 (mean 0.034); power 1.00 | S 0.171 (hit 8/11), p 0.0107 | PASS (M design statement); reverse 0.199 vs p95 0.141 |
+Application to no. 92/187: interval reading only, grade M (`obred187/band/reading_92_187.tsv`); 72/180 one-letter, 37 name codes.
