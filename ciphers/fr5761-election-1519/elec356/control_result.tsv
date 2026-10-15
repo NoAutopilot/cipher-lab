@@ -5,6 +5,7 @@ pooled	W	pairs=7	names=roy tres-chrestien	real_consistent=True	shuffle_consisten
 pooled	Zheavy	pairs=4	names=Saxe	real_consistent=True	shuffle_consistent=1/1000
 pooled	barI	pairs=7	names=Boheme	real_consistent=True	shuffle_consistent=0/1000
 pooled	dd	pairs=4	names=roy catholique	real_consistent=True	shuffle_consistent=1/1000
+pooled	flag	pairs=2	names=Mayence	real_consistent=True	shuffle_consistent=126/1000
 nr356_slots	12
 nr356	Zheavy	pairs=3	names=Saxe	real_consistent=True	shuffle_consistent=50/1000
 nr356	barI	pairs=5	names=Boheme	real_consistent=True	shuffle_consistent=1/1000

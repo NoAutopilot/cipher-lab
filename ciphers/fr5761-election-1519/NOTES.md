@@ -1289,3 +1289,39 @@ conflict: the f.116r l.29 "4" has the f.84r Lbar shape (Palatin in nr. 357 vs Tr
 Next: (1) blind second reader on the f.116r l.29 and f.84r l.21 crops (coordinates in HYPOTHESES.md), then relabel elecpair/pairs.tsv and
 re-run elec356/pair_control.py for flag, 4 and Lbar, ~1; (2) check Kluckhohn p.814 l.14 (nr. 357) against p.813 for Palatin/Trèves, ~0.5;
 (3) item 37 (ELEC-39 Next 2), ~0.5; (4) Lisch V pp.323-347 (ELEC-316 Next 1), ~1.5.
+
+## ELEC-2R: blind second reader on the l.29 / l.27 signs, Kluckhohn p.814 checked, item 37 searched (worker ELEC-2R, LANE DEFAULT-account-4-20261015-1735, account 4, 15 Oct 2026, 18:0x-18:1x UTC by date -u)
+
+Brief: ELEC-27 Next (1)-(3). PREREG `elec2r/PREREG-ELEC-2R.md` (pushed c917a6197 before any fetch). Result: `elec2r/result.tsv`; conflict
+entry in `HYPOTHESES.md`. Page images at matched scale (rule 2).
+- **Blind second reader.** Five crops (f.116r l.29, l.11, l.32 from f142 at 2400; f.84r l.21/22 Lbar and l.27 from f106 at 2000, scaled to the
+  f.116r line height) under shuffled letters (seed 2026101518), one fresh Sonnet subagent, told no label, no printed name, no prior grouping.
+  Its partition: {l.32 flag, f.84r l.27} high; {l.11 4, f.84r Lbar, f.116r l.29} low-medium. The references l.11 and l.32 fell in different
+  groups, so the test discriminates.
+  - f.84r l.27 = **flag**: both readers agree, so elec356/pairs.tsv is relabelled (4|flag -> flag). Re-run of `elec356/pair_control.py`:
+    flag = Mayence 2 pairs, one name, shuffle 126/1000 -> **M** (rule 4 needs < 5%). 4 = Palatin 2 pairs, 134/1000, M, unchanged.
+  - f.116r l.29: the second reader did not separate it from the l.11 4 (it grouped l.29 with the Lbar and the 4 together), so the PREREG's
+    condition for a relabel (with Lbar and not with the 4) fails: **readers disagree, label "4" kept** in elecpair/pairs.tsv, and
+    elecpair/control_result.tsv is unchanged (`--check` passes). Lbar keeps 1 pair (Trèves). The Palatin/Trèves shape conflict stays recorded and
+    unresolved (rule 4).
+  - Rule 3: the shuffle permutes names over slots and counts per sign; relabelling moves slots between signs, so the control's per-sign
+    figures can change with the labels (flag gained a row here), so this is not a non-test by construction.
+  - Line numbering: elec356/pairs.tsv puts the Lbar slot at f.84r line 22; ELEC-27 and HYPOTHESES.md call it l.21. Same sign ("que [Lbar] face
+    avec"), counted differently. Left as it is.
+- **Kluckhohn print.** archive.org djvu.txt (1 request): p.814 l.14 reads "maix encorres n'ay pou obtenir finable responce. Palatin m'advertist
+  que Boheme est bon (pour) le roy catholique" (OCR "Palatiu ni'advertist"); p.813 l.10 "tenez la main bien acertes et adilligente que Treves
+  face avec Saxe". No note mark at either word. The print gives no sign of a misreading on its side, though this rests on the OCR (no page image).
+- **Item 37.** One opening, c99 = f.77v-78r (folio "78" read on the recto; offset 21 holds from c95). It is Latin marriage-treaty text: Renata,
+  "Joachimo marchioni principi electori", dowry sums of 150,000 scuta, a 1519 date. Names are written out in letters and no set-A name sign
+  was seen. One mark at f.77v "subsignatos [mark] termino" sits where a paragraph mark would and is not counted. This opening does not show
+  whether it is item 36 or item 37 (M, one non-blind reader). Either way the Latin treaty run (items 36-38) shows no name signs on any opening
+  read so far.
+- No key.tsv change. Requests: openapi.bnf.fr 3 (f142 `full/2400,`, f106 `full/2000,`, f99 `full/2000,`; 200 each, >= 3 s apart; sha1 b1d18f0018cf
+  = ELEC-PAIR, 918cf4a35b19 = ELEC-39, 63073831e185); archive.org 1 (djvu.txt, 200). Images in the scratchpad only; none in git.
+
+**Verdict (ELEC-2R, 15 Oct 2026):** open, unchanged. f.84r l.27 is the flag on two readers (flag = Mayence 2 pairs, shuffle 126/1000, M). The
+f.116r l.29 sign stays "4" because the readers disagree, and the Palatin/Trèves conflict stays recorded. Kluckhohn prints Palatin (p.814 l.14) and
+Trèves (p.813 l.10) without a note. The c99 opening (f.77v-78r) is Latin treaty text with no name signs.
+Next: (1) a forced-choice third blind reader on f.116r l.29 against the f.84r Lbar and the l.11 4, plus a native-resolution crop of l.29
+(openapi.bnf.fr pct region, 1 request), ~0.6; (2) Lisch V pp.323-347 (ELEC-316 Next 1), ~1.5; (3) more both-sided slots for flag and 4 (any
+further fr.3897 Joachim letter with set-A signs and a Kluckhohn print), the only route to < 5% shuffle, ~2.

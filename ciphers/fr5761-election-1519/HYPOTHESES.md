@@ -23,3 +23,15 @@
   apart. Rule 4: a data conflict, recorded, not resolved by frequency. Consequences if the shape identity holds: 4 = Palatin rests on 1 pair
   (l.11), not 2; Lbar carries Trèves 1 / Palatin 1. Next: a blind second reader on the two crops (f142 x 2010-2100 y 1290-1340 at 2400;
   f106 x 1570-1710 y 1045-1095 at 2000) and a check of the print at p.814 l.14 for a Kluckhohn misreading.
+
+### ELEC-2R (15 Oct 2026, 18:1x UTC by date -u): blind second reader; print checked
+- f.84r l.27: the blind second reader (Sonnet subagent, crops under random names, no labels) grouped it with the f.116r l.32 flag and not the
+  l.11 4, high confidence: agrees with ELEC-27, so elec356/pairs.tsv relabelled flag (PREREG-ELEC-2R). flag = Mayence: 2 pairs, one name;
+  elec356/pair_control.py shuffle 126/1000 -> M (>= 5%).
+- f.116r l.29: the second reader put it in one cruciform group with BOTH the f.84r Lbar and the f.116r l.11 4 (low-medium, "could be a
+  separate sign"). Not the agreement the PREREG required (with Lbar and not with the 4), so elecpair/pairs.tsv keeps "4"; readers disagree.
+  The Palatin/Trèves conflict stays recorded, not resolved: witnesses unchanged (nr. 357 f.116r l.29 prints Palatin; nr. 356 f.84r l.21/22
+  prints Trèves). Kluckhohn's print (djvu OCR) reads "Palatin m'advertist" at p.814 l.14 and "que Treves face avec Saxe" at p.813 l.10, with no
+  note mark at either, so the print gives no sign of a misreading on its side.
+- Next for this conflict: a third blind reader on S1/S2/S3 alone (three crops, forced choice: is T nearer S or Q), or a native-resolution crop
+  of f.116r l.29 (pct region, 1 request) for the second reader; ~0.6.
