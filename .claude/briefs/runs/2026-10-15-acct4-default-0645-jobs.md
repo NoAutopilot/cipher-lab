@@ -40,3 +40,25 @@ left, start the S-split --try step on at most the top 3 splits. Read CL1161-S7's
 ### BAL-EYE (Opus, cap 1, box 40 min, disk; openapi.bnf.fr <= 3 only if images must be regenerated): baluze167-davaux-1637 c281 "contenter" and c284 E rows
 Latest Verdict (NOTES.md ~line 3087): "the c281 'contenter' / c284 E rows by eye (~$0.5)". Regenerate crops from images/manifest.json (BAL-C280's
 fetches) into scratchpad, rule each row beside the E and 7/5 exemplars, record rulings; nothing enters key.tsv without `--try` at every occurrence.
+
+## Wave 1 result (07:2x UTC): LVN-EYE 2.55 Q, SUR-TRY 1.86 N, C1161-KA 1.12 F (brief error: disk-only for material not on disk), BAL-EYE 1.71 D.
+Pricing lesson: every job pays ~1.0 of fixed start-up (CLAUDE.md + notes reading) before its first unit; caps below include it.
+
+## Wave 2 (07:2x UTC 15 Oct)
+
+### LVN-4611P2 (Opus, cap 9, box 100 min, disk; resources.huygens.knaw.nl <= 4): lodewijk-van-nassau-1573-74 4611 p2 per page-half
+NOTES.md ~line 4769 "4611 p2 (252 M rows) per page-half, ~$8". Same protocol, control and gate as LVN-4611 / LVN-L1 (their PREREG addenda);
+write a PREREG addendum for 4611 p2 and push it before any read. Two units (top half, bottom half), each: placement + Sonnet reads incl. control
+(~0.6 a call) + 1 reconcile; per-unit estimate ~3.5 incl. Opus placement (lodewijk runs ~1.4x a vision-call price). Apply only tokens the half's
+own control licenses (rule 3 per-unit merge). Stop before starting a half that would cross 80% of cap or box. decode_key --check after; carry
+changes into AUDIT.md; report C/H before and after.
+
+### C1161-LASRY (Opus, cap 2.5, box 60 min, github.com / raw.githubusercontent.com <= 10): clair1161-avis-flandre-1688 Lasry second face
+C1161-KA section (NOTES.md ~line 2670). Find Lasry's plaintext for the second face he read in full, in github.com/dbourdeau/cyphersolver (MIT
+code / CC BY text, cite it; clone shallow or fetch raw only the `clair1161` paths; Bourdeau's repo, not Aymeloglu's). If found: snapshot the text
+(not images) into sources/cyphersolver/2026-10-15-lasry2/clair1161/ with source URL + commit, then the token-level known-answer alignment
+(PREREG gate + shuffled control first). If not found: log what was searched and stop.
+
+### BAL-C286 (Opus, cap 3, box 60 min, openapi.bnf.fr <= 8, ROOM take/release): baluze167-davaux-1637 c286 onward for a glossed 7/5
+NOTES.md Verdict ~line 3105: "Baluze 167 c286 onward for a glossed 7/5 (~$2)". Same PREREG as BAL-C275G/BAL-C280 (unchanged); Sonnet reader calls
+on native regions, eye check only on glossed 7/5/E rows; --try at every occurrence before anything enters key.tsv.
