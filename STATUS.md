@@ -9601,3 +9601,30 @@ workers over cap, worst NO70-WORDS 1.6x (three vision units + a screen in a 2.5 
   (N_f 18 / N_r 121: recall 0.833, precision 0.750, F1 0.789 vs null p99 0.400) -- the first machine instrument on this target to pass a gate
   at full N. Not yet a key row: VIV-GSPLIT3D runs the f.191r step (hand-cut g tiles, override run, strict and letter-S), then a separate
   verifier (AUDIT 8) decides a row for the f-sign under label g. Owner step-1 page unanswered so far.
+
+## LANE DEFAULT-account-2-20261015-0810 handoff (session_01YL9az8HuRPaSxvHMRW6h8m, account 2, for the orchestrator (owner account)), 15 October 2026 (08:10-10:2x UTC by date -u; closed: budget, no room for another wave; workers 43.01 + orchestrator ~7.0 = ~50.0 of 60 by get_session; five_hour allowed throughout)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-15-ytbiz-default-0810-jobs.md (waves 1-6). Gate 0a: SESSION-SWEEP-account-2
+stale-claimed since 5 Oct, proceeded. VERIFY-BACKLOG: only Birago `counted` rows (off limits) and eckert/sachsstaatsarchiv audit2 rows held by other
+lanes -> step b: next_steps --hot-only runnable rows plus DEFAULT-A2-0509-15's named nexts. 15 Opus workers, all ledgered and archived. Guardrail
+share: 0 outside the allowed case (f.91-92 and the 1619 glosses are period decipherments used only to build keys for unread siblings).
+Results:
+- matignon-mayenne-1586 (MAT-F91E, MAT-KA, MAT-KEY, MAT-EYE): f.92r block E known-answer PASS (R 0.817 vs p95 0.635; 13 H codes, o conflict to
+  HYPOTHESES). Block-held-out gloss test (a different instrument from the retired --try window score): U=e 0.636 vs p95 0.283, T=r 0.600 vs 0.320,
+  D2=a 0.692 vs 0.385, BOX2=u 0.800 vs 0.400, power PASS; +=m too-short. Shapes eye-matched on f.124v, f.91v D1, f.78v chart, f.110, f.143r;
+  key.tsv +U=e +T=r +D2=a +BOX2=u at S, decode_key --check exit 0, U tokens 1272 -> 854 (f110, f123r/v, f124r/v, f177, f201 changed); judge margin
+  over shuffle up on all 6 changed leaves, every leaf still FAIL real_p05. No AUDIT.md on this target, so no rule-10 propagation. Next: --try BOX=u
+  on f.110 (125 U tokens, 5/5 eyed as the BOX2 shape) with control (~1.5); image check of o and c labels (~1).
+- oldenbarnevelt-brederode-1605 (OBRED-TRY, -552, -549, -KEYHUNT, -BAND, -MEM, -OCT2, -SEG): the 1619 glosses' --try on no. 92/187 was a non-test
+  (power 0/7), but the code list is value-ordered by letter (per-unit rho 0.959); band-interval fit 555 -> held-out 556 PASS (S 0.171 vs p95 0.104,
+  p 0.011, power 1.00); no. 92/187 interval reading M (180 tokens, 37 name codes, 72 one-letter); segmentation over the intervals beats shuffled-band
+  and order nulls (I 320 vs p95 238/233) with a passing synthetic control: 20 Dutch word leads, all M. Archive: inv. 6019 515-565 screened, no key leaf;
+  res. S.G. 1779 (11 Oct 1619) records a Brederode memorie deciphered by Maurits and the cipher judged unfit; the 2 Oct 1619 letter (528-530) says
+  the news went in Maurits's cipher and Brederode's own cipher had been in Oldenbarnevelt's hands. Next: context-scored --try on the word leads (~3);
+  1.01.02 inv. 9459 + secrete resoluties inv. 4562 at Oct 1619 for the memorie (~2).
+- harley-287-1587 (HAR-F11): R8477 f.11 at full size = English letter in clear with one 6-group cipher run (ciphertext_f11.tsv, M); R328 alphabet and
+  R328/R330 number lists do not fit (0 vs ctl 0; 3 vs ctl 3). Leads M only.
+- kaliningrad-2015 (KAL-HOMRU, KAL-SHEET2): homophonic family on ru20_lat: control 0.997, target judge FAIL -1.639, shuffled FAIL -1.723 -> control-
+  backed negative at convention B; homophonic on Russian spent at both corpora. No larger sheet-2 image reachable from the cloud (owner-machine fetch).
+Lessons: (1) small disk/eye jobs at cap 2 ran 1.2-1.4x -- price them at ~3; (2) a worker's named next step that is one more archive leaf (549 -> 532
+-> catalogue) is cheap and fast as a chain of 2-3 sized jobs rather than one wide screen.
