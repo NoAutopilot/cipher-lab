@@ -1,0 +1,15 @@
+leaf	line	pos	label	key_value	shape_seen	exemplar_shape	resolution	match
+f110	1	26	T	r	top-barred T, single bar at top	T (f.91v reader label; f.78v chart T drawn +-like with short head stub)	native c116	yes
+f110	1-8	several	T	r	~10 T shapes, all single top-barred T, no double bar (not T=)	T	0.55x c116 (not aligned token by token)	yes (shape only)
+f110	1	21	BOX	+ (U)	flat rectangle, top stroke overhanging	BOX2 flat rectangle (f.78v chart L2 pos26)	native crop L01	same shape as BOX2
+f110	1	54,57	BOX	+ (U)	flat rectangle	BOX2	native crop L01_s2	same shape as BOX2
+f110	2	12	BOX	+ (U)	flat rectangle with end ticks	BOX2	native c116	same shape as BOX2
+f143r	1	12	D	a	triangle	D2 triangle (f.91/f.124v/f.78v)	native c150	same shape as D2 (same value a)
+f143r	3	2,15	D	a	triangle	D2 triangle	0.7x c150	same shape as D2
+f143r	6	14	D	a	triangle	D2 triangle	0.7x c150	same shape as D2
+f143r	7	7	D	a	triangle	D2 triangle	0.7x c150	same shape as D2
+f143r	8	13	D	a	triangle	D2 triangle	0.7x c150	same shape as D2
+f143r	10	16	D	a	triangle	D2 triangle	0.7x c150	same shape as D2
+f143r	11	18	D	a	triangle	D2 triangle	0.7x c150	same shape as D2
+f143r	12	6	D	a	triangle	D2 triangle	0.7x c150	same shape as D2
+f143r	1,2,3,7,8,10,11	x positions	x	e	small letter x, no bar	x (Bourdeau H); distinct from U (barred v/cross)	native/0.7x c150	yes (7 eyed)
