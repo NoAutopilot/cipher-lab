@@ -1,0 +1,375 @@
+{
+ "source": "H-1649 Image 946 (B.147 p.300) at 3200 px, columns cut by tools/iiif_lines.py (images/h1649/p300_cols)",
+ "key": "title1778_reading.txt as printed (variant a) GATED; variant (b) reported",
+ "cells_letter_and_word": 289,
+ "cell_grades": {
+  "H": 287,
+  "M": 2
+ },
+ "B2_variant_a_GATED": {
+  "runs_ge3": 42,
+  "hits": 37,
+  "share": 0.881,
+  "can_differ": 1.0,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "seed": 123,
+   "mean": 1.57,
+   "p95": 4,
+   "max": 7
+  },
+  "gate": "PASS",
+  "decoded_runs": [
+   {
+    "start": "col1:4",
+    "cells": "11-1 11-5 11-3",
+    "decoded": "her",
+    "hit": true,
+    "at_letter": 11
+   },
+   {
+    "start": "col1:7",
+    "cells": "13-1 13-2 13-16 13-8 13-10 13-4 13-7",
+    "decoded": "breadth",
+    "hit": true,
+    "at_letter": 14
+   },
+   {
+    "start": "col1:16",
+    "cells": "13-1 12-1 12-3 12-4",
+    "decoded": "both",
+    "hit": true,
+    "at_letter": 23
+   },
+   {
+    "start": "col1:21",
+    "cells": "2-4 2-2 2-3",
+    "decoded": "she",
+    "hit": true,
+    "at_letter": 32
+   },
+   {
+    "start": "col1:25",
+    "cells": "18-3 18-6 18-2 2-12",
+    "decoded": "deny",
+    "hit": true,
+    "at_letter": 39
+   },
+   {
+    "start": "col1:30",
+    "cells": "2-1 4-2 4-4 4-1 5-5 4-3",
+    "decoded": "titles",
+    "hit": true,
+    "at_letter": 46
+   },
+   {
+    "start": "col1:37",
+    "cells": "18-1 18-3 18-3 4-2 4-4 4-2 12-1 12-2 4-3",
+    "decoded": "additions",
+    "hit": true,
+    "at_letter": 65
+   },
+   {
+    "start": "col2:1",
+    "cells": "18-1 18-3 18-3 4-2 4-4 4-2 12-1 12-2 4-3",
+    "decoded": "additions",
+    "hit": true,
+    "at_letter": 65
+   },
+   {
+    "start": "col2:11",
+    "cells": "9-12 9-13 9-7",
+    "decoded": "her",
+    "hit": true,
+    "at_letter": 11
+   },
+   {
+    "start": "col2:14",
+    "cells": "12-1 14-3 12-2",
+    "decoded": "own",
+    "hit": true,
+    "at_letter": 106
+   },
+   {
+    "start": "col2:18",
+    "cells": "11-1 16-7 16-13 1-3 9-8 9-12 9-9 9-7 9-16",
+    "decoded": "hampshirv",
+    "hit": false,
+    "at_letter": null
+   },
+   {
+    "start": "col2:27",
+    "cells": "6-1 9-7 9-19 9-10 9-11 9-8",
+    "decoded": "grants",
+    "hit": true,
+    "at_letter": 129
+   },
+   {
+    "start": "col2:34",
+    "cells": "19-1 9-6 9-20 9-20 9-8",
+    "decoded": "wells",
+    "hit": true,
+    "at_letter": 138
+   },
+   {
+    "start": "col2:41",
+    "cells": "13-1 13-2 13-8 13-4 13-4 9-20 9-6 13-1 12-1 11-2",
+    "decoded": "brattleboo",
+    "hit": true,
+    "at_letter": 145
+   },
+   {
+    "start": "col3:1",
+    "cells": "11-3 11-2 18-14 11-9 11-1",
+    "decoded": "roogh",
+    "hit": false,
+    "at_letter": null
+   },
+   {
+    "start": "col3:9",
+    "cells": "5-4 4-2 4-3",
+    "decoded": "his",
+    "hit": true,
+    "at_letter": 169
+   },
+   {
+    "start": "col3:12",
+    "cells": "2-4 12-1 12-2",
+    "decoded": "son",
+    "hit": true,
+    "at_letter": 172
+   },
+   {
+    "start": "col3:17",
+    "cells": "4-1 7-1 14-3",
+    "decoded": "law",
+    "hit": true,
+    "at_letter": 177
+   },
+   {
+    "start": "col3:21",
+    "cells": "9-16 9-6 9-7 1-1 9-19 9-20",
+    "decoded": "verbal",
+    "hit": true,
+    "at_letter": 184
+   },
+   {
+    "start": "col3:28",
+    "cells": "9-11 9-12 9-7 9-1 14-3 14-9",
+    "decoded": "throws",
+    "hit": true,
+    "at_letter": 205
+   },
+   {
+    "start": "col3:39",
+    "cells": "4-1 4-2 11-9 11-1 11-20",
+    "decoded": "light",
+    "hit": true,
+    "at_letter": 216
+   },
+   {
+    "start": "col4:1",
+    "cells": "21-1 21-2 9-10 11-6 18-17 9-5 9-11",
+    "decoded": "conduct",
+    "hit": true,
+    "at_letter": 228
+   },
+   {
+    "start": "col4:9",
+    "cells": "9-16 9-17 9-18 9-25 9-1 9-27 9-28 9-8",
+    "decoded": "vermonts",
+    "hit": true,
+    "at_letter": 237
+   },
+   {
+    "start": "col4:18",
+    "cells": "9-2 9-7 9-4 9-6 9-10 11-6",
+    "decoded": "friend",
+    "hit": true,
+    "at_letter": 259
+   },
+   {
+    "start": "col4:25",
+    "cells": "1-6 9-6 9-8 9-8 9-6 9-10 11-9 11-5 11-3",
+    "decoded": "messenger",
+    "hit": true,
+    "at_letter": 280
+   },
+   {
+    "start": "col4:35",
+    "cells": "9-12 9-9 1-6",
+    "decoded": "him",
+    "hit": true,
+    "at_letter": 251
+   },
+   {
+    "start": "col5:3",
+    "cells": "9-11 9-7 18-17 9-6",
+    "decoded": "true",
+    "hit": true,
+    "at_letter": 313
+   },
+   {
+    "start": "col5:9",
+    "cells": "5-1 5-2 5-3 9-6 9-7 9-8",
+    "decoded": "ofters",
+    "hit": false,
+    "at_letter": null
+   },
+   {
+    "start": "col5:16",
+    "cells": "2-4 2-5 2-7 9-16 9-4 9-5 9-6 9-8",
+    "decoded": "services",
+    "hit": true,
+    "at_letter": 328
+   },
+   {
+    "start": "col5:25",
+    "cells": "1-6 11-2 11-12 9-11 9-12 4-1 2-12",
+    "decoded": "monthly",
+    "hit": true,
+    "at_letter": 340
+   },
+   {
+    "start": "col5:35",
+    "cells": "4-1 9-6 9-11 9-11 9-6 9-7 9-8",
+    "decoded": "letters",
+    "hit": true,
+    "at_letter": 360
+   },
+   {
+    "start": "col5:43",
+    "cells": "21-1 9-19 9-10 9-19 18-3 18-1",
+    "decoded": "canada",
+    "hit": true,
+    "at_letter": 374
+   },
+   {
+    "start": "col6:2",
+    "cells": "21-1 21-2 11-8 11-13 11-20",
+    "decoded": "coast",
+    "hit": true,
+    "at_letter": 386
+   },
+   {
+    "start": "col6:8",
+    "cells": "21-1 21-2 9-10 9-10 9-6 9-5 9-11 9-15 18-14 9-11",
+    "decoded": "connecteot",
+    "hit": false,
+    "at_letter": null
+   },
+   {
+    "start": "col6:19",
+    "cells": "8-2 9-7 9-4 9-6 9-10 18-3",
+    "decoded": "friend",
+    "hit": true,
+    "at_letter": 259
+   },
+   {
+    "start": "col6:26",
+    "cells": "9-7 9-6 9-5 9-6 9-4 9-16 9-14",
+    "decoded": "receivs",
+    "hit": false,
+    "at_letter": null
+   },
+   {
+    "start": "col6:33",
+    "cells": "11-6 9-4 9-8 1-3 7-1 7-3 9-5 9-12 9-13 9-8",
+    "decoded": "dispatches",
+    "hit": true,
+    "at_letter": 443
+   },
+   {
+    "start": "col7:1",
+    "cells": "21-1 21-2 9-10 9-2 9-4 18-3 9-6 9-10 9-5 9-6",
+    "decoded": "confidence",
+    "hit": true,
+    "at_letter": 471
+   },
+   {
+    "start": "col7:12",
+    "cells": "18-13 18-17 1-1 9-8 9-11 9-19 9-10 9-5 9-6",
+    "decoded": "substance",
+    "hit": true,
+    "at_letter": 500
+   },
+   {
+    "start": "col7:22",
+    "cells": "21-1 9-12 4-2 4-4 4-4 9-6 9-10 18-3 9-6 9-10",
+    "decoded": "chittenden",
+    "hit": true,
+    "at_letter": 513
+   },
+   {
+    "start": "col7:33",
+    "cells": "7-1 9-20 9-20 9-6 9-10 9-8",
+    "decoded": "allens",
+    "hit": true,
+    "at_letter": 529
+   },
+   {
+    "start": "col7:42",
+    "cells": "18-17 9-10 9-11 9-1",
+    "decoded": "unto",
+    "hit": true,
+    "at_letter": 555
+   }
+  ]
+ },
+ "B2_variant_b_reported_not_gated": {
+  "runs_ge3": 42,
+  "hits": 37,
+  "share": 0.881,
+  "can_differ": 1.0,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "seed": 123,
+   "mean": 1.51,
+   "p95": 4,
+   "max": 7
+  },
+  "gate": "PASS"
+ },
+ "word_codes": [
+  {
+   "at": "col7:41",
+   "code": "9",
+   "gloss": "",
+   "grade": "M"
+  }
+ ],
+ "clear_words": [
+  "Extending",
+  "Sides",
+  "don't",
+  "the",
+  "in either of the",
+  "nor will there",
+  "validate",
+  "Under the New",
+  "Col!",
+  "has that",
+  "with",
+  "Information that",
+  "upon the",
+  "of",
+  "we take him to be a",
+  "and he says by this",
+  "that you know",
+  "to be",
+  "his",
+  "for a",
+  "interchange",
+  "between",
+  "and the",
+  "of",
+  "where we are to find a",
+  "to give and",
+  "you approve of this",
+  "His intelligence is in",
+  "that",
+  "and the",
+  "with a few other form"
+ ],
+ "known_answer_letters": 1298
+}
