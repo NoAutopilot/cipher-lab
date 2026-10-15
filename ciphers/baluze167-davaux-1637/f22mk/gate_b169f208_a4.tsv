@@ -1,0 +1,11 @@
+# BAL-169 (account 4, 15 Oct 2026): PREREG step 2 key-identity gate on Baluze 169 c420 (f.208r), my eye at 2400 px. Numerals in this hand carry no
+# acute/diaeresis mark; each placement compared with every key.tsv form of the number. Gate: >= 6 of 8 give a key.tsv value. Result 0/8 -> FAIL.
+canvas	line	cipher	gloss	keytsv_forms	match
+c420	L02	68 37	Mme la Landgrave de Hesse	68' ro; 37' ji; (landgrave is 48=)	no
+c420	L05	46 43 90 43 . 27 gt	commission	46' me; 43' lo; 27' gi	no
+c420	L07	34 ut y 21	joindre	34' hu; 34= le Roy de Pouloigne; 21' fe; 21: port	no
+c420	L04	68 12 20	Mr de Vanzau	12' ci; 12: ment; 20' fa; 20: par	no
+c420	L16	26 g	secourir	26' ge	no
+c420	L13	56 65 48	faire les	56' pe; 65' ra	no
+c420	L10	65 46 26 g	les conserver	65' ra; 46' me; 26' ge	no
+c420	L08	27 51 47	Lievres	27' gi; 27= Pape; 51' ne	no
