@@ -134,3 +134,25 @@ Prior work: `tools/prior_work.py lodewijk-van-nassau-1573-74 --item-spec 'wvo=46
 07:23 UTC, before any priced read: owed rows are four own-work LEADs (the named next step, the audited reading, LVN-EYE's and this job's
 claims), the Groen t. IV edition LEAD and two generic UNCHECKED solver/Tomokiyo rows, which AUDIT.md section 1 covers at plaintext level;
 none bears on a transcription re-read.
+
+## Placement note, unit p2a (LVN-4611P2, 15 Oct 2026 07:5x UTC by date -u; pushed before the read is opened)
+`lvn4611/blobmap_p2a.txt` (line, position, physical line K, ink runs) -> `lvn4611/p2_crops.py` (tight crop = the runs extended to 6 px short
+of the neighbouring runs, at most 45 px, because a thin '1' often falls under the run filter). Three contact-sheet rounds; after two re-maps
+(p2_L15/6 -> K15 runs 13+14, p2_L15/7 -> run 15, p2_L13/13 -> runs 16+17) every one of the 90 tight crops sits on its token.
+Transcription line -> physical line: p2_L01-L12 = K01-K12 token for token. p2_L13-L18 each join the head of one physical line to the tail of
+the line above or below (the straight 150-dpi boxes cross lines on the sloped right half): L13 = K13 head (/1-13) + K14 head (/14-18);
+L14 = K14 (/3-19) + K15's first words; L15 = K16 head (/1-5) + K15 tail (/6-7, /12-20); L16 = K17 head (/1-7) + K16 tail (/9-16);
+L17 = K18 head (/1-6) + K16 /8 + K17 tail (/11-18); L18 = K19 head + K18 tail.
+**12 of the 92 targets are NOT placed and NOT read (stay M):**
+- p2_L14/1-2 (9, 42, A only): a second copy of K14's first two numerals "19, 40", which p2_L13/17-18 already carry in order after
+  "Il y auroit"; a pass duplicate across two lines.
+- p2_L15/8-11 (114 18 39 85, A only): a second copy of K14 "114, 18, 39, 85" (p2_L14/4-7) between K15's "26, 82" and "115"; duplicate.
+- p2_L17/9-10 (14 64, B only): a second copy of K16 "14, 64" (p2_L16/9-10); duplicate.
+- p2_L17/7 (65, B only): B's run here is K16's tail, so the row could be K16 "61" or K18 "65"; two candidate tokens, not placed.
+- p2_L13/19 (73, A; B 125): no ink token 73 between K14 "40" and "82"; K13's tail "77, 37" is the nearest look-alike, on another line.
+- p2_L15/17 (74, B only): no 74 on K15 between "4" and "35"; K16 has "4, 74" (unread by any row here); not placed.
+- p2_L16/8 (71, A only): between K17 "26" and K16 "14" no single token; not placed.
+Ink with no transcription row (finding, logged in NOTES.md, nothing inserted): K13 tail "77, 37, 5, 85, 312."; K15 head "71, 9, 39, 25, 105,
+24, 124. 147." and K15 "38" (after "26, 82"); K16 "4, 74, 150, 90, 81, 21, 61." after "advis" (in no transcription line); K17 "30, 84" before
+"104"; K17 "Et s un" words sit at p2_L17/19-21. Physical lines on p2: 35 (K01-K35); the transcription has 33.
+So unit p2a reads 80 targets + 10 controls = 90 rows in four blind Sonnet calls (23/23/22/22 rows; controls 3/3/2/2).
