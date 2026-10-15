@@ -1,0 +1,10 @@
+# AVS-175 blind sort (1 Sonnet call, 15 Oct 2026), neutral ids -> avs175/key_k124.json; PREREG-AVS-175.md
+pile	ids	labels	reader_shape
+1	S10,S13,S17	K2_126,K1_126,T_124_l10	K-like (S17 looser, more slanted)
+2	S11,S14	R3_124,R1_124	R-like
+3	S12,S19	M3_124,M2_124	M-like
+4	S15	B1_124	B-like
+5	S16	R2_124	loop with long swept tail (unsure: maybe pile 2)
+6	S18	M1_124	N-like (unsure: maybe pile 3)
+# gate G (R1,R2 one pile; M1,M2 one pile; piles differ): R1 pile 2 vs R2 pile 5 FAIL; M1 pile 6 vs M2 pile 3 FAIL -> G FAIL, non-test
+# decision under the prereg: nothing moves; T-with-K1,K2 logged only
