@@ -1,0 +1,8 @@
+sheet	CTRL-CIPHER	CTRL-PLAIN	CTRL-PS	hits	notes (tile: content by eye, M)
+01	I	F	B	none	A,C,D,E,G,H,J,K,L: Dutch numbered articles (article numbers 12-14, 21-24, 37-39, 41-44, 52-59, 61-64, 73-74, 82-83 in the left margin of each paragraph) with short marginal notes, prose; C one article struck through; no numeral groups
+02	B	E	F	none	A,C,D,G,H,I,J,K,L: Dutch numbered articles (numbers about 89-185 in the margin), prose with marginal annotations and dates; no numeral groups
+03	G	E	L	none	A,I: address leaf with red seal + dense Dutch letter dated 1618 (9451 Caron kind); B,C,F,J,K: Dutch numbered articles (about 168-225), prose; D: Dutch memorandum page with paragraphs and notes, right blank; H: blank opening
+04	H	L	F	none	A,G: dense Dutch letter prose 2pp; B,D,I: address leaf with red seal + Dutch letter opening "Myn Heer" dated 1618-1619 (Caron kind); C,E,J,K: Dutch letter closes signed, with dated postscript-style paragraphs in prose; no numeral groups
+05	F	H	D	none	A,E,G,I,J,K: address leaf (dockets dated 1612-1618) + Dutch letter "Myn Heer", dense prose, signed closes; B: single folded wrapper, address only; C: Dutch prose 2pp; L: Dutch letter close signed, right blank; no numeral groups
+06	F	C	J	none	A,B,D,E,G,H,I,K,L: address leaves numbered "B n" with dockets dated 1616-1617 (some red seals) + Dutch letters "Myn Heer", dense prose with margin dates and notes (Langerak kind); B right a paragraphed memorandum; no numeral-group block seen at sheet size (small name-code numerals inside prose, the s24 kind, are below sheet resolution)
+07	C	B	F	none	A: address leaf numbered "B 11" + Dutch prose letter, notes at foot; D: single wrapper/back with a signature or paraph; E: Dutch memorandum in two columns with margin notes; no numeral groups
