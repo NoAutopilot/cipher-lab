@@ -1,0 +1,20 @@
+kind	item	read	value	note
+control	f39v_word1	L 7 J C. O U.	L 7 J C. O U.	6/6
+control	f39v_word5	7 O. O: O D.	7 O. O: O D.	5/5
+control	f39v_word8	F J D. J: O C. O C	F J D J: O C. O C	7/8
+control	total			18/19 PASS
+decode	R5_p1	D O U: N F J: | U: C. J: O | U O: J: {clear} O?	ieugft unte byt e	
+decode	R6_p1	D. J J: D D. F O: 7 D L. D C.	satisfyhimin	
+decode	R7_p1	{clear} {blot} O. L: 7.? O: J: O | L: F U: D. | L. U: L 7	owryte wfus much	
+decode	R8_p1	7? O D? {blot} D C. D C. D O U. O. D. O:	hei ininielosy	
+decode	R8_p2	O: O. 7. 7 O. L? O 7 F J U: O 7 O J: 7 J: N? O J: 7 7 O	yorhocehfauehethtgethhe	
+decode	R9_p1	L. O. 7.? O J: 7 O C. 7 O J: 7 D C. J. O J: 7 J:? 7 O	morethenhethinkeththe	
+decode	R9_p2	L. J: O. C O D O.? 7 U: O.? {clear}?	mtodeiohuo	
+margin	normalised		he is in ielosie that iour ho faboreth the thre more the he thinkes them to deserbe	67 letters
+stat	S1	0.656	null p95 0.266; frac>= 0.000	
+stat	S2	0.000	null p95 0.000; frac>= 1.000	
+stat	signs	67	unsure 8	
+stat	outcome	C		
+posthoc	R5_vs_G5	0.500	null p95 0.286; frac>= 0.000	sowght unto bi
+posthoc	R6_vs_G6	0.750	null p95 0.333; frac>= 0.000	satisfie him
+posthoc	R7_vs_G7	0.857	null p95 0.286; frac>= 0.000	to write thus much
