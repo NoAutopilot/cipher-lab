@@ -1,0 +1,43 @@
+tid	read	note
+T02	102	call A: 1, 0 with dot, 2 with looped base
+T05	37	call A: open-top 3, then 7 with bar
+T08	81	call A: 8 crossed-top, dotted long-stroke 1
+T09	187	call A: long 1, 8, barred 7; neither candidate
+T12	150	call A: long-stroke 1, s-shaped 5, small 0
+T14	78	call A: barred 7 with loop, then 8
+T18	61	call A: sigma-shaped 6, dotted 1
+T20	81	call A: barred-top 8, dotted 1
+T21	39?	call A: barred 3 with long tail, then 9-like; uncertain
+T23	145	call A: small 1, 4, s-shaped 5
+T25	85	call A: crossed-top 8, s-shaped 5
+T29	139	call A: long 1, open 3, 9
+T31	35	call A: open-top 3, s-shaped 5
+T33	5	call A: single s-shaped glyph between commas
+T36	4	call A: single open 4
+T37	121	call A: long 1, 2, dotted 1
+T39	75	call A: barred 7, s-shaped 5
+T43	7	call A: single barred 7 between dots
+T45	150?	call A: first glyph 2- or 1-like, s=5, 0
+T50	103	call A: long 1, 0, 3 on smudged ground
+T53	2	call A: single 2
+T04	81?	call B: flat bar-topped blob then dotted i; resembles 8, not plain 3/7
+T06	64	call B: sigma-like 6 with hooked top, open-triangle 4
+T10	138	call B: long-stroke 1, open 3, bar-topped 8
+T13	112	call B: long-stroke 1, simple 1, hooked 2
+T15	145	call B: long-stroke 1, open 4, s-like 5, dotted above
+T16	61	call B: sigma-like 6, dotted long 1
+T19	81	call B: flat-topped 8 distinct from open 3 nearby; dotted i
+T22	71?	call B: bar-and-curl 7-like glyph, then small 1 with dot
+T24	60?	call B: hooked-top sigma 6, round 0; neither 80 nor 50 fits
+T28	136	call B: long 1, open 3, closed loop with top dot as 6
+T30	85	call B: bar-topped 8, s-shaped 5
+T32	127	call B: hooked 1, 2, barred 7
+T34	83	call B: barred 8 with loop, open 3
+T35	21	call B: clear 2, dotted 1
+T38	136?	call B: curly long 1, 3, s-like tail resembling 6; unclear
+T41	37	call B: flat-topped open 3, barred 7
+T42	105	call B: long 1, 0, s-like 5
+T46	84	call B: bar-topped 8, open 4
+T47	101	call B: long 1, ring 0, dotted 1
+T51	105	call B: long 1, oval 0, s-like 5
+T54	102	call B: long 1, ring 0, hooked 2

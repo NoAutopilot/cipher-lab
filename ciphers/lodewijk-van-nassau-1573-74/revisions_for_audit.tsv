@@ -55,7 +55,7 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4610	p2_L10	11	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	x ? NULL NULL <NULL> h a z a
 4610	p2_L10	20	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	r d e r <NULL>
 4610	p2_L11	1	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	<NULL> l e NULL u
-4610	p2_L11	4	138	? U	NULL	M	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	NULL l e <NULL> u o i a
+4610	p2_L11	4	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	NULL l e <NULL> u o i a
 4610	p2_L11	11	143	? U	NULL	C	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	i a g e <NULL> u e r s
 4610	p2_L11	16	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	u e r s <NULL> NULL hollande ?
 4610	p2_L11	18	221	? U	hollande	H	word	4496 (WVO PDF p4) contemporary interlinear gloss 'Hollando' over 221, repeated 3x on the same page always over 221, confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); corroborated unglossed in 4614 p1 'tiré de la Haye en 221' (context: withdrew from The Hague to Holland)	r s NULL NULL <hollande> ?
@@ -64,8 +64,8 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4610	p2_L13	13	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	a l i n <NULL> NULL
 4610	p2_L13	14	143	? U	NULL	M	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	l i n NULL <NULL>
 4610	p2_L14	7	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	a t z ? <NULL> d o u z
-4610	p2_L16	3	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	n t <NULL> f o u r
-4610	p2_L16	13	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i r uingt NULL <NULL> o c e n
+4610	p2_L16	3	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	n t <NULL> f o d r
+4610	p2_L16	13	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i r uingt NULL <NULL> o c e n
 4610	p2_L17	10	95	g I	g	M	word	table rule	m p a i <g> n e r NULL
 4610	p2_L17	15	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	n e r NULL <NULL> NULL u n
 4610	p2_L17	17	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	e r NULL NULL <NULL> u n

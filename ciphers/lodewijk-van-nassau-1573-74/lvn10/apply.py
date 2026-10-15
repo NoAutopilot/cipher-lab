@@ -27,6 +27,8 @@ al = {(r['line'], r['position']): r for r in rd(os.path.join(H, ALN))}
 # LVN-3R (15 Oct 2026): per-token 300-dpi read of 4610 p1 (lvn10p1/PREREG-LVN-3R.md, control 9/10 >= 8), applied last;
 # only rows lvn10p1/settle.py marked settled/confirmed change (sign and confidence), every round.
 post3 = {(r['line'], r['pre_pos']): r for r in rd(os.path.join(T, 'lvn10p1', 'settle.tsv')) if r['action'] in ('settled', 'confirmed')}
+# LVN-P2 (15 Oct 2026): the same for 4610 p2 (lvn10p2/PREREG-LVN-P2.md), applied with p1's rows (disjoint lines).
+post3.update({(r['line'], r['pre_pos']): r for r in rd(os.path.join(T, 'lvn10p2', 'settle.tsv')) if r['action'] in ('settled', 'confirmed')})
 ctl = {PA: [0, 0], PB: [0, 0]}
 for r in al.values():
     if r['role'] == 'control':

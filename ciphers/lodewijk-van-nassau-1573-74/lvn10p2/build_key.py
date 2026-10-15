@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """LVN-P2 (15 Oct 2026): build lvn10p2/key.tsv for the LVN16-3R per-token read of WVO 4610 p2 (lvn10p2/PREREG-LVN-P2.md),
-same shape as lvn10p1/key.tsv: targets = every M numeral row of ciphertext_4610.tsv on p2; A150/B150 = the two 150-dpi passes
+same shape as lvn10p1/key.tsv: targets = every M numeral row of p2 in lvn10/ciphertext_4610_pre.tsv (= ciphertext_4610.tsv on p2 before this job); A150/B150 = the two 150-dpi passes
 from settle_log_4610.tsv (A, B; '-' = segmentation gap); 10 controls = H numeral rows on the same lines
 (random.Random(20261015).sample), each candidate list = sign plus one look-alike by a seeded one-digit swap
 (map 0>6 1>7 2>3 3>8 4>9 5>3 6>8 7>1 8>6 9>4); rows shuffled with the same seed. Deterministic; --check exits 1 if stale."""
 import csv, io, os, random, sys
 H = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(H)
 rd = lambda p: list(csv.DictReader(open(p), delimiter='\t'))
-ct = [r for r in rd(os.path.join(T, 'ciphertext_4610.tsv')) if r['line'].startswith('p2_')]
+ct = [r for r in rd(os.path.join(T, 'lvn10', 'ciphertext_4610_pre.tsv')) if r['line'].startswith('p2_')]
 sl = {(r['line'], r['col']): r for r in rd(os.path.join(T, 'settle_log_4610.tsv'))}
 num = lambda s: s.isdigit()
 tg = [r for r in ct if r['confidence'] == 'M' and num(r['sign'])]
