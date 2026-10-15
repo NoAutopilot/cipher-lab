@@ -1,0 +1,31 @@
+POWER pass A group 1: control qb -> a:1 (agreed a) PASS
+POWER pass A group 2: control 9 -> s:2 (agreed s) PASS
+POWER pass A group 3: control sd -> g:2 (agreed g) PASS
+POWER pass A group 4: control y -> r:1 (agreed r) PASS
+POWER pass B group 1: control qb -> c:1 (agreed a) FAIL
+POWER pass B group 2: control 9 -> s:2 (agreed s) PASS
+POWER pass B group 3: control sd -> g:2 (agreed g) PASS
+POWER pass B group 4: control y -> r:1 (agreed r) PASS
+d        g1 A=n:1(med) B=n:1(high) -> NON-TEST (power)  ours=n 
+psi      g1 A=r:2(med) B=r:2(low) -> NON-TEST (power)  ours=r 
+rot      g1 A=h:2(med) B=h:1(med) -> NON-TEST (power)  ours=h 
+s        g1 A=none(low) B=none(low) -> NON-TEST (power)  ours=e 
+th       g1 A=s:1(med) B=s:1(high) -> NON-TEST (power)  ours=s 
+tri      g1 A=u/v:1(high) B=u/v:1(high) -> NON-TEST (power)  ours=q 
++        g2 A=e:1(low) B=e:1(med) -> MAPPED e ours=e agree
+6        g2 A=nom:76(low) B=nom:76(low) -> MAPPED nom:76 ours=e disagree
+blot     g2 A=null:x(high) B=null:x(high) -> MAPPED null:x ours=q disagree
+l        g2 A=f:1(med) B=f:1(med) -> MAPPED f ours=f agree
+o        g2 A=m:1(med) B=m:1(med) -> MAPPED m ours=m agree
+vdash    g2 A=d:2(high) B=d:2(high) -> MAPPED d ours=t disagree
+2        g3 A=s:4(med) B=s:4(high) -> MAPPED s ours=r disagree
+6r       g3 A=none(low) B=nom:62(med) -> NO MATCH  ours=i 
+K        g3 A=s:3(med) B=h:2(med) C=h:2 -> FINAL (2 of 3, C=h:2) h ours=s disagree
+Sorn     g3 A=h:1(low) B=h:1(low) -> MAPPED h ours=h agree
+f        g3 A=f:1(med) B=s:1(med) C=z:1 -> UNDECIDED (C=z:1)  ours=n 
+dia      g4 A=s:1(low) B=g:1(low) C=t:1 -> UNDECIDED (C=t:1)  ours=i 
+eloop    g4 A=a:2(low) B=a:2(med) -> MAPPED a ours=c disagree
+iii      g4 A=nom:###(med) B=nom:###(med) -> MAPPED nom:### ours=e disagree
+ls       g4 A=e:3(med) B=e:3(med) -> MAPPED e ours=m disagree
+x        g4 A=null:x(med) B=null:x(high) -> MAPPED null:x ours=f disagree
+SUMMARY FINAL 1, MAPPED 12, NO MATCH 1, NON-TEST 6, UNDECIDED 2 | untestable (no S-anchored token): 0, spiralG

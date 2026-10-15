@@ -1,0 +1,23 @@
+label	group	passA	confA	passB	confB	passC	verdict	his_value_blind	ours_value	concordance
+d	1	n:1	med	n:1	high		NON-TEST (power)		n	
+psi	1	r:2	med	r:2	low		NON-TEST (power)		r	
+rot	1	h:2	med	h:1	med		NON-TEST (power)		h	
+s	1	none	low	none	low		NON-TEST (power)		e	
+th	1	s:1	med	s:1	high		NON-TEST (power)		s	
+tri	1	u/v:1	high	u/v:1	high		NON-TEST (power)		q	
++	2	e:1	low	e:1	med		MAPPED	e	e	agree
+6	2	nom:76	low	nom:76	low		MAPPED	nom:76	e	disagree
+blot	2	null:x	high	null:x	high		MAPPED	null:x	q	disagree
+l	2	f:1	med	f:1	med		MAPPED	f	f	agree
+o	2	m:1	med	m:1	med		MAPPED	m	m	agree
+vdash	2	d:2	high	d:2	high		MAPPED	d	t	disagree
+2	3	s:4	med	s:4	high		MAPPED	s	r	disagree
+6r	3	none	low	nom:62	med		NO MATCH		i	
+K	3	s:3	med	h:2	med	h:2	FINAL (2 of 3, C=h:2)	h	s	disagree
+Sorn	3	h:1	low	h:1	low		MAPPED	h	h	agree
+f	3	f:1	med	s:1	med	z:1	UNDECIDED (C=z:1)		n	
+dia	4	s:1	low	g:1	low	t:1	UNDECIDED (C=t:1)		i	
+eloop	4	a:2	low	a:2	med		MAPPED	a	c	disagree
+iii	4	nom:###	med	nom:###	med		MAPPED	nom:###	e	disagree
+ls	4	e:3	med	e:3	med		MAPPED	e	m	disagree
+x	4	null:x	med	null:x	high		MAPPED	null:x	f	disagree
