@@ -2524,7 +2524,7 @@ Read so far: 27 of 168 f.24 tokens and 125 of 306 f.23 tokens at grade C; canvas
   - [x] pooled held-out word grain for 20 = i (COL26-C51, 14 Oct 2026, PREREG-COL26-C51.md, siblings/word_c51pool.py): stage 0 TOO-SHORT, pooled N 10 (c33 5 + c51 2 glossed + c63 3; c62 excluded, instrument failed), power 0.120/0.163 < 0.5; no vision, key unchanged
 - [x] clear-pages: f.24 and f.23 interlinear decipherments both aligned, each cleared its own shuffled-gloss control (f.23 63 vs max 45)
 - [x] known-keys: KX-LATHCT1 compared the cluster with key_1646, key_brienne_1647, key_1659 (different keys)
-- [ ] print: no edition of these letters found; Danish/Swedish mediation editions not yet opened (GF-A2-3 premise (d))
+- [ ] print: no edition of these letters found; Danish/Swedish mediation editions opened in part by COL26-PRINT (15 Oct 2026, see section below): 10 editions searched, no hit; still unopened: Svenska riksrådets protokoll, Oxenstierna skrifter vols for 1644-46, Kernkamp (IA text 503), Rigsarkivet originals; next: those, ~$1
 - [n/a] key-rebuild: f.23 and f.24 are different keys (51, 31 conflict), so there is no merge to make
 - [x] image-check: canvas 20-21 gloss-vs-clear re-read on native crops (A4-RFCOL, 6 Oct 2026): gloss, word for word; committed canvas 20 gloss column one line off; key_f24 C codes 14/19 in place vs control p95 6; interlinear_align on the reconciled pairs (A4-COLALN, 6 Oct 2026): per-unit gate FAIL c20 and c21, key unchanged; per-code positional known-answer test, f.24 held out (D07-COL26K, 7 Oct 2026, interlinear/c20c21_positional_k26.py, pre-registered): 42 HELD-OUT-UNDERPOWERED, 11 FAIL (P 0.060), 6 FAIL, key unchanged
   - [x] canvases 11 and 29 retried (D2-COL26, 8 Oct 2026): both fetched; 11 plain text; 29 (folio 26, 30 Mar 1646 extract) mixed-system cipher with interlinear gloss
@@ -2544,3 +2544,27 @@ Verdict: keep going: 5 internal gaps; canvas 50 reading written (COL26-C50, 14 O
 - Unfinished step: re-run siblings/anchor_split.py with canvas 54, 55, 56 added as cleared units (new pre-registered
   script copy, statistic, control B and gate unchanged) -- the Verdict line above is still this step.
 - May still push if account 2's session resumes; check git (`git log origin/main -- <this folder>`) and ROOM.md before re-running. Recorded by CLOSEOUT-A2 (account-3 in-session worker) from git and ROOM.md only; no reading, grade, status line or key was changed.
+
+
+## COL26-PRINT (account 2, 15 Oct 2026): printed mediation editions, full-text search
+
+Brief: .claude/briefs/runs/2026-10-15-ytbiz-default-1109-jobs.md. No reading, grade or key change. A search result for the log, not a novelty verdict.
+Candidates found by be-api fts `"Thuillerie"` + `Brömsebro`/`Christianopel`/`médiation` (15 Oct 2026) and archive.org advancedsearch; added to sources.tsv.
+`tools/print_check.py --only ia` (10 phrases of phrases.txt x 15 IA sources, output print-check-mediation.tsv): 150 rows, 0 hits.
+Phrases are French, so the Danish and Swedish editions were also grepped for keywords and dates (zcat of the cached djvu text, counts):
+
+| edition (IA id) | text | Thuillerie | Christianopel | Trautmans- | dates 17 mars / 25 mai 1646, 6 avril 1645 | Meurs/Moers |
+|---|---|---|---|---|---|---|
+| Geffroy, Recueil des instructions vol. 13 (recueildesinstru13fran) | opened | 7 | 0 | 0 | 0 | 0 |
+| Fridericia, Danmarks ydre politiske Historie vol. 2 (danmarksydrepoli02frid) | opened | 107 | 20 | 0 | 0 | 0 (Meursius only) |
+| Efter Brömsebro fred (efterbrmsebrofre00lore) | opened | 72 | 1 | 24 | 0 | 0 |
+| Mazarin, Lettres vol. 1-2 (lettresducardin01maza, ...a01maza, ...a02maza) | opened | 52-74 | 0 | 53 (vol. 2) | 0 | 6 (vol. 1; context not these letters) |
+| Historiske Samlinger vols 2-3 (historiskesamlin02rr, ...li03rrgoog) | opened | 74 | 12-14 | 0 | 0 | 4 (Meursius only) |
+| Christian IV egenhaendige breve vols 6-7 | opened | 9 / 2 | 6 / 1 | 0 | 0 | 0 |
+| Le Clerc, Negociations secretes vols 1-4 (earlier, cached) | opened | - | - | - | - | phrases: no hits |
+| Kernkamp, De sleutels van de Sont (desleutelsvande00kern) | not opened: djvu HTTP 503 | | | | | |
+
+Result: the editions name La Thuillerie as mediator (Brienne's instruction of 3 May and letters of 7 May 1645 are cited in Fridericia) but none prints or
+cites a letter of the dates or phrases of canvas 20-21, f.23 or f.24; the Mazarin 'surintendant' hits are other offices. Not found by this method; the
+Swedish Riksrådets protokoll (no IA item found by title search), Oxenstierna's skrifter for 1644-46, Rigsarkivet originals and Kernkamp were not searched.
+Requests: archive.org 10 + advancedsearch ~18, be-api ~15 (print_check 10), OpenAlex/S2/CORE 0.
