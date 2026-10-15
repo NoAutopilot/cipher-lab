@@ -40,3 +40,17 @@ and the plaintext-level holds AUDIT.md section 1 covers (Groen t. IV, Tomokiyo, 
 
 Also in this job, (a): eye check of 4610 p2_L28/11 (LVN-P2's control miss, H 81 read 61), one Opus look beside the H exemplars
 p2_L02/4 (81) and p2_L11/8 (61); reported, key and ciphertext not edited.
+
+## Placement note, unit p1 (before the read is opened)
+Centres: `lvn4611/blobs.py <p1 png> images/manifest.json lvn4611/key_p1.tsv 04611 <out>` numbers the ink runs on each target line
+(column profile, merge gap 9 px); `lvn4611/blobmap_p1.txt` names the run (or runs, or the left/right end of a run) per row, chosen by
+counting tokens on numbered strips; `lvn4611/mk_tok.py <out>_seg.json lvn4611/blobmap_p1.txt` gives the centres; four rows then
+moved by hand (p1_L11/14 -35, p1_L24/11 -10, p1_L01/17 +8; p1_L02/6 and p1_L28/5 re-mapped one run) -> `lvn4611/tok_p1.tsv`.
+Two contact-sheet rounds; all 78 tight crops sit on their token before the read.
+4 of the 72 targets are NOT placed and NOT read (stay M, segmentation findings, not reading questions):
+- p1_L05/1 (7, A-only): no numeral precedes "111" on the physical line; only a faint dot at the margin.
+- p1_L29/16-18 (11 51 21, B-only, after the B-only clear words voyant que at /14-15): the image of L29 ends "... 129. 74, 10, 39, 75,
+  100, 85, 60, 150, 61, 40." with no clear words; "Voyans que 11, 51, 21" is on the physical line L30 (p1_L30/8-12, A). Pass B carried
+  L30's words and three numerals into L29; a duplicate, not a reading question. L29/19-28 (A = this line's ink) and L30/10-22 (A-only,
+  B gap) are placed and read.
+So unit p1 reads 68 targets + 10 controls = 78 rows, in four blind Sonnet calls (20/20/19/19 rows; controls 3/3/2/2).
