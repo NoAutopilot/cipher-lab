@@ -16508,3 +16508,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-15 07:56 | worker BAL-E293 (account 4) | openapi.bnf.fr take for LANE DEFAULT-A4-0645-15 (account 4): Baluze 167 f293, f268, f275 full/2400, 3 requests. PREREG cd88756f1. usage: not readable here
 2026-10-15 07:56 | worker LVN-P2RETX (account 4) | resources.huygens.knaw.nl take for LANE DEFAULT-A4-0645-15 (account 4): WVO 04611.pdf, 1 request. usage: not readable here
 2026-10-15 07:57 | worker BAL-E293 (account 4) | openapi.bnf.fr release for LANE DEFAULT-A4-0645-15 (account 4): 3 requests (f293, f268, f275 full/2400), all 200, host free. usage: not readable here
+2026-10-15 07:57 | worker LVN-P2RETX (account 4) | resources.huygens.knaw.nl release for LANE DEFAULT-A4-0645-15 (account 4): 1 request (04611.pdf), host free. usage: not readable here
