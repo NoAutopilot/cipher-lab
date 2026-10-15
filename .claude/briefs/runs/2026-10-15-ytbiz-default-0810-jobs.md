@@ -156,3 +156,10 @@ OBRED-MEM (5fdcc740a): next "read the 2 Oct letter (528-530) for a mention of th
 liassen (~1)". Read 528-530 (one Opus read, crops in scratchpad) for any mention of a memorie, cipher, sleutel; then catalogue lookups only
 (NA 1.01.02 secrete liassen 1619 inventory; Koninklijk Huisarchief A14 Maurits finding aid if online) for where a deciphered Brederode memorie
 would be filed. Record what was read and where nothing was found. No fetching of whole series. gaps_check.
+
+## Wave 6 (09:5x UTC 15 Oct, last refill)
+
+### MAT-EYE (Opus, cap 2, box 40 min, disk; openapi.bnf.fr <= 4): matignon-mayenne-1586 eye f.110 T/BOX and f.143 x/D
+MAT-KEY (ca9992ef7): next "eye f.110 T/BOX and f.143 x/D (~2)"; f.110 T (38 of 53) were not eyed before T=r was applied at S. Check by eye on
+native crops that the f.110 tokens labelled T and BOX2 are the same shapes as the f.91/f.124v exemplars, and the f.143 x/D labels likewise. Any
+mismatch: list the tokens, and regrade them (to M or U) only through the folder's decode path with --check. Report counts matched / not. gaps_check.
