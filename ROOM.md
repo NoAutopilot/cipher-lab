@@ -16105,3 +16105,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-15 02:11 | worker VIV-70C2 | openapi.bnf.fr take for LANE VIV-KEYSTONE (account 4): fr.16105 600 px overviews c216, c217, c221, c222 (4 requests, >= 3 s apart); release within ~3 min
 2026-10-15 02:12 | worker VIV-67C | openapi.bnf.fr release for LANE VIV-KEYSTONE (account 4): 5 requests (2 x 600 px overviews, 1 info.json, 2 native regions c207 right / c212 right, all 200); host free; job total 5 of 8
 2026-10-15 02:13 | worker VIV-70C2 | openapi.bnf.fr release (4 overviews, all 200); take for LANE VIV-KEYSTONE (account 4): fr.16105 c217 left native region (f.211v), 1 request (job total 5); release within ~3 min
+2026-10-15 02:14 | worker VIV-70C2 | openapi.bnf.fr release for LANE VIV-KEYSTONE (account 4): 1 request (c217 native region, 200); host free; job total 5
