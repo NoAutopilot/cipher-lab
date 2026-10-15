@@ -1766,3 +1766,61 @@ Read so far: unmeasured for no. 92 and 187 (nothing applied to them); inv. 6019 
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 55 of 81 H-read (OBRED-556)
 - [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
 Verdict: keep going: 3 internal gaps; the 1619 Oggersheim letter (inv. 6019 scans 555-556) shares the code list of no. 92 and 187 (overlap clears its control) and carries a period letter-gloss; cheapest next: settle the gloss conflicts and --try the glossed values on no. 92/187 with a control (~$3), and fetch scans 552-554 for the letter's start (~$3)
+
+## OBRED-552 (15 Oct 2026, 08:28-08:3x UTC by date -u, account 2, Opus; for LANE DEFAULT-A2-0810-15)
+
+Brief: NA 1.01.02 inv. 6019 scans 552-554 (expected start of the Oggersheim letter of 14 Oct 1619 whose numeral blocks are on 555-556) and a
+second pass of 555 L15. No --try (OBRED-TRY's step), no key edit.
+
+- Prior-work step: `prior_work.py oldenbarnevelt-brederode-1605 --item-spec 'NL-HaNA 1.01.02 inv. 6019 scans 552-554 + 555 L15 ...'
+  --step-type read` exit 4: 2 LEAD (this job's and OBRED-TRY's claims; OBRED-TRY covers the 555/556 gloss conflicts, not 552-554), 1 LOOK
+  (the target-level no. 92 crop), 2 UNCHECKED, 2 UNCHECKED-NET; the five non-net rows recorded CLEAR in `prior-work.tsv` (adhoc-7717d2).
+  Check 1: OBRED-6019 saw 553 at stride 3 (sheet size, no numeral block); no earlier section read 552 or 554.
+- PREREG addendum `obred187/PREREG-OBRED552.md` pushed in its own commit (6c26a46f7) before any fetch.
+- Requests: `service.archief.nl` **5** (METS + scans 552, 553, 554, 555 at 5000 px), all HTTP 200; 555 is byte-identical to OBRED-556's sha1.
+  No image committed: sha1s in `images/manifest.json` (`obred_552`); `screen_tools/regen_552.sh` re-derives the scans and the L15 crop.
+- **What 552-554 are (by eye, grade M, this worker's read only).** None carries a numeral group, interlinear gloss or key table.
+  - 552 left page: the **end of a different letter, Heidelberg 8 Oct 1619**, signed "UE Hooch: Mog. onderdanichste ende getrouwe dienaer /
+    P van Brederode" with paraph, and a postscript (the Elector's sending to the three spiritual Electors; more by the bearer, "eene van Adel
+    genaempt van Rousdorff"). Its last paragraph is about the cipher: "... alsoo men voortaen, apparentelycke, alle pacquetten sal betrachten
+    op te vangen, hebbe ick noodich gevonden mijn voorgaende cyffer een weynich te reformeren, ende beter te doen verstaen, vermits ick hier
+    voorn vernomen hebbe datter bij tselven wat difficulteyts was gevonden geworden, niet twyfelende (gelijck het seer licht es) off ten sal
+    nu seer wel te verstaen sijn, hoe wel het anders sonder de selve instructie ende sleutel, niet en es te deuchyfferen; bidde UE Hooch:
+    Mog. mij op desen een woort van advysse te laten weten, ten eynde ick weten mach off tselve cyffer in behouden handen sal gecommen sijn
+    ..." (one reader, words read from the image at about 1,800 px, M). So by 8 Oct 1619 the agent had sent the States General a reformed
+    cipher with an instruction and key ("instructie ende sleutel"), six days before the 14 Oct letter on 555-556.
+  - 552 right page: the address leaf of the 8 Oct letter ("Den Hooch vermogende Heeren, Heeren Staten Generael der Vereenichde
+    Nederlantsche Provintien ...", seal remnant, docket at the top edge unread).
+  - 553: both pages blank (show-through of the address and of 554 only).
+  - 554 left blank; 554 right: the **opening of the 14 Oct 1619 letter**, docket "d. 14 Oct. 1619 / R 28 Oct." (M), beginning "Hooch
+    vermogende ... Heeren. / Uyt mijne laetste voorgaende vanden 8 deser, gelijck oock uyt het rapport des van Rusdorff ende van Adel ...",
+    prose only to the foot of the page; it runs on to 555 left ("de Catholijcken ..."). So the 14 Oct letter is 554r-557, and its only numeral
+    blocks are the two OBRED-556 transcribed; no groups precede them.
+- **555 L15 second pass.** One whole-line crop (`tools/iiif_lines.py --image s0555_5000.jpg --region 3060,2540,880,160 --distance 200
+  --prominence 10 --debug`, overlay checked: one band, all five groups), two blind Sonnet calls (not told any value). Both read
+  `30 265 434 530 320`, agreeing with OBRED-556's single read on every group: 30, 265, 320 high in both -> **H-read**; 434 (alts 431/454) and
+  530 (first digit under a blot; alts 630/330) low in both -> M. Neither new pass saw the interlinear letters (the crop's top edge clips
+  them); the OBRED-556 gloss grades stand. `ciphertext_556.tsv` now 81 groups, **58 H-read, 23 M**.
+- `obred187/overlap556.py` re-run (values unchanged, only grades): the gating numbers (S 42, C1, C2, N1, N2, power) are identical; the
+  non-gating H-read sensitivity row moves from 31 of 55 to 34 of 58 tokens shared; `--check` OK.
+- Where it was not found, and the limits: no numeral group on 552-554; the 8 Oct letter's own opening (scans before 552; OBRED-6019 saw 550 at
+  sheet size as "letter opening, Oct 1619", no numeral block) and any enclosed "instructie ende sleutel" not looked at -- the key may have
+  travelled as a separate enclosure and been filed elsewhere; 549, 551 not looked at in any pass. One reader for the prose.
+
+## Remaining gaps (OBRED-552, 15 Oct 2026)
+Read so far: unmeasured for no. 92 and 187 (nothing applied to them); inv. 6019 scans 555-556 carry 81 groups (58 H-read) with 45 C-graded period glosses; the overlap with no. 92/187 clears its control (S 42 vs C1 p99 20, C2 p99 23; OBRED-556); the 14 Oct 1619 letter is complete on 554-557 (OBRED-552)
+- no. 92 and the 187 postscript, pooled (180 tokens) with the 1619 letter's glossed values - blocker: not-attempted; OBRED-TRY (LANE DEFAULT-A2-0810-15) holds the gloss-conflict and --try step; next: resolve the gloss conflicts (415, 337, 100) on the image and build a per-unit glossed-pair table, then apply it to no. 92/187 by decode_key.py --try with a value-class control, ~$3
+- the reformed cipher's "instructie ende sleutel" sent with the Heidelberg letter of 8 Oct 1619 (inv. 6019, letter ending on scan 552) - blocker: not-attempted; next: read inv. 6019 scans 549-551 at 5000 px (the 8 Oct letter's opening and any enclosure; 3-4 NA requests, ~$1.5), then, if no key sheet is there, the stride-1 fill of 6019 around October 1619 for a separate key leaf
+- the later liassen NA 1.01.02 inv. 6020-6024 and the 6019 stride-1 fill - blocker: not-attempted; outside the screens run so far; next: a stride-3 screen of inv. 6020 (~$4), worth running since the 1619 letter shows the agent still used the 1604-05 code list
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A): no numeral block, no Brederode, Stettin or Heidelberg heading (M)
+
+## Escalation (OBRED-552, 15 Oct 2026)
+- [x] siblings: scan 187 shares 26 values with no. 92 (OBRED-187); inv. 6019 scans 555-556 (Oggersheim, 14 Oct 1619) carry 81 groups sharing 42 values with no. 92/187, clearing the shuffled-code control (OBRED-556); the letter's start (554) carries no groups (OBRED-552)
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187); the 1619 letter's prose and margin summaries read in part (OBRED-556); 552-554 read by eye (OBRED-552)
+- [ ] known-keys: the 10 Aug 1598 Van Aerssen slip, Buzanval inv. 2028, DECODE 1600s and Palatine/Hessian keys screened (R10-OBRED98, R9-OBRED4, OLD-DKEY, R8-OBRED2, R9-OBRED3); the 8 Oct 1619 letter names a reformed cipher sent with "instructie ende sleutel" (OBRED-552); next: inv. 6019 scans 549-551 for the enclosure, ~$1.5
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII has no decipherment or key note near the Brederode entries (OBRED-DP)
+- [ ] key-rebuild: a period-glossed sibling in the same code list exists (inv. 6019 scans 555-556, 45 C glosses); next: OBRED-TRY's gloss conflicts and --try on no. 92/187 with a value-class control, ~$3
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552)
+- [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
+Verdict: keep going: 3 internal gaps; scans 552-554 hold no groups (552 = end of a Heidelberg 8 Oct 1619 letter saying the cipher was reformed and sent with an instruction and key; 554 = opening of the 14 Oct letter); cheapest next: inv. 6019 scans 549-551 for that enclosure (~$1.5), and OBRED-TRY's --try (~$3)

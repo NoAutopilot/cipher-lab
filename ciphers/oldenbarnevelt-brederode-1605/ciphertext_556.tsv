@@ -3,6 +3,7 @@
 # (passA, passB), reconciled by the worker on the crops; L15 of 555 fell between bands and has one pass (+2 gloss-check reads).
 # grade: H-read both passes agree high; M otherwise. Glosses: gloss_opus = worker read on taller crops, gloss_sonnet = blind check (G1/G2);
 # gloss_grade C where both agree on one letter/name over one group, M otherwise. A gloss is a period interlinear decipherment, not ours.
+# OBRED-552 (15 Oct 2026): 555 L15 re-read by two blind Sonnet passes on one whole-line crop (screen_tools/regen_552.sh); passB column = the value both new passes read; 30 265 320 H-read, 434 530 M.
 scan	line	pos	group	grade	passA	passB	gloss_opus	gloss_sonnet	gloss_grade	note
 555	L01	1	577	M	577	577	?	6		both passes low
 555	L01	2	49	H-read	49	49	b?			
@@ -51,11 +52,11 @@ scan	line	pos	group	grade	passA	passB	gloss_opus	gloss_sonnet	gloss_grade	note
 555	L14	3	483	H-read	483	483	u	u	C	
 555	L14	4	460	H-read	460	460	t	t	C	
 555	L14	5	411	H-read	411	411	r	r	C	
-555	L15	1	30	M	30		a	a	C	one pass only (line missed by the band cut; G1+G2 read it)
-555	L15	2	265	M	265		l	l	C	one pass only
-555	L15	3	434	M	434		?	curly mark		one pass only
-555	L15	4	530	M	530		n	n	C	one pass only
-555	L15	5	320	M	320		n	n	C	one pass only
+555	L15	1	30	H-read	30	30	a	a	C	OBRED-552 second pass on a whole-line crop: A2 30 high, B2 30 high; passA = OBRED-556 single read
+555	L15	2	265	H-read	265	265	l	l	C	OBRED-552 second pass on a whole-line crop: A2 265 high, B2 265 high (alt 26s); passA = OBRED-556 single read
+555	L15	3	434	M	434	434	?	curly mark		OBRED-552 second pass on a whole-line crop: A2 434 low (alt 431), B2 434 low (alt 431/454); passA = OBRED-556 single read
+555	L15	4	530	M	530	530	n	n	C	OBRED-552 second pass on a whole-line crop: A2 530 low (alt 630), B2 530 low (alt 330); blot on first digit; passA = OBRED-556 single read
+555	L15	5	320	H-read	320	320	n	n	C	OBRED-552 second pass on a whole-line crop: A2 320 high, B2 320 high; passA = OBRED-556 single read
 556	L01	1	578	H-read	578	578				
 556	L01	2	605	M	605	605	Fredrich Palsgrave	Fredrich Palsgrave	C	underlined
 556	L02	1	457	H-read	457	457				margin: van ambassadeur van Hans George Marg.
