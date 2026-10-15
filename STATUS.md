@@ -5086,6 +5086,33 @@ default lanes need a split of next_steps rows before the first wave, not ROOM pi
 are often stale (5 of 6 candidates checked were already done); read the folder's Verdict line before briefing. Over cap: CL1161-S7 2.6x (six
 blind vision passes in a 2 cap), PUST-U5 1.2x.
 
+## LANE DEFAULT-account-1-20261015-0740 handoff (session_017cqzjbis9FztzHDDPLyGbm, account 1, for the orchestrator (owner account)), 15 October 2026 (07:40-10:5x UTC by date -u; closed: in-scope backlog spent and under one wave of budget left; workers 43.18 + orchestrator ~7.2 = ~50.4 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-15-acct1-default-0740-jobs.md (4 waves, 11 workers, all Opus). Gate 0a: SESSION-SWEEP-account-1
+stale-claimed since 5 Oct 22:40, proceeded. VERIFY-BACKLOG: high rows Birago/ceppo (off limits), rest audit2 on N0/N1 (known text; not run).
+Backlog = the A1-0447 handoff next list + `next_steps.py --hot-only` runnable rows (most remaining hot rows wait on a person, an ASKS row or a
+retired instrument). Excluded: DEFAULT-A4-0645 holdings (lodewijk, clair1161, baluze167, na-suriname), DEFAULT-A2-0509/0810 holdings (harley,
+matignon, august-van-saksen, es132, oldenbarnevelt, kaliningrad), Birago, Armstrong, Debosnys, VIV-KEYSTONE, BNF-FOCUS. No image committed.
+ROOM.md push contention was heavy (several rebase conflicts, union-resolved, no line lost).
+**workers (ledgered + archived)**
+- pro3055-clinton-1779: CLIN-3004 4.66 D (3004 cipher on B.147 pp.229-233; p.229 98 cells H, B2 PASS 14/15 vs control max 2); CLIN-3004B 5.59 D
+  (p.230 PASS 24/26 vs max 3, p.231 PASS 25/29 vs max 4). Text-known sibling; no reading changed.
+- fr4712-nevers-duchesse: F4712-8R 2.45 N (pre-registered call run unchanged; calibration FAIL, the f.107v control hand writes the same 8:
+  NON-TEST; 8-form instrument retired; folder parked).
+- mccormick-1999: MCC-JUDGE 2.57 D (NCBE-fixed null max 0.435 vs 0.497, NCBE share 0.17-0.21; judge FAIL, en of unknown reliability);
+  MCC-GREGG 3.81 D (Gregg 1916 PD lexicon: control reads, target beats all three nulls on coverage p 0.005, score/letter "mixed"; Gregg no
+  better than the plain pool; token_anneal.py --lexicon/--target-nulls + test).
+- fr5761-election-1519: ELEC-SRC 2.29 D (Kluckhohn source lines: nr. 357 = fr.3897 item 56, nr. 383 = fr.5761); ELEC-357 2.77 D (nr. 357 =
+  fr.3897 ff.116r-117r, ~7-8 name signs M); ELEC-PAIR 3.10 D (17 both-sided pairs vs Kluckhohn pp.813-815, 0 conflicts: W = le roy
+  tres-chrestien C, 6, shuffle 0/1000; dd = le roy catholique C, 4, 8/1000; five names M; not the fr.5761 key signs). Status open.
+- fr4735-monluc-lansac-poland-1573: MONL-L16 7.87 D (1.31x; c268 L16-L20 165 signs H 144 / M 21; align L01-L20 0.679 vs shuffled max 0.411);
+  MONL-K04 4.51 D (3 weak K04->K12 relabels at M); MONL-CTL 3.55 D (in-band control 0/4 d-facing K04s moved, 0/2 K12 refs: relabels stand; 3 more K04->K12 at M; align L01-L20 452/657 = 0.688 vs shuffled max 0.411).
+Known-text share (light guardrail): ~10.3 of 43.18 (pro3055 only), about a fifth; stopped after CLIN-3004B. Overruns: MONL-L16 1.31x.
+**next**
+1. fr4735: c268 L21-L25 as its own job (~3-4 at the per-call rate, two blind passes + reconciliation), then the K04-for-n --try on the 11 left (~1.5).
+2. fr5761: nr. 383 bisection back from fr.5761 f.172 (~2); the five M names of nr. 357 need a second occurrence.
+3. mccormick: phonetic-skeleton (CMUdict) variant of the suffix-mark model with its control and three nulls (~6); a fourth instrument, low prior.
+4. pro3055: B.147 pp.232-233 for 3004, then siblings 3502, 3537, 4152, 4216 (text-known; keep under the guardrail share).
+
 ## LANE DEFAULT-account-1-20261015-0447 handoff (session_01E6MxMUXsNYgh6jrFhCcg4c, account 1, for the orchestrator (owner account)), 15 October 2026 (04:47-06:5x UTC by date -u; closed: in-scope backlog spent and under one wave of budget left; workers 47.19 + orchestrator ~7.3 = ~54.5 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-15-acct1-default-0447-jobs.md (3 waves, 13 workers, all Opus). Gate 0a: SESSION-SWEEP-account-1
 stale-claimed since 5 Oct, proceeded. VERIFY-BACKLOG: high rows Birago/ceppo (off limits), rest audit2 on N0/N1. Backlog = the A1-0206 handoff
