@@ -79,7 +79,7 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4610	p2_L24	4	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	i n e <NULL> ? l i e
 4610	p2_L24	13	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i e u ? <NULL> uingt
 4610	p2_L27	7	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	r d e r <NULL> l e s p
-4610	p2_L28	6	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	g e s ? <NULL> NULL p e u
+4610	p2_L28	6	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	g e s ? <NULL> NULL p a u
 4610	p2_L29	5	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	g e n s <NULL> ? ? r e
 4610	p2_L30	15	126	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	o u r g <NULL> ?
 4610	p2_L34	2	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	l <NULL> ? NULL NULL
@@ -236,7 +236,7 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4611	p2_L31	12	137	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	o n s NULL <NULL>
 4611	p3_L00	5	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	d e s <herzogvonalba> o m m e
 4611	p3_L00	11	138	? U	NULL	M	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	m m e s <NULL> NULL p a r
-4611	p3_L00	12	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	m e s NULL <NULL> p a r d
+4611	p3_L00	12	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	m e s NULL <NULL> p a r d
 4611	p3_L00	20	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	d e l a <NULL>
 4611	p3_L01	11	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	u i r e <NULL> NULL l e s
 4611	p3_L01	12	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	i r e NULL <NULL> l e s o

@@ -1603,7 +1603,7 @@ p3_L00	8	120	H		LVN-L1 per-token 300-dpi read A 120 = B 120 (T07; controls 10/10
 p3_L00	9	82	H		LVN-L1 per-token 300-dpi read A 82 = B 82 (T08; controls 10/10)
 p3_L00	10	29	H		LVN-L1 per-token 300-dpi read A 29 = B 29 (T09; controls 10/10)
 p3_L00	11	138	M	A:128 B:138	LVN-L1 reconcile (T10): A 128 / B 138; middle digit is the flat-topped 3 of the controls' 38
-p3_L00	12	127	M	A:27 B:27	LVN-L1 reconcile (T11): A 27 = B 27 on a tight crop that cut off the leading 1; context crop reads 1 27. (crop defect, PREREG deviation)
+p3_L00	12	127	S	A:27 B:27	LVN-L1 reconcile (T11): A 27 = B 27 on a tight crop that cut off the leading 1; context crop reads 1 27. (crop defect, PREREG deviation); VER-LVN eye confirms the leading 1 (second image look agreeing with the reconcile)
 p3_L00	13	12	H		LVN-L1 per-token 300-dpi read A 12 = B 12 (T12; controls 10/10)
 p3_L00	14	61	H		LVN-L1 per-token 300-dpi read A 61 = B 61 (T13; controls 10/10)
 p3_L00	15	21	H		LVN-L1 per-token 300-dpi read A 21 = B 21 (T14; controls 10/10)

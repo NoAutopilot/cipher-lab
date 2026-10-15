@@ -1852,3 +1852,63 @@ deciphered (about 58%)" holds.
 period decipherment sheets). SO-LODEWIJK-1573-74's notes column gets one clause pointing here; SO-LODEWIJK-5797 unaffected.
 Requests: resources.huygens.knaw.nl 1. Subagents: none. Next for 4616 (one line): p1_L13/11's "/16" vs "/6" and p1_L16/4 8 vs 3
 are image-limited at 300 dpi; a higher-resolution image (holder scan) is the only named instrument left.
+
+## VER-LVN: the 15 Oct 2026 reading changes carried into this file, and four eye rulings (15 Oct 2026)
+
+Verifier VER-LVN (account 4, for LANE DEFAULT-A4-0437-15), 15 Oct 2026, 06:01-06:1x UTC by `date -u`. Not any of the solver sessions
+LVN-3R, LVN-P2, LVN-4611, LVN-PIN, LVN-L1. Read NOTES.md sections "LVN-3R" to "LVN-L1" and their PREREG files; nothing decoded beyond
+the folder's own regeneration scripts and `--check`.
+
+**Image route.** WVO 04610.pdf and 04611.pdf fetched once each (resources.huygens.knaw.nl, HTTP 200, 3,689,372 and 3,758,971 bytes,
+take/release in ROOM.md); `pdftoppm -png -r 300` 4610 p2 (sha1 c997f0cb8a35..., = LVN-P2/LVN-4611) and 4611 p3 (sha1 add43302eb94...,
+= LVN-PIN/LVN-L1). Crops by `lvn10p2/crops.py` (tok.tsv rows p2_L02/4, p2_L11/8, p2_L28/11) and by hand from `lvn4611/boxes_p3.tsv`
+p3_L00 (y 202-274); all in session scratch, none in git. One Opus look per ruling, no subagents.
+
+**Eye rulings.**
+| row | committed | ruling | grade change | path |
+|---|---|---|---|---|
+| 4610 p2_L28/11 | 81 H (150-dpi passes agreed) | **61**: the first digit is the open bowl with a rising stroke of the 61 at p2_L11/8, not the stacked loops of the 81 at p2_L02/4 or of the 8 at p2_L28/15 on the same line | 81 H -> 61 S | `lvn10/corrections_lvnctl.tsv` (+1 row), `lvn10/apply.py` |
+| 4611 p3_L00/11 | 138 M (A 128, B 138, reconciled) | 138: the middle digit has a flat top bar over a hanging bowl; this hand's 2 (28, 200, 12, 127 on the same line) has a curled head and a flat foot | none, stays M (blind A read 128) | ruling only |
+| 4611 p3_L00/12 | 127 M (A = B "27" on a crop that cut the 1) | 127: the leading 1 stands clear before "27.", the same stroke as the 1s of 116 and 12 on the line | 127 M -> S (second image look agreeing with the reconcile; no blind read against it) | `lvn4611/settle_p3L00.py` EYE row, `settle.py` |
+| 4611 p3_L00/14 | 61 H (A = B 61) | 61: the same open-bowl 6 as in 116 on this line, against the 8 of 78/81/28 | none, H stands | ruling only |
+
+So LVN-4611's eye and this one agree on p2_L28/11; LVN-PIN's ungraded by-eye "81" at p3_L00/14 was the slip, not the blind reads. S follows
+R15-LVNCTL's grade for two agreeing image looks. Decoded effect (regeneration only): 4610 p2_L28 "peuurer" -> "pauurer"; p3_L00/12 is
+a NULL code, C under key_full. Observed, not ruled (outside the brief's rows): p2_L28/15, committed 81 H, shows the same second digit as
+the 25 at p2_L28/14 (the long-s form of 5), so it reads 85 on this image; next: one eye ruling and, if it holds, a corrections row, ~$0.3.
+
+**Reading changes on 15 Oct 2026 carried here (rule 10).** Reading-file diffs against 8a114c78b^ (the state before LVN-3R):
+| job | letter | rows | effect on the counts |
+|---|---|---|---|
+| LVN-3R | 4610 p1 | 7 settled + 3 confirmed H (lvn10p1/settle.tsv) | 4610 full C/H 1202 -> 1210 |
+| LVN-P2 | 4610 p2 | 7 settled + 13 confirmed H (lvn10p2/settle.tsv) | 1210 -> 1229 |
+| LVN-4611 | 4611 p1 | 7 settled + 31 confirmed H (lvn4611/settle_p1.tsv); p2_L15/20 82 S -> M from the LM drift | 4611 full C 902 -> 929 |
+| LVN-PIN (a) | 4612 | LM corpus frozen (lm_corpus/); p1_L11/6, p1_L15/9, p1_L20/8 settled-b S -> M | 4612 decode.json C 371 -> 369, M 271 -> 273, I 137 -> 138, tokens 813 -> 814 |
+| LVN-PIN (b) | 4611 p3 | 1 settled + 10 confirmed H | 4611 full C 929 -> 931 |
+| LVN-L1 | 4611 p3_L00 | 20 rows inserted (17 H, 3 M) | 4611 full tokens 1393 -> 1412, C 931 -> 948 |
+| VER-LVN (this) | 4610 p2_L28/11, 4611 p3_L00/12 | 81 H -> 61 S; 127 M -> S | 4610 unchanged (both letters C); 4611 full C 948 -> 949, M 263 -> 262 |
+
+Counts now (rule 4), from the token files: 4610 full (1545) H 9, C 1220, M 105, I 56, U 155; 4611 full (1412) H 3, C 949, M 262, I 68, U 130;
+4616 full (279) C 260, M 9, I 2, U 8 (unchanged since V-LVN16); 4612 decode.json (814) C 369, M 273, I 138, U 34. 4610/4611/4616 C/H
+**2441 of 3236 (75.4%)**; four letters **2441 of 4069 (60.0%)** (4612 at 833 numerals, as before). Checks after this section's two edits:
+`decode_key.py --check` exit 0 for all 13 decode*.json; `settle.py --check`, `lvn10/apply.py --check`, `lvn16/apply.py --check`,
+`lvn4611/settle.py`, `lvn4611/build_key.py`, `lvn4611/settle_p3L00.py`, `lvn10p1/settle.py`, `lvn10p2/settle.py`, `lvn10p2/build_key.py`,
+`axnames/revisions.py` `--check` exit 0 (revisions_for_audit.tsv regenerated).
+
+**Over-claim check.** No sentence in this file's safe sentences, status.json's depth_sentence (4610 p1 "il fault que on pardonne", "ce
+lundy", "la rechute": all three still in reading_4610_full.txt) or PROMPT-chatgpt.md's quoted openings (4610 p1_L01-L02, 4612 p1_L01, 4616
+p1_L01-L05) sits on a changed line. Finding for the solver side, not an over-claim: five of the 15 Oct settles to H turn a word the earlier
+value read into a non-word under key_full -- 4610 p1_L04/18 101 -> 108 ("quiln" -> "qukln"), p1_L09/15 65 -> 68 ("rapaiser" -> "rbpaiser"),
+p1_L15/8 15 -> 25 ("proposees" -> "rroposees"), p1_L19/19 31 -> 81 ("les electe|urs" -> "elecee"), p2_L16/6 38 -> 78 ("fournir" -> "fodrnir"),
+each a single blind read agreeing with one 150-dpi pass; while others mend a word (4610 p1_L12 "requis", p1_L23 "princes", p2_L25
+"rendezuous", 4611 p1_L32 "quenous", p3_L02 "dautres"). The settle rule is blind by design and an encipherer's slip is possible, so nothing is changed here; next: one eye ruling on
+those five rows against the hand's exemplars, ~$0.5 (decode_key.py --lookalike is the tool for the slip question). The new p3_L00/5
+occurrence of 200 (herzogvonalba, C) adds one row to section S-200's list; not re-tabled.
+
+**Depth (rule 4a).** `python3 tools/depth_check.py` exit 0. Row stays **D2**; four letters 60.0% is below D3's 80%. depth_pct 62.6 is
+left on the DEPTH-REGRADE basis (see R13-LVNV, V-LVN16); status.json not edited. Outward wording "partially deciphered (about 60%)"
+holds.
+
+**N-class.** Unchanged: 4610/4611/4616 N4, 4612 N3; key source ours (key_full, from the period decipherment sheets). No revision forces
+a class change. SO-LODEWIJK-1573-74's notes get one clause pointing here; SO-LODEWIJK-5797 is unaffected (5797 not changed 15 Oct).
+Requests: resources.huygens.knaw.nl 2. Subagents: none.

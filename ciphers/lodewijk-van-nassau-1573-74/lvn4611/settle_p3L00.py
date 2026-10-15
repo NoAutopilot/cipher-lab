@@ -26,6 +26,16 @@ for r in R:
     else:
         v, why = RECONCILE.get(r['tid'], (a if a == b else '?', 'not reconciled'))
         rows.append([r['line'], r['position'], v, 'M', 'A:%s B:%s' % (a, b), 'LVN-L1 reconcile (%s): %s' % (r['tid'], why)])
+# VER-LVN (15 Oct 2026, verifier, AUDIT.md "VER-LVN"): one Opus eye at 300 dpi on the full physical line beside the hand's 1s.
+# /12: the leading 1 stands clear of "27." as in 116 and 12 on the same line, so the reconcile's 127 is confirmed by a second eye; no
+# blind read contradicts it (both saw only "27" on the defective crop) -> S, as R15-LVNCTL graded two agreeing image looks.
+# /11 138: eye agrees with B and the reconcile, but blind A read 128 -> stays M. /14 61 H: eye reads 61 (the 6 of 116), no change.
+EYE = {('p3_L00', '12'): ('127', 'S', 'VER-LVN eye confirms the leading 1 (second image look agreeing with the reconcile)')}
+for x in rows:
+    e = EYE.get((x[0], x[1]))
+    if e:
+        assert x[2] == e[0], (x, e)
+        x[3] = e[1]; x[5] += '; ' + e[2]
 s = io.StringIO(); s.write('line\tposition\tsign\tconfidence\talt\twhy\n')
 for x in rows: s.write('\t'.join(x) + '\n')
 p = os.path.join(H, 'insert_p3L00.tsv')

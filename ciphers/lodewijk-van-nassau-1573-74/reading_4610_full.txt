@@ -65,7 +65,7 @@ p2_L24 | ine·{que}{du}lieu·[uingt]{6}{oy}{leur}{pouuoir}
 p2_L25 | ennemairendezuous·[uingt]{sang}{gm}l
 p2_L26 | e·m{le}{parlé}empescher{ou}{pour}{le}{moiuga}{auoir}border
 p2_L27 | borderlesp
-p2_L28 | iges·{at}{len}peuurer
+p2_L28 | iges·{at}{len}pauurer
 p2_L29 | gens··{de}{fd}retourner{la}{isso}{ioo}
 p2_L30 | att{par}{dla}strabourg·{loy}{nol}{affiver}
 p2_L31 | {quiya}defort·bonshommur{6}{boil}{suppli}
