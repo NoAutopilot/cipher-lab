@@ -41,3 +41,104 @@ inv	scan	width_px	sha1_8	content (by eye, M)
 1.01.02/9459	16	900	6f8d1226	OBRED-NA2: two-column Dutch articles, signed; right blank
 1.01.02/9460	1	900	2864a8b0	OBRED-NA2: declaration of the boden on the burial, Dutch prose, signatures and marks; no numerals
 1.01.02/9453	24	max(5000)	b15d8cf1	OBRED-9453: native read of the names nomenclator; table obred9453/table_9453_s24.tsv (11 codes 10-424, 9 C by margin)
+1.01.02/6020	1	700	c189a6c5	OBRED-6020 stride 6: sheet 01 tile H: Dutch letter, slip pasted over
+1.01.02/6020	7	700	c8e5e3c8	OBRED-6020 stride 6: sheet 01 tile E: Dutch letter close signed P. Brederode, dated 1620
+1.01.02/6020	13	700	81c02762	OBRED-6020 stride 6: sheet 01 tile L: Dutch letter with 'Post data' paragraph in prose, signed P. Brederode
+1.01.02/6020	19	700	09e2636a	OBRED-6020 stride 6: sheet 01 tile A: French numbered articles with marginal crosses + Latin/French address
+1.01.02/6020	25	700	db8611c0	OBRED-6020 stride 6: sheet 01 tile B: Dutch prose 2pp
+1.01.02/6020	31	700	3b7a4644	OBRED-6020 stride 6: sheet 01 tile G: address leaf with seal + Dutch letter
+1.01.02/6020	37	700	1b5ed27b	OBRED-6020 stride 6: sheet 01 tile C: address leaf, red seal, opening Dutch letter
+1.01.02/6020	43	700	4fc6dbde	OBRED-6020 stride 6: sheet 01 tile D: Dutch prose, dateline ~29 Jan 1620
+1.01.02/6020	49	700	087657c2	OBRED-6020 stride 6: sheet 01 tile J: Dutch prose 2pp
+1.01.02/6020	55	700	01d96c95	OBRED-6020 stride 6: sheet 02 tile J: French prose 2pp
+1.01.02/6020	61	700	66d0b695	OBRED-6020 stride 6: sheet 02 tile L: Dutch prose 2pp
+1.01.02/6020	67	700	b46b7f89	OBRED-6020 stride 6: sheet 02 tile K: blank left, Dutch prose right
+1.01.02/6020	73	700	fac0ae4e	OBRED-6020 stride 6: sheet 02 tile H: Dutch prose 2pp
+1.01.02/6020	79	700	a7feb8f2	OBRED-6020 stride 6: sheet 02 tile G: Dutch prose, right headed copy/extract dated 1620
+1.01.02/6020	85	700	7e51f523	OBRED-6020 stride 6: sheet 02 tile A: address leaf + Dutch letter dated Feb 1620
+1.01.02/6020	91	700	917a7fa7	OBRED-6020 stride 6: sheet 02 tile B: address leaf with seal + Dutch letter dated Mar 1620
+1.01.02/6020	97	700	01029749	OBRED-6020 stride 6: sheet 02 tile I: address leaf with seal + Dutch prose
+1.01.02/6020	103	700	2957f97f	OBRED-6020 stride 6: sheet 02 tile E: blank opening (show-through)
+1.01.02/6020	109	700	86d48bdc	OBRED-6020 stride 6: sheet 03 tile F: Dutch letter close signed P. Brederode, dated 1620
+1.01.02/6020	115	700	17ccd07f	OBRED-6020 stride 6: sheet 03 tile B: Dutch letter close signed P. Brederode with paraph
+1.01.02/6020	121	700	8074912d	OBRED-6020 stride 6: sheet 03 tile G: Dutch letter close signed P. Brederode, endorsement
+1.01.02/6020	127	700	62bc0d29	OBRED-6020 stride 6: sheet 03 tile E: Dutch prose 2pp
+1.01.02/6020	133	700	c1fbc9eb	OBRED-6020 stride 6: sheet 03 tile I: Dutch prose 2pp
+1.01.02/6020	139	700	c2ca3ae9	OBRED-6020 stride 6: sheet 03 tile J: French prose, right nearly blank
+1.01.02/6020	145	700	c20e8f45	OBRED-6020 stride 6: sheet 03 tile C: German(?) prose headed copy
+1.01.02/6020	151	700	0cc2c88b	OBRED-6020 stride 6: sheet 03 tile K: German prose headed copy 1620
+1.01.02/6020	157	700	047415b9	OBRED-6020 stride 6: sheet 03 tile L: address leaf with seal + Dutch letter opening, dated 1620
+1.01.02/6020	163	700	20aa2142	OBRED-6020 stride 6: sheet 04 tile D: Dutch prose 2pp
+1.01.02/6020	169	700	27a3a76d	OBRED-6020 stride 6: sheet 04 tile J: address leaf + Dutch letter opening
+1.01.02/6020	175	700	8bdc3b5d	OBRED-6020 stride 6: sheet 04 tile C: short French note with signature and date 1620, rest blank
+1.01.02/6020	181	700	74d6a9fb	OBRED-6020 stride 6: sheet 04 tile K: blank left, Dutch letter opening 1620
+1.01.02/6020	187	700	6ab9cb03	OBRED-6020 stride 6: sheet 04 tile E: address leaf with seal + Dutch letter opening 1620
+1.01.02/6020	193	700	743a137a	OBRED-6020 stride 6: sheet 04 tile H: short French/Dutch note top left, rest blank
+1.01.02/6020	199	700	c3443188	OBRED-6020 stride 6: sheet 04 tile G: Dutch prose 2pp
+1.01.02/6020	205	700	a1304fef	OBRED-6020 stride 6: sheet 04 tile A: blank left, Dutch prose right
+1.01.02/6020	211	700	8f658889	OBRED-6020 stride 6: sheet 04 tile I: French list of regiments/companies (names, not figures)
+1.01.02/6020	217	700	99207b0d	OBRED-6020 stride 6: sheet 05 tile C: Dutch prose 2pp
+1.01.02/6020	223	700	07c570af	OBRED-6020 stride 6: sheet 05 tile I: address leaf with seal + Dutch letter opening 1620
+1.01.02/6020	229	700	34ec4427	OBRED-6020 stride 6: sheet 05 tile K: Dutch prose 2pp
+1.01.02/6020	235	700	df098a83	OBRED-6020 stride 6: sheet 05 tile L: Dutch letter close signed P. Brederode + Post data paragraph in prose, docket on left
+1.01.02/6020	241	700	00e1683e	OBRED-6020 stride 6: sheet 05 tile A: Dutch prose left, German letter right signed with large paraph
+1.01.02/6020	247	700	f37ba54b	OBRED-6020 stride 6: sheet 05 tile G: address leaf with seal + Dutch letter opening 1620
+1.01.02/6020	253	700	ca2caf4d	OBRED-6020 stride 6: sheet 05 tile B: address leaf with seal + Dutch letter opening
+1.01.02/6020	259	700	645db3b7	OBRED-6020 stride 6: sheet 05 tile J: address leaf with seal + Dutch letter opening 1620
+1.01.02/6020	265	700	0caee547	OBRED-6020 stride 6: sheet 05 tile E: French list of officers/companies headed Chef with a right-hand column of figures (a list, not code groups)
+1.01.02/6020	271	700	ea5569b9	OBRED-6020 stride 6: sheet 06 tile L: French prose half page, rest blank
+1.01.02/6020	277	700	3fff4607	OBRED-6020 stride 6: sheet 06 tile B: Dutch prose 2pp, side headings
+1.01.02/6020	283	700	2a99976d	OBRED-6020 stride 6: sheet 06 tile C: Dutch prose, damaged leaf, note at foot
+1.01.02/6020	289	700	ad0420ef	OBRED-6020 stride 6: sheet 06 tile D: Dutch prose 2pp, closing
+1.01.02/6020	295	700	aed977cb	OBRED-6020 stride 6: sheet 06 tile H: French list of places with a figure column (quantities, a list not code groups) + short French prose
+1.01.02/6020	301	700	0a5bf5e6	OBRED-6020 stride 6: sheet 06 tile E: Dutch prose 2pp
+1.01.02/6020	307	700	ac7eb01a	OBRED-6020 stride 6: sheet 06 tile I: French/Italian prose 2pp
+1.01.02/6020	313	700	d2973367	OBRED-6020 stride 6: sheet 06 tile K: Italian avviso prose, dated Maggio 1620
+1.01.02/6020	319	700	4fd9465c	OBRED-6020 stride 6: sheet 06 tile J: address leaf with seal + Dutch letter opening 1620
+1.01.02/6020	325	700	781ed4a5	OBRED-6020 stride 6: sheet 07 tile B: Dutch prose 2pp
+1.01.02/6020	331	700	9cd66041	OBRED-6020 stride 6: sheet 07 tile G: Dutch prose 2pp
+1.01.02/6020	337	700	55be9365	OBRED-6020 stride 6: sheet 07 tile F: Dutch prose 2pp
+1.01.02/6020	343	700	2d11de92	OBRED-6020 stride 6: sheet 07 tile I: address leaf + Dutch letter opening Jul 1620
+1.01.02/6020	349	700	1ba681c5	OBRED-6020 stride 6: sheet 07 tile J: German letter headed with place and date 1620 + short note left
+1.01.02/6020	355	700	bf3a22b7	OBRED-6020 stride 6: sheet 07 tile H: French prose, headed extract/copy dated 1620
+1.01.02/6020	361	700	78e36b69	OBRED-6020 stride 6: sheet 07 tile L: Dutch prose 2pp
+1.01.02/6020	367	700	5bd11d34	OBRED-6020 stride 6: sheet 07 tile D: address leaf with seal + Dutch letter, close signed P. Brederode, damaged corner
+1.01.02/6020	373	700	8846004a	OBRED-6020 stride 6: sheet 07 tile C: address leaf with seal + Dutch letter opening Jul 1620
+1.01.02/6020	379	700	4a1fb82c	OBRED-6020 stride 6: sheet 08 tile J: address leaf with seal, slip pasted, Dutch letter opening
+1.01.02/6020	385	700	3e1f418e	OBRED-6020 stride 6: sheet 08 tile G: Dutch prose left, French letter right
+1.01.02/6020	391	700	012f4dc9	OBRED-6020 stride 6: sheet 08 tile F: Dutch prose with printed German pamphlet laid in (Copia ... Johann Georg)
+1.01.02/6020	397	700	2050483f	OBRED-6020 stride 6: sheet 08 tile E: Dutch prose 2pp
+1.01.02/6020	403	700	df6aaf5f	OBRED-6020 stride 6: sheet 08 tile H: Dutch letter close signed P. Brederode Aug 1620 + Spanish/Italian prose right
+1.01.02/6020	409	700	461748d6	OBRED-6020 stride 6: sheet 08 tile A: Post data page in Dutch prose, docket left
+1.01.02/6020	415	700	44d171fd	OBRED-6020 stride 6: sheet 08 tile L: Italian/Spanish prose, right blank
+1.01.02/6020	421	700	88764236	OBRED-6020 stride 6: sheet 08 tile C: Dutch prose 2pp
+1.01.02/6020	427	700	54f042ba	OBRED-6020 stride 6: sheet 08 tile K: Dutch letter close signed P. Brederode, rest blank
+1.01.02/6020	433	700	23b8b1be	OBRED-6020 stride 6: sheet 09 tile J: slip pasted, Dutch letter opening Sep 1620
+1.01.02/6020	439	700	dd63414f	OBRED-6020 stride 6: sheet 09 tile G: blank left, French prose right
+1.01.02/6020	445	700	dfb7c0ec	OBRED-6020 stride 6: sheet 09 tile C: address leaf with seal + Dutch letter opening Sep 1620
+1.01.02/6020	451	700	cf3c1de3	OBRED-6020 stride 6: sheet 09 tile H: address leaf with seal + Dutch letter opening
+1.01.02/6020	457	700	56a25468	OBRED-6020 stride 6: sheet 09 tile L: Dutch prose 2pp
+1.01.02/6020	463	700	423cd5de	OBRED-6020 stride 6: sheet 09 tile A: blank opening
+1.01.02/6020	469	700	b3ffcc37	OBRED-6020 stride 6: sheet 09 tile B: docket/blank left with initials, French/Dutch prose right
+1.01.02/6020	475	700	c866d092	OBRED-6020 stride 6: sheet 09 tile D: Dutch prose 2pp
+1.01.02/6020	481	700	50db9928	OBRED-6020 stride 6: sheet 09 tile I: Dutch prose left, French letter right
+1.01.02/6020	487	700	b9b8c7d2	OBRED-6020 stride 6: sheet 10 tile B: blank left, Dutch prose right
+1.01.02/6020	493	700	d0e179db	OBRED-6020 stride 6: sheet 10 tile K: Dutch prose left, Dutch letter close signed P. Brederode right
+1.01.02/6020	499	700	806c3105	OBRED-6020 stride 6: sheet 10 tile D: Latin prose, dated Sep 1620, right blank
+1.01.02/6020	505	700	71ef0941	OBRED-6020 stride 6: sheet 10 tile L: French letter signed, docket dated Sep 1620
+1.01.02/6020	511	700	8a23d824	OBRED-6020 stride 6: sheet 10 tile H: Dutch prose 2pp
+1.01.02/6020	517	700	9ac8741a	OBRED-6020 stride 6: sheet 10 tile F: Dutch prose 2pp
+1.01.02/6020	523	700	13111805	OBRED-6020 stride 6: sheet 10 tile G: Dutch prose 2pp
+1.01.02/6020	529	700	4bf5c9ec	OBRED-6020 stride 6: sheet 10 tile A: Dutch/German prose 2pp
+1.01.02/6020	535	700	632cf30d	OBRED-6020 stride 6: sheet 10 tile J: Dutch prose left, French prose right headed extract
+1.01.02/6020	541	700	c257fc13	OBRED-6020 stride 6: sheet 11 tile A: Post data page in Dutch prose, docket left
+1.01.02/6020	547	700	7de78d5f	OBRED-6020 stride 6: sheet 11 tile I: Dutch prose, close signed P. Brederode Oct(?) 1620
+1.01.02/6020	553	700	3bf560ac	OBRED-6020 stride 6: sheet 11 tile D: Dutch prose left, French letter right
+1.01.02/6020	559	700	82f8c40d	OBRED-6020 stride 6: sheet 11 tile J: French prose 2pp
+1.01.02/6020	565	700	a1884a10	OBRED-6020 stride 6: sheet 11 tile L: Dutch prose 2pp paragraphed
+1.01.02/6020	571	700	0fbe12aa	OBRED-6020 stride 6: sheet 11 tile E: Dutch prose 2pp, paragraphed
+1.01.02/6020	577	700	e959b3bf	OBRED-6020 stride 6: sheet 11 tile C: Dutch prose 2pp
+1.01.02/6020	583	700	f967b5b9	OBRED-6020 stride 6: sheet 11 tile B: address leaf with seal + Dutch letter opening
+1.01.02/6020	589	700	4cdf31bb	OBRED-6020 stride 6: sheet 11 tile K: French/Dutch prose 2pp
+1.01.02/6020	595	700	b3f39d87	OBRED-6020 stride 6: fetched, not read (sheet 12 beyond the PREREG stop line)
+1.01.02/6020	601	700	2df384af	OBRED-6020 stride 6: fetched, not read (sheet 12 beyond the PREREG stop line)

@@ -2412,3 +2412,52 @@ Read so far: no. 92 and the 187 postscript as band intervals (OBRED-BAND; 72 of 
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
 - [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
 Verdict: keep going: 3 internal gaps; the no. 92 key is not on any of the 17 scans of NA 1.01.02 inv. 9459 nor on 19 opening/stride scans of the process series 9450-9458 and 9460 (OBRED-NA2, M), whose one numeral code is an Oldenbarnevelt-Langerak name nomenclator of a different design (9453 scan 24); cheapest next: a per-lead leave-one-out monotonicity score with its own control (~$2), then 9450/9451/9453 at stride 3 (~$2); inv. 6020 stride 3 needs its own job (~220 requests, ~$4)
+
+## OBRED-6020 (15 Oct 2026, 12:01-12:1x UTC by date -u, account 2, Opus; for LANE DEFAULT-A2-1109-15)
+
+Brief (wave 3): stride-6 screen of NA 1.01.02 inv. 6020 (Liassen Agent Brederode, 1620, 604 scans) by the OBRED-6019/OBRED-NA method,
+<= 120 NA requests, for a third numeral text in the no. 92 / scan-187 / 6019-556 table, a key leaf or a Brederode figure postscript.
+Nothing decoded; no gate computed.
+
+- Prior-work step: `prior_work.py ... --item-spec 'shelfmark=NL-HaNA 1.01.02 inv. 6020 scans 1-601 (stride-6 screen)' --step-type read`
+  exit 4 (1 LEAD = this job's own claim, 1 LOOK, 2 UNCHECKED, 2 UNCHECKED-NET); the four non-net rows recorded CLEAR in `prior-work.tsv`
+  (adhoc-3bc4f6). No earlier section ran any of inv. 6020 (grep: only the lias table and gap lines).
+- PREREG addendum `obred187/PREREG-OBRED6020.md` pushed (8b9b6018c) before any fetch, with the stop rule.
+- Route: METS `6b71330d-...` (from `nl_brederode_lias.tsv`; 604 scans, matches the item page count), `screen_tools/na_fetch.py`, IIIF
+  `/full/700,/0/default.jpg`, >= 3.1 s apart, descriptive UA. **Requests: service.archief.nl 102 (1 METS + 101 scans), all HTTP 200**, no
+  403/429/challenge; NA take/release lines in ROOM.md; no 1200 px re-look was needed. 12 sheets by `screen_tools/contact_sheets.py`,
+  SHEET_SCANS=9, seed 6020, controls as OBRED-6019 (disk). Calls written to `images/6020_screen_sheetcalls.txt` and pushed (9e8660ecc)
+  before `images/6020_screen_sheetkey.json` was opened; the key rebuilt from disk reproduces byte-identical. One reader, this worker's own
+  eye, no subagent. No image committed; sha1s in `images/manifest.json` (`obred_6020`) and in `na_obredna_scans.tsv` (rows "OBRED-6020");
+  `screen_tools/regen_6020.sh` re-derives scans and sheets.
+- **Controls: 33 of 33 placed correctly (sheets 1-11 x 3), checked mechanically against the key. No sheet is a non-test.**
+- **Result, inv. 6020 scans 1-589 at stride 6 (99 scans): no numeral-code block, key table, interlinear decipherment or figure
+  postscript on any scan** (`images/6020_screen.tsv`, 99 rows). Content (by eye at sheet size, M): the 1620 run from about January to
+  October 1620 by datelines read at sheet size -- Dutch letters to the States General signed P. Brederode (several with paraph), address
+  leaves with red seals, letter openings, two 'Post data' paragraphs and one Post data page, all in prose; German, French, Italian and
+  Latin copies and extracts; a printed German pamphlet laid in ('Copia ...', Johann Georg); two French lists (regiments/companies, places)
+  with a quantity column -- figures in a list, not code groups; blank openings.
+- Sheet 12 (scans 595 and 601) was built but **not read**: the PREREG stop rule placed the 80% cap line at about sheet 11.
+- Where it was not found, and the limits: **every sixth scan of 1-589 only**; the other five sixths of inv. 6020 and scans 595/601 not
+  looked at; a one-leaf postscript is a sixth as likely to be sampled as a run of six; tiles about 525 px wide on a sheet read at about
+  2,000 px, so a block of a dozen groups or fewer inside prose could escape; one reader. A negative for these 99 scans at this
+  resolution, not for inv. 6020 as a whole.
+
+## Remaining gaps (OBRED-NA2, OBRED-9453, OBRED-6020, 15 Oct 2026)
+Read so far: no. 92 and the 187 postscript as band intervals (OBRED-BAND; 72 of 180 one-letter) and, by constrained segmentation, 20 nl16 words of >= 4 letters covering 112 of 143 letter tokens, all M (OBRED-SEG); the every-occurrence context test and the joint band-monotonicity check are both below their synthetic controls' gates, so neither adds a grade (OBRED-CTRY; OBRED-MONO: joint D 126 vs within-gap null p05 128, p 0.036, ungated, per-lead flag right-clean 0.06-0.12); code-200 and six more one-code-two-letter conflicts among the leads (OBRED-MONO, ungated); 37 name codes unread; inv. 6019 scans 555-556 carry 81 groups (58 H-read) with 45 C-graded period glosses; the 2 Oct 1619 letter puts Brederode's own cipher last in Oldenbarnevelt's hands (OBRED-OCT2, M)
+- no. 92 and the 187 postscript beyond M word leads - blocker: not-attempted; band intervals, segmentation, the every-occurrence context test and the joint monotonicity check are done with controls and no lead reaches S (OBRED-BAND, OBRED-SEG, OBRED-CTRY, OBRED-MONO); next: a per-lead leave-one-out monotonicity contribution score (fall in D when a lead is dropped vs its within-gap null), whose synthetic control must separate right from wrong leads at e 0.5/0.75, PREREG first, ~$2
+- the no. 92 key ("mijn cyfer ... in des Advocaets Barnevelt handen") - blocker: not-attempted; not in 3.01.14 (R9-NAKEY), not in the secret register 29 Aug 1619 - 7 Feb 1620 (OBRED-NA), not on any of the 17 scans of 1.01.02 inv. 9459, nor on the openings/stride scans of 9450-9458 and 9460 (19 of 234 scans; OBRED-NA2, M); the only numeral code seen in the process series is a small-number name nomenclator with margin decodes in an Oldenbarnevelt-Langerak letter (9453 scan 24), not the no. 92 design; next: the unseen scans of the three thick letter files 9450 (72 scans), 9451 (58), 9453 (46) at stride 3, about 55 NA requests, ~$2
+- the deciphered memorie of res. 1779 (a Maurits-cipher text, OBRED-OCT2 inference) - blocker: needs-physical-access; KHA A13 (Maurits) inventory not served to scripts and the archive is research-request only; owner-side step: a KHA research request, not queued
+- the later liassen NA 1.01.02 inv. 6021-6024, the rest of inv. 6020 and the 6019 stride-1 fill after 565 - blocker: not-attempted; inv. 6020 at stride 6, scans 1-589 (99 scans, controls 33/33), shows no numeral block, key leaf or figure postscript (OBRED-6020, M), so 1620 adds nothing to the 1619 letter at that depth; next: a stride-6 screen of inv. 6021 (1621-1622, 810 scans, ~136 NA requests), ~$4
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A): no numeral block, no Brederode, Stettin or Heidelberg heading (M)
+
+## Escalation (OBRED-NA2, OBRED-9453, OBRED-6020, 15 Oct 2026)
+- [x] siblings: scan 187 shares 26 values with no. 92 (OBRED-187); inv. 6019 scans 555-556 (Oggersheim, 14 Oct 1619) share 42 values with no. 92/187, clearing the shuffled-code control (OBRED-556); the letter's start (554) carries no groups (OBRED-552); inv. 6020 at stride 6 (scans 1-589) shows no third numeral text (OBRED-6020, controls 33/33)
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187); the 1619 letter's prose and margin summaries read in part (OBRED-556); 515-554 and 558-565 seen by eye (OBRED-MEM, OBRED-552, OBRED-549, OBRED-KEYHUNT); the 2 Oct 1619 letter 528-530 read in full (OBRED-OCT2)
+- [ ] known-keys: the 10 Aug 1598 Van Aerssen slip, Buzanval inv. 2028, DECODE 1600s and Palatine/Hessian keys screened (R10-OBRED98, R9-OBRED4, OLD-DKEY, R8-OBRED2, R9-OBRED3); Brederode's own cipher last in Oldenbarnevelt's hands (OBRED-OCT2); not in the secret register 29 Aug 1619 - 7 Feb 1620 (OBRED-NA), not on any 9459 scan nor the 9450-9458/9460 openings (OBRED-NA2); the 9453 s24 Langerak names nomenclator (10-424, Paltz = 47) shares no value with the no. 92 name codes and conflicts on the Elector Palatine (605) (OBRED-9453); next: 9450/9451/9453 at stride 3, ~$2
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII and NR 4 carry no key or decipherment note (OBRED-DP, OBRED-KEYHUNT)
+- [ ] key-rebuild: band intervals pass a held-out leaf check (OBRED-BAND), segment into 20 nl16 word leads above both nulls (OBRED-SEG, M); the every-occurrence context test (OBRED-CTRY) and the joint monotonicity check (OBRED-MONO: joint test has power, 0.90-0.93 of control sims, but the per-lead flag clears 0.06-0.12 of right leads) are both below their controls' gates; next: a per-lead leave-one-out monotonicity contribution score with its own synthetic control, ~$2
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
+- [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
+Verdict: keep going: 3 internal gaps; inv. 6020 (1620) at stride 6, scans 1-589, shows no numeral block, key leaf or figure postscript (OBRED-6020, controls 33/33, M); the no. 92 key is not on any 9459 scan nor the 9450-9458/9460 openings (OBRED-NA2, M); cheapest next: a per-lead leave-one-out monotonicity score with its own control (~$2), then 9450/9451/9453 at stride 3 (~$2); inv. 6021 at stride 6 (~136 requests, ~$4)
