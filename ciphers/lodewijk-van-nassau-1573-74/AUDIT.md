@@ -2076,3 +2076,12 @@ Verifier eye on the three rows LVN-K15 named (NOTES.md "VER-LVN3"; `lvn4611/corr
 RETX 40 not followed), **p2_K31/14 81 H -> M** (undecided 81/31 at 300 dpi; value kept). Counts: 4611 full C 1079 -> 1078, M 191 -> 192;
 4610/4611/4616 C/H **2565 of 3305 (77.6%)**, four letters **2565 of 4138 (62.0%)**. Depth stays **D2**; N-class unchanged (4610/4611/4616 N4,
 4612 N3; key ours). SECOND-OPINIONS-QUEUE.tsv quotes no 4611 p2 K31 line: no queued prompt changes. status.json not edited (the parent's).
+
+## LVN-4610H (15 Oct 2026, 13:11-13:2x UTC by date -u; solver job, account 4) -- reading revised after this AUDIT.md, carried here (rule 10 propagation)
+
+Eye check of every remaining 4610 H token ending in 1 or 8 at 300 dpi (NOTES.md "LVN-4610H"; PREREG `lvn4610h/PREREG-LVN-4610H.md`, 279 rows,
+positive control 126/128 on the H rows ending in 2): **p1_L05/1 1 H -> 2 M**, **p3_L04/21 101 H -> 102 M** (flat-foot 2; both letter-neutral, no
+word changes); 268 kept; 9 undecided left at H (final glyph neither 1/8 nor 2: p1_L28/5, p1_L32/2, p2_L06/17, p2_L10/20, p2_L22/19, p2_L30/6,
+p2_L34/4, p3_L04/3, p3_L30/17). Counts: 4610 full C 1215 -> 1213, M 112 -> 114; 4610/4611/4616 C/H **2563 of 3305 (77.5%)**, four letters
+**2563 of 4138 (61.9%)**. Depth stays **D2**; N-class unchanged (4610/4611/4616 N4, 4612 N3; key ours). No decoded word changed, so no
+SECOND-OPINIONS-QUEUE.tsv prompt changes. status.json not edited (the parent's).

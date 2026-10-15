@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """LVN-4610H targets: H numeral rows of ciphertext_4610.tsv ending in 1 or 8, outside p1_L04/p1_L09. Writes targets.tsv
 (line, position, pre_pos, sign). pre_pos maps the current row back to lvn10/ciphertext_4610_pre.tsv (apply.py's key);
-split rows (no pre_pos of their own) are written with pre_pos '-'. Offline. --check exits 1 if targets.tsv is stale."""
+split rows (no pre_pos of their own) are written with pre_pos '-'. Offline. targets.tsv is the pre-registration snapshot (pushed in the PREREG commit, before any image look); the two rows LVN-4610H changed to M no longer select, so a re-run after the apply differs by those two rows by design."""
 import csv, os, sys, re
 H = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(H)
 rd = lambda p: list(csv.DictReader(open(p), delimiter='\t'))

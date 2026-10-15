@@ -2,6 +2,7 @@ line	pre_pos	pre_sign	pre_conf	A4	B4	action
 p1_L04	11	75	M			lvn3r-confirmed
 p1_L04	18	101	M			lvn3r-settled
 p1_L04	18	108	M			lvneye-corrected
+p1_L05	1	1	H			lvneye-corrected
 p1_L06	9	6	M			lvn3r-confirmed
 p1_L09	15	65	M			lvn3r-settled
 p1_L09	15	68	M			lvneye-corrected
@@ -38,6 +39,7 @@ p2_L25	10	26	M			lvn3r-settled
 p2_L28	1	102	M			lvn3r-confirmed
 p2_L28	11	81	H			lvnctl-corrected
 p2_L28	15	81	H			lvneye-corrected
+p3_L04	21	101	H			lvneye-corrected
 p3_L12	12	120	H			lvnctl-corrected
 p3_L13	2	135	H			lvnctl-corrected
 p3_L15	2	85	H			lvnctl-corrected
