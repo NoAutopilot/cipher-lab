@@ -6,6 +6,8 @@ confidence (share of keyed neighbours within 8 positions that decode to their al
     python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_labels.py [--check]
     python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_labels.py --f201v [--check]   # VIV-67B: f.201v under PREREG-VIV67B's
         alignment (build_vivonne_f201v.load), writes tx/viv67b_labels.tsv and tx/viv67b_labels_summary.tsv
+    python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_labels.py --f202r [--check]   # VIV-67C: f.202r under PREREG-VIV67C's
+        alignment (build_vivonne_f202r.load), writes tx/viv67c_labels.tsv and tx/viv67c_labels_summary.tsv
 
 Writes tx/viv67_labels.tsv (one row per occurrence) and tx/viv67_labels_summary.tsv (per label: n, aligned, top letters,
 top letters at confidence >= 0.5); --check exits 1 if either committed file is stale.
@@ -18,7 +20,10 @@ import build_vivonne_f201r as b  # noqa: E402
 F201V = '--f201v' in sys.argv
 if F201V:
     import build_vivonne_f201v as b  # noqa: E402,F811
-PAGE, STEM = ('f201v', 'viv67b') if F201V else ('f201r', 'viv67')
+F202R = '--f202r' in sys.argv
+if F202R:
+    import build_vivonne_f202r as b  # noqa: E402,F811
+PAGE, STEM = ('f202r', 'viv67c') if F202R else ('f201v', 'viv67b') if F201V else ('f201r', 'viv67')
 
 
 def main():
