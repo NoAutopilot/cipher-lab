@@ -765,3 +765,59 @@ Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 
 - [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
 - [x] retry: MCC-SWEEP ran the token anneal's control length sweep (132-8,000 x 3 seeds): reads at no N; masc/homophonic not retried (shuffle floor is the limit, not the setting)
 Verdict: keep going: 1 internal gaps; cheapest next: suffix-aware abbreviation model with an ending-matched control and a repeated-type-keeping null, ~$3
+
+## MCC-SUFX: suffix-mark abbreviation model (15 Oct 2026, 05:35-05:5x UTC by date -u; disk/CPU only)
+Worker MCC-SUFX (account 1, LANE DEFAULT-A1-0447-15). Prior work: `tools/prior_work.py mccormick-1999 --item-spec
+'shelfmark=FBI notes;sender=McCormick' --step-type decode --offline` exit 4 (LEAD = this job's own claim, recorded CLEAR in
+prior-work.tsv; two UNCHECKED-NET generic rows not reached offline). Check 1: grep of NOTES.md, HYPOTHESES.md and NEAR.md --
+the suffix-mark instrument was named by MCC-SKEL's Verdict and never run. No host requests.
+- Instrument: `specs/cheap-tests/mccormick-1999/token_anneal.py --sufx --pool 3000 --n-list 132 --seeds 1,2,3 --nulls 40
+  --procs 4 --target` (option added, other modes unchanged; offline test `tools/tests/test_mcc_sufx.py` OK, and
+  test_mcc_skeleton.py still OK). Each word = drop-skeleton of its base + a mark (SE / BE / E / none) for its ending class
+  (ing, ed, ly, s, e, y, d, t, n, r, other); the class -> mark map is latent, fitted per text by coordinate ascent on the
+  lattice decode total (MCC-SKEL's decoder, LM and 3,000-word held-out pool). Why it is a different instrument, not a knob:
+  PREREG-MCC-SUFX.md (335740320, pushed before any seed 1-3 or target score). Control matched on N, kind sequence, letters per
+  code token (6.51 vs 6.47) and the target's token-final mark profile (none/E/SE/BE 0.302/0.194/0.362/0.142 vs 0.310/0.198/
+  0.362/0.129). Nulls keep the repeated types (NCBE x11 stays one type); the type-mark null also keeps each type's final mark.
+  Results: `families/sufx/sufx.json`, `sufx.log`.
+
+| N = 132, seed | word recovery | mark-map recovery | coverage | type-mark null max (40) |
+|---|---|---|---|---|
+| 1 | 0.709 | 0.962 | 0.887 | 0.440 |
+| 2 | 0.603 | 0.965 | 0.818 | 0.416 |
+| 3 | 0.617 | 0.987 | 0.816 | 0.427 |
+| mean | 0.643 (gate 0.5) | all >= 0.8 | all above null max | read: yes |
+
+| target statistic | target | type null max (40) | type-mark null max (40) |
+|---|---|---|---|
+| coverage | 0.497 | 0.265 (0 of 40 at or above) | 0.400 (0 of 40 at or above) |
+| LM score per code letter | -2.940 | -3.250 | -2.969 |
+
+- Preregistered outcome (all four above their maxima): "the target's stems fit the suffix-mark scheme beyond both
+  type-keeping nulls". Under the PREREG this decode is a candidate, not a reading (rule 10): graded M at best, and it
+  still needs a judge run and someone looking at the segments. No word of it is offered as a reading.
+- Descriptive, what carries it: 111 segments read as pool words; nice 15 (NCBE x11 plus NCBE inside run-on groups, read
+  as NC + BE with BE = the e-class mark), s 11, to 8, not 6, no 4, part / mrs / dancing 3. The decode itself is not
+  English prose ("nice nice ... [?TFXLC] [?TCXL] nice"); the fitted map (ing BE, ed E, ly SE, s SE, e BE, y SE, d E, t SE,
+  n SE, r SE, other E) differs from the control's planted map on most classes. The score-per-letter margin over the
+  type-mark null is small (-2.940 vs -2.969), so most of the margin is on coverage. Coverage 0.497 is well below the matched
+  control's 0.82-0.89 at the same N. Read together: the notes' stems are not random relative to an English ending-class
+  lexicon even once the endings and repetitions are kept, but the scheme as built accounts for half the letters and yields
+  no text. This is a lead on the structure (NCBE and the short function-word stems), not a decoding. Status unchanged: open.
+- Not run (follow-ups, not in this brief): judge_plaintext on the decode; a null that also keeps NCBE's stem (to measure how
+  much of the margin is the single type NCBE); the Gregg-lexicon variant (corpus not on disk).
+
+## Remaining gaps (MCC-SUFX, 15 Oct 2026)
+Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 rate the proposed ones
+- a reading of the two notes - blocker: no-key-material; cheap tests 2-5 above are the logged families, and the Cipher Mysteries thread (all 163 comments, D2-PRINT4) adds no key, crib or new ciphertext
+- the token/nomenclator family at the target's 132 tokens (char-4-gram and word-bigram anneals untestable at N <= 8,000; skeleton lattice drop arm negative, keepfinal a lead on the endings; suffix-mark model control reads at 132 and target is above both type-keeping nulls at coverage 0.497 vs control 0.82-0.89, no text: MCC-SWEEP, MCC-WORD, MCC-SKEL, MCC-SUFX) - blocker: not-attempted; next: judge_plaintext on the MCC-SUFX decode plus an NCBE-stem-keeping null to size the single-type share of the margin, ~$3; the Gregg-lexicon variant needs a corpus not on disk, ~$6
+
+## Escalation (MCC-SUFX, 15 Oct 2026)
+- [n/a] siblings: no other note by the same writer is known in public (Leads, Web and blog check)
+- [n/a] clear-pages: no clear text by the writer to align is public
+- [n/a] known-keys: no key of any kind is known for these notes
+- [x] print: Web and blog check (2 Oct) and the full Cipher Mysteries thread (D2-PRINT4); no accepted reading in print
+- [ ] key-rebuild: char-4-gram (MCC-SWEEP) and word-bigram (MCC-WORD) anneals untestable; skeleton lattice (MCC-SKEL) drop arm negative, keepfinal arm a lead; suffix-mark model (MCC-SUFX) control reads at 132, target above both type-keeping nulls (coverage 0.497, no text); untried: judge run + NCBE-stem-keeping null on MCC-SUFX (~$3), then the Gregg-lexicon variant (corpus not on disk, ~$6)
+- [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
+- [x] retry: MCC-SWEEP ran the token anneal's control length sweep (132-8,000 x 3 seeds): reads at no N; masc/homophonic not retried (shuffle floor is the limit, not the setting)
+Verdict: keep going: 1 internal gaps; cheapest next: judge_plaintext on the MCC-SUFX decode and an NCBE-stem-keeping null to size the single-type share of the margin, ~$3

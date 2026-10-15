@@ -43,3 +43,13 @@ CONTROL coverage at 132: 0.69-0.83 vs letter-null max 0.21-0.35 (power on every 
 drop 0.136 vs letter-null max 0.137 (not above: negative for this scheme); keepfinal 0.296 vs letter-null max 0.160 and
 keep-final-letter null max 0.203 (above both; carried by -NSE/-RSE/-SE endings and WLD; far below the control's
 0.69-0.81). No reading offered.
+
+MCC-SUFX (15 Oct 2026, 05:4x-05:50 UTC by date -u, account 1, LANE DEFAULT-A1-0447-15; hand-written note outside the tool
+table): token/nomenclator family, fourth instrument -- suffix-mark abbreviation model (`token_anneal.py --sufx`: drop-skeleton
+stem + a mark SE/BE/E/none per ending class, class -> mark map fitted per text; 3,000-word held-out pool, word-bigram LM),
+PREREG-MCC-SUFX.md (335740320). CONTROL (N = 132, the target's own N, kind sequence, token length and mark profile):
+word recovery 0.709 / 0.603 / 0.617 (mean 0.643), mark-map recovery 0.962 / 0.965 / 0.987, coverage 0.887 / 0.818 / 0.816
+vs type-mark null max 0.440 / 0.416 / 0.427: reads. TARGET: coverage 0.497 vs type null max 0.265 and type-mark null max
+0.400; score per letter -2.940 vs -3.250 and -2.969 (40 nulls each, all four above). Preregistered wording: "the target's
+stems fit the suffix-mark scheme beyond both type-keeping nulls" -- a candidate at M at best, no text, coverage far below
+the control's 0.82-0.89; carried largely by NCBE (read nice) and short function-word stems. No reading offered.
