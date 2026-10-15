@@ -1,0 +1,130 @@
+# CLIN-SIB (15 Oct 2026): B.147 p.243 (H-1649 Image 887; BL Add MS 21807 fo.206v), cipher of item 3050 (Clinton to Haldimand, 2 Oct 1780), columns 1-4.
+# Two blind Sonnet passes p243_passA.tsv / p243_passB.tsv; every entry agrees; 4 underline/glyph splits settled by the worker on zoomed crops (note column).
+# No overlap rows between L01/L02 crops (checked on the frame). kind: letter (L-P or -P; 1780 convention, every figure cell a letter cell) or clear.
+col	idx	kind	entry	underline	grade	passA	passB	note
+col1	1	letter	2-4	n	H	2-4/n	2-4/n	
+col1	2	letter	18-17	n	H	18-17/n	18-17/n	
+col1	3	letter	1-3	n	H	1-3/n	1-3/n	
+col1	4	letter	-4	n	H	-4/n	-4/n	
+col1	5	letter	-5	n	H	-5/n	-5/n	
+col1	6	letter	4-2	n	H	4-2/n	4-2/n	
+col1	7	letter	11-2	n	H	11-2/n	11-2/n	
+col1	8	letter	6-5	y	H	6-5/y	6-5/y	
+col1	9	letter	10-2	n	H	10-2/n	10-2/n	
+col1	10	letter	6-7	n	H	6-7/n	6-7/n	
+col1	11	letter	-2	n	H	-2/n	-2/n	
+col1	12	letter	-4	n	H	-4/n	-4/n	
+col1	13	letter	4-4	y	H	4-4/y	4-4/y	
+col1	14	clear	"&"	y	H	"a"/y	"q"/y	clear glyph: A "a", B "q"; worker: the ampersand (clear, ends a run either way)
+col1	15	clear	"there is"	y	H	"there is"/y	"there is"/y	
+col1	16	letter	4-1	n	H	4-1/n	4-1/n	
+col1	17	letter	-2	n	H	-2/n	-2/n	
+col1	18	letter	-4	n	H	-4/n	-4/n	
+col1	19	letter	-4	n	H	-4/n	-4/n	
+col1	20	letter	6-7	n	H	6-7/n	6-7/n	
+col1	21	letter	2-3	y	H	2-3/n	2-3/y	underline A n, B y; worker y (rule under 2-3 above "Probability")
+col1	22	clear	"Probability"	y	H	"Probability"/y	"Probability"/y	
+col1	23	letter	5-1	n	H	5-1/n	5-1/n	
+col1	24	letter	-2	y	H	-2/y	-2/y	
+col1	25	clear	"a 2d"	y	H	"a 2d"/y	"a 2d"/y	
+col1	26	letter	11-6	n	H	11-6/n	11-6/n	
+col1	27	letter	9-4	n	H	9-4/n	9-4/n	
+col1	28	letter	-6	n	H	-6/n	-6/n	
+col1	29	letter	9-4	n	H	9-4/n	9-4/n	
+col1	30	letter	4-3	n	H	4-3/n	4-3/n	
+col1	31	letter	9-4	n	H	9-4/n	9-4/n	
+col1	32	letter	12-1	n	H	12-1/n	12-1/n	
+col1	33	letter	-2	y	H	-2/y	-2/y	
+col2	34	letter	5-1	n	H	5-1/n	5-1/n	
+col2	35	letter	-2	y	H	-2/n	-2/y	underline A n, B y; worker y (zoom: rule under -2)
+col2	36	letter	5-2	n	H	5-2/y	5-2/n	underline A y, B n; worker n (zoom: no rule under 5-2)
+col2	37	letter	6-5	n	H	6-5/n	6-5/n	
+col2	38	letter	-4	n	H	-4/n	-4/n	
+col2	39	letter	-3	n	H	-3/n	-3/n	
+col2	40	letter	2-6	n	H	2-6/n	2-6/n	
+col2	41	letter	-2	y	H	-2/y	-2/y	
+col2	42	letter	2-4	n	H	2-4/n	2-4/n	
+col2	43	letter	5-4	n	H	5-4/n	5-4/n	
+col2	44	letter	4-2	n	H	4-2/n	4-2/n	
+col2	45	letter	1-3	n	H	1-3/n	1-3/n	
+col2	46	letter	4-3	y	H	4-3/y	4-3/y	
+col2	47	clear	"this"	y	H	"this"/y	"this"/y	
+col2	48	letter	2-12	n	H	2-12/n	2-12/n	
+col2	49	letter	6-4	n	H	6-4/n	6-4/n	
+col2	50	letter	-6	n	H	-6/n	-6/n	
+col2	51	letter	-5	y	H	-5/y	-5/y	
+col2	52	clear	"The"	n	H	"The"/n	"The"/n	
+col2	53	letter	11-9	n	H	11-9/n	11-9/n	
+col2	54	letter	-10	n	H	-10/n	-10/n	
+col2	55	letter	-11	n	H	-11/n	-11/n	
+col2	56	letter	-6	y	H	-6/y	-6/y	
+col2	57	letter	6-3	n	H	6-3/n	6-3/n	
+col2	58	letter	-4	n	H	-4/n	-4/n	
+col2	59	letter	14-3	n	H	14-3/n	14-3/n	
+col2	60	letter	4-3	y	H	4-3/y	4-3/y	
+col2	61	clear	"9"	y	H	"9"/y	"9"/y	
+col2	62	letter	4-3	n	H	4-3/n	4-3/n	
+col2	63	letter	6-2	n	H	6-2/n	6-2/n	
+col2	64	letter	-3	n	H	-3/n	-3/n	
+col2	65	letter	4-4	y	H	4-4/y	4-4/y	
+col3	66	clear	"Your"	n	H	"Your"/n	"Your"/n	
+col3	67	clear	"Excellency"	y	H	"Excellency"/y	"Excellency"/y	
+col3	68	letter	7-11	n	H	7-11/n	7-11/n	
+col3	69	letter	-12	y	H	-12/y	-12/y	
+col3	70	letter	1-6	n	H	1-6/n	1-6/n	
+col3	71	letter	7-6	y	H	7-6/y	7-6/y	
+col3	72	letter	4-1	n	H	4-1/n	4-1/n	
+col3	73	letter	6-6	n	H	6-6/n	6-6/n	
+col3	74	letter	4-3	n	H	4-3/n	4-3/n	
+col3	75	letter	-4	y	H	-4/y	-4/y	
+col3	76	letter	4-2	n	H	4-2/n	4-2/n	
+col3	77	letter	-3	y	H	-3/y	-3/y	
+col3	78	letter	4-4	n	H	4-4/n	4-4/n	
+col3	79	letter	6-5	n	H	6-5/n	6-5/n	
+col3	80	letter	18-17	n	H	18-17/n	18-17/n	
+col3	81	letter	5-5	y	H	5-5/y	5-5/y	
+col3	82	clear	"Ld"	n	H	"Ld"/n	"Lt"/n	clear word A "Ld", B "Lt"; worker Ld
+col3	83	letter	21-1	n	H	21-1/n	21-1/n	
+col3	84	letter	-2	n	H	-2/n	-2/n	
+col3	85	letter	-3	n	H	-3/n	-3/n	
+col3	86	letter	6-3	n	H	6-3/n	6-3/n	
+col3	87	letter	14-3	n	H	14-3/n	14-3/n	
+col3	88	letter	6-6	n	H	6-6/n	6-6/n	
+col3	89	letter	4-1	n	H	4-1/n	4-1/n	
+col3	90	letter	-1	n	H	-1/n	-1/n	
+col3	91	letter	4-2	n	H	4-2/n	4-2/n	
+col3	92	letter	-3	y	H	-3/y	-3/y	
+col3	93	clear	"has"	y	H	"has"/y	"has"/y	
+col4	94	letter	6-1	n	H	6-1/n	6-1/n	
+col4	95	letter	-6	n	H	-6/n	-6/n	
+col4	96	letter	9-9	n	H	9-9/n	9-9/n	
+col4	97	letter	-10	n	H	-10/n	-10/n	
+col4	98	letter	17-3	n	H	17-3/n	17-3/n	
+col4	99	letter	18-3	y	H	18-3/y	18-3/y	
+col4	100	clear	"a"	y	H	"a"/y	"a"/y	
+col4	101	letter	21-1	n	H	21-1/n	21-1/n	
+col4	102	letter	-2	n	H	-2/n	-2/n	
+col4	103	letter	1-6	n	H	1-6/n	1-6/n	
+col4	104	letter	-3	n	H	-3/n	-3/n	
+col4	105	letter	4-1	n	H	4-1/n	4-1/n	
+col4	106	letter	6-4	n	H	6-4/n	6-4/n	
+col4	107	letter	-6	n	H	-6/n	-6/n	
+col4	108	letter	4-4	y	H	4-4/y	4-4/y	
+col4	109	letter	9-16	n	H	9-16/n	9-16/n	
+col4	110	letter	4-2	n	H	4-2/n	4-2/n	
+col4	111	letter	2-6	n	H	2-6/n	2-6/n	
+col4	112	letter	4-4	n	H	4-4/n	4-4/n	
+col4	113	letter	5-1	n	H	5-1/n	5-1/n	
+col4	114	letter	11-3	n	H	11-3/n	11-3/n	
+col4	115	letter	7-6	y	H	7-6/y	7-6/y	
+col4	116	letter	5-1	n	H	5-1/n	5-1/n	
+col4	117	letter	9-16	n	H	9-16/n	9-16/n	
+col4	118	letter	6-4	n	H	6-4/n	6-4/n	B note: 6-4 second figure may be 5; A: a small 5 by the 4 (zoom: a mark under the 4); kept 6-4 H
+col4	119	letter	-5	y	H	-5/y	-5/y	A note: 4 over 5? (zoom: -5 clear); kept H
+col4	120	letter	6-1	n	H	6-1/n	6-1/n	
+col4	121	letter	-2	n	H	-2/n	-2/n	
+col4	122	letter	-3	n	H	-3/n	-3/n	
+col4	123	letter	-4	n	H	-4/n	-4/n	
+col4	124	letter	-5	n	H	-5/n	-5/n	
+col4	125	letter	-6	n	H	-6/n	-6/n	
+col4	126	letter	-7	y	H	-7/n	-7/y	underline A n (maybe double rule), B y; worker y (end of column)
