@@ -5200,3 +5200,48 @@ target outputs are logs, not leads. The 121-150 block needs a period witness (an
 decipherment that uses 125/139/140/145/148/150) or a different instrument that can tell a null from a letter (e.g. a deletion-aware
 alignment against a printed answer), not a further run of these two. Requests: archive.org 2, resources.huygens.knaw.nl 0. Subagents 0.
 No judge run (no reading changed). Novelty not classified.
+
+## LVN-4610U: the 9 undecided 4610 rows + the p1_L05 head (15 Oct 2026, 14:52-15:0x UTC by date -u, account 4, LANE DEFAULT-A4-1441-15)
+
+Step: LVN-4610H's named next ("eye on the 9 undecided non-2 rows with a per-token zoom beside same-line exemplars"; "the p1_L05 head 81, 125").
+PREREG `lvn4610u/PREREG-LVN-4610U.md` pushed before any image was looked at. Route: disk only -- the committed 150-dpi line crops
+images/04610_<line>.jpg and page image images/04610_p1.jpg, upscaled 3-6x (Lanczos) in scratch; no fetch, no image in git. One Opus eye (this
+session), no subagent, NOT blind. Prior work: LVN-4610H's own prior_work.py run covers the same item and step type (re-read of transcribed
+tokens); not re-run.
+
+**Control 6/6 (gate 5/6)**: first non-target H tokens on the target lines with final 5/3/1/8/6/0 -- p1_L28/8 35, p1_L28/16 103, p1_L28/3 141,
+p2_L06/21 118, p2_L22/3 86, p1_L28/4 150 -- all read as committed.
+
+**Rulings** (`lvn10/corrections_lvneye.tsv`, tagged LVN-4610U, applied by `lvn10/apply.py` post4, default round):
+| row | was | now | grade | eye | reading effect |
+|---|---|---|---|---|---|
+| p1_L28/5 | 78 | 75 | H->M | long-s 5 of 35/25/65 same line | d->c: "dontraint" -> **"contraint"** |
+| p1_L32/2 | 128 | 123 | H->M | Z-topped 3 of 33/23 same line | NULL(128 ?)->l: "{autre}" -> **"l{autre}"** |
+| p2_L06/17 | 81 | 85 | H->M | long-s 5 of 65/25/125/145 | e->e, none |
+| p2_L10/20 | 128 | 123 | H->M | Z-3 of 39/133 | NULL->l: "hazarder" -> "hazarderl" (line end) |
+| p2_L22/19 | 81 | 85 | H->M | long-s 5 of 35/5 | e->e, none |
+| p2_L30/6 | 28 | 26 | H->M | sigma-6 of 126, not the 8 of 38 | s->s, none |
+| p2_L34/4 | 141 | 141 (undecided) | H->M | final is a 0, not a 1; middle nearer the 5 of 150 than a Z-3 | none (150 lead, 130 not excluded) |
+| p3_L04/3 | 131 | 135 | H->M | long-s 5, not the 1 of 101 | NULL->NULL (key blank), none |
+| p3_L30/17 | 118 | 115 | H->M | long-s 5 of 85, not the 8 of 83 | m->l: "elme" -> **"elle"** |
+All three letter-changing rulings turn a non-word into a French word (contraint, l'autre, elle); that is consistency, not a control.
+Codes >120 in key.tsv untouched (123 l and 135 blank as they stand).
+
+**p1_L05 head** (second unit, one eye only -- the brief's 2 passes + reconcile were not run, cap): on images/04610_p1.jpg (box above the line crop,
+which clips the head) the physical line reads **"81, 125, 2, 8, 80, 28, a paroistre, 12, ..."**: 81 (final glyph the hooked 1 of 81, not the
+flat-foot 2) and 125 (long-s 5) confirm LVN-4610H's "81, 125". Not inserted: `lvn10/apply.py`'s corrections path replaces rows by pre_pos and
+cannot insert; the same holds for LVN-3R's p1_L04 head, which this image also shows as "124, 127, 145, auoit este tout, 7, 71, ..." (transcribed
+p1_L04 starts at 145). 125 has no key.tsv value (LVN-NAMES / VIV-KEYSTONE's codes >120).
+
+Found on the way, not changed: p1_L05/3 80 H looks 89 or 88 (second glyph tailed); p2_L22/9 25 H looks 26 (sigma-6, as 86 on the same line;
+c -> s would change a letter); p2_L30/2 35 H faint, may be 36; p1_L32/1 141 H first glyph looks like a 2 (241?); p1_L04/3 =fut M: image reads
+"este".
+
+Counts (rule 4). reading_4610_full_tokens.tsv: **C 1213 -> 1206, M 114 -> 121** (H 9, I 54, U 155 unchanged). reading_4610_tokens.tsv: C 1114 ->
+1108, M 86 -> 94, U 288 -> 286. 4610/4611/4616 C/H **2563 -> 2556 of 3305 (77.3%)**; four letters **2563 -> 2556 of 4138 (61.8%)**. Checks:
+`decode_key.py --check` exit 0 for all 13 decode*.json (decode.json and decode_4610_full.json regenerated); `settle.py`, `lvn4611/settle.py`,
+`lvn4611/build_key.py`, `lvn4611/build_key_p2.py`, `lvn4611/settle_p3L00.py`, `lvn10/apply.py`, `lvn16/apply.py`, `lvn4611/retx_p2.py check`
+exit 0; `axnames/revisions.py` regenerated (stale after the change), --check exit 0. Carried into AUDIT.md "LVN-4610U". No judge run. Novelty not
+classified. Requests: 0. Subagents: 0.
+Next (one line each): an insert path in lvn10/apply.py (pre-file rows or an `insert_before` column) and the two heads p1_L04 "124, 127" + p1_L05
+"81, 125" entered as M, ~$0.5; a second eye (blind) on p2_L34/4 (130/150) and the five found-on-the-way rows, ~$0.5.

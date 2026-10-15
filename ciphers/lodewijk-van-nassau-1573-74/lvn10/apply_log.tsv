@@ -15,10 +15,14 @@ p1_L17	7	64	M			lvn3r-confirmed
 p1_L19	19	31	M			lvn3r-settled
 p1_L19	19	81	M			lvneye-corrected
 p1_L23	8	25	M			lvn3r-settled
+p1_L28	5	78	H			lvneye-corrected
+p1_L32	2	128	H			lvneye-corrected
 p1_L35	13	131	M			lvn3r-settled
 p2_L02	2	112	M			lvn3r-confirmed
 p2_L02	4	81	M			lvn3r-confirmed
 p2_L02	14	64	M			lvn3r-confirmed
+p2_L06	17	81	H			lvneye-corrected
+p2_L10	20	128	H			lvneye-corrected
 p2_L11	4	138	M			lvn3r-confirmed
 p2_L11	5	37	M			lvn3r-confirmed
 p2_L11	8	61	M			lvn3r-confirmed
@@ -29,6 +33,7 @@ p2_L16	6	78	M			lvneye-corrected
 p2_L16	13	127	M			lvn3r-confirmed
 p2_L16	14	7	M			lvn3r-confirmed
 p2_L17	3	75	M			lvn3r-confirmed
+p2_L22	19	81	H			lvneye-corrected
 p2_L24	1	101	M			lvn3r-settled
 p2_L24	14	136	M			lvn3r-confirmed
 p2_L25	2	2	M			lvn3r-confirmed
@@ -39,6 +44,9 @@ p2_L25	10	26	M			lvn3r-settled
 p2_L28	1	102	M			lvn3r-confirmed
 p2_L28	11	81	H			lvnctl-corrected
 p2_L28	15	81	H			lvneye-corrected
+p2_L30	6	28	H			lvneye-corrected
+p2_L34	4	141	H			lvneye-corrected
+p3_L04	3	131	H			lvneye-corrected
 p3_L04	21	101	H			lvneye-corrected
 p3_L12	12	120	H			lvnctl-corrected
 p3_L13	2	135	H			lvnctl-corrected
@@ -50,3 +58,4 @@ p3_L21	7	82	H			lvnctl-corrected
 p3_L22	3	32	H			lvnctl-corrected
 p3_L23	3	51	H			lvnctl-corrected
 p3_L24	15	130	H			lvnctl-corrected
+p3_L30	17	118	H			lvneye-corrected

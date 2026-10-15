@@ -517,7 +517,7 @@ p1_L28	1	24	H		agree
 p1_L28	2	124	H		agree
 p1_L28	3	141	H		agree
 p1_L28	4	150	H		agree
-p1_L28	5	78	H		agree
+p1_L28	5	75	M	was 78 H	image150 LVN-4610U (15 Oct 2026, one Opus look at the committed 150-dpi line crop images/04610_p1_L28.jpg upscaled 3-6x beside same-line exemplars, not blind; control 6/6): final glyph is the long-s 5 of 35, 25, 65 on the same line, not an 8; 78 d -> 75 c; eye against the H, so M (pre pos 5)
 p1_L28	6	9	H		agree
 p1_L28	7	4	H		agree
 p1_L28	8	35	H		agree
@@ -588,7 +588,7 @@ p1_L31	17	36	H		agree
 p1_L31	18	26	H		agree
 p1_L31	19	81	H		agree
 p1_L32	1	141	H		agree
-p1_L32	2	128	H		agree
+p1_L32	2	123	M	was 128 H	image150 LVN-4610U (15 Oct 2026, one Opus look at the committed 150-dpi line crop images/04610_p1_L32.jpg upscaled 3-6x beside same-line exemplars, not blind; control 6/6): final glyph is the Z-topped 3 of 33 and 23 on the same line, not the 8 of 82; 128 ? -> 123 l; eye against the H, so M (pre pos 2)
 p1_L32	3	=autre	S	=austri	settled-a nc=2 margin=0.35
 p1_L32	4	=de	H		agree
 p1_L32	5	21	H		agree
@@ -804,7 +804,7 @@ p2_L06	13	111	H		agree
 p2_L06	14	65	H		agree
 p2_L06	15	25	H		agree
 p2_L06	16	120	H		agree
-p2_L06	17	81	H		agree
+p2_L06	17	85	M	was 81 H	image150 LVN-4610U (15 Oct 2026, one Opus look at the committed 150-dpi line crop images/04610_p2_L06.jpg upscaled 3-6x beside same-line exemplars, not blind; control 6/6): final glyph is the long-s 5 of 65, 25, 125, 145 on the same line; 81 and 85 both e; eye against the H, so M (pre pos 17)
 p2_L06	18	145	H		agree
 p2_L06	19	77	H		agree
 p2_L06	20	82	H		agree
@@ -891,7 +891,7 @@ p2_L10	16	24	H		agree
 p2_L10	17	77	H		agree
 p2_L10	18	81	H		agree
 p2_L10	19	22	H		agree
-p2_L10	20	128	H		agree
+p2_L10	20	123	M	was 128 H	image150 LVN-4610U (15 Oct 2026, one Opus look at the committed 150-dpi line crop images/04610_p2_L10.jpg upscaled 3-6x beside same-line exemplars, not blind; control 6/6): final glyph is the Z-topped 3 of 39 and 133 on the same line, not the 8 of 81; 128 ? -> 123 l; eye against the H, so M (pre pos 20)
 p2_L11	1	135	H		agree
 p2_L11	2	114	H		agree
 p2_L11	3	84	H		agree
@@ -1129,7 +1129,7 @@ p2_L22	15	27	H		agree
 p2_L22	16	139	H		agree
 p2_L22	17	=a	H		agree
 p2_L22	18	=fouuoir	M	B:=fouvoir	differ
-p2_L22	19	81	H		agree
+p2_L22	19	85	M	was 81 H	image150 LVN-4610U (15 Oct 2026, one Opus look at the committed 150-dpi line crop images/04610_p2_L22.jpg upscaled 3-6x beside same-line exemplars, not blind; control 6/6): final glyph is the long-s 5 of 35 and 5 on the same line, not the dotted 1 of 81 at p2_L22/13; 81 and 85 both e; eye against the H, so M (pre pos 19)
 p2_L22	20	5	H		agree
 p2_L22	21	35	H		agree
 p2_L22	22	84	H		agree
@@ -1271,7 +1271,7 @@ p2_L30	2	35	H		agree
 p2_L30	3	31	H		agree
 p2_L30	4	=par	H		agree
 p2_L30	5	=dla	M	B:=deca	differ
-p2_L30	6	28	H		agree
+p2_L30	6	26	M	was 28 H	image150 LVN-4610U (15 Oct 2026, one Opus look at the committed 150-dpi line crop images/04610_p2_L30.jpg upscaled 3-6x beside same-line exemplars, not blind; control 6/6): final glyph is the sigma-shaped 6 of 126 on the same line, not the 8 of 38 at p2_L30/12; 28 and 26 both s; eye against the H, so M (pre pos 6)
 p2_L30	7	31	H		agree
 p2_L30	8	21	H		agree
 p2_L30	9	61	H		agree
@@ -1352,7 +1352,7 @@ p2_L33	21	=et	M	B:-	gap
 p2_L34	1	123	H		agree
 p2_L34	2	128	H		agree
 p2_L34	3	142	H		agree
-p2_L34	4	141	H		agree
+p2_L34	4	141	M	was 141 H	image150 LVN-4610U (15 Oct 2026, one Opus look at the committed 150-dpi line crop images/04610_p2_L34.jpg upscaled 3-6x beside same-line exemplars, not blind; control 6/6): undecided: final glyph is a 0 (as in 150, 120), not a 1; middle glyph small, nearer the long-s 5 of 150 than the Z-3 of 123 (150 lead, 130 not excluded); value left, H -> M; eye against the H, so M (pre pos 4)
 p2_L34	5	137	H		agree
 p2_L35	1	[blank]	H		agree
 p2_L36	1	[blank]	H		agree
@@ -1426,7 +1426,7 @@ p3_L03	21	145	H		agree
 p3_L03	22	=sungefir	M	B:=sengaser	differ
 p3_L04	1	=toui	M	B:=vira	differ
 p3_L04	2	194	H		agree
-p3_L04	3	131	H		agree
+p3_L04	3	135	M	was 131 H	image150 LVN-4610U (15 Oct 2026, one Opus look at the committed 150-dpi line crop images/04610_p3_L04.jpg upscaled 3-6x beside same-line exemplars, not blind; control 6/6): final glyph is the long-s 5, not the 1 of 101 at p3_L04/9; eye against the H, so M (pre pos 3)
 p3_L04	4	=pour	H		agree
 p3_L04	5	29	H		agree
 p3_L04	6	9	H		agree
@@ -1947,7 +1947,7 @@ p3_L30	13	=scaure	M	B:=signe	differ
 p3_L30	14	=aubiery	M	B:=annoncy	differ
 p3_L30	15	85	H		agree
 p3_L30	16	111	H		agree
-p3_L30	17	118	H		agree
+p3_L30	17	115	M	was 118 H	image150 LVN-4610U (15 Oct 2026, one Opus look at the committed 150-dpi line crop images/04610_p3_L30.jpg upscaled 3-6x beside same-line exemplars, not blind; control 6/6): final glyph is the long-s 5 of 85 at p3_L30/15, not the 8 of 83 at p3_L30/21; 118 m -> 115 l; eye against the H, so M (pre pos 17)
 p3_L30	18	81	H		agree
 p3_L30	19	150	H		agree
 p3_L30	20	114	H		agree

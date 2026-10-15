@@ -2085,3 +2085,13 @@ word changes); 268 kept; 9 undecided left at H (final glyph neither 1/8 nor 2: p
 p2_L34/4, p3_L04/3, p3_L30/17). Counts: 4610 full C 1215 -> 1213, M 112 -> 114; 4610/4611/4616 C/H **2563 of 3305 (77.5%)**, four letters
 **2563 of 4138 (61.9%)**. Depth stays **D2**; N-class unchanged (4610/4611/4616 N4, 4612 N3; key ours). No decoded word changed, so no
 SECOND-OPINIONS-QUEUE.tsv prompt changes. status.json not edited (the parent's).
+
+## LVN-4610U (15 Oct 2026, 14:52-15:0x UTC by date -u; solver job, account 4) -- reading revised after this AUDIT.md, carried here (rule 10 propagation)
+
+Eye on LVN-4610H's 9 undecided rows on the 150-dpi line crops beside same-line exemplars (NOTES.md "LVN-4610U"; PREREG
+`lvn4610u/PREREG-LVN-4610U.md`; control 6/6): 8 changed, all H -> M -- p1_L28/5 78 -> 75 (d -> c), p1_L32/2 128 -> 123 (NULL -> l), p2_L06/17
+81 -> 85, p2_L10/20 128 -> 123 (NULL -> l), p2_L22/19 81 -> 85, p2_L30/6 28 -> 26, p3_L04/3 131 -> 135, p3_L30/17 118 -> 115 (m -> l); p2_L34/4
+141 left, H -> M (final glyph 0; 130/150). Decoded words changed: "dontraint" -> "contraint", "{autre}" -> "l{autre}", "elme" -> "elle",
+"hazarder" -> "hazarderl" (line end). Counts: 4610 full C 1213 -> 1206, M 114 -> 121; 4610/4611/4616 C/H **2556 of 3305 (77.3%)**, four letters
+**2556 of 4138 (61.8%)**. Depth stays **D2**; N-class unchanged (4610/4611/4616 N4, 4612 N3; key ours). SECOND-OPINIONS-QUEUE.tsv's two rows for
+this target quote none of the changed words (grep, 15 Oct 2026); no prompt changes. status.json not edited (the parent's).
