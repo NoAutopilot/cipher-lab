@@ -45,3 +45,14 @@ unchanged tx/vivcls/atlas; 1-NN registered, distance-weighted 5-NN report-only; 
 - Otherwise: numbers logged, stop. Cap USD 6, box 60 min from the claim; a unit that would cross 80% of either is not started, and an
   incomplete r sample is reported as such (the gate is then run on what was boxed and labelled "r sample incomplete").
 - openapi.bnf.fr: at most 6 requests, one at a time >= 3 s, take/release lines. No subagent writes a file.
+
+## Addendum A (15 Oct 2026, 07:0x UTC by date -u, worker VIV-GSPLIT3B, account 4; pushed before any further cut)
+Continuation of the SAME registered test, not a new attempt: VIV-GSPLIT3 stopped the r sample at 32 of 138 targets (whole 29, unsure 3).
+This job hand-cuts the remaining 106 r targets in `tx/vivgsplit3/targets.tsv` in the same leaf-interleaved order (`panels.py sheets --cls r`,
+sheets 3 onward; targets already boxed are not re-cut), by the same s.2 protocol (box drawn by eye on the line crop, logged in
+`tx/vivgsplit3/boxes_handcut.tsv` with whole/unsure/none; only `whole` enters), then re-runs s.3 unchanged (`gsplit.py material3/run3/check3`;
+gate: pooled held-out f recall >= 0.60 AND precision >= 0.60 AND F1 > p99 of 200 label-shuffled nulls, seed 20261015). The f side is not re-cut
+(N_f = 18 as boxed). Price: one Opus look per sheet of ~16 windows, USD 0.45 per look, about 7 looks + 2 check sheets for 106 tiles
+(about USD 0.04 per tile); cap USD 5, box 50 min from the claim (07:00 UTC); a look that would cross 80% of either is not started, and the
+r count reached is reported; an incomplete sample keeps the label "r sample incomplete" and the gate is not called passed on it.
+s.4 consequences unchanged (PASS on the full sample -> f.191r step; FAIL -> logged, the g-split family [retired] for this instrument absent new material).
