@@ -1,0 +1,16 @@
+label	lines	part	form	phrase	hits	snippet
+P01	D01-02	beginning	as reconciled	dicho charles fazia de reduzir	0	
+P01	D01-02	beginning	normalised	dicho carlos hazia de reducir	0	
+P02	D03	beginning	as reconciled	treze del dicho mes de setiembre	1	scriuiendome V. S. por su carta de {{{treze del dicho mes de Setiembre}}}, despachada por su Secretario Coloma
+P03	D04	beginning	as reconciled	saberlo verdaderament soy maravillado	0	
+P03	D04	beginning	normalised	saberlo verdaderamente soy maravillado	0	
+P04	D05	beginning	as reconciled	fecho al dicho charles	1	tener admiracion del scriuir mio que he {{{fecho al dicho Charles}}} que este firme en su conformidat, me dice
+P05	D06	middle (control)	as reconciled	reposo al regno de navarra	1	alteza mucho seruicio y benefficio, y {{{reposo al regno de navarra}}}, ca por no venir en effecto la reduccion
+P06	D06	middle	as reconciled	por no venir en effecto la reducion	0	
+P06	D06	middle	normalised	por no venir en effecto la reduccion	1	y reposo al regno de navarra, ca {{{por no venir en effecto la reduccion}}} del dicho Charles, é houiendo yo
+P07	D07-08	middle	as reconciled	ninguno de los agramonteses	1	scrito al dicho Conde non re- cibiese {{{ninguno de los agramonteses}}} en su conformidat, le pend de verse assi
+P08	D12	middle	as reconciled	el dicho charles parezca	0	
+P09	D13	end	as reconciled	solamente charles darteida	0	
+P10	D14	end	as reconciled	non solo no lo destorbaria	1	 mas todos los otros de aquel regno, {{{non solo no lo destorbaria}}}, mas con todas mis fuerzas lo procuraria
+P11	D14-15	end	as reconciled	mis fuerças lo procuraria	0	
+P11	D14-15	end	normalised	mis fuerzas lo procuraria	1	solo no lo destorbaria, mas con todas {{{mis fuerzas lo procuraria}}} é tre- bajaria (2). E nuestro Sefior la
