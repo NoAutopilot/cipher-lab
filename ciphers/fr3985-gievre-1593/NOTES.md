@@ -69,3 +69,9 @@ Transcription only (no decode, no key work, no test). Crops: `iiif_lines.py --im
 Result: ciphertext.tsv, **N = 92 cipher signs** (L01 24, L02 33, L03 35, L04 0), 25 marked `?` (about 27%); graded M (rule 4), no key applied. The passes split on: o/oo/0, n vs o, c/b/dbl, pl vs p, the run after the L02 first `++` (tri/inT, pl, box, 2+/4+, r), x after `G r`, Z vs z, L03 pos 19 (3 vs o), L03 pos 28 (c vs pl), trailing c/t before "ma assurer de" (may be clear) -- for the owner's sorter, never blocking. `box` is not in the sign guide.
 Tags not found by name in tools/keys/key60.tsv (name-level only; its spellings may differ from the guide's tags, not checked against glyphs): Z a alpha box dbl del h ls pl tri z.
 Requests: none (disk only).
+
+## BNF-GIEVRE-SORT (15 Oct 2026, account 2)
+Sorter build only (no reading, no decode, no key). `sorter/build.sh` (inputs, README beside it): tiles cut from the committed f.89 line crops, L01-L03 stitched at native x=2700, clear-text words left out by hand-set spans; **119 tiles** (L01 36, L02 40, L03 43), **46 focus tiles** (windows around where passA.tsv and passB.tsv split, positions only). Default blind mode, not published.
+Preflight (`tools/sorter_preflight.py`): PASS template, answerable (46 focus, 8 piles), R12/R16, right line (0.0% off-line), contact sheet, colour (cvd_check); WARN R13/R15 (shape-cluster piles, no waiting queue) and R14 (no box check, the cut is automatic plus a span filter); gestures and pan not run in the first call (see ROOM done line). Tile count (119) exceeds N = 92 because the automatic cut over-splits; the owner merges or sends to BAD-CUT.
+Remaining gaps: the sign inventory is waiting-on ASKS 169; next, after the sort, `tools/sign_sorter_apply.py` then a machine pass against the settled labels.
+Requests: none (disk only).
