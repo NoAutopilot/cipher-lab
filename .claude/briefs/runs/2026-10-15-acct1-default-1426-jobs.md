@@ -102,3 +102,27 @@ JAV-200's Next: "key owner's regrade drops/annotates key row 120 (Fin.) as a mis
 does (one decision row naming JAV-198 and JAV-200 as witnesses), annotate or retire key row 120 per the folder's convention, then
 `tools/decode_key.py ciphers/na-janssens-java-1811 --check` (update the committed reading only if 120 occurs and the script says it is
 stale). HYPOTHESES.md conflict entry closed with witnesses. NOTES "## JAV-KEY", gaps + Verdict, gaps_check.
+
+Wave 2 results (15:4x UTC): ELEC-REC 2.11 N, BAL-65D 3.22 N (1.29x), F3198-72 1.96 N, JAV-KEY 1.73 D; ledgered and archived.
+
+## Wave 3 (15:5x UTC 15 Oct)
+
+### JAV-420C (Opus, cap 1.5, box 30 min, disk only): na-janssens-java-1811 re-apply GAPS3's 420 M -> C
+JAV-KEY found: "key.tsv's 420 row still carries grade M ... Next: re-apply GAPS3's 420 M -> C to key.tsv (scripts/apply_regrades.py, then
+--check; leaf 188 C 84 -> 85 ...)". Read GAPS3's regrades.tsv decision for 420 and JAV-KEY first; re-apply exactly that decision (no new
+evidence), `tools/decode_key.py ciphers/na-janssens-java-1811 --check`, regenerate the committed reading only through the folder's script.
+Rule 10 propagation: if the reading's counts change, carry the change into AUDIT.md (one dated line, no class change) and into any
+SECOND-OPINIONS-QUEUE.tsv row for this folder. The keysource passes' 120 cells: note in NOTES only (transcription records are not edited
+without the image). NOTES "## JAV-420C", gaps + Verdict, gaps_check.
+
+### ELEC-3897 (Opus, cap 3, box 60 min, openapi.bnf.fr <= 6): fr5761-election-1519 fr.3897 items 36-38, 62, 64-65, 73 for second witnesses
+ELEC-REC Verdict Next (1): "fr.3897 items 36-38, 62, 64-65, 73 (ELEC-PAIR next 3) for second witnesses". Read ELEC-PAIR (its next 3) and
+ELEC-REC first. PREREG (commit before the fetch) with ELEC-REC's occurrence and decoy rules. Locate the items' canvases with
+tools/gallica_folio.py (manifest only), 1000 px views (scratchpad), one Opus look per canvas, at most one native region per candidate within
+the request cap. Report per item: name signs present or not, and any occurrence of an f.51r-block sign. Lead grade M; no key edit. Stop before
+a canvas that would cross 80% of cap. NOTES "## ELEC-3897", Next updated.
+
+### BAL-65E (Opus, cap 2.5, box 50 min, openapi.bnf.fr <= 4): baluze167-davaux-1637 168 c330-332, the last listed Chavigny source
+BAL-65D's Next: "168 c330-332 (f.158 letter), last listed Chavigny source (~1.5)". BAL-65C/65D method and PREREG exactly, those canvases only.
+After it, the Verdict must name the outcome for L04 pos 0 in one line: rule met (S), or every listed source spent and the token parked as M
+with "no further listed source" (no further canvas sweep proposed without a new source). NOTES "## BAL-65E", gaps + Verdict, gaps_check.
