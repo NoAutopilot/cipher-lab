@@ -309,8 +309,55 @@ attempt of this design (rule 3's third-attempt clause not engaged).
 
 ## Next step (ERBA-CASE, 14 Oct 2026)
 
-next: the same K=13 design with a search fix, not a budget knob alone -- add a letter-swap move and more restarts (e.g. 32 x 16,000),
+[done 15 Oct 2026 by ERBA-SWAP, see Cheap test 4d] next: the same K=13 design with a search fix, not a budget knob alone -- add a letter-swap move and more restarts (e.g. 32 x 16,000),
 or seed restarts from splits of test 4b's case-folded best keys; re-run the matched control first with the same every-seed >= 0.60 gate,
 target and 10 nulls only if it passes, ~$2. Rule 3's third-attempt clause: if a second search-side change still misses, log the design
 "untested by this instrument" and stop on it. More material (an image of the 2013 yellow sheet or of the other bibles) would still
 help more; none reachable from the cloud on 14 Oct 2026. Who acts: agent.
+
+## Cheap test 4d (15 Oct 2026, ERBA-SWAP, LANE DEFAULT-A2-0209-15, account 2): K = 13 case-sensitive design with a search fix
+
+Check 1: no later NOTES.md section and no AUDIT.md (none exists) ran a swap-move search on this design. Prior work: `tools/prior_work.py
+erba-2006 --item-spec 'item_id=bible-page-plus-siblings-case-swap;date=2013-06-18;sender=Olindo Romano;recipient=Rosa Bazzi;language=it'
+--step-type decode --fetch` exit 4 (owed: 1-own LEAD = this job's own claim; 2-leaf LOOK; 3-solver, 3-tomokiyo UNCHECKED); all four
+recorded in `prior-work.tsv` (CLEAR x3; leaf CONTEXT: no gloss on the bible-page image, 2013 sheet unreachable). 3-editions: none exists
+(check-solved above). Disk and CPU only, zero network requests.
+
+Pre-registered `specs/cheap-tests/erba-2006/PREREG-test4d.md`, pushed bb0b07d8f (02:27 UTC) before any score. Design, N, dictionary,
+seeds and gate identical to test 4c (13 case-kept token types as K = 13 letter classes; 21 words / 120 letters with the 2013 press
+siblings, conditional on that press text, rule 2; every control seed >= 0.60). Search change only: added options `--swap 0.5` (half
+the moves exchange the classes of two letters in different classes) and `--restarts 16` (16 x 16,000 moves, test 4c had 8) on
+`test4_wordconstrained.py`; calls without them are unchanged (the swap branch draws no random number when off). Command
+`test4_wordconstrained.py --siblings --case --budget 4 --jobs 4 --swap 0.5 --restarts 16`, output `test4d_output.txt`, 32 min wall.
+
+| run | solver letter accuracy | true-key oracle | other |
+|---|---|---|---|
+| primary control, 5 seeds, matched design, same word lists as tests 4b/4c (gate: EVERY seed >= 0.60) | 0.900, 0.875, 0.892, 0.833, 1.000 (mean 0.900, **min 0.833**, all pass) | mean 0.900 | solver score >= true key 5/5 (test 4c: 3/5) |
+| target | -- | -- | score 26.4, 12/21 words (57%) matched; 10 shuffled-token nulls max 30.3, mean 21.9 |
+
+Verdict by the registered rule: control PASS; target **does not move** (below the null max, and under 60% of words matched). The two
+seeds test 4c lost (0.283, 0.117) now read 0.875 and 1.000 and the solver equals or beats the true key in every seed, so the swap move
+closed test 4c's search shortfall. The best key's output ("il ? ? ? a ? ? ? ? ? pdci che i geisha qui si data mondo biagio un ?") is not
+a reading and is not graded; every word of 7-12 tokens again finds no dictionary match. Controls' true-key scores run 89-108; the
+target's 26.4 sits inside the shuffled-null band (max 30.3).
+
+How strong a negative this is: **control-backed** for this one design at this N, the same strength as test 4b's for the case-folded
+design. Scope, stated narrowly: xs = word space, the 13 case-kept token types as 13 polyphonic letter classes, it21news vocabulary (top
+40,000 types of 2005-10 news). Conditional on: the image-checked bible-page transcription (8 me/ne calls open), the press transcription
+of the siblings, and xs being a space. With test 4b, both letter-class readings of the tokens (case folded, K = 8; case kept, K = 13)
+now carry a control-backed negative under xs = space. It says nothing about non-letter designs (syllable-to-word codes, a word or
+bible page/verse reference code, a nomenclator) or about xs not being a space. Nothing was read. Status word unchanged (`open`: two
+designs excluded, not every family; rule 5). Row in HYPOTHESES.md.
+
+Requests: none (disk and CPU only).
+
+## Next step (ERBA-SWAP, 15 Oct 2026)
+
+next: stop letter-class work on this instrument -- both case readings are now control-backed negatives under xs = space. Two routes,
+in order: (1) new material -- an image of the 2013 yellow sheet or of the other bibles (Davidsch 2017: at least three), which would
+also settle the 8 open me/ne calls; none reachable from the cloud on 14 Oct 2026 (press article 404, Wayback reset), so a desk/press
+request is the step. Who acts: the person (a LOCAL-QUEUE or press-archive request), ~$0.5 to draft. (2) a genuinely different design on
+the material in hand: a reference code (each token pair or word pointing into the bible the page came from -- page/line/word), which
+needs the bible's edition and page identified first from the image on disk (`images/Erba-Cryptogram.png`); ~$2 for the identification.
+Verdict: keep going.
+

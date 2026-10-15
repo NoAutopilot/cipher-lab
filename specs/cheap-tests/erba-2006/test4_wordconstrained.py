@@ -10,7 +10,11 @@ Usage: python3 test4_wordconstrained.py [--quick]
        (not the mean). Output: test4b_output.txt. The default call is unchanged (rule 7 for test4_output.txt).
        python3 test4_wordconstrained.py --siblings --case --budget 4 --jobs 4   (ERBA-CASE, 14 Oct 2026, PREREG-test4c.md): case-
        sensitive letter classes -- the 13 case-kept token types (CASE_TYPES) as K=13 classes; random keys are drawn surjective
-       (every class non-empty) instead of by rejection. Output: test4c_output.txt. Calls without --case are unchanged."""
+       (every class non-empty) instead of by rejection. Output: test4c_output.txt. Calls without --case are unchanged.
+       python3 test4_wordconstrained.py --siblings --case --budget 4 --jobs 4 --swap 0.5 --restarts 16   (ERBA-SWAP, 15 Oct 2026,
+       PREREG-test4d.md): search fix only -- with probability --swap a move exchanges the classes of two letters in different
+       classes (keeps every class non-empty) instead of reassigning one letter; --restarts overrides RESTARTS. Output:
+       test4d_output.txt. Calls without --swap/--restarts are unchanged."""
 import gzip, math, os, random, sys
 from collections import Counter
 import numpy as np
@@ -33,6 +37,8 @@ SIB = '--siblings' in sys.argv
 def _opt(name, d):
     return int(sys.argv[sys.argv.index(name) + 1]) if name in sys.argv else d
 BUDGET, JOBS = _opt('--budget', 1), _opt('--jobs', 1)
+SWAP = float(sys.argv[sys.argv.index('--swap') + 1]) if '--swap' in sys.argv else 0.0
+RESTARTS = _opt('--restarts', RESTARTS)
 ITERS *= BUDGET
 SIBFILE = os.path.join(ROOT, 'ciphers/erba-2006/ciphertext_siblings_2013.txt')
 
@@ -107,8 +113,14 @@ def anneal(dic, cws, rng):
         key = rand_partition(rng); cur = dic.score(key, cws)
         for it in range(ITERS):
             T = 3.0 * (1 - it / ITERS) + 0.05
-            k2 = key.copy(); i = rng.randrange(len(A)); k2[i] = rng.randrange(K)
-            if len(set(k2)) < K: continue
+            k2 = key.copy()
+            if SWAP and rng.random() < SWAP:
+                i, j = rng.sample(range(len(A)), 2)
+                if k2[i] == k2[j]: continue
+                k2[i], k2[j] = k2[j], k2[i]
+            else:
+                i = rng.randrange(len(A)); k2[i] = rng.randrange(K)
+                if len(set(k2)) < K: continue
             s2 = dic.score(k2, cws)
             if s2 >= cur or rng.random() < math.exp((s2 - cur) / T): key, cur = k2, s2
         if cur > best: best, bk = cur, key.copy()
@@ -205,7 +217,7 @@ def main_b():
     for f in LM_FOLDS: cnt.update(words(f))
     G['dic'] = Dict(cnt)
     tw = target_words(); lens = [len(w) for w in tw]
-    print(f'TEST 4{"c (ERBA-CASE)" if CASE else "b (ERBA-SIB)"}: K={K} case={CASE} siblings={SIB} budget={BUDGET}x (RESTARTS {RESTARTS} x ITERS {ITERS}) jobs={JOBS}')
+    print(f'TEST 4{"d (ERBA-SWAP)" if SWAP else "c (ERBA-CASE)" if CASE else "b (ERBA-SIB)"}: K={K} case={CASE} siblings={SIB} budget={BUDGET}x (RESTARTS {RESTARTS} x ITERS {ITERS}) jobs={JOBS}' + (f' swap={SWAP}' if SWAP else ''))
     print(f'target: {len(tw)} words, {sum(lens)} letters, lengths {lens}; dictionary top {NDICT} of {len(cnt)} types')
     held = list(words(CTL_FOLD)); bylen = {}
     for w in held: bylen.setdefault(len(w), []).append(w)
@@ -238,4 +250,4 @@ def main_b():
 
 
 if __name__ == '__main__':
-    sys.exit(main_b() if (SIB or BUDGET > 1 or JOBS > 1) else main())
+    sys.exit(main_b() if (SIB or BUDGET > 1 or JOBS > 1 or SWAP) else main())
