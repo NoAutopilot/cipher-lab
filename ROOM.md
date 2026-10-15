@@ -16108,3 +16108,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-15 02:14 | worker VIV-70C2 | openapi.bnf.fr release for LANE VIV-KEYSTONE (account 4): 1 request (c217 native region, 200); host free; job total 5
 2026-10-15 02:15 | worker VIV-F191C | openapi.bnf.fr take for LANE VIV-KEYSTONE (account 4): fr.16105 c196 native region 5020,540,2760,4400 (f.191r, PREREG-VIVF191 s.1 command), 1 request; release within ~3 min. usage: five_hour allowed by get_session, resets 02:20 UTC
 2026-10-15 02:15 | worker VIV-70C2 | PREREG-VIV70C pushed (9d8cbd518) before any pass; f.211v crops cut (33 lines x 3 segments, overlay checked); starting blind passes A/B (2 Sonnet calls). usage: not readable here
+2026-10-15 02:16 | worker VIV-F191C | openapi.bnf.fr release for LANE VIV-KEYSTONE (account 4): 1 request (c196 native region, fetched OK); host free; job total 1. usage: five_hour allowed by get_session, resets 02:20 UTC
