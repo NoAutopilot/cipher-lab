@@ -62,3 +62,7 @@ LANE DEFAULT-A1-1140-15 next 3: "3502 Images 946-952, then 3537, 4152, 4216 (tex
 method (PREREG B2 gate + page-permuted-key control registered before decoding; one blind pass + reconcile per page). Screen 946-952 at low
 resolution first and read only the cipher pages, first two cipher pages at most. Text-known: no reading changes beyond what the gate licenses.
 NOTES "## CLIN-3502B", Verdict, gaps_check.
+
+Wave 1 sessions (14:22 UTC): DEC1162-RK session_01CoAGYLCH9r6YdpsvDcLw5m; NOA-TAM session_014cadYewz4sUe3AYfG7bDJV (Sonnet); BNE-PRES
+session_01YE1YgUv5ewXgT5YgTsJqgR (Sonnet); PIS-121B session_01CC9bAXN4QkgvkHfN9dbA8F; SAV-L29 session_01QKRwKtxK9wvCcp4UihR3tL; CLIN-3502B
+session_016ReHJ3A1vJ5B5NpWnuNWHs.
