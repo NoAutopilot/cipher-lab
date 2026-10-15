@@ -37,3 +37,35 @@ c252	13	or? [..] [..]	A+B
 c252	14	la crainte? [..]	A
 c252	15	reduict & le s[ang]	R
 c252	16	meschans? le roy?	R
+# SAV-GLOSS2 (Opus, 15 Oct 2026 13:0x UTC): blind passes A2/B2 (gloss_c251_c252_pass{A,B}2.tsv) reconciled against two wider regions
+# (c251 pct:0,57,30,19, the briefed pct:0,57,30,6 being only 425 px = 4 lines; c252 pct:16,19,20,22). c251 region row 1 = gloss line 16
+# above (overlap); rows 2-13 = gloss lines 17-28; line 29 cut at the region's bottom edge, not read. c252 rows below re-read lines 1-16
+# with the right edge included; where they differ from the SAV-GLOSS rows above, both are kept. Every word grade M.
+c251	17	Comme [..] [..] de	A+B
+c251	18	[..] le cheual? qui bon[..]	A+B
+c251	19	[..] luy a donner [..] grand	A+B
+c251	20	[..] tell[..]? quil a faict	A+B
+c251	21	scauoir? la[..] qui est	A+B
+c251	22	rampes? a la Cour de [..]	A+B
+c251	23	filles? telles Ja [..] trou[..]	A+B
+c251	24	[..] d'un parler? o[..]	A+B
+c251	25	poinct que [..] [..]	A
+c251	26	et dey? [..] Cest[..] mes[..]	A+B
+c251	27	pour la [..] est [..]	A+B
+c251	28	et soy? fils telles? [..] pens[..]	A+B
+c252	01r	pour l'[..] & le passe[..]	A+B
+c252	02r	cy l'Europe & l'[..]	A+B
+c252	03r	et la a Andrinople	A+B
+c252	04r	[..] les? ad[..]	R
+c252	05r	& Janom? ouy Mam? a est[..]	A+B
+c252	06r	hour? Je [..] d'ostre[..]	A+B
+c252	07r	aduerty & [..] galles?	A+B
+c252	08r	[..] allez? gu[..] trou[..]	A+B
+c252	09r	[..] mut? [..] qui [..]	A+B
+c252	10r	est le [..] qui [..]	B
+c252	11r	le scauoir loy? peust	A+B
+c252	12r	toute [..] quil sera?	A+B
+c252	13r	or [..] [..] ben[..]	A+B
+c252	14r	la craincte [..] est	A+B
+c252	15r	reduict & le sang	A+B
+c252	16r	[..] meschans? & soy auoi[r]?	A+B
