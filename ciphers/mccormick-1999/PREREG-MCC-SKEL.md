@@ -1,4 +1,4 @@
-# PREREG-MCC-SKEL (15 Oct 2026, 02:4x UTC by date -u; pushed before any seed 1-3 control score or any target score)
+# PREREG-MCC-SKEL (15 Oct 2026, 02:28 UTC by date -u; pushed before any seed 1-3 control score or any target score)
 
 Worker MCC-SKEL (account 1, LANE DEFAULT-A1-0206-15). Instrument named by MCC-WORD (NOTES.md, 14 Oct): an abbreviation /
 consonant-skeleton constrained code-word model, where the code's own letters are the evidence (each code segment may stand
