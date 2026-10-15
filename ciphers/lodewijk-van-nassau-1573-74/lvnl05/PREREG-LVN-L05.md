@@ -1,4 +1,4 @@
-# PREREG LVN-L05 (15 Oct 2026, 15:3x UTC by date -u, account 4, LANE DEFAULT-A4-1441-15) -- written before any blind read
+# PREREG LVN-L05 (15 Oct 2026, 15:1x UTC by date -u, account 4, LANE DEFAULT-A4-1441-15) -- written before any blind read
 
 Step: LVN-4610U's named next: (1) an insert path in lvn10/apply.py and the p1_L05 head "81, 125" entered at M after a second blind look;
 (2) a second blind reader on LVN-4610U's five found-on-the-way rows. Disk only (images/04610_p1.jpg and the committed 150-dpi line crops).
