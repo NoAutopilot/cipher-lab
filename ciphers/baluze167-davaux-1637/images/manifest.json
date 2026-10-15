@@ -4393,5 +4393,71 @@
    "job": "BAL-EYE",
    "sha1": "7cd1b82e2abc810821bc907c02ab850ba897ae88"
   }
+ ],
+ "balc286_fetches": [
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f286/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T07:28Z",
+   "http": 200,
+   "sha1": "c92fd1a04c3cb73064e55044c60897ccb4679106",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-C286"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f287/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T07:28Z",
+   "http": 200,
+   "sha1": "de3f9b29e402d7cd71c118838e6dbd5d5957773a",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-C286"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f288/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T07:28Z",
+   "http": 200,
+   "sha1": "25d671c60d4f0fcead8b5778c2d38634b562f1b7",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-C286"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f289/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T07:28Z",
+   "http": 200,
+   "sha1": "e0dbb3897f9ed3e77b9ee0493fb1b59d12c72b41",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-C286"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f290/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T07:28Z",
+   "http": 200,
+   "sha1": "dafe497396f91c2773970b41f3e7cf467910cb96",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-C286"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f291/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T07:28Z",
+   "http": 200,
+   "sha1": "fe57083109efe016e2b440dfdcdce706d5ca36b0",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-C286"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f292/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T07:28Z",
+   "http": 200,
+   "sha1": "67d367a62aa29766a5b4330a83dc21ea47a2b75a",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-C286"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f293/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T07:28Z",
+   "http": 200,
+   "sha1": "133c925f415bd46e099a70fb12f7f257725d9d96",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-C286"
+  }
  ]
 }
