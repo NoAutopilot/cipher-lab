@@ -10,7 +10,7 @@ code	variants	decision
 190	en (n=3, pages=199,no5(210-212)); est (n=2, pages=190,191); est (n=1, pages=192)	GAPS3 2 Oct 2026: M stays, value column flips to est by merge_leaf.py's own majority rule (4 distinct sentences vs 3): both renderings remain attested in the gloss
 355	car (n=1, pages=200); cargaison, (n=1, pages=192)	
 404	croisières (n=2, pages=191,201); croir (n=1, pages=no4-206R)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner croir, margin 8.558 vs shuffle max 9.659); logged as is
-420	fin (n=2, pages=no5(210-212),192); fui. (n=1, pages=no4-207L)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner fin, margin 6.395 vs shuffle max 19.804); logged as is
+420	fin (n=2, pages=no5(210-212),192); fui. (n=1, pages=no4-207L)	GAPS3 2 Oct 2026: C: the end-of-text mark, glossed in two texts and standing last in four; GAPS17 3 Oct 2026: LM-context fill does not clear (winner fin, margin 6.395 vs shuffle max 19.804); logged as is
 435	il y a (n=1, pages=201); Il (n=1, pages=no4-207L)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner Il, margin 2.53 vs shuffle max 6.579); logged as is
 456	re (n=1, pages=no5(210-212)); =re (n=1, pages=no4-206R)	GAPS17 3 Oct 2026: untested-by-this-tool (values fold equal under the fr1810 letter model); logged as is
 513	cotés (n=1, pages=no4-205R); cote (n=1, pages=no4-206R)	GAPS17 3 Oct 2026: LM-context fill does not clear (winner cote, margin 0.856 vs shuffle max 2.893); logged as is

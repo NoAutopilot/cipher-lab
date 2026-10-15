@@ -8,10 +8,18 @@ Per row: key.tsv's grade becomes grade_after, its value becomes value_after, and
 sentence for every code it lists (merge_leaf.py preserves the column). --check applies nothing and exits 1 if
 key.tsv or conflicts.tsv differ from what applying regrades.tsv would give (rule 7: the committed key matches
 its own evidence file). Disk only.
+
+Later decisions (JAV-RG, 15 Oct 2026). A row whose grade_after is "(retired)" names a code removed from key.tsv
+by a later job: it is checked to be absent from key.tsv (exit 1 if it is back) and applies nothing. A row with a
+non-empty `superseded_by` cell was decided again by the named later job (GAPS17's LM-context fill for 102 and 1096):
+its grade and value are left as key.tsv has them, and only the GAPS3 tag is required in the note and the conflicts
+decision (added once if missing). Rows without either still set grade and value exactly as before. The conflicts
+decision gains the GAPS3 sentence once, in front of any later job's sentence, instead of replacing it.
 """
 import argparse, csv, sys
 from collections import OrderedDict
 TAG = "GAPS3 2 Oct 2026: "
+RETIRED = "(retired)"
 
 def load(p): return list(csv.DictReader(open(p, newline='', encoding='utf-8'), delimiter='\t'))
 
@@ -20,19 +28,26 @@ def apply(regrades, key_rows, conf_rows):
     conf = OrderedDict((r['code'], r) for r in conf_rows)
     for c in conf.values():
         c.setdefault('decision', '')
-    missing = [r['code'] for r in regrades if r['code'] not in key]
+    retired = [r for r in regrades if r['grade_after'] == RETIRED]
+    back = [r['code'] for r in retired if r['code'] in key]
+    if back:
+        sys.exit(f"regrades.tsv retires codes still in key.tsv: {back}")
+    live = [r for r in regrades if r['grade_after'] != RETIRED]
+    missing = [r['code'] for r in live if r['code'] not in key]
     if missing:
         sys.exit(f"regrades.tsv names codes absent from key.tsv: {missing}")
-    for r in regrades:
+    for r in live:
         k = key[r['code']]
-        if k['grade'] != r['grade_before'] and TAG not in k['note']:
-            sys.exit(f"code {r['code']}: key.tsv grade {k['grade']} != grade_before {r['grade_before']}")
-        k['grade'] = r['grade_after']
-        k['value'] = r['value_after']
+        if not (r.get('superseded_by') or '').strip():
+            if k['grade'] != r['grade_before'] and TAG not in k['note']:
+                sys.exit(f"code {r['code']}: key.tsv grade {k['grade']} != grade_before {r['grade_before']}")
+            k['grade'] = r['grade_after']
+            k['value'] = r['value_after']
         if TAG not in k['note']:
             k['note'] = (k['note'] + '; ' if k['note'] else '') + TAG + r['decision']
-        if r['code'] in conf:
-            conf[r['code']]['decision'] = TAG + r['decision']
+        if r['code'] in conf and TAG not in conf[r['code']]['decision']:
+            d = conf[r['code']]['decision']
+            conf[r['code']]['decision'] = TAG + r['decision'] + ('; ' + d if d else '')
     return list(key.values()), list(conf.values())
 
 def write(path, rows, fields):
@@ -57,11 +72,13 @@ def main():
     if a.check:
         if new_key != before_key or new_conf != before_conf:
             print(f"STALE: {changed} key.tsv row(s) and/or conflicts.tsv differ from regrades.tsv"); sys.exit(1)
-        print(f"ok: key.tsv and conflicts.tsv match regrades.tsv ({len(regrades)} decisions)"); return
+        print(f"ok: key.tsv and conflicts.tsv match regrades.tsv ({len(regrades)} decisions, {sum(1 for r in regrades if r['grade_after'] == RETIRED)} retired, {sum(1 for r in regrades if (r.get('superseded_by') or '').strip())} superseded)"); return
     write(a.key, new_key, KF); write(a.conflicts, new_conf, CF)
     g = {}
-    for r in regrades: g[(r['grade_before'], r['grade_after'])] = g.get((r['grade_before'], r['grade_after']), 0) + 1
-    print(f"applied {len(regrades)} decisions, {changed} key rows changed; by grade: " + ', '.join(f"{a}->{b} {n}" for (a, b), n in sorted(g.items())))
+    for r in regrades:
+        if r['grade_after'] == RETIRED or (r.get('superseded_by') or '').strip(): continue
+        g[(r['grade_before'], r['grade_after'])] = g.get((r['grade_before'], r['grade_after']), 0) + 1
+    print(f"applied {sum(g.values())} of {len(regrades)} decisions (retired/superseded rows checked only), {changed} key rows changed; by grade: " + ', '.join(f"{a}->{b} {n}" for (a, b), n in sorted(g.items())))
 
 if __name__ == '__main__':
     main()
