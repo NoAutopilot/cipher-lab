@@ -4,7 +4,7 @@
 Checks, on a tiny synthetic corpus (no tools/data read): (1) skeleton() on fixed words under both schemes; (2) the lattice
 decoder reads a run-on token (two skeletons written together) back into its two words and a lone skeleton into its word;
 (3) a skeleton absent from the pool is read as UNK and lowers coverage; (4) shuffle_letters keeps every token's length and
-the multiset of letters; (5) build_skel_control's truth matches its tokens (the skeletons of the truth words, joined).
+the multiset of letters, and shuffle_letters_keep_final also each token's last letter; (5) build_skel_control's truth matches its tokens (the skeletons of the truth words, joined).
 Run: python3 tools/tests/test_mcc_skeleton.py
 """
 import importlib.util
@@ -40,6 +40,8 @@ def main():
     sh = ta.shuffle_letters(toks, rng)
     assert [len(v) for _, v in sh] == [len(v) for _, v in toks]
     assert Counter("".join(v for k, v in sh if k == "code")) == Counter("".join(v for k, v in toks if k == "code"))
+    kf = ta.shuffle_letters_keep_final(toks, random.Random(2))
+    assert [v[-1] for _, v in kf] == [v[-1] for _, v in toks] and [len(v) for _, v in kf] == [len(v) for _, v in toks]
     kinds = [("code", ""), ("number", ""), ("code", ""), ("letter", "")] * 5
     ct, tr = ta.build_skel_control(kinds, CORPUS, random.Random(3), "drop", 0.5)
     for (k, v), t in zip(ct, tr):

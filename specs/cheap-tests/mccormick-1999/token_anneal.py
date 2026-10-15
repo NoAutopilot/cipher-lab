@@ -674,6 +674,20 @@ def shuffle_letters(toks, rng):
     return out
 
 
+def shuffle_letters_keep_final(toks, rng):
+    """position-keeping null (PREREG-MCC-SKEL addendum 2): each code token keeps its length and its last letter; all
+    other code letters are permuted across the code tokens. Keeps the target's token-final E profile, breaks the rest."""
+    inner = [ch for k, v in toks if k == "code" for ch in v[:-1]]
+    rng.shuffle(inner)
+    out, p = [], 0
+    for k, v in toks:
+        if k == "code":
+            out.append(("code", "".join(inner[p:p + len(v) - 1]) + v[-1])); p += len(v) - 1
+        else:
+            out.append((k, v))
+    return out
+
+
 def shuffle_order(toks, truth, rng):
     """order-shuffled null: code tokens (with their truth) permuted among the code slots."""
     ps = [i for i, (k, _) in enumerate(toks) if k == "code"]
@@ -744,6 +758,12 @@ def skeleton_run(a, real_toks, words):
             ln = [skel_stats(dec, shuffle_letters(real_toks, random.Random(5000 + i))) for i in range(a.nulls)]
             tr["letter_null_coverage"] = sorted(x["coverage"] for x in ln)
             tr["letter_null_spl"] = sorted(x["score_per_letter"] for x in ln)
+            if a.null_keep_final:
+                kf = [skel_stats(dec, shuffle_letters_keep_final(real_toks, random.Random(6000 + i))) for i in range(a.nulls)]
+                tr["keepfinal_null_coverage"] = sorted(x["coverage"] for x in kf)
+                tr["keepfinal_null_spl"] = sorted(x["score_per_letter"] for x in kf)
+                tr["coverage_above_keepfinal_null_max"] = tr["coverage"] > max(tr["keepfinal_null_coverage"])
+                tr["spl_above_keepfinal_null_max"] = tr["score_per_letter"] > max(tr["keepfinal_null_spl"])
             tr["coverage_above_null_max"] = tr["coverage"] > max(tr["letter_null_coverage"])
             tr["spl_above_null_max"] = tr["score_per_letter"] > max(tr["letter_null_spl"])
             out["target"] = tr
@@ -790,6 +810,9 @@ def main():
     ap.add_argument("--n-list", default="132", help="skeleton: control lengths, comma-separated")
     ap.add_argument("--nulls", type=int, default=40, help="skeleton: letter-shuffled nulls per run")
     ap.add_argument("--target", action="store_true", help="skeleton: also run the target (only if the control read at its N)")
+    ap.add_argument("--null-keep-final", action="store_true",
+                    help="skeleton (PREREG-MCC-SKEL addendum 2): also score the target against nulls that keep each code "
+                         "token's length and last letter")
     ap.add_argument("--target-on-power", action="store_true",
                     help="skeleton (PREREG-MCC-SKEL addendum 1): also run the target when the control's coverage beats its "
                          "letter-shuffled null on every seed at the target's N, even if the word-recovery read failed")

@@ -73,3 +73,18 @@ N = 132 for this design. Addendum: run the target's coverage and score-per-lette
 nulls (`--target-on-power`), with the outcome wording of the criteria section unchanged. A target result under this
 addendum is reported as licensed by the coverage-power control, not by the read criterion, and no decoded word is
 offered as a reading either way (the read criterion failed).
+
+## Addendum 2 (15 Oct 2026, 02:32 UTC by date -u; pushed after the addendum-1 target scores, before this null is scored)
+Addendum-1 target results (`families/skel/*_target.json`): drop arm coverage 0.136 vs letter-null max 0.137 (not above;
+score per letter -3.365 vs max -3.390, above) -> under the criteria wording, "not distinguishable from its own letter
+shuffle under the drop skeleton scheme". keepfinal arm coverage 0.296 vs max 0.160, score per letter -3.292 vs max -3.372,
+both above -> under the wording, "fits an English keepfinal skeleton scheme beyond its letter-shuffled null".
+Confound named before scoring further: a letter shuffle destroys the target's token-final E (69% of tokens) and its repeated
+endings (-RSE, -SE, -NCBE), while keepfinal is the arm whose lexicon has many -E skeletons (praise PRSE, nose NSE, side SDE,
+use USE); the keepfinal beat may come from that one positional regularity, not from English skeletons. Diagnostic null,
+fixed now: 40 shuffles keeping every code token's length and last letter, all other code letters permuted across tokens
+(`--null-keep-final`, rng 6000+i). Interpretation, fixed now: if keepfinal target coverage is at or below this null's
+maximum, the addendum-1 keepfinal beat is attributed to the token-final letter profile and the outcome is restated as
+"not distinguishable from a shuffle that keeps the token-final letters" (a negative for this scheme); if above on both
+statistics, the addendum-1 wording stands, still with no reading offered. The drop arm is scored against the same null
+for completeness; its outcome does not change.
