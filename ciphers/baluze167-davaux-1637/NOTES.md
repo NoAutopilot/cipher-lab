@@ -2778,3 +2778,64 @@ Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (su
 Verdict: keep going: 2 internal gaps; cheapest next: the f.22r remaining numerals (16, 45', 12:, 13:, 65) by the same exemplar test (~$2); the c275 u4 split and 7/5/E/x gloss search on the rest of the Memoire (~$3); the c283 tail (~$1.5); the 168 f.246 step once L71 answers
 
 `python3 tools/gaps_check.py baluze167-davaux-1637` (GB-PASS2, 15 Oct 2026): "OK keep-going baluze167-davaux-1637: keep going: 2 internal gap(s), 1 step(s) untried"
+
+## BAL-F22R (15 Oct 2026, account 1, for LANE DEFAULT-A1-0206-15), 02:24-02:3x UTC by date -u
+Brief: `.claude/briefs/runs/2026-10-15-acct1-default-0206-jobs.md` "BAL-F22R": the f.22r remaining numerals (16, 45', 12:, 13:, 65) by the BAL169-F22B
+exemplar test (same instrument, same control: f22mk/score_marks.py rule and the 200-seed within-run gloss shuffle).
+Prior work: `tools/prior_work.py baluze167-davaux-1637 --item-spec 'Baluze 169 f.22r numerals 16 45 12 13 65' --step-type key --offline` exit 0
+(generic UNCHECKED rows only: Tomokiyo/solver caches/editions not keyed to an unbound item); check 1 by hand: no earlier BAL-F22R section, the
+step is the one BAL169-F22B named; checks 2-4: unchanged from VER-BAL22 / BAL169-F22B (no print found for f.22r; googleapis 503, not used).
+**f.22r marks** (images/b169sweep/src_c048_f22r_*.jpg, native, on disk; my eye): L03 pos 14 16 carries a separate rising acute stroke; L01 pos 7
+and L03 pos 10 16 show none (the 6's own head curls up, nothing apart); L02 pos 1 16 has a tall 6 head, a separate stroke not settled; L03 pos 8 45
+has a separate acute above the 4; L03 pos 11 12 has the 1's i-dot plus a second dot over the 2 (12:); L03 pos 13 13 likewise (13:); L04 pos 0 65
+shows no acute.
+**Exemplars.** openapi.bnf.fr (IIIF v3, one at a time, >= 3.4 s; take 02:25, release 02:31 UTC): 6 requests, all HTTP 200: Baluze 169 c164,
+c166 (the f.80 Memoire, Bouthillier, July 1639; same sha1 as BAL169-F22B's fetches), c170, c171, c172, c174 (its continuation) at `full/2400,`
+(scratch only; URLs and sha1s in images/manifest.json `balf22r_fetches`; regen: curl each URL; line crops with `tools/iiif_lines.py --image
+cN.jpg --out DIR --region 500,600,1900,3100 --lines-per-crop 2` (c164/c166) or `--region 300,300,2100,3300` (c170-174)). c172 and c174 fetched,
+cut, not read (stopped for cost). 15 glossed runs placed (f22mk/glossed_pairs_r.tsv), e.g. c164 "mal content de la" = 45' n 96' 76' h u4 16' 40';
+c164 "grand ressentiment" = r 65? gt u 66' f 71' gt 77' 12:; c164 "Mr le duc Bernard" = 13: 41' 19' 9; c166 "despenser" = 16 ~ 56' h 71' p (plain
+16); c170 "establissement de" = 42' f 71' 12: 16'; c170 "commandoit" = (13 u4) 45' h 18' p u4.
+**Test** (`python3 f22mk/score_marks_r.py` -> f22mk/score_marks_r.out; values fixed from key.tsv before scoring, plain 16 scored against the acute
+value de as a stated hypothesis; pairs = BAL169-F22B's + mine):
+| sign | value | glossed | agree | wrong-mark hits (45: holandois, 12' ci, 13' co, 13 sued) | call |
+|---|---|---|---|---|---|
+| 16' | de | 11 (c79 x2, c164 x2, c166 x5, c170, c171) | 11 | - | S |
+| 16 (plain) | de | 2 (c165, c166) | 2 | - | M (under 3) |
+| 45' | ma | 4 (c164 x2, c166, c170) | 4 | 0 | S |
+| 12: | ment | 3 (c164, c170, c171) | 3 | 0 | S |
+| 13: | Mr | 1 (c164) | 1 | 0 | M (under 3) |
+| 65 (plain) | - | 0 (two glossed 65 'ra' with the mark unsettled, not scored) | - | - | not tested |
+Over the targets: real 21/21; within-run gloss shuffle, 200 seeds: mean 5.42, p95 8, max 11, 0/200 >= real.
+**Adoption** (3 rows appended to balshape/f22/exceptions_b169f22r.tsv: L03 pos 14 de, pos 8 ma, pos 11 ment, M -> S; values unchanged;
+`python3 tools/decode_key.py ciphers/baluze167-davaux-1637` then `--check` -> `ciphertext_b169f22r.txt: tokens 24: H 4, I 2, M 6, S 12` / "reading up
+to date", exit 0, re-run by this worker, not a separate session). Rule 4 for f.22r: H 4, S 12, I 2, M 6; H/C/S 16 of 24 (67%); no C, still a
+cryptanalytic result on a published key. "donner le commandement" now rests on 94' H, 51' S, r S, 41' S, 13' S, m S, 45' S, n S, 16 M, 12: S.
+The name after "a" (13: Mr, 16', 65, n, 70', u) is still M-led on 13: and 65.
+Limits: the alignment is one reader's (mine, not blind, knowing key.tsv); "les mains" (c164, 45') is the least certain placement (without it 45'
+is 3/3, still S); the c171 12: was read at composite scale, the other two at 2x zoom; the shuffle tests agreement of the key values with the gloss
+given my alignment, not the alignment itself; single-unit runs count in every shuffle (conservative); hand matched by eye only.
+Where not found: no glossed 13: beyond c164; no glossed 65 with a settled mark on c164-171; c172, c174 (fetched) and c176-188 not read. No print
+searched. Depth not changed here. Subagents: none (the brief's "one numeral per call" was done as one numeral per zoom panel by this worker, inside
+the cap). Requests: openapi.bnf.fr 6. Cost not visible to this session. Report what was found and where it was not found; no novelty class.
+
+## Remaining gaps (BAL-F22R, 15 Oct 2026)
+Read so far: 61 of 66 cipher letters carry a period interlinear decipherment (survey.tsv; the unlisted glossed letters, 170 f.89r, 170 f.107r-v, 169 f.36-38, 169 f.206-207, 169 f.208-209 and 168 f.122, are not yet counted in that figure). Of the 5 listed bare passages, 3 (169 ff.52-53, 97-98,
+142) are read in full with the published key (reading.txt). 170 f.229r-v: N3, D2 (AUD1-B167). 170 f.228r-v: N3, D2 at about 56% (V-BAL167).
+168 f.246-247v: transcribed by two blind passes (err_2reader 0.280), letter signs unlabelled. 169 f.22r (unlisted, BAL169-SWEEP): 24 tokens read with the published key (BAL169-F22: H 4, I 1, M 19); audited VER-BAL22, AUDIT 7: N3, D1; letter signs shape-checked by BAL22-SHAPE (H 4, S 5, I 2, M 13); four acute numerals checked against same-hand glossed exemplars by BAL169-F22B (H 4, S 9, I 2, M 9); three more numerals (16' at L03 pos 14, 45', 12:) by BAL-F22R (H 4, S 12, I 2, M 6). Volume census (the former "Volumes beyond Tomokiyo's listed folios" gap) finished by BAL171-TAIL: Baluze 167 (canvases 1-429), 168 (1-651), 169 (1-535), 170 (1-340) and 171 (1-464) all swept at 300 px with 1000 px looks; unlisted cipher found by the sweeps is listed in each sweep section (168 f.110r, f.122; 170 f.89r, f.107r-v; 169 f.21-24, f.36-38, f.206-209; continuation canvases of listed letters); the only bare passages are the five listed ones, 169 f.22r and the short runs on 167 c275/c283 (gap below).
+- 168 f.246-247v bare passage - blocker: waiting-on LOCAL-QUEUE L71 (owner's browser: does the Papiers de Richelieu item print the cipher passage in clear); next if it does: align the printed text to the two-pass transcription with tools/interlinear_align.py (known plaintext for the f.247 hand), ~$3; if not: the f.247-hand glossed-text search (survey.tsv's d'Avaux-side leaves), ~$3
+- 170 f.228-229 novelty (N3 -> N4) - blocker: waiting-on LOCAL-QUEUE L71 and SO-BAL170-F228 (SECOND-OPINIONS-QUEUE.tsv); the edition's notes are snippet-only from the cloud and a second opinion is owed before N4
+- 169 f.22r name and remaining signs - blocker: not-attempted; BAL22-SHAPE confirmed 5 of 7 letter signs blind (S); BAL169-F22B confirmed 71' 51' 41' 13' and BAL-F22R confirmed 16' (L03 pos 14, clear acute), 45' and 12: against same-hand glossed exemplars (S, f22mk/score_marks_r.out); still M: 16 at L01 pos 7 and L03 pos 10 (no separate acute; glossed plain 16 reads de 2 of 2, under the >= 3 rule), 16 at L02 pos 1 (stroke not settled at native resolution), 13: (Mr; one glossed 13: on c164, under 'Mr le duc Bernard'), 65 (ra; no acute on f.22r, no glossed 65 with a settled mark found on c164-174) and u, so the name after 'commandement' still rests on 13: Mr, 16, 65 and u; next: two more glossed 13: and one more glossed plain 16, and 65 with its mark settled, on 169 c172, c174 (on disk in this job's scratch, not read; regen from images/manifest.json balf22r_fetches) and c176-188 (glossed, same hand, ~9 openapi.bnf.fr requests), ~$2
+- 167 f.135r (c275) bare run inside the glossed f.127 Memoire (Oct 1637), 26 tokens after "qui est difficile a" - blocker: not-attempted; BAL167-C275 transcribed it; BAL-C275WL settled this hand's signs from 13 glossed runs on c274-276 (c275wl/glossed_pairs.tsv): i = p, d-loop = i, unmarked 6 = r, unmarked 66 = re at S; the run now reads H 4 / S 4 / M 12 / U 6 and still gives no connected French; 7, 5, E, x and the leading dot have no glossed occurrence on c274-276 (7 and 5 sit only before glossed words, never under a gloss letter), the u4 class splits t/m; next: native crops of the u4 tokens (c274 "et", "soit"; c276 "remplacer", "employer"; c275 "fust" and the bare-run u4x) to separate the crossed and plain forms, and a gloss search for 7, 5, E and x on c266-273 and c277-285 (fetched at 2400 px, ~11 openapi.bnf.fr requests), ~$3; the c283 tail (`n 42 x 66 f / 19 71 96 n 76 6 46`) not attempted (c283 at 2400 px is in scratch from this job; ~$1.5 with passes)
+
+## Escalation (15 Oct 2026, BAL-F22R)
+- [x] siblings: davaux-1633 and DECODE records 2756-2762 checked (Siblings section above)
+- [x] clear-pages: leaf survey done; 170 f.230r is the clear close of the f.228 letter (D1-BAL170); 169 f.22r's cipher sits inside clear text (BAL169-F22)
+- [x] known-keys: Tomokiyo's table applied (key.tsv); known-answer 29/29 on 167 f.157 (A3V3-BALB); f.229 letter values carried to f.228; 169 f.22r read with key.tsv (BAL169-F22)
+- [ ] print: Avenel, Négociations secrètes, Guébriant, Bougeant, Mercure, Siri, IA, Google Books (UNA3-BAL), OpenAlex, CrossRef done; untried: the Papiers de Richelieu 1636-1642 volume by page (L71); Google Books for the 169 f.22r phrases (HTTP 503 on 14 Oct, VER-BAL22; not sent on 15 Oct, GB-PASS2: host stopped by two 503s in the same job's eckert-1864 pass; script verbal22/gbpass2_gb.py ready, ~$0.3; IA, OpenAlex, CrossRef done)
+- [x] key-rebuild: 169 f.22r 16' (L03 pos 14), 45', 12: M -> S against same-hand glossed exemplars, real 21/21, shuffle 0/200 (BAL-F22R); 169 f.22r acute numerals 71' 51' 41' 13' M -> S against same-hand glossed exemplars, shuffle 0/200 (BAL169-F22B); c275 hand settled from glossed runs, 4 sign classes M/U -> S (BAL-C275WL, shuffle 0/200); alignment retired (N9-BAL3); table labelling failed its control (DEF1-DAV 0/15); shape control with a same-key wrong-label negative PASSED (BAL-WL, 31 M -> S); hook/v PASSED on read 2 (BAL167-GHV, 8 M -> S; audited V-GHV, AUDIT 5); g+ gloss letter settled by key-anchored sequence and tile test PASSED (BAL167-GSEQ, 3 M -> S; re-audited V-GSEQ, AUDIT 6; scorer committed, GSEQ-SCORER)
+- [x] image-check: 169 c164, c166, c170, c171 read at 2400 px with 2x zooms of each target numeral (BAL-F22R); Baluze 171 c251-464 swept at 300 px with 4 looks at 1000 px and one native crop of the c328 margin (BAL171-TAIL); 169 f.22r acute marks compared with same-hand glossed exemplars on 169 c79, c165, c177 at 2400 px (BAL169-F22B); glossed Baluze 170 crops f.233r/f.239r/f.258r on disk (BAL-CROP); f.301r, f.320v-321r (BAL167-GHV); f.64r, f.124r-v (BAL167-GPLUS); f.124 gt letter settled and g+ tiles confirmed (BAL167-GSEQ); Baluze 170 volume sweep finished with 1000 px looks (BAL170-FIN); Baluze 169 swept end to end (BAL169-SWEEP, BAL169-FIN); 169 f.22r native crops (BAL169-F22); Baluze 167 c1-250 swept with 8 looks at 1000 px (BAL167-SWEEP); Baluze 167 c251-429 swept with 8 looks at 1000 px (BAL167-FIN); Baluze 168 c1-250 swept with 1 look at 1000 px (BAL168-SWEEP); Baluze 171 c1-250 swept with 4 looks at 1000 px (BAL171-SWEEP); Baluze 168 c251-484 swept with 1 look at 1000 px (BAL168-FIN); 167 c275/c283 looked at 1600 px, 168 f.110/f.122 compared at 1600 px (BAL-LOOKS); 167 c275 native crop of the bare run, two blind passes (BAL167-C275); Baluze 168 c485-522 swept with 2 looks at 1000 px (BAL168-TAIL); Baluze 168 c523-651 swept with 3 looks at 1000 px (BAL168-TAIL2); 167 c274-276 glossed runs read at 2400 px for the c275 hand (BAL-C275WL)
+- [x] retry: googleapis 503 on 15 Oct 02:28 and on the one retry 02:29 UTC (GB-PASS2, eckert-1864 pass; host stopped for the job before this folder); f.228 re-cut, re-passed, decoded and re-decoded (D1-BAL170, D1-BAL170B, B167-228, SIG-B228, SIG-B228B), grade correction applied (SIG-V228), shape control run (BAL-CROP, BAL-WL, BAL167-GHV, BAL167-GSEQ, BAL22-SHAPE on 169 f.22r: 5 M -> S)
+Verdict: keep going: 2 internal gaps; cheapest next: the f.22r last numerals (13:, plain 16, 65) on 169 c172-188 by the same test (~$2); the c275 u4 split and 7/5/E/x gloss search on the rest of the Memoire (~$3); the c283 tail (~$1.5); the 168 f.246 step once L71 answers
+
+`python3 tools/gaps_check.py baluze167-davaux-1637` (BAL-F22R, 15 Oct 2026): "OK keep-going baluze167-davaux-1637: keep going: 2 internal gap(s), 1 step(s) untried"

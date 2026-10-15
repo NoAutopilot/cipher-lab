@@ -3868,5 +3868,61 @@
    "kept": "not kept (session scratch); regen from url",
    "job": "BAL171-TAIL"
   }
+ ],
+ "balf22r_fetches": [
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f164/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:26Z",
+   "http": 200,
+   "size": 1480547,
+   "sha1": "1b19f560fb51c09bf30d1ae7b2b0325a09b339e4",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-F22R"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f166/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:26Z",
+   "http": 200,
+   "size": 1312185,
+   "sha1": "f6799c845b6a7a58444bcb86ab642546725a6e27",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-F22R"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f170/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:30Z",
+   "http": 200,
+   "size": 1404327,
+   "sha1": "0e6d64346fc539ecc4df355607e831d9d8e84442",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-F22R"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f171/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:30Z",
+   "http": 200,
+   "size": 1262082,
+   "sha1": "0c32baf7b5b84fcd55e542a3ba9b8184fbc4aca6",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-F22R"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f172/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:31Z",
+   "http": 200,
+   "size": 1260711,
+   "sha1": "cce68563e70fd9ee5da1d74103720d5d40242832",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-F22R"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f174/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T02:31Z",
+   "http": 200,
+   "size": 1291396,
+   "sha1": "bd0ddd82bb2254dd235de4e0b5c1c10806f9ac17",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-F22R"
+  }
  ]
 }

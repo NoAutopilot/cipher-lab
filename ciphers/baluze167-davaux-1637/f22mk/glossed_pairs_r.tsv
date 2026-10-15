@@ -1,0 +1,72 @@
+# BAL-F22R (15 Oct 2026, account 1): further glossed runs of the same Bouthillier office hand (Baluze 169 c164, c166, c170, c171 = the f.80
+# Memoire and its continuation, July 1639), read by this worker's eye at 2400 px with 2x zooms of each target numeral. Not blind: I knew
+# key.tsv. Same conventions as glossed_pairs.tsv (' = separate rising acute stroke; : = a second dot over the right-hand digit, the 1's own
+# i-dot not counted; plain = no mark). Only target-bearing runs, with the neighbours I could place. 65? = mark not settled (not scored).
+run	canvas	gloss	pos	sign	unit
+r164a	164	mal content de la	1	45'	ma
+r164a	164	mal content de la	2	s:n	l
+r164a	164	mal content de la	3	96'	con
+r164a	164	mal content de la	4	76'	te
+r164a	164	mal content de la	5	s:h	n
+r164a	164	mal content de la	6	s:u4	t
+r164a	164	mal content de la	7	16'	de
+r164a	164	mal content de la	8	40'	la
+r164b	164	grand ressentiment	1	s:r	g
+r164b	164	grand ressentiment	2	65?	ra
+r164b	164	grand ressentiment	3	s:gt	n
+r164b	164	grand ressentiment	4	s:u	d
+r164b	164	grand ressentiment	5	66'	re
+r164b	164	grand ressentiment	6	s:f	s
+r164b	164	grand ressentiment	7	71'	se
+r164b	164	grand ressentiment	8	s:gt	n
+r164b	164	grand ressentiment	9	77'	ti
+r164b	164	grand ressentiment	10	12:	ment
+r164c	164	Mr le duc Bernard	1	13:	Mr
+r164c	164	Mr le duc Bernard	2	41'	le
+r164c	164	Mr le duc Bernard	3	19'	du
+r164c	164	Mr le duc Bernard	4	9	c
+r164d	164	luy donner de la bonte	1	94'	don
+r164d	164	luy donner de la bonte	2	51'	ne
+r164d	164	luy donner de la bonte	3	s:y	r
+r164d	164	luy donner de la bonte	4	16'	de
+r164e	164	les mains	1	45'	ma
+r164e	164	les mains	2	s:p	i
+r164e	164	les mains	3	s:h	n
+r164e	164	les mains	4	s:tilde	s
+r166a	166	mal traitte de la france	1	45'	ma
+r166a	166	mal traitte de la france	2	s:n	l
+r166a	166	mal traitte de la france	3	29'	-
+r166a	166	mal traitte de la france	4	16'	de
+r166a	166	mal traitte de la france	5	40'	la
+r166b	166	prenne de	1	66'	re
+r166b	166	prenne de	2	s:h	n
+r166b	166	prenne de	3	51'	ne
+r166b	166	prenne de	4	16'	de
+r166c	166	de L.. (faire fournir ... de)	1	16'	de
+r166d	166	de pied et de	1	16'	de
+r166d	166	de pied et de	2	57'	pi
+r166d	166	de pied et de	3	s:w	e
+r166d	166	de pied et de	4	s:u	d
+r166d	166	de pied et de	5	96'	et
+r166d	166	de pied et de	6	16'	de
+r166e	166	despenser	1	16	de
+r166e	166	despenser	2	s:tilde	s
+r166e	166	despenser	3	56'	pe
+r166e	166	despenser	4	s:h	n
+r166e	166	despenser	5	71'	se
+r166e	166	despenser	6	s:p	r
+r170a	170	establissement de	1	42'	li
+r170a	170	establissement de	2	s:f	s
+r170a	170	establissement de	3	71'	se
+r170a	170	establissement de	4	12:	ment
+r170a	170	establissement de	5	16'	de
+r170b	170	commandoit	1	45'	ma
+r170b	170	commandoit	2	s:h	n
+r170b	170	commandoit	3	18'	do
+r170b	170	commandoit	4	s:p	i
+r170b	170	commandoit	5	s:u4	t
+r171a	171	leur avitaillement	1	41'	le
+r171a	171	leur avitaillement	2	12:	ment
+r171b	171	plus de la raison	1	16'	de
+r171b	171	plus de la raison	2	40'	la
+r171b	171	plus de la raison	3	65?	ra
