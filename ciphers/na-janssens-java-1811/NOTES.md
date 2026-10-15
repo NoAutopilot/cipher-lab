@@ -2150,3 +2150,19 @@ de la malédiction" -- leaf 188 lines 1 and 10-11. So No.1 is the cipher letter 
 is in print; the premise check's "no decipherment or print of leaf 188 found" is superseded. Van Deventer, Opkomst XIII
 (1888), pp. CXXIX and CXXXIII n.2, quotes No.4 and No.5. Crib values suggested by Collet's text for unkeyed codes are in
 AUDIT.md section 4 ("found, not applied"); the next solver step is the full Collet page (LOCAL-QUEUE L35).
+
+## JAV-COLLET (15 Oct 2026, account 4, LANE DEFAULT-A4-0235-15)
+
+AUDIT.md's "Found, not applied" Collet crib, tested per PREREG-JAV-COLLET.md (089e3e7d1) with `tools/decode_key.py
+--try` (fr1810, window 8, 100 nulls; every call in `crossword_log.tsv`). Pool: leaf 188 only (no other transcribed leaf
+carries 853, 1121, 1173, 125, 1065, 72; inv26 is a copy of the same dispatch). Results and grades in HYPOTHESES.md row
+of 15 Oct 2026. Summary: seven of the nine codes occur once on 188, so --try is undecided for them by construction;
+1173=choses is the only hypothesis that scores above its runner-up (+1.6 bits, just under both null p95s). The two
+codes with a second occurrence (1121 at l.9, 125 at l.4) get the tool's "reject" for every split tried, but against a
+single-letter or NULL runner-up while multi-letter values pay a 3-bit charge, and --try's word-class known-answer
+control (K2) FAILED, so these are neither support nor contradiction. Decision, pre-registered: no key.tsv edit;
+the Collet values stay M crib values (853+1121 = présentera, 1173 = choses, 573 = bien, 1027 = différemment,
+125+1065 = trésors, 72 = -diction), applied to no reading. reading.txt unchanged, so no decode_key --check or judge run
+was owed. Next: the cheapest route to promote any of these is still a second occurrence -- Collet's full page (L35)
+or the Paris decipherment (L31); a word-class --try control that passes would let the n=2 codes be re-tested.
+Requests: none (disk only). Cost not visible to this session.

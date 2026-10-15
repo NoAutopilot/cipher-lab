@@ -1,4 +1,4 @@
-# PREREG-JAV-COLLET (LANE DEFAULT-A4-0235-15, account 4) -- written 15 Oct 2026 03:1x UTC by date -u, before any --try run
+# PREREG-JAV-COLLET (LANE DEFAULT-A4-0235-15, account 4) -- written 15 Oct 2026 03:06 UTC by date -u, before any --try run
 
 Job: test Collet 1910's printed sentences (AUDIT.md "Found, not applied") as crib values on leaf 188 with
 `tools/decode_key.py ciphers/na-janssens-java-1811 --try CODE=VALUE` (fr1810 corpus model, window 8, 100 nulls),
