@@ -86,3 +86,30 @@ key_6019.tsv (two blind Sonnet passes on crops + reconcile, grade H for values r
 ciphertext_556.tsv's 45 C glosses (agreement count vs a shuffled-value control, PREREG first) -- that is a known-answer test of the key, not
 a reading of no. 92/187 (no key.tsv edit; applying it to 92/187 is a later job). If no key leaf: say what 549-551 are, and stop. Take/release
 lines for the NA host. Update Remaining gaps / Escalation (known-keys rung), gaps_check.
+
+## Wave 3 (08:5x UTC 15 Oct)
+
+### OBRED-BAND (Opus, cap 4, box 75 min, disk only): oldenbarnevelt-brederode-1605 band-interval decode with held-out leaf check
+Escalation key-rebuild line (OBRED-TRY, 15 Oct): "band-interval decode with a held-out leaf check and shuffled-band control, then no. 92/187
+graded M, ~$3". OBRED-TRY's statistic B (gloss letter rises with code value, rho 0.959; 555 0.930, 556 0.989) says the code list is ordered
+alphabetically by value. PREREG first: fit the value->letter band boundaries on one leaf (555) and score the held-out leaf (556) glossed
+codes against it, vs a shuffled-band control (>= 200 draws) and a power check (subsample to no. 92/187's own token counts, rule 3 ARM3-ADJ
+clause). Only if the held-out check passes: decode no. 92/187 single-letter-band codes as interval readings (each token a letter range, grade
+M), through a script that regenerates it (rule 7 shape, `--check`); never key.tsv; name codes (band 588-751) left as codes. Report held-out
+accuracy vs control, and what fraction of 92/187 tokens fall in bands narrow enough to name one letter. gaps_check.
+
+### OBRED-KEYHUNT (Opus, cap 4, box 75 min, resources.huygens.knaw.nl <= 30, service.archief.nl/nationaalarchief.nl <= 25): oldenbarnevelt-brederode-1605 the 1619 "instructie ende sleutel"
+Remaining gaps line ~1917 (OBRED-549): "the States General resolutions of 17-28 Oct 1619 (Resolutien der Staten-Generaal, Huygens retroboeken,
+nieuwe reeks 1619) for a note on the key's receipt or where it was laid, then a stride-1 screen of inv. 6019 scans 520-548 and 558-600 at
+sheet size for a key leaf". Order: Resolutien first (host table row "Huygens retroboeken"; full-text search for Brederode / sleutel / cijffer
+/ chiffre in the 1619 volume, read the hits for 17-28 Oct). Then the 6019 screen at the smallest size that shows a numeral table (e.g. 1000
+px), stride 1, from 548 backward and 558 forward, stopping before 80% of cap or box; any candidate leaf at 5000 px. PREREG not needed for a
+screen; if a key leaf is found, record scan, layout and a sample of rows only (transcription and the known-answer test against
+ciphertext_556.tsv's glosses are a later job). Take/release lines for both hosts. Update known-keys line, gaps_check.
+
+### KAL-SHEET2 (Opus, cap 1.5, box 45 min, web search + <= 10 requests to the source hosts): kaliningrad-2015 higher-resolution image of sheet 2
+NOTES.md KAL-HOMRU "Next step": "a higher-resolution image of sheet 2 (the Russian source thread or strana39.ru) for the ghost lines below line
+6, one fetch, ~$1". Find in NOTES.md / sources where cryptogram2.png came from; look for the original post and any larger copy (the source
+thread, strana39.ru, a web archive capture via the CDX API). If a larger image exists, fetch it once to ciphers/kaliningrad-2015/images/ only
+if under the folder's 30 MB limit (record manifest, sha1, URL, date), and one Opus look at the area below line 6: are the ghost lines
+bleed-through of sheet 1, a second text, or cipher? Grade any read M. If none exists, log the hosts tried. No solving. Update Next step.
