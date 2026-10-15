@@ -1,0 +1,6 @@
+# BAL-13X (15 Oct 2026, account 4): the two 65? strokes left unsettled by BAL-169C (glossed_pairs_169c.tsv rows c298b pos 4, c302a pos 2), by rule 7 of
+# f22mk/PREREG-BAL-13X.md (acute = separate rising stroke in cipher ink above the 6 or 5). Kept apart from the pairs files so score_marks_169c.out
+# stays reproducible. Image: openapi.bnf.fr btv1b9001488b f298 region 3050,3380,950,330 at max (sha1 1d100f36c7702eeebd7e6987e4df8f510a4f9bc9, scratch only).
+canvas	run	gloss	pos	was	now	unit	evidence
+298	c298b	le Masserati	4	65?	65'	ra	dark stroke rising right above the 6/5 join, ~10 px gap at native from the 6's head hairline (pixel map), ink tone as the numerals, not the grey gloss: separate acute
+302	c302a	diray	2	65?	65?	ra	not fetched at max (request cap 4 reached); 1000 px locator only, not settleable
