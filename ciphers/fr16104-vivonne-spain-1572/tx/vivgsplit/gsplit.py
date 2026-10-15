@@ -99,6 +99,9 @@ def classify_fold(mat, held):
              h=sg[m['sid']]['h'], line=m['line'], pos=m['tpos'], kind='sign') for m in te])
     lj = os.path.join(W, 'labels_stub.json')
     json.dump({'signs': {}, 'marks': {}, 'override': {}}, open(lj, 'w'))
+    ct = os.path.join(ATLAS, 'clusters.tsv')           # as tx/vivcls/run.py ensure_atlas_stub: no clusters, header only
+    if not os.path.exists(ct):
+        open(ct, 'w').write('kind\tid\tcluster\n')
     out = os.path.join(W, f'pred_{held}.tsv')
     cmd = [sys.executable, os.path.join(REPO, 'tools', 'glyph_atlas.py'), 'classify', '--out', ATLAS, '--labels', lj,
            '--boxes', bx, '--boxes-median-h', str(MEDIAN_H), '--only-train-labels', '--train-labels', tl,

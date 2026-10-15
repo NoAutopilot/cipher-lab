@@ -45,3 +45,17 @@ passes or fails on its own; the pooled numbers carry the decision.
   in the three folds. The reader-r tiles L08:20, L08:31, L12:37 first. No gate.
 - At most two Opus eye checks (a contact sheet of the predicted-f tiles and one of predicted-r exemplars), one sentence each.
 - Reproducible: `tx/vivgsplit/gsplit.py check` regenerates `result.json` and exits non-zero if it is stale.
+
+## Addendum A (15 Oct 2026, 01:5x UTC by date -u; written after the gate result in result.json, BEFORE any f.191r tile is cut or classified)
+The gate read PASS (numbers in NOTES "VIV-GSPLIT"). Section 4's f.191r step needs a box per g token; f.191r has no committed pen-unit map (VIV-PACKET3's
+unlabelled map was wrong at 36 of 40 boxes). Registered now, before any f.191r tile exists:
+1. Units: `tools/glyph_atlas.py segment --median-h pool` on the 72 VIV-F191 line crops (regenerated, 1 request) into an untracked atlas.
+2. Map: `tools/box_token_align.build_map` against the committed reconciliation `tx/viv63_f191/rec.tsv`, label-aware (lam = bta.LAM) with each unit's
+   top-3 from `classify --boxes` trained on VIV-CLS's full-code round-2 labels (`tx/vivcls/train/labels_r2_both.tsv`, hog/none). A g token is
+   tileable iff it has exactly one unit at op 1:1.
+3. Classify every tileable g token with the f.102r+f.103r f/r model (section 2's settings, 1-NN).
+4. Box check (eye check 1 of 2): a contact sheet of every predicted-f tile with its line context; a tile enters the override only if it holds
+   one whole sign at a g position (the sign the vote names). The count before/after the check is reported. The override is written for the passed
+   predicted-f tiles only; run (a) is the registered decision number, (b) report-only, as section 4.
+5. Report: g tokens 116, tileable N, predicted f N, passed N, and the share predicted f beside the truth leaves' base rate (VIV-FKEY: about 5% of
+   g is f), so an over-firing model is visible.
