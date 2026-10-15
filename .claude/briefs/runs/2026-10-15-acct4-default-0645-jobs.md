@@ -62,3 +62,25 @@ code / CC BY text, cite it; clone shallow or fetch raw only the `clair1161` path
 ### BAL-C286 (Opus, cap 3, box 60 min, openapi.bnf.fr <= 8, ROOM take/release): baluze167-davaux-1637 c286 onward for a glossed 7/5
 NOTES.md Verdict ~line 3105: "Baluze 167 c286 onward for a glossed 7/5 (~$2)". Same PREREG as BAL-C275G/BAL-C280 (unchanged); Sonnet reader calls
 on native regions, eye check only on glossed 7/5/E rows; --try at every occurrence before anything enters key.tsv.
+
+## Wave 2 result (07:5x UTC): LVN-4611P2 7.13 D (p2a only, stopped on its PREREG spend line), C1161-LASRY 1.31 N, BAL-C286 2.03 N.
+
+## Wave 3 (07:5x UTC 15 Oct)
+
+### LVN-P2RETX (Opus, cap 6.5, box 90 min, disk; resources.huygens.knaw.nl <= 3): lodewijk-van-nassau-1573-74 re-transcription of 4611 p2 mixed lines
+LVN-4611P2 section (NOTES.md ~line 4851): the 150-dpi boxes mix physical lines p2_L13-L33 (35 physical vs 33 transcribed; runs of ink in no row).
+Re-transcribe those lines as LVN-L1 did for p3_L00: deskew, cut one crop per physical line with tools/iiif_lines.py --image (paste the command),
+two blind Sonnet passes per line batch (~0.6 a call) + 1 reconcile, insert the missing runs as new rows, keep the old rows' ids mapped in a
+TSV. PREREG addendum first. This is a transcription repair (grade unchanged until a settle); do NOT run the p2b per-token settle in this job.
+Stop before a batch that would cross 80% of cap or box. decode_key --check after; report rows added/changed and the residual for p2b.
+
+### C1161-SSPLIT (Opus, cap 4, box 75 min, disk only): clair1161-avis-flandre-1688 S tokens open vs looped, --try per split
+Verdict NOTES.md ~line 2738: "every S token sorted open vs looped and --try per split, ~$3". Read CL1161-S7 first (do not repeat its exemplar
+check). PREREG first; sort by crops in scratchpad (regen from images/manifest.json); --try each split at every occurrence with --try's own power
+control (a known wrong value on an H/C code must be rejected AND a hidden right value accepted; if either fails the try is a non-test). Nothing
+enters key.tsv on a non-test.
+
+### BAL-E293 (Opus, cap 3, box 60 min, disk; openapi.bnf.fr <= 6 for 169 only): baluze167-davaux-1637 c293 E sign identity, then 169 glossed 13:/65
+Verdict NOTES.md ~line 3150: (a) the c293 E beside the c268 ball-foot E exemplars and the c275 E -- same sign or not; if the same, run --try with
+"E = null" as the hypothesis against E = e, power control first (~0.8). (b) then, if >= 50% cap left, a glossed 13: and plain 65 on Baluze 169
+f.36-38 / f.208-209 (~2), same PREREG family as BAL-C275G. Nothing into key.tsv without --try at every occurrence.
