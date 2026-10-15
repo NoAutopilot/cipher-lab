@@ -5246,7 +5246,7 @@ classified. Requests: 0. Subagents: 0.
 Next (one line each): an insert path in lvn10/apply.py (pre-file rows or an `insert_before` column) and the two heads p1_L04 "124, 127" + p1_L05
 "81, 125" entered as M, ~$0.5; a second eye (blind) on p2_L34/4 (130/150) and the five found-on-the-way rows, ~$0.5.
 
-## LVN-L05: p1_L05 head + LVN-4610U's five rows, second blind reader (15 Oct 2026, 15:13-15:2x UTC by date -u, account 4, LANE DEFAULT-A4-1441-15)
+## LVN-L05: p1_L05 head + LVN-4610U's five rows, second blind reader (15 Oct 2026, 15:12-15:1x UTC by date -u, account 4, LANE DEFAULT-A4-1441-15)
 
 Step: LVN-4610U's named next (insert path in lvn10/apply.py; the p1_L05 head "81, 125" at M after a second blind look; a second blind reader on
 the five found-on-the-way rows). PREREG `lvnl05/PREREG-LVN-L05.md` pushed (7e90dde79) before any blind read. Disk only: images/04610_p1.jpg and
