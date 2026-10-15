@@ -4856,7 +4856,7 @@ physical lines as LVN-L1 did for p3_L00, with the missing runs inserted), ~$5 --
 eye check of p2_L05/10 (H 29, read 23?), ~$0.3. Requests: resources.huygens.knaw.nl 1. Subagents: 4 Sonnet calls. No judge run. Novelty not
 classified.
 
-## LVN-P2RETX: re-transcription of the mixed 4611 p2 lines K13-K35 (15 Oct 2026, 07:5x-08:1x UTC by date -u, account 4, LANE DEFAULT-A4-0645-15)
+## LVN-P2RETX: re-transcription of the mixed 4611 p2 lines K13-K35 (15 Oct 2026, 07:5x-08:0x UTC by date -u, account 4, LANE DEFAULT-A4-0645-15)
 
 Step: LVN-4611P2's named next step "a re-transcription of the 4611 p2 lines the 150-dpi boxes mixed (K13-K35, free read on the deskewed
 physical lines as LVN-L1 did for p3_L00, with the missing runs inserted)". A transcription repair: **no existing row was edited, deleted or

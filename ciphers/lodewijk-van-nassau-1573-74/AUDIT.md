@@ -1969,7 +1969,7 @@ verifier: 4611 p2's 150-dpi lines p2_L13-L33 mix neighbouring physical lines (th
 runs of ink are in no row, so the 4611 p2 decode from p2_L13 down reads tokens out of their written order. N-class and depth not re-assigned
 here; no safe sentence or status.json depth_sentence was checked against p2_L13-L33 by this job (next: the verifier's grep, ~$0.3).
 
-## LVN-P2RETX (15 Oct 2026, 08:1x UTC by date -u; solver job, account 4) -- reading revised after this AUDIT.md, carried here (rule 10 propagation)
+## LVN-P2RETX (15 Oct 2026, 08:0x UTC by date -u; solver job, account 4) -- reading revised after this AUDIT.md, carried here (rule 10 propagation)
 
 4611 p2 mixed lines re-transcribed on the deskewed physical lines K13-K35 (NOTES.md "LVN-P2RETX"; PREREG 209edcc02): 4 blind free-read calls,
 controls 16/20, 17/20, 16/19, 17/19 PASS. 127 ink tokens in no 150-dpi row inserted as M rows (p2_R*); no existing row edited or regraded.
