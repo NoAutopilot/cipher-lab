@@ -350,3 +350,10 @@ the strongest new material (a held key or a sibling folder) once reproduced. Re-
   birago-fr3252-1571-72 birago-nevers-1571 ceppo-nevers-fr3251-1570s clair1067-brienne-poland-1646 clair1108-duvergier clair1161-avis-flandre-1688 dupuy155-1597 dupuy468-anhalt fr2933-salviati-1525 fr4687-paleologue-nevers fr5160-letellier-1653 nevers-birago-fr3251-1572 -- table in sources/cyphersolver/2026-10-14-lasry/ours_same_volume.tsv.
 - Lesson: two independent groups worked the same BnF Nevers volumes in the same week; the daily solver-repository re-screen caught it
   within 9 hours of publication. Spend 14 Oct so far: 0 workers.
+
+## Wave 36 (15 Oct 2026, 06:13-06:2x UTC by date -u): daily re-check
+- ASKS 163 (fr.3982 f.25) unanswered. Bourdeau re-screened at HEAD 0445769 (Lasry write-ups for Gilino, Ranzo, decode4282 and site
+  rebuilds): no item for fr.3982 f.25 or fr.3985 f.89 (fr.3982 no.22 Pelissier and fr.3985 f.209 Pisany are already-known items).
+- fr3982-nevers-toscana-1592 was worked overnight by LANE DEFAULT-A2-2209-14 from this lane's handoff (TUSC-KEYS, TUSC-XM, NO70-WORDS);
+  this lane leaves it to that lane's next list to avoid duplicate spend.
+- BNF-GIEVRE-SORT briefed: blind sorter for fr.3985 f.89's 92 key no.60 tags (passes agree 0.744 -> a person's pass per Usage 6), ~$1.5.
