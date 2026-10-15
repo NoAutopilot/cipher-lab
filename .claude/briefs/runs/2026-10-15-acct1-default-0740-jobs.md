@@ -84,3 +84,21 @@ lexicon (new material), not a re-tune of the MCC-SUFX knob; if you cannot get a 
 "not run: no corpus", do not substitute. PREREG (control at the target's N=132 / K / ending profile, the MCC-JUDGE NCBE-fixed and type nulls,
 >= 200 draws, the margin rule) before scoring the target. `tools/token_anneal.py` option, not a private copy; offline test in tools/tests/.
 No vision calls. NOTES "## MCC-GREGG", gaps + Verdict, gaps_check.
+
+## Wave 2 result (09:0x UTC): MONL-L16 7.87 D (1.31x), CLIN-3004B 5.59 D, ELEC-357 2.77 D; MCC-GREGG running. pro3055 stops here this lane
+(text-known share ~10.3 of ~36 spent, over the fifth guardrail); pp.232-233 go to the handoff.
+
+## Wave 3 (09:1x UTC 15 Oct)
+
+### MONL-K04 (Opus, cap 6, box 90 min, disk only): fr4735-monluc-lansac-poland-1573 K04|K12 value-blind sort, then c268 L21-L25
+Verdict: "the value-blind K04|K12 sort of the L16-L20 tiles with L11:14 (~$1.5), then c268 L21-L25 (~$3)". MONL-L16 ran 1.31x: price per call,
+<= 12 crops per call, ~0.5 per call. Units: sort 2 + L21-L25 (5 lines x 2 blind passes) 10 + reconciliation 1 = 13; state them in the claim and
+stop before the unit that would cross 80% of the cap (if the sort alone reaches that, stop after it). Same rules as MONL-ADH's value-blind sort
+(controls first) and MONL-L16's blind passes. Then align_c268.py --check and the shuffled-clear control (200). NOTES "## MONL-K04", gaps + Verdict,
+gaps_check.
+
+### ELEC-PAIR (Opus, cap 4, box 60 min, archive.org <= 6, openapi.bnf.fr <= 4): fr5761-election-1519 nr. 357 name signs vs Kluckhohn's print
+ELEC-357's next: Kluckhohn RTA J.R. I nr. 357 printed text (pp.813-814 and the n.821-822 reference ELEC-357 names; `bub_gb_0gFoAAAAMAAJ` page
+images, not the OCR) against the ~7-8 name signs on fr.3897 ff.116r-117r (c142 right, c143). Pre-register in NOTES the pairing rule (a sign
+pairs with a printed name only where the clear context on both sides matches; >= 2 occurrences per sign before any C grade; a shuffled-name
+control). Value-free crops. Do not start the nr. 383 bisection. NOTES "## ELEC-PAIR", Verdict.
