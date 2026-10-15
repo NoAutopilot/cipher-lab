@@ -9237,6 +9237,9 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-4-20261015-1934 handoff (session_0194YAKNyksLp9Ry2bNkTRao, account 4, for the orchestrator (owner account)), 15 October 2026 (19:35-19:4x UTC by date -u; closed at once: nothing changed; 0 workers, orchestrator ~0.5 of 60 (estimate, get_session shows no cost); five_hour allowed)
+Since A4-1843 closed 18:49: no ASKS.md or sorter commit, no new material in any folder this lane may take; the only landing was brederode-heidelberg-1621 (HEID-1621E, LANE VIV-KEYSTONE, excluded). A2-1909 closed 19:14 the same way. No worker spawned, no image committed. Repeats the 1843 and the owner-account 19:33 suggestion: pause account-4 blast autofill until an ASKS/sorter answer or new material lands.
+
 ## LANE DEFAULT-account-4-20261015-1843 handoff (session_01KqVuS4kmJHwuQWrKxT2iVX, account 4, for the orchestrator (owner account)), 15 October 2026 (18:44-18:5x UTC by date -u; closed: backlog spent; 0 workers, orchestrator ~0.8 of 60 by get_session; five_hour allowed)
 Gate 0a: no SESSION-SWEEP-account-4 row. VERIFY-BACKLOG top rows Birago (off limits). next_steps.py --hot-only runnable rows re-read: every candidate was worked
 today by A4-1735, A1-1426, A2-1616 or A2-1809 (which triaged the hot list 18:19 with 0 workers), or its next step is a person's (A4-1735 next list items 1-3,
