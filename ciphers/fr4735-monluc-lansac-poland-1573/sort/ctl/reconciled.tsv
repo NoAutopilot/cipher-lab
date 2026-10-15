@@ -1,0 +1,11 @@
+page	line	pos	role	current	A	A_conf	B	B_conf	verdict
+c268c	L11	14	lead	K04	K12	M	K12	H	relabel
+c268d	L16	16	lead	K04	K12	L	K12	M	low-conf-agree
+c268d	L17	16	control-d	K04	K04	M	K04	H	keep-agree
+c268d	L17	20	lead	K04	K12	M	K12	M	relabel
+c268d	L19	2	control-d	K04	K04	H	K04	H	keep-agree
+c268d	L19	6	k12-ref	K12	K12	M	K12	M	keep-agree
+c268d	L20	8	lead	K04	K12	M	K12	M	relabel
+c268d	L20	23	control-d	K04	K04	H	K04	M	keep-agree
+c268d	L20	32	k12-ref	K12	K12	M	K12	H	keep-agree
+c268d	L20	33	control-d	K04	K04	M	K04	H	keep-agree

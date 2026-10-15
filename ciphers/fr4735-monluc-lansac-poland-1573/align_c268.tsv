@@ -359,7 +359,7 @@ L11	10	K15	H	q	o	contradict	0
 L11	11	K40	H	i	m	contradict	0
 L11	12	K11	M	m	m	confirm	0
 L11	13	K01	M	a	a	confirm	0
-L11	14	K04	M	d	n	contradict	0
+L11	14	K12	M	n	n	confirm	0
 L11	15	K04	M	d	d	confirm	0
 L11	16	K05	H	e	e	confirm	0
 L11	17	K15	H	q	q	confirm	0
@@ -578,7 +578,7 @@ L17	16	K04	H	d	d	confirm	0
 L17	17	K26	H	e	e	confirm	0
 L17	18	W:Cur	H		lempereur	fill	0
 L17	19	W:apuril	H		nre	fill	0
-L17	20	K04	H	d	n	contradict	0
+L17	20	K12	M	n	n	confirm	0
 L17	21	K05	H	e	e	confirm	0
 L17	22	K07	H	g	g	confirm	0
 L17	23	K33	H	o	o	confirm	0
@@ -659,7 +659,7 @@ L20	4	K01	M	a	a	confirm	0
 L20	5	K09	H	i	i	confirm	0
 L20	6	K37	H	s	s	confirm	0
 L20	7	K33	H	o	o	confirm	0
-L20	8	K04	H	d	n	contradict	0
+L20	8	K12	M	n	n	confirm	0
 L20	9	K01	M	a	a	confirm	0
 L20	10	K10	H	l	l	confirm	0
 L20	11	K09	H	i		extra	0
