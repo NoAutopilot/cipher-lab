@@ -8,7 +8,7 @@ CLAUDE.md rule 10.
 Claim under audit (NOTES.md "Reading (LX-DEC, 25 Sept 2026)", updated by "Fix pass (LX-FIX, 25 Sept 2026)"): pages 2
 and 3 of a Portuguese letter in the Linhares papers (ANTT PT/TT/CLNH/0086/11, DigitArq docId
 `a03cef08d3c04758aa148f5be56d3401`, m0002) decode against Vieyra's 1809 Portuguese-English pocket dictionary to
-"para supprir o seu lugar junto com man o d justa he segredo ate para o ministerio [revised 3 Oct 2026 from "[null]", see last section] / pela memoria do cagar lhe
+"para supprir o seu lugar junto com man o d jus [revised 15 Oct 2026 from "justa", see "Reading revised (LIN-PROP)"] he segredo ate para o ministerio [revised 3 Oct 2026 from "[null]", see last section] / pela memoria do cagar lhe
 pauperr ven ha logo" (H 25, M 1); and the key sheet (m0003-m0004) names that dictionary only as "o Diccionario".
 
 ## 1. Executive verdict
@@ -58,7 +58,7 @@ open sources).
   `[17--]-[18--]` by the archive's own catalogue (confirmed below, section 4b) -- the archive assigns this bundle
   no narrower date than the two-century span. m0002 carries pages "2" and "3" of a longer letter; pages 1 and 4
   are not part of this 6-image item (established by LX-TR, NOTES.md).
-- Reading as decoded (rule-10-safe quotation, LX-DEC/LX-FIX): "para supprir o seu lugar junto com man o d justa he
+- Reading as decoded (rule-10-safe quotation, LX-DEC/LX-FIX): "para supprir o seu lugar junto com man o d jus [revised 15 Oct 2026 from "justa", LIN-PROP] he
   segredo ate para o ministerio [revised 3 Oct 2026 from "[null]", see last section] / pela memoria do cagar lhe pauperr ven ha logo". About a quarter of the
   26 tokens are single-letter or short dictionary-trim fragments (the key's own fragment-concatenation mechanic
   for proper nouns, e.g. "man", "d", "pauperr", "ven"), not free-standing words, so the fragment does not read as
@@ -469,6 +469,19 @@ Propagation trail, 3 Oct 2026 (A1B-LIN-REDERIV): the rule 7 fresh re-derivation 
 ran from the spec and the key alone and matches reading.txt and reading_tokens.tsv on all 26 tokens (0 differences);
 decode_key.py --check exit 0; judge PASS -1.024 vs real_p05 -1.122. Verdict PASS. No N-class change. Details: NOTES.md
 "Rule 7 re-derivation (A1B-LIN-REDERIV, 3 Oct 2026)".
+
+## Reading revised after this audit (LIN-PROP, 15 Oct 2026; propagated per rule 10)
+
+One token changed, value only: p.2 line 2 pos 2, group `3241315` (page 241 col 3, rank 15), read "justa" since LX-DEC,
+now "jus" (Vieyra "Jus", law/right). Licence: PREREG-LINLAB2 outcome A (LIN-LAB2, 15 Oct 2026: a second blind labeller,
+Opus, on the committed sheets of leaf 255 col 3 put "Jus," at FLUSH rank 15, "Junto," its own FLUSH row, no OTHER row in
+the span), which with LX-DEC's subagent, LX-QAFIX and LIN-CAL makes four blind readers against LX-DEC's own "Justa".
+Grade stays **M** (the PREREG licenses the word, not a grade; a person's count of the printed column is the H route).
+Wherever this file quotes "d justa he segredo", the current reading is "d **jus** he segredo" (26 tokens, H 23 / M 3 /
+U 0; `decode_key.py --check` exit 0; judge pt18 PASS -1.047 vs real_p05 -1.152). The rule 7 fresh-session re-derivation
+of this revision has not run yet (named as a gap in NOTES.md). No N-class or depth change is made here: this is the
+solver side's propagation note, and any class change is a verifier's. Carried into SECOND-OPINIONS-QUEUE.tsv row
+SO-LINHARES-M0002 and its prompt. Details: NOTES.md "Propagation of PREREG-LINLAB2 outcome A (LIN-PROP, 15 Oct 2026)".
 
 ## Depth (DEPTH-REGRADE, 4 Oct 2026)
 

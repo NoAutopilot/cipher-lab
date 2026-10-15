@@ -47,18 +47,21 @@ open question -- either a dictionary-column count that could be off by one, or, 
 itself ambiguous between three shapes)
 
   [p.2] para[H] supprir[H] o[H] seu[H] lugar[H] junto[H] com[H] man[H] o[H]
-  d[H] justa[H] he[H] segredo[H] ate[H] para[M] o[H] ministerio[H] (revised 3 Oct 2026: formerly the null 829011, re-read 329011; NOTES.md A1B-LIN-M0002b)
+  d[H] jus[M] he[H] segredo[H] ate[H] para[M] o[H] ministerio[H] (revised 3 Oct 2026: formerly the null 829011, re-read 329011; NOTES.md A1B-LIN-M0002b; 15 Oct 2026, LIN-PROP: "justa" -> "jus", M, see below)
   [p.3] pela[H] memoria[H] do[H] cagar[M] lhe[H] pauperr[H] ven[H] ha[H]
   logo[H]
 
-Grade counts: H 25, M 1 (of 26; C 0, S 0, I 0, U 0). About a quarter of the tokens are single-letter or
+Grade counts: H 23, M 3 (of 26; C 0, S 0, I 0, U 0; updated 15 Oct 2026, LIN-PROP -- the M tokens are jus, para and cagar). About a quarter of the tokens are single-letter or
 short dictionary-trim fragments (the fragment-concatenation mechanic above, e.g. "man", "d", "pauperr", "ven"),
-not free-standing words, so this does not read as connected prose. The one M-graded token, "cagar" ("to go to
+not free-standing words, so this does not read as connected prose. The M-graded token "cagar" ("to go to
 stool", vulgar), rests on a single disputed digit in the ciphertext (a caret-inserted correction squeezed above
 the baseline in the manuscript, legible as a "3", a "5" or a "7"): only the "3" reading (page 83, column 2, rank
 19) lands on an entry that exists in the dictionary at all -- pages 80-82 and 84-89 all fall short of rank 19 in
 that column -- but a blind re-transcription by a fresh model instance ranked "3" its top guess at only ~55%
 confidence, with "5" and "8" as runners-up (rejected on lexical grounds: neither reaches rank 19).
+"jus" (3241315, page 241 column 3 rank 15; read "justa" until 15 Oct 2026) is M because the column count is one line
+from "Justa": four blind readers (two models) put "Jus" at rank 15, one worker's own count put "Justa"; a person's count of
+the printed column would settle it (NOTES.md "LIN-PROP").
 
 - Our files: reading https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/antt-linhares-chave/reading.txt,
   transcription https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/antt-linhares-chave/ciphertext.tsv,
