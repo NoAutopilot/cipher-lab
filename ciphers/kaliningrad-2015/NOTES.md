@@ -750,3 +750,33 @@ Next step: with transposition at widths 2-12 now control-backed negative, the re
 the find's era and register (no Soviet-era Russian corpus is on disk; building one is the cheap job, compare V6-PTCORP) and the
 2-leaf LOOK owed by prior_work.py (2 crops for a gloss/clear-copy check). `tools/gaps_check.py`: SKIP for an `open` target.
 Verdict: keep going (no outside blocker).
+
+## KAL-RUCORP, era-matched Soviet-era Russian corpus and re-judge, 15 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-15-acct1-default-0447-jobs.md` "KAL-RUCORP" (LANE DEFAULT-A1-0447-15, account 1). No new solve.
+Prior work: `tools/prior_work.py kaliningrad-2015 --item-spec 'shelfmark=Kaliningrad bottle 2015' --step-type decode --offline`
+exit 4: 1-own LEAD = this job's own claim line; 3-tomokiyo and 3-solver UNCHECKED by unit (no folio/R-id; covered by hand in this
+folder's "Solver-repo check" and "Web and blog check" sections); 2-leaf LOOK owed (2 crops on disk) -- answered below.
+Era: the only dating evidence in the folder is the Schmeh post 19 comment thread (paper of a 1930-1960 notebook type, fountain-pen
+ink, a child's hand, deposit argued to 1945-48; a commenter's inference). Corpus chosen to match: Soviet prose written 1914-1942.
+Built `tools/data/ru20` (6 public-domain sources: Ilf & Petrov 1928, Gaidar 1942 and 1957 vol., Furmanov Chapaev and Dnevnik,
+N. Ostrovsky; 2.80M Cyrillic letters) and `tools/data/ru20_lat/s1s/` (README and MANIFEST give source, date, licence basis per
+file). Hosts: ru.wikisource.org 2 requests, both HTTP 429 (rate limit), stopped; archive.org 15 requests, all 200.
+Pre-registered in `PREREG-KAL-RUCORP.md` (c9f9252f5) before any score.
+**Fold check (N 1066):** blended FN 41.3%, per fold 2.5-99.5% (Ilf & Petrov 99.5, Furmanov diary 52.0, Gaidar 1957 50.5, Ostrovsky
+27.0, Chapaev 16.5, Gaidar 1942 2.5); held-out p05 -1.011, p01 -1.060, min -1.156. By the pre-registered rule: of unknown
+reliability against the in-model real_p05 (wider than ru19_lat s1s, 8.0-32.5%).
+**Re-judge (spec `families/kal_rucorp/spec_ru20.json`, corpora only changed; log `families/kal_rucorp/rejudge.log`):** KAL-2ST
+target decode FAIL -1.679 (real_p05 -0.935, null_p99 -2.003); shuffle-1 decode FAIL -1.649. Against ru19_lat s1s they read -1.70 /
+-1.65. Both sit about 0.5 below the lowest held-out real window (-1.156), so by the pre-registered wording the FAIL survives the
+corpus change despite the corpus's unknown in-model reliability. KAL-BIG decoded nothing (CONTROL BELOW GATE), so nothing of it
+was re-judged. Limit: these decodes were annealed against the 1876 Bible model; this job changed the judge only. A solve whose
+language model is ru20 itself is untested.
+**2-leaf LOOK:** cryptogram1.png and cryptogram2.png (688x841, the only images) looked at: one hand, one ink, cipher only; no
+gloss, interlinear or clear copy. Sheet 2 below line 6 carries blurred bleed-through/ghost lines, illegible at this resolution, not
+read. Recorded CLEAR in prior-work.tsv / look.tsv.
+Status stays `open`; no reading. Rule 10: nothing here is a reading.
+Next step: the homophonic (written order) family re-run with `--corpus` the ru20_lat s1s files (its own matched control at N 1066
+on ru20), ~$2 CPU, since the era change can only matter if the solver's own model uses it; and a higher-resolution image of
+sheet 2 (the Russian source thread or strana39.ru) for the ghost lines. `tools/gaps_check.py`: SKIP for an `open` target.
+Verdict: keep going (no outside blocker).

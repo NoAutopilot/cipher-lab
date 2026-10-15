@@ -1,0 +1,7 @@
+file=furmanov_chapaev_1937.txt.gz	letters=456681	real_p05=-0.937	fn=33	n=200	fn_pct=16.5	held_p05=-0.961	held_min=-1.005
+file=furmanov_dnevnik_1930.txt.gz	letters=404783	real_p05=-0.932	fn=104	n=200	fn_pct=52.0	held_p05=-0.985	held_min=-1.005
+file=gaidar_rakety_1942.txt.gz	letters=31264	real_p05=-0.929	fn=5	n=200	fn_pct=2.5	held_p05=-0.926	held_min=-0.952
+file=gaidar_soch2_1957.txt.gz	letters=1000268	real_p05=-0.928	fn=101	n=200	fn_pct=50.5	held_p05=-0.982	held_min=-1.009
+file=ilf_petrov_12stulev_1928.txt.gz	letters=506187	real_p05=-0.92	fn=199	n=200	fn_pct=99.5	held_p05=-1.062	held_min=-1.156
+file=ostrovsky_stal_1955.txt.gz	letters=578075	real_p05=-0.935	fn=54	n=200	fn_pct=27.0	held_p05=-0.968	held_min=-0.992
+N=1066 samples=200 folds=6 blended_fn=41.3% spread=2.5-99.5% held_out_p05=-1.011 p01=-1.060 min=-1.156

@@ -1364,3 +1364,15 @@ sign-adjacency structure already in the written order. The five control ciphers 
 their own 50-shuffle means (4630/4416, 4010/4012, 4730/4424, 4212/4154, 3828/3716), while a control in its true order reads about
 +30 SD (seed 5: 6678 against 3716 +- 87). The target sits between: more adjacency than a columnar transposition leaves, much less
 than a plain homophonic Russian stream carries. A lead for the next brief, not a test result.
+
+### KAL-RUCORP result (15 Oct 2026, 05:4x UTC by date -u; PREREG-KAL-RUCORP c9f9252f5 before any score)
+
+Judge re-run only (no solve). Corpus tools/data/ru20_lat/s1s (6 Soviet-era PD sources); fold check N 1066: blended FN 41.3%,
+spread 2.5-99.5%, held-out p05 -1.011 / p01 -1.060 / min -1.156 (unknown reliability by the pre-registered rule).
+
+| decode | judge on ru19_lat s1s | judge on ru20_lat s1s | vs ru20 held-out min |
+|---|---|---|---|
+| KAL-2ST target (width 9) | FAIL -1.70 (real_p05 -0.904) | FAIL -1.679 (real_p05 -0.935, null_p99 -2.003) | below (-1.156) |
+| KAL-2ST shuffle 1 (width 11) | FAIL -1.65 | FAIL -1.649 | below |
+
+The FAIL survives the corpus change. The decodes come from a ru19-trained anneal; a ru20-trained solve is untested.
