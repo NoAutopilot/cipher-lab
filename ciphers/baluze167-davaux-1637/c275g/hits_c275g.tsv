@@ -10,8 +10,8 @@ canvas	crop	sign	context	gloss_above	unit_guess	status	note
 272	b_c272_04L/R	7	40 [7] 25= 36= 91=	none (clear text above)	-	reader med; not eye-checked	unglossed
 270	b_c270_04R	s:E?	83 ð [E?] 6 K	none directly above	-	reader low	unglossed
 271	b_c271_03R	5?	w' [5?] d y c w' 30	none directly above	-	reader med; not eye-checked	unglossed
-281	c281_04R	s:E	76 L u4 [E] 6 27 20	contenter	e? (u4 t, E e, 6 r)	reader high; not eye-checked (BAL-C280)	not scored
-284	c284_01R	s:E	26 y 20 [E] pour ce	none over E (obligee over the preceding group)	-	reader high; not eye-checked (BAL-C280)	unglossed
+281	c281_04R	s:E	90' 76' L u4 [E] 6 27 20=	contenter	e (u4 t, E e, 6 r)	eye (BAL-EYE)	R23
+284	c284_01R	s:E	o z 42' 26' y 20= [E] pour ce	none over E (obligee ends over 26')	-	eye (BAL-EYE): E shape confirmed	unglossed
 285	c285_00L	5?	51 6 ꝯ [5?] y 51	none	-	reader low (BAL-C280)	unglossed
 268	e268a	s:E	20: 77 [E] 73 8	partie soit	e	eye (BAL-C280)	R21
 267	z267a/z267b	s:E	51 [E] ſ (x2)	dix annees	e	eye (BAL-C280)	R22, R20 pos 7

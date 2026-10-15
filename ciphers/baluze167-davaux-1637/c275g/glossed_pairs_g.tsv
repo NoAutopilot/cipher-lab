@@ -125,3 +125,16 @@ R22	267	dix annees	5	L:longs	s	C280
 R20	267	[ladite] trefue de dix annees	6	51	-	C280
 R20	267	[ladite] trefue de dix annees	7	s:E	e	C280
 R20	267	[ladite] trefue de dix annees	8	L:longs	s	C280
+# BAL-EYE (15 Oct 2026, account 4): c281 re-fetched at full/2400 (openapi.bnf.fr; untracked; images/manifest.json bal_eye_fetches), ruled by eye on a
+# 2x/4x crop beside the c268 E exemplars (R21 "20: 77' E 73' 8", "42' E" on the garentis line) and same-page plain 6 (c281 line 1 "76' 6 46' f" under
+# "termes"). Gloss "contenter" spans 90' .. 6; 27 20= after it are unglossed. The 6 after E is plain 6 (the tall hooked top is this hand's plain 6,
+# same form as c281 line 1 and c268 "21' 6"), not 6' (bo). L (looped l-like sign) labelled L? since not compared with the L:h exemplars; unit n by
+# elimination, not scored. c284 E (`o z 42' 26' y 20= E pour ce`): shape confirmed, no gloss over it (obligee ends over 26'); not placeable, no row.
+R23	281	contenter	1	90'	con	EYE
+R23	281	contenter	2	76'	te	EYE
+R23	281	contenter	3	L?	n	EYE
+R23	281	contenter	4	s:u4	t	EYE
+R23	281	contenter	5	s:E	e	EYE
+R23	281	contenter	6	6	r	EYE
+R23	281	contenter	7	27	-	EYE
+R23	281	contenter	8	20=	-	EYE

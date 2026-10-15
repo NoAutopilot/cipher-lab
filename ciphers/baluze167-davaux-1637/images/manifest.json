@@ -4367,5 +4367,31 @@
    "job": "BAL-C280",
    "sha1": "7cd1b82e2abc810821bc907c02ab850ba897ae88"
   }
+ ],
+ "bal_eye_fetches": [
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f281/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T06:54Z",
+   "http": 200,
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-EYE",
+   "sha1": "f0d6fec756ae213d65dc5fa625161da1eb07c566"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f284/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T06:54Z",
+   "http": 200,
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-EYE",
+   "sha1": "ae779c953cfd2c3d98f9b41859937ab18a7be544"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f268/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T06:54Z",
+   "http": 200,
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-EYE",
+   "sha1": "7cd1b82e2abc810821bc907c02ab850ba897ae88"
+  }
  ]
 }
