@@ -841,6 +841,17 @@
    "next": "f.410 at N4 (C 144 M 48 U 24 of 216); open: unglossed f.409 (codes to 1056) has no key reading; DECODE record 4999 (1717 Flemming-Manteuffel key, Loc. 03233/02) vs Krauske's table is the named next step",
    "note": "Novelty verified 3 Oct 2026 from AUDIT.md (VERIFY-MANT N3, AUDIT2-MANT N4), key published. Safe sentence: Applying Dr. Krauske's 1893 manuscript key table (SHStA Dresden, Loc. 694/10) to the unglossed cipher passage of Loc. 694/08 f.410 (Manteuffel to Flemming, Berlin, November 1712) gives French in stretches (C 144, M 48, U 24 of 216 tokens); no prior decipherment located: the passage is not among the extracts of these reports printed in Acta Borussica, Behördenorganisation I (1894) or quoted in Droysen's Geschichte der preußischen Politik IV.1, searched in full text on 3 Oct 2026 (log in AUDIT.md).",
    "kind": "recovery"
+  },
+  {
+   "name": "Brederode to the States General, Heidelberg, 13 Aug 1621",
+   "year": "1621",
+   "ref": "NL-HaNA 1.01.02 inv. 6021 scans 375 (signed) and 379 (duplicate)",
+   "folder": "ciphers/brederode-heidelberg-1621",
+   "stage": 2,
+   "state": "open",
+   "holder": "Nationaal Archief",
+   "next": "Pool more Brederode cipher letters and look for the key or a period decipherment (secret resolutions 1621, Brederode liassen); the single block (96 numerals, 21 distinct pairs, about 45 word-level units) is too short for cryptanalysis alone (spec test 1 undecided, HEID-1621D).",
+   "note": "Found 15 Oct 2026 by OBRED-6021 (account 2) in a stride-6 screen of inv. 6021; sender read on the signed letter (HEID-1621B); Resolutien SG nieuwe reeks 5 p.260 res. 1644b calendars it as 'Gedeeltelijk in code' with no decipherment (HEID-1621D); not in DECODE, Cryptiana or either solver repository (HEID-1621C). Design lead: two-digit consecutive-pair groups each followed by a letter, one unit per word."
   }
  ],
  "workers": [

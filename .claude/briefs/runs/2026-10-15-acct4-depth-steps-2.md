@@ -64,3 +64,18 @@ first test at cap 3 within this job (control first, both numbers into the spec's
 remains: the scan 375 second witness -- `tools/iiif_lines.py --image <scan375 1200 px> --out <dir>` pasted, two blind Sonnet readers on the
 numeral lines, one reconciliation, agreement with ciphertext.tsv (scan 379) per unit as the transcription control; no reading, no key.
 NOTES.md "## HEID-1621D (<date -u)" ending in the status word and the next row.
+
+## JOB HEID-1621E (account 2; Opus 5.5; cap USD 5; box 75 minutes; service.archief.nl <= 140 (take/release lines, >= 3.1 s apart, one at a time with any other NA worker), www.nationaalarchief.nl <= 10, resources.huygens.knaw.nl <= 15; no reader subagents; Price: vision calls: 0 x USD 0 = 0 (this worker's own eye on 700 px contact sheets, the OBRED-6021 method))
+ciphers/brederode-heidelberg-1621 is open (HEID-1621D: Resolutien SG NR 5 p.260 res. 1644b "Gedeeltelijk in code", no decipherment; spec test 1
+undecided at N=45 units). One block of 96 numerals cannot be read alone: the next step is a POOL and the KEY (CLAUDE.md selection rule, pools
+first). (1) `python3 tools/design_prior.py` for the design (two-digit consecutive-pair groups + trailing letter, Dutch agent to the States
+General, 1621) and KEY-OFFICES.tsv / KEY-DESIGN.tsv for any States General or Palatinate-mission key of 1618-1625 already on file; paste.
+(2) Pool: the other five sixths of NA 1.01.02 inv. 6021 (HEID-1621 read every sixth scan of 1-697; HEID-1621B read 361-397 at stride 1) --
+contact sheets at 700 px by the OBRED-6020/6021 method with the same sheet controls, scans 1-360 and 398-805 at stride 6 offset by 3 from
+HEID-1621's grid (so the two sweeps together cover stride 3), PREREG-HEID1621E.md first with the stop rule (80% of cap or box) and what counts
+as a hit (a numeral block, a key leaf, an interlinear decipherment, a figure postscript); every hit by scan number with a 1200 px re-look of
+the hit only. (3) Key: the NA finding aid for 1.01.02 (www.nationaalarchief.nl item pages, not data.nationaalarchief.nl) for 'sleutel',
+'cijfer', 'chiffre' entries 1618-1625 and the Brederode liassen after 6021 (6022 onward: inventory titles only, no scans), and the Huygens
+Resolutien SG NR 5 index for 'cijfer'/'sleutel'/'Brederode' entries that mention a decipherment ('gedecifreerd') in 1621-1622; list every
+candidate with its inventory number and whether it is digitised. No decode, no key edit, no reading. NOTES.md "## HEID-1621E (<date -u>)":
+hits, candidates, requests per host, and the next row (a transcription of any second block found, or the key leaf if one is named).

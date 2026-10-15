@@ -9949,3 +9949,10 @@ LANE VIV-KEYSTONE handoff, appended 17:4x UTC 15 Oct 2026 (parent, account 4). H
 confirms it calendars Brederode's Heidelberg letters; no sender print, nothing in DECODE/Cryptiana/solver repos; intake gate exit 0 =
 blocked, no spec. HEID-1621D queued on account 2 (cap 4): one Huygens retry (else a LOCAL-QUEUE row), spec + first cheap test if the gate
 passes, scan 375 witness if room. Account 1 paused; 2 and 4 in blast; owner page empty; FDR not reported sent; no owner word on halt.
+
+LANE VIV-KEYSTONE handoff, appended 18:4x UTC 15 Oct 2026 (parent, account 4). HEID-1621D: brederode-heidelberg-1621 now OPEN at stage 2 --
+Resolutien SG NR 5 p.260 res. 1644b calendars the 13 Aug 1621 letter as "Gedeeltelijk in code" with no decipherment; intake gate exit 0;
+specs/brederode-heidelberg-1621.json written; test 1 (unit inventory vs frozen nl16 pools): control C1 1.000 pass, target K=25 at N=45
+undecided (between the letter p95 20 and the word p05 32); C2 control failed, not run. status.json target row added (stage 2). Too short to
+read alone: HEID-1621E queued on account 2 (cap 5) for design_prior, the rest of inv. 6021 at stride 3 combined, and key/decipherment
+candidates (NA finding aid, Resolutien index). Account 1 paused; owner page empty; FDR not reported sent; no owner word on halt.
