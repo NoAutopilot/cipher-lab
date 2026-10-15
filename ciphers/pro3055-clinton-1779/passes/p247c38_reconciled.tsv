@@ -1,0 +1,205 @@
+# CLIN-247 (15 Oct 2026): B.147 p.247 cols 3-8 (H-1649 Image 891; BL Add MS 21807 fo.210), cipher of item 3077 (Clinton to Haldimand, 18 Oct 1780).
+# Two blind Sonnet passes p247c38_passA.tsv / _passB.tsv, one crop per column (no seam); settled by the worker on two zoom strips (note column).
+# kind: letter (L-P or -P; 1780 convention), clear, or mark. Two cells both passes merged were split on the zoom (col4 -4, col5 -7), graded H as clearly written.
+col	idx	kind	entry	underline	grade	passA	passB	note
+col3	1	letter	14-3	n	H	14-3/n	14-3/n	
+col3	2	letter	-4	n	H	-4/n	-4/n	
+col3	3	letter	-5	n	H	-5/n	-5/n	
+col3	4	letter	-6	n	H	-6/n	-6/n	
+col3	5	letter	-7	y	H	-7/y	-7/y	
+col3	6	letter	13-7	n	H	13-7/n	13-7/n	A notes 7 or 1; zoom: a crossed 7
+col3	7	letter	-8	n	H	-8/n	-8/n	
+col3	8	letter	-14	y	H	-14/n	-14/y	A n / B y; zoom: a ruled stroke under -14 (clear word follows, ends the run either way)
+col3	9	clear	induced	n		"induced"/n	"induced"/n	
+col3	10	clear	the	y		"the"/y	"the"/y	
+col3	11	letter	7-7	n	H	7-7/n	7-7/n	
+col3	12	letter	-5	n	H	-5/n	-5/n	
+col3	13	letter	1-1	n	H	1-1/n	1-1/n	
+col3	14	letter	-4	n	H	-4/n	-4/n	
+col3	15	letter	4-1	n	H	4-1/n	4-1/n	
+col3	16	letter	-3	y	H	-3/n	-3/y	A n / B y; zoom: rule under -3
+col3	17	letter	8-3	n	H	8-3/n	8-3/n	
+col3	18	letter	-1	y	H	-1/y	-1/y	
+col3	19	letter	4-1	n	H	4-1/n	4-1/n	
+col3	20	letter	2-10	n	H	2-10/n	2-10/n	
+col3	21	letter	-12	y	H	-12/y	-12/y	
+col3	22	letter	6-6	n	H	6-6/n	6-6/n	
+col3	23	letter	-23	n	H	-23/n	-23/n	
+col3	24	letter	-12	n	H	-12/n	-12/n	
+col3	25	letter	-15	n	H	-15/n	-15/n	
+col3	26	letter	-13	y	H	-13/y	-13/y	
+col3	27	clear	their	y		"their"/y	"their"/y	
+col3	28	letter	7-1	n	H	7-1/n	7-1/n	
+col3	29	letter	-3	n	H	-3/n	-3/n	
+col3	30	letter	-3	n	H	-3/n	-3/n	
+col3	31	letter	-5	n	H	-5/n	-5/n	
+col3	32	letter	-18	n	H	-18/n	-18/n	
+col3	33	letter	1-3	n	H	1-3/n	1-3/n	
+col3	34	letter	2-1	y	H	2-1/y	2-1/y	
+col4	1	clear	on	y		"on"/n	"on"/y	clear word; A n / B y
+col4	2	letter	5-3	n	H	5-3/n	5-3/n	
+col4	3	letter	-4	n	H	-4/n	-4/n	
+col4	4	letter	4-2	n	H	4-2/n	4-2/n	
+col4	5	letter	-3	y	H	-3/y	-3/y	
+col4	6	letter	1-3	n	H	1-3/n	1-3/n	
+col4	7	letter	4-1	n	H	4-1/n	4-1/n	
+col4	8	letter	3-1	n	H	3-1/n	3-1/n	
+col4	9	letter	2-6	n	H	2-6/n	2-6/n	
+col4	10	letter	-5	n	H	-5/n	-5/n	
+col4	11	clear	at least	y		"at least"/y	"at least"/y	
+col4	12	letter	5-2	n	H	5-2/n	5-2/n	
+col4	13	letter	-1	n	H	-1/n	-1/n	
+col4	14	letter	2-7	y	H	2-7/y	2-7/y	
+col4	15	letter	5-3	n	H	5-3/n	5-3/n	
+col4	16	letter	-4	n	H	-4/n	-4/n	
+col4	17	letter	-5	y	H	-5/y	-5/y	
+col4	18	letter	1-3	n	H	1-3/n	1-3/n	
+col4	19	letter	-5	n	H	-5/n	-5/n	
+col4	20	letter	-4	n	H	-4/n	-4/n	
+col4	21	letter	-8	n	H	-8/n	-8/n	
+col4	22	letter	2-3	n	H	2-3/n	2-3/n	
+col4	23	letter	6-3	n	H	6-3/n	6-3/n	
+col4	24	letter	4-4	y	H	4-4/y	4-4/y	
+col4	25	clear	The	n		"The"/n	"The"/n	
+col4	26	clear	English	n		"English"/n	"English"/n	
+col4	27	clear	Fleet with	y		"Fleet with"/y	"Fleet with"/y	
+col4	28	letter	2-7	n	H	2-7/n	2-7/n	
+col4	29	letter	-8	n	H	-8/n	-8/n	
+col4	30	letter	-6	n	H	-6/n	-6/n	
+col4	31	letter	-7	n	H	-7/n	-7/n	
+col4	32	letter	18-17	n	H	18-17/n	18-17/n	
+col4	33	letter	-10	n	H	-10/n	-10/n	
+col4	34	letter	-4	n	H	-	-	worker 2x zoom: -10, -4, -13 three rows; both passes read "-13 (possibly -4 or 13)" as one cell
+col4	35	letter	-13	y	H	-13/y	-13/y	see the row above
+col5	1	clear	and	y		"and"/y	"and"/y	
+col5	2	letter	9-8	n	H	9-8/n	9-8/n	
+col5	3	letter	-11	n	H	-11/n	-11/n	
+col5	4	letter	-1	n	H	-1/n	-1/n	
+col5	5	letter	-7	n	H	-	-	worker 3x zoom: -7 and -6 are two rows each with its own dash; both passes read one cell "-6 (possibly -76)"
+col5	6	letter	-6	n	H	-6/n	-6/n	see the row above
+col5	7	letter	-8	y	H	-8/y	-8/y	
+col5	8	letter	4-2	n	H	4-2/n	4-2/n	
+col5	9	letter	-3	y	H	-3/y	-3/y	
+col5	10	letter	7-8	n	H	7-8/n	7-8/n	
+col5	11	letter	-7	n	H	-7/n	-7/n	
+col5	12	letter	-7	n	H	-7/n	-7/n	both note 7 or 2; zoom: a crossed 7
+col5	13	letter	-11	n	H	-11/n	-11/n	
+col5	14	letter	9-16	n	H	9-16/n	9-16/n	
+col5	15	letter	11-5	n	H	11-5/n	11-5/n	
+col5	16	letter	-6	y	H	-6/y	-6/y	
+col5	17	clear	But	n		"But"/n	"But"/n	
+col5	18	clear	the	y		"the"/y	"the"/n	clear word; A y / B n
+col5	19	letter	2-6	n	H	2-6/n	2-6/n	
+col5	20	letter	5-1	n	H	5-1/n	5-1/n	
+col5	21	letter	20-33	n	H	20-33/n	20-33/n	
+col5	22	letter	-35	y	H	-35/y	-35/y	
+col5	23	letter	5-2	n	H	5-2/n	5-2/n	
+col5	24	letter	4-1	n	H	4-1/n	4-1/n	
+col5	25	letter	2-3	n	H	2-3/n	2-3/n	
+col5	26	letter	-5	n	H	-5/n	-5/n	
+col5	27	letter	-9	y	H	-9/y	-9/y	
+col5	28	clear	which	n		"which"/n	"which"/n	
+col5	29	clear	is much	y		"is much"/y	"is much"/y	
+col5	30	letter	14-12	n	H	14-12/n	14-12/n	
+col5	31	letter	-13	n	H	-13/n	-13/n	
+col5	32	letter	-10	n	H	-10/n	-10/n	
+col5	33	letter	-1	n	H	-1/n	-1/n	
+col5	34	letter	-16	n	H	-16/n	-16/n	
+col5	35	letter	-17	y	H	-17/y	-17/y	
+col6	1	clear	has	n		"has"/n	"has"/n	
+col6	2	clear	not	y		"not"/y	"not"/y	
+col6	3	letter	7-19	n	H	7-19/n	7-19/n	
+col6	4	letter	-15	n	H	-15/n	-15/n	
+col6	5	letter	1-13	n	H	1-13/n	1-13/n	
+col6	6	clear	made	y		"made"/y	"made"/y	
+col6	7	letter	7-11	n	H	7-11/n	7-11/n	
+col6	8	letter	-3	n	H	-3/n	-3/n	
+col6	9	letter	-2	y	H	-2/y	-2/y	
+col6	10	letter	3-1	n	H	3-1/n	3-1/n	
+col6	11	letter	1-3	n	H	1-3/n	1-3/n	
+col6	12	letter	-3	n	H	-3/n	-3/n	
+col6	13	letter	-4	n	H	-4/n	-4/n	
+col6	14	letter	2-10	n	H	2-10/n	2-10/n	
+col6	15	letter	-7	n	H	-7/n	-7/n	
+col6	16	letter	-16	n	H	-16/n	-16/n	
+col6	17	letter	9-10	n	H	9-10/n	9-10/n	
+col6	18	letter	-5	n	H	-5/n	-5/n	
+col6	19	letter	-6	y	H	-6/y	-6/y	
+col6	20	letter	3-1	n	H	3-1/n	3-1/n	
+col6	21	letter	6-3	y	H	6-3/y	6-3/y	
+col6	22	clear	Expedition	y		"Expedition"/y	"Expedition"/y	
+col6	23	letter	5-1	n	H	5-1/n	5-1/n	
+col6	24	letter	-2	y	H	-2/n	-2/y	A n / B y; zoom: rule under -2
+col6	25	letter	7-12	n	H	7-12/n	7-12/n	
+col6	26	letter	-15	n	H	-15/n	-15/n	
+col6	27	letter	-8	n	H	-8/n	-8/n	
+col6	28	letter	-7	y	H	-7/y	-7/y	
+col6	29	clear	3000	y		"3000"/y	"3000"/y	
+col6	30	letter	9-25	n	H	9-25/n	9-25/n	
+col6	31	letter	-26	n	H	-26/n	-26/n	
+col6	32	letter	-27	y	H	-27/y	-27/y	
+col7	1	letter	2-4	n	H	2-4/n	2-4/n	
+col7	2	letter	-10	n	H	-10/n	-10/n	
+col7	3	letter	4-2	n	H	4-2/n	4-2/n	
+col7	4	letter	-1	n	H	-1/n	-1/n	
+col7	5	letter	11-5	n	H	11-5/n	11-5/n	
+col7	6	letter	-6	y	H	-6/y	-6/y	
+col7	7	letter	5-2	n	H	5-2/n	5-2/n	
+col7	8	letter	1-5	n	H	1-5/n	1-5/n	
+col7	9	letter	-11	n	H	-11/n	-11/n	
+col7	10	letter	-6	y	H	-6/y	-6/y	
+col7	11	letter	5-4	n	H	5-4/n	5-4/n	
+col7	12	letter	-5	n	H	-5/n	-5/n	
+col7	13	letter	1-12	n	H	1-12/n	1-12/n	
+col7	14	letter	2-6	n	H	2-6/n	2-6/n	
+col7	15	letter	-5	y	H	-5/y	-5/y	
+col7	16	clear	two	y		"two"/y	"two"/y	
+col7	17	letter	11-6	n	H	11-6/n	11-6/n	
+col7	18	letter	-8	n	H	-8/n	-8/n	
+col7	19	letter	16-27	n	H	16-27/n	16-27/n	
+col7	20	letter	11-13	y	H	11-13/y	11-13/y	
+col7	21	letter	9-19	n	H	9-19/n	9-19/n	
+col7	22	letter	-23	n	H	-23/n	-23/n	
+col7	23	letter	-1	y	H	-1/y	-1/y	
+col7	24	letter	9-2	n	H	9-2/n	9-2/n	
+col7	25	letter	-1	n	H	-1/n	-1/n	
+col7	26	letter	-7	y	H	-7/y	-7/y	
+col7	27	letter	8-3	n	H	8-3/n	8-3/n	
+col7	28	letter	-4	n	H	-4/n	-4/n	
+col7	29	letter	-5	y	H	-5/y	-5/y	
+col7	30	letter	9-5	n	H	9-5/n	9-5/n	
+col7	31	letter	5-4	n	H	5-4/n	5-4/n	
+col7	32	letter	-5	n	H	-5/n	-3/n	A -5 / B -3; zoom: -5 (flag of the 5)
+col7	33	letter	2-4	n	H	2-4/n	2-4/n	
+col7	34	letter	-10	n	H	-10/n	-10/n	
+col7	35	letter	1-3	n	H	1-3/n	1-3/n	
+col7	36	letter	-4	n	H	-4/n	-4/n	
+col7	37	letter	20-5	n	H	20-5/n	20-5/n	
+col7	38	letter	-36	y	H	-36/y	-36/y	
+col8	1	clear	Under	y		"Unless"/y	"Under"/y	clear word; A "Unless" / B "Under"; zoom "Under" (M as a word, not scored)
+col8	2	letter	6-1	n	H	6-1/n	6-1/n	
+col8	3	letter	-2	n	H	-2/n	-2/n	
+col8	4	letter	-3	n	H	-3/n	-3/n	
+col8	5	letter	-4	n	H	-4/n	-4/n	
+col8	6	letter	-5	n	H	-5/n	-5/n	
+col8	7	letter	-6	n	H	-6/n	-6/n	
+col8	8	letter	-7	y	H	-7/y	-7/y	
+col8	9	letter	4-1	n	H	4-1/n	4-1/n	
+col8	10	letter	5-5	n	H	5-5/n	5-5/n	
+col8	11	letter	4-3	n	H	4-3/n	4-3/n	
+col8	12	letter	-1	n	H	-1/n	-1/n	
+col8	13	letter	-2	n	H	-2/n	-2/n	
+col8	14	letter	5-5	y	H	5-5/y	5-5/y	
+col8	15	clear	to favor	n		"to favor"/n	"to favor"/n	
+col8	16	clear	the	y		"the"/y	"the"/y	
+col8	17	letter	5-1	n	H	5-1/n	5-1/n	
+col8	18	letter	1-3	n	H	1-3/n	1-3/n	
+col8	19	letter	-4	n	H	-4/n	-4/n	
+col8	20	letter	-5	n	H	-5/n	-5/n	
+col8	21	letter	2-10	n	H	2-10/n	2-10/n	
+col8	22	letter	-9	n	H	-9/n	-9/n	
+col8	23	letter	1-7	n	H	1-7/n	1-7/n	
+col8	24	letter	-11	n	H	-11/n	-11/n	
+col8	25	letter	-12	n	H	-12/n	-12/n	
+col8	26	letter	-9	y	H	-9/y	-9/y	
+col8	27	mark	4/	n		"9/"/n	"4/"/n	closing scrawl, A "9/" / B "4/"; not a figure cell (kind mark)
