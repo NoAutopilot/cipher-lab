@@ -1,0 +1,21 @@
+# OBRED-6019 sheet calls, written before key.json is opened. Format: sheet<TAB>CTRL-CIPHER<TAB>CTRL-PLAIN<TAB>CTRL-PS<TAB>numeral-hit tiles<TAB>notes
+1	F	I	C	none	Dutch letter openings and prose (A,B,E,H,K); D letter end with signature and Post data paragraph in prose; G,J blank/near-blank openings; L letter with grey card
+2	E	J	B	none	C short Dutch letter with date (January 1619) and blank facing; D blank opening with folded slip; F address leaf + letter opening; K,L letter ends signed Brederode with paraph, January 1619; others Dutch prose
+3	F	J	L	none	A letter end signed Brederode with paraph + opening dated Feb 1619; B,H letter openings (H with folded address slip); E opening with short paragraphs; others Dutch prose
+4	F	G	E	none	A,D address leaves with seals + letter openings (D dated Mar 1619); B blank opening; C short Dutch letter dated Jan 1619 + blank; H Italian copy (W. N.) with marginal notes; I,L Italian prose (avvisi/copies); J,K Dutch prose
+5	F	I	D	none	G,H,L letter ends signed Brederode (L with paraph), March 1619, blank facing; C blank opening; A,B,E,J,K Dutch prose
+6	A	D	B	none	E,F letter ends signed Brederode (F with paraph), March 1619; G,H,L letter openings (H,L with address leaves and seals, March/April 1619); I blank opening; C,J,K Dutch prose
+7	B	C	A	none	D,F,I address leaves with seals + openings (April 1619); H letter end signed Brederode, 7 April 1619; J Latin prose + blank; L Latin heading and prose; E,G,K Dutch prose
+8	L	D	H	none	C,F,I address leaves + openings (April/May 1619; F with grey card); E French prose; J Italian prose with signature; A,B,G,K Dutch prose
+9	E	H	I	none	A Copia heading + address note; G address slip + inserted German/Dutch copy; D Dutch letter end with signatures and notes in prose; J French prose; B,C,F,K,L Dutch prose
+10	I	F	G	none	A French prose; B letter end signed Brederode with paraph, May 1619; E,J,K pieces headed "Exhib." (J,K with Latin/French text; K French in numbered articles with margin strokes, prose); E address leaf + opening with grey cards; C,D,H,L Dutch prose
+11	K	A	L	none	B,H,J address leaves with seals + openings (May/June 1619); E French letter with signatures; F,G address notes + Dutch prose; C,D,I Dutch prose
+12	J	I	G	none	B French letter headed "Extraict ... 19 avril" + blank facing; C,F Dutch letters with seal traces; E letter end signed Brederode, May 1619, blank facing; K address leaf with seal + opening headed "Exhib. ... Maij 1619"; A,D,H,L Dutch prose
+13	B	C	L	none	E address note + opening; F piece headed "Exhib. ... Maij 1619"; G,H,J Dutch copies headed "N. ..."; K French prose with marginal numbered items (prose, not code); A,D,I Dutch/French prose
+14	L	H	A	none	D letter end with signature + blank; E,F address leaves (F with seal) + openings, June 1619; J address note + prose; K letter end signed Brederode + address note; B,C,G,I Dutch prose
+15	K	B	E	none	A address leaf + opening (July 1619); C French letter; F Italian prose; G letter end signed, July 1619, blank facing; H Copie heading + address leaf with seal; L Dutch prose with a line struck through (ink bar, not numerals); D,I,J Dutch prose
+16	I	F	G	none	B,C address leaves (B with seal) + openings; D address note "Copie" + Dutch prose; E letter end signed Brederode with paraph, Aug 1619, blank facing; J,K Dutch prose headed "Copie ..."; L Dutch prose + blank; A,H Dutch prose
+17	I	E	D	none	F,G,H German/Dutch prose in numbered articles (article numbers in margin, figures in a list, not code groups); K list of names in numbered articles (margin numbers 6x); B,C German prose (C dated Aug 1619); J letter end signed Brederode, Aug 1619; L French prose + blank; A German prose
+18	E	H	L	none	A letter end signed (paraph); B blank opening; F address leaf + opening dated Sept 1619; J German letter headed with date (Aug 1619); K Dutch prose in a looser hand; C,D,G,I Dutch/German prose
+19	B	I	A	none	D letter end signed Brederode with paraph, Sept 1619, blank facing; E letter end signed Brederode with a short note in prose at foot + blank facing; G,H address leaves (G with grey card) + opening, Sept/Oct 1619; L letter end with Latin address note + opening; C,F,J,K Dutch prose
+# stopped after sheet 19 by the PREREG stop rule (80% of cap priced from OBRED-6018); sheets 20-25 (scans 514-649 at stride 3, 46 scans) not read
