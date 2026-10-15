@@ -51,3 +51,24 @@ A secondary run, reported but NOT gating, repeats tests 1-2 with block E taken f
 tokens by draft file as well as line and position (o tokens: 78 = 6 from the f91 E draft + 72 others). Sort jobs: job1 = blocks A, D, F
 (40 tokens), job2 = blocks B, C, E (38 tokens). Each sorter sees each line image with the line's reader LABEL sequence (no values) in
 which every o to sort is replaced by its opaque id, so it can find the sign; this is labels-only, no values, no gloss.
+
+## Addendum 2 -- MAT-O3X re-sort (13:2x UTC 15 Oct 2026 by `date -u`, before the re-sort and before any score)
+Job MAT-O3X (LANE DEFAULT-A4-1236-15): second attempt at this split. **Gate, statistic, control, per-shape rule and grade rule above are
+unchanged; `osplit/mat_osplit.py` is re-run unchanged** on a new answer file. Only the sort input changes:
+- **Crops:** `osplit/o3x_crops.py` cuts one per-token window per token of `sort_tokens.tsv` (all 78): the line strip (s1/s2 joined at
+  their manifest offsets), sign columns from the column ink profile (read-free), the token's column estimated proportionally from its
+  draft position, window = estimate +- 4 columns, upscaled 3x, no marker. Images in scratch only.
+- **Join fix:** the 6 tokens of the MAT-F91 first-pass E draft (o0xx with draft `f91`, lines E1-E3) now get strips from
+  `regen_f91.sh`'s own `f92r_ciE_L0n` crops (the line images MAT-OSPLIT's join never wrote). Those E crops are offset left (MAT-F91), so
+  some may miss the token; such a token is X.
+- **Locating the token:** each crop comes with the reader LABEL sequence of draft positions p-4..p+4 with the target as `[id]` (labels
+  only, no values, no gloss), as MAT-OSPLIT gave the full line label sequence.
+- **Exemplars:** shape B = three windows of the committed f.78v chart line 2 (`images/f78v_79r/ref/`, positions 15, 20, 29, the o's
+  MAT-BOX eyed as B), with their label context. Shape A: no exemplar image (the committed f.110 line crops are 53 px high, and the
+  f.110 1:18 position was not re-located within cap); A is described in MAT-BOX's words only ("a small plain closed round o"). This is a
+  deviation from the registered "two exemplar crops per shape", declared now, before the sort.
+- **Sorters:** two Sonnet calls (job1 = draft f91 blocks A, D + f91c F; job2 = f91 B, E + f91c C + f91e E; <= 40 crops each), answer
+  A / B / X per id with a confidence (high/low). Output `osplit/sort_answers_o3x.tsv` (verbatim); `mat_osplit.py` reads it via the
+  `--answers` option added for this job (default unchanged: `sort_answers.tsv`). Low-confidence A/B answers count as given (as MAT-OSPLIT's did).
+- **Rule 3:** if the split FAILs again, it is logged untested-by-this-instrument (machine blind sort) and the o split goes to the owner's
+  sign sorter; no third machine attempt.

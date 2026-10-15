@@ -8,6 +8,8 @@ aligns every f.91 block alone with o masked (f91/mat_ka.py align(masked_h='o')),
  2. per shape: MAT-KA's verdict rule (200-draw label-shuffle null, power code at the shape's n, 20 seeds).
 Gating run = MAT-KA's reader unchanged (block E from both drafts); secondary run = block E from f91e only (addendum 1).
 Writes osplit/mat_osplit_result.tsv. Usage: python3 mat_osplit.py [--check]
+MAT-O3X (PREREG addendum 2): --answers FILE (default sort_answers.tsv) reads another sort; its result goes to
+mat_osplit_result_<FILE stem minus 'sort_answers'>.tsv, e.g. --answers sort_answers_o3x.tsv -> mat_osplit_result_o3x.tsv.
 """
 import collections, csv, os, random, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -18,7 +20,9 @@ CAND = {'oA': 'i', 'oB': 'a'}
 SPLITS = 1000
 
 shape = {}
-ans = {r['id']: r['shape'].strip().upper() for r in csv.DictReader(open(os.path.join(HERE, 'sort_answers.tsv')), delimiter='\t')}
+ANS = sys.argv[sys.argv.index('--answers') + 1] if '--answers' in sys.argv else 'sort_answers.tsv'
+SUF = os.path.splitext(os.path.basename(ANS))[0].replace('sort_answers', '')
+ans = {r['id']: r['shape'].strip().upper() for r in csv.DictReader(open(os.path.join(HERE, ANS)), delimiter='\t')}
 for r in csv.DictReader(open(os.path.join(HERE, 'sort_tokens.tsv')), delimiter='\t'):
     s = ans.get(r['id'], 'X')
     if s in ('A', 'B'): shape[(r['draft'], r['line'], int(r['position']))] = 'o' + s
@@ -92,7 +96,7 @@ def run(e_only):
 def main():
     rows = run(False) + run(True)
     res = 'run\tlabel\tstatistic\tnull_mean/p95/max\tdetail\tpower\tgate\tverdict\n' + ''.join('\t'.join(map(str, r)) + '\n' for r in rows)
-    rp = os.path.join(HERE, 'mat_osplit_result.tsv')
+    rp = os.path.join(HERE, f'mat_osplit_result{SUF}.tsv')
     if '--check' in sys.argv:
         st = not os.path.exists(rp) or open(rp).read() != res
         print('STALE' if st else 'OK'); sys.exit(1 if st else 0)
