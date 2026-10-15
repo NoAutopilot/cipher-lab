@@ -1,0 +1,56 @@
+{
+ "S_condition": false,
+ "context_chars": 12,
+ "control": {
+  "e0.5": {
+   "gate": false,
+   "holders": 335,
+   "interval_hit": 0.8134,
+   "leads": 493,
+   "precision_holders": 0.5821,
+   "precision_holders_len5": 0.6198,
+   "precision_testable": 0.5302,
+   "right_hold_rate": 0.9653,
+   "right_testable": 202,
+   "sims": 20,
+   "testable": 381,
+   "wrong_hold_rate": 0.7821
+  },
+  "e0.75": {
+   "gate": false,
+   "holders": 342,
+   "interval_hit": 0.7317,
+   "leads": 492,
+   "precision_holders": 0.5058,
+   "precision_holders_len5": 0.5385,
+   "precision_testable": 0.4545,
+   "right_hold_rate": 0.9611,
+   "right_testable": 180,
+   "sims": 20,
+   "testable": 396,
+   "wrong_hold_rate": 0.7824
+  },
+  "gate": "BELOW GATE"
+ },
+ "emission": {
+  "edge": -3.0,
+  "inside": 0.0,
+  "other": -7.0
+ },
+ "lm": "char 4-gram, nl16 x5 + the letter clear prose (679 words), interp 0.4/0.3/0.2/0.1, add-0.1",
+ "target": {
+  "h": 0.8421,
+  "holders": 16,
+  "leads": 20,
+  "null_defined": 100,
+  "null_draws": 100,
+  "null_mean": 0.5786,
+  "null_mean_leads": 18.9,
+  "null_mean_testable": 16.71,
+  "null_p95": 0.7647,
+  "p": 0.01,
+  "pass": true,
+  "testable": 19
+ },
+ "tau_bits_per_pin": 3.0
+}

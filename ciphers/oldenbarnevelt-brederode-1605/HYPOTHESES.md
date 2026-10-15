@@ -28,3 +28,7 @@ Application to no. 92/187: interval reading only, grade M (`obred187/band/readin
 | Hypothesis (OBRED-SEG, 15 Oct 2026, PREREG obred187/PREREG-OBREDSEG.md) | Control | Control number | Target number | Verdict |
 |---|---|---|---|---|
 | no. 92/187 band intervals segment into nl16 Dutch words above chance | synthetic band text at the target's sub-run lengths (20 sims, held-out nl16 file, e=0.25) vs its own shuffled-band null; target vs shuffled-band (200) and order (200) nulls | control beats null 20/20, word precision 0.577, recall 0.590 (interval hit 0.92); ungated e=0.75 (hit 0.71): 18/20, precision 0.538 | I 320.2 vs shuffled-band p95 238.2 (mean 202.0), order p95 232.9 (mean 181.6), p 0.00 both | PASS (M); 20 words of >= 4 letters, all grade M (len>=5 precision 0.61 < 0.80, no S) |
+
+| Hypothesis (OBRED-CTRY, 15 Oct 2026, PREREG obred187/PREREG-OBREDCTRY.md) | Control | Control number | Target number | Verdict |
+|---|---|---|---|---|
+| OBRED-SEG's word leads hold at every other occurrence of their codes under a char 4-gram context scorer | synthetic band text at the target's sub-run lengths, e=0.5 and 0.75, 20 sims each; gate: right-lead hold >= 0.60 and precision gain among holders >= 0.10 | e=0.5: right hold 0.965, wrong 0.782, precision 0.530 -> 0.582; e=0.75: right 0.961, wrong 0.782, precision 0.455 -> 0.506 -- BELOW GATE | 16/19 testable hold, h 0.842 vs shuffled-band p95 0.765 (p 0.01, 100 draws) | non-test at this N (control cannot separate right from wrong leads); all leads stay M; hondert/middel/allen break (ungated) |

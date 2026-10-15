@@ -2244,3 +2244,54 @@ Read so far: no. 92 and the 187 postscript as band intervals (OBRED-BAND; 72 of 
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
 - [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
 Verdict: keep going: 3 internal gaps; the no. 92 key is not at the openings of the seven stukken of NA 1.01.02 inv. 9459 and the S.G. secret register inv. 4562 has no entry between 29 Aug 1619 and 7 Feb 1620 (OBRED-NA, M); cheapest next: 9459 even scans 2-16 (~$1), then the process series 9450-9458/9460 (~$2); the context-scored --try pass is running as OBRED-CTRY
+
+## OBRED-CTRY (15 Oct 2026, 11:19-11:3x UTC by date -u, account 2, Opus; for LANE DEFAULT-A2-1109-15)
+
+Brief: a context-scored --try pass on OBRED-SEG's 20 word leads: each lead's implied code->letter assignment tested at every other
+occurrence of the same codes in no. 92/187, against a shuffled-band null and a synthetic-band control at the real error level that must
+accept a known right word before any target lead counts. Disk and CPU only, 0 requests.
+
+- Prior-work step: `prior_work.py ... --step-type decode` exit 4 (two own-lane claim LEADs -- OBRED-NA's covers the NA key search, not
+  this test -- LOOK, 2 UNCHECKED, 2 UNCHECKED-NET); the five non-net rows recorded CLEAR in `prior-work.tsv` (adhoc-2a7d17). No earlier
+  context or every-occurrence test (OBRED-TRY ran --try on glossed codes only; OBRED-SEG ran the segmentation).
+- `decode_key.py --try` does not apply (no key.tsv / decode.json: letters are band intervals); the brief's fallback lattice scorer was used.
+- PREREG `obred187/PREREG-OBREDCTRY.md` pushed in its own commit (0bbd2682b) before any statistic. Script `obred187/ctry/ctry.py`
+  (`--check` up to date), outputs `ctry_gate.json`, `ctry_leads.tsv`. Scorer: char 4-gram (nl16 x5 + the letter's own 679 clear words),
+  Viterbi over each sub-run with the clear words before/after as context; a lead holds if pinning its letters at every other occurrence
+  costs <= 3 bits per pinned token. The script asserts the 20 leads are OBRED-SEG's own decode of the same intervals.
+- **Synthetic control: BELOW GATE (registered: right-lead hold >= 0.60 and holding raises precision by >= 0.10, at both e).**
+  e = 0.5 (interval hit 0.81): right leads hold 0.965 (n 202), wrong leads hold 0.782; precision 0.530 -> 0.582 among holders (+0.052).
+  e = 0.75 (hit 0.73): right 0.961 (n 180), wrong 0.782; precision 0.455 -> 0.506 (+0.051). The test accepts a known right word but
+  also accepts most wrong ones: the 3-bit tolerance plus single-letter pool intervals (a glossed code's pin equals its interval) let
+  almost any in-interval assignment through. The per-lead random-assignment null says the same (random in-interval letters hold at
+  1.000 for 11 of the 19 testable leads).
+- **Target (read as a non-test at this N, per the PREREG):** 16 of 19 testable leads hold (h 0.842) vs shuffled-band null mean 0.579,
+  p95 0.765, p 0.01 (100 draws) -- above the null, but the control shows holding barely separates right from wrong, so no lead gains
+  from it. "staet" is untestable (no code recurs). All 20 stay M; nothing reaches S; nothing went into key.tsv (none exists).
+- **Breaks (ungated observation, not a refutation):** "hondert" (code 200 read h; OBRED-BAND's interval for 200 is i, and the lead
+  "licht" reads 200 = i -- a direct cross-lead conflict; d 11.3 bits in sub-run 3), "middel" (d 9.8 and 9.2 bits in sub-runs 1 and 6),
+  "allen" (d 4.4 bits in sub-run 13). In the control a right lead breaks 4% of the time and a wrong one 22%, so a break is about
+  5x likelier for a wrong lead; at precision ~0.5 that puts these three near 0.15 right, a lead's estimate, not a registered statistic.
+  "drie [hondert]" fits the clear context ("dat hij ... uyt sijn voornempste [ondersaten] lichten mach") and may be "drie" + another
+  numeral or a band-edge error at 200 (not tested here).
+- Where it was not found, and the limits: one LM (char 4-gram, nl16 prose + 679 clear words), one tolerance (3 bits per pin), 13 short
+  sub-runs; recurring codes inside the 92/187 letter runs are few, so most tests rest on one or two other occurrences.
+
+## Remaining gaps (OBRED-CTRY, 15 Oct 2026)
+Read so far: no. 92 and the 187 postscript as band intervals (OBRED-BAND; 72 of 180 one-letter) and, by constrained segmentation, 20 nl16 words of >= 4 letters covering 112 of 143 letter tokens, all M (OBRED-SEG); the every-occurrence context test holds 16 of 19 testable leads but its synthetic control is below gate (wrong leads hold 0.78 vs right 0.96), so it adds no grade (OBRED-CTRY); "hondert", "middel", "allen" break (ungated); 37 name codes unread; inv. 6019 scans 555-556 carry 81 groups (58 H-read) with 45 C-graded period glosses; the 2 Oct 1619 letter puts Brederode's own cipher last in Oldenbarnevelt's hands (OBRED-OCT2, M)
+- no. 92 and the 187 postscript beyond M word leads - blocker: not-attempted; band intervals, segmentation and the every-occurrence context test are all done with controls and no lead reaches S (OBRED-BAND, OBRED-SEG, OBRED-CTRY: control below gate); next: a joint band-monotonicity check of all lead assignments together (an alphabetical homophonic list means code order implies letter order, so leads contradicting each other on codes outside the pool are caught) with the same synthetic control, PREREG first, ~$2
+- the no. 92 key ("mijn cyfer ... in des Advocaets Barnevelt handen") - blocker: not-attempted; not in 3.01.14 (R9-NAKEY), not at the opening of any of the seven stukken of 1.01.02 inv. 9459, and the S.G. secret register inv. 4562 has no entry between 29 Aug 1619 and 7 Feb 1620 (OBRED-NA); next: 9459 even scans 2-16 at 900 px (8 requests, ~$1), then the remaining process series 1.01.02 inv. 9450-9458/9460 by stride, ~$2
+- the deciphered memorie of res. 1779 (a Maurits-cipher text, OBRED-OCT2 inference) - blocker: needs-physical-access; KHA A13 (Maurits) inventory not served to scripts and the archive is research-request only; owner-side step: a KHA research request, not queued
+- the later liassen NA 1.01.02 inv. 6020-6024 and the 6019 stride-1 fill after 565 - blocker: not-attempted; outside this brief; next: a stride-3 screen of inv. 6020 (~$4)
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A): no numeral block, no Brederode, Stettin or Heidelberg heading (M)
+
+## Escalation (OBRED-CTRY, 15 Oct 2026)
+- [x] siblings: scan 187 shares 26 values with no. 92 (OBRED-187); inv. 6019 scans 555-556 (Oggersheim, 14 Oct 1619) share 42 values with no. 92/187, clearing the shuffled-code control (OBRED-556); the letter's start (554) carries no groups (OBRED-552)
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187); the 1619 letter's prose and margin summaries read in part (OBRED-556); 515-554 and 558-565 seen by eye (OBRED-MEM, OBRED-552, OBRED-549, OBRED-KEYHUNT); the 2 Oct 1619 letter 528-530 read in full (OBRED-OCT2)
+- [ ] known-keys: the 10 Aug 1598 Van Aerssen slip, Buzanval inv. 2028, DECODE 1600s and Palatine/Hessian keys screened (R10-OBRED98, R9-OBRED4, OLD-DKEY, R8-OBRED2, R9-OBRED3); Brederode's own cipher last in Oldenbarnevelt's hands (OBRED-OCT2); not at the openings of 1.01.02 inv. 9459's seven stukken, and no secret resolution 29 Aug 1619 - 7 Feb 1620 (OBRED-NA); next: 9459 even scans 2-16, ~$1, then 9450-9458/9460 by stride, ~$2
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII and NR 4 carry no key or decipherment note (OBRED-DP, OBRED-KEYHUNT)
+- [ ] key-rebuild: band intervals pass a held-out leaf check (OBRED-BAND), segment into 20 nl16 word leads above both nulls (OBRED-SEG, M); the every-occurrence context test's control is below gate, a non-test (OBRED-CTRY: wrong leads hold 0.78, right 0.96, precision +0.05); next: a joint band-monotonicity check of all lead assignments with the same synthetic control, ~$2
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
+- [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
+Verdict: keep going: 3 internal gaps; the every-occurrence context test holds 16 of 19 testable leads (h 0.84 vs shuffled-band p95 0.76, p 0.01) but its synthetic control is below gate (wrong leads hold 0.78, right 0.96), a non-test that leaves all 20 leads M, and "hondert" conflicts with "licht" on code 200 (OBRED-CTRY); the no. 92 key is not at the openings of NA 1.01.02 inv. 9459 nor in the secret register 29 Aug 1619 - 7 Feb 1620 (OBRED-NA, M); cheapest next: 9459 even scans 2-16 (~$1), then a joint band-monotonicity check of the leads (~$2)
