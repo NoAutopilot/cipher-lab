@@ -59,3 +59,34 @@ consonant-skeleton model (~3)". Read MCC-WORD and HYPOTHESES.md first. Build the
 tools/families/ family with an offline test), write PREREG-MCC-SKEL.md (gate, matched control at the target's own N, K and design, shuffled
 target) and commit it before any target run. Control first (tools/family_run.py order); target only if the control meets its gate. Both
 numbers in HYPOTHESES.md. NOTES "## MCC-SKEL", gaps + Verdict, gaps_check.
+
+## Wave 2 (02:4x UTC 15 Oct)
+Wave 1 ran 1.5-1.9x cap on three of six jobs (exemplar and PDF reads): price every look, and stop at 80% of cap. Intake gate 02:4x UTC
+(exit 0): kaliningrad-2015, erba-2006 (the other two folders passed at 02:1x).
+
+### CLIN-SIB2 (Opus, cap 5, box 75 min, image-uab.canadiana.ca <= 20): pro3055-clinton-1779 finish 3050 (p.244 / p.242 cols 4-6)
+Verdict: "the remaining sibling cipher pages (p.244 / p.242 cols 4-6 finish 3050; p.247 cols 3-8 for 3077), ~$3-4.5 a page". Exactly CLIN-SIB's
+method (read its NOTES section and PREREG 59a9ce589): line crops with tools/iiif_lines.py (command pasted before the first subagent call),
+two blind passes + one reconciliation unit, the same B2 gate and page-permuted-key control. One page (or the p.242 cols 4-6 block) only; do
+not start p.247. No images in git. NOTES "## CLIN-SIB2", gaps + Verdict, gaps_check.
+
+### BAL-C275U4 (Opus, cap 4, box 60 min, openapi.bnf.fr <= 15): baluze167-davaux-1637 c275 u4 split and 7/5/E/x gloss search
+Verdict: "the c275 u4 split and 7/5/E/x gloss search on the rest of the Memoire (~$3)". Read BAL167-C275, BAL-C275WL (if present), BAL-F22R
+(this morning: the same-hand exemplar test and its shuffle control) first. Same instrument, same control; one sign per call, value-free
+crops, price each canvas read. Re-read the c275 run with only the additions that pass (decode.json job, `--check` exit 0). NOTES
+"## BAL-C275U4", gaps + Verdict, gaps_check. Do not start the c283 tail or the remaining f.22r numerals.
+
+### KAL-2ST (Opus, cap 4, box 75 min, disk + CPU only): kaliningrad-2015 two-stage columnar + homophonic instrument
+NOTES next step after KAL-BIG (joint anneal retired, rule 3): "the two-stage solve -- width from the per-width score, column order from the
+sign-adjacency statistic between column ends, then the homophonic anneal on the untransposed stream; its own matched control first". Build
+it as an option on the shared tool KAL-BIG used (or a tools/families/ family with an offline test). Write PREREG-KAL-2ST in HYPOTHESES.md
+and push before any scored run: gate, matched control at N 1066 and the target's own K and widths, seeds, shuffle. Control first; target
+and shuffle only if the control mean meets its gate. Serialize CPU runs (Usage 6: no concurrent background band). Both numbers in
+HYPOTHESES.md. NOTES section, Verdict.
+
+### ERBA-SWAP (Opus, cap 3, box 60 min, disk + CPU only): erba-2006 case-sensitive K=13 design with a swap move
+ERBA-CASE: control below gate on search, not identifiability (true key scores far above the solver's in both failing seeds); "next: swap move
+/ more restarts (~2)". Add a two-class swap move (and keep reassignment) as an option on test4_wordconstrained.py (calls without it
+unchanged), pre-register in HYPOTHESES.md (gate as ERBA-CASE: every control seed >= 0.60; 5 seeds; same word lists) and push before the
+scored run. Control first; target and 10 nulls only if the control passes. This is the second attempt at this design with a changed move
+set; if it fails, log "untested-by-this-tool" and name a different instrument. NOTES section, Verdict.
