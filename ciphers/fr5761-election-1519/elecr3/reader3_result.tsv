@@ -1,0 +1,9 @@
+# ELEC-R3 15 Oct 2026, PREREG 21e2ea4ad (addendum to elecr2/PREREG-ELEC-R2.md); one blind Sonnet reader, crop paths only; native-resolution crops; labels as ELEC-R2
+target	true_identity	reader3_match	conf	own_name_row_in_A	R1_elecverso	R2_elecr2	R3_vs_R1	R3_vs_R2
+T1	Phi (nr.383 Brandebourg)	B / "Garye/Cerye" (phi sign); alt A Brandeborg	2	no	A Brandebourg 5/5	B "Cerye" phi row	disagree	agree
+T2	oXo (nr.383 roy catholicque)	A / Le Ry catholique	3	yes	A Roy catholicque 5/5	A Le Roy catholique	agree	agree
+T3	decoy f.53r Colonien	B / Cleves	2	n/a (not a panel-A row: control clean)	-	B Cleves weak, treat as none	-	agree
+T4	Hbar (nr.383 Treves)	A / Treves	2	yes	A Treves 5/5	none	agree	disagree
+T5	decoy f.53r palatinus	A / "Nulle" (first sign of the nulls row)	2	n/a (PANEL-A ROW: control FIRES)	-	none (B Palatin faint alt.)	-	disagree
+T6	Lfo (nr.383 conte Palatin)	A / Palatin	3	yes	A Palatin 5/5	A Palatin	agree	agree
+# note (panelA_note): "Baille [?] a monsr de Lorraine monsr [?] / Arnal monsr de Bazogis [?] ... / rgambregam[?] Salmiati[?] a monsr [?] / ce tropruo[?] Robertet [?]"; second person read "Arnal" (R2 "Arnal", R1 "d'Orval")

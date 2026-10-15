@@ -1054,3 +1054,33 @@ canvas105 y 1250-2050) and panel B (f.51v whole leaf). Result `elecr2/reader2_re
 fails with a clean decoy control. The side note opens "Baille a" (a recipients list), and its second name (Orval vs "Arnal") is unsettled.
 Next: (1) native-resolution crops of the f.51r Brandebourg/Treves rows and the note's second line (openapi.bnf.fr c105 regions, 2 requests,
 ~0.8) for a third reader on Phi, Hbar and "Orval"; (2) ELEC-VERSO next (2) rectos ff.161r-164r; (3) fr.3897 items 36-38.
+
+## ELEC-R3: third blind reader on native-resolution crops (worker ELEC-R3, LANE DEFAULT-A1-1426-15, account 1, 15 Oct 2026, 14:40-15:0x UTC by date -u)
+
+Brief: ELEC-R2's next (1). PREREG addendum `elecr3/PREREG-ELEC-R3.md` (pushed 21e2ea4ad before the fetch and the reader call): ELEC-R2's
+rule, targets, decoys, shuffle and task unchanged; only the crops changed to native resolution (panel A f.51r lower part, c105 native 2276 px
+wide, plus block and note zooms cut from the same fetch; nr. 383 targets re-cut from native c335/c336). One blind Sonnet subagent call,
+crop paths only. Result `elecr3/reader3_result.tsv`.
+- **Registered rule: real targets 3 of 4 to their own panel-A row** (oXo -> Roy catholique conf 3, Lfo -> Palatin conf 3, Hbar -> Treves
+  conf 2; Phi -> B phi row "Garye/Cerye" conf 2, A Brandebourg named only as alternative) **but the decoy control FIRES**: the f.53r palatinus
+  decoy (pi-sign) was assigned to a panel-A row (the first sign of the "Nulle" row, conf 2). Under the registered rule a decoy on a panel-A
+  row is a control FAIL, so the 3/4 licenses nothing: at native resolution, with more of panel A visible, the reader matches a decoy into
+  panel A, and Hbar's conf-2 Treves match is not distinguishable from that decoy's conf-2 match. The Colonien decoy went to B Cleves (clean).
+- **Per target against R1 (ELEC-VERSO) and R2 (ELEC-R2):** oXo and Lfo agree with both (three readers, all conf 3 for R2/R3); Phi agrees with
+  R2 (f.51v phi row), disagrees with R1 (A Brandebourg); Hbar agrees with R1 (A Treves), disagrees with R2 (none); decoys: Colonien agrees
+  with R2 (not panel A), palatinus disagrees (R2 none, R3 panel-A "Nulle").
+- **Side note.** First word "Baille [?] a" (agrees with R2, against R1's "[Sem]blable"). The second person is read "Arnal" (agrees with R2;
+  R1 "d'Orval"), so two of three readers give "Arnal": no reader after R1 gives an O-initial -rval form, and Orval's presence on the list
+  is not supported by the blind readers (M at most, leaning against). Lorraine, Bazoges ("Bazogis"), Salviati ("Salmiati[?]"), Robertet
+  again legible; Chambrehain read only as "rgambregam[?]".
+- Grades all M (registered). key.tsv unchanged; elecpair383/ grades unchanged; status open.
+- Requests: openapi.bnf.fr 3 (c105 `pct:0,56.84,100,36.38/max`, c336 `650,180,1500,1580/max`, c335 `860,2780,400,170/max`), all 200.
+  Decoys cut from images/canvas109_folio53r.jpg (Colonien 290,660,140,80; palatinus 290,740,130,100); panel B images/canvas106. Images in
+  the session scratchpad only, none in git.
+
+**Verdict (ELEC-R3, 15 Oct 2026):** open, unchanged. oXo -> f.51r Roy catholicque and Lfo -> f.51r Palatin now have three readers in
+agreement (M); Phi and Hbar stay split (each 2 of 3 readers, in different directions), and this pass's 3/4 is void because a decoy landed on a
+panel-A row. The side note is a recipients list ("Baille a ..."); its second name is "Arnal" for two blind readers, not "Orval". Next:
+(1) ELEC-VERSO next (2): rectos ff.161r-164r (c325-c331, 4 canvases at 1000 px, ~1.5) for further occurrences of the f.51r signs, which a
+second ciphertext occurrence needs; (2) fr.3897 items 36-38 (ELEC-PAIR next 3); (3) no fourth reader on Phi/Hbar on the same two images
+(rule 3's third-attempt clause: same instrument, same material) unless new material (a further occurrence) comes in.
