@@ -1,0 +1,4 @@
+# MONL-ADH cell pairs (15 Oct 2026), chosen from images/keysheet_monluc1_ids.png by shape before any sort was run:
+K04,K12	straight blunt stem '9' vs stem curving down-left (MONL-SORT/MONL-VB pair)
+K11,K62	cross with a top loop: the two loop-and-cross cells
+K37,K43	'K' form: the nearest other cell by shape is K43 (crossed diagonals, bowtie); no other cell has the crossed-diagonal build

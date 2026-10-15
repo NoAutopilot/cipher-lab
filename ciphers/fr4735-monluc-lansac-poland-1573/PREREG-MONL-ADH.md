@@ -47,3 +47,11 @@ gloss-confirmed K14 x3) mixed in.
 - Then `align_c268.py --check`, `score_c268.py --check`, `decode_key.py . --check`.
 Budget stop: no unit (blind call ~0.5, own look ~0.3) that would cross 3.2 of the cap of 4; if the budget runs out before both sorts,
 nothing is relabelled.
+
+## Addendum (06:1x UTC 15 Oct 2026, before any tile was cut or any sort run; part 1 result already computed, part 2 untouched)
+Part 1 ran first (results_adh.json: keep false). Part 2 scope narrowed for the budget: all 37 L11-L15 K04/K12/K11/K62/K37 tokens + 7
+controls = 44 tiles would need 8 blind calls at <= 12 tiles, twice the brief's 2-4. Sorted instead: the 12 lead tokens MONL-L11 named
+(K62 facing m: L13:10, L15:9, L15:12, L15:18; K37 facing p: L13:7, L13:16, L13:20, L13:23; K04 facing n: L11:14, L11:23, L13:14, L15:4)
+plus both K11 tokens (L11:12, L13:3) = 14, plus the 7 controls = 21 tiles, 2 calls per sort, 4 calls in all. The selection is by the
+alignment (contradiction leads), the sort itself stays value-blind. Pairs as in sort/adh/cells.txt (K37|K43 chosen by shape from the key
+sheet). All other rules of part 2 unchanged; the 23 unsorted tokens keep their labels.
