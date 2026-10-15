@@ -462,3 +462,23 @@ rec.tsv and decode.tsv untouched, `--check` still passes). 3. Run; report before
 list every flip with its five votes. 4. NOTES "## VIV-F191D (<date -u>)", HYPOTHESES.md row (control = the shuffle null + C1/C2), shrink
 guard, commit by path, pull --rebase, push; done line: longest all-H run before/after first, then V_strict, then flips. Price: vision calls:
 0 x USD 0 = 0. No key, reading or status.json edit; do not start any other job.
+
+## JOB VIV-GSPLIT3 (wave 9, 15 Oct 2026 05:5x UTC by date -u; account-4 parent) -- the g-split with every label-g truth tile hand-cut (a different instrument)
+
+Model: Opus 5.5. Cap USD 6 (Opus floor 2.5). Box 60 minutes from the claim; stop before any unit that would cross 80% of cap or box.
+Why: VIV-GSPLIT2 (NOTES) was untested at N_f = 11 and showed the auto map, not the classifier, is the limit (2 of 2 new f tiles and 3 of 22
+sampled r tiles mis-cut; the re-cut alone cost one of GSPLIT's four hits). Rule 3's third-attempt clause allows this only as a different
+instrument: every tile in this run is cut by eye, none by the map. Measurement only: no key.tsv, reading or status.json edit.
+Steps: 1. room --start, claim; PREREG-VIVGSPLIT3.md pushed first: same classifier and gates as PREREG-VIVGSPLIT (pooled f recall >= 0.60,
+precision >= 0.60, F1 > null p99 over 200 label shuffles; per-fold spread; folds with N_f < 4 untestable alone), registered minimum N_f >= 12
+CHECKED AGAINST THE MATERIAL COUNT before the run (list the anchors by leaf: VIV-FKEY's 16 label-g truth-f positions on f.102r/f.103r/f.201r/
+f.201v/f.211r + f.202r's 4 + f.211v's if any; if fewer than 12 can be boxed `whole`, stop after the count and log "untestable at N_f = <n>").
+2. Hand-cut every label-g truth-f tile and a seeded sample of 20 truth-r tiles per leaf (seed 20261015) on the line crops by eye: one Opus look
+per line crop, several boxes per look, each logged in tx/vivgsplit3/boxes_handcut.tsv with a whole/unsure/none verdict; only `whole` enters.
+Crops: regenerate with the committed commands (NOTES "VIV-F191", "VIV-67", "VIV-67B", "VIV-70B", "VIV-67C", "VIV-70C2"; openapi.bnf.fr
+take/release lines, one at a time >= 3 s, at most 6 requests in the job; disk first). 3. `tx/vivgsplit/gsplit.py` extended in place for
+hand-cut boxes (glyph_atlas classify --boxes); leave-one-leaf-out over every leaf with tiles. 4. Gate PASS at N_f >= 12 -> the f.191r step
+as VIV-GSPLIT Addendum A, but on HAND-CUT f.191r g tiles too (the 28 tileable + any the map missed, cut by eye, same log), then
+`f191.py --override ... --tag gsplit3 --stats`, (a) strict and (b) letter-S. Otherwise log and stop. 5. Price: vision calls: 8 x USD 0.5 = 4
+(about six line-crop looks for boxes + two contact sheets); Opus floor 2.5; cap 6. 6. NOTES "## VIV-GSPLIT3 (<date -u>)", HYPOTHESES row,
+requests per host, `f191.py --check` passes, shrink guard, commit by path, pull --rebase, push; done line: N_f and verdict first.

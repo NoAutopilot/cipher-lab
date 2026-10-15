@@ -62,3 +62,22 @@ build check, box check, preflight --owner-page pasted. 3. Eye check per pile on 
 piles that hold one shape vs mixed, before (SORTER-FIX's render) and after; list the mixed ones by pile id with one word each. 4. NOT
 PUBLISHED: NOTES "## SORTER-PILES-ANSWERED (<date -u>)" with the counts and the command; the account-4 parent decides. Report to LANE
 VIV-KEYSTONE (account 4); the running account ledgers. No key, reading or status.json edit.
+
+## JOB SORTER-STEP1-INK63 (queued 15 Oct 2026 05:5x UTC by the account-4 parent; Opus 5.5; cap USD 6; box 90 minutes; Price: vision calls: 2 x USD 0.5 = 1)
+Why: SORTER-PILES-ANSWERED (NOTES, 04:58 UTC) showed the owner's real answers define only 13 piles, 4 of them one shape: ink 63's sign
+inventory is not settled, so no question packet can be built with one-shape piles (R13). TRANSCRIPTION.md's rule applies: the owner settles
+the alphabet in the sign sorter first (forming piles), and only then do readers transcribe against those labels. This job builds that
+step-1 page and its consuming test; it does NOT publish and does NOT ask the owner anything.
+Do: 1. Material: the certain-answer tiles of the five truth leaves with crops on disk or regenerable (f.102r, f.103r, f.201r, f.201v, f.202r,
+f.211r, f.211v as available; the three committed sorter pages' tiles + VIV-67C/70C2 items), hand-checked boxes only (box check >= 90%, the
+R14 gate); cap about 300 tiles, sampled per clerk letter so every letter of the key has >= 6 exemplars where it exists. 2. Seed piles by
+SHAPE, not by reader label: `tools/glyph_atlas.py cluster` on the tiles (k about 40), one pile per cluster, blind (no key values, no
+letters on the page; TRANSCRIPTION.md blind-first). The owner's job on the page is step 1 only: merge piles that are one sign, split piles
+that are two, set aside what is not a letter -- the sorter's existing pile cards, no question tray. 3. Preflight --owner-page, R12-R16 checks,
+cvd_check, build check pasted; contact sheets of the seeded piles (piles_0/1.png) with a one-word eye verdict per pile. 4. Consuming test,
+registered in PREREG-SORTER-STEP1-INK63.md before the page is built: when the owner's settled piles land, (a) relabel the truth-leaf tiles
+by his piles and score err_true on the BENCHMARK-TX items before/after (`tools/tx_bench.py`), gate: err_true must not rise on any item and
+must fall on >= 2; (b) the settled piles become the exemplars of the next f.191r question packet (PREREG-VIVPACKET4, one-shape piles by
+construction). 5. NOT PUBLISHED: NOTES "## SORTER-STEP1-INK63 (<date -u>)" with the command, the tile count per letter, the preflight output
+and the contact sheets; the account-4 parent reviews and decides whether to ask the owner. Report to LANE VIV-KEYSTONE (account 4); the
+running account ledgers. No key, reading or status.json edit.
