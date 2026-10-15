@@ -71,17 +71,21 @@ cipher sheet, Aitzema). Blog search across Cipherbrain / klausis-krypto-kolumne 
 - **Premise check verdict (HEID-1621D): open.** No decipherment, clear copy or content summary of the cipher passage located in the
   folder, the solver repositories, the neighbouring scans or the recipient-side edition.
 
-## Remaining gaps
-- [ ] edition: Resolutiën SG nieuwe reeks 5 (1621-1622), entries for Brederode's letters of 8 and 13 Aug 1621 read around 20 Aug 1621;
-  waiting-on: resources.huygens.knaw.nl recovery (503 on 15 Oct 2026); next: one retry of the statengeneraal search
-  (`search_term=Brederode`, source 5, plus `Heydelberg`), ~$0.5
-- [ ] transcription control: scan 375's block (second witness) against ciphertext.tsv; next: native crop + one reader + reconcile, ~$1.5
-- [ ] spec and first breadth test: held until the edition step clears the gate (brief JOB HEID-1621C step 3)
+## Remaining gaps (HEID-1621D, 15 Oct 2026)
+Read so far: 0 of 45 units (nothing decoded; spec test 1 run, undecided; transcription all M)
+  (edition step closed: Resolutiën SG NR 5 read by HEID-1621D, p. 251-252, 260-261; res. 1644b "Gedeeltelijk in code", no decipherment printed)
+- transcription control (scan 375 second witness vs ciphertext.tsv) - blocker: not-attempted; brief JOB HEID-1621D step 3 priced above its cap; next: iiif_lines crops + two blind Sonnet readers + one reconciliation, ~$5
+- the 45 units themselves - blocker: too-short; test 1 C2 rank-match control 0.010 vs gate 0.50 at N=45 (HYPOTHESES.md), no solver family reads this length; next: pool more units from siblings (Escalation, siblings), ~$1.5 per inventory screen
 
-## Escalation
-- Siblings: the letter of 8 Aug 1621 and its duplicate (named on scan 376) not yet located in inv. 6021 -- [ ] stride-1 screen, ~$1.5
-- Known keys: none for Brederode's 1621 agency in KEY-OFFICES.tsv as far as checked (not searched by tool this job)
-- Verdict: parked until the Huygens host answers; then keep going.
+## Escalation (HEID-1621D, 15 Oct 2026)
+- [ ] siblings: the 6 Aug 1621 letter (res. 1585a "Niet aangetroffen"), the 8 Aug letter named on scan 376, and Brederode's other 1621-1622 letters in inv. 6021 and 6025 (Lias Duitsland, edition p. XVII) screened stride-1 for numeral blocks in the same code, ~$1.5 per inventory
+- [ ] clear-pages: the clear prose around the block (same letter) and the edition's summaries of the neighbouring letters (6, 20, 27 Aug) as context for a crib, only once a pool exists
+- [ ] known-keys: KEY-OFFICES.tsv / KEY-DESIGN.tsv not yet searched by tool for a States General agent code of 1618-1622 (pair+letter); next: tools/design_prior.py, ~$0.3
+- [x] print: Resolutiën SG NR 5 read (HEID-1621D), no decipherment; no edition of Brederode's agent letters located (HEID-1621C)
+- [n/a] key-rebuild: no decipherment, gloss or key sheet located to rebuild from
+- [ ] image-check: scan 375 at native size (the second witness and its facing page) not yet seen
+- [x] retry: the Huygens host retried and answered (HEID-1621D, 11 requests, all 200)
+Verdict: keep going: 1 internal gaps; cheapest next: known-keys design_prior check, ~$0.3, then the scan 375 witness, ~$5
 
 ## While waiting
 The one action that depends on nobody: transcribe the second witness (scan 375's numeral block at native size, one reader, reconcile
@@ -103,3 +107,44 @@ diplomatic Dutch, so a judge result on it needs the era caveat (rule 3, V6-PTCOR
 **Verdict: blocked** (edition unread: host outage). Next breadth row for the parent (cap 3, after the Huygens retry clears the gate):
 spec + first cheap test -- unit inventory (21 pair+letter units, 45 tokens) against a Dutch word-frequency list under a frozen pool,
 matched control a synthetic 21-unit word code of the same length from nl16.
+
+## HEID-1621D (15 Oct 2026, 18:13-18:3x UTC by date -u, account 2, Opus; for the orchestrator, owner account)
+Brief: `.claude/briefs/runs/2026-10-15-acct4-depth-steps-2.md`, JOB HEID-1621D. Requests: resources.huygens.knaw.nl 11 (all 200: 4
+searches "Brederode" source 5 at batch 0/20/40/60, 1 pages.json, 4 OCR pages, 2 searches "in code" and "ontcijfer"); service.archief.nl 0.
+No image fetched, no reader, no decode, no key, no reading.
+
+**(1) Edition read.** Resolutiën der Staten-Generaal, nieuwe reeks, deel 5 (1621-1622, Roelevink 1983), Huygens retroboeken full-text
+search: "Brederode" 109 hits in the volume; the August 1621 entries opened at the printed pages (OCR html):
+- p. 251, 16 Aug 1621, res. 1585a: "Brederode, dd. Heidelberg 6 aug., met berichten uit Duitsland"; note 1585a "Niet aangetroffen".
+- p. 260, 23 Aug 1621, res. 1644b: "Brederode, dd. Heidelberg 13 aug."; note c: "S.G 6021 (orig.). Gedeeltelijk in code." No summary
+  of content, no decipherment. (Same resolution, item a: Haga's letter from Constantinople "met een cijfercode", a different item.)
+- "ontcijfer" in the volume: 0 hits; "in code": 6 hits (pp. 11, 27, 82, 260, 295, 469), none a decipherment of this letter.
+- Not settled: the scan 380 endorsement as read by HEID-1621B ("L. 20 Aug. 1621") vs the edition's receipt among the letters of
+  23 Aug; the brief's "8 Aug" letter vs the edition's 6 Aug (the duplicate on scan 376 names a letter of 8 Aug, HEID-1621B, M).
+
+**(2) Premise check verdict open**; `python3 tools/intake_gate_check.py brederode-heidelberg-1621` (18:2x UTC):
+
+    brederode-heidelberg-1621: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+    exit=0
+
+Spec written: `specs/brederode-heidelberg-1621.json`. First cheap test (PREREG `t1/PREREG-HEID1621D.md` committed 2d18d5ca5 before any
+measurement; `t1/inventory.py --check` regenerates `t1/result.json`), control first:
+- C1 (held-out coor001boev01 windows, word vs letter at N=45, nearest pool median): 1.000 against gate 0.90 -- passes. Word and
+  syllable-proxy pools coincide at this N (median 38, p05 32, p95 42 both), so inventory cannot separate those two.
+- Target: N=45 units, K=25 distinct numeral tuples (30 with the trailing letter); top unit 22.23 at 0.111; 13 hapax. Percentile 0.003
+  in the word pool (0.021 with letters), 0.002 in the syllable-proxy pool, 1.000 in the letter pool (median 17, p95 20).
+- Outcome by the PREREG rule: **undecided** -- below the word band, above the letter band, inside neither. Descriptively the units
+  repeat more than 45 words of Dutch prose and less than 45 letters.
+- C2 (synthetic word code at the same N; no held-out window reached K 25+-2 in 20000 draws, the 20 nearest have K=32): rank-match to
+  the frozen nl16 top-300 list recovers 0.010 of tokens (max 0.067) against gate 0.50 -- CONTROL BELOW GATE; the rank-match was **not
+  run on the target**. A frequency attack on 45 units is a non-test; only more ciphertext in the same code can change that.
+- Caveats: all target tokens are M; nl16 is 1569-1589 printed prose, not 1621 diplomatic letters; overlapping pairs carrying one
+  letter (22.23/23.24 x etc.) may be one code entry, which would lower K further.
+Rows in HYPOTHESES.md. Spec `cheap_test_done` carries the same numbers.
+
+**(3) Not run.** The brief prices the scan 375 witness at USD 4.2 and runs it only if steps 1-2 leave at least that under a USD 4 cap,
+which cannot hold; named as the next row.
+
+**Status: open.** Next row for the parent: scan 375 second witness (tools/iiif_lines.py crops, two blind Sonnet readers on the numeral
+lines, one reconciliation, per-unit agreement with ciphertext.tsv; no reading), cap ~USD 5 (4.2 priced + margin); then the sibling
+screen for pool size (Remaining gaps).

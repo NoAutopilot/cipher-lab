@@ -1,0 +1,77 @@
+{
+ "slug": "brederode-heidelberg-1621",
+ "name": "P. van Brederode (agent at Heidelberg) to the States General, Heidelberg 13 Aug 1621, NL-HaNA 1.01.02 inv. 6021 scans 375 (signed) and 379 (duplicate)",
+ "language_candidates": [
+  "nl"
+ ],
+ "ciphertext": "[Desen dus wijt geschreven hebbende, bekomme] [ick advijs] 31 32 o 22 23 x 76 77 r 40 41 d 13 14 w 58 59 p 49 50 k 46 47 j [in date des 29 July ouden stijl dat] ] [van] + [aldaer] 67 68 i 22 23 x 59 60 p 16 17 S 41 42 d 11 12 b 22 23 x 58 59 p 64 65 c [hebben] 38 10 11 b 40 41 d 34 35 a 11 12 b 46 47 f 16 17 B 76 77 ⊏ [volgende] 38 64 65 c 22 23 x 47 48 f 23 24 x 67 68 59 60 p [te continueren bij soo verre als oock] 84 38 79 80 g 76 77 c 19 20 m 23 24 x [hadde devoir metten] 29 20 f 22 23 x 40 41 d 64 65 c 31 32 g 67 68 i 41 42 d 52 53 v [tot op den uytganck van] 20 21 m 67 68 i 46 47 f 76 77 c [te presteren te vroeden sijn, waer van de schriftelijcke resolutie in corten volgen sal]",
+ "ciphertext_source": "ciphers/brederode-heidelberg-1621/ciphertext.tsv: scan 379 numeral block (Nationaal Archief, service.archief.nl IIIF), two blind Sonnet readers reconciled, HEID-1621, 15 Oct 2026; every token grade M; clear stretches in [brackets], abridged",
+ "alphabet": "units = a maximal numeral run (41 consecutive pairs n,n+1; one 29.20; four longer runs of 3-4 numerals) followed by one lower/upper-case letter; 45 units, 96 numerals, 44 letters, 3 non-numeral word signs; numeral values 10-84",
+ "constraints": [
+  "pairs are (n, n+1) in 40 of 41 (0.976; order-shuffle control p99 0.053; PREREG-HEID1621)",
+  "one letter after each unit (44/45); overlapping pairs carry the same letter (22.23/23.24 x, 40.41/41.42 d, 58.59/59.60 p, 46.47/47.48 f, 19.20/20.21 m) -- descriptive, M",
+  "about one unit per Dutch word by line density (S4 lead, M)",
+  "Dutch, 1621, diplomatic letter; the clear prose around the block is the same letter's own text",
+  "second witness: scan 375 (the signed original) carries the same numeral block -- transcription control not yet run",
+  "recipient-side edition: Resolutien SG NR 5 p.260 res. 1644b, note c 'S.G 6021 (orig.). Gedeeltelijk in code.' -- no decipherment printed",
+  "N=45 units: far below family_run.py's useful length (README ordering note); test 1 below is an inventory test, not a solver"
+ ],
+ "cheap_tests_in_order": [
+  "1. unit inventory (distinct units K at N=45) vs frozen nl16 pools of words, syllable-proxy chunks and letters; matched controls C1 (held-out discrimination) and C2 (synthetic word code at the same N, rank-matched to the frozen word list) -- PREREG-HEID1621D",
+  "2. scan 375 second witness: tools/iiif_lines.py crops, two blind Sonnet readers, one reconciliation, per-unit agreement with scan 379 (transcription control; no reading)",
+  "3. sibling search: the 6 Aug 1621 letter (res. 1585a 'Niet aangetroffen') and further Brederode 1621-1622 letters in inv. 6021/6025 for more units in the same code (pool size decides whether any solver can run)"
+ ],
+ "cheap_test_done": {
+  "date": "15 Oct 2026 (HEID-1621D, account 2, Opus)",
+  "test": "1 (unit inventory vs frozen nl16 pools, PREREG-HEID1621D, t1/inventory.py --check)",
+  "target": {
+   "N": 45,
+   "K_numeral_tuple": 25,
+   "K_tuple_plus_letter": 30,
+   "pct_in_word_pool": 0.0027,
+   "pct_in_syll_pool": 0.0015,
+   "pct_in_letter_pool": 1.0
+  },
+  "pools": {
+   "word": {
+    "median": 38.0,
+    "p05": 32,
+    "p95": 42
+   },
+   "syll": {
+    "median": 38.0,
+    "p05": 32,
+    "p95": 42
+   },
+   "letter": {
+    "median": 17.0,
+    "p05": 14,
+    "p95": 20
+   }
+  },
+  "control_C1": {
+   "word_vs_letter_acc": 1.0,
+   "gate": 0.9,
+   "pass": true,
+   "note": "word and syllable-proxy pools coincide at N=45 (median 38 both): inventory cannot tell word from syllable here"
+  },
+  "control_C2": {
+   "rankmatch_mean": 0.01,
+   "max": 0.0667,
+   "gate": 0.5,
+   "pass": false,
+   "K_of_control_windows": [
+    32,
+    32
+   ],
+   "note": "no held-out 45-word window reached K within 25+-2 in 20000 draws; nearest K=32"
+  },
+  "verdict": "undecided by the PREREG rule: K=25 lies below the word and syllable-proxy p05 (32) and above the letter p95 (20); the inventory repeats more than Dutch prose words at N=45 and less than letters. Rank-matching is a non-test at N=45 (C2 0.01 vs gate 0.50); not run on the target. No decode.",
+  "next": "test 2 (scan 375 witness, ~$4.2) and test 3 (siblings for pool size)"
+ },
+ "judge": {
+  "language": "nl16",
+  "note": "nl16 is 1569-1589 moral/polemical prose, not 1621 diplomatic letters (era/register caveat, rule 3 V6-PTCORP); no reading exists to judge"
+ },
+ "written": "15 Oct 2026, HEID-1621D"
+}
