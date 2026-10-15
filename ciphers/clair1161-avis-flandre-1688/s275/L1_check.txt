@@ -1,0 +1,7 @@
+c185R_L23/19 hand c185R_L22 x1844  count c185R_L22 x1836 pitch 79.7 -> ok
+c185R_L18/5 hand c185R_L18 x815  count c185R_L18 x809 pitch 85.7 -> ok
+c188L_L07/18 hand c188L_L07 x1955  count c188L_L07 x1952 pitch 103.0 -> ok
+c185R_L18/11 hand c185R_L18 x1343  count c185R_L18 x1337 pitch 85.7 -> ok
+c185R_L18/20 hand c185R_L18 x2145  count c185R_L18 x2133 pitch 85.7 -> ok
+c185R_L23/25 hand c185R_L22 x2320  count c185R_L22 x2376 pitch 79.7 -> MISS
+L1: 5/6 within 0.5 pitch -> PASS

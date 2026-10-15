@@ -1,0 +1,31 @@
+eid	line	pos	strip	flag	eye
+E01	c186L_L03	18	c186L_L03		on
+E02	c188L_L26	15	c188L_L26		off 2 signs
+E03	c187R_L10	11	c187R_L10		on
+E04	c185R_L24	27	c185R_L23	poor	off 1 sign
+E05	c185R_L04	14	c185R_L03		on
+E06	c185R_L11	23	c185R_L10		on
+E07	c185R_L08	24	c185R_L07	poor	on
+E08	c187L_L22	16	c187L_L22		on
+E09	c185R_L21	15	c185R_L20		on
+E10	c187L_L09	10	c187L_L08		band clipped (S cut by strip edge)
+E11	c188L_L12	5	c188L_L11		no S near tick
+E12	c185R_L03	29	c185R_L03	poor	off 1 sign
+E13	c187R_L20	23	c187R_L20		on
+E14	c188L_L12	17	c188L_L11		off (S at window edge)
+E15	c188L_L22	4	c188L_L22	poor	on
+E16	c187R_L09	29	c187R_L09		on
+E17	c187L_L22	8	c187L_L22	poor	on
+E18	c187L_L26	4	c187L_L27		no S near tick
+E19	c187L_L20	15	c187L_L20	poor	off 1 sign
+E20	c187L_L12	2	c187L_L12	poor	on
+E21	c187L_L21	15	c187L_L21	poor	on
+E22	c187L_L09	7	c187L_L08		band clipped (S cut by strip edge)
+E23	c188L_L22	12	c188L_L22		off 1 sign
+E24	c187R_L23	10	c187R_L23	poor	on
+E25	c188L_L24	3	c188L_L23		on
+E26	c187R_L15	25	c187R_L14		no S near tick
+E27	c185R_L02	10	c185R_L02	poor	on
+E28	c185R_L09	9	c185R_L09	poor	on
+E29	c186L_L07	22	c186L_L07		on
+E30	c187L_L19	11	c187L_L18		band clipped (S cut by strip edge)
