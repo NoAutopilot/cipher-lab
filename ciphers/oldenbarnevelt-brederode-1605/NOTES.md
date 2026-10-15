@@ -1652,3 +1652,53 @@ Read so far: unmeasured; nothing decoded -- no. 92 (121 groups) and the scan-187
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv two blind passes agreeing 59/59 (OBRED-187)
 - [x] retry: Den Tex (abridged edition) read twice (25 Sept; OBRED-SG 10 Oct 2026): no cipher, key or Stettin note; brievenboek 11851 596-733 and 11852 2-104 completed with controls (OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A)
 Verdict: keep going: 1 internal gap; cheapest next: inv. 6019 stride-3 sheets 20-25 (scans 514-649, 46 scans, one NA session of 47 requests or regen, ~$1.5); 1602-1619 show no third numeral block at the depth screened, so the expected yield of the later liassen is low (OBRED-6019)
+
+## OBRED-6019B (15 Oct 2026, 06:25-06:4x UTC by date -u, account 2, Opus; for LANE DEFAULT-A2-0509-15)
+
+Brief: read the six OBRED-6019 sheets left unread (sheets 20-25 = inv. 6019 stride-3 scans 514-649, 46 scans), same PREREG and
+controls. Nothing decoded; no gate computed.
+
+- Prior-work step: `prior_work.py oldenbarnevelt-brederode-1605 --item-spec 'NL-HaNA 1.01.02 inv. 6019 scans 514-649 (stride-3, sheets
+  20-25)' --step-type read` exit 4: 1 LOOK (the target-level look.tsv crop of no. 92, not a 6019 scan), 2 UNCHECKED, 2 UNCHECKED-NET,
+  the same generic rows as OBRED-6018/6019 (rows written to `prior-work.tsv`/`look.tsv` by the tool). Check 1: OBRED-6019 is the only
+  earlier section on inv. 6019 and did not read sheets 20-25.
+- PREREG addendum `obred187/PREREG-OBRED6019B.md` pushed (6b4e41577) before any fetch.
+- Rebuild: the 700 px scans were not committed, so `screen_tools/regen_6019b.sh` re-fetched the 46 scans (+ METS) and rebuilt all 25
+  sheets with blank placeholders for scans 1-511, so the seed-6019 shuffle is unchanged; `cmp` of the rebuilt key against
+  `images/6019_screen_sheetkey.json` passed without either being opened, and all 46 re-fetched scans are byte-identical to the sha1s
+  OBRED-6019 recorded. Calls for sheets 20-25 appended to `images/6019_screen_sheetcalls.txt` and pushed (60a6bb678) before the key was
+  opened. One reader, this worker's own eye.
+- **Controls: 18 of 18 placed correctly (6 sheets x 3), checked mechanically against the key. No sheet is a non-test.** With OBRED-6019:
+  inv. 6019 stride 3 complete, 217 scans, controls 75/75.
+- **Result: one hit. Scan 556 (sheet 21 tile I, called doubtful at sheet size and re-looked at 1200 px, scratchpad only, sha1 in
+  `images/manifest.json`)** is a Dutch letter (about October 1619 by its place in the liasse; dateline not on this opening) whose left page
+  carries about six lines of **numeral groups inside the prose, with interlinear glosses above some groups and a marginal gloss** -- a
+  numeral code of the same general kind as no. 92 / scan 187 (arabic groups separated by points, inside prose). Provisional single read at
+  1200 px, every token grade M, not a transcription (two blind passes owed):
+  `578 605 | 457 13 289 797 798 | 433 461 385 50 | 73 193 458 | 67? 390 415 202 109 | 593 594 | 430 100 169 110 241 337 120 | 380`
+  (32 groups; `|` = prose between). Glosses seen, unread at this resolution and not used: a two-word name above 605, a marginal note
+  beside 457-798 (begins "van ambassadeur van ..."), "Turck" in the margin, a name above 593, a word above 594, and single letters above
+  430-337 (which would suggest letter-level values in that range). Whether this is the no. 92 / 187 table is **not tested**: no overlap
+  count or gate was pre-registered for this job. The other 45 scans of sheets 20-25 show no numeral block (`images/6019_screen.tsv`):
+  October-December 1619 letters signed P. Brederode, address leaves, openings, French/Latin prose, one 'Post data' in prose, one piece in
+  numbered articles (margin numbers, not code groups).
+- Requests: `service.archief.nl` **48** (1 METS + 46 at 700 px + 1 at 1200 px), all HTTP 200; PREREG cap 53. NA take/release in ROOM.md.
+- Where it was not found, and the limits: every third scan only; the neighbours of 556 (555, 557: the rest of that letter, possibly more
+  groups or a decipherment) and two thirds of inv. 6019 not looked at; inv. 6020-6024 not at all. One reader at sheet size.
+
+## Remaining gaps (OBRED-6019B, 15 Oct 2026)
+Read so far: unmeasured; nothing decoded -- no. 92 (121 groups) and the scan-187 postscript (59 groups) are both unread; they share 26 values, above chance (OBRED-187); inv. 6019 scan 556 carries a third numeral text (about 32 groups, interlinear glosses), single provisional read only (OBRED-6019B)
+- no. 92 and the 187 postscript, pooled (180 tokens, 130 distinct values) - blocker: not-attempted; OBRED-DP found a crib test unfalsifiable at 180 tokens; inv. 6019 scan 556 may add a third text with glosses; next: two blind transcription passes of scan 556 and its neighbours 555/557 at native size (crop step mandatory) plus a read of the glosses, then a pre-registered overlap test of its values against no. 92/187 with a shuffled-value control, ~$4
+- the later liassen NA 1.01.02 inv. 6020-6024 (1620-1637, all digitised, METS ids in `nl_brederode_lias.tsv`) - blocker: not-attempted; inv. 6016-6017 in full, 6018 and 6019 at stride 3 (controls 66/66, 75/75); one numeral block found (6019 scan 556, about Oct 1619); next: only after scan 556 is placed -- if it is the no. 92 table, a stride-3 screen of inv. 6020 (~$4) and the 6019 stride-1 fill around 556
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done: brievenboek inv. 11851 scans 596-733 and inv. 11852 scans 2-104 (about 23 Oct 1604 - 6 Apr 1605) all looked at with controls (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B 18/18 and 30/30, OBRED-11852A 24/24): no numeral block, no Brederode, Stettin or Heidelberg heading; the register appears to copy ordinaris letters, not an agent's letters (M)
+
+## Escalation (OBRED-6019B, 15 Oct 2026)
+- [x] siblings: scan 187 is a second code text sharing 26 values with no. 92 (OBRED-187); inv. 6016 and 6017 in full, 6018 and 6019 at stride 3 (OBRED-6018 66/66; OBRED-6019 + OBRED-6019B 75/75): one further numeral block, inv. 6019 scan 556 (about Oct 1619, interlinear glosses), not yet transcribed or placed
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187: Stettin, 17 Oct 1604, to the griffier of the States General); it carries no gloss of the code
+- [x] known-keys: the 10 Aug 1598 Van Aerssen slip excluded for no. 92 by design (R10-OBRED98); Buzanval syllabary inv. 2028 excluded (R9-OBRED4); DECODE 1600s and Palatine/Hessian keys screened (OLD-DKEY, R8-OBRED2, R9-OBRED3)
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII has no decipherment or key note near the Brederode entries (OBRED-DP)
+- [ ] key-rebuild: design_prior and structure done (OBRED-DP); a third text found (inv. 6019 scan 556, glossed); next: two blind passes of 556 (and 555/557) with the glosses read, then a pre-registered value-overlap test against no. 92/187 with a shuffled-value control, ~$4
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv two blind passes agreeing 59/59 (OBRED-187)
+- [x] retry: Den Tex (abridged edition) read twice (25 Sept; OBRED-SG 10 Oct 2026): no cipher, key or Stettin note; brievenboek 11851 596-733 and 11852 2-104 completed with controls (OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A)
+Verdict: keep going: 2 internal gaps; inv. 6019 stride-3 screen closed (217 scans, controls 75/75) with one hit, scan 556 (about Oct 1619, ~32 numeral groups with interlinear glosses); cheapest next: two blind passes of scans 555-557 and a pre-registered overlap test against no. 92/187 (~$4)

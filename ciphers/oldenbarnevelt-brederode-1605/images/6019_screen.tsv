@@ -170,3 +170,50 @@ scan	sheet	tile	content	numeral_code_block
 505	19	K	Dutch prose	no
 508	19	G	address leaves (G with grey card) + opening, Sept/Oct 1619	no
 511	19	D	letter end signed Brederode with paraph, Sept 1619, blank facing	no
+# OBRED-6019B (15 Oct 2026): sheets 20-25 read (scans 514-649 at stride 3, 46 scans; controls 18/18)
+514	20	F	letter opening dated Oct 1619 with address leaf	no
+517	20	J	Dutch prose	no
+520	20	B	address leaf + letter opening	no
+523	20	I	Dutch prose	no
+526	20	G	letter opening dated Oct 1619 with address leaf	no
+529	20	H	Dutch prose	no
+532	20	C	address leaf + letter opening	no
+535	20	A	letter end signed Brederode with paraph	no
+538	20	L	French prose	no
+541	21	C	French prose with a year in text	no
+544	21	F	French prose	no
+547	21	A	French/Dutch prose	no
+550	21	B	letter opening, Oct 1619	no
+553	21	E	blank opening	no
+556	21	I	Dutch letter, left page: numeral code groups inside prose with interlinear and marginal glosses (re-looked at 1200 px)	YES
+559	21	J	letter opening, stained	no
+562	21	H	letter end signed Brederode, grey card pasted	no
+565	21	G	letter end with a long signature line	no
+568	22	B	letter end signed Brederode with paraph + blank	no
+571	22	G	Dutch prose	no
+574	22	J	Latin prose with a heading near the foot	no
+577	22	A	address leaf + opening, Nov 1619	no
+580	22	E	Dutch prose	no
+583	22	L	address leaf + opening dated Nov 1619	no
+586	22	C	Dutch prose	no
+589	22	D	address leaf with seal + opening, Nov 1619	no
+592	22	K	piece headed "Exemplar", 1619, Latin/Dutch	no
+595	23	G	'Post data' paragraph in prose	no
+598	23	B	address leaf with folded slip	no
+601	23	F	Dutch prose	no
+604	23	L	Dutch prose + small note	no
+607	23	C	Dutch prose	no
+610	23	H	address leaf with seal + opening	no
+613	23	D	Dutch prose in numbered articles (margin numbers, not code groups)	no
+616	23	J	Dutch prose + French piece headed with a date (1619)	no
+619	23	E	letter end signed Brederode with paraph, Nov 1619	no
+622	24	J	Dutch prose	no
+625	24	K	address leaf + opening	no
+628	24	F	letter end signed Brederode, Dec 1619, + short note	no
+631	24	D	Dutch prose	no
+634	24	H	Latin prose + blank	no
+637	24	A	French prose	no
+640	24	C	Dutch short paragraphs + blank	no
+643	24	G	address leaves with grey card	no
+646	24	L	blank leaf with a pasted Dutch slip	no
+649	25	A	blank cover/leaf with grey card	no

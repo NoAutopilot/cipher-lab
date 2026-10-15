@@ -6503,6 +6503,14 @@
     "width": 700,
     "bytes": 38148,
     "sha1": "88f14304e8ba6dff81e1deb31a1ca074fbe186dd"
+   },
+   {
+    "inv": "6019",
+    "scan": 556,
+    "width": 1200,
+    "bytes": 157672,
+    "sha1": "6b7a24359d249502069acfe9b4c1c65f410eae66",
+    "note": "OBRED-6019B re-look, numeral block with interlinear glosses; not committed"
    }
   ]
  }
