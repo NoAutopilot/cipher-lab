@@ -66,3 +66,31 @@ NOTES "## CLIN-3502B", Verdict, gaps_check.
 Wave 1 sessions (14:22 UTC): DEC1162-RK session_01CoAGYLCH9r6YdpsvDcLw5m; NOA-TAM session_014cadYewz4sUe3AYfG7bDJV (Sonnet); BNE-PRES
 session_01YE1YgUv5ewXgT5YgTsJqgR (Sonnet); PIS-121B session_01CC9bAXN4QkgvkHfN9dbA8F; SAV-L29 session_01QKRwKtxK9wvCcp4UihR3tL; CLIN-3502B
 session_016ReHJ3A1vJ5B5NpWnuNWHs.
+
+## Wave 2 (refills from 14:4x UTC 15 Oct; second read-only triage of 33 folders, most stale or blocked on a person)
+Intake gate 14:3x UTC (each PASS): harley-287-1587, august-van-saksen-1561-64, na-suriname-map-1781, willem-van-hessen-1567.
+
+### HAR-37R (Opus, cap 4, box 75 min, de-crypt.org one browser login, ROOM take/release): harley-287-1587 f.37r interlinear pairs + R8480 f.41r margin
+NOTES l.849-858 (HAR-KEYS/R8478-80 look): "The f.37r interlinear pairs and the f.41r margin are material for an alignment job against
+Bourdeau's needham1587 key (not aligned here)." PREREG first: per glossed run, the needham1587 key's decode vs the period gloss (normalised per
+CLAUDE.md rule 3 PX-BRODEC) and a shuffled-gloss control (>= 200 draws, gloss runs permuted among cipher runs) that must be able to fail
+differently. One DECODE login (`tools/decode_browser_login.js`, `--guess-fullsize`; if refused say so and stop); crops in scratchpad;
+iiif_lines.py-style line crops pasted, 2 blind Sonnet passes on the cipher runs + 1 on the glosses + 1 reconcile. Report pairs agreeing /
+conflicting (rule 4: conflicts to HYPOTHESES.md with witnesses), any key values the gloss adds at C. Credit Bourdeau (MIT / CC BY 4.0). NOTES
+"## HAR-37R", gaps + Verdict, gaps_check.
+
+### AVS-153 (Opus, cap 6, box 90 min, resources.huygens.knaw.nl <= 4): august-van-saksen-1561-64 key_153 over cipher lines 10-20
+WVO-153-KEY (10 Oct) left cipher lines 10-20 (~11 lines, 4 bands) and a native read of witness W1 undone. Same method as WVO-153-KEY (its
+NOTES section and brief .claude/briefs/runs/2026-10-09-account4-wvo-1068-key.md Job B): iiif_lines crops command pasted, 2 blind Sonnet passes
+per band + reconcile (units: 8 passes x ~0.6 + 1 reconcile ~1), then extend key_153.tsv from the period decipherments (grade C), decode_key
+--check. Stop before a band that crosses 80% of cap. Text on the leaf is known (light guardrail: it builds a key for the unread letters of
+this key family; say which). NOTES "## AVS-153", gaps + Verdict, gaps_check.
+
+### SUR-DH (Sonnet, cap 1.5, box 45 min, archive.org / service.archief.nl <= 8): na-suriname-map-1781 den Heijer p.328 + Zeelandia essay
+Verdict alternatives (LANE DEFAULT-A2-1109-15 next): den Heijer p.328 (~1) and the Zeelandia essay via NA 2.14.97 inv. 24.2 for any text
+rendering of the 1781 legend. Find a readable copy (IA fts first), read only the named pages, record every copy, query, hit / no hit. No key or
+reading change; gaps_check.
+
+### WVH-CROP (Opus, cap 2, box 45 min, disk first, Huygens <= 1): willem-van-hessen-1567 higher-crop look at L3 p12-17 and L4 p20-26
+R10-WVHMIN's suggestion: taller crops of the minuut gloss key lines to settle `nine` / `compact-8`. PREREG the decision rule first; 2 crop
+calls. No reading of 1127 (unimaged, ASKS 31). NOTES "## WVH-CROP".
