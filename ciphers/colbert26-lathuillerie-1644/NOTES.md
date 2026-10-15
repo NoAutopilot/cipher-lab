@@ -2524,7 +2524,7 @@ Read so far: 27 of 168 f.24 tokens and 125 of 306 f.23 tokens at grade C; canvas
   - [x] pooled held-out word grain for 20 = i (COL26-C51, 14 Oct 2026, PREREG-COL26-C51.md, siblings/word_c51pool.py): stage 0 TOO-SHORT, pooled N 10 (c33 5 + c51 2 glossed + c63 3; c62 excluded, instrument failed), power 0.120/0.163 < 0.5; no vision, key unchanged
 - [x] clear-pages: f.24 and f.23 interlinear decipherments both aligned, each cleared its own shuffled-gloss control (f.23 63 vs max 45)
 - [x] known-keys: KX-LATHCT1 compared the cluster with key_1646, key_brienne_1647, key_1659 (different keys)
-- [ ] print: no edition of these letters found; Danish/Swedish mediation editions opened in part by COL26-PRINT (15 Oct 2026, see section below): 10 editions searched, no hit; still unopened: Svenska riksrådets protokoll, Oxenstierna skrifter vols for 1644-46, Kernkamp (IA text 503), Rigsarkivet originals; next: those, ~$1
+- [ ] print: no edition of these letters found; Danish/Swedish mediation editions opened by COL26-PRINT and COL26-PRINT2 (15 Oct 2026, sections below): Kernkamp and 8 Oxenstierna volumes now opened, no hit; Svenska riksrådets protokoll for 1644-46 not on IA (only vols for 1633-34 and 1642 found), Oxenstierna Förra afd. vols for the 1640s and Senare bd 12 not found on IA, Rigsarkivet originals unopened; next: a LOCAL-QUEUE row for SRP vols 10-11 (Kullberg) if wanted, ~$0.5
 - [n/a] key-rebuild: f.23 and f.24 are different keys (51, 31 conflict), so there is no merge to make
 - [x] image-check: canvas 20-21 gloss-vs-clear re-read on native crops (A4-RFCOL, 6 Oct 2026): gloss, word for word; committed canvas 20 gloss column one line off; key_f24 C codes 14/19 in place vs control p95 6; interlinear_align on the reconciled pairs (A4-COLALN, 6 Oct 2026): per-unit gate FAIL c20 and c21, key unchanged; per-code positional known-answer test, f.24 held out (D07-COL26K, 7 Oct 2026, interlinear/c20c21_positional_k26.py, pre-registered): 42 HELD-OUT-UNDERPOWERED, 11 FAIL (P 0.060), 6 FAIL, key unchanged
   - [x] canvases 11 and 29 retried (D2-COL26, 8 Oct 2026): both fetched; 11 plain text; 29 (folio 26, 30 Mar 1646 extract) mixed-system cipher with interlinear gloss
@@ -2568,3 +2568,20 @@ Result: the editions name La Thuillerie as mediator (Brienne's instruction of 3 
 cites a letter of the dates or phrases of canvas 20-21, f.23 or f.24; the Mazarin 'surintendant' hits are other offices. Not found by this method; the
 Swedish Riksrådets protokoll (no IA item found by title search), Oxenstierna's skrifter for 1644-46, Rigsarkivet originals and Kernkamp were not searched.
 Requests: archive.org 10 + advancedsearch ~18, be-api ~15 (print_check 10), OpenAlex/S2/CORE 0.
+
+
+## COL26-PRINT2 (account 2, 15 Oct 2026): the print rung's named remainder
+
+Brief: .claude/briefs/runs/2026-10-15-ytbiz-default-1109-jobs.md. No reading, grade or key change. A search result for the log, not a novelty verdict.
+Method: archive.org advancedsearch (titles), be-api fts (phrases), djvu text downloaded once and grepped locally (print_grep_local.py: normalised full phrase and 4-word windows, the 16 phrases of phrases.txt + phrases_c50.txt; plus keyword counts).
+
+| edition (IA id) | opened | 16 phrases (full / 4-word) | Thuillerie | Christianopel | note |
+|---|---|---|---|---|---|
+| Kernkamp, De sleutels van de Sont (desleutelsvandes00kern, desleutelsvande00kerngoog) | yes, both scans (the 503 of COL26-PRINT is gone) | 0 / 0 | 24 each | 19 / 16 | Dutch narrative of 1644-45; names La Thuillerie as mediator, prints none of the letters |
+| Oxenstierna Skrifter och brefvexling, Senare afd. bd 8 (rikskanslerenax00palagoog) | yes | 0 / 0 | 2 (index: pp. 318, 604, 702, "franskt sändebud vid Brömsebrofréden") | 4 | letters to Oxenstierna 1644-46 (Wrangel etc.); no French letter of ours |
+| Senare bd 1, 2, 5, 7, 10, 11 (rikskanslerenax00styfgoog, 02akadgoog, 01akadgoog, 01styfgoog, 01palagoog, 03akadgoog) | yes | 0 / 0 | 0 | 0-1 | other years (bd 2, 10, 11 carry 1644-46 dates by count but no Thuillerie) |
+| Förra afd. (rikskanslerenax00akadgoog) | yes | 0 / 0 | 0 | 2 | |
+| Svenska riksrådets protokoll (Kullberg): IA items found handlingarrrand07unkngoog (1642) and handlingarrrand00riksgoog (1633-34) | yes, as a check of what IA holds | 0 / 0 | 0 | 0 | wrong years; the 1644-46 volumes (SRP 10-11) were not found by title search (0 hits), be-api fts "riksrådets protokoll" (815 hits, none of them an SRP volume of those years) or by a Kullberg/Thuillerie query |
+
+be-api fts "Thuillerie" Brömsebro riksråd (55 hits) added no new edition beyond those listed in the COL26-PRINT section (secondary Swedish histories: Fryxell, Henrikson, Jacobson; none a source edition). OpenAlex fulltext search ("La Thuillerie Brömsebro mediation 1645") 0 results; "Svenska riksrådets protokoll 1645" 18, all secondary literature. Semantic Scholar and CORE not queried (OpenAlex returned nothing relevant; not needed to settle the rung).
+Result: none prints or cites a letter of the dates or phrases of canvas 20-21, f.23 or f.24. Not found by this method; SRP 1644-46 and the Rigsarkivet originals remain unopened. Requests: archive.org ~45 (advancedsearch 14, metadata 8, djvu 12, be-api 6), OpenAlex 2, S2/CORE 0.
