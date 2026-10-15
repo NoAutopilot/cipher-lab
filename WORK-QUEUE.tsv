@@ -661,3 +661,4 @@ PAUSE-account-3	account-3	-	-	0	0	paused 2026-10-15 01:54	2026-10-15 01:54	owner
 DEFAULT-account-1-20261015-0206	account-1	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-15 03:25	2026-10-15 02:06	auto-fill: blast 1 of 1 until 2026-10-17 18:00
 DEFAULT-account-2-20261015-0209	account-2	.claude/briefs/default-lane.md	Opus 5.5	60	600	claimed session_01Gd58WqYtVh88ZYsT485HT7 2026-10-15 02:10	2026-10-15 02:09	auto-fill: blast 1 of 1 until 2026-10-17 18:00
 DEFAULT-account-4-20261015-0235	account-4	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-15 03:56	2026-10-15 02:35	auto-fill: blast 1 of 1 until 2026-10-17 18:00; closed 03:5x UTC: budget; 14 workers 49.19 + orch ~8.3
+DEFAULT-account-4-20261015-0437	account-4	.claude/briefs/default-lane.md	Opus 5.5	60	600	claimed session_014F2NNFZiwF72cavhiYaLht 2026-10-15 04:38	2026-10-15 04:37	auto-fill: blast 1 of 1 until 2026-10-17 18:00
