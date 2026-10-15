@@ -118,3 +118,6 @@ licenses S. Read OBRED-SEG/OBRED-BAND sections first.
 ### VER-LVN3 (Opus, cap 2, box 45 min, disk; resources.huygens.knaw.nl <= 2): lodewijk-van-nassau-1573-74 verifier for LVN-K15's three named rows
 Verifier hat, not the solver's session: K16/18, K30/15 (moved to undecided after the decode was seen) and K31/14 81 H. One crop each beside the H
 exemplars, ruling kept/changed/undecided; changes through the corrections path + decode_key --check; carry into AUDIT.md (rule 10).
+
+Wave 3 spawned 11:35 UTC (all Opus): C1161-HC2 session_01EUR1kYw7sCgZ5ipdgYatPe, ELEC-KLU session_01MxQnH7iB48f6vKYRD8Cxsq, BAL-PCT session_01Qg6ZynHb1kxgcJ5yMtg84v,
+OBRED-TRY2 session_01AQKNNThwoctkiovEK5nvJA, VER-LVN3 session_017nKocXNb4sk4JWnubdEEon. Wave 2 archived except MONL-L21 (running).
