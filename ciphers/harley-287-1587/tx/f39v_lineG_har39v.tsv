@@ -1,0 +1,40 @@
+# HAR-39V 15 Oct 2026: BL Harley MS 287 f.39v (DECODE R8479 image 4, IMG_R8479_I39159_P4.jpg, 7459x9830, sha1 7076557b0b0e...) line G, one reader (this session, by eye at 2x-6x native crops; image in scratchpad only, not committed)
+# key: Bourdeau needham1587/decode.py (MIT): J U L C O F N 7 D = a-i plain, k-s dot below ('.'), t-z dot inside (':')
+# x_native = approximate left edge on the full-size image, y band 3170-3330
+word	role	sign_pos	x_native	shape	mark	read_sign	bourdeau_sign	letter	note
+1	control	1	3090	L	none	L	L	c	
+1	control	2	3180	7	none	7	7	h	
+1	control	3	3220	J	none	J	J	a	
+1	control	4	3310	C	below	C.	C.	n	dot at crop's lower edge under lower-left; marginal
+1	control	5	3390	O	none	O	O	e	
+1	control	6	3480	U	below	U.	U.	l	
+2	extra	1	3575	L	inside	L:	L:	w	
+2	extra	2	3640	J	none	J	J	a	
+2	extra	3	3700	D	below	D.	D.	s	
+3	target	1	3780	U	none	U	U	b	
+3	target	2	3865	U	inside	U:	?	u	dot mid-cup, clear
+3	target	3	3920	J	inside	J:	?	t	no left stroke; dot upper-left of corner
+3	target	4	3995	D	none	D	?	i	top, right, bottom drawn; no dot under or in it
+3	target	5	4065	J	inside	J:	?	t	dot sits between sign 4 and sign 5, mid-height
+3	target	6	4120	O	inside	O:	-	y	dot inside, middle-left
+3	target	7	4200	?	below?	?	-	?	blotted/overwritten: faint left vertical + top (+ right vertical under the blot); dot far below; N./F./7. all possible
+3	target	8	4255	F	below	F.	-	p	dot under the middle
+3	target	9	4320	O	none	O	O	e	
+3	target	10	4390	C	none	C	C	d	
+4	extra	1	4460	L	inside	L:	L:	w	
+4	extra	2	4500	D	none	D	D	i	
+4	extra	3	4580	J	inside	J:	J:	t	
+4	extra	4	4640	7	none	7	7	h	
+5	control	1	4770	7	none	7	7	h	
+5	control	2	4830	O	below	O.	O.	o	
+5	control	3	4910	O	inside	O:	O:	y	
+5	control	4	4990	O	none	O	O	e	
+5	control	5	5050	D	below	D.	D.	s	
+8	control	1	5740	F	none	F	F	f	
+8	control	2	5770	J	none	J	J	a	
+8	control	3	5850	D	below	D.	D.	s	
+8	control	4	5900	J	inside	J:	J:	t	
+8	control	5	5990	O	none	O	O	e	
+8	control	6	6050	C	below	C.	C.	n	
+8	control	7	6130	O	none	O	O	e	
+8	control	8	6200	C	none	C	C	d	
