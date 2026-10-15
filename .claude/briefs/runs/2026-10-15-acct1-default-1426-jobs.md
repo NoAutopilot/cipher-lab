@@ -145,3 +145,15 @@ ELEC-3897's Next: "fr.3897 item 39 (Joachim to Bonnivet, Kluckhohn nr. 356) betw
 ELEC-3897's PREREG and rules exactly; locate by canvas label first (tools/gallica_folio.py, manifest on disk if saved), then 1000-2000 px views.
 Report per item: name signs present or not, any occurrence of an nr. 357 / f.51r-block sign. Lead grade M; no key edit. NOTES "## ELEC-39",
 Next updated (if both items are clear, say the fr.3897 route for a second witness is spent).
+
+Wave 4 results (16:4x UTC): JAV-RG 1.95 D (apply_regrades --check passes, key.tsv byte-identical), ELEC-39 1.72 D (fr.3897 item 39 f.84r
+carries name signs barI x5, Zheavy x3, 4 x1, M, one reader); ledgered and archived.
+
+## Wave 5 (16:4x UTC 15 Oct; one job, then close)
+
+### ELEC-356 (Opus, cap 3, box 60 min, archive.org <= 2, openapi.bnf.fr <= 2): fr5761-election-1519 pair f.84r-v against Kluckhohn nr. 356
+ELEC-39's Next (1): "pair f.84r-v against Kluckhohn nr. 356 (p.813, archive.org `bub_gb_0gFoAAAAMAAJ` leaf n821, 1 request) plus c107 (f.84v)
+at 2000 px, under ELEC-PAIR's pre-registered rule; barI, Zheavy and 4 could reach >= 2 pairs each, ~2.5." Read ELEC-PAIR (its PREREG and
+pairing rule) and ELEC-39 first; PREREG addendum committed before the fetch, rule unchanged. Pair each sign position with the print's name at
+the same place; report pairs per sign, agree/conflict with nr. 357 / f.51r values, and what grade the registered rule licenses (a key value
+only if the rule licenses it; conflicts to HYPOTHESES.md with witnesses). Item 37 is not part of this job. NOTES "## ELEC-356", Next updated.
