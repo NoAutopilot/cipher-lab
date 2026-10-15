@@ -28,6 +28,11 @@ import account_usage as au  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 WORD = re.compile(r'\b(allowed_warning|allowed with warning|rejected|allowed)\b', re.I)
+# a reading is the self-report phrase ('usage: five_hour allowed by get_session'), or a status word within 40 characters of a
+# window word (five_hour, seven_day, window, rate limit, 'reads'); anything else is prose and is skipped
+STATUS_PHRASE = re.compile(r'(?:usage:\s*\S+\s+|(?:five[_ -]hour|seven[_ -]day|window|rate[_ -]?limit|reads?)\b[^.;|]{0,40}?)'
+                           r'(allowed_warning|allowed with warning|rejected|allowed)\b'
+                           r'|\b(allowed_warning|allowed with warning|rejected|allowed)\b[^.;|]{0,40}?(?:five[_ -]hour|seven[_ -]day|window|rate[_ -]?limit|by get_session)', re.I)
 WINDOW = re.compile(r'five[_ -]hour|seven[_ -]day|resets?(At)?\b|window|rate_limit|get_session', re.I)
 RESET = re.compile(r'resets?(?:At|\s+at)?\s*:?\s*([0-9]{1,2}:[0-9]{2}\s*UTC(?:\s+[0-9]{1,2}\s+[A-Z][a-z]{2})?|1[0-9]{9})', re.I)
 
@@ -48,15 +53,12 @@ def scan_room(text, now, stale_min):
         acct = au.account_of(role) or au.account_of(body[:120])
         if not acct:
             continue
-        hit = WORD.search(body)
-        if not hit or not WINDOW.search(body):
-            continue
-        if 'warning' in hit.group(1).lower() and re.search(r'allowed_warning\s*(anywhere|on any account)\b', body, re.I) \
-                and not re.search(r'(reads?|read as|by get_session|status)\s*:?\s*allowed_warning', body, re.I):
-            continue  # quoting the rule, not a reading
+        hit = STATUS_PHRASE.search(body)
+        if not hit:
+            continue  # a status word in result prose ("false rejected 18/20", "allowed_warning anywhere") is not a reading
         when = dt.datetime.strptime(when_s, '%Y-%m-%d %H:%M')
         r = RESET.search(body)
-        latest[acct] = dict(word=norm(hit.group(1)), when=when_s, age_min=int((now - when).total_seconds() // 60),
+        latest[acct] = dict(word=norm(hit.group(1) or hit.group(2)), when=when_s, age_min=int((now - when).total_seconds() // 60),
                             reset=r.group(1) if r else '', line=body[:160])
     return latest
 
