@@ -280,6 +280,40 @@ and four crops eye-checked; crops in scratch, not committed, regenerate with the
 Requests: gallica.bnf.fr/iiif 2 (both HTTP 403, host dropped), openapi.bnf.fr 8 (5 overview canvases c69-c73 at 1400 px, 1 info.json,
 2 native regions), one at a time >= 2 s apart; no other host.
 
+## Unit 7 pair check: f.77 / f.76 is Pusterla's letter from Ferrara, 8 Mar 1447 (PUST-F77, account 2, 15 Oct 2026, 03:31-03:4x UTC by date -u)
+
+Worker PUST-F77 (Opus) for LANE DEFAULT-account-2-20261015-0209, brief `.claude/briefs/runs/2026-10-15-ytbiz-default-0209-jobs.md`
+(PUST-F77). Check 1: no later section of this NOTES.md or ../../sforza-pusterla-1447-f13/NOTES.md had run unit 7, no AUDIT.md in either
+folder, no other live claim in the last 60 ROOM lines. Intake gate (pasted): `sforza-pusterla-1447-f13: partial (line 1) --
+edition/page or full-text-search citation found within 6 lines`, exit 0. Pair check only, as the brief requires: no crops for a pass, no
+blind passes, no G1, no lattice rerun; key.tsv, gate_g1.tsv and f.13's numbers are unchanged.
+
+- **f.76 (c73 right, verso on c74 left).** Later-hand clear copy headed "8 mars [1447]", opening "Hogi son undece di che giorni qua, e
+  prima et dapoi piu volte o scripto a V.S. che mandase qua uno de' soi, che 'l daria vinti milia ducati"; names the Duke of Ferrara, the
+  Venetian army at Cremona, the Ghibellines, Bordolano, the Count of Urbino. The verso (native region committed, read by eye) closes
+  "... la pratica di Bologna ... Datum Ferarie die octava Martij. / C. M. E. V. / Humilis Servitor Petrus de Pusterla", addressed
+  "Illustri d. Francisco Sfortie" (overview). **Sender: Pietro da Pusterla, Ferrara, 8 Mar 1447** -- the same sender, place and month as
+  the four key units.
+- **f.77 (c74 right).** A cipher slip headed "1447 8 Mars", 33 lines (`iiif_lines.py` band count on the native region), wholly cipher, in
+  the Pusterla sign set as far as the 1400 px view shows (fo, pez, den, gto-like groups, the barred q and p forms of ciphertext_f42.tsv).
+- **Pairing.** f.77 and f.76 share the date (8 Mar 1447) and sit on the same opening; f.77 is longer than f.81 (23 lines, f.80 1176
+  letters), consistent with f.76's ~33 copy lines. Same text **inferred** from date, sender, adjacency and length, as for f.72/f.73; not
+  checked sign by sign. The copy leaves three blanks ("per la via del ___", "il ___ vene", "veduto il ___"), each with a mark copied in the
+  margin: probably name codes the copyist did not render (inferred) -- the clear text will not gloss those three groups.
+- So f.77/f.76 is the **fifth Pusterla key unit** (the brief's "unit 7"; the units list numbers it after f.81, f.42, f.71, f.67). Next:
+  crops from the committed region, two blind passes (Opus + Sonnet) + one reconciliation, align with f.76 as align_f81.tsv was built,
+  rerun g1p.py and lattice_decode.py on both corpora, ~$3 (about four vision units plus reconciliation). Not run here, per the brief.
+
+Commands (canvas 74 = f.77 right, f.76 verso left; canvas 73 = f.76 recto right):
+`python3 tools/iiif_lines.py --ark btv1b100373864 --canvas 74 --iiif-host openapi --region 4500,120,3000,2950 --out ciphers/sforza-italien1584-1447/pusterla/f77 --prefix f77 --overlap 0 --max-width 1500 --dry-run`
+(33 bands; source committed as `f77/src_image_v3_ark_12148_btv1b100373864_f74_4500_120_3000_2950.jpg`) and the same with `--region
+1600,950,1600,1300 --prefix f76v` (f.76 verso closing, committed). A unit-7 pass worker cuts line crops with `--image <f77 src file> --out
+<dir> --prefix f77 --overlap 0 --max-width 1300 --deskew-region --debug` and checks the overlay first. The f.76 recto (c73, x 4600-7500 at
+native 7778 px width) is not yet fetched at native size: one request for the align step.
+
+Requests: openapi.bnf.fr 5 (overviews c73 and c74 at 1400 px, 1 info.json, 2 native regions), all HTTP 200, one at a time >= 2 s apart;
+no other host. Osio III was not re-grepped for f.76's words (archive.org not in this brief): a print check for the next worker.
+
 ## Remaining gaps (SFZP-SIB, 15 Oct 2026; supersedes SFZ-F42's list)
 Read so far: 0 unglossed letters read as text; key passes G1 at 0.768 mean held-out accuracy over 4 glossed units (f.81 and f.42 two readers each)
 - one sign-label convention across the four key slips - blocker: not-attempted; f.71 and f.67 reconcilers settled T=/b- opposite ways; f.81 and f.42 still split T=/b-, b/b-, q=/go, n/y; next: owner sign sorter on those shapes (focus pairs from f71/rec, f67/rec, f81rec, f42rec disagreements.tsv), relabel, rerun g1p.py, ~$2 plus owner time
@@ -295,3 +329,19 @@ Read so far: 0 unglossed letters read as text; key passes G1 at 0.768 mean held-
 - [ ] image-check: single label convention across the four slips (owner sorter); second readers done for f.81 and f.42
 - [x] retry: G1 rerun with the reconciled f.42
 Verdict: keep going: 3 internal gaps; cheapest next: f.76 sender read and f.77/f.76 pair check, ~$0.5
+
+## Remaining gaps (PUST-F77, 15 Oct 2026; supersedes SFZP-SIB's list)
+Read so far: 0 unglossed letters read as text; key passes G1 at 0.768 mean held-out accuracy over 4 glossed units (f.81 and f.42 two readers each)
+- one sign-label convention across the four key slips - blocker: not-attempted; f.71 and f.67 reconcilers settled T=/b- opposite ways; f.81 and f.42 still split T=/b-, b/b-, q=/go, n/y; next: owner sign sorter on those shapes (focus pairs from f71/rec, f67/rec, f81rec, f42rec disagreements.tsv), relabel, rerun g1p.py, ~$2 plus owner time
+- f.77 with copy f.76 as the fifth key unit - blocker: not-attempted; pair check done (PUST-F77: f.76 is Pusterla's from Ferrara, 8 Mar 1447; f.77 the 33-line cipher slip of the same date; same text inferred); next: crops from f77/src_image_v3_..._f74_4500_120_3000_2950.jpg, two blind passes + reconciliation, align with f.76 (one native fetch of c73), rerun g1p.py and lattice_decode.py, ~$3
+- Cerioni 1970 / ASMi cipher registers for a period Pusterla key - blocker: not-attempted; no period key located yet; next: a key-hunt row for the lane, ~$2
+
+## Escalation (PUST-F77, 15 Oct 2026)
+- [ ] siblings: f.81/f.80, f.42/f.41, f.71/Osio CCCXCI, f.67/f.66 used; f.72/f.73 (Duke) and f.75/f.74 (Marcolino) excluded; f.77/f.76 pair-checked as Pusterla's (PUST-F77), passes not run; c64-c74 has no other candidate
+- [x] clear-pages: later-hand copies f.80, f.41, f.66 used; Osio's print for f.71; f.76 identified for f.77
+- [ ] known-keys: Cerioni 1970 not checked
+- [x] print: Osio III searched (f.71's text printed; f.73's distinctive words absent from Osio III's OCR, grep 15 Oct 2026); f.76 not yet grepped
+- [x] key-rebuild: key.tsv rebuilt from 4 units (f.81 and f.42 two readers), G1 PASS 0.768
+- [ ] image-check: single label convention across the four slips (owner sorter); second readers done for f.81 and f.42
+- [x] retry: G1 rerun with the reconciled f.42
+Verdict: keep going: 3 internal gaps; cheapest next: unit f.77/f.76 two blind passes + reconciliation, align with f.76, G1 and f.13 lattice rerun, ~$3

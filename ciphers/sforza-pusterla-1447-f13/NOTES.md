@@ -419,20 +419,27 @@ Francesco Sforza of 7 Mar 1447 (Duke's key family), f.75/f.74 Marcolino Barbavar
 key, so the key was not re-pooled and lattice_decode.py was not rerun: f.13's numbers stand as S9 left them (rank 1/201 on both corpora,
 judge FAIL on both). f.77/f.76 is the last candidate sibling.
 
-## Remaining gaps (SFZ-F42, 9 Oct 2026, updated SFZ-LOOK2 11 Oct 2026; supersedes SFZ-READ2's list)
+## S11: sibling f.77/f.76 is a Pusterla pair, the fifth key unit (PUST-F77, account 2, 15 Oct 2026, 03:31-03:4x UTC by date -u)
+
+Pair check only (see ../sforza-italien1584-1447/pusterla/NOTES.md, "Unit 7 pair check"): f.76 is the later-hand clear copy of Pietro da
+Pusterla's letter from Ferrara of 8 Mar 1447 (verso: "Datum Ferarie die octava Martij ... Humilis Servitor Petrus de Pusterla"), and f.77
+the 33-line cipher slip headed "1447 8 Mars"; same text inferred from date, sender, adjacency and length, not checked sign by sign. No
+passes were run (brief), so key.tsv was not re-pooled and lattice_decode.py was not rerun: f.13's numbers stand as S9 left them.
+
+## Remaining gaps (SFZ-F42, 9 Oct 2026, updated SFZ-LOOK2 11 Oct 2026 and PUST-F77 15 Oct 2026; supersedes SFZ-READ2's list)
 Read so far: 0 lines read as Italian; lattice decode rank 1/201 on it16dip and it15 under the 4-unit key with f.81 and f.42 two readers, also after the f.13 look-alike passes (S8, S9); judge FAIL on both corpora; signature decodes "deptsterla"
 - Pusterla sign-label convention across readers - blocker: not-attempted; f.71 and f.67 reconcilers settled T=/b- opposite ways; f.81 and f.42 still split T=/b-, b/b-, q=/go, n/y; next: owner sign sorter on the four slips' T=/b-/h-/d/g/y/d'/q=/go shapes (focus pairs from f71/rec, f67/rec, pusterla/f81rec, pusterla/f42rec disagreements.tsv), then rerun g1p.py and lattice_decode.py, ~$2 plus owner time
 - f.13 transcription - blocker: open-codes; look-alike passes done (S8: 10 relabelled; S9 SFZ-LOOK2 on So/go, 8/g, h/h-, a/ze: control 13/16, 7 relabelled, 10 unsettled in lookalike/look2/focus.tsv; lattice rank 1/201 both corpora, judge FAIL); the decode-relevant split left is So/go (6/7 unsettled at L) plus the 3 S8 tiles; next: owner sign sorter on lookalike/focus.tsv + lookalike/look2/focus.tsv (So/go shapes first), then rerun lattice_decode.py, ~$1.5 plus owner time
-- remaining Pusterla sibling f.77 with copy f.76 - blocker: not-attempted; f.72/f.73 (Duke) and f.75/f.74 (Marcolino) excluded at the pair check (S10, SFZP-SIB 15 Oct 2026); next: read the sender of f.76 and pair-check f.77, then two passes + reconciliation if it is Pusterla's, ~$0.5 + ~$3
+- Pusterla sibling f.77 with copy f.76 as the fifth key unit - blocker: not-attempted; pair check done (S11, PUST-F77 15 Oct 2026: f.76 is Pusterla's from Ferrara, 8 Mar 1447); next: two blind passes + reconciliation on f.77, align with f.76, rerun g1p.py, then lattice_decode.py on both corpora, ~$3
 - print and novelty search on any decoded text - blocker: not-attempted; nothing reads yet; next: after a judge PASS, tools/print_check.py and a verifier session, ~$3
 - known period key - blocker: not-attempted; no period Pusterla key located yet; next: Cerioni 1970 / ASMi Sforzesco cipher registers key-hunt row, ~$2
 
 ## Escalation (SFZ-F42, 9 Oct 2026)
-- [x] siblings: f.81/f.80, f.42/f.41, f.71/Osio CCCXCI, f.67/f.66 used; f.72 (Duke) and f.75 (Marcolino) excluded (S10); f.77 remains
+- [ ] siblings: f.81/f.80, f.42/f.41, f.71/Osio CCCXCI, f.67/f.66 used; f.72 (Duke) and f.75 (Marcolino) excluded (S10); f.77/f.76 pair-checked as Pusterla's (S11), passes not run
 - [x] clear-pages: later-hand copies f.80, f.41, f.66 and Osio's print of f.71 used
 - [ ] known-keys: Cerioni 1970 and ASMi Sforzesco cipher registers not checked for a Pusterla 1447 key
 - [x] print: Osio III full-text searched (f.13 absent; f.71's text printed as no. CCCXCI)
 - [x] key-rebuild: key.tsv from four pairs (f.81 and f.42 two readers), G1 PASS 0.768
 - [ ] image-check: label-convention sorting across the four key slips not done (second readers done for f.81 and f.42)
 - [x] retry: lattice_decode.py under the re-pooled key on it16dip and it15, rank 1/201 both, judge FAIL both
-Verdict: keep going: 5 internal gaps; cheapest next: f.76 sender read and f.77/f.76 pair check (the last sibling; S10), ~$0.5; the f.13 So/go tiles wait on the owner's sorter (SFZ-LOOK2, 11 Oct 2026)
+Verdict: keep going: 5 internal gaps; cheapest next: f.77/f.76 two blind passes + reconciliation, G1 and lattice rerun (S11), ~$3; the f.13 So/go tiles wait on the owner's sorter (SFZ-LOOK2, 11 Oct 2026)
