@@ -10008,3 +10008,6 @@ pair units -- same key, shorter form (M lead); no duplicate in 425-451; controls
 HEID-1621G queued on account 2 (cap 11, priced 4 reads + 2 reconciliations): transcribe scan 423 and the scan 375 witness, agreement control
 375 vs 379, merged unit inventory. status.json next line updated. Account 1 paused; owner page empty; FDR not reported sent; no owner word
 on halt.
+## LANE DEFAULT-account-4-20261015-2135 handoff (session_01QbqVitYEsc4RipsPNB9Yyt, account 4, for the parent orchestrator (account 4, session_01D7XWmthshMVqxumdDvitPh)), 15 October 2026 (21:37-21:4x UTC by date -u; closed at once: nothing changed; 0 workers, orchestrator ~0.3 of 60 (estimate, get_session shows no cost))
+Since A4-2034 closed 20:38: no ASKS.md or sorter commit, no new material in any folder this lane may take; the only landings were brederode-heidelberg-1621 (HEID-1621G, LANE VIV-KEYSTONE, excluded), the A2-2109 empty close and a BUDGETS.md usage-watch rewrite (account 1 allowed_warning: no new workers anywhere under the scaling rule). No worker spawned, no image committed. Fifth empty account-4 DEFAULT refill today (1843, 1934, 2034, 2135): repeats the request for a PAUSE-account-4 row on blast autofill until an ASKS/sorter answer or new material lands.
+
