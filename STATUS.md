@@ -9742,6 +9742,39 @@ Lessons: (1) small disk/eye jobs at cap 2 ran 1.2-1.4x -- price them at ~3; (2) 
   measurement job without that sort or new material. Next after the sort: the registered err_true test, then PREREG-VIVPACKET4 with the six
   g-split positions among its questions.
 
+## LANE DEFAULT-account-2-20261015-1410 handoff (session_01G3YvfSwGyU4kTVGDbmqiF5, account 2, for the orchestrator (owner account)), 15 October 2026 (14:10-15:4x UTC by date -u; closed: backlog spent; workers 30.39 + orchestrator ~7.6 = ~38.0 of 60 by get_session; five_hour allowed throughout)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-15-ytbiz-default-1410-jobs.md (waves 1-3). Gate 0a: SESSION-SWEEP-account-2
+claimed since 5 Oct, stale, proceeded. VERIFY-BACKLOG: Birago/ceppo rows off limits; the eckert-1864 (25) and manteuffel (2) audit2 rows are all
+N1 / text known, and Outreach gate 2 asks a second audit only above N1, so not run (suggest verify_backlog.py drop audit2 rows at N0/N1).
+Step b: two read-only triages of 67 hot folders against their latest NOTES sections; most NEXT-STEPS lines were stale or wait on a person.
+Excluded: live A4-1236/A4-1441, VIV-KEYSTONE, BNF-FOCUS holdings, Birago, Armstrong, Debosnys. 12 workers (7 Opus, 5 Sonnet), all
+ledgered + archived. Known-text share: CLIN-3502B 3.65 + ECK-GB5 0.65 = 4.30 of 30.39 (~14%); AVS-153 5.73 built a key from the leaf's period
+decipherments for the unread letters of that key family.
+Results:
+- decode-1162-modena-ambung-1492 (DEC1162-RK 2.73 N): the owner's six g/q piles applied; the split lowers G (0.7241 vs merged 0.7288), so it
+  stays in *_split files per PREREG and the reading is unchanged; decode-1168 re-keyed.
+- fr3151-noailles-1558 (NOA-TAM 0.58 N): no cloud-readable copy of Tamizey de Larroque 1865; grep not run.
+- bne20211-ferdinand-1478 (BNE-PRES 0.67 D): 7 of 12 decipherment phrases (D03-D15) present in Paz y Meliá 1914 (be-api fts); opening D01-D02
+  unconfirmed; a verifier decides the print question.
+- fr16045-pisany-rome-1585 (PIS-121B 4.14 N): f.121 registered FAIL again (32 vs 34) with fresh line-per-call gloss reads (passes 25.4% apart);
+  second failure of this score on f.121 -- per rule 3 the next try needs a different instrument or a person's gloss read.
+- fr16144-savary-lancosme-1588 (SAV-L29 2.74 D): c251 gloss line 29 read (M); 1 of 12 other lines firmed; alignment waits on the owner's sort.
+- pro3055-clinton-1779 (CLIN-3502B 3.65 D): B.147 p.300 on the 1778 key, B2 PASS 37/42 vs control max 7 (text known).
+- harley-287-1587 (HAR-37R 5.16 N): f.37r/f.41r cipher passes score inside the shuffled-gloss controls; no key value; 1.29x cap.
+- august-van-saksen-1561-64 (AVS-153 5.73 D): WVO 153 lines 1-20 keyed (709 signs, 35 classes), both gates pass; W1 native check open.
+- na-suriname-map-1781 (SUR-DH 0.95 N): den Heijer pp.327-329 read: 2077 legend "partly encrypted, not transcribed"; p.328 = 2076 (second
+  print reader of the existing crib).
+- willem-van-hessen-1567 (WVH-CROP 2.48 N): compact-8 conflicts on sign 2.18, nine unkeyed; 1.24x cap.
+- eckert-1864 (ECK-GB5 0.65 N) and fr4715-f61-mayenne-1592 (F61-GB 0.91 N): googleapis answered 200 at 15:16 UTC and 503 again within
+  minutes; E592/E589 unsearched (L80); f61: 1 of 6 phrases answered, no printed text.
+Blocked hosts this window: HTRC EF API (MongoError, rah-salazar), gallica.bnf.fr IIIF manifest 403 (openapi.bnf.fr fine), googleapis flapping.
+Next (cheap, not run): august-van-saksen W1 native check (~2); fr3151 Tamizey 1865 via a desk route (LOCAL-QUEUE); f61 five GB phrases when
+googleapis holds; florence-dieci c.70 sorter prep (~1.5, for an owner sort); na-suriname inv.373 blind transcription (~6-8, family heavy in
+non-tests).
+Lessons: (1) NEXT-STEPS.tsv is mostly stale for hot folders -- a ~$0.5 Sonnet triage subagent over 30+ folders found the 4-6 real steps
+quickly; (2) image jobs on DECODE / gloss crops again ran 1.2-1.3x cap (HAR-37R, WVH-CROP): price them by vision units, not by step.
+
 ## LANE DEFAULT-account-2-20261015-1109 handoff (session_0177nygw3K3f1ZmuZumybKEf, account 2, for the orchestrator (owner account)), 15 October 2026 (11:10-13:0x UTC by date -u; closed: in-scope backlog thin, under one wave of budget left; workers 44.62 + orchestrator ~7.3 = ~51.9 of 60 by get_session; five_hour allowed throughout)
 
 Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-15-ytbiz-default-1109-jobs.md (waves 1-4). Gate 0a: no SESSION-SWEEP-account-2
