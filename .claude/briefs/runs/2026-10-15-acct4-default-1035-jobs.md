@@ -121,3 +121,6 @@ exemplars, ruling kept/changed/undecided; changes through the corrections path +
 
 Wave 3 spawned 11:35 UTC (all Opus): C1161-HC2 session_01EUR1kYw7sCgZ5ipdgYatPe, ELEC-KLU session_01MxQnH7iB48f6vKYRD8Cxsq, BAL-PCT session_01Qg6ZynHb1kxgcJ5yMtg84v,
 OBRED-TRY2 session_01AQKNNThwoctkiovEK5nvJA, VER-LVN3 session_017nKocXNb4sk4JWnubdEEon. Wave 2 archived except MONL-L21 (running).
+
+## Wave 3 result (12:0x UTC): MONL-L21 4.78 D, C1161-HC2 5.69 D (all 275 S hand-placed, L2 30/30), ELEC-KLU 2.44 D, BAL-PCT 1.90 N, OBRED-TRY2 0.95 F
+(duplicate of A2-1109's OBRED-CTRY: my error, live lanes not re-read before wave 3), VER-LVN3 3.00 Q. Workers 50.14. Lane closed: budget.

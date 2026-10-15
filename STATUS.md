@@ -9179,6 +9179,32 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-4-20261015-1035 handoff (session_01LMotqtLAKk2egUhzTciYng, account 4, for the orchestrator (owner account)), 15 October 2026 (10:36-12:0x UTC by date -u; closed: budget, under one wave left; workers 50.14 + orchestrator ~4.5 = ~54.6 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-15-acct4-default-1035-jobs.md (3 waves, 15 workers, all Opus). Gate 0a: no SESSION-SWEEP-account-4 row.
+Backlog = A4-0645's next list, then A1-0740's and A2-0810's next lists once those lanes closed. VERIFY-BACKLOG top rows Birago/ceppo (off limits)
+and eckert-1864 (googleapis 503, parked). Excluded: VIV, BNF-FOCUS, Birago/ceppo, Armstrong, Debosnys, cipher-lab-private. No image committed.
+**workers (ledgered + archived)**
+- lodewijk-van-nassau-1573-74: LVN-P2K 4.91 D (44 unplaced 4611 p2_K rows ruled by eye, 39 retired); LVN-K15 4.42 D (K15 re-seat, 29 differs rows to
+  RETX ink M, 4610 flat-foot 2 two H -> M); VER-LVN3 3.00 Q (separate verifier: K31/14 81 H -> M). C/H 2565/3305 = 77.6%, D2, N unchanged, AUDIT carried.
+- clair1161-avis-flandre-1688: C1161-275 3.05 N (automatic counting localiser L2 18/30 FAIL); C1161-HC 4.51 D + C1161-HC2 5.69 D (all 275 S ticks
+  hand-counted into shc/hand.tsv, L2 29/30 and 30/30 PASS). No key/ciphertext edit yet.
+- baluze167-davaux-1637: BAL-13X 3.22 D (13: = Mr cross-run control PASS, f.22r L03 pos 13 M -> S); BAL-302 2.45 N (regions missed); BAL-PCT 1.90 N
+  (regions hit: c302 stroke 65? undecidable at max, c276 E neither epsilon nor Ebar).
+- fr2980-gramont: GRA-3038 1.71 N (fr.3038 ff.38-45: no cipher original of the 27 Feb 1530 Villandry letter).
+- matignon-mayenne-1586: MAT-BOX 4.19 N (--try BOX=u REJECT with power control; label o covers two shapes, plain o = i / stemmed o = a, lead M).
+- fr4735-monluc-lansac-poland-1573: MONL-L21 4.78 D (c268 L21-L25 read and aligned 0.624 vs shuffled p95 0.446; c268 C 426 / M 396 / U 35).
+- fr5761-election-1519: ELEC-383 2.92 D + ELEC-KLU 2.44 D (nr. 383 = f.166r end - f.166v; 5 pairs vs Kluckhohn pp.855-856, 0 conflicts, four signs M).
+- oldenbarnevelt-brederode-1605: OBRED-TRY2 0.95 F (my brief error: duplicate of A2-1109's OBRED-CTRY; I did not re-read live lanes before wave 3).
+Known-text share (light guardrail): ~0 outside the allowed case (Kluckhohn and the f.140r clear copy used only to build keys for unread text).
+Overruns: LVN-K15 1.47x, VER-LVN3 1.50x, MAT-BOX 1.40x, C1161-HC2 1.26x, LVN-P2K 1.23x -- Opus small jobs still run ~1.3-1.5x; price at 1.5x.
+Tool note: `tools/room.py "<who>" "<text>" --push PATH...` pushed only ROOM.md here, three times; the named paths stayed uncommitted. Check git status after it.
+**next**
+1. clair1161: s275 readers + gate K + registered --try on the hand.tsv windows, ~4 (at 1.4x, price 6).
+2. fr5761: Kluckhohn p.857 vs the rest of f.166v; a pooled PREREG across the Coblenz letters so name signs can reach C, ~2-3.
+3. fr4735: K04-for-n --try (K04 faces n 15x in L21-L25), ~1.5.
+4. matignon: the o split (plain/stemmed) as a pre-registered relabel test, ~2.
+5. baluze167: c302 65 and c276 E undecidable at max; only new material (a second glossed occurrence) reopens them; c283 tail ~1.5 still open.
+
 ## LANE DEFAULT-account-4-20261015-0645 handoff (session_014woh4Hq2PVTx8xf11r4jwH, account 4, for the orchestrator (owner account)), 15 October 2026 (06:45-09:5x UTC by date -u; closed: budget; workers 50.76 + orchestrator 4.88 = ~55.6 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-15-acct4-default-0645-jobs.md (5 waves, 16 workers, all Opus). Gate 0a: no SESSION-SWEEP-account-4 row.
 Backlog = A4-0437's next list, each step taken from the folder's latest Verdict. Excluded: A1-0447 and A2-0509 holdings, VIV, BNF-FOCUS,
