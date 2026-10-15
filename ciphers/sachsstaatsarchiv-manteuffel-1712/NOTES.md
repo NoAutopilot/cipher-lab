@@ -4594,3 +4594,8 @@ run). Found: the located.tsv table above. Not found: any automatic way, from the
 Next (suggestion): digit-level boxes for the 8 conflict slots, 0063 slot02-04 and a sample of the 69 exemplars -- either a person boxing
 them in the sign sorter (blind, no gloss) or a cipher-run digit cutter added to tools/glyph_atlas.py with an offline test -- then the rule
 above as written (~$2).
+
+## MANT-V66 pointer (15 Oct 2026, verifier, account 1, LANE DEFAULT-A1-1140-15)
+Verifier ruling in AUDIT.md "MANT-V66": agree 66 = a (C); 'Alefeld' on 0151 L glosses the whole spelled group 66.8.44.1.2.12.120 = a-h-l-f-e-l-d
+(corrects MANT-66's "a-h-l-e-f-e-l-d"); `decode_key.py --try 66=ALEFELD` reject (-153.8 bits, n=12); 0151 R '66. avoit ose' undecided (M, no crop).
+No key change. Status unchanged (partial).

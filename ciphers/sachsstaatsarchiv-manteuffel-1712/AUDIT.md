@@ -2043,3 +2043,30 @@ Rozrazewski, Livland); Google Books API phrase rows of this audit's families onc
 Requests this audit: www.googleapis.com 5 (all 429), books.google.com 10 (search-within), archive.org 4 (djvu 500, searchtext 500, metadata
 2), be-api.us.archive.org 36 (one 502), api.openalex.org 9, api.core.ac.uk 5 (two 500), api.semanticscholar.org 3 (two 429).
 www.archiv.sachsen.de 0. Vision calls 0.
+
+## MANT-V66 (15 Oct 2026, 12:33-12:4x UTC by date -u, verifier for LANE DEFAULT-A1-1140-15, account 1): 66 'Alefeld' on 0151 vs key.tsv 66 = a, disk only
+
+Brief: .claude/briefs/runs/2026-10-15-acct1-default-1140-jobs.md "### MANT-V66". Under audit: MANT-0151's side note (both blind passes read
+'Alefeld' over the group 66.8.44.1.2.12.120 on 0151 L; '66. avoit ose' with 'Alefeld' above it on 0151 R, eye remark only) and MANT-66's
+classification (10 Oct 2026: no data conflict, 66 = a holds, standalone 66 an initial). This verifier is a separate session from both.
+Disclosure: this verifier read MANT-0151, MANT-66 and key.tsv before looking; the look below was not blind.
+Evidence:
+1. key.tsv row 66: `66 a C Krauske 1893, Loc. 694/10 f.3 passes agree; note: Angleterre`. The group's other codes are all C on the same
+   table: 8 h, 44 l, 1 f, 2 e, 12 l, 120 d (ff.2-4).
+2. Spelled reading: 66.8.44.1.2.12.120 under key.tsv = a-h-l-f-e-l-d, seven codes, seven letters: 'Ahlfeld', a spelling of Ahlefeldt.
+   Correction to MANT-66: it wrote "a-h-l-e-f-e-l-d" (eight letters from seven codes); no e sits between l and f. The classification
+   (the gloss names the spelled word, not a value of 66) is not affected.
+3. Own look (1 unit, f0151_08/crops/mK3_L01_x2.jpg): 'Alefeld' is written above the group, starting over the 8 and ending near the 1,
+   i.e. centred over the group's first half, not over the 66 alone, and spanning about as many letters as the group has codes. A clerk's
+   interlinear rendering of a spelled name; it matches both blind passes ('over 44', 'group (over 44)').
+4. Control, `python3 tools/decode_key.py ciphers/sachsstaatsarchiv-manteuffel-1712 --try 66=ALEFELD --lm fr18` (try-log in scratch, not
+   committed): n 12 (the occurrences of 66 in the committed ciphertext.tsv; the 0151 group is not in it), statistic -153.8 bits against the
+   current value a, value-class null p95 -26.2 (the position null printed no p95), verdict **reject** (no better than the current value).
+   Baseline `--try 66=a`: 0.0 bits, undecided (equals the current value), as the tool's must-not-flag case requires. Contexts where 66 = a
+   reads in running French: 'd [a] n m a r ch e', 'int [a] n o st r e', 's [a] v o i r', 'contr [a] i r e', 'm [a] negociat...'.
+Ruling: **agree** with key.tsv 66 = a (C) and with MANT-66's classification: 'Alefeld' on 0151 L glosses the whole spelled group, not code 66;
+**disagree** with any reading of 66 as a name code for Ahlefeld(t). 0151 R '66. avoit ose' under 'Alefeld' stays **undecided** (M): no committed
+crop, so not looked at here; MANT-66's initial-practice reading ('A.' = Ahlefeld, as 66 alone = 'A.' Arnhold on f.468) remains plausible and
+untested. No key change (nothing to license one); no reading token regraded. No novelty class change.
+Requests: none. Vision: 1 own look (this verifier), 0 subagent calls. Cost not visible to this session.
+Next (optional, as MANT-66): cut 0151 R's '66. avoit ose' line (1 sachsen GET) and one blind gloss read to move that slot from M (~$1).
