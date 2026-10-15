@@ -1,0 +1,20 @@
+K X030 ('c188L_L24', 19) agreed L A L B L AB L
+K X165 ('c185R_L23', 19) agreed L A ? B ? AB ?
+K X213 ('c187L_L15', 27) agreed L A L B L AB L
+K X088 ('c188L_L07', 18) agreed L A L B O AB ?
+K X235 ('c185R_L18', 5) agreed O A ? B ? AB ?
+K X175 ('c187R_L22', 6) agreed O A O B O AB O
+K X190 ('c187R_L25', 12) agreed O A O B O AB O
+K X071 ('c188L_L27', 20) agreed O A O B O AB O
+K X069 ('c187R_L22', 4) agreed O A O B O AB O
+K-B: 6/7 decided to agreed class, 2 marked ? -> FAIL
+K-AB: 6 right, 0 wrong, 6 decided of 9 -> PASS
+A: both decided 118; raw agreement 0.992; kappa 0.982 -> PASS
+A x B table (rows A, cols B):
+      O     L     ?
+O    46     0    31
+L     1    71    49
+?     2     2    73
+B counts: {'?': 153, 'L': 73, 'O': 49}
+T: agreed O 46, L 71, ? 158 -> PASS
+NON-TEST: a gate failed; step 2 not run as a test

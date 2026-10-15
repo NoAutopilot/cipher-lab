@@ -1,0 +1,6 @@
+{
+ "note": "C1161-SORT2 (15 Oct 2026): --try harness only, POST-HOC after gate K-B FAILED (sort B: 6/7 decided, 2 of 9 known-answer windows ?); S split where two blind sorts agree (So open 46, Sl looped 71, S otherwise 158), all read u. Never a reading.",
+ "jobs": [
+  {"ciphertext": "sort2/ciphertext_split.tsv", "key": "sort2/key_split.tsv", "style": "spaced", "reading": "sort2/try_reading.txt", "tokens": "sort2/try_tokens.tsv"}
+ ]
+}
