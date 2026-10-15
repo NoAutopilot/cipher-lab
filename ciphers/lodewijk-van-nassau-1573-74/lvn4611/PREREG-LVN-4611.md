@@ -251,3 +251,26 @@ Apply: `lvn4611/corrections_p2k.tsv` (keep/retire/move/set, keyed by post-VER-LV
 `../settle.py`, retired rows to `lvn4611/retired_p2k.tsv`, touched p2_K lines renumbered. Then decode_key.py --check (all decode*.json), the
 settle/apply --check chain as LVN-P2B; C/H/M/I/U before and after; every grade change carried into AUDIT.md (rule 10).
 Stop rule: 80% of cap (3.2) or box (11:43 UTC); the second, conditional step (4610 flat-foot-2 eye check) only if >= 30% cap left.
+
+## Addendum LVN-K15 (15 Oct 2026, 11:1x UTC by date -u, account 4, LANE DEFAULT-A4-1035-15) -- written before any image is looked at
+
+Step: LVN-P2K's named next: (1) the K15/15 85 M second row and the K15 18/39 re-seat, (2) the other positional `differs` pairs on K13-K35,
+(3) the 4610 flat-foot-2 H eye check. Disk + one WVO 04611.pdf and one 04610.pdf fetch (resources.huygens.knaw.nl, take/release).
+Targets for (1)-(2), mechanical (scratch script over retx_p2_map.tsv + ciphertext_4611.tsv): every current p2_K row whose map status is
+`differs` and whose current sign differs from the mapped RETX ink token, minus rows an earlier eye already ruled (VER-LVN2: K17/10 104 H,
+K19/20 150 H; LVN-P2K: K33/3 130/150 undecided), plus K15/15 85 M. Rows whose current sign already equals the mapped ink (K17/3, K17/6,
+K22/16, K23/5, K23/6, K24/4-6, K24/8, K32/19) are not targets; four of them (K17/6, K23/6, K24/5, K32/19) are the **positive control**.
+Look: Opus eye (this session, no subagent) on the 300-dpi deskewed line crops (same render and iiif_lines.py command as LVN-P2K), half lines
+at ~1.3x, beside exemplars on the same line or page. Not blind (the look knows both the row value and the RETX ink); stated as such.
+Rulings per row: **set** to the value the eye reads (grade M; an H row changed goes to M, LVN-EYE convention; no grade is raised);
+**retire** when the row is a second rendering of an ink token another row carries (the carrier named); **keep** when the eye reads the
+committed value; **undecided** (left as is, listed) when the eye cannot choose. Words: set only when the eye reads the word clearly.
+Gates: positive control 4/4 read as committed (else stop, nothing applied); consistency: the eye's reads of the non-target numerals in the
+same crops agree with RETX ink on >= 90% (else nothing applied, rows listed as undecided).
+(3) 4610: the H tokens ending in 1 or 8 on p1_L04 and p1_L09 (the two lines where LVN-EYE saw the flat-foot 2), including the named
+p1_L09/16 11 H and p1_L09/18 101 H: eye on the 300-dpi WVO 04610 p1 render beside the lone 2 at p1_L04/20 (H) and the 8 of 38 at p1_L04/17:
+kept / changed (to M) / undecided. The rest of 4610 stays unchecked and is listed as a remaining gap.
+Apply: `lvn4611/corrections_k15.tsv` as a third pass of the VER-LVN2 stage of `../settle.py` (retired to `lvn4611/retired_k15.tsv`);
+4610 rows appended to `lvn10/corrections_lvneye.tsv` (note tagged LVN-K15). Then decode_key.py --check (all decode*.json) and the
+settle/apply --check chain; counts before/after; grade changes carried into AUDIT.md (rule 10).
+Stop rule: 80% of cap (2.4) or box (11:56 UTC); (3) only if (1)-(2) finish before 11:45 UTC.
