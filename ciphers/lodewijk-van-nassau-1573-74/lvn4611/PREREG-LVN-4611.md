@@ -220,3 +220,34 @@ untouched. Then decode_key.py --check for all decode*.json, settle.py --check, l
 recounted before and after. No value is changed by step 2; its only effects are order, line ids, and the retired duplicates.
 Stop rule: none priced beyond the worker's own time (estimate ~3 of the USD 5.5 cap); if either step's checks fail and cannot be fixed by
 the 80% line (09:30 UTC), revert that step and log it.
+
+## Addendum LVN-P2K: placement of the unplaced 4611 p2_K rows (15 Oct 2026, 10:5x UTC by date -u; pushed before any rule output is applied)
+Job LVN-P2K (LANE DEFAULT-A4-1035-15, account 4). Scope: the rows LVN-P2B left unplaced in p2_K13-K35 (map `no-ink` or near-value
+`duplicate`, attached by p2_order rule (2)), 46 rows in the post-VER-LVN2 file; the two VER-LVN2 already ruled (p2_K18 =Que, 94) are out.
+Prior work: `tools/prior_work.py lodewijk-van-nassau-1573-74 --item-spec 'wvo=4611;folio=p2' --step-type transcribe --offline` exit 4 at
+10:47 UTC (same own-work LEADs, Groen t. IV LEAD, two generic UNCHECKED as LVN-P2B; none bears on a placement).
+Definitions, per K line, from retx_p2_map.tsv + ciphertext_4611.tsv: a **carrier** is a row placed by the map (match/differs), an LVN-P2RETX
+insert, or a VER-LVN2 moved row; an **anchor** is a map-placed non-insert row. Rules, applied in order, one class per row:
+- **R1 cross-line duplicate**: >= 2 unplaced rows of one old transcription line whose values, in order, are exactly equal to a run (>= 2
+  consecutive) or form an in-order subsequence (>= 3, inside a window <= 2x their count) of the carriers of K-1 or K+1 -> retire if M; an
+  H/C/S row instead **moves** onto that line in place of the equal-valued M insert (which retires) only when the row's own per-token box
+  (blobmap_p2a.txt) lies on that K, else it goes to E.
+- **R2 same-span double cover**: an unplaced M row lying between two anchors on its K line, where >= 1 ink token lies between the anchors'
+  kpos and every such ink token already has a carrier, and the unplaced rows there are no more than those ink tokens -> retire (the 300-dpi
+  A=B insert or the map's row keeps the ink token). Not applied at a line end (no anchor on one side) or where no ink lies between.
+- **P split word**: a word row whose concatenation with the adjacent placed word row equals (letters only) the single ink word they share
+  -> kept, placed (no change).
+- **E eye**: everything else, and every H/C/S row not moved by R1 -> one Opus look on the 300-dpi deskewed line (the same render, sha1
+  36399838ce5c, `tools/iiif_lines.py --image <p2 png> --region 250,140,2200,3000 --prefix p2 --deskew --centres $(cat lvn4611/p2_centres.txt)`),
+  beside exemplars on the same page: **present** (kept, moved to its ink position if out of place, value kept; if the eye reads another value,
+  set at M, LVN-EYE convention), **absent / duplicate** (retired; an H row retired only with the ink token named that another row carries),
+  or **undecided** (left attached, listed). Not blind: the look knows the candidate value; stated as such.
+Controls. (a) **Positive** (rule fires on known duplicates): the 7 LVN-P2B block duplicates (retired_p2.tsv) and the 2 VER-LVN2 eye-retired
+duplicates, restored as unplaced at their old place -> R1/R2 must retire, or E, never P; gate >= 6/9 retired by R1/R2, 0 by P. (b) **Power**
+(R2/R1 retire a row only when the carrier is the same ink): an uncarried ink token cannot trigger R2 by construction, so the power check is
+by eye: the first 4 R1/R2 retirements in file order are looked at with the E rows; each must show the retired row's ink token is the one the
+carrier holds (one token, not two); gate >= 3/4, else no R1/R2 retirement is applied and those rows go to E or stay attached.
+Apply: `lvn4611/corrections_p2k.tsv` (keep/retire/move/set, keyed by post-VER-LVN2 p2_K ids, old sign asserted) as the last 4611 stage of
+`../settle.py`, retired rows to `lvn4611/retired_p2k.tsv`, touched p2_K lines renumbered. Then decode_key.py --check (all decode*.json), the
+settle/apply --check chain as LVN-P2B; C/H/M/I/U before and after; every grade change carried into AUDIT.md (rule 10).
+Stop rule: 80% of cap (3.2) or box (11:43 UTC); the second, conditional step (4610 flat-foot-2 eye check) only if >= 30% cap left.
