@@ -1,0 +1,13 @@
+item	canvas	folio	line	sign_label	context_words	features_5_5	decoy_check	context_check	verdict	grade
+39	c106	f.84r	l.6	barI	"le chancellier de [barI] est la personne"	5/5 barI (1 upright, 2 crossings, 0 loops, upright, 0 detached)	not hash3 (one upright)	pass (a kingdom with a chancellor)	counted	M
+39	c106	f.84r	l.10	barI	"grande labeur avec / [barI] et esperer"	5/5 barI	not hash3	pass	counted	M
+39	c106	f.84r	l.13	barI	"Polaine ne marquis George ne aussi [barI] scavoir"	5/5 barI	not hash3	pass (beside Poland and margrave George)	counted	M
+39	c106	f.84r	l.20	barI	"[Z] [struck word, superscript] [barI] et tous cantabimus"	5/5 barI	not hash3	pass	counted	M
+39	c106	f.84r	l.24	barI	"je ne donneray / [word not read] [barI] et grant ..."	5/5 barI	not hash3	pass	counted	M
+39	c106	f.84r	l.20	Zheavy	line-initial "[Z] ... [barI] et tous"	5/5 Zheavy (heavy, two parallels + diagonal)	not the light cursive par-Z (heavy, own word slot)	pass	counted	M
+39	c106	f.84r	l.22	Zheavy	"faire avec [Z]"	5/5 Zheavy	as above	pass (an elector after "avec")	counted	M
+39	c106	f.84r	l.27	Zheavy	"[4] ou [Z] ne le vouldrez desmouvoir"	5/5 Zheavy	as above	pass	counted	M
+39	c106	f.84r	l.27	4	line-initial "[4] ou [Z]", small superscript mark above "ou"	5/5 4 (by ELEC-PAIR description)	not Zheavy	pass (two electors joined by "ou")	counted	M
+39	c106	f.84r	l.17	II?	"[II] ma ce dimanche finablement respondu"	4/5 II (foot hook joins the uprights)	-	ambiguous: reads as the pronoun "Il" (rule b) or as II	not counted (rule b / context ambiguous)	-
+38	c105	f.82v-83r	-	-	Latin; Regem Romanorum, Imperatorem, electores in letters; ends f.83r "Dat. in castro nro Colonie ad Spream die octava mensis Aprilis ... decimo nono"	-	-	-	0 candidates	-
+37	-	-	-	-	not located (between f.74r and f.81v); no look left under the 80% cap line	-	-	-	-	-

@@ -1164,3 +1164,35 @@ witness was found here for barI, 4, II, Zheavy or flag. Next: (1) fr.3897 item 3
 p.813). It is the one remaining Joachim letter to the admiral, which the name signs would favour. It lies between f.82 and f.103 (offset 22-25);
 locate it in 2-3 openings at 2000 px and pair it against the print under ELEC-PAIR's rule, ~2. (2) Other Orval/Bonnivet/Guillart copies after
 26 May in fr.5761 (ELEC-REC next 2), ~1.5. (3) Item 37 only if (1) shows that the Brandenburg pieces carry signs, ~0.5.
+
+## ELEC-39: fr.3897 items 39 and 37 (worker ELEC-39, LANE DEFAULT-A1-1426-15, account 1, 15 Oct 2026, 16:15-16:2x UTC by date -u)
+
+Brief: ELEC-3897 Next (1) and (3). PREREG `elec39/PREREG-ELEC-39.md` (pushed 617eb40b3 before any fetch), which takes ELEC-3897's occurrence
+rule, decoy rule and sets A/B unchanged. One non-blind reader (this worker, Opus, own eye). Page images, not a transcription (rule 2). Result:
+`elec39/items_result.tsv`.
+- Locating. c105 = f.82v-83r (offset 22 holds): the end of item 38, Latin, closing "Dat. in castro nro Colonie ad Spream die octava mensis
+  Aprilis ... millesimo quingentesimo decimo nono"; Regem Romanorum, Imperatorem, electores in letters; 0 candidates. c106 = f.83v (blank but
+  for a docket in the gutter, not read) and **f.84r, which opens "Treschiers bons amys et capitaines Jacob et Hans ..."** -- the same address
+  as nr. 357 (ELEC-357, f.116r). Taken as item 39 (Kluckhohn nr. 356) by position (next after 38) and address; not checked against the print
+  (no archive.org request in this job) and the date line ("Vendredi") is not on f.84r, so the identification is M.
+- **Item 39 carries set-A name signs.** f.84r, read at 2000 px per opening and on one native region (pct:57,25,42,72 at max, 3479 x 4212):
+  barI x5 (l.6 "le chancellier de [barI]", l.10, l.13 "Polaine ne marquis George ne aussi [barI]", l.20, l.24), Zheavy x3 (l.20, l.22 "faire
+  avec [Z]", l.27), 4 x1 (l.27 "[4] ou [Z] ne le vouldrez desmouvoir"). All 5/5 on ELEC-POOL's five features against ELEC-PAIR's shape
+  descriptions, decoy and context checks passed, so **9 counted occurrences, grade M** (one non-blind reader). One more candidate, l.17
+  "[II] ma ce dimanche finablement respondu", reads equally as the pronoun "Il" (rule b) and is not counted. No W, dd or flag on f.84r. Names
+  in letters on the same page: Polaine (Poland), marquis George. If ELEC-PAIR's M readings hold (barI = Boheme, 4 = Palatin, Zheavy = Saxe),
+  "le chancellier de Boheme" and "Polaine ... marquis George ... Boheme" fit the context; that is a consistency observation, not a pairing.
+- Set B (f.51r lower block): no sign of the H-bar, Phi, asterisk, S-loop, oXo, 8/& or dagger shapes was seen on f.84r; the counted signs are
+  set-A rows. Not scored against images/canvas105_folio51r.jpg (no look left).
+- Not read: f.84v onward (the rest of item 39, c107), and item 37 (between f.74r and f.81v). Both were stopped by the 80% cap line, not by a
+  host limit (3 of 5 requests used).
+- Grades: nothing in key.tsv or elecpair/ changed. The f.84r counts are second-witness occurrences for barI (2 pairs in nr. 357), Zheavy (1)
+  and 4 (2), but they are unpaired: no printed name has been set against any slot here, so they add slots, not pairs.
+- Requests: openapi.bnf.fr 3 (btv1b90096539 f105, f106 `full/2000,`; f106 `pct:57,25,42,72/max`), all 200, no 403/429. Images in the session
+  scratchpad only, none in git. sha1 0ba95136e692..., 918cf4a35b19..., 93ed7c58071c....
+
+**Verdict (ELEC-39, 15 Oct 2026):** open, unchanged. fr.3897 item 39 (f.84r, "Treschiers bons amys et capitaines Jacob et Hans") carries the
+nr. 357 name-sign set: barI x5, Zheavy x3, 4 x1 counted (M, one reader), unpaired. Item 37 was not located. The fr.3897 route is not spent.
+Next: (1) pair f.84r-v against Kluckhohn nr. 356 (p.813, archive.org `bub_gb_0gFoAAAAMAAJ` leaf n821, 1 request) plus c107 (f.84v) at
+2000 px, under ELEC-PAIR's pre-registered rule; barI, Zheavy and 4 could reach >= 2 pairs each, ~2.5. (2) Item 37, one opening at c99-c100,
+only after (1) (the Latin instruments so far carry no signs), ~0.5.
