@@ -1,0 +1,25 @@
+tid	line	position	role	sign	A150	B150	candidates
+T01	p1_L09	15	target	65	65	68	65 | 68
+T02	p1_L19	19	target	31	31	81	31 | 81
+T03	p1_L19	4	target	64	64	84	84 | 64
+T04	p1_L03	12	control	27	27	27	37 | 27
+T05	p1_L23	7	control	81	81	81	81 | 61
+T06	p1_L12	4	control	29	29	29	29 | 39
+T07	p1_L06	9	target	6	6	6	6
+T08	p1_L17	7	target	64	64	84	84 | 64
+T09	p1_L35	13	target	131	131	135	131 | 135
+T10	p1_L23	8	target	25	25	26	25 | 26
+T11	p1_L12	3	control	104	104	104	104 | 109
+T12	p1_L23	16	control	37	37	37	37 | 87
+T13	p1_L15	8	target	15	15	25	25 | 15
+T14	p1_L35	12	control	88	88	88	88 | 86
+T15	p1_L17	2	target	120	120	128	128 | 120
+T16	p1_L12	1	target	29	29	19	19 | 29
+T17	p1_L04	11	target	75	75	55	75 | 55
+T18	p1_L04	18	target	101	101	108	108 | 101
+T19	p1_L04	1	target	145	-	145	145
+T20	p1_L03	9	control	82	82	82	82 | 62
+T21	p1_L03	4	control	115	115	115	115 | 715
+T22	p1_L12	9	control	74	74	74	14 | 74
+T23	p1_L19	18	control	71	71	71	77 | 71
+T24	p1_L03	19	target	81	81	81	81
