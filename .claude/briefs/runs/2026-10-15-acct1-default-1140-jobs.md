@@ -58,3 +58,7 @@ B2 gate and permuted-key control registered before decoding, crops command paste
 AUD2-MANT3's suggestion: "a planted-tile control (`lookalike_pass.py audit --plant`) on these pages would say whether the re-read's A preference
 is reading or echo (~$1.5)". Pre-register the plant count and the pass rule; run it; report agreement on planted vs real tiles. Not a fourth
 vision pass on f.89. No key or grade change unless the registered rule licenses it. NOTES "## ES132-PLANT", gaps + Verdict, gaps_check.
+
+Wave 1 sessions (11:52 UTC): MCC-CMU session_015gGQAjAqatuChWV8To1faG; NAF-SPLIT session_01UYRnd6TejcfNpkmpDQ8hiK; JAV-198
+session_011AnLTbKX7QzvBALUi6hcEm; MANT-YSHAPE session_017vGV8HrZnXWuyvZCeL1aD8; CLIN-3004C session_01Mhfbz8mapFgBBZpzvJXFtJ;
+ES132-PLANT session_01917Hod65WgksnoxjsE5rqK.
