@@ -534,7 +534,7 @@ L16	7	K25	H	d	d	confirm	0
 L16	8	K05	H	e	e	confirm	0
 L16	9	K11	H	m	m	confirm	0
 L16	10	K33	H	o	o	confirm	0
-L16	11	K04	M	d	n	contradict	0
+L16	11	K12	M	n	n	confirm	0
 L16	12	K14	H	p	s	contradict	0
 L16	13	K05	H	e	e	confirm	0
 L16	14	K29	H	i	i	confirm	0
@@ -576,8 +576,8 @@ L17	14	K10	H	l	l	confirm	0
 L17	15	?x[epsilon]	M		z	fill	0
 L17	16	K04	H	d	d	confirm	0
 L17	17	K26	H	e	e	confirm	0
-L17	18	W:Cur	H		lempereurnre	fill	0
-L17	19	W:apuril	H			fill-empty	0
+L17	18	W:Cur	H		lempereur	fill	0
+L17	19	W:apuril	H		nre	fill	0
 L17	20	K04	H	d	n	contradict	0
 L17	21	K05	H	e	e	confirm	0
 L17	22	K07	H	g	g	confirm	0
@@ -678,7 +678,7 @@ L20	23	K04	H	d	d	confirm	0
 L20	24	K26	H	e	e	confirm	0
 L20	25	K02	H	b	b	confirm	0
 L20	26	K33	H	o	o	confirm	0
-L20	27	K04	H	d	n	contradict	0
+L20	27	K12	M	n	n	confirm	0
 L20	28	K05	H	e	e	confirm	0
 L20	29	K62	M	l	n	contradict	0
 L20	30	K38	M	t	t	confirm	0
@@ -688,4 +688,4 @@ L20	33	K04	H	d	d	confirm	0
 L20	34	K05	H	e	e	confirm	0
 L20	35	K62	H	l	m	contradict	0
 L20	36	K26	H	e	e	confirm	0
-L20	37	K04	H	d	n	contradict	0
+L20	37	K12	M	n	n	confirm	0

@@ -4,12 +4,12 @@
  "signs_pass_a": 690,
  "pass_agree_h": 565,
  "decoded_letters": 657,
- "decoded": "lesperuiteursdequiniespargnentlhoneurlaraelareputationnilaonpienedupoilonfaitparlerleroidedalnelarquinupenpninlaisetdoneataenteadrequilesteeoiilatirentdelainexlupionqqilestudposiblequelodpeigdeurseutuedirpnrdeuaaqeopiepanpeauoippatisfaitearlapeodneoraipodcppfautilqueieifesequeemopednoupaautadtdopedempehemedtquafaitelupquieptndueduapdrisnrqqimaddequepionneleuetlueslirequelonpreigneqefilieqqeeulopeunnpqemailspoleuudesaisepseuueleeuquodegnrdedeprnndrelsfraireduropdsfradueenleplestermesepruturqnepouruneregdrddemodpeigdeurhormipquildeeomaadepaslefildedegoiatiodpedaigrileuedesapquiledaduiendrabieduotppuisieaseurerqtepilaraisodaliemsilepgedpdebodeltendeled",
+ "decoded": "lesperuiteursdequiniespargnentlhoneurlaraelareputationnilaonpienedupoilonfaitparlerleroidedalnelarquinupenpninlaisetdoneataenteadrequilesteeoiilatirentdelainexlupionqqilestudposiblequelodpeigdeurseutuedirpnrdeuaaqeopiepanpeauoippatisfaitearlapeodneoraipodcppfautilqueieifesequeemopednoupaautadtdopedempehemedtquafaitelupquieptndueduapdrisnrqqimaddequepionneleuetlueslirequelonpreigneqefilieqqeeulopeunnpqemailspoleuudesaisepseuueleeuquodegnrdedeprnndrelsfraireduropdsfradueenleplestermesepruturqnepouruneregdrddemonpeigdeurhormipquildeeomaadepaslefildedegoiatiodpedaigrileuedesapquiledaduiendrabieduotppuisieaseurerqtepilaraisodaliemsilepgedpdeboneltendelen",
  "judge": {
   "checks": {
    "language": {
     "pass": false,
-    "score": -1.442,
+    "score": -1.431,
     "null_p99": -1.856,
     "real_p05": -0.889,
     "real_median": -0.788,
@@ -18,7 +18,7 @@
    },
    "words": {
     "pass": true,
-    "cover": 0.766,
+    "cover": 0.769,
     "min": 0.5,
     "real_text_median_cover": 0.947
    }
@@ -28,11 +28,11 @@
  },
  "shuffle_draws": 100,
  "shuffle_judge_pass": 0,
- "shuffle_language_scores_max": -1.863,
+ "shuffle_language_scores_max": -1.861,
  "c270_letters": 778,
- "c270_matched": 240,
- "c270_rate": 0.3653,
- "c270_shuffle_mean": 0.3332,
- "c270_shuffle_p95": 0.3546,
- "c270_shuffle_max": 0.3607
+ "c270_matched": 242,
+ "c270_rate": 0.3683,
+ "c270_shuffle_mean": 0.3347,
+ "c270_shuffle_p95": 0.3562,
+ "c270_shuffle_max": 0.3653
 }

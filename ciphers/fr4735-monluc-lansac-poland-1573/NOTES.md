@@ -1377,3 +1377,65 @@ Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines
 - [x] image-check: c268 L16-L20 native crops cut and reconciled by eye, L15:18 re-checked (MONL-L16); L11-L15 likewise (MONL-L11)
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 8 internal gaps; cheapest next: the value-blind K04|K12 sort of the L16-L20 tiles with L11:14 (~$1.5), then c268 L21-L25 (~$3)
+
+## MONL-K04: value-blind K04|K12 sort of the c268 L16-L20 K04-facing-n tokens and L11:14 (15 Oct 2026, account 1, Opus, for LANE DEFAULT-A1-0740-15)
+
+Brief: .claude/briefs/runs/2026-10-15-acct1-default-0740-jobs.md, MONL-K04 (MONL-L16's Verdict: the K04|K12 sort, then c268 L21-L25).
+**Budget stop:** the brief's 13 units (~0.5 each) plus the ~2 session floor come to ~8.5 against a cap of 6. After the sort (2 Sonnet calls)
+and its reconciliation, one more line of L21 (2 blind passes + reconciliation, ~1.5) would cross 80% of the cap (4.8), so **c268 L21-L25
+was not started** (gap below).
+
+**Pre-registration:** sort/k04/PREREG-MONL-K04.md pushed in 85b300936 before any tile was cut or any sort run. Scope narrowed to fit one
+call per sort (<= 12 windows): 8 leads chosen by the alignment (K04 facing clear n: L11:14, L16:11, L16:16, L17:20, L18:18, L20:8, L20:27,
+L20:37), 2 c172 K04 controls (L03:26, L04:13; PREREG-MONL-SORT's), and 2 in-band K12 references (L19:6, L20:32) to test whether the sort can
+see a K12 at all. Cells K04|K12 only.
+**Host (deviation from "disk only", logged in ROOM before the requests):** the crops are untracked and were not in this container:
+`sh regen_monll16.sh` and `sh regen_monll11.sh`, openapi.bnf.fr 2 requests, both HTTP 200 (take/release lines); band centres and the
+scratch268d sha1 (39ccaa01...) identical to MONL-L16 / MONL-L11.
+**Tiles and windows (pasted):** `python3 sort/k04/build_k04.py` (tiles, passc files, candidates.png); then
+`python3 ../../tools/lookalike_pass.py windows --tiles sort/k04/s268d_tiles.tsv --passc sort/k04/c268d_passc.tsv --manifest images/scratch268d/crops/manifest.json --out sort/k04 --run k04268d_win --status all --per 12`,
+the same with `s268c_tiles.tsv` / `c268c_passc.tsv` / `images/scratch268c/crops/manifest.json` / run `k04268c_win`, and
+`... --tiles sort/k04/s172_tiles.tsv --passc ciphertext_c172.tsv --crops-glob 'images/c172cipher_{line}_s?.jpg' --out sort/k04 --run k04172_win --status all --per 12`
+(montages and candidates.png untracked, sort/k04/.gitignore); prompts `python3 sort/k04/prompts.py` (no value, reading, clear text,
+current label or decode shown).
+**Sorts (units: 2 Sonnet calls, B with rows reversed; reconciliation by script).** Answers sort/k04/sortA.tsv, sortB.tsv;
+`python3 sort/k04/reconcile_k04.py` -> sort/k04/reconciled.tsv: **3 relabels, 4 splits, 2 low-conf agreements, 2 K12 references kept K12 by
+both (M/M)**. Controls: 0 of 2 moved to K12 by both, **but neither sort could find either c172 control sign in its window** (A SPLIT L, B K04
+L at both), so the K04 control is **non-informative this time**: it does not show that the sorts leave a real K04 alone.
+- **Relabels K04 -> K12 (both M/M):** c268 **L16:11, L20:27, L20:37**. All three face clear n, so three contradictions become confirms.
+- Splits: L11:14 (A K12 M, B K04 M: still unsettled, as in MONL-ADH and MONL-L16's eye look), L17:20 (A K04 M, B K12 M), L20:8 (A K04 L,
+  B K12 M). Low-conf agreement on K12: L16:16 (L/L), L18:18 (A L, B M). Not applied.
+- **Caveat on the design:** sort B called all 9 c268d tiles K12 and sort A 7 of 9, and every c268d tile was either a lead or a K12
+  reference; no K04 that faces d in the same band was sorted. So this test cannot tell "these are K12" from "this band's '9' looks K12-like to
+  both readers at this resolution". MONL-VB and MONL-ADH sorts kept most K04-facing-n tokens K04 ("straight blunt stem"); here they mostly
+  went K12. The relabels are applied as pre-registered, conf M, and are to be undone if an in-band negative control moves.
+
+**Effect (rule 7).** score_c268.py `MONL_K04` (tag `monl-k04`, conf M) -> `python3 score_c268.py`, `python3 align_c268.py`,
+`python3 ../../tools/decode_key.py .`. Align L01-L20: **confirm 449/657 = 0.683** (was 446/657 = 0.679; contradict 132 -> 129, extra 79);
+shuffled clear (200, seed 140) mean 0.367, p95 0.385, max 0.414, **0/200 at or above** (keep condition met); f.139 (c270) control 226/657 =
+0.344. K04 now faces n 14 times over L01-L20 (was 17); K12 confirms n 24 times. Grades unchanged: c268 690 tokens C 347 / M 318 / U 25
+(the three were M as contradictions, stay M as relabels); c172 C 83 / M 64 / U 3; key.tsv unchanged. Judge (fr16) FAIL at N 657 (-1.431 vs
+real_p05 -0.889), shuffled decodes 0/100 PASS; a non-test for this key (MONLUC-KEY), the alignment is the evidence.
+CHECKS_PLACEHOLDER
+Requests: openapi.bnf.fr 2. Subagents: 2 Sonnet. Own looks: 1 (candidates.png). Cost not visible to this session.
+
+## Remaining gaps (MONL-K04, 15 Oct 2026)
+Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines 1-20 (690 tokens) C 347 / M 318 / U 25 against the ff.140r-141r clear text (align confirm 449/657 = 0.683 vs shuffled-clear max 0.414).
+- K04-for-n (14 times over L01-L20 after MONL-K04's 3 relabels) and K14-for-s - blocker: not-attempted; value-blind sort of the L16-L20 leads done (MONL-K04: 3 relabels, but no in-band negative and the c172 controls not found by either sort); next: an in-band control sort of the L16-L20 K04 tokens that face d (L17:16, L19:2, L20:23, L20:33) mixed with the 4 unsettled leads (L11:14, L17:20, L20:8, L16:16), one call per sort; if the d-facing K04s also go K12, revert the 3 MONL-K04 relabels; then one decode_key.py --try of K04 read n by context only with its controls, ~$1.5
+- rest of c268 (L21 to the end) and c264 against the ff.140r-141r clear text - blocker: not-attempted; MONL-K04 stopped on budget before it (13 units > cap); next: two blind cipher passes of c268 L21-L25 plus reconciliation (bands 8-9 of regen_monll16.sh's crop are L21-L22; L23-L25 need the region moved down ~550 px), then align_c268.py, ~$3 per 5 lines as its own job
+- the code words W:Cur (takes "lempereurnre"), W:apuril, W:Juillet, W:Sepbre and the ?x[epsilon] / ?double_slash fills - blocker: not-attempted; found by MONL-L16; next: a name-code pass with tools/name_candidates.py on the clear contexts once the clear text of f.140r L16-L20 is re-read, ~$1
+- the "adhuc" group (L11:6-10) - blocker: not-attempted; no second occurrence of K66 K49 ?h_bar K35 K15 in L16-L20 (MONL-L16); next: watch for it when c268 L21 on is transcribed (rides that band, ~$0)
+- a clean clear text of ff.140r-141r away from L06-L10 - blocker: not-attempted; f.140r L11-L20 (facing c268 L06-L20) are rough A/B picks with [?] words (at f.140r L19 the decode reads "aduiendrabie(n)" where the pick has "sy admirera"), which caps the confirm share of the later bands; next: an eye reconciliation of f.140r L11-L26 and L01-L07 against the line crops, ~$1 per page
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py); the c268 alignment supplies known plaintext instead
+- print check of the clear letter in Google Books (13 of the 14 phrases.txt lines) and the editions by identifier (Noailles vols I-III, Lettres de Catherine de Medicis) - blocker: not-attempted; IA full text and OpenAlex done, no hits on all 14 (MONL-PC); Google Books 13 of 14 unsearched (503, MONL-PC, MONL-PC2); next: `tools/print_check.py ... --only gbooks` when googleapis answers, ~$1
+- ff.211-223, f.87 margin, ff.50/56/60/80, items 17/18/112-120 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONL-K04, 15 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [x] clear-pages: ff.140r-141r transcribed and shown to be the clear text of c268 L01-L20 (MONL-ALIGN, MONL-C268B, MONL-L11, MONL-L16)
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell and checked against known plaintext on c268 L01-L20
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2; the clear letter phrase-searched in IA full text and OpenAlex, no hits (MONL-PC); Google Books for it pending (gap above)
+- [x] key-rebuild: --try rejects K12=d and K34=y (MONL-K12); blind sorts on L01-L05 (MONL-SORT), L06-L10 (MONL-VB), L11-L15 leads (MONL-ADH), L16-L20 K04 leads (MONL-K04: 3 relabels, control gap above)
+- [x] image-check: c268 L16-L20 native crops cut and reconciled by eye, L15:18 re-checked (MONL-L16); L11-L15 likewise (MONL-L11)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 7 internal gaps; cheapest next: the in-band K04-facing-d control sort with the 4 unsettled leads (~$1.5; reverts MONL-K04's 3 relabels if the d-facing K04s also go K12), then c268 L21-L25 as its own job (~$3-4 at the per-call rate)

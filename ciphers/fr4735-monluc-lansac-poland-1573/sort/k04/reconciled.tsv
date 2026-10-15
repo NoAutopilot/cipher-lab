@@ -1,0 +1,13 @@
+page	line	pos	role	current	A	A_conf	B	B_conf	verdict
+c172	L03	26	control	K04	SPLIT	L	K04	L	split
+c172	L04	13	control	K04	SPLIT	L	K04	L	split
+c268c	L11	14	lead	K04	K12	M	K04	M	split
+c268d	L16	11	lead	K04	K12	M	K12	M	relabel
+c268d	L16	16	lead	K04	K12	L	K12	L	low-conf-agree
+c268d	L17	20	lead	K04	K04	M	K12	M	split
+c268d	L18	18	lead	K04	K12	L	K12	M	low-conf-agree
+c268d	L19	6	k12-ref	K12	K12	M	K12	M	keep-agree
+c268d	L20	8	lead	K04	K04	L	K12	M	split
+c268d	L20	27	lead	K04	K12	M	K12	M	relabel
+c268d	L20	32	k12-ref	K12	K12	M	K12	M	keep-agree
+c268d	L20	37	lead	K04	K12	M	K12	M	relabel

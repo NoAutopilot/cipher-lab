@@ -67,6 +67,10 @@ MONL_ADH = {('L11', 23): ('K04', 'K12')}
 # MONL-L16 (15 Oct 2026): eye re-check of L15:18 at native resolution (images/scratch268d, band 2): loop centred on the top of the
 # stem = K11, as pass A and both MONL-ADH sorts; reverts MONL-L11's blind eye call K62. Not blind to the clear text (the gap named it).
 MONL_L16 = {('L15', 18): ('K62', 'K11')}
+# MONL-K04 (15 Oct 2026): two value-blind sorts of 8 c268 K04-facing-n tokens (L11:14, L16-L20) under sort/k04/PREREG-MONL-K04.md
+# (0 of 2 c172 K04 controls moved, both sorts could not find them: weak; 0 of 2 in-band K12 references moved); both sorts agree, neither
+# conf L, on these three (sort/k04/reconciled.tsv). No in-band K04 negative was sorted (NOTES "## MONL-K04").
+MONL_K04 = {('L16', 11): ('K04', 'K12'), ('L20', 27): ('K04', 'K12'), ('L20', 37): ('K04', 'K12')}
 
 
 def main():
@@ -113,8 +117,9 @@ def main():
           for lab in sorted(bl):
               for f in bl[lab]:
                   agree += f[3] == 'H'
-                  vb = MONL_VB.get((f[0], int(f[1]))) or MONL_ADH.get((f[0], int(f[1]))) or MONL_L16.get((f[0], int(f[1])))
-                  vtag = 'monl-adh' if (f[0], int(f[1])) in MONL_ADH else 'monl-l16' if (f[0], int(f[1])) in MONL_L16 else 'monl-vb'
+                  vb = MONL_VB.get((f[0], int(f[1]))) or MONL_ADH.get((f[0], int(f[1]))) or MONL_L16.get((f[0], int(f[1]))) \
+                       or MONL_K04.get((f[0], int(f[1])))
+                  vtag = 'monl-k04' if (f[0], int(f[1])) in MONL_K04 else 'monl-adh' if (f[0], int(f[1])) in MONL_ADH else 'monl-l16' if (f[0], int(f[1])) in MONL_L16 else 'monl-vb'
                   if vb:
                       assert f[2] == vb[0], (f[0], f[1], f[2])
                       f[2], f[3] = vb[1], 'M'

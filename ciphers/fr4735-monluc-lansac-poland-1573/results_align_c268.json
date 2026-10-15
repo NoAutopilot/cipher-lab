@@ -1,13 +1,13 @@
 {
  "real": {
   "keyed": 657,
-  "confirm": 446,
-  "contradict": 132,
+  "confirm": 449,
+  "contradict": 129,
   "extra": 79,
-  "confirm_share": 0.6788,
+  "confirm_share": 0.6834,
   "facing_unsure_clear": 20
  },
- "score": 552.6,
+ "score": 561.6,
  "clear_span": [
   "f.140r:L07",
   "f.140r:L20"
@@ -16,17 +16,17 @@
  "shuffled_clear": {
   "draws": 200,
   "seed": 140,
-  "mean": 0.3661,
-  "p95": 0.3836,
-  "max": 0.411,
+  "mean": 0.3673,
+  "p95": 0.3851,
+  "max": 0.414,
   "ge_real": 0
  },
  "other_letter_c270": {
   "keyed": 657,
-  "confirm": 233,
-  "contradict": 358,
-  "extra": 66,
-  "confirm_share": 0.3546
+  "confirm": 226,
+  "contradict": 367,
+  "extra": 64,
+  "confirm_share": 0.344
  },
  "fills": [
   {
@@ -183,13 +183,13 @@
    "line": "L17",
    "pos": 18,
    "sign": "W:Cur",
-   "clear": "lempereurnre"
+   "clear": "lempereur"
   },
   {
    "line": "L17",
    "pos": 19,
    "sign": "W:apuril",
-   "clear": ""
+   "clear": "nre"
   },
   {
    "line": "L17",
@@ -1079,14 +1079,6 @@
   },
   {
    "line": "L16",
-   "pos": 11,
-   "sign": "K04",
-   "conf": "M",
-   "table": "d",
-   "clear": "n"
-  },
-  {
-   "line": "L16",
    "pos": 12,
    "sign": "K14",
    "conf": "H",
@@ -1255,14 +1247,6 @@
   },
   {
    "line": "L20",
-   "pos": 27,
-   "sign": "K04",
-   "conf": "H",
-   "table": "d",
-   "clear": "n"
-  },
-  {
-   "line": "L20",
    "pos": 29,
    "sign": "K62",
    "conf": "M",
@@ -1276,14 +1260,6 @@
    "conf": "H",
    "table": "l",
    "clear": "m"
-  },
-  {
-   "line": "L20",
-   "pos": 37,
-   "sign": "K04",
-   "conf": "H",
-   "table": "d",
-   "clear": "n"
   }
  ]
 }
