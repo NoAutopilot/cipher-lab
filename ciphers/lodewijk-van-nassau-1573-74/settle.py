@@ -396,9 +396,12 @@ def main():
             # (lvn4611/corrections_p2k.tsv, keyed by the post-VER-LVN2 ids; PREREG-LVN-4611.md addendum LVN-P2K).
             # LVN-K15 (15 Oct 2026): a third pass, the eye rulings on K15 and the positional `differs` rows (lvn4611/corrections_k15.tsv,
             # keyed by the post-LVN-P2K ids; PREREG addendum LVN-K15).
+            # VER-LVN3 (15 Oct 2026): a fourth pass, verifier eye rulings on LVN-K15's three named rows (lvn4611/corrections_verlvn3.tsv,
+            # keyed by the post-LVN-K15 ids; PREREG addendum VER-LVN3).
             for cname, vname, tagp in (("corrections_verlvn2.tsv", "retired_verlvn2.tsv", "VER-LVN2 eye"),
                                        ("corrections_p2k.tsv", "retired_p2k.tsv", "LVN-P2K"),
-                                       ("corrections_k15.tsv", "retired_k15.tsv", "LVN-K15")):
+                                       ("corrections_k15.tsv", "retired_k15.tsv", "LVN-K15"),
+                                       ("corrections_verlvn3.tsv", "retired_verlvn3.tsv", "VER-LVN3")):
                 cp = HERE / "lvn4611" / cname
                 if cp.exists():
                     with open(cp, newline="", encoding="utf-8") as fh:

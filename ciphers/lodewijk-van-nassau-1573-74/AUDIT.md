@@ -2068,3 +2068,11 @@ K15's pass-copy rows 18 39 -> 38 115 and the second 85 M retired; 29 more `diffe
 four letters **2566 of 4138 (62.0%)**. Depth stays **D2**; N-class unchanged (4610/4611/4616 N4, 4612 N3; key ours). SECOND-OPINIONS-QUEUE prompts
 quote no 4611 p2 line and no changed 4610 word: no queued prompt changes. status.json not edited (the parent's).
 For a verifier: K16/18 100 vs ink 200, K30/15 46 vs ink 40, and p2_K31/14 81 H where this eye reads 31.
+
+## VER-LVN3 (15 Oct 2026, 11:37-11:5x UTC by date -u; verifier, account 4) -- reading revised after this AUDIT.md, carried here (rule 10 propagation)
+
+Verifier eye on the three rows LVN-K15 named (NOTES.md "VER-LVN3"; `lvn4611/corrections_verlvn3.tsv`, PREREG addendum VER-LVN3, positive control
+3/3): **p2_K16/18 100 M kept** (curled-head 1, not the flat-based 2; RETX 200 not followed), **p2_K30/15 46 M kept** (ascender 6, not the plain 0;
+RETX 40 not followed), **p2_K31/14 81 H -> M** (undecided 81/31 at 300 dpi; value kept). Counts: 4611 full C 1079 -> 1078, M 191 -> 192;
+4610/4611/4616 C/H **2565 of 3305 (77.6%)**, four letters **2565 of 4138 (62.0%)**. Depth stays **D2**; N-class unchanged (4610/4611/4616 N4,
+4612 N3; key ours). SECOND-OPINIONS-QUEUE.tsv quotes no 4611 p2 K31 line: no queued prompt changes. status.json not edited (the parent's).
