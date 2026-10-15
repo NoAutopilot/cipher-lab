@@ -1,0 +1,7 @@
+time	target	hypothesis	occurrences	statistic	null_pos_p95	null_val_p95	verdict	flag
+2026-10-15 11:14	f110-only copy (box/make_f110.py)	h=i	126	247.3		-362.8	reject	non-blind
+2026-10-15 11:14	f110-only copy (box/make_f110.py)	o=u	128	-730.6		-535.1	reject	non-blind
+2026-10-15 11:14	f110-only copy (box/make_f110.py)	e=s	163	-84.3		513.7	reject	non-blind
+2026-10-15 11:15	f110-only copy (box/make_f110.py)	BOX=u	125	-535.6	-477.4	-473.5	reject	non-blind
+2026-10-15 11:16	f110-only copy (box/make_f110.py)	BOX=a	125	-837.4	-633.4	100.8	reject	non-blind
+2026-10-15 11:17	f110-only copy (box/make_f110.py)	BOX=o	125	-1235.7	-983.5	-473.5	reject	non-blind

@@ -1,0 +1,19 @@
+leaf	line	pos	label	key_value	gloss_value	shape_seen	image	verdict
+f.92r	E2	14	o	i	i	plain small closed round o	c98 max, regen_f91e.sh E2	shape A
+f.92r	E2	26	o	i	a	a-like round with right stem/tail	c98 max, E2	shape B
+f.92r	E2	29	o	i	i	plain small closed round o	c98 max, E2	shape A
+f.92r	E4	13	o	i	a	a-like round with right stem/tail	c98 max, E4	shape B
+f.92r	E4	34	o	i	a	a-like round with right stem/tail	c98 max, E4	shape B
+f.78v	chart 2	15	o	i	-	a-like round with right stem/tail	images/f78v_79r/ref line2	shape B (Bourdeau's chart label o)
+f.78v	chart 2	20	o	i	-	a-like round with right stem	ref line2	shape B
+f.78v	chart 2	29	o	i	-	a-like round with right stem/tail	ref line2	shape B
+f.110	1	18	o	i	-	plain closed round o	f116 region 4700,250,3500,450 (scratch)	shape A
+f.110	3	11	o	i	-	a-like round with right stem/tail	f116 region	shape B
+f.110	3	21	o	i	-	plain closed round o	f116 region	shape A
+f.110	3	25	o	i	-	a-like round with right stem	f116 region	shape B
+f.110	2	17	c	p	-	open crescent c	f116 region	match (chart 2 pos 33 open crescent)
+f.110	2	24	c	p	-	open crescent c	f116 region	match
+f.110	2	25	c	p	-	hooked curl, the shape of the chart's e (chart 2 pos 34)	f116 region	MISMATCH candidate (c vs e), single eye at 2x, not applied
+f.110	3	16	c	p	-	open crescent c	f116 region	match
+f.110	3	17	e	r	-	hooked curl (same as f.110 2:25)	f116 region	match to chart e
+f.92r	E4	24	c	p	p (2/3 in E)	open crescent c	c98 max, E4	match
