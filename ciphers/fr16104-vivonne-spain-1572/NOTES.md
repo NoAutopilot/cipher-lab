@@ -4075,3 +4075,22 @@ Requests: openapi.bnf.fr 3 (c206, c207, c217 native regions; HTTP 200, >= 3 s ap
 Next (one line, not done here): the new-leaf map is the bottleneck (2 of 2 new f tiles and 3 of 22 sampled r tiles mis-cut) -- hand-cut every label-g truth
 position on f.202r/f.211v/f.201v/f.211r for both classes by one rule (no class-asymmetric cut), which lifts the ceiling to about 21 f, then rerun with
 classify --boxes's own voter side extended to non-atlas boxes, ~$5.
+## VIV-F191D (15 Oct 2026, 04:50-05:0x UTC by date -u, account-4 worker for LANE VIV-KEYSTONE): a 5-pass reconciliation rule for f.191r L22-L36 -- logged, no verifier
+Brief: .claude/briefs/runs/2026-10-13-acct4-keystone-viv-jobs.md, JOB VIV-F191D. **PREREG-VIVF191D.md** pushed first (1073effbe, on origin/main
+before the option was run). Disk only, 0 vision calls. Instrument: `tx/viv63_f191/f191.py --five-pass [--stats]` (columns as f191c_report.cols5,
+E-only columns dropped; decision table PREREG s.3). Outputs: tx/viv63_f191/rec_5pass.tsv, decode_5pass.tsv, f191d_flips.tsv (every flip with its
+five votes A B C D E), stats_5pass.json, owner_questions_5pass.tsv. rec.tsv and decode.tsv untouched; `f191.py --check` still passes.
+- **Positions (L22-L36):** of 123 columns flagged in the 4-pass build, 46 settled (R1, >= 3 of 5), 15 dropped (R2), 62 still flagged; 9 tieEC
+  (flagged, E agrees with C). E-decisive settlements (exactly 2 A-D votes + E): 47 -- the rule as registered lets E be the third vote, never the
+  only one (no-liberty clause s.4 held: no E-only column survived, no sign that no A-D pass read was chosen).
+- **Flips (25, f191d_flips.tsv):** 15 drop5 (a B+C-only sign, 12 V + 2 c, plus one A+B-only L at L25, with the other three '-': the column disappears); 9 tieEC
+  (z->3 x5, 5->z, g->S, o->b, v->V -- the 3/z RULES pair again, as VIV-F191C saw); 1 settled position changed: L27 'n' (2-2 RULES pair n/r on A-D)
+  -> 'r' by n r r n r (maj5). Every flip is E-decisive by construction.
+- **Gates (before = committed rec.tsv, after = 5-pass):** grades H 1367 -> 1393, M 240 -> 203, U 132 -> 128. **Longest all-H run 37 -> 37**
+  (L10-L11, "ceroaungtresgrandeouaconsdecestaaaire", outside the band; inside L22-L36 18 -> 19, "rairenaesaeetnaeuae", not words). V_strict top-1
+  21 -> 21 (null p99 19 -> 18), top-3 mean 17.67 -> 17.67 (p99 13.33); the L31 15-letter stretch loses two of its three M (HHMHHHMHHHHHHHH ->
+  HHHHHHMHHHHHHHH). b2 -1.4099 -> -1.4083 vs null p99 -1.771/-1.774, PASS both; wrong-key margin 0.361 -> 0.365, PASS both; C1 and C2 PASS
+  with headroom. No stretch >= 42 all-H: **logged, no verifier** (PREREG-VIVPACKET3 s.5). f.191r stays D1 material.
+- Reading: the fifth vote makes the band cleaner by grade (37 fewer M) without lengthening any run of words: the band's H letters are not forming
+  vocabulary at the stretch instrument's resolution. Suggestion (not done, Usage 7): the 62 still-flagged columns and the 9 tieEC 3/z positions are
+  the owner-sorter set for L22-L36 if the band is worth another human pass.

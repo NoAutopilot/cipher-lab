@@ -1,0 +1,26 @@
+line	sign4	flag4	how4	sign5	flag5	how5	votes_ABCDE
+L22	V	1	tie	-	0	drop5	- V V - -
+L22	z	1	plural	3	1	tieEC	z z 3 - 3
+L22	z	1	plural	3	1	tieEC	z z 3 - 3
+L23	V	1	tie	-	0	drop5	- V V - -
+L23	z	1	plural	3	1	tieEC	z z 3 - 3
+L24	5	1	plural	z	1	tieEC	5 5 z - z
+L24	V	1	tie	-	0	drop5	- V V - -
+L25	L	1	tieA	-	0	drop5	L L - - -
+L26	V	1	tie	-	0	drop5	- V V - -
+L27	V	1	tie	-	0	drop5	- V V - -
+L27	n	0	rule	r	0	maj5	n r r n r
+L27	z	1	plural	3	1	tieEC	z z 3 - 3
+L27	V	1	tie	-	0	drop5	- V V - -
+L28	V	1	tie	-	0	drop5	- V V - -
+L30	g	1	plural	S	1	tieEC	g g S - S
+L31	V	1	tie	-	0	drop5	- V V - -
+L32	z	1	plural	3	1	tieEC	z z 3 d 3
+L32	V	1	tie	-	0	drop5	- V V - -
+L33	V	1	tie	-	0	drop5	- V V - -
+L33	V	1	tie	-	0	drop5	- V V - -
+L33	o	1	plural	b	1	tieEC	o o b p b
+L34	c	1	tie	-	0	drop5	- c c - -
+L34	V	1	tie	-	0	drop5	- V V - -
+L35	c	1	tie	-	0	drop5	- c c - -
+L36	v	1	plural	V	1	tieEC	v v V - V

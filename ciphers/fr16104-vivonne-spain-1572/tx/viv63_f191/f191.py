@@ -14,6 +14,10 @@ Writes rec.tsv, decode.tsv (never reading_piece63.tsv); --stats also stats.json 
 placed -> that sign, flag cleared, how 'owner'; new-sign -> the NEWn sign, outside the key, U; anything else -> unchanged) to the
 reconciled lines in memory and write stats_<T>.json, decode_<T>.tsv, owner_questions_<T>.tsv; 'before' is then the committed
 reconciliation (rec.tsv), 'after' the overridden lines. rec.tsv and decode.tsv are never touched by --override.
+--five-pass (VIV-F191D, 15 Oct 2026, PREREG-VIVF191D.md): on L22-L36 add pass E (f191r_passE.tsv) as a fifth vote (columns as
+f191c_report.cols5, E-only columns dropped); >= 3 of 5 settles, a 2-2-1 falls to decide() on A-D with E breaking a tie toward C only
+(still flagged), anything else decide() on A-D. Writes rec_5pass.tsv, decode_5pass.tsv, f191d_flips.tsv; --stats also
+stats_5pass.json (before = the committed reconciliation). rec.tsv and decode.tsv are never touched by --five-pass.
 """
 import collections, json, os, random, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -161,6 +165,68 @@ def render_decode(lines):
     return '\n'.join(dec) + '\n'
 
 
+FIVE_LINES = ['L%02d' % i for i in range(22, 37)]
+
+
+def decide5(c):
+    """PREREG-VIVF191D s.3: c = [A, B, C, D, E]; returns (sign or None, flag, how)."""
+    v = collections.Counter(c)
+    top, n = v.most_common(1)[0]
+    if n >= 3:
+        return (None, False, 'drop5') if top == '-' else (top, False, 'maj5')
+    s, flag, how = decide(c[:4])
+    if sorted(v.values()) == [1, 2, 2]:
+        if how in ('rule', 'drop'):
+            return s, flag, how
+        twos = [x for x in v if v[x] == 2]
+        if flag and c[4] == c[2] and c[2] != '-' and c[2] in twos:
+            return c[2], True, 'tieEC'
+    return s, flag, how
+
+
+def build5():
+    import f191c_report as fr
+    P = {p: clean(f) for p, f in dict(PASSES, E=os.path.join(HERE, 'f191r_passE.tsv')).items()}
+    lines, rec, flips = {}, ['line\tpos\tsign\tflag\thow\tA\tB\tC\tD\tE'], []
+    cnt = collections.Counter()
+    for line in sorted(P['A']):
+        toks = []
+        if line in FIVE_LINES:
+            for c in fr.cols5(P, line):
+                s4, f4, h4 = decide(c[:4]); s, flag, how = decide5(c)
+                v = collections.Counter(c)
+                if how == 'maj5' and sum(1 for x in c[:4] if x == s) == 2:
+                    cnt['E_decisive'] += 1
+                if f4 and s4 is not None:
+                    cnt['was_flagged'] += 1
+                    cnt['settled' if s is not None and not flag else ('dropped' if s is None else 'still_flagged')] += 1
+                if s4 is None and s is not None:
+                    cnt['undropped'] += 1
+                if (s4 or '-') != (s or '-'):
+                    cnt['flipped'] += 1
+                    flips.append(f"{line}\t{s4 or '-'}\t{int(f4)}\t{h4}\t{s or '-'}\t{int(flag)}\t{how}\t" + ' '.join(c))
+                if s is None:
+                    continue
+                toks.append([rv.MAP.get(s, s), flag, how, c])
+        else:
+            for c in cols(P, line):
+                s, flag, how = decide(c)
+                if s is None:
+                    continue
+                toks.append([rv.MAP.get(s, s), flag, how, c + ['']])
+        seq, i = [], 0
+        while i < len(toks):
+            if toks[i][0] == 'o' and i + 1 < len(toks) and toks[i + 1][0] == 'o':
+                seq.append(['oo', toks[i][1] or toks[i + 1][1], toks[i][2] + '+' + toks[i + 1][2],
+                            ['+'.join(z) for z in zip(toks[i][3], toks[i + 1][3])]]); i += 2
+            else:
+                seq.append(toks[i]); i += 1
+        lines[line] = seq
+        for k, (s, flag, how, c) in enumerate(seq, 1):
+            rec.append(f'{line}\t{k}\t{s}\t{int(flag)}\t{how}\t' + '\t'.join(c))
+    return P, lines, '\n'.join(rec) + '\n', render_decode(lines), flips, cnt
+
+
 def apply_override(lines, path):
     """PREREG-VIVPACKET3 s.5: the owner's placements replace the plurality at the named positions; returns a deep copy and a log."""
     import copy
@@ -290,6 +356,28 @@ def stats(P, lines, before=None, tag=''):
 
 def main():
     P, lines, rec, dec = build()
+    if '--five-pass' in sys.argv:
+        P5, l5, rec5, dec5, flips, cnt = build5()
+        open(os.path.join(HERE, 'rec_5pass.tsv'), 'w', encoding='utf-8').write(rec5)
+        open(os.path.join(HERE, 'decode_5pass.tsv'), 'w', encoding='utf-8').write(dec5)
+        open(os.path.join(HERE, 'f191d_flips.tsv'), 'w', encoding='utf-8').write(
+            'line\tsign4\tflag4\thow4\tsign5\tflag5\thow5\tvotes_ABCDE\n' + '\n'.join(flips) + '\n')
+        hows = collections.Counter(x[2] for l in FIVE_LINES for x in l5[l])
+        print('five-pass L22-L36', dict(cnt), 'hows', dict(hows))
+        for f in flips:
+            print('  flip', f)
+        if '--stats' in sys.argv:
+            res = stats(P, l5, before=lines, tag='5pass')
+            res['five_pass'] = {'counts': dict(cnt), 'flips': flips}
+            json.dump(res, open(os.path.join(HERE, 'stats_5pass.json'), 'w'), indent=1, ensure_ascii=False)
+            for t in ('before', 'after'):
+                x = res[t]
+                print(t, x['grades'], 'longest_H', x['longest_H_run'], 'stretch top1', x['stretch']['real_top1'], 'top3',
+                      x['stretch']['real_top3mean'], 'null p99', x['stretch']['null_top1_p99'], x['stretch']['null_top3mean_p99'],
+                      'clears_42_clean', x['clears_42_clean'], 'b2', x['gates']['verdict_b2'], 'wrong', x['gates']['verdict_wrong_keys'])
+            for c in ('C1_f103r', 'C2_ink54'):
+                print(c, res[c]['b2'])
+        return
     if '--override' in sys.argv:
         path = sys.argv[sys.argv.index('--override') + 1]
         tag = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else 'override'

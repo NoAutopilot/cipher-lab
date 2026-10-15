@@ -1,0 +1,1725 @@
+line	pos	sign	flag	how	A	B	C	D	E
+L01	1	d	0	maj	d	d	d	d	
+L01	2	m	0	maj	m	m	m	m	
+L01	3	p	0	maj	p	p	p	p	
+L01	4	s	0	maj	s	s	s	s	
+L01	5	n	0	maj	n	n	n	n	
+L01	6	3	0	maj	3	z	3	3	
+L01	7	m	0	maj	m	m	m	m	
+L01	8	2	1	tieA	2	z	2	z	
+L01	9	tz	0	maj	tz	tz	tz	tz	
+L01	10	j	0	maj	j	j	j	j	
+L01	11	s	0	maj	S	s	s	s	
+L01	12	p	0	maj	p	p	p	p	
+L01	13	#	1	plural	#	#	t	-	
+L01	14	oo	0	maj+maj	o+o	o+o	o+o	to+o	+
+L01	15	g	0	maj	g	g	g	g	
+L01	16	m	0	maj	m	m	m	m	
+L01	17	x	0	rule	x	x	r	r	
+L01	18	d	0	maj	d	d	d	d	
+L01	19	z	0	maj	z	z	3	z	
+L01	20	g	0	maj	g	g	g	g	
+L01	21	m	0	maj	m	m	m	m	
+L01	22	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L01	23	n	0	maj	n	n	n	n	
+L01	24	3	0	maj	3	z	3	3	
+L01	25	tz	0	maj	tz	tz	tz	tz	
+L01	26	p	0	rule	P	p	P	p	
+L01	27	p	0	maj	p	p	-	p	
+L01	28	m	0	maj	m	m	m	m	
+L01	29	g	0	maj	g	g	g	g	
+L01	30	m	0	maj	m	m	m	m	
+L01	31	V	0	maj	V	V	V	V	
+L01	32	o	0	maj	o	o	o	o	
+L01	33	s	0	maj	s	s	s	s	
+L01	34	o	0	maj	e	o	o	o	
+L01	35	s	0	maj	s	s	s	s	
+L01	36	g	0	maj	g	g	g	g	
+L01	37	V	1	tieCD	-	-	V	V	
+L01	38	v	1	plural	v	v	i	r	
+L01	39	s	0	maj	s	s	s	s	
+L01	40	p	0	maj	p	p	p	p	
+L01	41	:	0	maj	:	:	:	:	
+L01	42	m	0	maj	m	m	m	m	
+L01	43	3	0	maj	3	z	3	3	
+L01	44	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L01	45	:	0	maj	:	:	:	:	
+L01	46	d	0	maj	d	d	d	d	
+L01	47	e	0	maj	e	r	e	e	
+L01	48	n	0	maj	n	n	n	n	
+L01	49	s	0	maj	s	s	s	s	
+L01	50	p	0	maj	p	p	p	p	
+L01	51	3	0	maj	3	z	3	3	
+L01	52	m	0	maj	m	m	m	m	
+L01	53	a	0	maj	a	a	a	a	
+L01	54	g	0	maj	g	g	g	g	
+L02	1	e	1	tieA	e	{curl}	u	a	
+L02	2	l	0	maj	l	l	l	l	
+L02	3	g	1	tieA	g	g	-	-	
+L02	4	6	0	maj	6	6	6	6	
+L02	5	s	1	tieCD	p	p	s	s	
+L02	6	k	0	maj	h	k	k	k	
+L02	7	g	0	maj	g	g	g	g	
+L02	8	m	0	maj	m	m	m	m	
+L02	9	x	0	maj	x	x	x	x	
+L02	10	7	0	maj	7	7	7	7	
+L02	11	#	0	maj	#	#	#	#	
+L02	12	s	0	maj	s	s	s	s	
+L02	13	c	1	plural	c	c	i	a	
+L02	14	g	0	maj	g	g	g	g	
+L02	15	m	0	maj	m	m	m	m	
+L02	16	x	0	maj	x	x	x	x	
+L02	17	6	0	maj	o	6	6	6	
+L02	18	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L02	19	x	0	maj	x	x	x	x	
+L02	20	tz	0	maj	tz	tz	tz	tz	
+L02	21	m	0	maj	m	m	m	m	
+L02	22	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L02	23	g	0	maj	g	g	g	g	
+L02	24	x	0	maj	x	x	x	x	
+L02	25	i	1	tieCD	1	1	i	i	
+L02	26	d	0	maj	d	d	d	d	
+L02	27	P	0	maj	P	P	P	P	
+L02	28	d	0	maj	d	d	d	d	
+L02	29	m	0	maj	m	m	m	m	
+L02	30	tz	0	maj	tz	tz	tz	tz	
+L02	31	6	0	maj	6	6	6	6	
+L02	32	@	0	maj	@	@	@	@	
+L02	33	n	0	maj	n	n	n	n	
+L02	34	m	0	maj	m	m	m	m	
+L02	35	p	0	maj	p	p	p	p	
+L02	36	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L02	37	@	0	maj	@	@	@	@	
+L02	38	a	1	tieA	a	-	-	a	
+L02	39	c	0	maj	c	c	c	c	
+L02	40	l	0	maj	l	l	l	l	
+L02	41	:	0	maj	:	:	:	:	
+L02	42	m	0	maj	m	m	m	m	
+L02	43	g	0	maj	g	g	g	g	
+L02	44	s	0	maj	S	s	s	s	
+L02	45	tz	0	maj	tz	tz	tz	tz	
+L02	46	:	0	maj	:	:	:	:	
+L02	47	n	0	maj	n	n	n	n	
+L02	48	tz	0	maj	tz	tz	tz	tz	
+L02	49	6	0	maj	6	6	6	6	
+L02	50	:	0	maj	:	:	:	:	
+L02	51	m	0	maj	m	m	m	m	
+L02	52	x	0	maj	x	x	x	x	
+L02	53	#	0	maj	#	#	#	#	
+L03	1	S	1	tieCD	5	5	S	S	
+L03	2	6	0	maj	6	6	6	6	
+L03	3	o	1	tieCD	-	-	o	o	
+L03	4	m	0	maj	m	m	m	m	
+L03	5	x	0	maj	x	x	x	x	
+L03	6	n	0	maj	n	n	n	n	
+L03	7	r	0	maj	r	r	r	r	
+L03	8	:	1	plural	-	:	i	:	
+L03	9	c	0	maj	c	c	c	c	
+L03	10	y	0	rule	y	y	V	V	
+L03	11	o	0	maj	o	o	o	o	
+L03	12	d	0	maj	d	d	d	d	
+L03	13	p	0	maj	P	p	p	p	
+L03	14	m	0	maj	m	m	m	m	
+L03	15	p	0	maj	P	p	p	p	
+L03	16	a	0	maj	a	a	a	a	
+L03	17	d	0	maj	d	d	d	d	
+L03	18	z	0	maj	z	z	3	z	
+L03	19	m	0	maj	m	m	m	m	
+L03	20	g	1	tieCD	y	y	g	g	
+L03	21	d	0	maj	d	d	d	d	
+L03	22	z	1	plural	a	z	3	z	
+L03	23	#	0	maj	#	#	#	#	
+L03	24	3	0	maj	3	z	3	3	
+L03	25	m	0	maj	m	m	m	m	
+L03	26	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L03	27	6	0	maj	6	6	6	6	
+L03	28	to	0	maj	to	to	to	to	
+L03	29	4	0	maj	4	4	4	4	
+L03	30	m	0	maj	m	m	m	m	
+L03	31	p	0	maj	p	p	p	p	
+L03	32	d	0	maj	d	d	d	d	
+L03	33	#	0	maj	#	#	#	#	
+L03	34	tz	0	maj	tz	tz	tz	tz	
+L03	35	6	0	maj	6	6	6	6	
+L03	36	@	0	maj	@	@	@	@	
+L03	37	y	0	maj	y	y	y	y	
+L03	38	d	0	maj	d	d	d	d	
+L03	39	e	0	maj	e	e	e	e	
+L03	40	n	0	maj	n	n	n	n	
+L03	41	m	0	maj	m	m	m	m	
+L03	42	d	0	maj	d	d	d	d	
+L03	43	3	0	maj	3	z	3	3	
+L03	44	m	0	maj	m	m	m	m	
+L03	45	S	0	maj	S	S	S	S	
+L03	46	d	0	maj	d	d	d	d	
+L03	47	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L03	48	p	0	maj	p	p	p	p	
+L03	49	r	0	maj	r	r	r	r	
+L03	50	i	1	tieCD	1	1	i	i	
+L03	51	d	0	maj	d	d	d	d	
+L03	52	P	1	tieA	P	P	-	-	
+L04	1	d	0	maj	d	d	d	d	
+L04	2	tz	0	maj	tz	tz	tz	tz	
+L04	3	3	0	maj	3	z	3	3	
+L04	4	m	0	maj	m	m	m	m	
+L04	5	g	0	maj	g	g	g	g	
+L04	6	s	0	maj	s	s	s	s	
+L04	7	n	0	maj	n	n	n	n	
+L04	8	tz	0	maj	tz	tz	tz	tz	
+L04	9	d	0	maj	d	d	d	d	
+L04	10	p	0	maj	P	p	p	p	
+L04	11	y	0	rule	y	y	V	V	
+L04	12	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L04	13	p	0	maj	P	p	p	p	
+L04	14	d	0	maj	d	d	d	d	
+L04	15	e	1	tieA	e	c	i	a	
+L04	16	l	0	maj	l	l	l	l	
+L04	17	#	0	maj	#	#	#	#	
+L04	18	g	0	maj	g	g	g	g	
+L04	19	s	0	maj	s	s	s	s	
+L04	20	tz	0	maj	tz	tz	tz	tz	
+L04	21	:	0	maj	:	:	:	:	
+L04	22	n	0	maj	n	n	n	n	
+L04	23	m	0	maj	m	m	m	m	
+L04	24	g	0	maj	g	g	g	g	
+L04	25	3	0	maj	3	z	3	3	
+L04	26	m	0	maj	m	m	m	m	
+L04	27	:	0	maj	:	:	:	:	
+L04	28	7	0	maj	7	7	7	7	
+L04	29	e	0	maj	e	e	e	e	
+L04	30	s	0	rule	S	s	S	s	
+L04	31	tz	0	maj	tz	tz	tz	tz	
+L04	32	:	0	maj	:	:	:	:	
+L04	33	n	0	maj	n	n	n	n	
+L04	34	s	0	maj	s	s	s	s	
+L04	35	P	0	maj	P	P	P	P	
+L04	36	tz	0	maj	tz	tz	tz	tz	
+L04	37	j	1	tieCD	8	8	j	j	
+L04	38	S	0	maj	S	S	S	S	
+L04	39	p	0	maj	P	p	p	p	
+L04	40	m	0	maj	m	m	m	m	
+L04	41	n	0	maj	n	n	n	n	
+L04	42	o	0	maj	o	o	o	o	
+L04	43	s	0	maj	s	s	s	s	
+L04	44	tz	0	maj	tz	tz	tz	tz	
+L04	45	g	0	maj	g	g	g	g	
+L04	46	m	0	maj	m	m	m	m	
+L04	47	e	1	tieA	e	c	s	a	
+L04	48	g	0	maj	g	g	g	g	
+L04	49	#	0	maj	#	#	#	#	
+L04	50	tz	0	maj	tz	tz	tz	tz	
+L05	1	V	1	tie	-	V	V	-	
+L05	2	y	0	maj	y	y	y	y	
+L05	3	m	0	maj	m	m	m	m	
+L05	4	:	0	maj	:	:	:	:	
+L05	5	d	0	maj	d	d	d	d	
+L05	6	e	0	maj	e	e	e	e	
+L05	7	n	0	maj	n	n	n	n	
+L05	8	s	0	maj	s	s	s	s	
+L05	9	p	0	maj	p	p	p	p	
+L05	10	3	0	maj	3	z	3	3	
+L05	11	m	0	maj	m	m	m	m	
+L05	12	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L05	13	g	0	maj	g	g	g	g	
+L05	14	7	0	maj	7	7	7	7	
+L05	15	n	0	maj	n	n	n	n	
+L05	16	y	0	maj	y	y	y	V	
+L05	17	x	1	plural	x	x	-	o	
+L05	18	s	0	maj	s	s	s	s	
+L05	19	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L05	20	n	0	maj	n	n	n	n	
+L05	21	g	0	maj	g	g	g	g	
+L05	22	m	0	maj	m	m	m	m	
+L05	23	c	0	maj	o	c	c	c	
+L05	24	l	0	maj	f	l	l	l	
+L05	25	S	0	maj	S	S	S	S	
+L05	26	s	1	tie	-	s	s	-	
+L05	27	7	1	plural	7	7	j	-	
+L05	28	m	0	maj	m	m	m	-	
+L05	29	g	0	maj	g	g	g	-	
+L05	30	s	0	maj	s	s	s	s	
+L05	31	g	0	maj	g	g	g	-	
+L05	32	d	0	maj	d	d	d	-	
+L05	33	e	0	maj	e	e	e	-	
+L05	34	n	0	maj	n	n	n	-	
+L05	35	r	1	tieA	r	-	r	-	
+L05	36	3	1	plural	3	z	3	-	
+L05	37	m	0	maj	m	m	m	-	
+L05	38	oo	0	maj+maj	o+o	o+o	o+o	-+j	+
+L05	39	m	0	maj	m	m	m	m	
+L05	40	g	0	maj	g	g	g	g	
+L05	41	x	0	maj	x	x	x	-	
+L05	42	d	0	maj	d	d	d	-	
+L05	43	s	1	plural	S	s	s	-	
+L05	44	G	0	maj	G	G	G	-	
+L05	45	c	1	plural	e	c	c	-	
+L05	46	l	0	maj	l	l	l	-	
+L05	47	z	1	plural	3	z	z	-	
+L05	48	m	0	maj	m	m	m	-	
+L05	49	d	0	maj	d	d	d	-	
+L05	50	#	0	maj	#	#	#	-	
+L06	1	s	0	maj	s	s	s	s	
+L06	2	P	0	maj	P	P	P	P	
+L06	3	s	0	maj	s	s	s	s	
+L06	4	tz	0	maj	tz	tz	tz	tz	
+L06	5	g	0	maj	g	g	g	g	
+L06	6	m	0	maj	m	m	m	m	
+L06	7	y	0	rule	y	V	y	V	
+L06	8	d	0	maj	d	d	d	d	
+L06	9	p	0	maj	P	p	p	p	
+L06	10	s	0	maj	s	s	s	s	
+L06	11	m	0	maj	m	m	m	m	
+L06	12	x	0	maj	x	x	x	x	
+L06	13	:	0	maj	:	:	:	:	
+L06	14	g	0	maj	g	g	g	g	
+L06	15	tz	0	maj	tz	tz	tz	tz	
+L06	16	6	0	maj	6	6	b	6	
+L06	17	n	0	maj	n	n	n	n	
+L06	18	tz	0	maj	tz	tz	tz	to	
+L06	19	:	0	maj	:	:	:	:	
+L06	20	3	1	plural	r	z	3	3	
+L06	21	m	0	maj	m	m	m	m	
+L06	22	n	0	maj	n	n	n	n	
+L06	23	g	0	maj	g	g	g	g	
+L06	24	s	0	maj	S	s	s	s	
+L06	25	tz	0	maj	tz	tz	tz	tz	
+L06	26	:	0	maj	:	:	:	:	
+L06	27	n	0	maj	n	n	n	n	
+L06	28	#	0	maj	#	#	#	#	
+L06	29	g	0	maj	g	g	g	g	
+L06	30	m	0	maj	m	m	m	m	
+L06	31	d	0	maj	d	d	d	d	
+L06	32	t	1	tieA	t	-	t	-	
+L06	33	tz	1	plural	tz	4	-	tz	
+L06	34	g	0	maj	g	g	g	g	
+L06	35	s	0	maj	s	s	s	s	
+L06	36	p	0	maj	p	p	p	p	
+L06	37	k	0	maj	k	k	k	k	
+L06	38	m	0	maj	m	m	m	m	
+L06	39	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L06	40	d	1	tieCD	V	V	d	d	
+L06	41	m	0	maj	m	m	m	m	
+L06	42	:	0	maj	:	:	:	:	
+L06	43	y	0	maj	y	y	y	y	
+L06	44	d	0	maj	d	d	d	d	
+L06	45	d	0	maj	d	d	d	d	
+L06	46	m	0	maj	m	m	m	m	
+L06	47	4	0	maj	4	4	4	4	
+L06	48	o	0	maj	o	o	o	o	
+L06	49	3	0	maj	3	z	3	3	
+L06	50	tz	0	maj	tz	tz	tz	tz	
+L07	1	m	0	maj	m	m	m	m	
+L07	2	p	0	maj	p	p	p	p	
+L07	3	r	0	maj	r	r	r	r	
+L07	4	n	0	maj	n	n	n	n	
+L07	5	m	0	maj	m	m	m	m	
+L07	6	x	0	maj	x	x	x	x	
+L07	7	n	0	maj	n	n	n	n	
+L07	8	g	0	maj	g	g	g	g	
+L07	9	m	0	maj	m	m	m	m	
+L07	10	s	0	maj	S	s	s	s	
+L07	11	k	0	maj	k	k	k	k	
+L07	12	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L07	13	m	0	maj	m	m	m	m	
+L07	14	p	0	maj	p	p	p	p	
+L07	15	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L07	16	m	0	maj	m	m	m	m	
+L07	17	s	0	maj	s	s	s	s	
+L07	18	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L07	19	4	1	plural	-	2	4	4	
+L07	20	s	0	maj	S	s	s	s	
+L07	21	g	0	maj	g	g	g	g	
+L07	22	m	0	maj	m	m	m	m	
+L07	23	x	0	maj	x	x	x	x	
+L07	24	tz	0	maj	tz	tz	tz	tz	
+L07	25	d	0	maj	d	d	d	d	
+L07	26	s	0	maj	s	s	s	s	
+L07	27	n	0	maj	n	n	n	n	
+L07	28	3	0	maj	3	z	3	3	
+L07	29	m	0	maj	m	m	m	m	
+L07	30	d	0	maj	d	d	d	d	
+L07	31	s	1	plural	S	s	V	s	
+L07	32	y	0	maj	y	y	y	V	
+L07	33	p	1	plural	p	p	-	o	
+L07	34	a	0	maj	a	a	a	a	
+L07	35	:	0	maj	:	:	:	:	
+L07	36	m	0	maj	m	m	m	m	
+L07	37	x	0	maj	x	x	x	x	
+L07	38	s	0	maj	s	s	s	s	
+L07	39	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L07	40	m	0	maj	m	m	m	m	
+L07	41	:	0	maj	:	:	:	:	
+L07	42	m	0	maj	m	m	m	m	
+L07	43	x	0	rule	x	x	r	r	
+L07	44	m	0	maj	m	m	m	m	
+L07	45	x	0	maj	x	x	x	x	
+L07	46	d	1	tie	-	d	d	-	
+L07	47	H	1	plural	H	H}	{curl}	H	
+L08	1	V	0	maj	-	V	V	V	
+L08	2	y	0	maj	y	y	y	o	
+L08	3	m	0	maj	m	m	m	m	
+L08	4	x	0	maj	x	x	x	x	
+L08	5	m	0	maj	m	m	m	m	
+L08	6	tz	0	maj	tz	tz	tz	tz	
+L08	7	4	0	maj	4	4	4	4	
+L08	8	d	0	maj	d	d	d	d	
+L08	9	m	0	maj	m	m	m	m	
+L08	10	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L08	11	g	0	maj	g	g	g	g	
+L08	12	:	0	maj	:	:	:	:	
+L08	13	y	1	plural	y	y	V	x	
+L08	14	s	0	maj	S	s	s	s	
+L08	15	g	0	maj	g	g	g	g	
+L08	16	y	0	maj	y	y	y	V	
+L08	17	m	0	maj	m	m	m	m	
+L08	18	x	0	maj	x	x	x	x	
+L08	19	k	0	maj	k	k	k	k	
+L08	20	r	0	maj	r	r	r	r	
+L08	21	g	1	tieCD	G	G	g	g	
+L08	22	7	0	maj	7	7	7	7	
+L08	23	S	0	maj	S	S	S	s	
+L08	24	tz	0	maj	tz	tz	tz	tz	
+L08	25	4	1	tieA	4	-	4	-	
+L08	26	g	1	tieA	g	d	-	k	
+L08	27	g	0	maj	g	g	g	g	
+L08	28	s	0	maj	S	s	s	s	
+L08	29	4	0	maj	4	4	4	4	
+L08	30	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L08	31	r	0	maj	r	r	r	n	
+L08	32	7	0	maj	7	7	7	7	
+L08	33	#	0	maj	#	#	#	#	
+L08	34	:	0	maj	:	:	:	:	
+L08	35	m	0	maj	m	m	m	m	
+L08	36	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L08	37	6	0	maj	6	6	6	6	
+L08	38	to	0	maj	to	to	to	to	
+L08	39	3	0	maj	3	z	3	3	
+L08	40	m	0	maj	m	m	m	m	
+L08	41	V	1	plural	p	-	V	V	
+L08	42	y	0	maj	y	y	y	o	
+L08	43	s	1	plural	S	V	s	s	
+L08	44	d	0	maj	d	d	d	d	
+L08	45	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L09	1	m	0	maj	m	m	m	m	
+L09	2	j	0	maj	j	j	j	j	
+L09	3	m	0	maj	m	m	m	m	
+L09	4	g	0	maj	g	g	g	g	
+L09	5	m	0	maj	m	m	m	m	
+L09	6	V	1	plural	-	x	V	V	
+L09	7	r	0	maj	r	r	r	r	
+L09	8	tz	0	maj	tz	tz	tz	tz	
+L09	9	4	0	maj	4	4	4	4	
+L09	10	tz	0	maj	tz	tz	tz	tz	
+L09	11	d	0	maj	d	d	d	d	
+L09	12	p	0	maj	p	p	p	p	
+L09	13	m	0	maj	m	m	m	m	
+L09	14	n	0	maj	n	n	n	n	
+L09	15	d	0	maj	d	d	d	d	
+L09	16	p	0	maj	p	p	p	p	
+L09	17	n	0	maj	n	n	n	n	
+L09	18	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L09	19	d	0	maj	d	d	d	d	
+L09	20	x	0	maj	x	x	x	x	
+L09	21	j	0	maj	j	j	j	j	
+L09	22	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L09	23	d	1	tieCD	-	-	d	d	
+L09	24	S	1	tieA	S	-	V	e	
+L09	25	y	1	tieA	y	-	r	m	
+L09	26	o	0	maj	o	d	o	o	
+L09	27	y	0	maj	y	y	y	y	
+L09	28	3	0	maj	3	3	3	z	
+L09	29	d	0	maj	d	d	d	d	
+L09	30	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L09	31	p	0	maj	p	p	p	p	
+L09	32	m	0	maj	m	m	m	m	
+L09	33	g	0	maj	g	g	g	g	
+L09	34	s	0	maj	s	s	s	s	
+L09	35	:	0	maj	:	:	:	:	
+L09	36	m	0	maj	m	m	m	m	
+L09	37	a	0	maj	a	a	a	a	
+L09	38	tz	0	maj	tz	tz	tz	tz	
+L09	39	m	0	maj	m	m	m	m	
+L09	40	p	0	maj	p	p	p	p	
+L09	41	#	0	maj	#	#	#	#	
+L09	42	m	0	maj	m	m	m	m	
+L09	43	p	0	maj	p	p	p	p	
+L09	44	k	0	maj	k	k	k	k	
+L09	45	@	0	maj	@	@	@	@	
+L09	46	V	1	plural	a	-	V	V	
+L09	47	y	0	maj	y	y	y	o	
+L09	48	m	0	maj	m	m	m	m	
+L09	49	d	0	maj	d	d	d	d	
+L10	1	z	0	maj	z	z	2	z	
+L10	2	tz	0	maj	tz	tz	tz	tz	
+L10	3	d	1	tieCD	V	V	d	d	
+L10	4	tz	0	maj	tz	tz	tz	tz	
+L10	5	x	0	maj	x	x	x	x	
+L10	6	n	0	maj	n	n	n	n	
+L10	7	g	0	maj	g	g	g	g	
+L10	8	m	0	maj	m	m	m	m	
+L10	9	x	0	maj	x	x	x	x	
+L10	10	m	1	tieA	m	m	-	-	
+L10	11	r	0	maj	x	r	r	r	
+L10	12	tz	0	maj	tz	tz	tz	tz	
+L10	13	d	0	maj	d	d	d	d	
+L10	14	d	0	maj	d	d	d	d	
+L10	15	p	0	maj	p	p	p	p	
+L10	16	n	0	maj	n	n	n	n	
+L10	17	3	0	maj	3	z	3	3	
+L10	18	m	0	maj	m	m	m	m	
+L10	19	k	0	maj	k	k	k	k	
+L10	20	m	0	maj	m	m	m	m	
+L10	21	6	0	maj	6	6	6	6	
+L10	22	s	0	maj	s	s	s	s	
+L10	23	c	0	maj	e	c	c	c	
+L10	24	l	0	maj	l	l	l	l	
+L10	25	:	0	maj	:	:	:	:	
+L10	26	m	0	maj	m	m	m	m	
+L10	27	g	0	maj	g	g	g	g	
+L10	28	d	0	maj	d	d	d	d	
+L10	29	z	0	maj	z	z	3	z	
+L10	30	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L10	31	p	0	maj	p	p	p	p	
+L10	32	4	0	maj	4	4	4	4	
+L10	33	#	0	maj	#	#	#	#	
+L10	34	g	0	maj	g	g	g	g	
+L10	35	m	0	maj	m	m	n	m	
+L10	36	x	0	maj	x	x	x	x	
+L10	37	4	0	maj	4	4	4	4	
+L10	38	g	0	maj	g	g	g	g	
+L10	39	s	0	maj	s	s	s	s	
+L10	40	p	0	maj	p	p	p	p	
+L10	41	k	0	maj	k	k	k	k	
+L10	42	m	0	maj	m	m	m	m	
+L10	43	d	0	maj	d	d	d	d	
+L10	44	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L10	45	s	0	rule	S	S	s	s	
+L10	46	:	0	maj	:	:	:	:	
+L10	47	d	0	maj	d	d	d	d	
+L10	48	p	0	maj	p	p	p	p	
+L10	49	x	0	maj	x	x	x	x	
+L11	1	k	0	maj	k	k	k	k	
+L11	2	m	0	maj	m	m	m	m	
+L11	3	:	0	maj	:	:	:	:	
+L11	4	m	0	maj	m	m	m	m	
+L11	5	x	0	maj	x	x	x	x	
+L11	6	n	0	maj	n	n	n	n	
+L11	7	s	0	maj	s	s	s	s	
+L11	8	P	0	maj	P	P	P	P	
+L11	9	s	0	maj	s	S	s	s	
+L11	10	tz	0	maj	tz	tz	tz	tz	
+L11	11	g	0	maj	g	g	g	g	
+L11	12	m	0	maj	m	m	m	m	
+L11	13	V	1	plural	y	V	V	-	
+L11	14	y	0	maj	y	y	y	V	
+L11	15	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L11	16	r	0	maj	r	r	3	r	
+L11	17	g	0	maj	g	g	g	g	
+L11	18	s	0	maj	S	s	s	s	
+L11	19	tz	0	maj	tz	tz	tz	tz	
+L11	20	d	0	maj	d	d	d	d	
+L11	21	s	0	maj	s	s	s	s	
+L11	22	p	0	maj	p	p	p	p	
+L11	23	n	0	maj	n	n	n	n	
+L11	24	m	0	maj	m	m	m	m	
+L11	25	p	0	maj	p	p	p	p	
+L11	26	n	0	maj	n	n	n	n	
+L11	27	m	0	maj	m	m	m	m	
+L11	28	p	0	maj	p	p	p	p	
+L11	29	k	0	maj	k	k	k	k	
+L11	30	h	1	tieA	h	h	-	-	
+L11	31	g	0	maj	g	g	g	g	
+L11	32	m	0	maj	m	m	m	m	
+L11	33	3	0	maj	3	z	3	3	
+L11	34	L	1	plural	L	L	3	-	
+L11	35	z	1	plural	z	z	3	-	
+L11	36	s	0	maj	s	s	s	s	
+L11	37	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L11	38	g	0	maj	g	g	g	g	
+L11	39	d	0	maj	d	d	d	d	
+L11	40	z	0	maj	z	z	3	z	
+L11	41	n	0	maj	n	R	n	n	
+L11	42	3	0	maj	3	z	3	3	
+L11	43	s	0	maj	s	s	s	s	
+L11	44	p	0	maj	p	p	p	p	
+L11	45	4	0	maj	4	4	4	4	
+L11	46	tz	0	maj	tz	tz	tz	tz	
+L11	47	m	0	maj	m	m	m	m	
+L11	48	g	0	maj	g	g	g	g	
+L11	49	a	1	plural	e	c	a	a	
+L11	50	n	0	maj	n	r	n	n	
+L11	51	d	0	maj	d	d	d	d	
+L11	52	a	0	maj	a	a	a	a	
+L12	1	:	0	maj	:	:	:	:	
+L12	2	m	0	maj	m	m	m	m	
+L12	3	y	0	maj	y	y	y	o	
+L12	4	s	0	maj	s	s	s	s	
+L12	5	:	0	maj	:	:	:	:	
+L12	6	7	0	maj	7	7	7	7	
+L12	7	g	1	tieCD	d	d	g	g	
+L12	8	m	0	maj	m	m	m	m	
+L12	9	tz	0	maj	tz	tz	tz	tz	
+L12	10	x	0	maj	x	x	x	x	
+L12	11	n	0	maj	n	n	n	n	
+L12	12	s	0	maj	s	5	s	s	
+L12	13	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L12	14	m	0	maj	m	m	m	m	
+L12	15	:	0	maj	:	:	:	:	
+L12	16	m	0	maj	m	m	m	m	
+L12	17	x	0	rule	x	x	r	r	
+L12	18	m	0	maj	m	m	m	m	
+L12	19	d	0	maj	d	d	d	d	
+L12	20	z	1	plural	z	z	tz	3	
+L12	21	tz	0	maj	tz	tz	tz	tz	
+L12	22	d	1	tieCD	S	S	d	d	
+L12	23	tz	0	maj	tz	tz	tz	tz	
+L12	24	z	1	plural	z	z	tz	-	
+L12	25	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L12	26	j	0	maj	j	j	j	j	
+L12	27	s	0	maj	s	s	s	s	
+L12	28	#	0	maj	#	#	#	#	
+L12	29	tz	0	maj	tz	tz	tz	tz	
+L12	30	d	0	maj	d	d	d	d	
+L12	31	p	0	maj	p	p	p	p	
+L12	32	c	0	maj	e	c	c	c	
+L12	33	l	0	maj	l	l	l	l	
+L12	34	m	0	maj	m	m	m	m	
+L12	35	t	1	tieA	t	-	-	t	
+L12	36	p	0	maj	p	p	p	o	
+L12	37	r	1	plural	z	r	3	r	
+L12	38	:	0	maj	:	:	:	:	
+L12	39	a	0	maj	a	a	a	a	
+L12	40	r	0	maj	r	r	n	r	
+L12	41	m	0	maj	m	m	m	m	
+L12	42	g	0	maj	g	g	g	g	
+L12	43	s	0	maj	s	s	s	s	
+L12	44	d	0	maj	d	d	d	d	
+L12	45	d	0	maj	d	d	d	d	
+L12	46	p	0	maj	p	p	p	p	
+L12	47	o	1	plural	-	v	o	o	
+L12	48	g	0	maj	y	g	g	g	
+L13	1	m	0	maj	m	m	m	m	
+L13	2	tz	0	maj	tz	tz	tz	tz	
+L13	3	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L13	4	3	0	rule	z	z	3	3	
+L13	5	tz	0	maj	tz	tz	tz	tz	
+L13	6	:	0	maj	:	:	:	:	
+L13	7	r	0	maj	r	r	r	r	
+L13	8	:	0	maj	:	:	:	:	
+L13	9	m	0	maj	m	m	m	m	
+L13	10	2	0	maj	2	2	3	2	
+L13	11	m	0	maj	m	m	m	m	
+L13	12	:	0	maj	:	:	:	:	
+L13	13	n	0	rule	r	r	n	n	
+L13	14	s	0	maj	s	s	s	s	
+L13	15	p	0	maj	p	p	p	p	
+L13	16	n	0	maj	n	r	n	n	
+L13	17	:	0	maj	:	:	:	:	
+L13	18	m	0	maj	m	m	m	m	
+L13	19	x	0	maj	x	x	x	x	
+L13	20	3	0	rule	z	z	3	3	
+L13	21	m	0	maj	m	m	m	m	
+L13	22	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L13	23	6	0	maj	6	6	6	6	
+L13	24	to	0	maj	to	to	to	to	
+L13	25	e	1	tieA	e	c	a	-	
+L13	26	s	0	maj	s	s	s	s	
+L13	27	g	0	maj	g	g	g	g	
+L13	28	#	0	maj	#	#	#	#	
+L13	29	@	0	maj	@	@	@	@	
+L13	30	m	0	maj	m	m	m	m	
+L13	31	p	0	maj	p	p	p	p	
+L13	32	d	0	maj	d	d	d	d	
+L13	33	m	0	maj	m	m	m	m	
+L13	34	t	1	tieA	t	z	3	2	
+L13	35	S	0	maj	S	S	S	s	
+L13	36	6	0	maj	6	6	6	6	
+L13	37	m	0	maj	m	m	m	m	
+L13	38	m	0	maj	m	m	m	m	
+L13	39	x	0	maj	x	x	x	x	
+L13	40	m	0	maj	m	m	m	m	
+L13	41	6	0	maj	6	6	6	6	
+L13	42	to	0	maj	to	to	to	to	
+L13	43	x	0	maj	x	x	x	2	
+L13	44	m	0	maj	m	m	m	m	
+L13	45	m	0	maj	m	m	m	m	
+L13	46	p	0	maj	p	p	p	p	
+L13	47	r	1	tieA	r	r	-	-	
+L14	1	g	1	tieCD	y	y	g	g	
+L14	2	m	0	maj	m	m	m	m	
+L14	3	a	1	plural	e	c	a	a	
+L14	4	g	0	maj	g	g	g	g	
+L14	5	tz	0	maj	tz	tz	tz	tz	
+L14	6	d	0	maj	d	d	d	d	
+L14	7	m	0	maj	m	m	m	m	
+L14	8	V	0	maj	V	S	V	V	
+L14	9	3	0	rule	z	z	3	3	
+L14	10	m	0	maj	m	m	m	m	
+L14	11	4	0	maj	4	4	4	4	
+L14	12	g	0	maj	g	g	g	g	
+L14	13	s	0	maj	s	s	s	s	
+L14	14	p	0	maj	p	p	p	p	
+L14	15	k	0	maj	k	k	k	k	
+L14	16	m	0	maj	m	m	m	m	
+L14	17	tz	0	maj	tz	tz	tz	tz	
+L14	18	P	0	maj	P	P	P	P	
+L14	19	x	1	tieA	x	x	-	-	
+L14	20	d	0	maj	d	d	d	d	
+L14	21	g	0	maj	g	g	g	g	
+L14	22	r	0	maj	r	r	r	r	
+L14	23	s	0	maj	s	s	s	s	
+L14	24	p	0	maj	p	p	p	p	
+L14	25	:	0	maj	:	:	:	:	
+L14	26	m	0	maj	m	m	m	m	
+L14	27	y	1	plural	y	y	-	m	
+L14	28	d	0	maj	d	d	d	d	
+L14	29	p	0	maj	p	p	p	p	
+L14	30	y	0	maj	y	y	y	V	
+L14	31	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L14	32	r	0	maj	r	r	3	r	
+L14	33	s	0	maj	s	s	s	s	
+L14	34	g	1	tieA	g	g	-	-	
+L14	35	s	0	maj	S	s	s	s	
+L14	36	tz	0	maj	tz	tz	tz	tz	
+L14	37	:	0	maj	:	:	:	:	
+L14	38	n	0	maj	n	n	n	n	
+L14	39	m	0	maj	m	m	m	m	
+L14	40	n	0	maj	n	-	n	n	
+L14	41	r	1	tieA	r	r	-	-	
+L14	42	g	1	tieA	g	g	-	-	
+L14	43	s	0	maj	S	s	s	s	
+L14	44	tz	0	maj	tz	tz	tz	tz	
+L14	45	:	0	maj	:	:	:	:	
+L14	46	n	0	maj	n	n	n	n	
+L14	47	6	0	maj	6	6	6	6	
+L14	48	d	0	maj	d	d	d	d	
+L15	1	#	0	maj	#	#	#	#	
+L15	2	d	0	maj	d	d	d	d	
+L15	3	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L15	4	x	0	maj	x	x	x	x	
+L15	5	tz	0	maj	tz	tz	tz	tz	
+L15	6	d	0	maj	d	d	d	d	
+L15	7	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L15	8	g	0	maj	g	g	g	g	
+L15	9	x	0	maj	x	x	x	x	
+L15	10	4	0	maj	4	4	4	4	
+L15	11	g	0	maj	g	g	g	g	
+L15	12	s	0	maj	s	s	s	s	
+L15	13	p	0	maj	p	p	p	p	
+L15	14	k	0	maj	k	k	k	k	
+L15	15	m	0	maj	m	m	m	m	
+L15	16	x	0	maj	x	x	x	x	
+L15	17	g	0	maj	g	g	g	g	
+L15	18	m	0	maj	m	m	m	m	
+L15	19	z	1	plural	2	z	3	z	
+L15	20	d	0	maj	d	d	d	d	
+L15	21	p	0	maj	p	p	p	p	
+L15	22	d	0	maj	d	d	d	d	
+L15	23	#	0	maj	#	#	#	#	
+L15	24	g	0	maj	g	g	g	g	
+L15	25	s	0	maj	s	s	s	s	
+L15	26	p	0	maj	p	p	p	p	
+L15	27	:	0	maj	:	:	:	:	
+L15	28	m	0	maj	m	m	m	m	
+L15	29	x	0	maj	x	x	x	-	
+L15	30	x	0	maj	x	x	x	x	
+L15	31	a	0	maj	a	a	a	a	
+L15	32	g	0	maj	g	g	g	g	
+L15	33	:	0	maj	:	:	:	:	
+L15	34	m	0	maj	m	m	m	m	
+L15	35	k	0	maj	k	k	k	k	
+L15	36	tz	0	maj	tz	tz	tz	tz	
+L15	37	:	0	maj	:	:	:	:	
+L15	38	n	0	maj	n	n	n	r	
+L15	39	2	0	maj	2	2	3	2	
+L15	40	s	0	maj	S	s	s	s	
+L15	41	g	0	maj	g	y	g	g	
+L15	42	m	0	maj	m	m	m	m	
+L15	43	2	1	tieA	2	z	x	r	
+L15	44	tz	0	maj	tz	tz	tz	tz	
+L15	45	d	0	maj	d	d	d	d	
+L15	46	s	0	maj	s	s	s	s	
+L15	47	n	0	maj	n	n	n	n	
+L15	48	m	0	maj	m	m	m	m	
+L15	49	n	0	maj	n	n	n	n	
+L15	50	6	0	maj	6	6	6	6	
+L15	51	a	1	tieA	a	a	-	-	
+L16	1	z	0	maj	z	z	3	z	
+L16	2	m	0	maj	m	m	m	m	
+L16	3	p	0	maj	p	p	p	p	
+L16	4	3	0	rule	z	z	3	3	
+L16	5	d	0	maj	d	d	d	d	
+L16	6	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L16	7	p	0	maj	p	p	p	p	
+L16	8	m	0	maj	m	m	m	m	
+L16	9	V	1	tie	-	V	V	-	
+L16	10	y	0	maj	y	y	y	V	
+L16	11	d	0	maj	d	d	d	d	
+L16	12	p	0	maj	p	p	p	p	
+L16	13	3	0	rule	z	z	3	3	
+L16	14	m	0	maj	m	m	m	m	
+L16	15	4	0	maj	4	4	4	4	
+L16	16	g	0	maj	g	g	g	g	
+L16	17	s	0	maj	s	s	s	s	
+L16	18	p	0	maj	p	p	p	p	
+L16	19	k	0	maj	k	k	k	k	
+L16	20	@	0	maj	@	@	@	@	
+L16	21	x	0	maj	x	x	x	x	
+L16	22	a	0	maj	a	a	a	a	
+L16	23	S	0	maj	S	S	S	s	
+L16	24	:	0	maj	:	:	:	:	
+L16	25	d	0	maj	d	d	d	d	
+L16	26	p	0	maj	p	p	p	p	
+L16	27	d	0	maj	d	d	d	d	
+L16	28	a	0	maj	a	a	a	a	
+L16	29	d	0	maj	d	d	d	d	
+L16	30	tz	0	maj	tz	tz	tz	tz	
+L16	31	:	0	maj	:	:	:	:	
+L16	32	m	0	maj	m	m	m	m	
+L16	33	V	0	maj	V	V	V	V	
+L16	34	m	0	maj	m	m	m	m	
+L16	35	x	0	maj	x	x	x	a	
+L16	36	#	0	maj	#	#	#	#	
+L16	37	c	0	maj	e	c	c	c	
+L16	38	l	0	maj	l	l	l	l	
+L16	39	y	0	maj	y	y	y	V	
+L16	40	m	0	maj	m	m	m	m	
+L16	41	d	0	maj	d	d	d	g	
+L16	42	e	0	maj	e	e	g	e	
+L16	43	g	0	maj	g	g	g	g	
+L16	44	S	0	maj	S	S	S	s	
+L16	45	7	0	maj	7	7	7	7	
+L16	46	d	0	maj	d	d	d	d	
+L16	47	m	0	maj	m	m	m	m	
+L16	48	p	0	maj	p	p	p	p	
+L16	49	#	1	tieA	#	#	-	-	
+L17	1	a	0	maj	a	a	a	a	
+L17	2	c	0	maj	e	c	c	c	
+L17	3	l	0	maj	l	l	l	l	
+L17	4	y	0	maj	y	y	y	V	
+L17	5	m	0	maj	m	m	m	m	
+L17	6	z	1	plural	2	z	3	z	
+L17	7	d	0	maj	d	d	d	d	
+L17	8	tz	0	maj	tz	tz	tz	tz	
+L17	9	p	0	maj	p	p	p	p	
+L17	10	4	0	maj	4	4	4	4	
+L17	11	d	0	maj	d	d	d	d	
+L17	12	:	0	maj	:	:	:	:	
+L17	13	m	0	maj	m	m	m	m	
+L17	14	x	0	maj	x	x	x	x	
+L17	15	n	0	maj	n	r	n	n	
+L17	16	c	0	maj	e	c	c	c	
+L17	17	l	0	maj	l	l	l	l	
+L17	18	y	0	maj	y	y	y	V	
+L17	19	s	0	maj	s	s	s	s	
+L17	20	k	1	tieA	k	h	k	h	
+L17	21	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L17	22	m	0	maj	m	m	m	m	
+L17	23	p	0	maj	p	p	p	p	
+L17	24	tz	0	maj	tz	tz	tz	tz	
+L17	25	L	0	maj	L	L	L	L	
+L17	26	:	0	maj	:	:	:	:	
+L17	27	7	0	maj	7	7	7	7	
+L17	28	m	0	maj	m	m	m	m	
+L17	29	x	0	maj	x	x	x	-	
+L17	30	tz	0	maj	tz	tz	tz	tz	
+L17	31	3	0	maj	3	z	3	3	
+L17	32	d	0	maj	d	d	d	d	
+L17	33	tz	0	maj	tz	tz	tz	tz	
+L17	34	S	0	maj	S	S	S	s	
+L17	35	#	0	maj	#	#	#	#	
+L17	36	S	0	maj	S	S	S	s	
+L17	37	tz	0	maj	tz	tz	tz	tz	
+L17	38	m	0	maj	m	m	m	m	
+L17	39	p	0	maj	p	p	p	p	
+L17	40	s	0	maj	s	s	s	s	
+L17	41	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L17	42	V	0	maj	V	V	d	V	
+L17	43	tz	0	maj	tz	tz	tz	tz	
+L17	44	#	0	maj	#	#	#	#	
+L17	45	m	0	maj	m	m	m	m	
+L17	46	p	0	maj	p	p	p	p	
+L17	47	tz	0	maj	tz	tz	tz	tz	
+L18	1	d	0	maj	d	d	d	d	
+L18	2	b	0	maj	b	b	b	-	
+L18	3	s	0	maj	s	s	s	s	
+L18	4	k	0	maj	k	k	k	h	
+L18	5	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L18	6	m	0	maj	m	m	m	m	
+L18	7	g	0	maj	g	g	g	g	
+L18	8	n	0	maj	n	r	n	n	
+L18	9	tz	0	maj	tz	tz	tz	tz	
+L18	10	m	0	maj	m	m	m	m	
+L18	11	3	0	maj	3	z	3	3	
+L18	12	m	0	maj	m	m	m	m	
+L18	13	V	0	maj	V	V	V	V	
+L18	14	m	0	maj	m	m	m	m	
+L18	15	g	0	maj	g	g	g	g	
+L18	16	s	0	maj	S	s	s	s	
+L18	17	tz	0	maj	tz	tz	tz	tz	
+L18	18	g	0	maj	g	g	g	g	
+L18	19	m	0	maj	m	m	m	m	
+L18	20	c	0	maj	e	c	c	c	
+L18	21	m	0	maj	m	m	m	m	
+L18	22	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L18	23	3	0	maj	3	z	3	3	
+L18	24	m	0	maj	m	m	m	m	
+L18	25	:	0	maj	:	:	:	:	
+L18	26	d	0	maj	d	d	d	d	
+L18	27	z	0	maj	z	z	3	z	
+L18	28	#	0	maj	#	#	#	#	
+L18	29	m	0	maj	m	m	m	m	
+L18	30	3	0	maj	3	z	3	3	
+L18	31	m	0	maj	m	m	m	m	
+L18	32	:	0	maj	:	:	:	:	
+L18	33	m	0	maj	m	m	m	m	
+L18	34	o	0	maj	o	o	o	o	
+L18	35	s	0	maj	s	s	s	s	
+L18	36	@	1	tieA	@	@	-	-	
+L18	37	x	0	maj	x	x	x	x	
+L18	38	d	0	maj	d	d	d	d	
+L18	39	tz	0	maj	tz	tz	tz	tz	
+L18	40	n	0	maj	n	n	n	n	
+L18	41	c	0	maj	e	c	c	c	
+L18	42	l	0	maj	l	l	l	l	
+L18	43	s	0	maj	s	s	s	s	
+L18	44	V	1	plural	y	V	V	-	
+L18	45	m	0	maj	m	m	m	V	
+L18	46	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L18	47	g	0	maj	g	g	g	g	
+L18	48	m	0	maj	m	m	m	m	
+L18	49	g	0	maj	g	g	g	g	
+L19	1	d	0	maj	d	d	d	d	
+L19	2	m	0	maj	m	m	m	m	
+L19	3	x	0	maj	x	x	x	x	
+L19	4	c	0	maj	e	c	c	c	
+L19	5	s	0	maj	S	s	s	s	
+L19	6	tz	0	maj	tz	tz	tz	tz	
+L19	7	d	0	maj	d	d	d	d	
+L19	8	a	0	maj	n	a	a	a	
+L19	9	c	0	maj	e	c	c	c	
+L19	10	l	0	maj	l	l	l	l	
+L19	11	:	0	maj	:	:	:	:	
+L19	12	m	0	maj	m	m	m	m	
+L19	13	4	0	maj	4	4	4	4	
+L19	14	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L19	15	3	1	tieCD	s	s	3	3	
+L19	16	g	0	maj	g	g	g	g	
+L19	17	k	0	maj	h	k	k	k	
+L19	18	m	0	maj	m	m	m	m	
+L19	19	g	0	maj	g	g	g	g	
+L19	20	a	0	maj	a	a	a	a	
+L19	21	p	0	maj	p	p	p	p	
+L19	22	m	0	maj	m	m	m	m	
+L19	23	S	0	maj	S	S	S	s	
+L19	24	d	0	maj	d	d	d	d	
+L19	25	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L19	26	p	0	maj	p	p	p	p	
+L19	27	m	0	maj	m	m	m	m	
+L19	28	o	1	tieCD	e	e	o	o	
+L19	29	d	0	maj	d	d	d	d	
+L19	30	g	0	maj	g	g	g	g	
+L19	31	n	0	maj	n	n	n	n	
+L19	32	r	0	maj	r	r	r	2	
+L19	33	c	0	maj	e	c	c	c	
+L19	34	l	0	maj	l	l	l	l	
+L19	35	d	0	maj	d	d	d	d	
+L19	36	d	0	maj	d	d	d	d	
+L19	37	g	0	maj	g	g	g	g	
+L19	38	n	0	maj	n	n	n	n	
+L19	39	tz	0	maj	tz	tz	tz	tz	
+L19	40	g	0	maj	g	g	g	g	
+L19	41	S	0	maj	S	S	S	s	
+L19	42	tz	0	maj	tz	tz	tz	tz	
+L19	43	6	0	maj	6	6	6	6	
+L19	44	y	0	maj	y	y	y	V	
+L19	45	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L19	46	z	0	maj	z	z	3	z	
+L20	1	c	1	plural	e	c	c	"	
+L20	2	6	0	maj	6	6	6	6	
+L20	3	s	0	maj	5	s	s	s	
+L20	4	tz	0	maj	tz	tz	tz	tz	
+L20	5	g	0	maj	g	g	g	g	
+L20	6	s	0	maj	s	s	s	s	
+L20	7	S	1	tieA	S	S	-	-	
+L20	8	z	0	maj	z	z	3	z	
+L20	9	d	0	maj	d	d	d	d	
+L20	10	p	0	maj	p	p	p	p	
+L20	11	x	0	maj	x	x	x	x	
+L20	12	tz	0	maj	tz	tz	tz	tz	
+L20	13	m	0	maj	m	m	m	m	
+L20	14	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L20	15	g	0	maj	g	g	g	g	
+L20	16	3	0	maj	3	z	3	3	
+L20	17	m	0	maj	m	m	m	m	
+L20	18	x	0	maj	x	x	x	x	
+L20	19	P	0	maj	P	P	P	P	
+L20	20	oo	0	maj+maj	o+o	o+o	o+o	o+o	+
+L20	21	d	0	maj	d	d	d	d	
+L20	22	z	0	maj	z	z	3	z	
+L20	23	r	0	maj	r	r	r	r	
+L20	24	V	0	maj	V	V	V	V	
+L20	25	s	0	maj	s	s	s	s	
+L20	26	m	0	maj	m	m	m	m	
+L20	27	p	0	maj	p	p	p	p	
+L20	28	i	0	maj	i	i	i	i	
+L20	29	d	0	maj	d	d	d	d	
+L20	30	g	0	maj	g	g	g	g	
+L20	31	m	0	maj	m	m	m	m	
+L20	32	x	0	maj	x	x	x	x	
+L20	33	H	0	maj	H	H	L	H	
+L20	34	V	1	tieCD	n	n	V	V	
+L20	35	o	0	maj	o	o	o	o	
+L20	36	z	0	maj	z	z	3	z	
+L20	37	g	0	maj	g	g	g	g	
+L20	38	tz	0	maj	tz	tz	tz	tz	
+L20	39	d	1	tieA	d	m	d	m	
+L20	40	V	0	maj	V	V	V	V	
+L20	41	3	0	maj	3	z	3	3	
+L20	42	m	0	maj	m	m	m	m	
+L20	43	c	1	plural	e	-	c	c	
+L20	44	m	0	maj	m	m	m	m	
+L20	45	d	0	maj	d	d	d	d	
+L20	46	e	1	tieA	e	e	-	-	
+L20	47	:	0	rule	o	o	:	:	
+L20	48	y	0	maj	y	y	y	V	
+L20	49	m	0	maj	m	m	m	m	
+L20	50	c	0	maj	e	c	c	c	
+L20	51	l	0	maj	l	l	l	l	
+L21	1	V	1	tie	-	V	V	-	
+L21	2	y	0	maj	y	y	y	V	
+L21	3	m	0	maj	m	m	m	m	
+L21	4	:	0	maj	:	:	:	:	
+L21	5	d	0	maj	d	d	d	d	
+L21	6	e	0	maj	e	e	e	e	
+L21	7	n	0	maj	n	n	n	n	
+L21	8	s	0	maj	s	s	s	s	
+L21	9	p	0	maj	p	p	p	p	
+L21	10	k	0	maj	h	k	k	k	
+L21	11	m	0	maj	m	m	m	m	
+L21	12	z	1	plural	2	z	3	z	
+L21	13	m	0	maj	m	m	m	m	
+L21	14	p	0	maj	p	p	p	p	
+L21	15	r	1	plural	r	n	-	r	
+L21	16	z	1	plural	z	z	n	-	
+L21	17	L	1	plural	L	L	3	Z	
+L21	18	3	0	maj	3	z	3	3	
+L21	19	m	0	maj	m	m	m	m	
+L21	20	z	1	plural	2	z	3	z	
+L21	21	s	0	maj	S	s	s	s	
+L21	22	p	0	maj	p	p	p	p	
+L21	23	3	0	maj	3	z	3	3	
+L21	24	m	0	maj	m	m	m	m	
+L21	25	3	0	maj	3	z	3	3	
+L21	26	m	0	maj	m	m	m	m	
+L21	27	x	0	maj	x	x	x	x	
+L21	28	s	0	maj	s	s	s	s	
+L21	29	tz	0	maj	tz	tz	tz	tz	
+L21	30	p	0	maj	p	p	p	-	
+L21	31	:	0	maj	:	:	:	:	
+L21	32	#	0	maj	#	#	#	#	
+L21	33	V	1	tie	-	V	V	-	
+L21	34	y	0	maj	y	y	y	V	
+L21	35	o	0	maj	o	o	-	o	
+L21	36	s	0	maj	s	s	s	s	
+L21	37	@	0	maj	@	@	@	@	
+L21	38	s	0	maj	s	s	s	s	
+L21	39	g	1	tieCD	y	y	g	g	
+L21	40	r	0	maj	r	r	r	r	
+L21	41	m	0	maj	m	m	m	m	
+L21	42	#	0	maj	#	#	#	#	
+L21	43	d	0	maj	d	d	d	d	
+L21	44	s	0	maj	s	s	s	s	
+L21	45	tz	0	maj	tz	tz	tz	tz	
+L21	46	p	0	maj	p	p	p	-	
+L21	47	:	0	maj	:	:	:	:	
+L21	48	#	0	maj	#	#	#	#	
+L21	49	2	1	tieA	2	7	3	z	
+L21	50	d	0	maj	d	d	d	d	
+L21	51	g	0	maj	g	g	g	g	
+L22	1	:	0	maj5	:	:	:	:	:
+L22	2	r	0	maj5	r	r	r	r	{tilde}
+L22	3	c	0	maj5	e	c	c	c	:
+L22	4	a	0	maj5	a	a	a	a	a
+L22	5	S	0	maj5	S	S	S	s	S
+L22	6	6	0	maj5	6	6	6	6	o
+L22	7	tz	0	maj5	tz	tz	tz	tz	tz
+L22	8	s	0	maj5	s	s	s	s	s
+L22	9	p	0	maj5	p	p	p	p	p
+L22	10	n	0	maj5	n	n	n	n	n
+L22	11	tz	0	maj5	tz	tz	tz	tz	tz
+L22	12	:	0	maj5	:	:	:	:	:
+L22	13	z	0	maj5	z	z	3	z	3
+L22	14	x	0	maj5	x	x	x	x	x
+L22	15	d	0	maj5	d	d	d	d	d
+L22	16	p	0	maj5	p	p	p	p	p
+L22	17	m	0	maj5	m	m	m	m	-
+L22	18	m	0	maj5	m	m	m	m	m
+L22	19	oo	0	maj5+maj5	o+o	o+d	o+o	o+o	o+o
+L22	20	V	0	maj5	V	V	V	V	{omega}
+L22	21	m	0	maj5	m	m	m	-	m
+L22	22	y	0	maj5	y	y	y	-	y
+L22	23	m	0	maj5	m	m	m	-	m
+L22	24	:	0	maj5	:	:	:	-	:
+L22	25	#	0	maj5	#	#	#	-	{cross}
+L22	26	g	0	maj5	g	g	g	-	g
+L22	27	m	0	maj5	m	m	m	m	m
+L22	28	a	0	maj5	a	a	a	-	a
+L22	29	@	0	maj5	@	@	@	-	-
+L22	30	L	0	maj5	L	L	L	-	L
+L22	31	k	1	plural	h	k	k	-	h
+L22	32	oo	0	maj5+maj5	o+o	o+o	o+o	-+-	o+o
+L22	33	:	0	maj5	:	:	:	-	:
+L22	34	V	1	plural	y	V	V	-	y
+L22	35	y	0	maj5	y	y	y	-	y
+L22	36	oo	0	maj5+maj5	o+o	o+o	o+o	V+o	o+o
+L22	37	3	1	tieEC	z	z	3	-	3
+L22	38	s	0	maj5	s	s	s	-	s
+L22	39	m	0	maj5	m	m	m	-	m
+L22	40	p	0	maj5	p	p	p	-	p
+L22	41	a	0	maj5	a	a	a	-	a
+L22	42	d	0	maj5	d	d	d	-	d
+L22	43	3	1	tieEC	z	z	3	-	3
+L22	44	m	0	maj5	m	m	m	m	m
+L22	45	r	0	maj5	r	r	r	:	{tilde}
+L23	1	:	0	maj5	:	:	:	-	:
+L23	2	d	0	maj5	d	d	d	-	d
+L23	3	e	0	maj5	e	e	e	-	e
+L23	4	n	0	maj5	n	n	n	-	n
+L23	5	r	0	maj5	r	r	r	-	{tilde}
+L23	6	d	0	maj5	d	d	d	-	d
+L23	7	b	1	plural	b	V	b	-	y
+L23	8	y	0	maj5	y	y	y	-	y
+L23	9	oo	0	maj5+maj5	o+o	o+o	o+o	o+o	o+o
+L23	10	z	0	maj5	z	z	z	V	3
+L23	11	s	0	maj5	s	s	s	o	s
+L23	12	P	0	maj5	P	P	P	m	P
+L23	13	A	0	maj5	A	A	A	:	A
+L23	14	d	0	maj5	d	d	d	#	d
+L23	15	g	0	maj5	g	g	g	g	g
+L23	16	k	1	plural	h	k	k	-	h
+L23	17	m	0	maj5	m	m	m	m	m
+L23	18	c	1	plural	e	c	c	-	i
+L23	19	r	0	maj5	r	r	r	a	{tilde}
+L23	20	@	0	maj5	@	@	@	@	L
+L23	21	m	0	maj5	m	m	m	o	m
+L23	22	x	0	maj5	x	x	x	o	x
+L23	23	tz	0	maj5	tz	tz	tz	:	y
+L23	24	y	0	maj5	y	y	y	V	y
+L23	25	oo	0	maj5+maj5	o+o	o+o	o+o	o+o	o+o
+L23	26	z	0	maj5	z	z	z	z	3
+L23	27	s	0	maj5	s	s	s	s	s
+L23	28	m	0	maj5	m	m	m	-	m
+L23	29	x	0	maj5	x	x	x	-	x
+L23	30	n	0	maj5	n	n	n	-	n
+L23	31	r	0	maj5	r	r	r	-	{tilde}
+L23	32	3	1	tieEC	z	z	3	-	3
+L23	33	m	0	maj5	m	m	m	m	m
+L23	34	z	1	plural	2	z	z	-	3
+L23	35	s	0	maj5	s	s	s	-	s
+L23	36	p	0	maj5	p	p	p	p	p
+L23	37	h	0	maj5	h	h	k	-	h
+L23	38	m	0	maj5	m	m	m	-	m
+L23	39	c	0	maj5	e	c	c	a	c
+L23	40	l	0	maj5	l	l	l	d	l
+L23	41	:	0	maj5	:	:	:	z	:
+L23	42	m	0	maj5	m	m	m	m	m
+L23	43	x	0	maj5	x	x	x	-	x
+L23	44	#	0	maj5	#	#	#	r	#
+L24	1	s	0	maj5	s	s	s	-	s
+L24	2	P	0	maj5	P	P	P	-	P
+L24	3	s	0	maj5	s	S	s	-	s
+L24	4	tz	0	maj5	tz	tz	tz	-	tz
+L24	5	g	0	maj5	g	g	g	-	g
+L24	6	m	0	maj5	m	m	m	-	m
+L24	7	z	1	tieEC	5	5	z	-	z
+L24	8	tz	0	maj5	tz	tz	tz	-	tz
+L24	9	x	0	maj5	x	x	x	-	x
+L24	10	tz	0	maj5	tz	tz	tz	-	tz
+L24	11	6	0	maj5	6	6	6	-	6
+L24	12	p	0	maj5	p	p	p	-	p
+L24	13	m	0	maj5	m	m	m	-	m
+L24	14	a	0	maj5	a	a	a	-	a
+L24	15	m	0	maj5	m	m	m	:	m
+L24	16	d	0	maj5	d	d	d	d	d
+L24	17	tz	0	maj5	tz	tz	tz	e	tz
+L24	18	n	0	maj5	n	n	n	n	n
+L24	19	c	0	maj5	e	c	c	r	c
+L24	20	d	0	maj5	d	d	d	d	d
+L24	21	tz	0	maj5	tz	tz	tz	-	tz
+L24	22	p	0	maj5	p	p	p	-	p
+L24	23	:	0	maj5	:	:	:	-	:
+L24	24	#	0	maj5	#	#	#	-	#
+L24	25	to	0	maj5	to	to	to	-	to
+L24	26	y	0	maj5	y	y	y	V	y
+L24	27	oo	0	maj5+maj5	o+o	o+o	o+o	o+o	o+o
+L24	28	z	0	maj5	z	z	z	z	z
+L24	29	m	0	maj5	m	m	m	-	m
+L24	30	p	0	maj5	p	p	p	-	p
+L24	31	a	0	maj5	a	a	a	s	a
+L24	32	m	0	maj5	m	m	m	P	m
+L24	33	oo	0	maj5+maj5	o+o	o+o	o+o	A+d	o+o
+L24	34	tz	0	maj5	tz	tz	tz	g	tz
+L24	35	S	0	maj5	S	S	S	k	8
+L24	36	m	0	maj5	m	m	m	m	m
+L24	37	p	0	maj5	p	p	p	c	n
+L24	38	r	0	maj5	r	r	n	r	z
+L24	39	g	0	maj5	g	g	g	-	g
+L24	40	s	0	maj5	S	s	s	-	s
+L24	41	tz	0	maj5	tz	tz	tz	-	tz
+L24	42	g	0	maj5	g	g	g	L	g
+L24	43	m	0	maj5	m	m	m	m	m
+L24	44	V	0	maj5	y	V	V	V	y
+L25	1	z	0	maj5	2	z	z	z	z
+L25	2	m	0	maj5	m	m	m	m	m
+L25	3	x	0	maj5	x	x	x	x	x
+L25	4	z	0	maj5	2	z	z	z	z
+L25	5	m	0	maj5	m	m	m	m	m
+L25	6	m	0	maj5	m	m	m	m	m
+L25	7	#	0	maj5	#	#	#	#	#
+L25	8	V	0	maj5	V	V	V	V	V
+L25	9	s	0	maj5	s	s	s	s	S
+L25	10	m	0	maj5	m	m	m	m	m
+L25	11	oo	0	maj5+maj5	o+o	o+o	o+o	o+o	o+o
+L25	12	z	0	maj5	z	z	z	z	z
+L25	13	m	0	maj5	m	m	m	m	m
+L25	14	c	0	maj5	e	c	c	c	c
+L25	15	oo	0	maj5+maj5	o+o	o+o	o+o	o+o	o+o
+L25	16	tz	0	maj5	tz	tz	tz	tz	tz
+L25	17	p	0	maj5	p	p	p	p	p
+L25	18	z	0	maj5	z	-	z	Z	z
+L25	19	m	0	maj5	m	m	m	m	m
+L25	20	x	0	maj5	x	x	x	x	x
+L25	21	n	0	maj5	n	n	n	n	n
+L25	22	tz	0	maj5	tz	tz	tz	tz	tz
+L25	23	:	0	maj5	:	:	:	:	:
+L25	24	z	0	maj5	z	z	z	z	z
+L25	25	m	0	maj5	m	m	m	-	m
+L25	26	p	0	maj5	p	p	p	-	p
+L25	27	:	0	maj5	:	:	:	-	:
+L25	28	7	0	maj5	7	7	7	-	7
+L25	29	e	0	maj5	e	e	e	-	-
+L25	30	S	1	tieA	S	8	s	-	8
+L25	31	tz	0	maj5	tz	tz	tz	-	tz
+L25	32	:	0	maj5	:	:	:	-	:
+L25	33	n	0	maj5	n	n	n	-	n
+L25	34	s	0	maj5	s	s	s	-	s
+L25	35	oo	0	maj5+maj5	o+o	o+o	o+o	-+-	o+o
+L25	36	c	0	maj5	e	c	c	-	c
+L25	37	a	0	maj5	a	a	a	-	a
+L25	38	p	0	maj5	p	p	p	-	p
+L25	39	m	0	maj5	m	m	m	-	m
+L25	40	g	0	maj5	g	g	g	-	g
+L25	41	m	0	maj5	m	m	m	-	m
+L25	42	d	0	maj5	d	d	d	-	d
+L25	43	c	0	maj5	e	c	c	-	c
+L25	44	d	0	maj5	d	d	d	-	d
+L25	45	p	0	maj5	p	p	p	-	p
+L25	46	:	0	maj5	:	:	:	-	:
+L25	47	7	0	maj5	7	7	7	-	7
+L26	1	tz	0	maj5	tz	tz	tz	-	tz
+L26	2	6	0	maj5	6	6	6	-	6
+L26	3	z	0	maj5	z	z	z	Z	z
+L26	4	m	0	maj5	m	m	m	m	m
+L26	5	x	0	maj5	x	x	x	x	-
+L26	6	n	0	maj5	n	n	n	n	a
+L26	7	x	1	tieA	x	x	-	-	r
+L26	8	tz	0	maj5	tz	tz	tz	tz	tz
+L26	9	oo	0	maj5+maj5	o+o	o+o	o+o	:+z	o+o
+L26	10	m	0	maj5	m	m	m	m	m
+L26	11	3	0	maj5	3	z	3	p	3
+L26	12	m	0	maj5	m	m	m	:	m
+L26	13	c	0	maj5	e	c	c	7	c
+L26	14	oo	0	maj5+maj5	o+o	o+o	o+o	g+s	o+o
+L26	15	tz	0	maj5	tz	tz	tz	tz	tz
+L26	16	x	0	maj5	x	x	x	:	x
+L26	17	c	1	tie	-	c	c	-	{curl}
+L26	18	m	0	maj5	m	m	m	n	m
+L26	19	x	1	plural	x	x	-	s	-
+L26	20	r	0	maj5	r	-	r	o	r
+L26	21	m	0	maj5	m	m	m	o	m
+L26	22	6	0	maj5	6	6	6	c	6
+L26	23	to	0	maj5	to	to	to	a	to
+L26	24	2	0	maj5	2	z	2	p	2
+L26	25	m	0	maj5	m	m	m	m	m
+L26	26	d	0	maj5	d	d	d	-	d
+L26	27	tz	0	maj5	tz	tz	tz	-	tz
+L26	28	d	0	maj5	d	d	d	-	d
+L26	29	oo	0	maj5+maj5	o+o	o+o	o+o	-+-	o+o
+L26	30	g	0	maj5	g	g	g	g	g
+L26	31	d	0	maj5	d	d	d	d	d
+L26	32	y	0	maj5	y	y	y	-	y
+L26	33	r	0	maj5	r	r	r	-	.
+L26	34	:	0	maj5	:	:	:	c	.
+L26	35	d	0	maj5	d	d	d	d	d
+L26	36	p	0	maj5	p	p	p	p	p
+L26	37	n	0	maj5	n	n	n	-	n
+L26	38	r	0	maj5	r	r	r	-	-
+L26	39	3	0	maj5	3	z	3	-	3
+L26	40	m	0	maj5	m	m	m	-	m
+L26	41	a	0	maj5	a	a	a	-	a
+L26	42	m	0	maj5	m	m	m	:	m
+L26	43	d	0	maj5	d	d	d	7	d
+L27	1	J	0	maj5	J	J	Z	-	J
+L27	2	m	0	maj5	m	m	m	-	m
+L27	3	y	0	maj5	y	y	y	tz	y
+L27	4	s	0	maj5	s	s	s	6	s
+L27	5	c	1	plural	e	c	c	z	{quote}
+L27	6	s	1	plural	g	s	s	m	S
+L27	7	g	0	maj5	g	g	g	x	g
+L27	8	r	0	maj5	n	r	r	n	r
+L27	9	3	1	tieEC	z	z	3	-	3
+L27	10	oo	0	maj5+maj5	o+o	o+o	o+o	V+o	o+o
+L27	11	k	1	plural	k	h	k	-	h
+L27	12	tz	0	maj5	tz	tz	tz	tz	tz
+L27	13	:	0	maj5	:	:	:	-	.
+L27	14	#	0	maj5	#	#	#	-	#
+L27	15	k	1	plural	k	h	k	-	h
+L27	16	oo	0	maj5+maj5	o+o	o+o	o+o	o+o	o+o
+L27	17	:	0	maj5	:	:	:	-	.
+L27	18	2	1	tieA	2	7	4	-	2
+L27	19	s	1	plural	5	s	s	-	S
+L27	20	tz	0	maj5	tz	tz	tz	-	tz
+L27	21	d	0	maj5	d	d	d	-	d
+L27	22	tz	0	maj5	tz	tz	tz	-	tz
+L27	23	6	0	maj5	6	6	6	-	6
+L27	24	p	0	maj5	p	p	p	-	p
+L27	25	s	0	maj5	s	s	s	-	s
+L27	26	m	0	maj5	m	m	m	m	m
+L27	27	p	0	maj5	p	p	p	-	p
+L27	28	c	0	maj5	e	c	c	-	c
+L27	29	d	0	maj5	d	d	d	-	d
+L27	30	g	0	maj5	g	g	g	3	g
+L27	31	m	0	maj5	m	m	m	m	m
+L27	32	x	0	maj5	x	x	x	-	x
+L27	33	oo	0	maj5+maj5	o+o	o+o	o+o	c+o	o+o
+L27	34	m	0	maj5	m	m	m	-	m
+L27	35	oo	0	maj5+maj5	o+o	o+o	o+o	o+tz	o+o
+L27	36	y	0	maj5	y	y	y	x	y
+L27	37	m	0	maj5	m	m	m	m	m
+L27	38	L	0	maj5	L	L	L	r	L
+L27	39	d	0	maj5	d	d	d	m	d
+L27	40	z	0	maj5	z	z	3	6	z
+L27	41	:	0	maj5	:	:	:	to	.
+L27	42	7	0	maj5	7	7	7	2	7
+L27	43	@	1	tie	-	@	@	-	{curl}
+L27	44	m	0	maj5	m	m	m	m	m
+L27	45	x	0	maj5	x	x	x	-	r
+L27	46	tz	0	maj5	tz	tz	tz	d	tz
+L28	1	J	1	tieA	J	j	7	-	J
+L28	2	x	0	maj5	x	x	x	-	x
+L28	3	n	0	maj5	n	n	n	m	n
+L28	4	:	0	maj5	:	:	:	r	:
+L28	5	s	0	maj5	s	s	s	m	s
+L28	6	oo	0	maj5+maj5	o+o	o+o	o+o	6+to	o+o
+L28	7	d	0	maj5	d	d	d	2	d
+L28	8	m	0	maj5	m	m	m	m	m
+L28	9	V	1	plural	e	V	V	-	a
+L28	10	y	0	maj5	y	y	y	-	y
+L28	11	d	0	maj5	d	d	d	d	d
+L28	12	p	0	maj5	p	p	p	-	p
+L28	13	y	0	maj5	y	y	y	tz	y
+L28	14	d	0	maj5	d	d	d	d	d
+L28	15	m	0	maj5	m	m	m	-	m
+L28	16	c	1	plural	e	c	c	-	g
+L28	17	m	0	maj5	m	m	m	-	m
+L28	18	oo	0	maj5+maj5	o+o	o+o	o+o	o+o	o+o
+L28	19	6	0	maj5	6	6	6	-	6
+L28	20	#	0	maj5	#	#	#	-	#
+L28	21	m	0	maj5	m	m	m	-	m
+L28	22	p	0	maj5	p	p	p	-	p
+L28	23	r	1	tieA	r	1	i	-	r
+L28	24	d	0	maj5	d	d	d	-	d
+L28	25	g	0	maj5	g	g	g	g	g
+L28	26	m	0	maj5	m	m	m	-	m
+L28	27	x	0	maj5	x	x	x	-	x
+L28	28	d	0	maj5	d	d	d	d	d
+L28	29	:	0	maj5	:	:	:	-	:
+L28	30	s	0	maj5	s	s	s	V	s
+L28	31	oo	0	maj5+maj5	o+o	o+o	o+o	o+:	o+o
+L28	32	d	0	maj5	d	d	d	d	d
+L28	33	tz	0	maj5	tz	tz	tz	-	tz
+L28	34	g	0	maj5	g	g	g	-	g
+L28	35	:	0	maj5	:	:	:	-	:
+L28	36	m	0	maj5	m	m	m	p	m
+L28	37	Z	0	maj5	Z	z	Z	n	Z
+L28	38	s	0	maj5	s	s	s	r	S
+L28	39	3	0	maj5	3	z	3	3	3
+L28	40	m	0	maj5	m	m	m	m	m
+L28	41	#	0	maj5	#	#	#	-	#
+L28	42	g	0	maj5	g	g	g	-	g
+L28	43	S	0	maj5	S	s	S	a	S
+L28	44	tz	0	maj5	tz	tz	tz	m	g
+L28	45	:	0	maj5	:	:	:	d	:
+L29	1	m	0	maj5	m	m	m	-	m
+L29	2	g	0	maj5	g	g	g	-	g
+L29	3	x	0	maj5	x	x	x	-	x
+L29	4	tz	0	maj5	tz	tz	tz	-	tz
+L29	5	:	0	maj5	o	:	:	J	:
+L29	6	m	0	maj5	m	m	m	m	m
+L29	7	V	0	maj5	V	V	V	V	d
+L29	8	m	0	maj5	m	m	m	-	m
+L29	9	x	0	maj5	x	x	x	-	x
+L29	10	n	0	maj5	n	n	n	-	n
+L29	11	c	1	tie	-	c	c	-	a
+L29	12	V	1	plural	e	V	V	-	y
+L29	13	y	0	maj5	y	y	y	o	y
+L29	14	s	0	maj5	s	s	s	s	S
+L29	15	4	0	maj5	4	4	4	-	4
+L29	16	6	0	maj5	6	6	6	-	6
+L29	17	s	1	plural	S	s	s	c	S
+L29	18	g	0	maj5	g	g	g	g	g
+L29	19	m	0	maj5	m	m	m	-	m
+L29	20	p	0	maj5	p	p	p	-	p
+L29	21	:	0	maj5	:	:	:	r	:
+L29	22	m	0	maj5	m	m	m	3	m
+L29	23	m	0	maj5	m	m	m	o	m
+L29	24	x	0	maj5	x	x	x	o	x
+L29	25	n	0	maj5	n	n	n	k	n
+L29	26	Z	0	maj5	Z	z	Z	tz	Z
+L29	27	:	0	maj5	:	:	:	:	:
+L29	28	m	0	maj5	m	m	m	-	m
+L29	29	x	0	maj5	x	x	x	-	x
+L29	30	n	0	maj5	n	n	n	-	n
+L29	31	oo	0	maj5+maj5	o+o	o+o	o+o	-+-	o+o
+L29	32	m	0	maj5	m	m	m	#	m
+L29	33	p	0	maj5	p	p	p	k	p
+L29	34	oo	0	maj5+maj5	o+o	o+o	o+o	o+o	o+o
+L29	35	g	0	maj5	g	g	g	:	g
+L29	36	m	0	maj5	m	m	m	4	m
+L29	37	x	0	maj5	x	x	x	s	x
+L29	38	tz	0	maj5	tz	tz	tz	tz	tz
+L29	39	d	0	maj5	d	d	d	d	d
+L29	40	oo	0	maj5+maj5	o+o	o+o	o+o	-+-	o+o
+L29	41	tz	0	maj5	tz	tz	tz	tz	tz
+L29	42	g	0	maj5	g	g	g	p	g
+L29	43	g	0	maj5	g	g	g	s	g
+L29	44	m	0	maj5	m	m	m	m	m
+L30	1	y	0	maj5	y	y	V	-	y
+L30	2	s	0	maj5	s	s	s	-	s
+L30	3	V	0	maj5	V	V	V	-	V
+L30	4	s	0	maj5	s	s	s	s	s
+L30	5	#	0	maj5	#	#	#	-	#
+L30	6	tz	0	maj5	tz	tz	tz	tz	tz
+L30	7	oo	0	maj5+maj5	o+o	o+o	o+o	-+d	o+o
+L30	8	tz	0	maj5	tz	tz	tz	tz	tz
+L30	9	n	1	plural	n	R	n	-	R
+L30	10	r	0	maj5	r	r	r	-	:
+L30	11	z	0	maj5	z	z	3	-	z
+L30	12	oo	0	maj5+maj5	o+o	o+o	o+o	-+6	o+o
+L30	13	p	0	rule	P	p	P	p	tt
+L30	14	tz	0	maj5	tz	tz	tz	s	tz
+L30	15	m	0	maj5	m	m	m	m	m
+L30	16	:	0	maj5	:	:	:	p	:
+L30	17	g	0	maj5	g	g	g	c	g
+L30	18	d	0	maj5	d	d	d	d	d
+L30	19	z	0	maj5	z	z	3	g	z
+L30	20	n	0	maj5	n	n	n	m	n
+L30	21	d	0	maj5	d	d	d	x	d
+L30	22	oo	0	maj5+maj5	o+o	o+o	o+o	o+o	o+o
+L30	23	n	0	maj5	n	r	n	-	n
+L30	24	m	0	maj5	m	m	m	m	m
+L30	25	d	0	maj5	d	d	d	-	d
+L30	26	S	1	tieEC	g	g	S	-	S
+L30	27	d	0	maj5	d	d	d	-	d
+L30	28	tz	0	maj5	tz	tz	tz	-	tz
+L30	29	x	0	maj5	x	x	x	-	x
+L30	30	Z	1	plural	Z	z	Z	-	z
+L30	31	oo	0	maj5+maj5	o+o	o+o	o+o	o+o	o+o
+L30	32	tz	0	maj5	tz	tz	tz	-	tz
+L30	33	m	0	maj5	m	m	m	V	m
+L30	34	4	1	plural	P	4	4	o	+
+L30	35	m	0	maj5	m	m	m	m	n
+L30	36	p	0	maj5	p	p	p	L	p
+L30	37	g	0	maj5	g	g	g	d	g
+L30	38	m	0	maj5	m	m	m	z	m
+L30	39	:	0	maj5	:	:	:	:	:
+L30	40	y	0	maj5	y	y	y	7	y
+L30	41	m	0	maj5	m	m	m	m	m
+L30	42	g	0	maj5	g	g	g	tz	g
+L31	1	:	0	maj5	:	:	:	-	:
+L31	2	y	0	maj5	y	y	y	-	y
+L31	3	m	0	maj5	m	m	m	-	m
+L31	4	3	1	plural	3	z	3	-	z
+L31	5	m	0	maj5	m	m	m	-	m
+L31	6	y	1	plural	y	V	y	-	o
+L31	7	s	0	maj5	s	s	s	-	s
+L31	8	P	0	maj5	P	P	P	-	tt
+L31	9	s	0	maj5	s	S	s	-	s
+L31	10	tz	0	maj5	tz	tz	tz	-	tz
+L31	11	g	0	maj5	g	g	g	-	g
+L31	12	m	0	maj5	m	m	m	-	m
+L31	13	3	1	plural	3	z	3	-	z
+L31	14	m	0	maj5	m	m	m	J	m
+L31	15	x	0	maj5	x	x	x	x	x
+L31	16	k	0	maj5	k	k	k	-	k
+L31	17	tz	0	maj5	tz	tz	tz	n	tz
+L31	18	:	0	maj5	:	:	:	:	:
+L31	19	n	0	maj5	n	n	n	s	n
+L31	20	m	0	maj5	m	m	m	o	m
+L31	21	x	0	maj5	x	x	x	o	x
+L31	22	g	0	maj5	g	g	g	d	g
+L31	23	m	0	maj5	m	m	m	m	m
+L31	24	V	1	plural	-	V	V	a	-
+L31	25	y	0	maj5	y	y	y	V	y
+L31	26	o	0	maj5	o	o	o	o	o
+L31	27	tz	0	maj5	tz	tz	tz	-	tz
+L31	28	4	0	maj5	4	4	4	-	+
+L31	29	tz	0	maj5	tz	tz	tz	-	tz
+L31	30	d	0	maj5	d	d	d	d	d
+L31	31	p	0	maj5	p	p	p	p	p
+L31	32	d	0	maj5	d	d	d	-	d
+L31	33	y	0	maj5	y	y	y	V	y
+L31	34	o	0	maj5	o	-	o	o	o
+L31	35	m	0	maj5	m	m	m	m	m
+L31	36	x	0	maj5	x	x	x	c	x
+L31	37	m	0	maj5	m	m	m	m	m
+L31	38	m	0	maj5	m	m	m	o	m
+L31	39	d	0	maj5	d	d	d	o	S
+L31	40	m	0	maj5	m	m	m	6	m
+L31	41	y	0	maj5	y	y	y	#	y
+L31	42	d	0	maj5	d	d	d	m	d
+L31	43	p	0	maj5	p	p	p	p	p
+L31	44	n	0	maj5	n	n	n	-	n
+L31	45	m	0	maj5	m	m	m	i	m
+L31	46	d	0	maj5	d	d	d	d	d
+L31	47	#	0	maj5	#	#	#	-	#
+L31	48	m	0	maj5	m	m	m	g	m
+L32	1	m	0	maj5	m	m	m	-	m
+L32	2	p	0	maj5	p	p	p	-	p
+L32	3	c	0	maj5	e	c	c	-	c
+L32	4	m	0	maj5	m	m	m	-	m
+L32	5	k	0	maj5	k	k	k	o	h
+L32	6	tz	0	maj5	tz	tz	tz	o	tz
+L32	7	m	0	maj5	m	m	m	6	m
+L32	8	@	0	maj5	@	@	@	#	@
+L32	9	m	0	maj5	m	m	m	m	m
+L32	10	p	0	maj5	p	p	p	-	p
+L32	11	oo	0	maj5+maj5	o+o	o+o	o+o	-+-	o+o
+L32	12	p	0	maj5	p	p	p	p	p
+L32	13	m	0	maj5	m	m	m	i	m
+L32	14	d	0	maj5	d	d	d	d	d
+L32	15	m	0	maj5	m	m	m	m	m
+L32	16	oo	0	maj5+maj5	o+o	o+o	o+o	-+x	o+o
+L32	17	j	0	maj5	j	j	j	d	j
+L32	18	m	0	maj5	m	m	m	:	m
+L32	19	s	0	maj5	s	s	s	s	s
+L32	20	oo	0	maj5+maj5	o+o	o+o	o+o	o+o	o+o
+L32	21	3	1	tieEC	z	z	3	d	3
+L32	22	tz	0	maj5	tz	tz	tz	tz	tz
+L32	23	s	0	maj5	s	s	s	-	s
+L32	24	p	0	maj5	p	p	p	g	p
+L32	25	:	0	maj5	:	:	:	:	:
+L32	26	m	0	maj5	m	m	m	m	m
+L32	27	y	0	maj5	y	V	y	Z	y
+L32	28	s	0	maj5	s	s	s	s	s
+L32	29	@	0	maj5	@	@	@	-	@
+L32	30	m	0	maj5	m	m	m	-	m
+L32	31	3	1	plural	x	z	3	3	z
+L32	32	m	0	maj5	m	m	m	m	m
+L32	33	6	0	maj5	6	6	6	-	6
+L32	34	y	0	maj5	y	y	y	#	y
+L32	35	m	0	maj5	m	m	m	s	m
+L32	36	tz	0	maj5	tz	tz	tz	tz	tz
+L32	37	6	0	maj5	6	6	6	-	6
+L32	38	b	0	maj5	b	b	b	-	6
+L32	39	d	0	maj5	d	d	d	-	d
+L32	40	p	0	maj5	p	p	p	-	p
+L32	41	n	0	maj5	n	n	n	-	n
+L32	42	m	0	maj5	m	m	m	-	m
+L32	43	to	1	plural	to	to	p	-	tz
+L32	44	#	0	maj5	#	#	#	-	#
+L32	45	s	0	maj5	s	s	s	-	s
+L32	46	p	0	maj5	p	p	p	:	p
+L33	1	#	0	maj5	#	#	#	-	#
+L33	2	m	0	maj5	m	m	m	-	m
+L33	3	7	0	maj5	7	y	7	-	7
+L33	4	@	0	maj5	e	@	@	-	@
+L33	5	m	0	maj5	m	m	m	m	m
+L33	6	x	1	plural	x	x	r	-	2
+L33	7	s	0	maj5	S	s	s	-	s
+L33	8	#	0	maj5	#	#	#	-	#
+L33	9	g	0	maj5	g	g	g	g	g
+L33	10	m	0	maj5	m	m	m	-	m
+L33	11	S	0	maj5	S	S	S	-	S
+L33	12	d	1	tieA	d	-	d	-	o
+L33	13	p	0	maj5	P	p	p	-	p
+L33	14	d	0	maj5	d	d	d	-	d
+L33	15	2	1	tieA	2	z	3	-	z
+L33	16	d	0	maj5	d	d	d	x	d
+L33	17	tz	0	maj5	tz	tz	tz	tz	tz
+L33	18	d	0	maj5	d	d	d	-	d
+L33	19	c	0	maj5	e	c	c	-	c
+L33	20	l	0	maj5	l	l	l	-	l
+L33	21	y	0	maj5	y	y	y	:	y
+L33	22	m	0	maj5	m	m	m	m	m
+L33	23	2	1	plural	2	8	2	-	8
+L33	24	d	0	maj5	d	d	d	-	d
+L33	25	tz	0	maj5	tz	tz	tz	-	tz
+L33	26	p	0	maj5	p	p	p	-	p
+L33	27	4	0	maj5	4	4	4	-	4
+L33	28	d	0	maj5	d	d	d	V	d
+L33	29	7	0	maj5	7	7	7	m	7
+L33	30	#	0	maj5	#	#	#	x	#
+L33	31	p	0	maj5	p	p	p	n	p
+L33	32	m	0	maj5	m	m	m	a	m
+L33	33	y	0	maj5	y	y	y	V	y
+L33	34	o	0	maj5	o	-	-	o	o
+L33	35	m	0	maj5	m	m	m	4	m
+L33	36	oo	0	maj5+maj5	o+o	o+o	o+o	6+s	o+o
+L33	37	g	0	maj5	g	g	g	g	g
+L33	38	s	0	maj5	S	s	s	-	s
+L33	39	m	0	maj5	m	m	m	m	m
+L33	40	b	1	tieEC	o	o	b	p	b
+L33	41	#	0	maj5	#	#	#	:	#
+L33	42	m	0	maj5	m	m	m	m	m
+L33	43	k	0	maj5	k	k	k	-	h
+L33	44	tz	0	maj5	tz	tz	tz	-	tz
+L33	45	:	0	maj5	:	:	:	m	:
+L33	46	r	1	plural	r	r	n	x	R
+L33	47	g	1	plural	g	s	g	n	s
+L33	48	a	0	maj5	a	a	a	Z	a
+L34	1	6	0	maj5	6	6	6	p	6
+L34	2	#	0	maj5	#	#	#	:	#
+L34	3	y	0	maj5	y	y	g	m	y
+L34	4	m	0	maj5	m	m	m	m	m
+L34	5	d	0	maj5	d	d	d	n	{cross}
+L34	6	tz	0	maj5	tz	tz	tz	Z	tz
+L34	7	:	0	maj5	:	:	:	:	:
+L34	8	m	0	maj5	m	m	m	-	m
+L34	9	V	0	maj5	V	V	V	-	V
+L34	10	m	0	maj5	m	m	m	m	m
+L34	11	x	0	maj5	x	x	x	x	x
+L34	12	#	0	maj5	#	#	#	-	#
+L34	13	V	1	plural	e	V	V	-	a
+L34	14	y	0	maj5	y	y	y	n	y
+L34	15	o	0	maj5	o	o	-	o	o
+L34	16	d	0	maj5	d	d	d	-	d
+L34	17	p	0	maj5	p	p	p	-	p
+L34	18	x	0	maj5	x	x	x	o	x
+L34	19	m	0	maj5	m	m	m	m	m
+L34	20	g	0	maj5	g	g	g	-	g
+L34	21	d	0	maj5	d	d	d	-	d
+L34	22	tz	0	maj5	tz	tz	tz	p	g
+L34	23	n	0	maj5	n	n	n	o	n
+L34	24	#	0	maj5	#	#	#	o	#
+L34	25	g	0	maj5	g	g	g	g	g
+L34	26	m	0	maj5	m	m	m	m	m
+L34	27	d	0	maj5	d	d	d	-	d
+L34	28	s	0	maj5	S	s	s	x	s
+L34	29	z	0	maj5	z	z	3	tz	z
+L34	30	d	0	maj5	d	d	d	d	d
+L34	31	m	0	maj5	m	m	m	-	m
+L34	32	3	1	plural	3	z	3	-	z
+L34	33	m	0	maj5	m	m	m	-	m
+L34	34	y	0	maj5	y	y	y	-	y
+L34	35	m	0	maj5	m	m	m	-	m
+L34	36	oo	0	maj5+maj5	o+o	o+o	o+o	o+o	o+o
+L34	37	g	0	maj5	g	g	g	-	g
+L34	38	S	0	maj5	S	S	S	-	S
+L34	39	tz	0	maj5	tz	tz	tz	tz	tz
+L34	40	m	0	maj5	m	m	m	-	m
+L34	41	p	0	maj5	p	p	p	-	p
+L34	42	7	0	maj5	7	7	7	-	7
+L34	43	#	0	maj5	#	#	#	-	#
+L34	44	g	0	maj5	g	g	g	g	g
+L34	45	m	0	maj5	m	m	m	m	m
+L34	46	c	1	plural	e	c	c	-	-
+L34	47	d	0	maj5	d	d	d	-	a
+L34	48	@	0	maj5	@	@	@	-	{curl}
+L35	1	x	0	maj5	x	x	x	-	x
+L35	2	s	0	maj5	S	s	s	-	s
+L35	3	p	0	maj5	P	p	p	-	p
+L35	4	d	0	maj5	d	d	d	-	d
+L35	5	V	1	plural	e	V	V	-	a
+L35	6	y	0	maj5	y	y	y	-	y
+L35	7	d	0	maj5	d	d	d	V	d
+L35	8	p	0	maj5	p	p	p	s	p
+L35	9	S	1	tieA	S	s	3	V	s
+L35	10	z	0	maj5	z	z	7	s	z
+L35	11	#	0	maj5	#	#	#	#	#
+L35	12	m	0	maj5	m	m	m	-	m
+L35	13	p	0	maj5	p	p	p	-	p
+L35	14	k	0	maj5	k	k	k	-	#
+L35	15	g	0	maj5	g	-	g	-	g
+L35	16	m	0	maj5	m	m	m	-	m
+L35	17	c	1	plural	e	c	c	-	m
+L35	18	6	1	plural	6	b	6	tz	b
+L35	19	oo	0	maj5+maj5	o+o	o+o	o+o	o+o	o+o
+L35	20	x	0	maj5	x	x	x	-	x
+L35	21	s	0	maj5	S	s	s	-	s
+L35	22	a	0	maj5	a	a	a	-	a
+L35	23	P	0	maj5	P	P	P	-	P
+L35	24	p	0	maj5	p	p	p	-	p
+L35	25	n	0	maj5	n	n	n	-	n
+L35	26	tz	0	maj5	tz	tz	tz	tz	tz
+L35	27	6	0	maj5	6	6	6	-	6
+L35	28	@	0	maj5	@	@	@	-	@
+L35	29	p	0	maj5	p	p	p	-	p
+L35	30	m	0	maj5	m	m	m	-	m
+L35	31	g	0	maj5	g	g	g	-	g
+L35	32	d	0	maj5	d	d	d	-	d
+L35	33	p	0	maj5	p	p	p	-	p
+L35	34	n	0	maj5	n	n	n	n	n
+L35	35	3	1	plural	S	s	3	3	s
+L35	36	oo	0	maj5+maj5	o+o	o+o	o+o	o+o	o+o
+L35	37	6	0	maj5	6	6	6	-	b
+L35	38	#	0	maj5	#	#	#	#	#
+L35	39	y	0	maj5	y	y	g	tz	y
+L35	40	m	0	maj5	m	m	m	m	m
+L35	41	:	0	maj5	:	:	:	:	:
+L35	42	m	0	maj5	m	m	m	g	m
+L35	43	d	0	maj5	d	d	d	d	d
+L35	44	m	0	maj5	m	m	m	n	m
+L35	45	2	1	tieA	2	z	3	d	z
+L35	46	S	0	maj5	S	S	S	o	S
+L35	47	6	1	plural	b	6	6	o	b
+L35	48	m	0	maj5	m	m	m	n	m
+L36	1	c	1	plural	e	c	c	:	u
+L36	2	g	0	maj5	g	g	g	g	g
+L36	3	s	0	maj5	S	s	s	d	s
+L36	4	tz	0	maj5	tz	tz	tz	z	tz
+L36	5	g	0	maj5	g	g	g	n	g
+L36	6	m	0	maj5	m	m	m	d	m
+L36	7	o	0	maj5	o	o	o	o	o
+L36	8	g	0	maj5	g	g	g	o	g
+L36	9	d	0	maj5	d	d	d	n	d
+L36	10	a	0	maj5	a	a	a	m	a
+L36	11	tz	0	maj5	tz	tz	tz	d	tz
+L36	12	d	0	maj5	d	d	d	d	d
+L36	13	tz	0	maj5	tz	tz	tz	tz	tz
+L36	14	d	0	maj5	d	d	d	Z	d
+L36	15	p	0	maj5	p	p	p	o	p
+L36	16	3	0	maj5	3	z	3	o	3
+L36	17	s	1	plural	S	s	s	tz	S
+L36	18	g	0	maj5	g	g	g	m	g
+L36	19	4	0	maj5	4	4	4	4	4
+L36	20	m	0	maj5	m	m	m	m	m
+L36	21	p	0	maj5	p	p	p	-	p
+L36	22	n	0	maj5	n	n	n	-	n
+L36	23	s	1	plural	S	s	s	-	S
+L36	24	z	0	maj5	z	z	z	-	z
+L36	25	V	1	tieEC	v	v	V	-	V
+L36	26	p	0	maj5	p	p	p	p	p
+L36	27	n	0	maj5	n	n	n	-	n
+L36	28	#	0	maj5	#	#	#	-	#
+L36	29	g	0	maj5	g	g	g	g	g
+L36	30	d	0	maj5	d	d	d	-	d
+L36	31	oo	0	maj5+maj5	o+o	o+o	o+o	-+-	o+o
+L36	32	2	0	maj5	2	2	2	-	2
+L36	33	m	0	maj5	m	m	m	m	m
+L36	34	s	1	plural	S	s	s	-	S
+L36	35	:	0	maj5	:	:	:	:	:
+L36	36	m	0	maj5	m	m	m	-	m
+L36	37	d	0	maj5	d	d	d	-	d
+L36	38	#	0	maj5	#	#	#	-	#
+L36	39	y	0	maj5	y	y	y	V	y
+L36	40	m	0	maj5	m	m	m	m	m
+L36	41	oo	0	maj5+maj5	o+o	o+o	o+o	-+-	o+o
+L36	42	g	0	maj5	g	g	g	g	g
+L36	43	m	0	maj5	m	m	m	-	m
+L36	44	3	0	maj5	3	-	3	-	3
+L36	45	z	0	maj5	z	z	z	-	z
+L36	46	:	0	maj5	:	:	:	-	:
+L36	47	d	0	maj5	d	d	d	-	d
+L36	48	p	0	maj5	p	p	p	-	p
