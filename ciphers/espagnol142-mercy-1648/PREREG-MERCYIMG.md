@@ -1,4 +1,4 @@
-# PREREG MERCY-IMG (image re-read of the M glyphs on BnF Espagnol 144 f.22r rows r16-r24), written 14:4x UTC 15 Oct 2026 by date -u, before any reader ran
+# PREREG MERCY-IMG (image re-read of the M glyphs on BnF Espagnol 144 f.22r rows r16-r24), written 14:32 UTC 15 Oct 2026 by date -u, before any reader ran
 
 Worker MERCY-IMG (for LANE VIV-KEYSTONE, account 4). Brief: `.claude/briefs/runs/2026-10-15-acct4-depth-steps.md` "## JOB MERCY-IMG".
 No key.tsv, reading, AUDIT.md or status.json edit. No network (the native canvas is on disk: images/f22r_canvas58.jpg, sha1 4ad5486d...).
