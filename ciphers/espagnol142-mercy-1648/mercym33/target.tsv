@@ -1,0 +1,16 @@
+group	n	value	first	rank	stat	ref	p95_pos	p95_val	broken	primary	secondary	why_secondary
+K25	4	u	NULL	2	-2.4	NULL	2.9	-8.1	0	reject	reject	no better than the runner-up
+K15	2	z	I	12	-18.1	I	-22.7	9.0	2	reject	reject	no better than the runner-up
+K9	1	q	Q	1	12.8	NULL	-7.1	-13.0	0	undecided	undecided	n = 1
+K14x	6	c	NULL	5	-29.2	NULL	-13.8	-9.2	3	reject	reject	no better than the runner-up
+FRAC	1	c	C	1	7.4	S	-2.2	-9.7	0	undecided	undecided	n = 1
+R1008	1	or	A	None	6.3	A	-7.3	3.9	0	undecided	undecided	n = 1
+R1013	1	l	L	1	4.3	NULL	3.3	-5.2	0	undecided	undecided	n = 1
+T2	4	o	O	1	1.4	E	3.1	-1.4	1	undecided	undecided	not above both null p95s (low n or text outside the model language)
+T6	4	s	S	1	17.0	NULL	1.1	-34.4	0	undecided	accept	above both nulls and the acceptance rule
+T4	3	q	Q	1	26.4	S	-37.2	-26.4	0	undecided	accept	above both nulls and the acceptance rule
+T8	2	u	V	1	31.6	I	2.3	-31.6	0	undecided	accept	above both nulls and the acceptance rule
+T5	2	r	R	1	16.2	L	3.3	-16.2	0	undecided	accept	above both nulls and the acceptance rule
+T3	2	p	P	1	5.5	M	-2.7	-5.5	0	undecided	undecided	below the acceptance rule
+T17	2	a	A	1	26.5	O	9.5	-29.3	0	undecided	accept	above both nulls and the acceptance rule
+T18	1	e	E	1	4.5	O	5.7	-5.6	0	undecided	undecided	n = 1

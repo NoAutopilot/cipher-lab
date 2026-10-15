@@ -2785,3 +2785,65 @@ SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing 
 - clair571-estrades-1645 and clair577-brienne-estrades-1647 (Peace of Munster ciphers) [same-series; unread] -- design_prior.py with key_design match against Mercy key.tsv; weak; ~$1; p 0.03; evidence: folders.tsv (open/blocked); different office (French), same congress
 - BnF Espagnol 142-144 other cipher pieces / Espagnol 144 items [same-volume; not-in-repo] -- none: sweep done twice (M3 25 Sept, MERCY-SIB 2 Oct); p 0.02; evidence: siblings_1648_hunt.md (none reachable with an image online); NOTES.md:674-740 M3 sibling sweep 0 found
 - AGR SEE inv. 2 Chiffre de la correspondance secrete 1647-98 (DECODE R958-R965) [same-key; read] -- none: read in full, no key; p 0.02; evidence: siblings_1648_hunt.md; NOTES.md U1/H17 (no period key for this letter)
+
+## MERCY-M33 (15 Oct 2026, 13:27-13:4x UTC by date -u)
+
+Worker MERCY-M33 (account 1, for LANE VIV-KEYSTONE account 4); brief `.claude/briefs/runs/2026-10-15-acct4-depth-steps.md`
+"## JOB MERCY-M33". PREREG-MERCYM33.md pushed (24a6b2105) before any statistic. Disk only, no network, no images.
+Instrument: `tools/decode_key.py`'s own `Crossword`/`try_value`/`avalanche` (MQS-CROSSWORD), called in-process by
+`mercym33/m33.py` (es17c model, window 8, 100 draws per null, seed 0). Outputs: `mercym33/control.tsv`, `target.tsv`,
+`avalanche.tsv`, `runs.txt`; `mercym33/runs.py` is the run statistic. key.tsv, the reading, AUDIT.md and status.json
+are unchanged (`decode_key.py --check`: tokens 529: M 41, S 488, reading up to date).
+Order note: a smoke run of `m33.py target` printed the target table at about 13:31, before the control ran (13:31-13:32).
+The rules and the gate were already pushed and are mechanical; nothing was changed after seeing the table.
+
+**Control (matched, K3 shape, on this target under es17c).** 22 single-letter S codes with >= 7 H-confidence
+occurrences; for each, k positions hidden as a pseudo-code (k = 2..6), true letter vs one random wrong letter, 110 draws:
+
+| k | power, primary rule (n>=5) | power, secondary (n>=2) | true letter ranks first | false accept (both rules) | gate (power >= 0.70, false <= 0.10) |
+|---|---|---|---|---|---|
+| 2 | 0/22 | 7/22 (0.32) | 17/22 | 0/22 | secondary FAIL |
+| 3 | 0/22 | 13/22 (0.59) | 18/22 | 0/22 | secondary FAIL |
+| 4 | 0/22 | 16/22 (0.73) | 21/22 | 0/22 | secondary PASS |
+| 5 | 19/22 (0.86) | 19/22 | 22/22 | 0/22 | PASS |
+| 6 | 18/22 (0.82) | 18/22 | 22/22 | 0/22 | PASS |
+
+At k = 4 and 6 the true letter was itself *rejected* in 4/22 draws, so a reject on the target at those n is not proof the
+value is wrong.
+
+**Target (15 hypothesis groups covering the 33 positions; PREREG table).**
+
+| group | positions (ordinary) | value | n | first | stat (bits) vs ref | verdict primary / secondary | registered outcome |
+|---|---|---|---|---|---|---|---|
+| T6 | r18:6, r23:2, r24:4, r24:15 | s | 4 | s | +17.0 vs NULL (p95 1.1 / -34.4) | undecided / accept | **accepted** (secondary, k=4 control PASS) |
+| T2 | r17:11, r18:5, r20:6, r24:14 | o | 4 | o | +1.4 vs e (p95 3.1) | undecided / undecided | undecided |
+| K25 | r09:7, r17:4, r19:10 (+ r16:9) | u | 4 | NULL | -2.4 vs NULL | reject / reject | reject at n=4 (control rejects a true letter 4/22) |
+| K14x | r16:3, r17:5, v01:15 (+ 3 name positions) | c | 6 | NULL | -29.2 vs NULL, 3 of 6 broken | reject / reject | reject at n=6 (3 of the 6 are names: Cheureuse, Cleues, Conrad) |
+| T4 | r17:21, r20:15, r22:2 | q | 3 | q | +26.4 vs s | undecided / accept | non-test at n=3 (control FAIL) |
+| T8 | r17:22, r20:16 | u | 2 | u | +31.6 vs i | undecided / accept | non-test at n=2 |
+| T5 | r17:10, r24:5 | r | 2 | r | +16.2 vs l | undecided / accept | non-test at n=2 |
+| T17 | r04:17, v07:16 | a | 2 | a | +26.5 vs o | undecided / accept | non-test at n=2 |
+| T3 | r20:7, v07:15 | p | 2 | p | +5.5 vs m | undecided / undecided | non-test at n=2 |
+| K15 | v04:9, v04:19 | z | 2 | i (z rank 12) | -18.1 vs i | reject / reject | non-test at n=2 |
+| K9, FRAC, R1008, R1013, T18 | r06:7; v01:6; r10:8; r10:13-14; r23:1 | q; c; or; l; e | 1 each | q; c; a; l; e | +12.8; +7.4; +6.3; +4.3; +4.5 | undecided (n = 1) | undecided by construction |
+
+`--avalanche` (all 15 groups hidden at once) proposes the current value first for T4, T8, T6, T5, T17, T3, T2 and
+proposes other values for K15 (i), K25 (v = u, margin 4.1, kept), K14x (NULL); none meets the primary rule (n >= 5).
+
+**Accepted under the registered rule: 4 positions, code-6 glyphs read s at r18:6, r23:2, r24:4, r24:15** (grade
+candidate S per MQS-CROSSWORD's single-letter rule, held as M here pending a verifier; contexts "ense[o]**s**embian",
+"[e]**s** de infanteria", "tre[s][r]egimient[o]**s**"). None of the accepted positions joins two runs: each sits next to
+another M position (r18:5, r23:1, r24:5, r24:14) that stays M.
+
+**Run statistic.** Longest H/C/S stretch within one cipher segment, before: **53** letters (v01:16-v04:8, as DV-MERCY);
+after the 4 accepts: **53** (unchanged; the accepts lengthen r18:6-r19:9 to 26, r23:2-r24:4 to 23, r24:15-v01:5 to 13).
+53 < 84 (R 3.4) < 135.1 (es17c). Sensitivity, not licensed: with every n >= 2 secondary accept (T4, T8, T5, T17 too) the
+longest is 56 (r20:8-r22:21); with all 33 ordinary positions S it would be 326 (r17:1-v09:6), so the cipher clause is
+blocked by the low-n M cluster in r16-r24, which this instrument cannot settle at n <= 3.
+
+**For the verifier.** No run crosses 84 or 135; the cipher clause stays unmet and nothing here asks for D2. The one
+licensed result is T6 (four code-6 glyphs = s; secondary rule at n = 4, matched control 16/22 power, 0/22 false). The
+transcription-M groups at n = 2-3 read their current letter first (T4/T8/T5/T17 each by 16-32 bits) but the control
+says the instrument cannot accept at that n on this text; what would settle them is an image re-read of the r17-r24
+M glyphs (a different instrument, rule 3's third-attempt clause), not another --try. The R 3.4 vs es17c AD convention
+question is moot for this job (neither is reached) and is left with the parent.
