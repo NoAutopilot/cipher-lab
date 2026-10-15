@@ -4075,6 +4075,7 @@ Requests: openapi.bnf.fr 3 (c206, c207, c217 native regions; HTTP 200, >= 3 s ap
 Next (one line, not done here): the new-leaf map is the bottleneck (2 of 2 new f tiles and 3 of 22 sampled r tiles mis-cut) -- hand-cut every label-g truth
 position on f.202r/f.211v/f.201v/f.211r for both classes by one rule (no class-asymmetric cut), which lifts the ceiling to about 21 f, then rerun with
 classify --boxes's own voter side extended to non-atlas boxes, ~$5.
+
 ## VIV-F191D (15 Oct 2026, 04:50-05:0x UTC by date -u, account-4 worker for LANE VIV-KEYSTONE): a 5-pass reconciliation rule for f.191r L22-L36 -- logged, no verifier
 Brief: .claude/briefs/runs/2026-10-13-acct4-keystone-viv-jobs.md, JOB VIV-F191D. **PREREG-VIVF191D.md** pushed first (1073effbe, on origin/main
 before the option was run). Disk only, 0 vision calls. Instrument: `tx/viv63_f191/f191.py --five-pass [--stats]` (columns as f191c_report.cols5,
