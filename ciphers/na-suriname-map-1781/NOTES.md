@@ -7,6 +7,7 @@ this worker 25 Sept 2026; those pages cite den Heijer, *Grote Atlas van de West-
 *de nieuwe WIC 1674-1791* (2012) as their source but this worker did not independently open that book.
 No full decipherment of 2007A, 2039, 2046, 2061 or 2077 located anywhere (DECODE's cached dumps, both
 solver repositories, and general web search, all below).
+[VER-SUR, 15 Oct 2026: for 2061 the legend's content is in print in Dutch too, den Heijer 2012 p. 362 (read by SUR-2061 on 15 Oct 2026); AUDIT.md item 2, N0 unchanged.]
 [VERIFY-SURINAME-2061, 2 Oct 2026: corrected: K.M.M. de Leeuw, Tijdschrift voor Zeegeschiedenis 16 (1997) 160-177 describes this cipher and reproduces its period key (NA 1.05.03 inv. 86); AMH page 2218 prints the 2061 legend content in English. Whether de Leeuw transcribes any legend is not known (LOCAL-QUEUE L36). Verifier classes in AUDIT.md: key/system N1, 2061 legend N0.]
 
 # NA 4.VEL Suriname fortification maps in cipher, 1781 (VX-N01)
@@ -1043,7 +1044,7 @@ ciphertext.tsv, so the crib was placed from the glossed header's plain word, not
   passage." The same page's Dutch "Verklaringen" field still says "niet getranscribeerd", and the page credits den
   Heijer, Grote Atlas van de WIC II (2012). So **an English summary of the 2061 battery list and a-g legend is in
   print** (AMH, after den Heijer); this worker did not find who read the cipher or whether a Dutch transcription or a
-  key was printed (den Heijer not opened). It agrees with this session's result independently: legend e is the entry
+  key was printed (den Heijer not opened). [VER-SUR, 15 Oct 2026: den Heijer 2012 p. 362 since read (SUR-2061): it prints a modern Dutch gloss of the whole 2061 legend, the source of AMH's English; not a letter-level transcription; AUDIT.md item 2.] It agrees with this session's result independently: legend e is the entry
   that names "the batteries", and No.1, 4, 5, 6 each carry "iron" after the weight, where "yser"/"yzer" sits.
   For rule 10, any 2061 reading here is at best a re-decipherment of content already summarised in print; the
   verifier decides the class.

@@ -9,7 +9,7 @@ It did no decoding and touched no other target.
 | item | claim under audit | class | key source | prior plaintext | prior decipherment / key in print |
 |---|---|---|---|---|---|
 | 1 | the 17-sign key (key.tsv, grade C) and the 2039 legend decode (482 tokens: M 167, U 315, no word read whole) | **N1** for the key and the system. The 2039 legend has no reading to classify. | **ours**: alignment of 2007A against its own on-sheet gloss and the period plain twin 2007B. A **period** key sheet exists (NA 1.05.03 inv. 86, below) and was not used. | 2039: none located (AMH 2025 says "niet getranscribeerd"). The one source that could hold it, de Leeuw 1997, was not read. | **yes**: de Leeuw 1997 describes the system and reproduces "de sleutel tot het geheimschrift" from NA 1.05.03 inv. 86 |
-| 2 | 2061 battery list No.1-6 and legend a-g: S 17, M 163, U 88 after GAPS12; cribs 'batterijen' (10 S) and 'wooning' (7 S) | **N0** | **ours** for the crib values (key_2061_crib.tsv; GAPS9/GAPS10 placements against the sheet's own gloss word and AMH's summary) | **yes**: Atlas of Mutual Heritage page 2218 prints the whole No.1-6 + a-g legend in English, after den Heijer 2012 | **yes**: the AMH sentence presents the content as a reading of "the legend in cipher on Wollant's map"; the key is in de Leeuw 1997 |
+| 2 | 2061 battery list No.1-6 and legend a-g: S 17, M 163, U 88 after GAPS12; cribs 'batterijen' (10 S) and 'wooning' (7 S) | **N0** | **ours** for the crib values (key_2061_crib.tsv; GAPS9/GAPS10 placements against the sheet's own gloss word and AMH's summary) | **yes**: earliest citation den Heijer, *Grote Atlas van de WIC* II (2012) p. 362, which facsimiles 2061 and prints a modern Dutch gloss of the whole No.1-6 + a-g legend (read 15 Oct 2026 by SUR-2061, `sur2061/heijer_p362_legend.txt`; VER-SUR below); Atlas of Mutual Heritage page 2218 prints the same legend in English, after den Heijer 2012 | **yes**: the AMH sentence presents the content as a reading of "the legend in cipher on Wollant's map"; the key is in de Leeuw 1997 |
 | 3 | 2039 legend and 2061 block under the PERIOD keys (inv. 86 scan 0002 Oud, scan 0003 Nieuw + 9 code groups): 2039 H 287 M 183 U 12; 2061 H 166 M 92 U 10 (VERIFY-SURINAME-PERIOD, 2 Oct 2026, below); revised by GAPS15 (2 Oct 2026, solver): 2039 H 290 M 180 U 12, 2061 H 176 M 82 U 10; 2061 revised again by GAPS16 (2 Oct 2026, solver): H 177 M 81 U 10 (see the GAPS15 revision note below) | **2039 legend: N1 (provisional)**, held there until LOCAL-QUEUE L36 is answered. **2061 block: N0** (unchanged). **Period key sheets: N1** | **period** for both readings (NA 1.05.03 inv. 86, read by GAPS13/GAPS14) | 2039: no Dutch or English text of the legend located; de Leeuw 1997 (unread) discusses fort Nieuw Amsterdam's garrison and barracks. 2061: AMH 2218 (English) | key sheets: **yes**, de Leeuw 1997 reproduces the "Nieuw Secrett Alphabeth" with its code groups (snippet). Decipherment of 2039: not located, not excluded |
 
 Safe sentences:
@@ -17,8 +17,8 @@ Safe sentences:
   alignment. The system and its period key sheet (NA Sociëteit van Suriname, 1.05.03 inv. 86) were already published by
   K. de Leeuw, Tijdschrift voor Zeegeschiedenis 16 (1997) 160-177. Our partial key is an independent re-derivation."
 - Item 2: "Our partial letter-level reading of the 2061 (Redout Leyden) battery list and legend has 17 signs at grade S,
-  through the cribs 'batterijen' and 'wooning'. It agrees with the legend content that the Atlas of Mutual Heritage already
-  prints in English, after den Heijer 2012."
+  through the cribs 'batterijen' and 'wooning'. It agrees with the legend content that den Heijer, Grote Atlas van de WIC II
+  (2012) p. 362 already prints in Dutch and the Atlas of Mutual Heritage prints in English after it." (revised VER-SUR, 15 Oct 2026)
 
 Unsafe sentences (never use): "first decipherment of Wollant's cipher maps"; "the 2061 legend, never transcribed, is now
 read"; "no decipherment of these sheets has been published"; "the key is recovered" (the key was published in 1997 and the
@@ -80,6 +80,8 @@ failed); web.archive.org 2 (proxy reset); www.nationaalarchief.nl 1; web search 
   we add is an independent, partial (17 S tokens), letter-level re-reading that agrees with that content: legend e =
   batteries, legend a = officers' quarters, "iron" after the weights. No Dutch letter-level transcription of the 2061
   legend was located in print. den Heijer and de Leeuw were not read, so that question is open, but it does not change N0.
+  [VER-SUR, 15 Oct 2026: den Heijer 2012 p. 362 has since been read (SUR-2061): it prints a modern Dutch gloss of the whole
+  legend, not a letter-level transcription. de Leeuw 1997 is still unread (LOCAL-QUEUE L36). N0 unchanged.]
 - **Item 1, N1** (key/system). A period key sheet and a published description with facsimile have existed since 1997. Our
   17-sign key re-derives part of it independently, from the 2007A gloss and 2007B. That fits N1: the plaintext (the key)
   is already published, and ours is an independent re-derivation. The 2039 legend decode is fragments (no word read whole),
@@ -188,7 +190,7 @@ Safe sentence (2039): "Under the period key in NA 1.05.03 inv. 86 (published in 
 2039 (fort Nieuw Amsterdam) legend at 290 of 482 signs from the key sheet and 180 uncertain (counts revised by GAPS15, 2 Oct 2026). No printed text of this legend
 was located in the sources searched; de Leeuw 1997, which discusses these sheets, has not been read."
 Safe sentence (2061): "Under the period key, our letter-level reading of the 2061 battery list and legend agrees with the
-content the Atlas of Mutual Heritage already prints in English."
+content den Heijer 2012 (p. 362) already prints in Dutch and the Atlas of Mutual Heritage prints in English." (revised VER-SUR, 15 Oct 2026)
 Unsafe: "first reading of the 2039 legend", "previously unread", "we recovered Wollant's key" (the key is a period sheet,
 printed 1997), any word for a 2039 novelty above N1 before L36 is answered.
 
@@ -812,3 +814,27 @@ it; a third call is not the next step (rule 3, third-attempt clause), the pre-re
 Decode: `tools/decode_key.py ciphers/na-suriname-map-1781 --check` "reading up to date"; 2046 tokens 362: **H 233, C 22, M 83, U 24**
 (was M 92, U 15). NOTES.md Remaining gaps / Escalation updated. Not changed: key_period_codes_nieuw.tsv, transcriptions, N-class,
 depth. Requests: none (disk only). Vision: 1 blind subagent call. Rule 10: report only.
+
+## VER-SUR (verifier, account 4, LANE DEFAULT-A4-0437-15, 15 Oct 2026, 06:01-06:1x UTC by date -u; not SUR-2061's session)
+Item 2 (the 2061 battery list No.1-6 and legend a-g): **N0, unchanged; key source unchanged.** Prior-plaintext evidence extended:
+- **Earliest citation now located and read: den Heijer, *Grote Atlas van de West-Indische Compagnie* II (2012) p. 362** (NA 2.14.97
+  inv. 24.2, scan 6e2f6a4a-afde-4c4c-950b-dd88c6318107). It prints 4.VEL 2061 in facsimile and, in the essay column, a modern Dutch
+  gloss of the whole legend, No.1-6 and a-g ("no. 1. 5 stukken geschut à 24 lb ijzer ... a. officierswoning ... g. gallerij, passage").
+  Read in clear by SUR-2061 (two independent passes, word-for-word agreement but the cut-off last word), filed as
+  `sur2061/heijer_p362_legend.txt`; NOTES.md "## SUR-2061 (second run)".
+- What this verifier checked, with no network (brief): the p.362 text on disk against AMH 2218's English (NOTES.md GAPS9 quote): item for
+  item the same content (No.1-6 guns and weights, a-g officers' quarters, garrison lodging, guardhouse, powder magazine, battery stores,
+  sworn servants' lodging, gallery), so AMH is a translation of den Heijer's gloss, as AMH's own credit line says. The page image was not
+  re-viewed by this session (it sits in SUR-2061's scratchpad, not in git); the claim rests on SUR-2061's two agreeing reads.
+- What p.362 is not: a letter-level transcription or a decipherment. Its wording differs from the 1781 sheet's (b "logement van" vs the
+  decode's "logie voor", d "kruitmagazijn", No.2/3 "ijzer" where the decode reads "dito"), and the catalogue field on the same page still
+  says "niet getranscribeerd". Who read the cipher for den Heijer is not stated in the text read; de Leeuw 1997 (LOCAL-QUEUE L36) is
+  still unread. So the earlier sentence "No Dutch letter-level transcription of the 2061 legend was located in print" still holds;
+  "no Dutch text of the 2061 legend in print" does not.
+- Effect on the safe sentences: they still hold, with den Heijer p.362 named as the earlier print (items 2 and 3-2061 revised in place
+  above). Added unsafe sentence: "the 2061 legend has been printed only in English" / "no Dutch text of the 2061 legend is in print".
+- Over-claim sweep: grep of NOTES.md, status.json, NEAR.md and SECOND-OPINIONS-QUEUE.tsv for the 2061 legend. status.json's row says
+  nothing about 2061's print status; NEAR.md and SECOND-OPINIONS-QUEUE.tsv have no row for this target (every item below N3). NOTES.md:
+  two dated sentences that left den Heijer unopened for 2061 (the head paragraph and GAPS9's "den Heijer not opened") get a bracketed
+  VER-SUR correction; history otherwise left as written.
+- Depth (rule 4a) not re-set here: no reading change (the "garde" MATCH stays M, no key edit).
