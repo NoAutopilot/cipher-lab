@@ -1,0 +1,73 @@
+code	value	grade	source	note	rev_value	rev_grade	rev_note
+10	a	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=6 agree=5 others=f:1			c50 word-grain attestation 7 (VER-COL50 C tokens, COL26-KEY)
+11	n	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=	re	M	c50 anchored-segment candidate, chunks {'re': 4, 'ble': 2}; COL26-KEY unit gate PASS; per-code test owed
+12	c	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=6 agree=5 others=brug:1			
+13	d	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=	int	M	c50 anchored-segment candidate, chunks {'int': 2}; COL26-KEY unit gate PASS; per-code test owed
+14	on	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=			
+15	e	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=10 agree=4 others=i:1,r:1,ri:1,tte:1,y:1,ye:1			
+16	se	C	DA1-COL word-level pairing c50/c3940/c47 (siblings/word_da1.py, pre-registered, PASS vs pairing-shuffle control, 7 Oct 2026)	not in key_f23 before			
+17	o	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=1 others=s:1			
+18	h	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=3 agree=3 others=			
+19	m	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=			
+20	i	M	DA1-COLV verifier 7 Oct 2026 (PREREG-DA1-COLV.md, siblings/verify_colv_out.txt): C->M; value-independent canvases (outside R10 units) 3/7, P 0.042 > 0.00714; DA1-COL/COL3 value i at C before	was i M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=9 agree=3 others=u:2,n:1,o:1,r:1,t:1)	ine	M	c50 anchored-segment candidate, chunks {'ine': 2, 'ison': 2}; COL26-KEY unit gate PASS; per-code test owed
+21	e	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=1 others=uil:1	al	M	c50 anchored-segment candidate, chunks {'al': 2}; COL26-KEY unit gate PASS; per-code test owed
+22	m	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=6 agree=4 others=o:2			c50 word-grain attestation 3 (VER-COL50 C tokens, COL26-KEY)
+23	n	C	R9-COL26 per-code control (siblings/percode_control.py)	was n(M) from f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), n=18 agree=7; R9-COL26 anchor-span H 16/23 vs control B p95 13, P 0.0008 (Bonferroni 0.01), held-out c62+c63 3/4			
+24	n	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=3 agree=2 others=o:1			c50 word-grain attestation 1 (VER-COL50 C tokens, COL26-KEY)
+25	p	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=4 agree=3 others=s:1			c50 word-grain attestation 1 (VER-COL50 C tokens, COL26-KEY)
+26	aines	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=1 others=lareyne:1			
+28	la	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=8 agree=8 others=			
+29	a	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=26 agree=4 others=se:4,le:3,u:3,deur:2,p:2,r:2,l:1,ler:1,li:1,ner:1,our:1,upp:1	lorr	M	c50 anchored-segment candidate, chunks {'ent': 1, 'lorr': 2}; COL26-KEY unit gate PASS; per-code test owed
+30	s	C	D2-COL26 8 Oct 2026 (PREREG-D2-COL26.md, siblings/d2col26_test_out.txt): M->C; value-independent units outside every R10 value-choice unit (c33 8/10, c51 4/4, c62 7/8; c30 failed its instrument): 19/22, length-matched P 0.0000, shuffled-gloss P 0.0062 < 0.0083; verifier to re-check (f.23 own flat-start alignment agreed s 4/15). Before: DA1-COLV verifier 7 Oct 2026 (PREREG-DA1-COLV.md, siblings/verify_colv_out.txt): C->M; value-independent canvases c3940+c54 8/23, P 0.013 > 0.00714 on DA1-COL reader (0.0038 on DA1-COL2 reader: reader-dependent); DA1-COL/COL3 value s at C before	was s M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=15 agree=4 others=a:3,e:2,es:1,l:1,o:1,ques:1,r:1,sseco:1); DA1-COL2 pass PASS, DA1-COL pass FAIL; held-out 16/43 P 0.0008			
+31	mdebrienne	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=13 agree=3 others=l:2,rt:2,t:2,astimens:1,rit:1,roit:1,u:1			
+32	o	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=14 agree=3 others=a:2,e:2,t:2,u:2,eu:1,n:1,uste:1	ni	M	c50 anchored-segment candidate, chunks {'uro': 2, 'ni': 2, 'fon': 2}; COL26-KEY unit gate PASS; per-code test owed
+33	ux	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=2 others=			
+34	mdauaux	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=4 agree=2 others=mme:1,omme:1			
+35	o	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=6 agree=3 others=y:2,m:1			
+36	ez	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=4 agree=3 others=o:1			
+37	e	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=4 agree=1 others=i:1,o:1,uit:1			
+38	z	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=			
+39	et	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=8 agree=4 others=yne:2,n:1,y:1			
+40	b	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=2 others=			
+41	n	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=			
+43	p	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=2 others=			
+44	p	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=			
+46	ce	M	DA1-COL2 second blind pairing (siblings/word_col2.py): FAIL-LOWPOWER, P 0.0020 vs alpha 0.00192 -- one pass of two, lowered C->M 7 Oct 2026	was c M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=4 agree=2 others=a:1,gence:1); DA1-COL had PASS (P 0.0009) and merged ce C	er	M	c50 anchored-segment candidate, chunks {'er': 2}; COL26-KEY unit gate PASS; per-code test owed
+48	c	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=6 agree=4 others=q:1,quea:1			c50 word-grain attestation 2 (VER-COL50 C tokens, COL26-KEY)
+49	que	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=4 agree=4 others=			
+50	q	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=			
+51	de	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=13 agree=10 others=s:3			c50 word-grain attestation 6 (VER-COL50 C tokens, COL26-KEY)
+52	coste	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=1 others=q:1			
+53	d	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=2 others=			
+54	du	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=1 others=p:1			
+55	ra	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=			
+56	r	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=5 agree=2 others=f:1,re:1,tre:1			
+57	e	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=4 agree=2 others=n:1,r:1	ire	M	c50 anchored-segment candidate, chunks {'ire': 1}; COL26-KEY unit gate PASS; per-code test owed
+58	e	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=4 agree=1 others=g:1,roposez:1,s:1	m	M	c50 anchored-segment candidate, chunks {'m': 2}; COL26-KEY unit gate PASS; per-code test owed
+59	r	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=4 agree=2 others=a:1,maddesauoye:1			
+61	rge	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=5 agree=3 others=auec:1,l:1			
+65	s	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=2 others=			
+66	f	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=3 agree=1 others=m:1,o:1			
+67	leur	M	DA1-COLV verifier 7 Oct 2026 (PREREG-DA1-COLV.md, siblings/verify_colv_out.txt): C->M; conflict (rule 4): f.23 own gloss pairs 67 with the chunk uasi of quasi (P25w083, 48 67); sibling OUT 2/7 P 0.0012 kept as lead; DA1-COL/COL3 value leur at C before	was uasi M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=1 agree=1 others=)			
+68	s	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=			
+69	s	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=2 others=			
+70	o	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=			
+71	dans	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=5 agree=2 others=t:2,d:1			
+73	de	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=4 agree=1 others=dit:1,e:1,t:1			
+76	c	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=			
+77	faire	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=1 others=i:1	li	M	c50 anchored-segment candidate, chunks {'li': 2}; COL26-KEY unit gate PASS; per-code test owed
+78	u	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=3 agree=2 others=i:1			c50 word-grain attestation 1 (VER-COL50 C tokens, COL26-KEY)
+79	s	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=2 agree=1 others=t:1			
+80	fault	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=	pl	M	c50 anchored-segment candidate, chunks {'pl': 2}; COL26-KEY unit gate PASS; per-code test owed
+81	il	M	DA1-COLV verifier 7 Oct 2026 (PREREG-DA1-COLV.md, siblings/verify_colv_out.txt): C->M; conflict (rule 4): f.23 own gloss writes il over 81 alone (P22w072, single segment); value restored to il for f.23; siblings me OUT 3/8 P 0.0003, lead; DA1-COL/COL3 value me at C before	was il M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=1 agree=1 others=)	me	M	c50 anchored-segment candidate, chunks {'me': 4}; COL26-KEY unit gate PASS; per-code test owed
+82	monnepueu	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=5 agree=3 others=epueu:1,nepueu:1			
+85	luy	M	DA1-COLV verifier 7 Oct 2026 (PREREG-DA1-COLV.md, siblings/verify_colv_out.txt): C->M; conflict (rule 4): f.23 own gloss writes luy over this group alone (P16w052, single segment; sign itself 85/86 disputed, f23_reconciled P16); value restored to luy for f.23; siblings na: OUT 1/4 P 0.030, IN c56 Naples x2; DA1-COL/COL3 value na at C before	was luy M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=1 agree=1 others=); held-out 3/4 P 0.0000 (Naples x2, maintenant)			
+87	amais	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=	on	M	c50 anchored-segment candidate, chunks {'on': 2}; COL26-KEY unit gate PASS; per-code test owed
+89	m	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=3 agree=3 others=			
+91	d	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=			
+96	que	M	D2-COL26 8 Oct 2026: value-independent PASS on c33/c62 (5/8, P 0.0032 / 0.0053) -- que is a C lead for the 1648 sibling key; stays M here (f.23 own gloss puts 96 inside ordres, rule 4 conflict). Before: DA1-COLV verifier 7 Oct 2026 (PREREG-DA1-COLV.md, siblings/verify_colv_out.txt): C->M; value-independent canvases 0/10 (c50 0/6); also f.23 own gloss puts 96 inside ordres (P42w116); DA1-COL/COL3 value que at C before	was r M (f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start; n=1 agree=1 others=)			
+97	pour	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=3 agree=3 others=			
+98	vous	C	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=4 agree=4 others=			
+99	ourueoir	M	f.23 interlinear gloss (canvas 26), word-level pairs (A2-COL3), interlinear_align.py flat start	n=1 agree=1 others=			
+75					b	M	not in key_f23; c50 anchored-segment candidate, chunks {'abb': 1, 'b': 1}; COL26-KEY unit gate PASS
+83					rd	M	not in key_f23; c50 anchored-segment candidate, chunks {'rd': 1}; COL26-KEY unit gate PASS

@@ -1,0 +1,14 @@
+COL26-KEY c50 key revision; anchors 21; placed per pass {'DA1-COL': 21, 'DA1-COL2': 19}
+candidate codes 15: 11=re(6) 13=int(2) 20=ine(4) 21=al(2) 29=lorr(3) 32=ni(6) 46=er(2) 57=ire(1) 58=m(2) 75=b(2) 77=li(2) 80=pl(2) 81=me(4) 83=rd(1) 87=on(2)
+diagnostic known-answer: C codes at non-anchor slots 26, value at chunk +-1 15; segment-permuted mean 7.82 p95 11 P 0.0000
+[scoring 1: DA1-COL + DA1-COL3] held-out spans {'c3940': 97, 'c47': 75, 'c54': 38, 'c55': 93, 'c56': 50, 'c63': 31} candidate occurrences 259 over 15 codes
+[scoring 1: DA1-COL + DA1-COL3] H_after 14 (units ['c3940', 'c47', 'c55', 'c56', 'c63'])  H_before 64  gain -50
+[scoring 1: DA1-COL + DA1-COL3] stage 0 power at N=15 codes (C codes, shuffled-pair, 1000 subsets x 200 draws): 1.000
+[scoring 1: DA1-COL + DA1-COL3] SP mean 6.43 p95 13 max 21 P_SP 0.0362 | W mean 3.53 p95 7 P_W 0.0000 -> PASS
+[scoring 1: DA1-COL + DA1-COL3] per code (not gating): 11=re:8/27 13=int:0/15 20=ine:0/36 21=al:0/37 29=lorr:0/27 32=ni:0/28 46=er:1/17 57=ire:0/9 58=m:0/5 75=b:0/25 77=li:0/4 80=pl:0/6 81=me:4/12 83=rd:0/4 87=on:1/7
+[scoring 2: DA1-COL2 + DA1-COL3] held-out spans {'c3940': 97, 'c47': 75, 'c54': 38, 'c55': 93, 'c56': 50, 'c63': 31} candidate occurrences 262 over 15 codes
+[scoring 2: DA1-COL2 + DA1-COL3] H_after 17 (units ['c3940', 'c47', 'c55', 'c56', 'c63'])  H_before 63  gain -46
+[scoring 2: DA1-COL2 + DA1-COL3] stage 0 power at N=15 codes (C codes, shuffled-pair, 1000 subsets x 200 draws): 1.000
+[scoring 2: DA1-COL2 + DA1-COL3] SP mean 6.53 p95 14 max 23 P_SP 0.0175 | W mean 3.52 p95 7 P_W 0.0000 -> PASS
+[scoring 2: DA1-COL2 + DA1-COL3] per code (not gating): 11=re:10/29 13=int:0/15 20=ine:0/36 21=al:0/38 29=lorr:0/27 32=ni:0/28 46=er:1/17 57=ire:0/9 58=m:0/5 75=b:0/25 77=li:0/4 80=pl:1/6 81=me:4/12 83=rd:0/4 87=on:1/7
+UNIT GATE: PASS
