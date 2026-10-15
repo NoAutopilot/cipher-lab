@@ -334,7 +334,7 @@ def main():
         if nr == "4611":
             # LVN-4611 (15 Oct 2026): per-token 300-dpi read of 4611 per unit (lvn4611/PREREG-LVN-4611.md), applied last;
             # only rows lvn4611/settle.py marked settled/confirmed for a unit whose own control passed change (sign, confidence).
-            for unit in ("p1", "p3"):
+            for unit in ("p1", "p3", "p2a", "p2b"):
                 sp = HERE / "lvn4611" / f"settle_{unit}.tsv"
                 if not sp.exists():
                     continue

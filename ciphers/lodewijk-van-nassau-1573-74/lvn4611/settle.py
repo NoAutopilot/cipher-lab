@@ -3,13 +3,14 @@
 lvn4611/key_<unit>.tsv under lvn4611/PREREG-LVN-4611.md -- per-unit control gate >= 8/10 exact; then a target settles when the read
 equals A150 or B150 exactly (no '?'), H only when the value is a key_full.tsv code (else M kept). Targets not placed (not in reads;
 the placement note's rows) stay M with action 'not-read'. Writes lvn4611/settle_<unit>.tsv, which ../settle.py applies last for 4611
-(only when the unit's gate passed: a FAIL unit gets no settled/confirmed rows). --check: exit 1 if any settle file is stale (rule 7)."""
+(only when the unit's gate passed: a FAIL unit gets no settled/confirmed rows). Units p1, p3 (LVN-4611/LVN-PIN) and p2a, p2b (LVN-4611P2,
+addendum LVN-4611P2: same rule, rows placed on deskewed physical lines). --check: exit 1 if any settle file is stale (rule 7)."""
 import csv, io, os, sys
 H = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(H)
 rd = lambda p: list(csv.DictReader(open(p), delimiter='\t'))
 codes = {r['code'] for r in rd(os.path.join(T, 'key_full.tsv'))}
 stale = False
-for unit in ('p1', 'p3'):
+for unit in ('p1', 'p3', 'p2a', 'p2b'):
     rp = os.path.join(H, 'reads_%s.tsv' % unit)
     if not os.path.exists(rp): continue
     key = rd(os.path.join(H, 'key_%s.tsv' % unit)); rs = {r['tid']: r['read'] for r in rd(rp)}

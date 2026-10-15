@@ -98,7 +98,7 @@ declared here): chooses A, B, or another value, graded **M** (never H). Script `
 ciphertext_4611.tsv, existing rows not renumbered. Then decode_key.py --check, settle.py --check, lvn4611/settle.py --check; C/H/M
 recounted before and after. 4610 p2_L28/11 not touched.
 
-## Addendum LVN-4611P2: 4611 p2 per page-half (15 Oct 2026, 07:4x UTC by date -u; pushed before any read is opened)
+## Addendum LVN-4611P2: 4611 p2 per page-half (15 Oct 2026, 07:2x UTC by date -u; pushed before any read is opened)
 Job LVN-4611P2 (LANE DEFAULT-A4-0645-15, account 4). Same protocol, control, gate and settle rule as the p1/p3 units above, on WVO 4611 p2,
 in two units (rule 3 per-unit merge): **unit p2a** = the M numeral rows of transcription lines p2_L01-p2_L18 (92 targets), **unit p2b** =
 p2_L19-p2_L33 (161 targets). Each unit has its own 10 controls and its own gate; a unit's settles are applied only if its own control passes.
@@ -135,7 +135,7 @@ Prior work: `tools/prior_work.py lodewijk-van-nassau-1573-74 --item-spec 'wvo=46
 claims), the Groen t. IV edition LEAD and two generic UNCHECKED solver/Tomokiyo rows, which AUDIT.md section 1 covers at plaintext level;
 none bears on a transcription re-read.
 
-## Placement note, unit p2a (LVN-4611P2, 15 Oct 2026 07:5x UTC by date -u; pushed before the read is opened)
+## Placement note, unit p2a (LVN-4611P2, 15 Oct 2026 07:3x UTC by date -u; pushed before the read is opened)
 `lvn4611/blobmap_p2a.txt` (line, position, physical line K, ink runs) -> `lvn4611/p2_crops.py` (tight crop = the runs extended to 6 px short
 of the neighbouring runs, at most 45 px, because a thin '1' often falls under the run filter). Three contact-sheet rounds; after two re-maps
 (p2_L15/6 -> K15 runs 13+14, p2_L15/7 -> run 15, p2_L13/13 -> runs 16+17) every one of the 90 tight crops sits on its token.
