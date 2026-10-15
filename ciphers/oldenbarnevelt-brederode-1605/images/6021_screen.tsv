@@ -1,0 +1,118 @@
+scan	sheet	tile	content (by eye at sheet size, M)
+1	01	G	single leaf Dutch letter, grey slip over
+7	01	C	blank opening, short note foot right
+13	01	F	blank left, Dutch letter opening right with dateline
+19	01	D	Dutch letter close signed P. Brederode with paraph
+25	01	J	address leaf with red seal + Dutch letter opening
+31	01	I	Dutch prose left, Dutch letter opening right with heading
+37	01	E	Dutch prose 2pp, right leaf torn
+43	01	B	Dutch prose 2pp
+49	01	L	Dutch prose left, Dutch letter close signed P. Brederode right
+55	02	H	Italian prose left, Dutch letter opening right, grey slips over
+61	02	I	Latin/French letter close with signatures left, printed-style heading 'IACOBUS' right (copy)
+67	02	G	Dutch letter close signed P. Brederode with paraph + short list below, right French/Italian copy headed
+73	02	F	Italian/French short entries with marginal names, left; rest blank
+79	02	J	French prose 2pp, right headed 'Copie' with date
+85	02	D	Dutch letter close signed (left), blank right
+91	02	A	address leaf with red seal + Dutch letter opening dated 1621, grey slips over
+97	02	E	Dutch prose 2pp, left leaf torn
+103	02	L	address leaf + Dutch letter opening, damaged
+109	03	K	Dutch letter opening right, close signed P. Brederode foot
+115	03	D	Dutch prose 2pp
+121	03	A	address leaf with red seal + Dutch letter opening dated 1621
+127	03	L	Dutch prose 2pp
+133	03	B	Dutch prose left, Dutch letter opening right, grey slips over
+139	03	H	Dutch prose 2pp, dense
+145	03	G	Dutch letter opening left, close signed P. Brederode with paraph right
+151	03	C	Dutch prose 2pp
+157	03	I	Dutch prose 2pp
+163	04	G	Dutch prose 2pp
+169	04	D	Dutch prose 2pp, close right
+175	04	J	Dutch prose 2pp
+181	04	C	Dutch prose 2pp, marginal initials
+187	04	E	Dutch prose 2pp, docket foot left
+193	04	F	Dutch prose left, Dutch letter close signed P. Brederode right, ink blot
+199	04	K	address leaf with seal + Dutch letter opening dated 1621
+205	04	B	Dutch prose 2pp, close signed right
+211	04	H	French/Dutch prose 2pp with marginal side-notes
+217	05	A	French prose left, French prose headed right
+223	05	I	Dutch prose 2pp, marginal hand
+229	05	E	address leaf + Dutch letter opening dated 1621
+235	05	H	address leaf with red seal + Dutch letter opening 1621
+241	05	C	Dutch/German list of articles 2pp (prose items, no figures)
+247	05	K	address leaf + Dutch letter opening 1621
+253	05	D	French letter close + dated heading, then second French item
+259	05	L	Dutch prose left, Dutch letter close right with new heading
+265	05	J	address leaf with red seal + Dutch letter opening Apr 1621
+271	06	D	Dutch prose left, list of names right (signatures/witnesses, no figures)
+277	06	H	address leaf with seal + Dutch letter opening 1621
+283	06	E	blank opening
+289	06	A	French prose with dated paragraph heading 2pp
+295	06	J	German/Dutch copy headed right, marginal note, damaged
+301	06	K	French letter headed with place and date 1621 right, blank left
+307	06	C	Dutch prose 2pp
+313	06	L	Dutch prose 2pp
+319	06	B	Dutch prose left, Dutch letter close signed P. Brederode right
+325	07	F	Dutch prose 2pp, water stain
+331	07	C	French prose left, blank right
+337	07	E	blank opening, cut leaf right
+343	07	L	French short text top left, rest blank
+349	07	H	French prose 2pp headed 'Extrait'/copy, water stain
+355	07	D	Dutch prose 2pp, close signed P. Brederode with paraph top right, water stain
+361	07	B	Dutch prose 2pp
+367	07	G	French prose 2pp, heavy water damage
+373	07	A	French prose left, blank right
+379	08	B	HIT -- Dutch letter, left page: about 12 lines of dotted numeral groups inside the prose (mostly two-digit consecutive pairs, e.g. 22.23, 76.77, 40.41, each followed by a single letter), with plain words between ("in date des 29 July ouden stijl", "te continueren", "op den uytganck van"); right page: close dated Heidelberg ... Augusti 1621, subscription "onderdanichste ende getrouwste dienaer", no name visible on this scan (1200 px re-look)
+385	08	I	French short note top left, rest blank, water stain
+391	08	C	address leaf + Dutch letter opening, grey slips over
+397	08	E	Dutch prose left, Dutch letter close signed P. Brederode right
+403	08	F	Dutch prose 2pp
+409	08	G	French prose short, water damage, rest blank
+415	08	D	blank left, Dutch letter close signed P. Brederode with paraph right, dated 1621
+421	08	L	French prose 2pp, dated paragraph heading
+427	08	J	Dutch prose 2pp
+433	09	B	Dutch prose 2pp
+439	09	E	Dutch prose left, French copy headed 'Extrait' right
+445	09	L	Dutch prose 2pp
+451	09	D	page of sparse marks/strokes (show-through or rough notes), doubtful, no numeral groups visible at sheet size
+457	09	H	Dutch prose 2pp with dated paragraph headings Oct 1621
+463	09	G	blank left, French prose right with marginal note
+469	09	J	French prose 2pp, 'Avis' heading
+475	09	I	blank left, Dutch prose right
+481	09	K	Dutch prose left, Dutch letter opening right with dateline
+487	10	E	damaged left leaf, Dutch prose right
+493	10	I	Dutch prose 2pp, faint
+499	10	D	Dutch prose 2pp
+505	10	J	French prose 2pp, heading 'Mon...'
+511	10	G	Dutch letter close signed P. Brederode with paraph left, Dutch letter opening right 1621
+517	10	C	Dutch prose 2pp, dense
+523	10	K	French prose 2pp with marginal article letters (numbered points), prose
+529	10	H	blank left, Latin/French copy headed with date right
+535	10	F	Dutch letter close signed (left top), rest blank, corner cut
+541	11	E	Dutch prose 2pp
+547	11	G	Dutch prose left, French letter in large hand right
+553	11	L	Dutch prose 2pp
+559	11	A	Dutch prose left, Dutch letter close signed P. Brederode with paraph right
+565	11	J	blank left with short note, Dutch letter close signed P. Brederode right
+571	11	B	Dutch letter close signed P. Brederode left, blank right
+577	11	F	blank left, Dutch letter opening right, damaged
+583	11	I	Dutch prose 2pp, signatures and date foot (several signers)
+589	11	H	Dutch prose 2pp
+595	12	L	German/Dutch news prose 2pp (names list in prose)
+601	12	F	Dutch/German prose 2pp, faint
+607	12	G	address leaf with seal left, German/Dutch letter right, stained
+613	12	H	blank left, Dutch letter opening right, grey slips over
+619	12	K	Dutch letter close signed P. Brederode left, blank right
+625	12	B	Dutch prose 2pp, close signed (German name?) right with postscript in prose
+631	12	D	Dutch prose 2pp
+637	12	E	blank opening
+643	12	A	Dutch prose 2pp
+649	13	D	Dutch prose left, Dutch letter opening right, ink stain
+655	13	C	Dutch prose left, Dutch letter close signed P. Brederode right
+661	13	G	Dutch prose left, French prose right headed
+667	13	A	Dutch prose 2pp, close signed P. Brederode with paraph right
+673	13	E	blank left with small slip, Dutch/German copy headed right
+679	13	H	blank left, grey slip over, Dutch letter opening right dated Apr 1622
+685	13	L	Dutch prose 2pp
+691	13	J	Dutch prose 2pp, dated heading right, faded
+697	13	F	Dutch prose 2pp, faint
