@@ -70,3 +70,30 @@ Not placed (stays M, not read): **P323 p3_L08/8 (60)**: the image has one token 
 where the transcription has two rows (/8 60 and /9 =bon); a segmentation question, not a reading one.
 So unit p3 reads 15 targets + 10 controls = 25 rows in one blind Sonnet call.
 The missing first line is a transcription gap (about 19 cipher numerals), logged in NOTES.md; not added to any ciphertext by this job.
+
+## Addendum LVN-L1: p3 line boxes re-anchored, and the missing p3 first line (15 Oct 2026, 05:4x UTC by date -u; pushed before any read)
+Job LVN-L1 (LANE DEFAULT-A4-0437-15, account 4). Render: WVO 04611.pdf fetched once 05:3x UTC (resources.huygens.knaw.nl, HTTP 200,
+3,758,971 bytes), p3 at 300 dpi, sha1 add43302eb94... (same as LVN-4611 / LVN-PIN).
+
+**(a) Line boxes.** `lvn4611/boxes_p3.py` re-anchors the p3 boxes on line centres from `tools/iiif_lines.py --image` (command in its
+docstring) and writes `lvn4611/boxes_p3.tsv` in transcription numbering: new row **p3_L00** = physical line 1, p3_L01..L09 = physical
+lines 2..10, p3_L10..L15 keep their committed boxes (shift_boxes.py had moved L10-L12 too; no read row sits there). `--recheck
+lvn4611/tok_p3.tsv`: all 25 LVN-PIN rows sit on the same physical line (bands move 0-4 px; p3_L09/2 band trimmed from an over-tall box),
+**0 moved**, so no LVN-PIN row is re-graded; the 25 crops were re-cut under the new boxes and eyed on one contact sheet, each on its token.
+
+**(b) The missing first line, unit p3L00.** Tokens: `lvn4611/blobmap_p3L00.txt` -> `mk_tok.py` -> `lvn4611/tok_p3L00.tsv`: position 1 is the
+clear word (entered `=diy` M by eye, not read), positions 2-20 are the 19 numerals (targets T01-T19 = positions 2-20). Crops by crops.py
+under the boxes_p3.py JSON, scratch only; contact sheet eyed before the reads.
+Rows: the 19 targets + the 10 unit-p3 controls of key_p3.tsv (P302 P303 P306 P307 P309 P312 P318 P321 P322 P325, H values there), 29 rows
+per call, written to `lvn4611/key_p3L00.tsv` before the reads.
+Readers: **2 blind Sonnet calls** (A, B), each reads all 29 rows independently, shuffled with its own seed (A 20261015, B 20261016), crops
+renamed by row id, tight + context crop per row. **Free read** (no candidate list: the new line has no prior pass); may answer '?'. Never
+shown the key, the role, any value or the by-eye line in NOTES.md.
+Gate, per call: >= 8/10 controls read exactly as H. Both calls must pass for any target to be graded H; one or both FAIL = non-test, the
+line is still entered (the brief asks for it) with every numeral M from the reconcile below, and logged as a non-test.
+Settle (both gates passed): A == B, no '?': the sign is that value, **H** when it is a key_full.tsv code, else M. A != B, or a '?':
+**1 reconcile** (the worker, one Opus look at the tight + context crops of those rows only, having seen the by-eye line in NOTES.md --
+declared here): chooses A, B, or another value, graded **M** (never H). Script `lvn4611/settle_p3L00.py` writes
+`lvn4611/insert_p3L00.tsv` (line, position, sign, confidence, alt, why); `../settle.py` inserts those rows ahead of the first p3_L01 row of
+ciphertext_4611.tsv, existing rows not renumbered. Then decode_key.py --check, settle.py --check, lvn4611/settle.py --check; C/H/M
+recounted before and after. 4610 p2_L28/11 not touched.

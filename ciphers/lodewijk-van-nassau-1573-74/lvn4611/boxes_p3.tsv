@@ -1,0 +1,17 @@
+line	phys	y0	y1	source
+p3_L00	1	202	274	iiif_lines centre 239
+p3_L01	2	274	347	iiif_lines centre 309
+p3_L02	3	347	423	iiif_lines centre 385
+p3_L03	4	423	501	iiif_lines centre 462
+p3_L04	5	501	580	iiif_lines centre 540
+p3_L05	6	580	657	iiif_lines centre 620
+p3_L06	7	657	735	iiif_lines centre 694
+p3_L07	8	735	819	iiif_lines centre 777
+p3_L08	9	819	901	iiif_lines centre 862
+p3_L09	10	901	990	iiif_lines centre 940
+p3_L10	-	990	1190	committed box 04611_p3_L10.jpg
+p3_L11	-	1190	1478	committed box 04611_p3_L11.jpg
+p3_L12	-	1478	2404	committed box 04611_p3_L12.jpg
+p3_L13	-	2404	3316	committed box 04611_p3_L13.jpg
+p3_L14	-	3316	3392	committed box 04611_p3_L14.jpg
+p3_L15	-	3392	3478	committed box 04611_p3_L15.jpg
