@@ -62,3 +62,41 @@ vision pass on f.89. No key or grade change unless the registered rule licenses 
 Wave 1 sessions (11:52 UTC): MCC-CMU session_015gGQAjAqatuChWV8To1faG; NAF-SPLIT session_01UYRnd6TejcfNpkmpDQ8hiK; JAV-198
 session_011AnLTbKX7QzvBALUi6hcEm; MANT-YSHAPE session_017vGV8HrZnXWuyvZCeL1aD8; CLIN-3004C session_01Mhfbz8mapFgBBZpzvJXFtJ;
 ES132-PLANT session_01917Hod65WgksnoxjsE5rqK.
+
+## Wave 2 (12:3x UTC 15 Oct)
+Wave 1 results: NAF-SPLIT 2.14 N (722 undecided), JAV-198 3.10 D (168/171), MANT-YSHAPE 2.12 Q (NON-TEST: no digit boxes -- the brief's
+error), CLIN-3004C 4.03 D (p.232 PASS, p.233 non-test), ES132-PLANT 3.17 D- (PASS 26/27; 1.27x: cap 2.5 was under the Opus floor + one call).
+Intake gate 12:3x UTC (exit 0 each): fr16045-pisany-rome-1585, fr16144-savary-lancosme-1588 (es132, manteuffel passed at 11:5x).
+Cap sizing: an Opus worker's floor is ~2 before any look; no cap below 3 in this wave.
+
+### ES132-P52 (Opus, cap 3.5, box 45 min, disk only): es132-vargas-mexia-1578 planted-tile audit on f.52r
+ES132-PLANT's next: "same PREREG on f.52r, ~2.5". Read ES132-PLANT and PREREG faac3f749; register the f.52r addendum (plant count, gate) by
+commit before the call; one call; score by the registered rule. No key, grade or reading change unless licensed. NOTES "## ES132-P52",
+gaps + Verdict, gaps_check.
+
+### SAV-GLOSS (Opus, cap 4, box 60 min, openapi.bnf.fr <= 6): fr16144-savary-lancosme-1588 c251-252 margin gloss, two blind passes
+SAV-L14's suggestion: "a two-pass blind transcription of the c251-252 margin gloss on wider native crops (left edge at pct x=0), ~2 Sonnet
+passes + 1 reconcile, ~$2, then add it beside c380's gloss as alignment input for the table recovery gap". Crops command pasted before the first
+subagent call; the gloss is clear French (no sign values involved); 2 Sonnet passes + 1 reconciliation = 3 units. Write the gloss TSV beside
+c380's gloss; do NOT run the alignment (it waits on the owner's sort of c370-375/c380 labels). NOTES "## SAV-GLOSS", gaps + Verdict,
+gaps_check. openapi.bnf.fr take/release lines.
+
+### PIS-FA (Opus, cap 3, box 45 min, archivesetmanuscrits.bnf.fr <= 15, openapi.bnf.fr <= 4): fr16045-pisany-rome-1585 two catalogue lookups
+Gap steps: "18 June 1588 letters (fr.16046 ff.165, 179) ... next: Brienne 354-356 for June 1588, catalogue lookup first, ~$1" and "Originals of
+the Dec 1586-Feb 1587 and Apr-Dec 1587 dispatches ... next: BnF finding aid search for other Pisany volumes (fr. or Cinq Cents de Colbert),
+~$1". Catalogue only: find the records, quote shelfmark, folio range, date and digitised flag/ark; at most 4 thumbnail looks to confirm a hit
+holds Pisany cipher. No transcription, no decode. NOTES "## PIS-FA", gaps + Verdict, gaps_check.
+
+### MANT-V66 (verifier, Opus, cap 3, box 40 min, disk only): sachsstaatsarchiv-manteuffel-1712 66 = Alefeld on 0151
+NOTES: "Next: verifier look at 66 = Alefeld on 0151 vs key.tsv 66 (~$0.5, disk)". You are a verifier, not the solver: read the section that
+proposed it, check the 0151 crop(s) and key.tsv row 66 and every other occurrence of 66 with `tools/decode_key.py <t> --try 66=...` (its
+control), rule agree / disagree / undecided with the evidence; a key change only if the rule licenses it, graded as decode_key says. Write the
+ruling in AUDIT.md (a dated "MANT-V66" section) and a one-line pointer in NOTES. No novelty class change.
+
+### MANT-CUT (Opus, cap 4, box 60 min, disk only): sachsstaatsarchiv-manteuffel-1712 digit cutter, then the MANT-YSHAPE rule
+MANT-YSHAPE was a NON-TEST: the y-slot crops carry whole groups and glyph_atlas's segmenter located the 4|9 digit in <= 8/69 clean slots. Add a
+digit-cutter option to `tools/glyph_atlas.py` (group crop + digit index -> digit box by column ink profile; offline test in tools/tests/) --
+no private copy. Validate it first on the known-4/known-9 exemplars of y49/known.tsv (it must locate >= 80% of them, by your eye on a contact
+sheet, else stop and log the cutter as failing). Then run MANT-YSHAPE's pre-registered rule unchanged on the 8 conflict slots. No vision
+subagent beyond one contact-sheet check. NOTES "## MANT-CUT", gaps + Verdict, gaps_check; SYSTEM.md line for the option
+(tools/system_map_check.py passes).
