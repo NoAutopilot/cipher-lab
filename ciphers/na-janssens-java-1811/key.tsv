@@ -102,7 +102,7 @@ code	value	n	pages	grade	note
 406	rais	1	192	M	single occurrence, cell uncertain; reconciled from crop L04: A rain / B rais, final letters ambiguous; completes J au-rais = j aurais (leaf 192)
 411	ca	3	no5(210-212),192	M	only a corrected/crossed-out cell seen; leaf 192: ca (corrected; overwritten cell, A cet / B cet, reconciled from crop L04 with key.tsv 411 = ca (leaf 191): completes cer-ti-fi-ca-t = certificat)
 412	consider	1	no4-205R	C	
-420	fin	3	no5(210-212),192,no4-207L	M	ambiguous: fin (n=2, pages=no5(210-212),192); fui. (n=1, pages=no4-207L) [earlier note: only a corrected/crossed-out cell seen; leaf 192: Fin. (clean); GAPS3 2 Oct 2026: C: the end-of-text mark, glossed in two texts and standing last in four]
+420	fin	3	no5(210-212),192,no4-207L	C	ambiguous: fin (n=2, pages=no5(210-212),192); fui. (n=1, pages=no4-207L) [earlier note: only a corrected/crossed-out cell seen; leaf 192: Fin. (clean); GAPS3 2 Oct 2026: C: the end-of-text mark, glossed in two texts and standing last in four]
 424	que	2	199,no4-206R	C	
 425	point	1	no4-205R	C	
 427	onze	3	199,no5(210-212)	C	

@@ -145,3 +145,5 @@ that treats June 1811 at this level and may quote No.1 from the Paris decipherme
 already prints part) but could enlarge the known part. No SECOND-OPINIONS-QUEUE row (class below N3).
 
 `python3 tools/depth_check.py` (5 Oct 2026, after this audit; neither item is a counted result, N0/N1): `unique solves (N3+ and D2+): 16 -- D4 1, D3 2, D2 13; not counted D0/D1: 13; legacy ungraded: 0 exit 0`
+
+- 15 Oct 2026 (JAV-420C, rule 10 propagation): GAPS3's 420 M -> C re-applied to key.tsv (lost in a re-merge); leaf 188 now C 85, M 22, U 56 (was C 84, M 23), H/C/S 52.1% (was 51.5%); plaintext unchanged; no class or depth-band change. NOTES.md "## JAV-420C".
