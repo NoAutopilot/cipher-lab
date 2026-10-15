@@ -1,4 +1,4 @@
-# PREREG-HEID1621D -- first cheap test, unit inventory vs a Dutch word list (written 15 Oct 2026, 18:2x UTC, before any measurement)
+# PREREG-HEID1621D -- first cheap test, unit inventory vs a Dutch word list (written 15 Oct 2026, 18:1x UTC, before any measurement)
 
 Target: ciphertext.tsv (NA 1.01.02 inv. 6021 scan 379), 45 units (41 pairs + 4 longer units, structure_6021.json), all grade M.
 No decode, no key, no reading: the test asks only whether the unit inventory looks like a word-level code at this N.

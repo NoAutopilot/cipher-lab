@@ -108,7 +108,7 @@ diplomatic Dutch, so a judge result on it needs the era caveat (rule 3, V6-PTCOR
 spec + first cheap test -- unit inventory (21 pair+letter units, 45 tokens) against a Dutch word-frequency list under a frozen pool,
 matched control a synthetic 21-unit word code of the same length from nl16.
 
-## HEID-1621D (15 Oct 2026, 18:13-18:3x UTC by date -u, account 2, Opus; for the orchestrator, owner account)
+## HEID-1621D (15 Oct 2026, 18:13-18:2x UTC by date -u, account 2, Opus; for the orchestrator, owner account)
 Brief: `.claude/briefs/runs/2026-10-15-acct4-depth-steps-2.md`, JOB HEID-1621D. Requests: resources.huygens.knaw.nl 11 (all 200: 4
 searches "Brederode" source 5 at batch 0/20/40/60, 1 pages.json, 4 OCR pages, 2 searches "in code" and "ontcijfer"); service.archief.nl 0.
 No image fetched, no reader, no decode, no key, no reading.
@@ -122,7 +122,7 @@ search: "Brederode" 109 hits in the volume; the August 1621 entries opened at th
 - Not settled: the scan 380 endorsement as read by HEID-1621B ("L. 20 Aug. 1621") vs the edition's receipt among the letters of
   23 Aug; the brief's "8 Aug" letter vs the edition's 6 Aug (the duplicate on scan 376 names a letter of 8 Aug, HEID-1621B, M).
 
-**(2) Premise check verdict open**; `python3 tools/intake_gate_check.py brederode-heidelberg-1621` (18:2x UTC):
+**(2) Premise check verdict open**; `python3 tools/intake_gate_check.py brederode-heidelberg-1621` (18:1x UTC):
 
     brederode-heidelberg-1621: open (line 1) -- edition/page or full-text-search citation found within 6 lines
     exit=0
