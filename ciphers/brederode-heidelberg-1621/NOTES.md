@@ -303,3 +303,18 @@ Read so far: 0 of about 65 units (13 Aug block 45 units + 17 Sept block about 20
 - [ ] image-check: scan 375 and scan 423 at native size not yet seen
 - [x] retry: the NA and Huygens hosts answered (HEID-1621D, HEID-1621E, HEID-1621F, all 200)
 Verdict: keep going: 1 internal gaps; cheapest next: two-block transcription (scans 423 + 375), ~$8.4
+
+## HEID-1621G (15 Oct 2026, 21:11-..., UTC by date -u, account 2, Opus; for the orchestrator, owner account)
+Crop step (run and pasted before the first reader call, 21:14 UTC):
+```
+$ python3 tools/iiif_lines.py --image $S/s375_block_native.jpg --out $S/c375 --prefix h375 --debug
+s375_block_native.jpg (local): region 1779x1419, 15 lines, 15 bands x 1 segments; pitch 91 distance 63 prominence 69.6
+  centres (region y): 45 124 220 307 406 492 584 672 754 862 948 1039 1141 1239 1336
+  wrote 15 crops
+$ python3 tools/iiif_lines.py --image $S/s423_block_native.jpg --out $S/c423 --prefix h423 --debug
+s423_block_native.jpg (local): region 1900x720, 8 lines, 8 bands x 1 segments; pitch 94 distance 65 prominence 86.0
+  centres (region y): 20 146 241 337 426 513 614 693
+  wrote 8 crops
+```
+($S = session scratch; native regions 375 "900,780,1780,1420" and 423 "760,2000,1900,720" of NA 1.01.02 inv. 6021; readers get h375_L02-L13 and
+h423_L04-L05 only, the lines carrying numerals.)
