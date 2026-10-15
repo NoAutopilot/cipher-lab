@@ -44,7 +44,7 @@ o token's chunk comes only from the H codes around it. Positions with an empty c
 `osplit/sort_tokens.tsv` (id -> block, line, pos; written before the sort), `osplit/sort_answers.tsv` (subagent output, verbatim),
 `osplit/mat_osplit.py` (`--check`), `osplit/mat_osplit_result.tsv`, NOTES.md "MAT-OSPLIT", HYPOTHESES.md row, Verdict update, gaps_check.
 
-## Addendum 1 (13:0x UTC 15 Oct 2026 by `date -u`, before the sort and before any score)
+## Addendum 1 (12:5x UTC 15 Oct 2026 by `date -u`, before the sort and before any score)
 MAT-KA's `signs` reader concatenates block E from two drafts (`ciphertext_draft_f91.tsv` E1-E4, the MAT-F91 first pass, 112 tokens, and
 `_f91e.tsv` E1-E5, the MAT-F91E redo, 153 tokens) against one E gloss. The registered tests above use MAT-KA's reader unchanged (gating).
 A secondary run, reported but NOT gating, repeats tests 1-2 with block E taken from `_f91e.tsv` only. `sort_tokens.tsv` therefore keys

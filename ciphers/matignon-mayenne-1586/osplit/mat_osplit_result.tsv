@@ -1,0 +1,7 @@
+run	label	statistic	null_mean/p95/max	detail	power	gate	verdict
+MAT-KA-reader(gating)	split	23/56=0.411	22.7/23/25	unsplit o LOBO 24/65=0.369 maj a		FAIL	split-FAIL
+MAT-KA-reader(gating)	oA	13/40=0.325	0.175/0.300/0.375	majority a; folds A:a2/3 B:a4/13 C:a4/11 D:a2/5 E:a1/4 F:a0/4	7=o n40 beat20/20 fit20/20	PASS	candidate-S-at-a(flag);grade-M(split-FAIL)
+MAT-KA-reader(gating)	oB	10/16=0.625	0.135/0.375/0.562	majority a; folds A:a1/3 B:a1/1 D:a2/2 E:a1/1 F:a5/9	n=l n16 beat14/20 fit20/20	PASS	candidate-S;grade-M(split-FAIL)
+E-f91e-only(secondary)	split	23/56=0.411	22.7/23/25	unsplit o LOBO 24/63=0.381 maj a		FAIL	split-FAIL
+E-f91e-only(secondary)	oA	13/40=0.325	0.177/0.300/0.375	majority a; folds A:a2/3 B:a4/13 C:a4/11 D:a2/5 E:a1/4 F:a0/4	7=o n40 beat20/20 fit20/20	PASS	candidate-S-at-a(flag);grade-M(split-FAIL)
+E-f91e-only(secondary)	oB	10/16=0.625	0.130/0.375/0.500	majority a; folds A:a1/3 B:a1/1 D:a2/2 E:a1/1 F:a5/9	n=l n16 beat20/20 fit20/20	PASS	candidate-S;grade-M(split-FAIL)
