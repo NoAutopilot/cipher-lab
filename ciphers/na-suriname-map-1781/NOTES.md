@@ -4514,3 +4514,17 @@ Job (SUR-POOL's named next): 4.VEL 2076's plain legend as known plaintext on 207
   ~$1, is the cheapest remaining clear-text route.
 - Grades in this section: H 0 C 0 S 0 M 0 I 0 new. Report what was found and where it was not found; no novelty claim (rule 10).
   Requests: none.
+
+## SUR-AMH (15 Oct 2026, account 2, Sonnet worker for LANE DEFAULT-A2-1109-15; 12:27-12:3x UTC by date -u)
+Job: printed or catalogue text for 4.VEL 2077 (AMH, den Heijer 2012), as a possible plain crib. No key, token or grade changed.
+Found (read): AMH page 2123 (snapshot sources/amh/2026-10-03/, read again from disk) -- inscription "a legend to the letters a to z and the
+numbers 1 to 3 ... partly encrypted, not transcribed"; essay text is the history of the fort and the 1781 eleven-gun battery, no legend entries;
+source cited den Heijer II (2012). Den Heijer p. 329 (sources/gawic/2026-10-03/gawic_p329.jpg, viewed again): 2077 in facsimile with the English
+caption and essay columns (Wollant's 1781 defence plan, "most or ... all of the annotation ... in cipher", key at sheet 471); no modern gloss of the
+2077 legend of the kind p. 362 gives for 2061. The only plain legend text on that sheet is 4.VEL 2078's own Nota (already the SUR-2076 crib).
+AMH page 2053 (fort Zeelandia, 200): lists photographs and maps, no 2077 legend text. Not found: any plain rendering of 2077's legend in AMH or p. 329.
+Not reached: AMH page for 4.VEL 2078 (pages 2122/2124 guessed; connection reset twice, host stopped per the good-citizen rule, not a negative);
+den Heijer's other Zeelandia pages (p. 328 and the chapter text, not opened); OpenAlex "Wollant Zeelandia 1781 legenda" and "Grote Atlas ... Zeelandia
+Wollant geheimschrift" returned no rows; IA be-api "Zelandia" Wollant legenda: 5 unrelated hits (Spanish/Latin), none checked further.
+Next (named): den Heijer p. 328 + the Zeelandia essay pages via NA 2.14.97 inv. 24.2 (service.archief.nl, ~$1) for any text rendering of the 1781 buildings.
+Requests: atlasofmutualheritage.nl 7 (2 x 200, 1 search 200, 4 resets), api.openalex.org 2, be-api.us.archive.org 1, nationaalarchief.nl 0.
