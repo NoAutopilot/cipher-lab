@@ -1084,3 +1084,37 @@ panel-A row. The side note is a recipients list ("Baille a ..."); its second nam
 (1) ELEC-VERSO next (2): rectos ff.161r-164r (c325-c331, 4 canvases at 1000 px, ~1.5) for further occurrences of the f.51r signs, which a
 second ciphertext occurrence needs; (2) fr.3897 items 36-38 (ELEC-PAIR next 3); (3) no fourth reader on Phi/Hbar on the same two images
 (rule 3's third-attempt clause: same instrument, same material) unless new material (a further occurrence) comes in.
+
+## ELEC-REC: rectos ff.161r-164r searched for the f.51r-block signs (worker ELEC-REC, LANE DEFAULT-A1-1426-15, account 1, 15 Oct 2026, 15:22-15:3x UTC by date -u)
+
+Brief: ELEC-VERSO next (2), repeated by ELEC-R2 and ELEC-R3. PREREG `elecrec/PREREG-ELEC-REC.md` (pushed 88e730ee1 before any fetch):
+the occurrence rule (word slot; not a letter or a standard abbreviation; 5/5 on ELEC-POOL's five-feature rule against one f.51r lower-block
+name row), with nulles not searched; and the decoy rule. ELEC-R3's decoy fired because a reader made a forced choice of a key-panel row for a
+given target. This pass avoids that because the search is open (candidates are listed per canvas before any key comparison), every 5/5
+candidate is re-scored against the f.53r rows as a decoy panel (5/5 there = conflict, not counted), and the surrounding clear words must admit
+the row's name. One non-blind reader (this worker, Opus, own eye). Page images, not a transcription (rule 2). Result `elecrec/rectos_result.tsv`.
+- prior_work.py (`--item-spec 'BnF fr.5761 ff.161r-164r rectos ...' --step-type read --offline`): exit 4, generic holds only (LOOK 2-leaf,
+  UNCHECKED 3-tomokiyo/3-solver, UNCHECKED-NET 3-solver/4-editions), the same as the earlier ELEC passes on these leaves.
+- **Zero candidates on all four rectos, so zero counted occurrences.** f.161r (c325): mid-letter, monsr de Coulongne twice in letters; two
+  filled ink blots (l.7, l.13) are not signs. f.162r (c327): the close of a letter "De Convallence le xxvij jour de may, Signe dalbret", then
+  "Sire hier monsr de Treves alla veoir monsr le legat", Francfort and Coulongne, all in letters. f.163r (c329): the close of a letter signed
+  "Dalbret Bonnyvet et Guillart" (Convallance, 26 May), the same three signers as nr. 383. It writes duc de Saxe, Treves, Magence, conte
+  palatin, Coulongne and the legate in letters, with no sign in any slot. A copy headed "Double" in another hand follows. f.164r (c331): that
+  copy goes on, with Wirtemberg, Treves, Lorraine, Bazoges, Joachim de Moltzan, Brandebourg and Magence in letters. A 7-like mark before
+  "lesquelles" (l.20) is the par abbreviation (ELEC-KLU), excluded under (b).
+  So the decoy panel and the context check were never reached. No native region was fetched (no candidate). At 1000 px an oXo-sized sign
+  shows plainly (ELEC-VERSO on f.166v), so this is a search result at that scale, not a native-resolution census.
+- Observation, not graded: the 26 May letter of Albret, Bonnivet and Guillart (f.163r) writes in letters the names that nr. 383 (late June,
+  same three signers) puts in signs. On ff.160-167 the name signs stand only in nr. 383. The f.51r list may have reached these signers
+  after 26 May, or only that copy was ciphered. This is not tested here.
+- Grades: none changed (no occurrence). The third oXo that C would need was not found on these leaves. key.tsv unchanged; elecpair383/
+  unchanged; status open.
+- Requests: openapi.bnf.fr 4 (c325, c327, c329, c331 `full/1000,`), all 200, no 403/429. Images in the session scratchpad only, none in
+  git. Regen: `https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b52510561g/f3{25,27,29,31}/full/1000,/0/default.jpg` (sha1 in the TSV).
+
+**Verdict (ELEC-REC, 15 Oct 2026):** open, unchanged. The rectos ff.161r-164r carry no f.51r-block sign at 1000 px. With ELEC-VERSO, ELEC-383
+and ELEC-KLU, every leaf of ff.160-167 has now been read, and nr. 383 is the only copy there with name signs. A 26 May letter of the same three
+signers (f.163r) writes all the electors' names in letters. Next: (1) fr.3897 items 36-38, 62, 64-65, 73 (ELEC-PAIR next 3) for second
+witnesses; (2) other Orval/Bonnivet/Guillart copies after 26 May outside ff.160-167 (Kluckhohn's fr.5761 source list, 46 references, gives the
+leaves; the June letters first, ~1.5 for 4-6 canvases at 1000 px), the only place left in this volume where a further oXo could stand;
+(3) no fourth reader on Phi/Hbar on the same f.51r images (ELEC-R3 next 3).
