@@ -2,13 +2,21 @@
 """Reconcile two blind pass TSVs (leaf, order, code, gloss, note) of the Janssens
 decipherment leaves into key.tsv (code -> value) and conflicts.tsv.
 
-Usage: python3 build_key.py passA.tsv passB.tsv --out-dir .
+Usage: python3 build_key.py passA.tsv passB.tsv --out-dir . [--corrections corrections.tsv]
+
+JAV-CORR (15 Oct 2026): rows of corrections.tsv whose `file` column names a pass file are applied to that pass's code
+column at read time (scripts/corrections.py; keyed (leaf, order)), so a rebuild keeps keysource 200:119 at 420, not the
+retired 120. --corrections '' disables it.
 """
+import os
 import argparse
 import csv
 import difflib
 import sys
 from collections import defaultdict
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import corrections  # noqa: E402
 
 
 def load(path):
@@ -37,10 +45,14 @@ def main():
     ap.add_argument("passA")
     ap.add_argument("passB")
     ap.add_argument("--out-dir", default=".")
+    ap.add_argument("--corrections", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "corrections.tsv"))
     args = ap.parse_args()
 
     a_rows = load(args.passA)
     b_rows = load(args.passB)
+    for path, rows in ((args.passA, a_rows), (args.passB, b_rows)):
+        for leaf, order, old, new in corrections.apply(rows, corrections.load(args.corrections, path), path):
+            print(f"correction {os.path.basename(path)} {leaf}:{order} {old} -> {new}")
 
     a_by_leaf = defaultdict(list)
     b_by_leaf = defaultdict(list)

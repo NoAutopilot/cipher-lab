@@ -2303,6 +2303,39 @@ reading up to date", exit 0.
 
 Units: none (disk only). Cost not visible to this session.
 
+## JAV-CORR (15 Oct 2026, account 4, LANE DEFAULT-account-4-20261015-1735)
+
+Brief `.claude/briefs/runs/2026-10-15-acct4-default-1735-jobs.md` "## JAV-CORR", run 17:4x UTC 15 Oct 2026 (date -u). Step: JAV-RG's "Not
+done", make `scripts/build_key.py` and `scripts/merge_leaf.py` read `corrections.tsv`. No new evidence; no key value or grade changed; key.tsv,
+conflicts.tsv, reading and pass files untouched. Disk only; requests 0, vision 0, subagents 0.
+
+**Change.** New `scripts/corrections.py` (load + apply), imported by both scripts. A corrections.tsv row applies to a pass/leaf TSV when its
+`file` column (';'-separated) names that file's basename; keying is (leaf, order), the line label bare (`200`) or prefixed (`keysource-200`,
+part after the last '-'), pos = the pass's `order`, the same (line, pos) shape decode_key.py uses for its exceptions. The pass's `code` is
+replaced in memory; the pass file stays as transcribed. A keyed row whose code is not the row's `token` (stale) or a correction matching no
+row stops the run. Rows naming `ciphertext.tsv` (SPLIT's 13:11) never apply here. Both scripts take `--corrections PATH` (default the folder's
+corrections.tsv; `''` disables). Offline test `tools/tests/test_janssens_corrections.py`: 7/7 ok (applies in build_key and merge_leaf; `''`
+and a row naming another file leave the pass as transcribed; stale and unmatched corrections exit non-zero; real keysource rebuild has 420 at
+leaf 200 and no row 120).
+
+**Rebuild vs committed key.tsv: not byte-for-byte, and cannot be from the passes alone.** `build_key.py keysource_passA.tsv
+keysource_passB.tsv` (scratch out-dir) now prints "correction keysource_passA.tsv 200:119 120 -> 420" (and passB), and its key differs from
+the uncorrected rebuild in exactly one row: `120 Fin. 1 200 M` is gone, `420 Fin. 1 200 M` appears (M because pass B notes the cell
+"uncertain", build_key.py's shaky rule). Against the committed key.tsv (327 codes) the rebuild has 167 codes: 65 rows identical, 0 codes only
+in the rebuild, 160 codes only in the committed key (added by the later merge_leaf/inventory steps: leaves 187, 192, 198, 201, No.4, No.5,
+GAPS inventories), 98 rows differing in n/pages (same later merges), 18 in grade and 4 in value (13 aux->au, 420 Fin.->fin, 689 de->Le, 1096
+part->par), every one a code in regrades.tsv or a later-merge conflict (GAPS3/GAPS17 decisions, per the notes in key.tsv). The committed key is
+the end of a chain (build_key -> merge_leaf per leaf -> apply_inventory -> apply_regrades and hand edits, VX-RD02C) that build_key.py alone
+was never meant to reproduce (merge_leaf.py's docstring). What the correction fixes: neither script can now re-create row 120 or read leaf
+200:119 as anything but 420. One consequence for a future full re-chain: the committed 420 row lists pages no5(210-212),192,no4-207L, not 200,
+because the keysource occurrence was held under 120 and retired; a re-chain with the correction would add page 200 to 420 (n 3 -> 4). Not
+applied here (brief: no key change beyond corrections.tsv; n/pages is evidence count, not value or grade).
+
+**Check.** `python3 tools/decode_key.py ciphers/na-janssens-java-1811 --check`: "tokens 163: C 85, M 22, U 56 / reading up to date",
+exit 0, before and after (unchanged).
+
+Units: code ~0.5 (disk only). Cost not visible to this session.
+
 ## Verifier audit (A3V-VJAN, 4 Oct 2026)
 
 AUDIT.md section 1: leaf 188 classed **N1**, key source period. O. Collet, *L'île de Java sous la domination française*

@@ -20,11 +20,18 @@ an existing row's evidence:
 Same-value test: build_key.py's glossnorm (case, trailing punctuation, apostrophe style) PLUS accent folding, so
 "expedition"/"expédition" is agreement (the VX-RD02C bug), with the key's accented surface kept.
 Prints one line per change and a summary; --dry-run prints without writing.
+JAV-CORR (15 Oct 2026): rows of --corrections (default: the folder's corrections.tsv) whose `file` column names the leaf
+file are applied to its code column first (scripts/corrections.py, keyed (leaf, order)); --corrections '' disables it.
 """
 import argparse
 import csv
+import os
+import sys
 import unicodedata
 from collections import OrderedDict
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import corrections  # noqa: E402
 
 
 def norm(s):
@@ -50,9 +57,12 @@ def main():
     ap.add_argument("--key", default="key.tsv")
     ap.add_argument("--conflicts", default="conflicts.tsv")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--corrections", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "corrections.tsv"))
     a = ap.parse_args()
 
     rows = load(a.leaf_tsv)
+    for leaf, order, old, new in corrections.apply(rows, corrections.load(a.corrections, a.leaf_tsv), a.leaf_tsv):
+        print(f"correction {os.path.basename(a.leaf_tsv)} {leaf}:{order} {old} -> {new}")
     key_rows = load(a.key)
     key = OrderedDict((r["code"], r) for r in key_rows)
     conflicts = OrderedDict((r["code"], r) for r in load(a.conflicts))
