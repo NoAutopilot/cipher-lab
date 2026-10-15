@@ -48,3 +48,6 @@ registered test passes; carry any grade change to AUDIT.md (rule 10). Units: sor
 ### BAL-65G (Opus, cap 3, box 60 min; openapi.bnf.fr <= 8, ROOM take/release): baluze167-davaux-1637 glossed plain 65 on 169 c297/c232/c344 + Ebar re-check
 Verdict cheapest next: (1) 169 c297, c232, c344 for a glossed plain 65 (~1; one region each at full res, scratch only); (2) the c281/c284/c267 E rows
 re-checked for the Ebar form (~3 requests at 2400 px, record regen in images/manifest.json, ~0.8). --try before anything enters key.tsv.
+
+Wave 1 spawned 12:43 UTC: C1161-S275 session_01DZ396T7SNCopDQYgyjzMpE, ELEC-POOL session_018ivXv18LBWy8VERLakdFPt, MONL-K04 session_01BLJnJAjibyEny4sN852o2U,
+MAT-OSPLIT session_01TSeH8rDaQSB6d7UbeTGzcd, BAL-65G session_01BWPzuRzQAtJaPzPcwmkTeY (all Opus; caps 6/4.5/3/4/3 = 20.5).
