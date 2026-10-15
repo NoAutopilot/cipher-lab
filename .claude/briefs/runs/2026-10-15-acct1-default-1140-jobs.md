@@ -100,3 +100,6 @@ no private copy. Validate it first on the known-4/known-9 exemplars of y49/known
 sheet, else stop and log the cutter as failing). Then run MANT-YSHAPE's pre-registered rule unchanged on the 8 conflict slots. No vision
 subagent beyond one contact-sheet check. NOTES "## MANT-CUT", gaps + Verdict, gaps_check; SYSTEM.md line for the option
 (tools/system_map_check.py passes).
+
+Wave 2 sessions (12:27 UTC): ES132-P52 session_01VmuqNnHHNZGbHx1FE5eotd; SAV-GLOSS session_01PDDCRgPMF6ae1cQKfL3rCp; PIS-FA
+session_017yochWwdis2b16tH7JUPP3; MANT-V66 session_01QSAS2S78gaxX3Zjb8eHh3D; MANT-CUT session_01Wwrz39JiiXHYLBkuQy4MKQ. MCC-CMU (wave 1) still live.
