@@ -59,3 +59,6 @@ sha1 list). One DECODE browser login (tools/decode_browser_login.js, `--guess-fu
 not on disk. Write a sign transcription of the f.11 cipher groups (one Opus look, crops in scratchpad, M-graded) as ciphertext_f11.tsv, then
 compare each group against R328's alphabet/code list and R330's name list; pre-register what counts as a fit (as PREREG-HAR-KEYS.md's Fit A/B
 with its control) before comparing. No key.tsv edit; a fit becomes a planned --try step. Update the known-keys line and Verdict, gaps_check.
+
+Wave 1 sessions (08:19 UTC): MAT-F91E session_01CwXmm2kfQrxeWKwtSRByST, OBRED-TRY session_017rc54gF8WMfS6E2fCbdQKu,
+OBRED-552 session_019yesqUFWDdRLknRarNyG6X, HAR-F11 session_01HeBjVVz39Xj2r1vEJLhFn7.
