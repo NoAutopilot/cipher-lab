@@ -1028,7 +1028,7 @@ majority_key_leaf.py run); (2) with the f.51r block as the key, search fr.5761 r
 and the other Orval/Bonnivet/Guillart copies for further occurrences of its signs, which a third oXo would need for C; (3) fr.3897 items 36-38
 (ELEC-PAIR next 3).
 
-## ELEC-R2: blind second reader on the f.51r lower block and its side note (worker ELEC-R2, LANE DEFAULT-A4-1236-15, account 4, 15 Oct 2026, 13:35-13:5x UTC by date -u)
+## ELEC-R2: blind second reader on the f.51r lower block and its side note (worker ELEC-R2, LANE DEFAULT-A4-1236-15, account 4, 15 Oct 2026, 13:35-13:4x UTC by date -u)
 
 Brief: ELEC-VERSO's next (1). PREREG addendum `elecr2/PREREG-ELEC-R2.md` (pushed 585a6a34d before the fetch and the reader call). One blind
 Sonnet subagent call, crop paths only (no sign names, no ELEC-VERSO matches, no print): six shuffled targets (the four nr. 383 signs cut
