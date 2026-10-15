@@ -68,3 +68,37 @@ with the finding-aid ids. Catalogue search only: no images, no status change; ad
 Wave 1 sessions (14:37 UTC): ELEC-R3 session_01ACfVYHLwfKCoeFre8z1PXb; COL26-LEN session_01A1vrd2rCD9NPMkA6e9ib9G; MONL-R0S
 session_01RJKdEakDQZh2dnz2SJUYx1; BAL-65C session_01VEJCwnzeNAGbK2qZxoiVX9; JAV-200 session_012rvR2A8T4ps2wQ7VxfyRcf; F3198-PL
 session_0144vRi7ysA48FZ6muHuAvt5 (Sonnet).
+
+Wave 1 results (15:1x UTC): ELEC-R3 1.80 N, COL26-LEN 1.78 D (stood down: duplicated COL26-LM; orchestrator's brief error, read below the
+Verdict line before briefing), MONL-R0S 2.00 N, BAL-65C 2.91 D-, JAV-200 1.84 D, F3198-PL 1.01 N; all ledgered and archived.
+Seven-day `allowed_warning` on every session: not a stop (BUDGETS.md 27 Sept amendment); five_hour not reporting.
+
+## Wave 2 (15:2x UTC 15 Oct)
+Excluded in addition: LANE DEFAULT-A4-1441-15 (matignon, clair1161, lodewijk). Each brief's step was checked against the folder's latest
+sections (not only the Verdict line) before writing it.
+
+### ELEC-REC (Opus, cap 2.5, box 50 min, openapi.bnf.fr <= 5): fr5761-election-1519 rectos ff.161r-164r
+ELEC-VERSO next (2), repeated by ELEC-R2 and ELEC-R3: "with the f.51r block as the key, search fr.5761 rectos ff.161r-164r (c325-c331, 4
+canvases at 1000 px, ~1.5) ... for further occurrences of its signs, which a third oXo would need for C". Read ELEC-VERSO, ELEC-R2, ELEC-R3.
+PREREG (commit before the fetch): what counts as an occurrence of each f.51r sign (oXo, Lfo, Phi, Hbar and the rest of the block) and the
+decoy rule (ELEC-R3's decoy fired: say how this pass avoids that). 4 canvases at 1000 px (scratchpad, never git); one Opus look per canvas,
+native region only for a candidate sign (<= 1 extra request). Lead grade M; a third independent oXo is reported, not keyed. No fourth reader
+on the f.51r images. NOTES "## ELEC-REC", Next updated.
+
+### BAL-65D (Opus, cap 2.5, box 50 min, openapi.bnf.fr <= 4): baluze167-davaux-1637 glossed plain 65 on 168 c438/c440
+BAL-65C's Verdict: "the call rule needs >= 3 glossed plain 65, so it stays M; next: two more glossed plain 65 from the same letters (survey.tsv
+rows 168 f.212 c438/c440, f.158 c330-332)". BAL-65C's method and PREREG exactly, on 168 c438 and c440 only (2400 px, every 65 under a gloss
+zoomed). Add any glossed plain 65 to the pair file and re-run the scorer per the PREREG; L04 pos 0 moves only as the call rule says. NOTES
+"## BAL-65D", gaps + Verdict, gaps_check.
+
+### F3198-72 (Opus, cap 2, box 45 min, openapi.bnf.fr <= 3): fr3198-labbe-1577 f.72 nos.34/35 native view
+F3198-PL's Next: "the 17 Apr pair f.72 nos.34/35 in fr.3198 (own volume, native view for inserted numeral groups, ~USD 1)". Locate f.72's
+canvas with tools/gallica_folio.py (manifest only; openapi.bnf.fr for the image), view at 1000 px then one native region if numeral groups
+appear. Report: are there cipher groups, how many, in which hand, and do they share the target letter's sign set (list signs seen; no
+decoding). No status change unless it is the folder's blocker, which F3198-PL says it is not; dated NOTES section "## F3198-72" and Next.
+
+### JAV-KEY (Opus, cap 1.5, box 30 min, disk only): na-janssens-java-1811 key row 120 regrade
+JAV-200's Next: "key owner's regrade drops/annotates key row 120 (Fin.) as a misread of 420 at 200:119". Apply it the way GAPS3's regrades.tsv
+does (one decision row naming JAV-198 and JAV-200 as witnesses), annotate or retire key row 120 per the folder's convention, then
+`tools/decode_key.py ciphers/na-janssens-java-1811 --check` (update the committed reading only if 120 occurs and the script says it is
+stale). HYPOTHESES.md conflict entry closed with witnesses. NOTES "## JAV-KEY", gaps + Verdict, gaps_check.
