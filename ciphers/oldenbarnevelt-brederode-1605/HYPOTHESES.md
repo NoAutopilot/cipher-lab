@@ -24,3 +24,7 @@ Sonnet call (not told values or conflict). Rule: a side is corrected only if bot
 |---|---|---|---|---|
 | 1619 letter codes lie in alphabetical bands (fit 555, predict 556) | shuffled-band null, 10,000 draws; synthetic power at 30/11 pairs | null p95 0.104 (mean 0.034); power 1.00 | S 0.171 (hit 8/11), p 0.0107 | PASS (M design statement); reverse 0.199 vs p95 0.141 |
 Application to no. 92/187: interval reading only, grade M (`obred187/band/reading_92_187.tsv`); 72/180 one-letter, 37 name codes.
+
+| Hypothesis (OBRED-SEG, 15 Oct 2026, PREREG obred187/PREREG-OBREDSEG.md) | Control | Control number | Target number | Verdict |
+|---|---|---|---|---|
+| no. 92/187 band intervals segment into nl16 Dutch words above chance | synthetic band text at the target's sub-run lengths (20 sims, held-out nl16 file, e=0.25) vs its own shuffled-band null; target vs shuffled-band (200) and order (200) nulls | control beats null 20/20, word precision 0.577, recall 0.590 (interval hit 0.92); ungated e=0.75 (hit 0.71): 18/20, precision 0.538 | I 320.2 vs shuffled-band p95 238.2 (mean 202.0), order p95 232.9 (mean 181.6), p 0.00 both | PASS (M); 20 words of >= 4 letters, all grade M (len>=5 precision 0.61 < 0.80, no S) |

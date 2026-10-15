@@ -1,0 +1,21 @@
+text	run	subrun	span	codes	intervals	word	edge_letters	grade
+92	4	1	3-8	241 97 409 420 108 289	l de r s e lm	lessen	2	M
+92	6	2	1-4	146 110 252 433	fgh e l s	gelt	1	M
+92	10	3	1-5	241 200 50 160 440	l i abcd fgh st	licht	0	M
+92	16	4	1-7	80 457 505 416 425 103 294	de t vxy s s e mn	dvytsen	2	M
+92	28	5	1-5	49 314 30 467 387	abcd n a t pqr	emavs	4	M
+92	36	6	3-7	481 529 433 122 315	tv y s e n	vyten	1	M
+92	36	6	8-13	460 361 130 410 108 330	t pqr e r e no	voeren	2	M
+92	37	7	4-11	410 137 169 218 290 140 322 468	r ef h i m ef n t	regiment	1	M
+92	37	7	12-15	492 340 272 507	vxy pqr lm vxy	volx	1	M
+92	39	8	1-4	119 415 230 139	e rs ikl ef	drie	1	M
+92	39	8	5-11	200 344 316 99 127 411 461	i pqr n de e r t	hondert	2	M
+92	40	9	1-10	339 314 105 129 418 438 40 466 136 321	pqr n e e s st abcd t ef n	ondersaten	3	M
+187	1	10	3-8	289 217 97 108 121 265	lm i de e e l	middel	1	M
+187	1	10	9-12	481 48 313 120	tv abcd n e	vane	0	M
+187	1	10	13-17	34 276 228 40 320	a lm ikl abcd n	allen	1	M
+187	1	10	20-24	433 337 492 110 132	s op vxy e e	sovde	1	M
+187	1	11	1-4	128 329 119 144	e no e ef	ende	1	M
+187	1	12	1-7	114 342 80 193 461 126 409	e pqr de i t e r	dochter	4	M
+187	2	13	1-5	553 349 359 335 105	nopqrstvxyz pqr pqr no e	vrome	2	M
+187	2	13	11-15	450 474 44 142 470	st tv abcd ef tv	staet	0	M

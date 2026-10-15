@@ -2147,3 +2147,53 @@ Read so far: no. 92 and the 187 postscript as band intervals only (M): 72 of 180
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
 - [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
 Verdict: keep going: 3 internal gaps; the 2 Oct 1619 letter (528-530) says Brederode wrote to Maurits in Maurits's cipher and that his own cipher had been in Oldenbarnevelt's hands (M), so the res. 1779 memorie is likely a Maurits-cipher text (KHA A13, research request) and the no. 92 key's last stated home is Oldenbarnevelt's papers; cheapest next: NA 1.01.02 inv. 9459 + secrete resoluties inv. 4562 at Oct 1619 (~$2), and the constrained segmentation (~$3)
+
+## OBRED-SEG (15 Oct 2026, 09:33-09:5x UTC by date -u, account 2, Opus; for LANE DEFAULT-A2-0810-15)
+
+Brief: constrained segmentation of OBRED-BAND's no. 92/187 letter intervals into Dutch words, against a shuffled-band null (>= 200) and a
+synthetic Dutch control at no. 92's length that must segment above gate; grade M unless the control licenses S; never key.tsv. Disk only,
+0 requests.
+
+- Prior-work step: `prior_work.py ... --step-type decode` exit 4 (LEAD = OBRED-OCT2's target-level claim, a 1619 archive lookup; LOOK;
+  2 UNCHECKED; 2 UNCHECKED-NET); the four non-net rows recorded CLEAR (adhoc-2f5f27). No earlier segmentation.
+- PREREG `obred187/PREREG-OBREDSEG.md` pushed in its own commit (4f729ee4c) before any statistic; it discloses that this worker had
+  guessed "gelt" for 146 110 252 433 by eye beforehand. Corpus: nl16 (1569-1589 prose) -- no nl17 exists; era-near (16-36 years before
+  1605), register-mismatched (prose, not letters). Script `obred187/seg/seg.py` (`--check`), outputs `seg_gate.json`, `seg_92_187.tsv`.
+- Decoder: DP per letter sub-run (13 sub-runs, 143 letter tokens; runs split at name codes 588-751), nl16 unigram cost, +1.0 per letter
+  one alphabet step outside its interval, 4.0 per unknown letter. Statistic I = sum log2(23/width) over tokens inside recovered words
+  (lexicon words >= 4 letters).
+- **Synthetic control (registered gate at e = 0.25): PASS.** 20 sims, held-out nl16 file (coor001boev01), alphabetical list 1..587,
+  41 pool pairs, the target's sub-run lengths: beats its own shuffled-band null 20/20, word precision 0.577 (n 487), recall 0.590,
+  precision for >= 5 letters 0.610, interval hit 0.92. e = 0: 20/20, precision 0.530. **Not registered, added after the registered run
+  to bracket the real held-out interval hit (0.73-0.80; rule 3 error-bracketing clause):** e = 0.5 (hit 0.81) 20/20, precision 0.539;
+  e = 0.75 (hit 0.71) 18/20, precision 0.538. So about half the words such a search returns are right, at every error level tried.
+- **Target: PASS both nulls.** I 320.2 vs shuffled-band p95 238.2 (mean 202.0) and order-shuffle p95 232.9 (mean 181.6), p 0.00 for
+  both (200 draws each). 20 words of >= 4 letters cover 112 of 143 letter tokens. Grade M for every word: the S condition (control
+  precision for >= 5-letter words >= 0.80) fails at 0.61.
+- Words returned (M; spans per `seg_92_187.tsv`; control says about half are right): run 4 "lessen" (6 of 8), run 6 "gelt", run 10
+  "licht" (5 of 8), run 16 "dvytsen", run 28 "emavs", run 36 "vyten" + "voeren", run 37 "regiment" + "volx", run 39 "drie" + "hondert",
+  run 40 "ondersaten"; 187 postscript "middel", "vane", "allen", "sovde", "ende", "dochter", "vrome", "staet". Several fit the clear
+  context: "noch [gelt] van de zijde van 611 ende 612 dese somer sal gefourneert werden"; "dat hij [drie hondert] uyt sijn voornempste
+  [ondersaten] lichten mach"; run 10 "om die [licht...] te beginnen" (licht- + 3 unread tokens, possibly a levy word); these are
+  leads at M, not a reading, and no sense of the letter is claimed.
+- Where it was not found, and the limits: no word for runs 4 positions 1-2 (578, 337), run 10 positions 6-8 (210 300 217), run 36
+  positions 1-2, and parts of the 187 postscript; "emavs", "dvytsen", "sovde" are likely wrong segmentations or wrong band edges.
+  One lexicon (nl16, prose), unigram only, no bigram/context model; the 1619 list is still assumed to be the 1604-05 list.
+
+## Remaining gaps (OBRED-SEG, 15 Oct 2026)
+Read so far: no. 92 and the 187 postscript as band intervals (OBRED-BAND; 72 of 180 one-letter) and, by constrained segmentation, 20 nl16 words of >= 4 letters covering 112 of 143 letter tokens, all M (OBRED-SEG: target I 320 vs shuffled-band p95 238 and order p95 233; synthetic control beats its null 20/20 with word precision 0.58, 0.54 at the real error level); 37 name codes unread; inv. 6019 scans 555-556 carry 81 groups (58 H-read) with 45 C-graded period glosses
+- no. 92 and the 187 postscript beyond M word leads - blocker: not-attempted; segmentation passes its control but precision is ~0.55, so no word reaches S; next: a context-scored pass (bigram/clear-context model from the letter's own clear prose plus nl16) on the 20 leads with --try per code, each accepted value re-tested at every occurrence (decode_key.py --try), PREREG with the same synthetic control, graded M, ~$3
+- the 1619 key, the deciphered memorie and the "instructie ende sleutel" - blocker: not-attempted; not on inv. 6019 515-565 (OBRED-KEYHUNT, OBRED-549, OBRED-552, OBRED-MEM); next: the 2 Oct 1619 letter's home and the later liassen (OBRED-OCT2 in progress), ~$2.5
+- the later liassen NA 1.01.02 inv. 6020-6024 and the 6019 stride-1 fill after 565 - blocker: not-attempted; outside this brief; next: a stride-3 screen of inv. 6020 (~$4)
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A): no numeral block, no Brederode, Stettin or Heidelberg heading (M)
+
+## Escalation (OBRED-SEG, 15 Oct 2026)
+- [x] siblings: scan 187 shares 26 values with no. 92 (OBRED-187); inv. 6019 scans 555-556 (Oggersheim, 14 Oct 1619) share 42 values with no. 92/187, clearing the shuffled-code control (OBRED-556); the letter's start (554) carries no groups (OBRED-552)
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187); the 1619 letter's prose and margin summaries read in part (OBRED-556); 515-554 and 558-565 seen by eye (OBRED-552, OBRED-549, OBRED-KEYHUNT, OBRED-MEM)
+- [ ] known-keys: the 10 Aug 1598 Van Aerssen slip, Buzanval inv. 2028, DECODE 1600s and Palatine/Hessian keys screened (R10-OBRED98, R9-OBRED4, OLD-DKEY, R8-OBRED2, R9-OBRED3); the 1619 "instructie ende sleutel" is not on inv. 6019 515-565 (OBRED-KEYHUNT, OBRED-MEM); next: the 2 Oct 1619 letter's home (OBRED-OCT2), ~$2.5
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII and NR 4 carry no key or decipherment note (OBRED-DP, OBRED-KEYHUNT)
+- [ ] key-rebuild: band intervals pass a held-out leaf check (OBRED-BAND) and segment into nl16 words above both nulls with a passing synthetic control, 20 words M (OBRED-SEG); next: a context-scored --try pass on the word leads with the same control, ~$3
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
+- [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
+Verdict: keep going: 3 internal gaps; band intervals segment into 20 nl16 word leads above shuffled-band and order nulls (I 320 vs p95 238/233) with a synthetic control that passes (precision 0.58, 0.54 at the real error level), all M; cheapest next: a context-scored --try pass on the word leads with the same control (~$3)

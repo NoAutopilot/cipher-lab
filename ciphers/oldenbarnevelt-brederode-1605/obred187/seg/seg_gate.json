@@ -1,0 +1,72 @@
+{
+ "S_condition": false,
+ "control": {
+  "e0.0": {
+   "beat_null_share": 1.0,
+   "interval_hit": 1.0,
+   "n_recovered": 502,
+   "n_recovered_len5": 335,
+   "null_draws": 50,
+   "precision": 0.5299,
+   "precision_len5": 0.5313,
+   "recall": 0.5821,
+   "sims": 20
+  },
+  "e0.25": {
+   "beat_null_share": 1.0,
+   "interval_hit": 0.9191,
+   "n_recovered": 487,
+   "n_recovered_len5": 313,
+   "null_draws": 50,
+   "precision": 0.577,
+   "precision_len5": 0.6102,
+   "recall": 0.5903,
+   "sims": 20
+  },
+  "e0.5": {
+   "beat_null_share": 1.0,
+   "interval_hit": 0.8084,
+   "n_recovered": 495,
+   "n_recovered_len5": 322,
+   "null_draws": 50,
+   "precision": 0.5394,
+   "precision_len5": 0.5404,
+   "recall": 0.5633,
+   "sims": 20
+  },
+  "e0.75": {
+   "beat_null_share": 0.9,
+   "interval_hit": 0.7094,
+   "n_recovered": 465,
+   "n_recovered_len5": 308,
+   "null_draws": 50,
+   "precision": 0.5376,
+   "precision_len5": 0.5617,
+   "recall": 0.547,
+   "sims": 20
+  },
+  "gate": "PASS",
+  "note": "gate on e0.25 only (PREREG); e0.5/e0.75 added after the registered run, ungated, to bracket the real held-out hit 0.73-0.80"
+ },
+ "decoder": {
+  "edge": 1.0,
+  "min_word": 4,
+  "unk": 4.0
+ },
+ "letter_tokens": 143,
+ "lexicon": "nl16 (1569-1589 prose), >= 2 occurrences, folded",
+ "subruns": 13,
+ "target": {
+  "I": 320.208,
+  "draws": 200,
+  "nullA_mean": 201.9837,
+  "nullA_p95": 238.2444,
+  "nullB_mean": 181.5599,
+  "nullB_p95": 232.8623,
+  "pA": 0.0,
+  "pB": 0.0,
+  "pass": true
+ },
+ "tokens_in_words": 112,
+ "words_recovered": 20
+}
