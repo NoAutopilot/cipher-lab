@@ -421,3 +421,44 @@ Steps, in order:
    on every touched file; commit by explicit path; pull --rebase; push to main; ROOM.md done line: verdict first, then recall/precision/F1 vs
    null p99, then the f.191r strict run before/after, then (b). Stop. Report what was found and where it was not found; do not classify novelty,
    do not edit key.tsv, do not touch status.json, do not start VIV-F191C or any owner page.
+
+## JOB VIV-GSPLIT2 (wave 8, 15 Oct 2026 04:5x UTC by date -u; account-4 parent) -- the g-split re-run at N_f >= 12 (new material: f.202r, f.211v)
+
+Model: Opus 5.5. Cap USD 6 (Opus floor 2.5). Box 60 minutes from the claim; stop before any unit that would cross 80% of cap or box.
+Why: VIV-GSPLIT (NOTES, 01:59 UTC) passed its registered gate at N_f = 6 only (every fold untestable alone) and its own next line asks for
+N_f >= 12 before any key row. Since then VIV-67C registered f.202r (4 more truth-f positions under label g, pooled 6 -> 10) and VIV-70C2
+registered f.211v (its label table: check it for label-g truth-f positions). This is new material, so a re-run of the same registered
+instrument is licensed (CLAUDE.md rule 3's third-attempt clause does not apply to new material). Measurement only: no key.tsv, reading or
+status.json edit; a verifier decides any key row.
+Steps: 1. room --start, claim; PREREG-VIVGSPLIT2.md pushed before any tile is cut: same instrument and gates as PREREG-VIVGSPLIT (1-NN over
+glyph_atlas features, leave-one-leaf-out now over FIVE leaves where tiles exist, pooled f recall >= 0.60 and precision >= 0.60 and F1 > the
+99th pct of 200 label-shuffled nulls, per-fold spread reported, a fold with N_f < 4 untestable alone), plus the registered minimum N_f >= 12
+before the f.191r step runs at all. 2. Material: the VIV-GSPLIT material.tsv (6 f / 34 r tiles) + the f.202r label-g positions from
+tx/viv67c (its truth item vivonne1573-f202r-dev: 4 truth-f, up to 50 truth-r, cap r at 20 per leaf by seed 20261015) + f.211v's if any +
+the 5 untiled label-g f anchors of VIV-FKEY hand-cut by eye on the line crops (one Opus look per line crop, boxes logged in
+tx/vivgsplit2/boxes_handcut.tsv with a whole/unsure/none verdict, only `whole` used). Crops: regenerate f.202r and f.211v line crops with
+the committed commands in NOTES "VIV-67C" / "VIV-70C2" (openapi.bnf.fr: take/release lines, one at a time >= 3 s, at most 4 requests in
+the job; disk first). 3. Run `tx/vivgsplit/gsplit.py` (extend it in place, never a private copy) with the enlarged material; report per
+fold and pooled with the null. 4. If N_f >= 12 AND the gate PASSes: f.191r step exactly as VIV-GSPLIT Addendum A (28 tileable g tiles,
+plus any newly tileable ones; `f191.py --override ... --tag gsplit2 --stats`, (a) strict and (b) letter-S variants as registered there).
+Otherwise: log the numbers and verdict "untested at N_f = <n>" and stop. 5. Two Opus eye checks at most (contact sheets of predicted-f and
+predicted-r), no subagent writes a file. Price: vision calls: 3 x USD 0.5 = 1.5 (two contact sheets + the hand-cut look); Opus floor 2.5;
+cap 6. 6. NOTES "## VIV-GSPLIT2 (<date -u>)", HYPOTHESES.md row with the control, requests per host, `f191.py --check` passes, shrink
+guard, commit by path, pull --rebase, push; done line verdict first (N_f, recall/precision/F1 vs null p99, f.191r strict run before/after).
+
+## JOB VIV-F191D (wave 8, 15 Oct 2026 04:5x UTC by date -u; account-4 parent) -- a 5-pass reconciliation rule for f.191r L22-L36, registered then run
+
+Model: Opus 5.5. Cap USD 3 (Opus floor 2.5). Box 45 minutes from the claim. Disk only: no network, no readers.
+Why: VIV-F191C (NOTES, 02:2x UTC) added blind pass E on L22-L36 (drift check 15/15; noisier than A-C: agreement 0.24 vs 0.12-0.17); as a
+fourth usable vote on the 123 flagged columns it settles 52 the same way, flips 7 (five via the 3/z RULES pair) and leaves 64 flagged. The
+reconciliation in tx/viv63_f191/f191.py is 3-of-4 over A-D; D is the drifted pass on these lines.
+Steps: 1. room --start, claim; PREREG-VIVF191D.md pushed before any run: the rule (on L22-L36 only: votes A, B, C, E, with D kept but E
+weighted no higher than D -- the registered rule is "settled when >= 3 of the 5 agree; a 2-2-1 falls to the existing decide() on A-D with
+E as tie-breaker only when it agrees with C"; write the exact decision table), the gates (longest all-H run on f.191r and V_strict top-1/
+top-3 with the 200-shuffle null and the same controls C1/C2, before = committed rec.tsv, after = the 5-pass build; the decision stays
+s.5-of-PREREG-VIVPACKET3's: a stretch >= 42 all-H with no liberty goes to a verifier, else logged), and the no-liberty clause (no position
+may be settled by E alone). 2. Implement as an option on f191.py (`--five-pass`, output rec_5pass.tsv / decode_5pass.tsv / stats_5pass.json,
+rec.tsv and decode.tsv untouched, `--check` still passes). 3. Run; report before/after; count positions settled, flipped, still flagged, and
+list every flip with its five votes. 4. NOTES "## VIV-F191D (<date -u>)", HYPOTHESES.md row (control = the shuffle null + C1/C2), shrink
+guard, commit by path, pull --rebase, push; done line: longest all-H run before/after first, then V_strict, then flips. Price: vision calls:
+0 x USD 0 = 0. No key, reading or status.json edit; do not start any other job.

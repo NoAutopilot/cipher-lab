@@ -50,3 +50,15 @@ return text only, the worker writes `tx/viv63_f191/f191r_passE.tsv` (row, codes;
 flagged positions on those lines where E agrees with the plurality vs with the minority) -- do NOT change f191.py's reconciliation (3-of-4)
 or rec.tsv; the parent decides a 5-pass rule in a separate PREREG. 6. NOTES.md "## VIV-F191C (<date -u>)", requests per host, cost not
 visible; done line: drift check x/15 first, then the agreement numbers.
+
+## JOB SORTER-PILES-ANSWERED (queued 15 Oct 2026 04:5x UTC by the account-4 parent; Opus 5.5; cap USD 4; box 60 minutes; Price: vision calls: 2 x USD 0.5 = 1)
+Why: SORTER-FIX-R12-R16 (NOTES "## SORTER-FIX-R12-R16", 03:4x UTC) passed every structural gate but its own eye found about 15 of the 37 piles of
+tx/sorter_f191b still mixing shapes, because `--piles-from` keeps "kept" rows -- tiles the owner never touched, left in their reader-label pile by
+default -- as if the owner had confirmed them. R13 means a pile the person formed, not one he did not object to.
+Do: 1. `tools/sign_sorter.py --piles-from` gains `--answered-only`: a settled row counts only if the person MOVED it, created its pile, or
+checked it ("checked" collection; a kept row with no checked record is not an answer); certain-answer tiles (`--certain`) still join a
+pile the person formed. Offline test. 2. Re-render tx/sorter_f191b with --answered-only (same inputs as the SORTER-FIX command in NOTES);
+build check, box check, preflight --owner-page pasted. 3. Eye check per pile on the two contact sheets (piles_0/1.png regenerated): count
+piles that hold one shape vs mixed, before (SORTER-FIX's render) and after; list the mixed ones by pile id with one word each. 4. NOT
+PUBLISHED: NOTES "## SORTER-PILES-ANSWERED (<date -u>)" with the counts and the command; the account-4 parent decides. Report to LANE
+VIV-KEYSTONE (account 4); the running account ledgers. No key, reading or status.json edit.
