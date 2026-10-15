@@ -64,6 +64,9 @@ MONL_VB = {('L10', 29): ('K04', 'K12')}
 # MONL-ADH (15 Oct 2026): two value-blind sorts of 14 c268 L11-L15 lead tokens under PREREG-MONL-ADH.md part 2 (0 of 7 c172 controls
 # moved); both sorts agree, neither conf L, only on this one (sort/adh/reconciled.tsv).
 MONL_ADH = {('L11', 23): ('K04', 'K12')}
+# MONL-L16 (15 Oct 2026): eye re-check of L15:18 at native resolution (images/scratch268d, band 2): loop centred on the top of the
+# stem = K11, as pass A and both MONL-ADH sorts; reverts MONL-L11's blind eye call K62. Not blind to the clear text (the gap named it).
+MONL_L16 = {('L15', 18): ('K62', 'K11')}
 
 
 def main():
@@ -99,7 +102,9 @@ def main():
     # MONL-C268B (14 Oct 2026): c268 L06-L10 from two blind passes (passes/c268b_passA.tsv, c268b_passB.tsv) reconciled from
     # the native line crops (passes/c268b_reconciled.tsv; conf H where both passes agree and the crop holds it, M otherwise).
     # MONL-L11 (15 Oct 2026): c268 L11-L15 the same way (passes/c268c_reconciled.tsv, written by passes/c268c_reconcile.py).
-    for rec, rtag in ((HERE / 'passes' / 'c268b_reconciled.tsv', 'c268b-recon'), (HERE / 'passes' / 'c268c_reconciled.tsv', 'c268c-recon')):
+    # MONL-L16 (15 Oct 2026): c268 L16-L20 the same way (passes/c268d_reconciled.tsv, written by passes/c268d_reconcile.py).
+    for rec, rtag in ((HERE / 'passes' / 'c268b_reconciled.tsv', 'c268b-recon'), (HERE / 'passes' / 'c268c_reconciled.tsv', 'c268c-recon'),
+                      (HERE / 'passes' / 'c268d_reconciled.tsv', 'c268d-recon')):
       if rec.exists():
           bl = {}
           for ln in rec.read_text().splitlines()[1:]:
@@ -108,8 +113,8 @@ def main():
           for lab in sorted(bl):
               for f in bl[lab]:
                   agree += f[3] == 'H'
-                  vb = MONL_VB.get((f[0], int(f[1]))) or MONL_ADH.get((f[0], int(f[1])))
-                  vtag = 'monl-adh' if (f[0], int(f[1])) in MONL_ADH else 'monl-vb'
+                  vb = MONL_VB.get((f[0], int(f[1]))) or MONL_ADH.get((f[0], int(f[1]))) or MONL_L16.get((f[0], int(f[1])))
+                  vtag = 'monl-adh' if (f[0], int(f[1])) in MONL_ADH else 'monl-l16' if (f[0], int(f[1])) in MONL_L16 else 'monl-vb'
                   if vb:
                       assert f[2] == vb[0], (f[0], f[1], f[2])
                       f[2], f[3] = vb[1], 'M'
@@ -144,7 +149,7 @@ def main():
                    c270_shuffle_mean=round(sum(ctl) / len(ctl) / len(dec), 4), c270_shuffle_p95=round(ctl[189] / len(dec), 4),
                    c270_shuffle_max=round(ctl[-1] / len(dec), 4))
     outs = {HERE / 'ciphertext_c268.tsv': 'line\tpos\tsign\tconf\tpass_a\trelabel\n' + ''.join(rows),
-            HERE / 'reading_c268.txt': '# c268 (f.138) cipher lines 1-15 (L06-L10 MONL-C268B, L11-L15 MONL-L11), Tomokiyo Monluc Cipher 1 table, pass A base, 10 C-curl tokens relabelled K38 (MONLUC-RELABEL), 4 K12->K04 (MONL-SORT less 4 MONL-EYE reverts) and 4 K34->K53 (MONL-SORT), 1 K04->K12 each by MONL-VB and MONL-ADH; _ = unkeyed sign;'
+            HERE / 'reading_c268.txt': '# c268 (f.138) cipher lines 1-20 (L06-L10 MONL-C268B, L11-L15 MONL-L11, L16-L20 MONL-L16), Tomokiyo Monluc Cipher 1 table, pass A base, 10 C-curl tokens relabelled K38 (MONLUC-RELABEL), 4 K12->K04 (MONL-SORT less 4 MONL-EYE reverts) and 4 K34->K53 (MONL-SORT), 1 K04->K12 each by MONL-VB and MONL-ADH, 1 K62->K11 by MONL-L16; _ = unkeyed sign;'
                                        ' W: words dropped. Not graded: see NOTES.md.\n' + '\n'.join(lines) + '\n',
             HERE / 'results_c268.json': json.dumps(res, indent=1, default=str) + '\n'}
     if a.check:

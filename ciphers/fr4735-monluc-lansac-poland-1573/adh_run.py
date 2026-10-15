@@ -29,6 +29,11 @@ def base_tokens():
                 out.append({'line': 'L11', 'pos': 6 + k, 'sign': s, 'conf': 'M', 'value': A.fold(v) if v else None})
         elif (t['line'], t['pos']) == ('L11', 23) and t['sign'] == 'K12':  # the MONL-ADH sort relabel came after this run: pass A's K04
             out.append({**t, 'sign': 'K04', 'value': 'd'})
+        elif int(t['line'][1:]) > 15:  # MONL-L16 (15 Oct 2026): L16-L20 came after this run; the run is on L01-L15
+            continue
+        elif (t['line'], t['pos']) == ('L15', 18) and t['sign'] == 'K11':  # MONL-L16 eye re-check came after this run: MONL-L11's K62
+            v = {r[0]: r[2] for r in (l.rstrip('\n').split('\t') for l in list(open(HERE / 'key.tsv', encoding='utf-8'))[1:])}.get('K62')
+            out.append({**t, 'sign': 'K62', 'value': A.fold(v) if v else None})
         else:
             out.append(t)
     got = [t['sign'] for t in out if t['line'] == 'L11' and 6 <= t['pos'] <= 10]

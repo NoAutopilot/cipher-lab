@@ -1,0 +1,166 @@
+line	pos	sign	conf	pass_a	pass_b	how
+L16	1	K36	H	K36	K36	both passes
+L16	2	K05	H	K05	K05	both passes
+L16	3	K07	H	K07	K07	both passes
+L16	4	K04	H	K04	K04	both passes
+L16	5	K36	H	K36	K36	both passes
+L16	6	K04	H	K04	K04	both passes
+L16	7	K25	H	K25	K25	both passes
+L16	8	K05	H	K05	K05	both passes
+L16	9	K11	H	K11	K11	both passes
+L16	10	K33	H	K33	K33	both passes
+L16	11	K04	M	K04	K12	eye: straight stem after m; = A (B K12)
+L16	12	K14	H	K14	K14	both passes
+L16	13	K05	H	K05	K05	both passes
+L16	14	K29	H	K29	K29	both passes
+L16	15	K07	H	K07	K07	both passes
+L16	16	K04	H	K04	K04	both passes
+L16	17	K05	H	K05	K05	both passes
+L16	18	K19	H	K19	K19	both passes
+L16	19	K36	H	K36	K36	both passes
+L16	20	K08	H	K08	K08	both passes
+L16	21	K33	H	K33	K33	both passes
+L16	22	K16	H	K16	K16	both passes
+L16	23	?x[comma]	M	?x[comma]	-	A/B split, crop does not settle it: pass A
+L16	24	K11	H	K11	K11	both passes
+L16	25	K29	H	K29	K29	both passes
+L16	26	K14	H	K14	K14	both passes
+L16	27	K15	H	K15	K15	both passes
+L16	28	K39	M	K39	K19	eye: y-form with long tail; = A (B K19)
+L16	29	K09	H	K09	K09	both passes
+L16	30	K10	H	K10	K10	both passes
+L16	31	K04	H	K04	K04	both passes
+L16	32	K05	H	K05	K05	both passes
+L16	33	?x[e-like]	M	?x[e-like]	-	A/B split, crop does not settle it: pass A
+L16	34	?x[dot]	M	?x[dot]	-	A/B split, crop does not settle it: pass A
+L16	35	K05	H	K05	K05	both passes
+L17	1	K33	H	K33	K33	both passes
+L17	2	K65	H	K65	K65	both passes
+L17	3	K01	H	K01	K01	both passes
+L17	4	K01	H	K01	K01	both passes
+L17	5	K25	H	K25	K25	both passes
+L17	6	K26	H	K26	K26	both passes
+L17	7	K14	H	K14	K14	both passes
+L17	8	K01	H	K01	K01	both passes
+L17	9	K37	H	K37	K37	both passes
+L17	10	K10	H	K10	K10	both passes
+L17	11	K05	H	K05	K05	both passes
+L17	12	K06	H	K06	K06	both passes
+L17	13	K29	H	K29	K29	both passes
+L17	14	K10	H	K10	K10	both passes
+L17	15	?x[epsilon]	M	?x[epsilon-like_open_3]	K15	eye: open epsilon, not c; = A (folder label ?x[epsilon], L13:19); B K15
+L17	16	K04	H	K04	K04	both passes
+L17	17	K26	H	K26	K26	both passes
+L17	18	W:Cur	H	W:Cur	W:Cur	both passes
+L17	19	W:apuril	H	W:apuril	W:apuril	both passes
+L17	20	K04	H	K04	K04	both passes
+L17	21	K05	H	K05	K05	both passes
+L17	22	K07	H	K07	K07	both passes
+L17	23	K33	H	K33	K33	both passes
+L17	24	?double_slash	H	?double_slash	?double_slash	both passes
+L17	25	K09	H	K09	K09	both passes
+L17	26	K01	H	K01	K01	both passes
+L17	27	K38	M	K38	-	eye: z-like sign inside a large curl = C-curl K38; = A (B K54 K63)
+L17	28	K29	H	K29	K29	both passes
+L17	29	K33	H	K33	K33	both passes
+L18	1	K04	H	K04	K04	both passes
+L18	2	K14	H	K14	K14	both passes
+L18	3	K05	H	K05	K05	both passes
+L18	4	K04	H	K04	K04	both passes
+L18	5	K41	H	K41	K41	both passes
+L18	6	K29	H	K29	K29	both passes
+L18	7	K07	H	K07	K07	both passes
+L18	8	K36	M	K36	K14	eye: stem with diamond foot; = A (B K14)
+L18	9	K09	H	K09	K09	both passes
+L18	10	?x[small_z]	M	?x[small_z]	K13	A/B split, crop does not settle it: pass A
+L18	11	W:Juillet	H	W:Juillet	W:Juillet	both passes
+L18	12	K30	H	K30	K30	both passes
+L18	13	K42	H	K42	K42	both passes
+L18	14	K50	H	K50	K50	both passes
+L18	15	W:Sepbre	M	K27 K15 K08 W:bre	K27 K15 K29 ?x[b_with_superscript_re]	eye: '8cp' with superscript 'bre' is the clear-written word Sep^bre (the '8' an S), after W:Juillet; A K27 K15 K08 W:bre, B K27 K15 K29 ?x[b with superscript re]
+L18	16	K05	H	K05	K05	both passes
+L18	17	?x[looped_c]	H	?x[looped_c]	?x[looped_c]	both passes
+L18	18	K04	H	K04	K04	both passes
+L18	19	K26	H	K26	K26	both passes
+L18	20	K37	H	K37	K37	both passes
+L18	21	?double_slash	H	?double_slash	?double_slash	both passes
+L18	22	K01	M	K01	K22	eye: plain round g, no bar; = A (B K22)
+L18	23	K34	H	K34	K34	both passes
+L18	24	K15	H	K15	K15	both passes
+L18	25	K39	H	K39	K39	both passes
+L18	26	K09	H	K09	K09	both passes
+L18	27	K10	H	K10	K10	both passes
+L18	28	K26	H	K26	K26	both passes
+L18	29	K04	H	K04	K04	both passes
+L19	1	K41	H	K41	K41	both passes
+L19	2	K04	H	K04	K04	both passes
+L19	3	K19	H	K19	K19	both passes
+L19	4	K09	H	K09	K09	both passes
+L19	5	K26	H	K26	K26	both passes
+L19	6	K12	H	K12	K12	both passes
+L19	7	K25	H	K25	K25	both passes
+L19	8	K36	M	K14	K36	eye: stem with diamond foot; = B (A K14)
+L19	9	K01	H	K01	K01	both passes
+L19	10	K02	H	K02	K02	both passes
+L19	11	K09	H	K09	K09	both passes
+L19	12	K26	H	K26	K26	both passes
+L19	13	K04	H	K04	K04	both passes
+L19	14	K19	H	K19	K19	both passes
+L19	15	K33	H	K33	K33	both passes
+L19	16	K38	H	K38	K38	both passes
+L19	17	K14	M	K17	K14	eye: b-form; = B (A K17)
+L19	18	K14	H	K14	K14	both passes
+L19	19	K39	H	K39	K39	both passes
+L19	20	K09	H	K09	K09	both passes
+L19	21	K37	H	K37	K37	both passes
+L19	22	K09	H	K09	K09	both passes
+L19	23	K05	M	K05	K37	eye: r-form; = A (B K37)
+L19	24	K01	H	K01	K01	both passes
+L19	25	K67	H	K67	K67	both passes
+L19	26	K26	H	K26	K26	both passes
+L19	27	K19	H	K19	K19	both passes
+L19	28	K36	M	K14	K36	eye: stem with diamond foot; = B (A K14)
+L19	29	K05	H	K05	K05	both passes
+L19	30	K16	H	K16	K16	both passes
+L19	31	K15	H	K15	K15	both passes
+L19	32	K38	H	K38	K38	both passes
+L19	33	K05	H	K05	K05	both passes
+L19	34	K14	H	K14	K14	both passes
+L19	35	K09	H	K09	K09	both passes
+L20	1	K10	H	K10	K10	both passes
+L20	2	K41	H	K41	K41	both passes
+L20	3	K36	H	K36	K36	both passes
+L20	4	K01	M	K01	K12	A/B split, crop does not settle it: pass A
+L20	5	K09	H	K09	K09	both passes
+L20	6	K37	H	K37	K37	both passes
+L20	7	K33	H	K33	K33	both passes
+L20	8	K04	H	K04	K04	both passes
+L20	9	K01	M	K01	K12	A/B split, crop does not settle it: pass A
+L20	10	K10	H	K10	K10	both passes
+L20	11	K09	H	K09	K09	both passes
+L20	12	K26	H	K26	K26	both passes
+L20	13	K45	M	K45	K39	eye: small v/gamma without long tail; = A (B K39)
+L20	14	K37	H	K37	K37	both passes
+L20	15	K09	H	K09	K09	both passes
+L20	16	K10	H	K10	K10	both passes
+L20	17	K05	H	K05	K05	both passes
+L20	18	K14	H	K14	K14	both passes
+L20	19	K07	H	K07	K07	both passes
+L20	20	K05	H	K05	K05	both passes
+L20	21	K04	M	K01	K04	eye: straight stem; = B (A K01)
+L20	22	K14	H	K14	K14	both passes
+L20	23	K04	H	K04	K04	both passes
+L20	24	K26	H	K26	K26	both passes
+L20	25	K02	H	K02	K02	both passes
+L20	26	K33	H	K33	K33	both passes
+L20	27	K04	H	K04	K04	both passes
+L20	28	K05	H	K05	K05	both passes
+L20	29	K62	M	K62	K11	eye: bold cross with a flag to the upper right; = A (B K11)
+L20	30	K38	M	K38	?x[large_arc_enclosing_a_small_3]	eye: small z inside a large curl = C-curl K38; = A (B ?x[large arc enclosing a small 3])
+L20	31	K26	H	K26	K26	both passes
+L20	32	K12	H	K12	K12	both passes
+L20	33	K04	H	K04	K04	both passes
+L20	34	K05	H	K05	K05	both passes
+L20	35	K62	H	K62	K62	both passes
+L20	36	K26	H	K26	K26	both passes
+L20	37	K04	H	K04	K04	both passes

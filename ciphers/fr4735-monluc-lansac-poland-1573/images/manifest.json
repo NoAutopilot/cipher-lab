@@ -678,5 +678,15 @@
   "crops": "images/scratch268c/l11/c268c_L11-L15_s1/s2.jpg (untracked) = c268 L11-L15 (bands 6-10 of 12; bands 1-5 reproduce MONL-C268B's L06-L10 centres 110/217/323/425/529 vs 109/217/322/426/528); segments x 0-1700 and 1400-3100 after a -3.25 deg deskew",
   "regen": "sh regen_monll11.sh",
   "requests": "openapi.bnf.fr 2 (region 600,2600,3100,820 discarded: L10 sat cut at its top edge after deskew, and the full-height region lets bands 1-5 be matched to MONL-C268B; this region)"
+ },
+ "monll16": {
+  "date": "15 Oct 2026",
+  "job": "MONL-L16",
+  "source_url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060724s/f268/600,2950,3100,1000/max/0/default.jpg",
+  "source_file": "images/scratch268d/src_c268_600_2950_3100_1000.jpg (untracked)",
+  "size": 448153,
+  "sha1": "39ccaa012dbd2f95f6a34c77a31823b70ef13d6f",
+  "crops": "images/scratch268d/l16/c268d_L16-L20_s1/s2.jpg (untracked) = c268 L16-L20 (bands 3-7 of 9; band 1 = L14 by its ink blot, band 2 = L15 by its '//'); deskew -3.10 deg; centres 72 216 310 415 512 658 761 880 979",
+  "regen": "sh regen_monll16.sh"
  }
 }
