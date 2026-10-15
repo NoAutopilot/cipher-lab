@@ -154,7 +154,7 @@ numeral units are the pair+letter / number+letter system (by eye, M), unit count
 it per pass: 2 reads + 1 reconciliation per block at USD 1.4). No decode, no key, no reading. NOTES.md "## HEID-1621J (<date -u>)" ending in
 the next row and the projected pooled N if every located block is transcribed.
 
-## JOB OUT-CHECK-NA1621 (account 2; Opus 5.5; cap USD 2; box 40 minutes; www.nationaalarchief.nl <= 6, no other network; Price: vision calls: 0 x USD 0 = 0)
+## JOB OUT-CHECK-NA1621 (account 2; Opus 5.5; cap USD 2.5; box 40 minutes; www.nationaalarchief.nl <= 6, no other network; Price: vision calls: 0 x USD 0 = 0)
 Gate-7 pre-send fact check (CLAUDE.md Outreach (7)) of `ciphers/brederode-heidelberg-1621/REQUEST.md`, the Nationaal Archief reproduction
 request for NA 1.01.02 inv. 6056, 6055 and 12578.1 drafted by HEID-1621I (a different session from this one -- never the drafter). Read the
 draft against every file and page it cites: the NA item pages for 6021 (control, must read digitised), 6056, 6055, 12578.1 (physical only),
