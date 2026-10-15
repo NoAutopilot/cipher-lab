@@ -1876,3 +1876,55 @@ Read so far: unmeasured for no. 92 and 187 (nothing applied to them); inv. 6019 
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
 - [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
 Verdict: keep going: 3 internal gaps; the 1619 glossed pairs pass their per-unit gate (code value rises with gloss letter, rho 0.96) but decode_key --try has no power at this key density (0/7 on the glossed text itself), so nothing is applied to no. 92/187; cheapest next: inv. 6019 scans 549-551 for the 8 Oct 1619 key enclosure (~$1.5, OBRED-552), then a band-interval decode with a held-out leaf check (~$3)
+
+## OBRED-549 (15 Oct 2026, 08:42-08:4x UTC by date -u, account 2, Opus; for LANE DEFAULT-A2-0810-15)
+
+Brief: NL-HaNA 1.01.02 inv. 6019 scans 549-551 (walk back <= 4 more only if 549 is still inside the 8 Oct 1619 letter) for the "instructie
+ende sleutel" the Heidelberg letter of 8 Oct 1619 says was sent with the reformed cipher (OBRED-552). Key leaf -> key_6019.tsv and a
+known-answer test against ciphertext_556.tsv's 45 C glosses; no key leaf -> say what the scans are and stop.
+
+- Prior-work step: `prior_work.py oldenbarnevelt-brederode-1605 --item-spec 'NL-HaNA 1.01.02 inv. 6019 scans 549-551 ...' --step-type read`
+  exit 4: 1 LEAD (this job's own claim), 1 LOOK (the target-level no. 92 crop), 2 UNCHECKED, 2 UNCHECKED-NET; the four non-net rows recorded
+  CLEAR in `prior-work.tsv` (adhoc-f826a0). Check 1: OBRED-6019 saw 550 at sheet size, stride 3 ("letter opening, Oct 1619", no numeral
+  block); no earlier pass read 549 or 551.
+- PREREG addendum `obred187/PREREG-OBRED549.md` pushed in its own commit (99e04076e) before any fetch.
+- Requests: `service.archief.nl` **4** (METS + scans 549, 550, 551 at 5000 px), all HTTP 200, >= 3 s apart (`screen_tools/na_fetch.py`
+  pause raised from 2.1 to 3.1 s for the shared-host rule); NA take/release in ROOM.md. No image committed: sha1s in `images/manifest.json`
+  (`obred_549`); `screen_tools/regen_549.sh` re-derives the scans and the two eye crops. No subagent call (nothing to transcribe).
+- **What 549-551 are (by eye, grade M, this worker's read only, quarter-size views plus two full-resolution crops).** None carries a numeral
+  group, numeral table, alphabet, name list, interlinear gloss or anything laid out as a key or an instruction.
+  - 549 left page: the **end of a French piece** in a cursive hand, one paragraph: "Ce partant puis que par les raisons susd. il a esté
+    suffisamment deduict et representé, que le Roy Ferdinand n'a jamais esté esleu Roy de Boheme par voye ordinaire, et que luy mesme s'est
+    privé et est descheu de la reception et du Couronnement ... comme le tout sera plus amplement deduict par un Manifeste qui sera donné au
+    public." -- a justification of the Bohemian deposition of Ferdinand, not a letter of Brederode's and not a key. 549 right page: blank.
+    So 549 is not inside the 8 Oct letter; per the brief, no walk-back was made.
+  - 550 left page: blank (outer side of the sheet). 550 right page: the **opening of the 8 Oct 1619 letter**, docket in a later pencil-grey
+    hand "d 8 Oct. 1619 / R 17 Oct." (M), flourished heading "Hoochvermogende Hoochghe[leerde?] ende ghe-/biedende Heeren", text "UE.
+    Hoochvermogende hebben sonder eenigen twyfel uyt mijne laetste voorgaende ... verstaen ... die goede ende vaste resolutie die alhier bij
+    sijne Curf. Hoocheyt ende aenwesende Fursten ... het Coninckrijck Bohemen ..." (M), prose to the foot of the page.
+  - 551 both pages: the 8 Oct letter continued, prose only (551 left ends with "Furst Christiaen van Anhalt" leaving for the army after news
+    from Prague of a mutiny in the Bohemian army for want of pay; 551 right on a general council of state and finance in Bohemia) (M).
+  - So the 8 Oct letter is complete on 550r-552r (with its address on 552 right, OBRED-552): three scans, prose only, and the "instructie
+    ende sleutel" is not filed with it in this run.
+- Known-answer test: **not run** (no key leaf; PREREG step 3 conditional). Nothing scored; key_6019.tsv not created; key.tsv not touched.
+- Where it was not found, and the limits: not on 549-552 (this pass and OBRED-552). Not looked at: the rest of inv. 6019 at stride 1 around
+  October 1619 (scans before 549, and after 557), where a separately filed key leaf might sit; the States General's own receipt of the
+  key (resolutions of 17-28 Oct 1619, when the 8 Oct letter was received); inv. 6020-6024. One reader for the prose; words quoted are M.
+
+## Remaining gaps (OBRED-549, 15 Oct 2026)
+Read so far: unmeasured for no. 92 and 187 (nothing applied to them); inv. 6019 scans 555-556 carry 81 groups (58 H-read) with 45 C-graded period glosses; overlap with no. 92/187 clears its control (OBRED-556); the 14 Oct 1619 letter is complete on 554-557 (OBRED-552) and the 8 Oct 1619 letter on 550-552, prose only (OBRED-549); the glossed letters rise with the code value (rho 0.96, p < 1e-4, OBRED-TRY)
+- no. 92 and the 187 postscript with the 1619 glossed values - blocker: not-attempted; decode_key --try had power 0/7 on the glossed letter itself (OBRED-TRY), so its verdicts are non-tests; next: a band-interval decode (each letter's code range from the 1619 glosses, alphabetical order) with a pre-registered held-out check -- predict one leaf's glossed letters from the other leaf's bands against a shuffled-band control -- then apply to no. 92/187 graded M, ~$3
+- the reformed cipher's "instructie ende sleutel" sent with the Heidelberg letter of 8 Oct 1619 - blocker: not-attempted; not filed with the letter on 549-552 (OBRED-549); next: the States General resolutions of 17-28 Oct 1619 (Resolutiën der Staten-Generaal, Huygens retroboeken, nieuwe reeks 1619) for a note on the key's receipt or where it was laid, then a stride-1 screen of inv. 6019 scans 520-548 and 558-600 at sheet size for a key leaf, ~$2
+- the later liassen NA 1.01.02 inv. 6020-6024 and the 6019 stride-1 fill - blocker: not-attempted; outside this brief, the 1619 letter shows the agent still used the 1604-05 code list (OBRED-556); next: a stride-3 screen of inv. 6020 (~$4)
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A): no numeral block, no Brederode, Stettin or Heidelberg heading (M)
+
+## Escalation (OBRED-549, 15 Oct 2026)
+- [x] siblings: scan 187 shares 26 values with no. 92 (OBRED-187); inv. 6019 scans 555-556 (Oggersheim, 14 Oct 1619) share 42 values with no. 92/187, clearing the shuffled-code control (OBRED-556); the letter's start (554) carries no groups (OBRED-552)
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187); the 1619 letter's prose and margin summaries read in part (OBRED-556); 549-554 read by eye (OBRED-552, OBRED-549)
+- [ ] known-keys: the 10 Aug 1598 Van Aerssen slip, Buzanval inv. 2028, DECODE 1600s and Palatine/Hessian keys screened (R10-OBRED98, R9-OBRED4, OLD-DKEY, R8-OBRED2, R9-OBRED3); the 8 Oct 1619 letter's "instructie ende sleutel" is not on 549-552 (OBRED-549); next: Resolutiën S.G. 17-28 Oct 1619 for the key's receipt, then a stride-1 screen of inv. 6019 520-548 / 558-600, ~$2
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII has no decipherment or key note near the Brederode entries (OBRED-DP)
+- [ ] key-rebuild: the 1619 glossed pairs clear their own per-unit gate (OBRED-TRY, statistic B); decode_key --try ran with power 0/7 (non-test); next: band-interval decode with a held-out leaf check and shuffled-band control, then no. 92/187 graded M, ~$3
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
+- [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
+Verdict: keep going: 3 internal gaps; inv. 6019 549-551 hold no key (549 = end of a French piece on Ferdinand's deposition in Bohemia; 550r-552 = the 8 Oct 1619 letter, prose only); cheapest next: the band-interval decode with a held-out leaf check (~$3), and the Resolutiën S.G. Oct 1619 plus a stride-1 screen of inv. 6019 for the separately filed key (~$2)

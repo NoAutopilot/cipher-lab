@@ -10,7 +10,7 @@ def get(url):
     b = r.read(); log.write(f"{time.strftime('%H:%M:%S', time.gmtime())}\t{r.status}\t{url}\n"); log.flush(); return b
 mp = os.path.join(out, f"mets_{mets_id}.xml")
 if not os.path.exists(mp):
-    open(mp, "wb").write(get(f"https://service.archief.nl/gaf/api/mets/v1/{mets_id}")); time.sleep(2.1)
+    open(mp, "wb").write(get(f"https://service.archief.nl/gaf/api/mets/v1/{mets_id}")); time.sleep(3.1)
 x = open(mp, encoding="utf-8").read()
 # map order -> file uuid
 om = {}
@@ -26,5 +26,5 @@ for o in orders:
     url = f"https://service.archief.nl/iip/iipsrv?IIIF={p}/{om[o]}.jp2/full/{width},/0/default.jpg"
     b = get(url)
     if b[:2] != b"\xff\xd8": print("not jpeg", o); break
-    open(fn, "wb").write(b); time.sleep(2.1)
+    open(fn, "wb").write(b); time.sleep(3.1)
 print("done")
