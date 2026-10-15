@@ -61,3 +61,35 @@ Verdict line ~2437: "cheapest next: the next key revision with canvas 50 folded 
 each unit's own control result before merging; c51 FAILed, do not merge it). PREREG first: what the revision must do on the held-out canvases to
 count (a leave-one-unit-out gain vs a shuffled-pair control). Write the revision as a new key file beside the old (never overwrite); report the
 held-out numbers before/after; decode_key --check on any reading regenerated.
+
+## Wave 2 (05:1x UTC 15 Oct)
+Wave 1 results (all ledgered + archived, 16.29): LVN-4611 7.54 D, LIN-R7 1.63 Q, HEL-R7 1.71 Q (duplicate of VERIFY-HELLEN 9 Oct: my error),
+NOAI-CH 2.56 D, COL26-KEY 2.85 D. Lesson applied below: before briefing a "next step", grep the folder for a section that already did it.
+LANE DEFAULT-A2-0209-15 closed 04:4x; its folders are free, but nothing it touched in the last hour is taken here. nationaalarchief.nl 503 at 05:09.
+
+### LVN-PIN (Opus, cap 5, box 75 min, resources.huygens.knaw.nl <= 2 or disk): lodewijk-van-nassau-1573-74 freeze the settle LM corpus, then 4611 p3
+NOTES.md ~4697-4705 (LVN-4611 "Drift found"). (a) ~1: settle.py's LM corpus reads ciphers/fr2980-gramont/reading*.txt live, so another target's
+edit makes this target's committed readings STALE (rule 7 hazard). Freeze it: a committed corpus snapshot (text only, inside the lodewijk folder or
+tools/data with a manifest naming the source files and their git blob ids), settle.py reads only the snapshot. Then regenerate 4612 and 4616 (4616
+via lvn16/apply.py per its note) and report every decision that flips vs the committed files (expected: few or none, like 4611's p2_L15/20 82 S->M);
+all `--check` exit 0 afterwards. Do not change any decision rule. (b) ~2.5: 4611 p3 per the existing PREREG 48c69fc7a (key_p3.tsv already built and
+pre-registered): placement, blind Sonnet calls incl. control, apply only what p3's own control licenses; decode_key --check. Stop before (b) if
+(a) used > 50% of cap. Do not touch 4610 p2_L28/11 (a verifier rules on it in a later wave).
+
+### COL26-1181 (Opus, cap 2, box 40 min, no network): colbert26-lathuillerie-1644 per-code test of 11=re and 81=me
+COL26-KEY (NOTES.md, its section; PREREG 5b99f48cc; key_f23_c50rev.tsv) found the held-out gain carried by 11=re and 81=me. Test each code at every
+occurrence with `tools/decode_key.py <t> --try 11=re` / `--try 81=me` (and `--avalanche` for the runner-up values), PREREG first with a per-code
+shuffled control; a code that passes may move to S only if its own control passed (CLAUDE.md "Mary Stuart method tools": an accepted value is M
+unless --try's own control passed for that value class). Write the result into key_f23_c50rev.tsv grades only; never overwrite key_f23.
+
+### BAL-C275G (Opus, cap 4, box 60 min, openapi.bnf.fr <= 12 at >= 3 s, take/release lines): baluze167-davaux-1637 c275 7/5/E gloss search
+Verdict ~2922 and gap ~2912. First grep NOTES.md and ROOM.md for any section after BAL-C275U4 that already searched c266-273/c277-285 line by line, or
+already settled the f.22r last numerals (LANE DEFAULT-A1-0206-15 did "baluze167 f.22r three numerals M->S" on 15 Oct): if either is done, say so and
+take only what is left. Job: search c266-273 and c277-285 line by line for a glossed occurrence of 7, 5 or E (the c275 hand's open signs), at a
+resolution where the gloss is legible (canvases to scratchpad, never git); per-line crops, one Sonnet vision call per canvas at most (~0.6 each,
+10-17 canvases: stop at 80% of cap). Any glossed hit is tested at every c275 occurrence (--try) before it enters anything; PREREG first.
+
+### MANT-BERNER (Sonnet, cap 1.5, box 30 min, archive.org <= 6 at >= 2 s): sachsstaatsarchiv-manteuffel-1712 Berner 1901 djvu grep
+NOTES.md ~3843, 3899, 4044: Berner 1901 was not re-tried after archive.org answered 500 on 9 Oct. Find the identifier in NOTES.md/sources.tsv, fetch
+the _djvu.txt once (one retry after a pause max; a second failure stops the job), grep for the terms the earlier BO I passes used (Manteuffel,
+Stanislas, Arnold, Jablonski, the report dates of Sept-Nov 1712); log hits and misses as search results (rule 10 wording), update the gap.
