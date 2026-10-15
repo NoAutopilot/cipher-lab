@@ -933,7 +933,7 @@ shuffled-name control cannot license C at 5 slots. Next: (1) Kluckhohn p.857 (n8
 source lines, archive.org full-text "5761"), to bring oXo, Phi, Hbar, Lfo to >= 3 occurrences each (~2.5); (3) image-to-image check of
 oXo against the f.110 Catholicquer crop if look.tsv has it on disk (~0.5).
 
-## ELEC-POOL: nr. 383 end, the Kluckhohn pool, and the four signs against the f.53v key (worker ELEC-POOL, LANE DEFAULT-A4-1236-15, account 4, 15 Oct 2026, 12:45-13:0x UTC by date -u)
+## ELEC-POOL: nr. 383 end, the Kluckhohn pool, and the four signs against the f.53v key (worker ELEC-POOL, LANE DEFAULT-A4-1236-15, account 4, 15 Oct 2026, 12:45-12:5x UTC by date -u)
 
 Brief: ELEC-KLU's next (1)-(3). PREREG `elecpool/PREREG-ELEC-POOL.md` (pushed 0164877ec before the step (3) comparison). Page images, not a
 transcription (rule 2); search results only (rule 10). key.tsv unchanged; elecpair383/ grades unchanged; status open.
