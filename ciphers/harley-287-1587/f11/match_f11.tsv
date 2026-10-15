@@ -1,0 +1,15 @@
+# HAR-F11: f.11 sign -> R328 letter(s) whose recorded shape (keys/period_signs_HAR-KEYS.tsv, R328 commission) names the same shape. Written before scoring. '?' = no R328 shape.
+sign	r328_letters	r328_shape
+w	x	w
+o	c	o
+◇	?	(Delta is a triangle, not a lozenge)
+x	g,i	x (g); X (i)
+D	s	D
+6	d	6
+h	?	(R328 h is A/star/looped p; no plain h)
+ʒ	e	3 / Z
+ρ	e	rho
+⫫	t,u	III
+⊕	k	crossed o
+□	?	none
+Π	l	pi

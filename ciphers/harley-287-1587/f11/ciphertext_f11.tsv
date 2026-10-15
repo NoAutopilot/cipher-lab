@@ -1,0 +1,13 @@
+# HAR-F11 15 Oct 2026: BL Harley MS 287 f.11 (DECODE R8477, full-size IMG_R8477_I39153_P.jpg 7216x9972, sha1 aef3bf1a68be; scratchpad only).
+# One Opus look at full-size crops (line 5 x4900-6700 y1550-1760; line 6 x2400-4200 y1720-1920). Every sign grade M. The rest of the leaf is English in clear.
+# Context (clear, M): l.5 "...enterprise and intelligence in 80 ye the [G1] / [G2] [G3] [G4] [G5] [G6] and that the [same?] hath dispatched..." ; l.8 "...into 80 for that intent".
+line	group	tokens	signs_in_words	note
+5	G0	80	numeral 80	in clear context "intelligence in 80"; a place or party
+5	G1	w o o ◇ x D 6 o	w; o; o (third sign possibly a small 8); diamond (open lozenge); x; capital D; 6; o (last sign cut by the margin, may be theta)	line end
+6	G2	w h ʒ ρ 24	w; h; yogh/3-shape with tail (same shape as G6 sign 2); o with descender (rho); numeral 24 (4 crossed)	Bourdeau's "wh24"
+6	G3	⫫	triple horizontal bar with vertical stroke through it (III crossed)
+6	G4	⊕	circle with cross and stem above (crossed o / dagger on circle)	Bourdeau's "circled cross"
+6	G5	□	square with a dot inside	Bourdeau's "square"
+6	G6	Π ʒ ρ 54	pi; yogh/3-shape (as G2); rho; numeral 54	Bourdeau's "Nrp54"; G2 and G6 share the pair ʒ ρ before a two-digit numeral
+8	G7	80	numeral 80	"into 80 for that intent"
+20	MARK	⧺	recognition mark (crossed vertical strokes with a horizontal bar) drawn in clear: "I will not sign any letter or direction I shall give him otherwise than with this mark"	not a cipher group; not scored
