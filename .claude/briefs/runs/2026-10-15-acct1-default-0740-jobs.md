@@ -60,3 +60,27 @@ it". Exactly MONL-L11's method (read MONL-SORT, MONL-ALIGN, MONL-VB, MONL-L11, M
 blind passes + 1 reconciliation + 1 eye re-check = 12 units -- state the count in your claim and stop before the unit that would cross 80% of the
 cap. No key value, machine label or decode in a blind call. Then align_c268.py --check and the shuffled-clear control (200). NOTES
 "## MONL-L16", gaps + Verdict, gaps_check.
+
+## Wave 1 result (08:3x UTC): CLIN-3004 4.66 D, F4712-8R 2.45 N (NON-TEST, instrument retired, folder parked), MCC-JUDGE 2.57 D, ELEC-SRC 2.29 D; MONL-L16 running.
+Parallel lane DEFAULT-A2-0810-15 (account 2) holds matignon-mayenne-1586, oldenbarnevelt-brederode-1605, harley-287-1587, kaliningrad-2015: not picked.
+
+## Wave 2 (08:3x UTC 15 Oct)
+
+### CLIN-3004B (Opus, cap 6, box 75 min, image-uab.canadiana.ca <= 16): pro3055-clinton-1779 letter 3004 pp.230-231
+CLIN-3004's named rest: B.147 pp.230-233. Pages 230 and 231 only, CLIN-3004's method and the same PREREG design (append a PREREG addendum
+naming the two pages before any pass): crops command pasted, two blind passes + one reconciliation per page (6 units at ~0.7 = ~4.2; stop
+before a unit that would cross 80% of cap), the B2 gate and page-permuted-key control per page. No images in git. NOTES "## CLIN-3004B",
+gaps + Verdict, gaps_check. Text-known item (guardrail share).
+
+### ELEC-357 (Opus, cap 4, box 60 min, openapi.bnf.fr/gallica <= 10): fr5761-election-1519 fr.3897 item 56 and fr.5761 nr. 383 position
+ELEC-SRC's next: locate fr.3897 item 56 ("Double des lettres de Joachim ... a l admiral, XVIIIe jung 1519", btv1b90096539) from the f.146 = item 73
+anchor (~3-4 canvases at 600 px), then read item 56's canvases for cipher name groups (<= 4 canvases); then the fr.5761 manifest/notice Description
+for where nr. 383 sits (1-2 requests, no canvas census). Status stays as written unless a pair is found (>= 2 occurrences per sign before any C
+grade). NOTES "## ELEC-357", Verdict.
+
+### MCC-GREGG (Opus, cap 6, box 90 min, disk; gutenberg.org or archive.org <= 6 only to fetch a public-domain Gregg shorthand dictionary/word list): mccormick-1999 Gregg-lexicon variant of the suffix-mark model
+Verdict: "the Gregg-lexicon variant of the suffix-mark model with its matched control, ~$6". Rule 3 check first, in NOTES: this is a different
+lexicon (new material), not a re-tune of the MCC-SUFX knob; if you cannot get a public-domain Gregg word list in <= 6 requests, stop and log
+"not run: no corpus", do not substitute. PREREG (control at the target's N=132 / K / ending profile, the MCC-JUDGE NCBE-fixed and type nulls,
+>= 200 draws, the margin rule) before scoring the target. `tools/token_anneal.py` option, not a private copy; offline test in tools/tests/.
+No vision calls. NOTES "## MCC-GREGG", gaps + Verdict, gaps_check.
