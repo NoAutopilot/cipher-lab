@@ -40,6 +40,13 @@ Word-level code-word anneal (MCC-WORD, LANE DEFAULT-A2-2209-14, 14 Oct 2026): `-
 `--pool` words, numbers/single letters break the chain) and Gibbs-anneals each code type over the pool on the total
 log-prob scale; same control generator; reports the found total against the truth's total (search vs objective).
 PREREG and results: ciphers/mccormick-1999/PREREG-MCC-WORD.md, NOTES.md "MCC-WORD". Test: tools/tests/test_mcc_wordbigram.py.
+
+Abbreviation / consonant-skeleton model (MCC-SKEL, LANE DEFAULT-A1-0206-15, 15 Oct 2026): `--skeleton --scheme drop|keepfinal
+--pool 3000 --n-list 132,500,2000 --seeds 1,2,3 --nulls 40 [--target]` reads each code token as one or more word skeletons
+(first letter + consonants; keepfinal also keeps a final vowel) by lattice Viterbi under the same word-bigram LM, UNK at a
+per-letter cost; control = skeletons of held-out prose on the target's kind sequence with run-on groups fitted to its token
+length; nulls: code-token order (control read) and letters shuffled across tokens (coverage). PREREG and results:
+ciphers/mccormick-1999/PREREG-MCC-SKEL.md, NOTES.md "MCC-SKEL". Test: tools/tests/test_mcc_skeleton.py.
 """
 import argparse
 import json
@@ -520,6 +527,231 @@ def wordbigram_sweep(a, real_toks, words, frequent):
     return 0 if out.get("token_read", out["gate"]["met"]) else 3
 
 
+# ---------------------------------------------------------------- abbreviation / consonant-skeleton model (MCC-SKEL)
+
+VOWELS = set("AEIOU")
+
+
+def skeleton(word, scheme="drop"):
+    """Consonant skeleton of a word: upper case, first letter kept, every later vowel dropped, runs of one letter
+    collapsed (would -> WLD, letter -> LTR). scheme 'keepfinal' also keeps the word's last letter when it is a vowel
+    (house -> HSE, there -> THRE)."""
+    w = word.upper()
+    out = [w[0]]
+    for i, ch in enumerate(w[1:], 1):
+        if ch in VOWELS and not (scheme == "keepfinal" and i == len(w) - 1):
+            continue
+        if ch != out[-1]:
+            out.append(ch)
+    return "".join(out)
+
+
+def build_skel_control(kind_seq, words, rng, scheme, p_join):
+    """Matched control for the skeleton design: a contiguous word stream (same draw as build_control) on the target's
+    per-position kind sequence; each code slot carries one word's skeleton, and with probability p_join the next word's
+    skeleton is written onto the same token (run-on groups, matching the target's mean letters per code token); number
+    and single-letter slots as in build_control (the word under them is dropped). Returns (toks, truth) where truth[i]
+    is the list of words under token i (None for non-code tokens)."""
+    start = rng.randrange(0, len(words) - 4 * len(kind_seq) - 1)
+    pos = start
+    toks, truth = [], []
+    for kind, _ in kind_seq:
+        if kind == "number":
+            toks.append(("number", str(rng.randint(1, 999)))); truth.append(None); pos += 1
+        elif kind == "letter":
+            toks.append(("letter", rng.choice("AI"))); truth.append(None); pos += 1
+        else:
+            grp = [words[pos]]; pos += 1
+            while rng.random() < p_join:
+                grp.append(words[pos]); pos += 1
+            toks.append(("code", "".join(skeleton(w, scheme) for w in grp))); truth.append(grp)
+    return toks, truth
+
+
+class SkelDecoder:
+    """Lattice Viterbi: each code token is segmented into one or more word skeletons (a word may not cross a token
+    boundary), each segment read as a pool word with that skeleton or as UNK at a cost of `alpha` nats per letter;
+    the path score is the WordBigram total (numbers and single letters are BND). Beam of `beam` previous-word states
+    per position; at most `cands` words per skeleton (most frequent first)."""
+
+    def __init__(self, wb, scheme="drop", alpha=3.0, beam=200, cands=10, maxlen=12):
+        self.wb, self.alpha, self.beam = wb, alpha, beam
+        idx = {}
+        for i, w in enumerate(wb.pool):  # pool is frequency-ordered
+            s = skeleton(w, scheme)
+            if len(s) <= maxlen and len(idx.setdefault(s, [])) < cands:
+                idx[s].append(i)
+        self.idx, self.maxlen = idx, max(len(s) for s in idx)
+
+    def decode(self, toks):
+        import numpy as np
+        L, UNK, BND = self.wb.L, self.wb.UNK, self.wb.BND
+        cur = {BND: (0.0, None)}  # word id -> (score, backpointer node)
+        for k, v in toks:
+            if k != "code":
+                w, (sc, bp) = max(cur.items(), key=lambda kv: kv[1][0])
+                cur = {BND: (sc, ("tok", None, w, bp))}
+                continue
+            n = len(v)
+            dp = [dict() for _ in range(n + 1)]
+            dp[0] = cur
+            for i in range(n):
+                if not dp[i]:
+                    continue
+                items = sorted(dp[i].items(), key=lambda kv: -kv[1][0])[:self.beam]
+                pid = np.array([p for p, _ in items]); psc = np.array([s for _, (s, _) in items])
+                for j in range(i + 1, min(n, i + self.maxlen) + 1):
+                    sub = v[i:j]
+                    for w in self.idx.get(sub, []) + [UNK]:
+                        tot = psc + L[pid, w] - (self.alpha * (j - i) if w == UNK else 0.0)
+                        b = int(tot.argmax())
+                        if w not in dp[j] or tot[b] > dp[j][w][0]:
+                            dp[j][w] = (float(tot[b]), (sub, w, int(pid[b]), items[b][1][1]))
+            cur = dp[n]
+        w, (best, bp) = max(cur.items(), key=lambda kv: kv[1][0])
+        segs = []  # walk back: list of (skeleton, word id) in reading order, '|' at token boundaries
+        node = bp
+        while node is not None:
+            sub, wid, prev, nxt = node
+            segs.append((sub, wid))
+            node = nxt
+        segs.reverse()
+        return best, segs
+
+    def words_per_token(self, toks, segs):
+        """split the decoded segment list back into per-code-token word lists (None for non-code tokens)."""
+        out, k = [], 0
+        for kind, v in toks:
+            if kind != "code":
+                while k < len(segs) and segs[k][0] == "tok":
+                    k += 1
+                out.append(None)
+                continue
+            got, letters = [], 0
+            while letters < len(v):
+                while segs[k][0] == "tok":
+                    k += 1
+                sub, wid = segs[k]; k += 1
+                got.append((sub, None if wid == self.wb.UNK else self.wb.pool[wid]))
+                letters += len(sub)
+            out.append(got)
+        return out
+
+
+def lcs(a, b):
+    m = [[0] * (len(b) + 1) for _ in range(len(a) + 1)]
+    for i in range(len(a)):
+        for j in range(len(b)):
+            m[i + 1][j + 1] = m[i][j] + 1 if a[i] == b[j] else max(m[i][j + 1], m[i + 1][j])
+    return m[-1][-1]
+
+
+def skel_stats(dec, toks, truth=None):
+    best, segs = dec.decode(toks)
+    per = dec.words_per_token(toks, segs)
+    letters = sum(len(v) for k, v in toks if k == "code")
+    covered = sum(len(s) for g in per if g for s, w in g if w is not None)
+    row = {"score": best, "score_per_letter": best / letters, "coverage": covered / letters,
+           "decode": " ".join("[" + "+".join(w or ("?" + s) for s, w in g) + "]" if g else v
+                              for g, (k, v) in zip(per, toks))}
+    if truth is not None:
+        tw = sum(len(t) for t in truth if t)
+        row["word_recovery"] = sum(lcs(t, [w for _, w in g]) for t, g in zip(truth, per) if t) / tw
+        row["truth_in_pool"] = sum(1 for t in truth if t for w in t if w in dec.wb.idx) / tw
+    return row
+
+
+def shuffle_letters(toks, rng):
+    """letter-shuffled null: all code letters permuted across the code tokens, each token keeping its length."""
+    letters = [ch for k, v in toks if k == "code" for ch in v]
+    rng.shuffle(letters)
+    out, p = [], 0
+    for k, v in toks:
+        if k == "code":
+            out.append(("code", "".join(letters[p:p + len(v)]))); p += len(v)
+        else:
+            out.append((k, v))
+    return out
+
+
+def shuffle_order(toks, truth, rng):
+    """order-shuffled null: code tokens (with their truth) permuted among the code slots."""
+    ps = [i for i, (k, _) in enumerate(toks) if k == "code"]
+    perm = ps[:]
+    rng.shuffle(perm)
+    t2, tr2 = list(toks), list(truth)
+    for i, j in zip(ps, perm):
+        t2[i], tr2[i] = toks[j], truth[j]
+    return t2, tr2
+
+
+def match_p_join(real_toks, scheme, words, rng_seed=7):
+    """p_join (grid 0.00-0.90, step 0.05) whose control mean letters per code token is nearest the target's."""
+    tgt = [len(v) for k, v in real_toks if k == "code"]
+    tmean = sum(tgt) / len(tgt)
+    best = None
+    for p in [x / 20 for x in range(19)]:
+        ctoks, _ = build_skel_control(tile_kinds(real_toks, 2000), words, random.Random(rng_seed), scheme, p)
+        c = [len(v) for k, v in ctoks if k == "code"]
+        d = abs(sum(c) / len(c) - tmean)
+        if best is None or d < best[0]:
+            best = (d, p, sum(c) / len(c))
+    return best[1], best[2], tmean
+
+
+def skeleton_run(a, real_toks, words):
+    """MCC-SKEL (PREREG-MCC-SKEL.md): control first at each N; target and its letter-shuffled null only with
+    --target, and only if the control read at the target's own N (checked here, exit 3 otherwise)."""
+    import time
+    wb = WordBigram(corpus_words_from(HELDOUT_EN), a.pool)
+    dec = SkelDecoder(wb, a.scheme, a.alpha, a.beam)
+    p_join, cmean, tmean = match_p_join(real_toks, a.scheme, words)
+    out = {"mode": "skeleton", "scheme": a.scheme, "pool_size": a.pool, "alpha": a.alpha, "beam": a.beam,
+           "p_join": p_join, "control_mean_letters": cmean, "target_mean_letters": tmean, "controls": {}}
+    print(json.dumps({k: out[k] for k in out if k != "controls"}), file=sys.stderr)
+    seeds = [int(x) for x in a.seeds.split(",")]
+    for n in [int(x) for x in a.n_list.split(",")]:
+        runs = []
+        for seed in seeds:
+            crng = random.Random(1000 + seed)
+            ctoks, truth = build_skel_control(tile_kinds(real_toks, n), words, crng, a.scheme, p_join)
+            t = time.time()
+            row = {"seed": seed, "n_tokens": n}
+            r = skel_stats(dec, ctoks, truth); r.pop("decode")
+            row.update(r)
+            st, sr = shuffle_order(ctoks, truth, random.Random(2000 + seed))
+            row["null_order_word_recovery"] = skel_stats(dec, st, sr)["word_recovery"]
+            lnull = [skel_stats(dec, shuffle_letters(ctoks, random.Random(3000 + seed * 100 + i))) for i in range(a.nulls)]
+            row["letter_null_coverage_max"] = max(x["coverage"] for x in lnull)
+            row["letter_null_spl_max"] = max(x["score_per_letter"] for x in lnull)
+            row["secs"] = round(time.time() - t, 1)
+            runs.append(row)
+            print(json.dumps(row), file=sys.stderr)
+        mean = sum(r["word_recovery"] for r in runs) / len(runs)
+        nmax = max(r["null_order_word_recovery"] for r in runs)
+        read = mean >= a.gate and min(r["word_recovery"] for r in runs) > nmax
+        out["controls"][str(n)] = {"runs": runs, "word_recovery_mean": mean, "null_order_max": nmax, "read": read}
+        print(json.dumps({"n": n, "word_recovery_mean": mean, "null_order_max": nmax, "read": read}))
+    if a.target:
+        n0 = str(len(real_toks))
+        if not out["controls"].get(n0, {}).get("read"):
+            out["target"] = "not run: control did not read at the target's own N"
+        else:
+            tr = skel_stats(dec, real_toks)
+            ln = [skel_stats(dec, shuffle_letters(real_toks, random.Random(5000 + i))) for i in range(a.nulls)]
+            tr["letter_null_coverage"] = sorted(x["coverage"] for x in ln)
+            tr["letter_null_spl"] = sorted(x["score_per_letter"] for x in ln)
+            tr["coverage_above_null_max"] = tr["coverage"] > max(tr["letter_null_coverage"])
+            tr["spl_above_null_max"] = tr["score_per_letter"] > max(tr["letter_null_spl"])
+            out["target"] = tr
+        print(json.dumps(out["target"] if isinstance(out["target"], str) else
+                         {k: v for k, v in out["target"].items() if k != "decode"}))
+    if a.out:
+        Path(a.out).write_text(json.dumps(out, indent=1))
+    ok = all(c["read"] for c in out["controls"].values())
+    return 0 if ok else 3
+
+
 # ---------------------------------------------------------------- main
 
 
@@ -548,6 +780,13 @@ def main():
                          "or on those plus Holmes+Moby-Dick (in-sample upper bound, diagnostic only)")
     ap.add_argument("--pool", type=int, default=1000, help="wordbigram: candidate word pool (top LM-corpus words)")
     ap.add_argument("--sweeps", type=int, default=200, help="wordbigram: annealing sweeps over all code types")
+    ap.add_argument("--skeleton", action="store_true", help="MCC-SKEL: abbreviation/consonant-skeleton lattice decoder")
+    ap.add_argument("--scheme", choices=["drop", "keepfinal"], default="drop", help="skeleton: vowel rule")
+    ap.add_argument("--alpha", type=float, default=3.0, help="skeleton: UNK cost in nats per letter")
+    ap.add_argument("--beam", type=int, default=200, help="skeleton: previous-word states kept per position")
+    ap.add_argument("--n-list", default="132", help="skeleton: control lengths, comma-separated")
+    ap.add_argument("--nulls", type=int, default=40, help="skeleton: letter-shuffled nulls per run")
+    ap.add_argument("--target", action="store_true", help="skeleton: also run the target (only if the control read at its N)")
     a = ap.parse_args()
 
     text = CIPHER_FILE.read_text()
@@ -563,6 +802,8 @@ def main():
 
     if a.selftest:
         return selftest(model, pool_words, pool_weights, real_toks, words, frequent)
+    if a.skeleton:
+        return skeleton_run(a, real_toks, words)
     if a.control_only and a.objective == "wordbigram":
         return wordbigram_sweep(a, real_toks, words, frequent)
     if a.control_only:
