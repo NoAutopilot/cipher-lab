@@ -2,6 +2,7 @@
 
 Status: partial
 Berzeviczy 1914, *Aragóniai Beatrix magyar királyné életére vonatkozó okiratok* (IA `aragoniaibeatrix00berz`), read by this worker (GF4-BATCH19, 3 Oct 2026) by full-text search of the whole IA OCR and by reading the 1492 table of contents (nos. CLI-CLXXXIII, pp. XXX-XXXI) and nos. CLIV-CLV (pp. 214-219): no Costabili letter of 27 Feb 1492 is printed, letter absent.
+(DEC1162-RK, 15 Oct 2026: the owner's g/q piles applied and 1168 re-keyed, pre-registered; G 0.7241 vs merged 0.7288, so the split is not adopted and stays in `*_split.*` files; q-c pile conflicts with the gloss. See "## DEC1162-RK".)
 (D1162-F19, 9 Oct 2026: f/long-s glyph-template test of the F19 month, pre-registered; its control FAILed twice (0.667, 0.615 vs gate 0.80), untested-by-this-tool, F19 stays febr~?. See "## D1162-F19".)
 (VERIFY-MOD1162, 3 Oct 2026: AUDIT.md -- plaintext of the cipher runs N0, period gloss on the leaf and DECODE doc 3593; the 1168-key finding re-derives and its control holds.)
 (MOD1162, 3 Oct 2026: decode-1168's key read on this letter's cipher groups, gate PASS against a band-shuffled key; the letter's own period gloss gives the plaintext of most groups. See "## MOD1162" below.)
@@ -774,3 +775,79 @@ the half-size page image embedded in the sorter (R1168 f.12r, around tile R1168_
 most consistent with (a) the long, left-sweeping tail of the g-type cipher sign itself and (b) the period decipherer's lead-in and
 extension strokes on the interlinear gloss ("ala", "dieta" with a line run out over the cipher signs it covers). That is a look,
 not a test; nothing suggests a cipher device. If it matters, check it on the full-size PNGs (DECODE login, build.sh header).
+
+## DEC1162-RK: the owner's g/q piles applied, 1168 re-keyed, G re-scored (account-2 worker, LANE DEFAULT-A2-1410-15, 15 Oct 2026, 14:25-14:3x UTC by date -u)
+
+Pre-registered in `PREREG-DEC1162RK.md` (commit 72aa72543) before any split score. Script `sorter/apply_split.py` (`--check`), then
+`score_g.py --split` (`--check`); scripts only, no vision, no network.
+
+Steps and checks. (0) The A2-COS2 combination rule rebuilds the committed merged 1168 `key.tsv` exactly (26 signs), and re-aligning the
+committed merged pairs with `tools/interlinear_align.py` gives the committed `f12r_key_A.tsv` / `f12r_key_B.tsv` exactly. (1) The 31
+piles replace g/q at their tiles: 10 in this `ciphertext_split.tsv`, 21 in 1168's `ciphertext_split.tsv`; no g/q is left merged in
+either. (2) Pass A pairs = the 14 groups; pass B aligned per group: one B `g` sits on tile 13_iniuria_04 (A `q`, owner's pile g), so it
+takes g; B-only pairs "conclusioni", "laimperatrice" and B's `q` at andasseabuda pos 6 (A reads `r`) become `g.u`/`q.u`. (3) Re-key,
+gloss-shuffle control (20 seeds): pass A agree 0.638 (shuffle mean 0.215, p95 0.262), pass B 0.617 (0.230, 0.292) -- both beat p95
+(merged: 0.631 / 0.658). (4) `../decode-1168-modena-costabili-1492/key_split.tsv`:
+
+| pile | 1168 value | grade | pass A | pass B | 1168 tiles | 1162 tiles |
+|---|---|---|---|---|---|---|
+| g | l | C | 7/8 | 5/6 | 8 | 1 |
+| q-b | e | C | 5/6 | 6/7 | 8 | 2 |
+| q | c | M | 2/4 | 1/3 | 6 | 3 |
+| q-c | u | M | 1/1 | 1/1 | 1 | 3 |
+| q-d | f | M | 1/1 | a 1/1 | 1 | 0 |
+| g-b | -- | -- | -- | -- | 0 | 1 |
+
+(Merged key: g = l C, q = e C.) So the owner's q-b is the e-sign the merged `q` mostly read, and the owner's q pile reads c, not e.
+
+Score (gating, PREREG criteria 1-3):
+
+| | G | control p99 (seeds 0-999) | p99 (1000-1999) | coverage | J it16dip |
+|---|---|---|---|---|---|
+| merged (on file) | 0.7288 | 0.5254 | 0.5254 | 0.952 | -1.340 |
+| split | **0.7241** | 0.5345 | 0.5345 | 0.935 | -1.257 |
+
+Criterion 2 (beats its own control at both seed sets, G >= 0.50) and 3 (both passes beat their shuffle p95) hold; criterion 1
+(G_split >= 0.7288) **fails** by 0.005. Per the PREREG the split key does **not** replace the merged one: it stays in the `*_split.*`
+files (`ciphertext_split.tsv`, `score_g_split.json`, `votes_split.tsv` here; `ciphertext_split.tsv`, `key_split.tsv`, `align/split/`
+in decode-1168). Committed `key.tsv`, `ciphertext.tsv`, `reading.txt` and `score_g.json` of both folders are unchanged;
+`decode_key.py --check` "reading up to date" in both; `score_g.py --check` up to date. J is descriptive (and it16dip rated the leaf's
+own gloss -1.134, MOD1162).
+
+Where the split gains and loses, per 1162 tile (gloss letter at the LCS-aligned position; '-' = not aligned):
+
+| tile | pile | merged value / gloss | split value / gloss |
+|---|---|---|---|
+| p1L01_1_02 | q-c | l / l ("il gouerno") | u / - |
+| p1L01_1_05 | g-b | l / - | unkeyed |
+| p1L01_1_06 | q-b | e / e | e / e |
+| p1L05_1_03 | q | e / e | c / c ("pocha") |
+| p1L05_2_01 | q-b | l / - | e / e ("estima", now exact) |
+| p1L06_1_01 | q-c | l / - | u / - |
+| p1L06_1_06 | g | l / - | l / - |
+| p1L06_3_06 | q | e / - | c / - |
+| p1L08_1_05 | q-c | l / l ("famiglia") | u / - |
+| p1L08_3_03 | q | e / e | c / c ("ne comping") |
+
+The q / q-b split helps (p1L05_2 becomes "estima"; q = c fits "pocha" and "comping" in the gloss); the loss is entirely the q-c pile,
+whose only 1168 occurrence (10_andasseabuda pos 10, under "Buda") reads u in both passes while two of its three 1162 tiles sit where
+this leaf's gloss has l or g. One aligned occurrence cannot say whether the q-c pile is one sign (and the 1168 alignment or the 1162 gloss
+position is off) or two signs the sort put together; g-b has no 1168 occurrence at all. Key conflict logged in HYPOTHESES.md.
+1168's self-decode under the split key (scratch only, fit set = test set): tokens 130, C 46, M 82, U 2 (merged: C 48, M 80, U 2).
+Not checked: a G with q-c left unkeyed or q-c = l (not pre-registered; it would be a second look chosen after seeing the result).
+
+## Remaining gaps (DEC1162-RK, 15 Oct 2026)
+Read so far: 77 of 77 cipher signs on p.1 assigned a value (C 33, S 12, M 24, I 5, U 3; merged key, unchanged); the owner's 6-pile g/q split applied and re-keyed, G 0.7241 vs merged 0.7288, so not adopted (DEC1162-RK); clear text of both pages transcribed, 29 doubtful words left (R10-DEC1162, R10-DEC1162B)
+- the g/q split's piles q-c, q-d and g-b (1, 1 and 0 aligned occurrences in 1168, the only keyed sibling) - blocker: too-short; one occurrence each cannot settle a value, and q-c's one 1168 value (u) disagrees with this leaf's gloss at 2 of 3 tiles (DEC1162-RK, HYPOTHESES.md); more ciphertext in this key (another busta 2 Costabili cipher leaf with a gloss) is what would decide it
+- the 29 doubtful clear-text words, the signature and the month of the date line - blocker: waiting-on the answer TSV from a person's read of clear/focus/focus-sheet.html (22 cards; built D1-DEC1162F 6 Oct 2026); two machine passes leave them split, the enhanced-read control failed (DEC1162-ENHANCE) and the glyph-template control failed (D1162-F19), so per Usage 6 the next reader is a person or a palaeographer; then apply the answer TSV to clear_text.tsv/doubts_R10B.tsv, ~$0.5
+- code groups `T o` (L01) and `.e.` (L06) - blocker: open-codes; one occurrence each, the L01 gloss is not separable from the letter group's, the L06 sign is unglossed
+
+## Escalation (DEC1162-RK, 15 Oct 2026)
+- [x] siblings: decode-1168 key applied, gate PASS (G 0.729 vs control p99 0.525; fresh seeds p99 0.525), MOD1162/MOD1162B 3 Oct 2026
+- [x] clear-pages: both pages' clear text transcribed from native crops, two blind passes, R10-DEC1162 and R10-DEC1162B 6 Oct 2026
+- [x] known-keys: decode-1168 key.tsv (period gloss key) is the known key, applied here
+- [x] print: Berzeviczy 1914 checked, letter absent (GF4-BATCH19 3 Oct 2026)
+- [x] key-rebuild: the owner's g/q sort (ASKS 144) applied to both folders and 1168 re-keyed, DEC1162-RK 15 Oct 2026: G 0.7241 below merged 0.7288, PREREG criterion 1 FAIL, split kept in *_split.* files
+- [x] image-check: full-size p.1 and p.2 re-fetched and cut at native resolution, R10-DEC1162 6 Oct 2026; F19 glyph test D1162-F19 9 Oct 2026 (control FAIL)
+- [n/a] retry: nothing failed that a retry would change
+Verdict: keep going: 1 internal gaps; cheapest next: a person's or palaeographer's read of clear/focus/focus-sheet.html (22 cards, F19 among them), then apply its answer TSV, ~$0.5

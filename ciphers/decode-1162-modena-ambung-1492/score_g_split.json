@@ -1,0 +1,56 @@
+{
+ "G_real": 0.7241,
+ "G_ctrl_mean": 0.4119,
+ "G_ctrl_p99": 0.5345,
+ "G_ctrl_max": 0.5517,
+ "p_emp": 0.0,
+ "gate": "PASS",
+ "G_ctrl_fresh_mean": 0.4128,
+ "G_ctrl_fresh_p99": 0.5345,
+ "G_ctrl_fresh_max": 0.569,
+ "p_emp_fresh": 0.0,
+ "gate_fresh": "PASS",
+ "coverage": 0.9355,
+ "letter_signs": 62,
+ "J_real": -1.257,
+ "J_ctrl_median": -1.883,
+ "J_ctrl_p95": -1.535,
+ "J_gloss": -1.134,
+ "groups": {
+  "p1L01_1": {
+   "decoded": "iupoernt",
+   "gloss": "il gouerno del arciuescouato d Strigonio",
+   "lcs": 6
+  },
+  "p1L05_1": {
+   "decoded": "poca",
+   "gloss": "pocha estima",
+   "lcs": 4
+  },
+  "p1L05_2": {
+   "decoded": "estima",
+   "gloss": "pocha estima",
+   "lcs": 6
+  },
+  "p1L06_1": {
+   "decoded": "uoserlirino",
+   "gloss": "Seruipiana et lo arciuescouo",
+   "lcs": 7
+  },
+  "p1L06_3": {
+   "decoded": "inprecipttio",
+   "gloss": "in preprefino",
+   "lcs": 8
+  },
+  "p1L08_1": {
+   "decoded": "aamiui",
+   "gloss": "famiglia d arciuescouo",
+   "lcs": 4
+  },
+  "p1L08_3": {
+   "decoded": "nicomperino",
+   "gloss": "ne comping",
+   "lcs": 7
+  }
+ }
+}

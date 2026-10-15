@@ -3,6 +3,8 @@
 
   python3 ciphers/decode-1162-modena-ambung-1492/score_g.py            print the result table, write score_g.json
   python3 ciphers/decode-1162-modena-ambung-1492/score_g.py --check    exit 1 if score_g.json is stale
+  ... score_g.py --split [--check]   DEC1162-RK (15 Oct 2026, PREREG-DEC1162RK.md): the owner's g/q piles, ciphertext_split.tsv +
+                                     1168 key_split.tsv (sorter/apply_split.py) -> score_g_split.json, votes_split.tsv
 
 Inputs: ciphertext.tsv (line, pos, sign, conf; 1168 sign labels), gloss.tsv (line, gloss, kind: letters|code),
 the 1168 key (../decode-1168-modena-costabili-1492/key.tsv). G = sum LCS(decoded, gloss) / sum keyed signs over
@@ -16,7 +18,9 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
-KEY = HERE.parent / "decode-1168-modena-costabili-1492" / "key.tsv"
+SPLIT = "--split" in sys.argv
+SUF = "_split" if SPLIT else ""
+KEY = HERE.parent / "decode-1168-modena-costabili-1492" / f"key{SUF}.tsv"
 
 
 def fold(s):
@@ -74,7 +78,7 @@ def votes(key, groups, gloss):
 def load():
     key = {r["sign"]: (r["value"], r["grade"]) for r in csv.DictReader(open(KEY), delimiter="\t")}
     groups = {}
-    for r in csv.DictReader(open(HERE / "ciphertext.tsv"), delimiter="\t"):
+    for r in csv.DictReader(open(HERE / f"ciphertext{SUF}.tsv"), delimiter="\t"):
         groups.setdefault(r["line"], []).append(r["sign"])
     gloss = {r["line"]: (r["gloss"], r["kind"]) for r in csv.DictReader(open(HERE / "gloss.tsv"), delimiter="\t")}
     return key, groups, gloss
@@ -136,12 +140,12 @@ def main():
     vt = "line\tpos\tvalue\n" + "".join(f"{a}\t{b}\t{c}\n" for a, b, c in votes(key, groups, gloss))
     if "--check" in sys.argv:
         ok = ok2 = True
-        ok2 = (HERE / "votes.tsv").read_text() == vt
-        ok = (HERE / "score_g.json").read_text() == out
+        ok2 = (HERE / f"votes{SUF}.tsv").read_text() == vt
+        ok = (HERE / f"score_g{SUF}.json").read_text() == out
         print("score_g.json, votes.tsv up to date" if ok and ok2 else "STALE score_g.json or votes.tsv")
         sys.exit(0 if ok and ok2 else 1)
-    (HERE / "score_g.json").write_text(out)
-    (HERE / "votes.tsv").write_text(vt)
+    (HERE / f"score_g{SUF}.json").write_text(out)
+    (HERE / f"votes{SUF}.tsv").write_text(vt)
     print(out)
 
 

@@ -1,0 +1,17 @@
+step0 merged-key rebuild by the A2-COS2 rule: EXACT (26 signs)
+step0b pass A merged pairs re-aligned -> committed f12r_key_A.tsv: EXACT
+step0b pass B merged pairs re-aligned -> committed f12r_key_B.tsv: EXACT
+step1 relabelled tiles: 1162 10, 1168 21 (of 31)
+step2 pass B conclusioni: B-only pair, g/q -> .u
+step2 pass B laimperatrice: B-only pair, g/q -> .u
+step2 pass B andasseabuda pos 6: q not on a sorted tile -> q.u
+step2 pass B iniuria pos 4: B label g on tile labelled q -> g
+step3 pass A: pairs 14 real agree 0.638 shuffle mean 0.215 p95 0.262 -> beats p95
+step3 pass B: pairs 13 real agree 0.617 shuffle mean 0.230 p95 0.292 -> beats p95
+step4 key_split g = l C (passA 7/8, passB 5/6)
+step4 key_split g.u = a M (passA None, passB a 1/4)
+step4 key_split q = c M (passA c 2/4, passB c 1/3)
+step4 key_split q-b = e C (passA 5/6, passB 6/7)
+step4 key_split q-c = u M (passA u 1/1, passB u 1/1)
+step4 key_split q-d = f M (passA f 1/1, passB a 1/1)
+step4 key_split q.u = c M (passA None, passB c 2/5)

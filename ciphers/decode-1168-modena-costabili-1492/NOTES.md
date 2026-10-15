@@ -297,3 +297,14 @@ order-shuffled draw (3.85 vs 4.14). The brief's expectation that this ciphertext
 400 in-class shuffled keys (1.3%) reach 3.292 here (1.0% on sanguszkow) -- the gate's per-pair rate is about as designed. The false
 leads come from multiplicity (815 scored pairs in KEY-CROSSMATCH.tsv, ~1% each) and from the sweep admitting control keys
 (`key_shuf*`) as candidate keys. Proposed tool fixes flagged in ROOM, not applied. Status line unchanged (found-solved).
+
+## DEC1162-RK: the owner's g/q piles applied here (account-2 worker, LANE DEFAULT-A2-1410-15, 15 Oct 2026, 14:25-14:3x UTC by date -u)
+
+Run from `../decode-1162-modena-ambung-1492/sorter/apply_split.py` (PREREG `../decode-1162-modena-ambung-1492/PREREG-DEC1162RK.md`).
+The 21 f.12r tiles take the owner's piles in `ciphertext_split.tsv`; the alignment re-run on split labels is in `align/split/`
+(the merged pairs re-aligned there first reproduce `f12r_key_A.tsv`/`f12r_key_B.tsv` exactly). `key_split.tsv`: g = l C (7/8, 5/6),
+q-b = e C (5/6, 6/7), q = c M, q-c = u M (1 occurrence), q-d = f/a M (1 occurrence); gloss-shuffle control: pass A 0.638 vs p95 0.262,
+pass B 0.617 vs 0.292. Self-decode under the split key (scratch only, fit set = test set): C 46, M 82, U 2 (committed: C 48, M 80, U 2).
+The gating score is decode-1162's G, which fell (0.7241 vs 0.7288), so per the PREREG `key.tsv`, `ciphertext.tsv` and `reading.txt`
+here are unchanged and `decode_key.py --check` still reads "reading up to date". Details and the q-c conflict: decode-1162 NOTES.md
+"## DEC1162-RK" and HYPOTHESES.md. Status line unchanged (found-solved).

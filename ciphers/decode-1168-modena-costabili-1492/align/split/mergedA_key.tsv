@@ -1,0 +1,26 @@
+value	meaning	n	agree	others
++	a	20	16	e:2,i:1,o:1
+1	t	1	1	
+4	b	1	1	
+6	u	1	1	
+7	a	1	1	
+8	m	1	1	
+?	g	2	1	r:1
+T	d	7	7	
+TT	s	5	4	x:1
+a	i	8	6	e:1,u:1
+b	o	7	4	s:2,e:1
+c	p	3	2	h:1
+d	r	10	10	
+e	d	2	1	n:1
+f	e	1	1	
+g	l	7	7	
+o	e	9	4	a:3,p:1,t:1
+p	a	1	1	
+q	e	13	6	u:3,c:2,a:1,f:1
+r	s	1	1	
+s	n	1	1	
+x	e	1	1	
+y	n	7	7	
+z	t	6	2	o:1,p:1,r:1,u:1
+~	t	9	7	a:1,e:1
