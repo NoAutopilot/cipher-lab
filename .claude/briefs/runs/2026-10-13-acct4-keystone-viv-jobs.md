@@ -378,3 +378,46 @@ the Artifact tool (title "Vivonne f.191r: the signs that break the best lines").
 PREREG-VIVPACKET3, with one addition registered now: an owner placement into pile f at a position keys that position's token as f
 (grade S, owner-read) in the re-vote. Price: vision calls: 10 x USD 0.3 = 3 (box looks on line crops, several boxes per look);
 Opus floor 2.5; cap 6. Done line: the artifact URL first, then the box-check numbers before/after, then pile f's member count.
+
+## JOB VIV-GSPLIT (wave 7, 15 Oct 2026 01:5x UTC by date -u; account-4 parent) -- split label g into the r-sign and the f-sign, machine side
+
+Model: Opus 5.5. Cap USD 6 (Opus floor 2.5). Box 60 minutes from the claim; stop before any unit that would cross 80% of cap or box.
+Context: VIV-FKEY (NOTES.md, 14 Oct 2026) showed plaintext f has no key row: it is a sub-shape hidden under reader label g (key r; 16 of the
+60 counting truth-f positions across the five truth leaves, 26x enrichment, p 1e-18), with smaller shares under p, single o and y. VIV-PACKET3B
+eyed three of the truth-f g tiles as "a looped-top stem with a lower loop, visibly unlike the truth-r g tiles (g with a descender)". The owner's
+f.191r packet (NOTES "VIV-PACKET3 result", 15 Oct 2026) returned a negative on the run gate and left f.191r at D1; the one key change in sight
+that lengthens runs is this split. This job is measurement only: no key.tsv edit, no reading edit, no status change; a verifier decides any key row.
+
+Steps, in order:
+1. `tools/room.py --start`, read the last 30 ROOM.md lines, claim. Write `ciphers/fr16104-vivonne-spain-1572/PREREG-VIVGSPLIT.md` and push it
+   BEFORE any tile is classified: the instrument, the held-out design, the gates below, the seed, and what is reported either way.
+2. Material (disk first). The label-g tiles of the three truth leaves with crops on disk (f.102r dev2, f.103r confirm2, f.201r), boxed by the
+   label-aware VIV-CLS map at op 1:1 (`tx/vivcls/map_signs.tsv`; Addendum B used the same source), with the clerk's letter at each position from
+   the truth items (f = the 16 anchors in `tx/viv63_fkey/f_tiles.tsv`, split_label yes; r = the rest at scored, unflagged rows). If a truth leaf's
+   crops are missing, regenerate them with the committed command in its own NOTES section (openapi.bnf.fr: take/release lines in ROOM.md, one
+   request at a time >= 3 s apart, at most 4 requests in the whole job, disk first).
+3. Instrument: `tools/glyph_atlas.py classify --boxes` (the shared tool; rule 8 -- an option added to it, not a private copy, if something is
+   missing), kNN in the atlas feature space over the g tiles, binary f vs r. Design: leave-one-leaf-out (train on two leaves, predict the third),
+   all three folds, per-fold and pooled. Gates (registered): pooled held-out f recall >= 0.60 AND precision >= 0.60 (per-class breakdown printed,
+   the r class too -- AX-NAMES lesson: never the blended accuracy alone), AND F1 above the 99th percentile of 200 label-shuffled nulls (the same
+   tiles, f/r labels permuted within each training leaf). Report the per-fold spread beside the pooled number; a fold with N_f < 4 is reported
+   as untestable at that N, not as a pass or a fail.
+4. If the gate PASSes: apply the two-leaf model to every g token of f.191r (the VIV-F191 line crops; regenerate with the committed command if
+   gone, within the 4-request budget), writing `tx/sorter_f191/gsplit_override_2026-10-15.tsv` in the owner_override format (line, pos, sid,
+   qid='', pile='gsplit', new_sign='gf', action='classifier-f', rec_sign, rec_flag, q_code) for the predicted-f positions only. Then run
+   `tx/viv63_f191/f191.py --override <that file> --tag gsplit --stats` TWICE as registered here: (a) as is (gf is outside the key -> U, so the
+   strict all-H run can only shorten or hold: this is the registered decision number); (b) with a `letter` column read by a small extension of
+   `apply_override` (new_sign not in key + letter given -> that letter, grade 'S'), reporting the longest H-or-S run beside the strict all-H
+   run. Decision rule (registered): the lane's D2 gate stays "no liberty = all H"; (b) is reported as what a verified key row WOULD give, never
+   as the result. If the gate FAILs: log the numbers, no f.191r run, verdict "untested-by-this-instrument at N_f=16".
+5. Side table, report only (no gate): classify the owner's 13 new-pile tiles from `tx/sorter_f191/owner_override_2026-10-15.tsv` (action
+   new-sign, by sid; the page's crops are embedded in tx/sorter_f191/sorter_viv_f191.html DATA, or recut from the line crops) with the same
+   model, and say for each whether it falls nearer f, r, or neither; the three reader-r tiles of one new pile (L08:20, L08:31, L12:37) first.
+6. Two Opus eye checks at most (contact sheets of the predicted-f and predicted-r exemplars, one each), pasted as a sentence each; no subagent
+   writes a file (readers return text, the worker saves it). Price: vision calls: 2 x USD 0.5 = 1; Opus floor 2.5; cap 6.
+7. NOTES.md section "## VIV-GSPLIT (<date -u>)": material counts per leaf, per-fold and pooled numbers with the null, the verdict, the f.191r
+   numbers (a) and (b) if run, the side table, requests per host (<= 4 openapi.bnf.fr), cost "not visible to this session". `f191.py --check`
+   must still pass. HYPOTHESES.md: one row (family "g-split f/r classifier", control = the shuffled-label null, both numbers). file_shrink_guard
+   on every touched file; commit by explicit path; pull --rebase; push to main; ROOM.md done line: verdict first, then recall/precision/F1 vs
+   null p99, then the f.191r strict run before/after, then (b). Stop. Report what was found and where it was not found; do not classify novelty,
+   do not edit key.tsv, do not touch status.json, do not start VIV-F191C or any owner page.
