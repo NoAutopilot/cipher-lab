@@ -1,0 +1,11 @@
+K ('c188L_L24', 19) agreed L sort L
+K ('c185R_L23', 19) agreed L sort ?
+K ('c187L_L15', 27) agreed L sort L
+K ('c188L_L07', 18) agreed L sort L
+K ('c185R_L18', 5) agreed O sort ?
+K ('c187R_L22', 6) agreed O sort O
+K ('c187R_L25', 12) agreed O sort O
+K ('c188L_L27', 20) agreed O sort O
+K ('c187R_L22', 4) agreed O sort O
+K: 7/7 sorted to agreed class, 2 marked ? -> FAIL
+T: O 77, L 121, ? 77 -> PASS

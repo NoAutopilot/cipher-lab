@@ -1,0 +1,6 @@
+{
+ "note": "C1161-SSPLIT (15 Oct 2026): --try harness only, POST-HOC after gate K FAILED (2 of 9 known-answer windows marked ?); S split by one-reader shape sort (So open, Sl looped, S unsure), all read u. Never a reading.",
+ "jobs": [
+  {"ciphertext": "ssplit/ciphertext_split.tsv", "key": "ssplit/key_split_P2.tsv", "style": "spaced", "reading": "ssplit/try_reading_P2.txt", "tokens": "ssplit/try_tokens_P2.tsv"}
+ ]
+}

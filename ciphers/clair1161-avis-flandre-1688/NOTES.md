@@ -2742,3 +2742,65 @@ Verdict: keep going: 4 internal gaps; cheapest next: every S token sorted open v
 OK keep-going clair1161-avis-flandre-1688: keep going: 4 internal gap(s), 2 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## C1161-SSPLIT: every S token sorted open vs looped, --try per split (account-4 worker for LANE DEFAULT-A4-0645-15, 15 Oct 2026, 07:5x-08:0x UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-15-acct4-default-0645-jobs.md` (C1161-SSPLIT). Disk only, 0 requests to any host, 0 subagent calls (the worker
+sorted the montages itself, one reader). Read CL1161-S7 first; its 12-window exemplar check was not repeated (its 9 agreed windows serve as this
+job's known answer). Prior work: `tools/prior_work.py clair1161-avis-flandre-1688 --item-spec 'S split' --step-type key --offline` exit 4, LEAD x2,
+both own-work claims (CL1161-S7, done; this job). The n/u hypothesis is George Lasry's key sheet (credit, rule 8). PREREG
+`ssplit/PREREG-C1161-SSPLIT.md` pushed in 593e12cd6 before any window; addendum A (localisation) in b15465919 before any sort.
+
+**Localisation (addendum A).** CL1161-S7's even-spacing windows put the tick on no S, a blot or blank paper in about 6 of the first 12
+(label-free look). `ssplit/ss_locate.py` places a token by ink segments in the line's own band; label-free check on 12 tokens of sign `4`: tick on
+the 4 in 8/12, within one sign 10/12 (`ssplit/loc_check.txt`). Windows `ssplit/ss_windows.py` (seed 1688, ids X001-X275, 14 montages in the
+session scratchpad only, not committed); id -> token in `ssplit/windows_key.tsv`.
+
+**Sort** (`ssplit/sort.tsv`, pushed 09b442450 before windows_key.tsv was opened): O open 77, L looped 121, ? 77 (tick on no S within about one
+sign, two S equidistant, or cut/blotted). **Gates** (`ssplit/ss_score.py` -> `ssplit/ss_score_out.txt`):
+```
+K: 7/7 sorted to agreed class, 2 marked ? -> FAIL      (c185R_L23/19 looped and c185R_L18/5 open marked ?)
+T: O 77, L 121, ? 77 -> PASS
+```
+K FAILs as registered on the unsure count (limit 1), not on a disagreement: every known-answer window the reader decided went to CL1161-S7's
+blind class. Per PREREG the sort is a **non-test** and step 2 (the registered --try) was **not run as a test**.
+
+**Post-hoc, not licensed, descriptive only** (harness written after the FAIL: `ssplit/ciphertext_split.tsv`, `ssplit/key_split.tsv`,
+`ssplit/decode_try.json`; P2 harness `ssplit/key_split_P2.tsv` with a=o; log `ssplit/try_log_posthoc.tsv`, not crossword_log.tsv):
+```
+P1 p=e: n 112, current c, statistic -617.8 bits over c; value class -166.9; reject (no better than the current value)
+P2 a=u (a hidden as o): n 98, statistic 1522.8 bits over o; null p95 positions -41.4, value class 901.3; accept
+H2 So=n: n 77, current u, statistic -439.4 bits over u; null p95 positions 116.3, value class -50.8; reject (no better than the current value)
+H1 Sl=n: n 121, current u, statistic 682.8 bits over u; null p95 positions -375.0, value class 230.4; accept (above both nulls and the acceptance rule)
+```
+Both power controls behave, and the pattern is the one the PREREG named as support (H1 accept, H2 reject): looped S reads n, open S stays u,
+consistent with Lasry's sheet (n = looped, u = open) and with CL1161-S7's whole-label S=n result (+325 bits but 85 occurrences broken). It was
+computed after a FAILed gate by the same reader that made the sort, so it licenses nothing: no key.tsv, ciphertext.tsv or reading edit; S stays u
+(grade S); Lasry's n for the looped shape stays a data conflict (rule 4), M where cited. `decode_key.py ... --check` exit 0 (reading up to date).
+Grades unchanged: C 353, S 1908, M 1114, U 33, H 0. Report what was found and where it was not found: no outside source searched; novelty not
+classified.
+
+## Remaining gaps (C1161-SSPLIT, 15 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H (unchanged). Prior work: George Lasry's reading of ff.162r-164v (cyphersolver `clair1161`, 6/6 transcribed, 2/6 deciphered, 4 in part). Concordance with his key (C1161-LKEY): 16 agree, 10 disagree, 24 unmapped; c186R known-answer gate PASS (CL1161-KA); S/7 image check UNDECIDED both, S split open vs looped 9/10 one short of gate, --try S=n reject (breaks 85/275), 7=b reject (CL1161-S7).
+- S label merges two shapes? one-reader sort of all 275 S windows: open 77, looped 121, unsure 77; known-answer gate K FAIL as registered (7/7 decided windows agree with CL1161-S7's blind classes, but 2 of 9 marked unsure, limit 1); post-hoc only: --try Sl=n accept +682.8 bits, So=n reject, power controls P1/P2 both behave (C1161-SSPLIT) - blocker: not-attempted; one reader with a FAILed gate licenses no split; next: a second, independent blind sort of the same 275 windows (ssplit/ss_windows.py, 14 montages, one Sonnet call per montage, ~$3-4 incl. reconcile) or the owner's sign sorter, then the registered --try (Sl=n, So=n, P1, P2) on the agreed split, ~$0.5
+- 7 (i vs his b) and digit-pair nomenclature 76/44/37/48, n77 beyond c186R - blocker: not-attempted; one shape for single 7 (both passes, power not both), --try 7=b and 7s=b reject, so a value conflict, not a merge; the alignment on his second face is blocked: no-key-material -- its text is not on disk (C1161-KA) and not in cyphersolver at HEAD 0445769 (targets/clair1161, docs/clair1161.html, papers/lasry; C1161-LASRY 15 Oct): only his full report has it; waiting-on a reply from Bourdeau or Lasry (an owner-side ask for that report page, not yet drafted); next: the S-split --try below for the open values, ~$3, and the second-face alignment once his report page is on disk, ~$1
+- 24 unmapped labels (incl. th 208 tokens, +, d, o, ls, eloop, K, 6r, iii, x) and z (passes agreed on his a:2, decode says t), plus plant W07 (a q both passes saw crossed) - blocker: not-attempted; description-only matching could not separate them; next: blind matching with atlas-style exemplar crops of each of our labels beside his sheet (two passes, one call per label group), ~$2
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 (14 U tokens left under V1) - blocker: not-attempted; outside labels_v2, so not in the matching passes; next: the exemplar-crop matching above, then the owner sign sorter if any stay open, ~$1
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (C1161-SSPLIT, 15 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); whole volume (342 canvases) swept at 300 px, no other cipher or glossed leaf (D1A-C1161)
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under key.tsv; his f163r paragraph matches the same gloss (LQ-C1161); c186R V2 decode agrees with his paragraph on 148/226 tokens, G1 PASS vs permuted key (CL1161-KA); no other glossed leaf in the volume (D1A-C1161)
+- [ ] known-keys: fr16142 and fr.3281 f.4 NO FIT (N4-C1, D2-C1161PRU); Lasry's key: V1 FAIL, V2 whole-decode FAIL, c186R known-answer PASS, n77 = de --try undecided (CL1161-KA), 7=b and S=n --try reject (CL1161-S7); second face's text not on disk (C1161-KA) nor in cyphersolver at HEAD (C1161-LASRY), alignment blocked on his full report; S split sort gate K FAIL, post-hoc Sl=n accept (C1161-SSPLIT); next: a second blind sort of the 275 S windows, then the registered --try, ~$4
+- [x] print: no printed edition located by check-solved and Premise check; Vertot, Ambassades de Noailles (1763) vols 1-5 grepped for the f163r paragraph, not found by this method (VER-C1161); Lasry's "BnF cipher research" (10 Oct 2026, published by D. Bourdeau 13 Oct) is prior work on all six faces: AUDIT 3 class N0, key of record published (Lasry)
+- [retired] key-rebuild: instrument c186R gloss match (G) for per-sign and joint value changes -- per-sign 0/9 (GLOSS9), joint gain inside the window null (VER-C1161J); reopens only with a longer clear text or new material (his reading may be that material)
+- [ ] image-check: split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); planted audit NON-TEST (D2-C1161AUD); S/7 exemplar check UNDECIDED (S split 9/10 vs gate 10, 7 one shape, plant power 1 of 2; CL1161-S7); all 275 S windows sorted by one reader, gate K FAIL on unsure count (C1161-SSPLIT); next: a second blind sort of the same windows (or the owner's sign sorter), then --try per split; exemplar-crop matching of the 24 unmapped labels
+- [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); V1 and V2/V2b decodes --check exit 0 (C1161-LKEY, C1161-V2); main and V2 --check exit 0 again (CL1161-KA, CL1161-S7)
+Verdict: keep going: 4 internal gaps; cheapest next: a second independent blind sort of the 275 S windows (ssplit/ss_windows.py) and the registered --try on the agreed split, ~$4; the second-face alignment waits on Lasry's full report (owner-side ask to Bourdeau/Lasry), then ~$1
+
+
+`python3 tools/gaps_check.py clair1161-avis-flandre-1688` (C1161-SSPLIT, 15 Oct 2026):
+```
+OK keep-going clair1161-avis-flandre-1688: keep going: 4 internal gap(s), 2 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```
