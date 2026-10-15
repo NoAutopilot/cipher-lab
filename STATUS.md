@@ -9452,3 +9452,12 @@ workers over cap, worst NO70-WORDS 1.6x (three vision units + a screen in a 2.5 
   answers were "new sign": the reader-label piles, not the person, are the limit (R13/R15/R16 logged in tools/data/sorter_owner_requirements.tsv).
   Next: VIV-GSPLIT (machine side; seeds = the owner's new piles of recurring shapes), and no further owner packet until a page with one-shape piles
   and a passed box check exists. armstrong-madison-1808: FDR Library reply recorded, order follow-up checked and ready (ASKS 167, owner's desk).
+
+- **15 Oct 2026 04:4x UTC (VIV-KEYSTONE, appended):** the five queued rows are in. VIV-67C: f.202r vs ink 68's continuation PASS (0.744 vs
+  shuffled p95 0.501), truth item vivonne1573-f202r-dev registered (sixth truth leaf; 4 more truth-f positions under label g, pooled 6 -> 10).
+  VIV-70C2: f.211v vs the rest of ink 71 PASS (0.792 vs 0.502), truth item vivonne1573-f211v-dev registered (seventh); the trim rule was not
+  exercised. VIV-LOOKALIKE: dedup rule non-test (fires 0 times on the truth leaves), not adopted. VIV-F191C: pass E drift 15/15; 52 settle same,
+  7 flip, 64 flagged. SORTER-FIX-R12-R16: R12 reproduced and fixed, Fix the cut off the question card (R16), --piles-from/--certain/--box-check
+  gates, preflight check 8; tx/sorter_f191b re-rendered but NOT published (about 15 of 37 piles still mixed: "kept" rows are not answers).
+  Spawned 04:4x: VIV-GSPLIT2 (N_f >= 12 with f.202r/f.211v, cap 6) and VIV-F191D (5-pass rule, cap 3); queued for account 1:
+  SORTER-PILES-ANSWERED (--answered-only, cap 4). No owner page until a render passes the eye count.
