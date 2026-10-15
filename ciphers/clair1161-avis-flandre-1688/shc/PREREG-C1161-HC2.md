@@ -21,3 +21,11 @@ Stop either way (brief). PASS -> all 275 S hand-placed; readers, gate K exactly 
 registered --try (s275/PREREG-C1161-275.md steps 1-2, windows from shc/hand.tsv) are the next job. FAIL -> the hand count on these lines is
 logged as not localising at gate; c187L/c188L stand; named next step decided by the orchestrator. Nothing goes into ciphertext.tsv or key.tsv.
 Cap USD 4.5, box 75 min (11:38-12:53 UTC); stop before a unit that would cross 80% of either. Images stay in the session scratchpad.
+
+## Addendum A (11:4x UTC 15 Oct by date -u; written after L2 was scored)
+- All 149 S tokens hand-placed (none `nc`), appended to shc/hand_raw.tsv and converted to shc/hand.tsv before the eye montages were looked at.
+- Two placement sources added (disclosed departure from "the single piece that carries the sign" of the line itself; instrument unchanged):
+  `nb` (21, c185R): the line's own piece clips the row at its top edge, so the tick is placed on the neighbouring line's piece that shows
+  the same row whole; `blk` (14, c186R): the c186R_L* pieces show the clear-text lines, so c186R ticks are placed on c186Rblk_L* crops
+  (line numbers match, checked by sign sequence). Column `src` names the piece's line; shc/cut_hc.py cuts from it.
+- **L2 30/30 PASS** (gate 26; 4 `nb` and 4 `blk` rows in the sample, all on). Placer = checker caveat as registered.
