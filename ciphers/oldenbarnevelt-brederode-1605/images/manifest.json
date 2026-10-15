@@ -6606,5 +6606,16 @@
    "s0531_1000.jpg": "d9895b36a6407665612d7f87968c450e963ae406",
    "s0532_1000.jpg": "27572322c14917bbc7f00b7c8321f3bc82f959f6"
   }
+ },
+ "obred_oct2": {
+  "route": "service.archief.nl IIIF /full/3000,/0/default.jpg, METS 1ebb4182-2b80-4e37-a226-8b8c7e578c8b",
+  "date": "2026-10-15",
+  "regen": "screen_tools/regen_oct2.sh",
+  "committed": false,
+  "files": {
+   "s0528_3000.jpg": "9047ca14db9351c85db5160f73b32c87ddfaa598",
+   "s0529_3000.jpg": "06d2c0d986393190b0ba62fd6723a79c779bac45",
+   "s0530_3000.jpg": "6a742012c2b2a841efa3dc133b01c37b37ab3df8"
+  }
  }
 }

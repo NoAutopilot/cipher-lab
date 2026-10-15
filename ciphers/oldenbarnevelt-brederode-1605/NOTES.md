@@ -2084,3 +2084,66 @@ Read so far: no. 92 and the 187 postscript as band intervals only (M): 72 of 180
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
 - [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
 Verdict: keep going: 3 internal gaps; inv. 6019 515-532 hold no cipher memorie, decipherment or key (OBRED-MEM); the 2 Oct 1619 letter of res. 1779 is on 528-530, prose, with nothing filed after it; band intervals put 40.0% of no. 92/187's 180 tokens in a one-letter interval (M); cheapest next: read the 2 Oct letter for the memorie (~$1.5), and a constrained segmentation of the interval strings with its own control (~$3)
+
+## OBRED-OCT2 (15 Oct 2026, 09:33-09:4x UTC by date -u, account 2, Opus; for LANE DEFAULT-A2-0810-15)
+
+Brief: read the 2 Oct 1619 letter of res. 1779 (inv. 6019 scans 528-530) for any mention of a memorie, cipher or sleutel; then catalogue
+lookups only (S.G. secrete series for 1619; Maurits's papers at the Koninklijk Huisarchief) for where a deciphered Brederode memorie would
+be filed. A reading of one prose letter, no PREREG, nothing scored.
+
+- Prior-work step: `prior_work.py ... --item-spec 'NL-HaNA 1.01.02 inv. 6019 scans 528-530 ...' --step-type read` exit 4 (own claim LEAD,
+  LOOK, 2 UNCHECKED, 2 UNCHECKED-NET); the four non-net rows recorded CLEAR in `prior-work.tsv` (adhoc-834178).
+- Requests: service.archief.nl 4 (METS + scans 528, 529, 530 at 3000 px), all 200, >= 3.1 s apart, take/release in ROOM; sha1s 9047ca14 /
+  06d2c0d9 / 6a742012, `screen_tools/regen_oct2.sh` re-derives them; no image committed. Catalogue: nationaalarchief.nl 2 (1.01.02 EAD
+  XML 22.7 MB, inv. 4562 item page), koninklijkeverzamelingen.nl 2 (A13 page; `A13.ead.pdf` guess 404), web search 2.
+- **The letter, read by eye (M, one reader at 3000 px, page crops).** 528 right: "Nader mijne voorgaenden vanden 26en ende 28en des
+  voorleden maents, waer van de copie hier bij gaen" -- copies of the 26 and 28 Sept letters went with it -- then his return from Frankfurt
+  to Heidelberg, the Electoral court (the Dowager, Duke Ludwig, Duke Johann of Zweibrücken, the Margraves of Ansbach and Baden, the Duke of
+  Württemberg), and his congratulation on the Bohemian election. 529 left-530 right: the news (Anhalt general of the Bohemian forces;
+  Achatius von Dohna and the Anhalt hofmeister sent to Prague; Spinola, Vaudémont, Spanish and Italian troops via Savoy; Saxe-Weimar and
+  Denmark's horse; Mühlhausen and Nuremberg; Buquoy, Bethlen Gabor, Leopold, Ferdinand at Munich; Doncaster's embassy; Oñate), ending
+  "Uyt Heydelberg desen 2en octobre 1619", signed P van Brederode, with the marginal postscript OBRED-MEM read.
+- **The cipher passage, 529 left lines 12-22 (M, read by eye; spelling as seen, doubtful letters not marked):** "Wat hier onder bij mij
+  daer van vernomen es geworden, hebb' ick mettet cyffer van sijne Ex.tie aende selven geschreven; alsoo men mij hier voorts heeft
+  geadvyseert, dat men sich met mijn cyfer (: twelcke in des Advocaets Barnevelt handen es geweest :) niet en konde behelpen; U Hoog Mog.
+  onderdanichst versoeckende mij te willen doen berichten, off tselve noch voorhanden sij, ende bijde selve cyffers gebruijckt kan werden,
+  ofte niet, om daer in te voorsien; gelijck het vannoden schijnt, alsoomen aenvanckt aen verscheyden oorden de pacquetten t'intercepteren."
+  In plain words (M): what he had learned there he wrote **to Maurits in Maurits's own cipher**; he had been told that **his own cipher, "which
+  had been in the Advocate Barnevelt's hands", could not be relied on**; he asks the States General whether that cipher is still at hand and
+  whether the same ciphers can still be used, "since they are beginning to intercept the packets in various places". Nothing else on the
+  three scans mentions a memorie, cipher or sleutel.
+- What this settles about res. 1779 (inference, I): the "memorie" Maurits presented on 11 Oct is most likely the enclosure Brederode wrote
+  to him in **Maurits's cipher** on or about 2 Oct, not a text in Brederode's own (no. 92) cipher; the S.G.'s finding that "het cijfer
+  ongeschikt" is the answer to his question about **his own cipher, last held by Oldenbarnevelt** (arrested Aug 1618), and the "better" one
+  Maurits was asked to draw up is the replacement, matching Brederode's 8 Oct reform. So the deciphered memorie, if kept, is a Maurits-cipher
+  text and its key is Maurits's, not the no. 92 key; the **no. 92 key's last stated home is Oldenbarnevelt's papers**.
+- Catalogue lookups (where it was not found):
+  - NA 3.01.14 (Oldenbarnevelt) was already grepped wide (R9-NAKEY, 6 Oct: cijfer/cyffer/sleutel/geheimschrift/ontcijfer...): no Brederode
+    key item; only Buzanval (inv. 2028) and Van Aerssen (2016) keys. Not re-fetched.
+  - NA 1.01.02 EAD (fresh copy, grepped per `<c>`): the seized-papers / process series **inv. 9450-9460** ("Bijlagen dienende in de zaak
+    tegen Johan van Oldenbarnevelt 1607-1618", 9459, 7 stukken; letters to Caron, Van Aerssen, Langerak, Ledenberg 9451-9454) -- titles
+    name no Brederode and no cipher; **secrete resoluties inv. 4562** (Dec 1615 - Dec 1634, 290 scans, availability DIGITALIZED) holds the
+    secret register for Oct 1619, not read; no 1619 item in the Secrete Kas Duitsland (12584.x items found are 1615 Hanze treaties and later);
+    "Brederode" in the EAD hits only the 6016-6024 liassen and unrelated Brederodes. No item titled for a cipher of 1618-1620.
+  - Koninklijk Huisarchief: Maurits's archive is **A13** (1567-1625 (1632), 2.5 m; koninklijkeverzamelingen.nl/archief/a/a13); its inventory
+    loads by script only and no EAD PDF is served at the C01-style path (404); access is by research request to the KHA. Not searched inside.
+- Limits: one reader; the passage read at 3000 px from page crops, all M; the S.G. secrete resoluties inv. 4562 and A13's inventory not read.
+
+## Remaining gaps (OBRED-OCT2, 15 Oct 2026)
+Read so far: no. 92 and the 187 postscript as band intervals only (M): 72 of 180 tokens (40.0%) one-letter, 115 (63.9%) width <= 2, 37 name codes (OBRED-BAND); inv. 6019 scans 555-556 carry 81 groups (58 H-read) with 45 C-graded period glosses; the 2 Oct 1619 letter says Brederode's own cipher had been in Oldenbarnevelt's hands and that he wrote his news to Maurits in Maurits's cipher (OBRED-OCT2, M)
+- no. 92 and the 187 postscript beyond letter intervals - blocker: not-attempted; band intervals pass a held-out check but give letters, not words; next: a constrained segmentation of the interval strings (OBRED-SEG brief, wave 5) with its matched control and shuffled-interval null, PREREG first, graded M, ~$3
+- the no. 92 key ("mijn cyfer ... in des Advocaets Barnevelt handen") - blocker: not-attempted; 3.01.14 grepped wide (R9-NAKEY) with no Brederode key; the 1.01.02 process series 9450-9460 titles name no cipher; next: a stride screen of NA 1.01.02 inv. 9459 (Bijlagen in de zaak tegen Oldenbarnevelt 1607-1618, 7 stukken) and the S.G. secrete resoluties inv. 4562 at Oct 1619 for the cipher's fate, ~$2
+- the deciphered memorie of res. 1779 (a Maurits-cipher text, OBRED-OCT2 inference) - blocker: needs-physical-access; KHA A13 (Maurits) inventory not served to scripts and the archive is research-request only; owner-side step: a KHA research request, not queued
+- the later liassen NA 1.01.02 inv. 6020-6024 and the 6019 stride-1 fill after 565 - blocker: not-attempted; outside this brief; next: a stride-3 screen of inv. 6020 (~$4)
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A): no numeral block, no Brederode, Stettin or Heidelberg heading (M)
+
+## Escalation (OBRED-OCT2, 15 Oct 2026)
+- [x] siblings: scan 187 shares 26 values with no. 92 (OBRED-187); inv. 6019 scans 555-556 (Oggersheim, 14 Oct 1619) share 42 values with no. 92/187, clearing the shuffled-code control (OBRED-556); the letter's start (554) carries no groups (OBRED-552)
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187); the 1619 letter's prose and margin summaries read in part (OBRED-556); 515-554 and 558-565 seen by eye (OBRED-MEM, OBRED-552, OBRED-549, OBRED-KEYHUNT); the 2 Oct 1619 letter 528-530 read in full (OBRED-OCT2)
+- [ ] known-keys: the 10 Aug 1598 Van Aerssen slip, Buzanval inv. 2028, DECODE 1600s and Palatine/Hessian keys screened (R10-OBRED98, R9-OBRED4, OLD-DKEY, R8-OBRED2, R9-OBRED3); the 2 Oct 1619 letter puts Brederode's own cipher last in Oldenbarnevelt's hands (OBRED-OCT2); next: NA 1.01.02 inv. 9459 and secrete resoluties inv. 4562 (Oct 1619), ~$2
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII has no decipherment or key note near the Brederode entries (OBRED-DP); Resolutiën S.G. NR 4 (1619-1620) has res. 1779 and no key receipt (OBRED-KEYHUNT)
+- [ ] key-rebuild: band-interval decode passes its held-out leaf check (S 0.171 vs p95 0.104, p 0.011, power 1.00) and gives no. 92/187 as letter intervals, 40.0% one-letter (OBRED-BAND); next: constrained segmentation of the interval strings with a synthetic-band control and shuffled-interval null, ~$3
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
+- [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
+Verdict: keep going: 3 internal gaps; the 2 Oct 1619 letter (528-530) says Brederode wrote to Maurits in Maurits's cipher and that his own cipher had been in Oldenbarnevelt's hands (M), so the res. 1779 memorie is likely a Maurits-cipher text (KHA A13, research request) and the no. 92 key's last stated home is Oldenbarnevelt's papers; cheapest next: NA 1.01.02 inv. 9459 + secrete resoluties inv. 4562 at Oct 1619 (~$2), and the constrained segmentation (~$3)
