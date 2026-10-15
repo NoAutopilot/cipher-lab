@@ -167,8 +167,8 @@ r16	17	8	H	u	S
 r16	18	5	H	r	S
 r16	19	22	H	g	S
 r16	20	6	H	s	S
-r16	21	7	M	t	M
-r16	22	2	M	o	M
+r16	21	7	S	t	S
+r16	22	2	S	o	S
 r17	1	5	H	r	S
 r17	2	20	H	f	S
 r17	3	6	H	s	S
@@ -178,8 +178,8 @@ r17	6	30	H	m	S
 r17	7	10	H	a	S
 r17	8	5	H	r	S
 r17	9	18	H	e	S
-r17	10	5	M	r	M
-r17	11	2	M	o	M
+r17	10	5	S	r	S
+r17	11	2	S	o	S
 r17	12	30	H	m	S
 r17	13	10	H	a	S
 r17	14	13	H	y	S
@@ -189,8 +189,8 @@ r17	17	3	H	p	S
 r17	18	17	H	a	S
 r17	19	5	H	r	S
 r17	20	10	H	a	S
-r17	21	4	M	q	M
-r17	22	8	M	u	M
+r17	21	4	S	q	S
+r17	22	8	S	u	S
 r17	23	31	H	i	S
 r18	1	18	H	e	S
 r18	2	32	H	n	S
@@ -248,8 +248,8 @@ r20	11	5	H	r	S
 r20	12	18	H	e	S
 r20	13	26	H	i	S
 r20	14	6	H	s	S
-r20	15	4	M	q	M
-r20	16	8	M	u	M
+r20	15	4	S	q	S
+r20	16	8	S	u	S
 r20	17	19	H	e	S
 r20	18	6	H	s	S
 r20	19	26	H	i	S
@@ -277,7 +277,7 @@ r21	18	32	H	n	S
 r21	19	19	H	e	S
 r21	20	32	H	n	S
 r22	1	10	H	a	S
-r22	2	4	M	q	M
+r22	2	4	S	q	S
 r22	3	8	H	u	S
 r22	4	18	H	e	S
 r22	5	28	H	l	S
@@ -297,8 +297,8 @@ r22	18	2	H	o	S
 r22	19	30	H	m	S
 r22	20	12	H	b	S
 r22	21	5	H	r	S
-r23	1	18	M	e	M
-r23	2	6	M	s	M
+r23	1	18	S	e	S
+r23	2	6	S	s	S
 r23	3	16	H	d	S
 r23	4	18	H	e	S
 r23	5	21	H	i	S
@@ -320,8 +320,8 @@ r23	20	23	H	o	S
 r24	1	7	H	t	S
 r24	2	5	H	r	S
 r24	3	18	H	e	S
-r24	4	6	M	s	M
-r24	5	5	M	r	M
+r24	4	6	S	s	S
+r24	5	5	S	r	S
 r24	6	18	H	e	S
 r24	7	22	H	g	S
 r24	8	21	H	i	S

@@ -29,3 +29,22 @@ if read (grade M unless the name is on the leaf), every further numeral text wit
 no image committed. If a sender is read, write the "## Premise check" update (edition step now due: name the sender's printed
 correspondence, Japikse/Rijks Geschiedkundige Publicatien, and whether 1621 Heidelberg letters are printed) so the parent can run the intake
 gate. No decode, no key.
+
+## JOB HEID-1621C (account 2; Opus 5.5; cap USD 4; box 60 minutes; resources.huygens.knaw.nl <= 20, archive.org <= 10, de-crypt.org listing <= 5, no images; Price: vision calls: 0 x USD 0 = 0)
+HEID-1621B read the sender: P. van Brederode, agent at Heidelberg, to the States General, 13 Aug 1621 (NA 1.01.02 inv. 6021 scans 375 signed
++ 379 duplicate, same numeral block, 96 numerals, word-level pair+letter code lead). The anonymous-pile path ends; the normal gate applies.
+(1) Check-solved by sender (CLAUDE.md pipeline step 2 and .claude/briefs/check-solved.md): the Resolutien der Staten-Generaal nieuwe reeks,
+1621 volume (Roelevink), around the receipt date 20 Aug 1621, through the Huygens retroboeken search (CLAUDE.md host table: Staten-Generaal
+retroboeken) -- does the resolution summarise or print the letter's content or its cipher; Brederode's printed correspondence (any edition:
+search archive.org and Google Books API with country=US for "Brederode" "Heidelberg" 1621 and the quoted opening "bekomme ick advijs");
+DECODE listing, Cryptiana, both solver repositories, the NA notice for 1.01.02 inv. 6021; `tools/prior_work.py` with the shelfmark. Write
+the "## Premise check" verdict (open / found-solved / blocked, naming the edition and pages actually read, or the one it could not open) in
+a NEW target folder `ciphers/brederode-heidelberg-1621/` (NOTES.md head per rule 5; ciphertext.tsv copied from
+ciphers/oldenbarnevelt-brederode-1605/heid1621/ciphertext_6021_379.tsv with its grades; images manifest entries pointing at the NA scans,
+no image committed; a one-line pointer section "## Split to ciphers/brederode-heidelberg-1621" in the oldenbarnevelt NOTES.md). (2) Run
+`python3 tools/intake_gate_check.py brederode-heidelberg-1621` and paste its output. (3) If the gate passes, write `specs/brederode-
+heidelberg-1621.json` (CLAUDE.md 3a: ciphertext as transcribed with source and date, alphabet = the pair+letter units, constraints = pairs
+are (n, n+1), one unit per word, Dutch 1621, second witness scan 375 for a transcription control, cheap tests in order -- first: unit
+inventory vs a Dutch word-frequency list under a frozen pool, with the matched control a synthetic 21-unit word code of the same length;
+a `judge` block on the nl corpus if tools/data has one, else say so). No decode, no key, no reading. NOTES.md "## HEID-1621C (<date -u>)"
+ending in the verdict and the next breadth row (cap 3) the parent should queue.

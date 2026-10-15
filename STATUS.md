@@ -9837,3 +9837,11 @@ DV-MERCY2 briefed (parent's own worker, brief 2026-10-15-acct4-depth-steps-2.md)
 --try wrong-accept 2/15) -> ten target runs non-test, no value proposed; if ever valued 77.4 -> about 85% H/C/S. HEID-1621: premise check
 open (M), sender not read, 96 numerals transcribed all M, 40/41 pairs (n, n+1), 6.5 units per line = word count -> word-level pair+letter
 code lead; HEID-1621B queued on account 2 (sender + stride-1 neighbours, cap 3). Owner step-1 page still empty; FDR not reported sent.
+
+LANE VIV-KEYSTONE handoff, appended 16:4x UTC 15 Oct 2026 (parent, account 4). DV-MERCY2 (verifier, 2.07): Espagnol 144 f.22 D1 held;
+13 glued-cluster positions enter at S, applied by the parent (S 501 / M 28 of 529, decode_key --check exit 0, depth_pct 94.7); run 89 vs
+AD 125.9 (es17c, corpus-R convention: R 3.4 is a sensitivity figure); D2 blocked by two in-range segmentation choices (26 pairs, 23) and
+code 25's value. HEID-1621B: sender read H on scan 375 -- P. van Brederode, Heidelberg, 13 Aug 1621, to the States General; the same numeral
+block on a signed letter and its duplicate (two witnesses); edition step due (Resolutien SG nieuwe reeks 1621, Roelevink) -> HEID-1621C
+queued on account 2 (check-solved by sender, split to ciphers/brederode-heidelberg-1621, spec). Account 1 paused (seven_day warning).
+Owner step-1 page empty; FDR not reported sent.

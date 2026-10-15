@@ -276,8 +276,8 @@ r16	17	8	H		agree
 r16	18	5	H		agree
 r16	19	22	H		agree
 r16	20	6	H		agree
-r16	21	7	M	one group 72 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r16_p19-21.jpg: t o: burgs-to-rf
-r16	22	2	M	one group 72 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r16_p19-21.jpg: t o: burgs-to-rf
+r16	21	7	S	one group 72 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r16_p19-21.jpg: t o: burgs-to-rf; MERCY-IMG two gated blind readers + DV-MERCY2 rule (out-of-range cluster, one in-key parse), 15 Oct 2026
+r16	22	2	S	one group 72 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r16_p19-21.jpg: t o: burgs-to-rf; MERCY-IMG two gated blind readers + DV-MERCY2 rule (out-of-range cluster, one in-key parse), 15 Oct 2026
 r17	1	5	H		agree
 r17	2	20	H		agree
 r17	3	6	H		agree
@@ -287,8 +287,8 @@ r17	6	30	H		agree
 r17	7	10	H		agree
 r17	8	5	H		agree
 r17	9	18	H		agree
-r17	10	5	M	one group 52 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r17_p9-11.jpg: r o: came-r-o (camarero)
-r17	11	2	M	one group 52 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r17_p9-11.jpg: r o: came-r-o (camarero)
+r17	10	5	S	one group 52 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r17_p9-11.jpg: r o: came-r-o (camarero); MERCY-IMG two gated blind readers + DV-MERCY2 rule (out-of-range cluster, one in-key parse), 15 Oct 2026
+r17	11	2	S	one group 52 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r17_p9-11.jpg: r o: came-r-o (camarero); MERCY-IMG two gated blind readers + DV-MERCY2 rule (out-of-range cluster, one in-key parse), 15 Oct 2026
 r17	12	30	H		agree
 r17	13	10	H		agree
 r17	14	13	H		agree
@@ -298,8 +298,8 @@ r17	17	3	H		agree
 r17	18	17	H		agree
 r17	19	5	H		agree
 r17	20	10	H		agree
-r17	21	4	M	one group 48 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r17_p19-21.jpg: q u: para qu-ien
-r17	22	8	M	one group 48 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r17_p19-21.jpg: q u: para qu-ien
+r17	21	4	S	one group 48 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r17_p19-21.jpg: q u: para qu-ien; MERCY-IMG two gated blind readers + DV-MERCY2 rule (out-of-range cluster, one in-key parse), 15 Oct 2026
+r17	22	8	S	one group 48 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r17_p19-21.jpg: q u: para qu-ien; MERCY-IMG two gated blind readers + DV-MERCY2 rule (out-of-range cluster, one in-key parse), 15 Oct 2026
 r17	23	31	H		agree
 r18	1	18	H		agree
 r18	2	32	H		agree
@@ -357,8 +357,8 @@ r20	11	5	H		agree
 r20	12	18	H		agree
 r20	13	26	H		agree
 r20	14	6	H		agree
-r20	15	4	M	one group 48 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r20_p14-16.jpg: q u: qu-e si se permitira
-r20	16	8	M	one group 48 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r20_p14-16.jpg: q u: qu-e si se permitira
+r20	15	4	S	one group 48 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r20_p14-16.jpg: q u: qu-e si se permitira; MERCY-IMG two gated blind readers + DV-MERCY2 rule (out-of-range cluster, one in-key parse), 15 Oct 2026
+r20	16	8	S	one group 48 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r20_p14-16.jpg: q u: qu-e si se permitira; MERCY-IMG two gated blind readers + DV-MERCY2 rule (out-of-range cluster, one in-key parse), 15 Oct 2026
 r20	17	19	H		agree
 r20	18	6	H		agree
 r20	19	26	H		agree
@@ -386,7 +386,7 @@ r21	18	32	H		agree
 r21	19	19	H		agree
 r21	20	32	H		agree
 r22	1	10	H		agree
-r22	2	4	M		agree-flagged
+r22	2	4	S		agree-flagged; MERCY-IMG two gated blind readers + DV-MERCY2 rule (out-of-range cluster, one in-key parse), 15 Oct 2026
 r22	3	8	H		agree
 r22	4	18	H		agree
 r22	5	28	H		agree
@@ -406,8 +406,8 @@ r22	18	2	H		agree
 r22	19	30	H		agree
 r22	20	12	H		agree
 r22	21	5	H		agree
-r23	1	18	M		agree-flagged
-r23	2	6	M		agree-flagged
+r23	1	18	S		agree-flagged; MERCY-IMG two gated blind readers + DV-MERCY2 rule (out-of-range cluster, one in-key parse), 15 Oct 2026
+r23	2	6	S		agree-flagged; MERCY-IMG two gated blind readers + DV-MERCY2 rule (out-of-range cluster, one in-key parse), 15 Oct 2026
 r23	3	16	H		agree
 r23	4	18	H		agree
 r23	5	21	H		agree
@@ -429,8 +429,8 @@ r23	20	23	H		agree
 r24	1	7	H		agree
 r24	2	5	H		agree
 r24	3	18	H		agree
-r24	4	6	M	transcribed 65; a gap and a crease run between the 6 and the 5 on the image	split, Bourdeau 1 Oct 2026, checked on image h2crops/h10h11_crop_A.jpg: s r: tre-s r-egimientos
-r24	5	5	M	transcribed 65; a gap and a crease run between the 6 and the 5 on the image	split, Bourdeau 1 Oct 2026, checked on image h2crops/h10h11_crop_A.jpg: s r: tre-s r-egimientos
+r24	4	6	S	transcribed 65; a gap and a crease run between the 6 and the 5 on the image	split, Bourdeau 1 Oct 2026, checked on image h2crops/h10h11_crop_A.jpg: s r: tre-s r-egimientos; MERCY-IMG two gated blind readers + DV-MERCY2 rule (out-of-range cluster, one in-key parse), 15 Oct 2026
+r24	5	5	S	transcribed 65; a gap and a crease run between the 6 and the 5 on the image	split, Bourdeau 1 Oct 2026, checked on image h2crops/h10h11_crop_A.jpg: s r: tre-s r-egimientos; MERCY-IMG two gated blind readers + DV-MERCY2 rule (out-of-range cluster, one in-key parse), 15 Oct 2026
 r24	6	18	H		agree
 r24	7	22	H		agree
 r24	8	21	H		agree
