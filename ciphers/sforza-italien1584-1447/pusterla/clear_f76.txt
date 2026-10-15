@@ -1,0 +1,40 @@
+# BnF italien 1584 f.76 (Gallica ark:/12148/btv1b100373864 canvas 73 right page, ending on canvas 74 left page), later-hand clear
+# copy headed "8 mars [1447]" of Pietro de Pusterla's cipher slip f.77 (canvas 74 right). Read by eye by PUST-U5 (15 Oct 2026) from
+# the native regions f77/src_*_f73_4600_150_2900_4900.jpg (recto) and f77/src_*_f74_1600_950_1600_1300.jpg (verso); accents and
+# apostrophes dropped; copyist blanks marked [ ] (three, each with a mark in the margin, probably uncopied name codes, inferred).
+# Interlinear corrections in the copy are taken in place of the underlined words they sit over: dimorarse -> moverse, pur -> non pur,
+# so aviati -> son tornati, avio -> avi ho, caldamente -> a caldamente, e -> et, a -> al. "lo il mio se" (underlined, uncorrected) kept.
+# The clear dateline and subscription ("Datum Ferarie die octava Martij. / C. M. E. V. / Humilis Servitor Petrus de Pusterla") are
+# omitted: f.77 is wholly cipher below its header "1447 8 Mars" (f.80 convention).
+Hogi son undece di che gionsi qua, e prima et dapoi piu volte
+o scripto a V.S. che mandase qua uno de soi, che l
+daria vinti milia ducati, e mai non ho havuto re
+sposta, di che ne son in grandisimo fano. Suspico che
+i messi non siano mal capitati. Questa o duplicata,
+e mandata per la via del [ ], l altra per
+la via d Epelino, acioche una ne gionga a V.S., la
+quale adviso per quanto sento da questo Segnore
+Duca di Ferara, che domenicha il [ ] vene
+con tuto l exercito de Venetiani a Cremona cridando
+viva San Marco, e che subito i Gibelini e i Mal
+traversi fureno insema con le gente d arme de
+V.S. e mostravono tale animosita e fidelta verso
+quela, che neuno de Guelfi fu ardito moverse, e
+veduto il [ ], che non pur gli era dato altra
+audientia se n e tornato adietro. Per quelo che ha
+il Duca di Ferara son tornati verso Bordolano, e Gioane
+Filipo pare che sia andato da egli. Quelo sentiro
+piu ultra ne advisaro V.S., la quale prego, se non ha
+mandato a tore i dinari che o qua, la gli manda,
+e si me advisa del modo ho a tenire nel mio venire
+a quela, perche posa venire ad exequire quanto
+me comiso lo il mio se. Apreso come vero servitore de
+V.S. la conforto a volerse asicurare et chiarirse col
+Conte d Urbino, e questo dico, perche ho da persona
+degna, che l e in stricta pratica cum Venetiani e
+indispositione de non venire in Lombardia con V.S.
+Per altro vi ho scrito pregandove a caldamente
+stringere et seguire la pratica di Bologna, perche
+vi venera facta, et cosi vi replico de novo, et a lode
+vi coca tal ovo, che viene al V.S., cavezandolo ben
+me rendo certo fara quanto quela vora.
