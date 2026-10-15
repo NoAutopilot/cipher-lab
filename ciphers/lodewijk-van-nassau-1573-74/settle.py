@@ -355,6 +355,24 @@ def main():
                     ins = list(csv.DictReader(fh, delimiter="\t"))
                 i0 = next(i for i, r in enumerate(draft) if r["line"] == "p3_L01")
                 draft[i0:i0] = ins
+            # LVN-P2RETX (15 Oct 2026): ink runs of the deskewed 4611 p2 physical lines K13-K35 that no 150-dpi row carries (free read,
+            # 2 blind passes + reconcile, PREREG-LVN-4611.md addendum LVN-P2RETX), inserted M beside the row mapped to the neighbouring
+            # ink token; existing rows unchanged (their map is lvn4611/retx_p2_map.tsv).
+            ip = HERE / "lvn4611" / "insert_p2retx.tsv"
+            if ip.exists():
+                groups = {}
+                with open(ip, newline="", encoding="utf-8") as fh:
+                    for r in csv.DictReader(fh, delimiter="\t"):
+                        key = (r.pop("anchor"), r.pop("anchor_line"), r.pop("anchor_position"))
+                        groups.setdefault(key, []).append(r)
+                keys = {(r["line"], r["position"]) for r in draft}
+                assert all((l, q) in keys for _, l, q in groups), "LVN-P2RETX anchor row missing"
+                out = []
+                for r in draft:
+                    out += groups.get(("before", r["line"], r["position"]), [])
+                    out.append(r)
+                    out += groups.get(("after", r["line"], r["position"]), [])
+                draft[:] = out
         summary[nr] = stats
         cipher_path = HERE / f"ciphertext_{nr}.tsv"
         log_path = HERE / f"settle_log_{nr}.tsv"

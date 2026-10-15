@@ -1968,3 +1968,12 @@ a solver's record, not a verifier's ruling: the five settles and the 46 confirma
 verifier: 4611 p2's 150-dpi lines p2_L13-L33 mix neighbouring physical lines (the text slopes; 35 physical lines, 33 transcribed) and several
 runs of ink are in no row, so the 4611 p2 decode from p2_L13 down reads tokens out of their written order. N-class and depth not re-assigned
 here; no safe sentence or status.json depth_sentence was checked against p2_L13-L33 by this job (next: the verifier's grep, ~$0.3).
+
+## LVN-P2RETX (15 Oct 2026, 08:1x UTC by date -u; solver job, account 4) -- reading revised after this AUDIT.md, carried here (rule 10 propagation)
+
+4611 p2 mixed lines re-transcribed on the deskewed physical lines K13-K35 (NOTES.md "LVN-P2RETX"; PREREG 209edcc02): 4 blind free-read calls,
+controls 16/20, 17/20, 16/19, 17/19 PASS. 127 ink tokens in no 150-dpi row inserted as M rows (p2_R*); no existing row edited or regraded.
+**Counts:** 4611 full 1412 -> 1521 tokens, C 998 unchanged, M 214 -> 310, I 67 -> 70, U 130 -> 140; 4610/4611/4616 C/H 2487 of 3345 (74.3%),
+four letters 2487 of 4178 (59.5%) -- the percentages fall because the denominator grew, not because a reading was withdrawn. Eleven H rows on
+p2_L16-L30 are contradicted by the reconciled ink (NOTES.md list) and two have no ink token: for the verifier. N-class and depth not
+re-assigned here; any depth_pct quoted from the 2435/2487-of-3236 figures is now over the 4611 p2 denominator by 109 tokens.

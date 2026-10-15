@@ -4855,3 +4855,49 @@ each): 4611 p2b per the PREREG, ~$6; a re-transcription of the 4611 p2 lines the
 physical lines as LVN-L1 did for p3_L00, with the missing runs inserted), ~$5 -- this would make p2b's per-token settle mostly unnecessary;
 eye check of p2_L05/10 (H 29, read 23?), ~$0.3. Requests: resources.huygens.knaw.nl 1. Subagents: 4 Sonnet calls. No judge run. Novelty not
 classified.
+
+## LVN-P2RETX: re-transcription of the mixed 4611 p2 lines K13-K35 (15 Oct 2026, 07:5x-08:1x UTC by date -u, account 4, LANE DEFAULT-A4-0645-15)
+
+Step: LVN-4611P2's named next step "a re-transcription of the 4611 p2 lines the 150-dpi boxes mixed (K13-K35, free read on the deskewed
+physical lines as LVN-L1 did for p3_L00, with the missing runs inserted)". A transcription repair: **no existing row was edited, deleted or
+regraded, and the p2b per-token settle was not run.** Addendum `lvn4611/PREREG-LVN-4611.md` "LVN-P2RETX" pushed 209edcc02 before any read.
+Prior work: `tools/prior_work.py lodewijk-van-nassau-1573-74 --item-spec 'wvo=4611;folio=p2' --step-type transcribe --offline` exit 4 at
+07:59 UTC (own-work LEADs, Groen t. IV LEAD, two generic UNCHECKED; none bears on a transcription re-read; prior-work.tsv 485d09bdb). Route:
+WVO 04611.pdf fetched once (resources.huygens.knaw.nl, HTTP 200, 3,758,971 bytes, take/release in ROOM.md), p2 at 300 dpi, sha1 36399838ce5c
+(same render as LVN-4611P2). Lines: `python3 tools/iiif_lines.py --image <p2 png> --region 250,140,2200,3000 --prefix p2 --deskew --centres
+$(cat lvn4611/p2_centres.txt) --out <scratch>` (35 lines, K01-K35). Images in scratch only, never in git.
+
+Method: `lvn4611/retx_p2.py crops` cut each line in two at the inter-token gap nearest the middle and shuffled the halves per call under
+opaque ids (`lvn4611/retx_p2_key.tsv`). Four blind Sonnet calls, free read (batch 1 K13-K24 + control K04, batch 2 K25-K35 + control K12;
+reads `lvn4611/reads_p2retx.tsv`). **Controls (gate >= 80% of the control line's H numerals): A1 16/20, B1 17/20, A2 16/19, B2 17/19 -- all
+PASS** (A1 and A2 on the gate line). A = B on 416 of 463 ink tokens; of the other 47, 17 numerals were reconciled by one Opus look each
+(`lvn4611/recon_p2.tsv`, reasons per row; this hand writes 3 and 8 with one glyph, so 35/85 and 30/80 calls there stay doubtful) and 30 words
+taken from A. Result: `lvn4611/retx_p2_lines.tsv` (463 tokens on K13-K35).
+
+Map (`lvn4611/retx_p2_map.tsv`, `retx_p2.py write`; blocks of >= 2 equal tokens first, then gaps, heads and tails positionally when the
+two runs agree in kind and half look alike, else single value matches): the 391 non-blank rows of p2_L13-L33 are **284 match, 52 differs,
+27 duplicate, 28 no-ink**. 336 ink tokens are carried by a row; **127 ink tokens (109 numerals, 18 words) are carried by none** and are
+inserted by `settle.py` as M rows `p2_R<K><run>` (`lvn4611/insert_p2retx.tsv`, 109 from A = B, 18 reconciled; agreement in the alt
+column) beside the row mapped to the neighbouring ink token. The runs include the four LVN-4611P2 named by eye (K13 "77 37 5 85 312",
+K15 head "71 9 39 25 105 24 124 147", K16 "4 84 150 90 81 21 61 122", the K27 line "qm 118 63 113 61 103 26 81 ...") and whole lines
+K29, K30 (partly) and K33 (tail) that the 150-dpi rows skipped. The duplicate and no-ink rows stay in the ciphertext: the decode of
+p2_L13-L33 therefore still carries pass duplicates and is still out of written order; only the missing ink is now present.
+
+H rows the reconciled ink contradicts (finding for a verifier, nothing changed): p2_L16/3 149 (ink 143), p2_L16/6 81 (85), p2_L17/11 104
+(204), p2_L19/13 150 (A = B 250, likely the same flourished 1 the reconcile read as 1 at K20/15, K23/21), p2_L22/5-6 86 117 (85 118),
+p2_L22/16 17 (13), p2_L23/4-8 =aray 71 5 . 35 (=firay 31 6 . 33), p2_L30/23 32 (34); and p2_L15/14 119, p2_L18/11 94 with no ink token.
+
+**Residual for p2b** (161 M numeral targets on p2_L19-L33): 112 now match the reconciled ink (107 A = B, 5 reconciled), 23 differ, 14
+are duplicates, 12 have no ink token. p2a's lines L13-L18 for comparison: 25 M numerals left, 13 match (A = B), 8 differ, 4 dup, 4 no-ink.
+
+Counts (rule 4): ciphertext_4611.tsv +127 rows (all M), 1776 -> 1903 lines. reading_4611_full_tokens.tsv (decode_4611_full.json) 1412 ->
+1521 tokens: **C 998 -> 998, M 214 -> 310, I 67 -> 70, U 130 -> 140, H 3**. decode.json 4611 (key.tsv): C 925, M 185 -> 270, I 71 -> 75,
+U 231 -> 251. C/H unchanged (2487); denominators grow: 4610/4611/4616 2487 of 3345 (74.3%), four letters 2487 of 4178 (59.5%). Checks:
+`decode_key.py --check` exit 0 for all 13 decode*.json; `settle.py --check`, `lvn4611/settle.py --check`, `lvn4611/build_key.py --check`,
+`lvn4611/build_key_p2.py --check`, `lvn4611/settle_p3L00.py --check`, `lvn10/apply.py --check`, `lvn16/apply.py --check`,
+`lvn4611/retx_p2.py check`, `axnames/revisions.py --check` (regenerated) exit 0. The 4611 reading changed after AUDIT.md: carried into
+AUDIT.md "LVN-P2RETX"; the lane already holds one verifier for 4611 p2 after RETX/p2b. Requests: resources.huygens.knaw.nl 1. Subagents: 4
+Sonnet calls. No judge run. Novelty not classified.
+Next (one line each): p2b settle re-briefed on the map (rows `match` with A = B settle under a pre-registered rule; differs/dup/no-ink rows
+need an ordering repair), ~$2; an ordering repair of p2_L13-L33 (rows re-sequenced and duplicates retired by K position, a pre-registered
+rewrite of those lines from retx_p2_lines.tsv), ~$2; verifier eye on the 11 H rows above, ~$0.5.

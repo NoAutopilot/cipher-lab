@@ -1,0 +1,392 @@
+line	position	sign	confidence	K	kpos	ink	status
+p2_L13	1	65	H	K13	3	65	match
+p2_L13	2	26	H	K13	4	26	match
+p2_L13	3	30	H	K13	5	30	match
+p2_L13	4	81	M	K13	6	81	match
+p2_L13	5	36	H	K13	7	36	match
+p2_L13	6	21	H	K13	8	21	match
+p2_L13	7	81	M	K13	9	81	match
+p2_L13	8	1	H	K13	10	1	match
+p2_L13	9	71	H	K13	11	71	match
+p2_L13	10	84	H	K13	12	84	match
+p2_L13	11	150	M	K13	13	150	match
+p2_L13	12	127	H	K13	14	127	match
+p2_L13	13	148	M	K13	15	148	match
+p2_L13	14	=Il	M	K14	1	=il	match
+p2_L13	15	=y	M	K14	2	=y	match
+p2_L13	16	=auroit	M	K14	3	=auroit	match
+p2_L13	17	19	H	K14	4	19	match
+p2_L13	18	40	H	K14	5	40	match
+p2_L13	19	73	M				no-ink
+p2_L14	1	9	M				duplicate
+p2_L14	2	42	M				no-ink
+p2_L14	3	82	H	K14	6	82	match
+p2_L14	4	114	H	K14	7	114	match
+p2_L14	5	18	M	K14	8	18	match
+p2_L14	6	39	M	K14	9	39	match
+p2_L14	7	85	M	K14	10	85	match
+p2_L14	8	127	H	K14	11	127	match
+p2_L14	9	89	H	K14	12	89	match
+p2_L14	10	10	H	K14	13	10	match
+p2_L14	11	5	H	K14	14	5	match
+p2_L14	12	79	H	K14	15	79	match
+p2_L14	13	84	H	K14	16	84	match
+p2_L14	14	120	H	K14	17	120	match
+p2_L14	15	83	H	K14	18	83	match
+p2_L14	16	3	M	K14	19	3	match
+p2_L14	17	35	H	K14	20	35	match
+p2_L14	18	140	M	K14	21	146	differs
+p2_L14	19	125	M	K14	22	125	match
+p2_L14	20	=mayo	M	K15	1	=maya	match
+p2_L14	21	=de	M	K15	2	=de	match
+p2_L15	1	311	M	K16	1	311	match
+p2_L15	2	=octa	M	K16	2	=cela	differs
+p2_L15	3	=a	M	K16	3	=a	match
+p2_L15	4	=moy	M	K16	4	=moy	match
+p2_L15	5	=advis	M	K16	5	=admis	match
+p2_L15	6	26	H	K15	11	26	match
+p2_L15	7	82	H	K15	12	82	match
+p2_L15	8	114	M				duplicate
+p2_L15	9	18	M	K15	13	38	differs
+p2_L15	10	39	M	K15	14	115	differs
+p2_L15	11	85	M	K15	15	85	match
+p2_L15	12	111	M				no-ink
+p2_L15	13	85	H				duplicate
+p2_L15	14	119	H				no-ink
+p2_L15	15	81	H	K15	17	81	match
+p2_L15	16	4	H	K15	18	4	match
+p2_L15	17	74	M				no-ink
+p2_L15	18	35	H	K15	19	35	match
+p2_L15	19	114	H	K15	20	114	match
+p2_L15	20	82	H	K15	21	82	match
+p2_L16	1	82	H	K17	1	82	match
+p2_L16	2	22	H	K17	2	22	match
+p2_L16	3	149	H	K17	3	143	differs
+p2_L16	4	=de	M	K17	4	=de	match
+p2_L16	5	77	H	K17	5	77	match
+p2_L16	6	81	H	K17	6	85	differs
+p2_L16	7	28	M	K17	7	26	differs
+p2_L16	8	71	M	K17	8	30	differs
+p2_L16	9	14	H	K16	14	14	match
+p2_L16	10	64	H	K16	15	64	match
+p2_L16	11	28	H	K16	16	28	match
+p2_L16	12	71	H	K16	17	71	match
+p2_L16	13	100	M	K16	18	200	differs
+p2_L16	14	65	H	K16	19	65	match
+p2_L16	15	5	H	K16	20	5	match
+p2_L16	16	95	H	K16	21	95	match
+p2_L17	1	62	H	K18	1	62	match
+p2_L17	2	72	H	K18	2	72	match
+p2_L17	3	17	H	K18	3	17	match
+p2_L17	4	37	H	K18	4	37	match
+p2_L17	5	81	H	K18	5	81	match
+p2_L17	6	21	H	K18	6	21	match
+p2_L17	7	65	M				duplicate
+p2_L17	8	122	H				duplicate
+p2_L17	9	14	M				duplicate
+p2_L17	10	64	M	K17	9	84	differs
+p2_L17	11	104	H	K17	10	204	differs
+p2_L17	12	4	H	K17	11	4	match
+p2_L17	13	125	M	K17	12	125	match
+p2_L17	14	135	M	K17	13	136	differs
+p2_L17	15	63	H	K17	14	63	match
+p2_L17	16	39	H	K17	15	39	match
+p2_L17	17	150	H	K17	16	150	match
+p2_L17	18	200	H	K17	17	200	match
+p2_L17	19	=et	H	K17	18	=et	match
+p2_L17	20	=s	M				duplicate
+p2_L17	21	=un	M				no-ink
+p2_L18	1	117	H	K19	1	117	match
+p2_L18	2	63	H	K19	2	63	match
+p2_L18	3	111	H	K19	3	111	match
+p2_L18	4	36	H	K19	4	36	match
+p2_L18	5	81	H	K19	5	81	match
+p2_L18	6	101	H	K19	6	101	match
+p2_L18	7	112	H	K19	7	112	match
+p2_L18	8	115	M	K19	8	115	match
+p2_L18	9	61	H	K19	9	61	match
+p2_L18	10	=Que	S				no-ink
+p2_L18	11	94	H				no-ink
+p2_L18	12	24	H	K18	14	24	match
+p2_L18	13	64	H	K18	15	64	match
+p2_L18	14	4	H	K18	16	4	match
+p2_L18	15	79	H	K18	17	79	match
+p2_L18	16	82	H	K18	18	82	match
+p2_L18	17	122	H	K18	19	122	match
+p2_L18	18	143	H	K18	20	143	match
+p2_L19	1	12	H	K20	1	12	match
+p2_L19	2	62	H	K20	2	62	match
+p2_L19	3	22	H	K20	3	22	match
+p2_L19	4	=Il	M	K20	4	31	differs
+p2_L19	5	10	H	K20	5	10	match
+p2_L19	6	37	M	K20	6	37	match
+p2_L19	7	85	M	K19	14	135	differs
+p2_L19	8	63	M	K19	15	65	differs
+p2_L19	9	40	H	K19	16	40	match
+p2_L19	10	311	H	K19	17	311	match
+p2_L19	11	84	H	K19	18	84	match
+p2_L19	12	34	H	K19	19	34	match
+p2_L19	13	150	H	K19	20	250	differs
+p2_L20	1	101	H	K21	1	101	match
+p2_L20	2	2	H	K21	2	2	match
+p2_L20	3	245	M	K21	3	141	differs
+p2_L20	4	200	M	K21	4	300	differs
+p2_L20	5	65	M	K21	5	66	differs
+p2_L20	6	142	M	K20	8	142	match
+p2_L20	7	125	M	K20	9	125	match
+p2_L20	8	137	M	K20	10	137	match
+p2_L20	9	=Respire	M	K20	11	=tesprise	differs
+p2_L20	10	60	M	K20	12	=vo?	differs
+p2_L20	11	=survient	M	K20	13	=sinoyre	match
+p2_L20	12	=aussi	M	K20	14	=aur	match
+p2_L20	13	150	H	K20	15	150	match
+p2_L20	14	200	H	K20	16	200	match
+p2_L20	15	81	H	K20	17	81	match
+p2_L20	16	111	H	K20	18	111	match
+p2_L21	1	57	H	K22	1	57	match
+p2_L21	2	120	M				duplicate
+p2_L21	3	=entre	S	K22	3	=entre	match
+p2_L21	4	=le	M				no-ink
+p2_L21	5	8	H				duplicate
+p2_L21	6	2	H	K21	7	2	match
+p2_L21	7	26	H	K21	8	26	match
+p2_L21	8	100	H	K21	9	100	match
+p2_L21	9	7	H	K21	10	7	match
+p2_L21	10	116	H	K21	11	116	match
+p2_L21	11	120	H	K21	12	120	match
+p2_L21	12	82	H	K21	13	82	match
+p2_L21	13	27	H	K21	14	27	match
+p2_L21	14	142	H	K21	15	142	match
+p2_L21	15	128	H	K21	16	128	match
+p2_L21	16	71	H	K21	17	71	match
+p2_L21	17	99	H	K21	18	99	match
+p2_L21	18	8	H	K21	19	8	match
+p2_L21	19	102	H	K21	20	102	match
+p2_L21	20	28	H	K21	21	28	match
+p2_L21	21	103	M	K21	22	103	match
+p2_L22	1	119	H	K23	1	119	match
+p2_L22	2	36	M	K23	2	85	differs
+p2_L22	3	7	M	K23	3	3	differs
+p2_L22	4	77	H	K23	4	77	match
+p2_L22	5	86	H	K23	5	85	differs
+p2_L22	6	117	H	K23	6	118	differs
+p2_L22	7	=y	M	K22	7	=y	match
+p2_L22	8	=a	M	K22	8	=a	match
+p2_L22	9	67	H	K22	9	67	match
+p2_L22	10	83	H	K22	10	83	match
+p2_L22	11	61	M	K22	11	61	match
+p2_L22	12	36	H	K22	12	36	match
+p2_L22	13	72	H	K22	13	72	match
+p2_L22	14	9	H	K22	14	9	match
+p2_L22	15	38	M	K22	15	38	match
+p2_L22	16	17	H	K22	16	13	differs
+p2_L22	17	139	H	K22	17	139	match
+p2_L22	18	148	H	K22	18	148	match
+p2_L22	19	76	H	K22	19	76	match
+p2_L22	20	84	H	K22	20	84	match
+p2_L22	21	74	H	K22	21	74	match
+p2_L22	22	10	H	K22	22	10	match
+p2_L22	23	117	H	K22	23	117	match
+p2_L23	1	=dont	M	K24	1	=dont	match
+p2_L23	2	=mescripuez	M	K24	2	=inscripuz	differs
+p2_L23	3	=de	M	K24	3	=je	differs
+p2_L23	4	=aray	H	K24	4	=firay	differs
+p2_L23	5	71	H	K24	5	31	differs
+p2_L23	6	5	H	K24	6	6	differs
+p2_L23	7	36	M	K24	7	36	match
+p2_L23	8	35	H	K24	8	33	differs
+p2_L23	9	140	H	K24	9	140	match
+p2_L23	10	71	H	K24	10	71	match
+p2_L23	11	54	M				no-ink
+p2_L23	12	=Quant	M	K23	13	=quanta	match
+p2_L23	13	=a	M				duplicate
+p2_L23	14	97	M	K23	14	97	match
+p2_L23	15	82	M	K23	15	82	match
+p2_L23	16	6	M	K23	16	6	match
+p2_L23	17	21	M	K23	17	21	match
+p2_L23	18	92	M	K23	18	92	match
+p2_L23	19	82	M	K23	19	82	match
+p2_L23	20	29	M	K23	20	29	match
+p2_L23	21	150	M	K23	21	150	match
+p2_L24	1	12	H	K25	1	12	match
+p2_L24	2	10	M	K25	2	10	match
+p2_L24	3	39	H	K25	3	39	match
+p2_L24	4	23	H	K25	4	23	match
+p2_L24	5	25	H	K25	5	25	match
+p2_L24	6	62	H	K25	6	62	match
+p2_L24	7	51	H	K25	7	51	match
+p2_L24	8	149	H	K25	8	149	match
+p2_L24	9	=maya	M	K25	9	=maya	match
+p2_L24	10	=a	M				no-ink
+p2_L24	11	=xxroy	M				no-ink
+p2_L24	12	=guc	M	K25	12	=gui	match
+p2_L24	13	=est	M				no-ink
+p2_L24	14	61	H	K25	15	61	match
+p2_L24	15	14	H	K25	16	14	match
+p2_L24	16	24	H	K25	17	24	match
+p2_L24	17	34	M	K25	18	84	differs
+p2_L25	1	38	M	K26	1	38	match
+p2_L25	2	51	M	K26	2	51	match
+p2_L25	3	82	H	K26	3	82	match
+p2_L25	4	116	M	K26	4	116	match
+p2_L25	5	15	M	K26	5	15	match
+p2_L25	6	81	M	K26	6	81	match
+p2_L25	7	27	M	K26	7	27	match
+p2_L25	8	75	M	K26	8	75	match
+p2_L25	9	98	M	K26	9	98	match
+p2_L25	10	81	M	K26	10	85	differs
+p2_L25	11	124	M	K26	11	125	differs
+p2_L25	12	64	M	K26	12	64	match
+p2_L25	13	104	M	K26	13	104	match
+p2_L25	14	114	M	K26	14	114	match
+p2_L25	15	111	S	K26	15	111	match
+p2_L25	16	83	S	K26	16	83	match
+p2_L25	17	36	M	K26	17	36	match
+p2_L25	18	24	M	K26	18	24	match
+p2_L25	19	30	M	K26	19	30	match
+p2_L25	20	280	M	K26	20	150	differs
+p2_L26	1	=auoir	M	K28	1	=auoir	match
+p2_L26	2	65	M	K28	2	63	differs
+p2_L26	3	39	M	K28	3	39	match
+p2_L26	4	61	M	K28	4	61	match
+p2_L26	5	2	M	K28	5	2	match
+p2_L26	6	31	M	K28	6	31	match
+p2_L26	7	114	M	K28	7	114	match
+p2_L26	8	100	M	K28	8	100	match
+p2_L26	9	54	M	K28	9	54	match
+p2_L26	10	38	M	K28	10	38	match
+p2_L26	11	84	M	K28	11	84	match
+p2_L26	12	24	M	K28	12	24	match
+p2_L26	13	124	M	K28	13	124	match
+p2_L26	14	149	M	K28	14	149	match
+p2_L26	15	=Tres	M	K28	15	=tr	match
+p2_L26	16	60	M	K28	16	60	match
+p2_L26	17	=sinuoy	M	K28	17	=sinoy	match
+p2_L26	18	12	M	K28	18	12	match
+p2_L26	19	101	M	K28	19	101	match
+p2_L27	1	=avoir	M				duplicate
+p2_L27	2	85	M	K27	9	85	match
+p2_L27	3	39	M				duplicate
+p2_L27	4	61	M				duplicate
+p2_L27	5	8	M				no-ink
+p2_L27	6	31	M	K29	6	31	match
+p2_L27	7	114	M				duplicate
+p2_L27	8	26	M	K30	1	26	match
+p2_L27	9	6	M	K30	2	6	match
+p2_L27	10	104	M	K30	3	104	match
+p2_L27	11	84	H				duplicate
+p2_L27	12	24	M				duplicate
+p2_L27	13	14	M	K30	5	14	match
+p2_L27	14	64	M	K30	6	64	match
+p2_L27	15	30	M				duplicate
+p2_L27	16	=loqus	M	K29	15	=loquet	match
+p2_L27	17	=treuve	M				duplicate
+p2_L27	18	=guil	M	K29	17	=guit	match
+p2_L27	19	1	M	K29	18	1	match
+p2_L27	20	84	M	K29	19	84	match
+p2_L28	1	83	M	K31	1	83	match
+p2_L28	2	3	M	K31	2	3	match
+p2_L28	3	33	M	K31	3	33	match
+p2_L28	4	84	H	K31	4	84	match
+p2_L28	5	14	M				duplicate
+p2_L28	6	64	M				duplicate
+p2_L28	7	30	M				no-ink
+p2_L28	8	80	M				no-ink
+p2_L28	9	22	M	K29	8	22	match
+p2_L28	10	17	M	K29	9	17	match
+p2_L28	11	147	M	K31	5	147	match
+p2_L28	12	85	M	K31	6	85	match
+p2_L28	13	5	M	K31	7	5	match
+p2_L28	14	111	M	K31	8	111	match
+p2_L28	15	46	M	K30	15	40	differs
+p2_L28	16	12	M	K30	16	12	match
+p2_L28	17	82	M	K30	17	82	match
+p2_L28	18	22	M	K30	18	22	match
+p2_L28	19	102	M	K30	19	102	match
+p2_L28	20	117	M	K30	20	117	match
+p2_L29	1	=ma	M	K32	1	=ma	match
+p2_L29	2	=tout	M	K32	2	=toutesfoys	match
+p2_L29	3	=effroya	M				no-ink
+p2_L29	4	=tousiours	M	K32	3	=tonsiouna	match
+p2_L29	5	=semble	M	K32	4	=subc	match
+p2_L29	6	=auoir	M	K32	6	=auoir	match
+p2_L29	7	65	M				no-ink
+p2_L29	8	21	M	K31	10	21	match
+p2_L29	9	71	M	K31	11	71	match
+p2_L29	10	96	M				no-ink
+p2_L29	11	101	M	K31	14	101	match
+p2_L29	12	81	M	K31	15	81	match
+p2_L29	13	81	M	K31	16	81	match
+p2_L29	14	72	M	K31	17	72	match
+p2_L29	15	32	M	K31	18	32	match
+p2_L29	16	=faisant	S	K31	19	37	differs
+p2_L29	17	23	M	K31	20	23	match
+p2_L29	18	84	M	K31	21	84	match
+p2_L29	19	=avoir	S				duplicate
+p2_L30	1	65	M	K33	1	61	differs
+p2_L30	2	36	M	K33	2	36	match
+p2_L30	3	130	M	K33	3	150	differs
+p2_L30	4	87	M	K33	4	87	match
+p2_L30	5	64	M	K33	5	64	match
+p2_L30	6	104	M	K33	6	104	match
+p2_L30	7	74	M	K33	7	74	match
+p2_L30	8	34	M	K33	8	34	match
+p2_L30	9	33	M				duplicate
+p2_L30	10	71	M				duplicate
+p2_L30	11	56	M				no-ink
+p2_L30	12	74	M				duplicate
+p2_L30	13	8	M	K32	8	8	match
+p2_L30	14	4	M	K32	9	4	match
+p2_L30	15	140	M	K32	10	140	match
+p2_L30	16	104	M	K32	11	104	match
+p2_L30	17	37	H	K32	12	37	match
+p2_L30	18	92	M	K32	13	92	match
+p2_L30	19	82	H	K32	14	82	match
+p2_L30	20	118	M	K32	15	118	match
+p2_L30	21	83	M	K32	16	83	match
+p2_L30	22	3	M	K32	17	3	match
+p2_L30	23	32	H	K32	18	34	differs
+p2_L30	24	134	M	K32	19	184	differs
+p2_L31	1	142	M				no-ink
+p2_L31	2	123	M				no-ink
+p2_L31	3	63	M	K34	1	63	match
+p2_L31	4	34	H	K34	2	34	match
+p2_L31	5	77	M				duplicate
+p2_L31	6	86	M				no-ink
+p2_L31	7	104	M	K34	3	104	match
+p2_L31	8	9	M	K34	4	9	match
+p2_L31	9	5	M	K34	5	5	match
+p2_L31	10	29	M	K34	6	29	match
+p2_L31	11	129	M	K34	7	129	match
+p2_L31	12	137	M				no-ink
+p2_L31	13	=Estamens	M				no-ink
+p2_L31	14	=estans	M				no-ink
+p2_L31	15	=ce	M				no-ink
+p2_L32	1	142	M	K35	1	142	match
+p2_L32	2	123	M	K35	2	123	match
+p2_L32	3	84	M	K35	3	84	match
+p2_L32	4	34	M	K35	4	34	match
+p2_L32	5	77	M	K35	5	77	match
+p2_L32	6	86	M	K35	6	85	differs
+p2_L32	7	27	M	K35	7	27	match
+p2_L32	8	31	M	K35	8	30	differs
+p2_L32	9	111	M	K35	9	101	differs
+p2_L32	10	24	M	K35	10	5	differs
+p2_L32	11	74	M	K35	11	82	differs
+p2_L32	12	26	M	K34	14	26	match
+p2_L32	13	6	M	K34	15	6	match
+p2_L32	14	111	M	K34	16	111	match
+p2_L32	15	36	M	K34	17	36	match
+p2_L32	16	82	M	K34	18	82	match
+p2_L32	17	27	M	K34	19	27	match
+p2_L33	1	88	M				duplicate
+p2_L33	2	71	M				no-ink
+p2_L33	3	21	M				duplicate
+p2_L33	4	29	M	K35	13	29	match
+p2_L33	5	148	M	K35	14	148	match
+p2_L33	6	187	M	K35	15	137	differs
+p2_L33	7	=Je	M	K35	16	=je	match
+p2_L33	8	=croy	M	K35	17	=voy	differs
+p2_L33	9	=que	M	K35	18	=a	differs
+p2_L33	10	=vous	M	K35	19	=soun	differs
+p2_L33	11	=trouvez	M	K35	20	=troumbrg	match
