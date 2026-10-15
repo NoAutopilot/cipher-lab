@@ -357,3 +357,6 @@ the strongest new material (a held key or a sibling folder) once reproduced. Re-
 - fr3982-nevers-toscana-1592 was worked overnight by LANE DEFAULT-A2-2209-14 from this lane's handoff (TUSC-KEYS, TUSC-XM, NO70-WORDS);
   this lane leaves it to that lane's next list to avoid duplicate spend.
 - BNF-GIEVRE-SORT briefed: blind sorter for fr.3985 f.89's 92 key no.60 tags (passes agree 0.744 -> a person's pass per Usage 6), ~$1.5.
+- Wave 36 close (06:5x UTC by date -u): BNF-GIEVRE-SORT (0.98) built the f.89 blind sorter (119 tiles, 46 focus; gesture/pan
+  preflight checks to finish before publishing), ASKS 169. LANE BNF-FOCUS is idle-standing, blocked on ASKS 163 and 169, with the
+  daily solver-repository re-screen kept (brief). 15 Oct spend: 0.98.

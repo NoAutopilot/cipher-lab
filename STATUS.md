@@ -9442,6 +9442,9 @@ Tuscan candidate keys for fr.3982 f.25, held until ASKS 163 lands (no point test
 (ca.1590, after Monts de Savasse 1997), guicciardini1.png (1593, after Speziali 1955), and the 1597 key Lasry used for Dupuy 155
 (Cryptiana's reconstruction from Dupuy 63 f.48). The lane spends nothing more on 14 Oct unless 163 is answered or the orchestrator
 re-plans the lane in view of Lasry's overlap.
+**Update 15 Oct 2026 (LANE BNF-FOCUS):** fr3982-nevers-toscana-1592 is now worked by LANE DEFAULT-A2-2209-14 from this handoff
+(TUSC-KEYS, TUSC-XM, NO70-WORDS); BNF-FOCUS leaves it to that lane. fr3985 f.89 blind sorter built (ASKS 169). The lane is
+idle-standing, blocked on ASKS 163 (f.25 sign check) and ASKS 169 (f.89 sorter); the daily Bourdeau/solver re-screen continues.
 
 ## LANE VIV-KEYSTONE handoff (session_01D7XWmthshMVqxumdDvitPh, account-4 parent, standing lane, kept current), 14 October 2026 (23:36 UTC 13 Oct - 05:3x UTC 14 Oct by date -u; open, waiting on the owner's packet; workers 71.56 on account 4 by get_session + account-2 rows VIV-70, VIV-70B, VIV-67B, VIV-DECH3 (costs not visible here); five_hour allowed throughout, resets 07:30 UTC)
 Keystone chosen by the owner 13 Oct 2026: Saint-Gouard to Charles IX, Madrid, 10 Oct 1573 (`ciphers/fr16104-vivonne-spain-1572`, ink 63, BnF fr.16105 ff.190r-194r; 15,762 signs, published key). State: N3, D1 held (AUDIT 7, VIV-KEYV). Brief: `.claude/briefs/runs/2026-10-13-acct4-keystone-viv-jobs.md` (waves 1-6, account-2 rows). Rules from hub-seed/HANDOFF-ACCOUNT3-2026-10-13.md (a)-(e) applied throughout: max two jobs in flight, get_session every 30 min, no reading or key change without a verifier, no owner ask without a PREREG'd consumer.
