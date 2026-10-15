@@ -704,3 +704,64 @@ Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 
 - [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
 - [x] retry: MCC-SWEEP ran the token anneal's control length sweep (132-8,000 x 3 seeds): reads at no N; masc/homophonic not retried (shuffle floor is the limit, not the setting)
 Verdict: keep going: 1 internal gaps; cheapest next: abbreviation/consonant-skeleton constrained code-word model, control sweep first (132-8,000 tokens x 3 seeds), ~$3
+
+## MCC-SKEL: abbreviation / consonant-skeleton code-word model (15 Oct 2026, 02:21-02:3x UTC by date -u; disk/CPU only)
+Worker MCC-SKEL (account 1, LANE DEFAULT-A1-0206-15). Prior work: `tools/prior_work.py mccormick-1999 --item-spec
+'shelfmark=FBI notes;sender=McCormick' --step-type decode --offline` exit 4 (LEAD = this job's own claim, recorded CLEAR in
+prior-work.tsv; other rows CLEAR from MCC-SWEEP 11 Oct; two UNCHECKED-NET generic rows not reached offline). Check 1: grep
+of this NOTES.md, HYPOTHESES.md and NEAR.md for a skeleton/abbreviation instrument -- only MCC-WORD's proposal, never run.
+No host requests.
+- Instrument: `specs/cheap-tests/mccormick-1999/token_anneal.py --skeleton --scheme drop|keepfinal --pool 3000` (option added,
+  default paths unchanged; offline test `tools/tests/test_mcc_skeleton.py` OK). The code's own letters are the evidence:
+  each code token is segmented by lattice Viterbi into one or more word skeletons (first letter + consonants, doubles
+  collapsed; keepfinal also keeps a word-final vowel), each read as a word of the 3,000-word held-out pool with that
+  skeleton or as UNK at 3 nats/letter, under MCC-WORD's word-bigram LM. Control: skeletons of held-out prose on the
+  target's kind sequence, run-on groups fitted to the target's 6.47 letters per code token (p_join 0.55 / 0.50); type/token
+  0.84-0.92 (target 0.853). PREREG-MCC-SKEL.md 7fa695063 (time stamp fixed 1 commit later), addendum 1 e95515799, addendum 2
+  7591b1785, each pushed before the scores it governs. Results: `families/skel/{drop,keepfinal}.json` (control sweep),
+  `families/skel/{drop,keepfinal}_target.json` (target and nulls).
+
+| arm | N | control word recovery mean (seeds) | order-null max | read? | control coverage (seeds) vs letter-null max |
+|---|---|---|---|---|---|
+| drop | 132 | 0.618 (0.689/0.606/0.558) | 0.651 | no | 0.828/0.735/0.723 vs 0.347/0.312/0.310 |
+| drop | 500 / 2,000 | 0.650 / 0.661 | 0.655 / 0.667 | no / no | 0.76-0.83 vs <= 0.29 |
+| keepfinal | 132 | 0.654 (0.718/0.646/0.598) | 0.701 | no | 0.807/0.711/0.693 vs 0.215/0.223/0.224 |
+| keepfinal | 500 / 2,000 | 0.710 / 0.717 | 0.726 / 0.737 | no / no | 0.76-0.84 vs <= 0.21 |
+
+- Preregistered outcome: the control reads at no N <= 2,000 in either arm ("untestable by this instrument at N <= 2,000"
+  on the read criterion), although it recovers 56-78% of words: each seed beats its own paired order-null by only
+  0.00-0.06, because the skeleton lookup, not the bigram context, carries recovery (the order null was carried over from
+  MCC-WORD, where context was everything; PREREG addendum 1). No decoded word is offered as a reading.
+- Coverage test (addendum 1, licensed by the preregistered coverage-power check, which passed on every seed of both arms
+  at the target's own N = 132):
+
+| arm | target coverage | letter-null max (40) | keep-final-letter null max (40) | score/letter | letter-null max | keep-final null max |
+|---|---|---|---|---|---|---|
+| drop | 0.136 | 0.137 | 0.137 | -3.365 | -3.390 | -3.395 |
+| keepfinal | 0.296 | 0.160 | 0.203 (0 of 40 at or above) | -3.292 | -3.372 | -3.343 |
+
+- Result (PREREG wording): drop arm -- "the target's code letters are not distinguishable from their own letter shuffle
+  under the drop skeleton scheme": a control-backed negative for vowel-dropped English skeletons with run-on groups
+  (3,000-word pool). keepfinal arm -- "the target's letters fit an English keepfinal skeleton scheme beyond its
+  letter-shuffled null", and the addendum-2 null that keeps every token's last letter does not remove it. What carries it,
+  descriptively: 85 segments covered, of which nose 8, would 8 (WLD), praise 3, raise 3, rose 3, loose 2, see 2 -- the
+  target's repeated -NSE / -RSE / -SE endings and WLD; the rest are one- and two-letter words. Against the matched control's
+  0.69-0.81 at the same N, 0.296 is well short of what an English text written this way gives. Read together: the notes'
+  letters are not random with respect to an English skeleton lexicon (repeated endings and WLD), but the scheme read at
+  0.30 coverage is far from the hypothesis realised at 0.69-0.81, and the read criterion failed, so this is a lead about
+  the endings, not a decoding. Status unchanged: open.
+
+## Remaining gaps (MCC-SKEL, 15 Oct 2026)
+Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 rate the proposed ones
+- a reading of the two notes - blocker: no-key-material; cheap tests 2-5 above are the logged families, and the Cipher Mysteries thread (all 163 comments, D2-PRINT4) adds no key, crib or new ciphertext
+- the token/nomenclator family at the target's 132 tokens (char-4-gram and word-bigram anneals untestable at N <= 8,000; skeleton lattice reads its control at 56-78% but not above its order null, drop arm negative on coverage, keepfinal arm above both nulls at 0.296 vs control 0.69-0.81, carried by the -SE endings and WLD: MCC-SWEEP, MCC-WORD, MCC-SKEL) - blocker: not-attempted; next: a suffix-aware abbreviation model that treats the recurring -SE / -RSE / -NSE / -NCBE endings as abbreviation marks (control with the same ending profile, a null that keeps repeated types), ~$3; the Gregg-lexicon variant needs a corpus not on disk, ~$6
+
+## Escalation (MCC-SKEL, 15 Oct 2026)
+- [n/a] siblings: no other note by the same writer is known in public (Leads, Web and blog check)
+- [n/a] clear-pages: no clear text by the writer to align is public
+- [n/a] known-keys: no key of any kind is known for these notes
+- [x] print: Web and blog check (2 Oct) and the full Cipher Mysteries thread (D2-PRINT4); no accepted reading in print
+- [ ] key-rebuild: char-4-gram (MCC-SWEEP) and word-bigram (MCC-WORD) anneals untestable; skeleton lattice (MCC-SKEL) drop arm negative, keepfinal arm a lead on the endings only; untried instrument: a suffix-aware abbreviation model (~$3, control with the target's ending profile first), then the Gregg-lexicon variant (corpus not on disk, ~$6)
+- [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
+- [x] retry: MCC-SWEEP ran the token anneal's control length sweep (132-8,000 x 3 seeds): reads at no N; masc/homophonic not retried (shuffle floor is the limit, not the setting)
+Verdict: keep going: 1 internal gaps; cheapest next: suffix-aware abbreviation model with an ending-matched control and a repeated-type-keeping null, ~$3

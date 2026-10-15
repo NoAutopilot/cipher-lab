@@ -1,0 +1,6 @@
+real target tokens: 132 {'code': 116, 'letter': 2, 'number': 14}
+distinct code token types: 99
+{"mode": "skeleton", "scheme": "drop", "pool_size": 3000, "alpha": 3.0, "beam": 200, "p_join": 0.55, "control_mean_letters": 6.20125071063104, "target_mean_letters": 6.4655172413793105}
+{"seed": 1, "n_tokens": 132, "score": -1665.2779486196812, "score_per_letter": -2.385785026675761, "coverage": 0.828080229226361, "word_recovery": 0.6890756302521008, "truth_in_pool": 0.8151260504201681, "null_order_word_recovery": 0.6512605042016807, "letter_null_coverage_max": 0.3467048710601719, "letter_null_spl_max": -3.266936387854759, "secs": 1.2}
+{"seed": 2, "n_tokens": 132, "score": -1699.3331425859237, "score_per_letter": -2.602347844695136, "coverage": 0.7350689127105666, "word_recovery": 0.606425702811245, "truth_in_pool": 0.7831325301204819, "null_order_word_recovery": 0.5542168674698795, "letter_null_coverage_max": 0.3124042879019908, "letter_null_spl_max": -3.320024954538047, "secs": 0.9}
+{"seed": 3, "n_tokens": 132, "score": -2003.1356390970893, "score_per_letter": -2.4730069618482586, "coverage": 0.7234567901234568, "word_recovery": 0.5575539568345323, "truth_in_pool": 0.7733812949640287, "null_order_word_recovery": 0.5575539568345323, "letter_null_coverage_max": 0.30987654320987656, "letter_null_spl_max": -3.2512013257488825, "secs": 1.3}

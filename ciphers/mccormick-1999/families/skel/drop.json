@@ -1,0 +1,151 @@
+{
+ "mode": "skeleton",
+ "scheme": "drop",
+ "pool_size": 3000,
+ "alpha": 3.0,
+ "beam": 200,
+ "p_join": 0.55,
+ "control_mean_letters": 6.20125071063104,
+ "target_mean_letters": 6.4655172413793105,
+ "controls": {
+  "132": {
+   "runs": [
+    {
+     "seed": 1,
+     "n_tokens": 132,
+     "score": -1665.2779486196812,
+     "score_per_letter": -2.385785026675761,
+     "coverage": 0.828080229226361,
+     "word_recovery": 0.6890756302521008,
+     "truth_in_pool": 0.8151260504201681,
+     "null_order_word_recovery": 0.6512605042016807,
+     "letter_null_coverage_max": 0.3467048710601719,
+     "letter_null_spl_max": -3.266936387854759,
+     "secs": 1.1
+    },
+    {
+     "seed": 2,
+     "n_tokens": 132,
+     "score": -1699.3331425859237,
+     "score_per_letter": -2.602347844695136,
+     "coverage": 0.7350689127105666,
+     "word_recovery": 0.606425702811245,
+     "truth_in_pool": 0.7831325301204819,
+     "null_order_word_recovery": 0.5542168674698795,
+     "letter_null_coverage_max": 0.3124042879019908,
+     "letter_null_spl_max": -3.320024954538047,
+     "secs": 1.0
+    },
+    {
+     "seed": 3,
+     "n_tokens": 132,
+     "score": -2003.1356390970893,
+     "score_per_letter": -2.4730069618482586,
+     "coverage": 0.7234567901234568,
+     "word_recovery": 0.5575539568345323,
+     "truth_in_pool": 0.7733812949640287,
+     "null_order_word_recovery": 0.5575539568345323,
+     "letter_null_coverage_max": 0.30987654320987656,
+     "letter_null_spl_max": -3.2512013257488825,
+     "secs": 1.1
+    }
+   ],
+   "word_recovery_mean": 0.617685096632626,
+   "null_order_max": 0.6512605042016807,
+   "read": false
+  },
+  "500": {
+   "runs": [
+    {
+     "seed": 1,
+     "n_tokens": 500,
+     "score": -6446.9071554384345,
+     "score_per_letter": -2.3546045125779527,
+     "coverage": 0.8203067932797663,
+     "word_recovery": 0.7079463364293086,
+     "truth_in_pool": 0.8431372549019608,
+     "null_order_word_recovery": 0.6553147574819401,
+     "letter_null_coverage_max": 0.2914536157779401,
+     "letter_null_spl_max": -3.2890038131718016,
+     "secs": 4.1
+    },
+    {
+     "seed": 2,
+     "n_tokens": 500,
+     "score": -6199.75653381491,
+     "score_per_letter": -2.5222768648555367,
+     "coverage": 0.7575264442636289,
+     "word_recovery": 0.6038135593220338,
+     "truth_in_pool": 0.7934322033898306,
+     "null_order_word_recovery": 0.5402542372881356,
+     "letter_null_coverage_max": 0.2876322213181448,
+     "letter_null_spl_max": -3.3308072036305254,
+     "secs": 3.6
+    },
+    {
+     "seed": 3,
+     "n_tokens": 500,
+     "score": -6687.006468404398,
+     "score_per_letter": -2.4088640015865987,
+     "coverage": 0.7835014409221902,
+     "word_recovery": 0.6379853095487933,
+     "truth_in_pool": 0.7985309548793285,
+     "null_order_word_recovery": 0.5970619097586569,
+     "letter_null_coverage_max": 0.27521613832853026,
+     "letter_null_spl_max": -3.29857586540992,
+     "secs": 3.7
+    }
+   ],
+   "word_recovery_mean": 0.6499150684333785,
+   "null_order_max": 0.6553147574819401,
+   "read": false
+  },
+  "2000": {
+   "runs": [
+    {
+     "seed": 1,
+     "n_tokens": 2000,
+     "score": -25118.683971614635,
+     "score_per_letter": -2.3466633007861204,
+     "coverage": 0.8304372197309418,
+     "word_recovery": 0.7322637252444222,
+     "truth_in_pool": 0.8681373777889195,
+     "null_order_word_recovery": 0.666833792930559,
+     "letter_null_coverage_max": 0.26849775784753366,
+     "letter_null_spl_max": -3.3116906876861374,
+     "secs": 15.7
+    },
+    {
+     "seed": 2,
+     "n_tokens": 2000,
+     "score": -25744.83610465781,
+     "score_per_letter": -2.4747511395422293,
+     "coverage": 0.7846774968759012,
+     "word_recovery": 0.6244845360824742,
+     "truth_in_pool": 0.8064432989690722,
+     "null_order_word_recovery": 0.5695876288659794,
+     "letter_null_coverage_max": 0.2635778140920888,
+     "letter_null_spl_max": -3.3316874770726916,
+     "secs": 15.7
+    },
+    {
+     "seed": 3,
+     "n_tokens": 2000,
+     "score": -27142.977344396015,
+     "score_per_letter": -2.450611894582522,
+     "coverage": 0.7797941495124594,
+     "word_recovery": 0.6271273852501289,
+     "truth_in_pool": 0.7859721505930892,
+     "null_order_word_recovery": 0.573749355337803,
+     "letter_null_coverage_max": 0.26932105453232213,
+     "letter_null_spl_max": -3.3065278037315946,
+     "secs": 16.5
+    }
+   ],
+   "word_recovery_mean": 0.6612918821923418,
+   "null_order_max": 0.666833792930559,
+   "read": false
+  }
+ },
+ "target": "not run: control did not read at the target's own N"
+}

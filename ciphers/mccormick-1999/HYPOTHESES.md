@@ -33,3 +33,13 @@ null token max 0.060 / 0.107 / 0.042 / 0.031; token ceiling 0.64-0.79). Diagnost
 0.095 / 0.096 / 0.086, null max 0.129 / 0.109 / 0.101 / 0.092. Found total > truth total on all 24 runs: the objective's
 optimum is not the truth (search not the limit). Read gate (token >= 0.5 and above null max) met at no N; TARGET not
 run. Untestable by this instrument at N <= 8,000; not too-short, not refuted.
+
+MCC-SKEL (15 Oct 2026, 02:21-02:3x UTC by date -u, account 1, LANE DEFAULT-A1-0206-15; hand-written note outside the tool
+table): token/nomenclator family, third instrument -- abbreviation / consonant-skeleton lattice decoder (`token_anneal.py
+--skeleton`, 3,000-word held-out pool, word-bigram LM), PREREG-MCC-SKEL.md (7fa695063, addenda e95515799, 7591b1785).
+CONTROL word recovery mean, drop 0.618 / 0.650 / 0.661, keepfinal 0.654 / 0.710 / 0.717 at 132 / 500 / 2,000 tokens
+(3 seeds); order-null max 0.651 / 0.655 / 0.667 and 0.701 / 0.726 / 0.737: read criterion met at no N (both arms).
+CONTROL coverage at 132: 0.69-0.83 vs letter-null max 0.21-0.35 (power on every seed). TARGET (addendum 1) coverage:
+drop 0.136 vs letter-null max 0.137 (not above: negative for this scheme); keepfinal 0.296 vs letter-null max 0.160 and
+keep-final-letter null max 0.203 (above both; carried by -NSE/-RSE/-SE endings and WLD; far below the control's
+0.69-0.81). No reading offered.
