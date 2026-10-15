@@ -75,7 +75,7 @@ m0260	full (BRO-SWEEP)	page "127"; plain letter on Diogo de Mendoça (continues 
 m0261	full (BRO-SWEEP)	page "128"; plain; "nao haver tempo para escrever em Cifras" in running text; closing "Londres 22 de 9bro de 1713"	no	128 (page no.)
 m0262	full (BRO-SWEEP)	page "129"; plain, Bolingbroke / Worsley / Barão de Fossener	no	129 (page no.)
 m0263	full (BRO-SWEEP)	continuation of 129; plain with one French sentence; closing "Londres 24 de 9bro de 1713"	no	n/a (cont. of 129)
-m0264	full (BRO-SWEEP; line crops images/crops_m0264, L02-L03 eye-checked)	page "130"; plain letter closing "Londres 28 de Novembro de 1713"; line 2-3 carries ONE short inline digit string after "com as barta de ..." (reads about "1 7 2 1 . 24", 3-4 groups, not settled) inside a sentence	partial (inline, est. 3-4 tokens, not settled as code vs date)	130 (page no.)
+m0264	full (BRO-SWEEP; line crops images/crops_m0264, L02-L03 eye-checked)	page "130"; plain letter closing "Londres 28 de Novembro de 1713"; line 2-3 inline string settled 15 Oct 2026 (BRO-KK, one Opus look at native crop): plain dates, "com as car-tas de 17. 21. e 24. que me tinhão faltado", digits match the dateline hand	none (inline string is plain dates, 0 cipher tokens)	130 (page no.)
 m0265	full (BRO-SWEEP)	page "131"; plain, Bolingbroke / Strafford / Tratado de Commercio	no	131 (page no.)
 m0266	full (BRO-SWEEP)	continuation of 131; plain; "Tratado de 54" in running text	no	n/a (cont. of 131)
 m0267	full (BRO-SWEEP)	continuation, plain; Mercators / Navios; closing "Londres 8 de Dezembro de 1713"	no	n/a
