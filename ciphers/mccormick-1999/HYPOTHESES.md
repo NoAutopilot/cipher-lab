@@ -72,3 +72,12 @@ over the type-mark null, Gregg vs plain pool: coverage z 6.08 vs 6.43, score z 3
 (small): the Gregg vocabulary does not fit the stems better than a novel's. judge_plaintext: candidate FAIL (A: length 813
 and language -1.653 vs real_p05 -0.870; B: length 434 and language -1.055 vs -0.864), both shuffled controls FAIL (judge not
 voided; `en` fold spread, reliability unknown). No reading offered. Lexicon swaps on this instrument are now a knob (rule 3).
+
+## MCC-CMU (15 Oct 2026, LANE DEFAULT-A1-1140-15): suffix-mark model with a phonetic (CMUdict) key -- family [retired]
+PREREG-MCC-CMU.md (a6abb231c). Each word's code = phonetic skeleton of its base from CMUdict (commonest grapheme per consonant
+phone) + the class mark; pool MCC-SUFX's plain 3,000. Matched control N = 132, 3 seeds: word recovery 0.690/0.546/0.617
+(mean 0.618 >= 0.5), mark-map 0.967/0.830/0.987, coverage above type-mark null max on 3/3 -> reads. Target: coverage 0.488
+above all three null maxima (type 0.301, type-mark 0.417, NCBE-fixed 0.421; p 0.005 each); score/letter -2.977 above type
+(-3.210) and NCBE-fixed (-3.039) maxima but not type-mark (-2.938, p 0.020) -> "mixed". z over type-mark vs plain letter key:
+coverage 5.38 vs 6.43, score 2.53 vs 4.31 -> "worse". Judge FAIL both renderings, shuffles FAIL (not voided). Third key on
+the same instrument without the candidate row: suffix-mark family [retired], untested-by-this-tool (not refuted), rule 3.

@@ -973,3 +973,79 @@ Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 
 - [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
 - [x] retry: MCC-SWEEP ran the token anneal's control length sweep (132-8,000 x 3 seeds): reads at no N; masc/homophonic not retried (shuffle floor is the limit, not the setting); lexicon retry done (MCC-GREGG)
 Verdict: keep going: 1 internal gaps; cheapest next: phonetic-skeleton variant of the suffix-mark model from CMUdict with its matched control and the three nulls, ~$6
+
+## MCC-CMU: phonetic-skeleton (CMUdict) variant of the suffix-mark model (15 Oct 2026, 11:57-12:5x UTC by date -u; disk/CPU + 1 request)
+Worker MCC-CMU (account 1, LANE DEFAULT-A1-1140-15). PREREG-MCC-CMU.md pushed (a6abb231c) before any control seed or target
+score. No vision calls. Host: raw.githubusercontent.com, 1 request (cmudict.dict, 200, 3,618,488 bytes, sha1 2619f7ef5e6d...).
+Prior work, check 1 (own work): grep of NOTES.md / HYPOTHESES.md -- the phonetic key was named by MCC-GREGG's Verdict and never
+run; no pronouncing dictionary appears in any earlier section.
+- Instrument: `token_anneal.py --sufx --phonetic FILE` (new option on the shared script; `phon_skeleton`: the ending class's
+  phones stripped, each consonant phone as its commonest grapheme (K->C, Z->S, TH/DH->TH, ...), vowels dropped, a
+  vowel-initial word keeps its first letter; nice -> NS, walked -> WC, know -> N). Offline test `tools/tests/test_mcc_cmu.py`
+  OK; test_mcc_sufx / test_mcc_gregg / test_mcc_skeleton still OK. `families/judge/ncbe_null.py --phonetic` for null (c).
+  Dictionary: committed subset `families/cmu/cmudict_subset.dict` (19,100 entries, 486 KB; CMUdict, BSD; `build_subset.py`
+  regenerates it from the full file). Pool unfiltered (MCC-SUFX's plain top 3,000; 96.9% in CMUdict, rest fall back to the
+  letter skeleton). Results: `families/cmu/cmu.json`, `ncbe_cmu.json`, `analysis.json` (`analyse_cmu.py`), logs, `judge_out.txt`.
+
+| matched control, N = 132 | seed 1 | seed 2 | seed 3 | criterion |
+|---|---|---|---|---|
+| word recovery | 0.690 | 0.546 | 0.617 | mean 0.618 >= 0.5 |
+| mark-map recovery | 0.967 | 0.830 | 0.987 | each >= 0.8 |
+| coverage vs type-mark null max (40) | 0.908 vs 0.495 | 0.818 vs 0.458 | 0.843 vs 0.489 | each above: reads |
+
+| target (cov 0.488, score/letter -2.977) | null mean | null max | p (200 draws) | z |
+|---|---|---|---|---|
+| (a) type null, coverage | 0.210 | 0.301 | 0.005 | 8.65 |
+| (a) type null, score/letter | -3.305 | -3.210 | 0.005 | 13.7 |
+| (b) type-mark null, coverage | 0.360 | 0.417 | 0.005 | 5.38 |
+| (b) type-mark null, score/letter | -3.069 | **-2.938** | 0.020 | 2.53 |
+| (c) NCBE-fixed null, coverage | 0.372 | 0.421 | 0.005 | 5.26 |
+| (c) NCBE-fixed null, score/letter | -3.082 | -3.039 | 0.005 | 5.62 |
+
+- Preregistered outcome: **mixed** -- coverage beats all three null maxima; score per letter beats (a) and (c) but 3 of 200
+  type-mark draws (b) score above the target (max -2.938 vs -2.977, p 0.020). Not the "candidate" row, so by the PREREG's
+  rule 3 clause the suffix-mark family is **[retired]**: untested-by-this-tool (not refuted) after three keys on the same
+  instrument (plain letter MCC-SUFX, Gregg lexicon MCC-GREGG "mixed", phonetic here "mixed"). No further lexicon or key
+  swap on token_anneal --sufx without new material or a different instrument.
+- Phonetic vs plain letter key (descriptive, PREREG word): z over the type-mark null, coverage 5.38 vs 6.43, score 2.53 vs
+  4.31 -> "worse" on both. A sound-spelled key fits the target's stems less well than the letter key; the structural lead
+  (stems beyond type-keeping shuffles on coverage) survives at a smaller size.
+- Fitted map (ing SE, ed E, ly SE, s SE, e SE, y SE, d BE, t none, n SE, r none, other E) differs from the planted control map
+  and from both earlier fits; the reading of NCBE again depends on the key.
+- Judge (`python3 tools/judge_plaintext.py specs/mccormick-1999.json --file F`), abridged (full: `families/cmu/judge_out.txt`):
+
+```
+== render_target_A.txt
+FAIL length: got=891 ; FAIL language: score=-1.544, null_p99=-2.076, real_p05=-0.868 ; ok words: cover=0.643 ; FAIL
+== render_target_B.txt
+FAIL length: got=513 ; FAIL language: score=-0.947, null_p99=-2.043, real_p05=-0.873 ; ok words: cover=0.934 ; FAIL
+== render_tm6000_A.txt (shuffled, type-mark draw 6000)
+ok length 774 ; FAIL language: score=-1.865 ; FAIL words: cover=0.47 ; FAIL
+== render_tm6000_B.txt
+FAIL length 294 ; FAIL language: score=-1.05, real_p05=-0.877 ; ok words 0.932 ; FAIL
+== render_ncbe7000_A.txt (shuffled, NCBE-fixed draw 7000)
+FAIL length 849 ; FAIL language: score=-1.723 ; FAIL words: cover=0.539 ; FAIL
+== render_ncbe7000_B.txt
+FAIL length 379 ; FAIL language: score=-0.985, real_p05=-0.88 ; ok words 0.908 ; FAIL
+```
+  Candidate FAILs in both renderings; no shuffle PASSes (judge not voided, ARM-C1). Rendering B (read words only) scores
+  -0.947 for the target but -0.985 and -1.05 for the two shuffles: B keeps only words the LM already likes, so it barely
+  separates target from shuffle and is not evidence of text. `en` fold spread 0.44-0.64 (reliability unknown). No part of
+  the decode is offered as a reading. Status unchanged: open.
+- Lost time disclosed: a wait loop whose process check matched its own command line idled from 12:27 to 12:51 UTC after
+  null (c) had finished; no compute ran in that span.
+
+## Remaining gaps (MCC-CMU, 15 Oct 2026)
+Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 rate the proposed ones
+- a reading of the two notes - blocker: no-key-material; cheap tests 2-5 above are the logged families, and the Cipher Mysteries thread (all 163 comments, D2-PRINT4) adds no key, crib or new ciphertext
+- the token/nomenclator family at the target's 132 tokens - blocker: no-key-material; every known instrument on token_anneal.py is spent: char-4-gram and word-bigram untestable at N <= 8,000 (MCC-SWEEP, MCC-WORD), skeleton drop arm negative (MCC-SKEL), suffix-mark model retired under rule 3 after three keys (plain, Gregg, CMUdict phonetic: target beyond type-keeping nulls on coverage, score "mixed" twice, judge FAIL, no text; MCC-SUFX, MCC-JUDGE, MCC-GREGG, MCC-CMU); only new ciphertext or a key/crib reopens it
+
+## Escalation (MCC-CMU, 15 Oct 2026)
+- [n/a] siblings: no other note by the same writer is known in public (Leads, Web and blog check)
+- [n/a] clear-pages: no clear text by the writer to align is public
+- [n/a] known-keys: no key of any kind is known for these notes
+- [x] print: Web and blog check (2 Oct) and the full Cipher Mysteries thread (D2-PRINT4); no accepted reading in print
+- [retired] key-rebuild: suffix-mark instrument (token_anneal.py --sufx) retired under rule 3 after plain, Gregg and CMUdict-phonetic keys (MCC-CMU); char-4-gram and word-bigram anneals untestable, skeleton drop arm negative
+- [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
+- [x] retry: MCC-SWEEP ran the token anneal's control length sweep (132-8,000 x 3 seeds); lexicon retry (MCC-GREGG) and key retry (MCC-CMU) done
+Verdict: parked: every gap has an outside blocker
