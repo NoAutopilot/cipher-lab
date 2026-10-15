@@ -1,0 +1,9 @@
+label	passA	passD_or_E	passB	passC	verdict	his_value_blind	ours_value	concordance
+d	n:1	n:1			MAPPED	n	n	agree
+psi	r:2	r:2			MAPPED	r	r	agree
+rot	h:2	h:2			MAPPED	h	h	agree
+s	none	none			NO MATCH		e	
+th	s:1	s:1			MAPPED	s	s	agree
+tri	u/v:1	u/v:1			MAPPED	u/v	q	disagree
+f	f:1	s:1	s:1	z:1	FINAL (2 of 4)	s	n	disagree
+dia	s:1	g:1	g:1	t:1	FINAL (2 of 4)	g	i	disagree

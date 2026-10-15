@@ -1,0 +1,15 @@
+2026-10-15 16:34	p=e	112	-753.9		-304.0	reject	non-blind
+2026-10-15 16:34	a=u	98	1555.2	-153.2	893.1	accept	non-blind
+2026-10-15 16:34	p=e	112	-753.9		-304.0	reject	non-blind
+2026-10-15 16:34	vdash=d	8	-5.1	-20.4	-1.6	reject	non-blind
+2026-10-15 16:34	2=s	10	17.0	-28.5	28.9	undecided	non-blind
+2026-10-15 16:34	eloop=a	36	32.7	-171.0	119.4	reject	non-blind
+2026-10-15 16:34	ls=e	40	44.4	-11.5	16.9	reject	non-blind
+2026-10-15 16:34	K=h	28	-157.8	-290.8	25.3	reject	non-blind
+2026-10-15 16:34	iii=et	68	-256.3	-576.4	-60.2	reject	non-blind
+2026-10-15 16:34	blot=NULL	1	-6.0	1.6	-4.8	undecided	non-blind
+2026-10-15 16:34	x=NULL	11	44.5	-7.5	38.7	reject	non-blind
+2026-10-15 16:34	tri=u	3	-11.7		-2.8	reject	non-blind
+2026-10-15 16:34	f=s	10	-27.0	-20.6	-13.8	reject	non-blind
+2026-10-15 16:34	dia=g	11	-126.4	-87.0	-13.5	reject	non-blind
+2026-10-15 16:34	76=le	19	60.0		99.9	undecided	non-blind

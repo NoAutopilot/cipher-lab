@@ -1,0 +1,6 @@
+{
+ "note": "C1161-G1 (15 Oct 2026): registered --try harness (76), PREREG g1/PREREG-C1161-G1.md. Never a reading.",
+ "jobs": [
+  {"ciphertext": "g1/ciphertext_76.tsv", "key": "g1/key_76.tsv", "style": "spaced", "reading": "g1/try_reading_76.txt", "tokens": "g1/try_tokens_76.tsv"}
+ ]
+}

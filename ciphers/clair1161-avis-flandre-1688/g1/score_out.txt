@@ -1,0 +1,9 @@
+POWER D PASS a:1 | POWER E PASS g:2 r:1
+d MAPPED n ours n agree
+psi MAPPED r ours r agree
+rot MAPPED h ours h agree
+s NO MATCH  ours e 
+th MAPPED s ours s agree
+tri MAPPED u/v ours q disagree
+f FINAL (2 of 4) s ours n disagree
+dia FINAL (2 of 4) g ours i disagree

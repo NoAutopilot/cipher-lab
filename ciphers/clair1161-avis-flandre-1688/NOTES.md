@@ -3171,3 +3171,77 @@ Verdict: keep going: 4 internal gaps; cheapest next: group 1 re-pass with a fres
 OK keep-going clair1161-avis-flandre-1688: keep going: 4 internal gap(s), 2 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## C1161-G1: group 1 blind re-pass, fourth reader on f/dia, registered --try per exemplar-matched conflict (account-2 worker for LANE DEFAULT-A2-1616-15, 15 Oct 2026, 16:32-16:4x UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-15-ytbiz-default-1616-jobs.md` (C1161-G1). Disk only, 0 host requests, 2 Sonnet subagent calls. Key compared
+against: George Lasry's sheet (`sources/cyphersolver/2026-10-14-lasry/clair1161/lasry_p073_1.png`, published by D. Bourdeau, CC BY 4.0; credit,
+rule 8). The text is known (AUDIT class N0, key of record published by Lasry): this job only corrects the record of how our key labels line up
+with his key. PREREG `g1/PREREG-C1161-G1.md` pushed in c97897b2c before any montage was built or any score computed.
+
+**Part 1, blind passes** (C1161-EXC protocol unchanged: `exc/exc_windows.py`, `exc/match_prompt.md` verbatim, windows of `exc/tokens.tsv`;
+montages in the session scratchpad only). Pass D = fresh pass B on group 1 (seed 16161, `exc/ids_D.tsv`, `exc/pass_D_g1.tsv`); pass E = fourth
+reader on f, dia with controls sd, y (seed 16162, `exc/ids_E.tsv`, `exc/pass_E_g1.tsv`). Score `g1/g1_score.py` -> `g1/score_out.txt`,
+`g1/concordance_g1.tsv`:
+```
+POWER D PASS (qb -> a:1) | POWER E PASS (sd -> g:2, y -> r:1)
+d MAPPED n (ours n, agree); psi MAPPED r (agree); rot MAPPED h (agree); th MAPPED s (agree); tri MAPPED u/v (ours q, disagree)
+s NO MATCH (A none, D none)
+f FINAL 2 of 4 (A f, B s, C z, E s) -> s (ours n, disagree); dia FINAL 2 of 4 (A s, B g, C t, E g) -> g (ours i, disagree)
+```
+Concordance of the 24 labels C1161-LKEY left unmapped, C1161-EXC and C1161-G1 together: 20 mapped blind (8 agree with our key: +, l, o, Sorn, d,
+psi, rot, th; 12 differ: 6, blot, vdash, 2, eloop, iii, ls, x, K, tri, f, dia), 2 no match (6r, s), 2 untestable (0, spiralG).
+
+**Part 2, registered --try** (`tools/decode_key.py`, fr16, window 8, nulls 100; each hypothesis its own call; harnesses `g1/decode_try_*.json`;
+logged to crossword_log.tsv 16:34; `g1/try_out.txt`):
+```
+P1 p=e (main):      n 112, -753.9; value class -304.0; reject      (power control behaves)
+P2 a=u (a hidden as o): n 98, +1555.2; null pos -153.2, value 893.1; accept   (power control behaves)
+P1 p=e (76 harness): n 112, -753.9; reject                           (power control behaves)
+H1 vdash=d  n 8   -5.1    reject (no better than t)
+H2 2=s      n 10  +17.0   undecided (not above value-class p95 28.9)
+H3 eloop=a  n 36  +32.7   reject (breaks 13 of 36 occurrences by > 3 bits)
+H4 ls=e     n 40  +44.4   reject (breaks 18 of 40)
+H5 K=h      n 28  -157.8  reject
+H6 76=le    n 19  +60.0   undecided (position null could not be built; value class p95 99.9 not passed)
+H7 iii=et   n 68  -256.3  reject
+H8 blot=NULL n 1  -6.0    undecided (n = 1)
+H9 x=NULL   n 11  +44.5   reject (breaks 3 of 11)
+H10 tri=u   n 3   -11.7   reject
+H11 f=s     n 10  -27.0   reject
+H12 dia=g   n 11  -126.4  reject
+```
+- None of the 12 blind-matched values of his is accepted at every occurrence in our transcription: 9 reject, 3 undecided. Our key values stay;
+  each difference stays a logged data conflict (rule 4), not settled by either side. A shape match that the decode rejects means either our
+  label groups shapes he kept apart (or the reverse), or the matcher picked the wrong exemplar; the --try cannot tell which.
+- eloop=a, ls=e and x=NULL gain in total but break a quarter or more of their occurrences: candidates for a label split (the S275 pattern),
+  not for a value change.
+- No key.tsv, ciphertext.tsv or reading edit. `decode_key.py ciphers/clair1161-avis-flandre-1688 --check` exit 0. Grades unchanged: C 353,
+  S 1786, M 1236, U 33, H 0.
+
+Subagent calls: 2 (Sonnet). Cost not visible to this session. Report what was found and where it was not found: no outside source searched;
+novelty not classified.
+
+## Remaining gaps (C1161-G1, 15 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1786, M 1236, U 33 tokens; 0 H (unchanged). Prior work: George Lasry's reading of ff.162r-164v (cyphersolver `clair1161`, 6/6 transcribed, 2/6 deciphered, 4 in part). Concordance with his key: LKEY 16 agree, 10 disagree; of LKEY's 24 unmapped, blind exemplar matching (C1161-EXC + C1161-G1) mapped 20 (8 agree, 12 differ), 2 no match, 2 untestable; registered --try of the 12 differing values: 0 accept, 9 reject, 3 undecided (C1161-G1).
+- 7 (i vs his b) and digit-pair nomenclature 76/44/37/48, n77 beyond c186R - blocker: no-key-material; the alignment on his second face needs its text, not on disk (C1161-KA) and not in cyphersolver at HEAD 0445769 (C1161-LASRY 15 Oct): only his full report has it; next: the second-face alignment once his report page is on disk, ~$1
+- label splits for eloop, ls, x - blocker: not-attempted; his value gains in total but breaks a quarter or more of occurrences (C1161-G1), not in this brief; next: per-label blind open/variant sort of their windows and a --try per split, as C1161-S275 did for S, ~$1.5
+- undecided conflicts 2=s (n 10), 76=le (no position null at n 19), blot=NULL (n 1) - blocker: too-short; the --try cannot decide at these counts in this text; reopens with the second-face text
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3, spiralG, 0, and the no-match labels s, 6r - blocker: not-attempted; outside the S-anchored window method or no sheet exemplar; next: hand-placed windows for these few tokens, then the owner sign sorter if any stay open, ~$1
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (C1161-G1, 15 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); whole volume (342 canvases) swept at 300 px, no other cipher or glossed leaf (D1A-C1161)
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under key.tsv; his f163r paragraph matches the same gloss (LQ-C1161); c186R V2 decode agrees with his paragraph on 148/226 tokens, G1 PASS vs permuted key (CL1161-KA); no other glossed leaf in the volume (D1A-C1161)
+- [ ] known-keys: Lasry's key: V1 FAIL, V2 whole-decode FAIL, c186R known-answer PASS, 7=b and S=n --try reject (CL1161-S7), S split Sl=n at M (C1161-S275); blind exemplar matching 20 of 24 mapped (C1161-EXC, C1161-G1); registered --try of the 12 differing values 0 accept, 9 reject, 3 undecided (C1161-G1); next: label splits for eloop/ls/x, ~$1.5; the second-face alignment once its text is on disk, ~$1
+- [x] print: no printed edition located by check-solved and Premise check; Vertot, Ambassades de Noailles (1763) vols 1-5 grepped for the f163r paragraph, not found by this method (VER-C1161); Lasry's "BnF cipher research" (10 Oct 2026, published by D. Bourdeau 13 Oct) is prior work on all six faces: AUDIT 3 class N0, key of record published (Lasry)
+- [retired] key-rebuild: instrument c186R gloss match (G) for per-sign and joint value changes -- per-sign 0/9 (GLOSS9), joint gain inside the window null (VER-C1161J); reopens only with a longer clear text or new material (his reading may be that material)
+- [ ] image-check: S split applied (C1161-S275); exemplar matching of the 24 unmapped labels: 20 mapped, s and 6r no match (C1161-EXC, C1161-G1); next: hand-placed windows for the new shapes and the no-match labels, ~$1
+- [x] retry: main and lkey/decode_lasry.json --check exit 0 after the S split (C1161-S275); C1161-EXC and C1161-G1 edited no reading; main --check exit 0 (C1161-G1)
+Verdict: keep going: 2 internal gaps; cheapest next: per-label blind sort and --try split for eloop, ls, x (~$1.5); the second-face alignment waits on its text (Lasry's full report).
+
+`python3 tools/gaps_check.py clair1161-avis-flandre-1688` (C1161-G1, 15 Oct 2026):
+```
+OK keep-going clair1161-avis-flandre-1688: keep going: 2 internal gap(s), 2 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```
