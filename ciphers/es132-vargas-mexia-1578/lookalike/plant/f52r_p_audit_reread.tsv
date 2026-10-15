@@ -1,0 +1,91 @@
+item	label	conf	second	note
+1	18	M	18@s	no mark above, no dot
+2	7ρ	M	77ρ	7 with looped tail
+3	4@s	H		straight bar above
+4	6ρ	H	6σ	looped tail
+5	6.	H	6	dot after 6
+6	21.	M	11.	2 then 1 with dot
+7	25	M	23	2 with S-like 5
+8	7ρ@n	M	70ρ@n	hat above
+9	24.	H	24	dot after
+10	24.	H	24	dot after
+11	6ρ	H	6σ	looped tail
+12	2ρ@r	M	2ρ	r-like mark right of token; may be separate r
+13	6σ	M	6ρ	small 6 hook
+14	29.	H	29	dot after
+15	21.	H	11.	dot after
+16	28	H	28σ	plain 28
+17	25	M	15	2 with 5
+18	6.	M	6	dot after
+19	7ρ	M	77ρ	may be a group with following n6
+20	15+	H	15+@n	plain cross
+21	16.	M	.	6 with dot; dot may belong to preceding 6
+22	6.	H	6	dot after
+23	10	H	10.	plain
+24	7ρ	H	7σ	looped tail
+25	23	M	23.	no dot seen
+26	16.	M	12	1 then 6 dot
+27	23σ	M	23ρ	small 6 hook
+28	20+	H	201	cross
+29	4@n	H	4+@n	hat above
+30	28	H	128	plain
+31	15+	H	15+@n	plain
+32	4	H		plain
+33	15ρ	H	15σ	looped tail
+34	23+@s	H	23+	bar above
+35	7ρ@n	H	70ρ@n	hat above
+36	15	H	1	plain
+37	23+@r	M	23+@m	small v/wavy mark above
+38	20.	H	20	dot after
+39	25.	H	x.	dot after
+40	30.	H	30_.	no underline
+41	8σ	M	88	8 plus small 6 hook
+42	6.	H	6	dot after
+43	24+@n	H	24+	hat above
+44	28	H	128	plain
+45	4	H		plain
+46	15+	H	15+@s	plain
+47	24.	H	24	dot after
+48	6ρ	H	6σ	looped tail
+49	15+	H	15+@s	plain
+50	24ρ	H	24+	looped tail
+51	28	H	128	plain
+52	4@n	H	4@l	hat above
+53	28@s	H		bar above
+54	6.	H	6	dot after
+55	21	H	2+	plain
+56	4@s	H	14@s	bar above
+57	16+	H	16+@s	plain
+58	23+@s	H	23+	bar above
+59	15.@s	M	15.	bar above
+60	21.	H	11.	dot after
+61	6ρ@s	H		bar above
+62	35+	M	35ρ	underlined; no underline candidate
+63	23.	H	23	dot after
+64	14+	H	11+	plain
+65	15+@n	H	15+	hat above
+66	24+	H	24	cross
+67	24+@n	M	24+	hat above
+68	7+	M	74	followed by x+ token; maybe group
+69	21	H	2+	plain
+70	6.	H	6	dot after
+71	55.	H		dot after
+72	4@s	H	14@s	bar above
+73	7ρ@n	H	77@n	hat above
+74	12+	M	24+	1 2 cross
+75	25ρ@s	H	25ρ	bar above
+76	23	M	23.	no dot seen
+77	8σ	M	88	8 plus small 6 hook
+78	20+	H	201	cross
+79	12.	H	24.	dot after
+80	23@r	H		small v mark above
+81	4@n	H	4+@n	hat above
+82	24+	H	x+	cross
+83	24+	H	24	cross
+84	4@l	M	4.@l	short slanted stroke
+85	23	H	23.	no dot
+86	20+	H	20⊣	cross
+87	12.	H	24.	dot after
+88	29ρ	H	29σ	looped tail
+89	6	M	6.	no dot clear
+90	23.	H	23	dot after
