@@ -3,6 +3,7 @@
 
   VIVGSPLIT3_SCRATCH=DIR python3 panels.py targets          # -> tx/vivgsplit3/targets.tsv (no image read)
   VIVGSPLIT3_SCRATCH=DIR python3 panels.py sheets --cls f   # look sheets: a window of the line crop per target, ruler every 20 px
+  VIVGSPLIT3_SCRATCH=DIR python3 panels.py sheets --rest     # VIV-GSPLIT3B: r targets not yet in boxes_handcut.tsv, 660 px windows
 The window only points the eye (proportional x estimate from the token's position in its truth line); the box is drawn by eye and
 logged in boxes_handcut.tsv in the crop's own pixel coordinates. f.211r crops: band L10 of the cut duplicated L09 and was dropped, so
 truth L10 = crop L11 (images/manifest.json "viv70"). f.202r crops live in $VIVGSPLIT3_SCRATCH/p67c (manifest "viv67c").
@@ -13,6 +14,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); FOLD = os.path.abspath(os.pat
 REPO = os.path.abspath(os.path.join(FOLD, '..', '..')); BT = os.path.join(REPO, 'benchmark-tx'); IM = os.path.join(FOLD, 'images')
 SCR = os.environ.get('VIVGSPLIT3_SCRATCH', '')
 SEED, RCAP = 20261015, 20
+GRID = False
 TRUTH = {'f102r': 'vivonne1573-f102r-dev2', 'f103r': 'vivonne1573-f103r-confirm2', 'f201r': 'vivonne1573-f201r-dev',
          'f201v': 'vivonne1573-f201v-dev', 'f211r': 'vivonne1573-f211r-dev', 'f202r': 'vivonne1573-f202r-dev', 'f211v': 'vivonne1573-f211v-dev'}
 LEAVES = list(TRUTH)
@@ -85,13 +87,15 @@ def window(leaf, line, tpos, cr, truth, nb=6):
     return p, cx, ctx, pl
 
 
-def sheets(cls, per=8, half=330, cols=1):
+def sheets(cls, per=8, half=330, cols=1, skip_boxed=False, tag=''):
     tg = [r for r in rd(os.path.join(HERE, 'targets.tsv')) if r['cls'] == cls]
+    boxed = {h['tid'] for h in rd(os.path.join(HERE, 'boxes_handcut.tsv'))} if skip_boxed else set()
     if cls == 'r':  # interleave leaves so a stopped run keeps every leaf represented
         byl = collections.defaultdict(list)
         for r in tg:
             byl[r['leaf']].append(r)
         tg = [byl[l][i] for i in range(RCAP) for l in LEAVES if i < len(byl[l])]
+    tg = [r for r in tg if r['tid'] not in boxed]
     cache, tcache = {}, {}
     try:
         font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf', 14)
@@ -114,7 +118,7 @@ def sheets(cls, per=8, half=330, cols=1):
             X = (j % cols) * (2 * half + 14); y = sum(rowsH[:j // cols])
             d = ImageDraw.Draw(sh)
             _panel(sh, d, X, y, r, p, a, c, ctx, pl, font)
-        fn = os.path.join(out, f'sheet_{cls}_{k // per + 1:02d}.png'); sh.save(fn); print(fn, len(part))
+        fn = os.path.join(out, f'sheet_{cls}{tag}_{k // per + 1:02d}.png'); sh.save(fn); print(fn, len(part))
 
 
 def _panel(sh, d, X, y, r, p, a, c, ctx, pl, font):
@@ -129,13 +133,58 @@ def _panel(sh, d, X, y, r, p, a, c, ctx, pl, font):
                 if cxx % 100 == 0:
                     d.text((X + xx + 2, y0), str(cxx), fill='black', font=ImageFont.load_default())
             sh.paste(c, (X, y0 + 18))
+            if GRID:  # VIV-GSPLIT3B: faint gridline every 25 crop px, labelled every 50, so a box edge is read against a line
+                for cxx in range(-(-a // 25) * 25, a + c.size[0], 25):
+                    xx = X + cxx - a
+                    d.line([(xx, y0 + 18), (xx, y0 + 18 + c.size[1])], fill=(120, 170, 255) if cxx % 50 else (0, 90, 230))
+                    if cxx % 50 == 0:
+                        d.text((xx + 1, y0 + 18 + c.size[1] - 12), str(cxx), fill=(0, 60, 200), font=ImageFont.load_default())
             for yy in range(0, c.size[1], 20):
                 d.line([(X + c.size[0], y0 + 18 + yy), (X + c.size[0] + (8 if yy % 100 == 0 else 4), y0 + 18 + yy)], fill='black')
 
 
+def boxcheck(stage, out, cols=10, margin=34):
+    """VIV-GSPLIT3B check sheet: each staged eye box (tid, x, w[, y, h]) drawn on its own window of the line crop, with the token's
+    truth context, so a box that sits on a neighbour is seen and moved. y/h default to the band rule used for the log."""
+    tg = {r['tid']: r for r in rd(os.path.join(HERE, 'targets.tsv'))}
+    cache, tcache, cells = {}, {}, []
+    for ln in open(stage):
+        f = ln.rstrip('\n').split('\t')
+        if not f[0] or f[0].startswith('#'):
+            continue
+        r = tg[f[0]]
+        if r['leaf'] not in cache:
+            cache[r['leaf']] = crops(r['leaf']); tcache[r['leaf']] = rd(os.path.join(BT, TRUTH[r['leaf']] + '.truth.tsv'))
+        p, cx, ctx, pl = window(r['leaf'], r['line'], r['tpos'], cache[r['leaf']], tcache[r['leaf']], 2)
+        im = Image.open(p).convert('RGB'); W, H = im.size
+        x, w = int(f[1]), int(f[2]); y, h = band(H)
+        a = max(0, x - margin); b = min(W, x + w + margin)
+        c = im.crop((a, 0, b, H)); d = ImageDraw.Draw(c)
+        d.rectangle([x - a, y, x - a + w - 1, min(H - 1, y + h - 1)], outline=(230, 120, 0), width=2)
+        cells.append((r['tid'], ctx, c))
+    cw = max(c.size[0] for _, _, c in cells) + 6; ch = max(c.size[1] for _, _, c in cells) + 30
+    sh = Image.new('RGB', (cols * cw, -(-len(cells) // cols) * ch), 'white'); d = ImageDraw.Draw(sh)
+    for i, (t, ctx, c) in enumerate(cells):
+        X, Y = (i % cols) * cw, (i // cols) * ch
+        d.text((X + 2, Y + 1), t, fill='black', font=ImageFont.load_default()); d.text((X + 2, Y + 12), ctx, fill=(0, 0, 120), font=ImageFont.load_default())
+        sh.paste(c, (X, Y + 26))
+    sh.save(out); print(out, len(cells), sh.size)
+
+
+def band(H):
+    """y, h of an r box from the crop height (as the VIV-GSPLIT3 r boxes: top near 30 on a ~120 px crop, about 80 tall)."""
+    y = 30 if H >= 115 else max(0, H - 85)
+    return y, min(82, H - y)
+
+
 if __name__ == '__main__':
+    if sys.argv[1] == 'boxcheck':
+        boxcheck(sys.argv[2], sys.argv[3]); sys.exit()
     if sys.argv[1] == 'targets':
         targets()
+    elif '--rest' in sys.argv:  # VIV-GSPLIT3B (Addendum A): the r targets not yet boxed, wide windows (660 px), 20 per sheet
+        GRID = True
+        sheets('r', 20, 330, 2, skip_boxed=True, tag='rest')
     else:
         c = sys.argv[3] if len(sys.argv) > 3 else 'f'
         sheets(c, *((16, 200, 2) if c == 'r' else ()))

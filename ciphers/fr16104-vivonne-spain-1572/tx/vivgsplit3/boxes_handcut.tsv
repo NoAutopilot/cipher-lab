@@ -53,3 +53,43 @@ r056	f201r	f201r_L11	41	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206
 r079	f201v	f201v_L11	20	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L11_s1.jpg	1135	30	36	85	whole	yes	n # g d o o; confirmed check 2
 r099	f211r	f211r_L02	24	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L02_s2.jpg	783	22	30	78	unsure	yes	s tz g m x 7; wide window; check 3: box sat on the neighbour, re-placed box not confirmed (job stopped cutting)
 r100	f211r	f211r_L03	5	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L03_s1.jpg	688	22	34	78	unsure	yes	tz d o o g m p; wide window (line starts late); check 3: box sat on the neighbour, re-placed box not confirmed (job stopped cutting)
+r101	f211r	f211r_L03	12	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L03_s1.jpg	1077	7	44	82	whole	yes	VIV-GSPLIT3B: in r102's window (pos 8-14 visible); r101's own window showed pos 1-9; check 1 moved +35; check 2 on the g
+r102	f211r	f211r_L03	19	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L03_s1.jpg	1427	7	42	82	whole	yes	VIV-GSPLIT3B: ymoog at the window's right edge; check 1 moved +12; check 2 on the g
+r010	f102r	f102r_L11	25	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L11_s1.jpg	1522	15	40	82	whole	yes	VIV-GSPLIT3B: 3 m g n; check 1 on the g; check 2 on the g
+r035	f103r	f103r_L09	21	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L09_s1.jpg	1046	15	42	82	whole	yes	VIV-GSPLIT3B: tz g m o o m; check 1 on the g; check 2 on the g
+r057	f201r	f201r_L14	35	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L14_s2.jpg	515	30	42	82	whole	yes	VIV-GSPLIT3B: o o g d x, descender sweeps left; check 1 moved +35; check 2 on the g
+r080	f201v	f201v_L11	26	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L11_s2.jpg	707	30	42	82	whole	yes	VIV-GSPLIT3B: 2 m g 7 d; check 1 moved +15; check 2 on the g
+r124	f202r	f202r_L12	5	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L12_s1.jpg	422	30	42	82	whole	yes	VIV-GSPLIT3B: # g @; check 1 on the g; check 2 on the g
+r011	f102r	f102r_L12	49	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L12_s2.jpg	1283	30	42	82	whole	yes	VIV-GSPLIT3B: d o o g d tz; check 1 moved +5; check 2 on the g
+r036	f103r	f103r_L15	11	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L15_s1.jpg	700	21	40	82	whole	yes	VIV-GSPLIT3B: m # g : :; check 1 moved +30; check 2 on the g
+r058	f201r	f201r_L15	17	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L15_s1.jpg	934	30	40	82	whole	yes	VIV-GSPLIT3B: 6 # g m, loop under #; check 1 moved +38; check 2 on the g
+r103	f211r	f211r_L03	30	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L03_s2.jpg	1083	7	40	82	whole	yes	VIV-GSPLIT3B: c tz g m; check 1 on the g; check 2 on the g
+r125	f202r	f202r_L12	22	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L12_s2.jpg	598	30	46	82	whole	yes	VIV-GSPLIT3B: m o o g 9 L; check 1 moved +20; check 2 on the g
+r012	f102r	f102r_L13	51	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L13_s2.jpg	1370	27	42	82	whole	yes	VIV-GSPLIT3B: s @ g y 7; check 1 on the g; check 2 on the g
+r037	f103r	f103r_L16	43	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L16_s2.jpg	1026	25	40	82	whole	yes	VIV-GSPLIT3B: d # g m #; check 1 moved +40; check 2 on the g
+r059	f201r	f201r_L15	20	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L15_s1.jpg	1043	30	42	82	whole	yes	VIV-GSPLIT3B: m c g d o o; check 1 moved +25; check 2 on the g
+r126	f202r	f202r_L13	41	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L13_s3.jpg	828	30	42	82	whole	yes	VIV-GSPLIT3B: m g 7 # at window's left edge; check 2 on the g
+r083	f201v	f201v_L17	51	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L17_s3.jpg	1298	30	42	82	whole	yes	VIV-GSPLIT3B: n n g m; check 2 on the g
+r015	f102r	f102r_L17	34	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L17_s2.jpg	433	30	42	82	whole	yes	VIV-GSPLIT3B: s tz g m d; check 2 on the g
+r123	f202r	f202r_L10	51	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L10_s3.jpg	1254	30	48	82	unsure	yes	VIV-GSPLIT3B: m a g at line end, tail sweeps left; check 1 moved +8; check 2 moved +8; check 3 still off or form unclear, not re-looked
+r144	f211v	f211v_L14	8	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L14_s1.jpg	580	30	42	82	whole	yes	VIV-GSPLIT3B: # g a : : #, descender under #; check 1 moved +35; check 2 moved -10; check 3 on the g
+r145	f211v	f211v_L16	31	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L16_s2.jpg	1015	30	40	82	whole	yes	VIV-GSPLIT3B: d m g d tz; check 1 moved +10; check 2 moved +10; check 3 on the g
+r081	f201v	f201v_L15	22	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L15_s2.jpg	442	30	42	82	whole	yes	VIV-GSPLIT3B: # o o g m; check 1 moved +25; check 2 moved +12; check 3 on the g
+r146	f211v	f211v_L18	28	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L18_s2.jpg	1000	30	42	82	whole	yes	VIV-GSPLIT3B: 6 R g m o; check 1 moved +45; check 2 moved +25; check 3 on the g
+r082	f201v	f201v_L17	23	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L17_s2.jpg	523	30	42	82	unsure	yes	VIV-GSPLIT3B: tz n g s a, the g z-like; check 2 moved +45; check 3 still off or form unclear, not re-looked
+r104	f211r	f211r_L03	46	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L03_s3.jpg	868	7	42	82	unsure	yes	VIV-GSPLIT3B: m a g d S; check 2 moved +30; check 3 still off or form unclear, not re-looked
+r147	f211v	f211v_L21	7	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L21_s1.jpg	460	30	42	82	whole	yes	VIV-GSPLIT3B: 2 m g V m; check 2 moved +15; check 3 on the g
+r013	f102r	f102r_L15	18	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L15_s1.jpg	1095	27	40	82	whole	yes	VIV-GSPLIT3B: t m g x P; check 2 moved +10; check 3 on the g
+r038	f103r	f103r_L17	22	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L17_s1.jpg	1305	25	42	82	unsure	yes	VIV-GSPLIT3B: m o o g S m; check 2 moved -35; check 3 still off or form unclear, not re-looked
+r060	f201r	f201r_L17	12	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L17_s1.jpg	935	30	44	82	whole	yes	VIV-GSPLIT3B: x # g at window's right edge; check 2 moved +30; check 3 on the g
+r105	f211r	f211r_L05	26	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L05_s2.jpg	1015	30	40	82	unsure	yes	VIV-GSPLIT3B: z a S g P; check 2 moved +30; check 3 still off or form unclear, not re-looked
+r127	f202r	f202r_L14	35	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L14_s3.jpg	525	30	42	82	whole	yes	VIV-GSPLIT3B: m o o g f x; check 2 moved +30; check 3 on the g
+r148	f211v	f211v_L21	31	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L21_s2.jpg	970	30	40	82	whole	yes	VIV-GSPLIT3B: y s g m to; check 2 moved +30; check 3 on the g
+r014	f102r	f102r_L16	38	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L16_s2.jpg	500	25	42	82	unsure	yes	VIV-GSPLIT3B: z m g m #; check 2 moved +30; check 3 still off or form unclear, not re-looked
+r039	f103r	f103r_L18	19	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L18_s1.jpg	1115	21	42	82	whole	yes	VIV-GSPLIT3B: c S g h d; check 2 moved +15; check 3 on the g
+r061	f201r	f201r_L17	25	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L17_s1.jpg	1335	30	42	82	unsure	yes	VIV-GSPLIT3B: a s g k n; check 2 moved +15; check 3 still off or form unclear, not re-looked
+r084	f201v	f201v_L18	37	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L18_s3.jpg	537	30	42	82	unsure	yes	VIV-GSPLIT3B: d b g m a; check 2 moved +35; check 3 still off or form unclear, not re-looked
+r106	f211r	f211r_L05	39	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L05_s3.jpg	657	30	42	82	unsure	yes	VIV-GSPLIT3B: m a g S o; check 2 moved +45; check 3 still off or form unclear, not re-looked
+r128	f202r	f202r_L18	43	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L18_s3.jpg	745	30	42	82	whole	yes	VIV-GSPLIT3B: s o g d a; check 2 moved +15; check 3 on the g
+r149	f211v	f211v_L21	36	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L21_s3.jpg	522	30	40	82	whole	yes	VIV-GSPLIT3B: 2 m g tz L; check 2 moved +30; check 3 on the g
+r040	f103r	f103r_L19	20	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L19_s1.jpg	1143	27	40	82	unsure	yes	VIV-GSPLIT3B: S c g 4 d; check 2 moved +35; check 3 still off or form unclear, not re-looked
