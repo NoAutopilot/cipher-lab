@@ -1,0 +1,1 @@
+loc check (label-free, sign 4, seed 5, 12 tokens): tick on the 4 in 8/12 (0,1,2,5,8,10,11 + 8 two 4s); within one sign 10/12 (4,6,7 near); miss 2/12 (3,9)

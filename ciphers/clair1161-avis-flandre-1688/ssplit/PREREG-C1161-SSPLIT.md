@@ -10,7 +10,7 @@ own-work claims (CL1161-S7, done in NOTES.md; this job's own claim): proceed. La
 
 ## Step 1: sort every S token (one reader)
 - `ssplit/ss_windows.py` cuts one window per S token (all 275, ciphertext.tsv order) from `la/crops` with tools/lookalike_pass.py helpers
-  (half-width 2.5 sign widths, scale 1, red tick at the estimate, as CL1161-S7), shuffles them (seed 1688) under opaque ids X001...,
+  (half-width 2.0 sign widths, scale 2, 3x4 grid; changed from 2.5/scale 1 after the first montage proved too small to read, before any sort was written, red tick at the estimate, as CL1161-S7), shuffles them (seed 1688) under opaque ids X001...,
   writes montages to the session scratchpad only (images never go into git) and the id->token key to `ssplit/windows_key.tsv`.
 - One reader (this worker, Opus) sorts every window by shape only: O open, L looped, ? unsure / no S at the tick / blot. The reader
   does not open windows_key.tsv, the decode or the reading until the sort is written and pushed (`ssplit/sort.tsv`).
@@ -33,3 +33,11 @@ own-work claims (CL1161-S7, done in NOTES.md; this job's own claim): proceed. La
   H1 reject -> no support for looped = n at this sort. H1 accept and H2 accept -> the try cannot tell the shapes apart (undecided).
 - This job edits neither ciphertext.tsv nor key.tsv in any branch (one reader is not two blind passes; TRANSCRIPTION.md).
 Cap USD 4, box 75 min (07:55-09:10 UTC); stop before a unit that would cross 80% of either.
+
+## Addendum A (08:0x UTC, before any sort was written or any key/label opened)
+The first 12 even-spacing windows (scale 2) put the tick on no S, a blot or blank paper in about 6 of 12 (label-free look; the windows'
+token identities were not opened). Localisation is replaced by `ssplit/ss_locate.py` (ink segments in the line's own band, segment
+picked by rank); checked label-free on 12 random tokens of sign `4` (not S): tick on the 4 in 8/12, within one sign in 10/12
+(`ssplit/loc_check.txt`). Windows: +-1.6 segment pitch, band +-90 px, upscaled to >= 300 px wide; same seed 1688, same ids X001...
+Reading rule: the S on the band's main line nearest the tick, if within about one sign; two S equidistant, no S, or illegible -> ?.
+Gates K and T unchanged.
