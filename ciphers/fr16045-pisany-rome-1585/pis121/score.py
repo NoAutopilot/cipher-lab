@@ -117,6 +117,25 @@ def load_gloss(path):
     return {k: norm(' '.join(v)) for k, v in g.items()}
 
 
+def build_reconciled():
+    """rec/ciphertext_draft.tsv (reconcile_passes.py) with the reconciler's rec/choices.tsv applied; writes reconciled.tsv."""
+    ch = {}
+    for ln in open(os.path.join(HERE, 'rec', 'choices.tsv')).read().splitlines()[1:]:
+        f = ln.split('\t')
+        if len(f) >= 3:
+            ch[(f[0], f[1])] = f[2].strip()
+    rows = {}
+    for ln in open(os.path.join(HERE, 'rec', 'ciphertext_draft.tsv')).read().splitlines()[1:]:
+        f = ln.split('\t')
+        sign = ch.get((f[0], f[1]), f[2]) if f[3] != 'H' else f[2]
+        if sign and sign != '-':
+            rows.setdefault(f[0], []).append(sign)
+    with open(os.path.join(HERE, 'reconciled.tsv'), 'w') as fh:
+        for k in sorted(rows):
+            fh.write(k + '\t' + ' '.join(rows[k]) + '\n')
+    return load_pass(os.path.join(HERE, 'reconciled.tsv'))
+
+
 def err_2reader(a, b):
     import difflib
     sm = difflib.SequenceMatcher(None, a, b, autojunk=False)
@@ -151,7 +170,7 @@ def run():
     gloss = load_gloss(os.path.join(HERE, 'gloss_pass.tsv'))
     A = load_pass(os.path.join(HERE, 'passA.tsv'))
     B = load_pass(os.path.join(HERE, 'passB.tsv'))
-    R = load_pass(os.path.join(HERE, 'reconciled.tsv'))
+    R = build_reconciled()
     e = err_2reader(A, B)
     res = {'gloss_letters': {k: len(v) for k, v in gloss.items()}, 'signs': {'A': len(A), 'B': len(B), 'R': len(R)},
            'err_2reader': round(e, 4)}
