@@ -1822,3 +1822,21 @@ Rule-7 fresh re-derivation of `key_r4369/reading_R1953_img.txt` from the spec, k
 tokens (`verify_hellen/depth_summary.json`): run 13 vs AD 3168, item control 48 vs p95 67, D1 held at 54.3%; N3 held. Registers
 corrected: status.json near entry and depth_check, NEAR.md token count, and the Berlin clause of the safe sentence (AUDIT.md
 "## AUDIT (VERIFY-HELLEN)"). The "VERIFIER WANTED" of UNA-HELLEN is answered; the Remaining gaps and Escalation above stand.
+
+## HEL-R7 (15 Oct 2026, account 4, LANE DEFAULT-A4-0437-15)
+Second rule-7 fresh re-derivation of `key_r4369/reading_R1953_img.txt`, from the spec, `key_decode.tsv`, `decode.json` and the input
+layer only, with the target's own decode script (not VERIFY-HELLEN's `verify_hellen/rederive.py`). The brief pointed at line ~1799's
+"VERIFIER WANTED"; that ask was already answered by VERIFY-HELLEN (9 Oct, line ~1817), so this is an independent repeat, not the first.
+- Input: `build_input.py --check` exit 0 (R1953_pipe_img.txt regenerates from R1953_pipe.txt + image_check_r1953/zero_eight
+  corrections). R1953_pipe.txt vs `ciphertext_R1953.txt`: 846 = 846 tokens, 0 differences once the transcription's `_` layout marks
+  are dropped.
+- Decode: `python3 tools/decode_key.py <scratch copy of decode.json, key_decode.tsv, both pipe files>` -> 847 tokens H 154, M 15,
+  S 306, U 372 (img) and 846 tokens H 152, M 16, S 304, U 374 (DECODE layer). `diff` against the committed `reading_R1953_img.txt`,
+  `reading_R1953_img_tokens.tsv` and `reading_R1953.txt`: identical, 0 differing tokens against 15 M tokens (rule 7 passes).
+  `decode_key.py ciphers/hellen-frederick-1752/key_r4369 --check`: "reading up to date", exit 0.
+- Judge (`python3 tools/judge_plaintext.py specs/hellen-frederick-1752.json --file <re-derived reading_R1953_img.txt>`):
+  `ok length: got=1332, min=200, max=1000000000` / `FAIL language: score=-0.978, null_p99=-1.739, real_p05=-0.968,
+  real_median=-0.826, mode=both, N=1332` / `FAIL - hellen-frederick-1752 (a PASS is a gate for a verifier, not a reading; rule 10)`
+  -- the committed figure, reproduced; still a FAIL 0.010 under real_p05 and far above the null ("cannot decide", as before).
+No grade, depth, N-class, register or NEAR.md row changed (NEAR's next step is the 1-800 rebuild, not this re-derivation). Remaining
+gaps and Escalation above stand.
