@@ -11,6 +11,10 @@ occurrence, never released): 22 'de' (group 79), 66 'r' (49, 62), and 722 = X. S
   python3 ft4t_seg.py --value ti --real
   python3 ft4t_seg.py --value ti --ctrl s --draws 0-39
   python3 ft4t_seg.py --summarize FILE...
+NAF-SPLIT (account 1, 15 Oct 2026, PREREG-NAFSPLIT.md): --anchors CODE=VALUE,... cuts at every occurrence of each
+count-matched anchor (groups paired with slip words in order) and scores the piece holding 722; --pins CODE=VALUE,...
+replaces the pin family. Defaults reproduce FT4t exactly (628 hongrie, 279 plus; pins 22 de, 66 r).
+  python3 ft4t_seg.py --anchors 628=hongrie,605=republique,279=plus --value ti --real
 """
 import argparse, os, random, sys, time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -21,7 +25,12 @@ PINS = {'22': 'de', '66': 'r'}
 A1, A2 = ('628', 'hongrie'), ('279', 'plus')
 
 
+ANCHORS = None
+
+
 def segment():
+    if ANCHORS:
+        return segment_multi(ANCHORS)
     toks, text, words = seg.load('f249')
     for c, w in (A1, A2):
         assert toks.count(c) == words.count(w) == 1
@@ -30,6 +39,27 @@ def segment():
     st, sw = toks[g1 + 1:g2], words[w1 + 1:w2]
     assert '722' in st and st.count('722') == 1
     return st, ''.join(sw), sw
+
+
+def segment_multi(anchors):
+    """Cut at every occurrence of each anchor; counts must match and the group/word cut orders must agree."""
+    toks, text, words = seg.load('f249')
+    cuts = []
+    for c, w in anchors:
+        gi = [i for i, t in enumerate(toks) if t == c]
+        wi = [i for i, x in enumerate(words) if x == w]
+        assert len(gi) == len(wi) >= 1, (c, w, len(gi), len(wi))
+        cuts += list(zip(gi, wi))
+    cuts.sort()
+    assert [w for _, w in cuts] == sorted(w for _, w in cuts), cuts
+    g722 = toks.index('722')
+    bounds = [(-1, -1)] + cuts + [(len(toks), len(words))]
+    for (g1, w1), (g2, w2) in zip(bounds, bounds[1:]):
+        if g1 < g722 < g2:
+            st, sw = toks[g1 + 1:g2], words[w1 + 1:w2]
+            assert st.count('722') == 1
+            return st, ''.join(sw), sw
+    raise SystemExit('722 is an anchor')
 
 
 def draws(n, seed):
@@ -53,7 +83,21 @@ def main():
     ap.add_argument('--seed', type=int, default=3)
     ap.add_argument('--sublimit', type=float, default=10.0)
     ap.add_argument('--summarize', nargs='*')
+    ap.add_argument('--anchors', help='CODE=VALUE,... (default FT4t: 628=hongrie,279=plus)')
+    ap.add_argument('--pins', help='CODE=VALUE,... pin family besides 722 (default 22=de,66=r)')
+    ap.add_argument('--show', action='store_true', help='print the segment only, no score')
     a = ap.parse_args()
+    global ANCHORS, PINS
+    if a.anchors:
+        ANCHORS = [tuple(x.split('=')) for x in a.anchors.split(',')]
+    if a.pins:
+        PINS = dict(x.split('=') for x in a.pins.split(','))
+    if a.show:
+        toks, text, sw = segment()
+        print(f'S groups {len(toks)}: {" ".join(toks)}')
+        print(f'S words {len(sw)} / letters {len(text)}: {" ".join(sw)}')
+        print('pins present:', {c: toks.count(c) for c in PINS}, 'value substrings:', {v: text.count(v) for v in PINS.values()})
+        return 0
     if a.summarize is not None:
         sys.argv = [sys.argv[0], '--summarize'] + a.summarize
         return fs.main()
