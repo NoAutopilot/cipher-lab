@@ -60,7 +60,7 @@ p6	2	19	5	u	C
 p6	2	20	TH	r	C	
 p6	2	21	g	g	C	
 p6	2	22	2	i	C	
-p6	2	23	6	-	M	augspurgis(ch)e, witness sch over a plain 6 (value withheld): no sch sign; 6 (pass A marks it 6~)
+p6	2	23	6f	sch	M	augspurgis(ch)e: pass A 6~; AVS-W1 (PREREG-AVS-W1 rule 2, worker eye, not blind): the long-flag 6 of 6f, value sch, M
 p6	2	24	3	e	C	
 p6	2	25	dT	c	C	
 p6	2	26	4	o	C	
@@ -206,7 +206,7 @@ p6	6	4	5	u	C
 p6	6	5	2	i	C	
 p6	6	6	v	n	C	
 p6	6	7	2	i	C	
-p6	6	8	6	-	M	Caluinis(ch): pass A 6~
+p6	6	8	6f	sch	M	Caluinis(ch): pass A 6~; AVS-W1 (PREREG-AVS-W1 rule 2): the long-flag 6 of 6f, value sch, M
 p6	6	9	dD	d	C	
 p6	6	10	0	a	C	
 p6	6	11	TH	r	C	
@@ -664,7 +664,7 @@ p6	18	17	L	l	C
 p6	18	18	2	i	C	
 p6	18	19	dT	c	C	
 p6	18	20	1	h	C	
-p6	18	21	6f	-	M	christlich + a small flagged 6, W2 'Christlich'
+p6	18	21	6f	s	M	christlich + a small flagged 6, W2 'Christlich', W1 'Christlichs' (AVS-W1, PREREG rule 1c: value s; class 6f split s/sch, so M)
 p6	18	22	8	w	C	
 p6	18	23	3	e	C	
 p6	18	24	TH	r	C	

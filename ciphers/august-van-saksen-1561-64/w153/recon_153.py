@@ -13,7 +13,8 @@ Sign classes are this letter's own labels (pass B's shape distinctions, which pa
   read 5); Q, B, M, K = word signs; C16 = the dotted numeral group '.16.'; Zh, Me = the code group read over
   'Stadt Antorff' (line 5); '.' = a dot on the line (no value). Added by AVS-153 (lines 10-20): Ce = epsilon/C-like
   word sign for 'das' (pass A 'c', pass B 'e'; not compared with line 1's 'c' by eye); R = word sign 'E.L.' (Euer Liebden);
-  X = x-shape 'y'; 6f = 6 with a long flag (values split s/sch).
+  X = x-shape 'y'; 6f = 6 with a long flag (values split s/sch). AVS-W1 (15 Oct 2026): lines 2 and 6's '6~' relabelled 6f
+  (sch, M); line 18's extra 6f valued s from W1 'Christlichs' (M).
 Token value (u and v normalised to u, as the period writes them) = the letter(s) of the witness text aligned to it (both witnesses agree word for word in lines 1-9 except
 where noted). Grade C = aligned to the period decipherment with the passes agreeing on the class; M = the passes split on
 the class, the cipher spelling differs from both witnesses, or the class carries more than one value. '-' = no value.
@@ -29,7 +30,7 @@ OUT_KEY = HERE.parent / "key_153.tsv"
 LINES = {
  1: "3:e 6:s 2:i st:st | 0:a vb:b 3:e TH:r | S:zu .:- | 3:e TH:r vb:b c:a:M TH:r Lm:m 3:e v:n | Q:das | B:der | "
     "dT:c 0:a L:l 5:u:M 2:i v:n 2:i 6:s Lm:m 5:u 6:s | 6:s 4:o | 8:w 3:e 2:i 9:t 9:t",
- 2: "3:e 2:i v:n TH:r 3:e 2:i 6:s 6:s 3:e 9:t .:- M:und K:die 0:a 5:u g:g 6:s phi:p 5:u TH:r g:g 2:i 6:-:M 3:e | "
+ 2: "3:e 2:i v:n TH:r 3:e 2:i 6:s 6:s 3:e 9:t .:- M:und K:die 0:a 5:u g:g 6:s phi:p 5:u TH:r g:g 2:i 6f:sch:M 3:e | "
     "dT:c 4:o v:n q:f 3:e 6:s 6:s 2:i 4:o v:n | 5:u vb:b 3:e TH:r",
  3: "8:w 0:a d:c 1:h 6:s 6:s 3:e 9:t | dD:d 0:a v:n | 2:i v:n | 0:a L:l L:l 3:e v:n | dD:d 2:i 3:e 6:s 6:s 3:e v:n | "
     "L:l 0:a v:n dD:d 3:e v:n | 6:s:M 3:e 2:i v:n 9:t | v:n 5:u 1:-:M TH:r",
@@ -37,7 +38,7 @@ LINES = {
     "dT:c 4:o v:n q:f:M 3:e 6:s 6:s 2:i 4:o v:n | M:und K:die | 8:w 3:e TH:r:M dD:d:M 3:e v:n",
  5: "2:i v:n dD:d 2:i 3:e 6:s 6:s 3:e TH:r | Zh:-:M Me:-:M e:-:M | 3:e TH:r 1:h 0:a L:l 9:t 3:e v:n | B:der | "
     "0:a v:n dD:d 3:e TH:r | 1:h 0:a 5:u q:f q:f | 2:i st:st:M | dD:d 5:u TH:r dT:c 1:h 0:a 5:u 6:s 6:-:M",
- 6: "dT:c 0:a L:l 5:u 2:i v:n 2:i 6:-:M | dD:d 0:a TH:r 5:u Lm:m:M vb:b | st:st 1:h 3:e 9:t | 5z:zu:M | "
+ 6: "dT:c 0:a L:l 5:u 2:i v:n 2:i 6f:sch:M | dD:d 0:a TH:r 5:u Lm:m:M vb:b | st:st 1:h 3:e 9:t | 5z:zu:M | "
     "vb:b 3:e 6:s 4:o TH:r g:g 3:e v:n | B:der | C16:Konig_zu_Hispania:M | 8:w 3:e TH:r dD:d 3:e | 5z:zu:M",
  7: "3:e v:n dD:d:M 3:e TH:r 5:u v:n g:g | B:der | TH:r 3:e L:l L:-:M 2:i g:g 2:i 4:o v:n | "
     "8:w 3:e v:n 2:i g:g 3:-:M TH:-:M | 5:u 3:e TH:r 6:s 1:h 3:e v:n | M:und | Lm:m:M 2:i 9:t 9:t",
@@ -61,7 +62,7 @@ LINES = {
      "g:g 3:e 8:w 0:a L:l dD:-:M 9:t | v:n 2:i dT:c 1:h 9:t Zb:-:M",
  17: "5:u 4:o TH:r v:n 1:-:M 3:-:M Lm:m:M 3:e v:n | 8:w 4:o L:l L:-:M 3:e .:- .:- | 1:h 2:i 3:e TH:r 0:a v:n | "
      "8:w 3:e TH:r dD:d 3:e v:n | R:E.L. | 4:o 1:h v:n",
- 18: "Zb:z 8:w 3:e 2:i q:f q:-:M 3:e L:l | 3:e 2:i v:n | d:c 1:h TH:r 2:i st:st L:l 2:i dT:c 1:h 6f:-:M | 8:w 3:e TH:r dT:c V:k | "
+ 18: "Zb:z 8:w 3:e 2:i q:f q:-:M 3:e L:l | 3:e 2:i v:n | d:c 1:h TH:r 2:i st:st L:l 2:i dT:c 1:h 6f:s:M | 8:w 3:e TH:r dT:c V:k | "
      "5:u 3:e TH:r TH:r 2:i dT:c 1:h 9:t 3:e v:n",
  19: "M:und .:- | vb:b 3:e X:y | dD:d 2:i 3:e 6:s 6:-:M 3:e v:n | L:l 0:a v:n dD:d 3:e v:n | 3:e 2:i v:n | 3:e 8:w 2:i g:g 3:e 6f:s:M | "
      "L:l 4:o vb:b | 3:e TH:r",
@@ -69,12 +70,12 @@ LINES = {
 }
 NOTE = {
  (1, "c"): "erbarmen: open c over a; passes split (c+/c,plus)", (1, "5"): "calvinismus: s-like small sign, passes S/s; 5 = u/v",
- (2, "6"): "augspurgis(ch)e, witness sch over a plain 6 (value withheld): no sch sign; 6 (pass A marks it 6~)", (3, "6"): "seint: 6 with a mark above (6~)",
+ (2, "6f"): "augspurgis(ch)e: pass A 6~; AVS-W1 (PREREG-AVS-W1 rule 2, worker eye, not blind): the long-flag 6 of 6f, value sch, M", (3, "6"): "seint: 6 with a mark above (6~)",
  (3, "1"): "nur: cipher 'nuhr'", (4, "Zb"): "zwo: barred x/z, passes X/Z+", (4, "phi"): "pass B Qc",
  (4, "q"): "confession: both passes read 9 (q-shape vs 9 not settled)", (4, "TH"): "werden: pass B 'e' (small theta)",
  (4, "dD"): "werden: A dT, B DX", (5, "Zh"): "'Stadt Antorff' code group, 3 signs (Z#, M, e), not assigned",
  (5, "st"): "ist: 7 with a ball (S7)", (5, "6"): "durchaus + one 6 more than the witness",
- (6, "6"): "Caluinis(ch): pass A 6~", (6, "Lm"): "darumb: pass B A (plain)", (6, "5z"): "zu: read 5 by both passes",
+ (6, "6f"): "Caluinis(ch): pass A 6~; AVS-W1 (PREREG-AVS-W1 rule 2): the long-flag 6 of 6f, value sch, M", (6, "Lm"): "darumb: pass B A (plain)", (6, "5z"): "zu: read 5 by both passes",
  (6, "C16"): "'.16.' over 'Konig zu Hispania'", (7, "dD"): "enderung: A dT, B DL (no cross seen)",
  (7, "L"): "cipher 'Relligion'", (7, "3"): "cipher 'weniger', W1 'wenig', W2 omits", (7, "Lm"): "mitt: both passes A/L",
  (8, "g"): "cipher 'vnrugiher' (h/g swapped vs witness)", (8, "1"): "cipher 'leuth ihre', W2 'leute jre'",
@@ -91,7 +92,7 @@ NOTE = {
  (16, "dD"): "cipher 'gewaldt', W2 'gewalt'", (16, "Zb"): "cipher 'nichtz' (barred x = z), W2 'nichts'",
  (17, "1"): "cipher 'vornhemen', W2 'vornehmen'", (17, "3"): "e/h swap (vornhemen)", (17, "Lm"): "m as plain inverted V",
  (17, "L"): "cipher 'wolle', W2 'wolte'", (18, "q"): "cipher 'zweiffel', W2 'zweifel'",
- (18, "6f"): "christlich + a small flagged 6, W2 'Christlich'", (19, "6"): "cipher 'diessen', W2 'diesen'",
+ (18, "6f"): "christlich + a small flagged 6, W2 'Christlich', W1 'Christlichs' (AVS-W1, PREREG rule 1c: value s; class 6f split s/sch, so M)", (19, "6"): "cipher 'diessen', W2 'diesen'",
  (19, "6f"): "ewiges: the long-flag 6 over s",
 }
 

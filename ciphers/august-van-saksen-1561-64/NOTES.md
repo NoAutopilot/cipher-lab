@@ -1055,9 +1055,9 @@ Read so far: 884 of 905 cipher tokens firm (97.7%: C 528 + S 356), M 21, U 0 (R1
 - [x] known-keys: tools/key_crossmatch.py ran every on-disk key against ciphertext_53/57/126 (KEY-CROSSMATCH.tsv); only each text's own key reads it (key_74 on 53: z -4.47, "uettelah?e.znnregu..."; key_98 on 53: z 0.74); the Schwarzburg 1561 key differs in form; the four keys are in KEY-OFFICES.tsv and KEY-DESIGN.tsv; Cryptiana dutch.htm, DECODE and both solver repositories: no hits (check-solved)
 - [x] print: Groen, Gachard, Rachfahl (II.1 through HTRC tokens only), von Weber, Kluckhohn I, Goetz 1891, Japikse I (ends Sept 1561), Demandt nrs 113/115 (clear text only), Kervyn II, Weiss, Ritter, Kruse, 24 Google Books gist queries, phrase searches, JSTOR rows 48/49/55/56/63/64/69; no prior decipherment located (AUDIT.md V3, A2, A3, D1, D2, V-GATE2). Groen's printed text of WVO 124 not yet used as a key source (siblings). "While waiting" bullet 3 (closer Rachfahl II.1 HTRC scan) is optional print work, not a reading step
 - [ ] key-rebuild: done for 53 (tools/homophonic_anneal.py, 4 of 6 restarts converge, matched control 280/282; G6 = k by context; re-run on the native transcription by R11A-AVSK, 6 Oct 2026: 4 of 6 converge on the same 20 values, G6 = k now from the anneal itself, 9 = f, control 0.992, low-count gate L FAIL so 9 stays M; R11A-AVS9C, 6 Oct 2026: a control with count-2 signs reads them 2/12, gate L2 FAIL, 9 stays M: [retired] for sign 9 (and for G4, count 2, M since R11A-AVSV2), instrument tools/homophonic_anneal.py at N 364, rule 3 third-attempt clause; only ASKS 67's KHA copy or more 53-system ciphertext reopens it). Not done: 57's five word signs and 126's K and 1-as-i are context-only (Λ filled = m and the down-arrow = k settled from WVO 124, A2-AVS3, 2 Oct 2026); key_98 extended from WVO 124 (align_124.txt, A2-AVS4, 2 Oct 2026: EL8 das and R E.L. now C, PAPE/K/S added; 9, Pf, M, Ma confirmed); the 98-only '~' units that 124 does not contain (NW, Qf, Mf, HX, Dl, Sg, BAR) stay M because f.67 was never transcribed. Planned: settle the rest from an f.67 transcription or WVO 175 (WVO 58 does not share 53's system, 2 Oct 2026, so key_53 cannot be extended from a sibling; 58 would extend key_74 by two word signs, fried and Religion, at grade C once aligned, a key-register job with no effect on the three targets). No instrument here has failed its own gate even once, so nothing is retired
-- [ ] image-check: R21 read 126 once at native resolution; S1 settled pass disagreements on 100 dpi crops (settle_53.py, settle_57.py). 57 p3 native passes done 6 Oct 2026 (R11A-AVS57: two blind passes + reconciliation on images/crops_r11a57/, M 53 -> 7). 53 p1+p2 native passes done 6 Oct 2026 (R11A-AVS53: two blind passes per page + reconciliation on images/crops_r11a53/, M 75 -> 6; this also settles the SO-SAXONY-53-57 spots: L10 pos 26 is an x, 'mich'; 'geschret' is as written, a dot before s, no value change). ('slagen' and the down-arrow settled on the native f.139 scan by A2-AVS3, 2 Oct 2026; 'adesn' and the four f.139 conf-M signs re-read natively by AVS-SPOT, 3 Oct 2026: 3 to C, 'adesn' a clear Sb, Λ l.1 pos 32 stays M). WVO 153 p6 lines 10-20 read natively 15 Oct 2026 (AVS-153: two blind Sonnet passes per band + reconcile, key_153 now lines 1-20, 709 signs C 644 M 65, gates PASS; W1 p7 native read still owed, ~1). Native look at WVO 124 f.134's one K = der done 15 Oct 2026 (AVS-175): K-shaped on this worker's look; blind sort gate G FAIL (non-test), nothing moved. "While waiting" bullet 1 (run key_53 on f.266v) is stale: F1 did it 24 Sept 2026
+- [ ] image-check: R21 read 126 once at native resolution; S1 settled pass disagreements on 100 dpi crops (settle_53.py, settle_57.py). 57 p3 native passes done 6 Oct 2026 (R11A-AVS57: two blind passes + reconciliation on images/crops_r11a57/, M 53 -> 7). 53 p1+p2 native passes done 6 Oct 2026 (R11A-AVS53: two blind passes per page + reconciliation on images/crops_r11a53/, M 75 -> 6; this also settles the SO-SAXONY-53-57 spots: L10 pos 26 is an x, 'mich'; 'geschret' is as written, a dot before s, no value change). ('slagen' and the down-arrow settled on the native f.139 scan by A2-AVS3, 2 Oct 2026; 'adesn' and the four f.139 conf-M signs re-read natively by AVS-SPOT, 3 Oct 2026: 3 to C, 'adesn' a clear Sb, Λ l.1 pos 32 stays M). WVO 153 p6 lines 10-20 read natively 15 Oct 2026 (AVS-153: two blind Sonnet passes per band + reconcile, key_153 now lines 1-20, 709 signs C 644 M 65, gates PASS). W1 p7 read natively 15 Oct 2026 (AVS-W1: no rule-4 W1/W2 conflict on lines 10-20; line 18's extra 6f = s from W1 'Christlichs'; lines 2/6 '6~' = 6f, sch, M; 6f stays split s/sch, M; gates PASS). Native look at WVO 124 f.134's one K = der done 15 Oct 2026 (AVS-175): K-shaped on this worker's look; blind sort gate G FAIL (non-test), nothing moved. "While waiting" bullet 1 (run key_53 on f.266v) is stale: F1 did it 24 Sept 2026
 - [ ] retry: AVS53 (3 Oct 2026) re-ran decode_key.py --check after a pre-registered key_53 dictionary regrade of 53 (tests A and B, band-permuted control, 1000 draws, both gates PASS; 51 tokens M->S; NOTES "AVS53"). R11A-AVS53 (6 Oct 2026) re-ran decode_key.py --check after the native re-read of 53: S 358 M 6 of 364, exit 0 (the AVS53 regrade rows now apply only where a token is still M: one, L06 pos 32). no unread groups (U 0). Planned: the key_53 solver re-run on the native transcription (53 key gap); rerun decode_key.py --check after each key extension above
-Verdict: keep going: 1 internal gap (53 p1+p2 re-read from the native scan 6 Oct 2026, R11A-AVS53, S 358 M 6 of 364, S 356 M 8 after R11A-AVSV2 regraded G4 = p to M; 57 p3 re-read from the native scan 6 Oct 2026, R11A-AVS57, C 294 M 7 of 301; 126 C 234 M 6 after AVS-SPOT and AVS175B, 3 Oct 2026); signs 9 and G4 are now waiting-on ASKS 67 (R11A-AVS9C, 6 Oct 2026: the count-2 control FAILs, 2/12, so the anneal's 9 = f cannot leave M); cheapest next: a lane decision on Qf's label-split hypothesis (SIG-AVS, ~$1; 175 pp.3-8 already run by R12A-AVS175, 6 Oct 2026, so not a next step); 126's two K: the 124 f.134 K = der witness is not overturned (AVS-175, 15 Oct 2026: the sign is K-shaped on this worker's native look, gate G of the blind sort FAILed so nothing moved), so K waits on ASKS 67 like the other 126 key-level M
+Verdict: keep going: 1 internal gap (53 p1+p2 re-read from the native scan 6 Oct 2026, R11A-AVS53, S 358 M 6 of 364, S 356 M 8 after R11A-AVSV2 regraded G4 = p to M; 57 p3 re-read from the native scan 6 Oct 2026, R11A-AVS57, C 294 M 7 of 301; 126 C 234 M 6 after AVS-SPOT and AVS175B, 3 Oct 2026); signs 9 and G4 are now waiting-on ASKS 67 (R11A-AVS9C, 6 Oct 2026: the count-2 control FAILs, 2/12, so the anneal's 9 = f cannot leave M); cheapest next: a lane decision on Qf's label-split hypothesis (SIG-AVS, ~$1; 175 pp.3-8 already run by R12A-AVS175, 6 Oct 2026, so not a next step); 126's two K: the 124 f.134 K = der witness is not overturned (AVS-175, 15 Oct 2026: the sign is K-shaped on this worker's native look, gate G of the blind sort FAILed so nothing moved), so K waits on ASKS 67 like the other 126 key-level M; key_153 (WVO 153, a key source for this family) read to its end and W1-checked (AVS-153, AVS-W1, 15 Oct 2026): it moves none of 126's M
 
 ## AVS-175: WVO 124 f.134's one K = der, native look; 175 pp.3-8 not re-run (15 Oct 2026, worker AVS-175, account 2, LANE DEFAULT-A2-0509-15)
 
@@ -1371,3 +1371,60 @@ where it was not found; novelty not classified.
 Next (not done here): a native read of W1 (p7/f.5) for a rule-4 W1/W2 check on lines 10-20 (1 Opus look, ~1); a look at the
 lines 2/6 '6~' tokens against 6f (~0.5).
 
+
+## AVS-W1 (account 2, 15 Oct 2026, 16:34-16:4x UTC by date -u, for LANE DEFAULT-A2-1616-15)
+
+Worker AVS-W1 (Opus; brief `.claude/briefs/runs/2026-10-15-ytbiz-default-1616-jobs.md` "### AVS-W1", cap 2.5, box 50 min). WVO 153 is
+a KEY SOURCE (both period decipherments on the leaf): this firms `key_153.tsv` for the unread letters of the System B / key_98 family
+(WVO 126's key-level M tokens, WVO 175 pp.3-8, any further System B letter); it is not a reading of an unread text.
+PREREG-AVS-W1.md pushed (dde692dc5) before W1 was read. `tools/prior_work.py ... --item-spec "item_id=wvo153,wvo=153" --step-type
+transcribe --offline`: exit 4, verdict LOOK (2-leaf, warn-first; the leaf's own clear copies are this job's material), rows in prior-work.tsv.
+
+**Source and crops.** 00153.pdf fetched once (resources.huygens.knaw.nl, 1 request, HTTP 200, 8,915,147 bytes, sha1 c0f43787b141),
+scratchpad only; `pdfimages -j` -> nat-005 (p6, cipher) and nat-006 (p7, W1, 2033x2194). Crop commands (pasted):
+`python3 tools/iiif_lines.py --image <scratch>/r/nat-006.jpg --out <scratch>/w1 --debug` (17 bands for 19 lines: mis-banded, the hand is
+dense and sloped) and `... --region 100,880,1933,800 --deskew --distance 50` (9 bands for 11 lines, also mis-banded); W1 lines 9-19 were
+therefore cut by eye centres (region y 29, 97, 170, 242, 309, 377, 441, 518, 580, 658 + slope 0.034) into left/right half-line strips with
+PIL, plus 2-3x zooms of 'hoch', 'helffen' and 'Christlichs'. Cipher: `python3 tools/iiif_lines.py --image <scratch>/r/nat-005.jpg --out
+<scratch>/c6 --debug` (21 bands, as AVS-153), single-sign windows of L03, L07 and L16. No image committed.
+
+**W1 (p7/f.5) read natively, W1 lines 10-19 = cipher lines 10-20:** "wollen, Daraus dan ein gros bluthvergiessen erfolgen wurde,
+Derwegen hoch[?] vonnothen [one word struck] und guth [u with a mark] das E.L. und andere Chur und fursten sich dieser sachen mit anneh-
+men und bey konig zu hispanien dahin handlen h?lffen [vowel unsettled: e or a marked o/u], das er die gelegenheit bedencken und seine
+gehorsame unterthane hiermitt verschonen und der Religion halben wider sie mit gewalt nichts vornehmen wolte, Hieran werden E.L. ohn
+zweifell ein Christlichs werck verrichten, und bey diesen landen ein ewiges lob erlangen. Datum vt in literis".
+
+**Rule 1 (W1/W2, PREREG items 1a-1d).** W1 = W2 wherever both have the word, except: W1 'dan' (W2 'dann'), 'ohn' (W2 'ohne'),
+'unterthane' (W2 'vnterthanen'), 'zweifell' (W2 'zweifel'), 'Christlichs' (W2 'Christlich'). In the first three the cipher agrees with
+W1 (1b: values unchanged, C kept, listed here). No valued token of lines 10-20 is contradicted by W1 (1d: no class to M). 1c, held
+spellings: only 'christlich + 6f' matches W1's spelling exactly ('Christlichs'), so line 18's extra 6f now reads s. Its grade stays
+M, not C as 1c's wording gives: 6f is a class split s/sch, and recon_153.py's standing rule keeps any token of a split class at M (the
+more conservative of the two; a deviation from 1c's wording, reported). Every other held spelling stays held, W1 does not spell it as
+the cipher does: bluet (W1 bluth), hoch (W1 unsettled), guet (W1 guth), sich with 5, diesser, annhemen (W1 annehmen), dahien (W1
+dahin), hulffen (W1 vowel unsettled), vnderthane (W1 t), wieder, gewaldt, nichtz, vornhemen, wolle (W1 'wolte' too), zweiffel (W1
+'zweifell'), diessen.
+
+**Rule 2 ('6~' tokens, worker eye, not blind).** Line 2 'augspurgis(ch)e' and line 6 'Caluinis(ch)': each is a 6 whose top stroke rises
+into a long flag ending in a small loop, the same form as line 15's 6f over 'sch' ('verschonen'); the plain 6 of line 2 has only a
+short top. Outcome (i): both relabelled 6f, value sch, M. 6f now n=6, sch 3 (augspurgische, Caluinisch, verschonen) and s 3 (seine,
+Christlichs, ewiges): still split, so 6f stays M; no class moved to C. Line 3's 'seint' '6 with a mark above' (also noted 6~ by
+WVO-153-KEY) was not in this job's rule and was not examined.
+
+**Result.** ciphertext_153.tsv 709 signs, C 644, M 65 (unchanged counts; three M tokens gain values); key_153.tsv 35 classes, 32 C,
+3 M (6f now `sch|s` n=6). Nothing in key_98 or in 126's key-level M moves (126 has no 6f; its K, 1-as-i, Qf and Λ are untouched).
+`python3 w153/controls_153.py` (PREREG item 3):
+```
+(a) shuffle-consistency, all valued tokens N=675: real 0.996 | shuffled mean 0.206 p95 0.218 max 0.234 -> PASS
+    withheld tokens (value '-', cipher spelling differs from the witnesses) counted as misses: real 0.955 over N=704 (29 withheld) | same shuffled p95 0.218
+    C-graded tokens only N=644: real 1.000 | shuffled mean 0.212 p95 0.224
+    lines 10-20 only N=343: real 0.997 | shuffled mean 0.246 p95 0.262 -> PASS
+(b) key_153 vs key_98: 27/27 classes same value | permuted p95 3 -> PASS; differ: none
+(b) key_153 vs key_98 [pre-fixed map: digits + 98's own reader labels only]: 11/11 classes same value | permuted p95 3 -> PASS; differ: none
+```
+`python3 check_153.py --check`: recon_153.py check OK, controls_153.py check OK, reading_153.txt up to date, exit 0.
+`python3 tools/decode_key.py ciphers/august-van-saksen-1561-64 --check`: reading up to date, exit 0.
+Requests: resources.huygens.knaw.nl 1. Subagent calls: none (this worker's own looks, about 20 strip and zoom reads). Cost not visible
+to this session. Report what was found and where it was not found; novelty not classified.
+Where it was not found: W1 gives no value for any held spelling except 'Christlichs'; it does not separate 6f's s/sch split.
+Suggestion (not run): a look at line 3's 'seint' 6~ against 6f (~0.3); 6f's s/sch split may be a writer's habit (6f for s before a
+vowel at a word end?), testable only with more System B ciphertext (WVO 175 pp.3-8 crops already on disk) -- ~1.

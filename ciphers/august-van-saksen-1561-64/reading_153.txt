@@ -1,10 +1,10 @@
-# WVO 153 p6 (Oranje -> August, 1 Sept 1566) lines 1-20: ciphertext_153.tsv through key_153.tsv, 709 signs, key-class grades {'?': 3, 'C': 698, 'M': 8}. Key source (two period decipherments on p7/p8), not a reading of an unread text. WVO-153-KEY-2, 10 Oct 2026 (lines 1-9); AVS-153, 15 Oct 2026 (lines 10-20).
+# WVO 153 p6 (Oranje -> August, 1 Sept 1566) lines 1-20: ciphertext_153.tsv through key_153.tsv, 709 signs, key-class grades {'?': 3, 'C': 696, 'M': 10}. Key source (two period decipherments on p7/p8), not a reading of an unread text. WVO-153-KEY-2, 10 Oct 2026 (lines 1-9); AVS-153, 15 Oct 2026 (lines 10-20).
 L01: esistaberzu.erb[a]rmendasdercaluinismussoweitt
-L02: einreisset.unddieaugspurgiseconfessionuber
+L02: einreisset.unddieaugspurgi[sch|s]econfessionuber
 L03: wachssetdaninallendiessenlandenseintnuhr
 L04: zwokirchenderaugspurgisenconfessionunddiewerden
 L05: indiesser[?][?][?]erhaltenderanderhauffistdurchauss
-L06: caluinisdarumbsthet[zu]besorgender<Konig_zu_Hispania>werde[zu]
+L06: caluini[sch|s]darumbsthet[zu]besorgender<Konig_zu_Hispania>werde[zu]
 L07: enderungderrelligionwenigeruershenundmitt
 L08: rathund[zu]thununrugiherleuthihrealterelligion
 L09: mittgiwalterhaltenunddieandernueruolgen
@@ -12,10 +12,10 @@ L10: wollendaraussdaneingross.bluetuergiessen
 L11: eruolgenwurde.derwegenthochuonnothenund
 L12: guetdas.<E.L.>undanderchurundfurstenuichdiessersachen
 L13: mitannhemenundbeym<Konig_zu_Hispania>dahienhandlenhulffen
-L14: daserdiegelegenheitbedenckenund[s|sch]einegehor
-L15: sameunderthanehie.mituer[s|sch]onenundderrelli
+L14: daserdiegelegenheitbedenckenund[sch|s]einegehor
+L15: sameunderthanehie.mituer[sch|s]onenundderrelli
 L16: gionhalbenwiedersiemitgewaldtnichtz
 L17: uornhemenwolle..hieranwerden<E.L.>ohn
-L18: zweiffeleinchristlich[s|sch]werckuerrichten
-L19: und.beydiessenlandeneinewige[s|sch]lober
+L18: zweiffeleinchristlich[sch|s]werckuerrichten
+L19: und.beydiessenlandeneinewige[sch|s]lober
 L20: langen

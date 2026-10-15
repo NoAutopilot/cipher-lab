@@ -1,7 +1,7 @@
-(a) shuffle-consistency, all valued tokens N=672: real 0.999 | shuffled mean 0.207 p95 0.219 max 0.234 -> PASS
-    withheld tokens (value '-', cipher spelling differs from the witnesses) counted as misses: real 0.953 over N=704 (32 withheld) | same shuffled p95 0.219
+(a) shuffle-consistency, all valued tokens N=675: real 0.996 | shuffled mean 0.206 p95 0.218 max 0.234 -> PASS
+    withheld tokens (value '-', cipher spelling differs from the witnesses) counted as misses: real 0.955 over N=704 (29 withheld) | same shuffled p95 0.218
     C-graded tokens only N=644: real 1.000 | shuffled mean 0.212 p95 0.224
-    lines 10-20 only N=342: real 0.997 | shuffled mean 0.246 p95 0.263 -> PASS
+    lines 10-20 only N=343: real 0.997 | shuffled mean 0.246 p95 0.262 -> PASS
 (b) key_153 vs key_98: 27/27 classes same value | permuted p95 3 -> PASS; differ: none
 (b) key_153 vs key_98 [pre-fixed map: digits + 98's own reader labels only]: 11/11 classes same value | permuted p95 3 -> PASS; differ: none
 (b) key_153 vs key_74: 0/8 classes same value | permuted p95 1 -> FAIL; differ: 3=e/a, 0=a/g, 5=u/h, 6=s/l, 1=h/e, 9=t/f, 4=o/c, 8=w/b
