@@ -214,3 +214,21 @@ f129	left	119v	faint show-through of a short letter	no	no	n/a	none	600	F4712-C11
 f129	right	120r	blank with a faint docket	no	no	n/a	none	600	F4712-C119
 f130	left	120v	address panel "A Monseigneur ..." (M)	no	no	n/a	none	600	F4712-C119
 f130	right	121r	list "Du parlement de Tholose": ~40 place names (Gaillac, Castres, Narbonne, Castelnaudary ...; M) with dotted leaders to sums in Roman numerals (c l., m c l. ...) and marginal corrections	no	no	n/a	Roman-numeral sums	600+1600	F4712-C119; list checked at 1600 px, sums not code
+f131	left	121v	continuation of the list "Du parlement de Tholose": ~30 place names (Montauban, Castres ...; M) with dotted leaders to Roman-numeral sums, marginal additions left and a short name list at the foot	no	no	n/a	Roman-numeral sums	600	F4712-END
+f131	right	122r	blank (foliated 122)	no	no	n/a	none	600	F4712-END
+f132	left	122v	address panel with docket (M)	no	no	n/a	none	600	F4712-END
+f132	right	123r	letter in clear to "Monseigneur", ~40 lines, subscribed "Vre treshumble et plus fidelle servante" and signed (M), dateline at foot left "... mercredi ... d'avril" (M)	no	no	no	none (foot checked at 1600 px)	600+1600	F4712-END
+f133	left	123v	dense text in clear, two columns of show-through, marginal notes (M)	no	no	n/a	none seen	600	F4712-END
+f133	right	124r	"Brief d'un discours fait avec la Sainteté par aucuns de ses confidents ..." -- a Ligue-period discourse in clear paragraphs (M); interlinear insertions are word corrections in clear (e.g. "victoires", "Albigeois"), not code glosses	no	no	no	none (checked at 1600 px)	600+1600	F4712-END
+f134	left	124v	continuation of the discourse in clear (M)	no	no	n/a	none seen	600	F4712-END
+f134	right	125r	continuation of the discourse in clear paragraphs (M)	no	no	n/a	none seen	600	F4712-END
+f135	left	125v	continuation in clear (M)	no	no	n/a	none seen	600	F4712-END
+f135	right	126r	continuation in clear paragraphs (M)	no	no	n/a	none seen	600	F4712-END
+f136	left	126v	end of the discourse (two paragraphs) and a pasted docket label (M)	no	no	n/a	none seen	600	F4712-END
+f136	right	127r?	blank, no foliation seen at 600 px (M)	no	no	n/a	none	600	F4712-END
+f137	both	flyleaves	blank	no	no	n/a	none	600	F4712-END
+f138	both	flyleaves	blank	no	no	n/a	none	600	F4712-END
+f139	both	flyleaves	blank	no	no	n/a	none	600	F4712-END
+f140	both	flyleaves	blank	no	no	n/a	none	600	F4712-END
+f141	both	endleaf, pastedown	blank flyleaf left; marbled pastedown right	no	no	n/a	none	600	F4712-END
+f142	single	back cover	binding: leather, gilt fillets, arms with crown and collar of an order, corner fleurons	no	no	n/a	none	600	F4712-END
