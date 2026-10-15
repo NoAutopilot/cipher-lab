@@ -2082,7 +2082,7 @@ misplaced crop, gridded layout, crop montage).
 
 ## CLIN-3502B (15 Oct 2026): B.147 p.300, the second page of the cipher of 3502 (New York, 8 May 1781), on the 1778 key -- B2 decode-run gate PASS (37/42 runs, 0.881; page-permuted-key control max 7)
 
-Run 14:27-14:4x UTC 15 Oct 2026 (date -u), worker CLIN-3502B for LANE DEFAULT-A2-1410-15 (account 2). A key-consistency check on a text
+Run 14:27-14:3x UTC 15 Oct 2026 (date -u), worker CLIN-3502B for LANE DEFAULT-A2-1410-15 (account 2). A key-consistency check on a text
 already printed (VHS Collections II pp.119-120, Walton II pp.416-417; GAPS11), not a reading. Prior-work (tools/prior_work.py --item-spec,
 offline): plaintext KNOWN (own AUDIT.md), step LEAD only from this job's own claim; Tomokiyo's haldimand.htm (line 767) lists an 8 May 1781
 Clinton-to-Haldimand item "decoded on p.307" (a date match, not opened further: the folio numbering differs from the reel pages used here).
