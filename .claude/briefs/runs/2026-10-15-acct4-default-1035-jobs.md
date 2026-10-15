@@ -88,3 +88,6 @@ first). Locate, crop (scratchpad), record shelfmark/canvas and any printed count
 ### BAL-302 (Opus, cap 2.5, box 60 min, disk; openapi.bnf.fr <= 4, ROOM take/release): baluze167-davaux-1637 c302 65 stroke + c276 E shape
 BAL-13X's unfinished steps: c302 at max for the second unsettled 65 stroke (plain 65 or 65'), and the c276 R16 "d'une" E shape (epsilon or Ebar),
 one request each; then the c281/c284/c267 E rows re-checked for the Ebar form from disk. Grades only through --try / corrections path.
+
+Wave 2 spawned 11:07 UTC (all Opus): LVN-K15 session_01WnnJ9pzDt8fH7hThJqb9Qq, C1161-HC session_016YqJHBfHfmBde2Ev3yP1ad, MAT-BOX session_01JhUAPckKoKXE2bx7zekheM,
+MONL-L21 session_01RTGPs8zcLH2bZbB74BR7tg, ELEC-383 session_012L9kaYq2URo6Scnrt63kyU, BAL-302 session_015zwNFFyQ8tmh2t8P5vRuwf. Wave 1 sessions archived.
