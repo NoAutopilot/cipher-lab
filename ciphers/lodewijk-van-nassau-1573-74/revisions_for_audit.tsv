@@ -1,7 +1,7 @@
 letter	line	pos	code	old	new	grade	class	source	context_new
 4610	p1_L04	14	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	p c z ? <NULL> NULL q u i
 4610	p1_L04	15	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	c z ? NULL <NULL> q u i l
-4610	p1_L05	16	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	b l e NULL <NULL> NULL d f
+4610	p1_L05	18	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	b l e NULL <NULL> NULL d f
 4610	p1_L07	14	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	r i p t <NULL> ? q r i
 4610	p1_L08	5	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	n c e s <NULL> NULL ? ? s
 4610	p1_L08	6	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	c e s NULL <NULL> ? ? s o
@@ -29,6 +29,7 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4610	p1_L30	17	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	t i o NULL <NULL> NULL
 4610	p1_L30	18	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	i o NULL NULL <NULL>
 4610	p1_L31	15	95	g I	g	M	word	table rule	l f r e <g> o u s e
+4610	p1_L32	1	241	? U	zeelande	M	word	4614 (WVO pp.5-6) contemporary decipherment: 'estatz de hollande et Zeelande' over '... et [241]' (1 of 1, AX-COMP key_4614.tsv); also 4496 p4 contemporary gloss 'Zellando' over 241 (AX-GLOSS gloss_attest.tsv) and names.tsv C (5810 aligned to Groen)	<zeelande> l r e t
 4610	p1_L32	11	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	t o u r <NULL>
 4610	p1_L33	2	192	? U	roidespagne	H	word	4496 (WVO PDF p4) contemporary interlinear gloss "R. d'Espagne" over 192 (row1, '...124.192. pour...'), confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); names.tsv previously graded this code U (0 observations -- Groen's print leaves the subject out at 5549 PS1)	<roidespagne> ? z p o
 4610	p1_L33	10	144	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	o r t e <NULL> g r a n

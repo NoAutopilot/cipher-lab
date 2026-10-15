@@ -70,25 +70,27 @@ p1_L04	17	38	H		agree
 p1_L04	18	102	M	was 108 H; was 101 M; B:108	image300 LVN-EYE (15 Oct 2026, verifier eye, one Opus look at the 300-dpi WVO 04610 render beside same-line exemplars): last digit is the flat-foot hooked 2 of the lone 2 at p1_L04/20 (H), not the stacked-loop 8 of 38 at p1_L04/17; 101 (A150) and 102 both i; eye against the LVN-3R blind 108, so M (pre pos 18)
 p1_L04	19	111	H		agree
 p1_L04	20	2	H		agree
-p1_L05	1	2	M	was 1 H	image300 LVN-4610H (15 Oct 2026, eye check of 4610 H tokens ending in 1/8, one Opus look at the 300-dpi WVO 04610 render, line strips ~1.15x, not blind): final (only) glyph is the flat-foot 2 of 28/12 on the same line; physical line opens 81, 125 (untranscribed) before it, then 2, 8, 80, 28; eye against the H, so M (pre pos 1)
-p1_L05	2	8	H		agree
-p1_L05	3	80	H		agree
-p1_L05	4	28	H		agree
-p1_L05	5	=a	M	A:-	gap
-p1_L05	6	=apparoistre	M	B:=paravec	differ
-p1_L05	7	12	H		agree
-p1_L05	8	9	H		agree
-p1_L05	9	30	H		agree
-p1_L05	10	26	H		agree
-p1_L05	11	102	H		agree
-p1_L05	12	66	H		agree
-p1_L05	13	114	H		agree
-p1_L05	14	82	H		agree
-p1_L05	15	122	H		agree
-p1_L05	16	129	H		agree
-p1_L05	17	141	H		agree
-p1_L05	18	80	H		agree
-p1_L05	19	88	H		agree
+p1_L05	1	81	M		LVN-L05W (15 Oct 2026, second blind reader: one Sonnet subagent call per line on wider 5x crops of images/04610_p1.jpg / the 150-dpi line crops, target + same-line H control, PREREG 7e90dde79 + addendum 2acd90c20, control 5/6 PASS): blind 81 (alt 82) = LVN-4610U/LVN-4610H eye; head untranscribed before (inserted before pre pos 1)
+p1_L05	2	125	M		LVN-L05W (15 Oct 2026, second blind reader: one Sonnet subagent call per line on wider 5x crops of images/04610_p1.jpg / the 150-dpi line crops, target + same-line H control, PREREG 7e90dde79 + addendum 2acd90c20, control 5/6 PASS): blind 125 = LVN-4610U/LVN-4610H eye; no key.tsv value (codes > 120, VIV-KEYSTONE) (inserted before pre pos 1)
+p1_L05	3	2	M	was 1 H	image300 LVN-4610H (15 Oct 2026, eye check of 4610 H tokens ending in 1/8, one Opus look at the 300-dpi WVO 04610 render, line strips ~1.15x, not blind): final (only) glyph is the flat-foot 2 of 28/12 on the same line; physical line opens 81, 125 (untranscribed) before it, then 2, 8, 80, 28; eye against the H, so M (pre pos 1)
+p1_L05	4	8	H		agree
+p1_L05	5	89	M	was 80 H	LVN-L05W (15 Oct 2026, second blind reader: one Sonnet subagent call per line on wider 5x crops of images/04610_p1.jpg / the 150-dpi line crops, target + same-line H control, PREREG 7e90dde79 + addendum 2acd90c20, control 5/6 PASS): blind 89 (alt g9/29) = LVN-4610U's 89-or-88; the c1 control reader, unscored, also read this token 89 (pre pos 3)
+p1_L05	6	28	H		agree
+p1_L05	7	=a	M	A:-	gap
+p1_L05	8	=apparoistre	M	B:=paravec	differ
+p1_L05	9	12	H		agree
+p1_L05	10	9	H		agree
+p1_L05	11	30	H		agree
+p1_L05	12	26	H		agree
+p1_L05	13	102	H		agree
+p1_L05	14	66	H		agree
+p1_L05	15	114	H		agree
+p1_L05	16	82	H		agree
+p1_L05	17	122	H		agree
+p1_L05	18	129	H		agree
+p1_L05	19	141	H		agree
+p1_L05	20	80	H		agree
+p1_L05	21	88	H		agree
 p1_L06	1	=leu	M	B:-	gap
 p1_L06	2	=la	M	B:=le	differ
 p1_L06	3	=main	M	B:=mal	differ
@@ -587,7 +589,7 @@ p1_L31	16	9	H		agree
 p1_L31	17	36	H		agree
 p1_L31	18	26	H		agree
 p1_L31	19	81	H		agree
-p1_L32	1	141	H		agree
+p1_L32	1	241	M	was 141 H	LVN-L05W (15 Oct 2026, second blind reader: one Sonnet subagent call per line on wider 5x crops of images/04610_p1.jpg / the 150-dpi line crops, target + same-line H control, PREREG 7e90dde79 + addendum 2acd90c20, control 5/6 PASS): blind 241 (high on 2 and 4) = LVN-4610U's 241 lead (pre pos 1)
 p1_L32	2	123	M	was 128 H	image150 LVN-4610U (15 Oct 2026, one Opus look at the committed 150-dpi line crop images/04610_p1_L32.jpg upscaled 3-6x beside same-line exemplars, not blind; control 6/6): final glyph is the Z-topped 3 of 33 and 23 on the same line, not the 8 of 82; 128 ? -> 123 l; eye against the H, so M (pre pos 2)
 p1_L32	3	=autre	S	=austri	settled-a nc=2 margin=0.35
 p1_L32	4	=de	H		agree
@@ -1119,7 +1121,7 @@ p2_L22	5	81	H		agree
 p2_L22	6	121	H		agree
 p2_L22	7	77	H		agree
 p2_L22	8	82	H		agree
-p2_L22	9	25	H		agree
+p2_L22	9	26	M	was 25 H	LVN-L05W (15 Oct 2026, second blind reader: one Sonnet subagent call per line on wider 5x crops of images/04610_p1.jpg / the 150-dpi line crops, target + same-line H control, PREREG 7e90dde79 + addendum 2acd90c20, control 5/6 PASS): blind 26 (alt 20) = LVN-4610U's sigma-6 alternative (pre pos 9)
 p2_L22	10	101	H		agree
 p2_L22	11	50	H		agree
 p2_L22	12	71	H		agree
@@ -1267,7 +1269,7 @@ p2_L29	19	=la	H	=La	settled-case-only
 p2_L29	20	=isso	M	B:=iso	differ
 p2_L29	21	=ioo	M		agree-flagged
 p2_L30	1	61	H		agree
-p2_L30	2	35	H		agree
+p2_L30	2	35	M	was 35 H	LVN-L05W (15 Oct 2026, second blind reader: one Sonnet subagent call per line on wider 5x crops of images/04610_p1.jpg / the 150-dpi line crops, target + same-line H control, PREREG 7e90dde79 + addendum 2acd90c20, control 5/6 PASS): blind 3 + faint low-confidence second glyph (alt 36/35), neither -> value kept, H -> M (undecided) (pre pos 2)
 p2_L30	3	31	H		agree
 p2_L30	4	=par	H		agree
 p2_L30	5	=dla	M	B:=deca	differ

@@ -5267,3 +5267,32 @@ Counts unchanged (4610/4611/4616 C/H 2556 of 3305, 77.3%); `decode_key.py --chec
 Novelty not classified.
 Next (one line each): re-cut the six crops wider (whole token plus one neighbour each side, word crops with the line) and rerun the same
 PREREG blind pass, ~$0.8; if it passes, enter the heads p1_L05 "81/82, 125" and p1_L04 "124, 127" through inserts_lvneye.tsv at M.
+
+## LVN-L05W: wider-crop rerun of LVN-L05's PREREG (15 Oct 2026, 15:33-15:4x UTC by date -u, account 4, LANE DEFAULT-A4-1441-15)
+
+Step: LVN-L05's named next -- the same PREREG (`lvnl05/PREREG-LVN-L05.md`, 7e90dde79), crops re-cut wider (`lvnl05/cut_w.py`: each token plus a
+neighbour each side, word crops with their neighbours, 5x Lanczos, scratch only, no image in git), scored token fixed by position in an addendum
+pushed before any read (`lvnl05/PREREG-LVN-L05W.md`, 2acd90c20). Six Sonnet subagent calls, one per line, target + same-line H control, X/Y
+order as the PREREG, nothing else shown. Disk only; requests 0.
+
+**Control gate PASS: 5/6 (gate 5/6)** -- `lvnl05/reads_w.tsv`. Controls 28, 8, 82, 31, 21 read exactly; =tout failed again (the reader split
+"este' tout" into "sti | 1 | faut"). Rulings applied as the PREREG fixes them:
+- p1_L05 head: blind **81, 125** = LVN-4610U/LVN-4610H's eye -> both inserted at M through `lvn10/inserts_lvneye.tsv` (81 = e; 125 has no
+  key.tsv value, U, left to VIV-KEYSTONE's codes > 120).
+- p1_L05/3 80 H -> **89 M** (blind 89, LVN-4610U's 89-or-88; the c1 control reader, unscored, also read it 89). 89 = f at grade I (table rule,
+  not observed in 4613/4615), so the token decodes d C -> f I.
+- p2_L22/9 25 H -> **26 M** (blind 26 = LVN-4610U's sigma-6): r C -> s M.
+- p1_L32/1 141 H -> **241 M** (blind 241, high on 2 and 4): NULL C -> zeelande M (key.tsv's existing 241 value; not checked against context here).
+- p2_L30/2 35 H kept, **H -> M** (blind "3" + a faint second glyph, alt 36/35: neither).
+- p1_L04/3 =fut M kept (blind token not "este").
+Line readings: p1_L05 "nods" -> "e nofs" (worse as French; 89 = f is only table-rule I, so 89 vs 88 stays open for an image or
+key check); p2_L22 "offrederixcens" -> "offredesixcens" ("offre de six cens"); p1_L32 gains a name-code mark.
+Corrections in `lvn10/corrections_lvneye.tsv` (tag LVN-L05W), applied by `lvn10/apply.py` post4; p1_L04 head "124, 127" not in this job.
+
+Counts (rule 4). reading_4610_full_tokens.tsv: 1545 -> 1547 tokens; **C 1206 -> 1202, M 121 -> 125, I 54 -> 55, U 155 -> 156** (H 9).
+reading_4610_tokens.tsv: C 1108 -> 1104, M 94 -> 97, I 58, U 286 -> 288. 4610/4611/4616 C/H **2556 -> 2552 of 3307 (77.2%)**; four letters
+**2552 of 4140 (61.6%)**. Checks: `decode_key.py --check` exit 0 for all 13 decode*.json (decode.json and decode_4610_full.json regenerated);
+`settle.py`, `lvn10/apply.py`, `lvn16/apply.py`, `lvn4611/settle.py` --check exit 0; `axnames/revisions.py` regenerated (stale after the
+insert shifted p1_L05 positions), --check exit 0. Carried into AUDIT.md "LVN-L05W". No judge run. Novelty not classified. Subagents: 6.
+Next (one line): p1_L04 head "124, 127" through the same insert path after its own blind look (~$0.6); the =tout control word needs a word-level
+crop design of its own before any further word-token rerun (do not re-cut this PREREG a third time).

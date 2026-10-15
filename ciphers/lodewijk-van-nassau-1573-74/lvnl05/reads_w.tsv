@@ -1,0 +1,13 @@
+call	crop	role	row	committed	blind_tokens	scored	conf	blind_alt	match
+c1	X=h_head	target	p1_L05 head	(81, 125 one eye LVN-4610U)	81 | 125 | 2	81, 125	medium, medium	82; 126/128	both = LVN-4610U -> insert at M
+c1	Y=h_ctl	control	p1_L05/4	28 H	(comma) | 89 | 28 | (comma)	28	high/medium	26	pass
+c2	X=t80_ctl	control	p1_L05/2	8 H	2 | 8 | 8(clipped right)	8	high	5/S	pass
+c2	Y=t80	target	p1_L05/3	80 H	(clipped left) | 8 | 89 | 2(clipped)	89	low-medium	g9/29	= LVN-4610U alt (89 or 88) -> 89 M
+c3	X=t25	target	p2_L22/9	25 H	82 | 26 | 101(clipped)	26	medium-high	20	= LVN-4610U alt -> 26 M
+c3	Y=t25_ctl	control	p2_L22/8	82 H	77 | 82 | 26(clipped)	82	high		pass
+c4	X=t35_ctl	control	p2_L30/3	31 H	3? | 31 | p(clipped)	31	medium-high		pass
+c4	Y=t35	target	p2_L30/2	35 H	61 | 3? | 3(clipped)	3?	3 high, 2nd low	36/35	neither -> 35 kept, H -> M
+c5	X=t141	target	p1_L32/1	141 H	241 | (clipped)	241	high, high, medium	24l	= LVN-4610U alt -> 241 M
+c5	Y=t141_ctl	control	p1_L32/5	21 H	(clipped left) | du | 21	21	medium	2l	pass
+c6	X=tfut_ctl	control	p1_L04/4	=tout H	(clipped left) | sti | 1/stroke | faut | 7	1/stroke (faut at 3)	medium	apostrophe	FAIL
+c6	Y=tfut	target	p1_L04/3	=fut M (B:=este)	(clipped left) | ua | sti | 1/stroke | faut	ua (sti at 2)	low	ue/ma	not "este" -> =fut kept M

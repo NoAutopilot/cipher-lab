@@ -2095,3 +2095,12 @@ Eye on LVN-4610H's 9 undecided rows on the 150-dpi line crops beside same-line e
 "hazarder" -> "hazarderl" (line end). Counts: 4610 full C 1213 -> 1206, M 114 -> 121; 4610/4611/4616 C/H **2556 of 3305 (77.3%)**, four letters
 **2556 of 4138 (61.8%)**. Depth stays **D2**; N-class unchanged (4610/4611/4616 N4, 4612 N3; key ours). SECOND-OPINIONS-QUEUE.tsv's two rows for
 this target quote none of the changed words (grep, 15 Oct 2026); no prompt changes. status.json not edited (the parent's).
+
+## LVN-L05W (15 Oct 2026, 15:33-15:4x UTC by date -u; solver job, account 4) -- reading revised after this AUDIT.md, carried here (rule 10 propagation)
+
+Second blind reader (6 Sonnet calls, wider crops, PREREG 7e90dde79 + addendum 2acd90c20, control 5/6 PASS; NOTES.md "LVN-L05W"): p1_L05 head
+81 (e), 125 (U) inserted at M; p1_L05/3 80 -> 89 (d C -> f I); p2_L22/9 25 -> 26 (r C -> s M); p1_L32/1 141 -> 241 (NULL C -> zeelande M);
+p2_L30/2 35 H -> M (t). Counts: 4610 full C 1206 -> 1202, M 121 -> 125; 4610/4611/4616 C/H **2552 of 3307 (77.2%)**, four letters
+**2552 of 4140 (61.6%)**. Depth stays **D2**; N-class unchanged (4610/4611/4616 N4, 4612 N3; key ours). Line readings changed: p1_L05 "nods" -> "e nofs" (89 = f is table-rule I),
+p2_L22 "offrederixcens" -> "offredesixcens", p1_L32 gains a name-code mark. SECOND-OPINIONS-QUEUE.tsv's rows for this target quote none of
+these words (grep, 15 Oct 2026); no prompt changes. status.json not edited (the parent's).

@@ -1,1 +1,3 @@
 line	before_pre_pos	sign	confidence	note
+p1_L05	1	81	M	LVN-L05W (15 Oct 2026, second blind reader: one Sonnet subagent call per line on wider 5x crops of images/04610_p1.jpg / the 150-dpi line crops, target + same-line H control, PREREG 7e90dde79 + addendum 2acd90c20, control 5/6 PASS): blind 81 (alt 82) = LVN-4610U/LVN-4610H eye; head untranscribed before
+p1_L05	1	125	M	LVN-L05W (15 Oct 2026, second blind reader: one Sonnet subagent call per line on wider 5x crops of images/04610_p1.jpg / the 150-dpi line crops, target + same-line H control, PREREG 7e90dde79 + addendum 2acd90c20, control 5/6 PASS): blind 125 = LVN-4610U/LVN-4610H eye; no key.tsv value (codes > 120, VIV-KEYSTONE)
