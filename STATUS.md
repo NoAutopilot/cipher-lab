@@ -5034,6 +5034,32 @@ Open for the next verifier or solver lane:
 3. Leads not run: Costabili key in ASMo Cifrario sec. XV B.4 (Lang 2018 p.156); Posthius cipher from Camerarius II (Aerztebriefe regest);
    Pisany f.302v print search beyond Aubery.
 
+## LANE DEFAULT-account-2-20261015-0209 handoff (session_01Gd58WqYtVh88ZYsT485HT7, account 2, for the orchestrator (owner account)), 15 October 2026 (02:09-04:4x UTC by date -u; closed: in-scope backlog spent; workers 35.52 + orchestrator ~6.9 = ~42.4 of 60 by get_session; five_hour allowed throughout)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-15-ytbiz-default-0209-jobs.md (waves 1-4). Gate 0a: SESSION-SWEEP-account-2
+stale-claimed since 5 Oct, proceeded. VERIFY-BACKLOG: high rows Birago/ceppo (off limits), audit2 rows N0/N1, no verifier job. 12 workers, all
+ledgered and archived. Guardrail share (known-text work): CL1161-S7 5.10 of 35.52 worker spend (~14%).
+Results:
+- sforza-italien1584-1447/pusterla (SFZP-SIB, PUST-F77, PUST-U5): c64-c74 siblings settled -- f.72/f.73 is the Duke's letter of 7 Mar 1447 (Duke key
+  family; f.73 clear text committed), f.75/f.74 Marcolino Barbavara, f.77/f.76 Pusterla (8 Mar 1447), the fifth key unit. f.77 cut, f.76 read
+  (clear_f76.txt), two blind readers agree 686/903 = 76.0% (in line with f.81 76.0, f.71 73.8, f.67 74.3): over the one-tenth line, so no align/G1;
+  207 split signs in pusterla/f77/rec/focus.tsv for the owner's Pusterla sorter (TRANSCRIPTION.md: the next pass is a person's). key.tsv and
+  f.13 numbers unchanged.
+- erba-2006 (ERBA-SWAP): swap-move search control PASS every seed (min 0.833); target 26.4 vs null max 30.3: control-backed negative for the
+  K=13 case-sensitive design at N=120. Next: new material or a bible-reference design.
+- clair1161-avis-flandre-1688 (CL1161-S7): S and 7 UNDECIDED by the pre-registered blind split test; --try 7=b, S=n reject; no key edit.
+- sp105-paget-1693 (SP105-SOAS, OUT-CHECK-SOAS): outreach/soas-paget-ppms4-enquiry.md drafted and gate-7 checked 03:37 UTC (4 corrections), status
+  ready. Parent's step: CONTRIBUTIONS.md row and the send (CLAUDE.md Outreach gate 8); no row written by this lane.
+- eckert-1864, thurloe-printed, baluze167-davaux-1637 (GB-PASS2, GB-PASS3): www.googleapis.com 503 at 02:28-29 and 03:40-41 (two jobs, each stopped
+  on its one retry); only eckert E591 ran (totalItems 0); thurloe Verbael ids re-confirmed full view; baluze167 and eckert E592/E589 queries
+  scripted and unsent (eck_gbpass_gb.py --gbpass3, verbal22/gbpass2_gb.py). Retry when the host answers steadily, ~$0.5.
+What is left: the Duke f.72/f.73 pair is a third Duke-key unit, but the Duke alphabet waits on ASKS 165 (no machine pass briefed); Pusterla f.77
+waits on the owner's sort of its focus.tsv; the googleapis queries above.
+Lessons: two default lanes (A1-0206, A2-0209) spawned the same two picks within two minutes (BAL22-NUM, F4712-C131 stood down, 2.2 Q): parallel
+default lanes need a split of next_steps rows before the first wave, not ROOM picks lines posted after spawning. NEXT-STEPS.tsv `parallel` cells
+are often stale (5 of 6 candidates checked were already done); read the folder's Verdict line before briefing. Over cap: CL1161-S7 2.6x (six
+blind vision passes in a 2 cap), PUST-U5 1.2x.
+
 ## LANE DEFAULT-account-1-20261015-0206 handoff (session_01D9kV9UtXBdDRDpgz1LC3f4, account 1, for the orchestrator (owner account)), 15 October 2026 (02:07-03:2x UTC by date -u; closed: in-scope backlog spent, two parallel default lanes on the same list; workers 43.06 + orchestrator ~5.0 = ~48.1 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-15-acct1-default-0206-jobs.md (3 waves, 11 workers, all Opus). Gate 0a: SESSION-SWEEP-account-1
 stale-claimed since 5 Oct, proceeded. VERIFY-BACKLOG: high rows Birago/ceppo (off limits), rest audit2 on N0/N1 (googleapis 503 at 02:1x).
