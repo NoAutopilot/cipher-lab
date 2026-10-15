@@ -1,0 +1,12 @@
+# F4712-8R (15 Oct 2026): the one scored blind call of PREREG-F4712-8.md (commit ea57e0de7). Labels random.Random(8).sample(['P','T','N'],3) = P->W, T->X, N->Y. One Sonnet call, 11 tiles (N has 2, the PREREG minimum).
+tile	group	role	verdict	reason
+W1	W	P	same	diagonal stroke upper right to heavy lower-left terminal, open trailing lower part
+W2	W	P	unsure	parts separated, could be an S-like fragment
+W3	W	P	same	upper-right hook into lower-left bowl, slanted open form
+X1	X	T	different	closed figure-of-eight, two stacked bowls, central crossing, upright
+X2	X	T	different	small closed lower bowl, loop above, crossing at the waist
+X3	X	T	different	vertical heavy stem with a thin oval loop wrapped round it
+Y1	Y	N	same	heavy lower-left terminal bowl sweeping to an upper-right tail, almost identical to R2
+Y2	Y	N	unsure	same direction as R1/R3, shallower, more angular
+# scores: W (P) 7, X (T) 1, Y (N) 6. share: P 2/2 = 1.00, T 0/3 = 0.00, N 1/1 = 1.00
+# calibration gate: score_P 7 >= 6 PASS; score_P - score_N = 1 < 3 FAIL; share_P - share_N = 0.00 < 0.30 FAIL -> NON-TEST
