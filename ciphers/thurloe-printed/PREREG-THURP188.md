@@ -1,6 +1,6 @@
 # PREREG-THURP188 -- P4 (Stamford, Calais, 13 March 1655), Birch III p.188 lines 53-61
 
-Written 15 Oct 2026 (13:4x UTC by date -u), worker THUR-P188, **before any scoring** of the hypotheses below.
+Written 15 Oct 2026 (13:29 UTC by date -u), worker THUR-P188, **before any scoring** of the hypotheses below.
 Brief: `.claude/briefs/runs/2026-10-15-acct4-depth-steps.md`, JOB THUR-P188.
 
 ## Material
