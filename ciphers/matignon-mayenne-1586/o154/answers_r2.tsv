@@ -1,0 +1,48 @@
+id	shape	conf	note
+p001	A	low	Z tail runs into o
+p002	A	high	plain closed o, located by neighbours
+p003	A	high	plain closed o, located by neighbours
+p004	A	high	plain closed o, located by neighbours
+p005	A	high	plain closed o, located by neighbours
+p006	A	high	plain closed o, located by neighbours
+p007	A	high	plain closed o, located by neighbours
+p008	A	low	target at right edge, partly seen
+p009	A	high	plain closed o, located by neighbours
+p010	A	low	overbar above o
+p011	A	high	plain closed o, located by neighbours
+p012	A	high	plain closed o, located by neighbours
+p013	A	high	plain closed o, located by neighbours
+p014	A	high	plain closed o, located by neighbours
+p015	A	high	plain closed o, located by neighbours
+p016	A	low	slanted, before .v.
+p017	A	high	plain closed o, located by neighbours
+p018	A	high	plain closed o, located by neighbours
+p019	A	high	plain closed o, located by neighbours
+p020	A	high	plain closed o, located by neighbours
+p021	A	high	plain closed o, located by neighbours
+p022	A	high	o after q, plain
+p023	A	high	last o after 7, plain
+p024	X	low	sign after x is 6-like and cut at crop edge
+p025	B	low	ambiguous: sign after e is bold o with hook; neighbours unclear
+p026	A	high	o after L, plain
+p027	A	high	o after x, plain
+p028	A	high	o after L-like sign, plain
+p029	A	high	o after n, plain
+p030	A	high	o after Ze, plain
+p031	A	high	slanted o after a, plain
+p032	A	high	o after w-, plain
+p033	A	high	o after 7, plain
+p034	A	high	o after n, plain
+p035	A	high	o after L, plain
+p036	B	low	loop/8-like sign after s with top stroke
+p037	A	high	o after 7, plain
+p038	A	high	o after 7, plain
+p039	A	high	bold o after q, plain
+p040	A	low	o after 4+, possible tiny top stroke
+p041	A	high	o after Ze, plain
+p042	A	high	final bold o after .v.
+p043	A	high	o after 7, plain
+p044	A	high	o after n, plain
+p045	A	high	bold o after L, plain
+p046	A	high	o after D-like sign, plain
+p047	A	high	o after D-like sign, plain

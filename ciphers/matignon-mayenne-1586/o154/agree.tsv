@@ -1,0 +1,6 @@
+r1 A/B/X Counter({'A': 44, 'X': 2, 'B': 1})
+r2 A/B/X Counter({'A': 44, 'B': 2, 'X': 1})
+both A/B: n 44, agree 42, kappa -0.023
+all 47 A/B/X: agree 42, kappa 0.126
+consensus: Counter({'A': 42, 'X': 5})
+gate K (kappa A/B >= 0.6 and n >= 24): FAIL
