@@ -1,0 +1,2 @@
+Sl=n: n 164, current u, statistic 1113.2 bits over u; null p95 positions -1112.3, value class -207.9; accept (above both nulls and the acceptance rule) [non-blind]
+So=n: n 101, current u, statistic -616.5 bits over u; null p95 positions 205.6, value class -635.2; reject (no better than the current value) [non-blind]

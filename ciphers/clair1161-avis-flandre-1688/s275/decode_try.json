@@ -1,0 +1,6 @@
+{
+ "note": "C1161-S275 (15 Oct 2026): registered s275 step-2 --try harness after gates K(R1) K(R2) A T PASS; S split by R1/R2/R3 blind reads of the 275 hand-placed windows (shc/hand.tsv), So open / Sl looped / S unsure, all read u. Never a reading.",
+ "jobs": [
+  {"ciphertext": "s275/ciphertext_split.tsv", "key": "s275/key_split.tsv", "style": "spaced", "reading": "s275/try_reading.txt", "tokens": "s275/try_tokens.tsv"}
+ ]
+}

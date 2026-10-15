@@ -15,7 +15,7 @@ c185R_L01	13	w	H
 c185R_L01	14	th	H	
 c185R_L01	15	4	H	
 c185R_L01	16	d	H	
-c185R_L01	17	S	M	
+c185R_L01	17	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L01	18	wb	H	
 c185R_L01	19	+	H	
 c185R_L01	20	y	H	
@@ -26,7 +26,7 @@ c185R_L01	24	th	H
 c185R_L01	25	+	H	
 c185R_L01	26	y	H	
 c185R_L01	27	4	H	
-c185R_L01	28	S	M	
+c185R_L01	28	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L01	29	z	H	
 c185R_L01	30	rc	H	
 c185R_L02	1	p	H	
@@ -38,9 +38,9 @@ c185R_L02	6	7	H
 c185R_L02	7	7	H	
 c185R_L02	8	y	H	
 c185R_L02	9	+	H	
-c185R_L02	10	S	M	
+c185R_L02	10	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L02	11	4	H	
-c185R_L02	12	S	M	
+c185R_L02	12	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L02	13	a	H	
 c185R_L02	14	+	H	
 c185R_L02	15	wb	H	
@@ -58,7 +58,7 @@ c185R_L02	26	l	H
 c185R_L02	27	x	H	
 c185R_L02	28	w	H	
 c185R_L02	29	iib	H	
-c185R_L02	30	S	M	
+c185R_L02	30	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L03	1	7	H	
 c185R_L03	2	o	H	
 c185R_L03	3	s	M	
@@ -87,7 +87,7 @@ c185R_L03	25	p	H
 c185R_L03	26	qb	H	
 c185R_L03	27	z	H	
 c185R_L03	28	4	H	
-c185R_L03	29	S	M	
+c185R_L03	29	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L03	30	th	H	
 c185R_L03	31	+	H	
 c185R_L03	32	l	H	
@@ -97,7 +97,7 @@ c185R_L04	2	th	H
 c185R_L04	3	7	H	
 c185R_L04	4	+	H	
 c185R_L04	5	qb	H	
-c185R_L04	6	S	M	
+c185R_L04	6	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L04	7	p	H	
 c185R_L04	8	4	H	
 c185R_L04	9	a	H	
@@ -105,7 +105,7 @@ c185R_L04	10	e	H
 c185R_L04	11	z	H	
 c185R_L04	12	w	H	
 c185R_L04	13	+	H	
-c185R_L04	14	S	M	
+c185R_L04	14	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L04	15	d	H	
 c185R_L04	16	3	H	
 c185R_L04	17	d	H	
@@ -121,12 +121,12 @@ c185R_L04	26	qb	H
 c185R_L04	27	th	H	
 c185R_L04	28	9	H	
 c185R_L04	29	+	H	
-c185R_L04	30	S	M	
+c185R_L04	30	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L04	31	y	H	
 c185R_L04	32	7	H	
 c185R_L05	1	s	M	
 c185R_L05	2	s	M	
-c185R_L05	3	S	M	
+c185R_L05	3	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L05	4	p	H	
 c185R_L05	5	4	H	
 c185R_L05	6	y	H	
@@ -150,7 +150,7 @@ c185R_L05	23	4	H
 c185R_L05	24	z	H	
 c185R_L05	25	w	H	
 c185R_L05	26	4	H	
-c185R_L05	27	S	M	
+c185R_L05	27	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L05	28	th	H	
 c185R_L05	29	iii	H	
 c185R_L05	30	[PLAIN:faire]	H	
@@ -162,7 +162,7 @@ c185R_L06	5	+	H
 c185R_L06	6	e	H	
 c185R_L06	7	y	H	
 c185R_L06	8	w	H	
-c185R_L06	9	S	M	
+c185R_L06	9	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L06	10	th	H	
 c185R_L06	11	+	H	
 c185R_L06	12	rot	M	
@@ -179,7 +179,7 @@ c185R_L06	22	ee	H
 c185R_L06	23	7	H	
 c185R_L06	24	7	H	
 c185R_L06	25	eloop	M	
-c185R_L06	26	S	M	
+c185R_L06	26	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L06	27	z	H	
 c185R_L06	28	rc	H	
 c185R_L06	29	iii	H	
@@ -207,7 +207,7 @@ c185R_L07	21	9	H
 c185R_L07	22	qb	H	
 c185R_L07	23	a	H	
 c185R_L07	24	eloop	M	
-c185R_L07	25	S	M	
+c185R_L07	25	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L07	26	z	H	
 c185R_L07	27	7	H	
 c185R_L07	28	6	H	
@@ -220,7 +220,7 @@ c185R_L08	5	th	H
 c185R_L08	6	f	H	
 c185R_L08	7	s	M	
 c185R_L08	8	s	M	
-c185R_L08	9	S	M	
+c185R_L08	9	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L08	10	+	H	
 c185R_L08	11	qb	H	
 c185R_L08	12	a	H	
@@ -228,30 +228,30 @@ c185R_L08	13	z	H
 c185R_L08	14	o	H	
 c185R_L08	15	4	H	
 c185R_L08	16	w	H	
-c185R_L08	17	S	M	
+c185R_L08	17	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L08	18	phi	H	
 c185R_L08	19	th	H	
 c185R_L08	20	7	H	
 c185R_L08	21	o	H	
 c185R_L08	22	eloop	M	
 c185R_L08	23	+	H	
-c185R_L08	24	S	M	
+c185R_L08	24	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L08	25	l	H	
 c185R_L08	26	+	H	
 c185R_L08	27	y	H	
 c185R_L08	28	4	H	
-c185R_L08	29	S	M	
+c185R_L08	29	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L08	30	z	H	
 c185R_L09	1	s	M	
 c185R_L09	2	s	M	
 c185R_L09	3	wb	H	
 c185R_L09	4	tri	H	
-c185R_L09	5	S	M	
-c185R_L09	6	S	M	
+c185R_L09	5	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
+c185R_L09	6	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L09	7	ls	M	
 c185R_L09	8	iib	H	
-c185R_L09	9	S	M	
-c185R_L09	10	S	M	
+c185R_L09	9	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
+c185R_L09	10	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L09	11	ls	M	
 c185R_L09	12	th	H	
 c185R_L09	13	4	H	
@@ -261,7 +261,7 @@ c185R_L09	16	ls	M
 c185R_L09	17	3	H	
 c185R_L09	18	7	H	
 c185R_L09	19	box	H	
-c185R_L09	20	S	M	
+c185R_L09	20	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L09	21	wb	H	
 c185R_L09	22	z	H	
 c185R_L09	23	y	H	
@@ -291,7 +291,7 @@ c185R_L10	16	4	H
 c185R_L10	17	d	H	
 c185R_L10	18	z	H	
 c185R_L10	19	box	H	
-c185R_L10	20	S	M	
+c185R_L10	20	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L10	21	z	H	
 c185R_L10	22	+	H	
 c185R_L10	23	ls	M	
@@ -304,9 +304,9 @@ c185R_L10	29	wb	H
 c185R_L10	30	box	H	
 c185R_L11	1	p	H	
 c185R_L11	2	4	H	
-c185R_L11	3	S	M	
+c185R_L11	3	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L11	4	c	H	
-c185R_L11	5	S	M	
+c185R_L11	5	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L11	6	th	H	
 c185R_L11	7	w	H	
 c185R_L11	8	4	H	
@@ -324,7 +324,7 @@ c185R_L11	19	iii	H
 c185R_L11	20	psi	M	
 c185R_L11	21	3	H	
 c185R_L11	22	q	H	
-c185R_L11	23	S	M	
+c185R_L11	23	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L11	24	q	H	
 c185R_L11	25	iii	H	
 c185R_L11	26	[PLAIN:faire]	H	
@@ -364,7 +364,7 @@ c185R_L12	33	4	H
 c185R_L12	34	eloop	M	
 c185R_L13	1	p	H	
 c185R_L13	2	4	H	
-c185R_L13	3	S	M	
+c185R_L13	3	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L13	4	th	H	
 c185R_L13	5	+	H	
 c185R_L13	6	z	H	
@@ -451,7 +451,7 @@ c185R_L16	1	p	H
 c185R_L16	2	+	H	
 c185R_L16	3	s	M	
 c185R_L16	4	z	H	
-c185R_L16	5	S	M	
+c185R_L16	5	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L16	6	+	H	
 c185R_L16	7	th	H	
 c185R_L16	8	3	H	
@@ -461,7 +461,7 @@ c185R_L16	11	+	H
 c185R_L16	12	sqc	H	
 c185R_L16	13	3	H	
 c185R_L16	14	p	H	
-c185R_L16	15	S	M	
+c185R_L16	15	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L16	16	z	H	
 c185R_L16	17	ls	M	
 c185R_L16	18	p	H	
@@ -502,7 +502,7 @@ c185R_L17	20	4	H
 c185R_L17	21	4	H	
 c185R_L17	22	q	H	
 c185R_L17	23	qb	H	
-c185R_L17	24	S	M	
+c185R_L17	24	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L17	25	y	H	
 c185R_L17	26	4	H	
 c185R_L17	27	ee	H	
@@ -511,13 +511,13 @@ c185R_L18	1	7	H
 c185R_L18	2	7	H	
 c185R_L18	3	e	H	
 c185R_L18	4	wb	H	
-c185R_L18	5	S	M	
+c185R_L18	5	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L18	6	th	H	
 c185R_L18	7	+	H	
 c185R_L18	8	th	H	
 c185R_L18	9	o	H	
 c185R_L18	10	4	H	
-c185R_L18	11	S	M	
+c185R_L18	11	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L18	12	a	H	
 c185R_L18	13	4	H	
 c185R_L18	14	q	H	
@@ -526,7 +526,7 @@ c185R_L18	16	7	H
 c185R_L18	17	6	H	
 c185R_L18	18	e	H	
 c185R_L18	19	+	H	
-c185R_L18	20	S	M	
+c185R_L18	20	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L18	21	e	H	
 c185R_L18	22	wb	H	
 c185R_L18	23	q	H	
@@ -542,7 +542,7 @@ c185R_L19	4	+	H
 c185R_L19	5	y	H	
 c185R_L19	6	4	H	
 c185R_L19	7	ee	H	
-c185R_L19	8	S	M	
+c185R_L19	8	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L19	9	q	H	
 c185R_L19	10	qb	H	
 c185R_L19	11	7	H	
@@ -552,9 +552,9 @@ c185R_L19	14	box	H
 c185R_L19	15	d	H	
 c185R_L19	16	vdash	M	
 c185R_L19	17	ls	M	
-c185R_L19	18	S	M	
+c185R_L19	18	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L19	19	w	H	
-c185R_L19	20	S	M	
+c185R_L19	20	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L19	21	phi	H	
 c185R_L19	22	z	H	
 c185R_L19	23	o	H	
@@ -562,7 +562,7 @@ c185R_L19	24	w	H
 c185R_L19	25	wb	H	
 c185R_L19	26	tz	M	
 c185R_L19	27	dia	M	
-c185R_L19	28	S	M	
+c185R_L19	28	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L19	29	y	H	
 c185R_L19	30	+	H	
 c185R_L19	31	th	H	
@@ -572,7 +572,7 @@ c185R_L20	3	+	H
 c185R_L20	4	phi	H	
 c185R_L20	5	wb	H	
 c185R_L20	6	w	H	
-c185R_L20	7	S	M	
+c185R_L20	7	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L20	8	th	H	
 c185R_L20	9	qb	H	
 c185R_L20	10	a	H	
@@ -583,7 +583,7 @@ c185R_L20	14	y	H
 c185R_L20	15	p	H	
 c185R_L20	16	Sorn	M	
 c185R_L20	17	qb	H	
-c185R_L20	18	S	M	
+c185R_L20	18	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L20	19	z	H	
 c185R_L20	20	eloop	M	
 c185R_L20	21	iib	H	
@@ -593,14 +593,14 @@ c185R_L20	24	z	H
 c185R_L20	25	qb	H	
 c185R_L20	26	iib	H	
 c185R_L20	27	dia	M	
-c185R_L20	28	S	M	
+c185R_L20	28	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L20	29	th	H	
 c185R_L21	1	7	H	
 c185R_L21	2	7	H	
 c185R_L21	3	p	H	
 c185R_L21	4	6r	H	
 c185R_L21	5	q	H	
-c185R_L21	6	S	M	
+c185R_L21	6	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L21	7	w	H	
 c185R_L21	8	wb	H	
 c185R_L21	9	tz	M	
@@ -609,7 +609,7 @@ c185R_L21	11	7	H
 c185R_L21	12	7	H	
 c185R_L21	13	wb	H	
 c185R_L21	14	4	H	
-c185R_L21	15	S	M	
+c185R_L21	15	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L21	16	vdash	M	
 c185R_L21	17	y	H	
 c185R_L21	18	+	H	
@@ -617,11 +617,11 @@ c185R_L21	19	9	H
 c185R_L21	20	s	M	
 c185R_L21	21	z	H	
 c185R_L21	22	blot	H	
-c185R_L21	23	S	M	
+c185R_L21	23	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L21	24	q	H	
 c185R_L21	25	4	H	
 c185R_L21	26	+	H	
-c185R_L21	27	S	M	
+c185R_L21	27	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L21	28	z	H	
 c185R_L21	29	6r	H	
 c185R_L21	30	q	H	
@@ -629,7 +629,7 @@ c185R_L21	31	iii	H
 c185R_L22	1	phi	H	
 c185R_L22	2	+	H	
 c185R_L22	3	e	H	
-c185R_L22	4	S	M	
+c185R_L22	4	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L22	5	9	H	
 c185R_L22	6	+	H	
 c185R_L22	7	eloop	M	
@@ -668,20 +668,20 @@ c185R_L23	15	th	H
 c185R_L23	16	9	H	
 c185R_L23	17	th	H	
 c185R_L23	18	o	H	
-c185R_L23	19	S	M	
+c185R_L23	19	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L23	20	wb	H	
 c185R_L23	21	qb	H	
 c185R_L23	22	z	H	
 c185R_L23	23	w	H	
 c185R_L23	24	4	H	
-c185R_L23	25	S	M	
+c185R_L23	25	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L23	26	rot	M	
 c185R_L23	27	qb	H	
-c185R_L23	28	S	M	
+c185R_L23	28	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L23	29	th	H	
 c185R_L23	30	9	H	
 c185R_L23	31	+	H	
-c185R_L23	32	S	M	
+c185R_L23	32	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L24	1	z	H	
 c185R_L24	2	4	H	
 c185R_L24	3	qb	H	
@@ -708,7 +708,7 @@ c185R_L24	23	7	H
 c185R_L24	24	7	H	
 c185R_L24	25	z	H	
 c185R_L24	26	4	H	
-c185R_L24	27	S	M	
+c185R_L24	27	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c185R_L24	28	z	H	
 c185R_L24	29	+	H	
 c185R_L24	30	9	H	
@@ -797,7 +797,7 @@ c186R_L03	24	th	H
 c186R_L03	25	9	H	
 c186R_L03	26	th	H	
 c186R_L03	27	o	H	
-c186R_L03	28	S	M	
+c186R_L03	28	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c186R_L03	29	wb	H	
 c186R_L03	30	qb	H	
 c186R_L03	31	z	H	
@@ -825,7 +825,7 @@ c186R_L04	18	/	H
 c186R_L04	19	3	H	
 c186R_L04	20	o	H	
 c186R_L04	21	qb	H	
-c186R_L04	22	S	M	
+c186R_L04	22	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c186R_L04	23	4	H	
 c186R_L04	24	8	H	
 c186R_L04	25	7	H	
@@ -860,7 +860,7 @@ c186R_L05	22	qb	H
 c186R_L05	23	c	H	
 c186R_L05	24	x	H	
 c186R_L05	25	w	H	
-c186R_L05	26	S	M	
+c186R_L05	26	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c186R_L05	27	7	H	
 c186R_L05	28	7	H	
 c186R_L06	1	psi	M	
@@ -874,7 +874,7 @@ c186R_L06	8	+	H
 c186R_L06	9	psi	M	
 c186R_L06	10	th	H	
 c186R_L06	11	qb	H	
-c186R_L06	12	S	M	
+c186R_L06	12	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c186R_L06	13	4	H	
 c186R_L06	14	7	H	
 c186R_L06	15	wb	H	
@@ -885,7 +885,7 @@ c186R_L06	19	q	H
 c186R_L06	20	iii	H	
 c186R_L06	21	e	H	
 c186R_L06	22	+	H	
-c186R_L06	23	S	M	
+c186R_L06	23	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c186R_L06	24	e	H	
 c186R_L06	25	wb	H	
 c186R_L06	26	+	H	
@@ -909,12 +909,12 @@ c186R_L07	14	6	H
 c186R_L07	15	o	H	
 c186R_L07	16	th	H	
 c186R_L07	17	3	H	
-c186R_L07	18	S	M	
+c186R_L07	18	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c186R_L07	19	z	H	
 c186R_L07	20	psi	M	
 c186R_L07	21	+	H	
 c186R_L07	22	phi	H	
-c186R_L07	23	S	M	
+c186R_L07	23	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c186R_L07	24	+	H	
 c186R_L07	25	y	H	
 c186R_L07	26	iii	H	
@@ -923,7 +923,7 @@ c186R_L08	2	4	H
 c186R_L08	3	ls	M	
 c186R_L08	4	o	H	
 c186R_L08	5	qb	H	
-c186R_L08	6	S	M	
+c186R_L08	6	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c186R_L08	7	7	H	
 c186R_L08	8	7	H	
 c186R_L08	9	psi	M	
@@ -931,12 +931,12 @@ c186R_L08	10	+	H
 c186R_L08	11	d	H	
 c186R_L08	12	e	H	
 c186R_L08	13	wb	H	
-c186R_L08	14	S	M	
+c186R_L08	14	So	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c186R_L08	15	th	H	
 c186R_L08	16	phi	H	
 c186R_L08	17	y	H	
 c186R_L08	18	qb	H	
-c186R_L08	19	S	M	
+c186R_L08	19	Sl	M	S split C1161-S275 (R1/R2/R3 blind shape read)
 c186R_L08	20	z	H	
 c186R_L08	21	psi	M	
 c186R_L08	22	+	H	
@@ -968,7 +968,7 @@ c186L_L01	19	p	H	c186L_rec.tsv (line settled in reconciliation; draft conf not a
 c186L_L01	20	y	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L01	21	qb	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L01	22	w	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L01	23	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L01	23	Sl	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L01	24	z	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L01	25	o	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L01	26	+	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
@@ -979,19 +979,19 @@ c186L_L01	30	w	H	c186L_rec.tsv (line settled in reconciliation; draft conf not a
 c186L_L02	1	wb	M	agree-flagged
 c186L_L02	2	tz	H	agree
 c186L_L02	3	+	H	agree
-c186L_L02	4	S	H	agree
+c186L_L02	4	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L02	5	th	H	agree
 c186L_L02	6	+	H	agree
 c186L_L02	7	o	H	agree
 c186L_L02	8	3	H	agree
-c186L_L02	9	S	H	agree
+c186L_L02	9	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L02	10	z	H	agree
 c186L_L02	11	K	M	agree-flagged
 c186L_L02	12	4	H	agree
-c186L_L02	13	S	H	agree
+c186L_L02	13	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L02	14	e	H	agree
 c186L_L02	15	+	H	agree
-c186L_L02	16	S	H	agree
+c186L_L02	16	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L02	17	e	H	agree
 c186L_L02	18	wb	H	agree
 c186L_L02	19	q	H	agree
@@ -1009,11 +1009,11 @@ c186L_L03	10	rc	M	agree-flagged
 c186L_L03	11	iii	H	agree
 c186L_L03	12	sd	H	agree
 c186L_L03	13	4	H	agree
-c186L_L03	14	S	H	agree
+c186L_L03	14	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L03	15	a	H	agree
 c186L_L03	16	+	H	agree
 c186L_L03	17	phi	M	agree-flagged
-c186L_L03	18	S	H	agree
+c186L_L03	18	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L03	19	q	H	agree
 c186L_L03	20	a	H	agree
 c186L_L03	21	y	H	agree
@@ -1030,14 +1030,14 @@ c186L_L04	1	qb	H	c186L_rec.tsv (line settled in reconciliation; draft conf not a
 c186L_L04	2	8	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L04	3	4	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L04	4	qb	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L04	5	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L04	6	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L04	5	So	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
+c186L_L04	6	Sl	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L04	7	phi	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L04	8	e	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L04	9	4	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L04	10	y	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L04	11	z	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L04	12	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L04	12	So	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L04	13	phi	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L04	14	qb	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L04	15	ee	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
@@ -1050,7 +1050,7 @@ c186L_L04	21	wb	H	c186L_rec.tsv (line settled in reconciliation; draft conf not 
 c186L_L04	22	qb	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L04	23	p	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L04	24	4	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L04	25	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L04	25	Sl	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L04	26	z	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L04	27	q	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L04	28	iii	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
@@ -1058,7 +1058,7 @@ c186L_L04	29	s	H	c186L_rec.tsv (line settled in reconciliation; draft conf not a
 c186L_L04	30	s	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L05	1	z	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L05	2	qb	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L05	3	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L05	3	Sl	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L05	4	dia	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L05	5	NEW_c186L_1	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L05	6	to	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
@@ -1068,7 +1068,7 @@ c186L_L05	9	s	H	c186L_rec.tsv (line settled in reconciliation; draft conf not al
 c186L_L05	10	z	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L05	11	th	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L05	12	4	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L05	13	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L05	13	Sl	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L05	14	dia	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L05	15	e	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L05	16	box	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
@@ -1079,17 +1079,17 @@ c186L_L05	20	p	H	c186L_rec.tsv (line settled in reconciliation; draft conf not a
 c186L_L05	21	qb	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L05	22	K	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L05	23	4	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L05	24	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L05	24	Sl	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L05	25	z	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L05	26	rc	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L05	27	iii	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L06	1	p	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L06	2	4	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L06	3	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L06	3	Sl	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L06	4	dia	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L06	5	w	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L06	6	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L06	7	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L06	6	Sl	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
+c186L_L06	7	So	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L06	8	+	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L06	9	wb	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L06	10	tz	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
@@ -1103,7 +1103,7 @@ c186L_L06	17	d	H	c186L_rec.tsv (line settled in reconciliation; draft conf not a
 c186L_L06	18	phi	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L06	19	y	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L06	20	eloop	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L06	21	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L06	21	Sl	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L06	22	iib	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L06	23	NEW_c186L_1	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L06	24	eloop	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
@@ -1118,7 +1118,7 @@ c186L_L07	4	+	H	c186L_rec.tsv (line settled in reconciliation; draft conf not al
 c186L_L07	5	a	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L07	6	y	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L07	7	th	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L07	8	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L07	8	So	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L07	9	w	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L07	10	+	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L07	11	q	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
@@ -1127,12 +1127,12 @@ c186L_L07	13	iii	H	c186L_rec.tsv (line settled in reconciliation; draft conf not
 c186L_L07	14	iii	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L07	15	4	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L07	16	4	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L07	17	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L07	17	Sl	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L07	18	+	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L07	19	d	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L07	20	q	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L07	21	4	M	M per NEAR3-C1TX-c186L report
-c186L_L07	22	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L07	22	So	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L07	23	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L07	24	phi	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L07	25	th	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
@@ -1140,9 +1140,9 @@ c186L_L07	26	+	H	c186L_rec.tsv (line settled in reconciliation; draft conf not a
 c186L_L07	27	a	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L08	1	s	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L08	2	z	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L08	3	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L08	3	Sl	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L08	4	+	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L08	5	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L08	5	So	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L08	6	4	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L08	7	a	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L08	8	wb	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
@@ -1157,7 +1157,7 @@ c186L_L08	16	4	H	c186L_rec.tsv (line settled in reconciliation; draft conf not a
 c186L_L08	17	e	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L08	18	y	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L08	19	w	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
-c186L_L08	20	S	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
+c186L_L08	20	Sl	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned); S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L08	21	p	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L08	22	q	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
 c186L_L08	23	iii	H	c186L_rec.tsv (line settled in reconciliation; draft conf not aligned)
@@ -1181,14 +1181,14 @@ c186L_L09	13	y	H	agree
 c186L_L09	14	3	H	agree
 c186L_L09	15	th	H	agree
 c186L_L09	16	+	H	agree
-c186L_L09	17	S	H	agree
+c186L_L09	17	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L09	18	q	H	agree
 c186L_L09	19	K	M	agree-flagged
 c186L_L09	20	e	H	agree
 c186L_L09	21	qb	H	agree
 c186L_L09	22	w	H	agree
 c186L_L09	23	phi	H	agree
-c186L_L09	24	S	H	agree
+c186L_L09	24	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c186L_L09	25	q	H	agree
 c186L_L09	26	iii	H	agree
 c186L_L09	27	rc	H	agree
@@ -1201,15 +1201,15 @@ c187L_L02	6	y	H	agree
 c187L_L02	7	4	H	agree
 c187L_L02	8	+	H	agree
 c187L_L02	9	ee	H	agree
-c187L_L02	10	S	H	agree
+c187L_L02	10	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L02	11	+	H	agree
 c187L_L02	12	4	H	agree
 c187L_L02	13	8	H	agree
 c187L_L02	14	7	H	agree
 c187L_L02	15	7	H	agree
-c187L_L02	16	S	H	agree
+c187L_L02	16	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L02	17	4	H	agree
-c187L_L02	18	S	H	agree
+c187L_L02	18	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L02	19	a	H	agree
 c187L_L02	20	+	H	agree
 c187L_L02	21	qb	H	agree
@@ -1237,7 +1237,7 @@ c187L_L03	10	z	H	agree
 c187L_L03	11	q	H	agree
 c187L_L03	12	o	H	agree
 c187L_L03	13	3	H	agree
-c187L_L03	14	S	H	agree
+c187L_L03	14	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L03	15	z	H	agree
 c187L_L03	16	iii	H	agree
 c187L_L03	17	z	H	agree
@@ -1248,7 +1248,7 @@ c187L_L03	21	th	H	agree
 c187L_L03	22	K	H	agree
 c187L_L03	23	w	H	agree
 c187L_L03	24	+	H	agree
-c187L_L03	25	S	H	agree
+c187L_L03	25	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L03	26	dia	H	agree
 c187L_L03	27	[PLAIN:pour]	H	agree
 c187L_L04	1	7	H	agree
@@ -1266,7 +1266,7 @@ c187L_L04	12	e	H	agree
 c187L_L04	13	qb	H	agree
 c187L_L04	14	w	H	agree
 c187L_L04	15	phi	H	agree
-c187L_L04	16	S	H	agree
+c187L_L04	16	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L04	17	+	H	agree
 c187L_L04	18	/	H	agree
 c187L_L04	19	[PLAIN:Disant]	H	agree
@@ -1277,9 +1277,9 @@ c187L_L05	1	4	H	agree
 c187L_L05	2	4	H	agree
 c187L_L05	3	2	H	agree
 c187L_L05	4	q	H	agree
-c187L_L05	5	S	H	agree
+c187L_L05	5	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L05	6	4	H	agree
-c187L_L05	7	S	H	agree
+c187L_L05	7	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L05	8	z	H	agree
 c187L_L05	9	7	H	agree
 c187L_L05	10	o	H	0=o
@@ -1299,7 +1299,7 @@ c187L_L05	23	z	H	agree
 c187L_L05	24	y	H	agree
 c187L_L05	25	+	H	agree
 c187L_L05	26	th	H	agree
-c187L_L05	27	S	H	agree
+c187L_L05	27	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L05	28	qb	H	agree
 c187L_L05	29	w	H	agree
 c187L_L05	30	th	H	agree
@@ -1322,7 +1322,7 @@ c187L_L06	16	+	H	agree
 c187L_L06	17	d	H	agree
 c187L_L06	18	7	H	agree
 c187L_L06	19	7	H	agree
-c187L_L06	20	S	H	agree
+c187L_L06	20	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L06	21	z	H	agree
 c187L_L06	22	qb	H	agree
 c187L_L06	23	wb	H	agree
@@ -1348,13 +1348,13 @@ c187L_L07	15	2	M	eye
 c187L_L07	16	4	H	agree
 c187L_L07	17	th	H	agree
 c187L_L07	18	iib	H	agree
-c187L_L07	19	S	H	agree
+c187L_L07	19	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L07	20	8	H	agree
 c187L_L07	21	4	H	agree
 c187L_L07	22	rot	M	agree-flagged
 c187L_L07	23	ls	M	agree-flagged
 c187L_L07	24	qb	H	agree
-c187L_L07	25	S	H	agree
+c187L_L07	25	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L07	26	e	H	agree
 c187L_L07	27	+	H	agree
 c187L_L07	28	y	H	agree
@@ -1367,9 +1367,9 @@ c187L_L08	5	4	H	agree
 c187L_L08	6	4	H	agree
 c187L_L08	7	eloop	H	agree
 c187L_L08	8	iii	H	agree
-c187L_L08	9	S	H	agree
+c187L_L08	9	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L08	10	4	H	agree
-c187L_L08	11	S	H	agree
+c187L_L08	11	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L08	12	z	H	agree
 c187L_L08	13	s	H	agree; ss written as s s
 c187L_L08	14	s	H	agree; ss written as s s
@@ -1381,18 +1381,18 @@ c187L_L08	19	qb	H	agree
 c187L_L08	20	y	H	agree
 c187L_L08	21	phi	H	agree
 c187L_L08	22	+	H	agree
-c187L_L08	23	S	H	agree
+c187L_L08	23	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L08	24	z	H	agree
 c187L_L09	1	iib	H	agree
-c187L_L09	2	S	H	agree
+c187L_L09	2	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L09	3	3	H	agree
 c187L_L09	4	+	H	agree
-c187L_L09	5	S	H	agree
+c187L_L09	5	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L09	6	q	H	agree
-c187L_L09	7	S	H	agree
-c187L_L09	8	S	H	agree
+c187L_L09	7	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
+c187L_L09	8	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L09	9	iib	H	agree
-c187L_L09	10	S	H	agree
+c187L_L09	10	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L09	11	8	H	agree
 c187L_L09	12	4	H	agree
 c187L_L09	13	+	H	agree
@@ -1401,7 +1401,7 @@ c187L_L09	15	e	H	agree
 c187L_L09	16	qb	H	agree
 c187L_L09	17	w	H	agree
 c187L_L09	18	phi	H	agree
-c187L_L09	19	S	H	agree
+c187L_L09	19	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L09	20	q	H	agree
 c187L_L09	21	iii	H	agree
 c187L_L09	22	iib	H	agree
@@ -1413,20 +1413,20 @@ c187L_L09	27	th	H	agree
 c187L_L09	28	3	H	agree
 c187L_L09	29	7	H	agree
 c187L_L10	1	tri	H	agree
-c187L_L10	2	S	H	agree
+c187L_L10	2	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L10	3	qb	H	agree
 c187L_L10	4	z	H	agree
 c187L_L10	5	y	H	agree
 c187L_L10	6	q	H	agree
 c187L_L10	7	p	H	agree
 c187L_L10	8	+	H	agree
-c187L_L10	9	S	H	agree
+c187L_L10	9	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L10	10	th	H	agree
 c187L_L10	11	o	H	agree
 c187L_L10	12	w	H	agree
 c187L_L10	13	wb	H	agree
 c187L_L10	14	iib	H	agree
-c187L_L10	15	S	H	agree
+c187L_L10	15	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L10	16	p	H	agree
 c187L_L10	17	qb	H	agree
 c187L_L10	18	z	H	agree
@@ -1442,7 +1442,7 @@ c187L_L10	27	s	H	agree; ss written as s s
 c187L_L10	28	th	H	agree
 c187L_L10	29	7	H	agree
 c187L_L10	30	qb	H	agree
-c187L_L10	31	S	H	agree
+c187L_L10	31	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L11	1	s	H	5hook=s
 c187L_L11	2	z	H	agree
 c187L_L11	3	+	H	agree
@@ -1450,9 +1450,9 @@ c187L_L11	4	y	H	agree
 c187L_L11	5	th	H	agree
 c187L_L11	6	sd	H	agree
 c187L_L11	7	+	H	agree
-c187L_L11	8	S	H	agree
+c187L_L11	8	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L11	9	q	H	agree
-c187L_L11	10	S	H	agree
+c187L_L11	10	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L11	11	+	H	agree
 c187L_L11	12	q	H	agree
 c187L_L11	13	th	H	agree
@@ -1460,7 +1460,7 @@ c187L_L11	14	7	H	agree
 c187L_L11	15	7	H	agree
 c187L_L11	16	o	H	agree
 c187L_L11	17	+	H	agree
-c187L_L11	18	S	H	agree
+c187L_L11	18	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L11	19	y	H	agree
 c187L_L11	20	qb	H	agree
 c187L_L11	21	sd	M	not viewed closely, A
@@ -1468,12 +1468,12 @@ c187L_L11	22	z	H	agree
 c187L_L11	23	rot	M	not viewed closely, A
 c187L_L11	24	qb	H	agree
 c187L_L11	25	box	H	agree
-c187L_L11	26	S	H	agree
+c187L_L11	26	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L11	27	a	H	agree
 c187L_L11	28	+	H	agree
 c187L_L11	29	y	H	agree
 c187L_L12	1	4	H	agree
-c187L_L12	2	S	H	agree
+c187L_L12	2	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L12	3	z	H	agree
 c187L_L12	4	e	H	agree
 c187L_L12	5	y	H	agree
@@ -1488,7 +1488,7 @@ c187L_L12	13	z	H	agree
 c187L_L12	14	w	H	agree
 c187L_L12	15	z	H	agree
 c187L_L12	16	th	H	agree
-c187L_L12	17	S	H	agree
+c187L_L12	17	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L12	18	z	H	agree
 c187L_L12	19	+	H	agree
 c187L_L12	20	y	H	agree
@@ -1510,7 +1510,7 @@ c187L_L13	8	7	H	agree
 c187L_L13	9	6	H	agree
 c187L_L13	10	z	H	agree
 c187L_L13	11	4	H	agree
-c187L_L13	12	S	H	agree
+c187L_L13	12	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L13	13	z	H	agree
 c187L_L13	14	q	H	agree
 c187L_L13	15	sd	M	eye
@@ -1524,17 +1524,17 @@ c187L_L13	22	z	H	agree
 c187L_L13	23	4	H	agree
 c187L_L13	24	e	H	agree
 c187L_L13	25	wb	H	agree
-c187L_L13	26	S	H	agree
+c187L_L13	26	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L13	27	dia	M	eye
 c187L_L13	28	iii	H	agree
 c187L_L14	1	K	H	agree
 c187L_L14	2	+	H	agree
-c187L_L14	3	S	H	agree
+c187L_L14	3	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L14	4	y	H	agree
 c187L_L14	5	+	H	agree
 c187L_L14	6	ls	H	agree
 c187L_L14	7	3	H	agree
-c187L_L14	8	S	H	agree
+c187L_L14	8	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L14	9	z	H	agree
 c187L_L14	10	e	H	agree
 c187L_L14	11	qb	H	agree
@@ -1570,7 +1570,7 @@ c187L_L15	11	2	M	arc-2
 c187L_L15	12	th	H	agree
 c187L_L15	13	+	M	not viewed, A
 c187L_L15	14	4	H	agree
-c187L_L15	15	S	H	agree
+c187L_L15	15	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L15	16	z	H	agree
 c187L_L15	17	box	H	agree
 c187L_L15	18	d	H	agree
@@ -1582,21 +1582,21 @@ c187L_L15	23	9	H	agree
 c187L_L15	24	iib	H	agree
 c187L_L15	25	wb	H	agree
 c187L_L15	26	+	H	agree
-c187L_L15	27	S	H	agree
+c187L_L15	27	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L15	28	a	M	not viewed, A
 c187L_L16	1	q	H	agree
 c187L_L16	2	+	H	agree
 c187L_L16	3	y	H	agree
 c187L_L16	4	w	H	agree
-c187L_L16	5	S	H	agree
+c187L_L16	5	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L16	6	p	H	agree
 c187L_L16	7	4	H	agree
-c187L_L16	8	S	H	agree
+c187L_L16	8	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L16	9	z	H	agree
 c187L_L16	10	w	H	agree
-c187L_L16	11	S	H	agree
+c187L_L16	11	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L16	12	qb	H	agree
-c187L_L16	13	S	H	agree
+c187L_L16	13	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L16	14	z	H	agree
 c187L_L16	15	iib	H	agree
 c187L_L16	16	q	H	agree
@@ -1614,7 +1614,7 @@ c187L_L16	27	z	H	agree
 c187L_L16	28	6r	H	6r one sign
 c187L_L17	1	e	H	agree
 c187L_L17	2	wb	H	agree
-c187L_L17	3	S	H	agree
+c187L_L17	3	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L17	4	th	H	agree
 c187L_L17	5	qb	H	agree
 c187L_L17	6	p	H	agree
@@ -1633,7 +1633,7 @@ c187L_L17	18	y	H	agree
 c187L_L17	19	+	H	agree
 c187L_L17	20	o	H	agree
 c187L_L17	21	3	H	agree
-c187L_L17	22	S	H	agree
+c187L_L17	22	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L17	23	z	H	agree
 c187L_L17	24	ls	M	agree-flagged
 c187L_L17	25	/	H	agree
@@ -1648,7 +1648,7 @@ c187L_L18	8	s	H	5hook=s
 c187L_L18	9	z	H	agree
 c187L_L18	10	th	H	agree
 c187L_L18	11	4	H	agree
-c187L_L18	12	S	H	agree
+c187L_L18	12	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L18	13	z	H	agree
 c187L_L18	14	+	H	agree
 c187L_L18	15	d	H	agree
@@ -1666,21 +1666,21 @@ c187L_L18	26	K	H	agree
 c187L_L18	27	4	H	agree
 c187L_L19	1	z	H	agree
 c187L_L19	2	qb	H	agree
-c187L_L19	3	S	H	agree
+c187L_L19	3	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L19	4	6r	H	agree
 c187L_L19	5	vdash	H	v-bar=vdash
 c187L_L19	6	K	H	agree
-c187L_L19	7	S	H	agree
+c187L_L19	7	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L19	8	ee	H	agree
 c187L_L19	9	e	H	agree
 c187L_L19	10	wb	H	agree
-c187L_L19	11	S	H	agree
+c187L_L19	11	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L19	12	th	H	agree
 c187L_L19	13	4	H	agree
 c187L_L19	14	o	H	agree
-c187L_L19	15	S	H	agree
+c187L_L19	15	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L19	16	+	H	agree
-c187L_L19	17	S	H	agree
+c187L_L19	17	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L19	18	a	H	agree
 c187L_L19	19	2	H	arc-2
 c187L_L19	20	e	H	eye
@@ -1701,17 +1701,17 @@ c187L_L20	7	th	H	agree
 c187L_L20	8	4	H	agree
 c187L_L20	9	4	H	agree
 c187L_L20	10	2	M	arc-2
-c187L_L20	11	S	H	agree
+c187L_L20	11	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L20	12	+	H	agree
 c187L_L20	13	l	M	eye (L26 same)
 c187L_L20	14	+	H	agree
-c187L_L20	15	S	H	agree
+c187L_L20	15	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L20	16	y	H	agree
 c187L_L20	17	3	H	agree
-c187L_L20	18	S	H	agree
+c187L_L20	18	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L20	19	z	H	agree
 c187L_L20	20	4	H	agree
-c187L_L20	21	S	H	agree
+c187L_L20	21	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L20	22	p	H	agree
 c187L_L20	23	s	H	agree; ss written as s s
 c187L_L20	24	s	H	agree; ss written as s s
@@ -1721,7 +1721,7 @@ c187L_L20	27	th	H	agree
 c187L_L20	28	+	H	agree
 c187L_L20	29	a	H	agree
 c187L_L21	1	4	H	agree
-c187L_L21	2	S	H	agree
+c187L_L21	2	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L21	3	z	H	agree
 c187L_L21	4	+	H	agree
 c187L_L21	5	d	H	agree
@@ -1734,7 +1734,7 @@ c187L_L21	11	vdash	H	eye
 c187L_L21	12	qb	H	agree
 c187L_L21	13	a	H	agree
 c187L_L21	14	box	H	agree
-c187L_L21	15	S	H	agree
+c187L_L21	15	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L21	16	z	H	agree
 c187L_L21	17	eloop	H	agree
 c187L_L21	18	w	H	agree
@@ -1753,11 +1753,11 @@ c187L_L21	30	th	H	agree
 c187L_L22	1	iii	H	agree
 c187L_L22	2	z	H	agree
 c187L_L22	3	qb	H	agree
-c187L_L22	4	S	H	agree
+c187L_L22	4	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L22	5	z	H	agree
 c187L_L22	6	7	H	agree
 c187L_L22	7	o	H	0=o
-c187L_L22	8	S	H	agree
+c187L_L22	8	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L22	9	S	H	agree
 c187L_L22	10	phi	H	agree
 c187L_L22	11	y	H	agree
@@ -1765,13 +1765,13 @@ c187L_L22	12	+	H	agree
 c187L_L22	13	z	H	agree
 c187L_L22	14	y	H	agree
 c187L_L22	15	qb	H	agree
-c187L_L22	16	S	H	agree
+c187L_L22	16	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L22	17	p	H	agree
 c187L_L22	18	K	M	agree-flagged
 c187L_L22	19	+	H	agree
 c187L_L22	20	ls	H	agree
 c187L_L22	21	3	H	agree
-c187L_L22	22	S	H	agree
+c187L_L22	22	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L22	23	z	H	agree
 c187L_L22	24	s	H	5hook=s
 c187L_L22	25	z	H	agree
@@ -1801,7 +1801,7 @@ c187L_L23	18	box	H	agree
 c187L_L23	19	w	H	agree
 c187L_L23	20	th	H	agree
 c187L_L23	21	4	H	agree
-c187L_L23	22	S	H	agree
+c187L_L23	22	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L23	23	7	H	agree
 c187L_L23	24	7	H	agree
 c187L_L23	25	f	M	looped f
@@ -1812,7 +1812,7 @@ c187L_L23	29	q	H	agree
 c187L_L24	1	y	H	agree
 c187L_L24	2	4	H	agree
 c187L_L24	3	q	H	agree
-c187L_L24	4	S	H	agree
+c187L_L24	4	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L24	5	+	H	agree
 c187L_L24	6	7	H	agree
 c187L_L24	7	7	H	agree
@@ -1834,7 +1834,7 @@ c187L_L24	22	4	H	agree
 c187L_L24	23	y	H	agree
 c187L_L24	24	iib	H	agree
 c187L_L24	25	w	H	agree
-c187L_L24	26	S	H	agree
+c187L_L24	26	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L24	27	qb	H	agree
 c187L_L24	28	w	H	agree
 c187L_L24	29	y	H	agree
@@ -1842,7 +1842,7 @@ c187L_L24	30	q	H	agree
 c187L_L24	31	rc	H	agree
 c187L_L25	1	iib	H	agree
 c187L_L25	2	4	H	agree
-c187L_L25	3	S	H	agree
+c187L_L25	3	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L25	4	z	H	agree
 c187L_L25	5	wb	H	agree
 c187L_L25	6	+	H	agree
@@ -1870,7 +1870,7 @@ c187L_L25	27	9	H	agree
 c187L_L26	1	e	H	agree
 c187L_L26	2	y	H	agree
 c187L_L26	3	w	H	agree
-c187L_L26	4	S	H	agree
+c187L_L26	4	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L26	5	p	H	agree
 c187L_L26	6	w	H	agree
 c187L_L26	7	e	H	agree
@@ -1899,13 +1899,13 @@ c187L_L26	29	qb	H	agree
 c187L_L26	30	ls	H	agree
 c187L_L26	31	q	H	agree
 c187L_L27	1	o	H	agree
-c187L_L27	2	S	H	agree
+c187L_L27	2	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L27	3	y	H	agree
 c187L_L27	4	ls	H	agree
 c187L_L27	5	a	H	agree
 c187L_L27	6	y	H	agree
 c187L_L27	7	+	H	agree
-c187L_L27	8	S	H	agree
+c187L_L27	8	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L27	9	z	H	agree
 c187L_L27	10	o	H	agree
 c187L_L27	11	+	H	agree
@@ -1916,12 +1916,12 @@ c187L_L27	15	w	H	eye
 c187L_L27	16	wb	H	agree
 c187L_L27	17	tz	H	agree
 c187L_L27	18	3	H	agree
-c187L_L27	19	S	H	agree
+c187L_L27	19	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L27	20	th	H	agree
 c187L_L27	21	3	H	agree
 c187L_L27	22	o	H	agree
 c187L_L27	23	q	H	agree
-c187L_L27	24	S	H	agree
+c187L_L27	24	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187L_L27	25	z	H	agree
 c187L_L27	26	[PLAIN:amou]	M	agree-flagged
 c187R_L01	1	s	H	agree; ss written as s s
@@ -1959,7 +1959,7 @@ c187R_L01	32	7	H	agree
 c187R_L01	33	7	H	agree
 c187R_L02	1	th	H	agree
 c187R_L02	2	4	H	agree
-c187R_L02	3	S	H	agree
+c187R_L02	3	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L02	4	6r	H	agree
 c187R_L02	5	qb	H	agree
 c187R_L02	6	z	H	agree
@@ -1968,7 +1968,7 @@ c187R_L02	8	7	H	agree
 c187R_L02	9	sd	H	agree
 c187R_L02	10	y	H	agree
 c187R_L02	11	qb	H	eye
-c187R_L02	12	S	H	agree
+c187R_L02	12	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L02	13	z	H	agree
 c187R_L02	14	+	H	agree
 c187R_L02	15	9	H	agree
@@ -2008,7 +2008,7 @@ c187R_L03	18	+	H	agree
 c187R_L03	19	y	H	agree
 c187R_L03	20	th	H	agree
 c187R_L03	21	qb	H	agree
-c187R_L03	22	S	H	agree
+c187R_L03	22	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L03	23	phi	H	agree
 c187R_L03	24	wb	H	agree
 c187R_L03	25	4	H	agree
@@ -2042,7 +2042,7 @@ c187R_L04	21	a	H	agree
 c187R_L04	22	7	H	agree
 c187R_L04	23	th	H	agree
 c187R_L04	24	4	H	agree
-c187R_L04	25	S	M	agree-flagged
+c187R_L04	25	Sl	M	agree-flagged; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L04	26	NEW_c187R_1	M	flat bar with ink blob
 c187R_L04	27	4	H	agree
 c187R_L04	28	4	H	agree
@@ -2063,12 +2063,12 @@ c187R_L05	13	7	H	agree
 c187R_L05	14	p	H	agree
 c187R_L05	15	6r	H	agree
 c187R_L05	16	q	H	agree
-c187R_L05	17	S	H	agree
+c187R_L05	17	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L05	18	qb	H	agree
 c187R_L05	19	z	H	agree
 c187R_L05	20	w	H	agree
 c187R_L05	21	4	H	agree
-c187R_L05	22	S	H	agree
+c187R_L05	22	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L05	23	/	H	slash on crop
 c187R_L05	24	d	H	agree
 c187R_L05	25	+	H	agree
@@ -2080,7 +2080,7 @@ c187R_L05	30	3	H	agree
 c187R_L05	31	p	H	agree
 c187R_L06	1	z	H	agree
 c187R_L06	2	qb	H	agree
-c187R_L06	3	S	M	agree-flagged
+c187R_L06	3	Sl	M	agree-flagged; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L06	4	z	H	agree
 c187R_L06	5	qb	H	agree
 c187R_L06	6	e	H	agree
@@ -2093,7 +2093,7 @@ c187R_L06	12	y	H	agree
 c187R_L06	13	7	H	agree
 c187R_L06	14	7	H	agree
 c187R_L06	15	wb	H	agree
-c187R_L06	16	S	M	agree-flagged
+c187R_L06	16	So	M	agree-flagged; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L06	17	q	H	agree
 c187R_L06	18	s	H	agree; ss written as s s
 c187R_L06	19	s	H	agree; ss written as s s
@@ -2109,7 +2109,7 @@ c187R_L06	28	qb	H	agree
 c187R_L07	1	th	H	agree
 c187R_L07	2	w	H	agree
 c187R_L07	3	+	H	agree
-c187R_L07	4	S	H	agree
+c187R_L07	4	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L07	5	d	H	agree
 c187R_L07	6	3	H	agree
 c187R_L07	7	iii	H	agree
@@ -2117,7 +2117,7 @@ c187R_L07	8	th	H	agree
 c187R_L07	9	w	H	agree
 c187R_L07	10	p	H	agree
 c187R_L07	11	+	H	agree
-c187R_L07	12	S	H	agree
+c187R_L07	12	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L07	13	6r	H	agree
 c187R_L07	14	7	H	agree
 c187R_L07	15	6	H	agree
@@ -2125,7 +2125,7 @@ c187R_L07	16	9	M	agree-flagged
 c187R_L07	17	phi	H	agree
 c187R_L07	18	y	H	agree
 c187R_L07	19	qb	H	agree
-c187R_L07	20	S	H	agree
+c187R_L07	20	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L07	21	iib	H	agree
 c187R_L07	22	K	H	agree
 c187R_L07	23	o	H	agree
@@ -2138,7 +2138,7 @@ c187R_L07	29	th	H	agree
 c187R_L08	1	s	H	agree
 c187R_L08	2	z	H	agree
 c187R_L08	3	4	H	agree
-c187R_L08	4	S	H	agree
+c187R_L08	4	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L08	5	z	H	agree
 c187R_L08	6	sd	H	agree
 c187R_L08	7	y	H	agree
@@ -2154,12 +2154,12 @@ c187R_L08	16	th	H	agree
 c187R_L08	17	9	H	agree
 c187R_L08	18	w	H	agree
 c187R_L08	19	4	H	agree
-c187R_L08	20	S	H	agree
+c187R_L08	20	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L08	21	9	H	agree
 c187R_L08	22	7	H	agree
 c187R_L08	23	7	H	agree
 c187R_L08	24	wb	H	agree
-c187R_L08	25	S	H	agree
+c187R_L08	25	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L08	26	q	H	agree
 c187R_L08	27	iii	H	agree
 c187R_L08	28	f	M	agree-flagged
@@ -2192,21 +2192,21 @@ c187R_L09	25	7	H	agree
 c187R_L09	26	th	H	agree
 c187R_L09	27	p	H	agree
 c187R_L09	28	4	H	agree
-c187R_L09	29	S	H	agree
+c187R_L09	29	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L09	30	a	H	agree
 c187R_L09	31	3	H	agree
 c187R_L10	1	psi	H	agree
 c187R_L10	2	z	M	agree-flagged
 c187R_L10	3	q	H	agree
 c187R_L10	4	+	H	agree
-c187R_L10	5	S	H	agree
+c187R_L10	5	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L10	6	+	H	agree
 c187R_L10	7	4	H	agree
 c187R_L10	8	y	H	agree
 c187R_L10	9	+	H	agree
 c187R_L10	10	th	M	theta with a dot above
 c187R_L10	11	S	H	agree
-c187R_L10	12	S	H	agree
+c187R_L10	12	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L10	13	+	H	agree
 c187R_L10	14	qb	H	agree
 c187R_L10	15	a	H	agree
@@ -2221,7 +2221,7 @@ c187R_L10	23	4	H	agree
 c187R_L10	24	z	H	agree
 c187R_L10	25	w	H	agree
 c187R_L10	26	4	H	agree
-c187R_L10	27	S	H	agree
+c187R_L10	27	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L11	1	e	H	agree
 c187R_L11	2	wb	H	agree
 c187R_L11	3	a	H	agree
@@ -2233,7 +2233,7 @@ c187R_L11	8	p	H	agree
 c187R_L11	9	rot	M	p8 shape
 c187R_L11	10	qb	H	agree
 c187R_L11	11	w	H	agree
-c187R_L11	12	S	H	agree
+c187R_L11	12	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L11	13	+	H	agree
 c187R_L11	14	iib	H	agree
 c187R_L11	15	w	H	agree
@@ -2246,13 +2246,13 @@ c187R_L11	21	qb	H	agree
 c187R_L11	22	7	H	agree
 c187R_L11	23	7	H	agree
 c187R_L11	24	y	H	agree
-c187R_L11	25	S	H	agree
+c187R_L11	25	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L11	26	w	H	agree
 c187R_L11	27	+	H	agree
 c187R_L11	28	y	H	agree
 c187R_L11	29	q	M	eye
 c187R_L12	1	vdash	H	v-bar=vdash
-c187R_L12	2	S	H	agree
+c187R_L12	2	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L12	3	e	H	agree
 c187R_L12	4	qb	H	agree
 c187R_L12	5	q	H	agree
@@ -2260,14 +2260,14 @@ c187R_L12	6	th	H	agree
 c187R_L12	7	7	H	agree
 c187R_L12	8	7	H	agree
 c187R_L12	9	K	M	ornate Rs
-c187R_L12	10	S	H	agree
+c187R_L12	10	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L12	11	l	M	small looped l
 c187R_L12	12	x	H	agree
 c187R_L12	13	4	H	agree
 c187R_L12	14	y	H	agree
 c187R_L12	15	eloop	H	agree
 c187R_L12	16	iii	H	agree
-c187R_L12	17	S	H	agree
+c187R_L12	17	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L12	18	4	H	agree
 c187R_L12	19	y	H	agree
 c187R_L12	20	l	M	small looped l
@@ -2305,14 +2305,14 @@ c187R_L13	22	4	H	agree
 c187R_L13	23	a	H	agree
 c187R_L13	24	th	H	agree
 c187R_L13	25	z	H	agree
-c187R_L13	26	S	H	agree
+c187R_L13	26	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L13	27	o	H	agree
 c187R_L13	28	q	H	agree
 c187R_L14	1	7	H	agree
 c187R_L14	2	7	H	agree
 c187R_L14	3	th	H	agree
 c187R_L14	4	qb	H	agree
-c187R_L14	5	S	H	agree
+c187R_L14	5	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L14	6	phi	H	agree
 c187R_L14	7	wb	H	agree
 c187R_L14	8	4	H	agree
@@ -2323,21 +2323,21 @@ c187R_L14	12	3	H	agree
 c187R_L14	13	sqc	H	open square
 c187R_L14	14	q	H	agree
 c187R_L14	15	p	H	eye
-c187R_L14	16	S	H	agree
+c187R_L14	16	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L14	17	eloop	H	agree
 c187R_L14	18	+	H	agree
 c187R_L14	19	q	H	agree
 c187R_L14	20	7	H	agree
 c187R_L14	21	7	H	agree
-c187R_L14	22	S	H	agree
-c187R_L14	23	S	H	agree
+c187R_L14	22	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
+c187R_L14	23	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L14	24	w	H	agree
 c187R_L14	25	8	H	agree
 c187R_L14	26	z	H	agree
 c187R_L14	27	K	M	ornate Rs
 c187R_L14	28	6r	H	agree
 c187R_L14	29	qb	H	agree
-c187R_L14	30	S	H	agree
+c187R_L14	30	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L15	1	z	H	agree
 c187R_L15	2	L	H	agree
 c187R_L15	3	w	H	agree
@@ -2351,7 +2351,7 @@ c187R_L15	10	+	H	agree
 c187R_L15	11	th	H	agree
 c187R_L15	12	4	H	agree
 c187R_L15	13	wb	H	agree
-c187R_L15	14	S	H	agree
+c187R_L15	14	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L15	15	L	H	agree
 c187R_L15	16	iii	H	agree
 c187R_L15	17	qb	H	agree
@@ -2362,9 +2362,9 @@ c187R_L15	21	y	H	agree
 c187R_L15	22	7	H	agree
 c187R_L15	23	7	H	agree
 c187R_L15	24	eloop	H	agree
-c187R_L15	25	S	H	agree
+c187R_L15	25	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L15	26	+	H	agree
-c187R_L15	27	S	H	agree
+c187R_L15	27	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L15	28	w	M	w with a dot
 c187R_L15	29	y	H	agree
 c187R_L16	1	l	M	small looped l
@@ -2379,7 +2379,7 @@ c187R_L16	9	o	H	agree
 c187R_L16	10	e	M	small epsilon
 c187R_L16	11	eloop	H	agree
 c187R_L16	12	4	H	agree
-c187R_L16	13	S	H	agree
+c187R_L16	13	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L16	14	p	H	agree
 c187R_L16	15	4	H	agree
 c187R_L16	16	a	H	agree
@@ -2401,7 +2401,7 @@ c187R_L16	31	to	H	agree
 c187R_L17	1	y	H	agree
 c187R_L17	2	4	H	agree
 c187R_L17	3	ee	H	agree
-c187R_L17	4	S	H	agree
+c187R_L17	4	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L17	5	q	M	long descender
 c187R_L17	6	iii	H	agree
 c187R_L17	7	z	H	agree
@@ -2441,14 +2441,14 @@ c187R_L18	14	a	H	agree
 c187R_L18	15	th	H	agree
 c187R_L18	16	K	M	ornate Rs
 c187R_L18	17	3	H	agree
-c187R_L18	18	S	H	agree
+c187R_L18	18	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L18	19	z	H	agree
 c187R_L18	20	6r	H	agree
 c187R_L18	21	q	H	agree
 c187R_L18	22	eloop	M	same crossed loop as L12 eloop
 c187R_L18	23	y	H	agree
 c187R_L18	24	4	H	agree
-c187R_L18	25	S	H	agree
+c187R_L18	25	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L18	26	a	H	agree
 c187R_L18	27	+	H	agree
 c187R_L18	28	eloop	M	line-final loop
@@ -2473,7 +2473,7 @@ c187R_L19	18	th	H	agree
 c187R_L19	19	+	H	agree
 c187R_L19	20	w	H	agree
 c187R_L19	21	phi	H	agree
-c187R_L19	22	S	H	agree
+c187R_L19	22	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L19	23	+	H	agree
 c187R_L19	24	a	H	agree
 c187R_L19	25	y	H	agree
@@ -2504,14 +2504,14 @@ c187R_L20	19	wb	H	agree
 c187R_L20	20	s	H	agree
 c187R_L20	21	z	H	agree
 c187R_L20	22	4	H	agree
-c187R_L20	23	S	H	agree
+c187R_L20	23	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L20	24	z	H	agree
 c187R_L20	25	6r	H	agree
 c187R_L20	26	q	M	eye
 c187R_L20	27	iii	H	agree
 c187R_L21	1	p	H	agree
 c187R_L21	2	qb	H	agree
-c187R_L21	3	S	H	agree
+c187R_L21	3	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L21	4	th	H	agree
 c187R_L21	5	3	H	agree
 c187R_L21	6	7	H	agree
@@ -2528,7 +2528,7 @@ c187R_L21	16	L	H	agree
 c187R_L21	17	w	H	agree
 c187R_L21	18	phi	H	agree
 c187R_L21	19	3	H	agree
-c187R_L21	20	S	H	agree
+c187R_L21	20	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L21	21	+	H	agree
 c187R_L21	22	d	H	agree
 c187R_L21	23	+	H	agree
@@ -2536,14 +2536,14 @@ c187R_L21	24	a	H	agree
 c187R_L21	25	th	H	agree
 c187R_L21	26	9	H	agree
 c187R_L21	27	3	H	agree
-c187R_L21	28	S	H	agree
+c187R_L21	28	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L21	29	z	H	agree
 c187R_L22	1	6	H	agree
 c187R_L22	2	4	H	agree
 c187R_L22	3	+	H	agree
-c187R_L22	4	S	H	agree
+c187R_L22	4	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L22	5	sd	H	agree
-c187R_L22	6	S	H	agree
+c187R_L22	6	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L22	7	w	H	agree
 c187R_L22	8	+	H	agree
 c187R_L22	9	y	H	agree
@@ -2574,8 +2574,8 @@ c187R_L23	5	+	H	agree
 c187R_L23	6	th	H	agree
 c187R_L23	7	o	H	agree
 c187R_L23	8	3	H	agree
-c187R_L23	9	S	H	agree
-c187R_L23	10	S	H	agree
+c187R_L23	9	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
+c187R_L23	10	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L23	11	w	H	agree
 c187R_L23	12	p	H	agree
 c187R_L23	13	z	H	agree
@@ -2589,7 +2589,7 @@ c187R_L23	20	7	H	agree
 c187R_L23	21	p	H	agree
 c187R_L23	22	6r	H	agree
 c187R_L23	23	q	H	agree
-c187R_L23	24	S	H	agree
+c187R_L23	24	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L23	25	w	H	agree
 c187R_L23	26	wb	H	agree
 c187R_L23	27	+	H	agree
@@ -2599,7 +2599,7 @@ c187R_L24	1	7	H	agree
 c187R_L24	2	7	H	agree
 c187R_L24	3	wb	H	agree
 c187R_L24	4	4	H	agree
-c187R_L24	5	S	H	agree
+c187R_L24	5	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L24	6	iib	H	agree
 c187R_L24	7	y	H	agree
 c187R_L24	8	+	H	agree
@@ -2608,7 +2608,7 @@ c187R_L24	10	3	H	agree
 c187R_L24	11	7	H	agree
 c187R_L24	12	th	H	agree
 c187R_L24	13	4	H	agree
-c187R_L24	14	S	H	agree
+c187R_L24	14	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L24	15	z	M	agree-flagged
 c187R_L24	16	wb	H	agree
 c187R_L24	17	4	H	agree
@@ -2626,22 +2626,22 @@ c187R_L25	1	a	H	agree
 c187R_L25	2	4	H	agree
 c187R_L25	3	q	H	agree
 c187R_L25	4	+	H	agree
-c187R_L25	5	S	H	agree
+c187R_L25	5	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L25	6	z	H	agree
 c187R_L25	7	p	H	agree
 c187R_L25	8	NEW_c187R_2	M	xe ligature, one sign
 c187R_L25	9	qb	M	agree-flagged
 c187R_L25	10	th	H	agree
 c187R_L25	11	p	H	agree
-c187R_L25	12	S	H	agree
+c187R_L25	12	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L25	13	o	H	agree
 c187R_L25	14	z	H	agree
-c187R_L25	15	S	H	agree
+c187R_L25	15	So	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L25	16	+	H	agree
 c187R_L25	17	y	H	agree
 c187R_L25	18	th	H	agree
 c187R_L25	19	4	H	agree
-c187R_L25	20	S	H	agree
+c187R_L25	20	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L25	21	rot	H	agree
 c187R_L25	22	4	H	agree
 c187R_L25	23	th	H	agree
@@ -2664,13 +2664,13 @@ c187R_L26	12	w	H	agree
 c187R_L26	13	+	H	agree
 c187R_L26	14	y	H	agree
 c187R_L26	15	th	H	agree
-c187R_L26	16	S	H	agree
+c187R_L26	16	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L26	17	+	H	agree
 c187R_L26	18	a	H	agree
 c187R_L26	19	th	H	agree
 c187R_L26	20	9	H	agree
 c187R_L26	21	3	H	agree
-c187R_L26	22	S	H	agree
+c187R_L26	22	Sl	H	agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c187R_L26	23	z	H	barred z
 c187R_L26	24	6r	H	agree
 c187R_L26	25	q	H	agree
@@ -2701,7 +2701,7 @@ c188L_L01	23	a	H	N4-C1 re-pass: agree
 c188L_L01	24	4	H	N4-C1 re-pass: agree
 c188L_L01	25	q	M	N4-C1 re-pass: 2-of-3 C:q D:q NEAR3:qb
 c188L_L01	26	+	H	N4-C1 re-pass: agree
-c188L_L01	27	S	M	N4-C1 re-pass: 2-of-3 C:th D:S NEAR3:S
+c188L_L01	27	Sl	M	N4-C1 re-pass: 2-of-3 C:th D:S NEAR3:S; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L01	28	z	M	N4-C1 re-pass: agree-flagged
 c188L_L01	29	rc	M	N4-C1 re-pass: 2-of-3 C:K D:rc NEAR3:rc
 c188L_L02	1	6r	M	N4-C1 re-pass: L02_s1 crop frames L01; NEAR3 reading, line start seen cut at the crop bottom
@@ -2711,7 +2711,7 @@ c188L_L02	4	K	M	N4-C1 re-pass: 2-of-3 C:K D:rc NEAR3:K
 c188L_L02	5	+	H	N4-C1 re-pass: agree
 c188L_L02	6	p	M	N4-C1 re-pass: 2-of-3 C:d D:p NEAR3:p
 c188L_L02	7	4	H	N4-C1 re-pass: agree
-c188L_L02	8	S	H	N4-C1 re-pass: agree
+c188L_L02	8	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L02	9	y	H	N4-C1 re-pass: agree
 c188L_L02	10	a	H	N4-C1 re-pass: agree
 c188L_L02	11	eloop	M	N4-C1 re-pass: agree-flagged
@@ -2735,7 +2735,7 @@ c188L_L03	2	a	H	N4-C1 re-pass: agree
 c188L_L03	3	y	H	N4-C1 re-pass: agree
 c188L_L03	4	e	H	N4-C1 re-pass: agree
 c188L_L03	5	wb	H	N4-C1 re-pass: agree
-c188L_L03	6	S	H	N4-C1 re-pass: agree
+c188L_L03	6	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L03	7	th	H	N4-C1 re-pass: agree
 c188L_L03	8	7	H	N4-C1 re-pass: agree
 c188L_L03	9	7	H	N4-C1 re-pass: agree
@@ -2746,7 +2746,7 @@ c188L_L03	13	7	H	N4-C1 re-pass: agree
 c188L_L03	14	w	H	N4-C1 re-pass: agree
 c188L_L03	15	z	M	N4-C1 re-pass: 2-of-3 C:tz D:z NEAR3:z
 c188L_L03	16	qb	H	N4-C1 re-pass: agree
-c188L_L03	17	S	H	N4-C1 re-pass: agree
+c188L_L03	17	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L03	18	z	M	N4-C1 re-pass: agree-flagged
 c188L_L03	19	eloop	M	N4-C1 re-pass: agree-flagged
 c188L_L03	20	7	H	N4-C1 re-pass: agree
@@ -2758,7 +2758,7 @@ c188L_L03	25	8	H	N4-C1 re-pass: agree
 c188L_L03	26	4	H	N4-C1 re-pass: agree
 c188L_L03	27	q	M	N4-C1 re-pass: agree-flagged
 c188L_L03	28	K	M	N4-C1 re-pass: 2-of-3 C:K D:e NEAR3:K
-c188L_L04	1	S	H	N4-C1 re-pass: agree
+c188L_L04	1	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L04	2	w	H	N4-C1 re-pass: agree
 c188L_L04	3	wb	H	N4-C1 re-pass: agree
 c188L_L04	4	tz	M	N4-C1 re-pass: 2-of-3 C:K D:tz NEAR3:tz
@@ -2769,7 +2769,7 @@ c188L_L04	8	e	M	N4-C1 re-pass: 3-way C:f D:c NEAR3:e; NEAR3 kept
 c188L_L04	9	qb	H	N4-C1 re-pass: agree
 c188L_L04	10	p	H	N4-C1 re-pass: agree
 c188L_L04	11	4	H	N4-C1 re-pass: agree
-c188L_L04	12	S	H	N4-C1 re-pass: agree
+c188L_L04	12	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L04	13	4	H	N4-C1 re-pass: agree
 c188L_L04	14	4	H	N4-C1 re-pass: agree
 c188L_L04	15	qb	H	N4-C1 re-pass: agree
@@ -2798,7 +2798,7 @@ c188L_L05	8	sqc	M	N4-C1 re-pass: 2-of-3 C:sqc D:z NEAR3:sqc
 c188L_L05	9	7	H	N4-C1 re-pass: agree
 c188L_L05	10	7	H	N4-C1 re-pass: agree
 c188L_L05	11	NEW_c188L_3	M	N4-C1 re-pass: 3-way C:ee D:z NEAR3:NEW_c188L_3; NEAR3 kept
-c188L_L05	12	S	H	N4-C1 re-pass: agree
+c188L_L05	12	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L05	13	+	H	N4-C1 re-pass: agree
 c188L_L05	14	y	H	N4-C1 re-pass: agree
 c188L_L05	15	z	M	N4-C1 re-pass: agree-flagged
@@ -2824,7 +2824,7 @@ c188L_L06	6	6r	H	N4-C1 re-pass: agree
 c188L_L06	7	q	H	N4-C1 re-pass: agree
 c188L_L06	8	p	H	N4-C1 re-pass: agree
 c188L_L06	9	qb	H	N4-C1 re-pass: agree
-c188L_L06	10	S	H	N4-C1 re-pass: agree
+c188L_L06	10	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L06	11	th	H	N4-C1 re-pass: agree
 c188L_L06	12	3	H	N4-C1 re-pass: agree
 c188L_L06	14	s	H	N4-C1 re-pass: agree; ss written as s s
@@ -2859,7 +2859,7 @@ c188L_L07	14	iii	H	N4-C1 re-pass: agree
 c188L_L07	15	y	H	N4-C1 re-pass: agree
 c188L_L07	16	4	H	N4-C1 re-pass: agree
 c188L_L07	17	ee	H	N4-C1 re-pass: agree
-c188L_L07	18	S	H	N4-C1 re-pass: agree
+c188L_L07	18	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L07	19	q	M	N4-C1 re-pass: agree-flagged
 c188L_L07	20	ee	M	N4-C1 re-pass: 2-of-3 C:ee D:ee NEAR3:K
 c188L_L07	21	+	H	N4-C1 re-pass: agree
@@ -2874,7 +2874,7 @@ c188L_L08	2	4	H	N4-C1 re-pass: agree
 c188L_L08	3	a	H	N4-C1 re-pass: agree
 c188L_L08	4	th	H	N4-C1 re-pass: agree
 c188L_L08	5	w	H	N4-C1 re-pass: agree
-c188L_L08	6	S	H	N4-C1 re-pass: agree
+c188L_L08	6	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L08	7	z	M	N4-C1 re-pass: agree-flagged
 c188L_L08	8	w	H	N4-C1 re-pass: agree
 c188L_L08	9	o	H	N4-C1 re-pass: agree
@@ -2898,7 +2898,7 @@ c188L_L08	26	K	M	N4-C1 re-pass: 2-of-3 C:K D:rc NEAR3:K
 c188L_L08	27	3	H	N4-C1 re-pass: agree
 c188L_L09	1	th	H	N4-C1 re-pass: agree
 c188L_L09	2	4	H	N4-C1 re-pass: agree
-c188L_L09	3	S	H	N4-C1 re-pass: agree
+c188L_L09	3	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L09	4	z	M	N4-C1 re-pass: agree-flagged
 c188L_L09	5	qb	H	N4-C1 re-pass: agree
 c188L_L09	6	th	M	N4-C1 re-pass: agree-flagged
@@ -2938,7 +2938,7 @@ c188L_L10	12	+	H	N4-C1 re-pass: agree
 c188L_L10	13	7	H	N4-C1 re-pass: agree
 c188L_L10	14	7	H	N4-C1 re-pass: agree
 c188L_L10	15	y	H	N4-C1 re-pass: agree
-c188L_L10	16	S	H	N4-C1 re-pass: agree
+c188L_L10	16	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L10	17	w	H	N4-C1 re-pass: agree
 c188L_L10	18	+	H	N4-C1 re-pass: agree
 c188L_L10	19	y	H	N4-C1 re-pass: agree
@@ -2964,8 +2964,8 @@ c188L_L11	10	rot	M	N4-C1 re-pass: 2-of-3 C:K D:rot NEAR3:rot
 c188L_L11	11	qb	H	N4-C1 re-pass: agree
 c188L_L11	12	th	H	N4-C1 re-pass: agree
 c188L_L11	13	p	H	N4-C1 re-pass: agree
-c188L_L11	14	S	H	N4-C1 re-pass: agree
-c188L_L11	15	S	H	N4-C1 re-pass: agree
+c188L_L11	14	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
+c188L_L11	15	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L11	16	q	M	N4-C1 re-pass: agree-flagged
 c188L_L11	17	7	H	N4-C1 re-pass: agree
 c188L_L11	18	7	H	N4-C1 re-pass: agree
@@ -2985,19 +2985,19 @@ c188L_L12	1	y	H	N4-C1 re-pass: agree
 c188L_L12	2	+	H	N4-C1 re-pass: agree
 c188L_L12	3	th	H	N4-C1 re-pass: agree
 c188L_L12	4	iib	H	N4-C1 re-pass: agree
-c188L_L12	5	S	H	N4-C1 re-pass: agree
+c188L_L12	5	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L12	6	6	M	N4-C1 re-pass: agree-flagged
 c188L_L12	7	7	H	N4-C1 re-pass: agree
 c188L_L12	8	z	M	N4-C1 re-pass: agree-flagged
 c188L_L12	9	qb	H	N4-C1 re-pass: agree
-c188L_L12	10	S	H	N4-C1 re-pass: agree
+c188L_L12	10	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L12	11	z	M	N4-C1 re-pass: agree-flagged
 c188L_L12	12	7	H	N4-C1 re-pass: agree
 c188L_L12	13	o	H	N4-C1 re-pass: agree
 c188L_L12	14	iib	H	N4-C1 re-pass: agree
 c188L_L12	15	4	H	N4-C1 re-pass: agree
 c188L_L12	16	d	H	N4-C1 re-pass: agree
-c188L_L12	17	S	H	N4-C1 re-pass: agree
+c188L_L12	17	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L12	18	+	H	N4-C1 re-pass: agree
 c188L_L12	19	phi	M	N4-C1 re-pass: agree-flagged
 c188L_L12	20	4	H	N4-C1 re-pass: agree
@@ -3024,7 +3024,7 @@ c188L_L13	14	4	H	N4-C1 re-pass: agree
 c188L_L13	15	z	M	N4-C1 re-pass: 2-of-3 C:ee D:z NEAR3:z
 c188L_L13	16	w	H	N4-C1 re-pass: agree
 c188L_L13	17	4	H	N4-C1 re-pass: agree
-c188L_L13	18	S	H	N4-C1 re-pass: agree
+c188L_L13	18	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L13	19	th	H	N4-C1 re-pass: agree
 c188L_L13	20	s	H	N4-C1 re-pass: agree
 c188L_L13	21	z	M	N4-C1 re-pass: agree-flagged
@@ -3036,7 +3036,7 @@ c188L_L13	26	y	H	N4-C1 re-pass: agree
 c188L_L13	27	4	H	N4-C1 re-pass: agree
 c188L_L13	28	q	H	N4-C1 re-pass: agree
 c188L_L13	29	+	H	N4-C1 re-pass: agree
-c188L_L13	30	S	H	N4-C1 re-pass: agree
+c188L_L13	30	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L13	31	z	M	N4-C1 re-pass: agree-flagged
 c188L_L14	1	z	M	N4-C1 re-pass: 2-of-3 C:z D:z NEAR3:2
 c188L_L14	2	4	H	N4-C1 re-pass: agree
@@ -3058,7 +3058,7 @@ c188L_L14	17	qb	M	N4-C1 re-pass: 2-of-3 C:q D:qb NEAR3:qb
 c188L_L14	18	th	H	N4-C1 re-pass: agree
 c188L_L14	19	K	M	N4-C1 re-pass: 2-of-3 C:K D:rc NEAR3:K
 c188L_L14	20	+	H	N4-C1 re-pass: agree
-c188L_L14	21	S	H	N4-C1 re-pass: agree
+c188L_L14	21	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L14	22	y	H	N4-C1 re-pass: agree
 c188L_L14	23	+	H	N4-C1 re-pass: agree
 c188L_L14	24	phi	M	N4-C1 re-pass: agree-flagged
@@ -3070,7 +3070,7 @@ c188L_L15	2	+	H	N4-C1 re-pass: agree
 c188L_L15	3	y	H	N4-C1 re-pass: agree
 c188L_L15	4	th	H	N4-C1 re-pass: agree
 c188L_L15	5	4	H	N4-C1 re-pass: agree
-c188L_L15	6	S	H	N4-C1 re-pass: agree
+c188L_L15	6	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L15	7	d	H	N4-C1 re-pass: agree
 c188L_L15	8	3	H	N4-C1 re-pass: agree
 c188L_L15	9	iii	H	N4-C1 re-pass: agree
@@ -3080,7 +3080,7 @@ c188L_L15	12	z	M	N4-C1 re-pass: agree-flagged
 c188L_L15	13	7	H	N4-C1 re-pass: agree
 c188L_L15	14	7	H	N4-C1 re-pass: agree
 c188L_L15	15	wb	H	N4-C1 re-pass: agree
-c188L_L15	16	S	H	N4-C1 re-pass: agree
+c188L_L15	16	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L15	17	q	H	N4-C1 re-pass: agree
 c188L_L15	18	iii	M	N4-C1 re-pass: agree-flagged
 c188L_L15	19	7	M	N4-C1 re-pass: agree-flagged
@@ -3089,7 +3089,7 @@ c188L_L15	21	th	M	N4-C1 re-pass: agree-flagged
 c188L_L15	22	K	M	N4-C1 re-pass: 2-of-3 C:K D:rc NEAR3:K
 c188L_L15	23	w	M	N4-C1 re-pass: agree-flagged
 c188L_L15	24	+	M	N4-C1 re-pass: agree-flagged
-c188L_L15	25	S	M	N4-C1 re-pass: agree-flagged
+c188L_L15	25	Sl	M	N4-C1 re-pass: agree-flagged; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L15	26	9	M	N4-C1 re-pass: agree-flagged
 c188L_L16	1	e	H	N4-C1 re-pass: agree
 c188L_L16	2	qb	H	N4-C1 re-pass: agree
@@ -3110,7 +3110,7 @@ c188L_L16	16	+	H	N4-C1 re-pass: agree
 c188L_L16	17	phi	M	N4-C1 re-pass: agree-flagged
 c188L_L16	18	e	M	N4-C1 re-pass: agree-flagged
 c188L_L16	19	wb	M	N4-C1 re-pass: agree-flagged
-c188L_L16	20	S	M	N4-C1 re-pass: agree-flagged
+c188L_L16	20	So	M	N4-C1 re-pass: agree-flagged; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L16	21	th	M	N4-C1 re-pass: agree-flagged
 c188L_L16	22	w	M	N4-C1 re-pass: agree-flagged
 c188L_L16	23	+	M	N4-C1 re-pass: agree-flagged
@@ -3131,7 +3131,7 @@ c188L_L17	11	7	H	N4-C1 re-pass: agree
 c188L_L17	12	wb	H	N4-C1 re-pass: agree
 c188L_L17	13	qb	H	N4-C1 re-pass: agree
 c188L_L17	14	NEW_c188L_2	H	N4-C1 re-pass: agree
-c188L_L17	15	S	H	N4-C1 re-pass: agree
+c188L_L17	15	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L17	16	+	H	N4-C1 re-pass: agree
 c188L_L17	17	th	H	N4-C1 re-pass: agree
 c188L_L17	18	p	H	N4-C1 re-pass: agree
@@ -3145,36 +3145,36 @@ c188L_L17	25	ee	M	N4-C1 re-pass: 2-of-3 C:ee D:ee NEAR3:K
 c188L_L17	26	iii	M	N4-C1 re-pass: 2-of-3 C:iib D:iii NEAR3:iii
 c188L_L17	27	f	M	N4-C1 re-pass: agree-flagged
 c188L_L18	1	e	M	N4-C1 re-pass: 3-way C:f D:ee NEAR3:e; NEAR3 kept
-c188L_L18	2	S	H	N4-C1 re-pass: agree
+c188L_L18	2	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L18	3	z	M	N4-C1 re-pass: agree-flagged
 c188L_L18	4	qb	H	N4-C1 re-pass: agree
 c188L_L18	5	o	H	N4-C1 re-pass: agree
 c188L_L18	6	+	H	N4-C1 re-pass: agree
-c188L_L18	7	S	H	N4-C1 re-pass: agree
+c188L_L18	7	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L18	8	q	M	N4-C1 re-pass: agree-flagged
 c188L_L18	9	7	H	N4-C1 re-pass: agree
 c188L_L18	10	7	H	N4-C1 re-pass: agree
-c188L_L18	11	S	H	N4-C1 re-pass: agree
+c188L_L18	11	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L18	12	qb	H	N4-C1 re-pass: agree
-c188L_L18	13	S	H	N4-C1 re-pass: agree
+c188L_L18	13	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L18	14	z	M	N4-C1 re-pass: agree-flagged
 c188L_L18	15	q	M	N4-C1 re-pass: agree-flagged
 c188L_L18	16	a	H	N4-C1 re-pass: agree
 c188L_L18	17	wb	H	N4-C1 re-pass: agree
 c188L_L18	18	sqc	M	N4-C1 re-pass: 2-of-3 C:sqc D:z NEAR3:sqc
 c188L_L18	19	qb	H	N4-C1 re-pass: agree
-c188L_L18	20	S	M	N4-C1 re-pass: agree-flagged
+c188L_L18	20	So	M	N4-C1 re-pass: agree-flagged; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L18	21	7	M	N4-C1 re-pass: agree-flagged
 c188L_L18	22	7	M	N4-C1 re-pass: agree-flagged
 c188L_L18	23	y	M	N4-C1 re-pass: agree-flagged
-c188L_L18	24	S	M	N4-C1 re-pass: agree-flagged
+c188L_L18	24	Sl	M	N4-C1 re-pass: agree-flagged; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L18	25	w	M	N4-C1 re-pass: agree-flagged
 c188L_L18	26	+	M	N4-C1 re-pass: agree-flagged
 c188L_L18	27	y	M	N4-C1 re-pass: agree-flagged
 c188L_L18	28	iii	M	N4-C1 re-pass: agree-flagged
 c188L_L19	1	p	H	N4-C1 re-pass: agree
 c188L_L19	2	4	H	N4-C1 re-pass: agree
-c188L_L19	3	S	H	N4-C1 re-pass: agree
+c188L_L19	3	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L19	4	th	H	N4-C1 re-pass: agree
 c188L_L19	5	+	H	N4-C1 re-pass: agree
 c188L_L19	6	w	H	N4-C1 re-pass: agree
@@ -3184,14 +3184,14 @@ c188L_L19	9	4	H	N4-C1 re-pass: agree
 c188L_L19	10	d	M	N4-C1 re-pass: 2-of-3 C:d D:d NEAR3:NEW_c188L_1
 c188L_L19	11	z	M	N4-C1 re-pass: agree-flagged
 c188L_L19	12	w	H	N4-C1 re-pass: agree
-c188L_L19	13	S	H	N4-C1 re-pass: agree
+c188L_L19	13	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L19	14	iib	H	N4-C1 re-pass: agree
 c188L_L19	15	y	H	N4-C1 re-pass: agree
 c188L_L19	16	+	H	N4-C1 re-pass: agree
-c188L_L19	17	S	H	N4-C1 re-pass: agree
+c188L_L19	17	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L19	18	z	M	N4-C1 re-pass: agree-flagged
-c188L_L19	19	S	H	N4-C1 re-pass: agree
-c188L_L19	20	S	H	N4-C1 re-pass: agree
+c188L_L19	19	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
+c188L_L19	20	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L19	21	phi	H	N4-C1 re-pass: agree
 c188L_L19	22	rot	M	N4-C1 re-pass: 2-of-3 C:K D:rot NEAR3:rot
 c188L_L19	23	4	H	N4-C1 re-pass: agree
@@ -3226,7 +3226,7 @@ c188L_L20	23	th	H	N4-C1 re-pass: agree
 c188L_L20	24	9	H	N4-C1 re-pass: agree
 c188L_L20	25	box	H	N4-C1 re-pass: agree
 c188L_L20	26	e	H	N4-C1 re-pass: agree
-c188L_L20	27	S	H	N4-C1 re-pass: agree
+c188L_L20	27	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L20	28	7	H	N4-C1 re-pass: agree
 c188L_L20	29	wb	H	N4-C1 re-pass: agree
 c188L_L20	30	w	M	N4-C1 re-pass: agree-flagged
@@ -3240,7 +3240,7 @@ c188L_L21	7	7	H	N4-C1 re-pass: agree
 c188L_L21	8	7	H	N4-C1 re-pass: agree
 c188L_L21	9	a	H	N4-C1 re-pass: agree
 c188L_L21	10	qb	H	N4-C1 re-pass: agree
-c188L_L21	11	S	H	N4-C1 re-pass: agree
+c188L_L21	11	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L21	12	z	M	N4-C1 re-pass: agree-flagged
 c188L_L21	13	z	M	N4-C1 re-pass: agree-flagged
 c188L_L21	14	4	H	N4-C1 re-pass: agree
@@ -3250,7 +3250,7 @@ c188L_L21	17	7	H	N4-C1 re-pass: agree
 c188L_L21	18	6	H	N4-C1 re-pass: agree
 c188L_L21	19	ls	H	N4-C1 re-pass: agree
 c188L_L21	20	4	H	N4-C1 re-pass: agree
-c188L_L21	21	S	H	N4-C1 re-pass: agree
+c188L_L21	21	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L21	22	7	H	N4-C1 re-pass: agree
 c188L_L21	23	7	H	N4-C1 re-pass: agree
 c188L_L21	24	s	H	N4-C1 re-pass: agree
@@ -3263,7 +3263,7 @@ c188L_L21	30	q	H	N4-C1 re-pass: agree
 c188L_L22	1	qb	M	N4-C1 re-pass: agree-flagged
 c188L_L22	2	q	H	N4-C1 re-pass: agree
 c188L_L22	3	box	H	N4-C1 re-pass: agree
-c188L_L22	4	S	H	N4-C1 re-pass: agree
+c188L_L22	4	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L22	5	z	M	N4-C1 re-pass: agree-flagged
 c188L_L22	6	wb	H	N4-C1 re-pass: agree
 c188L_L22	7	+	H	N4-C1 re-pass: agree
@@ -3271,7 +3271,7 @@ c188L_L22	8	th	H	N4-C1 re-pass: agree
 c188L_L22	9	o	H	N4-C1 re-pass: agree
 c188L_L22	10	qb	H	N4-C1 re-pass: agree
 c188L_L22	11	w	H	N4-C1 re-pass: agree
-c188L_L22	12	S	H	N4-C1 re-pass: agree
+c188L_L22	12	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L22	13	th	H	N4-C1 re-pass: agree
 c188L_L22	14	wb	H	N4-C1 re-pass: agree
 c188L_L22	15	w	H	N4-C1 re-pass: agree
@@ -3281,7 +3281,7 @@ c188L_L22	18	th	H	N4-C1 re-pass: agree
 c188L_L22	19	iii	H	N4-C1 re-pass: agree
 c188L_L22	20	7	H	N4-C1 re-pass: agree
 c188L_L22	21	6	H	N4-C1 re-pass: agree
-c188L_L22	22	S	H	N4-C1 re-pass: agree
+c188L_L22	22	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L22	23	w	H	N4-C1 re-pass: agree
 c188L_L22	24	th	H	N4-C1 re-pass: agree
 c188L_L22	25	qb	H	N4-C1 re-pass: agree
@@ -3291,7 +3291,7 @@ c188L_L22	28	3	H	N4-C1 re-pass: agree
 c188L_L23	1	p	H	N4-C1 re-pass: agree
 c188L_L23	2	4	H	N4-C1 re-pass: agree
 c188L_L23	3	a	H	N4-C1 re-pass: agree
-c188L_L23	4	S	H	N4-C1 re-pass: agree
+c188L_L23	4	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L23	5	+	H	N4-C1 re-pass: agree
 c188L_L23	6	y	H	N4-C1 re-pass: agree
 c188L_L23	7	z	M	N4-C1 re-pass: agree-flagged
@@ -3311,14 +3311,14 @@ c188L_L23	20	p	H	N4-C1 re-pass: agree
 c188L_L23	21	4	H	N4-C1 re-pass: agree
 c188L_L23	22	d	H	N4-C1 re-pass: agree
 c188L_L23	23	sd	M	N4-C1 re-pass: agree-flagged
-c188L_L23	24	S	H	N4-C1 re-pass: agree
+c188L_L23	24	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L23	25	+	H	N4-C1 re-pass: agree
-c188L_L23	26	S	H	N4-C1 re-pass: agree
+c188L_L23	26	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L23	27	iii	H	N4-C1 re-pass: agree
 c188L_L23	28	6	M	N4-C1 re-pass: 2-of-3 C:6 D:6 NEAR3:6r
 c188L_L24	1	o	H	N4-C1 re-pass: agree
 c188L_L24	2	+	H	N4-C1 re-pass: agree
-c188L_L24	3	S	H	N4-C1 re-pass: agree
+c188L_L24	3	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L24	4	z	M	N4-C1 re-pass: agree-flagged
 c188L_L24	5	iii	H	N4-C1 re-pass: agree
 c188L_L24	6	NEW_c188L_3	M	N4-C1 re-pass: 3-way C:ee D:z NEAR3:NEW_c188L_3; NEAR3 kept
@@ -3327,16 +3327,16 @@ c188L_L24	8	a	H	N4-C1 re-pass: agree
 c188L_L24	9	th	H	N4-C1 re-pass: agree
 c188L_L24	10	p	H	N4-C1 re-pass: agree
 c188L_L24	11	+	H	N4-C1 re-pass: agree
-c188L_L24	12	S	H	N4-C1 re-pass: agree
+c188L_L24	12	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L24	13	wb	H	N4-C1 re-pass: agree
 c188L_L24	14	sqc	M	N4-C1 re-pass: 2-of-3 C:sqc D:z NEAR3:sqc
 c188L_L24	15	s	H	N4-C1 re-pass: agree
 c188L_L24	16	z	M	N4-C1 re-pass: agree-flagged
 c188L_L24	17	wb	H	N4-C1 re-pass: agree
 c188L_L24	18	4	H	N4-C1 re-pass: agree
-c188L_L24	19	S	H	N4-C1 re-pass: agree
+c188L_L24	19	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L24	20	z	M	N4-C1 re-pass: agree-flagged
-c188L_L24	21	S	H	N4-C1 re-pass: agree
+c188L_L24	21	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L24	22	+	H	N4-C1 re-pass: agree
 c188L_L24	23	a	H	N4-C1 re-pass: agree
 c188L_L24	25	s	H	N4-C1 re-pass: agree; ss written as s s
@@ -3371,7 +3371,7 @@ c188L_L25	24	q	H	N4-C1 re-pass: agree
 c188L_L25	25	7	H	N4-C1 re-pass: agree
 c188L_L25	26	7	H	N4-C1 re-pass: agree
 c188L_L25	27	tri	M	N4-C1 re-pass: 2-of-3 C:a D:tri NEAR3:tri
-c188L_L25	28	S	H	N4-C1 re-pass: agree
+c188L_L25	28	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L25	29	qb	H	N4-C1 re-pass: agree
 c188L_L26	1	w	H	N4-C1 re-pass: agree
 c188L_L26	2	z	M	N4-C1 re-pass: agree-flagged
@@ -3387,13 +3387,13 @@ c188L_L26	11	q	M	N4-C1 re-pass: agree-flagged
 c188L_L26	12	phi	H	N4-C1 re-pass: agree
 c188L_L26	13	y	H	N4-C1 re-pass: agree
 c188L_L26	14	qb	H	N4-C1 re-pass: agree
-c188L_L26	15	S	H	N4-C1 re-pass: agree
+c188L_L26	15	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L26	16	z	M	N4-C1 re-pass: agree-flagged
 c188L_L26	17	th	H	N4-C1 re-pass: agree
 c188L_L26	18	+	H	N4-C1 re-pass: agree
 c188L_L26	19	w	H	N4-C1 re-pass: agree
 c188L_L26	20	phi	H	N4-C1 re-pass: agree
-c188L_L26	21	S	H	N4-C1 re-pass: agree
+c188L_L26	21	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L26	22	+	H	N4-C1 re-pass: agree
 c188L_L26	23	a	H	N4-C1 re-pass: agree
 c188L_L26	24	y	H	N4-C1 re-pass: agree
@@ -3415,15 +3415,15 @@ c188L_L27	8	q	H	N4-C1 re-pass: agree
 c188L_L27	9	y	H	N4-C1 re-pass: agree
 c188L_L27	10	+	H	N4-C1 re-pass: agree
 c188L_L27	11	qb	H	N4-C1 re-pass: agree
-c188L_L27	12	S	H	N4-C1 re-pass: agree
-c188L_L27	13	S	H	N4-C1 re-pass: agree
+c188L_L27	12	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
+c188L_L27	13	Sl	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L27	14	sd	M	N4-C1 re-pass: agree-flagged
 c188L_L27	15	p	H	N4-C1 re-pass: agree
 c188L_L27	16	rot	M	N4-C1 re-pass: 2-of-3 C:K D:rot NEAR3:rot
 c188L_L27	17	qb	H	N4-C1 re-pass: agree
 c188L_L27	18	th	H	N4-C1 re-pass: agree
 c188L_L27	19	8	H	N4-C1 re-pass: agree
-c188L_L27	20	S	H	N4-C1 re-pass: agree
+c188L_L27	20	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L27	21	o	H	N4-C1 re-pass: agree
 c188L_L27	22	4	H	N4-C1 re-pass: agree
 c188L_L27	23	4	H	N4-C1 re-pass: agree
@@ -3431,5 +3431,5 @@ c188L_L27	24	q	H	N4-C1 re-pass: agree
 c188L_L27	25	+	H	N4-C1 re-pass: agree
 c188L_L27	26	d	H	N4-C1 re-pass: agree
 c188L_L27	27	qb	H	N4-C1 re-pass: agree
-c188L_L27	28	S	H	N4-C1 re-pass: agree
+c188L_L27	28	So	H	N4-C1 re-pass: agree; S split C1161-S275 (R1/R2/R3 blind shape read)
 c188L_L27	29	y	H	N4-C1 re-pass: agree

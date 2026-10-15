@@ -20,4 +20,5 @@ K(R2) ('c187R_L22', 4) agreed O read O
 K(R2): 8/9 decided to agreed class, 0 marked ? -> PASS   (O 99, L 157, ? 19)
 A: both decided 256; raw agreement 0.953; kappa 0.902 -> PASS   {('L', 'L'): 149, ('O', 'O'): 95, ('L', 'O'): 4, ('O', 'L'): 8}
 reconciliation windows: 31
-R3 not read yet
+T: O 101, L 164, ? 10 -> PASS
+harness written

@@ -6,3 +6,7 @@ time	target	hypothesis	occurrences	statistic	null_pos_p95	null_val_p95	verdict	f
 2026-10-15 09:18	ciphers/clair1161-avis-flandre-1688	a=u	98	1522.8	-41.4	901.3	accept	non-blind
 2026-10-15 09:18	ciphers/clair1161-avis-flandre-1688	Sl=n	121	682.8	-375.0	230.4	accept	non-blind
 2026-10-15 09:18	ciphers/clair1161-avis-flandre-1688	So=n	79	-456.8	118.7	-349.4	reject	non-blind
+2026-10-15 12:54	ciphers/clair1161-avis-flandre-1688	p=e	112	-617.8		-166.9	reject	non-blind
+2026-10-15 12:54	ciphers/clair1161-avis-flandre-1688	a=u	98	1522.8	-41.4	901.3	accept	non-blind
+2026-10-15 12:55	ciphers/clair1161-avis-flandre-1688	Sl=n	164	1113.2	-1112.3	-207.9	accept	non-blind
+2026-10-15 12:55	ciphers/clair1161-avis-flandre-1688	So=n	101	-616.5	205.6	-635.2	reject	non-blind
