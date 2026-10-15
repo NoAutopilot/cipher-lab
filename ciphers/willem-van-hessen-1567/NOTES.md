@@ -897,3 +897,37 @@ H, pass B's own raw labels per band (no merging by the reconciler): 123 tokens i
 - An own look at L3 p12-17 and L4 p20-26 at higher crop height (the band edges clip them) would settle `nine` and `compact-8`.
 - The three gloss keys could then be cross-checked class by class on their M classes only.
 - None of this reads 1127: its ciphertext is still unimaged (REQUEST.md, ASKS 31).
+
+## WVH-CROP (account 2, 15 Oct 2026 14:46-14:5x UTC by date -u): taller crops of WVO 1068 p.2 for `nine` / `compact-8`
+
+Brief: `.claude/briefs/runs/2026-10-15-ytbiz-default-1410-jobs.md` "WVH-CROP" (LANE DEFAULT-A2-1410-15). Pre-registered in
+`siblings/w1068/PREREG-WVH-CROP.md` (pushed 1a5a2c574 before either crop was viewed). Status of 1127 unchanged; no reading of 1127.
+- Source: `01068.pdf` re-fetched once from resources.huygens.knaw.nl (HTTP 200, sha256 4bd15ca7... = the manifest's), kept in the
+  scratchpad, p.2 rendered at 600 dpi (`pdftoppm -r 600 -f 2 -l 2`). One half-scale overview of lines 2-4 was viewed only to place
+  the crops. C1 = region 1500,1370 to 3300,1860 (cipher rows L2 and L3 with the L3 gloss row between). C2 = region 1600,1840 to
+  4300,2120, scaled to 2400 wide (gloss and cipher row L4, p6-26). Not blind: the gloss values on file were known.
+- `compact-8`: in C1, 2.18 and 3.11 are the same shape (a small 8 with two closed loops). The gloss over 2.18 is the o of "von"
+  ("v" over 2.17, "o" over 2.18, "n" over 2.19). The gloss over 3.11 is the e of "ges". Rule 2: same shape, gloss o confirmed, so
+  **`compact-8` stays unkeyed** (o 1, e 2). This is a real conflict on one shape, not a misread.
+- `nine`: the in-crop l tokens 2.12, 2.15 and 3.7 are a large 9 with a closed head and a short foot that hooks left on the line.
+  In C2, 4.8 (glossed a, the a of "staupitz") has the same form. 4.21 and 4.24 (glossed i, "dreissig") look like a g: the stem
+  runs below the line before it curls left. The cipher row is clipped at the foot of C2 (my crop's lower edge was too high), so the
+  depth of that descender cannot be measured. Rule 1 needed all three L4 tokens to share a feature that the l tokens lack. 4.8 does
+  not share it, so **`nine` stays unkeyed**. Even if 4.21/4.24 were split off, 4.8 (a) would still conflict with l 6 on the same
+  shape. Recorded as an observation, not a split: 4.21/4.24 may be a separate descending-g class (value i). To test this, a look
+  at L4 with the full descender is needed, and 5.x-8.x nine tokens should be checked for the same foot.
+- L3 p10-17 gloss (rule 3), read at the taller height above the cipher row: g e s over p10-12; "ch" (flourished c running into h,
+  under L2's descenders) over p13-14; over p15 (`hash`) a q-shaped letter (bowl with a long straight descender, could be q or an a
+  with a long stem); an 8/δ-shaped d over p16; d over p17 (at the crop edge). **`hash` is not keyed**: the letter over it has two
+  candidates and the word ("gesch?dd r", WVO 98 f.67 "zwolff hundert pferde") is not settled.
+- Net: **no change** to `key_1068.tsv`, `ciphertext_1068.tsv` or any grade. No reconciliation edit was needed, so the shuffle
+  control was not re-run (rule 4 applies to changes only). `python3 siblings/check_1068.py --check` is still current, exit 0:
+  `OK: reconcile_1068.tsv, ciphertext_1068.tsv, key_1068.tsv current` / `OK: reading_1068.txt current`.
+- prior_work.py (`--derive` then `--item-spec`, offline): verdict LOOK, exit 4. Holds were generic only (no unit identity fields,
+  solver/Tomokiyo caches not searched by unit, no prior_editions row). It was not material here: this leaf is a key source whose
+  plaintext is its own period gloss.
+- Next (suggestion, not run): one look at L4 and L5-8 with the lower edge about 80 px lower at 600 dpi, to see whether i-glossed
+  nines have a longer descender than l-glossed ones. A split would key `nine` only if 4.8 also separates, so it is cheap but may not
+  settle the class.
+- Calls: 2 crop looks plus 1 overview by this worker; 0 subagents. Hosts: resources.huygens.knaw.nl 1 request. My take of that host
+  overlapped AVS-153's open take by about a minute (both were single requests); this is logged in ROOM.md.
