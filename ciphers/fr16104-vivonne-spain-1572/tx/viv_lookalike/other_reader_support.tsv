@@ -1,0 +1,65 @@
+page	pass	line	k	block	other_reader_copies
+f192r	A	L06	6	p 4 tz m g tz	2
+f192r	A	L14	5	m p 4 g d	2
+f192r	A	L17	5	o z m g tz	1
+f192r	A	L19	5	m x e l y	1
+f192r	A	L31	4	z m x tz	0
+f192r	A	L36	4	m j m z	1
+f192r	B	L06	6	p 4 tz m g tz	2
+f192r	B	L14	5	m p 4 g d	2
+f192r	B	L15	5	7 # S o m	0
+f192r	B	L16	7	z tz m o o 6 tz	0
+f192r	B	L17	4	z m g tz	2
+f192r	B	L18	6	m g d o o g	1
+f192r	B	L24	5	z d tz @ 6	0
+f192r	B	L27	5	s p : : m	1
+f192r	B	L30	5	tz d a d d	1
+f192r	B	L31	4	r m x tz	0
+f192r	B	L32	6	o o g m L s	0
+f192r	B	L33	6	7 # S s o o	0
+f192r	B	L34	5	to a d p n	1
+f192r	B	L35	4	a l g m	1
+f192v	A	L07	5	tz m j m z	1
+f192v	A	L09	6	m z h m y s	1
+f192v	A	L12	6	n R p m : :	0
+f192v	A	L14	7	y o o z s z g	0
+f192v	A	L19	6	m o o x # g	1
+f192v	A	L20	6	: : d p d tz	0
+f192v	A	L24	5	S m p y tz	0
+f192v	A	L25	6	S o o 6 tz d	0
+f192v	A	L30	6	n m V d d p	1
+f192v	A	L31	5	tz m z m o	1
+f192v	A	L35	5	m a d tz d	1
+f193r	B	L07	4	g m p k	1
+f193r	B	L13	4	d o o x	1
+f193r	B	L28	4	o o z x	1
+f194r	A	L03	5	tz m p n m	0
+f194r	A	L13	4	m x : d	1
+f194r	A	L14	5	: : g d z	0
+f194r	A	L16	4	tz y x k	1
+f194r	B	L02	5	: m 3 7 d	1
+f194r	B	L03	5	tz m p R m	0
+f102v	A	L03	4	o o # S	0
+f102v	A	L05	5	g 3 d p 4	0
+f102v	A	L08	4	d # S p	0
+f102v	A	L09	4	d S o o	0
+f102v	A	L10	5	S o o 6 #	0
+f102v	A	L12	4	m o o g	1
+f102v	A	L13	4	o o # y	0
+f102v	A	L15	5	m k m tz j	1
+f102v	A	L16	4	tz o # S	0
+f102v	A	L17	4	d tz # S	0
+f102v	A	L19	5	2 S tz j m	0
+f102v	A	L20	4	m o o g	1
+f102v	A	L22	4	P c m p	0
+f102v	A	L23	4	p # S :	0
+f102v	A	L23	4	y m o o	2
+f102v	A	L26	5	tz x # g m	1
+f102v	A	L27	4	S y tz m	0
+f102v	A	L28	5	d z S y y	0
+f102v	A	L29	5	y m o o m	1
+f102v	A	L30	5	m : : # @	1
+f102v	A	L32	4	d o o 2	1
+f102v	A	L36	5	m d g d tz	0
+f102v	B	L03	4	o o # s	0
+#summary (group, other reader copies of the block in the same line: 0, 1, 2+) [(('f102v', 0), 15), (('f102v', 1), 7), (('f102v', 2), 1), (('ink63', 0), 15), (('ink63', 1), 20), (('ink63', 2), 5)]

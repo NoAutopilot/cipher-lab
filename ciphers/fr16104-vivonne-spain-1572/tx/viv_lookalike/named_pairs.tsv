@@ -1,0 +1,17 @@
+# part A: two-reader splits on the named pairs per ink-63 page (before dedup | after dedup)
+page	r/z	2/z	c/e	6/b
+f190r	24|24	1|1	32|32	1|1
+f190v	0|0	24|24	0|0	1|1
+f191r	2|2	13|13	34|34	2|2
+f191v	1|1	5|5	0|0	0|0
+f192r	9|8	1|1	1|1	19|19
+f192v	0|0	0|0	1|1	2|2
+f193r	0|0	15|15	2|2	2|2
+f193v	0|0	25|25	1|1	4|4
+f194r	0|0	3|3	0|0	1|1
+# part B: truth leaves (f201r, f201v, f211r): splits on a named pair at a scored truth position; which label the truth accepts
+pair	A_only	B_only	both	neither	by_label_truth_accepts
+r/z	0	0	0	0	
+2/z	0	0	0	0	
+c/e	0	0	0	0	
+6/b	1	0	0	1	6:1

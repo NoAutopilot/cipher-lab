@@ -1,0 +1,23 @@
+page	pass	file	lines	tokens	blocks	lines_hit
+f102r	A	f102r_passA.tsv	37	1838	0	
+f102r	B	f102r_passB.tsv	37	1807	0	
+f102v	A	f102v_passA.tsv	37	1826	22	L03,L05,L08,L09,L10,L12,L13,L15,L16,L17,L19,L20,L22,L23,L26,L27,L28,L29,L30,L32,L36
+f102v	B	f102v_passB.tsv	37	1730	1	L03
+f103r	A	f103r_passA.tsv	37	1972	0	
+f103r	B	f103r_passB.tsv	37	2002	0	
+f164r	A	f164r_passA_c.tsv	29	1441	0	
+f164r	B	f164r_passB_c.tsv	29	1395	0	
+f164v	A	f164v_passA_c.tsv	30	1359	0	
+f164v	B	f164v_passB_c.tsv	30	1353	8	L06,L08,L09,L13,L17,L18,L25,L27
+f170r	A	f170r_passA_c.tsv	22	1058	0	
+f170r	B	f170r_passB_c.tsv	22	1042	0	
+f170v	A	f170v_passA_c.tsv	29	1234	3	L20,L25,L26
+f170v	B	f170v_passB_c.tsv	29	1235	0	
+f171r	A	f171r_passA_c.tsv	30	1390	0	
+f171r	B	f171r_passB_c.tsv	30	1390	0	
+f171v	A	f171v_passA_c.tsv	21	923	1	L02
+f171v	B	f171v_passB_c.tsv	21	935	1	L04
+f173r	A	f173r_passA_c.tsv	24	1055	2	L23,L25
+f173r	B	f173r_passB_c.tsv	24	1081	2	L15,L18
+f173v	A	f173v_passA_c.tsv	20	921	0	
+f173v	B	f173v_passB_c.tsv	20	847	0	

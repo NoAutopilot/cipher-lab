@@ -1,0 +1,41 @@
+page	pass	line	k	junction	block
+f192r	A	L06	6	31	p 4 tz m g tz
+f192r	A	L14	5	29	m p 4 g d
+f192r	A	L17	5	29	o z m g tz
+f192r	A	L19	5	28	m x e l y
+f192r	A	L31	4	29	z m x tz
+f192r	A	L36	4	29	m j m z
+f192r	B	L06	6	31	p 4 tz m g tz
+f192r	B	L14	5	29	m p 4 g d
+f192r	B	L15	5	30	7 # S o m
+f192r	B	L16	7	30	z tz m o o 6 tz
+f192r	B	L17	4	28	z m g tz
+f192r	B	L18	6	28	m g d o o g
+f192r	B	L24	5	28	z d tz @ 6
+f192r	B	L27	5	30	s p : : m
+f192r	B	L30	5	28	tz d a d d
+f192r	B	L31	4	29	r m x tz
+f192r	B	L32	6	31	o o g m L s
+f192r	B	L33	6	30	7 # S s o o
+f192r	B	L34	5	28	to a d p n
+f192r	B	L35	4	27	a l g m
+f192v	A	L07	5	30	tz m j m z
+f192v	A	L09	6	33	m z h m y s
+f192v	A	L12	6	31	n R p m : :
+f192v	A	L14	7	33	y o o z s z g
+f192v	A	L19	6	29	m o o x # g
+f192v	A	L20	6	27	: : d p d tz
+f192v	A	L24	5	31	S m p y tz
+f192v	A	L25	6	32	S o o 6 tz d
+f192v	A	L30	6	29	n m V d d p
+f192v	A	L31	5	29	tz m z m o
+f192v	A	L35	5	32	m a d tz d
+f193r	B	L07	4	24	g m p k
+f193r	B	L13	4	25	d o o x
+f193r	B	L28	4	27	o o z x
+f194r	A	L03	5	27	tz m p n m
+f194r	A	L13	4	19	m x : d
+f194r	A	L14	5	18	: : g d z
+f194r	A	L16	4	36	tz y x k
+f194r	B	L02	5	29	: m 3 7 d
+f194r	B	L03	5	28	tz m p R m
