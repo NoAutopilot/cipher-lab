@@ -72,3 +72,30 @@ correspondence editions the folder names. Record hits / no hits in NOTES.md; sta
 Remaining gaps: "the later liassen NA 1.01.02 inv. 6020-6024 and the 6019 stride-1 fill after 565 ... next: a stride-3 screen of inv. 6020
 (~$4)". Same method as the 6019 screen (OBRED-552/-549 sections): low-res stride 3, flag any cipher, key leaf or Brederode hand; one Opus read
 per flagged page. Record every scan viewed and where nothing was found. gaps_check.
+
+## Wave 1 result (11:3x UTC): OBRED-CTRY 3.18 N (synthetic control below gate, 20 leads stay M), OBRED-NA 2.60 N (9459 odd scans, 4562 no Oct 1619
+entry), HAR-39V 3.18 D (word 3 = 10 signs b-u-t-i-t-y-?-p-e-d, M; 1.27x cap), SUR-2046A 2.61 N (control 1/5, non-test), TH-VERB 1.14 D (L81 filed).
+OBRED-6020 above is folded into OBRED-NA2 below (one session per NA host).
+
+## Wave 2b (11:4x UTC 15 Oct)
+
+### OBRED-NA2 (Opus, cap 5, box 90 min, service.archief.nl / nationaalarchief.nl <= 40, ROOM take/release): oldenbarnevelt-brederode-1605 9459 even scans, 9450-9458/9460, inv. 6020 stride 3
+OBRED-NA's next (a6620c025, na_obredna_scans.tsv): 9459 even scans (~1), then 9450-9458/9460 openings (~2); then, if >= 35% cap left, the
+inv. 6020 stride-3 screen (OBRED-6020 text above). Same method as OBRED-NA: low-res screen, one Opus read per flagged page; log every scan in
+na_obredna_scans.tsv. Stop before a unit that crosses 80% of cap or box. gaps_check.
+
+### OBRED-MONO (Opus, cap 3, box 60 min, disk only): oldenbarnevelt-brederode-1605 joint band-monotonicity check
+OBRED-CTRY's next (1832eb8d2): "joint band-monotonicity check (~2)". PREREG first, with a control that can fail differently from the target
+(rule 3: the control must vary on the axis the statistic measures) and a synthetic known-answer case at the real error level that must pass
+before any target number counts. Grade M unless licensed; --check script; gaps_check.
+
+### SUR-POOL (Opus, cap 3, box 60 min, disk only): na-suriname-map-1781 [d-hook] = e pooled over 2046 + 2077
+SUR-2046A's next (21c7c612d): the same anchor-test shape pooled over 2046 + 2077 (15 [d-hook]). This is the second attempt of the instrument:
+PREREG first with the control gate unchanged; if the control gate fails again, stop, log the instrument [retired] for [d-hook] under rule 3's
+third-attempt clause read conservatively (two control failures), and do not score the target. Key edits only if licensed, with decode_key --check.
+gaps_check.
+
+### HAR-39V2 (Opus, cap 3.5, box 60 min, de-crypt.org one browser login, ROOM take/release): harley-287-1587 f.39v word 3 second blind reader + R8478/R8480
+HAR-39V's next (d5d3c580a): a second reader blind to Bourdeau's strings and to HAR-39V's reading on the same crop (control words included,
+shuffled order), then view R8478 and R8480 (neighbouring Needham/Walsingham records) for the same word or sign group. PREREG first. Word stays
+M unless both readers agree and the controls pass. gaps_check.
