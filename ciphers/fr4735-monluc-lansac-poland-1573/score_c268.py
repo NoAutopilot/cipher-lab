@@ -95,23 +95,24 @@ def main():
         lines.append(f"{lab}\t{''.join(key.get(t, '_') for t in ta if not t.startswith('W:'))}")
     # MONL-C268B (14 Oct 2026): c268 L06-L10 from two blind passes (passes/c268b_passA.tsv, c268b_passB.tsv) reconciled from
     # the native line crops (passes/c268b_reconciled.tsv; conf H where both passes agree and the crop holds it, M otherwise).
-    rec = HERE / 'passes' / 'c268b_reconciled.tsv'
-    if rec.exists():
-        bl = {}
-        for ln in rec.read_text().splitlines()[1:]:
-            f = ln.split('\t')
-            bl.setdefault(f[0], []).append(f)
-        for lab in sorted(bl):
-            for f in bl[lab]:
-                agree += f[3] == 'H'
-                vb = MONL_VB.get((f[0], int(f[1])))
-                if vb:
-                    assert f[2] == vb[0], (f[0], f[1], f[2])
-                    f[2], f[3] = vb[1], 'M'
-                rows.append(f"{f[0]}\t{f[1]}\t{f[2]}\t{f[3]}\t{f[4]}\t{'monl-vb' if vb else ('c268b-recon' if f[2] != f[4] else '')}\n")
-            ta = [f[2] for f in bl[lab]]
-            toks += [t for t in ta if not t.startswith('W:')]
-            lines.append(f"{lab}\t{''.join(key.get(t, '_') for t in ta if not t.startswith('W:'))}")
+    # MONL-L11 (15 Oct 2026): c268 L11-L15 the same way (passes/c268c_reconciled.tsv, written by passes/c268c_reconcile.py).
+    for rec, rtag in ((HERE / 'passes' / 'c268b_reconciled.tsv', 'c268b-recon'), (HERE / 'passes' / 'c268c_reconciled.tsv', 'c268c-recon')):
+      if rec.exists():
+          bl = {}
+          for ln in rec.read_text().splitlines()[1:]:
+              f = ln.split('\t')
+              bl.setdefault(f[0], []).append(f)
+          for lab in sorted(bl):
+              for f in bl[lab]:
+                  agree += f[3] == 'H'
+                  vb = MONL_VB.get((f[0], int(f[1])))
+                  if vb:
+                      assert f[2] == vb[0], (f[0], f[1], f[2])
+                      f[2], f[3] = vb[1], 'M'
+                  rows.append(f"{f[0]}\t{f[1]}\t{f[2]}\t{f[3]}\t{f[4]}\t{'monl-vb' if vb else (rtag if f[2] != f[4] else '')}\n")
+              ta = [f[2] for f in bl[lab]]
+              toks += [t for t in ta if not t.startswith('W:')]
+              lines.append(f"{lab}\t{''.join(key.get(t, '_') for t in ta if not t.startswith('W:'))}")
     dec = norm(''.join(key.get(t, '') for t in toks))
     j = judge(dec)
     rng = random.Random(a.seed)
@@ -139,7 +140,7 @@ def main():
                    c270_shuffle_mean=round(sum(ctl) / len(ctl) / len(dec), 4), c270_shuffle_p95=round(ctl[189] / len(dec), 4),
                    c270_shuffle_max=round(ctl[-1] / len(dec), 4))
     outs = {HERE / 'ciphertext_c268.tsv': 'line\tpos\tsign\tconf\tpass_a\trelabel\n' + ''.join(rows),
-            HERE / 'reading_c268.txt': '# c268 (f.138) cipher lines 1-10 (L06-L10 MONL-C268B), Tomokiyo Monluc Cipher 1 table, pass A base, 10 C-curl tokens relabelled K38 (MONLUC-RELABEL), 4 K12->K04 (MONL-SORT less 4 MONL-EYE reverts) and 4 K34->K53 (MONL-SORT); _ = unkeyed sign;'
+            HERE / 'reading_c268.txt': '# c268 (f.138) cipher lines 1-15 (L06-L10 MONL-C268B, L11-L15 MONL-L11), Tomokiyo Monluc Cipher 1 table, pass A base, 10 C-curl tokens relabelled K38 (MONLUC-RELABEL), 4 K12->K04 (MONL-SORT less 4 MONL-EYE reverts) and 4 K34->K53 (MONL-SORT); _ = unkeyed sign;'
                                        ' W: words dropped. Not graded: see NOTES.md.\n' + '\n'.join(lines) + '\n',
             HERE / 'results_c268.json': json.dumps(res, indent=1, default=str) + '\n'}
     if a.check:

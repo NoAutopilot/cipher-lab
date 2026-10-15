@@ -1,26 +1,26 @@
 {
  "relabelled": 18,
- "tokens": 344,
- "signs_pass_a": 347,
- "pass_agree_h": 272,
- "decoded_letters": 333,
- "decoded": "lesperuiteursdequiniespargnentlhoneurlaraelareputationnilaonpienedupoilonfaitparlerleroidedalnelarquinupenpninlaisetdoneataenteadrequilesteeoiilatirentdelainexlupionqqilestudposiblequelodpeigdeurseutuedirpnrdeuaaqeopiepanpeauoippatisfaitearlapeodneoraipodcppfautilqueieifesequeemopednoupaautadtdopedempehemedtquafaitelupquieptnduedua",
+ "tokens": 522,
+ "signs_pass_a": 525,
+ "pass_agree_h": 421,
+ "decoded_letters": 504,
+ "decoded": "lesperuiteursdequiniespargnentlhoneurlaraelareputationnilaonpienedupoilonfaitparlerleroidedalnelarquinupenpninlaisetdoneataenteadrequilesteeoiilatirentdelainexlupionqqilestudposiblequelodpeigdeurseutuedirpnrdeuaaqeopiepanpeauoippatisfaitearlapeodneoraipodcppfautilqueieifesequeemopednoupaautadtdopedempehemedtquafaitelupquieptndueduapdrisnrqqimaddequepiodneleuetlueslirequelonpreigneqefilieqqeeulopeunnpqemailspoleuudesaisepseuueleeuquodegnrdedeprnndrelsfraireduropdsfradueenleplesterlesepruturqnepourune",
  "judge": {
   "checks": {
    "language": {
     "pass": false,
-    "score": -1.413,
-    "null_p99": -1.821,
-    "real_p05": -0.887,
-    "real_median": -0.788,
+    "score": -1.437,
+    "null_p99": -1.857,
+    "real_p05": -0.89,
+    "real_median": -0.793,
     "mode": "both",
-    "N": 333
+    "N": 504
    },
    "words": {
     "pass": true,
-    "cover": 0.793,
+    "cover": 0.772,
     "min": 0.5,
-    "real_text_median_cover": 0.946
+    "real_text_median_cover": 0.942
    }
   },
   "pass": false,
@@ -28,11 +28,11 @@
  },
  "shuffle_draws": 100,
  "shuffle_judge_pass": 0,
- "shuffle_language_scores_max": -1.792,
+ "shuffle_language_scores_max": -1.889,
  "c270_letters": 778,
- "c270_matched": 117,
- "c270_rate": 0.3514,
- "c270_shuffle_mean": 0.3423,
- "c270_shuffle_p95": 0.3754,
- "c270_shuffle_max": 0.3844
+ "c270_matched": 187,
+ "c270_rate": 0.371,
+ "c270_shuffle_mean": 0.34,
+ "c270_shuffle_p95": 0.3651,
+ "c270_shuffle_max": 0.3909
 }

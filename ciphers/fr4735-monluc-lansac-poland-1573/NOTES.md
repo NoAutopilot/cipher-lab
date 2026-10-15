@@ -1150,3 +1150,82 @@ Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines
 - [x] image-check: c268 L06-L10 native crops cut and reconciled by eye (MONL-C268B); the 4 doubtful K04 relabels re-cut (MONL-EYE); L06-L10 lead cells sorted blind twice (MONL-VB)
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 5 internal gaps; cheapest next: c268 L11-L15 two blind passes + reconciliation, then align_c268.py, ~$3
+
+## MONL-L11: c268 L11-L15 transcribed (two blind passes + reconciliation) and aligned with L01-L10 against ff.140r-141r (15 Oct 2026, account 1, Opus, for LANE DEFAULT-A1-0447-15)
+
+Brief: .claude/briefs/runs/2026-10-15-acct1-default-0447-jobs.md, MONL-L11 (MONL-VB's Verdict). Read MONL-SORT, MONL-ALIGN, MONL-C268B and MONL-VB
+first. No print or edition search in this job.
+
+**Host (deviation from "disk only", logged in ROOM before the requests).** The c268 rows below L10 had never been fetched and are not on disk
+(only untracked regions exist, none in this container), so: openapi.bnf.fr 2 requests, both HTTP 200, with take/release lines. Region
+600,2600,3100,820 was discarded (the deskew left L10 cut at its top edge, so its bands could not be tied to MONL-C268B's numbering). Kept:
+600,2060,3100,1400. Crop step, before any subagent call:
+`python3 ../../tools/iiif_lines.py --image images/scratch268c/src_c268_600_2060_3100_1400.jpg --out images/scratch268c/crops --prefix c268c --deskew-region --mask-neighbours --debug --max-width 1700 --overlap 150`
+-> "rotated -3.25 deg ... 12 lines, 12 bands x 2 segments; pitch 107", centres 110 217 323 425 529 632 743 853 965 1066 1174 1304. **Line
+identity:** the same tool on the top 660 px of this region (= MONL-C268B's region) gives centres 109 217 322 426 528 630, i.e. bands 1-5 =
+c268 L06-L10 exactly as MONL-C268B cut them; band 1 starts with the signs of the reconciled L06 (K26 K37 K38 K19 K04 ...). So bands 6-10 = c268
+L11-L15 (copied as images/scratch268c/l11/c268c_L11-L15_s{1,2}.jpg; debug overlay checked). Untracked (self-ignoring .gitignore); manifest key
+`monll11`; `regen_monll11.sh` re-derives region and crops.
+
+**Transcription (units: 10 blind Sonnet calls, one line per call per pass, 2 crops each; + 1 reconciliation by this worker).** Prompt
+passes/c268c_prompt.md (MONL-C268B's prompt, crop paths changed: ids-only key sheet, no value, reading or clear text). Answers
+passes/c268c_pass{A,B}_raw.txt, token files c268c_pass{A,B}.tsv (`passes/c268c_draft.py`). Pass agreement (sequence match): **150/178 = 0.843**
+(L11 31/36, L12 34/37, L13 31/35, L14 21/33, L15 33/38); MONL-C268B's L06-L10 pair agreed 0.848. Agreement, not accuracy.
+**Reconciliation** (`python3 passes/c268c_reconcile.py` -> passes/c268c_reconciled.tsv, `how` column per token). I made the eye decisions on
+the crops **before** I opened the clear text facing these lines. I was blind to the clear text but not to the key-sheet ids or the folder's
+conventions: K04 straight stem vs K12 curving descender (MONL-EYE), stem with diamond foot = K36 (MONL-C268B). Result: 178 signs, **149 conf H**
+(both passes), **29 conf M**. Of the 29, 21 are eye decisions and 8 are A/B splits the crop does not settle (pass A kept, the folder's base pass).
+The L14 split is systematic: pass B files every diamond-foot stem as K14, and I kept K36 at all six. L11:12-15 is a misaligned four-sign span
+(A K10 K12 K04 K04, B K11 K01 K04 K12), set by eye to K11 K01 K04 K04. I did not see L11:14 clearly; there I kept both passes' K04.
+
+**Decode and alignment (rule 7).** `score_c268.py` now appends passes/c268c_reconciled.tsv after c268b_reconciled.tsv (relabel tag `c268c-recon`
+where the eye changed pass A). `align_c268.py` is unchanged. L11-L15 decode (reading_c268.txt) "pdrisnr_qqymaddequepiodneleuetluesli /
+requelonpreigneqefily_eqqeeulopeunnp / qemailspoleuudesai_sepseuueleeuquod / _egnrdedeprnndrelsf__raireduropds /
+fradueenleplesterlesep_ruturqnepourune". Confirm share of keyed tokens; shuffled-clear control 200 draws, seed 140; f.139 (c270) other-letter
+control:
+| stream | keyed | confirm | share | contradict | extra | shuffled mean | p95 | max | >= real | f.139 | clear span |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| **L11-L15 alone** (`--lines`) | 171 | 102 | **0.596** | 52 | 17 | 0.377 | 0.415 | 0.427 | 0/200 | 0.345 | f.140r L13-L17 |
+| **L01-L15** (committed run) | 504 | 357 | **0.708** | 108 | 39 | 0.366 | 0.387 | 0.399 | 0/200 | 0.365 | f.140r L07-L17 |
+For comparison: L01-L10 was 255/333 = 0.766 (MONL-VB); L06-L10 alone was 0.677. The band lands where MONL-C268B predicted, running on from
+f.140r L13 "... qui est aduenu a Paris. Le moscouite commande que si on ne le veult eslire que lon prenne le filz de lempereur Et [?] ala il
+promet vne paix perpetuelle ... En mesme forme escript le turq po[ur] ...". Most of those clear lines (L11-L17) are MONL-ALIGN's rough A/B
+pick, not an eye reading; the L11-L15 contradictions sit partly on that.
+- **Name/code lead: the clear-looking group "adhuc" (L11:6-10).** The five signs K66 K49 ?h_bar K35 K15 look like the Latin letters "adhuc".
+  Both passes and I transcribed them as sign ids, not W:adhuc; I noticed the letter look before opening the clear text but kept ids. In the
+  alignment the group faces "le moscouite": K66/K49 face "le" (both counted contradictions) and ?h_bar takes "moscouite". This is the shape of
+  MONL-ALIGN's W:mihil + W:Cur = "lempereur". The group is graded U/M here. **Not applied:** rewriting it as W:adhuc now would be a transcription
+  change made after seeing the clear text. Next: a pre-registered W:adhuc re-run with the same control (gap below).
+- **?double_slash at L15:23** takes "cript" ("escript", M; chunk set by the alignment alone). ?x[epsilon] L13:19 takes "x". No FILLS entry was
+  added: these stay ungraded U.
+- **Recurring contradictions (leads, not key edits):** K04 (table d) faces n 4 more times (L11:14, L11:23, L13:14, L15:4; MONL-C268B/MONL-VB's
+  pattern continues); K14 (table p) faces s/r 7 times (L11:20, L13:8, L13:22, L15:11, L15:22, L12:36 e); **K37 (table s) faces p 4 times, all
+  conf H** (L13:7, 16, 20, 23), a new pattern; **K62 (table l) faces m 4 times** (L13:10 and L15:12 conf H; L15:9 and L15:18 are my eye
+  calls K11 -> K62, and K11 = m, so at those two pass A's K11 is what the clear text supports: the eye call is not reverted here because it was
+  made blind and the clear text is not the transcription's judge, but it is the first thing to re-check).
+**Grades (decode_key.py, job c268):** c268 L01-L15, 525 tokens: **C 270 / M 242 / U 13** (L01-L10 unchanged C 184 / M 157 / U 6; L11-L15 C 86 /
+M 85 / U 7). `python3 ../../tools/decode_key.py . --check` "reading up to date" (exit 0); `python3 align_c268.py --check` "align_c268: OK" (exit 0);
+`python3 score_c268.py --check` SCORECHECK. Judge (score_c268.py, fr16): FAIL at N 504 (-1.437 vs real_p05 -0.89; words cover 0.772 PASS), shuffled
+decodes 0/100 PASS, best -1.889. As before, the judge is a non-test for this key (MONLUC-KEY's positive control) and the alignment is the evidence.
+key.tsv unchanged; c172 unchanged (C 83 / M 64 / U 3).
+Requests: openapi.bnf.fr 2, both 200. Subagents: 10 Sonnet (one line each). Cost not visible to this session.
+
+## Remaining gaps (MONL-L11, 15 Oct 2026)
+Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines 1-15 (525 tokens) C 270 / M 242 / U 13 against the ff.140r-141r clear text (align confirm 357/504 = 0.708, L11-L15 alone 102/171 = 0.596, vs shuffled-clear max 0.399 / 0.427).
+- the "adhuc" group at c268 L11:6-10 facing "le moscouite" - blocker: not-attempted; found in this job; next: a pre-registered re-run with L11:6-10 written W:adhuc (W:mihil precedent), FILLS entry only if the chunk is the whole clear word, shuffled-clear control re-run, ~$0.5
+- K62-for-m (L15:9, L15:18 eye calls against pass A's K11; L13:10, L15:12), K37-for-p (L13:7/16/20/23) and K04-for-n / K14-for-s contradictions on L11-L15 - blocker: not-attempted; found in this job; next: a value-blind sort of the K11|K62, K37 and K04|K12 tiles of c268 L11-L15 (MONL-VB's build/reconcile scripts on the new band), then align_c268.py --check, ~$1.5
+- rest of c268 (L16 to the end, about 500 signs) and c264 against the ff.140r-141r clear text - blocker: not-attempted; outside this job's brief; next: two blind cipher passes of c268 L16-L20 plus reconciliation (regen_monll11.sh region moved down ~540 px), then align_c268.py, ~$3 per 5 lines
+- a clean clear text of ff.140r-141r away from L06-L10 - blocker: not-attempted; f.140r L11-L17 (facing c268 L06-L15) are rough A/B picks with [?] words, which caps the confirm share of the later bands; next: an eye reconciliation of f.140r L11-L20 and L01-L07 against the line crops, ~$1 per page
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py); the c268 alignment supplies known plaintext instead
+- print check of the clear letter in Google Books (13 of the 14 phrases.txt lines) and the editions by identifier (Noailles vols I-III, Lettres de Catherine de Medicis) - blocker: not-attempted; IA full text and OpenAlex done, no hits on all 14 (MONL-PC); Google Books 13 of 14 unsearched (503, MONL-PC, MONL-PC2); next: `tools/print_check.py ... --only gbooks` when googleapis answers, ~$1
+- ff.211-223, f.87 margin, ff.50/56/60/80, items 17/18/112-120 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONL-L11, 15 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [x] clear-pages: ff.140r-141r transcribed and shown to be the clear text of c268 L01-L15 (MONL-ALIGN, MONL-C268B, MONL-L11)
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell and checked against known plaintext on c268 L01-L15
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2; the clear letter phrase-searched in IA full text and OpenAlex, no hits (MONL-PC); Google Books for it pending (gap above)
+- [x] key-rebuild: --try rejects K12=d and K34=y (MONL-K12); blind sorts on L01-L05 (MONL-SORT) and L06-L10 (MONL-VB); L11-L15 recurring contradictions and the "adhuc" group logged as leads (gaps above)
+- [x] image-check: c268 L11-L15 native crops cut and reconciled by eye (MONL-L11); L06-L10 likewise (MONL-C268B)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 6 internal gaps; cheapest next: the pre-registered W:adhuc re-run (~$0.5), then a value-blind sort of the L11-L15 K11|K62, K37, K04|K12 tiles (~$1.5), then c268 L16-L20
