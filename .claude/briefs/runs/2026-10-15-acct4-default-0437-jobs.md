@@ -121,3 +121,23 @@ COL26-1181's named next step (NOTES.md, its section): a length-matched score gat
 must accept >= 4 of the 5 true two-letter values and reject >= 90% of planted false ones (PREREG pushed before scoring); only if it passes, score 11=re
 and 81=me. If the gate fails, log "untested-by-this-tool" for this hypothesis in HYPOTHESES.md (rule 3 third-attempt clause: COL26-KEY, COL26-1181,
 this) and stop. Grades only in key_f23_c50rev.tsv.
+
+## Wave 4 (06:0x UTC 15 Oct; last wave)
+Wave 3 results (ledgered + archived, 12.64): SUR-2061 3.33 D (den Heijer 2012 p.362 prints a Dutch gloss of the whole 2061 legend; 1 MATCH "garde"),
+LVN-L1 4.28 D (4611 p3_L00 read, C 931->948), BAL-C280 3.12 N, COL26-LM 1.91 N (third instrument, retired). Lane ~46.5 of 60 at 05:59.
+
+### VER-LVN (Opus, cap 4, box 60 min, resources.huygens.knaw.nl <= 2 or disk): lodewijk-van-nassau-1573-74 verifier -- AUDIT.md propagation + eye rulings
+You are a verifier (CLAUDE.md "Verifier brief (template)" steps 3a-5 and rule 10's "reading revised after AUDIT.md" paragraph); you are not any of
+the solver sessions LVN-3R, LVN-P2, LVN-4611, LVN-PIN, LVN-L1. Do not decode anything new. (1) Eye rulings, one Opus look each on a crop beside the
+hand's own exemplars: 4610 p2_L28/11 (H 81 vs the 6 of 61; LVN-4611 says the image contradicts H 81) and 4611 p3_L00/11, /12, /14 (LVN-L1's flags).
+A ruling that changes a grade goes through the folder's own settle/exceptions path with --check after; otherwise write the ruling only.
+(2) Carry every reading change made 15 Oct (4610 p1/p2, 4611 p1/p3/p3_L00, 4612 three S->M, the frozen LM corpus) into AUDIT.md: counts per letter
+(rule 4), depth fields (rule 4a, tools/depth_check.py), and any SECOND-OPINIONS-QUEUE.tsv row filed for this target (2 rows mention it) -- the
+safe sentence and the queued prompt must match the current reading. Do not change the N-class unless the revision itself forces it. gaps_check;
+file_shrink_guard on every file touched.
+
+### VER-SUR (Opus, cap 1.5, box 30 min, no network): na-suriname-map-1781 AUDIT.md prior-print citation for den Heijer 2012 p.362
+Verifier, not SUR-2061's session. SUR-2061 (NOTES.md, its section; 9bfd669af) read den Heijer 2012 p.362: the essay prints a modern Dutch gloss of
+the whole 2061 legend (No.1-6, a-g). AUDIT.md item 2 is N0. Add p.362 to item 2's prior-plaintext evidence (earliest citation, what it prints),
+check that the safe sentence still holds, and correct any file sentence that now over-claims (grep NOTES.md, status.json, NEAR.md for the 2061
+legend). No reading change, no key edit; if a SECOND-OPINIONS-QUEUE.tsv row exists for this item, carry the citation into it.
