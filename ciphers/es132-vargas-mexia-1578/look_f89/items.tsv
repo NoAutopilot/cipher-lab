@@ -1,0 +1,54 @@
+# ES132-F89 look items (built by look_f89/build.py; kind was never shown to the look)
+id	kind	f89	x	P	dup	act	A_idx	A_before	A_after	B_idx	B_before	B_after
+I01	cand	f90r:L12:12	115?	24ρ	f94r:L18:5	propose-base	12	y 7ρ@n	23. 6.@s	5	7ρ@n 24+@n	23. 6.@s
+I02	decoy	f89r:L13:7	13@s	13@m	f93r:L16:6	differ-mark	7	12+ 25.	6. 13@n	6	14 25.	6. 13@n
+I03	cand	f89r:L06:15	20?	10	f93r:L09:11	propose-base	15	6σ 28	23σ 16+	11	6σ y	231 16+
+I04	cand	f89r:L08:7	4@s?	3	f93r:L11:8	propose-base	7	110 4@s	24. 22σ	8	0 17.@s	24. 22σ
+I05	cand	f89v:L25:3	8?	6	f94r:L04:2	propose-base	3	{qua} 6.	6.@l 6σ	2	6.	6. 6σ
+I06	decoy	f90r:L27:18	15+@2	15+@s	f94v:L09:6	differ-mark	18	10 6.	/	6	10 6.	/
+I07	decoy	f89r:L22:16	3	21+	f93v:L02:17	differ-base	16	16. 2⊣	10 12+	17	3 16.	{a} 12+
+I08	cand	f89v:L15:1	23ρ?	23+	f93v:L18:16	propose-vowel	1		28 6+	16	24σ@r 6.	28
+I09	cand	f89v:L20:17	30_.?	10@r	f93v:L24:13	propose-base	17	3.@2 4@l		13	3 35.	4@n 3
+I10	cand	f89r:L19:19	23σ?	23.@n	f93r:L22:15	propose-vowel	19	15+ 35.	4+	15	15+ 35.	7σ 10
+I11	cand	f90r:L27:11	17ρ@m?	17ρ@m	f94v:L08:18	confirm	11	4@l 24.	y 231@s	18	4@l 24.	y
+I12	cand	f89r:L06:16	23σ?	231	f93r:L09:12	propose-base	16	28 20	16+ 32.	12	y 10	16+ 32.
+I13	cand	f90r:L10:3	11⊣@n?	14+@n	f94r:L15:5	propose-base	3	21. 23.	4@l 100	5	21. 23.	4@l 100
+I14	cand	f89v:L04:19	20?	15ρ@s	f93v:L08:2	propose-base	19	4@m 6.		2	10	24ρ 21.
+I15	decoy	f89v:L17:9	23σ	23+	f93v:L21:8	differ-vowel	9	25+ 4@n	23. 11σ	8	25+ 4@n	23. 141
+I16	decoy	f89r:L10:12	24σ	21σ	f93r:L13:11	differ-base	12	21. 23σ	23σ 3	11	21. 23σ	23σ 4
+I17	cand	f89v:L07:12	24.@m?	24.@r	f93v:L10:14	propose-mark	12	16. 17.@s	16ρ 16ρ	14	16. 17.@s	16ρ@s 36+
+I18	cand	f90r:L08:4	15.@s?	15.	f94r:L13:7	propose-mark	4	21. 25ρ	12+ 30+	7	21. 25ρ@s	12+ 30+
+I19	cand	f89v:L04:17	4@m?	4+	f93v:L07:19	propose-vowel	17	18 10	6. 20	19	0 10	6. 10
+I20	decoy	f90r:L11:3	11+	14+	f94r:L16:11	differ-base	3	13 3	22. 6.	11	13+ 	22. 6.@s
+I21	decoy	f91r:L05:20	10@r	10@m	f95r:L13:16	differ-mark	20	6_. 8.	17.	16	6. 8.	17. 28
+I22	decoy	f91r:L05:17	6.	6.@l	f95r:L13:13	differ-mark	17	18 17	6_. 8.	13	18 17.	6. 8.
+I23	decoy	f91r:L07:9	15ρ	M	f95r:L15:3	differ-base	9	6. {Ram}	23. 23σ	3	6. Dρ	a x
+I24	cand	f91r:L07:12	11+?	dρ	f95r:L15:6	propose-base	12	23. 23σ	3 17ρ	6	a x	Sρ 1578.
+I25	decoy	f89v:L11:12	20ρ	20+	f93v:L14:11	differ-vowel	12	16. 35ρ	23ρ 15ρ	11	16. 35ρ	23ρ 15ρ
+I26	cand	f90r:L11:18	22.@s?	22.@s	f94r:L17:7	confirm	18	25ρ 21.	20ρ@n	7	25ρ 21.	20ρ@n 6.@r
+I27	cand	f89r:L16:3	11σ?	11+@n	f93r:L18:19	propose-vowel	3	6. 10@l	35ρ 25.	19	6. 16	
+I28	cand	f90r:L02:19	10.?	10	f94r:L07:16	propose-vowel	19	3 23.@2		16	4 23.@n	42 {a}
+I29	cand	f89r:L08:3	22+@m?	22+@r	f93r:L10:19	propose-mark	3	10 20+	4@n 110	19	10 20+	
+I30	cand	f89v:L21:11	{quam}?	4	f93v:L25:7	propose-base	11	24@s 6.	79+ 11+	7	y 8+	17+ 14+
+I31	cand	f90r:L25:2	33.@s?	33.	f94v:L06:13	propose-mark	2	18	7σ 10	13	15. 0	7610 28ρ
+I32	cand	f89r:L21:3	23.@2?	23.@2	f93v:L01:3	confirm	3	21. 6+	17+ 6+	3	21. 6+	17+ 6+
+I33	cand	f90r:L15:2	22.@s?	22.@s	f94r:L21:2	confirm	2	20+	7σ 6ρ	2	20+	7σ 6ρ
+I34	cand	f89v:L02:16	65?	16.	f93v:L05:15	propose-base	16	27ρ 26.	18 25@n	15	6σ 27ρ	660 25@n
+I35	cand	f89v:L15:18	20?	20.	f93v:L19:17	propose-vowel	18	21. 15.@s		17	21. 15.@s	23+
+I36	cand	f89v:L03:18	6?	15.	f93v:L07:2	propose-base	18	22.@s 20ρ@n		2	6σ	4@n 7ρ@n
+I37	cand	f89v:L11:5	15?	25	f93v:L14:4	propose-base	5	10 {a}	6@l 20+	4	{a} 10	6. 20+
+I38	cand	f89v:L25:16	15ρ@s?	15ρ	f94r:L04:18	propose-mark	16	{rum} 21.		18	0 21.	{bel}@s
+I39	cand	f89v:L10:19	{V}?	{a}	f93v:L13:16	propose-base	19	6ρ 10		16	15. 6+	25σ
+I40	cand	f89r:L08:5	110?	0	f93r:L11:6	propose-base	5	22+@m 4@n	4@s 4@s	6	36+ 7σ	17.@s 3
+I41	decoy	f90r:L11:1	13	13+	f94r:L16:9	differ-vowel	1		3 11+	9	4 22.	 14+
+I42	cand	f89v:L14:3	{Xom}?	{Xom}@s	f93v:L18:1	propose-base	3	y 15ρ	y {Ra}	1		y 22@s
+I43	cand	f89r:L09:18	27+@r?	27+@n	f93r:L12:17	propose-mark	18	21. 6.	4.	17	21. 6.	6.
+I44	cand	f89r:L06:4	74+?	28+	f93r:L08:18	propose-base	4	131 y	y 15ρ	18	23+ 8ρ	
+I45	cand	f89r:L03:1	{Sim}?	24.	f93r:L05:12	propose-base	1		15+@s 21.	12	6+ 16.@n	15+ 21.
+I46	cand	f89v:L02:3	23σ@s?	23	f93v:L05:2	propose-vowel	3	{Lum} 4@n	24+@n 7σ	2	4@n	16@s 24+@n
+I47	cand	f89r:L15:3	13σ@s?	13+@s	f93r:L17:19	propose-vowel	3	24+@n 13@n	24+ y	19	24+@n 13	24+
+I48	cand	f89r:L05:8	10ρ@r?	20ρ@r	f93r:L08:1	propose-base	8	12. 7ρ	4ρ@l 10@r	1		4.@l 10@r
+I49	decoy	f89v:L25:6	23σ	23+	f94r:L04:5	differ-vowel	6	6.@l 6σ	10 16ρ	5	6. 6σ	10 16ρ
+I50	cand	f90r:L11:8	17σ@m?	17σ@r	f94r:L16:16	propose-mark	8	7ρ@n 25.	10 15σ	16	7ρ@n 25.	10 15ρ
+I51	cand	f89r:L02:6	1?	15+	f93r:L04:11	propose-base	6	3 17.@n	13 6+	11	24σ 7+	22σ 6+
+I52	cand	f89r:L20:18	21?	21+	f93r:L23:18	propose-vowel	18	15+ {Ra}	17ρ 21.	18	{ra} 7@r	17ρ
