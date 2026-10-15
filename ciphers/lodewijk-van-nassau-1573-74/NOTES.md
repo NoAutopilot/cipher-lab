@@ -4901,3 +4901,44 @@ Sonnet calls. No judge run. Novelty not classified.
 Next (one line each): p2b settle re-briefed on the map (rows `match` with A = B settle under a pre-registered rule; differs/dup/no-ink rows
 need an ordering repair), ~$2; an ordering repair of p2_L13-L33 (rows re-sequenced and duplicates retired by K position, a pre-registered
 rewrite of those lines from retx_p2_lines.tsv), ~$2; verifier eye on the 11 H rows above, ~$0.5.
+
+## LVN-P2B: 4611 p2b settled on the RETX map + ordering repair of p2_L13-L33 (15 Oct 2026, 08:3x-08:4x UTC by date -u, account 4, LANE DEFAULT-A4-0645-15)
+
+Steps: LVN-P2RETX's two named next steps, disk only (no image read, no subagent, no request). Addendum `lvn4611/PREREG-LVN-4611.md` "LVN-P2B"
+pushed 79aac44fd before any output was computed. Prior work: `tools/prior_work.py lodewijk-van-nassau-1573-74 --item-spec 'wvo=4611;folio=p2'
+--step-type transcribe --offline` exit 4 at 08:41 UTC (own-work LEADs, Groen t. IV LEAD, two generic UNCHECKED; none bears on a transcription
+repair; prior-work.tsv 6acf3c6fd). The 11 H rows the reconciled ink contradicts (LVN-P2RETX list) were **not ruled**: no H row changed value or
+grade in either step; they wait for the separate verifier.
+
+**Step 1, unit p2bm (p2b settle on the map; `lvn4611/p2b_map.py`, written by `lvn4611/settle.py` to `settle_p2bm.tsv`).** The "read" of a
+key_p2b.tsv target is the ink token its row maps to in retx_p2_map.tsv; eligible when map `match`, the ink A = B in retx_p2_lines.tsv, anchored
+(a neighbouring row of the same line maps to the neighbouring ink token), and the ink equals A150 or B150. Controls, the 10 frozen key_p2b.tsv
+H controls: **positive 10/10 (gate >= 8), power 10/10 rejected (gate >= 9; each control's look-alike swapped into a scratch copy of
+ciphertext_4611_pre_retx.tsv and the map rebuilt: 7 come out `differs`, 1 `duplicate`, 2 `no-ink`) -- PASS.** Of 161 targets: **99 confirmed
+H**, 7 read-confirmed but not a key_full code (stay M), 55 stay M (map differs 23, duplicate 14, no-ink 12, ink not A = B 5, not anchored 1).
+No target settled to a different value (a `match` row's ink is its own sign by definition; the map cannot change a value).
+Caveat: the map places rows partly by value, so a `match` is not an independent read of the row; the anchoring rule and the power control are
+the guard (a wrong value was rejected 10/10), not a blind per-token read. The per-token read unit p2b stays unrun.
+
+**Step 2, ordering repair (`lvn4611/p2_order.py`, the last 4611 stage of `settle.py`).** The 518 rows of p2_L13-L33 plus the p2_R* inserts are
+re-sequenced into the 23 physical lines **p2_K13-p2_K35** by (K, kpos) from the map; unplaced rows (no-ink, near-value duplicates) follow the
+nearest preceding row of their own old line; **7 block duplicates retired** to `lvn4611/retired_p2.tsv` (p2_L15/8 114, p2_L27/3-4 39 61,
+p2_L27/7 114, p2_L27/12 24, p2_L28/5-6 14 64, all M); one H block duplicate kept (p2_L27/11 84, attached, for the verifier). Old ids are kept in
+each row's why ("LVN-P2B order: was p2_L15/9"). No value changed. 518 -> 511 rows. The decode of p2 now runs in written order line by line,
+except for the 48 unplaced rows (28 no-ink, 20 near-value duplicates incl. the p2a placement note's p2_L14/1, p2_L17/9) which sit beside
+their old neighbours, and except where the map itself paired a row with the wrong ink token (e.g. K15 "26 82 18 39 85 111 85 119" against ink
+"26 82 38 115 85": p2_L15/9-11, a pass duplicate the near-value rule did not catch, mapped positionally as `differs`).
+Fix on the way: `settle.py` LVN-P2RETX insert block reused the name `key` (the key dict) for its anchor tuple, so a full `settle.py`
+(--check) crashed on every letter after 4611 (AttributeError in decode_sign); renamed to `ak`. LVN-P2RETX's own "settle.py --check exit 0"
+cannot have been a full run.
+
+Counts (rule 4), reading_4611_full_tokens.tsv (decode_4611_full.json): **C 998 -> 1090 (step 1) -> 1090, M 310 -> 218 -> 211, I 70, U 140,
+H 3; tokens 1521 -> 1514**. decode.json 4611 (key.tsv): C 925 -> 1015, M 270 -> 173, I 75, U 251 (1521 -> 1514). ciphertext_4611.tsv p2:
+H 402 -> 501, M 396 -> 290, S 6. 4610/4611/4616 C/H **2487 of 3345 (74.3%) -> 2579 of 3338 (77.3%)**; four letters 2487 of 4178 -> 2579 of
+4171 (61.8%). Checks: `decode_key.py --check` exit 0 for all 13 decode*.json; `settle.py --check` (full, all four letters),
+`lvn4611/settle.py --check`, `lvn4611/build_key.py --check`, `lvn4611/build_key_p2.py --check`, `lvn4611/settle_p3L00.py --check`,
+`lvn10/apply.py --check`, `lvn16/apply.py --check`, `lvn4611/retx_p2.py check`, `axnames/revisions.py --check` (regenerated) exit 0. The 4611
+reading changed after AUDIT.md: carried into AUDIT.md "LVN-P2B"; verifier wanted (ROOM.md). No judge run. Novelty not classified.
+Next (one line each): verifier eye on the 11 H rows LVN-P2RETX listed + the kept H duplicate p2_L27/11, ~$0.5; a placement pass for the 48
+unplaced p2_K rows and the positional `differs` pairs (retire the near-value duplicates by eye on the deskewed lines), ~$2; the 55 p2b rows
+that stay M (23 differs) to a per-token read only after that pass, ~$3.

@@ -1977,3 +1977,12 @@ controls 16/20, 17/20, 16/19, 17/19 PASS. 127 ink tokens in no 150-dpi row inser
 four letters 2487 of 4178 (59.5%) -- the percentages fall because the denominator grew, not because a reading was withdrawn. Eleven H rows on
 p2_L16-L30 are contradicted by the reconciled ink (NOTES.md list) and two have no ink token: for the verifier. N-class and depth not
 re-assigned here; any depth_pct quoted from the 2435/2487-of-3236 figures is now over the 4611 p2 denominator by 109 tokens.
+
+## LVN-P2B (15 Oct 2026, 08:4x UTC by date -u; solver job, account 4) -- reading revised after this AUDIT.md, carried here (rule 10 propagation)
+
+4611 p2 (NOTES.md "LVN-P2B"; PREREG 79aac44fd). (1) Unit p2bm: 99 p2b M rows confirmed H on the LVN-P2RETX map (ink A = B, anchored, = A150 or
+B150; controls positive 10/10, power 10/10 rejected); no value changed. (2) p2_L13-L33 and p2_R* re-sequenced into the physical lines
+p2_K13-K35 (old ids in why); 7 M block duplicates retired to lvn4611/retired_p2.tsv. **Counts:** 4611 full C 998 -> 1090, M 310 -> 211,
+tokens 1521 -> 1514; 4610/4611/4616 C/H 2579 of 3338 (77.3%), four letters 2579 of 4171 (61.8%). The 11 H rows contradicted by ink (LVN-P2RETX)
+and the kept H duplicate p2_L27/11 are unruled, for the verifier. Line ids p2_L13-L33 no longer exist in ciphertext_4611.tsv: a row cited
+by its old id is found by "was <id>" in its why. N-class and depth not re-assigned here.

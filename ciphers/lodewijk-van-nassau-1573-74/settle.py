@@ -334,7 +334,7 @@ def main():
         if nr == "4611":
             # LVN-4611 (15 Oct 2026): per-token 300-dpi read of 4611 per unit (lvn4611/PREREG-LVN-4611.md), applied last;
             # only rows lvn4611/settle.py marked settled/confirmed for a unit whose own control passed change (sign, confidence).
-            for unit in ("p1", "p3", "p2a", "p2b"):
+            for unit in ("p1", "p3", "p2a", "p2b", "p2bm"):
                 sp = HERE / "lvn4611" / f"settle_{unit}.tsv"
                 if not sp.exists():
                     continue
@@ -363,8 +363,8 @@ def main():
                 groups = {}
                 with open(ip, newline="", encoding="utf-8") as fh:
                     for r in csv.DictReader(fh, delimiter="\t"):
-                        key = (r.pop("anchor"), r.pop("anchor_line"), r.pop("anchor_position"))
-                        groups.setdefault(key, []).append(r)
+                        ak = (r.pop("anchor"), r.pop("anchor_line"), r.pop("anchor_position"))   # not `key`: the key dict (LVN-P2B fix)
+                        groups.setdefault(ak, []).append(r)
                 keys = {(r["line"], r["position"]) for r in draft}
                 assert all((l, q) in keys for _, l, q in groups), "LVN-P2RETX anchor row missing"
                 out = []
@@ -373,6 +373,21 @@ def main():
                     out.append(r)
                     out += groups.get(("after", r["line"], r["position"]), [])
                 draft[:] = out
+            # LVN-P2B (15 Oct 2026): ordering repair of p2_L13-L33 + p2_R* into the physical lines p2_K13-K35 (PREREG-LVN-4611.md
+            # addendum LVN-P2B step 2; lvn4611/p2_order.py); block duplicates not graded H/C retired to lvn4611/retired_p2.tsv.
+            import io; sys.path.insert(0, str(HERE / "lvn4611")); import p2_order
+            draft, retired, rep = p2_order.reorder(draft)
+            print("4611 LVN-P2B order:", rep)
+            rio = io.StringIO(); rw = csv.writer(rio, delimiter="\t", lineterminator="\n")
+            rw.writerow(["line", "position", "sign", "confidence", "alt", "why"])
+            for row in retired:
+                rw.writerow([row["line"], row["position"], row["sign"], row["confidence"], row.get("alt", ""), row.get("why", "")])
+            rp = HERE / "lvn4611" / "retired_p2.tsv"
+            if args.check:
+                if not rp.exists() or rp.read_text(encoding="utf-8") != rio.getvalue():
+                    print(f"STALE: {rp}", file=sys.stderr); stale = True
+            else:
+                rp.write_text(rio.getvalue(), encoding="utf-8")
         summary[nr] = stats
         cipher_path = HERE / f"ciphertext_{nr}.tsv"
         log_path = HERE / f"settle_log_{nr}.tsv"

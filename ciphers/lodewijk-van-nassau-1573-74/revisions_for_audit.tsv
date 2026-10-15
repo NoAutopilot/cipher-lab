@@ -218,33 +218,33 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4611	p2_L08	18	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	o n t ? <NULL> ? g u
 4611	p2_L08	21	95	g I	g	M	word	table rule	t ? NULL ? <g> u
 4611	p2_L10	3	221	? U	hollande	H	word	4496 (WVO PDF p4) contemporary interlinear gloss 'Hollando' over 221, repeated 3x on the same page always over 221, confirmed by two independent blind Sonnet passes (AX-GLOSS, axgloss/gloss_attest.tsv); corroborated unglossed in 4614 p1 'tiré de la Haye en 221' (context: withdrew from The Hague to Holland)	y <hollande> u e r s
-4611	p2_L13	12	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	n c e ? <NULL> ?
-4611	p2_L14	8	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	l q u e <NULL> f o n d
-4611	p2_R15a	7	124	? U	NULL	M	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	u r i r <NULL> ?
-4611	p2_R15b	1	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	<NULL>
-4611	p2_L16	16	95	g I	g	M	word	table rule	c h a n <g>
-4611	p2_R18a	4	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	r a ? <NULL> o n
-4611	p2_L17	14	135	? U	NULL	M	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	a i n ? <NULL> a u ? herzogvonalba
-4611	p2_L17	18	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	NULL a u ? <herzogvonalba>
-4611	p2_L18	18	143	? U	NULL	C	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	n d e NULL <NULL>
-4611	p2_L20	4	200	? U	herzogvonalba	M	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	i n ? <herzogvonalba> a ? ?
-4611	p2_L20	8	137	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	a ? ? <NULL> z ? herzogvonalba e
-4611	p2_L20	14	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	? NULL z ? <herzogvonalba> e l
-4611	p2_L21	15	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	m e s ? <NULL> c h o i
-4611	p2_R23a	4	135	? U	NULL	M	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	e n t <NULL> NULL ?
-4611	p2_R23a	5	126	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	e n t NULL <NULL> ?
-4611	p2_R24a	7	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	u e i e <NULL> NULL
-4611	p2_R24a	8	138	? U	NULL	M	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	e i e NULL <NULL>
-4611	p2_L25	11	124	? U	NULL	M	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	s c h e <NULL> a i l l
-4611	p2_L26	13	124	? U	NULL	M	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	y u e r <NULL> ? z p i
-4611	p2_R27b	6	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	e n t ? <NULL> l e z
-4611	p2_R30b	7	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	i e n ? <NULL> e
-4611	p2_L30	3	130	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	a u <NULL> f a i c
-4611	p2_R33a	11	107	k I	k	M	word	table rule	r e i f <k> c
-4611	p2_L30	24	134	? U	NULL	M	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	m e n t <NULL>
-4611	p2_L31	11	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	i o n s <NULL> NULL
-4611	p2_R34a	1	138	? U	NULL	M	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	<NULL> r e
-4611	p2_L31	12	137	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	NULL <NULL>
+4611	p2_K13	14	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	n c e ? <NULL> ? d u n
+4611	p2_K14	14	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	l q u e <NULL> f o n d
+4611	p2_K15	9	124	? U	NULL	M	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	u r i r <NULL> ? s e q
+4611	p2_K15	19	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	e l e m <NULL> e n c t
+4611	p2_K16	21	95	g I	g	M	word	table rule	c h a n <g>
+4611	p2_K17	13	135	? U	NULL	M	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	a i n ? <NULL> a u ? herzogvonalba
+4611	p2_K17	17	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	NULL a u ? <herzogvonalba>
+4611	p2_K18	13	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	p r a ? <NULL> o n r a
+4611	p2_K18	23	143	? U	NULL	C	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	n d e NULL <NULL>
+4611	p2_K20	10	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	u u ? ? <NULL> z ? herzogvonalba e
+4611	p2_K20	16	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	? NULL z ? <herzogvonalba> e l
+4611	p2_K21	4	200	? U	herzogvonalba	M	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	i n ? <herzogvonalba> a o n s
+4611	p2_K21	16	128	? U	NULL	M	NULL	names.tsv: NULL in 15 of 15 aligned observations (5810/5811/4503 vs Groen)	m e s ? <NULL> c h o i
+4611	p2_K23	10	135	? U	NULL	M	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	m e n t <NULL> NULL ? h e
+4611	p2_K23	11	126	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	e n t NULL <NULL> ? h e o
+4611	p2_K24	18	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	u e i e <NULL> NULL
+4611	p2_K24	19	138	? U	NULL	M	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	e i e NULL <NULL>
+4611	p2_K26	11	124	? U	NULL	M	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	s c h e <NULL> a i l l
+4611	p2_K27	17	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	e n t ? <NULL> l e z
+4611	p2_K28	13	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	y u e r <NULL> ? z p i
+4611	p2_K30	15	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	i e n ? <NULL> e x p e
+4611	p2_K32	21	134	? U	NULL	M	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	m e n t <NULL>
+4611	p2_K33	3	130	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	a u <NULL> f a i c
+4611	p2_K33	23	107	k I	k	M	word	table rule	r e i f <k> c
+4611	p2_K34	11	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	i o n s <NULL> NULL NULL r e
+4611	p2_K34	12	137	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	o n s NULL <NULL> NULL r e s
+4611	p2_K34	16	138	? U	NULL	M	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	n s NULL NULL <NULL> r e s o
 4611	p3_L00	5	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	d e s <herzogvonalba> o m m e
 4611	p3_L00	11	138	? U	NULL	M	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	m m e s <NULL> NULL p a r
 4611	p3_L00	12	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	m e s NULL <NULL> p a r d

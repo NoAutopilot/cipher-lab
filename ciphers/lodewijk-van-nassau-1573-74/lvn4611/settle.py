@@ -32,5 +32,16 @@ for unit in ('p1', 'p3', 'p2a', 'p2b'):
     else:
         open(p, 'w').write(s.getvalue())
         from collections import Counter; print(Counter(r[5] for r in rows))
+# LVN-P2B (15 Oct 2026): unit p2bm = p2b settled on the LVN-P2RETX map, no new read (addendum LVN-P2B step 1; p2b_map.py); its two gates
+# (positive >= 8/10, power >= 9/10 rejected) decide: a FAIL writes only 'stays' rows.
+sys.path.insert(0, H); import p2b_map
+rows, gl, _, _ = p2b_map.rows(); print(gl)
+s = io.StringIO(); s.write('line\tpre_pos\told\tnew\tconfidence\taction\tnote\n')
+for r in rows: s.write('\t'.join(r) + '\n')
+p = os.path.join(H, 'settle_p2bm.tsv')
+if '--check' in sys.argv:
+    if not os.path.exists(p) or open(p).read() != s.getvalue(): print('STALE', p); stale = True
+else:
+    open(p, 'w').write(s.getvalue())
 if '--check' in sys.argv: print('STALE' if stale else 'up to date')
 sys.exit(1 if stale else 0)

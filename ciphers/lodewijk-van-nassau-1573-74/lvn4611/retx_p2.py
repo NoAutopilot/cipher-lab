@@ -226,6 +226,7 @@ def build(reads_path, recon_path, ct_path):
         rows = [byline[L][a + j] for j in range(size)]
         if all((kn, bb + j) in taken for j in range(size)):
             dup.update(r for r in rows if r not in got)
+    build.dup = {(ct[i]["line"], ct[i]["position"]) for i in dup}   # LVN-P2B: block duplicates (read by p2b_map.py; outputs unchanged)
     mp = []
     for i, r in old:
         if i in got:
