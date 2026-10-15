@@ -93,3 +93,31 @@ resolution where the gloss is legible (canvases to scratchpad, never git); per-l
 NOTES.md ~3843, 3899, 4044: Berner 1901 was not re-tried after archive.org answered 500 on 9 Oct. Find the identifier in NOTES.md/sources.tsv, fetch
 the _djvu.txt once (one retry after a pause max; a second failure stops the job), grep for the terms the earlier BO I passes used (Manteuffel,
 Stanislas, Arnold, Jablonski, the report dates of Sept-Nov 1712); log hits and misses as search results (rule 10 wording), update the gap.
+
+## Wave 3 (05:3x UTC 15 Oct)
+Wave 2 results (ledgered + archived, 13.66): LVN-PIN 4.93 D, COL26-1181 1.90 N (value-class control FAIL = non-test), BAL-C275G 6.14 D- (1.53x),
+MANT-BERNER 0.69 N. www.nationaalarchief.nl answered 200 at 05:33 UTC, so SUR-2061 runs. Lane spend at 05:33: workers 29.95 + orchestrator 3.06.
+
+### SUR-2061 (Opus, cap 3, box 50 min, nationaalarchief.nl + service.archief.nl IIIF <= 8 at >= 2 s): na-suriname-map-1781 VEL2061 clear-text crib hunt
+Exactly the SUR-2061 section of .claude/briefs/runs/2026-10-15-acct4-default-0235-jobs.md, under the PREREG already on file
+(ciphers/na-suriname-map-1781/PREREG-SUR-2061.md, c0bec51f0; do not change it -- an addendum only if the item's real layout forces one, pushed before
+any score). Read the item page's drupal-settings-json for availability (CLAUDE.md host table) before any image call; a 503 again stops the job (one
+retry after a pause), logged B.
+
+### LVN-L1 (Opus, cap 3, box 50 min, resources.huygens.knaw.nl <= 2 or disk): lodewijk-van-nassau-1573-74 4611 p3 line boxes + the missing first line
+LVN-PIN (NOTES.md, its section): 4611 p3 line boxes are one line off and the page's first line (~19 numerals, "diy 78, 81, 28, 200 ...") is in no
+transcription. (a) Fix the p3 line-box placement (re-anchor, re-cut, check the debug overlay; scratchpad only) and re-check that the LVN-PIN p3 rows
+still sit on the tokens they were read from -- any row that moves is re-graded M, not kept H. (b) Transcribe the missing first line with the
+LVN16-3R per-token protocol and its control (PREREG addendum pushed before the read): 2 blind Sonnet calls + 1 reconcile; enter the line into the
+4611 transcription; decode_key --check, settle.py --check. Do not touch 4610 p2_L28/11 (verifier).
+
+### BAL-C280 (Opus, cap 4, box 60 min, openapi.bnf.fr <= 8 at >= 3 s, take/release lines): baluze167-davaux-1637 c280-285 gloss search + c266-269 E/7 rows by eye
+BAL-C275G (NOTES.md, its section; PREREG c275g/PREREG-BAL-C275G.md): continue it unchanged on c280-285 (6 canvases, one fetch each, ~0.5 each incl. the
+look) and do its named eye step on the c266-269 reader E/7 rows (~1.5). A glossed hit counts only through --try at every c275 occurrence, as before.
+Stop before a canvas that would cross 80% of cap.
+
+### COL26-LM (Opus, cap 2, box 40 min, no network): colbert26-lathuillerie-1644 length-matched score for 11 and 81
+COL26-1181's named next step (NOTES.md, its section): a length-matched score gated on the 5 known two-letter C codes -- the gate first: the instrument
+must accept >= 4 of the 5 true two-letter values and reject >= 90% of planted false ones (PREREG pushed before scoring); only if it passes, score 11=re
+and 81=me. If the gate fails, log "untested-by-this-tool" for this hypothesis in HYPOTHESES.md (rule 3 third-attempt clause: COL26-KEY, COL26-1181,
+this) and stop. Grades only in key_f23_c50rev.tsv.
