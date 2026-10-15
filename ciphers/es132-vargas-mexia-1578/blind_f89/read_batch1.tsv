@@ -1,0 +1,32 @@
+id	read	note
+R01	10		last token plain
+R02	17ρ@2	small 2-like mark above
+R03	10@r	v-shaped mark above
+R04	22.@s	bar above
+R05	1+@s	faint; cross/bar above 1, unsure
+R06	4@s	bar with curl above
+R07	24.@2	small 2-like mark above
+R08	{w}	letter-like word at edge
+R09	3{x}	3 followed by x-like sign
+R10	15.	
+R11	11+@n	hat above
+R12	11+@n	hat above, glyph like 1H
+R13	23.@n	hat above
+R14	{quam}	word
+R15	24ρ	
+R16	22+@m	tilde above
+R17	15ρ@s	bar above
+R18	23.@2	two dots above
+R19	74+	cross above, unsure
+R20	23+@s	bar above
+R21	17σ@r	r-hook above
+R22	15ρ	bar probably over next word
+R23	27+@n	hat above
+R24	23+	
+R25	4@l	grave-like stroke above
+R26	11+	
+R27	{V}	capital letter at edge
+R28	23+	
+R29	{xom}@s	bar above
+R30	{pam}	
+R31	20ρ@2	small 2-like mark above

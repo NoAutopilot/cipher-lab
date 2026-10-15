@@ -1,0 +1,42 @@
+# ES132-BLIND agreement (blind_f89/score.py)
+cid	f89_old	dup_tok	read_A	A	read_B	B	status	relation
+f89r:L02:6	1?	15+	R05	1+@s	R35	15+	disagree	
+f89r:L03:1	{Sim}?	24.	R49	{Jim}	R86	24.	disagree	
+f89r:L05:8	10ρ@r?	20ρ@r	R78	20ρ@m	R31	20ρ@2	disagree	
+f89r:L06:15	20?	10	R54	20	R80	10	disagree	
+f89r:L06:16	23σ?	231	R65	23+	R24	23+	agree	neither
+f89r:L06:4	74+?	28+	R19	74+	R61	28+	disagree	
+f89r:L08:3	22+@m?	22+@r	R16	22+@m	R41	22+@r	disagree	
+f89r:L08:5	110?	0	R48	10	R88	0	disagree	
+f89r:L08:7	4@s?	3	R77	4@s	R09	3{x}	disagree	
+f89r:L09:18	27+@r?	27+@n	R23	27+@n	R62	27+@n	agree	=dup
+f89r:L15:3	13σ@s?	13+@s	R46	13.@s	R90	13+	disagree	
+f89r:L16:3	11σ?	11+@n	R79	11@n	R11	11+@n	disagree	
+f89r:L19:19	23σ?	23.@n	R13	23.@n	R59	23.@n	agree	=dup
+f89r:L20:18	21?	21+	R33	21+	R71	21+	agree	=dup
+f89r:L21:3	23.@2?	23.@2	R64	23.	R18	23.@2	disagree	
+f89v:L02:16	65?	16.	R37	68	R84	16.	disagree	
+f89v:L02:3	23σ@s?	23	R20	23+@s	R60	23+	disagree	
+f89v:L03:18	6?	15.	R63	unclear	R10	15.	unclear	
+f89v:L04:17	4@m?	4+	R06	4@s	R52	4@s	agree	neither
+f89v:L04:19	20?	15ρ@s	R44	20	R89	15ρ@s	disagree	
+f89v:L07:12	24.@m?	24.@r	R76	24.@m	R07	24.@2	disagree	
+f89v:L10:19	{V}?	{a}	R27	{V}	R45	6ρ	disagree	
+f89v:L11:5	15?	25	R39	25	R81	15@m	disagree	
+f89v:L14:3	{Xom}?	{Xom}@s	R68	{xom}	R29	{xom}@s	disagree	
+f89v:L15:1	23ρ?	23+	R28	23+	R36	23+	agree	=dup
+f89v:L15:18	20?	20.	R50	20	R83	20.	disagree	
+f89v:L20:17	30_.?	10@r	R92	30._	R03	10@r	disagree	
+f89v:L21:11	{quam}?	4	R14	{quam}	R51	4	disagree	
+f89v:L25:16	15ρ@s?	15ρ	R73	15ρ	R22	15ρ	agree	=dup
+f89v:L25:3	8?	6	R53	0+	R85	0+	agree	neither
+f90r:L02:19	10.?	10	R01	10	R47	10	agree	=dup
+f90r:L08:4	15.@s?	15.	R32	15.	R82	15.	agree	=dup
+f90r:L10:3	11⊣@n?	14+@n	R69	11@n	R12	11+@n	disagree	
+f90r:L11:18	22.@s?	22.@s	R55	22.@s	R87	22.@s	agree	=current
+f90r:L11:8	17σ@m?	17σ@r	R21	17σ@r	R38	17σ@m	disagree	
+f90r:L12:12	115?	24ρ	R75	11σ	R15	24ρ	disagree	
+f90r:L15:2	22.@s?	22.@s	R04	22.@s	R57	22.@s	agree	=current
+f90r:L25:2	33.@s?	33.	R42	33.@s	R67	33.	disagree	
+f90r:L27:11	17ρ@m?	17ρ@m	R70	17ρ@m	R02	17ρ@2	disagree	
+f91r:L07:12	11+?	dρ	R26	11+	R34	{de}	disagree	
