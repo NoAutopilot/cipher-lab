@@ -890,3 +890,86 @@ Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 
 - [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
 - [x] retry: MCC-SWEEP ran the token anneal's control length sweep (132-8,000 x 3 seeds): reads at no N; masc/homophonic not retried (shuffle floor is the limit, not the setting)
 Verdict: keep going: 1 internal gaps; cheapest next: the Gregg-lexicon variant of the suffix-mark model with its matched control, ~$6
+
+## MCC-GREGG: Gregg-lexicon variant of the suffix-mark model (15 Oct 2026, 08:38-09:1x UTC by date -u; disk/CPU + 3 IA requests)
+Worker MCC-GREGG (account 1, LANE DEFAULT-A1-0740-15). PREREG-MCC-GREGG.md pushed (db504515e) before any control seed or
+target score. No vision calls. Prior work: check 1 (own work) -- grep of NOTES.md / HYPOTHESES.md: the Gregg-lexicon variant
+was named by MCC-SUFX and MCC-JUDGE and never run; no Gregg or shorthand lexicon appears in any earlier section.
+- Rule 3 check (in the PREREG, before any score): not a re-tune after a failed gate (MCC-SUFX's control read and its target
+  beat both type-keeping nulls; MCC-JUDGE's NCBE-fixed null kept the margin). New material: a period shorthand lexicon never
+  used on this target. The instrument (decoder, LM, classes, marks, nulls, control generator) is MCC-SUFX's, unchanged; only
+  the pool's membership changes. After this run, further lexicon swaps on the same instrument count as a knob.
+- Corpus (archive.org, 3 requests, all 200: 1 advancedsearch, 2 `_djvu.txt`): Gregg Shorthand Dictionary, new and revised
+  edition (1916, public domain; IA greggshorthanddi0000john_c6j8) -> 14,565 OCR headwords; Gregg Shorthand Manual (1916,
+  NOT_IN_COPYRIGHT; IA greggshorthanda00greggoog) par. 61 word-sign key -> 208 brief-form words (the Dictionary omits the
+  word-signs: no 'And' between 'Ancient' and 'Anecdote'). Union 14,630 words. Files: `families/gregg/build_lexicon.py` (OCR
+  repairs listed in it), `gregg1916_headwords.txt`, `gregg1916_briefforms.txt`, `gregg1916_lexicon.txt`,
+  `manual1916_par61_ocr.txt`; the two OCR texts are not committed (re-fetch URLs in build_lexicon.py).
+- Instrument: `token_anneal.py --sufx --lexicon FILE --target-nulls N` (options added to the shared script; plain-pool
+  behaviour unchanged: test_mcc_sufx.py and test_mcc_skeleton.py still OK; offline test `tools/tests/test_mcc_gregg.py` OK);
+  `families/judge/ncbe_null.py --lexicon --kinds` for the NCBE-fixed null. Pool = top 3,000 words of MCC-SUFX's LM corpus
+  that are in the lexicon or inflect a word in it; 2,241 shared with the plain pool; control-text token share in pool 0.739
+  (plain 0.801). Results: `families/gregg/gregg.json`, `ncbe_gregg.json`, `analysis.json` (`analyse_gregg.py`), logs.
+
+| matched control, N = 132 | seed 1 | seed 2 | seed 3 | criterion |
+|---|---|---|---|---|
+| word recovery | 0.629 | 0.511 | 0.587 | mean 0.576 >= 0.5 |
+| mark-map recovery | 0.962 | 0.965 | 0.957 | each >= 0.8 |
+| coverage vs type-mark null max (40) | 0.840 vs 0.411 | 0.762 vs 0.415 | 0.775 vs 0.396 | each above: reads |
+
+| target (cov 0.487, score/letter -2.831) | null mean | null max | p (200 draws) | z |
+|---|---|---|---|---|
+| (a) type null, coverage | 0.175 | 0.236 | 0.005 | 11.6 |
+| (a) type null, score/letter | -3.164 | -3.090 | 0.005 | 16.8 |
+| (b) type-mark null, coverage | 0.336 | 0.395 | 0.005 | 6.08 |
+| (b) type-mark null, score/letter | -2.965 | **-2.830** | 0.010 | 3.97 |
+| (c) NCBE-fixed null, coverage | 0.357 | 0.396 | 0.005 | 6.45 |
+| (c) NCBE-fixed null, score/letter | -2.940 | -2.896 | 0.005 | 6.22 |
+
+- Preregistered outcome: **mixed** -- coverage beats all three null maxima, score per letter beats (a) and (c) but one of 200
+  type-mark draws (b) scores -2.830 against the target's -2.831 (p 0.010). Under the fixed rule this is "mixed", nothing
+  stronger, although every p is <= 0.010.
+- Plain vs Gregg pool (descriptive, PREREG word): z over the type-mark null, coverage 6.08 (Gregg) vs 6.43 (plain, MCC-JUDGE
+  200 draws), score 3.97 vs 4.31 -> "worse" on both, by a small amount. A 1916 shorthand writer's vocabulary does not fit the
+  target's stems better than the novels' vocabulary under this coding; the structural lead (stems beyond type-keeping
+  shuffles) survives the lexicon change at about the same size.
+- Fitted map differs from MCC-SUFX's (s -> BE, so NCBE reads 'nieces' here, 'nice' + mark there): the reading of the
+  commonest type depends on the lexicon, one more sign the decode is not text.
+- Judge (`python3 tools/judge_plaintext.py specs/mccormick-1999.json --file F`), abridged (full: `families/gregg/judge_out.txt`):
+
+```
+== render_target_A.txt
+FAIL length: got=813, min=700, max=800
+FAIL language: score=-1.653, null_p99=-2.065, real_p05=-0.87, real_median=-0.813, mode=both, N=813
+ok   words: cover=0.609, min=0.6, real_text_median_cover=0.962
+FAIL - mccormick-1999 (a PASS is a gate for a verifier, not a reading; rule 10)
+== render_target_B.txt
+FAIL length: got=434 ; FAIL language: score=-1.055, real_p05=-0.864 ; ok words: cover=0.892 ; FAIL
+== render_tm6000_A.txt (shuffled control, type-mark draw 6000)
+ok length 756 ; FAIL language: score=-1.909, real_p05=-0.864 ; FAIL words: cover=0.452 ; FAIL
+== render_tm6000_B.txt
+FAIL length 249 ; FAIL language: score=-1.078 ; ok words 0.928 ; FAIL
+== render_ncbe7000_A.txt (shuffled control, NCBE-fixed draw 7000)
+ok length 768 ; FAIL language: score=-1.883, real_p05=-0.861 ; FAIL words: cover=0.486 ; FAIL
+== render_ncbe7000_B.txt
+FAIL length 273 ; FAIL language: score=-1.232 ; ok words 0.93 ; FAIL
+```
+  Candidate FAILs in both renderings; neither shuffle PASSes (judge not voided for this family at this N, ARM-C1). The `en`
+  corpus fold spread (0.44-0.64, tools/data/en/README.md) makes the verdict of unknown reliability by itself; the gap to
+  real_p05 (about 0.8 per letter in A) is far larger than any fold shift. No part of the decode is offered as a reading.
+  Status unchanged: open.
+
+## Remaining gaps (MCC-GREGG, 15 Oct 2026)
+Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 rate the proposed ones
+- a reading of the two notes - blocker: no-key-material; cheap tests 2-5 above are the logged families, and the Cipher Mysteries thread (all 163 comments, D2-PRINT4) adds no key, crib or new ciphertext
+- the token/nomenclator family at the target's 132 tokens (char-4-gram and word-bigram anneals untestable at N <= 8,000; skeleton lattice drop arm negative; suffix-mark model: stems beyond type, type-mark and NCBE-fixed nulls with the plain pool, "mixed" with a Gregg 1916 lexicon (coverage beyond all, score one draw short on the type-mark null), Gregg no better than plain, judge FAIL with controls FAIL: MCC-SWEEP, MCC-WORD, MCC-SKEL, MCC-SUFX, MCC-JUDGE, MCC-GREGG) - blocker: not-attempted; further lexicon swaps on the suffix-mark instrument are a knob (rule 3), the untried instrument is a sound-based code (each word's code from its pronunciation, as a shorthand writer spells by sound, not by letters); next: phonetic-skeleton variant of the suffix-mark model from a public pronouncing dictionary (CMUdict) with its matched control and the same three nulls, ~$6
+
+## Escalation (MCC-GREGG, 15 Oct 2026)
+- [n/a] siblings: no other note by the same writer is known in public (Leads, Web and blog check)
+- [n/a] clear-pages: no clear text by the writer to align is public
+- [n/a] known-keys: no key of any kind is known for these notes
+- [x] print: Web and blog check (2 Oct) and the full Cipher Mysteries thread (D2-PRINT4); no accepted reading in print
+- [ ] key-rebuild: suffix-mark model read its control with the plain pool (MCC-SUFX) and with the Gregg 1916 lexicon (MCC-GREGG); target beyond type-keeping nulls with both lexicons ("mixed" by one draw with Gregg), no text, judge FAIL; untried: a phonetic-skeleton (sound-spelled) code from CMUdict, ~$6
+- [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
+- [x] retry: MCC-SWEEP ran the token anneal's control length sweep (132-8,000 x 3 seeds): reads at no N; masc/homophonic not retried (shuffle floor is the limit, not the setting); lexicon retry done (MCC-GREGG)
+Verdict: keep going: 1 internal gaps; cheapest next: phonetic-skeleton variant of the suffix-mark model from CMUdict with its matched control and the three nulls, ~$6

@@ -386,10 +386,13 @@ class WordBigram:
     control and the target). log P(w|v) = log(lam P_ml(w|v) + (1-lam) P_uni(w)), add-one unigram. Dense matrix
     L[v, w] (natural log), v, w in 0..V+1 (V = UNK, V+1 = BND)."""
 
-    def __init__(self, words, pool, lam=WB_LAMBDA):
+    def __init__(self, words, pool, lam=WB_LAMBDA, allowed=None):
         import numpy as np
         freq = Counter(words)
-        self.pool = [w for w, _ in freq.most_common(pool)]
+        if allowed is None:
+            self.pool = [w for w, _ in freq.most_common(pool)]
+        else:  # MCC-GREGG: the top `pool` corpus words that pass the lexicon filter (lexicon_allows)
+            self.pool = [w for w, _ in freq.most_common() if allowed(w)][:pool]
         self.idx = {w: i for i, w in enumerate(self.pool)}
         V = len(self.pool)
         self.UNK, self.BND, self.size = V, V + 1, V + 2
@@ -417,6 +420,30 @@ class WordBigram:
     def total(self, toks, assign):
         ids = [self.BND] + self.seq_ids(toks, assign)
         return float(sum(self.L[a, b] for a, b in zip(ids[:-1], ids[1:]) if b != self.BND))
+
+
+def load_lexicon(path):
+    """MCC-GREGG: a word list file (one lower-case word per line) -> set."""
+    return set(x.strip().lower() for x in Path(path).read_text().split() if x.strip())
+
+
+def lexicon_lemmas(w):
+    """the word itself and its regular-inflection lemmas (fixed in PREREG-MCC-GREGG.md): -s, -es, -ies>y, -ed, -d,
+    -ied>y, -ing, -ing>+e, -ly, -ily>y, with a doubled final consonant undone after -ed/-ing (stopped > stop)."""
+    out = {w}
+    for suf, rep in (("ies", "y"), ("ied", "y"), ("ily", "y"), ("es", ""), ("s", ""), ("ed", ""), ("ed", "e"),
+                     ("ing", ""), ("ing", "e"), ("ly", "")):
+        if w.endswith(suf) and len(w) - len(suf) >= 2:
+            b = w[:-len(suf)]
+            out.add(b + rep)
+            if suf in ("ed", "ing") and len(b) >= 3 and b[-1] == b[-2] and b[-1] not in "aeiou":
+                out.add(b[:-1])
+    return out
+
+
+def lexicon_allows(lex):
+    """MCC-GREGG pool filter: a corpus word enters the pool iff it or one of its lexicon_lemmas is in the lexicon."""
+    return lambda w: any(x in lex for x in lexicon_lemmas(w))
 
 
 def wordbigram_solve(toks, wb, rng, sweeps=200, restarts=2, t0=3.0, t1=0.05, init=None):
@@ -947,10 +974,12 @@ def sufx_run(a, real_toks, words):
     """MCC-SUFX (PREREG-MCC-SUFX.md): control first at N = the target's own (and --n-list), target only with --target
     and only if the control read at the target's own N (exit 3 otherwise)."""
     import time
-    wb = WordBigram(corpus_words_from(HELDOUT_EN), a.pool)
+    allowed = lexicon_allows(load_lexicon(a.lexicon)) if a.lexicon else None
+    wb = WordBigram(corpus_words_from(HELDOUT_EN), a.pool, allowed=allowed)
     _SUFX.update(wb=wb, alpha=a.alpha, beam=a.beam)
     gen = fit_true_map(real_toks, words)
-    out = {"mode": "sufx", "pool_size": a.pool, "alpha": a.alpha, "beam": a.beam, "generator": gen, "controls": {}}
+    out = {"mode": "sufx", "pool_size": a.pool, "alpha": a.alpha, "beam": a.beam, "generator": gen, "controls": {},
+           "lexicon": a.lexicon, "target_nulls": a.target_nulls or a.nulls}
     print(json.dumps(gen), file=sys.stderr)
     seeds = [int(x) for x in a.seeds.split(",")]
     for n in [int(x) for x in a.n_list.split(",")]:
@@ -985,7 +1014,7 @@ def sufx_run(a, real_toks, words):
             fmap, tr, _ = fit_marks(wb, real_toks, a.alpha, a.beam)
             tr["fitted_map"] = fmap
             for name, km, base in (("type_null", False, 5000), ("typemark_null", True, 6000)):
-                nl = _null_rows(real_toks, [base + i for i in range(a.nulls)], km, a.procs)
+                nl = _null_rows(real_toks, [base + i for i in range(a.target_nulls or a.nulls)], km, a.procs)
                 tr[name + "_coverage"] = sorted(x["coverage"] for x in nl)
                 tr[name + "_spl"] = sorted(x["score_per_letter"] for x in nl)
                 tr["coverage_above_" + name + "_max"] = tr["coverage"] > max(tr[name + "_coverage"])
@@ -1030,6 +1059,9 @@ def main():
     ap.add_argument("--sufx", action="store_true", help="MCC-SUFX: suffix-mark abbreviation model (fitted class -> mark map; "
                     "uses --pool/--alpha/--beam/--n-list/--seeds/--nulls/--target/--gate)")
     ap.add_argument("--procs", type=int, default=1, help="sufx: processes for the null fits")
+    ap.add_argument("--lexicon", help="sufx (MCC-GREGG): word-list file; the pool is the top --pool LM-corpus words that are "
+                    "in it or inflect a word in it (lexicon_allows)")
+    ap.add_argument("--target-nulls", type=int, default=None, help="sufx: nulls per kind on the target (default --nulls)")
     ap.add_argument("--generator-only", action="store_true", help="sufx: print the control generator's fit and exit")
     ap.add_argument("--skeleton", action="store_true", help="MCC-SKEL: abbreviation/consonant-skeleton lattice decoder")
     ap.add_argument("--scheme", choices=["drop", "keepfinal"], default="drop", help="skeleton: vowel rule")

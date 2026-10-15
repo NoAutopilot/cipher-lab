@@ -1,0 +1,30 @@
+== render_target_A.txt
+FAIL length: got=813, min=700, max=800
+FAIL language: score=-1.653, null_p99=-2.065, real_p05=-0.87, real_median=-0.813, mode=both, N=813
+ok   words: cover=0.609, min=0.6, real_text_median_cover=0.962
+FAIL - mccormick-1999 (a PASS is a gate for a verifier, not a reading; rule 10)
+== render_target_B.txt
+FAIL length: got=434, min=700, max=800
+FAIL language: score=-1.055, null_p99=-2.005, real_p05=-0.864, real_median=-0.808, mode=both, N=434
+ok   words: cover=0.892, min=0.6, real_text_median_cover=0.961
+FAIL - mccormick-1999 (a PASS is a gate for a verifier, not a reading; rule 10)
+== render_tm6000_A.txt
+ok   length: got=756, min=700, max=800
+FAIL language: score=-1.909, null_p99=-2.059, real_p05=-0.864, real_median=-0.812, mode=both, N=756
+FAIL words: cover=0.452, min=0.6, real_text_median_cover=0.96
+FAIL - mccormick-1999 (a PASS is a gate for a verifier, not a reading; rule 10)
+== render_tm6000_B.txt
+FAIL length: got=249, min=700, max=800
+FAIL language: score=-1.078, null_p99=-1.965, real_p05=-0.881, real_median=-0.809, mode=both, N=249
+ok   words: cover=0.928, min=0.6, real_text_median_cover=0.96
+FAIL - mccormick-1999 (a PASS is a gate for a verifier, not a reading; rule 10)
+== render_ncbe7000_A.txt
+ok   length: got=768, min=700, max=800
+FAIL language: score=-1.883, null_p99=-2.064, real_p05=-0.861, real_median=-0.813, mode=both, N=768
+FAIL words: cover=0.486, min=0.6, real_text_median_cover=0.958
+FAIL - mccormick-1999 (a PASS is a gate for a verifier, not a reading; rule 10)
+== render_ncbe7000_B.txt
+FAIL length: got=273, min=700, max=800
+FAIL language: score=-1.232, null_p99=-1.993, real_p05=-0.877, real_median=-0.813, mode=both, N=273
+ok   words: cover=0.93, min=0.6, real_text_median_cover=0.96
+FAIL - mccormick-1999 (a PASS is a gate for a verifier, not a reading; rule 10)

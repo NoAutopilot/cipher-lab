@@ -9,6 +9,7 @@ at the same draw count on the same machine, for the share-of-margin figure. The 
 draw (token_anneal.fit_marks, MCC-SUFX's instrument unchanged).
 
 Usage: python3 ncbe_null.py --draws 200 --procs 4 --out ncbe_null.json
+       python3 ncbe_null.py --lexicon ../gregg/gregg1916_lexicon.txt --kinds ncbe --draws 200 --out ... (MCC-GREGG)
        python3 ncbe_null.py --selftest
 """
 import argparse, json, random, sys, time
@@ -94,13 +95,16 @@ def main():
     ap.add_argument("--draws", type=int, default=200)
     ap.add_argument("--procs", type=int, default=4)
     ap.add_argument("--pool", type=int, default=3000)
+    ap.add_argument("--lexicon", help="MCC-GREGG: word-list file for the pool filter (token_anneal.lexicon_allows)")
+    ap.add_argument("--kinds", default="ncbe,tm", help="MCC-GREGG: which nulls to draw (ncbe, tm)")
     ap.add_argument("--out")
     ap.add_argument("--selftest", action="store_true")
     a = ap.parse_args()
     if a.selftest:
         return selftest()
     toks = T.tokenize(T.CIPHER_FILE.read_text())
-    _S.update(wb=T.WordBigram(T.corpus_words_from(T.HELDOUT_EN), a.pool), alpha=3.0, beam=200,
+    allowed = T.lexicon_allows(T.load_lexicon(a.lexicon)) if a.lexicon else None
+    _S.update(wb=T.WordBigram(T.corpus_words_from(T.HELDOUT_EN), a.pool, allowed=allowed), alpha=3.0, beam=200,
               keep_decode={7000, 8000})
     t0 = time.time()
     fmap, tr, _ = T.fit_marks(_S["wb"], toks, 3.0, 200)
@@ -109,6 +113,8 @@ def main():
     import multiprocessing as mp
     with mp.get_context("fork").Pool(a.procs) as pool:
         for kind, base in (("ncbe", 7000), ("tm", 8000)):
+            if kind not in a.kinds.split(","):
+                continue
             t0 = time.time()
             rows = pool.map(_fit, [(toks, base + i, kind) for i in range(a.draws)])
             out[kind] = rows

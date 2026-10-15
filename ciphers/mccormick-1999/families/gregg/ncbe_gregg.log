@@ -1,0 +1,6 @@
+{"coverage": 0.4866666666666667, "spl": -2.8308238133739025, "fmap": {"ing": "E", "ed": "E", "ly": "SE", "s": "BE", "e": "SE", "y": "SE", "d": "SE", "t": "SE", "n": "SE", "r": "SE", "other": "E"}} 3s
+ncbe 200 266s
+
+real	4m30.921s
+user	16m46.776s
+sys	0m3.239s

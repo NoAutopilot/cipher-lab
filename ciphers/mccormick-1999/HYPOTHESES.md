@@ -60,3 +60,15 @@ re-run at 200: max 0.401 / -2.979. Outcome: "the MCC-SUFX margin is not carried 
 0.17 (coverage) / 0.21 (score) -- corrects "carried largely by NCBE" above. judge_plaintext: candidate FAIL (A: language
 -1.672 vs real_p05 -0.864; B: length 404 and language), both shuffled-decode controls FAIL (judge not voided); `en` corpus
 fold spread makes the judge's verdict of unknown reliability. No reading offered.
+
+## MCC-GREGG (15 Oct 2026, LANE DEFAULT-A1-0740-15): suffix-mark model with a Gregg 1916 shorthand lexicon
+PREREG-MCC-GREGG.md (db504515e). Pool = top 3,000 LM-corpus words in the Gregg Shorthand Dictionary (1916) headwords + Manual
+(1916) word-signs or inflecting one (14,630 words; 2,241 of 3,000 shared with MCC-SUFX's pool). Matched control N = 132,
+3 seeds: word recovery 0.629 / 0.511 / 0.587 (mean 0.576, gate 0.5), mark map 0.962 / 0.965 / 0.957, coverage 0.840 / 0.762 /
+0.775 vs type-mark null max 0.411 / 0.415 / 0.396 -> reads. Target: coverage 0.487 vs maxima 0.236 (type), 0.395 (type-mark),
+0.396 (NCBE-fixed), p 1/201 each; score per letter -2.831 vs -3.090 (type), -2.830 (type-mark: 1 of 200 draws above, p 0.010),
+-2.896 (NCBE-fixed). Preregistered outcome: "mixed" (one statistic misses one null maximum by one draw). Standardized margin
+over the type-mark null, Gregg vs plain pool: coverage z 6.08 vs 6.43, score z 3.97 vs 4.31 -> "worse" by the PREREG word
+(small): the Gregg vocabulary does not fit the stems better than a novel's. judge_plaintext: candidate FAIL (A: length 813
+and language -1.653 vs real_p05 -0.870; B: length 434 and language -1.055 vs -0.864), both shuffled controls FAIL (judge not
+voided; `en` fold spread, reliability unknown). No reading offered. Lexicon swaps on this instrument are now a knob (rule 3).

@@ -1,0 +1,3822 @@
+{
+ "target": {
+  "coverage": 0.4866666666666667,
+  "spl": -2.8308238133739025,
+  "fmap": {
+   "ing": "E",
+   "ed": "E",
+   "ly": "SE",
+   "s": "BE",
+   "e": "SE",
+   "y": "SE",
+   "d": "SE",
+   "t": "SE",
+   "n": "SE",
+   "r": "SE",
+   "other": "E"
+  },
+  "decode": "[?MNDMU+no+more] N [?STA] [?UNARE] [a+?SM] [?FRNENP] [not+?NP+been+?RCBB+not+?N+part+?INC] [part] [?N+more] [?OPREHLDUL+dances] [?TFXLC] [?TCXL] [nieces] [?AL] [?PRPPIT] [?XLYPPIY] [nieces] [?MEK+so+?INCDRCBR+not+press] [?WLD] [?RCC+borne] [?NT] [?SSNENTX+so] [?CRSLE] [?CL+turn] [?WLD] [nieces] [?ALWCP] [nieces+?TSME+learn+really+?URGLSNEASNWL+dances] [?NOP+for] [?NLSRE] [nieces] [?N+to+?GDD+many+?NCURERCBRNE] [to+no] [?TFR+no] [?NCBRTSE+nieces] [?INC] [failure] [?PQ+so] [?ONDE] 71 [nieces] [?CD+not] [?PQ+so] [?ONSDE] 74 [nieces] [pretty] [part] [?ONREDE] 75 [nieces] [?TF] [?NBCM+?SPSOLEMRDELU+so] [?TO+to] [?WLDN] [?WL+dances] 194 [?WLD'S] [nieces] [?TRFXL] [?ALPN+to] [glad] [so] [?R+to] [value] [matter] [city] [we] [?F+rotten] [?PU+return+?ONDRSEWLD] [nieces] [?NWLDLRCMSP] [no+?WLD] [?STS] [?MEXL] [?DULMT] 6 [?TU+not] [nieces+?XE] [?MUNSAIS+to+?N] [?MU] [?N+are] [?K+let] [?LRS+to] [try] [turn] [make+?N] [more] [?S+a+sound] [so] N [more] [?NMNRC+borne+?P+to+?2P+to+?WSRCB+kind] 26 [mile] 74 [?SPRK+so] [?29KCNOB] [?OLE] 175 [return] 35 [?GLE] [college] [?UUNUTKEBKR+so] [put+shall] 651 [?MT+can] [?H+told] [?NCUTC] [?TRQ] [?N+married] 99.84.52 [?U+no+pleasing+?U+care+?AO+letter+?N+sake+nearly] [?NSRE+one] [?PUTSEWLD] [nieces] 3 [?XORL] [?D+name] [nearly] [?1N2] [natural+?RC] [?B+any+notion+?CRS+no] [?LSP+not+?NG+supper+make+?RBSG+nieces+?NUXLR] [?MH] [cried] [?NMRE] [nieces] 1 2 [?MUND+dollar]"
+ },
+ "ncbe": [
+  {
+   "seed": 7000,
+   "coverage": 0.332,
+   "spl": -2.9363779373423453,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "SE",
+    "d": "E",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": "[?RENLRNBW+no] N [?LPN] [?RTC+not] [?SSMR] [?SSSAPK] [?U+?ALLRPTCRSDB+?SWLNNBRCTDB] [dollar] [?ON+no] [?LSASAKRPRR+nice] [?UECPM] [?TSRN] [nice] [?RE] [?RP9EVO] [?TXNEMWB] [nice] [?APLTDE+?TEQNMINNOBU+her] [?CRB] [?TLSLU+can] [?SY] [?SRHSCT+car] [coming+?CE] [part+poor] [?CRB] [nice] [?RTMGK] [nice+?EONENR+poor+?TDNDS+?DRETETSURMR+nice] [?R1T+for] [?MTEXE] [nice] [?RSTLCP+?NCBPGTANINN+turned] [?'TFE] [?E2PLE] [?DPRRN+silence] [?TRW] [?EU+so] [?B+been] [reasons] 71 [nice] [?NW+run] [?B+been] [?EOS+not] 74 [nice] [?XNUSE] [dollar] [?UP+spend] 75 [nice] [?CU] [?DUB+?RDDNMTRSRCL+nearly] [?RN+out] [?LFTR] [his+?P+nice] 194 [?LRNSI] [nice] [?RLLTD] [?ENN+no] [readily] [?RE] [?UTE] [?S2SE] [?E+my] [room] [to] [?F+easy] [?DRUDC+?LMLUMETROYS] [nice] [?NSNUCRTWEU] [?EMEOM] [?RSR] [?MCIR] [?CLXMN] 6 [?NUESE] [nice+bit] [?LBMATENERN] [?GR] [?RE+been] [?I+no] [?CSNLE] [?H+to] [?H+to] [?GXELC] [?N+so] [?UNMN+mr] [?RE] N [?N+so] [?CWGEPAETPLP+looked+?PNNNLRE+no+?SE] 26 [letter] 74 [?FPT+east] [?ESLSQSN] [glad] 175 [?CS+for] 35 [named] [?KE+to] [?DTWMNLNMD+so] [?WRDSTFE] 651 [?RT+can] [?TR+to] [?EXEWM] [?KPC] [?OLEE] 99.84.52 [?LCLSFLCOKNK+?D2LDEXMUSRL+in+seeing] [?RSEDS+no] [?SD+and+?DXS] [nice] 3 [?CLCE] [?OC+no] [?N+a] [?NSN] [?LSWSTNR] [?SOM+?ELGSPNLWRPE] [?LARLUPNL+not+?TDNRSADLUP+nice+?SONKL] [?TN] [?KLE] [?OLEE] [nice] 1 2 [?SCXN+sorry]"
+  },
+  {
+   "seed": 7001,
+   "coverage": 0.33866666666666667,
+   "spl": -2.942564157690509,
+   "fmap": {
+    "ing": "BE",
+    "ed": "E",
+    "ly": "E",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7002,
+   "coverage": 0.388,
+   "spl": -2.9518051123929934,
+   "fmap": {
+    "ing": "SE",
+    "ed": "",
+    "ly": "E",
+    "s": "",
+    "e": "BE",
+    "y": "SE",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7003,
+   "coverage": 0.36533333333333334,
+   "spl": -2.9797344144582922,
+   "fmap": {
+    "ing": "",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7004,
+   "coverage": 0.352,
+   "spl": -2.9648185159465767,
+   "fmap": {
+    "ing": "BE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7005,
+   "coverage": 0.368,
+   "spl": -2.9213597853609627,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "",
+    "d": "",
+    "t": "E",
+    "n": "E",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7006,
+   "coverage": 0.3626666666666667,
+   "spl": -2.9004567348602577,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7007,
+   "coverage": 0.39466666666666667,
+   "spl": -2.9101661035878643,
+   "fmap": {
+    "ing": "BE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7008,
+   "coverage": 0.3293333333333333,
+   "spl": -2.9454382043320777,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7009,
+   "coverage": 0.38266666666666665,
+   "spl": -2.9555430844965445,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7010,
+   "coverage": 0.36133333333333334,
+   "spl": -2.946998730144521,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7011,
+   "coverage": 0.38,
+   "spl": -2.935412332971347,
+   "fmap": {
+    "ing": "BE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "BE",
+    "e": "SE",
+    "y": "E",
+    "d": "E",
+    "t": "SE",
+    "n": "BE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7012,
+   "coverage": 0.3626666666666667,
+   "spl": -2.929275318718422,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7013,
+   "coverage": 0.35733333333333334,
+   "spl": -2.938334767221092,
+   "fmap": {
+    "ing": "",
+    "ed": "",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7014,
+   "coverage": 0.3466666666666667,
+   "spl": -2.928867144623754,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7015,
+   "coverage": 0.356,
+   "spl": -2.943067237648389,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7016,
+   "coverage": 0.35733333333333334,
+   "spl": -2.946854474115306,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "E",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7017,
+   "coverage": 0.328,
+   "spl": -2.9523944026596354,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7018,
+   "coverage": 0.348,
+   "spl": -2.9684068946157742,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7019,
+   "coverage": 0.344,
+   "spl": -2.9271184129707417,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "BE",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7020,
+   "coverage": 0.3293333333333333,
+   "spl": -2.982158846018637,
+   "fmap": {
+    "ing": "",
+    "ed": "E",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7021,
+   "coverage": 0.37066666666666664,
+   "spl": -2.9550020688939567,
+   "fmap": {
+    "ing": "",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7022,
+   "coverage": 0.32,
+   "spl": -2.937997667527041,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7023,
+   "coverage": 0.31466666666666665,
+   "spl": -2.9371624072299696,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7024,
+   "coverage": 0.348,
+   "spl": -2.9343594735775724,
+   "fmap": {
+    "ing": "BE",
+    "ed": "E",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "E",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7025,
+   "coverage": 0.37866666666666665,
+   "spl": -2.933710776886181,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7026,
+   "coverage": 0.38533333333333336,
+   "spl": -2.957323656921987,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7027,
+   "coverage": 0.376,
+   "spl": -2.9443834483345395,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7028,
+   "coverage": 0.37866666666666665,
+   "spl": -2.9305243986227834,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "E",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7029,
+   "coverage": 0.352,
+   "spl": -2.949382758103441,
+   "fmap": {
+    "ing": "",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7030,
+   "coverage": 0.3293333333333333,
+   "spl": -2.943485789041967,
+   "fmap": {
+    "ing": "",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "E",
+    "n": "E",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7031,
+   "coverage": 0.34933333333333333,
+   "spl": -2.9113359079163845,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7032,
+   "coverage": 0.376,
+   "spl": -2.954077384020852,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "E",
+    "s": "E",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7033,
+   "coverage": 0.384,
+   "spl": -2.9259681389208767,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7034,
+   "coverage": 0.3413333333333333,
+   "spl": -2.943072830226725,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7035,
+   "coverage": 0.39066666666666666,
+   "spl": -2.9441563348139796,
+   "fmap": {
+    "ing": "BE",
+    "ed": "",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7036,
+   "coverage": 0.36933333333333335,
+   "spl": -2.925065128100315,
+   "fmap": {
+    "ing": "SE",
+    "ed": "",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7037,
+   "coverage": 0.37866666666666665,
+   "spl": -2.9157400419508304,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7038,
+   "coverage": 0.36933333333333335,
+   "spl": -2.9575694217049335,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7039,
+   "coverage": 0.38,
+   "spl": -2.9296633339476434,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7040,
+   "coverage": 0.384,
+   "spl": -2.9413259712133044,
+   "fmap": {
+    "ing": "",
+    "ed": "E",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7041,
+   "coverage": 0.316,
+   "spl": -2.942717136928715,
+   "fmap": {
+    "ing": "SE",
+    "ed": "",
+    "ly": "",
+    "s": "E",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7042,
+   "coverage": 0.36533333333333334,
+   "spl": -2.946082752130907,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7043,
+   "coverage": 0.33066666666666666,
+   "spl": -2.9520048302758553,
+   "fmap": {
+    "ing": "SE",
+    "ed": "",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7044,
+   "coverage": 0.372,
+   "spl": -2.9436472798845,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7045,
+   "coverage": 0.35333333333333333,
+   "spl": -2.939427215697888,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7046,
+   "coverage": 0.3373333333333333,
+   "spl": -2.925368891068111,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "BE",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7047,
+   "coverage": 0.3333333333333333,
+   "spl": -2.9308261406042377,
+   "fmap": {
+    "ing": "BE",
+    "ed": "E",
+    "ly": "",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7048,
+   "coverage": 0.39066666666666666,
+   "spl": -2.957951249835953,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "",
+    "e": "BE",
+    "y": "",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7049,
+   "coverage": 0.396,
+   "spl": -2.906897314558502,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7050,
+   "coverage": 0.31066666666666665,
+   "spl": -2.947205677703471,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7051,
+   "coverage": 0.35333333333333333,
+   "spl": -2.922161108981689,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7052,
+   "coverage": 0.364,
+   "spl": -2.9484935917807236,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7053,
+   "coverage": 0.3626666666666667,
+   "spl": -2.9097798438810885,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7054,
+   "coverage": 0.324,
+   "spl": -2.932961404071475,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7055,
+   "coverage": 0.38266666666666665,
+   "spl": -2.9357002114569024,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7056,
+   "coverage": 0.3373333333333333,
+   "spl": -2.9301338558234384,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7057,
+   "coverage": 0.348,
+   "spl": -2.9397350100686563,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7058,
+   "coverage": 0.37733333333333335,
+   "spl": -2.9384571424688497,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7059,
+   "coverage": 0.37866666666666665,
+   "spl": -2.9326842168207095,
+   "fmap": {
+    "ing": "",
+    "ed": "",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7060,
+   "coverage": 0.36,
+   "spl": -2.9494288281964587,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7061,
+   "coverage": 0.34933333333333333,
+   "spl": -2.92345869602735,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "E",
+    "s": "E",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7062,
+   "coverage": 0.364,
+   "spl": -2.961139809459925,
+   "fmap": {
+    "ing": "",
+    "ed": "E",
+    "ly": "SE",
+    "s": "BE",
+    "e": "SE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "BE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7063,
+   "coverage": 0.3293333333333333,
+   "spl": -2.947912374034795,
+   "fmap": {
+    "ing": "SE",
+    "ed": "",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7064,
+   "coverage": 0.368,
+   "spl": -2.9467667610349215,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7065,
+   "coverage": 0.316,
+   "spl": -2.9422530305860883,
+   "fmap": {
+    "ing": "",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7066,
+   "coverage": 0.36,
+   "spl": -2.9259559855104427,
+   "fmap": {
+    "ing": "",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7067,
+   "coverage": 0.37066666666666664,
+   "spl": -2.941444905944693,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7068,
+   "coverage": 0.3373333333333333,
+   "spl": -2.9449574212311314,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7069,
+   "coverage": 0.368,
+   "spl": -2.953161842494795,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7070,
+   "coverage": 0.324,
+   "spl": -2.967566472504781,
+   "fmap": {
+    "ing": "",
+    "ed": "E",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7071,
+   "coverage": 0.33066666666666666,
+   "spl": -2.9244008202873064,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7072,
+   "coverage": 0.36133333333333334,
+   "spl": -2.983569540723244,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7073,
+   "coverage": 0.368,
+   "spl": -2.9397681641855793,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7074,
+   "coverage": 0.37866666666666665,
+   "spl": -2.967631753335976,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "BE",
+    "e": "SE",
+    "y": "",
+    "d": "SE",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7075,
+   "coverage": 0.3586666666666667,
+   "spl": -2.933447554787481,
+   "fmap": {
+    "ing": "",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "E",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7076,
+   "coverage": 0.364,
+   "spl": -2.9104156818908367,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7077,
+   "coverage": 0.38533333333333336,
+   "spl": -2.9331099481649536,
+   "fmap": {
+    "ing": "SE",
+    "ed": "",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7078,
+   "coverage": 0.36133333333333334,
+   "spl": -2.9702047389952466,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "BE",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "E",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7079,
+   "coverage": 0.3626666666666667,
+   "spl": -2.9291475207411755,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "BE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7080,
+   "coverage": 0.3586666666666667,
+   "spl": -2.9502285927887493,
+   "fmap": {
+    "ing": "",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7081,
+   "coverage": 0.3506666666666667,
+   "spl": -2.9190022563556637,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7082,
+   "coverage": 0.364,
+   "spl": -2.929582638941735,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7083,
+   "coverage": 0.324,
+   "spl": -2.9525142554474963,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7084,
+   "coverage": 0.3466666666666667,
+   "spl": -2.899008201559929,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7085,
+   "coverage": 0.31333333333333335,
+   "spl": -2.965831573795688,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7086,
+   "coverage": 0.36933333333333335,
+   "spl": -2.9667758570251004,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7087,
+   "coverage": 0.31866666666666665,
+   "spl": -2.939786206106707,
+   "fmap": {
+    "ing": "SE",
+    "ed": "",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "E",
+    "n": "E",
+    "r": "BE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7088,
+   "coverage": 0.332,
+   "spl": -2.9072287619871515,
+   "fmap": {
+    "ing": "BE",
+    "ed": "E",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7089,
+   "coverage": 0.3453333333333333,
+   "spl": -2.9272819429705543,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7090,
+   "coverage": 0.3586666666666667,
+   "spl": -2.9342707893516065,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7091,
+   "coverage": 0.324,
+   "spl": -2.9344079370811316,
+   "fmap": {
+    "ing": "SE",
+    "ed": "",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7092,
+   "coverage": 0.37333333333333335,
+   "spl": -2.93918085289034,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7093,
+   "coverage": 0.344,
+   "spl": -2.912301585856644,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7094,
+   "coverage": 0.356,
+   "spl": -2.914488923543901,
+   "fmap": {
+    "ing": "",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7095,
+   "coverage": 0.38266666666666665,
+   "spl": -2.9383825033477744,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7096,
+   "coverage": 0.34,
+   "spl": -2.945794840478311,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7097,
+   "coverage": 0.364,
+   "spl": -2.956811511481127,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "",
+    "s": "E",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7098,
+   "coverage": 0.31333333333333335,
+   "spl": -2.948485330966085,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7099,
+   "coverage": 0.37466666666666665,
+   "spl": -2.9348086253497527,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7100,
+   "coverage": 0.38666666666666666,
+   "spl": -2.953790683512496,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7101,
+   "coverage": 0.36,
+   "spl": -2.9270975931685506,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "E",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7102,
+   "coverage": 0.3453333333333333,
+   "spl": -2.9480302572641084,
+   "fmap": {
+    "ing": "",
+    "ed": "E",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7103,
+   "coverage": 0.36133333333333334,
+   "spl": -2.934935113187256,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7104,
+   "coverage": 0.356,
+   "spl": -2.9490681135952768,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7105,
+   "coverage": 0.37333333333333335,
+   "spl": -2.9618520867770033,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7106,
+   "coverage": 0.3586666666666667,
+   "spl": -2.9554891769545737,
+   "fmap": {
+    "ing": "E",
+    "ed": "",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7107,
+   "coverage": 0.324,
+   "spl": -2.9470770785243197,
+   "fmap": {
+    "ing": "BE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7108,
+   "coverage": 0.32266666666666666,
+   "spl": -2.9621005923632464,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7109,
+   "coverage": 0.348,
+   "spl": -2.9434580063225253,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7110,
+   "coverage": 0.3466666666666667,
+   "spl": -2.9484661987733616,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7111,
+   "coverage": 0.3506666666666667,
+   "spl": -2.9049092727621204,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "E",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7112,
+   "coverage": 0.37066666666666664,
+   "spl": -2.920763554568055,
+   "fmap": {
+    "ing": "",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7113,
+   "coverage": 0.3506666666666667,
+   "spl": -2.9318183343301887,
+   "fmap": {
+    "ing": "",
+    "ed": "E",
+    "ly": "",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7114,
+   "coverage": 0.376,
+   "spl": -2.941234879800921,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7115,
+   "coverage": 0.36533333333333334,
+   "spl": -2.9487517449460756,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7116,
+   "coverage": 0.34,
+   "spl": -2.946998779187581,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7117,
+   "coverage": 0.31733333333333336,
+   "spl": -2.9454948103321144,
+   "fmap": {
+    "ing": "E",
+    "ed": "",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7118,
+   "coverage": 0.37466666666666665,
+   "spl": -2.9210371505267116,
+   "fmap": {
+    "ing": "",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7119,
+   "coverage": 0.37466666666666665,
+   "spl": -2.954630102476944,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "BE",
+    "e": "SE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "BE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7120,
+   "coverage": 0.352,
+   "spl": -2.9749074892516862,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7121,
+   "coverage": 0.3413333333333333,
+   "spl": -2.932999125035299,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "E",
+    "n": "",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7122,
+   "coverage": 0.31466666666666665,
+   "spl": -2.9602595690210336,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7123,
+   "coverage": 0.35333333333333333,
+   "spl": -2.9457802988423745,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7124,
+   "coverage": 0.344,
+   "spl": -2.943478604743879,
+   "fmap": {
+    "ing": "BE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7125,
+   "coverage": 0.364,
+   "spl": -2.9606677336554132,
+   "fmap": {
+    "ing": "",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7126,
+   "coverage": 0.36,
+   "spl": -2.948251553154023,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7127,
+   "coverage": 0.36,
+   "spl": -2.938567022337369,
+   "fmap": {
+    "ing": "BE",
+    "ed": "E",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7128,
+   "coverage": 0.35733333333333334,
+   "spl": -2.9405427306829535,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7129,
+   "coverage": 0.3413333333333333,
+   "spl": -2.9255721960562897,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7130,
+   "coverage": 0.37066666666666664,
+   "spl": -2.9595142209042757,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7131,
+   "coverage": 0.36,
+   "spl": -2.920964794883546,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7132,
+   "coverage": 0.368,
+   "spl": -2.942784948209034,
+   "fmap": {
+    "ing": "SE",
+    "ed": "",
+    "ly": "SE",
+    "s": "",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7133,
+   "coverage": 0.364,
+   "spl": -2.9683698461629,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7134,
+   "coverage": 0.35733333333333334,
+   "spl": -2.916979651933616,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7135,
+   "coverage": 0.392,
+   "spl": -2.9422771688504574,
+   "fmap": {
+    "ing": "BE",
+    "ed": "E",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7136,
+   "coverage": 0.38266666666666665,
+   "spl": -2.911926406551748,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7137,
+   "coverage": 0.356,
+   "spl": -2.9128537484006825,
+   "fmap": {
+    "ing": "BE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7138,
+   "coverage": 0.352,
+   "spl": -2.9515737321828364,
+   "fmap": {
+    "ing": "SE",
+    "ed": "",
+    "ly": "SE",
+    "s": "",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7139,
+   "coverage": 0.368,
+   "spl": -2.895947135484249,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7140,
+   "coverage": 0.35333333333333333,
+   "spl": -2.9606583205314716,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7141,
+   "coverage": 0.364,
+   "spl": -2.930941692920415,
+   "fmap": {
+    "ing": "",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "",
+    "d": "E",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7142,
+   "coverage": 0.344,
+   "spl": -2.9422018347628804,
+   "fmap": {
+    "ing": "",
+    "ed": "E",
+    "ly": "E",
+    "s": "E",
+    "e": "BE",
+    "y": "",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7143,
+   "coverage": 0.36533333333333334,
+   "spl": -2.942138789603931,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7144,
+   "coverage": 0.364,
+   "spl": -2.9382987492435877,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "BE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7145,
+   "coverage": 0.39466666666666667,
+   "spl": -2.9236680465503873,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7146,
+   "coverage": 0.34933333333333333,
+   "spl": -2.9358884473232667,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7147,
+   "coverage": 0.37733333333333335,
+   "spl": -2.915852489962863,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7148,
+   "coverage": 0.36533333333333334,
+   "spl": -2.9738957255805762,
+   "fmap": {
+    "ing": "SE",
+    "ed": "",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7149,
+   "coverage": 0.3466666666666667,
+   "spl": -2.9477986576121267,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7150,
+   "coverage": 0.376,
+   "spl": -2.9438884167987993,
+   "fmap": {
+    "ing": "",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7151,
+   "coverage": 0.3426666666666667,
+   "spl": -2.972128342618911,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7152,
+   "coverage": 0.36933333333333335,
+   "spl": -2.978557213024816,
+   "fmap": {
+    "ing": "",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7153,
+   "coverage": 0.37066666666666664,
+   "spl": -2.9350986370132723,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "",
+    "t": "SE",
+    "n": "E",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7154,
+   "coverage": 0.3426666666666667,
+   "spl": -2.9240129530096612,
+   "fmap": {
+    "ing": "SE",
+    "ed": "BE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7155,
+   "coverage": 0.3413333333333333,
+   "spl": -2.960820563513738,
+   "fmap": {
+    "ing": "E",
+    "ed": "",
+    "ly": "E",
+    "s": "",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7156,
+   "coverage": 0.3426666666666667,
+   "spl": -2.9441351559608937,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7157,
+   "coverage": 0.33866666666666667,
+   "spl": -2.926711559411137,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7158,
+   "coverage": 0.3893333333333333,
+   "spl": -2.901882973287133,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7159,
+   "coverage": 0.33066666666666666,
+   "spl": -2.9393782566275903,
+   "fmap": {
+    "ing": "E",
+    "ed": "",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "SE",
+    "d": "",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7160,
+   "coverage": 0.368,
+   "spl": -2.9248931804911886,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "BE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7161,
+   "coverage": 0.30666666666666664,
+   "spl": -2.9477991667661803,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "E",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7162,
+   "coverage": 0.368,
+   "spl": -2.922981569422374,
+   "fmap": {
+    "ing": "",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7163,
+   "coverage": 0.37066666666666664,
+   "spl": -2.9365333166758854,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "E",
+    "s": "",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7164,
+   "coverage": 0.352,
+   "spl": -2.958306531190448,
+   "fmap": {
+    "ing": "",
+    "ed": "E",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7165,
+   "coverage": 0.3546666666666667,
+   "spl": -2.9461052101479526,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7166,
+   "coverage": 0.33066666666666666,
+   "spl": -2.9290534095667997,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7167,
+   "coverage": 0.332,
+   "spl": -2.9491321875849676,
+   "fmap": {
+    "ing": "",
+    "ed": "",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7168,
+   "coverage": 0.368,
+   "spl": -2.9501238039539635,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7169,
+   "coverage": 0.37866666666666665,
+   "spl": -2.9176331604177714,
+   "fmap": {
+    "ing": "",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7170,
+   "coverage": 0.3426666666666667,
+   "spl": -2.9089009322114414,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7171,
+   "coverage": 0.34933333333333333,
+   "spl": -2.9715436798571444,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "BE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7172,
+   "coverage": 0.3586666666666667,
+   "spl": -2.9234538320528705,
+   "fmap": {
+    "ing": "SE",
+    "ed": "",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7173,
+   "coverage": 0.352,
+   "spl": -2.945828791613089,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7174,
+   "coverage": 0.36,
+   "spl": -2.936473423000932,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7175,
+   "coverage": 0.37733333333333335,
+   "spl": -2.9282984257377183,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7176,
+   "coverage": 0.3466666666666667,
+   "spl": -2.9192450300909853,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7177,
+   "coverage": 0.3893333333333333,
+   "spl": -2.92180238691304,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7178,
+   "coverage": 0.33466666666666667,
+   "spl": -2.9192463379135085,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "BE",
+    "e": "BE",
+    "y": "SE",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7179,
+   "coverage": 0.38666666666666666,
+   "spl": -2.9000237954274306,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7180,
+   "coverage": 0.3466666666666667,
+   "spl": -2.9487448623963473,
+   "fmap": {
+    "ing": "",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7181,
+   "coverage": 0.3893333333333333,
+   "spl": -2.9229973758267964,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7182,
+   "coverage": 0.3506666666666667,
+   "spl": -2.9299864806382474,
+   "fmap": {
+    "ing": "",
+    "ed": "E",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7183,
+   "coverage": 0.38133333333333336,
+   "spl": -2.958467734534214,
+   "fmap": {
+    "ing": "E",
+    "ed": "E",
+    "ly": "",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7184,
+   "coverage": 0.3453333333333333,
+   "spl": -2.970267157042588,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "BE",
+    "e": "SE",
+    "y": "E",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "BE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7185,
+   "coverage": 0.36933333333333335,
+   "spl": -2.939294479451094,
+   "fmap": {
+    "ing": "E",
+    "ed": "",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7186,
+   "coverage": 0.3453333333333333,
+   "spl": -2.9283053925057683,
+   "fmap": {
+    "ing": "BE",
+    "ed": "",
+    "ly": "SE",
+    "s": "",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7187,
+   "coverage": 0.3893333333333333,
+   "spl": -2.908424535614355,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7188,
+   "coverage": 0.36666666666666664,
+   "spl": -2.9370243657621633,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "E",
+    "e": "BE",
+    "y": "",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7189,
+   "coverage": 0.38133333333333336,
+   "spl": -2.960316999624581,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7190,
+   "coverage": 0.36133333333333334,
+   "spl": -2.9463754249983047,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7191,
+   "coverage": 0.348,
+   "spl": -2.9364267643587914,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "SE",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7192,
+   "coverage": 0.37333333333333335,
+   "spl": -2.9105310125980446,
+   "fmap": {
+    "ing": "",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "E",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7193,
+   "coverage": 0.37466666666666665,
+   "spl": -2.939534749487446,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "SE",
+    "n": "SE",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7194,
+   "coverage": 0.3546666666666667,
+   "spl": -2.9430972235606405,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "SE",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7195,
+   "coverage": 0.3586666666666667,
+   "spl": -2.940752963667165,
+   "fmap": {
+    "ing": "",
+    "ed": "BE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7196,
+   "coverage": 0.336,
+   "spl": -2.9575180553234275,
+   "fmap": {
+    "ing": "SE",
+    "ed": "E",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "E",
+    "r": "SE",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7197,
+   "coverage": 0.388,
+   "spl": -2.9518091108360376,
+   "fmap": {
+    "ing": "BE",
+    "ed": "",
+    "ly": "SE",
+    "s": "E",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "SE",
+    "n": "SE",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7198,
+   "coverage": 0.39066666666666666,
+   "spl": -2.9286100843841236,
+   "fmap": {
+    "ing": "E",
+    "ed": "SE",
+    "ly": "SE",
+    "s": "SE",
+    "e": "BE",
+    "y": "",
+    "d": "",
+    "t": "SE",
+    "n": "E",
+    "r": "E",
+    "other": "E"
+   },
+   "decode": null
+  },
+  {
+   "seed": 7199,
+   "coverage": 0.33866666666666667,
+   "spl": -2.9517121608839365,
+   "fmap": {
+    "ing": "SE",
+    "ed": "SE",
+    "ly": "E",
+    "s": "SE",
+    "e": "BE",
+    "y": "E",
+    "d": "SE",
+    "t": "E",
+    "n": "SE",
+    "r": "E",
+    "other": "SE"
+   },
+   "decode": null
+  }
+ ]
+}
