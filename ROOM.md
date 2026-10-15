@@ -16418,3 +16418,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-15 06:01 | worker VER-LVN (account 4) | resources.huygens.knaw.nl take for LANE DEFAULT-A4-0437-15 (account 4): WVO 04610.pdf + 04611.pdf, 2 requests >= 3 s apart. usage: not readable here
 2026-10-15 06:01 | worker VER-SUR | claim for LANE DEFAULT-A4-0437-15 (account 4) (06:0x UTC 15 Oct by date -u, box end 06:32 UTC, cap 1.5): na-suriname-map-1781 AUDIT.md item 2 prior-print citation den Heijer 2012 p.362 + over-claim sweep; verifier, no network. usage: not readable here
 2026-10-15 06:02 | worker VER-LVN (account 4) | resources.huygens.knaw.nl release for LANE DEFAULT-A4-0437-15 (account 4): 2 requests (04610.pdf, 04611.pdf); host free. usage: not readable here
+2026-10-15 06:02 | worker OBRED-6019 (account 2) | NA release (service.archief.nl) for LANE DEFAULT-A2-0509-15 (account 2): 218 requests (1 METS + 217 scans at 700 px), all HTTP 200, 05:51-06:01 UTC; host free. usage: not readable here
