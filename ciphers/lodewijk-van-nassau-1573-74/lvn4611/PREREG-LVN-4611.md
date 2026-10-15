@@ -54,3 +54,19 @@ Two contact-sheet rounds; all 78 tight crops sit on their token before the read.
   L30's words and three numerals into L29; a duplicate, not a reading question. L29/19-28 (A = this line's ink) and L30/10-22 (A-only,
   B gap) are placed and read.
 So unit p1 reads 68 targets + 10 controls = 78 rows, in four blind Sonnet calls (20/20/19/19 rows; controls 3/3/2/2).
+
+## Placement note, unit p3 (LVN-PIN, 15 Oct 2026 05:2x UTC by date -u; pushed before the read is opened)
+Job LVN-PIN (LANE DEFAULT-A4-0437-15, account 4) runs unit p3 under this PREREG unchanged (rows lvn4611/key_p3.tsv, gate >= 8/10, same
+settle rule, one blind Sonnet call). 300-dpi render of WVO 04611.pdf p3 sha1 add43302eb94... (same as above; PDF fetched once 05:1x UTC).
+**Line-box correction (placement only).** On p3 the committed 150-dpi boxes run one line above the transcription's numbering: box
+04611_p3_L01 holds the page's first written line, "diy 78, 81, 28, 200, 9, 1?6, 120, 82, 29, 138. 127. 12, 81, 21, 77, 84, 111, 64, 124."
+(read by eye at 300 dpi, not graded), which is in no 4611 transcription (ciphertext_4611_pre.tsv p3 starts "quil pourrons 75 6 5 ...",
+the ink of box p3_L02; p2 ends "Je croy que vous trouvez"). Transcription line p3_Lk = box p3_L(k+1), checked line by line on ruled
+300-dpi strips for L01-L09. `lvn4611/shift_boxes.py` writes the shifted box map (scratch) used by blobs.py and crops.py for this unit.
+Centres: `lvn4611/blobmap_p3.txt` -> `mk_tok.py` -> two rows moved by hand (p3_L04/7 to x 1295 hw 45, the "15" after "particulierement"
+rather than the following 25; p3_L04/14 to x 1920 hw 55) -> `lvn4611/tok_p3.tsv`; one contact-sheet round plus one check of the two
+moved crops; every tight crop sits on its token.
+Not placed (stays M, not read): **P323 p3_L08/8 (60)**: the image has one token "voz/boz" between "a" (p3_L08/7) and "bonnes" (/10),
+where the transcription has two rows (/8 60 and /9 =bon); a segmentation question, not a reading one.
+So unit p3 reads 15 targets + 10 controls = 25 rows in one blind Sonnet call.
+The missing first line is a transcription gap (about 19 cipher numerals), logged in NOTES.md; not added to any ciphertext by this job.
