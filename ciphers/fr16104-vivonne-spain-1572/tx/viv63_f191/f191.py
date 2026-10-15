@@ -10,6 +10,10 @@ their order within each pass (the shared tool lists each pass's insertion as its
 Rule (PREREG 3): >= 3 of 4 votes -> settled (a '-' majority drops the column); 2-2 on a tx/viv63_decode RULES pair -> the rule's
 sign, settled; else the plurality sign (ties: C if C == D, else A's), FLAGGED; a strict '-' plurality drops the column.
 Writes rec.tsv, decode.tsv (never reading_piece63.tsv); --stats also stats.json + owner_questions.tsv; --check: rec/decode stale -> 1.
+--override TSV [--tag T] (PREREG-VIVPACKET3 s.5, 15 Oct 2026): apply the owner's sorter placements (columns line, pos, new_sign, action:
+placed -> that sign, flag cleared, how 'owner'; new-sign -> the NEWn sign, outside the key, U; anything else -> unchanged) to the
+reconciled lines in memory and write stats_<T>.json, decode_<T>.tsv, owner_questions_<T>.tsv; 'before' is then the committed
+reconciliation (rec.tsv), 'after' the overridden lines. rec.tsv and decode.tsv are never touched by --override.
 """
 import collections, json, os, random, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -143,6 +147,40 @@ def build():
     return P, lines, '\n'.join(rec) + '\n', '\n'.join(dec) + '\n'
 
 
+def render_decode(lines):
+    k = vd.key()
+    dec = ['line\tcodes\tdecode\tgrades']
+    for line, seq in lines.items():
+        d, g = '', ''
+        for s, flag, _, _ in seq:
+            if s not in k:
+                d += '_'; g += 'U'
+            else:
+                d += k[s][0]; g += 'M' if (flag or k[s][1] == 'M') else 'H'
+        dec.append(f'{line}\t{" ".join(x[0] for x in seq)}\t{d}\t{g}')
+    return '\n'.join(dec) + '\n'
+
+
+def apply_override(lines, path):
+    """PREREG-VIVPACKET3 s.5: the owner's placements replace the plurality at the named positions; returns a deep copy and a log."""
+    import copy
+    out = copy.deepcopy(lines); log = []
+    for ln in open(path, encoding='utf-8'):
+        if ln.startswith('#') or ln.startswith('line\t') or not ln.strip():
+            continue
+        f = ln.rstrip('\n').split('\t')
+        line, pos, new, act = f[0], int(f[1]), f[5], f[6]
+        old = out[line][pos - 1]
+        if act == 'placed':
+            out[line][pos - 1] = [new, False, 'owner', old[3]]
+        elif act == 'new-sign':
+            out[line][pos - 1] = [new, False, 'owner-new', old[3]]
+        else:
+            act = 'unchanged'
+        log.append((line, pos, old[0], int(old[1]), new, act))
+    return out, log
+
+
 def before_lines():
     return {l: [[c, f, '', None] for c, f in seq] for l, seq in v63.page_tokens('f191r')[0].items()}
 
@@ -172,7 +210,7 @@ def longest_H(s, meta):
     return dict(letters=n, text=s[b:e], lines=f"{meta[b]['line']}-{meta[e - 1]['line']}" if n else '')
 
 
-def stats(P, lines):
+def stats(P, lines, before=None, tag=''):
     import viv63_test as t, viv53G_decode as g, viv53L_stretches as st, judge_plaintext as jp, vivanchor_gates as va, vivk_test as vt
     res = {'seed': SEED}
     # (a) err_2reader per pair
@@ -187,7 +225,8 @@ def stats(P, lines):
             pairs[names[x] + names[y]] = round(1 - a / max(1, c), 3)
     res['err_2reader'] = pairs
     res['line_mapping'] = dict(zip(('same_id_best_of_36', 'rows'), mapping(P)))
-    B = before_lines()
+    B = before if before is not None else before_lines()
+    sfx = ('_' + tag) if tag else ''
     for tag, L in (('before', B), ('after', lines)):
         s, meta = page_letters(L)
         cnt = collections.Counter(m['g'] for m in meta)
@@ -241,16 +280,29 @@ def stats(P, lines):
                     tile = f"c196_f191r_dr_{m['line']}_s{1 if m['pos'] <= n * 0.55 else 2}"
                     q.append(f"{si}\t{o['lines']}\t{m['line']}\t{m['pos']}\t{m['code']}\t{s[i]}\t{m['g']}\t{m.get('how', '')}\t"
                              f"{'/'.join(m['votes'] or [])}\t{tile}")
-            open(os.path.join(HERE, 'owner_questions.tsv'), 'w').write('\n'.join(q) + '\n')
+            open(os.path.join(HERE, 'owner_questions' + sfx + '.tsv'), 'w').write('\n'.join(q) + '\n')
     for tag in ('before', 'after'):
         for o in res[tag]['stretch']['top']:
             o.pop('b'); o.pop('e')
-    json.dump(res, open(os.path.join(HERE, 'stats.json'), 'w'), indent=1, ensure_ascii=False)
+    json.dump(res, open(os.path.join(HERE, 'stats' + sfx + '.json'), 'w'), indent=1, ensure_ascii=False)
     return res
 
 
 def main():
     P, lines, rec, dec = build()
+    if '--override' in sys.argv:
+        path = sys.argv[sys.argv.index('--override') + 1]
+        tag = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else 'override'
+        over, log = apply_override(lines, path)
+        open(os.path.join(HERE, 'decode_' + tag + '.tsv'), 'w', encoding='utf-8').write(render_decode(over))
+        print('override', path, 'rows', len(log), collections.Counter(x[5] for x in log))
+        if '--stats' in sys.argv:
+            res = stats(P, over, before=lines, tag=tag)
+            for t in ('before', 'after'):
+                print(t, res[t]['grades'], 'longest_H', res[t]['longest_H_run'], 'stretch top1', res[t]['stretch']['real_top1'],
+                      'null p99', res[t]['stretch']['null_top1_p99'], 'clears_42_clean', res[t]['clears_42_clean'],
+                      'b2', res[t]['gates']['verdict_b2'], 'wrong', res[t]['gates']['verdict_wrong_keys'])
+        return
     files = {os.path.join(HERE, 'rec.tsv'): rec, os.path.join(HERE, 'decode.tsv'): dec}
     if '--check' in sys.argv:
         stale = [p for p, x in files.items() if not os.path.exists(p) or open(p, encoding='utf-8').read() != x]

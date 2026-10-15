@@ -1,0 +1,36 @@
+# PREREG-VIVPACKET3 s.5 + Addenda B/C/D: the owner's placements on https://claude.ai/artifact/F5Z4DJ8vDxFoRwa5zFpXMU (34 moves exported 15 Oct 2026 01:3x UTC), one row per question tile; placed -> the position's sign becomes the pile code (flag cleared); new-sign -> NEWn (outside the key, U); not-letter -> unchanged (not registered; logged post-hoc). Consumed by tx/viv63_f191/f191.py --override.
+line	pos	sid	qid	pile	new_sign	action	rec_sign	rec_flag	q_code
+L08	2	f191r_L08_s1_01_002	Q22	m	m	placed	y	0	y
+L08	14	f191r_L08_s1_01_012	Q23	unsorted-h	NEW1	new-sign	s	0	s
+L08	20	f191r_L08_s1_01_019	Q38	unsorted-i	NEW2	new-sign	r	0	r
+L08	21	f191r_L08_s1_01_020	Q19	unsorted-g	NEW3	new-sign	g	1	g
+L08	25	f191r_L08_s2_01_005	Q39	unsorted-n	NEW4	new-sign	4	1	4
+L08	28	f191r_L08_s2_01_007	Q17	s	s	placed	s	0	s
+L08	31	f191r_L08_s2_01_011	Q28	unsorted-i	NEW2	new-sign	r	0	r
+L09	23	f191r_L09_s1_01_016	Q05	unsorted-d	NEW5	new-sign	d	1	d
+L09	25	f191r_L09_s1_01_018	Q29	NOT-LETTER		not-letter-unchanged	y	1	y
+L09	28	f191r_L09_s2_01_004	Q16	3	3	placed	3	0	3
+L10	1	f191r_L10_s1_01_001	Q33	unsorted-k	NEW6	new-sign	z	0	z
+L10	3	f191r_L10_s1_01_003	Q35	unsorted-l	NEW7	new-sign	d	1	d
+L10	17	f191r_L10_s1_01_013	Q34	3	3	placed	3	0	3
+L10	23	f191r_L10_s1_01_020	Q03	unsorted-c	NEW8	new-sign	c	0	c
+L10	24	f191r_L10_s1_01_021	Q20	unsorted-c	NEW8	new-sign	l	0	l
+L10	29	f191r_L10_s2_01_006	Q06	unsorted-e	NEW9	new-sign	z	0	z
+L10	35	f191r_L10_s2_01_012	Q21	m	m	placed	m	0	m
+L10	45	f191r_L10_s2_01_021	Q02	unsorted-b	NEW10	new-sign	s	0	s
+L11	9	f191r_L11_s1_01_009	Q31	s	s	placed	s	0	s
+L11	18	f191r_L11_s1_01_016	Q11	z	z	placed	s	0	s
+L11	35	f191r_L11_s2_01_010	Q15	unsorted-e	NEW9	new-sign	z	1	z
+L12	17	f191r_L12_s1_01_018	Q14	unsorted-f	NEW11	new-sign	x	0	x
+L12	32	f191r_L12_s2_01_010	Q37	unsorted-m	NEW12	new-sign	c	0	c
+L12	33	f191r_L12_s2_01_011	Q07	L	L	placed	l	0	l
+L12	37	f191r_L12_s2_01_014	Q36	unsorted-i	NEW2	new-sign	r	1	r
+L12	40	f191r_L12_s2_01_017	Q32	n	n	placed	r	0	r
+L13	10	f191r_L13_s1_01_010	Q40	unsorted-k	NEW6	new-sign	2	0	2
+L13	13	f191r_L13_s1_01_013	Q09	n	n	placed	n	0	n
+L13	16	f191r_L13_s1_01_017	Q27	n	n	placed	n	0	n
+L13	43	f191r_L13_s2_01_020	Q01	z	z	placed	x	0	x
+L14	3	f191r_L14_s1_01_004	Q04	a	a	placed	a	1	a
+L14	8	f191r_L14_s1_01_008	Q30	unsorted-j	NEW13	new-sign	V	0	V
+L14	9	f191r_L14_s1_01_009	Q08	3	3	placed	3	0	3
+L31	9	f191r_L31_s1_01_009	Q10	s	s	placed	s	1	s

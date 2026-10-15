@@ -128,3 +128,9 @@ key.tsv code f already means l. Pile g truth-r only (asserted); one g member (f.
 ## Addendum D (15 Oct 2026 01:1x UTC by date -u, account-4 parent, written before any placement was read): tie-break given to the owner mid-test
 
 While sorting Q01 (f191r_L13_s2_01_020) the owner asked which pile to use when the look-alike shape appears in several piles. Checked against the page's own DATA (every pile's tiles rendered to one sheet, scratchpad q01/all_piles.png): the z-with-stroke shape is 3 of 9 tiles in pile z, 1 of 12 in pile 3 (its last tile) and 1 of 12 in pile x (its seventh) -- the readers' merged labels leaking into the truth-consistent exemplars (R13/R15). The rule given to the owner, in these words: pick the pile where your shape is the biggest share of the pile; if it is a lone stray everywhere and no pile is built around it, choose "None of these: new sign"; ignore the single oddballs inside a pile. Consequence for scoring (s.5): the owner's label still replaces the plurality at that position as registered; a "new sign" answer still leaves U. The post-hoc tag on the result records that this tie-break was supplied during the test, not before it, and the three piles named here (z, 3, x) are listed in the result so a verifier can see which positions it could have touched. No pile, label or tile was changed.
+
+
+### Result (15 Oct 2026 02:0x UTC by date -u; the parent ran s.5 on the owner's 34 placements)
+Longest all-H run 37 -> 24; V_strict top-1 21 -> 17 (null p99 19 -> 16); no stretch >= 42 clean; f.191r stays D1 material; no verifier. Full table,
+the override file, the post-hoc tags (Addendum D's mid-test tie-break, the unregistered "Not a letter", zero Bad-cut presses against the owner's
+report of many bad cuts, piles not one shape each) and the next step: NOTES.md "VIV-PACKET3 result (15 Oct 2026)".

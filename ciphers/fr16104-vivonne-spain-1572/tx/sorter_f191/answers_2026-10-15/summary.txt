@@ -1,0 +1,36 @@
+{
+ "tiles": 243,
+ "by_status": {
+  "kept": 209,
+  "moved": 33,
+  "merged": 0,
+  "not-letter": 1,
+  "aside": 0,
+  "bad-cut": 0
+ },
+ "signs_before": 26,
+ "signs_after": 38,
+ "confirmed_piles": [],
+ "not_letter_piles": [
+  "NOT-LETTER"
+ ],
+ "merges": {},
+ "new_piles": [
+  "NOT-LETTER",
+  "unsorted-b",
+  "unsorted-c",
+  "unsorted-d",
+  "unsorted-e",
+  "unsorted-f",
+  "unsorted-g",
+  "unsorted-h",
+  "unsorted-i",
+  "unsorted-j",
+  "unsorted-k",
+  "unsorted-l",
+  "unsorted-m",
+  "unsorted-n"
+ ],
+ "mode": "blind",
+ "recuts": 1
+}
