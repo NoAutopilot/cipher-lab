@@ -157,3 +157,19 @@ at 2000 px, under ELEC-PAIR's pre-registered rule; barI, Zheavy and 4 could reac
 pairing rule) and ELEC-39 first; PREREG addendum committed before the fetch, rule unchanged. Pair each sign position with the print's name at
 the same place; report pairs per sign, agree/conflict with nr. 357 / f.51r values, and what grade the registered rule licenses (a key value
 only if the rule licenses it; conflicts to HYPOTHESES.md with witnesses). Item 37 is not part of this job. NOTES "## ELEC-356", Next updated.
+
+Wave 5 result (17:0x UTC): ELEC-356 2.34 D (f.84r-v = Kluckhohn nr. 356 word for word but the signs; 12 pairs, 0 conflicts; pooled with nr.
+357 under ELEC-PAIR's unchanged rule barI = Boheme and Zheavy = Saxe reach C; Kluckhohn names his nr. 316 as the source of the name-cipher
+resolution); ledgered and archived.
+
+## Wave 6 (17:1x UTC 15 Oct; one job, then close)
+
+### ELEC-316 (Opus, cap 2.5, box 50 min, archive.org <= 4, openapi.bnf.fr <= 1): fr5761-election-1519 read Kluckhohn nr. 316
+ELEC-356's Next (1) and (2): "read Kluckhohn nr. 316 (same volume, archive.org `bub_gb_0gFoAAAAMAAJ`, locate by the 'No. 3xx' running heads;
+~1-2 requests) and its own source line: if 316 is the key or a decipherment, it is a key source for this name-sign set (grade H) and for
+checking every C/M above, ~1.5; (2) settle the l.27 4|flag slot image-to-image against f.116r l.11/l.29/l.32 (openapi.bnf.fr f142 at 2400, 1
+request), ~1". Do (1) first: transcribe what nr. 316 prints about the signs (quote it, with page/leaf), name its manuscript source, and check
+every C/M name-sign value in this folder against it (agree / conflict per sign; conflicts to HYPOTHESES.md with witnesses, rule 4). A key
+value goes to key.tsv at H only if the print gives the sign-to-name table itself (an edited key, credited to Kluckhohn 1893 as a published
+source), otherwise as a lead. Then (2) only if under 60% of cap. NOTES "## ELEC-316", Next updated. Report what was found and where it was not
+found; do not classify novelty.
