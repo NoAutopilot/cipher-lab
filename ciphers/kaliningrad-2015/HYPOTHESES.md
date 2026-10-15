@@ -1331,3 +1331,36 @@ python3 tools/family_run.py ciphers/kaliningrad-2015/families/r15_kal13/spec_s1s
   --param ctrl_widths=7,10,5,12,9 --target-only-if-gated --decode-tag convB2st --label "KAL-2ST two-stage columnar x homophonic ru s1s, conv B"
 ```
 then the same with `--shuffle-target 1`.
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 15 Oct 2026 02:55 | columnar_homophonic | N=1066 K=28 restarts=2 corpus=s1s.txt.gz profile=target,widths=2-12,iters=40000,stage=two,ctrl_widths=7,10,5,12,9 | 1 | 0.850 (0.449-1.000) | -3605.091 | FAIL language: score=-1.7, null_p99=-2.082, real_p05=-0.904, real_median=-0.82, mode=both, N=1066 | yes (gate 0.6) | KAL-2ST two-stage columnar x homophonic ru s1s, conv B |
+| 15 Oct 2026 02:59 | columnar_homophonic | N=1066 K=28 restarts=2 corpus=s1s.txt.gz profile=target,widths=2-12,iters=40000,stage=two,ctrl_widths=7,10,5,12,9,shuffle_target=1 | 1 | 0.850 (0.449-1.000) | -3593.081 | FAIL language: score=-1.65, null_p99=-2.082, real_p05=-0.904, real_median=-0.82, mode=both, N=1066 | yes (gate 0.6) | KAL-2ST two-stage columnar x homophonic ru s1s, conv B, shuffle 1 |
+
+### KAL-2ST result (15 Oct 2026, 02:51-03:00 UTC by date -u; PREREG-KAL-2ST 11ba21b48 pushed before the scored run)
+
+| seed | true width | width picked | order | recovery (shift -12..12) |
+|---|---|---|---|---|
+| 1 | 7 | 7 | exact | 0.992 |
+| 2 | 10 | 10 | exact | 0.929 |
+| 3 | 5 | 5 | rotation of the true order | 0.880 |
+| 4 | 12 | 12 | partly wrong | 0.449 |
+| 5 | 9 | 9 | exact | 1.000 |
+
+Control mean **0.850** (0.449-1.000) against gate 0.6: gated (KAL-BIG's joint anneal: 0.291; R15-KAL14: 0.322). True width on 5 of 5.
+Target: width 9, order [5,1,7,6,2,0,8,4,3], score -3605.1 -- per-width stage-2 scores -3605 to -3715 with no outlier (the control's
+true width stood about 1000-1300 nats clear of every other width on every seed); **judge FAIL** (score -1.70, null_p99 -2.082,
+real_p05 -0.904). Shuffle 1 (target signs shuffled, same instrument): width 11, score -3593.1 (higher than the target's), **judge
+FAIL** (-1.65). By the pre-registered wording: a control-backed negative for an irregular columnar transposition (widths 2-12) of a
+homophonic ru19_lat substitution at convention B, conditional on the transcription (rule 2) and on the era-mismatched s1s corpus.
+Stage-1 statistic at the best order per width, target vs shuffle 1: w2 6090/5726, w3 6016/5986, w4 6348/5964, w5 6128/6372,
+w6 6564/6258, w7 6310/6276, w8 6826/6582, w9 6708/6726, w10 6808/6544, w11 6844/6776, w12 7104/6844 -- no width spikes (the
+control's true width read 6678-7764 against about 4000-4700 at the others).
+Descriptive, not pre-registered (computed after the scored runs, for the next brief): the cipher **as written** (no reordering)
+scores 6764 on the same statistic, against 5832 +- 154 (p95 6084, max 6330) for 200 shuffles of its own signs -- about 6 SD of
+sign-adjacency structure already in the written order. The five control ciphers as written (transposed) sit 0 to +2.9 SD above
+their own 50-shuffle means (4630/4416, 4010/4012, 4730/4424, 4212/4154, 3828/3716), while a control in its true order reads about
++30 SD (seed 5: 6678 against 3716 +- 87). The target sits between: more adjacency than a columnar transposition leaves, much less
+than a plain homophonic Russian stream carries. A lead for the next brief, not a test result.

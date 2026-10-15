@@ -727,3 +727,26 @@ Next step (different instrument, ~$2-3 CPU): the two-stage solve -- width from t
 reliable), column order from the sign-adjacency statistic between column ends, then the homophonic anneal on the untransposed
 stream; its own matched control first. `tools/gaps_check.py`: SKIP for an `open` target (no Remaining gaps/Escalation sections).
 Verdict: keep going (no outside blocker).
+
+## KAL-2ST, two-stage columnar + homophonic instrument (KAL-BIG's named different instrument), 15 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-15-acct1-default-0206-jobs.md` "KAL-2ST" (LANE DEFAULT-A1-0206-15, account 1). Disk + CPU only,
+no hosts, no subagents; runs serial. Intake gate (lane orchestrator, 02:4x UTC): exit 0.
+Instrument: `tools/families/columnar_homophonic.py --param stage=two` (offline test test_stage1_finds_order). Stage 1, per width
+2-12, with no language model: hill climb over column orders (100 restarts) on the sign-adjacency statistic of the untransposed
+stream (sum of n(n-1) over sign bigrams); the 2 best orders per width go on. Stage 2: the homophonic anneal on each fixed-order
+stream; the best stage-2 score picks the width. Pre-registered in HYPOTHESES.md "PREREG-KAL-2ST" (11ba21b48) before scoring.
+**Result: control 0.992 / 0.929 / 0.880 / 0.449 / 1.000, mean 0.850, gated (0.6); target judge FAIL (-1.70 vs real_p05 -0.904);
+shuffle-1 judge FAIL (-1.65).** The target shows no width standing out on either stage, where every control seed's true width
+did. This is a control-backed negative for an irregular columnar transposition (widths 2-12) of a homophonic Russian (ru19_lat s1s)
+substitution at convention B. It is conditional on the transcription (rule 2) and on a corpus 140 years off in era and register.
+Width 12 is the instrument's weak point (seed 4: 0.449).
+Descriptive, not pre-registered: the cipher as written already scores 6764 on the adjacency statistic, against 5832 +- 154 for
+200 shuffles of its own signs (about 6 SD). The transposed controls as written sit 0 to +2.9 SD above their shuffles; a control in
+its true order sits about +30 SD. The target is between the two: more adjacency than a columnar layer leaves, much less than a plain
+homophonic Russian stream (the homophonic, wordcode and nomenclator runs above tested the written order under their own controls).
+Status stays `open`; no reading. Rule 10: nothing here is a reading.
+Next step: with transposition at widths 2-12 now control-backed negative, the remaining untested shapes are a corpus matched to
+the find's era and register (no Soviet-era Russian corpus is on disk; building one is the cheap job, compare V6-PTCORP) and the
+2-leaf LOOK owed by prior_work.py (2 crops for a gloss/clear-copy check). `tools/gaps_check.py`: SKIP for an `open` target.
+Verdict: keep going (no outside blocker).
