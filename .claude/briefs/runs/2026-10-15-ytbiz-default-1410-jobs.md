@@ -94,3 +94,9 @@ reading change; gaps_check.
 ### WVH-CROP (Opus, cap 2, box 45 min, disk first, Huygens <= 1): willem-van-hessen-1567 higher-crop look at L3 p12-17 and L4 p20-26
 R10-WVHMIN's suggestion: taller crops of the minuut gloss key lines to settle `nine` / `compact-8`. PREREG the decision rule first; 2 crop
 calls. No reading of 1127 (unimaged, ASKS 31). NOTES "## WVH-CROP".
+
+## Wave 1 result (14:4x UTC): DEC1162-RK 2.73 N (split G 0.7241 < merged 0.7288, kept in *_split), NOA-TAM 0.58 N (no 1865 text reached),
+BNE-PRES 0.67 D (7/12 phrases in Paz y Meliá 1914), PIS-121B 4.14 N (FAIL 32 vs 34, gloss passes 25.4% apart), SAV-L29 2.74 D (line 29 M),
+CLIN-3502B 3.65 D (p.300 B2 PASS 37/42, text-known). Workers 14.51.
+Wave 2 sessions (14:45 UTC): HAR-37R session_01TmkNgSUKKsVibt9Dxus8P8; AVS-153 session_01QzgkdepnScgYGhF3BSpyjC; SUR-DH
+session_01981ngPSsb1iKgeeTCAAiXz (Sonnet); WVH-CROP session_01VcfjpdPR2NzzhAEczrCmEQ.
