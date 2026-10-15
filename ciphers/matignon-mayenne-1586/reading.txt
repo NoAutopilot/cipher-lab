@@ -1,176 +1,176 @@
 # Mayenne-Forget Cipher-1, Bourdeau's key applied by straight substitution (no beam search)
-# 12994 tokens, grades H 10074, M 1648, U 1272
-f110-1	m o i i i g d r [w] e g i l e e r o i u o [BOX] s u [U] r [T] e r [p] g e i c i r l i l e t t r u d e r g t e t i e r [BOX] [z] u [BOX] o u l [1] r
-f110-2	[z] r r i t e i u d e l [BOX] [z] p r n p i c e e l e p p u u r r i s c l e [4] [U] n i n t d [BOX] e [z] e c l o [BOX] u i n [z] f i [z] n
-f110-3	m [z] e [T] [BOX] e u d e c i r l l [T] p r [BOX] s l i [p] r e i e e i t i [BOX] e c [w] [BOX] o u r p [BOX] e n i [w] [BOX] i [z] i i t r e [z] i s r [U] n o i [z] n
-f110-4	l e n [z] l t d e [z] [T] i i d e n o i [z] [z] d e o c e i [U] [z] r e c l [T] t r n [BOX] l i m r e i l i t
-f110-5	c [BOX] d r i l e n m [4] s i i n e [4] e i t c o [U] r l e p e [BOX] d e s o [z] n [y] [w] i e r i [z] [BOX] m [z] l [BOX] o [z] t t e i d o [z] t c i
-f110-6	[p] e i [BOX] o o u c [w] e [p] o i u r f r e o t s i e l i i c l [BOX] r c i [T] t [z] o [BOX] [BOX] l r r e [4] e i t r e [4] i r r e [w] e c e [4] o r r [w] [BOX] e l e [T] o [z] i c r r s
-f110-7	o t [w] [BOX] r r u t [w] i i r [BOX] o u t r e [w] r [T] i [z] e r e [w] e c e u o c r [w] [BOX] e l e [T] o [z] i c r r i
-f110-8	[BOX] r [w] i i [z] r e [T] u [w] [BOX] [z] i r [T] r [BOX] e i t i e o r [BOX] r [w] [BOX] [z] e i t r e c [T] e i r i t l i [z] [BOX] e
-f110-9	l o o [BOX] e r l i r [D2] [z] o t c e u t [z] o r [4] i [p] [p] r e [4] e i t [w] [BOX] e u o u [p] [p] o e u c i r o e r e
+# 12994 tokens, grades H 10074, M 1648, S 418, U 854
+f110-1	m o i i i g d r [w] e g i l e e r o i u o [BOX] s u e r r e r [p] g e i c i r l i l e t t r u d e r g t e t i e r [BOX] [z] u [BOX] o u l [1] r
+f110-2	[z] r r i t e i u d e l [BOX] [z] p r n p i c e e l e p p u u r r i s c l e [4] e n i n t d [BOX] e [z] e c l o [BOX] u i n [z] f i [z] n
+f110-3	m [z] e r [BOX] e u d e c i r l l r p r [BOX] s l i [p] r e i e e i t i [BOX] e c [w] [BOX] o u r p [BOX] e n i [w] [BOX] i [z] i i t r e [z] i s r e n o i [z] n
+f110-4	l e n [z] l t d e [z] r i i d e n o i [z] [z] d e o c e i e [z] r e c l r t r n [BOX] l i m r e i l i t
+f110-5	c [BOX] d r i l e n m [4] s i i n e [4] e i t c o e r l e p e [BOX] d e s o [z] n [y] [w] i e r i [z] [BOX] m [z] l [BOX] o [z] t t e i d o [z] t c i
+f110-6	[p] e i [BOX] o o u c [w] e [p] o i u r f r e o t s i e l i i c l [BOX] r c i r t [z] o [BOX] [BOX] l r r e [4] e i t r e [4] i r r e [w] e c e [4] o r r [w] [BOX] e l e r o [z] i c r r s
+f110-7	o t [w] [BOX] r r u t [w] i i r [BOX] o u t r e [w] r r i [z] e r e [w] e c e u o c r [w] [BOX] e l e r o [z] i c r r i
+f110-8	[BOX] r [w] i i [z] r e r u [w] [BOX] [z] i r r r [BOX] e i t i e o r [BOX] r [w] [BOX] [z] e i t r e c r e i r i t l i [z] [BOX] e
+f110-9	l o o [BOX] e r l i r a [z] o t c e u t [z] o r [4] i [p] [p] r e [4] e i t [w] [BOX] e u o u [p] [p] o e u c i r o e r e
 f110-10	p l [BOX] r [w] e u [BOX] [p] [p] t i i o e r e t e i [BOX] i [w] u u [z] l i e n c i r o [z] u t i l r i [BOX] l t c r r
-f110-11	r [z] l i [T] o r e [p] t e i [BOX] [z] e [w] e l i [z] [BOX] e r [T] e r t [w] [BOX] [z] l i [BOX] [BOX] e u r l e r [z] i i r
-f110-12	[z] r e c l [BOX] r [z] o i e u t e [4] e i t [w] [BOX] e c i r l l i [T] [BOX] [z] i e [w] e [4] i r r s c [BOX] t i t r o i e t
-f110-13	c o [BOX] [T] c r e i e [w] [BOX] e l i [z] [BOX] e r [T] e r u t l i [BOX] r r [z] c l e i t [w] [BOX] e l e i r o e c e [BOX]
+f110-11	r [z] l i r o r e [p] t e i [BOX] [z] e [w] e l i [z] [BOX] e r r e r t [w] [BOX] [z] l i [BOX] [BOX] e u r l e r [z] i i r
+f110-12	[z] r e c l [BOX] r [z] o i e u t e [4] e i t [w] [BOX] e c i r l l i r [BOX] [z] i e [w] e [4] i r r s c [BOX] t i t r o i e t
+f110-13	c o [BOX] r c r e i e [w] [BOX] e l i [z] [BOX] e r r e r u t l i [BOX] r r [z] c l e i t [w] [BOX] e l e i r o e c e [BOX]
 f110-14	r i c t [p] o i t [4] e u i i n e [4] [4] [z] r [w] [BOX] r l [BOX] [z] [BOX] e u l r r i t c e r u [BOX] i [w]
 f110-15	[4] [z] r [w] [BOX] r l [BOX] [z] [BOX] e u l r r i t c e u l t c i [z] l [BOX] r i [BOX] r e u t r [z] i c [BOX] r [p] [w] [z] r e [w] [BOX] [z] r
-f110-16	r i [z] [z] [T] e [w] [BOX] [z] l i e i u e c o [BOX] i u o [z] t [4] [z] e [BOX] [p] c i [z] r e [w] [BOX] e [w] e l i o o i u e r [BOX] e e [T] o o i r [z] i r r i [z]
-f110-17	[z] l i e [4] e i l r [T] [BOX] [z] r i l l u i [z] r o i e t i i [BOX] r o o c i u [z] o i s [w] [BOX]
+f110-16	r i [z] [z] r e [w] [BOX] [z] l i e i u e c o [BOX] i u o [z] t [4] [z] e [BOX] [p] c i [z] r e [w] [BOX] e [w] e l i o o i u e r [BOX] e e r o o i r [z] i r r i [z]
+f110-17	[z] l i e [4] e i l r r [BOX] [z] r i l l u i [z] r o i e t i i [BOX] r o o c i u [z] o i s [w] [BOX]
 f110-18	o t i [BOX] e o [w] u [z] c e [BOX] [w] r [w] e r c e i o e c o o u r r u [z] i i r u c [BOX] [z] r [4] r r i t [BOX] [z] [z] l [z] e e i i t
-f110-19	[z] u o i i r i t [4] i [z] i t e n i i t [w] [BOX] i i [w] [w] i l l [z] [BOX] e [T] r e e l [T] e u e c e [BOX] l t r i r r
+f110-19	[z] u o i i r i t [4] i [z] i t e n i i t [w] [BOX] i i [w] [w] i l l [z] [BOX] e r r e e l r e u e c e [BOX] l t r i r r
 f110-20	r u i [w] [BOX] o [z] l r [4] c e u o [4] e [4] i i t [w] e o e e [BOX] [v] [w] [BOX] o e r r e i s u u t c c [z] t [z] r r l [w] i l [z] [v] c [z] [BOX] r l
 f110-21	u i [4] [z] [z] i [v] t e r [BOX] [v] e [4] e [z] l i e [BOX] r [w] e i e l e r i [z] r e c o [z] i o t e t [w] i [BOX] o [z] r l i c [z] i [v] c [BOX] r
-f110-22	[z] r e o o i u o o [z] u t r u [w] [BOX] e l o i [z] [z] n i [z] t u i [z] e [4] t [w] [BOX] [z] l u [v] [T] o [z] t i i [z] [z] o [v] u i [z] r o [w] o
-f110-23	c e i t u t r c [v] [z] [v] [T] [T] u i [BOX] u u [w] l e o t [v] [z] [4] r e o o [BOX] r u i [BOX] o u [v] o o [z] [BOX] u i [4] o i c l [T] t u o
-f110-24	[w] l [z] u r i [4] u c o [BOX] r [4] u [w] o i n e [T] u i o e l i [BOX] o u t r u i [w] [BOX] [z] [v] i [z] [v] u
-f110-25	e [BOX] o [z] u e l [v] u i i [v] [v] u u u [T] e [4] e o t i i l t [4] u [v] [4] e u i [BOX] [z] [v] t r u [w] [z] u o [T] u t
-f110-26	i [BOX] o [z] r i [BOX] [T] o [z] l i c [T] u [4] e i [v] [z] o o i o u [z] u n u [BOX] [z] [v] o i r u [z] l o i [BOX] u u
-f110-27	r l u i t e i [BOX] o u e [4] t [w] e u l i e [w] [T] [4] [4] u [BOX] [T] e u i i [v] u u o o [BOX] r [v] [z] l u u t
-f110-28	r o [z] u t u i [T] [4] [z] u [z] t [w] [BOX] [z] l [z] [4] [z] r i [v] u [z] t o [v] r u [z]
-f110-29	u l i e c [4] r [z] [T] i t o [w] t u e i t [z] e r r [4] i [BOX] l i t [w] [BOX] [z] l u o [z] t [v] r u [v] u c [4]
-f110-30	[z] [4] o [z] e i t i e t [w] [BOX] u l [T] u [4] e r i [4] i t [z]
+f110-22	[z] r e o o i u o o [z] u t r u [w] [BOX] e l o i [z] [z] n i [z] t u i [z] e [4] t [w] [BOX] [z] l u [v] r o [z] t i i [z] [z] o [v] u i [z] r o [w] o
+f110-23	c e i t u t r c [v] [z] [v] r r u i [BOX] u u [w] l e o t [v] [z] [4] r e o o [BOX] r u i [BOX] o u [v] o o [z] [BOX] u i [4] o i c l r t u o
+f110-24	[w] l [z] u r i [4] u c o [BOX] r [4] u [w] o i n e r u i o e l i [BOX] o u t r u i [w] [BOX] [z] [v] i [z] [v] u
+f110-25	e [BOX] o [z] u e l [v] u i i [v] [v] u u u r e [4] e o t i i l t [4] u [v] [4] e u i [BOX] [z] [v] t r u [w] [z] u o r u t
+f110-26	i [BOX] o [z] r i [BOX] r o [z] l i c r u [4] e i [v] [z] o o i o u [z] u n u [BOX] [z] [v] o i r u [z] l o i [BOX] u u
+f110-27	r l u i t e i [BOX] o u e [4] t [w] e u l i e [w] r [4] [4] u [BOX] r e u i i [v] u u o o [BOX] r [v] [z] l u u t
+f110-28	r o [z] u t u i r [4] [z] u [z] t [w] [BOX] [z] l [z] [4] [z] r i [v] u [z] t o [v] r u [z]
+f110-29	u l i e c [4] r [z] r i t o [w] t u e i t [z] e r r [4] i [BOX] l i t [w] [BOX] [z] l u o [z] t [v] r u [v] u c [4]
+f110-30	[z] [4] o [z] e i t i e t [w] [BOX] u l r u [4] e r i [4] i t [z]
 f110-31	[BOX] o [BOX] l [w] r o [z] u [v] [BOX] [z] t [BOX] r c c [4] o l e [4] c c [z] i u t i i t [w] [BOX] [z] [z]
-f110-32	i [z] e [4] [v] u u e r [w] [T] i c l [BOX] [v] [w] [BOX] u [4] [4] o [z] [w] u u t o [BOX] t [z] u r o [z] u e e [4] [4] r [z] t
-f110-33	u c e [BOX] l t i i [v] u u r e [T] c [w] [BOX] [z] l i u u e r
+f110-32	i [z] e [4] [v] u u e r [w] r i c l [BOX] [v] [w] [BOX] u [4] [4] o [z] [w] u u t o [BOX] t [z] u r o [z] u e e [4] [4] r [z] t
+f110-33	u c e [BOX] l t i i [v] u u r e r c [w] [BOX] [z] l i u u e r
 f110-34	[z] [4] [z] r t t i t [z] r c t [z] r [z] l u i u e r [z] t
 f110-35	c [z] [w] u l [z] e [4] i i t i e r [BOX] [z] [w] e c e r [4] o i n e [w] [BOX] e o e [4] o [z] [w] [BOX] u [4] [z] u [v] [z] o t i
 f110-36	e [4] t u r e i o l [v] t [z] o i [w] [BOX] u r e c r [z] [z] u i [w] [z] u [BOX] [w] u l [4] e r [BOX] [z] [v] u c l [BOX] u t
 f110-37	i i [z] [v] [z] i [4] [z] u [v] t [w] t [z] l r o [z] u
-f123r-1	m l a n u o [U] s i t [2] <que> i e p r u c o i n e m [U] [2] g [2] g r
-f123r-2	e t r o [BOX] [U] l i l n m [18] [U] s u r m n e m s c r [U] i o n
-f123r-3	d m o e i t l a [W] u e l [U] i i i r o m e m e e n t e n a n
-f123r-4	i [Bi] c l u s [z] r u n d e <que> i [U] m i l a u m i m e c r e [U] n i
+f123r-1	m l a n u o e s i t [2] <que> i e p r u c o i n e m e [2] g [2] g r
+f123r-2	e t r o [BOX] e l i l n m [18] e s u r m n e m s c r e i o n
+f123r-3	d m o e i t l a [W] u e l e i i i r o m e m e e n t e n a n
+f123r-4	i [Bi] c l u s [z] r u n d e <que> i e m i l a u m i m e c r e e n i
 f123r-5	c o d u n s a i t [1] s o r t i r l c m o i a d e u o g r t a
-f123r-6	u n d e [star] i n d [U] e m u [1] l i s m i e n s d e [z] u [U] l s <que> i o i u [BOX]
-f123r-7	n c t t m [U] i o u r i m [U] m i s u [1] a i i a i r [U] e s u
-f123r-8	t i i m i a [16] [2] u m e r u o n g a r e <que> d u c l u s d i o [U] n
-f123r-9	m i i e [z] u i s u i m u i c r [U] p a d r o i c t s n [4] c t a n i n
+f123r-6	u n d e [star] i n d e e m u [1] l i s m i e n s d e [z] u e l s <que> i o i u [BOX]
+f123r-7	n c t t m e i o u r i m e m i s u [1] a i i a i r e e s u
+f123r-8	t i i m i a [16] [2] u m e r u o n g a r e <que> d u c l u s d i o e n
+f123r-9	m i i e [z] u i s u i m u i c r e p a d r o i c t s n [4] c t a n i n
 f123r-10	t m i l e e [z] c c s <qui> i r u u a m n a u i [z] <nostre> c u m r o c t n
-f123r-11	u n [s1] p u [U] r l [U] s c u r r o a s i e o e i [U] i m r e e t p m u t
-f123r-12	i m d e [U] s m n [z] p [U] [U] d i c a s [U] s e m r l [U] s o c s e [z] m a [z]
-f123r-13	e s u e <qui> i n i i n n u [s1] d u [U] s t e u i m c i t s i s m n [z] i
-f123r-14	n u d [U] t r [U] s u r [z] [U] r d s i e t i [z] n u n s [U] m a n d e <qui> l u
-f123r-15	[U] [U] m l i m u r s a [z] d e m u t r [U] n t e m p l m [z] d [U] m i n
+f123r-11	u n [s1] p u e r l e s c u r r o a s i e o e i e i m r e e t p m u t
+f123r-12	i m d e e s m n [z] p e e d i c a s e s e m r l e s o c s e [z] m a [z]
+f123r-13	e s u e <qui> i n i i n n u [s1] d u e s t e u i m c i t s i s m n [z] i
+f123r-14	n u d e t r e s u r [z] e r d s i e t i [z] n u n s e m a n d e <qui> l u
+f123r-15	e e m l i m u r s a [z] d e m u t r e n t e m p l m [z] d e m i n
 f123r-16	e m t i c u n [me] u i n s d e m c r t r i t e n e m i n i d e s f
-f123r-17	[z] t m i [z] e s s m s [1] u u i l r i d i m u [U] r s s [z] [U] [z] d u l
-f123r-18	u r s s <qui> i u i [U] [z] t u i [U] n i f u s e r [U] m m u [U] o i m u s u n
-f123r-19	i [z] f u i o [z] e s t a i <que> i m f t e e a e i c i n e <que> i [U] n i s u i
-f123r-20	a l i [U] n i [U] m e [U] o i [U] n r t [z] m t o m t [U] l i i u i s t e
-f123r-21	a [U] o m n m u i [U] n d e n m u r e s e t d [U] s a l u d i e [z] i t
-f123r-22	s a m u r a s n d [U] f a t i [z] [U] e s t r [U] s d e s a [4] c s u
-f123r-23	s t [z] i [4] e l m e s t [U] u <que> i i e s [U] s i n p u m
-f123r-24	i t u s d i o [z] <qui> i e s t i s s c o [W] i m l [U] d [U] m [z] s m o n
-f123r-25	n i c u m r [U] i m s i l u n n e i i [z] [U] r f u i s t d [U] m [z] s m i
-f123r-26	[z] t m s [U] t c m u t [U] t e n n i i <qui> i n i n r s d u m
-f123r-27	n t c u [U] r m n e s [U] [U] l e l i s s o m c u i [z] n i e [z] d e g e n d
-f123r-28	r s u <qui> s m n t i o i n i [U] [U] [U] l e n i p l m s d e f m u u
-f123r-29	r i m s u n [z] f a i r [U] s o n s t r i l e s [101] e t [102] s m t
-f123r-30	[U] n o o r e m c l [U] s i m p u [z] t m s <que> i e r u [U] t r [U] s [z] i [W]
-f123r-31	m i c u d [U] d u i e t a [U] s i u a u c i r i e s t u i [15] s e c
-f123r-32	i t i d [U] [z] m [z] e [z] [z] i i s t r
+f123r-17	[z] t m i [z] e s s m s [1] u u i l r i d i m u e r s s [z] e [z] d u l
+f123r-18	u r s s <qui> i u i e [z] t u i e n i f u s e r e m m u e o i m u s u n
+f123r-19	i [z] f u i o [z] e s t a i <que> i m f t e e a e i c i n e <que> i e n i s u i
+f123r-20	a l i e n i e m e e o i e n r t [z] m t o m t e l i i u i s t e
+f123r-21	a e o m n m u i e n d e n m u r e s e t d e s a l u d i e [z] i t
+f123r-22	s a m u r a s n d e f a t i [z] e e s t r e s d e s a [4] c s u
+f123r-23	s t [z] i [4] e l m e s t e u <que> i i e s e s i n p u m
+f123r-24	i t u s d i o [z] <qui> i e s t i s s c o [W] i m l e d e m [z] s m o n
+f123r-25	n i c u m r e i m s i l u n n e i i [z] e r f u i s t d e m [z] s m i
+f123r-26	[z] t m s e t c m u t e t e n n i i <qui> i n i n r s d u m
+f123r-27	n t c u e r m n e s e e l e l i s s o m c u i [z] n i e [z] d e g e n d
+f123r-28	r s u <qui> s m n t i o i n i e e e l e n i p l m s d e f m u u
+f123r-29	r i m s u n [z] f a i r e s o n s t r i l e s [101] e t [102] s m t
+f123r-30	e n o o r e m c l e s i m p u [z] t m s <que> i e r u e t r e s [z] i [W]
+f123r-31	m i c u d e d u i e t a e s i u a u c i r i e s t u i [15] s e c
+f123r-32	i t i d e [z] m [z] e [z] [z] i i s t r
 f123r-33	e [z] t d i r e l a n e o e s i l u m o i r <que> a [z] u u s u m c i
-f123r-34	e m e <que> l u n n i n c e [U] l t n i <que> i u n i c u [U] m o n [z] p
-f123r-35	u n t [U] t s i c [star] e r [U] s [z] t [U] s l i m i n s u d u d i u e
-f123r-36	[z] [U] s f o u r n i r t u m t m [z] m [16] t u m s s u i i n s m i d
-f123v-1	u r m n d [U] [U] u i s t e s i r m c [z] [U] [z] i a c [z] u [z] n [U] i
-f123v-2	[U] t i l e p u [U] r [33] s i r u i o [U] i e s u i <que> m i [W]
-f123v-3	c r s d e [33] s u n s e i [z] s u n t o m u p e [z] e n d u [U]
+f123r-34	e m e <que> l u n n i n c e e l t n i <que> i u n i c u e m o n [z] p
+f123r-35	u n t e t s i c [star] e r e s [z] t e s l i m i n s u d u d i u e
+f123r-36	[z] e s f o u r n i r t u m t m [z] m [16] t u m s s u i i n s m i d
+f123v-1	u r m n d e e u i s t e s i r m c [z] e [z] i a c [z] u [z] n e i
+f123v-2	e t i l e p u e r [33] s i r u i o e i e s u i <que> m i [W]
+f123v-3	c r s d e [33] s u n s e i [z] s u n t o m u p e [z] e n d u e
 f123v-4	r e u u r a n s e t i m c u r i u n s a i i u i r i s <que> i
-f123v-5	s [U] m c i g <que> o e t [U] i s r i <qui> n e s d e c u s d i s m u n
-f123v-6	a n e m e r [z] t m i s [U] r u i [U] c m i
-f123v-7	t r [U] s e i s [U] r i o n i t o m [U] b [z] m s m [U] [z] m p r [U] u m u o i r f a i
-f123v-8	t a n t d e d [U] s p e n b e d e b o n s e r u e r b [U] s t e m r m ss i
-f123v-9	m u [U] [U] [U] s [U] r t e s m i s o n d e l a [z] m i ss [U] r m i n s i d e p [U]
-f123v-10	i e l a u l t e d e n t r e t i [U] i n e m i n t i [2] t [U] s t r e o n t [121]
-f123v-11	p r o c u s [U] m a c i <que> g [U] p u i s s t i r [U] m <que> l <que> a o i s [U] b o [5] r
+f123v-5	s e m c i g <que> o e t e i s r i <qui> n e s d e c u s d i s m u n
+f123v-6	a n e m e r [z] t m i s e r u i e c m i
+f123v-7	t r e s e i s e r i o n i t o m e b [z] m s m e [z] m p r e u m u o i r f a i
+f123v-8	t a n t d e d e s p e n b e d e b o n s e r u e r b e s t e m r m ss i
+f123v-9	m u e e e s e r t e s m i s o n d e l a [z] m i ss e r m i n s i d e p e
+f123v-10	i e l a u l t e d e n t r e t i e i n e m i n t i [2] t e s t r e o n t [121]
+f123v-11	p r o c u s e m a c i <que> g e p u i s s t i r e m <que> l <que> a o i s e b o [5] r
 f123v-12	d e l p p r o u i n b e o u [z] e s u s u i s [49] e a i f a i b t a [5] t r e f
-f123v-13	n d e [U] i [U] s t o i u [U] t <que> f o i t
+f123v-13	n d e e i e s t o i u e t <que> f o i t
 f123v-14	n c o r e s <que> l <que> m a u t r e s a r o
-f123v-15	e s i e s e p [U] m e n t m a i n t e
-f123v-16	a i t r m t o r l e r p o u r c [U] [U] s t e c i o u l [U] s [U] i e m i m u
-f123v-17	t s i m [U] s l [U] [z] a m r m i c e <qui> <uous> r [U] s t e d m b o n s s u b [z] [U]
-f123v-18	t u <que> p [U] r s o i e n c a b i t e l a c a m p e i [z] i e [U] t [4] o c e <qui>
+f123v-15	e s i e s e p e m e n t m a i n t e
+f123v-16	a i t r m t o r l e r p o u r c e e s t e c i o u l e s e i e m i m u
+f123v-17	t s i m e s l e [z] a m r m i c e <qui> <uous> r e s t e d m b o n s s u b [z] e
+f123v-18	t u <que> p e r s o i e n c a b i t e l a c a m p e i [z] i e e t [4] o c e <qui>
 f123v-19	o n t <il> l u s o n i s o n t r a
 f123v-20	i c l [z] [fe] e p o u r s e c o n s
-f123v-21	o i <il> l u s e n a p [U] r s o i u e n
+f123v-21	o i <il> l u s e n a p e r s o i u e n
 f123v-22	t i i l e s d o i t <il> l e t r u m s e r o n t l e [4] e c o s r e m e
-f123v-23	t t r [U] s d i i i i c [z] l d e p e n [z] e r <que> l o n p u i c e u m e
-f123v-24	d i l a f o r m e d e c o n t r i b u t i o n [4] [9] f o n t l [U] s [U]
-f123v-25	e m i i [z] e m a ss e u r e <que> t e l e s u i u l a i c e u i e s [U] r o
-f123v-26	[U] n t [z] a m a i s a r r o m ss s m d e i g <nostre> [w] u a n d [U] l e u f
-f123v-27	[U] i t p r o m i s [U] u [U] l e u n e s e p [U] m [U] n t i [U] e c u t e r <que>
-f123v-28	r l [4] a g a r n i s o n u [U] t e s t m a l [D2] i u e <que> l e s a r m ss u
-f123v-29	n p u i c e n t s [U] r u i r [w] u a n d a u [U] [5] o l u n t e u d e c [U] u
-f123v-30	[5] p a i s i e c o n c e ss e <que> [4] [z] e l [U] s a i t r o m ss s a e a u c
+f123v-23	t t r e s d i i i i c [z] l d e p e n [z] e r <que> l o n p u i c e u m e
+f123v-24	d i l a f o r m e d e c o n t r i b u t i o n [4] [9] f o n t l e s e
+f123v-25	e m i i [z] e m a ss e u r e <que> t e l e s u i u l a i c e u i e s e r o
+f123v-26	e n t [z] a m a i s a r r o m ss s m d e i g <nostre> [w] u a n d e l e u f
+f123v-27	e i t p r o m i s e u e l e u n e s e p e m e n t i e e c u t e r <que>
+f123v-28	r l [4] a g a r n i s o n u e t e s t m a l a i u e <que> l e s a r m ss u
+f123v-29	n p u i c e n t s e r u i r [w] u a n d a u e [5] o l u n t e u d e c e u
+f123v-30	[5] p a i s i e c o n c e ss e <que> [4] [z] e l e s a i t r o m ss s a e a u c
 f123v-31	p c l u u c r o i d e u <que> i e n t p e n s o i u <nostre> <il> f i u l t
-f123v-32	r e p o [5] r [U] u [z] <il> l a o n t [4] g i p l u s p m t i <que> l [U] s a u
-f123v-33	[T] e u n i a i a n t u i l e n i m o [5] r [y] a d e <qui> n a i t l [U] i e
-f123v-34	i a u n e l i [U] u e p r [U] [z] d e l e o u <il> l s u o n t [z] n c [U] ss a
-f123v-35	[U] n t a l i [y] u i [fe] e [5] [4] l [U] s m o i [U] i s <que> [z] a m [U] n d o i u d
+f123v-32	r e p o [5] r e u [z] <il> l a o n t [4] g i p l u s p m t i <que> l e s a u
+f123v-33	r e u n i a i a n t u i l e n i m o [5] r [y] a d e <qui> n a i t l e i e
+f123v-34	i a u n e l i e u e p r e [z] d e l e o u <il> l s u o n t [z] n c e ss a
+f123v-35	e n t a l i [y] u i [fe] e [5] [4] l e s m o i e i s <que> [z] a m e n d o i u d
 f123v-36	[z] [z] c o s t e m e d e i i a i e l e n t n e p o m a n t i i r e r d
-f123v-37	c i a u c u n s [U] c o [5] r u i e s u i u c o n t r a i n t d e
-f123v-38	r e c o u r i [T] a a i i [U] t <uous> d e p e s c o e r c e p o r t e u r [U]
-f123v-39	p r e u p o u r <uous> s u r l i [U] r t r [U] s r [5] m a l e [4] i n t [4] e c a
-f123v-40	r e p a r l u i [U] n t e i d r e [33] [4] [9] s n d e [4] e i t [U] t [z] n t e
-f123v-41	t i o n [U] t s i i d e s i r e u e [z] e r u i r d e c e u t e a r [4] ss
-f124r-1	s [z] r e <que> l <que> b o i e [T] e s o l u t i o n d e l s s e c o u r i r d o r e r
-f124r-2	u n i u [D2] i t p l u [z] s o s e i t <que> l e n i [U] s t e <car> l i t e n i i
-f124r-3	t [U] i l [U] [z] e r c i o e <nous> <il> l a f i r i u l t s e ss r e l o n i e
-f124r-4	s i u r o i t i i i i i s [U] i t l i r e t l i n i r <que> [U] i s o i i u d
-f124r-5	[4] o i u [U] l e n e s i d e d a c e [4] o e [U] n t i e r i o u s i i g c o
-f124r-6	i o i s t s [U] u s o i [U] n s i [U] p o s o i o i r p o r t e r s e s t e d e
+f123v-37	c i a u c u n s e c o [5] r u i e s u i u c o n t r a i n t d e
+f123v-38	r e c o u r i r a a i i e t <uous> d e p e s c o e r c e p o r t e u r e
+f123v-39	p r e u p o u r <uous> s u r l i e r t r e s r [5] m a l e [4] i n t [4] e c a
+f123v-40	r e p a r l u i e n t e i d r e [33] [4] [9] s n d e [4] e i t e t [z] n t e
+f123v-41	t i o n e t s i i d e s i r e u e [z] e r u i r d e c e u t e a r [4] ss
+f124r-1	s [z] r e <que> l <que> b o i e r e s o l u t i o n d e l s s e c o u r i r d o r e r
+f124r-2	u n i u a i t p l u [z] s o s e i t <que> l e n i e s t e <car> l i t e n i i
+f124r-3	t e i l e [z] e r c i o e <nous> <il> l a f i r i u l t s e ss r e l o n i e
+f124r-4	s i u r o i t i i i i i s e i t l i r e t l i n i r <que> e i s o i i u d
+f124r-5	[4] o i u e l e n e s i d e d a c e [4] o e e n t i e r i o u s i i g c o
+f124r-6	i o i s t s e u s o i e n s i e p o s o i o i r p o r t e r s e s t e d e
 f124r-7	s p e i o e s u s o i n s u i p r o s p t e [4] e n t <que> l e o
-f124r-8	d r r e [U] n i o e n d i i t <que> l e s d i t s s o r i e n s u e p u [z]
-f124r-9	e s e n t p r e c i r e [T] s [z] <il> l u i p l i i [fe] s <que> l i d i c t e s
-f124r-10	r e ss s o i t [4] i u e [U] n [y] i r i [z] s o n [U] [z] u i l e i d [U] i
-f124r-11	e p r o u i n c e [4] [U] s i n <que> l u r [U] i u i s i n t d u n i c i r
-f124r-12	t i i i e l u s [U] i n e e n [T] [4] u e r [z] u [U] o u [w] [U] i o i o u i l
-f124r-13	s u i i r e n t d e l u d [U] i i r a [U] r [T] r [2] u u n e i u t r e f u i s
-f124r-14	r i l o e d e c e s t [U] r i u i e r i c [33] e s c r [U] r c u [T] u u n d e
-f124r-15	u e i i n e s u i s u [U] n u <que> u u i c i [U] [U] d i c t
-f124r-16	s [U] n t i p l i d u i s <que> s [U] n t i [z] n u o <que> s u n i c i l u
-f124r-17	s [z] [U] u r i u r s o c a i d e s i t s d [z] i [U] i e s t u i c t t u
-f124r-18	l i r d o <qui> [U] u [U] u i s t p r [U] s c u p u s i c i u n
-f124r-19	u t [U] r s i n c i [U] f i i s p i r e o e g t r u u e c e p
-f124r-20	t r [U] s i u p u u l o n t i [U] r s c u r c [U] <que> i e s i i d u [U] l
-f124r-21	p s [U] u n t i r [U] s c e i u d i c i c p e s u [33] p i r u i c e c e <que>
-f124r-22	i e c u s c r [U] n s p [U] u p t i i t r c u r p c e i d e p p p s l u n
-f124r-23	p u s l [z] e u p s <que> o e u l s <il> i n p e n i i r [U] r u n t u n g
-f124r-24	[U] c t <que> i e s u p <que> u u s [U] i [U] s [z] p p [U] u r c i r u i c u d [U]
-f124r-25	[z] r s n t u d u s n t u p [z] [U] p u s u s p a r t d e c [U] u [z] d e c
-f124r-26	i [U] <uous> p s i s d [z] r e <que> i [2] p u c l s e c o u r u <que> l o i <nous> s d
-f124r-27	[U] c t e s r s e p r [U] n d r e l e [62] d o i [U] i s r i u r i n d e d e i i s u e u r
-f124r-28	r d [z] s e n u e d u c o u r i i [z] e <il> l s i u o i [U] n t d i [4] i s e r u i r
+f124r-8	d r r e e n i o e n d i i t <que> l e s d i t s s o r i e n s u e p u [z]
+f124r-9	e s e n t p r e c i r e r s [z] <il> l u i p l i i [fe] s <que> l i d i c t e s
+f124r-10	r e ss s o i t [4] i u e e n [y] i r i [z] s o n e [z] u i l e i d e i
+f124r-11	e p r o u i n c e [4] e s i n <que> l u r e i u i s i n t d u n i c i r
+f124r-12	t i i i e l u s e i n e e n r [4] u e r [z] u e o u [w] e i o i o u i l
+f124r-13	s u i i r e n t d e l u d e i i r a e r r r [2] u u n e i u t r e f u i s
+f124r-14	r i l o e d e c e s t e r i u i e r i c [33] e s c r e r c u r u u n d e
+f124r-15	u e i i n e s u i s u e n u <que> u u i c i e e d i c t
+f124r-16	s e n t i p l i d u i s <que> s e n t i [z] n u o <que> s u n i c i l u
+f124r-17	s [z] e u r i u r s o c a i d e s i t s d [z] i e i e s t u i c t t u
+f124r-18	l i r d o <qui> e u e u i s t p r e s c u p u s i c i u n
+f124r-19	u t e r s i n c i e f i i s p i r e o e g t r u u e c e p
+f124r-20	t r e s i u p u u l o n t i e r s c u r c e <que> i e s i i d u e l
+f124r-21	p s e u n t i r e s c e i u d i c i c p e s u [33] p i r u i c e c e <que>
+f124r-22	i e c u s c r e n s p e u p t i i t r c u r p c e i d e p p p s l u n
+f124r-23	p u s l [z] e u p s <que> o e u l s <il> i n p e n i i r e r u n t u n g
+f124r-24	e c t <que> i e s u p <que> u u s e i e s [z] p p e u r c i r u i c u d e
+f124r-25	[z] r s n t u d u s n t u p [z] e p u s u s p a r t d e c e u [z] d e c
+f124r-26	i e <uous> p s i s d [z] r e <que> i [2] p u c l s e c o u r u <que> l o i <nous> s d
+f124r-27	e c t e s r s e p r e n d r e l e [62] d o i e i s r i u r i n d e d e i i s u e u r
+f124r-28	r d [z] s e n u e d u c o u r i i [z] e <il> l s i u o i e n t d i [4] i s e r u i r
 f124r-29	d e s a p i r t [z] e i e d i u c o n t i n u u e r i i <point> d i f i i r e s o n
-f124r-30	d e u o [z] r [U] t [4] o l [U] i i r t <il> l [4] e s [U] r i p o s i b l e c o u r [T] [U] u o i
-f124r-31	r e [T] s o i [U] n d e l [U] i t r e t e n i r s o [U] n d a n t d e u o s n o s t
-f124r-32	[U] l e s i i [D2] i t [U] [y] p o s e i u [U] n r e e t [U] n [y] i i [z] [U] r [4] o l [U] [4] i <que> e i
-f124r-33	i i c i p o u r f i i r e u [9] p o u r i [U] s c l [z] i [U] r r e t f i i c t u e n i [T] t
-f124r-34	i i i s o n s [z] [U] u r d e g o u r [y] u [U] l p o u r <nous> i i d i r d e s o n
-f124r-35	c r e d i c t u [z] d e s p r u n t e r i a i n t e r e s t [U] t i c c s n
-f124v-1	s e c u u r s c i s d u i u d u i u [U] n t r e c e u o i r p [U] s p r
-f124v-2	e s i l f [T] s i c t s d e o e p t [U] u r d i i i c u s c i e n
-f124v-3	<que> d u n s [z] e u r f o r [z] [U] [U] t s e s o i o t i c i f u r t n e
-f124v-4	s [U] [W] r e [z] i n i n i i u n t <point> [z] d e c l u s p r u [1] r [U] o u r t r
-f124v-5	i s t e r d [U] o i [U] s u [U] c s e u l s i e s [2] s e [z] p s o n t
-f124v-6	r u [z] n s d e p u i [U] n u i e r t i n t p o u r s e f i i c t <que> p
-f124v-7	o u r i u [U] c l [U] d i o t u i [U] [U] u r d e [z] o u c [U] i [U] r u n t e
-f124v-8	r [U] t u u [U] t d r i p s l [U] p l u s <il> l p o u [fe] o n t <car> e e u e o
-f124v-9	i [z] l n i i u r d r e i i f i i i r e s o n s t r e i u [v] [y] [U] n s d e p i [U] d
-f124v-10	d e l [U] s p o s o i r f i i r e c i s c [U] r [4] [9] <il> f i u l t <il> l f i
-f124v-11	c [U] n t i u p r e [4] i [U] r s i [U] [U] [y] e s i r e i [4] <uous> [U] s c r i u i u d [y]
-f124v-12	u n i n u t [BOX2] n [z] n i [U] s [4] e p i r i [D2] n t d e u [z] l n e u f u e d
-f124v-13	i [y] [U] n o i s d e p u c s i e s u i u u [U] n u i t c o n i i s <que> l [U] u
-f124v-14	i i [U] [4] i u o n t c i b a n d o i [U] c e i i [z] l i i s e g i r n i
-f124v-15	s o n p o u r [y] i r d e r c e u [1] s i i [y] e [U] t s u i u u [U] n u [U] n
-f124v-16	c [U] u t e u i l e [U] t i i [U] a n t [U] u i d u i u d e s o n d i c t
-f124v-17	u [v] [U] u r l e s i r [U] s c c i l <il> l i [U] t i u [U] c o e <il> l i [U]
-f124v-18	s p o r t e r c i s t [U] l [U] [U] t s u p l u s t i r d i f i [z] r
-f124v-19	e p i s <que> u i i s [z] s u i i u p i r s o n a d u i u r [U] u u l u d i
-f124v-20	l [U] r i o a c <que> r s i i n c t e b i s i l e s i t o u t <il> l s
-f124v-21	a u r i [U] n u o i e o i n d o i n u i u [U] i l i p o u l d r e [U]
-f124v-22	t l [U] s b i l e u <il> s e u o n t n e s i ss i i r e [y] [4] [9] <il>
+f124r-30	d e u o [z] r e t [4] o l e i i r t <il> l [4] e s e r i p o s i b l e c o u r r e u o i
+f124r-31	r e r s o i e n d e l e i t r e t e n i r s o e n d a n t d e u o s n o s t
+f124r-32	e l e s i i a i t e [y] p o s e i u e n r e e t e n [y] i i [z] e r [4] o l e [4] i <que> e i
+f124r-33	i i c i p o u r f i i r e u [9] p o u r i e s c l [z] i e r r e t f i i c t u e n i r t
+f124r-34	i i i s o n s [z] e u r d e g o u r [y] u e l p o u r <nous> i i d i r d e s o n
+f124r-35	c r e d i c t u [z] d e s p r u n t e r i a i n t e r e s t e t i c c s n
+f124v-1	s e c u u r s c i s d u i u d u i u e n t r e c e u o i r p e s p r
+f124v-2	e s i l f r s i c t s d e o e p t e u r d i i i c u s c i e n
+f124v-3	<que> d u n s [z] e u r f o r [z] e e t s e s o i o t i c i f u r t n e
+f124v-4	s e [W] r e [z] i n i n i i u n t <point> [z] d e c l u s p r u [1] r e o u r t r
+f124v-5	i s t e r d e o i e s u e c s e u l s i e s [2] s e [z] p s o n t
+f124v-6	r u [z] n s d e p u i e n u i e r t i n t p o u r s e f i i c t <que> p
+f124v-7	o u r i u e c l e d i o t u i e e u r d e [z] o u c e i e r u n t e
+f124v-8	r e t u u e t d r i p s l e p l u s <il> l p o u [fe] o n t <car> e e u e o
+f124v-9	i [z] l n i i u r d r e i i f i i i r e s o n s t r e i u [v] [y] e n s d e p i e d
+f124v-10	d e l e s p o s o i r f i i r e c i s c e r [4] [9] <il> f i u l t <il> l f i
+f124v-11	c e n t i u p r e [4] i e r s i e e [y] e s i r e i [4] <uous> e s c r i u i u d [y]
+f124v-12	u n i n u t u n [z] n i e s [4] e p i r i a n t d e u [z] l n e u f u e d
+f124v-13	i [y] e n o i s d e p u c s i e s u i u u e n u i t c o n i i s <que> l e u
+f124v-14	i i e [4] i u o n t c i b a n d o i e c e i i [z] l i i s e g i r n i
+f124v-15	s o n p o u r [y] i r d e r c e u [1] s i i [y] e e t s u i u u e n u e n
+f124v-16	c e u t e u i l e e t i i e a n t e u i d u i u d e s o n d i c t
+f124v-17	u [v] e u r l e s i r e s c c i l <il> l i e t i u e c o e <il> l i e
+f124v-18	s p o r t e r c i s t e l e e t s u p l u s t i r d i f i [z] r
+f124v-19	e p i s <que> u i i s [z] s u i i u p i r s o n a d u i u r e u u l u d i
+f124v-20	l e r i o a c <que> r s i i n c t e b i s i l e s i t o u t <il> l s
+f124v-21	a u r i e n u o i e o i n d o i n u i u e i l i p o u l d r e e
+f124v-22	t l e s b i l e u <il> s e u o n t n e s i ss i i r e [y] [4] [9] <il>
 f143r-1	m [49] m s e s t a n t l a i ss e e n t e i d r e [49] <il> s e u o u l
 f143r-2	o i t d e p m r t i r d u * d u <que> l i e s c a i <qui> l e s t t r e s
 f143r-3	m a l c o n t a i t e t a i a n t c o n s i d e r e <que> i i l a i <tous> i o
@@ -325,7 +325,7 @@ f196-23	d i c t s i e u r l e m e r e s r c c a l <qui> l e s i e u r t m i
 f196-24	l d l a i e e [z] p o u r l e r e u s d d i c t u i e u e <il> s a
 f196-25	d u a i c e f o r t [36] <parceque> l a e a u i l e e u t [y] r e n d e u t
 f196-26	m a l a i s i m t a s s i e u e e r <il> a f a l u f a i r e d e s
-f201-1	m [U] n [me] u n r e u m e <qui> l u i a c e u u e l a f i e
+f201-1	m e n [me] u n r e u m e <qui> l u i a c e u u e l a f i e
 f201-2	[BOX] r e l a <que> l e [4] [9] i e c r o i s c r e i [y] l e r a e n t i e r c e e e
 f201-3	a i a n t e u r u i o u m d c u i e u l i u e c o n d a m e e <qui> i a d
 f201-4	i e u m e r c i e u c u m e a i o l r a <uous> i c e n i m a i a i u a m i d e n t
@@ -355,27 +355,27 @@ f201-27	<parceque> l a u i l e e u t [y] r a n d e e t m a l a i s c c a a ss i 
 f201-28	<qui> m c e l d f a i e d e u t r a n c c ss u e i p l u s i e u r
 f201-29	r e i d r o i c t e e t e s t a i i m a l [y] a r n o i e d e p i o i i e r
 f201-30	l a b e s o n [z] n e e i a e u t e c p u s i [z] n [y] u e
-fr15571-f177-1	i e [U] i <que> i n [w] u b i t a [p] l [U] m e i t l o i i e [U] e d p o
-fr15571-f177-2	m i [U] r u e t e i <que> o [U] i u s t i u [de] [U] i u [U] e i i m a s
-fr15571-f177-3	m [f3] m i e l [U] d e n t p u [5] r t [D2] i l [U] b o u r [U] o s t [U] e
-fr15571-f177-4	[BOX2] n [y] r a n d r e u i n u <qui> r s [de] e m e i t d u c a ss [D2] i [z] e
-fr15571-f177-5	ss [me] d i l e o c u r a i t e o [U] u i r s l e [y] i i t d e [z] r a
-fr15571-f177-6	ss n d [U] u i e p o m i t i o n [U] i t r [U] d e <nostre> r e [73] e i l e
-fr15571-f177-7	i m [5] i ss a n s e d i m t e i l i u a d e i o [U] t c e l a e m <que>
-fr15571-f177-8	l o n d i s t m o i t [U] r i <que> o [U] r t r e o [U] l a l i c a
-fr15571-f177-9	i s <nous> m i i r o i t t r a i i [1] i m [U] s u [U] p o u m u i d
-fr15571-f177-10	e r [D2] r m d e s c [U] n c e d [BOX2] u i [U] [z] i [U] t e e m t a n s
-fr15571-f177-11	d e [z] i [D2] m [z] d e s c o [U] [U] u [1] m <nous> o o n m [U] i t e u i s <que> u
-fr15571-f177-12	e l u i o o i t u d u i u d e i m r [U] m t e d i n t e i [z] u i [U]
-fr15571-f177-13	i e <que> m o i s i [U] [BOX2] m r e m e m i u s m a r d e m a t i [z] i o
-fr15571-f177-14	i s i [U] ss i m o i t a u e c i m i [2] d e f m r s i u s i o r
-fr15571-f177-15	e s i r [U] i c [U] e p a r e e m [D2] u ss i s i <qui> s e r o i t
-fr15571-f177-16	n e o i s i e r e c o u r i r i s e [BOX2] u i [T] c [U] u t [U] u r e ss
-fr15571-f177-17	a r a c r e d i [5] [U] m e c e p i n d i t <que> <nous> o o ss t i i
-fr15571-f177-18	[y] r i o i s o e s i e [y] i [2] m [4] [9] <nous> [U] u t i o i [U] c o u r ss
-fr15571-f177-19	c i o c [fe] e c [U] p i s m u i t l e d i s t s i [U] u r d e m [D2] t
-fr15571-f177-20	i [y] n m i [D2] [U] [5] [me] u d [BOX2] i u d e a o u [T] d i a u [U] <que> g [4] m
-fr15571-f177-21	[U] s t o i [de] c [D2] r [5] e n s i m c i e [z] i e a [5] [U] s f o [T] c e r
-fr15571-f177-22	i t o u n m i s o e r a <nous> [D2] m o
-fr15571-f177-23	o m a ss [y] i r [27] c r e m i [U] [T] [D2] a
-fr15571-f177-24	m [z] r i r t i e <qui> l i [U] m i i e u e r l [53] r [D2] [4] i t i e d [U] [me]
+fr15571-f177-1	i e e i <que> i n [w] u b i t a [p] l e m e i t l o i i e e e d p o
+fr15571-f177-2	m i e r u e t e i <que> o e i u s t i u [de] e i u e e i i m a s
+fr15571-f177-3	m [f3] m i e l e d e n t p u [5] r t a i l e b o u r e o s t e e
+fr15571-f177-4	u n [y] r a n d r e u i n u <qui> r s [de] e m e i t d u c a ss a i [z] e
+fr15571-f177-5	ss [me] d i l e o c u r a i t e o e u i r s l e [y] i i t d e [z] r a
+fr15571-f177-6	ss n d e u i e p o m i t i o n e i t r e d e <nostre> r e [73] e i l e
+fr15571-f177-7	i m [5] i ss a n s e d i m t e i l i u a d e i o e t c e l a e m <que>
+fr15571-f177-8	l o n d i s t m o i t e r i <que> o e r t r e o e l a l i c a
+fr15571-f177-9	i s <nous> m i i r o i t t r a i i [1] i m e s u e p o u m u i d
+fr15571-f177-10	e r a r m d e s c e n c e d u u i e [z] i e t e e m t a n s
+fr15571-f177-11	d e [z] i a m [z] d e s c o e e u [1] m <nous> o o n m e i t e u i s <que> u
+fr15571-f177-12	e l u i o o i t u d u i u d e i m r e m t e d i n t e i [z] u i e
+fr15571-f177-13	i e <que> m o i s i e u m r e m e m i u s m a r d e m a t i [z] i o
+fr15571-f177-14	i s i e ss i m o i t a u e c i m i [2] d e f m r s i u s i o r
+fr15571-f177-15	e s i r e i c e e p a r e e m a u ss i s i <qui> s e r o i t
+fr15571-f177-16	n e o i s i e r e c o u r i r i s e u u i r c e u t e u r e ss
+fr15571-f177-17	a r a c r e d i [5] e m e c e p i n d i t <que> <nous> o o ss t i i
+fr15571-f177-18	[y] r i o i s o e s i e [y] i [2] m [4] [9] <nous> e u t i o i e c o u r ss
+fr15571-f177-19	c i o c [fe] e c e p i s m u i t l e d i s t s i e u r d e m a t
+fr15571-f177-20	i [y] n m i a e [5] [me] u d u i u d e a o u r d i a u e <que> g [4] m
+fr15571-f177-21	e s t o i [de] c a r [5] e n s i m c i e [z] i e a [5] e s f o r c e r
+fr15571-f177-22	i t o u n m i s o e r a <nous> a m o
+fr15571-f177-23	o m a ss [y] i r [27] c r e m i e r a a
+fr15571-f177-24	m [z] r i r t i e <qui> l i e m i i e u e r l [53] r a [4] i t i e d e [me]

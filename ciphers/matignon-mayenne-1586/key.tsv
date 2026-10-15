@@ -86,3 +86,7 @@ BOX	+	U	Bourdeau cyphersolver matignon1586 key.json, commit fc0c9e8, 25 Sept 202
 Ze	t	H	Bourdeau cyphersolver matignon1586 key.json, commit fc0c9e8, 25 Sept 2026, CC BY 4.0/MIT	
 e	r	H	Bourdeau cyphersolver matignon1586 key.json, commit fc0c9e8, 25 Sept 2026, CC BY 4.0/MIT	
 X	a	H	Bourdeau cyphersolver matignon1586 key.json, commit fc0c9e8, 25 Sept 2026, CC BY 4.0/MIT	
+U	e	S	MAT-KA block-held-out gloss test of f.91r-92r period margin decipherment (a948d56a8) + MAT-KEY image check (f.124v/f.91v/f.78v), 15 Oct 2026	label absent from Bourdeau key.json; value from the f.91 period gloss, cryptanalytic with control
+T	r	S	MAT-KA block-held-out gloss test of f.91r-92r period margin decipherment (a948d56a8) + MAT-KEY image check (f.124v/f.91v/f.78v), 15 Oct 2026	label absent from Bourdeau key.json; value from the f.91 period gloss, cryptanalytic with control
+D2	a	S	MAT-KA block-held-out gloss test of f.91r-92r period margin decipherment (a948d56a8) + MAT-KEY image check (f.124v/f.91v/f.78v), 15 Oct 2026	label absent from Bourdeau key.json; value from the f.91 period gloss, cryptanalytic with control
+BOX2	u	S	MAT-KA block-held-out gloss test of f.91r-92r period margin decipherment (a948d56a8) + MAT-KEY image check (f.124v/f.91v/f.78v), 15 Oct 2026	label absent from Bourdeau key.json; value from the f.91 period gloss, cryptanalytic with control
