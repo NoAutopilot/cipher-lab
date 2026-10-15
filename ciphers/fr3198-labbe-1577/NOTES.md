@@ -236,3 +236,33 @@ Item files (tsv, ark html) were kept in scratch, not committed: the notices are 
 
 Next: (b) is spent for the Nevers run fr.3198-3200, 4695-4715; the remaining named step is the 17 Apr pair f.72 nos.34/35 in fr.3198 (own volume,
 native view for inserted numeral groups, ~USD 1); a key sheet outside this run needs a different search (fr.4687-4694, fonds Dupuy), not a rerun of this one.
+
+## F3198-72 (15 Oct 2026, 15:18-15:2x UTC by date -u; images only, no status change) -- fr.3198 f.72 nos.34/35 (Prague, 17 Apr 1577): clear, no cipher groups seen at 1000 px
+
+Question (F3198-PL's Next): does the 17 Apr 1577 pair at f.72 carry cipher groups in the key announced on 5 Feb 1577, and in which signs?
+Canvas: `python3 tools/gallica_folio.py btv1b9060073v --iiif-host openapi --anchor 63=63r --anchor 77=75r --folio 72` (manifest, 170 canvases,
+all 'NP'; estimate c73-75, centre c74). Eye-checked at 1000 px: **canvas 74 = f.71v (left) / f.72r (right; stamp "72", older foliation
+"125")**; **canvas 75 = f.72v (left) / f.73r (right; stamp "73")**. Anchor pairs for later work: 74=72r, 75=73r (one canvas per opening here).
+What the leaves are (readings from the image, uncertain, not a transcription):
+- f.71v: an address panel, "Monseigneur ... Monseigneur le Duc de Nevers", with a dorse endorsement in another hand ("... Breslaw ... l'Abbé"?,
+  reading uncertain); no text block, no cipher.
+- f.72r-v: one letter in l'Abbé's hand, headed "Monseigneur", opening "Vous ayant escrit l'huictieme du present assez amplement ..." (refers to
+  his letter of 8 Apr, catalogue no.33), on the duke of Mantua/"Monsieur Barbiano", Breslau, the queen of Poland's tailor as bearer, a son of the
+  Duke of Ostrog ("Constantin de Pologne"), Rosenberg, the Tartars entering Poland, Bathory; dated at the foot of f.72v **"De Prague ce 17e
+  d'apvril 1577"**, subscribed "Vostre bien humble et obeissant ..." and signed "le docteur L'Abbé".
+- f.73r: blank apart from show-through and a small numeral at the top right (an older foliation, not read).
+Cipher: **no numeral cipher groups or cipher signs seen on f.71v, f.72r, f.72v or f.73r at 1000 px.** The numerals present are counts inside
+the French prose ("30 iours", "plus de [70?] ames ... plus de [1000?] villages", "sept mil Tartars"), several with an overline, read as
+quantities, not groups. Not viewed at native resolution (the job's 3-request limit was spent on the manifest and the two openings), so small
+inserted groups are not excluded, as at D2-F3198 ff.116v-117v. So no cipher groups to count, no hand to name for them and no sign set to compare.
+Catalogue vs leaf: the record lists two pieces at f.72 (no.34 "docteur L'ABBE", no.35 "docteur LABBE", both 17 Apr); the leaves show one dated
+letter on f.72r-v plus the address panel on f.71v. Where the second piece sits (the f.71v address, an enclosure, or a leaf at f.73v not viewed)
+is not settled by these two openings.
+Not decoded. Not found: cipher groups or a key sheet, on fr.3198 ff.71v-73r at 1000 px.
+Requests: openapi.bnf.fr 3 (manifest 1; canvases 74 and 75 at full/1000,), all 200; images in the session scratchpad, never git. Regen:
+`curl -A "cipher-lab research script (contact via repository)" https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060073v/f74/full/1000,/0/default.jpg`
+(sha1 7732f1f4bb6077ff6ef2740dfa8e6d6e8d5fa419) and the same for f75 (sha1 77b7a3bda3e046670f8098b4f85e1862d6b49920).
+
+Next: one native view of f.72r-v (canvases 74 and 75, right/left halves, ~USD 1) only if a native check for small inserted groups is wanted; the
+17 Apr letter otherwise joins nos.51 and 55 as a clear l'Abbé letter of Feb-Apr 1577 with no key bound. The remaining Feb-Apr items in the
+catalogue not yet viewed are fr.3198 no.31 (17 Mar) and no.33 (8 Apr). Status stays `blocked` (line 1).
