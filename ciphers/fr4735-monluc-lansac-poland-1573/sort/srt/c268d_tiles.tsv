@@ -1,0 +1,5 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+s268d	L03	16	K04	K04		check	sort	K04,K12	K05 K29 K07	K05 K19 K36		
+s268d	L04	7	K14	K14		check	sort	K14,K37	K01 K25 K26	K01 K37 K10		
+s268d	L05	18	K04	K04		check	sort	K04,K12	W:Sepbre K05 ?x[looped_c]	K26 K37 ?double_slash		
+s268d	L05	25	K39	K39		check	sort	K39,K45	K01 K34 K15	K09 K10 K26		
