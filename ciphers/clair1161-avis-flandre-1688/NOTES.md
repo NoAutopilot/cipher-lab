@@ -2592,3 +2592,77 @@ Verdict: keep going: 4 internal gaps; cheapest next: image check of the S and 7 
 OK keep-going clair1161-avis-flandre-1688: keep going: 4 internal gap(s), 2 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## CL1161-S7: S and 7 exemplar image check beside Lasry's sheet (account-2 worker for LANE DEFAULT-A2-0209-15, 15 Oct 2026, 02:26-02:3x UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-15-ytbiz-default-0209-jobs.md` (CL1161-S7). Disk only, 0 requests to any host. Intake gate pasted
+in the brief (`partial (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0). Check 1: no later section
+ran this unit (CL1161-KA's Verdict names it as next). Prior work: the prior work on these signs is George Lasry's key sheet itself
+(`sources/cyphersolver/2026-10-14-lasry/clair1161/lasry_p073_1.png`, "BnF cipher research", 10 Oct 2026, published by D. Bourdeau,
+cyphersolver dde5b0ea, CC BY 4.0; credit, rule 8), which this job compares against, not a rival reading. PREREG `s7/PREREG-CL1161-S7.md`
+pushed in ce26c2118 before any window was built or looked at.
+
+Crop step (pasted): `python3 s7/s7_windows.py` -> windows from the native line crops via `tools/lookalike_pass.py` helpers
+(`la/crops/manifest.json`, half-width 2.5 estimated sign widths, scale 2), 12 S, 12 single 7 (not in a 7 7 pair), plant 6 q + 6 qb,
+seed 1161; montages `s7/win/{S,7,plant}_0{1,2}.jpg`, truth `s7/windows_key.tsv`. 6 blind Sonnet calls (two per set; value-free
+description, no labels, no key, no sheet); passes `s7/pass_{S,7,plant}_{A,B}.tsv`; scoring `s7/s7_score.py` -> `s7/s7_score_out.txt`:
+```
+POWER pass A: groups {'A': 1, 'B': 7, 'C': 3}, matches true q/qb on 9/12 -> FAIL
+POWER pass B: groups {'A': 4, 'B': 7}, matches true q/qb on 10/12 -> PASS
+S: groups A {'A': 4, 'B': 6, 'C': 1} B {'A': 5, 'B': 5}; partitions agree 9/10 -> UNDECIDED
+7: groups A {'A': 9} B {'A': 10}; partitions agree 9/9 -> UNDECIDED
+```
+- **Power.** Both plant passes found the crossbar split (crossed q vs plain q, 7 crossed each); pass A then split plain q by bowl shape
+  (round 1, lozenge 3), so the one-to-one match is 9/12 (FAIL); pass B 10/12 (PASS). Both passes put plant W07 (a `q` in ciphertext.tsv,
+  c-line in `s7/windows_key.tsv`) in the crossed group: a lead for an image check of that token (q vs qb), entered nowhere.
+- **S: UNDECIDED** as registered, one window short. Both passes split S into the same two constructions independently: an *open* S
+  (single top hook, long swept tail; A: W04 W06 W07 W09 W11 W12, B: W04 W07 W09 W11 W12) and a *looped* 8-like S (top or waist closed
+  into a loop; A: W02 W03 W08 W10, B: W02 W03 W06 W08 W10); they disagree only on W06 (9/10 agreed vs gate 10). W01 (a heavy blotted
+  stroke) and W05 (blank: the position estimate missed) are out.
+- **7: UNDECIDED** as registered: both passes see one construction (top bar + one stem, 9 and 10 found), but ONE SHAPE needed both plant
+  passes to pass POWER and pass A failed.
+- **Reconciliation (non-blind, after scoring, descriptive, no gate).** `s7/lasry_n_u_b.jpg` cuts three exemplars from his sheet: under
+  **n** (row 2) a looped S with a crossing at the waist, the blind *looped* group's shape; under **u/v** (row 2) an open S with a heavy
+  swept tail, the blind *open* group's shape; under **b** a plain 7, the same construction both passes saw for our single 7. So his sheet
+  separates two S shapes that our label `S` merges; that matches CL1161-KA's c186R split (9 n, 5 u). For 7 his b is the shape we label 7: a
+  value conflict (rule 4), not a transcription merge. Both readings are descriptive, made after the gates were scored, and license nothing.
+
+**--try (PREREG UNDECIDED branch, main ciphertext, every occurrence; `crossword_log.tsv`):**
+```
+7=b: n 219, current i, statistic -4020.5 bits over i; null p95 positions -4114.7, value class -1137.8; reject (no better than the current value) [non-blind]
+S=n: n 275, current u, statistic 325.2 bits over u; null p95 positions , value class -1578.1; reject (breaks 85 of 275 occurrences by more than 3 bits) [non-blind]
+```
+`7=b` on the whole label also rewrites the 78 adjacent 7 7 pairs (his nomenclature 77 = de), a known confound. Post-hoc, not
+pre-registered: single 7 only (63 tokens) relabelled `7s` in a derived harness (`s7/ciphertext_7single.tsv`, `s7/key_7single.tsv`,
+`s7/decode_try.json`; transcription untouched): `7s=b: n 63, current i, statistic -590.6 bits over i; null p95 positions -759.5,
+value class 17.9; reject (no better than the current value)` (`s7/try_7single_b.txt`). `S=n` gains 325 bits over u in total yet breaks
+85 of 275 occurrences: the mixed result one label covering two letters would give. No key.tsv or ciphertext.tsv edit (no --try
+control passed); S stays u (S grade), 7 stays i (S grade); Lasry's n and b are recorded as data conflicts (rule 4), M where cited.
+Grades unchanged: C 353, S 1908, M 1114, U 33, H 0 under key.tsv.
+
+Subagent calls: 6 (Sonnet, small montages). Session cost not visible to this session. Report what was found and where it was not
+found: no outside source searched; novelty not classified.
+
+## Remaining gaps (CL1161-S7, 15 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H (unchanged). Prior work: George Lasry's reading of ff.162r-164v (cyphersolver `clair1161`, 6/6 transcribed, 2/6 deciphered, 4 in part). Concordance with his key (C1161-LKEY): 16 agree, 10 disagree, 24 unmapped; c186R known-answer gate PASS (CL1161-KA); S/7 image check UNDECIDED both, S split open vs looped 9/10 one short of gate, --try S=n reject (breaks 85/275), 7=b reject (CL1161-S7).
+- S label merges two shapes? (blind open vs looped split 9/10, gate 10; his n = looped, u = open, descriptive) - blocker: not-attempted; 12 tokens is too few to clear the gate and the passes alone cannot relabel 275 tokens; next: relabel all S tokens open/looped in the owner's sign sorter (or two blind passes over every S window, ~10 calls), then --try S_looped=n and S_open=u on the split at every occurrence, ~$3
+- 7 (i vs his b) and digit-pair nomenclature 76/44/37/48, n77 beyond c186R - blocker: not-attempted; one shape for single 7 (both passes, power not both), --try 7=b and 7s=b reject, so a value conflict, not a merge; next: the token-level known-answer alignment on his second fully read face once its text is on disk (record step: his report excerpt for that face, ~$1)
+- 24 unmapped labels (incl. th 208 tokens, +, d, o, ls, eloop, K, 6r, iii, x) and z (passes agreed on his a:2, decode says t), plus plant W07 (a q both passes saw crossed) - blocker: not-attempted; description-only matching could not separate them; next: blind matching with atlas-style exemplar crops of each of our labels beside his sheet (two passes, one call per label group), ~$2
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 (14 U tokens left under V1) - blocker: not-attempted; outside labels_v2, so not in the matching passes; next: the exemplar-crop matching above, then the owner sign sorter if any stay open, ~$1
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (CL1161-S7, 15 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); whole volume (342 canvases) swept at 300 px, no other cipher or glossed leaf (D1A-C1161)
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under key.tsv; his f163r paragraph matches the same gloss (LQ-C1161); c186R V2 decode agrees with his paragraph on 148/226 tokens, G1 PASS vs permuted key (CL1161-KA); no other glossed leaf in the volume (D1A-C1161)
+- [ ] known-keys: fr16142 and fr.3281 f.4 NO FIT (N4-C1, D2-C1161PRU); Lasry's key: V1 FAIL, V2 whole-decode FAIL, c186R known-answer PASS, n77 = de --try undecided (CL1161-KA), 7=b and S=n --try reject (CL1161-S7); next: the same alignment on his second fully read face once its text is on disk, ~$1
+- [x] print: no printed edition located by check-solved and Premise check; Vertot, Ambassades de Noailles (1763) vols 1-5 grepped for the f163r paragraph, not found by this method (VER-C1161); Lasry's "BnF cipher research" (10 Oct 2026, published by D. Bourdeau 13 Oct) is prior work on all six faces: AUDIT 3 class N0, key of record published (Lasry)
+- [retired] key-rebuild: instrument c186R gloss match (G) for per-sign and joint value changes -- per-sign 0/9 (GLOSS9), joint gain inside the window null (VER-C1161J); reopens only with a longer clear text or new material (his reading may be that material)
+- [ ] image-check: split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); planted audit NON-TEST (D2-C1161AUD); S/7 exemplar check UNDECIDED (S split 9/10 vs gate 10, 7 one shape, plant power 1 of 2; CL1161-S7); next: every S token sorted open vs looped (owner's sign sorter or full blind passes), then --try per split; exemplar-crop matching of the 24 unmapped labels
+- [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); V1 and V2/V2b decodes --check exit 0 (C1161-LKEY, C1161-V2); main and V2 --check exit 0 again (CL1161-KA, CL1161-S7)
+Verdict: keep going: 4 internal gaps; cheapest next: the token-level known-answer alignment on Lasry's second fully read face, ~$1; then every S token sorted open vs looped and --try per split, ~$3
+
+`python3 tools/gaps_check.py clair1161-avis-flandre-1688` (CL1161-S7, 15 Oct 2026):
+```
+OK keep-going clair1161-avis-flandre-1688: keep going: 4 internal gap(s), 2 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```

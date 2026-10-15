@@ -1,0 +1,6 @@
+{
+ "note": "CL1161-S7 (15 Oct 2026): --try harness only, POST-HOC (not in PREREG): single 7 (not in a 7 7 pair) relabelled 7s, read as i like 7. Never a reading.",
+ "jobs": [
+  {"ciphertext": "s7/ciphertext_7single.tsv", "key": "s7/key_7single.tsv", "style": "spaced", "reading": "s7/try_reading.txt", "tokens": "s7/try_tokens.tsv"}
+ ]
+}
