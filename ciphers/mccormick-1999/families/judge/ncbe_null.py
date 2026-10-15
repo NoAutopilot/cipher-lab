@@ -10,6 +10,7 @@ draw (token_anneal.fit_marks, MCC-SUFX's instrument unchanged).
 
 Usage: python3 ncbe_null.py --draws 200 --procs 4 --out ncbe_null.json
        python3 ncbe_null.py --lexicon ../gregg/gregg1916_lexicon.txt --kinds ncbe --draws 200 --out ... (MCC-GREGG)
+       python3 ncbe_null.py --phonetic ../cmu/cmudict_subset.dict --kinds ncbe --draws 200 --out ... (MCC-CMU)
        python3 ncbe_null.py --selftest
 """
 import argparse, json, random, sys, time
@@ -96,6 +97,7 @@ def main():
     ap.add_argument("--procs", type=int, default=4)
     ap.add_argument("--pool", type=int, default=3000)
     ap.add_argument("--lexicon", help="MCC-GREGG: word-list file for the pool filter (token_anneal.lexicon_allows)")
+    ap.add_argument("--phonetic", help="MCC-CMU: CMUdict-format file; codes are phonetic skeletons (token_anneal.load_phonetic)")
     ap.add_argument("--kinds", default="ncbe,tm", help="MCC-GREGG: which nulls to draw (ncbe, tm)")
     ap.add_argument("--out")
     ap.add_argument("--selftest", action="store_true")
@@ -104,6 +106,8 @@ def main():
         return selftest()
     toks = T.tokenize(T.CIPHER_FILE.read_text())
     allowed = T.lexicon_allows(T.load_lexicon(a.lexicon)) if a.lexicon else None
+    if a.phonetic:
+        T.load_phonetic(a.phonetic)
     _S.update(wb=T.WordBigram(T.corpus_words_from(T.HELDOUT_EN), a.pool, allowed=allowed), alpha=3.0, beam=200,
               keep_decode={7000, 8000})
     t0 = time.time()

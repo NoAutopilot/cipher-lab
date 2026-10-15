@@ -824,9 +824,64 @@ def suffix_class(word):
     return w, "other"
 
 
+# MCC-CMU (15 Oct 2026, PREREG-MCC-CMU.md): phonetic skeleton of the base from a pronouncing dictionary (CMUdict).
+# Each consonant phone is written as its commonest English grapheme; ER (r-coloured vowel) as R; vowels dropped except
+# that a word whose first phone is a vowel keeps its first spelled letter; runs of one symbol collapsed. The ending
+# class's own phones are stripped from the end of the pronunciation first (CMU_STRIP). Words not in the dictionary fall
+# back to the letter skeleton of the base (the share is reported). PHON is empty unless load_phonetic() is called, so
+# every earlier mode is unchanged.
+PHON = {}
+PHON_STATS = Counter()
+CMU_GRAPH = {"P": "P", "B": "B", "T": "T", "D": "D", "K": "C", "G": "G", "CH": "CH", "JH": "G", "F": "F", "V": "V",
+             "TH": "TH", "DH": "TH", "S": "S", "Z": "S", "SH": "SH", "ZH": "S", "HH": "H", "M": "M", "N": "N", "NG": "NG",
+             "L": "L", "R": "R", "ER": "R", "W": "W", "Y": "Y"}
+CMU_VOWELS = {"AA", "AE", "AH", "AO", "AW", "AY", "EH", "EY", "IH", "IY", "OW", "OY", "UH", "UW"}
+CMU_STRIP = {"ing": [["IH", "NG"]], "ed": [["IH", "D"], ["AH", "D"], ["D"], ["T"]], "ly": [["L", "IY"]],
+             "s": [["IH", "Z"], ["AH", "Z"], ["S"], ["Z"]], "e": [], "y": [["IY"]], "d": [["D"]], "t": [["T"]],
+             "n": [["N"]], "r": [["ER"], ["R"]], "other": []}
+
+
+def load_phonetic(path):
+    """read a CMUdict-format file (word PH1 PH2 ..., '#' comments, variants 'word(2)' ignored: first pronunciation only)
+    into PHON, stress digits removed."""
+    PHON.clear()
+    for line in Path(path).read_text(encoding="utf-8", errors="replace").splitlines():
+        line = line.split("#")[0].strip()
+        if not line:
+            continue
+        w, *ph = line.split()
+        if "(" in w or w in PHON:
+            continue
+        PHON[w.lower()] = [re.sub(r"\d", "", x) for x in ph]
+    return len(PHON)
+
+
+def phon_skeleton(word, cls):
+    """phonetic skeleton of the base of `word` for ending class `cls` (None if the word is not in PHON)."""
+    ph = PHON.get(word.lower())
+    if ph is None:
+        return None
+    for pat in CMU_STRIP[cls]:
+        if len(ph) > len(pat) and ph[-len(pat):] == pat:
+            ph = ph[:-len(pat)]
+            break
+    out = [word[0].upper()] if ph and ph[0] in CMU_VOWELS else []
+    for x in ph:
+        g = CMU_GRAPH.get(x)
+        if g and (not out or out[-1] != g):
+            out.append(g)
+    return "".join(out) or word[0].upper()
+
+
 def sufx_key(word, fmap):
-    """code string of a word under mark map fmap (class -> mark): drop-skeleton of the base, then the class's mark."""
+    """code string of a word under mark map fmap (class -> mark): drop-skeleton of the base, then the class's mark
+    (MCC-CMU: the phonetic skeleton of the base instead, when load_phonetic() has been called)."""
     base, cls = suffix_class(word)
+    if PHON:
+        ps = phon_skeleton(word, cls)
+        PHON_STATS["in" if ps is not None else "oov"] += 1
+        if ps is not None:
+            return ps + fmap[cls]
     return skeleton(base, "drop") + fmap[cls]
 
 
@@ -975,11 +1030,13 @@ def sufx_run(a, real_toks, words):
     and only if the control read at the target's own N (exit 3 otherwise)."""
     import time
     allowed = lexicon_allows(load_lexicon(a.lexicon)) if a.lexicon else None
+    if a.phonetic:
+        print(f"phonetic: {load_phonetic(a.phonetic)} entries", file=sys.stderr)
     wb = WordBigram(corpus_words_from(HELDOUT_EN), a.pool, allowed=allowed)
     _SUFX.update(wb=wb, alpha=a.alpha, beam=a.beam)
     gen = fit_true_map(real_toks, words)
     out = {"mode": "sufx", "pool_size": a.pool, "alpha": a.alpha, "beam": a.beam, "generator": gen, "controls": {},
-           "lexicon": a.lexicon, "target_nulls": a.target_nulls or a.nulls}
+           "lexicon": a.lexicon, "phonetic": a.phonetic, "target_nulls": a.target_nulls or a.nulls}
     print(json.dumps(gen), file=sys.stderr)
     seeds = [int(x) for x in a.seeds.split(",")]
     for n in [int(x) for x in a.n_list.split(",")]:
@@ -1061,6 +1118,8 @@ def main():
     ap.add_argument("--procs", type=int, default=1, help="sufx: processes for the null fits")
     ap.add_argument("--lexicon", help="sufx (MCC-GREGG): word-list file; the pool is the top --pool LM-corpus words that are "
                     "in it or inflect a word in it (lexicon_allows)")
+    ap.add_argument("--phonetic", help="sufx (MCC-CMU): CMUdict-format pronouncing dictionary; each word's code is the "
+                    "phonetic skeleton of its base (phon_skeleton) instead of the letter skeleton")
     ap.add_argument("--target-nulls", type=int, default=None, help="sufx: nulls per kind on the target (default --nulls)")
     ap.add_argument("--generator-only", action="store_true", help="sufx: print the control generator's fit and exit")
     ap.add_argument("--skeleton", action="store_true", help="MCC-SKEL: abbreviation/consonant-skeleton lattice decoder")
@@ -1091,6 +1150,8 @@ def main():
 
     if a.selftest:
         return selftest(model, pool_words, pool_weights, real_toks, words, frequent)
+    if a.sufx and a.phonetic and not PHON:
+        load_phonetic(a.phonetic)
     if a.sufx and a.generator_only:
         print(json.dumps(fit_true_map(real_toks, words), indent=1)); return 0
     if a.sufx:
