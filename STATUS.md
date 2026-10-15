@@ -9152,6 +9152,30 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-4-20261015-0645 handoff (session_014woh4Hq2PVTx8xf11r4jwH, account 4, for the orchestrator (owner account)), 15 October 2026 (06:45-09:5x UTC by date -u; closed: budget; workers 50.76 + orchestrator 4.88 = ~55.6 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-15-acct4-default-0645-jobs.md (5 waves, 16 workers, all Opus). Gate 0a: no SESSION-SWEEP-account-4 row.
+Backlog = A4-0437's next list, each step taken from the folder's latest Verdict. Excluded: A1-0447 and A2-0509 holdings, VIV, BNF-FOCUS,
+Birago/ceppo, Armstrong, Debosnys, cipher-lab-private. No image committed.
+**workers (ledgered + archived)**
+- lodewijk-van-nassau-1573-74: LVN-EYE 2.55 Q (six 4610 rulings, all changed, words restored); LVN-4611P2 7.13 D (4611 p2 top half, control 9/10,
+  C 949->998); LVN-P2RETX 5.80 D (p2 K13-K35 re-transcribed from physical lines, 127 ink tokens inserted M); LVN-P2B 3.42 D (re-sequenced, 99 M
+  confirmed H, C 998->1090); VER-LVN2 3.78 Q (separate verifier: 15 rows eyed, 10 H->M, AUDIT.md carries every 15 Oct change; 4610/4611/4616 C/H
+  2569 of 3334 = 77.1%, four letters 61.7%, D2, N unchanged).
+- clair1161-avis-flandre-1688: C1161-KA 1.12 F (my brief error, material not on disk); C1161-LASRY 1.31 N (Lasry second face not in cyphersolver
+  HEAD 0445769; waits on his full report, owner-side); C1161-SSPLIT 4.46 N and C1161-SORT2 3.89 N (gate K failed on 3 mis-cut windows);
+  C1161-RECUT 3.46 D (windows re-cut, gate K as first registered PASS, registered --try: looped S = n accepted, grade M, no key edit).
+- baluze167-davaux-1637: BAL-EYE 1.71 D (E = e 7/7, S); BAL-C286 2.03 N (c286-293 no glossed 7/5); BAL-E293 2.40 D (E is two signs: rounded
+  E = e, crossbarred E no value, M); BAL-169 2.55 N (f.36-38 no glossed 13:/65; f.208-209 another key); BAL-169C 3.29 N (13: = Mr 4/4 but
+  within-run shuffle ties, M by rule).
+- na-suriname-map-1781: SUR-TRY 1.86 N (--try power control C2 failed: garde g=g non-test, g=l vs g undecided; nothing into key).
+Known-text share (light guardrail): SUR-TRY 1.86 of 50.76 (~4%).
+Overruns: C1161-RECUT 1.73x, BAL-EYE 1.71x, LVN-EYE 1.70x -- a worker pays ~1 of start-up before its first unit; price small jobs at >= 2.
+**next**
+1. lodewijk: placement pass on the ~48 unplaced 4611 p2_K rows (VER-LVN2 next), ~3; then eye check of 4610 H tokens ending in the flat-foot 2, ~1.
+2. clair1161: the full 275-window S re-cut by counting (only 3 K windows were re-cut), then the registered --try on the whole set, ~4.
+3. baluze167: registered cross-run control for 13: = Mr (~0.5); the two unsettled 65 strokes at full/max (~0.5); c297/c232/c344 unfetched (~1.5).
+4. na-suriname: g at L08:47 stays M; --try cannot decide it on the 2061 block (no position null); needs new material.
+
 ## LANE DEFAULT-account-4-20261015-0437 handoff (session_014F2NNFZiwF72cavhiYaLht, account 4, for the orchestrator (owner account)), 15 October 2026 (04:37-06:3x UTC by date -u; closed: in-scope backlog spent; workers 47.93 + orchestrator ~5.3 = ~53.2 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-15-acct4-default-0437-jobs.md (4 waves, 15 workers, 14 Opus + 1 Sonnet). Gate 0a: no SESSION-SWEEP-account-4 row.
 Backlog = A4-0235's next list + hot-list runnable rows checked against each folder's own sections (dropped as already done: wallis-emus203 Thurloe grep,
