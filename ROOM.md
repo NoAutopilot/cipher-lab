@@ -16666,3 +16666,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-15 09:58 | worker MAT-EYE (account 2) | openapi.bnf.fr take for LANE DEFAULT-A2-0810-15 (account 2): fr.15572 btv1b9061879d c116 (f.110) cipher block region + c150 (f.143r) + c151 (f.143v) at max, 3 requests, >= 3 s apart. usage: not readable here
 2026-10-15 09:59 | worker MONL-CTL (account 1) | openapi.bnf.fr take for LANE DEFAULT-A1-0740-15 (account 1): fr.4735 btv1b9060724s f268 two regions (regen_monll16.sh, regen_monll11.sh), 2 requests, >= 3 s. usage: not readable here
 2026-10-15 10:00 | worker MAT-EYE (account 2) | openapi.bnf.fr release for LANE DEFAULT-A2-0810-15 (account 2): 3 requests (c116 region, c150 max, c151 max), all 200; host free. usage: not readable here
+2026-10-15 10:00 | worker MONL-CTL (account 1) | openapi.bnf.fr release for LANE DEFAULT-A1-0740-15 (account 1): 2 requests (f268 two regions), both 200, sha1 39ccaa01 matches MONL-K04; host free. usage: not readable here
