@@ -91,7 +91,7 @@ R16	276	[deffaut] d'une	1	s:E	-	C275U4
 R16	276	[deffaut] d'une	2	19'	du	C275U4
 R16	276	[deffaut] d'une	3	51'	ne	C275U4
 R17	275	attendre	1	s:g	a	C275U4
-R17	275	attendre	2	s:E	-	C275U4
+R17	275	attendre	2	s:Ebar	-	C275U4
 R17	275	attendre	3	76'	te	C275U4
 R17	275	attendre	4	s:c	n	C275U4
 R17	275	attendre	5	s:u	d	C275U4
@@ -138,3 +138,12 @@ R23	281	contenter	5	s:E	e	EYE
 R23	281	contenter	6	6	r	EYE
 R23	281	contenter	7	27	-	EYE
 R23	281	contenter	8	20=	-	EYE
+# BAL-E293 (15 Oct 2026, account 4): c293, c268, c275 re-fetched full/2400 (openapi.bnf.fr; untracked; images/manifest.json bal_e293_fetches) and
+# compared by eye on 2x crops side by side (PREREG c275g/PREREG-BAL-E293.md). Two signs, not one: the rounded epsilon E (c268 'partie' and line 1,
+# c275 bare run L01) and a capital E with a left-projecting crossbar through the middle stroke (c275 R17 'attendre' pos 2, c293 'fort'), labelled
+# s:Ebar here. R17 pos 2 relabelled s:E -> s:Ebar. c276 R16 (d'une) not re-fetched; its shape is unchecked and its label stays s:E with unit '-'.
+R24	293	le fort	1	41'	le	E293
+R24	293	le fort	2	23'	fo	E293
+R24	293	le fort	3	6	r	E293
+R24	293	le fort	4	s:Ebar	-	E293
+R24	293	le fort	5	s:u4	t	E293

@@ -4459,5 +4459,31 @@
    "kept": "session scratchpad only, not committed",
    "job": "BAL-C286"
   }
+ ],
+ "bal_e293_fetches": [
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f293/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T07:57Z",
+   "http": 200,
+   "sha1": "133c925f415bd46e099a70fb12f7f257725d9d96",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-E293"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f268/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T07:57Z",
+   "http": 200,
+   "sha1": "7cd1b82e2abc810821bc907c02ab850ba897ae88",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-E293"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001489r/f275/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T07:57Z",
+   "http": 200,
+   "sha1": "7d2e732108027a5092a88bf3cd1dc6cde880d4c4",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-E293"
+  }
  ]
 }
