@@ -1,0 +1,21 @@
+# B.147 p.225 (H-1649 Image 869), BL Add MS 21807 fo.192: period decipherment of Clinton to Haldimand, New York, 14 Aug 1780
+# (item 2962, PRO 30/55/25/18; cipher copy on p.226 = Image 870). Read by worker CLIN-2962 (15 Oct 2026) on one own look at
+# Image 869 at 2400 px (autocontrast crop), before any p.226 pass; line breaks as written. Margin: "See the cypher letter
+# initialled copied on p. 226 infra." Corroborated by the 1920 Military and Naval Forces of Canada vol. III doc 189 p.168 print
+# as quoted in NOTES.md (GAPS5: "Monsieur Ternay arrived the 12th ultimo ... said to be sickly"); spellings here are the page's.
+New York 14th Augt 80
+received the 9th Sept
+BODY
+Monsieur Terney arrived the
+twelfth ultimo at Rhode Island
+with seven sail of the line three
+Frigates and about five
+thousand Troops who are
+said to be sickly - there is little
+probability of their attempting
+Canada this year, their
+principal Efforts being intended
+against this Place -/
+END
+Copy
+fo.192v [Endorsed:] Chiffre du Ch: Clinton du 14me d'Aoust 80
