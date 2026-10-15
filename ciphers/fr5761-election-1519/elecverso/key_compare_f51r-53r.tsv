@@ -1,0 +1,17 @@
+# ELEC-VERSO 15 Oct 2026 13:1x UTC, PREREG e73f2874b: ELEC-POOL five-feature rule (strokes, closed loops, crossings, orientation, detached marks); match=5/5 partial=4/5; one reader, keys at 1500 px (images/canvas105-109), target features as ELEC-POOL recorded them, re-viewed on c335/c336 native regions (scratch); all M
+target_sign	printed_name	leaf	block	key_row	key_sign_desc	result	own_name_row
+oXo	roy catholicque	f.51r (c105)	A monsr de la Vernade devers monsr de Treves (lower block)	Le Roy catholicque	horizontal stroke, small circle at each end, X across the middle	match 5/5	yes
+oXo	roy catholicque	f.51r (c105)	A monsr de Langeac? (upper block)	Le Roy catholicque	asterisk	no match	yes
+oXo	roy catholicque	f.51v (c106)	A monsr de la Guiche?	Cleves	horizontal stroke, circle each end, upright + across	match 5/5 (conflict; + not X, which the rule does not score)	no
+oXo	roy catholicque	f.52r (c107)	Joachim de Moltzan devers le marquis de Brandebourg	Rex catholicus	dd-like double loop	no match	yes
+oXo	roy catholicque	f.52v (c108)	... pardevers le duc de Saxe	Treverien	horizontal stroke, circle each end, double bar across	match 5/5 (conflict; double bar, not X)	no
+oXo	roy catholicque	f.52v (c108)	... pardevers le duc de Saxe	Rex catholicus	double-barred cross	no match	yes
+oXo	roy catholicque	f.53r (c109)	Le grant archediacre ... legat qui est en Allemaigne	Colonien	horizontal stroke, circle each end, no crossing	partial 4/5	no
+Phi	Brandebourg	f.51r (c105)	Vernade -> Treves	Brandebourg	closed loop on a vertical stroke passing through it	match 5/5	yes
+Phi	Brandebourg	f.51r (c105)	upper block	Brandebourg	B-like letter form	no match	yes
+Phi	Brandebourg	f.51v (c106)	la Guiche?	Saxe	circle on a vertical stroke (phi)	match 5/5 (conflict)	no
+Phi	Brandebourg	f.51v (c106)	la Guiche?	Brandebourg	gallows-like double stroke	no match	yes
+Hbar	Treves	f.51r (c105)	Vernade -> Treves	Treves	R/H-like sign with bar, descending hook, superscript mark	match 5/5	yes
+Hbar	Treves	f.51r (c105)	upper block	Coulongne	R/f-like sign with small detached circle	partial 4/5	no
+Lfo	conte Palatin	f.51r (c105)	Vernade -> Treves	Palatin	L/f stroke with foot and cross-bar, small detached circle above right	match 5/5	yes
+Lfo	conte Palatin	f.51r-53r (c105-c109)	all other blocks	every other row	-	no row >= 4/5	-

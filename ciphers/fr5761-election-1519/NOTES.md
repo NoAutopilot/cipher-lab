@@ -981,3 +981,49 @@ print. Image to image, only Phi agrees with its row on the f.53v Brandebourg key
 the other section 3(b) Coblenz replies (14 May-29 June, before f.166r; ELEC-WALK read rectos only) for name signs Kluckhohn did not flag,
 starting with the versos of ff.160-165 at 1000 px (~6 canvases, ~1.5); (2) compare the four signs with the f.51r-53r keys (c105-c109 on
 disk, ~1); (3) fr.3897's other Joachim items (36-38, 62, 64-65, 73) for second witnesses of nr. 357's M signs (ELEC-PAIR next 3).
+
+## ELEC-VERSO: versos of ff.160-163 and the four nr. 383 signs against the f.51r-53r keys (worker ELEC-VERSO, LANE DEFAULT-A4-1236-15, account 4, 15 Oct 2026, 13:12-13:2x UTC by date -u)
+
+Brief: ELEC-POOL's next (1)-(2). PREREG `elecverso/PREREG-ELEC-VERSO.md` (pushed e73f2874b before any fetch). Page images, not a
+transcription (rule 2); search results only (rule 10). key.tsv unchanged; elecpair383/ grades unchanged; status open.
+- prior_work.py (`--item-spec 'BnF fr.5761 ff.160v-163v versos ...' --step-type read --offline`), exit 4, generic holds only (LOOK 2-leaf,
+  UNCHECKED 3-tomokiyo/3-solver, UNCHECKED-NET 3-solver/4-editions), as for ELEC-383/ELEC-KLU; run before the first fetch.
+- **(1) Versos: no name sign.** f.164v (c332, ELEC-383) and f.165v (c334, ELEC-KLU) were already read, so four canvases were fetched at
+  1000 px: f.160v (c324), f.161v (c326), f.162v (c328), f.163v (c330). All four are mid-letter Coblenz-period text with every name in
+  letters: c324 a first-person report ("ce jour je parlay ..."; no name legible as a sign); c326 "led. conte Jehan", "l'eslection";
+  c328 Bohesme, Francfort, Langraff de Hesse, Coulongne, Magence, conte palatin, marquis de Brandebourg; c330 marquis de Brandebourg
+  (twice), Magence, "monseigneur vostre second filz", Strasbourg, Allemaigne, Franckfort, a heading "Sauvé" between two letters. No isolated
+  non-letter sign in a word slot at this scale (the oXo of f.166v shows plainly at 1000 px, so a name sign would have been visible), so no
+  native crop was fetched. With ELEC-383/KLU the versos ff.160-165 are now all read; rectos ff.161r-164r (c325, c327, c329, c331) are not.
+- **(2) The f.51r lower key block carries all four nr. 383 signs under their own names** (`elecverso/key_compare_f51r-53r.tsv`). The block
+  headed "A monsr de la Vernade devers monsr de Treves" (f.51r, c105, lower half; reading of "Vernade" M) gives Palatin = an L/f stroke
+  with a small circle above (Lfo), Treves = an R/H-like sign with a bar and superscript (Hbar), Brandebourg = a loop on a vertical stroke
+  (Phi), and, below the rule, Le Roy catholicque = a horizontal stroke with a small circle at each end and an X across it (oXo). Under the
+  PREREG's five-feature rule each is a 5/5 match to its own name's row. Distractors: the rule is coarse for two of the four. oXo also scores
+  5/5 against f.51v Cleves (o+o, upright cross) and f.52v Treverien (circle-bar-bar-circle), and Phi 5/5 against f.51v Saxe (phi), so those
+  are logged as conflicts under the rule; Hbar's best other row is 4/5 (f.51r upper block Coulongne), and Lfo has no other row at >= 4/5 on
+  ff.51r-53r. Only the f.51r Vernade block matches all four signs, each to its own printed name; no other block on ff.50v-53v matches more
+  than one (f.53v Brandebourg, ELEC-POOL; f.51v two, both under other names). Post hoc, not scored: by eye the X of nr. 383's oXo is the
+  diagonal cross of the f.51r Roy catholicque, not the upright + of Cleves or the double bar of Treverien.
+- **Who shares the key (M, one reader).** Beside the lower block's rows a note reads "[Sem]blable a monsr de Lorraine, monsr d'Orval, monsr
+  de Bazoges, [l'aumosnier?] Chambrehain, Salviati, a monsr le tresorier Robertet". If "semblable" is right and the note belongs to this block
+  (it sits inside it, right of the Brandebourg-Magence rows), Orval, one of nr. 383's three signers, was given this same name list, which
+  would explain why the copy's name signs follow this block. The first word and the attachment are not settled; Bonnivet and Guillart are not
+  named in the note.
+- All M (one reader; key image 1500 px; the copy and the key in different hands). key.tsv does not yet carry f.51r rows (R5 D's "what's
+  left"), so nothing was entered; no grade in elecpair383/ changed. This is the second line of evidence ELEC-KLU's rule 3 note asked for
+  (a period key row for the same name), not a second ciphertext occurrence: the shuffled-name control's 10% for oXo is unchanged.
+- Step (3) (fr.3897 items 36-38) not run: under 30% of cap left after (1)-(2).
+- Requests: openapi.bnf.fr 6 (c324, c326, c328, c330 full/1000; c336 region 0,0,2232,1800; c335 region 0,2650,2232,400), all 200, no
+  403/429. Images in the session scratchpad only, none in git. Regen:
+  `https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b52510561g/f32{4,6,8}/full/1000,/0/default.jpg`, `.../f330/full/1000,/0/default.jpg`,
+  `.../f336/0,0,2232,1800/max/0/default.jpg`, `.../f335/0,2650,2232,400/max/0/default.jpg`. Key crops from images/canvas105_folio51r.jpg
+  (1500x2199): lower block x 0-700 y 1270-2000; note x 620-1500 y 1560-1860.
+
+**Verdict (ELEC-VERSO, 15 Oct 2026):** open, unchanged. The versos of ff.160-165 carry no name sign. The four nr. 383 name signs are, as a
+set, the f.51r "la Vernade devers Treves" block's Palatin, Treves, Brandebourg and Roy catholicque signs (each 5/5 on the PREREG rule, M), and
+a note on that block appears to extend the same list to Orval. Next: (1) a second reader (blind Sonnet pass on the f.51r lower block and the
+four target crops, ~0.6) to confirm the four matches and read the note's first word, before any f.51r rows go into key.tsv (~0.6 with a
+majority_key_leaf.py run); (2) with the f.51r block as the key, search fr.5761 rectos ff.161r-164r (c325-c331, 4 canvases at 1000 px, ~1.5)
+and the other Orval/Bonnivet/Guillart copies for further occurrences of its signs, which a third oXo would need for C; (3) fr.3897 items 36-38
+(ELEC-PAIR next 3).
