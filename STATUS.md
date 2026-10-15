@@ -9689,3 +9689,30 @@ Lessons: (1) small disk/eye jobs at cap 2 ran 1.2-1.4x -- price them at ~3; (2) 
   now waits on the owner's alphabet sort (https://claude.ai/artifact/1X2MSRNQTeNZNEXB76RZ1u); nothing of the parent's in flight; no new
   measurement job without that sort or new material. Next after the sort: the registered err_true test, then PREREG-VIVPACKET4 with the six
   g-split positions among its questions.
+
+## LANE DEFAULT-account-2-20261015-1109 handoff (session_0177nygw3K3f1ZmuZumybKEf, account 2, for the orchestrator (owner account)), 15 October 2026 (11:10-13:0x UTC by date -u; closed: in-scope backlog thin, under one wave of budget left; workers 44.62 + orchestrator ~7.3 = ~51.9 of 60 by get_session; five_hour allowed throughout)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-15-ytbiz-default-1109-jobs.md (waves 1-4). Gate 0a: no SESSION-SWEEP-account-2
+row. VERIFY-BACKLOG: Birago/ceppo `counted` rows off limits, eckert-1864 audit2 parked on googleapis 503, manteuffel's step needs a person's eye ->
+step b: next_steps --hot-only runnable rows + DEFAULT-A2-0810-15's named nexts, excluding A4-1035 and A1-1140 holdings. 19 workers (15 Opus,
+4 Sonnet), all ledgered and archived. Guardrail share: 0 (no job on known text).
+Results:
+- oldenbarnevelt-brederode-1605 (OBRED-CTRY, -MONO, -NA, -NA2, -6020, -9453, -6021, -945X): the 20 OBRED-SEG word leads stay M -- both the
+  every-occurrence context test and the joint band-monotonicity test had synthetic controls below gate (two control failures on that family; not
+  re-briefed). Archive: NA 1.01.02 inv. 9459 fully seen, 9450-9458/9460 openings + 9450/9451/9453 stride 3, secrete resoluties 4562 (no resolution
+  29 Aug 1619 - 7 Feb 1620), inv. 6020 and 6021 stride 6: no key leaf, alphabet or Brederode letter. 9453 s24 is an Oldenbarnevelt-Langerak names
+  table (11 codes, overlap k=0 with no. 92; Elector Palatine 47 vs 605 in the 1619 glosses, logged). **Lead:** inv. 6021 scan 379, a Dutch letter
+  dated Heidelberg Aug 1621 with ~12 lines of two-digit groups each followed by a letter, layout unlike no. 92 by eye, nothing transcribed (M).
+  Next: transcribe 6021 s379 and compare its system with no. 92 (~2); 6021 sheets 14-15 (scans 703-805, ~1.5); 9450/9451/9453 remaining scans
+  at 900 px (~3).
+- harley-287-1587 (HAR-39V, HAR-39V2): f.39v line G word 3 is 10 signs, not 7; two readers agree on 8/9 legible signs (b-u-?-i-t-y-?-p-e-d,
+  sign 3 u|t, sign 7 blotted); no English word fits; stays M. R8478/R8480 viewed (same pigpen). Next: none cheap on this word.
+- na-suriname-map-1781 (SUR-2046A, SUR-POOL, SUR-2076, SUR-AMH): [d-hook] = e undecided -- nl18 vocabulary anchor test retired after two control
+  failures; 2076 crib on 2077 non-test (known-H LOO 0.643 < 0.90); AMH and den Heijer give no 2077 legend text. Next: den Heijer p.328 (~1).
+- colbert26-lathuillerie-1644 (COL26-PRINT, -PRINT2): 20 editions searched (incl. Kernkamp, 8 Oxenstierna Skrifter vols), 0 hits; print rung open
+  only for Svenska riksradets protokoll 1644-46 (not on IA).
+- thurloe-printed (TH-VERB): no cloud-readable copy of the 1725 Verbael; LOCAL-QUEUE L81 filed for the desk.
+- fr3975-vieuville-1587 (VIE-PC): no IA copy of Gomberville 1665, no hit; status blocked unchanged.
+Lessons: (1) disk-only statistical jobs at cap 2.5-3.5 landed 2.3-3.2, under cap; image/sheet-read jobs on a shared archive host ran to or over cap
+(OBRED-945X 1.23x, HAR-39V 1.27x) -- price those at the request count; (2) the oldenbarnevelt archive screen yields its first cipher lead only at
+inv. 6021, after ~350 scans of nothing: a stride screen is worth finishing once started.
