@@ -11,7 +11,7 @@ cobham1588/signs.tsv (github.com/dbourdeau/cyphersolver HEAD 0445769, MIT): glos
 10 = Lord Admiral, 15 = Duke of Parma, 16 = King of Spain. Open groups: 42 (f.70r), 22, 27, the square (f.80r) and
 the f.11 (R8477) groups 80, wh24, circled cross, square, Nrp54.
 
-Recording step (before scoring): for each key read from its image, one row per letter in keys/key_signs_HAR-KEYS.tsv:
+Recording step (before scoring): for each key read from its image, one row per letter in keys/period_signs_HAR-KEYS.tsv:
 record, letter, sign shape(s) described in words, and whether the shape is one of Cobham's named shapes for ANY
 letter (cup, caret, +, 8, infinity, barred t, 7, barred H, barred x, stem+bowl, inverted T, omega, circle+stem,
 horizontal S, double cross, slanted double cross, 2-shape, d, theta-loop, V, gamma, two dots, dot-and-stroke).

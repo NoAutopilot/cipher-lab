@@ -1,0 +1,175 @@
+# HAR-KEYS 15 Oct 2026: letter signs read by eye from DECODE full-size images (scratchpad, not committed; sha1 in NOTES.md).
+# cobham = the key_f84_f90.tsv symbol(s) whose shape equals this sign (A = caret, D = infinity, I = inverted T, U = cup, V = V, l = circle+stem, z = 2-shape, k = omega, p = stem+bowl); '-' none.
+record	alphabet	letter	signs_as_read	cobham
+R1819	Fernihurst	a	delta-like	-
+R1819	Fernihurst	b	T	-
+R1819	Fernihurst	c	q-like	-
+R1819	Fernihurst	d	rho	-
+R1819	Fernihurst	e	7	7
+R1819	Fernihurst	f	sigma	-
+R1819	Fernihurst	g	u	-
+R1819	Fernihurst	h	caret	A
+R1819	Fernihurst	i	4	-
+R1819	Fernihurst	k	triple bar	-
+R1819	Fernihurst	l	angle	-
+R1819	Fernihurst	m	8	8
+R1819	Fernihurst	n	+	+
+R1819	Fernihurst	o	double cross	#
+R1819	Fernihurst	p	9	-
+R1819	Fernihurst	q	crossed equals	-
+R1819	Fernihurst	r	n	-
+R1819	Fernihurst	s	2-shape	z
+R1819	Fernihurst	t	V	V
+R1819	Fernihurst	u	rho-like	-
+R1819	Fernihurst	x	delta-like	-
+R1819	Fernihurst	y	looped x	-
+R1819	Fernihurst	z	alpha	-
+R1819	Lewis	a	slash	-
+R1819	Lewis	b	7	7
+R1819	Lewis	c	caret	A
+R1819	Lewis	d	rho	-
+R1819	Lewis	e	inverted T	I
+R1819	Lewis	f	+	+
+R1819	Lewis	g	section sign	-
+R1819	Lewis	h	4	-
+R1819	Lewis	i	reversed c	-
+R1819	Lewis	k	double bar	-
+R1819	Lewis	l	looped p	-
+R1819	Lewis	m	double cross	#
+R1819	Lewis	n	colon	:
+R1819	Lewis	o	double stroke	-
+R1819	Lewis	p	omega	k
+R1819	Lewis	q	b	-
+R1819	Lewis	r	5	-
+R1819	Lewis	s	4	-
+R1819	Lewis	t	angle	-
+R1819	Lewis	u	9	-
+R1819	Lewis	x	3-like	-
+R1819	Lewis	y	delta	-
+R1819	Lewis	z	sigma	-
+R1819	Babington	a	o	-
+R1819	Babington	b	double dagger	-
+R1819	Babington	c	caret	A
+R1819	Babington	d	double cross	#
+R1819	Babington	e	a	-
+R1819	Babington	f	square	-
+R1819	Babington	g	theta	-
+R1819	Babington	h	infinity	D
+R1819	Babington	i	1	-
+R1819	Babington	k	barred t	-
+R1819	Babington	l	n	-
+R1819	Babington	m	double stroke	-
+R1819	Babington	n	circle+stem	l
+R1819	Babington	o	V (triangle down)	V
+R1819	Babington	p	s	-
+R1819	Babington	q	m	-
+R1819	Babington	r	f	-
+R1819	Babington	s	delta	-
+R1819	Babington	t	epsilon	-
+R1819	Babington	u	c	-
+R1819	Babington	x	7	7
+R1819	Babington	y	8	8
+R1819	Babington	z	9	-
+R328	commission	a	o-breve, caret, dotted o	A
+R328	commission	b	M, omega, C	k
+R328	commission	c	o, hatted x, s-hook	-
+R328	commission	d	S, 8, 6	8
+R328	commission	e	Z, 3, rho	z
+R328	commission	f	barred 4, I, Y	-
+R328	commission	g	B-like, down arrow, x	-
+R328	commission	h	A, star, looped p	-
+R328	commission	i	looped v, X, theta	-
+R328	commission	k	crossed o, T, barred H	-
+R328	commission	l	pi, circle+stem, epsilon	l
+R328	commission	m	Gamma, reversed E, Delta	-
+R328	commission	n	H, N-like, m	-
+R328	commission	o	looped 8, dotted dagger, alpha	-
+R328	commission	p	7, Y, hatted 6	7
+R328	commission	q	omega, crossed equals, ampersand	k
+R328	commission	r	double b, beta, not-equal	-
+R328	commission	s	D, 9, double cross	#
+R328	commission	t	III, heart, star of David	-
+R328	commission	u	blot, b, III, beta	-
+R328	commission	x	N, n, w	-
+R328	commission	y	q-like, 4, crescent	-
+R328	commission	z	reversed L, L, inverted T	I
+R933	Barnes	a	omega, triple bar, 33	k
+R933	Barnes	b	o, p, 32	-
+R933	Barnes	c	delta, 3, 37	-
+R933	Barnes	d	m, hooked b, 47	-
+R933	Barnes	e	double stroke, lambda, 48	-
+R933	Barnes	f	G-like, long s, 92	-
+R933	Barnes	g	k-like, psi, 34	-
+R933	Barnes	h	dotted equals, w, 67	-
+R933	Barnes	i	double hash, q, 44	-
+R933	Barnes	k	asterisk-cross, barred t, 64	-
+R933	Barnes	l	pi, tilde, 46	-
+R933	Barnes	m	looped 8, double cross, 96	8,#
+R933	Barnes	n	alpha, loop-square, 24	-
+R933	Barnes	o	H, o, 63	-
+R933	Barnes	p	theta, caret, 72	A
+R933	Barnes	q	x-cross, tilde-loop, 66	-
+R933	Barnes	r	ampersand, script F, 25	-
+R933	Barnes	s	small circle, x, 53	-
+R933	Barnes	t	tilde, h, 40	-
+R933	Barnes	u	f, V, 35	V
+R933	Barnes	w	hooked g, double cross, 24	#
+R933	Barnes	x	xi, cup-arc, 54	-
+R933	Barnes	y	venus sign, d, 62	-
+R933	Barnes	z	infinity-like, diamond, 43	-
+R338	homophonic	a	T, inverted T, left-T	I
+R338	homophonic	b	three hooked b forms	-
+R338	homophonic	c	+, double cross, double cross	+,#
+R338	homophonic	d	omega, pi-omega, m-loop	k
+R338	homophonic	e	four bracket squares (open left/right/bottom/top)	U
+R338	homophonic	f	L, reversed L, s-bracket	-
+R338	homophonic	g	q-cross, q-cross, double dagger	-
+R338	homophonic	h	diamond, triple v, stem-diamond	-
+R338	homophonic	i	pi, v-bar, K, inverted y	-
+R338	homophonic	k	alpha, alpha	-
+R338	homophonic	l	3-tail z, ze, 4	-
+R338	homophonic	m	x, x, triple x	-
+R338	homophonic	n	reversed c, c, U, cap	U
+R338	homophonic	o	square, reversed P, rho	-
+R9260	Throckmorton-1	a	H, reversed J, 6	-
+R9260	Throckmorton-1	b	U, M	U
+R9260	Throckmorton-1	c	L, E	-
+R9260	Throckmorton-1	d	reversed C, rho	-
+R9260	Throckmorton-1	e	V, square, a, L	V
+R9260	Throckmorton-1	f	C-bracket, y	-
+R9260	Throckmorton-1	g	omega, 7, Y	k,7
+R9260	Throckmorton-1	h	Pi, y-like, C-bracket, y	-
+R9260	Throckmorton-1	i	theta, upsilon, t, x, delta	-
+R9260	Throckmorton-1	k	pi, circle+stem	l
+R9260	Throckmorton-1	l	b, 1	-
+R9260	Throckmorton-1	m	z, d, 3	z
+R9260	Throckmorton-1	n	3, e	-
+R9260	Throckmorton-1	o	4, f, inverted T	I
+R9260	Throckmorton-1	p	s, g	-
+R9260	Throckmorton-1	q	h, 6	-
+R9260	Throckmorton-1	r	k, 7, 9	7
+R9260	Throckmorton-1	s	l, 8	8
+R9260	Throckmorton-1	t	p, r, 9	-
+R9260	Throckmorton-1	u	q, r, lambda	-
+R9260	Throckmorton-1	w	ct, st, lambda	-
+R9260	Throckmorton-1	x	T	-
+R9260	Throckmorton-1	y	x, t, delta	-
+R9261	Croft-1560	a	p, dotted square	-
+R9261	Croft-1560	b	c, inverted T	I
+R9261	Croft-1560	c	x, d-like	-
+R9261	Croft-1560	d	b, dotted square	-
+R9261	Croft-1560	e	q, crossed o, 4	-
+R9261	Croft-1560	f	i/y, boxed plus	-
+R9261	Croft-1560	g	7	7
+R9261	Croft-1560	h	g, 5	-
+R9261	Croft-1560	i	r, 4+	-
+R9261	Croft-1560	k	h, 6	-
+R9261	Croft-1560	l	d, 3	-
+R9261	Croft-1560	m	k, dotted square	-
+R9261	Croft-1560	n	l, dotted square	-
+R9261	Croft-1560	o	s, alpha	-
+R9261	Croft-1560	p	a, d-like	-
+R9261	Croft-1560	q	c, dotted square	-
+R9261	Croft-1560	r	i, M	-
+R9261	Croft-1560	s	o, d-like	-
+R9261	Croft-1560	t	u/v, 6, barred dagger	-

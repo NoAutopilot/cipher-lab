@@ -1,0 +1,14 @@
+fit	record	alphabet	n	score	control_max	verdict
+A	R1819	Fernihurst	23	1	1	no fit
+A	R1819	Lewis	23	0	1	no fit
+A	R1819	Babington	23	0	2	no fit
+A	R328	commission	23	1	1	no fit
+A	R933	Barnes	24	0	2	no fit
+A	R338	homophonic	14	0	2	no fit
+A	R9260	Throckmorton-1	23	0	2	no fit
+A	R9261	Croft-1560	19	0	1	no fit
+B	R330		27	0	0	no fit
+B	R328		27	0	1	no fit
+B	R338		6	0	0	no fit
+B	R933		1	0	0	no fit
+B	R9261		1	0	0	no fit

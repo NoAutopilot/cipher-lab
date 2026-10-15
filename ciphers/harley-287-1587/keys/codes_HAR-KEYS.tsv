@@ -1,0 +1,64 @@
+# HAR-KEYS 15 Oct 2026: numeric/symbol codes per key, read by eye (grade M reading of the key sheet itself). Only codes bearing on Cobham's 7/10/15/16 and the open groups are listed in full.
+record	code	referent	note
+R330	2500?	The Queen	first digit 2, second 5 or 8
+R330	1000	L. Treasurer
+R330	100	E. of Essex
+R330	50	L. Admiral
+R330	40	L. Chamberlain
+R330	30	L. North
+R330	60	L. Buckhurst
+R330	15	Comptroller
+R330	9	Sr Fr. [?]	second '9' below = L. Stafford; one of the two is misread
+R330	x	Mr ... Wolley?
+R330	12	Sr Wa. Raleigh
+R330	16	L. Thomas [Howard?]
+R330	20	Lo. Cobham
+R330	25	Sr Fr. Knollys?
+R330	2	Lady Derby
+R330	3	Lady Scroope
+R330	4	Lady Howard
+R330	5	L. Keeper
+R330	6	Sr T. Cecill
+R330	7	Sr Edw. Dyer
+R330	8	Sr Edw. Stafford
+R330	9	L. Stafford
+R330	14	Mr Attorney
+R330	19	L. Ch. Justice
+R330	70	Lady Walsingham
+R330	80	Lady Scudamore?
+R330	90	Mr Wm Killigrew
+R328	70	The Q. Matie
+R328	60	The K. of Spaine
+R328	50	Duke of Parma
+R328	40	Comrs for England
+R328	35	Erle of Derbye
+R328	30	L. Cobham
+R328	25	Sr James Croft
+R328	20	D. Dale
+R328	15	Robert Cecill
+R328	Cor	L. Threr	Latin cover words follow
+R328	Corpus	L. of Leicester
+R328	Meum	Mr Secretarie
+R328	Frigus	L. Admiral
+R328	Nix	Sr H. Palmer
+R328	Flores	The Q. Shippes
+R328	Salix	L. Willoughby
+R328	Rubus	Sr Wm Russell
+R328	Cortex	Sr John Conwaye
+R328	Justitia	England
+R328	Prudentia	Spayne
+R328	Fortitudo	France
+R328	Patientia	Low Countries
+R328	Larvas?	Peace
+R328	Spria?	Warre
+R328	24	null	'Nihil significantia' row 2
+R328	44	null	row 3
+R328	3	null	row 1
+R338	20	England	numerals for places only (DECODE note); full list 20-89, 100-800
+R338	22	Thompo[n]?	reading uncertain
+R338	27	Cantons
+R338	42	Naples
+R338	80	Jersey
+R338	30	The Q. Ma.
+R933	10?	England	'w'; numbers in this key are letter homophones (24-96)
+R9261	square	Protestants of Scotland	Croft's 1560 cipher; symbol name codes, no numbers
