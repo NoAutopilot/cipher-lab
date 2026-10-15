@@ -13,3 +13,30 @@ inv	scan	width_px	sha1_8	content (by eye, M)
 1.01.02/4562	36	1000	fb19be28	fol. 14v-15: 29 Aug 1619 continued (Oostindische Comp., Geschut uyt Engelant), then Veneris 7 Feb 1620 (Markgraf of Ansbach, troops in Germany): no entry between 29 Aug 1619 and 7 Feb 1620
 1.01.02/4562	37	1000	86358c1d	fol. 15v-16: 27 Mar - 21 May 1620 (England, Keyserse legatie, Brunswick, Wulfsen Munter)
 1.01.02/4562	50	1000	8c15cd29	fol. 28v-29: 6 Dec 1621 - 10 Jan 1622 (Langerack, Brandenburg)
+1.01.02/9450	1	900	bd0a4ed3	OBRED-NA2: cover "Intendit ... Oldenbarnevelt", "D. i."; blank
+1.01.02/9451	1	900	1be30cb5	OBRED-NA2: letter to Caron "Myn Heer", dated 1618 in margin, Dutch prose; no numerals
+1.01.02/9451	15	900	c06a265b	OBRED-NA2: back with seal, docket 29 Jan 1618; right letter "Myn Heer" dated 1617, Dutch prose; no numerals
+1.01.02/9451	30	900	9bcb0533	OBRED-NA2: blank backs
+1.01.02/9451	45	900	27272c46	OBRED-NA2: back with address and seal, docket 28 March 1612; right letter "Myn Heer" 1612, Dutch prose
+1.01.02/9452	1	900	7783e657	OBRED-NA2: letter to Van Aerssen, margin 12-10-1606, Dutch prose; no numerals
+1.01.02/9452	6	900	bd12b187	OBRED-NA2: Dutch prose continued, signed; right blank
+1.01.02/9453	1	900	8d1aa08f	OBRED-NA2: letter to Langerak 1618, Dutch prose, margin summaries; no numerals
+1.01.02/9453	12	900	c85eb390	OBRED-NA2: back with seal, docket; right letter "Myn Heer" 1617, Dutch prose, margin notes
+1.01.02/9453	24	900	558eae89	OBRED-NA2: FLAG letter to Langerak (margin date 15-1-1616 or 1617): small numeral name-codes in the prose (92, 47, 424, 47, 10, 49, 41, 3, 244, 32 as read at 900 px, M) with marginal decodes in a second hand (Hert. van Bouillon, De Coninck van Engelant, Churfurst Paltz, Wesel / de Churfurst, M. d'Oldenbarnevelt, Troenes, De Coninck v. Spaegne); a name nomenclator, not the no. 92 letter-plus-name code
+1.01.02/9453	36	900	176e3968	OBRED-NA2: Dutch prose; extract "Extract uyt mijns briefs aen Advocaet ... 12 Junij 1618"; no numerals
+1.01.02/9454	1	900	ea307c37	OBRED-NA2: short Dutch letter to Ledenberg, signed; no numerals
+1.01.02/9455	1	900	ca96a304	OBRED-NA2: modern wrapper "No. 1 e Missiven van Willem Lodewijk ..."; blank
+1.01.02/9455	4	900	26bae4b3	OBRED-NA2: Willem Lodewijk letter, Aug 1618, Dutch prose, signed; no numerals
+1.01.02/9456	1	900	a8d47b8d	OBRED-NA2: rekest to the gedelegeerde rechters, Dutch prose; no numerals
+1.01.02/9457	1	900	289df9de	OBRED-NA2: modern wrapper "No. 1 g Copye missiven ... aan vrouw en kinderen"; blank
+1.01.02/9458	1	900	ee7dc3e6	OBRED-NA2: memorie, Dutch and Latin legal prose; no numerals
+1.01.02/9458	5	900	20d0c3a3	OBRED-NA2: memorie continued, Dutch/Latin articles; no numerals
+1.01.02/9459	2	900	28aa59b0	OBRED-NA2: left blank; right French letter "Monsieur", dated 1617, signed; no numerals
+1.01.02/9459	4	900	f6aabd4b	OBRED-NA2: French prose (Estat, Espagne), "Monseigneur ... a la Haye"; right blank
+1.01.02/9459	6	900	1d426ac6	OBRED-NA2: two pages dense Dutch prose (copy); no numerals
+1.01.02/9459	8	900	8bfcf550	OBRED-NA2: Dutch prose, right signed; no numerals
+1.01.02/9459	10	900	1720e7f0	OBRED-NA2: English letter (Thomas Wood named), dated 1618, signed; no numerals
+1.01.02/9459	12	900	5af1b2a4	OBRED-NA2: faint/blank pages, show-through
+1.01.02/9459	14	900	f8eaab41	OBRED-NA2: Dutch prose, signed, dated 1618; right blank
+1.01.02/9459	16	900	6f8d1226	OBRED-NA2: two-column Dutch articles, signed; right blank
+1.01.02/9460	1	900	2864a8b0	OBRED-NA2: declaration of the boden on the burial, Dutch prose, signatures and marks; no numerals

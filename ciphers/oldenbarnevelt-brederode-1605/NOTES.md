@@ -2344,3 +2344,52 @@ Read so far: no. 92 and the 187 postscript as band intervals (OBRED-BAND; 72 of 
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
 - [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
 Verdict: keep going: 3 internal gaps; the joint band-monotonicity check of the 20 leads reads D 126 vs within-gap null p05 128 (p 0.036) but its synthetic control is below gate (per-lead flag clears only 0.06-0.12 of right leads), a non-test that leaves all 20 leads M; seven one-code-two-letter conflicts among the leads, code 200 among them (OBRED-MONO, ungated); cheapest next: OBRED-NA2's NA screen (live), then a per-lead leave-one-out monotonicity score with its own control (~$2)
+
+## OBRED-NA2 (15 Oct 2026, 11:41-11:5x UTC by date -u, account 2, Opus; for LANE DEFAULT-A2-1109-15)
+
+Brief: OBRED-NA's next -- NA 1.01.02 inv. 9459 even scans, then the openings of the process series 9450-9458 and 9460, then (if >= 35% of
+cap left) the inv. 6020 stride-3 screen; NA <= 40 requests. A screen for the no. 92 key, nothing scored, so no PREREG.
+
+- Prior-work step: `prior_work.py ... --item-spec 'shelfmark=NL-HaNA 1.01.02 inv. 9459 even scans + inv. 9450-9458, 9460 openings + inv. 6020
+  stride 3' --step-type read` exit 4 (LOOK, 2 UNCHECKED, 2 UNCHECKED-NET); the three non-net rows recorded CLEAR in `prior-work.tsv` (adhoc-597cdc).
+- Requests: 38, all HTTP 200, >= 3.2 s apart, NA take/release in ROOM: www.nationaalarchief.nl 11 (item pages 9450-9460; unit titles and scan
+  lists read from the page's `drupal-settings-json`), service.archief.nl 27 (IIIF at 900 px). Every scan with sha1 and content:
+  `na_obredna_scans.tsv` (rows marked OBRED-NA2); `screen_tools/regen_obredna2.sh` re-derives them; no image committed. By eye, one reader (M).
+- Unit titles (from the item pages): 9450 Intendit tegen Oldenbarnevelt (72 scans); 9451 letters of Oldenbarnevelt to Caron 1610-1619 (58);
+  9452 to Van Aerssen 1606-1611 (11); 9453 to Langerak 1614-1619, with two memories and a letter of Maurits (46); 9454 to Ledenberg (4);
+  9455 Willem Lodewijk to Oldenbarnevelt 1618 (7); 9456 rekesten of his wife and children (21); 9457 letters to wife and children, copies
+  (7); 9458 memories in the case (8); 9459 bijlagen 1607-1618 (17); 9460 declaration on the burial (3).
+- **inv. 9459 even scans 2-16**: French letters (one dated 1617, signed), Dutch copies of depositions and articles signed and dated 1618, an
+  English letter naming Thomas Wood (1618), blank pages. With OBRED-NA's odd scans **all 17 scans of 9459 are now seen: no numeral table,
+  alphabet, nomenclator, numeral group or Brederode signature.**
+- **9450-9458, 9460** (19 scans: 9450 s1; 9451 s1, 15, 30, 45; 9452 s1, 6; 9453 s1, 12, 24, 36; 9454 s1; 9455 s1, 4; 9456 s1; 9457 s1;
+  9458 s1, 5; 9460 s1): covers and wrappers, Dutch letter prose, legal memories in Dutch and Latin, the burial declaration. **One flag:
+  9453 scan 24**, a letter to Langerak (margin date 15-1-1616 or 1617, M) whose prose carries small numerals as name codes (read at 900 px
+  as 92, 47, 424, 47, 10, 49, 41, 3, 244, 32; M), with decodes in the margin in a second hand (Hert. van Bouillon, De Coninck van
+  Engelant, Churfurst Paltz, Wesel / de Churfurst, M. d'Oldenbarnevelt, Troenes, De Coninck v. Spaegne). It is a names-only nomenclator of
+  one- to three-digit numbers among clear words; the no. 92 code enciphers letters as well as names with three-digit groups (Palsgrave 605,
+  Bohemen 594 in the 1619 glosses, OBRED-556), so it is not the no. 92 key. Not read further (outside this brief).
+- **inv. 6020 stride 3: not run.** The 6019 stride-3 screen took 218 requests (regen_6019.sh); 2 were left under this job's 40.
+- Where it was not found: all 17 scans of 9459; 19 of the 217 scans of 9450-9458/9460 (openings and a stride in 9451 and 9453). Not looked
+  at: the other 198 scans of 9450-9458 (most in 9450, 9451, 9453); inv. 6020-6024; KHA A13 (Maurits).
+- Suggestion (outside this target, one line, Usage 7): NA 1.01.02 inv. 9453 scan 24 carries an Oldenbarnevelt-Langerak name nomenclator
+  with period margin decodes; a scout row could check it against a check-solved pass before any work.
+
+## Remaining gaps (OBRED-NA2, 15 Oct 2026)
+Read so far: no. 92 and the 187 postscript as band intervals (OBRED-BAND; 72 of 180 one-letter) and, by constrained segmentation, 20 nl16 words of >= 4 letters covering 112 of 143 letter tokens, all M (OBRED-SEG); the every-occurrence context test and the joint band-monotonicity check are both below their synthetic controls' gates, so neither adds a grade (OBRED-CTRY; OBRED-MONO: joint D 126 vs within-gap null p05 128, p 0.036, ungated, per-lead flag right-clean 0.06-0.12); code-200 and six more one-code-two-letter conflicts among the leads (OBRED-MONO, ungated); 37 name codes unread; inv. 6019 scans 555-556 carry 81 groups (58 H-read) with 45 C-graded period glosses; the 2 Oct 1619 letter puts Brederode's own cipher last in Oldenbarnevelt's hands (OBRED-OCT2, M)
+- no. 92 and the 187 postscript beyond M word leads - blocker: not-attempted; band intervals, segmentation, the every-occurrence context test and the joint monotonicity check are done with controls and no lead reaches S (OBRED-BAND, OBRED-SEG, OBRED-CTRY, OBRED-MONO); next: a per-lead leave-one-out monotonicity contribution score (fall in D when a lead is dropped vs its within-gap null), whose synthetic control must separate right from wrong leads at e 0.5/0.75, PREREG first, ~$2
+- the no. 92 key ("mijn cyfer ... in des Advocaets Barnevelt handen") - blocker: not-attempted; not in 3.01.14 (R9-NAKEY), not in the secret register 29 Aug 1619 - 7 Feb 1620 (OBRED-NA), not on any of the 17 scans of 1.01.02 inv. 9459, nor on the openings/stride scans of 9450-9458 and 9460 (19 of 234 scans; OBRED-NA2, M); the only numeral code seen in the process series is a small-number name nomenclator with margin decodes in an Oldenbarnevelt-Langerak letter (9453 scan 24), not the no. 92 design; next: the unseen scans of the three thick letter files 9450 (72 scans), 9451 (58), 9453 (46) at stride 3, about 55 NA requests, ~$2
+- the deciphered memorie of res. 1779 (a Maurits-cipher text, OBRED-OCT2 inference) - blocker: needs-physical-access; KHA A13 (Maurits) inventory not served to scripts and the archive is research-request only; owner-side step: a KHA research request, not queued
+- the later liassen NA 1.01.02 inv. 6020-6024 and the 6019 stride-1 fill after 565 - blocker: not-attempted; a stride-3 screen of a liasse costs about 220 NA requests (inv. 6019 took 218), which no 30-40-request job fits (OBRED-NA2 used its 38 on 9450-9460); next: a stride-3 screen of inv. 6020 as its own job with a request limit of about 230, ~$4
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A): no numeral block, no Brederode, Stettin or Heidelberg heading (M)
+
+## Escalation (OBRED-NA2, 15 Oct 2026)
+- [x] siblings: scan 187 shares 26 values with no. 92 (OBRED-187); inv. 6019 scans 555-556 (Oggersheim, 14 Oct 1619) share 42 values with no. 92/187, clearing the shuffled-code control (OBRED-556); the letter's start (554) carries no groups (OBRED-552)
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187); the 1619 letter's prose and margin summaries read in part (OBRED-556); 515-554 and 558-565 seen by eye (OBRED-MEM, OBRED-552, OBRED-549, OBRED-KEYHUNT); the 2 Oct 1619 letter 528-530 read in full (OBRED-OCT2)
+- [ ] known-keys: the 10 Aug 1598 Van Aerssen slip, Buzanval inv. 2028, DECODE 1600s and Palatine/Hessian keys screened (R10-OBRED98, R9-OBRED4, OLD-DKEY, R8-OBRED2, R9-OBRED3); Brederode's own cipher last in Oldenbarnevelt's hands (OBRED-OCT2); not in the secret register 29 Aug 1619 - 7 Feb 1620 (OBRED-NA), not on any 9459 scan nor the 9450-9458/9460 openings (OBRED-NA2); next: 9450/9451/9453 at stride 3, ~$2
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII and NR 4 carry no key or decipherment note (OBRED-DP, OBRED-KEYHUNT)
+- [ ] key-rebuild: band intervals pass a held-out leaf check (OBRED-BAND), segment into 20 nl16 word leads above both nulls (OBRED-SEG, M); the every-occurrence context test (OBRED-CTRY) and the joint monotonicity check (OBRED-MONO: joint test has power, 0.90-0.93 of control sims, but the per-lead flag clears 0.06-0.12 of right leads) are both below their controls' gates; next: a per-lead leave-one-out monotonicity contribution score with its own synthetic control, ~$2
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
+- [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
+Verdict: keep going: 3 internal gaps; the no. 92 key is not on any of the 17 scans of NA 1.01.02 inv. 9459 nor on 19 opening/stride scans of the process series 9450-9458 and 9460 (OBRED-NA2, M), whose one numeral code is an Oldenbarnevelt-Langerak name nomenclator of a different design (9453 scan 24); cheapest next: a per-lead leave-one-out monotonicity score with its own control (~$2), then 9450/9451/9453 at stride 3 (~$2); inv. 6020 stride 3 needs its own job (~220 requests, ~$4)
