@@ -5086,6 +5086,32 @@ default lanes need a split of next_steps rows before the first wave, not ROOM pi
 are often stale (5 of 6 candidates checked were already done); read the folder's Verdict line before briefing. Over cap: CL1161-S7 2.6x (six
 blind vision passes in a 2 cap), PUST-U5 1.2x.
 
+## LANE DEFAULT-account-1-20261015-1140 handoff (session_013wJZeHsieHfTMbqKn1r5zR, account 1, for the orchestrator (owner account)), 15 October 2026 (11:40-13:2x UTC by date -u; closed: under one wave of budget left; workers 47.70 + orchestrator ~6.4 = ~54.1 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-15-acct1-default-1140-jobs.md (3 waves, 15 workers, all Opus). Gate 0a: SESSION-SWEEP-account-1
+stale-claimed since 5 Oct 22:40, proceeded. VERIFY-BACKLOG: high rows Birago/ceppo (off limits), rest audit2 on N0/N1 (not run). Backlog =
+`next_steps.py --hot-only` runnable rows + A1-0740 next list + gap-list steps a read-only survey found runnable without a person. Excluded: live
+DEFAULT-A4-1035 and DEFAULT-A2-1109 holdings, VIV-KEYSTONE, Birago, Armstrong, Debosnys; steps behind an open owner sort not briefed. No image
+committed. Own error: MANT-YSHAPE's brief took a NOTES suggestion (glyph_atlas match) without checking digit-level boxes existed (Q).
+**workers (ledgered + archived)**
+- mccormick-1999: MCC-CMU 4.61 N (CMUdict phonetic key: control reads; target mixed, judge FAIL; suffix-mark family [retired], rule 3).
+- naf14913-rousseau-venice-1743: NAF-SPLIT 2.14 N (605 anchor: 722 = ti / = i both fit; undecided, [retired] stands; ft4t_seg.py --anchors/--pins).
+- na-janssens-java-1811: JAV-198 3.10 D (leaf 198 two passes 171/171; 168/171 vs the 199-200 gloss copy; 13:7 420 vs key 120 M flagged).
+- sachsstaatsarchiv-manteuffel-1712: MANT-YSHAPE 2.12 Q (NON-TEST, no digit boxes); MANT-V66 1.63 D (verifier: 66 = a holds, ALEFELD rejected,
+  group spells a-h-l-f-e-l-d); MANT-CUT 4.07 N + MANT-CUT2 1.57 N (glyph_atlas.py digit cutter v1 ~19/69, v2 ~23/69 vs gate 56: [retired] for the
+  y-glyph question; next instrument the owner's sorter boxes).
+- pro3055-clinton-1779: CLIN-3004C 4.03 D (p.232 B2 PASS 22/24, p.233 non-test); CLIN-3502 3.97 D (p.299 B2 PASS 46/49 vs max 7). Text-known.
+- es132-vargas-mexia-1578: ES132-PLANT 3.17 D- (f.51v planted 26/27 PASS; 1.27x); ES132-P52 2.62 D (f.52r 26/27, pooled 52/54).
+- fr16144-savary-lancosme-1588: SAV-GLOSS 2.81 D + SAV-GLOSS2 2.69 D (c251-252 margin gloss reconciled, M; line 29 cut; alignment waits on sort).
+- fr16045-pisany-rome-1585: PIS-FA 2.90 N (Brienne 354 = NAF 7320, undigitised, by authorisation); PIS-121 6.28 D- (registered FAIL 32 vs p99
+  33, a miss of unknown cause -- the power control cannot vary with gloss-read error; 1.57x).
+Known-text share (light guardrail): 8.00 of 47.70 (pro3055), about a sixth. Overruns: PIS-121 1.57x, ES132-PLANT 1.27x.
+**next**
+1. fr16045: PIS-121's next -- two-pass line-per-call read of the 3 f.121 gloss blocks, re-run pis121/score.py unchanged (~2).
+2. fr16144: c251 gloss line 29 + one-line crops (~2.5); the alignment still waits on the owner's c370-375/c380 sort.
+3. pro3055: 3502 Images 946-952, then 3537, 4152, 4216 (text-known; keep under the guardrail share).
+4. na-janssens: the 13:7 420-vs-120 key question needs a second occurrence (L35/L31 rows), not another look.
+5. manteuffel: y-glyph 4|9 slots go to the owner's sorter (cutter retired); tool_shelf row for glyph_atlas.py digits -> failing (MANT-CUT2 suggestion).
+
 ## LANE DEFAULT-account-1-20261015-0740 handoff (session_017cqzjbis9FztzHDDPLyGbm, account 1, for the orchestrator (owner account)), 15 October 2026 (07:40-10:5x UTC by date -u; closed: in-scope backlog spent and under one wave of budget left; workers 43.18 + orchestrator ~7.2 = ~50.4 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-15-acct1-default-0740-jobs.md (4 waves, 11 workers, all Opus). Gate 0a: SESSION-SWEEP-account-1
 stale-claimed since 5 Oct 22:40, proceeded. VERIFY-BACKLOG: high rows Birago/ceppo (off limits), rest audit2 on N0/N1 (known text; not run).
