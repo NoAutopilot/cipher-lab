@@ -199,3 +199,40 @@ Requests: gallica.bnf.fr 3 (1000-px views of canvases 134 and 135, native region
 Next steps (one-line suggestions, not run): (b) of D2-F3198 stands -- search the archivesetmanuscrits piece lists of the other Nevers volumes
 (fr.3198-3200, fr.4696-4715) for l'Abbé letters of Feb-Apr 1577 (the detached key sheet; the 17 Apr letter), ~USD 1; the 20 Apr leaf removes
 option (a). Status stays `blocked` (line 1).
+
+## F3198-PL (15 Oct 2026, by date -u; catalogue search only, no images, no status change) -- piece lists of the other Nevers volumes for l'Abbé letters
+
+Question (D2-F3198 next (b)): does any other Nevers volume's archivesetmanuscrits piece list carry an l'Abbé letter of Feb-Apr 1577, or a
+detached key sheet ("chiffre"/"clef"/"table") naming him? Route: `tools/bnf_findingaid.py --cote "Français N" --save-html` (plain POST search,
+then the notice page; tool sleeps patched to >= 3.2 s between requests), 7 volumes fetched fresh, 17 read from the 7 and 9 Oct snapshots in
+`sources/bnf-findingaids/` (no request). archivesetmanuscrits.bnf.fr requests: 7 volumes x 2-3 = about 19 (the tool does not count; under the 25 cap),
+all 200, no challenge. Query = every item line scanned offline for `abb[ée]`, `desiderio`, `abbati`, `abate`, then 1577 / Prague / Wratislavie /
+Breslau / Ratisbonne / Vienne / empereur, then `clef|clé|table de chiffre|alphabet|chiffre de|chiffre pour`, then the notice's own `chiffre` flag.
+
+| Volume | ark (finding aid) | source | items | cipher-flagged | l'Abbé items |
+|---|---|---|---|---|---|
+| Fr. 3198 | cc496591 | fetched | 49 | 2 (nos.30, 37) | 19 letters, 1576-77 (below) |
+| Fr. 3199 | cc496602 | fetched | 49 | 0 | none |
+| Fr. 3200 | cc496619 | fetched | 64 | 0 | none |
+| Fr. 4695 | cc57745v | fetched | 50 | 0 | nos.40, 51, 55, 42-44 (below) |
+| Fr. 4696 | cc577463 | snapshot 9 Oct | 9 listed | -- | none |
+| Fr. 4697 | cc57747b | fetched | 95 | 7 | none |
+| Fr. 4698-4712, 4715 | cc57748k ... cc577658 (as in the snapshot folder) | snapshot 7 Oct | 16 notices | per notice | none (one hit "abbé d'Orbais", Jean de Piles, 1586, fr.4707 no.17: a different man) |
+| Fr. 4713 | cc57763s | fetched | 32 | 1 | none |
+| Fr. 4714 | cc577641 | fetched | 112 | 6 | none |
+
+l'Abbé letters of Feb-Apr 1577 in the catalogue (the whole set, both volumes): fr.4695 f.116 no.51 (Prague, 5 Feb 1577), fr.3198 no.30 (Prague,
+2 Mar 1577, flagged "avec chiffre"), no.31 (Prague, 17 Mar), no.33 (Prague, 8 Apr), nos.34 and 35 (f.72, both Prague, 17 Apr 1577: two letters
+of one date, "docteur L'ABBE" and "docteur LABBE"), fr.4695 f.125 no.55 (Prague, 20 Apr, read at D2-F3198B: clear). The "17 Apr letter" named in
+(b) is therefore fr.3198 nos.34/35 on f.72, in the volume the target already holds, not in another volume; neither is flagged "chiffre" in the
+record. The 2 May letter (no.37, Wratislavie) is the other flagged item. fr.4695 no.51 (5 Feb) is the only Feb item and is unflagged.
+
+Not found: no l'Abbé item and no "chiffre"/"clef"/"table de chiffre" key-sheet item for him in fr.3199, 3200, 4696-4715 (24 notices read,
+956 item lines in the snapshot-parsed subset, plus the 7 fetched); the Nevers-volume "chiffre" flags in the other volumes are 1585-87 Volta/Nevers/
+Guise/La Vieuville items and Henriette de Clèves 1585. A catalogue negative only: the record flags "chiffre" on 2 of the 19 l'Abbé letters in
+fr.3198 and on none in fr.4695, and a key sheet could sit unlisted inside a letter's folio or in a volume outside the Nevers run (fr.3201+,
+fr.4687-4694, other fonds), none searched here. Fr.4696's snapshot lists only 9 items (a short notice), so its negative is the weakest.
+Item files (tsv, ark html) were kept in scratch, not committed: the notices are re-fetchable by ark.
+
+Next: (b) is spent for the Nevers run fr.3198-3200, 4695-4715; the remaining named step is the 17 Apr pair f.72 nos.34/35 in fr.3198 (own volume,
+native view for inserted numeral groups, ~USD 1); a key sheet outside this run needs a different search (fr.4687-4694, fonds Dupuy), not a rerun of this one.
