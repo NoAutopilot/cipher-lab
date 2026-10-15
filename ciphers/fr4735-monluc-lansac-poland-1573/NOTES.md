@@ -1662,3 +1662,43 @@ Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines
 - [x] image-check: c268 L01-L25 native crops cut and reconciled by eye (MONL-C268B, MONL-L11, MONL-L16, MONL-L21)
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 9 internal gaps; cheapest next: the R0s positional null for K14=s (~$1), then c268 L26-L30 (~$3.5)
+
+## MONL-R0S: positional null for the code-wide K14 = s --try (15 Oct 2026, account 1, Opus, for LANE DEFAULT-A1-1426-15)
+
+Brief: .claude/briefs/runs/2026-10-15-acct1-default-1426-jobs.md, MONL-R0S (MONL-SORT2's Verdict). Disk only: no host requests, no subagents, no looks.
+**Pre-registration:** k14try/r0s/PREREG-MONL-R0S.md pushed in 3f022d097 before any scoring. Why the tool's null failed: tools/decode_key.py --try null 1 needs 51 positions currently read p outside K14; only 24 exist (K34, K47).
+**Null (k14try/r0s/run_r0s.py, imports decode_key's Crossword, fr16, window 8):** 51 positions drawn without replacement from every one-letter, non-s, non-K14 position (N1, pool 886; N2 = consonants only, pool 404), read as a pseudo-code valued p, statistic s minus p; 200 draws, Random(1573). It changes each occurrence's neighbours, so it can differ from the target (rule 3); it measures the s-over-p preference French gives at a random non-s spot.
+**Implementation note:** the first run compared against lowercase 'p'/'s', but Crossword folds values to upper case (u -> V), so the s exclusion and the vowel filter did nothing and the background p was not a model letter; that run (which printed LICENSED) is discarded as a bug against the PREREG, fixed (lm_fold), re-run once. No pool, seed or draw count was changed.
+`python3 -I k14try/r0s/run_r0s.py` -> k14try/r0s/results.tsv:
+| run | codes | n | statistic (bits s over p) | N1 mean / p95 / p | N2 mean / p95 / p | lose > 3 bits |
+|---|---|---|---|---|---|---|
+| **R0s** | K14 | 51 | **+554.0** | 404.5 / **578.3** / 0.065 | 444.7 / 595.8 / 0.115 | 5 |
+| PC (power) | K17+K37+K67 (table s) set to p | 29 | +414.8 | 199.3 / 294.2 / 0.000 | 222.0 / 321.7 / 0.000 | 0 |
+| NC (negative) | K34+K47 (table p) | 24 | +118.5 | 163.6 / 264.5 / 0.810 | 180.2 / 264.4 / 0.875 | 4 |
+Value-class null (decode_key try_value, 200 draws): p95 518.1 (R0s above it). R0s's statistic is +554.0 here, +549.8 in MONL-K14TRY (MONL-SORT2's relabels changed neighbours since).
+**Registered decision: REFUSED.** PC above both null p95s (power at n 29), NC below the N1 p95 (control passes), R0s at or below the N1 p95 (554.0 <= 578.3): K14's code-wide preference for s is no greater than a random non-s code's, from letter frequency alone. K14 stays p in key.tsv (unchanged); no lead file written. This does not undo MONL-K14TRY's T14 (the 19 s-facing K14, selected by the clear text, read s by context) or MONL-SORT2's shape (K14, not a K37 merge): it says the code as a whole is not s, which leaves a split value or a table-placement question at the s-facing occurrences.
+Checks: `python3 -I k14try/r0s/run_r0s.py --check` "run_r0s: OK"; `python3 ../../tools/decode_key.py . --check` "reading up to date". Box 14:40-14:5x UTC 15 Oct by date -u. Requests: none. Subagents: none. Own looks: none. Cost not visible to this session.
+
+## Remaining gaps (MONL-R0S, 15 Oct 2026)
+Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines 1-25 (857 tokens) C 426 / M 396 / U 35 against the ff.140r-141r clear text (align confirm 552/814 = 0.678 vs shuffled-clear max 0.404).
+- K04-for-n (13 over L01-L25) - blocker: not-attempted; MONL-SORT2 relabelled 2, 6 kept K04 by both readers, 5 split, 2 low-conf; next: an eye look at the 7 split/low-conf tiles on 3x crops (MAT-O3X's method), ~$1
+- K14-for-s (19 s-facing of 51 over c172 + c268 L01-L25) - blocker: not-attempted; code-wide K14=s REFUSED by its positional null (MONL-R0S: +554.0 vs N1 p95 578.3, p 0.065; power and negative controls passed), so the s-preference at K14 is no larger than at a random non-s code; shape is K14 at all 6 sorted (MONL-SORT2) and the 19 clear-selected read s (MONL-K14TRY), so the open question is a split value or column-placement in the table, not a code-wide s; next: a K14 split test once c268 L26 on adds K14 tokens (the s/p-facing ratio against the table position, a verifier's look at Tomokiyo's Cipher 1 table column for K14), ~$0.5
+- K40 facing z (L12:21, L24:29, L25:16) and t (L22:6); L24:3 K45 vs K39 - blocker: not-attempted; shapes confirmed K40 by both readers; next: a K40=z code-wide --try with its power control once c268 L26 on adds tokens, ~$0.5; L24:3 eye look rides the K04 look, ~$0
+- K34-for-s (3) and K62-for-m (11) - blocker: too-short; no power at these N (MONL-K14TRY); next: re-run k14try/run_k14try.py once c268 L26 on adds tokens (rides that band, ~$0.3)
+- rest of c268 (L26 to the end) and c264 against the ff.140r-141r clear text - blocker: not-attempted; next: two blind cipher passes of c268 L26-L30 plus reconciliation, then align_c268.py, ~$3.5 per 5 lines; f.140r L24 on and f.140v must be clean first
+- the code words W:Cur, W:apuril, W:Juillet, W:Sepbre, W:Astuing, W:Juno, W:Mare and the ?x / ?double_slash / ?h_bar fills - blocker: not-attempted; found by MONL-L16 and MONL-L21; next: a name-code pass with tools/name_candidates.py once f.140r L16-L23 is re-read, ~$1
+- the "adhuc" group (L11:6-10) - blocker: not-attempted; no second occurrence in L16-L25; next: watch for it when c268 L26 on is transcribed (rides that band, ~$0)
+- a clean clear text of ff.140r-141r away from L06-L10 - blocker: not-attempted; f.140r L11-L23 are rough A/B picks; next: an eye reconciliation of f.140r L11-L26 and L01-L07 against the line crops, ~$1 per page
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py); the c268 alignment supplies known plaintext instead
+- print check of the clear letter in Google Books (13 of 14 phrases) - blocker: not-attempted; Google Books 503 (MONL-PC, MONL-PC2); next: `tools/print_check.py ... --only gbooks` when googleapis answers, ~$1
+- ff.211-223, f.87 margin, ff.50/56/60/80, items 17/18/112-120 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONL-R0S, 15 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [x] clear-pages: ff.140r-141r transcribed and shown to be the clear text of c268 L01-L25 (MONL-ALIGN, MONL-C268B, MONL-L11, MONL-L16, MONL-L21)
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell and checked against known plaintext on c268 L01-L25
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2; IA full text and OpenAlex, no hits (MONL-PC); Google Books pending (gap above)
+- [x] key-rebuild: --try rejects K12=d and K34=y (MONL-K12); code-wide K14=s refused by a positional null (MONL-R0S); blind sorts L01-L25 (MONL-SORT, MONL-VB, MONL-ADH, MONL-K04, MONL-CTL, MONL-SORT2); K04/K14 pseudo-code --try (MONL-K04TRY, MONL-K14TRY)
+- [x] image-check: c268 L01-L25 native crops cut and reconciled by eye (MONL-C268B, MONL-L11, MONL-L16, MONL-L21)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 9 internal gaps; cheapest next: the eye look at the 7 split/low-conf K04 tiles (~$1), then c268 L26-L30 (~$3.5), which also feeds the K14 split, K34/K62 and K40 --try re-runs

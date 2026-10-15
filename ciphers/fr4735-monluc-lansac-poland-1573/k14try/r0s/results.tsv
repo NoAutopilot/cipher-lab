@@ -1,0 +1,6 @@
+run	codes	n	stat	broken	pool1	N1_mean	N1_p95	N1_p	pool2	N2_mean	N2_p95	N2_p
+R0s	K14	51	554.0	5	886	404.5	578.3	0.065	404	444.7	595.8	0.115
+PC	K17+K37+K67	29	414.8	0	937	199.3	294.2	0.000	455	222.0	321.7	0.000
+NC	K34+K47	24	118.5	4	913	163.6	264.5	0.810	431	180.2	264.4	0.875
+# R0s via tools/decode_key.py try_value, 200 draws: stat 554.0, value-class p95 518.1, broken 5/51, tool verdict undecided (a null could not be built (too few matching positions or no same-class values))
+# decision (PREREG-MONL-R0S): REFUSED: R0s not above the N1 p95; K14 stays p
