@@ -894,3 +894,41 @@ for the elected king (M), close to the f.110 key's Catholicque description. Next
 start and any other signs, and f.166v at 2400 px (3 requests, ~1); (2) fetch Kluckhohn p.855-856 (archive.org `bub_gb_0gFoAAAAMAAJ` n863-n864,
 2 requests) and pair the signs under the ELEC-PAIR rule, with its shuffled-name control (~1.5). A pair needs >= 2 occurrences per sign before
 any C grade. Also (3): compare this sign image-to-image with nr. 357's dd ("le roy catholique", C) on fr.3897 f.116.
+
+## ELEC-KLU: nr. 383 start and print pairing (worker ELEC-KLU, LANE DEFAULT-A4-1035-15, account 4, 15 Oct 2026, 11:37-11:5x UTC by date -u)
+
+Brief: ELEC-383's next (1) and (2). PREREG `elecpair383/PREREG-ELEC-KLU.md` (pushed db037a72c before any fetch): ELEC-PAIR's rule
+unchanged, shuffle seed 383. Page images, not a transcription (rule 2). Search results only (rule 10). key.tsv unchanged; status open.
+- **Identification confirmed.** Kluckhohn RTA J.R. I nr. 383 (p.855 l.21 - p.856, continuing on p.857) opens "Sire, depuis les lectres
+  que moy, admiral, vous ay escriptes hier, par lesquelles vous faisoye savoir la conclusion ..."; the same words open a new letter in the
+  lower third of **f.166r (c335)**, after a blank space. So nr. 383 runs f.166r (last 4 lines) - f.166v, not from f.165v.
+- Correction to ELEC-383: f.165v (c334) carries the heading "Au Roy 23 may" and begins a 23 May letter ("Suivant ce que vous escripvismes
+  par noz autres lettres ... le chancelier du conte palatin est arrive en ce lieu de Coblence ..."), with names in letters, ending in the
+  upper half of f.166r. ELEC-383's f.166v l.1 "a quelle heure que [SIGN]" reads at native size "que hyer ledit [SIGN] fut esleu", as printed.
+- **5 both-sided pairs, 0 conflicts** (`elecpair383/pairs.tsv`): oXo = roy catholicque x2 (f.166r "deslire le _ Roy des Rommains";
+  f.166v l.1 "hyer ledit _ fut esleu"); Phi (circle on a vertical stroke) = Brandebourg; Hbar (H-like with bar and superscript) = Treves;
+  Lfo (L/f-like stroke with small o above) = conte Palatin (f.166v l.12 "mesmement au _ a ruyne"). "nre Sr" (nostre seigneur, f.166v l.8)
+  is an ordinary abbreviation, not counted. The 7-like mark after Hbar is read as the par abbreviation ("par lesquelles"), M.
+- **Grades** (`elecpair383/name_signs_fr5761_383.tsv`): all four signs M. oXo meets rule 3 (2 pairs, same name) but the shuffled-name
+  control reproduces its consistency in 100/1000 permutations (10% >= 5%; `python3 elecpair383/pair_control.py --check`, exit 0), so rule 4
+  holds it at M. At 5 slots with 2 of one name the control cannot fall below 5% for any 2-pair sign (2/5 x 1/4 = 0.10): a C grade from this
+  letter alone is a non-test at this N (rule 3), not a negative. It needs a third oXo occurrence or a second letter pooled under a PREREG.
+- Rule 5 comparisons (after 1-4; descriptions, one reader, M): oXo matches the f.110 key's Catholicquer description ("cross with a small
+  circle attached at an angle"). Phi does not match the f.110 Brandebourg (Λ); it is nearer the f.110 Saxe description (circle on a
+  horizontal dash) but the stroke here is vertical. Hbar is loosely like the f.110 Treves description (box divided by a bar). Lfo does not
+  match the f.110 Palatin (hash with hook). Against nr. 357 (fr.3897): oXo is not dd (double loop, roy catholique) and Lfo is not "4"
+  (Palatin). So nr. 383's copy shares at most one name sign (oXo) with the f.110 key and none with nr. 357, on descriptions.
+- Not read: f.166v below l.12 against Kluckhohn p.857 (archive.org n865, not fetched); ELEC-383 saw Suisses, Pape, roy d'Angleterre in
+  letters there, so further signs are possible but not expected.
+- Requests: openapi.bnf.fr 4 (c334, c335 full/1000 200; c336 full/2400 HTTP 400, above native 2232 px; c336 full/max 200); archive.org 2
+  (`bub_gb_0gFoAAAAMAAJ` n863, n864 w1800, 200). Images in the session scratchpad only, none in git. Regen:
+  `https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b52510561g/f33{4,5}/full/1000,/0/default.jpg`, `.../f336/full/max/0/default.jpg`;
+  `https://archive.org/download/bub_gb_0gFoAAAAMAAJ/page/n86{3,4}_w1800.jpg`. Signs: c335 1000 px x 100-500, y 1240-1290 (letter l.3-4);
+  c336 max x 330-560 y 50-110 (oXo), x 1100-1200 y 1600-1680 (Lfo).
+
+**Verdict (ELEC-KLU, 15 Oct 2026):** open, unchanged. Nr. 383 = fr.5761 f.166r (last lines) - f.166v, confirmed against Kluckhohn's print;
+four name signs paired with the print (oXo = roy catholicque twice, Phi = Brandebourg, Hbar = Treves, Lfo = conte Palatin), all M: the
+shuffled-name control cannot license C at 5 slots. Next: (1) Kluckhohn p.857 (n865, 1 request) against f.166v l.12-end for further signs
+(~0.5); (2) a PREREG'd pooled pairing across the Coblenz-period fr.5761 letters Kluckhohn prints "die Namen in Chiffren" (find them by his
+source lines, archive.org full-text "5761"), to bring oXo, Phi, Hbar, Lfo to >= 3 occurrences each (~2.5); (3) image-to-image check of
+oXo against the f.110 Catholicquer crop if look.tsv has it on disk (~0.5).

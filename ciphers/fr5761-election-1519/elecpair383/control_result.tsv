@@ -1,0 +1,5 @@
+slots	5
+C_candidates	oXo
+real_all_consistent	True
+shuffle_all_consistent	100/1000
+shuffle_consistent_oXo	100/1000
