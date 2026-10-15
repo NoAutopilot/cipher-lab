@@ -133,3 +133,6 @@ gaps_check.
 Same method as CLIN-3004C (read it and CLIN-3004/3004B and their PREREGs): register the B2 gate and the page-permuted-key control before
 decoding; crops command pasted; one blind pass + reconciliation per page; first page only if it runs over more. Text-known (lane guardrail):
 no reading changes. NOTES "## CLIN-3502", retry line + Verdict, gaps_check.
+
+Wave 3 sessions (12:56 UTC): MANT-CUT2 session_01G6STWGDuMpjR4t6dSkBZe9; SAV-GLOSS2 session_01CSJ9XY9dLS3jXdzKc4QKCW; PIS-121
+session_011kcBS4UBFQjVn7qVtVwfgS; CLIN-3502 session_015MJew78g5bEYZKxhTjCWar.
