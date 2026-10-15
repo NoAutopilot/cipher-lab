@@ -103,3 +103,23 @@ split with its power controls. Nothing into key.tsv on a non-test.
 ### BAL-169 (Opus, cap 3, box 60 min, openapi.bnf.fr <= 8, ROOM take/release): baluze167-davaux-1637 glossed 13: and plain 65 on Baluze 169
 Verdict NOTES.md (BAL-E293's): "a glossed 13: and plain 65 on 169 f.36-38 / f.208-209 (~$2)". Same PREREG family as BAL-C275G; --try at every
 occurrence before anything enters key.tsv.
+
+## Wave 4 result (09:1x UTC): LVN-P2B 3.42 D, C1161-SORT2 3.89 N (K-B fail = non-test), BAL-169 2.55 N. Workers 40.23.
+
+## Wave 5 (09:1x UTC 15 Oct) -- last wave
+
+### VER-LVN2 (Opus, cap 3, box 60 min, disk; resources.huygens.knaw.nl <= 3): lodewijk-van-nassau-1573-74 verifier, not a solver
+You have not worked on this folder today. (1) Eye rulings on the 11 H rows LVN-P2RETX found contradicted by ink and the kept H duplicate
+p2_L27/11 (ids and was-ids in LVN-P2B's "why" column / AUDIT.md LVN-P2B): one crop, one look beside the H exemplars, ruling kept / changed /
+undecided, changes through the folder's corrections path + decode_key --check. (2) Carry LVN-4611P2, LVN-P2RETX, LVN-P2B and your own rulings
+into AUDIT.md (rule 10 propagation) and any SECOND-OPINIONS-QUEUE.tsv row for this target; recompute depth per rule 4a (tools/depth_check.py).
+Do not change N-class unless the search basis changed (it did not).
+
+### C1161-RECUT (Opus, cap 2, box 45 min, disk only): clair1161-avis-flandre-1688 re-cut K windows X165, X235, X088
+C1161-SORT2 next (NOTES.md). Re-cut only those three windows (localisation), have both sorts' readers' method re-read them blind, and apply gate K
+EXACTLY as first registered in C1161-SSPLIT's PREREG (no threshold change -- a changed threshold after seeing the data is not allowed). If K passes,
+the registered --try with its power controls; if it fails, log "untested-by-this-tool" per rule 3's third-attempt clause and [retired] the step.
+
+### BAL-169C (Opus, cap 3, box 60 min, openapi.bnf.fr <= 10, ROOM take/release): baluze167-davaux-1637 Baluze 169 continuation canvases
+BAL-169 next: c224, c231-232, c297-302, c344-347, c419-421 for a glossed 13: / plain 65 / 7 / 5, key-identity gate first per canvas (as BAL-169 on
+c420). Same PREREG family; --try at every occurrence before anything enters key.tsv. Stop before a canvas batch that crosses 80%.
