@@ -538,3 +538,20 @@ given -> that letter, grade 'S'; report the longest H-or-S run beside the strict
 looks for 60 tiles with checks + 1 contact sheet); cap 3.5. 5. NOTES "## VIV-GSPLIT3D (<date -u>)": tiles cut, positions predicted f (list by
 line:pos with the current sign and letter), (a) and (b) tables with the controls, requests per host; HYPOTHESES row; `f191.py --check`
 passes; shrink guard; commit by path, pull --rebase, push; done line: predicted-f count first, then strict run before/after, then (b).
+
+## JOB VIV-GSPLIT3E (wave 9e, 15 Oct 2026 10:1x UTC by date -u; account-4 parent) -- classify the hand-cut f.191r g tiles with the registered five-leaf model (no looks)
+
+Model: Opus 5.5. Cap USD 3 (Opus floor 2.5). Box 35 minutes from the claim. No vision looks: the tiles are already cut (VIV-GSPLIT3D:
+tx/vivgsplit3/boxes_handcut_f191r.tsv, 63 whole). Price: vision calls: 0 x USD 0 = 0.
+Why: VIV-GSPLIT3D cut the tiles but could not classify them because the five-leaf training crops and the vivcls atlas live in no container
+(4 canvases over its request cap). This job rebuilds them and runs the registered step 4 (PREREG-VIVGSPLIT3 Addendum C stands; add Addendum
+D naming this run and the request budget before any fetch). Measurement only.
+Steps: 1. room --start, claim; Addendum D pushed. 2. Rebuild: regenerate the five-leaf line crops and the vivcls atlas with the committed
+commands (NOTES "VIV-GSPLIT3C" / "VIV-CLS" / images manifest "vivcls"; openapi.bnf.fr take/release lines, one at a time >= 3 s, at most 6
+requests: f206, f207, f216, f217 + the f.191r canvas c196 and one spare); verify material.tsv byte-identical to 3C's where it overlaps.
+3. `gsplit.py` step 4 on the 63 whole f.191r tiles (and the 9 unsure reported separately): write tx/sorter_f191/gsplit_override_2026-10-15.tsv
+(owner_override format, new_sign 'gf', action classifier-f, column letter = f) for predicted-f positions; list them by line:pos with the
+committed sign and letter and their nearest training tiles. 4. `f191.py --override ... --tag gsplit3 --stats` (a) strict and (b) letter-S
+(extend apply_override minimally: new_sign not in key + letter -> that letter, grade 'S'; report the longest H-or-S run beside the strict
+one); controls C1/C2 as the script runs them. 5. NOTES "## VIV-GSPLIT3E (<date -u>)", HYPOTHESES row, requests per host, `f191.py --check`
+passes, shrink guard, commit by path, pull --rebase, push; done line: predicted-f count first, strict run before/after, then (b).
