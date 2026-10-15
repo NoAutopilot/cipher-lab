@@ -1,0 +1,12 @@
+# BAL-C275G (15 Oct 2026): candidate occurrences of the c275 hand's open signs bare 7, bare 5 (unbarred, unlooped ς-shape, as c275 L01/L02
+# "a 7 5") and s:E on Baluze 167 c266-273, c277-279 (openapi.bnf.fr full/2400, untracked; regen URLs in ../images/manifest.json
+# balc275g_fetches). Found by three Sonnet reader calls on band crops; rows with status 'eye' were checked by this worker on the crop.
+# Shape note (eye, c275 at 2400 px): the c275 "5" is a ς with no loop and no bar; the looped long-s (L:longs = s, S) and the barred ς-like
+# sign (c272 "46 17 [barred] 17 [barred] 76" under "[me]diateur") are different signs, so reader rows naming those are excluded.
+canvas	crop	sign	context	gloss_above	unit_guess	status	note
+272	b_c272_02R	7	que. 11 ſ u4 n [7] w 14	c'est lespagne et	pa? / es? (4 signs n 7 w 14 for 'lespagne et'; alignment not placeable)	eye: bare 7, glossed	--try 7=pa, 7=es: reject
+272	b_c272_03R	5	ouue ſ [5.] 51' 71' 90' 76' l 76 h u4 16	sus ne se contentent de la	us? / s? ('sus' over ſ 5.; ſ = s)	eye: unbarred 5 with following dot as c275 L01 '7. 5'; glossed	--try 5=us, 5=s: reject
+272	b_c272_00R/01R	s:E	20 77 14 42' [E] y a quoy	none over the sign	-	reader high; not eye-checked	unglossed: not usable
+272	b_c272_04L/R	7	40 [7] 25= 36= 91=	none (clear text above)	-	reader med; not eye-checked	unglossed
+270	b_c270_04R	s:E?	83 ð [E?] 6 K	none directly above	-	reader low	unglossed
+271	b_c271_03R	5?	w' [5?] d y c w' 30	none directly above	-	reader med; not eye-checked	unglossed
