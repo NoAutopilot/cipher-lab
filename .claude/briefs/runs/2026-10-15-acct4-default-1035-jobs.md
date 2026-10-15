@@ -52,3 +52,39 @@ plan with ~cost; do NOT align in this job. If none: log every leaf looked at. Un
 
 Wave 1 spawned 10:42 UTC: LVN-P2K session_01TWF4xvqjvdLFnxeiwQW9Kp, C1161-275 session_01E2AiUscHxXZj6H2jPE5xDu, BAL-13X session_01LoaaUP4dMFqoGmR3Lo4mTs,
 GRA-3038 session_019pgfgcdGMfeWiMqm9qnUSV (all Opus).
+
+## Wave 1 result (11:0x UTC): LVN-P2K 4.91 D, C1161-275 3.05 N (localiser gate L2 FAIL, stopped as registered), BAL-13X 3.22 D, GRA-3038 1.71 N. Workers 12.89.
+
+## Wave 2 (11:1x UTC 15 Oct)
+LANE DEFAULT-A1-0740-15 closed 10:49 and LANE DEFAULT-A2-0810-15 closed 10:15, so their folders are open to this lane; their handoffs' "next" lists
+in STATUS.md are the source of jobs 4-6. Intake gate 11:05 UTC, pass each: matignon-mayenne-1586, fr4735-monluc-lansac-poland-1573, fr5761-election-1519.
+
+### LVN-K15 (Opus, cap 3, box 60 min, disk; resources.huygens.knaw.nl <= 3): lodewijk-van-nassau-1573-74 K15 second row, 18/39 re-seat, flat-foot 2
+LVN-P2K's next (NOTES.md LVN-P2K section): the K15 85 M second row, the 18/39 re-seat and the positional-differs pairs (~1.5); then the eye check of
+4610 H tokens ending in the flat-foot 2 (~0.3), verifier-style ruling kept/changed/undecided. Changes through the corrections path + decode_key
+--check; carry every grade change into AUDIT.md (rule 10). Do not repeat LVN-P2K's rulings.
+
+### C1161-HC (Opus, cap 5, box 90 min, disk only): clair1161-avis-flandre-1688 hand-counted S ticks per line, then the registered sort
+C1161-275's next: hand-counted ticks per S line (c187L/c188L first) to replace the automated localiser that failed L2 (18/30). This is a different
+instrument (counting by eye per line), so it is not a third attempt of the same one; write that in the PREREG. Order: hand-count c187L/c188L first and
+re-run the L2 eye check (same 30-window sample design, same gate 26) on them; only if L2 passes on the hand-counted lines extend to the rest, then
+gate K exactly as first registered, two blind readers in batches (crop paths only, <= 40 windows per call), reconciliation as one priced unit. If L2
+fails again, stop and log the localisation step [retired] with both instruments named. Units: counting ~0.15 per line x lines + readers as C1161-275.
+
+### MAT-BOX (Opus, cap 3, box 60 min, disk; openapi.bnf.fr <= 4, ROOM take/release): matignon-mayenne-1586 --try BOX=u on f.110, o/c image check
+A2-0810 handoff next: `decode_key.py matignon-mayenne-1586 --try BOX=u` on f.110 (125 U tokens, 5/5 eyed as the BOX2 shape by MAT-EYE) with --try's own
+power control (a known wrong value on an H code must be rejected; if the control fails the try is a non-test and nothing enters key.tsv); PREREG
+first. Then the image check of the o and c labels (~1). Every leaf's judge before/after.
+
+### MONL-L21 (Opus, cap 4.5, box 90 min, disk; openapi.bnf.fr <= 3 to regenerate crops, ROOM take/release): fr4735-monluc-lansac-poland-1573 c268 L21-L25
+A1-0740 next 1: c268 L21-L25 as its own job: line crops with tools/iiif_lines.py (paste the command) or the folder's regen scripts, two blind passes
++ reconciliation (3 units at ~1 each + start-up 1), same method and controls as the L16-L20 read (MONL-K04 / MONL-CTL sections). Then, only if >= 30%
+cap is left, the K04-for-n --try on the 11 left with its power control.
+
+### ELEC-383 (Opus, cap 3, box 60 min, disk; gallica/openapi.bnf.fr <= 10, ROOM take/release): fr5761-election-1519 nr. 383 bisection
+A1-0740 next 2: nr. 383 bisection back from fr.5761 f.172 (~2), by the method ELEC-PAIR / the nr. 357 localisation used (read those NOTES.md sections
+first). Locate, crop (scratchpad), record shelfmark/canvas and any printed counterpart page; pair against print only if found and >= 40% cap left.
+
+### BAL-302 (Opus, cap 2.5, box 60 min, disk; openapi.bnf.fr <= 4, ROOM take/release): baluze167-davaux-1637 c302 65 stroke + c276 E shape
+BAL-13X's unfinished steps: c302 at max for the second unsettled 65 stroke (plain 65 or 65'), and the c276 R16 "d'une" E shape (epsilon or Ebar),
+one request each; then the c281/c284/c267 E rows re-checked for the Ebar form from disk. Grades only through --try / corrections path.
