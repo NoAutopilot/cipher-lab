@@ -1055,7 +1055,7 @@ fails with a clean decoy control. The side note opens "Baille a" (a recipients l
 Next: (1) native-resolution crops of the f.51r Brandebourg/Treves rows and the note's second line (openapi.bnf.fr c105 regions, 2 requests,
 ~0.8) for a third reader on Phi, Hbar and "Orval"; (2) ELEC-VERSO next (2) rectos ff.161r-164r; (3) fr.3897 items 36-38.
 
-## ELEC-R3: third blind reader on native-resolution crops (worker ELEC-R3, LANE DEFAULT-A1-1426-15, account 1, 15 Oct 2026, 14:40-15:0x UTC by date -u)
+## ELEC-R3: third blind reader on native-resolution crops (worker ELEC-R3, LANE DEFAULT-A1-1426-15, account 1, 15 Oct 2026, 14:40-14:4x UTC by date -u)
 
 Brief: ELEC-R2's next (1). PREREG addendum `elecr3/PREREG-ELEC-R3.md` (pushed 21e2ea4ad before the fetch and the reader call): ELEC-R2's
 rule, targets, decoys, shuffle and task unchanged; only the crops changed to native resolution (panel A f.51r lower part, c105 native 2276 px
