@@ -1,0 +1,8 @@
+# ELEC-R2 15 Oct 2026, PREREG 585a6a34d; one blind Sonnet reader, crop paths only; shuffle seed 20261015
+target	true_identity	reader_match	conf	own_name_row_in_A	elecverso_match
+T1	Phi (nr.383 Brandebourg)	B / "Cerye" (phi sign); A/Brandebourg named as weaker look-alike	3	no	A Brandebourg 5/5
+T2	oXo (nr.383 roy catholicque)	A / Le Roy catholique	3	yes	A Roy catholicque 5/5
+T3	decoy f.53r Colonien	B / Cleves weak, "treat as none"	1	n/a (not a panel-A row)	-
+T4	Hbar (nr.383 Treves)	none	1	no	A Treves 5/5
+T5	decoy f.53r palatinus	none (B/Palatin faint alt.)	1	n/a (not a panel-A row)	-
+T6	Lfo (nr.383 conte Palatin)	A / Palatin	3	yes	A Palatin 5/5

@@ -1027,3 +1027,30 @@ four target crops, ~0.6) to confirm the four matches and read the note's first w
 majority_key_leaf.py run); (2) with the f.51r block as the key, search fr.5761 rectos ff.161r-164r (c325-c331, 4 canvases at 1000 px, ~1.5)
 and the other Orval/Bonnivet/Guillart copies for further occurrences of its signs, which a third oXo would need for C; (3) fr.3897 items 36-38
 (ELEC-PAIR next 3).
+
+## ELEC-R2: blind second reader on the f.51r lower block and its side note (worker ELEC-R2, LANE DEFAULT-A4-1236-15, account 4, 15 Oct 2026, 13:35-13:5x UTC by date -u)
+
+Brief: ELEC-VERSO's next (1). PREREG addendum `elecr2/PREREG-ELEC-R2.md` (pushed 585a6a34d before the fetch and the reader call). One blind
+Sonnet subagent call, crop paths only (no sign names, no ELEC-VERSO matches, no print): six shuffled targets (the four nr. 383 signs cut
+from c335/c336 native, plus two decoys from the f.53r key: Colonien circle-bar-circle, palatinus pi-sign) against panel A (f.51r lower part,
+canvas105 y 1250-2050) and panel B (f.51v whole leaf). Result `elecr2/reader2_result.tsv`.
+- **Registered rule: FAIL, 2 of 4 real targets** to their own panel-A row (need >= 3). oXo -> A "Le Roy catholique" (conf 3) and Lfo -> A
+  "Palatin" (conf 3) agree with ELEC-VERSO. Phi -> B (a phi sign on f.51v the reader read "Cerye", ELEC-VERSO's "Saxe" conflict row), with A
+  Brandebourg named only as a "weaker look-alike"; Hbar -> none (conf 1; reader listed A Treves as "R/Rf with a flourish").
+- **Decoy control clean, 0 of 2** on any panel-A row (Colonien -> "B Cleves weak, treat as none"; palatinus -> none). The control could
+  vary on the matching axis and did not fire, so the two agreements are not the reader matching anything to panel A; the two misses are
+  the reader's, not noise in the control.
+- **Side note, first word.** The reader gives "Baille a mons[r] de Lorraine mons[r] / Arnal[?] mons[r] de Bazoges ... / [C]hambreham[?]
+  [S]almiati[?] a mons[r] / Le tresorier Hobertet [R?]" -- "Baille a" (handed to), not "[Sem]blable". So the note lists who was given this
+  name list, which still includes the persons ELEC-VERSO read (Lorraine, Bazoges, Chambrehain, Salviati, Robertet); the second name is read
+  "Arnal" here and "d'Orval" by ELEC-VERSO -- unsettled, two readers disagree. Orval's presence on the list is therefore M, one reader for,
+  one reading a different name.
+- Grades: all M, unchanged (as registered). key.tsv unchanged; no --try run (no f.51r rows in key.tsv). elecpair383/ grades unchanged.
+- Requests: openapi.bnf.fr 3 (c336 650,180,300,140 and 1850,1560,300,200; c335 860,2780,400,170; all /max/), all 200. Images in the
+  session scratchpad only, none in git.
+
+**Verdict (ELEC-R2, 15 Oct 2026):** open, unchanged. A blind second reader confirms two of the four nr. 383 signs against the f.51r
+"la Vernade devers Treves" block (Roy catholicque, Palatin), puts Phi on f.51v's phi row and finds no row for Hbar; the registered >= 3/4 rule
+fails with a clean decoy control. The side note opens "Baille a" (a recipients list), and its second name (Orval vs "Arnal") is unsettled.
+Next: (1) native-resolution crops of the f.51r Brandebourg/Treves rows and the note's second line (openapi.bnf.fr c105 regions, 2 requests,
+~0.8) for a third reader on Phi, Hbar and "Orval"; (2) ELEC-VERSO next (2) rectos ff.161r-164r; (3) fr.3897 items 36-38.
