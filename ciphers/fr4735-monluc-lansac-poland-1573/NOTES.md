@@ -1205,7 +1205,7 @@ pick, not an eye reading; the L11-L15 contradictions sit partly on that.
   made blind and the clear text is not the transcription's judge, but it is the first thing to re-check).
 **Grades (decode_key.py, job c268):** c268 L01-L15, 525 tokens: **C 270 / M 242 / U 13** (L01-L10 unchanged C 184 / M 157 / U 6; L11-L15 C 86 /
 M 85 / U 7). `python3 ../../tools/decode_key.py . --check` "reading up to date" (exit 0); `python3 align_c268.py --check` "align_c268: OK" (exit 0);
-`python3 score_c268.py --check` SCORECHECK. Judge (score_c268.py, fr16): FAIL at N 504 (-1.437 vs real_p05 -0.89; words cover 0.772 PASS), shuffled
+`python3 score_c268.py --check` "OK c268 outputs current" (exit 0). Judge (score_c268.py, fr16): FAIL at N 504 (-1.437 vs real_p05 -0.89; words cover 0.772 PASS), shuffled
 decodes 0/100 PASS, best -1.889. As before, the judge is a non-test for this key (MONLUC-KEY's positive control) and the alignment is the evidence.
 key.tsv unchanged; c172 unchanged (C 83 / M 64 / U 3).
 Requests: openapi.bnf.fr 2, both 200. Subagents: 10 Sonnet (one line each). Cost not visible to this session.
