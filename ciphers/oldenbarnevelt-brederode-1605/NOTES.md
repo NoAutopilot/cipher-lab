@@ -2197,3 +2197,50 @@ Read so far: no. 92 and the 187 postscript as band intervals (OBRED-BAND; 72 of 
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
 - [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
 Verdict: keep going: 3 internal gaps; band intervals segment into 20 nl16 word leads above shuffled-band and order nulls (I 320 vs p95 238/233) with a synthetic control that passes (precision 0.58, 0.54 at the real error level), all M; cheapest next: a context-scored --try pass on the word leads with the same control (~$3)
+
+## OBRED-NA (15 Oct 2026, 11:21-11:3x UTC by date -u, account 2, Opus; for LANE DEFAULT-A2-1109-15)
+
+Brief: the no. 92 key's fate after OBRED-OCT2 put Brederode's own cipher last "in des Advocaets Barnevelt handen": a stride screen of NA
+1.01.02 inv. 9459 (Bijlagen in de zaak tegen Oldenbarnevelt 1607-1618, 7 stukken) for a key leaf, cipher alphabet or Brederode letter, and
+the S.G. secrete resoluties inv. 4562 at Oct 1619 for any entry naming Brederode, a memorie, cyfer or sleutel. A screen, nothing scored.
+
+- Prior-work step: `prior_work.py ... --item-spec 'NL-HaNA 1.01.02 inv. 9459 ... + secrete resoluties inv. 4562 Oct 1619 ...' --step-type
+  read` exit 4 (own claim LEAD, LOOK, 2 UNCHECKED, 2 UNCHECKED-NET); the four non-net rows recorded CLEAR in `prior-work.tsv` (adhoc-2cd3f8).
+- Requests: 16, all 200, >= 3.2 s apart, NA take/release in ROOM: www.nationaalarchief.nl 2 (item pages for 9459 and 4562, scan list read
+  from the page's `drupal-settings-json`), service.archief.nl 14 (IIIF). Every scan viewed, with sha1 and what is on it: `na_obredna_scans.tsv`;
+  `screen_tools/regen_obredna.sh` re-derives them; no image committed. By eye, one reader (M).
+- **inv. 9459** (17 scans, not 7 as the stuk count might suggest): odd scans 1-17 at 900 px, i.e. the opening of every one of the seven stukken
+  (pencil numbers 1-7 on the backs). Cover "No. 1 h. Verschillende stukken"; stuk 1 a French letter "Monseigneur"; stukken 2-6 Dutch prose,
+  three headed "Copie" / "Copie authentique", one a two-column set of articles; stuk 7 a blank folded sheet. **No numeral table, alphabet,
+  nomenclator, numeral group or Brederode signature on the nine scans.** Not seen: the even scans 2-16 (continuation pages of the same
+  stukken, 8 scans).
+- **inv. 4562** (290 scans, Dec 1615 - Dec 1634; a thin register, about seven scans a year): located by bisection (50 = fol. 28v-29, 6 Dec
+  1621 - 10 Jan 1622; 32 = fol. 10v-11, 30 Apr - 4 May 1619; 35 = fol. 13v-14, to 18 July and 29 Aug 1619). **Scan 36 (fol. 14v-15) runs on
+  from the 29 Aug 1619 entry (Oostindische Compagnie; "Geschut uyt Engelant") straight to "Veneris den 7 Februarij 1620" (the Markgraf of
+  Ansbach, troops raised in Germany)**: the secret register holds **no resolution at all between 29 Aug 1619 and 7 Feb 1620**, so nothing for
+  Oct 1619, nothing on Brederode, a memorie, cyfer or sleutel. Folios 14 and 15 are consecutive, so no leaf is missing at the break (M, read
+  from the date headings and foliation at 1000 px). Scan 37 (fol. 15v-16, 27 Mar - 21 May 1620): margins name England, a Keyserse legatie,
+  Brunswick, Wulfsen Munter; nothing on Brederode or a cipher.
+- What this settles (I): the key question of Oct 1619 (res. 1779 of 11 Oct, "het cijfer ongeschikt", Maurits to draw up a better one) was
+  handled in the ordinary resolutions only (OBRED-KEYHUNT), not in the secret register. The no. 92 key is not filed among the seven
+  9459 stukken at their openings, nor in 3.01.14 (R9-NAKEY). Where it was not found: 9459 odd scans; 4562 Aug 1619 - Feb 1620. Not looked at:
+  9459 even scans 2-16; the other process series 9450-9458 and 9460 (titles name no cipher); KHA A13 (Maurits).
+
+## Remaining gaps (OBRED-NA, 15 Oct 2026)
+Read so far: no. 92 and the 187 postscript as band intervals (OBRED-BAND; 72 of 180 one-letter) and, by constrained segmentation, 20 nl16 words of >= 4 letters covering 112 of 143 letter tokens, all M (OBRED-SEG); 37 name codes unread; inv. 6019 scans 555-556 carry 81 groups (58 H-read) with 45 C-graded period glosses; the 2 Oct 1619 letter puts Brederode's own cipher last in Oldenbarnevelt's hands (OBRED-OCT2, M)
+- no. 92 and the 187 postscript beyond M word leads - blocker: not-attempted; segmentation passes its control but precision is ~0.55, so no word reaches S; next: the context-scored --try pass on the 20 leads (OBRED-CTRY, this lane's wave 1), ~$3.5
+- the no. 92 key ("mijn cyfer ... in des Advocaets Barnevelt handen") - blocker: not-attempted; not in 3.01.14 (R9-NAKEY), not at the opening of any of the seven stukken of 1.01.02 inv. 9459, and the S.G. secret register inv. 4562 has no entry between 29 Aug 1619 and 7 Feb 1620 (OBRED-NA); next: 9459 even scans 2-16 at 900 px (8 requests, ~$1), then the remaining process series 1.01.02 inv. 9450-9458/9460 by stride, ~$2
+- the deciphered memorie of res. 1779 (a Maurits-cipher text, OBRED-OCT2 inference) - blocker: needs-physical-access; KHA A13 (Maurits) inventory not served to scripts and the archive is research-request only; owner-side step: a KHA research request, not queued
+- the later liassen NA 1.01.02 inv. 6020-6024 and the 6019 stride-1 fill after 565 - blocker: not-attempted; outside this brief; next: a stride-3 screen of inv. 6020 (~$4)
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A): no numeral block, no Brederode, Stettin or Heidelberg heading (M)
+
+## Escalation (OBRED-NA, 15 Oct 2026)
+- [x] siblings: scan 187 shares 26 values with no. 92 (OBRED-187); inv. 6019 scans 555-556 (Oggersheim, 14 Oct 1619) share 42 values with no. 92/187, clearing the shuffled-code control (OBRED-556); the letter's start (554) carries no groups (OBRED-552)
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187); the 1619 letter's prose and margin summaries read in part (OBRED-556); 515-554 and 558-565 seen by eye (OBRED-MEM, OBRED-552, OBRED-549, OBRED-KEYHUNT); the 2 Oct 1619 letter 528-530 read in full (OBRED-OCT2)
+- [ ] known-keys: the 10 Aug 1598 Van Aerssen slip, Buzanval inv. 2028, DECODE 1600s and Palatine/Hessian keys screened (R10-OBRED98, R9-OBRED4, OLD-DKEY, R8-OBRED2, R9-OBRED3); Brederode's own cipher last in Oldenbarnevelt's hands (OBRED-OCT2); not at the openings of 1.01.02 inv. 9459's seven stukken, and no secret resolution 29 Aug 1619 - 7 Feb 1620 (OBRED-NA); next: 9459 even scans 2-16, ~$1, then 9450-9458/9460 by stride, ~$2
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII and NR 4 carry no key or decipherment note (OBRED-DP, OBRED-KEYHUNT)
+- [ ] key-rebuild: band intervals pass a held-out leaf check (OBRED-BAND) and segment into nl16 words above both nulls with a passing synthetic control, 20 words M (OBRED-SEG); next: the context-scored --try pass (OBRED-CTRY), ~$3.5
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
+- [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
+Verdict: keep going: 3 internal gaps; the no. 92 key is not at the openings of the seven stukken of NA 1.01.02 inv. 9459 and the S.G. secret register inv. 4562 has no entry between 29 Aug 1619 and 7 Feb 1620 (OBRED-NA, M); cheapest next: 9459 even scans 2-16 (~$1), then the process series 9450-9458/9460 (~$2); the context-scored --try pass is running as OBRED-CTRY
