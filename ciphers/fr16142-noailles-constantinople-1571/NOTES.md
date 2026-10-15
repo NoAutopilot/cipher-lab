@@ -1730,3 +1730,62 @@ Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner pi
 - [x] image-check: c262 re-cut; c262 gloss L01-L13 native crops (DEF1-NOXG, R7A-NOX262), L14-L21 (R10-NOX2); c510-516 native line bands; owner sort of the atlas piles
 - [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read, DEF1-NOXB and D2-NOXB2 blind reads (controls below gate, licence nothing; whole-line eye not to be re-tried), R7A-NOX262 L09-L13 read, R9-NOX exact-LCS test0 (PASS, stable), D1-F16142A dense-anchor masked alignment (PASS, S 2, thin), D07-NOXT bridge under owner piles (PASS 17 -> 19), D07-NOX510 split-pile bound + c510-516 tile-stream decode (FAIL, PREREG-D07NOX510.md), D07-NOXREAD c510 L05-L14 reader passes (split 22.9%, stopped before decode, PREREG-D07NOXREAD.md), DA1-NOX word-level blind gloss passes (control 0.462/0.423, gate 0.80; blind Opus eye on c262 gloss crops retired after its third control miss), DA1-NOX c510 look-alike window re-read (47/62 settled 2-of-3, 15 to focus.tsv; decode still stopped by PREREG-D07NOXREAD's two-reader rule)
 Verdict: keep going: 6 internal gaps, 1 waiting on ASKS 153 (a person's read of the c262 gloss word crops, filed 8 Oct 2026); cheapest next: for c510, the owner's sign-sorter pass on witness/lookalike_da1nox/focus.tsv, then a fresh PREREG scoring c510_passD.tsv, ~$2
+
+## NOAI-C262: c262 cipher rows 11-15 by two blind passes (stopped at the split rule) + c231 in Charriere III (15 Oct 2026, 02:49-02:5x UTC by date -u, account-4 worker)
+Brief: `.claude/briefs/runs/2026-10-15-acct4-default-0235-jobs.md` NOAI-C262 (LANE DEFAULT-A4-0235-15). Pre-registered `PREREG-NOAIC262.md`
+(pushed f710830df before either pass ran). Prior work: `tools/prior_work.py ... --step-type transcribe --offline` exit 4 (own live claim =
+this job; leaf gloss = the known answer this job targets; Tomokiyo/solver/edition rows covered by CS-4's check-solved and the Charriere
+reads logged above); output `prior-work.tsv`, `look.tsv`. Requests: gallica.bnf.fr 0 (committed native f262 used), cryptiana.web.fc2.com 1
+(CharlesIX_Acqs2.png, not committed), archive.org (be-api) 2. Subagents: 4 Sonnet calls (2 passes x 2 halves). No image committed.
+
+**Part (a).** Crop step (pasted; crops in the worker scratchpad, regenerable):
+```
+python3 tools/iiif_lines.py --image images/src_ark_12148_btv1b9060927q_f262_full.jpg --region 1330,3330,3470,760 --centres 95,277,394,537,654 --follow-slope 300 --slope-margin 15 --max-width 1800 --overlap 100 --prefix c262rd --out <scratch> --debug
+  band L01: y = 118.8 - 0.03670x ... band L05: y = 690.3 - 0.04919x; wrote 10 crops
+```
+c262rd L01-L05 = cipher rows 11-15: the row after c262rc L10 (checked against c262rc_L10_s1) down to the row before the "+ pour ceste
+mesme raison" row; one text row per crop, checked by eye on a stack of all ten strips. Two blind Sonnet passes P and Q (reference:
+Tomokiyo's table, c262rc L01/L04 crops with their recon labels as worked examples, NX-RECUT's rulings; gloss not shown), raw
+`witness/c262rd_passP_raw.tsv`, `_passQ_raw.tsv` (scored copies collapse `?{...}`). `tools/reconcile_passes.py`: P 184 signs, Q 188,
+**agree 136/205 = 66.3%, err_2reader 0.337 > 0.10** (69 disagreement columns; 29 more columns where both wrote `?`). Splits are mostly
+one reader dropping or adding a sign (-/o1/e2, -/r1, W:le/-) and look-alike pairs (u1/n1 x4, p2/e3, l2/a2): segmentation and naming both.
+**Stop rule applied as registered:** no reconciliation into the recon, `witness/c262rc_recon.tsv` and `gloss.tsv` unchanged, no test0
+score on the new rows. Files: `witness/c262rd_disagreements.tsv`, `_agreement.tsv`, `_ciphertext_draft.tsv`, `_uncertain.tsv`,
+`_focus.tsv` (69 rows for the sign sorter). Gate number before = after (unchanged inputs): test0 LCS e 0.5618 (key-shuffle max 0.4220,
+gloss-order max 0.4462), difflib e 0.5215; `scripts/test0.py --ct witness/c262rc_recon.tsv --hash e [--stat lcs] --out
+witness/results[_lcs]_rc_recon_e.json --check` both OK. Grades: no token decoded; H 0, C 0, S 0, M 0, I 0. This is the fourth leaf where
+table-image naming by Sonnet readers splits well above 0.10 (c262 31%, c510 23%, c515/c516 46-57%, now c262 rows 11-15 34%).
+
+**Part (b), c231 "Relation d'une bataille" in print.** Charrière, *Négociations de la France dans le Levant* III, read from the disk copy
+`sources/ia-fulltext/print-check/ngociationsdel03charuoft_djvu.txt.gz` (0 requests): **hit** -- p.207 n.1 (OCR lines 15718-15745) prints, as a letter
+of the évêque d'Acqs "au confident mystérieux du prince" written on first news of Lepanto (cross-referenced to "page 168, à la note"),
+the text "Le gain de ceste grande bataille, advenue en saison incommode pour poursuivre la victoire, donnera loisir au vaincu de reprendre
+son halaine ... car pour les rasseurer on ne pert rien sur le marché" (about 170 words), i.e. c231's clear opening as logged by RUN1-NX.
+Not checked: whether the footnote covers the whole of c231 (c231 is estimated at ~1,500-3,000 signs, the footnote at ~800 letters, so it is
+probably the opening or a summary piece, not the whole), and which source Charrière names for it (p.168 note not read). IA full-text
+(be-api, 2 requests): `"grande bataille advenue en saison"` 0 hits (OCR hyphenates "ba- taille"); `"saison incommode pour poursuivre"` 3 hits,
+all copies of Charrière III (ngociationsdel03charuoft, baclac_1007364698_003, bub_gb_dU5XAAAAcAAJ) -- no separate Lepanto relation on IA
+carries the phrase. Lepanto relations by title not searched beyond this phrase search. Next for c231: read Charrière III p.168 note and
+p.207 n.1 against c231's clear words and cipher length; if the footnote is the deciphered body, c231 has a print known answer (grade C
+source) for a reader-transcription known-answer test.
+
+## Remaining gaps (NOAI-C262, 15 Oct 2026)
+Read so far: c510-516 segmented whole (9,904 tiles, 120 clusters -> 108 owner piles); basin key N8-NOX PASS, tie to Tomokiyo 7/17 then 10/19 (thin); basin key on the reconciled c262 reader signs RUN6-NOXREAD PASS (0.3506); test0 gate passes (difflib and LCS, R9-NOX); c510-516 atlas-tile decode FAIL (D07-NOX510); c510 L05-L14 two blind reader passes, 278 signs, two-reader split 22.9% (D07-NOXREAD), look-alike pass settles 47 of 62 splits (residual 0.054, DA1-NOX); c262 gloss blind eyes 0 of 3 past control; 0 open leaves decoded; c262 cipher rows 11-15 two blind passes split 33.7% (NOAI-C262); c231 clear opening found in Charriere III p.207 n.1
+- c262 gloss L01-L13 second read: three blind Opus eyes missed their control (0.667, 0.714 whole line; 0.462/0.423 word level, DA1-NOX), the machine eye is retired; DEF1-NOXG's and R7A-NOX262's corrections rest on print-aware reads only - blocker: waiting-on ASKS 153; a person's read is the remaining instrument; ASKS row 153 filed 8 Oct 2026 (D4-ASKS) for a read of the 63 word crops in images/c262gw/, L07 and L10-L12 (22 crops) first as the control
+- c510 L05-L14 decode with Tomokiyo's key - blocker: not-attempted; two-reader split 0.229 > 0.10 stops scoring under PREREG-D07NOXREAD, look-alike pass done, 16 questions in witness/lookalike_da1nox/focus.tsv incl. the W:le/W:sieur Fu inventory flag; next: send focus.tsv to the owner's sign sorter (tools/sign_sorter.py --focus), then a fresh PREREG that scores c510_passD.tsv with the two-reader rate stated beside it (a PASS against four nulls under reader noise is conservative), ~$2
+- c262 cipher rows 11-15 (beside gloss L14-L21): cut and read by two blind passes, split 0.337 > 0.10, stopped before reconciliation (NOAI-C262) - blocker: not-attempted; table-image naming by Sonnet readers has now split on four leaves; next: witness/c262rd_focus.tsv (69 rows) into the sign sorter (tools/sign_sorter.py --focus) with the c262rd crops for the owner to settle, then a reconciliation from the settled names and the PREREG-NOAIC262 extension and test0 --check unchanged, ~$1 to publish + ~$1
+- 14 c262 tiles in owner-split clusters (13 k072, 1 k006) bounded, not placed - blocker: not-attempted; no placement changes the D07-NOX510 verdict; next: one eye pass on the 13 k072 crops only if a later test uses the k072 value, ~$1
+- c510-516 alignment by line reads (instrument 2) not run - blocker: not-attempted; instrument 1 FAILed (D07-NOX510); next: same pipeline with its control first, after the c510 decode above, ~$2
+- c511 not transcribed by readers - blocker: not-attempted; reader passes cover c510 only; next: two passes against settled labels after the c510 sign names and the Fu question are settled, ~$5
+- "Relation d'une bataille" c231: Charriere III p.207 n.1 prints its clear opening "Le gain de ceste grande bataille, advenue en saison incommode ..." (~170 words, NOAI-C262); whether that is the whole deciphered piece is not checked - blocker: not-attempted; outside this job's grep-only scope; next: read Charriere III p.168 note and p.207 n.1 against c231 (clear words, cipher length, Charriere's stated source), and if it is the deciphered body, plan a reader-transcription known-answer test on c231, ~$1
+
+
+## Escalation (NOAI-C262, 15 Oct 2026)
+- [x] siblings: the duplicata/original pairs in this volume found (letters_coverage.tsv); date-only Dupuy matches text-checked (RUN6-NOXDUP, R7A-NOX262)
+- [x] clear-pages: Dupuy 521 221R-226R transcribed and aligned whole; the alignment locks on in a basin with a common key
+- [x] known-keys: Tomokiyo's published key applied to c262; registered gate passes under difflib and under exact LCS (R9-NOX, PREREG-R9NOX-LCS.md, stable to the gloss change)
+- [x] print: Charrière III pp.258, 520-524 and 551-558 read; p.207 n.1 prints c231's clear opening (NOAI-C262); p.258 differs from the leaf gloss at L08 and L09 (spelling)
+- [n/a] key-rebuild: a published key exists
+- [x] image-check: c262 re-cut; c262 gloss L01-L13 native crops (DEF1-NOXG, R7A-NOX262), L14-L21 (R10-NOX2); c510-516 native line bands; owner sort of the atlas piles
+- [x] retry: NOX-CONFIRM (FAIL as specific), N8-NOX basin (PASS), N8-NOX2 key tie (PASS), RUN6-NOXDEC tile decode (FAIL, non-test), RUN6-NOXREAD reader-sign decode (PASS), RUN6-NOXALIGN masked alignment (thin), DEF1-NOXG gloss re-read, DEF1-NOXB and D2-NOXB2 blind reads (controls below gate, licence nothing; whole-line eye not to be re-tried), R7A-NOX262 L09-L13 read, R9-NOX exact-LCS test0 (PASS, stable), D1-F16142A dense-anchor masked alignment (PASS, S 2, thin), D07-NOXT bridge under owner piles (PASS 17 -> 19), D07-NOX510 split-pile bound + c510-516 tile-stream decode (FAIL, PREREG-D07NOX510.md), D07-NOXREAD c510 L05-L14 reader passes (split 22.9%, stopped before decode, PREREG-D07NOXREAD.md), DA1-NOX word-level blind gloss passes (control 0.462/0.423, gate 0.80; blind Opus eye on c262 gloss crops retired after its third control miss), DA1-NOX c510 look-alike window re-read (47/62 settled 2-of-3, 15 to focus.tsv; decode still stopped by PREREG-D07NOXREAD's two-reader rule), NOAI-C262 c262 rows 11-15 two blind passes (split 0.337, stopped, PREREG-NOAIC262.md)
+Verdict: keep going: 6 internal gaps, 1 waiting on ASKS 153 (a person's read of the c262 gloss word crops); cheapest next: Charriere III p.168 note and p.207 n.1 against c231, ~$1; then the owner's sign-sorter pass on witness/lookalike_da1nox/focus.tsv and witness/c262rd_focus.tsv, ~$2

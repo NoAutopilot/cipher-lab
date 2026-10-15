@@ -1,0 +1,6 @@
+# NOAI-C262 pass P (Sonnet, blind), c262 cipher rows 11-15 (crops c262rd L01-L05 = L11-L15), 15 Oct 2026; raw, verbatim
+L11	u1 o1/e2 l2 l2 p1 u1 n1 t2 p1 e1 t2 r1 ?{y-shape} c1 u1 W:le r1 o1/e2 r1 l2 a2 p1 o1/e2 r1 t2 o1/e2 x1 o1/e2 ?{box-cross} t2 W:le l2 a2 p1 o1/e2 r1 l1 ?{loop-tail}
+L12	?{m-loop} u1 o1/e2 p1 l2 a2 p1 o1/e2 e3 r1 ?{M-shape} ?{H-bar} o1/e2 q1 p1 l2 u1 c1 l2 c1 y1 ?{u-box} a1 a1 u1 n1 t2 W:le ?{e-loop} p2 ?{cup-tail} ?{table-box} p2 l2 ?{theta} o1/e2 p1 u1 a1
+L13	p2 o1/e2 p1 u1 c1 t2 x1 o1/e2 e3 l2 a2 p2 a1 q1 x1 a1 u1 o1/e2 c1 l2 o1/e2 ?{bar-stem} o1/e2 W:le ?{circle-eye} o1/e2 W:le p1 l2 ?{lozenge-hook} o1/e2 ?{stem-cross} u1 t2
+L14	r1 o1/e2 p1 o1/e2 ?{psi cup} x1 o1/e2 o1/e2 o1/e2 c1 ?{phi on stem} u1 ?{T bar on stem} t2 o1/e2 l2 a2 ?{4 with crossbar} l2 ?{10} u1 e3 ?{T bar on stem} o1/e2 ?{psi cup} o1/e2 c1 t2 r1 o1/e2 ?{4 with hook} e3 u1 t2 ?{cross with bars} o1/e2 u1 ?{flourish R}
+L15	p2 o1/e2 ?{4 with crossbar} u1 e3 n2 ?{4 with crossbar} o1/e2 u1 x1 o1/e2 ?{T bar on stem} p1 o1/e2 u1 c1 ?{small d with bar} x1 o1/e2 ?{z flourish} l2 a2 ?{box with bar} u1 o1/e2 r1 ?{q loop with tail} ?{small s with tail} a1 u1 x1 ?{x with cross-stroke} ?{swash with R flourish} ?{diamond on stem} ?{triangle on stem}
