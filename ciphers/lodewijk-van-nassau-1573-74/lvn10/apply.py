@@ -24,6 +24,9 @@ pre = rd(os.path.join(H, 'ciphertext_4610_pre.tsv'))
 # gates above still score the uncorrected aligned_*.tsv control column; this does not re-score any round as a licence.
 post = {(r['line'], r['pre_pos']): r for r in rd(os.path.join(H, 'corrections_lvnctl.tsv'))}
 al = {(r['line'], r['position']): r for r in rd(os.path.join(H, ALN))}
+# LVN-3R (15 Oct 2026): per-token 300-dpi read of 4610 p1 (lvn10p1/PREREG-LVN-3R.md, control 9/10 >= 8), applied last;
+# only rows lvn10p1/settle.py marked settled/confirmed change (sign and confidence), every round.
+post3 = {(r['line'], r['pre_pos']): r for r in rd(os.path.join(T, 'lvn10p1', 'settle.tsv')) if r['action'] in ('settled', 'confirmed')}
 ctl = {PA: [0, 0], PB: [0, 0]}
 for r in al.values():
     if r['role'] == 'control':
@@ -65,6 +68,12 @@ for r in pre:
         alt = f'was {sign} {conf}' + (f'; {alt}' if alt else '')
         sign, conf, why = c['new'], c['confidence'], c['note'] + f' (pre pos {r["position"]})'
         log.append([r['line'], r['position'], c['old'], r['confidence'], '', '', 'lvnctl-corrected'])
+    c = post3.get((r['line'], r['position']))
+    if c:
+        assert sign == c['old'], (r['line'], r['position'], sign, c['old'])
+        alt = f'was {sign} {conf}' + (f'; {alt}' if alt else '')
+        sign, conf, why = c['new'], c['confidence'], c['note'] + f' (pre pos {r["position"]})'
+        log.append([r['line'], r['position'], c['old'], r['confidence'], '', '', 'lvn3r-' + c['action']])
     pos += 1
     out.append([r['line'], str(pos), sign, conf, alt, why])
 def tsv(rows, head):

@@ -60,14 +60,14 @@ p1_L04	7	73	H		agree
 p1_L04	8	36	H		agree
 p1_L04	9	11	H		agree
 p1_L04	10	13	H		agree
-p1_L04	11	75	M	B:55	differ
+p1_L04	11	75	H	was 75 M; B:55	lvn3r per-token 300-dpi read 75 (A150 75, B150 55; T17; control 9/10) (pre pos 11)
 p1_L04	12	56	H		agree
 p1_L04	13	149	H		agree
 p1_L04	14	138	H		agree
 p1_L04	15	127	H		agree
 p1_L04	16	16	H		agree
 p1_L04	17	38	H		agree
-p1_L04	18	101	M	B:108	differ
+p1_L04	18	108	H	was 101 M; B:108	lvn3r per-token 300-dpi read 108 (A150 101, B150 108; T18; control 9/10) (pre pos 18)
 p1_L04	19	111	H		agree
 p1_L04	20	2	H		agree
 p1_L05	1	1	H		agree
@@ -97,7 +97,7 @@ p1_L06	5	=sa	H		agree
 p1_L06	6	=plume	H		agree
 p1_L06	7	=oultre	H		agree
 p1_L06	8	=ce	H		agree
-p1_L06	9	6	M		agree-flagged
+p1_L06	9	6	H	was 6 M	lvn3r per-token 300-dpi read 6 (A150 6, B150 6; T07; control 9/10) (pre pos 9)
 p1_L06	10	=descripre	M	B:=escripre	differ
 p1_L06	11	=ne	H		agree
 p1_L06	12	=fauet	M	B:=fault	differ
@@ -162,7 +162,7 @@ p1_L09	11	83	H		agree
 p1_L09	12	23	H		agree
 p1_L09	13	=pour	H		agree
 p1_L09	14	25	H		agree
-p1_L09	15	65	M	B:68	differ
+p1_L09	15	68	H	was 65 M; B:68	lvn3r per-token 300-dpi read 68 (A150 65, B150 68; T01; control 9/10) (pre pos 15)
 p1_L09	16	11	H		agree
 p1_L09	17	63	H		agree
 p1_L09	18	101	H		agree
@@ -211,7 +211,7 @@ p1_L11	18	64	H		agree
 p1_L11	19	26	H		agree
 p1_L11	20	24	H		agree
 p1_L11	21	84	H		agree
-p1_L12	1	29	M	B:19	differ
+p1_L12	1	19	H	was 29 M; B:19	lvn3r per-token 300-dpi read 19 (A150 29, B150 19; T16; control 9/10) (pre pos 1)
 p1_L12	2	39	H		agree
 p1_L12	3	104	H		agree
 p1_L12	4	29	H		agree
@@ -277,7 +277,7 @@ p1_L15	4	142	H		agree
 p1_L15	5	=que	H		agree
 p1_L15	6	=souuent	M	B:=sous	differ
 p1_L15	7	=estre	M		agree-flagged
-p1_L15	8	15	M	B:25	differ
+p1_L15	8	25	H	was 15 M; B:25	lvn3r per-token 300-dpi read 25 (A150 15, B150 25; T13; control 9/10) (pre pos 8)
 p1_L15	9	25	H		agree
 p1_L15	10	10	H		agree
 p1_L15	11	14	H		agree
@@ -316,7 +316,7 @@ p1_L17	3	=cau	M		agree-flagged
 p1_L17	4	151	H		agree
 p1_L17	5	40	H		agree
 p1_L17	6	24	H		agree
-p1_L17	7	64	M	B:84	differ
+p1_L17	7	64	H	was 64 M; B:84	lvn3r per-token 300-dpi read 64 (A150 64, B150 84; T08; control 9/10) (pre pos 7)
 p1_L17	8	39	H		agree
 p1_L17	9	65	H		agree
 p1_L17	10	101	H		agree
@@ -364,7 +364,7 @@ p1_L19	15	82	H		agree
 p1_L19	16	111	H		agree
 p1_L19	17	81	H		agree
 p1_L19	18	71	H		agree
-p1_L19	19	31	M	B:81	differ
+p1_L19	19	81	H	was 31 M; B:81	lvn3r per-token 300-dpi read 81 (A150 31, B150 81; T02; control 9/10) (pre pos 19)
 p1_L19	20	84	H		agree
 p1_L20	1	39	H		agree
 p1_L20	2	23	H		agree
@@ -432,7 +432,7 @@ p1_L23	4	101	H		agree
 p1_L23	5	1	H		agree
 p1_L23	6	71	H		agree
 p1_L23	7	81	H		agree
-p1_L23	8	25	M	B:26	differ
+p1_L23	8	26	H	was 25 M; B:26	lvn3r per-token 300-dpi read 26 (A150 25, B150 26; T10; control 9/10) (pre pos 8)
 p1_L23	9	146	H		agree
 p1_L23	10	137	H		agree
 p1_L23	11	=affingé	M	A:-	gap
@@ -652,7 +652,7 @@ p1_L35	9	32	H		agree
 p1_L35	10	21	H		agree
 p1_L35	11	25	H		agree
 p1_L35	12	88	H		agree
-p1_L35	13	131	M	B:135	differ
+p1_L35	13	135	H	was 131 M; B:135	lvn3r per-token 300-dpi read 135 (A150 131, B150 135; T09; control 9/10) (pre pos 13)
 p1_L35	14	127	H		agree
 p1_L35	15	6	H		agree
 p1_L35	16	37	H		agree

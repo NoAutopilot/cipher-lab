@@ -1,4 +1,14 @@
 line	pre_pos	pre_sign	pre_conf	A6	B6	action
+p1_L04	11	75	M			lvn3r-confirmed
+p1_L04	18	101	M			lvn3r-settled
+p1_L06	9	6	M			lvn3r-confirmed
+p1_L09	15	65	M			lvn3r-settled
+p1_L12	1	29	M			lvn3r-settled
+p1_L15	8	15	M			lvn3r-settled
+p1_L17	7	64	M			lvn3r-confirmed
+p1_L19	19	31	M			lvn3r-settled
+p1_L23	8	25	M			lvn3r-settled
+p1_L35	13	131	M			lvn3r-settled
 p3_L12	12	120	H			lvnctl-corrected
 p3_L13	2	135	H			lvnctl-corrected
 p3_L15	2	85	H			lvnctl-corrected
