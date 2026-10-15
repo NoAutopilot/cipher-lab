@@ -1,0 +1,91 @@
+item	label	conf	second	note
+1	20	L	201	line end, partial
+2	25σ	L	25ρ	6 hook after 5
+3	23σ	M	23ρ	small 6 after 23
+4	6ρ	H	6σ	looped tail
+5	24+	H	x+	cross after 24
+6	10	L	610	6 consumed by 25σ
+7	28	H		plain
+8	77ρ	M	7ρ	double 7 with loop
+9	17σ	M	17ρ	7 then 6 hook
+10	6σ	M	16σ	two sixes
+11	6.	H	6	dot after
+12	28	H	28σ	plain
+13	10	H	10.	no dot
+14	nρ@s	M	12ρ@s	bar over n-like
+15	6.	M	6	dot
+16	7+	M	7	cross
+17	28	H	28σ	plain
+18	24.@n	H	24	hat and dot
+19	21	M	2+	plain
+20	1	L	1+	partial
+21	21.	H	11.	dot
+22	24ρ	H	24σ	loop
+23	20ρ@r	H	20ρ@m	v mark
+24	24+	H	24	cross
+25	4@l	H	4.@l	acute
+26	23+	H	231	cross
+27	24.@n	H	24	hat
+28	10	M	610	no 6
+29	20ρ@r	M	20σ@r	v mark loop
+30	23	H	23.	no dot
+31	10	H	610	plain
+32	10	M	610	plain
+33	23.	H	23	dot
+34	7+	H	7	cross
+35	6+	M	36+	cross
+36	10	M	610	plain
+37	3+	M	38	cross
+38	23	M	23.	no dot
+39	15	M	1	plain
+40	6.	M	6	dot
+41	32σ	M	328	6 hook
+42	6+	M	16+	cross
+43	15+	M	15+@s	cross
+44	18ρ	M	4	loop tail
+45	4@n	H	4@l	hat
+46	15+	M	15+@s	cross
+47	4@s	M	14@s	bar
+48	{bul}	M	{Bul}	lowercase bul
+49	12ρ@l	H		acute and loop
+50	10	M	610	plain
+51	24+	H	24	cross
+52	y	H	7	y shape
+53	16ρ	H	16σ	loop
+54	6.	M	6	dot
+55	y	H	7	y shape
+56	10	M	610	plain
+57	8+	H	8	cross
+58	18@n	M	14@n	hat
+59	10	M	10.	no dot
+60	14+@r	H		cross and v
+61	10	H	610	plain
+62	10	M	610	plain
+63	4@l	H	4.@l	acute
+64	23	M	23.	no dot
+65	6ρ	H	6σ	loop
+66	15.	H	15	dot
+67	18	H	1.	plain
+68	14ρ@r	M		v mark loop
+69	23	M	23.	no dot
+70	21	M	2+	plain
+71	23	M	23.	no dot
+72	23.	H	23	dot
+73	4	M	4.	plain
+74	6.	M	6	dot
+75	4@n	H	4+@n	hat
+76	3@s	H	3	bar
+77	7+	H	7	cross
+78	7σ	M	7ρ	hook
+79	7+	H	7	cross
+80	16+	M	6.@s	cross
+81	6	H	24ρ	large 6
+82	12+	M	124+	cross
+83	20ρ@r	H	20ρ@m	v mark
+84	25σ	M	25ρ	hook
+85	18	M	18@s	plain
+86	26	H	12σ	plain
+87	4@n	H	4+@n	hat
+88	6ρ	H	6σ	loop
+89	4@s	H	14@s	bar
+90	10	M	610	plain
