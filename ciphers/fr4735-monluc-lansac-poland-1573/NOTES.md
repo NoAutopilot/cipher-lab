@@ -1129,6 +1129,7 @@ does not show they can find a split where one exists.
 111/164 = 0.677 unchanged; shuffled clear (200, seed 140) mean 0.378, p95 0.399, max 0.426, 0/200 at or above (prereg keep condition met);
 f.139 control 116/333 = 0.348. Grades unchanged: c268 C 184 / M 157 / U 6 (L10:29 was already M); c172 C 83 / M 64 / U 3; key.tsv unchanged.
 Judge (fr16) still FAIL at N 333 (-1.413 vs real_p05 -0.887; non-test for this key, MONLUC-KEY).
+Checks: `decode_key.py . --check` "reading up to date" (exit 0); `align_c268.py --check` (exit 0); `score_c268.py --check` "OK c268 outputs current" (exit 0); gaps_check OK.
 Requests: openapi.bnf.fr 1. Subagents: 8 Sonnet. Cost not visible to this session.
 
 ## Remaining gaps (MONL-VB, 15 Oct 2026)
