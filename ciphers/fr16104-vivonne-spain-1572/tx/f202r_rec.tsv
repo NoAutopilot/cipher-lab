@@ -1,0 +1,33 @@
+row	codes
+L01	@ # k m 3 m o o 6 to tz d o o g x z 3 s m x # m s 6 {loop} tz o o m tz 6 s f s tz d m y m x # s tz d p z a
+L02	tz d 3 {cross} 7 # 6 o o 3 P 3 d o o p m 3 m x y m e : # g m x 3 m : g m s + : m 3 m R d o o y m x b m tz
+L03	+ {swash} m o o g x 7 # 4 m x 4 # tz 6 b y d e n m x 3 p 4 6 d tz x e : m x : s g # tz d s p d d o o m o o tz d d p #
+L04	m p 4 : d g m x m p 8 p 4 6 m t # m {loop} m d o o m o o tz d d p n @ m # tz y m @ m p 4 o 6 s p k g m x
+L05	7 # s g : m 3 Z V s m x : d g m x k tz : n d s : g m s p : R tz m V m p : o o tz x 3 d o o V 6 L
+L06	s o o 6 # @ m s k o o tz x P d b : P s tz x tz m x o o tz x f tz m p # g d 3 c m d tz tz m V m d : f z
+L07	y s e 6 o o d e s g # d o o p m # d o o n y m g e : 3 m 3 V m 4 d # tz m g s : d e n R tz s 3 d :
+L08	m o o 3 k tz : n f s tz x s p n y o m x P s tz p d s o o L d 3 R n d o o x y o m x d m tz 4 V m a :
+L09	g d s p 4 6 d tz x s a d tz m p n R y m x 4 g s p k m s p p n : # tz d p s d d p x m y o o tz :
+L10	7 # y s o o g d tz m p n m x : d g m x e 6 o o x f tz 6 y y m o o g k d o o p m g d tz n f : & y p m a g
+L11	: s 4 f b tz n s k p m s o o m 2 m 6 tz 6 @ m p # y m c y m p k m g d tz m p n y o o 3 e s tz L R
+L12	3 m : # g @ m m p y p tz s m g R R 6 m o o g 9 L d 3 H p m m p # m p k s p # 6 s @ y p m 4 8 7
+L13	y s L d 3 p m 3 m : d p R m # c o o tz x y s i y o o 3 o s tz y m m d b d o o @ m g 7 # y o m y
+L14	m p k m 2 s tz p y y d 4 o m t n s 4 b m g m g y a m x m tz 4 V m o o g f x # D d o o 1 6 m c l y a z
+L15	y m : d y e n s p k m g : m V d o o x m s o o 8 p 4 6 d tz x 7 # y o o 3 k tz : R d p & 6 d p
+L16	: m g m tz d o o tz d d tz n e d g R 3 m a m d tz L y s s e m g x m a m g s p : m k m d k tz : # @
+L17	s p 4 6 d tz x m # R n y d p m x # d tz n f tz m p s 3 d m k m y o s f d o o p m s S p m : # tz d p k to
+L18	3 d 4 d # g d tz m p n s o o 7 f # d o o n m d 6 d tz x 3 h V m d m g d tz n 2 s 6 s o g d a d @ 3 m 2 m :
+L19	# g m o o p 4 3 m x e tz 8 @ 3 m c t m p : m x n R m p R g m a g tz 4 R # d o o n m p p d tz
+L20	x a y y d 4 n tz m p k g d tz n y s s P s tz s p s : m m x tz : d 4 a tz m p k g d tz R n y
+L21	3 tz m o o 6 to S s e 8 tz g m 3 m R m j R x : d p d m m a s p : R P a m : m 3 m d : 7
+L22	1 6 s tz 6 @ a n tz m p R m p R i n y m L d o o x R s : m x 6 s o o x g m x e d g o o d tz x y o s c 6 a b
+L23	c s g n 3 m x m x m 6 @ 2 m o o g m p n s tz p d tz a tz m p # s p k @ 3 m e tz p m # 3 m 2 s a 6
+L24	a s tz x # g s tz : # m 2 m p # a y y d p y m o o g g s tz : n m p o 6 s p k g m x tz 6 d m g d tz n
+L25	m V y s 2 s tz p 3 m d b d tz 3 m V m 2 m # g d 3 c m s tz m p 3 m o s tz g m o o p 4 f c 3
+L26	tz d tz L 3 p m @ d tz 4 V s j R s y o s b m x m tz d m g d tz n 3 m y o m x g n # tz y m L
+L27	# d o o x d o o c L y m 2 d tz p 4 d 6 s c 6 o o x c s g n 7 # 8 o o m g : @ m 2 m x : m 6 3 d tz 6 g s
+L28	a 6 k g d tz n s : : p k tz n tz d p V m g y o s R 6 tz s m g m # m 3 m y s L d 3 p m k m o : d p R x
+L29	7 # @ m o o m j R g m o e x 3 m d c d d tz n m 7 m p R @ m R 6 m x 9 P s tz R d p d k m o y d b
+L30	P : m j R e tz p tz m 3 m d m p c g m a s j d tz L d m 6 d p m 2 m j R o o m 6 d tz n x m g o o tz L
+L31	s : m x s p p s tz L m x n i # d x R n m g R d o o n y m 2 d 3 m p s : 9 m x f 4 m p d 9 tz : H z
+L32	: 3 m d c m g m L g tz m V s o o 6 to 2 d 3 m p d to c m p d m p n s a d tz L : m g # 8 tz p s g 8 tz L
