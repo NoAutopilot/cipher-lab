@@ -521,6 +521,9 @@ def warnings_for(role, signal, own_id=_UNSET):
         if named and own_id not in named:
             w.append(f"WARNING: role names {named[0]}, not this session's own id ({own_id}) -- a role field is "
                       f"self-referential; check before appending (DECODE-ACCESS, 26 Sept 2026)")
+    if re.search(r"^(claim|halfway|check-in|done)\b", sig, re.I) and not re.search(r"\busage:\s*(not readable here|\S+\s+(allowed_warning|allowed|rejected))", sig, re.I):
+        w.append("WARNING: no usage self-report -- end every claim/halfway/check-in/done line with 'usage: <window> <status> by "
+                  "get_session, resets HH:MM UTC' (owner, 15 Oct 2026; .claude/briefs/README.md common tail)")
     if re.search(r"please change|still says", sig, re.I) and not COMMIT_ID_RE.search(sig):
         w.append("WARNING: 'please change'/'still says' with no commit id -- name the commit you read the file "
                   "at (`git log -1 --format=%h -- <path>`) or grep the exact old text, so a reader can tell a "

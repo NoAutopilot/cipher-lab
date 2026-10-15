@@ -4,7 +4,7 @@ The owner's decision (27 Sept 2026, about 20:05 UTC): one orchestrator, on the o
 second account runs what it is handed. The two accounts talk only through the repository: the orchestrator writes
 `WORK-QUEUE.tsv` rows tagged `other`; the dispatcher on the second account polls that file every hour, spawns each
 row as a worker on its own account, claims the row, and posts one ROOM.md line. Workers post their claim, halfway
-and done lines in ROOM.md as usual; the orchestrator reads them and ledgers by session id.
+and done lines in ROOM.md as usual; the orchestrator reads them and ledgers by session id. Every ROOM line that marks a push (claim, halfway, check-in, done) ends with `usage: <window> <status> by get_session, resets HH:MM UTC` (owner, 15 Oct 2026; README common tail).
 
 ## Why a standing session (fixed 27 Sept 2026, 21:4x UTC)
 

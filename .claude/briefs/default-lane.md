@@ -12,7 +12,7 @@ rule), on cap or box, or when the backlog is spent. Good-citizen rule and the CL
 Armstrong and Debosnys are off limits (owner sorters / private).
 
 0. `git fetch origin && git checkout -B main origin/main`; `python3 tools/room.py --start`; `date -u`. If your WORK-QUEUE row is still
-   `queued`, `python3 tools/work_queue.py --claim <job_id> --session <your session id>` and push. ROOM claim line with box end time.
+   `queued`, `python3 tools/work_queue.py --claim <job_id> --session <your session id>` and push. ROOM claim line with box end time. Every ROOM line that marks a push (claim, halfway, check-in, done) ends with `usage: <window> <status> by get_session, resets HH:MM UTC` (owner, 15 Oct 2026; README common tail).
 0a. Push-check gate (owner, 5 Oct 2026: "each do that full worker update / check push to github before they dive into new work"):
    if WORK-QUEUE.tsv has a SESSION-SWEEP-<your account> row that is not `done`, spawn NO worker yet. Post one ROOM line
    "waiting on SESSION-SWEEP-<account>", then send_later 15 min and re-check (at most 90 min; after that, proceed and say so).
