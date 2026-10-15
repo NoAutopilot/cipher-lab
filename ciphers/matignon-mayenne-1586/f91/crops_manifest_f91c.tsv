@@ -1,0 +1,55 @@
+crop	line_in_pass	box_native_rotated_xyxy	deskew_deg	band_rows	band_height_px	crop_height_px	one_line_by_eye	note
+ciC_L01_s1.jpg	C1	1480,1075,3080,1270	-1.35	64-181	117	195	yes	
+ciC_L01_s2.jpg	C1	2980,1075,4580,1270	-1.35	64-181	117	195	yes	
+ciC_L02_s1.jpg	C2	1480,1156,3080,1394	-1.35	145-305	160	238	yes	
+ciC_L02_s2.jpg	C2	2980,1156,4580,1394	-1.35	145-305	160	238	yes	
+ciC_L03_s1.jpg	C3	1480,1274,3080,1469	-1.35	263-380	117	195	yes	
+ciC_L03_s2.jpg	C3	2980,1274,4580,1469	-1.35	263-380	117	195	yes	
+ciC_L04_s1.jpg	C4	1480,1360,3080,1576	-1.35	349-487	138	216	yes	
+ciC_L04_s2.jpg	C4	2980,1360,4580,1576	-1.35	349-487	138	216	yes	
+ciC_L05_s1.jpg	C5	1480,1458,3080,1686	-1.35	447-597	150	228	yes	
+ciC_L05_s2.jpg	C5	2980,1458,4580,1686	-1.35	447-597	150	228	yes	
+ciC_L06_s1.jpg	C6	1480,1576,3080,1790	-1.35	565-701	136	214	yes	
+ciC_L06_s2.jpg	C6	2980,1576,4580,1790	-1.35	565-701	136	214	yes	
+ciC_L07_s1.jpg	C7	1480,1679,3080,1906	-1.35	668-817	149	227	yes	
+ciC_L07_s2.jpg	C7	2980,1679,4580,1906	-1.35	668-817	149	227	yes	
+ciC_L08_s1.jpg	C8	1480,1798,3080,1993	-1.35	787-904	117	195	yes	
+ciC_L08_s2.jpg	C8	2980,1798,4580,1993	-1.35	787-904	117	195	yes	
+ciC_L09_s1.jpg	C9	1480,1885,3080,2090	-1.35	874-1001	127	205	yes	
+ciC_L09_s2.jpg	C9	2980,1885,4580,2090	-1.35	874-1001	127	205	yes	
+ciC_L10_s1.jpg	C10	1480,1970,3080,2190	-1.35	959-1101	142	220	yes	
+ciC_L10_s2.jpg	C10	2980,1970,4580,2190	-1.35	959-1101	142	220	yes	
+ciC_L11_s1.jpg	C11	1480,2087,3080,2301	-1.35	1076-1212	136	214	yes	
+ciC_L11_s2.jpg	C11	2980,2087,4580,2301	-1.35	1076-1212	136	214	yes	
+ciC_L12_s1.jpg	C12	1480,2202,3080,2411	-1.35	1191-1322	131	209	yes	
+ciC_L12_s2.jpg	C12	2980,2202,4580,2411	-1.35	1191-1322	131	209	yes	
+ciC_L13_s1.jpg	C13	1480,2309,3080,2450	-1.35	1298-1400	102	141	yes	ends in clear (Oultre que ... de Haultfort)
+ciC_L13_s2.jpg	C13	2980,2309,4580,2450	-1.35	1298-1400	102	141	yes	ends in clear (Oultre que ... de Haultfort)
+ciF_L01_s1.jpg	F1	5230,2640,6830,2794	-1.55	5-115	110	154	yes	opens in clear (forcer a l en dessouz de bos ennemie)
+ciF_L01_s2.jpg	F1	6530,2640,8130,2794	-1.55	5-115	110	154	yes	opens in clear (forcer a l en dessouz de bos ennemie)
+ciF_L02_s1.jpg	F2	5230,2683,6830,2902	-1.55	82-223	141	219	yes	
+ciF_L02_s2.jpg	F2	6530,2683,8130,2902	-1.55	82-223	141	219	yes	
+ciF_L03_s1.jpg	F3	5230,2782,6830,2977	-1.55	181-298	117	195	yes	
+ciF_L03_s2.jpg	F3	6530,2782,8130,2977	-1.55	181-298	117	195	yes	
+ciF_L04_s1.jpg	F4	5230,2878,6830,3083	-1.55	277-404	127	205	yes	
+ciF_L04_s2.jpg	F4	6530,2878,8130,3083	-1.55	277-404	127	205	yes	
+ciF_L05_s1.jpg	F5	5230,2975,6830,3184	-1.55	374-505	131	209	yes	
+ciF_L05_s2.jpg	F5	6530,2975,8130,3184	-1.55	374-505	131	209	yes	
+ciF_L06_s1.jpg	F6	5230,3079,6830,3277	-1.55	478-598	120	198	yes	
+ciF_L06_s2.jpg	F6	6530,3079,8130,3277	-1.55	478-598	120	198	yes	
+ciF_L07_s1.jpg	F7	5230,3159,6830,3389	-1.55	558-710	152	230	yes	
+ciF_L07_s2.jpg	F7	6530,3159,8130,3389	-1.55	558-710	152	230	yes	
+ciF_L08_s1.jpg	F8	5230,3271,6830,3468	-1.55	670-789	119	197	yes	
+ciF_L08_s2.jpg	F8	6530,3271,8130,3468	-1.55	670-789	119	197	yes	
+ciF_L09_s1.jpg	F9	5230,3366,6830,3569	-1.55	765-890	125	203	yes	ends in clear (J ay)
+ciF_L09_s2.jpg	F9	6530,3366,8130,3569	-1.55	765-890	125	203	yes	ends in clear (J ay)
+ciF_L10_s1.jpg	-	5230,3459,6830,3670	-1.55	858-991	133	211	yes	clear French only (Par deca ... Montbrault), not passed
+ciF_L10_s2.jpg	-	6530,3459,8130,3670	-1.55	858-991	133	211	yes	clear French only (Par deca ... Montbrault), not passed
+ciF_L11_s1.jpg	-	5230,3566,6830,3766	-1.55	965-1087	122	200	yes	clear French only (fortifier ...), not passed
+ciF_L11_s2.jpg	-	6530,3566,8130,3766	-1.55	965-1087	122	200	yes	clear French only (fortifier ...), not passed
+ciF_L12_s1.jpg	F12	5230,3668,6830,3862	-1.55	1067-1183	116	194	yes	clear French then cipher tail
+ciF_L12_s2.jpg	F12	6530,3668,8130,3862	-1.55	1067-1183	116	194	yes	clear French then cipher tail
+ciF_L13_s1.jpg	F13	5230,3762,6830,3956	-1.55	1161-1277	116	194	yes	
+ciF_L13_s2.jpg	F13	6530,3762,8130,3956	-1.55	1161-1277	116	194	yes	
+ciF_L14_s1.jpg	F14	5230,3851,6830,4048	-1.55	1250-1369	119	197	yes	ends in clear (Ensuyvant Sire j ay faict)
+ciF_L14_s2.jpg	F14	6530,3851,8130,4048	-1.55	1250-1369	119	197	yes	ends in clear (Ensuyvant Sire j ay faict)
