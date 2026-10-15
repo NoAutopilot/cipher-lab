@@ -1,0 +1,35 @@
+# COL26-LM length-matched score; lm tools/data/fr17; window 8; class = top 60 fr17 letter pairs (V excluded)
+# class: ES RE DE EN LE OV VE QV ON ER IE NT TE VR ET AV VO VS AN AI SE CE ME EV ST OI NE IS LA IN VI AR IT TR IL IR CO PA RA NS RO RI PO TI EL SI MA EM SS PR LL LI IO ND SO PE AS OR VT DI
+# held-out occurrences: 16:43 28:18 33:16 36:17 51:112 11:86 81:28
+## G1 full n (code value kind accept rank margin_bits nalt)
+16	se	true	reject	5	-53.0	60
+16	la	false	reject	31	-196.9	60
+16	ux	false	reject	61	-855.8	60
+16	ez	false	reject	57	-626.0	60
+16	de	false	accept	1	+91.5	60
+28	la	true	accept	1	+35.4	60
+28	se	false	reject	4	-7.6	60
+28	ux	false	reject	58	-246.4	60
+28	ez	false	reject	60	-278.6	60
+28	de	false	accept	3	+7.6	60
+33	ux	true	reject	39	-105.9	60
+33	se	false	reject	29	-77.4	60
+33	la	false	reject	34	-91.4	60
+33	ez	false	reject	48	-147.7	60
+33	de	false	reject	6	-28.0	60
+36	ez	true	reject	61	-266.7	60
+36	se	false	reject	14	-52.4	60
+36	la	false	reject	4	-23.3	60
+36	ux	false	reject	35	-114.2	60
+36	de	false	reject	6	-29.8	60
+51	de	true	accept	1	+323.0	60
+51	se	false	reject	11	-157.0	60
+51	la	false	reject	6	-37.6	60
+51	ux	false	reject	60	-2003.6	60
+51	ez	false	reject	61	-2109.4	60
+G1: true accepted 2/5, false rejected 18/20 -> FAIL
+G2 at n=86 (target 11): mean true acceptance 0.400, mean false acceptance 0.107 -> FAIL
+G2 at n=28 (target 81): mean true acceptance 0.410, mean false acceptance 0.113 -> FAIL
+## targets
+11=re: NON-TEST (gate G1 failed); not scored
+81=me: NON-TEST (gate G1 failed); not scored

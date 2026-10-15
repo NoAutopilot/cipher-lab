@@ -66,7 +66,7 @@ def main():
     with tempfile.TemporaryDirectory() as tmp:
         f23, c50, sibs = c1.base_jobs(tmp)
         cfgjobs = [{k: v for k, v in j.items() if k != 'name'} for j in [f23] + sibs]
-        cw = dk.Crossword(T, cfgjobs, dk.lm_load(LM), window=8)
+        cw = dk.Crossword(T, cfgjobs, dk.lm_load(os.path.join(ROOT, LM)), window=8)
     n = {c: len(cw.occ(c)) for c, _ in CONTROL + TARGETS}
     out.append('# held-out occurrences: ' + ' '.join(f'{c}:{n[c]}' for c in n))
     out.append('## G1 full n (code value kind accept rank margin_bits nalt)')

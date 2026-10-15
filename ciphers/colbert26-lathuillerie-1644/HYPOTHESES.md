@@ -69,3 +69,9 @@ interlinear/c20c21_word_wp_pool.py; outputs interlinear/c20c21_word_wp_pool_out.
 | hypothesis | control | target | verdict |
 |---|---|---|---|
 | 20 = i (word-level pairing, pooled held-out c33 + c51 + c63; c62 excluded, instrument failed) | power rule on the pre-DA1-COL C-code pool (c33 + c63, 47/48 occ, hit 0.32 vs Control W 0.12): power at N 10 = 0.163 (c33 p1), 0.120 (c33 p2) | not scored (no c51 pairing made) | TOO-SHORT at pooled N 10 (power < 0.5); ~25 needed, 10-11 exist; not a negative |
+
+## COL26-LM, 15 Oct 2026: 11 = re, 81 = me, length-matched window score (third attempt)
+
+| hypothesis | control | target | verdict |
+|---|---|---|---|
+| 11 = re, 81 = me (c50 anchored-segment candidates, COL26-KEY) | G1 known-answer: five 2-letter C codes vs the 60 commonest fr17 pairs, held-out streams: true 2/5 accepted, planted false 18/20 rejected (gate >= 4/5 and >= 18/20); G2 at n 86 / 28: true 0.400 / 0.410 | not scored | CONTROL FAIL; untested-by-this-tool (third instrument after COL26-KEY and COL26-1181 --try value-class 1/5): retired for this hypothesis, not refuted; reopens only with a different instrument or new material (PREREG-COL26-LM.md, siblings/c_lm_len_out.txt) |
