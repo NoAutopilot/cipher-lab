@@ -9,14 +9,14 @@ Family A, cells K04|K12 (leads face clear n, the 15 of MONL-K04TRY):
 - controls, K04 facing clear d, bands not used by MONL-CTL (3): L14:14 L23:16 L25:17
 - references, K12 facing clear n (2): L12:8 L14:13
 Family B, cells K14|K37 (leads: K14 facing clear s; L01-L05 tokens left out, their crops need a fourth request):
-- leads (5, weakest --try gain first; L21:7 dropped, see Counts): L08:6 L08:22 L15:11 L11:20 L24:10
+- leads (6, weakest --try gain first): L08:6 L08:22 L15:11 L11:20 L24:10 L21:7
 - controls, K14 facing clear p (2): L12:9 L17:7
 - references, K37 facing clear s (2): L11:5 L21:18
 Family C, cells K40|K41 and K45|K39 (MONL-L21's leads plus L12:21, a fourth K40 facing z found while choosing tiles):
 - leads K40|K41 (4): L12:21 (faces z) L22:6 (t) L24:29 (z) L25:16 (z); leads K45|K39 (2): L24:3 (o) L24:16 (u)
 - references K41 facing a (2): L21:13 L24:26; K39 facing u (2): L13:13 L18:25
 - no in-band negative control exists: no K40 faces y and no K45 faces m anywhere in L06-L25.
-Counts: 21 + 10 + 10 = 41 -> L21:7 is dropped to stay at 40 (one call per sort). Final: Family B leads 5.
+Counts: 20 + 10 + 10 = 40 (one call per sort). (Correction made before any run: a first count read 41 and dropped L21:7; the true count is 40, so L21:7 stays.)
 
 ## Sorts
 Two Sonnet calls, A and B (B lists the tiles in reverse order), crop paths and montages only; no value, reading, clear text, current label,
