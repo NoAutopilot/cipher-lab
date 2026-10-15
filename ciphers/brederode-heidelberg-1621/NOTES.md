@@ -148,3 +148,96 @@ which cannot hold; named as the next row.
 **Status: open.** Next row for the parent: scan 375 second witness (tools/iiif_lines.py crops, two blind Sonnet readers on the numeral
 lines, one reconciliation, per-unit agreement with ciphertext.tsv; no reading), cap ~USD 5 (4.2 priced + margin); then the sibling
 screen for pool size (Remaining gaps).
+
+## HEID-1621E (15 Oct 2026, 19:11-19:2x UTC by date -u, account 2, Opus; for the orchestrator, owner account)
+Brief: `.claude/briefs/runs/2026-10-15-acct4-depth-steps-2.md`, JOB HEID-1621E. PREREG `heid1621e/PREREG-HEID1621E.md` pushed
+(11f2aebcf) before design_prior and before any fetch; sheet calls `heid1621e/sheetcalls.txt` pushed (91baf6e8f) before the sheet key was
+opened. Requests: **service.archief.nl 130** (1 METS + 128 scans at 700 px + scan 58 at 1200 px), all HTTP 200, take/release lines in
+ROOM.md; **www.nationaalarchief.nl 1** (the 1.01.02 EAD, `download/xml`, 22,724,926 bytes, sha256 049dfb73...dccf, scratch only);
+**resources.huygens.knaw.nl 13** (8 searches in source 5, 1 pages.json, 4 OCR pages), all 200. No image committed; sha1s in
+`images/manifest.json` (`heid_6021e`); `heid1621e/regen_heid1621e.sh` re-derives scans, sheets and the sheet key (cmp check: reproduces).
+No decode, no key edit, no reading.
+
+### (1) Design prior and key files on disk
+`python3 tools/design_prior.py --no-write heid1621e/units_pairletter.txt heid1621e/units_numeral.txt` (45 units from ciphertext.tsv, M):
+
+    units_pairletter.txt: 45 tokens, 30 distinct, inventory mixed; references at this N: 249
+      multi-sign (homophonic/nomenclator/syllabary) d=0.07 envelope=0.2 null_p05=0.08 -> plausible
+      mixed (partial table)  d=0.42 envelope=2.56 null_p05=0.33 -> not above null
+      letter-for-letter      d=0.48 envelope=0.69 null_p05=0.24 -> not above null
+      code                   d=0.56 envelope=2.07 null_p05=0.73 -> plausible
+      shuffled-input false-positive rate: 0.110
+    units_numeral.txt: 45 tokens, 25 distinct
+      multi-sign d=0.08 -> not above null; letter-for-letter d=0.21 -> plausible; mixed d=0.34 -> plausible; code d=0.76 -> plausible
+      shuffled-input false-positive rate: 0.120
+
+Reading: at N=45 the prior does not discriminate (three or four classes "plausible" under each tokenisation, false-positive rate 0.11-0.12,
+and the verdicts flip with the tokenisation). It licenses nothing beyond the HEID-1621 structural lead (word-level pair+letter units).
+KEY-OFFICES.tsv / KEY-DESIGN.tsv: **no States General, Palatinate-mission, Heidelberg or Brederode key of 1618-1625 on file.** In-window
+rows are trew-posthius-1614-18 (a Palatine physician's alphabet substitution, not an office key) and riksarkivet-r4282-1628 (Swedish,
+1628); the nearest States-General row is vanbeuningen-dewitt-1657 (36 years later). The oldenbarnevelt folder's DECODE key lists
+(Munich KAA 4591, Marburg 4 d) are blanket-dated Bavarian/Hessian holdings, none an SG key.
+
+### (2) Pool screen: the rest of inv. 6021 at stride 3
+Scans 4, 10, ..., 358 and 400, ..., 802 (128 scans, 4 mod 6) on 15 sheets (SHEET_SCANS=9, seed 16215, the OBRED-6019/6020/6021 disk
+controls); one reader, this worker's eye. **Controls 45 of 45 placed correctly** (checked mechanically against `heid1621e/sheetkey.json`);
+no sheet is a non-test. With OBRED-6021 (1 mod 6) and HEID-1621B (361-397 at stride 1), inv. 6021 is now screened at stride 3 throughout.
+Per-scan calls in `heid1621e/screen.tsv`.
+- **One hit: scan 58** (sheet 02 tile K; re-looked at 1200 px, M). A French text, both pages, in one hand, no address or signature on
+  this opening, carrying numeral code groups inside the prose: two-digit groups in dotted runs ("14.29.42.191 50.56.22", "13.42.60",
+  "22.31.34 13.42.60", "8.43.44.29.22", "49.43.34.13") and three- to four-digit standalone numbers where names would stand ("dans les 426",
+  "1684", "2436 represente aux 1870", "2722", "1458", "1897", "1877", "2763", "2795", "1698"). Clear words around them name "le Conte de
+  Mansfeld", "le Prince Palatin", "l'Empereur", "le Duc de Baviere", "la dispensation du mariage", "Glatz" (all M, eye at 1200 px). **The
+  layout is not the Brederode pair+letter system** (no consecutive pairs, no trailing letters; two-digit groups up to about 60 plus
+  three/four-digit name codes), so it does not pool with the 13 Aug 1621 block; it is a separate 1621 French cipher text in the same liasse
+  (likely an enclosure or copy sent by Brederode; sender, recipient and date not read). Nothing transcribed or decoded.
+- Every other scan (127): Dutch letters to the States General with P. Brederode closes and paraphs, address leaves with red seals, French,
+  German, Latin and Italian copies and extracts ("Copie translaat" Feb 1622 on scan 592, "Extract ..." headings), a numbered list down a margin (scan
+  52), a money column (scan 106), a few figures in a prose line (scan 208); no numeral-code block, key table, interlinear decipherment or figure postscript at sheet size.
+- **The 17 Sept 1621 letter that the edition calls "Gedeeltelijk in code" (below) was not seen** on any stride-3 scan; it may sit on one
+  of the two unscreened scans in each run of three, or carry a block small enough to escape a 525 px tile.
+- Limits: stride 3 overall (two scans in three of 1-805 not looked at outside 361-397); 700 px tiles on sheets read at about 2,000 px, so a
+  block of a dozen groups or fewer inside prose can escape; one reader.
+
+### (3) Key and sibling candidates (no scans)
+Full table in `heid1621e/key_candidates.tsv`. Searches: the NA 1.01.02 EAD (28,573 component records, parsed by script for sleutel /
+cijfer / cyfer / chiff / ontcijf / decifr / dechiff / cipher / gecodeerd / in code / ziffer, 72 hits, one in 1618-1625); Resolutien SG NR 5
+full text for cijfer (3), cijfers (1, index), cijfercode (5), sleutel (2, warehouse keys), gedechiffreerd (0), dechiffreren (0), code (6),
+ciffer (0); pp. 82, 275, 295, 447 read (OCR html).
+- **Sibling in code, same liasse:** Resolutien SG NR 5 p. 295, 28 Sept 1621, res. 1879b: "Brederode, dd. Heidelberg 17 sept.", note b
+  "S.G. 6021 (orig.). Gedeeltelijk in code." A second Brederode letter partly in code in inv. 6021 (digitised) -- the pool the brief asked
+  for, located by the edition but not yet by scan. (p. 275, res. 1730c: Brederode 27 Aug 1621, 6021, no code noted.)
+- **SG office code, 1621:** p. 82, res. 467: the SG letter to Joachimi and Randwijck (envoys in Germany) -- "Het gedeelte betreffende de
+  landgraaf van Hessen en de graaf van Mansfelt zal men in cijfercode stellen"; note b "S.G. 6055 (minuut, met code)". Inv. 6055 (Lias
+  Duitsland, 1621 tweede deel): **not digitised** (no EAD dao).
+- **Cipher letter with its decipherment, 1622:** p. 447, res. 2931: Mansfelt, Hagenau 13 March 1622, note a "S.G. 6056 (orig. ;
+  gedeeltelijk in cijfer, met de oplossing)". Inv. 6056 (Lias Duitsland 1622): **not digitised**. Whether it shares either 6021 system is
+  unknown.
+- **Key leaf:** inv. 12578.1, "Sleutel geheimschrift 'Rangh van de grootte tot Constantinopelen ...'" (1618-1622), not digitised -- the only
+  key leaf of 1618-1625 in the 1.01.02 EAD; Haga's Constantinople code (res. 1644a, the same day as this letter's receipt, "met een
+  cijfercode"), a different post.
+- **Correction:** inv. 6025 is "Liassen Agent Aitzema" (Hanse towns, 1617-1625), not Lias Duitsland as the HEID-1621D Escalation line said;
+  Lias Duitsland for 1621-1622 is inv. 6054 / 6055 / 6056 (not digitised). Later Brederode liassen: 6022 (1623-1626, 595 scans), 6023
+  (1627-1631, 536), 6024 (1632-1637, 470), all digitised (titles only here).
+- No Resolutien entry names a decipherment ("ontcijferd", "gedechiffreerd", "oplossing") of a Brederode letter in 1621-1622.
+
+**Status: open.** Next row for the parent: find the 17 Sept 1621 letter in inv. 6021 (it should follow the 27 Aug letter; a stride-1
+700 px screen of the stretch after scan 397 up to the first Oct 1621 dateline, about 60-80 scans, ~USD 2, then its block at 1200 px and
+native), which is the only route to a second block in the same code; then the scan 375 witness (~USD 5). The scan 58 French text is a
+separate target candidate (its own intake: sender, date, check-solved), not pool material for this code. Inv. 6055/6056 are copy-order
+candidates only if a later step needs the office code or the 1622 decipherment.
+
+## Remaining gaps (HEID-1621E, 15 Oct 2026)
+Read so far: 0 of 45 units (nothing decoded; spec test 1 undecided; transcription all M)
+- the 45 units themselves - blocker: too-short; test 1 C2 rank-match control 0.010 vs gate 0.50 at N=45 (HYPOTHESES.md); design_prior non-discriminating at N=45 (fp 0.11); next: locate the 17 Sept 1621 letter "Gedeeltelijk in code" in inv. 6021 (Resolutien NR 5 p. 295) by a stride-1 screen after scan 397, ~$2
+- transcription control (scan 375 second witness vs ciphertext.tsv) - blocker: not-attempted; priced above HEID-1621D's cap; next: iiif_lines crops + two blind Sonnet readers + one reconciliation, ~$5
+
+## Escalation (HEID-1621E, 15 Oct 2026)
+- [ ] siblings: the 17 Sept 1621 Brederode letter "Gedeeltelijk in code" (res. 1879b, S.G. 6021) not yet located by scan; inv. 6021 screened at stride 3 (HEID-1621E + OBRED-6021) and 361-397 at stride 1, one hit of another system (scan 58); next: stride-1 screen after scan 397, ~$2
+- [ ] clear-pages: the clear prose around the block and the edition's summaries of neighbouring letters, once a pool exists
+- [x] known-keys: design_prior run (non-discriminating at N=45); KEY-OFFICES/KEY-DESIGN have no SG/Palatinate key of 1618-1625; NA EAD key leaf 12578.1 is Haga's Constantinople code (not digitised); SG office code minute inv. 6055 and Mansfelt 1622 decipherment inv. 6056 located, not digitised (HEID-1621E)
+- [x] print: Resolutien SG NR 5 read (HEID-1621D, HEID-1621E), no decipherment of a Brederode letter; no edition of his letters (HEID-1621C)
+- [n/a] key-rebuild: no decipherment, gloss or key sheet of this system located to rebuild from
+- [ ] image-check: scan 375 at native size (the second witness) not yet seen
+- [x] retry: the Huygens host answered (HEID-1621D, HEID-1621E, all 200)
+Verdict: keep going: 1 internal gaps; cheapest next: stride-1 screen for the 17 Sept 1621 letter, ~$2
