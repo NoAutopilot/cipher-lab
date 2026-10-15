@@ -1,0 +1,280 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "p242_col5_L01.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0p26q03nv9x/full/3200,/0/default.jpg",
+   "source_file": "img886_w3200.jpg (scratchpad, not committed)",
+   "box": [
+    1850,
+    420,
+    2005,
+    992
+   ],
+   "lines_in_crop": 13,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     22,
+     66,
+     110,
+     154,
+     198,
+     242,
+     286,
+     330,
+     374,
+     418,
+     462,
+     506,
+     550,
+     594,
+     638,
+     682,
+     726,
+     770,
+     814,
+     858,
+     902
+    ]
+   },
+   "date": "15 Oct 2026",
+   "sha1": "9b9dade8dad666dee0f6a7d52cc692a40c38bc64"
+  },
+  {
+   "crop": "p242_col5_L02.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0p26q03nv9x/full/3200,/0/default.jpg",
+   "source_file": "img886_w3200.jpg (scratchpad, not committed)",
+   "box": [
+    1850,
+    992,
+    2005,
+    1344
+   ],
+   "lines_in_crop": 8,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     22,
+     66,
+     110,
+     154,
+     198,
+     242,
+     286,
+     330,
+     374,
+     418,
+     462,
+     506,
+     550,
+     594,
+     638,
+     682,
+     726,
+     770,
+     814,
+     858,
+     902
+    ]
+   },
+   "date": "15 Oct 2026",
+   "sha1": "f76086372d961d4fceb6848c672cbc7fe956a6c2"
+  },
+  {
+   "crop": "p242_col6_L01.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0p26q03nv9x/full/3200,/0/default.jpg",
+   "source_file": "img886_w3200.jpg (scratchpad, not committed)",
+   "box": [
+    1985,
+    420,
+    2145,
+    992
+   ],
+   "lines_in_crop": 13,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     22,
+     66,
+     110,
+     154,
+     198,
+     242,
+     286,
+     330,
+     374,
+     418,
+     462,
+     506,
+     550,
+     594,
+     638,
+     682,
+     726,
+     770,
+     814,
+     858,
+     902
+    ]
+   },
+   "date": "15 Oct 2026",
+   "sha1": "fca521324f410df8dc43c3cd3fda3960030b591d"
+  },
+  {
+   "crop": "p242_col6_L02.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0p26q03nv9x/full/3200,/0/default.jpg",
+   "source_file": "img886_w3200.jpg (scratchpad, not committed)",
+   "box": [
+    1985,
+    992,
+    2145,
+    1344
+   ],
+   "lines_in_crop": 8,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     22,
+     66,
+     110,
+     154,
+     198,
+     242,
+     286,
+     330,
+     374,
+     418,
+     462,
+     506,
+     550,
+     594,
+     638,
+     682,
+     726,
+     770,
+     814,
+     858,
+     902
+    ]
+   },
+   "date": "15 Oct 2026",
+   "sha1": "dc424ace10b0702505a3e05adb54b81da27fd18e"
+  },
+  {
+   "crop": "p242_col4_L01.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0p26q03nv9x/full/3200,/0/default.jpg",
+   "source_file": "img886_w3200.jpg (scratchpad, not committed)",
+   "box": [
+    1712,
+    420,
+    1858,
+    992
+   ],
+   "lines_in_crop": 13,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     22,
+     66,
+     110,
+     154,
+     198,
+     242,
+     286,
+     330,
+     374,
+     418,
+     462,
+     506,
+     550,
+     594,
+     638,
+     682,
+     726,
+     770,
+     814,
+     858,
+     902
+    ]
+   },
+   "date": "15 Oct 2026",
+   "sha1": "c61d38d61b570a86e8cb5c4a67f2b7b0403a6d0e"
+  },
+  {
+   "crop": "p242_col4_L02.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0p26q03nv9x/full/3200,/0/default.jpg",
+   "source_file": "img886_w3200.jpg (scratchpad, not committed)",
+   "box": [
+    1712,
+    992,
+    1858,
+    1344
+   ],
+   "lines_in_crop": 8,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     22,
+     66,
+     110,
+     154,
+     198,
+     242,
+     286,
+     330,
+     374,
+     418,
+     462,
+     506,
+     550,
+     594,
+     638,
+     682,
+     726,
+     770,
+     814,
+     858,
+     902
+    ]
+   },
+   "date": "15 Oct 2026",
+   "sha1": "580e1b3cf7cdb328af74595e14d7a9d57c7958ff"
+  }
+ ],
+ "frame_sha1": "7de7ebce52ec8949465aae9038e13fb40de105c1",
+ "frame_size": [
+  3200,
+  2157
+ ],
+ "note": "CLIN-SIB2 (15 Oct 2026): B.147 p.242 cols 4-6, Image 886 fetched at 3200 px (browser UA + Referer https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/886); crops NOT committed (lane rule). Regen: fetch the URL above, then for (col,region) in (4,1712,420,146,940) (5,1850,420,155,940) (6,1985,420,160,940): python3 tools/iiif_lines.py --image img886_w3200.jpg --region R --out p242c46_cols --prefix p242_colN --centres 22,66,...,902 (every 44) --lines-per-crop 13 --overlap 40"
+}

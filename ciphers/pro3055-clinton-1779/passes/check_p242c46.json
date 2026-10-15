@@ -1,0 +1,147 @@
+{
+ "source": "H-1649 Image 886 (B.147 p.242 cols 4-6) at 3200 px, columns cut by tools/iiif_lines.py (images/h1649/p242c46_cols)",
+ "key": "title1778_reading.txt as printed (variant a) GATED; variant (b) reported",
+ "cells_letter_and_word": 74,
+ "cell_grades": {
+  "H": 74
+ },
+ "B2_variant_a_GATED": {
+  "runs_ge3": 14,
+  "hits": 14,
+  "share": 1.0,
+  "can_differ": 1.0,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "seed": 123,
+   "mean": 0.38,
+   "p95": 2,
+   "max": 4
+  },
+  "gate": "PASS",
+  "decoded_runs": [
+   {
+    "start": "col4:2",
+    "cells": "8-2 6-7 7-6",
+    "decoded": "fly",
+    "hit": true,
+    "at_letter": 79
+   },
+   {
+    "start": "col4:6",
+    "cells": "5-4 6-6 4-3",
+    "decoded": "has",
+    "hit": true,
+    "at_letter": 85
+   },
+   {
+    "start": "col4:13",
+    "cells": "5-4 6-6 4-3",
+    "decoded": "has",
+    "hit": true,
+    "at_letter": 85
+   },
+   {
+    "start": "col4:16",
+    "cells": "5-3 5-4 6-5 11-2 14-3 6-3",
+    "decoded": "thrown",
+    "hit": true,
+    "at_letter": 104
+   },
+   {
+    "start": "col4:22",
+    "cells": "5-3 5-4 5-5",
+    "decoded": "the",
+    "hit": true,
+    "at_letter": 44
+   },
+   {
+    "start": "col5:1",
+    "cells": "16-4 5-5 13-20 5-5 4-1",
+    "decoded": "rebel",
+    "hit": true,
+    "at_letter": 113
+   },
+   {
+    "start": "col5:6",
+    "cells": "7-1 1-5 1-6 7-6",
+    "decoded": "army",
+    "hit": true,
+    "at_letter": 119
+   },
+   {
+    "start": "col5:11",
+    "cells": "5-3 5-4 5-5",
+    "decoded": "the",
+    "hit": true,
+    "at_letter": 44
+   },
+   {
+    "start": "col5:14",
+    "cells": "6-1 6-5 6-4 6-6 4-4 5-5 4-3 4-4",
+    "decoded": "greatest",
+    "hit": true,
+    "at_letter": 130
+   },
+   {
+    "start": "col5:22",
+    "cells": "21-1 21-2 12-2 5-2 18-17 4-3 4-2 1-11 1-12",
+    "decoded": "confusion",
+    "hit": true,
+    "at_letter": 138
+   },
+   {
+    "start": "col6:1",
+    "cells": "3-1 18-3 1-6 1-7 2-7 6-6 6-7",
+    "decoded": "admiral",
+    "hit": true,
+    "at_letter": 147
+   },
+   {
+    "start": "col6:8",
+    "cells": "16-4 16-5 18-3 6-3 6-4 7-6",
+    "decoded": "rodney",
+    "hit": true,
+    "at_letter": 154
+   },
+   {
+    "start": "col6:17",
+    "cells": "5-3 5-4 5-5 4-3",
+    "decoded": "thes",
+    "hit": true,
+    "at_letter": 398
+   },
+   {
+    "start": "col6:21",
+    "cells": "21-1 21-2 6-6 4-3 4-4",
+    "decoded": "coast",
+    "hit": true,
+    "at_letter": 168
+   }
+  ]
+ },
+ "B2_variant_b_reported_not_gated": {
+  "runs_ge3": 14,
+  "hits": 13,
+  "share": 0.929,
+  "can_differ": 1.0,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "seed": 123,
+   "mean": 0.39,
+   "p95": 2,
+   "max": 5
+  },
+  "gate": "PASS"
+ },
+ "word_codes": [],
+ "clear_words": [
+  "\"to\"",
+  "\"&\"",
+  "\"joined\"",
+  "\"which\"",
+  "\"into\"",
+  "\"is\"",
+  "\"with\""
+ ],
+ "p245_letters": 416
+}

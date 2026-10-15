@@ -1,0 +1,85 @@
+# CLIN-SIB2 (15 Oct 2026): B.147 p.242 columns 4-6 (H-1649 Image 886; BL Add MS 21807 fo.206), cipher of item 3050 (Clinton to Haldimand, 2 Oct 1780).
+# Two blind Sonnet passes p242c46_passA.tsv / _passB.tsv; agreed except at the L01/L02 crop seam (y=992) and col5 rows 11-13; settled by the worker on two zoom strips (note column).
+# kind: letter (L-P or -P; 1780 convention) or clear. Columns renumbered col4..col6 as on the page.
+col	idx	kind	entry	underline	grade	passA	passB	note
+col4	1	clear	"to"	y	H	"to"/y	"to"/y	
+col4	2	letter	8-2	n	H	8-2/n	8-2/n	
+col4	3	letter	6-7	n	H	6-7/n	6-7/n	
+col4	4	letter	7-6	y	H	7-6/y	7-6/y	
+col4	5	clear	"&"	y	H	"q"/y	"r"/y	clear glyph: A "q", B "r"; worker: the ampersand scribble (clear, ends a run either way)
+col4	6	letter	5-4	n	H	5-4/n	5-4/n	
+col4	7	letter	6-6	n	H	6-6/n	6-6/n	
+col4	8	letter	4-3	y	H	4-3/y	4-3/y	
+col4	9	clear	"joined"	y	H	"derived"/y	"desired"/y	clear word: A "derived" ("dorived"), B "desired"; worker on the layout look: "joined" (clear, ends a run either way)
+col4	10	letter	18-17	n	H	18-17/n	18-17/n	
+col4	11	letter	4-3	y	H	4-3/y	4-3/y	
+col4	12	clear	"which"	y	H	"which"/y	"which"/y	
+col4	13	letter	5-4	n	H	5-4/n	5-4/n	
+col4	14	letter	6-6	n	H	6-6/n	6-6/n	
+col4	15	letter	4-3	y	H	4-3/y	4-3/y	
+col4	16	letter	5-3	n	H	5-3/n	5-3/n	
+col4	17	letter	-4	n	H	6-4/n (L01 cut)	6-4/n (L01 cut)	crop seam at y=992 cut this row and the next; both passes merged them as "6-4"; worker zoom (2x strip y 820-1100): "-4" then "6-5"
+col4	18	letter	6-5	n	H	(merged)	(merged)	see previous; A also read a partial "6-3" at the top of L02 (the same seam row)
+col4	19	letter	11-2	n	H	11-2/n	11-2/n	
+col4	20	letter	14-3	n	H	14-3/n	14-3/n	
+col4	21	letter	6-3	y	H	6-3/y	6-3/y	
+col4	22	letter	5-3	n	H	5-3/n	5-3/n	
+col4	23	letter	-4	n	H	-4/n	-4/n	
+col4	24	letter	-5	y	H	-5/y	-5/y	
+col5	1	letter	16-4	n	H	16-4/n	16-4/n	
+col5	2	letter	5-5	n	H	5-5/n	5-5/n	
+col5	3	letter	13-20	n	H	13-20/n	13-20/n	
+col5	4	letter	5-5	n	H	5-5/n	5-5/n	
+col5	5	letter	4-1	y	H	4-1/y	4-1/y	
+col5	6	letter	7-1	n	H	7-1/n	7-1/n	
+col5	7	letter	1-5	n	H	1-5/n	1-5/n	both: "first figure could be 7"
+col5	8	letter	-6	n	H	-6/n	-6/n	
+col5	9	letter	7-6	y	H	7-6/y	7-6/y	
+col5	10	clear	"into"	y	H	"into"/y	"into"/y	
+col5	11	letter	5-3	n	H	5-3/n	5-3/n	
+col5	12	letter	-4	n	H	-4/y ("5 over 4")	-4/n	A read one row "-4" (4/5 overlap), underlined; B two rows "-4", "-5"; worker zoom (3x, y 700-850): two dash cells, "-4" then "-5", the rule under "-5"
+col5	13	letter	-5	y	H	(merged)	-5/y	see previous
+col5	14	letter	6-1	n	H	6-1/n	6-1/n	
+col5	15	letter	-5	n	H	-5/n	-5/n	
+col5	16	letter	-4	n	H	-4/n	-4/n	
+col5	17	letter	-6	n	H	-6/y	-6/n	A underlined; worker zoom: no rule under -6
+col5	18	letter	4-4	n	H	4-4/n	4-4/n	
+col5	19	letter	5-5	n	H	3-3/n (seam)	5-3/n (seam)	seam row: A "3-3", B "5-3"; worker zoom: "5-5"
+col5	20	letter	4-3	n	H	4-3/n	4-3/n	
+col5	21	letter	-4	y	H	-4/y	-4/y	
+col5	22	letter	21-1	n	H	21-1/n	21-1/n	
+col5	23	letter	-2	n	H	-2/n	-2/n	
+col5	24	letter	12-2	n	H	12-2/n	12-2/n	
+col5	25	letter	5-2	n	H	5-2/n	5-2/n	
+col5	26	letter	18-17	n	H	18-17/n	18-17/n	
+col5	27	letter	4-3	n	H	4-3/n	4-3/n	
+col5	28	letter	-2	n	H	-2/n	-2/n	
+col5	29	letter	1-11	n	H	1-11/n	1-11/n	
+col5	30	letter	-12	y	H	-12/y	-12/y	double underline
+col6	1	letter	3-1	n	H	3-1/n	3-1/n	
+col6	2	letter	18-3	n	H	18-3/n	18-3/n	
+col6	3	letter	1-6	n	H	1-6/n	1-6/n	
+col6	4	letter	-7	n	H	-7/n	-7/n	
+col6	5	letter	2-7	n	H	2-7/n	2-7/n	
+col6	6	letter	6-6	n	H	6-6/n	6-6/n	
+col6	7	letter	-7	y	H	-7/y	-7/y	
+col6	8	letter	16-4	n	H	16-4/n	16-4/n	
+col6	9	letter	-5	n	H	-5/n	-5/n	
+col6	10	letter	18-3	n	H	18-3/n	18-3/n	
+col6	11	letter	6-3	n	H	6-3/n	6-3/n	
+col6	12	letter	-4	n	H	-4/n	-4/n	
+col6	13	letter	7-6	y	H	7-6/y	7-6/y	
+col6	14	clear	"is"	y	H	"is"/y	"is"/y	
+col6	15	letter	12-1	n	H	12-1/n	12-1/n	
+col6	16	letter	-2	y	H	-2/y	-2/y	
+col6	17	letter	5-3	n	H	5-3/n	5-3/n	
+col6	18	letter	-4	n	H	-4/n	-4/n	
+col6	19	letter	-5	n	H	(absent)	(absent)	seam row (y=992) dropped by both passes; worker zoom: "-5" between "-4" and "4-3"
+col6	20	letter	4-3	y	H	4-3/y	4-3/y	
+col6	21	letter	21-1	n	H	21-1/n	21-1/n	
+col6	22	letter	-2	n	H	-2/n	-2/n	
+col6	23	letter	6-6	n	H	6-6/n	6-6/n	
+col6	24	letter	4-3	n	H	4-3/n	4-3/n	
+col6	25	letter	-4	y	H	-4/y	-4/y	
+col6	26	clear	"with"	y	H	"with"/y	"with"/y	
+col6	27	letter	6-6	y	H	6-6/y	6-6/y	a diagonal stroke after it (both passes)
