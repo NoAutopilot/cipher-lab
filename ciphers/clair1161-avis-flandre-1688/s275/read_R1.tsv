@@ -1,0 +1,276 @@
+wid	shape	note
+R1-001	?	sign cut off at top
+R1-002	L	closed loop waist
+R1-003	L	looped S at tick
+R1-004	O	open hook, long tail
+R1-005	O	open single hook
+R1-006	O	open hook
+R1-007	L	looped
+R1-008	L	looped
+R1-009	L	looped
+R1-010	L	looped S nearest tick
+R1-011	L	looped
+R1-012	L	looped nearest tick
+R1-013	L	looped
+R1-014	L	looped
+R1-015	L	looped nearest tick
+R1-016	L	looped
+R1-017	O	open hook
+R1-018	L	looped
+R1-019	L	looped
+R1-020	O	open hook
+R1-021	L	looped
+R1-022	L	looped
+R1-023	L	looped
+R1-024	O	open hook
+R1-025	O	open hook
+R1-026	L	looped at tick
+R1-027	L	looped
+R1-028	O	open hook
+R1-029	L	looped
+R1-030	O	open S nearest tick
+R1-031	O	open S at tick
+R1-032	L	looped
+R1-033	L	looped
+R1-034	L	looped
+R1-035	L	looped
+R1-036	L	looped
+R1-037	O	open hook
+R1-038	L	looped
+R1-039	L	looped
+R1-040	O	open hook
+R1-041	L	closed waist loop
+R1-042	L	top loop closed
+R1-043	O	single top hook
+R1-044	?	S cut at top edge
+R1-045	L	waist loop
+R1-046	O	open hook, swept tail
+R1-047	L	nearest S looped
+R1-048	L	top loop, dot above
+R1-049	O	open hook
+R1-050	L	top appears closed
+R1-051	O	nearest S open
+R1-052	O	open, dot above
+R1-053	L	closed loop
+R1-054	O	open hook
+R1-055	L	looped waist
+R1-056	?	no S near tick
+R1-057	O	thick open hook
+R1-058	O	open hook
+R1-059	L	looped
+R1-060	O	open hook
+R1-061	L	looped
+R1-062	L	loop at top
+R1-063	L	looped
+R1-064	L	closed top loop
+R1-065	L	looped
+R1-066	O	open hook
+R1-067	O	nearest S open
+R1-068	L	looped
+R1-069	O	nearest S open
+R1-070	O	open hook
+R1-071	O	open hook
+R1-072	L	looped waist
+R1-073	O	open, partly cut
+R1-074	L	looped, stroke above
+R1-075	O	open, long tail
+R1-076	O	open hook
+R1-077	L	looped
+R1-078	L	looped, dot above
+R1-079	O	open hook
+R1-080	L	looped
+R1-081	L	closed waist, 8-like
+R1-082	O	single hook, swept tail
+R1-083	O	open top hook
+R1-084	O	open, long tail
+R1-085	O	open hook
+R1-086	L	closed top loop
+R1-087	L	8-like closed
+R1-088	L	closed loop
+R1-089	O	open hook, thin
+R1-090	O	open top hook
+R1-091	O	second S open
+R1-092	L	waist loop
+R1-093	O	open swept tail
+R1-094	?	two S near tick
+R1-095	O	open hook
+R1-096	O	open, slightly blotted
+R1-097	O	open hook
+R1-098	L	looped waist
+R1-099	O	open hook
+R1-100	L	looped
+R1-101	O	open hook
+R1-102	L	closed loop
+R1-103	L	looped
+R1-104	O	open hook
+R1-105	O	open hook
+R1-106	L	looped
+R1-107	O	open hook
+R1-108	O	open hook
+R1-109	L	small, looped, blotted
+R1-110	L	looped
+R1-111	L	looped
+R1-112	L	looped
+R1-113	L	looped
+R1-114	L	nearest S looped
+R1-115	O	open hook
+R1-116	L	looped
+R1-117	O	open hook
+R1-118	L	looped
+R1-119	O	right S open
+R1-120	O	open hook
+R1-121	L	closed waist loop
+R1-122	O	single hook, long tail
+R1-123	L	closed loop
+R1-124	O	open hook, swept tail
+R1-125	L	looped, tick at edge
+R1-126	O	open S
+R1-127	L	closed loop
+R1-128	O	open hook, long tail
+R1-129	L	looped
+R1-130	L	looped
+R1-131	L	large closed loop
+R1-132	L	looped
+R1-133	L	nearest sign looped
+R1-134	L	looped
+R1-135	L	blobby closed loop
+R1-136	O	open hook
+R1-137	L	looped
+R1-138	L	looped
+R1-139	O	open hook
+R1-140	L	looped
+R1-141	O	open hook, swept tail
+R1-142	O	open, long tail
+R1-143	L	looped
+R1-144	O	open hook
+R1-145	O	open hook
+R1-146	L	looped
+R1-147	L	looped
+R1-148	O	open hook
+R1-149	L	nearest sign looped
+R1-150	O	open hook
+R1-151	L	nearest sign looped
+R1-152	O	nearest sign open
+R1-153	L	looped
+R1-154	L	looped
+R1-155	L	looped
+R1-156	L	looped
+R1-157	L	looped
+R1-158	O	open hook, long tail
+R1-159	L	faint, looped
+R1-160	O	open, slightly off tick
+R1-161	O	open hook, swept tail
+R1-162	L	closed top, g-like
+R1-163	L	closed loop
+R1-164	L	closed loop
+R1-165	O	open hook; neighbour looped
+R1-166	O	open, long tail
+R1-167	L	closed loop
+R1-168	L	closed loop
+R1-169	L	looped; neighbour open
+R1-170	O	open, long tail
+R1-171	L	closed loop
+R1-172	L	closed loop
+R1-173	L	closed loop
+R1-174	L	closed loop
+R1-175	L	closed loop
+R1-176	O	open hook
+R1-177	O	open, long tail
+R1-178	L	closed loop
+R1-179	O	open, tail
+R1-180	O	open, tail
+R1-181	L	closed loop
+R1-182	L	closed loop
+R1-183	O	open long tail; neighbour looped
+R1-184	O	open hook
+R1-185	O	open hook, tail
+R1-186	L	closed loop
+R1-187	L	closed loop
+R1-188	L	closed loop
+R1-189	L	closed loop
+R1-190	O	open, tail
+R1-191	O	open, tail
+R1-192	L	closed loop
+R1-193	L	closed top
+R1-194	L	closed loop
+R1-195	O	open hook
+R1-196	O	open hook
+R1-197	L	closed loop
+R1-198	L	closed loop
+R1-199	O	open, tail
+R1-200	L	closed loop
+R1-201	O	single hook, long tail
+R1-202	L	closed top loop
+R1-203	L	looped top
+R1-204	?	small, cut off
+R1-205	O	open hook, swept tail
+R1-206	L	looped top
+R1-207	L	looped, dot after
+R1-208	O	open hook
+R1-209	O	open hook
+R1-210	L	nearest tick looped
+R1-211	L	looped
+R1-212	L	looped
+R1-213	L	looped
+R1-214	L	looped
+R1-215	O	open hook
+R1-216	L	looped
+R1-217	L	faint, looped
+R1-218	L	looped
+R1-219	L	looped
+R1-220	L	looped
+R1-221	L	looped
+R1-222	O	open; neighbour looped
+R1-223	L	looped
+R1-224	O	nearest open; next looped
+R1-225	L	looped
+R1-226	L	looped
+R1-227	L	looped
+R1-228	L	looped
+R1-229	L	looped
+R1-230	O	open hook
+R1-231	L	looped
+R1-232	L	looped
+R1-233	O	open hook
+R1-234	L	looped
+R1-235	O	open hook
+R1-236	L	looped
+R1-237	O	small, partly cut
+R1-238	L	looped
+R1-239	L	looped
+R1-240	O	open hook
+R1-241	L	closed waist loop, tick on S
+R1-242	L	waist loop closed
+R1-243	L	looped S
+R1-244	L	closed top loop
+R1-245	L	closed loop near tick
+R1-246	L	looped upper bowl
+R1-247	O	single hook, long tail
+R1-248	O	open hook, swept tail
+R1-249	O	open hook near tick
+R1-250	?	small, cut, unclear
+R1-251	O	open hook, swept tail
+R1-252	O	open S near tick
+R1-253	?	cut off at edge
+R1-254	L	looped S
+R1-255	L	closed loop
+R1-256	L	looped S
+R1-257	L	closed waist loop
+R1-258	L	second S looped, tick on it
+R1-259	L	looped S
+R1-260	L	looped, small
+R1-261	O	open hook, long tail
+R1-262	L	looped S
+R1-263	O	open hook near tick
+R1-264	L	closed loop
+R1-265	?	two S near tick
+R1-266	O	open hook, long tail
+R1-267	?	small, blotted, unclear
+R1-268	O	open hook near tick
+R1-269	O	open hook, swept tail
+R1-270	O	open hook, heavy tail
+R1-271	L	looped S
+R1-272	L	looped S
+R1-273	O	open hook, swept tail
+R1-274	O	open hook near tick
+R1-275	L	looped S
