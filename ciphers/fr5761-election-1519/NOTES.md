@@ -1236,3 +1236,33 @@ Next: (1) read Kluckhohn nr. 316 (same volume, archive.org `bub_gb_0gFoAAAAMAAJ`
 own source line: if 316 is the key or a decipherment, it is a key source for this name-sign set (grade H) and for checking every C/M above, ~1.5;
 (2) settle the l.27 4|flag slot image-to-image against f.116r l.11/l.29/l.32 (openapi.bnf.fr f142 at 2400, 1 request), ~1; (3) item 37 (ELEC-39
 Next 2), ~0.5.
+
+## ELEC-316: Kluckhohn nr. 316 read (worker ELEC-316, LANE DEFAULT-A1-1426-15, account 1, 15 Oct 2026, 17:11-17:2x UTC by date -u)
+
+Brief: ELEC-356 Next (1), then (2) only if under 60% of cap. Files: `elec316/nr316_source.md` (quotes, page/leaf, regen URLs),
+`elec316/sign_check.tsv` (per sign). Page images read (rule 2), not the OCR alone; OCR used only to find the pages.
+- **Where it is.** RTA J.R. I nr. 316 = p.736 l.19 to p.737 l.24 (archive.org `bub_gb_0gFoAAAAMAAJ` leaves n744-n745): "Kurfürst Joachim
+  an König Franz: Zusammentreffen mit Bonnivet und Moltzan", Latin, "Date ex Geylenhusen prima junii 1519 ... Josyn".
+- **Its source line:** "Aus Dresden, Wahlsachen nr. 3. Cop. (die Stichworte in Chiffren mit übergeschriebener Auflösung)", with Spalatin's
+  endorsement "ein wunderliche schrift 1519" and Spalatin's translation in Neudecker and Preller, *Spalatins Nachlass* p.113 f.
+- **What it prints:** the plain names only, no sign shapes: "Trèves Couloigne Palatin" (l.10), "Coloigne et alium ex Hungaria" (l.14),
+  "Magence" (l.15). Footnote a: "Es steht hier nur eine Chiffre, diese ist aufgelöst: rege Hungarie ... Die übrigen Chiffren sind dieselben wie
+  die in früheren Briefen Moltzans an Bonnivet (bei Lisch)."
+- **So nr. 316 is not a key table.** The brief's H condition (the print gives the sign-to-name table) is not met; key.tsv unchanged, no grade
+  moves. Per sign (`sign_check.tsv`): barI = Bohème, Zheavy = Saxe, W, dd: names do not occur in nr. 316, not testable. II = Couloigne,
+  4 = Palatin, flag = Mayence, Lbar = Trèves: the names occur in nr. 316 as ciphered keywords, but with no shape printed, agreement or
+  conflict cannot be tested from the print. 0 agree, 0 conflict; nothing to HYPOTHESES.md.
+- **Lead (not a reading):** Kluckhohn's resolution rests on two period/printed witnesses not yet read here: (a) the Dresden copy itself,
+  Wahlsachen nr. 3 (cipher keywords with superscribed decipherment, a period decipherment: grade H for any sign that matches a nr. 356/357
+  shape, if its image can be obtained); (b) Moltzan's earlier letters to Bonnivet in Lisch, *Urkunden-Sammlung zur Geschichte des Geschlechts
+  von Moltzan* V (Kluckhohn cites pp.323-347; an introduction footnote gives an "Auflösung der Siglen" for Lisch V 345 f.: Joachim, Mainz,
+  der Kaiser, Sachsen und Trier, die Kurfürsten). If Lisch typeset the sigla, it is the nearest printed sign table.
+- Step (2) (l.27 4|flag slot) not run: the session floor plus this read is past 60% of the 2.5 cap.
+- Requests: archive.org 3 (`_djvu.txt`, n744, n745 `_w1800`), all 200; openapi.bnf.fr 0. Scratch only, none in git.
+
+**Verdict (ELEC-316, 15 Oct 2026):** open, unchanged. nr. 316 is an edition of a decipherment (names only), not a sign table; no value
+moves. Kluckhohn's name-sign resolution traces to Dresden, Wahlsachen nr. 3 and to Lisch V.
+Next: (1) find Lisch, *Urkunden-Sammlung ... Moltzan* V on archive.org/HathiTrust EF and read pp.323-347 for printed sigla (if sign shapes
+are printed beside names, compare with the nr. 356/357 set: H for a printed period key only if Lisch prints the resolution from a period
+source), ~1.5; (2) settle the l.27 4|flag slot against f.116r (openapi.bnf.fr f142 at 2400, 1 request), ~1; (3) item 37 (ELEC-39 Next 2), ~0.5;
+(4) Dresden HStA, Wahlsachen nr. 3 image (catalogue record and availability flag first, access playbook), ~0.5.

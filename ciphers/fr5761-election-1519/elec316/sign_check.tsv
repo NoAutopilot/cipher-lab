@@ -1,0 +1,9 @@
+sign_label	folder_value	folder_grade	in_nr316	nr316_wording	result	note
+barI	Boheme	C	no	-	not testable	Bohème does not occur in nr. 316; no sign shapes printed
+Zheavy	Saxe	C	no	-	not testable	Saxe does not occur in nr. 316; no sign shapes printed
+W	le roy tres-chrestien	C	no	-	not testable	the addressee, not ciphered in the letter body
+dd	le roy catholique	C	no	-	not testable	does not occur in nr. 316
+II	Couloigne	M	yes	Couloigne (l.10), Coloigne (l.14)	not testable (name present)	name ciphered in the Dresden copy; its sign shape not printed
+4	Palatin	M	yes	Palatin (l.10)	not testable (name present)	sign shape not printed
+flag	Mayence	M	yes	Magence (l.15)	not testable (name present)	sign shape not printed; l.27 4|flag slot unaffected
+Lbar	Treves	M	yes	Trèves (l.10)	not testable (name present)	sign shape not printed
