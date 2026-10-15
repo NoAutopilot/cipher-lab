@@ -9567,3 +9567,8 @@ workers over cap, worst NO70-WORDS 1.6x (three vision units + a screen in a 2.5 
 - **15 Oct 2026 06:5x UTC (VIV-KEYSTONE, appended):** VIV-GSPLIT3 (hand-cut tiles) reached N_f = 18 and a PASS on an incomplete r sample
   (29 of 138; recall 0.889, precision 0.727; projected precision at full r about 0.36) -- unfinished, not a negative; the continuation
   VIV-GSPLIT3B (106 r tiles, cap 5) completes the same registered test. SORTER-STEP1-INK63 claimed on account 1 at 06:40 (box to 08:13).
+
+- **15 Oct 2026 08:0x UTC (VIV-KEYSTONE, appended):** VIV-GSPLIT3B at N_r 59: recall 0.889 / precision 0.842 / F1 0.865 vs null 0.571, every
+  number above gate, PASS withheld until the r sample is complete; VIV-GSPLIT3C (last 66 r tiles + the f.191r step, cap 4.5) spawned. Step-1
+  alphabet page for ink 63 published to the owner: https://claude.ai/artifact/1X2MSRNQTeNZNEXB76RZ1u (PREREG consuming test: err_true on the
+  three truth items before/after relabelling by his piles; then PREREG-VIVPACKET4 exemplars).

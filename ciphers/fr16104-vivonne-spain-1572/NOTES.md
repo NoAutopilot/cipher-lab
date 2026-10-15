@@ -4230,3 +4230,18 @@ Vision: 7 looks by this worker (1 narrow sheet discarded for pointer misses, 1 w
 Report what was found and where it was not found; no novelty classified, no depth set.
 Next (one line, not done here): cut the last 66 r targets (`panels.py sheets --rest` sheets 01-04 after this log; 2 looks per 20 targets with check, ~USD 3)
 and re-run check3; only a full-sample PASS opens the f.191r step.
+
+
+## SORTER-STEP1-INK63 published (15 Oct 2026, 08:0x UTC by date -u; account-4 parent, session_01D7XWmthshMVqxumdDvitPh)
+
+The step-1 page built by SORTER-STEP1-INK63 (NOTES above; PREREG-SORTER-STEP1-INK63.md 5b3658038 with its consuming test) is published:
+**https://claude.ai/artifact/1X2MSRNQTeNZNEXB76RZ1u** (private to the owner; capabilities db; title "Vivonne 1573: settle the signs (step 1)").
+Parent's own eye on the two contact sheets before publishing (tx/sorter_step1/piles_0.png, piles_1.png): 40 shape-seeded piles; most hold one
+shape (01 the g-type, 05/11/22 the x, 08/26 the 3, 10/32 the dot, 12/25 the d, 13/36 the p, 14/27 the m, 17/29 the tz, 23 the n, 31/34/35 the s,
+39 the 7, 37 the a), several letters split over two or three piles (the owner merges), and a few mixed piles (15, 16, 21, 40; the owner splits
+or sets aside) -- the shape the page asks him to settle, with no question tray and no values. Box check 272/296 (91.9%, R14 gate); preflight
+--owner-page --step1 PASS; R12-R16 checks PASS (no Fix the cut on the page). Consuming test as registered: when his piles land, the truth-leaf
+tiles are relabelled by his piles and err_true on the three BENCHMARK-TX items is scored before/after (gate: no item rises, >= 2 fall), and his
+settled piles become the exemplars of the next f.191r question packet (PREREG-VIVPACKET4). Asked of the owner in one line (rule e of the
+account-3 handoff): settle the alphabet on this page; what it changes within a day is the err_true figure on the known-answer leaves and
+whether a one-shape-pile packet for f.191r can be built at all. Cost: parent session only.
