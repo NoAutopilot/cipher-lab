@@ -1,0 +1,32 @@
+CONTROL* h n 10 hypothesis/key n: score(n) 5 rank 1 | top5 n:5 a:3 l:3 d:2 b:1 | e 1 | decision ACCEPT n (= key)
+   2046_leg_abc:24 n <- 2 words, e.g. daaten, soldaaten
+   2046_leg_d:28 n <- 5 words, e.g. besetting, besittin, besitting, setting, sitting
+   2046_leg_d:53 n <- 2 words, e.g. neeger, neegers
+   2046_leg_efgh:56 n <- 5 words, e.g. dinge, dingen, ingang, landing, landingsplaats
+   2046_leg_ki:25 n <- 1 words, e.g. eerden
+CONTROL 5 n 11 hypothesis/key v: score(v) 2 rank 12 | top5 b:4 u:4 h:3 k:3 n:3 | e 2 | decision UNDECIDED
+   2046_head2:19 v <- 1 words, e.g. veren
+   2046_leg_d:9 v <- 1 words, e.g. voorde
+CONTROL [hash] n 9 hypothesis/key o: score(o) 3 rank 1 | top5 o:3 a:2 e:2 w:2 b:1 | e 2 | decision UNDECIDED
+   2046_leg_d:10 o <- 1 words, e.g. voorde
+   2046_leg_efgh:22 o <- 3 words, e.g. sonde, soode, soude
+   2046_leg_ki:30 o <- 1 words, e.g. osten
+CONTROL [delta] n 11 hypothesis/key a: score(a) 4 rank 1 | top5 a:4 e:3 d:2 h:2 b:1 | e 3 | decision UNDECIDED
+   2046_head1:3 a <- 1 words, e.g. staat
+   2046_leg_abc:20 a <- 4 words, e.g. daaten, soldaa, soldaat, soldaaten
+   2046_leg_efgh:52 a <- 2 words, e.g. landing, landingsplaats
+   2046_title1:16 a <- 1 words, e.g. staat
+CONTROL 6 n 11 hypothesis/key s: score(s) 4 rank 1 | top5 s:4 d:3 w:3 b:2 f:2 | e 1 | decision UNDECIDED
+   2046_leg_abc:9 s <- 1 words, e.g. officiers
+   2046_leg_d:59 s <- 1 words, e.g. neegers
+   2046_leg_efgh:21 s <- 3 words, e.g. sonde, soode, soude
+   2046_title1:14 s <- 1 words, e.g. staat
+TARGET [d-hook] n 10 hypothesis/key e: score(e) 6 rank 1 | top5 e:6 a:3 s:3 n:2 g:1 | e 6 | decision ACCEPT e (= key)
+   2046_leg_d:24 e <- 3 words, e.g. beset, besetting, setting
+   2046_leg_d:57 e <- 2 words, e.g. neeger, neegers
+   2046_leg_efgh:30 e <- 2 words, e.g. battery, batteryen
+   2046_leg_efgh:58 e <- 3 words, e.g. dinge, dingen, ingen
+   2046_leg_ki:5 e <- 5 words, e.g. corle, corre, reede, rhede, roede
+   2046_leg_ki:24 e <- 2 words, e.g. eerde, eerden
+gate: primary h ACCEPT n; controls accepting key value 1/5 (h) -> FAIL (non-test)
+verdict: undecided (gate FAIL, non-test)
