@@ -1,0 +1,29 @@
+kind	item	value	n
+baseline	printed order	0.278	144
+ref	SIB P5+P6,P7	0.112	1508
+ref	sibling numerals adjacent to 'am'	1	1508
+ref	P4 lines 50-52	0.37	54
+null	N-line p95	0.278	200
+null	N-bound p95	0.062	200
+a	read vs transcription: numeral differences	0	198
+a	exploratory: adjacent joins that are key values	1	144
+a	exploratory: numerals that split into two key values	99	144
+b	swap 52/53	0.285	144
+b	swap 53/54	0.285	144
+b	swap 54/55	0.278	144
+b	swap 55/56	0.278	144
+b	swap 56/57	0.278	144
+b	swap 57/58	0.278	144
+b	swap 58/59	0.278	144
+b	swap 59/60	0.278	144
+b	swap 60/61	0.278	144
+c	am=171 (the)	0.32	151
+c	am=9 (a)	0.307	151
+c	am=85 (have)	0.307	151
+c	am=83 (with)	0.307	151
+c	am=81 (which)	0.307	151
+null	max-of-59 am search on line-shuffled p95	0.327	200
+null	max-of-59 am search on boundary-shuffled p95	0.1	200
+gate	b best	PASS	0.285 swap 53
+gate	c best	FAIL	0.320
+gate	near-sibling floor	0.012	

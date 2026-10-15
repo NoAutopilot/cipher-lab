@@ -50,3 +50,17 @@ beside the share for information only (not gated).
 PASS = the variant's read share > the relevant null's p95 **and** >= SIB - 0.10 (at or near the siblings' own share).
 Baseline (the block as printed, no hypothesis) is reported with the same two nulls. Any PASS -> report the block's reading
 graded per token with the one hypothesis that did it; otherwise log all three as tested with numbers. No key edit either way.
+
+## Amendment 1 (15 Oct 2026, written after the first scoring run; declared, not hidden)
+The first run (`P4/p188/results_run1.tsv`) failed its own sanity reference. The en16_repo word list has only **180 words**
+of 3+ letters, because those readings are mostly brace-joined runs ("{peopleareengaged}"), so even the siblings read at
+**0.112** and P4 lines 50-52, which read coherently, at 0.37. A statistic that cannot read the siblings is a non-test, and run 1
+is logged as one. The hypothesis numbers from run 1 had been printed when this amendment was written. The change is driven
+by the reference failing, not by any target number. Changes:
+1. Word list: words seen >= 2 times with 3+ letters in `tools/data/en18/` (6 files) plus `LANG_CORPORA["en"]` (Holmes,
+   Moby-Dick). These are general English, not P4 or its siblings, so the word list is not circular.
+2. A key value of 3+ letters that is a code word ("generalrising", "thelordprotector", "england") reads as one word.
+3. The SIB run reconstruction is unchanged. If SIB is still below 0.6 under the new list, the statistic is declared unable to
+   discriminate at this length and register, and all three hypotheses are logged "untestable by this statistic". No third
+   word list is tried.
+Everything else (nulls, gate, hypotheses) is unchanged.
