@@ -72,3 +72,20 @@ unchanged; `osplit/mat_osplit.py` is re-run unchanged** on a new answer file. On
   `--answers` option added for this job (default unchanged: `sort_answers.tsv`). Low-confidence A/B answers count as given (as MAT-OSPLIT's did).
 - **Rule 3:** if the split FAILs again, it is logged untested-by-this-instrument (machine blind sort) and the o split goes to the owner's
   sign sorter; no third machine attempt.
+
+## Addendum 3 -- MAT-R2 second blind reader (13:4x UTC 15 Oct 2026 by `date -u`, before the call and before any score)
+Job MAT-R2 (LANE DEFAULT-A4-1236-15). **Gate, statistic, control, per-shape rule and grade rule unchanged; `osplit/mat_osplit.py` re-run
+unchanged** with `--answers sort_answers_r2.tsv` (result `mat_osplit_result_r2.tsv`).
+- **Crops:** the same 78 windows, regenerated in this container by `o3x_crops.py` from `regen_f91.sh` / `regen_f91c.sh` / `regen_f91e.sh`
+  (c98 sha1 94d007c8, as MAT-O3X); images in scratch only. Same label context file (p-4..p+4, labels only).
+- **Reader:** ONE Sonnet call, all 78 crops (the brief's one call; this exceeds addendum 2's <= 40 per call, declared now). Given only the
+  crop paths with opaque ids, the label context, MAT-BOX's words for both shapes, and as shape-B exemplar the f.78v chart line 2 halves
+  (2x, committed `images/f78v_79r/ref/`) with the positions of its three o's. No values, no gloss, no block/position, no first-reader
+  labels. Answer A / B / X per id with high/low confidence; an id left unanswered is X. Output `osplit/sort_answers_r2.tsv` verbatim.
+- **Agreement (reported, not a gate):** with `sort_answers_o3x.tsv` (MAT-O3X; o001 = X): raw agreement and Cohen's kappa over all 78 on
+  A/B/X, and raw agreement + kappa on the tokens both readers called A or B. Descriptive reading fixed now: kappa(A/B, both-called) >= 0.6
+  = the two readers see the same split; 0.2-0.6 = partly reader-dependent; < 0.2 = the O3X split is reader-dependent and the next step is
+  the owner's sign sorter, not a further machine reader.
+- **Consensus (reported, not a gate):** tokens where both readers give the same A or B, run through `mat_osplit.py` as a third answer file
+  `sort_answers_r2cons.tsv` (disagreements and any X -> X), same gate, reported.
+- No key/label/reading edit; HYPOTHESES.md row + NOTES.md section only. The 13-leaf relabel is not started.
