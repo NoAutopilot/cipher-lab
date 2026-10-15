@@ -1610,7 +1610,7 @@ p3_L01	15	28	H		agree
 p3_L01	16	10	H		agree
 p3_L01	17	81	H		agree
 p3_L01	18	37	H		agree
-p3_L01	19	70	M	B:40	differ
+p3_L01	19	70	H	was 70 M; B:40	lvn4611 per-token 300-dpi read 70 (A150 70, B150 40; P324; p3 control 9/10)
 p3_L01	20	24	H		agree
 p3_L01	21	85	H		agree
 p3_L01	22	29	H		agree
@@ -1622,7 +1622,7 @@ p3_L02	5	21	H		agree
 p3_L02	6	81	H		agree
 p3_L02	7	78	H		agree
 p3_L02	8	6	H		agree
-p3_L02	9	36	M	B:38	differ
+p3_L02	9	36	H	was 36 M; B:38	lvn4611 per-token 300-dpi read 36 (A150 36, B150 38; P311; p3 control 9/10)
 p3_L02	10	39	H		agree
 p3_L02	11	22	H		agree
 p3_L02	12	82	H		agree
@@ -1630,18 +1630,18 @@ p3_L02	13	25	H		agree
 p3_L02	14	79	H		agree
 p3_L02	15	64	H		agree
 p3_L02	16	38	H		agree
-p3_L02	17	84	M	B:34	differ
+p3_L02	17	34	H	was 84 M; B:34	lvn4611 per-token 300-dpi read 34 (A150 84, B150 34; P313; p3 control 9/10)
 p3_L02	18	25	H		agree
 p3_L02	19	85	H		agree
 p3_L02	20	29	H		agree
 p3_L02	21	139	H		agree
 p3_L03	1	=pour	H		agree
 p3_L03	2	=les	M	B:=la	differ
-p3_L03	3	60	M		agree-flagged
+p3_L03	3	60	H	was 60 M	lvn4611 per-token 300-dpi read 60 (A150 60, B150 60; P308; p3 control 9/10)
 p3_L03	4	=sinuoye	M	B:=envoyer	differ
 p3_L03	5	=Je	H		agree
 p3_L03	6	=mo	M	B:=ne	differ
-p3_L03	7	60	M		agree-flagged
+p3_L03	7	60	H	was 60 M	lvn4611 per-token 300-dpi read 60 (A150 60, B150 60; P317; p3 control 9/10)
 p3_L03	8	=scay	M	A:-	gap
 p3_L03	9	=seray	M	B:=si	differ
 p3_L03	10	=offrir	M	B:=serai	differ
@@ -1651,11 +1651,11 @@ p3_L03	13	=ne	M	B:=mais	differ
 p3_L03	14	=resistans	M	B:=respondrai	differ
 p3_L03	15	=comme	H		agree
 p3_L03	16	=Je	H		agree
-p3_L03	17	60	M		agree-flagged
+p3_L03	17	60	H	was 60 M	lvn4611 per-token 300-dpi read 60 (A150 60, B150 60; P326; p3 control 9/10)
 p3_L03	18	=ay	H		agree
 p3_L03	19	=dict	H		agree
 p3_L03	20	=a	H		agree
-p3_L03	21	60	M		agree-flagged
+p3_L03	21	60	H	was 60 M	lvn4611 per-token 300-dpi read 60 (A150 60, B150 60; P301; p3 control 9/10)
 p3_L04	1	=fut	M	B:-	gap
 p3_L04	2	=scauoir	M	B:=fu	differ
 p3_L04	3	=vostre	M	B:=scavoir	differ
@@ -1680,7 +1680,7 @@ p3_L05	6	=plus	M		agree-flagged
 p3_L05	7	=tost	M	B:=tot	differ
 p3_L05	8	=pourvoyez	M	B:=promptement	differ
 p3_L05	9	=de	H	=De	settled-case-only
-p3_L05	10	60	M		agree-flagged
+p3_L05	10	60	H	was 60 M	lvn4611 per-token 300-dpi read 60 (A150 60, B150 60; P315; p3 control 9/10)
 p3_L05	11	=supplieray	M	B:-	gap
 p3_L05	12	=fructueuse	M	B:-	gap
 p3_L05	13	=plu	M	B:=supplerai	differ
@@ -1694,7 +1694,7 @@ p3_L06	3	=recommandez	M	B:=recommandé	differ
 p3_L06	4	=Et	H		agree
 p3_L06	5	=fut	M	B:-	gap
 p3_L06	6	=sil	M	B:-	gap
-p3_L06	7	60	M		agree-flagged
+p3_L06	7	60	H	was 60 M	lvn4611 per-token 300-dpi read 60 (A150 60, B150 60; P305; p3 control 9/10)
 p3_L06	8	=plaisir	M	B:-	gap
 p3_L06	9	=quis	M	B:=supplira	differ
 p3_L06	10	=considerans	M	B:=vray	differ
@@ -1704,7 +1704,7 @@ p3_L06	13	=et	M	B:=sa	differ
 p3_L06	14	=fidelle	M	B:=fidele	differ
 p3_L06	15	=service	H		agree
 p3_L07	1	=que	H		agree
-p3_L07	2	60	M	B:=bon	differ
+p3_L07	2	60	H	was 60 M; B:=bon	lvn4611 per-token 300-dpi read 60 (A150 60, B150 =bon; P314; p3 control 9/10)
 p3_L07	3	=faict	M		agree-flagged
 p3_L07	4	=le	H		agree
 p3_L07	5	=desir	M	B:=désir	differ
@@ -1730,7 +1730,7 @@ p3_L08	12	=suppliant	M	B:=supplian	differ
 p3_L08	13	=le	H		agree
 p3_L08	14	=createur	M	B:=Créateur	differ
 p3_L09	1	=quil	H		agree
-p3_L09	2	60	M		agree-flagged
+p3_L09	2	60	H	was 60 M	lvn4611 per-token 300-dpi read 60 (A150 60, B150 60; P320; p3 control 9/10)
 p3_L09	3	=donne	M	B:=doint	differ
 p3_L10	1	[blank]	H		agree
 p3_L11	1	=Monsieur	H		agree

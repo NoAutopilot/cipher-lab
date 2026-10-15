@@ -1,0 +1,26 @@
+tid	read	note
+P303	81	call 1 (LVN-PIN): 8 blob, then thin short stroke, i-like 1
+P309	4	call 1 (LVN-PIN): open-top 4 with crossbar and tick, not 9
+P313	34	call 1 (LVN-PIN): flat-top 3, then 4 with closed head
+P305	60	call 1 (LVN-PIN): closed bowl with rising stroke, then small o
+P320	60	call 1 (LVN-PIN): 6 with rising stroke, then small o
+P319	75?	call 1 (LVN-PIN): 7 with long bar; second glyph light, long-s like, not stacked bowls
+P306	78	call 1 (LVN-PIN): 7 with bar; second glyph is two stacked bowls
+P308	60	call 1 (LVN-PIN): 6 bowl then small o
+P304	85?	call 1 (LVN-PIN): 8 blob, second glyph has top bar and body; could be 1
+P322	85	call 1 (LVN-PIN): 8 blob then long-s 5
+P312	6	call 1 (LVN-PIN): closed bowl with stroke rising right, not stacked bowls
+P311	36	call 1 (LVN-PIN): flat-top 3; second closed bowl with rising stroke (6)
+P310	125	call 1 (LVN-PIN): short 1, then 2, then long-s 5
+P318	5	call 1 (LVN-PIN): long-s shape
+P324	70	call 1 (LVN-PIN): 7 with top bar and vertical stem, then round 0
+P314	60	call 1 (LVN-PIN): 6 bowl, small o; trailing 9-like mark is a separate flourish
+P317	60	call 1 (LVN-PIN): big 6 then o, flourish after
+P325	10?	call 1 (LVN-PIN): short hooked stroke, no 7 crossbar, then bowl; could be 70
+P321	79	call 1 (LVN-PIN): 7 with long bar, then 9 with tail
+P302	85	call 1 (LVN-PIN): 8 blob, then long-s 5
+P301	60	call 1 (LVN-PIN): 6 closed bowl with rising stroke, then small o
+P316	115?	call 1 (LVN-PIN): three glyphs: 1, 1-ish, long-s 5; middle form uncertain
+P315	60	call 1 (LVN-PIN): 6 bowl, o, then flourish
+P326	60	call 1 (LVN-PIN): 6 bowl, o, then 9-like flourish
+P307	38	call 1 (LVN-PIN): flat-top 3, then stacked bowls 8
