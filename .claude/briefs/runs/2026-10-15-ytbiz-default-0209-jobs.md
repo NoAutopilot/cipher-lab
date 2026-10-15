@@ -116,3 +116,17 @@ ciphers/sforza-italien1584-1447/pusterla/NOTES.md Verdict (~line 297): read f.76
 same way SFZP-SIB pair-checked f.72/f.73 and f.75/f.74 (read its section; reuse its commands). Intake gate as SFZP-SIB. If f.77/f.76 is a
 Pusterla pair with the same text, stop after the pair check and name the unit-7 passes as the next step (~$3) in the Verdict -- do not run
 passes in this job. If not, close the siblings rung for c64-c74. Update both folders' gaps if touched; gaps_check.
+
+## Wave 4 (04:0x UTC 15 Oct)
+
+### PUST-U5 (Opus, cap 7, box 100 min, Gallica IIIF btv1b100373864 <= 8 requests at >= 2 s, ROOM take/release "gallica"; regions already on disk from PUST-F77): Pusterla key unit 5, f.77/f.76
+ciphers/sforza-italien1584-1447/pusterla/NOTES.md Verdict (~line 229): "unit f.77/f.76 two blind passes + reconciliation, align with f.76, G1
+and f.13 lattice rerun, ~$3". Intake gate as SFZP-SIB. Units (state the count and per-unit rate in your claim; ~1.3 per vision call): (1) crops
+by the pasted `tools/iiif_lines.py --image <PUST-F77's f.77 region file> --out ... --debug` form units 1-4 used, overlay checked; (2) f.76 clear
+text read by eye if not already on disk (clear_f76.txt), one or two half-page calls; (3) two blind passes of f.77 (passA Opus, passB Sonnet,
+one half page per call, the f.81/f.42 label set) + one reconciliation unit with `tools/reconcile_passes.py`; if the passes disagree on more than a
+tenth of signs, stop after reconciliation, add the split signs to the existing Pusterla sorter focus (TRANSCRIPTION.md: the next pass is a
+person's) and name that in the Verdict -- no third machine pass; (4) otherwise align f.77 with f.76 as align_f81.tsv was built, add it as unit 5
+and re-run G1 exactly as the four-unit key was gated (held-out, shuffle p95; key rows enter only through that gate); (5) re-run the f.13 lattice
+decode on both corpora once and paste both judge lines. Stop before a unit that would cross 80% of cap or box. Update both folders' Remaining
+gaps / Escalation, gaps_check on sforza-pusterla-1447-f13.
