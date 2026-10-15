@@ -102,3 +102,23 @@ key, no key edit in this job), or unrelated. PX-BRODEC normalisation before any 
 NOTES.md LIN-CAL section (from ~1751), option (b) at ~1807-1809, PREREG-LINCAL.md and hocr/lincal_score.py. One blind labelling pass by a
 different model (Sonnet) under LIN-CAL's pre-registered count rule, then score with lincal_score.py: does 3241315 read "Jus" or "Justa"?
 Follow the PREREG's decision rule exactly; one token changes grade only if it says so.
+
+## Wave 3 (03:2x UTC 15 Oct; last wave, lane budget ~18 left after waves 1-2. Real cost ran 1.1-2.2x the wave 1-2 caps: price Opus vision calls at ~1.0 and Sonnet at ~0.6)
+
+### LIN-PROP (Opus, cap 2.5, box 45 min, disk only): antt-linhares-chave propagate LIN-LAB2 outcome A (justa -> jus at 3241315)
+LIN-LAB2's ROOM done line (03:09 UTC 15 Oct) and NOTES section: PREREG-LINLAB2 outcome A licenses justa -> jus, not applied. Apply it exactly as
+the PREREG says: key/exceptions edit, reading regenerated, `decode_key.py --check`, judge_plaintext per rule 7 (paste output into NOTES), and carry
+the change into AUDIT.md and any SECOND-OPINIONS-QUEUE.tsv row for this target (rule 10 propagation paragraph). Do NOT do the rule-7 fresh-session
+re-derivation yourself (a later separate session does): add it as a gaps line. Grade of the token per the PREREG (no grade above what it licenses).
+
+### LVN-P2 (Opus, cap 6, box 75 min, resources.huygens.knaw.nl <= 2 or disk if 04610.pdf is cached): lodewijk-van-nassau-1573-74 LVN16-3R on 4610 p2
+Same protocol, same control, same gate as LVN-3R's 4610 p1 unit (lvn10p1/PREREG-LVN-3R.md, including its forced change to the two 150-dpi passes);
+write a PREREG addendum for p2 before the read; p2 only (44 rows) -- not 4611. Apply only rows the unit's own control licenses; decode_key --check;
+gaps_check. Stop before the reconcile if 80% of cap is reached and write up what was read.
+
+### ES132-BLIND (Opus, cap 3, box 60 min, openapi.bnf.fr <= 6): es132-vargas-mexia-1578 blind single-crop read of the f.89 candidates
+ES132-F89's done line and NOTES section (03:00 UTC 15 Oct): the two-crop look with a proposal shown failed its decoy gate (8/12). Named next: a blind
+single-crop read with no proposal shown. Pre-register: per candidate the f.89 crop and its f.93-95 duplicate crop each read blind (no candidate
+value shown) by one Sonnet reader, decoys = >= 10 already-settled tokens mixed in; a candidate settles only where both blind reads agree with
+each other and the reader gets >= 80% of the settled decoys right. Regenerate crops in scratchpad (ES132-F89's commands); at most 3 batched calls
++ 1 reconcile. Apply only gated candidates through dup_settled.tsv; decode_key --check.
