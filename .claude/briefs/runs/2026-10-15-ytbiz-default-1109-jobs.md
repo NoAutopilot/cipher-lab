@@ -99,3 +99,31 @@ gaps_check.
 HAR-39V's next (d5d3c580a): a second reader blind to Bourdeau's strings and to HAR-39V's reading on the same crop (control words included,
 shuffled order), then view R8478 and R8480 (neighbouring Needham/Walsingham records) for the same word or sign group. PREREG first. Word stays
 M unless both readers agree and the controls pass. gaps_check.
+
+## Wave 2b result (11:5x UTC): COL26-PRINT 1.19 N, OBRED-NA2 3.24 N (9459 all seen, 9450-9460 openings; flag 9453 s24), OBRED-MONO 2.39 N
+(control below gate, second on the word-lead family), SUR-POOL 2.35 N ([d-hook] vocabulary anchor retired), HAR-39V2 3.54 D (reader 2 agrees 8/9,
+word M), VIE-PC 0.77 N. The OBRED word-lead family (OBRED-CTRY, OBRED-MONO) is not re-briefed in this lane: two control failures.
+Excluded from here on also: LANE DEFAULT-A1-1140-15 (mccormick, naf14913, na-janssens, sachsstaatsarchiv-manteuffel, pro3055, es132).
+
+## Wave 3 (11:5x UTC 15 Oct)
+
+### SUR-2076 (Opus, cap 2.5, box 60 min, disk only): na-suriname-map-1781 plain legend 2076 as known plaintext on 2077
+SUR-POOL's next (71108bd78): "plain-text legend 2076 as known plaintext on 2077 (~$1.5)". A different instrument from the retired vocabulary
+anchor test. PREREG first: align 2076's plain legend entries with 2077's cipher legend (tools/interlinear_align.py or the folder's SUR-ALIGN
+method), with a shuffled-legend control that must fail and a known-H control that must pass; report [d-hook] and any other value the alignment
+pins, grade C only where the print gives it and the control passes. Key edits only through the folder's key path with decode_key --check.
+gaps_check.
+
+### COL26-PRINT2 (Sonnet, cap 1.5, box 45 min, archive.org / OpenAlex / Semantic Scholar / CORE; no googleapis): colbert26-lathuillerie-1644 the print rung's named remainder
+COL26-PRINT's remainder: Riksrådets protokoll 1644-46, Oxenstierna's Skrifter och brefvexling for 1644-46, Kernkamp. Same method (IA djvu grep,
+be-api fts, print_check). Record each edition opened or not reachable. No reading/grade/key change. Tick or keep the rung; gaps_check.
+
+### OBRED-6020 (Opus, cap 4, box 75 min, service.archief.nl / nationaalarchief.nl <= 120, ROOM take/release): oldenbarnevelt-brederode-1605 inv. 6020 stride-6 screen
+OBRED-NA2 measured stride 3 at ~220 requests; run stride 6 (<= 120 requests, >= 3 s apart) with the OBRED-NA method; flag any cipher, key leaf
+or Brederode hand, one Opus read per flagged page; log every scan in na_obredna_scans.tsv. Stop before a unit that crosses 80% of cap or box.
+
+### OBRED-9453 (Opus, cap 2.5, box 50 min, service.archief.nl <= 6, ROOM take/release): oldenbarnevelt-brederode-1605 the 9453 s24 names nomenclator vs no. 92 name codes
+OBRED-NA2's flag: 1.01.02 inv. 9453 scan 24, an Oldenbarnevelt-Langerak names-only nomenclator with margin decodes. PREREG first: read its
+code -> name table (one Opus read at native size) and test whether any no. 92/187 name code (37 in reading_92_187.tsv) matches it in form and
+context better than a shuffled-code control; this is the known-keys rung, not a key merge. Report matches graded M unless the control licenses
+S; conflicts to HYPOTHESES.md with witnesses (rule 4). gaps_check.
