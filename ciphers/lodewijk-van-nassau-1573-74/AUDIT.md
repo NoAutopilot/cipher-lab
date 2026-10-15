@@ -2041,3 +2041,19 @@ sentence quotes 4610).
 "partially deciphered (about 60%)" (status.json depth_pct 62.6 on the DEPTH-REGRADE basis; four-letter figure now 61.7%). `tools/depth_check.py`
 exit 0. status.json not edited (the parent's). **N-class unchanged** (4610/4611/4616 N4, 4612 N3; key ours): the search basis did not change.
 Requests: resources.huygens.knaw.nl 1. Subagents: none.
+
+## LVN-P2K (15 Oct 2026, 10:4x-11:0x UTC by date -u; solver job, account 4) -- reading revised after this AUDIT.md, carried here (rule 10 propagation)
+
+4611 p2 (NOTES.md "LVN-P2K"; PREREG 2b47fbd8b). The 44 p2_K rows LVN-P2B left unplaced (no-ink or near-value duplicate) were ruled by one Opus
+eye look per line on the same 300-dpi render (sha1 36399838ce5c), not blind; the pre-registered disk rules R1/R2 failed their positive control
+(1/9 known duplicates retired, gate >= 6/9) and license nothing alone (`lvn4611/p2k_rules.py`). Path `lvn4611/corrections_p2k.tsv` (a second
+pass of the VER-LVN2 stage in settle.py), retired rows `lvn4611/retired_p2k.tsv`. **Grade changes:** retired 39 of the 44 (37 M, **p2_K22/6 8 H**
+-- the glyph is the s of "lesquelz", no numeral on the line there -- and **p2_K31/25 =avoir S** -- K31 ends "84, 145.", the 145 carried by the
+insert); **p2_K18/8 122 H moved** onto K16 after 61 (its p2a box lies on K16), its M insert there retired; kept 4 (K15/17 85 H, K23/14 =a,
+K31/14 96 M, K32/3 =effroya); RETX inserts K31 9 6 M retired as the split of the one token 96 (declared deviation). No value set, no grade
+raised. **Counts:** 4611 full tokens 1510 -> 1480, C 1080 -> 1079, H 3, M 218 -> 192, I 70 -> 68, U 139 -> 138; decode.json 4611 C 1005 -> 1004,
+M 179 -> 154; 4610/4611/4616 C/H **2568 of 3304 (77.7%)**, four letters **2568 of 4137 (62.1%)**. Depth stays **D2** (under D3's 80% line);
+N-class unchanged (4610/4611/4616 N4, 4612 N3; key ours). SECOND-OPINIONS-QUEUE prompts (SO-LODEWIJK-1573-74, SO-LODEWIJK-5797) quote no
+4611 p2 line (grep for every retired word): no queued prompt changes. status.json not edited (the parent's).
+Left for a verifier or the next pass: p2_K15/15 85 M is a second row on the ink 85 that 85 H carries, and K15's mapped 18/39 re-read K14's
+tail; p2_K31/18 =faisant S has no word on K31.

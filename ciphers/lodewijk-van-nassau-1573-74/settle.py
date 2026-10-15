@@ -392,50 +392,54 @@ def main():
             # the no-ink H rows and the kept H duplicate (lvn4611/corrections_verlvn2.tsv, keyed by the post-order p2_K ids):
             # set (value + grade), retire (to lvn4611/retired_verlvn2.tsv), move (after the named row), keep (asserted only);
             # positions of the touched p2_K lines then renumbered 1..n in order.
-            cp = HERE / "lvn4611" / "corrections_verlvn2.tsv"
-            if cp.exists():
-                with open(cp, newline="", encoding="utf-8") as fh:
-                    cors = list(csv.DictReader(fh, delimiter="\t"))
-                at = {(r["line"], r["position"]): r for r in draft}
-                gone, moves, touched = [], [], set()
-                for c in cors:
-                    d = at[(c["line"], c["position"])]
-                    assert d["sign"] == c["old"], ("VER-LVN2", c["line"], c["position"], d["sign"], c["old"])
-                    tag = f"VER-LVN2 eye: {c['note']}"
-                    if c["op"] == "set":
-                        d["alt"] = f"was {d['sign']} {d['confidence']}" + (f"; {d['alt']}" if d.get("alt") else "")
-                        d["sign"], d["confidence"] = c["new"], c["confidence"]
-                    elif c["op"] == "retire":
-                        gone.append(d)
-                    elif c["op"] == "move":
-                        moves.append((d, at[tuple(c["new"].split("/"))]))
-                    d["why"] = (d["why"] + "; " if d.get("why") else "") + tag
-                    touched.add(c["line"])
-                ids = {id(d) for d in gone} | {id(d) for d, _ in moves}
-                vio = io.StringIO(); vw = csv.writer(vio, delimiter="\t", lineterminator="\n")
-                vw.writerow(["line", "position", "sign", "confidence", "alt", "why"])
-                for row in gone:
-                    vw.writerow([row["line"], row["position"], row["sign"], row["confidence"], row.get("alt", ""), row.get("why", "")])
-                draft = [r for r in draft if id(r) not in ids]
-                for d, anchor in moves:
-                    i = next(i for i, r in enumerate(draft) if r is anchor)
-                    j = i + 1
-                    while j < len(draft) and any(draft[j] is m for m, _ in moves):
-                        j += 1
-                    draft.insert(j, d)
-                    d["line"] = anchor["line"]
-                    touched.add(anchor["line"])
-                n = {}
-                for r in draft:
-                    if r["line"] in touched:
-                        n[r["line"]] = n.get(r["line"], 0) + 1
-                        r["position"] = str(n[r["line"]])
-                vp = HERE / "lvn4611" / "retired_verlvn2.tsv"
-                if args.check:
-                    if not vp.exists() or vp.read_text(encoding="utf-8") != vio.getvalue():
-                        print(f"STALE: {vp}", file=sys.stderr); stale = True
-                else:
-                    vp.write_text(vio.getvalue(), encoding="utf-8")
+            # LVN-P2K (15 Oct 2026): the same stage applied a second time for the placement rulings on the unplaced p2_K rows
+            # (lvn4611/corrections_p2k.tsv, keyed by the post-VER-LVN2 ids; PREREG-LVN-4611.md addendum LVN-P2K).
+            for cname, vname, tagp in (("corrections_verlvn2.tsv", "retired_verlvn2.tsv", "VER-LVN2 eye"),
+                                       ("corrections_p2k.tsv", "retired_p2k.tsv", "LVN-P2K")):
+                cp = HERE / "lvn4611" / cname
+                if cp.exists():
+                    with open(cp, newline="", encoding="utf-8") as fh:
+                        cors = list(csv.DictReader(fh, delimiter="\t"))
+                    at = {(r["line"], r["position"]): r for r in draft}
+                    gone, moves, touched = [], [], set()
+                    for c in cors:
+                        d = at[(c["line"], c["position"])]
+                        assert d["sign"] == c["old"], (tagp, c["line"], c["position"], d["sign"], c["old"])
+                        tag = f"{tagp}: {c['note']}"
+                        if c["op"] == "set":
+                            d["alt"] = f"was {d['sign']} {d['confidence']}" + (f"; {d['alt']}" if d.get("alt") else "")
+                            d["sign"], d["confidence"] = c["new"], c["confidence"]
+                        elif c["op"] == "retire":
+                            gone.append(d)
+                        elif c["op"] == "move":
+                            moves.append((d, at[tuple(c["new"].split("/"))]))
+                        d["why"] = (d["why"] + "; " if d.get("why") else "") + tag
+                        touched.add(c["line"])
+                    ids = {id(d) for d in gone} | {id(d) for d, _ in moves}
+                    vio = io.StringIO(); vw = csv.writer(vio, delimiter="\t", lineterminator="\n")
+                    vw.writerow(["line", "position", "sign", "confidence", "alt", "why"])
+                    for row in gone:
+                        vw.writerow([row["line"], row["position"], row["sign"], row["confidence"], row.get("alt", ""), row.get("why", "")])
+                    draft = [r for r in draft if id(r) not in ids]
+                    for d, anchor in moves:
+                        i = next(i for i, r in enumerate(draft) if r is anchor)
+                        j = i + 1
+                        while j < len(draft) and any(draft[j] is m for m, _ in moves):
+                            j += 1
+                        draft.insert(j, d)
+                        d["line"] = anchor["line"]
+                        touched.add(anchor["line"])
+                    n = {}
+                    for r in draft:
+                        if r["line"] in touched:
+                            n[r["line"]] = n.get(r["line"], 0) + 1
+                            r["position"] = str(n[r["line"]])
+                    vp = HERE / "lvn4611" / vname
+                    if args.check:
+                        if not vp.exists() or vp.read_text(encoding="utf-8") != vio.getvalue():
+                            print(f"STALE: {vp}", file=sys.stderr); stale = True
+                    else:
+                        vp.write_text(vio.getvalue(), encoding="utf-8")
         summary[nr] = stats
         cipher_path = HERE / f"ciphertext_{nr}.tsv"
         log_path = HERE / f"settle_log_{nr}.tsv"
