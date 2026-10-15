@@ -1,0 +1,168 @@
+line	pos	sign	conf	pass_a	pass_b	how
+L21	1	K08	H	K08	K08	both passes
+L21	2	K05	H	K05	K05	both passes
+L21	3	K63	M	K63	K19	A/B split, crop does not settle it: pass A
+L21	4	K15	H	K15	K15	both passes
+L21	5	K19	H	K19	K19	both passes
+L21	6	K09	H	K09	K09	both passes
+L21	7	K14	H	K14	K14	both passes
+L21	8	K33	H	K33	K33	both passes
+L21	9	K04	H	K04	K04	both passes
+L21	10	K63	M	K63	K19	A/B split, crop does not settle it: pass A
+L21	11	K22	M	K22	K01	A/B split, crop does not settle it: pass A
+L21	12	K62	H	K62	K62	both passes
+L21	13	K41	H	K41	K41	both passes
+L21	14	K38	M	K63	K19	eye: z with a faint curl to its left = C-curl K38 (A K63, B K19)
+L21	15	K05	H	K05	K05	both passes
+L21	16	K19	H	K19	K19	both passes
+L21	17	K36	H	K36	K36	both passes
+L21	18	K37	H	K37	K37	both passes
+L21	19	K25	H	K25	K25	both passes
+L21	20	K05	H	K05	K05	both passes
+L21	21	K10	H	K10	K10	both passes
+L21	22	K05	H	K05	K05	both passes
+L21	23	K19	H	K19	K19	both passes
+L21	24	K36	H	K36	K36	both passes
+L21	25	K34	H	K34	K34	both passes
+L21	26	K01	H	K01	K01	both passes
+L21	27	K63	M	K63	K19	A/B split, crop does not settle it: pass A
+L21	28	K36	H	K36	K36	both passes
+L21	29	K19	H	K19	K19	both passes
+L21	30	K05	H	K05	K05	both passes
+L21	31	K26	H	K26	K26	both passes
+L21	32	K32	H	K32	K32	both passes
+L21	33	K14	H	K14	K14	both passes
+L21	34	K33	H	K33	K33	both passes
+L21	35	K01	M	K12	K01	eye: round g with closed bottom loop; = B (A K12)
+L22	1	K63	H	K63	K63	both passes
+L22	2	?h_bar	M	?x[h]	K68	eye: 'h' form, folder convention ?h_bar (MONL-L11 L11:8); A ?x[h], B K68
+L22	3	K36	H	K36	K36	both passes
+L22	4	K05	H	K05	K05	both passes
+L22	5	K19	H	K19	K19	both passes
+L22	6	K40	M	K41	K41	eye: omega with a bar over it = K40; both passes K41 (override of an agreement)
+L22	7	K62	H	K62	K62	both passes
+L22	8	K33	H	K33	K33	both passes
+L22	9	K32	H	K32	K32	both passes
+L22	10	K14	H	K14	K14	both passes
+L22	11	K05	H	K05	K05	both passes
+L22	12	K29	M	K26	K26	eye: rho with leftward descender = K29; = B (A K26)
+L22	13	K07	M	K07	-	A/B split, crop does not settle it: pass A
+L22	14	K04	M	K04	-	A/B split, crop does not settle it: pass A
+L22	15	K26	M	K26	-	A/B split, crop does not settle it: pass A
+L22	16	K19	M	K19	-	A/B split, crop does not settle it: pass A
+L22	17	K36	H	K36	K36	both passes
+L22	18	?double_slash	H	?double_slash	?double_slash	both passes
+L22	19	K26	H	K26	K26	both passes
+L22	20	K62	H	K62	K62	both passes
+L22	21	K34	H	K34	K34	both passes
+L22	22	K33	H	K33	K33	both passes
+L22	23	K36	M	K14	-	eye (zoom): after 'B m' a stem with diamond foot = K36; = B's K36 (A K14; B's extra K35 is the m's last minim)
+L22	24	K38	M	K63	-	eye (zoom): z with a large curl below-left = C-curl K38 (A K63, B K19)
+L22	25	K05	H	K05	K05	both passes
+L22	26	K41	H	K41	K41	both passes
+L22	27	?h_bar	M	?x[h]	K68	eye: 'h' form, as L22:2; A ?x[h], B K68
+L22	28	K26	H	K26	K26	both passes
+L22	29	K34	M	K34	K14	A/B split, crop does not settle it: pass A
+L22	30	K63	M	K63	K19	A/B split, crop does not settle it: pass A
+L22	31	K05	H	K05	K05	both passes
+L22	32	?double_slash	H	?double_slash	?double_slash	both passes
+L22	33	K33	H	K33	K33	both passes
+L22	34	K39	M	K39	K47	A/B split, crop does not settle it: pass A
+L22	35	K36	H	K36	K36	both passes
+L22	36	K33	H	K33	K33	both passes
+L23	1	W:Astuing	M	?x[u_with_arc] K26 W:tuing	- - -	eye: one clear-written word, the long s joined to 'tuing'; = B (A ?x[u with arc] K26 W:tuing)
+L23	2	K25	H	K25	K25	both passes
+L23	3	K22	M	K22	K01	A/B split, crop does not settle it: pass A
+L23	4	K19	H	K19	K19	both passes
+L23	5	K63	H	K63	K63	both passes
+L23	6	K41	H	K41	K41	both passes
+L23	7	K04	H	K04	K04	both passes
+L23	8	K63	H	K63	K63	both passes
+L23	9	K15	H	K15	K15	both passes
+L23	10	K19	H	K19	K19	both passes
+L23	11	K05	H	K05	K05	both passes
+L23	12	?double_slash	H	?double_slash	?double_slash	both passes
+L23	13	K05	H	K05	K05	both passes
+L23	14	K10	H	K10	K10	both passes
+L23	15	K01	H	K01	K01	both passes
+L23	16	K04	H	K04	K04	both passes
+L23	17	K05	H	K05	K05	both passes
+L23	18	K34	H	K34	K34	both passes
+L23	19	K01	M	K12	K01	eye: round g like its neighbours, not a curving 9; = B (A K12)
+L23	20	K04	H	K04	K04	both passes
+L23	21	K04	H	K04	K04	both passes
+L23	22	K25	H	K25	K25	both passes
+L23	23	K26	H	K26	K26	both passes
+L23	24	K04	H	K04	K04	both passes
+L23	25	K09	H	K09	K09	both passes
+L23	26	K26	H	K26	K26	both passes
+L23	27	K39	M	K39	K47	A/B split, crop does not settle it: pass A
+L23	28	K19	H	K19	K19	both passes
+L23	29	K05	H	K05	K05	both passes
+L23	30	K12	H	K12	K12	both passes
+L23	31	K26	H	K26	K26	both passes
+L24	1	W:Juno	M	W:Juno	W:Inno	A/B split, crop does not settle it: pass A
+L24	2	K34	M	K34	K14	A/B split, crop does not settle it: pass A
+L24	3	K45	M	K39	K47	eye: small v without tail = K45 (MONL-L16 L20:13 convention); A K39, B K47
+L24	4	K09	M	K09	K21	A/B split, crop does not settle it: pass A
+L24	5	K37	H	K37	K37	both passes
+L24	6	K04	H	K04	K04	both passes
+L24	7	K29	H	K29	K29	both passes
+L24	8	K36	H	K36	K36	both passes
+L24	9	K05	H	K05	K05	both passes
+L24	10	K14	H	K14	K14	both passes
+L24	11	K29	H	K29	K29	both passes
+L24	12	K04	H	K04	K04	both passes
+L24	13	K33	H	K33	K33	both passes
+L24	14	K32	H	K32	K32	both passes
+L24	15	K15	H	K15	K15	both passes
+L24	16	K45	M	?x[v]	K47	eye: small v without tail, as L24:3 = K45; A ?x[v], B K47
+L24	17	K26	H	K26	K26	both passes
+L24	18	W:Mare	H	W:Mare	W:Mare	both passes
+L24	19	K14	H	K14	K14	both passes
+L24	20	K33	H	K33	K33	both passes
+L24	21	K65	H	K65	K65	both passes
+L24	22	K05	H	K05	K05	both passes
+L24	23	K14	H	K14	K14	both passes
+L24	24	K40	M	K40	K43	A/B split, crop does not settle it: pass A
+L24	25	K02	H	K02	K02	both passes
+L24	26	K41	H	K41	K41	both passes
+L24	27	K38	M	K63	K19	eye: z inside a large curl = C-curl K38 (A K63, B K19)
+L24	28	K39	M	K39	K47	A/B split, crop does not settle it: pass A
+L24	29	K40	H	K40	K40	both passes
+L25	1	K04	H	K04	K04	both passes
+L25	2	K05	H	K05	K05	both passes
+L25	3	K10	H	K10	K10	both passes
+L25	4	K41	H	K41	K41	both passes
+L25	5	K34	M	K34	K14	A/B split, crop does not settle it: pass A
+L25	6	K26	H	K26	K26	both passes
+L25	7	K39	M	K39	K47	A/B split, crop does not settle it: pass A
+L25	8	K36	H	K36	K36	both passes
+L25	9	K26	H	K26	K26	both passes
+L25	10	K63	M	K63	K07	A/B split, crop does not settle it: pass A
+L25	11	K40	M	K40	K43	A/B split, crop does not settle it: pass A
+L25	12	K14	H	K14	K14	both passes
+L25	13	K33	H	K33	K33	both passes
+L25	14	K08	M	K60	K08	eye: phi form as L21:1 = K08; = B (A K60)
+L25	15	K05	H	K05	K05	both passes
+L25	16	K40	M	K41	K41	eye: omega with a bar over it = K40; both passes K41 (override of an agreement)
+L25	17	K04	H	K04	K04	both passes
+L25	18	K05	H	K05	K05	both passes
+L25	19	K10	H	K10	K10	both passes
+L25	20	K26	H	K26	K26	both passes
+L25	21	K37	H	K37	K37	both passes
+L25	22	K34	M	K34	K14	A/B split, crop does not settle it: pass A
+L25	23	K05	H	K05	K05	both passes
+L25	24	K36	H	K36	K36	both passes
+L25	25	K01	M	K01	K12	A/B split, crop does not settle it: pass A
+L25	26	K04	H	K04	K04	both passes
+L25	27	?double_slash	H	?double_slash	?double_slash	both passes
+L25	28	K05	H	K05	K05	both passes
+L25	29	K26	H	K26	K26	both passes
+L25	30	K63	M	K63	K19	A/B split, crop does not settle it: pass A
+L25	31	K15	H	K15	K15	both passes
+L25	32	K39	M	K39	K47	A/B split, crop does not settle it: pass A
+L25	33	K05	H	K05	K05	both passes
+L25	34	K10	H	K10	K10	both passes
+L25	35	K15	H	K15	K15	both passes
+L25	36	?x[c_with_tail]	M	?x[c_with_tail]	?x[c_with_hook]	A/B split, crop does not settle it: pass A

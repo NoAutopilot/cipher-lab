@@ -1,32 +1,32 @@
 {
  "real": {
-  "keyed": 657,
-  "confirm": 452,
-  "contradict": 126,
-  "extra": 79,
-  "confirm_share": 0.688,
+  "keyed": 814,
+  "confirm": 550,
+  "contradict": 164,
+  "extra": 100,
+  "confirm_share": 0.6757,
   "facing_unsure_clear": 20
  },
- "score": 570.6,
+ "score": 677.2,
  "clear_span": [
   "f.140r:L07",
-  "f.140r:L20"
+  "f.140r:L23"
  ],
  "clear_letters": 2816,
  "shuffled_clear": {
   "draws": 200,
   "seed": 140,
-  "mean": 0.3682,
-  "p95": 0.3866,
-  "max": 0.411,
+  "mean": 0.3688,
+  "p95": 0.3833,
+  "max": 0.4029,
   "ge_real": 0
  },
  "other_letter_c270": {
-  "keyed": 657,
-  "confirm": 235,
-  "contradict": 356,
-  "extra": 66,
-  "confirm_share": 0.3577
+  "keyed": 814,
+  "confirm": 266,
+  "contradict": 424,
+  "extra": 124,
+  "confirm_share": 0.3268
  },
  "fills": [
   {
@@ -226,6 +226,66 @@
    "pos": 21,
    "sign": "?double_slash",
    "clear": "c"
+  },
+  {
+   "line": "L22",
+   "pos": 2,
+   "sign": "?h_bar",
+   "clear": ""
+  },
+  {
+   "line": "L22",
+   "pos": 18,
+   "sign": "?double_slash",
+   "clear": ""
+  },
+  {
+   "line": "L22",
+   "pos": 27,
+   "sign": "?h_bar",
+   "clear": "c"
+  },
+  {
+   "line": "L22",
+   "pos": 32,
+   "sign": "?double_slash",
+   "clear": "c"
+  },
+  {
+   "line": "L23",
+   "pos": 1,
+   "sign": "W:Astuing",
+   "clear": "nnemais"
+  },
+  {
+   "line": "L23",
+   "pos": 12,
+   "sign": "?double_slash",
+   "clear": ""
+  },
+  {
+   "line": "L24",
+   "pos": 1,
+   "sign": "W:Juno",
+   "clear": ""
+  },
+  {
+   "line": "L24",
+   "pos": 18,
+   "sign": "W:Mare",
+   "clear": "nous"
+  },
+  {
+   "line": "L25",
+   "pos": 27,
+   "sign": "?double_slash",
+   "clear": "c"
+  },
+  {
+   "line": "L25",
+   "pos": 36,
+   "sign": "?x[c_with_tail]",
+   "clear": ""
   }
  ],
  "contradictions": [
@@ -1236,6 +1296,310 @@
    "conf": "H",
    "table": "l",
    "clear": "m"
+  },
+  {
+   "line": "L21",
+   "pos": 1,
+   "sign": "K08",
+   "conf": "H",
+   "table": "h",
+   "clear": "t"
+  },
+  {
+   "line": "L21",
+   "pos": 3,
+   "sign": "K63",
+   "conf": "M",
+   "table": "u",
+   "clear": "t"
+  },
+  {
+   "line": "L21",
+   "pos": 7,
+   "sign": "K14",
+   "conf": "H",
+   "table": "p",
+   "clear": "s"
+  },
+  {
+   "line": "L21",
+   "pos": 9,
+   "sign": "K04",
+   "conf": "H",
+   "table": "d",
+   "clear": "n"
+  },
+  {
+   "line": "L21",
+   "pos": 10,
+   "sign": "K63",
+   "conf": "M",
+   "table": "u",
+   "clear": "t"
+  },
+  {
+   "line": "L21",
+   "pos": 12,
+   "sign": "K62",
+   "conf": "H",
+   "table": "l",
+   "clear": "m"
+  },
+  {
+   "line": "L21",
+   "pos": 27,
+   "sign": "K63",
+   "conf": "M",
+   "table": "u",
+   "clear": "t"
+  },
+  {
+   "line": "L21",
+   "pos": 29,
+   "sign": "K19",
+   "conf": "H",
+   "table": "u",
+   "clear": "i"
+  },
+  {
+   "line": "L21",
+   "pos": 33,
+   "sign": "K14",
+   "conf": "H",
+   "table": "p",
+   "clear": "s"
+  },
+  {
+   "line": "L22",
+   "pos": 5,
+   "sign": "K19",
+   "conf": "H",
+   "table": "u",
+   "clear": "n"
+  },
+  {
+   "line": "L22",
+   "pos": 6,
+   "sign": "K40",
+   "conf": "M",
+   "table": "i",
+   "clear": "t"
+  },
+  {
+   "line": "L22",
+   "pos": 7,
+   "sign": "K62",
+   "conf": "H",
+   "table": "l",
+   "clear": "m"
+  },
+  {
+   "line": "L22",
+   "pos": 10,
+   "sign": "K14",
+   "conf": "H",
+   "table": "p",
+   "clear": "s"
+  },
+  {
+   "line": "L22",
+   "pos": 14,
+   "sign": "K04",
+   "conf": "M",
+   "table": "d",
+   "clear": "n"
+  },
+  {
+   "line": "L22",
+   "pos": 20,
+   "sign": "K62",
+   "conf": "H",
+   "table": "l",
+   "clear": "m"
+  },
+  {
+   "line": "L22",
+   "pos": 29,
+   "sign": "K34",
+   "conf": "M",
+   "table": "p",
+   "clear": "s"
+  },
+  {
+   "line": "L22",
+   "pos": 30,
+   "sign": "K63",
+   "conf": "M",
+   "table": "u",
+   "clear": "t"
+  },
+  {
+   "line": "L23",
+   "pos": 5,
+   "sign": "K63",
+   "conf": "H",
+   "table": "u",
+   "clear": "t"
+  },
+  {
+   "line": "L23",
+   "pos": 10,
+   "sign": "K19",
+   "conf": "H",
+   "table": "u",
+   "clear": "n"
+  },
+  {
+   "line": "L23",
+   "pos": 11,
+   "sign": "K05",
+   "conf": "H",
+   "table": "e",
+   "clear": "t"
+  },
+  {
+   "line": "L23",
+   "pos": 13,
+   "sign": "K05",
+   "conf": "H",
+   "table": "e",
+   "clear": "a"
+  },
+  {
+   "line": "L24",
+   "pos": 3,
+   "sign": "K45",
+   "conf": "M",
+   "table": "m",
+   "clear": "o"
+  },
+  {
+   "line": "L24",
+   "pos": 4,
+   "sign": "K09",
+   "conf": "M",
+   "table": "i",
+   "clear": "u"
+  },
+  {
+   "line": "L24",
+   "pos": 10,
+   "sign": "K14",
+   "conf": "H",
+   "table": "p",
+   "clear": "s"
+  },
+  {
+   "line": "L24",
+   "pos": 12,
+   "sign": "K04",
+   "conf": "H",
+   "table": "d",
+   "clear": "n"
+  },
+  {
+   "line": "L24",
+   "pos": 16,
+   "sign": "K45",
+   "conf": "M",
+   "table": "m",
+   "clear": "u"
+  },
+  {
+   "line": "L24",
+   "pos": 19,
+   "sign": "K14",
+   "conf": "H",
+   "table": "p",
+   "clear": "s"
+  },
+  {
+   "line": "L24",
+   "pos": 23,
+   "sign": "K14",
+   "conf": "H",
+   "table": "p",
+   "clear": "o"
+  },
+  {
+   "line": "L24",
+   "pos": 24,
+   "sign": "K40",
+   "conf": "M",
+   "table": "i",
+   "clear": "m"
+  },
+  {
+   "line": "L24",
+   "pos": 29,
+   "sign": "K40",
+   "conf": "H",
+   "table": "i",
+   "clear": "z"
+  },
+  {
+   "line": "L25",
+   "pos": 5,
+   "sign": "K34",
+   "conf": "M",
+   "table": "p",
+   "clear": "c"
+  },
+  {
+   "line": "L25",
+   "pos": 6,
+   "sign": "K26",
+   "conf": "H",
+   "table": "e",
+   "clear": "o"
+  },
+  {
+   "line": "L25",
+   "pos": 7,
+   "sign": "K39",
+   "conf": "M",
+   "table": "u",
+   "clear": "n"
+  },
+  {
+   "line": "L25",
+   "pos": 8,
+   "sign": "K36",
+   "conf": "H",
+   "table": "r",
+   "clear": "s"
+  },
+  {
+   "line": "L25",
+   "pos": 15,
+   "sign": "K05",
+   "conf": "H",
+   "table": "e",
+   "clear": "l"
+  },
+  {
+   "line": "L25",
+   "pos": 16,
+   "sign": "K40",
+   "conf": "M",
+   "table": "i",
+   "clear": "z"
+  },
+  {
+   "line": "L25",
+   "pos": 26,
+   "sign": "K04",
+   "conf": "H",
+   "table": "d",
+   "clear": "n"
+  },
+  {
+   "line": "L25",
+   "pos": 30,
+   "sign": "K63",
+   "conf": "M",
+   "table": "u",
+   "clear": "t"
   }
  ]
 }
