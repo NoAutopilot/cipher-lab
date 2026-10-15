@@ -309,6 +309,22 @@ def main():
     summary = {}
     for nr in letters:
         draft, log_rows, stats = settle_letter(nr, key, counts, alphabet, overrides)
+        if nr == "4611":
+            # LVN-4611 (15 Oct 2026): per-token 300-dpi read of 4611 per unit (lvn4611/PREREG-LVN-4611.md), applied last;
+            # only rows lvn4611/settle.py marked settled/confirmed for a unit whose own control passed change (sign, confidence).
+            for unit in ("p1", "p3"):
+                sp = HERE / "lvn4611" / f"settle_{unit}.tsv"
+                if not sp.exists():
+                    continue
+                at = {(r["line"], r["position"]): i for i, r in enumerate(draft)}
+                with open(sp, newline="", encoding="utf-8") as fh:
+                    for r in csv.DictReader(fh, delimiter="\t"):
+                        if r["action"] not in ("settled", "confirmed"):
+                            continue
+                        d = draft[at[(r["line"], r["pre_pos"])]]
+                        assert d["sign"] == r["old"], (r["line"], r["pre_pos"], d["sign"], r["old"])
+                        d["alt"] = f"was {d['sign']} {d['confidence']}" + (f"; {d['alt']}" if d.get("alt") else "")
+                        d["sign"], d["confidence"], d["why"] = r["new"], r["confidence"], r["note"]
         summary[nr] = stats
         cipher_path = HERE / f"ciphertext_{nr}.tsv"
         log_path = HERE / f"settle_log_{nr}.tsv"

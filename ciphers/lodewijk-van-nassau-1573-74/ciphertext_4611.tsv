@@ -15,7 +15,7 @@ p1_L01	13	130	H		agree
 p1_L01	14	127	H		agree
 p1_L01	15	=et	H		agree
 p1_L01	16	=la	M	A:-	gap
-p1_L01	17	66	M		agree-flagged
+p1_L01	17	66	H	was 66 M	lvn4611 per-token 300-dpi read 66 (A150 66, B150 66; P164; p1 control 8/10)
 p1_L01	18	26	H		agree
 p1_L01	19	72	H		agree
 p1_L01	20	2	M	B:8	differ
@@ -24,7 +24,7 @@ p1_L01	22	83	H		agree
 p1_L01	23	145	H		agree
 p1_L01	24	126	H		agree
 p1_L01	25	=demeurant	S		settled-b nc=2 margin=0.35
-p1_L02	1	56	M		agree-flagged
+p1_L02	1	56	H	was 56 M	lvn4611 per-token 300-dpi read 56 (A150 56, B150 56; P155; p1 control 8/10)
 p1_L02	2	21	H		agree
 p1_L02	3	84	H		agree
 p1_L02	4	22	H		agree
@@ -68,7 +68,7 @@ p1_L03	18	26	H		agree
 p1_L03	19	67	H		agree
 p1_L03	20	7	H		agree
 p1_L03	21	39	H		agree
-p1_L03	22	21	M	B:26	differ
+p1_L03	22	21	H	was 21 M; B:26	lvn4611 per-token 300-dpi read 21 (A150 21, B150 26; P156; p1 control 8/10)
 p1_L03	23	91	H		agree
 p1_L03	24	141	H		agree
 p1_L03	25	127	H		agree
@@ -87,7 +87,7 @@ p1_L04	12	=ce	H		agree
 p1_L04	13	=pourse	M	B:=porté	differ
 p1_L04	14	=actendant	M	B:=attendant	differ
 p1_L04	15	=a	H		agree
-p1_L04	16	60	M		agree-flagged
+p1_L04	16	60	H	was 60 M	lvn4611 per-token 300-dpi read 60 (A150 60, B150 60; P105; p1 control 8/10)
 p1_L04	17	=escripre	H		agree
 p1_L04	18	=par	H		agree
 p1_L04	19	=seg	M	B:80	differ
@@ -190,7 +190,7 @@ p1_L08	21	25	H		agree
 p1_L08	22	21	M	B:22	differ
 p1_L08	23	26	H		agree
 p1_L09	1	103	H		agree
-p1_L09	2	3	M	B:5	differ
+p1_L09	2	5	H	was 3 M; B:5	lvn4611 per-token 300-dpi read 5 (A150 3, B150 5; P174; p1 control 8/10)
 p1_L09	3	29	H		agree
 p1_L09	4	81	H		agree
 p1_L09	5	26	H		agree
@@ -227,7 +227,7 @@ p1_L10	13	81	H		agree
 p1_L10	14	22	H		agree
 p1_L10	15	32	H		agree
 p1_L10	16	104	H		agree
-p1_L10	17	29	M	B:24	differ
+p1_L10	17	24	H	was 29 M; B:24	lvn4611 per-token 300-dpi read 24 (A150 29, B150 24; P147; p1 control 8/10)
 p1_L10	18	125	H		agree
 p1_L10	19	148	H		agree
 p1_L10	20	=de	M	A:-	gap
@@ -239,7 +239,7 @@ p1_L11	1	=aultres	M	B:=autres	differ
 p1_L11	2	=particuliers	M		agree-flagged
 p1_L11	3	=Je	H		agree
 p1_L11	4	=le	H		agree
-p1_L11	5	60	M		agree-flagged
+p1_L11	5	60	H	was 60 M	lvn4611 per-token 300-dpi read 60 (A150 60, B150 60; P113; p1 control 8/10)
 p1_L11	6	=sinuoge	M	B:=remets	differ
 p1_L11	7	=Dauttant	M	B:=dautant	differ
 p1_L11	8	=que	H		agree
@@ -248,20 +248,20 @@ p1_L11	10	=feray	M	B:=seray	differ
 p1_L11	11	6	H		agree
 p1_L11	12	=par	H		agree
 p1_L11	13	=luy	H		agree
-p1_L11	14	60	M		agree-flagged
+p1_L11	14	60	H	was 60 M	lvn4611 per-token 300-dpi read 60 (A150 60, B150 60; P152; p1 control 8/10)
 p1_L11	15	=pouiez	M	B:=pouant	differ
 p1_L11	16	15	H		agree
 p1_L11	17	115	H		agree
 p1_L11	18	38	H		agree
 p1_L11	19	28	H		agree
 p1_L11	20	127	H		agree
-p1_L11	21	30	M	B:10	differ
+p1_L11	21	30	H	was 30 M; B:10	lvn4611 per-token 300-dpi read 30 (A150 30, B150 10; P159; p1 control 8/10)
 p1_L12	1	85	H		agree
 p1_L12	2	39	H		agree
 p1_L12	3	25	H		agree
 p1_L12	4	84	H		agree
 p1_L12	5	120	H		agree
-p1_L12	6	53	M	B:83	differ
+p1_L12	6	53	H	was 53 M; B:83	lvn4611 per-token 300-dpi read 53 (A150 53, B150 83; P157; p1 control 8/10)
 p1_L12	7	4	H		agree
 p1_L12	8	33	H		agree
 p1_L12	9	144	H		agree
@@ -297,7 +297,7 @@ p1_L13	14	29	H		agree
 p1_L13	15	149	H		agree
 p1_L13	16	138	H		agree
 p1_L13	17	=est	M	B:=et	differ
-p1_L13	18	60	M		agree-flagged
+p1_L13	18	60	H	was 60 M	lvn4611 per-token 300-dpi read 60 (A150 60, B150 60; P173; p1 control 8/10)
 p1_L13	19	=diray	H		agree
 p1_L13	20	=repandant	M	B:=repondant	differ
 p1_L13	21	=sur	H		agree
@@ -535,10 +535,10 @@ p1_L23	18	37	H		agree
 p1_L23	19	83	H		agree
 p1_L23	20	124	H		agree
 p1_L23	21	148	H		agree
-p1_L24	1	6	M	B:=c	differ
+p1_L24	1	6	H	was 6 M; B:=c	lvn4611 per-token 300-dpi read 6 (A150 6, B150 =c; P141; p1 control 8/10)
 p1_L24	2	36	H		agree
 p1_L24	3	150	H		agree
-p1_L24	4	35	M	B:55	differ
+p1_L24	4	55	H	was 35 M; B:55	lvn4611 per-token 300-dpi read 55 (A150 35, B150 55; P118; p1 control 8/10)
 p1_L24	5	29	H		agree
 p1_L24	6	31	H		agree
 p1_L24	7	223	H		agree
@@ -554,7 +554,7 @@ p1_L24	16	24	H		agree
 p1_L24	17	34	H		agree
 p1_L24	18	104	H		agree
 p1_L24	19	71	H		agree
-p1_L24	20	54	M	B:34	differ
+p1_L24	20	54	H	was 54 M; B:34	lvn4611 per-token 300-dpi read 54 (A150 54, B150 34; P124; p1 control 8/10)
 p1_L24	21	150	H		agree
 p1_L25	1	=de	H		agree
 p1_L25	2	79	H		agree
@@ -564,7 +564,7 @@ p1_L25	5	84	H		agree
 p1_L25	6	25	H		agree
 p1_L25	7	28	H		agree
 p1_L25	8	127	H		agree
-p1_L25	9	64	M	B:60	differ
+p1_L25	9	64	H	was 64 M; B:60	lvn4611 per-token 300-dpi read 64 (A150 64, B150 60; P106; p1 control 8/10)
 p1_L25	10	22	H		agree
 p1_L25	11	37	H		agree
 p1_L25	12	103	H		agree
@@ -664,40 +664,40 @@ p1_L29	17	51	M	A:-	gap
 p1_L29	18	21	M	A:-	gap
 p1_L29	19	74	M	B:140	differ
 p1_L29	20	10	M	B:5	differ
-p1_L29	21	39	M	B:6	differ
-p1_L29	22	75	M	B:26	differ
-p1_L29	23	100	M	B:31	differ
-p1_L29	24	85	M	B:22	differ
-p1_L29	25	60	M	B:82	differ
+p1_L29	21	39	H	was 39 M; B:6	lvn4611 per-token 300-dpi read 39 (A150 39, B150 6; P151; p1 control 8/10)
+p1_L29	22	75	H	was 75 M; B:26	lvn4611 per-token 300-dpi read 75 (A150 75, B150 26; P135; p1 control 8/10)
+p1_L29	23	100	H	was 100 M; B:31	lvn4611 per-token 300-dpi read 100 (A150 100, B150 31; P169; p1 control 8/10)
+p1_L29	24	85	H	was 85 M; B:22	lvn4611 per-token 300-dpi read 85 (A150 85, B150 22; P170; p1 control 8/10)
+p1_L29	25	60	H	was 60 M; B:82	lvn4611 per-token 300-dpi read 60 (A150 60, B150 82; P123; p1 control 8/10)
 p1_L29	26	150	M	B:127	differ
 p1_L29	27	52	M	B:108	differ
-p1_L29	28	40	M	B:4	differ
+p1_L29	28	40	H	was 40 M; B:4	lvn4611 per-token 300-dpi read 40 (A150 40, B150 4; P121; p1 control 8/10)
 p1_L30	1	74	H		agree
 p1_L30	2	36	H		agree
 p1_L30	3	82	H		agree
 p1_L30	4	39	H		agree
 p1_L30	5	25	H		agree
 p1_L30	6	121	H		agree
-p1_L30	7	127	M	B:-	gap
+p1_L30	7	127	H	was 127 M; B:-	lvn4611 per-token 300-dpi read 127 (A150 127, B150 -; P177; p1 control 8/10)
 p1_L30	8	=Voyans	M	B:-	gap
 p1_L30	9	=que	M	B:-	gap
 p1_L30	10	12	M	B:-	gap
 p1_L30	11	51	M	B:-	gap
-p1_L30	12	21	M	B:-	gap
+p1_L30	12	21	H	was 21 M; B:-	lvn4611 per-token 300-dpi read 21 (A150 21, B150 -; P182; p1 control 8/10)
 p1_L30	13	140	M	B:-	gap
-p1_L30	14	5	M	B:-	gap
-p1_L30	15	6	M	B:-	gap
-p1_L30	16	26	M	B:-	gap
-p1_L30	17	31	M	B:-	gap
-p1_L30	18	22	M	B:-	gap
-p1_L30	19	82	M	B:-	gap
+p1_L30	14	5	H	was 5 M; B:-	lvn4611 per-token 300-dpi read 5 (A150 5, B150 -; P149; p1 control 8/10)
+p1_L30	15	6	H	was 6 M; B:-	lvn4611 per-token 300-dpi read 6 (A150 6, B150 -; P143; p1 control 8/10)
+p1_L30	16	26	H	was 26 M; B:-	lvn4611 per-token 300-dpi read 26 (A150 26, B150 -; P138; p1 control 8/10)
+p1_L30	17	31	H	was 31 M; B:-	lvn4611 per-token 300-dpi read 31 (A150 31, B150 -; P146; p1 control 8/10)
+p1_L30	18	22	H	was 22 M; B:-	lvn4611 per-token 300-dpi read 22 (A150 22, B150 -; P117; p1 control 8/10)
+p1_L30	19	82	H	was 82 M; B:-	lvn4611 per-token 300-dpi read 82 (A150 82, B150 -; P176; p1 control 8/10)
 p1_L30	20	127	H		agree
 p1_L30	21	101	M	B:-	gap
-p1_L30	22	4	M	B:-	gap
+p1_L30	22	4	H	was 4 M; B:-	lvn4611 per-token 300-dpi read 4 (A150 4, B150 -; P160; p1 control 8/10)
 p1_L31	1	78	H		agree
 p1_L31	2	38	H		agree
 p1_L31	3	27	H		agree
-p1_L31	4	32	M	B:34	differ
+p1_L31	4	34	H	was 32 M; B:34	lvn4611 per-token 300-dpi read 34 (A150 32, B150 34; P112; p1 control 8/10)
 p1_L31	5	24	H		agree
 p1_L31	6	104	H		agree
 p1_L31	7	84	H		agree
@@ -712,12 +712,12 @@ p1_L31	15	105	H		agree
 p1_L31	16	112	H		agree
 p1_L31	17	104	H		agree
 p1_L31	18	95	H		agree
-p1_L31	19	85	M	B:88	differ
+p1_L31	19	85	H	was 85 M; B:88	lvn4611 per-token 300-dpi read 85 (A150 85, B150 88; P163; p1 control 8/10)
 p1_L31	20	5	H		agree
 p1_L31	21	75	H		agree
 p1_L31	22	84	H		agree
 p1_L31	23	150	H		agree
-p1_L32	1	15	M	B:18	differ
+p1_L32	1	18	H	was 15 M; B:18	lvn4611 per-token 300-dpi read 18 (A150 15, B150 18; P165; p1 control 8/10)
 p1_L32	2	38	H		agree
 p1_L32	3	81	H		agree
 p1_L32	4	4	H		agree
@@ -760,14 +760,14 @@ p1_L33	15	24	H		agree
 p1_L33	16	149	H		agree
 p1_L33	17	127	H		agree
 p1_L33	18	=de	M		agree-flagged
-p1_L33	19	71	M	B:75	differ
+p1_L33	19	75	H	was 71 M; B:75	lvn4611 per-token 300-dpi read 75 (A150 71, B150 75; P134; p1 control 8/10)
 p1_L33	20	8	H		agree
 p1_L33	21	28	H		agree
 p1_L33	22	34	H		agree
 p1_L34	1	85	H		agree
 p1_L34	2	101	H		agree
 p1_L34	3	74	H		agree
-p1_L34	4	53	M	B:55	differ
+p1_L34	4	53	H	was 53 M; B:55	lvn4611 per-token 300-dpi read 53 (A150 53, B150 55; P102; p1 control 8/10)
 p1_L34	5	135	H		agree
 p1_L34	6	127	H		agree
 p1_L34	7	=comme	M		agree-flagged
@@ -825,7 +825,7 @@ p1_L36	15	100	H		agree
 p1_L36	16	85	H		agree
 p1_L36	17	111	H		agree
 p1_L36	18	105	H		agree
-p1_L36	19	3	M	B:5	differ
+p1_L36	19	5	H	was 3 M; B:5	lvn4611 per-token 300-dpi read 5 (A150 3, B150 5; P131; p1 control 8/10)
 p1_L36	20	150	H		agree
 p1_L36	21	=bona	M		agree-flagged
 p1_L36	22	=dira	M	A:-	gap
@@ -856,12 +856,12 @@ p1_L37	24	150	H		agree
 p1_L38	1	120	H		agree
 p1_L38	2	74	H		agree
 p1_L38	3	119	H		agree
-p1_L38	4	63	M	B:65	differ
+p1_L38	4	63	H	was 63 M; B:65	lvn4611 per-token 300-dpi read 63 (A150 63, B150 65; P136; p1 control 8/10)
 p1_L38	5	3	H		agree
 p1_L38	6	77	H		agree
 p1_L38	7	83	H		agree
 p1_L38	8	124	H		agree
-p1_L38	9	135	M	B:125	differ
+p1_L38	9	135	H	was 135 M; B:125	lvn4611 per-token 300-dpi read 135 (A150 135, B150 125; P175; p1 control 8/10)
 p1_L38	10	146	H		agree
 p1_L38	11	=pro	M		agree-flagged
 p1_L38	12	=some	M	B:=souuenance	differ
@@ -1238,7 +1238,7 @@ p2_L15	16	4	M		agree-flagged
 p2_L15	17	74	M	A:-	gap
 p2_L15	18	35	M	B:150	differ
 p2_L15	19	114	M	B:63	differ
-p2_L15	20	82	S	7	settled-a nc=2 margin=0.35
+p2_L15	20	82	M	B:7	differ
 p2_L16	1	82	H		agree
 p2_L16	2	22	H		agree
 p2_L16	3	149	H		agree
