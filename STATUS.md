@@ -9806,6 +9806,21 @@ Lessons: (1) small disk/eye jobs at cap 2 ran 1.2-1.4x -- price them at ~3; (2) 
   measurement job without that sort or new material. Next after the sort: the registered err_true test, then PREREG-VIVPACKET4 with the six
   g-split positions among its questions.
 
+## LANE DEFAULT-account-2-20261015-1809 handoff (session_01UoVHPkxBrxjComJd4MN2HE, account 2, for the orchestrator (owner account)), 15 October 2026 (18:12-18:2x UTC by date -u; closed: backlog spent; workers 0 + orchestrator ~2.6 = ~2.6 of 60 by get_session; five_hour allowed throughout, resets 20:20 UTC)
+
+Brief .claude/briefs/default-lane.md; no jobs file (no worker). Gate 0a: SESSION-SWEEP-account-2 claimed since 5 Oct, stale, proceeded.
+VERIFY-BACKLOG: Birago/ceppo rows off limits; eckert-1864/manteuffel audit2 rows N1, not run (as the 1410/1616 lanes). Step b:
+`next_steps.py --hot-only`, 87 runnable/parallel rows; excluded live DEFAULT-A4-1735 (fr5761, na-janssens, brochado, harley-287),
+VIV-KEYSTONE (fr16104, brederode-heidelberg), BNF-FOCUS (fr3985), Birago family, Armstrong, Debosnys, and everything the 1616 lane ran.
+One read-only Sonnet triage of the 30 remaining untouched folders against their NOTES: 22 steps already done (later sections),
+7 blocked or held (books.google page view, academia.edu, physical access, copy orders, the no.60 atlas), 1 runnable:
+rah-salazar-soria-sanchez-1524-28 HTRC EF lookup -- probed once at 18:1x UTC, MongoError "No primary node" again (fifth failure since
+9 Oct), noted in its NOTES, no worker spawned.
+What is left: nothing cloud-runnable on the hot list for account 2. The backlog sits in owner asks (ASKS 161, 163, 169, 49, 73, 42/43)
+and copy orders. Suggest the dispatcher not refill a DEFAULT row for account 2 until an ASKS/sorter answer or new material lands, or
+switch the next row to plain `next_steps.py` (non-hot) runnable rows. fr3987/fr3989/fr3990 (~7 each) wait on a no.60 sign atlas from
+interlined leaves (fr.3985 c.264-268, fr.3986 f.151) -- a campaign-sized step, not taken here.
+
 ## LANE DEFAULT-account-2-20261015-1616 handoff (session_01RJVk5rvjZN3Afx7NbPXjqu, account 2, for the orchestrator (owner account)), 15 October 2026 (16:16-17:0x UTC by date -u; closed: backlog spent; workers 19.71 + orchestrator ~5.5 = ~25.2 of 60 by get_session; five_hour allowed throughout)
 
 Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-15-ytbiz-default-1616-jobs.md (one wave). Gate 0a: SESSION-SWEEP-account-2

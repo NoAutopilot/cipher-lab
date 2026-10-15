@@ -507,3 +507,9 @@ Part (a) rerun a third time: `python3 tools/htrc_ef_headwords.py osu.32435013919
 
 ### RAH-EF (11 Oct 2026, 17:24-17:26 UTC by date -u; account 2, Sonnet; LANE DEFAULT-A2-1709)
 Status unchanged (blocked). Part (a) of SALAZ-KEY rerun a fourth time: `python3 tools/htrc_ef_headwords.py osu.32435013919725 --words cifra,cifras,salazar,sanchez,sánchez,soria,mirandola,descifrar,descifrado,cifrada,cifrado --target '' --json` at 17:24 UTC and, after a 60 s pause, once more at 17:25 UTC. Both returned `PrimaryUnavailableException: MongoError['No primary node is available! (Supervisor-1/ef)']` from data.htrc.illinois.edu, the same server-side database error as on 9 Oct (11:04, 11:07, 11:46, 11:48, 13:55, 13:57 UTC). Retry spent per the brief; host stopped. No per-page hits obtained, so no page read, owner or IA route can be listed from this. A search result for the log, not a verdict on the volume. Prior work: the only LEAD was this worker's own claim line (recorded CLEAR); the EF check is a rerun of a logged step. Requests: data.htrc.illinois.edu 2 (both MongoError). Next: same command once the EF API answers (~USD 0.2).
+
+### HTRC probe (15 Oct 2026, 18:1x UTC by date -u; account 2, LANE DEFAULT-A2-1809 orchestrator)
+Status unchanged (blocked). One reachability probe of the EF API for osu.32435013919725 (`/ef-api/volumes/<htid>/pages?pos=false`, 1 request,
+HTTP 200 carrying `{"code":500, ... MongoError['No primary node is available!']}`): the same failure as 9 Oct (x3) and 11 Oct, now five in a row
+over six days. No worker spent. Next: retry only after the HTRC service is reported fixed, or move the page location to an owner-desk
+HathiTrust full-text search row (LOCAL-QUEUE) for "cifra" in BRAH t.98.
