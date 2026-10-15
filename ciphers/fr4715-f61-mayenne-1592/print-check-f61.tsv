@@ -1,0 +1,10 @@
+# F61-GB2, 15 Oct 2026: unsent phrases. A search result, not a novelty verdict (CLAUDE.md rule 10).
+phrase	source	result	detail
+nous avons parle familierement et amplement de toutes choses	gbooks (control, known 200 in F61-GB)	not searched (HTTP 503 after one retry at 60 s)	control failed, host stopped; the five other phrases not sent
+il seroit trop long vous en dire	gbooks	not searched (host stopped)	
+Cependant on n'ose envoyer de part de della	gbooks	not searched (host stopped)	
+maintenant qu'on en a affere vous estes sur les lieux	gbooks	not searched (host stopped)	
+je ne seroys pas paresseux si tant soit peu	gbooks	not searched (host stopped)	
+jalousie au beau pere	gbooks	not searched (host stopped)	
+je ne seroys pas paresseux si tant soit peu	s2	HTTP 200, 5 shown, none matching	L'autodetermination ne suffit pas (2018); Comment motiver le patient a changer (2010); and three more unrelated (psychology, philosophy)
+jalousie au beau pere	s2	not searched (HTTP 429)	

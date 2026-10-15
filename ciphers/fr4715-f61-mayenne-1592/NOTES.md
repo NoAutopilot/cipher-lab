@@ -6466,3 +6466,19 @@ Remaining (this step): the five unsearched Google Books phrases (googleapis 503,
 next: the same five phrases when googleapis answers again, ~$0.3; both stay blocked from outside the session (host availability). The sign
 gaps and the Henry-Loriquet edition (LOCAL-QUEUE L30) are unchanged.
 Verdict: keep going (googleapis 503 on 2 of 3 requests; five Google Books phrases and two Semantic Scholar phrases not searched; the target stays `partial`).
+
+## F61-GB2 (15 Oct 2026, 16:31-16:3x UTC by date -u, worker F61-GB2, account 2) -- the unsent Google Books and Semantic Scholar phrases
+
+Same queries as F61-GB (quoted phrase, `country=US`, key from the environment, maxResults 10; Semantic Scholar `graph/v1/paper/search`, `x-api-key`).
+Control first: the F61-GB phrase that answered 200 (222 volumes), as the brief says. Output: `print-check-f61.tsv`. Search result only (rule 10).
+
+- Google Books: control phrase HTTP 503, one retry after 60 s 503; host stopped per the brief, so none of the five unsent phrases was sent.
+  A control that fails to answer licenses nothing either way; 0 of 5 searched.
+- Semantic Scholar: "je ne seroys pas paresseux si tant soit peu" answered 200, 5 papers shown, all unrelated (psychology, philosophy), no phrase match.
+  "jalousie au beau pere" HTTP 429 (not retried; the one-pause pass is the limit).
+
+Requests: www.googleapis.com 2 (2 x 503), api.semanticscholar.org 2 (1 x 200, 1 x 429). No sign or reading changed, so no decode re-run (rule 7).
+
+Remaining (this step): five Google Books phrases (googleapis 503 again, now 3 sessions' requests in 5 of 5 recent 503s except one 200 at 15:2x) and one Semantic Scholar phrase
+("jalousie au beau pere", 429). Both blocked from outside the session (host availability); next: same phrases when googleapis answers, ~$0.3.
+Verdict: keep going (host availability only; the target stays `partial`).
