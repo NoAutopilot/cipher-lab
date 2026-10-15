@@ -1702,3 +1702,67 @@ Read so far: unmeasured; nothing decoded -- no. 92 (121 groups) and the scan-187
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv two blind passes agreeing 59/59 (OBRED-187)
 - [x] retry: Den Tex (abridged edition) read twice (25 Sept; OBRED-SG 10 Oct 2026): no cipher, key or Stettin note; brievenboek 11851 596-733 and 11852 2-104 completed with controls (OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A)
 Verdict: keep going: 2 internal gaps; inv. 6019 stride-3 screen closed (217 scans, controls 75/75) with one hit, scan 556 (about Oct 1619, ~32 numeral groups with interlinear glosses); cheapest next: two blind passes of scans 555-557 and a pre-registered overlap test against no. 92/187 (~$4)
+
+## OBRED-556 (15 Oct 2026, 07:02-07:1x UTC by date -u, account 2, Opus; for LANE DEFAULT-A2-0509-15)
+
+Brief: two blind passes of inv. 6019 scans 555-557 (the numeral block OBRED-6019B found on 556), the glosses read once (Opus) and checked
+once (Sonnet), and a pre-registered value-overlap test against no. 92 / the scan-187 postscript with a shuffled-code control. No key edit.
+
+- Prior-work step: `prior_work.py oldenbarnevelt-brederode-1605 --item-spec 'NL-HaNA 1.01.02 inv. 6019 scans 555-557 ...' --step-type read
+  --fetch` exit 4: 1 LEAD (this job's own claim), 1 LOOK (the target-level no. 92 crop), 2 UNCHECKED, 2 UNCHECKED-NET; the four non-net
+  rows recorded CLEAR in `prior-work.tsv` (adhoc-851b7d); `grep -ril brederode sources/` finds nothing on inv. 6019. Check 1: OBRED-6019B's
+  single provisional read is the only earlier work on these scans.
+- PREREG `obred187/PREREG-OBRED556.md` pushed in its own commit (76466e0cb) before any fetch or score.
+- Requests: `service.archief.nl` 4 (METS + scans 555, 556, 557 at 5000 px), all HTTP 200; NA take/release in ROOM.md. No image committed:
+  sha1s in `images/manifest.json` (`obred_556`); `screen_tools/regen_556.sh` re-derives scans, line crops and gloss crops.
+- **What the scans are.** One letter: it runs from before 555 (555 left page begins mid-letter, "de Catholijcken ...") through 556 to 557,
+  which ends "uyt Ogersheim desen 14 octob. 1619 / UE. onderdanighste ende getrouwe dienaer / P. van Brederode" (grade M, by eye). Two
+  numeral blocks: 555 right page (12 lines carrying groups, about 55 groups) and 556 left page (6 lines, 26 groups). Scan 557 carries no
+  groups. OBRED-6019B saw only the 556 block.
+- **Transcription.** `tools/iiif_lines.py --image s0555_5000.jpg --region 2480,1180,2280,1560 --prefix s555 --debug` (15 bands) and
+  `--image s0556_5000.jpg --region 440,660,2160,720 --prefix s556 --debug` (7 bands); overlays checked (one text line per band). Two blind
+  Sonnet passes, each as two calls of 11 crops (not told any value or no. 92). `ciphertext_556.tsv`: **81 groups, 55 H-read (both passes agree,
+  high), 26 M.** The band cut lost one line (555 "30 265 434 530 320", between L14 and L15 bands): it has one transcription only (from the two
+  gloss-check calls on taller crops), graded M. Pass disagreements: 529 (passes 579, the reconciler and G1 529), 241/221/271 (555 L13, under an
+  ink cross), 605/665 (555 L09).
+- **Glosses.** Many groups carry a small interlinear letter above them, a few a name; three marginal notes summarise. Read once by this worker
+  on taller crops that keep the gloss band (`g/t555_*`, `g/t556_*`), and checked by two blind Sonnet calls (G1, G2) on the same crops.
+  **45 group glosses graded C (both reads agree on one letter or name over one group), 16 M.** The letter glosses spell Dutch words across
+  runs (grade M as words, read by this worker from the C letters): 555 L05-L06 "te favoriseren" (457 125 | 145 36 490 337 409 220 433 132 413
+  126 324), 555 L12 "met vrede" (290 178 459 490 415 130 100 129; margin "met vrede te"), 555 L14-L15 "neutra[e]l..." (323 133 483 460 411 30
+  265 ...; margin, struck, "neutrael sijn"?), 556 L03-L04 "eene diversie" (73 193 458 97 390 415 202 108), 556 L05-L06 "geholpen" (430 100
+  169 110 241 337 120 300). Name glosses: **605 "Fredrich Palsgrave" (556) and "Palsgrave" (555)**, **594 "Bohemen" on both pages**, 593
+  "Co[ninck] van Pol[en]", 587 and 600 names not read at this size. Marginal notes: 556 "van ambassadeur van Hans George Marg." beside
+  457 13 289 797 798, and "Turck"; 555 "Hertoch van B..." (unread), "met vrede te", a struck note. The glosses are a period decipherment
+  on the leaf, not ours. In-text conflicts (rule 4, logged in `HYPOTHESES.md`): 415 r/s, 337 o/p, 100 d/e (one side M).
+- **Overlap gate** (`python3 obred187/overlap556.py`, `--check` OK, `obred187/overlap556.json`): V556 69 distinct of 81 tokens; R = no. 92 |
+  187 = 130 values; **S = 42 shared** (32 with no. 92, 23 with 187). C1 uniform mean 12.64, p99 20, p = 0.0001; C2 band-matched mean 15.37,
+  p99 23, p = 0.0001; N1 Lodewijk 7206 mean 11.73, p95 16; N2 Jan van Nassau 5551 mean 8.31, p95 9. Power (187 subsampled to 81 tokens vs
+  no. 92): 0.886. H-read only: 31 of 55 tokens' values shared. **The overlap clears its pre-registered control: consistent with one code list
+  shared by no. 92 (1605), the 1604 postscript and this 1619 letter, grade M, not a reading.**
+- Descriptive, not gated: 41 distinct values carry a C gloss here; they cover 21 of no. 92's 121 tokens and 16 of 187's 59. 605 occurs in
+  no. 92 ("heeft bij 605 geobtineert", Heidelberg 1605) where the Palsgrave fits the sense (M). The names glossed here (593, 594, 600, 605) sit
+  in or at the edge of OBRED-DP's name band 588-751 (587 just below it). No value was applied to no. 92 or 187 and nothing enters key.tsv: a
+  glossed pair enters a key only through the folder's own path with a passing control (rule 3, per-unit merge), and the in-text conflicts
+  come first.
+- Where it was not found, and the limits: scans before 555 (the start of this letter, about 552-554) were not fetched, so more groups or
+  glosses may precede; the inv. 6019 stride-1 fill around 556 and inv. 6020-6024 not looked at; the 555 L15 line has one transcription; the
+  long glosses over 587, 600 and 732 and two margin notes are unread at this size.
+
+## Remaining gaps (OBRED-556, 15 Oct 2026)
+Read so far: unmeasured for no. 92 and 187 (nothing applied to them); inv. 6019 scans 555-556 carry 81 groups (55 H-read) with 45 C-graded period glosses; the overlap with no. 92/187 clears its control (S 42 vs C1 p99 20, C2 p99 23; OBRED-556)
+- no. 92 and the 187 postscript, pooled (180 tokens) with the 1619 letter's glossed values - blocker: not-attempted; the glosses were read this pass and the --try step was outside this brief; next: resolve the gloss conflicts (415, 337, 100) on the image and build a per-unit glossed-pair table, then apply it to no. 92/187 by decode_key.py --try with a value-class control (the C glosses cover 21 of no. 92's 121 tokens), ~$3
+- the start of the 1619 letter (inv. 6019 scans ~552-554) and the 555 L15 second pass - blocker: not-attempted; scans before 555 were outside this brief's 555-557; next: fetch 552-554 (3 NA requests), two blind passes of any further numeral lines plus a second pass of 555 L15, glosses read and checked, ~$3
+- the later liassen NA 1.01.02 inv. 6020-6024 and the 6019 stride-1 fill - blocker: not-attempted; screening waited on placing scan 556, done this pass; next: a stride-3 screen of inv. 6020 (~$4), now worth running since the 1619 letter shows the agent still used the 1604-05 code list
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A): no numeral block, no Brederode, Stettin or Heidelberg heading (M)
+
+## Escalation (OBRED-556, 15 Oct 2026)
+- [x] siblings: scan 187 shares 26 values with no. 92 (OBRED-187); inv. 6019 scans 555-556 (Oggersheim, 14 Oct 1619) carry 81 groups sharing 42 values with no. 92/187, clearing the shuffled-code control (OBRED-556)
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187); the 1619 letter's prose and margin summaries read in part (OBRED-556)
+- [x] known-keys: the 10 Aug 1598 Van Aerssen slip excluded for no. 92 by design (R10-OBRED98); Buzanval syllabary inv. 2028 excluded (R9-OBRED4); DECODE 1600s and Palatine/Hessian keys screened (OLD-DKEY, R8-OBRED2, R9-OBRED3)
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII has no decipherment or key note near the Brederode entries (OBRED-DP)
+- [ ] key-rebuild: a period-glossed sibling in the same code list now exists (inv. 6019 scans 555-556, 45 C glosses); next: settle the three gloss conflicts on the image, then a per-unit glossed-pair table and decode_key.py --try on no. 92/187 with a value-class control, ~$3
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 55 of 81 H-read (OBRED-556)
+- [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
+Verdict: keep going: 3 internal gaps; the 1619 Oggersheim letter (inv. 6019 scans 555-556) shares the code list of no. 92 and 187 (overlap clears its control) and carries a period letter-gloss; cheapest next: settle the gloss conflicts and --try the glossed values on no. 92/187 with a control (~$3), and fetch scans 552-554 for the letter's start (~$3)

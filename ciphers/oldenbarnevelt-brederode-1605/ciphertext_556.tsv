@@ -1,0 +1,87 @@
+# NL-HaNA 1.01.02 inv. 6019 scans 555 (right page) and 556 (left page): numeral groups inside a Dutch letter of P. van Brederode,
+# Oggersheim 14 Oct 1619 (dateline and signature on scan 557). OBRED-556, 15 Oct 2026. Two blind Sonnet passes on iiif_lines crops
+# (passA, passB), reconciled by the worker on the crops; L15 of 555 fell between bands and has one pass (+2 gloss-check reads).
+# grade: H-read both passes agree high; M otherwise. Glosses: gloss_opus = worker read on taller crops, gloss_sonnet = blind check (G1/G2);
+# gloss_grade C where both agree on one letter/name over one group, M otherwise. A gloss is a period interlinear decipherment, not ours.
+scan	line	pos	group	grade	passA	passB	gloss_opus	gloss_sonnet	gloss_grade	note
+555	L01	1	577	M	577	577	?	6		both passes low
+555	L01	2	49	H-read	49	49	b?			
+555	L01	3	529	M	579	579	y	y	C	passes 579 low; G1 and reconciler 529 (5z9)
+555	L02	1	73	H-read	73	73		d-like mark		
+555	L02	2	481	H-read	481	481	d	mark	M	gloss placement 73/481 split
+555	L02	3	313	H-read	313	313	n	n	C	
+555	L02	4	217	H-read	217	217	i	dot	C	
+555	L02	5	121	M	121	121	e?			P2 low
+555	L02	6	599	H-read	599	599	42?	42	M	superscript, not a letter
+555	L03	1	600	H-read	600	600	prince/prinz ... (unread)	prinyr wxtri	M	name gloss
+555	L03	2	587	H-read	587	587	Gr[aef] van M...(unread)	Eyk van Prmuhtyk	M	underlined; name gloss
+555	L04	1	108	M	108	108				P2 low
+555	L04	2	732	H-read	732	732	d' Fran...(unread)	d' Franytbfsy	M	name/word gloss
+555	L05	1	457	H-read	457	457	t	t	C	te
+555	L05	2	125	M	125	125	e	c	C	te; c/e letter shape
+555	L05	3	145	M	145	145	f	f	C	favoriseren
+555	L05	4	36	H-read	36	36	a	a	C	
+555	L05	5	490	H-read	490	490	v (u/n shape)	u	C	
+555	L05	6	337	H-read	337	337	o	o	C	conflict: p on 556 L05
+555	L05	7	409	H-read	409	409	r	r	C	
+555	L05	8	220	M	220	220	i	i	C	
+555	L05	9	433	H-read	433	433	s	long s	C	
+555	L05	10	132	M	132	132	e	c	C	
+555	L06	1	413	M	413	413	r	r	C	
+555	L06	2	126	H-read	126	126	e	ic	C	
+555	L06	3	324	M	324	324	n	n	C	
+555	L08	1	594	H-read	594	594	Bohemen	Bohelm.g	C	
+555	L09	1	605	M	605	605	Palsgrave	Pasfrund.	C	G1 read 665; passes 6os/605
+555	L12	1	290	H-read	290	290	m	m	C	met vrede
+555	L12	2	178	H-read	178	178	e	v	M	
+555	L12	3	459	H-read	459	459	t	t	C	G1 read 489
+555	L12	4	490	H-read	490	490	v	b	C	
+555	L12	5	415	H-read	415	415	r	r	C	conflict: s on 556 L04
+555	L12	6	130	H-read	130	130	e	o	M	
+555	L12	7	100	H-read	100	100	d		M	conflict: e on 556 L05
+555	L12	8	129	H-read	129	129	e	flourish	M	blot over gloss
+555	L13	1	314	H-read	314	314	n	n	C	
+555	L13	2	241	M	241	221		blob		third read 271; ink cross over group
+555	L13	3	122	H-read	122	122		f-like		ink cross
+555	L13	4	462	H-read	462	462		blob		ink cross
+555	L13	5	468	H-read	468	468	t	t	C	
+555	L13	6	126	H-read	126	126		tilde		
+555	L14	1	323	H-read	323	323	n	n	C	neutra(e)l
+555	L14	2	133	H-read	133	133	e	o	M	
+555	L14	3	483	H-read	483	483	u	u	C	
+555	L14	4	460	H-read	460	460	t	t	C	
+555	L14	5	411	H-read	411	411	r	r	C	
+555	L15	1	30	M	30		a	a	C	one pass only (line missed by the band cut; G1+G2 read it)
+555	L15	2	265	M	265		l	l	C	one pass only
+555	L15	3	434	M	434		?	curly mark		one pass only
+555	L15	4	530	M	530		n	n	C	one pass only
+555	L15	5	320	M	320		n	n	C	one pass only
+556	L01	1	578	H-read	578	578				
+556	L01	2	605	M	605	605	Fredrich Palsgrave	Fredrich Palsgrave	C	underlined
+556	L02	1	457	H-read	457	457				margin: van ambassadeur van Hans George Marg.
+556	L02	2	13	H-read	13	13				
+556	L02	3	289	H-read	289	289				
+556	L02	4	797	H-read	797	797				
+556	L02	5	798	H-read	798	798				
+556	L03	1	433	H-read	433	433				
+556	L03	2	461	H-read	461	461				
+556	L03	3	385	H-read	385	385				
+556	L03	4	50	H-read	50	50				
+556	L03	5	73	M	73	73	d	d	C	diversie
+556	L03	6	193	M	193	193	i	1	C	
+556	L03	7	458	M	458	458	v (n shape)	n	C	
+556	L04	1	97	M	97	97	e	ii	M	
+556	L04	2	390	H-read	390	390	r	ii	M	
+556	L04	3	415	H-read	415	415	s (long s)	f	C	conflict: r on 555 L12
+556	L04	4	202	H-read	202	202	i	i	C	
+556	L04	5	108	H-read	108	108	e	e	C	
+556	L04	6	593	M	593	593	Co[ninck] van Pol[en]	Con van Pol	C	
+556	L05	1	594	H-read	594	594	Bohemen	Prghimy	M	margin-left gloss
+556	L05	2	430	M	430	430	g?	ha	M	geholpen
+556	L05	3	100	H-read	100	100	e	ic	C	conflict: d on 555 L12
+556	L05	4	169	H-read	169	169	h	h	C	
+556	L05	5	110	M	110	110	o?		M	
+556	L05	6	241	H-read	241	241	l	L	C	
+556	L05	7	337	M	337	337	p	p	C	conflict: o on 555 L05
+556	L05	8	120	H-read	120	120	e	ic	C	
+556	L06	1	300	H-read	300	300	n	ii	M	
