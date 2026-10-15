@@ -1,0 +1,15 @@
+run	decode_raw	decode_norm	gloss	gloss_norm	sim	readers	class
+R01	cohhdefhgedealehdalhicoobalefgiacoaueh	cohdefhgedealehdalhicobalefgiacoaueh	committed [?] fuche[?] (words above symbols at top edge, cut off)	comitedfuchewordsabouesimbolsatopedgecutof	0.214	P1!=P2	unsettled
+R02	afbheiedgeihgshgocbehoi	afbheiedgeihgshgocbehoi	pri[?]ner [?] to the	prinertothe	0.174	P1!=P2	unsettled
+R03	ihhhyaahbecbedcbadccddghcacehfgg	ihiahbecbedcbadcdghcacehfg	not [?] to [..]	noto	0.000	P1!=P2	unsettled
+R04	cbealchcedhacueadca	cbealchcedhacueadca	be well [?]	bewel	0.158	P1!=P2	unsettled
+R07	iaoedgigetegabbgfheicefg	iaoedgigetegabgfheicefg	by your	biour	0.087	P1!=P2	unsettled
+R08	iehehgogaggehkegghgm	iehehgogagehkeghgm	reare to	reareto	0.167	P1!=P2	unsettled
+R09	ghcieheghfdgeigehdgeih	ghcieheghfdgeigehdgeih	his dearest frende	hisdearestfrende	0.273	P1!=P2	unsettled
+R14	ghcehddiegbhieechehchdcc	ghcehdiegbhiechehchdc	his [?]rerest Amsmeen [?]	hisrerestamsmen	0.143	P1!=P2	unsettled
+R15	doheiediggh?h	doheiedigh	for him	forhim	0.200	P1!=P2	unsettled
+R17	ebcdechehe	ebcdechehe	[..] Sirap [..]	sirap	0.000	P1!=P2	unsettled
+R18	baihyhoqhgr	baihihoqhgr	by your hu[..]	biourhu	0.273	P1!=P2	unsettled
+R19	ydghchygb	idghchigb	him selfe	himselfe	0.000	P1!=P2	unsettled
+R20	chdggheigihdhhgiggbhghgbgh	chdgheigihdhgigbhghgbgh	[?] aurachergt lasaroe	aurachergtlasaroe	0.087	P1!=P2	unsettled
+R21	abihaybbiaedghhceahchcheh	abihaibiaedghceahchcheh	de ce vielli casard avec [?]dens	deceuielicasardauecdens	0.130	P1!=P2	unsettled
