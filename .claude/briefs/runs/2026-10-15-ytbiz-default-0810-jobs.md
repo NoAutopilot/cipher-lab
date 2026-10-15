@@ -62,3 +62,15 @@ with its control) before comparing. No key.tsv edit; a fit becomes a planned --t
 
 Wave 1 sessions (08:19 UTC): MAT-F91E session_01CwXmm2kfQrxeWKwtSRByST, OBRED-TRY session_017rc54gF8WMfS6E2fCbdQKu,
 OBRED-552 session_019yesqUFWDdRLknRarNyG6X, HAR-F11 session_01HeBjVVz39Xj2r1vEJLhFn7.
+
+## Wave 1b (08:3x UTC 15 Oct)
+Intake gate 08:3x UTC: kaliningrad-2015 pass (open).
+
+### KAL-HOMRU (Opus, cap 3, box 60 min, disk/CPU only, no network): kaliningrad-2015 homophonic family on ru20_lat
+NOTES.md line ~779 (KAL-RUCORP, account 1, done 05:46): "the homophonic (written order) family re-run with `--corpus` the ru20_lat s1s files
+(its own matched control at N 1066 on ru20), ~$2 CPU, since the era change can only matter if the solver's own model uses it". Use
+`tools/family_run.py <spec> --family homophonic --corpus <ru20_lat s1s>` (control first; CONTROL BELOW GATE -> exit 3 = the result; check
+the control's blind baseline is not near ceiling, rule 3). PREREG first (gate as the folder's earlier homophonic run, seeds/restarts stated
+and sized to the box: time one control seed before choosing the count). Judge any target decode with judge_plaintext.py against ru20 and score
+the shuffled-target decode through the same judge (rule 3, ARM-C1 clause). Both numbers to HYPOTHESES.md. Status stays `open` unless rule 5
+says otherwise; no reading claimed. Update the Next step / Verdict line.
