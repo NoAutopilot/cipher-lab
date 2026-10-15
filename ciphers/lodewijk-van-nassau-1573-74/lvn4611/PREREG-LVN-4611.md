@@ -186,3 +186,37 @@ order). Then decode_key.py --check, settle.py --check, lvn4611/settle.py --check
 Prior work: `tools/prior_work.py ... --item-spec 'wvo=4611;folio=p2' --step-type transcribe --offline` run before the first read (result in
 NOTES.md). Stop rule: batch 2 is not started if its two calls would take the job past 80% of the USD 6.5 cap or 90-minute box (my estimate:
 start-up 1.0 + crops 0.5 + 0.7 per call + reconcile/map 1.0).
+
+## Addendum LVN-P2B: p2b settle on the map, then the p2_L13-L33 ordering repair (15 Oct 2026, 08:4x UTC by date -u; pushed before any output is computed)
+Job LVN-P2B (LANE DEFAULT-A4-0645-15, account 4). Disk only, no image read, no subagent: both steps are deterministic rewrites from the files
+LVN-P2RETX committed (`retx_p2_lines.tsv`, `retx_p2_map.tsv`, `insert_p2retx.tsv`) and the frozen p2b key (`key_p2b.tsv`, built by
+LVN-4611P2 before any read). The 11 H rows the reconciled ink contradicts (LVN-P2RETX list) are **not** ruled here: no H row changes value or
+grade in either step (they go to a separate verifier). Prior work: `tools/prior_work.py ... --item-spec 'wvo=4611;folio=p2' --step-type
+transcribe --offline` exit 4 at 08:41 UTC (own-work LEADs, Groen t. IV LEAD, two generic UNCHECKED; none bears on a transcription repair).
+
+**Step 1, p2b settle on the map (unit `p2bm`; the per-token read unit `p2b` stays unrun).** "Read" for a target = the ink token its row maps to
+in retx_p2_map.tsv. Targets = the 161 `target` rows of key_p2b.tsv. A target is **eligible** when all hold: (i) map status `match`; (ii) the
+ink token's how in retx_p2_lines.tsv is `A=B` (the two blind passes agree, no reconcile); (iii) **anchored**: the row at position +1 or -1
+of the same transcription line maps to the same K at kpos +1 or -1 respectively (an isolated single-value match does not count; this guards
+against the map's own value-matching placing a row on its value by construction); (iv) the ink equals A150 or B150 exactly. An eligible
+target settles under the unchanged settle rule: H when the value is a key_full.tsv code (action settled/confirmed), else M kept
+(read-confirmed-not-key-code). Every other target stays M with its reason.
+Controls (same 10 as LVN-4611P2's p2b gate, the key_p2b.tsv `control` rows, all H): (a) **positive**: a control passes when it is eligible
+by (i)-(iii) and the ink equals its H sign; gate >= 8/10. (b) **power (wrong value)**: for each control separately, its sign in
+ciphertext_4611_pre_retx.tsv is replaced by its seeded look-alike (the other candidate in key_p2b.tsv's candidates column), the map is
+rebuilt with `retx_p2.build`, and the control must come out not eligible with its look-alike value; gate >= 9/10 rejected. Both gates must
+pass, else unit p2bm is a non-test and nothing changes. Apply: `lvn4611/settle.py` writes settle_p2bm.tsv; `../settle.py` applies it as the
+last per-token unit (settled/confirmed rows only).
+
+**Step 2, ordering repair of p2_L13-L33 (after step 1, as the last 4611 stage of ../settle.py).** The rows of transcription lines
+p2_L13-p2_L33 and the LVN-P2RETX inserts p2_R* are re-sequenced into the physical lines K13-K35: (1) every row the map places (match or
+differs) and every insert (its K/n in why) takes key (K, kpos); (2) a row the map does not place (no-ink, or `duplicate` by the near-value
+rule only) stays attached after the nearest preceding row of its own transcription line in file order (before the following one if it heads
+its line), so it keeps its neighbours; (3) a **block duplicate** (a row in a block of >= 2 equal tokens lying wholly on ink another row
+already carries -- retx_p2.build's own `dup` set) is retired: moved out of ciphertext_4611.tsv into `lvn4611/retired_p2.tsv` with its full
+row, unless it is graded H or C, in which case it is kept (attached as in (2)) and listed. Rows are rewritten with line = `p2_K<KK>` and
+position = 1..n in K order; sign, confidence and alt unchanged; why gains "LVN-P2B order: was <line>/<position>". p2_L01-L12 and p1/p3 rows
+untouched. Then decode_key.py --check for all decode*.json, settle.py --check, lvn4611/settle.py --check, retx_p2.py check; C/H/M/I/U
+recounted before and after. No value is changed by step 2; its only effects are order, line ids, and the retired duplicates.
+Stop rule: none priced beyond the worker's own time (estimate ~3 of the USD 5.5 cap); if either step's checks fail and cannot be fixed by
+the 80% line (09:30 UTC), revert that step and log it.
