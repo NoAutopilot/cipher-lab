@@ -91,3 +91,19 @@ date line and signature as read (M unless on the leaf), whether the numeral syst
 last scan screened, so the next row can continue from there. Also record in NOTES.md, as a separate intake candidate and nothing more, scan
 58's French text with 2-digit groups and 3/4-digit name codes (HEID-1621E), with its date line if legible. No decode, no key, no reading.
 NOTES.md "## HEID-1621F (<date -u>)" ending in the next row (the two-block transcription priced per pass, or the continuation screen).
+
+## JOB HEID-1621G (account 2; Opus 5.5 worker, Sonnet readers; cap USD 11; box 90 minutes; service.archief.nl <= 8 (take/release lines, >= 3.1 s apart; scans already on disk are never refetched); Price: vision calls: 4 x USD 1.4 + 2 reconciliation = 8.4)
+HEID-1621F's next line for ciphers/brederode-heidelberg-1621: the pool is now two letters in one key -- scan 379/375 (13 Aug 1621, 96 numerals,
+pair+letter units) and scan 423 (17 Sept 1621, about 20 groups on two lines, mostly one-number+letter units that repeat the first number and
+letter of the 13 Aug units: 22.x, 40.d, 46.f). Two units, two blind passes each, one reconciliation each (the per-pass pricing of CLAUDE.md
+Usage 6: 2 blocks x (2 reads + 1 reconciliation)). (1) Fetch scan 423 and scan 375 at 1200 px if not on disk (manifest.json entries, sha1,
+no image committed); `tools/iiif_lines.py --image <scan> --out <dir>` for the numeral lines of each, command pasted before the first reader
+call; readers get only the line crops, return text only (numerals, dots, letters, in order), no key shown. (2) PREREG-HEID1621G.md first: the
+known-answer control = scan 375 against the committed ciphertext.tsv (scan 379, the duplicate of the same letter): per-unit agreement must be
+>= 0.90 or the pass is a non-test; the unit grammar to record (pair or single number, trailing letter, dots); the rule for M vs S (both
+readers agree = S for the digits/letters as transcribed, else M; no value is read, so nothing is H/C). (3) Outputs: `ciphertext_6021_423.tsv`
+(line, pos, unit, number(s), letter, confidence, why) and `ciphertext_6021_375.tsv`, the per-unit agreement table 375 vs 379, and a merged
+`units.tsv` across both letters (unit id, letter, numbers, occurrences per letter) so the next spec can count the shared units. Report in
+NOTES.md "## HEID-1621G (<date -u>)": agreement numbers, unit inventory (distinct units across both letters, how many are shared), whether
+the 17 Sept single-number form is the 13 Aug pair's first number every time, requests per host, and the next row (the pooled spec +
+first cheap test, cap 3). No decode, no key, no reading.

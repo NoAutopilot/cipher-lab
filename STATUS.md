@@ -9992,3 +9992,11 @@ the Resolutien (p.295 res. 1879b) calendar a SECOND Brederode letter in code, 17
 period decipherment leads not digitised: 6056 (Mansfelt 1622 'met de oplossing'), 6055, 12578.1 (Haga key). HEID-1621F queued on account 2
 (cap 4): stride-1 from scan 398 for the 17 Sept letter. status.json target next line updated. Account 1 paused; owner page empty; FDR not
 reported sent; no owner word on halt.
+
+LANE VIV-KEYSTONE handoff, appended 20:4x UTC 15 Oct 2026 (parent, account 4). HEID-1621F: the 17 Sept 1621 Brederode letter "Gedeeltelijk
+in code" FOUND at inv. 6021 scans 416-424, numeral block on scan 423 (about 20 groups, two lines; close "uyt Heydelberg desen xvij Septembris
+1621", signed Van Brederode; all M); units mostly one-number+letter (22.x, 40.d, 46.f) repeating the first number and letter of the 13 Aug
+pair units -- same key, shorter form (M lead); no duplicate in 425-451; controls 18/18; 57 NA requests. Pool = two letters, one key.
+HEID-1621G queued on account 2 (cap 11, priced 4 reads + 2 reconciliations): transcribe scan 423 and the scan 375 witness, agreement control
+375 vs 379, merged unit inventory. status.json next line updated. Account 1 paused; owner page empty; FDR not reported sent; no owner word
+on halt.

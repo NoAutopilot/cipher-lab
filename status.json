@@ -850,7 +850,7 @@
    "stage": 2,
    "state": "open",
    "holder": "Nationaal Archief",
-   "next": "Find the sibling: Resolutien SG NR 5 p.295 res. 1879b calendars Brederode's 17 Sept 1621 letter as 'Gedeeltelijk in code' in the same liasse (inv. 6021, after scan 397, not yet seen; HEID-1621F queued, stride-1 screen). Then transcribe both blocks (scan 375 second witness + the 17 Sept block) and pool. Key/decipherment leads not digitised: inv. 6056 (Mansfelt 1622 'in cijfer, met de oplossing'), 6055 (SG minute with code 1621), 12578.1 (Haga key 1618-22) -- an NA copy request if the pool reaches a usable N. Scan 58 (French, 2-digit groups + name codes) is a separate intake candidate.",
+   "next": "Transcribe the pool: scan 423 (17 Sept 1621, about 20 groups, mostly one-number+letter units such as 22.x / 40.d / 46.f that repeat the first number and letter of the 13 Aug units) and scan 375 (13 Aug signed witness) with two blind readers each (HEID-1621G queued, cap 11); then one spec for both letters under one key. Period decipherment leads not digitised: inv. 6056 (Mansfelt 1622 'met de oplossing'), 6055, 12578.1 (Haga key). Scan 58 (French, 2-digit groups + name codes) is a separate intake candidate.",
    "note": "Found 15 Oct 2026 by OBRED-6021 (account 2) in a stride-6 screen of inv. 6021; sender read on the signed letter (HEID-1621B); Resolutien SG nieuwe reeks 5 p.260 res. 1644b calendars it as 'Gedeeltelijk in code' with no decipherment (HEID-1621D); not in DECODE, Cryptiana or either solver repository (HEID-1621C). Design lead: two-digit consecutive-pair groups each followed by a letter, one unit per word."
   }
  ],
