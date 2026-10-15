@@ -1,0 +1,4 @@
+time	target	hypothesis	occurrences	statistic	null_pos_p95	null_val_p95	verdict	flag
+2026-10-15 06:57	ciphers/na-suriname-map-1781	k=a	9	-128.9	-49.0	-96.9	reject	non-blind
+2026-10-15 06:57	ciphers/na-suriname-map-1781	h=n	10	2.0	-10.8	-49.5	reject	non-blind
+2026-10-15 06:57	ciphers/na-suriname-map-1781	g=l	17	267.2		443.0	undecided	non-blind
