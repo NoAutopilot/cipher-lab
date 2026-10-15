@@ -1,0 +1,6 @@
+HEID-1621B sheet calls (inv. 6021 scans 361-397 at 700 px, seed 16211, SHEET_SCANS=9), written before the sheet key is opened. One reader, this worker's eye.
+sheet01: controls CTRL-CIPHER=D CTRL-PLAIN=A CTRL-PS=B; hits: none; notes: I signed close with paraph (prose); F address leaf + French letter; L Italian
+sheet02: controls CTRL-CIPHER=B CTRL-PLAIN=D CTRL-PS=G; hits: I (left page numeral groups in prose, right page close with subscription and signature + paraph); notes: F signed close; J address leaf + letter opening
+sheet03: controls CTRL-CIPHER=E CTRL-PLAIN=H CTRL-PS=A; hits: J (left page numeral groups in prose, right page close with subscription, no name visible at sheet size); notes: B signed close + 'Post data'; C address leaf with seal
+sheet04: controls CTRL-CIPHER=F CTRL-PLAIN=J CTRL-PS=I; hits: none; notes: D and L carry heavily struck-out lines (ink bars), prose; E and H grey slips laid over the page
+sheet05: controls CTRL-CIPHER=D CTRL-PLAIN=A CTRL-PS=B; hits: none; notes: C signed close (prose)
