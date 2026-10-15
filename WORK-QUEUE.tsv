@@ -673,3 +673,7 @@ DEFAULT-account-4-20261015-1035	account-4	.claude/briefs/default-lane.md	Opus 5.
 DEFAULT-account-2-20261015-1109	account-2	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-15 13:04	2026-10-15 11:09	auto-fill: blast 1 of 1 until 2026-10-17 18:00; closed 13:0x UTC: backlog thin, ~51.9 of 60
 DEFAULT-account-1-20261015-1140	account-1	.claude/briefs/default-lane.md	Opus 5.5	60	600	claimed session_013wJZeHsieHfTMbqKn1r5zR 2026-10-15 11:40	2026-10-15 11:40	auto-fill: blast 1 of 1 until 2026-10-17 18:00
 DEFAULT-account-4-20261015-1236	account-4	.claude/briefs/default-lane.md	Opus 5.5	60	600	claimed session_01XujJAdRCXr9a3KzuqA9wTH 2026-10-15 12:36	2026-10-15 12:36	auto-fill: blast 1 of 1 until 2026-10-17 18:00
+THUR-P188	account-1	.claude/briefs/runs/2026-10-15-acct4-depth-steps.md	Opus 5.5	6	75	queued	2026-10-15 13:15	depth-step job for LANE VIV-KEYSTONE (account 4); reports to the account-4 parent
+MERCY-M33	account-1	.claude/briefs/runs/2026-10-15-acct4-depth-steps.md	Opus 5.5	4	60	queued	2026-10-15 13:15	depth-step job for LANE VIV-KEYSTONE (account 4); reports to the account-4 parent
+LVN-NAMES	account-2	.claude/briefs/runs/2026-10-15-acct4-depth-steps.md	Opus 5.5	6	90	queued	2026-10-15 13:15	depth-step job for LANE VIV-KEYSTONE (account 4); reports to the account-4 parent
+HEID-1621	account-2	.claude/briefs/runs/2026-10-15-acct4-depth-steps.md	Opus 5.5	6	75	queued	2026-10-15 13:15	depth-step job for LANE VIV-KEYSTONE (account 4); reports to the account-4 parent
