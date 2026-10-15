@@ -1,0 +1,43 @@
+# BAL-169 (15 Oct 2026, account 1): further glossed runs of the same office hand on Baluze 169 c174-c188 (the f.80 Memoire's continuation,
+# July 1639), read by this worker's eye at 2400 px with zooms of each target numeral (not blind: I knew key.tsv). Same conventions as
+# glossed_pairs.tsv (' = separate rising acute; : = second dot; plain = no mark). Only tokens I could place under the gloss; a 16 whose mark
+# I could not settle is left out (c181 'de la Couronne', c185 L1/L3, c187 'les grandes de', c178 'deffiance').
+run	canvas	gloss	pos	sign	unit
+b174a	174	demeuree	1	16	de
+b174a	174	demeuree	2	46'	me
+b174a	174	demeuree	3	s:y	u
+b174b	174	de la cause	1	16	de
+b174b	174	de la cause	2	40'	la
+b174b	174	de la cause	3	10	ca
+b174b	174	de la cause	4	s:y	u
+b174b	174	de la cause	5	71'	se
+b188a	188	de blasme	1	16	de
+b188a	188	de blasme	2	s:y	b
+b188a	188	de blasme	3	40'	la
+b181a	181	arbitrage	1	4'	bi
+b181a	181	arbitrage	2	s:u4	t
+b181a	181	arbitrage	3	65'	ra
+b181a	181	arbitrage	4	26'	ge
+b186a	186	General	1	26	ge
+b186a	186	General	2	51'	ne
+b186a	186	General	3	65'	ra
+b186a	186	General	4	s:n	l
+b186b	186	General	1	26	ge
+b186b	186	General	2	51'	ne
+b186b	186	General	3	65'	ra
+b186b	186	General	4	s:n	l
+b187a	187	grandes	1	s:r	g
+b187a	187	grandes	2	65'	ra
+b176a	176	descouvrir	1	93'	des
+b176a	176	descouvrir	2	13'	co
+b176a	176	descouvrir	3	67'	ri
+b178a	178	accorde	1	13'	co
+b178a	178	accorde	2	6	r
+b178a	178	accorde	3	16'	de
+b186c	186	le commanderoit	1	41'	le
+b186c	186	le commanderoit	2	13'	co
+b186c	186	le commanderoit	3	s:u4	m
+b186c	186	le commanderoit	4	45'	ma
+b186c	186	le commanderoit	5	s:h	n
+b186c	186	le commanderoit	6	16'	de
+b186c	186	le commanderoit	7	68'	ro

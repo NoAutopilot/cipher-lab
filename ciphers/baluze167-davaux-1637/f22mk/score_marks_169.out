@@ -1,0 +1,12 @@
+sign	value	glossed_n	units	agree	wrong_mark_values	wrong_hits
+16'	de	13	{'de': 13}	13	-	0
+16	de	5	{'de': 5}	5	-	0
+45'	ma	5	{'ma': 5}	5	['holandois']	0
+12:	ment	3	{'ment': 3}	3	['ci']	0
+13:	Mr	1	{'Mr': 1}	1	['sued', 'co']	0
+real 27/27; within-run shuffle (200 seeds) mean 6.87, p95 10, max 13; shuffles >= real: 0/200
+call 16' = de: 13/13 -> S
+call 16 = de: 5/5 -> S
+call 45' = ma: 5/5 -> S
+call 12: = ment: 3/3 -> S
+call 13: = Mr: 1/1 -> M

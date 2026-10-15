@@ -4061,5 +4061,133 @@
    "kept": "untracked scratch (images/scratch/c275u4/), not committed",
    "job": "BAL-C275U4"
   }
+ ],
+ "bal169_fetches": [
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f172/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T05:02Z",
+   "http": 200,
+   "size": 1260711,
+   "sha1": "cce68563e70fd9ee5da1d74103720d5d40242832",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-169"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f174/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T05:02Z",
+   "http": 200,
+   "size": 1291396,
+   "sha1": "bd0ddd82bb2254dd235de4e0b5c1c10806f9ac17",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-169"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f176/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T05:03Z",
+   "http": 200,
+   "size": 1341777,
+   "sha1": "3b5bfd3cd3d4fc72939478b1c2a1d38a71100c7d",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-169"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f178/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T05:03Z",
+   "http": 200,
+   "size": 1259213,
+   "sha1": "b8065ab2ba7c8d95dbfdbdf960d16ed7dc811b98",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-169"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f179/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T05:03Z",
+   "http": 200,
+   "size": 1254138,
+   "sha1": "2c011c36431f1c0194c681dbaf3a4f6609e0d9c6",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-169"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f180/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T05:03Z",
+   "http": 200,
+   "size": 1290878,
+   "sha1": "4122e860d18dcf68875ff714ff183ba9ae003adb",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-169"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f181/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T05:03Z",
+   "http": 200,
+   "size": 1272802,
+   "sha1": "823a364e06c20928831068a7fc85c35209fcaa0a",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-169"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f182/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T05:03Z",
+   "http": 200,
+   "size": 1264099,
+   "sha1": "9afee4cfd2e2798a746c317513670e420b169c7e",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-169"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f183/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T05:03Z",
+   "http": 200,
+   "size": 1261330,
+   "sha1": "58cb11c516e8108ee925e859525effe749a60900",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-169"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f184/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T05:03Z",
+   "http": 200,
+   "size": 1272038,
+   "sha1": "343d3d8cf1b4ca886303dd26dbc47689cd2b6eac",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-169"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f185/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T05:03Z",
+   "http": 200,
+   "size": 1272259,
+   "sha1": "909c759caace9531c879c5456d5c229eec0533d4",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-169"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f186/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T05:04Z",
+   "http": 200,
+   "size": 1288366,
+   "sha1": "69a108385fbd1f9565d76bd3f621bea3e536584e",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-169"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f187/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T05:04Z",
+   "http": 200,
+   "size": 1307172,
+   "sha1": "4f4dfe739bac780d1ed63ea475262bddc217c73b",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-169"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f188/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T05:04Z",
+   "http": 200,
+   "size": 1307802,
+   "sha1": "18280c2e0e710a1d7b894104063b98d5a0bc5df6",
+   "kept": "session scratch only, not committed",
+   "job": "BAL-169"
+  }
  ]
 }

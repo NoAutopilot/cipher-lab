@@ -1,9 +1,9 @@
 line	pos	sign	conf	value	grade
 L01	6	71'?	?	se	S
-L01	7	16'?	?	de	M
+L01	7	16'?	?	de	S
 L01	8	L:f?	?	f	I
 L02	0	100'		faire	I
-L02	1	16'?	?	de	M
+L02	1	16'?	?	de	S
 L02	2	81=		Milandre	H
 L03	0	95'		en	H
 L03	2	94'		don	H
@@ -14,7 +14,7 @@ L03	6	13'?	?	co	S
 L03	7	L:m?	?	m	S
 L03	8	45'?	?	ma	S
 L03	9	L:n?	?	n	S
-L03	10	16'?	?	de	M
+L03	10	16'?	?	de	S
 L03	11	12:?	?	ment	S
 L03	12	L:a?	?	a	S
 L03	13	13:?	?	Mr	M
