@@ -48,3 +48,19 @@ are (n, n+1), one unit per word, Dutch 1621, second witness scan 375 for a trans
 inventory vs a Dutch word-frequency list under a frozen pool, with the matched control a synthetic 21-unit word code of the same length;
 a `judge` block on the nl corpus if tools/data has one, else say so). No decode, no key, no reading. NOTES.md "## HEID-1621C (<date -u>)"
 ending in the verdict and the next breadth row (cap 3) the parent should queue.
+
+## JOB HEID-1621D (account 2; Opus 5.5 worker, Sonnet readers for step 3 only; cap USD 4; box 60 minutes; resources.huygens.knaw.nl <= 15 (one retry after a pause on a 503, never a loop), service.archief.nl <= 4; Price: vision calls: 2 x USD 1.4 + 1 reconciliation = 4.2 -- run step 3 only if steps 1-2 leave at least USD 4.2 under the cap, else name it as the next row)
+HEID-1621C's own next line for ciphers/brederode-heidelberg-1621 (status blocked: Resolutien der Staten-Generaal nieuwe reeks 5, 1621-1622,
+Roelevink 1983, unread -- Huygens retroboeken answered 503 twice, Google Books NO_PAGES). (1) One Huygens retroboeken retry for the
+Staten-Generaal 1621 volume (CLAUDE.md host table: `retroboeken/<book>/<accessor>/index_html?search_term...`; sources/huygens/NOTES.md for the
+accessor), searching Brederode / Heidelberg / the receipt dates 20 Aug 1621 and the letter dates 8 and 13 Aug 1621; read the calendar
+entries and say whether the resolution prints or summarises the letter's content and whether it mentions cipher. If it answers 503 again:
+stop that host, write one LOCAL-QUEUE.tsv row (tools/local_runner_brief.md shape) for the owner's browser naming the volume, the dates and
+the question, and leave the status blocked. (2) If the edition is read: write the "## Premise check" verdict, run `python3
+tools/intake_gate_check.py brederode-heidelberg-1621` and paste it; if it passes, write `specs/brederode-heidelberg-1621.json` as HEID-1621C
+specified (pair+letter units, (n, n+1) constraint, one unit per word, Dutch 1621, second witness scan 375, first cheap test = unit inventory
+vs an nl16 word list under a frozen pool, matched control = a synthetic 21-unit word code of the same length and unit count) and run that
+first test at cap 3 within this job (control first, both numbers into the spec's `cheap_test_done` and HYPOTHESES.md). (3) Only if cap room
+remains: the scan 375 second witness -- `tools/iiif_lines.py --image <scan375 1200 px> --out <dir>` pasted, two blind Sonnet readers on the
+numeral lines, one reconciliation, agreement with ciphertext.tsv (scan 379) per unit as the transcription control; no reading, no key.
+NOTES.md "## HEID-1621D (<date -u)" ending in the status word and the next row.

@@ -9911,3 +9911,10 @@ code 25's value. HEID-1621B: sender read H on scan 375 -- P. van Brederode, Heid
 block on a signed letter and its duplicate (two witnesses); edition step due (Resolutien SG nieuwe reeks 1621, Roelevink) -> HEID-1621C
 queued on account 2 (check-solved by sender, split to ciphers/brederode-heidelberg-1621, spec). Account 1 paused (seven_day warning).
 Owner step-1 page empty; FDR not reported sent.
+
+LANE VIV-KEYSTONE handoff, appended 17:4x UTC 15 Oct 2026 (parent, account 4). HEID-1621C: new folder ciphers/brederode-heidelberg-1621
+(P. van Brederode to the States General, Heidelberg 13 Aug 1621, 96 numerals, two witnesses), status blocked -- the recipient-side edition
+(Resolutien SG nieuwe reeks 5, 1621-22, Roelevink 1983) unread: Huygens retroboeken 503 x2, Google Books NO_PAGES though the snippet
+confirms it calendars Brederode's Heidelberg letters; no sender print, nothing in DECODE/Cryptiana/solver repos; intake gate exit 0 =
+blocked, no spec. HEID-1621D queued on account 2 (cap 4): one Huygens retry (else a LOCAL-QUEUE row), spec + first cheap test if the gate
+passes, scan 375 witness if room. Account 1 paused; 2 and 4 in blast; owner page empty; FDR not reported sent; no owner word on halt.
