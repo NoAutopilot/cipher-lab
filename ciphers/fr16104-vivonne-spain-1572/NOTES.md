@@ -4310,3 +4310,42 @@ Report what was found and where it was not found; no novelty classified, no dept
 Next (one line, not done here): rebuild the five-leaf model (5 openapi requests: f196 or the scratch crops, f206, f207, f216, f217; `vivcls/seg.py`, `gsplit.py check3`
 reproduces), then classify the 63 whole tiles in boxes_handcut_f191r.tsv and run `f191.py --override ... --tag gsplit3 --stats` (a)/(b) -- no looks needed, ~USD 1;
 optionally 2 more looks for the 41 uncut g tokens.
+
+## VIV-GSPLIT3E (15 Oct 2026, 10:13-10:2x UTC by date -u, account-4 worker for LANE VIV-KEYSTONE): the 63 hand-cut f.191r g tiles classified -- 6 predicted f; strict all-H run 37 -> 24
+Brief: .claude/briefs/runs/2026-10-13-acct4-keystone-viv-jobs.md "JOB VIV-GSPLIT3E". PREREG-VIVGSPLIT3.md Addendum D pushed (0400b4dbe) before any fetch.
+Measurement only: key.tsv, rec.tsv, decode.tsv, every reading and status.json untouched; `tx/viv63_f191/f191.py --check` exit 0. No looks: no tile was cut, moved or re-judged.
+**Rebuild:** openapi.bnf.fr native regions f206, f207 left, f207 right, f216, f217 curled once into the scratchpad and cut with the manifest's own `iiif_lines.py --image ...
+--region ...` lines (crop counts 50/96/96/36/99 as the manifests; p67c into $VIVGSPLIT3_SCRATCH/p67c); c196 by the VIV-F191 `--deskew-region` command into
+$VIVGSPLIT3_SCRATCH/f191 (72 crops); `tx/vivcls/seg.py` rebuilt the atlas. **Reproduction gate passed:** `gsplit.py check3` exit 0 -- result.json byte-identical to 3C's
+(tp 15, fp 5, fn 3, tn 116; F1 0.789; null p99 0.4001, no atlas drift this time). (material3 writes no material.tsv; the byte-identical comparison is result.json/per_tile.tsv.)
+**Classification** (new `gsplit.py f191h` / `check191h`: the registered seven-leaf model, 18 f / 121 r whole truth tiles, recut_feats, 1-NN registered, 5-NN report-only,
+no refit, no threshold): **whole 63 -> predicted f 6 (1-NN)**, 2 by the 5-NN report-only rule; unsure with a box 5 (4 of the 9 unsure carry no box) -> 3 predicted f
+(1-NN), reported only, never in the override. Base rate: about 5% of truth-leaf g is f (expected ~3 of 63); at that prevalence the held-out rates (recall 0.833, r->f
+4.1%) give about 2.6 true + 2.5 false f expected, i.e. precision near 0.5 on this leaf (arithmetic, report-only).
+| f.191r line:pos | rec sign/flag | local decode, committed g = r (-> f) | 1-NN (dist) | 5-NN (report-only) | nearest training tiles |
+|---|---|---|---|---|---|
+| L01:20 | g/0 | nturesoa[r>f]eutdinn | f (4.10) | f | f027 f.103r L32:16, f118 f.202r L32:46, f073 f.201v L29:53 |
+| L04:48 | g/0 | et_airem[r>f]ti | f (5.38) | r | f116 f.202r L27:50, r137, r091 |
+| L07:8 | g/0 | en_test[r>f]eaduenu | f (4.02) | r | f002 f.102r L15:38, r064, r077 |
+| L10:38 | g/0 | ungtresg[r>f]andeoua | f (6.66) | r | f116 f.202r L27:50, r056, f026 |
+| L18:15 | g/0 | rtiedene[r>f]aire_eu | f (4.18) | r | f051 f.201r L18:48, r141, r019 |
+| L29:42 | g/0 | uresioui[r>f]re | f (6.10) | r | f116 f.202r L27:50, r077, f029 |
+Unsure (boxed, not in the override): L08:15 f, L12:7 f (5-NN f), L29:18 f; L11:31 and L29:43 r. Full table: tx/vivgsplit3/f191r_pred.tsv; summary f191r_result.json.
+Override: tx/sorter_f191/gsplit_override_2026-10-15.tsv, 6 rows (new_sign gf, action classifier-f, letter f). `f191.py` extended minimally: action `classifier-f` ->
+new_sign (outside the key, U); `--letter-s` (report-only) reads such a new_sign as its letter column at grade S, adds it to the gate key, and reports the longest H-or-S
+run beside the strict one (letter-S writes no decode file).
+| run | grades after (H/M/U/S) | longest all-H run before -> after | longest H-or-S | V_strict stretch top1 before -> after (null p99) | b2 / wrong keys | C1 / C2 |
+|---|---|---|---|---|---|---|
+| **(a) strict, registered** (`--tag gsplit3`) | 1361/240/138/0 | **37 (L10-L11) -> 24 (L14-L15)** | -- | 21 (19) -> 17 (16) | PASS / PASS | PASS / PASS |
+| (b) letter-S, report-only (`--tag gsplit3S --letter-s`) | 1361/240/132/6 | 37 -> 24 | 37 -> 37 ('...tresgfande...', L10-L11) | 21 (19) -> 17 (16) | PASS / PASS | PASS / PASS |
+**Verdict (registered, Addendum C item 4):** no stretch >= 42 all-H with no liberty; the strict run falls 37 -> 24 because the predicted f at L10:38 sits inside the
+page's longest all-H run ('ung tres g[r]ande'), where the committed r reads the word and f does not; logged, nothing goes to a verifier. Letter-S does not lengthen any
+run (37 -> 37, the same span with 'gfande') and lowers the stretch top1 21 -> 17. Context only, not a relabel: L18:15 reads 'de ne [f]aire' with f; L10:38 reads
+'grande' only with r. No key row, rec.tsv or reading changes.
+Reproduce: crops as above; `python3 tx/vivcls/seg.py`; `VIVGSPLIT3_SCRATCH=DIR python3 tx/vivgsplit/gsplit.py check3` and `check191h` (both exit 0 here);
+`cd tx/viv63_f191 && python3 f191.py --override ../sorter_f191/gsplit_override_2026-10-15.tsv --tag gsplit3 --stats` (and `--tag gsplit3S --letter-s --stats`); `f191.py --check` exit 0.
+Requests: openapi.bnf.fr 6 (f206, f207 left, f207 right, f216, f217 native regions; c196 region; all HTTP 200, one at a time >= 3 s; take/release lines). Subagent calls 0.
+Vision looks 0. Cost not visible to this session.
+Report what was found and where it was not found; no novelty classified, no depth set.
+Next (one line, not done here): the 41 uncut f.191r g tokens (L17, L19-L28, L33-L36; 2 cut + 2 check looks, ~USD 2) would complete the classified set; a person's look at
+L18:15 and L10:38 on the crop would say more than the classifier can at ~0.5 expected precision.

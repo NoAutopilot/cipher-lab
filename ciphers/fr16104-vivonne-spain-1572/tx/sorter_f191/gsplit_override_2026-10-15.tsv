@@ -1,2 +1,8 @@
-# VIV-GSPLIT (PREREG-VIVGSPLIT Addendum A): predicted-f g tokens of f.191r under the f.102r+f.103r f/r model -- none of 28 tileable g tokens (116 g) predicted f, so no rows. Consumed by tx/viv63_f191/f191.py --override.
-line	pos	sid	qid	pile	new_sign	action	rec_sign	rec_flag	q_code
+# VIV-GSPLIT3E (PREREG-VIVGSPLIT3 Addenda C/D): predicted-f WHOLE hand-cut f.191r g tiles under the registered seven-leaf hand-cut model (gsplit.py f191h, 1-NN); unsure tiles are never rows. Consumed by tx/viv63_f191/f191.py --override; letter used only with --letter-s.
+line	pos	sid	qid	pile	new_sign	action	rec_sign	rec_flag	q_code	letter
+L01	20	L01:20			gf	classifier-f	g	0		f
+L04	48	L04:48			gf	classifier-f	g	0		f
+L07	8	L07:8			gf	classifier-f	g	0		f
+L10	38	L10:38			gf	classifier-f	g	0		f
+L18	15	L18:15			gf	classifier-f	g	0		f
+L29	42	L29:42			gf	classifier-f	g	0		f

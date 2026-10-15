@@ -6,6 +6,7 @@
   python3 .../tx/vivgsplit/gsplit.py check         # re-run material + run and fail if result.json would change (rule 7)
   VIVGSPLIT2_SCRATCH=DIR gsplit.py material2 | run2 | check2   # VIV-GSPLIT2 (PREREG-VIVGSPLIT2.md): five leaves -> tx/vivgsplit2/
   VIVGSPLIT3_SCRATCH=DIR gsplit.py material3 | run3 | check3   # VIV-GSPLIT3 (PREREG-VIVGSPLIT3.md): every tile hand-cut -> tx/vivgsplit3/
+  VIVGSPLIT3_SCRATCH=DIR gsplit.py f191h | check191h          # VIV-GSPLIT3E (Addenda C/D): classify the hand-cut f.191r g tiles -> override
 
 Material: VIV-CLS round-2 label-aware map tiles at op 1:1 (one tile on the token): tx/vivcls/train/map_r2_f10{2,3}r.tsv against the truth
 skeleton; f.201r's map is against passA (tx/vivcls/real/map_r2_f201r.tsv), carried to truth positions by tx/vivhuman/sets.aligned (as
@@ -595,6 +596,49 @@ def cmd_run3(a):
         print('   ', h, f['nn1']['n_f'], f['nn1']['n_r'], 'rec', f['nn1']['f_recall'], 'pre', f['nn1']['f_precision'], 'f1', f['nn1']['f1'])
 
 
+def cmd_f191h(a):
+    """VIV-GSPLIT3E (PREREG-VIVGSPLIT3 Addendum C items 2-3, Addendum D): the full seven-leaf hand-cut model (material3, every whole truth tile,
+    recut_feats, 1-NN registered, distance-weighted 5-NN report-only; no refit, no threshold) on the f.191r hand-cut tiles of
+    tx/vivgsplit3/boxes_handcut_f191r.tsv. whole -> classified, rows into the override; unsure -> classified, reported separately, never in the override."""
+    scr = os.environ.get('VIVGSPLIT3_SCRATCH', '')
+    mat, summ = material3()
+    q = []
+    for h in rd(os.path.join(OUT3, 'boxes_handcut_f191r.tsv')):
+        if h['verdict'] in ('whole', 'unsure') and h['image']:   # 4 unsure rows carry no box (window missed / no g seen)
+            q.append(dict(h, image=h['image'].replace('$VIVGSPLIT3_SCRATCH', scr)))
+    X = recut_feats(mat + q)
+    Xt, Xq = X[:len(mat)], X[len(mat):]
+    rec = {(r['line'], r['pos']): r for r in csv.DictReader(open(os.path.join(FOLD, 'tx', 'viv63_f191', 'rec.tsv'), encoding='utf-8'),
+                                                            delimiter='\t', quoting=csv.QUOTE_NONE)}   # rec.tsv carries a bare '"' vote
+    rows, over = [], []
+    for i, h in enumerate(q):
+        d = np.linalg.norm(Xt - Xq[i], axis=1)
+        o = np.argsort(d, kind='stable')
+        v = collections.Counter()
+        for j in o[:5]:
+            v[mat[j]['cls']] += 1 / (float(d[j]) + 1e-6)
+        r = rec[(h['line'], h['pos'])]
+        nn = ' '.join(f"{mat[j]['sid']}:{mat[j]['cls']}:{mat[j]['leaf']}_{mat[j]['line'].split('_')[-1]}:{mat[j]['tpos']}:{d[j]:.3f}" for j in o[:5])
+        rows.append(dict(gid=h['gid'], line=h['line'], pos=h['pos'], verdict=h['verdict'], rec_sign=r['sign'], rec_flag=r['flag'],
+                         pred_1nn=mat[o[0]]['cls'], d1=round(float(d[o[0]]), 4), pred_5nn_report_only=max(v, key=v.get), nearest5=nn))
+        if h['verdict'] == 'whole' and mat[o[0]]['cls'] == 'f':
+            over.append(f"{h['line']}	{h['pos']}	{h['gid']}			gf	classifier-f	{r['sign']}	{r['flag']}		f")
+    wr(os.path.join(OUT3, 'f191r_pred.tsv'), list(rows[0].keys()), rows)
+    head = ('# VIV-GSPLIT3E (PREREG-VIVGSPLIT3 Addenda C/D): predicted-f WHOLE hand-cut f.191r g tiles under the registered seven-leaf hand-cut model '
+            '(gsplit.py f191h, 1-NN); unsure tiles are never rows. Consumed by tx/viv63_f191/f191.py --override; letter used only with --letter-s.\n'
+            'line\tpos\tsid\tqid\tpile\tnew_sign\taction\trec_sign\trec_flag\tq_code\tletter\n')
+    open(os.path.join(FOLD, 'tx', 'sorter_f191', 'gsplit_override_2026-10-15.tsv'), 'w').write(head + ''.join(x + '\n' for x in over))
+    w = [r for r in rows if r['verdict'] == 'whole']; u = [r for r in rows if r['verdict'] == 'unsure']
+    out = dict(model=summ, whole=len(w), unsure=len(u), pred_f_whole_1nn=sum(r['pred_1nn'] == 'f' for r in w),
+               pred_f_whole_5nn_report_only=sum(r['pred_5nn_report_only'] == 'f' for r in w),
+               pred_f_unsure_1nn=sum(r['pred_1nn'] == 'f' for r in u), pred_f_unsure_5nn_report_only=sum(r['pred_5nn_report_only'] == 'f' for r in u))
+    json.dump(out, open(os.path.join(OUT3, 'f191r_result.json'), 'w'), indent=1)
+    print(json.dumps(out))
+    for r in rows:
+        if r['pred_1nn'] == 'f' or r['pred_5nn_report_only'] == 'f':
+            print(r['verdict'], r['line'] + ':' + r['pos'], r['rec_sign'], r['rec_flag'], '1nn', r['pred_1nn'], '5nn', r['pred_5nn_report_only'], r['nearest5'])
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest='cmd', required=True)
@@ -609,6 +653,8 @@ def main():
     sp.add_parser('material3')
     sp.add_parser('run3')
     sp.add_parser('check3')
+    sp.add_parser('f191h')
+    sp.add_parser('check191h')
     a = ap.parse_args()
     if a.cmd == 'material':
         material()
@@ -626,6 +672,14 @@ def main():
         print(json.dumps(material3()[1]))
     elif a.cmd == 'run3':
         cmd_run3(a)
+    elif a.cmd == 'f191h':
+        cmd_f191h(a)
+    elif a.cmd == 'check191h':
+        fs = [os.path.join(OUT3, 'f191r_result.json'), os.path.join(OUT3, 'f191r_pred.tsv'),
+              os.path.join(FOLD, 'tx', 'sorter_f191', 'gsplit_override_2026-10-15.tsv')]
+        old = [open(f).read() for f in fs]
+        cmd_f191h(a)
+        sys.exit(0 if [open(f).read() for f in fs] == old else 'tx/vivgsplit3 f191r outputs are stale')
     elif a.cmd == 'check3':
         old = open(os.path.join(OUT3, 'result.json')).read()
         cmd_run3(a)

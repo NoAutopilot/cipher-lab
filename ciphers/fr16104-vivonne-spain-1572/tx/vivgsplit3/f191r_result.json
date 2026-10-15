@@ -1,0 +1,42 @@
+{
+ "model": {
+  "N_f": 18,
+  "N_r": 121,
+  "per_leaf": {
+   "f102r": [
+    4,
+    17
+   ],
+   "f103r": [
+    4,
+    17
+   ],
+   "f201r": [
+    1,
+    19
+   ],
+   "f201v": [
+    2,
+    16
+   ],
+   "f211r": [
+    2,
+    13
+   ],
+   "f202r": [
+    4,
+    19
+   ],
+   "f211v": [
+    1,
+    20
+   ]
+  }
+ },
+ "whole": 63,
+ "unsure": 5,
+ "pred_f_whole_1nn": 6,
+ "pred_f_whole_5nn_report_only": 2,
+ "pred_f_unsure_1nn": 3,
+ "pred_f_unsure_5nn_report_only": 1
+}

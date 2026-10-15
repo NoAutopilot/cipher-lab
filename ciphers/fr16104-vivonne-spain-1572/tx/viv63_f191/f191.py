@@ -10,7 +10,7 @@ their order within each pass (the shared tool lists each pass's insertion as its
 Rule (PREREG 3): >= 3 of 4 votes -> settled (a '-' majority drops the column); 2-2 on a tx/viv63_decode RULES pair -> the rule's
 sign, settled; else the plurality sign (ties: C if C == D, else A's), FLAGGED; a strict '-' plurality drops the column.
 Writes rec.tsv, decode.tsv (never reading_piece63.tsv); --stats also stats.json + owner_questions.tsv; --check: rec/decode stale -> 1.
---override TSV [--tag T] (PREREG-VIVPACKET3 s.5, 15 Oct 2026): apply the owner's sorter placements (columns line, pos, new_sign, action:
+--override TSV [--tag T] [--letter-s] (PREREG-VIVPACKET3 s.5, 15 Oct 2026; action classifier-f and --letter-s: VIV-GSPLIT3E): apply the owner's sorter placements (columns line, pos, new_sign, action:
 placed -> that sign, flag cleared, how 'owner'; new-sign -> the NEWn sign, outside the key, U; anything else -> unchanged) to the
 reconciled lines in memory and write stats_<T>.json, decode_<T>.tsv, owner_questions_<T>.tsv; 'before' is then the committed
 reconciliation (rec.tsv), 'after' the overridden lines. rec.tsv and decode.tsv are never touched by --override.
@@ -241,6 +241,10 @@ def apply_override(lines, path):
             out[line][pos - 1] = [new, False, 'owner', old[3]]
         elif act == 'new-sign':
             out[line][pos - 1] = [new, False, 'owner-new', old[3]]
+        elif act == 'classifier-f':   # VIV-GSPLIT3E (PREREG-VIVGSPLIT3 Addendum C/D): a predicted-f g tile -> new_sign (outside the key, U strict)
+            out[line][pos - 1] = [new, False, 'classifier-f', old[3]]
+            if LETTER_S is not None and len(f) > 10 and f[10]:
+                LETTER_S[new] = f[10]
         else:
             act = 'unchanged'
         log.append((line, pos, old[0], int(old[1]), new, act))
@@ -251,10 +255,15 @@ def before_lines():
     return {l: [[c, f, '', None] for c, f in seq] for l, seq in v63.page_tokens('f191r')[0].items()}
 
 
+LETTER_S = None   # --letter-s (VIV-GSPLIT3E, report-only): {new_sign: letter}; a new_sign outside the key reads as that letter, grade S
+
+
 def page_letters(lines):
     k = vd.key(); s, meta = [], []
     for line in sorted(lines):
         for pos, (c, flag, how, cv) in enumerate(lines[line], 1):
+            if c not in k and LETTER_S and c in LETTER_S:
+                s.append(LETTER_S[c]); meta.append(dict(line=line, pos=pos, code=c, g='S', votes=cv, how=how)); continue
             if c not in k:
                 s.append('_'); meta.append(dict(line=line, pos=pos, code=c, g='U', votes=cv)); continue
             s.append(k[c][0]); meta.append(dict(line=line, pos=pos, code=c, g='M' if (flag or k[c][1] == 'M') else 'H',
@@ -262,12 +271,12 @@ def page_letters(lines):
     return ''.join(s), meta
 
 
-def longest_H(s, meta):
+def longest_H(s, meta, ok=('H',)):
     best, i = (0, 0, 0), 0
     while i < len(s):
-        if meta[i]['g'] == 'H':
+        if meta[i]['g'] in ok:
             j = i
-            while j < len(s) and meta[j]['g'] == 'H':
+            while j < len(s) and meta[j]['g'] in ok:
                 j += 1
             best = max(best, (j - i, i, j)); i = j
         else:
@@ -297,9 +306,12 @@ def stats(P, lines, before=None, tag=''):
         s, meta = page_letters(L)
         cnt = collections.Counter(m['g'] for m in meta)
         res[tag] = {'tokens': len(meta), 'grades': dict(cnt), 'longest_H_run': longest_H(s, meta)}
+        if LETTER_S:
+            res[tag]['longest_HS_run'] = longest_H(s, meta, ('H', 'S'))
     # (c) gates
     t.SEED = SEED
     kk = {c: v for c, (v, gg) in vd.key().items()}
+    kk.update(LETTER_S or {})
     model = jp.NgramModel([jp.read_corpus(p) for p in t.FR16])
     c1 = vt.tokens(os.path.join(TX, 'f103r_rec.tsv'))
     c54 = [c for page in ('f173r', 'f173v') for _, seq in sorted(vd.page_tokens(page).items()) for c, _ in seq]
@@ -381,13 +393,18 @@ def main():
     if '--override' in sys.argv:
         path = sys.argv[sys.argv.index('--override') + 1]
         tag = sys.argv[sys.argv.index('--tag') + 1] if '--tag' in sys.argv else 'override'
+        global LETTER_S
+        if '--letter-s' in sys.argv:
+            LETTER_S = {}
         over, log = apply_override(lines, path)
-        open(os.path.join(HERE, 'decode_' + tag + '.tsv'), 'w', encoding='utf-8').write(render_decode(over))
+        if LETTER_S is None:
+            open(os.path.join(HERE, 'decode_' + tag + '.tsv'), 'w', encoding='utf-8').write(render_decode(over))
         print('override', path, 'rows', len(log), collections.Counter(x[5] for x in log))
         if '--stats' in sys.argv:
             res = stats(P, over, before=lines, tag=tag)
             for t in ('before', 'after'):
-                print(t, res[t]['grades'], 'longest_H', res[t]['longest_H_run'], 'stretch top1', res[t]['stretch']['real_top1'],
+                print(t, res[t]['grades'], 'longest_H', res[t]['longest_H_run'], 'longest_HS', res[t].get('longest_HS_run'),
+                      'stretch top1', res[t]['stretch']['real_top1'],
                       'null p99', res[t]['stretch']['null_top1_p99'], 'clears_42_clean', res[t]['clears_42_clean'],
                       'b2', res[t]['gates']['verdict_b2'], 'wrong', res[t]['gates']['verdict_wrong_keys'])
         return
