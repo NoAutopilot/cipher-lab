@@ -5296,3 +5296,34 @@ reading_4610_tokens.tsv: C 1108 -> 1104, M 94 -> 97, I 58, U 286 -> 288. 4610/46
 insert shifted p1_L05 positions), --check exit 0. Carried into AUDIT.md "LVN-L05W". No judge run. Novelty not classified. Subagents: 6.
 Next (one line): p1_L04 head "124, 127" through the same insert path after its own blind look (~$0.6); the =tout control word needs a word-level
 crop design of its own before any further word-token rerun (do not re-cut this PREREG a third time).
+
+## LVN-L04: blind look at the 4610 p1_L04 head "124, 127" (15 Oct 2026, 16:43-16:4x UTC by date -u, account 4, LANE DEFAULT-A4-1634-15)
+
+Step: LVN-L05W's named next. The p1_L04 head (eye-read "124, 127" by LVN-3R, LVN-4610U and LVN-4610H, absent from ciphertext_4610.tsv, which
+began the line at 145) got its own blind look using the LVN-L05W design. Crops were cut with `lvnl05/cut_w.py SCRATCH l04` (new `l04` set;
+boxes placed by this session's non-blind eye; 5x, scratch only, no image in git). The PREREG addendum `lvnl05/PREREG-LVN-L04.md` (acfc92b9e)
+was pushed before any read. There were two Sonnet subagent calls, each shown only two crops (X/Y), with same-line H numeral controls p1_L04/6
+71 and p1_L04/7 73. The =tout word was not used (LVN-L05W). Disk only; requests 0. Subagents: 2. prior_work.py --brief: exit 4 (warn-first,
+owed LEAD/LOOK rows written to look.tsv/prior-work.tsv), logged and not acted on: this is a transcription look, not a reading claim.
+
+| call | crop | role | committed | blind read (conf, alt) | scored | result |
+|---|---|---|---|---|---|---|
+| r1 | X l04_head | target | eye 124, 127 | 124 (high) / 127 (medium; 122 or 129) | 124, 127 | = eye |
+| r1 | Y l04_ctl1 | control | 71 H | 71 (low; 74/76; "clipped-left possible") / 73 / comma | 71 | pass |
+| r2 | X l04_ctl2 | control | 73 H | 73 (medium; 13/75; "clipped-left possible") / 36 (38/30) | 73 | pass |
+| r2 | Y l04_head | target | eye 124, 127 | 124 (high) / 127 (medium) / edge sliver | 124, 127 | = eye |
+
+**Control gate PASS 2/2.** Caveat: both readers wrote "clipped-left possible" on the control token. Had that been treated as a clip mark, the
+PREREG's drop rule would have scored the next token (73 against 71, and 36 against 73), and the gate would have failed. This session read
+"possible" as not a mark: the boxes were set so that the first token is whole, and both readers' first readings equal the committed values.
+The r1 control was read at low confidence. A verifier may read the drop rule the other way, so the inserts carry M, never H/S.
+Ruling (PREREG): both readers' readings equal the eye on both codes, so **124 and 127 are inserted at M** through `lvn10/inserts_lvneye.tsv`
+(p1_L04, before_pre_pos 1). 145 (formerly p1_L04/1, now /3) was not scored. Deviation from the PREREG wording: the PREREG says both decode U.
+That holds for key.tsv (reading_4610_tokens.tsv: ? U), but key_full.tsv carries 124 NULL C and 127 NULL C (AX-NAMES2 class b), so
+reading_4610_full_tokens.tsv shows NULL at M. No letter in any reading changes.
+
+Counts (rule 4). reading_4610_full_tokens.tsv: 1547 -> 1549 tokens; **C 1202, M 125 -> 127**, I 55, U 156, H 9. reading_4610_tokens.tsv:
+1547 -> 1549; M 97, **U 288 -> 290**. 4610/4611/4616 C/H **2552 of 3307 -> 2552 of 3309 (77.1%)**; four letters **2552 of 4142 (61.6%)**.
+Checks: `decode_key.py --check` exit 0 for all 13 decode*.json; `lvn10/apply.py`, `settle.py`, `lvn16/apply.py`, `lvn4611/settle.py`,
+`axnames/revisions.py` (regenerated) --check exit 0. Carried into AUDIT.md "LVN-L04". No judge run. Novelty not classified.
+Next (one line): a verifier's eye on whether "clipped-left possible" should void the r1/r2 controls (if so, 124/127 go M -> U, ~$0.3).

@@ -2104,3 +2104,10 @@ p2_L30/2 35 H -> M (t). Counts: 4610 full C 1206 -> 1202, M 121 -> 125; 4610/461
 **2552 of 4140 (61.6%)**. Depth stays **D2**; N-class unchanged (4610/4611/4616 N4, 4612 N3; key ours). Line readings changed: p1_L05 "nods" -> "e nofs" (89 = f is table-rule I),
 p2_L22 "offrederixcens" -> "offredesixcens", p1_L32 gains a name-code mark. SECOND-OPINIONS-QUEUE.tsv's rows for this target quote none of
 these words (grep, 15 Oct 2026); no prompt changes. status.json not edited (the parent's).
+
+## LVN-L04 (15 Oct 2026, 16:43-16:4x UTC by date -u; solver job, account 4) -- reading revised after this AUDIT.md, carried here (rule 10 propagation)
+
+Blind reader pair (2 Sonnet calls, 5x wide crops, PREREG lvnl05/PREREG-LVN-L04.md acfc92b9e, control 2/2 PASS with a caveat: both readers
+wrote "clipped-left possible" on the control token; NOTES.md "LVN-L04"). The 4610 p1_L04 head **124, 127** was inserted at M before 145.
+Under key_full both are NULL (M) and under key.tsv both are U; no letter changes. Counts: 4610 full M 125 -> 127; 4610/4611/4616 C/H **2552 of 3309
+(77.1%)**, four letters **2552 of 4142 (61.6%)**. Depth stays **D2**; N-class unchanged (4610/4611/4616 N4, 4612 N3; key ours).

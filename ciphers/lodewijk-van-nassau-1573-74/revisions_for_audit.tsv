@@ -1,6 +1,8 @@
 letter	line	pos	code	old	new	grade	class	source	context_new
-4610	p1_L04	14	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	p c z ? <NULL> NULL q u i
-4610	p1_L04	15	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	c z ? NULL <NULL> q u i l
+4610	p1_L04	1	124	? U	NULL	M	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	<NULL> NULL ? o c
+4610	p1_L04	2	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	NULL <NULL> ? o c c
+4610	p1_L04	16	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	p c z ? <NULL> NULL q u i
+4610	p1_L04	17	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	c z ? NULL <NULL> q u i l
 4610	p1_L05	18	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	b l e NULL <NULL> NULL d f
 4610	p1_L07	14	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	r i p t <NULL> ? q r i
 4610	p1_L08	5	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	n c e s <NULL> NULL ? ? s

@@ -50,26 +50,28 @@ p1_L03	16	31	H		agree
 p1_L03	17	117	H		agree
 p1_L03	18	6	H		agree
 p1_L03	19	81	M		agree-flagged
-p1_L04	1	145	M	A:-	gap
-p1_L04	2	=auoit	M	B:=auoué	differ
-p1_L04	3	=fut	M	B:=este	differ
-p1_L04	4	=tout	H		agree
-p1_L04	5	7	H		agree
-p1_L04	6	71	H		agree
-p1_L04	7	73	H		agree
-p1_L04	8	36	H		agree
-p1_L04	9	11	H		agree
-p1_L04	10	13	H		agree
-p1_L04	11	75	H	was 75 M; B:55	lvn3r per-token 300-dpi read 75 (A150 75, B150 55; T17; control 9/10) (pre pos 11)
-p1_L04	12	56	H		agree
-p1_L04	13	149	H		agree
-p1_L04	14	138	H		agree
-p1_L04	15	127	H		agree
-p1_L04	16	16	H		agree
-p1_L04	17	38	H		agree
-p1_L04	18	102	M	was 108 H; was 101 M; B:108	image300 LVN-EYE (15 Oct 2026, verifier eye, one Opus look at the 300-dpi WVO 04610 render beside same-line exemplars): last digit is the flat-foot hooked 2 of the lone 2 at p1_L04/20 (H), not the stacked-loop 8 of 38 at p1_L04/17; 101 (A150) and 102 both i; eye against the LVN-3R blind 108, so M (pre pos 18)
-p1_L04	19	111	H		agree
-p1_L04	20	2	H		agree
+p1_L04	1	124	M		LVN-L04 (15 Oct 2026, blind reader pair: two Sonnet subagent calls on 5x wide crops of images/04610_p1.jpg, lvnl05/cut_w.py l04, target + same-line H control 71/73, PREREG lvnl05/PREREG-LVN-L04.md acfc92b9e, control 2/2 PASS): both blind 124 (high) = LVN-3R/LVN-4610U/LVN-4610H eye; head untranscribed before; no key.tsv value (codes > 120, VIV-KEYSTONE) (inserted before pre pos 1)
+p1_L04	2	127	M		LVN-L04 (15 Oct 2026, blind reader pair: two Sonnet subagent calls on 5x wide crops of images/04610_p1.jpg, lvnl05/cut_w.py l04, target + same-line H control 71/73, PREREG lvnl05/PREREG-LVN-L04.md acfc92b9e, control 2/2 PASS): both blind 127 (medium; alts 122/129) = eye; no key.tsv value (codes > 120, VIV-KEYSTONE) (inserted before pre pos 1)
+p1_L04	3	145	M	A:-	gap
+p1_L04	4	=auoit	M	B:=auoué	differ
+p1_L04	5	=fut	M	B:=este	differ
+p1_L04	6	=tout	H		agree
+p1_L04	7	7	H		agree
+p1_L04	8	71	H		agree
+p1_L04	9	73	H		agree
+p1_L04	10	36	H		agree
+p1_L04	11	11	H		agree
+p1_L04	12	13	H		agree
+p1_L04	13	75	H	was 75 M; B:55	lvn3r per-token 300-dpi read 75 (A150 75, B150 55; T17; control 9/10) (pre pos 11)
+p1_L04	14	56	H		agree
+p1_L04	15	149	H		agree
+p1_L04	16	138	H		agree
+p1_L04	17	127	H		agree
+p1_L04	18	16	H		agree
+p1_L04	19	38	H		agree
+p1_L04	20	102	M	was 108 H; was 101 M; B:108	image300 LVN-EYE (15 Oct 2026, verifier eye, one Opus look at the 300-dpi WVO 04610 render beside same-line exemplars): last digit is the flat-foot hooked 2 of the lone 2 at p1_L04/20 (H), not the stacked-loop 8 of 38 at p1_L04/17; 101 (A150) and 102 both i; eye against the LVN-3R blind 108, so M (pre pos 18)
+p1_L04	21	111	H		agree
+p1_L04	22	2	H		agree
 p1_L05	1	81	M		LVN-L05W (15 Oct 2026, second blind reader: one Sonnet subagent call per line on wider 5x crops of images/04610_p1.jpg / the 150-dpi line crops, target + same-line H control, PREREG 7e90dde79 + addendum 2acd90c20, control 5/6 PASS): blind 81 (alt 82) = LVN-4610U/LVN-4610H eye; head untranscribed before (inserted before pre pos 1)
 p1_L05	2	125	M		LVN-L05W (15 Oct 2026, second blind reader: one Sonnet subagent call per line on wider 5x crops of images/04610_p1.jpg / the 150-dpi line crops, target + same-line H control, PREREG 7e90dde79 + addendum 2acd90c20, control 5/6 PASS): blind 125 = LVN-4610U/LVN-4610H eye; no key.tsv value (codes > 120, VIV-KEYSTONE) (inserted before pre pos 1)
 p1_L05	3	2	M	was 1 H	image300 LVN-4610H (15 Oct 2026, eye check of 4610 H tokens ending in 1/8, one Opus look at the 300-dpi WVO 04610 render, line strips ~1.15x, not blind): final (only) glyph is the flat-foot 2 of 28/12 on the same line; physical line opens 81, 125 (untranscribed) before it, then 2, 8, 80, 28; eye against the H, so M (pre pos 1)

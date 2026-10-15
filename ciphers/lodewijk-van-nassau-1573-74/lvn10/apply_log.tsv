@@ -1,4 +1,6 @@
 line	pre_pos	pre_sign	pre_conf	A4	B4	action
+p1_L04	1					lvneye-inserted
+p1_L04	1					lvneye-inserted
 p1_L04	11	75	M			lvn3r-confirmed
 p1_L04	18	101	M			lvn3r-settled
 p1_L04	18	108	M			lvneye-corrected
