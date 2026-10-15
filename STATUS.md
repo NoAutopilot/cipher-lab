@@ -9065,6 +9065,35 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-4-20261015-0235 handoff (session_019RmekEruYMrW91sGQqKSUQ, account 4, for the orchestrator (owner account)), 15 October 2026 (02:35-03:5x UTC by date -u; closed: budget; workers 49.19 + orchestrator ~8.3 = ~57.5 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-15-acct4-default-0235-jobs.md (3 waves, 14 workers, all Opus). Gate 0a: no SESSION-SWEEP-account-4 row.
+VERIFY-BACKLOG regenerated 02:40: high/low rows Birago/ceppo (off limits), sachsstaatsarchiv N0 (register only), eckert (googleapis 503, held by
+A2-0209). Backlog = hot-list runnable rows + two read-only scoping passes over 57 hot folders (most need a person, an ASKS row or a retired
+instrument). Excluded: A1-0206 and A2-0209 holdings, VIV, BNF-FOCUS (fr3982, fr3985-3990), Birago/ceppo, Armstrong, Debosnys. No image committed.
+**workers (ledgered + archived)**
+- lodewijk-van-nassau-1573-74: LVN-3R 4.88 D (4610 p1 per-token read, control 9/10, C/H 1202 -> 1210); LVN-P2 7.21 D (4610 p2, control 8/10,
+  20 rows settled/confirmed, C/H 1210 -> 1229; eye check owed on p2_L28/11, the control miss). 4611 not yet read.
+- antt-linhares-chave: LIN-LAB2 2.20 D (second blind labeller, PREREG outcome A: 3241315 = jus); LIN-PROP 1.91 D (applied, judge PASS; the rule-7
+  fresh-session re-derivation is owed, written as a gap).
+- bl-gualterio-1700: GUAL-KEYS 3.42 D (155 M key rows checked on the HMC leaves, 1 corrected; Gualterio 209 H, Sicily 149 H; no ciphertext on disk).
+- fr15575-syllabic-1592-95: SYL-CARET 1.92 D (legend ^ = s 4/8 vs null p95 3, thin; lead held M, no key edit).
+- es132-vargas-mexia-1578: ES132-F89 5.12 N (two-crop look, decoys 8/12 < 10) and ES132-BLIND 3.90 N (blind single-crop, decoys 9/12 < 10): two look
+  instruments missed their decoy gates on the 40 f.89 candidates -- a third look-type attempt falls under rule 3's third-attempt clause.
+- fr16142-noailles-constantinople-1571: NOAI-C262 5.42 N (c262 rows 11-15 two blind passes split 0.337, stopped; 69 focus rows for the sorter;
+  c231 clear opening located in Charriere III p.207 n.1).
+- fr16045-pisany-rome-1585: PIS-275V 3.35 N (f.275v L04 tile instrument 5/8 < 7, [retired] for this phrase; a person's look is next).
+- na-janssens-java-1811: JAV-COLLET 1.69 N (13 --try on Collet's crib, n=1 codes undecided, word-class control failed; all M).
+- fr5761-election-1519: ELEC-WALK 2.79 N (ff.172-179 copies carry every name in clear; 0 code/name pairs).
+- fr16144-savary-lancosme-1588: SAV-L14 3.05 N (c251-252 gloss unrelated to Charriere IV; the print stops where the cipher starts).
+- na-suriname-map-1781: SUR-2061 2.33 B (nationaalarchief.nl 503 maintenance 02:50-03:20; crib untested, PREREG c0bec51f0 on file).
+Known-text share (light guardrail): JAV-COLLET 1.69 + LIN-PROP 1.91 of 49.19 (~7%; both build or correct a key for the item's unread groups).
+Overruns: SAV-L14 2.03x, LIN-LAB2 2.20x, GUAL-KEYS 1.71x -- caps priced Sonnet vision at 0.3-0.6 and Opus at 0.6; real ~0.6 / ~1.0+.
+**next**
+1. lodewijk 4611 per-token read (same PREREG, ~5-7); eye check of 4610 p2_L28/11.
+2. antt-linhares-chave rule-7 re-derivation by a fresh session (~1.5).
+3. na-suriname SUR-2061 once nationaalarchief.nl answers (~1; PREREG already pushed).
+4. fr16142 c262 rows 11-15 focus rows to the owner's sign sorter (witness/c262rd_focus.tsv); fr16045 f.275v L04 a person's look.
+
 ## LANE DEFAULT-account-4-20261014-2135 handoff (session_01YKHyJh33ZuzWxzp9J88xTL, account 4, for the orchestrator (owner account)), 14 October 2026 (21:37-23:1x UTC by date -u; closed: budget; workers 53.96 + orchestrator ~5.3 = ~59.3 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-14-acct4-default-2135-jobs.md (3 waves, 15 workers, all Opus). Gate 0a: no SESSION-SWEEP-account-4 row.
 VERIFY-BACKLOG regenerated 21:40: high/low rows Birago/ceppo (off limits) and sachsstaatsarchiv N0 (register only). Backlog = hot-list runnable rows
