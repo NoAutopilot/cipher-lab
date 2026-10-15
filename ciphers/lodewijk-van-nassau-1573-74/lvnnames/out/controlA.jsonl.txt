@@ -1,0 +1,14 @@
+== 192
+6
+{"code": "192", "n_contexts": 6, "pool": 455, "pool_sha256": "48591920928582ce10d9725f63891ad8aef9713bed62f821f82234b643005b22", "any_cue": true, "masked_index": [], "coverage": true, "truth_rank": 218, "truth_score": 0.0, "truth_label": "Philippe", "top": ["Admirai", "Affaires", "Aient", "Alba", "Albano"], "context_null": {"draws": 200, "p95_score": 0.0, "median_rank": 273, "top5_share": 0.005}, "decoy_null": null, "beats_null_p95": false}
+== 200
+6
+{"code": "200", "n_contexts": 6, "pool": 455, "pool_sha256": "48591920928582ce10d9725f63891ad8aef9713bed62f821f82234b643005b22", "any_cue": false, "masked_index": [], "coverage": true, "truth_rank": 6, "truth_score": 0.0, "truth_label": "Alba", "top": ["1st/2nd conde and 1a condessa de Linhares", "Abel Servien", "Admirai", "Affaires", "Aient"], "context_null": {"draws": 200, "p95_score": 0.0, "median_rank": 6, "top5_share": 0.425}, "decoy_null": null, "beats_null_p95": false}
+== 221
+4
+{"code": "221", "n_contexts": 4, "pool": 455, "pool_sha256": "48591920928582ce10d9725f63891ad8aef9713bed62f821f82234b643005b22", "any_cue": false, "masked_index": [], "coverage": true, "truth_rank": 175, "truth_score": 0.0, "truth_label": "Holland", "top": ["1st/2nd conde and 1a condessa de Linhares", "Abel Servien", "Admirai", "Affaires", "Aient"], "context_null": {"draws": 200, "p95_score": 0.0, "median_rank": 175, "top5_share": 0.0}, "decoy_null": null, "beats_null_p95": false}
+== 153
+2
+{"code": "153", "n_contexts": 2, "pool": 455, "pool_sha256": "48591920928582ce10d9725f63891ad8aef9713bed62f821f82234b643005b22", "any_cue": false, "masked_index": [], "coverage": true, "truth_rank": 265, "truth_score": 0.0, "truth_label": "Pallatin", "top": ["1st/2nd conde and 1a condessa de Linhares", "Abel Servien", "Admirai", "Affaires", "Aient"], "context_null": {"draws": 200, "p95_score": 0.0, "median_rank": 265, "top5_share": 0.0}, "decoy_null": null, "beats_null_p95": false}
+
+[exited with code 0]

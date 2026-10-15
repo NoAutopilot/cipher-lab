@@ -1,0 +1,7 @@
+# name_candidates.py 221: proposals only (grade M at most); test with decode_key.py --try; pool sha256 48591920928582ce10d9725f63891ad8aef9713bed62f821f82234b643005b22; contexts 4; no relation cue
+rank	candidate	source	type	context	contradictions	alive	comention	assigned	fit	score	grade	evidence
+1	1st/2nd conde and 1a condessa de Linhares	KEY-OFFICES.tsv	person	0.0	0	0.0	0.0	0.0	0/4	0.0	I	life dates unknown; no relation cue
+2	Abel Servien	KEY-OFFICES.tsv	person	0.0	0	0.0	0.0	0.0	0/4	0.0	I	life dates unknown; no relation cue
+3	Admirai	index:ciphers/lodewijk-van-nassau-1573-74/lvnnames/groen_IV_CDXLIV-CDLXXXV_ia.txt		0.0	0	0.0	0.0	0.0	0/4	0.0	I	no relation cue
+4	Affaires	index:ciphers/lodewijk-van-nassau-1573-74/lvnnames/groen_IV_CDXLIV-CDLXXXV_ia.txt		0.0	0	0.0	0.0	0.0	0/4	0.0	I	no relation cue
+5	Aient	index:ciphers/lodewijk-van-nassau-1573-74/lvnnames/groen_IV_CDXLIV-CDLXXXV_ia.txt		0.0	0	0.0	0.0	0.0	0/4	0.0	I	no relation cue
