@@ -2524,3 +2524,93 @@ Read so far: no. 92 and the 187 postscript as band intervals (OBRED-BAND; 72 of 
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
 - [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
 Verdict: keep going: 4 internal gaps; inv. 6021 at stride 6 (117 scans, controls 39/39) shows one numeral-code text, scan 379, a Dutch letter dated Heidelberg Augusti 1621 with about 12 lines of pair-plus-letter groups (OBRED-6021, M, not transcribed); 9450/9451/9453 at stride 3 and inv. 6020 at stride 6 show none (OBRED-945X, OBRED-6020, M); cheapest next: scans 378-380 of inv. 6021 at native size with two blind passes + reconcile (~$3), then the per-lead leave-one-out monotonicity score (~$2) and the rest of 9451/9453 at 900 px (~$3)
+
+## HEID-1621 (15 Oct 2026, 14:12-14:3x UTC by date -u, account ytbiz, Opus worker + 2 Sonnet readers; for LANE VIV-KEYSTONE, account 4)
+
+Brief: `.claude/briefs/runs/2026-10-15-acct4-depth-steps.md`, JOB HEID-1621. The intake path for the numeral text OBRED-6021 found on
+NL-HaNA 1.01.02 inv. 6021 scan 379. Not a solve attempt: no key, no reading, no family_run. Files in `heid1621/`. Kept here as a
+subsection; the parent decides whether to split it into its own folder.
+
+### Premise check (anonymous-pile path, CLAUDE.md pipeline step 2)
+The sender is not read on scans 378-380 (below), so check-solved ran by holder, shelfmark, scan and glyph set; the edition step is
+**deferred until a sender is named**.
+- Holder notice: NA 1.01.02 inv. 6021 is the liasse of Agent Brederode, 1621-1622, 810 scans (`nl_brederode_lias.tsv`, METS
+  c82b1eb5-...; read by OBRED-6021). Nothing in the notice as recorded there names a cipher or a decipherment for this letter; the
+  item page itself was not re-fetched in this job (no budget for www.nationaalarchief.nl in the brief).
+- Our own work: grep of the repository for inv. 6021 outside this folder: only ROOM.md, STATUS.md, LEDGER.md and the two briefs
+  that queued OBRED-6021 and this job. No earlier transcription.
+- DECODE: `sources/decode/` key and record listings (24-28 Sept 2026 caches) grepped for Brederode, Heidelberg/Heydelberg, 6021: no
+  record of this item (DECODE record 6021 is an unrelated Florence key, ASFi SI vol. 3).
+- Cryptiana: `sources/cryptiana/web` grepped for the same terms: no page about this item.
+- Solver repositories: `sources/solver-diffs/2026-10-02/03-aymeloglu.tsv` and `sources/cyphersolver-site/catalogue-2026-10-09-diff.tsv`
+  grepped: no row for this item (the one Brederode hit is this folder's own catalogue row). Cache-based, not a live fetch.
+- `tools/prior_work.py ... --item-spec 'shelfmark=NL-HaNA 1.01.02 inv. 6021;folio=scan 379;date=1621-08-13;...' --step-type
+  transcribe --offline`: exit 4 (1 LEAD = this job's own claim, 1 LOOK leaf, 2 UNCHECKED, 2 UNCHECKED-NET); the four non-net rows are
+  recorded CLEAR in `prior-work.tsv` (adhoc-2a2c97). The two UNCHECKED-NET rows (live aymeloglu clone, editions) are not run here.
+- The leaf and its neighbours: scans 378 and 380 at 1200 px and the 379 numeral block at native size carry no interlinear or marginal
+  decode and no clear copy.
+- **Verdict: `open` (anonymous-pile path, M).** No prior transcription or decipherment found in the sources above; edition step deferred
+  until a sender is named.
+
+### Material and sender (M)
+Requests: **service.archief.nl 7** (METS, scans 378/379/380 at 1200 px, info.json of 379, two native regions of 379 at
+730,1640,1960,1420 and 2930,1180,1850,950), all HTTP 200, >= 3.1 s apart, take/release lines in ROOM.md. Nothing committed; sha1s are in
+`images/manifest.json` (`heid_6021`); `heid1621/regen_heid1621.sh` re-derives them.
+- Scan 378: two pages of the same letter's body in clear Dutch (news of England, the Palatinate, Switzerland, the Valtellina), no groups.
+- Scan 379: left page, the numeral block (15 lines); right page, the close: "Hier mede sal ick voor dit mael desen besluyten, den
+  Almogende van harten biddende Uwe Hoochdem. in haere Christelijcke ende loffelijcke voornemen met gheluckelijcken uytcompste genadichlijck
+  te willen [zegenen?, M]. Uyt Heydelberg desen 13 Augusti 1621", subscription "Uwer Hoochdem. onderdanichste ende getrouwsten dienaer".
+  **No name after the subscription** (both readers and the eye agree).
+- Scan 380: the address leaf, "Den Hoochmogenden Heeren Staten Generael der Vereenichde Nederlantsche Provincien, mijne hooch geeerde
+  ende gebiedende Heeren ... [In den] Hage", with "Duplicaet vanden 13 Augusti 1621" in the same hand, a seal, and a receipt endorsement
+  "L. 20 Aug. 1621". **This copy is the duplicate of a letter of 13 Aug 1621 to the States General.**
+- Sender: not read on 378-380. The liasse (Agent Brederode) is the only pointer; not a reading. The start of the letter (scan 377 or
+  earlier) was not fetched, and the hand was not compared with the signed P. Brederode closes elsewhere in inv. 6021.
+
+### Transcription (M)
+`tools/iiif_lines.py --image s379_block_native.jpg --out crops --prefix h379 --debug` -> 15 line crops, overlay checked, run before any
+reader call; the close region likewise (9 crops; readers given 5). Two blind Sonnet readers (A plain left-to-right; B read each
+line right-to-left before writing it out), text only, one reconciliation by this worker against the crops. `heid1621/ciphertext_6021_379.tsv`, every
+token M. Reader agreement on numerals: 95 of 96 (the one split, L03 58 / 88, left unsettled). Letters: the readers agree with each other
+everywhere; the eye differs on three tokens (L06 pos 1, L10 pos 12 read x where both readers read r, from the glyph shared with the x
+after 22.23; L04/L12/L13 "1" read as an undotted letter i), each kept as an `alt`. Under the PREREG stop rule (more than a tenth
+split) the transcription is settled enough to count.
+
+Clear context inside the block (M): "Desen dus wijt geschreven hebbende, bekomme ick advijs [groups] in date des 29 July ouden stijl dat
+[sign] van [sign] aldaer [groups] ... hebben [groups] ... [sign] volgende [groups] te continueren bij soo verre als oock [groups] hadde
+devoir metten [groups] tot op den uytganck van [groups] te presteren te vroeden sijn, waer van de schriftelijcke resolutie in corten
+volgen sal." Three non-numeral signs (a dotted bracket, a cross, an open box) stand in clear prose where a name would go.
+
+### Structural test (PREREG-HEID1621.md, pushed 0b95fd8e5 before any count; `heid1621/structure_6021.py --check`)
+| statistic | inv. 6021 s379 | C1 no. 92 (121 groups) | C2 order shuffle of s379 (10,000) |
+|---|---|---|---|
+| S1 pairs with second = first + 1 | 40 of 41 = 0.976 (0.951 if L03 reads 88) | -- | -- |
+| S1 adjacent numeral tokens consecutive | 0.474 (96 tokens) | 0.042 (5 adjacent pairs: 611 612 twice, 616 617, 656 657, 703 704) | mean 0.020, p99 0.053 |
+| S2 distinct pairs / value range | 21 distinct of 41, 12 repeat (22.23 x5, 76.77 x4); values 10-84 | 99 distinct of 121; 30-741 | -- |
+| S3 trailing letter | 44 of 45 units carry one; 18 letter forms incl. B/S variants (x 7, c 5, d 5, f 4, p 4) | none (0 by construction, not a test) | -- |
+| S4 units per numeral-only line vs Dutch | 6.5 units (L05, L08) vs 6.5 words and 14.3 syllables per clear line (6 clear lines, eye, M) -> **unit ~ word** | n/a (printed edition, no line widths) | -- |
+
+- **PREREG decision: "pairs always (n, n+1)" is met** (0.976 >= 0.95 and C2 p99 0.053 < 0.5). The one exception, L11 "29 20 f", is read
+  20 by both readers and the eye; whether it is a slip for 29 30 or 19 20 is not settled here.
+- Units outside the pair shape: 38 stands alone three times (before 10.11 b, before 64.65 c, after 84), 84 once; 67.68 once without a
+  letter (before 59.60 p). These four runs are the "longer units" in `structure_6021.json`.
+- Descriptive, **not preregistered** (reported as a lead only): the trailing letter follows the pair. Every repeated pair keeps its
+  letter except 31.32 (o, then g) and 76.77 (r?, box sign, c, c), and pairs that overlap by one number share it: 22.23 / 23.24 x,
+  40.41 / 41.42 d, 58.59 / 59.60 p, 46.47 / 47.48 f, 19.20 / 20.21 m, 10.11 / 11.12 b. The letter seems to belong to a band of about
+  three numbers, not to a single pair.
+
+**Design-class lead (M):** a word-level code of about 45 units in which each unit is a consecutive number pair (the second number adds
+no information beyond the first) plus a letter tag tied to a band of numbers, with a few standalone numbers (38, 84) and three
+non-numeral signs in the clear text. This is a different design from no. 92/187/556 (one- to three-digit groups up to 741, consecutive
+only 4% of the time, no letters). No class above M; nothing decoded.
+
+### For the verifier
+Nothing here is a reading. What a verifier would check: (1) the PREREG decision from `structure_6021.json` (`--check`); (2) the three
+eye-over-reader letter calls (x for r twice, i for 1) and the unsettled L03 58/88 against the crops (regen script); (3) the sender
+question: the letter is an unsigned duplicate (380 "Duplicaet vanden 13 Augusti 1621") in the Brederode liasse, so attribution needs the
+start of the letter (scan 377 or earlier) and a hand comparison with Brederode's signed closes in the same inv., not the liasse alone;
+(4) whether the band-shared letters (descriptive) hold up on a second letter in the same system. The PREREG statistics are counts on an
+M transcription; the S4 word/syllable counts are this worker's own reading of six clear lines. Suggested next steps (not run, Usage 7):
+scans 370-377 at 700 px to find the letter's opening and any name (about 8 NA requests, ~$1); then a stride-1 screen of inv. 6021 scans
+361-397 and the unread sheets 14-15 for a second letter in the pair-plus-letter system (~$1.5); a hand comparison against P. Brederode's
+signed closes in inv. 6021 (~$1).

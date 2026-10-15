@@ -8461,5 +8461,44 @@
     "bytes": 124985
    }
   ]
+ },
+ "heid_6021": {
+  "mets": "c82b1eb5-6946-4ca9-8082-f13c2ab5f078",
+  "inv": "NL-HaNA 1.01.02 inv. 6021",
+  "job": "HEID-1621, 15 Oct 2026",
+  "regen": "heid1621/regen_heid1621.sh",
+  "note": "not committed (folder at 29 MB); native size of scan 379 is 5180x4100",
+  "scans": [
+   {
+    "scan": 378,
+    "width": 1200,
+    "sha1": "e1176f53ac750cca30c40a855589434d3d7d537b",
+    "bytes": 150803
+   },
+   {
+    "scan": 379,
+    "width": 1200,
+    "sha1": "4a935bd6de16814cc5001cdc243413c20deac72e",
+    "bytes": 124985
+   },
+   {
+    "scan": 380,
+    "width": 1200,
+    "sha1": "a43101b0886b670e0ebedae97909aa6a63934ab7",
+    "bytes": 68974
+   },
+   {
+    "scan": 379,
+    "region": "730,1640,1960,1420",
+    "sha1": "ac1477f81fa528d81e1d440e15630f7532347776",
+    "bytes": 224881
+   },
+   {
+    "scan": 379,
+    "region": "2930,1180,1850,950",
+    "sha1": "25cda003e940e210e42f3ab292bf05ca6326f985",
+    "bytes": 130330
+   }
+  ]
  }
 }
