@@ -347,6 +347,14 @@ def main():
                         assert d["sign"] == r["old"], (r["line"], r["pre_pos"], d["sign"], r["old"])
                         d["alt"] = f"was {d['sign']} {d['confidence']}" + (f"; {d['alt']}" if d.get("alt") else "")
                         d["sign"], d["confidence"], d["why"] = r["new"], r["confidence"], r["note"]
+            # LVN-L1 (15 Oct 2026): the p3 first written line, in no 150-dpi pass, read per token at 300 dpi (PREREG-LVN-4611.md
+            # addendum LVN-L1); inserted as p3_L00 ahead of the first p3_L01 row, existing rows not renumbered.
+            ip = HERE / "lvn4611" / "insert_p3L00.tsv"
+            if ip.exists():
+                with open(ip, newline="", encoding="utf-8") as fh:
+                    ins = list(csv.DictReader(fh, delimiter="\t"))
+                i0 = next(i for i, r in enumerate(draft) if r["line"] == "p3_L01")
+                draft[i0:i0] = ins
         summary[nr] = stats
         cipher_path = HERE / f"ciphertext_{nr}.tsv"
         log_path = HERE / f"settle_log_{nr}.tsv"

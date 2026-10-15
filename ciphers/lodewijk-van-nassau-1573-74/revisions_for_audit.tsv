@@ -234,6 +234,10 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4611	p2_L30	24	134	? U	NULL	M	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	m e n t <NULL>
 4611	p2_L31	11	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	i o n s <NULL> NULL
 4611	p2_L31	12	137	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	o n s NULL <NULL>
+4611	p3_L00	5	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	d e s <herzogvonalba> o m m e
+4611	p3_L00	11	138	? U	NULL	M	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	m m e s <NULL> NULL p a r
+4611	p3_L00	12	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	m e s NULL <NULL> p a r d
+4611	p3_L00	20	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	d e l a <NULL>
 4611	p3_L01	11	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	u i r e <NULL> NULL l e s
 4611	p3_L01	12	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	i r e NULL <NULL> l e s o
 4616	p1_L06	21	131	? U	NULL	C	NULL	names.tsv: empty in 22 of 22 aligned observations, 0 contradicting	n o u u <NULL> ?
