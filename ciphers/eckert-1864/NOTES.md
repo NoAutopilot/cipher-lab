@@ -7253,3 +7253,33 @@ Read so far: as ECK-GP13C; Grant Papers vol. 13 searched for E589 (not located, 
 - [x] image-check: as ECK-GP13B.
 - [x] retry: googleapis 503 on both controls at 18:53 UTC, retried after 62 s, control passed, 503 again at E591, stopped per the job's rule (GB-E13).
 Verdict: keep going: 1 internal gap; cheapest next: the keyed googleapis pass for Grant Papers vol. 13 for E591, E592 and looser E589 with the GB-2-form control first, ~$0.1 (the 5914/2 page waits on L79)
+
+## GB-PASS2 (15 Oct 2026, account 2, for LANE DEFAULT-A2-0209-15), 02:25-02:3x UTC by date -u
+
+Brief: `.claude/briefs/runs/2026-10-15-ytbiz-default-0209-jobs.md` "### GB-PASS2" (a): GB-E13 Remaining gaps item 1 (E591, E592 and the looser E589 in Grant Papers vol. 13, GB-2-form control first). **Prior work:** `tools/prior_work.py eckert-1864 --item-spec 'googleapis lookup' --step-type lookup --offline`, exit 0, verdict plaintext LEAD (the edition rows these queries search). Check 1 by hand: no section after GB-E13 ran these queries (grep of NOTES.md, 02:26 UTC). Intake gate: `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+Run: `fortmonroe/eck_gbpass_gb.py --gbpass2` (option added this job: control B, GB-2's `intitle:Grant` form, only; then T without E590, which GB-E13 ran; calls without the flag unchanged). Keyed, `country=US`, >= 2 s.
+
+| run (UTC) | output | result |
+|---|---|---|
+| 02:28:1x | `fortmonroe/eck_gbpass2_gb.out` | control B 200, **vol. 13 HIT** (mnRjmhe3QLoC, cov 3/3, the E531 snippet "...This makes six vessels, 5109 men, all as ordered"); E591 HTTP 503. |
+| 02:29:28 (the one retry, 62 s after the 503) | `fortmonroe/eck_gbpass2_gb_retry.out` | control B 200, vol. 13 HIT again; **E591** (`Radford torpedoes Lynch Bureau of Ordnance Ironsides intitle:Grant`) 200, **totalItems 0**; E592 HTTP 503; host stopped for the whole job (brief rule). |
+
+E591 is not located in vol. 13 by this query: the API returned no item at all for it, while the control in the same form hit vol. 13 seconds before. GB-E13 saw identical queries return 0 and then a hit minutes apart on this egress, so this "not located" is a weak search result, not a negative. E592 and the looser E589 were not run. No row record, key row, AUDIT.md section or N-class edited. **Requests:** www.googleapis.com 5 (2 x 200 control hit, 1 x 200 empty, 2 x 503); no other host.
+
+## Remaining gaps (GB-PASS2, 15 Oct 2026)
+Read so far: as ECK-GP13C; Grant Papers vol. 13 searched for E589 (not located, ECK-GP13), E590 (not located at the coverage rule, GB-E13; a cov 2/5 snippet places Eckert at Fort Monroe with Seward on an unnumbered vol. 13 page) and E591 (not located, totalItems 0, GB-PASS2; weak, the API's answers are unstable on this egress).
+- Grant Papers vol. 13 (2-20 Feb 1865) for E592 and a looser E589 query (`Monohansett Monroe`) - blocker: not-attempted; googleapis answered 503 to E591 and, on the one retry after 62 s, to E592 on 15 Oct (02:28/02:29 UTC, GB-PASS2) after the control passed both times; the host has now 503'd in every googleapis job on this folder since 12 Oct; next: run E592 and looser E589 alone (T reduced to those two) with the GB-2-form control first, at an hour when the host answers steadily, ~$0.1; if it 503s again, a LOCAL-QUEUE row for a person's search-inside of mnRjmhe3QLoC
+- The printed page of 5914/2 in Grant Papers vol. 14 (Grant to Ord, 10.00 a.m.) - blocker: waiting-on LOCAL-QUEUE L79; be-api gives no page and the IA copy is lending-only (obfuscated to scripts); next: a person reads the page in the IA reader at the 'Gordon's Commission' note (L79, queued), ~$0.05
+
+## Escalation (GB-PASS2, 15 Oct 2026)
+- [x] siblings: as ECK-GP13B.
+- [x] clear-pages: as ECK-GP13B.
+- [x] known-keys: as ECK-GP13B.
+- [ ] print: Grant Papers 13 by Google Books: E591 not located (GB-PASS2); E592 and looser E589 still to run (gap above); 5914/2's page waits on L79.
+- [n/a] key-rebuild: no key row edited in this pass.
+- [x] image-check: as ECK-GP13B.
+- [x] retry: googleapis 503 at E591 02:28 UTC, one retry after 62 s, control passed, E591 answered, 503 again at E592, stopped per the job's rule (GB-PASS2).
+Verdict: keep going: 1 internal gap; cheapest next: the keyed googleapis pass for Grant Papers vol. 13 for E592 and looser E589 with the GB-2-form control first, ~$0.1 (the 5914/2 page waits on L79)
+
+`python3 tools/gaps_check.py eckert-1864` (GB-PASS2, 15 Oct 2026): "OK keep-going eckert-1864: keep going: 1 internal gap(s), 1 step(s) untried"

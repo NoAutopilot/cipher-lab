@@ -3,7 +3,9 @@
 Remaining gaps item 1. Control A is the E531 query WITHOUT `intitle:Grant` (tells host load apart from a query-form 503); control B is
 GB-2's own form (with `intitle:Grant`). The target queries run in the form of whichever control returned a vol. 13 hit (B's form if both).
 If neither control hits, no target query runs. One try per query; 503/429 stops the host. Hit = a snippet from a vol. 13 id
-(mnRjmhe3QLoC / ij8fAQAAMAAJ). >= 2 s apart; never prints the key."""
+(mnRjmhe3QLoC / ij8fAQAAMAAJ). >= 2 s apart; never prints the key.
+--gbpass2 (GB-PASS2, 15 Oct 2026, account 2, for LANE DEFAULT-A2-0209-15): control B (GB-2 form) only, then T without E590
+(E590 ran in GB-E13); calls without the flag are unchanged."""
 import json, os, re, sys, time, urllib.parse, urllib.request, urllib.error
 K = os.environ.get('GOOGLE_BOOKS_KEY', '')
 V13 = {'mnRjmhe3QLoC', 'ij8fAQAAMAAJ'}
@@ -34,7 +36,10 @@ def run(e, q, suffix):
     for vid, cov, s in hits: print(f'{e}\t{q}{suffix}\tv13 {vid}\tcov {cov}/{len(words)}\t{" ".join(s.split())[:400]}')
     time.sleep(2)
     return bool(hits)
-a = run('control A (no intitle)', '"six vessels" Oriental', '')
+GBPASS2 = '--gbpass2' in sys.argv[1:]
+if GBPASS2:
+    T = [t for t in T if t[0] != 'E590']
+a = None if GBPASS2 else run('control A (no intitle)', '"six vessels" Oriental', '')
 b = run('control B (GB-2 form)', '"six vessels" Oriental', ' intitle:Grant')
 if a is None and b is None:
     print('# both controls errored -- host stopped'); print('# googleapis requests', n); sys.exit(2)
