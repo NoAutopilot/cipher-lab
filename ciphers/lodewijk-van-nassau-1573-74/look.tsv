@@ -2,3 +2,24 @@
 utc	item_id	look_row_id	role	folio	canvas	image	source	status
 2026-10-09 02:51	adhoc-87595c	adhoc-87595c:2-leaf:3ca102	unit			no folio, canvas or pointer in items.tsv: name the leaf to narrow the look	none	owed
 2026-10-09 02:55	adhoc-87595c	adhoc-87595c:2-leaf:3ca102	unit			no folio, canvas or pointer in items.tsv: name the leaf to narrow the look	none	answered KNOWN (recorded)
+2026-10-15 16:45	adhoc-2d8d99	adhoc-2d8d99:2-leaf:f4cada	cipher-page	61r			folio arithmetic	owed
+2026-10-15 16:45	adhoc-2d8d99	adhoc-2d8d99:2-leaf:f4cada	facing	60v			folio arithmetic	owed
+2026-10-15 16:45	adhoc-2d8d99	adhoc-2d8d99:2-leaf:f4cada	before-2	60r			folio arithmetic	owed
+2026-10-15 16:45	adhoc-2d8d99	adhoc-2d8d99:2-leaf:f4cada	after-1	61v			folio arithmetic	owed
+2026-10-15 16:45	adhoc-2d8d99	adhoc-2d8d99:2-leaf:f4cada	after-2	62r			folio arithmetic	owed
+2026-10-15 16:45	adhoc-2d8d99	adhoc-2d8d99:2-leaf:f4cada	after-3	62v			folio arithmetic	owed
+2026-10-15 16:45	adhoc-2d8d99	adhoc-2d8d99:2-leaf:f4cada	after-4	63r			folio arithmetic	owed
+2026-10-15 16:45	adhoc-e276dc	adhoc-e276dc:2-leaf:1d2661	cipher-page	121r			folio arithmetic	owed
+2026-10-15 16:45	adhoc-e276dc	adhoc-e276dc:2-leaf:1d2661	facing	120v			folio arithmetic	owed
+2026-10-15 16:45	adhoc-e276dc	adhoc-e276dc:2-leaf:1d2661	before-2	120r			folio arithmetic	owed
+2026-10-15 16:45	adhoc-e276dc	adhoc-e276dc:2-leaf:1d2661	after-1	121v			folio arithmetic	owed
+2026-10-15 16:45	adhoc-e276dc	adhoc-e276dc:2-leaf:1d2661	after-2	122r			folio arithmetic	owed
+2026-10-15 16:45	adhoc-e276dc	adhoc-e276dc:2-leaf:1d2661	after-3	122v			folio arithmetic	owed
+2026-10-15 16:45	adhoc-e276dc	adhoc-e276dc:2-leaf:1d2661	after-4	123r			folio arithmetic	owed
+2026-10-15 16:45	adhoc-a6af73	adhoc-a6af73:2-leaf:526332	cipher-page	121r			folio arithmetic	owed
+2026-10-15 16:45	adhoc-a6af73	adhoc-a6af73:2-leaf:526332	facing	120v			folio arithmetic	owed
+2026-10-15 16:45	adhoc-a6af73	adhoc-a6af73:2-leaf:526332	before-2	120r			folio arithmetic	owed
+2026-10-15 16:45	adhoc-a6af73	adhoc-a6af73:2-leaf:526332	after-1	121v			folio arithmetic	owed
+2026-10-15 16:45	adhoc-a6af73	adhoc-a6af73:2-leaf:526332	after-2	122r			folio arithmetic	owed
+2026-10-15 16:45	adhoc-a6af73	adhoc-a6af73:2-leaf:526332	after-3	122v			folio arithmetic	owed
+2026-10-15 16:45	adhoc-a6af73	adhoc-a6af73:2-leaf:526332	after-4	123r			folio arithmetic	owed

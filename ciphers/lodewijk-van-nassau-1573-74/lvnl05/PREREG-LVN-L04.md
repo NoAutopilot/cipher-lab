@@ -1,4 +1,4 @@
-# PREREG addendum LVN-L04 (15 Oct 2026, 16:5x UTC by date -u, account 4, LANE DEFAULT-A4-1634-15) -- written before any blind read
+# PREREG addendum LVN-L04 (15 Oct 2026, 16:4x UTC by date -u, account 4, LANE DEFAULT-A4-1634-15) -- written before any blind read
 
 Step: LVN-L05W's named next: the p1_L04 head of 4610 (images/04610_p1.jpg; eye-read "124, 127" by LVN-3R/LVN-4610U/LVN-4610H; not in
 ciphertext_4610.tsv, which starts p1_L04 at 145) gets its own blind look by the LVN-L05W design. Disk only, requests 0.
