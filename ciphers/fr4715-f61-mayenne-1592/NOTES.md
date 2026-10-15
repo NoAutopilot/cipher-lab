@@ -6434,3 +6434,35 @@ A no-hit is a search result for the log, never a novelty verdict (rule 10). No s
 Requests: archive.org 1, be-api.us.archive.org 20, www.googleapis.com 20 (6 x 503), api.openalex.org 21, api.crossref.org 2,
 api.semanticscholar.org 1 (429). Control for the instrument: not re-run (the 2 Oct Gallica control phrase and the IA corpus OCR check
 stand: vol 5 names Mayenne 220 times); this run's IA vols are the same files.
+
+## F61-GB (15 Oct 2026, 15:23-15:3x UTC by date -u, worker F61-GB, account 2) -- the six Google Books phrases that returned 503 in D4-F61PR, and the Semantic Scholar rerun
+
+Named step of D4-F61PR's "Not searched" line, run with the same six phrases (taken from `print-check.tsv`'s 503 rows) through the same
+queries (`tools/print_check.py` for Semantic Scholar; the Google Books call is `print_check.py`'s own URL form, quoted phrase, `country=US`,
+key, `maxResults=10`, run by a scratch loop that also prints each volume's snippet). Output: `print-check-f61gb.tsv` (D4-F61PR's
+`print-check.tsv` is unchanged). Search result only, never a novelty verdict (rule 10); phrases stay conditional on the two-pass reading.
+
+| Phrase | Google Books | Semantic Scholar |
+|---|---|---|
+| nous avons parle familierement et amplement de toutes choses | HTTP 200, 222 loosely matching volumes, none exact; top ten: Louise de Coligny (Dutch house) letters 1872/1887/1890 (4), *Magnum dictionarium* 1726 (2), a 1564 doctrine tract, a Protestant history bulletin 1871; no League edition, no Mayenne letter | 82 papers, all unrelated (theology, psychology) |
+| il seroit trop long vous en dire | HTTP 503, one retry after 60 s 503, host stopped: not searched | 373 papers, unrelated |
+| Cependant on n'ose envoyer de part de della | not searched (host stopped) | no hits |
+| maintenant qu'on en a affere vous estes sur les lieux | not searched (host stopped) | no hits |
+| je ne seroys pas paresseux si tant soit peu | not searched (host stopped) | not searched (HTTP 429, request cap reached) |
+| jalousie au beau pere | not searched (host stopped) | not searched (HTTP 429, request cap reached) |
+
+Result: 1 of 6 Google Books phrases answered (up from 0), 4 of 6 Semantic Scholar phrases answered (2 with unrelated loose
+matches, 2 no hits; the fourth answer came on the one permitted second pass). No printed text located for any phrase by this method on this
+date. The one answered Google Books phrase's top volumes are word-matches on "toute/chose/vous" (the Coligny letters) and "parle
+familierement" (a dictionary), not a phrase match and not a League or Mayenne source.
+
+Control: none run; the instrument is the same one D4-F61PR used, whose IA corpus check (vol 5 names Mayenne 220 times) stands. A no-hit
+here says nothing about a volume the quoted-phrase search cannot see inside.
+
+Requests: www.googleapis.com 3 (1 x 200, 2 x 503), api.semanticscholar.org 6 (4 answered, 2 x 429, the second 429 on the one permitted
+pass after a pause; the host cap of 6 reached). No sign or reading changed, so no decode re-run (rule 7).
+
+Remaining (this step): the five unsearched Google Books phrases (googleapis 503, host stopped) and two Semantic Scholar phrases (429). Cheapest
+next: the same five phrases when googleapis answers again, ~$0.3; both stay blocked from outside the session (host availability). The sign
+gaps and the Henry-Loriquet edition (LOCAL-QUEUE L30) are unchanged.
+Verdict: keep going (googleapis 503 on 2 of 3 requests; five Google Books phrases and two Semantic Scholar phrases not searched; the target stays `partial`).
