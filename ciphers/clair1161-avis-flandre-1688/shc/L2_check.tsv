@@ -1,0 +1,31 @@
+eid	line	pos	piece	flag	eye
+E01	c187L_L09	8	s1		on
+E02	c188L_L12	10	s2		on
+E03	c187L_L27	19	s2		on
+E04	c187L_L19	3	s1		on
+E05	c188L_L21	21	s3		on
+E06	c187L_L08	11	s2		on
+E07	c188L_L04	1	s1		on
+E08	c188L_L03	17	s2		on
+E09	c187L_L02	16	s2		on
+E10	c188L_L19	3	s1		on
+E11	c187L_L05	7	s1		on
+E12	c187L_L03	25	s2		on
+E13	c187L_L16	8	s1		on
+E14	c187L_L07	25	s2		on
+E15	c187L_L11	26	s2		on
+E16	c188L_L18	2	s1		on
+E17	c188L_L09	3	s1		on
+E18	c187L_L22	16	s2		on
+E19	c188L_L10	16	s2		on
+E20	c188L_L24	19	s2		on
+E21	c188L_L11	15	s2		on
+E22	c188L_L27	13	s2		on
+E23	c188L_L15	16	s2		on
+E24	c187L_L20	15	s2		on
+E25	c188L_L11	30	s3	edge	off (S at the tick clipped by the piece edge)
+E26	c188L_L26	21	s3		on
+E27	c187L_L26	4	s1		on
+E28	c188L_L27	12	s2		on
+E29	c187L_L16	5	s1		on
+E30	c187L_L16	11	s1		on

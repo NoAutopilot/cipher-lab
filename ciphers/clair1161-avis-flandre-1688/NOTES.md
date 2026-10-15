@@ -2968,3 +2968,49 @@ Verdict: keep going: 4 internal gaps; cheapest next: hand-counted S tick placeme
 OK keep-going clair1161-avis-flandre-1688: keep going: 4 internal gap(s), 2 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## C1161-HC: S ticks placed by hand-counting per line, c187L and c188L, L2 PASS (account-4 worker for LANE DEFAULT-A4-1035-15, 15 Oct 2026, 11:08-11:2x UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-15-acct4-default-1035-jobs.md` (C1161-HC). Disk only (line pieces under images/), 0 host requests, 0
+subagent calls. Prior work: `tools/prior_work.py ... --item-spec 'S split hand-count' --step-type key --offline` exit 4, LEAD = own work.
+PREREG `shc/PREREG-C1161-HC.md` pushed (1d8e66e4c) before any line was counted; it states why this is a different instrument (counting by
+eye per line, the method RECUT used for three windows) and not a third attempt of the automatic localiser (rule 3).
+
+**Hand count.** `shc/view_line.py` shows each line's pieces unstitched with an x ruler beside the line's ciphertext.tsv sequence; the worker
+counted signs and placed every S tick in the coordinates of the single piece carrying the sign (`shc/hand_raw.tsv` -> `shc/hand.tsv` via
+`shc/cut_hc.py`), which avoids the c188L stitching shift C1161-275 found. All 126 S tokens on c187L (26 lines, 69) and c188L (27 lines, 57)
+placed; 2 flagged `edge` (S at a piece edge), none unplaceable. Pushed (059468e26) before the eye check. Seen while counting, not scored:
+c188L_L02_s1 carries L01's writing with L02 only at its lower edge (S8 placed there, flag edge).
+
+**Gate L2 as registered** (same design as C1161-275: random.Random(2750).sample of 30, worker's eye, "tick on an S-shaped sign", gate 26):
+**29/30 PASS** (`shc/L2_check.tsv`); the one off is E25 = c188L_L11/30, an `edge` row whose S is clipped by the s3 piece edge. C1161-275's
+automatic localiser scored 18/30 on the same design. Caveat: placer and checker are the same worker (as in C1161-275's L2).
+
+**Not done:** the extension to the other 62 S lines (149 tokens) was not started: the worker cannot read its cost and its estimate puts the
+session near 80% of the cap, so it stopped before that unit (PREREG). No reader call, no gate K/A/T, no --try; nothing into ciphertext.tsv or
+key.tsv. RECUT's result stands (Sl=n M-supported); S stays u (grade S). Grades unchanged: C 353, S 1908, M 1114, U 33, H 0. Report what was
+found and where it was not found: no outside source searched; novelty not classified.
+
+## Remaining gaps (C1161-HC, 15 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H (unchanged). Prior work: George Lasry's reading of ff.162r-164v (cyphersolver `clair1161`, 6/6 transcribed, 2/6 deciphered, 4 in part). Concordance with his key (C1161-LKEY): 16 agree, 10 disagree, 24 unmapped; c186R known-answer gate PASS (CL1161-KA); S/7 image check UNDECIDED both, --try S=n reject (breaks 85/275), 7=b reject (CL1161-S7).
+- S label merges two shapes? K windows re-cut by hand, gate K PASS both sorts, registered --try Sl=n accept, So=n reject (C1161-RECUT); automatic counting placement of all 275 failed its localisation gate L2 18/30 (C1161-275); hand count by eye per line on c187L/c188L (126 S, per piece, no stitching) L2 29/30 PASS (C1161-HC) - blocker: not-attempted; hand placement covers 126 of 275 S tokens, the rest not reached within the cap; next: hand-count the other 149 S tokens on 62 lines (c185R 21, c186L 9, c186R 7, c187R 25 lines) with shc/view_line.py into shc/hand_raw.tsv (~0.15 per line incl. context, ~$3 in a fresh session), then the s275 PREREG steps 1-2 unchanged with windows from shc/hand.tsv (two blind readers, gate K as registered, A, T, reconciliation, the registered --try), ~$4
+- 7 (i vs his b) and digit-pair nomenclature 76/44/37/48, n77 beyond c186R - blocker: not-attempted; one shape for single 7 (both passes, power not both), --try 7=b and 7s=b reject, so a value conflict, not a merge; the alignment on his second face is blocked: no-key-material -- its text is not on disk (C1161-KA) and not in cyphersolver at HEAD 0445769 (C1161-LASRY 15 Oct): only his full report has it; waiting-on a reply from Bourdeau or Lasry (an owner-side ask for that report page, not yet drafted); next: the second-face alignment once his report page is on disk, ~$1
+- 24 unmapped labels (incl. th 208 tokens, +, d, o, ls, eloop, K, 6r, iii, x) and z (passes agreed on his a:2, decode says t), plus plant W07 (a q both passes saw crossed) - blocker: not-attempted; description-only matching could not separate them; next: blind matching with atlas-style exemplar crops of each of our labels beside his sheet (two passes, one call per label group), ~$2
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 (14 U tokens left under V1) - blocker: not-attempted; outside labels_v2, so not in the matching passes; next: the exemplar-crop matching above, then the owner sign sorter if any stay open, ~$1
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (C1161-HC, 15 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); whole volume (342 canvases) swept at 300 px, no other cipher or glossed leaf (D1A-C1161)
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under key.tsv; his f163r paragraph matches the same gloss (LQ-C1161); c186R V2 decode agrees with his paragraph on 148/226 tokens, G1 PASS vs permuted key (CL1161-KA); no other glossed leaf in the volume (D1A-C1161)
+- [ ] known-keys: fr16142 and fr.3281 f.4 NO FIT (N4-C1, D2-C1161PRU); Lasry's key: V1 FAIL, V2 whole-decode FAIL, c186R known-answer PASS, n77 = de --try undecided (CL1161-KA), 7=b and S=n --try reject (CL1161-S7); second face's text not on disk, alignment blocked on his full report (C1161-KA, C1161-LASRY); S split: K windows re-cut, gate K PASS both sorts, registered --try Sl=n accept, So=n reject (C1161-RECUT); all-275 counting re-cut stopped at gate L2 18/30 (C1161-275); hand count c187L/c188L L2 29/30 PASS (C1161-HC); next: hand-count the remaining 62 lines, then the re-sort and the split into the transcription at M, ~$7 over two sessions
+- [x] print: no printed edition located by check-solved and Premise check; Vertot, Ambassades de Noailles (1763) vols 1-5 grepped for the f163r paragraph, not found by this method (VER-C1161); Lasry's "BnF cipher research" (10 Oct 2026, published by D. Bourdeau 13 Oct) is prior work on all six faces: AUDIT 3 class N0, key of record published (Lasry)
+- [retired] key-rebuild: instrument c186R gloss match (G) for per-sign and joint value changes -- per-sign 0/9 (GLOSS9), joint gain inside the window null (VER-C1161J); reopens only with a longer clear text or new material (his reading may be that material)
+- [ ] image-check: split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); planted audit NON-TEST (D2-C1161AUD); S/7 exemplar check UNDECIDED (CL1161-S7); 275 S windows sorted by two blind readers; K windows re-cut by counting, K PASS (C1161-RECUT); automatic counting localiser for all 275: L1 5/6, L2 18/30 FAIL (C1161-275); hand count per line on c187L/c188L, per piece: L2 29/30 PASS (C1161-HC); next: hand count of the other 62 S lines, ~$3; exemplar-crop matching of the 24 unmapped labels
+- [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); V1 and V2/V2b decodes --check exit 0 (C1161-LKEY, C1161-V2); main and V2 --check exit 0 again (CL1161-KA, CL1161-S7, C1161-SORT2, C1161-RECUT, C1161-275; C1161-HC edited no reading)
+Verdict: keep going: 4 internal gaps; cheapest next: hand-count the remaining 149 S tokens (62 lines, shc/view_line.py), ~$3, then the s275 PREREG readers, gate K and the registered --try on shc/hand.tsv windows, ~$4; the second-face alignment waits on Lasry's full report (owner-side ask to Bourdeau/Lasry), then ~$1
+
+`python3 tools/gaps_check.py clair1161-avis-flandre-1688` (C1161-HC, 15 Oct 2026):
+```
+OK keep-going clair1161-avis-flandre-1688: keep going: 4 internal gap(s), 2 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```

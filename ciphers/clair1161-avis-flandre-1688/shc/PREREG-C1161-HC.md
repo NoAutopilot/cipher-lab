@@ -35,3 +35,10 @@ avoided by placing every tick in the coordinates of the single piece (s1/s2/s3) 
   the registered --try run only once all 275 are hand-placed (s275/PREREG-C1161-275.md steps 1-2 unchanged, windows from hand.tsv). Whatever is
   not reached is handed on as the named next step. Nothing goes into ciphertext.tsv or key.tsv in this job unless step 2 of that PREREG is reached.
 Cap USD 5, box 90 min (11:08-12:38 UTC); stop before a unit that would cross 80% of either. Images stay in the session scratchpad.
+
+## Addendum A (11:1x UTC 15 Oct by date -u; written after L2 was scored)
+- Hand count done for all 126 S tokens on c187L (69) and c188L (57), pushed (059468e26) before the eye montages were looked at; 2 flagged
+  `edge` (S at a piece edge), none `nc`. **L2 29/30 PASS** (gate 26; shc/L2_check.tsv; the one off is E25 = c188L_L11/30, an `edge` row
+  whose S is clipped by the s3 piece edge). Caveat as registered: placer and checker are the same worker.
+- Extension to the other 62 S lines: not started. The worker cannot read its own cost; its estimate of the context spent on 53 line views
+  plus the eye check puts it near 80% of the USD 5 cap, so per the PREREG it stops before that unit. Handed on as the next step.
