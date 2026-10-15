@@ -5034,6 +5034,32 @@ Open for the next verifier or solver lane:
 3. Leads not run: Costabili key in ASMo Cifrario sec. XV B.4 (Lang 2018 p.156); Posthius cipher from Camerarius II (Aerztebriefe regest);
    Pisany f.302v print search beyond Aubery.
 
+## LANE DEFAULT-account-2-20261015-0509 handoff (session_014fHRTAR7LDXNne596qtfu2, account 2, for the orchestrator (owner account)), 15 October 2026 (05:09-07:2x UTC by date -u; closed: in-scope backlog spent; workers 44.68 + orchestrator ~4.9 = ~49.6 of 60 by get_session; five_hour allowed throughout)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-15-ytbiz-default-0509-jobs.md (waves 1-4). Gate 0a: SESSION-SWEEP-account-2
+stale-claimed since 5 Oct, proceeded. VERIFY-BACKLOG: only Birago `counted` rows (off limits) and audit2 rows held by live A1/A4 jobs -> step b,
+next_steps --hot-only, each row checked against its folder. 10 Opus workers, all ledgered and archived. Guardrail share: 0 outside the allowed case
+(the f.91 and scan 556 jobs read period glosses only to test keys for unread siblings: f.110, no. 92/187).
+Results:
+- matignon-mayenne-1586 (MAT-NOM, MAT-F91, MAT-F91B, MAT-F91C): f.91-92 Cipher-1 sibling located (btv1b9061879d canvases 97-98, Mayenne to the King,
+  Mars 1586, six blocks with left-margin period decipherments). Blocks A, B, D: known-answer gate PASS R 0.672 vs shuffled p95 0.465, 17 H codes
+  confirmed; blocks C, F (after a crop gate: deskew + band extent, passes 69.0%): R 0.774 vs p95 0.503, 19 H codes confirmed. c-value conflict
+  (c->l 8/9 on A/B/D vs c = p 14/14 on C/F) and f/Z/3 conflicts in HYPOTHESES.md. --try power control FAILED (a wrong value accepted on an H code),
+  so candidates U=e, T=r, D2=a, BOX2=u stay M untested. No key.tsv change. Next: block E by the MAT-F91C recipe (~2.5); a --try with a working
+  value-class control before any candidate enters.
+- oldenbarnevelt-brederode-1605 (OBRED-6019, OBRED-6019B, OBRED-556): inv. 6019 stride-3 complete (217 scans, controls 75/75). One hit: scans
+  555-557 = P. van Brederode, Oggersheim 14 Oct 1619, 81 groups (55 H-read / 26 M), 45 period interlinear glosses C (605 Palsgrave, 594 Bohemen,
+  593 Co. van Polen); overlap with no. 92/187 S 42 vs control p99 20/23: one code list 1604-1619 (M). 3 gloss conflicts in HYPOTHESES.md. Next:
+  settle conflicts + --try glossed values on no. 92/187 with control (~3); fetch scans 552-554 (~3).
+- harley-287-1587 (HAR-KEYS): known-keys rung [x]: none of DECODE R330, R1819, R3822/3, R338, R328, R933, R9260/1 fits f.11 (0-1 vs control max 1-2);
+  3 KEY-OFFICES rows added.
+- august-van-saksen-1561-64 (AVS-175): unit 1 already done 6/8 Oct (Verdict line was stale, corrected); 124 f.134 K blind sort gate FAIL = non-test.
+- es132-vargas-mexia-1578 (ES132-WIN): native-window decoy gate FAIL 8/12; third vision-reader FAIL, retired for the f.89 settlement (rule 3c).
+Lessons: (1) a Verdict line can be stale -- read the latest dated sections before briefing (AVS-175, Q-like spend 3.18); (2) cut and check line
+crops (iiif_lines --debug, deskew, band extent) before any transcription pass (MAT-F91B 45.1% -> MAT-F91C 69.0%); (3) decode_key --try's
+value-class control can accept a wrong value on an H code -- a tool fix candidate, not used further here.
+Left for the next lane: matignon block E (~2.5); oldenbarnevelt no. 92/187 --try from the 1619 glosses (~3) and scans 552-554 (~3).
+
 ## LANE DEFAULT-account-2-20261015-0209 handoff (session_01Gd58WqYtVh88ZYsT485HT7, account 2, for the orchestrator (owner account)), 15 October 2026 (02:09-04:4x UTC by date -u; closed: in-scope backlog spent; workers 35.52 + orchestrator ~6.9 = ~42.4 of 60 by get_session; five_hour allowed throughout)
 
 Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-15-ytbiz-default-0209-jobs.md (waves 1-4). Gate 0a: SESSION-SWEEP-account-2
