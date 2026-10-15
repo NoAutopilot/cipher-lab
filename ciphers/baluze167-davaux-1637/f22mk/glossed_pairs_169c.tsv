@@ -58,3 +58,11 @@ b168c347a	168:347	de transilvanie	3	65'	ra
 b168c347b	168:347	Rakotzi	2	65'	ra
 b168c347c	168:347	confederation	3	65'	ra
 b168c347d	168:347	quarante	2	65'	ra
+# BAL-65C (15 Oct 2026, account 1, LANE DEFAULT-A1-1426-15): Baluze 168 (btv1b9001503k) c346 and c348 (Chavigny f.166 letter, the leaves either side of
+# BAL-65L's c347), full/2400, my eye with 3x zooms of each 65 (not blind). Gate per canvas in NOTES.md "## BAL-65C" (c346 and c348 both PASS).
+# c346: no 65 at all. c348 'satisfera' (41 70 77 f 21 65, 'quelle satisfera'): separate rising stroke above the 5 = 65'. c348 'reviendra' (66 82 95 4 65
+# before 4 40 13 ... 'a la couronne de Suede'): no stroke in cipher ink above or touching the 6 or 5 at 2400 px and at max (region pct:41.6,75.4,12.5,4.5);
+# one dot right of the 5's top, over the gap before the next crossed sign, not a stroke = plain by PREREG-BAL-302's rule. The gloss 'reviendra' is
+# written left of the run (its underline ends before the 65), as other glosses on this leaf are; the run's five signs spell re vi en d ra.
+b168c348a	168:348	satisfera	5	65'	ra
+b168c348b	168:348	reviendra	5	65	ra

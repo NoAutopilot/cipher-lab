@@ -4593,5 +4593,32 @@
    "kept": "session scratchpad only, not committed",
    "job": "BAL-65L"
   }
+ ],
+ "bal_65c_fetches": [
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f346/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T14:44Z",
+   "http": 200,
+   "sha1": "5ba1e64c5fa339ea96acacfb246faeabf6f23dff",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65C"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f348/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T14:44Z",
+   "http": 200,
+   "sha1": "5f807b69a51f467a77fc325115cd11e64f0d7700",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65C"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f348/pct:41.6,75.4,12.5,4.5/max/0/default.jpg",
+   "fetched": "2026-10-15T14:46Z",
+   "http": 200,
+   "sha1": "d3822bcb2a12f66cbc695b66424140cda42e2af0",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65C",
+   "note": "the 'reviendra' plain 65, 459x246"
+  }
  ]
 }
