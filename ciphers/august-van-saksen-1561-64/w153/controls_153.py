@@ -69,6 +69,18 @@ def run():
     cls[:] = cls_bak
     out.append(f"    C-graded tokens only N={len(vals_c)}: real {real_c:.3f} | shuffled mean {sum(shc)/N:.3f} "
                f"p95 {shc[int(.95*N)]:.3f}")
+    # AVS-153 (15 Oct 2026, PREREG-AVS-153 gate G1): lines 10-20 alone, same statistic, own shuffle
+    late = [(c, v) for r, c, v in zip(ct, cls, vals) if int(r["line"]) >= 10]
+    cls[:] = [c for c, _ in late]
+    vl = [v for _, v in late]
+    real_l = consistency(vl)
+    shl = []
+    for _ in range(N):
+        v2 = vl[:]; rng.shuffle(v2); shl.append(consistency(v2))
+    shl.sort()
+    cls[:] = cls_bak
+    out.append(f"    lines 10-20 only N={len(vl)}: real {real_l:.3f} | shuffled mean {sum(shl)/N:.3f} p95 {shl[int(.95*N)]:.3f} "
+               f"-> {'PASS' if real_l > shl[int(.95*N)] else 'FAIL'}")
 
     k153 = {r["sign"]: r["value"] for r in rows(TOP / "key_153.tsv") if r["grade"] == "C"}
     pre = {k: MAP98[k] for k in ("0", "1", "3", "4", "5", "8", "9", "6", "2", "TH", "v")}

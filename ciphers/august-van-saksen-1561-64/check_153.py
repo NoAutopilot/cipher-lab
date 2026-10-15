@@ -32,9 +32,9 @@ def regenerate():
         v = v if len(v) < 3 or g == "C" and v.isalpha() and len(v) <= 3 else "<" + v + ">"
         lines[int(r["line"])].append(v if g == "C" else "[" + v.strip("<>") + "]")
     body = "\n".join(f"L{ln:02d}: " + "".join(lines[ln]) for ln in sorted(lines))
-    head = (f"# WVO 153 p6 (Oranje -> August, 1 Sept 1566) lines 1-9 of 20: ciphertext_153.tsv through key_153.tsv, "
+    head = (f"# WVO 153 p6 (Oranje -> August, 1 Sept 1566) lines 1-20: ciphertext_153.tsv through key_153.tsv, "
             f"{sum(grades.values())} signs, key-class grades {dict(sorted(grades.items()))}. Key source (two period "
-            "decipherments on p7/p8), not a reading of an unread text. WVO-153-KEY-2, 10 Oct 2026.\n")
+            "decipherments on p7/p8), not a reading of an unread text. WVO-153-KEY-2, 10 Oct 2026 (lines 1-9); AVS-153, 15 Oct 2026 (lines 10-20).\n")
     return head + body + "\n"
 
 
