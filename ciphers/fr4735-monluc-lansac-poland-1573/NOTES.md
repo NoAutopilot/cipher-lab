@@ -1416,7 +1416,7 @@ shuffled clear (200, seed 140) mean 0.367, p95 0.385, max 0.414, **0/200 at or a
 0.344. K04 now faces n 14 times over L01-L20 (was 17); K12 confirms n 24 times. Grades unchanged: c268 690 tokens C 347 / M 318 / U 25
 (the three were M as contradictions, stay M as relabels); c172 C 83 / M 64 / U 3; key.tsv unchanged. Judge (fr16) FAIL at N 657 (-1.431 vs
 real_p05 -0.889), shuffled decodes 0/100 PASS; a non-test for this key (MONLUC-KEY), the alignment is the evidence.
-CHECKS_PLACEHOLDER
+Checks: `python3 ../../tools/decode_key.py . --check` "reading up to date"; `python3 align_c268.py --check` "align_c268: OK"; `python3 score_c268.py --check` "OK c268 outputs current"; `python3 adh_run.py --check` "adh_run: OK" (all exit 0); `tools/gaps_check.py` 1 keep-going, 0 FAIL. Box 09:08-09:4x UTC 15 Oct by date -u.
 Requests: openapi.bnf.fr 2. Subagents: 2 Sonnet. Own looks: 1 (candidates.png). Cost not visible to this session.
 
 ## Remaining gaps (MONL-K04, 15 Oct 2026)
