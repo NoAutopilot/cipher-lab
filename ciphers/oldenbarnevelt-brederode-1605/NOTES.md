@@ -1824,3 +1824,55 @@ Read so far: unmeasured for no. 92 and 187 (nothing applied to them); inv. 6019 
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552)
 - [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
 Verdict: keep going: 3 internal gaps; scans 552-554 hold no groups (552 = end of a Heidelberg 8 Oct 1619 letter saying the cipher was reformed and sent with an instruction and key; 554 = opening of the 14 Oct letter); cheapest next: inv. 6019 scans 549-551 for that enclosure (~$1.5), and OBRED-TRY's --try (~$3)
+
+## OBRED-TRY (15 Oct 2026, 08:24-08:3x UTC by date -u, account 2, Opus; for LANE DEFAULT-A2-0810-15)
+
+Brief: settle the gloss conflicts 415/337/100 on the image, build a per-unit glossed-pair table with its own shuffle gate, then apply it to
+no. 92 / the scan-187 postscript by decode_key's --try with a value-class control. No key edit.
+
+- Prior-work step: `prior_work.py ... --step-type decode` exit 4 (1 LEAD own claim, 1 LOOK, 2 UNCHECKED, 2 UNCHECKED-NET); the four
+  non-net rows recorded CLEAR in `prior-work.tsv` (adhoc-e22962). Check 1: OBRED-556 is the only earlier work on these pairs; no --try ran.
+- PREREG `obred187/PREREG-OBREDTRY.md` pushed in its own commit (b7011c090) before any fetch or score. It discloses that the worker saw a
+  rising code/letter pattern in ciphertext_556.tsv before registering, so statistic B is post-hoc-selected and gated per leaf too.
+- Requests: `service.archief.nl` 3 (METS + 555, 556 at 5000 px), all 200, sha1 identical to OBRED-556's; NA take/release in ROOM.md. No
+  image committed. One blind Sonnet call on four gloss-line crops (scratchpad).
+- **Step 1, conflicts: none settled.** Eye and blind read agree with OBRED-556 on 415 (r / s) and 337 (o / p, blind high on both); 100
+  (d / e) is unsupported by the blind read on either side (blotted / "u or n"). All three stay logged in HYPOTHESES.md with witnesses
+  (rule 4) and were tried as two separate hypotheses each, any outcome M.
+- **Step 2, per-unit gate (`obred187/try/run_try.py`, `gate.json`): PASS.** 41 C single-letter pairs, 10,000 gloss permutations.
+  A (repeat consistency): 3 repeated codes, 1 of 3 pairs agree (0.333) vs null mean 0.068, p95 0.333, p 0.19 -- not significant,
+  at N 3 near non-discriminating. B (Spearman, code value vs gloss letter's alphabet index): pooled rho 0.959 (null p95 0.256, p < 1e-4),
+  555 alone 0.930 (n 30, p95 0.309, p < 1e-4), 556 alone 0.989 (n 11, p95 0.524, p < 1e-4). The glossed letters rise with the code
+  value: the 1619 table is, on this evidence, a homophonic list with letter codes in alphabetical bands (grade M as a design statement).
+- **Step 3, --try (nl16, window 8, 100 nulls, tool defaults; leave-one-out on a scratch table `obred187/try/work/key_T.tsv`, 35 codes):
+  0 accepts.** 25 glossed codes (22 C + 3 conflict) occur in no. 92/187: 20 of no. 92's 121 tokens, 16 of 187's 59.
+  Target: true glosses 0 accept, 8 reject, 14 undecided (all n = 1); decoys 0 accept, 8 reject. **Power control on the 1619 text
+  itself (codes with n >= 2 there): true glosses 0 of 7 accepted, 6 rejected** (decoys 0 of 7, 7 rejected). Power 0.0 < 0.70: under
+  the PREREG every target verdict is a **non-test at this N**, not a negative for any gloss. Why (M): with 35 of ~130 values known, the
+  ±8 window is mostly unknown codes filled with the model's likeliest letter, so the true letter does not beat the runner-up even
+  where the gloss is read off the same leaf. Per code (glossed value, n92, n187, verdict): 30 a 1 0 und.; 36 a 0 1 und.; 108 e 2 1 rej.;
+  120 e 0 1 und.; 126 e 0 1 und.; 132 e 0 1 und.; 169 h 1 0 und.; 193 i 0 1 und.; 217 i 1 1 rej.; 241 l 2 0 rej.; 265 l 0 1 und.;
+  290 m 1 0 und.; 313 n 0 1 und.; 314 n 2 0 rej.; 320 n 0 1 und.; 409 r 1 1 rej.; 411 r 1 0 und.; 433 s 2 1 rej.; 457 t 1 1 rej.;
+  460 t 1 0 und.; 468 t 1 0 und.; 529 y 1 1 rej.; 100 d|e 0 1 und.|und.; 337 o|p 1 1 und.|rej.; 415 r|s 1 0 und.|und.
+  (`obred187/try/try_results.tsv`, `run_try.py --check` up to date.) Nothing applied to no. 92/187 as a reading; key.tsv not written.
+- Where it was not found, and the limits: --try is the only instrument run; its power at this key density is nil on the glossed text
+  itself, so it says nothing about no. 92/187. The band structure (statistic B) was not used for any value. 555 L15 (one pass) entered
+  the table as transcribed. Scans 552-554 (OBRED-552's job) not used.
+
+## Remaining gaps (OBRED-TRY, 15 Oct 2026)
+Read so far: unmeasured for no. 92 and 187 (nothing applied to them); inv. 6019 scans 555-556 carry 81 groups (55 H-read) with 45 C-graded period glosses; overlap with no. 92/187 clears its control (OBRED-556); the 14 Oct 1619 letter is complete on 554-557, 58 of 81 groups H-read (OBRED-552); the glossed letters rise with the code value (rho 0.96, p < 1e-4, OBRED-TRY)
+- no. 92 and the 187 postscript with the 1619 glossed values - blocker: not-attempted; decode_key --try had power 0/7 on the glossed letter itself (OBRED-TRY), so its verdicts are non-tests; next: a band-interval decode (each letter's code range from the 1619 glosses, alphabetical order) with a pre-registered held-out check -- predict one leaf's glossed letters from the other leaf's bands against a shuffled-band control -- then apply to no. 92/187 graded M, ~$3
+- the reformed cipher's "instructie ende sleutel" sent with the Heidelberg letter of 8 Oct 1619 (inv. 6019, letter ending on scan 552; OBRED-552) - blocker: not-attempted; found by OBRED-552 this window, outside OBRED-TRY's brief; next: read inv. 6019 scans 549-551 at 5000 px (3-4 NA requests, ~$1.5), then, if no key sheet is there, the stride-1 fill of 6019 around October 1619
+- the later liassen NA 1.01.02 inv. 6020-6024 and the 6019 stride-1 fill - blocker: not-attempted; outside this brief, the 1619 letter shows the agent still used the 1604-05 code list (OBRED-556); next: a stride-3 screen of inv. 6020 (~$4)
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A): no numeral block, no Brederode, Stettin or Heidelberg heading (M)
+
+## Escalation (OBRED-TRY, 15 Oct 2026)
+- [x] siblings: scan 187 shares 26 values with no. 92 (OBRED-187); inv. 6019 scans 555-556 (Oggersheim, 14 Oct 1619) share 42 values with no. 92/187, clearing the shuffled-code control (OBRED-556); the letter's start (554) carries no groups (OBRED-552)
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187); the 1619 letter's prose and margin summaries read in part (OBRED-556)
+- [ ] known-keys: the 10 Aug 1598 Van Aerssen slip, Buzanval inv. 2028, DECODE 1600s and Palatine/Hessian keys screened (R10-OBRED98, R9-OBRED4, OLD-DKEY, R8-OBRED2, R9-OBRED3); the 8 Oct 1619 letter names a reformed cipher sent with "instructie ende sleutel" (OBRED-552); next: inv. 6019 scans 549-551 for the enclosure, ~$1.5
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII has no decipherment or key note near the Brederode entries (OBRED-DP)
+- [ ] key-rebuild: the 1619 glossed pairs clear their own per-unit gate (OBRED-TRY, statistic B); decode_key --try ran with power 0/7 (non-test); next: band-interval decode with a held-out leaf check and shuffled-band control, then no. 92/187 graded M, ~$3
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
+- [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
+Verdict: keep going: 3 internal gaps; the 1619 glossed pairs pass their per-unit gate (code value rises with gloss letter, rho 0.96) but decode_key --try has no power at this key density (0/7 on the glossed text itself), so nothing is applied to no. 92/187; cheapest next: inv. 6019 scans 549-551 for the 8 Oct 1619 key enclosure (~$1.5, OBRED-552), then a band-interval decode with a held-out leaf check (~$3)

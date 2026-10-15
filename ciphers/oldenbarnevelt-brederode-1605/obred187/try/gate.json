@@ -1,0 +1,59 @@
+{
+ "A": {
+  "codes_repeated": 3,
+  "note": "",
+  "null_mean": 0.0684,
+  "null_p95": 0.3333333333333333,
+  "p": 0.1913,
+  "pairs": 3,
+  "real": 0.3333333333333333
+ },
+ "B_555": {
+  "n": 30,
+  "null_p95": 0.3085,
+  "p": 0.0,
+  "rho": 0.9301
+ },
+ "B_556": {
+  "n": 11,
+  "null_p95": 0.5242,
+  "p": 0.0,
+  "rho": 0.9886
+ },
+ "B_pooled": {
+  "n": 41,
+  "null_p95": 0.2557,
+  "p": 0.0,
+  "rho": 0.9585
+ },
+ "gate": "PASS",
+ "n_pairs": 41,
+ "table_codes": 35,
+ "table_multi_value": {},
+ "try": {
+  "power556_decoy": {
+   "accept": 0,
+   "decided": 7,
+   "reject": 7,
+   "tried": 7
+  },
+  "power556_gloss": {
+   "accept": 0,
+   "decided": 6,
+   "reject": 6,
+   "tried": 7
+  },
+  "target_decoy": {
+   "accept": 0,
+   "decided": 8,
+   "reject": 8,
+   "tried": 22
+  },
+  "target_gloss": {
+   "accept": 0,
+   "decided": 8,
+   "reject": 8,
+   "tried": 22
+  }
+ }
+}

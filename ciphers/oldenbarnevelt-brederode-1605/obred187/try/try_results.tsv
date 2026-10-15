@@ -1,0 +1,83 @@
+arm	code	kind	value	pair	n92	n187	n	stat	runner_up	p95_pos	p95_val	verdict	why
+target	30	gloss	a	C	1	0	1	-6.3	O	-1.2	-5.8	undecided	n = 1
+target	30	decoy	p	C	1	0	1	-16.2	O	-3.1	-5.8	undecided	n = 1
+target	36	gloss	a	C	0	1	1	-7.8	N	-2.6	-2.3	undecided	n = 1
+target	36	decoy	s	C	0	1	1	-7.8	N	0.5	-2.3	undecided	n = 1
+power556	73	gloss	d	C	0	0	2	-24.6	I	2.0	-12.8	reject	no better than the runner-up
+power556	73	decoy	v	C	0	0	2	-12.8	I	3.0	2.1	reject	no better than the runner-up
+target	108	gloss	e	C	2	1	3	-24.5	A	12.6	1.2	reject	no better than the runner-up
+target	108	decoy	t	C	2	1	3	-1.2	A	-2.8	1.2	reject	no better than the runner-up
+power556	108	gloss	e	C	2	1	2	-14.2	D	6.4	-7.6	reject	no better than the runner-up
+power556	108	decoy	t	C	2	1	2	-9.5	D	1.9	-7.6	reject	no better than the runner-up
+target	120	gloss	e	C	0	1	1	-32.3	NULL	2.5	-11.8	undecided	n = 1
+target	120	decoy	t	C	0	1	1	-13.3	NULL	1.7	-11.8	undecided	n = 1
+target	126	gloss	e	C	0	1	1	-2.6	T	2.0	0.2	undecided	n = 1
+target	126	decoy	k	C	0	1	1	-2.3	T	-4.9	0.2	undecided	n = 1
+power556	126	gloss	e	C	0	1	2	9.3	O	5.3	-9.3	undecided	below the acceptance rule
+power556	126	decoy	k	C	0	1	2	-26.7	E	-5.3	-9.3	reject	no better than the runner-up
+target	132	gloss	e	C	0	1	1	2.0	NULL	1.6	-2.0	undecided	n = 1
+target	132	decoy	z	C	0	1	1	-7.9	E	-3.5	-2.0	undecided	n = 1
+target	169	gloss	h	C	1	0	1	-9.5	D	-2.6	1.3	undecided	n = 1
+target	169	decoy	v	C	1	0	1	-27.3	D	-0.3	1.3	undecided	n = 1
+target	193	gloss	i	C	0	1	1	-14.2	N	-2.3	-5.1	undecided	n = 1
+target	193	decoy	s	C	0	1	1	-9.4	N	0.5	-5.1	undecided	n = 1
+target	217	gloss	i	C	1	1	2	-45.1	S	-0.6	-0.5	reject	no better than the runner-up
+target	217	decoy	f	C	1	1	2	-39.7	S	-15.6	-0.5	reject	no better than the runner-up
+target	241	gloss	l	C	2	0	2	-4.9	H	-5.0	-0.5	reject	no better than the runner-up
+target	241	decoy	v	C	2	0	2	-20.0	H	3.7	-0.5	reject	no better than the runner-up
+power556	241	gloss	l	C	2	0	2	-13.9	I	-3.2	3.5	reject	no better than the runner-up
+power556	241	decoy	v	C	2	0	2	-19.1	I	9.2	3.5	reject	no better than the runner-up
+target	265	gloss	l	C	0	1	1	-32.8	C	-1.7	3.9	undecided	n = 1
+target	265	decoy	z	C	0	1	1	-18.9	C	-3.5	3.9	undecided	n = 1
+target	290	gloss	m	C	1	0	1	-8.7	NULL	-2.7	-3.1	undecided	n = 1
+target	290	decoy	y	C	1	0	1	-5.3	NULL	-3.5	-3.1	undecided	n = 1
+target	313	gloss	n	C	0	1	1	-29.4	B	5.1	-4.6	undecided	n = 1
+target	313	decoy	l	C	0	1	1	-19.4	B	-1.7	-4.6	undecided	n = 1
+target	314	gloss	n	C	2	0	2	-33.9	E	5.4	-13.7	reject	no better than the runner-up
+target	314	decoy	b	C	2	0	2	-48.9	E	-7.6	13.7	reject	no better than the runner-up
+target	320	gloss	n	C	0	1	1	-16.0	NULL	5.1	-1.8	undecided	n = 1
+target	320	decoy	b	C	0	1	1	-20.6	NULL	-2.7	-1.8	undecided	n = 1
+target	409	gloss	r	C	1	1	2	-12.1	N	-6.6	-7.6	reject	no better than the runner-up
+target	409	decoy	y	C	1	1	2	-33.3	N	-15.8	-7.6	reject	no better than the runner-up
+target	411	gloss	r	C	1	0	1	-11.0	N	-3.8	-2.8	undecided	n = 1
+target	411	decoy	f	C	1	0	1	-19.0	N	-3.9	-2.8	undecided	n = 1
+target	433	gloss	s	C	2	1	3	-19.1	NULL	3.2	-12.4	reject	no better than the runner-up
+target	433	decoy	f	C	2	1	3	-68.5	NULL	-26.4	-12.4	reject	no better than the runner-up
+power556	433	gloss	s	C	2	1	2	-34.3	NULL	0.2	-5.2	reject	no better than the runner-up
+power556	433	decoy	f	C	2	1	2	-23.8	NULL	-22.3	-5.2	reject	no better than the runner-up
+target	457	gloss	t	C	1	1	2	-13.7	E	-2.1	-1.9	reject	no better than the runner-up
+target	457	decoy	x	C	1	1	2	-24.8	E	-23.6	-1.9	reject	no better than the runner-up
+power556	457	gloss	t	C	1	1	2	-14.6	D	5.0	-14.5	reject	no better than the runner-up
+power556	457	decoy	x	C	1	1	2	-37.4	D	-25.6	-14.5	reject	no better than the runner-up
+target	460	gloss	t	C	1	0	1	-4.8	E	1.7	-0.3	undecided	n = 1
+target	460	decoy	o	C	1	0	1	-11.4	E	-1.0	-0.3	undecided	n = 1
+target	468	gloss	t	C	1	0	1	-8.5	S	1.7	0.5	undecided	n = 1
+target	468	decoy	q	C	1	0	1	-32.7	S	-6.1	-1.5	undecided	n = 1
+power556	490	gloss	v	C	0	0	2	-42.3	A	3.1	8.7	reject	no better than the runner-up
+power556	490	decoy	f	C	0	0	2	-45.7	A	-19.9	8.7	reject	no better than the runner-up
+target	529	gloss	y	C	1	1	2	-14.7	I	-4.2	2.0	reject	no better than the runner-up
+target	529	decoy	d	C	1	1	2	-18.3	I	-1.1	-2.0	reject	no better than the runner-up
+target	100	gloss	d	conflict	0	1	1	-3.7	NULL	1.8	-0.7	undecided	n = 1
+target	100	decoy	g	conflict	0	1	1	-3.3	NULL	-2.7	-1.5	undecided	n = 1
+power556	100	gloss	d	conflict	0	1	2	-14.6	S	11.8	-3.4	reject	no better than the runner-up
+power556	100	decoy	g	conflict	0	1	2	-22.8	S	-3.5	-3.4	reject	no better than the runner-up
+target	100	gloss	e	conflict	0	1	1	-0.7	NULL	2.0	-1.5	undecided	n = 1
+target	100	decoy	r	conflict	0	1	1	-9.2	NULL	-3.8	-1.5	undecided	n = 1
+power556	100	gloss	e	conflict	0	1	2	-4.3	S	5.6	-3.4	reject	no better than the runner-up
+power556	100	decoy	r	conflict	0	1	2	-38.7	S	-8.5	-3.4	reject	no better than the runner-up
+target	337	gloss	o	conflict	1	1	2	3.5	M	-2.6	-3.5	undecided	below the acceptance rule
+target	337	decoy	c	conflict	1	1	2	-5.1	O	-8.0	-3.5	reject	no better than the runner-up
+power556	337	gloss	o	conflict	1	1	2	-11.8	E	-2.4	-0.7	reject	no better than the runner-up
+power556	337	decoy	c	conflict	1	1	2	-31.3	E	-15.2	-0.7	reject	no better than the runner-up
+target	337	gloss	p	conflict	1	1	2	-11.1	O	-15.1	-3.5	reject	no better than the runner-up
+target	337	decoy	q	conflict	1	1	2	-46.1	O	-19.7	-3.5	reject	no better than the runner-up
+power556	337	gloss	p	conflict	1	1	2	-7.7	E	-9.6	-0.7	reject	no better than the runner-up
+power556	337	decoy	q	conflict	1	1	2	-54.5	E	-31.4	-0.7	reject	no better than the runner-up
+target	415	gloss	r	conflict	1	0	1	-8.1	NULL	-3.8	-3.9	undecided	n = 1
+target	415	decoy	m	conflict	1	0	1	-6.3	NULL	-2.7	-3.9	undecided	n = 1
+power556	415	gloss	r	conflict	1	0	2	-31.2	A	-8.5	2.4	reject	no better than the runner-up
+power556	415	decoy	m	conflict	1	0	2	-40.4	A	-12.3	2.4	reject	no better than the runner-up
+target	415	gloss	s	conflict	1	0	1	-5.2	NULL	3.1	-3.9	undecided	n = 1
+target	415	decoy	o	conflict	1	0	1	-6.4	NULL	-1.5	-3.9	undecided	n = 1
+power556	415	gloss	s	conflict	1	0	2	-25.9	A	-5.3	2.4	reject	no better than the runner-up
+power556	415	decoy	o	conflict	1	0	2	-35.3	A	-2.4	2.4	reject	no better than the runner-up

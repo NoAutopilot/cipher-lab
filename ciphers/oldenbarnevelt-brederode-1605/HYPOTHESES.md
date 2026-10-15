@@ -7,3 +7,14 @@ period interlinear hand; both readings of each value in the same letter, same di
   "diversie"). Either a gloss slip, a misread digit (passes agree 415 on both), or a homophone list that is not one-to-one. Open.
 - 337: 'o' over 555 L05 pos 6 ("favoriseren") vs 'p' over 556 L05 pos 7 ("geholpen"). Same three possibilities. Open.
 - 100: 'd' over 555 L12 pos 7 (M, Sonnet check saw no gloss) vs 'e' over 556 L05 pos 2 (C). Open, weaker (one side M).
+
+### Image re-look of the three conflicts (OBRED-TRY, 15 Oct 2026; PREREG obred187/PREREG-OBREDTRY.md)
+Scans 555/556 re-fetched at 5000 px (sha1 identical to OBRED-556's), the four gloss lines read by this worker's eye and by one blind
+Sonnet call (not told values or conflict). Rule: a side is corrected only if both reads differ from the OBRED-556 row. None was corrected.
+- 415: eye r over 555 L12 p5 ("met vrede") and long s over 556 L04 p3 ("diversie"); blind r (low) / s (low). Digits 415 clear on both. Stands.
+- 337: eye o over 555 L05 p6 and p over 556 L05 p7; blind o (high) / p (high). Digits clear (556: 7 touched by a blot). Stands.
+- 100: eye d over 555 L12 p7 (the d sits between 100 and 129, assigned by the eight-letter span "met vrede") and e over 556 L05 p3;
+  blind "?" (555, blotted) and "u/n with a tick" (556). The blind read supports neither side; stands, weakest of the three.
+- Observation, not used to settle any conflict (PREREG step 1): all three sit at the edge of two letters' code ranges under statistic B
+  (r ~390-415 / s ~433; o and p ~337; d ~73-100 / e ~97-133), consistent with an ordered homophone table whose boundaries the glossator
+  or the table drew differently -- a hypothesis, untested.
