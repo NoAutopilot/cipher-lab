@@ -1,0 +1,6 @@
+{
+ "note": "C1161-RECUT (15 Oct 2026): registered SSPLIT step-2 --try harness after gate K(A') PASS on re-cut K windows; S split by sort A (3 K windows re-cut and re-read blind), So open / Sl looped / S unsure, all read u. Never a reading.",
+ "jobs": [
+  {"ciphertext": "recut/ciphertext_split.tsv", "key": "recut/key_split.tsv", "style": "spaced", "reading": "recut/try_reading.txt", "tokens": "recut/try_tokens.tsv"}
+ ]
+}

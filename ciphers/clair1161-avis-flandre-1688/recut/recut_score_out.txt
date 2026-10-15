@@ -1,0 +1,23 @@
+KA' ('c188L_L24', 19) agreed L sort L 
+KA' ('c185R_L23', 19) agreed L sort O (re-cut)
+KA' ('c187L_L15', 27) agreed L sort L 
+KA' ('c188L_L07', 18) agreed L sort L (re-cut)
+KA' ('c185R_L18', 5) agreed O sort O (re-cut)
+KA' ('c187R_L22', 6) agreed O sort O 
+KA' ('c187R_L25', 12) agreed O sort O 
+KA' ('c188L_L27', 20) agreed O sort O 
+KA' ('c187R_L22', 4) agreed O sort O 
+K(A'): 8/9 decided to agreed class, 0 marked ? -> PASS
+T(A'): O 79, L 121, ? 75 -> PASS
+KB' ('c188L_L24', 19) agreed L sort L 
+KB' ('c185R_L23', 19) agreed L sort O (re-cut)
+KB' ('c187L_L15', 27) agreed L sort L 
+KB' ('c188L_L07', 18) agreed L sort L (re-cut)
+KB' ('c185R_L18', 5) agreed O sort O (re-cut)
+KB' ('c187R_L22', 6) agreed O sort O 
+KB' ('c187R_L25', 12) agreed O sort O 
+KB' ('c188L_L27', 20) agreed O sort O 
+KB' ('c187R_L22', 4) agreed O sort O 
+K(B'): 8/9 decided to agreed class, 0 marked ? -> PASS
+T(B'): O 50, L 74, ? 151 -> PASS
+harness written (sort A')
