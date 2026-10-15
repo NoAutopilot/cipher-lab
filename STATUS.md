@@ -9776,3 +9776,11 @@ depth stays D2; next is new material only (MS Rawl. A. 24 leaf, needs-physical-a
 n>=4 (false accept 0/110); 4 code-6 positions accepted as s (held M for a verifier); longest run 53 before and after (bar 84); next = image
 re-read of r17-r24, queued as MERCY-IMG (account 1, cap 6). LVN-NAMES and HEID-1621 (account 2) running since 14:12. Owner step-1 page
 still empty; FDR follow-up not reported sent.
+
+LANE VIV-KEYSTONE handoff, appended 15:3x UTC 15 Oct 2026 (parent, account 4). Account 1 PAUSED (seven_day allowed_warning by its lane's
+get_session, resets 05:00 UTC 17 Oct; usage_watch exit 2 confirmed). Depth steps: MERCY-IMG (account 4 ran it) settled 13 of 19 M glyphs on
+f.22 r16-r24 by two blind readers (H control 0.994), longest run 53 -> 89 over the 84 bar (R 3.4) and under 135 (es17c) -> verifier
+DV-MERCY2 briefed (parent's own worker, brief 2026-10-15-acct4-depth-steps-2.md). LVN-NAMES: both controls FAIL (name_candidates 0/4,
+--try wrong-accept 2/15) -> ten target runs non-test, no value proposed; if ever valued 77.4 -> about 85% H/C/S. HEID-1621: premise check
+open (M), sender not read, 96 numerals transcribed all M, 40/41 pairs (n, n+1), 6.5 units per line = word count -> word-level pair+letter
+code lead; HEID-1621B queued on account 2 (sender + stride-1 neighbours, cap 3). Owner step-1 page still empty; FDR not reported sent.
