@@ -566,3 +566,82 @@ contiguous run > 141 needs most of r17-r24's M tokens settled at S, i.e. a key s
 
 **Postmortem.** DEPTH-REGRADE (4 Oct) set D2 without computing AD or testing the code clause, and cited the
 frequency-allotted control that H1 had already withdrawn a week earlier; both corrected here.
+
+## Depth re-rule 2 (DV-MERCY2, 15 Oct 2026)
+
+Verifier DV-MERCY2 (account 4, for LANE VIV-KEYSTONE parent session_01D7XWmthshMVqxumdDvitPh), 15:36-16:0x UTC by date -u;
+brief `.claude/briefs/runs/2026-10-15-acct4-depth-steps-2.md` "## JOB DV-MERCY2"; bar `.claude/briefs/runs/2026-10-08-acct3-depth-bar.md`
+(as in DV-MERCY). Disk only, no network, no images, no subagents. A separate session from MERCY-M33 and MERCY-IMG. Nothing decoded;
+key.tsv, the reading, status.json and the N-class (N4) untouched. Item: BnF Espagnol 144 f.22r-v, instruction to Mercy, 6 June 1648.
+Claim under audit: NOTES.md "## MERCY-IMG" / "## MERCY-M33" (15 Oct 2026): 13 of the 19 M glyphs on r16-r24 settled, longest
+H/C/S stretch 89 letters (r20:8-r24:13) against AD 84 (R 3.4) and 135.1 (es17c).
+
+**Ruling: D1 held. Outward: "fragments read"; decode_status Non-decrypted. depth_pct 92.2 as committed (94.7, S 501 of 529, once the
+parent applies the 13 positions below).** The 89-letter clause is real and reproduced, but it is under the governing AD (125.9 es17c with
+the liberties recounted), so neither 4a clause is met.
+
+1. **Re-derivation.** `python3 tools/decode_key.py ciphers/espagnol142-mercy-1648 --check`: "tokens 529: M 41, S 488", "reading up to
+   date", exit 0. `--split-check`: 0 flagged tokens (the four out-of-range clusters were already split into in-key codes on 1 Oct 2026).
+2. **(i) Segmentation of a glued cluster -- the rule applied, to every cluster in the item.**
+   *Rule:* a cluster the writer wrote as one group is S on segmentation when (a) its digits are reproduced by blind readers that pass a
+   known-answer gate on the same rows, and (b) the concatenation lies outside the key range (2-34) and has exactly one parse into
+   in-key codes. Then no choice is left: the image fixes the digits and the key range fixes the cut, so the cut is not a liberty and
+   the letters carry the key's own S grade. A cluster whose concatenation is itself a key code (in range) stays M: the image cannot
+   separate "26" from "2|6" and choosing by sense is a liberty (and circular for a depth clause). Companion rule for a glyph doubtful
+   only on legibility: two gated blind readers reading it identically settle it at S.
+   *Check of the gate from the files:* `mercyimg/readA_tokens.tsv`, `readB_tokens.tsv`: H glyphs on r16-r24 173, digits right 172 each
+   (0.994), own group 171 each (0.988) -- as MERCY-IMG states. On all 19 row-M positions both readers' digits equal the transcription
+   (digits_ok 1 in both files).
+   *Applied, item-wide:*
+   | cluster | position(s) | in range? | parses | ruling |
+   |---|---|---|---|---|
+   | 72 | r16:21-22 | no | 7 2 only | **S** (t o; inside the name "Burgstorf") |
+   | 52 | r17:10-11 | no | 5 2 only | **S** |
+   | 48 | r17:21-22 | no | 4 8 only (readers note "or 98": 9 8 gives q u too, same letters) | **S** |
+   | 48 | r20:15-16 | no | 4 8 only (same note) | **S** |
+   | 186 | r23:1-2 | no | 18 6 only (1 is not a code) | **S** |
+   | 65 | r24:4-5 | no | 6 5 only | **S** |
+   | 4 (one glyph, legibility) | r22:2 | -- | both readers 4, own group | **S** (companion rule) |
+   | 26 | r18:5-6, r24:14-15 | yes (26 = i) | 26 or 2 6 | **M** (sense-chosen; MERCY-IMG also declined the re-label) |
+   | 2 3 / 23 | r20:6-7 | yes (23 = o) | readers split (A: 2 3, B: 23) | **M** |
+   | 25 re-cut 2 5 | r10:8 | yes (25) | 25 or 2 5 | **M** (Bourdeau's sense re-cut; image neutral) |
+   | 2 8 merged 28 | r10:13-14 | yes (28) | 2 8 or 28 | **M** (repair against the spacing) |
+   | 3 17 split from "7" | v07:15-16 | yes | 7 or 3 17 | **M** (not in MERCY-IMG's rows; no gated re-read) |
+   So the 13 positions MERCY-IMG lists (r16:21-22, r17:10-11, r17:21-22, r20:15-16, r22:2, r23:1-2, r24:4-5) **enter the reading at S**;
+   the parent applies them (ciphertext.tsv confidence / grades) and re-runs `decode_key.py --check`. I edit no reading. The MERCY-M33 T6
+   accepts add nothing beyond these (r23:2, r24:4 are among the 13; r18:6, r24:15 are in-range 26 clusters and stay M under the rule).
+3. **(ii) AD convention: corpus R governs; R = 3.4 is a sensitivity figure.** The bar defines AD as "about 1.5 x unicity" with H(K)
+   charged for every liberty, and `tools/depth_stats.py` computes R from the corpus and labels AD at R = 3.4 "(sensitivity)". Every
+   AD ruling on file uses the corpus figure as the bar and quotes R 3.4 in parentheses: jan-van-nassau-1572-75 (100.6 de1600 / 63.1),
+   decode-2678-bnf-colbert127-gravel-1665 (69.6 fr17 / 44.5), fr3416-nevers-fils-1589 (214 / 120), hellen-frederick-1752 (3175 / 1782),
+   sachsstaatsarchiv-manteuffel-1712 (380 / 213), and DV-MERCY itself on this item (141 es17 / 135 es17c / 84). No other Spanish item in
+   status.json carries an AD ruling (I checked every `depth_check` naming es/es17/Spanish: result 53, RAH 9/6958 Cañada 1869, is D3 on a
+   period clear text with no AD; result 156 is English), so there is no Spanish precedent for R 3.4 to follow. Of the two Spanish
+   corpora I use **es17c**: it is the era- and register-matched corpus (1643-47 Spanish court newsletters; CLAUDE.md rule 3, the MJ
+   lesson on this very target), and it gives the lower, more generous AD. es17's figure is given beside it; the choice does not change
+   the outcome.
+4. **(iii) Recount, every liberty counted** (scratch copy only: reading_tokens.tsv with the 13 positions graded S; `tools/depth_stats.py
+   --cipher-class code<=120 --shuffle all --seeds 8100-8104 --corpus tools/data/es17c|es17`; `mercym33/runs.py` with the 13 positions).
+   Baseline reproduces DV-MERCY exactly (H(K) 190.3, AD 141.1 es17 / 135.1 es17c / 84.0 at R 3.4).
+   | | M tokens | H_lib | H(K) | AD es17c (R 2.114) | AD es17 (R 2.023) | AD at R 3.4 | longest H/C/S run |
+   |---|---|---|---|---|---|---|---|
+   | committed | 41 | 41.0 | 190.3 | 135.1 | 141.1 | 84.0 | 53 (v01:16-v04:8) |
+   | 13 settled | 28 | 28.0 | 177.3 | **125.9** | 131.5 | 78.2 | **89** (r20:8-r24:13) |
+   The 89-letter run: "...ondreis que si se permitira se leuanten en aquel pais tres mil hombres de infanteria en dos o tres regimient",
+   bounded by r20:6-7 (23 vs 2 3, M) and r24:14-15 (26 vs 2 6, M); no exception, key-level M code or re-cut inside it (checked token by
+   token). **89 < 125.9: cipher clause not met** (it would be met only at R 3.4, which is not the convention). Code clause: unchanged
+   from DV-MERCY item 3 (box sign unread, value I and circular); not met. D3: 94.7% >= 80% after the 13, but of the 28 residual M only
+   6 are name/code (r06:14, r07:5, r09:6, r14:7, r16:6, r16:9), so "gaps mostly names/codes" fails; D3 out. Hold D1.
+   Sensitivity, not licensed: with the six in-range row-M tokens (r18:5-6, r20:6-7, r24:14-15) as transcribed and code 25 at r19:10 as
+   u, the run would be 170 (r17:6-v01:5) against an AD near 121 -- so what stands between this item and the cipher clause is two
+   in-range segmentation choices (the 26 pairs, the 23) and code 25's value, not the image reading of digits.
+5. **No D2 sentence** is written, since no clause is met (the DV-MERCY content sentence stays on the row, not as a D2 licence).
+6. **Propagation (rule 10).** Depth and its outward words are unchanged ("fragments read"), so NOTES.md's status head (`partial`) needs
+   no edit, and the one SECOND-OPINIONS-QUEUE.tsv row for this target (SO-MERCY-F22) does not quote a depth. No other file touched.
+
+**What would move it.** A gated instrument for in-range segmentation (26 vs 2|6 at r18:5-6 and r24:14-15, 23 vs 2 3 at r20:6-7) and a
+licence for code 25 = u at r19:10 (MERCY-M33's K25 rejected u at n = 4, a non-decisive reject per its own control); or new material (the
+15 April Brussels sibling, ASKS row 60 / SEND-QUEUE S3). An owner decision on DV-MERCY item 8's convention question would also decide it.
+
+**Postmortem.** Nothing over-claimed: MERCY-IMG and MERCY-M33 both held the positions at M and left the clause to the verifier. MERCY-IMG's
+"crosses 84" is true but measures against the sensitivity figure, and against an AD not recounted for the settled liberties (78.2, not 84).
