@@ -46,3 +46,25 @@ Scorers passes/check_p230.py, check_p231.py (check_p229.py with input, output an
 Same rule R0 classes, same B2 statistic, key variant (a) GATED and (b) reported, same page-permuted-key control (1000 seeds, seed 123),
 same prechecks (can-differ >= 0.99, runs_ge3 >= 10, else NON-TEST), **same gate per page: B2 share >= 0.60 AND hits > control max.**
 Threshold not re-tuned. p.231 runs only if the job is under 80% of its cap after p.230; if not, it is named as not done.
+
+## Addendum CLIN-3004C (15 Oct 2026, 12:0x UTC by date -u; written before any look at p.232 or p.233 and before any pass or score)
+
+Job CLIN-3004C, LANE DEFAULT-A1-1140-15 (account 1). The last two pages of the same cipher, each scored ON ITS OWN with the design above
+unchanged: **B.147 p.232** (H-1649 Image 876, IIIF c0zk55f78w96; CLIN-3004 saw a crossed-out block on it at 1000 px) and **B.147 p.233**
+(Image 877, IIIF c0tt4fn9n48x; ends "H C", "Cypher L. Initialled" and the endorsement). Seen before this addendum: only CLIN-3004's 1000 px
+frame montages (CLIN-3004 section of NOTES.md); nothing of these two pages at reading size.
+**Known answer, both pages:** the same fixed concatenation as Addendum CLIN-3004B, p234_reading.txt BODY..END followed by p235_reading.txt
+BODY..END (both already committed; not re-read, not changed), letters only, '&' kept, spelling as on the page.
+**One change of method, by the job brief (not by any result):** ONE blind Sonnet pass per page (not two), on that page's figure-column
+crops only (no key, no decipherment, no other page's data, not told the question; the pass is asked to mark every cell it is unsure of).
+Reconciliation, one worker unit per page, BEFORE any decode or score: the worker reads every cell the pass flagged plus every underline,
+and re-reads each column on 2x zooms of the 3200 px frame against the pass, from the image only; a cell still open after that is graded M
+(excluded from runs, rule R0). No cell is changed after the scorer is first run.
+**Crossed-out block (p.232):** figure cells inside a struck-through block are kind `struck` (not `letter`): they end any run and are not
+scored, whatever they decode to; the block's extent is fixed in the reconciled TSV before the scorer is run.
+Per page: one 3200 px fetch, each figure column cut as ONE crop (tools/iiif_lines.py --image --region --centres, command pasted in NOTES
+before the first subagent call). Scorers passes/check_p232.py, check_p233.py (check_p231.py with input, output and source names changed;
+--check exits 1 when stale). Same rule R0 classes, same B2 statistic, key variant (a) GATED and (b) reported, same page-permuted-key
+control (1000 seeds, seed 123), same prechecks (can-differ >= 0.99, runs_ge3 >= 10, else NON-TEST; p.233 is expected to be short, and
+a NON-TEST there is logged as NON-TEST, not merged with p.232), **same gate per page: B2 share >= 0.60 AND hits > control max.**
+Threshold not re-tuned. p.233 runs only if the job is under 80% of its cap and box after p.232; if not, it is named as not done.
