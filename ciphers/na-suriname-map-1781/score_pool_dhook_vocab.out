@@ -1,0 +1,16 @@
+CONTROL* h n 10 hyp/key n: score(n) 5 rank 1 | top5 n:5 a:3 l:3 d:2 b:1 | decision ACCEPT n
+CONTROL 5 pooled n 32 (full-pool covered for v: 12), 20 draws of 15: ACCEPT v in 0/20; score(v) median 5 range 3-6; per-draw decisions {'UNDECIDED': 20} -> UNDECIDED
+CONTROL [hash] pooled n 32 (full-pool covered for o: 9), 20 draws of 15: ACCEPT o in 0/20; score(o) median 4 range 3-7; per-draw decisions {'UNDECIDED': 20} -> UNDECIDED
+CONTROL [delta] pooled n 51 (full-pool covered for a: 18), 20 draws of 15: ACCEPT a in 1/20; score(a) median 6 range 4-8; per-draw decisions {'UNDECIDED': 19, 'a': 1} -> UNDECIDED
+CONTROL 6 pooled n 28 (full-pool covered for s: 8), 20 draws of 15: ACCEPT s in 0/20; score(s) median 5 range 4-6; per-draw decisions {'UNDECIDED': 20} -> UNDECIDED
+TARGET [d-hook] n 15 hyp/key e: score(e) 8 rank 1 | top5 e:8 a:3 s:3 n:2 g:1 | decision ACCEPT e
+   2046_leg_d:24 e <- 3 words, e.g. beset, besetting, setting
+   2046_leg_d:57 e <- 2 words, e.g. neeger, neegers
+   2046_leg_efgh:30 e <- 2 words, e.g. battery, batteryen
+   2046_leg_efgh:58 e <- 3 words, e.g. dinge, dingen, ingen
+   2046_leg_ki:5 e <- 5 words, e.g. corle, corre, reede, rhede, roede
+   2046_leg_ki:24 e <- 2 words, e.g. eerde, eerden
+   2077_L02:17 e <- 1 words, e.g. deert
+   2077_L14:40 e <- 2 words, e.g. deren, goederen
+gate: primary h ACCEPT n; controls accepting key value 1/5 (h) -> FAIL (non-test)
+verdict: undecided (gate FAIL, non-test)
