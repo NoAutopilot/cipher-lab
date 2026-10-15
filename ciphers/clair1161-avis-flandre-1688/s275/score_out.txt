@@ -1,0 +1,23 @@
+K(R1) ('c188L_L24', 19) agreed L read L
+K(R1) ('c185R_L23', 19) agreed L read O
+K(R1) ('c187L_L15', 27) agreed L read L
+K(R1) ('c188L_L07', 18) agreed L read L
+K(R1) ('c185R_L18', 5) agreed O read O
+K(R1) ('c187R_L22', 6) agreed O read O
+K(R1) ('c187R_L25', 12) agreed O read O
+K(R1) ('c188L_L27', 20) agreed O read O
+K(R1) ('c187R_L22', 4) agreed O read O
+K(R1): 8/9 decided to agreed class, 0 marked ? -> PASS   (O 107, L 159, ? 9)
+K(R2) ('c188L_L24', 19) agreed L read L
+K(R2) ('c185R_L23', 19) agreed L read O
+K(R2) ('c187L_L15', 27) agreed L read L
+K(R2) ('c188L_L07', 18) agreed L read L
+K(R2) ('c185R_L18', 5) agreed O read O
+K(R2) ('c187R_L22', 6) agreed O read O
+K(R2) ('c187R_L25', 12) agreed O read O
+K(R2) ('c188L_L27', 20) agreed O read O
+K(R2) ('c187R_L22', 4) agreed O read O
+K(R2): 8/9 decided to agreed class, 0 marked ? -> PASS   (O 99, L 157, ? 19)
+A: both decided 256; raw agreement 0.953; kappa 0.902 -> PASS   {('L', 'L'): 149, ('O', 'O'): 95, ('L', 'O'): 4, ('O', 'L'): 8}
+reconciliation windows: 31
+R3 not read yet
