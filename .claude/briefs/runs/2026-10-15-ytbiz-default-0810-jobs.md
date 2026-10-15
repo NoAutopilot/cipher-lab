@@ -74,3 +74,15 @@ the control's blind baseline is not near ceiling, rule 3). PREREG first (gate as
 and sized to the box: time one control seed before choosing the count). Judge any target decode with judge_plaintext.py against ru20 and score
 the shuffled-target decode through the same judge (rule 3, ARM-C1 clause). Both numbers to HYPOTHESES.md. Status stays `open` unless rule 5
 says otherwise; no reading claimed. Update the Next step / Verdict line.
+
+## Wave 2 (08:4x UTC 15 Oct)
+
+### OBRED-549 (Opus, cap 3, box 60 min, service.archief.nl / nationaalarchief.nl <= 10): oldenbarnevelt-brederode-1605 inv. 6019 scans before 552 for the key enclosure
+OBRED-552 (15 Oct, f2332fdc8): scan 552 ends a Heidelberg 8 Oct 1619 letter whose last paragraph says the cipher was reformed and sent "with an
+instructie ende sleutel". Its named next: scans 549-551 for the key enclosure (~1.5). Fetch the METS once, then 549-551 at 5000 px (and, only
+if 549 is still inside the 8 Oct letter, walk back one scan at a time to its start, <= 4 more). Look by eye for a key sheet / instruction
+(numeral tables, alphabet, name list) anywhere in that run. If a key leaf is found: record scan, layout and a transcription of its table into
+key_6019.tsv (two blind Sonnet passes on crops + reconcile, grade H for values read from the key), and compare its values against
+ciphertext_556.tsv's 45 C glosses (agreement count vs a shuffled-value control, PREREG first) -- that is a known-answer test of the key, not
+a reading of no. 92/187 (no key.tsv edit; applying it to 92/187 is a later job). If no key leaf: say what 549-551 are, and stop. Take/release
+lines for the NA host. Update Remaining gaps / Escalation (known-keys rung), gaps_check.
