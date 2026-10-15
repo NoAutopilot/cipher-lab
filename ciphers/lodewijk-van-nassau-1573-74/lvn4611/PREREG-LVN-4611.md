@@ -156,3 +156,33 @@ Ink with no transcription row (finding, logged in NOTES.md, nothing inserted): K
 24, 124. 147." and K15 "38" (after "26, 82"); K16 "4, 74, 150, 90, 81, 21, 61." after "advis" (in no transcription line); K17 "30, 84" before
 "104"; K17 "Et s un" words sit at p2_L17/19-21. Physical lines on p2: 35 (K01-K35); the transcription has 33.
 So unit p2a reads 80 targets + 10 controls = 90 rows in four blind Sonnet calls (23/23/22/22 rows; controls 3/3/2/2).
+
+## Addendum LVN-P2RETX: re-transcription of the mixed 4611 p2 lines (15 Oct 2026, 08:0x UTC by date -u; pushed before any read)
+Job LVN-P2RETX (LANE DEFAULT-A4-0645-15, account 4). A transcription repair, as LVN-L1 did for p3_L00: **no grade changes and no per-token
+settle** (the p2b settle under the LVN-4611P2 addendum is untouched and not run here). Render: WVO 04611.pdf fetched once 07:5x UTC
+(resources.huygens.knaw.nl, HTTP 200, 3,758,971 bytes), p2 at 300 dpi, sha1 36399838ce5c... (same render as LVN-4611P2).
+Lines: the 35 deskewed physical lines from `tools/iiif_lines.py --image <p2 png> --region 250,140,2200,3000 --prefix p2 --deskew --centres
+$(cat lvn4611/p2_centres.txt)` (the LVN-4611P2 command). **Targets: K13-K35** (23 lines; transcription p2_L13-p2_L33). Each line is cut into
+two halves at the inter-token gap nearest the middle (`lvn4611/retx_p2.py crops`), images in scratch only, renamed by an opaque id.
+**Controls: K04 and K12** (`random.Random(20261015).sample(range(1,13),2)`; transcription p2_L04 / p2_L12 = K04 / K12 token for token per
+the p2a placement note; H numerals 20 and 19).
+Readers: **2 blind Sonnet passes (A, B) x 2 batches** = 4 calls. Batch 1 = K13-K24 + control K04; batch 2 = K25-K35 + control K12. Each call
+gets only the half-line images of its batch, in an order shuffled with its own seed (A1 20261015, B1 20261016, A2 20261017, B2 20261018), and
+is asked for a **free read** of every token (numerals, and clear words as written, '?' for an unreadable digit). Never shown the transcription,
+the key, any value, which image is a control, or NOTES.md.
+Gate, per call: the control line's read aligned (difflib on the numeral sequence) to the transcription's numerals; >= 80% of that line's H
+numerals read exactly (16/20 for K04, 16/19 for K12). A call below gate is a non-test: its reads are not used.
+Reconcile: per target line, align A and B (both passing); where A = B the token stands; where A != B or '?', **1 reconcile** (the worker,
+one Opus look at the half-line image; the worker has seen the 150-dpi transcription and the by-eye runs in NOTES.md -- declared here). If
+one call of a batch fails, the passing call's read stands and every token of the batch is marked single-pass; if both fail, the batch is a
+non-test and nothing is inserted for it.
+Outputs: (1) `lvn4611/retx_p2_lines.tsv` the reconciled physical-line token sequence K13-K35 (K, pos, token, A, B, how). (2)
+`lvn4611/retx_p2_map.tsv`: every existing row of p2_L13-p2_L33 mapped to (K, pos) by alignment, status `match` (same value), `differs`
+(placed, other value), `duplicate` (a second copy of a token another row already maps to), `no-ink` (no token). Existing rows are not
+edited, deleted or regraded. (3) `lvn4611/insert_p2retx.tsv`: every reconciled numeral or word token of K13-K35 that no existing row maps to
+(an ink run in no row) becomes a new row, **grade M** (A = B or not; the agreement is recorded in alt/why for a later settle), line id
+`p2_R<K>` + a letter per run, inserted by `../settle.py` immediately after the existing row mapped to the preceding ink token (by file
+order). Then decode_key.py --check, settle.py --check, lvn4611/settle.py --check; C/H/M/U recounted before and after.
+Prior work: `tools/prior_work.py ... --item-spec 'wvo=4611;folio=p2' --step-type transcribe --offline` run before the first read (result in
+NOTES.md). Stop rule: batch 2 is not started if its two calls would take the job past 80% of the USD 6.5 cap or 90-minute box (my estimate:
+start-up 1.0 + crops 0.5 + 0.7 per call + reconcile/map 1.0).
