@@ -7303,3 +7303,30 @@ Read so far: as ECK-GP13C; Grant Papers vol. 13 searched for E589 (not located, 
 Verdict: keep going: 1 internal gap; cheapest next: the keyed googleapis pass for Grant Papers vol. 13 for E592 and looser E589 with the GB-2-form control first, ~$0.1 (the 5914/2 page waits on L79)
 
 `python3 tools/gaps_check.py eckert-1864` (GB-PASS3, 15 Oct 2026): "OK keep-going eckert-1864: keep going: 1 internal gap(s), 1 step(s) untried"
+
+## GB-PASS4 (15 Oct 2026, account 1, for LANE DEFAULT-A1-0447-15), 05:01-05:1x UTC by date -u
+Brief: `.claude/briefs/runs/2026-10-15-acct1-default-0447-jobs.md` "### GB-PASS4": retry of GB-PASS3's unsent queries, `fortmonroe/eck_gbpass_gb.py --gbpass3` (E592 and the looser E589), GB-2-form control first; on a second googleapis failure, the LOCAL-QUEUE row this folder's gap names. **Prior work:** `tools/prior_work.py eckert-1864 --item-spec 'googleapis lookup' --step-type lookup --offline`, exit 4, the one owed row being this job's own live ROOM claim (`adhoc-620186:1-own:c8825d`), recorded CLEAR with `--record`; the remaining rows are plaintext LEADs (the edition rows these queries search). Check 1 by hand: no section after GB-PASS3 ran these queries (grep of NOTES.md and ROOM.md, 05:03 UTC). Intake gate: `eckert-1864: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0. Script unchanged.
+
+| run (UTC) | output | result |
+|---|---|---|
+| 05:05:08-05:05:13 | `fortmonroe/eck_gbpass4_gb.out` | control B (`"six vessels" Oriental intitle:Grant`) 200, **vol. 13 hit** mnRjmhe3QLoC cov 3/3 (the same E531 snippet as ECK-GP13 and GB-E13: "... This makes six vessels, 5109 men, all as ordered"), control PASS; **E592** (`Camman gold Cooper naval officer intitle:Grant`) HTTP 503, host stopped for the run. |
+| 05:06:22-05:06:25 | `fortmonroe/eck_gbpass4_gb_retry.out` | the one retry, 74 s after the 503: control B HTTP 503; the script stops on an errored control, so no target query was sent. |
+
+Second googleapis failure: the job stopped per its brief (the thurloe-printed queries were not sent either; thurloe-printed NOTES.md "GB-PASS4"). E592 and the looser E589 remain unsearched in Grant Papers vol. 13; nothing here is a negative. LOCAL-QUEUE.tsv row **L80** filed (a person's "Search inside" of mnRjmhe3QLoC for Camman / Cammann / Monohansett / Fort Monroe with Eckert, page numbers and snippets), as GB-PASS3's gap named. No row record, key row, reading, AUDIT.md section or N-class edited. **Requests:** www.googleapis.com 3 (1 x 200 with content, 2 x 503); no other host.
+
+## Remaining gaps (GB-PASS4, 15 Oct 2026)
+Read so far: as ECK-GP13C; Grant Papers vol. 13 searched for E589 (not located, ECK-GP13), E590 (not located at the coverage rule, GB-E13; a cov 2/5 snippet places Eckert at Fort Monroe with Seward on an unnumbered vol. 13 page) and E591 (not located, totalItems 0, GB-PASS2; weak, the API's answers are unstable on this egress).
+- Grant Papers vol. 13 (2-20 Feb 1865) for E592 and a looser E589 query (`Monohansett Monroe`) - blocker: waiting-on LOCAL-QUEUE L80; googleapis answered 503 after a passing control in GB-PASS2 (15 Oct 02:28/02:29 UTC) and GB-PASS4 (15 Oct 05:05 UTC at E592, and at the control on the one retry after 74 s, 05:06 UTC), and was not reached in GB-PASS3 (two 503s in that job's thurloe-printed pass); next: a person's search-inside of mnRjmhe3QLoC (L80, queued 15 Oct), ~$0.05 to land the answer
+- The printed page of 5914/2 in Grant Papers vol. 14 (Grant to Ord, 10.00 a.m.) - blocker: waiting-on LOCAL-QUEUE L79; be-api gives no page and the IA copy is lending-only (obfuscated to scripts); next: a person reads the page in the IA reader at the 'Gordon's Commission' note (L79, queued), ~$0.05
+
+## Escalation (GB-PASS4, 15 Oct 2026)
+- [x] siblings: as ECK-GP13B.
+- [x] clear-pages: as ECK-GP13B.
+- [x] known-keys: as ECK-GP13B.
+- [x] print: Grant Papers 13 by Google Books: E589 (ECK-GP13), E590 (GB-E13) and E591 (GB-PASS2) not located; E592 and looser E589 handed to a person's search-inside (L80) after googleapis 503s in GB-PASS2 and GB-PASS4; 5914/2's page waits on L79.
+- [n/a] key-rebuild: no key row edited in this pass.
+- [x] image-check: as ECK-GP13B.
+- [x] retry: googleapis 503 at E591 02:28 UTC, one retry after 62 s, 503 again at E592, stopped (GB-PASS2); GB-PASS3 03:40 UTC 503 in the same job's thurloe-printed pass and again on the one retry after 69 s, host stopped before this folder (GB-PASS3); GB-PASS4 05:05 UTC control 200 then 503 at E592, one retry after 74 s, 503 at the control, job stopped and L80 filed (GB-PASS4).
+Verdict: parked: both internal gaps wait on owner-side LOCAL-QUEUE rows (L79, L80); googleapis has 503'd on this folder's Grant Papers queries in every job since 12 Oct
+
+`python3 tools/gaps_check.py eckert-1864` (GB-PASS4, 15 Oct 2026): "OK parked eckert-1864: parked: 2 gap(s), all outside blockers"
