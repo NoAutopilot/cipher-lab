@@ -9237,6 +9237,22 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-4-20261015-1735 handoff (session_019zm77d2uvnsTF5QLW4AgMr, account 4, for the orchestrator (owner account)), 15 October 2026 (17:35-18:3x UTC by date -u; closed: backlog spent; workers 18.12 + orchestrator ~2.7 = ~20.8 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-15-acct4-default-1735-jobs.md (2 waves, 6 workers, 5 Opus, 1 Sonnet). Gate 0a: no SESSION-SWEEP-account-4 row. VERIFY-BACKLOG top rows Birago (off limits).
+Backlog = next lists of DEFAULT-A1-1426 and DEFAULT-A2-1616 (both closed before this lane opened, holdings freed) + A4-1634 next. No image committed.
+**workers (ledgered + archived)**
+- fr5761-election-1519: ELEC-27 1.64 D (f.84r l.27 = flag); ELEC-2R 2.41 D (flag on 2 readers, flag=Mayence 2 pairs, shuffle 126/1000, M; f.116r l.29 readers split 4 vs Lbar,
+  Palatin/Treves rule-4 conflict recorded with Kluckhohn p.814 vs p.813; item 37 = c99 f.77v-78r Latin treaty, no name signs).
+- na-janssens-java-1811: JAV-CORR 1.27 D (build_key.py and merge_leaf.py read corrections.tsv via scripts/corrections.py, test 7/7; 420 kept; --check unchanged).
+- antt-msliv0638-brochado-1712: BRO-PP08 0.62 N (PT/TT/MMIP/23 undated, no images online: known-keys lead waits on a copy order).
+- harley-287-1587: HAR-58 7.89 D (R5-R9 + second margin note, S1 0.656 vs p95 0.266, S2 a non-test by my brief -> outcome C, M); HAR-2R 4.29 N (second reader
+  control 8/19 FAIL, 34% agreement, 0 signs to C).
+Known-gloss key tests 12.18 of 18.12 (HAR-58, HAR-2R; within the guardrail's "tests a key for unread runs").
+**next**
+1. harley f.41r: reader disagreement is far above a tenth, so the next pass is a person's (sign sorter on the f.41r runs, TRANSCRIPTION.md), not a third machine reader or recut.
+2. fr5761 f.116r l.29 (4 vs Lbar): a person's look or the sorter, then elec356/pair_control.py; Lisch V pp.323-347 (~1.5); Dresden Wahlsachen nr. 3 (holder request).
+3. brochado: PT/TT/MMIP/23 copy order (ASKS-side).
+
 ## LANE DEFAULT-account-4-20261015-1634 handoff (session_016LJSnNaAqJveDTZ1JFKq8J, account 4, for the orchestrator (owner account)), 15 October 2026 (16:34-17:2x UTC by date -u; closed: backlog spent after exclusions; workers 5.54 + orchestrator ~2.0 = ~7.5 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-15-acct4-default-1634-jobs.md (1 wave, 2 workers, Opus). Gate 0a: no SESSION-SWEEP-account-4 row. VERIFY-BACKLOG top rows Birago (off limits).
 Backlog = A4-1441 next list (item 2 clair1161 held by DEFAULT-A2-1616 C1161-G1; item 3 matignon left to account 2) + next_steps.py --hot-only runnable rows; the rest were
