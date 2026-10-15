@@ -1,4 +1,4 @@
-# PREREG-SORTER-STEP1-INK63 (15 Oct 2026, 07:0x UTC by date -u; account-1 worker SORTER-STEP1-INK63 for LANE VIV-KEYSTONE, account 4)
+# PREREG-SORTER-STEP1-INK63 (15 Oct 2026, 06:4x UTC by date -u; account-1 worker SORTER-STEP1-INK63 for LANE VIV-KEYSTONE, account 4)
 
 Written and pushed BEFORE the step-1 page is built and before any owner answer exists. Brief: .claude/briefs/runs/2026-10-15-acct4-for-acct1-jobs.md
 "JOB SORTER-STEP1-INK63". Nothing here is a reading; no key.tsv, reading, rec.tsv or status.json edit.
@@ -25,7 +25,7 @@ label. For each leaf X in {f.102r, f.103r, f.201r}, leave-one-leaf-out: only pil
 neighbours. Every 1:1-mapped pen-unit tile of X (tx/vivcls maps) is placed by kNN (k = 3) in the glyph_atlas cluster feature space fitted on
 the page's tiles; pass A's token at that position takes L(p) only when all 3 neighbours sit in one labelled pile, else it keeps its label.
 Score `tools/tx_bench.py --item <item>` on pass A before and after.
-Before (pass A as committed, measured 15 Oct 2026 07:0x UTC): f102r-dev2 err_true 0.194 (239/1234); f103r-confirm2 0.232 (248/1068);
+Before (pass A as committed, measured 15 Oct 2026 06:4x UTC): f102r-dev2 err_true 0.194 (239/1234); f103r-confirm2 0.232 (248/1068);
 f201r-dev 0.185 (165/894).
 **Gate:** err_true must not rise on any of the three items and must fall on >= 2.
 **Controls (rule 3), same procedure:** (i) the seed piles as built (no owner change) -- the owner's sort must beat it on >= 2 items for the
