@@ -16552,3 +16552,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-15 08:24 | worker MAT-F91E (account 2) | openapi.bnf.fr release for LANE DEFAULT-A2-0810-15 (account 2): 1 request (f98 full/max), host free. usage: not readable here
 2026-10-15 08:26 | worker HAR-F11 (account 2) | de-crypt.org take for LANE DEFAULT-A2-0810-15 (account 2): 1 browser login, R8477 record page + full-size f.11, <= 8 requests. PREREG 10bb9ee36. usage: not readable here
 2026-10-15 08:26 | worker HAR-F11 (account 2) | de-crypt.org release for LANE DEFAULT-A2-0810-15 (account 2): 1 login + record page + thumbnail + full-size R8477 f.11 (13.6 MB, real JPEG, sha1 aef3bf1a68be), about 4 requests, host free. usage: not readable here
+2026-10-15 08:28 | worker OBRED-TRY (account 2) | NA take (service.archief.nl) for LANE DEFAULT-A2-0810-15 (account 2): inv. 6019 METS + scans 555, 556 at 5000 px, 3 requests. PREREG b7011c090. usage: not readable here
