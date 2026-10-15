@@ -1657,9 +1657,48 @@ Correction (KH-CS3, 8 Oct 2026): not the Gramont family. fr.3053 c16 (f.7, in Bn
 
 SUCCESS-SIBS (account 1, 8 Oct 2026, repository files only, no network, nothing decoded). Siblings of this folder's N3+ document(s) by volume, sender, recipient, key, design and series; 6 listed, 4 unread or not in the repository. Full rows with evidence: `SIBLINGS-2026-10-08.tsv`. p = the compiler's conservative estimate that the step yields a new counted document (N3+, D2+, two audits); not a novelty claim (rule 10). Required by `tools/gaps_check.py` for every N3+ target.
 
-- fr.3038 no.19 / f.42r period decipherment of 27 Feb 1530 Villandry letter [same-key; not-in-repo] -- locate cipher original of the 27 Feb 1530 Villandry letter (Gallica SRU/neighbour leaves fr.3038 ff.40-44), then align as known plaintext, ~$2; ~$2; p 0.08; evidence: ciphers/fr2980-gramont/NOTES.md:1166,1192,1519 (clear decipherment on Gallica; cipher original in no catalogue)
+- fr.3038 no.19 / f.42r period decipherment of 27 Feb 1530 Villandry letter [same-key; not-in-repo] -- [neighbour leaves fr.3038 ff.38-45 viewed 15 Oct 2026 by GRA-3038: no cipher; see section below] locate cipher original of the 27 Feb 1530 Villandry letter (Gallica SRU/neighbour leaves fr.3038 ff.40-44), then align as known plaintext, ~$2; ~$2; p 0.08; evidence: ciphers/fr2980-gramont/NOTES.md:1166,1192,1519 (clear decipherment on Gallica; cipher original in no catalogue)
 - fr.3040 f.12 (no.4) and f.18 (no.6) cipher blocks [same-key; read] -- none: plaintext printed in Le Grand III (N1); remaining f.18v blocks (~30 lines) only extend the key; p 0.03; evidence: ciphers/fr2980-gramont/NOTES.md:49,1274,1492 (f.18r/v+f.19r read ~0.84-0.89 vs Le Grand; printed)
 - fr.3019 f.20 (Tomokiyo key source) and fr.3071 f.17 (Lasry source) [same-key; not-in-repo] -- none: already read/published (N1); key already imported; p 0.02; evidence: ciphers/fr2980-gramont/NOTES.md:48; NOTES.md:1530 (Keyhunt: read by Tomokiyo/Lasry, 0 unread)
 - f.30r L01-L04,L07,L08,L11,L12 unread lines (same leaf, other lines) [same-volume; unread] -- none: only new material (fr.3038 original) or sign sorter reopens; counted doc already f.30 itself; p 0.02; evidence: ciphers/fr2980-gramont/NOTES.md:490,533,1508-1520 (open-codes; retired instrument)
 - fr.3019 no.31 Gramont to grand maitre, Rome 15 May 1530 (clear) [same-sender; read] -- none: clear letter, gives no cipher; p 0.0; evidence: ciphers/fr2980-gramont/NOTES.md:298,1519 (A2-GRA6 two blind passes)
 - fr.3053 c16/c34 Hemard de Denonville dispatches 1536 (DECODE R4233/R4234) [same-series; unread] -- none for Gramont key; Bourdeau rome1536 target covers it; p 0.0; evidence: ciphers/fr2980-gramont/NOTES.md:1560-1562 (KH-CS3 correction: not Gramont family, Mascon cipher)
+
+## fr.3038 neighbour leaves for the 27 Feb 1530 cipher original (GRA-3038, LANE DEFAULT-A4-1035-15, account 4, 15 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-15-acct4-default-1035-jobs.md`, job GRA-3038 (cloud half of the Keyhunt/Siblings row: look at fr.3038
+ff.40-44 at low resolution for a cipher block). `tools/prior_work.py fr2980-gramont --item-spec 'shelfmark=BnF fr.3038;folio=42r;...'
+--step-type lookup --offline`: exit 4 only on this job's own live claim (1-own); holder LEAD = this folder's own N8-GRA row; no solver or
+edition hit. Manifest read from disk (`sources/gallica-manifests/btv1b9060036k.json`, 193 canvases, all 'NP').
+
+**Result: no cipher block on any leaf of fr.3038 ff.38-45.** Leaves looked at, 15 Oct 2026, openapi.bnf.fr IIIF v3 at 600 px wide
+(sheet scale; images in the session scratchpad only), folio numbers read from the leaves' own foliation:
+
+| canvas | folio (as foliated) | what is on it |
+|---|---|---|
+| c62 | f.38r | short letter to "Monsr le grant maistre", 4-5 lines, clear, autograph signature |
+| c63 | f.38v | address "A Monsr monsr le grant maistre", clear |
+| c64 | f.39r | blank |
+| c65 | f.40r | full letter to the grand maître, about 20 lines + 7-line postscript, clear, signed |
+| c66 | f.40v | address "A Monsr monsr le grant maistre" (N8-GRA labelled this f.41v; c67 carries "41", so c66 is f.40v) |
+| c67 | f.41r | blank |
+| c68 | f.42r | the decipherment itself (N8-GRA, not re-fetched) |
+| c69 | f.42v | endorsement "...de la lettre ... Monsr de Villandry", clear (N8-GRA's reading) |
+| c70 | f.43r | blank |
+| c71 | f.44r | letter, about 11 lines, clear, dated "...jour de Juing", signed (a Clèves signature by its look; archival note "Lugès de Clèves" in margin, not checked) |
+| c72 | f.44v | address "A Monsr monsr le grant maistre", clear |
+| c73 | f.45r | blank |
+
+So the decipherment f.42 sits alone between a blank f.41 and a blank f.43, with no cipher leaf bound beside it; the volume is letters to
+the grand maître (Montmorency), so the cipher original, addressed to Villandry, probably was never bound here. The "Villandry-related
+leaves" N8-GRA named from the finding-aid search (fr.2980 nos.21-22, fr.3040 nos.5-6, fr.3091 no.23) were not opened: each is dated
+by its own catalogue entry to another day (20 May 1530; Rome 5 Oct 1529 and Bologna 28 Mar 1530; fr.3091 no.23 is the 1529 key), and
+fr.2980 nos.21-22 and fr.3040 no.6 are already read in this folder. A leaf look would not change that.
+
+**Where not looked:** the rest of fr.3038 (canvases 1-61, 74-193) beyond ff.38-45; Villandry's own papers (not located); BnF Dupuy/NAF
+beyond the N8-GRA finding-aid searches. No PREREG, crop, transcription or alignment (nothing to align); no key, grade or reading
+changed; `decode.py --check` untouched. Cost of the alignment if an original turns up: ~$2 (Siblings row), unchanged.
+
+Requests: gallica.bnf.fr 2 (`/iiif/.../f64/full/700,/0/native.jpg` and `/f64.medres`, both 403 Cloudflare "Attention Required", not
+retried); openapi.bnf.fr 11 (IIIF v3 `full/600,/0/default.jpg`, c62-67, c69-73, all 200, >= 3.2 s apart); 13 in all against the job's
+<= 12 (one over, the second Cloudflare probe). Vision: 2 contact-sheet views (6 + 5 leaves). Novelty not classified (rule 10).
