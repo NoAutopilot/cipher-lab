@@ -78,3 +78,17 @@ Verdict: "cheapest next: a stride-3 screen of inv. 6019 (1619, 649 scans, ~$4)".
 (NOTES.md section and its scripts): PREREG addendum first, controls included in every sheet, calls pushed before the key is opened. Price per
 sheet from OBRED-6018's own numbers and stop before a sheet that crosses 80% of cap or box. Report scans screened, hits (numeral blocks of the
 target's system) and control results; update Verdict and gaps_check.
+
+## Wave 3 (06:2x UTC 15 Oct)
+
+### MAT-F91B (Opus, cap 6, box 90 min, openapi.bnf.fr <= 6): matignon-mayenne-1586 f.91 candidates --try, then blocks C, F (and E re-cut)
+MAT-F91 (15 Oct, NOTES.md section "## MAT-F91") passed its known-answer gate on blocks A, B, D and named: --try U=e, T=r, D2=a (and BOX2=u) with
+control (~1). (a) Run those with `tools/decode_key.py ciphers/matignon-mayenne-1586 --try` and its value-class control; accept only what passes,
+graded M (MQS-CROSSWORD rule). (b) Blocks C and F (~27 cipher lines, ~37 gloss lines) by MAT-F91's own protocol and PREREG gate (addendum pushed
+first): 2 blind Sonnet passes on line crops (<= 12 per call) + reconcile, gloss Opus read + Sonnet check, same shuffled-gloss control. (c) Block E
+only if (a)+(b) leave >= 25% of cap: re-measure its regions on the native canvas (blocks.tsv offsets were wrong), then the same protocol.
+Conflicts go to HYPOTHESES.md with witnesses (rule 4); no key.tsv edit except through a passing --try. gaps_check.
+
+### OBRED-6019B (Opus, cap 2, box 40 min, no network unless a sheet must be rebuilt): oldenbarnevelt-brederode-1605 inv. 6019 sheets 20-25
+OBRED-6019 built sheets 20-25 (scans 514-649, 46) but stopped at its cap line; regen_6019.sh reproduces them. Same PREREG, same controls, calls
+pushed before the key. Report hits and controls; update Verdict (inv. 6019 closed or not) and gaps_check.
