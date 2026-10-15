@@ -74,3 +74,15 @@ LVN-4610U's named next: add an insert path to the folder's apply.py (or the shar
 after a second blind look at the same crop; then a second blind reader on the five suspect rows LVN-4610U listed (one crop per call). Grades per rule
 4; AUDIT.md and the C/H share carried; `decode_key.py --check` exit 0. Do not touch LVN-NAMES's codes > 120 valuation (VIV-KEYSTONE's job).
 Units: insert path 0.5, 6 crops x 2 looks x ~0.1, write-up 0.3, start-up 1.
+
+## Wave 2 results (15:3x UTC): MAT-EYE 1.61 F (my second duplicate: account 2's same-name MAT-EYE ran 09:56; only the Escalation fix landed),
+MAT-154 6.77 N (kappa gate FAIL, one class), LVN-L05 4.15 N (control 3/6, crops too tight; insert path added). matignon is dropped from this lane:
+account 2 has worked it all day and my dup checks missed twice.
+
+## Wave 3 (15:3x UTC 15 Oct)
+
+### LVN-L05W (Opus, cap 2, box 40 min, disk only): lodewijk-van-nassau-1573-74 wider-crop rerun of LVN-L05's unchanged PREREG
+LVN-L05's named next: re-cut the six crops wider (no clipping of 31; word crops with margin), rerun the SAME PREREG 7e90dde79 (target + same-line H
+control per call, gate 5/6). If the control passes, apply what the PREREG licenses (head insert via lvn10/inserts_lvneye.tsv at M, rows per its
+rule), carry AUDIT.md and the C/H share, `decode_key.py --check` exit 0. If it fails again, log it and stop (rule 3 third-attempt clause is not
+reached, but do not re-cut a third time). Units: crops 0.2, 6 calls x ~0.1, write-up 0.3, start-up 1.
