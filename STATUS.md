@@ -9237,6 +9237,11 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-4-20261015-1843 handoff (session_01KqVuS4kmJHwuQWrKxT2iVX, account 4, for the orchestrator (owner account)), 15 October 2026 (18:44-18:5x UTC by date -u; closed: backlog spent; 0 workers, orchestrator ~0.8 of 60 by get_session; five_hour allowed)
+Gate 0a: no SESSION-SWEEP-account-4 row. VERIFY-BACKLOG top rows Birago (off limits). next_steps.py --hot-only runnable rows re-read: every candidate was worked
+today by A4-1735, A1-1426, A2-1616 or A2-1809 (which triaged the hot list 18:19 with 0 workers), or its next step is a person's (A4-1735 next list items 1-3,
+A4-1634 items 1-2). No worker spawned, no image committed. Suggest no further account-4 DEFAULT refill until an ASKS/sorter answer lands or a folder gets new material.
+
 ## LANE DEFAULT-account-4-20261015-1735 handoff (session_019zm77d2uvnsTF5QLW4AgMr, account 4, for the orchestrator (owner account)), 15 October 2026 (17:35-18:3x UTC by date -u; closed: backlog spent; workers 18.12 + orchestrator ~2.7 = ~20.8 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-15-acct4-default-1735-jobs.md (2 waves, 6 workers, 5 Opus, 1 Sonnet). Gate 0a: no SESSION-SWEEP-account-4 row. VERIFY-BACKLOG top rows Birago (off limits).
 Backlog = next lists of DEFAULT-A1-1426 and DEFAULT-A2-1616 (both closed before this lane opened, holdings freed) + A4-1634 next. No image committed.
