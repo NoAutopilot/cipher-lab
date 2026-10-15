@@ -63,3 +63,36 @@ vZzvg46MRdEC / T2JVAAAAYAAJ (Beverning 27 June / 22 Aug 1653, No. 37 pp.252-253)
 On 503/429 one retry after >= 60 s; a second failure stops the job; if eckert fails twice, write the LOCAL-QUEUE row its gap names. The
 baluze167 googleapis phrases are NOT in this job (BAL-169 holds the folder). A snippet hit is a location, not a reading; quote what it
 carries. Each folder: its NOTES section, Remaining gaps / Escalation, gaps_check.
+
+## Wave 2 (05:3x UTC 15 Oct)
+Wave 1 lessons: an Opus worker session costs ~2.4 before any unit (ELEC-END and GB-PASS4 spent 2.45 on 12 and 3 requests): caps below 3 are
+not meaningful. BAL-169 ran 1.57x by reading 14 canvases at 2400 px itself: an Opus worker's own look at a large image is a unit (~0.2-0.3
+each) and counts toward the 80% stop. googleapis 503 again 05:05-05:06: no googleapis this lane. baluze167 is now DEFAULT-A4-0437's
+(BAL-C275G): not picked here. Intake gate 05:3x UTC (exit 0): mccormick-1999, kaliningrad-2015 (fr5761, fr4712 passed at 04:5x).
+
+### MCC-SUFX (Opus, cap 4, box 75 min, disk + CPU only): mccormick-1999 suffix-aware abbreviation model
+Verdict: "suffix-aware abbreviation model with an ending-matched control and a repeated-type-keeping null, ~$3". Third instrument on the
+key-rebuild rung (MCC-SWEEP char-4-gram, MCC-WORD word-bigram, MCC-SKEL skeleton): read those three sections and HYPOTHESES.md first, and
+state in PREREG-MCC-SUFX.md (committed before any target run) why it is a different instrument, not a knob on the same one (rule 3). Build it
+as an option on tools/token_anneal.py (or a tools/families/ family) with an offline test. Control first at the target's own N, K and ending
+profile; target only if the control meets its gate; repeated-type-keeping shuffled null. Both numbers in HYPOTHESES.md. NOTES "## MCC-SUFX",
+gaps + Verdict, gaps_check. If the control reads at no N, log "untestable by this instrument" and stop.
+
+### KAL-RUCORP (Opus, cap 4, box 75 min, ru.wikisource.org / other public-domain hosts <= 40 requests at >= 2 s): kaliningrad-2015 era-matched corpus
+NOTES next: "a corpus matched to the find's era and register (no Soviet-era Russian corpus is on disk; building one is the cheap job, compare
+V6-PTCORP) and the 2-leaf LOOK owed by prior_work.py". Read the folder's dating evidence first and choose the era/register it supports. Build
+tools/data/<slug> from public-domain texts only (record source URL, date and licence basis per file in a README; >= 5 source files so the
+fold check means something; CLAUDE.md rule 3 es17c/en paragraphs). Run tools/judge_plaintext.py's held-out fold check and report per-fold
+spread. Then re-judge only the existing KAL-2ST/KAL-BIG decodes and their shuffles against it (no new solve). Do the 2-leaf LOOK owed by
+prior_work.py if the images are on disk or one request away. NOTES "## KAL-RUCORP", Verdict. Status stays open.
+
+### ELEC-5756 (Opus, cap 3, box 60 min, openapi.bnf.fr <= 20, api.europeana.eu <= 2): fr5761-election-1519 fr.5756 census
+ELEC-END's next: "fr.5756 ark lead btv1b60010927 (Europeana): confirm shelfmark before census; next fr.5756 census ~1.5". Confirm the ark is
+BnF Français 5756 (manifest label / catalogue record, quote it) before any census; if it is not, stop and write what it is. Census at 600 px by
+ELEC-WALK/ELEC-END's method for Kluckhohn nr. 357 and nr. 383 (names in cipher); count pages per look as units. A match needs >= 2
+occurrences per sign before any C grade. NOTES "## ELEC-5756", Verdict.
+
+### F4712-8 (Opus, cap 3, box 45 min, openapi.bnf.fr <= 4): fr4712-nevers-duchesse 8-only blind panel
+F4712-HAND's next: "an 8-only blind panel f.10r vs f.13r with a control hand, ~$1". Same PREREG discipline as F4712-HAND (read it): register
+features and control before the look; one blind Sonnet call, value-free crops (<= 12), the f.107v control hand. Grade stays M at most; carries
+stay C on ASKS 113. NOTES "## F4712-8", gaps + Verdict, gaps_check.
