@@ -1376,3 +1376,41 @@ spread 2.5-99.5%, held-out p05 -1.011 / p01 -1.060 / min -1.156 (unknown reliabi
 | KAL-2ST shuffle 1 (width 11) | FAIL -1.65 | FAIL -1.649 | below |
 
 The FAIL survives the corpus change. The decodes come from a ru19-trained anneal; a ru20-trained solve is untested.
+
+<!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
+
+| date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
+|---|---|---|---|---|---|---|---|---|
+| 15 Oct 2026 08:30 | homophonic | N=1066 K=28 restarts=20 corpus=furmanov_chapaev_1937.txt.gz+furmanov_dnevnik_1930.txt.gz+gaidar_rakety_1942.txt.gz+gaidar_soch2_1957.txt.gz+ilf_petrov_12stulev_1928.txt.gz+ostrovsky_stal_1955.txt.gz profile=target | 1 | 0.997 (0.995-0.998) | -3597.349 | FAIL language: score=-1.639, null_p99=-2.003, real_p05=-0.935, real_median=-0.89, mode=both, N=1066 | yes (gate 0.9) | KAL-HOMRU homophonic ru20_lat s1s, convention B K28, restarts 20 seeds 5, control before target |
+| 15 Oct 2026 08:35 | homophonic | N=1066 K=28 restarts=20 corpus=furmanov_chapaev_1937.txt.gz+furmanov_dnevnik_1930.txt.gz+gaidar_rakety_1942.txt.gz+gaidar_soch2_1957.txt.gz+ilf_petrov_12stulev_1928.txt.gz+ostrovsky_stal_1955.txt.gz profile=target,shuffle_target=1 | 1 | 0.997 (0.995-0.998) | -3680.722 | FAIL language: score=-1.723, null_p99=-2.003, real_p05=-0.935, real_median=-0.89, mode=both, N=1066 | yes (gate 0.9) | KAL-HOMRU homophonic ru20_lat s1s, convention B K28, SHUFFLED target (seed 1), ARM-C1 judge check |
+
+## KAL-HOMRU, homophonic on the era-matched ru20_lat s1s corpus, convention B (15 Oct 2026)
+
+Pre-registered in `PREREG-KAL-HOMRU.md` (97dc178d3) before any score. The step KAL-RUCORP named: the earlier Russian homophonic
+units annealed against ru19_lat (1876 Bible register); here the solver's own language model and the control are the ru20_lat s1s
+files (Soviet prose 1914-1942). Disk and CPU only.
+
+| unit | corpus | conv. | N / K | control (5 seeds, restarts 20) | mean | gate 0.9 | target judge | shuffle-1 judge |
+|---|---|---|---|---|---|---|---|---|
+| KAL-HOMRU | ru20_lat/s1s (6 files) | B | 1066 / 28 | 0.998 / 0.995 / 0.997 / 0.998 / 0.996 | 0.997 | met | FAIL -1.639 (real_p05 -0.935, null_p99 -2.003) | FAIL -1.723 |
+
+Timing seed (scratch row, not used for the gate): 0.998, 45 s. Control K came out 25-28 per seed (the s1s alphabet has 22 letters;
+`profile=target` lays the target's 28-sign profile on it, and a sign that draws no token drops out), against the target's 28.
+Headroom: the control reads near ceiling blind, which is the intended state for a negative (the question is whether the target
+reads, not whether a technique adds a gain). ARM-C1: the shuffled-target decode FAILs, so the judge is not void for this family at
+N 1066. Both target and shuffle sit about 0.5 below the ru20 held-out minimum (-1.156; KAL-RUCORP fold check), and the target sits
+only 0.08 above its own shuffle. By the pre-registered rule: **control-backed negative** for Russian light-homophonic
+substitution (convention B, K 28, s1s transliteration) with an era-matched language model, the judge corpus itself of unknown
+in-model reliability (fold spread 2.5-99.5%). The corpus change on the solver's model did not make the target more readable
+(-1.639 here vs -1.729 for ru19_lat S1-B and -1.679 for the KAL-2ST re-judge). No reading.
+
+Commands:
+```
+python3 tools/family_run.py ciphers/kaliningrad-2015/families/kal_rucorp/spec_ru20.json --family homophonic \
+  --cipher ciphers/kaliningrad-2015/ciphertext_signs_B.tsv --corpus tools/data/ru20_lat/s1s --param profile=target \
+  --gate 0.9 --restarts 20 --seeds 5 --label "KAL-HOMRU homophonic ru20_lat s1s, convention B K28, restarts 20 seeds 5, control before target"
+python3 tools/family_run.py ciphers/kaliningrad-2015/families/kal_rucorp/spec_ru20.json --family homophonic \
+  --cipher ciphers/kaliningrad-2015/ciphertext_signs_B.tsv --corpus tools/data/ru20_lat/s1s --param profile=target \
+  --gate 0.9 --restarts 20 --seeds 5 --shuffle-target 1 --target-only-if-gated \
+  --label "KAL-HOMRU homophonic ru20_lat s1s, convention B K28, SHUFFLED target (seed 1), ARM-C1 judge check"
+```

@@ -1,0 +1,28 @@
+# kaliningrad-2015 homophonic seed 1 restarts 20 15 Oct 2026 08:35 UTC; control mean 0.997 (0.995-0.998); score -3680.722; TARGET LETTERS SHUFFLED (seed 1, false-positive floor)
+# {"restart_scores": [-3680.7, -3693.4, -3702.3, -3717.6, -3736.0, -3739.1, -3743.1, -3747.2, -3751.1, -3760.8, -3762.3, -3768.0, -3776.5, -3795.1, -3796.8, -3798.9, -3801.4, -3807.2, -3817.5, -3833.9], "key": {"'": "i", "-": "g", "A": "h", "a": "k", "b": "h", "c": "y", "d": "o", "e": "a", "f": "e", "g": "n", "h": "s", "i": "n", "k": "w", "l": "o", "m": "l", "n": "t", "o": "m", "p": "u", "s": "s", "t": "y", "u": "w", "v": "b", "w": "r", "x": "e", "z": "u", "ê": "d", "ö": "z", "ü": "g"}}
+smoltiwltaeestetaeooitiesnaitraesieeslwo
+ysottyyayaossanyoeiaaariotelsyeskiyaa
+rktaelasutrtyatloyeywnoeoteanansayti
+nswsiaaodslttoikonysistesedssnaisaawieysioto
+wguaesadotoneawaestiimoahdeshssokrsnnasob
+riasazywrtsronaelntiottthaaatyaltttskoesniew
+eonsiostioanyoaarosswekemsneteowewileewtwanona
+arisnstlledayaeslsysrotsemyatreatiotistoy
+ushieadnrannaohtoesaeynettdyotetaotiesnonasttkkud
+ywnsikwoetaeiwiaoatliinytoaesetkswineoiesoki
+tnizntttasaitaawetsaarnogikstodekusoawekntkota
+koeeansstywknaawynoeleenstelnieioisosae
+etsytaiaesokmoiyiyiiiineosondaoizsaiiyenlyts
+tasikdywkitseteilonawaronozeknetraekss
+tytyornytenkatuaietlyaaitssatazstnoniytowesaekwiti
+yottoertnsnttteayyykswsensnarlawtetnoeakmeassr
+minaakdayaswwrerrikykiiusyauoskttotreewwrkyta
+ytresotsidaoozartianlundwtaaokiisetlonsnyeo
+oseaiennisoaoayetaeiasoiaanyyyayshikeyaetit
+imewaynteetalityaeaasnanteydetwsaratanet
+ieynoweartatisdoatnoraeekawensateteaiotsr
+uaotewealatnoawaaoaennnyanttyoambstutysttta
+etssoawnoisnnaanwnertltaoatwrewsozskaysta
+adawaestainanaossyywrkaoksyoaiimalobietoi
+intaewnearttewnaerinaakormeeyetaeikouee
+twwwt

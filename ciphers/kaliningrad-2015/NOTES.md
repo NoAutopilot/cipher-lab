@@ -776,7 +776,22 @@ language model is ru20 itself is untested.
 gloss, interlinear or clear copy. Sheet 2 below line 6 carries blurred bleed-through/ghost lines, illegible at this resolution, not
 read. Recorded CLEAR in prior-work.tsv / look.tsv.
 Status stays `open`; no reading. Rule 10: nothing here is a reading.
-Next step: the homophonic (written order) family re-run with `--corpus` the ru20_lat s1s files (its own matched control at N 1066
+Next step (done by KAL-HOMRU, below): the homophonic (written order) family re-run with `--corpus` the ru20_lat s1s files (its own matched control at N 1066
 on ru20), ~$2 CPU, since the era change can only matter if the solver's own model uses it; and a higher-resolution image of
 sheet 2 (the Russian source thread or strana39.ru) for the ghost lines. `tools/gaps_check.py`: SKIP for an `open` target.
+
+## KAL-HOMRU, homophonic on ru20_lat s1s, 15 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-15-ytbiz-default-0810-jobs.md` (LANE DEFAULT-A2-0810-15, account 2); pre-registered in
+`PREREG-KAL-HOMRU.md` (97dc178d3). Disk and CPU only, no hosts. `tools/family_run.py --family homophonic --param profile=target`
+on `families/kal_rucorp/spec_ru20.json`, convention B (N 1066, K 28), `--corpus tools/data/ru20_lat/s1s`, restarts 20, gate 0.9:
+control 0.998/0.995/0.997/0.998/0.996, mean 0.997 (met); target judge **FAIL -1.639** (real_p05 -0.935, null_p99 -2.003);
+shuffled-target decode FAIL -1.723 (judge not void, ARM-C1). Both about 0.5 below the ru20 held-out minimum (-1.156): a
+**control-backed negative** for Russian light-homophonic substitution at convention B with an era-matched solver model (judge
+corpus of unknown in-model reliability). The era change did not make the target more readable. Status stays `open`; no reading.
+Table and commands: HYPOTHESES.md "KAL-HOMRU".
+Next step: a higher-resolution image of sheet 2 (the Russian source thread or strana39.ru) for the ghost lines below line 6, one
+fetch, ~$1; the homophonic family on Russian is now spent at both corpora (ru19_lat, ru20_lat) at convention B, so further
+dollars go to a different instrument (the wide-alphabet K 36-37 scheme, HYPOTHESES rank 6) or new material, not a further
+homophonic corpus swap. `tools/gaps_check.py`: SKIP for an `open` target.
 Verdict: keep going (no outside blocker).
