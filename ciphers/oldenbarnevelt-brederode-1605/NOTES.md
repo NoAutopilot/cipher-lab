@@ -2614,3 +2614,60 @@ M transcription; the S4 word/syllable counts are this worker's own reading of si
 scans 370-377 at 700 px to find the letter's opening and any name (about 8 NA requests, ~$1); then a stride-1 screen of inv. 6021 scans
 361-397 and the unread sheets 14-15 for a second letter in the pair-plus-letter system (~$1.5); a hand comparison against P. Brederode's
 signed closes in inv. 6021 (~$1).
+
+## HEID-1621B (15 Oct 2026, 16:18-16:3x UTC by date -u, account 2, Opus; for LANE VIV-KEYSTONE, account 4)
+
+Brief: `.claude/briefs/runs/2026-10-15-acct4-depth-steps-2.md`, JOB HEID-1621B: HEID-1621's two next steps (the letter's opening
+and sender; a stride-1 screen of inv. 6021 scans 361-397). PREREG `heid1621/PREREG-HEID1621B.md` pushed (7efa4d3e3) before any fetch.
+No decode, no key, no reading.
+
+- Route: METS c82b1eb5-..., `screen_tools/na_fetch.py`, `/full/700,/0/default.jpg` for 361-397 and `/full/1200,` for 374-376,
+  >= 3.1 s apart, descriptive UA. **Requests: service.archief.nl 41 (1 METS + 37 + 3), all HTTP 200**, no 403/429/challenge; take/
+  release lines in ROOM.md. No image committed; sha1s in `images/manifest.json` (`heid_6021b`); `heid1621/regen_heid1621b.sh`
+  re-derives scans, sheets and the sheet key (cmp check; reproduced from disk this session).
+- Screen: 5 sheets by `screen_tools/contact_sheets.py`, SHEET_SCANS=9, seed 16211, the OBRED-6019/6020/6021 disk controls. Calls in
+  `images/heid1621b_sheetcalls.txt`, pushed (5643d6837) before `images/heid1621b_sheetkey.json` was opened. One reader, this
+  worker's eye, no subagent. **Controls 15 of 15 placed correctly** (sheets 1-5 x 3); no sheet is a non-test. Per-scan notes in
+  `images/heid1621b_screen.tsv`.
+- **Result: two hit tiles, scan 379 (the known block, an in-sheet positive) and scan 375 (a further numeral text).** Every other scan
+  of 361-397 shows no numeral groups, key table, figure postscript or interlinear decipherment at sheet size (figures in a French list
+  of companies on 371 are a list, not groups).
+
+### Scan 375: the signed letter of 13 Aug 1621 (sender read on the leaf)
+- Right page, read at 1200 px: "... Uyt Heydelberg desen xiij.en Augusti 1621", the same close formula as 379 ("Hier mede sal ick voor
+  dit mael desen besluyten ..."), subscription "Uwer Hoochdem. onderdanichste ende getrouwste dienaer", and the **signature "P van
+  Brederode" with paraph**. **Sender: P. van Brederode, grade H for the name as written on the leaf** (one reader at 1200 px; the form
+  matches the signed P. Brederode closes OBRED-6020/6021 saw elsewhere in the liassen, M as a hand comparison).
+- Left page: Dutch body, then **the same numeral block as 379**, opening "Desen dus wijt geschreven hebbende, bekomme ick advijs
+  31.32.o. 22.23.x. 76.77.c. 40.41.d. 13.14.c. ..." and running through "in date des 29 July ouden stijl dat" and "... te continueren"
+  to "... vande schriftelijcke resolutie in corten volgen sal" (read at 1200 px, M, not transcribed); then a clear paragraph not on
+  the 379 copy as recorded by HEID-1621, "Voor 't sluyten van desen ... Complex tijdinghe vande Overste ... een Kayserl. Courier ...
+  naer Brussel ... naeden Coninck van Spaenien ...", ending with the mark "Rox" (M).
+- So the 1621 numeral text survives **in two witnesses**: 375 (signed) and 379 (the duplicate sent with it, 380 "Duplicaet vanden 13
+  Augusti 1621"). A second witness of the same groups is the cheapest check on HEID-1621's M transcription (the L03 58/88 split, the
+  x/r and i/1 calls, the L11 "29 20 f"). Not done here (no transcription in this brief).
+- Where the signed letter opens: **not located in 361-397.** 374 (left blank, right page mid-letter: "Krijchs saecken aldaer ...
+  Marckgraeff van Jagerndorff ... Graeff van Mansfelt") runs into 375; 372-373 are a Latin enclosure dated 28 July 1621; 370 closes a
+  different letter; 371 is a French list. The duplicate opens on **376** (address leaf left; right page docket "d. 13 Aug 1621",
+  "Hooch vermogende ... Heeren. Tgunt ick Uwe Hoochdem. met mijne voorgaende vanden 8en deser, waer vande duplicata hier bijgaet ..."),
+  body 377-378, block and close 379, address 380. So the duplicate itself refers to a letter of 8 Aug 1621 whose duplicate went with
+  it (M; read at 1200 px).
+- Limits: 700 px tiles on sheets read at about 2,000 px, so a block of a dozen groups or fewer inside prose could escape; one reader;
+  scans 361-397 only.
+
+### Premise check update (HEID-1621B): edition step now due
+The sender is now named on the leaf, so the anonymous-pile path ends and the normal gate applies (CLAUDE.md pipeline step 2):
+- Sender's printed correspondence: no edition of P. van Brederode's agent letters is recorded in this folder; the one printed source
+  for him here is Veenendaal, *Bescheiden ... Oldenbarnevelt* II (RGP GS 108), which stops at 1613 and so cannot hold a 1621 letter.
+- Recipient-side edition: *Resolutiën der Staten-Generaal, nieuwe reeks 1610-1670* (RGP; the 1621 volume edited by J. Roelevink;
+  Japikse edited the old series to 1609), online at resources.huygens.knaw.nl; it summarises letters as read in the assembly, so the
+  receipt "L. 20 Aug. 1621" on 380 points to the resolutions of about 20 Aug 1621. **Whether the 1621 Heidelberg letters (8 and 13 Aug)
+  are printed or summarised there, and whether any summary gives the content of the cipher passage, was not checked in this job** --
+  that is the edition step for the parent's intake gate (`tools/intake_gate_check.py`).
+- Other sender-family routes to run with it: the Huygens WVO / retroboeken search for Brederode 1621; a print_check phrase search on
+  the clear context ("in date des 29 July ouden stijl", "Complex tijdinghe vande Overste").
+- Verdict unchanged: `open` (M) until the edition step is run.
+
+Suggested next (not run, Usage 7): the edition step above (~$1); a native-size crop of the 375 block and a reconciliation against
+`heid1621/ciphertext_6021_379.tsv` (two witnesses, ~$1.5); the 8 Aug 1621 letter (and its duplicate) earlier in inv. 6021 for a third
+witness or more groups in the same system (stride-1 around it, ~$1.5).
