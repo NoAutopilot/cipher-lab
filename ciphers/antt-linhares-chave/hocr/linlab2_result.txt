@@ -1,0 +1,1 @@
+0255_c3_lab2 FLUSH rows 27 rank 15 -> ('R24', 'Jus,') | ranks around: [('R21', 'Júro,'), ('R22', 'Jurupánga,'), ('R24', 'Jus,'), ('R25', 'Justa,'), ('R26', 'Justadór,')] | OTHER inside span: False
