@@ -67,3 +67,38 @@ NOTES.md ~259-274: image-check the 122 M rows of the Gualterio key and 33 of the
 (HMC Stuart Papers vol. 6 on archive.org; keys/build_hmc6_keys.py). One strip pass per leaf on line crops (4 x 0.3 Sonnet), each with >= 5
 planted wrong rows as a control; regrade M -> H only where the strip reads the row exactly and the planted rows are caught (>= 80%).
 Rebuild the key with the folder's script and its check.
+
+## Wave 2 (refills from 03:0x UTC 15 Oct; intake gate 02:49 UTC exit 0: fr15575-syllabic-1592-95, na-janssens-java-1811, fr5761-election-1519, fr16144-savary-lancosme-1588; antt-linhares-chave status line terminal, gate n/a)
+
+### SYL-CARET (Opus, cap 1.5, box 45 min, disk only): fr15575-syllabic-1592-95 the no.54 legend mark ^ against the f.228 L01-L04 gloss
+NOTES.md SYL54-TRY (Suggestion ~line 1146), SYL-1LC, and the last Verdict (~1200). Two --try controls failed (syllable class, single-letter
+class). Different instrument: use the leaf's own L01-L04 interlinear gloss (`f228/gloss_v2.tsv`, scored PASS 0.674) as known plaintext at the
+`^` positions; pre-register a tally of s vs l (and any other candidate in key_no54_legend.tsv rows 2, 9) at those positions against a
+control that tallies the same statistic at gloss positions of H-read single-letter signs shuffled across the leaf (200 seeds). Gate: the
+winning value's count beats the control p95 and no conflicting H. A PASS is a C-grade lead for the key row only if the gloss hand is period
+(say what NOTES establishes); no decode of L09+ in this job. 0 subagent calls.
+
+### JAV-COLLET (Opus, cap 1.5, box 45 min, disk only): na-janssens-java-1811 Collet 1910 crib values on leaf 188
+AUDIT.md ~89-95 "Found, not applied": Collet's two printed sentences give values for 853, 1121, 1173 (l.1) and 381, 125, 1065, 72 (l.10-11).
+Test each with `tools/decode_key.py ciphers/na-janssens-java-1811 --try CODE=VALUE` at every occurrence in the pool (and --avalanche where it
+helps); pre-register which values you will try before running. A value enters key.tsv as C only where --try's own control passes for that value
+class and no occurrence elsewhere contradicts it; otherwise log it M in HYPOTHESES.md, no key edit. Remember Collet paraphrases ("l'état des"
+may be the cipher's own text). decode_key --check after any key edit; judge_plaintext per rule 7 if the reading changes.
+
+### ELEC-WALK (Opus, cap 4, box 75 min, gallica.bnf.fr or openapi.bnf.fr <= 20; archive.org <= 2): fr5761-election-1519 name-code plain-copy walk
+NOTES.md R9-ELEC and KH2-A sections (from ~597; "Next steps (not run) (1)" at ~621). Walk the fr.5761 ff.54-172 copies whose names are in
+cipher at 600 px sheet scale (tools/gallica_folio.py for canvas mapping), list every leaf with a cipher name group, and match its date/letter
+against Kluckhohn's printed resolved names (RTA J.R. I, IA bub_gb_0gFoAAAAMAAJ djvu, offsets ~2685183 and ~2827217). Record (group, printed
+name, leaf, print page) pairs in a TSV; a value enters key.tsv as C only where >= 2 independent occurrences agree and none conflicts; single
+occurrences stay M leads. Census first (<= 12 requests), then at most 8 native line crops for the matched groups (scratchpad only).
+
+### SAV-L14 (Opus, cap 1.5, box 45 min, gallica.bnf.fr or openapi.bnf.fr <= 6): fr16144-savary-lancosme-1588 the c251-252 L14 margin gloss vs Charrière IV
+NOTES.md WAIT-PASS-5 (~377-382: "date match only so far"). Read the L14 margin gloss of c251-252 (30 Apr 1586) on native line crops (one Sonnet
+read + one checker, 2 x 0.6) and collate it word by word with Charrière IV's printed letter of that date (djvu on disk). Report: is the gloss
+a decipherment of a cipher passage that the print gives in clear (then list the cipher span it sits over -- a known-plaintext pair for the
+key, no key edit in this job), or unrelated. PX-BRODEC normalisation before any agreement figure.
+
+### LIN-LAB2 (Opus, cap 1, box 40 min, disk first; iiif.archive.org <= 4): antt-linhares-chave second blind labeller on sheet_0255_c3
+NOTES.md LIN-CAL section (from ~1751), option (b) at ~1807-1809, PREREG-LINCAL.md and hocr/lincal_score.py. One blind labelling pass by a
+different model (Sonnet) under LIN-CAL's pre-registered count rule, then score with lincal_score.py: does 3241315 read "Jus" or "Justa"?
+Follow the PREREG's decision rule exactly; one token changes grade only if it says so.
