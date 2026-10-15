@@ -252,7 +252,7 @@ p1_L11	2	13	M	B:40	differ
 p1_L11	3	2	M	B:27	differ
 p1_L11	4	68	M	B:9	differ
 p1_L11	5	82	M	B:4	differ
-p1_L11	6	85	S	22	settled-b nc=2 margin=0.35
+p1_L11	6	22	M	B:85	differ
 p1_L11	7	61	M	B:16	differ
 p1_L11	8	39	M	B:101	differ
 p1_L11	9	67	M	B:114	differ
@@ -352,7 +352,7 @@ p1_L15	5	48	M	B:41	differ
 p1_L15	6	26	M	B:47	differ
 p1_L15	7	57	M	B:39	differ
 p1_L15	8	101	M	B:72	differ
-p1_L15	9	81	S	52	settled-b nc=2 margin=0.35
+p1_L15	9	52	M	B:81	differ
 p1_L15	10	12	M	B:31	differ
 p1_L15	11	54	H		agree
 p1_L15	12	40	M	B:-	gap
@@ -468,7 +468,7 @@ p1_L20	4	61	M	B:3	differ
 p1_L20	5	36	M	B:12	differ
 p1_L20	6	47	M	B:29	differ
 p1_L20	7	=tout	S	59	settled-b nc=2 margin=0.35
-p1_L20	8	=a	S	22	settled-b nc=2 margin=0.35
+p1_L20	8	22	M	B:=a	differ
 p1_L20	9	77	M	B:=passé	differ
 p1_L20	10	26	M	B:=du	differ
 p1_L20	11	12	M	B:=cras	differ

@@ -193,7 +193,7 @@ p1_L11	2	13	p	M
 p1_L11	3	2	n	M
 p1_L11	4	68	b	I
 p1_L11	5	82	e	M
-p1_L11	6	85	e	C
+p1_L11	6	22	r	M
 p1_L11	7	61	a	M
 p1_L11	8	39	u	M
 p1_L11	9	67	b	I
@@ -285,7 +285,7 @@ p1_L15	5	48	x	I
 p1_L15	6	26	s	M
 p1_L15	7	57	z	M
 p1_L15	8	101	i	M
-p1_L15	9	81	e	C
+p1_L15	9	52	y	I
 p1_L15	10	12	p	M
 p1_L15	11	54	y	I
 p1_L15	12	40	u	M
@@ -369,6 +369,7 @@ p1_L20	1	9	o	M
 p1_L20	4	61	a	M
 p1_L20	5	36	u	M
 p1_L20	6	47	x	I
+p1_L20	8	22	r	M
 p1_L20	9	77	d	M
 p1_L20	10	26	s	M
 p1_L20	11	12	p	M

@@ -4705,3 +4705,31 @@ Not done: unit p3 (16 targets, key_p3.tsv built and pre-registered) -- stopped b
 to this session; my own Opus image work for placement was the large part). Next (one line each): 4611 p3 per the PREREG, ~$2; 4611 p2
 (252 M rows) per page-half, ~$8; verifier ruling on 4610 p2_L28/11 (81 vs 61), ~$0.5. Requests: resources.huygens.knaw.nl 2.
 Subagents: 4 Sonnet calls. No judge run. Novelty not classified.
+
+## LVN-PIN (a): settle.py LM corpus frozen (15 Oct 2026, 05:13-05:1x UTC by date -u, account 4, LANE DEFAULT-A4-0437-15)
+
+Rule-7 fix for the drift LVN-4611 found. `settle.py` no longer reads ciphers/fr2980-gramont/reading*.txt live: the three files are a
+committed text snapshot in `lm_corpus/` (copied from origin/main b2d0cf3fc, the same content 4611 was regenerated with at 05:0x), and
+`lm_corpus/manifest.tsv` names each source path, its git blob id and its last commit. `settle.py` checks every snapshot against its
+blob id at each run and exits on a mismatch or a missing corpus file (it used to skip a missing file silently). No decision rule,
+order, margin or context changed. Second fix found on the way: `settle.py` wrote ciphertext_4610.tsv and ciphertext_4616.tsv, which
+lvn10/apply.py and lvn16/apply.py own (their notes warned a run would undo the R12 settles); it now writes and checks only
+settle_log_<nr>.tsv for those two letters (`OWNED_ELSEWHERE`). Run `python3 settle.py` (all four letters) from now on.
+
+Regenerated against the snapshot; decisions that flip vs the committed files (5 of 1641 logged disagreements):
+
+| letter | row | A / B | committed | now | effect |
+|---|---|---|---|---|---|
+| 4612 | p1_L11/6 | 22 / 85 | settled-b (85 S) | M (22, alt B:85) | ciphertext_4612 + reading_4612 |
+| 4612 | p1_L15/9 | 52 / 81 | settled-b (81 S) | M (52, alt B:81) | ciphertext_4612 + reading_4612 |
+| 4612 | p1_L20/8 | 22 / =a | settled-b (=a S) | M (22, alt B:=a) | ciphertext_4612 + reading_4612 |
+| 4610 | p1_L03/14 | 123 / 133 | A | M | settle_log_4610 only (ciphertext_4610 is lvn10/apply.py's, from its own _pre snapshot; not changed) |
+| 4610 | p2_L33/5 | =cause / =Jos | A | M | settle_log_4610 only (as above) |
+
+4616: 0 flips (scores moved, log only). 4611: unchanged (already on this corpus). ciphertext_4612.tsv under decode.json: tokens 813 -> 814
+(=a back to code 22), C 371 -> 369, M 271 -> 273, I 137 -> 138, U 34 -> 34. The two 4610 log-only flips mean ciphertext_4610.tsv may
+still carry an S grade from the R20 lineage at p1_L03/14 and p2_L33/5 that the current LM would not give; not edited (a gap for the
+next 4610 job). Checks after: `settle.py --check` exit 0 (all four letters); lvn10/apply.py, lvn16/apply.py, lvn4611/settle.py,
+lvn4611/build_key.py, lvn10p1/settle.py, lvn10p2/settle.py, lvn10p2/build_key.py, axnames/revisions.py `--check` exit 0;
+`decode_key.py --check` exit 0 for all 13 decode*.json. No network. The reading changed after AUDIT.md (4612, three S -> M): flagged for
+a verifier in ROOM.md.

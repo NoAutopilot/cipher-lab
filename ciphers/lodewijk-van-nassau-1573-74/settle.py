@@ -37,13 +37,34 @@ ORDER = 4  # order-4 model: 3 chars of context predict the 4th
 MARGIN = 0.35  # nats/char; set by eye on the first run (see NOTES.md "R20")
 CONTEXT_TOKENS = 2  # tokens either side of the disagreement, for scoring context
 
+# LVN-PIN (15 Oct 2026): the three fr2980-gramont readings are read from a frozen snapshot in lm_corpus/
+# (lm_corpus/manifest.tsv names each source file and its git blob id at the time of the snapshot), never from
+# ciphers/fr2980-gramont/ live, so an edit to that target no longer makes this target's committed outputs stale
+# (rule 7). The snapshot is checked against the manifest's blob ids at every run; a missing file is an error.
+LM_DIR = HERE / "lm_corpus"
+# LVN-PIN (15 Oct 2026): ciphertext_4610.tsv and ciphertext_4616.tsv are rebuilt by lvn10/apply.py and lvn16/apply.py
+# from their own *_pre.tsv snapshots; this script writes and checks only settle_log_<nr>.tsv for those two letters
+# (it used to overwrite them, which their own notes warned undoes the R12 settles).
+OWNED_ELSEWHERE = {"4610": "lvn10/apply.py", "4616": "lvn16/apply.py"}
 CORPUS_FILES = [
     HERE / "plaintext_4613.txt",
     HERE / "plaintext_4615.txt",
-    REPO / "ciphers" / "fr2980-gramont" / "reading.txt",
-    REPO / "ciphers" / "fr2980-gramont" / "reading_f30.txt",
-    REPO / "ciphers" / "fr2980-gramont" / "reading_f30_extended.txt",
+    LM_DIR / "fr2980-gramont_reading.txt",
+    LM_DIR / "fr2980-gramont_reading_f30.txt",
+    LM_DIR / "fr2980-gramont_reading_f30_extended.txt",
 ]
+
+
+def verify_snapshot():
+    import hashlib
+    with open(LM_DIR / "manifest.tsv", newline="", encoding="utf-8") as fh:
+        rows = list(csv.DictReader(fh, delimiter="\t"))
+    assert rows, "lm_corpus/manifest.tsv is empty"
+    for r in rows:
+        data = (LM_DIR / r["snapshot"]).read_bytes()
+        blob = hashlib.sha1(b"blob %d\0" % len(data) + data).hexdigest()
+        if blob != r["git_blob"]:
+            sys.exit(f"lm_corpus/{r['snapshot']}: git blob {blob} != manifest {r['git_blob']} (snapshot edited?)")
 
 ALPHA_RE = re.compile(r"[^a-zàâäéèêëîïôöùûüçñ'\s]")
 STRUCK_RE = re.compile(r"\[struck:[^\]]*\]")
@@ -81,7 +102,7 @@ def build_lm(paths, order=ORDER):
     parts = []
     for p in paths:
         if not p.exists():
-            continue
+            sys.exit(f"LM corpus file missing: {p}")
         raw = p.read_text(encoding="utf-8")
         if p.name.startswith("plaintext_"):
             raw = load_plaintext_body(p)
@@ -302,6 +323,7 @@ def main():
     letters = args.letters.split(",")
 
     key = load_key(HERE / "key.tsv")
+    verify_snapshot()
     counts, alphabet, corpus_chars = build_lm(CORPUS_FILES)
     overrides = load_overrides(HERE / "overrides.tsv")
 
@@ -348,14 +370,15 @@ def main():
         if args.check:
             old_cipher = cipher_path.read_text(encoding="utf-8") if cipher_path.exists() else None
             old_log = log_path.read_text(encoding="utf-8") if log_path.exists() else None
-            if old_cipher != new_cipher_text:
+            if nr not in OWNED_ELSEWHERE and old_cipher != new_cipher_text:
                 print(f"STALE: {cipher_path}", file=sys.stderr)
                 stale = True
             if old_log != new_log_text:
                 print(f"STALE: {log_path}", file=sys.stderr)
                 stale = True
         else:
-            cipher_path.write_text(new_cipher_text, encoding="utf-8")
+            if nr not in OWNED_ELSEWHERE:
+                cipher_path.write_text(new_cipher_text, encoding="utf-8")
             log_path.write_text(new_log_text, encoding="utf-8")
 
     for nr, s in summary.items():
