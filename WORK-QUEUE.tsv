@@ -651,3 +651,5 @@ DEFAULT-account-4-20261014-0935	account-4	.claude/briefs/default-lane.md	Opus 5.
 DEFAULT-account-1-20261014-1840	account-1	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-14 20:01	2026-10-14 18:40	auto-fill: empty queue; closed 20:0x UTC: under one wave of budget left, ~56.5 of 60
 DEFAULT-account-4-20261014-2135	account-4	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-14 23:16	2026-10-14 21:35	auto-fill: empty queue
 DEFAULT-account-2-20261014-2209	account-2	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-14 23:45	2026-10-14 22:09	auto-fill: empty queue
+SORTER-FIX-R12-R16	account-1	.claude/briefs/runs/2026-10-15-acct4-for-acct1-jobs.md	Opus 5.5	10	120	queued	2026-10-15 01:44	owner sorter requirements R12-R16 as automatic checks + one-shape piles; re-render f.191r packet, not published; for LANE VIV-KEYSTONE (account-4)
+VIV-F191C	account-1	.claude/briefs/runs/2026-10-15-acct4-for-acct1-jobs.md	Opus 5.5	8	90	queued	2026-10-15 01:44	third blind pass f.191r L22-L36 with per-line drift check, report only; for LANE VIV-KEYSTONE (account-4)
