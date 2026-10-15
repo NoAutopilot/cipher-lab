@@ -1,0 +1,276 @@
+wid	shape	note
+R2-001	L	faint, loop at waist
+R2-002	L	closed top loop
+R2-003	L	closed loop
+R2-004	O	single hook, open
+R2-005	O	open top hook
+R2-006	O	open top hook
+R2-007	L	closed loop
+R2-008	O	open top hook
+R2-009	L	closed loop
+R2-010	L	closed loop
+R2-011	?	cut off at top
+R2-012	?	cut, no clear sign
+R2-013	L	closed loop
+R2-014	L	closed loop
+R2-015	L	closed loop
+R2-016	O	open top hook
+R2-017	L	looped top
+R2-018	L	second S at tick
+R2-019	L	closed loop
+R2-020	O	right S at tick
+R2-021	O	open top hook
+R2-022	L	closed loop
+R2-023	L	closed loop
+R2-024	L	closed loop
+R2-025	L	closed loop
+R2-026	O	open top hook
+R2-027	L	closed loop
+R2-028	L	closed loop
+R2-029	L	closed loop
+R2-030	L	closed loop
+R2-031	L	left S nearer tick
+R2-032	L	closed loop
+R2-033	O	open top hook
+R2-034	O	open top hook
+R2-035	L	closed loop
+R2-036	O	open top hook
+R2-037	L	faint, looped
+R2-038	L	closed loop
+R2-039	L	closed loop
+R2-040	O	open top hook
+R2-041	L	closed loop at tick
+R2-042	O	single hook, long tail
+R2-043	L	8-like at tick
+R2-044	L	looped S at tick
+R2-045	O	open, tail sweeps under tick
+R2-046	O	open hook
+R2-047	O	open hook
+R2-048	L	8-like loop
+R2-049	L	looped near tick
+R2-050	O	open hook
+R2-051	L	looped
+R2-052	O	open hook
+R2-053	L	looped; open S farther left
+R2-054	L	looped
+R2-055	L	looped
+R2-056	L	looped
+R2-057	O	open hook
+R2-058	L	looped at tick; open one left
+R2-059	O	open hook
+R2-060	L	looped
+R2-061	L	looped
+R2-062	O	open hook
+R2-063	L	looped at tick
+R2-064	L	looped
+R2-065	L	looped nearer tick
+R2-066	L	looped
+R2-067	O	open at tick; looped right
+R2-068	O	open hook
+R2-069	O	open hook
+R2-070	L	looped at tick
+R2-071	L	looped
+R2-072	O	open hook
+R2-073	O	open at tick; looped right
+R2-074	O	open hook
+R2-075	O	open hook
+R2-076	L	looped
+R2-077	O	open hook
+R2-078	L	looped
+R2-079	O	open hook
+R2-080	L	looped, slightly unsure
+R2-081	O	open hook, tail swept
+R2-082	?	no clear S near tick
+R2-083	L	closed loop 8-like
+R2-084	O	open hook, long tail
+R2-085	?	two S near tick
+R2-086	L	looped waist
+R2-087	L	closed loop
+R2-088	L	looped
+R2-089	O	open hook, long tail
+R2-090	O	open hook, swept tail
+R2-091	L	looped 8-like
+R2-092	L	looped
+R2-093	L	looped
+R2-094	L	looped
+R2-095	O	open hook, long tail
+R2-096	O	open hook, long tail
+R2-097	L	looped
+R2-098	L	looped
+R2-099	?	two S equidistant
+R2-100	O	open hook, swept tail
+R2-101	L	looped
+R2-102	?	two S near tick
+R2-103	?	two S adjacent to tick
+R2-104	O	open hook, swept tail
+R2-105	O	open hook, long tail
+R2-106	L	looped
+R2-107	?	two S, ambiguous
+R2-108	L	looped
+R2-109	O	open hook, long tail
+R2-110	L	looped
+R2-111	L	looped
+R2-112	L	looped
+R2-113	?	two S equidistant
+R2-114	L	looped
+R2-115	L	looped
+R2-116	L	looped
+R2-117	?	two S near tick
+R2-118	?	no S sign near tick
+R2-119	L	looped
+R2-120	L	looped
+R2-121	L	closed loop near tick
+R2-122	O	single hook, open
+R2-123	O	open top, swept tail
+R2-124	L	loop at top
+R2-125	O	open hook
+R2-126	L	8-like closed
+R2-127	L	closed loop
+R2-128	O	nearest S open
+R2-129	O	open hook
+R2-130	L	loop appears closed
+R2-131	L	closed loop
+R2-132	L	closed top loop
+R2-133	L	nearest S looped
+R2-134	O	open hook
+R2-135	L	looped
+R2-136	O	open
+R2-137	L	looped
+R2-138	O	open
+R2-139	L	looped
+R2-140	O	nearest S open
+R2-141	L	looped
+R2-142	L	looped
+R2-143	L	looped
+R2-144	L	looped
+R2-145	O	open
+R2-146	?	no clear S shape
+R2-147	O	open, heavy
+R2-148	L	nearest S looped
+R2-149	O	open
+R2-150	O	open
+R2-151	L	looped
+R2-152	L	looped
+R2-153	L	looped
+R2-154	L	looped
+R2-155	O	open
+R2-156	O	open
+R2-157	L	looped
+R2-158	?	two S equidistant
+R2-159	O	open
+R2-160	O	open
+R2-161	L	closed waist loop
+R2-162	L	closed top loop
+R2-163	L	8-like
+R2-164	O	open hook, swept tail
+R2-165	L	8-like
+R2-166	O	single hook, open
+R2-167	O	open top hook
+R2-168	O	open, long tail
+R2-169	L	looped waist
+R2-170	L	nearest S looped; neighbor open
+R2-171	?	S cut at edge
+R2-172	O	nearest S open
+R2-173	L	looped
+R2-174	O	open; looped S further
+R2-175	O	open hook
+R2-176	L	looped
+R2-177	O	open hook
+R2-178	L	looped
+R2-179	L	looped
+R2-180	L	looped
+R2-181	L	looped
+R2-182	O	open, swept tail
+R2-183	L	looped
+R2-184	L	looped
+R2-185	L	looped
+R2-186	O	open
+R2-187	L	looped
+R2-188	O	open
+R2-189	O	open
+R2-190	O	open
+R2-191	L	looped
+R2-192	O	open
+R2-193	L	looped
+R2-194	L	looped
+R2-195	L	looped
+R2-196	O	nearest S open
+R2-197	O	open
+R2-198	O	open
+R2-199	L	looped
+R2-200	O	open
+R2-201	?	two S near tick
+R2-202	L	closed top loop
+R2-203	L	8-like loop
+R2-204	O	open hook, long tail
+R2-205	O	open top
+R2-206	L	nearest S looped
+R2-207	L	closed top
+R2-208	L	looped
+R2-209	L	looped
+R2-210	O	open, swept tail
+R2-211	O	open top hook
+R2-212	L	looped
+R2-213	O	open top
+R2-214	L	looped top
+R2-215	O	nearest S open
+R2-216	L	looped
+R2-217	L	looped
+R2-218	O	open
+R2-219	?	small, unclear form
+R2-220	O	open
+R2-221	O	nearest S open
+R2-222	O	open
+R2-223	L	looped
+R2-224	O	open
+R2-225	O	open
+R2-226	O	open hook
+R2-227	L	looped
+R2-228	L	looped
+R2-229	L	looped
+R2-230	O	open
+R2-231	L	looped
+R2-232	L	looped
+R2-233	L	looped
+R2-234	O	open
+R2-235	O	open
+R2-236	L	looped
+R2-237	L	looped
+R2-238	L	looped
+R2-239	L	looped
+R2-240	O	nearest S open
+R2-241	O	single hook, swept tail
+R2-242	L	closed waist loop
+R2-243	O	open top hook
+R2-244	L	closed loop, fairly clear
+R2-245	L	closed waist loop
+R2-246	L	closed loop
+R2-247	O	open hook, long tail
+R2-248	L	closed loop
+R2-249	L	loop, dot above
+R2-250	L	closed loop
+R2-251	L	loop at waist
+R2-252	L	nearest S looped
+R2-253	?	S not near tick
+R2-254	O	open hook, long tail
+R2-255	O	open hook
+R2-256	L	nearest S looped
+R2-257	L	closed loop
+R2-258	?	two S, tick between
+R2-259	O	open hook
+R2-260	L	closed loop
+R2-261	L	closed loop
+R2-262	L	loop with long tail
+R2-263	L	closed loop
+R2-264	?	cut, small, unclear
+R2-265	L	closed loop
+R2-266	L	closed loop
+R2-267	L	closed loop
+R2-268	L	closed loop
+R2-269	O	open hook
+R2-270	L	closed loop
+R2-271	L	closed loop
+R2-272	L	closed loop
+R2-273	L	closed loop
+R2-274	L	closed loop
+R2-275	L	closed loop
