@@ -128,3 +128,13 @@ on the seven-day window is not a reason to leave Fable. A row that names Fable r
 only a failed Fable turn or `rejected` moves it to Opus 5.5, and nothing ever goes below Opus 5.5. With neither model
 available, the work pauses until a reset. (The account-3 dispatcher spawned VERIFY-CEPPO-D2-1 and VERIFY-F61-V5 on
 Opus 5.5 at 00:12 UTC 29 Sept under the old fallback; that fallback no longer applies.)
+
+## Usage watch (tools/usage_watch.py, rewritten by the parent at every check-in)
+Read 2026-10-15 01:53 UTC. Status words are each account's own ROOM.md self-report; bars need the cipher-lab-usage mod.
+
+| account | status word | age (min) | resets | live claims | 5h bar | 7d bar | flag |
+|---|---|---|---|---|---|---|---|
+| 1 | allowed | 46 | 02:20 UTC | 0 | -- | -- | ok |
+| 2 | allowed | 128 | -- | 0 | -- | -- | ok |
+| 3 | allowed_warning | 5451 | -- | 0 | -- | -- | old warning (5451 min), idle: not current |
+| 4 | allowed | 162 | 00:10 UTC 15 Oct | 0 | -- | -- | ok |
