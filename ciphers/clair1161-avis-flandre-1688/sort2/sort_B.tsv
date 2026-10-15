@@ -1,0 +1,276 @@
+wid	shape	note
+X001	?	tick on non-S sign
+X002	L	top loop crossing
+X003	?	tick on non-S
+X004	?	tick on q sign
+X005	?	tick on non-S
+X006	?	tick on 4
+X007	O	open hook, cut off
+X008	O	single hook long tail
+X009	?	tick on 7 sign
+X010	?	tick on diamond sign
+X011	?	no S at tick
+X012	O	open hook swept tail
+X013	?	tick on cross
+X014	?	large looped non-S
+X015	L	8-like looped
+X016	L	8-like looped
+X017	?	tick on cross sign
+X018	?	tick on o
+X019	?	tick on 4
+X020	O	open hook long tail
+X021	?	tick on 4
+X022	O	open hook tail
+X023	?	no S at tick
+X024	?	tick on 7 sign
+X025	?	tick on hash sign
+X026	?	tick on theta sign
+X027	?	tick on non-S
+X028	?	tick on 7 sign
+X029	?	dotted small sign unclear
+X030	L	looped top
+X031	O	open hook tail
+X032	?	tick on non-S
+X033	?	tick on q
+X034	L	top loop closed
+X035	L	top loop closed
+X036	?	dark illegible
+X037	L	top loop closed
+X038	O	open hook long tail
+X039	?	tick on theta
+X040	L	top loop closed
+X041	O	open hook tail
+X042	O	open hook long tail
+X043	O	open hook tail
+X044	L	looped
+X045	?	tick on hash sign
+X046	?	tick on plus
+X047	?	stem overlaps, unclear
+X048	L	looped waist
+X049	O	open hook
+X050	?	tick on q
+X051	?	tick on Z-like sign
+X052	?	tick on hash sign
+X053	?	tick on plus
+X054	?	no S at tick
+X055	?	tick on q
+X056	O	open hook
+X057	L	looped
+X058	O	small open hook
+X059	O	open hook long tail
+X060	?	tick on non-S
+X061	?	tick on blank
+X062	?	tick on a sign
+X063	?	tick between signs
+X064	O	open hook tail
+X065	L	looped
+X066	O	open hook tail
+X067	L	looped
+X068	?	tick on q
+X069	O	open hook tail
+X070	?	tick on 4
+X071	O	open hook tail
+X072	O	open hook tail
+X073	L	looped
+X074	?	tick on epsilon sign
+X075	?	no clear S
+X076	?	tick on rune sign
+X077	?	tick on 4
+X078	L	looped
+X079	?	tick on rune sign
+X080	?	tick on hash sign
+X081	O	simple S dotted
+X082	?	tick on blank
+X083	?	no S near tick
+X084	?	tick between signs
+X085	L	waist loop closed
+X086	L	waist loop closed
+X087	?	no S near tick
+X088	O	simple S
+X089	?	tick on p sign
+X090	?	tick on 4 sign
+X091	?	tick on plus
+X092	?	tick on 4 sign
+X093	?	blot
+X094	L	top loop closed
+X095	?	y-like sign
+X096	?	tick on 4
+X097	?	tiny unclear
+X098	L	waist loop closed
+X099	?	tick on q sign
+X100	L	loop at waist
+X101	?	tick on c sign
+X102	L	looped S
+X103	L	waist loop
+X104	?	tick on w sign
+X105	?	tick on plus
+X106	?	tick on hash
+X107	?	tiny two S
+X108	?	tick on R sign
+X109	L	waist loop
+X110	O	single hook
+X111	?	tick on 4
+X112	?	tick on blank
+X113	?	tick on plus
+X114	L	looped S
+X115	O	open S
+X116	L	waist loop
+X117	L	waist loop
+X118	O	open S
+X119	?	tick on R sign
+X120	L	waist loop
+X121	L	looped sign
+X122	?	no S
+X123	L	looped S
+X124	?	tick on plus
+X125	?	no S
+X126	?	tick on w
+X127	?	tick on w
+X128	?	cut off
+X129	?	y-like sign
+X130	?	tick on q
+X131	L	loop closed
+X132	L	waist loop
+X133	?	tick on blank
+X134	?	tick on R
+X135	O	open S
+X136	L	looped S
+X137	L	waist loop
+X138	?	tick on blank
+X139	?	tick between signs
+X140	?	tick on w
+X141	L	waist loop
+X142	O	open S
+X143	?	tick on p sign
+X144	L	looped S
+X145	?	no S
+X146	?	no S
+X147	?	tick on plus
+X148	?	tick on 4
+X149	?	tick on w
+X150	?	no S
+X151	?	tick on q
+X152	?	tick on blot
+X153	O	open S
+X154	?	no S
+X155	O	open S
+X156	?	tick on 4
+X157	?	tick on phi
+X158	?	no S
+X159	L	hooked loop
+X160	?	tick on theta
+X161	?	top curl crossing unclear
+X162	O	single hook, long tail
+X163	?	tick on p sign
+X164	L	top loop closed
+X165	?	no S sign at tick
+X166	?	tick on plus
+X167	?	diamond sign, not S
+X168	L	top crossing
+X169	L	top loop closed
+X170	O	open hook, long tail
+X171	L	top loop closed
+X172	O	open hook
+X173	?	tick on blank
+X174	?	no S sign
+X175	O	open hook, long tail
+X176	?	cross sign at tick
+X177	O	open hook
+X178	?	blotted cross sign
+X179	O	open hook
+X180	?	cross sign at tick
+X181	?	tick on blank
+X182	O	open hook
+X183	?	non-S sign at tick
+X184	?	no S sign
+X185	?	tick on plus
+X186	?	tick on 40
+X187	L	waist looped
+X188	L	top loop closed
+X189	L	large looped sign
+X190	O	open hook
+X191	?	two S signs, ambiguous
+X192	L	top loop closed
+X193	?	tick between signs
+X194	L	top loop, slightly distant
+X195	O	open small S
+X196	?	cross sign at tick
+X197	L	top loop closed
+X198	?	cross sign at tick
+X199	L	top loop closed
+X200	L	blotted loop
+X201	L	top loop closed
+X202	?	tick on plus
+X203	?	cross sign at tick
+X204	?	cross sign at tick
+X205	?	nine-like sign at tick
+X206	L	top loop closed
+X207	?	S not near tick
+X208	L	top loop closed
+X209	?	cross sign, blank
+X210	?	six-like sign
+X211	L	top loop closed
+X212	?	tick between hash and S
+X213	L	top loop closed
+X214	?	tick on 3
+X215	?	cross sign at tick
+X216	L	top loop closed
+X217	?	no S sign
+X218	?	no S sign
+X219	L	top loop closed
+X220	O	open hook
+X221	?	tick on hash sign
+X222	O	single hook, long tail
+X223	?	tick on blank
+X224	O	open hook, long tail
+X225	L	waist loop closed
+X226	L	waist loop closed
+X227	?	tick on cross
+X228	?	tick on hash sign
+X229	?	tick on blank
+X230	O	open five-like S
+X231	?	tick on omega sign
+X232	L	waist loop closed
+X233	L	top and waist loop
+X234	?	tick on small 2 sign
+X235	?	tick on epsilon sign
+X236	?	tick on diamond sign
+X237	?	blotted, no S
+X238	O	open hook, heavy tail
+X239	?	S cut off at edge
+X240	L	top loop, waist closed
+X241	?	tick on hash sign
+X242	L	loop at waist
+X243	O	open S, slightly right
+X244	?	tick on diamond sign
+X245	?	tick on hash strokes
+X246	?	tick on 6, S distant
+X247	O	open hook, long tail
+X248	?	tick on omega, no S
+X249	?	tick on cross
+X250	L	waist loop closed
+X251	O	open hook, long tail
+X252	O	open hook, long tail
+X253	?	tick on q-cross
+X254	L	waist loop closed
+X255	?	tick between S and 8
+X256	?	tick on stroke group
+X257	L	looped S, slightly right
+X258	L	small looped S
+X259	L	looped S
+X260	?	no S near tick
+X261	O	open hook
+X262	O	open five-like S
+X263	L	top loop closed
+X264	L	looped waist
+X265	?	tick on cross
+X266	L	waist loop closed
+X267	?	tick on 6z sign
+X268	L	waist loop closed
+X269	L	waist loop closed
+X270	?	tick on 4, no S
+X271	O	open hook, long tail
+X272	L	waist loop closed
+X273	?	tick on q-cross
+X274	?	tick on q-cross
+X275	L	waist loop closed
