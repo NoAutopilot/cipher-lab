@@ -34,3 +34,22 @@ gloss/har58_score.tsv; `--check`). Gate fixed now:
   post hoc, never as the gate.
 Units: 4 run calls + 1 margin + (control rides in call 1) + reconcile at ~1.3 each + floor 3 ~ 10.8 against cap 10; stop before a unit
 that would cross USD 8 or 80 min. No key.tsv edit; a sign that conflicts with the margin is logged as a candidate, not a key change.
+
+## Amendment 1 (15 Oct 2026, 18:0x UTC by date -u), after cropping, before any reader call or score
+
+Found on cropping (worker's own look at a reduced overview for layout only; no sign read): the cipher lines after HAR-41R's R4 are
+R5 "no lesse [cipher] other." under the interlinear gloss "sowght unto by the"; R6 "... and to [cipher] in that poin(t)" under
+"Satisfye him"; R7 "... [cipher] with owt any other respect" under "to write this much"; R8 "in the world: [cipher] that [cipher]";
+R9 "[cipher] This onelie to let y..". The second margin note ("He is in jelosye ...", 3 lines + an interlinear word) sits at native
+y ~7800-8260, beside R8-R9, not R5-R7 -- the same shape as HAR-41R's R4. So, with the unit count unchanged (6 calls):
+- Runs read: R5, R6, R7, R8 (2 parts), R9 (2 parts) -- one Opus call per run, control in call 1 (R5). R9 is one line past the brief's
+  "lines 5-8"; it is read because the note sits beside it.
+- Gate statistic (S1, S2, null, outcome A/B/C exactly as above) on D = R8 + R9 against the second margin note. The note crop is one
+  1390x560 deskewed crop (region 1330,7760,1390,560, rotate -0.90 deg, the angle tools/iiif_lines.py --deskew-region fitted), under
+  2500 px, the note only.
+- The same margin call also reads the three interlinear glosses from their own crops (G5, G6, G7; cut above the cipher rows, cipher
+  out of view). R5, R6, R7 are each scored post hoc against their gloss with the same S1 and null -- reported, not the gate.
+- Boxes (rotated frame of native region 2650,6200,4400,2000, rotate -2.25 deg PIL bicubic fill 230, crops enlarged 1.15x): R5
+  440-1580 x 805-912; R6 2370-3420 x 1040-1130; R7 1240-2520 x 1362-1460; R8 745-1990 / 2250-4060 x 1535-1640; R9 0-1600 / 1600-2560 x
+  1705-1815; G5 380-1580 x 712-812; G6 2370-3420 x 965-1040; G7 1240-2520 x 1270-1362. (A taller/wider region than HAR-41R's shifts the
+  rotation centre by a few px; boxes are stated in this frame.)
