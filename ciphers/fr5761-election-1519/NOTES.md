@@ -167,6 +167,8 @@ Stage-2 eligible on this verdict (`open`, six sources checked, per check-solved.
 
 Update 15 Oct 2026 (ELEC-END): fr.5761 ff.172r-179v now read on both sides at 600 px. No copy with names in cipher, and Kluckhohn nr. 357/383 are not there (the versos of ff.165-171 and 180-182 are still unread). Next step: the fr.5756 census (ark btv1b60010927, still to be confirmed); see "## ELEC-END".
 
+Update 15 Oct 2026 (ELEC-SRC): Kluckhohn's source lines read on the page image: nr. 357 is BnF **fr. 3897** (item 56 of its contents list, ark btv1b90096539, folio not given), nr. 383 is **fr. 5761** after all (folio not given; ff.165-182 already read without it). See "## ELEC-SRC".
+
 ## Key transcription, progress (24 Sept 2026, 14:00 UTC, written by the LANE G3 orchestrator)
 
 Worker G (session_01VqKFDYvBPedSfydmRjbFWq, Sonnet) was interrupted at 13:59 UTC at about 1.9x its $4 cap, under the account's seven-day
@@ -725,3 +727,34 @@ group. 0 pairs; key.tsv unchanged; status unchanged (open).**
 contents list, and no cipher name group was seen on 16 canvases. Next: (1) read Kluckhohn's own source line for nr. 357 and nr. 383 on the RTA
 J.R. I page image, not the OCR (archive.org `bub_gb_0gFoAAAAMAAJ`, 1-2 page requests, ~0.5), to get the real shelfmark. "Von."/"VGL" may be
 another fonds, such as Dupuy, Clairambault or a nouv. acq. volume. Census that volume only once the shelfmark reads from the page.
+
+## ELEC-SRC: Kluckhohn's own source lines for nr. 357 and nr. 383 (worker ELEC-SRC, LANE DEFAULT-A1-0740-15, account 1, 15 Oct 2026, 08:02-08:1x UTC by date -u)
+
+Brief: ELEC-5756's next (1), read the source line on the RTA J.R. I page image, not the OCR. Result: **both shelfmarks now read from the page;
+0 pairs; key.tsv unchanged; status unchanged (open).** Page images, not OCR (rule 2); search results only (rule 10).
+- Pages: archive.org `bub_gb_0gFoAAAAMAAJ`, `_page_numbers.json` gives leaf = printed page + 8. Nr. 357 heads on p.813 (leaf n821), nr. 383 on
+  p.855 (leaf n863); a first try at n822/n864 landed one page late (pp.814, 856, the letter bodies).
+- **Nr. 357** (Joachim of Brandenburg to Bonnivet and Moltzan, 18 June 1519), read by eye at 1800 px: "Aus Paris Bibl. nat. F. fr. **3897**. Cop.,
+  die Namen in (den bekannten) Chiffren, in verso: Double des lectres du marquis de Brandebourg à monsr. l'admiral, 18e juing." The OCR's
+  "Von." is 3897. Not fr.5761 or fr.5756, which is why ELEC-WALK, ELEC-END and ELEC-5756 did not find it.
+- **Nr. 383** (Orval, Bonnivet and Guillart to Francis I, Wahl Karls, 29 June 1519): "Aus Paris Bibl. nat. F. fr. **5761**. Cop., die Namen in
+  Chiffren." The OCR's "VGL" is 5761. So nr. 383 is in fr.5761 after all, but not on ff.165-182 (rectos, ELEC-WALK) or ff.172-179 (both sides,
+  ELEC-END). Kluckhohn gives no folio for either letter.
+- fr.3897: ark **btv1b90096539** was already on file (KEYHUNT-2026-10-07.tsv: fr.3897 f.222 = c263, f.236 = c279, f.238 = c281-283; Dupuy 468
+  translation at f.146-147), so no SRU or catalogue lookup was needed. One request to the openapi.bnf.fr IIIF v3 manifest (200; label
+  "BnF. Département des Manuscrits. Français 3897"; 314 canvases, every canvas label "NP"; "Numérisation effectuée à partir d'un document
+  de substitution", i.e. from a substitute copy such as microfilm). Its Description lists **item 56: "Double des lettres d[e JOACHIM], marquis DE
+  BRANDEBOURG, à monseigneur l'admiral de Bonnivet. XVIIIe jung 1519"**, which matches Kluckhohn's "in verso" line. Item 39 (Joachim to Bonnivet,
+  "Vendredi, une heure apres midi, 1519") is Kluckhohn's nr. 356 (Josyn), printed just before it on p.813. Other Joachim pieces: items 36-38, 62,
+  64-65, 73. The Description gives no folios. Item 73 is f.146 (Dupuy 468 work), so item 56 lies before f.146.
+- No canvas of fr.3897 was read: Kluckhohn cites no folio, the canvas labels give none, and the brief forbids a census.
+- Not done: locating item 56's canvas; the fr.5761 manifest Description (does it list nr. 383 with a position?); ff.54-164 of fr.5761.
+- Requests: archive.org 6 (`_djvu.txt` 1, `_page_numbers.json` 1, page images n822, n864, n821, n863 at w1800), openapi.bnf.fr 1 (manifest),
+  no 403/429. Images in the session scratchpad only, none in git. Regen: `https://archive.org/download/bub_gb_0gFoAAAAMAAJ/page/n821_w1800.jpg`
+  (and n863); the source lines lie at about y 1940 (n821) and y 1820 (n863) of the 2500 px wide image.
+
+**Verdict (ELEC-SRC, 15 Oct 2026):** open, unchanged. Nr. 357 = BnF fr.3897 (item 56, digitised, btv1b90096539); nr. 383 = BnF fr.5761 (digitised,
+btv1b52510561g), outside the leaves read so far. Next: (1) locate fr.3897 item 56 by bisection from the f.146 anchor (item 73) and the
+c263/f.222 offset, about 3-4 canvases at 600 px, then read the name groups against Kluckhohn's printed names (Couloigne, Saxe, Boheme,
+Mayence, Palatin, Hessen; p.813-814), ~2; (2) read the fr.5761 manifest Description (1 request, no image) for the position of nr. 383, then
+read that leaf, ~1.5. A pair needs >= 2 occurrences per sign before any C grade.
