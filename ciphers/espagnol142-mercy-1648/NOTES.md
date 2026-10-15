@@ -2848,7 +2848,7 @@ says the instrument cannot accept at that n on this text; what would settle them
 M glyphs (a different instrument, rule 3's third-attempt clause), not another --try. The R 3.4 vs es17c AD convention
 question is moot for this job (neither is reached) and is left with the parent.
 
-## MERCY-IMG (15 Oct 2026, 14:29-14:4x UTC by date -u)
+## MERCY-IMG (15 Oct 2026, 14:29-14:37 UTC by date -u)
 
 Worker MERCY-IMG (for LANE VIV-KEYSTONE, account 4); brief `.claude/briefs/runs/2026-10-15-acct4-depth-steps.md` "## JOB MERCY-IMG".
 PREREG-MERCYIMG.md pushed (a1c954a60) before either reader ran. No network (canvas 58 already on disk); no key.tsv, reading, AUDIT.md
