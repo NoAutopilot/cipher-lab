@@ -1,0 +1,83 @@
+tid	line	position	role	sign	A150	B150	candidates
+P101	p1_L19	18	control	148	148	148	198 | 148
+P102	p1_L34	4	target	53	53	55	55 | 53
+P103	p1_L06	21	target	72	72	71	72 | 71
+P104	p1_L06	18	control	85	85	85	85 | 83
+P105	p1_L04	16	target	60	60	60	60
+P106	p1_L25	9	target	64	64	60	64 | 60
+P107	p1_L29	20	target	10	10	5	5 | 10
+P108	p1_L19	14	target	41	41	=vi	41 | =vi
+P109	p1_L29	27	target	52	52	108	52 | 108
+P110	p1_L26	5	target	85	85	75	85 | 75
+P111	p1_L30	11	target	51	51	-	51
+P112	p1_L31	4	target	32	32	34	34 | 32
+P113	p1_L11	5	target	60	60	60	60
+P114	p1_L17	13	target	248	248	148	248 | 148
+P115	p1_L01	2	target	140	140	110	140 | 110
+P116	p1_L29	18	target	21	-	21	21
+P117	p1_L30	18	target	22	22	-	22
+P118	p1_L24	4	target	35	35	55	55 | 35
+P119	p1_L08	22	target	21	21	22	22 | 21
+P120	p1_L12	23	target	135	135	138	138 | 135
+P121	p1_L29	28	target	40	40	4	4 | 40
+P122	p1_L35	6	target	31	31	71	31 | 71
+P123	p1_L29	25	target	60	60	82	82 | 60
+P124	p1_L24	20	target	54	54	34	34 | 54
+P125	p1_L20	24	target	83	83	73	73 | 83
+P126	p1_L02	6	control	27	27	27	27 | 21
+P127	p1_L07	15	target	150	150	130	150 | 130
+P128	p1_L17	16	target	204	204	204	204
+P129	p1_L38	10	control	146	146	146	146 | 148
+P130	p1_L34	20	control	150	150	150	150 | 130
+P131	p1_L36	19	target	3	3	5	5 | 3
+P132	p1_L17	18	control	150	150	150	156 | 150
+P133	p1_L01	24	control	126	126	126	726 | 126
+P134	p1_L33	19	target	71	71	75	75 | 71
+P135	p1_L29	22	target	75	75	26	26 | 75
+P136	p1_L38	4	target	63	63	65	65 | 63
+P137	p1_L12	22	target	125	125	121	121 | 125
+P138	p1_L30	16	target	26	26	-	26
+P139	p1_L34	18	control	5	5	5	3 | 5
+P140	p1_L01	20	target	2	2	8	2 | 8
+P141	p1_L24	1	target	6	6	=c	=c | 6
+P142	p1_L29	26	target	150	150	127	127 | 150
+P143	p1_L30	15	target	6	6	-	6
+P144	p1_L29	17	target	51	-	51	51
+P145	p1_L17	7	target	38	38	78	78 | 38
+P146	p1_L30	17	target	31	31	-	31
+P147	p1_L10	17	target	29	29	24	24 | 29
+P148	p1_L30	21	target	101	101	-	101
+P149	p1_L30	14	target	5	5	-	5
+P150	p1_L29	16	target	11	-	11	11
+P151	p1_L29	21	target	39	39	6	6 | 39
+P152	p1_L11	14	target	60	60	60	60
+P153	p1_L29	19	target	74	74	140	74 | 140
+P154	p1_L05	1	target	7	7	-	7
+P155	p1_L02	1	target	56	56	56	56
+P156	p1_L03	22	target	21	21	26	21 | 26
+P157	p1_L12	6	target	53	53	83	53 | 83
+P158	p1_L13	1	target	31	31	37	37 | 31
+P159	p1_L11	21	target	30	30	10	30 | 10
+P160	p1_L30	22	target	4	4	-	4
+P161	p1_L24	11	target	214	214	114	114 | 214
+P162	p1_L28	5	target	81	81	81	81
+P163	p1_L31	19	target	85	85	88	85 | 88
+P164	p1_L01	17	target	66	66	66	66
+P165	p1_L32	1	target	15	15	18	18 | 15
+P166	p1_L06	23	target	1	1	8	8 | 1
+P167	p1_L01	21	target	78	78	71	71 | 78
+P168	p1_L03	15	target	31	31	81	81 | 31
+P169	p1_L29	23	target	100	100	31	31 | 100
+P170	p1_L29	24	target	85	85	22	22 | 85
+P171	p1_L30	10	target	12	12	-	12
+P172	p1_L07	8	control	25	25	25	25 | 35
+P173	p1_L13	18	target	60	60	60	60
+P174	p1_L09	2	target	3	3	5	3 | 5
+P175	p1_L38	9	target	135	135	125	125 | 135
+P176	p1_L30	19	target	82	82	-	82
+P177	p1_L30	7	target	127	127	-	127
+P178	p1_L09	13	target	150	150	130	150 | 130
+P179	p1_L01	9	control	63	63	63	63 | 83
+P180	p1_L30	13	target	140	140	-	140
+P181	p1_L01	4	target	62	62	61	61 | 62
+P182	p1_L30	12	target	21	21	-	21
