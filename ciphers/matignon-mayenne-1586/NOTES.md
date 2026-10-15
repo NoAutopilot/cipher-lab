@@ -1424,7 +1424,7 @@ chart (~$1, with the o/c check).
 
 ## MAT-KEY (15 Oct 2026, account-2 worker, LANE DEFAULT-A2-0810-15)
 
-Brief: `.claude/briefs/runs/2026-10-15-ytbiz-default-0810-jobs.md` job MAT-KEY. Times by `date -u`: 09:34-10:0x UTC. PREREG `f91/PREREG-MAT-KEY.md`
+Brief: `.claude/briefs/runs/2026-10-15-ytbiz-default-0810-jobs.md` job MAT-KEY. Times by `date -u`: 09:34-09:4x UTC. PREREG `f91/PREREG-MAT-KEY.md`
 pushed b76bd10c8 before any score; `tools/prior_work.py` exit 4 (plaintext KNOWN from Bourdeau's key and the f.91 margin gloss; LEADs = own claims).
 
 **Image check first (eye, openapi.bnf.fr 3 requests: c97 region + c98 max via `f91/regen_f91.sh`, c131 left half `pct:0,0,52,100` = f.124v;
