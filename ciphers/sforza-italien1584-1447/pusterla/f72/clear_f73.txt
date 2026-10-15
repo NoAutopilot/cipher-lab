@@ -1,0 +1,17 @@
+# BnF italien 1584 f.73 (Gallica btv1b100373864 canvas 70, right page; openapi.bnf.fr region 5150,200,2400,3550 = the src_*_f70_* file
+# beside this one), later-hand clear copy headed "[1447] 7 Mars". Read by SFZP-SIB (15 Oct 2026) by eye from that native region,
+# single reader, accents dropped; the copyist's blank after "et del" marked [ ]. It is the Duke of Milan's letter to Francesco
+# Sforza (closes "Datum Mediolani septimo Martij / Dux Mediolani etcetera"; names "Pietro da Pusterla" in the third person and
+# "Angelo Simoneta vostro secretario"), so it belongs to the Duke's key family (../../duke/), not to Pusterla's.
+Per quatro vostri brevi dato l'uno ad decedocto et li altri ad vintiuno del pasato et cosi per dui brevi ne ha scripto da Pesaro
+Marcolino Barbavara havemo inteso li rasonamenti gli haviti facti et cosi li apareri et ricordi vostri et respondendo ad quele parte
+rechedono resposta dicemo ad la parte de obligarve al Papa et al Re de Ragona ff. che nui siamo contenti piglati quale parte ve parira
+o de obligarve ad la Chiesa et al Re de Ragona in quela forma ve parira per quelo tempo che sono contenti contribuire ad la spesa
+vostra overo che solamente Romagnati obligato ad nui come seti et nui prometeremo ad loro per vui che non li ofendariti et de quelo
+partito piglariti voglati subito avisare el dicto Marcolino perche nui gli havemo commisso che 'l faza et segua quelo partito gli
+avisariti. Per li facti del Duca de Ferrara et del [ ] havemo mandato ad Ferrara Pietro da Pusterla come per altre nostre letere ve
+habiamo scripto et cosi habiamo scripto ad Roma et al Re de Ragona per non perdere li Signori Malatesti ne Roberto. De Angelo Simoneta
+vostro secretario havemo inteso quelo ne scriviti et se sforzaremo satisfare ad la rechiesta vostra. De Iacomino trombeta ve
+respondemo che ve ne compiaceremo volontera et non solamente de lui ma de ogni altra cosa voglati da nui.
+Datum Mediolani septimo Martij
+Dux Mediolani etcetera

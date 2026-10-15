@@ -246,3 +246,52 @@ Read so far: 0 unglossed letters read as text; key passes G1 at 0.768 mean held-
 - [ ] image-check: single label convention across the four slips (owner sorter); second readers done for f.81 and f.42
 - [x] retry: G1 rerun with the reconciled f.42
 Verdict: keep going: 3 internal gaps; cheapest next: f.72/f.73 pair check and two passes as unit 5, ~$3
+
+## Units 5-6 pair check: f.72/f.73 and f.75/f.74 are not Pusterla letters (SFZP-SIB, account 2, 15 Oct 2026, 02:56-03:1x UTC by date -u)
+
+Worker SFZP-SIB (Opus) for LANE DEFAULT-account-2-20261015-0209, brief `.claude/briefs/runs/2026-10-15-ytbiz-default-0209-jobs.md`
+(SFZP-SIB). Check 1: no later section of this NOTES.md or ../../sforza-pusterla-1447-f13/NOTES.md had run units 5-6, there is no AUDIT.md
+in either folder, and the last 60 ROOM lines carried no other live claim. Step (1) of each unit (pair check) only: one eye check of
+the canvases at 1400 px. Both pairs hold, but neither is a Pusterla letter, so steps (2)-(4) (crops for a pass, two blind passes,
+reconciliation, G1) were not run. key.tsv, gate_g1.tsv and f.13's lattice numbers are unchanged; no G1 or lattice rerun (nothing to pool).
+
+- **f.72 (c69 right) / f.73 (c70 right).** f.72 is a 14-line cipher slip headed "[1447] 7 Mars"; f.73 is a later-hand clear text with
+  the same header (read by eye, `f72/clear_f73.txt`). f.73 closes "Datum Mediolani septimo Martij / Dux Mediolani etcetera", says
+  "havemo mandato ad Ferrara Pietro da Pusterla" (Pusterla in the third person) and calls Angelo Simonetta "vostro secretario": it is
+  **the Duke of Milan's letter to Francesco Sforza**, and f.72 is its cipher (pairing by date and length, inferred; not checked sign by
+  sign). The key family is therefore the Duke's (`../duke/`, target `../../sforza-duke-1447-f15/`, whose G1 FAILs on two units), not this one.
+  The f.72 slip also writes groups that Pusterla's slips do not ("par", "per", a doubly-barred g) as far as the 1600 px view shows.
+- **f.75 (c72 right, "Filza 1447", "8 Mars") / f.74 (c71 right -> c72 left).** f.75 opens in clear "Illustris ac excelse domine
+  honorandissime", then cipher, then clear "Et da poy alchune parole generale dicte", which matches f.74's opening ("Da poi ce scripsi la
+  electione del novo Papa ... et da poy alchune parole generale dicte"). f.74 closes "Ex Roma die octavo Martij 1447 / per Servitorem
+  devotum Marcolinum de Barbavarijs / Illustri d. Francisco Sfortie": **Marcolino Barbavara's letter from Rome**, a different key family
+  (../NOTES.md section 2: Marcolino's f.143 set looks unlike the Pusterla/Duke family; not compared sign by sign here). Rome letters
+  of 1447 fall in Battioni's *Carteggio degli oratori sforzeschi alla corte pontificia* I (from 27 Feb 1447), unread (../NOTES.md line 2).
+- **f.77 / f.76** (unit 7, not in this brief): f.76 (c73 right) is a later-hand clear copy headed "... mars [1447]" opening "Hogi son
+  undeci di che giorni qua ... scripto a V.S.", naming the Duke of Ferrara; its sender was not read here. It is the one remaining
+  candidate Pusterla pair in this run of folios; pair and sender unchecked.
+
+Crops: `python3 tools/iiif_lines.py --ark btv1b100373864 --canvas 69 --iiif-host openapi --region 3750,180,3650,1450 --out ciphers/sforza-italien1584-1447/pusterla/f72 --prefix f72 --overlap 0 --max-width 1500 --dry-run`
+(source region committed as `f72/src_image_v3_..._f69_3750_180_3650_1450.jpg`), then `--image <that file> --out <scratch> --prefix f72
+--overlap 0 --max-width 1300 --deskew-region --debug` (fitted +3.05 deg, 15 bands: L01 the "7 Mars" header, L02-L15 the 14 cipher lines; overlay
+and four crops eye-checked; crops in scratch, not committed, regenerate with the command). f.73's region `--canvas 70 --region
+5150,200,2400,3550` is committed beside it for a Duke-family worker.
+
+Requests: gallica.bnf.fr/iiif 2 (both HTTP 403, host dropped), openapi.bnf.fr 8 (5 overview canvases c69-c73 at 1400 px, 1 info.json,
+2 native regions), one at a time >= 2 s apart; no other host.
+
+## Remaining gaps (SFZP-SIB, 15 Oct 2026; supersedes SFZ-F42's list)
+Read so far: 0 unglossed letters read as text; key passes G1 at 0.768 mean held-out accuracy over 4 glossed units (f.81 and f.42 two readers each)
+- one sign-label convention across the four key slips - blocker: not-attempted; f.71 and f.67 reconcilers settled T=/b- opposite ways; f.81 and f.42 still split T=/b-, b/b-, q=/go, n/y; next: owner sign sorter on those shapes (focus pairs from f71/rec, f67/rec, f81rec, f42rec disagreements.tsv), relabel, rerun g1p.py, ~$2 plus owner time
+- f.77 with copy f.76 as unit 5 - blocker: not-attempted; f.72/f.73 is the Duke's letter and f.75/f.74 Marcolino's (SFZP-SIB), so f.77/f.76 is the only sibling left in c64-c74; next: read f.76's sender and pair-check f.77 on the c73/c74 canvases, then two passes + reconciliation if it is Pusterla's, ~$0.5 + ~$3
+- Cerioni 1970 / ASMi cipher registers for a period Pusterla key - blocker: not-attempted; no period key located yet; next: a key-hunt row for the lane, ~$2
+
+## Escalation (SFZP-SIB, 15 Oct 2026)
+- [x] siblings: f.81/f.80, f.42/f.41, f.71/Osio CCCXCI, f.67/f.66 used; f.72/f.73 (Duke) and f.75/f.74 (Marcolino) pair-checked and excluded; f.77/f.76 remains
+- [x] clear-pages: later-hand copies f.80, f.41, f.66 used; Osio's print for f.71
+- [ ] known-keys: Cerioni 1970 not checked
+- [x] print: Osio III searched (f.71's text printed; f.73's distinctive words absent from Osio III's OCR, grep 15 Oct 2026)
+- [x] key-rebuild: key.tsv rebuilt from 4 units (f.81 and f.42 two readers), G1 PASS 0.768
+- [ ] image-check: single label convention across the four slips (owner sorter); second readers done for f.81 and f.42
+- [x] retry: G1 rerun with the reconciled f.42
+Verdict: keep going: 3 internal gaps; cheapest next: f.76 sender read and f.77/f.76 pair check, ~$0.5
