@@ -9572,3 +9572,8 @@ workers over cap, worst NO70-WORDS 1.6x (three vision units + a screen in a 2.5 
   number above gate, PASS withheld until the r sample is complete; VIV-GSPLIT3C (last 66 r tiles + the f.191r step, cap 4.5) spawned. Step-1
   alphabet page for ink 63 published to the owner: https://claude.ai/artifact/1X2MSRNQTeNZNEXB76RZ1u (PREREG consuming test: err_true on the
   three truth items before/after relabelling by his piles; then PREREG-VIVPACKET4 exemplars).
+
+- **15 Oct 2026 09:0x UTC (VIV-KEYSTONE, appended):** VIV-GSPLIT3C: the hand-cut g-split passes its registered gate on the complete sample
+  (N_f 18 / N_r 121: recall 0.833, precision 0.750, F1 0.789 vs null p99 0.400) -- the first machine instrument on this target to pass a gate
+  at full N. Not yet a key row: VIV-GSPLIT3D runs the f.191r step (hand-cut g tiles, override run, strict and letter-S), then a separate
+  verifier (AUDIT 8) decides a row for the f-sign under label g. Owner step-1 page unanswered so far.

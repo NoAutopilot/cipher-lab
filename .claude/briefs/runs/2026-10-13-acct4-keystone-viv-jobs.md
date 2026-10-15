@@ -518,3 +518,23 @@ FAIL -> log; the family is [retired] for this instrument absent new material. 5.
 66 tiles with checks + 2 for f.191r/contact sheets); cap 4.5. 6. NOTES "## VIV-GSPLIT3C (<date -u>)", HYPOTHESES row, requests per host,
 `f191.py --check` passes, shrink guard, commit by path, pull --rebase, push; done line: N_r reached, gate numbers, verdict, f.191r strict run
 before/after if run.
+
+## JOB VIV-GSPLIT3D (wave 9d, 15 Oct 2026 09:0x UTC by date -u; account-4 parent) -- the f.191r step of the hand-cut g-split (licensed by VIV-GSPLIT3C's registered PASS)
+
+Model: Opus 5.5. Cap USD 3.5 (Opus floor 2.5). Box 40 minutes from the claim; stop before any unit that would cross 80% of cap or box.
+Why: PREREG-VIVGSPLIT3 (+ Addenda A, B) passed on the complete hand-cut sample (NOTES "VIV-GSPLIT3C": recall 0.833, precision 0.750, F1 0.789
+vs null 0.400). Its step 4 -- apply the five-leaf model to f.191r's g tokens -- is licensed and was not run (looks exhausted). This is that
+step only. Measurement only: no key.tsv, reading or status.json edit; the verifier decides any row.
+Steps: 1. room --start, claim; PREREG-VIVGSPLIT3 Addendum C pushed first: this job runs step 4 exactly as VIV-GSPLIT Addendum A registered it,
+on HAND-CUT f.191r g tiles; the decision stays s.5 of PREREG-VIVPACKET3 (a stretch >= 42 all-H with no liberty -> verifier; else logged); (b)
+letter-S is reported as what a verified key row WOULD give, never as the result. 2. Hand-cut the f.191r g tiles: the 116 g tokens of
+tx/viv63_f191/rec.tsv (the 28 the map tiled + the rest), by eye on the VIV-F191 line crops (regenerate with the committed command; openapi
+take/release, <= 3 requests), 2 looks per 20 tiles with check, logged in tx/vivgsplit3/boxes_handcut_f191r.tsv (whole/unsure/none); cut as
+many as the looks allow, g tokens on L08-L16 and L29-L32 FIRST (the lines that carry the best runs), and say how many were cut. 3. Classify
+with the full five-leaf hand-cut model (gsplit.py, the 3C material); write tx/sorter_f191/gsplit_override_2026-10-15.tsv (owner_override
+format, new_sign 'gf', action classifier-f, plus a `letter` column = f) for predicted-f positions; `f191.py --override ... --tag gsplit3
+--stats` (a) strict (gf outside the key -> U) and (b) with the letter column (extend apply_override minimally: new_sign not in key + letter
+given -> that letter, grade 'S'; report the longest H-or-S run beside the strict one). 4. Price: vision calls: 7 x USD 0.45 = 3.15 (about 6
+looks for 60 tiles with checks + 1 contact sheet); cap 3.5. 5. NOTES "## VIV-GSPLIT3D (<date -u>)": tiles cut, positions predicted f (list by
+line:pos with the current sign and letter), (a) and (b) tables with the controls, requests per host; HYPOTHESES row; `f191.py --check`
+passes; shrink guard; commit by path, pull --rebase, push; done line: predicted-f count first, then strict run before/after, then (b).
