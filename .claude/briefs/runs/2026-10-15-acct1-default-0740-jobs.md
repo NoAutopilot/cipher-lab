@@ -102,3 +102,13 @@ ELEC-357's next: Kluckhohn RTA J.R. I nr. 357 printed text (pp.813-814 and the n
 images, not the OCR) against the ~7-8 name signs on fr.3897 ff.116r-117r (c142 right, c143). Pre-register in NOTES the pairing rule (a sign
 pairs with a printed name only where the clear context on both sides matches; >= 2 occurrences per sign before any C grade; a shuffled-name
 control). Value-free crops. Do not start the nr. 383 bisection. NOTES "## ELEC-PAIR", Verdict.
+
+## Wave 3 result (09:5x UTC): MCC-GREGG 3.81 D, ELEC-PAIR 3.10 D, MONL-K04 4.51 D (sort only, L21-L25 not started).
+
+## Wave 4 (09:5x UTC 15 Oct, last job)
+
+### MONL-CTL (Opus, cap 3, box 50 min, disk; openapi.bnf.fr <= 2 only to regenerate crops): fr4735-monluc-lansac-poland-1573 in-band K04-facing-d control sort
+Verdict: "the in-band K04-facing-d control sort with the 4 unsettled leads (~$1.5; reverts MONL-K04's 3 relabels if the d-facing K04s also go K12)".
+Read MONL-K04 and its PREREG 85b300936 first; append a PREREG addendum before any call naming the control tiles (in-band K04s that face d) and the
+revert rule exactly as MONL-K04 wrote it. Value-blind, <= 12 tiles per call, 2 calls at most. Apply or revert per the rule, then align_c268.py --check
+and the decode/score checks. Do not start L21-L25. NOTES "## MONL-CTL", gaps + Verdict, gaps_check.
