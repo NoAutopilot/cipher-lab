@@ -51,3 +51,36 @@ re-checked for the Ebar form (~3 requests at 2400 px, record regen in images/man
 
 Wave 1 spawned 12:43 UTC: C1161-S275 session_01DZ396T7SNCopDQYgyjzMpE, ELEC-POOL session_018ivXv18LBWy8VERLakdFPt, MONL-K04 session_01BLJnJAjibyEny4sN852o2U,
 MAT-OSPLIT session_01TSeH8rDaQSB6d7UbeTGzcd, BAL-65G session_01BWPzuRzQAtJaPzPcwmkTeY (all Opus; caps 6/4.5/3/4/3 = 20.5).
+
+## Wave 1 result (13:0x UTC): C1161-S275 7.99 D (Sl=n accept +1113.2, M), ELEC-POOL 2.80 N (pool empty), MONL-K04 1.98 D (lead only), MAT-OSPLIT
+3.92 N (split FAIL), BAL-65G 3.92 N. Workers 20.62. clair1161 held this wave (N0 face text; known-text share).
+
+## Wave 2 (13:1x UTC 15 Oct)
+Intake gate 13:07 UTC: lodewijk-van-nassau-1573-74 pass (the other four passed at 12:4x).
+
+### MONL-K14 (Opus, cap 4.5, box 75 min; openapi.bnf.fr <= 12, ROOM take/release): fr4735-monluc-lansac-poland-1573 K14/K34-for-s, K62-for-m --try, then K04|K12 + K40/K45 sort
+Latest Verdict (MONL-K04): (1) the K14/K34-for-s and K62-for-m pseudo-code --try with controls (disk only, ~0.5 each; same design as MONL-K04's
+PREREG d15cebaf1: n-facing target, power control, wrong-facing control); (2) then, if >= 40% cap left, regen_monll11/16/21.sh (fetch only what
+those scripts name, scratch only) and the K04|K12 + K40/K45 value-blind sort in one job (one subagent call per <= 40 tiles, crop paths only), ~2.
+Leads only unless --try accepts with its controls passed; no key edit otherwise.
+
+### BAL-65L (Opus, cap 3.5, box 60 min; openapi.bnf.fr <= 12, ROOM take/release): baluze167-davaux-1637 plain 65 below line 9 on 169 c179/c180/c183/c184/c187, then 168/170
+Latest Verdict (BAL-65G): c179, c180, c183, c184, c187 below line 9 line by line (on BAL-169's fetch list, ~1), then, if none and >= 40% cap left,
+the same-hand glossed letters in Baluze 168/170 for a plain 65 (~1.5; find them from NOTES.md/the catalogue first, one region per canvas). If a
+glossed plain 65 is found: --try at every occurrence with its control before anything enters key.tsv.
+
+### LVN-4610H (Opus, cap 3, box 60 min, disk only): lodewijk-van-nassau-1573-74 the rest of 4610's H tokens ending in 1 or 8
+Latest Verdict: "next: the rest of 4610's H tokens ending in 1 or 8, ~$1.5" (the flat-foot 2 confusion LVN-K15 found on p1_L04/L09). Read LVN-K15,
+LVN-EYE and VER-LVN3 first. Eye each token on the 300 dpi line crops (crop step pasted, tools/iiif_lines.py --image), ruling kept/changed/undecided
+per token, changes through the folder's corrections path + decode_key.py --check; carry every grade change into AUDIT.md (rule 10). Units: tokens in
+batches of ~15 at ~0.4 + 1 start-up.
+
+### ELEC-VERSO (Opus, cap 4, box 75 min; gallica/openapi.bnf.fr <= 10, ROOM take/release): fr5761-election-1519 Coblenz versos ff.160-165 + f.51r-53r key compare
+Verdict (ELEC-POOL) next (1)-(2): (1) image check of the versos of ff.160-165 at 1000 px (~6 canvases, ~1.5) for name signs Kluckhohn did not
+flag; (2) compare oXo, Phi, Hbar, Lfo with the f.51r-53r keys (c105-c109 on disk, ~1). Then, only if >= 30% cap left, (3) fr.3897 Joachim items
+36-38 for second witnesses (ELEC-PAIR next 3). All M unless a registered pairing with a control that can vary on the pairing axis passes.
+
+### MAT-O3X (Opus, cap 3, box 60 min, disk only; gallica <= 6 if crops missing): matignon-mayenne-1586 o split re-sort on 3x per-token crops
+MAT-OSPLIT next: 3x per-token crops of the 78 f.91 o tokens (fix MAT-OSPLIT's 6 X join errors first), blind re-sort (crop paths only, no values),
+re-run mat_osplit.py under the SAME PREREG ee2c00674 gate. This is the second attempt at this split: if it fails again, log it and hand the o
+split to the owner's sign sorter as the next step (rule 3: no third machine attempt).
