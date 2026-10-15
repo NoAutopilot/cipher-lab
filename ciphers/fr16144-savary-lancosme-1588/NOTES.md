@@ -504,3 +504,43 @@ Read so far: 0 of ~5,000 open signs on L25 (c370-c375); L14 c251-252 gloss two-p
 - [n/a] retry: no host failed
 Verdict: keep going: 1 internal gap beside 3 outside blockers; cheapest next: c251 gloss line 29 + firmer 17-28 on one-line crops, ~$2.5; the alignment waits on the owner's sort
 gaps_check (SAV-GLOSS2): `OK keep-going fr16144-savary-lancosme-1588: keep going: 1 internal gap(s), 1 step(s) untried`
+
+## SAV-L29: c251 gloss line 29 + lines 17-28 on one-line crops (LANE DEFAULT-A2-1410-15, account 2, worker SAV-L29, 15 Oct 2026 14:27-14:4x UTC by date -u)
+Brief: .claude/briefs/runs/2026-10-15-ytbiz-default-1410-jobs.md, job SAV-L29 (SAV-GLOSS2's named next). PREREG `savt/PREREG-SAV-L29.md`
+pushed before the image was fetched. prior_work.py (transcribe step, offline) exit 4: LEAD = this job's own ROOM claim; LOOK 2-leaf and
+UNCHECKED-NET rows not cleared here. openapi.bnf.fr 1 request (of <= 3; c251 pct:0,59,30,21, 200, 1475x1488), scratch only; URL and regen in
+`images/manifest.json` key `sav_gloss_regions`. Alignment **not** run (waits on the owner's sort).
+**Crops (command run before the first subagent call):** `python3 tools/iiif_lines.py --image r251u.jpg --out c251 --prefix g251c
+--lines-per-crop 1 --overlap 30 --debug` -> "region 1475x1488, 13 lines, 13 bands x 1 segments; pitch 95 ... wrote 13 crops"; debug overlay
+checked: one band per gloss line, L01 = gloss line 17 ("Comme ..."), L13 = gloss line 29 (full width, "... saisist ... luy ...").
+**Passes:** A3 (top-down) and B3 (bottom-up), one blind Sonnet subagent call each on the same 13 crops, no prior reading shown
+(`savt/gloss_c251_passA3.tsv`, `..._passB3.tsv`; both readers marked almost every line low confidence); reconciled by this Opus session
+against the region and two zoomed crops (L11, L13), appended to `savt/gloss_c251_c252_reconciled.tsv` as rows `17L29`-`29L29` with a note per
+line (SAV-GLOSS2's rows 17-28 kept). 3 units (2 passes + 1 reconcile), as briefed.
+**Result (prereg "firmer" rule: one more agreed content word than SAV-GLOSS2's row):** line 29 is now two-pass (A+B): "Ca[..]? se? saisist
+de? luy Il eust fa[..]" (both passes: "saisist", "luy", "eust fa[..]"; the "se"/"de" are the reconciler's reading of the clerk's sign both
+passes gave as "&"; first word not settled). Of lines 17-28, **1 of 12 is firmer** by the rule: line 20 "crainte follem[en]t? quil a faict"
+(A crainte, B certaintes). Line 25 moves from pass-A-only to A+B but on function words only. The other 10 lines repeat SAV-GLOSS2's
+agreements or change only uncertain words (line 23's SAV-GLOSS2 "filles? telles" is not supported by either new pass; line 24 the reconciler
+reads "sepmaines?", grade R). Every word grade M (eye read of a period gloss, no key applied). The one-line crops did not turn lines 17-28 into
+continuous sentences: the limit is the hand, not the crop height.
+**Report vs SAV-L14 reader B (not a gate):** reader B's "se saisist de luy" on L29 agrees with the reconciled line 29; reader B's "pour sa
+mere" (L27) is supported only as "pour la mer[e]?" (B3 "mer", A3 "mine?").
+Not done: alignment, any key edit, any print search. Where not found: no continuous clause in lines 17-28 from either blind pass.
+
+## Remaining gaps (finish-or-blocker pass, 15 Oct 2026, SAV-L29)
+Read so far: 0 of ~5,000 open signs on L25 (c370-c375); L14 c251-252 gloss two-pass for c251 gloss lines 1-29 (17-28 weak, one-line crops tried) and c252 lines 1-16 with right edge (grade M).
+- settled alphabet for c370-c375 + c380 - blocker: waiting-on the account-3 orchestrator's reply; the sorter sheet needs the owner's sort (publish sorter/index.html and file the ASKS row, flagged in ROOM.md 3 Oct 2026)
+- 29 Apr 1587 duplicata c370-c375, ~5,000 signs - blocker: waiting-on the account-3 orchestrator's reply; the owner sort of sorter/index.html (flagged in ROOM.md 3 Oct 2026); next after the sort: rerun `savt/align.py` on settled labels with c380 and the c251-252 gloss as plain sides (same PREREG), ~$4
+- the duplicata's original (fr.17020 ff.372-382 inventory) - blocker: needs-physical-access; fr.17020 is not digitised (RUN2-SAV)
+
+## Escalation (15 Oct 2026, SAV-L29)
+- [x] siblings: 17 sibling cipher letters with decipherments located (survey.tsv); L14 c251-252 glossed (30 Apr 1586)
+- [x] clear-pages: c380 gloss (A3V3-SAVT); c251 gloss lines 1-29 and c252 lines 1-16 each two-pass (SAV-GLOSS, SAV-GLOSS2, SAV-L29)
+- [x] known-keys: Tomokiyo's 1588 table tested on c380 against the print (PASS both statistics, weak signal)
+- [x] print: Charrière IV whole volume; L14's cipher span not in print (SAV-L14)
+- [retired] key-rebuild: hard-EM gloss alignment on SV-SORT piles (savt/recover.py) failed its held-out; reopens only with the settled alphabet (new material)
+- [x] image-check: c251 gloss lines 17-29 read on 3-line and on one-line crops (SAV-GLOSS2, SAV-L29); a further pass of the same kind is not proposed (the hand, not the crop, limits it)
+- [n/a] retry: no host failed
+Verdict: parked: every remaining gap is blocked from outside the session (the owner's sort; physical access to fr.17020); the alignment with c380 and the c251-252 gloss as plain sides runs after the sort
+gaps_check (SAV-L29): `OK parked fr16144-savary-lancosme-1588: parked: 3 gap(s), all outside blockers`

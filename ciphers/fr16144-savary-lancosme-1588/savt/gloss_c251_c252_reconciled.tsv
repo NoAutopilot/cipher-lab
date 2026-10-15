@@ -69,3 +69,17 @@ c252	13r	or [..] [..] ben[..]	A+B
 c252	14r	la craincte [..] est	A+B
 c252	15r	reduict & le sang	A+B
 c252	16r	[..] meschans? & soy auoi[r]?	A+B
+# SAV-L29 reconciliation (Opus, this job's session, 15 Oct 2026) of blind passes A3 and B3 (gloss_c251_pass{A3,B3}.tsv, one-line crops of c251 pct:0,59,30,21) against the region; c251 gloss lines 17-29 rows below supersede SAV-GLOSS2's 17-28 only where marked firmer, both kept. Every word grade M. 4th column: note.
+c251	17L29	Comme [..] reuolt[..]? de [..]	A+B	reuolt- both passes (A veroulthly?, B reuoltez?); not firmer
+c251	18L29	[..] & cheual qui bon[..]	A+B	as SAV-GLOSS2; first word unsettled (A grace?, B grhu); not firmer
+c251	19L29	Il est? luy a donner sur? grand	A+B	A Il est luy, B Puis; 'sur' A + SAV-GLOSS2; not firmer (content word grand already agreed)
+c251	20L29	crainte follem[en]t? quil a faict	A+B	firmer: 'crainte' A crainte, B certaintes; 'follem[en]t' A folleme[nt], B follusi
+c251	21L29	scauoir? la[..] qui est	A+B	A sçavoir laquelle, B suyuoir faonde; as SAV-GLOSS2; not firmer
+c251	22L29	rampes? a la Cour de [..]	A+B	A campes?, B ramener; as SAV-GLOSS2; not firmer
+c251	23L29	f[..]? [..] Ja peu t[..]	A+B	A faire [..] ja peu tenu, B faire teste Ja peu tedm; 'peu' agreed (function word); SAV-GLOSS2's filles?/telles not supported; not firmer
+c251	24L29	s[..]maines? [..] parle? o[..]	A+B	A [..]mainer? parle ou, B sopmaimes paole oy; reconciler: sepmaines? (R); not firmer
+c251	25L29	point que[..] [..] [..]	A+B	A point quelle, B point gerre; was pass A only in SAV-GLOSS2; function words only, not firmer
+c251	26L29	& d[..] M^r? Ce[..] mes[..]	A+B	A & dit Mr? Cesle messire, B & Duc Mr Cesar? mesmes?; 'Mr' agreed (title); not counted firmer
+c251	27L29	pour la mer[e]? [..] [..]	A+B	A pour la mine?, B pour la mer; reconciler reads mer/mere, final word Af[..] uncertain; not firmer
+c251	28L29	& soy fils tell[..]? & loy? pens[..]	A+B	B soy fils telluyst & loy punsber, A & sy? fils; as SAV-GLOSS2; not firmer
+c251	29L29	Ca[..]? se? saisist de? luy Il eust fa[..]	A+B	line 29 now two-pass: A Cadmet? & saisist & luy il eust fa, B Cadmeus? & saisist & luy Jl eust fa; '&' before saisist and luy read by the reconciler as se/de (the clerk's d-loop); first word Ca[..] not settled

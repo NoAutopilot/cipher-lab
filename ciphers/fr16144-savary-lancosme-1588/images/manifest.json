@@ -11779,6 +11779,19 @@
 },
 {
 "regen": "as above; crops: python3 tools/iiif_lines.py --image r251t.jpg --out DIR --prefix g251b --lines-per-crop 3 --overlap 40 --debug (c252: --prefix g252b)"
+},
+{
+"url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060974c/f251/pct:0,59,30,21/max/0/default.jpg",
+"date": "15 Oct 2026",
+"size": [
+1475,
+1488
+],
+"committed": false,
+"use": "c251 margin gloss lines 17-29, one-line crops (SAV-L29)"
+},
+{
+"regen": "curl -A \"cipher-lab research script (contact via repository)\" -o r251u.jpg <url>; python3 tools/iiif_lines.py --image r251u.jpg --out DIR --prefix g251c --lines-per-crop 1 --overlap 30 --debug (13 crops, L01 = gloss line 17)"
 }
 ]
 }
