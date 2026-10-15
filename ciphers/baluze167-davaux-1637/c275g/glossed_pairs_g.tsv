@@ -147,3 +147,4 @@ R24	293	le fort	2	23'	fo	E293
 R24	293	le fort	3	6	r	E293
 R24	293	le fort	4	s:Ebar	-	E293
 R24	293	le fort	5	s:u4	t	E293
+# BAL-302 (15 Oct 2026): c276 R16 E seen only on the 1000 px locator (max region pct:50,92,18,7 missed it): flat-topped capital, long top bar, stem, short stroke right of stem, flat foot; no open bowls (not epsilon by eye at ~0.22 native), Ebar's left-projecting bar and foot loop not resolvable; label stays s:E, unit '-'; next pct:53,78.5,8,5/max.

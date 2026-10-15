@@ -3,4 +3,4 @@
 # stays reproducible. Image: openapi.bnf.fr btv1b9001488b f298 region 3050,3380,950,330 at max (sha1 1d100f36c7702eeebd7e6987e4df8f510a4f9bc9, scratch only).
 canvas	run	gloss	pos	was	now	unit	evidence
 298	c298b	le Masserati	4	65?	65'	ra	dark stroke rising right above the 6/5 join, ~10 px gap at native from the 6's head hairline (pixel map), ink tone as the numerals, not the grey gloss: separate acute
-302	c302a	diray	2	65?	65?	ra	not fetched at max (request cap 4 reached); 1000 px locator only, not settleable
+302	c302a	diray	2	65?	65?	ra	not fetched at max (request cap 4 reached); 1000 px locator only, not settleable; BAL-302 (15 Oct): max region pct:14,40,17,5 missed the 65 (misread locator coordinates); on the 1000 px locator the stroke runs down-left from the gloss y of 'diray' to the 6/5 join and looks continuous with it (gloss if it holds at native); still 65?, next pct:37,40,10,5/max
