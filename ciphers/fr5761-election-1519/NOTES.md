@@ -932,3 +932,52 @@ shuffled-name control cannot license C at 5 slots. Next: (1) Kluckhohn p.857 (n8
 (~0.5); (2) a PREREG'd pooled pairing across the Coblenz-period fr.5761 letters Kluckhohn prints "die Namen in Chiffren" (find them by his
 source lines, archive.org full-text "5761"), to bring oXo, Phi, Hbar, Lfo to >= 3 occurrences each (~2.5); (3) image-to-image check of
 oXo against the f.110 Catholicquer crop if look.tsv has it on disk (~0.5).
+
+## ELEC-POOL: nr. 383 end, the Kluckhohn pool, and the four signs against the f.53v key (worker ELEC-POOL, LANE DEFAULT-A4-1236-15, account 4, 15 Oct 2026, 12:45-13:0x UTC by date -u)
+
+Brief: ELEC-KLU's next (1)-(3). PREREG `elecpool/PREREG-ELEC-POOL.md` (pushed 0164877ec before the step (3) comparison). Page images, not a
+transcription (rule 2); search results only (rule 10). key.tsv unchanged; elecpair383/ grades unchanged; status open.
+- **(1) Kluckhohn p.857 against f.166v l.12-end and f.167r: no further name sign.** p.857 (archive.org n865) prints the close: Suisses,
+  pape, roy d'Angleterre (twice), le trésorier Babou, "A Convalence, le 29e jour de juing". On the manuscript f.166v (c336, native) runs to
+  "sommes d'aviz que devez" with "Souisses", "pappe", "roy d'angl[eterre]" in letters; the letter ends at the head of **f.167r (c337)**:
+  "entretenir ledit roy d'angleterre ... le tresorier babou ung de ses jours ... De Convalence le [xxix?] jour de juing. Signe d'Albret,
+  Bonnyvet, Guillart" (old foliation 162), all in letters. So nr. 383 runs f.166r (last 4 lines) - f.167r (6 lines) and its name signs are
+  the five ELEC-KLU slots only (oXo x2, Phi, Hbar, Lfo). Also seen: the 7-like mark stands before "lesquelles" twice on f.166r (end of letter
+  l.1 "hier [7]" / l.2 "lesquelles", and l.4 after Hbar), both printed "par lesquelles", which supports ELEC-KLU's par-abbreviation reading (M).
+- **(2) Pooled pairing: not run; the pool is empty on Kluckhohn's own source lines.** The volume's full text (`_djvu.txt`, 1 request) has 46
+  fr.5761 source references; "die Namen in Chiffren" (or any Chiffre/Namen remark) stands on **exactly one**, nr. 383 (OCR "VGL"). The other
+  fr.5761 letters of May-July 1519 are marked "Cop." only (e.g. nr. 290, 12 May; the 24 May royal reply; nr. 377, Bonnivet to the Palatine,
+  "Cop. der Übersetzung"). One p.812 remark (Francis I to Orval and Guillart, 17 June) says they are to send the admiral "eine chiffrierte Copie
+  dieses Briefes": that ciphered copy is not cited as being in fr.5761. Searched variants: chiff, chiffr, iffren, iffern, Namen, OCR "Xamen".
+  This is OCR (the two shelfmarks OCR mangled were "Von." and "VGL", but the remark beside them survived), so it is a search result on the
+  print, not an image census of fr.5761. With nr. 383 the only member, a pooled control would re-score ELEC-KLU's 5 slots and could not differ
+  from it (rule 3 non-test), so no score was computed. oXo, Phi, Hbar, Lfo stay at 2/1/1/1 occurrences, M.
+- **(3) Image-to-image against the f.53v key (images/canvas110_folio53v.jpg, on disk; "Maistre [Jehan] de Bourdeaulx devers le marquis de
+  Brandebourg"), under the PREREG's five-feature rule** (stroke count, closed loops, crossings, orientation, detached marks), target crops at
+  native size from c335/c336 (scratch only):
+  | nr. 383 sign (printed name) | features | key row of the same name | result | other rows >= 4/5 |
+  |---|---|---|---|---|
+  | oXo (roy catholicque) x2 | horizontal stroke, closed circle at each end, crossed by an X; 3 strokes, 2 attached loops, crossing, horizontal, no detached mark | 11 Catholicquer: vertical cross with a closed circle at the foot and two small detached circles above the bar | **no match** (1/5: crossing) | 7 [Coulo]nne (horizontal stroke, circle at one end, crossed anchor at the other): partial 4/5 |
+  | Phi (Brandebourg) | closed circle on a vertical stroke that passes through it; 2 strokes, 1 loop, crossing, vertical, none detached | 5 Brandebourg: "4"-shape, closed triangle on a vertical stroke | **match** on the five features (5/5); the head is round here, angular in the key, which the rule does not score | 6 Saxe (circle on a horizontal dash): partial 4/5 (orientation) |
+  | Hbar (Treves) | two verticals, cross-bar, descending hook, small superscript marks; ~4 strokes, 0 loops, crossing, vertical, detached marks | 3 Treves: "6"-bowl joined to an f/long-s with a flourish | **no match** (2/5) | 4 Maguence (barred H): partial 4/5; 10 Francisme (H with small circles above): partial 4/5 |
+  | Lfo (conte Palatin) | tall stroke with a foot, f-like stroke with cross-bar and a hook, small detached circle above; 3 strokes, 1 loop, crossing, vertical, detached mark | 2 Palatin: looped d/ampersand-like sign | **no match** (2/5) | none |
+  So on the f.53v key one of four nr. 383 signs agrees with its own name's row on the rule's features (Phi ~ Brandebourg), three do not, and
+  oXo is not the f.53v Catholicquer sign. ELEC-KLU's "oXo matches the f.110 Catholicquer description" was a description match only; image to
+  image it fails. All M (one reader, the key at 1500 px, copy and key possibly in different hands); no conflict under rule 3 (no other row is a
+  full match). Post hoc, outside the PREREG, not graded: the f.50v key (Cordier, crops f104_L03/04/06/12 on disk) has Palatin #, Treves a small
+  loop on a hooked stem, Brandebourg a Z-like sign, Catholicque a row of small loops; none of the four nr. 383 signs is one of these by eye.
+  The nr. 383 copy's name signs therefore do not follow one fr.5761 ff.50-53 key as a set (eight keys on file, none addressed to Orval, Bonnivet
+  and Guillart; ff.51r-53r keys not compared).
+- prior_work.py: not re-run; ELEC-KLU's run for this unit (exit 4, generic holds only) covers the same leaves, and no new leaf beyond f.167r
+  was read.
+- Requests: archive.org 2 (`_djvu.txt`, n865 w1800), openapi.bnf.fr 3 (c336, c335, c337 full/max), all 200, no 403/429. Images in the session
+  scratchpad only, none in git. Regen: `https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b52510561g/f33{5,6,7}/full/max/0/default.jpg`,
+  `https://archive.org/download/bub_gb_0gFoAAAAMAAJ/page/n865_w1800.jpg`. Crops (native px): c336 oXo x 650-950 y 180-320, Lfo x 1850-2150
+  y 1560-1760; c335 Phi and Hbar x 860-1260 y 2780-2950.
+
+**Verdict (ELEC-POOL, 15 Oct 2026):** open, unchanged. Nr. 383 is f.166r-f.167r and has exactly five name-sign slots; Kluckhohn flags no other
+fr.5761 letter as having names in cipher, so the pooled pairing has no second member and C for oXo, Phi, Hbar, Lfo is not reachable from the
+print. Image to image, only Phi agrees with its row on the f.53v Brandebourg key; oXo is not that key's Catholicquer. Next: (1) image check of
+the other section 3(b) Coblenz replies (14 May-29 June, before f.166r; ELEC-WALK read rectos only) for name signs Kluckhohn did not flag,
+starting with the versos of ff.160-165 at 1000 px (~6 canvases, ~1.5); (2) compare the four signs with the f.51r-53r keys (c105-c109 on
+disk, ~1); (3) fr.3897's other Joachim items (36-38, 62, 64-65, 73) for second witnesses of nr. 357's M signs (ELEC-PAIR next 3).
