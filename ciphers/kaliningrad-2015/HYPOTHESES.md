@@ -1298,3 +1298,36 @@ did not move together toward the gate (mean 0.322 -> 0.291), so by the pre-regis
 column order and key) at N 1066**, logged "untested-by-this-tool", not refuted. A third attempt needs a different instrument: the
 two-stage one (width, then column order, fixed first from the sign-adjacency statistic -- this run says the width is the easy
 part -- then the homophonic anneal on the untransposed stream, which reads a width-1 control at 0.99). Not run here.
+
+### PREREG-KAL-2ST (15 Oct 2026, 02:51 UTC by date -u, before any scored run): two-stage columnar + homophonic instrument
+
+Brief `.claude/briefs/runs/2026-10-15-acct1-default-0206-jobs.md` "KAL-2ST" (LANE DEFAULT-A1-0206-15, account 1). The different
+instrument KAL-BIG named after the joint anneal was retired for this hypothesis (rule 3 third-attempt clause). Built as an option on
+the shared family: `tools/families/columnar_homophonic.py --param stage=two` (offline test `tools/tests/test_columnar_homophonic.py`,
+test_stage1_finds_order). Stage 1, per width 2-12, language-free: a hill climb over column orders (100 restarts x <= 4000 steps)
+maximising the sign-adjacency statistic of the untransposed stream (sum over sign bigrams of n(n-1): in the right order each column
+end joins the next column's head in its own row); the 2 best distinct orders per width go on. Stage 2: the homophonic anneal
+(the module's own `_anneal` with the order held fixed) on each kept stream, restarts 2 x 40000 iters. Per-width score = best
+stage-2 score; best width wins.
+- Same as KAL-BIG otherwise: convention B cipher `families/r14_kal12/cipher_marked_B.txt` (N 1066, K 28), spec
+  `families/r15_kal13/spec_s1s.json`, corpus ru19_lat s1s, profile=target, control widths 7/10/5/12/9 by seed, seeds 1-5,
+  shift-tolerant `score_recovery` (-12..12).
+- Development (not scored, unregistered seeds 21-25 to scratch, rows not in this file): 0.999/0.999/0.999/0.998/0.997; with 30
+  stage-1 restarts seed 24 (width 12) read 0.486 (the true order's statistic 7238 was above every order the 30-restart search
+  reached, i.e. a search fault, not a statistic fault), so stage-1 restarts were raised to 100 before this registration.
+  About 45 s a seed, serial, one process.
+- Gate: control mean recovery >= 0.6 on seeds 1-5. If not met: CONTROL BELOW GATE, target not run.
+- If met: target decoded in the same command (`--target-only-if-gated`), then `--shuffle-target 1` (target signs shuffled, same
+  instrument). A reading is claimed only on a judge PASS of the target decode with the shuffle decode FAIL; either way the target's
+  stage-1 statistic at its chosen width is reported beside the shuffle's. A target FAIL with the control gated is a control-backed
+  negative for "irregular columnar (widths 2-12) of a homophonic ru19_lat substitution" at convention B, conditional on the
+  transcription (rule 2) and on the era-mismatched corpus (s1s, 1876 Synodal Bible).
+
+Command:
+```
+python3 tools/family_run.py ciphers/kaliningrad-2015/families/r15_kal13/spec_s1s.json --family columnar_homophonic \
+  --cipher ciphers/kaliningrad-2015/families/r14_kal12/cipher_marked_B.txt --tokens space --corpus tools/data/ru19_lat/s1s.txt.gz \
+  --seeds 5 --restarts 2 --gate 0.6 --param profile=target --param widths=2-12 --param iters=40000 --param stage=two \
+  --param ctrl_widths=7,10,5,12,9 --target-only-if-gated --decode-tag convB2st --label "KAL-2ST two-stage columnar x homophonic ru s1s, conv B"
+```
+then the same with `--shuffle-target 1`.
