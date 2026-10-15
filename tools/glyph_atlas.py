@@ -15,6 +15,9 @@
         Catches: the same hand's boxes moved or deleted by a person (the only change is the cut). Must NOT change: a
         box list equal to the atlas's own boxes on the same image reproduces the stored top-1 (re-cut fidelity).
         Offline test: tools/tests/test_glyph_atlas.py.)
+  python3 tools/glyph_atlas.py digits --strips STRIPS.tsv --tsv digits.tsv   (MANT-CUT, 15 Oct 2026: per-digit boxes of a
+        numeral cipher line strip from its settled tokens: core band, column ink runs, dot separators, DP alignment of
+        groups to tokens, cuts at ink minima; see cut_digits. Offline test: tools/tests/test_glyph_atlas_digits.py.)
   python3 tools/glyph_atlas.py crop --image PAGE.jpg --box x0,y0,x1,y1[:label] [--box ...] --dest DIR [--scale 4]
   python3 tools/glyph_atlas.py crop --out DIR --sid ID [--sid ...] --dest DIR2 [--scale 4]
 
@@ -1324,6 +1327,140 @@ def cmd_match(a):
         print(line)
 
 
+
+def cut_digits(grey, tokens, rel=0.78, dot_lo=0.12, dot_hi=0.45, above=0.9, below=0.6, skip=1.0, space=0.5, tskip=1.5):
+    """MANT-CUT (15 Oct 2026): cut one numeral-cipher line strip into per-digit boxes.
+    tokens = the strip's settled code groups in reading order ('54', '66', ...; digits only). Steps:
+    1. binarise; hd = median height of the components at least 0.3 x the strip height (the digits); a separator dot
+       is a compact component (fill >= 0.4, aspect <= 2) with both sides in [dot_lo, dot_hi] x hd, whose centre row
+       lies inside a digit-height (>= 0.6 hd) component within 2 hd of it (drops 'o', 'e' of a clear line);
+    2. the cipher line is anchored on the dots (clear words carry none): band = median dot centre - `above` x hd to
+       + `below` x hd; ink outside the band and the dots themselves are dropped (cuts neighbour lines and dots);
+    3. groups = the ink extent of the band between consecutive dot centres (and before the first, after the last),
+       split again at any blank run wider than `space` x hd (a clear word beside a code group with no dot);
+    4. groups are aligned to tokens by DP on width: cost |w / dw - len(token)|, dw = band ink width per digit; a group
+       may take two tokens (missing dot, +1), two groups one token (extra dot, +1), and a group may be skipped
+       (clear words, a mark): free at either end of the strip, `skip` inside; a token may be left unplaced (`tskip`);
+    5. a matched group is cut into len(token) digits at column-ink minima near equal-width cuts (_wide_cuts).
+    Without dots (a one-token strip) the band is the row-profile peak band and the whole ink extent is one group.
+    Returns (boxes, hd): one (x, y, w, h) per digit of ''.join(tokens), or None where its token was not matched.
+    Scale-free (every threshold in hd). Catches: digits in a dotted run, touching digits, clear words at the strip's
+    ends and on neighbour lines. Must NOT: place a digit of an unmatched token (it stays None, never a neighbour's)."""
+    ink = binarise(grey, rel)
+    H, W = ink.shape
+    n, lab, st, cen = cv2.connectedComponentsWithStats(ink, 8)
+    hs = [st[i, 3] for i in range(1, n) if st[i, 3] >= 0.3 * H]
+    hd = float(np.median(hs)) if hs else 0.5 * H
+    dots = []
+    for i in range(1, n):
+        x, y, w, h, ar = st[i]
+        if dot_lo * hd <= min(w, h) and max(w, h) <= dot_hi * hd and max(w, h) <= 2 * min(w, h) and ar >= 0.4 * w * h:
+            dots.append(i)
+    tall = [i for i in range(1, n) if st[i, 3] >= 0.6 * hd]
+    dots = [i for i in dots if any(abs(cen[j][0] - cen[i][0]) < 2 * hd and st[j, 1] <= cen[i][1] <= st[j, 1] + st[j, 3]
+                                   for j in tall)]     # a dot sits beside a digit-height sign (drops small clear letters)
+    if dots:
+        yc = float(np.median([cen[i][1] for i in dots]))
+        b0, b1 = max(0, int(yc - above * hd)), min(H, int(yc + below * hd) + 1)
+    else:
+        prof = ink.sum(axis=1).astype(float)
+        c = int(np.argmax(prof))
+        b0, b1 = max(0, int(c - 0.6 * hd)), min(H, int(c + 0.6 * hd) + 1)
+    m = np.zeros_like(ink)
+    m[b0:b1] = ink[b0:b1]
+    isdot = np.zeros(n, bool)
+    isdot[dots] = True
+    isdot[0] = False
+    m[isdot[lab]] = 0
+    n2, lab2, st2, _ = cv2.connectedComponentsWithStats(m, 8)
+    small = np.zeros(n2, bool)
+    small[1:] = np.maximum(st2[1:, 2], st2[1:, 3]) < 0.2 * hd
+    m[small[lab2]] = 0
+    col = m.sum(axis=0)
+    xs = sorted(float(cen[i][0]) for i in dots if b0 <= cen[i][1] < b1)
+    edges = [0] + [int(round(v)) for v in xs] + [W]
+    groups = []
+    for a, b in zip(edges[:-1], edges[1:]):
+        nz = np.where(col[a:b] > 0)[0]
+        if not len(nz):
+            continue
+        cuts = [k for k in range(1, len(nz)) if nz[k] - nz[k - 1] > space * hd]   # a word space inside the interval
+        for u, v in zip([0] + cuts, cuts + [len(nz)]):
+            if nz[v - 1] - nz[u] + 1 >= 0.2 * hd:
+                groups.append([a + int(nz[u]), a + int(nz[v - 1]) + 1])
+    def vext(a, b):
+        rows = np.where(m[:, a:b].any(axis=1))[0]
+        return (rows[0], rows[-1] + 1) if len(rows) else (0, 0)
+    xh = hd
+    tokens = [t for t in tokens]
+    L = [len(t) for t in tokens]
+    nd = sum(L)
+    if not groups or not nd:
+        return [None] * nd, xh
+    dw = sum(b - a for a, b in groups) / max(1, sum(L))
+    G, T = len(groups), len(L)
+    INF = 1e9
+    D = np.full((G + 1, T + 1), INF)
+    B = {}
+    for i in range(G + 1):
+        D[i, 0] = 0.0          # leading groups skipped free
+        B[(i, 0)] = None
+    w = [(b - a) / dw for a, b in groups]
+    for i in range(G + 1):
+        for j in range(1, T + 1):
+            cands = []
+            if i >= 1:
+                cands.append((D[i - 1, j - 1] + abs(w[i - 1] - L[j - 1]), (i - 1, j - 1, 'm')))
+                cands.append((D[i - 1, j] + (0 if j == T else skip), (i - 1, j, 's')))
+            cands.append((D[i, j - 1] + tskip, (i, j - 1, 't')))     # token not found on the strip: left None
+            if i >= 1 and j >= 2:
+                cands.append((D[i - 1, j - 2] + abs(w[i - 1] - L[j - 1] - L[j - 2]) + 1, (i - 1, j - 2, 'm2')))
+            if i >= 2:
+                cands.append((D[i - 2, j - 1] + abs(w[i - 2] + w[i - 1] - L[j - 1]) + 1, (i - 2, j - 1, 'g2')))
+            if cands:
+                v, bk = min(cands, key=lambda z: z[0])
+                D[i, j], B[(i, j)] = v, bk
+    i, j = G, T
+    assign = {}
+    while j > 0 and B.get((i, j)):
+        pi, pj, kind = B[(i, j)]
+        if kind == 'm':
+            assign[(pj,)] = (groups[pi][0], groups[pi][1])
+        elif kind == 'm2':
+            assign[(pj, pj + 1)] = (groups[pi][0], groups[pi][1])
+        elif kind == 'g2':
+            assign[(pj,)] = (groups[pi][0], groups[pi + 1][1])
+        i, j = pi, pj
+    start = np.cumsum([0] + L)
+    out = [None] * nd
+    for tj, (a, b) in assign.items():
+        k = sum(L[t] for t in tj)
+        cs = [a] + [a + q for q in _wide_cuts(col[a:b], b - a, k)] + [b] if k > 1 else [a, b]
+        if len(cs) != k + 1:
+            continue
+        for q in range(k):
+            x0, x1 = cs[q], cs[q + 1]
+            y0, y1 = vext(x0, x1)
+            if y1 > y0:
+                out[start[tj[0]] + q] = (int(x0), int(y0), int(x1 - x0), int(y1 - y0))
+    return out, xh
+
+
+def cmd_digits(a):
+    """`digits`: per-digit boxes of numeral line strips (cut_digits). Input TSV columns strip (image path), tokens
+    (space-separated settled groups); output TSV strip, digit_index, token_index, digit, x, y, w, h, xh."""
+    rows = list(csv.DictReader(open(a.strips), delimiter='\t'))
+    with open(a.tsv, 'w') as f:
+        f.write('strip\tdigit_index\ttoken_index\tdigit\tx\ty\tw\th\txh\n')
+        for r in rows:
+            toks = r['tokens'].split()
+            grey = np.array(Image.open(r['strip']).convert('L'))
+            bx, xh = cut_digits(grey, toks, a.rel)
+            ti = [j for j, t in enumerate(toks) for _ in t]
+            for k, (d, b) in enumerate(zip(''.join(toks), bx)):
+                f.write('\t'.join(map(str, [r['strip'], k, ti[k], d, *(b if b else ('', '', '', '')), xh])) + '\n')
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest='cmd', required=True)
@@ -1442,8 +1579,12 @@ def main(argv=None):
     r.add_argument('--dest', required=True, help='directory to write one PNG per crop into')
     r.add_argument('--margin', type=int, default=6, help='pixels of context kept around each box (default 6)')
     r.add_argument('--scale', type=int, default=4, help='upscale factor, cubic interpolation (default 4)')
+    g = sp.add_parser('digits', help='MANT-CUT: per-digit boxes of numeral line strips (see cut_digits)')
+    g.add_argument('--strips', required=True, help='TSV: strip (image path), tokens (space-separated settled groups)')
+    g.add_argument('--tsv', required=True, help='output: one row per digit with its box (blank if not placed)')
+    g.add_argument('--rel', type=float, default=0.78)
     a = ap.parse_args(argv)
-    {'segment': cmd_segment, 'cluster': cmd_cluster, 'atlas': cmd_atlas, 'classify': cmd_classify,
+    {'digits': cmd_digits, 'segment': cmd_segment, 'cluster': cmd_cluster, 'atlas': cmd_atlas, 'classify': cmd_classify,
      'crop': cmd_crop, 'match': cmd_match}[a.cmd](a)
 
 
