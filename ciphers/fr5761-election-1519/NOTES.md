@@ -758,3 +758,50 @@ btv1b52510561g), outside the leaves read so far. Next: (1) locate fr.3897 item 5
 c263/f.222 offset, about 3-4 canvases at 600 px, then read the name groups against Kluckhohn's printed names (Couloigne, Saxe, Boheme,
 Mayence, Palatin, Hessen; p.813-814), ~2; (2) read the fr.5761 manifest Description (1 request, no image) for the position of nr. 383, then
 read that leaf, ~1.5. A pair needs >= 2 occurrences per sign before any C grade.
+
+## ELEC-357: fr.3897 item 56 located and read for name signs; fr.5761 position of nr. 383 (worker ELEC-357, LANE DEFAULT-A1-0740-15, account 1, 15 Oct 2026, 08:37-08:4x UTC by date -u)
+
+Brief: ELEC-SRC's next (1) and (2). Result: **nr. 357 found at BnF fr.3897 ff.116r-117r (canvases f142 right page, f143). It carries
+non-letter signs in place of names. 0 pairs, because Kluckhohn's printed text was not available to this job (archive.org was not in its
+host list). key.tsv unchanged; status unchanged (open).** Page images, not a transcription (rule 2). Search results only (rule 10).
+- Prior work: `prior_work.py fr5761-election-1519 --item-spec 'BnF fr.3897 ff.116r-117r item 56 (Kluckhohn RTA J.R. I nr. 357)'
+  --step-type read --offline`, exit 4. These are generic rows: LOOK 2-leaf (look.tsv crops owed for fr.5761, not this leaf), UNCHECKED
+  3-tomokiyo/3-solver (the unit had no folio when the spec was written), UNCHECKED-NET 3-solver/4-editions. No specific hold.
+  The edition for this letter is Kluckhohn RTA J.R. I nr. 357 itself (p.813-814, ELEC-SRC).
+- Locating the item (fr.3897 = btv1b90096539, every canvas label "NP"). The canvases are openings (verso left, recto right), and the folio
+  numbers are on the rectos. Anchors read by eye: c128 = f.103 (German original with an address leaf; item 51, Berne), c136 = f.112 (the Calais
+  ambassadors, item 54: "roy catholique", "la fille du roy d'Angleterre", "monsr le dauphin"), c140 = f.115, c143 = f.117, c150 = f.123 (the
+  left page heads "Coppie de la promesse ...", the Mayence items 58-61). The canvas-folio offset grows from 25 (c128) to 26 (c142) and 27 (c150),
+  and it is 41 by f.222 (KH1A).
+- **Item 56 = ff.116r-117r.** f.116r (c142 right) opens "Treschiers bons amys Capitaine Jacob et Hans ...". f.117r (c143 right) ends
+  "... adieu. Datt. la veille de [saint day, not read] ... 1519" and is signed "Capitaine Jos[yn]", which matches Kluckhohn's "Capitaine Josyn"
+  for nr. 357. f.117v (the endorsement "Double des lectres du marquis de Brandebourg ...") was not fetched, since it was not needed for the identification.
+- **Name signs (eye inventory at 2400 px per opening, about 1100 px per page; one reader, grade M, no C or H).** These are isolated non-letter
+  signs set into the French prose. The common "que" abbreviation sign is excluded.
+  W-like sign: f.116r about 3 times, f.116v about 3 times (>= 6 in all). Double loop "δδ": f.116r 2, f.116v 2 (>= 4). "Z": f.116r 1,
+  f.116v 2 (>= 3). Barred I "‡": f.116r 3. Triple-barred "#": f.116r 2, f.116v 1 (3). "4"-like sign: f.116r 2. "II": f.116r 1. A filled loop
+  at the end of f.116v line 1: 1. That makes about 7-8 distinct signs. Kluckhohn prints six resolved names for this letter (Couloigne, Saxe,
+  Boheme, Mayence, Palatin, Hessen; ELEC-WALK), so the counts are of the same order. On f.117r there is no name sign (the strokes before "1519"
+  belong to the date).
+  Shape check against key.tsv (descriptions only, not scored): the fr.5761 f.110 key describes Palatin as "#" with a hook, Maguence as a double
+  hash "HH", Brandebourg as "Λ" and Saxe as a circle on a dash. The f.116 set (W, δδ, Z, ‡, triple #, 4, II) does not visibly reuse the
+  Λ or the circle-on-dash signs. Whether "den bekannten Chiffren" means the fr.5761 key cannot be settled until the signs are paired with the printed names.
+- Not done: the pairing itself, which needs Kluckhohn p.813-814 page images (archive.org `bub_gb_0gFoAAAAMAAJ` leaves n821-n822,
+  2 requests). A pair is a sign at a position whose printed word is a name. A C grade needs >= 2 occurrences per sign (brief rule), and on
+  these counts W, δδ, Z, ‡ and # could reach it. No crops were cut and no PREREG was written, because no score was computed.
+- **fr.5761, nr. 383 (1 request, IIIF v3 manifest of btv1b52510561g, 200).** The Description places section 3 as follows: the key "Chiffres
+  desquelz ..." at fol. 50-53. (a) The king's letters to Orval, Bonnivet and Guillart (7 Feb - 5 Jul 1519; f.77v named). (b) "Responces au
+  roy durant ledict voyage", dated "... de Coblentz, du 14 mai au 29 juin ; de Nancy, du 4 au 18 juillet 1519". (c) "Voiage d'Allemaigne
+  pour l'empire. A plusieurs Srs particuliers", which begins at f.173r (ELEC-END). So nr. 383 (Orval, Bonnivet and Guillart to the king,
+  Coblenz, 29 June) is **the last Coblenz reply in run (b)**. It comes just before the Nancy July replies, which end on f.172r (ELEC-WALK). The
+  Description gives no folio for it. It lies before the Nancy run, inside ff.54-172, and most likely in the f.150s-160s. ELEC-WALK read only
+  the rectos of ff.165-171 and saw names in clear there. No canvas was read (brief: no census).
+- Requests: openapi.bnf.fr 9 (fr.3897: c150, c136, c128, c140, c143 at 600 px; c143 and c142 at 2400 px; manifest 1; fr.5761 manifest 1),
+  all 200, no 403/429. Images are in the session scratchpad only, none in git. Regen:
+  `https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90096539/f142/full/2400,/0/default.jpg` (and f143).
+
+**Verdict (ELEC-357, 15 Oct 2026):** open, unchanged. Nr. 357 = fr.3897 ff.116r-117r, with about 7-8 name signs (M, by eye). Nr. 383 =
+fr.5761 section 3(b), the last Coblenz reply (29 June) before the Nancy July run that ends on f.172r. Next: (1) fetch Kluckhohn p.813-814
+(archive.org n821-n822, 2 requests) and pair the f.116r-v signs with the printed names, using two blind passes on line crops of c142 and c143
+(about 4 units plus 1 reconciliation, ~3.5). (2) Find nr. 383 by bisection from f.172r backwards (canvas = 2 x folio + offset; read the
+fr.5761 offset from ELEC-WALK's census rows), about 3-4 canvases at 600 px, ~2. A pair needs >= 2 occurrences per sign before any C grade.
