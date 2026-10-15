@@ -345,3 +345,65 @@ Read so far: 0 unglossed letters read as text; key passes G1 at 0.768 mean held-
 - [ ] image-check: single label convention across the four slips (owner sorter); second readers done for f.81 and f.42
 - [x] retry: G1 rerun with the reconciled f.42
 Verdict: keep going: 3 internal gaps; cheapest next: unit f.77/f.76 two blind passes + reconciliation, align with f.76, G1 and f.13 lattice rerun, ~$3
+
+## Unit 5 passes: f.77 two blind readers, 76.0% agreement, stopped after reconciliation (PUST-U5, account 2, 15 Oct 2026, 04:04-04:2x UTC by date -u)
+
+Worker PUST-U5 (Opus; four subagent reads) for LANE DEFAULT-account-2-20261015-0209, brief `.claude/briefs/runs/2026-10-15-ytbiz-default-0209-jobs.md`
+(PUST-U5). Check 1: no later section here or in ../../sforza-pusterla-1447-f13/NOTES.md had run f.77's passes; no AUDIT.md in either folder; the
+last 60 ROOM lines carried no other live claim on the folder. Intake gate (pasted): `sforza-pusterla-1447-f13: partial (line 1) -- edition/page or
+full-text-search citation found within 6 lines`, exit 0. Prior-work step: **run late, after the passes** (my slip, not the brief's):
+`tools/prior_work.py sforza-italien1584-1447 --item-spec 'shelfmark=BnF italien 1584;folio=77r;date=1447-03-08;...' --step-type transcribe
+--known-answer gate:G1 --fetch` -> exit 4 (LOOK 2-leaf; LEAD 1-own on PUST-F77's and this job's claims); answered `--record` KNOWN (f.76 clear copy)
+and CLEAR (PUST-F77 pair check only); rerun -> exit 4 on this job's own live claim only; 3-solver aaymeloglu and 4-editions UNCHECKED-NET.
+
+**Crops (pasted).** `python3 tools/iiif_lines.py --image ciphers/sforza-italien1584-1447/pusterla/f77/src_image_v3_ark_12148_btv1b100373864_f74_4500_120_3000_2950.jpg
+--out ciphers/sforza-italien1584-1447/pusterla/f77/crops --prefix f77 --overlap 0 --max-width 1300 --deskew-region --debug` found 29 bands
+(+1.00 deg); the overlay showed 31 cipher lines (the auto finder merged L21/L22 and skipped L25), so the cut was rerun with the same command plus
+`--centres 221,313,401,482,566,656,737,820,908,992,1083,1162,1250,1331,1424,1510,1590,1676,1757,1841,1925,2010,2095,2180,2265,2348,2435,2515,2610,2696,2785
+--top-margin 10 --bottom-margin 10`; montage L20-L26 eye-checked (one target line per crop). 31 lines x 3 segments = 93 crops, committed
+(`f77/crops/`, 2.1 MB). PUST-F77's "33 lines" was its dry-run band count; the slip has 31 cipher lines under the header. **Deviation:** at
+`--max-width 1300` on a 3000 px region the tool spreads three segments across the line, so neighbours overlap by ~450 px (boxes 0-1300,
+850-2150, 1700-3000); every reader de-duplicated the overlap by eye, a source of gap/insert disagreements. A future cut: `--max-width 1500`
+(two abutting halves).
+
+**Clear side.** f.76 read by eye from one native region (`f77/src_*_f73_4600_150_2900_4900.jpg`) plus PUST-F77's verso region:
+`clear_f76.txt`, 1,236 letters, 18 "che"; interlinear corrections taken over the underlined words (listed in its header); three copyist
+blanks [ ]; dateline and subscription omitted (f.80 convention). Two further 1-request checks (c73 below the text, c74 above the verso text)
+were blank, so the copy is complete; those two files were not kept.
+
+**Passes (4 vision units).** pass A Opus top-down, pass B Sonnet bottom-up, one half page (L01-16, L17-31) per call, pusterla_labels.md and the
+crops only (`f77/passes/`); halves joined and `g ÷` joined to `g÷` (g1p.py's rule) in `f77/ciphertext_f77_passA.tsv` (899 signs, self-confidence
+~70% / ~65%) and `f77/ciphertext_f77_passB.tsv` (898, ~55% / ~40%). The bottom-up Sonnet reader wrote its L01-16 rows in reverse order (its
+L01 = A's L16 "z- ÷ S den b .. B", its L15 = A's L02 "x fo o# t fa"): rows relabelled k -> 17-k, signs unchanged (first reconcile 37.6% on the
+mislabelled rows, discarded).
+
+**Reconciliation (1 unit).** `python3 tools/reconcile_passes.py .../f77/ciphertext_f77_passA.tsv .../f77/ciphertext_f77_passB.tsv --method nw
+--keep-plain --out-dir .../f77/rec`: **agreement 686/903 = 76.0%** (f.81 76.0%, f.71 73.8%, f.67 74.3%, f.42 81.4%); 217 disagreement
+columns, 207 two-sided. Per line 0.94 (L01) down to 0.50 (L31); L17-31 (0.50-0.79) read worse than L01-16 (0.66-0.94). Top splits:
+b-/h- 22 (a pair the earlier units did not split this often), T=/b- 13, N5/g 12 (pass A's ϑ-like loop), b/b- 8, +2/# 7, q/V 6, d/d' 6, 3/N4 6,
+N3/h7 5. SFZ-READ2's rule applied unchanged (`f77/rec/apply_rule.py`, `--check` ok): agreed 686, settled by the convention 30, kept from A
+183, B-only dropped 4 -> 898 signs in `f77/rec/ciphertext_f77_reconciled.tsv`, a **draft, not adopted**.
+
+**Stop.** The passes split on 24% of signs, more than a tenth, so per the brief (TRANSCRIPTION.md: the next pass is a person's) no third
+machine pass, no alignment with f.76, no G1 rerun and no f.13 lattice rerun were run. key.tsv, gate_g1.tsv and f.13's numbers are unchanged.
+The split signs are in `f77/rec/focus.tsv` (207 rows, `sid<TAB>question`, the format of ../../sforza-pusterla-1447-f13/lookalike/look2/focus.tsv,
+most frequent pair first), added to the Pusterla sorter focus beside f71/rec, f67/rec, f81rec, f42rec and the f.13 look-alike lists. The
+sorter needs per-sign tiles for f.77, not cut here (sids are line_column of `f77/rec/ciphertext_draft.tsv`). Grading: nothing read; no key value changed.
+
+Requests: openapi.bnf.fr 3 (c73 recto region; c73 bottom and c74 verso top, both blank), all HTTP 200, one at a time >= 2 s apart; no other host.
+
+## Remaining gaps (PUST-U5, 15 Oct 2026; supersedes PUST-F77's list)
+Read so far: 0 unglossed letters read as text; key passes G1 at 0.768 mean held-out accuracy over 4 glossed units (f.81 and f.42 two readers each); f.77 (unit 5) two readers at 76.0%, not pooled
+- one sign-label convention across the key slips - blocker: not-attempted; owner sign sorter not yet run (no ASKS row filed by this job); f.71 and f.67 reconcilers settled T=/b- opposite ways; f.81, f.42 and now f.77 split T=/b-, b/b-, b-/h-, q/V, d/d'; next: owner sign sorter on the focus lists (f71/rec, f67/rec, f81rec, f42rec disagreements.tsv, f77/rec/focus.tsv), relabel, rerun g1p.py, ~$2 plus owner time
+- f.77 with copy f.76 as the fifth key unit - blocker: not-attempted; owner sign sorter not yet run (no ASKS row filed by this job); two blind passes + reconciliation done (PUST-U5: 76.0% agreement, over the one-tenth line, so not aligned); next: cut per-sign tiles for f.77 (`f77/rec/focus.tsv` sids), owner sort, then align with clear_f76.txt as align_f81.tsv was built, rerun g1p.py and lattice_decode.py on both corpora, ~$1 tiles + ~$2 after the sort
+- Cerioni 1970 / ASMi cipher registers for a period Pusterla key - blocker: not-attempted; no period key located yet; next: a key-hunt row for the lane, ~$2
+
+## Escalation (PUST-U5, 15 Oct 2026)
+- [x] siblings: f.81/f.80, f.42/f.41, f.71/Osio CCCXCI, f.67/f.66 used; f.72/f.73 (Duke) and f.75/f.74 (Marcolino) excluded; f.77/f.76 two readers + reconciliation done, waiting on the sorter; c64-c74 has no other candidate
+- [x] clear-pages: later-hand copies f.80, f.41, f.66 used; Osio's print for f.71; f.76 read into clear_f76.txt
+- [ ] known-keys: Cerioni 1970 not checked
+- [x] print: Osio III searched (f.71's text printed; f.73's distinctive words absent from Osio III's OCR, grep 15 Oct 2026); f.76 not yet grepped
+- [x] key-rebuild: key.tsv rebuilt from 4 units (f.81 and f.42 two readers), G1 PASS 0.768
+- [ ] image-check: single label convention across the slips (owner sorter; f77/rec/focus.tsv added)
+- [x] retry: G1 rerun with the reconciled f.42
+Verdict: keep going: 3 internal gaps; cheapest next: f.77 per-sign tiles for the sorter (f77/rec/focus.tsv), ~$1, then the owner sort; Cerioni 1970 / ASMi key-hunt row, ~$2

@@ -443,3 +443,29 @@ Read so far: 0 lines read as Italian; lattice decode rank 1/201 on it16dip and i
 - [ ] image-check: label-convention sorting across the four key slips not done (second readers done for f.81 and f.42)
 - [x] retry: lattice_decode.py under the re-pooled key on it16dip and it15, rank 1/201 both, judge FAIL both
 Verdict: keep going: 5 internal gaps; cheapest next: f.77/f.76 two blind passes + reconciliation, G1 and lattice rerun (S11), ~$3; the f.13 So/go tiles wait on the owner's sorter (SFZ-LOOK2, 11 Oct 2026)
+
+## S12: unit 5 f.77 two blind readers at 76.0%, not pooled (PUST-U5, account 2, 15 Oct 2026, 04:04-04:2x UTC by date -u)
+
+See ../sforza-italien1584-1447/pusterla/NOTES.md, "Unit 5 passes". f.76 read by eye into `pusterla/clear_f76.txt`; f.77 cut into 31 lines and read
+blind by two readers (Opus 899 signs, Sonnet 898); `tools/reconcile_passes.py --method nw` agreement 686/903 = 76.0%, so the passes split on more
+than a tenth of signs and the brief stops after reconciliation: no alignment, no G1, no key re-pool, no lattice_decode.py rerun. f.13's
+numbers stand as S9 left them (rank 1/201 on it16dip and it15, judge FAIL on both). The split signs are in `pusterla/f77/rec/focus.tsv` for the
+owner's sorter (tiles for f.77 not yet cut).
+
+## Remaining gaps (PUST-U5, 15 Oct 2026; supersedes SFZ-F42's list as updated)
+Read so far: 0 lines read as Italian; lattice decode rank 1/201 on it16dip and it15 under the 4-unit key with f.81 and f.42 two readers, also after the f.13 look-alike passes (S8, S9); judge FAIL on both corpora; signature decodes "deptsterla"
+- Pusterla sign-label convention across readers - blocker: not-attempted; owner sign sorter not yet run (no ASKS row filed by this job); f.71 and f.67 reconcilers settled T=/b- opposite ways; f.81, f.42 and f.77 split T=/b-, b/b-, b-/h-, q=/go, n/y; next: owner sign sorter on the slips' focus lists (f71/rec, f67/rec, pusterla/f81rec, pusterla/f42rec disagreements.tsv, pusterla/f77/rec/focus.tsv), then rerun g1p.py and lattice_decode.py, ~$2 plus owner time
+- f.13 transcription - blocker: not-attempted; owner sign sorter not yet run (no ASKS row filed by this job); look-alike passes done (S8: 10 relabelled; S9 SFZ-LOOK2 on So/go, 8/g, h/h-, a/ze: control 13/16, 7 relabelled, 10 unsettled in lookalike/look2/focus.tsv; lattice rank 1/201 both corpora, judge FAIL); next: owner sign sorter on lookalike/focus.tsv + lookalike/look2/focus.tsv (So/go shapes first), then rerun lattice_decode.py, ~$1.5 plus owner time
+- Pusterla sibling f.77 with copy f.76 as the fifth key unit - blocker: not-attempted; owner sign sorter not yet run (no ASKS row filed by this job); passes + reconciliation done (S12: 76.0%, over the one-tenth line); next: per-sign tiles for pusterla/f77/rec/focus.tsv (~$1), owner sort, then align with clear_f76.txt, rerun g1p.py and lattice_decode.py on both corpora, ~$2
+- print and novelty search on any decoded text - blocker: not-attempted; nothing reads yet; next: after a judge PASS, tools/print_check.py and a verifier session, ~$3
+- known period key - blocker: not-attempted; no period Pusterla key located yet; next: Cerioni 1970 / ASMi Sforzesco cipher registers key-hunt row, ~$2
+
+## Escalation (PUST-U5, 15 Oct 2026)
+- [x] siblings: f.81/f.80, f.42/f.41, f.71/Osio CCCXCI, f.67/f.66 used; f.72 (Duke) and f.75 (Marcolino) excluded (S10); f.77/f.76 two readers + reconciliation done (S12), waiting on the sorter
+- [x] clear-pages: later-hand copies f.80, f.41, f.66, f.76 and Osio's print of f.71 used
+- [ ] known-keys: Cerioni 1970 and ASMi Sforzesco cipher registers not checked for a Pusterla 1447 key
+- [x] print: Osio III full-text searched (f.13 absent; f.71's text printed as no. CCCXCI)
+- [x] key-rebuild: key.tsv from four pairs (f.81 and f.42 two readers), G1 PASS 0.768
+- [ ] image-check: label-convention sorting across the key slips and the f.13 look-alike tiles wait on the owner's sorter
+- [x] retry: lattice_decode.py under the re-pooled key on it16dip and it15, rank 1/201 both, judge FAIL both
+Verdict: keep going: 5 internal gaps; cheapest next: f.77 per-sign tiles for the Pusterla sorter (pusterla/f77/rec/focus.tsv), ~$1, then the owner sort; Cerioni 1970 / ASMi key-hunt row, ~$2
