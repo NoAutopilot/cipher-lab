@@ -66,3 +66,27 @@ Units: (1) PREREG-test4d.md pushed before any score: same N, dictionary and ever
 change only; (2) matched control, 5 seeds; (3) target and 10 nulls only if the control passes. This is the design's second search-side
 attempt: if the control still misses, log the design "untested by this instrument" (rule 3's third-attempt clause) and name a genuinely
 different instrument or new material in the Verdict. Rows into HYPOTHESES.md (both numbers). CPU serialized (no background run beside it).
+
+## Wave 2 (02:5x UTC 15 Oct)
+Wave 1 note: BAL22-NUM and F4712-C131 stood down at check 1 (account-1's lane spawned the same picks two minutes earlier). Before
+your first priced unit, also grep the last 60 ROOM lines for your folder name: a live claim from any lane means stand down.
+
+### SFZP-SIB (Opus, cap 8, box 120 min, Gallica IIIF btv1b100373864 via tools/iiif_lines.py <= 12 requests at >= 2 s, ROOM take/release lines "gallica"): Pusterla key units 5-6, f.72/f.73 then f.75/f.74
+Folder ciphers/sforza-italien1584-1447/pusterla/ (the key's units; read its NOTES.md "Remaining gaps" lines ~123 and ~237 and Verdict
+~248) feeding ciphers/sforza-pusterla-1447-f13 (Verdict line ~431: "pair check + two passes + reconciliation on sibling f.72 (unit 5 of
+the key), ~$3"). Intake gate (02:5x UTC, pasted): `sforza-pusterla-1447-f13: partial (line 1) -- edition/page or full-text-search citation
+found within 6 lines`, exit 0. Units at ~1.3 each, per slip: (1) pair check -- does the copy (f.73 for f.72; f.74 or f.76 for f.75) carry the
+same text as the cipher slip (eye check of the canvas at 600 px, one vision call); (2) crops by the same pasted `tools/iiif_lines.py --ark
+btv1b100373864 --canvas N --region ...` form units 1-4 used; (3) two blind passes (passA Opus, passB Sonnet, as f.81/f.42) + one
+reconciliation unit with `tools/reconcile_passes.py`; (4) align with the clear copy as align_f81.tsv was built and re-run the unit G1 /
+key pool exactly as the four-unit key was gated (control and shuffle p95 as before); key rows enter only through that gate. f.72 first;
+start f.75 only if f.72 finished under 50% of cap and box. Then re-run the f.13 lattice decode (lattice_decode.py, both corpora) once on the
+re-pooled key and paste the judge line. Credit and grades as the folder does. Update both folders' Remaining gaps / Escalation, gaps_check.
+
+### SP105-SOAS (Opus, cap 1.5, box 40 min, soas.ac.uk contact page only, <= 4 requests): sp105-paget-1693 item-level enquiry draft
+Verdict (line ~258): draft an item-level enquiry to SOAS Special Collections for PP MS 4/02/47 and sub-series 01-25 in outreach/. Intake
+gate (02:5x UTC, pasted): `sp105-paget-1693: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+Follow outreach/README.md exactly (rule 1 AI-disclosure sentence in the first paragraph, rule 1a voice, subject/recipient/sign-off lines;
+recipient = the institution's public contact address read from SOAS's own contact page with the date). Draft only: no CONTRIBUTIONS.md
+send row, no SEND-QUEUE row, no mail; status `drafted`, "checked:" line left for a separate gate-7 session; one ASKS.md row only if
+outreach/README.md says drafts get one. Update the folder's gaps (the gap becomes waiting-on the gate-7 check / send), gaps_check.
