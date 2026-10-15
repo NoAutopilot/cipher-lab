@@ -57,3 +57,15 @@ pairs, do the trailing letters form a small alphabet, and does a pair+letter uni
 of that length (control: the same statistics on OBRED's no. 92 groups, which are a different design). No family_run, no key, no reading:
 report the design class the numbers suggest, as a lead (M), and the sender if the neighbouring scans name him. Requests per host in the
 done line. NOTES.md "## HEID-1621 (<date -u>)".
+
+## JOB MERCY-IMG (added 14:25 UTC 15 Oct 2026; Opus 5.5 worker, Sonnet readers; cap USD 6; box 75 minutes; openapi.bnf.fr <= 6 (take/release lines, >= 3 s apart; a canvas already on disk is never refetched); Price: vision calls: 3 x USD 1.4 + 1 reconciliation = 5.6)
+MERCY-M33's own next line: the 33 M ordinary letters of Espagnol 144 f.22 sit mostly on r17-r24 (NOTES "## MERCY-M33", table), and the
+statistic could not move the 53-letter run because every accepted position sits beside another M. Image step, not a statistic: crop r16-r24
+of f.22 from the native image on disk (images/manifest.json; fetch only if absent) with `tools/iiif_lines.py --image <leaf> --out <dir>`
+(paste the command), two blind Sonnet readers on the row crops for the cipher glyphs only (text only, no key shown), one reconciliation
+against the crops. PREREG-MERCYIMG.md first: the known-answer control = the H/S positions on the same rows (readers must reproduce the
+committed glyph at >= 0.90 or the pass is a non-test), the rule for when a reader agreement re-labels an M glyph (both readers agree on a
+glyph that key.tsv maps to one letter, and the glyph differs from the one the transcription carries), and the run statistic re-run with
+`mercym33/runs.py` on a scratch copy. Report per M position: transcription glyph, reader A, reader B, settled glyph, key letter, grade (M
+unless the control passed and both agree); longest run before/after against 84 (R 3.4) and 135 (es17c). No key.tsv, reading, AUDIT.md or
+status.json edit; HYPOTHESES.md one row with the control; NOTES.md "## MERCY-IMG (<date -u>)" ending in a "for the verifier" paragraph.

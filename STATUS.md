@@ -9768,3 +9768,11 @@ Results:
 Lessons: (1) disk-only statistical jobs at cap 2.5-3.5 landed 2.3-3.2, under cap; image/sheet-read jobs on a shared archive host ran to or over cap
 (OBRED-945X 1.23x, HAR-39V 1.27x) -- price those at the request count; (2) the oldenbarnevelt archive screen yields its first cipher lead only at
 inv. 6021, after ~350 scans of nothing: a stride screen is worth finishing once started.
+
+LANE VIV-KEYSTONE handoff, appended 14:3x UTC 15 Oct 2026 (parent, account 4): depth-step jobs (brief 2026-10-15-acct4-depth-steps.md).
+THUR-P188 (account 1): p.188 lines 50-61 re-read from the image agrees with the transcription 198/198; the three hypotheses (tokenisation,
+line swap, 'am' as a key sign) are refuted or untestable by a word-cover statistic at this length (block reads 0.604 vs siblings 0.603);
+depth stays D2; next is new material only (MS Rawl. A. 24 leaf, needs-physical-access). MERCY-M33 (account 1): matched control PASS at
+n>=4 (false accept 0/110); 4 code-6 positions accepted as s (held M for a verifier); longest run 53 before and after (bar 84); next = image
+re-read of r17-r24, queued as MERCY-IMG (account 1, cap 6). LVN-NAMES and HEID-1621 (account 2) running since 14:12. Owner step-1 page
+still empty; FDR follow-up not reported sent.
