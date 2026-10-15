@@ -79,3 +79,15 @@ the hit only. (3) Key: the NA finding aid for 1.01.02 (www.nationaalarchief.nl i
 Resolutien SG NR 5 index for 'cijfer'/'sleutel'/'Brederode' entries that mention a decipherment ('gedecifreerd') in 1621-1622; list every
 candidate with its inventory number and whether it is digitised. No decode, no key edit, no reading. NOTES.md "## HEID-1621E (<date -u>)":
 hits, candidates, requests per host, and the next row (a transcription of any second block found, or the key leaf if one is named).
+
+## JOB HEID-1621F (account 2; Opus 5.5; cap USD 4; box 60 minutes; service.archief.nl <= 140 (take/release lines, >= 3.1 s apart, one at a time with any other NA worker); no reader subagents; Price: vision calls: 0 x USD 0 = 0 (this worker's own eye on 700 px contact sheets, the OBRED-6021 method))
+HEID-1621E's next line for ciphers/brederode-heidelberg-1621: the Resolutien SG NR 5 p.295 res. 1879b calendars Brederode's **17 Sept 1621**
+letter as "S.G. 6021 (orig.). Gedeeltelijk in code" -- a sibling in the same liasse, not seen by the stride-3 screens. The liasse runs
+roughly in date order (13 Aug 1621 sits at scans 375-380), so: PREREG-HEID1621F.md first (stop rule, sheet controls, what counts as a hit),
+then a stride-1 screen at 700 px on contact sheets with the OBRED-6020 sheet controls from scan 398 upward, in order, stopping at the first
+letter dated 17 Sept 1621 carrying numeral groups (signed letter and any duplicate, as 375/379 were) or at 136 requests, whichever first;
+one 1200 px re-look of each hit only, recorded in images/manifest.json with sha1 (no image committed). Report the hit scan numbers, the
+date line and signature as read (M unless on the leaf), whether the numeral system is the pair+letter design of 375/379 (by eye, M), and the
+last scan screened, so the next row can continue from there. Also record in NOTES.md, as a separate intake candidate and nothing more, scan
+58's French text with 2-digit groups and 3/4-digit name codes (HEID-1621E), with its date line if legible. No decode, no key, no reading.
+NOTES.md "## HEID-1621F (<date -u>)" ending in the next row (the two-block transcription priced per pass, or the continuation screen).

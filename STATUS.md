@@ -9973,3 +9973,11 @@ specs/brederode-heidelberg-1621.json written; test 1 (unit inventory vs frozen n
 undecided (between the letter p95 20 and the word p05 32); C2 control failed, not run. status.json target row added (stage 2). Too short to
 read alone: HEID-1621E queued on account 2 (cap 5) for design_prior, the rest of inv. 6021 at stride 3 combined, and key/decipherment
 candidates (NA finding aid, Resolutien index). Account 1 paused; owner page empty; FDR not reported sent; no owner word on halt.
+
+LANE VIV-KEYSTONE handoff, appended 19:4x UTC 15 Oct 2026 (parent, account 4). HEID-1621E: brederode-heidelberg-1621 stays open; design_prior
+non-discriminating at N=45; no SG/Palatinate key 1618-25 on file; inv. 6021 now screened at stride 3 (controls 45/45): one new hit, scan 58,
+a French text with 2-digit groups and 3/4-digit name codes (Mansfeld, Palatin, Baviere) -- a different system, separate intake candidate;
+the Resolutien (p.295 res. 1879b) calendar a SECOND Brederode letter in code, 17 Sept 1621, same liasse, not yet seen (after scan 397);
+period decipherment leads not digitised: 6056 (Mansfelt 1622 'met de oplossing'), 6055, 12578.1 (Haga key). HEID-1621F queued on account 2
+(cap 4): stride-1 from scan 398 for the 17 Sept letter. status.json target next line updated. Account 1 paused; owner page empty; FDR not
+reported sent; no owner word on halt.
