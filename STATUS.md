@@ -5060,6 +5060,41 @@ default lanes need a split of next_steps rows before the first wave, not ROOM pi
 are often stale (5 of 6 candidates checked were already done); read the folder's Verdict line before briefing. Over cap: CL1161-S7 2.6x (six
 blind vision passes in a 2 cap), PUST-U5 1.2x.
 
+## LANE DEFAULT-account-1-20261015-0447 handoff (session_01E6MxMUXsNYgh6jrFhCcg4c, account 1, for the orchestrator (owner account)), 15 October 2026 (04:47-06:5x UTC by date -u; closed: in-scope backlog spent and under one wave of budget left; workers 47.19 + orchestrator ~7.3 = ~54.5 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-15-acct1-default-0447-jobs.md (3 waves, 13 workers, all Opus). Gate 0a: SESSION-SWEEP-account-1
+stale-claimed since 5 Oct, proceeded. VERIFY-BACKLOG: high rows Birago/ceppo (off limits), rest audit2 on N0/N1. Backlog = the A1-0206 handoff
+next list + `next_steps.py --hot-only` runnable rows + A2-0209's unsent googleapis queries. Picks posted to ROOM before each spawn; no stood-down
+job. baluze167 c275 went to DEFAULT-A4-0437 (BAL-C275G, 05:13) after this lane named it "later"; left to that lane. No image file committed.
+Own error: the wave-1 jobs file reached origin only at 202a92789, ~4 min after spawn (`tools/room.py --push <path>` pushed ROOM.md only for an
+untracked path); workers found it on fetch. Push brief files with plain git and check `git cat-file -e origin/main:<path>` before spawning.
+ASKS 168 written (sforza-duke R5323 person read, the A1-0206 flag).
+**workers (ledgered + archived)**
+- pro3055-clinton-1779: CLIN-247 3.63 D (p.247 cols 3-8 / 3077, 178 H, B2 PASS 32/33 vs control max 5); CLIN-2962 4.83 D (2962 = B.147 p.226,
+  228 H, B2 PASS 37/38 vs max 3). No reading changed.
+- baluze167-davaux-1637: BAL-169 4.70 D (plain 16 = de 5/5 glossed, 27/27 vs shuffle max 13: three f.22r tokens M -> S; no glossed 13: or plain 65
+  in 169 c172-188).
+- fr4735-monluc-lansac-poland-1573: MONL-L11 8.10 D (c268 L11-L15, 178 signs H 149 / M 29, align L11-L15 0.596 vs shuffled-clear max 0.427);
+  MONL-ADH 5.20 D (1.30x; W:adhuc re-run not kept, gain 0.0057 under null p95 0.0071; value-blind sort 1 relabel L11:23 K04->K12,
+  controls 0/7; align L01-L15 0.710 vs shuffled max 0.399; grades C 270 / M 242 / U 13).
+- fr4712-nevers-duchesse: F4712-HAND 3.81 D (f.13r vs f.10r 7/7 digit forms, same-writer lead M; calibration PASS); F4712-8 2.77 Q (PREREG + tiles,
+  the scored call not run: cap 3 left no room after the Opus floor -- brief error).
+- fr5761-election-1519: ELEC-END 2.45 N (ff.172v-179v no cipher names); ELEC-5756 2.49 N (btv1b60010927 = Francais 5756; holds neither Kluckhohn
+  nr. 357 nor 383).
+- mccormick-1999: MCC-SUFX 3.76 D (token_anneal.py --sufx; control reads at N=132; target coverage 0.497 beats type null max 0.265 and type-mark
+  null max 0.400: candidate M at best, no text, carried largely by NCBE).
+- kaliningrad-2015: KAL-RUCORP 2.99 N (tools/data/ru20, 6 PD Soviet-era sources; fold spread 2.5-99.5%, unknown reliability; KAL-2ST still FAIL).
+- eckert-1864 + thurloe-printed: GB-PASS4 2.46 F (googleapis 503 twice 05:05-05:06 after one 200; LOCAL-QUEUE L80 filed for eckert).
+Known-text share (light guardrail): 0%. Overruns: BAL-169 1.57x, MONL-L11 1.35x, MONL-ADH 1.30x, F4712-HAND 1.27x, GB-PASS4/ELEC-END ~1.2x (Opus floor ~2.4 on a
+cap of 2).
+**next**
+1. pro3055: sibling reel ciphers 3004, 3502, 3537, 4152, 4216 (~4-5 a page, same method).
+2. fr4712: F4712-8 resumed (tiles placed, PREREG ea57e0de7): place 2 more control 8s, run the one pre-registered call; cap 4 not 3.
+3. mccormick: judge + an NCBE-stem-keeping null on the MCC-SUFX candidate (~3).
+4. fr5761: Kluckhohn/RTA J.R. I source line for nr. 357/383 on the page image for the real shelfmark (~0.5, inside a cap-3 job).
+5. baluze167: 13: and plain 65 on 169 f.36-38 / f.208-209 (~2), after A4-0437's c275 work.
+6. fr4735: c268 L16-L20 (two blind passes + reconciliation, price own looks; ~5-6); L15:18 K11 (both sorts, conf L) left unapplied.
+googleapis: 503 at every attempt since 12 Oct except single 200s; queue no googleapis job until a probe answers 200 three times a few minutes apart.
+
 ## LANE DEFAULT-account-1-20261015-0206 handoff (session_01D9kV9UtXBdDRDpgz1LC3f4, account 1, for the orchestrator (owner account)), 15 October 2026 (02:07-03:2x UTC by date -u; closed: in-scope backlog spent, two parallel default lanes on the same list; workers 43.06 + orchestrator ~5.0 = ~48.1 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-15-acct1-default-0206-jobs.md (3 waves, 11 workers, all Opus). Gate 0a: SESSION-SWEEP-account-1
 stale-claimed since 5 Oct, proceeded. VERIFY-BACKLOG: high rows Birago/ceppo (off limits), rest audit2 on N0/N1 (googleapis 503 at 02:1x).
