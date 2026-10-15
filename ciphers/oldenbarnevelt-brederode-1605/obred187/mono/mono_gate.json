@@ -1,0 +1,50 @@
+{
+ "S_condition": false,
+ "control": {
+  "e0.5": {
+   "gate": false,
+   "interval_hit": 0.8203,
+   "joint_p05_share": 0.925,
+   "leads": 959,
+   "null_draws": 200,
+   "precision_clean": 0.6778,
+   "precision_testable": 0.5412,
+   "right_clean_rate": 0.1175,
+   "right_testable": 519,
+   "sims": 40,
+   "testable": 959,
+   "wrong_clean_rate": 0.0659,
+   "wrong_testable": 440
+  },
+  "e0.75": {
+   "gate": false,
+   "interval_hit": 0.746,
+   "joint_p05_share": 0.9,
+   "leads": 980,
+   "null_draws": 200,
+   "precision_clean": 0.6087,
+   "precision_testable": 0.4878,
+   "right_clean_rate": 0.0586,
+   "right_testable": 478,
+   "sims": 40,
+   "testable": 980,
+   "wrong_clean_rate": 0.0359,
+   "wrong_testable": 502
+  },
+  "gate": "BELOW GATE"
+ },
+ "prereg": "obred187/PREREG-OBREDMONO.md (9a6abd583)",
+ "target": {
+  "D": 126,
+  "clean": 0,
+  "contradicted": 20,
+  "draws": 1000,
+  "null_mean": 136.575,
+  "null_min": 119,
+  "null_p05": 128,
+  "p": 0.036,
+  "passes": true,
+  "slots": 112,
+  "untestable": 0
+ }
+}
