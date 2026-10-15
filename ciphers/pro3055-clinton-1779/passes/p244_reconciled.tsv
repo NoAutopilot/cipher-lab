@@ -1,0 +1,71 @@
+# CLIN-SIB3 (15 Oct 2026): B.147 p.244 (H-1649 Image 888; BL Add MS 21807 fo.207), cipher of item 3050 (Clinton to Haldimand, 2 Oct 1780), closing page.
+# Two blind Sonnet passes p244_passA.tsv / _passB.tsv, one crop per column (no seam); agreed on all 67 entries, split on one underline (col1 r18) and one clear-word spelling; settled by the worker on two zoom strips (note column).
+# kind: letter (L-P or -P; 1780 convention) or clear.
+col	idx	kind	entry	underline	grade	passA	passB	note
+col1	1	letter	6-7	n	H	6-7/n	6-7/n	both passes 6-7 (7 or 1 noted); worker zoom: a crossed 7
+col1	2	letter	-6	n	H	-6/n	-6/n	
+col1	3	letter	5-3	n	H	5-3/n	5-3/n	
+col1	4	letter	-5	n	H	-5/n	-5/n	
+col1	5	letter	4-3	y	H	4-3/y	4-3/y	
+col1	6	clear	"on"	y	H	"on"/y	"on"/y	
+col1	7	letter	5-3	n	H	5-3/n	5-3/n	
+col1	8	letter	-4	n	H	-4/n	-4/n	
+col1	9	letter	-5	y	H	-5/y	-5/y	
+col1	10	clear	"16th"	y	H	"16th"/y	"16t"/y	clear: A "16th", B "16t"; worker: "16th" (clear, ends a run either way)
+col1	11	clear	"of"	y	H	"of"/y	"of"/y	
+col1	12	letter	3-1	n	H	3-1/n	3-1/n	
+col1	13	letter	18-17	n	H	18-17/n	18-17/n	
+col1	14	letter	6-1	n	H	6-1/n	6-1/n	
+col1	15	letter	18-17	n	H	18-17/n	18-17/n	
+col1	16	letter	4-3	n	H	4-3/n	4-3/n	
+col1	17	letter	-4	y	H	-4/y	-4/y	
+col1	18	letter	6-6	n	H	6-6/n	6-6/y	rule: A n, B y; worker zoom: rule under 4-4 only (n)
+col1	19	letter	4-4	y	H	4-4/y	4-4/y	
+col1	20	letter	21-1	n	H	21-1/n	21-1/n	
+col1	21	letter	6-6	n	H	6-6/n	6-6/n	
+col1	22	letter	1-6	n	H	1-6/n	1-6/n	
+col1	23	letter	18-3	n	H	18-3/n	18-3/n	
+col1	24	letter	6-2	n	H	6-2/n	6-2/n	
+col1	25	letter	-3	y	H	-3/y	-3/y	
+col1	26	letter	2-1	n	H	2-1/n	2-1/n	
+col1	27	letter	-2	n	H	-2/n	-2/n	
+col1	28	letter	-3	n	H	-3/n	-3/n	
+col1	29	letter	6-5	n	H	6-5/n	6-5/n	
+col1	30	letter	-4	y	H	-4/y	-4/y	
+col2	1	letter	4-2	n	H	4-2/n	4-2/n	
+col2	2	letter	-3	y	H	-3/y	-3/y	
+col2	3	clear	"a"	y	H	"a"/y	"a"/y	
+col2	4	letter	6-1	n	H	6-1/n	6-1/n	
+col2	5	letter	-5	n	H	-5/n	-5/n	
+col2	6	letter	-4	n	H	-4/n	-4/n	
+col2	7	letter	-6	y	H	-6/y	-6/y	
+col2	8	letter	4-4	y	H	4-4/y	4-4/y	
+col2	9	letter	18-3	n	H	18-3/n	18-3/n	
+col2	10	letter	5-5	n	H	5-5/n	5-5/n	
+col2	11	letter	-2	n	H	-2/n	-2/n	A noted the 5 of the next row as possibly stray; worker zoom: -2 then -5, both clear
+col2	12	letter	-5	n	H	-5/n	-5/n	
+col2	13	letter	2-6	n	H	2-6/n	2-6/n	
+col2	14	letter	4-4	n	H	4-4/n	4-4/n	
+col2	15	letter	-2	n	H	-2/n	-2/n	
+col2	16	letter	12-1	n	H	12-1/n	12-1/n	
+col2	17	letter	-2	y	H	-2/y	-2/y	
+col2	18	letter	9-9	n	H	9-9/n	9-9/n	
+col2	19	letter	-10	y	H	-10/y	-10/y	
+col2	20	letter	5-3	n	H	5-3/n	5-3/n	
+col2	21	letter	-4	n	H	-4/n	-4/n	both -4 ("overwritten with 5" noted); worker zoom: -4 then -5 on the next row, rule under -5
+col2	22	letter	-5	y	H	-5/y	-5/y	
+col2	23	letter	2-4	n	H	2-4/n	2-4/n	
+col2	24	letter	1-3	n	H	1-3/n	1-3/n	
+col2	25	letter	6-6	n	H	6-6/n	6-6/n	
+col2	26	letter	6-3	n	H	6-3/n	6-3/n	
+col2	27	letter	4-2	n	H	4-2/n	4-2/n	
+col2	28	letter	-3	n	H	-3/n	-3/n	
+col2	29	letter	5-4	y	H	5-4/y	5-4/y	
+col3	1	letter	21-1	n	H	21-1/n	21-1/n	
+col3	2	letter	-2	n	H	-2/n	-2/n	
+col3	3	letter	4-1	n	H	4-1/n	4-1/n	
+col3	4	letter	21-2	n	H	21-2/n	21-2/n	
+col3	5	letter	6-3	n	H	6-3/n	6-3/n	
+col3	6	letter	4-2	n	H	4-2/n	4-2/n	
+col3	7	letter	5-5	n	H	5-5/n	5-5/n	
+col3	8	letter	4-3	y	H	4-3/y	4-3/y	
