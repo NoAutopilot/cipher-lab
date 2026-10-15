@@ -90,3 +90,11 @@ ERBA-CASE: control below gate on search, not identifiability (true key scores fa
 unchanged), pre-register in HYPOTHESES.md (gate as ERBA-CASE: every control seed >= 0.60; 5 seeds; same word lists) and push before the
 scored run. Control first; target and 10 nulls only if the control passes. This is the second attempt at this design with a changed move
 set; if it fails, log "untested-by-this-tool" and name a different instrument. NOTES section, Verdict.
+
+## Wave 3 (03:0x UTC 15 Oct) -- one job
+Two other default lanes run in parallel (DEFAULT-A2-0209-15, DEFAULT-A4-0235-15); A4-0235 lists pro3055 as this lane's.
+
+### CLIN-SIB3 (Opus, cap 4.5, box 60 min, image-uab.canadiana.ca <= 10): pro3055-clinton-1779 p.244 (finish 3050)
+Exactly CLIN-SIB2's method (its NOTES section and PREREG 7d90ea286): iiif_lines.py crops (command pasted first), two blind passes + one
+reconciliation unit, the same B2 gate and page-permuted-key control. p.244 only; do not start p.247. No images in git. NOTES "## CLIN-SIB3",
+gaps + Verdict, gaps_check.
