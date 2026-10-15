@@ -1,0 +1,20 @@
+line	position	old	op	new	confidence	note
+p2_K15	18	119	retire			was p2_L15/14 (no ink token in LVN-P2RETX): the one ink token here is 129 (flat-foot 2 in the middle, as the 2 of 82 on the same line), carried by p2_K15/19 129 M; 119 H was the per-token read of that same token
+p2_K17	3	149	set	143	M	was p2_L16/3: final digit the flat-top open-tailed 3 (as 30 at K17/8), not the 9 of 39 at K17/15; A=B ink 143
+p2_K17	6	81	set	85	M	was p2_L16/6: long-s 5 (as 85 at K23/2), not the hooked 1 of 81 at K19/5; ink 85
+p2_K17	10	104	keep			was p2_L17/11: first glyph is this hand's curled-head 1 (as 104 at K30/3, 150 at K17/16, 101 at K19/6), not the long-footed 2 of 22/26; ink 204 rejected (204 unattested in all letters)
+p2_K19	22	150	keep			was p2_L19/13: curled-head 1 as 150 at K17/16 and K30/12; ink 250 rejected (250 unattested)
+p2_K22	19	17	set	13	M	was p2_L22/16: second glyph the flat-top 3 (as 38 at K22/18, 139 at K22/20), not the straight-barred 7 of 76/74 on the same line; ink 13
+p2_K23	5	86	set	85	M	was p2_L22/5: long-s 5, identical to 85 at K23/2; ink 85
+p2_K23	6	117	set	118	M	was p2_L22/6: final glyph the stacked-loop 8 (as 81 at K23/7), not the 7 of 77 at K23/4; ink 118
+p2_K24	4	=aray	set	=firay	M	was p2_L23/4: plain word 'firay' (je firay), long-s f clear; ink =firay
+p2_K24	5	71	set	31	M	was p2_L23/5: flat-top 3 + short 1 (as 33 at K24/8), not the barred 7 of 71 at K24/10; ink 31
+p2_K24	6	5	set	6	M	was p2_L23/6: looped 6 as the 6 of 36 at K24/7, not a long-s 5; ink 6
+p2_K24	8	35	set	33	M	was p2_L23/8: two flat-top 3s, no long-s 5; ink 33
+p2_K30	4	84	retire			was p2_L27/11 (the kept H block duplicate): one ink token between 104 and 14, '34' with the flat-top 3, carried by p2_K30/5 34 M
+p2_K32	20	32	set	34	M	was p2_L30/23: 4 written over 2 (over 2>4, the 4 darker); final intent 34, t either way
+p2_K18	14	=gur	retire			LVN-P2RETX insert: misread of =Que (the S row moved here from p2_K19/10)
+p2_K18	15	9	retire			LVN-P2RETX insert: the 9 of 94 split in two (94 H moved here from p2_K19/11)
+p2_K18	16	4	retire			LVN-P2RETX insert: the 4 of 94 split in two
+p2_K19	10	=Que	move	p2_K18/13		was p2_L18/10: on the image it stands on K18 after 127 ('127. Que 94, 24'), not on K19
+p2_K19	11	94	move	p2_K18/13		was p2_L18/11 (no ink token on K19 in LVN-P2RETX): 94 is on K18 after =Que (value kept, H stands); RETX split it as 9 4

@@ -4942,3 +4942,13 @@ reading changed after AUDIT.md: carried into AUDIT.md "LVN-P2B"; verifier wanted
 Next (one line each): verifier eye on the 11 H rows LVN-P2RETX listed + the kept H duplicate p2_L27/11, ~$0.5; a placement pass for the 48
 unplaced p2_K rows and the positional `differs` pairs (retire the near-value duplicates by eye on the deskewed lines), ~$2; the 55 p2b rows
 that stay M (23 differs) to a per-token read only after that pass, ~$3.
+
+## VER-LVN2: verifier eye on the 4611 p2 rows left by LVN-P2RETX/LVN-P2B (15 Oct 2026, 09:11-09:3x UTC by date -u, account 4)
+
+Verifier job (AUDIT.md "VER-LVN2" has the table). Of 15 rows: 10 changed (H -> M, values from the 300-dpi image), 3 kept (104, 150: this
+hand's curled-head 1, ink 204/250 rejected; 94: on K18, moved there with =Que), 2 retired (p2_K15/18 119, p2_K30/4 84: duplicates of an ink
+token another row carries) plus the 3 RETX inserts =gur 9 4 that split the moved "Que 94". Path `lvn4611/corrections_verlvn2.tsv`, last 4611
+stage of settle.py. 4611 full C 1090 -> 1080, M 211 -> 218, tokens 1514 -> 1510; 4610/4611/4616 C/H 2569 of 3334 (77.1%), four letters 61.7%.
+Words improved: beaucoup, tout, grande, soit. D2 holds; N-class unchanged.
+Next (one line): the LVN-P2B placement pass for the unplaced p2_K rows, now also checking every RETX ink 2xx code against the curled-head 1
+(204, 250 were misreads), ~$2.

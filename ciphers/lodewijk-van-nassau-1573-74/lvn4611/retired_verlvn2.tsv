@@ -1,0 +1,6 @@
+line	position	sign	confidence	alt	why
+p2_K15	18	119	H	was 119 M; B:-	lvn4611 per-token 300-dpi read 119 (A150 119, B150 -; P2A031; p2a control 9/10); LVN-P2B order: was p2_L15/14; VER-LVN2 eye: was p2_L15/14 (no ink token in LVN-P2RETX): the one ink token here is 129 (flat-foot 2 in the middle, as the 2 of 82 on the same line), carried by p2_K15/19 129 M; 119 H was the per-token read of that same token
+p2_K30	4	84	H		agree; LVN-P2B order: was p2_L27/11; VER-LVN2 eye: was p2_L27/11 (the kept H block duplicate): one ink token between 104 and 14, '34' with the flat-top 3, carried by p2_K30/5 34 M
+p2_K18	14	=gur	M	A:=gur B:=sur	LVN-P2RETX reconcile (A/B differ); K18/11; ink in no 150-dpi row; LVN-P2B order: was p2_R18a/5; VER-LVN2 eye: LVN-P2RETX insert: misread of =Que (the S row moved here from p2_K19/10)
+p2_K18	15	9	M	A:9 B:9	LVN-P2RETX free read A = B; K18/12; ink in no 150-dpi row; LVN-P2B order: was p2_R18a/6; VER-LVN2 eye: LVN-P2RETX insert: the 9 of 94 split in two (94 H moved here from p2_K19/11)
+p2_K18	16	4	M	A:4 B:4	LVN-P2RETX free read A = B; K18/13; ink in no 150-dpi row; LVN-P2B order: was p2_R18a/7; VER-LVN2 eye: LVN-P2RETX insert: the 4 of 94 split in two

@@ -221,12 +221,13 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4611	p2_K13	14	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	n c e ? <NULL> ? d u n
 4611	p2_K14	14	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	l q u e <NULL> f o n d
 4611	p2_K15	9	124	? U	NULL	M	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	u r i r <NULL> ? s e q
-4611	p2_K15	19	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	e l e m <NULL> e n c t
+4611	p2_K15	18	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	u e l e <NULL> e n c t
 4611	p2_K16	21	95	g I	g	M	word	table rule	c h a n <g>
+4611	p2_K17	3	143	? U	NULL	M	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	e r <NULL> d e s c
 4611	p2_K17	13	135	? U	NULL	M	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	a i n ? <NULL> a u ? herzogvonalba
 4611	p2_K17	17	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	NULL a u ? <herzogvonalba>
-4611	p2_K18	13	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	p r a ? <NULL> o n r a
-4611	p2_K18	23	143	? U	NULL	C	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	n d e NULL <NULL>
+4611	p2_K18	13	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	p r a ? <NULL> g r a n
+4611	p2_K18	22	143	? U	NULL	C	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	n d e NULL <NULL>
 4611	p2_K20	10	137	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	u u ? ? <NULL> z ? herzogvonalba e
 4611	p2_K20	16	200	? U	herzogvonalba	C	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	? NULL z ? <herzogvonalba> e l
 4611	p2_K21	4	200	? U	herzogvonalba	M	word	Groen IV p.224 prints 'vom Herzog von Alba absondern' at 5797 p6 'von 200.122.132.142 abso-'	i n ? <herzogvonalba> a o n s
@@ -238,7 +239,7 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4611	p2_K26	11	124	? U	NULL	M	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	s c h e <NULL> a i l l
 4611	p2_K27	17	127	? U	NULL	M	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	e n t ? <NULL> l e z
 4611	p2_K28	13	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	y u e r <NULL> ? z p i
-4611	p2_K30	15	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	i e n ? <NULL> e x p e
+4611	p2_K30	14	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	i e n ? <NULL> e x p e
 4611	p2_K32	21	134	? U	NULL	M	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	m e n t <NULL>
 4611	p2_K33	3	130	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	a u <NULL> f a i c
 4611	p2_K33	23	107	k I	k	M	word	table rule	r e i f <k> c

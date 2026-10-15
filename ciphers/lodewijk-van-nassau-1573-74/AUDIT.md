@@ -1986,3 +1986,58 @@ p2_K13-K35 (old ids in why); 7 M block duplicates retired to lvn4611/retired_p2.
 tokens 1521 -> 1514; 4610/4611/4616 C/H 2579 of 3338 (77.3%), four letters 2579 of 4171 (61.8%). The 11 H rows contradicted by ink (LVN-P2RETX)
 and the kept H duplicate p2_L27/11 are unruled, for the verifier. Line ids p2_L13-L33 no longer exist in ciphertext_4611.tsv: a row cited
 by its old id is found by "was <id>" in its why. N-class and depth not re-assigned here.
+
+## VER-LVN2: eye rulings on the 4611 p2 rows LVN-P2RETX/LVN-P2B left for a verifier, and the three 15 Oct revisions carried (15 Oct 2026)
+
+Verifier VER-LVN2 (account 4, for LANE DEFAULT-A4-0645-15), 15 Oct 2026, 09:11-09:3x UTC by `date -u`. Not a solver session of
+LVN-4611P2, LVN-P2RETX or LVN-P2B. Image: WVO 04611.pdf fetched once (resources.huygens.knaw.nl, HTTP 200, 3,758,971 bytes), p.2 at
+300 dpi, sha1 36399838ce5c (the same render LVN-4611P2 and LVN-P2RETX used); lines `tools/iiif_lines.py --image <p2 png> --region
+250,140,2200,3000 --prefix p2 --deskew --centres $(cat lvn4611/p2_centres.txt)` (K01-K35), half-line views at 1.6x plus 4x zooms; all
+in session scratch, none in git. One Opus look per row beside exemplars on the same page; no subagents.
+
+**The glyphs.** This hand's 1 in 1xx codes often has a curled, looped head (104 at K30/3, 105 at K30/9, 150 at K17/16 and K30/12, 101 at
+K19/6): a reader can take it for a 2, which is how LVN-P2RETX's ink came to read 204 and 250 -- codes attested nowhere in the 13 letters
+on file. The 3 is flat-topped with an open tail (ʒ), the 5 a long s, the 8 stacked loops, the 7 a straight barred top.
+
+| row (was) | now id | committed | ruling | exemplars | grade | decoded |
+|---|---|---|---|---|---|---|
+| p2_L16/3 | p2_K17/3 | 149 H | **143** changed | ʒ tail as 30 at K17/8; not the 9 of 39 at K17/15 | H -> M | ? -> NULL |
+| p2_L16/6 | p2_K17/6 | 81 H | **85** changed | long-s 5 as 85 at K23/2 | H -> M | e -> e |
+| p2_L17/11 | p2_K17/10 | 104 H | **kept** (ink 204 rejected) | curled-head 1 as 104 at K30/3 | H stands | i |
+| p2_L19/13 | p2_K19/22 | 150 H | **kept** (ink 250 rejected) | curled-head 1 as 150 at K17/16, K30/12 | H stands | (name/null) |
+| p2_L22/5 | p2_K23/5 | 86 H | **85** changed | identical to 85 at K23/2 | H -> M | f -> e (muodfment -> muodement) |
+| p2_L22/6 | p2_K23/6 | 117 H | **118** changed | stacked-loop 8 as 81 at K23/7; not the 7 of 77 | H -> M | m -> m |
+| p2_L22/16 | p2_K22/19 | 17 H | **13** changed | ʒ as 38 at K22/18, 139 at K22/20; not the 7 of 76/74 | H -> M | q -> p (beaucouq -> beaucoup) |
+| p2_L23/4 | p2_K24/4 | =aray H | **=firay** changed | plain word, "je firay" | H -> M | word |
+| p2_L23/5 | p2_K24/5 | 71 H | **31** changed | ʒ + short 1; not the 7 of 71 at K24/10 | H -> M | c -> t |
+| p2_L23/6 | p2_K24/6 | 5 H | **6** changed | looped 6 as in 36 at K24/7 | H -> M | n -> o |
+| p2_L23/8 | p2_K24/8 | 35 H | **33** changed | two ʒ, no long s | H -> M | t -> t (cnut -> tout) |
+| p2_L30/23 | p2_K32/20 | 32 H | **34** changed | a 4 written over a 2, the 4 darker (over 2>4) | H -> M | t -> t |
+| p2_L15/14 (no ink) | p2_K15/18 | 119 H | **retired** | the one ink token is 129 (flat-foot middle 2 as 82 on the line), carried by p2_K15/19 129 M | -- | sequelem -> sequele |
+| p2_L18/11 (no ink) | p2_K19/11 -> p2_K18/14 | 94 H | **kept, moved** to K18 | on the image "127. Que 94, 24" stands on K18; LVN-P2RETX read it =gur 9 4 (inserts K18/14-16 retired) | H stands | onrande -> grande |
+| p2_L27/11 (kept H duplicate) | p2_K30/4 | 84 H | **retired** | one ink token between 104 and 14, "34", carried by p2_K30/5 34 M | -- | soiet -> soit |
+
+Kept 3 (104, 150, 94), changed 10, retired 2 (+3 RETX inserts that duplicated the moved =Que 94), undecided 0. The 150-dpi =Que (S)
+moves with 94. Where the eye disagrees with an H row the value takes the eye and the grade is M (LVN-EYE's convention). Every change that
+alters a letter improves a word (beaucoup, tout, grande, soit, ...dement, sequele); none alters a word for the worse.
+
+**Path.** `lvn4611/corrections_verlvn2.tsv` (19 rows: set/retire/move/keep, keyed by the post-order p2_K ids, old sign asserted),
+applied as the last 4611 stage of `settle.py` after the LVN-P2B reorder; retired rows to `lvn4611/retired_verlvn2.tsv`; touched p2_K
+lines renumbered 1..n. `decode_key.py --check` exit 0 for all 13 decode*.json after regenerating decode.json and decode_4611_full.json;
+`settle.py`, `lvn4611/settle.py`, `lvn4611/build_key.py`, `lvn4611/build_key_p2.py`, `lvn4611/settle_p3L00.py`, `lvn10/apply.py`,
+`lvn16/apply.py --check`, `lvn4611/retx_p2.py check`, `axnames/revisions.py --check` (regenerated) exit 0.
+
+**Counts (rule 4), C/H before -> after.** 4611 full (decode_4611_full.json): tokens 1514 -> 1510, C 1090 -> 1080, H 3, M 211 -> 218,
+I 70, U 140 -> 139. decode.json 4611 (key.tsv): C 1015 -> 1005, M 173 -> 179, I 75, U 251. 4610/4611/4616 C/H **2579 of 3338 (77.3%)
+-> 2569 of 3334 (77.1%)**; four letters **2579 of 4171 (61.8%) -> 2569 of 4167 (61.7%)**.
+
+**Rule-10 propagation of LVN-4611P2, LVN-P2RETX, LVN-P2B (sections above) and these rulings.** The three solver records are carried in
+this file already (their own sections); with this section the 4611 p2 reading is current here. SECOND-OPINIONS-QUEUE rows for this target
+(SO-LODEWIJK-1573-74, SO-LODEWIJK-5797): grep of PROMPT-chatgpt.md and PROMPT-chatgpt-5797.md for every old and new word above finds no
+quoted 4611 p2 line, so no queued prompt changes. No safe sentence or status.json depth_sentence sits on 4611 p2 (the 4610/4611/4616 row's
+sentence quotes 4610).
+
+**Depth (rule 4a).** 4610/4611/4616 at 77.1% C/H on the full-key token files: under D3's 80% line, so the row stays **D2**, outward wording
+"partially deciphered (about 60%)" (status.json depth_pct 62.6 on the DEPTH-REGRADE basis; four-letter figure now 61.7%). `tools/depth_check.py`
+exit 0. status.json not edited (the parent's). **N-class unchanged** (4610/4611/4616 N4, 4612 N3; key ours): the search basis did not change.
+Requests: resources.huygens.knaw.nl 1. Subagents: none.
