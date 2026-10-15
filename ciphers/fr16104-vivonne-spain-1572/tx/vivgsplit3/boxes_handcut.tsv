@@ -1,0 +1,55 @@
+tid	leaf	line	tpos	cls	image	x	y	w	h	verdict	registered	note
+f000	f102r	f102r_L04	6	f	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L04_s1.jpg	438	28	62	78	whole	yes	g after yym, before S tz; looped top, lower loop ends above the crop foot
+f001	f102r	f102r_L06	30	f	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L06_s2.jpg	493	18	66	84	whole	yes	m g m; looped top on a stem, S-like lower loop; next line's stroke at crop foot left of box
+f002	f102r	f102r_L15	38	f	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L15_s2.jpg	818	28	40	78	whole	yes	d g m after tz; clear of the tall d; box moved after check look 1 (first box sat on the neighbour); moved again after check look 2
+f003	f102r	f102r_L18	49	f	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L18_s2.jpg	1348	30	55	76	whole	no	tz x g S tz; NOT in PREREG list (lost to VIV-FKEY alignment check), report-only
+f004	f102r	f102r_L26	38	f	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L26_s2.jpg	680	28	46	78	whole	yes	p g m g; first g after p; box moved after check look 1 (first box sat on the neighbour)
+f025	f103r	f103r_L22	4	f	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L22_s1.jpg	372	30	40	90	whole	yes	3 d p g g S p; first of the two g-like signs; box moved after check look 1 (first box sat on the neighbour)
+f026	f103r	f103r_L23	13	f	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L23_s1.jpg	808	32	52	84	whole	yes	m m V g g S p; first g (as VIV-GSPLIT2's box 809,35,52,70, re-looked, taller)
+f027	f103r	f103r_L32	16	f	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L32_s1.jpg	960	35	48	85	whole	yes	6 g S tz; S excluded
+f028	f103r	f103r_L34	55	f	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L34_s2.jpg	1452	10	36	100	unsure	yes	p g tz in the gutter shadow; g touches tz, no clean box (as VIV-GSPLIT2)
+f029	f103r	f103r_L35	41	f	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L35_s2.jpg	922	30	48	90	whole	yes	y m g tz 8 6
+f050	f201r	f201r_L03	49	f	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L03_s2.jpg	826	30	50	86	unsure	yes	3 2 g 6; lower loop reaches the crop foot (116), possibly clipped (as VIV-GSPLIT2)
+f051	f201r	f201r_L18	48	f	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L18_s2.jpg	1134	28	44	86	whole	yes	p m g tz; tail of the lower loop sweeps left under m; box moved after check look 1 (first box sat on the neighbour)
+f072	f201v	f201v_L06	35	f	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L06_s3.jpg	420	15	50	109	unsure	yes	o o d g d g; first g, large lower loop to y~118 sweeping left under d; box moved after check look 1 (first box sat on the neighbour); moved again after check look 2; the tall d before it falls inside any box that holds the lower loop
+f073	f201v	f201v_L29	53	f	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L29_s3.jpg	676	35	44	75	whole	yes	n g S tz g m; the sign before is a dash-like n end
+f074	f201v	f201v_L32	38	f	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L32_s3.jpg	744	30	46	84	whole	yes	k m g m g tz; first g after k m
+f095	f211r	f211r_L09	6	f	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L09_s1.jpg	896	20	46	78	whole	yes	R g S tz; window re-cut by eye (the proportional pointer missed: line starts late)
+f096	f211r	f211r_L10	44	f	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L11_s3.jpg	1004	22	46	78	whole	yes	d d p g tz 6 @ (truth L10 = crop L11); box moved after check look 1 (first box sat on the neighbour)
+f115	f202r	f202r_L24	26	f	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L24_s2.jpg	755	25	48	95	whole	yes	o o g g S tz; second (larger, looped) g
+f116	f202r	f202r_L27	50	f	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L27_s3.jpg	1228	28	40	95	whole	yes	tz 6 g S, before the gutter; box moved after check look 1 (first box sat on the neighbour); moved again after check look 2; confirmed check r1
+f117	f202r	f202r_L29	10	f	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L29_s1.jpg	628	28	50	96	whole	yes	j R g m o e
+f118	f202r	f202r_L32	46	f	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L32_s3.jpg	1132	28	44	100	whole	yes	s g 8 tz; descender runs down-left under the s; box moved after check look 1 (first box sat on the neighbour)
+f139	f211v	f211v_L06	22	f	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L06_s2.jpg	656	22	44	90	whole	yes	o o g S tz g; box moved after check look 1 (first box sat on the neighbour)
+r005	f102r	f102r_L02	34	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L02_s2.jpg	378	30	40	76	whole	yes	@ m g m z; moved after check 1; confirmed check 2
+r052	f201r	f201r_L03	54	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L03_s2.jpg	1036	30	40	80	whole	yes	h g m x; moved off the k after check 1; confirmed check 2
+r075	f201v	f201v_L01	9	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L01_s1.jpg	568	35	36	75	whole	yes	tz S g s p; 9-shaped g
+r097	f211r	f211r_L02	8	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L02_s1.jpg	936	22	40	75	whole	yes	6 s g m p : m (found in r098's first window)
+r119	f202r	f202r_L01	15	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L01_s1.jpg	960	30	34	85	whole	yes	d o o g x z; moved off the o after check 1; confirmed check 2
+r006	f102r	f102r_L03	8	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L03_s1.jpg	590	35	40	75	whole	yes	# s g # tz
+r031	f103r	f103r_L02	27	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L02_s1.jpg	1552	30	46	90	unsure	yes	tz g at the crop's right edge (1600): clipped
+r053	f201r	f201r_L05	46	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L05_s2.jpg	1064	30	38	80	whole	yes	o o t g s p; moved off the t after check 1; confirmed check 2
+r076	f201v	f201v_L01	18	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L01_s1.jpg	996	30	32	80	whole	yes	# m g pi tz; moved off the m after check 1; confirmed check 2
+r120	f202r	f202r_L03	37	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L03_s3.jpg	493	30	40	85	whole	yes	: s g # tz
+r141	f211v	f211v_L01	49	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L01_s3.jpg	1303	30	40	80	whole	yes	m o o g tz 6; moved left after check 1; confirmed check 2
+r032	f103r	f103r_L03	48	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L03_s2.jpg	905	30	34	85	whole	yes	m x o g tz d m; first box sat on the d; confirmed check 2
+r030	f103r	f103r_L01	21	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L01_s1.jpg	1456	30	34	90	whole	yes	y m o o g S z; wide window (pointer missed); moved after check 2; confirmed check 3
+r098	f211r	f211r_L02	18	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L02_s1.jpg	1483	22	28	75	whole	yes	y m a g d; wide window; moved after check 2
+r140	f211v	f211v_L01	21	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L01_s2.jpg	700	25	32	85	whole	yes	R m g tz p; wide window; confirmed check 2
+r007	f102r	f102r_L04	16	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L04_s1.jpg	1052	28	38	78	whole	yes	y y s g m : d; wide window; moved after check 2; confirmed check 3
+r054	f201r	f201r_L07	27	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L07_s1.jpg	1313	30	40	80	whole	yes	m x g m S; confirmed check 2
+r077	f201v	f201v_L06	24	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L06_s2.jpg	575	30	34	85	whole	yes	s # g m y; moved after check 2; confirmed check 3
+r121	f202r	f202r_L05	4	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L05_s1.jpg	350	30	36	85	whole	yes	7 # s g :; confirmed check 2
+r142	f211v	f211v_L07	6	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L07_s1.jpg	403	30	34	90	whole	yes	o o m g #; tail sweeps left under o o m, beyond the box (as f051); moved after check 2
+r008	f102r	f102r_L07	44	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L07_s2.jpg	1128	30	40	76	whole	yes	d o m g d tz; confirmed check 2
+r033	f103r	f103r_L05	2	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L05_s1.jpg	288	30	28	85	whole	yes	o g tz d; confirmed check 2
+r055	f201r	f201r_L10	41	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L10_s2.jpg	562	30	30	80	whole	yes	tz p g s p; moved after check 2; confirmed check 3
+r078	f201v	f201v_L07	13	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L07_s1.jpg	872	30	40	85	whole	yes	# m g 2 tz; moved after check 2; confirmed check 3
+r122	f202r	f202r_L09	22	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L09_s2.jpg	628	30	36	90	whole	yes	x 4 g S p; confirmed check 2
+r143	f211v	f211v_L13	33	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L13_s3.jpg	421	30	34	85	whole	yes	m o o g d m; moved after check 2; confirmed check 3
+r009	f102r	f102r_L08	48	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L08_s2.jpg	1513	30	38	76	whole	yes	@ m # g 7; confirmed check 2
+r034	f103r	f103r_L09	16	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L09_s1.jpg	846	30	30	90	whole	yes	f p g m g; confirmed check 2
+r056	f201r	f201r_L11	41	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L11_s2.jpg	552	30	30	80	whole	yes	m o o g d z; moved after check 2; confirmed check 3
+r079	f201v	f201v_L11	20	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L11_s1.jpg	1135	30	36	85	whole	yes	n # g d o o; confirmed check 2
+r099	f211r	f211r_L02	24	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L02_s2.jpg	783	22	30	78	unsure	yes	s tz g m x 7; wide window; check 3: box sat on the neighbour, re-placed box not confirmed (job stopped cutting)
+r100	f211r	f211r_L03	5	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L03_s1.jpg	688	22	34	78	unsure	yes	tz d o o g m p; wide window (line starts late); check 3: box sat on the neighbour, re-placed box not confirmed (job stopped cutting)

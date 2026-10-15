@@ -1,0 +1,288 @@
+{
+ "material": {
+  "N_f": 18,
+  "N_r": 29,
+  "per_leaf": {
+   "f102r": [
+    4,
+    5
+   ],
+   "f103r": [
+    4,
+    4
+   ],
+   "f201r": [
+    1,
+    5
+   ],
+   "f201v": [
+    2,
+    5
+   ],
+   "f211r": [
+    2,
+    2
+   ],
+   "f202r": [
+    4,
+    4
+   ],
+   "f211v": [
+    1,
+    4
+   ]
+  }
+ },
+ "registered": {
+  "tag": "registered_handcut",
+  "pooled_1nn": {
+   "tp": 16,
+   "fp": 6,
+   "fn": 2,
+   "tn": 23,
+   "f_recall": 0.8889,
+   "f_precision": 0.7273,
+   "f1": 0.8,
+   "r_recall": 0.7931,
+   "r_precision": 0.92,
+   "n_f": 18,
+   "n_r": 29
+  },
+  "pooled_5nn_report_only": {
+   "tp": 16,
+   "fp": 2,
+   "fn": 2,
+   "tn": 27,
+   "f_recall": 0.8889,
+   "f_precision": 0.8889,
+   "f1": 0.8889,
+   "r_recall": 0.931,
+   "r_precision": 0.931,
+   "n_f": 18,
+   "n_r": 29
+  },
+  "folds": {
+   "f102r": {
+    "nn1": {
+     "tp": 4,
+     "fp": 1,
+     "fn": 0,
+     "tn": 4,
+     "f_recall": 1.0,
+     "f_precision": 0.8,
+     "f1": 0.8889,
+     "r_recall": 0.8,
+     "r_precision": 1.0,
+     "n_f": 4,
+     "n_r": 5
+    },
+    "nn5_report_only": {
+     "tp": 4,
+     "fp": 1,
+     "fn": 0,
+     "tn": 4,
+     "f_recall": 1.0,
+     "f_precision": 0.8,
+     "f1": 0.8889,
+     "r_recall": 0.8,
+     "r_precision": 1.0,
+     "n_f": 4,
+     "n_r": 5
+    },
+    "testable": true
+   },
+   "f103r": {
+    "nn1": {
+     "tp": 3,
+     "fp": 0,
+     "fn": 1,
+     "tn": 4,
+     "f_recall": 0.75,
+     "f_precision": 1.0,
+     "f1": 0.8571,
+     "r_recall": 1.0,
+     "r_precision": 0.8,
+     "n_f": 4,
+     "n_r": 4
+    },
+    "nn5_report_only": {
+     "tp": 3,
+     "fp": 0,
+     "fn": 1,
+     "tn": 4,
+     "f_recall": 0.75,
+     "f_precision": 1.0,
+     "f1": 0.8571,
+     "r_recall": 1.0,
+     "r_precision": 0.8,
+     "n_f": 4,
+     "n_r": 4
+    },
+    "testable": true
+   },
+   "f201r": {
+    "nn1": {
+     "tp": 0,
+     "fp": 1,
+     "fn": 1,
+     "tn": 4,
+     "f_recall": 0.0,
+     "f_precision": 0.0,
+     "f1": 0.0,
+     "r_recall": 0.8,
+     "r_precision": 0.8,
+     "n_f": 1,
+     "n_r": 5
+    },
+    "nn5_report_only": {
+     "tp": 0,
+     "fp": 1,
+     "fn": 1,
+     "tn": 4,
+     "f_recall": 0.0,
+     "f_precision": 0.0,
+     "f1": 0.0,
+     "r_recall": 0.8,
+     "r_precision": 0.8,
+     "n_f": 1,
+     "n_r": 5
+    },
+    "testable": false
+   },
+   "f201v": {
+    "nn1": {
+     "tp": 2,
+     "fp": 1,
+     "fn": 0,
+     "tn": 4,
+     "f_recall": 1.0,
+     "f_precision": 0.6667,
+     "f1": 0.8,
+     "r_recall": 0.8,
+     "r_precision": 1.0,
+     "n_f": 2,
+     "n_r": 5
+    },
+    "nn5_report_only": {
+     "tp": 2,
+     "fp": 0,
+     "fn": 0,
+     "tn": 5,
+     "f_recall": 1.0,
+     "f_precision": 1.0,
+     "f1": 1.0,
+     "r_recall": 1.0,
+     "r_precision": 1.0,
+     "n_f": 2,
+     "n_r": 5
+    },
+    "testable": false
+   },
+   "f211r": {
+    "nn1": {
+     "tp": 2,
+     "fp": 1,
+     "fn": 0,
+     "tn": 1,
+     "f_recall": 1.0,
+     "f_precision": 0.6667,
+     "f1": 0.8,
+     "r_recall": 0.5,
+     "r_precision": 1.0,
+     "n_f": 2,
+     "n_r": 2
+    },
+    "nn5_report_only": {
+     "tp": 2,
+     "fp": 0,
+     "fn": 0,
+     "tn": 2,
+     "f_recall": 1.0,
+     "f_precision": 1.0,
+     "f1": 1.0,
+     "r_recall": 1.0,
+     "r_precision": 1.0,
+     "n_f": 2,
+     "n_r": 2
+    },
+    "testable": false
+   },
+   "f202r": {
+    "nn1": {
+     "tp": 4,
+     "fp": 0,
+     "fn": 0,
+     "tn": 4,
+     "f_recall": 1.0,
+     "f_precision": 1.0,
+     "f1": 1.0,
+     "r_recall": 1.0,
+     "r_precision": 1.0,
+     "n_f": 4,
+     "n_r": 4
+    },
+    "nn5_report_only": {
+     "tp": 4,
+     "fp": 0,
+     "fn": 0,
+     "tn": 4,
+     "f_recall": 1.0,
+     "f_precision": 1.0,
+     "f1": 1.0,
+     "r_recall": 1.0,
+     "r_precision": 1.0,
+     "n_f": 4,
+     "n_r": 4
+    },
+    "testable": true
+   },
+   "f211v": {
+    "nn1": {
+     "tp": 1,
+     "fp": 2,
+     "fn": 0,
+     "tn": 2,
+     "f_recall": 1.0,
+     "f_precision": 0.3333,
+     "f1": 0.5,
+     "r_recall": 0.5,
+     "r_precision": 1.0,
+     "n_f": 1,
+     "n_r": 4
+    },
+    "nn5_report_only": {
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "tn": 4,
+     "f_recall": 1.0,
+     "f_precision": 1.0,
+     "f1": 1.0,
+     "r_recall": 1.0,
+     "r_precision": 1.0,
+     "n_f": 1,
+     "n_r": 4
+    },
+    "testable": false
+   }
+  },
+  "null_f1_1nn": {
+   "mean": 0.4531,
+   "p95": 0.6195,
+   "p99": 0.6669,
+   "max": 0.6857
+  },
+  "null_f1_5nn_report_only": {
+   "mean": 0.3863,
+   "p99": 0.706
+  },
+  "gate": {
+   "recall": true,
+   "precision": true,
+   "f1_over_null_p99": true
+  },
+  "verdict": "PASS"
+ },
+ "r_sample_complete": false,
+ "f191_step_runs": true
+}

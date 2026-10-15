@@ -4095,3 +4095,43 @@ five votes A B C D E), stats_5pass.json, owner_questions_5pass.tsv. rec.tsv and 
 - Reading: the fifth vote makes the band cleaner by grade (37 fewer M) without lengthening any run of words: the band's H letters are not forming
   vocabulary at the stretch instrument's resolution. Suggestion (not done, Usage 7): the 62 still-flagged columns and the 9 tieEC 3/z positions are
   the owner-sorter set for L22-L36 if the band is worth another human pass.
+
+## VIV-GSPLIT3 (15 Oct 2026, 05:57-06:1x UTC by date -u, account-4 worker for LANE VIV-KEYSTONE): the g-split with every tile hand-cut -- gate PASS at N_f = 18 on an incomplete r sample
+Brief: .claude/briefs/runs/2026-10-13-acct4-keystone-viv-jobs.md "JOB VIV-GSPLIT3". PREREG-VIVGSPLIT3.md pushed ed30bb013 before any tile was cut, with the
+material count checked against the registered minimum: ceiling 21 label-g truth-f anchors (f.102r 4, f.103r 5, f.201r 2, f.201v 3, f.211r 2, f.202r 4, f.211v 1)
+>= 12. Measurement only: key.tsv, every reading and status.json untouched; a verifier decides any key row. Different instrument (rule 3 third-attempt clause):
+**no tile from a map** -- every f and r tile boxed by eye on its line crop (tx/vivgsplit3/panels.py makes look sheets: a window per target with a crop-x ruler,
+the truth label neighbours and the clerk context; the window is only a pointer), every box logged in tx/vivgsplit3/boxes_handcut.tsv with whole/unsure.
+**Hand-cut looks:** 3 f sheets + 2 f check sheets (each box drawn back on the crop and re-looked); 2 r sheets (32 targets) + 2 wide re-windows + 3 check sheets.
+The first eye placement sat on a neighbour sign for 9 of 21 f and about half the r; every such box was moved and re-looked before entering.
+f: **whole 18**, unsure 3 (f.103r L34:55 touches tz in the gutter; f.201r L03:49 lower loop at the crop foot; f.201v L06:35 the tall d before it falls inside
+any box that holds the lower loop); f.102r L18:49 (a truth g/f row outside the PREREG list, lost to VIV-FKEY's alignment check) boxed but not entered.
+r: seeded sample 20 per leaf (138 targets, random.Random(20261015)), cut in leaf-interleaved order; **stopped after 32** (whole 29, unsure 3) because the
+session's own cost could not be read and the looks already exceeded the brief's price of 8 vision calls -- the PREREG's "r sample incomplete" branch.
+**Material: N_f = 18, N_r = 29** (per leaf f/r: f.102r 4/5, f.103r 4/4, f.201r 1/5, f.201v 2/5, f.211r 2/2, f.202r 4/4, f.211v 1/4).
+**Instrument** as VIV-GSPLIT2 (glyph_atlas jitter_tiles re-cut rel 0.78 mh 58, feats(project=True) on tx/vivcls/atlas, 1-NN registered, 5-NN report-only),
+`gsplit.py material3/run3/check3`. Declared deviation: the regenerated tx/vivcls/atlas is not byte-identical on f.201r (seg.py's map_signs.tsv differs on
+about 340 of 4,992 rows in this container; the committed map_signs.tsv was restored, the projection fitted on the regenerated atlas).
+| run | N_f / N_r | pooled f recall | f precision | F1 | null F1 p99 (200, seed 20261015) | verdict |
+|---|---|---|---|---|---|---|
+| **registered, hand-cut, seven leaves** | **18 / 29** | **0.889 (16/18)** | **0.727 (16/22)** | **0.800** | **0.667** (mean 0.453) | **PASS (r sample incomplete)** |
+| 5-NN distance-weighted (report only) | 18 / 29 | 0.889 | 0.889 | 0.889 | 0.706 | -- |
+Per fold (1-NN; every fold N_f < 4 except f.102r, f.103r, f.202r at 4): f.102r 4/4 f found (F1 0.889), f.103r 3/4 (0.857), f.201r 0/1 (one FP), f.201v 2/2
+(0.80), f.211r 2/2 (0.80), f.202r 4/4 (1.00), f.211v 1/1 (0.50, two FP); fold recall 0-1.0. r recall 0.793 (23/29): **6 of 29 truth-r called f**
+(f.102r L07:44, f.201r L03:54, f.201v L06:24, f.211r L02:8, f.211v L01:49, f.211v L13:33; three of six have f.201v L29:53 as nearest tile -- a 9-shaped g on the eye,
+not a looped top -- the others f.201v L32:38, f.102r L15:38, f.201r L18:48). Per tile: tx/vivgsplit3/per_tile.tsv.
+**Caveat that decides the reading (report-only arithmetic, not a gate):** precision depends on the f:r ratio, and the r side is 21% of its registered sample.
+At the observed r-to-f error rate (6/29 = 0.21) a full 138-tile r sample would give about 29 false f against 16 true f, precision about 0.36 -- under the
+0.60 gate. So the PASS licenses: the hand-cut f tiles are recognisable as f from other leaves' hand-cut f tiles (recall 0.889 vs VIV-GSPLIT2's 0.455 on map
+tiles -- the map, not the classifier, was the limit, as GSPLIT2 said); it does not license a g -> f relabelling of ink 63, where truth r outnumbers f
+about 15:1 among label g.
+**f.191r step: not run** (PREREG s.4 would run it on N_f >= 12 AND PASS; held because the r sample is incomplete and the projected precision fails, and
+because hand-cutting the 28+ f.191r g tiles is another 3-4 looks past the cap). Strict run unchanged at 37. No key row, no reading change.
+Reproduce: crops per images/manifest.json "viv67"/"vivcls" (f.201r), "viv67b" (f.201v), "viv67c" (f.202r, into $VIVGSPLIT3_SCRATCH/p67c), "viv70" (f.211r:
+the cut's band L10 duplicates L09, so truth L10 = crop L11), "viv70c" (f.211v); f.102r/f.103r committed; atlas by tx/vivcls/seg.py; then
+`VIVGSPLIT3_SCRATCH=DIR python3 tx/vivgsplit/gsplit.py check3` (exit 0 when tx/vivgsplit3/result.json is current; 0 here). `f191.py --check` passes.
+Requests: openapi.bnf.fr 5 (c206, c207 left and right, c216, c217 native regions; HTTP 200, one at a time >= 3 s; take/release lines). Subagent calls 0;
+vision: this worker's own 12 looks (over the brief's 8). Cost not visible to this session. Report what was found and where it was not found; no novelty
+classified, no depth set.
+Next (one line, not done here): finish the hand-cut r sample (106 targets left in tx/vivgsplit3/targets.tsv order, about 7 look+check pairs, ~$4) and
+re-run check3 at the registered ratio; only a PASS there opens the f.191r step.

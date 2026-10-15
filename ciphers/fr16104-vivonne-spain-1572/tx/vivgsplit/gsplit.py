@@ -5,6 +5,7 @@
   python3 .../tx/vivgsplit/gsplit.py run           # leave-one-leaf-out with tools/glyph_atlas.py classify --boxes, 200 shuffled-label nulls
   python3 .../tx/vivgsplit/gsplit.py check         # re-run material + run and fail if result.json would change (rule 7)
   VIVGSPLIT2_SCRATCH=DIR gsplit.py material2 | run2 | check2   # VIV-GSPLIT2 (PREREG-VIVGSPLIT2.md): five leaves -> tx/vivgsplit2/
+  VIVGSPLIT3_SCRATCH=DIR gsplit.py material3 | run3 | check3   # VIV-GSPLIT3 (PREREG-VIVGSPLIT3.md): every tile hand-cut -> tx/vivgsplit3/
 
 Material: VIV-CLS round-2 label-aware map tiles at op 1:1 (one tile on the token): tx/vivcls/train/map_r2_f10{2,3}r.tsv against the truth
 skeleton; f.201r's map is against passA (tx/vivcls/real/map_r2_f201r.tsv), carried to truth positions by tx/vivhuman/sets.aligned (as
@@ -555,6 +556,42 @@ def cmd_run2(a):
     print('N_f', out['N_f'], 'N_r', out['N_r'], 'f191 step runs', out['f191_step_runs'])
 
 
+OUT3 = os.path.join(FOLD, 'tx', 'vivgsplit3')
+LEAVES3 = ('f102r', 'f103r', 'f201r', 'f201v', 'f211r', 'f202r', 'f211v')
+
+
+def material3():
+    """PREREG-VIVGSPLIT3 s.1-2: only hand-cut boxes (tx/vivgsplit3/boxes_handcut.tsv), verdict whole, registered yes; no map tile."""
+    scr = os.environ.get('VIVGSPLIT3_SCRATCH', '')
+    mat = []
+    for h in rd(os.path.join(OUT3, 'boxes_handcut.tsv')):
+        if h['verdict'] != 'whole' or h['registered'] != 'yes':
+            continue
+        img = h['image'].replace('$VIVGSPLIT3_SCRATCH', scr)
+        mat.append(dict(leaf=h['leaf'], line=h['line'], tpos=h['tpos'], sid=h['tid'], cls=h['cls'], plain=h['cls'], src='handcut',
+                        image=img if os.path.isabs(img) else img, x=h['x'], y=h['y'], w=h['w'], h=h['h']))
+    mat.sort(key=lambda m: (LEAVES3.index(m['leaf']), m['line'], float(m['tpos'])))
+    summ = dict(N_f=sum(m['cls'] == 'f' for m in mat), N_r=sum(m['cls'] == 'r' for m in mat),
+                per_leaf={l: [sum(m['leaf'] == l and m['cls'] == c for m in mat) for c in 'fr'] for l in LEAVES3})
+    return mat, summ
+
+
+def cmd_run3(a):
+    mat, summ = material3()
+    X = recut_feats(mat)
+    leaves = [l for l in LEAVES3 if any(m['leaf'] == l for m in mat)]
+    r, rows = gate_run(mat, X, leaves, 'registered_handcut')
+    out = dict(material=summ, registered=r, r_sample_complete=False,
+               f191_step_runs=summ['N_f'] >= 12 and r['verdict'] == 'PASS')
+    wr(os.path.join(OUT3, 'per_tile.tsv'), list(rows[0].keys()), rows)
+    json.dump(out, open(os.path.join(OUT3, 'result.json'), 'w'), indent=1)
+    print('material', json.dumps(summ))
+    print('registered pooled', r['pooled_1nn'], 'null', r['null_f1_1nn'], r['verdict'], r['gate'])
+    print('5nn report-only', r['pooled_5nn_report_only'], r['null_f1_5nn_report_only'])
+    for h, f in r['folds'].items():
+        print('   ', h, f['nn1']['n_f'], f['nn1']['n_r'], 'rec', f['nn1']['f_recall'], 'pre', f['nn1']['f_precision'], 'f1', f['nn1']['f1'])
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest='cmd', required=True)
@@ -566,6 +603,9 @@ def main():
     sp.add_parser('material2')
     sp.add_parser('run2')
     sp.add_parser('check2')
+    sp.add_parser('material3')
+    sp.add_parser('run3')
+    sp.add_parser('check3')
     a = ap.parse_args()
     if a.cmd == 'material':
         material()
@@ -579,6 +619,14 @@ def main():
         material2()
     elif a.cmd == 'run2':
         cmd_run2(a)
+    elif a.cmd == 'material3':
+        print(json.dumps(material3()[1]))
+    elif a.cmd == 'run3':
+        cmd_run3(a)
+    elif a.cmd == 'check3':
+        old = open(os.path.join(OUT3, 'result.json')).read()
+        cmd_run3(a)
+        sys.exit(0 if open(os.path.join(OUT3, 'result.json')).read() == old else 'tx/vivgsplit3/result.json is stale')
     elif a.cmd == 'check2':
         old = open(os.path.join(OUT2, 'result.json')).read()
         cmd_run2(a)
