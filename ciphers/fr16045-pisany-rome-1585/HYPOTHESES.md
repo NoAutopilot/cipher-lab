@@ -180,3 +180,7 @@ No key86 change (running-text gloss, no sign-level value; T40 not covered).
   (candidates for a separate PREREG; across pages T45 and T57 have settled on their own cells, f.301v/f.275r). Read as transcription label
   slips in tx86 f.244r (the crossed looped p consistently labelled T45), not a table value. Nothing applied; key86/tx86/readings unchanged.
   Status: 22 relabel candidates, untested by re-score (next: UNA2-style G1-G3 re-score of f.244r against its known-answer copy).
+
+## PIS-121 (15 Oct 2026): 1585 table on f.121 vs margin gloss
+- control: power check (gloss as read, enciphered, e=0.376) 5/5; target: reconciled S 32 vs permuted-table p99 33 (rank 956/1000): FAIL by PREREG-PIS-121.md.
+- Reading: a miss of unknown cause (the power control cannot vary with gloss-read error); not a negative on the table; no value changed.

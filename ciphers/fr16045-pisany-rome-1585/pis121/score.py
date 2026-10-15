@@ -179,13 +179,13 @@ def run():
         syn = synth(gloss, labels, vals, len(R), e, 100 + sd)
         s, _ = score(syn, labels, vals, gloss)
         nl = null(syn, labels, vals, gloss, range(1000, 1200))
-        power.append({'seed': 100 + sd, 'S': s, 'null_p99': p99(nl), 'pass': s > p99(nl)})
+        power.append({'seed': 100 + sd, 'S': float(s), 'null_p99': p99(nl), 'pass': bool(s > p99(nl))})
     res['power'] = power
-    res['power_pass'] = sum(p['pass'] for p in power) >= 4
+    res['power_pass'] = bool(sum(p['pass'] for p in power) >= 4)
     for name, seq, nd in (('R', R, 1000), ('A', A, 200), ('B', B, 200)):
         s, per = score(seq, labels, vals, gloss)
         nl = null(seq, labels, vals, gloss, range(nd))
-        res[name] = {'S': s, 'per_block': per, 'null_mean': float(np.mean(nl)), 'null_p99': p99(nl),
+        res[name] = {'S': float(s), 'per_block': {k: float(v) for k, v in per.items()}, 'null_mean': float(np.mean(nl)), 'null_p99': p99(nl),
                      'rank': int(sum(x < s for x in nl)), 'draws': nd}
     r = res['R']
     res['verdict'] = ('PASS' if r['S'] > r['null_p99'] else ('FAIL' if res['power_pass'] else 'NON-TEST'))

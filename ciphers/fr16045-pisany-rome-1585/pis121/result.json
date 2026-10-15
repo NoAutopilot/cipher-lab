@@ -1,0 +1,83 @@
+{
+ "A": {
+  "S": 27.0,
+  "draws": 200,
+  "null_mean": 25.455,
+  "null_p99": 33.0,
+  "per_block": {
+   "A": 9.0,
+   "B": 11.0,
+   "C": 7.0
+  },
+  "rank": 137
+ },
+ "B": {
+  "S": 23.0,
+  "draws": 200,
+  "null_mean": 26.675,
+  "null_p99": 34.0,
+  "per_block": {
+   "A": 9.0,
+   "B": 8.0,
+   "C": 6.0
+  },
+  "rank": 11
+ },
+ "R": {
+  "S": 32.0,
+  "draws": 1000,
+  "null_mean": 26.821,
+  "null_p99": 33.0,
+  "per_block": {
+   "A": 11.0,
+   "B": 14.0,
+   "C": 7.0
+  },
+  "rank": 956
+ },
+ "err_2reader": 0.3756,
+ "gloss_letters": {
+  "A": 101,
+  "B": 99,
+  "C": 125
+ },
+ "power": [
+  {
+   "S": 262.0,
+   "null_p99": 35.01999999999998,
+   "pass": true,
+   "seed": 100
+  },
+  {
+   "S": 250.0,
+   "null_p99": 35.0,
+   "pass": true,
+   "seed": 101
+  },
+  {
+   "S": 223.0,
+   "null_p99": 34.0,
+   "pass": true,
+   "seed": 102
+  },
+  {
+   "S": 263.0,
+   "null_p99": 34.0,
+   "pass": true,
+   "seed": 103
+  },
+  {
+   "S": 226.0,
+   "null_p99": 36.0,
+   "pass": true,
+   "seed": 104
+  }
+ ],
+ "power_pass": true,
+ "signs": {
+  "A": 608,
+  "B": 631,
+  "R": 628
+ },
+ "verdict": "FAIL"
+}

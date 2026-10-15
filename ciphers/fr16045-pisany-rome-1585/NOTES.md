@@ -140,7 +140,7 @@ Read so far: 1 of 16 letters partly (f.244r, 9 cipher lines, known-answer PASS w
 - 4 Nov 1586 (f.272-280) and 24 Mar 1587 (f.297-303) vs Colbert pp.110 ff. / pp.324 ff. - blocker: not-attempted; canvases now c556-c572 and c606-c618 under the new offset (re-check by folio number first); next: view, crop, decode with key86, ~$4 each
 - key86 cell corrections (T31, T45, T47, T49, T57) - blocker: not-attempted; outside this brief; next: eye check of those tokens on the f.244r crops against the anchored letters, then re-run kp86.py on a corrected key as a separate pre-registered test, ~$1
 - 18 June 1588 letters (fr.16046 ff.165, 179) not located in Colbert 16 pt II - blocker: not-attempted; outside this brief; next: read headings on Colbert c812-c840, <= 8 requests, ~$0.5
-- f.121 (c252) glossed passage as a check of the 1585 table - blocker: not-attempted; outside this brief; next: crops + gloss read, ~$3
+- f.121 (c252) glossed passage as a check of the 1585 table - blocker: not-attempted; PIS-121 (15 Oct 2026, PREREG fe4d2d705) ran it: two blind cipher passes (err_2reader 0.376 by the scorer, 58.1% column agreement) + one blind gloss pass (23/23 gloss lines with illegible letters) + one reconciliation (crops opened for 5 of 27 lines only); registered score FAIL (S 32 vs permuted-table p99 33, rank 956/1000; power check 5/5), but the power control enciphers the gloss as read and so cannot vary with gloss-read error: a miss of unknown cause, not a negative on the table; no table value changed; next: a person's (or two-pass, line-per-call) read of the three margin gloss blocks, then re-run pis121/score.py unchanged on the new gloss TSV, ~$2
 - Anticona memoire p.105 - blocker: not-attempted; Academia.edu login wall from the cloud, no LOCAL-QUEUE row filed yet; next: LOCAL-QUEUE row by the lane, ~$0
 ## Escalation (RUN3-PISA, 4 Oct 2026)
 - [x] siblings: Colbert 16 pt II clear copy paired with f.244r and used as known plaintext (kp86 PASS)
@@ -1415,3 +1415,41 @@ are general volumes: 1 (1278-1616), 11 (1589-99), 14 (1593-95), 15 (1589-1626), 
 record not opened), 31 (1589-94)). The "Pisani" hits after the first 50 (97 more) and the "Vivonne" hits after the first ~100 were not read.
 Requests: archivesetmanuscrits.bnf.fr 10 (bnf_findingaid.py 2, "Pisany" POST+re-page 2, "Vivonne" POST+re-page 2, "Pisany" POST 1,
 "Pisani" POST 1, two records 2; the ROOM halfway line's "12" over-counted); openapi.bnf.fr 2 (manifest, one thumbnail). Vision looks: 1 of 4.
+
+## PIS-121 (15 Oct 2026)
+Brief: .claude/briefs/runs/2026-10-15-acct1-default-1140-jobs.md "PIS-121" (LANE DEFAULT-A1-1140-15, account 1), 13:01-13:1x UTC 15 Oct by date -u.
+Step: f.121 (canvas 252) glossed passage as a check of Tomokiyo's 1585 table (key.tsv, 67 labels).
+Prior work: `tools/prior_work.py fr16045-pisany-rome-1585 --item-spec 'shelfmark=BnF fr.16045;folio=121' --step-type decode --known-answer gate:PIS-121
+--offline` exit 4 on 2 LEADs (this job's own claim; the "after f.121" inventory marker, another step), both recorded CLEAR; Tomokiyo context only; solver
+caches clear; aaymeloglu and editions UNCHECKED-NET (not run: disk-only step beyond the IIIF fetch). Hand checks 2-4: unchecked.
+PREREG-PIS-121.md pushed (fe4d2d705) before any pass was read or any decode.
+- Source: openapi.bnf.fr IIIF v3 btv1b9060906j f252 full/max (3922x5693, sha1 407648e7e17b46283e3cb9200ad6b0056b5adaad), scratch only; 2 requests
+  (info.json, full/max), both 200. Regen: `curl -A 'cipher-lab research script (contact via repository)' -o c252_max.jpg
+  https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060906j/f252/full/max/0/default.jpg`.
+- Crops (pasted before the first subagent call): `python3 tools/iiif_lines.py --image c252_max.jpg --region 1100,880,2750,3900 --out <scratch>/crops
+  --prefix c252 --debug --max-width 1600 --overlap 100` -> 27 lines x 2 segments (overlay checked by eye); gloss: the same with `--region
+  400,360,900,960 --prefix glA`, `400,2420,900,880 --prefix glB`, `400,3760,900,1060 --prefix glC`, `--distance 70` -> 7 + 7 + 9 line crops.
+  Crops not committed (no images in git); the commands regenerate them.
+- Passes (4 Sonnet units): cipher A 608 signs / 127 `?`, cipher B 631 / 86 `?` (pis121/PASS_BRIEF_cipher.md, value-blind; plain runs as [clear]);
+  `tools/reconcile_passes.py` agree 388/668 = 58.1%, 280 disagreement columns (pis121/rec/); reconciliation call (pis121/RECON_BRIEF.md, value-
+  and gloss-blind) settled 280 rows (A 107, B 148, other 3, "-" 22) but by its own report opened the crops only for L01-L03, L06, L07 and applied
+  shape-pair rules (S15/S40 -> S40, S31/S62 -> S31, ?[x]/S46 -> S46, ...) to the other lines; gloss pass (pis121/PASS_BRIEF_gloss.md, no context):
+  pis121/gloss_pass.tsv, 23 rows, every row with illegible letters (e.g. A "a Gustaure", B "tombie en ogm", C "Dxeu cathe."); not settled before scoring.
+- Score (`python3 pis121/score.py`, `--check` "result up to date"; pis121/result.json; reconciled draft pis121/reconciled.tsv, 628 signs):
+  | input | S (A+B+C) | per block | permuted-table null mean / p99 | rank |
+  |---|---|---|---|---|
+  | reconciled (gated) | 32 | 11 / 14 / 7 | 26.8 / 33.0 | 956/1000 |
+  | pass A | 27 | 9 / 11 / 7 | 25.5 / 33.0 | 137/200 |
+  | pass B | 23 | 9 / 8 / 6 | 26.7 / 34.0 | 11/200 |
+  Power check (gloss as read, enciphered with key.tsv into 628-sign filler, e = 0.376): 5/5 seeds pass (S 223-263 vs own p99 34-36).
+- **Registered verdict: FAIL** (reconciled S 32 not above p99 33; power PASS). Limit, stated after the score: the power control takes the gloss
+  pass's own letters as the plaintext, so it cannot vary with gloss-read error (CLAUDE.md rule 3, control on the wrong axis); the gloss read is
+  very poor and the gloss may paraphrase or abbreviate the cipher, and 22 of 27 lines were reconciled by rule, not by eye. So this miss does not
+  separate "table wrong for f.121" from "gloss misread" or "transcription error": logged as a miss of unknown cause, **not a negative on the 1585
+  table**. No table value changed (none licensed by the PREREG under any outcome); every token stays M; no reading file written.
+- Seen while cutting crops (descriptive, unscored): body clear runs on this page ("qu'il m'a donné lieu de le satisfaire ...", "tenu catholique par
+  tout le monde, si ce n'estoit") and small interlinear name glosses above cipher groups (L17-L20 region: one read on the overview as "Cardinal
+  Ferdinand"); these are per-group aligned pairs that the margin-block score does not use.
+- Requests: openapi.bnf.fr 2. Vision units: 4 Sonnet calls (2 cipher, 1 gloss, 1 reconcile) + 3 own looks (overview on disk, line overlay, gloss overlay).
+- Next: a two-pass, one-line-per-call read of the three gloss blocks (or a person's read), then `pis121/score.py` unchanged on the new gloss TSV
+  (~$2); the interlinear name glosses as hand-built pairs for `tools/interlinear_align.py` (~$1).
