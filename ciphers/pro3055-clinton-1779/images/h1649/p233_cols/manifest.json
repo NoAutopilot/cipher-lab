@@ -1,0 +1,51 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "p233_col1_L01.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0tt4fn9n48x/full/3200,/0/default.jpg",
+   "source_file": "img877_w3200.jpg (scratchpad, not committed; sha1 00ca1eeb890481426f02b78da65fa95dcaf01085; fetched 15 Oct 2026, browser UA + Referer https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/877)",
+   "box": [
+    1250,
+    360,
+    1465,
+    1117
+   ],
+   "lines_in_crop": 23,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     15,
+     48,
+     81,
+     114,
+     147,
+     180,
+     213,
+     246,
+     279,
+     312,
+     345,
+     378,
+     411,
+     444,
+     477,
+     510,
+     543,
+     576,
+     609,
+     642,
+     675,
+     708,
+     741
+    ]
+   },
+   "date": "15 Oct 2026",
+   "regen": "python3 tools/iiif_lines.py --image img877_w3200.jpg --region 1250,360,215,757 --out p233_cols --prefix p233_col1 --centres 15,48,... (15 + 33 k < h) --lines-per-crop 60 --overlap 40"
+  }
+ ]
+}

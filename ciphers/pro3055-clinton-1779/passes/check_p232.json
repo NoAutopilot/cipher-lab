@@ -1,0 +1,220 @@
+{
+ "source": "H-1649 Image 876 (B.147 p.232) at 3200 px, columns cut by tools/iiif_lines.py (images/h1649/p232_cols)",
+ "key": "title1778_reading.txt as printed (variant a) GATED; variant (b) reported",
+ "cells_letter_and_word": 178,
+ "cell_grades": {
+  "H": 175,
+  "M": 3
+ },
+ "B2_variant_a_GATED": {
+  "runs_ge3": 24,
+  "hits": 22,
+  "share": 0.917,
+  "can_differ": 1.0,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "seed": 123,
+   "mean": 0.4,
+   "p95": 1,
+   "max": 3
+  },
+  "gate": "PASS",
+  "decoded_runs": [
+   {
+    "start": "col1:1",
+    "cells": "3-1 5-3 4-4 20-5 20-16 20-36 20-37 20-38 17-23",
+    "decoded": "attacking",
+    "hit": true,
+    "at_letter": 1018
+   },
+   {
+    "start": "col1:10",
+    "cells": "20-16 20-5 20-25 20-27 20-4 20-5",
+    "decoded": "canada",
+    "hit": true,
+    "at_letter": 330
+   },
+   {
+    "start": "col1:19",
+    "cells": "16-18 16-17 18-17 18-9",
+    "decoded": "four",
+    "hit": true,
+    "at_letter": 734
+   },
+   {
+    "start": "col1:23",
+    "cells": "6-8 6-9 6-10",
+    "decoded": "and",
+    "hit": true,
+    "at_letter": 42
+   },
+   {
+    "start": "col1:26",
+    "cells": "8-3 8-4 8-3",
+    "decoded": "tht",
+    "hit": true,
+    "at_letter": 1318
+   },
+   {
+    "start": "col1:29",
+    "cells": "4-1 20-5 20-36 20-31 20-28",
+    "decoded": "lakes",
+    "hit": true,
+    "at_letter": 1051
+   },
+   {
+    "start": "col1:36",
+    "cells": "16-14 16-7 16-4 16-24 16-27",
+    "decoded": "early",
+    "hit": true,
+    "at_letter": 1058
+   },
+   {
+    "start": "col1:42",
+    "cells": "20-8 20-7 20-5 20-26 20-24 20-25",
+    "decoded": "season",
+    "hit": true,
+    "at_letter": 1076
+   },
+   {
+    "start": "col2:1",
+    "cells": "19-1 19-2 16-23 16-24",
+    "decoded": "will",
+    "hit": true,
+    "at_letter": 992
+   },
+   {
+    "start": "col2:5",
+    "cells": "15-5 15-9 16-4 16-13 16-22 16-21",
+    "decoded": "permit",
+    "hit": true,
+    "at_letter": 1086
+   },
+   {
+    "start": "col2:11",
+    "cells": "17-7 17-8 18-14 18-17 18-18 18-22",
+    "decoded": "should",
+    "hit": true,
+    "at_letter": 1092
+   },
+   {
+    "start": "col2:18",
+    "cells": "11-17 11-3 11-5 11-12 20-16 20-12",
+    "decoded": "french",
+    "hit": true,
+    "at_letter": 107
+   },
+   {
+    "start": "col2:24",
+    "cells": "16-4 16-10 16-12 16-15 16-18 16-17 16-9 16-31 16-14 16-13 16-14 16-15 16-16",
+    "decoded": "reinforcement",
+    "hit": true,
+    "at_letter": 693
+   },
+   {
+    "start": "col2:37",
+    "cells": "22-20 22-11 22-11 22-37 22-25 22-26",
+    "decoded": "arrive",
+    "hit": true,
+    "at_letter": 1126
+   },
+   {
+    "start": "col3:1",
+    "cells": "20-25 20-17 20-1 20-20 20-16 20-13",
+    "decoded": "notice",
+    "hit": true,
+    "at_letter": 1163
+   },
+   {
+    "start": "col3:12",
+    "cells": "19-1 18-1 17-7 17-8 17-6 17-19 17-11 18-14 18-15",
+    "decoded": "washinton",
+    "hit": false,
+    "at_letter": null
+   },
+   {
+    "start": "col3:22",
+    "cells": "11-17 11-3 11-5 11-12 14-6 14-7",
+    "decoded": "french",
+    "hit": true,
+    "at_letter": 107
+   },
+   {
+    "start": "col3:28",
+    "cells": "18-1 18-19 18-9 18-12 18-20 18-22 18-29",
+    "decoded": "already",
+    "hit": true,
+    "at_letter": 1329
+   },
+   {
+    "start": "col3:35",
+    "cells": "22-20 22-8 22-11 22-37 22-25 22-26",
+    "decoded": "arrive",
+    "hit": true,
+    "at_letter": 1126
+   },
+   {
+    "start": "col4:2",
+    "cells": "1-29 1-30 1-31 1-32",
+    "decoded": "able",
+    "hit": true,
+    "at_letter": 281
+   },
+   {
+    "start": "col4:16",
+    "cells": "18-13 18-12 18-9 18-10 18-14 18-11 18-13",
+    "decoded": "serions",
+    "hit": false,
+    "at_letter": null
+   },
+   {
+    "start": "col4:37",
+    "cells": "17-4 17-19 17-11 17-3 17-13 17-14 17-12 17-23 17-26 17-25",
+    "decoded": "intelligen",
+    "hit": true,
+    "at_letter": 472
+   },
+   {
+    "start": "col4side:1",
+    "cells": "5-3 5-4 4-2 4-3",
+    "decoded": "this",
+    "hit": true,
+    "at_letter": 336
+   },
+   {
+    "start": "col4side:5",
+    "cells": "13-6 13-16 13-8 13-6 14-2 14-10",
+    "decoded": "season",
+    "hit": true,
+    "at_letter": 1076
+   }
+  ]
+ },
+ "B2_variant_b_reported_not_gated": {
+  "runs_ge3": 24,
+  "hits": 21,
+  "share": 0.875,
+  "can_differ": 1.0,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "seed": 123,
+   "mean": 0.38,
+   "p95": 1,
+   "max": 4
+  },
+  "gate": "PASS"
+ },
+ "word_codes": [],
+ "clear_words": [
+  "Number",
+  "Next Year as the",
+  "the Second",
+  "I will endeavor to send you",
+  "In the mean time if the Good News from the Southward (which the Paper I send herewith Contains) promises true, & of which there seems little doubt, I hope",
+  "in Conjunction with the",
+  "will not be",
+  "any thing",
+  "I shall however send you as early"
+ ],
+ "p234_p235_letters": 1478
+}

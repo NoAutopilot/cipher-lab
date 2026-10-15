@@ -1,0 +1,26 @@
+# CLIN-3004C (15 Oct 2026): B.147 p.233, a closing page of the cipher of item 3004 (Clinton to Haldimand, 9 Sept 1780).
+# ONE blind Sonnet pass p233_passA.tsv (column "passA") + worker image-only reconciliation p233_settle.tsv (column "worker"),
+# settled on 2x zooms before any decode or score (PREREG-CLIN-3004.md Addendum CLIN-3004C). Built by recon_build.py 233.
+col	idx	kind	entry	underline	gloss	grade	passA	worker	note
+col1	1	letter	12-3	n		H	12-3/n	as pass	
+col1	2	letter	-4	n		H	-4/n	-4/n	pass unsure 4/5: a clear 4 on the 2x zoom
+col1	3	letter	-5	n		H	-5/y	-5/n	pass y/unsure 5/3: a clear 5; no rule under it (the stroke below is row 4 13-3 dash area; the only rules are under -2, -35, -2, -6)
+col1	4	letter	13-3	n		H	13-3/n	as pass	
+col1	5	letter	-2	y		H	-2/y	as pass	
+col1	6	letter	14-14	n		H	14-14/n	as pass	
+col1	7	letter	16-3	n		H	16-3/n	as pass	
+col1	8	letter	-35	n		H	-35/n	as pass	
+col1	9	letter	-22	n		H	-22/n	as pass	
+col1	10	letter	-40	n		H	-40/n	as pass	
+col1	11	letter	-15	n		H	-15/n	as pass	
+col1	12	letter	-35	y		H	-35/y	as pass	
+col1	13	clear	as I may from time to time he able.	n		H	as I may/n | from time | to time he | able.	as pass	
+col1	14	letter	14-1	n		H	14-1/n	as pass	
+col1	15	letter	-2	y		H	-2/y	as pass	
+col1	16	letter	15-5	n		H	15-5/n	as pass	
+col1	17	letter	16-4	n		H	16-4/n	as pass	
+col1	18	letter	-5	n		H	-5/n	as pass	
+col1	19	letter	-31	n		H	-31/n	as pass	
+col1	20	letter	18-17	n		H	18-17/n	as pass	
+col1	21	letter	-9	n		H	-9/n	as pass	
+col1	22	letter	-6	y		H	-6/y	as pass	

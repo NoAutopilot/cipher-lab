@@ -1,0 +1,202 @@
+# CLIN-3004C (15 Oct 2026): one blind Sonnet pass on the four column crops of B.147 p.232 (H-1649 Image 876 at 3200 px), as returned
+crop	row	kind	entry	underline	note
+col1	1	fig	3-1	n	
+col1	2	fig	5-3	n	
+col1	3	fig	4-4	n	
+col1	4	fig	20-5	n	
+col1	5	fig	-16	n	
+col1	6	fig	-36	n	
+col1	7	fig	-37	n	
+col1	8	fig	-38	n	
+col1	9	fig	17-23	y	
+col1	10	fig	20-16	n	
+col1	11	fig	-5	n	
+col1	12	fig	-25	n	
+col1	13	fig	-27	n	
+col1	14	fig	-4	n	dot before dash
+col1	15	fig	-5	y	
+col1	16	fig	1-30	n	
+col1	17	fig	-2	y	
+col1	18	clear	Number	n	
+col1	19	fig	16-18	n	
+col1	20	fig	-17	n	
+col1	21	fig	18-17	n	right number may be 17 or 11
+col1	22	fig	-9	y	
+col1	23	fig	6-8	n	
+col1	24	fig	-9	n	
+col1	25	fig	-10	y	
+col1	26	fig	8-3	n	
+col1	27	fig	-4	n	
+col1	28	fig	-3	y	
+col1	29	fig	4-1	n	
+col1	30	fig	20-5	n	
+col1	31	fig	-36	n	
+col1	32	fig	-31	n	
+col1	33	fig	-28	y	
+col1	34	fig	16-7	n	
+col1	35	fig	-35	y	
+col1	36	fig	16-14	n	
+col1	37	fig	-7	n	
+col1	38	fig	-4	n	
+col1	39	fig	-24	n	
+col1	40	fig	-27	y	
+col1	41	clear	Next Year as the	n	
+col1	42	fig	20-8	n	
+col1	43	fig	-7	n	
+col1	44	fig	-5	n	
+col1	45	fig	-26	n	
+col1	46	fig	-24	n	
+col1	47	fig	-25	y	
+col2	1	fig	19-1	n	
+col2	2	fig	-2	n	
+col2	3	fig	16-23	n	
+col2	4	fig	-24	y	
+col2	5	fig	15-5	n	
+col2	6	fig	-9	n	
+col2	7	fig	16-4	n	
+col2	8	fig	-13	n	
+col2	9	fig	-22	n	
+col2	10	fig	-21	y	
+col2	11	fig	17-7	n	
+col2	12	fig	-8	n	
+col2	13	fig	18-14	n	
+col2	14	fig	-17	n	
+col2	15	fig	-18	n	
+col2	16	fig	-22	y	
+col2	17	clear	the Second	n	
+col2	18	fig	11-17	n	
+col2	19	fig	-3	n	
+col2	20	fig	-5	n	
+col2	21	fig	-12	n	
+col2	22	fig	20-16	n	
+col2	23	fig	-12	y	
+col2	24	fig	16-4	n	
+col2	25	fig	-10	n	
+col2	26	fig	-12	n	
+col2	27	fig	-15	n	
+col2	28	fig	-18	n	
+col2	29	fig	-17	n	
+col2	30	fig	-9	n	
+col2	31	fig	-31	n	
+col2	32	fig	-14	n	
+col2	33	fig	-13	n	
+col2	34	fig	-14	n	
+col2	35	fig	-15	n	
+col2	36	fig	-16	y	
+col2	37	fig	22-20	n	
+col2	38	fig	-11	n	
+col2	39	fig	-11	n	
+col2	40	fig	-37	n	
+col2	41	fig	-25	n	
+col2	42	fig	-26	y	
+col2	43	clear	I will endeavor to send you	n	
+col2	44	fig	20-20	n	
+col2	45	fig	-18	n	
+col2	46	fig	-19	n	
+col2	47	fig	-13	n	
+col2	48	fig	-4	n	
+col2	49	fig	-14	n	
+col2	50	fig	-5	n	
+col2	51	fig	-16	n	
+col2	52	fig	-7	n	last row, small; 7 or 17
+col3	1	fig	20-25	n	
+col3	2	fig	-17	n	
+col3	3	fig	-1	n	
+col3	4	fig	-20	n	
+col3	5	fig	-16	n	
+col3	6	fig	-13	y	
+col3	7	fig	10-1	n	
+col3	8	fig	-2	y	
+col3	9	fig	18-10	n	
+col3	10	fig	-4	y	
+col3	11	clear	In the mean time if the Good News from the Southward (which the Paper I send herewith Contains) promises true, & of which there seems little doubt, I hope	n	several lines of clear text, treated as one row
+col3	12	fig	19-1	n	
+col3	13	fig	18-1	n	
+col3	14	fig	17-7	n	
+col3	15	fig	-8	n	
+col3	16	fig	-6	n	
+col3	17	fig	-19	n	
+col3	18	fig	-11	n	
+col3	19	fig	18-14	n	
+col3	20	fig	-15	y	
+col3	21	clear	in Conjunction with the	n	
+col3	22	fig	11-17	n	
+col3	23	fig	-3	n	
+col3	24	fig	-5	n	
+col3	25	fig	-12	n	
+col3	26	fig	14-6	n	
+col3	27	fig	-7	y	
+col3	28	fig	18-1	n	
+col3	29	fig	-19	n	
+col3	30	fig	-9	n	
+col3	31	fig	-12	n	
+col3	32	fig	-20	n	
+col3	33	fig	-22	n	
+col3	34	fig	-29	y	
+col3	35	fig	22-20	n	
+col3	36	fig	-8	n	
+col3	37	fig	-11	n	
+col3	38	fig	-37	n	
+col3	39	fig	-25	n	
+col3	40	fig	-26	y	
+col3	41	fig	20-4	n	continues at top of col4? last row, cut at crop bottom
+col4	1	clear	will not be	n	
+col4	2	fig	1-29	n	
+col4	3	fig	-30	n	
+col4	4	fig	-31	n	
+col4	5	fig	-32	y	
+col4	6	fig	5-3	n	
+col4	7	fig	-1	y	
+col4	8	fig	13-8	n	left number blotted, possibly 13 or 12
+col4	9	fig	-18	n	
+col4	10	fig	-18	n	
+col4	11	fig	-26	n	
+col4	12	fig	-25	n	
+col4	13	fig	15-5	n	
+col4	14	fig	-10	y	
+col4	15	clear	any thing	n	
+col4	16	fig	18-13	n	
+col4	17	fig	-12	n	
+col4	18	fig	-9	n	
+col4	19	fig	-10	n	
+col4	20	fig	-14	n	
+col4	21	fig	-11	n	
+col4	22	fig	-13	y	
+col4	23	struck	16-XX	n	first row of crossed block, right figure overwritten, illegible
+col4	24	struck	-XX	n	right figures overwritten, illegible
+col4	25	struck	-XX	n	
+col4	26	struck	-XX	n	
+col4	27	struck	-XX	n	
+col4	28	struck	-XX	y	end of upper block, rule under
+col4	29	struck	XX-XX	n	lower block begins, left and right overwritten
+col4	30	struck	XX-8	n	left figure overwritten
+col4	31	struck	-8	n	
+col4	32	struck	-XX	n	
+col4	33	struck	-XX	n	
+col4	34	struck	-XX	n	
+col4	35	struck	-XX	y	block bottom rule
+col4	36	clear	I shall however send you as early	n	
+col4	37	fig	17-4	n	
+col4	38	fig	-19	n	
+col4	39	fig	-11	n	
+col4	40	fig	-3	n	
+col4	41	fig	-13	n	
+col4	42	fig	-14	n	
+col4	43	fig	-12	n	
+col4	44	fig	-23	n	
+col4	45	fig	-26	n	
+col4	46	fig	-25	y	
+col4	47	fig	16-31	n	
+col4	48	fig	-3	y	
+col4	49	fig	10-1	n	
+col4	50	fig	-2	y	followed by a slash mark
+col4side	1	fig	5.3.	n	
+col4side	2	fig	-4.	n	
+col4side	3	fig	4-2.	n	
+col4side	4	fig	-3	y	
+col4side	5	fig	13-6	n	
+col4side	6	fig	-16.	n	
+col4side	7	fig	-8.	n	
+col4side	8	fig	-6.	n	
+col4side	9	fig	14.2.	n	
+col4side	10	fig	-10.	n	trailing mark after 10 unclear

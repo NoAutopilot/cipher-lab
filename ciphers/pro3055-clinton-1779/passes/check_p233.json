@@ -1,0 +1,64 @@
+{
+ "source": "H-1649 Image 877 (B.147 p.233) at 3200 px, columns cut by tools/iiif_lines.py (images/h1649/p233_cols)",
+ "key": "title1778_reading.txt as printed (variant a) GATED; variant (b) reported",
+ "cells_letter_and_word": 21,
+ "cell_grades": {
+  "H": 21
+ },
+ "B2_variant_a_GATED": {
+  "runs_ge3": 3,
+  "hits": 3,
+  "share": 1.0,
+  "can_differ": 1.0,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "seed": 123,
+   "mean": 0.0,
+   "p95": 0,
+   "max": 1
+  },
+  "gate": "NON-TEST",
+  "decoded_runs": [
+   {
+    "start": "col1:1",
+    "cells": "12-3 12-4 12-5 13-3 13-2",
+    "decoded": "their",
+    "hit": true,
+    "at_letter": 351
+   },
+   {
+    "start": "col1:6",
+    "cells": "14-14 16-3 16-35 16-22 16-40 16-15 16-35",
+    "decoded": "designs",
+    "hit": true,
+    "at_letter": 1436
+   },
+   {
+    "start": "col1:16",
+    "cells": "15-5 16-4 16-5 16-31 18-17 18-9 18-6",
+    "decoded": "procure",
+    "hit": true,
+    "at_letter": 1471
+   }
+  ]
+ },
+ "B2_variant_b_reported_not_gated": {
+  "runs_ge3": 3,
+  "hits": 3,
+  "share": 1.0,
+  "can_differ": 1.0,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "seed": 123,
+   "mean": 0.0,
+   "p95": 0,
+   "max": 0
+  },
+  "gate": "NON-TEST"
+ },
+ "word_codes": [],
+ "clear_words": [
+  "as I may from time to time he able."
+ ],
+ "p234_p235_letters": 1478
+}
