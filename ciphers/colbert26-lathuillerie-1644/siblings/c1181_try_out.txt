@@ -1,0 +1,1919 @@
+## T 11=re heldout lm=tools/data/fr17
+11=re: n 86, current n, statistic 77.2 bits over n; null p95 positions 53.8, value class 306.6; reject (breaks 32 of 86 occurrences by more than 3 bits) [non-blind]
+  0:162  a m p mdebrienne o d s z [re] r c il o i ra q e
+  1:17  m a h ce s n e il [re] o ce n dv <75> favlt coste o
+  1:52  d s il o a c d i [re] qve v ce qve e c il coste
+  1:136  e c qve e qve c mdebrienne mdebrienne [re] de <75> c o a q dv a
+  1:172  s r d i mdebrienne e vx mdebrienne [re] il o et <75> coste e q il
+  1:250  ez p e o vx a p i [re] v n c m p faire o c
+  1:289  n mdebrienne o b a mdebrienne de coste [re] vovs o qve ce h i mdebrienne de
+  2:3  de il o [re] e n mdebrienne n <75> qve v n
+  2:7  de il o n e n mdebrienne [re] <75> qve v n aines n i il
+  2:29  e c s qve <88> a aines ez [re] ce o e s mdebrienne <75> c o
+  2:107  mdebrienne <93> i n mdebrienne e amais a [re] c de e n favlt i n s
+  3:13  ce s rge n s <47> e n [re] h <19/79> m n n de o o
+  3:48  coste <71/77> rge n ce c n r [re] dans de s c n s la de
+  3:105  dv n i mdebrienne <10/20> a <42> mdebrienne [re] qve ce <75> <86> f a la i
+  3:125  p c o f <75> a <42> mdebrienne [re] qve c s coste mdebrienne s p c
+  3:141  c amais <93> e n m a i [re] s <75> c n de m <86> a
+  3:156  <86> a c qve e qve h o [re] monnepvev s o n n qve <88> n
+  3:167  o n n qve <88> n se se [re] de n il mdebrienne mdebrienne n <88> s
+  3:169  n qve <88> n se se n de [re] il mdebrienne mdebrienne n <88> s coste se
+  3:173  se se n de n il mdebrienne mdebrienne [re] <88> s coste se r n n mdebrienne
+  3:179  mdebrienne mdebrienne n <88> s coste se r [re] n mdebrienne ez e n a a <42>
+  3:194  a <42> mdebrienne a rge <88> lvy a [re] s m e ez p c amais <93>
+  3:208  c amais <93> e n m a i [re] s b p monnepvev s o n s
+  4:4  qve de s d [re] a povr e povr n i a de
+  4:9  de s d n a povr e povr [re] i a de n mdebrienne <75> c n
+  4:71  de se o e s n a d [re] s v n mdebrienne n e m f
+  4:76  n a d n s v n mdebrienne [re] e m f d n a e p
+  4:105  d o povr d n a dv <13/15> [re] mdebrienne a c e a coste de n
+  4:124  s c s se s <93> s o [re] c s qve ce s dans s <47>
+  4:146  n mdebrienne a <75> o o lvy n [re] de levr mdebrienne a i c e p
+  4:162  p c s <90> o <86> a p [re] s e s n <86> o a qve
+  4:208  c amais <93> e n m a i [re] s v m n n mdebrienne de ce
+  4:212  n m a i n s v m [re] n mdebrienne de ce mdebrienne e <27> e
+  5:8  s dv <86> ra c n o p [re] s e n e m n a a
+  5:14  o p n s e n e m [re] a a d p n i rge qve
+  5:38  r s mdebrienne i n dv <42> i [re] c de m c n c s n
+  5:46  n c de m c n c s [re] levr mdebrienne a i c e qve m
+  5:87  a a i <86> povr de il o [re] e n c n i n de <47>
+  5:91  povr de il o n e n c [re] i n de <47> s e n mdebrienne
+  5:100  i n de <47> s e n mdebrienne [re] <75> e amais a p ce mdebrienne dv
+  5:119  et <75> i s se a <88> e [re] mdebrienne a i c e e n a
+  5:131  c e e n a a c e [re] qve <83> <86> h i mdebrienne <45> <90>
+  5:140  qve <83> <86> h i mdebrienne <45> <90> [re] c de <75> n p e a de
+  5:144  i mdebrienne <45> <90> n c de <75> [re] p e a de <75> e faire a
+  5:166  rge n s <47> et qve n c [re] c povr e ez a dans n mdebrienne
+  5:191  i s se <90> s e n c [re] <?2> m d n <27> e de c
+  5:227  de de h n a s se m [re] c e a p n i rge o
+  5:242  rge o vx de c n c s [re] <75> <90> i vx <84> <75> r qve
+  5:294  n n s <90> s de c s [re] c f a c f a s mdebrienne
+  5:329  c amais <93> e n m a i [re] s de et de <47> <86> la v
+  5:371  faire e o povr i s c de [re] o d i e n mdebrienne e h
+  5:382  i e n mdebrienne e h n mdebrienne [re] <88> s e n <86> monnepvev s s
+  5:396  monnepvev s s a i h n lvy [re] c c a i n e povr e
+  5:446  r d a h n <86> <45> <90> [re] c de m d s c f a
+  6:78  a qve ce s de h a d [re] s ce s se n mdebrienne et qve
+  6:95  <75> o n c e de il o [re] n o e e n m e n
+  6:103  n n o e e n m e [re] <75> n o et a povr e e
+  6:135  s s s dv e e n mdebrienne [re] ce mdebrienne dv a mdebrienne et <75> r
+  6:163  c s et <86> mdebrienne e o n [re] se a aines o n se o e
+  6:205  n ce c s r de n mdebrienne [re] p n n d n i e ez
+  6:207  c s r de n mdebrienne n p [re] n d n i e ez e n
+  6:210  de n mdebrienne n p n n d [re] i e ez e n mdebrienne n p
+  6:217  d n i e ez e n mdebrienne [re] p n n d a c o <75>
+  6:219  i e ez e n mdebrienne n p [re] n d a c o <75> e e
+  6:255  i s o n n s <27> o [re] a o o n se e e a
+  6:259  n s <27> o n a o o [re] se e e a <84> s c h
+  6:340  de de a mdavavx <75> s se m [re] c e de s <75> n de qve
+  6:387  <90> s se c <90> s a o [re] s se n m o a m dv
+  6:422  a c <93> i n c mdebrienne de [re] ce n m a o o il n
+  6:424  <93> i n c mdebrienne de n ce [re] m a o o il n e d
+  6:532  r d o vx qve ce mdebrienne e [re] la e e
+  7:20  c e m p s <75> <75> p [re] n d a dv qve ce mdebrienne e
+  7:37  <90> i vx v m qve faire e [re] <75> <93> a e a p n <74>
+  7:44  e n <75> <93> a e a p [re] <74> coste ce se m n c qve
+  7:50  a p n <74> coste ce se m [re] c qve rge <86> n o se o
+  7:55  ce se m n c qve rge <86> [re] o se o v n o p n
+  7:63  n o se o v n o p [re] v e a <75> c o a <75>
+  7:85  se a a p o mdebrienne <84> se [re] qve c a amais a d p n
+  7:111  c s se s qve <75> de o [re] c n n s <|> p o m
+  7:120  c n n s <|> p o m [re] o <75> lvy <27> n n s <93>
+  7:141  <75> n de povr h <93> se coste [re] c e o a n o mdebrienne <|>
+  7:155  o mdebrienne <|> <75> <64> e e d [re] dans de rge n mdebrienne o a m
+  7:177  de e c qve ce f b p [re] n d a c p d ce de
+  7:201  n m o <36(4)> de <72> e il [re] favlt i e lvy n mdebrienne coste s
+  7:246  c e o a de <72> e il [re]
+  8:3  e i s [re] d n e n mdebrienne de <75> ra
+## T 11=re c50 lm=tools/data/fr17
+11=re: n 21, current n, statistic 196.7 bits over n; null p95 positions 149.6, value class 179.2; accept (above both nulls and the acceptance rule) [non-blind]
+  0:26  s <83> a de n mdebrienne et se [re] <75> s c f n mdebrienne de vovs
+  0:64  <75> v a a i <86> <86> de [re] o d i mdebrienne <90> s dv n
+  0:72  n o d i mdebrienne <90> s dv [re] n s m n e e <60> n
+  0:73  o d i mdebrienne <90> s dv n [re] s m n e e <60> n n
+  0:80  n n s m n e e <60> [re] n m e et qve c dv c
+  0:113  s e aines s c f ez dv [re] s e <?> mdavavx povr aines c i
+  0:124  <?> mdavavx povr aines c i a mdavavx [re] c o dv se d i mdebrienne n
+  0:132  n c o dv se d i mdebrienne [re] n dv a o dv c c s
+  0:172  n mdebrienne h n rge a a levr [re] s i n faire s se o <?>
+  0:175  n rge a a levr n s i [re] faire s se o <?> n n d
+  0:181  s i n faire s se o <?> [re] n d n dv n <75> s c
+  0:184  faire s se o <?> n n d [re] dv n <75> s c f n c
+  0:186  se o <?> n n d n dv [re] <75> s c f n c m il
+  0:191  d n dv n <75> s c f [re] c m il n ce a de rge
+  0:224  n d n <88> dans n mdebrienne m [re] dans c mdebrienne et <95> v <?> <?>
+  0:255  <?> n amais s i e s se [re] de i n d d dans n mdebrienne
+  0:280  s <90> e i a de <88> e [re] de s o amais n n de amais
+  0:296  amais <93> o m d n <86> a [re] il de s c i vx mdavavx n
+  0:314  de e c s povr s s c [re] <94> n faire qve s et v i
+  0:316  c s povr s s c n <94> [re] faire qve s et v i n mdebrienne
+  0:390  n s e s e n se m [re] c levr a e faire a n ce
+## T 11=re all lm=tools/data/fr17
+11=re: n 107, current n, statistic 273.8 bits over n; null p95 positions 100.9, value class 470.8; reject (breaks 36 of 107 occurrences by more than 3 bits) [non-blind]
+  0:162  a m p mdebrienne o d s z [re] r c il o i ra q e
+  1:17  m a h ce s n e il [re] o ce n dv <75> favlt coste o
+  1:52  d s il o a c d i [re] qve v ce qve e c il coste
+  1:136  e c qve e qve c mdebrienne mdebrienne [re] de <75> c o a q dv a
+  1:172  s r d i mdebrienne e vx mdebrienne [re] il o et <75> coste e q il
+  1:250  ez p e o vx a p i [re] v n c m p faire o c
+  1:289  n mdebrienne o b a mdebrienne de coste [re] vovs o qve ce h i mdebrienne de
+  2:3  de il o [re] e n mdebrienne n <75> qve v n
+  2:7  de il o n e n mdebrienne [re] <75> qve v n aines n i il
+  2:29  e c s qve <88> a aines ez [re] ce o e s mdebrienne <75> c o
+  2:107  mdebrienne <93> i n mdebrienne e amais a [re] c de e n favlt i n s
+  3:13  ce s rge n s <47> e n [re] h <19/79> m n n de o o
+  3:48  coste <71/77> rge n ce c n r [re] dans de s c n s la de
+  3:105  dv n i mdebrienne <10/20> a <42> mdebrienne [re] qve ce <75> <86> f a la i
+  3:125  p c o f <75> a <42> mdebrienne [re] qve c s coste mdebrienne s p c
+  3:141  c amais <93> e n m a i [re] s <75> c n de m <86> a
+  3:156  <86> a c qve e qve h o [re] monnepvev s o n n qve <88> n
+  3:167  o n n qve <88> n se se [re] de n il mdebrienne mdebrienne n <88> s
+  3:169  n qve <88> n se se n de [re] il mdebrienne mdebrienne n <88> s coste se
+  3:173  se se n de n il mdebrienne mdebrienne [re] <88> s coste se r n n mdebrienne
+  3:179  mdebrienne mdebrienne n <88> s coste se r [re] n mdebrienne ez e n a a <42>
+  3:194  a <42> mdebrienne a rge <88> lvy a [re] s m e ez p c amais <93>
+  3:208  c amais <93> e n m a i [re] s b p monnepvev s o n s
+  4:4  qve de s d [re] a povr e povr n i a de
+  4:9  de s d n a povr e povr [re] i a de n mdebrienne <75> c n
+  4:71  de se o e s n a d [re] s v n mdebrienne n e m f
+  4:76  n a d n s v n mdebrienne [re] e m f d n a e p
+  4:105  d o povr d n a dv <13/15> [re] mdebrienne a c e a coste de n
+  4:124  s c s se s <93> s o [re] c s qve ce s dans s <47>
+  4:146  n mdebrienne a <75> o o lvy n [re] de levr mdebrienne a i c e p
+  4:162  p c s <90> o <86> a p [re] s e s n <86> o a qve
+  4:208  c amais <93> e n m a i [re] s v m n n mdebrienne de ce
+  4:212  n m a i n s v m [re] n mdebrienne de ce mdebrienne e <27> e
+  5:8  s dv <86> ra c n o p [re] s e n e m n a a
+  5:14  o p n s e n e m [re] a a d p n i rge qve
+  5:38  r s mdebrienne i n dv <42> i [re] c de m c n c s n
+  5:46  n c de m c n c s [re] levr mdebrienne a i c e qve m
+  5:87  a a i <86> povr de il o [re] e n c n i n de <47>
+  5:91  povr de il o n e n c [re] i n de <47> s e n mdebrienne
+  5:100  i n de <47> s e n mdebrienne [re] <75> e amais a p ce mdebrienne dv
+  5:119  et <75> i s se a <88> e [re] mdebrienne a i c e e n a
+  5:131  c e e n a a c e [re] qve <83> <86> h i mdebrienne <45> <90>
+  5:140  qve <83> <86> h i mdebrienne <45> <90> [re] c de <75> n p e a de
+  5:144  i mdebrienne <45> <90> n c de <75> [re] p e a de <75> e faire a
+  5:166  rge n s <47> et qve n c [re] c povr e ez a dans n mdebrienne
+  5:191  i s se <90> s e n c [re] <?2> m d n <27> e de c
+  5:227  de de h n a s se m [re] c e a p n i rge o
+  5:242  rge o vx de c n c s [re] <75> <90> i vx <84> <75> r qve
+  5:294  n n s <90> s de c s [re] c f a c f a s mdebrienne
+  5:329  c amais <93> e n m a i [re] s de et de <47> <86> la v
+  5:371  faire e o povr i s c de [re] o d i e n mdebrienne e h
+  5:382  i e n mdebrienne e h n mdebrienne [re] <88> s e n <86> monnepvev s s
+  5:396  monnepvev s s a i h n lvy [re] c c a i n e povr e
+  5:446  r d a h n <86> <45> <90> [re] c de m d s c f a
+  6:78  a qve ce s de h a d [re] s ce s se n mdebrienne et qve
+  6:95  <75> o n c e de il o [re] n o e e n m e n
+  6:103  n n o e e n m e [re] <75> n o et a povr e e
+  6:135  s s s dv e e n mdebrienne [re] ce mdebrienne dv a mdebrienne et <75> r
+  6:163  c s et <86> mdebrienne e o n [re] se a aines o n se o e
+  6:205  n ce c s r de n mdebrienne [re] p n n d n i e ez
+  6:207  c s r de n mdebrienne n p [re] n d n i e ez e n
+  6:210  de n mdebrienne n p n n d [re] i e ez e n mdebrienne n p
+  6:217  d n i e ez e n mdebrienne [re] p n n d a c o <75>
+  6:219  i e ez e n mdebrienne n p [re] n d a c o <75> e e
+  6:255  i s o n n s <27> o [re] a o o n se e e a
+  6:259  n s <27> o n a o o [re] se e e a <84> s c h
+  6:340  de de a mdavavx <75> s se m [re] c e de s <75> n de qve
+  6:387  <90> s se c <90> s a o [re] s se n m o a m dv
+  6:422  a c <93> i n c mdebrienne de [re] ce n m a o o il n
+  6:424  <93> i n c mdebrienne de n ce [re] m a o o il n e d
+  6:532  r d o vx qve ce mdebrienne e [re] la e e
+  7:20  c e m p s <75> <75> p [re] n d a dv qve ce mdebrienne e
+  7:37  <90> i vx v m qve faire e [re] <75> <93> a e a p n <74>
+  7:44  e n <75> <93> a e a p [re] <74> coste ce se m n c qve
+  7:50  a p n <74> coste ce se m [re] c qve rge <86> n o se o
+  7:55  ce se m n c qve rge <86> [re] o se o v n o p n
+  7:63  n o se o v n o p [re] v e a <75> c o a <75>
+  7:85  se a a p o mdebrienne <84> se [re] qve c a amais a d p n
+  7:111  c s se s qve <75> de o [re] c n n s <|> p o m
+  7:120  c n n s <|> p o m [re] o <75> lvy <27> n n s <93>
+  7:141  <75> n de povr h <93> se coste [re] c e o a n o mdebrienne <|>
+  7:155  o mdebrienne <|> <75> <64> e e d [re] dans de rge n mdebrienne o a m
+  7:177  de e c qve ce f b p [re] n d a c p d ce de
+  7:201  n m o <36(4)> de <72> e il [re] favlt i e lvy n mdebrienne coste s
+  7:246  c e o a de <72> e il [re]
+  8:3  e i s [re] d n e n mdebrienne de <75> ra
+  9:26  s <83> a de n mdebrienne et se [re] <75> s c f n mdebrienne de vovs
+  9:64  <75> v a a i <86> <86> de [re] o d i mdebrienne <90> s dv n
+  9:72  n o d i mdebrienne <90> s dv [re] n s m n e e <60> n
+  9:73  o d i mdebrienne <90> s dv n [re] s m n e e <60> n n
+  9:80  n n s m n e e <60> [re] n m e et qve c dv c
+  9:113  s e aines s c f ez dv [re] s e <?> mdavavx povr aines c i
+  9:124  <?> mdavavx povr aines c i a mdavavx [re] c o dv se d i mdebrienne n
+  9:132  n c o dv se d i mdebrienne [re] n dv a o dv c c s
+  9:172  n mdebrienne h n rge a a levr [re] s i n faire s se o <?>
+  9:175  n rge a a levr n s i [re] faire s se o <?> n n d
+  9:181  s i n faire s se o <?> [re] n d n dv n <75> s c
+  9:184  faire s se o <?> n n d [re] dv n <75> s c f n c
+  9:186  se o <?> n n d n dv [re] <75> s c f n c m il
+  9:191  d n dv n <75> s c f [re] c m il n ce a de rge
+  9:224  n d n <88> dans n mdebrienne m [re] dans c mdebrienne et <95> v <?> <?>
+  9:255  <?> n amais s i e s se [re] de i n d d dans n mdebrienne
+  9:280  s <90> e i a de <88> e [re] de s o amais n n de amais
+  9:296  amais <93> o m d n <86> a [re] il de s c i vx mdavavx n
+  9:314  de e c s povr s s c [re] <94> n faire qve s et v i
+  9:316  c s povr s s c n <94> [re] faire qve s et v i n mdebrienne
+  9:390  n s e s e n se m [re] c levr a e faire a n ce
+## T 81=me heldout lm=tools/data/fr17
+81=me: n 28, current il, statistic -63.1 bits over il; null p95 positions , value class 110.5; reject (no better than the current value) [non-blind]
+  0:165  mdebrienne o d s z n r c [me] o i ra q e favlt d m
+  1:16  f m a h ce s n e [me] n o ce n dv <75> favlt coste
+  1:31  favlt coste o <84> c e r m [me] dv <83> la <?> e e c a
+  1:46  c a c <63> n rge d s [me] o a c d i n qve v
+  1:59  i n qve v ce qve e c [me] coste mdebrienne dans <86> se d i s
+  1:81  a e d a m a de de [me] s lvy rge a h n e s
+  1:173  r d i mdebrienne e vx mdebrienne n [me] o et <75> coste e q il p
+  1:180  n il o et <75> coste e q [me] p c n ce s se il n
+  1:187  q il p c n ce s se [me] n a p <?> d aines a m
+  2:1  de [me] o n e n mdebrienne n <75> qve
+  2:15  n <75> qve v n aines n i [me] s s s qve ce e c s
+  3:170  qve <88> n se se n de n [me] mdebrienne mdebrienne n <88> s coste se r
+  4:193  p d <93> o amais a o <83> [me] n mdebrienne qve c s p c amais
+  5:27  n i rge qve ce <75> lvy amais [me] c s r s mdebrienne i n dv
+  5:63  e n <86> n mdebrienne favlt r a [me] s a c n aines amais a dv
+  5:85  <75> v a a i <86> povr de [me] o n e n c n i n
+  6:52  <75> e a o vx e s <83> [me] s povr a a c aines n mdebrienne
+  6:93  et qve <75> o n c e de [me] o n n o e e n m
+  6:236  s amais s se v e ez <75> [me] a <47> de ce s rge n s
+  6:278  et a qve e qve s <45> s [me] povr e ez o o lvy s se
+  6:308  a <86> de m c n e a [me] a v favlt p o c f c
+  6:368  s <90> s se a de o vx [me] ce s rge n s o a o
+  6:411  e e e c qve <75> h m [me] s m a c <93> i n c
+  6:429  de n ce n m a o o [me] n e d i mdebrienne v a <64>
+  6:468  e o vx dv d o a o [me] de lvy p c s <60> e n
+  6:491  m s de s d o a o [me] s n dv <90> s a <83> n
+  7:200  se n m o <36(4)> de <72> e [me] n favlt i e lvy n mdebrienne coste
+  7:245  e c e o a de <72> e [me] n
+## T 81=me c50 lm=tools/data/fr17
+81=me: n 3, current il, statistic -1.8 bits over il; null p95 positions , value class 31.4; reject (no better than the current value) [non-blind]
+  0:95  dv c f de b a <75> de [me] o a n mdebrienne p c mdebrienne d
+  0:194  n <75> s c f n c m [me] n ce a de rge o c coste
+  0:297  <93> o m d n <86> a n [me] de s c i vx mdavavx n e
+## T 81=me all lm=tools/data/fr17
+81=me: n 31, current il, statistic -64.9 bits over il; null p95 positions , value class 132.6; reject (no better than the current value) [non-blind]
+  0:165  mdebrienne o d s z n r c [me] o i ra q e favlt d m
+  1:16  f m a h ce s n e [me] n o ce n dv <75> favlt coste
+  1:31  favlt coste o <84> c e r m [me] dv <83> la <?> e e c a
+  1:46  c a c <63> n rge d s [me] o a c d i n qve v
+  1:59  i n qve v ce qve e c [me] coste mdebrienne dans <86> se d i s
+  1:81  a e d a m a de de [me] s lvy rge a h n e s
+  1:173  r d i mdebrienne e vx mdebrienne n [me] o et <75> coste e q il p
+  1:180  n il o et <75> coste e q [me] p c n ce s se il n
+  1:187  q il p c n ce s se [me] n a p <?> d aines a m
+  2:1  de [me] o n e n mdebrienne n <75> qve
+  2:15  n <75> qve v n aines n i [me] s s s qve ce e c s
+  3:170  qve <88> n se se n de n [me] mdebrienne mdebrienne n <88> s coste se r
+  4:193  p d <93> o amais a o <83> [me] n mdebrienne qve c s p c amais
+  5:27  n i rge qve ce <75> lvy amais [me] c s r s mdebrienne i n dv
+  5:63  e n <86> n mdebrienne favlt r a [me] s a c n aines amais a dv
+  5:85  <75> v a a i <86> povr de [me] o n e n c n i n
+  6:52  <75> e a o vx e s <83> [me] s povr a a c aines n mdebrienne
+  6:93  et qve <75> o n c e de [me] o n n o e e n m
+  6:236  s amais s se v e ez <75> [me] a <47> de ce s rge n s
+  6:278  et a qve e qve s <45> s [me] povr e ez o o lvy s se
+  6:308  a <86> de m c n e a [me] a v favlt p o c f c
+  6:368  s <90> s se a de o vx [me] ce s rge n s o a o
+  6:411  e e e c qve <75> h m [me] s m a c <93> i n c
+  6:429  de n ce n m a o o [me] n e d i mdebrienne v a <64>
+  6:468  e o vx dv d o a o [me] de lvy p c s <60> e n
+  6:491  m s de s d o a o [me] s n dv <90> s a <83> n
+  7:200  se n m o <36(4)> de <72> e [me] n favlt i e lvy n mdebrienne coste
+  7:245  e c e o a de <72> e [me] n
+  9:95  dv c f de b a <75> de [me] o a n mdebrienne p c mdebrienne d
+  9:194  n <75> s c f n c m [me] n ce a de rge o c coste
+  9:297  <93> o m d n <86> a n [me] de s c i vx mdavavx n e
+## T 11=re heldout lm=fr16
+11=re: n 86, current n, statistic 16.6 bits over n; null p95 positions -46.7, value class 145.2; reject (breaks 31 of 86 occurrences by more than 3 bits) [non-blind]
+  0:162  a m p mdebrienne o d s z [re] r c il o i ra q e
+  1:17  m a h ce s n e il [re] o ce n dv <75> favlt coste o
+  1:52  d s il o a c d i [re] qve v ce qve e c il coste
+  1:136  e c qve e qve c mdebrienne mdebrienne [re] de <75> c o a q dv a
+  1:172  s r d i mdebrienne e vx mdebrienne [re] il o et <75> coste e q il
+  1:250  ez p e o vx a p i [re] v n c m p faire o c
+  1:289  n mdebrienne o b a mdebrienne de coste [re] vovs o qve ce h i mdebrienne de
+  2:3  de il o [re] e n mdebrienne n <75> qve v n
+  2:7  de il o n e n mdebrienne [re] <75> qve v n aines n i il
+  2:29  e c s qve <88> a aines ez [re] ce o e s mdebrienne <75> c o
+  2:107  mdebrienne <93> i n mdebrienne e amais a [re] c de e n favlt i n s
+  3:13  ce s rge n s <47> e n [re] h <19/79> m n n de o o
+  3:48  coste <71/77> rge n ce c n r [re] dans de s c n s la de
+  3:105  dv n i mdebrienne <10/20> a <42> mdebrienne [re] qve ce <75> <86> f a la i
+  3:125  p c o f <75> a <42> mdebrienne [re] qve c s coste mdebrienne s p c
+  3:141  c amais <93> e n m a i [re] s <75> c n de m <86> a
+  3:156  <86> a c qve e qve h o [re] monnepvev s o n n qve <88> n
+  3:167  o n n qve <88> n se se [re] de n il mdebrienne mdebrienne n <88> s
+  3:169  n qve <88> n se se n de [re] il mdebrienne mdebrienne n <88> s coste se
+  3:173  se se n de n il mdebrienne mdebrienne [re] <88> s coste se r n n mdebrienne
+  3:179  mdebrienne mdebrienne n <88> s coste se r [re] n mdebrienne ez e n a a <42>
+  3:194  a <42> mdebrienne a rge <88> lvy a [re] s m e ez p c amais <93>
+  3:208  c amais <93> e n m a i [re] s b p monnepvev s o n s
+  4:4  qve de s d [re] a povr e povr n i a de
+  4:9  de s d n a povr e povr [re] i a de n mdebrienne <75> c n
+  4:71  de se o e s n a d [re] s v n mdebrienne n e m f
+  4:76  n a d n s v n mdebrienne [re] e m f d n a e p
+  4:105  d o povr d n a dv <13/15> [re] mdebrienne a c e a coste de n
+  4:124  s c s se s <93> s o [re] c s qve ce s dans s <47>
+  4:146  n mdebrienne a <75> o o lvy n [re] de levr mdebrienne a i c e p
+  4:162  p c s <90> o <86> a p [re] s e s n <86> o a qve
+  4:208  c amais <93> e n m a i [re] s v m n n mdebrienne de ce
+  4:212  n m a i n s v m [re] n mdebrienne de ce mdebrienne e <27> e
+  5:8  s dv <86> ra c n o p [re] s e n e m n a a
+  5:14  o p n s e n e m [re] a a d p n i rge qve
+  5:38  r s mdebrienne i n dv <42> i [re] c de m c n c s n
+  5:46  n c de m c n c s [re] levr mdebrienne a i c e qve m
+  5:87  a a i <86> povr de il o [re] e n c n i n de <47>
+  5:91  povr de il o n e n c [re] i n de <47> s e n mdebrienne
+  5:100  i n de <47> s e n mdebrienne [re] <75> e amais a p ce mdebrienne dv
+  5:119  et <75> i s se a <88> e [re] mdebrienne a i c e e n a
+  5:131  c e e n a a c e [re] qve <83> <86> h i mdebrienne <45> <90>
+  5:140  qve <83> <86> h i mdebrienne <45> <90> [re] c de <75> n p e a de
+  5:144  i mdebrienne <45> <90> n c de <75> [re] p e a de <75> e faire a
+  5:166  rge n s <47> et qve n c [re] c povr e ez a dans n mdebrienne
+  5:191  i s se <90> s e n c [re] <?2> m d n <27> e de c
+  5:227  de de h n a s se m [re] c e a p n i rge o
+  5:242  rge o vx de c n c s [re] <75> <90> i vx <84> <75> r qve
+  5:294  n n s <90> s de c s [re] c f a c f a s mdebrienne
+  5:329  c amais <93> e n m a i [re] s de et de <47> <86> la v
+  5:371  faire e o povr i s c de [re] o d i e n mdebrienne e h
+  5:382  i e n mdebrienne e h n mdebrienne [re] <88> s e n <86> monnepvev s s
+  5:396  monnepvev s s a i h n lvy [re] c c a i n e povr e
+  5:446  r d a h n <86> <45> <90> [re] c de m d s c f a
+  6:78  a qve ce s de h a d [re] s ce s se n mdebrienne et qve
+  6:95  <75> o n c e de il o [re] n o e e n m e n
+  6:103  n n o e e n m e [re] <75> n o et a povr e e
+  6:135  s s s dv e e n mdebrienne [re] ce mdebrienne dv a mdebrienne et <75> r
+  6:163  c s et <86> mdebrienne e o n [re] se a aines o n se o e
+  6:205  n ce c s r de n mdebrienne [re] p n n d n i e ez
+  6:207  c s r de n mdebrienne n p [re] n d n i e ez e n
+  6:210  de n mdebrienne n p n n d [re] i e ez e n mdebrienne n p
+  6:217  d n i e ez e n mdebrienne [re] p n n d a c o <75>
+  6:219  i e ez e n mdebrienne n p [re] n d a c o <75> e e
+  6:255  i s o n n s <27> o [re] a o o n se e e a
+  6:259  n s <27> o n a o o [re] se e e a <84> s c h
+  6:340  de de a mdavavx <75> s se m [re] c e de s <75> n de qve
+  6:387  <90> s se c <90> s a o [re] s se n m o a m dv
+  6:422  a c <93> i n c mdebrienne de [re] ce n m a o o il n
+  6:424  <93> i n c mdebrienne de n ce [re] m a o o il n e d
+  6:532  r d o vx qve ce mdebrienne e [re] la e e
+  7:20  c e m p s <75> <75> p [re] n d a dv qve ce mdebrienne e
+  7:37  <90> i vx v m qve faire e [re] <75> <93> a e a p n <74>
+  7:44  e n <75> <93> a e a p [re] <74> coste ce se m n c qve
+  7:50  a p n <74> coste ce se m [re] c qve rge <86> n o se o
+  7:55  ce se m n c qve rge <86> [re] o se o v n o p n
+  7:63  n o se o v n o p [re] v e a <75> c o a <75>
+  7:85  se a a p o mdebrienne <84> se [re] qve c a amais a d p n
+  7:111  c s se s qve <75> de o [re] c n n s <|> p o m
+  7:120  c n n s <|> p o m [re] o <75> lvy <27> n n s <93>
+  7:141  <75> n de povr h <93> se coste [re] c e o a n o mdebrienne <|>
+  7:155  o mdebrienne <|> <75> <64> e e d [re] dans de rge n mdebrienne o a m
+  7:177  de e c qve ce f b p [re] n d a c p d ce de
+  7:201  n m o <36(4)> de <72> e il [re] favlt i e lvy n mdebrienne coste s
+  7:246  c e o a de <72> e il [re]
+  8:3  e i s [re] d n e n mdebrienne de <75> ra
+## T 11=re c50 lm=fr16
+11=re: n 21, current n, statistic 96.2 bits over n; null p95 positions -40.1, value class 75.6; accept (above both nulls and the acceptance rule) [non-blind]
+  0:26  s <83> a de n mdebrienne et se [re] <75> s c f n mdebrienne de vovs
+  0:64  <75> v a a i <86> <86> de [re] o d i mdebrienne <90> s dv n
+  0:72  n o d i mdebrienne <90> s dv [re] n s m n e e <60> n
+  0:73  o d i mdebrienne <90> s dv n [re] s m n e e <60> n n
+  0:80  n n s m n e e <60> [re] n m e et qve c dv c
+  0:113  s e aines s c f ez dv [re] s e <?> mdavavx povr aines c i
+  0:124  <?> mdavavx povr aines c i a mdavavx [re] c o dv se d i mdebrienne n
+  0:132  n c o dv se d i mdebrienne [re] n dv a o dv c c s
+  0:172  n mdebrienne h n rge a a levr [re] s i n faire s se o <?>
+  0:175  n rge a a levr n s i [re] faire s se o <?> n n d
+  0:181  s i n faire s se o <?> [re] n d n dv n <75> s c
+  0:184  faire s se o <?> n n d [re] dv n <75> s c f n c
+  0:186  se o <?> n n d n dv [re] <75> s c f n c m il
+  0:191  d n dv n <75> s c f [re] c m il n ce a de rge
+  0:224  n d n <88> dans n mdebrienne m [re] dans c mdebrienne et <95> v <?> <?>
+  0:255  <?> n amais s i e s se [re] de i n d d dans n mdebrienne
+  0:280  s <90> e i a de <88> e [re] de s o amais n n de amais
+  0:296  amais <93> o m d n <86> a [re] il de s c i vx mdavavx n
+  0:314  de e c s povr s s c [re] <94> n faire qve s et v i
+  0:316  c s povr s s c n <94> [re] faire qve s et v i n mdebrienne
+  0:390  n s e s e n se m [re] c levr a e faire a n ce
+## T 11=re all lm=fr16
+11=re: n 107, current n, statistic 112.8 bits over n; null p95 positions -157.9, value class 329.6; reject (breaks 35 of 107 occurrences by more than 3 bits) [non-blind]
+  0:162  a m p mdebrienne o d s z [re] r c il o i ra q e
+  1:17  m a h ce s n e il [re] o ce n dv <75> favlt coste o
+  1:52  d s il o a c d i [re] qve v ce qve e c il coste
+  1:136  e c qve e qve c mdebrienne mdebrienne [re] de <75> c o a q dv a
+  1:172  s r d i mdebrienne e vx mdebrienne [re] il o et <75> coste e q il
+  1:250  ez p e o vx a p i [re] v n c m p faire o c
+  1:289  n mdebrienne o b a mdebrienne de coste [re] vovs o qve ce h i mdebrienne de
+  2:3  de il o [re] e n mdebrienne n <75> qve v n
+  2:7  de il o n e n mdebrienne [re] <75> qve v n aines n i il
+  2:29  e c s qve <88> a aines ez [re] ce o e s mdebrienne <75> c o
+  2:107  mdebrienne <93> i n mdebrienne e amais a [re] c de e n favlt i n s
+  3:13  ce s rge n s <47> e n [re] h <19/79> m n n de o o
+  3:48  coste <71/77> rge n ce c n r [re] dans de s c n s la de
+  3:105  dv n i mdebrienne <10/20> a <42> mdebrienne [re] qve ce <75> <86> f a la i
+  3:125  p c o f <75> a <42> mdebrienne [re] qve c s coste mdebrienne s p c
+  3:141  c amais <93> e n m a i [re] s <75> c n de m <86> a
+  3:156  <86> a c qve e qve h o [re] monnepvev s o n n qve <88> n
+  3:167  o n n qve <88> n se se [re] de n il mdebrienne mdebrienne n <88> s
+  3:169  n qve <88> n se se n de [re] il mdebrienne mdebrienne n <88> s coste se
+  3:173  se se n de n il mdebrienne mdebrienne [re] <88> s coste se r n n mdebrienne
+  3:179  mdebrienne mdebrienne n <88> s coste se r [re] n mdebrienne ez e n a a <42>
+  3:194  a <42> mdebrienne a rge <88> lvy a [re] s m e ez p c amais <93>
+  3:208  c amais <93> e n m a i [re] s b p monnepvev s o n s
+  4:4  qve de s d [re] a povr e povr n i a de
+  4:9  de s d n a povr e povr [re] i a de n mdebrienne <75> c n
+  4:71  de se o e s n a d [re] s v n mdebrienne n e m f
+  4:76  n a d n s v n mdebrienne [re] e m f d n a e p
+  4:105  d o povr d n a dv <13/15> [re] mdebrienne a c e a coste de n
+  4:124  s c s se s <93> s o [re] c s qve ce s dans s <47>
+  4:146  n mdebrienne a <75> o o lvy n [re] de levr mdebrienne a i c e p
+  4:162  p c s <90> o <86> a p [re] s e s n <86> o a qve
+  4:208  c amais <93> e n m a i [re] s v m n n mdebrienne de ce
+  4:212  n m a i n s v m [re] n mdebrienne de ce mdebrienne e <27> e
+  5:8  s dv <86> ra c n o p [re] s e n e m n a a
+  5:14  o p n s e n e m [re] a a d p n i rge qve
+  5:38  r s mdebrienne i n dv <42> i [re] c de m c n c s n
+  5:46  n c de m c n c s [re] levr mdebrienne a i c e qve m
+  5:87  a a i <86> povr de il o [re] e n c n i n de <47>
+  5:91  povr de il o n e n c [re] i n de <47> s e n mdebrienne
+  5:100  i n de <47> s e n mdebrienne [re] <75> e amais a p ce mdebrienne dv
+  5:119  et <75> i s se a <88> e [re] mdebrienne a i c e e n a
+  5:131  c e e n a a c e [re] qve <83> <86> h i mdebrienne <45> <90>
+  5:140  qve <83> <86> h i mdebrienne <45> <90> [re] c de <75> n p e a de
+  5:144  i mdebrienne <45> <90> n c de <75> [re] p e a de <75> e faire a
+  5:166  rge n s <47> et qve n c [re] c povr e ez a dans n mdebrienne
+  5:191  i s se <90> s e n c [re] <?2> m d n <27> e de c
+  5:227  de de h n a s se m [re] c e a p n i rge o
+  5:242  rge o vx de c n c s [re] <75> <90> i vx <84> <75> r qve
+  5:294  n n s <90> s de c s [re] c f a c f a s mdebrienne
+  5:329  c amais <93> e n m a i [re] s de et de <47> <86> la v
+  5:371  faire e o povr i s c de [re] o d i e n mdebrienne e h
+  5:382  i e n mdebrienne e h n mdebrienne [re] <88> s e n <86> monnepvev s s
+  5:396  monnepvev s s a i h n lvy [re] c c a i n e povr e
+  5:446  r d a h n <86> <45> <90> [re] c de m d s c f a
+  6:78  a qve ce s de h a d [re] s ce s se n mdebrienne et qve
+  6:95  <75> o n c e de il o [re] n o e e n m e n
+  6:103  n n o e e n m e [re] <75> n o et a povr e e
+  6:135  s s s dv e e n mdebrienne [re] ce mdebrienne dv a mdebrienne et <75> r
+  6:163  c s et <86> mdebrienne e o n [re] se a aines o n se o e
+  6:205  n ce c s r de n mdebrienne [re] p n n d n i e ez
+  6:207  c s r de n mdebrienne n p [re] n d n i e ez e n
+  6:210  de n mdebrienne n p n n d [re] i e ez e n mdebrienne n p
+  6:217  d n i e ez e n mdebrienne [re] p n n d a c o <75>
+  6:219  i e ez e n mdebrienne n p [re] n d a c o <75> e e
+  6:255  i s o n n s <27> o [re] a o o n se e e a
+  6:259  n s <27> o n a o o [re] se e e a <84> s c h
+  6:340  de de a mdavavx <75> s se m [re] c e de s <75> n de qve
+  6:387  <90> s se c <90> s a o [re] s se n m o a m dv
+  6:422  a c <93> i n c mdebrienne de [re] ce n m a o o il n
+  6:424  <93> i n c mdebrienne de n ce [re] m a o o il n e d
+  6:532  r d o vx qve ce mdebrienne e [re] la e e
+  7:20  c e m p s <75> <75> p [re] n d a dv qve ce mdebrienne e
+  7:37  <90> i vx v m qve faire e [re] <75> <93> a e a p n <74>
+  7:44  e n <75> <93> a e a p [re] <74> coste ce se m n c qve
+  7:50  a p n <74> coste ce se m [re] c qve rge <86> n o se o
+  7:55  ce se m n c qve rge <86> [re] o se o v n o p n
+  7:63  n o se o v n o p [re] v e a <75> c o a <75>
+  7:85  se a a p o mdebrienne <84> se [re] qve c a amais a d p n
+  7:111  c s se s qve <75> de o [re] c n n s <|> p o m
+  7:120  c n n s <|> p o m [re] o <75> lvy <27> n n s <93>
+  7:141  <75> n de povr h <93> se coste [re] c e o a n o mdebrienne <|>
+  7:155  o mdebrienne <|> <75> <64> e e d [re] dans de rge n mdebrienne o a m
+  7:177  de e c qve ce f b p [re] n d a c p d ce de
+  7:201  n m o <36(4)> de <72> e il [re] favlt i e lvy n mdebrienne coste s
+  7:246  c e o a de <72> e il [re]
+  8:3  e i s [re] d n e n mdebrienne de <75> ra
+  9:26  s <83> a de n mdebrienne et se [re] <75> s c f n mdebrienne de vovs
+  9:64  <75> v a a i <86> <86> de [re] o d i mdebrienne <90> s dv n
+  9:72  n o d i mdebrienne <90> s dv [re] n s m n e e <60> n
+  9:73  o d i mdebrienne <90> s dv n [re] s m n e e <60> n n
+  9:80  n n s m n e e <60> [re] n m e et qve c dv c
+  9:113  s e aines s c f ez dv [re] s e <?> mdavavx povr aines c i
+  9:124  <?> mdavavx povr aines c i a mdavavx [re] c o dv se d i mdebrienne n
+  9:132  n c o dv se d i mdebrienne [re] n dv a o dv c c s
+  9:172  n mdebrienne h n rge a a levr [re] s i n faire s se o <?>
+  9:175  n rge a a levr n s i [re] faire s se o <?> n n d
+  9:181  s i n faire s se o <?> [re] n d n dv n <75> s c
+  9:184  faire s se o <?> n n d [re] dv n <75> s c f n c
+  9:186  se o <?> n n d n dv [re] <75> s c f n c m il
+  9:191  d n dv n <75> s c f [re] c m il n ce a de rge
+  9:224  n d n <88> dans n mdebrienne m [re] dans c mdebrienne et <95> v <?> <?>
+  9:255  <?> n amais s i e s se [re] de i n d d dans n mdebrienne
+  9:280  s <90> e i a de <88> e [re] de s o amais n n de amais
+  9:296  amais <93> o m d n <86> a [re] il de s c i vx mdavavx n
+  9:314  de e c s povr s s c [re] <94> n faire qve s et v i
+  9:316  c s povr s s c n <94> [re] faire qve s et v i n mdebrienne
+  9:390  n s e s e n se m [re] c levr a e faire a n ce
+## T 81=me heldout lm=fr16
+81=me: n 28, current il, statistic -62.7 bits over il; null p95 positions , value class 127.6; reject (no better than the current value) [non-blind]
+  0:165  mdebrienne o d s z n r c [me] o i ra q e favlt d m
+  1:16  f m a h ce s n e [me] n o ce n dv <75> favlt coste
+  1:31  favlt coste o <84> c e r m [me] dv <83> la <?> e e c a
+  1:46  c a c <63> n rge d s [me] o a c d i n qve v
+  1:59  i n qve v ce qve e c [me] coste mdebrienne dans <86> se d i s
+  1:81  a e d a m a de de [me] s lvy rge a h n e s
+  1:173  r d i mdebrienne e vx mdebrienne n [me] o et <75> coste e q il p
+  1:180  n il o et <75> coste e q [me] p c n ce s se il n
+  1:187  q il p c n ce s se [me] n a p <?> d aines a m
+  2:1  de [me] o n e n mdebrienne n <75> qve
+  2:15  n <75> qve v n aines n i [me] s s s qve ce e c s
+  3:170  qve <88> n se se n de n [me] mdebrienne mdebrienne n <88> s coste se r
+  4:193  p d <93> o amais a o <83> [me] n mdebrienne qve c s p c amais
+  5:27  n i rge qve ce <75> lvy amais [me] c s r s mdebrienne i n dv
+  5:63  e n <86> n mdebrienne favlt r a [me] s a c n aines amais a dv
+  5:85  <75> v a a i <86> povr de [me] o n e n c n i n
+  6:52  <75> e a o vx e s <83> [me] s povr a a c aines n mdebrienne
+  6:93  et qve <75> o n c e de [me] o n n o e e n m
+  6:236  s amais s se v e ez <75> [me] a <47> de ce s rge n s
+  6:278  et a qve e qve s <45> s [me] povr e ez o o lvy s se
+  6:308  a <86> de m c n e a [me] a v favlt p o c f c
+  6:368  s <90> s se a de o vx [me] ce s rge n s o a o
+  6:411  e e e c qve <75> h m [me] s m a c <93> i n c
+  6:429  de n ce n m a o o [me] n e d i mdebrienne v a <64>
+  6:468  e o vx dv d o a o [me] de lvy p c s <60> e n
+  6:491  m s de s d o a o [me] s n dv <90> s a <83> n
+  7:200  se n m o <36(4)> de <72> e [me] n favlt i e lvy n mdebrienne coste
+  7:245  e c e o a de <72> e [me] n
+## T 81=me c50 lm=fr16
+81=me: n 3, current il, statistic 24.4 bits over il; null p95 positions , value class 34.8; undecided (a null could not be built (too few matching positions or no same-class values)) [non-blind]
+  0:95  dv c f de b a <75> de [me] o a n mdebrienne p c mdebrienne d
+  0:194  n <75> s c f n c m [me] n ce a de rge o c coste
+  0:297  <93> o m d n <86> a n [me] de s c i vx mdavavx n e
+## T 81=me all lm=fr16
+81=me: n 31, current il, statistic -38.3 bits over il; null p95 positions , value class 158.1; reject (no better than the current value) [non-blind]
+  0:165  mdebrienne o d s z n r c [me] o i ra q e favlt d m
+  1:16  f m a h ce s n e [me] n o ce n dv <75> favlt coste
+  1:31  favlt coste o <84> c e r m [me] dv <83> la <?> e e c a
+  1:46  c a c <63> n rge d s [me] o a c d i n qve v
+  1:59  i n qve v ce qve e c [me] coste mdebrienne dans <86> se d i s
+  1:81  a e d a m a de de [me] s lvy rge a h n e s
+  1:173  r d i mdebrienne e vx mdebrienne n [me] o et <75> coste e q il p
+  1:180  n il o et <75> coste e q [me] p c n ce s se il n
+  1:187  q il p c n ce s se [me] n a p <?> d aines a m
+  2:1  de [me] o n e n mdebrienne n <75> qve
+  2:15  n <75> qve v n aines n i [me] s s s qve ce e c s
+  3:170  qve <88> n se se n de n [me] mdebrienne mdebrienne n <88> s coste se r
+  4:193  p d <93> o amais a o <83> [me] n mdebrienne qve c s p c amais
+  5:27  n i rge qve ce <75> lvy amais [me] c s r s mdebrienne i n dv
+  5:63  e n <86> n mdebrienne favlt r a [me] s a c n aines amais a dv
+  5:85  <75> v a a i <86> povr de [me] o n e n c n i n
+  6:52  <75> e a o vx e s <83> [me] s povr a a c aines n mdebrienne
+  6:93  et qve <75> o n c e de [me] o n n o e e n m
+  6:236  s amais s se v e ez <75> [me] a <47> de ce s rge n s
+  6:278  et a qve e qve s <45> s [me] povr e ez o o lvy s se
+  6:308  a <86> de m c n e a [me] a v favlt p o c f c
+  6:368  s <90> s se a de o vx [me] ce s rge n s o a o
+  6:411  e e e c qve <75> h m [me] s m a c <93> i n c
+  6:429  de n ce n m a o o [me] n e d i mdebrienne v a <64>
+  6:468  e o vx dv d o a o [me] de lvy p c s <60> e n
+  6:491  m s de s d o a o [me] s n dv <90> s a <83> n
+  7:200  se n m o <36(4)> de <72> e [me] n favlt i e lvy n mdebrienne coste
+  7:245  e c e o a de <72> e [me] n
+  9:95  dv c f de b a <75> de [me] o a n mdebrienne p c mdebrienne d
+  9:194  n <75> s c f n c m [me] n ce a de rge o c coste
+  9:297  <93> o m d n <86> a n [me] de s c i vx mdavavx n e
+## R 11=re heldout blanked lm=tools/data/fr17
+11=re: n 86, current -, statistic -372.4 bits over NULL; null p95 positions -510.2, value class -195.7; reject (no better than the runner-up) [non-blind]
+  0:162  a m p mdebrienne o d s z [re] r c il o i ra q e
+  1:17  m a h ce s n e il [re] o ce n dv <75> favlt coste o
+  1:52  d s il o a c d i [re] qve v ce qve e c il coste
+  1:136  e c qve e qve c mdebrienne mdebrienne [re] de <75> c o a q dv a
+  1:172  s r d i mdebrienne e vx mdebrienne [re] il o et <75> coste e q il
+  1:250  ez p e o vx a p i [re] v n c m p faire o c
+  1:289  n mdebrienne o b a mdebrienne de coste [re] vovs o qve ce h i mdebrienne de
+  2:3  de il o [re] e n mdebrienne <11> <75> qve v n
+  2:7  de il o <11> e n mdebrienne [re] <75> qve v n aines n i il
+  2:29  e c s qve <88> a aines ez [re] ce o e s mdebrienne <75> c o
+  2:107  mdebrienne <93> i n mdebrienne e amais a [re] c de e n favlt i n s
+  3:13  ce s rge n s <47> e n [re] h <19/79> m n n de o o
+  3:48  coste <71/77> rge n ce c n r [re] dans de s c n s la de
+  3:105  dv n i mdebrienne <10/20> a <42> mdebrienne [re] qve ce <75> <86> f a la i
+  3:125  p c o f <75> a <42> mdebrienne [re] qve c s coste mdebrienne s p c
+  3:141  c amais <93> e n m a i [re] s <75> c n de m <86> a
+  3:156  <86> a c qve e qve h o [re] monnepvev s o n n qve <88> n
+  3:167  o n n qve <88> n se se [re] de <11> il mdebrienne mdebrienne <11> <88> s
+  3:169  n qve <88> n se se <11> de [re] il mdebrienne mdebrienne <11> <88> s coste se
+  3:173  se se <11> de <11> il mdebrienne mdebrienne [re] <88> s coste se r <11> n mdebrienne
+  3:179  mdebrienne mdebrienne <11> <88> s coste se r [re] n mdebrienne ez e n a a <42>
+  3:194  a <42> mdebrienne a rge <88> lvy a [re] s m e ez p c amais <93>
+  3:208  c amais <93> e n m a i [re] s b p monnepvev s o n s
+  4:4  qve de s d [re] a povr e povr <11> i a de
+  4:9  de s d <11> a povr e povr [re] i a de n mdebrienne <75> c n
+  4:71  de se o e s n a d [re] s v n mdebrienne <11> e m f
+  4:76  n a d <11> s v n mdebrienne [re] e m f d n a e p
+  4:105  d o povr d n a dv <13/15> [re] mdebrienne a c e a coste de n
+  4:124  s c s se s <93> s o [re] c s qve ce s dans s <47>
+  4:146  n mdebrienne a <75> o o lvy n [re] de levr mdebrienne a i c e p
+  4:162  p c s <90> o <86> a p [re] s e s n <86> o a qve
+  4:208  c amais <93> e n m a i [re] s v m <11> n mdebrienne de ce
+  4:212  n m a i <11> s v m [re] n mdebrienne de ce mdebrienne e <27> e
+  5:8  s dv <86> ra c n o p [re] s e n e m <11> a a
+  5:14  o p <11> s e n e m [re] a a d p n i rge qve
+  5:38  r s mdebrienne i n dv <42> i [re] c de m c n c s <11>
+  5:46  <11> c de m c n c s [re] levr mdebrienne a i c e qve m
+  5:87  a a i <86> povr de il o [re] e n c <11> i n de <47>
+  5:91  povr de il o <11> e n c [re] i n de <47> s e n mdebrienne
+  5:100  i n de <47> s e n mdebrienne [re] <75> e amais a p ce mdebrienne dv
+  5:119  et <75> i s se a <88> e [re] mdebrienne a i c e e n a
+  5:131  c e e n a a c e [re] qve <83> <86> h i mdebrienne <45> <90>
+  5:140  qve <83> <86> h i mdebrienne <45> <90> [re] c de <75> <11> p e a de
+  5:144  i mdebrienne <45> <90> <11> c de <75> [re] p e a de <75> e faire a
+  5:166  rge n s <47> et qve n c [re] c povr e ez a dans n mdebrienne
+  5:191  i s se <90> s e n c [re] <?2> m d n <27> e de c
+  5:227  de de h n a s se m [re] c e a p n i rge o
+  5:242  rge o vx de c n c s [re] <75> <90> i vx <84> <75> r qve
+  5:294  n n s <90> s de c s [re] c f a c f a s mdebrienne
+  5:329  c amais <93> e n m a i [re] s de et de <47> <86> la v
+  5:371  faire e o povr i s c de [re] o d i e n mdebrienne e h
+  5:382  i e n mdebrienne e h n mdebrienne [re] <88> s e n <86> monnepvev s s
+  5:396  monnepvev s s a i h n lvy [re] c c a i n e povr e
+  5:446  r d a h n <86> <45> <90> [re] c de m d s c f a
+  6:78  a qve ce s de h a d [re] s ce s se n mdebrienne et qve
+  6:95  <75> o n c e de il o [re] n o e e n m e <11>
+  6:103  <11> n o e e n m e [re] <75> n o et a povr e e
+  6:135  s s s dv e e n mdebrienne [re] ce mdebrienne dv a mdebrienne et <75> r
+  6:163  c s et <86> mdebrienne e o n [re] se a aines o n se o e
+  6:205  n ce c s r de n mdebrienne [re] p <11> n d <11> i e ez
+  6:207  c s r de n mdebrienne <11> p [re] n d <11> i e ez e n
+  6:210  de n mdebrienne <11> p <11> n d [re] i e ez e n mdebrienne <11> p
+  6:217  d <11> i e ez e n mdebrienne [re] p <11> n d a c o <75>
+  6:219  i e ez e n mdebrienne <11> p [re] n d a c o <75> e e
+  6:255  i s o n n s <27> o [re] a o o <11> se e e a
+  6:259  n s <27> o <11> a o o [re] se e e a <84> s c h
+  6:340  de de a mdavavx <75> s se m [re] c e de s <75> n de qve
+  6:387  <90> s se c <90> s a o [re] s se n m o a m dv
+  6:422  a c <93> i n c mdebrienne de [re] ce <11> m a o o il n
+  6:424  <93> i n c mdebrienne de <11> ce [re] m a o o il n e d
+  6:532  r d o vx qve ce mdebrienne e [re] la e e
+  7:20  c e m p s <75> <75> p [re] n d a dv qve ce mdebrienne e
+  7:37  <90> i vx v m qve faire e [re] <75> <93> a e a p <11> <74>
+  7:44  e <11> <75> <93> a e a p [re] <74> coste ce se m <11> c qve
+  7:50  a p <11> <74> coste ce se m [re] c qve rge <86> <11> o se o
+  7:55  ce se m <11> c qve rge <86> [re] o se o v n o p <11>
+  7:63  <11> o se o v n o p [re] v e a <75> c o a <75>
+  7:85  se a a p o mdebrienne <84> se [re] qve c a amais a d p n
+  7:111  c s se s qve <75> de o [re] c n n s <|> p o m
+  7:120  c n n s <|> p o m [re] o <75> lvy <27> n n s <93>
+  7:141  <75> n de povr h <93> se coste [re] c e o a n o mdebrienne <|>
+  7:155  o mdebrienne <|> <75> <64> e e d [re] dans de rge n mdebrienne o a m
+  7:177  de e c qve ce f b p [re] n d a c p d ce de
+  7:201  n m o <36(4)> de <72> e il [re] favlt i e lvy n mdebrienne coste s
+  7:246  c e o a de <72> e il [re]
+  8:3  e i s [re] d n e n mdebrienne de <75> ra
+## R 81=me heldout blanked lm=tools/data/fr17
+81=me: n 28, current -, statistic -226.7 bits over I; null p95 positions -186.4, value class -53.1; reject (no better than the runner-up) [non-blind]
+  0:165  mdebrienne o d s z n r c [me] o i ra q e favlt d m
+  1:16  f m a h ce s n e [me] n o ce n dv <75> favlt coste
+  1:31  favlt coste o <84> c e r m [me] dv <83> la <?> e e c a
+  1:46  c a c <63> n rge d s [me] o a c d i n qve v
+  1:59  i n qve v ce qve e c [me] coste mdebrienne dans <86> se d i s
+  1:81  a e d a m a de de [me] s lvy rge a h n e s
+  1:173  r d i mdebrienne e vx mdebrienne n [me] o et <75> coste e q <81> p
+  1:180  n <81> o et <75> coste e q [me] p c n ce s se <81> n
+  1:187  q <81> p c n ce s se [me] n a p <?> d aines a m
+  2:1  de [me] o n e n mdebrienne n <75> qve
+  2:15  n <75> qve v n aines n i [me] s s s qve ce e c s
+  3:170  qve <88> n se se n de n [me] mdebrienne mdebrienne n <88> s coste se r
+  4:193  p d <93> o amais a o <83> [me] n mdebrienne qve c s p c amais
+  5:27  n i rge qve ce <75> lvy amais [me] c s r s mdebrienne i n dv
+  5:63  e n <86> n mdebrienne favlt r a [me] s a c n aines amais a dv
+  5:85  <75> v a a i <86> povr de [me] o n e n c n i n
+  6:52  <75> e a o vx e s <83> [me] s povr a a c aines n mdebrienne
+  6:93  et qve <75> o n c e de [me] o n n o e e n m
+  6:236  s amais s se v e ez <75> [me] a <47> de ce s rge n s
+  6:278  et a qve e qve s <45> s [me] povr e ez o o lvy s se
+  6:308  a <86> de m c n e a [me] a v favlt p o c f c
+  6:368  s <90> s se a de o vx [me] ce s rge n s o a o
+  6:411  e e e c qve <75> h m [me] s m a c <93> i n c
+  6:429  de n ce n m a o o [me] n e d i mdebrienne v a <64>
+  6:468  e o vx dv d o a o [me] de lvy p c s <60> e n
+  6:491  m s de s d o a o [me] s n dv <90> s a <83> n
+  7:200  se n m o <36(4)> de <72> e [me] n favlt i e lvy n mdebrienne coste
+  7:245  e c e o a de <72> e [me] n
+## K 16=se (true; current e) all lm=tools/data/fr17
+16=se: n 48, current e, statistic -298.2 bits over e; null p95 positions -150.4, value class -109.6; reject (no better than the current value) [non-blind]
+  1:0  [se] a la de c e n et f
+  1:64  qve e c il coste mdebrienne dans <86> [se] d i s <90> s n o <?>
+  1:108  a n o mdebrienne a e i e [se] d i mdebrienne n h i n o
+  1:158  c e dv o v c e o [se] ce <75> e e m s r d
+  1:186  e q il p c n ce s [se] il n a p <?> d aines a
+  3:165  monnepvev s o n n qve <88> n [se] e n de n il mdebrienne mdebrienne n
+  3:166  s o n n qve <88> n e [se] n de n il mdebrienne mdebrienne n <88>
+  3:177  n il mdebrienne mdebrienne n <88> s coste [se] r n n mdebrienne ez e n a
+  4:33  <90> i vx c dv mdebrienne d p [se] e <75> mdebrienne e a qve b n
+  4:34  i vx c dv mdebrienne d p e [se] <75> mdebrienne e a qve b n e
+  4:42  e <75> mdebrienne e a qve b n [se] i m mdebrienne povr dv de <94> e
+  4:64  n ce de ez <13/15> <75> n de [se] o e s n a d n s
+  4:119  coste de n o e s c s [se] s <93> s o n c s qve
+  4:137  s dans s <47> <90> s e s [se] n mdebrienne a <75> o o lvy n
+  4:244  favlt o m c qve e c <86> [se] a favlt i n e lvy n mdebrienne
+  5:115  mdebrienne dv a mdebrienne et <75> i s [se] a <88> e n mdebrienne a i c
+  5:185  qve a n n <86> <75> i s [se] <90> s e n c n <?2> m
+  5:225  n mdebrienne de de h n a s [se] m n c e a p n i
+  5:409  n e povr e s <86> <90> s [se] n mdebrienne i e s <86> c n
+  5:517  <75> rge n o de <75> ce s [se] a a e vx c n coste amais
+  5:530  c n coste amais s p d <93> [se] e s <86>
+  6:3  a o de [se] s <93> i a mdebrienne a i c
+  6:82  de h a d n s ce s [se] n mdebrienne et qve <75> o n c
+  6:115  et a povr e e c c n [se] a aines a s amais n n povr
+  6:164  s et <86> mdebrienne e o n n [se] a aines o n e o e de
+  6:169  o n n e a aines o n [se] o e de s mdebrienne a i c
+  6:231  c o <75> e e s amais s [se] v e ez <75> il a <47> de
+  6:260  s <27> o n a o o n [se] e e a <84> s c h a
+  6:286  il povr e ez o o lvy s [se] n e v e o s i n
+  6:288  e ez o o lvy s e n [se] v e o s i n mdebrienne n
+  6:325  s coste s c o a s povr [se] m e n <86> n mdebrienne de de
+  6:338  n mdebrienne de de a mdavavx <75> s [se] m n c e de s <75> n
+  6:363  c n n s <90> s <90> s [se] a de o vx il ce s rge
+  6:381  s o a o a c <90> s [se] c <90> s a o n s e
+  6:389  e c <90> s a o n s [se] n m o a m dv <86> i
+  6:453  n s <47> c s <93> o s [se] a a p o mdebrienne s e o
+  7:48  a e a p n <74> coste ce [se] m n c qve rge <86> n o
+  7:57  m n c qve rge <86> n o [se] o v n o p n v e
+  7:77  o a <75> <90> s <93> o s [se] a a p o mdebrienne <84> e n
+  7:84  s e a a p o mdebrienne <84> [se] n qve c a amais a d p
+  7:105  de favlt n de a c c s [se] s qve <75> de o n c n
+  7:139  <75> s <75> n de povr h <93> [se] coste n c e o a n o
+  7:192  ce de de i m mdebrienne de s [se] n m o <36(4)> de <72> e il
+  9:25  de s <83> a de n mdebrienne et [se] n <75> s c f n mdebrienne de
+  9:128  c i a mdavavx n c o dv [se] d i mdebrienne n n dv a o
+  9:178  a levr n s i n faire s [se] o <?> n n d n dv n
+  9:254  e <?> n amais s i e s [se] n de i n d d dans n
+  9:388  a la n s e s e n [se] m n c levr a e faire a
+## K 16=la (false; current e) all lm=tools/data/fr17
+16=la: n 48, current e, statistic -450.7 bits over e; null p95 positions -141.6, value class -109.6; reject (no better than the current value) [non-blind]
+  1:0  [la] a la de c e n et f
+  1:64  qve e c il coste mdebrienne dans <86> [la] d i s <90> s n o <?>
+  1:108  a n o mdebrienne a e i e [la] d i mdebrienne n h i n o
+  1:158  c e dv o v c e o [la] ce <75> e e m s r d
+  1:186  e q il p c n ce s [la] il n a p <?> d aines a
+  3:165  monnepvev s o n n qve <88> n [la] e n de n il mdebrienne mdebrienne n
+  3:166  s o n n qve <88> n e [la] n de n il mdebrienne mdebrienne n <88>
+  3:177  n il mdebrienne mdebrienne n <88> s coste [la] r n n mdebrienne ez e n a
+  4:33  <90> i vx c dv mdebrienne d p [la] e <75> mdebrienne e a qve b n
+  4:34  i vx c dv mdebrienne d p e [la] <75> mdebrienne e a qve b n e
+  4:42  e <75> mdebrienne e a qve b n [la] i m mdebrienne povr dv de <94> e
+  4:64  n ce de ez <13/15> <75> n de [la] o e s n a d n s
+  4:119  coste de n o e s c s [la] s <93> s o n c s qve
+  4:137  s dans s <47> <90> s e s [la] n mdebrienne a <75> o o lvy n
+  4:244  favlt o m c qve e c <86> [la] a favlt i n e lvy n mdebrienne
+  5:115  mdebrienne dv a mdebrienne et <75> i s [la] a <88> e n mdebrienne a i c
+  5:185  qve a n n <86> <75> i s [la] <90> s e n c n <?2> m
+  5:225  n mdebrienne de de h n a s [la] m n c e a p n i
+  5:409  n e povr e s <86> <90> s [la] n mdebrienne i e s <86> c n
+  5:517  <75> rge n o de <75> ce s [la] a a e vx c n coste amais
+  5:530  c n coste amais s p d <93> [la] e s <86>
+  6:3  a o de [la] s <93> i a mdebrienne a i c
+  6:82  de h a d n s ce s [la] n mdebrienne et qve <75> o n c
+  6:115  et a povr e e c c n [la] a aines a s amais n n povr
+  6:164  s et <86> mdebrienne e o n n [la] a aines o n e o e de
+  6:169  o n n e a aines o n [la] o e de s mdebrienne a i c
+  6:231  c o <75> e e s amais s [la] v e ez <75> il a <47> de
+  6:260  s <27> o n a o o n [la] e e a <84> s c h a
+  6:286  il povr e ez o o lvy s [la] n e v e o s i n
+  6:288  e ez o o lvy s e n [la] v e o s i n mdebrienne n
+  6:325  s coste s c o a s povr [la] m e n <86> n mdebrienne de de
+  6:338  n mdebrienne de de a mdavavx <75> s [la] m n c e de s <75> n
+  6:363  c n n s <90> s <90> s [la] a de o vx il ce s rge
+  6:381  s o a o a c <90> s [la] c <90> s a o n s e
+  6:389  e c <90> s a o n s [la] n m o a m dv <86> i
+  6:453  n s <47> c s <93> o s [la] a a p o mdebrienne s e o
+  7:48  a e a p n <74> coste ce [la] m n c qve rge <86> n o
+  7:57  m n c qve rge <86> n o [la] o v n o p n v e
+  7:77  o a <75> <90> s <93> o s [la] a a p o mdebrienne <84> e n
+  7:84  s e a a p o mdebrienne <84> [la] n qve c a amais a d p
+  7:105  de favlt n de a c c s [la] s qve <75> de o n c n
+  7:139  <75> s <75> n de povr h <93> [la] coste n c e o a n o
+  7:192  ce de de i m mdebrienne de s [la] n m o <36(4)> de <72> e il
+  9:25  de s <83> a de n mdebrienne et [la] n <75> s c f n mdebrienne de
+  9:128  c i a mdavavx n c o dv [la] d i mdebrienne n n dv a o
+  9:178  a levr n s i n faire s [la] o <?> n n d n dv n
+  9:254  e <?> n amais s i e s [la] n de i n d d dans n
+  9:388  a la n s e s e n [la] m n c levr a e faire a
+## K 16=ux (false; current e) all lm=tools/data/fr17
+16=ux: n 48, current e, statistic -1183.2 bits over e; null p95 positions -682.2, value class -109.6; reject (no better than the current value) [non-blind]
+  1:0  [ux] a la de c e n et f
+  1:64  qve e c il coste mdebrienne dans <86> [ux] d i s <90> s n o <?>
+  1:108  a n o mdebrienne a e i e [ux] d i mdebrienne n h i n o
+  1:158  c e dv o v c e o [ux] ce <75> e e m s r d
+  1:186  e q il p c n ce s [ux] il n a p <?> d aines a
+  3:165  monnepvev s o n n qve <88> n [ux] e n de n il mdebrienne mdebrienne n
+  3:166  s o n n qve <88> n e [ux] n de n il mdebrienne mdebrienne n <88>
+  3:177  n il mdebrienne mdebrienne n <88> s coste [ux] r n n mdebrienne ez e n a
+  4:33  <90> i vx c dv mdebrienne d p [ux] e <75> mdebrienne e a qve b n
+  4:34  i vx c dv mdebrienne d p e [ux] <75> mdebrienne e a qve b n e
+  4:42  e <75> mdebrienne e a qve b n [ux] i m mdebrienne povr dv de <94> e
+  4:64  n ce de ez <13/15> <75> n de [ux] o e s n a d n s
+  4:119  coste de n o e s c s [ux] s <93> s o n c s qve
+  4:137  s dans s <47> <90> s e s [ux] n mdebrienne a <75> o o lvy n
+  4:244  favlt o m c qve e c <86> [ux] a favlt i n e lvy n mdebrienne
+  5:115  mdebrienne dv a mdebrienne et <75> i s [ux] a <88> e n mdebrienne a i c
+  5:185  qve a n n <86> <75> i s [ux] <90> s e n c n <?2> m
+  5:225  n mdebrienne de de h n a s [ux] m n c e a p n i
+  5:409  n e povr e s <86> <90> s [ux] n mdebrienne i e s <86> c n
+  5:517  <75> rge n o de <75> ce s [ux] a a e vx c n coste amais
+  5:530  c n coste amais s p d <93> [ux] e s <86>
+  6:3  a o de [ux] s <93> i a mdebrienne a i c
+  6:82  de h a d n s ce s [ux] n mdebrienne et qve <75> o n c
+  6:115  et a povr e e c c n [ux] a aines a s amais n n povr
+  6:164  s et <86> mdebrienne e o n n [ux] a aines o n e o e de
+  6:169  o n n e a aines o n [ux] o e de s mdebrienne a i c
+  6:231  c o <75> e e s amais s [ux] v e ez <75> il a <47> de
+  6:260  s <27> o n a o o n [ux] e e a <84> s c h a
+  6:286  il povr e ez o o lvy s [ux] n e v e o s i n
+  6:288  e ez o o lvy s e n [ux] v e o s i n mdebrienne n
+  6:325  s coste s c o a s povr [ux] m e n <86> n mdebrienne de de
+  6:338  n mdebrienne de de a mdavavx <75> s [ux] m n c e de s <75> n
+  6:363  c n n s <90> s <90> s [ux] a de o vx il ce s rge
+  6:381  s o a o a c <90> s [ux] c <90> s a o n s e
+  6:389  e c <90> s a o n s [ux] n m o a m dv <86> i
+  6:453  n s <47> c s <93> o s [ux] a a p o mdebrienne s e o
+  7:48  a e a p n <74> coste ce [ux] m n c qve rge <86> n o
+  7:57  m n c qve rge <86> n o [ux] o v n o p n v e
+  7:77  o a <75> <90> s <93> o s [ux] a a p o mdebrienne <84> e n
+  7:84  s e a a p o mdebrienne <84> [ux] n qve c a amais a d p
+  7:105  de favlt n de a c c s [ux] s qve <75> de o n c n
+  7:139  <75> s <75> n de povr h <93> [ux] coste n c e o a n o
+  7:192  ce de de i m mdebrienne de s [ux] n m o <36(4)> de <72> e il
+  9:25  de s <83> a de n mdebrienne et [ux] n <75> s c f n mdebrienne de
+  9:128  c i a mdavavx n c o dv [ux] d i mdebrienne n n dv a o
+  9:178  a levr n s i n faire s [ux] o <?> n n d n dv n
+  9:254  e <?> n amais s i e s [ux] n de i n d d dans n
+  9:388  a la n s e s e n [ux] m n c levr a e faire a
+## K 16=ez (false; current e) all lm=tools/data/fr17
+16=ez: n 48, current e, statistic -938.5 bits over e; null p95 positions -650.3, value class -39.3; reject (no better than the current value) [non-blind]
+  1:0  [ez] a la de c e n et f
+  1:64  qve e c il coste mdebrienne dans <86> [ez] d i s <90> s n o <?>
+  1:108  a n o mdebrienne a e i e [ez] d i mdebrienne n h i n o
+  1:158  c e dv o v c e o [ez] ce <75> e e m s r d
+  1:186  e q il p c n ce s [ez] il n a p <?> d aines a
+  3:165  monnepvev s o n n qve <88> n [ez] e n de n il mdebrienne mdebrienne n
+  3:166  s o n n qve <88> n e [ez] n de n il mdebrienne mdebrienne n <88>
+  3:177  n il mdebrienne mdebrienne n <88> s coste [ez] r n n mdebrienne ez e n a
+  4:33  <90> i vx c dv mdebrienne d p [ez] e <75> mdebrienne e a qve b n
+  4:34  i vx c dv mdebrienne d p e [ez] <75> mdebrienne e a qve b n e
+  4:42  e <75> mdebrienne e a qve b n [ez] i m mdebrienne povr dv de <94> e
+  4:64  n ce de ez <13/15> <75> n de [ez] o e s n a d n s
+  4:119  coste de n o e s c s [ez] s <93> s o n c s qve
+  4:137  s dans s <47> <90> s e s [ez] n mdebrienne a <75> o o lvy n
+  4:244  favlt o m c qve e c <86> [ez] a favlt i n e lvy n mdebrienne
+  5:115  mdebrienne dv a mdebrienne et <75> i s [ez] a <88> e n mdebrienne a i c
+  5:185  qve a n n <86> <75> i s [ez] <90> s e n c n <?2> m
+  5:225  n mdebrienne de de h n a s [ez] m n c e a p n i
+  5:409  n e povr e s <86> <90> s [ez] n mdebrienne i e s <86> c n
+  5:517  <75> rge n o de <75> ce s [ez] a a e vx c n coste amais
+  5:530  c n coste amais s p d <93> [ez] e s <86>
+  6:3  a o de [ez] s <93> i a mdebrienne a i c
+  6:82  de h a d n s ce s [ez] n mdebrienne et qve <75> o n c
+  6:115  et a povr e e c c n [ez] a aines a s amais n n povr
+  6:164  s et <86> mdebrienne e o n n [ez] a aines o n e o e de
+  6:169  o n n e a aines o n [ez] o e de s mdebrienne a i c
+  6:231  c o <75> e e s amais s [ez] v e ez <75> il a <47> de
+  6:260  s <27> o n a o o n [ez] e e a <84> s c h a
+  6:286  il povr e ez o o lvy s [ez] n e v e o s i n
+  6:288  e ez o o lvy s e n [ez] v e o s i n mdebrienne n
+  6:325  s coste s c o a s povr [ez] m e n <86> n mdebrienne de de
+  6:338  n mdebrienne de de a mdavavx <75> s [ez] m n c e de s <75> n
+  6:363  c n n s <90> s <90> s [ez] a de o vx il ce s rge
+  6:381  s o a o a c <90> s [ez] c <90> s a o n s e
+  6:389  e c <90> s a o n s [ez] n m o a m dv <86> i
+  6:453  n s <47> c s <93> o s [ez] a a p o mdebrienne s e o
+  7:48  a e a p n <74> coste ce [ez] m n c qve rge <86> n o
+  7:57  m n c qve rge <86> n o [ez] o v n o p n v e
+  7:77  o a <75> <90> s <93> o s [ez] a a p o mdebrienne <84> e n
+  7:84  s e a a p o mdebrienne <84> [ez] n qve c a amais a d p
+  7:105  de favlt n de a c c s [ez] s qve <75> de o n c n
+  7:139  <75> s <75> n de povr h <93> [ez] coste n c e o a n o
+  7:192  ce de de i m mdebrienne de s [ez] n m o <36(4)> de <72> e il
+  9:25  de s <83> a de n mdebrienne et [ez] n <75> s c f n mdebrienne de
+  9:128  c i a mdavavx n c o dv [ez] d i mdebrienne n n dv a o
+  9:178  a levr n s i n faire s [ez] o <?> n n d n dv n
+  9:254  e <?> n amais s i e s [ez] n de i n d d dans n
+  9:388  a la n s e s e n [ez] m n c levr a e faire a
+## K 16=de (false; current e) all lm=tools/data/fr17
+16=de: n 48, current e, statistic -181.8 bits over e; null p95 positions -99.2, value class -39.3; reject (no better than the current value) [non-blind]
+  1:0  [de] a la de c e n et f
+  1:64  qve e c il coste mdebrienne dans <86> [de] d i s <90> s n o <?>
+  1:108  a n o mdebrienne a e i e [de] d i mdebrienne n h i n o
+  1:158  c e dv o v c e o [de] ce <75> e e m s r d
+  1:186  e q il p c n ce s [de] il n a p <?> d aines a
+  3:165  monnepvev s o n n qve <88> n [de] e n de n il mdebrienne mdebrienne n
+  3:166  s o n n qve <88> n e [de] n de n il mdebrienne mdebrienne n <88>
+  3:177  n il mdebrienne mdebrienne n <88> s coste [de] r n n mdebrienne ez e n a
+  4:33  <90> i vx c dv mdebrienne d p [de] e <75> mdebrienne e a qve b n
+  4:34  i vx c dv mdebrienne d p e [de] <75> mdebrienne e a qve b n e
+  4:42  e <75> mdebrienne e a qve b n [de] i m mdebrienne povr dv de <94> e
+  4:64  n ce de ez <13/15> <75> n de [de] o e s n a d n s
+  4:119  coste de n o e s c s [de] s <93> s o n c s qve
+  4:137  s dans s <47> <90> s e s [de] n mdebrienne a <75> o o lvy n
+  4:244  favlt o m c qve e c <86> [de] a favlt i n e lvy n mdebrienne
+  5:115  mdebrienne dv a mdebrienne et <75> i s [de] a <88> e n mdebrienne a i c
+  5:185  qve a n n <86> <75> i s [de] <90> s e n c n <?2> m
+  5:225  n mdebrienne de de h n a s [de] m n c e a p n i
+  5:409  n e povr e s <86> <90> s [de] n mdebrienne i e s <86> c n
+  5:517  <75> rge n o de <75> ce s [de] a a e vx c n coste amais
+  5:530  c n coste amais s p d <93> [de] e s <86>
+  6:3  a o de [de] s <93> i a mdebrienne a i c
+  6:82  de h a d n s ce s [de] n mdebrienne et qve <75> o n c
+  6:115  et a povr e e c c n [de] a aines a s amais n n povr
+  6:164  s et <86> mdebrienne e o n n [de] a aines o n e o e de
+  6:169  o n n e a aines o n [de] o e de s mdebrienne a i c
+  6:231  c o <75> e e s amais s [de] v e ez <75> il a <47> de
+  6:260  s <27> o n a o o n [de] e e a <84> s c h a
+  6:286  il povr e ez o o lvy s [de] n e v e o s i n
+  6:288  e ez o o lvy s e n [de] v e o s i n mdebrienne n
+  6:325  s coste s c o a s povr [de] m e n <86> n mdebrienne de de
+  6:338  n mdebrienne de de a mdavavx <75> s [de] m n c e de s <75> n
+  6:363  c n n s <90> s <90> s [de] a de o vx il ce s rge
+  6:381  s o a o a c <90> s [de] c <90> s a o n s e
+  6:389  e c <90> s a o n s [de] n m o a m dv <86> i
+  6:453  n s <47> c s <93> o s [de] a a p o mdebrienne s e o
+  7:48  a e a p n <74> coste ce [de] m n c qve rge <86> n o
+  7:57  m n c qve rge <86> n o [de] o v n o p n v e
+  7:77  o a <75> <90> s <93> o s [de] a a p o mdebrienne <84> e n
+  7:84  s e a a p o mdebrienne <84> [de] n qve c a amais a d p
+  7:105  de favlt n de a c c s [de] s qve <75> de o n c n
+  7:139  <75> s <75> n de povr h <93> [de] coste n c e o a n o
+  7:192  ce de de i m mdebrienne de s [de] n m o <36(4)> de <72> e il
+  9:25  de s <83> a de n mdebrienne et [de] n <75> s c f n mdebrienne de
+  9:128  c i a mdavavx n c o dv [de] d i mdebrienne n n dv a o
+  9:178  a levr n s i n faire s [de] o <?> n n d n dv n
+  9:254  e <?> n amais s i e s [de] n de i n d d dans n
+  9:388  a la n s e s e n [de] m n c levr a e faire a
+## K 28=la (true; current e) all lm=tools/data/fr17
+28=la: n 20, current e, statistic 35.6 bits over e; null p95 positions -36.3, value class 32.3; accept (above both nulls and the acceptance rule) [non-blind]
+  0:11  a a v e r s m mdavavx [la] c h a rge de s a i
+  0:34  f n v ce o a ovrveoir povr [la] c h a rge de mdebrienne e n
+  0:85  i mdebrienne et qve vovs a s a [la] n dans e e ez a faire p
+  0:140  n amais dv r de o a dans [la] r i et n mdavavx m de e
+  0:148  e r i et n mdavavx m de [la] c o a mdebrienne povr a m p
+  0:221  monnepvev e m a mdebrienne o e ez [la] c n e a n a r d
+  0:242  f s de n mdebrienne s m de [la] c o a mdebrienne c monnepvev povr a
+  0:283  aines c o et p s s s [la] i o de coste rge m de p
+  1:2  se a [la] de c e n et f m a
+  1:34  <84> c e r m il dv <83> [la] <?> e e c a c <63> n
+  3:55  r n dans de s c n s [la] de et <83> o c coste mdebrienne o
+  3:76  c n ce dans s de c s [la] de et i m mdebrienne qve o c
+  3:112  mdebrienne n qve ce <75> <86> f a [la] i mdebrienne <90> s p c o f
+  5:307  f a s mdebrienne <-> amais e n [la] v n e a <63> o aines a
+  5:336  i n s de et de <47> <86> [la] v n e povr e s n n
+  6:30  c n c s o n n a [la] n s n h i n de <75>
+  6:183  a i c e ez qve <75> a [la] n s e ez p e o vx
+  6:533  d o vx qve ce mdebrienne e n [la] e e
+  9:158  s mdebrienne p c qve c s r [la] o d d i e n mdebrienne h
+  9:381  a i c e ez qve <75> a [la] n s e s e n se m
+## K 28=se (false; current e) all lm=tools/data/fr17
+28=se: n 20, current e, statistic -16.4 bits over e; null p95 positions -43.1, value class 32.3; reject (no better than the current value) [non-blind]
+  0:11  a a v e r s m mdavavx [se] c h a rge de s a i
+  0:34  f n v ce o a ovrveoir povr [se] c h a rge de mdebrienne e n
+  0:85  i mdebrienne et qve vovs a s a [se] n dans e e ez a faire p
+  0:140  n amais dv r de o a dans [se] r i et n mdavavx m de e
+  0:148  e r i et n mdavavx m de [se] c o a mdebrienne povr a m p
+  0:221  monnepvev e m a mdebrienne o e ez [se] c n e a n a r d
+  0:242  f s de n mdebrienne s m de [se] c o a mdebrienne c monnepvev povr a
+  0:283  aines c o et p s s s [se] i o de coste rge m de p
+  1:2  se a [se] de c e n et f m a
+  1:34  <84> c e r m il dv <83> [se] <?> e e c a c <63> n
+  3:55  r n dans de s c n s [se] de et <83> o c coste mdebrienne o
+  3:76  c n ce dans s de c s [se] de et i m mdebrienne qve o c
+  3:112  mdebrienne n qve ce <75> <86> f a [se] i mdebrienne <90> s p c o f
+  5:307  f a s mdebrienne <-> amais e n [se] v n e a <63> o aines a
+  5:336  i n s de et de <47> <86> [se] v n e povr e s n n
+  6:30  c n c s o n n a [se] n s n h i n de <75>
+  6:183  a i c e ez qve <75> a [se] n s e ez p e o vx
+  6:533  d o vx qve ce mdebrienne e n [se] e e
+  9:158  s mdebrienne p c qve c s r [se] o d d i e n mdebrienne h
+  9:381  a i c e ez qve <75> a [se] n s e s e n se m
+## K 28=ux (false; current e) all lm=tools/data/fr17
+28=ux: n 20, current e, statistic -272.7 bits over e; null p95 positions -239.6, value class 32.3; reject (no better than the current value) [non-blind]
+  0:11  a a v e r s m mdavavx [ux] c h a rge de s a i
+  0:34  f n v ce o a ovrveoir povr [ux] c h a rge de mdebrienne e n
+  0:85  i mdebrienne et qve vovs a s a [ux] n dans e e ez a faire p
+  0:140  n amais dv r de o a dans [ux] r i et n mdavavx m de e
+  0:148  e r i et n mdavavx m de [ux] c o a mdebrienne povr a m p
+  0:221  monnepvev e m a mdebrienne o e ez [ux] c n e a n a r d
+  0:242  f s de n mdebrienne s m de [ux] c o a mdebrienne c monnepvev povr a
+  0:283  aines c o et p s s s [ux] i o de coste rge m de p
+  1:2  se a [ux] de c e n et f m a
+  1:34  <84> c e r m il dv <83> [ux] <?> e e c a c <63> n
+  3:55  r n dans de s c n s [ux] de et <83> o c coste mdebrienne o
+  3:76  c n ce dans s de c s [ux] de et i m mdebrienne qve o c
+  3:112  mdebrienne n qve ce <75> <86> f a [ux] i mdebrienne <90> s p c o f
+  5:307  f a s mdebrienne <-> amais e n [ux] v n e a <63> o aines a
+  5:336  i n s de et de <47> <86> [ux] v n e povr e s n n
+  6:30  c n c s o n n a [ux] n s n h i n de <75>
+  6:183  a i c e ez qve <75> a [ux] n s e ez p e o vx
+  6:533  d o vx qve ce mdebrienne e n [ux] e e
+  9:158  s mdebrienne p c qve c s r [ux] o d d i e n mdebrienne h
+  9:381  a i c e ez qve <75> a [ux] n s e s e n se m
+## K 28=ez (false; current e) all lm=tools/data/fr17
+28=ez: n 20, current e, statistic -315.5 bits over e; null p95 positions -229.3, value class 32.3; reject (no better than the current value) [non-blind]
+  0:11  a a v e r s m mdavavx [ez] c h a rge de s a i
+  0:34  f n v ce o a ovrveoir povr [ez] c h a rge de mdebrienne e n
+  0:85  i mdebrienne et qve vovs a s a [ez] n dans e e ez a faire p
+  0:140  n amais dv r de o a dans [ez] r i et n mdavavx m de e
+  0:148  e r i et n mdavavx m de [ez] c o a mdebrienne povr a m p
+  0:221  monnepvev e m a mdebrienne o e ez [ez] c n e a n a r d
+  0:242  f s de n mdebrienne s m de [ez] c o a mdebrienne c monnepvev povr a
+  0:283  aines c o et p s s s [ez] i o de coste rge m de p
+  1:2  se a [ez] de c e n et f m a
+  1:34  <84> c e r m il dv <83> [ez] <?> e e c a c <63> n
+  3:55  r n dans de s c n s [ez] de et <83> o c coste mdebrienne o
+  3:76  c n ce dans s de c s [ez] de et i m mdebrienne qve o c
+  3:112  mdebrienne n qve ce <75> <86> f a [ez] i mdebrienne <90> s p c o f
+  5:307  f a s mdebrienne <-> amais e n [ez] v n e a <63> o aines a
+  5:336  i n s de et de <47> <86> [ez] v n e povr e s n n
+  6:30  c n c s o n n a [ez] n s n h i n de <75>
+  6:183  a i c e ez qve <75> a [ez] n s e ez p e o vx
+  6:533  d o vx qve ce mdebrienne e n [ez] e e
+  9:158  s mdebrienne p c qve c s r [ez] o d d i e n mdebrienne h
+  9:381  a i c e ez qve <75> a [ez] n s e s e n se m
+## K 28=de (false; current e) all lm=tools/data/fr17
+28=de: n 20, current e, statistic 0.1 bits over e; null p95 positions -24.1, value class 32.3; reject (breaks 7 of 20 occurrences by more than 3 bits) [non-blind]
+  0:11  a a v e r s m mdavavx [de] c h a rge de s a i
+  0:34  f n v ce o a ovrveoir povr [de] c h a rge de mdebrienne e n
+  0:85  i mdebrienne et qve vovs a s a [de] n dans e e ez a faire p
+  0:140  n amais dv r de o a dans [de] r i et n mdavavx m de e
+  0:148  e r i et n mdavavx m de [de] c o a mdebrienne povr a m p
+  0:221  monnepvev e m a mdebrienne o e ez [de] c n e a n a r d
+  0:242  f s de n mdebrienne s m de [de] c o a mdebrienne c monnepvev povr a
+  0:283  aines c o et p s s s [de] i o de coste rge m de p
+  1:2  se a [de] de c e n et f m a
+  1:34  <84> c e r m il dv <83> [de] <?> e e c a c <63> n
+  3:55  r n dans de s c n s [de] de et <83> o c coste mdebrienne o
+  3:76  c n ce dans s de c s [de] de et i m mdebrienne qve o c
+  3:112  mdebrienne n qve ce <75> <86> f a [de] i mdebrienne <90> s p c o f
+  5:307  f a s mdebrienne <-> amais e n [de] v n e a <63> o aines a
+  5:336  i n s de et de <47> <86> [de] v n e povr e s n n
+  6:30  c n c s o n n a [de] n s n h i n de <75>
+  6:183  a i c e ez qve <75> a [de] n s e ez p e o vx
+  6:533  d o vx qve ce mdebrienne e n [de] e e
+  9:158  s mdebrienne p c qve c s r [de] o d d i e n mdebrienne h
+  9:381  a i c e ez qve <75> a [de] n s e s e n se m
+## K 33=ux (true; current e) all lm=tools/data/fr17
+33=ux: n 18, current e, statistic -86.1 bits over e; null p95 positions -191.3, value class 124.1; reject (no better than the current value) [non-blind]
+  0:111  ez o n p o o e o [ux] c e e c h a rge qve
+  0:203  c levr de o mdebrienne s ce o [ux] qve vovs p e ce f ez n
+  1:170  e m s r d i mdebrienne e [ux] mdebrienne n il o et <75> coste e
+  1:246  s dv a mdebrienne ez p e o [ux] a p i n v n c m
+  2:90  s d a n ce de <90> i [ux] o e <86> ra o d d i
+  4:27  s o n n de <75> <90> i [ux] c dv mdebrienne d p se se <75>
+  5:236  c e a p n i rge o [ux] de c n c s n <75> <90>
+  5:246  c n c s n <75> <90> i [ux] <84> <75> r qve de <75> de c
+  5:521  de <75> ce s se a a e [ux] c n coste amais s p d <93>
+  6:41  n h i n de <75> <90> i [ux] et a <75> e a o e e
+  6:48  i e et a <75> e a o [ux] e s <83> il s povr a a
+  6:191  la n s e ez p e o [ux] levr a e faire a n ce c
+  6:367  <90> s <90> s se a de o [ux] il ce s rge n s o a
+  6:462  a a p o mdebrienne s e o [ux] dv d o a o il de lvy
+  6:527  e n ce de s r d o [ux] qve ce mdebrienne e n la e e
+  7:31  a dv qve ce mdebrienne e <90> i [ux] v m qve faire e n <75> <93>
+  9:302  <86> a n il de s c i [ux] mdavavx n e de e c s povr
+  9:346  a e de s m s e o [ux] povr e s lvy o e n mdebrienne
+## K 33=se (false; current e) all lm=tools/data/fr17
+33=se: n 18, current e, statistic -42.2 bits over e; null p95 positions -31.5, value class 124.1; reject (no better than the current value) [non-blind]
+  0:111  ez o n p o o e o [se] c e e c h a rge qve
+  0:203  c levr de o mdebrienne s ce o [se] qve vovs p e ce f ez n
+  1:170  e m s r d i mdebrienne e [se] mdebrienne n il o et <75> coste e
+  1:246  s dv a mdebrienne ez p e o [se] a p i n v n c m
+  2:90  s d a n ce de <90> i [se] o e <86> ra o d d i
+  4:27  s o n n de <75> <90> i [se] c dv mdebrienne d p se se <75>
+  5:236  c e a p n i rge o [se] de c n c s n <75> <90>
+  5:246  c n c s n <75> <90> i [se] <84> <75> r qve de <75> de c
+  5:521  de <75> ce s se a a e [se] c n coste amais s p d <93>
+  6:41  n h i n de <75> <90> i [se] et a <75> e a o e e
+  6:48  i e et a <75> e a o [se] e s <83> il s povr a a
+  6:191  la n s e ez p e o [se] levr a e faire a n ce c
+  6:367  <90> s <90> s se a de o [se] il ce s rge n s o a
+  6:462  a a p o mdebrienne s e o [se] dv d o a o il de lvy
+  6:527  e n ce de s r d o [se] qve ce mdebrienne e n la e e
+  7:31  a dv qve ce mdebrienne e <90> i [se] v m qve faire e n <75> <93>
+  9:302  <86> a n il de s c i [se] mdavavx n e de e c s povr
+  9:346  a e de s m s e o [se] povr e s lvy o e n mdebrienne
+## K 33=la (false; current e) all lm=tools/data/fr17
+33=la: n 18, current e, statistic -63.3 bits over e; null p95 positions -29.2, value class 124.1; reject (no better than the current value) [non-blind]
+  0:111  ez o n p o o e o [la] c e e c h a rge qve
+  0:203  c levr de o mdebrienne s ce o [la] qve vovs p e ce f ez n
+  1:170  e m s r d i mdebrienne e [la] mdebrienne n il o et <75> coste e
+  1:246  s dv a mdebrienne ez p e o [la] a p i n v n c m
+  2:90  s d a n ce de <90> i [la] o e <86> ra o d d i
+  4:27  s o n n de <75> <90> i [la] c dv mdebrienne d p se se <75>
+  5:236  c e a p n i rge o [la] de c n c s n <75> <90>
+  5:246  c n c s n <75> <90> i [la] <84> <75> r qve de <75> de c
+  5:521  de <75> ce s se a a e [la] c n coste amais s p d <93>
+  6:41  n h i n de <75> <90> i [la] et a <75> e a o e e
+  6:48  i e et a <75> e a o [la] e s <83> il s povr a a
+  6:191  la n s e ez p e o [la] levr a e faire a n ce c
+  6:367  <90> s <90> s se a de o [la] il ce s rge n s o a
+  6:462  a a p o mdebrienne s e o [la] dv d o a o il de lvy
+  6:527  e n ce de s r d o [la] qve ce mdebrienne e n la e e
+  7:31  a dv qve ce mdebrienne e <90> i [la] v m qve faire e n <75> <93>
+  9:302  <86> a n il de s c i [la] mdavavx n e de e c s povr
+  9:346  a e de s m s e o [la] povr e s lvy o e n mdebrienne
+## K 33=ez (false; current e) all lm=tools/data/fr17
+33=ez: n 18, current e, statistic -120.5 bits over e; null p95 positions -202.4, value class 124.1; reject (no better than the current value) [non-blind]
+  0:111  ez o n p o o e o [ez] c e e c h a rge qve
+  0:203  c levr de o mdebrienne s ce o [ez] qve vovs p e ce f ez n
+  1:170  e m s r d i mdebrienne e [ez] mdebrienne n il o et <75> coste e
+  1:246  s dv a mdebrienne ez p e o [ez] a p i n v n c m
+  2:90  s d a n ce de <90> i [ez] o e <86> ra o d d i
+  4:27  s o n n de <75> <90> i [ez] c dv mdebrienne d p se se <75>
+  5:236  c e a p n i rge o [ez] de c n c s n <75> <90>
+  5:246  c n c s n <75> <90> i [ez] <84> <75> r qve de <75> de c
+  5:521  de <75> ce s se a a e [ez] c n coste amais s p d <93>
+  6:41  n h i n de <75> <90> i [ez] et a <75> e a o e e
+  6:48  i e et a <75> e a o [ez] e s <83> il s povr a a
+  6:191  la n s e ez p e o [ez] levr a e faire a n ce c
+  6:367  <90> s <90> s se a de o [ez] il ce s rge n s o a
+  6:462  a a p o mdebrienne s e o [ez] dv d o a o il de lvy
+  6:527  e n ce de s r d o [ez] qve ce mdebrienne e n la e e
+  7:31  a dv qve ce mdebrienne e <90> i [ez] v m qve faire e n <75> <93>
+  9:302  <86> a n il de s c i [ez] mdavavx n e de e c s povr
+  9:346  a e de s m s e o [ez] povr e s lvy o e n mdebrienne
+## K 33=de (false; current e) all lm=tools/data/fr17
+33=de: n 18, current e, statistic 16.5 bits over e; null p95 positions -10.2, value class 124.1; reject (breaks 6 of 18 occurrences by more than 3 bits) [non-blind]
+  0:111  ez o n p o o e o [de] c e e c h a rge qve
+  0:203  c levr de o mdebrienne s ce o [de] qve vovs p e ce f ez n
+  1:170  e m s r d i mdebrienne e [de] mdebrienne n il o et <75> coste e
+  1:246  s dv a mdebrienne ez p e o [de] a p i n v n c m
+  2:90  s d a n ce de <90> i [de] o e <86> ra o d d i
+  4:27  s o n n de <75> <90> i [de] c dv mdebrienne d p se se <75>
+  5:236  c e a p n i rge o [de] de c n c s n <75> <90>
+  5:246  c n c s n <75> <90> i [de] <84> <75> r qve de <75> de c
+  5:521  de <75> ce s se a a e [de] c n coste amais s p d <93>
+  6:41  n h i n de <75> <90> i [de] et a <75> e a o e e
+  6:48  i e et a <75> e a o [de] e s <83> il s povr a a
+  6:191  la n s e ez p e o [de] levr a e faire a n ce c
+  6:367  <90> s <90> s se a de o [de] il ce s rge n s o a
+  6:462  a a p o mdebrienne s e o [de] dv d o a o il de lvy
+  6:527  e n ce de s r d o [de] qve ce mdebrienne e n la e e
+  7:31  a dv qve ce mdebrienne e <90> i [de] v m qve faire e n <75> <93>
+  9:302  <86> a n il de s c i [de] mdavavx n e de e c s povr
+  9:346  a e de s m s e o [de] povr e s lvy o e n mdebrienne
+## K 36=ez (true; current a) all lm=tools/data/fr17
+36=ez: n 20, current a, statistic -303.7 bits over a; null p95 positions -243.8, value class 32.1; reject (no better than the current value) [non-blind]
+  0:90  a s a la n dans e e [ez] a faire p a a a a de
+  0:103  a a a de vovs r e e [ez] o n p o o e o vx
+  0:210  o vx qve vovs p e ce f [ez] n o monnepvev e m a mdebrienne o
+  0:220  o monnepvev e m a mdebrienne o e [ez] la c n e a n a r
+  1:242  i <47> p c s dv a mdebrienne [ez] p e o vx a p i n
+  1:273  p c n ce h n e e [ez] c s a rge i e i n
+  2:28  ce e c s qve <88> a aines [ez] n ce o e s mdebrienne <75> c
+  2:77  e e c o o <88> a aines [ez] qve e qve e s d a n
+  3:182  <88> s coste se r n n mdebrienne [ez] e n a a <42> mdebrienne a rge
+  3:198  rge <88> lvy a n s m e [ez] p c amais <93> e n m a
+  4:59  de <75> p d <27> n ce de [ez] <13/15> <75> n de se o e s
+  5:170  et qve n c n c povr e [ez] a dans n mdebrienne favlt n qve a
+  6:179  e de s mdebrienne a i c e [ez] qve <75> a la n s e a
+  6:187  a qve <75> a la n s e [ez] p e o vx levr a e faire
+  6:213  n p n n d n i e [ez] e n mdebrienne n p n n d
+  6:234  e e s amais s se v e [ez] <75> il a <47> de ce s rge
+  6:281  e qve s <45> s il povr e [ez] o o lvy s se n se v
+  9:111  d i s e aines s c f [ez] dv n s e <?> mdavavx povr aines
+  9:358  lvy o e n mdebrienne o s e [ez] e qve e <86> mdebrienne e o <90>
+  9:377  n de s mdebrienne a i c e [ez] qve <75> a la n s e s
+## K 36=se (false; current a) all lm=tools/data/fr17
+36=se: n 20, current a, statistic -59.2 bits over a; null p95 positions -58.7, value class 32.1; reject (no better than the current value) [non-blind]
+  0:90  a s a la n dans e e [se] a faire p a a a a de
+  0:103  a a a de vovs r e e [se] o n p o o e o vx
+  0:210  o vx qve vovs p e ce f [se] n o monnepvev e m a mdebrienne o
+  0:220  o monnepvev e m a mdebrienne o e [se] la c n e a n a r
+  1:242  i <47> p c s dv a mdebrienne [se] p e o vx a p i n
+  1:273  p c n ce h n e e [se] c s a rge i e i n
+  2:28  ce e c s qve <88> a aines [se] n ce o e s mdebrienne <75> c
+  2:77  e e c o o <88> a aines [se] qve e qve e s d a n
+  3:182  <88> s coste se r n n mdebrienne [se] e n a a <42> mdebrienne a rge
+  3:198  rge <88> lvy a n s m e [se] p c amais <93> e n m a
+  4:59  de <75> p d <27> n ce de [se] <13/15> <75> n de se o e s
+  5:170  et qve n c n c povr e [se] a dans n mdebrienne favlt n qve a
+  6:179  e de s mdebrienne a i c e [se] qve <75> a la n s e a
+  6:187  a qve <75> a la n s e [se] p e o vx levr a e faire
+  6:213  n p n n d n i e [se] e n mdebrienne n p n n d
+  6:234  e e s amais s se v e [se] <75> il a <47> de ce s rge
+  6:281  e qve s <45> s il povr e [se] o o lvy s se n se v
+  9:111  d i s e aines s c f [se] dv n s e <?> mdavavx povr aines
+  9:358  lvy o e n mdebrienne o s e [se] e qve e <86> mdebrienne e o <90>
+  9:377  n de s mdebrienne a i c e [se] qve <75> a la n s e s
+## K 36=la (false; current a) all lm=tools/data/fr17
+36=la: n 20, current a, statistic -40.2 bits over a; null p95 positions -29.6, value class 32.1; reject (no better than the current value) [non-blind]
+  0:90  a s a la n dans e e [la] a faire p a a a a de
+  0:103  a a a de vovs r e e [la] o n p o o e o vx
+  0:210  o vx qve vovs p e ce f [la] n o monnepvev e m a mdebrienne o
+  0:220  o monnepvev e m a mdebrienne o e [la] la c n e a n a r
+  1:242  i <47> p c s dv a mdebrienne [la] p e o vx a p i n
+  1:273  p c n ce h n e e [la] c s a rge i e i n
+  2:28  ce e c s qve <88> a aines [la] n ce o e s mdebrienne <75> c
+  2:77  e e c o o <88> a aines [la] qve e qve e s d a n
+  3:182  <88> s coste se r n n mdebrienne [la] e n a a <42> mdebrienne a rge
+  3:198  rge <88> lvy a n s m e [la] p c amais <93> e n m a
+  4:59  de <75> p d <27> n ce de [la] <13/15> <75> n de se o e s
+  5:170  et qve n c n c povr e [la] a dans n mdebrienne favlt n qve a
+  6:179  e de s mdebrienne a i c e [la] qve <75> a la n s e a
+  6:187  a qve <75> a la n s e [la] p e o vx levr a e faire
+  6:213  n p n n d n i e [la] e n mdebrienne n p n n d
+  6:234  e e s amais s se v e [la] <75> il a <47> de ce s rge
+  6:281  e qve s <45> s il povr e [la] o o lvy s se n se v
+  9:111  d i s e aines s c f [la] dv n s e <?> mdavavx povr aines
+  9:358  lvy o e n mdebrienne o s e [la] e qve e <86> mdebrienne e o <90>
+  9:377  n de s mdebrienne a i c e [la] qve <75> a la n s e s
+## K 36=ux (false; current a) all lm=tools/data/fr17
+36=ux: n 20, current a, statistic -142.9 bits over a; null p95 positions -208.8, value class 32.1; reject (no better than the current value) [non-blind]
+  0:90  a s a la n dans e e [ux] a faire p a a a a de
+  0:103  a a a de vovs r e e [ux] o n p o o e o vx
+  0:210  o vx qve vovs p e ce f [ux] n o monnepvev e m a mdebrienne o
+  0:220  o monnepvev e m a mdebrienne o e [ux] la c n e a n a r
+  1:242  i <47> p c s dv a mdebrienne [ux] p e o vx a p i n
+  1:273  p c n ce h n e e [ux] c s a rge i e i n
+  2:28  ce e c s qve <88> a aines [ux] n ce o e s mdebrienne <75> c
+  2:77  e e c o o <88> a aines [ux] qve e qve e s d a n
+  3:182  <88> s coste se r n n mdebrienne [ux] e n a a <42> mdebrienne a rge
+  3:198  rge <88> lvy a n s m e [ux] p c amais <93> e n m a
+  4:59  de <75> p d <27> n ce de [ux] <13/15> <75> n de se o e s
+  5:170  et qve n c n c povr e [ux] a dans n mdebrienne favlt n qve a
+  6:179  e de s mdebrienne a i c e [ux] qve <75> a la n s e a
+  6:187  a qve <75> a la n s e [ux] p e o vx levr a e faire
+  6:213  n p n n d n i e [ux] e n mdebrienne n p n n d
+  6:234  e e s amais s se v e [ux] <75> il a <47> de ce s rge
+  6:281  e qve s <45> s il povr e [ux] o o lvy s se n se v
+  9:111  d i s e aines s c f [ux] dv n s e <?> mdavavx povr aines
+  9:358  lvy o e n mdebrienne o s e [ux] e qve e <86> mdebrienne e o <90>
+  9:377  n de s mdebrienne a i c e [ux] qve <75> a la n s e s
+## K 36=de (false; current a) all lm=tools/data/fr17
+36=de: n 20, current a, statistic -31.5 bits over a; null p95 positions -8.5, value class 32.1; reject (no better than the current value) [non-blind]
+  0:90  a s a la n dans e e [de] a faire p a a a a de
+  0:103  a a a de vovs r e e [de] o n p o o e o vx
+  0:210  o vx qve vovs p e ce f [de] n o monnepvev e m a mdebrienne o
+  0:220  o monnepvev e m a mdebrienne o e [de] la c n e a n a r
+  1:242  i <47> p c s dv a mdebrienne [de] p e o vx a p i n
+  1:273  p c n ce h n e e [de] c s a rge i e i n
+  2:28  ce e c s qve <88> a aines [de] n ce o e s mdebrienne <75> c
+  2:77  e e c o o <88> a aines [de] qve e qve e s d a n
+  3:182  <88> s coste se r n n mdebrienne [de] e n a a <42> mdebrienne a rge
+  3:198  rge <88> lvy a n s m e [de] p c amais <93> e n m a
+  4:59  de <75> p d <27> n ce de [de] <13/15> <75> n de se o e s
+  5:170  et qve n c n c povr e [de] a dans n mdebrienne favlt n qve a
+  6:179  e de s mdebrienne a i c e [de] qve <75> a la n s e a
+  6:187  a qve <75> a la n s e [de] p e o vx levr a e faire
+  6:213  n p n n d n i e [de] e n mdebrienne n p n n d
+  6:234  e e s amais s se v e [de] <75> il a <47> de ce s rge
+  6:281  e qve s <45> s il povr e [de] o o lvy s se n se v
+  9:111  d i s e aines s c f [de] dv n s e <?> mdavavx povr aines
+  9:358  lvy o e n mdebrienne o s e [de] e qve e <86> mdebrienne e o <90>
+  9:377  n de s mdebrienne a i c e [de] qve <75> a la n s e s
+## K 51=de (true; current e) all lm=tools/data/fr17
+51=de: n 129, current e, statistic -218.2 bits over e; null p95 positions -460.5, value class -198.7; reject (no better than the current value) [non-blind]
+  0:0  [de] monnepvev e a a v e r s
+  0:2  e monnepvev [de] a a v e r s m mdavavx
+  0:16  s m mdavavx la c h a rge [de] s a i n dans n e n
+  0:23  rge e s a i n dans n [de] n mdebrienne f n v ce o a
+  0:39  a ovrveoir povr la c h a rge [de] mdebrienne e n mdebrienne r a et monnepvev
+  0:130  i et dans a s p dv mdebrienne [de] a n amais dv r de o a
+  0:147  dans la r i et n mdavavx m [de] la c o a mdebrienne povr a m
+  0:191  e o n a m b s s [de] o a qve c levr de o mdebrienne
+  0:236  r d s o e s f s [de] n mdebrienne s m e la c o
+  0:241  s f s e n mdebrienne s m [de] la c o a mdebrienne c monnepvev povr
+  0:255  c monnepvev povr a m b s s [de] o a m on monnepvev qve vovs m
+  0:274  s mdebrienne r s s i c o [de] aines c o et p s s s
+  0:290  s la i o de coste rge m [de] p r e n o i s aines
+  1:3  se a la [de] c e n et f m a h
+  1:79  o <?> a e d a m a [de] e il s lvy rge a h n
+  1:80  <?> a e d a m a e [de] il s lvy rge a h n e
+  1:137  c qve e qve c mdebrienne mdebrienne n [de] <75> c o a q dv a n
+  1:205  c s coste s c o a s [de] d i n mdebrienne o b a mdebrienne
+  1:220  a mdebrienne qve o r d i mdebrienne [de] <75> o n c e povr e a
+  1:287  e i n mdebrienne o b a mdebrienne [de] coste n vovs o qve ce h i
+  1:297  n vovs o qve ce h i mdebrienne [de] e v mdebrienne a o s
+  2:0  [de] il o n e n mdebrienne n <75>
+  2:49  n n mdebrienne dv e aines e s [de] s r coste s mdebrienne c p e
+  2:87  e qve e s d a n ce [de] <90> i vx o e <86> ra o
+  2:109  i n mdebrienne e amais a n c [de] e n favlt i n s <75> coste
+  3:19  e n n h <19/79> m n n [de] o o <86> a c o a mdebrienne
+  3:50  rge n ce c n r n dans [de] s c n s la e et <83>
+  3:56  n dans e s c n s la [de] et <83> o c coste mdebrienne o e
+  3:73  o a p c n ce dans s [de] c s la e et i m mdebrienne
+  3:77  n ce dans s e c s la [de] et i m mdebrienne qve o c coste
+  3:146  m a i n s <75> c n [de] m <86> a c qve e qve h
+  3:168  n n qve <88> n se se n [de] n il mdebrienne mdebrienne n <88> s coste
+  3:217  s b p monnepvev s o n s [de] e dv a mdebrienne <74> rge s a
+  4:1  qve [de] s d n a povr e povr n
+  4:12  n a povr e povr n i a [de] n mdebrienne <75> c n c s o
+  4:23  <75> c n c s o n n [de] <75> <90> i vx c dv mdebrienne d
+  4:48  b n se i m mdebrienne povr dv [de] <94> e e <75> p d <27> n
+  4:51  i m mdebrienne povr dv e <94> e [de] <75> p d <27> n ce e ez
+  4:58  e e <75> p d <27> n ce [de] ez <13/15> <75> n e se o e
+  4:63  <27> n ce e ez <13/15> <75> n [de] se o e s n a d n
+  4:112  <13/15> n mdebrienne a c e a coste [de] n o e s c s se s
+  4:147  mdebrienne a <75> o o lvy n n [de] levr mdebrienne a i c e p c
+  4:179  v n levr a e <47> n <27> [de] s e ce mdebrienne e p d <93>
+  4:215  i n s v m n n mdebrienne [de] ce mdebrienne e <27> e c s a
+  5:40  mdebrienne i n dv <42> i n c [de] m c n c s n levr mdebrienne
+  5:76  aines amais a dv <93> i n mdebrienne [de] <75> v a a i <86> povr e
+  5:84  e <75> v a a i <86> povr [de] il o n e n c n i
+  5:94  o n e n c n i n [de] <47> s e n mdebrienne n <75> e
+  5:142  <86> h i mdebrienne <45> <90> n c [de] <75> n p e a e <75> e
+  5:148  n c e <75> n p e a [de] <75> e faire a n ce e ce
+  5:155  a e <75> e faire a n ce [de] ce s rge n s <47> et qve
+  5:198  c n <?2> m d n <27> e [de] c n m m d a ce s
+  5:216  s i <47> o a mdebrienne e n [de] n mdebrienne e e h n a s
+  5:219  o a mdebrienne e n e n mdebrienne [de] e h n a s se m n
+  5:220  a mdebrienne e n e n mdebrienne e [de] h n a s se m n c
+  5:237  e a p n i rge o vx [de] c n c s n <75> <90> i
+  5:251  <75> <90> i vx <84> <75> r qve [de] <75> e c n de i n e
+  5:253  i vx <84> <75> r qve e <75> [de] c n de i n e o <75>
+  5:270  a <27> n n s i n mdebrienne [de] n h i n o e o <3?>
+  5:276  n mdebrienne e n h i n o [de] o <3?> qve <75> <86> favlt n qve
+  5:291  n qve c n n s <90> s [de] c s n c f a c f
+  5:331  <93> e n m a i n s [de] et e <47> <86> la v n e
+  5:333  n m a i n s e et [de] <47> <86> la v n e povr e
+  5:351  n n mdebrienne c favlt e a mdebrienne [de] levr s i n s i n ce
+  5:370  o faire e o povr i s c [de] n o d i e n mdebrienne e
+  5:448  a h n <86> <45> <90> n c [de] m d s c f a <75> p
+  5:461  f a <75> p d <27> n ce [de] s <75> n e e h a m
+  5:465  d <27> n ce e s <75> n [de] e h a m a e <75> rge
+  5:466  <27> n ce e s <75> n e [de] h a m a e <75> rge favlt
+  5:471  <75> n e e h a m a [de] <75> rge favlt c n m m d
+  5:491  s <45> s <83> i n o s [de] n <27> e qve ce e c <75>
+  5:500  n <27> e qve ce e c <75> [de] c s e c s n rge a
+  5:513  s n rge a <75> rge n o [de] <75> ce s se a a e vx
+  6:2  a o [de] se s <93> i a mdebrienne a i
+  6:20  e o e s v i o <86> [de] e c n c s o n n
+  6:37  a la n s n h i n [de] <75> <90> i vx et a <75> e
+  6:74  a <90> i aines a qve ce s [de] h a d n s ce s se
+  6:92  mdebrienne et qve <75> o n c e [de] il o n n o e e n
+  6:145  mdebrienne dv a mdebrienne et <75> r a [de] s rge n s i n e e
+  6:153  e s rge n s i n e [de] e c s et <86> mdebrienne e o
+  6:172  se a aines o n se o e [de] s mdebrienne a i c e ez qve
+  6:202  e faire a n ce c s r [de] n mdebrienne n p n n d n
+  6:239  se v e ez <75> il a <47> [de] ce s rge n s <47> <94> i
+  6:302  n mdebrienne n s o amais a <86> [de] m c n e a il a v
+  6:332  povr se m e n <86> n mdebrienne [de] e a mdavavx <75> s se m n
+  6:333  se m e n <86> n mdebrienne e [de] a mdavavx <75> s se m n c
+  6:343  mdavavx <75> s se m n c e [de] s <75> n e qve <75> <86> <75>
+  6:347  m n c e e s <75> n [de] qve <75> <86> <75> s <45> o c
+  6:365  n s <90> s <90> s se a [de] o vx il ce s rge n s
+  6:400  o a m dv <86> i n e [de] e faire e e e c qve <75>
+  6:421  m a c <93> i n c mdebrienne [de] n ce n m a o o il
+  6:441  i mdebrienne v a <64> e i e [de] ce s rge n s <47> c s
+  6:469  o vx dv d o a o il [de] lvy p c s <60> e n e
+  6:477  e lvy p c s <60> e n [de] o a e e s m s e
+  6:481  s <60> e n e o a e [de] s m s e s d o a
+  6:485  e o a e e s m s [de] s d o a o il s n
+  6:522  c v n i s e n ce [de] s r d o vx qve ce mdebrienne
+  7:97  amais a d p n ce a s [de] favlt n e a c c s se
+  7:100  p n ce a s e favlt n [de] a c c s se s qve <75>
+  7:109  a c c s se s qve <75> [de] o n c n n s <|> p
+  7:135  s <93> i mdebrienne <75> s <75> n [de] povr h <93> se coste n c e
+  7:157  <|> <75> <64> e e d n dans [de] rge n mdebrienne o a m e d
+  7:169  o a m e d <|> <90> e [de] e c qve ce f b p n
+  7:185  n n d a c p d ce [de] e i m mdebrienne e s se n
+  7:186  n d a c p d ce e [de] i m mdebrienne e s se n m
+  7:190  p d ce e e i m mdebrienne [de] s se n m o <36(4)> e <72>
+  7:197  mdebrienne e s se n m o <36(4)> [de] <72> e il n favlt i e lvy
+  7:242  a dans n e c e o a [de] <72> e il n
+  8:9  i s n d n e n mdebrienne [de] <75> ra o e povr e s a
+  8:24  s a o d n mdebrienne e e [de] <75> o favlt e mdebrienne a i c
+  8:53  p d ce s aines a b e [de] monnepvev n e a s <27> c
+  8:56  s aines a b e e monnepvev n [de] a s <27> c
+  9:17  e et povr n n mdebrienne e n [de] s <83> a de n mdebrienne et se
+  9:21  n mdebrienne e n e s <83> a [de] n mdebrienne et se n <75> s c
+  9:33  se n <75> s c f n mdebrienne [de] vovs o qve ce h i mdebrienne e
+  9:51  c s <88> o aines e c s [de] lvy p c s <75> v a a
+  9:63  s <75> v a a i <86> <86> [de] n o d i mdebrienne <90> s dv
+  9:90  m e et qve c dv c f [de] b a <75> de il o a n
+  9:94  c dv c f de b a <75> [de] il o a n mdebrienne p c mdebrienne
+  9:277  mdebrienne qve o s <90> e i a [de] <88> e n e s o amais n
+  9:281  <90> e i a de <88> e n [de] s o amais n n e amais <93>
+  9:287  e n e s o amais n n [de] amais <93> o m d n <86> a
+  9:298  o m d n <86> a n il [de] s c i vx mdavavx n e de
+  9:306  e s c i vx mdavavx n e [de] e c s povr s s c n
+  9:333  povr e o a o mdebrienne d o [de] e n de o a e e s
+  9:336  a o mdebrienne d o e e n [de] o a e e s m s e
+  9:340  o e e n de o a e [de] s m s e o vx povr e
+  9:370  <86> mdebrienne e o <90> s o n [de] s mdebrienne a i c e ez qve
+  9:436  n mdebrienne i e s <75> a mdavavx [de] a c o <86> <?>
+## K 51=se (false; current e) all lm=tools/data/fr17
+51=se: n 129, current e, statistic -671.3 bits over e; null p95 positions -588.9, value class -198.7; reject (no better than the current value) [non-blind]
+  0:0  [se] monnepvev e a a v e r s
+  0:2  e monnepvev [se] a a v e r s m mdavavx
+  0:16  s m mdavavx la c h a rge [se] s a i n dans n e n
+  0:23  rge e s a i n dans n [se] n mdebrienne f n v ce o a
+  0:39  a ovrveoir povr la c h a rge [se] mdebrienne e n mdebrienne r a et monnepvev
+  0:130  i et dans a s p dv mdebrienne [se] a n amais dv r de o a
+  0:147  dans la r i et n mdavavx m [se] la c o a mdebrienne povr a m
+  0:191  e o n a m b s s [se] o a qve c levr de o mdebrienne
+  0:236  r d s o e s f s [se] n mdebrienne s m e la c o
+  0:241  s f s e n mdebrienne s m [se] la c o a mdebrienne c monnepvev povr
+  0:255  c monnepvev povr a m b s s [se] o a m on monnepvev qve vovs m
+  0:274  s mdebrienne r s s i c o [se] aines c o et p s s s
+  0:290  s la i o de coste rge m [se] p r e n o i s aines
+  1:3  se a la [se] c e n et f m a h
+  1:79  o <?> a e d a m a [se] e il s lvy rge a h n
+  1:80  <?> a e d a m a e [se] il s lvy rge a h n e
+  1:137  c qve e qve c mdebrienne mdebrienne n [se] <75> c o a q dv a n
+  1:205  c s coste s c o a s [se] d i n mdebrienne o b a mdebrienne
+  1:220  a mdebrienne qve o r d i mdebrienne [se] <75> o n c e povr e a
+  1:287  e i n mdebrienne o b a mdebrienne [se] coste n vovs o qve ce h i
+  1:297  n vovs o qve ce h i mdebrienne [se] e v mdebrienne a o s
+  2:0  [se] il o n e n mdebrienne n <75>
+  2:49  n n mdebrienne dv e aines e s [se] s r coste s mdebrienne c p e
+  2:87  e qve e s d a n ce [se] <90> i vx o e <86> ra o
+  2:109  i n mdebrienne e amais a n c [se] e n favlt i n s <75> coste
+  3:19  e n n h <19/79> m n n [se] o o <86> a c o a mdebrienne
+  3:50  rge n ce c n r n dans [se] s c n s la e et <83>
+  3:56  n dans e s c n s la [se] et <83> o c coste mdebrienne o e
+  3:73  o a p c n ce dans s [se] c s la e et i m mdebrienne
+  3:77  n ce dans s e c s la [se] et i m mdebrienne qve o c coste
+  3:146  m a i n s <75> c n [se] m <86> a c qve e qve h
+  3:168  n n qve <88> n se se n [se] n il mdebrienne mdebrienne n <88> s coste
+  3:217  s b p monnepvev s o n s [se] e dv a mdebrienne <74> rge s a
+  4:1  qve [se] s d n a povr e povr n
+  4:12  n a povr e povr n i a [se] n mdebrienne <75> c n c s o
+  4:23  <75> c n c s o n n [se] <75> <90> i vx c dv mdebrienne d
+  4:48  b n se i m mdebrienne povr dv [se] <94> e e <75> p d <27> n
+  4:51  i m mdebrienne povr dv e <94> e [se] <75> p d <27> n ce e ez
+  4:58  e e <75> p d <27> n ce [se] ez <13/15> <75> n e se o e
+  4:63  <27> n ce e ez <13/15> <75> n [se] se o e s n a d n
+  4:112  <13/15> n mdebrienne a c e a coste [se] n o e s c s se s
+  4:147  mdebrienne a <75> o o lvy n n [se] levr mdebrienne a i c e p c
+  4:179  v n levr a e <47> n <27> [se] s e ce mdebrienne e p d <93>
+  4:215  i n s v m n n mdebrienne [se] ce mdebrienne e <27> e c s a
+  5:40  mdebrienne i n dv <42> i n c [se] m c n c s n levr mdebrienne
+  5:76  aines amais a dv <93> i n mdebrienne [se] <75> v a a i <86> povr e
+  5:84  e <75> v a a i <86> povr [se] il o n e n c n i
+  5:94  o n e n c n i n [se] <47> s e n mdebrienne n <75> e
+  5:142  <86> h i mdebrienne <45> <90> n c [se] <75> n p e a e <75> e
+  5:148  n c e <75> n p e a [se] <75> e faire a n ce e ce
+  5:155  a e <75> e faire a n ce [se] ce s rge n s <47> et qve
+  5:198  c n <?2> m d n <27> e [se] c n m m d a ce s
+  5:216  s i <47> o a mdebrienne e n [se] n mdebrienne e e h n a s
+  5:219  o a mdebrienne e n e n mdebrienne [se] e h n a s se m n
+  5:220  a mdebrienne e n e n mdebrienne e [se] h n a s se m n c
+  5:237  e a p n i rge o vx [se] c n c s n <75> <90> i
+  5:251  <75> <90> i vx <84> <75> r qve [se] <75> e c n de i n e
+  5:253  i vx <84> <75> r qve e <75> [se] c n de i n e o <75>
+  5:270  a <27> n n s i n mdebrienne [se] n h i n o e o <3?>
+  5:276  n mdebrienne e n h i n o [se] o <3?> qve <75> <86> favlt n qve
+  5:291  n qve c n n s <90> s [se] c s n c f a c f
+  5:331  <93> e n m a i n s [se] et e <47> <86> la v n e
+  5:333  n m a i n s e et [se] <47> <86> la v n e povr e
+  5:351  n n mdebrienne c favlt e a mdebrienne [se] levr s i n s i n ce
+  5:370  o faire e o povr i s c [se] n o d i e n mdebrienne e
+  5:448  a h n <86> <45> <90> n c [se] m d s c f a <75> p
+  5:461  f a <75> p d <27> n ce [se] s <75> n e e h a m
+  5:465  d <27> n ce e s <75> n [se] e h a m a e <75> rge
+  5:466  <27> n ce e s <75> n e [se] h a m a e <75> rge favlt
+  5:471  <75> n e e h a m a [se] <75> rge favlt c n m m d
+  5:491  s <45> s <83> i n o s [se] n <27> e qve ce e c <75>
+  5:500  n <27> e qve ce e c <75> [se] c s e c s n rge a
+  5:513  s n rge a <75> rge n o [se] <75> ce s se a a e vx
+  6:2  a o [se] se s <93> i a mdebrienne a i
+  6:20  e o e s v i o <86> [se] e c n c s o n n
+  6:37  a la n s n h i n [se] <75> <90> i vx et a <75> e
+  6:74  a <90> i aines a qve ce s [se] h a d n s ce s se
+  6:92  mdebrienne et qve <75> o n c e [se] il o n n o e e n
+  6:145  mdebrienne dv a mdebrienne et <75> r a [se] s rge n s i n e e
+  6:153  e s rge n s i n e [se] e c s et <86> mdebrienne e o
+  6:172  se a aines o n se o e [se] s mdebrienne a i c e ez qve
+  6:202  e faire a n ce c s r [se] n mdebrienne n p n n d n
+  6:239  se v e ez <75> il a <47> [se] ce s rge n s <47> <94> i
+  6:302  n mdebrienne n s o amais a <86> [se] m c n e a il a v
+  6:332  povr se m e n <86> n mdebrienne [se] e a mdavavx <75> s se m n
+  6:333  se m e n <86> n mdebrienne e [se] a mdavavx <75> s se m n c
+  6:343  mdavavx <75> s se m n c e [se] s <75> n e qve <75> <86> <75>
+  6:347  m n c e e s <75> n [se] qve <75> <86> <75> s <45> o c
+  6:365  n s <90> s <90> s se a [se] o vx il ce s rge n s
+  6:400  o a m dv <86> i n e [se] e faire e e e c qve <75>
+  6:421  m a c <93> i n c mdebrienne [se] n ce n m a o o il
+  6:441  i mdebrienne v a <64> e i e [se] ce s rge n s <47> c s
+  6:469  o vx dv d o a o il [se] lvy p c s <60> e n e
+  6:477  e lvy p c s <60> e n [se] o a e e s m s e
+  6:481  s <60> e n e o a e [se] s m s e s d o a
+  6:485  e o a e e s m s [se] s d o a o il s n
+  6:522  c v n i s e n ce [se] s r d o vx qve ce mdebrienne
+  7:97  amais a d p n ce a s [se] favlt n e a c c s se
+  7:100  p n ce a s e favlt n [se] a c c s se s qve <75>
+  7:109  a c c s se s qve <75> [se] o n c n n s <|> p
+  7:135  s <93> i mdebrienne <75> s <75> n [se] povr h <93> se coste n c e
+  7:157  <|> <75> <64> e e d n dans [se] rge n mdebrienne o a m e d
+  7:169  o a m e d <|> <90> e [se] e c qve ce f b p n
+  7:185  n n d a c p d ce [se] e i m mdebrienne e s se n
+  7:186  n d a c p d ce e [se] i m mdebrienne e s se n m
+  7:190  p d ce e e i m mdebrienne [se] s se n m o <36(4)> e <72>
+  7:197  mdebrienne e s se n m o <36(4)> [se] <72> e il n favlt i e lvy
+  7:242  a dans n e c e o a [se] <72> e il n
+  8:9  i s n d n e n mdebrienne [se] <75> ra o e povr e s a
+  8:24  s a o d n mdebrienne e e [se] <75> o favlt e mdebrienne a i c
+  8:53  p d ce s aines a b e [se] monnepvev n e a s <27> c
+  8:56  s aines a b e e monnepvev n [se] a s <27> c
+  9:17  e et povr n n mdebrienne e n [se] s <83> a de n mdebrienne et se
+  9:21  n mdebrienne e n e s <83> a [se] n mdebrienne et se n <75> s c
+  9:33  se n <75> s c f n mdebrienne [se] vovs o qve ce h i mdebrienne e
+  9:51  c s <88> o aines e c s [se] lvy p c s <75> v a a
+  9:63  s <75> v a a i <86> <86> [se] n o d i mdebrienne <90> s dv
+  9:90  m e et qve c dv c f [se] b a <75> de il o a n
+  9:94  c dv c f de b a <75> [se] il o a n mdebrienne p c mdebrienne
+  9:277  mdebrienne qve o s <90> e i a [se] <88> e n e s o amais n
+  9:281  <90> e i a de <88> e n [se] s o amais n n e amais <93>
+  9:287  e n e s o amais n n [se] amais <93> o m d n <86> a
+  9:298  o m d n <86> a n il [se] s c i vx mdavavx n e de
+  9:306  e s c i vx mdavavx n e [se] e c s povr s s c n
+  9:333  povr e o a o mdebrienne d o [se] e n de o a e e s
+  9:336  a o mdebrienne d o e e n [se] o a e e s m s e
+  9:340  o e e n de o a e [se] s m s e o vx povr e
+  9:370  <86> mdebrienne e o <90> s o n [se] s mdebrienne a i c e ez qve
+  9:436  n mdebrienne i e s <75> a mdavavx [se] a c o <86> <?>
+## K 51=la (false; current e) all lm=tools/data/fr17
+51=la: n 129, current e, statistic -557.5 bits over e; null p95 positions -672.9, value class -198.7; reject (no better than the current value) [non-blind]
+  0:0  [la] monnepvev e a a v e r s
+  0:2  e monnepvev [la] a a v e r s m mdavavx
+  0:16  s m mdavavx la c h a rge [la] s a i n dans n e n
+  0:23  rge e s a i n dans n [la] n mdebrienne f n v ce o a
+  0:39  a ovrveoir povr la c h a rge [la] mdebrienne e n mdebrienne r a et monnepvev
+  0:130  i et dans a s p dv mdebrienne [la] a n amais dv r de o a
+  0:147  dans la r i et n mdavavx m [la] la c o a mdebrienne povr a m
+  0:191  e o n a m b s s [la] o a qve c levr de o mdebrienne
+  0:236  r d s o e s f s [la] n mdebrienne s m e la c o
+  0:241  s f s e n mdebrienne s m [la] la c o a mdebrienne c monnepvev povr
+  0:255  c monnepvev povr a m b s s [la] o a m on monnepvev qve vovs m
+  0:274  s mdebrienne r s s i c o [la] aines c o et p s s s
+  0:290  s la i o de coste rge m [la] p r e n o i s aines
+  1:3  se a la [la] c e n et f m a h
+  1:79  o <?> a e d a m a [la] e il s lvy rge a h n
+  1:80  <?> a e d a m a e [la] il s lvy rge a h n e
+  1:137  c qve e qve c mdebrienne mdebrienne n [la] <75> c o a q dv a n
+  1:205  c s coste s c o a s [la] d i n mdebrienne o b a mdebrienne
+  1:220  a mdebrienne qve o r d i mdebrienne [la] <75> o n c e povr e a
+  1:287  e i n mdebrienne o b a mdebrienne [la] coste n vovs o qve ce h i
+  1:297  n vovs o qve ce h i mdebrienne [la] e v mdebrienne a o s
+  2:0  [la] il o n e n mdebrienne n <75>
+  2:49  n n mdebrienne dv e aines e s [la] s r coste s mdebrienne c p e
+  2:87  e qve e s d a n ce [la] <90> i vx o e <86> ra o
+  2:109  i n mdebrienne e amais a n c [la] e n favlt i n s <75> coste
+  3:19  e n n h <19/79> m n n [la] o o <86> a c o a mdebrienne
+  3:50  rge n ce c n r n dans [la] s c n s la e et <83>
+  3:56  n dans e s c n s la [la] et <83> o c coste mdebrienne o e
+  3:73  o a p c n ce dans s [la] c s la e et i m mdebrienne
+  3:77  n ce dans s e c s la [la] et i m mdebrienne qve o c coste
+  3:146  m a i n s <75> c n [la] m <86> a c qve e qve h
+  3:168  n n qve <88> n se se n [la] n il mdebrienne mdebrienne n <88> s coste
+  3:217  s b p monnepvev s o n s [la] e dv a mdebrienne <74> rge s a
+  4:1  qve [la] s d n a povr e povr n
+  4:12  n a povr e povr n i a [la] n mdebrienne <75> c n c s o
+  4:23  <75> c n c s o n n [la] <75> <90> i vx c dv mdebrienne d
+  4:48  b n se i m mdebrienne povr dv [la] <94> e e <75> p d <27> n
+  4:51  i m mdebrienne povr dv e <94> e [la] <75> p d <27> n ce e ez
+  4:58  e e <75> p d <27> n ce [la] ez <13/15> <75> n e se o e
+  4:63  <27> n ce e ez <13/15> <75> n [la] se o e s n a d n
+  4:112  <13/15> n mdebrienne a c e a coste [la] n o e s c s se s
+  4:147  mdebrienne a <75> o o lvy n n [la] levr mdebrienne a i c e p c
+  4:179  v n levr a e <47> n <27> [la] s e ce mdebrienne e p d <93>
+  4:215  i n s v m n n mdebrienne [la] ce mdebrienne e <27> e c s a
+  5:40  mdebrienne i n dv <42> i n c [la] m c n c s n levr mdebrienne
+  5:76  aines amais a dv <93> i n mdebrienne [la] <75> v a a i <86> povr e
+  5:84  e <75> v a a i <86> povr [la] il o n e n c n i
+  5:94  o n e n c n i n [la] <47> s e n mdebrienne n <75> e
+  5:142  <86> h i mdebrienne <45> <90> n c [la] <75> n p e a e <75> e
+  5:148  n c e <75> n p e a [la] <75> e faire a n ce e ce
+  5:155  a e <75> e faire a n ce [la] ce s rge n s <47> et qve
+  5:198  c n <?2> m d n <27> e [la] c n m m d a ce s
+  5:216  s i <47> o a mdebrienne e n [la] n mdebrienne e e h n a s
+  5:219  o a mdebrienne e n e n mdebrienne [la] e h n a s se m n
+  5:220  a mdebrienne e n e n mdebrienne e [la] h n a s se m n c
+  5:237  e a p n i rge o vx [la] c n c s n <75> <90> i
+  5:251  <75> <90> i vx <84> <75> r qve [la] <75> e c n de i n e
+  5:253  i vx <84> <75> r qve e <75> [la] c n de i n e o <75>
+  5:270  a <27> n n s i n mdebrienne [la] n h i n o e o <3?>
+  5:276  n mdebrienne e n h i n o [la] o <3?> qve <75> <86> favlt n qve
+  5:291  n qve c n n s <90> s [la] c s n c f a c f
+  5:331  <93> e n m a i n s [la] et e <47> <86> la v n e
+  5:333  n m a i n s e et [la] <47> <86> la v n e povr e
+  5:351  n n mdebrienne c favlt e a mdebrienne [la] levr s i n s i n ce
+  5:370  o faire e o povr i s c [la] n o d i e n mdebrienne e
+  5:448  a h n <86> <45> <90> n c [la] m d s c f a <75> p
+  5:461  f a <75> p d <27> n ce [la] s <75> n e e h a m
+  5:465  d <27> n ce e s <75> n [la] e h a m a e <75> rge
+  5:466  <27> n ce e s <75> n e [la] h a m a e <75> rge favlt
+  5:471  <75> n e e h a m a [la] <75> rge favlt c n m m d
+  5:491  s <45> s <83> i n o s [la] n <27> e qve ce e c <75>
+  5:500  n <27> e qve ce e c <75> [la] c s e c s n rge a
+  5:513  s n rge a <75> rge n o [la] <75> ce s se a a e vx
+  6:2  a o [la] se s <93> i a mdebrienne a i
+  6:20  e o e s v i o <86> [la] e c n c s o n n
+  6:37  a la n s n h i n [la] <75> <90> i vx et a <75> e
+  6:74  a <90> i aines a qve ce s [la] h a d n s ce s se
+  6:92  mdebrienne et qve <75> o n c e [la] il o n n o e e n
+  6:145  mdebrienne dv a mdebrienne et <75> r a [la] s rge n s i n e e
+  6:153  e s rge n s i n e [la] e c s et <86> mdebrienne e o
+  6:172  se a aines o n se o e [la] s mdebrienne a i c e ez qve
+  6:202  e faire a n ce c s r [la] n mdebrienne n p n n d n
+  6:239  se v e ez <75> il a <47> [la] ce s rge n s <47> <94> i
+  6:302  n mdebrienne n s o amais a <86> [la] m c n e a il a v
+  6:332  povr se m e n <86> n mdebrienne [la] e a mdavavx <75> s se m n
+  6:333  se m e n <86> n mdebrienne e [la] a mdavavx <75> s se m n c
+  6:343  mdavavx <75> s se m n c e [la] s <75> n e qve <75> <86> <75>
+  6:347  m n c e e s <75> n [la] qve <75> <86> <75> s <45> o c
+  6:365  n s <90> s <90> s se a [la] o vx il ce s rge n s
+  6:400  o a m dv <86> i n e [la] e faire e e e c qve <75>
+  6:421  m a c <93> i n c mdebrienne [la] n ce n m a o o il
+  6:441  i mdebrienne v a <64> e i e [la] ce s rge n s <47> c s
+  6:469  o vx dv d o a o il [la] lvy p c s <60> e n e
+  6:477  e lvy p c s <60> e n [la] o a e e s m s e
+  6:481  s <60> e n e o a e [la] s m s e s d o a
+  6:485  e o a e e s m s [la] s d o a o il s n
+  6:522  c v n i s e n ce [la] s r d o vx qve ce mdebrienne
+  7:97  amais a d p n ce a s [la] favlt n e a c c s se
+  7:100  p n ce a s e favlt n [la] a c c s se s qve <75>
+  7:109  a c c s se s qve <75> [la] o n c n n s <|> p
+  7:135  s <93> i mdebrienne <75> s <75> n [la] povr h <93> se coste n c e
+  7:157  <|> <75> <64> e e d n dans [la] rge n mdebrienne o a m e d
+  7:169  o a m e d <|> <90> e [la] e c qve ce f b p n
+  7:185  n n d a c p d ce [la] e i m mdebrienne e s se n
+  7:186  n d a c p d ce e [la] i m mdebrienne e s se n m
+  7:190  p d ce e e i m mdebrienne [la] s se n m o <36(4)> e <72>
+  7:197  mdebrienne e s se n m o <36(4)> [la] <72> e il n favlt i e lvy
+  7:242  a dans n e c e o a [la] <72> e il n
+  8:9  i s n d n e n mdebrienne [la] <75> ra o e povr e s a
+  8:24  s a o d n mdebrienne e e [la] <75> o favlt e mdebrienne a i c
+  8:53  p d ce s aines a b e [la] monnepvev n e a s <27> c
+  8:56  s aines a b e e monnepvev n [la] a s <27> c
+  9:17  e et povr n n mdebrienne e n [la] s <83> a de n mdebrienne et se
+  9:21  n mdebrienne e n e s <83> a [la] n mdebrienne et se n <75> s c
+  9:33  se n <75> s c f n mdebrienne [la] vovs o qve ce h i mdebrienne e
+  9:51  c s <88> o aines e c s [la] lvy p c s <75> v a a
+  9:63  s <75> v a a i <86> <86> [la] n o d i mdebrienne <90> s dv
+  9:90  m e et qve c dv c f [la] b a <75> de il o a n
+  9:94  c dv c f de b a <75> [la] il o a n mdebrienne p c mdebrienne
+  9:277  mdebrienne qve o s <90> e i a [la] <88> e n e s o amais n
+  9:281  <90> e i a de <88> e n [la] s o amais n n e amais <93>
+  9:287  e n e s o amais n n [la] amais <93> o m d n <86> a
+  9:298  o m d n <86> a n il [la] s c i vx mdavavx n e de
+  9:306  e s c i vx mdavavx n e [la] e c s povr s s c n
+  9:333  povr e o a o mdebrienne d o [la] e n de o a e e s
+  9:336  a o mdebrienne d o e e n [la] o a e e s m s e
+  9:340  o e e n de o a e [la] s m s e o vx povr e
+  9:370  <86> mdebrienne e o <90> s o n [la] s mdebrienne a i c e ez qve
+  9:436  n mdebrienne i e s <75> a mdavavx [la] a c o <86> <?>
+## K 51=ux (false; current e) all lm=tools/data/fr17
+51=ux: n 129, current e, statistic -2862.7 bits over e; null p95 positions -2610.2, value class -198.7; reject (no better than the current value) [non-blind]
+  0:0  [ux] monnepvev e a a v e r s
+  0:2  e monnepvev [ux] a a v e r s m mdavavx
+  0:16  s m mdavavx la c h a rge [ux] s a i n dans n e n
+  0:23  rge e s a i n dans n [ux] n mdebrienne f n v ce o a
+  0:39  a ovrveoir povr la c h a rge [ux] mdebrienne e n mdebrienne r a et monnepvev
+  0:130  i et dans a s p dv mdebrienne [ux] a n amais dv r de o a
+  0:147  dans la r i et n mdavavx m [ux] la c o a mdebrienne povr a m
+  0:191  e o n a m b s s [ux] o a qve c levr de o mdebrienne
+  0:236  r d s o e s f s [ux] n mdebrienne s m e la c o
+  0:241  s f s e n mdebrienne s m [ux] la c o a mdebrienne c monnepvev povr
+  0:255  c monnepvev povr a m b s s [ux] o a m on monnepvev qve vovs m
+  0:274  s mdebrienne r s s i c o [ux] aines c o et p s s s
+  0:290  s la i o de coste rge m [ux] p r e n o i s aines
+  1:3  se a la [ux] c e n et f m a h
+  1:79  o <?> a e d a m a [ux] e il s lvy rge a h n
+  1:80  <?> a e d a m a e [ux] il s lvy rge a h n e
+  1:137  c qve e qve c mdebrienne mdebrienne n [ux] <75> c o a q dv a n
+  1:205  c s coste s c o a s [ux] d i n mdebrienne o b a mdebrienne
+  1:220  a mdebrienne qve o r d i mdebrienne [ux] <75> o n c e povr e a
+  1:287  e i n mdebrienne o b a mdebrienne [ux] coste n vovs o qve ce h i
+  1:297  n vovs o qve ce h i mdebrienne [ux] e v mdebrienne a o s
+  2:0  [ux] il o n e n mdebrienne n <75>
+  2:49  n n mdebrienne dv e aines e s [ux] s r coste s mdebrienne c p e
+  2:87  e qve e s d a n ce [ux] <90> i vx o e <86> ra o
+  2:109  i n mdebrienne e amais a n c [ux] e n favlt i n s <75> coste
+  3:19  e n n h <19/79> m n n [ux] o o <86> a c o a mdebrienne
+  3:50  rge n ce c n r n dans [ux] s c n s la e et <83>
+  3:56  n dans e s c n s la [ux] et <83> o c coste mdebrienne o e
+  3:73  o a p c n ce dans s [ux] c s la e et i m mdebrienne
+  3:77  n ce dans s e c s la [ux] et i m mdebrienne qve o c coste
+  3:146  m a i n s <75> c n [ux] m <86> a c qve e qve h
+  3:168  n n qve <88> n se se n [ux] n il mdebrienne mdebrienne n <88> s coste
+  3:217  s b p monnepvev s o n s [ux] e dv a mdebrienne <74> rge s a
+  4:1  qve [ux] s d n a povr e povr n
+  4:12  n a povr e povr n i a [ux] n mdebrienne <75> c n c s o
+  4:23  <75> c n c s o n n [ux] <75> <90> i vx c dv mdebrienne d
+  4:48  b n se i m mdebrienne povr dv [ux] <94> e e <75> p d <27> n
+  4:51  i m mdebrienne povr dv e <94> e [ux] <75> p d <27> n ce e ez
+  4:58  e e <75> p d <27> n ce [ux] ez <13/15> <75> n e se o e
+  4:63  <27> n ce e ez <13/15> <75> n [ux] se o e s n a d n
+  4:112  <13/15> n mdebrienne a c e a coste [ux] n o e s c s se s
+  4:147  mdebrienne a <75> o o lvy n n [ux] levr mdebrienne a i c e p c
+  4:179  v n levr a e <47> n <27> [ux] s e ce mdebrienne e p d <93>
+  4:215  i n s v m n n mdebrienne [ux] ce mdebrienne e <27> e c s a
+  5:40  mdebrienne i n dv <42> i n c [ux] m c n c s n levr mdebrienne
+  5:76  aines amais a dv <93> i n mdebrienne [ux] <75> v a a i <86> povr e
+  5:84  e <75> v a a i <86> povr [ux] il o n e n c n i
+  5:94  o n e n c n i n [ux] <47> s e n mdebrienne n <75> e
+  5:142  <86> h i mdebrienne <45> <90> n c [ux] <75> n p e a e <75> e
+  5:148  n c e <75> n p e a [ux] <75> e faire a n ce e ce
+  5:155  a e <75> e faire a n ce [ux] ce s rge n s <47> et qve
+  5:198  c n <?2> m d n <27> e [ux] c n m m d a ce s
+  5:216  s i <47> o a mdebrienne e n [ux] n mdebrienne e e h n a s
+  5:219  o a mdebrienne e n e n mdebrienne [ux] e h n a s se m n
+  5:220  a mdebrienne e n e n mdebrienne e [ux] h n a s se m n c
+  5:237  e a p n i rge o vx [ux] c n c s n <75> <90> i
+  5:251  <75> <90> i vx <84> <75> r qve [ux] <75> e c n de i n e
+  5:253  i vx <84> <75> r qve e <75> [ux] c n de i n e o <75>
+  5:270  a <27> n n s i n mdebrienne [ux] n h i n o e o <3?>
+  5:276  n mdebrienne e n h i n o [ux] o <3?> qve <75> <86> favlt n qve
+  5:291  n qve c n n s <90> s [ux] c s n c f a c f
+  5:331  <93> e n m a i n s [ux] et e <47> <86> la v n e
+  5:333  n m a i n s e et [ux] <47> <86> la v n e povr e
+  5:351  n n mdebrienne c favlt e a mdebrienne [ux] levr s i n s i n ce
+  5:370  o faire e o povr i s c [ux] n o d i e n mdebrienne e
+  5:448  a h n <86> <45> <90> n c [ux] m d s c f a <75> p
+  5:461  f a <75> p d <27> n ce [ux] s <75> n e e h a m
+  5:465  d <27> n ce e s <75> n [ux] e h a m a e <75> rge
+  5:466  <27> n ce e s <75> n e [ux] h a m a e <75> rge favlt
+  5:471  <75> n e e h a m a [ux] <75> rge favlt c n m m d
+  5:491  s <45> s <83> i n o s [ux] n <27> e qve ce e c <75>
+  5:500  n <27> e qve ce e c <75> [ux] c s e c s n rge a
+  5:513  s n rge a <75> rge n o [ux] <75> ce s se a a e vx
+  6:2  a o [ux] se s <93> i a mdebrienne a i
+  6:20  e o e s v i o <86> [ux] e c n c s o n n
+  6:37  a la n s n h i n [ux] <75> <90> i vx et a <75> e
+  6:74  a <90> i aines a qve ce s [ux] h a d n s ce s se
+  6:92  mdebrienne et qve <75> o n c e [ux] il o n n o e e n
+  6:145  mdebrienne dv a mdebrienne et <75> r a [ux] s rge n s i n e e
+  6:153  e s rge n s i n e [ux] e c s et <86> mdebrienne e o
+  6:172  se a aines o n se o e [ux] s mdebrienne a i c e ez qve
+  6:202  e faire a n ce c s r [ux] n mdebrienne n p n n d n
+  6:239  se v e ez <75> il a <47> [ux] ce s rge n s <47> <94> i
+  6:302  n mdebrienne n s o amais a <86> [ux] m c n e a il a v
+  6:332  povr se m e n <86> n mdebrienne [ux] e a mdavavx <75> s se m n
+  6:333  se m e n <86> n mdebrienne e [ux] a mdavavx <75> s se m n c
+  6:343  mdavavx <75> s se m n c e [ux] s <75> n e qve <75> <86> <75>
+  6:347  m n c e e s <75> n [ux] qve <75> <86> <75> s <45> o c
+  6:365  n s <90> s <90> s se a [ux] o vx il ce s rge n s
+  6:400  o a m dv <86> i n e [ux] e faire e e e c qve <75>
+  6:421  m a c <93> i n c mdebrienne [ux] n ce n m a o o il
+  6:441  i mdebrienne v a <64> e i e [ux] ce s rge n s <47> c s
+  6:469  o vx dv d o a o il [ux] lvy p c s <60> e n e
+  6:477  e lvy p c s <60> e n [ux] o a e e s m s e
+  6:481  s <60> e n e o a e [ux] s m s e s d o a
+  6:485  e o a e e s m s [ux] s d o a o il s n
+  6:522  c v n i s e n ce [ux] s r d o vx qve ce mdebrienne
+  7:97  amais a d p n ce a s [ux] favlt n e a c c s se
+  7:100  p n ce a s e favlt n [ux] a c c s se s qve <75>
+  7:109  a c c s se s qve <75> [ux] o n c n n s <|> p
+  7:135  s <93> i mdebrienne <75> s <75> n [ux] povr h <93> se coste n c e
+  7:157  <|> <75> <64> e e d n dans [ux] rge n mdebrienne o a m e d
+  7:169  o a m e d <|> <90> e [ux] e c qve ce f b p n
+  7:185  n n d a c p d ce [ux] e i m mdebrienne e s se n
+  7:186  n d a c p d ce e [ux] i m mdebrienne e s se n m
+  7:190  p d ce e e i m mdebrienne [ux] s se n m o <36(4)> e <72>
+  7:197  mdebrienne e s se n m o <36(4)> [ux] <72> e il n favlt i e lvy
+  7:242  a dans n e c e o a [ux] <72> e il n
+  8:9  i s n d n e n mdebrienne [ux] <75> ra o e povr e s a
+  8:24  s a o d n mdebrienne e e [ux] <75> o favlt e mdebrienne a i c
+  8:53  p d ce s aines a b e [ux] monnepvev n e a s <27> c
+  8:56  s aines a b e e monnepvev n [ux] a s <27> c
+  9:17  e et povr n n mdebrienne e n [ux] s <83> a de n mdebrienne et se
+  9:21  n mdebrienne e n e s <83> a [ux] n mdebrienne et se n <75> s c
+  9:33  se n <75> s c f n mdebrienne [ux] vovs o qve ce h i mdebrienne e
+  9:51  c s <88> o aines e c s [ux] lvy p c s <75> v a a
+  9:63  s <75> v a a i <86> <86> [ux] n o d i mdebrienne <90> s dv
+  9:90  m e et qve c dv c f [ux] b a <75> de il o a n
+  9:94  c dv c f de b a <75> [ux] il o a n mdebrienne p c mdebrienne
+  9:277  mdebrienne qve o s <90> e i a [ux] <88> e n e s o amais n
+  9:281  <90> e i a de <88> e n [ux] s o amais n n e amais <93>
+  9:287  e n e s o amais n n [ux] amais <93> o m d n <86> a
+  9:298  o m d n <86> a n il [ux] s c i vx mdavavx n e de
+  9:306  e s c i vx mdavavx n e [ux] e c s povr s s c n
+  9:333  povr e o a o mdebrienne d o [ux] e n de o a e e s
+  9:336  a o mdebrienne d o e e n [ux] o a e e s m s e
+  9:340  o e e n de o a e [ux] s m s e o vx povr e
+  9:370  <86> mdebrienne e o <90> s o n [ux] s mdebrienne a i c e ez qve
+  9:436  n mdebrienne i e s <75> a mdavavx [ux] a c o <86> <?>
+## K 51=ez (false; current e) all lm=tools/data/fr17
+51=ez: n 129, current e, statistic -2990.4 bits over e; null p95 positions -2327.0, value class -198.7; reject (no better than the current value) [non-blind]
+  0:0  [ez] monnepvev e a a v e r s
+  0:2  e monnepvev [ez] a a v e r s m mdavavx
+  0:16  s m mdavavx la c h a rge [ez] s a i n dans n e n
+  0:23  rge e s a i n dans n [ez] n mdebrienne f n v ce o a
+  0:39  a ovrveoir povr la c h a rge [ez] mdebrienne e n mdebrienne r a et monnepvev
+  0:130  i et dans a s p dv mdebrienne [ez] a n amais dv r de o a
+  0:147  dans la r i et n mdavavx m [ez] la c o a mdebrienne povr a m
+  0:191  e o n a m b s s [ez] o a qve c levr de o mdebrienne
+  0:236  r d s o e s f s [ez] n mdebrienne s m e la c o
+  0:241  s f s e n mdebrienne s m [ez] la c o a mdebrienne c monnepvev povr
+  0:255  c monnepvev povr a m b s s [ez] o a m on monnepvev qve vovs m
+  0:274  s mdebrienne r s s i c o [ez] aines c o et p s s s
+  0:290  s la i o de coste rge m [ez] p r e n o i s aines
+  1:3  se a la [ez] c e n et f m a h
+  1:79  o <?> a e d a m a [ez] e il s lvy rge a h n
+  1:80  <?> a e d a m a e [ez] il s lvy rge a h n e
+  1:137  c qve e qve c mdebrienne mdebrienne n [ez] <75> c o a q dv a n
+  1:205  c s coste s c o a s [ez] d i n mdebrienne o b a mdebrienne
+  1:220  a mdebrienne qve o r d i mdebrienne [ez] <75> o n c e povr e a
+  1:287  e i n mdebrienne o b a mdebrienne [ez] coste n vovs o qve ce h i
+  1:297  n vovs o qve ce h i mdebrienne [ez] e v mdebrienne a o s
+  2:0  [ez] il o n e n mdebrienne n <75>
+  2:49  n n mdebrienne dv e aines e s [ez] s r coste s mdebrienne c p e
+  2:87  e qve e s d a n ce [ez] <90> i vx o e <86> ra o
+  2:109  i n mdebrienne e amais a n c [ez] e n favlt i n s <75> coste
+  3:19  e n n h <19/79> m n n [ez] o o <86> a c o a mdebrienne
+  3:50  rge n ce c n r n dans [ez] s c n s la e et <83>
+  3:56  n dans e s c n s la [ez] et <83> o c coste mdebrienne o e
+  3:73  o a p c n ce dans s [ez] c s la e et i m mdebrienne
+  3:77  n ce dans s e c s la [ez] et i m mdebrienne qve o c coste
+  3:146  m a i n s <75> c n [ez] m <86> a c qve e qve h
+  3:168  n n qve <88> n se se n [ez] n il mdebrienne mdebrienne n <88> s coste
+  3:217  s b p monnepvev s o n s [ez] e dv a mdebrienne <74> rge s a
+  4:1  qve [ez] s d n a povr e povr n
+  4:12  n a povr e povr n i a [ez] n mdebrienne <75> c n c s o
+  4:23  <75> c n c s o n n [ez] <75> <90> i vx c dv mdebrienne d
+  4:48  b n se i m mdebrienne povr dv [ez] <94> e e <75> p d <27> n
+  4:51  i m mdebrienne povr dv e <94> e [ez] <75> p d <27> n ce e ez
+  4:58  e e <75> p d <27> n ce [ez] ez <13/15> <75> n e se o e
+  4:63  <27> n ce e ez <13/15> <75> n [ez] se o e s n a d n
+  4:112  <13/15> n mdebrienne a c e a coste [ez] n o e s c s se s
+  4:147  mdebrienne a <75> o o lvy n n [ez] levr mdebrienne a i c e p c
+  4:179  v n levr a e <47> n <27> [ez] s e ce mdebrienne e p d <93>
+  4:215  i n s v m n n mdebrienne [ez] ce mdebrienne e <27> e c s a
+  5:40  mdebrienne i n dv <42> i n c [ez] m c n c s n levr mdebrienne
+  5:76  aines amais a dv <93> i n mdebrienne [ez] <75> v a a i <86> povr e
+  5:84  e <75> v a a i <86> povr [ez] il o n e n c n i
+  5:94  o n e n c n i n [ez] <47> s e n mdebrienne n <75> e
+  5:142  <86> h i mdebrienne <45> <90> n c [ez] <75> n p e a e <75> e
+  5:148  n c e <75> n p e a [ez] <75> e faire a n ce e ce
+  5:155  a e <75> e faire a n ce [ez] ce s rge n s <47> et qve
+  5:198  c n <?2> m d n <27> e [ez] c n m m d a ce s
+  5:216  s i <47> o a mdebrienne e n [ez] n mdebrienne e e h n a s
+  5:219  o a mdebrienne e n e n mdebrienne [ez] e h n a s se m n
+  5:220  a mdebrienne e n e n mdebrienne e [ez] h n a s se m n c
+  5:237  e a p n i rge o vx [ez] c n c s n <75> <90> i
+  5:251  <75> <90> i vx <84> <75> r qve [ez] <75> e c n de i n e
+  5:253  i vx <84> <75> r qve e <75> [ez] c n de i n e o <75>
+  5:270  a <27> n n s i n mdebrienne [ez] n h i n o e o <3?>
+  5:276  n mdebrienne e n h i n o [ez] o <3?> qve <75> <86> favlt n qve
+  5:291  n qve c n n s <90> s [ez] c s n c f a c f
+  5:331  <93> e n m a i n s [ez] et e <47> <86> la v n e
+  5:333  n m a i n s e et [ez] <47> <86> la v n e povr e
+  5:351  n n mdebrienne c favlt e a mdebrienne [ez] levr s i n s i n ce
+  5:370  o faire e o povr i s c [ez] n o d i e n mdebrienne e
+  5:448  a h n <86> <45> <90> n c [ez] m d s c f a <75> p
+  5:461  f a <75> p d <27> n ce [ez] s <75> n e e h a m
+  5:465  d <27> n ce e s <75> n [ez] e h a m a e <75> rge
+  5:466  <27> n ce e s <75> n e [ez] h a m a e <75> rge favlt
+  5:471  <75> n e e h a m a [ez] <75> rge favlt c n m m d
+  5:491  s <45> s <83> i n o s [ez] n <27> e qve ce e c <75>
+  5:500  n <27> e qve ce e c <75> [ez] c s e c s n rge a
+  5:513  s n rge a <75> rge n o [ez] <75> ce s se a a e vx
+  6:2  a o [ez] se s <93> i a mdebrienne a i
+  6:20  e o e s v i o <86> [ez] e c n c s o n n
+  6:37  a la n s n h i n [ez] <75> <90> i vx et a <75> e
+  6:74  a <90> i aines a qve ce s [ez] h a d n s ce s se
+  6:92  mdebrienne et qve <75> o n c e [ez] il o n n o e e n
+  6:145  mdebrienne dv a mdebrienne et <75> r a [ez] s rge n s i n e e
+  6:153  e s rge n s i n e [ez] e c s et <86> mdebrienne e o
+  6:172  se a aines o n se o e [ez] s mdebrienne a i c e ez qve
+  6:202  e faire a n ce c s r [ez] n mdebrienne n p n n d n
+  6:239  se v e ez <75> il a <47> [ez] ce s rge n s <47> <94> i
+  6:302  n mdebrienne n s o amais a <86> [ez] m c n e a il a v
+  6:332  povr se m e n <86> n mdebrienne [ez] e a mdavavx <75> s se m n
+  6:333  se m e n <86> n mdebrienne e [ez] a mdavavx <75> s se m n c
+  6:343  mdavavx <75> s se m n c e [ez] s <75> n e qve <75> <86> <75>
+  6:347  m n c e e s <75> n [ez] qve <75> <86> <75> s <45> o c
+  6:365  n s <90> s <90> s se a [ez] o vx il ce s rge n s
+  6:400  o a m dv <86> i n e [ez] e faire e e e c qve <75>
+  6:421  m a c <93> i n c mdebrienne [ez] n ce n m a o o il
+  6:441  i mdebrienne v a <64> e i e [ez] ce s rge n s <47> c s
+  6:469  o vx dv d o a o il [ez] lvy p c s <60> e n e
+  6:477  e lvy p c s <60> e n [ez] o a e e s m s e
+  6:481  s <60> e n e o a e [ez] s m s e s d o a
+  6:485  e o a e e s m s [ez] s d o a o il s n
+  6:522  c v n i s e n ce [ez] s r d o vx qve ce mdebrienne
+  7:97  amais a d p n ce a s [ez] favlt n e a c c s se
+  7:100  p n ce a s e favlt n [ez] a c c s se s qve <75>
+  7:109  a c c s se s qve <75> [ez] o n c n n s <|> p
+  7:135  s <93> i mdebrienne <75> s <75> n [ez] povr h <93> se coste n c e
+  7:157  <|> <75> <64> e e d n dans [ez] rge n mdebrienne o a m e d
+  7:169  o a m e d <|> <90> e [ez] e c qve ce f b p n
+  7:185  n n d a c p d ce [ez] e i m mdebrienne e s se n
+  7:186  n d a c p d ce e [ez] i m mdebrienne e s se n m
+  7:190  p d ce e e i m mdebrienne [ez] s se n m o <36(4)> e <72>
+  7:197  mdebrienne e s se n m o <36(4)> [ez] <72> e il n favlt i e lvy
+  7:242  a dans n e c e o a [ez] <72> e il n
+  8:9  i s n d n e n mdebrienne [ez] <75> ra o e povr e s a
+  8:24  s a o d n mdebrienne e e [ez] <75> o favlt e mdebrienne a i c
+  8:53  p d ce s aines a b e [ez] monnepvev n e a s <27> c
+  8:56  s aines a b e e monnepvev n [ez] a s <27> c
+  9:17  e et povr n n mdebrienne e n [ez] s <83> a de n mdebrienne et se
+  9:21  n mdebrienne e n e s <83> a [ez] n mdebrienne et se n <75> s c
+  9:33  se n <75> s c f n mdebrienne [ez] vovs o qve ce h i mdebrienne e
+  9:51  c s <88> o aines e c s [ez] lvy p c s <75> v a a
+  9:63  s <75> v a a i <86> <86> [ez] n o d i mdebrienne <90> s dv
+  9:90  m e et qve c dv c f [ez] b a <75> de il o a n
+  9:94  c dv c f de b a <75> [ez] il o a n mdebrienne p c mdebrienne
+  9:277  mdebrienne qve o s <90> e i a [ez] <88> e n e s o amais n
+  9:281  <90> e i a de <88> e n [ez] s o amais n n e amais <93>
+  9:287  e n e s o amais n n [ez] amais <93> o m d n <86> a
+  9:298  o m d n <86> a n il [ez] s c i vx mdavavx n e de
+  9:306  e s c i vx mdavavx n e [ez] e c s povr s s c n
+  9:333  povr e o a o mdebrienne d o [ez] e n de o a e e s
+  9:336  a o mdebrienne d o e e n [ez] o a e e s m s e
+  9:340  o e e n de o a e [ez] s m s e o vx povr e
+  9:370  <86> mdebrienne e o <90> s o n [ez] s mdebrienne a i c e ez qve
+  9:436  n mdebrienne i e s <75> a mdavavx [ez] a c o <86> <?>

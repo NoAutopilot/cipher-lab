@@ -1,4 +1,4 @@
-# PREREG-COL26-1181 (account 4, LANE DEFAULT-A4-0437-15, 15 Oct 2026, written 05:2x UTC before any score)
+# PREREG-COL26-1181 (account 4, LANE DEFAULT-A4-0437-15, 15 Oct 2026, written 05:1x UTC before any score)
 
 Job: COL26-1181, `.claude/briefs/runs/2026-10-15-acct4-default-0437-jobs.md`. Script: `siblings/c1181_try.py` (docstring = full
 run list; pushed with this file before its first run). Disk only, no host, no vision call. Prior work: `tools/prior_work.py` has no

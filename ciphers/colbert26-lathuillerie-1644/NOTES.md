@@ -2441,6 +2441,35 @@ French bigram; chunk counts in the file count each pass, so 're' 4 is two c50 oc
 step itself recovers known values above its control (15 of 26 vs 7.82, P 0.0000), so the cut-at-anchor rule is a live instrument.
 Next step named in the gaps below. Hosts: none. Vision: none. Cost not visible to this session.
 
+## COL26-1181 (account 4, LANE DEFAULT-A4-0437-15, 15 Oct 2026): per-code --try test of 11 = re and 81 = me
+
+Brief `.claude/briefs/runs/2026-10-15-acct4-default-0437-jobs.md` job COL26-1181 (cap 2, box 05:1x-05:53 UTC). Disk only, no host, no
+vision call. `tools/prior_work.py` takes no per-code item spec; the only prior is COL26-KEY above. **Pre-registration**
+`PREREG-COL26-1181.md` + `siblings/c1181_try.py` pushed in 02e54ed3e before the first run. Instrument `tools/decode_key.py --try`
+(built-in nulls: shuffled-position and value-class, 200 draws) on key_f23.tsv, streams f23, c50 and the 8 key_f23-family sibling
+units; primary = held-out streams (all but c50) under `tools/data/fr17`.
+
+**Result** (`siblings/c1181_try_out.txt`, `--check` regenerates it):
+```
+run                         n    stat (bits)  null p95 pos / class  verdict
+11=re held-out fr17         86   +77.2 vs n   53.8 / 306.6          reject (breaks 32 of 86 by > 3 bits)
+11=re c50 alone fr17        21   +196.7       149.6 / 179.2         accept (in-sample: the candidate came from c50)
+81=me held-out fr17         28   -63.1 vs il  - / 110.5             reject (no better than il)
+81=me c50 alone fr17        3    -1.8         - / 31.4              reject
+fr16 (sensitivity)          same verdicts; 81=me c50 undecided
+runner-up (code blanked)    11: -372.4 vs NULL; 81: -226.7 vs i     reject both
+value-class control (fr17, 2-letter C codes 16 se, 28 la, 33 ux, 36 ez, 51 de set to one letter): true accepted 1/5 (28 la only),
+false accepted 0/20 -> CONTROL FAIL (gate >= 4/5 true, <= 2/20 false)
+```
+**Reading of the numbers.** The instrument rejects four of five known 2-letter values in this key (51 = de at n 129: -218 bits
+against a one-letter stand-in), so it cannot tell a right 2-letter value from a wrong one here: with 387 of 442 c50 tokens at M and
+most neighbours one letter, the window score favours a single letter (the length effect COL26-KEY noted, now measured on known
+answers). By rule 3 the two rejects are a **non-test**, not a negative; the PREREG line "reject -> '-'" is not applied (deviation
+logged here: the PREREG did not condition the drop on the control, rule 3 does). key_f23_c50rev.tsv: 11 and 81 stay rev_grade M with
+the result in rev_note; key_f23.tsv, decode.json and readings unchanged (`decode_key.py --check`: reading up to date). No token
+changes grade. First attempt with --try on these codes, so the instrument is not retired for them. Hosts: none. Vision: none. Cost
+not visible to this session.
+
 ## Remaining gaps (COL26-KEY 15 Oct 2026; COL26-C50, COL26-SIB, COL26-C51, COL26-C33 14 Oct 2026; COL26-11B, COL26-WP, COL26-42, COL26-C29 13 Oct 2026; A2-COL2, 2 Oct 2026; DA1-COL, DA1-COL2, DA1-COL3 7 Oct 2026; A4-RFCOL, R7A-COL26, R9-COL26, R10-COL26B, R10-COL26C, R10-COL26D 6 Oct 2026, D22-COL26P 6 Oct 2026, D07-COL26K 7 Oct 2026; updated A2-COL3, A2-COL4, 2 Oct 2026, A2-COL5, A2-COL6, A2-COL7, A2-COL8, A2-COL9, A2-COL10, A2-COL11, A2-COL12, A2-COL13, A2-COL14, A2-COL15, 3 Oct 2026, A2-COL16, A2-COL17; R8-COL26 6 Oct 2026)
 
 Read so far: 27 of 168 f.24 tokens and 125 of 306 f.23 tokens at grade C; canvas 50 21 of 442 at C (COL26-C50 65 under A2-COL15's unit licence; verifier VER-COL50 14 Oct 2026 kept C only on the 21 placed in their own gloss word by a blind word pairing, 65 -> 21, AUDIT 3) (D2-COL26 8 Oct 2026 returned 30 = s to C on value-independent units, 110 -> 127; verifier D2V-COL26 lowered two f.23 tokens of 30 whose own gloss word has no s, 127 -> 125, AUDIT.md addendum; 92 before R9-COL26, 110 before DA1-COL, 127 after DA1-COL; DA1-COL2 lowered 46 = ce to M; DA1-COL3 raised 30 = s and 85 = na to C, 123 -> 141; verifier DA1-COLV lowered 20, 30, 67, 81, 85, 96 to M, 141 -> 110, AUDIT.md AUDIT 1) (reading_tokens_f24.tsv, reading_tokens_f23.tsv); the other 19 cipher-bearing leaves 0 (sorted by system, A2-COL5: 17 two-digit like f.23, 2 mixed like f.24; siblings_sort.tsv).
@@ -2459,7 +2488,8 @@ Read so far: 27 of 168 f.24 tokens and 125 of 306 f.23 tokens at grade C; canvas
   - [x] word-grain pairing of c33 for 20 = i (COL26-C33, 14 Oct 2026, PREREG-COL26-C33.md): instrument check CLEARS on both passes (8/25 vs p95 6, 8/26 vs p95 6); 20 i 2/5 both passes, P 0.09, power at N 5 0.06: FAIL-LOWPOWER, key unchanged
   - [x] canvas 50 reading with key_f23 grades as A2-COL15 licensed them (COL26-C50, 14 Oct 2026, siblings/c50_reading_inputs.py, reading_c50.txt): C 65, M 343, U 34, judge FAIL -1.401; verifier VER-COL50 (14 Oct 2026, AUDIT 3): per-token word-grain check, C 65 -> 21, M 387, N0, D1; verifier ruling on the C licence owed
   - [x] key_f23 revision with canvas 50 folded in (COL26-KEY, 15 Oct 2026, PREREG-COL26-KEY.md, siblings/c50_keyrev.py): 21 VER-COL50 C tokens as word anchors, 15 open-code candidates, held-out unit gate PASS both scorings (H 14 vs SP p95 13, P 0.036; H 17 vs p95 14, P 0.018; P_W 0.0000), two codes carry it (11 re, 81 me), before/after -50/-46 (not length-matched); key_f23_c50rev.tsv at M, key_f23 unchanged
-  - [ ] per-code held-out test of 11 = re and 81 = me (COL26-KEY leads) with a length-matched value control; next: scripts only, ~$1
+  - [x] per-code held-out --try test of 11 = re and 81 = me (COL26-1181, 15 Oct 2026, PREREG-COL26-1181.md): held-out reject both, but the 2-letter value-class control FAILED (true 1/5, false 0/20), so a non-test; both stay M in key_f23_c50rev.tsv
+  - [ ] 11 = re / 81 = me with an instrument that does not favour one-letter values (a length-matched score: compare each candidate only against other 2-letter values at the same positions, gated on the same 5 known 2-letter C codes first); next: scripts only, ~$1
   - [x] key_f23 C on canvas 51 at word grain (COL26-SIB, 14 Oct 2026, PREREG-COL26-SIB.md): FAIL both passes (4/15, 3/15 vs shuffled-key p95 3), passes drift one group, key unchanged, no reading
   - [x] pooled held-out word grain for 20 = i (COL26-C51, 14 Oct 2026, PREREG-COL26-C51.md, siblings/word_c51pool.py): stage 0 TOO-SHORT, pooled N 10 (c33 5 + c51 2 glossed + c63 3; c62 excluded, instrument failed), power 0.120/0.163 < 0.5; no vision, key unchanged
 - [x] clear-pages: f.24 and f.23 interlinear decipherments both aligned, each cleared its own shuffled-gloss control (f.23 63 vs max 45)
@@ -2474,7 +2504,7 @@ Read so far: 27 of 168 f.24 tokens and 125 of 306 f.23 tokens at grade C; canvas
   - [retired] second blind word-pairing pass for 11 = le (COL26-11B, 13 Oct 2026, PREREG-COL26-11B.md): instrument check failed again on the pooled passes (3/8 vs p95 3, P 0.19; agreement 0.862); instrument: word-level pairing, interlinear/c20c21_word_wp.py; reopens only with new glossed mixed-system material
 - [x] retry: f.23 word-level re-pairing done (A2-COL3): 128 agreeing tokens vs shuffled-gloss control max 45; C codes 6 -> 21; held-out P36 4/4 C consistent; judge FAIL -1.412; A2-COL4 margin postscript known-answer test: C 6/7 consistent, M2 5/5 vs control max 4, pooled p 0.076
 
-Verdict: keep going: 5 internal gaps; canvas 50 reading written (COL26-C50, 14 Oct 2026: reading_c50.txt, 442 tokens C 65 / M 343 / U 34, C only where A2-COL15 licensed it, judge FAIL -1.401; verifier VER-COL50 14 Oct 2026 lowered 44 of the 65 to M at word grain: C 21 / M 387 / U 34, N0, D1, AUDIT 3); key revision with canvas 50 folded in done (COL26-KEY, 15 Oct 2026, PREREG-COL26-KEY.md: 21 placed c50 tokens as anchors, 15 open-code candidates, held-out unit gate PASS on both scorings, H 14/17 vs shuffled-pair p95 13/14, carried by 11 = re and 81 = me; written to key_f23_c50rev.tsv at M, key_f23 and readings unchanged); cheapest next: per-code held-out test of 11 = re and 81 = me on the word-paired units outside c50 with a length-matched value control, ~$1. Canvas 51 at word grain FAIL on both passes (COL26-SIB, 14 Oct 2026; one-group reader drift, idealised synthetic power), first attempt, no reading written. 20 = i parked too-short at word grain (COL26-C51: pooled held-out N 10, power 0.12-0.16; c33 alone FAIL-LOWPOWER 2/5, COL26-C33; the instrument cleared, so word pairing is not retired here). Canvas 20-21 word pairing retired for 11 = le after two passes (COL26-WP, COL26-11B: instrument check failed both times, readers agree 0.862), 42 and 6 non-tests at this N. Canvas 29 done (COL26-C29: transcribed, key_f24 C test FAIL at N 5-6, all tokens M); 42 = s(ieur) non-test on held-out material (COL26-42)
+Verdict: keep going: 5 internal gaps; canvas 50 reading written (COL26-C50, 14 Oct 2026: reading_c50.txt, 442 tokens C 65 / M 343 / U 34, C only where A2-COL15 licensed it, judge FAIL -1.401; verifier VER-COL50 14 Oct 2026 lowered 44 of the 65 to M at word grain: C 21 / M 387 / U 34, N0, D1, AUDIT 3); key revision with canvas 50 folded in done (COL26-KEY, 15 Oct 2026, PREREG-COL26-KEY.md: 21 placed c50 tokens as anchors, 15 open-code candidates, held-out unit gate PASS on both scorings, H 14/17 vs shuffled-pair p95 13/14, carried by 11 = re and 81 = me; written to key_f23_c50rev.tsv at M, key_f23 and readings unchanged); per-code --try test of 11 = re and 81 = me run (COL26-1181, 15 Oct 2026): held-out reject both, value-class control FAIL (true 2-letter C values 1/5), non-test, both stay M; cheapest next: the same two codes under a length-matched score gated on the 5 known 2-letter C codes, ~$1. Canvas 51 at word grain FAIL on both passes (COL26-SIB, 14 Oct 2026; one-group reader drift, idealised synthetic power), first attempt, no reading written. 20 = i parked too-short at word grain (COL26-C51: pooled held-out N 10, power 0.12-0.16; c33 alone FAIL-LOWPOWER 2/5, COL26-C33; the instrument cleared, so word pairing is not retired here). Canvas 20-21 word pairing retired for 11 = le after two passes (COL26-WP, COL26-11B: instrument check failed both times, readers agree 0.862), 42 and 6 non-tests at this N. Canvas 29 done (COL26-C29: transcribed, key_f24 C test FAIL at N 5-6, all tokens M); 42 = s(ieur) non-test on held-out material (COL26-42)
 
 ## Interrupted (account 2 usage limit, 3 Oct 2026)
 
