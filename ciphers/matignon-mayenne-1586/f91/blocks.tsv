@@ -1,0 +1,7 @@
+block	page	canvas	side	cipher_region_native_xywh	cipher_lines_by_eye	cipher_bands_found	gloss_region_native_xywh	gloss_lines_by_eye	gloss_bands_found	note
+A	f.91r	97	right	5180,1560,2880,360	4	4	4500,1680,620,230	4-5	3	opens after clear "Le Mar[escha]l de Matignon"; gloss "Et les Reistres ... reduite ..."
+B	f.91r	97	right	5180,4600,2880,800	7	7	4500,4700,680,750	11	11	opens after clear "...de Matignon, Et dans le ... a la fin"; gloss "Quant au chemin qui ..."; gloss foot near the region edge (native y 5450), check the last line
+C	f.91v	98	left	1650,1020,2900,1440	15	13	930,980,800,1600	21-22	21	ends in clear "Oultre que ... de Haultfort"; band finder merged 2 lines (debug overlay)
+D	f.91v	98	left	1650,2740,2900,780	7	7	930,2800,800,780	10	10	gloss opens "Orleans a ..."
+E	f.92r	98	right	5780,1260,2260,620	4-5	5	5130,1180,760,900	9	9	gloss "Que(?) Siege plus a propos ..."
+F	f.92r	98	right	5780,2660,2260,1340	10+3	14	5130,2680,800,1600	16-18	16	two cipher runs split by 2 clear lines ("...de Montbelault ... Cavallerye ..."); second run carries "14 76" and the gloss foot reads "Et sault que le Roy de Navarre passa ..." (lead for 76, M, not aligned)
