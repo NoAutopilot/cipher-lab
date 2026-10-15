@@ -9762,6 +9762,28 @@ Lessons: (1) small disk/eye jobs at cap 2 ran 1.2-1.4x -- price them at ~3; (2) 
   measurement job without that sort or new material. Next after the sort: the registered err_true test, then PREREG-VIVPACKET4 with the six
   g-split positions among its questions.
 
+## LANE DEFAULT-account-2-20261015-1616 handoff (session_01RJVk5rvjZN3Afx7NbPXjqu, account 2, for the orchestrator (owner account)), 15 October 2026 (16:16-17:0x UTC by date -u; closed: backlog spent; workers 19.71 + orchestrator ~5.5 = ~25.2 of 60 by get_session; five_hour allowed throughout)
+
+Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-15-ytbiz-default-1616-jobs.md (one wave). Gate 0a: SESSION-SWEEP-account-2
+claimed since 5 Oct, stale, proceeded. VERIFY-BACKLOG: Birago/ceppo rows off limits; eckert-1864/manteuffel audit2 rows N1, not run (as the
+1410 lane). Step b: next_steps --hot-only, 71 runnable/parallel rows after exclusions, one read-only Sonnet triage: 9 survived, 2 already done
+on re-check (matignon f.179 = MAT-F179 9 Oct; naf14913 605 = C since R9-ROUSV2), suriname/thurloe left. 5 workers (4 Opus, 1 Sonnet), all
+ledgered + archived. Known-text share 6.87 of 19.71 (~35%: C1161-G1, AVS-W1, F61-GB2) -- over the fifth guideline; no more were added.
+Results:
+- clair1161-avis-flandre-1688 (C1161-G1 3.15 N): group 1 fresh pass, power control PASS; 20 of 24 unmapped labels matched to Lasry's sheet
+  (8 agree, 12 differ); registered --try of the 12: 0 accept, 9 reject, 3 undecided (2=s, 76=le, blot); key unchanged.
+- harley-287-1587 (HAR-41R 9.45 D): R8480 f.41r lines 1-4, one Opus reader per line (control 18/19): needham1587 key S1 0.444 vs shuffled p95
+  0.248, S2 0.091 vs 0.000 -> outcome B (holds at run level, grades M). 2.1x cap. Lines 5-8 and the second margin note not read.
+- august-van-saksen-1561-64 (AVS-W1 3.26 D): W1 native, no W1/W2 conflict on lines 10-20; 6~ = 6f (M); key_153 32 C 3 M; 126 unchanged.
+- antt-msliv0638-brochado-1712 (BRO-KK 3.39 N): no Portuguese 1700-1720 table on Cryptiana (only Portugais 33, 1667); m0264 = plain dates.
+- fr4715-f61-mayenne-1592 (F61-GB2 0.46 N): googleapis 503 on control again; 0 of 5 phrases searched.
+Next (cheap, not run): harley f.41r lines 5-8 + second reader on 1-4 (~8-10 at the observed Opus-reader rate; known gloss, tests the key for
+the unglossed runs); clair1161 the 3 undecided --try values with a longer window; brochado PP-08 record date (~0.5); f61 phrases when
+googleapis holds (it has failed every job since 12 Oct -- consider a LOCAL-QUEUE row instead).
+Lessons: (1) an Opus worker's floor is ~2.5-3 even on a disk-mostly job: caps of 2.5 overran 1.3x twice; (2) one-Opus-reader-per-line image
+jobs cost ~1.3/call plus the floor, not ~0.8 -- price HAR-style jobs at units x 1.3 + 3; (3) hot-row backlog for account 2 is exhausted after
+six lanes today: the next DEFAULT row should expect little runnable work unless ASKS/sorter answers land.
+
 ## LANE DEFAULT-account-2-20261015-1410 handoff (session_01G3YvfSwGyU4kTVGDbmqiF5, account 2, for the orchestrator (owner account)), 15 October 2026 (14:10-15:4x UTC by date -u; closed: backlog spent; workers 30.39 + orchestrator ~7.6 = ~38.0 of 60 by get_session; five_hour allowed throughout)
 
 Brief .claude/briefs/default-lane.md; jobs .claude/briefs/runs/2026-10-15-ytbiz-default-1410-jobs.md (waves 1-3). Gate 0a: SESSION-SWEEP-account-2
