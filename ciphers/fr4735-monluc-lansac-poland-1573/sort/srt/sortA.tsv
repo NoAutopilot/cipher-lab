@@ -1,0 +1,41 @@
+page	passage	pos	label	conf	note
+c268c	L01	18	K12	M	stem curves down-left into a tail
+c268c	L01	23	K12	L	tailed 9, curved stem
+c268c	L01	34	K04	M	fairly straight stem
+c268c	L03	6	K14	H	b-shape with a loop
+c268c	L03	10	K12	L	9 after m, slightly curved stem
+c268c	L03	19	K12	L	short curved tail
+c268c	L03	22	K14	H	b-shape
+c268c	L04	27	K12	L	curved tail
+c268c	L05	33	K04	L	stem fairly straight
+c268c	L06	5	K37	H	K-shape
+c268c	L06	20	K14	H	b-shape
+c268c	L07	8	K04	L	round bowl, short stem
+c268c	L07	9	K14	H	b-shape
+c268c	L07	21	K40	H	barred omega-like sign, flat top bar
+c268c	L08	13	K39	M	y-shape with a descender
+c268c	L08	14	K04	M	straight stem
+c268c	L09	13	K12	M	curved stem
+c268c	L09	14	K04	H	straight blunt stem
+c268c	L10	4	K04	M	straight stem
+c268c	L10	11	K14	H	b-shape
+c268d	L03	16	K12	M	curved tail
+c268d	L04	7	K14	H	b-shape
+c268d	L05	18	K04	M	straight stem
+c268d	L05	25	K39	M	y-shape with a descender
+c268e	L02	7	K14	H	b-shape
+c268e	L02	9	K04	M	straight stem
+c268e	L02	13	K41	M	small rounded w-shape
+c268e	L02	18	K37	H	K-shape
+c268e	L03	6	K40	H	flat barred top
+c268e	L03	14	K12	L	curved tail
+c268e	L04	16	K04	M	straight stem
+c268e	L05	3	K39	H	y-shape
+c268e	L05	10	K14	H	b-shape
+c268e	L05	12	K04	L	stem unclear
+c268e	L05	16	K45	M	v/gamma-shape
+c268e	L05	26	K40	M	barred top
+c268e	L05	29	K40	M	barred top
+c268e	L06	16	K40	H	barred top
+c268e	L06	17	K04	H	straight stem
+c268e	L06	26	K04	M	straight stem
