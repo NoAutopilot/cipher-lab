@@ -9655,3 +9655,11 @@ Results:
   backed negative at convention B; homophonic on Russian spent at both corpora. No larger sheet-2 image reachable from the cloud (owner-machine fetch).
 Lessons: (1) small disk/eye jobs at cap 2 ran 1.2-1.4x -- price them at ~3; (2) a worker's named next step that is one more archive leaf (549 -> 532
 -> catalogue) is cheap and fast as a chain of 2-3 sized jobs rather than one wide screen.
+
+- **15 Oct 2026 11:1x UTC (VIV-KEYSTONE, appended):** VIV-GSPLIT3D/3E: 63 of 116 f.191r g-signs hand-cut and classified by the five-leaf
+  model; 6 predicted f; the registered strict run falls 37 -> 24 (a predicted f inside "tres grande"), letter-S 37 -> 37; no verifier.
+  Reading of the g-split family: the f-shape under label g is real on the known-answer leaves (recall 0.833 / precision 0.750, PASS), but at
+  that precision a blind override harms a page; its product is six "is this the f-shape?" questions for the owner, not a key row. The lane
+  now waits on the owner's alphabet sort (https://claude.ai/artifact/1X2MSRNQTeNZNEXB76RZ1u); nothing of the parent's in flight; no new
+  measurement job without that sort or new material. Next after the sort: the registered err_true test, then PREREG-VIVPACKET4 with the six
+  g-split positions among its questions.

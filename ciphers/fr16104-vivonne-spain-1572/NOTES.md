@@ -4349,3 +4349,15 @@ Vision looks 0. Cost not visible to this session.
 Report what was found and where it was not found; no novelty classified, no depth set.
 Next (one line, not done here): the 41 uncut f.191r g tokens (L17, L19-L28, L33-L36; 2 cut + 2 check looks, ~USD 2) would complete the classified set; a person's look at
 L18:15 and L10:38 on the crop would say more than the classifier can at ~0.5 expected precision.
+
+
+## Parent reading of the g-split family (15 Oct 2026, 11:1x UTC by date -u; account-4 parent)
+
+Five jobs (VIV-GSPLIT, 2, 3, 3B, 3C) established, with hand-cut tiles, that the f-shape hidden under reader label g is recognisable from
+other leaves' hand-cut f tiles (PREREG-VIVGSPLIT3 PASS at N_f 18 / N_r 121: recall 0.833, precision 0.750, F1 0.789 vs null 0.400). Two more
+(3D, 3E) applied it to f.191r: 6 of 63 hand-cut g-signs predicted f, and under the registered rule the page's strict all-H run falls 37 -> 24
+because one predicted f (L10:38) sits inside "ung tres g[r]ande", a word the committed r reads and f does not. Decision: no verifier, no key
+row (rule 4: a cryptanalytic result with a control, but at precision 0.750 an override is a liberty, not a reading). What the family yields
+is a list of six f.191r positions (L01:20, L04:48, L07:8, L10:38, L18:15, L29:42) to put before the owner as "is this the f-shape?" questions
+in the next packet (PREREG-VIVPACKET4), beside his settled alphabet. The family rests until the owner's step-1 sort or new material; it is
+not [retired] (its last attempt passed), it is consumed. Requests: none. Cost: parent session only.
