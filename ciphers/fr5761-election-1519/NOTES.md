@@ -805,3 +805,20 @@ fr.5761 section 3(b), the last Coblenz reply (29 June) before the Nancy July run
 (archive.org n821-n822, 2 requests) and pair the f.116r-v signs with the printed names, using two blind passes on line crops of c142 and c143
 (about 4 units plus 1 reconciliation, ~3.5). (2) Find nr. 383 by bisection from f.172r backwards (canvas = 2 x folio + offset; read the
 fr.5761 offset from ELEC-WALK's census rows), about 3-4 canvases at 600 px, ~2. A pair needs >= 2 occurrences per sign before any C grade.
+
+## ELEC-PAIR: nr. 357 name signs vs Kluckhohn's print (worker ELEC-PAIR, LANE DEFAULT-A1-0740-15, account 1, 15 Oct 2026, from 09:1x UTC by date -u)
+
+**Pre-registered pairing rule (written and pushed before any sign-to-name pairing was made; Kluckhohn pp.813-814 page images fetched
+but not yet read against the manuscript).**
+1. Unit: one isolated non-letter sign in the French prose of fr.3897 ff.116r-117r (canvases f142 right page, f143), the "que"
+   abbreviation excluded (ELEC-357's inventory). Signs are named by shape label only (W, dd, Z, barI, hash3, 4, II, loop); no key value
+   is shown on any crop or attached to a label before pairing (value-free).
+2. A sign occurrence pairs with a printed name only where the clear French context on BOTH sides of the sign (at least one full clear
+   word left and one full clear word right, read on the manuscript) matches the words on both sides of a name in Kluckhohn's printed text
+   of nr. 357 (spelling-normalised: case, u/v, i/j, accents, abbreviations expanded). One-sided matches are recorded as "one-sided", not pairs.
+3. A sign gets grade C (rule 4) only if >= 2 of its occurrences pair, all with the same printed name, and none pairs with a different
+   name. One paired occurrence = M. Conflicting pairings = logged as a conflict, no grade.
+4. Control (shuffled names): the printed names at the paired slots are permuted 1000 times over those slots; report the share of
+   permutations under which every C-graded sign would still read one name consistently across its occurrences (the chance that rule 3
+   passes with names assigned at random). A sign whose consistency the shuffle reproduces at >= 5% is held at M.
+5. Comparison with key.tsv (fr.5761 ff.50-53 key) is made only after rules 1-4 are applied and written down.
