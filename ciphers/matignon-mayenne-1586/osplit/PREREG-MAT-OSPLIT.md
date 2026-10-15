@@ -43,3 +43,11 @@ o token's chunk comes only from the H codes around it. Positions with an empty c
 ## Outputs
 `osplit/sort_tokens.tsv` (id -> block, line, pos; written before the sort), `osplit/sort_answers.tsv` (subagent output, verbatim),
 `osplit/mat_osplit.py` (`--check`), `osplit/mat_osplit_result.tsv`, NOTES.md "MAT-OSPLIT", HYPOTHESES.md row, Verdict update, gaps_check.
+
+## Addendum 1 (13:0x UTC 15 Oct 2026 by `date -u`, before the sort and before any score)
+MAT-KA's `signs` reader concatenates block E from two drafts (`ciphertext_draft_f91.tsv` E1-E4, the MAT-F91 first pass, 112 tokens, and
+`_f91e.tsv` E1-E5, the MAT-F91E redo, 153 tokens) against one E gloss. The registered tests above use MAT-KA's reader unchanged (gating).
+A secondary run, reported but NOT gating, repeats tests 1-2 with block E taken from `_f91e.tsv` only. `sort_tokens.tsv` therefore keys
+tokens by draft file as well as line and position (o tokens: 78 = 6 from the f91 E draft + 72 others). Sort jobs: job1 = blocks A, D, F
+(40 tokens), job2 = blocks B, C, E (38 tokens). Each sorter sees each line image with the line's reader LABEL sequence (no values) in
+which every o to sort is replaced by its opaque id, so it can find the sign; this is labels-only, no values, no gloss.
