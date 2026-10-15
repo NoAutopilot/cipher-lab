@@ -1,0 +1,13 @@
+prior_work matignon-mayenne-1586 item adhoc-97cf97 (shelfmark=BnF fr.15572; folio=154r; canvas=161) step transcribe @ origin/main 80c0c82a1 (2026-10-15T15:11)
+  step      LEAD          1-own         [adhoc-97cf97:1-own:a498c1] done-candidate (prose): NOTES.md:1475 - fr.15572 ff.110, 123r, 123v, 124r, 124v and fr.15571 f.177 (6 Cipher-1 leaves, 6,673 tokens, U 1,143 = 17.1% before MAT-KEY, 726 = 10.9% after it (15 Oct 2026: 
+  plaintext KNOWN         3-tomokiyo    [adhoc-97cf97:3-tomokiyo:63c5af] sources/cryptiana/web/henryiii.htm (text line 640) This is used among Charles of Lorraine, Duke of Mayenne (Wikipedia [https://en.wikipedia.org/wiki/Charles,_Duke_of_Mayenne]), Forget de Fresnes (Wiki
+  plaintext CONTEXT       3-tomokiyo    [adhoc-97cf97:3-tomokiyo:acd425] sources/cryptiana/web/henryiii.htm (text line 651) The beginning of the ciphertext of f.154 reads something like "en quelle peine [nous] estion ...."
+  plaintext UNCHECKED-NET 3-solver      [adhoc-97cf97:3-solver:c79056] unsolved-ciphers (github.com/aaymeloglu/unsolved-ciphers): no cache on disk, not searched; pass --clone <local clone> to search it
+  plaintext CONTEXT       3-solver      [adhoc-97cf97:3-solver:27ea4e] solver folder named for this target (sources/cyphersolver/2026-10-03/matignon1586; 4 reading file(s)): duplicate-effort-risk
+  plaintext CONTEXT       3-solver      [adhoc-97cf97:3-solver:b01822] solver folder named for this target (sources/cyphersolver/2026-10-02/matignon1586; 0 reading file(s)): duplicate-effort-risk
+  plaintext UNCHECKED-NET 4-editions    [adhoc-97cf97:4-editions:9b54db] core-only: no tools/data/prior_editions.tsv row matches this slug, year and correspondents; check-solved names the editions read or records that none exists
+  plaintext LOOK          2-leaf        [adhoc-97cf97:2-leaf:c323ef] no gloss/clear-copy check recorded for this leaf; look.tsv lists 8 crop(s) owed (1 on disk)
+  holds: specific 2 (KNOWN 1, LEAD 1); generic 3 (LOOK 1, UNCHECKED-NET 2)
+  verdict plaintext: KNOWN
+  verdict step: LEAD
+exit 2: KNOWN, no consumer (pass --known-answer item:<unread id> or gate:<name>)
