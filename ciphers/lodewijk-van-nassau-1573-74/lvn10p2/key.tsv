@@ -1,0 +1,55 @@
+tid	line	position	role	sign	A150	B150	candidates
+T01	p2_L26	1	target	85	-	85	85
+T02	p2_L28	1	target	102	102	-	102
+T03	p2_L26	24	target	85	85	-	85
+T04	p2_L09	5	target	31	31	71	71 | 31
+T05	p2_L11	5	target	37	37	87	87 | 37
+T06	p2_L02	14	target	64	64	84	64 | 84
+T07	p2_L26	20	target	70	70	-	70
+T08	p2_L31	3	control	81	81	81	87 | 81
+T09	p2_L19	14	target	137	137	138	137 | 138
+T10	p2_L11	4	target	138	138	137	138 | 137
+T11	p2_L26	3	target	120	-	120	120
+T12	p2_L03	1	target	130	-	130	130
+T13	p2_L02	2	target	112	-	112	112
+T14	p2_L16	6	target	38	38	78	78 | 38
+T15	p2_L13	14	target	143	143	145	145 | 143
+T16	p2_L28	11	control	81	81	81	61 | 81
+T17	p2_L26	22	target	25	25	-	25
+T18	p2_L11	8	target	61	61	81	81 | 61
+T19	p2_L02	4	target	81	-	81	81
+T20	p2_L03	6	control	81	81	81	87 | 81
+T21	p2_L31	17	target	38	38	39	38 | 39
+T22	p2_L20	12	target	51	51	71	71 | 51
+T23	p2_L29	7	target	145	145	148	148 | 145
+T24	p2_L02	20	target	80	80	50	80 | 50
+T25	p2_L29	11	target	81	81	83	83 | 81
+T26	p2_L25	7	target	105	-	105	105
+T27	p2_L26	21	target	10	10	-	10
+T28	p2_L24	14	target	136	136	-	136
+T29	p2_L03	2	target	139	-	139	139
+T30	p2_L26	13	control	85	85	85	65 | 85
+T31	p2_L02	10	control	35	35	35	33 | 35
+T32	p2_L16	13	target	127	-	127	127
+T33	p2_L25	3	target	25	25	5	5 | 25
+T34	p2_L13	1	control	83	83	83	88 | 83
+T35	p2_L25	8	target	66	66	21	66 | 21
+T36	p2_L25	10	target	26	26	4	26 | 4
+T37	p2_L03	11	control	121	121	121	131 | 121
+T38	p2_L07	5	target	148	148	118	118 | 148
+T39	p2_L17	3	target	75	75	78	75 | 78
+T40	p2_L26	23	target	77	77	-	77
+T41	p2_L25	14	control	37	37	37	31 | 37
+T42	p2_L12	11	target	101	101	105	101 | 105
+T43	p2_L16	14	target	7	-	7	7
+T44	p2_L02	1	target	192	-	192	192
+T45	p2_L13	4	control	150	150	150	750 | 150
+T46	p2_L25	9	target	140	140	84	140 | 84
+T47	p2_L13	11	control	101	101	101	161 | 101
+T48	p2_L26	25	target	24	24	-	24
+T49	p2_L25	6	target	65	-	65	65
+T50	p2_L14	18	target	103	103	108	103 | 108
+T51	p2_L24	1	target	101	101	105	105 | 101
+T52	p2_L26	2	target	148	-	148	148
+T53	p2_L25	2	target	2	-	2	2
+T54	p2_L02	3	target	182	-	182	182
