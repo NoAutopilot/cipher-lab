@@ -1989,7 +1989,7 @@ by its old id is found by "was <id>" in its why. N-class and depth not re-assign
 
 ## VER-LVN2: eye rulings on the 4611 p2 rows LVN-P2RETX/LVN-P2B left for a verifier, and the three 15 Oct revisions carried (15 Oct 2026)
 
-Verifier VER-LVN2 (account 4, for LANE DEFAULT-A4-0645-15), 15 Oct 2026, 09:11-09:3x UTC by `date -u`. Not a solver session of
+Verifier VER-LVN2 (account 4, for LANE DEFAULT-A4-0645-15), 15 Oct 2026, 09:11-09:2x UTC by `date -u`. Not a solver session of
 LVN-4611P2, LVN-P2RETX or LVN-P2B. Image: WVO 04611.pdf fetched once (resources.huygens.knaw.nl, HTTP 200, 3,758,971 bytes), p.2 at
 300 dpi, sha1 36399838ce5c (the same render LVN-4611P2 and LVN-P2RETX used); lines `tools/iiif_lines.py --image <p2 png> --region
 250,140,2200,3000 --prefix p2 --deskew --centres $(cat lvn4611/p2_centres.txt)` (K01-K35), half-line views at 1.6x plus 4x zooms; all

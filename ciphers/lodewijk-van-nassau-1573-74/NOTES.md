@@ -4943,7 +4943,7 @@ Next (one line each): verifier eye on the 11 H rows LVN-P2RETX listed + the kept
 unplaced p2_K rows and the positional `differs` pairs (retire the near-value duplicates by eye on the deskewed lines), ~$2; the 55 p2b rows
 that stay M (23 differs) to a per-token read only after that pass, ~$3.
 
-## VER-LVN2: verifier eye on the 4611 p2 rows left by LVN-P2RETX/LVN-P2B (15 Oct 2026, 09:11-09:3x UTC by date -u, account 4)
+## VER-LVN2: verifier eye on the 4611 p2 rows left by LVN-P2RETX/LVN-P2B (15 Oct 2026, 09:11-09:2x UTC by date -u, account 4)
 
 Verifier job (AUDIT.md "VER-LVN2" has the table). Of 15 rows: 10 changed (H -> M, values from the 300-dpi image), 3 kept (104, 150: this
 hand's curled-head 1, ink 204/250 rejected; 94: on K18, moved there with =Que), 2 retired (p2_K15/18 119, p2_K30/4 84: duplicates of an ink
