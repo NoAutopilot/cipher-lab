@@ -2671,3 +2671,6 @@ The sender is now named on the leaf, so the anonymous-pile path ends and the nor
 Suggested next (not run, Usage 7): the edition step above (~$1); a native-size crop of the 375 block and a reconciliation against
 `heid1621/ciphertext_6021_379.tsv` (two witnesses, ~$1.5); the 8 Aug 1621 letter (and its duplicate) earlier in inv. 6021 for a third
 witness or more groups in the same system (stride-1 around it, ~$1.5).
+
+## Split to ciphers/brederode-heidelberg-1621
+HEID-1621C (15 Oct 2026): the 1621 Heidelberg numeral text (inv. 6021 scans 375/379) now has its own folder, `ciphers/brederode-heidelberg-1621/` (status `blocked`, Resolutiën SG 1621 unread: Huygens 503); working files stay in `heid1621/` here.

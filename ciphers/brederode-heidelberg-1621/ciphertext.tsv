@@ -1,0 +1,158 @@
+# NL-HaNA 1.01.02 inv. 6021 scan 379, left page numeral block (HEID-1621, 15 Oct 2026). Two blind Sonnet readers (A, B) on line crops
+# h379_L01-L15 (tools/iiif_lines.py, native region 730,1640,1960,1420), reconciled by the worker against the crops. All tokens grade M.
+# kind: num | let | sym (non-letter sign) | word (a clear stretch, abridged). alt = the other reading where A, B or the eye split.
+line	pos	kind	text	alt	note
+L01	1	word	Desen dus wijt geschreven hebbende, bekomme		clear
+L02	1	word	ick advijs		clear
+L02	2	num	31
+L02	3	num	32
+L02	4	let	o
+L02	5	num	22
+L02	6	num	23
+L02	7	let	x	r	A x, B r; same glyph as the x after 22.23 in L05/L08/L11
+L02	8	num	76
+L02	9	num	77
+L02	10	let	r	c	A r?, B r; small hooked sign
+L02	11	num	40
+L02	12	num	41
+L02	13	let	d
+L03	1	num	13
+L03	2	num	14
+L03	3	let	w		A w?, B w
+L03	4	num	58	88	A 58, B 88; first sign heavier than the 5 of 50; unsettled
+L03	5	num	59
+L03	6	let	p
+L03	7	num	49
+L03	8	num	50
+L03	9	let	k
+L03	10	num	46
+L03	11	num	47
+L03	12	let	j	f	A j, B j; shape close to the long-s/f after 46.47 in L07/L13
+L03	13	word	in date des 29 July ouden stijl dat		clear
+L04	1	sym	]		bracket-like sign with dots (word sign)
+L04	2	word	van		clear
+L04	3	sym	+		cross-like sign (word sign)
+L04	4	word	aldaer		clear
+L04	5	num	67
+L04	6	num	68
+L04	7	let	i	1	A 1, B 1; an undotted minim, read as letter i by eye (same in L12, L13)
+L05	1	num	22
+L05	2	num	23
+L05	3	let	x
+L05	4	num	59
+L05	5	num	60
+L05	6	let	p
+L05	7	num	16
+L05	8	num	17
+L05	9	let	S	B	A S, B S
+L05	10	num	41
+L05	11	num	42
+L05	12	let	d
+L05	13	num	11
+L05	14	num	12
+L05	15	let	b	B	A b, B B
+L05	16	num	22
+L05	17	num	23
+L06	1	let	x	r	A r, B r; glyph as the x of L05 pos 3 (eye)
+L06	2	num	58
+L06	3	num	59
+L06	4	let	p
+L06	5	num	64
+L06	6	num	65
+L06	7	let	c
+L06	8	word	hebben		clear
+L06	9	num	38
+L06	10	num	10
+L06	11	num	11
+L06	12	let	b
+L06	13	num	40
+L06	14	num	41
+L06	15	let	d
+L06	16	num	34
+L07	1	num	35
+L07	2	let	a
+L07	3	num	11
+L07	4	num	12
+L07	5	let	b
+L07	6	num	46
+L07	7	num	47
+L07	8	let	f
+L07	9	num	16
+L07	10	num	17
+L07	11	let	B	S	A B, B B; cf. L05 pos 9
+L07	12	num	76
+L07	13	num	77
+L07	14	sym	⊏		open-box sign (word sign) before volgende
+L07	15	word	volgende		clear
+L08	1	num	38
+L08	2	num	64
+L08	3	num	65
+L08	4	let	c
+L08	5	num	22
+L08	6	num	23
+L08	7	let	x
+L08	8	num	47
+L08	9	num	48
+L08	10	let	f
+L08	11	num	23
+L08	12	num	24
+L08	13	let	x
+L08	14	num	67
+L08	15	num	68
+L08	16	num	59
+L08	17	num	60
+L09	1	let	p
+L09	2	word	te continueren bij soo verre als oock		clear
+L09	3	num	84
+L09	4	num	38
+L10	1	num	79
+L10	2	num	80
+L10	3	let	g
+L10	4	num	76
+L10	5	num	77
+L10	6	let	c
+L10	7	num	19
+L10	8	num	20
+L10	9	let	m
+L10	10	num	23
+L10	11	num	24
+L10	12	let	x	r	A r, B r; glyph as the x of L08 pos 13 (eye)
+L10	13	word	hadde devoir metten		clear
+L11	1	num	29
+L11	2	num	20		A 20, B 20; eye 20 (the 2 is z-shaped as in 22); not 30
+L11	3	let	f
+L11	4	num	22
+L11	5	num	23
+L11	6	let	x
+L11	7	num	40
+L11	8	num	41
+L11	9	let	d
+L11	10	num	64
+L12	1	num	65
+L12	2	let	c
+L12	3	num	31
+L12	4	num	32
+L12	5	let	g	9	A 9, B 9; same shape as the g after 79.80 (L10)
+L12	6	num	67
+L12	7	num	68
+L12	8	let	i	1	A 1, B 1
+L12	9	num	41
+L12	10	num	42
+L12	11	let	d
+L12	12	num	52
+L12	13	num	53
+L12	14	let	v
+L12	15	word	tot op den uytganck van		clear
+L13	1	num	20
+L13	2	num	21
+L13	3	let	m
+L13	4	num	67
+L13	5	num	68
+L13	6	let	i	1	A 1, B 1
+L13	7	num	46
+L13	8	num	47
+L13	9	let	f
+L14	1	num	76
+L14	2	num	77
+L14	3	let	c
+L14	4	word	te presteren te vroeden sijn, waer van de schriftelijcke resolutie in corten volgen sal		clear

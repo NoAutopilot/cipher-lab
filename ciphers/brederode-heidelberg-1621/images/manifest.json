@@ -1,0 +1,116 @@
+{
+ "note": "No image committed (HEID-1621C, 15 Oct 2026). Pointers to NL-HaNA 1.01.02 inv. 6021 scans as fetched by HEID-1621 and HEID-1621B; the regen scripts live in ciphers/oldenbarnevelt-brederode-1605/heid1621/ and re-derive every file below by sha1.",
+ "source": "Nationaal Archief, 1.01.02 Staten-Generaal inv. 6021 (liasse Agent Brederode, 1621-1622), METS c82b1eb5-6946-4ca9-8082-f13c2ab5f078, IIIF via service.archief.nl",
+ "witnesses": {
+  "375": "signed letter, P van Brederode, Heydelberg 13 Aug 1621, numeral block on the left page (not yet transcribed)",
+  "379": "duplicate (380: 'Duplicaet vanden 13 Augusti 1621'), numeral block left page; transcribed in ciphertext.tsv"
+ },
+ "heid_6021": {
+  "mets": "c82b1eb5-6946-4ca9-8082-f13c2ab5f078",
+  "inv": "NL-HaNA 1.01.02 inv. 6021",
+  "job": "HEID-1621, 15 Oct 2026",
+  "regen": "../oldenbarnevelt-brederode-1605/heid1621/regen_heid1621.sh",
+  "note": "not committed (folder at 29 MB); native size of scan 379 is 5180x4100",
+  "scans": [
+   {
+    "scan": 378,
+    "width": 1200,
+    "sha1": "e1176f53ac750cca30c40a855589434d3d7d537b",
+    "bytes": 150803
+   },
+   {
+    "scan": 379,
+    "width": 1200,
+    "sha1": "4a935bd6de16814cc5001cdc243413c20deac72e",
+    "bytes": 124985
+   },
+   {
+    "scan": 380,
+    "width": 1200,
+    "sha1": "a43101b0886b670e0ebedae97909aa6a63934ab7",
+    "bytes": 68974
+   },
+   {
+    "scan": 379,
+    "region": "730,1640,1960,1420",
+    "sha1": "ac1477f81fa528d81e1d440e15630f7532347776",
+    "bytes": 224881
+   },
+   {
+    "scan": 379,
+    "region": "2930,1180,1850,950",
+    "sha1": "25cda003e940e210e42f3ab292bf05ca6326f985",
+    "bytes": 130330
+   }
+  ]
+ },
+ "heid_6021b_subset": {
+  "mets": "c82b1eb5-6946-4ca9-8082-f13c2ab5f078",
+  "inv": "NL-HaNA 1.01.02 inv. 6021",
+  "job": "HEID-1621B, 15 Oct 2026",
+  "regen": "../oldenbarnevelt-brederode-1605/heid1621/regen_heid1621b.sh",
+  "note": "not committed; 5 contact sheets SHEET_SCANS=9 seed 16211, sheet key images/heid1621b_sheetkey.json",
+  "scans": [
+   {
+    "scan": 374,
+    "width": 700,
+    "sha1": "17a6a34588a94f8f05a9742ace755b57b3494d77",
+    "bytes": 45516
+   },
+   {
+    "scan": 375,
+    "width": 700,
+    "sha1": "615f04ab6493ae8f6ecf548183ce2a2fc37a3220",
+    "bytes": 51482
+   },
+   {
+    "scan": 376,
+    "width": 700,
+    "sha1": "ab8ab78c16308d7b7721d4f0e54b91ba9567f8ef",
+    "bytes": 51508
+   },
+   {
+    "scan": 377,
+    "width": 700,
+    "sha1": "33809b4bc22420ee2c6c118a01ae14db56b2ec4d",
+    "bytes": 68660
+   },
+   {
+    "scan": 378,
+    "width": 700,
+    "sha1": "533e74e72b3b2b5d01218d98033c120a54068096",
+    "bytes": 67419
+   },
+   {
+    "scan": 379,
+    "width": 700,
+    "sha1": "5211b326e609bb80dfa48c684159aeb8909746c3",
+    "bytes": 56248
+   },
+   {
+    "scan": 380,
+    "width": 700,
+    "sha1": "ef83dce99a84df1988e4ec189fe6b656ea60dd3d",
+    "bytes": 29902
+   },
+   {
+    "scan": 374,
+    "width": 1200,
+    "sha1": "6b3e942d7d01a9cf9a636ff14874263e90bbc544",
+    "bytes": 103534
+   },
+   {
+    "scan": 375,
+    "width": 1200,
+    "sha1": "b3c53d2c89b0a6aed722a5e6c76414ebe641f93d",
+    "bytes": 113904
+   },
+   {
+    "scan": 376,
+    "width": 1200,
+    "sha1": "49f46d051f3c03c83e05c623bae60d6ed39c0520",
+    "bytes": 116076
+   }
+  ]
+ }
+}
