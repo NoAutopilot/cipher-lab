@@ -1,0 +1,93 @@
+{
+ "n_pairs": 6,
+ "thr": 0.6,
+ "per_pair": [
+  {
+   "id": "A",
+   "gloss": "Maphurts",
+   "gloss_folded": "maphurts",
+   "decode_best": "lasaeer",
+   "sim": 0.125,
+   "decodes_to_gloss": false
+  },
+  {
+   "id": "B",
+   "gloss": "Cirus",
+   "gloss_folded": "cirus",
+   "decode_best": "erap",
+   "sim": 0.2,
+   "decodes_to_gloss": false
+  },
+  {
+   "id": "C",
+   "gloss": "retirer",
+   "gloss_folded": "retirer",
+   "decode_best": "reatib*",
+   "sim": 0.5,
+   "decodes_to_gloss": false
+  },
+  {
+   "id": "D",
+   "gloss": "De Viegrimine",
+   "gloss_folded": "deuiegrimine",
+   "decode_best": "eeumaisere",
+   "sim": 0.333,
+   "decodes_to_gloss": false
+  },
+  {
+   "id": "E",
+   "gloss": "Caystider ferdinand",
+   "gloss_folded": "caistiderferdinand",
+   "decode_best": "lae*hidd*maisee",
+   "sim": 0.278,
+   "decodes_to_gloss": false
+  },
+  {
+   "id": "F",
+   "gloss": "a l'ambassy",
+   "gloss_folded": "alambassi",
+   "decode_best": "luneloie",
+   "sim": 0.111,
+   "decodes_to_gloss": false
+  }
+ ],
+ "M_real": 0,
+ "control_mean": 0.0,
+ "control_p95": 0,
+ "control_max": 0,
+ "p_emp": 1.0,
+ "verdict": "FAIL",
+ "power": [
+  {
+   "seed": 0,
+   "M": 4,
+   "p95": 0,
+   "pass": true
+  },
+  {
+   "seed": 1,
+   "M": 5,
+   "p95": 0,
+   "pass": true
+  },
+  {
+   "seed": 2,
+   "M": 4,
+   "p95": 0,
+   "pass": true
+  },
+  {
+   "seed": 3,
+   "M": 6,
+   "p95": 0,
+   "pass": true
+  },
+  {
+   "seed": 4,
+   "M": 4,
+   "p95": 0,
+   "pass": true
+  }
+ ],
+ "power_pass": 5
+}

@@ -1,0 +1,25 @@
+value	meaning	n	agree	others
+?o	e	1	1	
+?rlike	r	2	1	s:1
+S01	a	1	1	
+S02	a	2	1	p:1
+S04	r	1	1	
+S10	d	2	1	e:1
+S12	e	1	1	
+S13	e	3	1	i:1,u:1
+S14	e	1	1	
+S15	y	8	2	b:1,d:1,e:1,h:1,i:1,r:1
+S20	t	1	1	
+S21	i	3	2	s:1
+S25	a	3	1	c:1,l:1
+S27	m	1	1	
+S31	m	1	1	
+S35	s	1	1	
+S36	s	1	1	
+S39	r	1	1	
+S40	r	1	1	
+S41	r	2	2	
+S46	t	1	1	
+S50	a	2	1	v:1
+S54	u	1	1	
+S62	i	2	1	f:1

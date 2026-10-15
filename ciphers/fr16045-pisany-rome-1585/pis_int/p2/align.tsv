@@ -1,0 +1,47 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+A	0	@S27	code	S27		m	single
+A	1	@S01	code	S01		a	single
+A	2	@S44	code	S44			null-or-unaligned
+A	3	@S02	code	S02		p	conflict:a
+A	4	@S15	code	S15		h	conflict:y
+A	5	@S13	code	S13		u	conflict:e
+A	6	@S41	code	S41		r	agrees
+B	0	@S15	code	S15		i	conflict:y
+B	1	@S41	code	S41		r	agrees
+B	2	@S01	code	S01			null-or-unaligned
+B	3	@S54	code	S54		u	single
+B	4	@S36	code	S36		s	single
+C	0	@S39	code	S39		r	single
+C	1	@S12	code	S12		e	single
+C	2	@S01	code	S01			null-or-unaligned
+C	3	@S46	code	S46		t	single
+C	4	@S21	code	S21		i	agrees
+C	5	@S04	code	S04		r	single
+C	6	@?o	code	?o		e	single
+D	0	@S15	code	S15		d	conflict:y
+D	1	@S13	code	S13		e	single
+D	2	@S50	code	S50		v	conflict:a
+D	3	@S62	code	S62		i	single
+D	4	@S15	code	S15		e	conflict:y
+D	5	@S40	code	S40		r	single
+D	6	@S13	code	S13		i	conflict:e
+E	0	@S25	code	S25		c	conflict:a
+E	1	@S02	code	S02		a	single
+E	2	@S15	code	S15		y	agrees
+E	3	@?rlike	code	?rlike		s	conflict:r
+E	4	@S20	code	S20		t	single
+E	5	@S21	code	S21		i	agrees
+E	6	@S10	code	S10		d	single
+E	7	@S10	code	S10		e	conflict:d
+E	8	@?rlike	code	?rlike		r	single
+E	9	@S62	code	S62		f	conflict:i
+E	10	@S14	code	S14		e	single
+E	11	@S15	code	S15		r	conflict:y
+F	0	@S25	code	S25		l	conflict:a
+F	1	@S50	code	S50		a	single
+F	2	@S31	code	S31		m	single
+F	3	@S15	code	S15		b	conflict:y
+F	4	@S25	code	S25		a	single
+F	5	@S35	code	S35		s	single
+F	6	@S21	code	S21		s	conflict:i
+F	7	@S15	code	S15		y	agrees

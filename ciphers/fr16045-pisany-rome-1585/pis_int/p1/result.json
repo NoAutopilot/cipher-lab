@@ -1,0 +1,93 @@
+{
+ "n_pairs": 6,
+ "thr": 0.6,
+ "per_pair": [
+  {
+   "id": "A",
+   "gloss": "Nasphuts",
+   "gloss_folded": "nasphuts",
+   "decode_best": "nasaedd",
+   "sim": 0.375,
+   "decodes_to_gloss": false
+  },
+  {
+   "id": "B",
+   "gloss": "Cirugs",
+   "gloss_folded": "cirugs",
+   "decode_best": "ndaps",
+   "sim": 0.167,
+   "decodes_to_gloss": false
+  },
+  {
+   "id": "C",
+   "gloss": "retirer",
+   "gloss_folded": "retirer",
+   "decode_best": "*reatibu",
+   "sim": 0.375,
+   "decodes_to_gloss": false
+  },
+  {
+   "id": "D",
+   "gloss": "Dn Vicegerint",
+   "gloss_folded": "dnuicegerint",
+   "decode_best": "eeueeteei",
+   "sim": 0.333,
+   "decodes_to_gloss": false
+  },
+  {
+   "id": "E",
+   "gloss": "Caystidur ferdinandi",
+   "gloss_folded": "caistidurferdinandi",
+   "decode_best": "laethiddfer",
+   "sim": 0.316,
+   "decodes_to_gloss": false
+  },
+  {
+   "id": "F",
+   "gloss": "a l'aumbroy",
+   "gloss_folded": "alaumbroi",
+   "decode_best": "lquelntliai",
+   "sim": 0.182,
+   "decodes_to_gloss": false
+  }
+ ],
+ "M_real": 0,
+ "control_mean": 0.0,
+ "control_p95": 0,
+ "control_max": 0,
+ "p_emp": 1.0,
+ "verdict": "FAIL",
+ "power": [
+  {
+   "seed": 0,
+   "M": 4,
+   "p95": 0,
+   "pass": true
+  },
+  {
+   "seed": 1,
+   "M": 5,
+   "p95": 0,
+   "pass": true
+  },
+  {
+   "seed": 2,
+   "M": 5,
+   "p95": 0,
+   "pass": true
+  },
+  {
+   "seed": 3,
+   "M": 5,
+   "p95": 0,
+   "pass": true
+  },
+  {
+   "seed": 4,
+   "M": 5,
+   "p95": 0,
+   "pass": true
+  }
+ ],
+ "power_pass": 5
+}

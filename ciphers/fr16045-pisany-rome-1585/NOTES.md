@@ -1485,3 +1485,41 @@ PREREG-PIS-121B.md (addendum to PREREG-PIS-121.md) pushed (a893bfd77) before any
 - Rule 3: this is the second machine read of the same blocks for the same score; no third machine pass. Next (different instrument): the interlinear
   name glosses above cipher groups (c252 L17-L20 region) as hand-built pairs for tools/interlinear_align.py, ~$1; or a person's read of the margin blocks.
 - Requests: openapi.bnf.fr 1. Vision units: 3 Sonnet calls (P1, P2, RG) + 1 own look (glA overlay).
+
+## PIS-INT (15 Oct 2026)
+Brief: .claude/briefs/runs/2026-10-15-acct4-default-1634-jobs.md "PIS-INT" (LANE DEFAULT-A4-1634-15, account 4), 16:43-16:5x UTC 15 Oct by date -u.
+Step: PIS-121B's "Next (different instrument)": the small interlinear glosses written above cipher groups in the body of f.121 (canvas 252), as
+(group, gloss) pairs checked against the 1585 table (key.tsv).
+Prior work: `tools/prior_work.py fr16045-pisany-rome-1585 --item-spec 'shelfmark=BnF fr.16045;folio=121' --step-type decode --known-answer gate:PIS-INT
+--offline` exit 4 on 1 LEAD (this job's own claim line, recorded CLEAR); PIS-121 inventory-marker CLEAR stands; aaymeloglu and editions UNCHECKED-NET (offline).
+PREREG-PIS-INT.md pushed (961e05722) before any pass was read or any decode run.
+- Source: openapi.bnf.fr IIIF v3 btv1b9060906j f252 full/max, 1 request, 200, sha1 407648e7e17b46283e3cb9200ad6b0056b5adaad (= PIS-121), scratch only.
+- Crops (pasted before the first subagent call): `python3 tools/iiif_lines.py --image c252_max.jpg --region 1150,3300,2772,1250 --out <scratch>/crops
+  --prefix int --debug --max-width 1600 --overlap 100 --distance 70` (9 lines; overlay checked by eye: line bands split each gloss from the group under
+  it, so they were used only to locate the glosses); the six gloss+group crops A-F actually read are PIL boxes on the same image, pis_int/crops.tsv.
+  Six body glosses found (two own looks: overview, upper-region strip): over the line opening "ẞd..." (A1), over plain "Quesas" (A2, no cipher under
+  it), after "touchoit" at the gutter (B), over the group after "obligée de le" (C, "retire.."), after "Et que du fait" (D), after "escript a" (E, the
+  "...ferdinand" gloss PIS-121 saw), after "quant d" (F). Crops not committed.
+- Passes (2 Sonnet units, pis_int/PASS_BRIEF.md, key- and value-blind, one crop per Read call): pis_int/p1/pass.tsv (8 rows), p2/pass.tsv (7 rows).
+  Both readers marked every gloss and every group extent unsure; glosses as read: A1 "Nasphuts"/"Maphurts", B "Cirugs"/"Cirus", C "retirer"/"retirer",
+  D "Dn Vicegerint"/"De Viegrimine", E "Caystidur ferdinandi"/"Caystider ferdinand", F "a l'aumbroy"/"a l'ambassy". Group sign-level agreement is low
+  (e.g. B: S33 S10 S01 S36 S42 vs S15 S41 S01 S54 S36).
+- Reconcile unit **not run**: by the brief's own unit prices (start-up 1 + fetch 0.3 + passes 1.0) a 0.5 reconcile would cross 80% of the USD 3 cap.
+  Instead each pass is scored on its own (disk only), which the PREREG did not name: stated here as a deviation.
+- Score (`python3 pis_int/score.py --pairs pis_int/pN/pairs.tsv --out pis_int/pN/result.json`; 6 pairs per pass, A2 excluded, E1+E2 joined in p1):
+  | pass | M (sim >= 0.60) | shuffled-pair mean / p95 (2,000) | power (25% corrupt, 5 seeds) | per-pair sim A/B/C/D/E/F |
+  |---|---|---|---|---|
+  | P1 | 0 | 0.0 / 0 | 5/5 PASS (M 4-5) | 0.38 / 0.17 / 0.38 / 0.33 / 0.32 / 0.18 |
+  | P2 | 0 | 0.0 / 0 | 5/5 PASS (M 4-6) | 0.13 / 0.20 / 0.50 / 0.33 / 0.28 / 0.11 |
+  Best table decodes (score.py picks the alternative nearest the gloss): C "*reatibu"/"reatib*" vs "retirer"; E "laethiddfer"/"lae*hidd*maisee" vs
+  "caistidurferdinand"; the rest share no visible run with their gloss (B "ndaps" vs "cirugs", F "lquelntliai" vs "alaumbroi").
+  `tools/interlinear_align.py align ... --code-prefix @ --prior pis_int/prior.tsv --shuffle 200` (secondary, pis_int/pN/align*.tsv/.json): CONSISTENT
+  real 2 vs shuffled mean 1.78 / p95 3 (P1), 2 vs 2.35 / 4 (P2): not above control.
+- key86.tsv not run: the passes used the 1585 sheet's S-labels, which have no mapping to key86's T-labels; running it would need a separate pass.
+- **Registered verdict: FAIL** on both passes (M 0, not above shuffled p95 0; power PASS). Limits stated after the score: the power control corrupts
+  signs but assumes the group extent and the gloss are read right, and here both readers marked every extent unsure and disagree on most group signs;
+  the glosses are names/abbreviations ("Dn Vicegerint", "a l'ambass..") that may not spell the cipher letter for letter. So this is **a miss of unknown
+  cause on these six pairs, not a negative on the 1585 table**; with PIS-121 and PIS-121B it is the third machine-read check of f.121 to miss
+  (rule 3's third-attempt clause: machine reads of f.121's glosses are retired as an instrument; next is a person's read of the six pairs with group
+  extents marked, or a different leaf). No key.tsv or ciphertext edit; every token stays M; disagreeing pairs logged above, not resolved.
+- Requests: openapi.bnf.fr 1. Vision units: 2 Sonnet calls + 3 own looks (overview, debug overlay, upper strip) + 1 contact sheet.
