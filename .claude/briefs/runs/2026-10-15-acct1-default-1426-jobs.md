@@ -64,3 +64,7 @@ NOTES "Next steps": "(b) of D2-F3198 stands -- search the archivesetmanuscrits p
 fr.4696-4715) for l'Abbé letters of Feb-Apr ..." (read the line in full for the date window and what is sought). Plain search form, page 1 via
 curl, pagination via tools/browser_fetch.js if needed (run twice, CLAUDE.md host table). Record every volume searched, query, hit / no hit,
 with the finding-aid ids. Catalogue search only: no images, no status change; add a dated NOTES section "## F3198-PL" and a one-line Next.
+
+Wave 1 sessions (14:37 UTC): ELEC-R3 session_01ACfVYHLwfKCoeFre8z1PXb; COL26-LEN session_01A1vrd2rCD9NPMkA6e9ib9G; MONL-R0S
+session_01RJKdEakDQZh2dnz2SJUYx1; BAL-65C session_01VEJCwnzeNAGbK2qZxoiVX9; JAV-200 session_012rvR2A8T4ps2wQ7VxfyRcf; F3198-PL
+session_0144vRi7ysA48FZ6muHuAvt5 (Sonnet).
