@@ -126,3 +126,22 @@ a canvas that would cross 80% of cap. NOTES "## ELEC-3897", Next updated.
 BAL-65D's Next: "168 c330-332 (f.158 letter), last listed Chavigny source (~1.5)". BAL-65C/65D method and PREREG exactly, those canvases only.
 After it, the Verdict must name the outcome for L04 pos 0 in one line: rule met (S), or every listed source spent and the token parked as M
 with "no further listed source" (no further canvas sweep proposed without a new source). NOTES "## BAL-65E", gaps + Verdict, gaps_check.
+
+Wave 3 results (16:1x UTC): JAV-420C 1.59 D (420 -> C, leaf 188 C 85 M 22), ELEC-3897 2.74 N (items 36, 38, 62-65: names in letters),
+BAL-65E 2.90 D (plain 65 2/2 = ra, rule needs 3, L04 pos 0 parked M, no further listed source); ledgered and archived.
+
+## Wave 4 (16:1x UTC 15 Oct; last wave)
+
+### JAV-RG (Opus, cap 1.5, box 30 min, disk only): na-janssens-java-1811 make apply_regrades.py --check pass again
+JAV-420C found: "`apply_regrades.py --check` on the full regrades.tsv fails (row 120 retired; 102 and 1096 superseded by GAPS17), so the
+script's own rule-7 check no longer describes key.tsv. Next: a regrades.tsv `superseded_by` column or a skip for retired / later-decided rows,
+with the pass-correction for 200:119, disk only, ~$1." Do that: add the column (or skip rule) so the script reproduces the current key.tsv
+exactly, without changing any key value or grade; `apply_regrades.py --check` and `tools/decode_key.py ciphers/na-janssens-java-1811 --check`
+both exit 0. The 200:119 pass-correction goes to corrections.tsv per the folder's convention (keysource passes stay as transcribed, rule
+"never silently repaired"). NOTES "## JAV-RG", gaps + Verdict, gaps_check.
+
+### ELEC-39 (Opus, cap 2.5, box 50 min, openapi.bnf.fr <= 5): fr5761-election-1519 fr.3897 items 37 and 39
+ELEC-3897's Next: "fr.3897 item 39 (Joachim to Bonnivet, Kluckhohn nr. 356) between f.82 and f.103, ~2"; item 37 was not located (f.74-81v).
+ELEC-3897's PREREG and rules exactly; locate by canvas label first (tools/gallica_folio.py, manifest on disk if saved), then 1000-2000 px views.
+Report per item: name signs present or not, any occurrence of an nr. 357 / f.51r-block sign. Lead grade M; no key edit. NOTES "## ELEC-39",
+Next updated (if both items are clear, say the fr.3897 route for a second witness is spent).
