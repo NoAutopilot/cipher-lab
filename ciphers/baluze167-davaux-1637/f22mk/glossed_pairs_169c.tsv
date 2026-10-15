@@ -66,3 +66,13 @@ b168c347d	168:347	quarante	2	65'	ra
 # written left of the run (its underline ends before the 65), as other glosses on this leaf are; the run's five signs spell re vi en d ra.
 b168c348a	168:348	satisfera	5	65'	ra
 b168c348b	168:348	reviendra	5	65	ra
+# BAL-65D (15 Oct 2026, account 1, LANE DEFAULT-A1-1426-15): Baluze 168 (btv1b9001503k) c438 (f.212r) and c440 (f.213r), the f.212 Chavigny letter
+# either side of BAL-65L's c439, full/2400, my eye with 3x zooms of each 65 (not blind). Gate per canvas in NOTES.md "## BAL-65D" (both PASS). On these
+# leaves the gloss sits above its cipher. Every 65 under a gloss carries a separate rising acute above the 5 (65' ra); no plain 65 on either leaf, so
+# no full-run row and no scorer re-run (PREREG-BAL-65D step 3). c438: 'transilvanie' (23: 16 u4 65' h ...), 'varadin' (80' 65' 17' h), 'courage'
+# (13' y 65' 26'), 'Moravie' (48' 65' 82' w); c440: 'neutralite' (51' y u4 65' 42' 76').
+b168c438a	168:438	transilvanie	4	65'	ra
+b168c438b	168:438	varadin	2	65'	ra
+b168c438c	168:438	courage	3	65'	ra
+b168c438d	168:438	Moravie	2	65'	ra
+b168c440a	168:440	neutralite	4	65'	ra

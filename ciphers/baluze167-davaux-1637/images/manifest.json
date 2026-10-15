@@ -4620,5 +4620,25 @@
    "job": "BAL-65C",
    "note": "the 'reviendra' plain 65, 459x246"
   }
+ ],
+ "bal_65d_fetches": [
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f438/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T15:22Z",
+   "http": 200,
+   "sha1": "1aea101927597725685d669382325543f186e987",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65D",
+   "note": "Baluze 168 f.212r, 2400x3467"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f440/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T15:22Z",
+   "http": 200,
+   "sha1": "dc09522f391c1c70d0b60312d1ae69cb55f62519",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65D",
+   "note": "Baluze 168 f.213r, 2400x3556"
+  }
  ]
 }
