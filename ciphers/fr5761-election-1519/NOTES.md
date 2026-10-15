@@ -855,3 +855,42 @@ control (W = le roy tres-chrestien, dd = le roy catholique), five more at M; non
 Next: (1) an image-to-image check of the f.116 signs against the fr.5761 f.110 key crops (disk, if look.tsv crops exist; ~1); (2) find
 nr. 383 by bisection from fr.5761 f.172r backwards (ELEC-357's next 2, ~2), whose names Kluckhohn also prints, as a second witness for
 the M signs; (3) other fr.3897 Joachim items (36-38, 62, 64-65, 73) for more occurrences of barI, 4, II, Zheavy, flag.
+
+## ELEC-383: nr. 383 bisection back from fr.5761 f.172r (worker ELEC-383, LANE DEFAULT-A4-1035-15, account 4, 15 Oct 2026, 11:08-11:2x UTC by date -u)
+
+Brief: ELEC-357's next (2), bisection from f.172r backwards for Kluckhohn nr. 383 (Orval, Bonnivet and Guillart to Francis I, 29 June 1519,
+"Wahl Karls"; RTA J.R. I p.855, "Aus Paris Bibl. nat. F. fr. 5761. Cop., die Namen in Chiffren"). Result: **a likely end of nr. 383 is
+found on f.166v (canvas f336), with one non-letter sign where the elected king's name stands. The letter's start was not read, and it was
+not paired against the print. key.tsv unchanged; status unchanged (open).** Page images, not a transcription (rule 2). Search results only (rule 10).
+- Canvas map: the fr.5761 IIIF v3 manifest's canvas labels give the folio directly (canvas = 2 x folio + 3 for rectos, e.g. f.160r = c323,
+  f.166v = c336). These are the new foliation. The red ink numbers on the leaves are 5 lower (f.169 = "164"), which is ELEC-WALK's old_folio.
+- Bracket (8 canvases at 1000 px, rows in `namewalk_elecwalk.tsv`). f.164v has a heading "Du [x]vij may", so it is May and before nr. 383.
+  f.169r-v is a joint letter with personal paragraphs ("moy d'Orval", "moy admiral ... je partiray demain", "moy president Guillard"), dated
+  "De Nanssy le x[v]iij Juill[et]" (day not settled), and is followed by the heading "Du iiij[me] Juillet". So the Nancy July run has begun by
+  f.169r. It is also not in date order (18 July before 4 July, if the day is read right). ff.168r and 168v are mid-letter Coblenz-period text
+  ("Bazoges est arrive icy", Treves, the conte palatin, la Motheaugroing) with every name in letters.
+- **f.166v, lines 1-5**: "... a quelle heure que [SIGN] fut esleu et publie Roy des Rommains ...". Line 5 has "en ce lieu de Co[blence?]".
+  Then the letter's closing paragraphs: "nous vous supplions tres humblement ...", "le peu de foy que avons trouve a ceulx a qui nous avions
+  a faire ... les trahisons qui sont en ceste compaignie la", and advice to seek alliance with the Suisses, against Espaigne, the Pape and the roy
+  d'Angleterre. Those names are in letters. The sign is a cross with small circle(s), "oXo"-like. The f.110 key describes Catholicque(r) as "a
+  cross with a small circle attached at an angle". So the shape is close to the key's description, read by one reader at 1000 px (grade M, a
+  description match, not image-to-image). This is the election news, consistent with Kluckhohn's "Wahl Karls" for 29 June and with the
+  Description's last Coblenz reply. It is a candidate, not an identification: the dateline of this letter was not seen, since it ends at the
+  top of f.166v without one in view.
+- Kluckhohn says the names are in cipher, but this copy writes most names in letters (Suisses, Pape, roy d'Angleterre). Only the king of
+  Spain/the elected king seems ciphered on the lines read. Not settled until f.165v-166r and Kluckhohn p.855-856 are read.
+- `prior_work.py fr5761-election-1519 --item-spec 'BnF fr.5761 ff.165v-166v (Kluckhohn RTA J.R. I nr. 383)' --step-type read --offline`,
+  exit 4. It was run after the fetches, not before the first one as the common rules require. Its holds are generic (LOOK 2-leaf, UNCHECKED
+  3-tomokiyo/3-solver, UNCHECKED-NET 3-solver/4-editions). No specific hold. No PREREG, because no score was computed.
+- Not read: ff.165v, 166r, 167r, 167v (the letter's start, and any other sign on it); f.166v at 2400 px; Kluckhohn pp.855-856 page images
+  (archive.org was not in this job's host list).
+- Requests: openapi.bnf.fr 10 (manifest 1; c323, c332, c340, c346, c342, c341, c339, c336 at full/1000; one c342 pct region), all 200, no
+  403/429. Images in the session scratchpad only, none in git. Regen:
+  `https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b52510561g/f336/full/1000,/0/default.jpg` (sign at about x 160-230, y 95-130 of the
+  1000 px image).
+
+**Verdict (ELEC-383, 15 Oct 2026):** open, unchanged. Nr. 383 most likely ends on fr.5761 f.166v (c336), with one cross-and-circle sign
+for the elected king (M), close to the f.110 key's Catholicque description. Next: (1) read ff.165v-166r (c334-c335) at 1000 px for the letter's
+start and any other signs, and f.166v at 2400 px (3 requests, ~1); (2) fetch Kluckhohn p.855-856 (archive.org `bub_gb_0gFoAAAAMAAJ` n863-n864,
+2 requests) and pair the signs under the ELEC-PAIR rule, with its shuffled-name control (~1.5). A pair needs >= 2 occurrences per sign before
+any C grade. Also (3): compare this sign image-to-image with nr. 357's dd ("le roy catholique", C) on fr.3897 f.116.
