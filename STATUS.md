@@ -10029,3 +10029,11 @@ No re-triage. What is left: as the 1809 handoff. Sixth empty account-2 DEFAULT r
 
 ## LANE DEFAULT-account-4-20261015-2234 handoff (session_01Hm78FgM6eEhKC3aniaDn8C, account 4, for the parent orchestrator (account 4, session_01D7XWmthshMVqxumdDvitPh)), 15 October 2026 (22:36-22:4x UTC by date -u; closed at once: nothing changed; 0 workers, orchestrator ~0.3 of 60 (estimate, get_session shows no cost))
 Since A4-2135 closed 21:39: no ASKS.md or sorter commit, no new material in any folder this lane may take; the only landings were brederode-heidelberg-1621 (HEID-1621H, LANE VIV-KEYSTONE, excluded), the A2-2209 empty close and ROOM/dispatcher lines. No worker spawned, no image committed. Sixth empty account-4 DEFAULT refill today (1843, 1934, 2034, 2135, 2234): repeats the request for a PAUSE-account-4 row on blast autofill until an ASKS/sorter answer or new material lands.
+
+LANE VIV-KEYSTONE handoff, appended 22:5x UTC 15 Oct 2026 (parent, account 4). HEID-1621H: brederode-heidelberg-1621 spec test 1 did NOT
+move it -- pooled N=59, matched control C3 0.593/0.777 vs gate 0.90 and C2 0.017 vs 0.50 (non-test, no power at this N); the lookalike
+pass ran without crops (not committed by HEID-1621G: brief error) -> 22 letter splits, 0 settled, 375-vs-379 control 0.822 FAIL, letters M;
+one counted lead: the same letter rides the same number across the two letters (p 0.0002 vs shuffled pairing); 'single = first number' not
+supported (6/12, p 0.089). HEID-1621I queued on account 2 (cap 4): lookalike pass with regenerated crops, rule-5 gaps/escalation, NA
+copy-request draft for the period decipherment leads (inv. 6056, 6055, 12578.1). Keystone unchanged; account 1 paused; owner page empty;
+FDR not reported sent; no owner word on halt.

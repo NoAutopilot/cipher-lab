@@ -848,9 +848,9 @@
    "ref": "NL-HaNA 1.01.02 inv. 6021 scans 375 (signed) and 379 (duplicate)",
    "folder": "ciphers/brederode-heidelberg-1621",
    "stage": 2,
-   "state": "open",
+   "state": "partial-pending",
    "holder": "Nationaal Archief",
-   "next": "Settle the trailing letters: the 375-vs-379 known-answer control reads 37/45 units (0.822, gate 0.90) with the numbers 96/96 right and every miss a trailing-letter naming -- lookalike pass on the letter signs across the 375/379/423 reads (HEID-1621H queued, cap 5), then the pooled two-letter spec and its first cheap test with the matched synthetic control. The 17 Sept single-number form equals the 13 Aug pair's first number in 6/12 units (either number 9/12). Period decipherment leads not digitised: inv. 6056, 6055, 12578.1. Scan 58 (French, 2-digit groups + name codes) is a separate intake candidate.",
+   "next": "Spec test 1 did not move it (HEID-1621H: the matched control itself reads 0.59-0.78 vs gate 0.90 at N=59, a non-test; letters stay M at 0.822 agreement, 22 look-alike splits in focus.tsv for the owner's sorter; one counted lead: the same letter rides the same number across the two letters, p 0.0002 vs a shuffled pairing). HEID-1621I queued (cap 4): the look-alike pass with its crops regenerated, then the NA copy-request draft (REQUEST.md) for the period decipherment leads inv. 6056 (Mansfelt 1622 'met de oplossing'), 6055, 12578.1 (Haga key) and the Remaining gaps / Escalation sections (rule 5). Scan 58 (French, 2-digit groups + name codes) is a separate intake candidate.",
    "note": "Found 15 Oct 2026 by OBRED-6021 (account 2) in a stride-6 screen of inv. 6021; sender read on the signed letter (HEID-1621B); Resolutien SG nieuwe reeks 5 p.260 res. 1644b calendars it as 'Gedeeltelijk in code' with no decipherment (HEID-1621D); not in DECODE, Cryptiana or either solver repository (HEID-1621C). Design lead: two-digit consecutive-pair groups each followed by a letter, one unit per word."
   }
  ],

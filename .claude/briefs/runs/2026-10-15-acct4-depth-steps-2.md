@@ -124,3 +124,19 @@ inside this job, control first: unit inventory of the pooled units vs a frozen n
 pooled N), matched control = a synthetic word code with the same unit count, the same letter/number split and the same two-letter division,
 scored by the same script; both numbers into `cheap_test_done` and HYPOTHESES.md. No decode, no key, no reading. NOTES.md "## HEID-1621H
 (<date -u>)" ending in the status word and the next row (or "spec moved / did not move" per CLAUDE.md 3a).
+
+## JOB HEID-1621I (account 2; Opus 5.5; cap USD 4; box 60 minutes; service.archief.nl <= 6 (take/release lines, >= 3.1 s apart; only the scans the regen script names); no reader subagents; Price: vision calls: 0 x USD 0 = 0 (lookalike_pass.py on crops; this worker's own eye on its windows only))
+ciphers/brederode-heidelberg-1621 after HEID-1621H (spec did not move; the lookalike pass ran WITHOUT crops because HEID-1621G's crops were
+never committed -- the brief's error, not the worker's). (1) Regenerate the crops: fetch scans 375, 379 and 423 at 1200 px only if absent
+(manifest.json sha1 must match), `tools/iiif_lines.py --image <scan> --out <dir>` pasted, and write `heid1621i/regen_crops.sh` so nobody
+refetches; then `tools/lookalike_pass.py` on the 22 split positions of heid1621h/focus.tsv WITH the crops, pairs as listed there (B/S, r/x,
+S/g, c/r, c/x, f/s ...); report settled vs still split, re-run the 375-vs-379 control on the post-pass units (PREREG-HEID1621I.md first with
+the gate 0.90 and the rule for S-as-transcribed); what stays split goes to the owner's sign sorter via focus.tsv (never blocking). (2) Rule 5:
+write NOTES.md "## Remaining gaps" and "## Escalation" (tools/gaps_check.py format; `python3 tools/gaps_check.py brederode-heidelberg-1621`
+must pass, paste it) ending in a Verdict; the outside blocker is the period decipherment / key material not digitised: NA 1.01.02 inv. 6056
+(Mansfelt 13 Mar 1622 "in cijfer, met de oplossing", Resolutien NR 5 p.447), inv. 6055 (SG minute with code, 1621) and inv. 12578.1 (Haga key
+1618-22). (3) REQUEST.md for the target: the exact Nationaal Archief reproduction request (their own order route and contact page, read on
+the day and dated; shelfmark, inventory numbers, the folios or the item descriptions as the finding aid gives them, scan quality, and the
+question "does 6056's 'oplossing' key cover the 1621 Heidelberg pair+letter system"), rule 9 (no personal data), and one ASKS.md row for the
+owner's desk naming the cost if the NA page states one. (4) status head: `partial` only if every unread piece is blocked from outside per rule
+5, else `open` with the next step named. No decode, no key, no reading. NOTES.md "## HEID-1621I (<date -u>)".
