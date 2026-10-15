@@ -1,0 +1,77 @@
+# VIV-GSPLIT3D (PREREG-VIVGSPLIT3 Addendum C): f.191r label-g tiles hand-cut by eye on the VIV-F191 crops (panels191.py); x/w by eye, y/h by panels191.band (x-height peak - 25, 82 tall); only whole is classified. Looks L1-L6 = this job's six looks
+gid	line	pos	image	x	y	w	h	verdict	looks	note
+L01:15	L01	15	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L01_s1.jpg	791	90	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L01:20	L01	20	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L01_s1.jpg	1016	90	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L01:29	L01	29	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L01_s2.jpg	330	89	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L01:36	L01	36	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L01_s2.jpg	611	89	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L01:54	L01	54	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L01_s2.jpg	1523	89	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L02:3	L02	3						none	cut look	e l then a gap then 6 s: no g ink
+L02:7	L02	7	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L02_s1.jpg	420	88	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L02:14	L02	14	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L02_s1.jpg	704	88	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L02:23	L02	23	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L02_s1.jpg	1191	88	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L02:43	L02	43	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L02_s2.jpg	965	86	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L03:20	L03	20	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L03_s1.jpg	1065	83	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L04:5	L04	5	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L04_s1.jpg	291	90	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L04:18	L04	18	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L04_s1.jpg	1033	90	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L04:24	L04	24	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L04_s1.jpg	1328	90	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L04:45	L04	45	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L04_s2.jpg	1248	90	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L04:48	L04	48	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L04_s2.jpg	1429	90	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L05:13	L05	13	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L05_s1.jpg	770	89	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L05:21	L05	21	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L05_s1.jpg	1174	89	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L05:29	L05	29	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L05_s2.jpg	371	89	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L05:31	L05	31	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L05_s2.jpg	476	89	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L05:40	L05	40	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L05_s2.jpg	1033	89	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L06:5	L06	5	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L06_s1.jpg	307	86	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L06:14	L06	14	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L06_s1.jpg	783	86	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L06:23	L06	23	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L06_s1.jpg	1258	86	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L06:29	L06	29	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L06_s2.jpg	428	90	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L06:34	L06	34	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L06_s2.jpg	649	90	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L07:8	L07	8	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L07_s1.jpg	455	77	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L07:21	L07	21	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L07_s1.jpg	1236	77	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	line-above flourish near the top
+L08:11	L08	11	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L08_s1.jpg	630	82	56	82	whole	placed L1/L2/L4, checked L3/L5/L6	w 56 takes the right edge of the preceding o
+L08:15	L08	15	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L08_s1.jpg	860	82	40	82	unsure	placed L1/L2, checked L3/L6	box takes the preceding S at check 6
+L08:21	L08	21	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L08_s1.jpg	1272	82	46	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L08:26	L08	26						unsure	cut look	rec has 4 g g s; the page shows one g after a barred 4 (boxed as L08:27)
+L08:27	L08	27	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L08_s2.jpg	398	83	34	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L09:4	L09	4						unsure	cut look	window missed the g (m j m then the crop edge); not re-placed
+L09:33	L09	33	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L09_s2.jpg	662	85	46	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L10:7	L10	7	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L10_s1.jpg	466	88	38	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L10:27	L10	27	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L10_s2.jpg	352	91	42	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L10:34	L10	34	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L10_s2.jpg	716	91	42	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L10:38	L10	38	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L10_s2.jpg	902	91	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L11:11	L11	11	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L11_s1.jpg	640	86	42	82	whole	placed L1/L2/L4, checked L3/L5/L6	loop of the line-above m crosses the box top
+L11:17	L11	17	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L11_s1.jpg	935	86	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L11:31	L11	31	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L11_s2.jpg	505	91	34	82	unsure	placed L1/L2, checked L3/L6	box sits on the following m at check 6
+L11:38	L11	38	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L11_s2.jpg	835	91	42	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L11:48	L11	48	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L11_s2.jpg	1344	91	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L12:7	L12	7	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L12_s1.jpg	484	83	40	82	unsure	placed L2, checked L3	the line-above double stem runs through the g
+L12:42	L12	42	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L12_s2.jpg	1220	92	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L12:48	L12	48	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L12_s2.jpg	1547	92	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L13:27	L13	27	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L13_s2.jpg	507	105	35	82	whole	placed L2/L4, checked L3/L5	seen on the g at check look 5
+L14:1	L14	1	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L14_s1.jpg	132	75	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L14:4	L14	4	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L14_s1.jpg	250	75	40	82	whole	placed L2/L4, checked L3/L5	seen on the g at check look 5
+L14:12	L14	12	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L14_s1.jpg	696	75	40	82	whole	placed L2/L4, checked L3/L5	seen on the g at check look 5
+L14:21	L14	21	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L14_s1.jpg	1158	75	40	82	whole	placed L2/L4, checked L3/L5	seen on the g at check look 5
+L14:34	L14	34						unsure	cut look	no g visible between s and s tz in the window
+L14:42	L14	42						none	cut look	r then a gap then s t: no g ink in the window
+L15:8	L15	8	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L15_s1.jpg	485	80	40	82	whole	placed L2/L4, checked L3/L5	seen on the g at check look 5
+L15:11	L15	11	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L15_s1.jpg	682	80	40	82	whole	placed L2/L4, checked L3/L5	seen on the g at check look 5
+L15:17	L15	17	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L15_s1.jpg	994	80	40	82	whole	placed L2/L4, checked L3/L5	seen on the g at check look 5
+L15:24	L15	24	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L15_s1.jpg	1298	80	40	82	whole	placed L2/L4, checked L3/L5	seen on the g at check look 5
+L15:32	L15	32	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L15_s2.jpg	521	89	40	82	whole	placed L2/L4, checked L3/L5	seen on the g at check look 5
+L15:41	L15	41						unsure	cut look	g beyond the window edge; not re-placed
+L16:16	L16	16	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L16_s1.jpg	998	86	40	82	whole	placed L2/L4, checked L3/L5	seen on the g at check look 5
+L16:43	L16	43	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L16_s2.jpg	1235	97	40	82	whole	placed L2/L4, checked L3/L5	seen on the g at check look 5
+L18:7	L18	7	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L18_s1.jpg	411	86	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L18:15	L18	15	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L18_s1.jpg	836	86	40	82	whole	placed L4, checked L5	seen on the g at check look 5
+L29:2	L29	2	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L29_s1.jpg	145	91	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L29:18	L29	18	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L29_s1.jpg	992	91	40	82	unsure	placed L1/L2, checked L3/L6	box sits on the preceding S at check 6
+L29:35	L29	35	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L29_s2.jpg	982	90	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L29:42	L29	42	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L29_s2.jpg	1363	90	40	82	whole	placed L2/L4, checked L3/L5	seen on the g at check look 5
+L29:43	L29	43	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L29_s2.jpg	1458	90	40	82	unsure	placed L2/L4, checked L3/L5	second of two adjacent g; written z-like with a tail; unsure from the cut look
+L30:17	L30	17	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L30_s1.jpg	1215	88	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L30:26	L30	26						none	cut look	m d then a gap then d tz: no g ink in the window
+L30:37	L30	37	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L30_s2.jpg	1211	83	40	82	whole	placed L2/L4, checked L3/L5	seen on the g at check look 5
+L30:42	L30	42	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L30_s2.jpg	1504	83	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6
+L31:11	L31	11	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L31_s1.jpg	698	95	40	82	whole	placed L2/L4, checked L3/L5	seen on the g at check look 5
+L31:22	L31	22	$VIVGSPLIT3_SCRATCH/f191/c196_f191r_dr_L31_s1.jpg	1304	95	40	82	whole	placed L1/L2/L4, checked L3/L5/L6	seen on the g at check look 6

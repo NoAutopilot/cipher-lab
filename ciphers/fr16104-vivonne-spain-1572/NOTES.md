@@ -4284,3 +4284,29 @@ Vision: 8 looks by this worker; cost not visible to this session.
 Report what was found and where it was not found; no novelty classified, no depth set.
 Next (one line, not done here): the f.191r step -- hand-cut the f.191r label-g tiles (the 28 tileable + any the map missed) with check looks, then
 `f191.py --override ... --tag gsplit3 --stats` strict and letter-S (~USD 1.5-2: 2 cut + 2 check looks).
+
+## VIV-GSPLIT3D (15 Oct 2026, 09:07-09:2x UTC by date -u, account-4 worker for LANE VIV-KEYSTONE): f.191r g tiles hand-cut (75 of 116); the classification was not run because of the request cap
+Brief: .claude/briefs/runs/2026-10-13-acct4-keystone-viv-jobs.md "JOB VIV-GSPLIT3D". PREREG-VIVGSPLIT3.md Addendum C pushed (e9e735f94) before any cut.
+Measurement only: key.tsv, rec.tsv, decode.tsv, every reading and status.json untouched; `tx/viv63_f191/f191.py --check` exit 0.
+**Crops:** the VIV-F191 command (`iiif_lines.py --canvas 196 --iiif-host openapi --region 5020,540,2760,4400 ... --deskew-region`, NOTES "VIV-F191"), into the
+scratchpad: 72 crops, boxes identical to images/p63/manifest_vivf191.json 72/72. Pen units: `glyph_atlas.py segment --median-h pool` (1,740 units; 1,829 of the 1,841
+map_f191r.tsv sids reproduce). The units only place the pointer.
+**Hand-cut** (new `tx/vivgsplit3/panels191.py`: targets / sheets / check): six Opus looks -- cut sheets of 15 (priority), 30 (priority) and 30 (L01-L07, L18), and
+three check sheets. Look 3 showed the other leaves' fixed y band (30, 82) sits above the f.191r writing (these crops are 215-240 px tall); y/h is now
+`panels191.band`: 82 px from 25 px above each crop's x-height ink peak, and every whole box was re-seen at that band on look 5 or 6. 17 priority boxes moved after
+look 3, 10 after look 5; a box was `whole` only when a check look showed it on the g.
+**Log** tx/vivgsplit3/boxes_handcut_f191r.tsv: **75 of 116 g tokens logged: whole 63, unsure 9, none 3**; priority lines L08-L16 and L29-L32: 45 of 45 logged,
+34 whole. Unsure: L08:15, L11:31, L29:18 (box on a neighbour at the last check), L12:7 (line-above stems cross the g), L29:43 (second of two adjacent g, written z-like),
+L08:26 (rec reads 4 g g s; the page shows one g after a barred 4), L09:4, L15:41 (window missed, not re-placed), L14:34 (no g seen between s and s tz).
+None (no g ink between the rec neighbours in the window): L02:3 (e l _ 6 s), L14:42 (r _ s t), L30:26 (m d _ d tz). These three and L08:26/L14:34 are
+transcription leads for rec.tsv, not edits (a later pass checks them at the image). Not cut: 41 g tokens on L17, L19-L28, L33-L36 (looks spent).
+**Classification: not run.** The registered model (Addendum B: every whole truth tile of seven leaves, `recut_feats` projected on tx/vivcls/atlas) needs the
+untracked crops of f.201r, f.201v, f.202r, f.211r and f.211v and the VIV-CLS atlas, which is built from the f.201r crops: four native regions on canvases f206,
+f207 (left and right in one), f216, f217. The brief allowed <= 3 openapi.bnf.fr requests and one was spent on f196, so the model could not be rebuilt. A model on the
+committed f.102r/f.103r tiles alone is not the registered model and was not substituted. So: predicted-f count -- not measured; (a) strict all-H run 37 -> 37
+(no override rows; gsplit_override_2026-10-15.tsv untouched); (b) letter-S -- not run (apply_override not extended).
+Requests: openapi.bnf.fr 1 (f196 region, HTTP 200; take/release lines). Subagent calls 0. Vision: 6 looks by this worker; cost not visible to this session.
+Report what was found and where it was not found; no novelty classified, no depth set.
+Next (one line, not done here): rebuild the five-leaf model (5 openapi requests: f196 or the scratch crops, f206, f207, f216, f217; `vivcls/seg.py`, `gsplit.py check3`
+reproduces), then classify the 63 whole tiles in boxes_handcut_f191r.tsv and run `f191.py --override ... --tag gsplit3 --stats` (a)/(b) -- no looks needed, ~USD 1;
+optionally 2 more looks for the 41 uncut g tokens.
