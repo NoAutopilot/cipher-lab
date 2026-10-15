@@ -304,7 +304,7 @@ Read so far: 0 of about 65 units (13 Aug block 45 units + 17 Sept block about 20
 - [x] retry: the NA and Huygens hosts answered (HEID-1621D, HEID-1621E, HEID-1621F, all 200)
 Verdict: keep going: 1 internal gaps; cheapest next: two-block transcription (scans 423 + 375), ~$8.4
 
-## HEID-1621G (15 Oct 2026, 21:11-..., UTC by date -u, account 2, Opus; for the orchestrator, owner account)
+## HEID-1621G (15 Oct 2026, 21:11-21:2x UTC by date -u, account 2, Opus; for the orchestrator, owner account)
 Crop step (run and pasted before the first reader call, 21:14 UTC):
 ```
 $ python3 tools/iiif_lines.py --image $S/s375_block_native.jpg --out $S/c375 --prefix h375 --debug
@@ -318,3 +318,62 @@ s423_block_native.jpg (local): region 1900x720, 8 lines, 8 bands x 1 segments; p
 ```
 ($S = session scratch; native regions 375 "900,780,1780,1420" and 423 "760,2000,1900,720" of NA 1.01.02 inv. 6021; readers get h375_L02-L13 and
 h423_L04-L05 only, the lines carrying numerals.)
+
+Brief: `.claude/briefs/runs/2026-10-15-acct4-depth-steps-2.md`, JOB HEID-1621G. PREREG `heid1621g/PREREG-HEID1621G.md` pushed (3ea405b88)
+before any fetch. Requests: **service.archief.nl 5** (METS + scans 375/423 at 1200 px + one native region per block), all HTTP 200, take/
+release lines in ROOM.md; no other host. No image committed; sha1s of scans, regions and all 23 crops in `images/manifest.json`
+(`heid_6021g`); `heid1621g/regen_heid1621g.sh` re-derives them. Readers: 4 blind Sonnet calls (2 per block, line crops only, no key, no
+379 text), returns verbatim in `heid1621g/reads_raw.txt`; reconciliation by this worker against the crops (`recon_375.txt`,
+`recon_423.txt`, every settlement commented). `heid1621g/units.py [--check]` rebuilds every table below. No decode, no key, no reading.
+
+### Known-answer control: scan 375 vs ciphertext.tsv (scan 379), per PREREG
+- **Per-unit agreement 37/45 = 0.822 against the 0.90 gate: FAIL.** As preregistered, the pass is a non-test for letter identity and
+  every unit in both new TSVs is graded M (no S anywhere). Both witnesses parse into 45 units in the same order (no insertion/deletion).
+- **Numbers: 96/96 agree** in aligned units (every numeral of 375 equals the numeral of 379 at the same place). **Letters: 37/45.**
+- The 8 disagreements are all the trailing letter, and all are glyph-naming splits between the two passes, not order or number
+  differences: 375 c / 379 r (76.77), e / w (13.14), s / j (46.47), x / c (64.65, twice), S / B (16.17), s / f (47.48), and one blotted
+  letter after 46.47 that both 375 readers called a sign (379: f). Per the PX-BRODEC lesson, the gate here mostly measures which pass
+  names a secretary-hand letter shape how, but that normalisation was not preregistered: **post-hoc only, not the gate**, merging the
+  observed classes (r,c->x; w->e; j,f,b->s) gives 44/45 = 0.978 -- and that merge collapses c vs x, which 379 itself keeps apart, so it
+  is no evidence either. Rule 3 status: the control could fail and did; nothing below is licensed as an inventory claim.
+- Reader split rates (A vs B before reconciliation): 375 5 of 45 units (S/g twice, s/f, x/z on the same glyph classes); 423 3 of 14 units.
+
+### Scan 423 (17 Sept 1621), transcription of record (all M)
+`heid1621g/ciphertext_6021_423.tsv`: two lines, 14 units, after "... voor eenen" and before "spreij-dende":
+`22.x 43.q 10.b 46.f 67.i 24.x 40.d 24.a | 61.3.23.x 42.d 22.x 19.m 24.x 119` (unit grammar of the PREREG: a maximal numeral run closed by a
+letter). Splits: 43.q (both readers q; by eye the sign has this hand's 4-shape, not the 9 of 19 -- alt 9/4), 67 (one reader 6y), the minim
+after 67 (read i as HEID-1621's rule for 379). 119 stands bare before the clear word; 61 and 3 are bare numbers, so the grammar folds
+"61.3.23.x" into one run. HEID-1621F's sighting is reproduced except "9.10.b" (readers: q then 10.b).
+
+### Unit inventory (`heid1621g/units.tsv`; M, for planning only -- control below gate)
+- Distinct unit ids across 375 + 423: 41; shared ids: **0** -- by construction, since 375's units are number pairs and 423's are single
+  numbers; the id comparison cannot see the relation the brief asks about, so the fixed question below is the one that matters.
+- **Is the 17 Sept single-number form the 13 Aug pair's first number every time? No: 6 of 12** S1 units (22.x twice, 46.f, 67.i, 40.d,
+  19.m) match the first number + letter of a 13 Aug pair; **9 of 12** match either number. Not first: 24.x (13 Aug 23.24.x, second
+  number), 42.d (41.42.d, second), 10.b (13 Aug "38.10.11.b": first of the pair 10.11, but the preregistered maximal-run grammar folds 38
+  in, so it does not count), 24.a (13 Aug 34.35.a), 43.q (no 13 Aug unit with q). With the letters M and the control failed, this is a
+  lead, not a finding: the 17 Sept form is not a simple abbreviation to the first number in every case.
+
+### Next row for the parent
+1. **Settle the trailing-letter glyphs** before any pooled test: the 8 letter splits above plus 423's q-vs-4/9 sign go to
+   `tools/lookalike_pass.py` across the three witnesses (crops on disk via regen), then, if machines still split, to the owner's sign
+   sorter focus list (CLAUDE.md Usage 6); ~USD 1.5, cap 2, no network beyond regen's 5 requests.
+2. **The pooled spec + first cheap test, cap 3** (only after 1, or on numbers only now): `specs/brederode-heidelberg-1621.json` with
+   both letters' units (13 Aug 45 + 17 Sept 14 = 59 units), test 1 (unit inventory vs a Dutch word-frequency list under a frozen pool)
+   with its matched control a synthetic word code of the same N and the same mixed pair/single form; at N=59 expect the C2 control to
+   stay far under its 0.50 gate (0.010 at N=45, HYPOTHESES.md), so the test is likely too-short and should say so first.
+
+## Remaining gaps (HEID-1621G, 15 Oct 2026)
+Read so far: 0 of 59 units (13 Aug 45 + 17 Sept 14 transcribed, all M; nothing decoded)
+- the trailing letters of both blocks - blocker: not-attempted; the 375-vs-379 control failed on letter naming only (numbers 96/96); next: lookalike pass on the letter glyphs across 375/379/423, ~$1.5
+- the pooled units - blocker: too-short; test 1 C2 control 0.010 vs gate 0.50 at N=45; pooled N=59; next: pooled spec + test 1 with its matched control after the letter settle, ~$3
+
+## Escalation (HEID-1621G, 15 Oct 2026)
+- [x] siblings: the 17 Sept 1621 letter transcribed (scan 423, 14 units); its duplicate not seen in 425-451 (HEID-1621F)
+- [ ] clear-pages: the clear prose around both blocks once the letters are settled
+- [x] known-keys: design_prior run (non-discriminating at N=45); no SG/Palatinate key of 1618-1625 on file (HEID-1621E)
+- [x] print: Resolutien SG NR 5 read, no decipherment of a Brederode letter; no edition of his letters (HEID-1621C/D/E)
+- [n/a] key-rebuild: no decipherment, gloss or key sheet of this system located to rebuild from
+- [ ] image-check: trailing-letter glyphs across 375/379/423 unsettled (control FAIL on letters)
+- [x] retry: the NA host answered (HEID-1621G, 5 requests, all 200)
+Verdict: keep going: 1 internal gaps; cheapest next: lookalike pass on the trailing letters, ~$1.5

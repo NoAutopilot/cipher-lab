@@ -1,0 +1,16 @@
+# NL-HaNA 1.01.02 inv. 6021 scan 423 (17 Sept 1621), HEID-1621G (15 Oct 2026): two blind Sonnet readers + reconciliation on line crops; S = both readers agree on the signs as transcribed (no value read), M = split.
+line	pos	unit	form	numbers	letter	confidence	why
+L04	2	22.x	S1	22	x	M	two readers agree; control below gate (PREREG), M
+L04	4	43.q	S1	43	q	M	readers split q|9/4; control below gate, M
+L04	6	10.b	S1	10	b	M	two readers agree; control below gate (PREREG), M
+L04	8	46.f	S1	46	f	M	two readers agree; control below gate (PREREG), M
+L04	10	67.i	S1	67	i	M	readers split 67|6y,i|1; control below gate, M
+L04	12	24.x	S1	24	x	M	two readers agree; control below gate (PREREG), M
+L04	14	40.d	S1	40	d	M	two readers agree; control below gate (PREREG), M
+L04	16	24.a	S1	24	a	M	two readers agree; control below gate (PREREG), M
+L05	2	61.3.23.x	R3	61.3.23	x	M	two readers agree; control below gate (PREREG), M
+L05	6	42.d	S1	42	d	M	two readers agree; control below gate (PREREG), M
+L05	8	22.x	S1	22	x	M	two readers agree; control below gate (PREREG), M
+L05	10	19.m	S1	19	m	M	two readers agree; control below gate (PREREG), M
+L05	12	24.x	S1	24	x	M	two readers agree; control below gate (PREREG), M
+L05	14	119.-	N	119		M	two readers agree; control below gate (PREREG), M

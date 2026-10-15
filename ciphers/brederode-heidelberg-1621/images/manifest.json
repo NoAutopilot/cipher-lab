@@ -2,8 +2,9 @@
  "note": "No image committed (HEID-1621C, 15 Oct 2026). Pointers to NL-HaNA 1.01.02 inv. 6021 scans as fetched by HEID-1621 and HEID-1621B; the regen scripts live in ciphers/oldenbarnevelt-brederode-1605/heid1621/ and re-derive every file below by sha1.",
  "source": "Nationaal Archief, 1.01.02 Staten-Generaal inv. 6021 (liasse Agent Brederode, 1621-1622), METS c82b1eb5-6946-4ca9-8082-f13c2ab5f078, IIIF via service.archief.nl",
  "witnesses": {
-  "375": "signed letter, P van Brederode, Heydelberg 13 Aug 1621, numeral block on the left page (not yet transcribed)",
-  "379": "duplicate (380: 'Duplicaet vanden 13 Augusti 1621'), numeral block left page; transcribed in ciphertext.tsv"
+  "375": "signed letter, P van Brederode, Heydelberg 13 Aug 1621, numeral block on the left page; transcribed HEID-1621G (heid1621g/ciphertext_6021_375.tsv)",
+  "379": "duplicate (380: 'Duplicaet vanden 13 Augusti 1621'), numeral block left page; transcribed in ciphertext.tsv",
+  "423": "letter of 17 Sept 1621 (signed on 424), two numeral lines left page; transcribed HEID-1621G (heid1621g/ciphertext_6021_423.tsv)"
  },
  "heid_6021": {
   "mets": "c82b1eb5-6946-4ca9-8082-f13c2ab5f078",
@@ -330,6 +331,63 @@
    "s0449_700.jpg": "fcdfd3fd7084eb913cc4612bd792d167a623c5eb",
    "s0450_700.jpg": "7ca5b83dafb515704bc2ed3cac29597bbc3eaacc",
    "s0451_700.jpg": "83b7ff66838bc9f500dab154ad8d09b53fc9c843"
+  }
+ },
+ "heid_6021g": {
+  "job": "HEID-1621G, 15 Oct 2026",
+  "mets": "c82b1eb5-6946-4ca9-8082-f13c2ab5f078",
+  "regen": "heid1621g/regen_heid1621g.sh",
+  "note": "not committed; native regions fetched with IIIF region requests",
+  "scans": [
+   {
+    "scan": 375,
+    "width": 1200,
+    "sha1": "b3c53d2c89b0a6aed722a5e6c76414ebe641f93d",
+    "bytes": 113904
+   },
+   {
+    "scan": 423,
+    "width": 1200,
+    "sha1": "3f4866c53459d23b1b7ac53f0c30744f126e979d",
+    "bytes": 144904
+   },
+   {
+    "scan": 375,
+    "region": "900,780,1780,1420",
+    "sha1": "7e4cf1f3ce0a887de5f8d03dc1b15dfa176fb791",
+    "bytes": 210488
+   },
+   {
+    "scan": 423,
+    "region": "760,2000,1900,720",
+    "sha1": "b14323f48c48a1ac16e183a7e405de851849b96f",
+    "bytes": 114542
+   }
+  ],
+  "crops": {
+   "h375_L01.jpg": "d258800af9e643afe36ddddb9a97cd50cb05353d",
+   "h375_L02.jpg": "cf26fb0c87e8da2d289d2a10f06dd3e24fa08686",
+   "h375_L03.jpg": "b8776277addd199ab6d58b4b7251200b779f3993",
+   "h375_L04.jpg": "19ad72cddf7730b925f389a650cf0f4748ddc57c",
+   "h375_L05.jpg": "8abc219445b425dd345159fa89e0208aa1b8fda8",
+   "h375_L06.jpg": "7cf6c2a382d057f5faf330fba29be1dd41a22fec",
+   "h375_L07.jpg": "cb111d8fc7c1482eb00020b31260ba769f3a31a2",
+   "h375_L08.jpg": "b8c4b68cbc581ef0301fbd1204bf6400dc2c7b5a",
+   "h375_L09.jpg": "423cee0bffc1202ca9f5a4f04b7c016ab4ceaddb",
+   "h375_L10.jpg": "a6c4ad89a13a7d8f2e02ee7dfcdc7350491d85a2",
+   "h375_L11.jpg": "7c7bcb241f109051157d855572e39eeb83e66cb3",
+   "h375_L12.jpg": "9f9dcd2195c8021fa25abd6413fcea85e0279109",
+   "h375_L13.jpg": "dcf0f1f89f7adfdf44e9e4a9de1e55ea25b16154",
+   "h375_L14.jpg": "c695d266e72a5df2f644376cbbf388f61b80806a",
+   "h375_L15.jpg": "5fecc2d612d1c61676c44492b1f12ffbdbc5136c",
+   "h423_L01.jpg": "3825429870b2b1effc9cff9c48d159e02cfda851",
+   "h423_L02.jpg": "32543f3ad78c551bfb3702d53ef2f7cc64de0987",
+   "h423_L03.jpg": "8bbb1fa5ac505ec1a11b5c3f337e7b51e01bf349",
+   "h423_L04.jpg": "caf3f43c526f2edd3abc37535bba1e09c38d94c5",
+   "h423_L05.jpg": "2d8ea9880a78407a5883b1d00bb79a524013d61e",
+   "h423_L06.jpg": "4893a69e81f13ad7398d33fb19f29f81caf1cd5e",
+   "h423_L07.jpg": "e9db8e76911f7dbd96a14fcf287ad2c6dca3f573",
+   "h423_L08.jpg": "27670a03e8c3c0fcd9c6a1ba683074f9636cdf0e"
   }
  }
 }

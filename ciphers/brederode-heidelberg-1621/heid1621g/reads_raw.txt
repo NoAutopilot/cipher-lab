@@ -1,0 +1,37 @@
+# HEID-1621G raw reader returns (Sonnet, blind, line crops only, 15 Oct 2026 ~21:3x UTC). Verbatim token rows; uncertainty notes abridged.
+## 375 reader A
+L02	[clear: adui?b] 31 32 o 22 23 x 76 77 c 40 41 d 13 14 e
+L03	58 59 p 49 50 k 46 47 s [clear: in dato den 29 July onder]
+L04	[clear: stijl dat] [sym:colon with bracket] [clear: van] [sym:cross-like sign] [clear: aldaer] 67 68 1 22 23 x 59 60 p
+L05	16 17 g 41 42 d 11 12 b 22 23 x 58 59 p 64 65 x
+L06	[clear: Sibbes] 38 10 11 b 40 41 d 34 35 a 11 12 b 46 47
+L07	s 16 17 g 76 77 [sym:box-like sign] [clear: volgende] 38 64 65 c 22 23 x
+L08	47 48 s 23 24 x 67 68 59 60 p [clear: te continueren, bij]
+L09	[clear: so wel te alboven] 84 38 79 80 g 76 77 c 19 20
+L10	m 23 24 x [clear: Sacre debuoir motte] 29 20 f 22 23
+L11	x 40 41 d 64 65 z?(x) 31 32 g 67 68 1 41 42 d
+L12	52 53 v [clear: tot op den uytganck van] 20 21 m 67
+L13	68 1 46 47 [sym:filled black blot, s-like] 76 77 c [clear: te presteren, te vreden]
+# A uncertain: L02 final e (c?); L03 s (long-s vs f); L04 1 (1/i?); L05 g (g/9?); L06 10 (70/40?); L07 first s (f/s), 76 (6 overwritten); L09 84 (34?); L11 65 (overwritten), z(x), g (g/9); L12 52 (32?); L13 68, blot
+## 375 reader B
+L02	[clear: aduys] 31 32 o 22 23 x 76 77 c 40 41 d 13 14 e
+L03	58 59 p 49 50 k 46 47 s [clear: in dato den 29 July onder]
+L04	[clear: style dat] [sym:colon with bracket] [clear: van] [sym:cross-like sign] [clear: aldaer] 67 68 1 22 23 x 59 60 p
+L05	16 17 S 41 42 d 11 12 b 22 23 x 58 59 p 64 65 x
+L06	[clear: Sibbes] 38 10 11 b 40 41 d 34 35 a 11 12 b 46 47
+L07	f 16 17 S 76 77 [sym:box-like sign] [clear: volgende] 38 64 65 c 22 23 x
+L08	47 48 s 23 24 x 67 68 59 60 p [clear: te continueren, by]
+L09	[clear: so verre alboven] 84 38 79 80 g 76 77 c 19 20
+L10	m 23 24 x [clear: Sacre de buiole motto] 29 20 f 22 23
+L11	x 40 41 d 64 65 x 31 32 g 67 68 1 41 42 d
+L12	52 53 v [clear: tot op den uytganck van] 20 21 m 67
+L13	68 1 46 47 [sym:blotted/inked sign] 76 77 c [clear: te presteren, te bruden]
+# B uncertain: L02 o (0?), e (c?), x (r?); L04 1 (i?); L05 x (o?), S (8?); L06 10 (40?), 34 (39?), 35 (38?); L07 box sign, c (o?), 76; L08 s (f?), 68 (58?); L09 84 (89?), g (S/9?); L10 29 (25?); L11 x (r?), g (9?); L12 52 (32?), m (n?); L13 blot (likely f/p)
+## 423 reader A
+L04	[clear: cinck?(cincq?)] . 22 . x . 43 . q . 10 . b . 46 . f?(s) . 67?(65) . 1/i? . 24 . x . 40 . d . 24 .
+L05	a . 61 . 3 . 23 . x . 42?(92) . d . 22 . x . 19 . m . 24 . x . 119?(11g) . [clear: sprey?(spreij)] :
+# A uncertain: 22, 43 (93?), q (9?), f (s), 67 (65), 1/i, 40; L05 61, 42 (92), 119 (11g)
+## 423 reader B
+L04	[clear: cunez?] . 22 . x . 43 . q . 10 . b . 46 . f?(s) . 6y?(67) . 1/i? . 24 . x . 40 . d . 24
+L05	a . 61 . 3 . 23 . x . 42?(92) . d . 22 . x . 19 . m . 24 . x . 119?(114) . [clear: spreij?] [sym:colon-like double dot at line end]
+# B uncertain: f (s), 6y (67), 1/i, 40 (49?), 42 (92), 119 (114), d

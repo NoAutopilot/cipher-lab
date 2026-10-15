@@ -1,0 +1,5 @@
+# HEID-1621G reconciliation, scan 423 (this worker against the crops, 15 Oct 2026). "A|B": reconciled|other; any "|" makes the unit M.
+# q|9/4: both readers wrote q; by eye the sign has the shape of this hand's 4 (as in 43, 46, 42), not the round 9 of 19; kept q, M.
+# 67|6y: reader split; i|1 as on 375.
+L04	[clear] 22 x 43 q|9/4 10 b 46 f 67|6y i|1 24 x 40 d 24
+L05	a 61 3 23 x 42 d 22 x 19 m 24 x 119 [clear] [sym]
