@@ -4,12 +4,12 @@
  "signs_pass_a": 347,
  "pass_agree_h": 272,
  "decoded_letters": 333,
- "decoded": "lesperuiteursdequiniespargnentlhoneurlaraelareputationnilaonpienedupoilonfaitparlerleroidedalnelarquinupenpninlaisetdoneataenteadrequilesteeoiilatirentdelainexlupionqqilestudposiblequelodpeigdeurseutuedirpnrdeuaaqeopiepanpeauoippatisfaitearlapeodneoraipodcppfautilqueieifesequeemopednoupaautadtdopedempehemedtquafaitelupquieptdduedua",
+ "decoded": "lesperuiteursdequiniespargnentlhoneurlaraelareputationnilaonpienedupoilonfaitparlerleroidedalnelarquinupenpninlaisetdoneataenteadrequilesteeoiilatirentdelainexlupionqqilestudposiblequelodpeigdeurseutuedirpnrdeuaaqeopiepanpeauoippatisfaitearlapeodneoraipodcppfautilqueieifesequeemopednoupaautadtdopedempehemedtquafaitelupquieptnduedua",
  "judge": {
   "checks": {
    "language": {
     "pass": false,
-    "score": -1.422,
+    "score": -1.413,
     "null_p99": -1.821,
     "real_p05": -0.887,
     "real_median": -0.788,
@@ -28,11 +28,11 @@
  },
  "shuffle_draws": 100,
  "shuffle_judge_pass": 0,
- "shuffle_language_scores_max": -1.794,
+ "shuffle_language_scores_max": -1.792,
  "c270_letters": 778,
  "c270_matched": 117,
  "c270_rate": 0.3514,
- "c270_shuffle_mean": 0.3414,
+ "c270_shuffle_mean": 0.3423,
  "c270_shuffle_p95": 0.3754,
  "c270_shuffle_max": 0.3844
 }

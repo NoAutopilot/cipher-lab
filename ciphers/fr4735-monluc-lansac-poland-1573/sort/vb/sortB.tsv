@@ -1,0 +1,45 @@
+page	passage	pos	label	conf	note
+c268b	L02	17	K12	M	stem curves down-left into short tail
+c268b	L02	15	K34	M	upright beta, straight stem
+c268b	L02	12	K53	L	foot sweeps down-left, slanted
+c268b	L02	4	K04	H	straight blunt vertical stem
+c268b	L02	2	K12	M	stem ends in curved tail
+c268b	L02	1	K34	M	upright beta, blunt stem
+c268b	L01	34	K12	M	curved stem with tail
+c268b	L01	23	K04	M	straight stem
+c268b	L01	19	K14	H	closed b-like form
+c268b	L01	18	K04	M	straight blunt stem
+c268b	L01	6	K34	M	upright heavy beta
+c268b	L01	5	K04	M	straight vertical stem
+c268b	L04	17	K12	L	9 stem looks curved with a slight tail after m-beta-r
+c268b	L04	15	K34	L	beta looks mostly upright with a short foot
+c268b	L03	23	K53	M	beta slanted, foot sweeping down-left
+c268b	L03	22	K14	M	closed b-like form
+c268b	L03	19	K04	L	9 with a mostly straight stem
+c268b	L03	17	K14	M	closed b with a diamond bowl
+c268b	L03	11	K04	L	straight blunt vertical stem with an ink blob
+c268b	L03	10	K12	L	9 with a stem curving down-left into a tail
+c268b	L03	6	K17	M	hooked stroke with a big top curl, opening right
+c268b	L02	25	K34	L	beta-like form, fairly upright, before the omega
+c268b	L02	24	K14	M	closed b-like form with a diamond bowl
+c268b	L02	18	K14	M	closed b-like form with a tall top stroke
+c268b	L05	33	K04	M	straight blunt stem on the 9-like sign
+c268b	L05	30	K04	M	straight vertical stem
+c268b	L05	29	K12	M	9 with a curved tail at the foot
+c268b	L05	27	K53	L	blotted by the black stroke; slanted foot
+c268b	L05	22	K34	M	upright beta with a straight stem
+c268b	L05	9	K12	M	stem curves down-left into a tail
+c268b	L05	2	K34	M	upright beta
+c268b	L04	33	K04	M	straight stem
+c268b	L04	31	K14	L	closed b-like form, window blotted
+c268b	L04	27	K04	L	stem looked straight, sign faint
+c268b	L04	21	K14	M	closed b-like form with a tall stem
+c172	L04	19	K04	L	short straight stem on a closed bowl before the long stroke; window too small to see the tail
+c172	L04	13	K04	L	same q-form with a straight stem; the tail is not resolved
+c172	L03	52	K04	L	could not locate the sign reliably; the nearby 9-like sign has a straight stem
+c172	L03	40	K14	L	b-like form near the tick; the hook is not resolved
+c172	L03	26	K12	L	could not locate the sign reliably; the guess is a tailed 9
+c172	L02	54	K14	L	b-like closed form with a stem; the sign is hard to find in its window
+c172	L02	48	K14	L	closed b-like form, not clearly hooked
+c268a	L04	8	K12	M	q after the rho sign, with a slanted stem and a curved tail
+c268a	L04	6	K12	L	q-form after the b sign; the stem looks fairly straight and there is no g-loop descender, so K22 is unlikely

@@ -58,6 +58,9 @@ MONL_EYE_REVERT = {('L04', 6), ('L04', 8), ('L04', 23), ('L05', 12)}
 MONL_SORT = {k: v for k, v in MONL_SORT.items() if k not in MONL_EYE_REVERT}
 TAG = {**{k: 'blind-sort' for k in RELABEL}, **{k: 'monl-sort' for k in MONL_SORT}}
 RELABEL = {**RELABEL, **MONL_SORT}
+# MONL-VB (15 Oct 2026): two value-blind sorts of the c268 L06-L10 K04/K12/K14/K34 tokens and L04:6/8 (K12|K22) under
+# sort/vb/PREREG-MONL-VB.md (0 of 7 c172 controls moved); both sorts agree, neither conf L, only on this one (sort/vb/reconciled.tsv).
+MONL_VB = {('L10', 29): ('K04', 'K12')}
 
 
 def main():
@@ -100,8 +103,12 @@ def main():
             bl.setdefault(f[0], []).append(f)
         for lab in sorted(bl):
             for f in bl[lab]:
-                rows.append(f"{f[0]}\t{f[1]}\t{f[2]}\t{f[3]}\t{f[4]}\t{'c268b-recon' if f[2] != f[4] else ''}\n")
                 agree += f[3] == 'H'
+                vb = MONL_VB.get((f[0], int(f[1])))
+                if vb:
+                    assert f[2] == vb[0], (f[0], f[1], f[2])
+                    f[2], f[3] = vb[1], 'M'
+                rows.append(f"{f[0]}\t{f[1]}\t{f[2]}\t{f[3]}\t{f[4]}\t{'monl-vb' if vb else ('c268b-recon' if f[2] != f[4] else '')}\n")
             ta = [f[2] for f in bl[lab]]
             toks += [t for t in ta if not t.startswith('W:')]
             lines.append(f"{lab}\t{''.join(key.get(t, '_') for t in ta if not t.startswith('W:'))}")

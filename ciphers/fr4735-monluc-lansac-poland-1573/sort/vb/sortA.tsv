@@ -1,0 +1,45 @@
+page	passage	pos	label	conf	note
+c268b	L01	5	K04	M	9 with fairly straight stem, short blunt end
+c268b	L01	6	K34	M	upright heavy beta with blunt thick top
+c268b	L01	18	K04	M	straight blunt vertical stem
+c268b	L01	19	K14	M	closed b-like loop form
+c268b	L01	23	K04	M	straight stem 9
+c268b	L01	34	K04	L	9 stem slightly curved, ambiguous
+c268b	L02	1	K34	M	upright B-like beta, straight stem
+c268b	L02	2	K12	M	stem curves down-left into a tail
+c268b	L02	4	K04	H	straight blunt vertical stem
+c268b	L02	12	K53	M	slanted beta with foot sweeping down-left
+c268b	L02	15	K34	M	upright beta, straight stem
+c268b	L02	17	K12	M	9 with curving tail
+c268b	L02	18	K14	M	closed b-like form with loop at top
+c268b	L02	24	K14	L	blotted closed b-like form after theta
+c268b	L02	25	K34	M	upright beta with straight stem
+c268b	L03	6	K14	M	closed b-like form with top flourish
+c268b	L03	10	K04	M	9 with blunt stem, followed by a second 9
+c268b	L03	11	K12	M	second 9 of the pair, heavy stem
+c268b	L03	17	K14	M	closed b-like form between theta and m
+c268b	L03	19	K04	M	9 with straight blunt stem after m
+c268b	L03	22	K14	M	closed b-like form before beta
+c268b	L03	23	K53	L	small slanted beta, foot sweeping left
+c268b	L04	15	K53	L	slanted beta between m and r
+c268b	L04	17	K04	M	9 with short straight stem before F
+c268b	L04	21	K14	M	closed b-like form with tall stem
+c268b	L04	27	K04	M	9 with straight blunt vertical stem
+c268b	L04	31	K14	M	closed b-like loop, not an open hook
+c268b	L04	33	K04	H	q/9 form with straight vertical stem
+c268b	L05	2	K34	M	upright beta with straight stem
+c268b	L05	9	K04	M	9 with straight blunt stem
+c268b	L05	22	K34	M	upright beta, straight stem
+c268b	L05	27	K53	L	beta shape, slightly slanted; blotted
+c268b	L05	29	K12	M	9 whose stem curves into a tail
+c268b	L05	30	K04	M	9 with straight vertical stem
+c268b	L05	33	K04	M	9 with straight blunt stem
+c268a	L04	6	K12	M	q-form with straight stem and no loop, matches the K12 sign read in context after K29; not the looped K22 descender
+c268a	L04	8	K12	M	same q-form with straight descender, no loop, so not K22
+c172	L02	48	K14	M	closed b-like form after the long stroke; no open hook
+c172	L02	54	K14	M	closed b-like shape after the cross-barred sign
+c172	L03	26	K04	M	9-form with straight blunt vertical stem, between y and the delta-like sign
+c172	L03	40	K14	M	closed b-like form after the hooked z-like sign
+c172	L03	52	K04	M	straight blunt stem in the q r g group, no curving tail
+c172	L04	13	K04	M	straight blunt vertical stem after g 7 g
+c172	L04	19	K04	M	straight blunt stem, no curved tail

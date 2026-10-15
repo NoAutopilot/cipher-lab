@@ -16,16 +16,16 @@
  "shuffled_clear": {
   "draws": 200,
   "seed": 140,
-  "mean": 0.3772,
+  "mean": 0.3782,
   "p95": 0.3994,
-  "max": 0.4234,
+  "max": 0.4264,
   "ge_real": 0
  },
  "other_letter_c270": {
   "keyed": 333,
   "confirm": 116,
-  "contradict": 183,
-  "extra": 34,
+  "contradict": 187,
+  "extra": 30,
   "confirm_share": 0.3483
  },
  "fills": [
@@ -550,9 +550,9 @@
   {
    "line": "L10",
    "pos": 29,
-   "sign": "K04",
+   "sign": "K12",
    "conf": "M",
-   "table": "d",
+   "table": "n",
    "clear": "a"
   },
   {

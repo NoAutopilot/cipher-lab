@@ -1,0 +1,45 @@
+page	line	pos	current	sortA	confA	sortB	confB	control	action
+c172	L02	48	K14	K14	M	K14	L	control	keep-agree
+c172	L02	54	K14	K14	M	K14	L	control	keep-agree
+c172	L03	26	K04	K04	M	K12	L	control	keep-split
+c172	L03	40	K14	K14	M	K14	L	control	keep-agree
+c172	L03	52	K04	K04	M	K04	L	control	keep-agree
+c172	L04	13	K04	K04	M	K04	L	control	keep-agree
+c172	L04	19	K04	K04	M	K04	L	control	keep-agree
+c268a	L04	6	K12	K12	M	K12	L		keep-agree
+c268a	L04	8	K12	K12	M	K12	M		keep-agree
+c268b	L06	5	K04	K04	M	K04	M		keep-agree
+c268b	L06	6	K34	K34	M	K34	M		keep-agree
+c268b	L06	18	K04	K04	M	K04	M		keep-agree
+c268b	L06	19	K14	K14	M	K14	H		keep-agree
+c268b	L06	23	K04	K04	M	K04	M		keep-agree
+c268b	L06	34	K04	K04	L	K12	M		keep-split
+c268b	L07	1	K34	K34	M	K34	M		keep-agree
+c268b	L07	2	K12	K12	M	K12	M		keep-agree
+c268b	L07	4	K04	K04	H	K04	H		keep-agree
+c268b	L07	12	K34	K53	M	K53	L		keep-low-conf
+c268b	L07	15	K34	K34	M	K34	M		keep-agree
+c268b	L07	17	K12	K12	M	K12	M		keep-agree
+c268b	L07	18	K14	K14	M	K14	M		keep-agree
+c268b	L07	24	K14	K14	L	K14	M		keep-agree
+c268b	L07	25	K34	K34	M	K34	L		keep-agree
+c268b	L08	6	K14	K14	M	K17	M		keep-split
+c268b	L08	10	K04	K04	M	K12	L		keep-split
+c268b	L08	11	K12	K12	M	K04	L		keep-split
+c268b	L08	17	K14	K14	M	K14	M		keep-agree
+c268b	L08	19	K04	K04	M	K04	L		keep-agree
+c268b	L08	22	K14	K14	M	K14	M		keep-agree
+c268b	L08	23	K34	K53	L	K53	M		keep-low-conf
+c268b	L09	15	K34	K53	L	K34	L		keep-split
+c268b	L09	17	K04	K04	M	K12	L		keep-split
+c268b	L09	21	K14	K14	M	K14	M		keep-agree
+c268b	L09	27	K04	K04	M	K04	L		keep-agree
+c268b	L09	31	K14	K14	M	K14	L		keep-agree
+c268b	L09	33	K04	K04	H	K04	M		keep-agree
+c268b	L10	2	K34	K34	M	K34	M		keep-agree
+c268b	L10	9	K04	K04	M	K12	M		keep-split
+c268b	L10	22	K34	K34	M	K34	M		keep-agree
+c268b	L10	27	K34	K53	L	K53	L		keep-low-conf
+c268b	L10	29	K04	K12	M	K12	M		relabel
+c268b	L10	30	K04	K04	M	K04	M		keep-agree
+c268b	L10	33	K04	K04	M	K04	M		keep-agree
