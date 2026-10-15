@@ -107,3 +107,5 @@ vary on the matching axis. All M unless the registered rule says otherwise; key.
 MONL-K14 next: regen_monll11/16/21.sh (fetch only what they name, scratch only), then ONE value-blind sort of K04|K12 + K14|K37 + K40/K45 tiles (one
 subagent call per <= 40 tiles, crop paths only), with the in-band controls MONL-CTL used; PREREG addendum before the call. Relabels only by the
 registered rule; decode_key/align/score --check after.
+
+Wave 3 spawned 13:33 UTC: MAT-R2 session_01Coxngskfb3yt89gN9hySCb, ELEC-R2 session_012M6RzZ7dgZMDMhQy9XYfhd, MONL-SORT session_01VMJiqXX4GdfmxQdmRmeoCg (all Opus; caps 1.5/2/3.5 = 7).
