@@ -9537,3 +9537,7 @@ workers over cap, worst NO70-WORDS 1.6x (three vision units + a screen in a 2.5 
   questions), then readers transcribe against those labels. Next: VIV-GSPLIT3 (hand-cut every label-g truth tile, the different instrument the
   worker named; account 4) and SORTER-STEP1-INK63 (the alphabet-settling page, built and checked, not published; account 1); the owner is asked
   to sort only once a PREREG'd test consumes the sort within a day.
+
+- **15 Oct 2026 06:5x UTC (VIV-KEYSTONE, appended):** VIV-GSPLIT3 (hand-cut tiles) reached N_f = 18 and a PASS on an incomplete r sample
+  (29 of 138; recall 0.889, precision 0.727; projected precision at full r about 0.36) -- unfinished, not a negative; the continuation
+  VIV-GSPLIT3B (106 r tiles, cap 5) completes the same registered test. SORTER-STEP1-INK63 claimed on account 1 at 06:40 (box to 08:13).
