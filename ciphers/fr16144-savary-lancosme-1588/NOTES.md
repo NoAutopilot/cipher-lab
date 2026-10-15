@@ -378,7 +378,7 @@ alphabet or on physical access to fr.17020.
 
 Waits on the owner's sort of sorter/index.html for c370-c375 + c380 (ROOM flag 3 Oct 2026) and on physical access to fr.17020 (not digitised, RUN2-SAV 4 Oct 2026).
 - Read Boucher's Lettres de Henri III for 1587-88 (named unread in RUN1-SAV's print rung) for a reply quoting the 29 Apr 1587 duplicata. S, ~$1, IA/Google Books grep
-- Collate L14's c251-252 margin gloss (30 Apr 1586) with Charrière IV's printed letter of that date (date match only so far): clear text vs print, no sign labels needed. S, ~$1, gallica crops
+[done 15 Oct 2026, SAV-L14: unrelated -- the print stops where the cipher starts; see SAV-L14 below.] - Collate L14's c251-252 margin gloss (30 Apr 1586) with Charrière IV's printed letter of that date (date match only so far): clear text vs print, no sign labels needed. S, ~$1, gallica crops
 
 ## SAV-BOUCHER: Boucher's Lettres de Henri III for a reply to the 29 Apr 1587 duplicata (account-4 worker, 9 Oct 2026 14:50-14:55 UTC by date -u)
 Prior-work step: `tools/prior_work.py ... --item-spec 'shelfmark=BnF fr.16144;folio=c370;date=1587-04-29;...' --step-type lookup --fetch` exit 4; the one LEAD is this session's own ROOM claim (not a prior reading); the other rows UNCHECKED/UNCHECKED-NET (no folio-keyed Tomokiyo search, aaymeloglu not cloned, no prior_editions row). Proceeded on that reading; nothing here clears them.
@@ -388,3 +388,41 @@ Hits: _PipT3by2nIC snippet "Lancosme n'arriva qu'en 1586 à Constantinople" (edi
 Not found: a reply quoting or naming the 29 Apr 1587 duplicata, in any source reachable this way. Not searched: the volume pages themselves (print or loan; HathiTrust/Persée not reachable here), so the Boucher volumes stay unread; the j4JUbiSLcucC Constantinople snippet is a lead for a person with the book (index entry Lancosme, 1587).
 Requests per host: www.googleapis.com ~30; archive.org 2 (advancedsearch) + be-api 2.
 Suggestion: ask the owner's local runner for the Lancosme index entries of the two Boucher volumes (LOCAL-QUEUE), ~$0.
+
+## SAV-L14: the c251-252 (f.123r-v) L14 margin gloss vs Charrière IV's 30 Apr 1586 letter (account-4 worker, 15 Oct 2026 03:05-03:1x UTC by date -u)
+Brief: .claude/briefs/runs/2026-10-15-acct4-default-0235-jobs.md, job SAV-L14. PREREG `l14/PREREG-SAV-L14.md` pushed (46bd8842e) before any
+gloss was read. prior_work.py (read step, offline) exit 4: LEAD = this job's own ROOM claim; LOOK 2-leaf = this job; UNCHECKED solver/Tomokiyo
+rows not cleared here. Brief premise corrected: Charrière IV's djvu was **not** on disk (only t.III in sources/ia-fulltext); fetched once from
+archive.org (1 request, outside the brief's host line, logged here) to the session scratchpad; the printed passages used are committed as text.
+**Print.** The 30 Apr 1586 letter is printed in two pieces: main column pp.499-502 (`l14/print_charriere_l14.txt`: audience with the new vizir
+Chaoux Bassa on the 22nd, the Tauris letters, the English "prétendu ambassadeur", Oluchaly, slaves, the Cairo letter, Malta, Lorraine) and
+editor's-note quotations pp.503-507 (`l14/print_charriere_l14_notes_raw.txt`, raw OCR: Mariani, the Hungarian ambassador, presents, consulates,
+then the Semur request). The note quotation **ends at "Il a nom Soliman, et est cappitaine de la porte du bassa de la mer" -- the exact words
+after which the cipher begins on c251** (c251's clear lines above the cipher match the note's consulates/Semur paragraphs closely by eye, with small variants such as the leaf's "treshumblement"). The
+cipher passage of c251-252 (about 21 + 10 lines) and its closing clear sentence ("Sire, à toutes les occasions qui s'offriront ...") are not
+in the quoted text.
+**Gloss read** (crops in scratchpad, not committed; openapi.bnf.fr 5 requests): reader A one blind Sonnet subagent, c251 + c252
+(`l14/gloss_c251_c252_readA.tsv`, left edge of c251 cut, ~75 words uncertain); reader B the job's Opus session as checker, c251 only from a
+wider crop (`l14/gloss_c251_readB.tsv`, every word M). Reader B's c251 gloss runs, roughly: "par mes dernieres precedentes j'ay represente a
+V. M. le miserable [gouvernement] de cest estat; le chef est tellement enveloppe de l'affection qu'il porte aux femmes ... beaucoup diminue
+de sa splendeur ... a laisse introduire telle outrecuidance et corruption tant en ses armees que [en] ses ministres ... prevoir le grand
+inconvenient ... luy a donne une grande craincte tellement qu'il a faict ... pour sa mere ... son filz ..."; reader A's c252 has "Andrinople",
+"l'Europe", "galleres", "nuict", "sang". Both readers agree on: corruption, l'affection, femmes, diminué, grand, introduire, "quil a faict",
+"la Cour", "son fils"-type words. Reader agreement was not scored line by line (c252 read once only).
+**Collation** (`l14/collate.py`, PX-BRODEC normalisation, only words a reader did not mark uncertain; word LCS recall of gloss in print):
+| gloss reading | vs main col. pp.499-502 | control: 11/20 juin 1586 main col. | shuffled gloss | vs main + notes pp.499-507 | shuffled gloss |
+|---|---|---|---|---|---|
+| A (61 words) | 0.197 | 0.197 | 0.199 | 0.328 | 0.325 |
+| B (95 words) | 0.253 | 0.274 | 0.233 | 0.432 | 0.423 |
+PREREG rule: recall <= control + 0.10 -> UNRELATED (both readers, both print spans; against main+notes the length-matched null is the shuffle,
+and recall exceeds it by 0.003-0.009). Shared words are function words plus "affection", "corruption", "ministres", "dernieres" used in other
+sentences. Whole-volume grep of the djvu for gloss words: "outrecuidance" 0, "aux femmes" 0, "miserable" 0 hits.
+**Verdict: unrelated.** The L14 gloss is not a decipherment of any passage Charrière IV prints; Charrière's quotation stops where the cipher
+starts, so for this letter the print gives no clear text for the cipher span and yields no known-plaintext pair for the key from print. The
+gloss itself remains a period decipherment over the c251-252 cipher lines (the clerk's, unread at H here, grade M), i.e. the L14 known-plaintext
+pair is gloss <-> cipher, not print <-> cipher, and it needs a proper two-pass gloss transcription before use. Cipher span it sits over: c251
+cipher lines 1-21 (from "... la Mer," to the foot) and c252 lines 1-10, ending before "Sire à toutes les occasions". No key edit. Not found:
+the gloss's sentences in Charrière IV (whole volume, by grep and collation). Not searched: other printed sources for this letter.
+Suggestion (one line, not done): a two-pass blind transcription of the c251-252 margin gloss on wider native crops (left edge at pct x=0),
+~2 Sonnet passes + 1 reconcile, ~$2, then add it beside c380's gloss as alignment input for the table recovery gap. Requests: openapi.bnf.fr 5
+(all 200), archive.org 1 (200). Subagent calls: 1 Sonnet read.
