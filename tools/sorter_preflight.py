@@ -80,8 +80,20 @@ last line names it under "not checked"):
               half a minute a page, so the CLI runs it by default (`--no-pan` skips it, saying so) and a library call only when asked
               (`pan=True`). The full behaviour (four directions, both views, pinch, Fix the cut, the brush, the iPhone SE buttons) is
               test_pan.js on the fixtures, in run_all.sh.
+ 8. owner rows R12-R16 (SORTER-FIX-R12-R16, 15 Oct 2026; tools/data/sorter_owner_requirements.tsv, the Vivonne f.201r and f.191r
+              packets of 14-15 Oct 2026), one line each:
+              R12/R16  the question card (step 2) has no "Fix the cut" (#s2Fix): the person judges from the line strip and the only
+                       box answer is "Bad cut"; on template 2026-10-15.1 a cut saved from a sign's card never answers it (the
+                       behaviour itself is browser_tests/test_r12_r16.js). Always a hard check.
+              R13      a page with question tiles builds its piles from the person's settled piles (tools/sign_sorter.py
+                       --piles-from: DATA.pilesFrom), never from reader or machine labels.
+              R14      a page with question tiles carries a passed box check (--box-check: DATA.boxCheck, >= 90% of question boxes).
+              R15      on a --piles-from page: no tile in two piles, no waiting tile inside a pile, the waiting box is a queue
+                       (DATA.queue), and piles sharing a meaning carry "same letter, two shapes" (DATA.sameLetter); hard always.
+              R13 and R14 are hard for a page going to the owner (--owner-page, or --expect-owner-account); otherwise they print
+              WARN and do not fail, so a first-sort page or a fixture is still checked for shape. n/a with no question tiles.
  --expect-owner-account  also fail unless CIPHERLAB_ACCOUNT is 'owner' (ASKS 145: a page published from another
-              account is private to it, and the owner gets "deleted or not available").
+              account is private to it, and the owner gets "deleted or not available"); implies --owner-page.
 
 Must NOT block (each has an offline test in tools/tests/test_sorter_preflight.py; the colour check's are in test_sign_sorter_cvd.py:
 "ordered", "required" and "entered" in a hint, and "green" in a pile name or a data value):
@@ -338,6 +350,38 @@ def check_template(html):
                                '; '.join(why) + ' -- re-render with tools/sorter_rerender.py')
 
 
+def check_owner_rows(html, data, owner_page=False):
+    """Check 8 (owner rows R12-R16): -> list of (ok, line); ok None = n/a, 'warn' = printed WARN, not a failure."""
+    out = []
+    if html is not None:
+        has = 'id="s2Fix"' in html
+        out.append((not has, 'R12/R16: ' + ('the question card has "Fix the cut" (#s2Fix): the person is never asked to fix a cut, and its Save '
+                                         'cut answered the sign -- re-render on template 2026-10-15.1' if has else
+                                         'no "Fix the cut" on the question card; "Bad cut" is its only box answer')))
+    qs = [f for f in data.get('focus') or []] + [r for r in data.get('rank') or [] if r.get('sid')]
+    if not qs:
+        out.append((None, 'R13/R14/R15: n/a (no question tiles)'))
+        return out
+    miss = False if owner_page else 'warn'   # an unmet R13/R14 row: a failure for an owner page, else a warning
+    pf = bool(data.get('pilesFrom'))
+    out.append((True if pf else miss, 'R13: ' + ('piles built from the person\'s settled piles (--piles-from)' if pf else
+               'piles are reader or machine labels, not settled piles: a question page for the owner is built with tools/sign_sorter.py --piles-from')))
+    bc = data.get('boxCheck') or {}
+    if bc.get('of'):
+        r = bc['pass'] / bc['of']
+        out.append((True if r >= 0.90 else miss, f"R14: box check {bc['pass']}/{bc['of']} ({r:.0%}, gate 90%) [{bc.get('file', '?')}]"))
+    else:
+        out.append((miss, 'R14: no box check recorded: build with --box-check (>= 90% of question boxes one whole sign)'))
+    if pf:
+        import sign_sorter
+        fails = sign_sorter.piles_check(data)
+        out.append((not fails, 'R15: ' + ('no tile in two piles, no waiting tile in a pile, waiting box a queue, every shared meaning noted ('
+                                          + str(len(data.get('sameLetter') or [])) + ' same-letter groups)' if not fails else '; '.join(fails))))
+    else:
+        out.append((miss, 'R15: no waiting queue (DATA.queue): question tiles are shown in their piles; build with --piles-from'))
+    return out
+
+
 def check_answerable(data):
     piles = {p['id'] for p in data['piles']}
     sids = {it['sid'] for p in data['piles'] for it in p['items']}
@@ -544,7 +588,7 @@ def check_pan(page, timeout=600, env=None, runner=None):
 
 
 def run(page=None, inputs=None, cipher_lines=None, expect_owner=False, sheet=None, seed=20261006, quiet=False, search=(), pages_json=None,
-        gestures=False, pan=False):
+        gestures=False, pan=False, owner_page=False):
     """-> (ok, lines). Used by tools/sign_sorter.py after a build. gestures=True runs check 6 (a minute or more a page; the CLI
     default); otherwise it prints `SKIP gestures (not run by this call ...)`. pan=True runs check 7 (half a minute; the CLI default);
     otherwise `SKIP pan (not run by this call ...)`."""
@@ -561,6 +605,8 @@ def run(page=None, inputs=None, cipher_lines=None, expect_owner=False, sheet=Non
     res = []
     res.append(check_template(html)[:2])
     res.append(check_answerable(data))
+    owner_rows = check_owner_rows(html, data, owner_page or expect_owner)
+    res.extend(owner_rows)
     ok3, m3, flags = check_lines(data, imgs, scale, cl)
     res.append((ok3, m3 + (f' [list: {os.path.relpath(clp)}]' if clp else '')))
     out = sheet or (os.path.splitext(page)[0] + '.preflight.png' if page else os.path.join(base, 'preflight.png'))
@@ -590,7 +636,8 @@ def run(page=None, inputs=None, cipher_lines=None, expect_owner=False, sheet=Non
         res.append((acct == 'owner', f'account: CIPHERLAB_ACCOUNT={acct or "unset"}' +
                     ('' if acct == 'owner' else ' -- publish from the owner account, or the owner cannot open it (ASKS 145)')))
     ok = all(r[0] is not False for r in res)
-    lines = [r[1] if r[0] is None and r[1].startswith('SKIP ') else ('PASS ' if r[0] else 'n/a  ' if r[0] is None else 'FAIL ') + r[1] for r in res]
+    lines = [r[1] if r[0] is None and r[1].startswith('SKIP ') else ('WARN ' if r[0] == 'warn' else 'PASS ' if r[0] else 'n/a  ' if r[0] is None else 'FAIL ') + r[1]
+             for r in res]
     partial = [w for w, gone in (('template', html is None), ('ink, strip-height, contact sheet', not imgs),
                                  ('gestures', any(r[0] is None and r[1].startswith('SKIP gestures') for r in res)),
                                  ('pan', any(r[0] is None and r[1].startswith('SKIP pan') for r in res))) if gone]
@@ -607,6 +654,7 @@ def main(argv=None):
     ap.add_argument('--inputs', help='instead of a page: a folder with signs.tsv, labels.tsv, focus.tsv [, pages/]')
     ap.add_argument('--cipher-lines', help='the cipher-line list (ids, optional x0 x1); default cipher_lines.tsv or segment_pages.txt beside the page/inputs')
     ap.add_argument('--expect-owner-account', action='store_true')
+    ap.add_argument('--owner-page', action='store_true', help='a page going to the owner: owner rows R13 and R14 fail instead of warning (check 8)')
     ap.add_argument('--sheet', help='contact sheet path (default <page stem>.preflight.png)')
     ap.add_argument('--seed', type=int, default=20261006)
     ap.add_argument('--cvd', nargs='?', const=TEMPLATE, metavar='PAGE_OR_TEMPLATE',
@@ -635,7 +683,8 @@ def main(argv=None):
         sys.exit(0 if ok is not False else 1)
     if bool(a.page) == bool(a.inputs):
         ap.error('give a page or --inputs DIR')
-    ok, _ = run(a.page, a.inputs, a.cipher_lines, a.expect_owner_account, a.sheet, a.seed, pages_json=a.pages_json, gestures=not a.no_gestures, pan=not a.no_pan)
+    ok, _ = run(a.page, a.inputs, a.cipher_lines, a.expect_owner_account, a.sheet, a.seed, pages_json=a.pages_json, gestures=not a.no_gestures, pan=not a.no_pan,
+                owner_page=a.owner_page)
     sys.exit(0 if ok else 1)
 
 

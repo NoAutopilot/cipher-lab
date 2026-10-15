@@ -83,6 +83,14 @@ Active sorter (TX-SORTER, 3 Oct 2026; TRANSCRIPTION.md pipeline step 7):
   Must NOT be read as: a probability that the label is wrong, or a decode score. The confusion score is a triage
   order; only a lattice score (--rank) speaks for the reading, and even that ranks, it does not grade.
 
+Owner rows R12-R16 (SORTER-FIX-R12-R16, 15 Oct 2026; template 2026-10-15.1): a question page for the owner is built with
+  --piles-from SETTLED.tsv [--piles-from ...] [--later-wins | --drop-conflicts] [--certain TSV] [--meanings key.tsv] [--tiles-from PAGE.html ...]
+  --focus focus.tsv --box-check boxes_handcut.tsv
+piles only from the person's settled piles, the questions as a waiting queue (never a pile), "same letter, two shapes" on piles of one
+meaning; the build stops (exit 2, no page) on a tile in two piles, a waiting tile inside a pile, an un-noted shared meaning, or a box
+check under 90% (failing sids printed). See the --piles-from block above KEYS for the rules and what they must not block. The gates check
+structure, not shape: eye the piles before publishing.
+
 Size (N4-NXS, 4 Oct 2026): the page embeds every tile and every page image, so a long letter overruns the Artifact's
 16 MB (Noailles c510-516, 9,863 tiles: 92 MB at the defaults). --thumb, --tile-quality (greyscale JPEG tiles) and --page-scale /
 --page-quality (smaller context images; the page scales the boxes by DATA.pageScale) bring it down; the build prints the size.
@@ -645,6 +653,198 @@ def add_region(data, region_p, out, long_side=4000, quality=60, embed=False):
           f"{len(reg['lines'])} lines", file=sys.stderr)
 
 
+# ---------- --piles-from: piles built only from a person's settled piles (SORTER-FIX-R12-R16, 15 Oct 2026) ----------
+# Owner rows R13-R16 of tools/data/sorter_owner_requirements.tsv (14-15 Oct 2026, Vivonne f.201r and f.191r packets): "Each of the
+# piles it showed had an intermix of symbols"; "i see a symbol in multiple piles". A question page's piles were the readers' labels
+# (filtered to truth-consistent tiles), and a label merges shapes, so 18 of 34 answers on the f.191r packet were "new sign".
+# With --piles-from the piles come ONLY from sign_sorter_apply.py output (sid, old_sign, new_sign, status): a tile is in pile
+# new_sign when every file that names it says moved/kept into that same pile; a tile one file sends to a pile and another to a
+# different pile or to the waiting box (unsorted, unsorted-b, ...), aside, bad cut or taken out is a conflict and is never shown.
+# --certain TSV (sid, sign) adds known-answer tiles, but only to a pile the person's settled rows already formed (a certain answer
+# says which letter, not which shape, so it never founds a pile). The question tiles (--focus) go in the waiting box DATA.queue,
+# which the template draws as a queue, never as a pile (R15). --meanings key.tsv (code, meaning): two piles of one meaning carry the
+# visible note "same letter, two shapes" (R15), and DATA.sameLetter lists the groups (pile names only, no meaning) for the preflight.
+# piles_check() is the build-time gate (exit 2, no page written): (a) a tile in two piles, (b) a question tile inside any pile (or a
+# non-question tile in the queue), (c) two piles of one meaning without the note. Catches: the f.191r packet's z pile holding the
+# waiting tile's look-alike (R15), a tile the owner moved out of a pile in attempt 2 shown back in it. Must NOT block: a pile the
+# person made himself (z-b, NEW-c) with no meaning, a tile both attempts kept in the same pile, a page with no question tiles.
+QUEUE_ID = 'unsorted'
+NOT_A_PILE = re.compile(r'^(?:unsorted(?:-[A-Za-z0-9]+)?|BAD-CUT|NOT-LETTER|ASIDE|OUT|\?.*|_|)$')
+SAME_LETTER = 'same letter, two shapes'
+BOX_CHECK_MIN = 0.90
+
+
+def rows_tsv(path):
+    """TSV rows, '#' comment lines skipped (box_check.tsv, boxes_handcut.tsv and piles.tsv open with one)."""
+    with open(path, newline='') as f:
+        return list(csv.DictReader((l for l in f if not l.startswith('#')), delimiter='\t'))
+
+
+def read_settled(paths, later_wins=False):
+    """-> (pile_of {sid: pile}, conflicts {sid: sorted answers}, unsettled [sid]). An answer is the pile for a moved/kept row whose
+    new_sign is a pile name, else '~' + status (or '~queue' for the waiting box). later_wins (--later-wins): the files are in time
+    order and a sid's answer in a later file replaces its answer in an earlier one (a person's re-answer on a later page); the
+    replaced answers are returned in conflicts all the same, for the report, but do not stop the build."""
+    seen, replaced = defaultdict(set), {}
+    for p in paths:
+        mine = defaultdict(set)
+        for r in rows_tsv(p):
+            sid, new, status = r.get('sid', ''), (r.get('new_sign') or '').strip(), (r.get('status') or '').strip()
+            if not sid:
+                continue
+            if status in ('moved', 'kept') and not NOT_A_PILE.match(new):
+                mine[sid].add(new)
+            else:
+                mine[sid].add('~queue' if status in ('moved', 'kept') else '~' + (status or 'none'))
+        for sid, v in mine.items():
+            if later_wins and sid in seen and seen[sid] != v:
+                replaced[sid] = sorted(seen[sid]) + ['->'] + sorted(v)
+                seen[sid] = set(v)
+            else:
+                seen[sid] |= v
+    pile_of, conflicts, unsettled = {}, {}, []
+    for sid, v in seen.items():
+        piles = [x for x in v if not x.startswith('~')]
+        if len(v) == 1 and piles:
+            pile_of[sid] = piles[0]
+        elif piles:
+            conflicts[sid] = sorted(v)
+        else:
+            unsettled.append(sid)
+    if later_wins:
+        return pile_of, {'replaced': replaced, 'conflicts': conflicts}, sorted(unsettled)
+    return pile_of, conflicts, sorted(unsettled)
+
+
+def read_meanings(path):
+    """key.tsv (code, meaning[, ...]) -> {code: meaning}; '' meanings and '?' are left out."""
+    out = {}
+    for r in rows_tsv(path):
+        c, m = (r.get('code') or r.get('sign') or '').strip(), (r.get('meaning') or r.get('value') or '').strip()
+        if c and m and m != '?':
+            out[c] = m
+    return out
+
+
+def tiles_from_pages(paths):
+    """Tiles and line images from built sorter pages (their DATA): -> (items {sid: item}, pages {page: b64}, mime, page_scale).
+    The first page that holds a sid wins. Used when the line crops are not on disk but the committed pages carry them."""
+    import sorter_preflight
+    items, pages, mime, scale = {}, {}, None, None
+    for p in paths:
+        d, _ = sorter_preflight.load_html(p)
+        m, s = d.get('tileMime', 'image/png'), d.get('pageScale', 1.0)
+        if mime is None:
+            mime, scale = m, s
+        elif (m, s) != (mime, scale):
+            raise ValueError(f'{p}: tileMime/pageScale {m}/{s} differ from the first page ({mime}/{scale}); rebuild one of them')
+        for pl in d['piles']:
+            for it in pl['items']:
+                if it['sid'] not in items:
+                    items[it['sid']] = {'sid': it['sid'], 'img': it['img'], 'p': it['p'], 'b': list(it['b'])}
+        for k, v in (d.get('pages') or {}).items():
+            pages.setdefault(k, v)
+    return items, pages, mime or 'image/png', scale or 1.0
+
+
+def piles_from(items, pile_of, focus_sids, certain=None, meanings=None):
+    """-> (data, report). items: {sid: tile item}; pile_of: settled {sid: pile}; focus_sids: question tiles (the queue)."""
+    rep = {'missing_tile': [], 'certain_added': 0, 'certain_no_pile': [], 'certain_conflict': []}
+    focus = [s for s in focus_sids if s in items]
+    rep['missing_tile'] = [s for s in list(pile_of) + list(focus_sids) if s not in items]
+    qset = set(focus)
+    piles = defaultdict(list)
+    for sid, pl in sorted(pile_of.items()):
+        if sid in items and sid not in qset:
+            piles[pl].append(sid)
+    founded = set(piles)
+    for sid, pl in (certain or {}).items():
+        if sid in qset or sid not in items:
+            continue
+        if sid in pile_of:
+            if pile_of[sid] != pl:
+                rep['certain_conflict'].append(sid)
+            continue
+        if pl not in founded:
+            rep['certain_no_pile'].append(sid); continue
+        piles[pl].append(sid); rep['certain_added'] += 1
+    out = [{'id': k, 'family': k, 'items': [dict(items[s], d=0) for s in v], 'near': []} for k, v in sorted(piles.items())]
+    groups = defaultdict(list)
+    for p in out:
+        if meanings and p['id'] in meanings:
+            groups[meanings[p['id']]].append(p['id'])
+    same = [sorted(g) for g in groups.values() if len(g) > 1]
+    for g in same:
+        for p in out:
+            if p['id'] in g:
+                p['note'] = SAME_LETTER + ': also pile ' + ', '.join(x for x in g if x != p['id'])
+    if focus:
+        out.append({'id': QUEUE_ID, 'family': 'Waiting to be placed', 'items': [dict(items[s], d=0) for s in focus], 'near': []})
+    data = {'piles': out, 'skipped': len(rep['missing_tile']), 'queue': [QUEUE_ID] if focus else [], 'pilesFrom': True,
+            'sameLetter': sorted(same), '_meanings': {p['id']: meanings[p['id']] for p in out if meanings and p['id'] in meanings}}
+    return data, rep
+
+
+def piles_check(data):
+    """Build-time gate for a --piles-from page (R13, R15): -> list of failures, [] = pass. Also run by tools/sorter_preflight.py."""
+    fails = []
+    queue = set(data.get('queue') or [])
+    qs = {f['sid'] for f in data.get('focus') or []} | {r['sid'] for r in data.get('rank') or [] if r.get('sid')}
+    where = defaultdict(list)
+    for p in data['piles']:
+        for it in p['items']:
+            where[it['sid']].append(p['id'])
+    two = sorted(s for s, v in where.items() if len(v) > 1)
+    if two:
+        fails.append(f'(a) {len(two)} tile(s) in two piles: ' + ', '.join(f'{s} ({"/".join(where[s])})' for s in two[:10]))
+    shown = sorted(s for s in qs if any(pid not in queue for pid in where.get(s, [])))
+    if shown:
+        fails.append(f'(b) {len(shown)} waiting tile(s) shown inside a pile: ' + ', '.join(f'{s} ({"/".join(where[s])})' for s in shown[:10]))
+    stray = sorted(s for p in data['piles'] if p['id'] in queue for s in (it['sid'] for it in p['items']) if s not in qs)
+    if stray:
+        fails.append(f'(b) {len(stray)} non-question tile(s) in the waiting box (never shown there): ' + ', '.join(stray[:10]))
+    if qs and not queue:
+        fails.append('(b) question tiles but no waiting box (DATA.queue): they would be shown inside a pile')
+    note = {p['id']: p.get('note') or '' for p in data['piles']}
+    groups = list(data.get('sameLetter') or [])
+    mean = data.get('_meanings') or {}
+    if mean:
+        by = defaultdict(list)
+        for pid, m in mean.items():
+            if pid in note:
+                by[m].append(pid)
+        groups += [sorted(g) for g in by.values() if len(g) > 1]
+    bad = sorted({pid for g in groups for pid in g if pid in note and SAME_LETTER not in note[pid]})
+    if bad:
+        fails.append(f'(c) {len(bad)} pile(s) share a meaning with another pile but carry no "{SAME_LETTER}" note: ' + ', '.join(bad))
+    return fails
+
+
+def box_check_gate(path, focus):
+    """R14: -> (ok, line, failing sids). path: box_check.tsv or boxes_handcut.tsv with a `check` column (pass/fail per question),
+    rows keyed by `sid` or by `qid` (the focus question's own "Qnn:" prefix). A question with no row counts as failing.
+    ok None = no file (a warning naming the rule)."""
+    if not focus:
+        return True, 'box check: n/a (no question tiles)', []
+    if not path:
+        return None, ('WARNING R14: no box-check file (--box-check box_check.tsv|boxes_handcut.tsv with a check column); owner rule R14 '
+                      f'(tools/data/sorter_owner_requirements.tsv) needs >= {BOX_CHECK_MIN:.0%} of question boxes eyed as one whole sign before a page goes to the person'), []
+    rows = rows_tsv(path)
+    if not rows or 'check' not in rows[0]:
+        return False, f'box check: {path} has no `check` column (pass/fail per question box): refused (R14)', [f['sid'] for f in focus]
+    by_sid = {r['sid']: r for r in rows if r.get('sid')}
+    by_q = {r['qid']: r for r in rows if r.get('qid')}
+    fail = []
+    for f in focus:
+        m = re.match(r'\s*(Q\d+)\s*:', f.get('q', ''))
+        r = by_sid.get(f['sid']) or (by_q.get(m.group(1)) if m else None)
+        if not r or (r.get('check') or '').strip().lower() != 'pass':
+            fail.append(f['sid'])
+    n, k = len(focus), len(focus) - len(fail)
+    ok = k / n >= BOX_CHECK_MIN
+    return ok, (f'box check: {k}/{n} question boxes pass ({k / n:.0%}, gate {BOX_CHECK_MIN:.0%}) [{path}]' +
+                ('' if ok else ' -- refused (R14); failing: ' + ', '.join(fail))), fail
+
 KEYS = ('box',)   # page keys the template carries (OPTS.key): 'box' = "What to do: a key" for a box-check page (template 2026-10-09.6)
 
 
@@ -671,11 +871,63 @@ def render(data, title, lede, focus_to_tray=True, key=None):
             .replace('__DATA__', json.dumps(data).replace('</', '<\\/')))
 
 
+def build_piles_from(a):
+    """--piles-from: data for the page (piles from settled rows, the --focus tiles as the queue), with a printed report."""
+    pile_of, conflicts, unsettled = read_settled(a.piles_from, later_wins=a.later_wins)
+    if a.later_wins:
+        repl, conflicts = conflicts['replaced'], conflicts['conflicts']
+        if repl:
+            print(f'--later-wins: {len(repl)} tile(s) re-answered in a later file, the later answer stands: ' +
+                  '; '.join(f'{s} {"/".join(v[:v.index("->")])} -> {"/".join(v[v.index("->") + 1:])}' for s, v in sorted(repl.items())))
+    if conflicts:
+        print(f'{len(conflicts)} tile(s) settled differently by the --piles-from files: ' +
+              '; '.join(f'{s} {"/".join(v)}' for s, v in sorted(conflicts.items())))
+        if not a.drop_conflicts:
+            print('stopped: a tile in two piles fails the build (R13); pass --drop-conflicts to leave them off the page', file=sys.stderr)
+            sys.exit(2)
+        print(f'  left off the page (--drop-conflicts): {len(conflicts)}')
+    focus_sids = [r[0] for r in (l.rstrip('\n').split('\t') for l in open(a.focus)) if len(r) >= 2] if a.focus else []
+    certain = {r['sid']: r.get('sign') or r.get('new_sign') or r.get('code') for r in rows_tsv(a.certain)} if a.certain else {}
+    want = set(pile_of) | set(focus_sids) | set(certain)
+    if a.tiles_from:
+        items, pages, mime, scale = tiles_from_pages(a.tiles_from)
+    else:
+        if not a.signs:
+            sys.exit('--piles-from needs --tiles-from PAGE.html or --signs signs.tsv --pages DIR')
+        import tempfile
+        lab = os.path.join(tempfile.mkdtemp(prefix='sorter_pf_'), 'labels.tsv')
+        with open(lab, 'w') as f:
+            f.write('sid\tsign\n' + ''.join(f'{s}\tx\n' for s in sorted(want)))
+        d0 = build(a.signs, lab, a.pages, a.marks, thumb=a.thumb, tile_q=a.tile_quality, page_scale=a.page_scale, page_q=a.page_quality)
+        items = {it['sid']: it for p in d0['piles'] for it in p['items']}
+        pages, mime, scale = d0['pages'], d0['tileMime'], d0['pageScale']
+    data, rep = piles_from(items, pile_of, focus_sids, certain, read_meanings(a.meanings) if a.meanings else None)
+    used = {it['p'] for p in data['piles'] for it in p['items']}
+    data.update({'pages': {k: v for k, v in pages.items() if k in used}, 'tileMime': mime, 'pageScale': scale})
+    print(f'--piles-from: {len(pile_of)} settled tiles, {len(unsettled)} unsettled (queue/aside/bad-cut/taken-out) left off, '
+          f'{len(conflicts)} conflicts, {rep["certain_added"]} certain tiles added, {len(rep["certain_no_pile"])} certain tiles with no settled pile '
+          f'left off, {len(rep["certain_conflict"])} certain tiles settled elsewhere (settled pile kept), {len(rep["missing_tile"])} sids with no tile; '
+          f'{sum(1 for p in data["piles"] if p["id"] not in data["queue"])} piles, {len(focus_sids)} waiting; same-letter groups: '
+          + ('; '.join('/'.join(g) for g in data['sameLetter']) or 'none'))
+    return data
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--signs'); ap.add_argument('--labels')
     ap.add_argument('--atlas-topk', nargs='+', help='glyph_atlas classify --topk files instead of --signs/--labels')
-    ap.add_argument('--pages', required=True); ap.add_argument('--marks')
+    ap.add_argument('--pages'); ap.add_argument('--marks')
+    ap.add_argument('--piles-from', action='append', metavar='SETTLED.tsv', help='build the piles ONLY from a person\'s settled piles '
+                    '(sign_sorter_apply.py --out: sid, old_sign, new_sign, status moved|kept); repeatable; the --focus tiles become the waiting '
+                    'queue (owner rows R13, R15). A tile two files settle differently is a conflict: the build stops unless --drop-conflicts')
+    ap.add_argument('--later-wins', action='store_true', help='--piles-from: files are in time order; a later file\'s answer for a tile replaces an earlier one (listed)')
+    ap.add_argument('--drop-conflicts', action='store_true', help='--piles-from: leave conflicting tiles off the page (listed) instead of stopping')
+    ap.add_argument('--certain', metavar='TSV', help='--piles-from: known-answer tiles (sid, sign) added only to a pile the settled rows formed')
+    ap.add_argument('--meanings', metavar='KEY.tsv', help='--piles-from: code, meaning; two piles of one meaning get the note "same letter, two shapes" (R15)')
+    ap.add_argument('--tiles-from', nargs='+', metavar='PAGE.html', help='--piles-from: take tiles and line images from built sorter pages '
+                    '(their embedded DATA) instead of --signs/--pages')
+    ap.add_argument('--box-check', metavar='TSV', help='box_check.tsv or boxes_handcut.tsv with a `check` column (pass/fail per question): '
+                    'the build refuses a question page under 90%% pass (owner row R14); without it the build warns')
     ap.add_argument('--title'); ap.add_argument('--out')
     ap.add_argument('--lede', default='Every sign of the cipher, cut out and piled by the label our readers gave it. '
                     'Settle the alphabet: which piles are one sign, which tiles sit in the wrong pile, and which '
@@ -744,7 +996,11 @@ def main(argv=None):
         for r in rows:
             print(f"{r['seed']}\t{r['planted']}\t{r['recall']}\t{r['shuffled_p95']}\t{r['shuffled_mean']}")
         print(json.dumps(summ)); return
-    if a.atlas_topk:
+    if not a.oddness_audit and not a.pages and not (a.piles_from and a.tiles_from):
+        ap.error('--pages is required (or --piles-from with --tiles-from)')
+    if a.piles_from:
+        pass
+    elif a.atlas_topk:
         import tempfile
         a.signs, a.labels = atlas_topk_inputs(a.atlas_topk, tempfile.mkdtemp(prefix='sorter_'))
     elif not (a.signs and a.labels):
@@ -759,8 +1015,11 @@ def main(argv=None):
         why = nonblind_refusal(a.key_family, a.blind_sort, sids_)
         if why:
             print('refused: ' + why, file=sys.stderr); sys.exit(2)
-    data = build(a.signs, a.labels, a.pages, a.marks, thumb=a.thumb, clusters=read_clusters(a.clusters) if a.clusters else None,
-                 tile_q=a.tile_quality, page_scale=a.page_scale, page_q=a.page_quality)
+    if a.piles_from:
+        data = build_piles_from(a)
+    else:
+        data = build(a.signs, a.labels, a.pages, a.marks, thumb=a.thumb, clusters=read_clusters(a.clusters) if a.clusters else None,
+                     tile_q=a.tile_quality, page_scale=a.page_scale, page_q=a.page_quality)
     data['blind'] = blind
     if blind:
         data['mode'] = 'blind'; data['seedNote'] = SEED_SHAPE_NOTE if a.seed_shape else SEED_NOTE
@@ -791,6 +1050,21 @@ def main(argv=None):
                          for r in (l.rstrip('\n').split('\t') for l in open(a.focus)) if len(r) >= 2]
         data['focusNote'] = blind_note(a.focus_note) if blind else a.focus_note
         focus_sids = [f['sid'] for f in data['focus']]
+    if data.get('pilesFrom'):   # R13/R15 build-time gate: no page is written on a failure
+        fails = piles_check(data)
+        print('piles check (R13, R15): ' + ('PASS (a) no tile in two piles, (b) no waiting tile inside a pile, (c) every shared meaning noted'
+                                            if not fails else 'FAIL'))
+        for f_ in fails:
+            print('  ' + f_)
+        if fails:
+            sys.exit(2)
+    ok_b, line_b, _ = box_check_gate(a.box_check, data.get('focus'))
+    print(line_b, file=sys.stderr if ok_b is None else sys.stdout)
+    if ok_b is False:
+        sys.exit(2)
+    if ok_b and data.get('focus'):
+        _bk = line_b.split(': ', 1)[1].split(' ', 1)[0].split('/')
+        data['boxCheck'] = {'pass': int(_bk[0]), 'of': int(_bk[1]), 'file': os.path.basename(a.box_check)}
     if a.rank:
         data['rank'] = read_rank(a.rank)
         if blind:   # an order only: strip machine phrases, keep the candidate piles as a seeded-random "Which pile?"
@@ -827,8 +1101,8 @@ def main(argv=None):
         print('WARNING: over 15 MB; the Artifact limit is 16 MB', file=sys.stderr)
     if not a.no_preflight:   # SORTER-PREFLIGHT (6 Oct 2026): the gate before publishing; a FAIL is printed, the build stands
         import sorter_preflight
-        sorter_preflight.run(page=a.out, cipher_lines=a.cipher_lines, search=[os.path.dirname(os.path.abspath(a.signs))],
-                             pages_json=a.pages if a.pages.endswith('.json') else None)   # real page colours for the colour check's box test
+        sorter_preflight.run(page=a.out, cipher_lines=a.cipher_lines, search=[os.path.dirname(os.path.abspath(a.signs or a.out))],
+                             pages_json=a.pages if a.pages and a.pages.endswith('.json') else None)   # real page colours for the colour check's box test
 
 
 if __name__ == '__main__':

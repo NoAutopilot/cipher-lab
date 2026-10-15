@@ -129,7 +129,12 @@ with tempfile.TemporaryDirectory() as d:
     os.environ['CIPHERLAB_ACCOUNT'] = 'acct4'
     check('--expect-owner-account on another account: FAIL', not run(good, str(cl), expect_owner=True)[0])
     os.environ['CIPHERLAB_ACCOUNT'] = 'owner'
-    check('--expect-owner-account on the owner account: PASS', run(good, str(cl), expect_owner=True)[0])
+    ok_, ls_ = run(good, str(cl), expect_owner=True)
+    fl_ = [l for l in ls_ if l.startswith('FAIL ')]
+    # since SORTER-FIX-R12-R16 (15 Oct 2026) --expect-owner-account is an owner page: a question page piled by reader labels with no box
+    # check is held on owner rows R13/R14/R15 (preflight check 8) and on nothing else; the account line itself passes
+    check('--expect-owner-account on the owner account: the account line PASSes; a reader-label question page is held only on R13/R14/R15',
+          any(l.startswith('PASS account:') for l in ls_) and not ok_ and fl_ and all(l.startswith(('FAIL R13', 'FAIL R14', 'FAIL R15')) for l in fl_))
     seg = d / 'segment_pages.txt'; seg.write_text('--page L01=<s>/a.jpg --page L02=<s>/b.jpg@0,0,9,9\n')
     check('segment_pages.txt read as a cipher-line list', pf.read_cipher_lines(str(seg)) == {'L01': None, 'L02': None})
 

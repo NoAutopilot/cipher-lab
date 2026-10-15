@@ -1,5 +1,5 @@
 <!doctype html>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-09.7"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-15.1"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
 <title>__TITLE__</title>
 <style>
 /* Layout: a sorting bench in two steps (owner, 3 Oct 2026). Step 1: clean each pile -- tap a sign that does not belong
@@ -18,7 +18,11 @@
    The adversarial checks of 11 Oct 2026 (desktop, phones; browser_tests/test_wheel_edges.js): Ctrl + wheel also with the mouse button held,
    after a lost release and over the enlarged sign, and in the line strips the card scrolls so the ink under the pointer stays put; Alt /
    Ctrl / Cmd + arrows are the browser's; Enter saves a cut after a nudge click; iOS gesture events beside a finger pinch are not counted
-   twice; Fix the cut fits a 320 px phone. */
+   twice; Fix the cut fits a 320 px phone. Template 2026-10-15.1 (owner, 14-15 Oct 2026; rows R12-R16, SORTER-FIX-R12-R16): step 2's
+   question card no longer has "Fix the cut" (R16: the person is never asked to fix a cut; "Bad cut" is the only box answer there), and a
+   cut saved from a sign's card never answers it (R12: a waiting sign stays waiting and placeable); a page built with
+   `tools/sign_sorter.py --piles-from` names its waiting box in DATA.queue: that box is a queue, not a pile -- never drawn as a pile, never
+   offered as a card, no "keep it there" answer -- and a pile carrying DATA.piles[].note (two piles, one letter) shows the note (R13, R15). */
 :root{
   --bg:#f3f1ec; --surface:#fbfaf7; --ink:#24211c; --muted:#6b655b; --line:#d9d4c9;
   /* Colour-blind safe (MQS-SORTER, 9 Oct 2026; Okabe-Ito, tools/cvd_check.py PALETTES['sorter_light'|'dark']): no state is told by hue
@@ -113,6 +117,7 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 #focus{margin-top:20px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 12px}
 .ftitle{font-family:var(--f-display);font-weight:600;font-size:1.3rem;margin:0}
 .fcap{font-size:.72rem;color:var(--muted);text-align:center;max-width:var(--sz)}
+.pnote{font-size:.8rem;color:var(--ink);border:1px dotted var(--ink);background:var(--warn-soft);padding:2px 6px;margin:2px 0 4px;display:inline-block}
 .near{font-size:.8rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center}
 .near button{font-size:.78rem;padding:1px 7px;font-family:var(--f-mono)}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:5px;overflow:hidden}
@@ -252,7 +257,6 @@ body.traypad #offer{bottom:100px}
 #fixBrush[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
 #fixBrushRow{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
 #fixSave{font-weight:600;background:var(--accent);color:var(--bg);border-color:var(--accent)}
-#s2Fix{font-weight:600}   /* step 2 (template 2026-10-09.6): the card with the box editor on, for the sign being placed */
 /* the box-check key (OPTS.key = "box", template 2026-10-09.6) */
 #boxKey[hidden]{display:none}
 #boxKey{margin:14px 0 0;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 12px}
@@ -345,7 +349,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
        tools/sorter_rerender.py; owner, 10 Oct 2026: "add a simple key at the top explaining what to do in different situations with
        examples"). The drawings are neutral shapes, never a real sign; the machine's box is a solid outline, the box after the fix a
        dashed one (shape, not colour: the owner is red-green colour-blind). Removed from the page when the option is off. -->
-  <details id="boxKey" open hidden><summary>What to do: a key</summary><p class="kl"><b>Tap</b> a sign = put it aside in the tray. <b>Hold</b> a sign = open its card (large, on its line). Most fixes start with the card&rsquo;s <b>Fix the cut</b> button, which puts handles on the box; <b>Save cut</b>, <b>Add as a missed sign</b> and <b>Split</b> are right under it. Never read what a sign says: only where its box is.</p><p class="kl"><b>Step 2</b> (the boxes the machine was unsure of, one at a time): the first button under the sign is <b>Fix the cut</b>. Save cut or Split there checks the box and brings up the next one; <b>It was right</b> checks it as it is.</p><table><tr><td class="p"><svg viewBox="0 0 80 56" width="80" height="56" role="img" aria-hidden="true"><ellipse cx="40" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="28" y="17" width="24" height="28" fill="none" stroke="#0072B2" stroke-width="2"/></svg></td><td class="s">One sign, the box fits it (a little paper round it is fine)</td><td>Leave it. Nothing to do.</td></tr><tr><td class="p"><svg viewBox="0 0 190 56" width="190" height="56" role="img" aria-hidden="true"><path d="M28 19 L28 42 M24 42 L32 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><ellipse cx="50" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="20" y="16" width="42" height="31" fill="none" stroke="#0072B2" stroke-width="2"/><path d="M84 31 L100 31 M95 26 L100 31 L95 36" fill="none" stroke="currentColor" stroke-width="2"/><g transform="translate(108 0)"><path d="M20 19 L20 42 M16 42 L24 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><ellipse cx="42" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="14" y="16" width="14" height="31" fill="none" stroke="#0072B2" stroke-width="2"/><rect x="33" y="16" width="20" height="31" fill="none" stroke="#0072B2" stroke-width="2" stroke-dasharray="5 3"/></g></svg></td><td class="s">Two signs in one box</td><td><b>Hold</b> it. In the card press <b>Fix the cut</b> (the box gets handles). Pull its side in (drag it, or tap the <b>Right edge</b> arrows) until it holds only the first sign, then press <b>Split: keep this part, add the rest</b>. The rest becomes its own box.</td></tr><tr><td class="p"><svg viewBox="0 0 190 56" width="190" height="56" role="img" aria-hidden="true"><ellipse cx="40" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="26" y="17" width="12" height="28" fill="none" stroke="#0072B2" stroke-width="2"/><rect x="43" y="17" width="12" height="28" fill="none" stroke="#0072B2" stroke-width="2"/><path d="M84 31 L100 31 M95 26 L100 31 L95 36" fill="none" stroke="currentColor" stroke-width="2"/><g transform="translate(108 0)"><ellipse cx="32" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="21" y="17" width="23" height="28" fill="none" stroke="#0072B2" stroke-width="2" stroke-dasharray="5 3"/></g></svg></td><td class="s">One sign cut into two boxes</td><td><b>Hold</b> the first piece. In the card press <b>Fix the cut</b>, stretch the box over the whole sign, press <b>Save cut</b>. Then hold the other piece and press <b>Trash (not a sign)</b>: it is part of the first box now.</td></tr><tr><td class="p"><svg viewBox="0 0 190 56" width="190" height="56" role="img" aria-hidden="true"><path d="M36 8 C46 8 46 22 36 26 L36 44" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><rect x="26" y="22" width="26" height="26" fill="none" stroke="#0072B2" stroke-width="2"/><path d="M84 31 L100 31 M95 26 L100 31 L95 36" fill="none" stroke="currentColor" stroke-width="2"/><g transform="translate(108 0)"><path d="M28 8 C38 8 38 22 28 26 L28 44" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><rect x="18" y="4" width="26" height="44" fill="none" stroke="#0072B2" stroke-width="2" stroke-dasharray="5 3"/></g></svg></td><td class="s">The box cuts off part of the sign</td><td><b>Hold</b> it. In the card press <b>Fix the cut</b>, drag the edge out over the missing stroke, press <b>Save cut</b>.<span class="nbk"> Tick <b>Lines above and below</b> to see tall strokes.</span></td></tr><tr><td class="p"><svg viewBox="0 0 80 56" width="80" height="56" role="img" aria-hidden="true"><ellipse cx="40" cy="31" rx="9" ry="6" fill="currentColor" opacity=".28"/><rect x="28" y="21" width="24" height="20" fill="none" stroke="#0072B2" stroke-width="2"/></svg></td><td class="s">A box on a stain, a blot, the page edge or ink showing through from the back</td><td><b>Hold</b> it and press <b>Trash (not a sign)</b>.</td></tr><tr><td class="p"><svg viewBox="0 0 190 56" width="190" height="56" role="img" aria-hidden="true"><ellipse cx="26" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="15" y="17" width="23" height="28" fill="none" stroke="#0072B2" stroke-width="2"/><path d="M54 19 L54 42 M50 42 L58 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M84 31 L100 31 M95 26 L100 31 L95 36" fill="none" stroke="currentColor" stroke-width="2"/><g transform="translate(108 0)"><ellipse cx="18" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="7" y="17" width="23" height="28" fill="none" stroke="#0072B2" stroke-width="2"/><path d="M46 19 L46 42 M42 42 L50 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><rect x="38" y="15" width="16" height="32" fill="none" stroke="#0072B2" stroke-width="2" stroke-dasharray="5 3"/></g></svg></td><td class="s">A sign with no box</td><td><b>Hold</b> the box next to it. In the card press <b>Fix the cut</b>, drag the box onto the sign without one and press <b>Add as a missed sign</b>. The first box stays as it was.</td></tr><tr><td class="p"><svg viewBox="0 0 80 56" width="80" height="56" role="img" aria-hidden="true"><path d="M34 19 L34 42 M30 42 L38 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="50" cy="40" r="2.6" fill="currentColor"/><rect x="44" y="33" width="12" height="13" fill="none" stroke="#0072B2" stroke-width="2"/></svg></td><td class="s">A dot or tick in a box of its own (the second pile)</td><td>Standing alone (a full stop, a separator): leave it. Part of a sign: stretch that sign&rsquo;s box over it (row 3), then <b>Trash</b> the dot&rsquo;s own box.</td></tr><tr><td class="p"><svg viewBox="0 0 80 56" width="80" height="56" role="img" aria-hidden="true"><text x="40" y="38" text-anchor="middle" font-size="22" fill="currentColor">?</text><rect x="28" y="17" width="24" height="28" fill="none" stroke="#0072B2" stroke-width="2"/></svg></td><td class="s">Not sure</td><td><b>Tap</b> it: it waits in the tray at the bottom for later. In step 2: <b>Skip</b>.</td></tr></table><p class="leg">In the drawings: the solid outline is the machine&rsquo;s box, the dashed outline is the box after your fix; the shapes stand for any sign. Tap the heading to fold this key away.</p></details>
+  <details id="boxKey" open hidden><summary>What to do: a key</summary><p class="kl"><b>Tap</b> a sign = put it aside in the tray. <b>Hold</b> a sign = open its card (large, on its line). Most fixes start with the card&rsquo;s <b>Fix the cut</b> button, which puts handles on the box; <b>Save cut</b>, <b>Add as a missed sign</b> and <b>Split</b> are right under it. Never read what a sign says: only where its box is.</p><p class="kl"><b>Step 2</b> (the boxes the machine was unsure of, one at a time): judge the sign from its line; a box too wrong to tell the sign gets <b>Bad cut</b>, nothing more. <b>It was right</b> checks it as it is.</p><table><tr><td class="p"><svg viewBox="0 0 80 56" width="80" height="56" role="img" aria-hidden="true"><ellipse cx="40" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="28" y="17" width="24" height="28" fill="none" stroke="#0072B2" stroke-width="2"/></svg></td><td class="s">One sign, the box fits it (a little paper round it is fine)</td><td>Leave it. Nothing to do.</td></tr><tr><td class="p"><svg viewBox="0 0 190 56" width="190" height="56" role="img" aria-hidden="true"><path d="M28 19 L28 42 M24 42 L32 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><ellipse cx="50" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="20" y="16" width="42" height="31" fill="none" stroke="#0072B2" stroke-width="2"/><path d="M84 31 L100 31 M95 26 L100 31 L95 36" fill="none" stroke="currentColor" stroke-width="2"/><g transform="translate(108 0)"><path d="M20 19 L20 42 M16 42 L24 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><ellipse cx="42" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="14" y="16" width="14" height="31" fill="none" stroke="#0072B2" stroke-width="2"/><rect x="33" y="16" width="20" height="31" fill="none" stroke="#0072B2" stroke-width="2" stroke-dasharray="5 3"/></g></svg></td><td class="s">Two signs in one box</td><td><b>Hold</b> it. In the card press <b>Fix the cut</b> (the box gets handles). Pull its side in (drag it, or tap the <b>Right edge</b> arrows) until it holds only the first sign, then press <b>Split: keep this part, add the rest</b>. The rest becomes its own box.</td></tr><tr><td class="p"><svg viewBox="0 0 190 56" width="190" height="56" role="img" aria-hidden="true"><ellipse cx="40" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="26" y="17" width="12" height="28" fill="none" stroke="#0072B2" stroke-width="2"/><rect x="43" y="17" width="12" height="28" fill="none" stroke="#0072B2" stroke-width="2"/><path d="M84 31 L100 31 M95 26 L100 31 L95 36" fill="none" stroke="currentColor" stroke-width="2"/><g transform="translate(108 0)"><ellipse cx="32" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="21" y="17" width="23" height="28" fill="none" stroke="#0072B2" stroke-width="2" stroke-dasharray="5 3"/></g></svg></td><td class="s">One sign cut into two boxes</td><td><b>Hold</b> the first piece. In the card press <b>Fix the cut</b>, stretch the box over the whole sign, press <b>Save cut</b>. Then hold the other piece and press <b>Trash (not a sign)</b>: it is part of the first box now.</td></tr><tr><td class="p"><svg viewBox="0 0 190 56" width="190" height="56" role="img" aria-hidden="true"><path d="M36 8 C46 8 46 22 36 26 L36 44" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><rect x="26" y="22" width="26" height="26" fill="none" stroke="#0072B2" stroke-width="2"/><path d="M84 31 L100 31 M95 26 L100 31 L95 36" fill="none" stroke="currentColor" stroke-width="2"/><g transform="translate(108 0)"><path d="M28 8 C38 8 38 22 28 26 L28 44" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><rect x="18" y="4" width="26" height="44" fill="none" stroke="#0072B2" stroke-width="2" stroke-dasharray="5 3"/></g></svg></td><td class="s">The box cuts off part of the sign</td><td><b>Hold</b> it. In the card press <b>Fix the cut</b>, drag the edge out over the missing stroke, press <b>Save cut</b>.<span class="nbk"> Tick <b>Lines above and below</b> to see tall strokes.</span></td></tr><tr><td class="p"><svg viewBox="0 0 80 56" width="80" height="56" role="img" aria-hidden="true"><ellipse cx="40" cy="31" rx="9" ry="6" fill="currentColor" opacity=".28"/><rect x="28" y="21" width="24" height="20" fill="none" stroke="#0072B2" stroke-width="2"/></svg></td><td class="s">A box on a stain, a blot, the page edge or ink showing through from the back</td><td><b>Hold</b> it and press <b>Trash (not a sign)</b>.</td></tr><tr><td class="p"><svg viewBox="0 0 190 56" width="190" height="56" role="img" aria-hidden="true"><ellipse cx="26" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="15" y="17" width="23" height="28" fill="none" stroke="#0072B2" stroke-width="2"/><path d="M54 19 L54 42 M50 42 L58 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M84 31 L100 31 M95 26 L100 31 L95 36" fill="none" stroke="currentColor" stroke-width="2"/><g transform="translate(108 0)"><ellipse cx="18" cy="31" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="3"/><rect x="7" y="17" width="23" height="28" fill="none" stroke="#0072B2" stroke-width="2"/><path d="M46 19 L46 42 M42 42 L50 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><rect x="38" y="15" width="16" height="32" fill="none" stroke="#0072B2" stroke-width="2" stroke-dasharray="5 3"/></g></svg></td><td class="s">A sign with no box</td><td><b>Hold</b> the box next to it. In the card press <b>Fix the cut</b>, drag the box onto the sign without one and press <b>Add as a missed sign</b>. The first box stays as it was.</td></tr><tr><td class="p"><svg viewBox="0 0 80 56" width="80" height="56" role="img" aria-hidden="true"><path d="M34 19 L34 42 M30 42 L38 42" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="50" cy="40" r="2.6" fill="currentColor"/><rect x="44" y="33" width="12" height="13" fill="none" stroke="#0072B2" stroke-width="2"/></svg></td><td class="s">A dot or tick in a box of its own (the second pile)</td><td>Standing alone (a full stop, a separator): leave it. Part of a sign: stretch that sign&rsquo;s box over it (row 3), then <b>Trash</b> the dot&rsquo;s own box.</td></tr><tr><td class="p"><svg viewBox="0 0 80 56" width="80" height="56" role="img" aria-hidden="true"><text x="40" y="38" text-anchor="middle" font-size="22" fill="currentColor">?</text><rect x="28" y="17" width="24" height="28" fill="none" stroke="#0072B2" stroke-width="2"/></svg></td><td class="s">Not sure</td><td><b>Tap</b> it: it waits in the tray at the bottom for later. In step 2: <b>Skip</b>.</td></tr></table><p class="leg">In the drawings: the solid outline is the machine&rsquo;s box, the dashed outline is the box after your fix; the shapes stand for any sign. Tap the heading to fold this key away.</p></details>
   <p class="banner" id="banner" hidden></p>
   <div class="how">
     <div><b>Step 1 · Clean each pile</b>Look along a pile. <b style="display:inline;text-transform:none;letter-spacing:0">Tap</b> any sign that is not like the others: it moves to the "Taken out" tray at the bottom. Tap it there to put it back. When a pile looks right, press "This pile is done".</div>
@@ -376,7 +380,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   </section>
   <section id="s2" hidden aria-label="Step 2: place each sign">
     <h2 class="ftitle">Place each sign</h2>
-    <p class="hint1" id="hint2">Tap the pile the sign belongs to (anywhere on its card)<span class="mouse-only">, or drag the sign onto it</span>. The closest-looking piles come first; for a question, its own pile is first. <b>View pile</b> on a card, or a hold anywhere on a card, opens that pile larger and places nothing. A tap on a small picture is a tap on its pile; <b>hold a small picture</b> to see that one tile larger; <b>hold the sign</b> at the top to see it larger. <b>Fix the cut</b>, the first button under the sign, opens its card with the box ready to fix: for a question, Save cut or Split there keeps it in its pile and brings up the next. <span class="mouse-only"><b>Drag a small picture</b> onto another pile to move that one tile. </span><b>Drag a pile's name</b> (✥) onto another pile to merge the whole pile (on a phone: hold the name until it is outlined, then drag; let go without dragging and the pile opens).</p>
+    <p class="hint1" id="hint2">Tap the pile the sign belongs to (anywhere on its card)<span class="mouse-only">, or drag the sign onto it</span>. The closest-looking piles come first; for a question, its own pile is first. <b>View pile</b> on a card, or a hold anywhere on a card, opens that pile larger and places nothing. A tap on a small picture is a tap on its pile; <b>hold a small picture</b> to see that one tile larger; <b>hold the sign</b> at the top to see it larger. Judge the sign from its own line (the strip with the brackets); if its box is so wrong that the sign cannot be told even there, press <b>Bad cut</b>. <span class="mouse-only"><b>Drag a small picture</b> onto another pile to move that one tile. </span><b>Drag a pile's name</b> (✥) onto another pile to merge the whole pile (on a phone: hold the name until it is outlined, then drag; let go without dragging and the pile opens).</p>
     <div id="s2Note"><p class="hint" id="s2Msg" aria-live="polite"></p></div>
     <div id="s2Load" class="donebox" hidden><strong>Loading your earlier answers…</strong> <span id="s2LoadT"></span></div>
     <div id="s2Empty" class="donebox" hidden><strong id="s2EmptyH">Nothing waiting to be placed.</strong> <span id="s2EmptyT"></span> <button type="button" id="s2Back">Back to step 1</button></div>
@@ -389,7 +393,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
           <div class="row" id="s2Nav"><button type="button" id="s2Prev">&larr; Previous</button><button type="button" id="s2Next">Skip &rarr;</button></div></div></div>
       </div>
       <div class="cv"><canvas id="s2C"></canvas></div>
-      <div class="row" id="s2Acts" style="margin-top:10px"><button type="button" id="s2Fix" title="Open this sign's card with its box ready to fix; Save cut or Split there keeps it in its pile and brings up the next">Fix the cut</button><button type="button" id="s2Home">Put back where it was</button><button type="button" id="s2New">None of these: new sign</button>
+      <div class="row" id="s2Acts" style="margin-top:10px"><button type="button" id="s2Home">Put back where it was</button><button type="button" id="s2New">None of these: new sign</button>
         <button type="button" id="s2Mark">Not a letter</button><button type="button" id="s2Aside">Set aside</button><button type="button" id="s2Bad">Bad cut</button></div>
       </div>
       <p class="hint" id="s2CardsHint"></p>
@@ -472,6 +476,10 @@ const recutImg = {};     // sid -> data URL of the tile redrawn from its line at
 const checked = {};      // sid -> pile the person confirmed it belongs to ("Right pile: keep it"; db collection 'checked')
 let col = null, mcol = null, ncol = null, kcol = null, rcol = null, acol = null;
 const SPECIAL = new Set(['BAD-CUT', 'NOT-LETTER']);   // page-made piles that are not signs
+// the waiting box of a --piles-from page (owner rows R13, R15; template 2026-10-15.1): a queue, not a pile. Its tiles are the questions:
+// they wait in step 2 and are never drawn inside a pile, it is never offered as a card or a "Move this tile to" target, and a sign is
+// never kept in it ("It was right", "Right pile: keep it" and "Put back" are hidden for it).
+const QUEUE = new Set(DATA.queue || []);
 // Questions start in the tray (template 2026-10-09.1; owner, 9 Oct 2026, Harley 287: "Idk what to do with this pile. If they were
 // already taken out I could put them in piles"). With OPTS.focusToTray the "Check these first" tiles (and "Most useful first")
 // open in the "Taken out" tray, so step 2 shows them one at a time over the pile cards, their own pile first ("it was right"
@@ -741,6 +749,7 @@ function render(){
   for (const f of fams){
     if (!(f in famTotals)) continue;
     const ps = piles.filter(p => groupOf(p) === f)
+      .filter(p => !QUEUE.has(p.id))   // the waiting box is a queue (step 2 and the tray), never a pile (R15)
       .map(p => ({...p, members: membersOf(p.id)}))
       .filter(p => p.members.length || asideOf(p.id).length || (p.isNew && !SPECIAL.has(p.id)) || waitingOf(p.id).length)
       .sort(pileCmp)
@@ -755,7 +764,7 @@ function render(){
   }
   openMore.forEach(id => { const d = id && document.getElementById(id); const m = d && d.querySelector('details'); if (m) m.open = true; });
   // Count only piles that still hold tiles (or were settled); the page-made bad-cut and not-a-letter piles are no signs.
-  const live = piles.filter(p => !SPECIAL.has(p.id) && (statusOf(p.id) || membersOf(p.id).length || asideOf(p.id).length || waitingOf(p.id).length));
+  const live = piles.filter(p => !SPECIAL.has(p.id) && !QUEUE.has(p.id) && (statusOf(p.id) || membersOf(p.id).length || asideOf(p.id).length || waitingOf(p.id).length));
   const done = live.filter(p => statusOf(p.id)).length;
   $('prog').textContent = done + ' of ' + live.length + ' piles done';
   $('fill').style.width = (live.length ? 100 * done / live.length : 0) + '%';
@@ -871,6 +880,8 @@ function pileEl(p, piles){
   big.className = 'big'; big.title = 'See this pile’s signs larger, on their lines, one at a time';
   ph.append(nm); if (DATA.nonblind && VAL[p.id]){ const vv = document.createElement('span'); vv.className = 'pval'; vv.textContent = VAL[p.id].v; vv.title = 'Key value (non-blind view)'; ph.append(vv); }
   ph.append(ct, chip, big); el.append(ph); el.id = 'pile_' + domKey(p.id); el.dataset.pile = p.id;
+  const pn = byBase[p.id] && byBase[p.id].note;   // "same letter, two shapes" (R15): two piles of one meaning, told apart on the page
+  if (pn){ const d = document.createElement('div'); d.className = 'pnote'; d.textContent = pn; el.append(d); }
   const near = (byBase[p.id] && byBase[p.id].near) || [];
   if (near.length){ const nr = document.createElement('div'); nr.className = 'near'; nr.append('Possibly similar (computer’s guess, often wrong):');
     near.forEach(n => { const b = btn(n, false, () => jumpTo(n)); b.title = 'Jump to pile ' + n; nr.append(b); });
@@ -966,7 +977,7 @@ function renderSome(ids){
   updateMeter(piles); renderTray(); markRankDone(); markFocusDone();   // the two boxes say where their signs are now (a tap there takes one out)
 }
 function updateMeter(piles){
-  const live = piles.filter(p => !SPECIAL.has(p.id) && (statusOf(p.id) || membersOf(p.id).length || asideOf(p.id).length || waitingOf(p.id).length));
+  const live = piles.filter(p => !SPECIAL.has(p.id) && !QUEUE.has(p.id) && (statusOf(p.id) || membersOf(p.id).length || asideOf(p.id).length || waitingOf(p.id).length));
   const done = live.filter(p => statusOf(p.id)).length;
   $('prog').textContent = done + ' of ' + live.length + ' piles done';
   $('fill').style.width = (live.length ? 100 * done / live.length : 0) + '%';
@@ -1088,11 +1099,12 @@ function renderS2(){
     $('s2EmptyT').textContent = N ? 'Step 1 shows each one in the pile you chose. Signs you take out in step 1 will wait here.' : 'Take signs out in step 1 and they will wait here.'; return; }
   const sid = s2Cur, it = itemBySid[sid], i = L.indexOf(sid), pre = preTrayed(sid), home = homeOf[sid];
   $('s2Img').src = imgSrc(sid); $('s2Img').alt = sid;
-  $('s2T').textContent = pre ? 'Sign ' + sid + ', now in pile ' + home + '. Is that its pile?' : 'Sign ' + sid + ', taken out of pile ' + home;
+  const qh = QUEUE.has(home);   // a waiting sign of a --piles-from page: no pile yet, so no "is that its pile?"
+  $('s2T').textContent = qh ? 'Sign ' + sid + ': which pile holds signs that look like this one?' : pre ? 'Sign ' + sid + ', now in pile ' + home + '. Is that its pile?' : 'Sign ' + sid + ', taken out of pile ' + home;
   $('s2Pos').textContent = (i + 1) + ' of ' + L.length + ' waiting. Page ' + it.p + '; brackets mark it on its line below.';
   // phone: only the sign and this one line stay pinned; the title, the question and Previous / Skip scroll away with the strip
-  $('s2Line').textContent = (i + 1) + ' of ' + L.length + ' · ' + (pre ? home + '?' : 'from ' + home);
-  $('s2Sub').textContent = pre ? 'Tap the pile it belongs to; its own pile is first.' : 'Tap the pile it belongs to.';
+  $('s2Line').textContent = (i + 1) + ' of ' + L.length + (qh ? '' : ' · ' + (pre ? home + '?' : 'from ' + home));
+  $('s2Sub').textContent = pre && !qh ? 'Tap the pile it belongs to; its own pile is first.' : 'Tap the pile it belongs to.';
   const q = $('s2Q');
   if (q.dataset.sid !== sid){ q.classList.remove('open'); q.dataset.sid = sid; }   // a new sign starts with its question folded (phone)
   // the question part first, its background after (a three-line fold on a phone cut the question itself: iPhone check, 9 Oct 2026)
@@ -1101,14 +1113,14 @@ function renderS2(){
   q.title = PHONE ? 'Tap to read the whole question' : '';
   qMore();
   $('s2Prev').disabled = i <= 0; $('s2Next').disabled = i >= L.length - 1;
-  $('s2Home').textContent = pre ? 'It was right: keep in ' + home : 'Put back in ' + home;
-  $('s2CardsHint').textContent = pre ? 'Tap the pile it belongs to (anywhere on the card). Its own pile, ' + home + ', is first: tap it if it was right.' :
+  $('s2Home').textContent = pre ? 'It was right: keep in ' + home : 'Put back in ' + home; $('s2Home').hidden = qh;
+  $('s2CardsHint').textContent = pre && !qh ? 'Tap the pile it belongs to (anywhere on the card). Its own pile, ' + home + ', is first: tap it if it was right.' :
     'Tap the pile it belongs to (anywhere on the card); the closest-looking piles come first.';
   drawLine(sid, $('s2C'), PHONE && innerWidth <= 640 ? 5 : 3, () => s2Cur === sid && step === 2);
   const cards = $('cards'); cards.textContent = '';
   if (!vecDone){ cards.textContent = 'Sorting the piles by likeness…'; return; }
   // a pile whose only tiles are question tiles waiting here is still a place to put a sign: its waiting tiles stand in as samples
-  const ps = allPiles().filter(p => !SPECIAL.has(p.id)).map(p => ({...p, members: membersOf(p.id), wait: waitingOf(p.id).filter(s => s !== sid)}))
+  const ps = allPiles().filter(p => !SPECIAL.has(p.id) && !QUEUE.has(p.id)).map(p => ({...p, members: membersOf(p.id), wait: waitingOf(p.id).filter(s => s !== sid)}))
     .filter(p => (p.members.length || p.isNew || p.id === home || p.wait.length) && !(state[p.id] && state[p.id].merge_into))
     .map(p => ({...p, score: likeness(sid, p.members.length ? p.members : p.wait) + (p.family === it.fam ? 0.08 : 0)}))
     .sort((a, b) => (pre ? (b.id === home) - (a.id === home) : 0) || b.score - a.score || a.id.localeCompare(b.id));   // a question tile: its own pile first
@@ -1130,7 +1142,7 @@ function renderS2(){
     vw.addEventListener('pointerdown', e => e.stopPropagation());
     hd.append(h); if (smpl.length) hd.append(vw);
     const n = document.createElement('span'); n.className = 'cnt'; n.textContent = p.members.length + ' tiles' + (p.wait.length ? ' (+' + p.wait.length + ' waiting here)' : '') +
-      (own ? (pre ? ' · its pile now' : ' · where it came from') : p.isNew ? ' · new pile' : '');
+      (own ? (pre ? ' · its pile now' : ' · where it came from') : p.isNew ? ' · new pile' : '') + (byBase[p.id] && byBase[p.id].note ? ' · ' + byBase[p.id].note : '');
     const smp = document.createElement('span'); smp.className = 'smp';
     smpl.slice().sort((a, b) => (itemBySid[b].r ? 1 : 0) - (itemBySid[a].r ? 1 : 0) || (itemBySid[a].d || 0) - (itemBySid[b].d || 0)).slice(0, 6).forEach(m => { const im = document.createElement('img'); im.src = imgSrc(m); im.draggable = false;
       im.alt = '';   // part of the card: a tap goes on to the card and places the sign
@@ -1243,7 +1255,7 @@ $('s2Q').onclick = $('s2QMore').onclick = () => { $('s2Q').classList.toggle('ope
 $('s2Mark').onclick = () => { ensureSpecial('NOT-LETTER'); place('NOT-LETTER'); };
 $('s2Bad').onclick = () => { ensureSpecial('BAD-CUT'); place('BAD-CUT'); };
 $('s2Aside').onclick = () => place('ASIDE');
-$('s2Home').onclick = () => { if (s2Cur) place(homeOf[s2Cur]); };
+$('s2Home').onclick = () => { if (s2Cur && !QUEUE.has(homeOf[s2Cur])) place(homeOf[s2Cur]); };
 $('s2Prev').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i > 0){ s2Cur = L[i - 1]; $('s2Msg').textContent = ''; renderS2(); } };
 $('s2Next').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i < L.length - 1){ s2Cur = L[i + 1]; $('s2Msg').textContent = ''; renderS2(); } };
 // Step 2's "Fix the cut" (template 2026-10-09.6; owner, 10 Oct 2026, on a box-check page: "im not seeing fix the cut ... on this page";
@@ -1253,10 +1265,11 @@ $('s2Next').onclick = () => { const L = outList(), i = L.indexOf(s2Cur); if (i <
 // it belongs). "Cancel" only stops editing (the card stays open; Fix the cut again, then Save, still checks it); "Close", Esc or a tap
 // outside the card end it: neither changes anything. "Add as a missed sign" leaves the box unchecked (the card stays open).
 let s2FixSid = null;   // the sign whose card step 2's "Fix the cut" opened, while that card is open
-$('s2Fix').onclick = () => { if (!s2Cur) return; const sid = s2Cur;
-  showCtx(sid, pileOf(sid), false, [sid], 'waiting in step 2'); s2FixSid = sid; fixStart();
-  $('ctxMsg').textContent = 'Fit the box to the sign, then press Save cut (or Split if it holds two signs). Close changes nothing.'; };
-function s2FixDone(sid){ if (!sid || sid !== s2FixSid) return;
+// Template 2026-10-15.1 (owner rows R12, R16, 14-15 Oct 2026): the question card has no "Fix the cut" any more -- its Save cut "checked"
+// the box by keeping the sign in its home pile, and on a page whose home pile is the waiting box that answer was "unsorted": the sign
+// left step 2 and was never placed ("when i fix the cut the symbol disappears"). Nothing sets s2FixSid now, so s2FixDone does nothing;
+// it is kept, guarded, so an older caller cannot keep a sign into a queue.
+function s2FixDone(sid){ if (!sid || sid !== s2FixSid || QUEUE.has(homeOf[sid])) return;
   const raw = $('ctxMsg').textContent, split = /^Split /.test(raw), home = homeOf[sid];
   const msg = raw.replace(' It stays in its pile; Undo takes it back.', '').replace(' Undo twice takes both back.', '').trim(), back = /^The cut is unchanged/.test(raw) ? '' : split ? 'the added box, then the cut' : 'the cut';
   const q = !!trayOrder[sid] && (preTrayed(sid) || moves[sid] === 'OUT');
@@ -2070,13 +2083,13 @@ function showCtx(sid, pid, keepList, list, listName){
   ctxNavUi(ctxList.indexOf(sid));
   const cur = moves[sid] || homeOf[sid], pre = preTrayed(sid);   // pre: a question tile waiting in step 2 (no move yet; it is in its own pile)
   const dest = $('ctxDest'); dest.length = 1;
-  allPiles().filter(q => q.id !== cur).sort((a, b) => ((b.isNew && !SPECIAL.has(b.id)) - (a.isNew && !SPECIAL.has(a.id))) || (a.family === it.fam ? 0 : 1) - (b.family === it.fam ? 0 : 1) || a.id.localeCompare(b.id))
+  allPiles().filter(q => q.id !== cur && !QUEUE.has(q.id)).sort((a, b) => ((b.isNew && !SPECIAL.has(b.id)) - (a.isNew && !SPECIAL.has(a.id))) || (a.family === it.fam ? 0 : 1) - (b.family === it.fam ? 0 : 1) || a.id.localeCompare(b.id))
     .forEach(q => { const o = document.createElement('option'); o.value = q.id; o.textContent = q.id + (q.isNew && !SPECIAL.has(q.id) ? '  (new pile)' : '  (' + q.family + ')'); dest.append(o); });
   $('ctxNewB').title = 'Start a new sign for this tile (named ' + nextPileName(pileOf(sid)) + ')';
   $('ctxT').textContent = 'Tile ' + sid + (pre ? ' in pile ' + homeOf[sid] + ' (waiting in step 2 · Place)' : cur === 'ASIDE' ? ' (set aside from pile ' + homeOf[sid] + ')' : cur === 'OUT' ? ' (taken out of pile ' + homeOf[sid] + ')' :
     cur === 'BAD-CUT' ? ' (marked bad cut)' : ' in pile ' + pid);
   const q = $('ctxQ'); q.hidden = !focusQ[sid]; q.textContent = focusQ[sid] ? 'Question: ' + focusQ[sid] : '';
-  const kb = $('ctxKeep'); kb.hidden = cur === 'ASIDE' || cur === 'OUT' || SPECIAL.has(cur);
+  const kb = $('ctxKeep'); kb.hidden = cur === 'ASIDE' || cur === 'OUT' || SPECIAL.has(cur) || QUEUE.has(cur);
   kb.textContent = checked[sid] && checked[sid] === cur ? '✓ Kept in ' + cur : 'Right pile: keep it in ' + cur;
   $('ctxOut').hidden = cur === 'OUT' || pre;
   ['ctxDest', 'ctxAside', 'ctxBad', 'ctxNewB'].forEach(k => { $(k).hidden = false; });   // the person's earlier picks (--refs) can be corrected too (owner, 4 Oct 2026)
@@ -2111,6 +2124,7 @@ function ctxMove(to){
 function ctxKeep(){
   const sid = ctxSid, cur = moves[sid] || homeOf[sid];
   if (notYet(sid, $('ctxMsg'))) return;   // round-2 check, 10 Oct 2026: a keep while loading deleted a saved move
+  if (QUEUE.has(cur)) return;   // never a keep in the waiting box (R15); the button is hidden there
   keepAt(sid, cur);
   $('ctxMsg').textContent = 'Kept ' + sid + ' in ' + cur + '.';
   render(); ctxAdvance(sid);

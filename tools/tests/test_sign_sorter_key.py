@@ -52,7 +52,8 @@ cases = ['One sign, the box fits it', 'Two signs in one box', 'One sign cut into
          'stain', 'A sign with no box', 'A dot or tick', 'Not sure']
 check('it has a row for each case (one sign fits / two in one box / one cut in two / box cuts the sign / stain or shadow / no box / dot or tick / not sure)',
       all(c in blk for c in cases) and blk.count('<tr>') == len(cases))
-check('and a step-2 line naming its "Fix the cut" (the button template 2026-10-09.6 adds to step 2)', 'Step 2' in blk and 'Fix the cut' in blk and 'id="s2Fix"' in tpl)
+check('and a step-2 line that asks for "Bad cut" only, with no step-2 "Fix the cut" (owner rows R12, R16; template 2026-10-15.1 withdrew it)',
+      'Step 2' in blk and re.search(r'<b>Step 2</b>[^<]*.*?Bad cut', blk, re.S) is not None and 'id="s2Fix"' not in tpl)
 svgs = re.findall(r'<svg.*?</svg>', blk, re.S)
 befaft = [s for s in svgs if 'translate(' in s]
 check('the drawings are inline shapes (no image, no real sign), one per row', len(svgs) == len(cases) and '<img' not in blk)

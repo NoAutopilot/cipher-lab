@@ -16,7 +16,11 @@ run test_pageview test_pageview.js "$OUT/region.html" "$OUT/test_pageview"
 run test_recut_quad test_recut_quad.js "$OUT/plain.html" "$OUT/test_recut_quad" "$OUT/region.html"
 run test_qa test_qa.js "$OUT/plain.html" "$OUT/dump"
 run test_focus_tray test_focus_tray.js "$OUT"   # template 2026-10-09.1: questions start in the tray (tray.html, tray_rank.html, plain.html)
-run test_s2_fix test_s2_fix.js "$OUT"   # template 2026-10-09.6: step 2's Fix the cut (tray.html, plain.html; region.html: lines above and below) and the box-check key (tray_key.html)
+run test_s2_fix test_s2_fix.js "$OUT"
+# owner rows R12-R16 (15 Oct 2026, SORTER-FIX-R12-R16): no Fix the cut on the question card, a recut tile stays rendered, in its pile or
+# waiting, and placeable; on a --piles-from page (DATA.queue) the waiting box is a queue, never a pile (n/a on the fixtures, which have none;
+# tools/tests/test_sorter_piles_from.py runs it on a --piles-from page)
+run test_r12_r16 test_r12_r16.js "$OUT/tray.html" "$OUT/test_r12_r16"   # template 2026-10-09.6: step 2's Fix the cut (tray.html, plain.html; region.html: lines above and below) and the box-check key (tray_key.html)
 # owner rule R09 (11 Oct 2026, Bergh: "slide my finger on the manuscript ... to see its surroundings"): the card's picture moves under a
 # finger or a mouse, two fingers pinch the zoom, "Back to the sign", the swipe to the next sign only on the big sign, Fix the cut and the
 # brush beside it; iPhone 13 + iPhone SE + mouse, on lines.html (line strips with lines above and below), region.html and plain.html
