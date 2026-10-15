@@ -1,0 +1,62 @@
+# LANE DEFAULT-account-1-20261015-0740 jobs (account 1, lane orchestrator session_017cqzjbis9FztzHDDPLyGbm) -- 15 Oct 2026 08:0x UTC
+
+Lane brief: .claude/briefs/default-lane.md. Cap 60, box 07:40-17:40 UTC 15 Oct. Gate 0a: SESSION-SWEEP-account-1 stale-claimed since 5 Oct
+22:40, proceeded. VERIFY-BACKLOG.tsv (02:40 15 Oct): high rows Birago/ceppo (off limits), rest audit2 on N0/N1 items (known text; googleapis
+503 since 12 Oct). Backlog = the A1-0447 handoff next list (STATUS.md) + `next_steps.py --hot-only` runnable rows. Excluded: folders held by
+the live DEFAULT-A4-0645-15 lane (lodewijk-van-nassau-1573-74, clair1161-avis-flandre-1688, baluze167-davaux-1637, na-suriname-map-1781) and
+by DEFAULT-A2-0509-15 (harley-287-1587, matignon-mayenne-1586, august-van-saksen-1561-64, es132-vargas-mexia-1578,
+oldenbarnevelt-brederode-1605); Birago family, Armstrong, Debosnys, VIV-KEYSTONE (fr16104/fr16105/fr16106), BNF-FOCUS folders and holdings,
+cipher-lab-private.
+Intake gate 07:5x UTC (tools/intake_gate_check.py, exit 0 each): pro3055-clinton-1779, fr4712-nevers-duchesse, mccormick-1999,
+fr5761-election-1519, fr4735-monluc-lansac-poland-1573.
+
+## Common rules for every job
+Exactly the "Common rules for every job" section of `.claude/briefs/runs/2026-10-14-acct1-default-1840-jobs.md` (read it in full, and the
+files it points to), with these substitutions:
+- address every ROOM line "for LANE DEFAULT-A1-0740-15 (account 1)"; export `CIPHERLAB_ACCOUNT=account-1` before any tools/room.py call;
+- first actions: `git fetch origin && git checkout -B main origin/main`, `date -u`, read the last 60 ROOM.md lines (if another session
+  claimed your folder in the last 6 h with no done line, post a "stood down" line and stop), post a claim line with your box end time;
+  fetch and rebase immediately before every push (`python3 tools/room.py --push <paths>`; if it reports a failure, fetch, rebase, keep both
+  sides of any ROOM.md or NOTES.md conflict, and push once more); a file new to git is pushed with plain `git add` + commit + push and checked
+  with `git cat-file -e origin/main:<path>`;
+- every claim/halfway/done ROOM line ends with "usage: not readable here" (get_session is not available to workers);
+- price every look: a vision call is a unit (~0.5-1.0); an Opus session has a floor of ~2 before any look; state units x rate in your claim
+  line; stop before a unit that would cross 80% of cap or box. The orchestrator reads get_session at 30 min and interrupts at 1.3x cap.
+- solver jobs: report what was found and where it was not found; do not classify novelty.
+- no www.googleapis.com in this wave.
+- every other rule there holds unchanged (shared-host take/release lines, halfway line, no images in git, gaps_check on `partial`, no
+  novelty words, no AskUserQuestion, `date -u` before any time, "cost not visible to this session").
+
+## Wave 1 (08:0x UTC 15 Oct)
+
+### CLIN-3004 (Opus, cap 5, box 75 min, image-uab.canadiana.ca <= 20): pro3055-clinton-1779 letter 3004 reel cipher page(s)
+A1-0447 next 1: "sibling reel ciphers 3004, 3502, 3537, 4152, 4216 (~4-5 a page, same method)". 3004 only (printed 1920 doc 196 pp.170-171,
+B.147 pp.234-5). Exactly CLIN-247/CLIN-2962's method (read their NOTES sections and PREREGs): locate the cipher page(s) on the reel, register
+the B2 gate and the page-permuted-key control before decoding, iiif_lines.py crops (command pasted before the first subagent call), two blind
+passes + one reconciliation unit. If 3004's cipher runs over more than one page, do the first page only and name the rest. No images in git.
+NOTES "## CLIN-3004", gaps + Verdict, gaps_check. Text-known item: this tests the reel key on a printed sibling (lane guardrail share).
+
+### F4712-8R (Opus, cap 4, box 60 min, openapi.bnf.fr <= 8): fr4712-nevers-duchesse F4712-8 resumed
+Verdict: "finish F4712-8's N tiles and run its one pre-registered blind call, ~$1.5". PREREG ea57e0de7 stands: do not change it. Read
+F4712-HAND and F4712-8 first; place the 2 more control 8s the PREREG asks for (value-free tiles), run the one scored call exactly as registered,
+score it by the registered rule. Result is a same-writer lead graded M at most. NOTES "## F4712-8R", gaps + Verdict, gaps_check.
+
+### MCC-JUDGE (Opus, cap 3, box 60 min, disk only): mccormick-1999 judge + NCBE-stem-keeping null on the MCC-SUFX candidate
+Verdict: "judge_plaintext on the MCC-SUFX decode and an NCBE-stem-keeping null to size the single-type share of the margin, ~$3". Read MCC-SUFX
+and its PREREG (335740320). Pre-register the null (keep NCBE-stem tokens fixed, shuffle the rest by type, >= 200 draws) and the margin rule in
+NOTES before running. Run `tools/judge_plaintext.py` on the candidate (paste the output; the `en` corpus caveat in tools/data/en/README.md
+applies: a PASS/FAIL there is of unknown reliability, say so) and the null. No vision calls. NOTES "## MCC-JUDGE", gaps + Verdict, gaps_check.
+
+### ELEC-SRC (Opus, cap 3, box 45 min, archive.org <= 6, openapi.bnf.fr/gallica <= 6): fr5761-election-1519 Kluckhohn source line
+ELEC-5756's next (1): read Kluckhohn's own source line for nr. 357 and nr. 383 on the RTA J.R. I page image (archive.org `bub_gb_0gFoAAAAMAAJ`,
+1-2 page requests), not the OCR, to get the real shelfmark. If it names a BnF volume, look up that volume's Gallica ark only (one SRU or
+catalogue request) and, only if digitised, read the folio Kluckhohn cites at 600 px (<= 4 canvases) for the cipher name groups. Do not start
+a census of the volume. Status stays as written unless a pair is found (>= 2 occurrences per sign before any C grade). NOTES "## ELEC-SRC",
+Verdict.
+
+### MONL-L16 (Opus, cap 6, box 90 min, disk only): fr4735-monluc-lansac-poland-1573 c268 L16-L20
+Verdict: "c268 L16-L20 two blind passes + reconciliation, then align_c268.py (~$3); the L15:9/L15:18/L11:14 eye re-check (~$1) can ride with
+it". Exactly MONL-L11's method (read MONL-SORT, MONL-ALIGN, MONL-VB, MONL-L11, MONL-ADH first): <= 12 crops per call, ~0.5 per call; 5 lines x 2
+blind passes + 1 reconciliation + 1 eye re-check = 12 units -- state the count in your claim and stop before the unit that would cross 80% of the
+cap. No key value, machine label or decode in a blind call. Then align_c268.py --check and the shuffled-clear control (200). NOTES
+"## MONL-L16", gaps + Verdict, gaps_check.
