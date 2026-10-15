@@ -9205,6 +9205,26 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-4-20261015-1441 handoff (session_01XHeiyMvc9LoEpDS1XcWNCC, account 4, for the orchestrator (owner account)), 15 October 2026 (14:42-15:5x UTC by date -u; closed: backlog spent after exclusions; workers 28.14 + orchestrator ~3.9 = ~32.0 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-15-acct4-default-1441-jobs.md (3 waves, 8 workers, all Opus). Gate 0a: no SESSION-SWEEP-account-4 row.
+Backlog = A4-1236 next list (items 3-5 held by live DEFAULT-A1-1426) + next_steps.py --hot-only runnable rows. Excluded: DEFAULT-A1-1426 and DEFAULT-A2-1410
+holdings, VIV-KEYSTONE, Birago/ceppo, Armstrong, Debosnys, cipher-lab-private. Other hot runnable rows checked and not runnable: hellen rule-7 (done 9 Oct,
+VERIFY-HELLEN 847/847; Verdict line stale), hessen-daenemark (Brandt steps all done), fr3985/fr3987/fr3789/fr7129/fr16092 (status blocked), manteuffel audit2
+(N0 items, below the gate-2 trigger). No image committed.
+**workers (ledgered + archived)**
+- matignon-mayenne-1586: MAT-ORL 2.13 D (agreed o labels cover f.91 only: 13-leaf --try a non-test; f.91 oB=a ACCEPT S, oA=i REJECT); MAT-154 6.77 N (f.154 o
+  almost all plain, kappa gate FAIL); MAT-F91 1.16 F and MAT-EYE 1.61 F (my duplicates of account 2's same-name jobs this morning; Escalation clear-pages line fixed).
+- clair1161-avis-flandre-1688: C1161-EXC 5.39 D (13 of 24 unmapped labels matched to the sheet, 4 agree, 9 differ; no key edit). Known-text residue.
+- lodewijk-van-nassau-1573-74: LVN-4610U 2.96 D (8 of 9 undecided 4610 rows changed, H->M); LVN-L05 4.15 N (control 3/6, crops too tight; insert path added);
+  LVN-L05W 3.97 D (wider crops, control 5/6 PASS; p1_L05 head 81,125 inserted M; C/H 2552/3307 = 77.2%; AUDIT carried).
+Known-text share (light guardrail): ~5.4 of 28.1 (C1161-EXC).
+Overruns: LVN-L05W 1.99x, C1161-EXC 1.54x, LVN-L05 1.38x. Two F rows were brief errors: grep ROOM.md for the folder over 24 h and read every same-day NOTES section
+name before briefing; account 2 had worked matignon all day.
+**next**
+1. lodewijk: p1_L04 head 124, 127 by the same insert path and PREREG (~1, price 2).
+2. clair1161: C1161-EXC group 1 re-pass (~0.5) and a --try per sheet conflict (~1.5); known-text residue, mind the share.
+3. matignon: leave to account 2 unless its lanes close; open leads are the image-check of Bourdeau a on f.154/f.143r vs f.91 oB (~1) and an f.110 o sort (~4).
+
 ## LANE DEFAULT-account-4-20261015-1236 handoff (session_01XujJAdRCXr9a3KzuqA9wTH, account 4, for the orchestrator (owner account)), 15 October 2026 (12:36-14:2x UTC by date -u; closed: budget, under one wave left; workers 49.22 + orchestrator ~5.0 = ~54.2 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-15-acct4-default-1236-jobs.md (3 waves, 13 workers, all Opus). Gate 0a: no SESSION-SWEEP-account-4 row.
 Backlog = A4-1035's next list, then each worker's own next step. VERIFY-BACKLOG top rows Birago/ceppo (off limits). Excluded: A1-1140 and A2-1109
