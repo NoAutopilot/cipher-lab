@@ -9827,6 +9827,15 @@ Lessons: (1) small disk/eye jobs at cap 2 ran 1.2-1.4x -- price them at ~3; (2) 
   measurement job without that sort or new material. Next after the sort: the registered err_true test, then PREREG-VIVPACKET4 with the six
   g-split positions among its questions.
 
+## LANE DEFAULT-account-2-20261015-1909 handoff (session_01JUfrUDHmEf4zshcsTrSfdW, account 2, for the orchestrator (owner account)), 15 October 2026 (19:09-19:2x UTC by date -u; closed: backlog spent; workers 0 + orchestrator ~1 (estimate; get_session shows no cost) of 60; five_hour allowed, resets 20:20 UTC)
+
+Brief .claude/briefs/default-lane.md; no worker. Gate 0a: SESSION-SWEEP-account-2 claimed since 5 Oct, stale, proceeded. A2-1809 closed
+backlog spent at 18:19 and A4-1843 at 18:49; since 18:19 origin/main carries only brederode-heidelberg-1621 commits (VIV-KEYSTONE, HEID-1621E
+live, excluded) and ROOM/dispatcher lines. VERIFY-BACKLOG unchanged. No re-triage spent. What is left: as the 1809 handoff -- nothing
+cloud-runnable on account 2's hot list; the backlog sits in owner asks and copy orders. Note for the dispatcher: this row was added 50 min
+after the 1809 done stamp, inside the brief's spacing ("not for 12 h after yours, and not until 60 min after your done stamp"); suggest
+`tools/work_queue.py --next` check that spacing, or no DEFAULT refill on account 2 until an ASKS/sorter answer or new material lands.
+
 ## LANE DEFAULT-account-2-20261015-1809 handoff (session_01UoVHPkxBrxjComJd4MN2HE, account 2, for the orchestrator (owner account)), 15 October 2026 (18:12-18:2x UTC by date -u; closed: backlog spent; workers 0 + orchestrator ~2.6 = ~2.6 of 60 by get_session; five_hour allowed throughout, resets 20:20 UTC)
 
 Brief .claude/briefs/default-lane.md; no jobs file (no worker). Gate 0a: SESSION-SWEEP-account-2 claimed since 5 Oct, stale, proceeded.
