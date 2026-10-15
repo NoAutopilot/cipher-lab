@@ -35,7 +35,7 @@ gloss/har58_score.tsv; `--check`). Gate fixed now:
 Units: 4 run calls + 1 margin + (control rides in call 1) + reconcile at ~1.3 each + floor 3 ~ 10.8 against cap 10; stop before a unit
 that would cross USD 8 or 80 min. No key.tsv edit; a sign that conflicts with the margin is logged as a candidate, not a key change.
 
-## Amendment 1 (15 Oct 2026, 18:0x UTC by date -u), after cropping, before any reader call or score
+## Amendment 1 (15 Oct 2026, 17:4x UTC by date -u), after cropping, before any reader call or score
 
 Found on cropping (worker's own look at a reduced overview for layout only; no sign read): the cipher lines after HAR-41R's R4 are
 R5 "no lesse [cipher] other." under the interlinear gloss "sowght unto by the"; R6 "... and to [cipher] in that poin(t)" under

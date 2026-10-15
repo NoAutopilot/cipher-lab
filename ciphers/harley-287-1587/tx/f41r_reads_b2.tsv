@@ -1,0 +1,4 @@
+# HAR-58 15 Oct 2026: f.41r (R8480 P1, sha1 0f4896606b21) runs R5-R9, blind Opus readers, one call per run; boxes in f41r_runs.tsv (HAR-58 frame)
+run	part	tokens	note
+R6	1	D. J J: D D. F O: 7 D L. D C.	sign 1 dot sits low under its left end (probably its own dot below, could be stray); sign 3 dot inside the angle left of the vertical; no wider gaps
+R7	1	{clear} {blot} O. L: 7.? O: J: O | L: F U: D. | L. U: L 7	left edge cursive tail + smudge; sign 3 7.? a lighter curve may close it (alt O.), its dot may belong to L:; a vertical from the line above crosses the second-to-last sign (read L)

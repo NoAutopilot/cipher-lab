@@ -8,12 +8,21 @@ Gate, normalisation and null are fixed in ../PREREG-HAR-41R.md (pushed before an
 Key: github.com/dbourdeau/cyphersolver targets/needham1587/decode.py (commit 0445769, MIT), unchanged:
 J U L / C O F / N 7 D = a-i; dot below ('.') k-s; dot inside (':') t u w x y z.
 Output: gloss/har41r_score.tsv and a summary on stdout. --check exits 1 if the committed tsv is stale.
+
+--block 2 (HAR-58, ../PREREG-HAR-58.md and its Amendment 1): runs R5-R9 from tx/f41r_reads_b2.tsv, control tx/f41r_ctrl_b2.tsv,
+clear text tx/f41r_margin_b2.tsv (lines M1.. = the second margin note; G5/G6/G7 = the interlinear glosses over R5/R6/R7). The gate
+(same S1/S2/null/outcome) is R8+R9 against the M lines; R5, R6, R7 against their own gloss are post hoc (S1 and its null only).
+Output gloss/har58_score.tsv.
 """
 import os, random, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 TX = os.path.join(HERE, '..', 'tx')
 OUT = os.path.join(HERE, 'har41r_score.tsv')
+BLOCK2 = '--block' in sys.argv and sys.argv[sys.argv.index('--block') + 1] == '2'
+SFX = '_b2' if BLOCK2 else ''
+if BLOCK2:
+    OUT = os.path.join(HERE, 'har58_score.tsv')
 SHAPES = 'J U L C O F N 7 D'.split()
 FORMS, LETTERS = [], []
 for i, s in enumerate(SHAPES):
@@ -110,7 +119,7 @@ def lev(a, b):
 
 def main():
     out = []
-    ctrl = load('f41r_ctrl.tsv', 2)
+    ctrl = load('f41r_ctrl%s.tsv' % SFX, 2)
     tot = miss = 0
     for w, toks in ctrl:
         ref = CTRL[w].split(); got = [t.rstrip('?') for t in toks.split()]
@@ -119,9 +128,25 @@ def main():
     ctrl_ok = tot - miss >= 17
     out.append(['control', 'total', '', '', '%d/%d %s' % (tot - miss, tot, 'PASS' if ctrl_ok else 'FAIL')])
 
-    reads = [tokens_of(r[2]) for r in load('f41r_reads.tsv', 4)]
+    rrows = load('f41r_reads%s.tsv' % SFX, 4)
+    mrows = load('f41r_margin%s.tsv' % SFX, 3)
+    if BLOCK2:
+        posthoc = []
+        for run in ('R5', 'R6', 'R7'):
+            rd = [tokens_of(r[2]) for r in rrows if r[0] == run]
+            gw = norm_text(' '.join(r[1] for r in mrows if r[0] == 'G' + run[1:]))
+            a, _b, _w = stats(rd, gw, KEY)
+            rng = random.Random(41); nn = []
+            for _ in range(1000):
+                L = LETTERS[:]; rng.shuffle(L)
+                nn.append(stats(rd, gw, dict(zip(FORMS, L)))[0])
+            posthoc.append(['posthoc', run + '_vs_G' + run[1:], '%.3f' % a, 'null p95 %.3f; frac>= %.3f' % (sorted(nn)[949], sum(1 for v in nn if v >= a) / 1000), ' '.join(gw)])
+        rrows_all = rrows
+        rrows = [r for r in rrows if r[0] in ('R8', 'R9')]
+        mrows = [r for r in mrows if r[0].startswith('M')]
+    reads = [tokens_of(r[2]) for r in rrows]
     nsign = sum(1 for t in sum(reads, []) if t != '|'); nq = sum(1 for t in sum(reads, []) if t.endswith('?'))
-    mtext = ' '.join(r[1] for r in load('f41r_margin.tsv', 3))
+    mtext = ' '.join(r[1] for r in mrows)
     mwords = norm_text(mtext)
     s1, s2, words = stats(reads, mwords, KEY)
     rng = random.Random(41)
@@ -132,7 +157,7 @@ def main():
         n1.append(a); n2.append(b)
     p95 = lambda v: sorted(v)[949]
     f1 = sum(1 for v in n1 if v >= s1) / 1000; f2 = sum(1 for v in n2 if v >= s2) / 1000
-    for r in load('f41r_reads.tsv', 4):
+    for r in (rrows_all if BLOCK2 else rrows):
         out.append(['decode', r[0] + '_p' + r[1], r[2], ' '.join(decode(tokens_of(r[2]), KEY)), ''])
     out.append(['margin', 'normalised', '', ' '.join(mwords), '%d letters' % len(''.join(mwords))])
     nonte = len(''.join(mwords)) < 40
@@ -146,14 +171,16 @@ def main():
     out.append(['stat', 'S2', '%.3f' % s2, 'null p95 %.3f; frac>= %.3f' % (p95(n2), f2), ''])
     out.append(['stat', 'signs', str(nsign), 'unsure %d' % nq, ''])
     out.append(['stat', 'outcome', outcome, '', ''])
+    if BLOCK2:
+        out += posthoc
     text = 'kind\titem\tread\tvalue\tnote\n' + ''.join('\t'.join(r) + '\n' for r in out)
     if '--check' in sys.argv:
         if not os.path.exists(OUT) or open(OUT, encoding='utf8').read() != text:
-            print('STALE: gloss/har41r_score.tsv differs from a fresh run'); sys.exit(1)
+            print('STALE: gloss/%s differs from a fresh run' % os.path.basename(OUT)); sys.exit(1)
         print('OK'); return
     open(OUT, 'w', encoding='utf8').write(text)
     for r in out:
-        if r[0] in ('control', 'stat'):
+        if r[0] in ('control', 'stat', 'posthoc'):
             print('\t'.join(r))
     print('decoded words:', ' '.join(words))
 
