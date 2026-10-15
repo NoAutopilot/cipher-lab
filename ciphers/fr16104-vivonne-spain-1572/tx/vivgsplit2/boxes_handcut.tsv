@@ -1,0 +1,6 @@
+leaf	line	tpos	crop_page	image	x	y	w	h	verdict	note
+f102r	f102r_L06	30	f102r_L06_s2	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L06_s2.jpg	495	22	63	75	whole	looped top on a stem with an S-like lower loop, clear of the m before it; the stroke below-left at the crop foot is the next line
+f103r	f103r_L23	13	f103r_L23_s1	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L23_s1.jpg	809	35	52	70	whole	first of the two g-like signs after m V (order m V g g S p); looped top with S lower loop, separate from the 9-shaped g after it; the map had put 12-13 on the m+curve unit
+f103r	f103r_L32	16	f103r_L32_s1	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L32_s1.jpg	963	41	69	84	whole	the map unit 963,41,69,84 holds this sign alone (the S of pos 17 is its own unit); looped top with S lower loop
+f103r	f103r_L34	55	f103r_L34_s2	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L34_s2.jpg	1416	25	35	75	unsure	touches the tz after it (one unit 1415,3,72,101 for g+tz); in the gutter shadow at the crop edge; no clean box
+f201r	f201r_L03	49	f201r_L03_s2	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L03_s2.jpg	806	37	68	79	unsure	one sign, but its lower loop runs off the foot of the line crop (box bottom = crop height 116): possibly clipped

@@ -4,6 +4,7 @@
   python3 .../tx/vivgsplit/gsplit.py material      # the label-g tiles of f.102r, f.103r, f.201r with the clerk letter (no classification)
   python3 .../tx/vivgsplit/gsplit.py run           # leave-one-leaf-out with tools/glyph_atlas.py classify --boxes, 200 shuffled-label nulls
   python3 .../tx/vivgsplit/gsplit.py check         # re-run material + run and fail if result.json would change (rule 7)
+  VIVGSPLIT2_SCRATCH=DIR gsplit.py material2 | run2 | check2   # VIV-GSPLIT2 (PREREG-VIVGSPLIT2.md): five leaves -> tx/vivgsplit2/
 
 Material: VIV-CLS round-2 label-aware map tiles at op 1:1 (one tile on the token): tx/vivcls/train/map_r2_f10{2,3}r.tsv against the truth
 skeleton; f.201r's map is against passA (tx/vivcls/real/map_r2_f201r.tsv), carried to truth positions by tx/vivhuman/sets.aligned (as
@@ -322,6 +323,238 @@ def cmd_side(a):
         print('\t'.join(str(r[k]) for k in res[0]))
 
 
+# ---------------------------------------------------------------- VIV-GSPLIT2 (PREREG-VIVGSPLIT2.md): five truth leaves
+OUT2 = os.path.join(FOLD, 'tx', 'vivgsplit2')
+SCR = os.environ.get('VIVGSPLIT2_SCRATCH', '')     # where the f.202r crops were cut (VIV-67C cuts them in a scratchpad)
+NEW = {'f202r': ('vivonne1573-f202r-dev.truth.tsv', lambda: os.path.join(SCR, 'p67c', 'manifest.json')),
+       'f211v': ('vivonne1573-f211v-dev.truth.tsv', lambda: os.path.join(FOLD, 'images', 'p70c', 'manifest.json'))}
+LEAVES2 = ('f102r', 'f103r', 'f201r', 'f202r', 'f211v')
+RCAP = 20
+
+
+def leaf_units(leaf, man):
+    """PREREG-VIVGSPLIT2 s.1: pen units of one leaf's line crops (segment --median-h pool), overlap deduped at the midpoint,
+    as f191_units / tx/vivcls/seg.py."""
+    d = os.path.dirname(man)
+    ents = json.load(open(man))['iiif_lines']
+    cr = {}
+    for e in ents:
+        c = e['crop']
+        if f'_{leaf}_L' not in c:
+            continue
+        ln = c.split(f'_{leaf}_')[1].split('_')[0]; sg = int(c.split('_s')[-1].split('.')[0])
+        cr[(ln, sg)] = dict(path=os.path.join(d, c), x0=e['box'][0], x1=e['box'][2], page=f'{leaf}_{ln}_s{sg}')
+    at = os.path.join(W, f'atlas_{leaf}')
+    if not os.path.exists(os.path.join(at, 'signs.tsv')):
+        pages = []
+        for k, e in sorted(cr.items()):
+            pages += ['--page', f"{e['page']}={e['path']}"]
+        glyph(['segment', '--out', at, '--median-h', 'pool'] + pages)
+    byline = collections.defaultdict(list)
+    for r in rd(os.path.join(at, 'signs.tsv')):
+        _, ln, s_ = r['page'].split('_'); sg = int(s_[1:]); e = cr[(ln, sg)]
+        byline[ln].append(dict(r, seg=sg, xl=e['x0'] + int(r['x']), xc=e['x0'] + int(r['x']) + int(r['w']) / 2, img=e['path']))
+    units = []
+    for ln in sorted(byline):
+        segs = sorted({s_ for (l2, s_) in cr if l2 == ln})
+        for b in byline[ln]:
+            sg = b['seg']
+            lo = -1e9 if sg == segs[0] else (cr[(ln, sg)]['x0'] + cr[(ln, sg - 1)]['x1']) / 2
+            hi = 1e9 if sg == segs[-1] else (cr[(ln, sg + 1)]['x0'] + cr[(ln, sg)]['x1']) / 2
+            if lo <= b['xc'] < hi:
+                units.append(dict(sid=b['sid'], line=int(ln[1:]), x=int(b['xl']), w=b['w'], img=b['img'],
+                                  cx=b['x'], cy=b['y'], cw=b['w'], ch=b['h']))
+    units.sort(key=lambda u: (u['line'], u['x']))
+    return units
+
+
+def new_leaf_tiles(leaf):
+    """Map one new leaf's units to its truth skeleton label-aware (PREREG-VIVGSPLIT Addendum A's map); return f and r tiles."""
+    sys.path.insert(0, os.path.join(REPO, 'tools'))
+    import box_token_align as bta
+    tf, manf = NEW[leaf]
+    units = leaf_units(leaf, manf())
+    usid = {u['sid']: u for u in units}
+    lj = os.path.join(W, 'labels_stub.json')
+    json.dump({'signs': {}, 'marks': {}, 'override': {}}, open(lj, 'w'))
+    bx = os.path.join(W, f'boxes2_{leaf}_all.tsv')
+    wr(bx, ['box_id', 'image', 'x', 'y', 'w', 'h', 'line', 'pos', 'kind'],
+       [dict(box_id=u['sid'], image=u['img'], x=u['cx'], y=u['cy'], w=u['cw'], h=u['ch'], line=u['line'], pos=u['x'], kind='sign') for u in units])
+    tk = os.path.join(W, f'topk2_{leaf}_fullcode.tsv')
+    if not os.path.exists(tk):
+        glyph(['classify', '--out', ATLAS, '--labels', lj, '--boxes', bx, '--boxes-median-h', str(MEDIAN_H), '--only-train-labels',
+               '--train-labels', os.path.join(FOLD, 'tx', 'vivcls', 'train', 'labels_r2_both.tsv'), '--knn', '5', '--topk', '3', '--tsv', tk])
+    truth = rd(os.path.join(BT, tf))
+    read = [dict(line=r['line'], pos=r['pos'], sign=r['ref_sign']) for r in truth]
+    sg = [dict(sid=u['sid'], page=leaf, line=str(u['line']), x=str(u['x']), w=str(u['w'])) for u in units]
+    rows, per = bta.build_map(sg, read, labels=bta.read_labels(topk=tk), lam=bta.LAM, loo=False)
+    wr(os.path.join(OUT2, f'map_{leaf}.tsv'), ['sid', 'line', 'pos', 'op', 'labels'], rows)
+    by = collections.defaultdict(list)
+    for r in rows:
+        if r['sid']:
+            by[(r['line'], str(r['pos']))].append(r)
+    cov = {k: v[0]['sid'] for k, v in by.items() if len(v) == 1 and v[0]['op'] == '1:1'}
+    out, cnt = [], collections.Counter()
+    for r in truth:
+        if r['ref_sign'] != 'g':
+            continue
+        isf = r['plain'] == 'f'
+        isr = r['status'] == 'scored' and not r['flag'] and r['plain'] == 'r'
+        if not (isf or isr):
+            continue
+        c = 'f' if isf else 'r'
+        cnt[(c, 'all')] += 1
+        s_ = cov.get((r['line'], str(r['pos'])))
+        if not s_:
+            continue
+        cnt[(c, 'tile')] += 1
+        u = usid[s_]
+        out.append(dict(leaf=leaf, line=r['line'], tpos=r['pos'], sid=s_, cls=c, plain=r['plain'], status=r['status'], src='map',
+                        image=os.path.relpath(u['img'], REPO) if u['img'].startswith(REPO) else u['img'], x=u['cx'], y=u['cy'], w=u['cw'], h=u['ch']))
+    return out, cnt
+
+
+def material2():
+    """PREREG-VIVGSPLIT2 s.1: the VIV-GSPLIT material + f.202r/f.211v map tiles (r capped at 20 per leaf, seeded) + hand-cut `whole` f boxes."""
+    import random
+    os.makedirs(OUT2, exist_ok=True); os.makedirs(W, exist_ok=True)
+    sg = {r['sid']: r for r in rd(os.path.join(ATLAS, 'signs.tsv'))}
+    pj = json.load(open(os.path.join(ATLAS, 'pages.json')))
+    mat = []
+    for m in rd(os.path.join(HERE, 'material.tsv')):
+        a = sg[m['sid']]
+        img = pj[a['page']]['image']
+        mat.append(dict(m, src='map', image=os.path.relpath(img, REPO), x=a['x'], y=a['y'], w=a['w'], h=a['h']))
+    summ = {}
+    for leaf in ('f202r', 'f211v'):
+        t, cnt = new_leaf_tiles(leaf)
+        r = sorted([m for m in t if m['cls'] == 'r'], key=lambda m: (m['line'], float(m['tpos'])))
+        if len(r) > RCAP:
+            r = random.Random(SEED).sample(r, RCAP)
+        mat += [m for m in t if m['cls'] == 'f'] + r
+        summ[leaf] = {f'{c}_{k}': cnt[(c, k)] for c in 'fr' for k in ('all', 'tile')}
+        summ[leaf]['r_used'] = len(r)
+    hc = os.path.join(OUT2, 'boxes_handcut.tsv')
+    nh = collections.Counter()
+    if os.path.exists(hc):
+        for h in rd(hc):
+            nh[h['verdict']] += 1
+            if h['verdict'] == 'whole':
+                mat.append(dict(leaf=h['leaf'], line=h['line'], tpos=h['tpos'], sid='hc_' + h['line'] + '_' + h['tpos'], cls='f', plain='f',
+                                status='excluded:letter-off-key', src='handcut', image=h['image'], x=h['x'], y=h['y'], w=h['w'], h=h['h']))
+    summ['handcut'] = dict(nh)
+    mat.sort(key=lambda m: (LEAVES2.index(m['leaf']), m['line'], float(m['tpos'])))
+    wr(os.path.join(OUT2, 'material.tsv'), ['leaf', 'line', 'tpos', 'sid', 'cls', 'plain', 'status', 'src', 'image', 'x', 'y', 'w', 'h'], mat)
+    summ['N_f'] = sum(m['cls'] == 'f' for m in mat); summ['N_r'] = sum(m['cls'] == 'r' for m in mat)
+    summ['per_leaf'] = {l: [sum(m['leaf'] == l and m['cls'] == c for m in mat) for c in 'fr'] for l in LEAVES2}
+    json.dump(summ, open(os.path.join(OUT2, 'material_summary.json'), 'w'), indent=1)
+    print(json.dumps(summ))
+    return mat
+
+
+def recut_feats(mat):
+    """PREREG-VIVGSPLIT2 s.2: classify --boxes's query side for every tile: glyph_atlas.jitter_tiles unjittered re-cut (rel 0.78, mh 58)
+    projected by glyph_atlas.feats(project=True) fitted on the unchanged tx/vivcls/atlas."""
+    sys.path.insert(0, os.path.join(REPO, 'tools'))
+    import glyph_atlas as ga, cv2
+    rows = ga.read(ATLAS, 'signs.tsv')
+    bm = np.load(os.path.join(ATLAS, 'bitmaps.npz'))['signs']
+    _, proj = ga.feats(bm, rows, project=True)
+    inks, tiles = {}, []
+    for m in mat:
+        src = m['image'] if os.path.isabs(m['image']) else os.path.join(REPO, m['image'])
+        if src not in inks:
+            g = cv2.imread(src, cv2.IMREAD_GRAYSCALE)
+            if g is None:
+                sys.exit(f'cannot read {src}')
+            k = ga.binarise(g, 0.78)
+            inks[src] = cv2.morphologyEx(k, cv2.MORPH_OPEN, np.ones((2, 2), np.uint8)) if min(g.shape) > 2500 else k
+        rr = dict(x=int(float(m['x'])), y=int(float(m['y'])), w=max(1, int(float(m['w']))), h=max(1, int(float(m['h']))))
+        tiles.append(ga.jitter_tiles(inks[src], rr, MEDIAN_H, 0, 0, 0.0, np.random.default_rng(0))[0])
+    return proj(np.array([t[0] for t in tiles]), [t[1] for t in tiles], [t[2] for t in tiles])
+
+
+def loo2(mat, X, leaves, lab):
+    """1-NN (and distance-weighted 5-NN, report-only) leave-one-leaf-out; lab: {index: class} for the training side."""
+    P1, P5, per, near = [], [], {}, {}
+    for held in leaves:
+        tr = [i for i, m in enumerate(mat) if m['leaf'] != held]
+        te = [i for i, m in enumerate(mat) if m['leaf'] == held]
+        p1, p5 = [], []
+        for i in te:
+            d = np.linalg.norm(X[tr] - X[i], axis=1)
+            o = np.argsort(d, kind='stable')
+            j = tr[o[0]]
+            p1.append((mat[i]['cls'], lab[j])); near[i] = (j, float(d[o[0]]))
+            v = collections.Counter()
+            for q in o[:5]:
+                v[lab[tr[q]]] += 1 / (float(d[q]) + 1e-6)
+            p5.append((mat[i]['cls'], max(v, key=v.get)))
+        P1 += p1; P5 += p5; per[held] = (p1, p5)
+    return P1, P5, per, near
+
+
+def gate_run(mat, X, leaves, tag):
+    real = {i: m['cls'] for i, m in enumerate(mat)}
+    P1, P5, per, near = loo2(mat, X, leaves, real)
+    rng = np.random.default_rng(SEED)
+    nf1, nf5 = [], []
+    for _ in range(NNULL):
+        lab = {}
+        for leaf in leaves:
+            ids = [i for i, m in enumerate(mat) if m['leaf'] == leaf]
+            cl = [real[i] for i in ids]
+            rng.shuffle(cl)
+            lab.update(dict(zip(ids, cl)))
+        a, b, _, _ = loo2(mat, X, leaves, lab)
+        nf1.append(prf(a)['f1']); nf5.append(prf(b)['f1'])
+    nf1.sort(); nf5.sort()
+    res = dict(tag=tag, pooled_1nn=prf(P1), pooled_5nn_report_only=prf(P5), folds={})
+    for h in leaves:
+        res['folds'][h] = dict(nn1=prf(per[h][0]), nn5_report_only=prf(per[h][1]))
+        res['folds'][h]['testable'] = res['folds'][h]['nn1']['n_f'] >= 4
+    res['null_f1_1nn'] = dict(mean=round(float(np.mean(nf1)), 4), p95=round(float(np.percentile(nf1, 95)), 4),
+                              p99=round(float(np.percentile(nf1, 99)), 4), max=nf1[-1])
+    res['null_f1_5nn_report_only'] = dict(mean=round(float(np.mean(nf5)), 4), p99=round(float(np.percentile(nf5, 99)), 4))
+    g = res['pooled_1nn']
+    res['gate'] = dict(recall=g['f_recall'] >= 0.60, precision=g['f_precision'] >= 0.60, f1_over_null_p99=g['f1'] > res['null_f1_1nn']['p99'])
+    res['verdict'] = 'PASS' if all(res['gate'].values()) else 'FAIL'
+    rows = []
+    for h in leaves:
+        te = [i for i, m in enumerate(mat) if m['leaf'] == h]
+        for i, (t1, q1), (t5, q5) in zip(te, per[h][0], per[h][1]):
+            j, d = near[i]
+            rows.append(dict(leaf=h, line=mat[i]['line'], tpos=mat[i]['tpos'], sid=mat[i]['sid'], src=mat[i]['src'], cls=t1, pred_1nn=q1,
+                             pred_5nn=q5, nn1=mat[j]['sid'], nn1_cls=mat[j]['cls'], d1='%.3f' % d))
+    return res, rows
+
+
+def cmd_run2(a):
+    mat = rd(os.path.join(OUT2, 'material.tsv'))
+    X = recut_feats(mat)
+    out = {}
+    old = [i for i, m in enumerate(mat) if m['leaf'] in LEAVES and m['src'] == 'map' and m['sid'] in
+           {r['sid'] for r in rd(os.path.join(HERE, 'material.tsv'))}]
+    b, _ = gate_run([mat[i] for i in old], X[old], LEAVES, 'bridge_viv_gsplit_material_recut')
+    out['bridge_report_only'] = b
+    leaves = [l for l in LEAVES2 if any(m['leaf'] == l for m in mat)]
+    r, rows = gate_run(mat, X, leaves, 'registered')
+    out['registered'] = r
+    mo = [i for i, m in enumerate(mat) if m['src'] == 'map']
+    lm = [l for l in leaves if any(mat[i]['leaf'] == l for i in mo)]
+    out['map_only_report_only'], _ = gate_run([mat[i] for i in mo], X[mo], lm, 'map_only')
+    out['N_f'] = sum(m['cls'] == 'f' for m in mat); out['N_r'] = sum(m['cls'] == 'r' for m in mat)
+    out['f191_step_runs'] = out['N_f'] >= 12 and r['verdict'] == 'PASS'
+    wr(os.path.join(OUT2, 'per_tile.tsv'), list(rows[0].keys()), rows)
+    json.dump(out, open(os.path.join(OUT2, 'result.json'), 'w'), indent=1)
+    for k in ('bridge_report_only', 'registered', 'map_only_report_only'):
+        x = out[k]
+        print(k, 'pooled', x['pooled_1nn'], 'null', x['null_f1_1nn'], x['verdict'])
+        for h, f in x['folds'].items():
+            print('   ', h, f['nn1']['n_f'], f['nn1']['n_r'], 'rec', f['nn1']['f_recall'], 'pre', f['nn1']['f_precision'], 'f1', f['nn1']['f1'])
+    print('N_f', out['N_f'], 'N_r', out['N_r'], 'f191 step runs', out['f191_step_runs'])
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest='cmd', required=True)
@@ -330,6 +563,9 @@ def main():
     sp.add_parser('check')
     sp.add_parser('f191')
     sp.add_parser('side')
+    sp.add_parser('material2')
+    sp.add_parser('run2')
+    sp.add_parser('check2')
     a = ap.parse_args()
     if a.cmd == 'material':
         material()
@@ -339,6 +575,14 @@ def main():
         cmd_f191(a)
     elif a.cmd == 'side':
         cmd_side(a)
+    elif a.cmd == 'material2':
+        material2()
+    elif a.cmd == 'run2':
+        cmd_run2(a)
+    elif a.cmd == 'check2':
+        old = open(os.path.join(OUT2, 'result.json')).read()
+        cmd_run2(a)
+        sys.exit(0 if open(os.path.join(OUT2, 'result.json')).read() == old else 'tx/vivgsplit2/result.json is stale')
     else:
         old = open(os.path.join(HERE, 'result.json')).read()
         material(); cmd_run(a)

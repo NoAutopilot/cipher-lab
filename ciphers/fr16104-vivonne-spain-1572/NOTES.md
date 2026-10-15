@@ -4041,3 +4041,37 @@ benchmark-tx/vivonne1573-f211v-dev.truth.tsv + .sha256, benchmark-tx/outputs/viv
 images/manifest.json "viv70c". Requests: openapi.bnf.fr 5 (4 x 600 px overviews, 1 native region; all HTTP 200, >= 3 s apart, take/release lines in ROOM.md);
 gallica.bnf.fr 0. Subagent calls: 2 Sonnet (cipher). Cost not visible to this session.
 Next (one line, not done): f.212r (c217 right) against dec70[2237:] + ff.216r-216v (c221 right, c222 left), the trim rule's first exercised test on ink 70, ~$10.
+
+## VIV-GSPLIT2 (15 Oct 2026, 04:50-05:0x UTC by date -u, account-4 worker for LANE VIV-KEYSTONE): the g-split re-run on five truth leaves -- untested at N_f = 11
+Brief: .claude/briefs/runs/2026-10-13-acct4-keystone-viv-jobs.md "JOB VIV-GSPLIT2". PREREG-VIVGSPLIT2.md pushed e730e860c before any tile was cut. Measurement
+only: key.tsv, every reading and status.json untouched; a verifier decides any key row.
+**Material** (`VIVGSPLIT2_SCRATCH=<dir with p67c/> python3 tx/vivgsplit/gsplit.py material2` -> tx/vivgsplit2/material.tsv, material_summary.json): the VIV-GSPLIT
+6 f / 34 r tiles; f.202r and f.211v tiled by segment + label-aware build_map against their truth skeletons (tx/vivgsplit2/map_f202r.tsv, map_f211v.tsv, as
+PREREG-VIVGSPLIT Addendum A): f.202r f 4 anchors -> **1** tile, r 24 -> 8; f.211v f 1 -> **1**, r 68 -> 14 (cap 20 not reached). Hand-cut look (one Opus look at
+a sheet of the five line-crop contexts; tx/vivgsplit2/boxes_handcut.tsv): **whole 3** (f.102r L06:30, f.103r L23:13, f.103r L32:16), unsure 2 (f.103r L34:55
+touches the tz after it in the gutter shadow; f.201r L03:49 runs off the crop foot). **N_f = 11, N_r = 56: below the registered minimum 12**, so the f.191r step
+did not run (PREREG s.3).
+**Instrument** (declared deviation, PREREG s.2): every tile re-cut by glyph_atlas's own `jitter_tiles` (unjittered, rel 0.78, mh 58) and projected by
+`feats(project=True)` fitted on the unchanged tx/vivcls/atlas (regenerated, map_signs.tsv byte-identical; `gsplit.py check` still exit 0); 1-NN leave-one-leaf-out.
+| run | N_f / N_r | pooled f recall | f precision | F1 | null F1 p99 (200, seed 20261015) | verdict |
+|---|---|---|---|---|---|---|
+| bridge: VIV-GSPLIT material under the re-cut (report only) | 6 / 34 | 0.500 (3/6) | 1.00 | 0.667 | 0.500 | FAIL (recall) -- VIV-GSPLIT's classify --boxes read 0.80 |
+| **registered, five leaves** | **11 / 56** | **0.455 (5/11)** | **0.833 (5/6)** | **0.588** | **0.480** (mean 0.160) | **FAIL (recall)** |
+| map tiles only, no hand-cut (report only) | 8 / 56 | 0.375 (3/8) | 0.75 | 0.50 | 0.476 | FAIL (recall) |
+Per fold (registered; every fold N_f < 4, untestable alone): f.102r 3/4 f found (F1 0.857), f.103r 2/4 (0.667), f.201r 0/1, f.202r 0/1, f.211v 0/1; spread of fold
+recall 0-0.75. 5-NN distance-weighted (report only): F1 0.40 vs null p99 0.40. Per tile: tx/vivgsplit2/per_tile.tsv. The F1 sits above the null p99 but the
+recall gate fails, and the bridge shows the re-cut instrument alone loses one of VIV-GSPLIT's four hits (f.201r L18), so part of the drop is the instrument, not
+the material.
+**Eye check (one Opus look; sheet of the 11 truth-f tiles, the 1 predicted-f truth-r tile, 11 predicted-r truth-r tiles):** 9 of the 11 truth-f tiles hold the
+looped-top f shape whole (all four f.102r, all four f.103r including the three hand-cut, f.201r L18); **the two new-leaf f tiles are mis-cut by the map** (f.202r
+L24:26 is a small arc fragment, f.211v L06:22 a region of several signs), and the one false positive (f.211v L20:44) is another arc fragment whose nearest tile is
+f.202r L24:26. Among the r sample, f.102r L07:20 (an m), f.202r L24:25 (a speck) and f.202r L25:22 (# with g) are mis-cut too, and f.103r L07:12 (truth r) shows the
+looped-top shape, a third such r beside f.103r L25 and f.201r L23. On the 9 well-cut f tiles the model finds 5; the misses' nearest tiles are truth-r tiles.
+Verdict: **untested at N_f = 11** (registered gate FAIL on recall 0.455 < 0.60, F1 0.588 > null p99 0.480; f.191r step not run; strict run unchanged at 37).
+No key row, no reading change. Reproduce: `gsplit.py material2` (needs the f.202r crops cut per images/manifest.json "viv67c" into $VIVGSPLIT2_SCRATCH/p67c, the
+f.211v crops per "viv70c", the atlas per "vivcls"), then `gsplit.py check2` (exit 0 when tx/vivgsplit2/result.json is current). `f191.py --check` passes.
+Requests: openapi.bnf.fr 3 (c206, c207, c217 native regions; HTTP 200, >= 3 s apart; take/release lines). Subagent calls 0; vision: this worker's own two looks
+(hand-cut sheet, eye sheet). Cost not visible to this session. Report what was found and where it was not found; no novelty classified, no depth set.
+Next (one line, not done here): the new-leaf map is the bottleneck (2 of 2 new f tiles and 3 of 22 sampled r tiles mis-cut) -- hand-cut every label-g truth
+position on f.202r/f.211v/f.201v/f.211r for both classes by one rule (no class-asymmetric cut), which lifts the ceiling to about 21 f, then rerun with
+classify --boxes's own voter side extended to non-atlas boxes, ~$5.
