@@ -1,4 +1,4 @@
-# PREREG-VIV67C (15 Oct 2026, 02:3x UTC by date -u; VIV-67C worker, session_01NYDLhChR2KM7dLMazhLN3t, run on account 2 for LANE VIV-KEYSTONE, account 4)
+# PREREG-VIV67C (15 Oct 2026, 02:1x UTC by date -u; VIV-67C worker, session_01NYDLhChR2KM7dLMazhLN3t, run on account 2 for LANE VIV-KEYSTONE, account 4)
 
 Brief: .claude/briefs/runs/2026-10-15-acct4-for-acct2-jobs.md "JOB VIV-67C" (= VIV-67B's method on f.202r, the remainder of ink 67, against the
 continuation of ink 68). Written and pushed BEFORE any blind pass, decode or alignment. Looked at so far: the 600 px overviews of c207 and c212, the
