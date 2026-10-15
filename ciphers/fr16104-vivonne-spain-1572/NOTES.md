@@ -4135,3 +4135,66 @@ vision: this worker's own 12 looks (over the brief's 8). Cost not visible to thi
 classified, no depth set.
 Next (one line, not done here): finish the hand-cut r sample (106 targets left in tx/vivgsplit3/targets.tsv order, about 7 look+check pairs, ~$4) and
 re-run check3 at the registered ratio; only a PASS there opens the f.191r step.
+
+## SORTER-STEP1-INK63 (15 Oct 2026, 06:43-07:0x UTC by date -u; account-1 worker for LANE VIV-KEYSTONE, account 4): a blind step-1 shape sorter for ink 63 (not published)
+Brief: .claude/briefs/runs/2026-10-15-acct4-for-acct1-jobs.md "JOB SORTER-STEP1-INK63". Tool and page job: no key.tsv, reading, rec.tsv or status.json edit;
+nothing scored; nothing published, the owner asked nothing (the account-4 parent decides). Requests: none to any host. Vision: three box-check contact sheets
+and two pile sheets read by this worker (no subagent); cost not visible to this session. PREREG-SORTER-STEP1-INK63.md pushed first (5b3658038, time fix cd187bed3).
+
+**Material.** `tx/sorter_step1/pool.py` (`--check` reproduces pool.tsv and sample.tsv): certain-answer tiles = single pen-unit boxes mapped 1:1 to a
+scored, unflagged truth position whose reader label is one of the position's truth letters and whose key meaning is the clerk's letter (packet3's rule
+in tx/vivhuman/build_inputs.py, uncapped). Pool 628 (f.102r 272, f.103r 174, f.201r 182), 24 key codes; sample per code min(n, 22) = 297 (seed
+20261015). **f.201v, f.202r, f.211r, f.211v not available:** no box map exists for them and their VIV-67C/70C2 line crops were cut in a scratchpad
+(not committed); regenerating them is a fetch + segment + map job outside this box. Tiles: f.201r and many f.102r/f.103r tiles reused from the three
+committed pages (their full-resolution tiles; the f.201r crops survive only there), the other 91 cut from the committed line crops in images/
+(`signs_disk.tsv`, `pages/` symlinks). One sample sid (f201r_L04_s2_01_011) has no tile in any page: 296 checked.
+**Box check (R14 gate, >= 90%):** this worker's eye on three contact sheets (296 tiles, box drawn): **272 pass (91.9%)**, 24 fail (two signs 13, blank or
+blur 5, fragment or cut 5, one unsure ligature); `tx/sorter_step1/box_check.tsv`; failing tiles dropped. Tiles per code after the check (sample/pass):
+3 15/15, 4 2/2, 6 20/13, 7 11/9, : 22/22, @ 7/6, L 6/6, P 2/2, R 11/11, a 9/8, d 22/18, f 1/0, g 22/19, h 5/5, j 12/11, k 2/2, m 22/21, n 6/6, p 22/22,
+s 22/21, to 3/3, tz 22/19, x 22/22, z 9/9. Under 6 (all that exist): 4, P, k 2; to 3; h 5; f 0 (its one tile failed). Key codes with no certain tile:
+A, S, V, Zu, b, e, oo, y (they wait for the next step-1 round or the owner's own piles).
+
+**Seed piles, blind.** 48x48 Otsu bitmaps of each box (from the tile), rh/rw against the leaf's median box height; `tools/glyph_atlas.py cluster --out
+<atlas> --k 40` (default unit PCA scale) -> 40 clusters (sizes 1-14), named "shape 01".."shape 40" in a seeded order (`cluster_names.tsv`,
+`clusters.tsv`, `labels.tsv`). Machine purity against the reader codes 0.772 (NOTES only; nothing of it on the page).
+Command (paths under tx/sorter_step1/): `python3 tools/sign_sorter.py --tiles-from ../sorter_human/sorter_viv_human.html ../sorter_human2/sorter_viv_human2.html
+../sorter_f191/sorter_viv_f191.html --signs signs_disk.tsv --pages pages --labels labels.tsv --seed-shape --blind-seed 20261015 --cipher-lines cipher_lines.tsv
+--title "Vivonne 1573: settle the signs (step 1)" --lede "272 signs from three leaves in one cipher hand, piled by a machine on shape alone. Step 1 only: put
+together piles that are one sign, split a pile that holds two shapes, and set aside anything that is not a whole sign. No question is asked on this page."
+--out sorter_viv_step1.html`
+```
+--tiles-from: 272 tiles in 40 piles (91 cut from --signs/--pages), 0 skipped
+box check: n/a (no question tiles)
+40 piles, 272 tiles, 0 skipped, 0 clusters (none), 0 ranked, 2192 KB -> sorter_viv_step1.html
+```
+Tool additions (offline test `tools/tests/test_sorter_tiles_from_labels.py`, ALL PASS; SYSTEM.md sorter paragraph, system_map_check ok):
+`sign_sorter.py --tiles-from ... --labels` without --piles-from (piles exactly as --labels, tiles reused from built pages, the rest cut from
+--signs/--pages); `sorter_preflight.py --step1` (check 2 requires an EMPTY question box on a step-1 page; without the flag the first preflight run
+FAILed "answerable: focus box empty", the only failing line, because the check assumed every owner page asks questions).
+Full preflight (`python3 tools/sorter_preflight.py sorter_viv_step1.html --cipher-lines cipher_lines.tsv --owner-page --step1`):
+```
+PASS template: ok, Fix the cut present, marker 2026-10-15.1
+PASS answerable (step 1, no questions by design): 0 focus tiles, 40 named piles of 40, 0 unanswerable
+PASS R12/R16: no "Fix the cut" on the question card; "Bad cut" is its only box answer
+n/a  R13/R14/R15: n/a (no question tiles)
+PASS right line: 272 tiles; 0 tile(s) off the cipher lines, 91 of 93 listed lines have tiles (none on c105_f102r_L24_s2, c105_f102r_L26_s2); shape: 0 wide (>2.5x median 44 px), 1 strip-height boxes, 0 ink outside 3-60% of 272 measured; 1 = 0.4% (limit 5%) [list: cipher_lines.tsv]
+PASS contact sheet: 24 tiles beside their line strips -> sorter_viv_step1.preflight.png (seed 20261006; eye it before publishing)
+PASS colour: tokens, tints, box colours and person-facing text pass tools/cvd_check.py
+PASS gestures: owner rules R05 (tap = to the tray, hold = the card, every box; swipes move nothing) and R02 (lines above and below) hold on iPhone 13, iPhone SE and a mouse: 176 checks, 25 skipped (a tile kind this page lacks, counted per device) [test_gestures.js]
+PASS pan: owner rule R09 (slide the card's picture to look around) holds on an iPhone 13: 3 checks [test_pan.js --probe]
+preflight: PASS
+exit 0
+```
+
+**Eye verdict per pile** (`tx/sorter_step1/piles_0.png`, `piles_1.png`: first 16 tiles of each pile by oddness; 25 one shape, 15 mixed):
+01 mixed (g/J); 02 one; 03 one; 04 one; 05 one; 06 one; 07 one; 08 mixed (3, ug, L); 09 mixed (nJ, g); 10 one (dot); 11 mixed (x, a); 12 mixed (d, a, r);
+13 mixed (p, x); 14 mixed (m, n, pi); 15 mixed (4, stray); 16 mixed (tz, 3g); 17 one; 18 one; 19 one; 20 one; 21 mixed (jumble); 22 one; 23 one; 24 one;
+25 one; 26 one; 27 one; 28 one; 29 one; 30 one; 31 mixed (s, 6); 32 one (dot); 33 mixed (x, wave); 34 one; 35 mixed (s, 6s); 36 one; 37 one; 38 one;
+39 mixed (7, z, 2, 6); 40 mixed (k, to, 6, tz, L). Several letters are split over 2-3 one-shape piles (dots 10/32, s 34/35/31, tz 17/29/16, m 14/27) --
+merges are the owner's step-1 job, as are the 15 splits. (Shape words above are this worker's eye names for the record; none is on the page.)
+
+**Consuming test** registered in PREREG-SORTER-STEP1-INK63.md s.3 (leave-one-leaf-out kNN relabel of pass A by the owner's settled piles, gate: err_true not up
+on any of f102r-dev2 0.194 / f103r-confirm2 0.232 / f201r-dev 0.185, down on >= 2; controls: the seed piles unchanged, and shuffled piles x20 which must
+not pass); the settled piles then seed PREREG-VIVPACKET4's f.191r packet via `--piles-from <settled.tsv> --answered-only`.
+Not done: publishing (the account-4 parent decides; publish with capabilities {"db": {}}), f.201v/f.202r/f.211r/f.211v tiles (next: fetch, segment and
+map those leaves, ~$3). Rule 10: nothing here is a reading; no claim about novelty.
