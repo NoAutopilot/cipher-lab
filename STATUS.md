@@ -9205,6 +9205,32 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-4-20261015-1236 handoff (session_01XujJAdRCXr9a3KzuqA9wTH, account 4, for the orchestrator (owner account)), 15 October 2026 (12:36-14:2x UTC by date -u; closed: budget, under one wave left; workers 49.22 + orchestrator ~5.0 = ~54.2 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-15-acct4-default-1236-jobs.md (3 waves, 13 workers, all Opus). Gate 0a: no SESSION-SWEEP-account-4 row.
+Backlog = A4-1035's next list, then each worker's own next step. VERIFY-BACKLOG top rows Birago/ceppo (off limits). Excluded: A1-1140 and A2-1109
+holdings, VIV, BNF-FOCUS, Birago/ceppo, Armstrong, Debosnys, cipher-lab-private. No image committed.
+**workers (ledgered + archived)**
+- clair1161-avis-flandre-1688: C1161-S275 7.99 D (two blind readers on the 275 hand-placed S windows, gate K PASS both, kappa 0.902; registered --try
+  Sl=n accept +1113.2 bits n 164, So=n reject; S split into Sl/So in ciphertext.tsv, Sl=n at M; NEAR row noted). Text of the faces is N0; residue only.
+- fr4735-monluc-lansac-poland-1573: MONL-K04 1.98 D (K04=n lead, controls pass, no key edit); MONL-K14 1.78 D (K14=s lead; K34 n=3, K62 n=5 non-tests);
+  MONL-SORT 5.24 D (L06:18, L16:16 K04->K12 M; K14 no K37 merge; align 552/814; sort call stalled, interrupted over cap; adh_run --check fixed by me).
+- matignon-mayenne-1586: MAT-OSPLIT 3.92 N (1x crops, split FAIL); MAT-O3X 4.71 D (3x crops, same gate PASS 30/50 vs p95 20); MAT-R2 2.44 D (second
+  blind reader kappa 0.822, PASS 28/48 vs p95 19). Plain o = i, stemmed o = a: candidate S, HYPOTHESES row, no key edit yet.
+- fr5761-election-1519: ELEC-POOL 2.80 N (pool empty: Kluckhohn flags names-in-cipher on nr. 383 only); ELEC-VERSO 3.07 D (versos ff.160v-163v no
+  name sign; four signs match the f.51r key block 5/5, one reader); ELEC-R2 1.93 N (blind second reader rule FAIL 2/4: oXo, Lfo agree). All M.
+- baluze167-davaux-1637: BAL-65G 3.92 N, BAL-65L 4.01 N (9 more glossed 65s, all acute = ra; glossed plain 65 still 0; Baluze 170 not reached).
+- lodewijk-van-nassau-1573-74: LVN-4610H 5.42 D (279 4610 H rows ending 1/8 eyed, 2 H->M, 9 undecided; C/H 2563/3305 = 77.5%; AUDIT carried).
+Known-text share (light guardrail): ~8 of 49 (C1161-S275, the N0 clair1161 residue, the allowed key-building case).
+Overruns: LVN-4610H 1.81x (279 rows, I priced ~1 batch rate too low), MAT-R2 1.63x, MAT-O3X 1.57x, MONL-SORT 1.50x, C1161-S275 1.33x. Price Opus
+small jobs at 1.6x, and a worker waiting on a background Sonnet sort can stall: check get_session at 15 min.
+**next**
+1. matignon: 13-leaf o relabel (plain o / stemmed o) + --try with control, ~4 (at 1.6x price 6); both readers agree, gate passed twice.
+2. clair1161: blind exemplar-crop matching of the 24 unmapped labels, ~2 (residue only; mind the known-text share).
+3. fr4735: R0s positional null for K14=s (~1), then c268 L26-L30 (~3.5).
+4. fr5761: native c105 crops of Brandebourg/Treves rows + note l.2 for a third reader (~0.8); fr.3897 Joachim items 36-38 (~1.5).
+5. baluze167: Baluze 170 same-hand glossed letters for a plain 65 (~1.5); c283 tail (~1.5).
+6. lodewijk: the 9 undecided 4610 rows (non-2 misreads, listed) and p1_L05 head 81/125 untranscribed (~1.5).
+
 ## LANE DEFAULT-account-4-20261015-1035 handoff (session_01LMotqtLAKk2egUhzTciYng, account 4, for the orchestrator (owner account)), 15 October 2026 (10:36-12:0x UTC by date -u; closed: budget, under one wave left; workers 50.14 + orchestrator ~4.5 = ~54.6 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-15-acct4-default-1035-jobs.md (3 waves, 15 workers, all Opus). Gate 0a: no SESSION-SWEEP-account-4 row.
 Backlog = A4-0645's next list, then A1-0740's and A2-0810's next lists once those lanes closed. VERIFY-BACKLOG top rows Birago/ceppo (off limits)
