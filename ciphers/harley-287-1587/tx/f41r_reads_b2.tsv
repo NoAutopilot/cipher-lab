@@ -1,4 +1,7 @@
 # HAR-58 15 Oct 2026: f.41r (R8480 P1, sha1 0f4896606b21) runs R5-R9, blind Opus readers, one call per run; boxes in f41r_runs.tsv (HAR-58 frame)
 run	part	tokens	note
+R5	1	D O U: N F J: | U: C. J: O | U O: J: {clear} O?	sign 1 top cut by crop edge; a dot under sign 1 taken as the line below's; a cross-shaped stroke with a loop near the right end read as cursive ({clear}); last sign cut by the right edge, O? alt C
 R6	1	D. J J: D D. F O: 7 D L. D C.	sign 1 dot sits low under its left end (probably its own dot below, could be stray); sign 3 dot inside the angle left of the vertical; no wider gaps
 R7	1	{clear} {blot} O. L: 7.? O: J: O | L: F U: D. | L. U: L 7	left edge cursive tail + smudge; sign 3 7.? a lighter curve may close it (alt O.), its dot may belong to L:; a vertical from the line above crosses the second-to-last sign (read L)
+R8	1	7? O D? {blot} D C. D C. D O U. O. D. O:	sign 1 cut at left edge (7?, could be part of a wider sign); a mid-height dot between 7 and O, owner unclear (7: or O: or stray); sign 3 D? alt C; the blot hides one or two signs (a box sign under it, unread)
+R8	2	O: O. 7. 7 O. L? O 7 F J U: O 7 O J: 7 J: N? O J: 7 7 O	signs 2-3 joined, each its own dot; sign 6 L? crossed by a loop (alt C or U); N? crossed by a slanting stroke (alt 7 or cursive); a mid-height dot after the final O read as a stop
