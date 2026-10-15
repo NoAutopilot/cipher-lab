@@ -1,6 +1,6 @@
 letter	line	pos	code	old	new	grade	class	source	context_new
-4610	p1_L04	14	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	p c z ? <NULL> NULL q u k
-4610	p1_L04	15	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	c z ? NULL <NULL> q u k l
+4610	p1_L04	14	138	? U	NULL	C	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	p c z ? <NULL> NULL q u i
+4610	p1_L04	15	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	c z ? NULL <NULL> q u i l
 4610	p1_L05	16	129	? U	NULL	M	NULL	names.tsv: empty in 21 of 21 aligned observations, 0 contradicting	b l e NULL <NULL> NULL d f
 4610	p1_L07	14	134	? U	NULL	C	NULL	names.tsv: empty in 12 of 12 aligned observations, 0 contradicting	r i p t <NULL> ? q r i
 4610	p1_L08	5	130	? U	NULL	C	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	n c e s <NULL> NULL ? ? s
@@ -64,7 +64,7 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 4610	p2_L13	13	124	? U	NULL	C	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	a l i n <NULL> NULL
 4610	p2_L13	14	143	? U	NULL	M	NULL	names.tsv: empty in 7 of 7 aligned observations, 0 contradicting	l i n NULL <NULL>
 4610	p2_L14	7	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	a t z ? <NULL> d o u z
-4610	p2_L16	3	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	n t <NULL> f o d r
+4610	p2_L16	3	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	n t <NULL> f o u r
 4610	p2_L16	13	127	? U	NULL	C	NULL	names.tsv: empty in 31 of 31 aligned observations, 0 contradicting	i r uingt NULL <NULL> o c e n
 4610	p2_L17	10	95	g I	g	M	word	table rule	m p a i <g> n e r NULL
 4610	p2_L17	15	135	? U	NULL	C	NULL	names.tsv: empty in 4 of 4 aligned observations, 0 contradicting	n e r NULL <NULL> NULL u n

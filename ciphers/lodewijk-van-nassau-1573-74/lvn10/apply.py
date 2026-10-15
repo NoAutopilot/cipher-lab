@@ -29,6 +29,9 @@ al = {(r['line'], r['position']): r for r in rd(os.path.join(H, ALN))}
 post3 = {(r['line'], r['pre_pos']): r for r in rd(os.path.join(T, 'lvn10p1', 'settle.tsv')) if r['action'] in ('settled', 'confirmed')}
 # LVN-P2 (15 Oct 2026): the same for 4610 p2 (lvn10p2/PREREG-LVN-P2.md), applied with p1's rows (disjoint lines).
 post3.update({(r['line'], r['pre_pos']): r for r in rd(os.path.join(T, 'lvn10p2', 'settle.tsv')) if r['action'] in ('settled', 'confirmed')})
+# LVN-EYE (15 Oct 2026): verifier eye rulings at 300 dpi (lvn10/corrections_lvneye.tsv), applied after the LVN-3R/LVN-P2
+# settles, every round; `old` is the sign after those settles.
+post4 = {(r['line'], r['pre_pos']): r for r in rd(os.path.join(H, 'corrections_lvneye.tsv'))}
 ctl = {PA: [0, 0], PB: [0, 0]}
 for r in al.values():
     if r['role'] == 'control':
@@ -76,6 +79,12 @@ for r in pre:
         alt = f'was {sign} {conf}' + (f'; {alt}' if alt else '')
         sign, conf, why = c['new'], c['confidence'], c['note'] + f' (pre pos {r["position"]})'
         log.append([r['line'], r['position'], c['old'], r['confidence'], '', '', 'lvn3r-' + c['action']])
+    c = post4.get((r['line'], r['position']))
+    if c:
+        assert sign == c['old'], (r['line'], r['position'], sign, c['old'])
+        alt = f'was {sign} {conf}' + (f'; {alt}' if alt else '')
+        sign, conf, why = c['new'], c['confidence'], c['note'] + f' (pre pos {r["position"]})'
+        log.append([r['line'], r['position'], c['old'], r['confidence'], '', '', 'lvneye-corrected'])
     pos += 1
     out.append([r['line'], str(pos), sign, conf, alt, why])
 def tsv(rows, head):

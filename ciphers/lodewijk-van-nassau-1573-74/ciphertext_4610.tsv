@@ -67,7 +67,7 @@ p1_L04	14	138	H		agree
 p1_L04	15	127	H		agree
 p1_L04	16	16	H		agree
 p1_L04	17	38	H		agree
-p1_L04	18	108	H	was 101 M; B:108	lvn3r per-token 300-dpi read 108 (A150 101, B150 108; T18; control 9/10) (pre pos 18)
+p1_L04	18	102	M	was 108 H; was 101 M; B:108	image300 LVN-EYE (15 Oct 2026, verifier eye, one Opus look at the 300-dpi WVO 04610 render beside same-line exemplars): last digit is the flat-foot hooked 2 of the lone 2 at p1_L04/20 (H), not the stacked-loop 8 of 38 at p1_L04/17; 101 (A150) and 102 both i; eye against the LVN-3R blind 108, so M (pre pos 18)
 p1_L04	19	111	H		agree
 p1_L04	20	2	H		agree
 p1_L05	1	1	H		agree
@@ -162,7 +162,7 @@ p1_L09	11	83	H		agree
 p1_L09	12	23	H		agree
 p1_L09	13	=pour	H		agree
 p1_L09	14	25	H		agree
-p1_L09	15	68	H	was 65 M; B:68	lvn3r per-token 300-dpi read 68 (A150 65, B150 68; T01; control 9/10) (pre pos 15)
+p1_L09	15	62	M	was 68 H; was 65 M; B:68	image300 LVN-EYE (15 Oct 2026, verifier eye, one Opus look at the 300-dpi WVO 04610 render beside same-line exemplars): second digit is the same flat-foot 2 as p1_L04/20 and the last digit of 101 at p1_L09/18, not the 8 of 83 at p1_L09/11; 65 (A150) and 62 both a; eye against the LVN-3R blind 68, so M (pre pos 15)
 p1_L09	16	11	H		agree
 p1_L09	17	63	H		agree
 p1_L09	18	101	H		agree
@@ -277,7 +277,7 @@ p1_L15	4	142	H		agree
 p1_L15	5	=que	H		agree
 p1_L15	6	=souuent	M	B:=sous	differ
 p1_L15	7	=estre	M		agree-flagged
-p1_L15	8	25	H	was 15 M; B:25	lvn3r per-token 300-dpi read 25 (A150 15, B150 25; T13; control 9/10) (pre pos 8)
+p1_L15	8	15	M	was 25 H; was 15 M; B:25	image300 LVN-EYE (15 Oct 2026, verifier eye, one Opus look at the 300-dpi WVO 04610 render beside same-line exemplars): first digit is the small hooked 1 of 14 at p1_L15/11 and 10 at p1_L15/10, not the large 2 of 25 at p1_L15/9 beside it; agrees with A150 15, against the LVN-3R blind 25, so M (pre pos 8)
 p1_L15	9	25	H		agree
 p1_L15	10	10	H		agree
 p1_L15	11	14	H		agree
@@ -364,7 +364,7 @@ p1_L19	15	82	H		agree
 p1_L19	16	111	H		agree
 p1_L19	17	81	H		agree
 p1_L19	18	71	H		agree
-p1_L19	19	81	H	was 31 M; B:81	lvn3r per-token 300-dpi read 81 (A150 31, B150 81; T02; control 9/10) (pre pos 19)
+p1_L19	19	31	M	was 81 H; was 31 M; B:81	image300 LVN-EYE (15 Oct 2026, verifier eye, one Opus look at the 300-dpi WVO 04610 render beside same-line exemplars): first digit is the flat-top open-tailed 3 of 38 at p1_L04/17, not the closed-loop 8 of 81 at p1_L19/17 on the same line; agrees with A150 31, against the LVN-3R blind 81, so M (pre pos 19)
 p1_L19	20	84	H		agree
 p1_L20	1	39	H		agree
 p1_L20	2	23	H		agree
@@ -994,7 +994,7 @@ p2_L16	2	35	H		agree
 p2_L16	3	135	H		agree
 p2_L16	4	89	H		agree
 p2_L16	5	8	H		agree
-p2_L16	6	78	H	was 38 M; B:78	lvnp2 per-token 300-dpi read 78 (A150 38, B150 78; T14; control 8/10) (pre pos 6)
+p2_L16	6	38	M	was 78 H; was 38 M; B:78	image300 LVN-EYE (15 Oct 2026, verifier eye, one Opus look at the 300-dpi WVO 04610 render beside same-line exemplars): first digit is a flat top with a stem closing into a left bowl (the 3 of 38 at p1_L04/17), not the straight-stemmed 7 of 71 at p1_L19/18; leaning only; agrees with A150 38, against the LVN-P2 blind 78, so M (pre pos 6)
 p2_L16	7	24	H		agree
 p2_L16	8	4	H		agree
 p2_L16	9	104	H		agree
@@ -1243,7 +1243,7 @@ p2_L28	11	61	S	was 81 H	image300 VER-LVN (15 Oct 2026): H control value wrong on
 p2_L28	12	37	H		agree
 p2_L28	13	40	H		agree
 p2_L28	14	25	H		agree
-p2_L28	15	81	H		agree
+p2_L28	15	85	S	was 81 H	image300 LVN-EYE (15 Oct 2026, verifier eye, one Opus look at the 300-dpi WVO 04610 render beside same-line exemplars): second digit is the long-s 5 of 25 at p2_L28/14, not the hooked 1 of 61 at p2_L28/11; VER-LVN eye read 85 too; two eye looks agree, grade S per R15-LVNCTL (81 and 85 both e) (pre pos 15)
 p2_L28	16	25	H		agree
 p2_L29	1	93	H		agree
 p2_L29	2	84	H		agree

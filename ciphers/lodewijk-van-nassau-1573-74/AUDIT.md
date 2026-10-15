@@ -1912,3 +1912,48 @@ holds.
 **N-class.** Unchanged: 4610/4611/4616 N4, 4612 N3; key source ours (key_full, from the period decipherment sheets). No revision forces
 a class change. SO-LODEWIJK-1573-74's notes get one clause pointing here; SO-LODEWIJK-5797 is unaffected (5797 not changed 15 Oct).
 Requests: resources.huygens.knaw.nl 2. Subagents: none.
+
+## LVN-EYE: eye rulings on six 4610 rows VER-LVN flagged (15 Oct 2026)
+
+Verifier LVN-EYE (account 4, for LANE DEFAULT-A4-0645-15), 15 Oct 2026, 06:53-07:0x UTC by `date -u`. Not a solver session of
+LVN-3R or LVN-P2 and not VER-LVN. Image: WVO 04610.pdf fetched once (resources.huygens.knaw.nl, HTTP 200, 3,689,372 bytes, the
+same size VER-LVN logged), `pdftoppm -png -r 300` pp.1-2; line boxes from images/manifest.json x2 (the lvn10p1/crops.py geometry,
+p1_L19 +15 px), one 840-px context crop per row at 2x plus a 4x zoom; all in session scratch, none in git. One Opus look per row
+beside the exemplars on the same line or page; no subagents.
+
+**The glyph behind three of the five.** This hand writes 2 in two forms: a large 2 (23, 25, 26 on p1_L09) and a small flat-foot hooked
+form like an "r" (the lone 2 at p1_L04/20, H; the last digit of 101 at p1_L09/18 and of 11 at p1_L09/16), the "curled head and flat foot"
+VER-LVN described in 4611. Its 1 is a short dotted or hooked stroke (111, 10, 14), and its 8 is stacked loops (38, 83). The blind
+300-dpi read took the flat-foot 2 for an 8 twice (108, 68).
+
+| row | committed | ruling | exemplars | grade change | decoded word |
+|---|---|---|---|---|---|
+| 4610 p1_L04/18 | 108 H (LVN-3R blind; A150 101, B150 108) | **102** changed | flat-foot 2 of p1_L04/20; not the 8 of 38 at /17 | 108 H (key I) -> 102 M | qukln -> quiln |
+| 4610 p1_L09/15 | 68 H (LVN-3R blind; A150 65, B150 68) | **62** changed | flat-foot 2 as at p1_L09/16, /18; not the 8 of 83 at /11 | 68 H (key I) -> 62 M | rbpaiser -> rapaiser |
+| 4610 p1_L15/8 | 25 H (LVN-3R blind; A150 15, B150 25) | **15** changed | small hooked 1 of 14 at /11 and 10 at /10; the large 2 of 25 at /9 stands beside it | 25 H -> 15 M | rroposees -> proposees |
+| 4610 p1_L19/19 | 81 H (LVN-3R blind; A150 31, B150 81) | **31** changed | flat-top open-tailed 3 (as in 38 at p1_L04/17); not the closed-loop 8 of 81 at /17 | 81 H -> 31 M | elecee -> electe(urs) |
+| 4610 p2_L16/6 | 78 H (LVN-P2 blind; A150 38, B150 78) | **38** changed, leaning only | stem closes into a left bowl (3); not the straight-stemmed 7 of 71 at p1_L19/18 | 78 H -> 38 M | fodrnir -> fournir |
+| 4610 p2_L28/15 | 81 H (150-dpi passes agreed) | **85** changed | long-s 5 of 25 at /14; not the hooked 1 of 61 at /11 | 81 H -> 85 S (VER-LVN's eye read 85 too: two looks) | none (81, 85 both e) |
+
+Grades: where this eye disagrees with the 300-dpi blind read, the value takes the eye but the grade is M (one 300-dpi look against
+another); p2_L28/15 is S under R15-LVNCTL's rule (two agreeing eye looks, no blind 300-dpi read against). The five word repairs agree
+with the A150 letter in every case (101/102 both i, 65/62 both a), so key_full's homophones, not the readers, hid the slip. Kept: none
+of the six as committed. Undecided: none, though p2_L16/6 is the weakest (leaning). Observed, not ruled (outside the rows): p1_L09/16
+committed 11 H and p1_L09/18 101 H end in the same flat-foot 2 (12, 102; same letters p, i); next: an eye check of every H token in
+4610 ending in that form, ~$0.3, letter-neutral where the homophone pair shares a value.
+
+**Path.** `lvn10/corrections_lvneye.tsv` (6 rows), applied by `lvn10/apply.py` after the LVN-3R/LVN-P2 settles (new `post4` stage,
+asserting the post-settle sign); `decode_key.py --check` exit 0 for all 13 decode*.json after regenerating decode.json and
+decode_4610_full.json; settle.py, lvn10/apply.py, lvn16/apply.py, lvn4611/settle.py, lvn4611/build_key.py, lvn4611/settle_p3L00.py,
+lvn10p1/settle.py, lvn10p2/settle.py, lvn10p2/build_key.py, axnames/revisions.py `--check` exit 0 (revisions_for_audit.tsv
+regenerated). lvn10p1/settle.tsv and lvn10p2/settle.tsv are left as their solvers wrote them (the blind record); the ruling overrides
+downstream.
+
+**Counts (rule 4), C/H before -> after.** 4610 full (1545): H 9, C 1220 -> 1217, M 105 -> 110, I 56 -> 54, U 155 (C/H 1229 -> 1226).
+4611 and 4616 unchanged. 4610/4611/4616 C/H **2441 -> 2435 of 3236 (75.2%)**; four letters **2441 -> 2435 of 4069 (59.8%)**. The count
+falls because five settles go from H to M while their words come right: fewer graded tokens, more readable text.
+
+**Over-claim check.** No safe sentence, status.json depth_sentence or PROMPT-chatgpt.md quotation sits on p1_L04, L09, L15, L19, p2_L16
+or L28 (grep of the old and new words: only VER-LVN's own finding in this file). `tools/depth_check.py` exit 0; row stays D2, outward
+wording "partially deciphered (about 60%)" holds at 59.8%; status.json not edited (the parent's). N-class unchanged (4610/4611/4616 N4,
+4612 N3; key ours); SECOND-OPINIONS-QUEUE rows unaffected (no quoted line changed). Requests: resources.huygens.knaw.nl 1. Subagents: none.
