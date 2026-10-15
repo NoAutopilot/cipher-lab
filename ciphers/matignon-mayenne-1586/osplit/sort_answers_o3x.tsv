@@ -1,0 +1,78 @@
+id	shape	conf	note
+o038	B	high	loop with long right horizontal tail
+o004	B	high	loop with right horizontal tail
+o018	X	low	crop poor, tall loop unclear
+o003	X	low	curly sign with lower tail, unclear
+o069	A	low	small closed loop, tick at top
+o055	A	low	small loop, little tail
+o007	X	low	curly sign, unclear
+o011	B	high	loop with right horizontal tail
+o027	A	low	narrow oval, no tail
+o049	B	high	loop with right tail
+o062	X	high	crop shows wrong text
+o035	A	low	narrow oval no tail
+o071	X	low	curly sign
+o036	X	high	crop does not match labels
+o045	X	low	small dotted sign unclear
+o037	B	high	loop with right horizontal tail
+o015	B	low	loop with right tail
+o056	B	high	loop with right horizontal tail
+o031	A	low	oval no tail
+o066	B	high	loop with right tail
+o072	B	low	loop with right tail
+o022	A	high	narrow oval, no tail
+o044	B	high	loop with right tail
+o032	B	high	loop with right tail
+o021	A	high	narrow oval no tail
+o020	A	high	narrow oval no tail
+o002	B	high	loop with right tail
+o023	X	high	crop does not show target
+o005	A	low	narrow oval no tail
+o008	B	high	loop with right horizontal tail
+o043	A	low	small oval no tail
+o041	X	high	crop does not match
+o051	B	high	loop with right tail
+o047	A	low	narrow oval no tail
+o053	B	high	loop with right tail
+o009	X	high	crop does not match
+o025	B	high	loop with right tail
+o006	X	high	crop does not match
+o067	X	high	crop does not match
+o010	B	high	loop with right tail
+o078	B	high	correction: sign after m has right tail (plain oval is the earlier o)
+o013	B	low	loop with right stroke, crop odd
+o060	A	high	plain slanted closed oval
+o028	B	low	loop with right horizontal tail before E
+o074	B	high	loop with right stroke after Ze
+o063	A	high	plain slanted oval
+o016	B	low	loop with right horizontal stroke after T
+o040	A	high	plain oval after triangle
+o065	X	low	ambiguous twisted loop with bar, labels do not fit crop
+o064	X	low	label order does not match crop; cannot locate
+o024	A	low	plain oval before 4
+o059	A	high	plain oval after ƒ
+o075	B	low	line end; loop with right tail guessed
+o061	B	high	loop with right stroke after h
+o026	B	high	loop with right stroke before E
+o057	B	high	loop with right stroke after h
+o039	B	high	loop with right stroke after m
+o046	A	high	plain slanted oval after s
+o030	A	low	oval at right crop edge, no visible stem
+o070	B	low	loop with right stroke between D- and f
+o033	A	high	plain oval after q
+o052	A	high	plain oval after box
+o034	A	high	plain oval after 7, before m
+o076	X	high	crop is plain-text handwriting, no cipher signs
+o054	B	high	loop with right stroke after f
+o048	B	high	loop with right stroke after infinity-like sign
+o012	A	high	plain oval after n (earlier o after h is B)
+o068	A	high	plain oval after R
+o019	B	high	loop with right stroke after Ze
+o073	X	high	no loop sign found in crop for these labels
+o042	B	high	loop with right stroke after d
+o050	B	high	loop with upright stem and right stroke after c
+o014	A	high	same line as o012; plain oval after n
+o029	B	high	loop with right stroke after w-
+o058	B	low	loop with right stroke after L; labels only loosely match crop
+o077	X	low	loop with dot, unclear stem vs tail
+o017	A	high	plain oval before .v.
