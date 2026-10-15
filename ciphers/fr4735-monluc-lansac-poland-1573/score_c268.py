@@ -75,6 +75,8 @@ MONL_K04 = {('L16', 11): ('K04', 'K12'), ('L20', 27): ('K04', 'K12'), ('L20', 37
 # L20:23, L20:33) moved, 0 of 2 K12 references moved, so MONL-K04's three stand; both sorts agree, neither conf L, on these three leads
 # (sort/ctl/reconciled.tsv).
 MONL_CTL = {('L11', 14): ('K04', 'K12'), ('L17', 20): ('K04', 'K12'), ('L20', 8): ('K04', 'K12')}
+# MONL-SORT2 (15 Oct 2026): value-blind sort with in-band controls held (sort/srt/PREREG-MONL-SORT2.md, reconciled.tsv).
+MONL_SORT2 = {('L06', 18): ('K04', 'K12'), ('L16', 16): ('K04', 'K12')}
 
 
 def main():
@@ -124,8 +126,8 @@ def main():
               for f in bl[lab]:
                   agree += f[3] == 'H'
                   vb = MONL_VB.get((f[0], int(f[1]))) or MONL_ADH.get((f[0], int(f[1]))) or MONL_L16.get((f[0], int(f[1]))) \
-                       or MONL_K04.get((f[0], int(f[1]))) or MONL_CTL.get((f[0], int(f[1])))
-                  vtag = 'monl-ctl' if (f[0], int(f[1])) in MONL_CTL else 'monl-k04' if (f[0], int(f[1])) in MONL_K04 else 'monl-adh' if (f[0], int(f[1])) in MONL_ADH else 'monl-l16' if (f[0], int(f[1])) in MONL_L16 else 'monl-vb'
+                       or MONL_K04.get((f[0], int(f[1]))) or MONL_CTL.get((f[0], int(f[1]))) or MONL_SORT2.get((f[0], int(f[1])))
+                  vtag = 'monl-sort2' if (f[0], int(f[1])) in MONL_SORT2 else 'monl-ctl' if (f[0], int(f[1])) in MONL_CTL else 'monl-k04' if (f[0], int(f[1])) in MONL_K04 else 'monl-adh' if (f[0], int(f[1])) in MONL_ADH else 'monl-l16' if (f[0], int(f[1])) in MONL_L16 else 'monl-vb'
                   if vb:
                       assert f[2] == vb[0], (f[0], f[1], f[2])
                       f[2], f[3] = vb[1], 'M'

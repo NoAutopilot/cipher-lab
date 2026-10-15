@@ -4,7 +4,7 @@ L02	eurlara_elareputationnila_onp_ien_edu
 L03	poilonfaitparlerleroidedalnelar_quin
 L04	upenpninlaisetdoneataenteadrequilest
 L05	eeoiilatirentdelaynex_lupionqqil
-L06	estudposiblequelodpeigdeurs_eutuedir
+L06	estudposiblequelonpeigdeurs_eutuedir
 L07	pnrdeuaaqeopiepanpeauoippatisfait
 L08	earlape_odneoraipodcppfautilque
 L09	ieyfeseque_emopednoupaautadtdopede
@@ -14,7 +14,7 @@ L12	requelonpreigneqefily_eqqeeulopeunnp
 L13	qemailspoleuudesai_sepseuueleeuquod
 L14	_egnrdedeprnndrelsf__raireduropds
 L15	fradueenleplestermesep_ruturqnepourune
-L16	regdrddemonpeigdeurhor_mipquilde__e
+L16	regdrddemonpeigneurhor_mipquilde__e
 L17	omaadepaslefil_denego_iatio
 L18	dpedaigri_leue_des_apquiled
 L19	aduiendrabieduotppuisieaseurerqtepi

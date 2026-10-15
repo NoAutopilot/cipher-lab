@@ -5,7 +5,7 @@ L02	e u r l a r a c e l a r e p u t a t i o n n i l a c o n p c i e n c e d u
 L03	p o i l o n f a i t p a r l e r l e r o i d e d a l n e l a r c q u i n
 L04	u p e n p n i n l a i s e t d o n e a t a e n t e a d r e q u i l e s t
 L05	e e o i i l a t i r e n t d e l a y n e x onc l u p i o n q q i l
-L06	e s t u d p o s i b l e q u e l o d p e i g d e u r s [?double_slash] e u t u e d i r
+L06	e s t u d p o s i b l e q u e l o n p e i g d e u r s [?double_slash] e u t u e d i r
 L07	p n r d e u a a q e o p i e p a n p e a u o i p p a t i s f a i t
 L08	e a r l a p e [?double_slash] o d n e o r a i p o d c [W:uing] p p f a u t i l q u e
 L09	i e y f e s e q u e [?h_bar] e m o p e d n o u p a a u t a d t d o p e d e
@@ -15,7 +15,7 @@ L12	r e q u e l o n p r e i g n e q e f i l y [?x[looped_q]] e q q e e u l o p e
 L13	q e m a i l s p o l e u u d e s a i [?x[epsilon]] s e p s e u u e l e e u q u o d
 L14	[?x[looped_initial]] e g n r d e d e p r n n d r e l s f [?x[g_like_blotted]] [?x[ink_blot]] r a i r e d u r o p d s
 L15	f r a d u e e n l e p l e s t e r m e s e p [?double_slash] r u t u r q n e p o u r u n e
-L16	r e g d r d d e m o n p e i g d e u r h o r [?x[comma]] m i p q u i l d e [?x[e-like]] [?x[dot]] e
+L16	r e g d r d d e m o n p e i g n e u r h o r [?x[comma]] m i p q u i l d e [?x[e-like]] [?x[dot]] e
 L17	o m a a d e p a s l e f i l [?x[epsilon]] d e [W:Cur] [W:apuril] n e g o [?double_slash] i a t i o
 L18	d p e d a i g r i [?x[small_z]] [W:Juillet] l e u [W:Sepbre] e [?x[looped_c]] d e s [?double_slash] a p q u i l e d
 L19	a d u i e n d r a b i e d u o t p p u i s i e a s e u r e r q t e p i

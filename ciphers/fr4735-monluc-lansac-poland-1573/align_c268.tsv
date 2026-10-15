@@ -193,7 +193,7 @@ L06	14	K39	H	u	u	confirm	0
 L06	15	K05	H	e	e	confirm	0
 L06	16	K62	H	l	m	contradict	0
 L06	17	K33	H	o	o	confirm	0
-L06	18	K04	H	d	n	contradict	0
+L06	18	K12	M	n	n	confirm	0
 L06	19	K14	H	p	s	contradict	0
 L06	20	K26	H	e	e	confirm	0
 L06	21	K09	H	i	i	confirm	0
@@ -539,7 +539,7 @@ L16	12	K14	H	p	s	contradict	0
 L16	13	K05	H	e	e	confirm	0
 L16	14	K29	H	i	i	confirm	0
 L16	15	K07	H	g	g	confirm	0
-L16	16	K04	H	d	n	contradict	0
+L16	16	K12	M	n	n	confirm	0
 L16	17	K05	H	e	e	confirm	0
 L16	18	K19	H	u	u	confirm	0
 L16	19	K36	H	r	r	confirm	0

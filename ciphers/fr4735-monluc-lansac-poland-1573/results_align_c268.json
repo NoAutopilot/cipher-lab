@@ -1,13 +1,13 @@
 {
  "real": {
   "keyed": 814,
-  "confirm": 550,
-  "contradict": 164,
+  "confirm": 552,
+  "contradict": 162,
   "extra": 100,
-  "confirm_share": 0.6757,
+  "confirm_share": 0.6781,
   "facing_unsure_clear": 20
  },
- "score": 677.2,
+ "score": 683.2,
  "clear_span": [
   "f.140r:L07",
   "f.140r:L23"
@@ -16,17 +16,17 @@
  "shuffled_clear": {
   "draws": 200,
   "seed": 140,
-  "mean": 0.3688,
-  "p95": 0.3833,
-  "max": 0.4029,
+  "mean": 0.3698,
+  "p95": 0.3857,
+  "max": 0.4042,
   "ge_real": 0
  },
  "other_letter_c270": {
   "keyed": 814,
-  "confirm": 266,
-  "contradict": 424,
-  "extra": 124,
-  "confirm_share": 0.3268
+  "confirm": 268,
+  "contradict": 418,
+  "extra": 128,
+  "confirm_share": 0.3292
  },
  "fills": [
   {
@@ -472,14 +472,6 @@
    "conf": "H",
    "table": "l",
    "clear": "m"
-  },
-  {
-   "line": "L06",
-   "pos": 18,
-   "sign": "K04",
-   "conf": "H",
-   "table": "d",
-   "clear": "n"
   },
   {
    "line": "L06",
@@ -1136,14 +1128,6 @@
    "conf": "H",
    "table": "p",
    "clear": "s"
-  },
-  {
-   "line": "L16",
-   "pos": 16,
-   "sign": "K04",
-   "conf": "H",
-   "table": "d",
-   "clear": "n"
   },
   {
    "line": "L16",
