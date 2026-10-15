@@ -4086,7 +4086,7 @@ Closed and kept from the 1 Oct list: key-source search (R9-SURKEY, 6 Oct: no fur
 - [x] siblings: VX-CS04 (95 items of 4.VEL 2030A5-2090C, 25 Sept); GAPS2/3/4 plain counterparts 2038, 2040, 2042, 2045A (2 Oct); inv. 373 sweeps R11-SURSWP, R12-SURSWP2/3, R13-SURSWP4 and the every-label look FAM-SUR373 (6-8 Oct); governor's-letter screens SUR-GOV, SUR-266, SUR-DENSE (9-10 Oct), which found inv. 372. Not opened: the Leyden plain candidates by eye, the ~9000 other 4.VEL items.
 - [ ] clear-pages: used: 2007B Nota; 2061 glosses and legend-e crib (GAPS9); AMH 2218 summary (GAPS10); 2078 Nota for 2077 (GAPS23/24, used up); crib_2038 and crib_2042 against 2039 (GAPS5/6, control-backed non-pass); 0729 site names (FAM-SUR729, MISS); inv. 373 and 372 glosses. crib_2042 against 2046 (SUR-ALIGN, 13 Oct: S PASS, S1 FAIL, no token moved; used up for [o-flag]/[3-breve]). crib_2038/crib_2042 for 2039 legend k pos 6 (SUR-CRIB, 13 Oct: 2042 no counterpart, 2038 'Smeederij' no letter at the slot; used up for that token). Not yet used: 2007B's plain Remarque (gap 2007A); 2076's A-S legend for 2077's unique-less entries; 2045A's A-H list.
 - [x] known-keys: period keys located and read (GAPS13 Oud Secreet Alphabet, GAPS14 Nieuw Secreet Alphabet + 9 code groups, NA 1.05.03 inv. 86, 2 Oct); design_prior.py run and EAD grep with KEY-OFFICES rows (R9-SURKEY, 6 Oct); SUR-372 (9 Oct) shows the 1780 letter is in the Nieuw alphabet, no third alphabet.
-- [ ] print: AMH 2025/2218 read (VX-CS04, GAPS9: English summary of 2061's block in print); den Heijer 2012 read for 2077 (AUDIT.md item 4); Temminck Groll 1973 read, no transcription (L41, 9 Oct). Waiting: de Leeuw 1997 (LOCAL-QUEUE L36, queued) and Fontaine 1972 (LOCAL-QUEUE L72, queued 9 Oct). Planned and cloud-reachable: den Heijer's VEL2039 and VEL2061 pages (NA 2.14.97 inv. 24.2), a verifier's step, ~$1. [SUR-2061, 15 Oct: VEL2061 is den Heijer p. 362; PREREG-SUR-2061 pushed; not read -- NA site 503 maintenance 02:50-03:01 UTC; next: retry, ~$1]
+- [ ] print: AMH 2025/2218 read (VX-CS04, GAPS9: English summary of 2061's block in print); den Heijer 2012 read for 2077 (AUDIT.md item 4); Temminck Groll 1973 read, no transcription (L41, 9 Oct). Waiting: de Leeuw 1997 (LOCAL-QUEUE L36, queued) and Fontaine 1972 (LOCAL-QUEUE L72, queued 9 Oct). Planned and cloud-reachable: den Heijer's VEL2039 and VEL2061 pages (NA 2.14.97 inv. 24.2), a verifier's step, ~$1. [SUR-2061, 15 Oct: VEL2061 is den Heijer p. 362; PREREG-SUR-2061 pushed; not read -- NA site 503 maintenance 02:50-03:01 UTC; next: retry, ~$1; read 15 Oct 05:3x UTC (SUR-2061 second run): p. 362 prints a Dutch gloss of the whole 2061 legend; crib test 1 placed MATCH (L08 "garde", 2 M), see "## SUR-2061 (second run)"]
 - [x] key-rebuild: the planned glyph-token interlinear_align step (1 Oct) is superseded by the period keys (GAPS13/14); value work since then ran as pre-registered DP alignment on the inv. 373 glosses (R14-SURDP/SURDP2, 6 Oct) and alias passes (R15-SURALIAS, R15-SURV2); the open class questions are under retry and the inv. 373/372 gaps.
 - [ ] image-check: done: van-vs-PAN (2 Oct), 2061 native crops (GAPS8), GAPS12/15/16/21 sign calls, GAPS37 same-hand g|l (41 settled), GAPS55 dots, R11-SURY/R11-SURTV, SUR-IJ. [retired] for their tokens: context-tile blind look for 2077 L08:51/L10:30 g|l and [sigma] (R8-SUR3), g|l blind call against sheet tiles (GAPS29), single-word re-read of з/Signatuure (RD03C, RD03D; moved to gap 2007A). done 12 Oct: 2046 unkeyed-sign call (SUR-2046, 16/31 U -> M); 13 Oct verifier re-call (V-SUR2046): 9 back to U, 1 confirmed, 6 held M unconfirmed; not re-run for [d-hook] and [3-breve]: two blind calls against the same sheet tiles gave two different values; the next instrument is the gap-2046 alignment, not a third call. 13 Oct: 2039 Remarque K/O/&/[J-rev] sheet-tile call (SUR-2039R, PREREG 691b7d363): controls 13/20, below gate, non-test; not re-run as a sheet-tile call (this hand's o, r, 7, 8 controls missed or went unsettled, so the instrument is the limit at this crop scale); next instrument is the context test under gap 2039. 13 Oct: that context test (SUR-CTX, nl18 vocabulary) failed its own known-answer power check (0/39 licensed), non-test; not re-run with a general-corpus vocabulary; next instrument a period Remarque crib (gap 2007A). Done 13 Oct (SUR-LEGK): 2039 legend k pos 1-2/5 two-pass blind re-read, both passes agree (one [ij] sign; [delta-small]). 13 Oct: legend k pos 6 7-vs-r shape look run twice with different references (SUR-POS6 sheet tiles; SUR-POS6B same-hand panel of 4 r + 4 7, PREREG b17dd69d6), both non-tests; [retired] shape look for pos 6 (instrument: blind tile comparison) -- the same-hand panel split only 6/8 and put settled-r controls with the 7s, so shape cannot decide it; next instrument: the 2038/2042 crib context for entry k (~$1); run 13 Oct (SUR-CRIB): no crib letter at the slot, held r M.
 - [ ] retry: nl18 judge non-test at the legends' M+U rate (NL18-CORPUS); rate-matched gate PASS on 2077 (GAPS22), half-M sensitivity FAIL; [y-fam] m|n SPLIT pooled at 88 lines NO SPLIT SHOWN, partial split underpowered (SUR-POOLPC, SUR-KB, SUR-PARTIAL, SUR-0745R); SUR-MRICH: line choice from on-disk glosses cannot reach power, volume can. Planned: key-blind statistic at 88 lines (~$2 CPU); the inv. 372 transcription campaign (~$40-60) is the orchestrator's decision.
@@ -4339,3 +4339,46 @@ service.archief.nl was not called (no scan id). Stopped by the lane orchestrator
 for p. 362 is untested (not a negative). Next: retry when the NA site answers -- item page -> p. 362 scan id -> one 2400 px fetch + one
 native region of any caption/legend text, one blind clear read + checker, score under PREREG-SUR-2061.md as written; ~$1.
 Requests: www.nationaalarchief.nl 3 (all 503), web.archive.org 2 (reset), service.archief.nl 0.
+
+## SUR-2061 (second run, 15 Oct 2026, account 4, Opus worker for LANE DEFAULT-A4-0437-15; 05:35-05:4x UTC by date -u)
+Same job under the unchanged PREREG-SUR-2061.md (c0bec51f0); no addendum (the page's layout fits the PREREG as written).
+Prior work: `tools/prior_work.py na-suriname-map-1781 --item-spec 'shelfmark=NA 4.VEL 2061;kind=map' --step-type read --offline` exit 4:
+LEAD = this job's own claim; LOOK = the leaf gloss check this job performs (look.tsv row adhoc-462cf4 now answered); UNCHECKED rows generic.
+Route: www.nationaalarchief.nl item page 2.14.97/invnr/24.2 (200), drupal-settings-json `viewer.response.scans`: 331 scans, label
+"GAWIC II (Pagina 362).tiff" = scan 6e2f6a4a-afde-4c4c-950b-dd88c6318107 (4665 x 6614). Fetched info.json, full at 2400 px, and three
+native regions of the left text column (the first missed the sentence); images in the session scratchpad only, not committed.
+Requests: www.nationaalarchief.nl 1, service.archief.nl 5 (info 1, images 4), all 200, >= 2 s apart.
+
+**What p. 362 carries.** Top: 4.VEL 2061 in facsimile (Wollant, 1781, "Plan en Defensie Staat van de Redout Leyden"); bottom 4.VEL 2063
+(Wollant [1782], plain legend b-f). The catalogue entry says "Verklaringen: [linksboven] een legenda in geheimschrift bij de nummers 1 t/m 6
+en de letters a t/m g, niet getranscribeerd", but the essay column then gives the legend's meaning in modern Dutch (and the English text
+AMH 2218 already carries, GAPS9). Clear text, two independent Sonnet reads on the native region, agreeing word for word except the cut-off
+last line (beëdigde / beëedigde); filed as `sur2061/heijer_p362_legend.txt`:
+"(indeling van de batterijen, beschikbaar geschut) no. 1. 5 stukken geschut à 24 lb ijzer; no. 2. 4 stukken à 24 lb ijzer; no. 3. 2 stukken
+à 24 lb ijzer, 2 stukken à 12 lb ijzer; no. 4. 1 stuk à 12 lb ijzer, 3 kleine stukken veldgeschut van het Cordon geleend, à 6 lb; no. 5.
+1 stuk veldgeschut dito, 2 stukken à 6 lb ijzer; 6. in de flanken van de halfbastions 2 stukken à 3 lb ijzer; (overige aanduidingen)
+a. officierswoning; b. logement van de bezetting; c. corps de garde; d. kruitmagazijn; e. bergplaatsen voor buskruit en gereedschap op de
+batterijen; f. logies voor de beëdigde dienaren; g. gallerij, passage"
+It is a 2012 rendering, not a transcription: its wording differs from the decode in places (b "logement van" vs decode "logie voor"; d
+"kruitmagazijn" vs "[buskruit] magazyn"; no. 2/3 "ijzer" where the decode reads "dito"), so most of its words cannot align letter for letter.
+
+**Test** (`sur2061/align_heijer_p362.py`, output `sur2061/align_heijer_p362.out.tsv`; every crib word >= 4 letters slid over every decode
+line; a span counts with zero H/C/S conflicts, every M value set containing the crib letter, >= 2 U/M covered):
+| crib word | line, pos | H/C agree | U/M covered | placed (rule 2)? |
+|---|---|---|---|---|
+| garde | L08 47-51 (legend c, "corps de garde") | 3 (a r d) | 2: 47 g\|l -> g, 51 7=e | **yes**, legend c |
+| dito | L02 10-13 (No.2) | 2 | 2: y=d, [f-loop]=i | no: the gloss has "dito" only at No.5; No.2 reads "ijzer" |
+| dito | L03 21-24 (No.3) | 2 | 2: w=d, m=i | no: same |
+| ijzer / yzer | L06 35-38, L05 20-23 | 2 | 2-3 | only under an ij->y / z~s liberty not in the PREREG: not counted; the crib's z sits on ψ (M, s), the ψ=z GAPS9 proposed |
+Chance control (`sur2061/control_shuffle.py`, letters shuffled within every crib word, 200 seeds, placement ignored so it over-counts):
+real 3 spans vs shuffled mean 0.13, p95 1, max 2, 0/200 at or above (`control_shuffle.out`).
+
+**Result under PREREG-SUR-2061: one MATCH (L08 "garde" at legend c), nothing else.** It moves two M tokens' support: L08:47 g (two-valued
+g|l) reads g, L08:51 7 reads e (already M e). Rule 4: no key.tsv / key_period* / exceptions edit (no `decode_key --try` control was run for
+the g|l class in this job), so both stay M; recorded here as an M-grade lead. The "dito" spans are context the decode already had, not crib
+support; the U 10 tokens are untouched (no conflict-free placed span covers any U). Grades unchanged: H 177 C 12 M 69 U 10.
+Where not found: no other gloss word aligns conflict-free and in place, in the 1781 sheet's own spelling, anywhere on L01-L10.
+For a verifier (not classified here): den Heijer 2012 p. 362 prints the meaning of the 2061 cipher legend in Dutch, beside AMH 2218's English.
+Next: `decode_key.py ciphers/na-suriname-map-1781 --try` for a per-token g|l -> g exception at L08:47 with its own control, ~$0.5; the
+y-sign class question (inv. 373/372) is unchanged by this page.
+
