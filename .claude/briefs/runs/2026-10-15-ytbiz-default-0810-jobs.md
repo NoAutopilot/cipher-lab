@@ -113,3 +113,21 @@ NOTES.md KAL-HOMRU "Next step": "a higher-resolution image of sheet 2 (the Russi
 thread, strana39.ru, a web archive capture via the CDX API). If a larger image exists, fetch it once to ciphers/kaliningrad-2015/images/ only
 if under the folder's 30 MB limit (record manifest, sha1, URL, date), and one Opus look at the area below line 6: are the ghost lines
 bleed-through of sheet 1, a second text, or cipher? Grade any read M. If none exists, log the hosts tried. No solving. Update Next step.
+
+## Wave 4 (09:1x UTC 15 Oct)
+
+### OBRED-MEM (Opus, cap 3, box 60 min, service.archief.nl / nationaalarchief.nl <= 25): oldenbarnevelt-brederode-1605 Maurits's deciphered memorie
+OBRED-KEYHUNT (27f658b7d): res. 1779 (11 Oct 1619) records a Brederode memorie deciphered by Maurits; next "inv. 6019 stride-1 from 532 backward to
+the 2 Oct 1619 letter (res. 1779c, S.G. 6019 orig.) for the memorie and any decipherment filed with it". Screen at 1000 px, candidates at 5000 px.
+If a cipher memorie and/or its decipherment (interlinear, marginal, or a separate clear copy) is found: record scans and layout, and whether its
+numeral groups are in the no. 92/187 / 1619 system (by eye: value range, name band 588-751); transcription and alignment are a later job,
+priced in your Remaining gaps line. That is a period decipherment: say so plainly (rule 4: grade C for what it fixes, once aligned). Take/release
+lines. Update Remaining gaps / Escalation (known-keys), gaps_check.
+
+### MAT-KA (Opus, cap 3, box 60 min, disk only): matignon-mayenne-1586 held-out known-answer test of the label candidates
+Verdict ~1408 (MAT-F91E): "a known-answer instrument for the U=e/T=r/D2=a/BOX2=u/+=m candidates pooled over blocks A-F, holding out one block's
+gloss per label with the same shuffle control (~$2)". Rule 3 third-attempt clause: the --try window score is retired for these (power control
+failed); this is a different instrument (block-held-out gloss agreement). PREREG first: per label, fit on five blocks, predict the held-out
+block's gloss letter at that label's positions, pooled leave-one-block-out accuracy vs >= 200 label-shuffled draws (p95) and a power check (a
+known H code with the same occurrence count must pass). Labels below power are "too-short", not rejected. A passing label is reported as a
+candidate for key.tsv at grade S with its numbers; no key.tsv edit in this job. HYPOTHESES.md rows, Verdict, gaps_check.
