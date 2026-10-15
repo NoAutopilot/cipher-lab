@@ -1623,6 +1623,7 @@ Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines
 - [x] key-rebuild: --try rejects K12=d and K34=y (MONL-K12); blind sorts L01-L20 (MONL-SORT, MONL-VB, MONL-ADH, MONL-K04, MONL-CTL); K04-for-n pseudo-code --try with power and negative controls accepts n at the 15 (MONL-K04TRY); K14-for-s accepts s at the 19 with both controls passed, K62-for-m has no power at n=5 (MONL-K14TRY)
 - [x] image-check: c268 L21-L25 native crops cut and reconciled by eye (MONL-L21); L16-L20 and L11-L15 likewise (MONL-L16, MONL-L11)
 - [n/a] retry: nothing has failed that a plain retry would change
+(adh_run.py --check STALE after the MONL-SORT2 L06:18 relabel: fixed 15 Oct 2026 14:2x UTC by the A4-1236 lane orchestrator, one elif setting L06:18 K12 back to K04 in the frozen MONL-L11 stream; `python3 adh_run.py --check` "adh_run: OK".)
 Verdict: keep going: 9 internal gaps; cheapest next: the K04|K12 + K14|K37 + K40/K45 value-blind sort in one job after regen_monll11/16/21.sh (openapi.bnf.fr 3 requests, ~$2.5), then c268 L26-L30 (~$3.5), which also feeds the K34/K62 --try re-run
 
 ## MONL-SORT2: value-blind K04|K12 + K14|K37 + K40/K45 sort with in-band controls (15 Oct 2026, account 4, Opus, for LANE DEFAULT-A4-1236-15; job MONL-SORT)
@@ -1640,7 +1641,6 @@ Checks: `python3 ../../tools/decode_key.py . --check` "reading up to date"; `pyt
 
 ## Remaining gaps (MONL-SORT2, 15 Oct 2026)
 Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines 1-25 (857 tokens) C 426 / M 396 / U 35 against the ff.140r-141r clear text (align confirm 552/814 = 0.678 vs shuffled-clear max 0.404).
-- adh_run.py --check STALE after the L06:18 relabel - blocker: not-attempted; stopped over cap; next: one elif in adh_run.py setting L06:18 K12 back to K04 in its frozen stream (as MONL-CTL did for L11:14), then --check, ~$0.2
 - K04-for-n (13 over L01-L25) - blocker: not-attempted; MONL-SORT2 relabelled 2, 6 kept K04 by both readers, 5 split, 2 low-conf; next: an eye look at the 7 split/low-conf tiles on 3x crops (MAT-O3X's method), ~$1
 - K14-for-s (19 over L01-L25) - blocker: not-attempted; shape is K14 at all 6 sorted (H/H), context reads s (MONL-K14TRY); next: build the positional null for R0s (code-wide K14=s) so the --try can license or refuse a key value, ~$1
 - K40 facing z (L12:21, L24:29, L25:16) and t (L22:6); L24:3 K45 vs K39 - blocker: not-attempted; shapes confirmed K40 by both readers; next: a K40=z code-wide --try with its power control once c268 L26 on adds tokens, ~$0.5; L24:3 eye look rides the K04 look, ~$0
@@ -1661,4 +1661,4 @@ Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines
 - [x] key-rebuild: --try rejects K12=d and K34=y (MONL-K12); blind sorts L01-L25 (MONL-SORT, MONL-VB, MONL-ADH, MONL-K04, MONL-CTL, MONL-SORT2); K04/K14 pseudo-code --try (MONL-K04TRY, MONL-K14TRY)
 - [x] image-check: c268 L01-L25 native crops cut and reconciled by eye (MONL-C268B, MONL-L11, MONL-L16, MONL-L21)
 - [n/a] retry: nothing has failed that a plain retry would change
-Verdict: keep going: 10 internal gaps; cheapest next: the adh_run.py one-line fix (~$0.2), then the R0s positional null for K14=s (~$1), then c268 L26-L30 (~$3.5)
+Verdict: keep going: 9 internal gaps; cheapest next: the R0s positional null for K14=s (~$1), then c268 L26-L30 (~$3.5)

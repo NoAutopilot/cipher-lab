@@ -31,6 +31,8 @@ def base_tokens():
             out.append({**t, 'sign': 'K04', 'value': 'd'})
         elif (t['line'], t['pos']) == ('L11', 14) and t['sign'] == 'K12':  # the MONL-CTL sort relabel came after this run: K04
             out.append({**t, 'sign': 'K04', 'value': 'd'})
+        elif (t['line'], t['pos']) == ('L06', 18) and t['sign'] == 'K12':  # the MONL-SORT2 relabel came after this run: K04
+            out.append({**t, 'sign': 'K04', 'value': 'd'})
         elif int(t['line'][1:]) > 15:  # MONL-L16 (15 Oct 2026): L16-L20 came after this run; the run is on L01-L15
             continue
         elif (t['line'], t['pos']) == ('L15', 18) and t['sign'] == 'K11':  # MONL-L16 eye re-check came after this run: MONL-L11's K62
