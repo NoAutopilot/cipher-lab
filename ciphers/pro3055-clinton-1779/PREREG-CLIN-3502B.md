@@ -1,4 +1,4 @@
-# PREREG CLIN-3502B (15 Oct 2026, 14:4x UTC by date -u; written before any look at p.300 at reading size and before any pass or score)
+# PREREG CLIN-3502B (15 Oct 2026, 14:3x UTC by date -u; written before any look at p.300 at reading size and before any pass or score)
 
 Job CLIN-3502B, LANE DEFAULT-A2-1410-15 (account 2). Item: **B.147 p.300** (H-1649 Image 946, IIIF c0x921d0fz0x), the SECOND page of
 the cipher copy of item 3502 (PRO 30/55/29/83; New York, 8 May 1781). Text-known item: a key-consistency check, no reading changes,
