@@ -48,3 +48,13 @@ c232a	232	les distraire	1	10:	les
 c232a	232	les distraire	2	17	di
 c232a	232	les distraire	5	65'	ra
 c232a	232	les distraire	7	66'	re
+# BAL-65L (15 Oct 2026, account 4): Baluze 169 c180 (Bouthillier f.80 letter, f.88r) and Baluze 168 (btv1b9001503k) c439 (Chavigny f.212 letter) and
+# c347 (Chavigny f.166 letter), full/2400, read by my eye with 3x zooms of each 65 (not blind). Only the 65 tokens are recorded here (all acute; the
+# key-identity gate placements for the two 168 letters are in NOTES.md "## BAL-65L"). c179, c183, c184 and c187 below line 9: no 65 under a gloss.
+c180a	180	frais	2	65'	ra
+c180b	180	ravitaillerent	1	65'	ra
+b168c439a	168:439	conclura le traitte	4	65'	ra
+b168c347a	168:347	de transilvanie	3	65'	ra
+b168c347b	168:347	Rakotzi	2	65'	ra
+b168c347c	168:347	confederation	3	65'	ra
+b168c347d	168:347	quarante	2	65'	ra

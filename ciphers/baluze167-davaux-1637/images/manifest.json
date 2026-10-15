@@ -4535,5 +4535,63 @@
    "kept": "session scratchpad only, not committed",
    "job": "BAL-65G"
   }
+ ],
+ "bal_65l_fetches": [
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f179/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T13:14Z",
+   "http": 200,
+   "sha1": "3f9c6884a44c9531e136d2dc983d6dac30d88d9d",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65L"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f180/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T13:14Z",
+   "http": 200,
+   "sha1": "4122e860d18dcf68875ff714ff183ba9ae003adb",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65L"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f183/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T13:15Z",
+   "http": 200,
+   "sha1": "58cb11c516e8108ee925e859525effe749a60900",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65L"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f184/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T13:15Z",
+   "http": 200,
+   "sha1": "e43332144efaa25ef1c6546771c30a4668ac728a",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65L"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001488b/f187/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T13:16Z",
+   "http": 200,
+   "sha1": "2cf93150d5f180e11bba74cc7de0b6a02f11be66",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65L"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f439/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T13:19Z",
+   "http": 200,
+   "sha1": "1f28b5f540ef68f6bbc3a3e2a8df45f6163e1251",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65L"
+  },
+  {
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9001503k/f347/full/2400,/0/default.jpg",
+   "fetched": "2026-10-15T13:19Z",
+   "http": 200,
+   "sha1": "5af44d59a71731931b7111c446d6c794091502c5",
+   "kept": "session scratchpad only, not committed",
+   "job": "BAL-65L"
+  }
  ]
 }
