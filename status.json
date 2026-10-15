@@ -850,7 +850,7 @@
    "stage": 2,
    "state": "open",
    "holder": "Nationaal Archief",
-   "next": "Transcribe the pool: scan 423 (17 Sept 1621, about 20 groups, mostly one-number+letter units such as 22.x / 40.d / 46.f that repeat the first number and letter of the 13 Aug units) and scan 375 (13 Aug signed witness) with two blind readers each (HEID-1621G queued, cap 11); then one spec for both letters under one key. Period decipherment leads not digitised: inv. 6056 (Mansfelt 1622 'met de oplossing'), 6055, 12578.1 (Haga key). Scan 58 (French, 2-digit groups + name codes) is a separate intake candidate.",
+   "next": "Settle the trailing letters: the 375-vs-379 known-answer control reads 37/45 units (0.822, gate 0.90) with the numbers 96/96 right and every miss a trailing-letter naming -- lookalike pass on the letter signs across the 375/379/423 reads (HEID-1621H queued, cap 5), then the pooled two-letter spec and its first cheap test with the matched synthetic control. The 17 Sept single-number form equals the 13 Aug pair's first number in 6/12 units (either number 9/12). Period decipherment leads not digitised: inv. 6056, 6055, 12578.1. Scan 58 (French, 2-digit groups + name codes) is a separate intake candidate.",
    "note": "Found 15 Oct 2026 by OBRED-6021 (account 2) in a stride-6 screen of inv. 6021; sender read on the signed letter (HEID-1621B); Resolutien SG nieuwe reeks 5 p.260 res. 1644b calendars it as 'Gedeeltelijk in code' with no decipherment (HEID-1621D); not in DECODE, Cryptiana or either solver repository (HEID-1621C). Design lead: two-digit consecutive-pair groups each followed by a letter, one unit per word."
   }
  ],

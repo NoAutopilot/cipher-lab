@@ -107,3 +107,20 @@ readers agree = S for the digits/letters as transcribed, else M; no value is rea
 NOTES.md "## HEID-1621G (<date -u>)": agreement numbers, unit inventory (distinct units across both letters, how many are shared), whether
 the 17 Sept single-number form is the 13 Aug pair's first number every time, requests per host, and the next row (the pooled spec +
 first cheap test, cap 3). No decode, no key, no reading.
+
+## JOB HEID-1621H (account 2; Opus 5.5; cap USD 5; box 75 minutes; disk only, no network, no reader subagents (the crops are on disk from HEID-1621G); Price: vision calls: 0 x USD 0 = 0)
+HEID-1621G's next line for ciphers/brederode-heidelberg-1621: the 375-vs-379 known-answer control FAILed on letters (37/45 = 0.822 vs 0.90)
+while the numbers agree 96/96 -- every miss is the naming of the trailing letter sign. (1) `tools/lookalike_pass.py` on the trailing-letter
+signs across the reads on disk (heid1621g/ readA/readB for 375 and 423, the 379 reads of HEID-1621), the named pairs being whatever the
+misses split on (list them first from the 8 misses); its 2-of-3 residual is agreement, not accuracy (CLAUDE.md Usage 6) -- report per
+letter sign the agreement after the pass, and write the still-split signs to a focus.tsv for the owner's sign sorter (never blocking). Re-run
+the 375-vs-379 control on the post-pass units: PASS at >= 0.90 licenses the letters at S-as-transcribed; otherwise the letters stay M and
+the spec below treats the letter as an unreliable field (say so in the spec). (2) Pooled spec `specs/brederode-heidelberg-1621.json`
+updated (HEID-1621D wrote the single-letter version): ciphertext = the 13 Aug units (379, with 375 as witness) + the 17 Sept units (423),
+alphabet = the unit inventory (pair or single number + letter), constraints = (n, n+1) pairs, one unit per word, the 17 Sept single-number
+form matches the 13 Aug pair's first number in 6/12 (either number 9/12 -- register the hypothesis "single = first number" as a counted test
+against the shuffled-pairing null, not as a fact), Dutch 1621, two letters one key; cheap tests in order; `judge` block. (3) Test 1 at cap 3
+inside this job, control first: unit inventory of the pooled units vs a frozen nl16 word pool (as t1/inventory.py did at N=45, now at the
+pooled N), matched control = a synthetic word code with the same unit count, the same letter/number split and the same two-letter division,
+scored by the same script; both numbers into `cheap_test_done` and HYPOTHESES.md. No decode, no key, no reading. NOTES.md "## HEID-1621H
+(<date -u>)" ending in the status word and the next row (or "spec moved / did not move" per CLAUDE.md 3a).

@@ -10011,3 +10011,10 @@ on halt.
 ## LANE DEFAULT-account-4-20261015-2135 handoff (session_01QbqVitYEsc4RipsPNB9Yyt, account 4, for the parent orchestrator (account 4, session_01D7XWmthshMVqxumdDvitPh)), 15 October 2026 (21:37-21:4x UTC by date -u; closed at once: nothing changed; 0 workers, orchestrator ~0.3 of 60 (estimate, get_session shows no cost))
 Since A4-2034 closed 20:38: no ASKS.md or sorter commit, no new material in any folder this lane may take; the only landings were brederode-heidelberg-1621 (HEID-1621G, LANE VIV-KEYSTONE, excluded), the A2-2109 empty close and a BUDGETS.md usage-watch rewrite (account 1 allowed_warning: no new workers anywhere under the scaling rule). No worker spawned, no image committed. Fifth empty account-4 DEFAULT refill today (1843, 1934, 2034, 2135): repeats the request for a PAUSE-account-4 row on blast autofill until an ASKS/sorter answer or new material lands.
 
+
+LANE VIV-KEYSTONE handoff, appended 21:5x UTC 15 Oct 2026 (parent, account 4). HEID-1621G: scans 375 and 423 transcribed (4 blind readers +
+2 reconciliations, line crops only); known-answer control 375 vs 379 = 37/45 units (0.822) vs gate 0.90 FAIL for the trailing letters
+(numbers 96/96 agree; all 8 misses are letter naming) -> every unit M; scan 423 = 14 units, single-number form = the 13 Aug pair's first
+number in 6/12 (either 9/12). HEID-1621H queued on account 2 (cap 5): lookalike pass on the letter signs, re-run the control, pooled spec,
+test 1 with the matched control. status.json next line updated. Account 1 paused; owner page empty; FDR not reported sent; no owner word on
+halt.
