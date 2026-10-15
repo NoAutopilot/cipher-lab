@@ -92,3 +92,20 @@ Conflicts go to HYPOTHESES.md with witnesses (rule 4); no key.tsv edit except th
 ### OBRED-6019B (Opus, cap 2, box 40 min, no network unless a sheet must be rebuilt): oldenbarnevelt-brederode-1605 inv. 6019 sheets 20-25
 OBRED-6019 built sheets 20-25 (scans 514-649, 46) but stopped at its cap line; regen_6019.sh reproduces them. Same PREREG, same controls, calls
 pushed before the key. Report hits and controls; update Verdict (inv. 6019 closed or not) and gaps_check.
+
+## Wave 4 (06:5x UTC 15 Oct)
+
+### OBRED-556 (Opus, cap 5, box 75 min, nationaalarchief/service.archief.nl per OBRED-6018's route, >= 1.5 s, <= 40 requests): oldenbarnevelt-brederode-1605 inv. 6019 scan 556
+OBRED-6019B (15 Oct) found scan 556 (about Oct 1619): ~32 numeral groups inside Dutch prose with interlinear/marginal glosses; one provisional
+read only. Its named next: two blind passes of scans 555-557 + a pre-registered overlap test against nos. 92/187 (~4). PREREG first (pushed):
+what overlap with the target's code system counts as a match, and a shuffled-code control. Units: native line crops of the numeral lines
+(`tools/iiif_lines.py --image ... --debug`, check the overlay before any pass), 2 blind Sonnet passes (<= 12 crops per call, ~0.6 each) + 1
+reconcile; the glosses read once (Opus) + Sonnet check, graded C where they sit over a group. Report: groups transcribed, glossed pairs, overlap
+result vs control. A glossed pair enters the key only through the folder's own path with a passing control (rule 3 per-unit merge). gaps_check.
+
+### MAT-F91C (Opus, cap 5, box 75 min, openapi.bnf.fr <= 6): matignon-mayenne-1586 f.91 blocks C and F, crops first
+MAT-F91B re-measured C and F on native canvas 98 (regions in NOTES "MAT-F91B") but cut strips +-75 px too tall: passes agreed 45.1%, no
+alignment. Step 1 (gate before any vision call): cut line crops with `tools/iiif_lines.py --image <native c98 region> --out <scratch> --debug`,
+look at the overlay, and record the per-line crop heights; no pass starts until each crop holds one line. Step 2: MAT-F91's protocol and gate
+(PREREG addendum pushed first): 2 blind Sonnet passes + reconcile, gloss Opus read + Sonnet check, shuffled-gloss control, interlinear_align with
+prior key.tsv. Do not re-run --try (its power control failed in MAT-F91B; that is logged). Stop before a unit crossing 80% of cap. gaps_check.
