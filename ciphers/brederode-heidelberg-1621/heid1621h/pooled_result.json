@@ -1,0 +1,95 @@
+{
+ "N_units": 59,
+ "N_13aug": 45,
+ "N_17sept": 14,
+ "pools_two_piece_45_14": {
+  "word": {
+   "median": 50.0,
+   "p05": 43,
+   "p95": 54
+  },
+  "syll": {
+   "median": 49.0,
+   "p05": 42,
+   "p95": 54
+  },
+  "letter": {
+   "median": 19.0,
+   "p05": 16,
+   "p95": 21
+  }
+ },
+ "keys": {
+  "KT_as_transcribed": {
+   "C3_word_band_share": 0.5933,
+   "C3_outcomes": {
+    "undecided": 122,
+    "word band": 178
+   },
+   "C3_gate": 0.9,
+   "C3_pass": false,
+   "K_target": 36,
+   "target_band": "not read (C3 below gate: non-test for this key at N=59)"
+  },
+  "KF_single_eq_first": {
+   "C3_word_band_share": 0.7767,
+   "C3_outcomes": {
+    "undecided": 66,
+    "word band": 233,
+    "below the word band": 1
+   },
+   "C3_gate": 0.9,
+   "C3_pass": false,
+   "K_target": 29,
+   "target_band": "not read (C3 below gate: non-test for this key at N=59)"
+  }
+ },
+ "C2": {
+  "windows": 20,
+  "K_range": [
+   35,
+   39
+  ],
+  "rankmatch_mean": 0.0169,
+  "rankmatch_max": 0.1186,
+  "gate": 0.5,
+  "pass": false,
+  "target_rankmatch": "not run (C2 below gate)"
+ },
+ "single_eq_first": {
+  "n_S1": 12,
+  "P_units_13aug_379": 40,
+  "numeral_range_13aug": [
+   10,
+   84
+  ],
+  "observed": {
+   "k_first": 6,
+   "k_either": 10,
+   "k_first_letter": 6,
+   "k_either_letter": 9
+  },
+  "value_null": {
+   "k_first": {
+    "mean": 3.352,
+    "p": 0.0889
+   },
+   "k_either": {
+    "mean": 5.763,
+    "p": 0.0128
+   }
+  },
+  "pairing_null": {
+   "k_first_letter": {
+    "mean": 1.087,
+    "p": 0.0002
+   },
+   "k_either_letter": {
+    "mean": 2.251,
+    "p": 0.0
+   }
+  },
+  "note": "letters M (step 1 control FAIL); a p < 0.01 is a counted lead (M), never a key or a reading"
+ },
+ "seed": 1621
+}

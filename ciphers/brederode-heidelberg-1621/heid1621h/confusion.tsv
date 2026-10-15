@@ -1,0 +1,15 @@
+label_a	label_b	n	n_target	examples
+B	S	3	0	heid1621h:w379_L05.9 heid1621h:w379_L07.11 heid1621h:x375_379.23
+r	x	3	0	heid1621h:w379_L02.7 heid1621h:w379_L06.1 heid1621h:w379_L10.12
+S	g	2	0	heid1621h:w375_L05.3 heid1621h:w375_L07.4
+c	r	2	0	heid1621h:w379_L02.10 heid1621h:x375_379.3
+c	x	2	0	heid1621h:x375_379.17 heid1621h:x375_379.37
+f	s	2	0	heid1621h:w375_L07.1 heid1621h:x375_379.27
+9	g	1	0	heid1621h:w379_L12.5
+9	q	1	0	heid1621h:w423_L04.5
+B	b	1	0	heid1621h:w379_L05.15
+SYM	f	1	0	heid1621h:x375_379.44
+e	w	1	0	heid1621h:x375_379.5
+f	j	1	0	heid1621h:w379_L03.12
+j	s	1	0	heid1621h:x375_379.8
+x	z	1	0	heid1621h:w375_L11.7

@@ -1,0 +1,148 @@
+passage	pos	sign_id	conf	note	question
+w375_L02	4	o	M	passC	
+w375_L02	7	x	M	passC	
+w375_L02	10	c	M	passC	
+w375_L02	13	d	M	passC	
+w375_L02	16	e	M	passC	
+w375_L03	3	p	M	passC	
+w375_L03	6	k	M	passC	
+w375_L03	9	s	M	passC	
+w375_L04	8	i	M	passC	
+w375_L04	11	x	M	passC	
+w375_L04	14	p	M	passC	
+w375_L05	3	g	M	lookalike UNSETTLED	w375_L05.3: readers g/S, look-alike NONE (L); which of NONE, S, g?
+w375_L05	6	d	M	passC	
+w375_L05	9	b	M	passC	
+w375_L05	12	x	M	passC	
+w375_L05	15	p	M	passC	
+w375_L05	18	x	M	passC	
+w375_L06	5	b	M	passC	
+w375_L06	8	d	M	passC	
+w375_L06	11	a	M	passC	
+w375_L06	14	b	M	passC	
+w375_L07	1	s	M	lookalike UNSETTLED	w375_L07.1: readers s/f, look-alike NONE (L); which of NONE, f, s?
+w375_L07	4	g	M	lookalike UNSETTLED	w375_L07.4: readers g/S, look-alike NONE (L); which of NONE, S, g?
+w375_L07	7	SYM	M	passC	
+w375_L07	12	c	M	passC	
+w375_L07	15	x	M	passC	
+w375_L08	3	s	M	passC	
+w375_L08	6	x	M	passC	
+w375_L08	11	p	M	passC	
+w375_L09	6	g	M	passC	
+w375_L09	9	c	M	passC	
+w375_L10	1	m	M	passC	
+w375_L10	4	x	M	passC	
+w375_L10	8	f	M	passC	
+w375_L11	1	x	M	passC	
+w375_L11	4	d	M	passC	
+w375_L11	7	z	M	lookalike UNSETTLED	w375_L11.7: readers z/x, look-alike NONE (L); which of NONE, x, z?
+w375_L11	10	g	M	passC	
+w375_L11	13	i	M	passC	
+w375_L11	16	d	M	passC	
+w375_L12	3	v	M	passC	
+w375_L12	7	m	M	passC	
+w375_L13	2	i	M	passC	
+w375_L13	5	SYM	M	passC	
+w375_L13	8	c	M	passC	
+w423_L04	3	x	M	passC	
+w423_L04	5	q	M	lookalike UNSETTLED	w423_L04.5: readers q/9, look-alike NONE (L); which of 9, NONE, q?
+w423_L04	7	b	M	passC	
+w423_L04	9	f	M	passC	
+w423_L04	11	i	M	passC	
+w423_L04	13	x	M	passC	
+w423_L04	15	d	M	passC	
+w423_L05	1	a	M	passC	
+w423_L05	5	x	M	passC	
+w423_L05	7	d	M	passC	
+w423_L05	9	x	M	passC	
+w423_L05	11	m	M	passC	
+w423_L05	13	x	M	passC	
+w379_L02	4	o	M	passC	
+w379_L02	7	x	M	lookalike UNSETTLED	w379_L02.7: readers x/r, look-alike NONE (L); which of NONE, r, x?
+w379_L02	10	r	M	lookalike UNSETTLED	w379_L02.10: readers r/c, look-alike NONE (L); which of NONE, c, r?
+w379_L02	13	d	M	passC	
+w379_L03	3	w	M	passC	
+w379_L03	6	p	M	passC	
+w379_L03	9	k	M	passC	
+w379_L03	12	j	M	lookalike UNSETTLED	w379_L03.12: readers j/f, look-alike NONE (L); which of NONE, f, j?
+w379_L04	7	i	M	passC	
+w379_L05	3	x	M	passC	
+w379_L05	6	p	M	passC	
+w379_L05	9	S	M	lookalike UNSETTLED	w379_L05.9: readers S/B, look-alike NONE (L); which of B, NONE, S?
+w379_L05	12	d	M	passC	
+w379_L05	15	b	M	lookalike UNSETTLED	w379_L05.15: readers b/B, look-alike NONE (L); which of B, NONE, b?
+w379_L06	1	r	M	lookalike UNSETTLED	w379_L06.1: readers r/x, look-alike NONE (L); which of NONE, r, x?
+w379_L06	4	p	M	passC	
+w379_L06	7	c	M	passC	
+w379_L06	12	b	M	passC	
+w379_L06	15	d	M	passC	
+w379_L07	2	a	M	passC	
+w379_L07	5	b	M	passC	
+w379_L07	8	f	M	passC	
+w379_L07	11	B	M	lookalike UNSETTLED	w379_L07.11: readers B/S, look-alike NONE (L); which of B, NONE, S?
+w379_L08	4	c	M	passC	
+w379_L08	7	x	M	passC	
+w379_L08	10	f	M	passC	
+w379_L08	13	x	M	passC	
+w379_L09	1	p	M	passC	
+w379_L10	3	g	M	passC	
+w379_L10	6	c	M	passC	
+w379_L10	9	m	M	passC	
+w379_L10	12	r	M	lookalike UNSETTLED	w379_L10.12: readers r/x, look-alike NONE (L); which of NONE, r, x?
+w379_L11	3	f	M	passC	
+w379_L11	6	x	M	passC	
+w379_L11	9	d	M	passC	
+w379_L12	2	c	M	passC	
+w379_L12	5	9	M	lookalike UNSETTLED	w379_L12.5: readers 9/g, look-alike NONE (L); which of 9, NONE, g?
+w379_L12	8	i	M	passC	
+w379_L12	11	d	M	passC	
+w379_L12	14	v	M	passC	
+w379_L13	3	m	M	passC	
+w379_L13	6	i	M	passC	
+w379_L13	9	f	M	passC	
+w379_L14	3	c	M	passC	
+x375_379	1	o	M	passC	
+x375_379	2	x	M	passC	
+x375_379	3	c	M	lookalike UNSETTLED	x375_379.3: readers c/r, look-alike NONE (L); which of NONE, c, r?
+x375_379	4	d	M	passC	
+x375_379	5	e	M	lookalike UNSETTLED	x375_379.5: readers e/w, look-alike NONE (L); which of NONE, e, w?
+x375_379	6	p	M	passC	
+x375_379	7	k	M	passC	
+x375_379	8	s	M	lookalike UNSETTLED	x375_379.8: readers s/j, look-alike NONE (L); which of NONE, j, s?
+x375_379	9	i	M	passC	
+x375_379	10	x	M	passC	
+x375_379	11	p	M	passC	
+x375_379	12	S	M	passC	
+x375_379	13	d	M	passC	
+x375_379	14	b	M	passC	
+x375_379	15	x	M	passC	
+x375_379	16	p	M	passC	
+x375_379	17	x	M	lookalike UNSETTLED	x375_379.17: readers x/c, look-alike NONE (L); which of NONE, c, x?
+x375_379	18	b	M	passC	
+x375_379	19	d	M	passC	
+x375_379	20	a	M	passC	
+x375_379	21	b	M	passC	
+x375_379	22	f	M	passC	
+x375_379	23	S	M	lookalike UNSETTLED	x375_379.23: readers S/B, look-alike NONE (L); which of B, NONE, S?
+x375_379	24	NONE	M	passC	
+x375_379	25	c	M	passC	
+x375_379	26	x	M	passC	
+x375_379	27	s	M	lookalike UNSETTLED	x375_379.27: readers s/f, look-alike NONE (L); which of NONE, f, s?
+x375_379	28	x	M	passC	
+x375_379	29	p	M	passC	
+x375_379	30	g	M	passC	
+x375_379	31	c	M	passC	
+x375_379	32	m	M	passC	
+x375_379	33	x	M	passC	
+x375_379	34	f	M	passC	
+x375_379	35	x	M	passC	
+x375_379	36	d	M	passC	
+x375_379	37	x	M	lookalike UNSETTLED	x375_379.37: readers x/c, look-alike NONE (L); which of NONE, c, x?
+x375_379	38	g	M	passC	
+x375_379	39	i	M	passC	
+x375_379	40	d	M	passC	
+x375_379	41	v	M	passC	
+x375_379	42	m	M	passC	
+x375_379	43	i	M	passC	
+x375_379	44	SYM	M	lookalike UNSETTLED	x375_379.44: readers SYM/f, look-alike NONE (L); which of NONE, SYM, f?
+x375_379	45	c	M	passC	

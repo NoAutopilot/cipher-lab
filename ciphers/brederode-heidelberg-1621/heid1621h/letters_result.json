@@ -1,0 +1,22 @@
+{
+ "agreement_rows": 147,
+ "split_rows": 22,
+ "reconcile": "{\"signs\": 147, \"flagged\": 22, \"relabelled\": 0, \"unsettled\": 22, \"residual\": 0.15}",
+ "relabelled": 0,
+ "control_units_375": 45,
+ "control_units_379": 45,
+ "control_matched": 37,
+ "control_agreement": 0.822,
+ "control_gate": 0.9,
+ "control_pass": false,
+ "cross_witness_letter_splits": [
+  "76.77: 375 c / 379 r",
+  "13.14: 375 e / 379 w",
+  "46.47: 375 s / 379 j",
+  "64.65: 375 x / 379 c",
+  "16.17: 375 S / 379 B",
+  "47.48: 375 s / 379 f",
+  "64.65: 375 x / 379 c",
+  "46.47: 375 SYM / 379 f"
+ ]
+}

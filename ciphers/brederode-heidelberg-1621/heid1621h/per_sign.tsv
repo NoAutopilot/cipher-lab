@@ -1,0 +1,26 @@
+sign	positions	agreed_after_pass	agreement	split_with
+9	2	0	0.0	g,q
+B	4	0	0.0	S,b
+j	2	0	0.0	f,s
+q	1	0	0.0	9
+r	5	0	0.0	c,x
+z	1	0	0.0	x
+S	6	1	0.167	B,g
+s	5	2	0.4	f,j
+e	2	1	0.5	w
+w	2	1	0.5	e
+g	8	5	0.625	9,S
+SYM	3	2	0.667	f
+f	12	8	0.667	SYM,j,s
+c	16	12	0.75	r,x
+x	30	24	0.8	c,r,z
+b	10	9	0.9	B
+NONE	1	1	1.0	
+a	4	4	1.0	
+d	17	17	1.0	
+i	10	10	1.0	
+k	3	3	1.0	
+m	7	7	1.0	
+o	3	3	1.0	
+p	12	12	1.0	
+v	3	3	1.0	

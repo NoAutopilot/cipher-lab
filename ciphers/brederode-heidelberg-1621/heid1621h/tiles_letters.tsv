@@ -1,0 +1,23 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+heid1621h	w375_L05	3	g	g	S	split	split	S,g				
+heid1621h	w375_L07	1	s	s	f	split	split	f,s				
+heid1621h	w375_L07	4	g	g	S	split	split	S,g				
+heid1621h	w375_L11	7	z	z	x	split	split	x,z				
+heid1621h	w423_L04	5	q	q	9	split	split	9,q				
+heid1621h	w379_L02	7	x	x	r	split	split	r,x				
+heid1621h	w379_L02	10	r	r	c	split	split	c,r				
+heid1621h	w379_L03	12	j	j	f	split	split	f,j				
+heid1621h	w379_L05	9	S	S	B	split	split	B,S				
+heid1621h	w379_L05	15	b	b	B	split	split	B,b				
+heid1621h	w379_L06	1	r	r	x	split	split	r,x				
+heid1621h	w379_L07	11	B	B	S	split	split	B,S				
+heid1621h	w379_L10	12	r	r	x	split	split	r,x				
+heid1621h	w379_L12	5	9	9	g	split	split	9,g				
+heid1621h	x375_379	3	c	c	r	split	split	c,r				
+heid1621h	x375_379	5	e	e	w	split	split	e,w				
+heid1621h	x375_379	8	s	s	j	split	split	j,s				
+heid1621h	x375_379	17	x	x	c	split	split	c,x				
+heid1621h	x375_379	23	S	S	B	split	split	B,S				
+heid1621h	x375_379	27	s	s	f	split	split	f,s				
+heid1621h	x375_379	37	x	x	c	split	split	c,x				
+heid1621h	x375_379	44	SYM	SYM	f	split	split	SYM,f				

@@ -377,3 +377,63 @@ Read so far: 0 of 59 units (13 Aug 45 + 17 Sept 14 transcribed, all M; nothing d
 - [ ] image-check: trailing-letter glyphs across 375/379/423 unsettled (control FAIL on letters)
 - [x] retry: the NA host answered (HEID-1621G, 5 requests, all 200)
 Verdict: keep going: 1 internal gaps; cheapest next: lookalike pass on the trailing letters, ~$1.5
+
+## HEID-1621H (15 Oct 2026, 22:11-22:2x UTC by date -u, account 2, Opus; for the orchestrator, owner account)
+Brief: `.claude/briefs/runs/2026-10-15-acct4-depth-steps-2.md`, JOB HEID-1621H. PREREG `heid1621h/PREREG-HEID1621H.md` pushed (7f4320f16)
+before any count. Disk only: 0 network requests, 0 vision calls, no reader subagent. No decode, no key, no reading.
+**Departure from the brief, stated:** the brief says the HEID-1621G crops are on disk; they are not in this container (they lived in
+that session's scratch, and `heid1621g/regen_heid1621g.sh` needs 5 service.archief.nl requests, which this job may not make). So the
+look-alike pass ran its `confusion` and `reconcile` stages on the reads on disk, with an explicit "no re-read" row per flagged tile.
+
+### Step 1: look-alike pass on the trailing letter signs (`heid1621h/letters.py --check`)
+- 147 letter-position rows: 375 reader A vs B, 423 reader A vs B, 379 reader A vs B (from ciphertext.tsv notes; the eye's noted
+  alternative where both readers agreed), and the 45 aligned 375-vs-379 units. **22 split positions**; named pairs
+  (`heid1621h/confusion.tsv`): B/S 3, r/x 3, S/g 2, c/r 2, c/x 2, f/s 2, and once each 9/g, 9/q, B/b, sign/f, e/w, f/j, j/s, x/z.
+- `tools/lookalike_pass.py reconcile`: 0 relabelled, 22 UNSETTLED (residual 0.150 -- a 2-of-3 figure on the reads, not accuracy,
+  CLAUDE.md Usage 6). All 22 go to `heid1621h/focus.tsv` for the owner's sign sorter (never blocking).
+- Per letter sign after the pass (`heid1621h/per_sign.tsv`, agreed positions / positions carrying the sign): a, d, i, k, m, o, p, v
+  1.0; b 0.90; x 0.80 (30); c 0.75 (16); f 0.67; g 0.63; e, w 0.5; s 0.4; S 0.17; B, j, r, q, 9, z 0.0. The splits sit in three
+  shape families: the hooked x/r/c sign, the long-s family f/s/j, and the capital S/B/g.
+- **Control re-run, 375 vs 379 post-pass units: 37/45 = 0.822 against 0.90 -- FAIL** (unchanged, as it had to be with no tile
+  settled). The letters stay M; the pooled spec declares the letter an unreliable field and keys units on the numerals.
+
+### Step 2: pooled spec
+`specs/brederode-heidelberg-1621.json` rewritten: ciphertext = 13 Aug (379; 375 witness: numerals 96/96, units 37/45) + 17 Sept
+(423, 14 units), pooled N=59; alphabet with the letter-field warning; constraints including the counted single-vs-pair test below;
+tests in order; `judge` nl16 with its era caveat; the HEID-1621D single-letter result kept under `previous_single_letter_test`.
+
+### Step 3: test 1 at the pooled N, control first (`heid1621h/pooled.py --check`)
+- Pools: nl16 two-piece windows (45 + 14 tokens from independent places): word median 50 (p05 43, p95 54), syllable-proxy 49 (42-54),
+  letter 19 (16-21).
+- **Matched control C3** (300 synthetic word codes from the held-out file, same 45/14 division and the 423 form split, same keys,
+  same decision rule): word-band share **0.593 under key KT** (as transcribed) and **0.777 under key KF** (single = first number),
+  gate 0.90 -- **both below gate: the inventory test is a non-test at N=59.** Target K recorded, band not read: KT 36, KF 29.
+- C2 rank-match at N=59: 0.017 (max 0.119) vs gate 0.50, below gate; the target's rank-match not run.
+- **Counted test "single = first number"** (12 S1 units of 423 vs the 40 pair units of 379): numbers only, first 6/12 (value null
+  mean 3.35, p 0.089) and either 10/12 (mean 5.76, p 0.013) -- neither under p 0.01, so "single = first number" is **not** supported
+  as a rule. With the letter sign: first 6/12 and either 9/12 against the shuffled-pairing null (means 1.09 and 2.25, p 0.0002 and
+  < 0.0001): where a 17 Sept number recurs in a 13 Aug pair it carries the same letter sign far more often than chance. That is a
+  counted lead (M; the letters themselves are M) for "two letters, one key", not a key and not a reading. HEID-1621G's 6/12 and 9/12
+  (with letters, on 375) are reproduced on 379.
+
+Spec did not move (CLAUDE.md 3a): test 1 is a non-test at N=59 and the letter control still fails. Requests: none (0 hosts).
+
+## Remaining gaps (HEID-1621H, 15 Oct 2026)
+Read so far: 0 of 59 units (13 Aug 45 + 17 Sept 14 transcribed, all M; nothing decoded)
+- the trailing letters of both blocks - blocker: not-attempted; disk-only look-alike pass left 22 positions unsettled (no crops in this container), control 0.822 < 0.90; owner's sorter on heid1621h/focus.tsv in parallel, never blocking; next: crop re-read via regen_heid1621g.sh (5 NA requests) + tools/lookalike_pass.py windows, ~$2
+- the pooled units - blocker: too-short; test 1 C3 0.593 (KT) / 0.777 (KF) vs gate 0.90 and C2 0.017 vs 0.50 at N=59; next: sibling search for more units in this code, inv. 6021/6025
+
+## Escalation (HEID-1621H, 15 Oct 2026)
+- [x] siblings: the 17 Sept 1621 letter transcribed and pooled (HEID-1621G/H); no further Brederode cipher letter located yet
+- [ ] clear-pages: the clear prose around both blocks once the letters are settled
+- [x] known-keys: design_prior run (non-discriminating at N=45); no SG/Palatinate key of 1618-1625 on file (HEID-1621E)
+- [x] print: Resolutien SG NR 5 read, no decipherment of a Brederode letter; no edition of his letters (HEID-1621C/D/E)
+- [n/a] key-rebuild: no decipherment, gloss or key sheet of this system located to rebuild from
+- [ ] image-check: trailing-letter glyphs across 375/379/423 unsettled (control FAIL 0.822 after the disk-only look-alike pass)
+- [x] retry: the NA host answered (HEID-1621G, 5 requests, all 200)
+Verdict: keep going: 1 internal gaps; cheapest next: crop re-read of the 22 letter positions via regen + lookalike windows, ~$2
+
+Status: open. Next row for the parent: (1) letter settle -- `bash heid1621g/regen_heid1621g.sh` (5 NA requests, take/release lines)
+then `tools/lookalike_pass.py windows --tiles heid1621h/tiles_letters.tsv` and one blind re-read of the 22 windows, reconcile,
+`heid1621h/letters.py` control re-run, cap 2; the owner's sorter on `heid1621h/focus.tsv` in parallel. (2) Sibling search in NA
+1.01.02 inv. 6021/6025 (Brederode 1621-1622) for more units in this code, cap 3 -- pool size decides whether any test can run.
