@@ -1,12 +1,13 @@
-blocked
-- **Status:** blocked -- the recipient-side standard edition, *Resolutiën der Staten-Generaal, nieuwe reeks 1610-1670*, deel 5
-  (1621-1622, ed. J. Roelevink, RGP, 1983), could not be opened this session: resources.huygens.knaw.nl/retroboeken/statengeneraal
-  answered HTTP 503 twice (17:13 and 17:14 UTC, 15 Oct 2026), and the Google Books copy (id M-hDAQAAMAAJ) is NO_PAGES (snippet only).
-  The volume is known to calendar Brederode's Heidelberg letters (Google Books snippet: "Brederode, dd. Heidelberg 20 dec. 1620");
-  whether it summarises the letters of 8 and 13 Aug 1621 (received 20 Aug 1621) or their cipher passage is not yet known.
-  Blocked on a host outage, not on a person: the next step is a retry of the Huygens search (below).
+open
+- **Status:** open -- the recipient-side standard edition, *Resolutiën der Staten-Generaal, nieuwe reeks 1610-1670*, deel 5
+  (1621-1622, ed. J. Roelevink, RGP, 1983), read through the Huygens retroboeken full-text search (term "Brederode", source 5,
+  109 hits, 15 Oct 2026, HEID-1621D) and the printed pages p. 251, 252, 260, 261 (OCR html): p. 260, resolution 1644b, 23 Aug 1621,
+  calendars "Brederode, dd. Heidelberg 13 aug." with no summary of its content, and note 1644c reads "S.G 6021 (orig.). Gedeeltelijk
+  in code." -- the editor saw the cipher passage and printed no decipherment. The letter of 6 Aug (p. 251, res. 1585a) is "Niet
+  aangetroffen". Full-text search of the volume for "ontcijfer": 0 hits; "in code": 6 hits, none a decipherment of this letter.
 - **Sender:** P. van Brederode, agent of the States General at Heidelberg (signature "P van Brederode" read on scan 375, HEID-1621B)
-- **Recipient:** the States General, The Hague. **Date:** Heidelberg, 13 Aug 1621 (received "L. 20 Aug. 1621", endorsement on scan 380)
+- **Recipient:** the States General, The Hague. **Date:** Heidelberg, 13 Aug 1621 (endorsement on scan 380 read "L. 20 Aug. 1621" by HEID-1621B; the edition records the
+  letter among those received on 23 Aug 1621, res. 1644b -- the two dates disagree, not settled here)
 - **Holder:** Nationaal Archief, 1.01.02 Staten-Generaal, inv. 6021 (liasse Agent Brederode, 1621-1622). Two witnesses of one
   numeral block: scan 375 (signed letter) and scan 379 (the duplicate; 380 "Duplicaet vanden 13 Augusti 1621").
 - **Split from:** ciphers/oldenbarnevelt-brederode-1605 (sections "## HEID-1621" and "## HEID-1621B"; working files stay in its
@@ -64,7 +65,11 @@ cipher sheet, Aitzema). Blog search across Cipherbrain / klausis-krypto-kolumne 
 - (b) Other solvers' working files: neither solver repository has this item (item 5). Not found.
 - (c) Physical neighbours: 361-397 screened at 700 px (HEID-1621B, controls 15/15); 374-380 read at 1200 px; no key leaf, clear copy or
   decipherment beside either block. Not found (limit: scan 375's facing page not seen at native size).
-- (d) Recipient's side: the Resolutiën SG 1621 volume is exactly this check and is **unreachable** this session (item 1). Unreachable.
+- (d) Recipient's side: the Resolutiën SG 1621 volume is exactly this check; unreachable on HEID-1621C's pass, read by HEID-1621D
+  (15 Oct 2026, section below): p. 260 res. 1644b calendars the 13 Aug letter, note c "Gedeeltelijk in code", no content, no
+  decipherment. Not found.
+- **Premise check verdict (HEID-1621D): open.** No decipherment, clear copy or content summary of the cipher passage located in the
+  folder, the solver repositories, the neighbouring scans or the recipient-side edition.
 
 ## Remaining gaps
 - [ ] edition: Resolutiën SG nieuwe reeks 5 (1621-1622), entries for Brederode's letters of 8 and 13 Aug 1621 read around 20 Aug 1621;
