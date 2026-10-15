@@ -1,0 +1,5 @@
+# HEID-1621F sheet calls, written before each batch's sheet key is opened (this worker's eye, M)
+# batch 1 (scans 398-424, seed 16216), written 20:2x UTC 15 Oct 2026
+sheet01: CTRL-CIPHER=H CTRL-PLAIN=L CTRL-PS=D hits=none
+sheet02: CTRL-CIPHER=H CTRL-PLAIN=G CTRL-PS=I hits=none
+sheet03: CTRL-CIPHER=K CTRL-PLAIN=E CTRL-PS=J hits=B (left page, lower third: several lines of dotted numeral groups inside Dutch prose)
