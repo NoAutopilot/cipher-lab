@@ -1,0 +1,79 @@
+id	shape	conf	note
+o001	B	low	tail flag top right
+o002	B	high	a with bar
+o003	X	high	curly sign
+o004	B	low	o with bar right
+o005	A	high	plain slanted oval
+o006	X	high	text crop
+o007	B	low	tail top right
+o008	B	high	o with right bar
+o009	X	high	text crop
+o010	X	low	unclear
+o011	B	low	overbar and right bar
+o012	A	high	plain oval
+o013	B	low	a with right bar
+o014	X	high	stacked cut crop
+o015	B	high	right bar
+o016	B	high	a with right bar
+o017	A	high	plain oval
+o018	X	low	cut
+o019	B	low	tail right
+o020	A	high	plain oval
+o021	A	high	plain oval
+o022	A	high	plain with side line
+o023	X	low	cut crop
+o024	X	low	mixed rows
+o025	B	high	right bar
+o026	B	high	a with bar
+o027	A	high	plain
+o028	B	high	a with bar
+o029	B	high	a with bar
+o030	X	low	at edge
+o031	A	high	plain
+o032	B	high	a with bar
+o033	A	high	plain
+o034	A	high	plain
+o035	A	high	plain
+o036	X	high	no o visible
+o037	B	low	short bar
+o038	B	high	a with bar
+o039	B	high	a with bar
+o040	A	high	plain
+o041	X	high	no o
+o042	B	high	a with bar
+o043	A	high	plain
+o044	B	high	a with bar
+o045	X	low	ambiguous
+o046	A	high	plain
+o047	A	low	third o plain
+o048	B	high	a with bar
+o049	B	high	a with bar
+o050	B	high	a with bar
+o051	B	high	a with bar
+o052	A	high	plain
+o053	B	high	a with bar
+o054	B	high	a with bar
+o055	A	low	small plain
+o056	B	high	bar right
+o057	B	high	a with bar
+o058	B	low	small top tail
+o059	A	high	plain
+o060	A	high	plain
+o061	X	high	stacked cut
+o062	X	high	text
+o063	A	high	plain
+o064	A	high	plain
+o065	X	high	stacked
+o066	B	high	a with bar
+o067	X	low	unclear
+o068	A	high	plain
+o069	A	high	plain
+o070	B	high	a with bar
+o071	X	low	curly
+o072	B	low	bar right
+o073	X	high	stacked
+o074	B	high	a with bar
+o075	A	high	plain
+o076	X	high	text
+o077	X	low	small dotted
+o078	B	high	a with bar
