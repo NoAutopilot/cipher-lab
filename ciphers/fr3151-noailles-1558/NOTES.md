@@ -681,3 +681,27 @@ Item 2 of D22-FTS2 (Sonnet worker, 22:4x UTC, for LANE DEFAULT-account-2-2026100
 **BnF Archives et manuscrits** (browser tool: curl POST answered 405 on `/` and `/pageAccueil.html`, one retry on a second path, then `tools/browser_fetch.js --type "#TEXTE_LIBRE_ID1=..."`; the first two browser tries failed on fill/navigation, the third returned): `Noailles Venise 1558` 82 results. Items bearing on Francois's own letters: (i) fr. 3151 itself (cc496140: no. 14, 17 Oct 1558 to the king; no. 33, "Lettre, avec chiffre ... au cardinal de Lorraine ... De Venise, ce XIIIe jour de novembre 1558", the target); (ii) fr. 4127 (cc50527m, 68 letters of Noailles to La Vigne, already FT4's); (iii) **Cinq cents de Colbert 391** (cc91752x, Bochetel correspondence vol. II, Gallica `btv1b100339431`, 134 canvases, none labelled): "p. 81: Francois de Noailles, eveque de Dax, ambassadeur a Venise, 1558" (one item); (iv) Cinq cents de Colbert 395 (Gallica `btv1b10033947t`): a report by Noailles on the precedence quarrel with the Spanish ambassador, 23 Apr 1558 (p.345, in the finding-aid text); (v) Cinq cents de Colbert 394 (`btv1b10033960h`): "F. de Noailles, e. d'Acqs, 1559" (one item); (vi) a second La Vigne register, cc50523n (letters *from* La Vigne to Noailles, Jan-Dec 1558, including 10, 20 Nov and 19 Dec 1558: letters to him, not by him).
 **Heading check for (iii)**: spread views of canvases 42, 44, 46 (the page numbers 81, 85, 89 are written on the right-hand leaf; canvas 42 = p.81). p.81 opens "Sire, Lundy dernier voyant ces seigneurs que la feste de l'ascension approchoit ..." (a letter to the king about the Spanish ambassador's precedence at the Ascension ceremony, i.e. May 1558, original script, no cipher seen); p.85 is a letter to the cardinal de Tournon; p.89 is a 1560 letter. So it is neither a Noailles letter to Lorraine nor a Nov 1558 copy. No other digitised Noailles Venice register found for Nov 1558.
 Result: no other digitised register of Noailles's own Venice dispatches turned up in these searches (Gallica SRU, BnF A&M `Noailles Venise 1558`, 82 results scanned by title); fr. 10773 and the two Vertot copies and Colbert 391 p.81 do not hold no. 33; fr. 4127 ff.131-151 (owner-side reproduction) stays the route to a cipher/decipherment pair of the same weeks. One untried digitised lead: the Colbert 395 p.345 report (23 Apr 1558, not Nov). One edition not opened: Tamizey de Larroque 1865 (`bpt6k97359942`; ~USD 0.5 to grep its letters for Nov 1558 by IA/Gallica full text). Not a novelty verdict (rule 10). Requests: gallica.bnf.fr 15 (SRU 4, manifests 3, native/IIIF images 8), archivesetmanuscrits.bnf.fr 9 (2 GETs, 2 POSTs refused 405, 3 browser attempts, 1 record page, 1 more GET), no 403/429/altcha.
+
+## NOA-TAM: Tamizey de Larroque 1865, text-copy search (15 Oct 2026, 14:27 UTC, worker NOA-TAM, for LANE DEFAULT-A2-1410-15)
+
+Question (D22-FTS2): is there a text copy of Tamizey de Larroque, *Lettres inédites de François de Noailles, évêque de Dax* (1865; Gallica
+bpt6k97359942) that can be grepped for the Nov 1558 Venice letters? Requests used: archive.org / be-api.us.archive.org 6 of the 6 allowed
+(>= 2 s apart, no 403/429); gallica.bnf.fr 0 (the combined archive.org + gallica budget of 6 was spent first, so the texteBrut attempt was not made).
+
+| # | Host | Query | Result |
+|---|---|---|---|
+| 1 | archive.org advancedsearch | title:(lettres inédites Noailles Dax) | 0 docs |
+| 2 | archive.org advancedsearch | creator:(Tamizey de Larroque) AND title:(Noailles) | 0 docs |
+| 3 | archive.org advancedsearch | title:(François de Noailles évêque de Dax) | 0 docs |
+| 4 | archive.org advancedsearch | (Noailles AND Dax AND (Tamizey OR Larroque)) OR (lettres inedites AND Noailles AND eveque) | 0 docs |
+| 5-6 | be-api fts (same query twice: counts, then hit list) | "Noailles" "Dax" "Venise" 1558 Tamizey | 1550 hits, none titled as the 1865 book; first ten identifiers: antoinedebourbo01rublgoog, antoinedebourbon02rubluoft, ruble-antoine-de-bourbon-et-jeanne-d-albret-v-2, revuedegascogne39gascgoog, lesfranaisitali03picogoog, lesfranaisitali02picogoog, revuedegascogne19gascgoog, commentairesetle05montuoft, bulletindelasoc182unkngoog, societedelhistoi1601soci |
+
+Reading: no archive.org item for the 1865 book was found by title or creator (4 metadata queries, 0 docs each). The full-text query is a loose
+AND of five terms and returns Bourbon/Albret and Revue de Gascogne volumes; these were not opened, and none is a hit on the cipher letter's
+date or phrases. Revue de Gascogne is a lead only: Tamizey's Gascon letter editions often ran there, and the 1865 book may be reprinted in a
+volume (not checked). Nothing was grepped for 13 Nov 1558 or the enciphered news, so this is no hit because no text copy was reached, not a
+negative on the print. No reading or grade change. Print rung: kept open.
+
+Next (not run): (a) one Gallica texteBrut request for bpt6k97359942 (if it answers, grep "Nov", "1558", "Venise", "Lorraine"; a 403 stops the host);
+(b) one be-api fts query restricted to a Revue de Gascogne identifier above with the quoted phrase "cardinal de Lorraine" + "Venise" 1558.
+Status stays `open`; this is a dated section only (gaps_check not required).
