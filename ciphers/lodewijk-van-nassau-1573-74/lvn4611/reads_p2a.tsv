@@ -1,0 +1,91 @@
+tid	read	note
+P2A078	145	call 1: 1 4 long-s5
+P2A027	122	call 1: clear
+P2A058	26	call 1: 2 then 6 with rising stroke
+P2A062	61	call 1: 6 then dotless 1
+P2A019	114	call 1: two short strokes then 4
+P2A050	19	call 1: dotted 1 then 9
+P2A048	125	call 1: 1 2 long-s5
+P2A035	104	call 1: 1 0 4
+P2A083	124	call 1: 1 2 4
+P2A049	111	call 1: three short strokes
+P2A037	122	call 1: 1 2 2
+P2A024	92	call 1: 9 then 2
+P2A061	4	call 1: open-topped 4
+P2A077	246?	call 1: 2 4 6, not in candidates
+P2A011	127	call 1: 1 2 7
+P2A026	200?	call 1: initial looks 2-like, two round 0s
+P2A018	35	call 1: flat 3, long-s 5
+P2A021	72	call 1: 7 2
+P2A087	85	call 1: 8 long-s 5
+P2A093	65	call 1: 6 with stroke, long-s 5
+P2A008	150	call 1: 1 long-s 5, 0
+P2A044	81	call 1: 8 then short 1
+P2A025	82	call 1: 8 2
+P2A029	1?	call 2: short flagged stroke, comma beside
+P2A015	82	call 2: two bowls, z-like 2
+P2A007	148	call 2: short 1, open-topped 4, 8
+P2A060	335?	call 2: z-tail 3, 3, long-s 5; blob at edge
+P2A071	21	call 2: 2 then 1 with dot
+P2A031	119	call 2: 1,1, 9
+P2A074	36	call 2: flat 3 with tail, 6 bowl
+P2A047	127	call 2: 1, 2, 7
+P2A045	36	call 2: 3 flat-top, 6
+P2A059	114	call 2: two short strokes, open 4
+P2A053	311	call 2: big 3 then two short 1s
+P2A089	81?	call 2: 8, murky middle blob, 1 with flag
+P2A084	1	call 2: single short stroke
+P2A023	5	call 2: long-s shape
+P2A081	84	call 2: 8 bowls, open 4
+P2A073	200	call 2: 2, two ovals
+P2A016	132?	call 2: first digit curled 1, 3, 2
+P2A012	121	call 2: 1,2,1 with dot
+P2A070	89?	call 2: 8 two bowls, 9
+P2A076	10	call 2: 1 and oval 0
+P2A069	83	call 2: 8, flat 3 with tail
+P2A022	33?	call 2: 3, tailed flat-top 3 (could be 7)
+P2A056	30	call 2: 3 with tail, small 0
+P2A006	115	call 3: down-strokes then long-s
+P2A099	115	call 3: slanted 1s, long-s
+P2A079	118?	call 3: 1,1, last flat-topped bowl 8 or 3
+P2A013	74	call 3: 7 heavy, open-top 4
+P2A097	71	call 3: 7 then 1
+P2A075	5	call 3: long-s shape
+P2A065	26	call 3: flat 2, closed bowl 6
+P2A064	13?	call 3: 1 then flat-topped z-shape
+P2A086	14	call 3: short 1, open 4
+P2A005	65	call 3: bowl 6, long-s
+P2A095	26	call 3: 2 then closed 6
+P2A003	65?	call 3: bowl 6, long-s, dot
+P2A042	77	call 3: two 7s
+P2A039	55?	call 3: flat 5, long-s
+P2A082	125	call 3: 1,2,long-s
+P2A055	71	call 3: 7 then dotted 1
+P2A098	95	call 3: closed bowl 9, long-s
+P2A002	4	call 3: open-top 4
+P2A066	331	call 3: two 3s, dotted 1
+P2A004	84	call 3: 8 two bowls, 4
+P2A038	35	call 3: z-shape 3, long-s
+P2A054	26	call 3: 2, closed 6
+P2A041	136	call 4: dotted 1, flat 3, bowl 6 with top stroke
+P2A009	17	call 4: dotted 1, 7
+P2A090	95	call 4: 9 then long-s 5
+P2A057	120	call 4: 1, 2, 0
+P2A036	3?	call 4: single flat-topped 3 with tail
+P2A088	146	call 4: 1, open 4, bowl 6
+P2A080	79	call 4: 7, 9
+P2A010	37	call 4: flat 3, 7
+P2A014	62	call 4: 6 bowl with stroke, 2
+P2A046	64	call 4: 6, open 4
+P2A101	64	call 4: 6 bowl, 4
+P2A091	82	call 4: two-bowl 8, 2
+P2A085	62?	call 4: first digit 6 or 5 ambiguous
+P2A096	81?	call 4: smudged 8 then short 1
+P2A033	65	call 4: 6, long-s 5
+P2A092	115?	call 4: 1,1,5 first glyph 1-like
+P2A063	10	call 4: 1 stroke, 0
+P2A068	89	call 4: 8, 9
+P2A034	23?	call 4: 2, flat 3 with tail
+P2A040	91?	call 4: first glyph single bowl, 9 or 8; then 1
+P2A052	81?	call 4: 8 with bar, dotted 1
+P2A100	40	call 4: open 4, 0

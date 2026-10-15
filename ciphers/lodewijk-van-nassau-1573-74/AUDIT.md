@@ -1957,3 +1957,14 @@ falls because five settles go from H to M while their words come right: fewer gr
 or L28 (grep of the old and new words: only VER-LVN's own finding in this file). `tools/depth_check.py` exit 0; row stays D2, outward
 wording "partially deciphered (about 60%)" holds at 59.8%; status.json not edited (the parent's). N-class unchanged (4610/4611/4616 N4,
 4612 N3; key ours); SECOND-OPINIONS-QUEUE rows unaffected (no quoted line changed). Requests: resources.huygens.knaw.nl 1. Subagents: none.
+
+## LVN-4611P2 (15 Oct 2026, 07:3x UTC by date -u; solver job, account 4) -- reading revised after this AUDIT.md, carried here (rule 10 propagation)
+
+4611 p2 top half (p2_L01-L18) per-token 300-dpi read under lvn4611/PREREG-LVN-4611.md addendum LVN-4611P2 (NOTES.md "LVN-4611P2"): control
+9/10 PASS; 5 rows settled to H (p2_L02/12 74, p2_L02/19 65, p2_L03/2 36, p2_L16/5 77, p2_L18/9 61), 46 M rows confirmed H, 41 stay M (12 not
+placed). **Counts, C/H before -> after:** 4611 full (1412 tokens) C 949 -> 998, M 262 -> 214, I 68 -> 67, U 130, H 3; 4610/4611/4616 C/H
+**2435 -> 2487 of 3236 (76.9%)**; four letters **2435 -> 2487 of 4069 (61.1%)**. `decode_key.py --check` exit 0 for all 13 decode*.json. This is
+a solver's record, not a verifier's ruling: the five settles and the 46 confirmations are flagged for a verifier (ROOM.md). Finding for the
+verifier: 4611 p2's 150-dpi lines p2_L13-L33 mix neighbouring physical lines (the text slopes; 35 physical lines, 33 transcribed) and several
+runs of ink are in no row, so the 4611 p2 decode from p2_L13 down reads tokens out of their written order. N-class and depth not re-assigned
+here; no safe sentence or status.json depth_sentence was checked against p2_L13-L33 by this job (next: the verifier's grep, ~$0.3).
