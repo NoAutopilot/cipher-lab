@@ -4,12 +4,12 @@
  "signs_pass_a": 525,
  "pass_agree_h": 421,
  "decoded_letters": 504,
- "decoded": "lesperuiteursdequiniespargnentlhoneurlaraelareputationnilaonpienedupoilonfaitparlerleroidedalnelarquinupenpninlaisetdoneataenteadrequilesteeoiilatirentdelainexlupionqqilestudposiblequelodpeigdeurseutuedirpnrdeuaaqeopiepanpeauoippatisfaitearlapeodneoraipodcppfautilqueieifesequeemopednoupaautadtdopedempehemedtquafaitelupquieptndueduapdrisnrqqimaddequepiodneleuetlueslirequelonpreigneqefilieqqeeulopeunnpqemailspoleuudesaisepseuueleeuquodegnrdedeprnndrelsfraireduropdsfradueenleplesterlesepruturqnepourune",
+ "decoded": "lesperuiteursdequiniespargnentlhoneurlaraelareputationnilaonpienedupoilonfaitparlerleroidedalnelarquinupenpninlaisetdoneataenteadrequilesteeoiilatirentdelainexlupionqqilestudposiblequelodpeigdeurseutuedirpnrdeuaaqeopiepanpeauoippatisfaitearlapeodneoraipodcppfautilqueieifesequeemopednoupaautadtdopedempehemedtquafaitelupquieptndueduapdrisnrqqimaddequepionneleuetlueslirequelonpreigneqefilieqqeeulopeunnpqemailspoleuudesaisepseuueleeuquodegnrdedeprnndrelsfraireduropdsfradueenleplesterlesepruturqnepourune",
  "judge": {
   "checks": {
    "language": {
     "pass": false,
-    "score": -1.437,
+    "score": -1.422,
     "null_p99": -1.857,
     "real_p05": -0.89,
     "real_median": -0.793,
@@ -18,7 +18,7 @@
    },
    "words": {
     "pass": true,
-    "cover": 0.772,
+    "cover": 0.778,
     "min": 0.5,
     "real_text_median_cover": 0.942
    }
@@ -28,11 +28,11 @@
  },
  "shuffle_draws": 100,
  "shuffle_judge_pass": 0,
- "shuffle_language_scores_max": -1.889,
+ "shuffle_language_scores_max": -1.89,
  "c270_letters": 778,
  "c270_matched": 187,
  "c270_rate": 0.371,
- "c270_shuffle_mean": 0.34,
+ "c270_shuffle_mean": 0.3404,
  "c270_shuffle_p95": 0.3651,
- "c270_shuffle_max": 0.3909
+ "c270_shuffle_max": 0.3889
 }

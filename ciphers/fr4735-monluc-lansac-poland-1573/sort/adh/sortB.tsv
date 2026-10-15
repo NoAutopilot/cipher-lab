@@ -1,0 +1,22 @@
+page	passage	pos	label	conf	note
+c172	L03	40	K14	L	closed b-like sign near tick, no open hook seen; window hard to match to context
+c172	L03	26	K04	L	9-form with blunt straight stem (q-like); context not matched reliably
+c172	L02	54	K14	M	closed b-like with small diamond/loop, before r
+c172	L02	48	K14	L	closed b-like with diamond bowl; context not firmly matched
+c268c	L08	14	K04	M	9 with fairly straight vertical stem, little tail
+c268c	L08	10	K62	M	filled loop on top, single heavy cross-bar, stem through
+c268c	L08	7	K37	M	upright stem with K-like arms, not a closed bowtie
+c268c	L08	3	K11	M	two short cross-bars (double bar) under open arc/loop
+c268c	L06	23	K12	M	9 whose stem curves down-left into a tail
+c268c	L06	14	K12	M	9 with hooked, curving stem end
+c268c	L06	12	K62	L	filled top loop with a single heavy cross-bar
+c172	L04	19	K04	M	straight blunt vertical stem on the 9, no tail
+c172	L04	13	K04	L	tick area is blank; 9 found at far right of window with straight stem, before the blob stroke
+c172	L03	52	K04	M	9 between two vertical bars, stem straight and blunt
+c268c	L10	18	K11	L	cross-sign after the diamond sign; upright stem, two bars, small loop on top
+c268c	L10	12	K62	L	cross-sign after the ᒪ-like sign; looks the same as the cross-sign in L10.9; stem and bars slightly slanted
+c268c	L10	9	K62	L	cross-sign right after the 9; slanted stem and bars, no dot above
+c268c	L10	4	K04	M	9 with a straight vertical stem, not curved down-left
+c268c	L08	23	K43	M	bowtie-like B form after the diamond sign; crossing diagonals
+c268c	L08	20	K37	M	K-like form on an upright stem, with a loop on the right
+c268c	L08	16	K37	M	K-like form on an upright stem, between r and g

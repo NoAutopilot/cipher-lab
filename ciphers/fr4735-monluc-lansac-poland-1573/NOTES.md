@@ -1229,3 +1229,66 @@ Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines
 - [x] image-check: c268 L11-L15 native crops cut and reconciled by eye (MONL-L11); L06-L10 likewise (MONL-C268B)
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 6 internal gaps; cheapest next: the pre-registered W:adhuc re-run (~$0.5), then a value-blind sort of the L11-L15 K11|K62, K37, K04|K12 tiles (~$1.5), then c268 L16-L20
+
+## MONL-ADH: pre-registered W:adhuc re-run, then a value-blind sort of 14 c268 L11-L15 lead tokens (15 Oct 2026, account 1, Opus, for LANE DEFAULT-A1-0447-15)
+
+Brief: .claude/briefs/runs/2026-10-15-acct1-default-0447-jobs.md, MONL-ADH (MONL-L11's Verdict). Read MONL-L11 and MONL-VB first.
+**Pre-registration:** PREREG-MONL-ADH.md pushed in 2e46d1a00 before any score; addendum 379ad46c5 (part 2 scope, K37|K43 pair) after part 1
+had run and before any tile was cut or sort run. **Host:** the L11-L15 crops were not in this container: `sh regen_monll11.sh`, openapi.bnf.fr
+1 request (f268 region 600,2060,3100,1400, HTTP 200), take/release lines; same 12 band centres as MONL-L11.
+
+**Part 1, W:adhuc (`python3 adh_run.py`, results_adh.json).** L11:6-10 (K66 K49 ?h_bar K35 K15) collapsed into one W:adhuc fill token, L01-L15
+aligned as committed. Confirm share 357/500 = 0.714 vs baseline 357/504 = 0.7083: **gain 0.0057**. Matched control: each of the 149 other
+5-token windows within one line of L11-L15 collapsed the same way: gain mean 0.0018, **p95 0.0071, max 0.0071, 10/149 at or above** the
+W:adhuc gain. Shuffled-clear on the W:adhuc stream 0/200 at or above (max 0.400). W:adhuc's chunk is "lemoscouiteco" (it also takes the "co"
+of "commande" that K35 K15 faced), **not whole clear words**. **Keep condition 1 fails: not kept.** No transcription change, no FILLS entry;
+L11:6-10 stay five sign ids. The statistic can only rise past the null's ceiling (removing four contradictions at no confirm loss) if the
+W: token lets more tokens confirm, and here the confirm count did not move. The hypothesis is not supported by this test at this N. It is
+not refuted: the group still faces "le moscouite", and a second occurrence of the same five signs elsewhere would be a different test.
+
+**Part 2, value-blind sort (units: 4 Sonnet calls, 2 per sort, B with rows reversed; reconciliation by script).** Tiles
+`python3 sort/adh/build_adh.py` (14 lead tokens + the 7 PREREG-MONL-SORT c172 controls), windows
+`python3 ../../tools/lookalike_pass.py windows --tiles sort/adh/s268c_tiles.tsv --passc sort/adh/c268c_passc.tsv --manifest images/scratch268c/crops/manifest.json --out sort/adh --run adh268c_win --status all --per 7`
+and `... --tiles sort/adh/s172_tiles.tsv --passc ciphertext_c172.tsv --crops-glob 'images/c172cipher_{line}_s?.jpg' --out sort/adh --run adh172_win --status all --per 4`
+(montages and candidates.png untracked), prompts `python3 sort/adh/prompts.py` (11 and 10 tiles per call; no value, reading, clear text or
+current label of the sorted token shown). Answers sort/adh/sortA.tsv, sortB.tsv; `python3 sort/adh/reconcile_adh.py` -> sort/adh/reconciled.tsv:
+15 keep-agree, 3 split, 2 low-conf agreement, **1 relabel**; **controls 0 of 7 moved by both sorts** (several controls at conf L in one sort,
+so the control is weak, as in MONL-VB).
+- Relabel: **c268 L11:23 K04 -> K12** (A M "stem curving down-left into a tail", B M). It faces clear "n", the K12 table letter, so one
+  contradiction becomes a confirm.
+- K04 facing n: L13:14 and L15:4 stay K04 in both sorts (straight blunt stem); L11:14 split (A K04, B K12). The straight-stem-for-n pattern
+  of MONL-VB holds on this band for two of four.
+- K37 facing p (L13:7, 16, 20, 23): both sorts keep K37 at three ("K on an upright stem"); L13:23 split (B K43). The readers' K37 is what the
+  shape shows; K37-for-p stays an open contradiction (encipherer variant, or a key-table cell not separable at this resolution).
+- K62 facing m: L13:10 and L15:12 keep K62 in both sorts; L15:9 split; **L15:18 both sorts K11, both conf L** (not applied by the rule; pass A's
+  K11, which the clear text supports, stays the first thing to re-check by eye). L11:12 K11: both sorts K62 at conf L (not applied).
+- Keep condition for the relabel set: L01-L15 shuffled-clear 0/200 at or above the real share (met, below).
+
+**Effect (rule 7).** score_c268.py `MONL_ADH` (tag `monl-adh`, conf M) -> `python3 score_c268.py`, `python3 align_c268.py`,
+`python3 ../../tools/decode_key.py .`. Align L01-L15: **confirm 358/504 = 0.7103** (was 357/504 = 0.7083; contradict 107, extra 39); shuffled
+clear (200, seed 140) mean 0.366, p95 0.387, max 0.399, **0/200 at or above**; f.139 control 0.367. L11-L15 alone (`--lines`) 103/171 = 0.602
+(was 0.596), shuffled max 0.427, 0/200. Grades unchanged: c268 C 270 / M 242 / U 13 (L11:23 was M as a contradiction, stays M as a relabel);
+c172 C 83 / M 64 / U 3; key.tsv unchanged. adh_run.py pins its own pre-sort stream (L11:23 set back to K04) so its --check stays valid.
+Judge (score_c268.py, fr16): language FAIL at N 504 (-1.422 vs real_p05 -0.89), shuffled decodes 0/100 PASS; a non-test for this key (MONLUC-KEY), the alignment is the evidence.
+Checks: `python3 adh_run.py --check` "adh_run: OK"; `python3 align_c268.py --check` "align_c268: OK"; `python3 score_c268.py --check` "OK c268 outputs current"; `python3 ../../tools/decode_key.py . --check` "reading up to date" (all exit 0); `tools/gaps_check.py` 1 keep-going, 0 FAIL.
+Requests: openapi.bnf.fr 1. Subagents: 4 Sonnet. Own looks: 1 (key sheet, to pick the K37 look-alike cell). Cost not visible to this session.
+
+## Remaining gaps (MONL-ADH, 15 Oct 2026)
+Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines 1-15 (525 tokens) C 270 / M 242 / U 13 against the ff.140r-141r clear text (align confirm 358/504 = 0.710, L11-L15 alone 103/171 = 0.602, vs shuffled-clear max 0.399 / 0.427).
+- the "adhuc" group at c268 L11:6-10 facing "le moscouite" - blocker: not-attempted; the W: fill re-run in align_c268.py was not kept (MONL-ADH: gain 0.0057 under the window-collapse null p95 0.0071, chunk not whole words; not refuted) and is not re-run on the same five signs; next: look for a second occurrence of K66 K49 ?h_bar K35 K15 when c268 L16 on is transcribed (rides that band, ~$0)
+- K62-for-m (L15:9 split, L15:18 both sorts K11 at conf L), K37-for-p (L13:7/16/20 kept K37 by both sorts, L13:23 split) and K04-for-n (L13:14, L15:4 kept; L11:14 split) on L11-L15 - blocker: not-attempted; value-blind sort done (MONL-ADH: 1 relabel, L11:23 K04->K12); next: one native eye re-check of L15:9/L15:18 and L11:14 against the K11/K62 and K04/K12 cells, then one decode_key.py --try of the encipherer-variant hypothesis (K04 read n, K37 read p, by context only) with its controls, ~$1
+- rest of c268 (L16 to the end, about 500 signs) and c264 against the ff.140r-141r clear text - blocker: not-attempted; outside this job's brief; next: two blind cipher passes of c268 L16-L20 plus reconciliation (regen_monll11.sh region moved down ~540 px), then align_c268.py, ~$3 per 5 lines
+- a clean clear text of ff.140r-141r away from L06-L10 - blocker: not-attempted; f.140r L11-L17 (facing c268 L06-L15) are rough A/B picks with [?] words, which caps the confirm share of the later bands; next: an eye reconciliation of f.140r L11-L20 and L01-L07 against the line crops, ~$1 per page
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py); the c268 alignment supplies known plaintext instead
+- print check of the clear letter in Google Books (13 of the 14 phrases.txt lines) and the editions by identifier (Noailles vols I-III, Lettres de Catherine de Medicis) - blocker: not-attempted; IA full text and OpenAlex done, no hits on all 14 (MONL-PC); Google Books 13 of 14 unsearched (503, MONL-PC, MONL-PC2); next: `tools/print_check.py ... --only gbooks` when googleapis answers, ~$1
+- ff.211-223, f.87 margin, ff.50/56/60/80, items 17/18/112-120 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONL-ADH, 15 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [x] clear-pages: ff.140r-141r transcribed and shown to be the clear text of c268 L01-L15 (MONL-ALIGN, MONL-C268B, MONL-L11)
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell and checked against known plaintext on c268 L01-L15
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2; the clear letter phrase-searched in IA full text and OpenAlex, no hits (MONL-PC); Google Books for it pending (gap above)
+- [x] key-rebuild: --try rejects K12=d and K34=y (MONL-K12); blind sorts on L01-L05 (MONL-SORT), L06-L10 (MONL-VB) and the L11-L15 leads (MONL-ADH: 1 relabel); W:adhuc re-run not kept (MONL-ADH)
+- [x] image-check: c268 L11-L15 native crops cut and reconciled by eye (MONL-L11); L06-L10 likewise (MONL-C268B)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 6 internal gaps; cheapest next: c268 L16-L20 two blind passes + reconciliation, then align_c268.py (~$3); the L15:9/L15:18/L11:14 eye re-check (~$1) can ride with it

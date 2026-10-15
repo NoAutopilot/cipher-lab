@@ -10,7 +10,7 @@ L07	p n r d e u a a q e o p i e p a n p e a u o i p p a t i s f a i t
 L08	e a r l a p e [?double_slash] o d n e o r a i p o d c [W:uing] p p f a u t i l q u e
 L09	i e y f e s e q u e [?h_bar] e m o p e d n o u p a a u t a d t d o p e d e
 L10	m p e [?double_slash] h e m e d t q u a f a i t [?double_slash] e l u p q u i e p t n d u e d u a
-L11	p d r i s n r [?h_bar] q q y m a d d e q u e p i o d n e l e u e t l u e s l i
+L11	p d r i s n r [?h_bar] q q y m a d d e q u e p i o n n e l e u e t l u e s l i
 L12	r e q u e l o n p r e i g n e q e f i l y [?x[looped_q]] e q q e e u l o p e u n n p
 L13	q e m a i l s p o l e u u d e s a i [?x[epsilon]] s e p s e u u e l e e u q u o d
 L14	[?x[looped_initial]] e g n r d e d e p r n n d r e l s f [?x[g_like_blotted]] [?x[ink_blot]] r a i r e d u r o p d s

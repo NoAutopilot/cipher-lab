@@ -1,13 +1,13 @@
 {
  "real": {
   "keyed": 504,
-  "confirm": 357,
-  "contradict": 108,
+  "confirm": 358,
+  "contradict": 107,
   "extra": 39,
-  "confirm_share": 0.7083,
+  "confirm_share": 0.7103,
   "facing_unsure_clear": 20
  },
- "score": 484.1,
+ "score": 487.1,
  "clear_span": [
   "f.140r:L07",
   "f.140r:L17"
@@ -16,17 +16,17 @@
  "shuffled_clear": {
   "draws": 200,
   "seed": 140,
-  "mean": 0.3662,
+  "mean": 0.3664,
   "p95": 0.3869,
   "max": 0.3988,
   "ge_real": 0
  },
  "other_letter_c270": {
   "keyed": 504,
-  "confirm": 184,
-  "contradict": 276,
+  "confirm": 185,
+  "contradict": 275,
   "extra": 44,
-  "confirm_share": 0.3651
+  "confirm_share": 0.3671
  },
  "fills": [
   {
@@ -668,14 +668,6 @@
    "conf": "H",
    "table": "p",
    "clear": "s"
-  },
-  {
-   "line": "L11",
-   "pos": 23,
-   "sign": "K04",
-   "conf": "H",
-   "table": "d",
-   "clear": "n"
   },
   {
    "line": "L11",

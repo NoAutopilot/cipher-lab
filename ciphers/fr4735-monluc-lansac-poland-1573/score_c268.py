@@ -61,6 +61,9 @@ RELABEL = {**RELABEL, **MONL_SORT}
 # MONL-VB (15 Oct 2026): two value-blind sorts of the c268 L06-L10 K04/K12/K14/K34 tokens and L04:6/8 (K12|K22) under
 # sort/vb/PREREG-MONL-VB.md (0 of 7 c172 controls moved); both sorts agree, neither conf L, only on this one (sort/vb/reconciled.tsv).
 MONL_VB = {('L10', 29): ('K04', 'K12')}
+# MONL-ADH (15 Oct 2026): two value-blind sorts of 14 c268 L11-L15 lead tokens under PREREG-MONL-ADH.md part 2 (0 of 7 c172 controls
+# moved); both sorts agree, neither conf L, only on this one (sort/adh/reconciled.tsv).
+MONL_ADH = {('L11', 23): ('K04', 'K12')}
 
 
 def main():
@@ -105,11 +108,12 @@ def main():
           for lab in sorted(bl):
               for f in bl[lab]:
                   agree += f[3] == 'H'
-                  vb = MONL_VB.get((f[0], int(f[1])))
+                  vb = MONL_VB.get((f[0], int(f[1]))) or MONL_ADH.get((f[0], int(f[1])))
+                  vtag = 'monl-adh' if (f[0], int(f[1])) in MONL_ADH else 'monl-vb'
                   if vb:
                       assert f[2] == vb[0], (f[0], f[1], f[2])
                       f[2], f[3] = vb[1], 'M'
-                  rows.append(f"{f[0]}\t{f[1]}\t{f[2]}\t{f[3]}\t{f[4]}\t{'monl-vb' if vb else (rtag if f[2] != f[4] else '')}\n")
+                  rows.append(f"{f[0]}\t{f[1]}\t{f[2]}\t{f[3]}\t{f[4]}\t{vtag if vb else (rtag if f[2] != f[4] else '')}\n")
               ta = [f[2] for f in bl[lab]]
               toks += [t for t in ta if not t.startswith('W:')]
               lines.append(f"{lab}\t{''.join(key.get(t, '_') for t in ta if not t.startswith('W:'))}")
@@ -140,7 +144,7 @@ def main():
                    c270_shuffle_mean=round(sum(ctl) / len(ctl) / len(dec), 4), c270_shuffle_p95=round(ctl[189] / len(dec), 4),
                    c270_shuffle_max=round(ctl[-1] / len(dec), 4))
     outs = {HERE / 'ciphertext_c268.tsv': 'line\tpos\tsign\tconf\tpass_a\trelabel\n' + ''.join(rows),
-            HERE / 'reading_c268.txt': '# c268 (f.138) cipher lines 1-15 (L06-L10 MONL-C268B, L11-L15 MONL-L11), Tomokiyo Monluc Cipher 1 table, pass A base, 10 C-curl tokens relabelled K38 (MONLUC-RELABEL), 4 K12->K04 (MONL-SORT less 4 MONL-EYE reverts) and 4 K34->K53 (MONL-SORT); _ = unkeyed sign;'
+            HERE / 'reading_c268.txt': '# c268 (f.138) cipher lines 1-15 (L06-L10 MONL-C268B, L11-L15 MONL-L11), Tomokiyo Monluc Cipher 1 table, pass A base, 10 C-curl tokens relabelled K38 (MONLUC-RELABEL), 4 K12->K04 (MONL-SORT less 4 MONL-EYE reverts) and 4 K34->K53 (MONL-SORT), 1 K04->K12 each by MONL-VB and MONL-ADH; _ = unkeyed sign;'
                                        ' W: words dropped. Not graded: see NOTES.md.\n' + '\n'.join(lines) + '\n',
             HERE / 'results_c268.json': json.dumps(res, indent=1, default=str) + '\n'}
     if a.check:
