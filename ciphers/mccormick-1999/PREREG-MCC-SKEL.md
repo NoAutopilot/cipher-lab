@@ -57,3 +57,19 @@ own controls. Option on the existing instrument (Usage 8): `specs/cheap-tests/mc
   0.808, order null 0.711, coverage 0.871 vs letter-null max 0.245); generator-only diagnostics above. Seeds 1-3 not run;
   the target not run.
 - The target stays `open` (rule 5) whatever the outcome.
+
+## Addendum 1 (15 Oct 2026, 02:3x UTC by date -u; pushed after the control results, before any target score)
+Preregistered outcome, both arms: the control reads at no N <= 2,000 under the criterion above. Word recovery mean is
+0.618 / 0.650 / 0.661 (drop) and 0.654 / 0.710 / 0.717 (keepfinal) at 132 / 500 / 2,000, above the 0.5 bar, but no N
+has every seed above the order-null maximum (each seed beats its own paired order null by 0.00-0.06; the maximum across
+seeds is higher). Under the preregistered wording that is "untestable by this instrument at N <= 2,000", recorded as such.
+Diagnosis: null (a) was carried over from MCC-WORD, where recovery came from context alone; here recovery comes from the
+code letters (the skeleton lookup), so shuffling token order costs only the bigram context and leaves most recovery in
+place. It is a "does context add anything" check, not a "can the instrument read its control" check.
+The preregistered coverage-power check (null (b)) did pass at the target's own N on every seed of both arms: control
+coverage 0.828 / 0.735 / 0.723 (drop) and 0.807 / 0.711 / 0.693 (keepfinal) against letter-null maxima of 0.347 / 0.312 /
+0.310 and 0.215 / 0.223 / 0.224. That is the statistic the target test uses, so the target test has demonstrated power at
+N = 132 for this design. Addendum: run the target's coverage and score-per-letter test against its 40 letter-shuffled
+nulls (`--target-on-power`), with the outcome wording of the criteria section unchanged. A target result under this
+addendum is reported as licensed by the coverage-power control, not by the read criterion, and no decoded word is
+offered as a reading either way (the read criterion failed).

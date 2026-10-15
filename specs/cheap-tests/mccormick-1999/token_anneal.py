@@ -734,7 +734,10 @@ def skeleton_run(a, real_toks, words):
         print(json.dumps({"n": n, "word_recovery_mean": mean, "null_order_max": nmax, "read": read}))
     if a.target:
         n0 = str(len(real_toks))
-        if not out["controls"].get(n0, {}).get("read"):
+        c0 = out["controls"].get(n0, {})
+        power = bool(c0) and all(r["coverage"] > r["letter_null_coverage_max"] for r in c0["runs"])
+        out["coverage_power_at_target_n"] = power
+        if not (c0.get("read") or (a.target_on_power and power)):
             out["target"] = "not run: control did not read at the target's own N"
         else:
             tr = skel_stats(dec, real_toks)
@@ -787,6 +790,9 @@ def main():
     ap.add_argument("--n-list", default="132", help="skeleton: control lengths, comma-separated")
     ap.add_argument("--nulls", type=int, default=40, help="skeleton: letter-shuffled nulls per run")
     ap.add_argument("--target", action="store_true", help="skeleton: also run the target (only if the control read at its N)")
+    ap.add_argument("--target-on-power", action="store_true",
+                    help="skeleton (PREREG-MCC-SKEL addendum 1): also run the target when the control's coverage beats its "
+                         "letter-shuffled null on every seed at the target's N, even if the word-recovery read failed")
     a = ap.parse_args()
 
     text = CIPHER_FILE.read_text()
