@@ -1,0 +1,13 @@
+call	crop	role	row	committed	blind_read	conf	blind_alt	match
+c1	X=h_head	target	p1_L05 head	(81, 125 one eye LVN-4610U)	82, 125	medium, medium	81; 129/128	81 no, 125 yes
+c1	Y=h_ctl	control	p1_L05/4	28 H	25	medium	29	FAIL
+c2	X=t80_ctl	control	p1_L05/2	8 H	8	medium	3	pass
+c2	Y=t80	target	p1_L05/3	80 H	80	medium	89	= committed
+c3	X=t25	target	p2_L22/9	25 H	26	high	25	= LVN-4610U alt
+c3	Y=t25_ctl	control	p2_L22/8	82 H	82	high		pass
+c4	X=t35_ctl	control	p2_L30/3	31 H	3? (second digit clipped)	low	31	FAIL (crop clipped)
+c4	Y=t35	target	p2_L30/2	35 H	3 (one digit)	medium	5	neither
+c5	X=t141	target	p1_L32/1	141 H	24 (+ clipped mark at right edge)	high		first digit 2 = LVN-4610U's 241 lead
+c5	Y=t141_ctl	control	p1_L32/5	21 H	21	medium	27	pass
+c6	X=tfut_ctl	control	p1_L04/4	=tout H	unreadable (sthes/Sieur?)	low		FAIL
+c6	Y=tfut	target	p1_L04/3	=fut M (B:=este)	sta	low	sia/ste	neither

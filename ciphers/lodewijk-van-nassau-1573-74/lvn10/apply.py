@@ -32,6 +32,10 @@ post3.update({(r['line'], r['pre_pos']): r for r in rd(os.path.join(T, 'lvn10p2'
 # LVN-EYE (15 Oct 2026): verifier eye rulings at 300 dpi (lvn10/corrections_lvneye.tsv), applied after the LVN-3R/LVN-P2
 # settles, every round; `old` is the sign after those settles.
 post4 = {(r['line'], r['pre_pos']): r for r in rd(os.path.join(H, 'corrections_lvneye.tsv'))}
+# LVN-L05 (15 Oct 2026): insert path. lvn10/inserts_lvneye.tsv rows (line, before_pre_pos, sign, confidence, note) are written
+# before the pre row they name, in file order, every round; positions are renumbered within the line as for splits. Empty = no-op.
+ins = {}
+for r in rd(os.path.join(H, 'inserts_lvneye.tsv')): ins.setdefault((r['line'], r['before_pre_pos']), []).append(r)
 ctl = {PA: [0, 0], PB: [0, 0]}
 for r in al.values():
     if r['role'] == 'control':
@@ -42,6 +46,10 @@ out, log = [], []
 lastline, pos = None, 0
 for r in pre:
     if r['line'] != lastline: lastline, pos = r['line'], 0
+    for n in ins.get((r['line'], r['position']), []):
+        pos += 1
+        out.append([r['line'], str(pos), n['sign'], n['confidence'], '', n['note'] + f' (inserted before pre pos {r["position"]})'])
+        log.append([r['line'], r['position'], '', '', '', '', 'lvneye-inserted'])
     a = al.get((r['line'], r['position']))
     sign, conf, alt, why = r['sign'], r['confidence'], r['alt'], r['why']
     act = ''

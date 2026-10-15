@@ -5245,3 +5245,25 @@ exit 0; `axnames/revisions.py` regenerated (stale after the change), --check exi
 classified. Requests: 0. Subagents: 0.
 Next (one line each): an insert path in lvn10/apply.py (pre-file rows or an `insert_before` column) and the two heads p1_L04 "124, 127" + p1_L05
 "81, 125" entered as M, ~$0.5; a second eye (blind) on p2_L34/4 (130/150) and the five found-on-the-way rows, ~$0.5.
+
+## LVN-L05: p1_L05 head + LVN-4610U's five rows, second blind reader (15 Oct 2026, 15:13-15:2x UTC by date -u, account 4, LANE DEFAULT-A4-1441-15)
+
+Step: LVN-4610U's named next (insert path in lvn10/apply.py; the p1_L05 head "81, 125" at M after a second blind look; a second blind reader on
+the five found-on-the-way rows). PREREG `lvnl05/PREREG-LVN-L05.md` pushed (7e90dde79) before any blind read. Disk only: images/04610_p1.jpg and
+the committed 150-dpi line crops, boxes in `lvnl05/cut.py` (5x Lanczos, scratch only, no image in git). Readers: six Sonnet subagent calls, one
+target line each, two crops per call (target + an H control from the same line, order fixed in the PREREG), nothing else shown. Requests: 0.
+
+**Control gate FAIL: 3/6 (gate 5/6)** -- `lvnl05/reads.tsv`. Controls 8, 82, 21 read right; 28 read 25, 31 clipped to "3?", =tout unreadable.
+Two of the three misses are this session's crop boxes (31 cut at the right edge; the word crop too tight for a reader who has no line context),
+so the failure is as much the crops as the readers. Per the PREREG: **nothing applied, no grade changed, the head not inserted.**
+For the record only (licence nothing): head read **82, 125** (alt 81; 129/128) -- the 125 agrees with LVN-4610U's eye, the 81 does not;
+p1_L05/3 read 80 (alt 89), as committed; p2_L22/9 read **26** (high), LVN-4610U's alternative; p2_L30/2 read a lone "3" (alt 5);
+p1_L32/1 read **24** + a clipped mark, consistent with LVN-4610U's 241 lead; p1_L04/3 read "sta" (low), neither =fut nor =este.
+
+**Insert path added** to `lvn10/apply.py`: `lvn10/inserts_lvneye.tsv` (line, before_pre_pos, sign, confidence, note), rows written before the
+named pre row and positions renumbered within the line; header only for now, so the rebuild is unchanged (`apply.py --check` exit 0). Tested
+on a scratch copy with the two head rows (p1_L05 becomes 81 M, 125 M, 2 M, 8 H ...; 1982 -> 1984 rows), not committed.
+Counts unchanged (4610/4611/4616 C/H 2556 of 3305, 77.3%); `decode_key.py --check` 13/13 exit 0; no AUDIT.md change (no reading revised).
+Novelty not classified.
+Next (one line each): re-cut the six crops wider (whole token plus one neighbour each side, word crops with the line) and rerun the same
+PREREG blind pass, ~$0.8; if it passes, enter the heads p1_L05 "81/82, 125" and p1_L04 "124, 127" through inserts_lvneye.tsv at M.
