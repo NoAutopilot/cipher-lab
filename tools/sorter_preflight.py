@@ -20,7 +20,7 @@ last line names it under "not checked"):
  1. template  the page carries the "Fix the cut" control (id="ctxFix") and the current template's version marker
               (<meta name="sign-sorter-template" content=...> in tools/sign_sorter/template.html). An older page is
               re-rendered with tools/sorter_rerender.py. Not applicable with --inputs.
- 2. answerable  the focus box is non-empty; every focus sid is a tile on the page; the page has >= 2 named piles
+ 2. answerable  (--step1: the focus box is EMPTY, >= 2 named piles -- a step-1 page asks no question) the focus box is non-empty; every focus sid is a tile on the page; the page has >= 2 named piles
               (placeholders such as UNREAD, unsorted, '?', '_' and piles starting '?' are not named) so a tile can go
               somewhere other than where it is; and every sign label a focus question offers in the reader-split
               forms ("pass A x", "readers x / y", "draft x", "the x pile") is a pile on the page. '-' (a reader saw
@@ -382,13 +382,19 @@ def check_owner_rows(html, data, owner_page=False):
     return out
 
 
-def check_answerable(data):
+def check_answerable(data, step1=False):
+    """step1 (--step1, SORTER-STEP1-INK63, 15 Oct 2026): a step-1 page settles the alphabet only (merge, split, set aside;
+    TRANSCRIPTION.md), so its question box must be EMPTY -- a question before the person has formed the piles is R13's failure --
+    and it still needs >= 2 named piles. Catches: a step-1 page built with --focus. Must NOT block: a step-1 page with no questions."""
     piles = {p['id'] for p in data['piles']}
     sids = {it['sid'] for p in data['piles'] for it in p['items']}
     names = sorted(p for p in piles if named(p))
     focus = data.get('focus') or []
     bad, msgs = [], []
-    if not focus:
+    if step1:
+        if focus:
+            msgs.append(f'step-1 page carries {len(focus)} question tile(s); a step-1 page asks none')
+    elif not focus:
         msgs.append('focus box empty')
     if len(names) < 2:
         msgs.append(f'{len(names)} named pile(s) {names} -- a tile has nowhere to go')
@@ -398,8 +404,8 @@ def check_answerable(data):
         miss = [l for l in dict.fromkeys(offered_labels(f.get("q", ""))) if l not in piles]
         if miss:
             bad.append(f['sid']); msgs.append(f'{f["sid"]}: question offers {", ".join(miss)}, no such pile')
-    ok = bool(focus) and len(names) >= 2 and not bad
-    head = f'answerable: {len(focus)} focus tiles, {len(names)} named piles of {len(piles)}, {len(bad)} unanswerable'
+    ok = (not focus if step1 else bool(focus)) and len(names) >= 2 and not bad
+    head = ('answerable (step 1, no questions by design): ' if step1 else 'answerable: ') + f'{len(focus)} focus tiles, {len(names)} named piles of {len(piles)}, {len(bad)} unanswerable'
     if msgs:
         head += ' -- ' + '; '.join(msgs[:6]) + (f'; ... {len(msgs) - 6} more' if len(msgs) > 6 else '')
     return ok, head
@@ -588,7 +594,7 @@ def check_pan(page, timeout=600, env=None, runner=None):
 
 
 def run(page=None, inputs=None, cipher_lines=None, expect_owner=False, sheet=None, seed=20261006, quiet=False, search=(), pages_json=None,
-        gestures=False, pan=False, owner_page=False):
+        gestures=False, pan=False, owner_page=False, step1=False):
     """-> (ok, lines). Used by tools/sign_sorter.py after a build. gestures=True runs check 6 (a minute or more a page; the CLI
     default); otherwise it prints `SKIP gestures (not run by this call ...)`. pan=True runs check 7 (half a minute; the CLI default);
     otherwise `SKIP pan (not run by this call ...)`."""
@@ -604,7 +610,7 @@ def run(page=None, inputs=None, cipher_lines=None, expect_owner=False, sheet=Non
     cl = read_cipher_lines(clp) if clp else None
     res = []
     res.append(check_template(html)[:2])
-    res.append(check_answerable(data))
+    res.append(check_answerable(data, step1))
     owner_rows = check_owner_rows(html, data, owner_page or expect_owner)
     res.extend(owner_rows)
     ok3, m3, flags = check_lines(data, imgs, scale, cl)
@@ -654,6 +660,7 @@ def main(argv=None):
     ap.add_argument('--inputs', help='instead of a page: a folder with signs.tsv, labels.tsv, focus.tsv [, pages/]')
     ap.add_argument('--cipher-lines', help='the cipher-line list (ids, optional x0 x1); default cipher_lines.tsv or segment_pages.txt beside the page/inputs')
     ap.add_argument('--expect-owner-account', action='store_true')
+    ap.add_argument('--step1', action='store_true', help='a step-1 page (merge, split, set aside; no questions): check 2 requires the question box EMPTY')
     ap.add_argument('--owner-page', action='store_true', help='a page going to the owner: owner rows R13 and R14 fail instead of warning (check 8)')
     ap.add_argument('--sheet', help='contact sheet path (default <page stem>.preflight.png)')
     ap.add_argument('--seed', type=int, default=20261006)
@@ -684,7 +691,7 @@ def main(argv=None):
     if bool(a.page) == bool(a.inputs):
         ap.error('give a page or --inputs DIR')
     ok, _ = run(a.page, a.inputs, a.cipher_lines, a.expect_owner_account, a.sheet, a.seed, pages_json=a.pages_json, gestures=not a.no_gestures, pan=not a.no_pan,
-                owner_page=a.owner_page)
+                owner_page=a.owner_page, step1=a.step1)
     sys.exit(0 if ok else 1)
 
 

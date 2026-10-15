@@ -83,6 +83,9 @@ Active sorter (TX-SORTER, 3 Oct 2026; TRANSCRIPTION.md pipeline step 7):
   Must NOT be read as: a probability that the label is wrong, or a decode score. The confusion score is a triage
   order; only a lattice score (--rank) speaks for the reading, and even that ranks, it does not grade.
 
+Step-1 page from committed pages (SORTER-STEP1-INK63, 15 Oct 2026): --tiles-from PAGE.html ... --labels L.tsv [--signs S --pages DIR]
+  --seed-shape: piles exactly as --labels (e.g. blind shape clusters), tiles reused from the pages, the rest cut from --signs/--pages;
+  check it with tools/sorter_preflight.py --step1 (no question on the page). See build_tiles_from.
 Owner rows R12-R16 (SORTER-FIX-R12-R16, 15 Oct 2026; template 2026-10-15.1): a question page for the owner is built with
   --piles-from SETTLED.tsv [--piles-from ...] [--answered-only] [--later-wins | --drop-conflicts] [--certain TSV] [--meanings key.tsv] [--tiles-from PAGE.html ...]
   --focus focus.tsv --box-check boxes_handcut.tsv
@@ -775,6 +778,56 @@ def tiles_from_pages(paths):
     return items, pages, mime or 'image/png', scale or 1.0
 
 
+def build_tiles_from(a):
+    """--tiles-from with --labels and no --piles-from (SORTER-STEP1-INK63, 15 Oct 2026): piles by --labels (sid, sign[, family]),
+    each tile and its line image reused from built sorter pages (their DATA; the first page holding a sid wins); a sid in no page is
+    cut from --signs/--pages at the pages' own scale and tile format. Oddness and look-alike piles use the 24x24 grey of the whole
+    tile (the page crop is not at hand for a reused tile). Catches: line crops that survive only inside committed pages (Vivonne
+    f.201r). Must NOT change: the piles are exactly --labels; a sid in neither source is skipped and counted."""
+    from PIL import Image
+    items, pages, mime, scale = tiles_from_pages(a.tiles_from)
+    labels = tsv(a.labels)
+    miss = sorted({r['sid'] for r in labels if r['sid'] not in items})
+    if miss and a.signs and a.pages:
+        import tempfile
+        lab = os.path.join(tempfile.mkdtemp(prefix='sorter_tf_'), 'labels.tsv')
+        with open(lab, 'w') as f:
+            f.write('sid\tsign\n' + ''.join(f'{s}\tx\n' for s in miss))
+        d0 = build(a.signs, lab, a.pages, a.marks, thumb=a.thumb, page_scale=scale, page_q=a.page_quality,
+                   tile_q=a.tile_quality or (85 if mime == 'image/jpeg' else None))
+        for p in d0['piles']:
+            for it in p['items']:
+                items[it['sid']] = {k: it[k] for k in ('sid', 'img', 'p', 'b')}
+        for k, v in d0['pages'].items():
+            pages.setdefault(k, v)
+    piles, fam, vecs, skipped = defaultdict(list), {}, {}, 0
+    for r in labels:
+        it = items.get(r['sid'])
+        if not it:
+            skipped += 1; continue
+        piles[r['sign']].append({k: it[k] for k in ('sid', 'img', 'p', 'b')})
+        fam[r['sign']] = r.get('family') or r['sign']
+        v = list(Image.open(io.BytesIO(base64.b64decode(it['img']))).convert('L').resize((24, 24)).tobytes())
+        mu = sum(v) / len(v); sd = math.sqrt(sum((x - mu) ** 2 for x in v) / len(v)) or 1
+        vecs[r['sid']] = [(x - mu) / sd for x in v]
+    means = {}
+    for k, its in piles.items():
+        means[k], dd = pile_oddness(vecs, [it['sid'] for it in its])
+        for it in its:
+            it['d'] = dd[it['sid']]
+
+    def cos(u, v):
+        nu = math.sqrt(sum(x * x for x in u)) or 1; nv = math.sqrt(sum(y * y for y in v)) or 1
+        return sum(x * y for x, y in zip(u, v)) / nu / nv
+    big = [j for j in piles if len(piles[j]) >= 3]
+    near = {k: [j for sim, j in sorted(((cos(means[k], means[j]), j) for j in big if j != k), reverse=True)[:3] if sim > 0.5] for k in piles}
+    used = {it['p'] for v in piles.values() for it in v}
+    cut = sum(1 for s_ in miss if s_ in items)
+    print(f'--tiles-from: {sum(len(v) for v in piles.values())} tiles in {len(piles)} piles ({cut} cut from --signs/--pages), {skipped} skipped')
+    return {'piles': [{'id': k, 'family': fam[k], 'items': v, 'near': near.get(k, [])} for k, v in piles.items()],
+            'skipped': skipped, 'pages': {k: v for k, v in pages.items() if k in used}, '_vecs': vecs, 'tileMime': mime, 'pageScale': scale}
+
+
 def piles_from(items, pile_of, focus_sids, certain=None, meanings=None):
     """-> (data, report). items: {sid: tile item}; pile_of: settled {sid: pile}; focus_sids: question tiles (the queue)."""
     rep = {'missing_tile': [], 'certain_added': 0, 'certain_no_pile': [], 'certain_conflict': []}
@@ -962,7 +1015,7 @@ def main(argv=None):
     ap.add_argument('--drop-conflicts', action='store_true', help='--piles-from: leave conflicting tiles off the page (listed) instead of stopping')
     ap.add_argument('--certain', metavar='TSV', help='--piles-from: known-answer tiles (sid, sign) added only to a pile the settled rows formed')
     ap.add_argument('--meanings', metavar='KEY.tsv', help='--piles-from: code, meaning; two piles of one meaning get the note "same letter, two shapes" (R15)')
-    ap.add_argument('--tiles-from', nargs='+', metavar='PAGE.html', help='--piles-from: take tiles and line images from built sorter pages '
+    ap.add_argument('--tiles-from', nargs='+', metavar='PAGE.html', help='take tiles and line images from built sorter pages (with --piles-from, or with --labels as the piles) '
                     '(their embedded DATA) instead of --signs/--pages')
     ap.add_argument('--box-check', metavar='TSV', help='box_check.tsv or boxes_handcut.tsv with a `check` column (pass/fail per question): '
                     'the build refuses a question page under 90%% pass (owner row R14); without it the build warns')
@@ -1034,13 +1087,16 @@ def main(argv=None):
         for r in rows:
             print(f"{r['seed']}\t{r['planted']}\t{r['recall']}\t{r['shuffled_p95']}\t{r['shuffled_mean']}")
         print(json.dumps(summ)); return
-    if not a.oddness_audit and not a.pages and not (a.piles_from and a.tiles_from):
-        ap.error('--pages is required (or --piles-from with --tiles-from)')
+    if not a.oddness_audit and not a.pages and not a.tiles_from:
+        ap.error('--pages is required (or --tiles-from)')
     if a.piles_from:
         pass
     elif a.atlas_topk:
         import tempfile
         a.signs, a.labels = atlas_topk_inputs(a.atlas_topk, tempfile.mkdtemp(prefix='sorter_'))
+    elif a.tiles_from:
+        if not a.labels:
+            ap.error('--tiles-from without --piles-from needs --labels')
     elif not (a.signs and a.labels):
         ap.error('give --signs and --labels, or --atlas-topk')
     if a.rank_lattice is not None and not a.rank_lattice:
@@ -1055,6 +1111,8 @@ def main(argv=None):
             print('refused: ' + why, file=sys.stderr); sys.exit(2)
     if a.piles_from:
         data = build_piles_from(a)
+    elif a.tiles_from:
+        data = build_tiles_from(a)
     else:
         data = build(a.signs, a.labels, a.pages, a.marks, thumb=a.thumb, clusters=read_clusters(a.clusters) if a.clusters else None,
                      tile_q=a.tile_quality, page_scale=a.page_scale, page_q=a.page_quality)
