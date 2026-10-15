@@ -91,3 +91,30 @@ one request each; then the c281/c284/c267 E rows re-checked for the Ebar form fr
 
 Wave 2 spawned 11:07 UTC (all Opus): LVN-K15 session_01WnnJ9pzDt8fH7hThJqb9Qq, C1161-HC session_016YqJHBfHfmBde2Ev3yP1ad, MAT-BOX session_01JhUAPckKoKXE2bx7zekheM,
 MONL-L21 session_01RTGPs8zcLH2bZbB74BR7tg, ELEC-383 session_012L9kaYq2URo6Scnrt63kyU, BAL-302 session_015zwNFFyQ8tmh2t8P5vRuwf. Wave 1 sessions archived.
+
+## Wave 2 result (11:3x UTC): LVN-K15 4.42 D, C1161-HC 4.51 D (hand count L2 29/30 PASS), MAT-BOX 4.19 N (BOX=u reject), ELEC-383 2.92 D, BAL-302 2.45 N;
+MONL-L21 running. Overruns 1.40-1.47x again: wave 3 caps are set at ~1.5x the unit estimate and workers stop at 80% of them.
+
+## Wave 3 (11:4x UTC 15 Oct) -- last wave
+Intake gate oldenbarnevelt-brederode-1605 11:05 UTC pass.
+
+### C1161-HC2 (Opus, cap 4.5, box 75 min, disk only): clair1161-avis-flandre-1688 hand count of the remaining 62 S lines
+C1161-HC's next: hand-count the remaining 62 lines (149 S) by the same per-piece method into shc/hand.tsv, then the L2 eye check on a fresh 30-window
+sample drawn from these lines (same design, gate 26). Stop there: readers, gate K and --try are the next job, not this one.
+
+### ELEC-KLU (Opus, cap 3.5, box 60 min, openapi.bnf.fr <= 4; archive.org/be-api <= 10, ROOM take/release): fr5761-election-1519 nr. 383 start + print pair
+ELEC-383's next: c334-c335 + f.166v at 2400 px (find the letter's start, f.165v-166r), then Kluckhohn's n863-n864 pairing under ELEC-PAIR's rule
+(shuffle control, both-sided pairs only). archive.org is allowed for this job (good-citizen rule: 1.5 s apart, one at a time).
+
+### BAL-PCT (Opus, cap 2, box 40 min, openapi.bnf.fr <= 2, ROOM take/release): baluze167-davaux-1637 the two measured regions
+BAL-302 recorded measured boxes: c302 pct:37,40,10,5/max and c276 pct:53,78.5,8,5/max. One request each; rule the c302 65 stroke (plain 65 or 65')
+and the c276 R16 E (epsilon or Ebar). Grades only through --try / the corrections path.
+
+### OBRED-TRY2 (Opus, cap 4, box 60 min, disk only): oldenbarnevelt-brederode-1605 context --try on the 20 Dutch word leads
+A2-0810 handoff next: the 20 nl16 word leads from OBRED-SEG (all M) tested in context: a pre-registered --try (or the folder's equivalent) per lead
+at every occurrence, with a power control that must reject a known wrong value before any lead is accepted; accepted leads stay M unless the control
+licenses S. Read OBRED-SEG/OBRED-BAND sections first.
+
+### VER-LVN3 (Opus, cap 2, box 45 min, disk; resources.huygens.knaw.nl <= 2): lodewijk-van-nassau-1573-74 verifier for LVN-K15's three named rows
+Verifier hat, not the solver's session: K16/18, K30/15 (moved to undecided after the decode was seen) and K31/14 81 H. One crop each beside the H
+exemplars, ruling kept/changed/undecided; changes through the corrections path + decode_key --check; carry into AUDIT.md (rule 10).
