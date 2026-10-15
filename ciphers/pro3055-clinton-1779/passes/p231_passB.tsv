@@ -1,0 +1,206 @@
+# CLIN-3004B (15 Oct 2026): blind Sonnet pass B on the four column crops of B.147 p.231 (H-1649 Image 875 at 3200 px), as returned
+crop	row	kind	entry	underline	note
+col4	1	fig	13-14	n	
+col4	2	fig	-18	n	
+col4	3	fig	-13	n	
+col4	4	fig	-21	n	
+col4	5	fig	-21	y	
+col4	6	fig	16-12	n	
+col4	7	fig	-15	n	
+col4	8	fig	-16	n	
+col4	9	fig	-14	n	
+col4	10	fig	-15	n	
+col4	11	fig	-30	n	
+col4	12	fig	-3	n	
+col4	13	fig	20-4	y	
+col4	14	clear	against	n	
+col4	15	fig	8-3	n	
+col4	16	fig	-4	n	
+col4	17	fig	13-5	n	
+col4	18	fig	-6	y	
+col4	19	fig	1-3	n	
+col4	20	fig	-31	n	
+col4	21	fig	-29	n	
+col4	22	fig	9-5	n	
+col4	23	fig	-6	y	
+col4	24	clear	But it is	n	
+col4	25	clear	highly	n	
+col4	26	clear	probable	n	
+col4	27	clear	that they will	n	
+col4	28	fig	11-3	n	
+col4	29	fig	-5	n	
+col4	30	fig	-12	n	
+col4	31	fig	12-5	n	
+col4	32	fig	19-1	y	
+col4	33	fig	12-3	n	
+col4	34	fig	-4	n	
+col4	35	fig	-5	n	
+col4	36	fig	13-3	n	
+col4	37	fig	-2	y	
+col4	38	fig	17-4	n	
+col4	39	fig	-19	n	
+col4	40	fig	-11	n	
+col4	41	fig	-15	n	
+col4	42	fig	-25	n	
+col4	43	fig	-1	n	
+col4	44	fig	-6	n	
+col4	45	fig	18-14	n	
+col4	46	fig	-15	n	
+col4	47	fig	-13	y	
+col4	48	fig	8-1	n	
+col4	49	fig	-2	n	
+col4	50	fig	-1	n	slash only, right digit 1 uncertain; dash left blank
+col3	1	clear	Success in	n	
+col3	2	fig	15-12	n	
+col3	3	fig	16-5	n	
+col3	4	fig	-13	y	
+col3	5	fig	15-5	n	
+col3	6	fig	-14	n	
+col3	7	fig	-18	n	
+col3	8	fig	-13	n	
+col3	9	fig	-10	n	
+col3	10	fig	-11	n	
+col3	11	fig	-2	n	
+col3	12	fig	17-23	y	
+col3	13	clear	and	n	
+col3	14	fig	18-1	n	
+col3	15	fig	-17	n	
+col3	16	fig	17-23	n	
+col3	17	fig	16-13	n	
+col3	18	fig	-14	n	
+col3	19	fig	-15	n	
+col3	20	fig	-16	n	
+col3	21	fig	-22	n	
+col3	22	fig	-29	n	
+col3	23	fig	17-23	y	
+col3	24	fig	13-7	n	
+col3	25	fig	-5	n	
+col3	26	fig	-6	y	
+col3	27	fig	7-16	n	
+col3	28	fig	-17	n	top digit cut by crop edge; 17 or 19
+col3	29	fig	-18	n	
+col3	30	fig	-19	y	
+col3	31	clear	The Operati	n	continues into next column
+col3	32	clear	of	n	
+col3	33	fig	8-3	n	
+col3	34	fig	-4	n	
+col3	35	fig	-5	y	
+col3	36	fig	13-16	n	
+col3	37	fig	-27	n	
+col3	38	fig	-26	n	
+col3	39	fig	-25	n	
+col3	40	fig	16-27	y	
+col3	41	fig	15-1	n	
+col3	42	fig	-5	n	
+col3	43	fig	-5	n	
+col3	44	fig	-9	n	
+col3	45	fig	-7	n	
+col3	46	fig	16-26	y	
+col3	47	fig	18-4	n	
+col3	48	fig	-14	y	
+col3	49	fig	1-30	n	
+col3	50	fig	-32	y	
+col2	1	fig	8-2	n	
+col2	2	fig	-1	n	
+col2	3	fig	16-26	n	
+col2	4	fig	14-6	n	
+col2	5	fig	-16	n	
+col2	6	fig	-9	y	double rule
+col2	7	clear	which being	n	
+col2	8	fig	15-5	n	
+col2	9	fig	16-4	n	
+col2	10	fig	-5	n	
+col2	11	fig	15-5	n	
+col2	12	fig	-3	n	
+col2	13	fig	16-11	n	
+col2	14	fig	-7	n	
+col2	15	fig	-16	n	
+col2	16	fig	-14	n	
+col2	17	fig	-30	y	
+col2	18	fig	16-7	n	
+col2	19	fig	-13	n	
+col2	20	fig	-5	n	
+col2	21	fig	-15	n	
+col2	22	fig	-40	n	
+col2	23	fig	-35	n	
+col2	24	fig	-16	y	
+col2	25	fig	17-1	n	
+col2	26	fig	-2	n	
+col2	27	fig	-3	y	
+col2	28	fig	1-18	n	
+col2	29	fig	-4	n	
+col2	30	fig	-30	n	
+col2	31	fig	-32	n	
+col2	32	fig	-31	n	
+col2	33	fig	-9	y	
+col2	34	clear	greatly	n	
+col2	35	fig	9-3	n	left 9 may be descender of g
+col2	36	fig	-19	n	
+col2	37	fig	-5	n	
+col2	38	fig	-9	n	
+col2	39	fig	-20	n	
+col2	40	fig	-24	n	
+col2	41	fig	-11	n	
+col2	42	fig	-19	n	
+col2	43	fig	-28	n	
+col2	44	fig	-26	n	
+col2	45	fig	-29	y	
+col2	46	fig	19-1	n	
+col2	47	fig	17-9	n	
+col2	48	fig	-4	n	
+col2	49	fig	-8	n	
+col2	50	fig	18-10	n	
+col2	51	fig	-11	n	
+col2	52	fig	-4	n	
+col2	53	fig	-14	n	
+col2	54	fig	-15	n	
+col2	55	fig	-13	y	
+col1	1	fig	15-18	n	
+col1	2	fig	-19	n	
+col1	3	fig	-6	n	small digit under 19, uncertain
+col1	4	fig	-9	n	
+col1	5	fig	-12	n	
+col1	6	fig	-10	n	
+col1	7	fig	-18	n	
+col1	8	fig	-17	y	
+col1	9	fig	16-37	n	
+col1	10	fig	-28	n	
+col1	11	fig	-17	n	
+col1	12	fig	-13	y	
+col1	13	fig	6-11	n	
+col1	14	fig	-5	n	
+col1	15	fig	-8	n	
+col1	16	fig	-9	n	
+col1	17	fig	9-5	n	
+col1	18	fig	-6	y	
+col1	19	clear	of	n	small word above row 20
+col1	20	fig	18-16	n	stroke on dash
+col1	21	fig	-14	n	
+col1	22	fig	-17	n	
+col1	23	fig	-9	y	
+col1	24	fig	13-23	n	
+col1	25	fig	-24	n	
+col1	26	fig	-25	n	cut by crop edge
+col1	27	fig	15-5	n	
+col1	28	fig	14-9	y	
+col1	29	fig	9-1	n	
+col1	30	fig	-2	y	double rule
+col1	31	fig	5-3	n	
+col1	32	fig	-4	n	
+col1	33	fig	-3	y	
+col1	34	fig	9-20	n	
+col1	35	fig	-9	n	
+col1	36	fig	-10	n	
+col1	37	fig	-13	y	
+col1	38	clear	and a	n	continues
+col1	39	clear	Consider	n	continues
+col1	40	fig	1-30	n	
+col1	41	fig	-26	n	
+col1	42	fig	6-15	n	
+col1	43	fig	18-29	y	
+col1	44	fig	10-1	n	
+col1	45	fig	-2	y	
+col1	46	fig	4-1	n	
+col1	47	fig	6-8	n	
+col1	48	fig	-9	n	
+col1	49	fig	-10	y	right digits cut by crop edge
