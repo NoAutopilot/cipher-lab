@@ -1,0 +1,669 @@
+line	position	sign	confidence	alt	why
+L01	1	S05	M	A:-	gap
+L01	2	S15	M	B:S40	differ
+L01	3	S31	M	B:S62	differ
+L01	4	S35	H		agree
+L01	5	S21	H		agree
+L01	6	S12	H		agree
+L01	7	S31	M	B:S62	differ
+L01	8	?[x]	M	B:S46	differ
+L01	9	S03	H		agree
+L01	10	S10	H		agree
+L01	11	S32	H		agree
+L01	12	S39	H		agree
+L01	13	S35	H		agree
+L01	14	S01	M	B:S50	differ
+L01	15	S36	H		agree
+L01	16	S21	H		agree
+L01	17	S31	M	B:S62	differ
+L01	18	?[r]	H		agree
+L01	19	S34	H		agree
+L01	20	S30	M	B:S59	differ
+L01	21	S15	H		agree
+L01	22	S15	M	B:S40	differ
+L01	23	S25	H		agree
+L01	24	S27	M	B:?[long-s-loop]	differ
+L01	25	?[r]	H		agree
+L01	26	S50	H		agree
+L01	27	S35	H		agree
+L01	28	S10	H		agree
+L01	29	S25	H		agree
+L01	30	S27	M	B:?[long-s-loop]	differ
+L01	31	S34	H		agree
+L01	32	S21	H		agree
+L01	33	?[x]	M	B:S46	differ
+L01	34	?[o-cross-o]	H		agree
+L01	35	?[r]	H		agree
+L01	36	S15	M	B:S40	differ
+L01	37	S35	H		agree
+L01	38	S22	H		agree
+L01	39	S39	H		agree
+L02	1	S13	M	B:S17	differ
+L02	2	?[s]	H		agree
+L02	3	?[s]	M	B:?[long-s]	differ
+L02	4	S34	H		agree
+L02	5	S21	H		agree
+L02	6	?[x]	M	B:S46	differ
+L02	7	[clear]	H		agree
+L02	8	?[s]	H		agree
+L02	9	?[long-s]	M	A:-	gap
+L02	10	S25	H		agree
+L02	11	S09	M	B:S17	differ
+L02	12	S01	H		agree
+L02	13	S10	H		agree
+L02	14	S34	H		agree
+L02	15	S21	H		agree
+L02	16	?[x]	M	B:S46	differ
+L02	17	S15	M	B:S40	differ
+L02	18	S36	H		agree
+L02	19	?[blot]	H		agree
+L02	20	?[r]	H		agree
+L02	21	S15	M	B:S40	differ
+L02	22	S21	H		agree
+L02	23	?[x]	M	B:S46	differ
+L02	24	S50	H		agree
+L02	25	S31	M	B:S62	differ
+L02	26	S15	H		agree
+L02	27	S25	H		agree
+L02	28	S15	M	B:S40	differ
+L02	29	?[r]	M	B:S35	differ
+L02	30	S13	H		agree
+L02	31	S15	M	B:S40	differ
+L02	32	?[r]	M	B:S13	differ
+L02	33	S03	H		agree
+L02	34	S03	M	B:S46	differ
+L03	1	S19	M	B:S20	differ
+L03	2	S21	H		agree
+L03	3	S10	H		agree
+L03	4	S41	M	B:S10	differ
+L03	5	?[r]	H		agree
+L03	6	S14	H		agree
+L03	7	S13	H		agree
+L03	8	S15	M	B:S40	differ
+L03	9	S10	H		agree
+L03	10	S21	H		agree
+L03	11	S31	M	B:S62	differ
+L03	12	S01	H		agree
+L03	13	S27	M	B:S32	differ
+L03	14	?[x]	M	B:S46	differ
+L03	15	S63	H		agree
+L03	16	S03	H		agree
+L03	17	S10	H		agree
+L03	18	S35	H		agree
+L03	19	S21	H		agree
+L03	20	S15	M	B:S40	differ
+L03	21	S36	H		agree
+L03	22	S15	M	B:S40	differ
+L03	23	S21	H		agree
+L03	24	S36	H		agree
+L03	25	S10	H		agree
+L03	26	S03	H		agree
+L03	27	S62	M	A:-	gap
+L03	28	S31	M	B:?[s]	differ
+L03	29	S59	M	B:S12	differ
+L03	30	S36	H		agree
+L03	31	S13	H		agree
+L03	32	?[s]	M	A:-	gap
+L03	33	S59	M	B:S12	differ
+L03	34	S36	H		agree
+L03	35	S03	H		agree
+L03	36	S21	H		agree
+L03	37	S36	H		agree
+L03	38	S10	H		agree
+L03	39	S31	M	B:S62	differ
+L03	40	S20	H		agree
+L03	41	S15	H		agree
+L03	42	S15	M	B:S40	differ
+L03	43	S13	H		agree
+L03	44	S10	H		agree
+L03	45	S12	H		agree
+L03	46	S21	H		agree
+L03	47	?[s]	H		agree
+L04	1	S15	M	B:S40	differ
+L04	2	S13	H		agree
+L04	3	?[x]	M	B:S25	differ
+L04	4	S01	H		agree
+L04	5	S36	H		agree
+L04	6	?[long-s]	M	A:-	gap
+L04	7	S59	M	B:S12	differ
+L04	8	S15	M	B:S40	differ
+L04	9	S10	H		agree
+L04	10	S12	M	B:-	gap
+L04	11	S17	H		agree
+L04	12	S25	H		agree
+L04	13	S10	H		agree
+L04	14	S50	M	B:S02	differ
+L04	15	S10	H		agree
+L04	16	S41	M	B:-	gap
+L04	17	S35	H		agree
+L04	18	S21	H		agree
+L04	19	S40	M	A:-	gap
+L04	20	S15	M	B:S40	differ
+L04	21	S31	M	B:S62	differ
+L04	22	S10	H		agree
+L04	23	S34	H		agree
+L04	24	S50	H		agree
+L04	25	S15	M	B:S40	differ
+L04	26	S13	H		agree
+L04	27	S27	M	B:S32	differ
+L04	28	S36	H		agree
+L04	29	S13	H		agree
+L04	30	S59	M	B:S12	differ
+L04	31	S36	H		agree
+L04	32	S15	M	B:S40	differ
+L04	33	S21	H		agree
+L04	34	S59	M	B:-	gap
+L04	35	S12	H		agree
+L04	36	S35	H		agree
+L04	37	S31	M	B:S62	differ
+L04	38	S36	H		agree
+L04	39	S15	M	B:S40	differ
+L04	40	S13	H		agree
+L04	41	?[x]	M	B:-	gap
+L04	42	S25	H		agree
+L04	43	S21	H		agree
+L04	44	S31	M	B:S62	differ
+L04	45	S34	H		agree
+L04	46	S55	M		agree-flagged
+L05	1	S22	H		agree
+L05	2	?[x]	M	B:S46	differ
+L05	3	S36	H		agree
+L05	4	S35	H		agree
+L05	5	S62	M	A:-	gap
+L05	6	S31	M	B:?[s]	differ
+L05	7	S19	M	B:?[bar]	differ
+L05	8	S25	H		agree
+L05	9	S17	H		agree
+L05	10	S03	H		agree
+L05	11	S10	H		agree
+L05	12	S34	H		agree
+L05	13	S50	H		agree
+L05	14	S15	H		agree
+L05	15	S36	M	B:S23	differ
+L05	16	S31	M	B:S62	differ
+L05	17	S10	H		agree
+L05	18	S21	H		agree
+L05	19	?[s]	M	B:?[long-s]	differ
+L05	20	S31	M	B:S62	differ
+L05	21	S15	H		agree
+L05	22	S28	H		agree
+L05	23	S13	H		agree
+L05	24	S31	M	B:S62	differ
+L05	25	?[x]	M	B:S46	differ
+L05	26	S63	H		agree
+L05	27	S36	H		agree
+L05	28	S35	H		agree
+L05	29	S62	M	A:-	gap
+L05	30	S31	M	B:?[long-s]	differ
+L05	31	S12	H		agree
+L05	32	S13	H		agree
+L05	33	S15	M	B:S40	differ
+L05	34	S10	H		agree
+L05	35	S21	H		agree
+L05	36	S10	H		agree
+L05	37	S12	H		agree
+L05	38	S15	M	B:S40	differ
+L05	39	S10	H		agree
+L05	40	S39	H		agree
+L05	41	S15	M	B:S40	differ
+L05	42	S10	H		agree
+L05	43	S12	H		agree
+L05	44	S03	H		agree
+L06	1	S10	H		agree
+L06	2	S03	H		agree
+L06	3	S10	H		agree
+L06	4	S35	H		agree
+L06	5	S21	H		agree
+L06	6	S39	H		agree
+L06	7	S36	H		agree
+L06	8	S15	M	B:S40	differ
+L06	9	S21	H		agree
+L06	10	S36	H		agree
+L06	11	S15	M	B:S40	differ
+L06	12	S10	H		agree
+L06	13	?[o]	M	A:-	gap
+L06	14	S12	M	B:S02	differ
+L06	15	?[a1]	M	B:S35	differ
+L06	16	?[T-bar]	M	B:S31	differ
+L06	17	?[r]	H		agree
+L06	18	S13	M	A:-	gap
+L06	19	?[r]	H		agree
+L06	20	S13	M	A:-	gap
+L06	21	S15	M	B:S40	differ
+L06	22	S13	H		agree
+L06	23	S50	H		agree
+L06	24	S31	M	B:S62	differ
+L06	25	S28	H		agree
+L06	26	S21	H		agree
+L06	27	S31	M	B:S62	differ
+L06	28	S22	H		agree
+L06	29	S12	H		agree
+L06	30	?[x]	M	B:S46	differ
+L06	31	S15	M	B:S40	differ
+L06	32	S13	H		agree
+L06	33	S57	H		agree
+L06	34	S60	M	A:-	gap
+L06	35	S15	M	A:-	gap
+L06	36	S54	M	A:-	gap
+L06	37	?[oo]	M	B:S53	differ
+L07	1	S12	H		agree
+L07	2	S31	M	B:S62	differ
+L07	3	S36	H		agree
+L07	4	S15	M	B:S40	differ
+L07	5	S21	H		agree
+L07	6	S36	H		agree
+L07	7	S34	H		agree
+L07	8	S27	M	B:S32	differ
+L07	9	S03	H		agree
+L07	10	S36	H		agree
+L07	11	S03	H		agree
+L07	12	S15	M	B:S40	differ
+L07	13	S21	H		agree
+L07	14	S12	H		agree
+L07	15	S01	H		agree
+L07	16	?[x]	M	B:-	gap
+L07	17	S25	H		agree
+L07	18	S21	H		agree
+L07	19	S31	M	B:S62	differ
+L07	20	S36	H		agree
+L07	21	?[x]	M	B:S46	differ
+L07	22	S01	H		agree
+L07	23	S31	M	B:S62	differ
+L07	24	?[r]	H		agree
+L07	25	S12	H		agree
+L07	26	S15	M	B:S40	differ
+L07	27	S57	M	B:S13	differ
+L07	28	?[oo]	M	B:S60	differ
+L07	29	S15	M	B:S40	differ
+L07	30	S14	M	B:S53	differ
+L07	31	S21	H		agree
+L07	32	?[9]	M	A:-	gap
+L07	33	?[b-bar]	M	A:-	gap
+L07	34	S13	M	A:-	gap
+L07	35	?[ink]	M	A:-	gap
+L08	1	S15	M	B:S40	differ
+L08	2	?[w]	M	B:S16	differ
+L08	3	?[r]	H		agree
+L08	4	S15	M	B:S40	differ
+L08	5	S57	M	B:S13	differ
+L08	6	S17	H		agree
+L08	7	S25	H		agree
+L08	8	S10	H		agree
+L08	9	S50	M	B:-	gap
+L08	10	S15	M	B:S40	differ
+L08	11	S31	M	B:S62	differ
+L08	12	S10	H		agree
+L08	13	S34	H		agree
+L08	14	S50	H		agree
+L08	15	S12	H		agree
+L08	16	?[s]	M	B:-	gap
+L08	17	S15	M	B:S40	differ
+L08	18	?[T-bar]	M	B:S31	differ
+L08	19	?[s]	M	B:S12	differ
+L08	20	?[x]	M	B:S46	differ
+L08	21	S15	M	B:S40	differ
+L08	22	S01	H		agree
+L08	23	S21	H		agree
+L08	24	?[r]	H		agree
+L08	25	?[x]	M	B:S46	differ
+L08	26	S02	H		agree
+L08	27	S31	M	B:-	gap
+L08	28	?[x]	M	B:-	gap
+L08	29	?[r]	M	B:S62	differ
+L08	30	S13	M	B:S46	differ
+L08	31	S12	M	B:[clear]	differ
+L09	1	S03	H		agree
+L09	2	S10	H		agree
+L09	3	S15	H		agree
+L09	4	?[r]	M	B:S46	differ
+L09	5	?[s]	H		agree
+L09	6	?[s]	M	B:?[long-s]	differ
+L09	7	S10	H		agree
+L09	8	S31	M	B:S62	differ
+L09	9	S15	H		agree
+L09	10	?[r]	H		agree
+L09	11	S35	H		agree
+L09	12	S25	H		agree
+L09	13	S27	M	B:?[ss]	differ
+L09	14	S12	H		agree
+L09	15	S15	H		agree
+L09	16	S13	H		agree
+L09	17	S15	M	B:S40	differ
+L09	18	S10	H		agree
+L09	19	S12	M	B:-	gap
+L09	20	S50	H		agree
+L09	21	S15	H		agree
+L09	22	S20	H		agree
+L09	23	S13	H		agree
+L09	24	S28	H		agree
+L09	25	S12	H		agree
+L09	26	S31	M	B:S62	differ
+L09	27	?[r]	H		agree
+L09	28	S13	H		agree
+L09	29	S35	M	B:-	gap
+L09	30	S10	H		agree
+L09	31	S50	M	B:-	gap
+L09	32	S15	M	B:S40	differ
+L09	33	S13	M	B:S46	differ
+L09	34	?[x]	M	B:S48	differ
+L09	35	S50	H		agree
+L09	36	S15	H		agree
+L09	37	S03	H		agree
+L09	38	S31	M	A:-	gap
+L09	39	S09	M	A:-	gap
+L09	40	S50	M	A:-	gap
+L10	1	[clear]	H		agree
+L11	1	[clear]	H		agree
+L12	1	S40	M	A:-	gap
+L12	2	S50	M	A:-	gap
+L12	3	[clear]	H		agree
+L12	4	?[2-loop]	M	B:?[w-loop]	differ
+L12	5	S09	M	B:S17	differ
+L12	6	?[T-bar]	M	B:S31	differ
+L12	7	S15	H		agree
+L12	8	S10	H		agree
+L12	9	?[w]	M	B:S16	differ
+L12	10	S12	H		agree
+L12	11	S31	M	B:-	gap
+L12	12	?[x]	M	B:S62	differ
+L12	13	?[bar]	M	B:S46	differ
+L12	14	S15	M	B:S40	differ
+L12	15	S57	M	B:S13	differ
+L12	16	S14	H		agree
+L12	17	S10	M	B:S02	differ
+L12	18	?[r]	H		agree
+L12	19	S34	H		agree
+L12	20	S62	M	A:-	gap
+L12	21	S58	M	A:-	gap
+L12	22	S28	M	A:-	gap
+L12	23	S62	M	A:-	gap
+L12	24	S31	M	B:S46	differ
+L12	25	?[m]	M	B:S32	differ
+L13	1	[clear]	M	A:-	gap
+L13	2	S10	H		agree
+L13	3	S34	H		agree
+L13	4	S28	H		agree
+L13	5	S04	H		agree
+L13	6	S12	H		agree
+L13	7	S15	M	B:S40	differ
+L13	8	S15	M	B:S40	differ
+L13	9	S31	M	B:S62	differ
+L13	10	?[s]	H		agree
+L13	11	?[s]	M	B:?[long-s]	differ
+L13	12	S25	H		agree
+L13	13	?[s]	H		agree
+L13	14	?[long-s]	M	A:-	gap
+L13	15	S36	H		agree
+L13	16	S34	H		agree
+L13	17	S10	H		agree
+L13	18	S36	H		agree
+L13	19	?[r]	M	B:S46	differ
+L13	20	S34	H		agree
+L13	21	S31	M	B:S62	differ
+L13	22	?[s]	H		agree
+L13	23	?[long-s]	M	A:-	gap
+L13	24	S10	H		agree
+L13	25	S32	H		agree
+L13	26	S36	H		agree
+L13	27	S21	H		agree
+L13	28	?[s]	M	B:?[long-s]	differ
+L13	29	S15	M	B:S40	differ
+L13	30	S01	H		agree
+L13	31	S31	M	B:S62	differ
+L13	32	?[a]	H		agree
+L13	33	S39	H		agree
+L13	34	S46	M	A:-	gap
+L13	35	?[long-s]	M	A:-	gap
+L13	36	?[r]	M	B:[clear]	differ
+L14	1	S35	M	B:?[ink]	differ
+L14	2	?[a]	M	B:S40	differ
+L14	3	S21	M	B:S18	differ
+L14	4	S15	H		agree
+L14	5	S31	M	B:S62	differ
+L14	6	?[r]	M	B:S46	differ
+L14	7	S34	H		agree
+L14	8	S30	M	B:S17	differ
+L14	9	S12	H		agree
+L14	10	?[s]	M	B:?[long-s]	differ
+L14	11	?[s]	M	B:?[long-s]	differ
+L14	12	S34	H		agree
+L14	13	S21	H		agree
+L14	14	S46	M	A:-	gap
+L14	15	?[x]	M	B:S51	differ
+L14	16	S67	M	B:S63	differ
+L14	17	?[T-bar]	M	B:S31	differ
+L14	18	S03	H		agree
+L14	19	?[x]	M	B:S46	differ
+L14	20	S15	H		agree
+L14	21	S13	H		agree
+L14	22	S10	H		agree
+L14	23	S36	H		agree
+L14	24	?[x]	M	B:S46	differ
+L14	25	S36	H		agree
+L14	26	S13	H		agree
+L14	27	S10	H		agree
+L14	28	?[o-cross-o]	M	B:S39	differ
+L14	29	?[s]	H		agree
+L14	30	?[s]	M	B:?[long-s]	differ
+L14	31	?[x]	M	B:S46	differ
+L14	32	?[s]	H		agree
+L14	33	[clear]	H		agree
+L15	1	[clear]	M	A:-	gap
+L15	2	S36	H		agree
+L15	3	S34	H		agree
+L15	4	S31	M	B:S62	differ
+L15	5	S10	H		agree
+L15	6	S15	H		agree
+L15	7	?[2]	M	B:S04	differ
+L15	8	S10	H		agree
+L15	9	S34	H		agree
+L15	10	S21	H		agree
+L15	11	S15	H		agree
+L15	12	S15	M	B:S40	differ
+L15	13	S10	H		agree
+L15	14	?[o]	M	A:-	gap
+L15	15	?[r]	M	B:S46	differ
+L15	16	S34	H		agree
+L15	17	S31	M	B:S62	differ
+L15	18	S12	H		agree
+L15	19	?[x]	M	B:S46	differ
+L15	20	S21	H		agree
+L15	21	S15	H		agree
+L15	22	S31	M	B:S62	differ
+L15	23	?[r]	M	B:S46	differ
+L15	24	S12	H		agree
+L15	25	[clear]	H		agree
+L16	1	S32	H		agree
+L16	2	S01	H		agree
+L16	3	?[x-cross]	M	B:S52	differ
+L16	4	S10	M	B:S02	differ
+L16	5	S15	M	B:S40	differ
+L16	6	S13	H		agree
+L16	7	S10	H		agree
+L16	8	S12	M	B:?[o]	differ
+L16	9	[clear]	H		agree
+L17	1	[clear]	H		agree
+L17	2	S55	H		agree
+L17	3	?[A]	M	B:?[A-tail]	differ
+L17	4	S39	H		agree
+L17	5	S13	H		agree
+L17	6	S15	M	B:S12	differ
+L17	7	?[x]	M	B:S46	differ
+L17	8	S21	H		agree
+L17	9	S04	M	B:-	gap
+L17	10	?[o]	M	B:S56	differ
+L18	1	[clear]	H		agree
+L19	1	[clear]	H		agree
+L19	2	S15	H		agree
+L19	3	S57	M	B:S17	differ
+L19	4	S50	H		agree
+L19	5	S15	H		agree
+L19	6	S40	M	A:-	gap
+L19	7	S15	M	B:?[long-s]	differ
+L19	8	S13	H		agree
+L19	9	S15	M	B:S40	differ
+L19	10	S21	H		agree
+L19	11	S10	M	A:-	gap
+L19	12	?[a-x]	M	B:S36	differ
+L19	13	[clear]	H		agree
+L20	1	[clear]	H		agree
+L20	2	S25	H		agree
+L20	3	S02	H		agree
+L20	4	S15	M	B:S40	differ
+L20	5	?[r]	H		agree
+L20	6	S20	H		agree
+L20	7	S21	H		agree
+L20	8	S10	H		agree
+L20	9	S10	H		agree
+L20	10	?[r]	H		agree
+L20	11	S14	H		agree
+L20	12	S15	H		agree
+L20	13	S40	M	A:-	gap
+L20	14	S10	H		agree
+L20	15	S21	H		agree
+L20	16	S31	M	B:S62	differ
+L20	17	S03	H		agree
+L20	18	S32	H		agree
+L20	19	?[x]	M	B:S46	differ
+L20	20	?[&]	M	B:S34	differ
+L20	21	[clear]	H		agree
+L21	1	[clear]	H		agree
+L21	2	?[&]	M	B:?[ampersand]	differ
+L21	3	S09	M	B:S13	differ
+L21	4	?[s]	M	B:?[long-s]	differ
+L21	5	?[x]	M	B:S46	differ
+L21	6	S15	H		agree
+L21	7	?[r]	H		agree
+L22	1	S10	M	B:S02	differ
+L22	2	S10	M	B:S02	differ
+L22	3	S05	H		agree
+L22	4	?[E]	M	B:S61	differ
+L22	5	?[s]	H		agree
+L22	6	?[s]	M	B:?[long-s]	differ
+L22	7	S25	H		agree
+L22	8	S13	H		agree
+L22	9	S32	H		agree
+L22	10	S12	H		agree
+L22	11	S36	M	B:S23	differ
+L22	12	S15	H		agree
+L22	13	S10	H		agree
+L22	14	S36	H		agree
+L22	15	?[x]	M	B:S46	differ
+L22	16	S42	M	B:?[z-tail]	differ
+L22	17	?[r]	H		agree
+L22	18	S15	H		agree
+L22	19	?[s]	H		agree
+L22	20	?[s]	M	B:?[long-s]	differ
+L22	21	S57	M	B:S40	differ
+L22	22	S01	H		agree
+L22	23	S50	H		agree
+L22	24	S15	H		agree
+L22	25	S15	M	B:S40	differ
+L22	26	?[s]	M	B:?[long-s]	differ
+L22	27	S13	H		agree
+L22	28	S15	M	B:S40	differ
+L22	29	S21	H		agree
+L22	30	S10	H		agree
+L22	31	S41	M	B:S52	differ
+L22	32	S13	H		agree
+L22	33	S36	H		agree
+L22	34	?[x]	M	B:S46	differ
+L22	35	S34	H		agree
+L22	36	S21	H		agree
+L22	37	?[x]	M	B:S46	differ
+L22	38	S50	M		agree-flagged
+L23	1	?[o]	M	B:S05	differ
+L23	2	S12	H		agree
+L23	3	S03	H		agree
+L23	4	S04	H		agree
+L23	5	?[x]	M	B:S46	differ
+L23	6	S15	H		agree
+L23	7	S28	H		agree
+L23	8	S13	H		agree
+L23	9	S31	M	B:S62	differ
+L23	10	?[x]	M	B:S46	differ
+L23	11	S12	H		agree
+L23	12	S35	H		agree
+L23	13	S31	M	B:S62	differ
+L23	14	S12	H		agree
+L23	15	S15	H		agree
+L23	16	S15	M	B:S40	differ
+L23	17	S10	H		agree
+L23	18	S21	H		agree
+L23	19	S10	H		agree
+L23	20	?[o]	H		agree
+L23	21	S13	H		agree
+L23	22	S10	M	B:S02	differ
+L23	23	S15	M	B:S40	differ
+L23	24	?[oo-bar]	M	B:S60	differ
+L23	25	S36	H		agree
+L23	26	S13	H		agree
+L23	27	S15	M	B:S40	differ
+L23	28	S10	H		agree
+L23	29	S03	H		agree
+L23	30	S31	M	B:S62	differ
+L23	31	?[x]	M	B:S46	differ
+L23	32	S10	H		agree
+L23	33	S21	H		agree
+L23	34	S31	M	B:S62	differ
+L23	35	?[x]	M	B:S46	differ
+L23	36	S15	H		agree
+L23	37	S15	M	B:S40	differ
+L23	38	S36	H		agree
+L23	39	S15	H		agree
+L23	40	S40	M	A:-	gap
+L23	41	S13	H		agree
+L24	1	S03	H		agree
+L24	2	S10	H		agree
+L24	3	S15	H		agree
+L24	4	?[r]	M	B:S46	differ
+L24	5	?[s]	H		agree
+L24	6	?[long-s]	M	A:-	gap
+L24	7	S09	M	B:S52	differ
+L24	8	S36	H		agree
+L24	9	S13	M	B:S17	differ
+L24	10	S36	H		agree
+L24	11	[clear]	H		agree
+L24	12	S10	M	B:S02	differ
+L24	13	S41	M	B:S02	differ
+L24	14	S14	M	B:?[5-tail]	differ
+L25	1	S25	H		agree
+L25	2	S01	H		agree
+L25	3	S50	M	B:S01	differ
+L25	4	S34	H		agree
+L25	5	S10	M	B:S41	differ
+L25	6	S25	H		agree
+L25	7	S35	H		agree
+L25	8	S31	M	B:S62	differ
+L25	9	?[oo-bar]	M	B:S60	differ
+L25	10	?[a1]	M	B:?[ay]	differ
+L25	11	S36	H		agree
+L25	12	S15	H		agree
+L25	13	S15	M	B:S40	differ
+L25	14	S31	M	B:S62	differ
+L25	15	S29	H		agree
+L25	16	S15	H		agree
+L25	17	S12	H		agree
+L25	18	S63	H		agree
+L25	19	S20	H		agree
+L25	20	S15	H		agree
+L25	21	S15	M	B:S40	differ
+L25	22	S13	H		agree
+L25	23	S10	H		agree
+L25	24	S12	H		agree
+L25	25	S21	H		agree
+L25	26	?[s]	H		agree
+L25	27	?[long-s]	M	A:-	gap
+L25	28	[clear]	H		agree
+L26	1	[clear]	H		agree
+L26	2	S01	H		agree
+L26	3	S25	H		agree
+L26	4	S02	H		agree
+L26	5	S31	M	B:S62	differ
+L26	6	?[s]	M	B:?[long-s]	differ
+L26	7	S25	H		agree
+L26	8	S35	H		agree
+L26	9	S21	H		agree
+L26	10	S36	H		agree
+L26	11	[clear]	M	A:-	gap
+L27	1	[clear]	H		agree

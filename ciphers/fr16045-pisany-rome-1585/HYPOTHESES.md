@@ -184,3 +184,7 @@ No key86 change (running-text gloss, no sign-level value; T40 not covered).
 ## PIS-121 (15 Oct 2026): 1585 table on f.121 vs margin gloss
 - control: power check (gloss as read, enciphered, e=0.376) 5/5; target: reconciled S 32 vs permuted-table p99 33 (rank 956/1000): FAIL by PREREG-PIS-121.md.
 - Reading: a miss of unknown cause (the power control cannot vary with gloss-read error); not a negative on the table; no value changed.
+
+## PIS-121B (15 Oct 2026): 1585 table on f.121 vs margin gloss, gloss re-read two-pass line-per-call
+- control: power check (gloss RG enciphered, e=0.376) 5/5 (S 231-279 vs p99 35-37); target: reconciled S 32 vs permuted-table p99 34 (rank 951/1000): FAIL by PREREG-PIS-121B.md.
+- Gloss read error P1 vs P2 0.254 (> pre-registered 0.20): a miss of unknown cause, not a negative on the table; no value changed. Rule 3: no third machine gloss pass.
