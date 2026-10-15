@@ -84,3 +84,6 @@ flag; (2) compare oXo, Phi, Hbar, Lfo with the f.51r-53r keys (c105-c109 on disk
 MAT-OSPLIT next: 3x per-token crops of the 78 f.91 o tokens (fix MAT-OSPLIT's 6 X join errors first), blind re-sort (crop paths only, no values),
 re-run mat_osplit.py under the SAME PREREG ee2c00674 gate. This is the second attempt at this split: if it fails again, log it and hand the o
 split to the owner's sign sorter as the next step (rule 3: no third machine attempt).
+
+Wave 2 spawned 13:09 UTC: MONL-K14 session_01Ceamd3rTT2QY8cezSDifK3, BAL-65L session_01GVPDmXM11HgQnRDDELxyaD, LVN-4610H session_01AQvZdQD2ubyHt2yzfmEz7q,
+ELEC-VERSO session_01PFKu5WgiukffCMR1c6Wq3R, MAT-O3X session_016uPs7XyaqXeRUYtYqPgM13 (all Opus; caps 4.5/3.5/3/4/3 = 18).
