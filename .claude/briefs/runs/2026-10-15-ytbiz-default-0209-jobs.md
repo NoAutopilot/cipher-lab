@@ -90,3 +90,29 @@ Follow outreach/README.md exactly (rule 1 AI-disclosure sentence in the first pa
 recipient = the institution's public contact address read from SOAS's own contact page with the date). Draft only: no CONTRIBUTIONS.md
 send row, no SEND-QUEUE row, no mail; status `drafted`, "checked:" line left for a separate gate-7 session; one ASKS.md row only if
 outreach/README.md says drafts get one. Update the folder's gaps (the gap becomes waiting-on the gate-7 check / send), gaps_check.
+
+## Wave 3 (03:3x UTC 15 Oct)
+
+### GB-PASS3 (Opus, cap 2.5, box 45 min, www.googleapis.com only, <= 40 requests at >= 2 s, key + `&country=US`): retry of GB-PASS2's unsent queries
+First request not before 03:40 UTC (GB-PASS2 hit 503 at 02:28-02:29). Hold the host with ROOM "googleapis take"/"release" lines; if any
+other lane holds it (a take with no release in the last 30 min), wait from disk. Read GB-PASS2's sections in the three NOTES.md first; run the
+scripts it left ready: thurloe-printed `gb2_verbael_snip.py` on vZzvg46MRdEC / T2JVAAAAYAAJ (Beverning 27 June / 22 Aug 1653, No. 37
+pp.252-253); baluze167-davaux-1637 `verbal22/gbpass2_gb.py` (169 f.22r phrases); eckert-1864 E592 and the looser E589 query by
+`fortmonroe/eck_gbpass_gb.py`, control first. Same host rule: on 503/429 one retry after >= 60 s, a second failure stops the whole job.
+A snippet hit is a location, not a reading; quote what it carries. Intake gates as GB-PASS2 (all exit 0). Each folder: its NOTES section,
+Remaining gaps / Escalation, gaps_check.
+
+### OUT-CHECK-SOAS (Opus, cap 2, box 30 min, www.soas.ac.uk <= 3 requests, raw.githubusercontent.com <= 2): gate-7 fact check of outreach/soas-paget-ppms4-enquiry.md
+You are not the drafter (SP105-SOAS, session_01A8hSmLPAaDUzwJwAfx6xLW). Copy the method of `.claude/briefs/runs/2026-10-14-acct4-out-check-fdr2.md`
+(read it): CLAUDE.md Outreach gate 7; outreach/README.md rules 1, 1a, 1b, 1c, 1d, 6, 8. Read the draft against every file and source it
+cites (ciphers/sp105-paget-1693/NOTES.md, REQUEST.md, the SOAS catalogue record and contact page): try to falsify each factual sentence
+(counts, dates, shelfmarks, names, what was and was not checked, the recipient address on SOAS's own page with the date), the voice
+(rule 1a) and the AI-disclosure sentence. Fix in place, then write the `checked:` header line naming what you corrected (or "no corrections").
+Do not send, do not create a mailbox draft, no CONTRIBUTIONS.md or SEND-QUEUE row (the parent adds those), no personal names. Touch only
+the draft file. file_shrink_guard on it before push.
+
+### PUST-F77 (Opus, cap 2, box 40 min, Gallica IIIF btv1b100373864 <= 6 requests at >= 2 s, ROOM take/release "gallica"): Pusterla last sibling f.77/f.76
+ciphers/sforza-italien1584-1447/pusterla/NOTES.md Verdict (~line 297): read f.76's sender and pair-check f.77 on the c73/c74 canvases, the
+same way SFZP-SIB pair-checked f.72/f.73 and f.75/f.74 (read its section; reuse its commands). Intake gate as SFZP-SIB. If f.77/f.76 is a
+Pusterla pair with the same text, stop after the pair check and name the unit-7 passes as the next step (~$3) in the Verdict -- do not run
+passes in this job. If not, close the siblings rung for c64-c74. Update both folders' gaps if touched; gaps_check.
