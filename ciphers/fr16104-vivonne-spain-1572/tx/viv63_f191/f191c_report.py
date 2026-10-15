@@ -3,7 +3,7 @@
 
     python3 ciphers/fr16104-vivonne-spain-1572/tx/viv63_f191/f191c_report.py [--json OUT]
 
-Reads f191r_passA-E via f191.py's clean(); never writes rec.tsv, decode.tsv or any reading. Prints the drift check (E, and C, D as
+Reads f191r_passA-E via f191.py's clean(); never writes rec.tsv, decode.tsv or any reading. Detail rows: line, how, A B C D E, plurality, E class, ABCE sign, outcome. Prints the drift check (E, and C, D as
 instrument controls), per-line err_2reader for E-A, E-B, E-C (and A-B, A-C, B-C), and the fourth-vote table on rec.tsv's flagged columns.
 """
 import collections, json, os, sys
@@ -93,12 +93,13 @@ def main():
             tab[k] += 1
             s2, f2, h2 = f191.decide(c[:3] + [e])
             if not f2 and s2 is not None:
-                settle['settled-same' if s2 == s else 'settled-different'] += 1
+                o = 'settled-same' if s2 == s else 'settled-different'
             elif not f2:
-                settle['settled-drop'] += 1
+                o = 'settled-drop'
             else:
-                settle['still-flagged'] += 1
-            detail.append((l, how, ' '.join(c), k, s2 or '-'))
+                o = 'still-flagged'
+            settle[o] += 1
+            detail.append((l, how, ' '.join(c), s, k, s2 or '-', o))
     # rec.tsv flagged count on these lines, pre-merge (count '+'-joined oo rows by their parts)
     recflag = 0
     for ln in open(os.path.join(HERE, 'rec.tsv'), encoding='utf-8'):

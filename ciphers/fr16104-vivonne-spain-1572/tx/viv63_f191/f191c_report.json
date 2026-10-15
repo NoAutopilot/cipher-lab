@@ -1,0 +1,1544 @@
+{
+ "drift_E": {
+  "pass": 15,
+  "of": 15,
+  "rows": [
+   [
+    "L22",
+    0.685,
+    0.224,
+    true
+   ],
+   [
+    "L23",
+    0.654,
+    0.274,
+    true
+   ],
+   [
+    "L24",
+    0.816,
+    0.22,
+    true
+   ],
+   [
+    "L25",
+    0.808,
+    0.305,
+    true
+   ],
+   [
+    "L26",
+    0.76,
+    0.245,
+    true
+   ],
+   [
+    "L27",
+    0.661,
+    0.25,
+    true
+   ],
+   [
+    "L28",
+    0.721,
+    0.309,
+    true
+   ],
+   [
+    "L29",
+    0.857,
+    0.349,
+    true
+   ],
+   [
+    "L30",
+    0.684,
+    0.267,
+    true
+   ],
+   [
+    "L31",
+    0.804,
+    0.339,
+    true
+   ],
+   [
+    "L32",
+    0.83,
+    0.333,
+    true
+   ],
+   [
+    "L33",
+    0.679,
+    0.344,
+    true
+   ],
+   [
+    "L34",
+    0.774,
+    0.339,
+    true
+   ],
+   [
+    "L35",
+    0.702,
+    0.299,
+    true
+   ],
+   [
+    "L36",
+    0.904,
+    0.281,
+    true
+   ]
+  ]
+ },
+ "drift_C": {
+  "pass": 15,
+  "of": 15,
+  "rows": [
+   [
+    "L22",
+    0.824,
+    0.238,
+    true
+   ],
+   [
+    "L23",
+    0.816,
+    0.279,
+    true
+   ],
+   [
+    "L24",
+    0.82,
+    0.22,
+    true
+   ],
+   [
+    "L25",
+    0.846,
+    0.305,
+    true
+   ],
+   [
+    "L26",
+    0.875,
+    0.267,
+    true
+   ],
+   [
+    "L27",
+    0.755,
+    0.273,
+    true
+   ],
+   [
+    "L28",
+    0.863,
+    0.328,
+    true
+   ],
+   [
+    "L29",
+    0.878,
+    0.328,
+    true
+   ],
+   [
+    "L30",
+    0.872,
+    0.276,
+    true
+   ],
+   [
+    "L31",
+    0.904,
+    0.328,
+    true
+   ],
+   [
+    "L32",
+    0.833,
+    0.328,
+    true
+   ],
+   [
+    "L33",
+    0.75,
+    0.339,
+    true
+   ],
+   [
+    "L34",
+    0.827,
+    0.35,
+    true
+   ],
+   [
+    "L35",
+    0.684,
+    0.288,
+    true
+   ],
+   [
+    "L36",
+    0.863,
+    0.277,
+    true
+   ]
+  ]
+ },
+ "drift_D": {
+  "pass": 6,
+  "of": 15,
+  "rows": [
+   [
+    "L22",
+    0.458,
+    0.196,
+    true
+   ],
+   [
+    "L23",
+    0.24,
+    0.531,
+    false
+   ],
+   [
+    "L24",
+    0.184,
+    0.413,
+    false
+   ],
+   [
+    "L25",
+    0.407,
+    0.283,
+    true
+   ],
+   [
+    "L26",
+    0.234,
+    0.51,
+    false
+   ],
+   [
+    "L27",
+    0.22,
+    0.522,
+    false
+   ],
+   [
+    "L28",
+    0.224,
+    0.196,
+    true
+   ],
+   [
+    "L29",
+    0.229,
+    0.283,
+    false
+   ],
+   [
+    "L30",
+    0.277,
+    0.271,
+    true
+   ],
+   [
+    "L31",
+    0.229,
+    0.255,
+    false
+   ],
+   [
+    "L32",
+    0.264,
+    0.22,
+    true
+   ],
+   [
+    "L33",
+    0.157,
+    0.25,
+    false
+   ],
+   [
+    "L34",
+    0.269,
+    0.226,
+    true
+   ],
+   [
+    "L35",
+    0.204,
+    0.226,
+    false
+   ],
+   [
+    "L36",
+    0.235,
+    0.241,
+    false
+   ]
+  ]
+ },
+ "err_2reader_lines": {
+  "L22": {
+   "EA": 0.315,
+   "EB": 0.382,
+   "EC": 0.273,
+   "AB": 0.102,
+   "AC": 0.176,
+   "BC": 0.118
+  },
+  "L23": {
+   "EA": 0.346,
+   "EB": 0.346,
+   "EC": 0.327,
+   "AB": 0.128,
+   "AC": 0.184,
+   "BC": 0.082
+  },
+  "L24": {
+   "EA": 0.184,
+   "EB": 0.176,
+   "EC": 0.157,
+   "AB": 0.16,
+   "AC": 0.18,
+   "BC": 0.08
+  },
+  "L25": {
+   "EA": 0.192,
+   "EB": 0.077,
+   "EC": 0.059,
+   "AB": 0.17,
+   "AC": 0.154,
+   "BC": 0.058
+  },
+  "L26": {
+   "EA": 0.24,
+   "EB": 0.286,
+   "EC": 0.224,
+   "AB": 0.2,
+   "AC": 0.125,
+   "BC": 0.125
+  },
+  "L27": {
+   "EA": 0.339,
+   "EB": 0.298,
+   "EC": 0.351,
+   "AB": 0.226,
+   "AC": 0.245,
+   "BC": 0.115
+  },
+  "L28": {
+   "EA": 0.279,
+   "EB": 0.365,
+   "EC": 0.312,
+   "AB": 0.18,
+   "AC": 0.137,
+   "BC": 0.137
+  },
+  "L29": {
+   "EA": 0.143,
+   "EB": 0.146,
+   "EC": 0.122,
+   "AB": 0.143,
+   "AC": 0.122,
+   "BC": 0.061
+  },
+  "L30": {
+   "EA": 0.316,
+   "EB": 0.31,
+   "EC": 0.362,
+   "AB": 0.128,
+   "AC": 0.128,
+   "BC": 0.208
+  },
+  "L31": {
+   "EA": 0.196,
+   "EB": 0.226,
+   "EC": 0.222,
+   "AB": 0.143,
+   "AC": 0.096,
+   "BC": 0.135
+  },
+  "L32": {
+   "EA": 0.17,
+   "EB": 0.2,
+   "EC": 0.211,
+   "AB": 0.115,
+   "AC": 0.167,
+   "BC": 0.113
+  },
+  "L33": {
+   "EA": 0.321,
+   "EB": 0.222,
+   "EC": 0.241,
+   "AB": 0.269,
+   "AC": 0.25,
+   "BC": 0.16
+  },
+  "L34": {
+   "EA": 0.226,
+   "EB": 0.204,
+   "EC": 0.278,
+   "AB": 0.135,
+   "AC": 0.173,
+   "BC": 0.078
+  },
+  "L35": {
+   "EA": 0.298,
+   "EB": 0.241,
+   "EC": 0.3,
+   "AB": 0.264,
+   "AC": 0.316,
+   "BC": 0.182
+  },
+  "L36": {
+   "EA": 0.096,
+   "EB": 0.173,
+   "EC": 0.115,
+   "AB": 0.157,
+   "AC": 0.137,
+   "BC": 0.078
+  }
+ },
+ "err_2reader_pooled": {
+  "EA": 0.247,
+  "EB": 0.247,
+  "EC": 0.241,
+  "AB": 0.169,
+  "AC": 0.174,
+  "BC": 0.115
+ },
+ "fourth_vote": {
+  "flagged_columns": 123,
+  "rec_tsv_flagged_rows": 123,
+  "E": {
+   "dash": 18,
+   "agrees-minority": 33,
+   "other-sign": 23,
+   "agrees-plurality": 49
+  },
+  "ABCE_vote": {
+   "still-flagged": 64,
+   "settled-different": 7,
+   "settled-same": 52
+  },
+  "detail": [
+   [
+    "L22",
+    "tie",
+    "- V V - -",
+    "V",
+    "dash",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L22",
+    "plural",
+    "h k k - h",
+    "k",
+    "agrees-minority",
+    "h",
+    "still-flagged"
+   ],
+   [
+    "L22",
+    "plural",
+    "y V V - y",
+    "V",
+    "agrees-minority",
+    "y",
+    "settled-different"
+   ],
+   [
+    "L22",
+    "plural",
+    "z z 3 - 3",
+    "z",
+    "agrees-minority",
+    "3",
+    "settled-different"
+   ],
+   [
+    "L22",
+    "plural",
+    "z z 3 - 3",
+    "z",
+    "agrees-minority",
+    "3",
+    "settled-different"
+   ],
+   [
+    "L23",
+    "plural",
+    "b V b - y",
+    "b",
+    "other-sign",
+    "b",
+    "still-flagged"
+   ],
+   [
+    "L23",
+    "plural",
+    "h k k - h",
+    "k",
+    "agrees-minority",
+    "h",
+    "still-flagged"
+   ],
+   [
+    "L23",
+    "plural",
+    "e c c - i",
+    "c",
+    "other-sign",
+    "c",
+    "still-flagged"
+   ],
+   [
+    "L23",
+    "tie",
+    "- V V - -",
+    "V",
+    "dash",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L23",
+    "plural",
+    "z z 3 - 3",
+    "z",
+    "agrees-minority",
+    "3",
+    "settled-different"
+   ],
+   [
+    "L23",
+    "plural",
+    "2 z z - 3",
+    "z",
+    "other-sign",
+    "z",
+    "still-flagged"
+   ],
+   [
+    "L23",
+    "plural",
+    "h h k - h",
+    "h",
+    "agrees-plurality",
+    "h",
+    "settled-same"
+   ],
+   [
+    "L23",
+    "plural",
+    "e c c a c",
+    "c",
+    "agrees-plurality",
+    "c",
+    "settled-same"
+   ],
+   [
+    "L24",
+    "plural",
+    "s S s - s",
+    "s",
+    "agrees-plurality",
+    "s",
+    "settled-same"
+   ],
+   [
+    "L24",
+    "plural",
+    "5 5 z - z",
+    "5",
+    "agrees-minority",
+    "z",
+    "still-flagged"
+   ],
+   [
+    "L24",
+    "plural",
+    "e c c r c",
+    "c",
+    "agrees-plurality",
+    "c",
+    "settled-same"
+   ],
+   [
+    "L24",
+    "tie",
+    "- V V - -",
+    "V",
+    "dash",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L24",
+    "plural",
+    "S s s - s",
+    "s",
+    "agrees-plurality",
+    "s",
+    "settled-same"
+   ],
+   [
+    "L25",
+    "tieA",
+    "L L - - -",
+    "L",
+    "dash",
+    "L",
+    "still-flagged"
+   ],
+   [
+    "L25",
+    "plural",
+    "z - z Z z",
+    "z",
+    "agrees-plurality",
+    "z",
+    "settled-same"
+   ],
+   [
+    "L25",
+    "tieA",
+    "S 8 s - 8",
+    "S",
+    "agrees-minority",
+    "8",
+    "still-flagged"
+   ],
+   [
+    "L25",
+    "plural",
+    "e c c - c",
+    "c",
+    "agrees-plurality",
+    "c",
+    "settled-same"
+   ],
+   [
+    "L25",
+    "plural",
+    "e c c - c",
+    "c",
+    "agrees-plurality",
+    "c",
+    "settled-same"
+   ],
+   [
+    "L26",
+    "tieA",
+    "x x - - r",
+    "x",
+    "other-sign",
+    "x",
+    "still-flagged"
+   ],
+   [
+    "L26",
+    "plural",
+    "3 z 3 p 3",
+    "3",
+    "agrees-plurality",
+    "3",
+    "settled-same"
+   ],
+   [
+    "L26",
+    "plural",
+    "e c c 7 c",
+    "c",
+    "agrees-plurality",
+    "c",
+    "settled-same"
+   ],
+   [
+    "L26",
+    "tie",
+    "- c c - {curl}",
+    "c",
+    "other-sign",
+    "c",
+    "still-flagged"
+   ],
+   [
+    "L26",
+    "plural",
+    "x x - s -",
+    "x",
+    "dash",
+    "x",
+    "still-flagged"
+   ],
+   [
+    "L26",
+    "plural",
+    "r - r o r",
+    "r",
+    "agrees-plurality",
+    "r",
+    "settled-same"
+   ],
+   [
+    "L26",
+    "plural",
+    "2 z 2 p 2",
+    "2",
+    "agrees-plurality",
+    "2",
+    "settled-same"
+   ],
+   [
+    "L26",
+    "tie",
+    "- V V - -",
+    "V",
+    "dash",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L26",
+    "plural",
+    "3 z 3 - 3",
+    "3",
+    "agrees-plurality",
+    "3",
+    "settled-same"
+   ],
+   [
+    "L27",
+    "plural",
+    "J J Z - J",
+    "J",
+    "agrees-plurality",
+    "J",
+    "settled-same"
+   ],
+   [
+    "L27",
+    "tie",
+    "- V V - -",
+    "V",
+    "dash",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L27",
+    "plural",
+    "e c c z {quote}",
+    "c",
+    "other-sign",
+    "c",
+    "still-flagged"
+   ],
+   [
+    "L27",
+    "plural",
+    "g s s m S",
+    "s",
+    "other-sign",
+    "s",
+    "still-flagged"
+   ],
+   [
+    "L27",
+    "plural",
+    "z z 3 - 3",
+    "z",
+    "agrees-minority",
+    "3",
+    "settled-different"
+   ],
+   [
+    "L27",
+    "plural",
+    "k h k - h",
+    "k",
+    "agrees-minority",
+    "k",
+    "still-flagged"
+   ],
+   [
+    "L27",
+    "plural",
+    "k h k - h",
+    "k",
+    "agrees-minority",
+    "k",
+    "still-flagged"
+   ],
+   [
+    "L27",
+    "tieA",
+    "2 7 4 - 2",
+    "2",
+    "agrees-plurality",
+    "2",
+    "still-flagged"
+   ],
+   [
+    "L27",
+    "plural",
+    "5 s s - S",
+    "s",
+    "other-sign",
+    "s",
+    "still-flagged"
+   ],
+   [
+    "L27",
+    "plural",
+    "e c c - c",
+    "c",
+    "agrees-plurality",
+    "c",
+    "settled-same"
+   ],
+   [
+    "L27",
+    "tie",
+    "- V V - -",
+    "V",
+    "dash",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L27",
+    "plural",
+    "z z 3 6 z",
+    "z",
+    "agrees-plurality",
+    "z",
+    "settled-same"
+   ],
+   [
+    "L27",
+    "tie",
+    "- @ @ - {curl}",
+    "@",
+    "other-sign",
+    "@",
+    "still-flagged"
+   ],
+   [
+    "L28",
+    "tieA",
+    "J j 7 - J",
+    "J",
+    "agrees-plurality",
+    "J",
+    "still-flagged"
+   ],
+   [
+    "L28",
+    "plural",
+    "e V V - a",
+    "V",
+    "other-sign",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L28",
+    "tie",
+    "- V V - -",
+    "V",
+    "dash",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L28",
+    "plural",
+    "e c c - g",
+    "c",
+    "other-sign",
+    "c",
+    "still-flagged"
+   ],
+   [
+    "L28",
+    "tieA",
+    "r 1 i - r",
+    "r",
+    "agrees-plurality",
+    "r",
+    "still-flagged"
+   ],
+   [
+    "L28",
+    "plural",
+    "Z z Z n Z",
+    "Z",
+    "agrees-plurality",
+    "Z",
+    "settled-same"
+   ],
+   [
+    "L28",
+    "plural",
+    "S s S a S",
+    "S",
+    "agrees-plurality",
+    "S",
+    "settled-same"
+   ],
+   [
+    "L29",
+    "plural",
+    "o : : J :",
+    ":",
+    "agrees-plurality",
+    ":",
+    "settled-same"
+   ],
+   [
+    "L29",
+    "tie",
+    "- c c - a",
+    "c",
+    "other-sign",
+    "c",
+    "still-flagged"
+   ],
+   [
+    "L29",
+    "plural",
+    "e V V - y",
+    "V",
+    "other-sign",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L29",
+    "plural",
+    "S s s c S",
+    "s",
+    "agrees-minority",
+    "s",
+    "settled-same"
+   ],
+   [
+    "L29",
+    "plural",
+    "Z z Z tz Z",
+    "Z",
+    "agrees-plurality",
+    "Z",
+    "settled-same"
+   ],
+   [
+    "L30",
+    "plural",
+    "y y V - y",
+    "y",
+    "agrees-plurality",
+    "y",
+    "settled-same"
+   ],
+   [
+    "L30",
+    "plural",
+    "n R n - R",
+    "n",
+    "agrees-minority",
+    "R",
+    "settled-different"
+   ],
+   [
+    "L30",
+    "plural",
+    "z z 3 - z",
+    "z",
+    "agrees-plurality",
+    "z",
+    "settled-same"
+   ],
+   [
+    "L30",
+    "plural",
+    "z z 3 g z",
+    "z",
+    "agrees-plurality",
+    "z",
+    "settled-same"
+   ],
+   [
+    "L30",
+    "plural",
+    "n r n - n",
+    "n",
+    "agrees-plurality",
+    "n",
+    "settled-same"
+   ],
+   [
+    "L30",
+    "plural",
+    "g g S - S",
+    "g",
+    "agrees-minority",
+    "S",
+    "still-flagged"
+   ],
+   [
+    "L30",
+    "plural",
+    "Z z Z - z",
+    "Z",
+    "agrees-minority",
+    "Z",
+    "still-flagged"
+   ],
+   [
+    "L30",
+    "plural",
+    "P 4 4 o +",
+    "4",
+    "other-sign",
+    "4",
+    "still-flagged"
+   ],
+   [
+    "L31",
+    "plural",
+    "3 z 3 - z",
+    "3",
+    "agrees-minority",
+    "3",
+    "settled-same"
+   ],
+   [
+    "L31",
+    "plural",
+    "y V y - o",
+    "y",
+    "other-sign",
+    "y",
+    "still-flagged"
+   ],
+   [
+    "L31",
+    "plural",
+    "s S s - s",
+    "s",
+    "agrees-plurality",
+    "s",
+    "settled-same"
+   ],
+   [
+    "L31",
+    "plural",
+    "3 z 3 - z",
+    "3",
+    "agrees-minority",
+    "3",
+    "settled-same"
+   ],
+   [
+    "L31",
+    "plural",
+    "- V V a -",
+    "V",
+    "dash",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L31",
+    "tie",
+    "- V V - -",
+    "V",
+    "dash",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L32",
+    "plural",
+    "e c c - c",
+    "c",
+    "agrees-plurality",
+    "c",
+    "settled-same"
+   ],
+   [
+    "L32",
+    "plural",
+    "z z 3 d 3",
+    "z",
+    "agrees-minority",
+    "3",
+    "settled-different"
+   ],
+   [
+    "L32",
+    "plural",
+    "y V y Z y",
+    "y",
+    "agrees-plurality",
+    "y",
+    "settled-same"
+   ],
+   [
+    "L32",
+    "plural",
+    "x z 3 3 z",
+    "3",
+    "agrees-minority",
+    "z",
+    "still-flagged"
+   ],
+   [
+    "L32",
+    "tie",
+    "- V V - -",
+    "V",
+    "dash",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L32",
+    "plural",
+    "to to p - tz",
+    "to",
+    "other-sign",
+    "to",
+    "still-flagged"
+   ],
+   [
+    "L33",
+    "plural",
+    "7 y 7 - 7",
+    "7",
+    "agrees-plurality",
+    "7",
+    "settled-same"
+   ],
+   [
+    "L33",
+    "plural",
+    "e @ @ - @",
+    "@",
+    "agrees-plurality",
+    "@",
+    "settled-same"
+   ],
+   [
+    "L33",
+    "plural",
+    "x x r - 2",
+    "x",
+    "other-sign",
+    "x",
+    "still-flagged"
+   ],
+   [
+    "L33",
+    "plural",
+    "S s s - s",
+    "s",
+    "agrees-plurality",
+    "s",
+    "settled-same"
+   ],
+   [
+    "L33",
+    "tieA",
+    "d - d - o",
+    "d",
+    "other-sign",
+    "d",
+    "still-flagged"
+   ],
+   [
+    "L33",
+    "plural",
+    "P p p - p",
+    "p",
+    "agrees-plurality",
+    "p",
+    "settled-same"
+   ],
+   [
+    "L33",
+    "tieA",
+    "2 z 3 - z",
+    "2",
+    "agrees-minority",
+    "z",
+    "still-flagged"
+   ],
+   [
+    "L33",
+    "plural",
+    "e c c - c",
+    "c",
+    "agrees-plurality",
+    "c",
+    "settled-same"
+   ],
+   [
+    "L33",
+    "tie",
+    "- V V - -",
+    "V",
+    "dash",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L33",
+    "plural",
+    "2 8 2 - 8",
+    "2",
+    "agrees-minority",
+    "2",
+    "still-flagged"
+   ],
+   [
+    "L33",
+    "tie",
+    "- V V - -",
+    "V",
+    "dash",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L33",
+    "tieA",
+    "o - - o o",
+    "o",
+    "agrees-plurality",
+    "o",
+    "still-flagged"
+   ],
+   [
+    "L33",
+    "plural",
+    "S s s - s",
+    "s",
+    "agrees-plurality",
+    "s",
+    "settled-same"
+   ],
+   [
+    "L33",
+    "plural",
+    "o o b p b",
+    "o",
+    "agrees-minority",
+    "b",
+    "still-flagged"
+   ],
+   [
+    "L33",
+    "plural",
+    "r r n x R",
+    "r",
+    "other-sign",
+    "r",
+    "still-flagged"
+   ],
+   [
+    "L33",
+    "plural",
+    "g s g n s",
+    "g",
+    "agrees-minority",
+    "g",
+    "still-flagged"
+   ],
+   [
+    "L34",
+    "plural",
+    "y y g m y",
+    "y",
+    "agrees-plurality",
+    "y",
+    "settled-same"
+   ],
+   [
+    "L34",
+    "tie",
+    "- c c - -",
+    "c",
+    "dash",
+    "c",
+    "still-flagged"
+   ],
+   [
+    "L34",
+    "plural",
+    "e V V - a",
+    "V",
+    "other-sign",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L34",
+    "plural",
+    "S s s x s",
+    "s",
+    "agrees-plurality",
+    "s",
+    "settled-same"
+   ],
+   [
+    "L34",
+    "plural",
+    "z z 3 tz z",
+    "z",
+    "agrees-plurality",
+    "z",
+    "settled-same"
+   ],
+   [
+    "L34",
+    "plural",
+    "3 z 3 - z",
+    "3",
+    "agrees-minority",
+    "3",
+    "settled-same"
+   ],
+   [
+    "L34",
+    "tie",
+    "- V V - -",
+    "V",
+    "dash",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L34",
+    "plural",
+    "e c c - -",
+    "c",
+    "dash",
+    "c",
+    "still-flagged"
+   ],
+   [
+    "L35",
+    "plural",
+    "S s s - s",
+    "s",
+    "agrees-plurality",
+    "s",
+    "settled-same"
+   ],
+   [
+    "L35",
+    "plural",
+    "P p p - p",
+    "p",
+    "agrees-plurality",
+    "p",
+    "settled-same"
+   ],
+   [
+    "L35",
+    "tie",
+    "- c c - -",
+    "c",
+    "dash",
+    "c",
+    "still-flagged"
+   ],
+   [
+    "L35",
+    "plural",
+    "e V V - a",
+    "V",
+    "other-sign",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L35",
+    "tieA",
+    "S s 3 V s",
+    "S",
+    "agrees-minority",
+    "s",
+    "still-flagged"
+   ],
+   [
+    "L35",
+    "plural",
+    "z z 7 s z",
+    "z",
+    "agrees-plurality",
+    "z",
+    "settled-same"
+   ],
+   [
+    "L35",
+    "tieA",
+    "g - g - g",
+    "g",
+    "agrees-plurality",
+    "g",
+    "settled-same"
+   ],
+   [
+    "L35",
+    "plural",
+    "e c c - m",
+    "c",
+    "other-sign",
+    "c",
+    "still-flagged"
+   ],
+   [
+    "L35",
+    "plural",
+    "6 b 6 tz b",
+    "6",
+    "agrees-minority",
+    "6",
+    "still-flagged"
+   ],
+   [
+    "L35",
+    "plural",
+    "S s s - s",
+    "s",
+    "agrees-plurality",
+    "s",
+    "settled-same"
+   ],
+   [
+    "L35",
+    "plural",
+    "S s 3 3 s",
+    "3",
+    "agrees-minority",
+    "s",
+    "still-flagged"
+   ],
+   [
+    "L35",
+    "plural",
+    "y y g tz y",
+    "y",
+    "agrees-plurality",
+    "y",
+    "settled-same"
+   ],
+   [
+    "L35",
+    "tieA",
+    "2 z 3 d z",
+    "2",
+    "agrees-minority",
+    "z",
+    "still-flagged"
+   ],
+   [
+    "L35",
+    "plural",
+    "b 6 6 o b",
+    "6",
+    "agrees-minority",
+    "b",
+    "still-flagged"
+   ],
+   [
+    "L36",
+    "plural",
+    "e c c : u",
+    "c",
+    "other-sign",
+    "c",
+    "still-flagged"
+   ],
+   [
+    "L36",
+    "plural",
+    "S s s d s",
+    "s",
+    "agrees-plurality",
+    "s",
+    "settled-same"
+   ],
+   [
+    "L36",
+    "plural",
+    "3 z 3 o 3",
+    "3",
+    "agrees-plurality",
+    "3",
+    "settled-same"
+   ],
+   [
+    "L36",
+    "plural",
+    "S s s tz S",
+    "s",
+    "agrees-minority",
+    "s",
+    "settled-same"
+   ],
+   [
+    "L36",
+    "plural",
+    "S s s - S",
+    "s",
+    "agrees-minority",
+    "s",
+    "settled-same"
+   ],
+   [
+    "L36",
+    "plural",
+    "v v V - V",
+    "v",
+    "agrees-minority",
+    "V",
+    "still-flagged"
+   ],
+   [
+    "L36",
+    "plural",
+    "S s s - S",
+    "s",
+    "agrees-minority",
+    "s",
+    "settled-same"
+   ],
+   [
+    "L36",
+    "tieA",
+    "3 - 3 - 3",
+    "3",
+    "agrees-plurality",
+    "3",
+    "settled-same"
+   ]
+  ]
+ }
+}
