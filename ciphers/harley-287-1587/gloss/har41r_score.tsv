@@ -1,0 +1,18 @@
+kind	item	read	value	note
+control	f39v_word1	L 7 J C. O U.	L 7 J C. O U.	6/6
+control	f39v_word5	7 O. O: O D.	7 O. O: O D.	5/5
+control	f39v_word8	F J D. J: O C. O C	F J D J:? O C. O C	7/8
+control	total			18/19 PASS
+decode	R1_p1	U: U: J: O 7. O. O? C O D. F J.? O: 7 J: O. 7 O. O. F O.? F O. 7. J C O: N	uuteroedesfkyhtohoofoforadyg	
+decode	R1_p2	O. O. C D U: L L O D. J C. J: 7 D D? L J U: D. O {clear} {clear}	oodiuccesanthiicause	
+decode	R2_p1	{clear} L: O. 7. U. C O | C O. U:? 7 F. U. J D C. U. O: {clear}	worlde douhplainly	
+decode	R2_p2	{clear} {clear} O J 7. U. O. F U | D. O J.? O J: 7 O. C. U. O: J: O. D. O 7.? U: O	earlofb sekethonlytoserue	
+decode	R3_p1	{clear} D D. J: U: 7. C. O O. F J U. U. L. O C | {clear}	isturneofallmed	
+decode	R3_p2	{clear} 7 O D. F. O L J: J: O. J:? C O: | {clear}	hespecttotdy	
+decode	R4_p1	{clear}		
+decode	R4_p2	{clear} J: F.? J F F D L J. | L: D J: 7 L. O: | U. J? 7.? D? {clear}	tpaffick withmy lari	
+margin	normalised		uterlie dispaire to hope for ani god sucese in this action for that the worlde doth plainelie se that the erle of leicester seketh onli to serue his turne of al men wth owt ani harti respect to ani	159 letters
+stat	S1	0.444	null p95 0.248; frac>= 0.000	
+stat	S2	0.091	null p95 0.000; frac>= 0.000	
+stat	signs	134	unsure 12	
+stat	outcome	B		

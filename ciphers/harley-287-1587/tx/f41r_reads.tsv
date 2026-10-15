@@ -1,0 +1,10 @@
+# HAR-41R 15 Oct 2026: f.41r (R8480 P1, sha1 0f4896606b21) blind Opus readers, one call per run; boxes in f41r_runs.tsv
+run	part	tokens	note
+R1	1	U: U: J: O 7. O. O? C O D. F J.? O: 7 J: O. 7 O. O. F O.? F O. 7. J C O: N	pos 7 blotted box (alt O:/O.); pos 12 dot between F and J (alt F. + J); pos 21 dot between F and O (alt F. + O); pos 5 top joins a cursive loop
+R1	2	O. O. C D U: L L O D. J C. J: 7 D D? L J U: D. O {clear} {clear}	pos 15 a pen stroke through the left side (alt O.); cursive at end read "for" and "egal" by the reader
+R2	1	{clear} L: O. 7. U. C O | C O. U:? 7 F. U. J D C. U. O: {clear}	sign 9 U:? in a smudge, alt J: or U; sign 1 dot at inner corner read as inside
+R2	2	{clear} {clear} O J 7. U. O. F U | D. O J.? O J: 7 O. C. U. O: J: O. D. O 7.? U: O	sign 10 dot between O and J (alt O. + J); sign 22 dot between O and 7 (alt O. + 7)
+R3	1	{clear} D D. J: U: 7. C. O O. F J U. U. L. O C | {clear}	none
+R3	2	{clear} 7 O D. F. O L J: J: O. J:? C O: | {clear}	sign 10 faint dot inside (alt J); dot after sign 12 taken as punctuation
+R4	1	{clear}	all cursive
+R4	2	{clear} J: F.? J F F D L J. | L: D J: 7 L. O: | U. J? 7.? D? {clear}	sign 2 dot may be J:s (alt F); 16 alt U; 17 dot between J and 7 (alt J. or 7); 18 dot right of D probably a full stop (alt D.); word gaps uncertain

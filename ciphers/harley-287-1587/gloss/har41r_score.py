@@ -34,8 +34,10 @@ def nl(s):
 
 def norm_text(s):
     s = s.lower()
+    s = re.sub(r'\[\?([^\]]*)\]', r'\1', s)     # an uncertain word is kept as read
     s = re.sub(r'\[[^\]]*\]', ' ', s)
-    for a, b in [(r'\by[tᵗ]\b', 'that'), (r'\bye\b', 'the'), (r'&', ' and '), (r'\blo\.', 'lord'), (r'\bl\.', 'lord')]:
+    s = s.replace('^', '')                        # superscripts read as written (y^t -> yt, w^th -> wth)
+    for a, b in [(r'\byt\b', 'that'), (r'\bye\b', 'the'), (r'&', ' and '), (r'\blo\.', 'lord'), (r'\bl\.', 'lord')]:
         s = re.sub(a, b, s)
     words = [nl(re.sub(r'[^a-z]', '', w)) for w in s.split()]
     return [w for w in words if w]
