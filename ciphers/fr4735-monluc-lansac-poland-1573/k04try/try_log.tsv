@@ -1,0 +1,5 @@
+time	target	hypothesis	occurrences	statistic	null_pos_p95	null_val_p95	verdict	flag
+2026-10-15 12:48	scratch/R0	K04=n	56	406.1		164.1	undecided	non-blind
+2026-10-15 12:48	scratch/T	K04N=n	15	237.6	72.5	101.7	accept	non-blind
+2026-10-15 12:48	scratch/NC	K04D=n	15	-57.5	188.5	-63.2	reject	non-blind
+2026-10-15 12:48	scratch/PC	K12X=n	15	224.7	133.8	131.6	accept	non-blind

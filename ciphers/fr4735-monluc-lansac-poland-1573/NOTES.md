@@ -1551,3 +1551,51 @@ Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines
 - [x] image-check: c268 L21-L25 native crops cut and reconciled by eye (MONL-L21); L16-L20 and L11-L15 likewise (MONL-L16, MONL-L11)
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 8 internal gaps; cheapest next: the K04-for-n --try on the 15 with its power control (~$1.5), then the K40/K45 value-blind sort (~$1), then c268 L26-L30 (~$3.5)
+
+## MONL-K04TRY: K04-for-n --try on the 15 with negative and power controls (15 Oct 2026, account 4, Opus, for LANE DEFAULT-A4-1236-15; job MONL-K04)
+
+Brief: .claude/briefs/runs/2026-10-15-acct4-default-1236-jobs.md, MONL-K04 (MONL-L21's Verdict). Disk only: no host requests, no subagents.
+**Pre-registration:** k04try/PREREG-MONL-K04TRY.md pushed in d15cebaf1 before any run. Prior work: `python3 tools/prior_work.py fr4735-monluc-lansac-poland-1573 --item-spec 'shelfmark=BnF fr.4735;folio=138;sender=Monluc;recipient=Charles IX' --step-type key --offline` (exit 4 on the folder's own two LEADs, as MONL-L21; plaintext CLEAR on the cached sources).
+**Runs (pasted):** `python3 k04try/run_k04try.py <scratch>` builds scratch copies of the folder (key.tsv here never written), relabels the chosen
+positions to a pseudo-code in the scratch ciphertext_c268.tsv and runs `tools/decode_key.py <scratch> --try HYP --try-log <scratch>/try_log.tsv`
+(fr16, window 8, nulls 100); outputs k04try/try_log.tsv, k04try/runs.txt, k04try/per_occurrence.tsv (n=1 runs, statistic only).
+| run | what | n | statistic (bits over d) | null pos p95 | null value p95 | verdict | occurrences > 0 | lose > 3 bits |
+|---|---|---|---|---|---|---|---|---|
+| R0 | K04=n code-wide (both jobs, as briefed) | 56 | +406.1 | (not built) | 164.1 | **undecided** | | |
+| **T** | the 15 n-facing K04 as pseudo-code (= d), try n | 15 | **+237.6** | 72.5 | 101.7 | **accept** | 13/15 | 1 (L18:18 -3.3) |
+| NC | 15 of the 19 d-facing K04 (Random(415)), try n | 15 | -57.5 | 188.5 | -63.2 | reject (control passes) | 3/15 | 8 |
+| PC | 15 of the 27 n-facing K12, key set wrong to d, try n | 15 | +224.7 | 133.8 | 131.6 | accept (power at n=15) | 13/15 | 2 |
+Registered decision (PC accept, NC not accept, T accept): **lead: the window context alone reads n at the 15 n-facing K04**, as strongly as it
+recovers a known n (T +237.6 vs PC +224.7), while the same selection on d-facing K04 reads d (NC -57.5). This agrees with MONL-K04/MONL-CTL's
+value-blind sorts (6 of these tokens already relabelled K04 -> K12 by shape): the n-facing K04 look like transcription merges of K12, not a
+second value of K04. **No key edit and no relabel** (PREREG): R0, the only run that could license a code value, is undecided (its positional
+null could not be built), and T is non-blind in selection (chosen by the clear text). The two weakest, L13:14 (-2.5) and L18:18 (-3.3), and
+the near-zero L08:19 (+3.5) and L21:9 (+3.2), are the ones to look at first in a sort.
+Rule 7: nothing in the reading changed; `python3 ../../tools/decode_key.py . --check` "reading up to date".
+**K40/K45 value-blind sort: not run.** The L21-L25 crops (images/scratch268e) are not on this container's disk; regenerating them takes one
+openapi.bnf.fr request (`sh regen_monll21.sh`), outside this job's "disk only", and the sort with its PREREG, tiles and reconciliation would
+not fit the cap left after start-up and the --try. Box 12:45-12:5x UTC 15 Oct by date -u. Requests: none. Subagents: none. Own looks: none.
+Cost not visible to this session.
+
+## Remaining gaps (MONL-K04TRY, 15 Oct 2026)
+Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines 1-25 (857 tokens) C 426 / M 396 / U 35 against the ff.140r-141r clear text (align confirm 550/814 = 0.676 vs shuffled-clear max 0.403; L21-L25 alone 98/157 = 0.624 vs max 0.471).
+- K04-for-n (15 over L01-L25) - blocker: not-attempted; --try on the 15 accepts n by context (+237.6, power control +224.7 accept, d-facing control -57.5 reject; MONL-K04TRY), a lead for relabel, not a key value; next: a value-blind K04|K12 sort of the 15 with in-band d-facing K04 and n-facing K12 references (MONL-CTL's design; L13:14, L18:18, L08:19, L21:9 first), needs `sh regen_monll16.sh`, `regen_monll11.sh`, `regen_monll21.sh` (openapi.bnf.fr 3 requests), ~$1.5
+- K14/K34-for-s (6 in L21-L25), K62-for-m (3 in L21-L25) - blocker: not-attempted; logged by MONL-L21; next: the same pseudo-code --try with its controls (k04try/run_k04try.py, disk only), ~$0.5 each
+- K40 facing z (L24:29, L25:16) and t (L22:6), K45 facing o/u (L24:3, L24:16) - blocker: not-attempted; crops not on disk (MONL-K04TRY); next: `sh regen_monll21.sh` (openapi.bnf.fr 1 request) then one value-blind sort of these 5 tiles against in-band K40/K41/K39/K45 references (MONL-CTL's design), ~$1.5
+- rest of c268 (L26 to the end) and c264 against the ff.140r-141r clear text - blocker: not-attempted; next: two blind cipher passes of c268 L26-L30 plus reconciliation (band 7 of regen_monll21.sh's crop is L26; move the region down ~550 px), then align_c268.py, ~$3.5 per 5 lines; the clear span reached f.140r L23, so f.140r L24 on and f.140v must be clean first
+- the code words W:Cur, W:apuril, W:Juillet, W:Sepbre, W:Astuing ("nnemais"), W:Juno, W:Mare ("nous") and the ?x[epsilon] / ?double_slash / ?h_bar fills - blocker: not-attempted; found by MONL-L16 and MONL-L21; next: a name-code pass with tools/name_candidates.py on the clear contexts once the clear text of f.140r L16-L23 is re-read, ~$1
+- the "adhuc" group (L11:6-10) - blocker: not-attempted; no second occurrence in L16-L25; next: watch for it when c268 L26 on is transcribed (rides that band, ~$0)
+- a clean clear text of ff.140r-141r away from L06-L10 - blocker: not-attempted; f.140r L11-L23 are rough A/B picks with [?] words; next: an eye reconciliation of f.140r L11-L26 and L01-L07 against the line crops, ~$1 per page
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py); the c268 alignment supplies known plaintext instead
+- print check of the clear letter in Google Books (13 of the 14 phrases.txt lines) and the editions by identifier - blocker: not-attempted; Google Books 13 of 14 unsearched (503, MONL-PC, MONL-PC2); next: `tools/print_check.py ... --only gbooks` when googleapis answers, ~$1
+- ff.211-223, f.87 margin, ff.50/56/60/80, items 17/18/112-120 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+
+## Escalation (MONL-K04TRY, 15 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [x] clear-pages: ff.140r-141r transcribed and shown to be the clear text of c268 L01-L25 (MONL-ALIGN, MONL-C268B, MONL-L11, MONL-L16, MONL-L21)
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell and checked against known plaintext on c268 L01-L25
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2; the clear letter phrase-searched in IA full text and OpenAlex, no hits (MONL-PC); Google Books for it pending (gap above)
+- [x] key-rebuild: --try rejects K12=d and K34=y (MONL-K12); blind sorts L01-L20 (MONL-SORT, MONL-VB, MONL-ADH, MONL-K04, MONL-CTL); K04-for-n pseudo-code --try with power and negative controls accepts n at the 15 (MONL-K04TRY)
+- [x] image-check: c268 L21-L25 native crops cut and reconciled by eye (MONL-L21); L16-L20 and L11-L15 likewise (MONL-L16, MONL-L11)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 9 internal gaps; cheapest next: the K14/K34-for-s and K62-for-m pseudo-code --try with controls (disk only, ~$0.5 each), then the K04|K12 + K40/K45 value-blind sort in one job after regen_monll11/16/21.sh (~$2)
