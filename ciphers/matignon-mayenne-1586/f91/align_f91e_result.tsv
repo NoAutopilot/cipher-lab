@@ -1,0 +1,10 @@
+stat	value
+R	0.817
+hits	76
+aligned_H_letter_tokens	93
+ctrl_mean	0.531
+ctrl_p95	0.635
+ctrl_max	0.681
+draws	200
+gate	PASS
+R_block_E	76/93

@@ -1,0 +1,51 @@
+code	key_value	key_grade	n_aligned	top_chunk	top_share	class
+U		absent	62	e	0.79	candidate-M
+h	e	H	46	e	0.98	confirmed
+.v.	n	H	36	n	0.92	confirmed
+d	s	H	36	s	0.56	undecided
+o	i	H	33	a	0.42	undecided
+t	e	H	31	e	1.00	confirmed
+q	u	H	29	s	0.28	undecided
+7	o	H	27	o	0.96	confirmed
+L	r	H	26	r	0.85	confirmed
+m	t	H	24	t	0.88	confirmed
+B	i|y	M	19	i	0.63	picks-alternative
+n	l	H	19	l	0.89	confirmed
+Ze	t	H	18	t	0.78	confirmed
+c	p	H	17	p	0.94	confirmed
+s	u	H	15	u	0.93	confirmed
+T		absent	14	r	0.86	candidate-M
+w-	d	H	12	d	0.92	confirmed
+14	que	H	11	que	0.45	undecided
+E	i|y	M	11	t	0.45	undecided
+e	r	H	10	r	1.00	confirmed
+f	c|u	M	10	s	0.50	undecided
+6	i|n|s	M	10	n	0.60	picks-alternative
+oo	d	H	7	d	0.86	confirmed
+H	o	H	6	o	0.67	confirmed
+X	a	H	6	a	0.67	confirmed
+A	l	H	5	l	1.00	confirmed
+BOX2		absent	5	u	1.00	candidate-M
+D2		absent	5	a	1.00	candidate-M
+he	l	H	4	l	1.00	confirmed
+ff	n|o	M	4	n	1.00	picks-alternative
+5		absent	4	u	0.75	candidate-M
++		absent	3	m	0.67	candidate-M
+R	p	H	3	p	1.00	confirmed
+b	e	H	3	i	0.33	undecided
+4		absent	3	m	0.67	candidate-M
+y		absent	2	a	0.50	undecided
+M	f	H	2	f	1.00	confirmed
+8	g	H	2	h	0.50	undecided
+13	qui	H	2	qui	1.00	confirmed
+3	e	H	2	i	0.50	undecided
+12	il	H	2	ar	0.50	undecided
+g	u	H	1	u	1.00	undecided
+104	+	U	1	mil	1.00	undecided
+r		absent	1	g	1.00	undecided
+lam	b	H	1	b	1.00	undecided
+24	nostre	H	1	m	1.00	undecided
+2		absent	1	s	1.00	undecided
+yy	ss|s	M	1	s	1.00	undecided
+17	car	H	1	c	1.00	undecided
+9		absent	1	o	1.00	undecided

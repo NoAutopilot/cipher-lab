@@ -1,0 +1,154 @@
+line	position	sign	confidence	alt	why
+E1	1	13	H		agree
+E1	2	n	H		agree
+E1	3	f	M	B:d	differ
+E1	4	U	H		agree
+E1	5	L	H		agree
+E1	6	7	H		agree
+E1	7	E	H		agree
+E1	8	Ze	H		agree
+E1	9	f	M	B:?hooked-s	differ
+E1	10	A	H		agree
+E1	11	3	M	B:Ze	differ
+E1	12	oo	H		agree
+E1	13	o	M	B:d	differ
+E1	14	R	H		agree
+E1	15	T	H		agree
+E1	16	q	M	B:?T-bars	differ
+E1	17	c	H		agree
+E1	18	H	H		agree
+E1	19	q	H		agree
+E1	20	w-	H		agree
+E1	21	h	H		agree
+E1	22	z	M	B:Ze	differ
+E1	23	3	M	B:Ze	differ
+E1	24	d	H		agree
+E1	25	t	M	B:-	gap
+E1	26	.v.	H		agree
+E1	27	m	H		agree
+E1	28	b	H		agree
+E1	29	h	H		agree
+E1	30	e	H		agree
+E2	1	n	H		agree
+E2	2	s	H		agree
+E2	3	.v.	H		agree
+E2	4	w-	H		agree
+E2	5	t	H		agree
+E2	6	f	H		agree
+E2	7	oo	H		agree
+E2	8	E	H		agree
+E2	9	Ze	H		agree
+E2	10	q	H		agree
+E2	11	L	H		agree
+E2	12	B	M	B:?d-hooked	differ
+E2	13	8	H		agree
+E2	14	o	H		agree
+E2	15	+	H		agree
+E2	16	h	H		agree
+E2	17	.v.	H		agree
+E2	18	d	H		agree
+E2	19	U	H		agree
+E2	20	m	H		agree
+E2	21	U	H		agree
+E2	22	D2	H		agree
+E2	23	B	H		agree
+E2	24	L	H		agree
+E2	25	h	H		agree
+E2	26	o	H		agree
+E2	27	s	H		agree
+E2	28	n	H		agree
+E2	29	o	H		agree
+E2	30	t	H		agree
+E2	31	BOX2	H		agree
+E2	32	w-	H		agree
+E2	33	3	H		agree
+E2	34	d	H		agree
+E2	35	U	H		agree
+E3	1	n	H		agree
+E3	2	h	M	B:th	differ
+E3	3	b	H		agree
+E3	4	s	H		agree
+E3	5	fh	M	B:th	differ
+E3	6	t	H		agree
+E3	7	A	H		agree
+E3	8	U	H		agree
+E3	9	q	H		agree
+E3	10	dd	M	B:th	differ
+E3	11	w-	H		agree
+E3	12	h	H		agree
+E3	13	U	M	B:BOX2	differ
+E3	14	s	H		agree
+E3	15	T	M	B:?T-bar	differ
+E3	16	E	H		agree
+E3	17	L	H		agree
+E3	18	U	H		agree
+E3	19	104	H		agree
+E3	20	c	H		agree
+E3	21	T	M	B:o	differ
+E3	22	.v.	H		agree
+E3	23	f	M	B:-	gap
+E3	24	1	M	B:?T-bar	differ
+E3	25	4+	M	B:14	differ
+E3	26	fh	M	B:th	differ
+E3	27	h	H		agree
+E3	28	Ze	H		agree
+E3	29	n	H		agree
+E3	30	14	H		agree
+E3	31	w-	H		agree
+E3	32	6	H		agree
+E4	1	fh	M	B:th	differ
+E4	2	q	H		agree
+E4	3	.v.	H		agree
+E4	4	m	H		agree
+E4	5	B	H		agree
+E4	6	.v.	H		agree
+E4	7	s	H		agree
+E4	8	t	H		agree
+E4	9	T	H		agree
+E4	10	w-	H		agree
+E4	11	D2	H		agree
+E4	12	f	M	B:?hooked-3	differ
+E4	13	o	H		agree
+E4	14	+	H		agree
+E4	15	6	H		agree
+E4	16	Ze	H		agree
+E4	17	D2	H		agree
+E4	18	r	H		agree
+E4	19	h	H		agree
+E4	20	?d-hooked	M	A:-	gap
+E4	21	6	M	B:th	differ
+E4	22	fh	M	B:th	differ
+E4	23	U	H		agree
+E4	24	c	H		agree
+E4	25	t	H		agree
+E4	26	L	H		agree
+E4	27	m	H		agree
+E4	28	h	H		agree
+E4	29	d	H		agree
+E4	30	B	H		agree
+E4	31	.v.	H		agree
+E4	32	7	H		agree
+E4	33	m	H		agree
+E4	34	o	H		agree
+E4	35	lam	H		agree
+E4	36	n	H		agree
+E4	37	U	H		agree
+E5	1	f	M	B:?T-hooked	differ
+E5	2	s	H		agree
+E5	3	T	H		agree
+E5	4	n	H		agree
+E5	5	h	H		agree
+E5	6	q	H		agree
+E5	7	e	H		agree
+E5	8	h	H		agree
+E5	9	fh	M	B:th	differ
+E5	10	Ze	H		agree
+E5	11	L	H		agree
+E5	12	6	M	B:?6-hooked	differ
+E5	13	b	H		agree
+E5	14	h	H		agree
+E5	15	+	H		agree
+E5	16	t	H		agree
+E5	17	.v.	H		agree
+E5	18	E	H		agree
+E5	19	?hooked-g	M	B:L	differ
