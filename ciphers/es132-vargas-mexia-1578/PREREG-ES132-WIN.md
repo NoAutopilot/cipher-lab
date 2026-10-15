@@ -1,4 +1,4 @@
-# PREREG ES132-WIN -- es132-vargas-mexia-1578: native-resolution token windows on the f.89 side with image-checked decoys (account 2 worker for LANE DEFAULT-A2-0509-15, 15 Oct 2026, written 05:3x UTC by `date -u`, before any read call is made or any score computed)
+# PREREG ES132-WIN -- es132-vargas-mexia-1578: native-resolution token windows on the f.89 side with image-checked decoys (account 2 worker for LANE DEFAULT-A2-0509-15, 15 Oct 2026, written 05:2x UTC by `date -u`, before any read call is made or any score computed)
 
 Brief: `.claude/briefs/runs/2026-10-15-ytbiz-default-0509-jobs.md` "### ES132-WIN". Follows ES132-F89 (two-crop look, decoys 8/12) and ES132-BLIND
 (blind whole-line crops, decoys 9/12, decoy truths rule-settled, not image-checked). Different instrument: (1) the reader sees a native-resolution

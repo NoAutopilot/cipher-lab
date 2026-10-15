@@ -1,0 +1,37 @@
+{
+ "decoys_right": 8,
+ "decoys": 12,
+ "gate_pass": false,
+ "decoy_misses": [
+  [
+   "W14",
+   "D06",
+   "4@l",
+   "4@r"
+  ],
+  [
+   "W21",
+   "D16",
+   "24ρ",
+   "24+ρ"
+  ],
+  [
+   "W22",
+   "D14",
+   "15.",
+   "25."
+  ],
+  [
+   "W30",
+   "D01",
+   "6.@n",
+   "6."
+  ]
+ ],
+ "candidates": {
+  "eq_dup": 6,
+  "eq_cur": 7,
+  "neither": 10,
+  "unclear": 1
+ }
+}

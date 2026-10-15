@@ -56,3 +56,33 @@ if __name__ == '__main__' and sys.argv[2] == 'decoys':
         for x in part: sheet.paste(x, (0, y)); y += x.height
         sheet.save(S/f'decoys_sheet{half+1}.jpg', quality=90)
     print('\n'.join(f'D{k:02d}\t{r[0]}\t{r[6]}' for k, r in enumerate(decoy_order[:16], 1)))
+DECOYS = ['D01','D02','D04','D05','D06','D07','D08','D09','D11','D14','D15','D16']   # accepted by the eye check (PREREG-ES132-WIN.md)
+TRUTH = {'D01':'6.@n','D02':'22.@s','D04':'22.@n','D05':'91@s','D06':'4@l','D07':'13@s','D08':'15ρ@s','D09':'15.@s','D11':'6.@s','D14':'15.',
+         'D15':'7ρ@n','D16':'24ρ'}
+if __name__ == '__main__' and sys.argv[2] == 'batches':
+    reads = []
+    for k, r in enumerate(decoy_order[:16], 1):
+        d = f'D{k:02d}'
+        if d in DECOYS: reads.append(dict(kind='decoy', cid=d, pos=r[0], truth=TRUTH[d], dup=r[2]))
+    assert len(reads) == 12 and all(TRUTH[x['cid']] == x['truth'] for x in reads)
+    for r in cands: reads.append(dict(kind='cand', cid=r[0], pos=r[0], truth='', dup=r[2]))
+    random.Random(132132).shuffle(reads)
+    dec = [x for x in reads if x['kind'] == 'decoy']; can = [x for x in reads if x['kind'] == 'cand']
+    batches = [dec[g*4:(g+1)*4] + can[g*8:(g+1)*8] for g in range(3)]
+    for g in range(3): random.Random(132132 + g).shuffle(batches[g])
+    (S/'items').mkdir(exist_ok=True); n = 0
+    for g, bl in enumerate(batches, 1):
+        with open(S/f'batch{g}.txt', 'w') as fh:
+            for it in bl:
+                n += 1; it['id'] = f'W{n:02d}'; it['batch'] = g
+                W, toks, i = window(it['pos'])
+                labelled(W, it['id']).save(S/'items'/f"{it['id']}.jpg", quality=92)
+                b = ' '.join(t.rstrip('?') for t in toks[max(0, i-3):i-1]); a = ' '.join(t.rstrip('?') for t in toks[i:i+2])
+                it.update(before=b or '(line start)', after=a or '(line end)', cur=toks[i-1])
+                fh.write(f"{it['id']}\timage={S}/items/{it['id']}.jpg\tneighbours as transcribed: before [{it['before']}] TARGET after [{it['after']}]\n")
+    with open(T/'win_f89'/'items.tsv', 'w', encoding='utf-8') as fh:
+        fh.write('# ES132-WIN reads (built by win_f89/build.py; kind, current token and the duplicate token were never shown to the reader)\n')
+        fh.write('id\tbatch\tkind\tcid\tpos\ttruth\tcur\tdup\tbefore\tafter\n')
+        for it in sorted(reads, key=lambda x: x['id']):
+            fh.write('\t'.join(str(it[k]) for k in ('id','batch','kind','cid','pos','truth','cur','dup','before','after')) + '\n')
+    print([len(b) for b in batches], [sum(x['kind'] == 'decoy' for x in b) for b in batches])

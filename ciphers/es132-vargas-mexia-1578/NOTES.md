@@ -99,7 +99,7 @@ Read so far: 31 of about 70 distinct cipher letters read by others (30 cabinet-n
 - [n/a] key-rebuild: keys are already published and rebuilt by others
 - [x] image-check: Gallica canvases 166, 167, 174, 175 fetched at 1000 px
 - [x] retry: catalogue record fetched (curl + browser UA, 200; digitised, Gallica btv1b10032556x, MF 8506) and the three blog threads opened (A3V2-ES132C4, 4 Oct 2026): no reading claim found
-Verdict: keep going: 4 internal gaps; Cipher 3 pool f.41r, f.41v, f.50r, f.50v, f.51r, f.51v and f.52r gate (b) PASS on file (ES132-C3, RUN3-ES41, RUN4-ES50R, RUN4-ES41V, RUN4-ES50, RUN5-ES50B, RUN5-ES51, 4 Oct 2026; f.51v re-cut, join doubling gone, err 35%; look-alike pass f.51v/f.52r ES132-LOOK 9 Oct 2026, residual 0.6%/3.2% 2-of-3, gate (b) still PASS; f.41r settlement control FAIL, not applied); cabinet-noir git-log re-check and BL Add MS 28421 catalogue lookup done (D1-ES132G, 6 Oct 2026: cabinet-noir unchanged at 47b6db9; Add MS 28421 not digitised); test2 multi-word {CLEAR:...} loader fix done (RUN5-ESFIX, 4 Oct 2026, no gate flipped); for the two Teulet letters, AUDIT 1 is on file (A3V2-ES132A1, 4 Oct 2026: N0/N3, D2/D1, no unique solve); the f.93-95 duplicate is transcribed and aligned (A3V3-ES9396: letter-level disagreement 8.1% across both readings) and 43/113 '?' tokens are settled from it (A3V3-ES132S, control 48/50 unchanged); the rule-7 re-derivation owed after A3V3-ES132S is done (ES132-RD, 8 Oct 2026: settle_dup.py --check repaired, 0 tokens differ; re-confirmed ES132-R7, 9 Oct 2026); the two-crop look at the 40 unsettled candidates ran and FAILED its decoy gate, 8/12 vs 10/12, nothing applied (ES132-F89, 15 Oct 2026); the blind single-crop read also FAILED its decoy gate, 9/12 vs 10/12, nothing applied (ES132-BLIND, 15 Oct 2026); cheapest next: native-resolution token-window crops with image-checked decoys, or sorter focus rows (~$2); the S licence for the unprinted paragraphs failed its gates (b) and (c) (ES132-SLIC, 8 Oct 2026), so they stay M
+Verdict: keep going: 4 internal gaps; Cipher 3 pool f.41r, f.41v, f.50r, f.50v, f.51r, f.51v and f.52r gate (b) PASS on file (ES132-C3, RUN3-ES41, RUN4-ES50R, RUN4-ES41V, RUN4-ES50, RUN5-ES50B, RUN5-ES51, 4 Oct 2026; f.51v re-cut, join doubling gone, err 35%; look-alike pass f.51v/f.52r ES132-LOOK 9 Oct 2026, residual 0.6%/3.2% 2-of-3, gate (b) still PASS; f.41r settlement control FAIL, not applied); cabinet-noir git-log re-check and BL Add MS 28421 catalogue lookup done (D1-ES132G, 6 Oct 2026: cabinet-noir unchanged at 47b6db9; Add MS 28421 not digitised); test2 multi-word {CLEAR:...} loader fix done (RUN5-ESFIX, 4 Oct 2026, no gate flipped); for the two Teulet letters, AUDIT 1 is on file (A3V2-ES132A1, 4 Oct 2026: N0/N3, D2/D1, no unique solve); the f.93-95 duplicate is transcribed and aligned (A3V3-ES9396: letter-level disagreement 8.1% across both readings) and 43/113 '?' tokens are settled from it (A3V3-ES132S, control 48/50 unchanged); the rule-7 re-derivation owed after A3V3-ES132S is done (ES132-RD, 8 Oct 2026: settle_dup.py --check repaired, 0 tokens differ; re-confirmed ES132-R7, 9 Oct 2026); the two-crop look at the 40 unsettled candidates ran and FAILED its decoy gate, 8/12 vs 10/12, nothing applied (ES132-F89, 15 Oct 2026); the blind single-crop read also FAILED its decoy gate, 9/12 vs 10/12, nothing applied (ES132-BLIND, 15 Oct 2026); cheapest next: native-resolution token-window crops with image-checked decoys, or sorter focus rows (~$2); the S licence for the unprinted paragraphs failed its gates (b) and (c) (ES132-SLIC, 8 Oct 2026), so they stay M ES132-WIN 15 Oct 2026: f.89 '?' candidates -- three vision-reader instruments failed their decoy gates (F89 8/12, BLIND 9/12, WIN 8/12 native windows, image-checked decoys); vision reader [retired] for this settlement (rule 3c), next a person's eye via sign-sorter focus rows.
 
 ## While waiting
 Nothing waits on a person: the f.89 '?' settlement from the duplicate is applied (A3V3-ES132S, 4 Oct 2026); the action that depends on nobody is now the fresh rule-7 re-derivation of the settled f.89 pages, then the next open Cipher 3 letters outside cabinet-noir's list.
@@ -1026,3 +1026,35 @@ gates; a third pass of the same kind is not the next step (rule 3, third-attempt
 only from image-checked tokens, or the 40 positions as sign-sorter focus rows for a person's eye (Remaining gaps).
 Checks: `blind_f89/score.py --check` OK; nothing else changed, so no `test2.py`/`decode_key.py` regeneration was owed.
 Requests: openapi.bnf.fr 5 (all 200). Subagent calls: 3 Sonnet (vision). Cost not visible to this session. Report only; no novelty classification made.
+
+## ES132-WIN (LANE DEFAULT-A2-0509-15 account 2, 15 Oct 2026, 05:22-05:3x UTC by `date -u`)
+Brief `.claude/briefs/runs/2026-10-15-ytbiz-default-0509-jobs.md` "### ES132-WIN": the instrument ES132-BLIND named -- native-resolution token windows
+with image-checked decoys. **Result: decoy gate FAILED (8 of 12 image-checked decoys read right; pre-registered gate >= 10 of 12), so nothing was
+applied.** Reading, key, ciphertext files, `dup_settled.tsv`, AUDIT.md unchanged.
+Prior work: `tools/prior_work.py es132-vargas-mexia-1578 --item-spec 'shelfmark=BnF Espagnol 132;folio=89r|89v|90r|91r' --step-type transcribe --offline`
+exit 4 (the same rows ES132-F89/BLIND logged: LEAD 3-holder = NOTES.md:47 catalogue record, CONTEXT; LEAD 1-own = this lane's own orchestrator claim;
+LOOK 2-leaf; 2 UNCHECKED-NET). Run after the PREREG push and while the reads were running, not before the first priced step as the brief asks (my
+slip); it shows nothing that bears on the step. Check 1: ES132-F89 and ES132-BLIND are the only looks at these positions on file.
+Images (scratchpad only, not committed; 0 network requests): the four ES132-40 `tools/iiif_lines.py --image images/src_ark_12148_btv1b10032556x_<region>.jpg
+--prefix <page> --follow-slope 300 --slope-margin 40` commands on the committed native regions (46/52/54/14 half-line crops). `win_f89/build.py <S> decoys`
+writes the eye-check sheets; `win_f89/build.py <S> batches` writes the 36 windows (line halves joined at the manifest seam; token centre estimated
+proportionally along the inked span; +-3.2 token widths; native pixels, no resize) and `win_f89/items.tsv`.
+Design (PREREG-ES132-WIN.md, pushed 8eb81b93c before any read): 16 `flag-removed` rows in `Random(2026)` order viewed by this worker on native windows;
+12 accepted where the image unambiguously shows the rule truth, 4 rejected (D03 possible underline, D10 at the binding edge, D12 a word, D13 a cross-like
+mark above 38 that the rule truth omits -- so at least one more rule-settled truth may be wrong, as ES132-BLIND found at R58). 24 of the 36 non-word
+candidates (`Random(89)`), one read each; 36 windows in 3 batches of 12 (4 decoys each), one Sonnet vision call per batch (`win_f89/prompt.md`; the
+reader saw the window and two transcribed neighbours each side, never the current token, the duplicate token, or the kind). Reads
+`win_f89/read_batch1-3.tsv`; `win_f89/score.py` (`--check` OK) -> `win_f89/result.json`, `win_f89/agree.tsv`.
+| | right / class | wrong |
+|---|---|---|
+| decoys (12, image-checked) | 8 | 4: D01 6.@n read 6. (hat dropped); D06 4@l read 4@r (slanted stroke as hook); D14 15. read 25. (line-initial token, base); D16 24ρ read 24+ρ (notation) |
+| candidates (24) | = duplicate token 6, = current f.89 token 7, neither 10, unclear 1 | -- |
+Reading: two of the four misses are again on the mark above the number (dropped, or the wrong mark class), the class most candidates turn on; native
+resolution did not fix it. Three vision-reader instruments have now failed their decoy gates on these positions (ES132-F89 two-crop 8/12, ES132-BLIND
+whole-line 9/12, ES132-WIN native window 8/12, the last with image-checked truths), each a real change of instrument: per rule 3's third-attempt clause
+the Sonnet vision reader is retired for the f.89 mark/vowel settlement ("untested-by-this-tool", HYPOTHESES.md), not refuted. The 6 rows equal to the
+duplicate in `agree.tsv` are pointers only. Next: the 40 positions as sign-sorter focus rows for a person's eye (TRANSCRIPTION.md: when machine passes
+split, the next pass is a person's), or a non-vision instrument; not a fourth vision pass.
+Checks: `win_f89/score.py --check` OK; nothing else changed, so no `test2.py`/`decode_key.py` regeneration was owed.
+Requests: none (all images from committed regions). Subagent calls: 3 Sonnet (vision). Cost not visible to this session. Report only; no novelty
+classification made.
