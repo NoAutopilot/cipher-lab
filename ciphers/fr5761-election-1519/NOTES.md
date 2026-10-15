@@ -1118,3 +1118,49 @@ signers (f.163r) writes all the electors' names in letters. Next: (1) fr.3897 it
 witnesses; (2) other Orval/Bonnivet/Guillart copies after 26 May outside ff.160-167 (Kluckhohn's fr.5761 source list, 46 references, gives the
 leaves; the June letters first, ~1.5 for 4-6 canvases at 1000 px), the only place left in this volume where a further oXo could stand;
 (3) no fourth reader on Phi/Hbar on the same f.51r images (ELEC-R3 next 3).
+
+## ELEC-3897: fr.3897 Joachim items 36-38, 62, 64-65, 73 for second witnesses (worker ELEC-3897, LANE DEFAULT-A1-1426-15, account 1, 15 Oct 2026, 15:48-16:0x UTC by date -u)
+
+Brief: ELEC-REC next (1) = ELEC-PAIR next (3). PREREG `elec3897/PREREG-ELEC-3897.md` (pushed fac82ca3c before any fetch). It uses ELEC-REC's
+occurrence rule (a word slot; not a letter form or a standard abbreviation; 5/5 features against one row) and decoy rule (an open list
+before any comparison, the f.53r decoy panel, a context check), extended to set A, the nr. 357 name signs (ELEC-PAIR: W, dd, barI, 4, II,
+Zheavy, flag). One non-blind reader (this worker, Opus, own eye). Page images, not a transcription (rule 2). Result: `elec3897/items_result.tsv`.
+- Locating the items. The v3 manifest Description (1 request) gives the item titles. 36: first marriage treaty, Renée and Joachim's eldest son,
+  Latin. 37: second treaty, 26 Mar 1519, Latin copy. 38: Joachim's letters promising his vote, Cölln an der Spree, 8 Apr 1519. 62: copy of
+  Joachim's letters for the king, deferring part of the payment. 63: Joachim promises to elect the king if two co-electors do. 64: Francis I
+  names Joachim his lieutenant in Germany, copy. 65: copy of the king's pension promise. The canvases are openings with the folio number on
+  the recto. `gallica_folio.py` on the cached v2 manifest has every label "NP", so its anchor fit (c128=103, c142=116, c150=123, c263=222)
+  was only a starting point. The folio numbers read on the rectos give a canvas offset of 21 at f.74 (c95), 22 at f.82 (c104) and 27 at
+  ff.125-128 (c152-155). The offset changes between f.82 and f.103 (25 there, ELEC-357).
+- **No name sign and no f.51r-block sign on any page read (0 candidates under (a)+(b), so 0 counted in set A or set B).** The decoy panel and
+  the context check were never reached. Per item:
+  - 36 (c95, f.73v-74r, mid-treaty; 36 rather than 37 by position only): Latin. Renata, the marquis of Brandenburg and the Regis
+    christianissimi are written in letters.
+  - 38 (c104, f.81v-82r, headed "Copia lre electionis"): Latin. "Nos Joachim dei gra Marchio Brandemburgen ... Franciscum ... Francorum Regem,
+    Mediolani ducem" are in letters. Above the heading is the dated close of the preceding piece ("in castro nro Colonie ad Spream ... mensis
+    Aprilis"). The two dots in the top margin are outside the text.
+  - 62 (c152, f.124v-125r): French copy. It is signed "Joachim" in letters, with an interlinear "Joachim" correction on f.124v l.1.
+    "Roy des Rommains" is also in letters. 63 starts on f.125r in the same opening: "marquis Joach[im]" and Mayence in letters.
+  - 64 (c154, f.126v-127r): French. "nre cousin le marquis de Brandebourg" and "son second filz Jehan de Brandebourg" are in letters. A
+    contemporary note in the f.126v margin is outside the text. Under the item-65 docket at the foot of f.127r there is a flourish group.
+    It is a docket/heading flourish under rule (a), so it is not counted (not fetched natively).
+  - 65 (c154 docket, c155 f.127v-128r): French. "Nous Francoys par la grace de dieu Roy de France ... Joachim marquis de Brandebourg ... nre filz
+    aisne daulphin" are in letters. The item runs onto f.128r, one leaf past the catalogue's ff.72-127.
+  - 37: not located. It lies between f.74r and f.81v, and no request was left (6/6 used).
+  - 73: not fetched. It is f.146, a 1520 French translation of a Lüneburg/Joachin letter, which KH1-A viewed on 7 Oct 2026 as a clear translation
+    (KEYHUNT-2026-10-07.tsv). It falls outside the 1519 election run.
+- Reading: in this volume the formal instruments of the Brandenburg negotiation write every name in letters. These are the treaties, the vote
+  promise and the king's promises, in Latin and in French. In fr.3897 the name signs stand, so far, only in the two letters to Bonnivet (items 39
+  and 56; item 39, Kluckhohn nr. 356, has not been read for signs). This is an observation and is not graded.
+- Grades: none changed. key.tsv and elecpair/ are unchanged, and the status stays open. This is a search result at ~1000 px per page, not a
+  native census.
+- Requests: openapi.bnf.fr 6 (the presentation v3 manifest; btv1b90096539 f95, f104, f152, f154, f155 at `full/2000,`), all 200, no 403/429. The
+  images are in the session scratchpad only, none in git. Regen: `https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90096539/f{95,104,152,
+  154,155}/full/2000,/0/default.jpg` (sha1 in the TSV).
+
+**Verdict (ELEC-3897, 15 Oct 2026):** open, unchanged. fr.3897 items 36, 38, 62-65 write every name in letters, and none carries a nr. 357 or
+f.51r-block sign at ~1000 px per page. Item 37 was not located (between f.74 and f.81v). Item 73 is a clear 1520 translation (KH1-A). No second
+witness was found here for barI, 4, II, Zheavy or flag. Next: (1) fr.3897 item 39 (Joachim to Bonnivet, "Vendredi", Kluckhohn nr. 356, printed
+p.813). It is the one remaining Joachim letter to the admiral, which the name signs would favour. It lies between f.82 and f.103 (offset 22-25);
+locate it in 2-3 openings at 2000 px and pair it against the print under ELEC-PAIR's rule, ~2. (2) Other Orval/Bonnivet/Guillart copies after
+26 May in fr.5761 (ELEC-REC next 2), ~1.5. (3) Item 37 only if (1) shows that the Brandenburg pieces carry signs, ~0.5.
