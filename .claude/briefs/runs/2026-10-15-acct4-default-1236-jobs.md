@@ -87,3 +87,23 @@ split to the owner's sign sorter as the next step (rule 3: no third machine atte
 
 Wave 2 spawned 13:09 UTC: MONL-K14 session_01Ceamd3rTT2QY8cezSDifK3, BAL-65L session_01GVPDmXM11HgQnRDDELxyaD, LVN-4610H session_01AQvZdQD2ubyHt2yzfmEz7q,
 ELEC-VERSO session_01PFKu5WgiukffCMR1c6Wq3R, MAT-O3X session_016uPs7XyaqXeRUYtYqPgM13 (all Opus; caps 4.5/3.5/3/4/3 = 18).
+
+## Wave 2 result (13:3x UTC): MONL-K14 1.78 D (K14=s lead), BAL-65L 4.01 N, LVN-4610H 5.42 D (2 H->M, 1.81x), ELEC-VERSO 3.07 D (four signs match f.51r
+block 5/5, single reader M), MAT-O3X 4.71 D (split PASS 30/50 vs p95 20 on 3x crops, candidate S). Workers 18.99; lane workers 39.61.
+
+## Wave 3 (13:3x UTC 15 Oct; last wave, sized to the remaining budget)
+
+### MAT-R2 (Opus, cap 1.5, box 40 min, disk only): matignon-mayenne-1586 second blind reader on MAT-O3X's 78 3x o crops
+MAT-O3X next: a second, independent blind reader (one Sonnet call, crop paths only, no values, no first-reader labels) on osplit/o3x crops;
+agreement with MAT-O3X's sort (A/B/X) and kappa, written under a PREREG addendum committed before the call. Re-run mat_osplit.py under the same gate
+on the second reader's labels. No key/label/reading edit; record in HYPOTHESES.md and NOTES.md. Do NOT start the 13-leaf relabel.
+
+### ELEC-R2 (Opus, cap 2, box 45 min, disk + openapi.bnf.fr <= 4, ROOM take/release): fr5761-election-1519 blind second reader on the f.51r block + its note
+ELEC-VERSO next: a blind second reader (one subagent call, crop paths only, no ELEC-VERSO matches shown) matching the four nr. 383 signs (oXo, Phi,
+Hbar, Lfo) against the f.51r lower block rows and the side note (Orval?), under a PREREG addendum before the call, with a decoy-row control that can
+vary on the matching axis. All M unless the registered rule says otherwise; key.tsv unchanged unless --try at every occurrence accepts.
+
+### MONL-SORT (Opus, cap 3.5, box 60 min; openapi.bnf.fr <= 12, ROOM take/release): fr4735-monluc-lansac-poland-1573 regen + one value-blind sort
+MONL-K14 next: regen_monll11/16/21.sh (fetch only what they name, scratch only), then ONE value-blind sort of K04|K12 + K14|K37 + K40/K45 tiles (one
+subagent call per <= 40 tiles, crop paths only), with the in-band controls MONL-CTL used; PREREG addendum before the call. Relabels only by the
+registered rule; decode_key/align/score --check after.
