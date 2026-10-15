@@ -1266,3 +1266,26 @@ Next: (1) find Lisch, *Urkunden-Sammlung ... Moltzan* V on archive.org/HathiTrus
 are printed beside names, compare with the nr. 356/357 set: H for a printed period key only if Lisch prints the resolution from a period
 source), ~1.5; (2) settle the l.27 4|flag slot against f.116r (openapi.bnf.fr f142 at 2400, 1 request), ~1; (3) item 37 (ELEC-39 Next 2), ~0.5;
 (4) Dresden HStA, Wahlsachen nr. 3 image (catalogue record and availability flag first, access playbook), ~0.5.
+
+## ELEC-27: the f.84r l.27 4|flag slot settled image-to-image (worker ELEC-27, LANE DEFAULT-account-4-20261015-1735, account 4, 15 Oct 2026, 17:43-17:5x UTC by date -u)
+
+Brief: ELEC-356 Next (2) / ELEC-316 Next (2). PREREG `elec27/PREREG-ELEC-27.md` (pushed c06e8318a before any fetch): features F1 head (closed
+triangle vs open angle), F2 cross-bar, F4 head side; "flag" / "4" / "unsettled" fixed beforehand. One non-blind reader (this worker, Opus, own
+eye) on page images at matched scale (rule 2). Result: `elec27/result.tsv`; conflict entry in `HYPOTHESES.md`.
+- **f.84r l.27 = flag.** Upright at left, horizontal bar, closed triangle at the right end, no cross-bar: the f.116r l.32 flag on F1, F2, F4;
+  the f.116r l.11 4 (open diagonal angle, cross-bar, base bar) differs on all three, so the references discriminate. The slot is a second
+  both-sided flag = Mayence pair (nr. 357 l.32 + nr. 356 l.27). No conflict with 4 = Palatin arises from this slot. Grade unchanged (M) in
+  this job: the shuffle was not re-run.
+- **Observation outside the PREREG rule (M):** the f.116r l.29 sign that ELEC-PAIR counted as a second "4" (= Palatin) is not the l.11 4
+  shape. It matches the f.84r l.21 Lbar (a loop on a horizontal stroke joined to an upright; crops side by side), which nr. 356 prints as
+  Trèves, while nr. 357 prints Palatin at f.116r l.29. Logged as a rule-4 data conflict, not resolved. If the shape identity holds, 4 = Palatin
+  rests on 1 pair, and elecpair/pairs.tsv row f.116r 29 carries the wrong shape label; neither file was edited here (one non-blind reader).
+- Step (2), item 37, not run: the brief's own unit floor (~2.5 of the 3 cap) leaves no room under the 60% line.
+- Requests: openapi.bnf.fr 2 (btv1b90096539 f142 `full/2400,`, f106 `full/2000,`), both 200, 3 s apart. sha1 f142 b1d18f0018cf... (= ELEC-PAIR),
+  f106 918cf4a35b19... (= ELEC-39). Scratch only, none in git. f.116r = f142 x >= 1200; f.84r = f106 x 1150-1910.
+
+**Verdict (ELEC-27, 15 Oct 2026):** open, unchanged. The f.84r l.27 sign is the flag (Mayence, 2 pairs, M pending a shuffle); a new data
+conflict: the f.116r l.29 "4" has the f.84r Lbar shape (Palatin in nr. 357 vs Trèves in nr. 356).
+Next: (1) blind second reader on the f.116r l.29 and f.84r l.21 crops (coordinates in HYPOTHESES.md), then relabel elecpair/pairs.tsv and
+re-run elec356/pair_control.py for flag, 4 and Lbar, ~1; (2) check Kluckhohn p.814 l.14 (nr. 357) against p.813 for Palatin/Trèves, ~0.5;
+(3) item 37 (ELEC-39 Next 2), ~0.5; (4) Lisch V pp.323-347 (ELEC-316 Next 1), ~1.5.

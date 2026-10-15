@@ -1,0 +1,5 @@
+slot	source	label_before	F1_head	F2_crossbar	F4_head_side	matches	label_after	print_name	note
+f.84r l.27	fr.3897 item 39 (nr.356), f106 right page, x140-215 y1205-1240 of the right-page crop at 2000	4|flag	closed triangle	no	right of upright, on a horizontal bar	f.116r l.32 on F1,F2,F4	flag	Mayence (Kluckhohn p.813 l.13)	decision rule outcome "flag"
+f.116r l.11	nr.357, f142 right half at 2400	4	open angle (diagonal to upright)	yes, plus a base bar	diagonal	reference	4	Palatin	reference 4
+f.116r l.32	nr.357, f142 right half at 2400	flag	closed triangle	no	right of upright, on a horizontal bar	reference	flag	Mayence	reference flag
+f.116r l.29	nr.357, f142 right half at 2400	4	loop on a horizontal stroke joined to an upright (no triangle, no diagonal)	no	-	f.84r l.21 Lbar (same shape, side by side)	Lbar? (observation, outside the PREREG rule)	Palatin (p.814 l.14)	nr.356 prints Treves at the f.84r Lbar slot: conflict logged, unresolved
