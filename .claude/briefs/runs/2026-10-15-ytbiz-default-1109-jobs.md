@@ -127,3 +127,22 @@ OBRED-NA2's flag: 1.01.02 inv. 9453 scan 24, an Oldenbarnevelt-Langerak names-on
 code -> name table (one Opus read at native size) and test whether any no. 92/187 name code (37 in reading_92_187.tsv) matches it in form and
 context better than a shuffled-code control; this is the known-keys rung, not a key merge. Report matches graded M unless the control licenses
 S; conflicts to HYPOTHESES.md with witnesses (rule 4). gaps_check.
+
+## Wave 3 result (12:2x UTC): SUR-2076 2.38 N (crib known-H LOO 0.643 < 0.90, non-test), COL26-PRINT2 0.95 N (Kernkamp + 8 Oxenstierna vols, 0 hits;
+Riksradets protokoll 1644-46 not on IA), OBRED-6020 3.85 N (99 scans, no numeral block), OBRED-9453 2.33 N (11-code names table, overlap k=0 with
+no. 92). Workers 35.70.
+
+## Wave 4 (12:2x UTC 15 Oct; last wave)
+
+### SUR-AMH (Sonnet, cap 1.5, box 45 min, archive.org / OpenAlex / Nationaal Archief catalogue <= 10; no googleapis): na-suriname-map-1781 printed or catalogue text for 4.VEL 2077
+SUR-2076's next (02061ef0c): "AMH/den Heijer for 4.VEL 2077, ~$1". Look up the Atlas of Mutual Heritage record and den Heijer 2012 for map 4.VEL
+2077's legend (plain text of any entry that matches a 2077 cipher legend line). Record what each source gives; no key edit (a printed plain
+legend found goes to the next job as a crib). gaps_check.
+
+### OBRED-945X (Opus, cap 3, box 60 min, service.archief.nl <= 60, ROOM take/release; wait for OBRED-6021's release if it holds the host): oldenbarnevelt-brederode-1605 inv. 9450 / 9451 / 9453 stride 3
+OBRED-NA2's next (cafae833c): 9450/9451/9453 at stride 3 beyond the openings already seen (na_obredna_scans.tsv). Same method; one Opus read per
+flagged page; log every scan. gaps_check.
+
+### OBRED-6021 (Opus, cap 4.5, box 75 min, service.archief.nl <= 140, ROOM take/release): oldenbarnevelt-brederode-1605 inv. 6021 stride 6
+OBRED-6020's next (fe3158b9e): inv. 6021 stride 6 (~136 requests) with OBRED-6020's PREREG method and sheet controls. Stop before a unit that
+crosses 80% of cap or box. gaps_check.
