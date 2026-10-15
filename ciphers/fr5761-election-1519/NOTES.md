@@ -1196,3 +1196,43 @@ nr. 357 name-sign set: barI x5, Zheavy x3, 4 x1 counted (M, one reader), unpaire
 Next: (1) pair f.84r-v against Kluckhohn nr. 356 (p.813, archive.org `bub_gb_0gFoAAAAMAAJ` leaf n821, 1 request) plus c107 (f.84v) at
 2000 px, under ELEC-PAIR's pre-registered rule; barI, Zheavy and 4 could reach >= 2 pairs each, ~2.5. (2) Item 37, one opening at c99-c100,
 only after (1) (the Latin instruments so far carry no signs), ~0.5.
+
+## ELEC-356: fr.3897 item 39 (f.84r-v) paired against Kluckhohn nr. 356 (worker ELEC-356, LANE DEFAULT-A1-1426-15, account 1, 15 Oct 2026, 16:42-16:5x UTC by date -u)
+
+Brief: ELEC-39 Next (1). PREREG addendum `elec356/PREREG-ELEC-356.md` (pushed b8be868b7 before any fetch): ELEC-PAIR's pairing rule 1-5 unchanged,
+with the pooling of nr. 357 and nr. 356 slots stated before the read. One non-blind reader (this worker, Opus, own eye), page images at 2000 px per
+opening (rule 2: images, not a transcription). Results: `elec356/pairs.tsv`, `elec356/name_signs_pooled.tsv`, `elec356/control_result.tsv`
+(`python3 elec356/pair_control.py --check`, seed 357, exit 0; `elecpair/pair_control.py --check` still exit 0).
+- **Identification confirmed.** Kluckhohn RTA J.R. I nr. 356 runs p.812 l.24 to p.813 l.18 (leaves n820-n821, not n821 alone), "Très-chers, bons
+  amys, capitaines Jacob et Hans Frey", ending "Datum vendredi, une heure après-midi 1519 ... post Johannis baptiste. Josyn"; this is f.84r-v word
+  for word except at the signs, so item 39 = nr. 356 (ELEC-39's M identification now read against the print). Kluckhohn's source line (p.812
+  l.20-23): "Aus Paris Bibl. nat. F. fr. 3897. Cop., die Namen für die Kurfürsten in Chiffren, deren Auflösung sich aus nr. 316 ergiebt; in verso:
+  Double des lectres de la main du marquis de Brandebourg à monsr. l'admiral du 17e juing." -- **nr. 316 is named as the source of the decipherment**;
+  no session has read nr. 316 yet (not in this NOTES.md before today).
+- **12 both-sided pairs, 0 conflicts on settled labels; one slot unsettled.** barI x5 = Bohème (chancellier de | est; avec | et espère; aussy |
+  scavoir; sive | et tunc [Bohemia]; d'avecques | et quant); Zheavy x3 = Saxe (sive | sive [Saxonia]; avec | que la chose; ou de | me le); II x1 =
+  Couloigne ("faulte. [II] m'a ce jourduy finablement reffusé": the slot ELEC-39 left uncounted as a possible pronoun "Il", the print names
+  Couloigne); W x1 = roy très-chrestien (et a | ce que bon); **Lbar** x1 = Trèves ("que [Lbar] face avec Saxe", a loop joined by a bar to an
+  upright, missed by ELEC-39, not seen in nr. 357). The l.27 sign ELEC-39 labelled 4 pairs with **Mayence** ("de [sign] ou de Saxe"); at 2000 px
+  it reads equally as ELEC-PAIR's flag (= Mayence in nr. 357), so its label is not settled: conflict-or-agreement logged in `HYPOTHESES.md`, no grade.
+  The first Bohème (l.4 "octroie / boheme"), Polaine and marquis George are in letters. f.84v (c107) is the letter's last six lines: no name, no sign.
+- **Grades under the registered rule (pooled nr. 357 + nr. 356):** barI = Bohème **C** (7 pairs, shuffle 0/1000; was M); Zheavy = Saxe **C**
+  (4 pairs, 1/1000; was M; nr. 356 alone 3 pairs at 50/1000 would be held at M); W = roy très-chrestien C (7, 0/1000); dd = roy catholique C
+  (unchanged, not on f.84r); II = Couloigne M (2 pairs, 132/1000 >= 5%); 4 = Palatin M (2 pairs, 134/1000; a conflict if the l.27 sign is a 4);
+  flag = Mayence M (1 or 2); Lbar = Trèves M (1). These are values of the nr. 356/357 name-sign set, not of the fr.5761 ff.104-110 key (ELEC-PAIR:
+  not the same signs on the descriptions), so key.tsv is unchanged.
+- Rule 5 comparison (after 1-4): nr. 383's fr.5761 sign for Trèves is an H-bar (elecpair383, M), here a loop-bar-upright; Bohème has no sign in
+  key.tsv's name rows read so far. Description against description only, M.
+- Requests: archive.org 2 (n820, n821 `_w1800`; the first attempt without -L returned 302 and an empty body, re-fetched with -L, so 4 hits in all,
+  2 images), openapi.bnf.fr 2 (btv1b90096539 f106, f107 `full/2000,`), all 200. Scratch only, none in git. sha1 n820 b0ec1490fde1..., n821
+  a58ed4a89885... (= ELEC-PAIR), f106 918cf4a35b19... (= ELEC-39), f107 63cc6408b2a4.... Regen:
+  `https://archive.org/download/bub_gb_0gFoAAAAMAAJ/page/n82{0,1}_w1800.jpg`; `https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90096539/f10{6,7}/full/2000,/0/default.jpg`;
+  f.84r = right page of f106 (x 1150-1910).
+
+**Verdict (ELEC-356, 15 Oct 2026):** open, unchanged. Item 39 = Kluckhohn nr. 356, read against the print: two more nr. 357 name signs reach C
+under the registered rule on pooled slots (barI = Bohème, Zheavy = Saxe), II = Couloigne gets its second pair (M), Lbar = Trèves is added (M), and
+one 4-or-flag slot is a logged conflict. Kluckhohn says the decipherment of these names follows from his nr. 316.
+Next: (1) read Kluckhohn nr. 316 (same volume, archive.org `bub_gb_0gFoAAAAMAAJ`, locate by the "No. 3xx" running heads; ~1-2 requests) and its
+own source line: if 316 is the key or a decipherment, it is a key source for this name-sign set (grade H) and for checking every C/M above, ~1.5;
+(2) settle the l.27 4|flag slot image-to-image against f.116r l.11/l.29/l.32 (openapi.bnf.fr f142 at 2400, 1 request), ~1; (3) item 37 (ELEC-39
+Next 2), ~0.5.
