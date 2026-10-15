@@ -131,3 +131,28 @@ failed); this is a different instrument (block-held-out gloss agreement). PREREG
 block's gloss letter at that label's positions, pooled leave-one-block-out accuracy vs >= 200 label-shuffled draws (p95) and a power check (a
 known H code with the same occurrence count must pass). Labels below power are "too-short", not rejected. A passing label is reported as a
 candidate for key.tsv at grade S with its numbers; no key.tsv edit in this job. HYPOTHESES.md rows, Verdict, gaps_check.
+
+## Wave 5 (09:3x UTC 15 Oct)
+
+### MAT-KEY (Opus, cap 3, box 60 min, disk; openapi.bnf.fr <= 4 only for the image check): matignon-mayenne-1586 apply the four S candidates
+MAT-KA (a948d56a8): U=e, T=r, D2=a, BOX2=u passed the block-held-out gloss test with power (grade S); next "key.tsv edit + decode_key --check +
+per-leaf judge (~1.5), image check Bourdeau labels vs f.91 labels (~1)". Order: image check FIRST -- confirm by eye on the f.91/92 crops and the
+target leaves that the labels U, T, D2, BOX2 name the same sign shape in both transcriptions (the f.91 passes and the target's ciphertext); a
+label that does not match is not applied. Then add the matching values to key.tsv at grade S through the folder's own decode path
+(decode_key.py / decode.json), regenerate the readings with --check, and run judge_plaintext.py per leaf before and after (paste both outputs in
+NOTES.md, rule 7). Report tokens changed per leaf and the grade counts before/after. A reading that changes after AUDIT.md is propagated per rule
+10 (AUDIT.md section + any SECOND-OPINIONS-QUEUE row) -- name it in a ROOM flag for a verifier rather than re-auditing yourself. gaps_check.
+
+### OBRED-SEG (Opus, cap 4, box 75 min, disk only): oldenbarnevelt-brederode-1605 constrained segmentation of the no. 92/187 intervals
+OBRED-BAND (5417397a0): held-out band check PASS; reading_92_187.tsv gives each token a letter interval (72 of 180 one-letter); next "constrained
+segmentation of the intervals with its own control (~3)". PREREG first: a Dutch (nl16/nl17, check era match per rule 3) lexicon/n-gram search
+over the interval lattice, scored against (a) the same search on shuffled-band intervals (>= 200) and (b) a synthetic control: a known Dutch
+1600s text enciphered with the fitted bands at no. 92's length, which must segment above gate. Report words recovered with their spans, the
+control numbers, grade M throughout (S only where the control licenses it). No key.tsv; a script that regenerates the output with --check.
+gaps_check.
+
+### OBRED-OCT2 (Opus, cap 2.5, box 45 min, service.archief.nl/nationaalarchief.nl <= 8 plus catalogue lookups <= 10): oldenbarnevelt-brederode-1605 the 2 Oct 1619 letter and the memorie's home
+OBRED-MEM (5fdcc740a): next "read the 2 Oct letter (528-530) for a mention of the memorie (~1.5), then Maurits papers (KHA) / S.G. secrete
+liassen (~1)". Read 528-530 (one Opus read, crops in scratchpad) for any mention of a memorie, cipher, sleutel; then catalogue lookups only
+(NA 1.01.02 secrete liassen 1619 inventory; Koninklijk Huisarchief A14 Maurits finding aid if online) for where a deciphered Brederode memorie
+would be filed. Record what was read and where nothing was found. No fetching of whole series. gaps_check.
