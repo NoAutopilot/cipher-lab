@@ -1,4 +1,4 @@
-# ELEC-WALK census, 15 Oct 2026 03:08-03:11 UTC; fr.5761 (btv1b52510561g), openapi.bnf.fr IIIF v3, 600 px wide unless noted; images in session scratchpad only (regen: https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b52510561g/f<canvas>/full/600,/0/default.jpg)
+# ELEC-WALK census, 15 Oct 2026 03:08-03:11 UTC; fr.5761 (btv1b52510561g), openapi.bnf.fr IIIF v3, 600 px wide unless noted; images in session scratchpad only (regen: https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b52510561g/f<canvas>/full/600,/0/default.jpg); ELEC-END 15 Oct 2026 05:02-05:08 UTC appended 12 rows (f348-f350, f352-f356, f358, f360-f362, content cell prefixed "ELEC-END"), same URL pattern
 canvas	folio	old_folio	resolution	content_at_sheet_scale	names_seen_in_clear	cipher_name_group_seen	kluckhohn_match
 f333	165r	160	600px	letter of the envoys to Francis I (Orval gone to Coblenz; Brandenburg's letter)	Orval; marquis de Brandebourg; Francisque; le conte	no	not matched to a printed number (OCR text too noisy to align by phrase)
 f343	170r	165	600px	envoys to Francis I: "deux lettres en chiffre" received; duc de Gueldres; Lunebourg; duc Henry de Brunswick	duc de Gueldres; Lunebourg; Brunswick	no	not matched
@@ -12,3 +12,15 @@ f367	182r	177	600px	blank	-	-	-
 f371	184r	179	600px	later matter: cardinal, roy catholique, roy d'Angleterre	roy d'Angleterre; roy catholique	no	outside the 1519 election run
 f385	191r	186	600px	later Italian matter (Parma, Milan, the Pope)	-	no	outside
 f399	198r	193	600px	later Italian matter (duc de Ferrare, Lyon)	-	no	outside
+f348	172v	167v	600px	blank (show-through only)	-	-	-
+f349	173r	168	600px	ELEC-END: "Voiage d'Allemaigne pour l'empire"; letter to "Cappitaine Francisque"	cappitaine Francisque	no	not nr. 357/383 (addressed to Francisque, not from Joachim; not to the king)
+f350	173v	168v	600px	ELEC-END: continuation; second letter begins (conte palatin, Lorraine)	conte palatin; Lorraine; bailly de Caen	no	not matched
+f352	174v	169v	600px	ELEC-END: end of the letter to Madame (messire Robert de la Marche; roy catholique); new letter on the conte palatin	Robert de la Marche; roy catholique; conte palatin; la Motheaugroing	no	not matched
+f353	175r	170	600px	ELEC-END: heading "Monsr l'admiral au duc Federic de Baviere"	duc Federic de Baviere; bailly de Caen	no	not matched
+f354	175v	170v	600px	ELEC-END: heading "Monsr l'admiral au conte palatin"	conte palatin; marquis de Brandenbourg	no	not matched
+f355	176r	171	600px	ELEC-END: continuation (empire; roy catholique)	roy catholique	no	not matched
+f356	176v	171v	600px	ELEC-END: continuation; heading "Autre lettre de monsr l'admiral au conte palatin"	conte palatin; Francisque (Sickingen?)	no	not matched
+f358	177v	172v	600px	ELEC-END: continuation (roy catholique; the king; signed by the admiral)	roy catholique	no	not matched
+f360	178v	173v	600px	ELEC-END: "Autre double de lettre de messire [Bonnivet] l'admiral au conte palatin", dated ... jour de Juillet; then "Autre double d'autres lettres ... au chancellier dudit conte"	conte palatin; chancellier	no	not matched
+f361	179r	174	600px	ELEC-END: end of the letter to the chancellor, "... jour de Juillet 1519"	chancellier	no	not matched
+f362	179v	174v	600px	blank (show-through only)	-	-	-

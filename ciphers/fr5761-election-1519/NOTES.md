@@ -165,6 +165,8 @@ shared with M35).
 
 Stage-2 eligible on this verdict (`open`, six sources checked, per check-solved.md).
 
+Update 15 Oct 2026 (ELEC-END): fr.5761 ff.172r-179v now read on both sides at 600 px. No copy with names in cipher, and Kluckhohn nr. 357/383 are not there (the versos of ff.165-171 and 180-182 are still unread). Next step: the fr.5756 census (ark btv1b60010927, still to be confirmed); see "## ELEC-END".
+
 ## Key transcription, progress (24 Sept 2026, 14:00 UTC, written by the LANE G3 orchestrator)
 
 Worker G (session_01VqKFDYvBPedSfydmRjbFWq, Sonnet) was interrupted at 13:59 UTC at about 1.9x its $4 cap, under the account's seven-day
@@ -666,3 +668,29 @@ session scratchpad; the regen URL is in the TSV header.
   other BnF volume he cites for this embassy, e.g. Robertet 4 Mar 1519).
 - Next: (1) read the remaining ff.172v-179v canvases at 600 px (about 13 requests, ~$1) for nr. 357/383. If they are absent, (2) the same census
   on fr.5756 (Gallica ark not yet looked up), ~$1.5. A match then needs >= 2 occurrences per sign before any C grade (brief rule). Status unchanged (open).
+
+## ELEC-END: ff.172v-179v and the fr.5756 ark (worker ELEC-END, LANE DEFAULT-A1-0447-15, account 1, 15 Oct 2026, 05:01-05:12 UTC by date -u)
+
+Brief: ELEC-WALK's next (1), reading the unsampled sides of ff.172v-179v at 600 px for Kluckhohn nr. 357 / nr. 383. If both are missing, look up the
+fr.5756 ark only. Result: **0 cipher name groups; nr. 357 and nr. 383 are not on these leaves; key.tsv unchanged; status unchanged (open).**
+- Read 12 canvases (f348-f350, f352-f356, f358, f360-f362; ELEC-WALK's "about 13" was 12 by its own list), openapi.bnf.fr 600 px, 12 requests,
+  all 200. Images are in the session scratchpad only; rows are appended to `namewalk_elecwalk.tsv`, whose header holds the regen URL.
+- ff.172v and 179v are blank. ff.173r-179r copy the admiral's own letters: to "Cappitaine Francisque" (173r, headed "Voiage d'Allemaigne pour
+  l'empire"), the end of the letter to Madame (174v), to duc Federic de Baviere (175r), to the conte palatin (175v, 176v, 178v), and to the
+  Palatine's chancellor (178v-179r). The run ends on 179r with "... jour de Juillet 1519". Every name on these pages is written in letters:
+  Francisque, conte palatin, Robert de la Marche, la Motheaugroing, Baviere, Brandenbourg, roy catholique, bailly de Caen.
+- Nr. 357 (Joachim of Brandenburg, signed "Capitaine Josyn", 18 June) and nr. 383 (Orval, Bonnivet and Guillart to Francis I, from Coblenz)
+  do not match any letter here. None of these letters is from Joachim, and none is addressed to the king. With ELEC-WALK's canvases, ff.172r-179v are
+  now read on both sides. ff.165-171 and 180-182 are read on the rectos only (ELEC-WALK). None of these pages has a cipher sign standing for a name.
+- fr.5756 ark (1 request, Europeana Search API, quoted query "Français 5756"; the brief allowed one SRU or catalogue request, and
+  gallica.bnf.fr is excluded this wave): the only hit is **ark:/12148/btv1b60010927** (gallica.bnf.fr/ark:/12148/btv1b60010927),
+  "Recueil de plusieurs pièces concernant la pretension du roy François Ier à l'empire. Copies de la main de Florimond Robertet ? 1519".
+  The contents in its description include letters from Orval, Bonnivet and Guillard "au roi", Bonnivet to Robertet ("datée de Coblentz,
+  8 juillet") and Francis I to Brandenburg. That is the right group of correspondents for nr. 383. The response does not show the shelfmark
+  itself, so the ark rests on Europeana's match to the quoted phrase. Confirm it on the BnF record before the census. The fr.5756 census was
+  not started (per the brief).
+- Not checked: the versos of ff.165-171 and 180-182 and f.181r; ff.54-164 of fr.5761 apart from ELEC-WALK's 4 sampled leaves; fr.5756 itself.
+
+**Verdict (ELEC-END, 15 Oct 2026):** open, unchanged. No copy with names in cipher on fr.5761 ff.172r-179v (both sides) or on the rectos ELEC-WALK read in ff.165-182. Next:
+(1) confirm that btv1b60010927 is fr.5756 from its manifest or BnF record (1 request), then census it at 600 px for nr. 357 / nr. 383 (about
+15-25 requests, ~1.5). A pair needs >= 2 occurrences per sign before any C grade.
