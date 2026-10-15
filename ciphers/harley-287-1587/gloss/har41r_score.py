@@ -303,6 +303,8 @@ def second():
     for u in UNITS:
         cw = clear_words(u)
         reads = unit_reads(r2, u[1])
+        if not reads:
+            out.append(['unit', u[0], 'not read by reader 2', '', 'not passed']); continue
         a, b, p1, p3, f1, f3 = unit_stats(reads, cw)
         ok = ctrl_ok and a > p1 and b > p3 and a >= 0.60
         out.append(['unit', u[0], 'S1 %.3f (p95 %.3f, frac>= %.3f)' % (a, p1, f1), 'S3 %.3f (p95 %.3f, frac>= %.3f)' % (b, p3, f3),
