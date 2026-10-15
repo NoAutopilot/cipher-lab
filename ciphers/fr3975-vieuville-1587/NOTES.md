@@ -120,3 +120,11 @@ The D2-VIEU run (5 Oct) already covered the three named clear phrases ("eschevin
 - "Monsieur de Saint Aignan 1587 Nevers": IA none, OpenAlex none; Google Books 18 volumes (e.g. Villeroy, secretaire d'etat, 1908; Mem. Soc. archeol. Orleanais 1885), not opened.
 - "La Vieuville Nevers lettre 30 septembre 1587" and "lettre chiffree Nevers La Vieuville 1587": IA none, OpenAlex none; Google Books 5 and 10 volumes, mostly BnF *Catalogue general des manuscrits francais* (1874/1881 editions, again incl. HQo4AQAAMAAJ, JUgMAQAAMAAJ, GP9eAAAAcAAJ) plus *Les ducs de Nevers et ...* (dsInahmnar8C), not opened.
 - Not found by this method: a printed text or decipherment of the 30 Sept 1587 letter. Not done: page-level reading of the catalogue volumes or dsInahmnar8C (next, if wanted: one snippet read per volume). Status unchanged (`blocked`, colour scan).
+
+## Print check, edition rung (VIE-PC, 15 Oct 2026)
+
+Job VIE-PC for LANE DEFAULT-A2-1109-15 (account 2). The three named phrases already ran twice (D2-VIEU 5 Oct, R9-VIEU 6 Oct, IA/OpenAlex/S2/CrossRef no hits for the letter), so they were not repeated. Google Books was skipped (www.googleapis.com is out for this lane). New this run: the Internet Archive rung on the edition the folder names, Gomberville's *Memoires du duc de Nevers* (1665).
+- IA advancedsearch (title/creator/phrase variants: "Memoires de Nevers", Gomberville + Nevers, Gonzague + memoires, 1600-1700): 0 items for the Memoires; Gomberville hits were his other works (Doctrine des moeurs, Relation de la riviere des Amazones, Polexandre studies); the only Gonzague hit was Senac de Meilhan's 1789 *Memoires d'Anne de Gonzague* (a different book).
+- be-api fts, loose "Vieuville Saint-Aignan 1587": 17 and 2,144 hits respectively, name noise only (Michaud, La Chesnaye-Desbois), no hit read.
+- Not found by this method: a copy of the Gomberville Memoires on IA, or any printed text of the 30 Sept 1587 letter. The Gomberville negative remains Bourdeau's (Gallica bpt6k6435941k, bpt6k8717151d); not re-read. Not searched: Nevers/Vieuville correspondence editions (none located on IA by title), page-level reading of the two BnF catalogue volumes.
+- Requests: archive.org ~8 (advancedsearch 6, be-api 2), >= 2 s apart, no 429. Search result only (rule 10). Status unchanged (`blocked`, colour scan); no reading.
