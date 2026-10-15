@@ -196,17 +196,149 @@ def cmd_run(a):
         print(held, 'train f/r', f['n_train_f'], f['n_train_r'], '1nn', f['nn1'], 'testable', f['testable'])
 
 
+F191 = os.path.join(FOLD, 'images', 'p63', 'f191')
+A191 = os.path.join(W, 'atlas191')
+
+
+def glyph(args):
+    p = subprocess.run([sys.executable, os.path.join(REPO, 'tools', 'glyph_atlas.py')] + args, capture_output=True, text=True)
+    if p.returncode:
+        sys.exit(p.stdout + p.stderr)
+    return p.stdout
+
+
+def f191_units():
+    """PREREG Addendum A item 1: pen units of the 72 VIV-F191 crops, overlap deduped at the midpoint (as tx/vivcls/seg.py)."""
+    man = json.load(open(os.path.join(F191, 'manifest.json')))['iiif_lines']
+    cr = {}
+    for e in man:
+        c = e['crop']; ln = c.split('_')[3]; sg = int(c.split('_s')[-1].split('.')[0])
+        cr[(ln, sg)] = dict(path=os.path.join(F191, c), x0=e['box'][0], x1=e['box'][2], page=f'f191r_{ln}_s{sg}')
+    if not os.path.exists(os.path.join(A191, 'signs.tsv')):
+        pages = []
+        for k, e in sorted(cr.items()):
+            pages += ['--page', f"{e['page']}={e['path']}"]
+        glyph(['segment', '--out', A191, '--median-h', 'pool'] + pages)
+    rows = rd(os.path.join(A191, 'signs.tsv'))
+    byline = collections.defaultdict(list)
+    for r in rows:
+        _, ln, s = r['page'].split('_'); sg = int(s[1:]); e = cr[(ln, sg)]
+        byline[ln].append(dict(r, seg=sg, xl=e['x0'] + int(r['x']), xc=e['x0'] + int(r['x']) + int(r['w']) / 2, img=e['path']))
+    units = []
+    for ln in sorted(byline):
+        segs = sorted({s for (l2, s) in cr if l2 == ln})
+        for b in byline[ln]:
+            sg = b['seg']
+            lo = -1e9 if sg == segs[0] else (cr[(ln, sg)]['x0'] + cr[(ln, sg - 1)]['x1']) / 2
+            hi = 1e9 if sg == segs[-1] else (cr[(ln, sg + 1)]['x0'] + cr[(ln, sg)]['x1']) / 2
+            if lo <= b['xc'] < hi:
+                units.append(dict(sid=b['sid'], page='f191r', line=int(ln[1:]), x=int(b['xl']), w=b['w'], img=b['img'],
+                                  cx=b['x'], cy=b['y'], cw=b['w'], ch=b['h'], crop_page=b['page']))
+    units.sort(key=lambda u: (u['line'], u['x']))
+    return units
+
+
+def cmd_f191(a):
+    sys.path.insert(0, os.path.join(REPO, 'tools'))
+    import box_token_align as bta
+    os.makedirs(W, exist_ok=True)
+    units = f191_units()
+    usid = {u['sid']: u for u in units}
+    lj = os.path.join(W, 'labels_stub.json')
+    json.dump({'signs': {}, 'marks': {}, 'override': {}}, open(lj, 'w'))
+    bx = os.path.join(W, 'boxes_f191_all.tsv')
+    wr(bx, ['box_id', 'image', 'x', 'y', 'w', 'h', 'line', 'pos', 'kind'],
+       [dict(box_id=u['sid'], image=u['img'], x=u['cx'], y=u['cy'], w=u['cw'], h=u['ch'], line=u['line'], pos=u['x'], kind='sign') for u in units])
+    tk = os.path.join(W, 'topk_f191_fullcode.tsv')
+    glyph(['classify', '--out', ATLAS, '--labels', lj, '--boxes', bx, '--boxes-median-h', str(MEDIAN_H), '--only-train-labels',
+           '--train-labels', os.path.join(FOLD, 'tx', 'vivcls', 'train', 'labels_r2_both.tsv'), '--knn', '5', '--topk', '3', '--tsv', tk])
+    rec = list(csv.DictReader(open(os.path.join(FOLD, 'tx', 'viv63_f191', 'rec.tsv')), delimiter='\t', quoting=csv.QUOTE_NONE))  # a '"' sign
+    read = [dict(line='f191r_' + r['line'], pos=r['pos'], sign=r['sign']) for r in rec]
+    sg = [dict(sid=u['sid'], page='f191r', line=str(u['line']), x=str(u['x']), w=str(u['w'])) for u in units]
+    rows, per = bta.build_map(sg, read, labels=bta.read_labels(topk=tk), lam=bta.LAM, loo=False)
+    wr(os.path.join(HERE, 'map_f191r.tsv'), ['sid', 'line', 'pos', 'op', 'labels'], rows)
+    by = collections.defaultdict(list)
+    for r in rows:
+        if r['sid']:
+            by[(r['line'], str(r['pos']))].append(r)
+    cov = {k: v[0]['sid'] for k, v in by.items() if len(v) == 1 and v[0]['op'] == '1:1'}
+    gt = [r for r in rec if r['sign'] == 'g']
+    tile = [(r, cov[('f191r_' + r['line'], r['pos'])]) for r in gt if ('f191r_' + r['line'], r['pos']) in cov]
+    mat = rd(os.path.join(HERE, 'material.tsv'))
+    tr = [m for m in mat if m['leaf'] in ('f102r', 'f103r')]
+    tl = os.path.join(W, 'train_f191.tsv')
+    wr(tl, ['box', 'code'], [dict(box=m['sid'], code=m['sid']) for m in tr])
+    bg = os.path.join(W, 'boxes_f191_g.tsv')
+    wr(bg, ['box_id', 'image', 'x', 'y', 'w', 'h', 'line', 'pos', 'kind'],
+       [dict(box_id=s, image=usid[s]['img'], x=usid[s]['cx'], y=usid[s]['cy'], w=usid[s]['cw'], h=usid[s]['ch'], line=r['line'], pos=r['pos'],
+             kind='sign') for r, s in tile])
+    out = os.path.join(W, 'pred_f191_g.tsv')
+    glyph(['classify', '--out', ATLAS, '--labels', lj, '--boxes', bg, '--boxes-median-h', str(MEDIAN_H), '--only-train-labels',
+           '--train-labels', tl, '--knn', str(KNN), '--topk', '5', '--pool', '40', '--tsv', out])
+    pr = {r['box']: r for r in rd(out)}
+    cls = {m['sid']: m['cls'] for m in mat}
+    res = []
+    for r, s in tile:
+        p = pr[s]
+        res.append(dict(line=r['line'], pos=r['pos'], sid=s, rec_sign=r['sign'], rec_flag=r['flag'], pred_1nn=cls[p['k1']], nn1=p['k1'],
+                        d1=p['d1'], crop_page=usid[s]['crop_page'], cx=usid[s]['cx'], cy=usid[s]['cy'], cw=usid[s]['cw'], ch=usid[s]['ch']))
+    wr(os.path.join(HERE, 'f191r_g_pred.tsv'), list(res[0].keys()), res)
+    summ = dict(units=len(units), g_tokens=len(gt), g_tileable=len(tile), pred_f=sum(r['pred_1nn'] == 'f' for r in res),
+                ops=dict(collections.Counter(r['op'] for r in rows)))
+    json.dump(summ, open(os.path.join(HERE, 'f191r_summary.json'), 'w'), indent=1)
+    print(json.dumps(summ))
+
+
+def cmd_side(a):
+    """PREREG section 4, report-only: the owner's new-sign tiles (hand-cut boxes of tx/sorter_f191/signs.tsv on the VIV-F191 crops) under the
+    f.102r+f.103r f/r model; 'neither' when d1 > p95 of the held-out truth tiles' d1 (per_tile.tsv)."""
+    os.makedirs(W, exist_ok=True)
+    ov = [r for r in csv.DictReader((l for l in open(os.path.join(FOLD, 'tx', 'sorter_f191', 'owner_override_2026-10-15.tsv'))
+                                     if not l.startswith('#')), delimiter='\t', quoting=csv.QUOTE_NONE) if r['action'] == 'new-sign']
+    sg = {r['sid']: r for r in rd(os.path.join(FOLD, 'tx', 'sorter_f191', 'signs.tsv'))}
+    bx = os.path.join(W, 'boxes_side.tsv')
+    wr(bx, ['box_id', 'image', 'x', 'y', 'w', 'h', 'line', 'pos', 'kind'],
+       [dict(box_id=r['sid'], image=os.path.join(F191, sg[r['sid']]['page'] + '.jpg'), x=sg[r['sid']]['x'], y=sg[r['sid']]['y'],
+             w=sg[r['sid']]['w'], h=sg[r['sid']]['h'], line=r['line'], pos=r['pos'], kind='sign') for r in ov])
+    lj = os.path.join(W, 'labels_stub.json')
+    out = os.path.join(W, 'pred_side.tsv')
+    glyph(['classify', '--out', ATLAS, '--labels', lj, '--boxes', bx, '--boxes-median-h', str(MEDIAN_H), '--only-train-labels',
+           '--train-labels', os.path.join(W, 'train_f191.tsv'), '--knn', str(KNN), '--topk', '5', '--pool', '40', '--tsv', out])
+    pr = {r['box']: r for r in rd(out)}
+    cls = {m['sid']: m['cls'] for m in rd(os.path.join(HERE, 'material.tsv'))}
+    thr = float(np.percentile([float(r['d1']) for r in rd(os.path.join(HERE, 'per_tile.tsv'))], 95))
+    res = []
+    for r in ov:
+        p = pr[r['sid']]
+        near = [cls[p[f'k{k}']] for k in range(1, 6) if p[f'k{k}']]
+        df = min((float(p[f'd{k}']) for k in range(1, 6) if p[f'k{k}'] and cls[p[f'k{k}']] == 'f'), default=float('nan'))
+        dr = min((float(p[f'd{k}']) for k in range(1, 6) if p[f'k{k}'] and cls[p[f'k{k}']] == 'r'), default=float('nan'))
+        res.append(dict(line=r['line'], pos=r['pos'], sid=r['sid'], qid=r['qid'], owner_pile=r['new_sign'], rec_sign=r['rec_sign'],
+                        nn1_cls=cls[p['k1']], d1=p['d1'], d_f_top5=('%.3f' % df) if df == df else '', d_r_top5=('%.3f' % dr) if dr == dr else '',
+                        top5=''.join(near), call=('neither' if float(p['d1']) > thr else 'nearer ' + cls[p['k1']])))
+    wr(os.path.join(HERE, 'side_owner_newsign.tsv'), list(res[0].keys()), res)
+    print(f'neither threshold (p95 held-out truth d1) {thr:.3f}')
+    for r in res:
+        print('\t'.join(str(r[k]) for k in res[0]))
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sp = ap.add_subparsers(dest='cmd', required=True)
     sp.add_parser('material')
     sp.add_parser('run')
     sp.add_parser('check')
+    sp.add_parser('f191')
+    sp.add_parser('side')
     a = ap.parse_args()
     if a.cmd == 'material':
         material()
     elif a.cmd == 'run':
         cmd_run(a)
+    elif a.cmd == 'f191':
+        cmd_f191(a)
+    elif a.cmd == 'side':
+        cmd_side(a)
     else:
         old = open(os.path.join(HERE, 'result.json')).read()
         material(); cmd_run(a)

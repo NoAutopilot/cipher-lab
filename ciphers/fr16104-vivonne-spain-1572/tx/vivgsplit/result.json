@@ -1,0 +1,142 @@
+{
+ "folds": {
+  "f102r": {
+   "cmd": "tools/glyph_atlas.py classify --out ciphers/fr16104-vivonne-spain-1572/tx/vivcls/atlas --labels ciphers/fr16104-vivonne-spain-1572/tx/vivgsplit/work/labels_stub.json --boxes ciphers/fr16104-vivonne-spain-1572/tx/vivgsplit/work/boxes_f102r.tsv --boxes-median-h 58 --only-train-labels --train-labels ciphers/fr16104-vivonne-spain-1572/tx/vivgsplit/work/train_f102r.tsv --knn 1 --topk 5 --pool 40 --tsv ciphers/fr16104-vivonne-spain-1572/tx/vivgsplit/work/pred_f102r.tsv",
+   "n_train_f": 3,
+   "n_train_r": 20,
+   "nn1": {
+    "tp": 2,
+    "fp": 0,
+    "fn": 1,
+    "tn": 14,
+    "f_recall": 0.6667,
+    "f_precision": 1.0,
+    "f1": 0.8,
+    "r_recall": 1.0,
+    "r_precision": 0.9333,
+    "n_f": 3,
+    "n_r": 14
+   },
+   "nn5_report_only": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 3,
+    "tn": 14,
+    "f_recall": 0.0,
+    "f_precision": 0.0,
+    "f1": 0.0,
+    "r_recall": 1.0,
+    "r_precision": 0.8235,
+    "n_f": 3,
+    "n_r": 14
+   },
+   "testable": false
+  },
+  "f103r": {
+   "cmd": "tools/glyph_atlas.py classify --out ciphers/fr16104-vivonne-spain-1572/tx/vivcls/atlas --labels ciphers/fr16104-vivonne-spain-1572/tx/vivgsplit/work/labels_stub.json --boxes ciphers/fr16104-vivonne-spain-1572/tx/vivgsplit/work/boxes_f103r.tsv --boxes-median-h 58 --only-train-labels --train-labels ciphers/fr16104-vivonne-spain-1572/tx/vivgsplit/work/train_f103r.tsv --knn 1 --topk 5 --pool 40 --tsv ciphers/fr16104-vivonne-spain-1572/tx/vivgsplit/work/pred_f103r.tsv",
+   "n_train_f": 4,
+   "n_train_r": 18,
+   "nn1": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 1,
+    "tn": 16,
+    "f_recall": 0.5,
+    "f_precision": 1.0,
+    "f1": 0.6667,
+    "r_recall": 1.0,
+    "r_precision": 0.9412,
+    "n_f": 2,
+    "n_r": 16
+   },
+   "nn5_report_only": {
+    "tp": 1,
+    "fp": 1,
+    "fn": 1,
+    "tn": 15,
+    "f_recall": 0.5,
+    "f_precision": 0.5,
+    "f1": 0.5,
+    "r_recall": 0.9375,
+    "r_precision": 0.9375,
+    "n_f": 2,
+    "n_r": 16
+   },
+   "testable": false
+  },
+  "f201r": {
+   "cmd": "tools/glyph_atlas.py classify --out ciphers/fr16104-vivonne-spain-1572/tx/vivcls/atlas --labels ciphers/fr16104-vivonne-spain-1572/tx/vivgsplit/work/labels_stub.json --boxes ciphers/fr16104-vivonne-spain-1572/tx/vivgsplit/work/boxes_f201r.tsv --boxes-median-h 58 --only-train-labels --train-labels ciphers/fr16104-vivonne-spain-1572/tx/vivgsplit/work/train_f201r.tsv --knn 1 --topk 5 --pool 40 --tsv ciphers/fr16104-vivonne-spain-1572/tx/vivgsplit/work/pred_f201r.tsv",
+   "n_train_f": 5,
+   "n_train_r": 30,
+   "nn1": {
+    "tp": 1,
+    "fp": 0,
+    "fn": 0,
+    "tn": 4,
+    "f_recall": 1.0,
+    "f_precision": 1.0,
+    "f1": 1.0,
+    "r_recall": 1.0,
+    "r_precision": 1.0,
+    "n_f": 1,
+    "n_r": 4
+   },
+   "nn5_report_only": {
+    "tp": 1,
+    "fp": 1,
+    "fn": 0,
+    "tn": 3,
+    "f_recall": 1.0,
+    "f_precision": 0.5,
+    "f1": 0.6667,
+    "r_recall": 0.75,
+    "r_precision": 1.0,
+    "n_f": 1,
+    "n_r": 4
+   },
+   "testable": false
+  }
+ },
+ "pooled_1nn": {
+  "tp": 4,
+  "fp": 0,
+  "fn": 2,
+  "tn": 34,
+  "f_recall": 0.6667,
+  "f_precision": 1.0,
+  "f1": 0.8,
+  "r_recall": 1.0,
+  "r_precision": 0.9444,
+  "n_f": 6,
+  "n_r": 34
+ },
+ "pooled_5nn_report_only": {
+  "tp": 2,
+  "fp": 2,
+  "fn": 4,
+  "tn": 32,
+  "f_recall": 0.3333,
+  "f_precision": 0.5,
+  "f1": 0.4,
+  "r_recall": 0.9412,
+  "r_precision": 0.8889,
+  "n_f": 6,
+  "n_r": 34
+ },
+ "null_f1_1nn": {
+  "mean": 0.1403,
+  "p95": 0.4453,
+  "p99": 0.5455,
+  "max": 0.5455
+ },
+ "null_f1_5nn_report_only": {
+  "mean": 0.0186,
+  "p99": 0.2857
+ },
+ "gate": {
+  "recall": true,
+  "precision": true,
+  "f1_over_null_p99": true
+ },
+ "verdict": "PASS"
+}

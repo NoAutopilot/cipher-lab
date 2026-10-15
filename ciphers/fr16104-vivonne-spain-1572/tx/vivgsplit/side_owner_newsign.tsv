@@ -1,0 +1,19 @@
+line	pos	sid	qid	owner_pile	rec_sign	nn1_cls	d1	d_f_top5	d_r_top5	top5	call
+L08	14	f191r_L08_s1_01_012	Q23	NEW1	s	r	8.303		8.303	rrrrr	nearer r
+L08	20	f191r_L08_s1_01_019	Q38	NEW2	r	f	8.966	8.966	9.171	frrrf	neither
+L08	21	f191r_L08_s1_01_020	Q19	NEW3	g	r	9.466		9.466	rrrrr	neither
+L08	25	f191r_L08_s2_01_005	Q39	NEW4	4	r	8.232		8.232	rrrrr	nearer r
+L08	31	f191r_L08_s2_01_011	Q28	NEW2	r	r	8.037	8.914	8.037	rrrfr	nearer r
+L09	23	f191r_L09_s1_01_016	Q05	NEW5	d	r	6.712	6.869	6.712	rfrrr	nearer r
+L10	1	f191r_L10_s1_01_001	Q33	NEW6	z	r	7.515		7.515	rrrrr	nearer r
+L10	3	f191r_L10_s1_01_003	Q35	NEW7	d	r	9.984		9.984	rrrrr	neither
+L10	23	f191r_L10_s1_01_020	Q03	NEW8	c	r	8.644		8.644	rrrrr	neither
+L10	24	f191r_L10_s1_01_021	Q20	NEW8	l	r	7.784	8.019	7.784	rrrff	nearer r
+L10	29	f191r_L10_s2_01_006	Q06	NEW9	z	r	7.738		7.738	rrrrr	nearer r
+L10	45	f191r_L10_s2_01_021	Q02	NEW10	s	r	6.081		6.081	rrrrr	nearer r
+L11	35	f191r_L11_s2_01_010	Q15	NEW9	z	r	7.128		7.128	rrrrr	nearer r
+L12	17	f191r_L12_s1_01_018	Q14	NEW11	x	r	7.954		7.954	rrrrr	nearer r
+L12	32	f191r_L12_s2_01_010	Q37	NEW12	c	r	10.077		10.077	rrrrr	neither
+L12	37	f191r_L12_s2_01_014	Q36	NEW2	r	r	6.943		6.943	rrrrr	nearer r
+L13	10	f191r_L13_s1_01_010	Q40	NEW6	2	r	6.772	7.719	6.772	rrrfr	nearer r
+L14	8	f191r_L14_s1_01_008	Q30	NEW13	V	r	8.505		8.505	rrrrr	nearer r
