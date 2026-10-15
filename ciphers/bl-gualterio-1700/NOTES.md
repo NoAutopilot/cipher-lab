@@ -270,5 +270,28 @@ Job: pair the two keys HMC printed in *Calendar of the Stuart Papers* vol. VI (1
 
 ## Next step (GUALT-HMC, 12 Oct 2026)
 
-- [ ] Image-check the 122 M rows of the Gualterio key and 33 of the Sicily key (leaves n82, n84, n85, n87); next: one strip pass, ~USD 1, archive.org. Only needed once ciphertext from 20554-20556 or a Gualterio-network volume is on disk (REQUEST.md: waiting on the BL folio list).
+- [x] Image-check the 122 M rows of the Gualterio key and 33 of the Sicily key (leaves n82, n84, n85, n87): done by GUAL-KEYS, 15 Oct 2026, below.
 - [ ] Register the two printed keys in KEY-OFFICES.tsv / KEY-DESIGN.tsv once key_design.py takes a printed-key path or names these files; next: a tools change, parent's call.
+
+## GUAL-KEYS (15 Oct 2026, worker for LANE DEFAULT-A4-0235-15, account 4)
+
+Job: image-check the 155 M rows of the two HMC vol. VI printed keys (GUALT-HMC next step). Key transcription from print only; no
+ciphertext, no reading; status stays `open`. Pre-registered in `PREREG-GUAL-KEYS.md` before any strip was read.
+
+- Prior work: `tools/prior_work.py bl-gualterio-1700 --item-spec '...calendarofstuart06grea n82 n84 n85 n87' --step-type key --offline`
+  exit 0, verdict UNCHECKED (generic rows only; no specific hold), logged in `prior-work.tsv`.
+- Material: leaves n82, n84, n85, n87 of archive.org `calendarofstuart06grea` (`/download/<id>/page/n<N>.jpg`, 2533x4353), cut with
+  `tools/iiif_lines.py --image <leaf> --region 150,150,2200,4150 --lines-per-crop 6 --quality 70` (6/8/7/8 strips). Leaves and strips
+  kept in the session scratchpad, not committed; regenerate with the same two commands.
+- Pass: one Sonnet subagent per leaf saw only that leaf's strips and a shuffled row list: the leaf's M rows plus 6 planted wrong rows
+  (2 one-letter changes in the cant name, 1 in the term, 2 cant names moved from another row, 1 word dropped/added), and answered
+  EXACT / DIFFERS / NOT-SEEN per row.
+- Control: planted rows caught 6/6 on every leaf (24/24, gate >= 80%). Real rows: 154/155 EXACT, 0 NOT-SEEN, 1 DIFFERS --
+  n84 "Cardinal Acqua viva" = Mr. Aquin, print "Cardinal Acquaviva" (one word; this worker's own read of the leaf agrees), corrected in
+  `build_hmc6_keys.py` (OCR_SUBS) and recorded as CORRECTED.
+- Result: `keys/hmc6_strip_check_2026-10-15.tsv` (155 rows, verdict per row); `build_hmc6_keys.py` reads it and grades EXACT/CORRECTED
+  rows H. Both keys are now all H: Gualterio 209 H (was 87 H, 122 M), Sicily 149 H (was 116 H, 33 M); `build_hmc6_keys.py --check`
+  exit 0. The subagents also confirmed three "ou" alternatives as printed in one cell (n85 Mr. Grammont ou Gendron; n87 Mr. Perelli
+  ou Porter, Mr. Robert ou Renaud).
+- Requests: archive.org 4 (four leaf images, 1.6 s apart, all 200). Subagents: 4 Sonnet (one per leaf). Cost not visible to this session.
+- Next step unchanged: the keys wait on ciphertext (REQUEST.md, the BL folio list for 20554-20556) to be tested at all.

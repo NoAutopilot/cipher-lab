@@ -8,8 +8,9 @@ with no term belongs to the brace of the nearest term above or below (the print 
 image-checked on leaves 81 and 83). FIXES holds every correction made by eye on the strip crops in
 ../images/hmc6/ (leaves 81, 83, 86, 88) or by an evident OCR substitution (Due->Duc, Koy->Roy, on->ou).
 
-Grade: H = row on an image-checked leaf (81, 83, 86, 88); M = row on a leaf not image-checked (82, 84, 85, 87),
-OCR only, or a row whose pairing rests on a brace not seen. No ciphertext is on disk; nothing here is tested.
+Grade: H = row on an image-checked leaf (81, 83, 86, 88), or a row on leaves 82, 84, 85, 87 answered EXACT (or
+CORRECTED) in hmc6_strip_check_2026-10-15.tsv (GUAL-KEYS, 15 Oct 2026: one Sonnet strip pass per leaf with 6 planted
+wrong rows each, 24/24 caught; PREREG-GUAL-KEYS.md); M = any other row (OCR only). No ciphertext is on disk; nothing here is tested.
 Usage: build_hmc6_keys.py [--check]   (--check exits 1 if the committed TSVs differ from a rebuild)
 """
 import csv, re, sys, os
@@ -42,7 +43,7 @@ FIXES = {
     (87, 3918): None, (87, 3990): ("L'union d'Angleterre et d'Ecosse", "Mr. Urbin."),
 }
 OCR_SUBS = [(r'\bDue\b', 'Duc'), (r'\bKoy\b', 'Roy'), (r'\bon\b', 'ou'), (r'Expr6s', 'Exprès'), (r"L'ltalie", "L'Italie"),
-            (r'SteUa', 'Stella'), (r'-Stampa', 'Stampa'), (r"d' ", "d'"), (r'\s+', ' '), (r'Ac qua viva', 'Acqua viva'),
+            (r'SteUa', 'Stella'), (r'-Stampa', 'Stampa'), (r"d' ", "d'"), (r'\s+', ' '), (r'Ac qua viva', 'Acquaviva'),
             (r'Mr\. \.Lambert', 'Mr. Lambert'), (r'Par me', 'Parme'), (r'Savoy e', 'Savoye'), (r'Cavaillon\.', 'Cavaillon')]
 SKIP = re.compile(r'^(?:[A-Z0]|l?x+[ivxl]*|I[xv]+[ivxl]*|lxx\w*|Ixx\w*)$')
 NAMEY = re.compile(r"^(?:Le |La |Les |L'|Mr|M\.|Milord|Cardinal|Comte|Duc|Duca|Abbe|Monsieur|P\.|Pere|Principessa|Prince|Princesse|Roy|Marechal|Madame|Chevalier|Agent|Alberoni|Daubanton|Douglas|Bar )")
@@ -61,6 +62,12 @@ def kind(term):
                                                    'le clerge', 'la chambre', 'parti ', 'passe ', 'douaire', "l'union")):
         return 'word'
     return 'name'
+
+STRIP = {}
+_sp = os.path.join(HERE, 'hmc6_strip_check_2026-10-15.tsv')
+if os.path.exists(_sp):
+    for _r in csv.DictReader(open(_sp), delimiter='\t'):
+        if _r['verdict'] in ('EXACT', 'CORRECTED'): STRIP[(_r['leaf'], _r['code'], _r['meaning'])] = _r['verdict']
 
 def build():
     rows = list(csv.DictReader(open(os.path.join(HERE, 'hmc6_rows_ocr.tsv')), delimiter='\t'))
@@ -86,7 +93,10 @@ def build():
         note = 'eye-corrected on crop' if eye else ('OCR row joined by geometry' if fix is not False else 'OCR')
         for c in re.split(r',? ou ', cant.rstrip('.,')):
             c = c.strip().rstrip('.,')
-            keys[cur].append((c, term, kind(term), grade, f'n{leaf}', PAGE[leaf], note))
+            g, n = grade, note
+            if g == 'M' and (f'n{leaf}', c, term) in STRIP:
+                g, n = 'H', note + '; strip-checked GUAL-KEYS 15 Oct 2026' + (' (corrected)' if STRIP[(f'n{leaf}', c, term)] == 'CORRECTED' else '')
+            keys[cur].append((c, term, kind(term), g, f'n{leaf}', PAGE[leaf], n))
     for L, a, b in zip('ABCDEFGHILM', [74, 72, 70, 68, 66, 65, 62, 61, 59, 57, 55], [24, 22, 71, 23, 20, 18, 19, 17, 14, 16, 15]):
         keys['gualterio'] += [(str(a), L, 'letter', 'H', 'n88', 'lxxxiii', 'figure key, eye-checked'),
                               (str(b), L, 'letter', 'H', 'n88', 'lxxxiii', 'figure key, eye-checked')]

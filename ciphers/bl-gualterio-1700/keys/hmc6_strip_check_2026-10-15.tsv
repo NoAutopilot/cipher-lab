@@ -1,0 +1,156 @@
+leaf	code	meaning	verdict	print_shows	key_file
+n82	Fontana	La France	EXACT		hmc6_sicily.tsv
+n82	Icone	L'Italie	EXACT		hmc6_sicily.tsv
+n82	Istria	L'Irlande	EXACT		hmc6_sicily.tsv
+n82	Jourdain	Les Jacobites	EXACT		hmc6_sicily.tsv
+n82	M. Feltro	La Flote	EXACT		hmc6_sicily.tsv
+n82	M. Foresto	La Flandre	EXACT		hmc6_sicily.tsv
+n82	M. Frejus	Le Roy de France	EXACT		hmc6_sicily.tsv
+n82	M. Gastaldi	Le Grand Duc	EXACT		hmc6_sicily.tsv
+n82	M. Goddar	La guerre	EXACT		hmc6_sicily.tsv
+n82	M. Grillon	Le Comte de Gallas	EXACT		hmc6_sicily.tsv
+n82	M. Guadagne	Le Cardinal Gualterio	EXACT		hmc6_sicily.tsv
+n82	M. Herman	Marechal d'Huxelles	EXACT		hmc6_sicily.tsv
+n82	M. Houdan	La Hollande	EXACT		hmc6_sicily.tsv
+n82	M. Hubert	L'Elector d'Hanover	EXACT		hmc6_sicily.tsv
+n82	M. Lima	Londre	EXACT		hmc6_sicily.tsv
+n82	M. Maselli	Milord Marleborow	EXACT		hmc6_sicily.tsv
+n82	M. Mazzoni	Les Ministres	EXACT		hmc6_sicily.tsv
+n82	M. Mirabello	Le Duc de Mar	EXACT		hmc6_sicily.tsv
+n82	M. Monti	Mariage	EXACT		hmc6_sicily.tsv
+n82	M. Negrone	Le Duc de Noailles	EXACT		hmc6_sicily.tsv
+n82	M. Nemone	Naples	EXACT		hmc6_sicily.tsv
+n82	M. Nivelli	Le Cardinal de Noailles	EXACT		hmc6_sicily.tsv
+n82	M. Novellara	Le Nonce	EXACT		hmc6_sicily.tsv
+n82	M. Olina	Le Duc d'Ormond	EXACT		hmc6_sicily.tsv
+n82	M. Ossoni	Le Comte d'Oxford	EXACT		hmc6_sicily.tsv
+n82	M. Panzachi	Le Cardinal Paulucci	EXACT		hmc6_sicily.tsv
+n82	M. Petrucci	Les Protestans	EXACT		hmc6_sicily.tsv
+n82	M. Pico	Le Pape	EXACT		hmc6_sicily.tsv
+n82	M. Pinelli	Le Parlement	EXACT		hmc6_sicily.tsv
+n82	M. Poussin	La Paix	EXACT		hmc6_sicily.tsv
+n82	Mr. Herve	L'Elector d'Hanover	EXACT		hmc6_sicily.tsv
+n82	Mr. Liberti	Le Duc de Lorraine	EXACT		hmc6_sicily.tsv
+n82	Mr. Morati	Le Duc de Modene	EXACT		hmc6_sicily.tsv
+n84	Beaumont	Bar Le Duc	EXACT		hmc6_gualterio.tsv
+n84	Mr. Abel	Cardinal Albani	EXACT		hmc6_gualterio.tsv
+n84	Mr. Adamson	Les Anglois	EXACT		hmc6_gualterio.tsv
+n84	Mr. Alby	Armes	EXACT		hmc6_gualterio.tsv
+n84	Mr. Aldermond	Mr. Aldrovandi	EXACT		hmc6_gualterio.tsv
+n84	Mr. Alexandre	Les Amis du Roy d'Angleterre	EXACT		hmc6_gualterio.tsv
+n84	Mr. Allardin	Allemans	EXACT		hmc6_gualterio.tsv
+n84	Mr. Alliot	Armee	EXACT		hmc6_gualterio.tsv
+n84	Mr. Anat	Agent d'Angleterre	EXACT		hmc6_gualterio.tsv
+n84	Mr. Anthoine	La Princesse Anne	EXACT		hmc6_gualterio.tsv
+n84	Mr. Aquin	Cardinal Acquaviva	CORRECTED	Cardinal Acquaviva | Mr. Aquin (strip pass and worker eye agree; OCR split the word)	hmc6_gualterio.tsv
+n84	Mr. Arboulin	Argent	EXACT		hmc6_gualterio.tsv
+n84	Mr. Arnaudin	Adresse	EXACT		hmc6_gualterio.tsv
+n84	Mr. Artamont	L'Archeveque d'Avignon	EXACT		hmc6_gualterio.tsv
+n84	Mr. Arthur	Angleterre	EXACT		hmc6_gualterio.tsv
+n84	Mr. Ashyon	Armee Navalle	EXACT		hmc6_gualterio.tsv
+n84	Mr. Barieu	Monsieur Battelli	EXACT		hmc6_gualterio.tsv
+n84	Mr. Basle	Bologna	EXACT		hmc6_gualterio.tsv
+n84	Mr. Beaulieu	Milord Bullingbrook	EXACT		hmc6_gualterio.tsv
+n84	Mr. Boyn	Abbe Borio	EXACT		hmc6_gualterio.tsv
+n84	Mr. Bulau	Le frere de Mr. Bufalini demeurant a Rome	EXACT		hmc6_gualterio.tsv
+n84	Mr. Buvier	Mr. Le Marquis Bufalini	EXACT		hmc6_gualterio.tsv
+n84	Mr. Caral	Cardinal	EXACT		hmc6_gualterio.tsv
+n84	Mr. Caraman	Le Clerge d'Angleterre	EXACT		hmc6_gualterio.tsv
+n84	Mr. Carmon	L'Eveque de Cavaillon	EXACT		hmc6_gualterio.tsv
+n84	Mr. Chaumont	Les Catholiques	EXACT		hmc6_gualterio.tsv
+n84	Mr. Colomban	P. Charle de Neubourgh	EXACT		hmc6_gualterio.tsv
+n84	Mr. Constant	Consistoire	EXACT		hmc6_gualterio.tsv
+n84	Mr. Constant	Le College de Douay	EXACT		hmc6_gualterio.tsv
+n84	Mr. Contoire	Congregation	EXACT		hmc6_gualterio.tsv
+n84	Mr. Corbery	Duca Cesarini	EXACT		hmc6_gualterio.tsv
+n84	Mr. Cornelio	Le Connetable Colonna	EXACT		hmc6_gualterio.tsv
+n84	Mr. Courtin	La Chambre des Seigneurs	EXACT		hmc6_gualterio.tsv
+n84	Mr. Covon	Cour	EXACT		hmc6_gualterio.tsv
+n84	Mr. Cramail	La Chambre des Communes	EXACT		hmc6_gualterio.tsv
+n84	Mr. D'Almon	Alberoni	EXACT		hmc6_gualterio.tsv
+n84	Mr. Exent	Agent d'Escosse	EXACT		hmc6_gualterio.tsv
+n84	Mr. Irois	Agent d'Irlande	EXACT		hmc6_gualterio.tsv
+n84	Mr. d'Allegre	Mr. D. Alexandre Albani	EXACT		hmc6_gualterio.tsv
+n84	Mr. de Beaujeu	Le Duc de Berwick	EXACT		hmc6_gualterio.tsv
+n84	Mr. de Bron	Le Duc de Berry	EXACT		hmc6_gualterio.tsv
+n85	Dougey	Douglas	EXACT		hmc6_gualterio.tsv
+n85	Falsbourg	La Flandre	EXACT		hmc6_gualterio.tsv
+n85	Frioul	La France	EXACT		hmc6_gualterio.tsv
+n85	Gendron	Mr. Le Cardinal Gualterio	EXACT		hmc6_gualterio.tsv
+n85	Houdan	La Hollanda	EXACT		hmc6_gualterio.tsv
+n85	Juliers	L'Italie	EXACT		hmc6_gualterio.tsv
+n85	Mr. Carman	Comte Carminati	EXACT		hmc6_gualterio.tsv
+n85	Mr. Caron	Czar	EXACT		hmc6_gualterio.tsv
+n85	Mr. Colman	Mr. Camocke	EXACT		hmc6_gualterio.tsv
+n85	Mr. Covin	Courrier	EXACT		hmc6_gualterio.tsv
+n85	Mr. Crosse	Comte Castelblanco	EXACT		hmc6_gualterio.tsv
+n85	Mr. Dodar	Mr. Le Daufin	EXACT		hmc6_gualterio.tsv
+n85	Mr. Dormer	Douaire de la Reine	EXACT		hmc6_gualterio.tsv
+n85	Mr. Duras	Daubanton	EXACT		hmc6_gualterio.tsv
+n85	Mr. Econis	Ecclesiastique	EXACT		hmc6_gualterio.tsv
+n85	Mr. Edelin	Les Ecossois	EXACT		hmc6_gualterio.tsv
+n85	Mr. Egmont	Les Elections	EXACT		hmc6_gualterio.tsv
+n85	Mr. Elens	Electeur	EXACT		hmc6_gualterio.tsv
+n85	Mr. Ellmor	Les Etats Generaux	EXACT		hmc6_gualterio.tsv
+n85	Mr. Erart	L'Eveque d'Ellis	EXACT		hmc6_gualterio.tsv
+n85	Mr. Evington	Eloignement	EXACT		hmc6_gualterio.tsv
+n85	Mr. Fabert	Cardinal Fabroni	EXACT		hmc6_gualterio.tsv
+n85	Mr. Flemin	Flotte	EXACT		hmc6_gualterio.tsv
+n85	Mr. Forestier	Les Francois	EXACT		hmc6_gualterio.tsv
+n85	Mr. Gassion	Le Gran Duc	EXACT		hmc6_gualterio.tsv
+n85	Mr. Gordon	La Guerre	EXACT		hmc6_gualterio.tsv
+n85	Mr. Grace	Principessa Guastalla	EXACT		hmc6_gualterio.tsv
+n85	Mr. Grammont	Mr. Le Cardinal Gualterio	EXACT		hmc6_gualterio.tsv
+n85	Mr. Grillon	L'Abbe Gaultier	EXACT		hmc6_gualterio.tsv
+n85	Mr. Hennel	Mr. d'Hamilton	EXACT		hmc6_gualterio.tsv
+n85	Mr. Henri	Mr. L'Abbe Houvart	EXACT		hmc6_gualterio.tsv
+n85	Mr. Herman	Le Duc d'Hannover	EXACT		hmc6_gualterio.tsv
+n85	Mr. Husdon	Mr. le Marechal d'Huxelles	EXACT		hmc6_gualterio.tsv
+n85	Mr. Jesmin	Cardinal Imperiali	EXACT		hmc6_gualterio.tsv
+n85	Mr. d'Enermont	L'Ecosse	EXACT		hmc6_gualterio.tsv
+n85	Mr. d'Epinal	Ennemis	EXACT		hmc6_gualterio.tsv
+n85	Mr. d'Epinois	L'Empereur	EXACT		hmc6_gualterio.tsv
+n85	Mr. d'Estain	Les Eveques	EXACT		hmc6_gualterio.tsv
+n85	Mr. del Bene	Mr. Dillon	EXACT		hmc6_gualterio.tsv
+n87	Mr. Panetier	La Paix	EXACT		hmc6_gualterio.tsv
+n87	Mr. Parmantier	Parti de la Cour	EXACT		hmc6_gualterio.tsv
+n87	Mr. Pecourt	Passeports	EXACT		hmc6_gualterio.tsv
+n87	Mr. Pelisson	Les Protestants	EXACT		hmc6_gualterio.tsv
+n87	Mr. Perelli	Duc de Parme	EXACT		hmc6_gualterio.tsv
+n87	Mr. Picard	Mr. Prieur	EXACT		hmc6_gualterio.tsv
+n87	Mr. Plessis	Pension	EXACT		hmc6_gualterio.tsv
+n87	Mr. Pontois	Pontificat	EXACT		hmc6_gualterio.tsv
+n87	Mr. Preston	Passe en Angleterre	EXACT		hmc6_gualterio.tsv
+n87	Mr. Pron	Promotion	EXACT		hmc6_gualterio.tsv
+n87	Mr. Provin	Propaganda	EXACT		hmc6_gualterio.tsv
+n87	Mr. Raisin	La Reine d'Angleterre	EXACT		hmc6_gualterio.tsv
+n87	Mr. Razilly	Le Cardinal de Rohan	EXACT		hmc6_gualterio.tsv
+n87	Mr. Remmon	Le Roy Catholique	EXACT		hmc6_gualterio.tsv
+n87	Mr. Richard	Le Roy Tres Chrestien	EXACT		hmc6_gualterio.tsv
+n87	Mr. Rigaut	Retablessement	EXACT		hmc6_gualterio.tsv
+n87	Mr. Robert	Le Roy d'Angleterre	EXACT		hmc6_gualterio.tsv
+n87	Mr. Rolland	Religion	EXACT		hmc6_gualterio.tsv
+n87	Mr. Rugan	Roy Auguste	EXACT		hmc6_gualterio.tsv
+n87	Mr. Salmon	Seurete	EXACT		hmc6_gualterio.tsv
+n87	Mr. Sanson	Le Duc de Savoye	EXACT		hmc6_gualterio.tsv
+n87	Mr. Saucour	Succession	EXACT		hmc6_gualterio.tsv
+n87	Mr. Saurois	Le Roy de Suede	EXACT		hmc6_gualterio.tsv
+n87	Mr. Sebaste	Milord Shrewsbury	EXACT		hmc6_gualterio.tsv
+n87	Mr. Serluis	Secretaire	EXACT		hmc6_gualterio.tsv
+n87	Mr. Silly	Pere Salerne	EXACT		hmc6_gualterio.tsv
+n87	Mr. Sobinay	La Princesse Sobieski	EXACT		hmc6_gualterio.tsv
+n87	Mr. Spanhaim	Spagna	EXACT		hmc6_gualterio.tsv
+n87	Mr. Stuart	Princesse de Saxe	EXACT		hmc6_gualterio.tsv
+n87	Mr. Talbot	Les Tories	EXACT		hmc6_gualterio.tsv
+n87	Mr. Talmon	Mr. de Torcy	EXACT		hmc6_gualterio.tsv
+n87	Mr. Tantonville	Le Cardinal de la Tremoille	EXACT		hmc6_gualterio.tsv
+n87	Mr. Urbin	L'union d'Angleterre et d'Ecosse	EXACT		hmc6_gualterio.tsv
+n87	Mr. Waldycke	Les Whigs	EXACT		hmc6_gualterio.tsv
+n87	Paussois	St. Germain	EXACT		hmc6_gualterio.tsv
+n87	Poltoa	Paris	EXACT		hmc6_gualterio.tsv
+n87	Pontai	Milord Peterborou	EXACT		hmc6_gualterio.tsv
+n87	Porter	Duc de Parme	EXACT		hmc6_gualterio.tsv
+n87	Renaud	Le Roy d'Angleterre	EXACT		hmc6_gualterio.tsv
+n87	Riebour	Rome	EXACT		hmc6_gualterio.tsv
+n87	Salsbourg	La Suisse	EXACT		hmc6_gualterio.tsv
+n87	Valogne	Versailles	EXACT		hmc6_gualterio.tsv
