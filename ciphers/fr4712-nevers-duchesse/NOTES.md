@@ -1,5 +1,5 @@
 partial
-Verdict: partial -- 6 of f.10r's 37 tokens (S1) carry f.13r's H glosses at grade C (82 82 "D. n.", 21 21 "Berry", 12 12 "b. Pal."; D2-F4712, 8 Oct 2026, applying the owner's ASKS 113 same-writer judgement under PREREG_duchf13.md; pre-registered crib gate met: 6 C >= 3, p 0.029 vs random code sets); the other 31 tokens have no reading (key no.1 a non-test at 37 tokens, DUCH-KEY1B; key no.4 cannot cover f.10r, DUCH-KEY4; key no.71 a control-backed negative as an unmarked letter text, F4712-K71 11 Oct 2026, and as an all-code text on its Motz list, F4712-71 13 Oct 2026; f.13r's list is not key no.1, 0/6). No glossed sibling anywhere in ff.13v-127 (F4712-CENSUS, F4712-71, F4712-C39, F4712-C47, F4712-C59, 13 Oct 2026; F4712-C71, F4712-C83, F4712-C95, F4712-C107, F4712-C119, 14 Oct 2026; F4712-END, 15 Oct 2026: canvases 131-142, the last, census of the volume closed). The same-writer basis is one person's "I think the same" against our own "leaning different" on the 8-form, and R11A-F4712's blind digit test was a NON-TEST (6 Oct). See "## Remaining gaps" at the end.
+Verdict: partial -- 6 of f.10r's 37 tokens (S1) carry f.13r's H glosses at grade C (82 82 "D. n.", 21 21 "Berry", 12 12 "b. Pal."; D2-F4712, 8 Oct 2026, applying the owner's ASKS 113 same-writer judgement under PREREG_duchf13.md; pre-registered crib gate met: 6 C >= 3, p 0.029 vs random code sets); the other 31 tokens have no reading (key no.1 a non-test at 37 tokens, DUCH-KEY1B; key no.4 cannot cover f.10r, DUCH-KEY4; key no.71 a control-backed negative as an unmarked letter text, F4712-K71 11 Oct 2026, and as an all-code text on its Motz list, F4712-71 13 Oct 2026; f.13r's list is not key no.1, 0/6). No glossed sibling anywhere in ff.13v-127 (F4712-CENSUS, F4712-71, F4712-C39, F4712-C47, F4712-C59, 13 Oct 2026; F4712-C71, F4712-C83, F4712-C95, F4712-C107, F4712-C119, 14 Oct 2026; F4712-END, 15 Oct 2026: canvases 131-142, the last, census of the volume closed). The same-writer basis is one person's "I think the same" against our own "leaning different" on the 8-form, and R11A-F4712's blind digit test was a NON-TEST (6 Oct); F4712-HAND's digit-rich blind comparison (15 Oct) passed its control and gives a same-writer lead (M) on the figures 0-7 and 9, the disputed 8 not compared. See "## Remaining gaps" at the end.
 Gomberville (ed.), *Les Mémoires de M. le duc de Nevers* (1665; Google Books H2eV4wAmIr0C and three other copies) full-text searched by this worker (NV-INTAKE, 3 Oct 2026) via the Books API with `&country=US`: "duchesse ma femme" hits only Nevers' 1593-94 Roman legation speech ("...qu'à la Duchesse ma femme, à mes terres...", also in the *Discours de la legation* 1594) and "Madame ma femme" 0 -- no letter to the duchess with a cipher passage printed there.
 
 # BnF fr.4712 f.10, the duc de Nevers to the duchesse de Nevers, undated: 37-number cipher passage -- NV-09
@@ -962,3 +962,45 @@ Read so far: 6 of 37 f.10r tokens at C under S1 (16%), f13_carry.tsv; 31 tokens 
 - [x] image-check: f.10r read from crops (DUCH-KEY1B) and checked at native resolution for marks (none, F4712-71); f.13r two blind passes agree on all 34 codes (DUCH-F13); code 40 gloss third model read a NON-TEST (F4712-40), model reader retired for that gloss, owner's eye ASKS 162
 - [x] retry: hand question retried by a blind digit test (R11A-F4712, NON-TEST) and settled by the person's look (ASKS 113)
 Verdict: keep going: 1 internal gap (same-writer basis, not-attempted); the sibling census of fr.4712 is closed; cheapest next: a digit-rich f.13r/f.10r hand comparison, ~$2
+
+## F4712-HAND (worker for LANE DEFAULT-A1-0447-15, account 1, 15 Oct 2026, 05:02-05:1x UTC by date -u): digit-rich f.13r/f.10r hand comparison -- calibration PASS, same-writer lead (M); the 8 not compared
+Brief `.claude/briefs/runs/2026-10-15-acct1-default-0447-jobs.md` "### F4712-HAND". Prior work: `tools/prior_work.py fr4712-nevers-duchesse
+--item-spec 'shelfmark=BnF fr.4712;folio=10r,13r,107v;canvas=18,22,118;date=1592-10-01' --step-type crop --offline` exit 4 on six own-work
+LEADs (earlier reads, the census, V1-F4712, this claim; none a digit-form hand comparison: R11A-F4712 was a NON-TEST at 3-5 digits), recorded
+CLEAR with `--record`, re-run exit 0. No decode.
+Pre-registered `PREREG-F4712-HAND.md` (commit 78ea34a7a, before any look): features = the construction of each figure 0-9 (strokes, loops,
+entry/exit, joins; size and ink weight excluded), the 8 reported separately; control = the same comparison against a different hand in the volume.
+- Panels (value-free images, no typed values): R = f.10r line 1 (`images/f10_L01_s1/s2`); P (positive, same writer by construction) = f.10r
+  line 2 (`images/f10_L02_s1/s2`); T = f.13r lines 1, 3, 6, 7, 13, 15 (`images/f13r/f13g_LNN_s1` stacked over `_s2`, 6 images); N (negative)
+  = f.107v foot, the account's Arabic-figure columns (249427, 74446 ..., F4712-C107), 2 strips cut from one native region. Labels W=T, X=P,
+  Y=N by `random.Random(4712).sample`. 12 images, one blind Sonnet call.
+- Host: openapi.bnf.fr, **1 request** (`f118/pct:0,55,50,45/pct:70`), HTTP 200, take/release ROOM lines; file `images/hand/c118_foot_pct70.jpg`
+  untracked, entry `f4712_hand` in images/manifest.json (URL, sha1, the two strip boxes) -- regenerate with `curl -A "cipher-lab research
+  script (contact via repository)" -o images/hand/c118_foot_pct70.jpg <that URL>`; the R/P/T panels are files already in `images/`.
+- Result (`hand_f4712.tsv`): scores T 7, P 8, N 3; per-digit share same/(same+different) T 7/7, P 7/7, N 0/5 (N's 2, 3, 4, 7, 9 judged
+  different, "a fast, rounded hand ... a crossed 7").
+  **Calibration gate PASS** (P 8 >= 6; P - N = 5 >= 3; share P - N = 1.00 >= 0.30). **T meets the same-writer rule** (7 >= P - 1; 1.00 >= 0.85):
+  **same-writer lead, graded M.** T's 4 and 6 were "unsure", not different.
+- **Caveat, the decisive feature was not tested:** the reader reported **no 8 in R** (f.10r line 1), though DUCH-KEY1B reads that line as
+  opening "82 82 52 ..." with the 8 written as an open ɑ-form; the reader instead described "a crossed 0 at the start" of R and of X. So the open
+  ɑ-form 8 on f.10r was not recognised as an 8 by a blind reader, and the 8-form conflict (DUCH-F13's "leaning different") is neither confirmed
+  nor removed by this job. T's 8 was described as "one S-like pass, small closed lower bowl, upper bowl barely closed".
+- Effect: none on grades. The six carries in f13_carry.tsv stay C on ASKS 113 (5 Oct 2026); this lead is supporting evidence beside them,
+  logged with the 8 caveat. f.10r tokens read by this job: 0. Optional replication call not run (kept under the cap).
+Vision: 1 Sonnet subagent call (12 images); my own look: 1 (the f.107v region overview, to place the strips).
+
+## Remaining gaps (F4712-HAND, 15 Oct 2026)
+Read so far: 6 of 37 f.10r tokens at C under S1 (16%), f13_carry.tsv; 31 tokens unread
+- f.10r tokens outside f.13r's H-glossed codes (31 of 37) - blocker: no-key-material; key no.1 is a non-test at 37 tokens (DUCH-KEY1B), key no.4 cannot cover f.10r (DUCH-KEY4), key no.71 is a control-backed negative both as an unmarked letter text (F4712-K71) and as an all-code Motz text (F4712-71); the whole of fr.4712 after f.13r is censused with no glossed sibling (F4712-CENSUS ... F4712-END); a sibling, if any, lies outside this volume (other Nevers volumes of the Français fonds, not scoped)
+- same-writer basis, the 8-form only - blocker: not-attempted; F4712-HAND's blind digit comparison passed its control and gives a same-writer lead (M) on 0-7 and 9, but its reader did not recognise f.10r's open ɑ-form as an 8, so the one disputed figure was never compared; next: an 8-only blind panel (f.10r's ɑ-forms cropped from images/f10b/f10c_zoom_L1_21-69.jpg and the L1 crops against f.13r's three 8s and a control hand's 8s), ~$1
+- f.13r code 40 gloss (Vill. vs Lill.) and code 93 conflict - blocker: waiting-on ASKS 162 (the owner's eye on images/f13r/g40 t2/t4 and recon_1/recon_2 tiles 93a/93b); model-reader instrument retired for this gloss (F4712-40 NON-TEST, g40_read.tsv); neither code occurs on f.10r under S1
+
+## Escalation (F4712-HAND, 15 Oct 2026)
+- [x] siblings: fr.4712 censused from f.13v to the back cover, no glossed sibling in the f.10r figure system (F4712-CENSUS, F4712-71, F4712-C39, F4712-C47, F4712-C59, F4712-C71, F4712-C83, F4712-C95, F4712-C107, F4712-C119, F4712-END); f.35r-v is Tomokiyo's Pasquier letter (mixed digit/sign cipher, no interlinear gloss at 1600 px); a search of other Nevers volumes is a separate scout question, not this volume's
+- [x] clear-pages: ff.9, 11, 12 checked, no cipher (DUCH-LEAVES); f.13r's glossed codes used as the crib (DUCH-F13); ff.13v-34v and ff.36r-126v clear (census jobs above)
+- [x] known-keys: key no.1 applied (non-test, DUCH-KEY1B), key no.4 tried (design mismatch, DUCH-KEY4), key no.71 applied with matched controls as a letter text (F4712-K71) and as an all-code Motz text (F4712-71), control-backed negative both ways
+- [x] print: Gomberville's Mémoires (1665) full-text searched (NV-INTAKE, 3 Oct 2026), no cipher passage printed
+- [n/a] key-rebuild: 37 tokens is far below any cryptanalytic length for a code of this size
+- [x] image-check: f.10r read from crops (DUCH-KEY1B) and checked at native resolution for marks (none, F4712-71); f.13r two blind passes agree on all 34 codes (DUCH-F13); code 40 gloss third model read a NON-TEST (F4712-40), model reader retired for that gloss, owner's eye ASKS 162
+- [x] retry: hand question retried by a blind digit test (R11A-F4712, NON-TEST), settled by the person's look (ASKS 113), and re-run digit-rich with a control (F4712-HAND, calibration PASS, same-writer lead M, the 8 not compared)
+Verdict: keep going: 1 internal gap (the 8-form, not-attempted); cheapest next: an 8-only blind panel f.10r vs f.13r with a control hand, ~$1

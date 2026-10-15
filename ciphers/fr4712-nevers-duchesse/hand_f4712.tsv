@@ -1,0 +1,15 @@
+# F4712-HAND, 15 Oct 2026: one blind Sonnet call, PREREG-F4712-HAND.md (78ea34a7a). Labels: W=T (f.13r L1,3,6,7,13,15), X=P (f.10r L2), Y=N (f.107v foot account figures); R = f.10r L1.
+digit	R_form	T	P	N
+0	small closed oval, plus a crossed 0 at the start	same	same	unsure
+1	plain downstroke with a small entry flag	same	same	absent
+2	Z-like, top curl, flat base with a leftward loop	same	same	different
+3	flat-topped, z-like, rounded below	same	absent	different
+4	open-topped, with a long diagonal tail	unsure	same	different
+5	flagged top bar, bowl below	same	absent	absent
+6	ascending head into a closed loop	unsure	same	unsure
+7	flat top with a left hook, then a diagonal	same	same	different
+8	absent	absent	absent	absent
+9	g-like closed loop with a descending tail	same	same	different
+# score: T 7, P 8, N 3. share (same/(same+different)): T 7/7 = 1.00, P 7/7 = 1.00, N 0/5 = 0.00
+# calibration: P 8 >= 6; P-N 5 >= 3; share P-N 1.00 >= 0.30 -> PASS. T: 7 >= P-1 (7) and 1.00 >= 0.85 -> same-writer lead (M)
+# 8 in R: absent (reader); 8 in T: one S-like pass, small closed lower bowl, upper bowl barely closed (82, 58 x2); 8 in P, N: absent

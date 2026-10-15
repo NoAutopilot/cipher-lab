@@ -1803,5 +1803,19 @@
    "k71/f10_native_right.jpg (autocontrast halves of the on-disk native src f18 crop, no request)"
   ],
   "job": "F4712-71"
- }
+ },
+ "f4712_hand": [
+  {
+   "file": "hand/c118_foot_pct70.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f118/pct:0,55,50,45/pct:70/0/default.jpg",
+   "date": "15 Oct 2026",
+   "size": [
+    2978,
+    1852
+   ],
+   "sha1": "78c217f4fc94b12077497d2ce66e38db4d27a38d",
+   "job": "F4712-HAND",
+   "note": "untracked; N panel strips cut from it: (745,690,2905,1015) and (2470,215,2905,795)"
+  }
+ ]
 }
