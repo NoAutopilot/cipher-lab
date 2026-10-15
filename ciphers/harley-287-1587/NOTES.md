@@ -1000,3 +1000,12 @@ onelie to let y.." onward, not inspected for further cipher). Requests: de-crypt
 by sign (82 signs) and decoded under Bourdeau's key against the leaf's own clear text (S1 beats its null; the PREREG gate is outcome C
 because S2 was a non-test); no decipherment of R8480 found in Bourdeau's tree or elsewhere searched by HAR-41R and this job.
 Bourdeau's key used unchanged (MIT / CC BY 4.0).
+
+## HAR-2R: f.41r (R8480) R1-R9, second blind reader (15 Oct 2026, in progress)
+
+Brief: `.claude/briefs/runs/2026-10-15-acct4-default-1735-jobs.md` "HAR-2R". PREREG-HAR-2R.md pushed at 269d0927f before any fetch.
+Images: one DECODE browser login 18:11 UTC, `--fetch` of the two absolute filesrv URLs, `--delay 1600 --max-files 2`: 4 requests; P1 sha1
+0f4896606b21, P4 7076557b0b0e (match). Scratchpad only.
+Crop command (run 18:1x UTC, before the first reader call): `python3 -I ciphers/harley-287-1587/tx/crop_har2r.py <img dir> ciphers/harley-287-1587/tx/f41r_runs.tsv <crops>`
+(the two frames of tx/f41r_runs.tsv, rotate -2.25 deg, 1.15x; R2_p2 and R4_p2 then shrunk to 2480 px wide, the 2500 px rule; control = the three
+R8479 P4 boxes side by side). Call 1 order by random.Random(2): image A = R1, image B = control.
