@@ -84,3 +84,22 @@ enters key.tsv on a non-test.
 Verdict NOTES.md ~line 3150: (a) the c293 E beside the c268 ball-foot E exemplars and the c275 E -- same sign or not; if the same, run --try with
 "E = null" as the hypothesis against E = e, power control first (~0.8). (b) then, if >= 50% cap left, a glossed 13: and plain 65 on Baluze 169
 f.36-38 / f.208-209 (~2), same PREREG family as BAL-C275G. Nothing into key.tsv without --try at every occurrence.
+
+## Wave 3 result (08:3x UTC): LVN-P2RETX 5.80 D, C1161-SSPLIT 4.46 N (gate K fail = non-test), BAL-E293 2.40 D.
+
+## Wave 4 (08:3x UTC 15 Oct)
+
+### LVN-P2B (Opus, cap 5.5, box 75 min, disk only): lodewijk-van-nassau-1573-74 4611 p2 ordering repair + p2b settle on the map
+NOTES.md ~line 4901 (LVN-P2RETX next): (1) ordering repair of p2_L13-L33 -- rows re-sequenced and duplicates retired by K position, a pre-registered
+rewrite from retx_p2_lines.tsv (~2); (2) p2b settle on the map: rows `match` with A = B settle under a pre-registered rule, same control/gate as
+LVN-4611P2 (~2). PREREG addendum before either. Do NOT rule the 11 H rows contradicted by ink: they go to the separate verifier after you. decode_key
+--check after; report C/H before and after; write "verifier wanted" in ROOM when done.
+
+### C1161-SORT2 (Opus, cap 5, box 75 min, disk only): clair1161-avis-flandre-1688 second independent blind S sort + registered --try
+Verdict NOTES.md ~line 2799. A reader that has not seen C1161-SSPLIT's labels sorts the same 275 windows (ssplit/ss_windows.py; blind subagent calls
+on crops only, no labels in the prompt); then gate K as registered on the two sorts' agreement; only if it passes, the registered --try on the agreed
+split with its power controls. Nothing into key.tsv on a non-test.
+
+### BAL-169 (Opus, cap 3, box 60 min, openapi.bnf.fr <= 8, ROOM take/release): baluze167-davaux-1637 glossed 13: and plain 65 on Baluze 169
+Verdict NOTES.md (BAL-E293's): "a glossed 13: and plain 65 on 169 f.36-38 / f.208-209 (~$2)". Same PREREG family as BAL-C275G; --try at every
+occurrence before anything enters key.tsv.
