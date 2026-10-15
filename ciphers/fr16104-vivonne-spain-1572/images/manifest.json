@@ -11300,5 +11300,22 @@
    "curl -A \"cipher-lab research script (contact via repository)\" -o SCRATCH/f207_native.jpg \"<f202r native region URL>\"; python3 tools/iiif_lines.py --image SCRATCH/f207_native.jpg --region 830,200,3070,4450 --out SCRATCH/p67c --prefix c207_f202r --follow-slope 400 --distance 70 --max-width 1560 --overlap 150 --debug   # 32 x 3 crops",
    "curl ... -o SCRATCH/f212_native.jpg \"<f207r native region URL>\"; python3 -c \"from PIL import Image; Image.open('SCRATCH/f212_native.jpg').crop((450,300,3850,5550)).save('SCRATCH/f207r_text.jpg', quality=92)\"; python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py SCRATCH/f207r_text.jpg --out SCRATCH/dec --prefix c212_f207r --strips 7"
   ]
+ },
+ "viv70c": {
+  "job": "VIV-70C2, 15 Oct 2026, for LANE VIV-KEYSTONE (account 4)",
+  "committed_images": "none (overviews and crops untracked under images/p70c/)",
+  "overviews_600px": [
+   "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f216/full/600,/0/default.jpg",
+   "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f217/full/600,/0/default.jpg",
+   "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f221/full/600,/0/default.jpg",
+   "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f222/full/600,/0/default.jpg"
+  ],
+  "native_regions": {
+   "f211v (c217 left)": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f217/150,100,3850,5750/max/0/default.jpg"
+  },
+  "regenerate": [
+   "python3 tools/iiif_lines.py --ark btv1b9009663p --canvas 217 --iiif-host openapi --region 150,100,3850,5750 --out ciphers/fr16104-vivonne-spain-1572/images/p70c --prefix c217_f211v --debug   # fetch once (its crops are discarded)",
+   "python3 tools/iiif_lines.py --image ciphers/fr16104-vivonne-spain-1572/images/p70c/src_image_v3_ark_12148_btv1b9009663p_f217_150_100_3850_5750.jpg --region 850,470,3000,4150 --out ciphers/fr16104-vivonne-spain-1572/images/p70c --prefix c217_f211v --follow-slope 400 --distance 70 --max-width 1560 --overlap 150 --debug   # the 33 x 3 crops the passes read"
+  ]
  }
 }

@@ -1,0 +1,3 @@
+# untracked crops (VIV-70C2): no image goes into git; regenerate per images/manifest.json "viv70c"
+*
+!.gitignore
