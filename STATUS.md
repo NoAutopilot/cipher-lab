@@ -9461,3 +9461,12 @@ workers over cap, worst NO70-WORDS 1.6x (three vision units + a screen in a 2.5 
   gates, preflight check 8; tx/sorter_f191b re-rendered but NOT published (about 15 of 37 piles still mixed: "kept" rows are not answers).
   Spawned 04:4x: VIV-GSPLIT2 (N_f >= 12 with f.202r/f.211v, cap 6) and VIV-F191D (5-pass rule, cap 3); queued for account 1:
   SORTER-PILES-ANSWERED (--answered-only, cap 4). No owner page until a render passes the eye count.
+
+- **15 Oct 2026 05:5x UTC (VIV-KEYSTONE, appended):** VIV-GSPLIT2 untested at N_f = 11 (recall 0.455 FAIL; the new-leaf auto map cut 2 of 2 f tiles
+  wrong -- the cut, not the classifier, is the limit); VIV-F191D 5-pass rule: run 37 -> 37, no gate moved; SORTER-PILES-ANSWERED: the owner's real
+  answers define 13 piles, 4 single-shape -- the exemplar inventory is not settled, so no question packet can be built from it. Honest state of the
+  keystone: every machine instrument at the 37 bar has failed its gate (packet, g-split x2, third reader, 5-pass, look-alike); the route left is
+  the TRANSCRIPTION.md one -- the owner settles ink 63's alphabet in a step-1 sorter (forming piles from certain-answer exemplars, not answering
+  questions), then readers transcribe against those labels. Next: VIV-GSPLIT3 (hand-cut every label-g truth tile, the different instrument the
+  worker named; account 4) and SORTER-STEP1-INK63 (the alphabet-settling page, built and checked, not published; account 1); the owner is asked
+  to sort only once a PREREG'd test consumes the sort within a day.
