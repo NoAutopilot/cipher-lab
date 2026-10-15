@@ -569,7 +569,7 @@ frequency-allotted control that H1 had already withdrawn a week earlier; both co
 
 ## Depth re-rule 2 (DV-MERCY2, 15 Oct 2026)
 
-Verifier DV-MERCY2 (account 4, for LANE VIV-KEYSTONE parent session_01D7XWmthshMVqxumdDvitPh), 15:36-16:0x UTC by date -u;
+Verifier DV-MERCY2 (account 4, for LANE VIV-KEYSTONE parent session_01D7XWmthshMVqxumdDvitPh), 15:3x UTC by date -u (claim to done);
 brief `.claude/briefs/runs/2026-10-15-acct4-depth-steps-2.md` "## JOB DV-MERCY2"; bar `.claude/briefs/runs/2026-10-08-acct3-depth-bar.md`
 (as in DV-MERCY). Disk only, no network, no images, no subagents. A separate session from MERCY-M33 and MERCY-IMG. Nothing decoded;
 key.tsv, the reading, status.json and the N-class (N4) untouched. Item: BnF Espagnol 144 f.22r-v, instruction to Mercy, 6 June 1648.
