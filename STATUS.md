@@ -9363,7 +9363,7 @@ Results:
 Lessons: OLD-O5 (0.88) re-ran a step already done as AUDIT 6 -- grep AUDIT.md section titles, not only NOTES Verdicts, before briefing; 5 of 12
 workers over cap, worst NO70-WORDS 1.6x (three vision units + a screen in a 2.5 cap: price per pass, CLAUDE.md Usage 6).
 
-- **15 Oct 2026 02:0x UTC (VIV-KEYSTONE, appended to the handoff above):** the owner answered the f.191r packet (34/34). PREREG-VIVPACKET3 s.5 run:
+- **15 Oct 2026 01:4x UTC (VIV-KEYSTONE, appended to the handoff above):** the owner answered the f.191r packet (34/34). PREREG-VIVPACKET3 s.5 run:
   longest all-H run 37 -> 24, V_strict top-1 21 -> 17, no stretch >= 42 clean, f.191r stays D1, no verifier (NOTES.md "VIV-PACKET3 result"). 18 of 34
   answers were "new sign": the reader-label piles, not the person, are the limit (R13/R15/R16 logged in tools/data/sorter_owner_requirements.tsv).
   Next: VIV-GSPLIT (machine side; seeds = the owner's new piles of recurring shapes), and no further owner packet until a page with one-shape piles
