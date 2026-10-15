@@ -1,0 +1,35 @@
+# B.147 p.235 (H-1649 Image 879), BL Add MS 21807: second page of the period decipherment of Clinton to Haldimand, New York,
+# 9 Sept 1780 (item 3004; first page p.234 = p234_reading.txt). Read by worker CLIN-3004B (15 Oct 2026) on one own look at Image 879
+# at 2400 px (autocontrast crop of the text block), before any p.230/p.231 pass; line breaks as written; spelling as on the page.
+BODY
+Considerable body of land forces
+which being propagated amongst
+the rebels greatly facilitated
+Washington's Success in Compleating
+and augmenting his army. The
+operations of the Enemy appear to be
+still intended against this place
+but it is highly probable that
+they will renew their Intentions
+of attacking Canada by number
+four and the lakes as early
+next year as the season will
+permit, should the second
+french reinforcement arrive,
+I will endeavor to send you
+immediate notice of it. In the
+mean time if the good news
+from the Southward (which the
+Paper I send herewith contains)
+proves true, & of which there
+seems little Doubt, I hope
+Washington in Conjunction with
+the french already arrived, will
+not be able to attempt any thing
+serious this season, I shall however
+send you as early Intelligence
+of their designs, as I may from
+time to time be able to procure.
+END
+Copy.
+[Endorsed:] From Sr H. Clinton in Cypher of 9 Sepr 1780 Recd 18th Octr by Lt. Schieffly

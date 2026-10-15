@@ -25,3 +25,24 @@ reconciliation on the crops of every A/B disagreement. passes/p229_reconciled.ts
 Scorer: passes/check_p229.py (check_p226.py with the input, output and known-answer names changed; --check exits 1 when
 check_p229.json is stale, rule 7). A PASS says only that the 1778 key reads these runs as the p.234 text beyond the permuted-key
 control; no reading changes, AUDIT.md is not touched. A FAIL or NON-TEST is logged as such, with both numbers.
+
+## Addendum CLIN-3004B (15 Oct 2026, 08:4x UTC by date -u; written before any blind pass on p.230 or p.231 and before any score)
+
+Job CLIN-3004B, LANE DEFAULT-A1-0740-15 (account 1). Two further pages of the same cipher, each scored ON ITS OWN with the design above
+unchanged: **B.147 p.230** (H-1649 Image 874, IIIF c0707wm9qt6b) and **B.147 p.231** (Image 875, IIIF c03775v2325j). pp.232-233 are
+named, not done. Seen before this addendum: one 1600 px montage of Images 874+875 (to place the four figure columns per page; clear words
+seen on it: p.230 "but the", "A small Vessel going to Quebec gives me an opportunity of repeating to you the above Intelligence and of
+transmitting to your Excellency the", "to have", "We have since heard that an additional", "would be", "which I have reason to believe the
+intended"; p.231 "Success in", "which being", "and against", "But it is highly probable that they will", "The Operation[s]", "greatly",
+"and a considerable") and one look at Image 879 (p.235, the second page of the period decipherment) at 2400 px.
+**Known answer, both pages:** p234_reading.txt BODY..END followed by p235_reading.txt BODY..END (read by this worker before any pass),
+letters only, spaces and punctuation removed, '&' kept, spelling as on the page. The clear words above place p.230 in p.234's text and
+p.231 across the p.234/p.235 join; the concatenation is fixed now, for both pages, and not changed after scoring.
+Per page: one 3200 px fetch, each figure column cut as ONE crop (tools/iiif_lines.py --image --region --centres, command pasted in NOTES
+before the first subagent call); two blind Sonnet passes on that page's crops only (no key, no decipherment, no other page's data, not
+told the question; pass B reads the columns in reverse order); one worker reconciliation unit on the crops of every A/B disagreement;
+passes/p230_reconciled.tsv, p231_reconciled.tsv; a cell still open after reconciliation is graded M and excluded from runs (rule R0).
+Scorers passes/check_p230.py, check_p231.py (check_p229.py with input, output and known-answer names changed; --check exits 1 when stale).
+Same rule R0 classes, same B2 statistic, key variant (a) GATED and (b) reported, same page-permuted-key control (1000 seeds, seed 123),
+same prechecks (can-differ >= 0.99, runs_ge3 >= 10, else NON-TEST), **same gate per page: B2 share >= 0.60 AND hits > control max.**
+Threshold not re-tuned. p.231 runs only if the job is under 80% of its cap after p.230; if not, it is named as not done.
