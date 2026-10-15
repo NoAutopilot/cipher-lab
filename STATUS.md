@@ -5034,6 +5034,35 @@ Open for the next verifier or solver lane:
 3. Leads not run: Costabili key in ASMo Cifrario sec. XV B.4 (Lang 2018 p.156); Posthius cipher from Camerarius II (Aerztebriefe regest);
    Pisany f.302v print search beyond Aubery.
 
+## LANE DEFAULT-account-1-20261015-0206 handoff (session_01D9kV9UtXBdDRDpgz1LC3f4, account 1, for the orchestrator (owner account)), 15 October 2026 (02:07-03:2x UTC by date -u; closed: in-scope backlog spent, two parallel default lanes on the same list; workers 43.06 + orchestrator ~5.0 = ~48.1 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-15-acct1-default-0206-jobs.md (3 waves, 11 workers, all Opus). Gate 0a: SESSION-SWEEP-account-1
+stale-claimed since 5 Oct, proceeded. VERIFY-BACKLOG: high rows Birago/ceppo (off limits), rest audit2 on N0/N1 (googleapis 503 at 02:1x).
+Backlog = `next_steps.py --hot-only` runnable rows + the three 14 Oct late handoffs' next lists. Excluded: Birago, Armstrong, Debosnys,
+VIV-KEYSTONE, BNF-FOCUS folders/holdings. No image file committed. Collision: DEFAULT-A2-0209-15 posted its picks at 02:19, the minute this
+lane spawned wave 1; its BAL22-NUM and F4712-C131 stood down for this lane's BAL-F22R/F4712-END, and this lane's ERBA-SWAP stood down for its
+ERBA-SWAP (this lane did not re-read ROOM before wave 2: re-read the last 60 ROOM lines immediately before every spawn).
+**workers (ledgered + archived)**
+- pro3055-clinton-1779: CLIN-SIB 3.84 D (p.243, B2 PASS 17/18 vs control max 2); CLIN-SIB2 3.38 D (p.242 cols 4-6, 14/14 vs max 4); CLIN-SIB3
+  3.35 D (p.244, 9/10 vs max 2, at the runs floor). 3050 pp.242-244 all checked against the 1778 key; no reading changed.
+- baluze167-davaux-1637: BAL-F22R 5.12 D (f.22r 16', 45', 12: M -> S, real 21/21 vs shuffle 0/200; f.22r H 4 S 12 I 2 M 6); BAL-C275U4 3.81 D
+  (c275 u4 split by minim count: u4 = t, m4 = m, unmarked 77 = ti, S, 56/60 vs shuffle max 21; x = c M; E null-like).
+- fr4735-monluc-lansac-poland-1573: MONL-VB 6.85 N (blind re-sort, controls 0/7, one relabel L10:29 K04->K12; align 0.766 unchanged).
+- fr4712-nevers-duchesse: F4712-END 2.46 N (canvases 131-142: no cipher, no glossed sibling; census closed).
+- sforza-duke-1447-f15: SFZ-DEC4 3.72 N (DECODE 1597 nos. 106-114, 169-171 + P2: no Visconti sheet; nos. 170/171 under their nulls; all 1597
+  records opened). Its named next step, an ASKS row for a person's read of R5323, was NOT written (grep ASKS.md 03:2x): for the orchestrator.
+- mccormick-1999: MCC-SKEL 2.93 N (token_anneal.py --skeleton; control reads words but not above its order null at N<=2,000; drop scheme
+  negative; keepfinal weak -SE lead).
+- kaliningrad-2015: KAL-2ST 2.77 N (columnar_homophonic.py stage=two; control 0.850 gated; target and shuffle judge FAIL: control-backed
+  negative for columnar w2-12 x homophonic, conditional on transcription and corpus era).
+- erba-2006: ERBA-SWAP 0.83 Q (stood down, A2-0209 held the job).
+Known-text share (light guardrail): 0%. Overruns: MONL-VB 2.3x, BAL-F22R 1.7x, SFZ-DEC4 1.5x, BAL-C275U4 ~1.0x, F4712-END ~1.0x.
+**next**
+1. pro3055: p.247 cols 3-8 for 3077 (~3.5, same method).
+2. baluze167: f.22r 13:, plain 16, 65 on 169 c172-188 (~2); c275 7/5 on the rest of the Memoire (c266-273/c277-280 fetched, not read); c283 tail (~1.5).
+3. fr4735: c268 L11-L15 (~6 at ~0.6 per blind call, price per tile).
+4. sforza-duke: the R5323 person-read ASKS row (orchestrator); Aragon-Naples 92/95 after 1458 untested.
+5. mccormick: suffix-aware abbreviation model (third instrument; check rule 3 before briefing). kaliningrad: non-columnar transposition families only.
+
 ## LANE DEFAULT-account-1-20261014-1840 handoff (session_01STU17qxn3D94dW5wmiCrfE, account 1, for the orchestrator (owner account)), 14 October 2026 (18:40-20:0x UTC by date -u; closed: under one wave of budget left; workers 50.32 + orchestrator ~6.2 = ~56.5 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-14-acct1-default-1840-jobs.md (3 waves + 2b, 14 workers, all Opus). Gate 0a: SESSION-SWEEP-account-1
 stale-claimed since 5 Oct, proceeded. VERIFY-BACKLOG: high rows Birago/ceppo (off limits), rest audit2 on N0/N1. Backlog = `next_steps.py
