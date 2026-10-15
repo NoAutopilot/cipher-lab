@@ -3642,6 +3642,68 @@ Side effect: the template marker moved to 2026-10-15.1, so `tools/live_sorters_c
 (`tools/sorter_rerender.py`); a re-rendered question page built from reader labels now WARNs on R13/R14/R15 in preflight and FAILs with `--owner-page`.
 Rule 10: nothing here is a reading; no claim about novelty.
 
+## SORTER-PILES-ANSWERED (15 Oct 2026, 04:50-04:59 UTC by date -u; account-1 worker for LANE VIV-KEYSTONE, account 4): piles from answered rows only, f.191r packet re-rendered (not published)
+Brief: .claude/briefs/runs/2026-10-15-acct4-for-acct1-jobs.md "JOB SORTER-PILES-ANSWERED". Tool job: no key.tsv, reading, rec.tsv or status.json edit;
+nothing published (the account-4 parent decides). Requests: none to any host. Vision: the four contact sheets below, read by this worker (no subagent);
+cost not visible to this session.
+
+**Tool.** `tools/sign_sorter.py --piles-from ... --answered-only`: a settled row counts only if the person MOVED it, CHECKED it (a record in `db/checked/`
+beside SETTLED.tsv) or it sits in a pile the person MADE (`db/newpiles/`); a `kept` row with no checked record is left off, and under `--later-wins` an
+untouched row on a later page never replaces an earlier answer. `--certain` tiles still join only a pile the answered rows formed. Offline test
+`tools/tests/test_sorter_answered_only.py` (14 checks, ALL PASS); `tools/tests/test_sorter_piles_from.py` re-run ALL PASS (browser test included);
+SYSTEM.md sorter paragraph extended (system_map_check ok).
+
+**Re-render** `tx/sorter_f191b/sorter_viv_f191b.html` (replaces SORTER-FIX's render; that one is recoverable from git, commit 43b1e0f2a). Command (paths
+under this folder; --title and --lede unchanged from the SORTER-FIX page): `python3 tools/sign_sorter.py --piles-from tx/vivhuman/answers_2026-10-14/settled.tsv
+--piles-from tx/vivhuman/answers_2026-10-14_attempt2/settled.tsv --later-wins --answered-only --tiles-from tx/sorter_f191/sorter_viv_f191.html
+tx/sorter_human2/sorter_viv_human2.html tx/sorter_human/sorter_viv_human.html --certain tx/sorter_f191b/certain.tsv --meanings key.tsv --focus tx/sorter_f191b/focus.tsv
+--box-check tx/sorter_f191/boxes_handcut.tsv --cipher-lines tx/sorter_f191b/cipher_lines.tsv --title ... --lede ... --out tx/sorter_f191b/sorter_viv_f191b.html`
+```
+--answered-only: tx/vivhuman/answers_2026-10-14/settled.tsv: 23 of 577 rows answered (moved, checked, or in a pile the person made)
+--answered-only: tx/vivhuman/answers_2026-10-14_attempt2/settled.tsv: 8 of 537 rows answered (moved, checked, or in a pile the person made)
+--later-wins: 8 tile(s) re-answered in a later file, the later answer stands: f201r_L03_s2_01_014 z -> 3; f201r_L04_s1_01_019 z -> ~queue; f201r_L05_s2_01_015 z -> 3; f201r_L13_s2_01_020 ~queue -> L; f201r_L18_s1_01_007 z -> 3; f201r_L21_s2_01_007 ~queue -> to; f201r_L22_s2_01_004 ~queue -> n; f201r_L22_s2_01_019 ~queue -> z
+--piles-from: 22 settled tiles, 1 unsettled (queue/aside/bad-cut/taken-out) left off, 0 conflicts, 91 certain tiles added, 106 certain tiles with no settled pile left off, 1 certain tiles settled elsewhere (settled pile kept), 0 sids with no tile; 13 piles, 34 waiting; same-letter groups: @/to; s/z
+piles check (R13, R15): PASS (a) no tile in two piles, (b) no waiting tile inside a pile, (c) every shared meaning noted
+box check: 34/34 question boxes pass (100%, gate 90%) [tx/sorter_f191/boxes_handcut.tsv]
+14 piles, 147 tiles, 0 skipped, 0 clusters (none), 0 ranked, 1938 KB -> tx/sorter_f191b/sorter_viv_f191b.html
+```
+Full preflight (`python3 tools/sorter_preflight.py tx/sorter_f191b/sorter_viv_f191b.html --cipher-lines tx/sorter_f191b/cipher_lines.tsv --owner-page`):
+```
+PASS template: ok, Fix the cut present, marker 2026-10-15.1
+PASS answerable: 34 focus tiles, 13 named piles of 14, 0 unanswerable
+PASS R12/R16: no "Fix the cut" on the question card; "Bad cut" is its only box answer
+PASS R13: piles built from the person's settled piles (--piles-from)
+PASS R14: box check 34/34 (100%, gate 90%) [boxes_handcut.tsv]
+PASS R15: no tile in two piles, no waiting tile in a pile, waiting box a queue, every shared meaning noted (2 same-letter groups)
+PASS right line: 147 tiles; 0 tile(s) off the cipher lines, 88 of 125 listed lines have tiles (none on c105_f102r_L04_s1, c105_f102r_L07_s2, c105_f102r_L08_s1, c105_f102r_L09_s1, c105_f102r_L10_s2, c105_f102r_L11_s1, c105_f102r_L11_s2, c105_f102r_L15_s1); shape: 0 wide (>2.5x median 42 px), 2 strip-height boxes, 1 ink outside 3-60% of 147 measured; 3 = 2.0% (limit 5%) [list: tx/sorter_f191b/cipher_lines.tsv]
+PASS contact sheet: 24 tiles beside their line strips -> tx/sorter_f191b/sorter_viv_f191b.preflight.png (seed 20261006; eye it before publishing)
+PASS colour: tokens, tints, box colours and person-facing text pass tools/cvd_check.py
+PASS gestures: owner rules R05 (tap = to the tray, hold = the card, every box; swipes move nothing) and R02 (lines above and below) hold on iPhone 13, iPhone SE and a mouse: 204 checks, 19 skipped (a tile kind this page lacks, counted per device) [test_gestures.js]
+PASS pan: owner rule R09 (slide the card's picture to look around) holds on an iPhone 13: 3 checks [test_pan.js --probe]
+preflight: PASS
+exit 0
+```
+
+**Eye check per pile** (contact sheets: opening 16 tiles of each pile, `tx/sorter_f191b/piles_0.png`, `piles_1.png`, regenerated for this render; the
+SORTER-FIX sheets read from git 43b1e0f2a). A pile is "mixed" when it holds a tile of a clearly different letter shape; a bad cut (blank, bar, blot) alone is
+not counted as mixed. This count is stricter than SORTER-FIX's "about 15".
+| render | piles | one shape | mixed |
+|---|---|---|---|
+| SORTER-FIX (kept rows count) | 37 | 11 (#, 4, 7, 8, Z, b, e, i, k, p, tz) | 26 |
+| this (--answered-only) | 13 | 4 (#, 7, n, o) | 9 |
+
+Mixed after, one word each: 3 z-shape; 6 b-shape; @ m-shapes; L script-L; s m/pi; to six; tz s-shape; x z-shape; z x/s/3.
+**Every stray in the after render is a `--certain` tile.** The person's own 22 answered tiles sort first in each pile (1-3 per pile) and none of them is a
+stray; all nine mixed piles are mixed by certain-answer tiles of the three truth leaves (91 joined), which are certain about the letter, not the shape --
+the same cause SORTER-FIX named for the z pile. Two piles are founded by one answered tile whose own shape is the minority form (L: a script L; z: an s-like
+tile), so the certain tiles that join them look like a different pile. `--answered-only` alone therefore does not make the page fit for R13; it shrinks
+the piles to 13 (147 tiles, 34 waiting), of which only 4 hold one shape.
+
+Named next steps (for the parent, not done): (1) re-render without `--certain` -- 13 piles of 1-3 tiles, every one the person's own move, each one shape
+on this sheet, but thin as a reference for 34 questions; or (2) a shape gate on certain tiles (join only if the tile's image sits within the answered
+tiles' spread, against a shuffled-pile control); or (3) the short owner pass on step 1 SORTER-FIX named (split the piles, "This pile is done"), then
+`--piles-from ... --answered-only` on that export. Rule 10: nothing here is a reading; no claim about novelty.
+
 ## Remaining gaps (VIV-GSPLIT refresh, 15 Oct 2026; supersedes the VIV-DECH3 list, all its other lines kept)
 Read so far: ink 40 checked against its decipherment 41 with Tomokiyo's key (N5-VIVK PASS); ink 54 read with key.tsv, gloss check PASS (N5-VIV54), window look-alike pass + re-decode, b2 + wrong-key PASS (N7-VIV54L); ink 53 Ink 52 f.164r-v read (VIV52-O, 13 Oct 2026): H 2,217 / M 404 / U 106 of 2,727, b2 + 200-wrong-key PASS.
 ff.170r-171v read, b2 + wrong-key PASS (N6-VIV53B), window look-alike pass + ': :' join + re-decode, b2 + wrong-key PASS again (N7-VIV53L); ink 63 ff.190r-194r read in full (f.194r L5-10 added by N7-VIV63G): b2 PASS on every part (N6-VIV63, N6-VIV63B,

@@ -84,7 +84,7 @@ Active sorter (TX-SORTER, 3 Oct 2026; TRANSCRIPTION.md pipeline step 7):
   order; only a lattice score (--rank) speaks for the reading, and even that ranks, it does not grade.
 
 Owner rows R12-R16 (SORTER-FIX-R12-R16, 15 Oct 2026; template 2026-10-15.1): a question page for the owner is built with
-  --piles-from SETTLED.tsv [--piles-from ...] [--later-wins | --drop-conflicts] [--certain TSV] [--meanings key.tsv] [--tiles-from PAGE.html ...]
+  --piles-from SETTLED.tsv [--piles-from ...] [--answered-only] [--later-wins | --drop-conflicts] [--certain TSV] [--meanings key.tsv] [--tiles-from PAGE.html ...]
   --focus focus.tsv --box-check boxes_handcut.tsv
 piles only from the person's settled piles, the questions as a waiting queue (never a pile), "same letter, two shapes" on piles of one
 meaning; the build stops (exit 2, no page) on a tile in two piles, a waiting tile inside a pile, an un-noted shared meaning, or a box
@@ -680,17 +680,45 @@ def rows_tsv(path):
         return list(csv.DictReader((l for l in f if not l.startswith('#')), delimiter='\t'))
 
 
-def read_settled(paths, later_wins=False):
+def answered_sids(path, db=None):
+    """--answered-only (SORTER-PILES-ANSWERED, 15 Oct 2026): -> (set of sids the person answered in this settled file, note).
+    A row counts only if the person MOVED it (status moved), checked it (a record in DB/checked/*.json for that sid), or it sits in a
+    pile the person created (DB/newpiles/*.json id). A 'kept' row with no checked record is a tile the person never touched -- left
+    in the pile a reader label put it in -- and is not an answer (R13: a pile the person formed, not one he did not object to).
+    DB defaults to the sorter export's db/ directory beside SETTLED.tsv (sign_sorter_apply.py's --db). Must NOT drop: a moved
+    row, a checked kept row, a tile in a person-made pile; must drop: a kept row with no record."""
+    import glob
+    db = db or os.path.join(os.path.dirname(os.path.abspath(path)), 'db')
+    def coll(c):
+        out = []
+        for f in sorted(glob.glob(os.path.join(db, c, '*.json'))):
+            d = json.load(open(f))
+            out.append(d.get('data', d))
+        return out
+    checked = {d.get('sid') for d in coll('checked') if d.get('sid')}
+    made = {d.get('id') for d in coll('newpiles') if d.get('id')}
+    note = '' if os.path.isdir(db) else f'no {db}: only moved rows count'
+    ans = set()
+    for r in rows_tsv(path):
+        sid, new, st = r.get('sid', ''), (r.get('new_sign') or '').strip(), (r.get('status') or '').strip()
+        if sid and (st == 'moved' or (st == 'kept' and (sid in checked or new in made))):
+            ans.add(sid)
+    return ans, note
+
+
+def read_settled(paths, later_wins=False, answered=None):
     """-> (pile_of {sid: pile}, conflicts {sid: sorted answers}, unsettled [sid]). An answer is the pile for a moved/kept row whose
     new_sign is a pile name, else '~' + status (or '~queue' for the waiting box). later_wins (--later-wins): the files are in time
     order and a sid's answer in a later file replaces its answer in an earlier one (a person's re-answer on a later page); the
-    replaced answers are returned in conflicts all the same, for the report, but do not stop the build."""
+    replaced answers are returned in conflicts all the same, for the report, but do not stop the build. answered ({path: set of
+    sids}, --answered-only): rows of a file whose sid is not in its set are skipped, as if the file did not name the tile, so an
+    untouched tile on a later page never replaces an earlier answer."""
     seen, replaced = defaultdict(set), {}
     for p in paths:
         mine = defaultdict(set)
         for r in rows_tsv(p):
             sid, new, status = r.get('sid', ''), (r.get('new_sign') or '').strip(), (r.get('status') or '').strip()
-            if not sid:
+            if not sid or (answered is not None and sid not in answered.get(p, ())):
                 continue
             if status in ('moved', 'kept') and not NOT_A_PILE.match(new):
                 mine[sid].add(new)
@@ -873,7 +901,15 @@ def render(data, title, lede, focus_to_tray=True, key=None):
 
 def build_piles_from(a):
     """--piles-from: data for the page (piles from settled rows, the --focus tiles as the queue), with a printed report."""
-    pile_of, conflicts, unsettled = read_settled(a.piles_from, later_wins=a.later_wins)
+    answered = None
+    if a.answered_only:
+        answered = {}
+        for p in a.piles_from:
+            answered[p], note = answered_sids(p)
+            n = sum(1 for r in rows_tsv(p) if r.get('sid'))
+            print(f'--answered-only: {p}: {len(answered[p])} of {n} rows answered (moved, checked, or in a pile the person made)'
+                  + (f'; {note}' if note else ''))
+    pile_of, conflicts, unsettled = read_settled(a.piles_from, later_wins=a.later_wins, answered=answered)
     if a.later_wins:
         repl, conflicts = conflicts['replaced'], conflicts['conflicts']
         if repl:
@@ -921,6 +957,8 @@ def main(argv=None):
                     '(sign_sorter_apply.py --out: sid, old_sign, new_sign, status moved|kept); repeatable; the --focus tiles become the waiting '
                     'queue (owner rows R13, R15). A tile two files settle differently is a conflict: the build stops unless --drop-conflicts')
     ap.add_argument('--later-wins', action='store_true', help='--piles-from: files are in time order; a later file\'s answer for a tile replaces an earlier one (listed)')
+    ap.add_argument('--answered-only', action='store_true', help='--piles-from: a settled row counts only if the person moved it, '
+                    'checked it (db/checked beside SETTLED.tsv) or it is in a pile the person made (db/newpiles); untouched kept rows are left off')
     ap.add_argument('--drop-conflicts', action='store_true', help='--piles-from: leave conflicting tiles off the page (listed) instead of stopping')
     ap.add_argument('--certain', metavar='TSV', help='--piles-from: known-answer tiles (sid, sign) added only to a pile the settled rows formed')
     ap.add_argument('--meanings', metavar='KEY.tsv', help='--piles-from: code, meaning; two piles of one meaning get the note "same letter, two shapes" (R15)')
