@@ -103,3 +103,33 @@ subagent beyond one contact-sheet check. NOTES "## MANT-CUT", gaps + Verdict, ga
 
 Wave 2 sessions (12:27 UTC): ES132-P52 session_01VmuqNnHHNZGbHx1FE5eotd; SAV-GLOSS session_01PDDCRgPMF6ae1cQKfL3rCp; PIS-FA
 session_017yochWwdis2b16tH7JUPP3; MANT-V66 session_01QSAS2S78gaxX3Zjb8eHh3D; MANT-CUT session_01Wwrz39JiiXHYLBkuQy4MKQ. MCC-CMU (wave 1) still live.
+
+## Wave 3 (13:0x UTC 15 Oct)
+Wave 2 results: ES132-P52 2.62 D (26/27 PASS), SAV-GLOSS 2.81 D (c251 gl 1-16 + c252), PIS-FA 2.90 N (Brienne 354 = NAF 7320 undigitised),
+MANT-V66 1.63 D (66 = a holds), MANT-CUT 4.07 N (cutter v1 FAIL ~19/69; v2 unchecked); MCC-CMU 4.61 N (family retired).
+Intake gate: all four folders passed at 11:5x / 12:3x UTC. Known-text share so far 4.03 of 33.2 (pro3055).
+
+### MANT-CUT2 (Opus, cap 3.5, box 45 min, disk only): sachsstaatsarchiv-manteuffel-1712 v2 cutter check, then the MANT-YSHAPE rule
+MANT-CUT's next: "fresh-session v2 contact-sheet check at the same gate (~$2)". You did not build v2: check it exactly as MANT-CUT's
+pre-registered eye check (9a1a6360e) states -- same 69 clean y49 slots, same gate 56/69, contact sheet, your own look. Do NOT modify the cutter
+before or during the check (a fix after a look is a third version and needs its own fresh check -- log it, don't run it). If PASS, run
+MANT-YSHAPE's pre-registered rule unchanged on the 8 conflict slots; relabel only as the rule licenses, at M. If FAIL, log the cutter [retired]
+for this question (rule 3: second attempt of the same instrument) and name the sorter as the next instrument. NOTES "## MANT-CUT2", gaps +
+Verdict, gaps_check.
+
+### SAV-GLOSS2 (Opus, cap 3.5, box 45 min, openapi.bnf.fr <= 4): fr16144-savary-lancosme-1588 c251 gloss lines 17-~29 + c252 right edge
+Verdict: "c251 gloss lines 17-~29, one region + 2 passes + reconcile, ~$2" (regions c251 pct:0,57,30,6; c252 pct:16,19,20,22 per the gap
+line). SAV-GLOSS's method unchanged; append to savt/gloss_c251_c252_reconciled.tsv; no alignment. NOTES "## SAV-GLOSS2", gaps + Verdict,
+gaps_check; take/release lines.
+
+### PIS-121 (Opus, cap 4, box 60 min, openapi.bnf.fr <= 6): fr16045-pisany-rome-1585 f.121 (c252) glossed passage as a check of the 1585 table
+Gap: "f.121 (c252) glossed passage as a check of the 1585 table - blocker: not-attempted ... next: crops + gloss read, ~$3". Read the 1585
+table's sections first. PRE-REGISTER before any decode: the score (agreement of the 1585 table's decode with the period gloss on the passage)
+and its control (the same score under a permuted table, >= 200 draws). iiif_lines.py crops command pasted; 2 blind passes on the cipher + 1 on
+the gloss + 1 reconciliation = 4 units. A table value changes only if the registered rule licenses it. NOTES "## PIS-121", gaps + Verdict,
+gaps_check.
+
+### CLIN-3502 (Opus, cap 4.5, box 60 min, image-uab.canadiana.ca <= 8): pro3055-clinton-1779 3502 reel cipher (Image 945)
+Same method as CLIN-3004C (read it and CLIN-3004/3004B and their PREREGs): register the B2 gate and the page-permuted-key control before
+decoding; crops command pasted; one blind pass + reconciliation per page; first page only if it runs over more. Text-known (lane guardrail):
+no reading changes. NOTES "## CLIN-3502", retry line + Verdict, gaps_check.
