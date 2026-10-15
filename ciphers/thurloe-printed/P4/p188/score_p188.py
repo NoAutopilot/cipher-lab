@@ -2,7 +2,7 @@
 """THUR-P188 (15 Oct 2026): score PREREG-THURP188.md's hypotheses (a)-(c) on P4, Birch III p.188 lines 53-61.
 
 python3 score_p188.py [--check]   writes results.tsv beside this file; --check exits 1 if the committed results.tsv is stale.
-Key: ../../pool_1654/key_stamford.tsv, unedited. Word list: tools/data/en16_repo minus the P4 reading (circular).
+Key: ../../pool_1654/key_stamford.tsv, unedited. Word list (PREREG amendment 1): tools/data/en18 + LANG_CORPORA["en"].
 """
 import csv, random, re, sys
 from pathlib import Path
@@ -15,7 +15,8 @@ import judge_plaintext as jp  # noqa: E402
 KEY = {}
 for r in csv.DictReader(open(HERE.parents[1] / "pool_1654" / "key_stamford.tsv"), delimiter="\t"):
     KEY[r["value"]] = re.sub(r"[^a-z]", "", r["meaning"].split("/")[0].lower())
-CORP = [p for p in sorted((ROOT / "tools/data/en16_repo").glob("thurloe-printed__*.txt")) if "reading_P4" not in p.name]
+# PREREG amendment 1: run 1's en16_repo list (minus P4) had 180 words; general English instead, not P4 or its siblings.
+CORP = sorted((ROOT / "tools/data/en18").glob("*.txt.gz")) + list(jp.LANG_CORPORA["en"])
 MODEL = jp.NgramModel([jp.read_corpus(p) for p in CORP])
 WORDS = {w for w in MODEL.words if len(w) >= 3}
 MAXW = max(map(len, WORDS))
@@ -69,7 +70,7 @@ def run_reads(run):
                         p += 1
                 for j in seg:
                     idx = [q for q, o in enumerate(owner) if o == j]
-                    flags[j] = (all(cov[q] for q in idx) and bool(idx)) or (len(vals[j]) >= 3 and vals[j] in WORDS)
+                    flags[j] = (all(cov[q] for q in idx) and bool(idx)) or len(vals[j]) >= 3  # amendment 1: a 3+ letter code word reads
             seg = []
         else:
             seg.append(i)

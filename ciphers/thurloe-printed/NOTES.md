@@ -4264,8 +4264,69 @@ Title (from Open Library, OCLC 7202431 / 23645960): *Verbael gehouden door de He
 Found: the volume exists in full view at HathiTrust (two copies) and Google Books (two ids), none readable by this session. Not found: any text of No. 37 pp.252-253 or of the two Beverning letters; whether a cipher is mentioned there. EF per-page counts, which would at best have shown whether a cipher word occurs on the page, were not obtainable (server-side error, not a negative). Request counts: archive.org 17 (advancedsearch 8, be-api fts 5, metadata 4), api.openalex.org 1, openlibrary.org 2, catalog.hathitrust.org 4, babel.hathitrust.org 2, data.htrc.illinois.edu 5, delpher.nl 6 (one jsru 403 / proxy 502, one page), all one at a time, >= 2 s.
 Filed `LOCAL-QUEUE.tsv` row **L81** (HathiTrust ids added beside the Google ids, pages, what to copy). `python3 tools/gaps_check.py thurloe-printed` (TH-VERB, 15 Oct 2026): "OK keep-going thurloe-printed: keep going: 6 internal gap(s), 1 step(s) untried"; file_shrink_guard ok.
 
+## THUR-P188 (Thu Oct 15 13:32 UTC 2026)
+
+Worker THUR-P188 (owner account, for the account-4 depth-steps brief `.claude/briefs/runs/2026-10-15-acct4-depth-steps.md`).
+This pass looks at why P4's p.188 lines 53-61 (144 of 424 numerals) do not read, which is what holds P4 at D2 (AUDIT.md
+"Depth re-check, P4"). It follows verifier V3a's suggestion from section 21: re-check the p.188 line associations against the
+page image. Pre-registration: `PREREG-THURP188.md`, pushed in 876ce3bc3 before any scoring, plus amendment 1 in e2bc7785c.
+Script: `P4/p188/score_p188.py`, which writes `results.tsv`; `--check` exits 0. No key edit and no reading change.
+
+**Image re-read.** Crops came from `python3 tools/iiif_lines.py --image images/collectionofstat03thur_leaf0198_p188.jpg --out
+<scratch>/p188 --prefix p188 --debug`. It found 67 bands, and crops L51-L62 are printed lines 50-61, upscaled 2x for the
+readers. Two Sonnet readers read them blind (`P4/p188/readA.tsv`, `readB.tsv`), A top-down and B bottom-up. This worker
+reconciled the reads against the crops. Both reads agree with `P4/image_transcription.tsv` on **every numeral, 198/198 in
+lines 50-61**. The only differences are long-s spellings (thoufand/thouland, affured/assured) and two printed commas
+("40," on line 51, "18," on line 54). The readers' doubts were 85 vs 83 on line 54 and 158 on line 55. Both were settled
+against the crop and agree with the transcription (85, 158).
+
+**Statistic.** The read share is the fraction of the 144 numerals whose key letters fall inside a greedily segmented word of
+3 or more letters, or that are a code word of 3 or more letters. Runs are cut at clear words. The key is `key_stamford.tsv`,
+unedited.
+
+**Run 1 is a non-test** (`P4/p188/results_run1.tsv`). The pre-registered word list was tools/data/en16_repo minus the P4
+reading, and it has only 180 words because those readings are brace-joined runs. Under it the siblings read 0.112.
+**Run 2** uses PREREG amendment 1: words from en18 plus "en", general English that is neither P4 nor its siblings.
+
+| | read share | n |
+|---|---|---|
+| block 53-61 as printed (baseline) | 0.604 | 144 |
+| siblings P5+P6, P7 (SIB) | 0.603 | 1508 |
+| P4 lines 50-52 (read coherently) | 0.759 | 54 |
+| N-line null (200 line-order shuffles) p95 | 0.604 (min 0.583, max 0.625, only 5 distinct values) | 200 |
+| N-bound null (200 boundary re-cuts) p95 | 0.153 | 200 |
+| (a) reconciled read vs transcription | 0 numeral differences | 198 |
+| (b) best adjacent swap, 59/60 | 0.625 (other swaps 0.583-0.604) | 144 |
+| (c) best 'am' value, 62 army | 0.653; the max-of-59 null is p95 0.660 on line-shuffled and 0.220 on boundary-shuffled | 151 |
+
+**Verdicts.**
+- (a) Tokenisation: **refuted for our transcription.** The image and the transcription split the digits identically. A
+  split or join made by Birch's compositor himself cannot be seen from the print. As an exploratory count, 99 of the 144
+  numerals could be split into two key values and 1 adjacent pair joins into a key value, so the print alone does not
+  constrain this.
+- (b) Line transposition: the pre-registered gate reads **PASS** to the letter (0.625 > N-line p95 0.604, and >= SIB - 0.10).
+  It is a **non-test**, not a reading, for three reasons:
+  - The N-line null takes only 5 values, and the swap's 0.625 equals the null's own maximum. Runs end at clear words, so
+    line order changes only the 4 runs that cross a line break. The control can barely move on the axis being tested
+    (rule 3, orthogonal-control clause).
+  - The baseline already equals SIB (0.604 vs 0.603), so the near-sibling floor has no headroom (rule 3, Salviati clause).
+  - Swap 59/60 moves line 60, a clear line ("beleeve the time appointed ... that"), away from line 59's "and which makes
+    mee", which breaks the printed clear syntax.
+  No reading is reported.
+- (c) 'am.' as a set sign for a key value: **FAIL.** The best value is 0.653, which is below the max-of-59 search null p95
+  of 0.660. In the siblings' print, 'am' sits next to a numeral once in 1,508 tokens (AUDIT.md said "never"; the one hit
+  is in `pool_1654/tokens.tsv`'s prev_word/next_word columns, not checked further).
+- Overall: the statistic reads the block **exactly as well as the siblings' coherent cipher** (0.604 vs 0.603). The block's
+  incoherence is not at word-cover level, so a letter-to-word statistic of this kind cannot see it. All three hypotheses are
+  logged as **untestable by this statistic at this length**, except (a), which the image settles for our tokenisation.
+  Under rule 3's third-attempt clause, the next step is new material: the MS Rawl. A. 24 leaf, which is the needs-physical-
+  access gap already on file. It is not a further tuning of this statistic. Depth stays **D2**.
+
+Requests: none, disk only. Two Sonnet reader calls and one reconciliation by this worker.
+
 ## Remaining gaps (TH-VERB, 15 Oct 2026; replaces the GB-PASS4 list)
 Read so far: Bamfylde p.160 run, letter codes C 22, M 2 (30, 94), U 0; 937 C, 745 M, 356 U. Dutch 1653: p.351 H 81 C 1 of 82; p.340 H 218 C 1 M 4 (330 = de Prince van Oraigne, Bijdragen X p.292); p.308/309 H 86; p.301 M 10; p.418 not read. Bijdragen X pp.291-294 print the 18 July letter's Dutch with De Witt's decipherment in italics (THUR-GB); the run 1 and run 8 cells are image-read (THUR-57: print n at 57, t at 58). Bijdragen X p.294 postscript: ct_bijX294 H 28 C 0 M 1 of 29 (THUR-PS). Birch I p.340 ends with run 15 and omits the closing passage and the postscript (THUR-IA). Vol 4 pp.306-307: 51 = i once, 25 = e once by printed gloss, no 94 (THUR-IA). Vol 4 p.195: run 3 pos 4 is 35 = o, not 25 (transcription fix), run 6 51 = e image-confirmed (THUR-198). Vol 6 p.576 (Second Cipher, 1657): 110 cells image-read, 58 agree with Tomokiyo, 6 conflict, no 94 (THUR-94). Vol 6 pp.641-642 (l.76732, Bamfylde Nov/Dec 1657): 25 cipher cells, no printed gloss, no 94 (THUR-198). Vol 4 pp.124-125 (l.10355, Bamfylde Nov. 10, 1655): no 51; 3 glossed runs read, 9 = t vs Tomokiyo c and 20 under e vs table s logged M (THUR-51). Vol 7 Bamfylde letters: no cipher runs (THUR-51). Vol 5 l.35701 is Mountagu's (THUR-NIJ, THUR-94). Vol 4 p.231 foot: "Rouen", agrees (THUR-94B). Vol 4 l.46866 is a pay table (THUR-94B).
+- P4 p.188 lines 53-61 (144 numerals, D3 withheld) - blocker: needs-physical-access; THUR-P188 (15 Oct 2026): image re-read 198/198 agrees, so tokenisation is refuted for our transcription; line swap is a non-test and am-as-sign FAILs (HYPOTHESES.md); only the MS Rawl. A. 24 leaf can separate compositor-set signs from a faulty encipherment
 - Bamfylde p.160 code 356 (word/name code) - blocker: open-codes; the only occurrence in Birch vols 2-7 is the target, no gloss in Tomokiyo; next: none in print; only a period key or the manuscript (Bodleian Rawlinson A, Thurloe's originals) could gloss it
 - Code 94 conflict (print y vs Tomokiyo t) - blocker: open-codes; no 94 in any imaged Bamfylde page of vols 4-6 (vol 4 pp.194, 195, 231, 232, 306, 307; vol 6 pp.576, 641, 642; THUR-BAMF, THUR-IA, THUR-94, THUR-94B, THUR-198); Tomokiyo's source for 94 = t not found; next: none in print located; the manuscript (Bodleian Rawlinson A) or Tomokiyo's source
 - Code 51 conflict (print e x2 vol 4 p.195, both on committed crops, vs i x1 p.306 and Tomokiyo i; HYPOTHESES.md THUR-IA, THUR-198, THUR-51) - blocker: open-codes; every Bamfylde 1655 page in vol 4 whose OCR was named for 51 is now imaged (pp.195, 306; l.10355 = pp.124-125 has no 51, THUR-51); no further printed witness located; next: none in print located; the manuscript (Bodleian Rawlinson A) or Tomokiyo's source
