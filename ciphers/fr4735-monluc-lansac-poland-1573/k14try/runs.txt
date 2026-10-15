@@ -1,0 +1,190 @@
+== R0s K14=s n=code-wide positions: 
+K14=s: n 51, current p, statistic 549.8 bits over p; null p95 positions , value class 419.3; undecided (a null could not be built (too few matching positions or no same-class values)) [non-blind]
+  0:2  t e [s] m v i g a e r q
+  0:20  e l o a a i c t [s] e g a e v r a e
+  0:29  e g a e v r a e [s] t a t e a l a r
+  0:47  c h e t e q v e [s] v v r e m p e p
+  0:53  v e p v v r e m [s] e p c h e a i e
+  0:55  p v v r e m p e [s] c h e a i e v p
+  0:63  p c h e a i e v [s] t q v e l q v e
+  0:96  t q v i l a e v [s] t p o i a c t c
+  0:98  v i l a e v p t [s] o i a c t c h a
+  0:122  g v c i e q v l [s] o i g p i a o a
+  0:126  e q v l p o i g [s] i a o a d e r e
+  0:142  e a a d r e t e [s] m o g a a g <?vertical_bar>
+  1:3  l e s [s] e r v i t e v r
+  1:49  r a c e l a r e [s] v t a t i o n n
+  1:64  n n i l a c o n [s] c i e n c e d v
+  1:73  c i e n c e d v [s] o i l o n f a i
+  1:113  q v i n v p e n [s] n i n l a i s e
+  1:169  a y n e x onc l v [s] i o n q q i l e
+  1:195  l e q v e l o d [s] e i g d e v r s
+  1:230  e o p i e p a n [s] e a v o i p p a
+  1:236  a n p e a v o i [s] p a t i s f a i
+  1:251  a i t e a r l a [s] e <?double_slash> o d n e o r
+  1:262  o d n e o r a i [s] o d c <W:uing> p p f a
+  1:267  r a i p o d c <W:uing> [s] p f a v t i l q
+  1:298  m o p e d n o v [s] a a v t a d t d
+  1:308  a v t a d t d o [s] e d e m p e <?double_slash> h
+  1:347  t n d v e d v a [s] d r i s n r <?h_bar> q
+  1:366  m a n d e q v e [s] i o n n e l e v
+  1:391  r e q v e l o n [s] r e i g n e q e
+  1:418  v l o p e v n n [s] q e m a i l s p
+  1:426  p q e m a i l s [s] o l e v v d e s
+  1:440  d e s a i <?x[epsilon]> s e [s] s e v v e l e e
+  1:497  a d v e e n l e [s] l e s t e r m e
+  1:508  s t e r m e s e [s] <?double_slash> r v t v r q n
+  1:518  r v t v r q n e [s] o v r v n e r e
+  1:536  d r d d e m o n [s] e i g d e v r h
+  1:550  v r h o r <?x[comma]> m i [s] q v i l d e <?x[e-like]> <?x[dot]>
+  1:566  <?x[dot]> e o m a a d e [s] a s l e f i l <?x[epsilon]>
+  1:590  o <?double_slash> i a t i o d [s] e d a i g r i <?x[small_z]>
+  1:634  a b i e d v o t [s] p v i s i e a s
+  1:635  b i e d v o t p [s] v i s i e a s e
+  1:651  e v r e r q t e [s] i l a r a i s o
+  1:670  l i e m s i l e [s] g e d p d e b o
+  1:674  s i l e p g e d [s] d e b o n e l t
+  1:696  e n h e v q v i [s] o d v a l a t e
+  1:722  p a v r v e e n [s] o a v <?h_bar> r e v y
+  1:734  <?h_bar> r e v y l o n [s] e i g d e v r <?double_slash>
+  1:801  p m i s d i r e [s] i d o n q m e <W:Mare>
+  1:810  i d o n q m e <W:Mare> [s] o m e p y b a t
+  1:814  q m e <W:Mare> p o m e [s] y b a t v y d e
+  1:832  a p e v r e v y [s] o h e y d e l e
+
+== R0m K62=m n=code-wide positions: 
+K62=m: n 16, current l, statistic -88.5 bits over l; null p95 positions -98.5, value class -8.0; reject (no better than the current value) [non-blind]
+  0:13  i g a e r q v e [m] o a a i c t p e
+  1:98  e r o i d e d a [m] n e l a r c q v
+  1:101  i d e d a l n e [m] a r c q v i n v
+  1:117  v p e n p n i n [m] a i s e t d o n
+  1:192  s i b l e q v e [m] o d p e i g d e
+  1:249  s f a i t e a r [m] a p e <?double_slash> o d n e
+  1:411  y <?x[looped_q]> e q q e e v [m] o p e v n n p q
+  1:428  e m a i l s p o [m] e v v d e s a i
+  1:446  s e p s e v v e [m] e e v q v o d <?x[looped_initial]>
+  1:495  f r a d v e e n [m] e p l e s t e r
+  1:498  d v e e n l e p [m] e s t e r m e s
+  1:681  d p d e b o n e [m] t e n d e l e n
+  1:687  n e l t e n d e [m] e n h e v q v i
+  1:701  q v i p o d v a [m] a t e v r s d e
+  1:731  o a v <?h_bar> r e v y [m] o n p e i g d e
+  1:744  i g d e v r <?double_slash> e [m] p o r t e a <?h_bar> e
+
+== T14 K14S=s n=19 positions: L02:29 L04:5 L05:25 L06:19 L07:18 L08:17 L08:22 L08:6 L09:21 L11:20 L15:11 L15:22 L16:12 L19:34 L21:33 L21:7 L22:10 L24:10 L24:19
+K14S=s: n 19, current p, statistic 216.8 bits over p; null p95 positions 175.4, value class 148.0; accept (above both nulls and the acceptance rule) [non-blind]
+  1:64  n n i l a c o n [s] c i e n c e d v
+  1:113  q v i n v p e n [s] n i n l a i s e
+  1:169  a y n e x onc l v [s] i o n q q i l e
+  1:195  l e q v e l o d [s] e i g d e v r s
+  1:230  e o p i e p a n [s] e a v o i p p a
+  1:251  a i t e a r l a [s] e <?double_slash> o d n e o r
+  1:262  o d n e o r a i [s] o d c <W:uing> p p f a
+  1:267  r a i p o d c <W:uing> [s] p f a v t i l q
+  1:298  m o p e d n o v [s] a a v t a d t d
+  1:366  m a n d e q v e [s] i o n n e l e v
+  1:497  a d v e e n l e [s] l e s t e r m e
+  1:508  s t e r m e s e [s] <?double_slash> r v t v r q n
+  1:536  d r d d e m o n [s] e i g d e v r h
+  1:651  e v r e r q t e [s] i l a r a i s o
+  1:696  e n h e v q v i [s] o d v a l a t e
+  1:722  p a v r v e e n [s] o a v <?h_bar> r e v y
+  1:734  <?h_bar> r e v y l o n [s] e i g d e v r <?double_slash>
+  1:801  p m i s d i r e [s] i d o n q m e <W:Mare>
+  1:810  i d o n q m e <W:Mare> [s] o m e p y b a t
+
+== PCs K37X=s n=19 positions: L01:13 L01:24 L01:3 L04:12 L04:35 L06:2 L06:27 L06:8 L07:29 L09:6 L11:34 L11:5 L18:20 L19:21 L19:25 L20:6 L21:18 L24:5 L25:21
+K37X=s: n 19, current p, statistic 308.2 bits over p; null p95 positions 234.7, value class 193.4; accept (above both nulls and the acceptance rule) [non-blind]
+  1:2  l e [s] p e r v i t e v
+  1:12  e r v i t e v r [s] d e lemperevr . q v i n
+  1:23  lemperevr . q v i n i e [s] p a r g n e n t
+  1:120  n p n i n l a i [s] e t d o n e a t
+  1:143  d r e q v i l e [s] t e e o i i l a
+  1:178  i o n q q i l e [s] t v d p o p i b
+  1:184  l e p t v d p o [s] i b l e q v e l
+  1:203  p e i g d e v r [s] <?double_slash> e v t v e d i
+  1:241  v o i p p a t i [s] f a i t e a r l
+  1:283  q v e i e y f e [s] e q v e <?h_bar> e m o
+  1:351  e d v a p d r i [s] n r <?h_bar> q q y m a
+  1:380  l e v e t l v e [s] l i r e q v e l
+  1:608  l e v <W:Sepbre> e <?x[looped_c]> d e [s] <?double_slash> a p q v i l e
+  1:638  d v o t p p v i [s] i e a p e v r e
+  1:642  p p v i p i e a [s] e v r e r q t e
+  1:658  e p i l a r a i [s] o n a l i e m s
+  1:707  v a l a t e v r [s] d e l e v r p a
+  1:796  v e n e <W:Juno> p m i [s] d i r e p i d o
+  1:841  o h e y d e l e [s] p e r a d <?double_slash> e e
+
+== NCs K14P=s n=17 positions: L01:25 L01:4 L02:14 L03:11 L04:2 L06:6 L07:1 L07:15 L11:1 L12:9 L14:10 L15:32 L17:7 L19:18 L21:25 L22:21 L25:22
+K14P=s: n 17, current p, statistic -22.4 bits over p; null p95 positions 260.5, value class 32.3; reject (no better than the current value) [non-blind]
+  1:3  l e s [s] e r v i t e v r
+  1:24  . q v i n i e s [s] a r g n e n t l
+  1:49  r a c e l a r e [s] v t a t i o n n
+  1:83  i l o n f a i t [s] a r l e r l e r
+  1:110  a r c q v i n v [s] e n p n i n l a
+  1:182  q i l e s t v d [s] o s i b l e q v
+  1:213  e v t v e d i r [s] n r d e v a a q
+  1:227  a a q e o p i e [s] a n p e a v o i
+  1:347  t n d v e d v a [s] d r i s n r <?h_bar> q
+  1:391  r e q v e l o n [s] r e i g n e q e
+  1:463  e g n r d e d e [s] r n n d r e l s
+  1:518  r v t v r q n e [s] o v r v n e r e
+  1:566  <?x[dot]> e o m a a d e [s] a s l e f i l <?x[epsilon]>
+  1:635  b i e d v o t p [s] v i s i e a s e
+  1:714  r s d e l e v r [s] a v r v e e n p
+  1:745  g d e v r <?double_slash> e l [s] o r t e a <?h_bar> e p
+  1:842  h e y d e l e s [s] e r a d <?double_slash> e e v
+
+== T34 K34S=s n=3 positions: L07:25 L10:27 L22:29
+K34S=s: n 3, current p, statistic 34.6 bits over p; null p95 positions 47.3, value class 30.4; undecided (not above both null p95s (low n or text outside the model language)) [non-blind]
+  1:237  n p e a v o i p [s] a t i s f a i t
+  1:338  e l v p q v i e [s] t n d v e d v a
+  1:753  p o r t e a <?h_bar> e [s] v e <?double_slash> o v r o <W:Astuing>
+
+== PC3 K37X=s n=3 positions: L06:8 L07:29 L11:34
+K37X=s: n 3, current p, statistic 45.8 bits over p; null p95 positions 49.8, value class 21.8; undecided (not above both null p95s (low n or text outside the model language)) [non-blind]
+  1:184  l e s t v d p o [s] i b l e q v e l
+  1:241  v o i p p a t i [s] f a i t e a r l
+  1:380  l e v e t l v e [s] l i r e q v e l
+
+== NC3 K34P=s n=3 positions: L06:6 L07:1 L07:15
+K34P=s: n 3, current p, statistic -1.6 bits over p; null p95 positions 54.4, value class 22.3; reject (no better than the current value) [non-blind]
+  1:182  q i l e s t v d [s] o s i b l e q v
+  1:213  e v t v e d i r [s] n r d e v a a q
+  1:227  a a q e o p i e [s] a n p e a v o i
+
+== Tm K62M=m n=11 positions: L03:29 L04:9 L06:16 L08:4 L13:10 L15:12 L15:9 L20:35 L21:12 L22:20 L22:7
+K62M=m: n 11, current l, statistic -51.0 bits over l; null p95 positions -49.1, value class -27.7; reject (no better than the current value) [non-blind]
+  1:101  i d e d a l n e [m] a r c q v i n v
+  1:117  v p e n p n i n [m] a i s e t d o n
+  1:192  s i b l e q v e [m] o d p e i g d e
+  1:249  s f a i t e a r [m] a p e <?double_slash> o d n e
+  1:428  e m a i l s p o [m] e v v d e s a i
+  1:495  f r a d v e e n [m] e p l e s t e r
+  1:498  d v e e n l e p [m] e s t e r m e s
+  1:687  n e l t e n d e [m] e n h e v q v i
+  1:701  q v i p o d v a [m] a t e v r s d e
+  1:731  o a v <?h_bar> r e v y [m] o n p e i g d e
+  1:744  i g d e v r <?double_slash> e [m] p o r t e a <?h_bar> e
+
+== PCm K11X=m n=5 positions: L11:12 L15:18 L16:9 L17:2 L24:21
+K11X=m: n 5, current l, statistic -4.3 bits over l; null p95 positions -3.9, value class 6.0; reject (no better than the current value) [non-blind]
+  1:358  i s n r <?h_bar> q q y [m] a n d e q v e p
+  1:504  e p l e s t e r [m] e s e p <?double_slash> r v t
+  1:533  r e g d r d d e [m] o n p e i g d e
+  1:561  i l d e <?x[e-like]> <?x[dot]> e o [m] a a d e p a s l
+  1:812  o n q m e <W:Mare> p o [m] e p y b a t v y
+
+== NCm K10L=m n=11 positions: L02:10 L02:24 L03:17 L04:33 L05:23 L05:32 L06:11 L14:17 L20:1 L21:21 L23:14
+K10L=m: n 11, current l, statistic -85.4 bits over l; null p95 positions -43.0, value class -43.5; reject (no better than the current value) [non-blind]
+  1:45  v r l a r a c e [m] a r e p v t a t
+  1:59  t a t i o n n i [m] a c o n p c i e
+  1:89  i t p a r l e r [m] e r o i d e d a
+  1:141  e a d r e q v i [m] e s t e e o i i
+  1:167  e l a y n e x onc [m] v p i o n q q i
+  1:176  v p i o n q q i [m] e s t v d p o s
+  1:187  t v d p o s i b [m] e q v e l o d p
+  1:470  e p r n n d r e [m] s f <?x[g_like_blotted]> <?x[ink_blot]> r a i r
+  1:653  r e r q t e p i [m] a r a i s o n a
+  1:710  a t e v r s d e [m] e v r p a v r v
+  1:774  a d v q v e <?double_slash> e [m] a d e p a d d d

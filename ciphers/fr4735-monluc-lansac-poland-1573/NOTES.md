@@ -1577,10 +1577,35 @@ openapi.bnf.fr request (`sh regen_monll21.sh`), outside this job's "disk only", 
 not fit the cap left after start-up and the --try. Box 12:45-12:5x UTC 15 Oct by date -u. Requests: none. Subagents: none. Own looks: none.
 Cost not visible to this session.
 
-## Remaining gaps (MONL-K04TRY, 15 Oct 2026)
+## MONL-K14TRY: K14/K34-for-s and K62-for-m --try with power and wrong-facing controls (15 Oct 2026, account 4, Opus, for LANE DEFAULT-A4-1236-15; job MONL-K14)
+
+Brief: .claude/briefs/runs/2026-10-15-acct4-default-1236-jobs.md, MONL-K14 (MONL-K04TRY's Verdict). Disk only for this part: no host requests, no subagents.
+**Pre-registration:** k14try/PREREG-MONL-K14TRY.md pushed in 435f49e51 before any run (MONL-K04TRY's design). Prior work: `python3 tools/prior_work.py fr4735-monluc-lansac-poland-1573 --item-spec 'shelfmark=BnF fr.4735;folio=138;sender=Monluc;recipient=Charles IX' --step-type key --offline` (exit 4 on the folder's own two LEADs: this job's claim and the clear-pages step; plaintext CLEAR on the cached sources).
+**Runs:** `python3 k14try/run_k14try.py <scratch>` (reuses k04try/run_k04try.py's scratch builder; key.tsv here never written; tools/decode_key.py --try, fr16, window 8, nulls 100). Outputs k14try/try_log.tsv, runs.txt, per_occurrence.tsv (n=1 runs, statistic only).
+| run | what | n | statistic (bits over key value) | null pos p95 | null value p95 | verdict | occ. > 0 | lose > 3 bits |
+|---|---|---|---|---|---|---|---|---|
+| R0s | K14=s code-wide | 51 | +549.8 | (not built) | 419.3 | undecided | | |
+| **T14** | the 19 s-facing K14 as pseudo-code (= p), try s | 19 | **+216.8** | 175.4 | 148.0 | **accept** | 17/19 | 0 |
+| PCs | the 19 s-facing K37/K67 (table s), key set wrong to p, try s | 19 | +308.2 | 234.7 | 193.4 | accept (power at n=19) | 17/19 | 0 |
+| NCs | the 17 p-facing K14/K34, try s | 17 | -22.4 | 260.5 | 32.3 | reject (control passes) | 7/17 | 9 |
+| T34 | the 3 s-facing K34, try s | 3 | +34.6 | 47.3 | 30.4 | undecided | 3/3 | 0 |
+| PC3 / NC3 | 3 of PCs's pool / 3 p-facing K34 | 3 | +45.8 / -1.6 | 49.8 / 54.4 | 21.8 / 22.3 | undecided / reject | - / 1/3 | - / 1 |
+| R0m | K62=m code-wide | 16 | -88.5 | -98.5 | -8.0 | reject | | |
+| Tm | the 11 m-facing K62 (= l), try m | 11 | -51.0 | -49.1 | -27.7 | reject | 3/11 | 5 |
+| PCm | the only 5 m-facing K11/K65 (table m), key wrong to l, try m | 5 | -4.3 | -3.9 | 6.0 | **reject (no power at n=5)** | 2/5 | 2 |
+| NCm | 11 of the 28 l-facing K10, try m | 11 | -85.4 | -43.0 | -43.5 | reject | 0/11 | 11 |
+Registered decisions:
+- **S (K14): PCs accept, NCs reject, T14 accept -> lead: the window context alone reads s at the 19 s-facing K14** (+216.8, against +308.2 for a known s with the key set wrong), while the same selection on p-facing K14/K34 does not (-22.4). K14 faces s 19 times and p 7 in L01-L25, and the code-wide K14=s gains +549.8 bits over p, above its value-class null p95 (419.3), but its positional null could not be built, so R0s is **undecided** and licenses nothing. Candidate for a verifier: K14 may be s in this key (Tomokiyo's table puts it under p), or a transcription merge with K37 (s); a value-blind K14|K37 sort would separate the two. **No key edit and no relabel** (PREREG). The two weakest, L08:6 (-3.0) and L08:22 (-1.5), are the ones to look at first.
+- **K34-for-s (n=3): untested-by-this-tool at n=3** (PC3 undecided).
+- **M (K62): PCm does not accept at n=5 -> power unshown; Tm is a statistic only, not a lead.** For what it shows: the context does not prefer m at the 11 m-facing K62 (-51.0; 3/11 > 0, worst L15:12 -22.7), and the m-reading control itself loses at m (-4.3), so this fr16 window cannot see m at these N. Not a negative on K62=m (rule 3); only 5 table-m tokens exist in L01-L25, so a power control at n=11 needs more ciphertext (c268 L26 on).
+Rule 7: nothing in the reading changed; `python3 ../../tools/decode_key.py . --check` "reading up to date".
+**Part 2 (regen_monll11/16/21.sh + K04|K12 + K40/K45 value-blind sort): not run.** The brief's ">= 40% cap left" may hold, but the sort's own estimate (~2, one PREREG, 3 openapi.bnf.fr requests, one subagent call per <= 40 tiles, a reconciliation) on top of the start-up and this --try would cross 80% of the 4.5 cap at the lane's measured 1.3-1.5x Opus overrun; stopped before that unit (common rules). Box 13:12-13:2x UTC 15 Oct by date -u. Requests: none. Subagents: none. Own looks: none. Cost not visible to this session.
+
+## Remaining gaps (MONL-K14TRY, 15 Oct 2026)
 Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines 1-25 (857 tokens) C 426 / M 396 / U 35 against the ff.140r-141r clear text (align confirm 550/814 = 0.676 vs shuffled-clear max 0.403; L21-L25 alone 98/157 = 0.624 vs max 0.471).
 - K04-for-n (15 over L01-L25) - blocker: not-attempted; --try on the 15 accepts n by context (+237.6, power control +224.7 accept, d-facing control -57.5 reject; MONL-K04TRY), a lead for relabel, not a key value; next: a value-blind K04|K12 sort of the 15 with in-band d-facing K04 and n-facing K12 references (MONL-CTL's design; L13:14, L18:18, L08:19, L21:9 first), needs `sh regen_monll16.sh`, `regen_monll11.sh`, `regen_monll21.sh` (openapi.bnf.fr 3 requests), ~$1.5
-- K14/K34-for-s (6 in L21-L25), K62-for-m (3 in L21-L25) - blocker: not-attempted; logged by MONL-L21; next: the same pseudo-code --try with its controls (k04try/run_k04try.py, disk only), ~$0.5 each
+- K14-for-s (19 over L01-L25) - blocker: not-attempted; --try on the 19 accepts s by context (+216.8; power control +308.2 accept, p-facing control -22.4 reject), code-wide K14=s +549.8 undecided (no positional null; MONL-K14TRY); a lead, not a key value; next: a value-blind K14|K37 sort of the 19 with in-band p-facing K14 and s-facing K37 references (L08:6, L08:22 first), rides the K04|K12 sort's regen, ~$1
+- K34-for-s (3) and K62-for-m (11) - blocker: too-short; --try has no power at n=3 (PC3 undecided) and none at m with the 5 table-m tokens in L01-L25 (PCm reject; MONL-K14TRY); Tm -51.0 is a statistic only; next: re-run k14try/run_k14try.py once c268 L26 on adds table-m and s-facing K34 tokens (rides that band, ~$0.3)
 - K40 facing z (L24:29, L25:16) and t (L22:6), K45 facing o/u (L24:3, L24:16) - blocker: not-attempted; crops not on disk (MONL-K04TRY); next: `sh regen_monll21.sh` (openapi.bnf.fr 1 request) then one value-blind sort of these 5 tiles against in-band K40/K41/K39/K45 references (MONL-CTL's design), ~$1.5
 - rest of c268 (L26 to the end) and c264 against the ff.140r-141r clear text - blocker: not-attempted; next: two blind cipher passes of c268 L26-L30 plus reconciliation (band 7 of regen_monll21.sh's crop is L26; move the region down ~550 px), then align_c268.py, ~$3.5 per 5 lines; the clear span reached f.140r L23, so f.140r L24 on and f.140v must be clean first
 - the code words W:Cur, W:apuril, W:Juillet, W:Sepbre, W:Astuing ("nnemais"), W:Juno, W:Mare ("nous") and the ?x[epsilon] / ?double_slash / ?h_bar fills - blocker: not-attempted; found by MONL-L16 and MONL-L21; next: a name-code pass with tools/name_candidates.py on the clear contexts once the clear text of f.140r L16-L23 is re-read, ~$1
@@ -1590,12 +1615,12 @@ Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines
 - print check of the clear letter in Google Books (13 of the 14 phrases.txt lines) and the editions by identifier - blocker: not-attempted; Google Books 13 of 14 unsearched (503, MONL-PC, MONL-PC2); next: `tools/print_check.py ... --only gbooks` when googleapis answers, ~$1
 - ff.211-223, f.87 margin, ff.50/56/60/80, items 17/18/112-120 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
 
-## Escalation (MONL-K04TRY, 15 Oct 2026)
+## Escalation (MONL-K14TRY, 15 Oct 2026)
 - [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
 - [x] clear-pages: ff.140r-141r transcribed and shown to be the clear text of c268 L01-L25 (MONL-ALIGN, MONL-C268B, MONL-L11, MONL-L16, MONL-L21)
 - [x] known-keys: Tomokiyo's Cipher 1 table applied per cell and checked against known plaintext on c268 L01-L25
 - [x] print: Noailles vols II-III and Google Books, NC-MONL2; the clear letter phrase-searched in IA full text and OpenAlex, no hits (MONL-PC); Google Books for it pending (gap above)
-- [x] key-rebuild: --try rejects K12=d and K34=y (MONL-K12); blind sorts L01-L20 (MONL-SORT, MONL-VB, MONL-ADH, MONL-K04, MONL-CTL); K04-for-n pseudo-code --try with power and negative controls accepts n at the 15 (MONL-K04TRY)
+- [x] key-rebuild: --try rejects K12=d and K34=y (MONL-K12); blind sorts L01-L20 (MONL-SORT, MONL-VB, MONL-ADH, MONL-K04, MONL-CTL); K04-for-n pseudo-code --try with power and negative controls accepts n at the 15 (MONL-K04TRY); K14-for-s accepts s at the 19 with both controls passed, K62-for-m has no power at n=5 (MONL-K14TRY)
 - [x] image-check: c268 L21-L25 native crops cut and reconciled by eye (MONL-L21); L16-L20 and L11-L15 likewise (MONL-L16, MONL-L11)
 - [n/a] retry: nothing has failed that a plain retry would change
-Verdict: keep going: 9 internal gaps; cheapest next: the K14/K34-for-s and K62-for-m pseudo-code --try with controls (disk only, ~$0.5 each), then the K04|K12 + K40/K45 value-blind sort in one job after regen_monll11/16/21.sh (~$2)
+Verdict: keep going: 9 internal gaps; cheapest next: the K04|K12 + K14|K37 + K40/K45 value-blind sort in one job after regen_monll11/16/21.sh (openapi.bnf.fr 3 requests, ~$2.5), then c268 L26-L30 (~$3.5), which also feeds the K34/K62 --try re-run
