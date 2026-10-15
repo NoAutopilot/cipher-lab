@@ -6579,5 +6579,32 @@
    "s0564_1000.jpg": "1f9181ed9e58d057d284045eba48743637a073c2",
    "s0565_1000.jpg": "19c02f05ca4fe9f29cae21d600fb468dea1e7c33"
   }
+ },
+ "obred_mem": {
+  "route": "service.archief.nl IIIF /full/1000,/0/default.jpg (530 also /full/3000,), METS 1ebb4182-2b80-4e37-a226-8b8c7e578c8b",
+  "date": "2026-10-15",
+  "regen": "screen_tools/regen_mem.sh",
+  "committed": false,
+  "files": {
+   "s0515_1000.jpg": "6159cd2fd203e09bbbffbf1904d70d5a341f54cf",
+   "s0516_1000.jpg": "4b48527e29f24e141a5facc4dfa5f0a42f1daed9",
+   "s0517_1000.jpg": "068c88848d3e72a425e58cf006a7cf5b8f27b988",
+   "s0518_1000.jpg": "1a9e0cb611e4046c56b632635da9d8c223534832",
+   "s0519_1000.jpg": "21fd044e367f1cf08eb65cce4df0ef1c21e01a57",
+   "s0520_1000.jpg": "1950718545c3f70042a6da49e09ce55d4a1ca81f",
+   "s0521_1000.jpg": "5ba55e259b4416b736d0fee1c063046f3bc324de",
+   "s0522_1000.jpg": "6b159810720180c31e7c1c5b0dff173e593aa263",
+   "s0523_1000.jpg": "3958ded1c35e9423c8957d635b350851d775fc1c",
+   "s0524_1000.jpg": "e00a57bdbf6854306d64d7de967427f1e6dc442e",
+   "s0525_1000.jpg": "6c9dd70ad91c2906007ca486c264fb911c80dda6",
+   "s0526_1000.jpg": "31f92c1d51bb2f8d6f09812fed353bfee7fab080",
+   "s0527_1000.jpg": "b2bed6181dce7115d1776b6e418bbb1cfb89f4dc",
+   "s0528_1000.jpg": "b67e44616a3b060c197dbca3268c43e31dc0ac15",
+   "s0529_1000.jpg": "0bf46cdc31714b132471ea8d69a172ca50d7e9d8",
+   "s0530_1000.jpg": "e791dde025ba4ad31d7d40b98e70feae433a74e2",
+   "s0530_3000.jpg": "6a742012c2b2a841efa3dc133b01c37b37ab3df8",
+   "s0531_1000.jpg": "d9895b36a6407665612d7f87968c450e963ae406",
+   "s0532_1000.jpg": "27572322c14917bbc7f00b7c8321f3bc82f959f6"
+  }
  }
 }

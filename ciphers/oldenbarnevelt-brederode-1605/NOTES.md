@@ -2038,3 +2038,49 @@ Read so far: no. 92 and the 187 postscript as band intervals only (M): 72 of 180
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
 - [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
 Verdict: keep going: 3 internal gaps; band intervals from the 1619 glosses pass a held-out leaf check (fit 555 -> 556 S 0.171 vs shuffled-band p95 0.104, p 0.011, power 1.00) and put 40.0% of no. 92/187's 180 tokens in a one-letter interval (M); cheapest next: inv. 6019 stride-1 from 532 back to the 2 Oct 1619 letter (~$1.5), then a constrained segmentation of the interval strings with its own control (~$3)
+
+## OBRED-MEM (15 Oct 2026, 09:16-09:2x UTC by date -u, account 2, Opus; for LANE DEFAULT-A2-0810-15)
+
+Brief: the Brederode memorie Maurits had deciphered (res. 1779, 11 Oct 1619): inv. 6019 at stride 1 from 532 backward to the 2 Oct 1619
+letter, for the memorie and any decipherment filed with it. A screen, not a reading: no PREREG, nothing scored.
+
+- Prior-work step: `prior_work.py ... --item-spec 'NL-HaNA 1.01.02 inv. 6019 scans 500-532 memorie deciphered by Maurits (res. 1779)
+  screen' --step-type read` exit 4 (own claim LEAD, LOOK, 2 UNCHECKED, 2 UNCHECKED-NET); the four non-net rows recorded CLEAR in
+  `prior-work.tsv` (adhoc-71518e).
+- **inv. 6019 stride-1 screen** (NL-HaNA 1.01.02 inv. 6019, METS 1ebb4182-...): 20 requests to service.archief.nl (METS + 18 scans 532-515
+  at 1000 px + 530 at 3000 px for the postscript), all 200, >= 3.1 s apart, take/release in ROOM; sha1s in `images/manifest.json`
+  (`obred_mem`), `screen_tools/regen_mem.sh` re-derives them; no image committed. By eye (M), contact sheets of six: **no numeral table,
+  alphabet, nomenclator, numeral group or interlinear gloss on any of the 18 scans.**
+  - 532: left an address leaf with seal; right the opening of a letter docketed "d. 5 Oct 1619" (the 5 Oct letter continues on 533).
+  - 531: blank opening (back of the 2 Oct letter's last leaf).
+  - **528 right-530: the 2 Oct 1619 letter of res. 1779**: 528 left address leaf with seal, 528 right opening docketed "d. 2 Oct / r. 11 Oct
+    1619" (received the day of res. 1779), 530 right ending "Uyt Heydelberg desen 2en octobre 1619", signed "P van Brederode"; a
+    postscript in the left margin of 530 (read at 3000 px, M) says the Elector had asked whether he had orders to go to Bohemia and he had
+    answered that he had none yet -- nothing on a memorie or a cipher. Prose only; no enclosure filed after it (531 blank, then 532).
+  - 522 right-526: a letter docketed "d. 26 Sept / r. 7 Oct 1619" (522 left address leaf with seal), prose; 526 right ends dated and signed
+    with a marginal postscript (unread at this size).
+  - 521: the end of a letter "Francfort desen 23 Septembre 1619", signed P van Brederode; 520: a letter in a rough, different hand with an
+    address leaf; 515-518: a Brederode letter ending on 518 "... 22 Septembre 1619", signed. All prose (M).
+- Where it was not found, and the limits: not on inv. 6019 515-532 (this pass) nor 533-565 (OBRED-KEYHUNT, OBRED-549, OBRED-552). Res. 1779
+  says Maurits presented a memorie "door hem van Brederode ontvangen" -- sent to Maurits, not to the States General -- so the S.G. letter
+  liasse need not hold it. Not looked at: the 2 Oct letter's text for a mention of the memorie (read only at its opening, end and
+  postscript); Maurits's own papers (Koninklijk Huisarchief); the S.G. secrete liassen for Oct 1619; inv. 6019 before 515. One reader at
+  1000 px; dockets read only where enlarged. 5 of 25 requests unused.
+
+## Remaining gaps (OBRED-MEM, 15 Oct 2026)
+Read so far: no. 92 and the 187 postscript as band intervals only (M): 72 of 180 tokens (40.0%) one-letter, 115 (63.9%) width <= 2, 37 name codes (OBRED-BAND; held-out check fit 555 -> 556 S 0.171 vs shuffled-band p95 0.104, p 0.011, power 1.00); inv. 6019 scans 555-556 carry 81 groups (58 H-read) with 45 C-graded period glosses; the S.G. resolution of 11 Oct 1619 records that Maurits had a Brederode memorie deciphered (OBRED-KEYHUNT)
+- no. 92 and the 187 postscript beyond letter intervals - blocker: not-attempted; band intervals pass a held-out check but give letters, not words; next: a constrained segmentation of the interval strings (each token's letter set, nl16 lexicon, tools/segmenter.py or decode_key --consistency --auto-segment) with a matched control on a synthetic band text at the same counts and a shuffled-interval null, PREREG first, graded M, ~$3
+- the 1619 key, the deciphered memorie and the "instructie ende sleutel" - blocker: not-attempted; not minuted in the S.G. resolutions of 11-28 Oct 1619 beyond res. 1779 and not on inv. 6019 515-565 (OBRED-MEM, OBRED-KEYHUNT, OBRED-549, OBRED-552); the 2 Oct 1619 letter is on 528-530 (docket "d. 2 Oct / r. 11 Oct 1619") with no enclosure filed after it (531 blank, 532 opens the 5 Oct letter); res. 1779 says Maurits presented a memorie he had received from Brederode himself, so it was likely kept with Maurits's papers; next: read the 2 Oct letter 528-530 for any mention of the memorie (3 scans at 3000 px, disk-light, ~$1.5), then a catalogue check of Maurits's papers (Koninklijk Huisarchief) and the S.G. secrete liassen for Oct 1619, ~$1
+- the later liassen NA 1.01.02 inv. 6020-6024 and the 6019 stride-1 fill after 565 - blocker: not-attempted; outside this brief; next: a stride-3 screen of inv. 6020 (~$4)
+- the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
+- States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A): no numeral block, no Brederode, Stettin or Heidelberg heading (M)
+
+## Escalation (OBRED-MEM, 15 Oct 2026)
+- [x] siblings: scan 187 shares 26 values with no. 92 (OBRED-187); inv. 6019 scans 555-556 (Oggersheim, 14 Oct 1619) share 42 values with no. 92/187, clearing the shuffled-code control (OBRED-556); the letter's start (554) carries no groups (OBRED-552)
+- [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187); the 1619 letter's prose and margin summaries read in part (OBRED-556); 515-554 and 558-565 seen by eye (OBRED-MEM, OBRED-552, OBRED-549, OBRED-KEYHUNT)
+- [ ] known-keys: the 10 Aug 1598 Van Aerssen slip, Buzanval inv. 2028, DECODE 1600s and Palatine/Hessian keys screened (R10-OBRED98, R9-OBRED4, OLD-DKEY, R8-OBRED2, R9-OBRED3); the 1619 "instructie ende sleutel" and the memorie Maurits had deciphered (res. 1779) are not on inv. 6019 515-565 and the key's receipt is not minuted in the S.G. resolutions of 11-28 Oct 1619 (OBRED-MEM, OBRED-KEYHUNT); next: read the 2 Oct 1619 letter (528-530) for the memorie, ~$1.5, then Maurits's papers (KHA) and the S.G. secrete liassen, ~$1
+- [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII has no decipherment or key note near the Brederode entries (OBRED-DP); Resolutiën S.G. NR 4 (1619-1620) has res. 1779 and no key receipt (OBRED-KEYHUNT)
+- [ ] key-rebuild: band-interval decode passes its held-out leaf check (S 0.171 vs p95 0.104, p 0.011, power 1.00) and gives no. 92/187 as letter intervals, 40.0% one-letter (OBRED-BAND); next: constrained segmentation of the interval strings with a synthetic-band control and shuffled-interval null, ~$3
+- [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)
+- [x] retry: Den Tex (abridged edition) read twice; brievenboek 11851 596-733 and 11852 2-104 completed with controls
+Verdict: keep going: 3 internal gaps; inv. 6019 515-532 hold no cipher memorie, decipherment or key (OBRED-MEM); the 2 Oct 1619 letter of res. 1779 is on 528-530, prose, with nothing filed after it; band intervals put 40.0% of no. 92/187's 180 tokens in a one-letter interval (M); cheapest next: read the 2 Oct letter for the memorie (~$1.5), and a constrained segmentation of the interval strings with its own control (~$3)
