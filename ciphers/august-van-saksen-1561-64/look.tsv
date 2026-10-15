@@ -1,3 +1,4 @@
 # tools/prior_work.py leaf looks, append-only: the newest row per (item, role, folio, canvas, image) is current
 utc	item_id	look_row_id	role	folio	canvas	image	source	status
 2026-10-15 14:50	wvo153,wvo=153,date=1566-09-01,sender=Oranje,recipient=August	wvo153,wvo=153,date=1566-09-01,sender=Oranje,recipient=August:2-leaf:3ca102	unit			no folio, canvas or pointer in items.tsv: name the leaf to narrow the look	none	owed
+2026-10-15 16:35	wvo153,wvo=153	wvo153,wvo=153:2-leaf:3ca102	unit			no folio, canvas or pointer in items.tsv: name the leaf to narrow the look	none	owed
