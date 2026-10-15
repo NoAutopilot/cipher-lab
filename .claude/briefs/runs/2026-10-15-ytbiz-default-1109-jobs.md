@@ -52,3 +52,23 @@ be-api fts) the printed editions of La Thuillerie's 1644-46 Danish-Swedish media
 Riksrådets protokoll / Oxenstiernas skrifter, French Négociations editions) for the dates and phrases of the deciphered canvas 20-21 / f.23 /
 f.24 letters (folder's own phrases.txt or the readings). tools/print_check.py where it fits. Record each edition opened, query, hit or no hit.
 No reading, grade or key change. Tick or keep the print rung; gaps_check.
+
+## Wave 2 (from 11:2x UTC 15 Oct, refills)
+
+### TH-VERB (Sonnet, cap 1.5, box 45 min, archive.org / delpher.nl / HTRC EF / OpenAlex; no googleapis): thurloe-printed the 1725 Verbael, No. 37 pp.252-253
+Verdict (line ~4270): "a person reads the public-domain 1725 Verbael at No. 37 pp.252-253 (LOCAL-QUEUE row, for the lane orchestrator to file;
+googleapis has 503'd ...)". Before filing that row, look for a second copy the cloud can read: archive.org advancedsearch + be-api fts
+(Verbael / Verbaal, Beverning, Nieupoort, van de Perre, 1653-1654, 1725), Delpher (delpher.nl boeken, its own search API/pages), the HathiTrust
+bibliographic API + HTRC EF page counts. If a readable copy exists, read No. 37 pp.252-253 and the 27 June / 22 Aug 1653 Beverning letters and
+record what they print (dates, addressee, any cipher or "in cyfer" mention). If none, append the LOCAL-QUEUE.tsv row (format as rows L77-L80,
+the Google Books ids vZzvg46MRdEC / T2JVAAAAYAAJ, exact pages, what to copy) and say so. No grade or key change; gaps_check.
+
+### VIE-PC (Sonnet, cap 1.5, box 45 min, archive.org / OpenAlex / Semantic Scholar; no googleapis): fr3975-vieuville-1587 print check
+"## While waiting" next: "run tools/print_check.py with the letter's readable clear phrases ("eschevins et maire de ville", "St Aignen",
+30 Sept 1587) against IA, Google Books and OpenAlex, ~$0.5". Run it with Google Books skipped (say so), plus IA be-api fts on the Nevers
+correspondence editions the folder names. Record hits / no hits in NOTES.md; status line unchanged (blocked: intake), no reading.
+
+### OBRED-6020 (Opus, cap 4, box 75 min, service.archief.nl / nationaalarchief.nl <= 30, ROOM take/release; only after OBRED-NA releases the host): oldenbarnevelt-brederode-1605 inv. 6020 stride-3 screen
+Remaining gaps: "the later liassen NA 1.01.02 inv. 6020-6024 and the 6019 stride-1 fill after 565 ... next: a stride-3 screen of inv. 6020
+(~$4)". Same method as the 6019 screen (OBRED-552/-549 sections): low-res stride 3, flag any cipher, key leaf or Brederode hand; one Opus read
+per flagged page. Record every scan viewed and where nothing was found. gaps_check.
