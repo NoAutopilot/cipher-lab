@@ -2666,3 +2666,38 @@ Verdict: keep going: 4 internal gaps; cheapest next: the token-level known-answe
 OK keep-going clair1161-avis-flandre-1688: keep going: 4 internal gap(s), 2 step(s) untried
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
+
+## C1161-KA: known-answer alignment on Lasry's second fully read face -- not run, text not on disk (account-4 worker for LANE DEFAULT-A4-0645-15, 15 Oct 2026, 06:53-07:0x UTC by date -u)
+
+Brief `.claude/briefs/runs/2026-10-15-acct4-default-0645-jobs.md` (C1161-KA), disk only, 0 requests to any host. Read CL1161-S7 first; not
+repeated. Step 1 needs a known answer: his plaintext for the second face he read in full ("2/6 pages deciphered"). On disk:
+`sources/cyphersolver/2026-10-14-lasry/clair1161/NOTES.md` carries only the f163r (c186R) paragraph, already used by CL1161-KA; it does not
+name the second face, and says further report images (p074_2.png) were not copied. `sources/lasry/` holds PAPERS.tsv only; a search of the
+repository for his other contents keywords (Hampton, Genoese) found no excerpt. So there is no known answer for the gate: **not run**, no
+PREREG written (nothing to register against), no score. Step 2 (S-split --try) was conditional on step 1 passing, so not started.
+No key.tsv, ciphertext.tsv or reading edit; grades unchanged: C 353, S 1908, M 1114, U 33, H 0. Report what was found and where it was not
+found: not found on disk at the two paths above; no outside source searched; novelty not classified.
+
+## Remaining gaps (C1161-KA, 15 Oct 2026)
+Read so far: 3389 cipher signs on all six cipher leaves/blocks (c185R 704, c186R 220, c186L 246, c187L 718, c187R 744, c188L 757), decoded under key.tsv: C 353, S 1908, M 1114, U 33 tokens; 0 H (unchanged). Prior work: George Lasry's reading of ff.162r-164v (cyphersolver `clair1161`, 6/6 transcribed, 2/6 deciphered, 4 in part). Concordance with his key (C1161-LKEY): 16 agree, 10 disagree, 24 unmapped; c186R known-answer gate PASS (CL1161-KA); S/7 image check UNDECIDED both, S split open vs looped 9/10 one short of gate, --try S=n reject (breaks 85/275), 7=b reject (CL1161-S7).
+- S label merges two shapes? (blind open vs looped split 9/10, gate 10; his n = looped, u = open, descriptive) - blocker: not-attempted; 12 tokens is too few to clear the gate and the passes alone cannot relabel 275 tokens; next: relabel all S tokens open/looped in the owner's sign sorter (or two blind passes over every S window, ~10 calls), then --try S_looped=n and S_open=u on the split at every occurrence, ~$3
+- 7 (i vs his b) and digit-pair nomenclature 76/44/37/48, n77 beyond c186R - blocker: not-attempted; one shape for single 7 (both passes, power not both), --try 7=b and 7s=b reject, so a value conflict, not a merge; blocker for the alignment: no-key-material on disk -- his second fully read face is not named and its text is not in sources/cyphersolver/2026-10-14-lasry/clair1161/ (f163r excerpt only) nor sources/lasry/ (PAPERS.tsv only), checked C1161-KA 15 Oct; next: fetch his report excerpt for that face (cyphersolver clair1161 folder at HEAD, or the hub page lasry-bnf.html; a networked brief), ~$0.5, then the alignment, ~$1
+- 24 unmapped labels (incl. th 208 tokens, +, d, o, ls, eloop, K, 6r, iii, x) and z (passes agreed on his a:2, decode says t), plus plant W07 (a q both passes saw crossed) - blocker: not-attempted; description-only matching could not separate them; next: blind matching with atlas-style exemplar crops of each of our labels beside his sheet (two passes, one call per label group), ~$2
+- new shapes NEW_c186L_1, NEW_c187L_1, NEW_c187R_1/_2, NEW_c188L_1/2/3 (14 U tokens left under V1) - blocker: not-attempted; outside labels_v2, so not in the matching passes; next: the exemplar-crop matching above, then the owner sign sorter if any stay open, ~$1
+- left edge of the gloss under the mount - blocker: illegible; letters cut by the mount on every line (c186Rmarg crops)
+
+## Escalation (C1161-KA, 15 Oct 2026)
+- [x] siblings: all six cipher leaves/blocks transcribed and merged; c184 and c189 checked, no continuation (N4-C1 1a); whole volume (342 canvases) swept at 300 px, no other cipher or glossed leaf (D1A-C1161)
+- [x] clear-pages: the c186R marginal gloss matches at 0.647 under key.tsv; his f163r paragraph matches the same gloss (LQ-C1161); c186R V2 decode agrees with his paragraph on 148/226 tokens, G1 PASS vs permuted key (CL1161-KA); no other glossed leaf in the volume (D1A-C1161)
+- [ ] known-keys: fr16142 and fr.3281 f.4 NO FIT (N4-C1, D2-C1161PRU); Lasry's key: V1 FAIL, V2 whole-decode FAIL, c186R known-answer PASS, n77 = de --try undecided (CL1161-KA), 7=b and S=n --try reject (CL1161-S7); C1161-KA (15 Oct) found the second face's text not on disk, alignment not run; next: fetch his excerpt for that face (networked brief, ~$0.5), then the alignment, ~$1
+- [x] print: no printed edition located by check-solved and Premise check; Vertot, Ambassades de Noailles (1763) vols 1-5 grepped for the f163r paragraph, not found by this method (VER-C1161); Lasry's "BnF cipher research" (10 Oct 2026, published by D. Bourdeau 13 Oct) is prior work on all six faces: AUDIT 3 class N0, key of record published (Lasry)
+- [retired] key-rebuild: instrument c186R gloss match (G) for per-sign and joint value changes -- per-sign 0/9 (GLOSS9), joint gain inside the window null (VER-C1161J); reopens only with a longer clear text or new material (his reading may be that material)
+- [ ] image-check: split-tile look-alike done (10 relabels, gate FAIL, D2-C1161LA); planted audit NON-TEST (D2-C1161AUD); S/7 exemplar check UNDECIDED (S split 9/10 vs gate 10, 7 one shape, plant power 1 of 2; CL1161-S7); next: every S token sorted open vs looped (owner's sign sorter or full blind passes), then --try per split; exemplar-crop matching of the 24 unmapped labels
+- [x] retry: rule-7 re-derivation of the JOINT9 reading SAME (VER-C1161J); V1 and V2/V2b decodes --check exit 0 (C1161-LKEY, C1161-V2); main and V2 --check exit 0 again (CL1161-KA, CL1161-S7)
+Verdict: keep going: 4 internal gaps; cheapest next: fetch Lasry's report excerpt for his second fully read face (networked brief, ~$0.5), then the token-level known-answer alignment on it, ~$1; or every S token sorted open vs looped and --try per split, ~$3
+
+`python3 tools/gaps_check.py clair1161-avis-flandre-1688` (C1161-KA, 15 Oct 2026):
+```
+OK keep-going clair1161-avis-flandre-1688: keep going: 4 internal gap(s), 2 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```
