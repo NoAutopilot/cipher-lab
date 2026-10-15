@@ -100,3 +100,25 @@ BNE-PRES 0.67 D (7/12 phrases in Paz y Meliá 1914), PIS-121B 4.14 N (FAIL 32 vs
 CLIN-3502B 3.65 D (p.300 B2 PASS 37/42, text-known). Workers 14.51.
 Wave 2 sessions (14:45 UTC): HAR-37R session_01TmkNgSUKKsVibt9Dxus8P8; AVS-153 session_01QzgkdepnScgYGhF3BSpyjC; SUR-DH
 session_01981ngPSsb1iKgeeTCAAiXz (Sonnet); WVH-CROP session_01VcfjpdPR2NzzhAEczrCmEQ.
+
+## Wave 2 result (15:1x UTC): HAR-37R 5.16 N (cipher passes inside shuffled-gloss controls; gloss text M; 1.29x cap), AVS-153 5.73 D (WVO 153
+lines 1-20 keyed, 709 signs, both gates pass; W1 native check open), SUR-DH 0.95 N (den Heijer pp.327-329 read: 2077 legend "not
+transcribed"; p.328 = 2076, a second print reader of the SUR-2076 crib), WVH-CROP 2.48 N (compact-8 conflicts on 2.18, nine unkeyed; 1.24x).
+Workers 14.32; lane workers 28.83.
+
+## Wave 3 (15:2x UTC 15 Oct; www.googleapis.com answered 200 at 15:16 UTC after 503s since 12 Oct)
+VERIFY-BACKLOG note: the eckert-1864 (25) and manteuffel (2) audit2 rows are all N1 / text known; CLAUDE.md Outreach gate 2 asks a second
+audit only above N1, so they are not run here. Both jobs below share googleapis: post "googleapis take/release" lines, one at a time, >= 2 s
+apart, and stop on the second 503 (one retry after a pause, never a loop); if the other job holds a take with no release, wait or stop.
+
+### ECK-GB5 (Sonnet, cap 1.5, box 40 min, googleapis <= 20): eckert-1864 Grant Papers 13 for E592 + looser E589
+Remaining gaps line (GB-PASS4): "Grant Papers vol. 13 (2-20 Feb 1865) for E592 and a looser E589 query (`Monohansett Monroe`) - blocker:
+waiting-on LOCAL-QUEUE L80; googleapis answered 503 ...". Rerun `eck_gbpass_gb.py --gbpass3` exactly as GB-PASS4 (control B first; target
+only if the control hits). Record per query hit / no hit / 503. If a page is located, say which LOCAL-QUEUE row it answers in NOTES (do not
+edit LOCAL-QUEUE.tsv). Text known (guardrail share). NOTES "## GB-PASS5", gaps + Verdict, gaps_check.
+
+### F61-GB (Sonnet, cap 1.5, box 40 min, googleapis <= 10, api.semanticscholar.org <= 6): fr4715-f61-mayenne-1592 the six 503 phrases
+D4-F61PR's "Not searched: the six Google Books phrases that returned 503 (nous avons parle..., il seroit trop long vous en dire, Cependant on
+n'ose..., ...)" (NOTES l.~6429) plus the Semantic Scholar rerun. Same queries and method as D4-F61PR (tools/print_check.py where it fits);
+per phrase volumes returned and whether any is a League edition or a Mayenne letter. Search result only, never a novelty verdict. NOTES
+"## F61-GB", gaps + Verdict, gaps_check.
