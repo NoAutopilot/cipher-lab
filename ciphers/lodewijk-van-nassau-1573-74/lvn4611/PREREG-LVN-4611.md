@@ -274,3 +274,15 @@ Apply: `lvn4611/corrections_k15.tsv` as a third pass of the VER-LVN2 stage of `.
 4610 rows appended to `lvn10/corrections_lvneye.tsv` (note tagged LVN-K15). Then decode_key.py --check (all decode*.json) and the
 settle/apply --check chain; counts before/after; grade changes carried into AUDIT.md (rule 10).
 Stop rule: 80% of cap (2.4) or box (11:56 UTC); (3) only if (1)-(2) finish before 11:45 UTC.
+
+## Addendum VER-LVN3 (verifier, 15 Oct 2026 11:4x UTC by date -u, account 4, LANE DEFAULT-A4-1035-15), pushed before any image is looked at
+
+Verifier hat, separate session from LVN-K15. Items: p2_K16/18 100 M (RETX A=B 200), p2_K30/15 46 M (RETX A=B 40), p2_K31/14 81 H (LVN-K15 eye: 31).
+Material: WVO 04611.pdf fetched once (resources.huygens.knaw.nl, 1 request), p2 `pdftoppm -png -r 300 -f 2 -l 2`, sha1 must equal 36399838ce5c...
+Crops: one per item, the line band from `p2_centres.txt` (K-line centre +/- 45 px), at 2x, beside exemplar crops of the same digits from H rows on
+p2 (curled-head 1, large 2, 0, 6, 3, 8). Scratchpad only. Not blind: the committed values, the RETX ink and the decode consequences are known.
+**Positive control (gate 3/3):** p2_K16/16 28 H, p2_K30/16 12 H, p2_K31/15 81 H read as committed from the same crops; below 3/3 nothing is changed.
+**Ruling rule (decided on the ink, the word consequence not consulted):** a value is changed only when the glyph matches one exemplar form and not the
+other; a change enters at M through `lvn4611/corrections_k15.tsv`-style rows in a new `lvn4611/corrections_verlvn3.tsv` (settle.py stage) or,
+if settle.py has no such stage, through the same file the solver used; else "kept" (the ink is the committed value) or "undecided" (both forms fit).
+An H row ruled undecided drops to M. decode_key.py --check and the folder's --check scripts after any change; AUDIT.md carries the result.
