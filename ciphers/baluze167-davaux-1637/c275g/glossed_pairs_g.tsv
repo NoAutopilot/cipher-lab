@@ -110,3 +110,18 @@ R20	267	[ladite] trefue de dix annees	2	92'	dit	C275G
 R20	267	[ladite] trefue de dix annees	3	s:E	e	C275G
 R20	267	[ladite] trefue de dix annees	4	31:	trefve	C275G
 R20	267	[ladite] trefue de dix annees	5	16	de	C275G
+# BAL-C280 (15 Oct 2026, account 4): rows below added by eye on Baluze 167 c267/c268 re-fetched at full/2400 (openapi.bnf.fr; untracked; regen
+# URLs in ../images/manifest.json balc275g_fetches; c268 re-fetch sha1 7cd1b82e... differs from the 05:16 fetch by 1 byte, same canvas). E is
+# placed only where the gloss fixes it: c268 "partie" (20: par, 77 ti, E e) and c267 "annees" (E immediately before ſ = s, the final "es"). Other units -.
+R21	268	partie soit	1	20:	par	C280
+R21	268	partie soit	2	77	ti	C280
+R21	268	partie soit	3	s:E	e	C280
+R21	268	partie soit	4	73	-	C280
+R22	267	dix annees	1	17	-	C280
+R22	267	dix annees	2	s:c	-	C280
+R22	267	dix annees	3	51	-	C280
+R22	267	dix annees	4	s:E	e	C280
+R22	267	dix annees	5	L:longs	s	C280
+R20	267	[ladite] trefue de dix annees	6	51	-	C280
+R20	267	[ladite] trefue de dix annees	7	s:E	e	C280
+R20	267	[ladite] trefue de dix annees	8	L:longs	s	C280
