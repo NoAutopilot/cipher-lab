@@ -4528,3 +4528,20 @@ den Heijer's other Zeelandia pages (p. 328 and the chapter text, not opened); Op
 Wollant geheimschrift" returned no rows; IA be-api "Zelandia" Wollant legenda: 5 unrelated hits (Spanish/Latin), none checked further.
 Next (named): den Heijer p. 328 + the Zeelandia essay pages via NA 2.14.97 inv. 24.2 (service.archief.nl, ~$1) for any text rendering of the 1781 buildings.
 Requests: atlasofmutualheritage.nl 7 (2 x 200, 1 search 200, 4 resets), api.openalex.org 2, be-api.us.archive.org 1, nationaalarchief.nl 0.
+
+## SUR-DH (15 Oct 2026, account 2, Sonnet worker for LANE DEFAULT-A2-1410-15; 14:47-14:5x UTC by date -u)
+Job: den Heijer 2012 p.328 and the Zeelandia essay pages (NA 2.14.97 inv. 24.2) for any text rendering of the 1781 legend. No key, token or grade changed.
+Route: www.nationaalarchief.nl item page (200), `viewer.response` (a JSON string inside drupal-settings-json) `scans[].iiif.url` -> service.archief.nl/iip/iipsrv
+?IIIF=<hash path>/<id>.jp2 full/2400; a guessed /iiif/image/v3/<id> path 404s. Pages "GAWIC II (Pagina 327)" (order 329) and "(Pagina 328)" (order 330) read at 2400 px
+by eye; images in the session scratchpad only. Requests: www.nationaalarchief.nl 1, service.archief.nl 4 (2 x 404 on the wrong path, 2 x 200). No IA fts (not needed, the book is read directly).
+Found (read):
+- p.328 = 4.VEL 2076 (Van der Meij van Oosterhout, June 1781, plain Dutch) in facsimile; its legend A-S printed in modern text (`sur2061/heijer_p328_legend_2076.txt`, one read,
+  not aligned). It is the same plain legend SUR-2076 read from the image (`crib_2076_legend.tsv`), so a second, print reader for that crib, not a new crib.
+- p.329 carries 2077 (above) and 2078 (below). For 2077 the print says "[upper right] a key to the letters a to z and numbers 1 to 3 ... partly encrypted, not transcribed"
+  and "[inset map, left] ... letters a to s and numbers 1 to 14 ... partly encrypted, not transcribed" -- no rendering of any 2077 legend entry. The only plain legend text on
+  the page is 2078's Nota (A-C, alpha-gamma, a-z; inset A, alpha, B, 1-18), printed in the middle and right columns: the 2078 Nota is already the SUR-2077 crib source from the image.
+- Essay text pp.328-329 (Dutch + English): history of Zeelandia to 1799, Wollant's 1781 commission, "annotation ... in cipher", key at p.471 (sheet 471, already on file
+  sources/gawic/2026-10-03/gawic_p471.jpg). No building list from 2077's cipher. p.327 (2069, Palm 1715) is plain and not the 1781 sheet.
+Not found: any text rendering of 2077's legend in print on pp.327-329.
+Not read: pp.330-332 (the essay chapter VII reference "bladen 342, 348, 352, 356, 362" lists other sheets, not 2077).
+Next (named): none from print for 2077; the open step stays the de Leeuw 1997 copy (LOCAL-QUEUE L36).
