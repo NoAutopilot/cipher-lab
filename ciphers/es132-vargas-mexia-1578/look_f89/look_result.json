@@ -1,0 +1,37 @@
+{
+ "prereg": "PREREG-ES132-F89.md",
+ "items": 52,
+ "candidates": 40,
+ "decoys": 12,
+ "decoys_rejected": 8,
+ "gate_pass": false,
+ "candidate_verdicts": {
+  "propose-base:no": 13,
+  "propose-base:yes": 4,
+  "propose-vowel:unclear": 3,
+  "propose-vowel:yes": 4,
+  "confirm:yes": 3,
+  "propose-base:unclear": 3,
+  "propose-mark:unclear": 2,
+  "propose-mark:no": 3,
+  "propose-vowel:no": 2,
+  "confirm:no": 1,
+  "propose-mark:yes": 2
+ },
+ "held_by_reconcile": [],
+ "applied": 0,
+ "decoy_verdicts": {
+  "I02": "no",
+  "I06": "yes",
+  "I07": "no",
+  "I15": "unclear",
+  "I16": "yes",
+  "I20": "unclear",
+  "I21": "no",
+  "I22": "yes",
+  "I23": "no",
+  "I25": "yes",
+  "I41": "no",
+  "I49": "no"
+ }
+}

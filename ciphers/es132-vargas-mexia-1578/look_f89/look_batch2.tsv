@@ -1,0 +1,18 @@
+id	A_seen	verdict	note
+I19	4@r	no	no vowel cross; hooked mark above
+I20	11+ (or 14+)	unclear	digit after 1 ambiguous
+I21	10@r	no	v-shaped hook, not wavy
+I22	6.@l	yes	acute stroke above
+I23	15ρ	no	numeral not M
+I24	11+	no	not dρ
+I25	20+	yes	cross-like sign
+I26	22.@s	yes	bar above
+I27	11+@n	yes	circumflex above
+I28	10	yes	plain
+I29	22+@m/@r	unclear	mark ambiguous wavy/hooked
+I30	{quam}	no	word at this position
+I31	33.@s	no	bar above
+I32	23.@m	no	not two dots
+I33	22.@s	yes	bar above
+I34	66	no	predicted 16. is previous token
+I35	20 cut at edge	unclear	clipped by margin
