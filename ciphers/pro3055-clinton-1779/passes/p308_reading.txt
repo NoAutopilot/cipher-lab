@@ -1,0 +1,43 @@
+# B.147 p.308 (H-1649 Image 955, IIIF c0rj48q4gn8n), BL Add MS 21807: first page of the period decipherment of item 3502
+# (PRO 30/55/29/83; New York, 8 May 1781; margin "fo. 253v", "See the cypher letter (initialled) copied on p.299 supra"). Read by
+# worker CLIN-3502 (15 Oct 2026) on own looks at Image 955 at 2400 px (three crops of the text block), before any p.299 pass or
+# any look at p.299 at reading size; line breaks as written; spelling as on the page; the catchword "Canada" (to p.309) not
+# included; p.309 not read. Uncertain readings: "Brattleboorough" (as written), "throws" (could be read "throms").
+BODY
+Vermont deserves our Vigilant
+Attention - I have much to say
+concerning her Misterious Conduct,
+but the voluminous cypher we use
+permits only a few hints, we wrote
+to Ethan Allen last Summer and
+this Winter, he inclosed both letters
+to Congress in a letter of the 9th March
+last which we have intercepted with
+another from his Brother Ira
+transmitting the Articles of a Union
+just then formed between Vermont
+and Cheshire, and Grafton, two Counties
+east of Connecticut River, and also
+an Act to extend the Claim of Vermonts
+Jurisdiction, west of the Hudson.
+The design of these may be to
+stimulate Congress to determine
+for Vermont against her
+Neighbours & admit her as a 14th
+State in the Confederacy; but why
+then does she widen the Controvercy
+by extending her breadth on both
+sides? she don't deny the titles in
+either of the Additions nor will those
+Additions validate her own under
+the new hampshire grants -
+Col. Wells of Brattleboorough has
+sent in his Son in law with verbal
+Information that throws great
+light upon the Conduct of Vermonts -
+We take him to be a friend and he
+says by this Messenger that you
+know him to be so; is it true?
+he offers his Services for a Monthly
+Interchange of letters between
+END
