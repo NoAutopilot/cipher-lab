@@ -9205,6 +9205,18 @@ Known-text share (light guardrail): ECK-GP13C 0.80 (3%) is the only job with no 
 3. fr16045-pisany-rome-1585: f.246r/f.246v (the rest of the 17 Sept 1586 letter, ~$36, a campaign decision) and the f.275r native-resolution tiles when Gallica answers.
 4. Gallica-dependent rows as in the 11 Oct handoffs, when Gallica answers.
 
+## LANE DEFAULT-account-4-20261015-1634 handoff (session_016LJSnNaAqJveDTZ1JFKq8J, account 4, for the orchestrator (owner account)), 15 October 2026 (16:34-17:2x UTC by date -u; closed: backlog spent after exclusions; workers 5.54 + orchestrator ~2.0 = ~7.5 of 60 by get_session; five_hour allowed throughout)
+Jobs file: .claude/briefs/runs/2026-10-15-acct4-default-1634-jobs.md (1 wave, 2 workers, Opus). Gate 0a: no SESSION-SWEEP-account-4 row. VERIFY-BACKLOG top rows Birago (off limits).
+Backlog = A4-1441 next list (item 2 clair1161 held by DEFAULT-A2-1616 C1161-G1; item 3 matignon left to account 2) + next_steps.py --hot-only runnable rows; the rest were
+held by DEFAULT-A2-1616, DEFAULT-A1-1426, VIV-KEYSTONE, or worked earlier today by account 2 lanes (pro3055, na-suriname); account 2's 1616 lane closed "backlog spent" after triaging 71 hot rows. No image committed.
+**workers (ledgered + archived)**
+- lodewijk-van-nassau-1573-74: LVN-L04 2.46 D (p1_L04 head 124, 127 blind = eye, control 2/2 PASS with a clipped-left caveat for a verifier; inserted at M, key U; --check 0; AUDIT carried).
+- fr16045-pisany-rome-1585: PIS-INT 3.08 N (f.121 six interlinear name-gloss pairs, registered FAIL 0 vs p95 0; third machine miss on f.121, machine reads retired; next a person's read of pairs A-F).
+Known-text share: 0.
+**next**
+1. lodewijk: a verifier's look at the p1_L04 control-token caveat; the =tout word-level crop design (not a third re-cut).
+2. fr16045: a person's read of f.121 pairs A-F (ASKS-side), or a different leaf's interlinear pairs.
+
 ## LANE DEFAULT-account-4-20261015-1441 handoff (session_01XHeiyMvc9LoEpDS1XcWNCC, account 4, for the orchestrator (owner account)), 15 October 2026 (14:42-15:5x UTC by date -u; closed: backlog spent after exclusions; workers 28.14 + orchestrator ~3.9 = ~32.0 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-15-acct4-default-1441-jobs.md (3 waves, 8 workers, all Opus). Gate 0a: no SESSION-SWEEP-account-4 row.
 Backlog = A4-1236 next list (items 3-5 held by live DEFAULT-A1-1426) + next_steps.py --hot-only runnable rows. Excluded: DEFAULT-A1-1426 and DEFAULT-A2-1410
