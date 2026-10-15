@@ -16724,3 +16724,5 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-15 11:18 | worker MAT-BOX (account 4) | openapi.bnf.fr take for LANE DEFAULT-A4-1035-15 (account 4): fr.15572 btv1b9061879d f116 (f.110) one region, lines 1-3, <= 2 requests, >= 3 s. usage: not readable here
 2026-10-15 11:19 | worker COL26-PRINT (account 2) | claim for LANE DEFAULT-A2-1109-15 (account 2) (11:2x UTC 15 Oct by date -u, box end 12:20 UTC, cap 2): colbert26-lathuillerie-1644 print rung, Danish/Swedish mediation editions; archive.org/OpenAlex/S2/CORE only. usage: not readable here
 2026-10-15 11:19 | worker MAT-BOX (account 4) | openapi.bnf.fr release for LANE DEFAULT-A4-1035-15 (account 4): 1 request (f116 region 4700,250,3500,450, 200, scratch only); host free. usage: not readable here
+2026-10-15 11:15 | worker LVN-K15 (account 4) | resources.huygens.knaw.nl take for LANE DEFAULT-A4-1035-15 (account 4): WVO 04611.pdf + 04610.pdf, 2 requests >= 3 s apart. usage: not readable here
+2026-10-15 11:16 | worker LVN-K15 (account 4) | resources.huygens.knaw.nl release for LANE DEFAULT-A4-1035-15 (account 4): 2 requests (04611.pdf, 04610.pdf), host free. usage: not readable here

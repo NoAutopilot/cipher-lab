@@ -394,8 +394,11 @@ def main():
             # positions of the touched p2_K lines then renumbered 1..n in order.
             # LVN-P2K (15 Oct 2026): the same stage applied a second time for the placement rulings on the unplaced p2_K rows
             # (lvn4611/corrections_p2k.tsv, keyed by the post-VER-LVN2 ids; PREREG-LVN-4611.md addendum LVN-P2K).
+            # LVN-K15 (15 Oct 2026): a third pass, the eye rulings on K15 and the positional `differs` rows (lvn4611/corrections_k15.tsv,
+            # keyed by the post-LVN-P2K ids; PREREG addendum LVN-K15).
             for cname, vname, tagp in (("corrections_verlvn2.tsv", "retired_verlvn2.tsv", "VER-LVN2 eye"),
-                                       ("corrections_p2k.tsv", "retired_p2k.tsv", "LVN-P2K")):
+                                       ("corrections_p2k.tsv", "retired_p2k.tsv", "LVN-P2K"),
+                                       ("corrections_k15.tsv", "retired_k15.tsv", "LVN-K15")):
                 cp = HERE / "lvn4611" / cname
                 if cp.exists():
                     with open(cp, newline="", encoding="utf-8") as fh:

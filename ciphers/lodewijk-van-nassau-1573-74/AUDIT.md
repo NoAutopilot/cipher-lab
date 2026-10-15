@@ -2057,3 +2057,14 @@ N-class unchanged (4610/4611/4616 N4, 4612 N3; key ours). SECOND-OPINIONS-QUEUE 
 4611 p2 line (grep for every retired word): no queued prompt changes. status.json not edited (the parent's).
 Left for a verifier or the next pass: p2_K15/15 85 M is a second row on the ink 85 that 85 H carries, and K15's mapped 18/39 re-read K14's
 tail; p2_K31/18 =faisant S has no word on K31.
+
+## LVN-K15 (15 Oct 2026, 11:08-11:2x UTC by date -u; solver job, account 4) -- reading revised after this AUDIT.md, carried here (rule 10 propagation)
+
+Eye rulings on 4611 p2 (NOTES.md "LVN-K15"; `lvn4611/corrections_k15.tsv`, PREREG e99c4d0bb, positive control 4/4, consistency above gate):
+K15's pass-copy rows 18 39 -> 38 115 and the second 85 M retired; 29 more `differs` rows set to the RETX ink at M; K31/18 =faisant **S -> 37 M**;
+8 undecided (two of them, K16/18 100 and K30/15 46, moved to undecided after the decode was seen). No 4611 H row changed.
+4610 (`lvn10/corrections_lvneye.tsv`, two rows tagged LVN-K15): **p1_L09/16 11 H -> 12 M, p1_L09/18 101 H -> 102 M** (flat-foot 2), letter-neutral;
+10 kept on p1_L04/L09. Counts: 4611 full C 1079, M 192 -> 191, tokens 1481; 4610 full C 1217 -> 1215; 4610/4611/4616 C/H **2566 of 3305 (77.6%)**,
+four letters **2566 of 4138 (62.0%)**. Depth stays **D2**; N-class unchanged (4610/4611/4616 N4, 4612 N3; key ours). SECOND-OPINIONS-QUEUE prompts
+quote no 4611 p2 line and no changed 4610 word: no queued prompt changes. status.json not edited (the parent's).
+For a verifier: K16/18 100 vs ink 200, K30/15 46 vs ink 40, and p2_K31/14 81 H where this eye reads 31.

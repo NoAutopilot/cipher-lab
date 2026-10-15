@@ -1219,7 +1219,7 @@ p2_K14	17	120	H	was 120 M; B:-	lvn4611 per-token 300-dpi read 120 (A150 120, B15
 p2_K14	18	83	H	was 83 M; B:-	lvn4611 per-token 300-dpi read 83 (A150 83, B150 -; P2A069; p2a control 9/10); LVN-P2B order: was p2_L14/15
 p2_K14	19	3	M	B:-	gap; LVN-P2B order: was p2_L14/16
 p2_K14	20	35	H	was 35 M; B:311	lvn4611 per-token 300-dpi read 35 (A150 35, B150 311; P2A018; p2a control 9/10); LVN-P2B order: was p2_L14/17
-p2_K14	21	140	M	B:=cela	differ; LVN-P2B order: was p2_L14/18
+p2_K14	21	146	M	was 140 M; B:=cela	differ; LVN-P2B order: was p2_L14/18; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): line ends 35. 146. 125.: last digit 6 as in 26 at K15/11; RETX recon 146
 p2_K14	22	125	M	B:=a	differ; LVN-P2B order: was p2_L14/19
 p2_K15	1	=mayo	M	B:=moy	differ; LVN-P2B order: was p2_L14/20
 p2_K15	2	=de	M	B:=admin	differ; LVN-P2B order: was p2_L14/21
@@ -1233,18 +1233,17 @@ p2_K15	9	124	M	A:124 B:124	LVN-P2RETX free read A = B; K15/9; ink in no 150-dpi 
 p2_K15	10	147	M	A:147 B:147	LVN-P2RETX free read A = B; K15/10; ink in no 150-dpi row; LVN-P2B order: was p2_R15a/8
 p2_K15	11	26	H	was 26 M; B:-	lvn4611 per-token 300-dpi read 26 (A150 26, B150 -; P2A095; p2a control 9/10); LVN-P2B order: was p2_L15/6
 p2_K15	12	82	H	was 82 M; B:-	lvn4611 per-token 300-dpi read 82 (A150 82, B150 -; P2A091; p2a control 9/10); LVN-P2B order: was p2_L15/7
-p2_K15	13	18	M	B:-	gap; LVN-P2B order: was p2_L15/9
-p2_K15	14	39	M	B:-	gap; LVN-P2B order: was p2_L15/10
-p2_K15	15	85	M	B:-	gap; LVN-P2B order: was p2_L15/11
-p2_K15	16	85	H	was 85 M; B:-	lvn4611 per-token 300-dpi read 85 (A150 85, B150 -; P2A087; p2a control 9/10); LVN-P2B order: was p2_L15/13; LVN-P2K: E eye: present, the single 85 between 115 and 129 (its p2a box P2A087 lies on K15); NB p2_K15/15 85 M (map match) is then a second row on the same ink -- left for the next pass
-p2_K15	17	129	M	A:129 B:119	LVN-P2RETX reconcile (A/B differ); K15/16; ink in no 150-dpi row; LVN-P2B order: was p2_R15b/1
-p2_K15	18	81	H	was 81 M; B:-	lvn4611 per-token 300-dpi read 81 (A150 81, B150 -; P2A044; p2a control 9/10); LVN-P2B order: was p2_L15/15
-p2_K15	19	4	H	was 4 M	lvn4611 per-token 300-dpi read 4 (A150 4, B150 4; P2A061; p2a control 9/10); LVN-P2B order: was p2_L15/16
-p2_K15	20	35	H	was 35 M; B:150	lvn4611 per-token 300-dpi read 35 (A150 35, B150 150; P2A038; p2a control 9/10); LVN-P2B order: was p2_L15/18
-p2_K15	21	114	H	was 114 M; B:63	lvn4611 per-token 300-dpi read 114 (A150 114, B150 63; P2A019; p2a control 9/10); LVN-P2B order: was p2_L15/19
-p2_K15	22	82	H	was 82 M; B:7	lvn4611 per-token 300-dpi read 82 (A150 82, B150 7; P2A015; p2a control 9/10); LVN-P2B order: was p2_L15/20
+p2_K15	13	38	M	was 18 M; B:-	gap; LVN-P2B order: was p2_L15/9; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K15 reads 26, 82, 38, 115, 85, 129: this row (was p2_L15/9, a pass copy of K14's 18 39 85) sits on the ink 38; RETX A=B 38
+p2_K15	14	115	M	was 39 M; B:-	gap; LVN-P2B order: was p2_L15/10; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K15 ink 115 after 38 (see K15/13); RETX A=B 115
+p2_K15	15	85	H	was 85 M; B:-	lvn4611 per-token 300-dpi read 85 (A150 85, B150 -; P2A087; p2a control 9/10); LVN-P2B order: was p2_L15/13; LVN-P2K: E eye: present, the single 85 between 115 and 129 (its p2a box P2A087 lies on K15); NB p2_K15/15 85 M (map match) is then a second row on the same ink -- left for the next pass
+p2_K15	16	129	M	A:129 B:119	LVN-P2RETX reconcile (A/B differ); K15/16; ink in no 150-dpi row; LVN-P2B order: was p2_R15b/1
+p2_K15	17	81	H	was 81 M; B:-	lvn4611 per-token 300-dpi read 81 (A150 81, B150 -; P2A044; p2a control 9/10); LVN-P2B order: was p2_L15/15
+p2_K15	18	4	H	was 4 M	lvn4611 per-token 300-dpi read 4 (A150 4, B150 4; P2A061; p2a control 9/10); LVN-P2B order: was p2_L15/16
+p2_K15	19	35	H	was 35 M; B:150	lvn4611 per-token 300-dpi read 35 (A150 35, B150 150; P2A038; p2a control 9/10); LVN-P2B order: was p2_L15/18
+p2_K15	20	114	H	was 114 M; B:63	lvn4611 per-token 300-dpi read 114 (A150 114, B150 63; P2A019; p2a control 9/10); LVN-P2B order: was p2_L15/19
+p2_K15	21	82	H	was 82 M; B:7	lvn4611 per-token 300-dpi read 82 (A150 82, B150 7; P2A015; p2a control 9/10); LVN-P2B order: was p2_L15/20
 p2_K16	1	311	M	B:-	gap; LVN-P2B order: was p2_L15/1
-p2_K16	2	=octa	M	B:-	gap; LVN-P2B order: was p2_L15/2
+p2_K16	2	=cela	M	was =octa M; B:-	gap; LVN-P2B order: was p2_L15/2; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): word after 311 reads cela; RETX recon =cela
 p2_K16	3	=a	M	B:-	gap; LVN-P2B order: was p2_L15/3
 p2_K16	4	=moy	M	B:-	gap; LVN-P2B order: was p2_L15/4
 p2_K16	5	=advis	M	B:-	gap; LVN-P2B order: was p2_L15/5
@@ -1260,7 +1259,7 @@ p2_K16	14	14	H	was 14 M; B:-	lvn4611 per-token 300-dpi read 14 (A150 14, B150 -;
 p2_K16	15	64	H	was 64 M; B:-	lvn4611 per-token 300-dpi read 64 (A150 64, B150 -; P2A046; p2a control 9/10); LVN-P2B order: was p2_L16/10
 p2_K16	16	28	H		agree; LVN-P2B order: was p2_L16/11
 p2_K16	17	71	H	was 71 M; B:-	lvn4611 per-token 300-dpi read 71 (A150 71, B150 -; P2A097; p2a control 9/10); LVN-P2B order: was p2_L16/12
-p2_K16	18	100	M	B:-	gap; LVN-P2B order: was p2_L16/13
+p2_K16	18	100	M	B:-	gap; LVN-P2B order: was p2_L16/13; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K16 reads 71, 200, 65: large 2 as in 28 on the line; RETX A=B 200 -- UNDECIDED, committed value kept: the first digit may be this hand's curled-head 1 (VER-LVN2 found 204/250 were 104/150), and 100 keeps the word changer
 p2_K16	19	65	H	was 65 M; B:-	lvn4611 per-token 300-dpi read 65 (A150 65, B150 -; P2A033; p2a control 9/10); LVN-P2B order: was p2_L16/14
 p2_K16	20	5	H	was 5 M; B:-	lvn4611 per-token 300-dpi read 5 (A150 5, B150 -; P2A075; p2a control 9/10); LVN-P2B order: was p2_L16/15
 p2_K16	21	95	H	was 95 M; B:-	lvn4611 per-token 300-dpi read 95 (A150 95, B150 -; P2A090; p2a control 9/10); LVN-P2B order: was p2_L16/16
@@ -1269,14 +1268,14 @@ p2_K17	2	22	H		agree; LVN-P2B order: was p2_L16/2
 p2_K17	3	143	M	was 149 H	agree; LVN-P2B order: was p2_L16/3; VER-LVN2 eye: was p2_L16/3: final digit the flat-top open-tailed 3 (as 30 at K17/8), not the 9 of 39 at K17/15; A=B ink 143
 p2_K17	4	=de	M		agree-flagged; LVN-P2B order: was p2_L16/4
 p2_K17	5	77	H	was 71 M; B:77	lvn4611 per-token 300-dpi read 77 (A150 71, B150 77; P2A042; p2a control 9/10); LVN-P2B order: was p2_L16/5
-p2_K17	6	85	M	was 81 H	agree; LVN-P2B order: was p2_L16/6; VER-LVN2 eye: was p2_L16/6: long-s 5 (as 85 at K23/2), not the hooked 1 of 81 at K19/5; ink 85
-p2_K17	7	28	M	B:-	gap; LVN-P2B order: was p2_L16/7
-p2_K17	8	71	M	B:-	gap; LVN-P2B order: was p2_L16/8
-p2_K17	9	64	M	A:-	gap; LVN-P2B order: was p2_L17/10
+p2_K17	6	85	M	was 81 H	agree; LVN-P2B order: was p2_L16/6; VER-LVN2 eye: was p2_L16/6: long-s 5 (as 85 at K23/2), not the hooked 1 of 81 at K19/5; ink 85; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): positive control: read 85 as committed
+p2_K17	7	26	M	was 28 M; B:-	gap; LVN-P2B order: was p2_L16/7; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K17 reads 85, 26, 30, 84: final 6 as 26 at K15/11; RETX A=B 26
+p2_K17	8	30	M	was 71 M; B:-	gap; LVN-P2B order: was p2_L16/8; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): flat-top open 3 then 0; RETX recon 30 (A 80, B 30)
+p2_K17	9	84	M	was 64 M; A:-	gap; LVN-P2B order: was p2_L17/10; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): stacked 8 then 4; RETX A=B 84
 p2_K17	10	104	H	was 104 M; A:-	lvn4611 per-token 300-dpi read 104 (A150 -, B150 104; P2A035; p2a control 9/10); LVN-P2B order: was p2_L17/11; VER-LVN2 eye: was p2_L17/11: first glyph is this hand's curled-head 1 (as 104 at K30/3, 150 at K17/16, 101 at K19/6), not the long-footed 2 of 22/26; ink 204 rejected (204 unattested in all letters)
 p2_K17	11	4	H	was 4 M; A:-	lvn4611 per-token 300-dpi read 4 (A150 -, B150 4; P2A002; p2a control 9/10); LVN-P2B order: was p2_L17/12
 p2_K17	12	125	M	A:-	gap; LVN-P2B order: was p2_L17/13
-p2_K17	13	135	M	A:-	gap; LVN-P2B order: was p2_L17/14
+p2_K17	13	136	M	was 135 M; A:-	gap; LVN-P2B order: was p2_L17/14; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K17 reads 125. 136. 63: final 6; RETX A=B 136
 p2_K17	14	63	H		agree; LVN-P2B order: was p2_L17/15
 p2_K17	15	39	H		agree; LVN-P2B order: was p2_L17/16
 p2_K17	16	150	H		agree; LVN-P2B order: was p2_L17/17
@@ -1315,8 +1314,8 @@ p2_K19	10	1	M	A:1 B:1	LVN-P2RETX free read A = B; K19/10; ink in no 150-dpi row;
 p2_K19	11	71	M	A:71 B:71	LVN-P2RETX free read A = B; K19/11; ink in no 150-dpi row; LVN-P2B order: was p2_R19a/2
 p2_K19	12	85	M	A:85 B:85	LVN-P2RETX free read A = B; K19/12; ink in no 150-dpi row; LVN-P2B order: was p2_R19a/3
 p2_K19	13	141	M	A:141 B:141	LVN-P2RETX free read A = B; K19/13; ink in no 150-dpi row; LVN-P2B order: was p2_R19a/4
-p2_K19	14	85	M	B:126	differ; LVN-P2B order: was p2_L19/7
-p2_K19	15	63	M	B:65	differ; LVN-P2B order: was p2_L19/8
+p2_K19	14	135	M	was 85 M; B:126	differ; LVN-P2B order: was p2_L19/7; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K19 reads 141. 135. 65. 40: flat-top 3 then long-s 5; RETX A=B 135
+p2_K19	15	65	M	was 63 M; B:65	differ; LVN-P2B order: was p2_L19/8; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): long-s 5 as in 135 before it; RETX A=B 65
 p2_K19	16	40	H		agree; LVN-P2B order: was p2_L19/9
 p2_K19	17	311	H		agree; LVN-P2B order: was p2_L19/10
 p2_K19	18	84	H		agree; LVN-P2B order: was p2_L19/11
@@ -1325,7 +1324,7 @@ p2_K19	20	150	H		agree; LVN-P2B order: was p2_L19/13; VER-LVN2 eye: was p2_L19/1
 p2_K20	1	12	H		agree; LVN-P2B order: was p2_L19/1
 p2_K20	2	62	H		agree; LVN-P2B order: was p2_L19/2
 p2_K20	3	22	H		agree; LVN-P2B order: was p2_L19/3
-p2_K20	4	=Il	M	B:=Ji	differ; LVN-P2B order: was p2_L19/4
+p2_K20	4	31	M	was =Il M; B:=Ji	differ; LVN-P2B order: was p2_L19/4; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K20 reads 22. 31, 10: the large flourished 3 (as K14's 3) and 1, no word; RETX A=B 31
 p2_K20	5	10	H		agree; LVN-P2B order: was p2_L19/5
 p2_K20	6	37	H	was 37 M; B:57	LVN-P2B map settle: ink 37 (anchored; A150 37, B150 57; P2B046; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L19/6
 p2_K20	7	38	M	A:38 B:38	LVN-P2RETX free read A = B; K20/7; ink in no 150-dpi row; LVN-P2B order: was p2_R20a/1
@@ -1343,8 +1342,8 @@ p2_K20	18	111	H		agree; LVN-P2B order: was p2_L20/16
 p2_K21	1	101	H		agree; LVN-P2B order: was p2_L20/1
 p2_K21	2	2	H		agree; LVN-P2B order: was p2_L20/2
 p2_K21	3	245	M	B:-	gap; LVN-P2B order: was p2_L20/3
-p2_K21	4	200	M	B:-	gap; LVN-P2B order: was p2_L20/4
-p2_K21	5	65	M	B:-	gap; LVN-P2B order: was p2_L20/5
+p2_K21	4	300	M	was 200 M; B:-	gap; LVN-P2B order: was p2_L20/4; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): underlined 300: flat-top open 3 as 33 at K31/3; RETX A=B 300
+p2_K21	5	66	M	was 65 M; B:-	gap; LVN-P2B order: was p2_L20/5; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K21 reads 300. 66. 6.; RETX A=B 66
 p2_K21	6	6	M	A:6 B:6	LVN-P2RETX free read A = B; K21/6; ink in no 150-dpi row; LVN-P2B order: was p2_R21a/1
 p2_K21	7	2	H		agree; LVN-P2B order: was p2_L21/6
 p2_K21	8	26	H		agree; LVN-P2B order: was p2_L21/7
@@ -1386,11 +1385,11 @@ p2_K22	21	74	H		agree; LVN-P2B order: was p2_L22/21
 p2_K22	22	10	H		agree; LVN-P2B order: was p2_L22/22
 p2_K22	23	117	H		agree; LVN-P2B order: was p2_L22/23
 p2_K23	1	119	H		agree; LVN-P2B order: was p2_L22/1
-p2_K23	2	36	M	B:35	differ; LVN-P2B order: was p2_L22/2
-p2_K23	3	7	M	B:3	differ; LVN-P2B order: was p2_L22/3
+p2_K23	2	85	M	was 36 M; B:35	differ; LVN-P2B order: was p2_L22/2; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K23 reads 119, 85, 3, 77, 85, 118; RETX A=B 85
+p2_K23	3	3	M	was 7 M; B:3	differ; LVN-P2B order: was p2_L22/3; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): flat-top 3 (see K23/2); RETX A=B 3
 p2_K23	4	77	H		agree; LVN-P2B order: was p2_L22/4
 p2_K23	5	85	M	was 86 H	agree; LVN-P2B order: was p2_L22/5; VER-LVN2 eye: was p2_L22/5: long-s 5, identical to 85 at K23/2; ink 85
-p2_K23	6	118	M	was 117 H	agree; LVN-P2B order: was p2_L22/6; VER-LVN2 eye: was p2_L22/6: final glyph the stacked-loop 8 (as 81 at K23/7), not the 7 of 77 at K23/4; ink 118
+p2_K23	6	118	M	was 117 H	agree; LVN-P2B order: was p2_L22/6; VER-LVN2 eye: was p2_L22/6: final glyph the stacked-loop 8 (as 81 at K23/7), not the 7 of 77 at K23/4; ink 118; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): positive control: read 118 as committed
 p2_K23	7	81	M	A:81 B:81	LVN-P2RETX free read A = B; K23/7; ink in no 150-dpi row; LVN-P2B order: was p2_R23a/1
 p2_K23	8	5	M	A:5 B:5	LVN-P2RETX free read A = B; K23/8; ink in no 150-dpi row; LVN-P2B order: was p2_R23a/2
 p2_K23	9	35	M	A:38 B:35	LVN-P2RETX reconcile (A/B differ); K23/9; ink in no 150-dpi row; LVN-P2B order: was p2_R23a/3
@@ -1411,7 +1410,7 @@ p2_K24	1	=dont	M	B:=douz	differ; LVN-P2B order: was p2_L23/1
 p2_K24	2	=mescripuez	M	B:=inscripuz	differ; LVN-P2B order: was p2_L23/2
 p2_K24	3	=de	M		agree-flagged; LVN-P2B order: was p2_L23/3
 p2_K24	4	=firay	M	was =aray H; =Aray	settled-case-only; LVN-P2B order: was p2_L23/4; VER-LVN2 eye: was p2_L23/4: plain word 'firay' (je firay), long-s f clear; ink =firay
-p2_K24	5	31	M	was 71 H	agree; LVN-P2B order: was p2_L23/5; VER-LVN2 eye: was p2_L23/5: flat-top 3 + short 1 (as 33 at K24/8), not the barred 7 of 71 at K24/10; ink 31
+p2_K24	5	31	M	was 71 H	agree; LVN-P2B order: was p2_L23/5; VER-LVN2 eye: was p2_L23/5: flat-top 3 + short 1 (as 33 at K24/8), not the barred 7 of 71 at K24/10; ink 31; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): positive control: read 31 as committed
 p2_K24	6	6	M	was 5 H	agree; LVN-P2B order: was p2_L23/6; VER-LVN2 eye: was p2_L23/6: looped 6 as the 6 of 36 at K24/7, not a long-s 5; ink 6
 p2_K24	7	36	H	was 36 M; B:35	LVN-P2B map settle: ink 36 (anchored; A150 36, B150 35; P2B139; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L23/7
 p2_K24	8	33	M	was 35 H	agree; LVN-P2B order: was p2_L23/8; VER-LVN2 eye: was p2_L23/8: two flat-top 3s, no long-s 5; ink 33
@@ -1442,7 +1441,7 @@ p2_K25	14	=yst	M	A:=yst B:-	LVN-P2RETX reconcile (A/B differ); K25/14; ink in no
 p2_K25	15	61	H		agree; LVN-P2B order: was p2_L24/14
 p2_K25	16	14	H		agree; LVN-P2B order: was p2_L24/15
 p2_K25	17	24	H		agree; LVN-P2B order: was p2_L24/16
-p2_K25	18	34	M	B:74	differ; LVN-P2B order: was p2_L24/17
+p2_K25	18	84	M	was 34 M; B:74	differ; LVN-P2B order: was p2_L24/17; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K25 reads 24, 84, 28: stacked 8 as in 84 on K24; RETX A=B 84
 p2_K25	19	28	M	A:28 B:28	LVN-P2RETX free read A = B; K25/19; ink in no 150-dpi row; LVN-P2B order: was p2_R25c/1
 p2_K25	20	85	M	A:85 B:85	LVN-P2RETX free read A = B; K25/20; ink in no 150-dpi row; LVN-P2B order: was p2_R25c/2
 p2_K25	21	4	M	A:4 B:4	LVN-P2RETX free read A = B; K25/21; ink in no 150-dpi row; LVN-P2B order: was p2_R25c/3
@@ -1455,8 +1454,8 @@ p2_K26	6	81	H	was 81 M; B:-	LVN-P2B map settle: ink 81 (anchored; A150 81, B150 
 p2_K26	7	27	H	was 27 M; B:-	LVN-P2B map settle: ink 27 (anchored; A150 27, B150 -; P2B131; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L25/7
 p2_K26	8	75	H	was 75 M; B:-	LVN-P2B map settle: ink 75 (anchored; A150 75, B150 -; P2B012; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L25/8
 p2_K26	9	98	H	was 98 M; B:-	LVN-P2B map settle: ink 98 (anchored; A150 98, B150 -; P2B005; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L25/9
-p2_K26	10	81	M	B:-	gap; LVN-P2B order: was p2_L25/10
-p2_K26	11	124	M	B:-	gap; LVN-P2B order: was p2_L25/11
+p2_K26	10	85	M	was 81 M; B:-	gap; LVN-P2B order: was p2_L25/10; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K26 reads 98, 85. 125. 64: long-s 5; RETX recon 85 (A 85, B 81)
+p2_K26	11	125	M	was 124 M; B:-	gap; LVN-P2B order: was p2_L25/11; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): long-s 5 (see K26/10); RETX A=B 125
 p2_K26	12	64	H	was 64 M; B:-	LVN-P2B map settle: ink 64 (anchored; A150 64, B150 -; P2B043; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L25/12
 p2_K26	13	104	H	was 104 M; B:-	LVN-P2B map settle: ink 104 (anchored; A150 104, B150 -; P2B161; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L25/13
 p2_K26	14	114	H	was 114 M; B:-	LVN-P2B map settle: ink 114 (anchored; A150 114, B150 -; P2B081; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L25/14
@@ -1465,7 +1464,7 @@ p2_K26	16	83	S	21	settled-a nc=2 margin=0.35; LVN-P2B order: was p2_L25/16
 p2_K26	17	36	H	was 36 M; B:92	LVN-P2B map settle: ink 36 (anchored; A150 36, B150 92; P2B065; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L25/17
 p2_K26	18	24	H	was 24 M; B:82	LVN-P2B map settle: ink 24 (anchored; A150 24, B150 82; P2B052; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L25/18
 p2_K26	19	30	H	was 30 M; B:29	LVN-P2B map settle: ink 30 (anchored; A150 30, B150 29; P2B063; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L25/19
-p2_K26	20	280	M	B:150	differ; LVN-P2B order: was p2_L25/20
+p2_K26	20	150	M	was 280 M; B:150	differ; LVN-P2B order: was p2_L25/20; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): line ends 30. 150.: curled-head 1 (VER-LVN2: this hand's 1, not 2) and long-s 5; RETX recon 150 (A 180, B 150)
 p2_K27	1	=qm	M	A:=qm B:=gm	LVN-P2RETX reconcile (A/B differ); K27/1; ink in no 150-dpi row; LVN-P2B order: was p2_R27a/1
 p2_K27	2	118	M	A:118 B:118	LVN-P2RETX free read A = B; K27/2; ink in no 150-dpi row; LVN-P2B order: was p2_R27a/2
 p2_K27	3	63	M	A:63 B:63	LVN-P2RETX free read A = B; K27/3; ink in no 150-dpi row; LVN-P2B order: was p2_R27a/3
@@ -1486,7 +1485,7 @@ p2_K27	17	84	M	A:84 B:84	LVN-P2RETX free read A = B; K27/17; ink in no 150-dpi r
 p2_K27	18	=pouoir	M	A:=pouoir B:=pour	LVN-P2RETX reconcile (A/B differ); K27/18; ink in no 150-dpi row; LVN-P2B order: was p2_R27b/9
 p2_K27	19	60	M	A:60 B:60	LVN-P2RETX free read A = B; K27/19; ink in no 150-dpi row; LVN-P2B order: was p2_R27b/10
 p2_K28	1	=auoir	M	B:38	differ; LVN-P2B order: was p2_L26/1
-p2_K28	2	65	M	B:51	differ; LVN-P2B order: was p2_L26/2
+p2_K28	2	63	M	was 65 M; B:51	differ; LVN-P2B order: was p2_L26/2; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K28 reads auoir 63, 39, 61: flat-top 3; RETX A=B 63
 p2_K28	3	39	H	was 39 M; B:82	LVN-P2B map settle: ink 39 (anchored; A150 39, B150 82; P2B036; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L26/3
 p2_K28	4	61	H	was 61 M; B:116	LVN-P2B map settle: ink 61 (anchored; A150 61, B150 116; P2B096; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L26/4
 p2_K28	5	2	H	was 2 M; B:15	LVN-P2B map settle: ink 2 (anchored; A150 2, B150 15; P2B053; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L26/5
@@ -1537,7 +1536,7 @@ p2_K30	11	5	M	A:5 B:5	LVN-P2RETX free read A = B; K30/11; ink in no 150-dpi row;
 p2_K30	12	150	M	A:150 B:150	LVN-P2RETX free read A = B; K30/12; ink in no 150-dpi row; LVN-P2B order: was p2_R30b/6
 p2_K30	13	129	M	A:129 B:129	LVN-P2RETX free read A = B; K30/13; ink in no 150-dpi row; LVN-P2B order: was p2_R30b/7
 p2_K30	14	81	M	A:81 B:81	LVN-P2RETX free read A = B; K30/14; ink in no 150-dpi row; LVN-P2B order: was p2_R30b/8
-p2_K30	15	46	M	B:148	differ; LVN-P2B order: was p2_L28/15
+p2_K30	15	46	M	B:148	differ; LVN-P2B order: was p2_L28/15; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K30 reads 81, 40, 12: 4 then 0 as 40 at K19; RETX A=B 40 -- UNDECIDED, committed value kept: the 0 may be the 6 with an open bowl; 46 keeps experim(ente), 40 breaks it
 p2_K30	16	12	H	was 12 M; B:=loqui	LVN-P2B map settle: ink 12 (anchored; A150 12, B150 =loqui; P2B002; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L28/16
 p2_K30	17	82	H	was 82 M; B:=suivant	LVN-P2B map settle: ink 82 (anchored; A150 82, B150 =suivant; P2B170; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L28/17
 p2_K30	18	22	H	was 22 M; B:=quil	LVN-P2B map settle: ink 22 (anchored; A150 22, B150 =quil; P2B124; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L28/18
@@ -1560,7 +1559,7 @@ p2_K31	14	81	H	was 81 M; B:147	LVN-P2B map settle: ink 81 (anchored; A150 81, B1
 p2_K31	15	81	H	was 81 M; B:85	LVN-P2B map settle: ink 81 (anchored; A150 81, B150 85; P2B016; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L29/13
 p2_K31	16	72	H	was 72 M; B:5	LVN-P2B map settle: ink 72 (anchored; A150 72, B150 5; P2B150; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L29/14
 p2_K31	17	32	H	was 32 M; B:111	LVN-P2B map settle: ink 32 (anchored; A150 32, B150 111; P2B092; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L29/15
-p2_K31	18	=faisant	S	37	settled-b nc=2 margin=0.35; LVN-P2B order: was p2_L29/16
+p2_K31	18	37	M	was =faisant S; 37	settled-b nc=2 margin=0.35; LVN-P2B order: was p2_L29/16; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): no word on K31 (LVN-P2K): it reads 72, 32, 37, 23, 84, 145; the row sits on the ink 37; RETX A=B 37
 p2_K31	19	23	H	was 23 M; B:=tousiours	LVN-P2B map settle: ink 23 (anchored; A150 23, B150 =tousiours; P2B059; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L29/17
 p2_K31	20	84	H	was 84 M; B:=semblant	LVN-P2B map settle: ink 84 (anchored; A150 84, B150 =semblant; P2B107; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L29/18
 p2_K31	21	145	M	A:145 B:145	LVN-P2RETX free read A = B; K31/22; ink in no 150-dpi row; LVN-P2B order: was p2_R31c/1
@@ -1582,9 +1581,9 @@ p2_K32	15	82	H		agree; LVN-P2B order: was p2_L30/19
 p2_K32	16	118	H	was 118 M; B:-	LVN-P2B map settle: ink 118 (anchored; A150 118, B150 -; P2B082; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L30/20
 p2_K32	17	83	H	was 83 M; B:-	LVN-P2B map settle: ink 83 (anchored; A150 83, B150 -; P2B009; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L30/21
 p2_K32	18	3	H	was 3 M; B:2	LVN-P2B map settle: ink 3 (anchored; A150 3, B150 2; P2B035; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L30/22
-p2_K32	19	34	M	was 32 H	agree; LVN-P2B order: was p2_L30/23; VER-LVN2 eye: was p2_L30/23: 4 written over 2 (over 2>4, the 4 darker); final intent 34, t either way
-p2_K32	20	134	M	B:-	gap; LVN-P2B order: was p2_L30/24
-p2_K33	1	65	M	B:-	gap; LVN-P2B order: was p2_L30/1
+p2_K32	19	34	M	was 32 H	agree; LVN-P2B order: was p2_L30/23; VER-LVN2 eye: was p2_L30/23: 4 written over 2 (over 2>4, the 4 darker); final intent 34, t either way; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): positive control: read 34 as committed
+p2_K32	20	184	M	was 134 M; B:-	gap; LVN-P2B order: was p2_L30/24; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): line ends 34. 184.: middle digit stacked 8, unlike the flat-top 3 of 34 before it; RETX A=B 184
+p2_K33	1	61	M	was 65 M; B:-	gap; LVN-P2B order: was p2_L30/1; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K33 opens 61, 36: hooked 1; RETX A=B 61
 p2_K33	2	36	H	was 36 M; B:-	LVN-P2B map settle: ink 36 (anchored; A150 36, B150 -; P2B159; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L30/2
 p2_K33	3	130	M	B:-	gap; LVN-P2B order: was p2_L30/3
 p2_K33	4	87	H	was 87 M; B:-	LVN-P2B map settle: ink 87 (anchored; A150 87, B150 -; P2B006; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L30/4
@@ -1628,20 +1627,20 @@ p2_K35	2	123	H	was 123 M; B:-	LVN-P2B map settle: ink 123 (anchored; A150 123, B
 p2_K35	3	84	H	was 84 M; B:-	LVN-P2B map settle: ink 84 (anchored; A150 84, B150 -; P2B134; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L32/3
 p2_K35	4	34	H	was 34 M; B:-	LVN-P2B map settle: ink 34 (anchored; A150 34, B150 -; P2B008; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L32/4
 p2_K35	5	77	H	was 77 M; B:-	LVN-P2B map settle: ink 77 (anchored; A150 77, B150 -; P2B015; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L32/5
-p2_K35	6	86	M	B:-	gap; LVN-P2B order: was p2_L32/6
+p2_K35	6	85	M	was 86 M; B:-	gap; LVN-P2B order: was p2_L32/6; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K35 reads 77, 85, 27, 30, 101, 5, 82, 81: long-s 5; RETX A=B 85
 p2_K35	7	27	H	was 27 M; B:-	LVN-P2B map settle: ink 27 (anchored; A150 27, B150 -; P2B101; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L32/7
-p2_K35	8	31	M	B:-	gap; LVN-P2B order: was p2_L32/8
-p2_K35	9	111	M	B:21	differ; LVN-P2B order: was p2_L32/9
-p2_K35	10	24	M	B:30	differ; LVN-P2B order: was p2_L32/10
-p2_K35	11	74	M	B:101	differ; LVN-P2B order: was p2_L32/11
+p2_K35	8	30	M	was 31 M; B:-	gap; LVN-P2B order: was p2_L32/8; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): see K35/6: 30; RETX A=B 30
+p2_K35	9	101	M	was 111 M; B:21	differ; LVN-P2B order: was p2_L32/9; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): see K35/6: 101; RETX A=B 101
+p2_K35	10	5	M	was 24 M; B:30	differ; LVN-P2B order: was p2_L32/10; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): see K35/6: single long-s 5; RETX A=B 5
+p2_K35	11	82	M	was 74 M; B:101	differ; LVN-P2B order: was p2_L32/11; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): see K35/6: 82; RETX A=B 82
 p2_K35	12	81	M	A:81 B:81	LVN-P2RETX free read A = B; K35/12; ink in no 150-dpi row; LVN-P2B order: was p2_R35a/1
 p2_K35	13	29	H	was 29 M; B:-	LVN-P2B map settle: ink 29 (anchored; A150 29, B150 -; P2B023; p2bm controls 10/10 pos, 10/10 power); LVN-P2B order: was p2_L33/4
 p2_K35	14	148	M	B:-	gap; LVN-P2B order: was p2_L33/5
-p2_K35	15	187	M	B:-	gap; LVN-P2B order: was p2_L33/6
+p2_K35	15	137	M	was 187 M; B:-	gap; LVN-P2B order: was p2_L33/6; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): K35 reads 148. 137. Je: flat-top 3; RETX A=B 137
 p2_K35	16	=Je	M		agree-flagged; LVN-P2B order: was p2_L33/7
-p2_K35	17	=croy	M		agree-flagged; LVN-P2B order: was p2_L33/8
+p2_K35	17	=croy	M		agree-flagged; LVN-P2B order: was p2_L33/8; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): word reads croy (RETX recon =voy rejected; as LVN-P2K's K25 croy)
 p2_K35	18	=que	M	B:=quil	differ; LVN-P2B order: was p2_L33/9
-p2_K35	19	=vous	M		agree-flagged; LVN-P2B order: was p2_L33/10
+p2_K35	19	=vous	M		agree-flagged; LVN-P2B order: was p2_L33/10; LVN-K15: E eye LVN-K15 (one Opus look, 300-dpi deskewed line, not blind): word reads vous (RETX A=B =soun rejected)
 p2_K35	20	=trouvez	M	B:=trouverez	differ; LVN-P2B order: was p2_L33/11
 p2_L34	1	[blank]	H		agree
 p2_L35	1	[blank]	H		agree
