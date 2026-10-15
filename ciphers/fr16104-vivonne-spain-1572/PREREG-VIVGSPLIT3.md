@@ -56,3 +56,14 @@ gate: pooled held-out f recall >= 0.60 AND precision >= 0.60 AND F1 > p99 of 200
 (about USD 0.04 per tile); cap USD 5, box 50 min from the claim (07:00 UTC); a look that would cross 80% of either is not started, and the
 r count reached is reported; an incomplete sample keeps the label "r sample incomplete" and the gate is not called passed on it.
 s.4 consequences unchanged (PASS on the full sample -> f.191r step; FAIL -> logged, the g-split family [retired] for this instrument absent new material).
+
+## Addendum B (15 Oct 2026, 08:0x UTC by date -u, worker VIV-GSPLIT3C, account 4; pushed before any further cut)
+Continuation of the SAME registered test (second continuation, not a new attempt): VIV-GSPLIT3B stopped the r sample at 72 of 138 targets cut
+(whole 59, unsure 13). This job hand-cuts the remaining 66 r targets (`panels.py sheets --rest`, sheets 01-04 after the 3B log; targets already
+boxed are not re-cut; 3B's `unsure` boxes are not re-cut), by the same s.2 protocol (box drawn by eye on the line crop, every staged box re-looked on
+a `panels.py boxcheck` sheet, logged in `tx/vivgsplit3/boxes_handcut.tsv` whole/unsure/none; only `whole` enters), then re-runs s.3 unchanged
+(`gsplit.py check3`; gate: pooled held-out f recall >= 0.60 AND precision >= 0.60 AND F1 > p99 of 200 label-shuffled nulls, seed 20261015; f side not
+re-cut, N_f = 18). The r sample is complete when every one of the 138 r targets is logged whole, unsure or none; PASS is called only then.
+Price: 2 looks per 20 tiles (one cut sheet + one check sheet), USD 0.45 per look, about 7 looks for 66 tiles + 2 for the f.191r step; cap USD 4.5,
+box 45 min from the claim (08:01 UTC); a look that would cross 80% of either is not started, and the r count reached is reported (label "r sample
+incomplete", no verdict). s.4 consequences unchanged.
