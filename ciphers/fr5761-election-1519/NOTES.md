@@ -694,3 +694,34 @@ fr.5756 ark only. Result: **0 cipher name groups; nr. 357 and nr. 383 are not on
 **Verdict (ELEC-END, 15 Oct 2026):** open, unchanged. No copy with names in cipher on fr.5761 ff.172r-179v (both sides) or on the rectos ELEC-WALK read in ff.165-182. Next:
 (1) confirm that btv1b60010927 is fr.5756 from its manifest or BnF record (1 request), then census it at 600 px for nr. 357 / nr. 383 (about
 15-25 requests, ~1.5). A pair needs >= 2 occurrences per sign before any C grade.
+
+## ELEC-5756: fr.5756 census for Kluckhohn nr. 357 / nr. 383 (worker ELEC-5756, LANE DEFAULT-A1-0447-15, account 1, 15 Oct 2026, 05:35-05:4x UTC by date -u)
+
+Brief: ELEC-END's next step. Confirm that ark btv1b60010927 is BnF Français 5756, then census it at 600 px for Kluckhohn nr. 357 and nr. 383 (names in
+cipher). Result: **the ark is fr.5756. Neither letter is in it by the catalogue's contents list, and none of the 16 canvases read has a cipher name
+group. 0 pairs; key.tsv unchanged; status unchanged (open).**
+- Shelfmark (1 request, openapi.bnf.fr IIIF Presentation v3 manifest, 200): label "BnF. Département des Manuscrits. Français 5756"; Cote the same;
+  title "« Recueil de plusieurs pièces concernant la pretension du roy François Ier à l'empire ». Copies de la main de Florimond Robertet ? 1519";
+  "Papier. - 44 feuillets écrits"; catalogue record archivesetmanuscrits.bnf.fr/ark:/12148/cc58704x. 118 canvases; ff.1r-45v are canvases f15-f104
+  (canvas = 2 x folio + 13 for rectos). Europeana was not needed (0 requests).
+- Contents (the manifest's Description, 90 items): items 1-35 are letters of Francis I, Orval, Bonnivet and Guillart (Feb-July 1519), items 36-84
+  Robertet to Bonnivet (Feb-July 1519), items 85-90 the Latin and French powers. The list has **no letter from Joachim of Brandenburg or
+  "Capitaine Josyn" (nr. 357, 18 June)**. It also has **no Orval-Bonnivet-Guillart letter to the king from Coblenz (nr. 383)**. Their only
+  joint letter to the king is item 8, from Nancy, 14 April. The Coblenz piece (item 31, 8 July) is Bonnivet alone to Robertet.
+- Census (openapi.bnf.fr, 16 canvases at 600 px, all 200; rows in `census_elec5756.tsv`, images in the session scratchpad, regen URL in its header):
+  ff.1r, 3r, 5r, 7r, 9r, 9v, 10r, 10v, 11r, 11v, 12r, 12v, 13r, 15r, 17r, 19r. These cover items 3-35 at least in part and the first Robertet leaves. Every
+  name on them is in letters: bailly de Caen, marquis de Bade, roy de Poulongne, Boheme, conte palatin, duc Guillaume de Baviere, Marigny,
+  Strasbourg, roy catholique, Gueldres, Magence/Mayence, Brandebourg, Treves, Couloigne, Francisque, Bazoges. No cipher sign stands for a name
+  on these pages. Items 29-31 (f.10v, the Coblenz letter) and 34-35 (f.11v, Francis I to Brandenburg, 18 March, and a letter to an elector) were
+  read in full at sheet scale. None of them matches nr. 357 or nr. 383.
+- Not checked: ff.1v-2v, 3v-4v, 5v-6v, 7v-8v, 13v-14v, 15v-16v, 17v-18v, 19v and ff.20r-45v (the remaining Robertet letters and the powers), which
+  is about 70 canvases. They are not where the catalogue places either letter. Prior-work tool (`prior_work.py --item-spec ... --step-type read
+  --offline`, exit 4): its LEAD is this job's own claim, and the rest are generic UNCHECKED rows (Tomokiyo and solver caches by unit, editions)
+  that a shelfmark census does not reach.
+- Kluckhohn's shelfmark OCR "F. fr. Von." / "F. fr. VGL" now fits neither fr.5761 (ELEC-WALK, ELEC-END) nor fr.5756 (this census) for these two
+  letters. Requests: openapi.bnf.fr 17, api.europeana.eu 0.
+
+**Verdict (ELEC-5756, 15 Oct 2026):** open, unchanged. fr.5756 = btv1b60010927, confirmed from the manifest. Nr. 357 and nr. 383 are not in its
+contents list, and no cipher name group was seen on 16 canvases. Next: (1) read Kluckhohn's own source line for nr. 357 and nr. 383 on the RTA
+J.R. I page image, not the OCR (archive.org `bub_gb_0gFoAAAAMAAJ`, 1-2 page requests, ~0.5), to get the real shelfmark. "Von."/"VGL" may be
+another fonds, such as Dupuy, Clairambault or a nouv. acq. volume. Census that volume only once the shelfmark reads from the page.

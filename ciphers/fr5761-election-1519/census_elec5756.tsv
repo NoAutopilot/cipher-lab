@@ -1,0 +1,18 @@
+# ELEC-5756 census, 15 Oct 2026 05:36-05:39 UTC by date -u; BnF Francais 5756 (ark btv1b60010927, manifest label/Cote "BnF. Departement des Manuscrits. Francais 5756"), openapi.bnf.fr IIIF v3, 600 px wide; images in session scratchpad only (regen: https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b60010927/f<canvas>/full/600,/0/default.jpg); catalogue item numbers from the manifest's Description (archivesetmanuscrits ark cc58704x)
+canvas	folio	catalogue_items	content_at_sheet_scale	names_seen_in_clear	cipher_name_group_seen	kluckhohn_match
+f15	1r	title	18th-c. title "Recueil de plusieurs pieces concernant la pretension du Roy Francois i a l'Empire"; Delamare 313, Reg. 10329	none	no	no
+f19	3r	3-5	letter to the marquis (de Bade)	bailly de Caen; le Roy	no	no
+f23	5r	12-13	"Mon cousin ... mon cousin l'admiral"; "Monsr le bailly" (to the bailli de Caen)	l'admiral; marquis de Bade; bailly de Caen	no	no
+f27	7r	17-20	Bonnivet: "cent gentilzhommes de la maison du Roy"; legat	le Roy; legat	no	no
+f31	9r	26-27	end of letter to Lanjac/La Guiche; "Madame du xme de may"	roy de Poulongne; Boheme; Robert de la Marche; conte palatin	no	no
+f32	9v	27	Bonnivet to Madame (cont.)	duc Guillaume de Baviere; Marigny; Strasbourg; roy catholique; conte palatin; Champagne; mareschal de Chastillon; Gueldres	no	no
+f33	10r	27-28	end of letter to Madame; "Le Roy a monsr de Magence"	Magence; le Roy	no	no
+f34	10v	29-31	Bonnivet to Robertet, three short letters, the last dated (Coblenz) July	Mayence	no	no (not from Joachim; not to the king)
+f35	11r	32-33	letters to "monsr le tresorier"	none legible as a name	no	no
+f36	11v	34-35	"Monsr de Brandebourg ... St Germain en Laye le xviiie jour de mars"; "Mon cousin, j'ay entendu ..." (to an elector)	Brandebourg; marquis de Brandebourg	no	no (Francis I to Brandenburg, not Joachim's own letter)
+f37	12r	36-	Robertet to Bonnivet	le Roy; legat	no	no
+f38	12v	36-	Robertet to Bonnivet	marquis de Brandebourg; Mayence; roy catholique; Francisque; Couloigne; Treves; conte palatin	no	no
+f39	13r	36-	Robertet to Bonnivet	duc Federic de Baviere; madame	no	no
+f43	15r	36-	Robertet to Bonnivet	le Roy	no	no
+f47	17r	36-	Robertet to Bonnivet	marquis de Brandebourg; Bazoges; Flandres; Mayence	no	no
+f51	19r	36-	Robertet to Bonnivet, "Saint Germain ... Mars"	Magence; Treves; Couloigne; roy catholique; legat	no	no
