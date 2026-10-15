@@ -140,3 +140,30 @@ the day and dated; shelfmark, inventory numbers, the folios or the item descript
 question "does 6056's 'oplossing' key cover the 1621 Heidelberg pair+letter system"), rule 9 (no personal data), and one ASKS.md row for the
 owner's desk naming the cost if the NA page states one. (4) status head: `partial` only if every unread piece is blocked from outside per rule
 5, else `open` with the next step named. No decode, no key, no reading. NOTES.md "## HEID-1621I (<date -u>)".
+
+## JOB HEID-1621J (account 2; Opus 5.5; cap USD 4; box 60 minutes; resources.huygens.knaw.nl <= 20 (>= 2 s apart), service.archief.nl <= 140 (take/release lines, >= 3.1 s apart, one at a time with any other NA worker), www.nationaalarchief.nl <= 6; no reader subagents; Price: vision calls: 0 x USD 0 = 0 (this worker's own eye on 700 px contact sheets, the OBRED-6021 method))
+ciphers/brederode-heidelberg-1621 pool step (HEID-1621I's next line). The Resolutien SG NR 5 (1621-1622, Roelevink) calendar Brederode's
+letters with the note "Gedeeltelijk in code" where they carry cipher (p.260 res. 1644b for 13 Aug 1621, p.295 res. 1879b for 17 Sept 1621).
+(1) Through the Huygens retroboeken full-text search of that volume (sources/huygens/NOTES.md for the accessor; HEID-1621D/E used it), list
+EVERY Brederode entry in 1621-1622 whose note says "in code" / "in cijfer" / "gedecifreerd", with its date, the "S.G. 60xx (orig.)" inventory
+pointer and the page; write `heid1621j/code_letters.tsv`. (2) For each entry pointing at inv. 6021 or 6022 and not yet located (13 Aug =
+375/379, 17 Sept = 423 are done), locate the letter by date order on 700 px contact sheets (the OBRED-6020 sheet controls, PREREG-HEID1621J.md
+first with the stop rule and the request budget; a liasse runs in date order, so start from the scan the neighbouring dates predict), one
+1200 px re-look per hit, manifest.json entries with sha1, no image committed. (3) Report per entry: located or not, scan numbers, whether the
+numeral units are the pair+letter / number+letter system (by eye, M), unit count estimate. No transcription in this job (the next row prices
+it per pass: 2 reads + 1 reconciliation per block at USD 1.4). No decode, no key, no reading. NOTES.md "## HEID-1621J (<date -u>)" ending in
+the next row and the projected pooled N if every located block is transcribed.
+
+## JOB OUT-CHECK-NA1621 (account 2; Opus 5.5; cap USD 2; box 40 minutes; www.nationaalarchief.nl <= 6, no other network; Price: vision calls: 0 x USD 0 = 0)
+Gate-7 pre-send fact check (CLAUDE.md Outreach (7)) of `ciphers/brederode-heidelberg-1621/REQUEST.md`, the Nationaal Archief reproduction
+request for NA 1.01.02 inv. 6056, 6055 and 12578.1 drafted by HEID-1621I (a different session from this one -- never the drafter). Read the
+draft against every file and page it cites: the NA item pages for 6021 (control, must read digitised), 6056, 6055, 12578.1 (physical only),
+the NA contact/reproduction route and its public address as the institution's own page shows it today (dated), the Resolutien pages cited
+(NR 5 p.260, p.295, p.447), and NOTES.md sections HEID-1621 through HEID-1621I. Try to falsify every factual sentence: inventory numbers,
+dates, folio or item descriptions, what was and was not checked, the voice (outreach/README.md rule 1a: "I" for what the person does, "we"
+for what the agents did), the AI-disclosure sentence (rule 1), rule 9 (no personal data, no payment details), rule 10 wording (no
+"unpublished"/"first"), the [SIGN-OFF] placeholder and blank subject/recipient lines. Write the `checked:` line in the draft's header naming
+what you corrected (or "nothing"), add the CONTRIBUTIONS.md row for the draft's slug (date, recipient = the NA reproduction service, class
+= access request, link), and update ASKS 170 from backlog to desk with the one-line ask for the owner (send from the project mailbox per
+Outreach (8) is NOT licensed by this job: the owner sends or queues it). `python3 tools/send_queue_check.py` on the draft if it has a
+SEND-QUEUE row; `python3 tools/desk_check.py`; paste both. No other edits. ROOM done line with what was corrected.
