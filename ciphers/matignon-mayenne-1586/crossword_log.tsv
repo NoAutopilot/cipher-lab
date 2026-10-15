@@ -1,0 +1,5 @@
+time	target	hypothesis	occurrences	statistic	null_pos_p95	null_val_p95	verdict	flag
+2026-10-15 06:27	ciphers/matignon-mayenne-1586	U=e	343	368.6	-578.7	-368.6	reject	non-blind
+2026-10-15 06:27	ciphers/matignon-mayenne-1586	T=r	53	-214.2	-108.3	41.8	reject	non-blind
+2026-10-15 06:27	ciphers/matignon-mayenne-1586	D2=a	16	37.8	-22.5	-70.8	accept	non-blind
+2026-10-15 06:27	ciphers/matignon-mayenne-1586	BOX2=u	6	-12.4	6.7	0.9	reject	non-blind
