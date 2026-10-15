@@ -795,3 +795,49 @@ fetch, ~$1; the homophonic family on Russian is now spent at both corpora (ru19_
 dollars go to a different instrument (the wide-alphabet K 36-37 scheme, HYPOTHESES rank 6) or new material, not a further
 homophonic corpus swap. `tools/gaps_check.py`: SKIP for an `open` target.
 Verdict: keep going (no outside blocker).
+
+## KAL-SHEET2, higher-resolution image of sheet 2, 15 Oct 2026
+
+Brief `.claude/briefs/runs/2026-10-15-ytbiz-default-0810-jobs.md` (LANE DEFAULT-A2-0810-15, account 2). `tools/prior_work.py kaliningrad-2015 --derive`: 0 rows. There was nothing to
+score, so no PREREG. Web search plus 10 requests to source hosts, all in 08:57-09:00 UTC 15 Oct 2026 by `date -u`. No image was fetched,
+and none went into git.
+
+**Where cryptogram2.png comes from.** Schmeh's 12 Sept 2016 post uploaded it to `scienceblogs.de/.../files/2016/09/Kaliningrad-Cryptogram-2.png`.
+The saved post's own srcset (`sources/schmeh/posts/19-kaliningrad-2016.html`) lists 688w as the largest rendition. That is the
+file already on disk (688x841, sha1 441c93be...), so scienceblogs.de holds no larger copy. The post cites two sources: strana39.ru
+news 85709 and simple_life.dirty.ru post 784251.
+
+**What the chain behind it shows.**
+- strana39.ru `/news/o-chem-govoryat/85709/v-baltiyske-obnaruzhili-cheburashku-s-poslaniem-.html` (curl): HTTP 404, the same as the
+  GF-A2-4 result.
+- simple_life.dirty.ru (curl): the proxy rejected the connection (CONNECT 502). The site now lives at d3.ru: `d3.ru/...-784251/`
+  answers 301 to `simple_life.d3.ru/...-784251/`, and that page is a JS shell with no body. The d3.ru JSON API
+  `d3.ru/api/posts/784251/` answered through WebFetch. It gives the post date (13 July 2015, 22:14 UTC) and one image,
+  `cdn.jpg.wtf/futurico/fa/20/1436825564-fa20629cf9acccef2def15b522c5cf6e.jpg`, listed at **720x409**. That is a single landscape
+  photo, smaller than either 688x841 sheet image, so it cannot show the ghost lines at a higher resolution. The fetch for a visual
+  comparison was reset by the proxy (curl 35), and the job stopped there at its request limit. The API also names the
+  primary report: **Rossiyskaya Gazeta, rg.ru/2015/07/02/reg-szfo/shifr-anons.html** (2 July 2015 13:57, A. Vasil'ev). Its
+  text summary: gas-pipeline workers in Baltiysk dug up a corked bottle holding "two yellowed notebook pages with a folded
+  sheet and wire". The Kant Federal University computer-security department was to count the symbol frequencies.
+- rg.ru: curl was reset by the proxy (curl 35). Through WebFetch the article page has no image tags and no photo credit.
+- Wayback CDX for strana39.ru news/85709/* and for the dirty.ru post: both reset by the proxy (curl 35), as in GF-A2-4.
+- Two web searches in Russian (Baltiysk, bottle, note, cipher, Lenin Street, 2015; strana39 + Baltiysk + bottle) found no page
+  about this item.
+
+Requests per host: web.archive.org 2 (reset), strana39.ru 1 (404), simple_life.dirty.ru 1 (502), d3.ru 3 (WebFetch: 301, JS
+shell, API 200), rg.ru 2 (curl reset; WebFetch 200), cdn.jpg.wtf 1 (reset). Total 10.
+
+**Result:** none of the reachable sources has a copy of sheet 2 larger than the 688x841 file on disk. Nothing below line 6 was
+re-read, and the ghost-line question (bleed-through, second text or cipher) is still open at this resolution. Kept from the source
+chain: the 2015 report says "two notebook pages with a folded sheet". That bears on the "front/rear of one sheet vs two sheets"
+question in the Premise check (c), graded M (a press summary, not seen on the object).
+
+Next step: a larger photograph exists only with the finders or the press. The ways to it, in order:
+(1) Wayback CDX for strana39.ru/news/85709 and rg.ru/2015/07/02/reg-szfo/*, from a host the proxy does not reset (the owner's
+machine; a LOCAL-QUEUE row, ~$0);
+(2) the cdn.jpg.wtf 720x409 photo, fetched from the same machine to see whether it is a different shot of sheet 2;
+(3) a request to the Rossiyskaya Gazeta Kaliningrad bureau or the Kant Federal University (BFU) computer-security department for the
+original photographs: an outreach draft, so gate 7 applies.
+None is a cheap step from the cloud.
+Otherwise further dollars go to the wide-alphabet K 36-37 scheme (HYPOTHESES rank 6). `tools/gaps_check.py`: SKIP for an `open` target.
+Verdict: keep going (no outside blocker for rank 6; the image route is blocked on hosts the proxy resets).
