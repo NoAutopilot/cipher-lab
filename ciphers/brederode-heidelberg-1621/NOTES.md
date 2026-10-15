@@ -241,3 +241,65 @@ Read so far: 0 of 45 units (nothing decoded; spec test 1 undecided; transcriptio
 - [ ] image-check: scan 375 at native size (the second witness) not yet seen
 - [x] retry: the Huygens host answered (HEID-1621D, HEID-1621E, all 200)
 Verdict: keep going: 1 internal gaps; cheapest next: stride-1 screen for the 17 Sept 1621 letter, ~$2
+
+## HEID-1621F (15 Oct 2026, 20:12-20:2x UTC by date -u, account 2, Opus; for the orchestrator, owner account)
+Brief: `.claude/briefs/runs/2026-10-15-acct4-depth-steps-2.md`, JOB HEID-1621F. PREREG `heid1621f/PREREG-HEID1621F.md` pushed (3bd5e885b)
+before any fetch; sheet calls `heid1621f/sheetcalls.txt` pushed per batch (c8bda2199, 4359d18a1) before each sheet key was opened.
+Requests: **service.archief.nl 57** (1 METS + scans 398-451 at 700 px + scans 423 and 424 at 1200 px), all HTTP 200, take/release lines
+in ROOM.md. No other host. No image committed; sha1s in `images/manifest.json` (`heid_6021f`); `heid1621f/regen_heid1621f.sh` re-derives
+scans, sheets and both sheet keys (key 1 checked to reproduce by cmp). No decode, no key, no reading.
+
+### Screen
+Stride 1 from scan 398, in order, 6 contact sheets (SHEET_SCANS=9, seeds 16216 and 16217, the OBRED-6020 disk controls). **Controls 18 of
+18 placed correctly** (checked against `heid1621f/sheetkey.json`); no sheet is a non-test. Per-scan calls in `heid1621f/screen.tsv`.
+- **Hit: scan 423** (batch 1 sheet 03 tile B; re-looked at 1200 px, M). A Dutch letter in the agent's clerk's hand; on the left page a
+  paragraph opens "Mij wordt met ondersch[eij]delijcke brieven bericht dat men sich inden [..] hooft te [..]" and carries **two lines
+  of dotted numeral groups inside the prose**, about 20 groups, then the clear text resumes ("[..] seer schadelijcke adviysen hier bouen
+  int landt, om Uwe Hoog Mogenden regieringe hatich te maecken"). By eye at 1200 px the groups run "22.x. 43. 9. 10.b. 46.f. 67.1[?].
+  24.x. 40.d. 24. a. 61. 3. 23.x. 42.d. 22.x. 19.m. 24.x. 119." (every token M; a sighting, not a transcription of record).
+- **Date and signature** (scan 424, left page, 1200 px, M): the close reads "uyt Heydelberg desen xvij[den] Septembris xvj[c] xxj", then
+  "Uwer Hoog Mogenden onderdanichste ende getrouwste dienaer", signed "Van Brederode" with a paraph. So scans 416?-424 are the letter of
+  **17 Sept 1621** that Resolutien SG NR 5 p. 295 res. 1879b calendars as "S.G. 6021 (orig.). Gedeeltelijk in code" (identification M:
+  date, place and signature match the calendar entry; one letter of that date seen). The letter's opening is most likely scan 416
+  (head "Hooge ende Mogende Heeren", date at the head "[..] Sept 1621", address leaf on the left; 700 px, M).
+- **Design, by eye (M):** **not the full pair+letter form of scans 375/379.** On 379 the units are two consecutive two-digit numbers plus a
+  letter ("22 23 x", "40 41 d", "46 47 j/f"); on 423 most units are **one number plus a letter** ("22.x", "40.d", "46.f", "24.x"), with
+  some bare numbers (43, 9, 61, 3, 119 -- one above the 10-84 range of 379) and at least one bare letter ("a"). Three units on 423 repeat
+  the first number and the letter of a 379 unit (22.x ~ 22.23.x, 40.d ~ 40.41.d, 46.f ~ 46.47.j/f): a lead that the same code is
+  written in an abbreviated form, or a related table, M; not tested, nothing read.
+- **Duplicate:** none seen. The 13 Aug letter's duplicate sat four scans after its original (375/379); scans 425-451 (the PREREG's one
+  further batch) show no numeral block at sheet size. A duplicate of the 17 Sept letter may sit further on, or not survive.
+- Every other scan (52): Dutch letters to the States General with Brederode closes, French and Dutch copies and extracts ("Extract ..."
+  headings on 440, 444?, 447?), address leaves; no other numeral block, key table, interlinear decipherment or figure postscript at
+  sheet size. **Last scan screened: 451** (stride 1, 398-451). Scan 424's right page starts a new document endorsed about "24 sept / 4 oct
+  1621" (M), so the liasse here is in late September 1621.
+- Limits: 700 px tiles on sheets at about 2,000 px can miss a block of a dozen groups or fewer; dates M; one reader.
+
+### Separate intake candidate (recorded only): inv. 6021 scan 58
+HEID-1621E's hit, recorded here as a candidate for its own intake and nothing more: a French text over both pages of scan 58, one hand,
+with two-digit groups in dotted runs (to about 60) and three- to four-digit standalone name codes (426, 1684, 2436, 1870, 2722, 1458,
+1897, 1877, 2763, 2795, 1698), clear words naming Mansfeld, the Prince Palatine, the Emperor, the Duke of Bavaria, "la dispensation du
+mariage", Glatz (all M). **Date line: not on scan 58** (HEID-1621E: no address, signature or date on that opening); scans 57 and 59
+not looked at in this job, so the date, sender and recipient are unread. Not the Brederode pair+letter layout; it does not pool with
+this target. Its own intake (sender, date, check-solved, premise check) is a separate row.
+
+**Status: open.** Next row for the parent: **the two-block transcription, priced per pass** -- `tools/iiif_lines.py` crops at native
+size of scan 423 (the 17 Sept block, two lines) and of scan 375 (the 13 Aug signed witness, to control ciphertext.tsv from 379), pasted
+before the first call; two blind Sonnet readers per block + one reconciliation per block = 6 passes x ~USD 1.4 = ~USD 8.4 (cap 9; box 75
+minutes; service.archief.nl <= 6). Then the pooled unit inventory (13 Aug + 17 Sept) through spec test 1 again with its matched control.
+If the duplicate of 17 Sept matters as a second witness: a continuation screen from scan 452 at stride 1, ~USD 1 per 54 scans.
+
+## Remaining gaps (HEID-1621F, 15 Oct 2026)
+Read so far: 0 of about 65 units (13 Aug block 45 units + 17 Sept block about 20 groups; nothing decoded; transcription all M)
+- the 13 Aug and 17 Sept blocks together - blocker: not-attempted; the 17 Sept block (scan 423) located by HEID-1621F but not transcribed; next: two-block transcription (scan 423 + scan 375 witness) with two blind readers and one reconciliation per block, ~$8.4
+- the pooled units - blocker: too-short; test 1 C2 rank-match control 0.010 vs gate 0.50 at N=45 (HYPOTHESES.md); a pool of about 65 units is still short; next: rerun spec test 1 on the pooled inventory with its matched control after the transcription, ~$3
+
+## Escalation (HEID-1621F, 15 Oct 2026)
+- [ ] siblings: the 17 Sept 1621 letter located (scans 416-424, block on 423); its duplicate not seen in 425-451; inv. 6021 screened stride 1 at 361-451, stride 3 elsewhere; next: two-block transcription, ~$8.4
+- [ ] clear-pages: the clear prose around both blocks once both are transcribed
+- [x] known-keys: design_prior run (non-discriminating at N=45); no SG/Palatinate key of 1618-1625 on file; key leaf 12578.1 is another post; inv. 6055/6056 not digitised (HEID-1621E)
+- [x] print: Resolutien SG NR 5 read (HEID-1621D, HEID-1621E), no decipherment of a Brederode letter; no edition of his letters (HEID-1621C)
+- [n/a] key-rebuild: no decipherment, gloss or key sheet of this system located to rebuild from
+- [ ] image-check: scan 375 and scan 423 at native size not yet seen
+- [x] retry: the NA and Huygens hosts answered (HEID-1621D, HEID-1621E, HEID-1621F, all 200)
+Verdict: keep going: 1 internal gaps; cheapest next: two-block transcription (scans 423 + 375), ~$8.4
