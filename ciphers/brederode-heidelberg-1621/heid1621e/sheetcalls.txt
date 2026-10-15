@@ -1,0 +1,16 @@
+# HEID-1621E sheet calls (written before sheetkey.json is opened); sheet	CTRL-CIPHER	CTRL-PLAIN	CTRL-PS	hits	notes
+01	D	H	I	-	K: numbered list down a margin (list, not groups)
+02	D	F	E	K?	K: French prose with dotted numeral groups inline on both pages (doubtful, re-look 1200); H: a money column (list)
+03	L	H	B	-	none
+04	K	G	J	-	L: a few figures in a prose line (dates/amounts at sheet size, not groups)
+05	E	J	K	-	none
+06	C	G	L	-	none
+07	E	G	J	-	none
+08	B	E	D	-	none (H right page dense German hand, no groups seen)
+09	B	K	F	-	none
+10	B	J	G	-	none
+11	G	D	C	-	none (B: Copie translaat Feb 1622, prose; L: postscript slip in prose)
+12	L	K	D	-	none
+13	G	D	L	-	none
+14	C	E	I	-	none
+15	B	A	E	-	none
