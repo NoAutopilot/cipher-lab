@@ -4599,3 +4599,20 @@ above as written (~$2).
 Verifier ruling in AUDIT.md "MANT-V66": agree 66 = a (C); 'Alefeld' on 0151 L glosses the whole spelled group 66.8.44.1.2.12.120 = a-h-l-f-e-l-d
 (corrects MANT-66's "a-h-l-e-f-e-l-d"); `decode_key.py --try 66=ALEFELD` reject (-153.8 bits, n=12); 0151 R '66. avoit ose' undecided (M, no crop).
 No key change. Status unchanged (partial).
+
+## MANT-CUT (15 Oct 2026, 12:32-13:3x UTC by date -u, worker for LANE DEFAULT-A1-1140-15, account 1): digit cutter, then the MANT-YSHAPE rule, disk only
+
+Brief: .claude/briefs/runs/2026-10-15-acct1-default-1140-jobs.md "MANT-CUT". Requests: 0 to any host. Vision: one contact-sheet look by
+this session (no subagent).
+
+Tool: `tools/glyph_atlas.py digits` / `cut_digits()` (added by this job; offline test tools/tests/test_glyph_atlas_digits.py). The
+separator dots (compact components 0.12-0.45 x the digit height) anchor the cipher line's band, which drops neighbour-line ink; the
+band's ink between consecutive dots forms groups; groups are aligned to the strip's settled tokens by DP on width (missing/extra dot
+and skipped clear-word groups allowed); a group is cut into its token's digits at ink minima (`_wide_cuts`). Driver: mantcut/cut.py
+(outcome-blind, `--check`), output mantcut/located.tsv; no 4/9 score computed by it.
+
+Pre-registered location check (written and pushed before the sheet was looked at): mantcut/sheet_known.png shows every clean
+known-4/known-9 slot (69) with its box on the strip context and the slot's token. A slot counts as located when the box covers the
+4|9 digit of the stated token (most of the glyph inside the box, no whole neighbour digit instead of it). Pass = >= 56/69 (80%).
+Fail -> stop, log the cutter as failing, no score. Pass -> MANT-YSHAPE's pre-registered rule, unchanged (control first), on the 8
+conflict slots plus 0063 slot02-04 where boxes exist.
