@@ -1,5 +1,5 @@
 open
-- **Status:** open -- the recipient-side standard edition, *Resolutiën der Staten-Generaal, nieuwe reeks 1610-1670*, deel 5
+- **Status:** open (HEID-1621I, 15 Oct 2026: letters still M after a crop re-read, 375-vs-379 control 38/45 = 0.844 < 0.90; period key material at NA 1.01.02 inv. 6056/6055/12578.1 not digitised, REQUEST.md + ASKS row 170; next: screen inv. 6022 for more units) -- the recipient-side standard edition, *Resolutiën der Staten-Generaal, nieuwe reeks 1610-1670*, deel 5
   (1621-1622, ed. J. Roelevink, RGP, 1983), read through the Huygens retroboeken full-text search (term "Brederode", source 5,
   109 hits, 15 Oct 2026, HEID-1621D) and the printed pages p. 251, 252, 260, 261 (OCR html): p. 260, resolution 1644b, 23 Aug 1621,
   calendars "Brederode, dd. Heidelberg 13 aug." with no summary of its content, and note 1644c reads "S.G 6021 (orig.). Gedeeltelijk
@@ -437,3 +437,77 @@ Status: open. Next row for the parent: (1) letter settle -- `bash heid1621g/rege
 then `tools/lookalike_pass.py windows --tiles heid1621h/tiles_letters.tsv` and one blind re-read of the 22 windows, reconcile,
 `heid1621h/letters.py` control re-run, cap 2; the owner's sorter on `heid1621h/focus.tsv` in parallel. (2) Sibling search in NA
 1.01.02 inv. 6021/6025 (Brederode 1621-1622) for more units in this code, cap 3 -- pool size decides whether any test can run.
+
+## HEID-1621I (15 Oct 2026, 23:13-23:3x UTC by date -u, account 2, Opus; for the orchestrator, owner account)
+Brief: `.claude/briefs/runs/2026-10-15-acct4-depth-steps-2.md`, JOB HEID-1621I. PREREG `heid1621i/PREREG-HEID1621I.md` pushed (b4dd11658)
+before any fetch or re-read. Requests: **service.archief.nl 4** (METS + the three native block regions; take/release lines in ROOM.md),
+**www.nationaalarchief.nl 9** (contact page and form, three guessed order-page paths that answered 404, four item pages for
+availability); all others 200. 0 vision calls, no reader subagent: the re-read is this worker's own eye on the native crops. No decode,
+no key, no reading.
+
+### Step 1: crops regenerated, look-alike pass WITH crops
+- **Departure from the brief, stated in the PREREG before the fetch:** the native block regions (the reads' own source, sha1s on file)
+  were fetched instead of the 1200 px scans (4.3x below native, too small for a secretary-hand letter). `heid1621i/regen_crops.sh OUTDIR`
+  re-derives them (skips files already present) and checks each region sha1 against images/manifest.json:
+```
+375 900,780,1780,1420 7e4cf1f3ce0a887de5f8d03dc1b15dfa176fb791 MATCH
+379 730,1640,1960,1420 ac1477f81fa528d81e1d440e15630f7532347776 MATCH
+423 760,2000,1900,720 b14323f48c48a1ac16e183a7e405de851849b96f MATCH
+$ python3 tools/iiif_lines.py --image $O/s375_block_native.jpg --out $O/c375 --prefix h375 --debug   -> 15 lines, wrote 15 crops
+$ python3 tools/iiif_lines.py --image $O/s379_block_native.jpg --out $O/c379 --prefix h379 --debug   -> 15 lines, wrote 15 crops
+$ python3 tools/iiif_lines.py --image $O/s423_block_native.jpg --out $O/c423 --prefix h423 --debug   -> 8 lines, wrote 8 crops
+```
+  The 23 h375/h423 crops are byte-identical to HEID-1621G's (sha1 23/23 against manifest heid_6021g). No image committed.
+- Re-read (`heid1621i/reread_letters.tsv`, one row per tile with the eye's reason): each of the 22 split positions of heid1621h/focus.tsv
+  read on its line crop and compared with agreed exemplars of the same hand. `tools/lookalike_pass.py reconcile` (fixed 2-of-3 rule) via
+  `heid1621i/settle.py [--check]`: **14 settled, 8 unsettled** (tool residual 8/147 = 0.054 -- agreement after a non-blind third read,
+  not accuracy). Settled: the 16.17 sign is one looped S in all four places (g and B readings dropped; distinct from the 11.12 b sign);
+  the 22.23/23.24 sign is x at 379 L02/L06/L10; 31.32 at 379 L12 is the same curved-tail g as 375 L11; 423's sign after 43 is q (straight
+  stem; this hand's 9 has a curved tail), so 423 L04 stays "43.q"; the long-s at 375 L07.1 and both 47.48 glyphs have no crossbar (s, not
+  f; compare the barred f of 379 L11 29.20.f).
+- Unsettled (to the owner's sign sorter, `heid1621i/focus.tsv`, never blocking): 76.77 (375 a plain c, 379 the small x/r shape -- two firm
+  different readings, a **witness difference**, not a reader error); 13.14 (one double-bowl shape in both witnesses, e/w naming); 46.47
+  at 379 L03 (short sign, j or a short long-s); 64.65 twice (one curled sign in all six places, named x on 375 and c on 379 -- **likely its
+  own sign**, distinct from the 22.23 x and the 76.77 plain c; a class question for the sorter); unit 44 (375 an ink blot). Two further
+  sorter rows: 379 L07's agreed "f" at 46.47 looks like the unbarred long-s settled s elsewhere (an agreed sign, so not re-read here), and
+  the 64.65 class question.
+- **Control re-run, 375 vs 379 on the post-pass units: 38/45 = 0.844 against the 0.90 gate -- FAIL.** Changes: +unit 23 (both S), +unit 27
+  (both s), -unit 22 (375's reconciled f became s; 379's agreed f there was not a tile, see the sorter row). By the PREREG the trailing
+  letters stay **M**; nothing is licensed at S-as-transcribed; the spec keeps the letter field declared unreliable. Of the 7 misses left, 3
+  are naming questions on one shape (13.14, 64.65 x2), 1 is a witness difference (76.77), 1 an ink blot, 2 the long-s family.
+
+### Step 3: request for the period key material
+`REQUEST.md` written: NA 1.01.02 inv. 6056 (Mansfelt 13 Mar 1622, "gedeeltelijk in cijfer, met de oplossing", Resolutien NR 5 p. 447 res.
+2931), 6055 (SG minute "met code", 1621, res. 467-468) and 12578.1 (key "Rangh van de grootte tot Constantinopelen", 1618-1622), each
+`"availability": "PHYSICAL"`, 0 scans on the archive's own item page on 15 Oct 2026 (control inv. 6021 `"DIGITALIZED"`, 810, same
+minute); route = the NA contact form (read on the day; no price stated on the pages read); a Dutch draft under the form's 1500
+characters, with the question whether 6056's oplossing or 6055's code covers the 1621 pair+letter system. ASKS row 170 for the owner's
+desk. The draft still needs a CONTRIBUTIONS.md row and the gate-7 fact check before it is sent.
+
+## Remaining gaps (HEID-1621I, 15 Oct 2026)
+Read so far: 0 of 59 units (13 Aug 45 + 17 Sept 14 transcribed, all M; nothing decoded)
+- the trailing letters of both blocks - blocker: not-attempted; crop re-read settled 14 of 22 splits but the 375-vs-379 control is 38/45 = 0.844 < 0.90 (heid1621i/settle_result.json); next: the owner's sign sorter on heid1621i/focus.tsv (10 rows, backlog, never blocking), ~$0
+- the pooled units - blocker: too-short; test 1 C3 0.593 (KT) / 0.777 (KF) vs gate 0.90 at N=59 (HEID-1621H); next: screen the later Brederode liasse inv. 6022 (1623-1626, digitised, 595 scans) for more units in this code, ~$4
+- the key - blocker: waiting-on ASKS row 170 (Nationaal Archief reproduction of 1.01.02 inv. 6056, 6055, 12578.1: the 1622 decipherment, the 1621 SG code minute, a key of 1618-1622; not digitised, REQUEST.md)
+
+## Escalation (HEID-1621I, 15 Oct 2026)
+- [ ] siblings: the later Brederode liasse inv. 6022 (1623-1626, digitised) not screened; planned: contact-sheet screen by the OBRED-6021 method, ~$4
+- [ ] clear-pages: the clear prose around both blocks once the letters are settled
+- [x] known-keys: design_prior run; no SG/Palatinate key of 1618-1625 on file; NA key material located and requested (inv. 6056/6055/12578.1, REQUEST.md)
+- [x] print: Resolutien SG NR 5 read, no decipherment of a Brederode letter; no edition of his letters (HEID-1621C/D/E)
+- [n/a] key-rebuild: no decipherment, gloss or key sheet of this system is in hand to rebuild from
+- [x] image-check: native crops re-read (HEID-1621I), 14 of 22 letter splits settled; the rest to the owner's sorter
+- [x] retry: the NA hosts answered (HEID-1621I, 4 + 9 requests)
+Verdict: keep going: 1 internal gaps; cheapest next: the owner's sign sorter on heid1621i/focus.tsv, ~$0
+
+```
+$ python3 tools/gaps_check.py brederode-heidelberg-1621
+OK keep-going brederode-heidelberg-1621: keep going: 1 internal gap(s), 2 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```
+(The target is `open`, not `partial`: the 6022 sibling screen and the sorter are untried steps that depend on nobody outside, so rule 5's
+parked state does not apply.)
+
+Status: open. Next row for the parent: (1) screen NA 1.01.02 inv. 6022 (Brederode 1623-1626, 595 scans) at 700 px on contact sheets with
+the OBRED-6020 sheet controls for numeral blocks in this code, cap 4 -- the pool decides whether any test can run; (2) the REQUEST.md
+draft to a CONTRIBUTIONS.md row and the gate-7 check (OUT-CHECK), then the owner's send (ASKS 170); (3) the sorter rows in parallel.

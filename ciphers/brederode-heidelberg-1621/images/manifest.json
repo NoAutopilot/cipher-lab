@@ -389,5 +389,10 @@
    "h423_L07.jpg": "e9db8e76911f7dbd96a14fcf287ad2c6dca3f573",
    "h423_L08.jpg": "27670a03e8c3c0fcd9c6a1ba683074f9636cdf0e"
   }
+ },
+ "heid_6021i": {
+  "job": "HEID-1621I, 15 Oct 2026",
+  "regen": "heid1621i/regen_crops.sh",
+  "note": "not committed; the three native block regions of heid_6021 (379) and heid_6021g (375, 423) re-fetched (METS + 3 region requests), sha1 MATCH all three; 23 h375/h423 crops byte-identical to heid_6021g; h379 crops cut with the same iiif_lines.py defaults"
  }
 }

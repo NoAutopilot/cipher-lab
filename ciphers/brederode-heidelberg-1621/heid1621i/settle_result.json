@@ -1,0 +1,42 @@
+{
+ "reconcile": "{\"signs\": 147, \"flagged\": 22, \"relabelled\": 7, \"unsettled\": 8, \"residual\": 0.054}",
+ "tiles": 22,
+ "settled": 14,
+ "unsettled": 8,
+ "settled_labels": {
+  "w375_L05.3": "S",
+  "w375_L07.1": "s",
+  "w375_L07.4": "S",
+  "w375_L11.7": "x",
+  "w423_L04.5": "q",
+  "w379_L02.7": "x",
+  "w379_L05.9": "S",
+  "w379_L05.15": "b",
+  "w379_L06.1": "x",
+  "w379_L07.11": "S",
+  "w379_L10.12": "x",
+  "w379_L12.5": "g",
+  "x375_379.23": "S",
+  "x375_379.27": "s"
+ },
+ "control_changes": [
+  "unit 22 (375): reconciled f -> s",
+  "unit 23 (379): reconciled B -> S",
+  "unit 23: S/S -> both S",
+  "unit 27: s/f -> both s"
+ ],
+ "control_before": "37/45",
+ "control_after": "38/45",
+ "control_agreement": 0.844,
+ "control_gate": 0.9,
+ "control_pass": false,
+ "misses_after": [
+  "3: 375 c / 379 r",
+  "5: 375 e / 379 w",
+  "8: 375 s / 379 j",
+  "17: 375 x / 379 c",
+  "22: 375 s / 379 f",
+  "37: 375 x / 379 c",
+  "44: 375 SYM / 379 f"
+ ]
+}
