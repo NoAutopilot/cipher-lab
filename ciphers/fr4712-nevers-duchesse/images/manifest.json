@@ -1817,5 +1817,19 @@
    "job": "F4712-HAND",
    "note": "untracked; N panel strips cut from it: (745,690,2905,1015) and (2470,215,2905,795)"
   }
+ ],
+ "f4712_8": [
+  {
+   "file": "hand/c118_foot_native.jpg",
+   "url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9058289m/f118/pct:0,55,50,45/max/0/default.jpg",
+   "date": "15 Oct 2026",
+   "size": [
+    4255,
+    2646
+   ],
+   "sha1": "2009bad39018c9ef02e954459f2adfbdf178bbca",
+   "job": "F4712-8",
+   "note": "untracked; regenerate with curl -A 'cipher-lab research script (contact via repository)' -o images/hand/c118_foot_native.jpg <url>; N tile boxes in tiles_f4712_8.tsv"
+  }
  ]
 }

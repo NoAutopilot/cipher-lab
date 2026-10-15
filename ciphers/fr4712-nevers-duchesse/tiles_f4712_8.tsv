@@ -1,0 +1,13 @@
+# F4712-8 (15 Oct 2026): tile boxes for the 8-only blind panel of PREREG-F4712-8.md, placed by placement looks only (no scored call run).
+# box = x0,y0,x1,y1 in the source file's own pixels (all native resolution). status: ok = box checked to hold one 8; set = placed from a context crop, not yet re-checked as a tile.
+tile	role	source_file	box	what	status
+R1	R	images/f10b/f10c_L01_s2.jpg	318,55,415,155	f.10r line 1, first "82", open ɑ-form 8	ok
+R2	R	images/f10b/f10c_L01_s2.jpg	468,55,557,155	f.10r line 1, second "82", ɑ-form 8	ok
+R3	R	images/f10b/f10c_L01_s2.jpg	985,120,1073,220	f.10r line 1, "85", ɑ-form 8	ok
+P1	P	images/f10b/f10c_L01_s3.jpg	1285,175,1360,245	f.10r line 1, "92 8 59", the lone 8	set
+P2	P	images/f10b/f10c_L01_s2.jpg	785,185,865,260	f.10r line 2, "78"	set
+P3	P	images/f10b/f10c_L01_s2.jpg	795,285,870,360	f.10r line 3, "81" (PREREG's fallback; line 2 "85" not placed)	set
+T1	T	images/f13r/f13g_L01_s1.jpg	1410,120,1470,180	f.13r line 1, ".82."	set
+T2	T	images/f13r/f13g_L01_s2.jpg	600,125,670,185	f.13r line 1, ".58."	set
+T3	T	images/f13r/f13g_L15_s1.jpg	810,85,900,185	f.13r line 15, "58"	ok
+N1	N	images/hand/c118_foot_native.jpg	3435,1280,3505,1340	f.107v foot, right block, the 2nd figure of "9?5774" (an ɑ-like figure; read as 8 by placement, not blind)	set
