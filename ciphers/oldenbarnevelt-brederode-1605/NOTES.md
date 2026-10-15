@@ -2375,7 +2375,26 @@ cap left) the inv. 6020 stride-3 screen; NA <= 40 requests. A screen for the no.
 - Suggestion (outside this target, one line, Usage 7): NA 1.01.02 inv. 9453 scan 24 carries an Oldenbarnevelt-Langerak name nomenclator
   with period margin decodes; a scout row could check it against a check-solved pass before any work.
 
-## Remaining gaps (OBRED-NA2, 15 Oct 2026)
+## OBRED-9453 (15 Oct 2026): the inv. 9453 scan 24 names nomenclator against the no. 92/187 name codes (known-keys rung)
+PREREG obred9453/PREREG-OBRED9453.md (d84524746), written before the native fetch. NA 3 requests (item page 9453, info.json 5360x4420,
+full/max 5000x4123 sha1 b15d8cf11e52; scratch only, re-fetch via screen_tools/regen_obredna2.sh with full/max). One Opus read of two crops.
+- Table (obred9453/table_9453_s24.tsv): 63 Ambassadeur van Venetien, 92 Hertoch van Bouillon (x3), 10 Mijne H. Staten General (x2), 99 Spinola,
+  20 De Coninck van Engelant, 47 Churfurst Paltz (x2), 424 Wesel, 41 M. d'Oldenbarnevelt, 32 De Coninck van Spaegne (9 codes C by a period margin
+  or interlinear decode on the same line); 49 Brand[enburg] and 241 (or 244) Treves M; "3 jaren" is a plain numeral. The 900 px read's "10"
+  for the Engelant line is 20 at native size. Two-digit codes for persons and powers, three-digit for two places, among clear Dutch words.
+- T1 form: exact value overlap with the 20 distinct no. 92/187 name codes (588-751) is k = 0; the ranges are disjoint (10-424 vs 588-751).
+  The [1, 424] null cannot vary for this statistic (it never reaches 588: a non-test by construction, logged as such); the [1, 999] null
+  gives mean k 0.21, p(k >= 0) = 1.0. T1 shows no match; it cannot by itself exclude a relation.
+- T2 names: the only person in both lists is the Elector Palatine: 47 "Churfurst Paltz" here (C; Oldenbarnevelt to Langerak, Jan 1616)
+  against 605 "Palsgrave" / "Fredrich Palsgrave" in the no. 92 family (C, OBRED-556; Brederode, Oggersheim, 14 Oct 1619) and 605 as an M
+  context lead in no. 92 itself (Heidelberg 1605). Different code for the same person: a data conflict logged in HYPOTHESES.md, read as a
+  different key, not settled. Bohemen (594), 600, 587 and 732 have no counterpart on this leaf.
+- Ungated note (not in the PREREG): 241 and 10-99-sized values also occur among no. 92's letter groups (e.g. 241 in "578 337 241 97"); a
+  names-only table and a letter-and-name table share number space by accident, so this is not a match.
+- Result: no no. 92/187 name code matches the 9453 s24 nomenclator in form or context; every statement above is M or C as graded, none S.
+  Where it was not looked for: the other 45 scans of inv. 9453 (only s1, 12, 24, 36 seen), so any second Langerak sheet or key is unseen.
+
+## Remaining gaps (OBRED-NA2, OBRED-9453, 15 Oct 2026)
 Read so far: no. 92 and the 187 postscript as band intervals (OBRED-BAND; 72 of 180 one-letter) and, by constrained segmentation, 20 nl16 words of >= 4 letters covering 112 of 143 letter tokens, all M (OBRED-SEG); the every-occurrence context test and the joint band-monotonicity check are both below their synthetic controls' gates, so neither adds a grade (OBRED-CTRY; OBRED-MONO: joint D 126 vs within-gap null p05 128, p 0.036, ungated, per-lead flag right-clean 0.06-0.12); code-200 and six more one-code-two-letter conflicts among the leads (OBRED-MONO, ungated); 37 name codes unread; inv. 6019 scans 555-556 carry 81 groups (58 H-read) with 45 C-graded period glosses; the 2 Oct 1619 letter puts Brederode's own cipher last in Oldenbarnevelt's hands (OBRED-OCT2, M)
 - no. 92 and the 187 postscript beyond M word leads - blocker: not-attempted; band intervals, segmentation, the every-occurrence context test and the joint monotonicity check are done with controls and no lead reaches S (OBRED-BAND, OBRED-SEG, OBRED-CTRY, OBRED-MONO); next: a per-lead leave-one-out monotonicity contribution score (fall in D when a lead is dropped vs its within-gap null), whose synthetic control must separate right from wrong leads at e 0.5/0.75, PREREG first, ~$2
 - the no. 92 key ("mijn cyfer ... in des Advocaets Barnevelt handen") - blocker: not-attempted; not in 3.01.14 (R9-NAKEY), not in the secret register 29 Aug 1619 - 7 Feb 1620 (OBRED-NA), not on any of the 17 scans of 1.01.02 inv. 9459, nor on the openings/stride scans of 9450-9458 and 9460 (19 of 234 scans; OBRED-NA2, M); the only numeral code seen in the process series is a small-number name nomenclator with margin decodes in an Oldenbarnevelt-Langerak letter (9453 scan 24), not the no. 92 design; next: the unseen scans of the three thick letter files 9450 (72 scans), 9451 (58), 9453 (46) at stride 3, about 55 NA requests, ~$2
@@ -2384,10 +2403,10 @@ Read so far: no. 92 and the 187 postscript as band intervals (OBRED-BAND; 72 of 
 - the 1605 Swiss-mission dossier NA 1.01.02 inv. 12569.38 - blocker: needs-physical-access; not digitised (OBRED-S2); owner-side step: a copy enquiry to the National Archives, not queued
 - States-side trace of the 17 Oct 1604 and 21 Feb 1605 letters - blocker: needs-physical-access for the originals (Liassen Hoogduytschlandt inv. 6034/6035, Loopende 4909/4910 not digitised); digitised remainder done (OBRED-SG, OBRED-11851, OBRED-641, OBRED-11851B, OBRED-11852A): no numeral block, no Brederode, Stettin or Heidelberg heading (M)
 
-## Escalation (OBRED-NA2, 15 Oct 2026)
+## Escalation (OBRED-NA2, OBRED-9453, 15 Oct 2026)
 - [x] siblings: scan 187 shares 26 values with no. 92 (OBRED-187); inv. 6019 scans 555-556 (Oggersheim, 14 Oct 1619) share 42 values with no. 92/187, clearing the shuffled-code control (OBRED-556); the letter's start (554) carries no groups (OBRED-552)
 - [x] clear-pages: the clear letter of 142r-143r read by eye (OBRED-187); the 1619 letter's prose and margin summaries read in part (OBRED-556); 515-554 and 558-565 seen by eye (OBRED-MEM, OBRED-552, OBRED-549, OBRED-KEYHUNT); the 2 Oct 1619 letter 528-530 read in full (OBRED-OCT2)
-- [ ] known-keys: the 10 Aug 1598 Van Aerssen slip, Buzanval inv. 2028, DECODE 1600s and Palatine/Hessian keys screened (R10-OBRED98, R9-OBRED4, OLD-DKEY, R8-OBRED2, R9-OBRED3); Brederode's own cipher last in Oldenbarnevelt's hands (OBRED-OCT2); not in the secret register 29 Aug 1619 - 7 Feb 1620 (OBRED-NA), not on any 9459 scan nor the 9450-9458/9460 openings (OBRED-NA2); next: 9450/9451/9453 at stride 3, ~$2
+- [ ] known-keys: the 10 Aug 1598 Van Aerssen slip, Buzanval inv. 2028, DECODE 1600s and Palatine/Hessian keys screened (R10-OBRED98, R9-OBRED4, OLD-DKEY, R8-OBRED2, R9-OBRED3); Brederode's own cipher last in Oldenbarnevelt's hands (OBRED-OCT2); not in the secret register 29 Aug 1619 - 7 Feb 1620 (OBRED-NA), not on any 9459 scan nor the 9450-9458/9460 openings (OBRED-NA2); the 9453 s24 Langerak names nomenclator (10-424, Paltz = 47) shares no value with the no. 92 name codes and conflicts on the Elector Palatine (605) (OBRED-9453); next: 9450/9451/9453 at stride 3, ~$2
 - [x] print: no. 92 settled by "Search log", "Web and blog check", "Premise check"; the 17 Oct 1604 letter is not in Veenendaal II (OBRED-187); Resolutiën S.G. XIII and NR 4 carry no key or decipherment note (OBRED-DP, OBRED-KEYHUNT)
 - [ ] key-rebuild: band intervals pass a held-out leaf check (OBRED-BAND), segment into 20 nl16 word leads above both nulls (OBRED-SEG, M); the every-occurrence context test (OBRED-CTRY) and the joint monotonicity check (OBRED-MONO: joint test has power, 0.90-0.93 of control sims, but the per-lead flag clears 0.06-0.12 of right leads) are both below their controls' gates; next: a per-lead leave-one-out monotonicity contribution score with its own synthetic control, ~$2
 - [x] image-check: ciphertext.txt checked against NA inv. 1490 (R9-OBRED4, R10-OBREDV); ciphertext_187.tsv 59/59 (OBRED-187); ciphertext_556.tsv two blind passes, 58 of 81 H-read after the 555 L15 second pass (OBRED-556, OBRED-552); the three gloss conflicts re-seen at 5000 px, eye + blind, none settled (OBRED-TRY)

@@ -32,3 +32,11 @@ Application to no. 92/187: interval reading only, grade M (`obred187/band/readin
 | Hypothesis (OBRED-CTRY, 15 Oct 2026, PREREG obred187/PREREG-OBREDCTRY.md) | Control | Control number | Target number | Verdict |
 |---|---|---|---|---|
 | OBRED-SEG's word leads hold at every other occurrence of their codes under a char 4-gram context scorer | synthetic band text at the target's sub-run lengths, e=0.5 and 0.75, 20 sims each; gate: right-lead hold >= 0.60 and precision gain among holders >= 0.10 | e=0.5: right hold 0.965, wrong 0.782, precision 0.530 -> 0.582; e=0.75: right 0.961, wrong 0.782, precision 0.455 -> 0.506 -- BELOW GATE | 16/19 testable hold, h 0.842 vs shuffled-band p95 0.765 (p 0.01, 100 draws) | non-test at this N (control cannot separate right from wrong leads); all leads stay M; hondert/middel/allen break (ungated) |
+
+## OBRED-9453 (15 Oct 2026): Elector Palatine, two codes in two keys (rule 4: data conflict, not settled by majority)
+- 47 = "Churfurst Paltz" / "de Churfurst": NL-HaNA 1.01.02 inv. 9453 scan 24, Oldenbarnevelt to Langerak (Paris), margin date 15-1-1616,
+  period margin decode on the same line, twice (C).
+- 605 = "Palsgrave" / "Fredrich Palsgrave": inv. 6019 scans 555-556, P. van Brederode, Oggersheim, 14 Oct 1619, period interlinear gloss (C,
+  OBRED-556); 605 also an M context lead in no. 92 (Heidelberg, 21 Feb 1605, Brederode to Oldenbarnevelt).
+- Different senders, recipients, dates and code shapes (two-digit names-only table vs three-digit letter-and-name table, no shared name-code
+  value, k = 0): read as two keys. 47 is not imported into the no. 92 key and 605 is not imported into the 9453 table.

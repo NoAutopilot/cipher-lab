@@ -1,0 +1,16 @@
+# NL-HaNA 1.01.02 inv. 9453 scan 24 (right page; letter to Langerak, "Myn Heer", margin date 15-1-1616, a second hand "verzonden voor 1617"), read by
+# OBRED-9453 (one Opus read of two native crops of the 5000x4123 full/max image, sha1 b15d8cf11e52), 15 Oct 2026. grade: C where a period margin or
+# interlinear decode sits against the line holding the code; M where the decode or the digits are uncertain. Code = numeral in the body.
+code	name_as_glossed	occurrences	where	grade	note
+63	Ambassadeur van Venetien	1	"van 63 met goeder discretie"	C	margin x, same line
+92	Hertoch van Bouillon	3	"men 92 ..."; "92 heeft oock aen 10 geschreven"; "opt schrijven van 92"	C	glossed three times ("den Hertoch van Bouillon", "de Hert. van Bouillon", "verd. Hert. van Bouillo")
+10	Mijne H. Staten General	2	"aen 10 geschreven"; "10 meer te bewegen"	C	margin "aen Myne H. Stats general geschr."
+99	Spinola	1	"te sorgen door 99"	C	interlinear gloss over the code
+20	De Coninck van Engelant	1	"/ 20. heeft"	C	margin, same line; the 900 px read had no 20
+47	Churfurst Paltz	2	"aen 47 geschreven"; "maer 47 versoucht"	C	margin "Churfurst Paltz" and "de Churfurst"
+424	Wesel	1	"424 maer 47"	C	underlined in the body; margin "Wesel"
+49	Brand[enburg]	1	"10 ende 10 van 49"	M	interlinear "Brand..." over the line end; digits at the crop edge
+41	M. d'Oldenbarnevelt	1	"door van 41 soo veel"	C	margin, same line
+241	Treves	1	"continuatie van 241"	M	margin "Treues" between lines; underlined; 241 or 244 (900 px read 244)
+32	De Coninck van Spaegne	1	"32 moet het groots voor hebben"	C	margin, same line
+3	(none)	1	"3 jaren"	M	plain numeral (three years), not a code

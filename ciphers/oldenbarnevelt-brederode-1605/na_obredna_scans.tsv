@@ -40,3 +40,4 @@ inv	scan	width_px	sha1_8	content (by eye, M)
 1.01.02/9459	14	900	f8eaab41	OBRED-NA2: Dutch prose, signed, dated 1618; right blank
 1.01.02/9459	16	900	6f8d1226	OBRED-NA2: two-column Dutch articles, signed; right blank
 1.01.02/9460	1	900	2864a8b0	OBRED-NA2: declaration of the boden on the burial, Dutch prose, signatures and marks; no numerals
+1.01.02/9453	24	max(5000)	b15d8cf1	OBRED-9453: native read of the names nomenclator; table obred9453/table_9453_s24.tsv (11 codes 10-424, 9 C by margin)
