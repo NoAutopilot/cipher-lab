@@ -17174,3 +17174,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-15 18:08 | ELEC-2R worker (account-4) | host take openapi.bnf.fr (btv1b90096539 f142 2400, f106 2000; 2 requests) + archive.org (bub_gb_0gFoAAAAMAAJ djvu.txt, 1); scratch only. usage: not readable here
 2026-10-15 18:10 | HAR-2R (account 4, worker) | PREREG-HAR-2R + har41r_score.py --second (S3 gap-free statistic; demo on reader 1 data) pushed before any fetch. usage: not readable here
 2026-10-15 18:10 | HAR-2R (account 4, worker) | host take: de-crypt.org (one login, 4 requests planned). usage: not readable here
+2026-10-15 18:11 | ELEC-2R worker (account-4) | host release openapi.bnf.fr 3 (f142, f106, f99; all 200) + archive.org 1 (djvu.txt, 200); scratch only. usage: not readable here
