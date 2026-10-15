@@ -49,3 +49,28 @@ A4-1236 next 6: the 9 undecided 4610 rows LVN-4610H listed (non-2 misreads) rule
 untranscribed) if >= 40% cap left. Grades per rule 4; any H -> M or M -> H change carried into AUDIT.md per rule 10's propagation clause and the
 C/H share recomputed. Do not touch LVN-NAMES's codes >120 (VIV-KEYSTONE's job). If crops are not on disk, STOP and say so. Units: 9 rows x ~0.1,
 p1_L05 head 2 passes + reconcile ~1, start-up 1.
+
+## Wave 1 results (15:1x UTC): MAT-ORL 2.13 D, MAT-F91 1.16 F (my duplicate: account 2 did f.91-92 A-F this morning; brief built from a stale
+Escalation line -- every wave-2 brief below was checked against `grep <folder> ROOM.md` for the last 24 h), C1161-EXC 5.39 D, LVN-4610U 2.96 D.
+clair1161 held from wave 2: known-text share already ~5.4 of 11.6.
+
+## Wave 2 (15:1x UTC 15 Oct)
+Before any step, `grep <folder> ROOM.md | tail -40` and read every 15 Oct section of NOTES.md: if your step is already done, stop at once and say so.
+
+### MAT-EYE (Opus, cap 3.5, box 60 min, disk first; openapi.bnf.fr <= 4 only if crops are missing, ROOM take/release): matignon-mayenne-1586 MAT-KEY next steps
+MAT-KEY's named next: (1) eye f.110 T and BOX tokens against the f.91 period chart's shapes (~1); (2) eye x/D on f.143 against U/D2 (~1). PREREG the
+shape rule before looking; one crop per call if a subagent is used; results as M/S per rule 4 and HYPOTHESES rows, no key.tsv edit without a --try
+with its power control. Also correct the stale clear-pages line in "## Escalation (1 Oct 2026)" (it still says the f.91-92 margin is not
+transcribed; account 2's MAT-F91/F91C/F91E did it) -- one line edit, no other Escalation change. Units: 2 checks x ~1 + start-up 1.
+
+### MAT-154 (Opus, cap 7, box 90 min, disk first; openapi.bnf.fr <= 4 only if 3x crops of f.154 are missing, ROOM take/release): matignon-mayenne-1586 f.154 o shape-sort + --try oB=a
+MAT-ORL's named next: shape-sort f.154's own o tokens from 3x per-token crops with 2 blind Sonnet readers (one call per batch of <= 40 crops, no
+values shown), PREREG the agreement rule and kappa gate first, then `decode_key.py --try oB=a` on f.154 with the same power controls MAT-ORL ran
+(n=m, oo=f, c=q, s=a). Work in your own subfolder; do not touch MAT-EYE's files. Units: crops 0.5, 2 readers x ~2 batches x 0.4, reconcile 0.5,
+--try 0.8, start-up 1.
+
+### LVN-L05 (Opus, cap 3, box 60 min, disk only): lodewijk-van-nassau-1573-74 p1_L05 head + LVN-4610U's five suspect rows
+LVN-4610U's named next: add an insert path to the folder's apply.py (or the shared tool it calls) and insert the p1_L05 head (81, 125, one eye) at M
+after a second blind look at the same crop; then a second blind reader on the five suspect rows LVN-4610U listed (one crop per call). Grades per rule
+4; AUDIT.md and the C/H share carried; `decode_key.py --check` exit 0. Do not touch LVN-NAMES's codes > 120 valuation (VIV-KEYSTONE's job).
+Units: insert path 0.5, 6 crops x 2 looks x ~0.1, write-up 0.3, start-up 1.
