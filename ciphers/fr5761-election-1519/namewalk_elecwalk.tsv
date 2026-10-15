@@ -1,0 +1,14 @@
+# ELEC-WALK census, 15 Oct 2026 03:08-03:11 UTC; fr.5761 (btv1b52510561g), openapi.bnf.fr IIIF v3, 600 px wide unless noted; images in session scratchpad only (regen: https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b52510561g/f<canvas>/full/600,/0/default.jpg)
+canvas	folio	old_folio	resolution	content_at_sheet_scale	names_seen_in_clear	cipher_name_group_seen	kluckhohn_match
+f333	165r	160	600px	letter of the envoys to Francis I (Orval gone to Coblenz; Brandenburg's letter)	Orval; marquis de Brandebourg; Francisque; le conte	no	not matched to a printed number (OCR text too noisy to align by phrase)
+f343	170r	165	600px	envoys to Francis I: "deux lettres en chiffre" received; duc de Gueldres; Lunebourg; duc Henry de Brunswick	duc de Gueldres; Lunebourg; Brunswick	no	not matched
+f345	171r	166	600px	envoys to Francis I (continued)	none legible as a name	no	not matched
+f347	172r	167	600px	admiral: Brandenburg's letters translated into French; ends "Escript a Nancy le x.. jour de juing"	marquis de Brandebourg; duc de Lunebourg; duc Henry de Brunswick	no	not matched
+f351	174r	169	600px + one native line crop	"Monsr l'admiral a Madame": Brandenburg and Mayence; Bazoges; Francisque; la Poussiniere; Joachim de Moltzan; duc de Saxe	marquis de Brandebourg; monsr de Mayence; Bazoges; Francisque; La Poussiniere; Joachim de Moltzan; duc de Saxe	no (native crop confirms names in letters)	not matched
+f357	177r	172	600px	letter naming Boheme, Saxe, Poulongne, Treves, Brandenburg, roy catholique	Boheme; Saxe; Poulongne; monsr de Treves; monsr le marquis de Brandebourg; roy catholique	no	not nr. 357 (Joachim 18 June): no shared phrase found
+f359	178r	173	600px + one native line crop	"Autre double de lettre de monsr l'admiral au chancellier du conte palatin"	conte palatin	no (native crop confirms names in letters)	not matched
+f363	180r	175	600px	blank	-	-	-
+f367	182r	177	600px	blank	-	-	-
+f371	184r	179	600px	later matter: cardinal, roy catholique, roy d'Angleterre	roy d'Angleterre; roy catholique	no	outside the 1519 election run
+f385	191r	186	600px	later Italian matter (Parma, Milan, the Pope)	-	no	outside
+f399	198r	193	600px	later Italian matter (duc de Ferrare, Lyon)	-	no	outside

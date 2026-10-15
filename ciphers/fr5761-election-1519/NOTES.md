@@ -644,3 +644,25 @@ Not found: the key list or any printed code-group table; no "Ziffer"/"Chiffre" n
 ## D1A-SRCH2: further print search (8 Oct 2026, 06:15 UTC)
 
 D2-VIEU (5 Oct) and R9-VIEU (6 Oct) already ran print_check.py on the named phrases and variants; not repeated. This pass tried the next step they named, Google Books API (country=US, key) and be-api, on the two catalogue volumes and the Nevers volume: HQo4AQAAMAAJ, JUgMAQAAMAAJ, GP9eAAAAcAAJ are ALL_PAGES (full view) but the API returns no snippet inside them (the "30 septembre 1587 Vieuville" query lists HQo4AQAAMAAJ and JUgMAQAAMAAJ with an empty snippet); dsInahmnar8C (Les ducs de Nevers et l'Etat royal, 2006) is PARTIAL. Query "Vieuville Saint-Aignan 1587 Nevers": 18 volumes, top 5 are 1842 encyclopedia lists of dukes (noise); be-api same terms: 10 volumes, genealogical/Breton armorial noise. Not found: any printed text of the 30 Sept 1587 letter. Not done: page reading of the full-view catalogue volumes (books.google page view is blocked from the cloud; needs the owner's machine or an IA copy). Requests: googleapis 6, be-api 1. Status stays blocked.
+
+## ELEC-WALK: name-code plain-copy walk, census (worker ELEC-WALK, LANE DEFAULT-A4-0235-15, account 4, 15 Oct 2026, 03:06-03:12 UTC by date -u)
+
+Brief: walk the fr.5761 copies whose names are in cipher, pair (group, printed name) against Kluckhohn, RTA J.R. I. Result: **0 pairs; key.tsv
+unchanged.** No score was computed, so no PREREG file was written. Rows: `namewalk_elecwalk.tsv` (12 census canvases). Images stay in the
+session scratchpad; the regen URL is in the TSV header.
+- Kluckhohn (IA `bub_gb_0gFoAAAAMAAJ` djvu, 1 archive.org request) flags only **two** copies "die Namen in (den bekannten) Chiffren": nr. 357
+  (Joachim of Brandenburg, signed "Capitaine Josyn", to Bonnivet and Moltzan, 18 June 1519, printed names Couloigne, Saxe, Boheme, Mayence,
+  Palatin, Hessen) and nr. 383 (Orval, Bonnivet, Guillart to Francis I from Coblenz, late June 1519, printed names Brandebourg, Treves, conte
+  Palatin). Their shelfmark OCR reads "F. fr. Von." and "F. fr. VGL", not 5761. All the other ~45 "F. fr. 5761 Cop." source lines in vol. I
+  carry no cipher note. So the brief's premise that ff.54-172 hold many name-cipher copies does not hold as stated. Kluckhohn names two letters.
+- Census (openapi.bnf.fr, 12 requests at 600 px): f.172r ends "Escript a Nancy le x.. jour de juing", so the late-June 1519 letters lie
+  **after** f.172. ff.172-179 are copies of the admiral's letters (to Madame, to the Palatine's chancellor, Brandenburg's letters "translatez en
+  francoys"). ff.180r and 182r are blank, and ff.184 onward are later Italian matters. On all 9 written leaves the names are in clear
+  (Brandebourg, Mayence, Saxe, Boheme, Poulongne, Treves, conte palatin, Joachim de Moltzan, Francisque, La Poussiniere). Two native line crops
+  (f.174r, f.178r; 2 more requests, 14 in total) confirm the names are in letters, so a single cipher sign in place of a name would show at this scale.
+- Not found: any leaf with a cipher name group on the 12 canvases checked; nr. 357 or nr. 383 on those canvases.
+- Not checked: canvases f348-f350, f352-f356, f358, f360-f362 (ff.172v-179v, the unsampled sides of the June run, about 13 canvases),
+  and ff.54-164 apart from the 4 sampled leaves. Possibly the two Kluckhohn letters are not in fr.5761 at all ("Von."/"VGL"; fr.5756 is the
+  other BnF volume he cites for this embassy, e.g. Robertet 4 Mar 1519).
+- Next: (1) read the remaining ff.172v-179v canvases at 600 px (about 13 requests, ~$1) for nr. 357/383. If they are absent, (2) the same census
+  on fr.5756 (Gallica ark not yet looked up), ~$1.5. A match then needs >= 2 occurrences per sign before any C grade (brief rule). Status unchanged (open).
