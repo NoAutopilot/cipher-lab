@@ -11284,5 +11284,21 @@
    "curl -A \"cipher-lab research script (contact via repository)\" -o SCRATCH/f108v.jpg \"https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f112/700,150,3600,5650/max/0/default.jpg\"; python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py SCRATCH/f108v.jpg --out SCRATCH/dec --prefix c112_f108v --strips 7"
   ],
   "passes": "tx/dec_<page>_passC.txt, one blind Sonnet call per page on all strips (prompt tx/DEC_READ.md + whole-page instruction); text returned in the reply and written by the worker"
+ },
+ "viv67c": {
+  "job": "VIV-67C, 15 Oct 2026, for LANE VIV-KEYSTONE (account 4), run on account 2",
+  "committed_images": "none (all crops and strips cut in the session scratchpad)",
+  "overviews_600px": [
+   "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f207/full/600,/0/default.jpg",
+   "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f212/full/600,/0/default.jpg"
+  ],
+  "native_regions": {
+   "f202r (c207 right)": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f207/3950,300,3900,5000/max/0/default.jpg",
+   "f207r (c212 right)": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9009663p/f212/3950,200,3850,5700/max/0/default.jpg"
+  },
+  "regenerate": [
+   "curl -A \"cipher-lab research script (contact via repository)\" -o SCRATCH/f207_native.jpg \"<f202r native region URL>\"; python3 tools/iiif_lines.py --image SCRATCH/f207_native.jpg --region 830,200,3070,4450 --out SCRATCH/p67c --prefix c207_f202r --follow-slope 400 --distance 70 --max-width 1560 --overlap 150 --debug   # 32 x 3 crops",
+   "curl ... -o SCRATCH/f212_native.jpg \"<f207r native region URL>\"; python3 -c \"from PIL import Image; Image.open('SCRATCH/f212_native.jpg').crop((450,300,3850,5550)).save('SCRATCH/f207r_text.jpg', quality=92)\"; python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py SCRATCH/f207r_text.jpg --out SCRATCH/dec --prefix c212_f207r --strips 7"
+  ]
  }
 }

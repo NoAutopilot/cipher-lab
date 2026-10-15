@@ -3786,3 +3786,63 @@ E is on the right lines but a noisier reader than A, B, C on them (about 0.07-0.
 Requests: openapi.bnf.fr 1 (HTTP 200), gallica.bnf.fr 0. Subagent calls: 9 Sonnet vision (8 planned + 1 re-issue). Cost not visible to this session.
 Next (one line, not done here): if the parent registers a 5-pass rule, its first input is the 7 settled-different columns plus the 64 still-flagged
 ones on L22-L36; E's own noise (pooled about 0.245 vs 0.115-0.174) argues for weighting it no higher than D.
+## VIV-67C (15 Oct 2026, 02:10-02:2x UTC by date -u, account-2-dispatched worker for LANE VIV-KEYSTONE, account 4): ink 67 f.202r against the continuation of ink 68
+Brief: .claude/briefs/runs/2026-10-15-acct4-for-acct2-jobs.md "JOB VIV-67C". Measurement only: key.tsv, reading_piece63.tsv, status.json and every committed
+reading untouched. PREREG-VIV67C.md pushed (84a6767a6; header time corrected in 46cc8eca5) after the overviews and crop checks and BEFORE any pass, decode or alignment.
+
+**Leaves (by eye; 600 px overviews and native regions at 1/6, openapi.bnf.fr; offset canvas = folio + 5):** c207 right = f.202r, 32 cipher lines (iiif_lines found 32
+bands; overlay checked by eye), notes in the left margin outside the cut (not read). c212 right = f.207r, 19 lines of clerk French ("que lon estoit bien ayse de la bonne
+affection ... a Don Jehan d'Austria"); **its last line ends mid-sentence ("... bien jurer que", pass A): ink 68 continues onto f.207v** (VIV-67B's "where ink 68 ends" had not
+been checked by eye). f.207v not fetched (outside the brief's target).
+
+**Disk first:** f.206v already had two blind passes on disk (VIV-67B, inside dec67b_norm.txt), so it was not re-read; only f.207r got new passes. Reader calls: 4 Sonnet
+(f.202r A top-down, B bottom-up, each one page of line crops; f.207r A, B), under the brief's price of 6. The brief's "one line crop per call" was read with its own price
+(6 calls) and VIV-67B's method: one page of line-crop paths per call, the reader opening one crop at a time; no full-page image went to any reader.
+
+**Crops** (pasted per Usage 6; all cut in the session scratchpad, nothing committed; regenerate per images/manifest.json "viv67c"):
+```
+$ curl ... -o SCRATCH/nat/f207_native.jpg ".../f207/3950,300,3900,5000/max/0/default.jpg"; curl ... -o SCRATCH/nat/f212_native.jpg ".../f212/3950,200,3850,5700/max/0/default.jpg"
+$ python3 tools/iiif_lines.py --image SCRATCH/nat/f207_native.jpg --region 830,200,3070,4450 --out SCRATCH/p67c --prefix c207_f202r --follow-slope 400 --distance 70 --max-width 1560 --overlap 150 --debug
+  32 bands x 3 segments, wrote 96 crops (L01-L32)
+$ (PIL crop of f212_native to the text block 450,300,3850,5550) ; python3 ciphers/fr16104-vivonne-spain-1572/tx/viv67_strips.py SCRATCH/nat/f207r_text.jpg --out SCRATCH/dec --prefix c212_f207r --strips 7
+  S01-S07; every cut checked by eye to fall between lines
+```
+
+**Passes and merge.**
+- Cipher: `tx/viv67_prep.py f202r`; `tools/reconcile_passes.py tx/f202r_passA_c.tsv tx/f202r_passB_c.tsv --out-dir tx/rec_f202r` (signs A 1,472, B 1,513, agree 1,290 / 1,530 =
+  84.3%, 240 disagreement columns: **err_2reader 0.157**); `tx/reconcile_vivk.py f202r` (six label rules unchanged: settled 6, left at pass A 159, one-pass gaps 75) ->
+  tx/f202r_rec.tsv, 1,530 signs (1,470 codes collapsed). Pass B wrote {struck} at four places (L01, L21, L28, L29) where pass A read signs.
+- Decipherment: `tx/viv67_merge_dec.py f207r --out dec67c_norm.txt` -> 774 letters; A/B word agreement f.207r 0.579. Pass A wrote the clerk's "de" suspension stroke as
+  "\" (not in tx/DEC_READ.md; kept as returned, the normaliser drops it, so a few "de" are missing from pass A's letters and the merge takes B's where they disagree).
+
+**Gate (PREREG-VIV67C; benchmark-tx/build_vivonne_f202r.py, tx/vivk67c_result.json):** f.202r stream (1,470 codes) vs T = T67b[1580:] (737 letters) + dec67c (774) =
+1,511 letters; the trim length int(1470 x 1403/1270) + 200 = 1,823 exceeds it, so T was used whole (as registered). build_vivonne_f211r.control() unchanged, seed 20261014,
+run once.
+| key | real match share | aligned keyed | 200 value-shuffled keys mean / p95 / max | rank | verdict |
+|---|---|---|---|---|---|
+| published (key_tomokiyo.tsv), gating | **0.744** | 1,212 | 0.446 / 0.501 / 0.528 | 1 of 201 | **PASS** |
+| key.tsv full set (report only, 50 draws) | 0.739 | 1,239 | 0.449 / 0.498 / 0.512 | 1 of 51 | PASS |
+For comparison: f.201r 0.744 vs p95 0.507 (VIV-67), f.201v 0.714 vs 0.498 (VIV-67B), ink 70 f.211r 0.769 vs 0.522, ink 40 f.103r 0.605 vs 0.498. Window [0, 1511] = the whole
+target: the alignment reaches the end of f.207r with cipher left over (176 positions unaligned in the truth item), consistent with f.202r's last lines being deciphered on f.207v.
+Second blind use of the PREREG-VIV70B trim rule; here it did not bind (target shorter than the trim length).
+
+**Truth item registered (gate passed):** benchmark-tx/vivonne1573-f202r-dev.truth.tsv (split=dev, BENCHMARK-TX.tsv row, sha256 fe70a34a...; `--check` ok): 1,530 positions,
+1,121 scored (excluded: unaligned 176, letter-off-key 83, off-key 70, key-M y 45 / e 13 / b 6 / S 1, align-uncertain 15); flags at build: align-conflict 183, clerk-split 492,
+unflagged 544; no verifier flags file. Scores (tools/tx_bench.py, as measured / flagged-excluded): passA 0.163 / 0.017, passB 0.164 / 0.033 (independent); committed
+reconciliation 0.152 / 0.000 (circular, as on the other truth leaves).
+
+**What the leaf adds:** a sixth truth leaf of this hand (after f.102r-v/f.103r, f.201r, f.201v, f.211r), 1,121 scored positions. For the g-split (VIV-GSPLIT, N_f = 6, wanted
+>= 12): reader label g sits against clerk r at 50 scored positions and against **f at 4** (excluded letter-off-key in the truth, but known-answer positions for the split), so
+pooled truth-f under g goes 6 -> 10 before any new tile is cut.
+**Labels against the clerk letter** (`tx/viv67_labels.py --f202r`, new option, default and --f201v runs unchanged, `--check` ok -> tx/viv67c_labels.tsv, _summary.tsv;
+counts only, NO key edit): 178 occurrences of 22 labels, 135 aligned. y 54 (l 26, r 7, e 4, h 2 of 45); e 18 (p 4, f 4, m 3 of 13); single o 17 (f 4, s 2 of 10); c 16 (p 9 of
+12); V 14 (n 10, m 2 of 14); 2 14 (m 10 of 12); b 10 (s 2 of 6); 8 8 (a 3 of 7); the rest <= 4 each. Beside the earlier leaves: **c -> p on a fourth leaf**; V -> n again
+(as f.201r and ink 40, against s/n on f.201v); 2 -> m clearly here (10 of 12; f.201v 4 of 20); y -> l leads (26 of 45). Interpretation only, no gate run on any label.
+
+Files: PREREG-VIV67C.md; benchmark-tx/build_vivonne_f202r.py; tx/f202r_passA/passB(_c).tsv, tx/rec_f202r/, tx/f202r_rec.tsv; tx/dec_f207r_{passA,passB,merged}.txt,
+tx/dec67c_norm.txt; tx/vivk67c_result.json; benchmark-tx/vivonne1573-f202r-dev.truth.tsv + .sha256, benchmark-tx/outputs/vivonne1573-f202r-dev/; BENCHMARK-TX.tsv row;
+tx/viv67_labels.py (--f202r), tx/viv67c_labels*.tsv; images/manifest.json "viv67c".
+Requests: openapi.bnf.fr 5 (2 x 600 px overviews, 1 info.json sent by mistake and not used, 2 native regions; all HTTP 200, >= 3 s apart, take/release lines in ROOM.md);
+gallica.bnf.fr 0. Subagent calls: 4 Sonnet. Cost not visible to this session.
+Next (one line, not done): f.207v (canvas 213 left) in two blind passes to finish ink 68 and re-gate f.202r on the full end, ~$5; then the
+g-split re-run with N_f = 10 + new tiles.
