@@ -93,3 +93,69 @@ r106	f211r	f211r_L05	39	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f21
 r128	f202r	f202r_L18	43	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L18_s3.jpg	745	30	42	82	whole	yes	VIV-GSPLIT3B: s o g d a; check 2 moved +15; check 3 on the g
 r149	f211v	f211v_L21	36	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L21_s3.jpg	522	30	40	82	whole	yes	VIV-GSPLIT3B: 2 m g tz L; check 2 moved +30; check 3 on the g
 r040	f103r	f103r_L19	20	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L19_s1.jpg	1143	27	40	82	unsure	yes	VIV-GSPLIT3B: S c g 4 d; check 2 moved +35; check 3 still off or form unclear, not re-looked
+r016	f102r	f102r_L18	5	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L18_s1.jpg	365	30	36	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): # # g m: first box on the second #, moved right
+r017	f102r	f102r_L24	6	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L24_s1.jpg	398	30	34	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): # a g d: first box took a+g, narrowed onto g
+r018	f102r	f102r_L24	12	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L24_s1.jpg	750	30	40	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): m g k: g with tail, on at first check
+r019	f102r	f102r_L26	14	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L26_s1.jpg	814	25	34	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): d o o g : : first box on the second o, moved right
+r020	f102r	f102r_L26	40	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L26_s2.jpg	780	25	32	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): p g m g #: first box on m, moved right
+r021	f102r	f102r_L27	41	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L27_s2.jpg	897	25	34	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): # m g m: g on at first check
+r022	f102r	f102r_L28	27	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L28_s2.jpg	153	27	28	82	unsure	yes	VIV-GSPLIT3C, 3 placement(s): o z tz g g: first on the t of tz, second on the z of tz, third still straddles z and g -- not entered
+r023	f102r	f102r_L32	44	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L32_s2.jpg	1088	21	32	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): a d g #: g on at first check
+r024	f102r	f102r_L36	29	r	ciphers/fr16104-vivonne-spain-1572/images/c105_f102r_L36_s2.jpg	270	29	34	82	unsure	yes	VIV-GSPLIT3C, 2 placement(s): tz m y g m d: the page shows one glyph (f-like, long descender) where truth has y g; which token it is cannot be told by eye -- not entered
+r041	f103r	f103r_L21	21	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L21_s1.jpg	1255	29	42	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): d o o g #: g with lower loop, on at first check
+r042	f103r	f103r_L25	23	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L25_s1.jpg	1170	30	36	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): # S g S: first box on the first S, moved right
+r043	f103r	f103r_L28	6	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L28_s1.jpg	428	30	36	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): m o o g g: first box on the o-o pair, moved right onto the first g
+r044	f103r	f103r_L29	41	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L29_s2.jpg	885	29	32	82	whole	yes	VIV-GSPLIT3C, 3 placement(s): x d g #: first box in the gap, second on d, third on g
+r045	f103r	f103r_L29	47	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L29_s2.jpg	1230	29	38	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): m g m: g on at first check
+r046	f103r	f103r_L30	2	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L30_s1.jpg	225	9	32	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): # g S: g on at first check
+r047	f103r	f103r_L31	28	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L31_s2.jpg	166	27	30	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): c S g f: first box on S, moved right
+r048	f103r	f103r_L32	5	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L32_s1.jpg	384	30	34	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): d o o g #: g on at first check
+r049	f103r	f103r_L34	15	r	ciphers/fr16104-vivonne-spain-1572/images/c106_f103r_L34_s1.jpg	828	19	32	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): p k g m: pointer window, first box on k, moved right
+r062	f201r	f201r_L18	8	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L18_s1.jpg	520	30	42	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): g of m-g-s, box on g at first check
+r063	f201r	f201r_L19	17	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L19_s1.jpg	932	25	40	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): m p h g m: first box on p, moved right
+r064	f201r	f201r_L19	47	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L19_s2.jpg	975	25	38	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): tz g S: g, on at first check
+r065	f201r	f201r_L19	55	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L19_s2.jpg	1340	25	38	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): s g 7: g on at first check
+r066	f201r	f201r_L21	5	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L21_s1.jpg	372	30	30	82	whole	yes	VIV-GSPLIT3C, 3 placement(s): c y g d: first box in the gap after #, second on the S-form y, third on g
+r067	f201r	f201r_L22	12	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L22_s1.jpg	735	30	34	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): m o o g L: first box on the second o, moved right
+r068	f201r	f201r_L22	28	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L22_s1.jpg	1488	30	30	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): m c s g R: first box on s, moved right onto g at the crop's right end
+r069	f201r	f201r_L23	41	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L23_s2.jpg	585	30	30	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): j o o g s: first box on the second o, moved right onto the l-form g
+r070	f201r	f201r_L23	49	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L23_s2.jpg	918	30	34	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): d m g d: g on at first check
+r071	f201r	f201r_L25	24	r	ciphers/fr16104-vivonne-spain-1572/images/p67/cut/c206_f201r_L25_s1.jpg	1450	30	30	82	whole	yes	VIV-GSPLIT3C, 3 placement(s): d tz p g s: pointer window; first box on tz, second in the gap before g, third on g
+r085	f201v	f201v_L18	47	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L18_s3.jpg	1012	30	40	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): o m g #: first box sat on the #, moved left onto g
+r086	f201v	f201v_L21	21	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L21_s2.jpg	545	30	40	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): # m g: q-like g with tail, on at first check
+r087	f201v	f201v_L25	9	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L25_s1.jpg	632	30	34	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): m c g d: first box took c+g, narrowed onto g
+r088	f201v	f201v_L26	10	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L26_s1.jpg	544	30	36	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): d o o g n: first box on the second o, moved right
+r089	f201v	f201v_L27	9	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L27_s1.jpg	553	30	34	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): 2 m g #: first box on m, moved right
+r090	f201v	f201v_L28	11	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L28_s1.jpg	656	30	32	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): p # g m: first box on #, moved right
+r091	f201v	f201v_L29	17	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L29_s1.jpg	1020	30	30	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): o o # g m: first box on #, moved right
+r092	f201v	f201v_L29	21	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L29_s1.jpg	1226	30	32	82	unsure	yes	VIV-GSPLIT3C, 3 placement(s): m o o g o o m: pointer window missed; second box on o, third on mixed ink (o over a descender) of unclear form -- not entered
+r093	f201v	f201v_L29	56	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L29_s3.jpg	822	30	34	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): s tz g m: g on at first check
+r094	f201v	f201v_L30	40	r	ciphers/fr16104-vivonne-spain-1572/images/p67b/c207_f201v_L30_s3.jpg	698	30	32	82	unsure	yes	VIV-GSPLIT3C, 3 placement(s): d o o g tz: pointer window; first on tz, second on d (page order misread), third right of g on the joining stroke -- not entered
+r107	f211r	f211r_L06	10	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L06_s1.jpg	1102	29	36	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): tz m g m: first box straddled m and g (pointer window missed; placed from context), moved right
+r108	f211r	f211r_L06	36	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L06_s3.jpg	580	29	36	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): k s g 4: first box on the 4, moved left
+r109	f211r	f211r_L06	45	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L06_s3.jpg	1108	29	38	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): y s g m: first box on S, moved right
+r110	f211r	f211r_L07	34	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L07_s3.jpg	568	15	34	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): m o o g m: first box on the o-o pair, moved right onto the q-shaped g
+r111	f211r	f211r_L08	33	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L08_s2.jpg	1270	19	36	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): x o o g y: first box on the o-o pair, moved right
+r112	f211r	f211r_L09	28	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L09_s2.jpg	1026	15	36	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): R g R: g on at first check
+r113	f211r	f211r_L10	33	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L11_s2.jpg	1338	17	34	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): a S g d: looped g on at first check
+r114	f211r	f211r_L11	31	r	ciphers/fr16104-vivonne-spain-1572/images/p70/c216_f211r_L12_s2.jpg	1210	30	28	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): S s g 9: first box on s, moved right
+r129	f202r	f202r_L20	12	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L20_s1.jpg	862	30	38	82	whole	yes	VIV-GSPLIT3C, 3 placement(s): m p k g d: first box on the h-form k, second straddled k/g, third on g
+r130	f202r	f202r_L20	38	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L20_s3.jpg	925	30	42	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): k g d: g between h-form k and d, on at first check
+r131	f202r	f202r_L23	3	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L23_s1.jpg	230	30	34	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): c s g n: first box on the c-s pair, moved right onto the q-shaped g
+r132	f202r	f202r_L23	17	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L23_s1.jpg	1078	30	32	82	whole	yes	VIV-GSPLIT3C, 3 placement(s): m o o g m: first box on o-o, second on the second o, third on g
+r133	f202r	f202r_L24	6	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L24_s1.jpg	418	30	32	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): x # g S: first box on #, moved right
+r134	f202r	f202r_L24	25	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L24_s2.jpg	714	30	36	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): m o o g g: first box on the second o, moved right
+r135	f202r	f202r_L24	38	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L24_s3.jpg	694	30	34	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): p k g m: g after the h-form k, on at first check
+r136	f202r	f202r_L25	22	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L25_s2.jpg	756	30	32	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): m # g d: first box on #, moved right
+r137	f202r	f202r_L27	28	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L27_s2.jpg	910	30	28	82	whole	yes	VIV-GSPLIT3C, 3 placement(s): x c s g n: first box took c+s, second on S, third on g
+r138	f202r	f202r_L28	29	r	$VIVGSPLIT3_SCRATCH/p67c/c207_f202r_L28_s2.jpg	850	30	32	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): tz s m g # m: pointer window; first box on 3; the page shows s m g # m 3 against truth s m g m # m 3 (one m fewer on the page), the only g in reach
+r150	f211v	f211v_L23	49	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L23_s3.jpg	1275	30	40	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): # tz g m: first box on tz, moved right
+r151	f211v	f211v_L28	16	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L28_s1.jpg	852	30	36	82	whole	yes	VIV-GSPLIT3C, 3 placement(s): d o o g x: first box on o, second between o and g, third on g
+r152	f211v	f211v_L28	31	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L28_s2.jpg	800	30	34	82	whole	yes	VIV-GSPLIT3C, 3 placement(s): s tz g m: pointer window off by a token; first box on y-o, second on m, third on g
+r153	f211v	f211v_L29	7	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L29_s1.jpg	490	30	30	82	whole	yes	VIV-GSPLIT3C, 3 placement(s): m o o g x: first box on m, second on the second o, third on g
+r154	f211v	f211v_L31	46	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L31_s3.jpg	1070	30	32	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): S d g R: first box on the d stem, moved right
+r155	f211v	f211v_L32	1	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L32_s1.jpg	120	30	36	82	whole	yes	VIV-GSPLIT3C, 1 placement(s): line-initial g before h: on at first check
+r156	f211v	f211v_L32	12	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L32_s1.jpg	745	30	30	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): m o o g L: first box on the second o, moved right
+r157	f211v	f211v_L33	15	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L33_s1.jpg	952	30	30	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): d m g tz: first box on m, moved right
+r158	f211v	f211v_L33	35	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L33_s2.jpg	952	30	32	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): m a g S: first box on a, moved right
+r159	f211v	f211v_L33	53	r	ciphers/fr16104-vivonne-spain-1572/images/p70c/c217_f211v_L33_s3.jpg	1145	30	32	82	whole	yes	VIV-GSPLIT3C, 2 placement(s): tz x o g m: pointer window, first box on m, moved left

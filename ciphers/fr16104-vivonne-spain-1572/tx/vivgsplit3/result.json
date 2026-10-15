@@ -1,65 +1,65 @@
 {
  "material": {
   "N_f": 18,
-  "N_r": 59,
+  "N_r": 121,
   "per_leaf": {
    "f102r": [
     4,
-    10
+    17
    ],
    "f103r": [
     4,
-    8
+    17
    ],
    "f201r": [
     1,
-    9
+    19
    ],
    "f201v": [
     2,
-    8
+    16
    ],
    "f211r": [
     2,
-    5
+    13
    ],
    "f202r": [
     4,
-    9
+    19
    ],
    "f211v": [
     1,
-    10
+    20
    ]
   }
  },
  "registered": {
   "tag": "registered_handcut",
   "pooled_1nn": {
-   "tp": 16,
-   "fp": 3,
-   "fn": 2,
-   "tn": 56,
-   "f_recall": 0.8889,
-   "f_precision": 0.8421,
-   "f1": 0.8649,
-   "r_recall": 0.9492,
-   "r_precision": 0.9655,
+   "tp": 15,
+   "fp": 5,
+   "fn": 3,
+   "tn": 116,
+   "f_recall": 0.8333,
+   "f_precision": 0.75,
+   "f1": 0.7895,
+   "r_recall": 0.9587,
+   "r_precision": 0.9748,
    "n_f": 18,
-   "n_r": 59
+   "n_r": 121
   },
   "pooled_5nn_report_only": {
-   "tp": 14,
-   "fp": 1,
-   "fn": 4,
-   "tn": 58,
-   "f_recall": 0.7778,
-   "f_precision": 0.9333,
-   "f1": 0.8485,
-   "r_recall": 0.9831,
-   "r_precision": 0.9355,
+   "tp": 12,
+   "fp": 0,
+   "fn": 6,
+   "tn": 121,
+   "f_recall": 0.6667,
+   "f_precision": 1.0,
+   "f1": 0.8,
+   "r_recall": 1.0,
+   "r_precision": 0.9528,
    "n_f": 18,
-   "n_r": 59
+   "n_r": 121
   },
   "folds": {
    "f102r": {
@@ -67,143 +67,143 @@
      "tp": 4,
      "fp": 0,
      "fn": 0,
-     "tn": 10,
+     "tn": 17,
      "f_recall": 1.0,
      "f_precision": 1.0,
      "f1": 1.0,
      "r_recall": 1.0,
      "r_precision": 1.0,
      "n_f": 4,
-     "n_r": 10
+     "n_r": 17
     },
     "nn5_report_only": {
      "tp": 3,
-     "fp": 1,
+     "fp": 0,
      "fn": 1,
-     "tn": 9,
+     "tn": 17,
      "f_recall": 0.75,
-     "f_precision": 0.75,
-     "f1": 0.75,
-     "r_recall": 0.9,
-     "r_precision": 0.9,
+     "f_precision": 1.0,
+     "f1": 0.8571,
+     "r_recall": 1.0,
+     "r_precision": 0.9444,
      "n_f": 4,
-     "n_r": 10
+     "n_r": 17
     },
     "testable": true
    },
    "f103r": {
     "nn1": {
      "tp": 3,
-     "fp": 0,
+     "fp": 1,
      "fn": 1,
-     "tn": 8,
+     "tn": 16,
      "f_recall": 0.75,
-     "f_precision": 1.0,
-     "f1": 0.8571,
-     "r_recall": 1.0,
-     "r_precision": 0.8889,
+     "f_precision": 0.75,
+     "f1": 0.75,
+     "r_recall": 0.9412,
+     "r_precision": 0.9412,
      "n_f": 4,
-     "n_r": 8
+     "n_r": 17
     },
     "nn5_report_only": {
      "tp": 3,
      "fp": 0,
      "fn": 1,
-     "tn": 8,
+     "tn": 17,
      "f_recall": 0.75,
      "f_precision": 1.0,
      "f1": 0.8571,
      "r_recall": 1.0,
-     "r_precision": 0.8889,
+     "r_precision": 0.9444,
      "n_f": 4,
-     "n_r": 8
+     "n_r": 17
     },
     "testable": true
    },
    "f201r": {
     "nn1": {
      "tp": 0,
-     "fp": 0,
+     "fp": 1,
      "fn": 1,
-     "tn": 9,
+     "tn": 18,
      "f_recall": 0.0,
      "f_precision": 0.0,
      "f1": 0.0,
-     "r_recall": 1.0,
-     "r_precision": 0.9,
+     "r_recall": 0.9474,
+     "r_precision": 0.9474,
      "n_f": 1,
-     "n_r": 9
+     "n_r": 19
     },
     "nn5_report_only": {
      "tp": 0,
      "fp": 0,
      "fn": 1,
-     "tn": 9,
+     "tn": 19,
      "f_recall": 0.0,
      "f_precision": 0.0,
      "f1": 0.0,
      "r_recall": 1.0,
-     "r_precision": 0.9,
+     "r_precision": 0.95,
      "n_f": 1,
-     "n_r": 9
+     "n_r": 19
     },
     "testable": false
    },
    "f201v": {
     "nn1": {
-     "tp": 2,
-     "fp": 1,
-     "fn": 0,
-     "tn": 7,
-     "f_recall": 1.0,
-     "f_precision": 0.6667,
-     "f1": 0.8,
-     "r_recall": 0.875,
-     "r_precision": 1.0,
+     "tp": 1,
+     "fp": 0,
+     "fn": 1,
+     "tn": 16,
+     "f_recall": 0.5,
+     "f_precision": 1.0,
+     "f1": 0.6667,
+     "r_recall": 1.0,
+     "r_precision": 0.9412,
      "n_f": 2,
-     "n_r": 8
+     "n_r": 16
     },
     "nn5_report_only": {
-     "tp": 2,
+     "tp": 0,
      "fp": 0,
-     "fn": 0,
-     "tn": 8,
-     "f_recall": 1.0,
-     "f_precision": 1.0,
-     "f1": 1.0,
+     "fn": 2,
+     "tn": 16,
+     "f_recall": 0.0,
+     "f_precision": 0.0,
+     "f1": 0.0,
      "r_recall": 1.0,
-     "r_precision": 1.0,
+     "r_precision": 0.8889,
      "n_f": 2,
-     "n_r": 8
+     "n_r": 16
     },
     "testable": false
    },
    "f211r": {
     "nn1": {
      "tp": 2,
-     "fp": 0,
+     "fp": 1,
      "fn": 0,
-     "tn": 5,
+     "tn": 12,
      "f_recall": 1.0,
-     "f_precision": 1.0,
-     "f1": 1.0,
-     "r_recall": 1.0,
+     "f_precision": 0.6667,
+     "f1": 0.8,
+     "r_recall": 0.9231,
      "r_precision": 1.0,
      "n_f": 2,
-     "n_r": 5
+     "n_r": 13
     },
     "nn5_report_only": {
      "tp": 2,
      "fp": 0,
      "fn": 0,
-     "tn": 5,
+     "tn": 13,
      "f_recall": 1.0,
      "f_precision": 1.0,
      "f1": 1.0,
      "r_recall": 1.0,
      "r_precision": 1.0,
      "n_f": 2,
-     "n_r": 5
+     "n_r": 13
     },
     "testable": false
    },
@@ -212,27 +212,27 @@
      "tp": 4,
      "fp": 0,
      "fn": 0,
-     "tn": 9,
+     "tn": 19,
      "f_recall": 1.0,
      "f_precision": 1.0,
      "f1": 1.0,
      "r_recall": 1.0,
      "r_precision": 1.0,
      "n_f": 4,
-     "n_r": 9
+     "n_r": 19
     },
     "nn5_report_only": {
      "tp": 3,
      "fp": 0,
      "fn": 1,
-     "tn": 9,
+     "tn": 19,
      "f_recall": 0.75,
      "f_precision": 1.0,
      "f1": 0.8571,
      "r_recall": 1.0,
-     "r_precision": 0.9,
+     "r_precision": 0.95,
      "n_f": 4,
-     "n_r": 9
+     "n_r": 19
     },
     "testable": true
    },
@@ -241,40 +241,40 @@
      "tp": 1,
      "fp": 2,
      "fn": 0,
-     "tn": 8,
+     "tn": 18,
      "f_recall": 1.0,
      "f_precision": 0.3333,
      "f1": 0.5,
-     "r_recall": 0.8,
+     "r_recall": 0.9,
      "r_precision": 1.0,
      "n_f": 1,
-     "n_r": 10
+     "n_r": 20
     },
     "nn5_report_only": {
      "tp": 1,
      "fp": 0,
      "fn": 0,
-     "tn": 10,
+     "tn": 20,
      "f_recall": 1.0,
      "f_precision": 1.0,
      "f1": 1.0,
      "r_recall": 1.0,
      "r_precision": 1.0,
      "n_f": 1,
-     "n_r": 10
+     "n_r": 20
     },
     "testable": false
    }
   },
   "null_f1_1nn": {
-   "mean": 0.2862,
-   "p95": 0.4856,
-   "p99": 0.5714,
-   "max": 0.6875
+   "mean": 0.1576,
+   "p95": 0.326,
+   "p99": 0.4001,
+   "max": 0.439
   },
   "null_f1_5nn_report_only": {
-   "mean": 0.1399,
-   "p99": 0.483
+   "mean": 0.0282,
+   "p99": 0.2728
   },
   "gate": {
    "recall": true,
@@ -283,6 +283,6 @@
   },
   "verdict": "PASS"
  },
- "r_sample_complete": false,
+ "r_sample_complete": true,
  "f191_step_runs": true
 }

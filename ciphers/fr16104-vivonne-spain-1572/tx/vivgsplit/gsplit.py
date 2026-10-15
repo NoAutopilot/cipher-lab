@@ -581,8 +581,11 @@ def cmd_run3(a):
     X = recut_feats(mat)
     leaves = [l for l in LEAVES3 if any(m['leaf'] == l for m in mat)]
     r, rows = gate_run(mat, X, leaves, 'registered_handcut')
-    out = dict(material=summ, registered=r, r_sample_complete=False,
-               f191_step_runs=summ['N_f'] >= 12 and r['verdict'] == 'PASS')
+    # VIV-GSPLIT3C (Addendum B): the r sample is complete when every registered r target is logged whole/unsure/none
+    logged = {h['tid'] for h in rd(os.path.join(OUT3, 'boxes_handcut.tsv')) if h['verdict'] in ('whole', 'unsure', 'none')}
+    complete = all(t['tid'] in logged for t in rd(os.path.join(OUT3, 'targets.tsv')) if t['cls'] == 'r')
+    out = dict(material=summ, registered=r, r_sample_complete=complete,
+               f191_step_runs=summ['N_f'] >= 12 and r['verdict'] == 'PASS' and complete)
     wr(os.path.join(OUT3, 'per_tile.tsv'), list(rows[0].keys()), rows)
     json.dump(out, open(os.path.join(OUT3, 'result.json'), 'w'), indent=1)
     print('material', json.dumps(summ))

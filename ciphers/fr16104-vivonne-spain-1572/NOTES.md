@@ -4245,3 +4245,42 @@ tiles are relabelled by his piles and err_true on the three BENCHMARK-TX items i
 settled piles become the exemplars of the next f.191r question packet (PREREG-VIVPACKET4). Asked of the owner in one line (rule e of the
 account-3 handoff): settle the alphabet on this page; what it changes within a day is the err_true figure on the known-answer leaves and
 whether a one-shape-pile packet for f.191r can be built at all. Cost: parent session only.
+
+
+## VIV-GSPLIT3C (15 Oct 2026, 08:01-08:1x UTC by date -u, account-4 worker for LANE VIV-KEYSTONE): the r sample completed (138 of 138) -- registered PASS; f.191r step not run (looks spent)
+Brief: .claude/briefs/runs/2026-10-13-acct4-keystone-viv-jobs.md "JOB VIV-GSPLIT3C". PREREG-VIVGSPLIT3.md Addendum B pushed (f5a7514e4) before any cut: the
+SAME registered test, second continuation, price 2 looks per 20 tiles at USD 0.45. Measurement only: key.tsv, every reading and status.json untouched.
+**Crops regenerated** (fresh container, every untracked crop gone) by the committed manifest commands: openapi.bnf.fr native regions f206, f207 left, f207 right,
+f216, f217 fetched once into the scratchpad, then cut with the manifest's own `iiif_lines.py --image ... --region ...` lines into images/p67/cut, p67b, p70,
+p70c and $VIVGSPLIT3_SCRATCH/p67c (crop counts 50/96/36/99/96, as the manifests). Reproduction before any cut: check3 on 3B's material gave the same registered
+pooled counts (tp 16, fp 3, fn 2, tn 56; F1 0.865); null p99 0.563 vs 3B's 0.571 (atlas regeneration drift, declared in 3B too).
+**Hand-cut:** `panels.py sheets --rest` sheets 01-03 (20 windows each) read as cut looks; sheet 04's 6 targets were placed at the pointer and shown on a wide
+check cell instead of a fourth cut sheet. Every box was drawn by eye and re-looked on a check sheet (boxcheck layout at 1.2-1.5x with a 10 px tick ruler);
+only a box seen sitting on the target g at a check look is `whole`. 8 looks: 3 cut sheets + 5 check sheets. Placements: 1st 16 whole, 2nd 31, 3rd 15; 4 left
+`unsure` (r022 still straddling tz/g after 3 placements; r094 and r092 pointer windows missed and the 3rd box was not on a clear g; r024 the page shows one
+f-like glyph where truth has y g). Two notes in the log: r138 the page has one m fewer than truth (s m g # m 3 vs s m g m # m 3), the only g in reach, whole.
+Log: tx/vivgsplit3/boxes_handcut.tsv, 66 rows appended, each note naming its placements.
+**Material: N_f = 18, N_r = 121** (r sample COMPLETE: 138 of 138 logged, whole 121, unsure 17, none 0; per leaf f/r f.102r 4/17, f.103r 4/17, f.201r 1/19,
+f.201v 2/16, f.211r 2/13, f.202r 4/19, f.211v 1/20).
+| run | N_f / N_r | pooled f recall | f precision | F1 | null F1 p99 (200, seed 20261015) | verdict |
+|---|---|---|---|---|---|---|
+| VIV-GSPLIT3B (for comparison) | 18 / 59 | 0.889 | 0.842 | 0.865 | 0.571 | numbers above gate, r sample incomplete |
+| **registered, hand-cut, complete r sample** | **18 / 121** | **0.833 (15/18)** | **0.750 (15/20)** | **0.789** | **0.400** (mean 0.158, max 0.439) | **PASS** (all three gates) |
+| 5-NN distance-weighted (report only) | 18 / 121 | 0.667 | 1.000 | 0.800 | 0.273 | -- |
+Per fold (1-NN, rec/pre): f.102r 1.0/1.0 (N_f 4); f.103r 0.75/0.75 (4); f.202r 1.0/1.0 (4); f.201r 0/0 (1, untestable alone); f.201v 0.5/1.0 (2, untestable alone);
+f.211r 1.0/0.667 (2, untestable alone); f.211v 1.0/0.333 (1, untestable alone). Errors: r->f 5/121 (r042 f.103r L25:23, r069 f.201r L23:41, r113 f.211r L10:33,
+r141 f.211v L01:49, r149 f.211v L21:36), f->r 3/18 (f029 f.103r L35:41, f051 f.201r L18:48, f073 f.201v L29:53). Precision fell from 0.842 to 0.750 as the r
+side doubled (2 new false f in 62 new r), near 3B's report-only arithmetic (~0.70); the null p99 fell more (0.571 -> 0.400), so the margin over the null widened.
+Fix in gsplit.py run3: `r_sample_complete` was hard-coded False (3B); it is now computed (every registered r target in targets.tsv logged whole/unsure/none),
+and `f191_step_runs` requires it. result.json: r_sample_complete True, f191_step_runs True, verdict PASS.
+**Verdict (registered, s.3-4):** PASS on the complete r sample, N_f = 18 >= 12. This licenses the f.191r step (PREREG-VIVGSPLIT Addendum A on hand-cut f.191r g
+tiles, `f191.py --override ... --tag gsplit3 --stats`, (a) strict registered, (b) letter-S report-only) -- **not run here**: the 8 looks reached 80% of the USD 4.5
+cap (8 x 0.45 = 3.60), so a 9th look (the f.191r cut) was not started, per the brief. The f.191r strict run is unchanged (`f191.py --check` exit 0). A classifier
+PASS is not a relabelling licence for any truth leaf and no key row: what it licenses is the registered f.191r step, which is its own job now.
+Reproduce: crops as above (manifest "vivcls", "viv67b", "viv67c" into $VIVGSPLIT3_SCRATCH/p67c, "viv70", "viv70c"); `python3 tx/vivcls/seg.py`;
+`VIVGSPLIT3_SCRATCH=DIR python3 tx/vivgsplit/gsplit.py check3` (exit 0 here); `tx/viv63_f191/f191.py --check` exit 0.
+Requests: openapi.bnf.fr 5 (f206, f207 left, f207 right, f216, f217 native regions; HTTP 200, one at a time >= 3 s; take/release lines). Subagent calls 0.
+Vision: 8 looks by this worker; cost not visible to this session.
+Report what was found and where it was not found; no novelty classified, no depth set.
+Next (one line, not done here): the f.191r step -- hand-cut the f.191r label-g tiles (the 28 tileable + any the map missed) with check looks, then
+`f191.py --override ... --tag gsplit3 --stats` strict and letter-S (~USD 1.5-2: 2 cut + 2 check looks).
