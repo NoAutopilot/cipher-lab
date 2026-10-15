@@ -1,0 +1,30 @@
+== ciphers/mccormick-1999/families/judge/render_ncbe7000_A.txt
+ok   length: got=775, min=700, max=800
+FAIL language: score=-1.852, null_p99=-2.057, real_p05=-0.864, real_median=-0.809, mode=both, N=775
+FAIL words: cover=0.51, min=0.6, real_text_median_cover=0.96
+FAIL - mccormick-1999 (a PASS is a gate for a verifier, not a reading; rule 10)
+== ciphers/mccormick-1999/families/judge/render_ncbe7000_B.txt
+FAIL length: got=302, min=700, max=800
+FAIL language: score=-1.2, null_p99=-1.995, real_p05=-0.892, real_median=-0.814, mode=both, N=302
+ok   words: cover=0.93, min=0.6, real_text_median_cover=0.957
+FAIL - mccormick-1999 (a PASS is a gate for a verifier, not a reading; rule 10)
+== ciphers/mccormick-1999/families/judge/render_target_A.txt
+ok   length: got=775, min=700, max=800
+FAIL language: score=-1.672, null_p99=-2.057, real_p05=-0.864, real_median=-0.809, mode=both, N=775
+ok   words: cover=0.605, min=0.6, real_text_median_cover=0.96
+FAIL - mccormick-1999 (a PASS is a gate for a verifier, not a reading; rule 10)
+== ciphers/mccormick-1999/families/judge/render_target_B.txt
+FAIL length: got=404, min=700, max=800
+FAIL language: score=-1.138, null_p99=-2.002, real_p05=-0.871, real_median=-0.816, mode=both, N=404
+ok   words: cover=0.931, min=0.6, real_text_median_cover=0.958
+FAIL - mccormick-1999 (a PASS is a gate for a verifier, not a reading; rule 10)
+== ciphers/mccormick-1999/families/judge/render_tm8000_A.txt
+ok   length: got=790, min=700, max=800
+FAIL language: score=-1.86, null_p99=-2.064, real_p05=-0.869, real_median=-0.807, mode=both, N=790
+FAIL words: cover=0.489, min=0.6, real_text_median_cover=0.962
+FAIL - mccormick-1999 (a PASS is a gate for a verifier, not a reading; rule 10)
+== ciphers/mccormick-1999/families/judge/render_tm8000_B.txt
+FAIL length: got=318, min=700, max=800
+FAIL language: score=-1.146, null_p99=-2.017, real_p05=-0.876, real_median=-0.813, mode=both, N=318
+ok   words: cover=0.918, min=0.6, real_text_median_cover=0.956
+FAIL - mccormick-1999 (a PASS is a gate for a verifier, not a reading; rule 10)

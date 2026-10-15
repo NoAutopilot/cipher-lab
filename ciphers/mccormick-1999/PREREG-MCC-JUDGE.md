@@ -1,4 +1,4 @@
-# PREREG-MCC-JUDGE (15 Oct 2026, 08:2x UTC by date -u; pushed before any null draw or judge score)
+# PREREG-MCC-JUDGE (15 Oct 2026, 08:04 UTC by date -u; pushed before any null draw or judge score)
 
 Worker MCC-JUDGE (account 1, LANE DEFAULT-A1-0740-15). Follow-ups named by MCC-SUFX (NOTES.md "MCC-SUFX", PREREG-MCC-SUFX.md,
 commit 335740320): (1) tools/judge_plaintext.py on the MCC-SUFX decode; (2) a null that also keeps NCBE's stem, to size how much of

@@ -53,3 +53,10 @@ vs type-mark null max 0.440 / 0.416 / 0.427: reads. TARGET: coverage 0.497 vs ty
 0.400; score per letter -2.940 vs -3.250 and -2.969 (40 nulls each, all four above). Preregistered wording: "the target's
 stems fit the suffix-mark scheme beyond both type-keeping nulls" -- a candidate at M at best, no text, coverage far below
 the control's 0.82-0.89; carried largely by NCBE (read nice) and short function-word stems. No reading offered.
+
+MCC-JUDGE (15 Oct 2026, LANE DEFAULT-A1-0740-15; PREREG-MCC-JUDGE.md): NCBE-stem-keeping null on the MCC-SUFX target, 200
+draws: coverage 0.497 vs max 0.435 (mean 0.372), score per letter -2.940 vs max -3.002 (p = 1/201 each); type-mark null
+re-run at 200: max 0.401 / -2.979. Outcome: "the MCC-SUFX margin is not carried by NCBE alone"; NCBE share of the margin
+0.17 (coverage) / 0.21 (score) -- corrects "carried largely by NCBE" above. judge_plaintext: candidate FAIL (A: language
+-1.672 vs real_p05 -0.864; B: length 404 and language), both shuffled-decode controls FAIL (judge not voided); `en` corpus
+fold spread makes the judge's verdict of unknown reliability. No reading offered.

@@ -821,3 +821,72 @@ Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 
 - [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
 - [x] retry: MCC-SWEEP ran the token anneal's control length sweep (132-8,000 x 3 seeds): reads at no N; masc/homophonic not retried (shuffle floor is the limit, not the setting)
 Verdict: keep going: 1 internal gaps; cheapest next: judge_plaintext on the MCC-SUFX decode and an NCBE-stem-keeping null to size the single-type share of the margin, ~$3
+
+## MCC-JUDGE: judge run + NCBE-stem-keeping null on the MCC-SUFX candidate (15 Oct 2026, 08:00-08:1x UTC by date -u; disk/CPU only)
+Worker MCC-JUDGE (account 1, LANE DEFAULT-A1-0740-15). PREREG-MCC-JUDGE.md pushed (c87ace57a) before any draw or judge score.
+No host requests, no vision calls. Files: `families/judge/` (`ncbe_null.py` with `--selftest`, `analyse.py`, `ncbe_null.json`,
+`ncbe_null.log`, `render_*.txt`, `judge_out.txt`). Reproducibility gate: the target refit gives coverage 0.4973, score per
+letter -2.9400, fitted map identical to MCC-SUFX's (pass).
+
+NCBE-stem-keeping null (`ncbe`: MCC-SUFX's type-mark null with all 18 NCBE spans, 72 of 750 code letters, held in place;
+200 draws, map re-fitted each) beside MCC-SUFX's own type-mark null re-run at 200 draws (`tm`):
+
+| statistic | target | ncbe mean / p95 / max | p vs ncbe | tm mean / max | p vs tm | NCBE share of margin |
+|---|---|---|---|---|---|---|
+| coverage | 0.497 | 0.372 / 0.403 / 0.435 | 0.005 (1/201) | 0.348 / 0.401 | 0.005 | 0.17 |
+| LM score per code letter | -2.940 | -3.058 / -3.027 / -3.002 | 0.005 | -3.089 / -2.979 | 0.005 | 0.21 |
+
+Preregistered outcome (target above the `ncbe` maximum on both): "with NCBE held fixed, the rest of the target's stems still
+fit beyond a shuffle: the MCC-SUFX margin is not carried by NCBE alone". Holding the single type NCBE accounts for about 17%
+(coverage) and 21% (score) of the margin over the type-mark null; the rest sits on the other stems. This corrects the
+"carried largely by NCBE" wording in MCC-SUFX's HYPOTHESES row (that was a reading of the segment list, not a measurement).
+The 200-draw `tm` maxima (0.401, -2.979) leave MCC-SUFX's 40-draw result unchanged (target above both).
+
+Judge (`python3 tools/judge_plaintext.py specs/mccormick-1999.json --file F`; spec: 700-800 letters, language en, word cover
+0.6). Rendering A = read words + unread segments as their code letters; B = read words only. Pasted output, abridged to the
+check lines (full text in `families/judge/judge_out.txt`):
+
+```
+== render_target_A.txt
+ok   length: got=775, min=700, max=800
+FAIL language: score=-1.672, null_p99=-2.057, real_p05=-0.864, real_median=-0.809, mode=both, N=775
+ok   words: cover=0.605, min=0.6, real_text_median_cover=0.96
+FAIL - mccormick-1999 (a PASS is a gate for a verifier, not a reading; rule 10)
+== render_target_B.txt
+FAIL length: got=404, min=700, max=800
+FAIL language: score=-1.138, null_p99=-2.002, real_p05=-0.871, real_median=-0.816, mode=both, N=404
+ok   words: cover=0.931, min=0.6, real_text_median_cover=0.958
+FAIL
+== render_ncbe7000_A.txt (shuffled control)
+FAIL language: score=-1.852, null_p99=-2.057, real_p05=-0.864 ; FAIL words: cover=0.51 ; FAIL
+== render_ncbe7000_B.txt
+FAIL length: got=302 ; FAIL language: score=-1.2, real_p05=-0.892 ; ok words: cover=0.93 ; FAIL
+== render_tm8000_A.txt (shuffled control)
+FAIL language: score=-1.86, null_p99=-2.064, real_p05=-0.869 ; FAIL words: cover=0.489 ; FAIL
+== render_tm8000_B.txt
+FAIL length: got=318 ; FAIL language: score=-1.146, real_p05=-0.876 ; ok words: cover=0.918 ; FAIL
+```
+
+Read: the candidate FAILs the judge in both renderings, as preregistered; neither shuffled control PASSes, so the judge is
+not voided as a gate for this family at this N (ARM-C1). Rendering A's language score (-1.672) sits above both shuffles
+(-1.85, -1.86) and far below real English (p05 -0.864); the word-cover pass (0.605 vs 0.6, shuffles 0.49-0.51) restates the
+coverage statistic above, not a separate test. The `en` corpus has a leave-one-file-out spread of 0.44-0.64
+(tools/data/en/README.md): this FAIL is of unknown reliability by the judge alone, but the gap to real_p05 (0.8 log10 per
+letter) is far larger than any fold shift, and half the letters are unread. No part of the decode is offered as a reading;
+the result is a structural lead (the stems, not only NCBE, fit an English ending-class abbreviation lexicon beyond chance),
+not text. Status unchanged: open.
+
+## Remaining gaps (MCC-JUDGE, 15 Oct 2026)
+Read so far: unmeasured; no reading of either note is accepted, cheap tests 2-5 rate the proposed ones
+- a reading of the two notes - blocker: no-key-material; cheap tests 2-5 above are the logged families, and the Cipher Mysteries thread (all 163 comments, D2-PRINT4) adds no key, crib or new ciphertext
+- the token/nomenclator family at the target's 132 tokens (char-4-gram and word-bigram anneals untestable at N <= 8,000; skeleton lattice drop arm negative; suffix-mark model: target above both type-keeping nulls and above an NCBE-fixed null, NCBE share 17-21%, judge FAIL in both renderings with controls FAIL: MCC-SWEEP, MCC-WORD, MCC-SKEL, MCC-SUFX, MCC-JUDGE) - blocker: not-attempted; the suffix-mark lexicon is plain English, a period shorthand lexicon has not been tried (NOTES MCC-JUDGE); next: the Gregg-lexicon (or another period shorthand abbreviation lexicon) variant of the suffix-mark model with its matched control, corpus not on disk, ~$6
+
+## Escalation (MCC-JUDGE, 15 Oct 2026)
+- [n/a] siblings: no other note by the same writer is known in public (Leads, Web and blog check)
+- [n/a] clear-pages: no clear text by the writer to align is public
+- [n/a] known-keys: no key of any kind is known for these notes
+- [x] print: Web and blog check (2 Oct) and the full Cipher Mysteries thread (D2-PRINT4); no accepted reading in print
+- [ ] key-rebuild: suffix-mark model (MCC-SUFX) target above type, type-mark and NCBE-fixed nulls (MCC-JUDGE), no text, judge FAIL; untried: Gregg/shorthand-lexicon variant (corpus not on disk, ~$6)
+- [x] image-check: FT4b (3 Oct 2026) read note 2 line 10 against the image
+- [x] retry: MCC-SWEEP ran the token anneal's control length sweep (132-8,000 x 3 seeds): reads at no N; masc/homophonic not retried (shuffle floor is the limit, not the setting)
+Verdict: keep going: 1 internal gaps; cheapest next: the Gregg-lexicon variant of the suffix-mark model with its matched control, ~$6
