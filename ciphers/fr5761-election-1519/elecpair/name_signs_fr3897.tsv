@@ -1,0 +1,10 @@
+sign_label	shape_description	reads	both_sided_pairs	shuffle_consistent_per_1000	grade	note
+W	W-like sign	le roy tres-chrestien	6	0	C	pre-registered rule 3+4 met
+dd	double loop	le roy catholique (Latin rex/rege catholicus at 2 slots)	4	8	C	pre-registered rule 3+4 met
+barI	barred I, two cross-bars	Boheme	2	167	M	rule 4: shuffle >= 5%; one further barI slot (f.116r l.27 "prouchain, barI je besoigne") has no printed name
+4	4-like sign with cross-bar	Palatin	2	176	M	rule 4: shuffle >= 5%; shape identity of the two by one reader's eye
+II	two uprights	Couloigne	1	-	M	one pair
+Zheavy	heavy barred Z	Saxe	1	-	M	one pair; distinct from the light cursive par-abbreviation on f.116v
+flag	triangle on a stem	Mayence	1	-	M	one pair; Meance is in clear on f.116v last line
+hash3	triple-barred hash	-	0	-	-	3 slots, Kluckhohn prints no name at any (f.116r l.5, l.6; f.116v l.2); not a name sign on this evidence
+loop	filled loop	-	0	-	-	1 slot (f.116v l.1), no name printed

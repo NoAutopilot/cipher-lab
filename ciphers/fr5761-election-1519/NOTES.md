@@ -822,3 +822,36 @@ but not yet read against the manuscript).**
    permutations under which every C-graded sign would still read one name consistently across its occurrences (the chance that rule 3
    passes with names assigned at random). A sign whose consistency the shuffle reproduces at >= 5% is held at M.
 5. Comparison with key.tsv (fr.5761 ff.50-53 key) is made only after rules 1-4 are applied and written down.
+
+**Result (ELEC-PAIR, after the rule above was pushed in 23615ec36).** Sources: Kluckhohn RTA J.R. I nr. 357, pp.813-815 page images (the letter
+runs onto p.815, ending "Capitaine Josyn"; archive.org `bub_gb_0gFoAAAAMAAJ` n821, n822, n823 at w1800), against fr.3897 ff.116r, 116v
+(btv1b90096539 f142 right half, f143 left half, 2400 px), read by one reader (this worker) on the page images and on value-free strip crops;
+f.117r not re-read (ELEC-357: no name sign there). The French copy follows Kluckhohn's print word for word except at the signs.
+- **17 both-sided pairs, 0 conflicts** (`elecpair/pairs.tsv`, one row per sign slot with the manuscript words either side and the print line).
+  Grades (`elecpair/name_signs_fr3897.tsv`): **W = le roy tres-chrestien, C (6 pairs; shuffle 0/1000)**; **dd = le roy catholique, C
+  (4 pairs, two of them the Latin "rege catholico" / "rex catholicus"; shuffle 8/1000)**; barI = Boheme, M (2 pairs, but shuffle 167/1000
+  >= 5%, held at M by rule 4); 4 = Palatin, M (2 pairs, shuffle 176/1000); II = Couloigne, Zheavy = Saxe, flag = Mayence, M (1 pair each).
+  Joint control: all four >= 2-pair signs consistent in 0/1000 shuffles (`python3 elecpair/pair_control.py --check`, seed 357, exit 0).
+- Unprinted slots (a sign where Kluckhohn prints no word): hash3 x3 (f.116r l.5 "persuasion # luy ay"; l.6 "promission pro # fre de castro";
+  f.116v l.2 "quatuor # pro"), a filled loop (f.116v l.1 "seur pour [loop] quatuor"), one barI (f.116r l.27 "prouchain, barI je besoigne")
+  and a struck hash-like sign at the head of f.116v's last line ("car en verite [sign] je y mets"). So hash3 is not a name sign on this
+  evidence (abbreviation, null or a word Kluckhohn left out: not settled).
+- Corrections to ELEC-357's eye inventory: its f.116v "Z" x2 are the light cursive par-abbreviation ("me l'envoyez par ce porteur", "non
+  moins que par avant"; Kluckhohn prints "par" at both), not the heavy Z (Saxe, f.116r only). Hessen and Meance are written in clear on
+  f.116v, as Kluckhohn prints them; the six names ELEC-WALK listed are not all ciphered here, and the two kings are.
+- Rule 5 comparison with key.tsv (fr.5761 ff.104/110 key), by description only (no key image re-read): Saxe there is a circle on a dash
+  (here a heavy Z), Maguence a double hash HH (here a flag), Catholicque a cross with a small circle (here a double loop), Palatin a hash
+  with a hook (here a 4-like sign with a cross-bar, the nearest of the four). On these descriptions the fr.3897 nr. 357 name signs are not
+  the fr.5761 key's; "den bekannten Chiffren" in Kluckhohn's source line then points to signs he knew from other letters, not to that key.
+  This is M (descriptions against one reader's eye), not an image-to-image comparison.
+- Requests: archive.org 3 (n821, n822, n823 w1800), openapi.bnf.fr 2 (f142, f143 full/2400), all 200. Images and crops in the session
+  scratchpad only, none in git. sha1: n821 a58ed4a8..., n822 719e2ed8..., f142 b1d18f00..., f143 52d1ec7c.... Regen:
+  `https://archive.org/download/bub_gb_0gFoAAAAMAAJ/page/n82{1,2,3}_w1800.jpg`;
+  `https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90096539/f14{2,3}/full/2400,/0/default.jpg`; f.116r = right half of f142, f.116v =
+  left half of f143 (crop x 0-1200 / 1200-2400).
+
+**Verdict (ELEC-PAIR, 15 Oct 2026):** open, unchanged. Two name signs of nr. 357 read at C from Kluckhohn's print with a shuffled-name
+control (W = le roy tres-chrestien, dd = le roy catholique), five more at M; none is the fr.5761 key's sign on the descriptions on file.
+Next: (1) an image-to-image check of the f.116 signs against the fr.5761 f.110 key crops (disk, if look.tsv crops exist; ~1); (2) find
+nr. 383 by bisection from fr.5761 f.172r backwards (ELEC-357's next 2, ~2), whose names Kluckhohn also prints, as a second witness for
+the M signs; (3) other fr.3897 Joachim items (36-38, 62, 64-65, 73) for more occurrences of barI, 4, II, Zheavy, flag.
