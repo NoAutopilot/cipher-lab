@@ -1,0 +1,5 @@
+time	target	hypothesis	occurrences	statistic	null_pos_p95	null_val_p95	verdict	flag
+2026-10-15 14:55	ciphers/matignon-mayenne-1586/orl (f.91 copy, make_orl.py build)	oA=i	20	24.5	33.3	-72.1	reject	non-blind
+2026-10-15 14:55	ciphers/matignon-mayenne-1586/orl (f.91 copy, make_orl.py build)	oB=a	28	72.1	-47.7	-72.1	accept	non-blind
+2026-10-15 14:55	ciphers/matignon-mayenne-1586/orl (f.91 copy, make_orl.py build)	oA=a	20	-159.4	-14.3	-72.1	reject	non-blind
+2026-10-15 14:55	ciphers/matignon-mayenne-1586/orl (f.91 copy, make_orl.py build)	oB=i	28	-106.6	42.2	-72.1	reject	non-blind

@@ -1,4 +1,4 @@
-# PREREG-MAT-ORL (15 Oct 2026, 15:0x UTC by date -u; account-4 worker MAT-ORL, LANE DEFAULT-A4-1441-15)
+# PREREG-MAT-ORL (15 Oct 2026, 14:5x UTC by date -u (corrected from "15:0x", a typing slip; pushed 14:54); account-4 worker MAT-ORL, LANE DEFAULT-A4-1441-15)
 
 Written and pushed before any --try of this job. Brief: `.claude/briefs/runs/2026-10-15-acct4-default-1441-jobs.md` job MAT-ORL
 (MAT-R2 Verdict: re-label the 13 leaves' o by shape from MAT-O3X and MAT-R2's agreed labels, then `decode_key.py --try` oA=i / oB=a
