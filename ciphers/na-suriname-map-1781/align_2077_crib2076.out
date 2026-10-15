@@ -1,0 +1,19 @@
+crib entries 25; 2077 entries 33; targets 5
+REAL accepted pairs 8
+  pair ('2077_L07:g', 'F', 14, 7, 0, 0)
+  pair ('2077_L08:i', 'T4', 11, 7, 1, 0)
+  pair ('2077_L08:m', 'E', 20, 10, 0, 0)
+  pair ('2077_L09:n', 'F', 14, 7, 0, 0)
+  pair ('2077_L11:r', 'F', 15, 9, 0, 1)
+  pair ('2077_L12:t', 'D', 14, 7, 0, 0)
+  pair ('2077_L13:w', 'O', 16, 8, 0, 0)
+  pair ('2077_L17:z.', 'K', 28, 14, 0, 0)
+REAL known-H leave-one-out: pins 28 correct 18 precision 0.643
+SHUFFLE (20 seeds) mean accepted pairs 1.00, mean LOO pins 4.05, mean correct 0.90; per seed [(0, 0, 2), (0, 0, 3), (0, 0, 1), (3, 0, 1), (1, 0, 1), (1, 0, 3), (3, 0, 3), (1, 4, 11), (2, 0, 7), (1, 0, 2), (2, 0, 1), (0, 0, 6), (1, 0, 3), (1, 5, 12), (2, 4, 7), (0, 0, 3), (1, 5, 8), (0, 0, 3), (1, 0, 3), (0, 0, 1)]
+GATE known-H FAIL | GATE shuffle-must-fail PASS
+PINS (U/M positions in accepted pairs):
+  2077_L09:1 s grade M current p -> i  (2077_L08:m) 
+  2077_L08:56 [kappa] grade U current ? -> o  (2077_L08:m) 
+  2077_L11:30 [f-loop] grade M current i -> e  (2077_L11:r) 
+TARGET [d-hook] pins: 0 []
+INSTRUMENT NON-TEST
