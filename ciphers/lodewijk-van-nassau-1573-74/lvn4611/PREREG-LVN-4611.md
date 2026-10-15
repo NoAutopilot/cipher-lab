@@ -97,3 +97,40 @@ declared here): chooses A, B, or another value, graded **M** (never H). Script `
 `lvn4611/insert_p3L00.tsv` (line, position, sign, confidence, alt, why); `../settle.py` inserts those rows ahead of the first p3_L01 row of
 ciphertext_4611.tsv, existing rows not renumbered. Then decode_key.py --check, settle.py --check, lvn4611/settle.py --check; C/H/M
 recounted before and after. 4610 p2_L28/11 not touched.
+
+## Addendum LVN-4611P2: 4611 p2 per page-half (15 Oct 2026, 07:4x UTC by date -u; pushed before any read is opened)
+Job LVN-4611P2 (LANE DEFAULT-A4-0645-15, account 4). Same protocol, control, gate and settle rule as the p1/p3 units above, on WVO 4611 p2,
+in two units (rule 3 per-unit merge): **unit p2a** = the M numeral rows of transcription lines p2_L01-p2_L18 (92 targets), **unit p2b** =
+p2_L19-p2_L33 (161 targets). Each unit has its own 10 controls and its own gate; a unit's settles are applied only if its own control passes.
+p2a first; p2b only if p2a is finished before 08:25 UTC and the job's own estimate of spend (about 1.0 start-up + 0.6 per Sonnet call + my
+placement rounds at about 1.0 each) is at or under 4.5, so p2b (about 4 to 5) cannot cross 80% of the USD 9 cap or the 100-minute box.
+
+Material: WVO 04611.pdf fetched once 07:2x UTC (resources.huygens.knaw.nl, HTTP 200, 3,758,971 bytes, take/release in ROOM.md), p2 rendered
+`pdftoppm -png -r 300 -f 2 -l 2` (2481x3508, sha1 36399838ce5c...). **Line crops (change from p1/p3, placement only):** the committed 150-dpi
+boxes are straight, but the p2 text slopes (fit 0.03-0.057 per px from the 13th physical line down, a drift of 70-125 px over the 2200 px
+text width against an 84 px pitch), so a straight box crosses two physical lines on the right half; this is why the transcription lines
+p2_L13-L33 mix the head of one physical line with the tail of its neighbour. The crops for this job are therefore the 35 deskewed physical
+lines K01-K35 cut by `tools/iiif_lines.py --image <p2 png> --region 250,140,2200,3000 --prefix p2 --deskew --centres $(cat
+lvn4611/p2_centres.txt)` (the centres are the tool's own 33 peaks plus two lines it merged, at 1012 and 2181, region y). Ink runs are numbered
+by `lvn4611/p2_blobs.py`; `lvn4611/blobmap_p2.txt` names each target and control row's physical line and run (chosen by counting tokens on
+the numbered strips and matching the transcription's own neighbours); `lvn4611/p2_crops.py` cuts the tight crop (the run, 3x) and the
+context crop (run +/- 130 px, 2x, blue wedge) from the deskewed line crop. Crops stay in scratch, never in git.
+
+Rows: `lvn4611/build_key_p2.py` (seed 20261015) from `lvn4611/ciphertext_4611_pre_p2.tsv` (= ciphertext_4611.tsv p2 before this job; it
+differs from ciphertext_4611_pre.tsv only at p2_L15/20, 82, now M after LVN-PIN's corpus regeneration, so it is a target here): targets =
+every M numeral row of the unit's lines; A150/B150 from settle_log_4611.tsv ('agree-flagged' rows take A150 = B150 = sign); 10 controls =
+H numeral rows on the unit's lines, `random.Random(20261015).sample`, one look-alike by the seeded one-digit swap; rows shuffled.
+Readers: blind Sonnet subagent calls of about 25 rows (p2a: 4 calls; p2b: 6 or 7 calls), each shown only the tight and context crop per row
+(renamed by row id) and the unlabelled shuffled candidate list; may answer a value not listed, or '?'. Never shown the key, the role, the
+sign, or which pass gave which value. Controls spread over the calls.
+Gate per unit: >= 8/10 controls read exactly as the H value (pooled). Below gate: nothing changes for that unit (non-test).
+Settle rule unchanged (read equals A150 or B150 exactly, no '?'; H when a key_full.tsv code, else M with the new sign; a read matching
+neither stays M). Rows that cannot be placed on a single token (a transcription token with no ink token, two transcription tokens on one
+ink token, a pass duplicate across two lines) are not read, stay M, and are listed in a placement note pushed before the read.
+Apply: `lvn4611/settle.py` and `../settle.py` gain units p2a, p2b (settled/confirmed rows only, same last stage as p1/p3); reading_4611
+regenerated; decode_key.py --check; C/H/M/U recounted before and after. No by-eye re-transcription of the mixed lines enters any file in this
+job (a finding for a later job, logged in NOTES.md).
+Prior work: `tools/prior_work.py lodewijk-van-nassau-1573-74 --item-spec 'wvo=4611;folio=p2' --step-type transcribe --offline` exit 4 at
+07:23 UTC, before any priced read: owed rows are four own-work LEADs (the named next step, the audited reading, LVN-EYE's and this job's
+claims), the Groen t. IV edition LEAD and two generic UNCHECKED solver/Tomokiyo rows, which AUDIT.md section 1 covers at plaintext level;
+none bears on a transcription re-read.
