@@ -1,0 +1,13 @@
+# BAL-169C (15 Oct 2026, account 4): PREREG step 2 key-identity gate per letter, my eye at 2400 px. Gate: >= 75% of placed marked numerals give the
+# key.tsv value. f.169 letter (c345-347): 10/10 PASS. f.144 letter (c298-302): 12/12 PASS (two 65? not counted). La Barde f.107/f.112 (c224, c231) and
+# f.206-207 (c418): no target sign seen, gate not run (nothing to admit).
+letter	canvas	cipher	gloss	keytsv	match
+f169	346	13: 51=	Mr le duc Bernard	13: Mr; 51= duc Bernard	yes
+f169	346	13: 41'	Mr le	13: Mr; 41' le	yes
+f169	346	13' 71' 81'	conser-ver	13' co; 71' se; 81' ve	yes
+f169	346	11' 40' 62' 97'	cette place qui est	11' ce; 40' la; 62' qui; 97' est	yes
+f144	298	26' 51' 65' 41'	generale	26' ge; 51' ne; 65' ra; 41' le	yes
+f144	298	41' 45' 71'	le Masse-	41' le; 45' ma; 71' se	yes
+f144	299	71' 65' / 27' 65' / 41' 19: 65'	sera / agira / le pourra	71' se; 65' ra; 27' gi; 41' le; 19: pour	yes
+f144	302	17' 40' 65'	di- / la / fra-	17' di; 40' la; 65' ra	yes
+f144	301	13: 16	Mr de	13: Mr; 16' de (plain form)	yes

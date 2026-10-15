@@ -1,4 +1,4 @@
-# PREREG BAL-169C (account 4, LANE DEFAULT-A4-0645-15), 15 Oct 2026 09:2x UTC by date -u -- pushed before any fetch or score
+# PREREG BAL-169C (account 4, LANE DEFAULT-A4-0645-15), 15 Oct 2026 09:1x UTC (09:12 by date -u) by date -u -- pushed before any fetch or score
 
 Target: the two f.22r numerals still M: 13: (key.tsv Mr, H) at L03 pos 13 and the 65 at L04 pos 0 (plain form, hypothesis = 65' ra).
 Also logged if seen (not the main test): a glossed bare 7 or 5 (c275-hand question, Baluze 167).

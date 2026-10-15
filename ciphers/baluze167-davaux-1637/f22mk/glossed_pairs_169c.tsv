@@ -1,0 +1,39 @@
+# BAL-169C (15 Oct 2026, account 4): glossed runs on Baluze 169 continuation canvases (btv1b9001488b, full/2400): c346, c345 (Chavigny f.169 letter),
+# c301, c299, c298, c302 (Chavigny f.144 letter), read by my eye with 3x zooms of each target numeral (not blind: I knew key.tsv). Conventions as
+# glossed_pairs.tsv (' = separate rising acute; : = two dots; = overbar; plain = no mark). Only tokens I could place under the gloss and whose mark I
+# could settle; '65?' = a 65 whose acute I could not settle (c298 "le Masserati" L12, a dark stroke right of the 5; c302 "diray" L1, a stroke that may be
+# the gloss's y descender) -- not scored. c347, c231, c224, c418: no 13: and no 65 under a gloss seen at overview scale (not read token by token).
+run	canvas	gloss	pos	sign	unit
+c346a	346	Mr le duc Bernard	1	13:	Mr
+c346a	346	Mr le duc Bernard	2	51=	le duc Bernard
+c346b	346	Mr le duc [Bernard]	1	13:	Mr
+c346b	346	Mr le duc [Bernard]	2	41'	le
+c346c	346	conserver cette place qui est	1	13'	co
+c346c	346	conserver cette place qui est	2	71'	se
+c346c	346	conserver cette place qui est	3	81'	ve
+c346c	346	conserver cette place qui est	4	11'	ce
+c346c	346	conserver cette place qui est	5	40'	la
+c346c	346	conserver cette place qui est	6	62'	qui
+c346c	346	conserver cette place qui est	7	97'	est
+c345a	345	commune	1	13'	co
+c301a	301	Mr de Les[..]	1	13:	Mr
+c301a	301	Mr de Les[..]	2	16	de
+c298a	298	paix generale	1	26'	ge
+c298a	298	paix generale	2	51'	ne
+c298a	298	paix generale	3	65'	ra
+c298a	298	paix generale	4	41'	le
+c298b	298	le Masserati	1	41'	le
+c298b	298	le Masserati	2	45'	ma
+c298b	298	le Masserati	3	71'	se
+c298b	298	le Masserati	4	65?	ra
+c299a	299	sera faite	1	71'	se
+c299a	299	sera faite	2	65'	ra
+c299b	299	agira	1	27'	gi
+c299b	299	agira	2	65'	ra
+c299c	299	le pourra	1	41'	le
+c299c	299	le pourra	2	19:	pour
+c299c	299	le pourra	3	65'	ra
+c302a	302	diray	1	17'	di
+c302a	302	diray	2	65?	ra
+c302b	302	a la france	1	40'	la
+c302b	302	a la france	2	65'	ra

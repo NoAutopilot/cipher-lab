@@ -1,0 +1,6 @@
+sign	value	glossed_n	units	agree	wrong_mark_values	wrong_hits
+13:	Mr	4	{'Mr': 4}	4	['sued', 'co']	0
+65	ra	0	{}	0	-	0
+real 4/4; within-run shuffle (200 seeds) mean 1.74, p95 3, max 4; shuffles >= real: 2/200
+call 13: = Mr: 4/4 -> M
+call 65 = ra: 0/0 -> M
