@@ -574,14 +574,14 @@ class SkelDecoder:
     the path score is the WordBigram total (numbers and single letters are BND). Beam of `beam` previous-word states
     per position; at most `cands` words per skeleton (most frequent first)."""
 
-    def __init__(self, wb, scheme="drop", alpha=3.0, beam=200, cands=10, maxlen=12):
+    def __init__(self, wb, scheme="drop", alpha=3.0, beam=200, cands=10, maxlen=12, keyfn=None):
         self.wb, self.alpha, self.beam = wb, alpha, beam
         idx = {}
         for i, w in enumerate(wb.pool):  # pool is frequency-ordered
-            s = skeleton(w, scheme)
+            s = keyfn(w) if keyfn else skeleton(w, scheme)
             if len(s) <= maxlen and len(idx.setdefault(s, [])) < cands:
                 idx[s].append(i)
-        self.idx, self.maxlen = idx, max(len(s) for s in idx)
+        self.idx, self.maxlen = idx, max(len(s) for s in idx if s)
 
     def decode(self, toks):
         import numpy as np
@@ -775,6 +775,230 @@ def skeleton_run(a, real_toks, words):
     return 0 if ok else 3
 
 
+# ---------------------------------------------------------------- MCC-SUFX: suffix-mark abbreviation model
+
+SUFX_CLASSES = ["ing", "ed", "ly", "s", "e", "y", "d", "t", "n", "r", "other"]
+SUFX_MARKS = ["", "E", "SE", "BE"]   # PREREG-MCC-SUFX: the target's token-final endings of length 1-2 seen >= 10 times, plus no mark
+
+
+def suffix_class(word):
+    """(base, class): the word's ending stripped by fixed rules, longest first -- inflections ing/ed/ly/s(es), then the
+    single final letters e/y/d/t/n/r; 'other' (base = the whole word) when no rule applies or the word is too short."""
+    w = word.lower()
+    for suf, minlen in (("ing", 5), ("ed", 4), ("ly", 4)):
+        if w.endswith(suf) and len(w) >= minlen:
+            return w[:-len(suf)], suf
+    if w.endswith("es") and len(w) >= 4:
+        return w[:-2], "s"
+    if w.endswith("s") and not w.endswith("ss") and len(w) >= 3:
+        return w[:-1], "s"
+    if len(w) >= 2 and w[-1] in "eydtnr":
+        return w[:-1], w[-1]
+    return w, "other"
+
+
+def sufx_key(word, fmap):
+    """code string of a word under mark map fmap (class -> mark): drop-skeleton of the base, then the class's mark."""
+    base, cls = suffix_class(word)
+    return skeleton(base, "drop") + fmap[cls]
+
+
+def build_sufx_control(kind_seq, words, rng, fmap, p_join):
+    """Matched control: as build_skel_control, each code-slot word written as sufx_key(word, fmap); run-on groups
+    with probability p_join. Returns (toks, truth)."""
+    start = rng.randrange(0, len(words) - 4 * len(kind_seq) - 1)
+    pos = start
+    toks, truth = [], []
+    for kind, _ in kind_seq:
+        if kind == "number":
+            toks.append(("number", str(rng.randint(1, 999)))); truth.append(None); pos += 1
+        elif kind == "letter":
+            toks.append(("letter", rng.choice("AI"))); truth.append(None); pos += 1
+        else:
+            grp = [words[pos]]; pos += 1
+            while rng.random() < p_join:
+                grp.append(words[pos]); pos += 1
+            toks.append(("code", "".join(sufx_key(w, fmap) for w in grp))); truth.append(grp)
+    return toks, truth
+
+
+def mark_profile(toks):
+    """share of code tokens whose final mark (longest match among SUFX_MARKS) is each mark; '' = none of them."""
+    c = Counter()
+    n = 0
+    for k, v in toks:
+        if k != "code":
+            continue
+        n += 1
+        m = next((m for m in ("SE", "BE", "E") if v.endswith(m) and len(v) > len(m)), "")
+        c[m] += 1
+    return {m: c[m] / n for m in SUFX_MARKS}
+
+
+def fit_true_map(real_toks, words, rng_seed=7):
+    """generator-only fit of the control's (fmap, p_join) to the target's mark profile and mean letters per code token:
+    every class -> mark map (4^7) scored by L1 distance of the token-final mark profile on a 2,000-token control
+    (p_join 0.5), the best map kept, then p_join fitted on letters per token. No decode, no target score."""
+    import itertools
+    import numpy as np
+    tprof = mark_profile(real_toks)
+    tl = [len(v) for k, v in real_toks if k == "code"]
+    tmean = sum(tl) / len(tl)
+    kinds = tile_kinds(real_toks, 2000)
+    # the profile depends only on the class of each token's last word: class shares from one fixed control draw
+    _, truth = build_sufx_control(kinds, words, random.Random(rng_seed), {c: "" for c in SUFX_CLASSES}, 0.5)
+    finals = Counter(suffix_class(t[-1])[1] for t in truth if t)
+    share = np.array([finals[c] for c in SUFX_CLASSES], float); share /= share.sum()
+    combos = np.array(list(itertools.product(range(len(SUFX_MARKS)), repeat=len(SUFX_CLASSES))), dtype=np.int8)
+    prof = np.stack([(share[None, :] * (combos == j)).sum(axis=1) for j in range(len(SUFX_MARKS))], axis=1)
+    tvec = np.array([tprof[m] for m in SUFX_MARKS])
+    d = np.abs(prof - tvec[None, :]).sum(axis=1)
+    i = int(d.argmin())
+    best = (float(d[i]), {c: SUFX_MARKS[combos[i, j]] for j, c in enumerate(SUFX_CLASSES)},
+            {m: float(prof[i, j]) for j, m in enumerate(SUFX_MARKS)})
+    fmap = best[1]
+    bp = None
+    for p in [x / 20 for x in range(19)]:
+        ct, _ = build_sufx_control(kinds, words, random.Random(rng_seed), fmap, p)
+        c = [len(v) for k, v in ct if k == "code"]
+        d = abs(sum(c) / len(c) - tmean)
+        if bp is None or d < bp[0]:
+            bp = (d, p, sum(c) / len(c))
+    ct, _ = build_sufx_control(kinds, words, random.Random(rng_seed), fmap, bp[1])
+    return {"fmap": fmap, "profile_l1_class_shares": best[0], "control_profile_realised": mark_profile(ct),
+            "class_shares": {c: float(x) for c, x in zip(SUFX_CLASSES, share)}, "profile_l1": best[0], "control_profile": best[2], "target_profile": tprof,
+            "p_join": bp[1], "control_mean_letters": bp[2], "target_mean_letters": tmean}
+
+
+def fit_marks(wb, toks, alpha, beam, passes=3, starts=("", "E")):
+    """the instrument: coordinate ascent over the class -> mark map, each candidate map scored by the lattice decode's
+    total (SkelDecoder with keyfn = sufx_key under that map); starts: every class -> '' and every class -> 'E'.
+    Returns (best fmap, its stats row, decoder)."""
+    cache = {}
+
+    def run(fmap):
+        key = tuple(fmap[c] for c in SUFX_CLASSES)
+        if key not in cache:
+            dec = SkelDecoder(wb, alpha=alpha, beam=beam, keyfn=lambda w: sufx_key(w, fmap))
+            cache[key] = (skel_stats(dec, toks), dec)
+        return cache[key]
+
+    best = None
+    for s0 in starts:
+        fmap = {c: s0 for c in SUFX_CLASSES}
+        cur = run(fmap)[0]["score"]
+        for _ in range(passes):
+            moved = False
+            for c in SUFX_CLASSES:
+                for m in SUFX_MARKS:
+                    if m == fmap[c]:
+                        continue
+                    trial = dict(fmap); trial[c] = m
+                    sc = run(trial)[0]["score"]
+                    if sc > cur + 1e-9:
+                        fmap, cur, moved = trial, sc, True
+            if not moved:
+                break
+        if best is None or cur > best[0]:
+            best = (cur, dict(fmap))
+    row, dec = run(best[1])
+    return best[1], dict(row), dec
+
+
+def shuffle_types(toks, rng, keep_marks=False):
+    """repeated-type-keeping null: the letters of the distinct code TYPES are permuted across types (each type keeps its
+    length), and every occurrence of a type gets its type's new string, so repeated types stay repeated (NCBE x11 stays
+    one type x11). keep_marks: each type's final mark (longest of SE/BE/E, not the whole type) is kept and only the
+    letters before it are permuted."""
+    types = sorted(set(v for k, v in toks if k == "code"))
+
+    def split(v):
+        if keep_marks:
+            m = next((m for m in ("SE", "BE", "E") if v.endswith(m) and len(v) > len(m)), "")
+            return (v[:len(v) - len(m)], m)
+        return (v, "")
+    parts = [split(v) for v in types]
+    letters = [ch for st, _ in parts for ch in st]
+    rng.shuffle(letters)
+    new, p = {}, 0
+    for v, (st, m) in zip(types, parts):
+        new[v] = "".join(letters[p:p + len(st)]) + m; p += len(st)
+    return [(k, new[v]) if k == "code" else (k, v) for k, v in toks]
+
+
+_SUFX = {}
+
+
+def _null_fit(job):
+    """worker for the null fits (fork-shared WordBigram in _SUFX): job = (toks, rng seed, keep_marks)."""
+    toks, seed, km = job
+    return fit_marks(_SUFX["wb"], shuffle_types(toks, random.Random(seed), keep_marks=km), _SUFX["alpha"], _SUFX["beam"])[1]
+
+
+def _null_rows(toks, seeds, km, procs):
+    if procs <= 1:
+        return [_null_fit((toks, s, km)) for s in seeds]
+    import multiprocessing as mp
+    with mp.get_context("fork").Pool(procs) as pool:
+        return pool.map(_null_fit, [(toks, s, km) for s in seeds])
+
+
+def sufx_run(a, real_toks, words):
+    """MCC-SUFX (PREREG-MCC-SUFX.md): control first at N = the target's own (and --n-list), target only with --target
+    and only if the control read at the target's own N (exit 3 otherwise)."""
+    import time
+    wb = WordBigram(corpus_words_from(HELDOUT_EN), a.pool)
+    _SUFX.update(wb=wb, alpha=a.alpha, beam=a.beam)
+    gen = fit_true_map(real_toks, words)
+    out = {"mode": "sufx", "pool_size": a.pool, "alpha": a.alpha, "beam": a.beam, "generator": gen, "controls": {}}
+    print(json.dumps(gen), file=sys.stderr)
+    seeds = [int(x) for x in a.seeds.split(",")]
+    for n in [int(x) for x in a.n_list.split(",")]:
+        runs = []
+        for seed in seeds:
+            t = time.time()
+            ctoks, truth = build_sufx_control(tile_kinds(real_toks, n), words, random.Random(1000 + seed), gen["fmap"],
+                                              gen["p_join"])
+            fmap, r, dec = fit_marks(wb, ctoks, a.alpha, a.beam)
+            r = skel_stats(dec, ctoks, truth); r.pop("decode")
+            tw = [w for t in truth if t for w in t]
+            mark_rec = sum(1 for w in tw if fmap[suffix_class(w)[1]] == gen["fmap"][suffix_class(w)[1]]) / len(tw)
+            row = {"seed": seed, "n_tokens": n, "fitted_map": fmap, "mark_map_recovery": mark_rec, **r}
+            nl = _null_rows(ctoks, [3000 + seed * 100 + i for i in range(a.nulls)], True, a.procs)
+            row["typemark_null_coverage_max"] = max(x["coverage"] for x in nl)
+            row["secs"] = round(time.time() - t, 1)
+            runs.append(row)
+            print(json.dumps(row), file=sys.stderr)
+        mean = sum(r["word_recovery"] for r in runs) / len(runs)
+        read = (mean >= a.gate and all(r["mark_map_recovery"] >= 0.8 for r in runs)
+                and all(r["coverage"] > r["typemark_null_coverage_max"] for r in runs))
+        out["controls"][str(n)] = {"runs": runs, "word_recovery_mean": mean, "read": read}
+        print(json.dumps({"n": n, "word_recovery_mean": mean, "read": read,
+                          "mark_map_recovery": [r["mark_map_recovery"] for r in runs],
+                          "coverage": [r["coverage"] for r in runs],
+                          "typemark_null_max": [r["typemark_null_coverage_max"] for r in runs]}))
+    if a.target:
+        c0 = out["controls"].get(str(len(real_toks)), {})
+        if not c0.get("read"):
+            out["target"] = "not run: control did not read at the target's own N"
+        else:
+            fmap, tr, _ = fit_marks(wb, real_toks, a.alpha, a.beam)
+            tr["fitted_map"] = fmap
+            for name, km, base in (("type_null", False, 5000), ("typemark_null", True, 6000)):
+                nl = _null_rows(real_toks, [base + i for i in range(a.nulls)], km, a.procs)
+                tr[name + "_coverage"] = sorted(x["coverage"] for x in nl)
+                tr[name + "_spl"] = sorted(x["score_per_letter"] for x in nl)
+                tr["coverage_above_" + name + "_max"] = tr["coverage"] > max(tr[name + "_coverage"])
+                tr["spl_above_" + name + "_max"] = tr["score_per_letter"] > max(tr[name + "_spl"])
+            out["target"] = tr
+        print(json.dumps(out["target"] if isinstance(out["target"], str) else
+                         {k: v for k, v in out["target"].items() if k not in ("decode",) and not k.endswith(("_coverage", "_spl"))}))
+    if a.out:
+        Path(a.out).write_text(json.dumps(out, indent=1))
+    ok = all(c["read"] for c in out["controls"].values())
+    return 0 if ok else 3
+
+
 # ---------------------------------------------------------------- main
 
 
@@ -803,6 +1027,10 @@ def main():
                          "or on those plus Holmes+Moby-Dick (in-sample upper bound, diagnostic only)")
     ap.add_argument("--pool", type=int, default=1000, help="wordbigram: candidate word pool (top LM-corpus words)")
     ap.add_argument("--sweeps", type=int, default=200, help="wordbigram: annealing sweeps over all code types")
+    ap.add_argument("--sufx", action="store_true", help="MCC-SUFX: suffix-mark abbreviation model (fitted class -> mark map; "
+                    "uses --pool/--alpha/--beam/--n-list/--seeds/--nulls/--target/--gate)")
+    ap.add_argument("--procs", type=int, default=1, help="sufx: processes for the null fits")
+    ap.add_argument("--generator-only", action="store_true", help="sufx: print the control generator's fit and exit")
     ap.add_argument("--skeleton", action="store_true", help="MCC-SKEL: abbreviation/consonant-skeleton lattice decoder")
     ap.add_argument("--scheme", choices=["drop", "keepfinal"], default="drop", help="skeleton: vowel rule")
     ap.add_argument("--alpha", type=float, default=3.0, help="skeleton: UNK cost in nats per letter")
@@ -831,6 +1059,10 @@ def main():
 
     if a.selftest:
         return selftest(model, pool_words, pool_weights, real_toks, words, frequent)
+    if a.sufx and a.generator_only:
+        print(json.dumps(fit_true_map(real_toks, words), indent=1)); return 0
+    if a.sufx:
+        return sufx_run(a, real_toks, words)
     if a.skeleton:
         return skeleton_run(a, real_toks, words)
     if a.control_only and a.objective == "wordbigram":
