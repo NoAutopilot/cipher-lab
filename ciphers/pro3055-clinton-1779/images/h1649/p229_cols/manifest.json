@@ -1,0 +1,184 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "p229_col1_L01.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0br8md7ck90/full/3200,/0/default.jpg",
+   "source_file": "img873_w3200.jpg (scratchpad, not committed; sha1 5ffbc3a5a644f10a906c6ab3ee9f660a5073e864; fetched 15 Oct 2026, browser UA + Referer https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/873)",
+   "box": [
+    1250,
+    555,
+    1490,
+    1740
+   ],
+   "lines_in_crop": 36,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     15,
+     48,
+     81,
+     114,
+     147,
+     180,
+     213,
+     246,
+     279,
+     312,
+     345,
+     378,
+     411,
+     444,
+     477,
+     510,
+     543,
+     576,
+     609,
+     642,
+     675,
+     708,
+     741,
+     774,
+     807,
+     840,
+     873,
+     906,
+     939,
+     972,
+     1005,
+     1038,
+     1071,
+     1104,
+     1137,
+     1170
+    ]
+   },
+   "date": "15 Oct 2026",
+   "crop_sha1": "054522159ee830d97b52310ea9263104bb9eadbf",
+   "committed": false
+  },
+  {
+   "crop": "p229_col3_L01.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0br8md7ck90/full/3200,/0/default.jpg",
+   "source_file": "img873_w3200.jpg (scratchpad, not committed; sha1 5ffbc3a5a644f10a906c6ab3ee9f660a5073e864; fetched 15 Oct 2026, browser UA + Referer https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/873)",
+   "box": [
+    1580,
+    1255,
+    1815,
+    1880
+   ],
+   "lines_in_crop": 19,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     15,
+     48,
+     81,
+     114,
+     147,
+     180,
+     213,
+     246,
+     279,
+     312,
+     345,
+     378,
+     411,
+     444,
+     477,
+     510,
+     543,
+     576,
+     609
+    ]
+   },
+   "date": "15 Oct 2026",
+   "crop_sha1": "d413c31055706c12d8eb4c56a343af37f43abed5",
+   "committed": false
+  },
+  {
+   "crop": "p229_col4_L01.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0br8md7ck90/full/3200,/0/default.jpg",
+   "source_file": "img873_w3200.jpg (scratchpad, not committed; sha1 5ffbc3a5a644f10a906c6ab3ee9f660a5073e864; fetched 15 Oct 2026, browser UA + Referer https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/873)",
+   "box": [
+    1840,
+    1255,
+    2075,
+    1880
+   ],
+   "lines_in_crop": 19,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     15,
+     48,
+     81,
+     114,
+     147,
+     180,
+     213,
+     246,
+     279,
+     312,
+     345,
+     378,
+     411,
+     444,
+     477,
+     510,
+     543,
+     576,
+     609
+    ]
+   },
+   "date": "15 Oct 2026",
+   "crop_sha1": "e52362b2f4380d3a2a0d810afd4175b31df5f760",
+   "committed": false
+  },
+  {
+   "crop": "p229_col2_L01.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0br8md7ck90/full/3200,/0/default.jpg",
+   "source_file": "img873_w3200.jpg (scratchpad, not committed; sha1 5ffbc3a5a644f10a906c6ab3ee9f660a5073e864; fetched 15 Oct 2026, browser UA + Referer https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/873)",
+   "box": [
+    1580,
+    592,
+    1785,
+    752
+   ],
+   "lines_in_crop": 5,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     15,
+     48,
+     81,
+     114,
+     147
+    ]
+   },
+   "date": "15 Oct 2026",
+   "crop_sha1": "d5a7153f1b1236c78cd8229dfc7a5245812f367a",
+   "committed": false
+  }
+ ],
+ "regen": "curl -A <browser UA> -e https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/873 -o img873_w3200.jpg https://image-uab.canadiana.ca/iiif/2/69429%2Fc0br8md7ck90/full/3200,/0/default.jpg; then per column N:R 1:1250,555,240,1185 2:1580,592,205,160 3:1580,1255,235,630 4:1840,1255,235,630: python3 tools/iiif_lines.py --image img873_w3200.jpg --region R --out p229_cols --prefix p229_colN --centres 15,48,...(15+33k, within the region height) --lines-per-crop 40 --overlap 40 (CLIN-3004)"
+}
