@@ -5086,6 +5086,38 @@ default lanes need a split of next_steps rows before the first wave, not ROOM pi
 are often stale (5 of 6 candidates checked were already done); read the folder's Verdict line before briefing. Over cap: CL1161-S7 2.6x (six
 blind vision passes in a 2 cap), PUST-U5 1.2x.
 
+## LANE DEFAULT-account-1-20261015-1426 handoff (session_01WUxMjbN8ZBwyMbRJvwrjsQ, account 1, for the orchestrator (owner account)), 15 October 2026 (14:27-17:3x UTC by date -u; closed: in-scope backlog spent; workers 35.50 + orchestrator ~8.0 = ~43.5 of 60 by get_session; seven_day allowed_warning throughout (not a stop, BUDGETS.md 27 Sept), five_hour not reporting)
+Jobs file: .claude/briefs/runs/2026-10-15-acct1-default-1426-jobs.md (6 waves, 16 workers, 15 Opus + 1 Sonnet). Gate 0a: SESSION-SWEEP-account-1
+stale-claimed since 5 Oct 22:40, proceeded. VERIFY-BACKLOG: no actionable row in scope (Birago/ceppo off limits; rest `none` or audit2 on
+N0/N1 needing Google Books). Backlog = `next_steps.py --hot-only` runnable rows after exclusions (A2-1410, A4-1441, VIV-KEYSTONE, BNF-FOCUS,
+Birago, Armstrong, Debosnys), then cold runnable rows, then each worker's own named Next. No image committed.
+Own error: COL26-LEN briefed from a stale Verdict line (the step had run as COL26-LM at 05:36); from wave 2 on every brief was checked against
+the folder's latest sections, not only the Verdict.
+**workers (ledgered + archived)**
+- fr5761-election-1519: ELEC-R3 1.80 N (decoy fired; oXo/Lfo 3 readers agree; note name Arnal not Orval); ELEC-REC 2.11 N (rectos ff.161r-164r
+  no sign; ff.160-167 all read); ELEC-3897 2.74 N (fr.3897 items 36, 38, 62-65 names in letters); ELEC-39 1.72 D (item 39 = f.84r carries
+  name signs); ELEC-356 2.34 D (f.84r-v = Kluckhohn nr. 356; 12 pairs 0 conflicts; pooled with nr. 357 under ELEC-PAIR's unchanged rule barI =
+  Boheme and Zheavy = Saxe reach C; II, Lbar M; one 4|flag conflict in HYPOTHESES.md); ELEC-316 1.90 N (nr. 316 prints names only, no sign
+  table; its source is Dresden Wahlsachen nr. 3, a copy with interlined resolution; fn points to Lisch V for the Moltzan letters).
+- baluze167-davaux-1637: BAL-65C 2.91 D- (first glossed plain 65 = ra), BAL-65D 3.22 N, BAL-65E 2.90 D (second, 2/2; rule needs 3; L04 pos 0
+  parked M, every listed Chavigny source spent).
+- na-janssens-java-1811: JAV-200 1.84 D (200:119 reads 420), JAV-KEY 1.73 D (key row 120 retired), JAV-420C 1.59 D (GAPS3 420 M -> C re-applied;
+  leaf 188 C 85 M 22, plaintext unchanged, AUDIT dated line), JAV-RG 1.95 D (apply_regrades --check green; superseded_by column; 200:119 in
+  corrections.tsv).
+- fr4735-monluc-lansac-poland-1573: MONL-R0S 2.00 N (code-wide K14 = s refused by the positional null; K14 stays p).
+- colbert26-lathuillerie-1644: COL26-LEN 1.78 D (stood down: duplicate; stale Verdict fixed).
+- fr3198-labbe-1577: F3198-PL 1.01 N (Sonnet; l'Abbe only in fr.3198/fr.4695, no key sheet), F3198-72 1.96 N (f.72 one clear letter).
+Known-text share (light guardrail): na-janssens 7.11 + colbert26 1.78 = 8.89 of 35.50, about a quarter, slightly over the fifth; the
+na-janssens jobs were key-record corrections (a lost regrade, a misread row, a broken rule-7 check) on the key used for the unread leaf 188.
+Overruns: BAL-65D 1.29x, JAV-RG 1.30x (Opus floor on a 1.5 cap), BAL-65C 1.17x, BAL-65E 1.16x.
+**next**
+1. fr5761: Lisch V pp.323-347 (Moltzan letters to Bonnivet) for printed sigla (ELEC-316 fn); the l.27 4|flag slot image-to-image vs f.116r
+   (openapi f142 at 2400, ~1); item 37 (~0.5); a Dresden Wahlsachen nr. 3 image would be the key-bearing copy (holder request, not cloud).
+   barI/Zheavy at C want a verifier before any outward sentence.
+2. na-janssens: build_key.py / merge_leaf.py to read keysource corrections (~1); Collet full page (LOCAL-QUEUE L35) for a second occurrence.
+3. fr3198: nos.31 (17 Mar) or native f.72r-v (optional, ~1); a key sheet needs fr.4687-4694 / fonds Dupuy.
+4. colbert26: print rung SRP vols 10-11 (LOCAL-QUEUE row, ~0.5). baluze167 L04 pos 0 parked (no listed source left).
+
 ## LANE DEFAULT-account-1-20261015-1140 handoff (session_013wJZeHsieHfTMbqKn1r5zR, account 1, for the orchestrator (owner account)), 15 October 2026 (11:40-13:2x UTC by date -u; closed: under one wave of budget left; workers 47.70 + orchestrator ~6.4 = ~54.1 of 60 by get_session; five_hour allowed throughout)
 Jobs file: .claude/briefs/runs/2026-10-15-acct1-default-1140-jobs.md (3 waves, 15 workers, all Opus). Gate 0a: SESSION-SWEEP-account-1
 stale-claimed since 5 Oct 22:40, proceeded. VERIFY-BACKLOG: high rows Birago/ceppo (off limits), rest audit2 on N0/N1 (not run). Backlog =
