@@ -1,0 +1,58 @@
+inv	scan	sheet	tile	sha1	content (by eye at sheet size, M)
+9450	4	01	K	3b712aa129db27bb9edcf85d77b2c40c6ffaac48	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	7	01	A	84b78572b1fc5e596b11ab9c2a637a7e55c36b95	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	10	01	D	b75498bf42eec44d649e23a09f5f7227b23c6287	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	13	01	H	5376acd5aa738d4a6b2cbab4b176d23ae59c145e	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	16	01	L	77e15bb6700e2d3ccab9f2ead73ec3e4ab229b4e	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	19	01	J	33ce34ad9cea7f8178ea6d1750ced32bb2997558	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	22	01	E	1755b98c35d98e9daacf288a127f71900133b80e	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	25	01	G	ee21c5ab10a014c60df414cc877ab42b8219a556	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	28	01	C	4f8b667e9b1e40afcf9723bd6d867ce2dd75097c	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups; one article struck through
+9450	31	02	D	282d958c86f406bf55545d9a7e75d0c958bb275d	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	34	02	H	b25a70dabb0bc186b3dedcc4db38c42426034408	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	37	02	C	666960771c5dafd5413d5c1d793b1974cbc10a8e	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	40	02	G	d0adcafa79221aac9660dc59bafc158b6443e6cf	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	43	02	L	bded5a5cea248466681c5e9bc82be785d243e628	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	46	02	K	bebdbd4a55a4a9b506dd4603ee9eafd3061e4906	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	49	02	A	b10b0446fe38b1e8031f2d589104000bebef12bc	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	52	02	I	3ec470f567f4b9e3c6161dd832f6c299dda0a5d2	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	55	02	J	06b266ccef1d31b06fa029f6293f23a9e02bb931	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	58	03	B	54f967f90b8f8fdf24c3a79c262d5c3c6b6805b3	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	61	03	F	db43a499504d2c6ba11b400466508a893524ff41	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	64	03	C	a089c40ba6bb660eadf8ab227d206257e6476725	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	67	03	J	f3baab468935ba70ac8cbb6d1576e949184a26f6	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9450	70	03	K	2892b1d88ae65d2314faba5d6bb43dea677cf5d6	Dutch numbered articles (Intendit), prose with margin notes; no numeral groups
+9451	4	03	H	07bebb2befc14430f9be40fe6da143ea96bf05f9	blank opening
+9451	7	03	A	e3019aa29a391c78c0c4289df4342cd22be29098	address leaf with red seal + dense Dutch letter dated 1618; no numeral groups
+9451	10	03	D	014ae402e0310db40b19233dc41a4a21e367abac	Dutch memorandum page with paragraphs and notes, right blank; no numeral groups
+9451	13	03	I	1ff63eda75fbe598e91847532b47db5fa4c39d70	address leaf with red seal + dense Dutch letter dated 1618; no numeral groups
+9451	16	04	C	8123771ee9cf9ed8a7492b2e54243e3afa6d7ee4	Dutch letter close signed, dated closing paragraphs in prose; no numeral groups
+9451	19	04	I	f88099a2b77fccd2ad4adfd3b3afd6eaded30e51	address leaf with red seal + Dutch letter opening 'Myn Heer', dated 1618-1619; no numeral groups
+9451	22	04	E	c8e8381ca9ce7a792600ee37f6ce0862cf2980c3	Dutch letter close signed, dated closing paragraphs in prose; no numeral groups
+9451	25	04	D	c577f1f544c4cb8b88c9387eb9aa9bb18daa8d3a	address leaf with red seal + Dutch letter opening 'Myn Heer', dated 1618-1619; no numeral groups
+9451	28	04	K	adb2300ba90f4b81a632cddb9eaffc0141062d87	Dutch letter close signed, dated closing paragraphs in prose; no numeral groups
+9451	31	04	B	d62bab785b3d6b745e5c8a860975006c461fbe3a	address leaf with red seal + Dutch letter opening 'Myn Heer', dated 1618-1619; no numeral groups
+9451	34	04	A	32c487e454a6a4baaa25aa32231214ef7152c636	dense Dutch letter prose 2pp; no numeral groups
+9451	37	04	J	a5f4e29700e1bd70362dacfb2bbc8dc9e86f8982	Dutch letter close signed, dated closing paragraphs in prose; no numeral groups
+9451	40	04	G	deb0b8c909212005dfc83b7e1094e97e77425b15	dense Dutch letter prose 2pp; no numeral groups
+9451	43	05	I	2196c077e769bc4423677959f0ba7002d20c0918	address leaf with docket (1612-1618) + Dutch letter 'Myn Heer', dense prose, signed close; no numeral groups
+9451	46	05	A	b75325001a9d6f13f1ca504bffd14993db90b575	address leaf with docket (1612-1618) + Dutch letter 'Myn Heer', dense prose, signed close; no numeral groups
+9451	49	05	L	ecd9baf2dcfe3476c9d15be9611ec457c3a01484	Dutch letter close signed, right blank; no numeral groups
+9451	52	05	E	391187ed96861cec512d0cab8217d03d23a75892	address leaf with docket (1612-1618) + Dutch letter 'Myn Heer', dense prose, signed close; no numeral groups
+9451	55	05	C	bb9774582890ba343a754aa5181d22ecaec0ee9e	Dutch prose 2pp; no numeral groups
+9451	58	05	B	4bc32d57722c9751b7b634543ab83439e54b3803	single folded wrapper, address only
+9453	4	05	G	2c39d5efd622764397fff87f89108f5d929aa4db	address leaf with docket (1612-1618) + Dutch letter 'Myn Heer', dense prose, signed close; no numeral groups
+9453	7	05	K	1d41bcdc585e47b740f816ce010612ecb872a8b0	address leaf with docket (1612-1618) + Dutch letter 'Myn Heer', dense prose, signed close; no numeral groups
+9453	10	05	J	ff2285a1f589853803f06b602a6cba55a18668f6	address leaf with docket (1612-1618) + Dutch letter 'Myn Heer', dense prose, signed close; no numeral groups
+9453	13	06	H	70a3fe84805ce04b44bca54fdcefbe6cacc8b132	address leaf numbered 'B n', docket 1616-1617 + Dutch letter 'Myn Heer', dense prose with margin notes; no numeral block at sheet size
+9453	16	06	A	93e194b6244e21a59b581612718deba6b162ce90	address leaf numbered 'B n', docket 1616-1617 + Dutch letter 'Myn Heer', dense prose with margin notes; no numeral block at sheet size
+9453	19	06	G	1d044f345bccce3e95d0ac74525e228e07fd0661	address leaf numbered 'B n', docket 1616-1617 + Dutch letter 'Myn Heer', dense prose with margin notes; no numeral block at sheet size
+9453	22	06	E	202825726ebf08b72ccc9d07f91775f523f3a43e	address leaf numbered 'B n', docket 1616-1617 + Dutch letter 'Myn Heer', dense prose with margin notes; no numeral block at sheet size
+9453	25	06	I	2789e39979e44bebee4ed4efc7683b6495d42ba8	address leaf numbered 'B n', docket 1616-1617 + Dutch letter 'Myn Heer', dense prose with margin notes; no numeral block at sheet size
+9453	28	06	K	0809164db3bf79fa2327befd5ddfa8fb4e3bba0c	address leaf numbered 'B n', docket 1616-1617 + Dutch letter 'Myn Heer', dense prose with margin notes; no numeral block at sheet size
+9453	31	06	L	c1ca700691f5f0d7095d9b37403012d3788d511b	address leaf numbered 'B n', docket 1616-1617 + Dutch letter 'Myn Heer', dense prose with margin notes; no numeral block at sheet size
+9453	34	06	D	3eaf7db9b365d557d029ad3b0e4a0aaf90a459dc	address leaf numbered 'B n', docket 1616-1617 + Dutch letter 'Myn Heer', dense prose with margin notes; no numeral block at sheet size
+9453	37	06	B	21c7505f0eea47ce505d9a856606962fb3cf22ca	address leaf numbered 'B n' + paragraphed Dutch memorandum; no numeral block at sheet size
+9453	40	07	E	7ab5fb897c856e83d912002c54c243afb142bbb5	Dutch memorandum in two columns with margin notes; no numeral groups
+9453	43	07	A	3e764e1b032586d10dc38bea154136dab2171532	address leaf numbered 'B 11' + Dutch prose letter, notes at foot; no numeral groups
+9453	46	07	D	1259cbfe820f443fe0b237a51b95826debb7ff56	single wrapper/back with a signature or paraph
