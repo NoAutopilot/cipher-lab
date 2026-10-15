@@ -667,5 +667,16 @@
   "crops": "images/scratch268b/crops/c268b_L01-L05_s1/s2.jpg (untracked) = c268 L06-L10; segments x 0-1700 and 1400-3100 of the region after a -3.25 deg deskew",
   "regen": "sh regen_monlc268b.sh",
   "requests": "openapi.bnf.fr 4 (overview 1000 px, two discarded regions that cut L06/L10, this region)"
+ },
+ "monll11": {
+  "date": "15 Oct 2026",
+  "job": "MONL-L11",
+  "source_url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b9060724s/f268/600,2060,3100,1400/max/0/default.jpg",
+  "source_file": "images/scratch268c/src_c268_600_2060_3100_1400.jpg (untracked)",
+  "size": 637262,
+  "sha1": "9d4fb11338fe1cb407f8fe2529d8532ccaddb0d3",
+  "crops": "images/scratch268c/l11/c268c_L11-L15_s1/s2.jpg (untracked) = c268 L11-L15 (bands 6-10 of 12; bands 1-5 reproduce MONL-C268B's L06-L10 centres 110/217/323/425/529 vs 109/217/322/426/528); segments x 0-1700 and 1400-3100 after a -3.25 deg deskew",
+  "regen": "sh regen_monll11.sh",
+  "requests": "openapi.bnf.fr 2 (region 600,2600,3100,820 discarded: L10 sat cut at its top edge after deskew, and the full-height region lets bands 1-5 be matched to MONL-C268B; this region)"
  }
 }

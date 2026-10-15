@@ -1,0 +1,179 @@
+line	pos	sign	conf	pass_a	pass_b	how
+L11	1	K14	H	K14	K14	both passes
+L11	2	K04	M	K12	K04	eye: straight stem (K04|K12 rule); = B
+L11	3	K36	H	K36	K36	both passes
+L11	4	K29	H	K29	K29	both passes
+L11	5	K37	H	K37	K37	both passes
+L11	6	K66	H	K66	K66	both passes
+L11	7	K49	H	K49	K49	both passes
+L11	8	?h_bar	M	?h_bar	K68	eye: h with a stroke through the stem, folder convention ?h_bar; = A (B K68)
+L11	9	K35	H	K35	K35	both passes
+L11	10	K15	H	K15	K15	both passes
+L11	11	K40	H	K40	K40	both passes
+L11	12	K11	M	K10	-	eye: cross with a top loop; = B
+L11	13	K01	M	K12	K12	eye: round g with left-hooked tail; = B (A K12); A/B misaligned here, B reads K11 K01 K04 K12 for A K10 K12 K04 K04
+L11	14	K04	M	K04	-	eye unsure (curving or straight); both passes K04 at this slot
+L11	15	K04	M	K04	-	eye: long straight stem; = A (B K12)
+L11	16	K05	H	K05	K05	both passes
+L11	17	K15	H	K15	K15	both passes
+L11	18	K19	H	K19	K19	both passes
+L11	19	K05	H	K05	K05	both passes
+L11	20	K14	H	K14	K14	both passes
+L11	21	K29	H	K29	K29	both passes
+L11	22	K33	H	K33	K33	both passes
+L11	23	K04	H	K04	K04	both passes
+L11	24	K32	H	K32	K32	both passes
+L11	25	K05	H	K05	K05	both passes
+L11	26	K10	H	K10	K10	both passes
+L11	27	K52	H	K52	K52	both passes
+L11	28	K39	H	K39	K39	both passes
+L11	29	K05	H	K05	K05	both passes
+L11	30	K38	H	K38	K38	both passes
+L11	31	K10	H	K10	K10	both passes
+L11	32	K63	H	K63	K63	both passes
+L11	33	K26	H	K26	K26	both passes
+L11	34	K37	H	K37	K37	both passes
+L11	35	K10	H	K10	K10	both passes
+L11	36	K29	H	K29	K29	both passes
+L12	1	K36	H	K36	K36	both passes
+L12	2	K05	H	K05	K05	both passes
+L12	3	K15	H	K15	K15	both passes
+L12	4	K19	H	K19	K19	both passes
+L12	5	K05	H	K05	K05	both passes
+L12	6	K10	H	K10	K10	both passes
+L12	7	K33	H	K33	K33	both passes
+L12	8	K12	H	K12	K12	both passes
+L12	9	K14	H	K14	K14	both passes
+L12	10	K36	H	K36	K36	both passes
+L12	11	K05	H	K05	K05	both passes
+L12	12	K29	H	K29	K29	both passes
+L12	13	K07	H	K07	K07	both passes
+L12	14	K12	H	K12	K12	both passes
+L12	15	K26	H	K26	K26	both passes
+L12	16	K35	H	K35	K35	both passes
+L12	17	K05	H	K05	K05	both passes
+L12	18	K06	H	K06	K06	both passes
+L12	19	K09	H	K09	K09	both passes
+L12	20	K10	H	K10	K10	both passes
+L12	21	K40	H	K40	K40	both passes
+L12	22	?x[looped_q]	M	?x[looped_q]	?x[q]	A/B split, crop does not settle it: pass A
+L12	23	K05	H	K05	K05	both passes
+L12	24	K15	M	K15	K64	A/B split, crop does not settle it: pass A
+L12	25	K35	H	K35	K35	both passes
+L12	26	K05	H	K05	K05	both passes
+L12	27	K26	H	K26	K26	both passes
+L12	28	K63	H	K63	K63	both passes
+L12	29	K62	H	K62	K62	both passes
+L12	30	K33	H	K33	K33	both passes
+L12	31	K34	H	K34	K34	both passes
+L12	32	K26	H	K26	K26	both passes
+L12	33	K68	H	K68	K68	both passes
+L12	34	K12	H	K12	K12	both passes
+L12	35	K12	H	K12	K12	both passes
+L12	36	K14	H	K14	K14	both passes
+L13	1	K35	M	K68	K35	eye: plain h-form, no crossbar; = B
+L13	2	K05	H	K05	K05	both passes
+L13	3	K11	H	K11	K11	both passes
+L13	4	K41	H	K41	K41	both passes
+L13	5	K29	H	K29	K29	both passes
+L13	6	K30	H	K30	K30	both passes
+L13	7	K37	H	K37	K37	both passes
+L13	8	K14	H	K14	K14	both passes
+L13	9	K33	H	K33	K33	both passes
+L13	10	K62	H	K62	K62	both passes
+L13	11	K05	H	K05	K05	both passes
+L13	12	K19	H	K19	K19	both passes
+L13	13	K39	H	K39	K39	both passes
+L13	14	K04	H	K04	K04	both passes
+L13	15	K05	H	K05	K05	both passes
+L13	16	K37	H	K37	K37	both passes
+L13	17	K01	H	K01	K01	both passes
+L13	18	K09	H	K09	K09	both passes
+L13	19	?x[epsilon]	H	?x[epsilon]	?x[epsilon]	both passes
+L13	20	K37	H	K37	K37	both passes
+L13	21	K26	M	?double_slash	K26	eye: one long stroke, not //; = B
+L13	22	K14	H	K14	K14	both passes
+L13	23	K37	H	K37	K37	both passes
+L13	24	K05	H	K05	K05	both passes
+L13	25	K19	H	K19	K19	both passes
+L13	26	K39	H	K39	K39	both passes
+L13	27	K05	H	K05	K05	both passes
+L13	28	K62	H	K62	K62	both passes
+L13	29	K05	H	K05	K05	both passes
+L13	30	K26	M	?double_slash	K26	eye: one long stroke, not //; = B
+L13	31	K63	M	K19	K63	eye: z with swash below; = B (A K19); possible C-curl K38 form, unsettled
+L13	32	K15	H	K15	K15	both passes
+L13	33	K39	H	K39	K39	both passes
+L13	34	K33	H	K33	K33	both passes
+L13	35	K04	H	K04	K04	both passes
+L14	1	?x[looped_initial]	M	?x[large_looped_initial]	?x[large_looped_hook_with_tilde_above]	A/B split, crop does not settle it: pass A
+L14	2	K26	H	K26	K26	both passes
+L14	3	K07	H	K07	K07	both passes
+L14	4	K12	M	K12	K04	eye: curving descender; = A
+L14	5	K36	M	K36	K14	eye: stem with diamond foot; = A
+L14	6	K04	M	K12	K04	eye: straight stem; = B
+L14	7	K05	H	K05	K05	both passes
+L14	8	K25	H	K25	K25	both passes
+L14	9	K26	H	K26	K26	both passes
+L14	10	K34	H	K34	K34	both passes
+L14	11	K36	M	K36	K14	eye: stem with diamond foot; = A
+L14	12	K12	H	K12	K12	both passes
+L14	13	K12	H	K12	K12	both passes
+L14	14	K04	H	K04	K04	both passes
+L14	15	K36	M	K36	K14	eye: stem with diamond foot; = A
+L14	16	K26	H	K26	K26	both passes
+L14	17	K10	H	K10	K10	both passes
+L14	18	K37	H	K37	K37	both passes
+L14	19	K06	H	K06	K06	both passes
+L14	20	?x[g_like_blotted]	M	?x[g-like]	?x[blotted_g-like_sign]	A/B split, crop does not settle it: pass A
+L14	21	?x[ink_blot]	M	?x[ink_blot]	?x[black_ink_blot]	A/B split, crop does not settle it: pass A
+L14	22	K36	M	K36	K14	eye: stem with diamond foot; = A
+L14	23	K01	H	K01	K01	both passes
+L14	24	K09	H	K09	K09	both passes
+L14	25	K16	H	K16	K16	both passes
+L14	26	K05	H	K05	K05	both passes
+L14	27	K04	M	K12	K04	eye: long straight stem; = B
+L14	28	K39	M	K19	K39	eye: y-form; = B
+L14	29	K36	M	K36	K14	eye: stem with diamond foot; = A
+L14	30	K33	H	K33	K33	both passes
+L14	31	K34	H	K34	K34	both passes
+L14	32	K04	H	K04	K04	both passes
+L14	33	K37	H	K37	K37	both passes
+L15	1	K06	H	K06	K06	both passes
+L15	2	K16	H	K16	K16	both passes
+L15	3	K22	H	K22	K22	both passes
+L15	4	K04	H	K04	K04	both passes
+L15	5	K19	H	K19	K19	both passes
+L15	6	K05	H	K05	K05	both passes
+L15	7	K26	H	K26	K26	both passes
+L15	8	K12	H	K12	K12	both passes
+L15	9	K62	M	K11	K62	eye: cross with loop to the upper right; = B
+L15	10	K05	H	K05	K05	both passes
+L15	11	K14	H	K14	K14	both passes
+L15	12	K62	H	K62	K62	both passes
+L15	13	K26	H	K26	K26	both passes
+L15	14	K37	H	K37	K37	both passes
+L15	15	K38	H	K38	K38	both passes
+L15	16	K05	H	K05	K05	both passes
+L15	17	K36	H	K36	K36	both passes
+L15	18	K62	M	K11	K62	eye: cross with loop to the upper right; = B
+L15	19	K26	H	K26	K26	both passes
+L15	20	K37	H	K37	K37	both passes
+L15	21	K05	H	K05	K05	both passes
+L15	22	K14	H	K14	K14	both passes
+L15	23	?double_slash	H	?double_slash	?double_slash	both passes
+L15	24	K36	H	K36	K36	both passes
+L15	25	K19	H	K19	K19	both passes
+L15	26	K38	H	K38	K38	both passes
+L15	27	K63	H	K63	K63	both passes
+L15	28	K56	M	K56	K06	A/B split, crop does not settle it: pass A
+L15	29	K35	M	K35	K26	A/B split, crop does not settle it: pass A
+L15	30	K66	M	K66	K17	A/B split, crop does not settle it: pass A
+L15	31	K05	H	K05	K05	both passes
+L15	32	K14	H	K14	K14	both passes
+L15	33	K33	H	K33	K33	both passes
+L15	34	K63	H	K63	K63	both passes
+L15	35	K36	H	K36	K36	both passes
+L15	36	K39	H	K39	K39	both passes
+L15	37	K66	H	K66	K66	both passes
+L15	38	K05	H	K05	K05	both passes
