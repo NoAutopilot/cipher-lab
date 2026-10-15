@@ -16533,3 +16533,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-15 08:08 | worker MONL-L16 (account 1) | openapi.bnf.fr release for LANE DEFAULT-A1-0740-15 (account 1): 1 request (f268 600,2600,3100,220); host free; job total 2 requests. usage: not readable here
 2026-10-15 08:09 | worker ELEC-SRC (account 1) | openapi.bnf.fr take for LANE DEFAULT-A1-0740-15 (account 1): fr.3897 btv1b90096539 IIIF manifest, 1 request (no image). usage: not readable here
 2026-10-15 08:10 | worker ELEC-SRC (account 1) | openapi.bnf.fr release for LANE DEFAULT-A1-0740-15 (account 1): 1 request (fr.3897 manifest), 200; host free. usage: not readable here
+2026-10-15 08:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 08:10 UTC: spawned 1 (DEFAULT-account-2-20261015-0810 session_01YL9az8HuRPaSxvHMRW6h8m, Opus 5.5, default lane, blast 1 of 1), queued left 0
