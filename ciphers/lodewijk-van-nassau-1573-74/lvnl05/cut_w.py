@@ -1,5 +1,6 @@
 # LVN-L05W: wider re-cut of LVN-L05's six crop pairs (same PREREG 7e90dde79). Each crop holds the token plus a neighbour each side
-# (word crops with their neighbours); 5x Lanczos, grey; scratch only, no image in git. Usage: python3 lvnl05/cut_w.py SCRATCHDIR
+# (word crops with their neighbours); 5x Lanczos, grey; scratch only, no image in git. Usage: python3 lvnl05/cut_w.py SCRATCHDIR [l04]
+# LVN-L04 (15 Oct 2026): second argument 'l04' cuts only the p1_L04 head set (PREREG-LVN-L04.md) into SCRATCHDIR/w04/.
 import sys, json
 from PIL import Image
 S=sys.argv[1]
@@ -20,7 +21,14 @@ crops={
  'tfut':(P,(345,172,485,214)),     # auoir | fut/este | tout -> scored token 2
  'tfut_ctl':(P,(380,172,515,214)), # fut/este | tout | 7   -> scored token 2 (tout)
 }
-json.dump({k:[v[0],v[1]] for k,v in crops.items()},open(S+'/crops_w.json','w'),indent=0)
-import os; os.makedirs(S+'/w',exist_ok=True)
+crops_l04={
+ 'l04_head':(P,(170,170,285,212)),  # 124 | 127 | 145        -> scored tokens 1-2 (145 recorded, not scored)
+ 'l04_ctl1':(P,(507,170,582,212)),  # 71 | 73                 -> scored token 1 (71 H, p1_L04/6)
+ 'l04_ctl2':(P,(549,170,612,212)),  # 73 | 36                 -> scored token 1 (73 H, p1_L04/7)
+}
+sub='w'
+if len(sys.argv)>2 and sys.argv[2]=='l04': crops,sub=crops_l04,'w04'
+json.dump({k:[v[0],v[1]] for k,v in crops.items()},open(S+'/crops_%s.json'%sub,'w'),indent=0)
+import os; os.makedirs(S+'/'+sub,exist_ok=True)
 for k,(f,b) in crops.items():
-    c=Image.open(f).crop(b).convert('L'); c=c.resize((c.width*5,c.height*5),Image.LANCZOS); c.save(f'{S}/w/{k}.png')
+    c=Image.open(f).crop(b).convert('L'); c=c.resize((c.width*5,c.height*5),Image.LANCZOS); c.save(f'{S}/{sub}/{k}.png')
