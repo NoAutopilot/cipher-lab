@@ -28,3 +28,14 @@ Settle rule (gate passed only), per target, unchanged from unit 1:
 - a gap row (one pass '-') therefore settles only when the read equals the other pass's value exactly (unit 1's p1_L04/1 rule).
 Apply: lvn10/apply.py gains lvn10p2/settle.tsv after lvn10p1/settle.tsv (settled/confirmed rows only); reading_4610 regenerated;
 decode_key.py --check; recount C/H/M/U before and after.
+
+## Placement note (before the read is opened)
+Centres placed in four rounds of ruled strips and tight/context contact sheets; all 42 placed crops on their token before the read.
+12 of the 44 targets are NOT placed and NOT read (they stay M, logged as segmentation findings, not reading questions):
+- p2_L02/1 (192, B-only): the image has six tokens (102, 32, 62, 112, 102, 81) where the transcription has four (192 112 182 81);
+  positions 2-4 are right-anchored on 112, 102, 81; position 1 has no unambiguous ink.
+- p2_L25/6, p2_L25/7 (65, 105, B-only) and p2_L26/1-3 (85, 148, 120, B-only): pass B appears to have read the one ink run
+  "55, 145, 120" (physical line at y ~2400, after 82, 2, 5, 83, 119) twice, once into each line; ownership is a segmentation question.
+- p2_L26/20-25 (70 10 25 77 85 24, A-only): the same six values are p2_L27/1-6 (H); A appears to have carried the start of the next
+  physical line into L26; a duplicate, not a reading question.
+So the read is 32 targets + 10 controls = 42 rows (control gate unchanged: >= 8/10).
