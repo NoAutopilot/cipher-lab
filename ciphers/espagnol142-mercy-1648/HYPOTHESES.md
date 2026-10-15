@@ -19,3 +19,8 @@ Append-only. Rows below are written by `tools/family_run.py` (CLAUDE.md rule 3: 
 | T4, T8, T5, T17, T3: transcription-M groups = current letter | 2-3 | 7-13/22 (FAIL) | +5.5 to +31.6 | non-test at n <= 3 |
 | K15: code 15 = z | 2 | 7/22 (FAIL) | -18.1 vs i | non-test at n = 2 |
 | K9, FRAC, R1008, R1013, T18 | 1 | n/a | +4.3 to +12.8 | undecided (n = 1) |
+
+## MERCY-IMG (15 Oct 2026; image re-read of r16-r24 M glyphs, PREREG-MERCYIMG.md)
+| hypothesis | instrument | control (H glyphs on the same rows, gate >= 0.90) | target | outcome |
+|---|---|---|---|---|
+| the 19 transcription-M glyphs on f.22r r16-r24 are the transcribed digits | 2 blind Sonnet readers on tools/iiif_lines.py crops + reconciliation | A 172/173 (0.994), B 172/173 (0.994); own-group 171/173 each (misses: r22:10-11, an H pair written as one "75") | digits agree with the transcription at 19/19 for both readers; 13 positions settled by rule (a) (72, 52, 48 x2, 4, 186, 65: one parse in the 2-34 key); r18:5-6 and r24:14-15 written "26" by both (rule (b) re-label candidate 26=i, against sense and against the "75" control case); r20:6-7 readers split on grouping (A "2 3", B "23"; image shows an ordinary gap) | 13 confirmed (candidate S, held M); longest H/C/S run 53 -> 89 (r20:8-r24:13) with the 13; > 84 (R 3.4), < 135.1 (es17c) |

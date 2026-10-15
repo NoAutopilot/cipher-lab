@@ -2847,3 +2847,60 @@ transcription-M groups at n = 2-3 read their current letter first (T4/T8/T5/T17 
 says the instrument cannot accept at that n on this text; what would settle them is an image re-read of the r17-r24
 M glyphs (a different instrument, rule 3's third-attempt clause), not another --try. The R 3.4 vs es17c AD convention
 question is moot for this job (neither is reached) and is left with the parent.
+
+## MERCY-IMG (15 Oct 2026, 14:29-14:4x UTC by date -u)
+
+Worker MERCY-IMG (for LANE VIV-KEYSTONE, account 4); brief `.claude/briefs/runs/2026-10-15-acct4-depth-steps.md` "## JOB MERCY-IMG".
+PREREG-MERCYIMG.md pushed (a1c954a60) before either reader ran. No network (canvas 58 already on disk); no key.tsv, reading, AUDIT.md
+or status.json edit. Crop command (run from the repo root):
+`python3 tools/iiif_lines.py --image ciphers/espagnol142-mercy-1648/images/f22r_canvas58.jpg --out ciphers/espagnol142-mercy-1648/mercyimg/crops --region 400,3030,2950,1790 --prefix f22r_r16r24 --max-width 1550 --overlap 150 --debug`
+-> 9 lines x 2 segments, debug overlay checked (L01-L09 = r16-r24). Two blind Sonnet readers (crops only, no key, no transcription):
+`mercyimg/readA.tsv`, `readB.tsv`; scoring `mercyimg/align.py` (checked first on a synthetic read, 173/173) -> `read*_tokens.tsv`;
+reconciliation crops `mercyimg/recon_spots.jpg`, `recon_spots2.jpg`.
+
+**Control (known answer, the 173 H glyphs on r16-r24).** Reader A 172/173 = 0.994, reader B 172/173 = 0.994 (gate 0.90: PASS both).
+The one miss is the same for both: r17:5, transcribed 19 at H, read 14 by both, which is what exceptions.tsv already says (image shows
+14). Own-group (boundary) reproduction 171/173 = 0.988 each (gate 0.90: PASS); the two misses are r22:10-11, an H pair 7 5 that the
+writer joined into one cluster "75" and both readers wrote as one group.
+
+**Per M position** (transcription glyph | A | B | settled | key letter | grade):
+
+| position | transcription | reader A | reader B | settled | letter | grade |
+|---|---|---|---|---|---|---|
+| r16:21-22 | 7 2 | 72 | 72 | 7 2 (rule a: 72 > 34) | t o | candidate S (image), held M |
+| r17:10-11 | 5 2 | 52 | 52 | 5 2 (rule a) | r o | candidate S, held M |
+| r17:21-22 | 4 8 | 48 | 48 | 4 8 (rule a; "48 or 98" noted by both: 9 is also q) | q u | candidate S, held M |
+| r18:5-6 | 2 6 | 26 | 26 | rule (b) re-label candidate 26 (i); not adopted, see below | o s (26: i) | M |
+| r20:6-7 | 2 3 | 2 3 | 23 | unsettled (grouping split; image shows an ordinary gap, as between 3 and 5) | o p | M |
+| r20:15-16 | 4 8 | 48 | 48 | 4 8 (rule a) | q u | candidate S, held M |
+| r22:2 | 4 | 4 | 4 | 4 (confirmed; own group) | q | candidate S, held M |
+| r23:1-2 | 18 6 | 186 | 186 | 18 6 (rule a: only parse) | e s | candidate S, held M |
+| r24:4-5 | 6 5 | 65 | 65 | 6 5 (rule a) | s r | candidate S, held M |
+| r24:14-15 | 2 6 | 26 | 26 | rule (b) re-label candidate 26 (i); not adopted, see below | o s (26: i) | M |
+
+Key-level / exceptions glyphs on the same rows (reported, not gated): r16:9, r17:4, r19:10 read 25 by both (code 25 stays key-level M);
+r17:5 read 14 by both (agrees with exceptions.tsv); r16:3 and r16:6 read 19 by both readers, each flagging "14 or 19?", against
+exceptions.tsv's 14 (Bourdeau, 1 Oct 2026). On the zoom (recon_spots.jpg) r16:3 and r16:6 have the same shape as r17:5, which both
+readers called 14, so the readers' 19 there is not consistent with their own r17:5 reading; exceptions.tsv is left as it is (14 = c either way
+under the exception; not this job's question).
+
+**The two "26" groups.** By the letter of PREREG rule (b) (both readers agree on the joined grouping, both pass the boundary gate) r18:5-6
+and r24:14-15 are re-label candidates 26 = i. I do not adopt them: the boundary control's own two misses are an H pair (r22:10-11, "75")
+written exactly this way, the writer glues two codes into one cluster at least seven times on these rows (72, 52, 48 x2, 186, 65, 75), and
+26 = i gives "regimient-i-" at r24 and "se-i-embian" at r18, the two misreads that Bourdeau's 2|6 split corrected (1 Oct 2026).
+The image cannot separate 26 from 2|6 here; they stay M on segmentation, as before.
+
+**Run statistic** (`mercym33/runs.py` on a scratch copy; committed files untouched). Before: **53** (v01:16-v04:8). After the 13 rule-(a)
+positions: **89** letters, r20:8-r24:13 ("...ondreis que si se permitira se leuanten en aquel pais tres mil hombres de infanteria en dos o
+tres regimient"), bounded on the left by r20:6-7 (unsettled) and on the right by r24:14-15 (the 26 group). 89 > 84.0 (R 3.4), < 135.1
+(es17c). Adding MERCY-M33's T6 accepts changes nothing (r23:2 and r24:4 are already among the 13). Not licensed: with the two 26
+re-labels as registered, 102 (r20:8-v01:5, against sense); with all 19 row-M glyphs taken as transcribed, 120 (r19:11-v01:5).
+
+**For the verifier.** Both blind readers reproduce the committed H glyphs on r16-r24 at 0.994. The 19 M glyphs there are digit-correct
+in both reads; 13 of them were M only because the writer glued two codes into one cluster (72, 52, 48, 48, 186, 65) or a single glyph
+was doubtful (r22:2), and each cluster has exactly one parse into the 2-34 key, so the image plus the key range settles them as transcribed
+(candidate S, held M here). With those 13 the longest H/C/S stretch is 89 letters (r20:8-r24:13), which crosses 84 (R 3.4 convention) and
+not 135.1 (es17c). Whether that meets rule 4a's D2 cipher clause depends on (i) accepting segmentation-by-key-range as S, (ii) the AD
+convention question (R 3.4 vs es17c), already flagged to the parent by MERCY-M33, and (iii) the verifier's own AD recount, since each
+settled M removes liberties. Still open: r20:6-7 (2 3 vs 23; readers split, image gap looks ordinary) and the two 26 groups (image cannot
+decide). No value or key question was touched.
