@@ -60,3 +60,21 @@ decoys whose truth you first settle by eye on the native crop and record before 
 instrument, stop and log rule 3(c) instead. PREREG first (same gate 10/12 or stricter, decoys image-checked and listed). Units: ~3 Sonnet vision
 calls on windows (<= 12 crops per call) + 1 reconcile. Apply nothing unless the gate passes; then only the candidates both passes agree on, via the
 folder's decode path with --check. gaps_check.
+
+## Wave 2 (05:5x UTC 15 Oct)
+
+### MAT-F91 (Opus, cap 6, box 90 min, gallica <= 6 only if a crop must be re-cut): matignon-mayenne-1586 f.91-92 Cipher-1 sibling, blocks A, B, D, E
+MAT-NOM (15 Oct) located f.91r-92r: six cipher blocks, each with a left-margin period decipherment (`f91/blocks.tsv`, `f91/crops_manifest.tsv`,
+`f91/regen_f91.sh` re-derives the crops into your scratchpad). Do blocks A, B, D, E only (~23 cipher lines, ~34 gloss lines); C and F are a later
+job. PREREG first (pushed): the known-answer use of the gloss -- how many of key.tsv's values the aligned gloss confirms vs a shuffled-gloss
+control, and what counts as a key conflict. Units: cipher lines, 2 blind Sonnet passes on line crops (<= 12 crops per call, ~2 calls per pass,
+~0.6 each) + 1 reconciliation (`tools/reconcile_passes.py`, ~1); gloss lines, 1 Opus read + 1 Sonnet check (~1.6); alignment with
+`tools/interlinear_align.py` (prior = key.tsv), ~0.5. Report per block: tokens, key values confirmed / conflicting / new (new values M until a
+--try with control), control numbers. No key.tsv edit except through --try with its control passing; conflicts go to HYPOTHESES.md with witnesses
+(rule 4). Gloss text is a period decipherment: grade C for what it fixes. gaps_check.
+
+### OBRED-6019 (Opus, cap 5, box 90 min, nationaalarchief/service.archief.nl per OBRED-6018's route, >= 1.5 s, <= 230 requests): oldenbarnevelt-brederode-1605 inv. 6019 stride-3 screen
+Verdict: "cheapest next: a stride-3 screen of inv. 6019 (1619, 649 scans, ~$4)". Same method, sheets, controls and pre-call push as OBRED-6018
+(NOTES.md section and its scripts): PREREG addendum first, controls included in every sheet, calls pushed before the key is opened. Price per
+sheet from OBRED-6018's own numbers and stop before a sheet that crosses 80% of cap or box. Report scans screened, hits (numeral blocks of the
+target's system) and control results; update Verdict and gaps_check.
