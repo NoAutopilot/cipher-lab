@@ -3,7 +3,7 @@
 region (openapi.bnf.fr btv1b9060906j f563, region 550,490,2475,1060, max), read by two blind Sonnet passes.
 Boxes are D4-PISA's (pisa/pisa.py TILES, in f275vGH_lines_debug.jpg pixels, 1600 px wide) x 2475/1600, then nudged by the per-tile
 offsets in NUDGE (set by eye on the native montage BEFORE any read, target and controls alike); tiles are upscaled 1.5x.
-  python3 pisa/pisa_native.py --build NATIVE.jpg   cut pisa/tiles_native/{A,B}/*.png and write pisa/prompt_native_{A,B}.md
+  python3 pisa/pisa_native.py --build NATIVE.jpg   cut the scratchpad tiles_native/{A,B}/*.png (untracked) and write pisa/prompt_native_{A,B}.md
   python3 pisa/pisa_native.py                      score pisa/reader_native_{A,B}.txt -> pisa/pisa_native_result.json
   python3 pisa/pisa_native.py --check              exit 1 if the committed result is stale
 Regenerate NATIVE.jpg: curl -A 'cipher-lab research script (contact via repository)' -o NATIVE.jpg \\
@@ -27,7 +27,7 @@ def build(src):
     from PIL import Image
     im = Image.open(src).convert('L')
     for p in SEEDS:
-        d = os.path.join(H, 'tiles_native', p); os.makedirs(d, exist_ok=True)
+        d = os.path.join(os.environ.get('TILES_OUT', os.path.join(H, 'tiles_native')), p); os.makedirs(d, exist_ok=True)
         lines = ['Each image below is one tile cut from the same page: a 16th-century French secretary hand, a second-hand marginal',
                  'decipherment written beside a cipher letter. Neighbouring ink may intrude at the edges. For each tile, first write your own',
                  'free transcription of the main word or words (use [?] for what you cannot read), THEN pick exactly one option letter.',

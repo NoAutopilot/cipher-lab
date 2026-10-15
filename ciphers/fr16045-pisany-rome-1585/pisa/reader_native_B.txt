@@ -1,0 +1,9 @@
+T01 | free: [?]estendre / en-endre | choice: e | confidence: low
+T02 | free: par Crisy | choice: h | confidence: medium
+T03 | free: communiquer | choice: d | confidence: medium
+T04 | free: tenir tres secret[?] | choice: g | confidence: low
+T05 | free: faisant | choice: c | confidence: medium
+T06 | free: dilligence | choice: f | confidence: medium
+T07 | free: pour[?]petuel | choice: g | confidence: low
+T08 | free: neantmoings | choice: a | confidence: high
+T09 | free: pr[?]sance / puissance | choice: g | confidence: low

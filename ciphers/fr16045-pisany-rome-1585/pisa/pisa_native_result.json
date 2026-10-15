@@ -1,0 +1,163 @@
+{
+ "A": {
+  "tiles": [
+   {
+    "label": "T01",
+    "name": "communiquer",
+    "free": "[?]ommuni[?]ue / \"communiqu[?]\" (minims then long tail)",
+    "choice": "communiquer",
+    "confidence": "low",
+    "correct": true
+   },
+   {
+    "label": "T02",
+    "name": "entendre",
+    "free": "\"entendre\"-like, \"ɛ[?]endre\"",
+    "choice": "entendre",
+    "confidence": "low",
+    "correct": true
+   },
+   {
+    "label": "T03",
+    "name": "perpetuel",
+    "free": "\"perpetuel\" (p with loop, minims, final -l)",
+    "choice": "perpetuel",
+    "confidence": "medium",
+    "correct": true
+   },
+   {
+    "label": "T04",
+    "name": "dilligence",
+    "free": "\"diligence\"/\"dilligence\" (di-ll-i-g-e-n-c-e with long g descender)",
+    "choice": "dilligence",
+    "confidence": "medium",
+    "correct": true
+   },
+   {
+    "label": "T05",
+    "name": "faisant",
+    "free": "\"fermant\"/\"faisant\" (f, ligature, long s, final -ant)",
+    "choice": "faisant",
+    "confidence": "low",
+    "correct": true
+   },
+   {
+    "label": "T06",
+    "name": "neantmoings",
+    "free": "\"Nonnement\"/\"nommement\" (N, minims, long -ment with tall final)",
+    "choice": "nommement",
+    "confidence": "low",
+    "correct": false
+   },
+   {
+    "label": "T07",
+    "name": "X",
+    "free": "\"tenir tres secrete\" (t..., tall s, minims)",
+    "choice": "tenir tres secrete",
+    "confidence": "low"
+   },
+   {
+    "label": "T08",
+    "name": "personne",
+    "free": "\"pr[?]sence\" with tall descender",
+    "choice": "presence",
+    "confidence": "low",
+    "correct": false
+   },
+   {
+    "label": "T09",
+    "name": "lettres",
+    "free": "\"par Crisy\" (p, ar, C-r-i-s-y with final flourish)",
+    "choice": "par Crisy",
+    "confidence": "medium",
+    "correct": false
+   }
+  ],
+  "controls_correct": 5,
+  "controls_n": 8,
+  "GC": "FAIL",
+  "X_choice": "tenir tres secrete",
+  "X_free_vs_choice": "agree"
+ },
+ "B": {
+  "tiles": [
+   {
+    "label": "T01",
+    "name": "entendre",
+    "free": "[?]estendre / en-endre",
+    "choice": "estendre",
+    "confidence": "low",
+    "correct": false
+   },
+   {
+    "label": "T02",
+    "name": "lettres",
+    "free": "par Crisy",
+    "choice": "par Crisy",
+    "confidence": "medium",
+    "correct": false
+   },
+   {
+    "label": "T03",
+    "name": "communiquer",
+    "free": "communiquer",
+    "choice": "communiquer",
+    "confidence": "medium",
+    "correct": true
+   },
+   {
+    "label": "T04",
+    "name": "X",
+    "free": "tenir tres secret[?]",
+    "choice": "tenir tres secrete",
+    "confidence": "low"
+   },
+   {
+    "label": "T05",
+    "name": "faisant",
+    "free": "faisant",
+    "choice": "faisant",
+    "confidence": "medium",
+    "correct": true
+   },
+   {
+    "label": "T06",
+    "name": "dilligence",
+    "free": "dilligence",
+    "choice": "dilligence",
+    "confidence": "medium",
+    "correct": true
+   },
+   {
+    "label": "T07",
+    "name": "perpetuel",
+    "free": "pour[?]petuel",
+    "choice": "perpetuel",
+    "confidence": "low",
+    "correct": true
+   },
+   {
+    "label": "T08",
+    "name": "neantmoings",
+    "free": "neantmoings",
+    "choice": "neantmoings",
+    "confidence": "high",
+    "correct": true
+   },
+   {
+    "label": "T09",
+    "name": "personne",
+    "free": "pr[?]sance / puissance",
+    "choice": "puissance",
+    "confidence": "low",
+    "correct": false
+   }
+  ],
+  "controls_correct": 5,
+  "controls_n": 8,
+  "GC": "FAIL",
+  "X_choice": "tenir tres secrete",
+  "X_free_vs_choice": "agree"
+ },
+ "GT": "non-test (no pass with GC PASS and free/choice agreement) -> M"
+}

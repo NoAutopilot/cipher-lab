@@ -1,0 +1,9 @@
+T01 | free: [?]ommuni[?]ue / "communiqu[?]" (minims then long tail) | choice: g | confidence: low
+T02 | free: "entendre"-like, "ɛ[?]endre" | choice: e | confidence: low
+T03 | free: "perpetuel" (p with loop, minims, final -l) | choice: a | confidence: medium
+T04 | free: "diligence"/"dilligence" (di-ll-i-g-e-n-c-e with long g descender) | choice: g | confidence: medium
+T05 | free: "fermant"/"faisant" (f, ligature, long s, final -ant) | choice: d | confidence: low
+T06 | free: "Nonnement"/"nommement" (N, minims, long -ment with tall final) | choice: c | confidence: low
+T07 | free: "tenir tres secrete" (t..., tall s, minims) | choice: e | confidence: low
+T08 | free: "pr[?]sence" with tall descender | choice: d | confidence: low
+T09 | free: "par Crisy" (p, ar, C-r-i-s-y with final flourish) | choice: g | confidence: medium
