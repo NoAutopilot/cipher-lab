@@ -1,0 +1,310 @@
+{
+ "source": "H-1649 Image 870 (B.147 p.226) at 3200 px, deskewed -1.86 deg, columns cut by tools/iiif_lines.py (images/h1649/p226_cols)",
+ "key": "title1778_reading.txt as printed (variant a) GATED; variant (b) reported",
+ "cells_letter_and_word": 228,
+ "cell_grades": {
+  "H": 228
+ },
+ "B2_variant_a_GATED": {
+  "runs_ge3": 38,
+  "hits": 37,
+  "share": 0.974,
+  "can_differ": 1.0,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "seed": 123,
+   "mean": 0.28,
+   "p95": 1,
+   "max": 3
+  },
+  "gate": "PASS",
+  "decoded_runs": [
+   {
+    "start": "col1:1",
+    "cells": "1-6 1-11 1-12 2-4 4-2 5-5 18-17 11-3",
+    "decoded": "monsieur",
+    "hit": true,
+    "at_letter": 0
+   },
+   {
+    "start": "col1:9",
+    "cells": "17-1 17-3 17-5 17-19 17-18 17-17",
+    "decoded": "ternay",
+    "hit": false,
+    "at_letter": null
+   },
+   {
+    "start": "col1:15",
+    "cells": "18-1 18-9 18-9 18-10 9-16 9-17 13-10",
+    "decoded": "arrived",
+    "hit": true,
+    "at_letter": 14
+   },
+   {
+    "start": "col1:22",
+    "cells": "17-1 17-2 17-3",
+    "decoded": "the",
+    "hit": true,
+    "at_letter": 21
+   },
+   {
+    "start": "col1:25",
+    "cells": "16-1 26-1 26-7 27-2 26-11 26-5 26-6",
+    "decoded": "twelfth",
+    "hit": true,
+    "at_letter": 24
+   },
+   {
+    "start": "col2:1",
+    "cells": "18-17 24-19 24-4 23-5 23-14 23-13",
+    "decoded": "ultimo",
+    "hit": true,
+    "at_letter": 31
+   },
+   {
+    "start": "col2:9",
+    "cells": "16-9 17-8 16-32 16-30 16-14",
+    "decoded": "rhode",
+    "hit": true,
+    "at_letter": 39
+   },
+   {
+    "start": "col2:14",
+    "cells": "4-2 4-3 4-1 6-6 6-3 6-15",
+    "decoded": "island",
+    "hit": true,
+    "at_letter": 44
+   },
+   {
+    "start": "col2:20",
+    "cells": "19-1 19-2 19-3 19-4",
+    "decoded": "with",
+    "hit": true,
+    "at_letter": 50
+   },
+   {
+    "start": "col2:24",
+    "cells": "13-6 13-26 9-16 9-17 9-10",
+    "decoded": "seven",
+    "hit": true,
+    "at_letter": 54
+   },
+   {
+    "start": "col2:29",
+    "cells": "9-14 9-19 9-9 9-20",
+    "decoded": "sail",
+    "hit": true,
+    "at_letter": 59
+   },
+   {
+    "start": "col3:1",
+    "cells": "12-3 12-4 12-5",
+    "decoded": "the",
+    "hit": true,
+    "at_letter": 21
+   },
+   {
+    "start": "col3:4",
+    "cells": "4-1 4-2 6-3 6-4",
+    "decoded": "line",
+    "hit": true,
+    "at_letter": 68
+   },
+   {
+    "start": "col3:8",
+    "cells": "8-3 8-4 7-7 7-15 8-5",
+    "decoded": "three",
+    "hit": true,
+    "at_letter": 72
+   },
+   {
+    "start": "col3:13",
+    "cells": "8-2 9-7 9-4 9-23 9-19 9-11 9-13 9-14",
+    "decoded": "frigates",
+    "hit": true,
+    "at_letter": 77
+   },
+   {
+    "start": "col3:22",
+    "cells": "3-1 1-1 1-26 1-27 1-15",
+    "decoded": "about",
+    "hit": true,
+    "at_letter": 88
+   },
+   {
+    "start": "col3:27",
+    "cells": "8-2 9-4 9-16 9-17",
+    "decoded": "five",
+    "hit": true,
+    "at_letter": 93
+   },
+   {
+    "start": "col3:31",
+    "cells": "13-4 13-7 1-26 1-27 9-8 9-19",
+    "decoded": "thousa",
+    "hit": true,
+    "at_letter": 97
+   },
+   {
+    "start": "col4:3",
+    "cells": "14-1 17-5 14-2 14-2 21-4 21-5",
+    "decoded": "troops",
+    "hit": true,
+    "at_letter": 105
+   },
+   {
+    "start": "col4:9",
+    "cells": "14-3 14-4 14-11",
+    "decoded": "who",
+    "hit": true,
+    "at_letter": 111
+   },
+   {
+    "start": "col4:12",
+    "cells": "13-8 13-12 13-26",
+    "decoded": "are",
+    "hit": true,
+    "at_letter": 114
+   },
+   {
+    "start": "col4:20",
+    "cells": "20-26 20-37 21-1 20-36 16-8 20-32",
+    "decoded": "sickly",
+    "hit": true,
+    "at_letter": 125
+   },
+   {
+    "start": "col4:26",
+    "cells": "5-3 5-4 5-5 11-3 11-5",
+    "decoded": "there",
+    "hit": true,
+    "at_letter": 131
+   },
+   {
+    "start": "col5:1",
+    "cells": "4-1 4-2 4-4 4-4 6-7 6-13",
+    "decoded": "little",
+    "hit": true,
+    "at_letter": 138
+   },
+   {
+    "start": "col5:7",
+    "cells": "15-5 16-20 16-5 15-8 15-7 15-8 15-11 15-14 16-12 16-16 16-27",
+    "decoded": "probability",
+    "hit": true,
+    "at_letter": 144
+   },
+   {
+    "start": "col5:20",
+    "cells": "12-3 12-4 12-5 13-3 13-2",
+    "decoded": "their",
+    "hit": true,
+    "at_letter": 157
+   },
+   {
+    "start": "col5:25",
+    "cells": "11-8 11-20 12-3 12-5 16-13 24-21 16-16 16-12 16-15 16-11",
+    "decoded": "attempting",
+    "hit": true,
+    "at_letter": 162
+   },
+   {
+    "start": "col6:1",
+    "cells": "9-5 9-19 9-10 9-19",
+    "decoded": "cana",
+    "hit": true,
+    "at_letter": 172
+   },
+   {
+    "start": "col6:7",
+    "cells": "16-1 16-2 17-6 17-7",
+    "decoded": "this",
+    "hit": true,
+    "at_letter": 178
+   },
+   {
+    "start": "col6:11",
+    "cells": "17-17 17-15 17-18 17-16",
+    "decoded": "year",
+    "hit": true,
+    "at_letter": 182
+   },
+   {
+    "start": "col6:15",
+    "cells": "12-3 12-4 12-5 13-3 13-2",
+    "decoded": "their",
+    "hit": true,
+    "at_letter": 157
+   },
+   {
+    "start": "col6:20",
+    "cells": "18-27 18-9 18-10 18-11 20-16 20-14 15-5 15-7 15-14",
+    "decoded": "principal",
+    "hit": true,
+    "at_letter": 191
+   },
+   {
+    "start": "col6:29",
+    "cells": "18-6 18-16 18-26 18-14 18-9 18-4 18-13",
+    "decoded": "efforts",
+    "hit": true,
+    "at_letter": 200
+   },
+   {
+    "start": "col7:1",
+    "cells": "13-1 16-14 16-12 16-15 16-40",
+    "decoded": "being",
+    "hit": true,
+    "at_letter": 207
+   },
+   {
+    "start": "col7:6",
+    "cells": "9-9 9-10 9-11 9-6 9-10 6-15 6-13 6-15",
+    "decoded": "intended",
+    "hit": true,
+    "at_letter": 212
+   },
+   {
+    "start": "col7:14",
+    "cells": "16-7 16-11 16-7 16-12 16-15 16-35 16-21",
+    "decoded": "against",
+    "hit": true,
+    "at_letter": 220
+   },
+   {
+    "start": "col7:21",
+    "cells": "12-3 12-4 13-3 13-6",
+    "decoded": "this",
+    "hit": true,
+    "at_letter": 178
+   },
+   {
+    "start": "col7:25",
+    "cells": "15-5 15-14 15-13 20-16 20-3",
+    "decoded": "place",
+    "hit": true,
+    "at_letter": 231
+   }
+  ]
+ },
+ "B2_variant_b_reported_not_gated": {
+  "runs_ge3": 38,
+  "hits": 34,
+  "share": 0.895,
+  "can_differ": 1.0,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "seed": 123,
+   "mean": 0.27,
+   "p95": 1,
+   "max": 2
+  },
+  "gate": "PASS"
+ },
+ "word_codes": [],
+ "clear_words": [
+  "and",
+  "Said"
+ ],
+ "p225_letters": 236
+}
