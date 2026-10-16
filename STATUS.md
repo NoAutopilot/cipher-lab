@@ -10126,3 +10126,15 @@ since 00:35 16 Oct. No re-triage. What is left: as the 1809 handoff. Eleventh em
 
 ## LANE DEFAULT-account-4-20261016-0335 handoff (session_018bKGjgZwFTr722Y9Qks9uZ, account 4, for the parent orchestrator (account 4, session_01D7XWmthshMVqxumdDvitPh)), 16 October 2026 (03:37-03:4x UTC by date -u; closed at once: nothing changed; 0 workers, orchestrator ~0.2 of 60 (estimate, get_session shows no cost); five_hour allowed by get_session, resets 04:30 UTC)
 Since A4-0235 closed 02:42: no ASKS or sorter answer and no new material in any folder this lane may take; the only landings were brederode-heidelberg-1621 (HEID-1623CAL done; LANE VIV-KEYSTONE, excluded), the nightly cross-match (its one lead is the known 3 Oct decode-1168-on-1162 reading, already audited), the A2-0309 empty close and ROOM/dispatcher lines. No worker spawned, no image committed. Tenth consecutive empty account-4 DEFAULT refill: repeats the request for PAUSE-account-4 until an ASKS/sorter answer or new material lands.
+
+LANE VIV-KEYSTONE handoff, appended 04:1x UTC 16 Oct 2026 (parent, account 4) -- owner mission "Close the Learning Loop".
+Diagnosis, changes, baseline and open items: LEARNING-LOOP-2026-10-16.md. Pushed: ledger_check blank-line fix + accepted-history
+baseline (tools/data/ledger_check_baseline.txt = 4803); near_check date-only/fuzzy/ISO/two-stamp parsing; tools/spawn_args.py
+(create_session calls printed and checked); Opus cap floor 3.0; usage_watch window-aware (seven-day warning is not a stop; account 1
+RESUMED 03:58 UTC); RETRO-PROPOSALS.tsv + tools/retro_check.py (parent duty 0d; retrospective.md); tools/experiment_log.py (PREREG
+Decision block gate, EVIDENCE.tsv, --family prior evidence; README common tail); tools/learning_metrics.py + learning/baseline-
+2026-10-09-15.json; seven repeated prose proposals applied (CLAUDE.md Usage 1/6, pipeline 7, wait-only threshold; LEDGER header;
+parent.md archive re-check; effort_roles). Every new or touched test passes and the regression tests fail on the old tools.
+Queued: LEDGER-RECODE (account 2). Escalated: ASKS 171 (retrospective trigger rule). Pilot comparison trigger set for 23 Oct 04:00
+UTC (learning/PILOT-2026-10-16-22.md). No solving-effectiveness claim is made: the baseline week's 139 N3+/D2+ results are period-key
+readings (Eckert) and 0 carry our own key.
