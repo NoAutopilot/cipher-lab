@@ -5,14 +5,21 @@
  ],
  "rows": 1228,
  "worker_usd": 4386.2,
+ "double_written_rows_dropped": 7,
+ "double_counted_usd_removed": 0.0,
+ "cryptanalysis_share": {
+  "usd": 147.72,
+  "share": 0.034,
+  "bound": 0.15
+ },
  "operational": {
   "over_cap": {
    "rows": 233,
    "usd": 1194.68
   },
   "no_repository": {
-   "rows": 9,
-   "usd": 21.31
+   "rows": 8,
+   "usd": 13.81
   },
   "duplicate_dispatch": {
    "rows": 32,
@@ -39,7 +46,7 @@
   "applied_with_test": 0
  },
  "repeated_approaches": {
-  "rows": 116,
+  "rows": 114,
   "usd": 449.61,
   "targets_with_3plus_N": 21,
   "targets": {

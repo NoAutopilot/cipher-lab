@@ -61,9 +61,31 @@ def in_window(d, start, end):
     return d is not None and start <= d <= end
 
 
+CRYPTANALYSIS_RE = re.compile(r'family_run|homophonic|anneal|wordcode|nomenclator solver|syllabary|\bmasc\b|vigenere|running[_ -]key|hillclimb|ciphertext-only|key_repair|lattice', re.I)
+
+
+def dedupe(win):
+    """A session id written twice (a running/done pair, a self-ledger row written twice with two costs, a twin for one job)
+    double-counts in any total: 38 such ids on 16 Oct 2026, about USD 216 (learning/LEDGER-HISTORY-AUDIT-2026-10-16.md). Keep
+    the LAST row per session id that carries a numeric cost; rows without an id are kept as they are."""
+    keep = {}
+    out = []
+    for r in win:
+        sid = r.get("session")
+        if sid:
+            keep[sid] = r if (r.get("cost") is not None or sid not in keep) else keep[sid]
+        else:
+            out.append(r)
+    dropped = sum(1 for r in win if r.get("session")) - len(keep)
+    return out + list(keep.values()), dropped
+
+
 def compute(rows, results, register_rows, start, end):
-    win = [r for r in rows if r.get("date") and in_window(r["date"], start, end)]
+    win_all = [r for r in rows if r.get("date") and in_window(r["date"], start, end)]
+    win, dropped = dedupe(win_all)
+    usd_all = sum(r["cost"] for r in win_all if r.get("cost") is not None and not pm.is_orchestrator(r.get("role", "")))
     usd = sum(r["cost"] for r in win if r.get("cost") is not None and not pm.is_orchestrator(r.get("role", "")))
+    crypt_usd = sum(r["cost"] for r in win if r.get("cost") is not None and not pm.is_orchestrator(r.get("role", "")) and CRYPTANALYSIS_RE.search(r.get("role", "") + " " + r.get("lesson", "")[:200]))
     op = Counter()
     op_usd = Counter()
     repeat_n = 0
@@ -117,8 +139,11 @@ def compute(rows, results, register_rows, start, end):
             by_key[key] += 1
     return {
         "window": [start.isoformat(), end.isoformat()],
-        "rows": len(win),
+        "rows": len(win_all),
         "worker_usd": round(usd, 2),
+        "double_written_rows_dropped": dropped,
+        "double_counted_usd_removed": round(usd_all - usd, 2),
+        "cryptanalysis_share": {"usd": round(crypt_usd, 2), "share": (round(crypt_usd / usd, 3) if usd else 0.0), "bound": 0.15},
         "operational": {k: {"rows": op[k], "usd": round(op_usd[k], 2)} for k in ("over_cap", "no_repository", "duplicate_dispatch", "brief_error", "scratchpad_loss", "non_standard_code")},
         "retro_proposals": {"applied": reg["applied"], "declined": reg["declined"], "partial": reg["partial"], "open": reg["open"], "applied_with_test": reg_tested},
         "repeated_approaches": {"rows": repeat_n, "usd": round(repeat_usd, 2), "targets_with_3plus_N": len(repeated_targets), "targets": dict(sorted(repeated_targets.items(), key=lambda x: -x[1])[:10])},
@@ -140,6 +165,8 @@ def load_rows(path):
             cells = [c.strip() for c in line.strip().strip("|").split("|")]
             r["outcome_code"] = r["outcome"]
             r["lesson"] = " | ".join(cells[2:])
+            sm = next((c for c in cells if pm.SESSION_RE.fullmatch(c)), None)
+            r["session"] = sm
             rows.append(r)
     return rows
 
@@ -166,7 +193,9 @@ def render(m, base=None):
         for k in key_path:
             b = b.get(k, {}) if isinstance(b, dict) else {}
         return f"  (baseline {b})" if b != {} else ""
-    out = [f"Learning-loop metrics {m['window'][0]} .. {m['window'][1]}: {m['rows']} ledger rows, worker USD {m['worker_usd']}"]
+    out = [f"Learning-loop metrics {m['window'][0]} .. {m['window'][1]}: {m['rows']} ledger rows, worker USD {m['worker_usd']} "
+           f"(after dropping {m['double_written_rows_dropped']} double-written session rows, USD {m['double_counted_usd_removed']})",
+           f"Independent cryptanalysis share of worker spend: {m['cryptanalysis_share']['share']:.1%} (USD {m['cryptanalysis_share']['usd']}; bound {m['cryptanalysis_share']['bound']:.0%}, owner 16 Oct 2026)"]
     out.append("Operational (repeated failure shapes):")
     for k, v in m["operational"].items():
         out.append(f"  {k:20} rows {v['rows']:4d}  USD {v['usd']:8.2f}{cmp(('operational', k), v)}")

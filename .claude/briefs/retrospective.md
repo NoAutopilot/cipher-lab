@@ -19,3 +19,12 @@ it before the proposals, operational and solving measures apart.
 
 Near solves (25 Sept 2026): review every NEAR.md row -- has its named next step run since the last retrospective, with its
 control, and are the numbers in the row? A row that has not moved is a finding with the lane and the reason named.
+
+## Exception review (owner, 16 Oct 2026, ASKS 171; cap USD 3, Opus, within one parent check-in, never a full retrospective)
+Triggered by `python3 tools/retro_check.py` line (e): since the last retrospective or EXC row, an X (over-claim) row, a worker that
+died with no repository, three or more rows at 2x their cap or more, a gate found blind, or a registered lesson broken again. The
+reviewer reads only the rows the line names, their NOTES.md/ROOM.md context and the RETRO-PROPOSALS.tsv rows they touch, and writes
+`learning/EXC-<date>.md` with, per row: the failure in one sentence, whether an existing rule or tool should have caught it (name it),
+the smallest correction (a tool/test diff, a brief line, or "none: a one-off") and who applies it. Then appends one register row
+`EXC-<date>	EXC<n>	<what>	applied|open	learning/EXC-<date>.md	<date>	<who>` to RETRO-PROPOSALS.tsv (an `applied` row clears the
+trigger; an `open` row is the parent's duty 0d within 7 days). No ledger recode, no CLAUDE.md edit by the reviewer.

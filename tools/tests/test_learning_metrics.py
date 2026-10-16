@@ -22,6 +22,8 @@ LEDGER = """| Date | Role | Model | Cost | Outcome | Lesson |
 | 12 Oct 2026 | OBRED-3 oldenbarnevelt-brederode-1605 screen | session_01E | account-2 | Opus 5.5 | 3.0 | N | control FAIL, non-test |
 | 12 Oct 2026 | GOOD-1 some-target-1600 read | session_01F | account-2 | Opus 5.5 | 2.0 | D | under cap 0.8x the 2.5 cap |
 | 12 Oct 2026 | LANE DEFAULT-account-2 orchestrator (account 2) | session_01G | account-2 | Opus 5.5 | 20.0 | D | lane self row |
+| 12 Oct 2026 | GOOD-1 some-target-1600 read (written twice) | session_01F | account-2 | Opus 5.5 | 2.5 | D | the same session ledgered again with its final cost |
+| 12 Oct 2026 | CRYPT-1 some-target-1600 family_run homophonic | session_01I | account-2 | Opus 5.5 | 4.0 | N | control first, target below |
 | 20 Oct 2026 | LATE-1 some-target-1600 read | session_01H | account-2 | Opus 5.5 | 5.0 | D | 3x the cap -- outside the window |
 """
 REG = "retro\tproposal\tasks_for\tstatus\tevidence\tdecided_on\tby\nRETRO-X\tP1\ta\tapplied\ttools/x.py + tools/tests/test_x.py\t2026-10-12\tme\nRETRO-X\tP2\tb\topen\t\t2026-10-12\tme\nRETRO-X\tP3\tc\tapplied\tprose\t2026-10-30\tme\n"
@@ -37,14 +39,16 @@ with tempfile.TemporaryDirectory() as td:
     sp = os.path.join(td, "status.json"); json.dump(STATUS, open(sp, "w"))
     m = lm.compute(lm.load_rows(lp), lm.load_results(sp), lm.load_register(rp), datetime.date(2026, 10, 9), datetime.date(2026, 10, 15))
     chk = [
-        (m["rows"] == 7, f"rows {m['rows']} != 7"),
-        (abs(m["worker_usd"] - 20.75) < 0.01, f"worker_usd {m['worker_usd']} != 20.75 (orchestrator row excluded)"),
+        (m["rows"] == 9, f"rows {m['rows']} != 9"),
+        (abs(m["worker_usd"] - 25.25) < 0.01, f"worker_usd {m['worker_usd']} != 25.25 (orchestrator row excluded; the double-written GOOD-1 counted once at its last cost 2.5)"),
+        (m["double_written_rows_dropped"] == 1 and abs(m["double_counted_usd_removed"] - 2.0) < 0.01, f"dedupe {m['double_written_rows_dropped']} {m['double_counted_usd_removed']}"),
+        (abs(m["cryptanalysis_share"]["usd"] - 4.0) < 0.01, f"crypt share {m['cryptanalysis_share']}"),
         (m["operational"]["over_cap"]["rows"] == 1, f"over_cap {m['operational']['over_cap']}"),
         (m["operational"]["no_repository"]["rows"] == 1, "no_repository not counted"),
         (m["repeated_approaches"]["rows"] == 1, f"repeat rows {m['repeated_approaches']['rows']}"),
         (m["repeated_approaches"]["targets_with_3plus_N"] == 1, f"3+N targets {m['repeated_approaches']}"),
         (m["retro_proposals"]["applied"] == 1 and m["retro_proposals"]["applied_with_test"] == 1 and m["retro_proposals"]["open"] == 1, f"register {m['retro_proposals']}"),
-        (m["solves"]["n3_d2_new"] == 1 and m["solves"]["usd_per_solve"] == 20.75, f"solves {m['solves']}"),
+        (m["solves"]["n3_d2_new"] == 1 and m["solves"]["usd_per_solve"] == 25.25, f"solves {m['solves']}"),
         (m["solves"]["ours_key"] == 0 and m["solves"]["usd_per_ours_key_solve"] == "no solve with our own key", f"key split {m['solves']}"),
     ]
     for ok, msg in chk:

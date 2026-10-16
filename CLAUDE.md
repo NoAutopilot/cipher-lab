@@ -354,6 +354,16 @@ takes none of its targets.
 3. **Orchestrator** promotes to the board only after check-solved, at most a handful at a time, choosing by
    score and by the three kinds together, so the board always carries at least one recovery and one
    cryptanalysis candidate and never fills with editions.
+   **Route priority (owner, 16 Oct 2026).** Every counted reading so far came from a key source: a period or published key,
+   a gloss or clear copy aligned by us, or a pool of siblings (LESSONS.md, UPDATES.md 25 Sept; LEARNING-LOOP-2026-10-16.md).
+   Lanes fill their slots in this order: (1) key-assisted recovery (a key or codebook on disk or in reach), (2) archival
+   acquisition of key material, clear copies and siblings (REQUEST.md, ASKS rows, the copy orders), (3) sibling and gloss
+   alignment (`tools/interlinear_align.py`, HOT-COLD.tsv rows with a source on disk and no alignment run), and only then (4)
+   independent cryptanalysis. Cryptanalysis is not eliminated: it keeps a **bounded experimental allocation of 15% of each
+   week's worker spend** (about USD 650 at the October volume; `tools/learning_metrics.py` reports the share), spent only on a
+   problem with a written hypothesis, a matched control run first (`tools/family_run.py`) and a stop criterion in its PREREG
+   Decision block; a family that stops is not re-briefed on that target without new material (rule 3). The owner re-sets the
+   percentage; nobody else.
    Selection rule, pools first (25 Sept 2026, UPDATES.md): between two candidates of equal expected value, take the one that
    belongs to a sign pool -- one sender, office and key family with 2,000 or more signs across its letters -- over a single
    short letter; every reading on the board so far came from a period key or a pool of siblings, and the controls say our
@@ -1045,9 +1055,13 @@ cost), with "(for <account>)" in the role. The requesting orchestrator writes no
 in its handoff or STATUS.md (RETRO-2026-10-03-acct3 P4: 24 "not visible from account N" twins on 2-3 Oct doubled the
 12-row retrospective trigger).
 Briefs are copies of the templates in `.claude/briefs/`; a lesson becomes a template edit, not a note. A
-retrospective session (`.claude/briefs/retrospective.md`) runs after every 12 ledger rows or $60 of worker
-usage, whichever comes first (the orchestrator checks after every worker report), and after any worker scored X
-or F; it reads the ledger and the period's log and proposes at most five concrete changes as diffs in
+retrospective session (`.claude/briefs/retrospective.md`) runs **weekly** (owner, 16 Oct 2026, ASKS 171; the earlier rule of
+every 12 ledger rows or USD 60 would fire forty times a week at the October volume and was never met), plus an
+**exception review** -- a short job (cap USD 3, the retrospective brief's section "Exception review") within one check-in,
+never a full retrospective -- whenever `tools/retro_check.py` reports a recurring critical failure since the last review:
+an X (over-claim) row, a worker that died with no repository, three or more rows at 2x their cap or more, a gate found
+blind, or a lesson already in RETRO-PROPOSALS.tsv broken again. The full retrospective reads the ledger and the period's log
+and proposes at most five concrete changes as diffs in
 RETRO-<date>.md (approved by the owner 24 Sept 2026, ASKS row 23). The orchestrator applies changes that only touch briefs, tools or workflows, records them in
 the ledger, and puts anything that changes the goal, the spend or the person's asks to the person with a
 recommendation. Success is measured as cost per delivered result by role, share of workers that stop on

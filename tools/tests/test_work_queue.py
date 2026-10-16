@@ -175,3 +175,42 @@ if __name__ == '__main__':
     for k, f in list(globals().items()):
         if k.startswith('test_'): f()
     print('ok')
+
+
+# Spawn gate on --claim (16 Oct 2026, owner: "make the spawn validation mandatory where technically possible")
+import json as _json
+
+
+def _run_claim(tmpdir, extra):
+    p = os.path.join(tmpdir, 'WQ.tsv')
+    open(p, 'w').write('\t'.join(w.COLS) + '\n' + 'J1\taccount-2\tb.md\tOpus 5.5\t4\t60\tqueued\t2026-10-16 04:00\tn\n')
+    env = dict(os.environ, WQ_PATH=p)
+    r = subprocess.run([sys.executable, os.path.join(os.path.dirname(__file__), '..', 'work_queue.py'), '--claim', 'J1', '--session', 'session_01X', *extra],
+                       capture_output=True, text=True, env=env)
+    return r.returncode, r.stdout + r.stderr, open(p).read()
+
+
+def test_claim_refuses_without_spawn_object():
+    d = tempfile.mkdtemp()
+    rc, out, txt = _run_claim(d, [])
+    assert rc != 0 and 'spawn' in out and 'claimed' not in txt
+
+
+def test_claim_refuses_spawn_without_source_url():
+    d = tempfile.mkdtemp()
+    bad = os.path.join(d, 'bad.json'); _json.dump({"model": "claude-opus-5-5", "prompt": "x", "title": "LIVE J1", "source_revision": "main"}, open(bad, 'w'))
+    rc, out, txt = _run_claim(d, ['--spawn', bad])
+    assert rc != 0 and 'source_url' in out and 'claimed' not in txt
+
+
+def test_claim_accepts_complete_spawn_object():
+    d = tempfile.mkdtemp()
+    good = os.path.join(d, 'good.json'); _json.dump({"source_url": "https://github.com/NoAutopilot/cipher-lab", "source_revision": "main", "model": "claude-opus-5-5", "prompt": "x", "title": "LIVE J1 worker"}, open(good, 'w'))
+    rc, out, txt = _run_claim(d, ['--spawn', good])
+    assert rc == 0 and 'claimed session_01X' in txt
+
+
+def test_claim_ui_created_escape_is_recorded():
+    d = tempfile.mkdtemp()
+    rc, out, txt = _run_claim(d, ['--ui-created', 'owner started it in the app'])
+    assert rc == 0 and 'ui-created: owner started it' in txt

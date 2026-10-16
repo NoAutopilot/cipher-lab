@@ -15,3 +15,14 @@ retrospectives already read them). Then move `tools/data/ledger_check_baseline.t
 only if every row after the new baseline passes `python3 tools/ledger_check.py` (paste the output); otherwise leave the baseline.
 `python3 tools/file_shrink_guard.py LEDGER.md` before the push. NOTES: none (ledger only); done line with the counts recoded per
 letter and the duplicates resolved.
+
+## JOB EXC-2026-10-16 (parent's own worker, account 4; Opus 5.5; cap USD 3; box 40 minutes; disk only, no network, no images; Price: vision calls: 0 x USD 0 = 0)
+The retrospective brief's "Exception review" section, exactly: `python3 tools/retro_check.py` line (e) on 16 Oct 2026 names, since
+RETRO-2026-10-12: one X row (LEDGER.md line 4443), one gate found blind (line 4542), and six rows at 2x their cap or more (lines
+4287, 4303, 4309, 4490, 4498, 4536 and any later ones the tool prints). Read only those rows, their NOTES.md/ROOM.md context and the
+RETRO-PROPOSALS.tsv rows they touch. Write `learning/EXC-2026-10-16.md`: per row, the failure in one sentence; whether an existing
+rule or tool should have caught it (name it); the smallest correction (a tool/test diff, a brief line, or "none: a one-off") and who
+applies it; and, for the six over-2x rows, whether the 16 Oct Opus floor of 3.0 or the vision-call line would have caught them
+(check each row's brief in .claude/briefs/runs/ with `python3 tools/brief_price_check.py`). Append ONE register row to
+RETRO-PROPOSALS.tsv: `EXC-2026-10-16	EXC1	exception review of the 12-16 Oct critical rows	applied	learning/EXC-2026-10-16.md	2026-10-16	<your session id>`
+(status `open` instead if a correction needs the parent). No ledger recode, no CLAUDE.md edit, no other file. Done line in ROOM.md.

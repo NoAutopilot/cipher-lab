@@ -48,3 +48,27 @@ with tempfile.TemporaryDirectory() as td:
 if fails:
     print(f"{fails} failure(s)"); sys.exit(1)
 print("ok: retro_check flags stale open proposals, unregistered proposals and a lapsed cadence, and passes a clean register")
+
+# (e) exception review (owner, 16 Oct 2026): an X row, a no-repository death or 3+ rows at 2x cap since the last review
+with tempfile.TemporaryDirectory() as td:
+    open(os.path.join(td, "RETRO-2026-10-12.md"), "w").write(RETRO)
+    open(os.path.join(td, "LEDGER.md"), "w").write("| Date | Role | Model | Cost | Outcome | Lesson |\n|---|---|---|---|---|---|\n"
+        "| 14 Oct 2026 | x | session_01A | account-1 | Opus 5.5 | 3.0 | X | over-claimed and corrected |\n"
+        "| 14 Oct 2026 | y | session_01B | account-1 | Opus 5.5 | 9.0 | D | 2.3x the 4 cap |\n"
+        "| 14 Oct 2026 | z | session_01C | account-1 | Opus 5.5 | 8.0 | D | 2.0x the 4 cap |\n"
+        "| 14 Oct 2026 | w | session_01D | account-1 | Opus 5.5 | 8.5 | D | 2.1x the 4 cap |\n"
+        "| 11 Oct 2026 | old | session_01E | account-1 | Opus 5.5 | 8.5 | X | before the window |\n")
+    reg = os.path.join(td, "reg.tsv")
+    open(reg, "w").write(HDR + "RETRO-2026-10-12\tP1\tFix\tapplied\ttools/x.py\t2026-10-13\tx\nRETRO-2026-10-12\tP2\tAnother\tdeclined\twhy\t2026-10-13\tx\n")
+    findings, info = rc.run(reg, td, os.path.join(td, "LEDGER.md"), NOW, 7, 8, datetime.date(2026, 9, 28))
+    e = [f for f in findings if f.startswith("(e)")]
+    if not e or "over_claim_X rows [3]" not in e[0] or "over_2x_cap rows [4, 5, 6]" not in e[0] or "7" in e[0].split("over_claim_X rows")[1].split(";")[0]:
+        print(f"FAIL: exception review not triggered correctly: {findings}"); fails += 1
+    # an EXC row dated after the X row clears it
+    open(reg, "a").write("EXC-2026-10-15\tEXC1\texception review of the 14 Oct X row\tapplied\tdone\t2026-10-15\tx\n")
+    findings, info = rc.run(reg, td, os.path.join(td, "LEDGER.md"), NOW, 7, 8, datetime.date(2026, 9, 28))
+    if any(f.startswith("(e)") for f in findings):
+        print(f"FAIL: a registered exception review did not clear the trigger: {findings}"); fails += 1
+if fails:
+    print(f"{fails} failure(s) in the exception-review checks"); sys.exit(1)
+print("ok: exception review triggers on an X row / 3+ rows at 2x cap since the last review and clears after an EXC row")

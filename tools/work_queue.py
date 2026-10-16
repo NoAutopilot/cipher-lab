@@ -162,6 +162,8 @@ def main():
     ap.add_argument("--blast", choices=ACCOUNTS, help="keep --lanes N lane rows open for this account until --until")
     ap.add_argument("--lanes", type=int, default=1); ap.add_argument("--until", help='"YYYY-MM-DD HH:MM" UTC')
     ap.add_argument("--unblast", choices=ACCOUNTS)
+    ap.add_argument("--spawn", metavar="ARGS.json", help="--claim: the create_session argument object you are about to pass (print it with tools/spawn_args.py --job JOB); refused when it lacks source_url, source_revision, model, prompt or a LIVE title")
+    ap.add_argument("--ui-created", metavar="WHY", help="--claim: the worker was started by a person in the UI or already exists (name it); the only way to claim without --spawn")
     a = ap.parse_args(); rows = load()
     if a.blast or a.unblast:
         A = canon(a.blast or a.unblast); jid = "BLAST-" + A
@@ -209,7 +211,20 @@ def main():
             if a.claim:
                 if not r["status"].startswith("queued"): sys.exit(f"{key} is {r['status']}, not queued")
                 if not a.session: sys.exit("--claim needs --session")
+                # Spawn gate (16 Oct 2026, owner: "make the spawn validation mandatory where technically possible"):
+                # the claim is the one mechanical step every lane takes between a queued row and create_session, so
+                # it refuses to record a claim whose call lacks the repository (8 workers were spawned without it).
+                if not a.spawn and not a.ui_created: sys.exit("--claim needs --spawn ARGS.json (print it with: python3 tools/spawn_args.py --job " + key + ") or --ui-created WHY")
+                if a.spawn:
+                    import json as _json
+                    sys.path.insert(0, HERE)
+                    import spawn_args as _sa
+                    try: obj = _json.load(open(a.spawn, encoding="utf-8"))
+                    except Exception as e: sys.exit(f"--spawn {a.spawn}: not readable JSON ({e})")
+                    problems = _sa.check_args(obj)
+                    if problems: sys.exit("--claim refused, the create_session call is incomplete: " + "; ".join(problems))
                 r["status"] = f"claimed {a.session} {now()}"
+                if a.ui_created: r["note"] = (r["note"] + "; " if r["note"] else "") + "ui-created: " + a.ui_created
             elif a.done: r["status"] = f"done {now()}"
             else:
                 if not a.note: sys.exit("--bounce needs --note")

@@ -75,6 +75,44 @@ def proposals_in_retros(retro_dir, since=None):
     return found
 
 
+CRITICAL = {
+    "over_claim_X": lambda code, text: code == "X",
+    "no_repository": lambda code, text: bool(re.search(r'source_url|no repository|without the repository', text, re.I)),
+    "gate_found_blind": lambda code, text: bool(re.search(r'(gate|check|tool).{0,40}\b(blind|silently (?:skipp|miss)|never (?:saw|reach))', text, re.I)),
+}
+OVER2X = re.compile(r'(\d+(?:\.\d+)?)\s*x\s+(?:the\s+|its\s+|a\s+)?(?:\$|USD\s*)?(?:\d+(?:\.\d+)?\s*)?cap', re.I)
+
+
+def critical_since(ledger_path, since, register_rows=()):
+    """Exception-review triggers (owner, 16 Oct 2026, ASKS 171): rows dated on/after `since` that carry a critical shape --
+    an X row, a no-repository death, a gate found blind -- plus a count of rows at 2x their cap or more (three or more
+    trigger), and a registered lesson broken again (an applied register row whose asks_for words recur in a later Lesson)."""
+    hits = {k: [] for k in CRITICAL}
+    hits["over_2x_cap"] = []
+    lines = open(ledger_path, encoding="utf-8").read().split("\n")
+    for i, line in enumerate(lines, 1):
+        if not line.startswith("| ") or line.startswith("| Date"):
+            continue
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        d = parse_day(cells[0]) if cells else None
+        if d is None or d < since:
+            continue
+        text = " | ".join(cells[2:])
+        code = ""
+        for c in cells[3:8]:
+            tok = c.split()[0].strip("*.,;") if c.split() else ""
+            if tok in ("D", "D-", "F", "X", "N", "Q"):
+                code = tok
+                break
+        for k, f in CRITICAL.items():
+            if f(code, text):
+                hits[k].append(i)
+        m = OVER2X.search(text)
+        if m and float(m.group(1)) >= 2.0:
+            hits["over_2x_cap"].append(i)
+    return hits
+
+
 def ledger_since(ledger_path, since):
     """(rows, usd) of LEDGER.md data rows dated on or after `since`."""
     rows = 0
@@ -119,7 +157,14 @@ def run(register, retro_dir, ledger, now, max_open_days, max_retro_days, registe
             findings.append(f"(c) newest retrospective is {age} days old ({newest.isoformat()}); the weekly cadence has lapsed")
         if os.path.exists(ledger):
             n, usd = ledger_since(ledger, newest)
-            info.append(f"(d) since {newest.isoformat()}: {n} LEDGER.md rows, about USD {usd:.0f} (written trigger: 12 rows / USD 60)")
+            info.append(f"(d) since {newest.isoformat()}: {n} LEDGER.md rows, about USD {usd:.0f} (cadence: weekly, owner 16 Oct 2026)")
+            last_review = max([newest] + [parse_day(r.get("decided_on") or "") for r in rows if (r.get("proposal") or "").startswith("EXC") and parse_day(r.get("decided_on") or "")])
+            hits = critical_since(ledger, last_review)
+            due = [k for k, v in hits.items() if v and (k != "over_2x_cap" or len(v) >= 3)]
+            if due:
+                findings.append("(e) exception review due since " + last_review.isoformat() + ": " +
+                                "; ".join(f"{k} rows {hits[k][:6]}{'...' if len(hits[k]) > 6 else ''}" for k in due) +
+                                " -- run the retrospective brief's 'Exception review' (cap USD 3) and register it as an EXC-<date> row")
     return findings, info
 
 
