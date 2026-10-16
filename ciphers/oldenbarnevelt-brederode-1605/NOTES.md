@@ -2674,3 +2674,5 @@ witness or more groups in the same system (stride-1 around it, ~$1.5).
 
 ## Split to ciphers/brederode-heidelberg-1621
 HEID-1621C (15 Oct 2026): the 1621 Heidelberg numeral text (inv. 6021 scans 375/379) now has its own folder, `ciphers/brederode-heidelberg-1621/` (status `blocked`, Resolutiën SG 1621 unread: Huygens 503); working files stay in `heid1621/` here.
+
+- HEID-NA-SCREEN (16 Oct 2026): inv. 6022 186-594 stride 3 screened on 700 px composites with this folder's screen_tools; see `../brederode-heidelberg-1621/NOTES.md` "## HEID-NA-SCREEN". inv. 6016 orders 1-259 at stride 3 not run (cap).

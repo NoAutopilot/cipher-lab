@@ -675,7 +675,7 @@ Read so far: 0 of about 129 units (1621: 59 transcribed, all M; 1623 12 Aug bloc
 - the key - blocker: waiting-on ASKS row 170 (Nationaal Archief reproduction of 1.01.02 inv. 6056, 6055, 12578.1; REQUEST.md)
 
 ## Escalation (HEID-1623A, 16 Oct 2026)
-- [ ] siblings: 6022 scan 181 (Oct 1623) located, not transcribed; 6022 186-595 not checked on composites; planned: 181 transcription ~$7.6, composite pass ~$2
+- [ ] siblings: 6022 scan 181 (Oct 1623) located, not transcribed; 6022 186-594 screened at stride 3 on 700 px composites (HEID-NA-SCREEN, 16 Oct 2026): no numeral block on the 137 scans seen, but one-line blocks are not excluded (planted scan-181 control 0/2) and the other 273 scans in 186-595 are unseen; planned: 181 transcription ~$7.6, 1200 px single-scan pass over the unseen 6022 scans (2 sessions of <= 140 requests) ~$5
 - [x] clear-pages: the clear prose and the clear note around the 12 Aug 1623 block read (HEID-1623A, M)
 - [retired] known-keys: instrument tools/interlinear_align.py retired at N<=200 (HEID-1623CAL: 0/20 at N 64-85, 2/20 at 120-200 on a known-true gloss); the 171 note is a clear rendering of the passage (M); next instruments (parent, 16 Oct 2026, after HEID-1623CAL): (1) a letter-level hand alignment of the five pairs with a positive control built by heid1623cal/calib.py at N=64 first, ~$4; (2) the period key itself (ASKS row 170). The "pooled pairs with 181, ~$9" step is not briefed.
 - [x] print: Resolutien NR 5 and NR 6 searched; no printed decipherment of any Brederode cipher passage (NR 6 records Joachimi's solutions, does not print them)
@@ -721,3 +721,26 @@ a re-tune of this one: (1) a letter-level hand alignment of the five pairs (each
 words), priced as its own job with a positive control built by this calib.py at N=64 first; (2) the period key itself (ASKS row 170, NA
 inv. 6056/6055/12578.1). For the parent: the known-keys step's instrument `tools/interlinear_align.py` is [retired] for this hypothesis at
 N <= 200 (rule 3); the Escalation line's "planned: pooled pairs with 181, positive control first, ~$9" should be replaced by (1) or (2).
+
+## HEID-NA-SCREEN (16 Oct 2026)
+13:24-13:4x UTC by date -u, account 4, Opus worker; brief `.claude/briefs/runs/2026-10-16-acct4-research-steps.md` (U1 only). Screen, no
+transcription, no reading. Every call below is M (by eye at 700 px).
+- **Scans seen:** NA 1.01.02 inv. 6022 (METS 412b1414-afa2-42fe-b56d-2b5f705e5005, 595 scans) orders 186-594 at **stride 3 (137 of the 410
+  scans in 186-595)**, each at its fetched 700 px width (scans are double-page spreads, about 350 px per page), four to a 1410 px
+  composite (`heidnascreen/composites.py`, seed 16230; key `heidnascreen/compkey.json` opened only after all 36 composites were called;
+  calls in `heidnascreen/calls.tsv`; sha1s `heidnascreen/scans_sha1.txt`; `heidnascreen/regen_heidnascreen.sh` re-derives it all).
+  The 140-request limit set the stride: stride 1 over 186-595 would need 410 requests.
+- **Controls (5 planted, shuffled in, blind):** CTRL-CIPHER (NA 3.01.14 inv. 2016 p.31, full cipher page) called; POS166 (the 12 Aug 1623
+  block, about 5.5 lines of number groups inside prose) called; NEG-PLAIN (6016 p.261, plain Dutch) correctly not called; **POS181 (the
+  Oct 1623 one-line block) planted twice and missed both times** -- noticed only after the batch because the two tiles were identical.
+  So: blocks of about five lines or more 2/2, one-line blocks 0/2. The 700 px composite is not a test for a one-line block.
+- **Hits on target scans:** none. Two calls checked at 2x from disk and dropped: scan 339 (left page, top) two small column additions
+  with total lines, arithmetic not code; scan 351 French prose with no number groups. Scan 348 (left page) has a few sums near the foot,
+  arithmetic. Seen elsewhere (M): Brederode letters 1624-1626 with their datelines and signatures, French and German news extracts, a
+  Latin piece, address leaves, blank leaves.
+- **Result:** no numeral block of about five lines or more on the 137 scans seen (stride 3, 700 px, controls as above). One-line blocks
+  on those scans and anything on the 273 unseen scans are not excluded.
+- **Requests:** service.archief.nl 140 (METS 1 + 139 scans at 700 px), all 200, >= 3.1 s apart, take/release in ROOM.md. No other host.
+- **U2 (inv. 6016 orders 1-259 at stride 3) not run:** U1 used about 15 minutes of the 60-minute box, but its 36 composite views put
+  spend near half the USD 4 cap, and U2 (about 87 requests and about 22 more composites) would cross 80% of the cap. It also has the same
+  blind spot for one-line blocks. Left for a later job.
