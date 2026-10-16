@@ -130,11 +130,11 @@ available, the work pauses until a reset. (The account-3 dispatcher spawned VERI
 Opus 5.5 at 00:12 UTC 29 Sept under the old fallback; that fallback no longer applies.)
 
 ## Usage watch (tools/usage_watch.py, rewritten by the parent at every check-in)
-Read 2026-10-16 03:12 UTC. Status words are each account's own ROOM.md self-report; bars need the cipher-lab-usage mod.
+Read 2026-10-16 04:15 UTC. Status words are each account's own ROOM.md self-report; bars need the cipher-lab-usage mod.
 
 | account | status word | age (min) | resets | live claims | 5h bar | 7d bar | flag |
 |---|---|---|---|---|---|---|---|
-| 1 | allowed_warning | 7 | 05:00 UTC 17 Oct | 0 | -- | -- | STOP: no new workers anywhere |
-| 2 | allowed | 54 | 06:20 UTC 16 Oct | 10 | -- | -- | ok |
-| 3 | allowed_warning | 6970 | -- | 0 | -- | -- | old warning (6970 min), idle: not current |
-| 4 | allowed | 30 | 04:30 UTC | 6 | -- | -- | ok |
+| 1 | allowed_warning | 22 | 05:00 UTC 17 Oct | 0 | -- | -- | seven-day warning: not a stop (owner, 24 and 27 Sept 2026, BUDGETS.md); keep dispatching under the caps |
+| 2 | allowed | 1 | 06:20 UTC 16 Oct | 11 | -- | -- | ok |
+| 3 | allowed_warning | 7033 | -- | 0 | -- | -- | seven-day warning: not a stop (owner, 24 and 27 Sept 2026, BUDGETS.md); keep dispatching under the caps |
+| 4 | allowed | 2 | 04:30 UTC | 6 | -- | -- | ok |
