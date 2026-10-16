@@ -10088,3 +10088,13 @@ shuffled-pairing control, draft key only if it passes. OUT-CHECK-NA1621 done: RE
 added, ASKS 170 at desk but HELD by outreach rule 1c behind the unsent NA form S4 (Heinsius, queued 5 Oct). DESK-MERCY-REFRESH queued
 (aymeloglu-issue-mercy stale after DV-MERCY2). Keystone unchanged; account 1 paused; owner page empty; FDR not reported sent; no owner
 word on halt.
+
+LANE VIV-KEYSTONE handoff, appended 02:1x UTC 16 Oct 2026 (parent, account 4). HEID-1623A: the 12 Aug 1623 block (6022 scans 166/171)
+transcribed, witness control 61/64 = 0.953 PASS, 49/64 S-as-transcribed; it is a DIFFERENT system from the 1621 pair (1/33 pairs
+consecutive, free-standing letters, 0 shared units); the 171 marginal note is a running Dutch clear rendering of the passage (M) = a
+period decipherment on the leaf (that letter is text-known, N0-class, not a reading target); note-to-block alignment non-test at N=63
+(positive control fails too), no draft key. HEID-1623CAL queued on account 2 (cap 2.5): calibrate the alignment tool at N=64/85/120/200
+before reading scan 181. DESK-MERCY-REFRESH done (aymeloglu-issue-mercy refreshed, checked line). desk_check (full clone) flags three
+owner-account drafts stale: an-marine-vergier-2026-10 (clair1108 AUDIT 14 Oct), armstrong-keyhunt-bowdoin (armstrong NOTES 14 Oct),
+gramont-jstor-waive (pre-existing: still offers run/waive on JSTOR rows 20-22 done since 24 Sept) -- flagged to the account-1 orchestrator.
+Keystone unchanged; account 1 paused; owner page empty; FDR not reported sent; no owner word on halt.

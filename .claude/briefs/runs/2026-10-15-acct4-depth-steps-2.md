@@ -194,3 +194,15 @@ and AUDIT.md changed 15 Oct: MERCY-M33, MERCY-IMG, DV-MERCY2 -- 13 positions set
 its status line date, add a `checked:` line naming what changed (a separate session from the drafter, as gate 7 requires), and run
 desk_check again (paste). Also look at gramont-jstor-waive (flagged stale against ciphers/eckert-1864/NOTES.md c1ba59c): say in one line
 whether the Eckert change touches that draft's facts; fix only if it does. No send, no CONTRIBUTIONS change unless a slug is missing.
+
+## JOB HEID-1623CAL (account 2; Opus 5.5; cap USD 2.5; box 40 minutes; disk only, no network, no readers, no images; Price: vision calls: 0 x USD 0 = 0)
+ciphers/brederode-heidelberg-1621 after HEID-1623A: `tools/interlinear_align.py` on the 12 Aug 1623 block (64 tokens) against its marginal
+clear note read "real 1 vs p95 1", and a known-true positive control also read 1 at that N -- untestable by this tool at N=63 (CLAUDE.md
+rule 3, "control first"). Before anyone reads scan 181 + its note (6 priced units) for a pooled alignment at about N=85, calibrate: build
+synthetic known-true (group, span) pairs with the 1623 block's own grammar (numeral groups with free-standing letters, Dutch clear spans of
+the note's word-length distribution; heid1623a/grammar_1623_vs_1621.tsv), 20 seeds each at N = 64, 85, 120, 200, and run the tool exactly
+as HEID-1623A did (shuffle 200); report per N the share of seeds whose positive control passes the p95 gate, and the smallest N at which
+it passes in >= 90% of seeds. PREREG-HEID1623CAL.md first (the gate, the seeds, the grammar). Write the result to HYPOTHESES.md (one row,
+"untested-by-this-tool below N = ..."), NOTES.md "## HEID-1623CAL (<date -u>)", and the one-line verdict: "read scan 181 for a pooled
+alignment: yes (N=85 passes) / no (next instrument or more material)". No reading, no key. If the answer is no, name what else the 1623
+clear note licenses (a text-known item at N0 on the leaf: AUDIT-ready as 'period decipherment on the leaf', not a reading of ours).
