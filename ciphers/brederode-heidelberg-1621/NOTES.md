@@ -677,7 +677,7 @@ Read so far: 0 of about 129 units (1621: 59 transcribed, all M; 1623 12 Aug bloc
 ## Escalation (HEID-1623A, 16 Oct 2026)
 - [ ] siblings: 6022 scan 181 (Oct 1623) located, not transcribed; 6022 186-595 not checked on composites; planned: 181 transcription ~$7.6, composite pass ~$2
 - [x] clear-pages: the clear prose and the clear note around the 12 Aug 1623 block read (HEID-1623A, M)
-- [retired: tools/interlinear_align.py at N<=200, HEID-1623CAL 0/20 at N 64-85, 2/20 at 120-200 on a known-true gloss] known-keys: the 171 note is a clear rendering of the passage (M); next instruments (parent, 16 Oct 2026, after HEID-1623CAL): (1) a letter-level hand alignment of the five pairs with a positive control built by heid1623cal/calib.py at N=64 first, ~$4; (2) the period key itself (ASKS row 170). The "pooled pairs with 181, ~$9" step is not briefed.
+- [retired] known-keys (instrument tools/interlinear_align.py at N<=200, HEID-1623CAL: 0/20 at N 64-85, 2/20 at 120-200 on a known-true gloss): the 171 note is a clear rendering of the passage (M); next instruments (parent, 16 Oct 2026, after HEID-1623CAL): (1) a letter-level hand alignment of the five pairs with a positive control built by heid1623cal/calib.py at N=64 first, ~$4; (2) the period key itself (ASKS row 170). The "pooled pairs with 181, ~$9" step is not briefed.
 - [x] print: Resolutien NR 5 and NR 6 searched; no printed decipherment of any Brederode cipher passage (NR 6 records Joachimi's solutions, does not print them)
 - [ ] key-rebuild: from the note once an alignment passes its control; planned: as known-keys
 - [x] image-check: native regions of 166 and 171 read (HEID-1623A)
