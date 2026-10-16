@@ -1,0 +1,59 @@
+# HEID-1623A raw reader returns (Sonnet, blind, line crops only, 16 Oct 2026 ~01:3x UTC by date -u). Verbatim token rows; uncertainty notes abridged only where marked.
+## 166 block reader A (crops h166_L01-L07)
+L01	[clear: master in desen te gaen ende tijt te gewinnen] , [clear: dat het nuyt ondien]
+L02	[clear: nelijck soude sijn] , 43 , c , [sym: z-like flourish letter, 3-shaped with bar] , 22 , 40 , [sym: y with diaeresis/dots] , 6i . . [clear: bijde] , [clear: bequaemste]
+L03	[clear: occasie] , 59 . h , 49 , [clear: Lair] . 84(overwritten/blotted) . 20 , 45 . [clear: schrijvinge] 45 . 20 . 72 , r , 62 , r
+L04	45 [sym: struck/blotted letter group] [clear: ?desct] . 16 . 78 . 78 . c , 24 . 67 . 50 , p , m , x(underlined) , 58 , 23 , [sym: long-s-like letter] 10 . 20 . [sym: H with bar/crossed H] . 22 94 . 78
+L05	[above: 61 ,] i3 , 22 , [clear: gaen]? [sym: flourished letter] . 30 . 78 . i , r , 60 , 49 , 16 , c , 24 , 47 , [clear: Wat] , [clear: Godt] 69 . 2 , a , d .
+L06	40 , r , 48 , 30 , 24 , 67 , 23 , 46 .
+L07	[clear: en loop der gemeene sachen betreffende vermemptten alhier]
+# A uncertain: L01 "master"; L02 sym tokens, 6i, 43; L03 "84" (blotted/overwritten, possibly 84 with strike), "Lair", final r after 62 (maybe x); L04 first-group after 45 (illegible struck sign), "?desct", x (underlined), "H" sign, final 78; L05 above-line "61 ," (position approx above 49), i3 (could be 13), "gaen" and following sign, comma-marks beneath "49" and "16"; L06 "r" tokens, 48 (8 looks like 6/8); L07 "vermemptten"
+## 171 block reader A (crops h171_L01-L07)
+L01	[clear: nooden te sijn om vaster in desen te gaen , ende tijt te gewinnen ,]
+L02	[clear: dat het niet ondienelijcke soude sijn] . 43 , [sym: c-like sign with flourish, perhaps S/5]? , 22 , 40 , [sym: y with diaeresis/two dots above] , 61 , [clear: bijdc?(bijde)] ,
+L03	[clear: bequaemste occasie] 59 . [sym: h-like sign, perhaps 5/6]? , 40 , [clear: leux?(lenx)] 84 . 20 , 45 , [clear: schrijvinge] 45 . [sym: colon-like] 20 . 72 .
+L04	x , 62 , [sym: e-like/c with tail]? , 45 , [clear: disch?(disque)] . 16 . 78 . [sym: c/E-like] , 24 , 67 . 50 . p , m , x 58 , 23 , [sym: long-s/f-like] . 10 . 20 . [sym: cross/H-like sign, "Ff"] . 22 . 94
+L05	78 . 13 , 22 , [clear: gevent?(geven)] . 30 . 78 . 1 , x , 60 , 61 , 49 , 69 , 16 , [sym: c-like] , 24 , 47 . [clear: Wat , eiodt?(eindt)] 69 . 2 , a . [sym: flourish at line end]
+L06	40 , x , 48 , 30 , 24 , 67 , 23 , 46 .
+L07	[clear: en loop der gemeente saecken betreffende , vernemptmen albier]
+# A uncertain (abridged): 43/45; sign after 43; y-dots; 61; bijdc; 59 and the h-like sign; leux; 84; colon mark; 72; first x of L04; e/c sign before 45; disch; 78.; c/E sign; 67.50; p m x; long-s sign; cross/H sign; 94; L05 78, gevent, x after 1, Wat eiodt, 69.2,a, end flourish; L06 x (e/x), 48
+## 171 note reader A (crops n171_L01-L09)
+L01	my Sielfr. Cijder Coquaaentse
+L02	occasie onder colleur bay
+L03	Det inschrijvinge in der —
+L04	West-Indische Compagnie, te
+L05	beloordery, Cijder Switserlen
+L06	of Cangelisten cantoent,
+L07	D.E.W. est Ae Cityoby, (?)
+L08	ter Cnrypocrity Mael Gioda
+L09	Sal Witeh gegeven. 3
+# A uncertain: most lines low confidence (L01, L02, L05-L09); L04 most secure; right-edge marks on L06, L07, L09 may be strays or a numeral.
+## 166 block reader B (crops h166_L01-L07)
+L01	[clear: master in desen te gaen ende tijt te gewinnen] , [clear: dat het nuet ondu...]
+L02	[clear: netlijch soude sijn] , 43 , c , [sym: z-like flourish letter, 3-shaped] , 22 , 40 , [sym: y with diaeresis/two dots] , 6i . . [clear: bijde bequaemste]
+L03	[clear: occasie] , 59 . [sym: h-like letter with flourish] , 49 , [clear: Lair?(Laer)] . 84?(struck/overwritten, blotted) . 20 , 45 . [clear: schrijvinge] 45 . 20 . 72 , r , 62 , r?(x)
+L04	45 [sym: flourished word/abbrev, "Disct?"-like] . 16 . 78 . 78 . c , 24 . 67 . 50 , p , m , x?(underlined) , 58 , 23 , [sym: long-s-like letter] 10 . 20 . [sym: H with bar/crossed H] . 22 94 . 78
+L05	[above: 61?(or "6i")] at position over "49"; line: . i3 , 22 , [clear: gewoenlijck?] . 30 . 78 . i , r , 60 , [above: 6i , ] 49 , . 16 , c , 24 , 47 , [clear: Wat] , [clear: Codt?] 69 . 2 , a , d .
+L06	40 , r , 48 , 30 , 24 , 67 , 23 , 46 .
+L07	[clear: ey loop der gemeinte saecken betreffende vermempten alhier]
+# B uncertain: L01 final word; L02 y-dots, 3-shaped letter, 6i; L03 Lair/Laer, struck 84, final r/x, 62; L04 flourished word after 45, x underlined, 58, long-s letter, crossed H, 94; L05 i3/13, superscript 61 above 49 (carets), gewoenlijck, Codt, 69; L07 ey loop, vermempten
+## 171 block reader B (crops h171_L01-L07)
+L01	[clear: nooden te sijn om wasten in desen te gaen] , [clear: ende tijt te gewinnen] ,
+L02	[clear: dat het niet ondienstelijck soudt sijn] . 43 , [sym: c-like loop with tilde, resembles c~5] , 22 , 40 , [sym: y with diaeresis] , 61 , [clear: b(r)yde?] [sym: terminal curl, possibly abbreviation]
+L03	[clear: bequaemste occasie] 59 . [sym: h with flourish, resembles b/h] , 40 , [clear: leur?] . 84 . 20 , 45 , [clear: schrijvings] [sym: abbreviation hook] 45 . 20 . 72 .
+L04	x , 62 , [sym: e-like loop with flourish, resembles g/e] , 45 , [clear: disc(r)e(e)t?] . 16 . 78 . [sym: c-like with curl] , 24 , 67 . 50 , p , m , x , 58 , 23 , [sym: long s/f with dot] . 10 . 20 . [sym: cross-barred H/tt-like sign] . 22 . 94
+L05	78 . 13 , 22 , [clear: gevoed?(geweld?)] . 30 . 78 . 1 , x , 60 , 61 , 49 , 69 , 16 , [sym: c with curl] , 24 , 47 . [clear: Wat] , [clear: eiodt?(eindt)] 69 . 2?(z) , a . [sym: terminal stroke]
+L06	40 , x?(r) , 48 , 30 , 24 , 67 , 23 , 46 .
+L07	[clear: en loop der gemeene saecken betreffende, vernemptmen albier]
+# B uncertain (abridged): c~5 sign; y-diaeresis; b(r)yde; h/b sign; leur; 84; 72; first x of L04; e/g sign after 62; disc(r)e(e)t; 78; c-curl sign; H-like sign; 94; gevoed/geweld; x; 16; eiodt; 2/z; L06 x/r, 48/49, 23
+## 171 note reader B (2x enlargements of crops n171_L01-L09)
+L01	wy Gelfr. Lijder Gequadrstrae?(Gequadrerstrae)
+L02	verstepien? onder volcher Cay
+L03	Ier inscriberingen in der —
+L04	West-Indische Compagnie, ter
+L05	Gebvordens, Lijder Zwitserlen?
+L06	Of Evangelischen Cantont,
+L07	D.E.M. Edt Aue Gelgeolgs, [?]
+L08	ter enrijnerky Wat Godt
+L09	Sal wilen geven. [?]
+# B uncertain: L01 most words; L02 all; L03 Ier, inscriberingen; L04 ter; L05 all; L06 Evangelischen, Cantont; L07 nearly all; L08 enrijnerky, ter; L09 final marks
