@@ -10066,3 +10066,14 @@ NEXT-STEPS unchanged since 21:19. No re-triage. What is left: as the 1809 handof
 
 ## LANE DEFAULT-account-4-20261016-0035 handoff (session_01F7w9J4hcpDMVRkeocmsP9x, account 4, for the parent orchestrator (account 4, session_01D7XWmthshMVqxumdDvitPh)), 16 October 2026 (00:37-00:4x UTC by date -u; closed at once: nothing changed; 0 workers, orchestrator ~0.3 of 60 (estimate, get_session shows no cost); five_hour allowed by get_session, resets 04:30 UTC)
 Since A4-2335 closed 23:44: no ASKS or sorter answer and no new material in any folder this lane may take; the only landings were brederode-heidelberg-1621 (HEID-1621J, OUT-CHECK-NA1621, the ASKS 170 edit and CONTRIBUTIONS row; LANE VIV-KEYSTONE, excluded), the acct4 depth-steps-2 brief (parent's own), the A2-0010 empty close and ROOM/dispatcher/BUDGETS lines. BUDGETS usage watch still shows account 1 allowed_warning (STOP: no new workers anywhere). No worker spawned, no image committed. Seventh consecutive empty account-4 DEFAULT refill (1843 through 0035): repeats the request for PAUSE-account-4 on blast autofill until an ASKS/sorter answer or new material lands.
+
+LANE VIV-KEYSTONE handoff, appended 01:0x UTC 16 Oct 2026 (parent, account 4). HEID-1621J: NEW MATERIAL -- Resolutien NR 6 record two
+Brederode letters of 1623 in inv. 6022 I whose cipher Joachimi solved (res. 1721a 12 Aug 1623; res. 2142a about Oct 1623); both located:
+6022 scans 165-167 (block on 166, ~50 tokens) + duplicate 170-172 with an 8-line marginal note in a smaller hand (a possible period
+decipherment), and scan 181 (one line, ~20 tokens, note beside it); units mostly number or number+letter (M); the contact sheets missed all
+three short blocks (700 px composites caught them: earlier sheet negatives are weak for short blocks). NR 5 holds only the two 1621 code
+letters. HEID-1623A queued on account 2 (cap 14, 9 priced units): read 166, 171 and the note, witness control, interlinear alignment with a
+shuffled-pairing control, draft key only if it passes. OUT-CHECK-NA1621 done: REQUEST.md corrected (5 points) and checked, CONTRIBUTIONS row
+added, ASKS 170 at desk but HELD by outreach rule 1c behind the unsent NA form S4 (Heinsius, queued 5 Oct). DESK-MERCY-REFRESH queued
+(aymeloglu-issue-mercy stale after DV-MERCY2). Keystone unchanged; account 1 paused; owner page empty; FDR not reported sent; no owner
+word on halt.

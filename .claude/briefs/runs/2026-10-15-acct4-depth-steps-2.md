@@ -167,3 +167,30 @@ what you corrected (or "nothing"), add the CONTRIBUTIONS.md row for the draft's 
 = access request, link), and update ASKS 170 from backlog to desk with the one-line ask for the owner (send from the project mailbox per
 Outreach (8) is NOT licensed by this job: the owner sends or queues it). `python3 tools/send_queue_check.py` on the draft if it has a
 SEND-QUEUE row; `python3 tools/desk_check.py`; paste both. No other edits. ROOM done line with what was corrected.
+
+## JOB HEID-1623A (account 2; Opus 5.5 worker, Sonnet readers; cap USD 14; box 100 minutes; service.archief.nl <= 10 (take/release lines, >= 3.1 s apart; scans on disk never refetched); Price: vision calls: 6 x USD 1.4 + 3 reconciliation = 12.6)
+ciphers/brederode-heidelberg-1621, new material from HEID-1621J: NA 1.01.02 inv. 6022 I, Brederode, Straatsburg 12 Aug 1623 (Resolutien NR 6
+p.260 res. 1721a: "bevat enkele regels in cijfer ... tot dit is opgelost" -- the States General's decipherer Joachimi solved it), located at
+scans 165-167 (cipher block on 166, about 50 tokens) and its duplicate 170-172 (block on 171 with an 8-line marginal note in a smaller hand
+beside it). Three units, each 2 blind Sonnet readers + 1 reconciliation (CLAUDE.md Usage 6 per-pass pricing): (1) fetch 166 and 171 at 1200 px
+if absent (manifest.json sha1), `tools/iiif_lines.py --image <scan> --out <dir>` pasted before the first reader call, readers get line crops
+only, text only; (2) PREREG-HEID1623A.md first: the witness control = block 166 vs block 171 per token (gate 0.90, as 375 vs 379); the rule
+for S-as-transcribed; and, for the marginal note, the rule for calling it a decipherment (it must align token-for-token or word-for-word with
+the cipher block under one mapping -- test with `tools/interlinear_align.py` on (group, span) pairs, the control being a shuffled pairing of
+note words to groups, 200 draws) -- a note that is a summary, a docket or a clerk's remark is reported as such, not forced; (3) outputs:
+`ciphertext_6022_166.tsv`, `ciphertext_6022_171.tsv` (line, pos, unit, number(s), letter, confidence, why), `note_6022_171.tsv` (the marginal
+note's words, two readers, reconciled, grade M), the alignment result with its control, and, ONLY if the alignment passes its control, a
+`key_1623_draft.tsv` (value -> meaning, count, grade C, source = the note) that the parent and a verifier look at before it touches any
+key.tsv; (4) report: witness agreement, unit grammar of the 1623 block vs the 1621 pair (pair+letter / number+letter / bare number), whether
+any 1623 unit coincides with a 1621 unit (same number and letter), the alignment numbers, requests per host. No reading of the 1621 pair, no
+key.tsv edit, rule 10 wording. NOTES.md "## HEID-1623A (<date -u>)" ending in the next row (scan 181 + its note, 6 units, or the key test on
+the 1621 pair if a draft key exists).
+
+## JOB DESK-MERCY-REFRESH (account 2; Opus 5.5; cap USD 2.5; box 30 minutes; disk only; Price: vision calls: 0 x USD 0 = 0)
+`python3 tools/desk_check.py` flags outreach/aymeloglu-issue-mercy.md as STALE (status dated 9 Oct; ciphers/espagnol142-mercy-1648 NOTES.md
+and AUDIT.md changed 15 Oct: MERCY-M33, MERCY-IMG, DV-MERCY2 -- 13 positions settled at S, depth_pct 92.2 -> 94.7, D1 held, longest run 53 ->
+89 under AD 125.9). Re-read the draft against AUDIT.md "## Depth re-rule 2 (DV-MERCY2, 15 Oct 2026)" and status.json result row for Espagnol
+144 f.22; correct every sentence the change touches (counts, percentage, the depth words "fragments read", nothing above rule 10), update
+its status line date, add a `checked:` line naming what changed (a separate session from the drafter, as gate 7 requires), and run
+desk_check again (paste). Also look at gramont-jstor-waive (flagged stale against ciphers/eckert-1864/NOTES.md c1ba59c): say in one line
+whether the Eckert change touches that draft's facts; fix only if it does. No send, no CONTRIBUTIONS change unless a slug is missing.
