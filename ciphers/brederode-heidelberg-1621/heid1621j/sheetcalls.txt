@@ -1,0 +1,8 @@
+# HEID-1621J sheet calls, written before each batch's sheet key is opened (16 Oct 2026, by date -u)
+# batch 1: inv. 6022 scans 165-218, seed 16220, sheets 01-06; CIPHER / PLAIN / PS / hits
+b1 sheet01 CIPHER=I PLAIN=J PS=E hits=none
+b1 sheet02 CIPHER=J PLAIN=A PS=D hits=none
+b1 sheet03 CIPHER=J PLAIN=G PS=H hits=none
+b1 sheet04 CIPHER=J PLAIN=I PS=E hits=none
+b1 sheet05 CIPHER=J PLAIN=E PS=I hits=none
+b1 sheet06 CIPHER=L PLAIN=E PS=I hits=none
