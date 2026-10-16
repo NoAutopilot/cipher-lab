@@ -89,6 +89,7 @@ def _cli(p, *args):
 
 
 def test_cli_next_fills_once_pause_resume_and_check():
+    # since 16 Oct 2026 the fill needs --autofill (owner: no automatic empty lanes); the mechanism itself is unchanged
     d = tempfile.mkdtemp(); p = os.path.join(d, 'WQ.tsv')
     open(p, 'w').write('\t'.join(w.COLS) + '\n' + '\t'.join(row('LANE-A', 'account-1', 'done 2026-10-01 00:00').values()) + '\n')
     r = _cli(p, '--next', '--account', 'account-1', '--no-autofill')
@@ -96,9 +97,9 @@ def test_cli_next_fills_once_pause_resume_and_check():
     r = _cli(p, '--pause', 'owner', '--note', 'test'); assert 'PAUSE-account-1 paused' in r.stdout
     assert _cli(p, '--next', '--account', 'account-1').stdout == ''
     _cli(p, '--resume', 'account-1')
-    r = _cli(p, '--next', '--account', 'owner'); assert r.stdout.startswith('DEFAULT-account-1-')
-    r = _cli(p, '--next', '--account', 'owner'); assert r.stdout.count('DEFAULT-') == 1  # queued row blocks a second
-    assert _cli(p, '--next', '--account', 'other').stdout.startswith('DEFAULT-account-2-')
+    r = _cli(p, '--next', '--account', 'owner', '--autofill'); assert r.stdout.startswith('DEFAULT-account-1-')
+    r = _cli(p, '--next', '--account', 'owner', '--autofill'); assert r.stdout.count('DEFAULT-') == 1  # queued row blocks a second
+    assert _cli(p, '--next', '--account', 'other', '--autofill').stdout.startswith('DEFAULT-account-2-')
 
 
 def test_check_accepts_pause_row():
@@ -214,3 +215,14 @@ def test_claim_ui_created_escape_is_recorded():
     d = tempfile.mkdtemp()
     rc, out, txt = _run_claim(d, ['--ui-created', 'owner started it in the app'])
     assert rc == 0 and 'ui-created: owner started it' in txt
+
+
+def test_next_does_not_autofill_by_default():
+    # owner, 16 Oct 2026: no automatic empty-lane creation; --next --account A fills only with --autofill
+    import tempfile
+    d = tempfile.mkdtemp(); p = os.path.join(d, 'WORK-QUEUE.tsv')
+    open(p, 'w').write("job_id\taccount\tbrief\tmodel\tcap_usd\tbox_min\tstatus\tadded\tnote\n")
+    r = _cli(p, '--next', '--account', 'account-2')
+    assert 'DEFAULT-' not in r.stdout and 'DEFAULT-' not in open(p).read(), (r.stdout, r.stderr)
+    r = _cli(p, '--next', '--account', 'account-2', '--autofill')
+    assert 'DEFAULT-' in open(p).read(), (r.stdout, r.stderr)

@@ -59,6 +59,13 @@ Read the clock with date -u before writing any time. Never call AskUserQuestion;
 (For a non-lane worker row use the account-2 worker prompt above with "account 1".)
 A `DEFAULT-` row (empty-queue auto-fill, below) is a lane row: spawn it with the lane prompt.
 
+## Empty-queue auto-fill: OFF (owner, 16 Oct 2026)
+
+`--next --account A` no longer appends a DEFAULT row when the queue is empty; a dispatcher that finds nothing queued spawns
+nothing and says so ("spawned 0"). The owner's words: "stop automatic empty-lane creation ... idle agents are cheaper than busy
+agents accomplishing nothing" (26 empty close-at-once default lanes on 16 Oct alone). Only the owner re-enables it (`--autofill`
+on the dispatcher's call). The mechanism below is kept for that case.
+
 ## Empty-queue auto-fill (5 Oct 2026, LANE-SYS1; owner-approved process fix)
 
 No trigger prompt changes: the logic lives inside `tools/work_queue.py --next --account <acct>`, which every existing

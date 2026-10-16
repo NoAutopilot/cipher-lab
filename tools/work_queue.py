@@ -13,7 +13,8 @@ Account aliases: owner == account-1, other == account-2, third == account-3 (--n
   python3 tools/work_queue.py --add JOB --account A --brief PATH --model M --cap N --box MIN [--note TEXT]
   python3 tools/work_queue.py --pause ACCOUNT [--note WHY] / --resume ACCOUNT   stop / restart auto-fill for an account
 
-Empty-queue auto-fill (LANE-SYS1, 5 Oct 2026; opt out with --no-autofill). `--next --account A` appends ONE row
+Empty-queue auto-fill (LANE-SYS1, 5 Oct 2026; OFF by default since 16 Oct 2026, owner: "stop automatic empty-lane creation" --
+a dispatcher fills only when it passes --autofill, which no standing dispatcher does). `--next --account A` appends ONE row
 DEFAULT-<A>-<YYYYMMDD-HHMM> (brief .claude/briefs/default-lane.md, Opus 5.5, cap 60, box 600, queued, note
 "auto-fill: empty queue") and prints it like any queued row when ALL hold, A read through the aliases above:
   (1) no queued row for A; (2) no open lane row for A (job_id LANE-* or DEFAULT-*, status claimed and not stale:
@@ -157,7 +158,8 @@ def main():
     ap.add_argument("--account", choices=ACCOUNTS); ap.add_argument("--claim"); ap.add_argument("--session")
     ap.add_argument("--done"); ap.add_argument("--bounce"); ap.add_argument("--add"); ap.add_argument("--note", default="")
     ap.add_argument("--brief"); ap.add_argument("--model"); ap.add_argument("--cap"); ap.add_argument("--box")
-    ap.add_argument("--no-autofill", action="store_true", help="--next: never append a DEFAULT row")
+    ap.add_argument("--no-autofill", action="store_true", help="--next: never append a DEFAULT row (the default since 16 Oct 2026)")
+    ap.add_argument("--autofill", action="store_true", help="--next: append a DEFAULT row when the queue is empty (owner opt-in only; off since 16 Oct 2026: 26 empty close-at-once lanes in one day, 'idle agents are cheaper than busy agents accomplishing nothing')")
     ap.add_argument("--pause", choices=ACCOUNTS); ap.add_argument("--resume", choices=ACCOUNTS)
     ap.add_argument("--blast", choices=ACCOUNTS, help="keep --lanes N lane rows open for this account until --until")
     ap.add_argument("--lanes", type=int, default=1); ap.add_argument("--until", help='"YYYY-MM-DD HH:MM" UTC')
@@ -181,7 +183,7 @@ def main():
         save(rows); print(jid, r["status"], r["note"]); return
     if a.check: sys.exit(0 if check(rows) else 1)
     if a.next:
-        if a.account and not a.no_autofill:
+        if a.account and a.autofill and not a.no_autofill:
             new, why = autofill(rows, a.account)
             if new: rows.append(new); save(rows)
             print(f"# autofill: {why}", file=sys.stderr)
