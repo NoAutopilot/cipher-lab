@@ -717,4 +717,4 @@ HEID-1623CAL	account-2	.claude/briefs/runs/2026-10-15-acct4-depth-steps-2.md	Opu
 DEFAULT-account-2-20261016-0213	account-2	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-16 02:18	2026-10-16 02:13	auto-fill: blast 1 of 1 until 2026-10-17 18:00
 DEFAULT-account-4-20261016-0235	account-4	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-16 02:42	2026-10-16 02:35	auto-fill: blast 1 of 1 until 2026-10-17 18:00; closed at once: nothing changed, 0 workers
 DEFAULT-account-2-20261016-0309	account-2	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-16 03:13	2026-10-16 03:09	auto-fill: blast 1 of 1 until 2026-10-17 18:00; closed 03:1x UTC: nothing changed since 02:18, 0 workers
-DEFAULT-account-4-20261016-0335	account-4	.claude/briefs/default-lane.md	Opus 5.5	60	600	claimed session_018bKGjgZwFTr722Y9Qks9uZ 2026-10-16 03:35	2026-10-16 03:35	auto-fill: blast 1 of 1 until 2026-10-17 18:00
+DEFAULT-account-4-20261016-0335	account-4	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-16 03:37	2026-10-16 03:35	auto-fill: blast 1 of 1 until 2026-10-17 18:00; closed at once: nothing changed, 0 workers
