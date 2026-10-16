@@ -39,7 +39,7 @@ minutes old or older, or is a `HANDOFF`, AND (b) account 2 is the first account 
 owner -> account 2 -> account 3 -> account 4 whose own newest ROOM line is under 150 minutes old (the owner account has no
 live line, so after account 4 the next is account 2), AND (c) no `TAKEOVER` line is newer than the silent holder's last
 line. Then: post `| orchestrator (account 2) | TAKEOVER from <account>` with tools/room.py first, and create_session on this
-account (source_url https://github.com/NoAutopilot/cipher-lab, model claude-opus-5-5 or Fable if it answers, title
+account (print the call with `python3 tools/spawn_args.py` and paste it; source_url https://github.com/NoAutopilot/cipher-lab, model claude-opus-5-5 or Fable if it answers, title
 'LIVE orchestrator (account 2, takeover)') with the prompt: "You are the cipher-lab orchestrator on account 2 after a
 TAKEOVER (parent.md 'Orchestrator fallback chain'). Read .claude/briefs/parent.md, then STATUS.md's handoff section of the
 account you took over from and the WIP branch it names, run tools/orphan_check.py, post '| orchestrator (account 2) |

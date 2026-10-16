@@ -216,3 +216,53 @@ def test_evidence_cell_date_within_30_minutes_is_not_flagged(tmp_path):
 if __name__ == "__main__":
     import subprocess
     sys.exit(subprocess.call([sys.executable, "-m", "pytest", __file__, "-q"]))
+
+
+# ---- 16 Oct 2026 (RETRO-2026-09-28 P3, RETRO-2026-10-05 P2, RETRO-2026-10-12 P4, applied by the "Close the
+# Learning Loop" mission): "Last touched" cells written without a clock time, with a fuzzy minute, in ISO
+# form, or with two stamps were silently skipped by the strict regex, so a 190-hour-stale row raised no (c)
+# warning at all. Each shape must now parse at its later bound and, when old, warn.
+def _stale_warning_for(tmp_path, touched, now=NOW):
+    near = tmp_path / "NEAR.md"
+    status = tmp_path / "status.json"
+    ciphers = tmp_path / "ciphers"
+    write_near_md(str(near), [("t1", touched)])
+    write_status_json(str(status), [near_entry("t1", touched)])
+    write_notes(str(ciphers), "t1", "partial")
+    near_rows = nc.parse_near_md(str(near), now.year)
+    status_near = nc.load_status_near(str(status))
+    code, problems, warnings = nc.run_checks(near_rows, status_near, str(ciphers), now)
+    return code, problems, warnings
+
+
+def test_date_only_last_touched_is_parsed_and_warns_when_stale(tmp_path):
+    # untersberg-code's real cell shape; 27 Sept 23:59 is well over 48 h before NOW + 10 days
+    code, problems, warnings = _stale_warning_for(tmp_path, "27 Sept 2026 (UNT-LANG2)", now=NOW + datetime.timedelta(days=10))
+    assert not problems
+    assert code == 2 and any("t1" in w for w in warnings), warnings
+
+
+def test_date_only_reads_as_end_of_day():
+    assert nc.parse_dt("5 Oct 2026 (N9-BUL)", 2026) == datetime.datetime(2026, 10, 5, 23, 59)
+
+
+def test_fuzzy_minute_reads_at_later_bound():
+    assert nc.parse_dt("9 Oct 2026 07:5x (VERIFY-HELLEN)", 2026) == datetime.datetime(2026, 10, 9, 7, 59)
+
+
+def test_iso_forms_parse():
+    assert nc.parse_dt("2026-10-04 03:4x", 2026) == datetime.datetime(2026, 10, 4, 3, 49)
+    assert nc.parse_dt("2026-10-03", 2026) == datetime.datetime(2026, 10, 3, 23, 59)
+
+
+def test_newest_of_two_stamps_wins():
+    assert nc.parse_dt("27 Sept 2026 (UNT-LANG2) |; 3 Oct 2026 (A2P4-UNT)", 2026) == datetime.datetime(2026, 10, 3, 23, 59)
+
+
+def test_timed_cell_still_exact():
+    assert nc.parse_dt("25 Sept 2026 18:30", 2026) == datetime.datetime(2026, 9, 25, 18, 30)
+
+
+def test_fresh_date_only_row_does_not_warn(tmp_path):
+    code, problems, warnings = _stale_warning_for(tmp_path, "25 Sept 2026 (fresh)", now=NOW)
+    assert code == 0 and not warnings, warnings

@@ -8,7 +8,7 @@ gloss read, transcribe / transcription pass, iiif_lines, vision call) but has no
 and, when one exists, X greater than the brief's "Cap USD <c>" / "Cap $<c>" (exit 1 either way). Also catches a
 line whose own arithmetic is wrong ((N + k) x r differs from X by more than 1 cent).
 Floor check (RETRO-2026-10-04-acct1 P2, see floor_check()): per '## JOB' section, a named Fable or Opus model whose
-cap is under its floor (Fable 5, Opus 2.5) prints "FLOOR <job> <model> cap <c> < <floor>" and exits 1. Must NOT
+cap is under its floor (Fable 5, Opus 3.0 since 16 Oct 2026, was 2.5) prints "FLOOR <job> <model> cap <c> < <floor>" and exits 1. Must NOT
 block: no model or no cap in the section, a Sonnet job at any cap, a cap at or above the floor.
 Must NOT block: a brief with no image step (a gate-fix, a print check, a family_run on disk data, a brief that
 only reads an existing transcription file), or a brief that says "no images" / "disk only" with no blind-pass or
@@ -37,7 +37,11 @@ CAP = re.compile(r'\bCap (?:USD ?|\$)?([\d.]+)', re.I)
 
 # Model-cap floors (RETRO-2026-10-04-acct1 P2). Fable: README "Fable floor" (2 Oct). Opus: window p10/p25/median cost
 # 1.49/1.83/2.56 over 578 non-CLOSER rows; 13 of the 17 jobs briefed below these floors on 4 Oct ran over cap.
-FLOORS = {'fable': 5.0, 'opus': 2.5}
+# 16 Oct 2026 (mission "Close the Learning Loop"): Opus floor raised 2.5 -> 3.0 on the whole-ledger evidence (2,858
+# Opus rows with a numeric cost; 749 with a stated cap): cap <= 1.5 ran over 70-100% of the time, cap 2 38%, cap 2.5
+# 35%, cap >= 3 16-20% (median ratio 0.71 at cap 3). The 2.5 floor left the 35%-over band open; over-cap rows rose
+# every week (W39 62, W40 76, W41 176, W42 152 by 15 Oct). Regression test: a cap-2.5 Opus job is refused.
+FLOORS = {'fable': 5.0, 'opus': 3.0}
 SECTION = re.compile(r'^#{2,3} +(\S+).*$', re.M)
 MODEL = re.compile(r'\b(Fable|Opus|Sonnet)\b', re.I)
 SCAP = re.compile(r'\bcap (?:USD ?|\$)?([\d.]+)', re.I)

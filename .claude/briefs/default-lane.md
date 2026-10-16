@@ -6,7 +6,7 @@ DEFAULT-<account>-<stamp>` (your job_id). Cap 60, box 600. Model Opus 5.5 for yo
 search/check-solved passes).
 
 Operating rules (as .claude/briefs/runs/2026-10-03-acct3-lane-pools-images.md para 1): lane orchestrator on your own account;
-workers via create_session on your own account (source_url https://github.com/NoAutopilot/cipher-lab), ~6 live, refill within
+workers via create_session on your own account (print each call with `python3 tools/spawn_args.py --brief PATH --model M --cap N --box MIN --job NAME` and paste it: source_url https://github.com/NoAutopilot/cipher-lab is then never missing), ~6 live, refill within
 15 min via send_later, ledger every worker from get_session; stop on five_hour `allowed_warning`/`rejected` (BUDGETS.md scaling
 rule), on cap or box, or when the backlog is spent. Good-citizen rule and the CLAUDE.md host table for every request. Birago,
 Armstrong and Debosnys are off limits (owner sorters / private).

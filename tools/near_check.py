@@ -69,22 +69,71 @@ MONTHS = {
     "dec": 12, "december": 12,
 }
 DATE_RE = re.compile(r'(\d{1,2})\s+([A-Za-z]+)\.?\s*(\d{4})?[, ]+(\d{1,2}):(\d{2})')
+# 16 Oct 2026 (RETRO-2026-09-28 P3, RETRO-2026-10-05 P2, RETRO-2026-10-12 P4 -- proposed three times, applied
+# here): the register's "Last touched" cells are written by hand in three further shapes the strict regex
+# silently skipped, so a stale row raised no warning at all (untersberg-code "27 Sept 2026 (UNT-LANG2)" sat
+# about 190 h stale with no (c) line). Each fallback reads the LATER bound of what the cell could mean, so a
+# staleness check fires at least as often as a fully timed cell, never less:
+#   fuzzy minute  "9 Oct 2026 07:5x"      -> 07:59   (the ROOM.md/CLAUDE.md rule-6 "HH:Mx" convention)
+#   ISO           "2026-10-04 03:4x"      -> 03:49;  "2026-10-03" -> 23:59
+#   date only     "5 Oct 2026 (N9-BUL)"   -> 23:59
+DATE_FUZZY_RE = re.compile(r'(\d{1,2})\s+([A-Za-z]+)\.?\s*(\d{4})?[, ]+(\d{1,2}):(\d)[xX]')
+ISO_RE = re.compile(r'(\d{4})-(\d{2})-(\d{2})(?:[ T,]+(\d{1,2}):(\d)(\d|[xX]))?')
+DATE_ONLY_RE = re.compile(r'(\d{1,2})\s+([A-Za-z]+)\.?\s*(\d{4})?\b')
+
+
+def _mk(year, mon_num, day, hh, mm):
+    try:
+        return datetime.datetime(int(year), int(mon_num), int(day), int(hh), int(mm))
+    except ValueError:
+        return None
 
 
 def parse_dt(s, default_year):
-    """Parse '25 Sept 2026 18:30', year-less '25 Sept 18:30', or '25 Sep 2026, 18:28 UTC'."""
-    m = DATE_RE.search(s or "")
-    if not m:
-        return None
-    day, mon, year, hh, mm = m.groups()
-    mon_num = MONTHS.get(mon.lower())
-    if not mon_num:
-        return None
-    year = int(year) if year else default_year
-    try:
-        return datetime.datetime(year, mon_num, int(day), int(hh), int(mm))
-    except ValueError:
-        return None
+    """Newest date mentioned in the cell (16 Oct 2026): a hand-edited "Last touched" cell can carry two
+    stamps ("27 Sept 2026 (UNT-LANG2) |; 3 Oct 2026 (A2P4-UNT)"); the later one is the row's freshness."""
+    best = None
+    for piece in re.split(r'[;|]', s or ""):
+        dt = _parse_one(piece, default_year)
+        if dt and (best is None or dt > best):
+            best = dt
+    return best
+
+
+def _parse_one(s, default_year):
+    """Parse '25 Sept 2026 18:30', year-less '25 Sept 18:30', '25 Sep 2026, 18:28 UTC', and (16 Oct 2026)
+    the fuzzy-minute '9 Oct 2026 07:5x', the ISO '2026-10-04 03:4x' / '2026-10-03', and the date-only
+    '5 Oct 2026 (N9-BUL)' shapes -- each read at its later bound (see the regex comments above)."""
+    s = s or ""
+    m = DATE_RE.search(s)
+    if m:
+        day, mon, year, hh, mm = m.groups()
+        mon_num = MONTHS.get(mon.lower())
+        if not mon_num:
+            return None
+        return _mk(int(year) if year else default_year, mon_num, day, hh, mm)
+    m = DATE_FUZZY_RE.search(s)
+    if m:
+        day, mon, year, hh, m1 = m.groups()
+        mon_num = MONTHS.get(mon.lower())
+        if not mon_num:
+            return None
+        return _mk(int(year) if year else default_year, mon_num, day, hh, int(m1) * 10 + 9)
+    m = ISO_RE.search(s)
+    if m:
+        year, mo, day, hh, m1, m2 = m.groups()
+        if hh is None:
+            return _mk(year, mo, day, 23, 59)
+        mm = int(m1) * 10 + (9 if m2 in ("x", "X") else int(m2))
+        return _mk(year, mo, day, hh, mm)
+    m = DATE_ONLY_RE.search(s)
+    if m:
+        day, mon, year = m.groups()
+        mon_num = MONTHS.get(mon.lower())
+        if not mon_num:
+            return None
+        return _mk(int(year) if year else default_year, mon_num, day, 23, 59)
+    return None
 
 
 def slug_of(cell):
@@ -255,7 +304,7 @@ def main():
     ap.add_argument("--now", default=None, help="override 'now', e.g. '25 Sept 2026 20:00' (default: current UTC time)")
     args = ap.parse_args()
 
-    now = parse_dt(args.now, datetime.datetime.utcnow().year) if args.now else datetime.datetime.utcnow()
+    now = parse_dt(args.now, datetime.datetime.now(datetime.timezone.utc).year) if args.now else datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
     if args.now and now is None:
         ap.error(f"could not parse --now {args.now!r}")
 

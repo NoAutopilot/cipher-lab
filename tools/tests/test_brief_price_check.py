@@ -64,7 +64,11 @@ def main():
         ("no cap (pass)",
          "## NC-X -- a job with Opus named but no cap figure\nDo it.\n", []),
         ("Opus 2 in body (fail)",
-         "## OB-X -- a short job\nOpus 5.5, cap $2, box 20 min.\n", [("OB-X", "Opus", 2.0, 2.5)]),
+         "## OB-X -- a short job\nOpus 5.5, cap $2, box 20 min.\n", [("OB-X", "Opus", 2.0, 3.0)]),
+        ("OB-Y Opus 2.5 (fail since 16 Oct 2026: 35% of cap-2.5 Opus jobs ran over)",
+         "## OB-Y -- a short job\nOpus 5.5, cap $2.5, box 20 min.\n", [("OB-Y", "Opus", 2.5, 3.0)]),
+        ("OB-Z Opus 3 (pass)",
+         "## OB-Z -- a short job\nOpus 5.5, cap $3, box 30 min.\n", []),
     ]
     for name, text, want in floor_cases:
         got = b.floor_check(text)

@@ -147,7 +147,7 @@ once (not at the next failure), so the debt is visible immediately rather than c
 an exact platform count) fires at 5 or more hand-overs since the last UI reset, printed at every run this tool
 is part of (parent duty 3a) -- read it before it reaches 6.
 
-Spawning (25 Sept 2026, UPDATES.md): every `create_session` passes `source_url` https://github.com/NoAutopilot/cipher-lab and
+Spawning (25 Sept 2026, UPDATES.md; 16 Oct 2026: print the call with `python3 tools/spawn_args.py --job <JOB_ID>` and paste it -- a hand-typed call dropped `source_url` eight times, RETRO-2026-10-12 P3): every `create_session` passes `source_url` https://github.com/NoAutopilot/cipher-lab and
 `source_revision` main explicitly (inheritance from the parent's environment is not reliable: three workers on 25 Sept got no
 repository and stopped at their first turn on an injection suspicion), and its prompt leads with the brief file path and a
 plain one-line job description, not a wall of caps and rules -- a dense, rule-heavy inline prompt can read like an

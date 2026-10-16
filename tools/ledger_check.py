@@ -56,6 +56,11 @@ Usage:
     locate the Cost cell at all, so a row with both an unresolved cost and a
     non-standard outcome code needs the main check's own pass too.
 
+  Baseline (16 Oct 2026). The main check reports only rows after the line number stored in
+    tools/data/ledger_check_baseline.txt and exits 0 when those are clean; `--all` reports the whole
+    file. See read_baseline() for why. A blank line inside the table body no longer ends the table
+    (RETRO-2026-10-12 P1).
+
   (always) The main check also flags a row whose Outcome cell starts with a number rather than a
     code -- the RETRO-2026-09-27x P5 shape (rows 1184, 1186-1188, 1191, 1196-1198): a placeholder cost
     cell pushed the resolved cost figure one column right into Outcome, leaving the real code stranded
@@ -95,6 +100,8 @@ COST_RE = re.compile(r'^~?\d+(\.\d+)?(\s|\(|$)|^n/a(\s|\(|$)', re.IGNORECASE)
 # column), by requiring the cell right after it to look like a code at all.
 OUTCOME_TOKEN_RE = re.compile(r'^[A-Za-z]{1,2}[+-]?[A-Za-z]{0,2}$')
 SESSION_ID_RE = re.compile(r'^session_[A-Za-z0-9]+$')
+MODEL_CELL_RE = re.compile(r'^(Fable|Opus|Sonnet|Haiku)\b', re.IGNORECASE)
+ACCOUNT_CELL_RE = re.compile(r'^(account-\d|owner|other|third|ytbiz)$', re.IGNORECASE)
 SEPARATOR_ROW_RE = re.compile(r'^:?-+:?$')
 
 
@@ -167,7 +174,12 @@ def check(lines):
     for lineno, raw in enumerate(lines, start=1):
         line = raw.rstrip("\n")
         if not line.startswith("|"):
-            in_table = False
+            # A blank or prose line inside the table body must not end the table: LEDGER.md
+            # has only one "|---|" divider (line 43), and from 27-28 Sept 2026 the body carried
+            # blank lines at 1269-1287, so resetting in_table here left every later row --
+            # about 3,000 of them -- unchecked while the tool still printed a short, plausible
+            # report (RETRO-2026-10-12 P1, applied 16 Oct 2026; regression test
+            # tools/tests/test_ledger_check.py "blank line inside the table").
             continue
         fields = split_row(line)
         if not fields:
@@ -228,7 +240,12 @@ def find_placeholder_rows(lines):
     for lineno, raw in enumerate(lines, start=1):
         line = raw.rstrip("\n")
         if not line.startswith("|"):
-            in_table = False
+            # A blank or prose line inside the table body must not end the table: LEDGER.md
+            # has only one "|---|" divider (line 43), and from 27-28 Sept 2026 the body carried
+            # blank lines at 1269-1287, so resetting in_table here left every later row --
+            # about 3,000 of them -- unchecked while the tool still printed a short, plausible
+            # report (RETRO-2026-10-12 P1, applied 16 Oct 2026; regression test
+            # tools/tests/test_ledger_check.py "blank line inside the table").
             continue
         fields = split_row(line)
         if not fields:
@@ -263,7 +280,12 @@ def find_shifted_outcome_rows(lines):
     for lineno, raw in enumerate(lines, start=1):
         line = raw.rstrip("\n")
         if not line.startswith("|"):
-            in_table = False
+            # A blank or prose line inside the table body must not end the table: LEDGER.md
+            # has only one "|---|" divider (line 43), and from 27-28 Sept 2026 the body carried
+            # blank lines at 1269-1287, so resetting in_table here left every later row --
+            # about 3,000 of them -- unchecked while the tool still printed a short, plausible
+            # report (RETRO-2026-10-12 P1, applied 16 Oct 2026; regression test
+            # tools/tests/test_ledger_check.py "blank line inside the table").
             continue
         fields = split_row(line)
         if not fields:
@@ -281,6 +303,11 @@ def find_shifted_outcome_rows(lines):
         # "12") isn't scanned at all.
         for i in (3, 4):
             if i + 2 >= len(fields) or "session_" in fields[i]:
+                continue
+            # The 8-column format used since 2 Oct 2026 (Date|Role|Session|Account|Model|Cost|Outcome|
+            # Lesson) puts a model name at index 4 and a numeric cost at 5: not a shifted cell. Hidden
+            # until the in_table fix (16 Oct 2026) let this walker see those rows at all.
+            if MODEL_CELL_RE.match(fields[i]) or ACCOUNT_CELL_RE.match(fields[i]):
                 continue
             # The row-1184 fingerprint is three cells in a row: a placeholder (not COST_RE), then a
             # bare resolved number, then a cell whose OWN leading token is one of the five valid
@@ -327,7 +354,12 @@ def split_table(lines, from_row):
     for lineno, raw in enumerate(lines, start=1):
         line = raw.rstrip("\n")
         if not line.startswith("|"):
-            in_table = False
+            # A blank or prose line inside the table body must not end the table: LEDGER.md
+            # has only one "|---|" divider (line 43), and from 27-28 Sept 2026 the body carried
+            # blank lines at 1269-1287, so resetting in_table here left every later row --
+            # about 3,000 of them -- unchecked while the tool still printed a short, plausible
+            # report (RETRO-2026-10-12 P1, applied 16 Oct 2026; regression test
+            # tools/tests/test_ledger_check.py "blank line inside the table").
             continue
         fields = split_row(line)
         if not fields:
@@ -409,6 +441,11 @@ def main(argv=None):
         help="list every row whose Cost cell is an unresolved deferral, session-cross-checked; printed only, always exits 0 (see module docstring)",
     )
     ap.add_argument(
+        "--all",
+        action="store_true",
+        help="report every flagged row in the file, not only rows after the accepted-history baseline line in tools/data/ledger_check_baseline.txt (see module docstring, 'Baseline')",
+    )
+    ap.add_argument(
         "--split",
         metavar="FROM_ROW",
         type=int,
@@ -436,6 +473,17 @@ def main(argv=None):
     dup_sessions, bad_outcomes = check(lines)
     shifted = find_shifted_outcome_rows(lines)
 
+    baseline = 0 if args.all else read_baseline()
+    if baseline:
+        hist_bad = sum(1 for r in bad_outcomes if r[0] <= baseline)
+        hist_dup = sum(1 for rows in dup_sessions.values() if all(r[0] <= baseline for r in rows))
+        hist_shift = sum(1 for r in shifted if r[0] <= baseline)
+        bad_outcomes = [r for r in bad_outcomes if r[0] > baseline]
+        shifted = [r for r in shifted if r[0] > baseline]
+        dup_sessions = {sid: rows for sid, rows in dup_sessions.items() if any(r[0] > baseline for r in rows)}
+        print(f"baseline: rows up to line {baseline} are accepted history "
+              f"({hist_bad} non-standard codes, {hist_dup} duplicate ids, {hist_shift} shifted cells not re-reported; --all shows them)")
+
     ok = True
 
     if shifted:
@@ -461,9 +509,29 @@ def main(argv=None):
                 print(f"    suggest: {guess_fix(lesson)}")
 
     if ok:
-        print("ok: no duplicate session ids, no non-standard outcome codes")
+        print("ok: no duplicate session ids, no non-standard outcome codes" + (" after the baseline line" if baseline else ""))
         return 0
     return 1
+
+
+BASELINE_FILE = os.path.join(ROOT, "tools", "data", "ledger_check_baseline.txt")
+
+
+def read_baseline(path=BASELINE_FILE):
+    """Baseline (16 Oct 2026, mission 'Close the Learning Loop'): the line number up to which
+    LEDGER.md's historical rows are accepted as they stand. The 27-28 Sept blank-line bug hid
+    about 3,000 rows from this tool; once fixed it reports 202 non-standard codes and 38
+    duplicate ids, most of them weeks old and already read by retrospectives. A gate whose
+    baseline is permanently red is a gate nobody reads (the tool exited 1 on 119 old rows for
+    three weeks and no push was ever stopped by it), so the default run reports only rows AFTER
+    the baseline line and exits 0 when those are clean; --all shows the full history. Move the
+    baseline forward only after the rows above it have been recoded by hand (LEDGER.md header:
+    never a bulk mechanical recode). The file holds one integer; absent or unparsable = 0."""
+    try:
+        with open(path, encoding="utf-8") as f:
+            return int(f.read().strip().split()[0])
+    except (OSError, ValueError, IndexError):
+        return 0
 
 
 if __name__ == "__main__":

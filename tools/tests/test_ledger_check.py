@@ -186,3 +186,47 @@ if fails:
 print("ok: ledger_check finds the duplicate session id and non-standard codes, ignores the "
       "extra-columns/parenthetical-cost/missing-pipe rows, --help documents --fix-suggest, "
       "and --placeholder-report lists only still-unresolved deferred-cost rows")
+
+# ---- 16 Oct 2026 (RETRO-2026-10-12 P1, mission "Close the Learning Loop"): a blank line inside the table
+# body must not end the table. Before the fix, check() reset in_table on any non-'|' line and only a second
+# '|---|' divider could turn it back on; LEDGER.md has one divider, so every row after the first blank line
+# (1269 in the real file) went unchecked while the tool still printed a short, healthy-looking report.
+BLANK_SAMPLE = [
+    "| Date | Role | Model | Cost | Outcome | Lesson |\n",
+    "|---|---|---|---|---|---|\n",
+    "| 27 Sep | row before the blank | Sonnet | session_01Before000000000000000 | 1.00 | D | fine |\n",
+    "\n",
+    "| 28 Sep | row after the blank, bad code | Sonnet | session_01After0000000000000000 | 2.00 | Y | must be flagged |\n",
+    "| 28 Sep | row after the blank, duplicate id | Sonnet | session_01After0000000000000000 | 2.50 | D | must be flagged |\n",
+    "| 15 Oct 2026 | eight-column row (Date|Role|Session|Account|Model|Cost|Outcome|Lesson) | session_01Eight000000000000000 | account-4 | Opus 5.5 | 4.07 | N | not a shifted cell |\n",
+]
+dups2, bad2 = ledger_check.check(BLANK_SAMPLE)
+if {lineno for lineno, _, _ in bad2} != {5}:
+    print(f"FAIL: a blank line inside the table hid the bad code on line 5 (got {[l for l, _, _ in bad2]})")
+    fails += 1
+if set(dups2.keys()) != {"session_01After0000000000000000"}:
+    print(f"FAIL: a blank line inside the table hid the duplicate session id after it (got {set(dups2.keys())})")
+    fails += 1
+if ledger_check.find_shifted_outcome_rows(BLANK_SAMPLE):
+    print("FAIL: the 8-column Account/Model row was mistaken for a shifted cost cell")
+    fails += 1
+if len(ledger_check.split_table(BLANK_SAMPLE, 1)) != 4:
+    print(f"FAIL: split_table lost rows after the blank line (got {len(ledger_check.split_table(BLANK_SAMPLE, 1))})")
+    fails += 1
+
+# baseline: rows at or before the baseline line are accepted history, rows after it are gated
+import tempfile
+with tempfile.TemporaryDirectory() as td:
+    bpath = os.path.join(td, "baseline.txt")
+    open(bpath, "w").write("3\n")
+    if ledger_check.read_baseline(bpath) != 3:
+        print("FAIL: read_baseline did not read the stored line number")
+        fails += 1
+    if ledger_check.read_baseline(os.path.join(td, "missing.txt")) != 0:
+        print("FAIL: a missing baseline file must read as 0 (whole file gated)")
+        fails += 1
+
+if fails:
+    print(f"{fails} failure(s) in the blank-line / baseline checks")
+    sys.exit(1)
+print("ok: a blank line inside the table no longer hides later rows; the 8-column format is not a shifted cell; baseline reads")
