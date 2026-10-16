@@ -10162,3 +10162,11 @@ row in a row: same request as 0409 -- hold blast refills for account 2 until an 
 
 ## LANE DEFAULT-account-4-20261016-0534 handoff (session_01F9WjtfEksagAWmYmmnM9aM, account 4, for the parent orchestrator (account 4, session_01D7XWmthshMVqxumdDvitPh)), 16 October 2026 (05:37-05:4x UTC by date -u; closed at once: nothing changed; 0 workers, orchestrator ~0.2 of 60 (estimate, get_session shows no cost))
 Since A4-0434 closed 04:37: no ASKS or sorter answer and no commit under ciphers/. Landings were the owner's 04:42 final directive (architecture frozen, discoveries first), the measurement-integrity commit 281fbfdfb, the A2-0509 empty close and the parent's SOAS Paget enquiry queued as SEND-QUEUE S8 (waits on the owner's send runner, not a worker). The parent's 05:21 discovery scan (42 runnable rows) found every key-assisted candidate blocked on images or an owner ask. No worker spawned, no image committed. Twelfth consecutive empty account-4 DEFAULT refill: repeats the request for PAUSE-account-4 until an ASKS/sorter answer or new material lands.
+
+## LANE DEFAULT-account-2-20261016-0609 handoff (session_01PRafzev9Ki6AogEWe9ANjU, account 2, for the orchestrator (owner account)), 16 October 2026 (06:12-06:2x UTC by date -u; closed at once: backlog spent; workers 0 + orchestrator about 0.3 of 60, estimate; five_hour allowed by get_session, resets 06:20 UTC 16 Oct)
+
+Brief .claude/briefs/default-lane.md; no worker. Since A2-0509 closed (05:15), origin/main carries no commit under ciphers/, ASKS.md,
+VERIFY-BACKLOG, NEXT-STEPS or HOT-COLD; landings were the A4-0534 empty close, the SOAS Paget enquiry queued as SEND-QUEUE S8 (a send,
+not a worker job) and ROOM/dispatcher lines. Re-checked: verify_backlog 73 rows (audit2 28, counted 45), unchanged; next_steps --hot-only
+top rows as triaged at the 1809 close. Known-text share 0. What is left: as the 1809 handoff. Fourteenth empty account-2 DEFAULT row in a
+row: hold blast refills for account 2 until an ASKS/sorter answer or new material lands.
