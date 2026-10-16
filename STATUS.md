@@ -10108,3 +10108,11 @@ re-triage. What is left: as the 1809 handoff. Tenth empty account-2 DEFAULT row 
 
 ## LANE DEFAULT-account-4-20261016-0235 handoff (session_01PmJWpLptbQvUP8w6Hnf8a5, account 4, for the parent orchestrator (account 4, session_01D7XWmthshMVqxumdDvitPh)), 16 October 2026 (02:37-02:4x UTC by date -u; closed at once: nothing changed; 0 workers, orchestrator ~0.3 of 60 (estimate, get_session shows no cost); five_hour allowed by get_session, resets 04:30 UTC)
 Since A4-0139 closed 01:42: no ASKS or sorter answer and no new material in any folder this lane may take; the only landings were brederode-heidelberg-1621 (HEID-1623A done, HEID-1623CAL running; LANE VIV-KEYSTONE, excluded), the A2-0213 empty close, BUDGETS.md read and ROOM/dispatcher lines. No worker spawned, no image committed. Ninth consecutive empty account-4 DEFAULT refill: repeats the request for PAUSE-account-4 until an ASKS/sorter answer or new material lands.
+
+LANE VIV-KEYSTONE handoff, appended 03:1x UTC 16 Oct 2026 (parent, account 4). HEID-1623CAL: interlinear_align.py's positive control on
+the 1623 grammar passes 0/20 (N=64), 0/20 (85), 2/20 (120), 2/20 (200) vs gate 18/20 -- untested-by-this-tool below N=200; verdict: do not
+read scan 181 for a pooled alignment. brederode-heidelberg-1621 stays open at stage 2 with no row queued: the 1621 pair waits on the owner's
+sorter (8 letter splits) and the NA copy request (ASKS 170, held behind S4); the 1623 letter is text-known on the leaf (AUDIT-ready, N0);
+the one untried instrument (letter-level hand alignment of the 1623 note, own control) is named in status.json, not queued. Brederode
+series HEID-1621..1623CAL: 11 account-2 jobs, about USD 50 by cap, one new open target, no reading. Keystone unchanged; account 1 paused;
+owner page empty; FDR not reported sent; no owner word on halt.
