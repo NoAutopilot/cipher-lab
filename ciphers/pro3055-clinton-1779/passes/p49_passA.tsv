@@ -1,0 +1,122 @@
+crop	row	mark	cell	underline	gloss	conf	note
+c1_top	1		4-24	n		h	
+c1_top	2		30-9	n		h	
+c1_top	3		25-12	n		l	25 or 26
+c1_top	4		20-9	n		h	
+c1_top	5		3-24	n		h	
+c1_top	6		8-19	n		h	
+c1_top	7		10-19	n		h	
+c1_top	8		18-1	n		h	
+c1_top	9		17-1	n		h	
+c1_top	10		1-15	y		h	
+c1_top	11	x	23-5	n		h	
+c1_top	12		-8	n		h	
+c1_top	13		-18	n		h	
+c1_top	14		-26	n		h	
+c1_top	15		-41	n		h	
+c1_top	16		-2	n		l	2 or 12 (odd b-shaped 2)
+c1_top	17		-11	n		h	
+c1_bot	1		-11	n		h	overlap
+c1_bot	2		-5	n		h	
+c1_bot	3		-7	n		h	
+c1_bot	4		-8	n		h	
+c1_bot	5		-9	y		h	
+c1_bot	6		5-19	y		h	
+c1_bot	7	x	13-1	n		h	
+c1_bot	8		26	n		h	
+c1_bot	9		8	n		h	
+c1_bot	10		12	n		h	
+c1_bot	11		26	n		h	
+c1_bot	12		12	y		h	
+c1_bot	13	clear	End	n		l	written right after 12, near right edge; may belong to neighbouring text
+c1_bot	14		9-8	n		h	
+c1_bot	15		1-17	n		h	
+c1_bot	16		24-6	n		h	
+c1_bot	17		39-7	y		h	double underline
+c2_top	1		3-14	y		h	
+c2_top	2	x	11-1	n		h	
+c2_top	3		-2	n		h	
+c2_top	4		-4	n		h	
+c2_top	5		18-4	n		h	
+c2_top	6		-10	n		h	
+c2_top	7		-18	n		h	
+c2_top	8		-12	y		h	
+c2_top	9		28-4	y		h	
+c2_top	10	x	16-34	n		h	
+c2_top	11		-5	n		h	
+c2_top	12		-12	n		h	
+c2_top	13		-15	n		h	
+c2_top	14		-16	n		h	
+c2_top	15		-41	n		h	
+c2_top	16		-42	n		h	
+c2_top	17		-40	y		h	
+c2_bot	1		-40	y		h	overlap
+c2_bot	2		38-5	n		h	
+c2_bot	3		17-1	n		h	
+c2_bot	4		2-24	n		h	
+c2_bot	5		8-15	n		h	
+c2_bot	6		10-1	y		h	
+c3_top	1	x	14-10	n		h	
+c3_top	2		-16	n		h	
+c3_top	3		-12	y		h	
+c3_top	4		7-6	n		h	
+c3_top	5		8-1	n		h	
+c3_top	6		7-7	n		h	
+c3_top	7		-10	y		h	
+c3_top	8		4-2	n		h	
+c3_top	9		30-9	n		h	
+c3_top	10		21-1	y		h	
+c3_top	11	x	16-30	n		h	
+c3_top	12		-22	n		l	last figure cut at right edge; completed from c4 left edge
+c3_top	13		-35	n		l	last figure cut at right edge; 35 or 36
+c3_top	14		-34	n		l	last figure cut at right edge
+c3_top	15		-5	n		h	
+c3_top	16		-35	n		l	last figure cut at right edge; 35 or 36
+c3_top	17		-33	n		l	cut at right/bottom edge; second figure from c4 left edge
+c3_bot	1		-33	n		l	overlap
+c3_bot	2		-30	y		h	
+c3_bot	3		4-19	n		h	
+c4_top	1	x	7-3	n		h	
+c4_top	2		-14	n		h	
+c4_top	3		-11	n		h	
+c4_top	4		-12	n		h	
+c4_top	5		-10	y		h	
+c4_top	6		8-19	n		h	
+c4_top	7		18-19	n		h	
+c4_top	8		25-17	n		h	
+c4_top	9		17-21	n		h	
+c4_top	10		18-1	n		h	
+c4_top	11		4-20	n		h	
+c4_top	12		9-19	n		h	
+c4_top	13		42-15	n		h	
+c4_top	14		29-9	n		h	
+c4_top	15		5-19	n		h	
+c4_top	16		8-3	n		h	
+c4_top	17		8-19	n		h	
+c4_bot	1		8-19	n		h	overlap
+c4_bot	2		9-1	n		h	
+c4_bot	3		2-6	y		h	
+c4_bot	4	x	18-16	n		h	
+c4_bot	5		-18	n		h	
+c4_bot	6		-6	n		h	
+c4_bot	7		-6	n		h	
+c4_bot	8		-4	y		l	4 appears overwritten/struck; possibly corrected figure
+c5_top	1		43	n		l	cut at top edge, only lower part visible; 43 or 45, dash/first number not visible
+c5_top	2		10-18	n		h	
+c5_top	3		7-1	n		h	
+c5_top	4		3-8	n		h	
+c5_top	5		4-19	n		h	
+c5_top	6		18-3	n		h	
+c5_top	7		3-24	n		h	
+c5_top	8		17-22	n		h	
+c5_top	9		6-2	n		h	
+c5_top	10		3-14	y		h	
+c5_top	11	x	21-1	n		h	
+c5_top	12		-2	n		h	
+c5_top	13		22-16	n		h	
+c5_top	14		-27	n		h	
+c5_top	15		-31	n		h	
+c5_top	16		-7	y		h	
+c5_top	17		13-14	n		h	
+c5_top	18		2-24	n		h	
+c5_bot	1		36-7	y		h	double underline; top of this entry is cut at bottom of c5_top

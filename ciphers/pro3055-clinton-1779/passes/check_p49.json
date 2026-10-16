@@ -1,0 +1,527 @@
+{
+ "source": "H-1649 Image 1125 (B.148 f.49) at full/max 4744x4056, columns cut by tools/iiif_lines.py (images/h1649/p49_cols)",
+ "key": "title1778_reading.txt as printed (variant a) GATED; variant (b) reported",
+ "cells_letter_and_word": 115,
+ "cell_grades": {
+  "H": 114,
+  "M": 1
+ },
+ "B2_variant_a_GATED": {
+  "runs_ge3": 9,
+  "hits": 7,
+  "share": 0.778,
+  "can_differ": 1.0,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "seed": 123,
+   "mean": 0.38,
+   "p95": 1,
+   "max": 3
+  },
+  "gate": "NON-TEST",
+  "decoded_runs": [
+   {
+    "start": "col1:23",
+    "cells": "13-1 13-26 13-8 13-12 13-26 13-12",
+    "decoded": "bearer",
+    "hit": true,
+    "split": "bearer"
+   },
+   {
+    "start": "col2:2",
+    "cells": "11-1 11-2 11-4",
+    "decoded": "hos",
+    "hit": true,
+    "split": "hos"
+   },
+   {
+    "start": "col2:6",
+    "cells": "11-10 11-18 11-12",
+    "decoded": "oon",
+    "hit": false,
+    "split": null
+   },
+   {
+    "start": "col2:10",
+    "cells": "16-34 16-5 16-12 16-15 16-16 16-41 16-42 16-40",
+    "decoded": "pointing",
+    "hit": true,
+    "split": "pointing"
+   },
+   {
+    "start": "col3:1",
+    "cells": "14-10 14-16 14-12",
+    "decoded": "new",
+    "hit": true,
+    "split": "new"
+   },
+   {
+    "start": "col3:11",
+    "cells": "16-30 16-22 16-35 16-34 16-5 16-35 16-3 16-30",
+    "decoded": "disposed",
+    "hit": true,
+    "split": "disposed"
+   },
+   {
+    "start": "col4:1",
+    "cells": "7-3 7-14 7-11 7-12 7-10",
+    "decoded": "think",
+    "hit": true,
+    "split": "think"
+   },
+   {
+    "start": "col4:20",
+    "cells": "18-16 18-18 18-6 18-6 18-4",
+    "decoded": "fleet",
+    "hit": true,
+    "split": "fleet"
+   },
+   {
+    "start": "col5:13",
+    "cells": "21-27 21-31 21-7",
+    "decoded": "??n",
+    "hit": false,
+    "split": null
+   }
+  ]
+ },
+ "B2_variant_b_reported_not_gated": {
+  "runs_ge3": 9,
+  "hits": 7,
+  "share": 0.778,
+  "can_differ": 1.0,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "seed": 123,
+   "mean": 0.35,
+   "p95": 1,
+   "max": 3
+  },
+  "gate": "NON-TEST"
+ },
+ "B2_rule_R1_reported_not_gated_post_prereg": {
+  "runs_ge3": 8,
+  "hits": 8,
+  "share": 1.0,
+  "can_differ": 1.0,
+  "control_page_permuted": {
+   "seeds": 1000,
+   "seed": 123,
+   "mean": 0.17,
+   "p95": 1,
+   "max": 2
+  },
+  "gate": "NON-TEST",
+  "decoded_runs": [
+   {
+    "start": "col1:23",
+    "cells": "13-1 13-26 13-8 13-12 13-26 13-12",
+    "decoded": "bearer",
+    "hit": true,
+    "split": "bearer"
+   },
+   {
+    "start": "col2:2",
+    "cells": "11-1 11-2 11-4 18-4 18-10 18-18 18-12",
+    "decoded": "hostile",
+    "hit": true,
+    "split": "hostile"
+   },
+   {
+    "start": "col2:10",
+    "cells": "16-34 16-5 16-12 16-15 16-16 16-41 16-42 16-40",
+    "decoded": "pointing",
+    "hit": true,
+    "split": "pointing"
+   },
+   {
+    "start": "col3:1",
+    "cells": "14-10 14-16 14-12",
+    "decoded": "new",
+    "hit": true,
+    "split": "new"
+   },
+   {
+    "start": "col3:11",
+    "cells": "16-30 16-22 16-35 16-34 16-5 16-35 16-3 16-30",
+    "decoded": "disposed",
+    "hit": true,
+    "split": "disposed"
+   },
+   {
+    "start": "col4:1",
+    "cells": "7-3 7-14 7-11 7-12 7-10",
+    "decoded": "think",
+    "hit": true,
+    "split": "think"
+   },
+   {
+    "start": "col4:20",
+    "cells": "18-16 18-18 18-6 18-6 18-4",
+    "decoded": "fleet",
+    "hit": true,
+    "split": "fleet"
+   },
+   {
+    "start": "col5:10",
+    "cells": "21-1 21-2 22-16 22-27 22-31 22-7",
+    "decoded": "course",
+    "hit": true,
+    "split": "course"
+   }
+  ]
+ },
+ "tomokiyo_agreement": {
+  "tomokiyo_groups": 78,
+  "not_found_on_our_page": [],
+  "tomokiyo_letter_groups_matched": 48,
+  "same_letter": 48,
+  "diffs": []
+ },
+ "word_codes": [
+  {
+   "at": "col1:1",
+   "code": "4-24",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col1:2",
+   "code": "30-9",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col1:3",
+   "code": "25-12",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col1:4",
+   "code": "20-9",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col1:5",
+   "code": "3-24",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col1:6",
+   "code": "8-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col1:7",
+   "code": "10-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col1:8",
+   "code": "18-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col1:9",
+   "code": "17-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col1:10",
+   "code": "1-15",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col1:22",
+   "code": "5-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col1:29",
+   "code": "9-8",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col1:30",
+   "code": "1-17",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col1:31",
+   "code": "24-6",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col1:32",
+   "code": "39-7",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col2:1",
+   "code": "3-14",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col2:5",
+   "code": "18-4",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col2:9",
+   "code": "28-4",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col2:18",
+   "code": "38-5",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col2:19",
+   "code": "17-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col2:20",
+   "code": "2-24",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col2:21",
+   "code": "8-15",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col2:22",
+   "code": "10-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col3:4",
+   "code": "7-6",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col3:5",
+   "code": "8-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col3:6",
+   "code": "7-7",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col3:8",
+   "code": "4-2",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col3:9",
+   "code": "30-9",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col3:10",
+   "code": "21-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col3:19",
+   "code": "4-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col4:6",
+   "code": "8-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col4:7",
+   "code": "18-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col4:8",
+   "code": "25-17",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col4:9",
+   "code": "17-21",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col4:10",
+   "code": "18-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col4:11",
+   "code": "4-20",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col4:12",
+   "code": "9-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col4:13",
+   "code": "42-15",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col4:14",
+   "code": "29-9",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col4:15",
+   "code": "5-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col4:16",
+   "code": "8-3",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col4:17",
+   "code": "8-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col4:18",
+   "code": "9-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col4:19",
+   "code": "2-6",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col5:1",
+   "code": "10-18",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col5:2",
+   "code": "7-1",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col5:3",
+   "code": "3-8",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col5:4",
+   "code": "4-19",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col5:5",
+   "code": "18-3",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col5:6",
+   "code": "3-24",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col5:7",
+   "code": "17-22",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col5:8",
+   "code": "6-2",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col5:9",
+   "code": "3-14",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col5:12",
+   "code": "22-16",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col5:16",
+   "code": "13-14",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col5:17",
+   "code": "2-24",
+   "gloss": "",
+   "grade": "H"
+  },
+  {
+   "at": "col5:18",
+   "code": "36-7",
+   "gloss": "",
+   "grade": "H"
+  }
+ ],
+ "clear_words": [],
+ "lexicon_words": 12294
+}

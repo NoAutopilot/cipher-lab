@@ -1,0 +1,123 @@
+# CLIN-F49 (16 Oct 2026): B.148 f.49 (H-1649 Image 1125), Carleton to Haldimand, 22 July 1782, cipher cells, columns 1-5.
+# passA/passB = two blind Opus reads of images/h1649/p49_cols (crops only, no key, no reading); overlap rows dropped; pass A's
+# c5_top row 1 (the cut folio number "49") dropped. entry = after the worker settled every A/B split and every low-confidence cell on
+# zooms of the full/max image, image only, before any decode or score (the worker had seen Tomokiyo's printed extract before reading;
+# no cell was upgraded from it: the one figure the image does not settle stays M). kind by rule R0 (PREREG-UNA-CLIN): x/+ L-P or -P =
+# letter; full pair without x = word. Clear text on the page (closing, signature, endorsement "Endd. From Sir Guy Carleton of 22d July
+# 1782 Recd the 18th Augt by Davis. in Cypher") is not a cell. Built from the scratchpad passes by the worker's reconciliation step.
+col	idx	kind	entry	underline	gloss	grade	passA	passB	note
+col1	1	word	4-24	n		H	4-24	4-24	c1_top row 1
+col1	2	word	30-9	n		H	30-9	30-9	c1_top row 2
+col1	3	word	25-12	n		H	25-12	25-12	c1_top row 3; A 25 or 26; image: 25 (word code, not scored)
+col1	4	word	20-9	n		H	20-9	20-9	c1_top row 4
+col1	5	word	3-24	n		H	3-24	3-24	c1_top row 5
+col1	6	word	8-19	n		H	8-19	8-19	c1_top row 6
+col1	7	word	10-19	n		H	10-19	10-19	c1_top row 7
+col1	8	word	18-1	n		H	18-1	18-1	c1_top row 8
+col1	9	word	17-1	n		H	17-1	17-1	c1_top row 9
+col1	10	word	1-15	y		H	1-15	1-15	c1_top row 10
+col1	11	letter	x23-5	n		H	x23-5	x23-5	c1_top row 11
+col1	12	letter	-8	n		H	-8	-8	c1_top row 12
+col1	13	letter	-18	n		H	-18	-18	c1_top row 13
+col1	14	letter	-26	n		H	-26	-26	c1_top row 14
+col1	15	letter	-41	n		H	-41	-41	c1_top row 15
+col1	16	letter	-2	n		M	-2	-2	c1_top row 16; b-shaped figure: 2 or 6 (both passes unsure); not settled from the image
+col1	17	letter	-11	n		H	-11	-11	c1_top row 17
+col1	18	letter	-5	n		H	-5	-5	c1_bot row 1
+col1	19	letter	-7	n		H	-7	-7	c1_bot row 2
+col1	20	letter	-8	n		H	-8	-8	c1_bot row 3
+col1	21	letter	-9	y		H	-9	-9	c1_bot row 4
+col1	22	word	5-19	y		H	5-19	5-19	c1_bot row 5
+col1	23	letter	x13-1	n		H	x13-1	x13-1	c1_bot row 6
+col1	24	letter	-26	n		H	26	26	c1_bot row 7; written without dash; read as -P (continues the letter run)
+col1	25	letter	-8	n		H	8	8	c1_bot row 8; written without dash; read as -P (continues the letter run)
+col1	26	letter	-12	n		H	12	12	c1_bot row 9; written without dash; read as -P (continues the letter run)
+col1	27	letter	-26	n		H	26	26	c1_bot row 10; written without dash; read as -P (continues the letter run)
+col1	28	letter	-12	y		H	12	12	c1_bot row 11; A underline y, B n; image: stroke under 12 (ends before Endd.); written without dash; read as -P (continues the letter run)
+col1	29	word	9-8	n		H	9-8	9-8	c1_bot row 12
+col1	30	word	1-17	n		H	1-17	1-17	c1_bot row 13
+col1	31	word	24-6	n		H	24-6	24-6	c1_bot row 14
+col1	32	word	39-7	y		H	39-7	39-7	c1_bot row 15
+col2	1	word	3-14	y		H	3-14	3-14	c2_top row 1
+col2	2	letter	x11-1	n		H	x11-1	x11-1	c2_top row 2
+col2	3	letter	-2	n		H	-2	-2	c2_top row 3
+col2	4	letter	-4	n		H	-4	-4	c2_top row 4
+col2	5	word	18-4	n		H	18-4	18-4	c2_top row 5
+col2	6	letter	-10	n		H	-10	-10	c2_top row 6
+col2	7	letter	-18	n		H	-18	-18	c2_top row 7
+col2	8	letter	-12	y		H	-12	-12	c2_top row 8
+col2	9	word	28-4	y		H	28-4	28-4	c2_top row 9
+col2	10	letter	x16-34	n		H	x16-34	x16-34	c2_top row 10
+col2	11	letter	-5	n		H	-5	-5	c2_top row 11
+col2	12	letter	-12	n		H	-12	-12	c2_top row 12
+col2	13	letter	-15	n		H	-15	-15	c2_top row 13
+col2	14	letter	-16	n		H	-16	-16	c2_top row 14
+col2	15	letter	-41	n		H	-41	-41	c2_top row 15
+col2	16	letter	-42	n		H	-42	-42	c2_top row 16
+col2	17	letter	-40	y		H	-40	-40	c2_top row 17
+col2	18	word	38-5	n		H	38-5	38-5	c2_bot row 1
+col2	19	word	17-1	n		H	17-1	17-1	c2_bot row 2
+col2	20	word	2-24	n		H	2-24	2-24	c2_bot row 3
+col2	21	word	8-15	n		H	8-15	8-15	c2_bot row 4
+col2	22	word	10-1	y		H	10-1	10-1	c2_bot row 5
+col3	1	letter	x14-10	n		H	x14-10	x14-10	c3_top row 1
+col3	2	letter	-16	n		H	-16	-16	c3_top row 2
+col3	3	letter	-12	y		H	-12	-12	c3_top row 3
+col3	4	word	7-6	n		H	7-6	7-6	c3_top row 4
+col3	5	word	8-1	n		H	8-1	8-1	c3_top row 5
+col3	6	word	7-7	n		H	7-7	7-7	c3_top row 6
+col3	7	letter	-10	y		H	-10	-10	c3_top row 7
+col3	8	word	4-2	n		H	4-2	4-2	c3_top row 8
+col3	9	word	30-9	n		H	30-9	30-9	c3_top row 9
+col3	10	word	21-1	y		H	21-1	21-1	c3_top row 10
+col3	11	letter	x16-30	n		H	x16-30	x16-30	c3_top row 11
+col3	12	letter	-22	n		H	-22	-22	c3_top row 12; cut at crop edge; image: -22
+col3	13	letter	-35	n		H	-35	-35	c3_top row 13; image: -35
+col3	14	letter	-34	n		H	-34	-34	c3_top row 14; image: -34
+col3	15	letter	-5	n		H	-5	-5	c3_top row 15
+col3	16	letter	-35	n		H	-35	-35	c3_top row 16; image: -35
+col3	17	letter	-3	n		H	-33	-3	c3_top row 17; A -33; image: -3 (next row -30)
+col3	18	letter	-30	y		H	-30	-30	c3_bot row 1
+col3	19	word	4-19	n		H	4-19	4-19	c3_bot row 2
+col4	1	letter	x7-3	n		H	x7-3	x7-3	c4_top row 1
+col4	2	letter	-14	n		H	-14	-14	c4_top row 2
+col4	3	letter	-11	n		H	-11	-11	c4_top row 3
+col4	4	letter	-12	n		H	-12	-12	c4_top row 4
+col4	5	letter	-10	y		H	-10	-10	c4_top row 5
+col4	6	word	8-19	n		H	8-19	8-19	c4_top row 6
+col4	7	word	18-19	n		H	18-19	18-19	c4_top row 7
+col4	8	word	25-17	n		H	25-17	25-17	c4_top row 8
+col4	9	word	17-21	n		H	17-21	17-21	c4_top row 9
+col4	10	word	18-1	n		H	18-1	18-1	c4_top row 10
+col4	11	word	4-20	n		H	4-20	4-20	c4_top row 11
+col4	12	word	9-19	n		H	9-19	9-19	c4_top row 12
+col4	13	word	42-15	n		H	42-15	42-15	c4_top row 13
+col4	14	word	29-9	n		H	29-9	29-9	c4_top row 14
+col4	15	word	5-19	n		H	5-19	5-19	c4_top row 15
+col4	16	word	8-3	n		H	8-3	8-3	c4_top row 16
+col4	17	word	8-19	n		H	8-19	8-19	c4_top row 17
+col4	18	word	9-1	n		H	9-1	9-1	c4_bot row 1
+col4	19	word	2-6	y		H	2-6	2-6	c4_bot row 2
+col4	20	letter	x18-16	n		H	x18-16	x18-16	c4_bot row 3
+col4	21	letter	-18	n		H	-18	-18	c4_bot row 4
+col4	22	letter	-6	n		H	-6	-6	c4_bot row 5
+col4	23	letter	-6	n		H	-6	-6	c4_bot row 6
+col4	24	letter	-4	y		H	-4	-4	c4_bot row 7; A: 4 overwritten?; image: a heavy 4, underlined
+col5	1	word	10-18	n		H	10-18	10-18	c5_top row 1
+col5	2	word	7-1	n		H	7-1	7-1	c5_top row 2
+col5	3	word	3-8	n		H	3-8	3-8	c5_top row 3
+col5	4	word	4-19	n		H	4-19	4-19	c5_top row 4
+col5	5	word	18-3	n		H	18-3	18-3	c5_top row 5
+col5	6	word	3-24	n		H	3-24	3-24	c5_top row 6
+col5	7	word	17-22	n		H	17-22	17-22	c5_top row 7
+col5	8	word	6-2	n		H	6-2	6-2	c5_top row 8
+col5	9	word	3-14	y		H	3-14	3-14	c5_top row 9
+col5	10	letter	x21-1	n		H	x21-1	x21-1	c5_top row 10
+col5	11	letter	-2	n		H	-2	-2	c5_top row 11
+col5	12	word	22-16	n		H	22-16	22-16	c5_top row 12
+col5	13	letter	-27	n		H	-27	-27	c5_top row 13
+col5	14	letter	-31	n		H	-31	-31	c5_top row 14
+col5	15	letter	-7	y		H	-7	-7	c5_top row 15
+col5	16	word	13-14	n		H	13-14	13-14	c5_top row 16
+col5	17	word	2-24	n		H	2-24	2-24	c5_top row 17
+col5	18	word	36-7	y		H	36-7	36-7	c5_bot row 1
