@@ -1,0 +1,9 @@
+# HEID-1623A reconciliation of the 171 block (worker's eye on the native region u2w_171_block, readers A/B in reads_raw.txt), 16 Oct 2026.
+# Same sign naming as recon_166.txt. After 43 both readers wrote one merged sign (c-like with a flourish); the eye sees c then the
+# z-like letter written close: c|merged z|merged (M). Signs the readers left as [sym] but described as a letter are named and M.
+# A line-end mark after "a" on L05 sits at the page edge (binding) and is not counted.
+L02	[clear: sijn] 43 c|merged z|merged 22 40 y 61 [clear: bijde]
+L03	[clear: bequaemste occasie] 59 h|sym 40 [clear: leux] 84 20 45 [clear: schrijvinge] 45 20 72
+L04	x 62 e|sym 45 [clear: dische] 16 78 c|sym 24 67 50 p m x 58 23 s 10 20 H 22 94
+L05	78 13 22 [clear: geven] 30 78 1 x 60 61 49 69 16 c|sym 24 47 [clear: Wat Godt] 69 2|z a
+L06	40 x|r 48 30 24 67 23 46

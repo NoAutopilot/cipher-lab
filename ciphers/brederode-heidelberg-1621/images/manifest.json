@@ -532,5 +532,21 @@
    "s0271_700.jpg": "58c1cf812c9842da5824bfcfd4658f81e0652e95",
    "s0272_700.jpg": "96c61c65384ffe6e82e8c0d7760b30cd76bd303a"
   }
+ },
+ "heid_6022_1623a": {
+  "job": "HEID-1623A, 16 Oct 2026",
+  "holder": "NL-HaNA 1.01.02 inv. 6022",
+  "mets": "412b1414-afa2-42fe-b56d-2b5f705e5005",
+  "regen": "heid1623a/regen_heid1623a.sh",
+  "note": "not committed; native regions are IIIF pct regions at full size; crops by tools/iiif_lines.py --image",
+  "sha1": {
+   "s0166_1200.jpg": "f04401b8ed6e67f5008b03de58f862d75b6aa577 (MATCH heid_6022j)",
+   "s0171_1200.jpg": "60b25e410662585d2a19a140821d6fd87456b83f (MATCH heid_6022j)",
+   "u1_166_block.jpg pct:61,16.5,39,16 (2041x668)": "5a0aec074e482fd8b82ce8144dc7ab653eff5bb4",
+   "u2_171_block.jpg pct:61.5,22,38.5,14 (clipped first line; not used)": "80774493a03f06f1aca513278af9e50b95668a24",
+   "u3_171_note.jpg pct:50,18.5,11,14.5 (clipped right edge; not used)": "d0db9632a2384abd16a2d4321ca59d83ec0a98ee",
+   "u2w_171_block.jpg pct:61.5,19,38.5,17 (2016x710)": "496f9197ec7636256a10b692162b70444642592b",
+   "u3w_171_note.jpg pct:49.5,18,13,15 (681x627)": "39b1991b23590915402e0214e00f1652083e7b85"
+  }
  }
 }

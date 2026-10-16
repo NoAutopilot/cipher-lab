@@ -1,0 +1,12 @@
+# HEID-1623A reconciliation of the marginal note beside the 171 block (worker's eye on u3w_171_note at native size and 2x; readers
+# A/B in reads_raw.txt), 16 Oct 2026. Diplomatic, period spelling; every word grade M. A word written w|alt is a split between the
+# eye and a reader; [?] = not read. Read from the note's own image before any alignment was run.
+L01	mij|my selfs , bijde bequaemste
+L02	occasie onder coleur|colleur van|bay
+L03	der|Det inschrijvinge in de|der
+L04	Westindische Compagnie , te
+L05	besonderen|beloordery , bijde Switsersche|Switserlen
+L06	Evangelische cantons|cantoent ,
+L07	dewelcke|D.E.W. te|est bewegen|Cityoby , [?]
+L08	te [?] wat|Mael Godt
+L09	sal willen geven|gegeven .

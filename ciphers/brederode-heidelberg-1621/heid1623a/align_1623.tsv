@@ -1,0 +1,64 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+171 L02 43..61 (before clear 'bijde')	0	@43	code	43		m	single
+171 L02 43..61 (before clear 'bijde')	1	@c	code	c		i	single
+171 L02 43..61 (before clear 'bijde')	2	@z	code	z		j	single
+171 L02 43..61 (before clear 'bijde')	3	@22	code	22		s	conflict:ersche
+171 L02 43..61 (before clear 'bijde')	4	@40	code	40		e	conflict:coleur
+171 L02 43..61 (before clear 'bijde')	5	@y	code	y		l	single
+171 L02 43..61 (before clear 'bijde')	6	@61	code	61		fs	single
+171 L03 59..45 (between 'occasie' and 'schrijvinge'; clear 'leux' dropped)	0	@59	code	59		o	single
+171 L03 59..45 (between 'occasie' and 'schrijvinge'; clear 'leux' dropped)	1	@h	code	h		nder	single
+171 L03 59..45 (between 'occasie' and 'schrijvinge'; clear 'leux' dropped)	2	@40	code	40		coleur	single-segment
+171 L03 59..45 (between 'occasie' and 'schrijvinge'; clear 'leux' dropped)	3	@84	code	84		van	single-segment
+171 L03 59..45 (between 'occasie' and 'schrijvinge'; clear 'leux' dropped)	4	@20	code	20		der	single-segment
+171 L03 59..45 (between 'occasie' and 'schrijvinge'; clear 'leux' dropped)	5	@45	code	45		in	agrees
+171 L03-L04 45..45 (between 'schrijvinge' and 'dische')	0	@45	code	45		i	conflict:in
+171 L03-L04 45..45 (between 'schrijvinge' and 'dische')	1	@20	code	20		n	conflict:der
+171 L03-L04 45..45 (between 'schrijvinge' and 'dische')	2	@72	code	72		d	single
+171 L03-L04 45..45 (between 'schrijvinge' and 'dische')	3	@x	code	x		e	agrees
+171 L03-L04 45..45 (between 'schrijvinge' and 'dische')	4	@62	code	62		w	single
+171 L03-L04 45..45 (between 'schrijvinge' and 'dische')	5	@e	code	e		est	single
+171 L03-L04 45..45 (between 'schrijvinge' and 'dische')	6	@45	code	45		in	agrees
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	0	@16	code	16		c	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	1	@78	code	78		o	conflict:bijde
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	2	@c	code	c		m	conflict:i
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	3	@24	code	24		p	conflict:e
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	4	@67	code	67		a	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	5	@50	code	50		g	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	6	@p	code	p		n	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	7	@m	code	m		i	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	8	@x	code	x		e	agrees
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	9	@58	code	58		t	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	10	@23	code	23		e	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	11	@s	code	s		b	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	12	@10	code	10		e	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	13	@20	code	20		s	conflict:der
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	14	@H	code	H		o	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	15	@22	code	22		n	conflict:ersche
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	16	@94	code	94		deren	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	17	@78	code	78		bijde	single-segment
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	18	@13	code	13		swits	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	19	@22	code	22		ersche	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	20	@30	code	30		evange	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	21	@78	code	78		lische	conflict:bijde
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	22	@1	code	1		c	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	23	@x	code	x		antons	conflict:e
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	24	@60	code	60		de	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	25	@61	code	61		welcke	conflict:fs
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	26	@49	code	49		te	single-segment
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	27	@69	code	69		b	single
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	28	@16	code	16		ewegen	conflict:c
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	29	@c	code	c		?	conflict:i
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	30	@24	code	24		te	conflict:e
+171 L04-L05 16..47 (between 'dische' and 'Wat Godt'; clear 'geven' dropped)	31	@47	code	47		?	conflict:
+171 L05-L06 69..46 (after 'Wat Godt' to block end)	0	@69	code	69		s	conflict:b
+171 L05-L06 69..46 (after 'Wat Godt' to block end)	1	@2	code	2		a	single
+171 L05-L06 69..46 (after 'Wat Godt' to block end)	2	@a	code	a		l	single
+171 L05-L06 69..46 (after 'Wat Godt' to block end)	3	@40	code	40		w	conflict:coleur
+171 L05-L06 69..46 (after 'Wat Godt' to block end)	4	@x	code	x		i	conflict:e
+171 L05-L06 69..46 (after 'Wat Godt' to block end)	5	@48	code	48		l	single
+171 L05-L06 69..46 (after 'Wat Godt' to block end)	6	@30	code	30		l	conflict:evange
+171 L05-L06 69..46 (after 'Wat Godt' to block end)	7	@24	code	24		e	single
+171 L05-L06 69..46 (after 'Wat Godt' to block end)	8	@67	code	67		n	conflict:a
+171 L05-L06 69..46 (after 'Wat Godt' to block end)	9	@23	code	23		g	conflict:e
+171 L05-L06 69..46 (after 'Wat Godt' to block end)	10	@46	code	46		even	single

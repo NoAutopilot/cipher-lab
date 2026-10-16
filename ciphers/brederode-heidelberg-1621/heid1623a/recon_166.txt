@@ -1,0 +1,11 @@
+# HEID-1623A reconciliation of the 166 block (worker's eye on the native region u1_166_block, readers A/B in reads_raw.txt), 16 Oct 2026.
+# Sign naming: the z-like 3-shaped letter = z; y with two dots = y; long s = s; crossed H = H; the e-like flourished letter = e; the
+# x/r-like letter = x (the same form the 171 readers name x; where both 166 readers wrote r it is written x|r and is M).
+# This hand writes the numeral 1 like i ("6i", "i3"): read as 61, 13 (both readers saw the same glyph). A stand-alone i-shaped sign
+# between numerals is written 1|i (M). "84" is overwritten/blotted (84|blot, M). "61" is inserted above the line with carets
+# between 60 and 49 (its written position). Clear words abridged from the readers.
+L02	[clear: sijn] 43 c z 22 40 y 61 [clear: bijde bequaemste]
+L03	[clear: occasie] 59 h 49 [clear: Lair] 84|blot 20 45 [clear: schrijvinge] 45 20 72 x|r 62 e|r
+L04	45 [clear: dische] 16 78 78 c 24 67 50 p m x 58 23 s 10 20 H 22 94 78
+L05	13 22 [clear: gewen] 30 78 1|i x|r 60 61 49 16 c 24 47 [clear: Wat Godt] 69 2 a d
+L06	40 x|r 48 30 24 67 23 46

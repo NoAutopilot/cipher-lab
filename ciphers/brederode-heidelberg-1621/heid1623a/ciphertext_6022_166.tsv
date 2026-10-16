@@ -1,0 +1,66 @@
+# NL-HaNA 1.01.02 inv. 6022 scan 166, Brederode, Straatsburg 12 Aug 1623 (Resolutien NR 6 p.260 res. 1721a). HEID-1623A, 16 Oct 2026: two blind Sonnet readers + reconciliation on native line crops. S = sign as transcribed (no value read); M = otherwise.
+line	pos	kind	token	alt	confidence	why
+L02	2	num	43		S	readers agree; witnesses agree; control PASS
+L02	3	let	c		M	other witness split
+L02	4	let	z		M	other witness split
+L02	5	num	22		S	readers agree; witnesses agree; control PASS
+L02	6	num	40		S	readers agree; witnesses agree; control PASS
+L02	7	let	y		S	readers agree; witnesses agree; control PASS
+L02	8	num	61		S	readers agree; witnesses agree; control PASS
+L03	2	num	59		S	readers agree; witnesses agree; control PASS
+L03	3	let	h		M	other witness split
+L03	4	num	49		M	no identical token in the other witness
+L03	6	num	84	blot	M	split 84|blot
+L03	7	num	20		S	readers agree; witnesses agree; control PASS
+L03	8	num	45		S	readers agree; witnesses agree; control PASS
+L03	10	num	45		S	readers agree; witnesses agree; control PASS
+L03	11	num	20		S	readers agree; witnesses agree; control PASS
+L03	12	num	72		S	readers agree; witnesses agree; control PASS
+L03	13	let	x	r	M	split x|r
+L03	14	num	62		S	readers agree; witnesses agree; control PASS
+L03	15	let	e	r	M	split e|r; other witness split
+L04	1	num	45		S	readers agree; witnesses agree; control PASS
+L04	3	num	16		S	readers agree; witnesses agree; control PASS
+L04	4	num	78		M	no identical token in the other witness
+L04	5	num	78		S	readers agree; witnesses agree; control PASS
+L04	6	let	c		M	other witness split
+L04	7	num	24		S	readers agree; witnesses agree; control PASS
+L04	8	num	67		S	readers agree; witnesses agree; control PASS
+L04	9	num	50		S	readers agree; witnesses agree; control PASS
+L04	10	let	p		S	readers agree; witnesses agree; control PASS
+L04	11	let	m		S	readers agree; witnesses agree; control PASS
+L04	12	let	x		S	readers agree; witnesses agree; control PASS
+L04	13	num	58		S	readers agree; witnesses agree; control PASS
+L04	14	num	23		S	readers agree; witnesses agree; control PASS
+L04	15	let	s		S	readers agree; witnesses agree; control PASS
+L04	16	num	10		S	readers agree; witnesses agree; control PASS
+L04	17	num	20		S	readers agree; witnesses agree; control PASS
+L04	18	let	H		S	readers agree; witnesses agree; control PASS
+L04	19	num	22		S	readers agree; witnesses agree; control PASS
+L04	20	num	94		S	readers agree; witnesses agree; control PASS
+L04	21	num	78		S	readers agree; witnesses agree; control PASS
+L05	1	num	13		S	readers agree; witnesses agree; control PASS
+L05	2	num	22		S	readers agree; witnesses agree; control PASS
+L05	4	num	30		S	readers agree; witnesses agree; control PASS
+L05	5	num	78		S	readers agree; witnesses agree; control PASS
+L05	6	num	1	i	M	split 1|i
+L05	7	let	x	r	M	split x|r
+L05	8	num	60		S	readers agree; witnesses agree; control PASS
+L05	9	num	61		S	readers agree; witnesses agree; control PASS
+L05	10	num	49		S	readers agree; witnesses agree; control PASS
+L05	11	num	16		S	readers agree; witnesses agree; control PASS
+L05	12	let	c		M	other witness split
+L05	13	num	24		S	readers agree; witnesses agree; control PASS
+L05	14	num	47		S	readers agree; witnesses agree; control PASS
+L05	16	num	69		S	readers agree; witnesses agree; control PASS
+L05	17	num	2		M	other witness split
+L05	18	let	a		S	readers agree; witnesses agree; control PASS
+L05	19	let	d		M	no identical token in the other witness
+L06	1	num	40		S	readers agree; witnesses agree; control PASS
+L06	2	let	x	r	M	split x|r; other witness split
+L06	3	num	48		S	readers agree; witnesses agree; control PASS
+L06	4	num	30		S	readers agree; witnesses agree; control PASS
+L06	5	num	24		S	readers agree; witnesses agree; control PASS
+L06	6	num	67		S	readers agree; witnesses agree; control PASS
+L06	7	num	23		S	readers agree; witnesses agree; control PASS
+L06	8	num	46		S	readers agree; witnesses agree; control PASS
