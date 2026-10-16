@@ -13,3 +13,6 @@ b2 sheet03 CIPHER=C PLAIN=A PS=L hits=none
 b2 sheet04 CIPHER=E PLAIN=B PS=I hits=none
 b2 sheet05 CIPHER=I PLAIN=F PS=H hits=none
 b2 sheet06 CIPHER=F PLAIN=I PS=K hits=none
+# batch 3: inv. 6022 scans 152-159, 161-164 (160 seen singly in the orientation probe), seed 16222, sheets 01-02
+b3 sheet01 CIPHER=B PLAIN=L PS=D hits=none
+b3 sheet02 CIPHER=F PLAIN=D PS=A hits=none
