@@ -33,6 +33,7 @@ WORD = re.compile(r'\b(allowed_warning|allowed with warning|rejected|allowed)\b'
 STATUS_PHRASE = re.compile(r'(?:usage:\s*\S+\s+|(?:five[_ -]hour|seven[_ -]day|window|rate[_ -]?limit|reads?)\b[^.;|]{0,40}?)'
                            r'(allowed_warning|allowed with warning|rejected|allowed)\b'
                            r'|\b(allowed_warning|allowed with warning|rejected|allowed)\b[^.;|]{0,40}?(?:five[_ -]hour|seven[_ -]day|window|rate[_ -]?limit|by get_session)', re.I)
+SELF_REPORT = re.compile(r'usage:\s*(?:\S+\s+)?(allowed_warning|allowed with warning|rejected|allowed)\b', re.I)
 WINDOW = re.compile(r'five[_ -]hour|seven[_ -]day|resets?(At)?\b|window|rate_limit|get_session', re.I)
 WINDOW_OF = re.compile(r'(five[_ -]hour|seven[_ -]day)', re.I)
 RESET = re.compile(r'resets?(?:At|\s+at)?\s*:?\s*([0-9]{1,2}:[0-9]{2}\s*UTC(?:\s+[0-9]{1,2}\s+[A-Z][a-z]{2})?|1[0-9]{9})', re.I)
@@ -54,7 +55,11 @@ def scan_room(text, now, stale_min):
         acct = au.account_of(role) or au.account_of(body[:120])
         if not acct:
             continue
-        hit = STATUS_PHRASE.search(body)
+        # 16 Oct 2026 (check-in 60): a line that quotes another account's state in its body ("account 1 seven_day
+        # allowed_warning") and ends with its own self-report ("usage: five_hour allowed by get_session") was read from the
+        # quote, not the self-report. The self-report phrase, when present, is the reading; the last one in the line wins.
+        selfs = list(SELF_REPORT.finditer(body))
+        hit = selfs[-1] if selfs else STATUS_PHRASE.search(body)
         if not hit:
             continue  # a status word in result prose ("false rejected 18/20", "allowed_warning anywhere") is not a reading
         when = dt.datetime.strptime(when_s, '%Y-%m-%d %H:%M')
@@ -63,7 +68,7 @@ def scan_room(text, now, stale_min):
         # seven-day allowed_warning is NOT a stop by the owner's rulings of 24 and 27 Sept 2026 (BUDGETS.md), broken
         # four times since (2, 3, 5 and 15 Oct); only five_hour allowed_warning, or rejected on any window, stops
         win = WINDOW_OF.search(body[max(0, hit.start() - 60):hit.end() + 60])
-        latest[acct] = dict(word=norm(hit.group(1) or hit.group(2)), when=when_s, age_min=int((now - when).total_seconds() // 60),
+        latest[acct] = dict(word=norm(hit.group(1) or (hit.group(2) if hit.re.groups > 1 else '')), when=when_s, age_min=int((now - when).total_seconds() // 60),
                             reset=r.group(1) if r else '', line=body[:160], window=(win.group(1).lower().replace('-', '_').replace(' ', '_') if win else ''))
     return latest
 

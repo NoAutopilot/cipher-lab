@@ -41,3 +41,17 @@ def test_five_hour_warning_still_stops():
     room = "2026-10-15 15:16 | LANE Z (account 1, lane orchestrator) | check-in 1: usage: five_hour allowed_warning by get_session, resets 17:20 UTC\n"
     rc, rows = run(room, '2026-10-15 15:30')
     assert rc == 2 and rows['1']['flag'].startswith('STOP')
+
+
+def test_self_report_beats_quoted_state():
+    # 16 Oct 2026, check-in 60: an account-2 lane line quoting account 1's seven_day allowed_warning, ending with its own
+    # self-report "five_hour allowed" -- the reading is the self-report, not the quote.
+    room = ("2026-10-16 10:27 | LANE DEFAULT-account-2-20261016-1010 (account 2, lane orchestrator) | claim+done: BUDGETS still "
+            "shows account 1 seven_day allowed_warning (no new workers anywhere). usage: five_hour allowed by get_session, resets 11:20 UTC\n")
+    rc, rows = run(room, '2026-10-16 10:31')
+    assert rc == 0 and rows['2']['word'] == 'allowed' and rows['2']['flag'] == '', rows
+    # the mirror: prose says allowed, the self-report says five_hour allowed_warning -> stop
+    room = ("2026-10-16 10:27 | LANE Z (account 2, lane orchestrator) | claim+done: account 1 reads five_hour allowed by get_session. "
+            "usage: five_hour allowed_warning by get_session, resets 11:20 UTC\n")
+    rc, rows = run(room, '2026-10-16 10:31')
+    assert rc == 2 and rows['2']['flag'].startswith('STOP'), rows
