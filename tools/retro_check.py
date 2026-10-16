@@ -78,7 +78,9 @@ def proposals_in_retros(retro_dir, since=None):
 CRITICAL = {
     "over_claim_X": lambda code, text: code == "X",
     "no_repository": lambda code, text: bool(re.search(r'source_url|no repository|without the repository', text, re.I)),
-    "gate_found_blind": lambda code, text: bool(re.search(r'(gate|check|tool).{0,40}\b(blind|silently (?:skipp|miss)|never (?:saw|reach))', text, re.I)),
+    # 16 Oct 2026 (EXC-2026-10-16 fix C): "blind" must be the gate's state ("the gate was blind to"), never the adjective of a
+    # next step ("next a blind single-crop read", ledger 4542, a false positive that triggered the first exception review).
+    "gate_found_blind": lambda code, text: bool(re.search(r'(gate|check|tool)\S*\s+(?:was\s+|is\s+|found\s+|went\s+)?(blind\b(?! (?:single|re-?|pass|read|sort|call|look|label))|silently (?:skipp|miss)|never (?:saw|reach))', text, re.I)),
 }
 OVER2X = re.compile(r'(\d+(?:\.\d+)?)\s*x\s+(?:the\s+|its\s+|a\s+)?(?:\$|USD\s*)?(?:\d+(?:\.\d+)?\s*)?cap', re.I)
 
@@ -163,7 +165,7 @@ def run(register, retro_dir, ledger, now, max_open_days, max_retro_days, registe
             due = [k for k, v in hits.items() if v and (k != "over_2x_cap" or len(v) >= 3)]
             if due:
                 findings.append("(e) exception review due since " + last_review.isoformat() + ": " +
-                                "; ".join(f"{k} rows {hits[k][:6]}{'...' if len(hits[k]) > 6 else ''}" for k in due) +
+                                "; ".join(f"{k} rows {hits[k]}" for k in due) +
                                 " -- run the retrospective brief's 'Exception review' (cap USD 3) and register it as an EXC-<date> row")
     return findings, info
 

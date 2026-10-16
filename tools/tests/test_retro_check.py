@@ -69,6 +69,25 @@ with tempfile.TemporaryDirectory() as td:
     findings, info = rc.run(reg, td, os.path.join(td, "LEDGER.md"), NOW, 7, 8, datetime.date(2026, 9, 28))
     if any(f.startswith("(e)") for f in findings):
         print(f"FAIL: a registered exception review did not clear the trigger: {findings}"); fails += 1
+# gate_found_blind (EXC-2026-10-16 fix C): must catch a gate that was blind; must not block "blind" as a next step's adjective
+# (ledger row 4542: the decoy gate worked, the false positive triggered the first exception review); and all rows are printed.
+with tempfile.TemporaryDirectory() as td:
+    open(os.path.join(td, "RETRO-2026-10-12.md"), "w").write(RETRO)
+    open(os.path.join(td, "LEDGER.md"), "w").write("| Date | Role | Model | Cost | Outcome | Lesson |\n|---|---|---|---|---|---|\n"
+        "| 14 Oct 2026 | a | session_01A | account-1 | Opus 5.5 | 3.0 | D | decoy gate FAIL 8/12 against 10/12, nothing applied; next a blind single-crop read |\n"
+        "| 14 Oct 2026 | b | session_01B | account-1 | Opus 5.5 | 3.0 | D | ledger_check.py was blind to every row after a blank line |\n"
+        "| 14 Oct 2026 | c | session_01C | account-1 | Opus 5.5 | 3.0 | D | the intake check silently skipped the premise section |\n")
+    hits = rc.critical_since(os.path.join(td, "LEDGER.md"), datetime.date(2026, 10, 12))
+    if hits["gate_found_blind"] != [4, 5]:
+        print(f"FAIL: gate_found_blind should hit rows 4 and 5 only, got {hits['gate_found_blind']}"); fails += 1
+    open(os.path.join(td, "LEDGER.md"), "a").write("".join(
+        f"| 14 Oct 2026 | o{i} | session_01{i} | account-1 | Opus 5.5 | 9.0 | D | {2 + i / 10:.1f}x the 4 cap |\n" for i in range(8)))
+    reg = os.path.join(td, "reg.tsv")
+    open(reg, "w").write(HDR + "RETRO-2026-10-12\tP1\tFix\tapplied\ttools/x.py\t2026-10-13\tx\nRETRO-2026-10-12\tP2\tAnother\tdeclined\twhy\t2026-10-13\tx\n")
+    findings, info = rc.run(reg, td, os.path.join(td, "LEDGER.md"), NOW, 7, 8, datetime.date(2026, 9, 28))
+    e = [f for f in findings if f.startswith("(e)")]
+    if not e or "over_2x_cap rows [6, 7, 8, 9, 10, 11, 12, 13]" not in e[0]:
+        print(f"FAIL: all over-2x rows should be listed (no [:6] cut): {e}"); fails += 1
 if fails:
     print(f"{fails} failure(s) in the exception-review checks"); sys.exit(1)
 print("ok: exception review triggers on an X row / 3+ rows at 2x cap since the last review and clears after an EXC row")

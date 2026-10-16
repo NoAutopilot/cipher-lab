@@ -212,6 +212,19 @@ applied unchanged, and three named cycle-3 briefs written from it.
   <brief>` may be run as a sanity check; a FAIL is a warning, never a reason to hold a brief (owner, 3 Oct 2026: cost
   overruns are not a concern, momentum is). The only stop remains BUDGETS.md's rate-limit rule (five_hour warning/rejected).
   N counts calls, not pages: one call per crop x passes when crops go one per call (F36-GLOSS: 102-128 crops x 4).
+  Rates (16 Oct 2026, EXC-2026-10-16): Sonnet about USD 1.5 a call; Opus about USD 1.3 a call on top of the 3.0 floor
+  (HAR-41R, ledger 4772) -- "Opus rate unmeasured" is retired. "Disk only" means no network, not no images: a blind
+  sort, a blind labelling pass, a "blind Sonnet call" or an exemplar-crop check is an image step and carries the line
+  (MONL-SORT, CL1161-S7, MONL-VB, LIN-LAB2 passed the gate as no-image at 2.2-3.0x cap; the gate now catches all four).
+- **A key file is opened before it is named as a key (16 Oct 2026, EXC-2026-10-16, ledger 4443 X).** A key-application
+  brief names its key file only after the orchestrator has opened it, and says in one clause what it shows (a table of
+  values, a decipherment, a cipher crop). F4687-LKEY's brief called `lasry_p033_1.png` "his key"; at full size it is a
+  crop of three cipher rows, and Lasry's files publish no key. The worker caught it at 0.47x cap; the brief should have.
+- **A script-only session over 30 minutes is priced by elapsed time (16 Oct 2026, EXC-2026-10-16, ledger 4287).**
+  TXE4-0 REPAIR, a Sonnet job that only ran scripts, was priced at 4.5 from its unit list, ran 45 minutes, read 110M
+  cache tokens and cost 25.92 (4.3x). No gate sees this shape: a brief whose job loops scripts for more than 30 minutes
+  prices the session at about USD 0.5 a minute of long-context cache growth and names a 15-minute `get_session` read
+  by the orchestrator (Usage 6's GOLD-4D interval), not a wall-clock box alone.
 - **Known answer first (27 Sept 2026, RETRO-2026-09-27x P2).** When any part of the target's own text is already read
   (a printed opening, a clerk's gloss, a solver's partial decipherment), the first paid step scores the key AND the
   transcription against that known answer, separately, before any shuffled-key calibration, sibling-key recovery or

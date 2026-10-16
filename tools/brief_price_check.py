@@ -14,8 +14,11 @@ Must NOT block: a brief with no image step (a gate-fix, a print check, a family_
 only reads an existing transcription file), or a brief that says "no images" / "disk only" with no blind-pass or
 transcribe verb (tests cover both, plus F36-GLOSS's own text as the failing case). A worker's report wording
 such as "report vision calls used" is not an image step on its own.
-Rates: Sonnet about USD 1.5 a call on native crops (AX-COMP2); Opus has no recorded rate -- the brief writes
-"Opus rate unmeasured: first call measured and reported, stop if over USD 3" and the gate accepts that wording.
+Rates: Sonnet about USD 1.5 a call on native crops (AX-COMP2); Opus about USD 1.3 a call on top of the 3.0 session floor
+(HAR-41R, ledger 4772: 5 reader calls measured, 16 Oct 2026, EXC-2026-10-16 fix B). The "Opus rate unmeasured" wording is
+retired (it let HAR-41R through at 2.1x): an Opus image brief writes the line with r = 1.3 like any other.
+"Disk only" means no network, not no images: a blind sort, a blind labelling pass or an exemplar-crop check is an image
+step (EXC-2026-10-16 fix A; tests cover the four leaked shapes and keep the family_run disk case passing).
 
 Usage: python3 tools/brief_price_check.py BRIEF.md [BRIEF.md ...]   (exit 1 if any FAILs)
        python3 tools/brief_price_check.py --summary BRIEFS...       (also prints ok/FAIL/no-image counts)
@@ -26,12 +29,17 @@ import sys
 
 # "transcription" alone is a file name more often than a job (a disk brief reads "the 993-sign transcription"),
 # so only the verb forms and "transcription pass" count; "vision call" counts only outside report wording.
-IMG = re.compile(r'blind (?:pass|read)|\bcrops?\b|\btiles?\b|\breaders?\b|gloss read|\btranscribe[sd]?\b|'
+# 16 Oct 2026 (EXC-2026-10-16 fix A): a blind sort, a blind labelling pass, a "blind Sonnet/Opus call" and an exemplar-crop
+# check are image steps, and "disk only" (which means no network, not no images) does not exempt them: MONL-SORT, CL1161-S7,
+# MONL-VB and LIN-LAB2 (ledger 4490/4536/4537/4551, 2.2-3.0x cap) all passed as "no image step" before this.
+IMG = re.compile(r'blind (?:pass|read|sort|label\w*)|blind (?:\w+ )?(?:vision|Sonnet|Opus) (?:pass|call)|vision pass|'
+                 r'\bcrops?\b|\btiles?\b|\breaders?\b|gloss read|\btranscribe[sd]?\b|'
                  r'transcription pass|iiif_lines|image reader|vision calls? (?:on|per|at most)|at most \d+ vision', re.I)
 LINE = re.compile(r'vision calls:\s*(\d+)\s*x\s*(?:USD|\$)\s*([\d.]+)(?:\s*\+\s*(\d+)\s*reconciliation)?\s*=\s*'
                   r'(?:USD\s*|\$)?([\d.]+)', re.I)
 NOIMG = re.compile(r'\bno images?\b|\bdisk only\b', re.I)
-NOIMG_OVERRIDE = re.compile(r'blind (?:pass|read)|\btranscribe[sd]?\b|transcription pass', re.I)
+NOIMG_OVERRIDE = re.compile(r'blind (?:pass|read|sort|label\w*)|blind (?:\w+ )?(?:vision|Sonnet|Opus) (?:pass|call)|'
+                            r'vision pass|exemplar crops?|image check|\btranscribe[sd]?\b|transcription pass', re.I)
 OPUS_UNMEASURED = re.compile(r'Opus rate unmeasured', re.I)
 CAP = re.compile(r'\bCap (?:USD ?|\$)?([\d.]+)', re.I)
 
@@ -68,7 +76,7 @@ def check(text):
     m = LINE.search(text)
     if not m:
         if OPUS_UNMEASURED.search(text):
-            return 0, 'ok (Opus rate unmeasured wording)', 'ok'
+            return 1, 'image step; "Opus rate unmeasured" is retired (Opus about USD 1.3 a call, HAR-41R) -- write the line', 'fail'
         return 1, 'image step but no "vision calls: N x USD r = X" line', 'fail'
     n, r, k, x = int(m.group(1)), float(m.group(2)), int(m.group(3) or 0), float(m.group(4))
     if abs((n + k) * r - x) > 0.01:

@@ -32,9 +32,24 @@ CASES = [
      "# TR-Z: Opus gloss read of 102 crops x 4 passes. Cap $6.\nvision calls: 408 x USD 1.5 = 612\n", 1),
     ("priced line, wrong arithmetic",
      "# TR-W: blind pass over 4 crops. Cap $10. vision calls: 4 x USD 1.5 = 3", 1),
-    ("Opus rate unmeasured wording",
+    ("Opus rate unmeasured wording (retired 16 Oct 2026, EXC-2026-10-16 fix B: HAR-41R measured 1.3/call)",
      "# OP-X: Opus blind pass over 2 gloss crops. Cap $6. Opus rate unmeasured: first call measured and reported, "
-     "stop if over USD 3.", 0),
+     "stop if over USD 3.", 1),
+    ("Opus priced line with the measured rate",
+     "# OP-Y: Opus blind pass over 2 gloss crops. Cap $6. vision calls: 2 x USD 1.3 = 2.6", 0),
+    # EXC-2026-10-16 fix A, must catch: four "disk only" briefs that sent images and passed as no-image (2.2-3.0x cap).
+    ("MONL-SORT shape: disk only, value-blind sort (ledger 4490, 3.0x)",
+     "### MONL-SORT (Opus, cap 2, box 60 min, disk only): value-blind sort of K12/K14/K34 tokens. A subagent sorts the "
+     "token crops against exemplar crops of K04/K17/K53 with no key value shown; two blind sorts + 1 reconciliation.", 1),
+    ("CL1161-S7 shape: disk only, blind vision passes (ledger 4536, 2.6x)",
+     "### CL1161-S7 (Opus, cap 2, box 45 min, disk only): S and 7 exemplar image check. (3) two blind vision passes "
+     "(one call per sign) + reconciliation; (4) --try per split; no key.tsv edit.", 1),
+    ("MONL-VB shape: disk only, blind Sonnet calls (ledger 4537, 2.3x)",
+     "### MONL-VB (Opus, cap 3, box 60 min, disk only): value-blind sort of the c268 lead cells. Blind Sonnet calls see "
+     "no key value, no machine label and no decode. Apply only relabels both calls agree on.", 1),
+    ("LIN-LAB2 shape: disk first, blind labelling pass (ledger 4551, 2.2x)",
+     "### LIN-LAB2 (Opus, cap 1, box 40 min, disk first): second blind labeller on sheet_0255_c3. One blind labelling "
+     "pass by a subagent over the sheet.", 1),
     ("image step, no line",
      "# TR-V: transcribe f.12r from crops cut with tools/iiif_lines.py. Cap $4.", 1),
 ]
