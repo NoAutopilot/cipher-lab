@@ -685,3 +685,39 @@ Read so far: 0 of about 129 units (1621: 59 transcribed, all M; 1623 12 Aug bloc
 Verdict: keep going: 3 internal gaps; cheapest next: scan 181 block + note, ~$7.6
 
 `python3 tools/gaps_check.py brederode-heidelberg-1621` (HEID-1623A): `OK keep-going brederode-heidelberg-1621: keep going: 3 internal gap(s), 3 step(s) untried`
+
+## HEID-1623CAL (16 Oct 2026, 02:16-02:4x UTC by date -u, account 2, Opus; for the orchestrator, owner account)
+Disk only, no network, no readers, no images; no reading, no key. PREREG `heid1623cal/PREREG-HEID1623CAL.md` pushed (b7e78baf6) before any run.
+Question: can `tools/interlinear_align.py`, run exactly as HEID-1623A ran it (`align --code-prefix @ --code-chunk 6 --wildcard ? --keep-fs
+--shuffle 200 --seed 1623`), pass its own gate (CONSISTENT real > shuffle p95 AND real >= 3) on a KNOWN-TRUE gloss with the 1623 block's
+grammar, and at what N? Synthetic pairs (`heid1623cal/calib.py`): pair sizes resampled from the real 1623 pairs (7, 6, 7, 32, 11 tokens),
+Dutch spans with the 171 note's word-length distribution (words by frequency from tools/data/nl16, 1569-1589), 2.0 letters per token as
+in the real pairs, codes from the block's alphabet (numbers 1-99, 26% letter codes). Design A (gating) = HEID-1623A's poscontrol.py
+random-cut design; design B (descriptive) = fixed 2-letter chunks, so recurring chunks recur. 20 seeds at each N.
+
+| design | N | seeds passing | mean real CONSISTENT | mean shuffle p95 |
+|---|---|---|---|---|
+| A | 64 | 0/20 | 0.40 | 0.85 |
+| A | 85 | 0/20 | 0.70 | 1.10 |
+| A | 120 | 2/20 | 1.40 | 1.75 |
+| A | 200 | 2/20 | 1.60 | 2.45 |
+| B | 64 (realised 79) | 0/20 | 0.85 | 1.60 |
+| B | 85 (realised 105) | 2/20 | 1.30 | 2.05 |
+| B | 120 (realised 152) | 2/20 | 2.30 | 3.55 |
+| B | 200 (realised 248) | 1/20 | 3.10 | 5.45 |
+
+**No N reaches 18/20; the smallest passing N is above 200 for design A** (and above about 250 tokens even for the easier fixed-chunk
+design B, where the shuffle p95 rises with N about as fast as the true count). Result: untested-by-this-tool below N = 200 at least.
+Correction logged: a pair-size trim bug (`out[-2] += out.pop()` evaluation order) put 4 of 80 design-A runs off their N; fixed in calib.py
+and those 10 (seed, N) rows (both designs) rerun before the table above; the full `calib.py --check` rerun takes about 19 minutes on 4 CPUs
+and was not run inside this box (the summary is recomputed from calib_runs.tsv).
+
+**Verdict: read scan 181 for a pooled alignment: no (next instrument or more material).** Pooling to about N=85 gives this tool 0/20 on a
+true gloss. Scan 181 is still worth transcribing for its own sake (sibling, gaps list), but not to rescue this alignment.
+What else the 1623 clear note licenses: the 12 Aug 1623 passage is a **text-known item on the leaf** -- the marginal note (171) is a period
+clear rendering written beside the block (M, HEID-1623A), so the passage is a candidate for N0 (the verifier assigns the class) as a period decipherment on the
+leaf, not a reading of ours; it is AUDIT-ready in that wording for a verifier (key source: none of ours; text: known). Next instruments, not
+a re-tune of this one: (1) a letter-level hand alignment of the five pairs (each code against the note letters it covers, fixed by the clear
+words), priced as its own job with a positive control built by this calib.py at N=64 first; (2) the period key itself (ASKS row 170, NA
+inv. 6056/6055/12578.1). For the parent: the known-keys step's instrument `tools/interlinear_align.py` is [retired] for this hypothesis at
+N <= 200 (rule 3); the Escalation line's "planned: pooled pairs with 181, positive control first, ~$9" should be replaced by (1) or (2).

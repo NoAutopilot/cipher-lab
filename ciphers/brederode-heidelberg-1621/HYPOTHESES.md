@@ -18,3 +18,7 @@
 | 17 Sept single = 13 Aug pair's first number (numbers only) | value null (uniform 10-84), mean 3.35 | p 0.089 | p < 0.01 | 6/12 | not significant |
 | 17 Sept single = either number of a 13 Aug pair (numbers only) | value null, mean 5.76 | p 0.013 | p < 0.01 | 10/12 | not under the threshold |
 | a number shared by both letters carries the same letter sign (first / either) | shuffled-pairing null (letters permuted over the 12 S1 numbers), means 1.09 / 2.25 | p 0.0002 / < 0.0001 | p < 0.01 | 6/12 / 9/12 | counted lead (M; letters M): supports "two letters, one key"; not a key, not a reading |
+
+## interlinear_align.py positive control at the 1623 grammar (HEID-1623CAL, 16 Oct 2026; PREREG heid1623cal/PREREG-HEID1623CAL.md; heid1623cal/calib.py, calib_runs.tsv)
+| hypothesis | control | control number | gate | target number | outcome |
+| a known-true gloss (1623 grammar, nl16 Dutch spans, design A = HEID-1623A random-cut one-code-per-chunk) passes the tool's shuffle gate (--shuffle 200 --seed 1623) | the tool's own row-shuffle null, per seed | seeds passing: N=64 0/20, N=85 0/20, N=120 2/20, N=200 2/20 (design B fixed 2-letter chunks, descriptive: 0, 2, 2, 1 of 20) | real > p95 AND real >= 3 in >= 18/20 seeds | no N reaches the gate | untested-by-this-tool below N = 200 at least (the 1623 note alignment, N=63; pooled with scan 181, about 85): the instrument cannot detect a true gloss at these N, not a negative |
