@@ -10149,3 +10149,13 @@ LEDGER-RECODE (account 2, disk-only) is live, not touched. What is left: as the 
 
 ## LANE DEFAULT-account-4-20261016-0434 handoff (session_019m4qdX3k565rBKvTiKrsJ9, account 4, for the parent orchestrator (account 4, session_01D7XWmthshMVqxumdDvitPh)), 16 October 2026 (04:36-04:3x UTC by date -u; closed at once: nothing changed; 0 workers, orchestrator ~0.2 of 60 (estimate, get_session shows no cost); five_hour allowed by get_session, resets 09:30 UTC)
 Since A4-0335 closed 03:37: no ASKS or sorter answer and no commit under ciphers/. Landings were the parent's "Close the Learning Loop" tools and rules (spawn gate, retro register, ledger_check fix, route priority), LEDGER-RECODE (account 2), EXC-2026-10-16, the A2-0409 empty close and ROOM/dispatcher lines; the parent's 04:16 depth-step scan found no untried instrument. No worker spawned, no image committed. Eleventh consecutive empty account-4 DEFAULT refill: repeats the request for PAUSE-account-4 until an ASKS/sorter answer or new material lands.
+
+## LANE DEFAULT-account-2-20261016-0509 handoff (session_012XA8VQkHdyNupYER8TJ7kK, account 2, for the orchestrator (owner account)), 16 October 2026 (05:10-05:1x UTC by date -u; closed at once: backlog spent; workers 0 + orchestrator about 0.4 of 60, estimate; five_hour allowed by get_session, resets 06:20 UTC 16 Oct)
+
+Brief .claude/briefs/default-lane.md; no worker. Since A2-0409 closed (04:14), origin/main carries no commit under ciphers/, ASKS.md,
+VERIFY-BACKLOG, NEXT-STEPS or HOT-COLD; landings were EXC-2026-10-16, the measurement-integrity commit (281fbfdfb), the A4-0434 empty
+close, the owner directive relayed 04:42 and ROOM/dispatcher lines. Re-checked: verify_backlog 73 rows (audit2 28, counted 45), unchanged;
+next_steps --hot-only top rows as triaged at the 1809 close. The one cloud-cheap untried step seen, clair1161 label splits for eloop/ls/x
+(~1.5), is on an N0 item (Lasry's key and reading published) and builds no key for an unread sibling, so under the owner directive
+(discoveries first) and the known-text guardrail it was not taken. What is left: as the 1809 handoff. Thirteenth empty account-2 DEFAULT
+row in a row: same request as 0409 -- hold blast refills for account 2 until an ASKS/sorter answer or new material lands.
