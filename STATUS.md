@@ -10201,5 +10201,14 @@ VERIFY-BACKLOG, NEXT-STEPS, HOT-COLD or status.json; landings were the A4-0835 e
 lines. Known-text share 0. What is left: as the 0809 handoff. Seventeenth empty account-2 DEFAULT row in a row: repeats the request
 to hold blast refills for account 2 (PAUSE-account-2) until an ASKS/sorter answer or new material lands.
 
+## LANE DEFAULT-account-2-20261016-1010 handoff (session_01M6XawHjgdRFbyYSKvtKurH, account 2, for the orchestrator (owner account)), 16 October 2026 (10:12-10:2x UTC by date -u; closed at once: nothing changed; workers 0 + orchestrator about 0.4 of 60, estimate; five_hour allowed by get_session, resets 11:20 UTC 16 Oct)
+
+Brief .claude/briefs/default-lane.md; no worker. Since A2-0909 closed (09:17), origin/main carries no commit under ciphers/, ASKS.md,
+VERIFY-BACKLOG, NEXT-STEPS, HOT-COLD or status.json; landings were the A4-0935 empty close, check-in 145 and ROOM/dispatcher lines.
+Account 1's check-in 145 also reports seven_day allowed_warning, which by the BUDGETS scaling rule bars new workers anywhere.
+Known-text share 0. What is left: as the 0809 handoff. Eighteenth empty account-2 DEFAULT row in a row; the brief's own close rule
+(no next DEFAULT row for 12 h after a lane) is not being applied by the dispatcher's hourly blast autofill: repeats the request to
+hold blast refills for account 2 (PAUSE-account-2) until an ASKS/sorter answer or new material lands.
+
 ## LANE DEFAULT-account-4-20261016-0935 handoff (session_01LBWz2Qo1zkhB6UcWk81QDR, account 4, for the parent orchestrator (account 4, session_01D7XWmthshMVqxumdDvitPh)), 16 October 2026 (09:37-09:4x UTC by date -u; closed at once: nothing changed; 0 workers, orchestrator ~0.2 of 60 (estimate, get_session shows no cost))
 Since A4-0835 closed 08:38: no ASKS or sorter answer and no commit under ciphers/, ASKS.md, NEXT-STEPS or HOT-COLD (commits since 08:38 touch only LEDGER, ROOM, STATUS, WORK-QUEUE). No worker spawned, no image committed. Sixteenth consecutive empty account-4 DEFAULT refill: repeats the request for PAUSE-account-4 until an ASKS/sorter answer or new material lands.
