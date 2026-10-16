@@ -23,7 +23,10 @@ must not assume one column count for the whole file.
 Outcome codes: **D** delivered on brief and stopped; **D-** delivered but needed a poke to push, or ran past
 the brief; **F** failed (usage limit, init error, blocked); **X** over-claimed and was corrected, written on the
 row of the session that over-claimed (a worker, or an `Orchestrator` row), never on the one that caught it;
-**N** clean negative (a search that found nothing, done right).
+**N** clean negative (a search that found nothing, done right). N is for a search or a test that ran to its end
+and came back empty with its control passed; a run that stopped at its cap, a non-test (control failed or below gate)
+or an untested-by-this-tool result is D- or D with the word in the Lesson, not N (RETRO-2026-09-25j P4; 16 Oct 2026:
+92 of 539 N rows said "incomplete", "non-test" or "untested").
 **Q** a QA, audit, or correction-only row that checks or fixes another row's work rather than producing a
 target result itself (a rolling QA pass, a verifier's second audit, a fix-and-recheck pass like LX-QAFIX).
 Use only these six codes. RETRO-2026-09-25h found `B` used for a blocked check-solved verdict (PX-CS01,

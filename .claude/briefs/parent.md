@@ -34,6 +34,16 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
    every check-in; a row it lists is a job to queue that hour (a WAIT-PASS worker writes the section from the
    folder's own NOTES/AUDIT/NEAR evidence), never a row to leave.
 
+0d. **Learning loop (16 Oct 2026, owner's mission "Close the Learning Loop").** Run `python3 tools/retro_check.py` at every
+   check-in: an open RETRO-PROPOSALS.tsv row past 7 days is applied in this check-in (briefs, tools, workflows only, with a
+   test) or escalated as an ASKS row with a one-line recommendation, never carried into a third retrospective; an
+   unregistered proposal gets its row; a lapsed cadence (newest RETRO-*.md older than 8 days) spawns the retrospective.
+   Before any brief that re-uses an instrument on a target, read `python3 tools/experiment_log.py --family <instrument>`.
+   Once a week (the retrospective's run, or the parent when it lapses) `python3 tools/learning_metrics.py --from <7 days ago>
+   --to <yesterday> --compare learning/baseline-2026-10-09-15.json` goes into the retrospective and STATUS.md handoff;
+   operational numbers and the solve count are reported apart, and no solving-effectiveness claim is made without a
+   new N3+/D2+ result with our own key.
+
 0c. **No cracks (owner, 5 Oct 2026).** Run `python3 tools/next_steps.py` then `python3 tools/no_cracks.py --board <export>
    --cards-json /tmp/nc-cards.json` (export the desk board's `cards` collection with ArtifactData list to a JSON file first);
    add the proposed cards (or add the folder to an existing card's `folders`, or fix the stale ASKS row it names); every
@@ -315,6 +325,12 @@ ask answered "at the next check-in" costs up to an hour, and an ask with no defa
 Naming and model (owner, 25 Sept 2026): every parent session is created on `claude-fable-5-1` and titled "Orchestrator N", N one more than the current parent's number (7c is Orchestrator 4, 7d is Orchestrator 5); the internal 7a/7b/7c labels stay in the files for lineage, the session title is the number. Lane orchestrators keep their lane names.
 
 **Session titles say LIVE or ARCHIVED (owner, 26 Sept 2026, 05:1x UTC, after replying into the retired parent 7e by mistake; both accounts).** Every session a parent or lane creates carries the prefix `LIVE ` in its title from `create_session`. The session that archives it renames it first: `ARCHIVED <old title> (done <clock time>, $<cost> <code>)`, then `archive_session`. A parent taking over titles itself `LIVE parent <x> · Orchestrator <N> (talk to this one)`, and as its first act after its ROOM take-over line renames its predecessor `ARCHIVED parent <w> · Orchestrator <N-1> (handed over <clock time>; do not message)` and archives it -- an archived session is read-only, so a message typed into it by mistake cannot start a second parent. A non-archived session whose title lacks `LIVE ` is a flag for the orphan check (`tools/orphan_check.py`). Lane orchestrators do the same for their workers.
+
+**Re-check idle before archiving, not just after (RETRO-2026-10-05 P3, applied 16 Oct 2026; PIS1-KEY, LEDGER.md rows 2612/2618).**
+An idle-looking worker past its box may be on a self-scheduled wake-up, not done. Before `archive_session` on a worker whose
+last-seen status was idle rather than completed, re-read `get_session` once more immediately beforehand; archive only a
+session reporting completed, or one idle with no pending wake-up for a full check-in interval. PIS1-KEY was archived
+mid-write on a 30-minute-old idle read and lost its NOTES.md section and done line.
 
 **Verify the archive took (26 Sept 2026, RETRO-2026-09-26d).** The rename-and-archive step above is prescriptive,
 not self-checking: `archive_session` can fail or be skipped with no error the successor notices. As part of the

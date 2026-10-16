@@ -31,3 +31,13 @@ def test_prose_rejected_is_not_a_reading():
             "2026-10-15 11:50 | worker X (account 4) | claim: job; usage: five_hour allowed by get_session, resets 13:30 UTC\n")
     rc, rows = run(room, '2026-10-15 12:16')
     assert rows['4']['word'] == 'allowed' and rc == 0
+def test_seven_day_warning_is_not_a_stop():
+    # owner's rulings of 24 and 27 Sept 2026 (BUDGETS.md): a seven_day allowed_warning fires at ~27% of the weekly limit and
+    # does not stop spawning; the account-4 parent paused account 1 on one on 15 Oct 2026 (the fourth such repeat)
+    room = "2026-10-15 15:16 | LANE DEFAULT-account-1-20261015-1426 (account 1, lane orchestrator) | check-in 1: wave 1 all done. usage: seven_day allowed_warning by get_session, resets 05:00 UTC 17 Oct\n"
+    rc, rows = run(room, '2026-10-15 15:30')
+    assert rc == 0 and rows['1']['word'] == 'allowed_warning' and rows['1']['flag'].startswith('seven-day warning: not a stop')
+def test_five_hour_warning_still_stops():
+    room = "2026-10-15 15:16 | LANE Z (account 1, lane orchestrator) | check-in 1: usage: five_hour allowed_warning by get_session, resets 17:20 UTC\n"
+    rc, rows = run(room, '2026-10-15 15:30')
+    assert rc == 2 and rows['1']['flag'].startswith('STOP')

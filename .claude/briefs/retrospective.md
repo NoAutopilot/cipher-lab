@@ -11,5 +11,11 @@ Do not apply the changes: the orchestrator applies the safe ones and puts the re
 routine's email carries the five proposals in plain words. + common tail.
 Report tools/progress_metrics.py's week-on-week trend (USD per D2+ result, share D) before proposing changes.
 
+Register first (16 Oct 2026): read RETRO-PROPOSALS.tsv and run `python3 tools/retro_check.py`; every proposal this retrospective writes
+gets a row (status open, decided_on blank) in the same commit as RETRO-<date>.md; a proposal already in the register as open or
+partial is not re-proposed -- it is named once as a finding with its row, and the parent's duty 0d applies or escalates it. Also run
+`python3 tools/learning_metrics.py --from <window start> --to <window end> --compare learning/baseline-2026-10-09-15.json` and paste
+it before the proposals, operational and solving measures apart.
+
 Near solves (25 Sept 2026): review every NEAR.md row -- has its named next step run since the last retrospective, with its
 control, and are the numbers in the row? A row that has not moved is a finding with the lane and the reason named.

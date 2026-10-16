@@ -7,7 +7,8 @@
 # are checked ahead of the transcription/reading keywords that a mixed-purpose row's title also carries
 # (e.g. "KEY-IMG-3251: fetch and transcribe ..." matches "fetch" before "transcribe").
 orchestrator	C
-\bparent\b	C
+^parent\s+worker\b[^|]*\b(verif|audit|QA)	V
+\bparent\b(?!\s+worker)	C
 \bretro(spective)?\b	C
 \bLEARN\b	C
 \btool[s]?\b	C

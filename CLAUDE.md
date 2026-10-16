@@ -315,6 +315,14 @@ Loops that run outside this repository and write back into it:
   pull request (`tools/send_queue_runner_prompt.md`). A row is queued only after its draft's gate-7 `checked:`
   line exists (`tools/send_queue_check.py` is the gate, run before queueing and again before landing); the
   owner's identity lives in the runner's own task instruction, never in this repository.
+- **Wait-only threshold** (RETRO-2026-10-05 P5, applied 16 Oct 2026): a parent check-in whose `tools/next_steps.py --wait-only`
+  count is 15 or more spawns the RUN4-WAITBF-shaped backfill worker (a `parallel` entry per row from the folder's own "## While
+  waiting" section) before the count grows further, rather than leaving it for a retrospective to name at 47.
+- **Retrospective register** (16 Oct 2026, mission "Close the Learning Loop"): every proposal a retrospective writes gets a row in
+  `RETRO-PROPOSALS.tsv` (status open / applied / partial / declined, with evidence); `tools/retro_check.py` runs at every parent
+  check-in and exits nonzero when a proposal has sat open past 7 days, when the newest RETRO-*.md is older than 8 days, or when a
+  proposal has been repeated by two retrospectives without a decision. A proposal repeated twice is applied by the parent in that
+  check-in if it touches only briefs, tools or workflows, or escalated as an ASKS row; it is never carried into a third retrospective.
 - **Routines**: the weekly retrospective, and "Cipher Lab: breakthrough alert (email)", which the parent fires for a
   real result.
 
@@ -371,6 +379,9 @@ takes none of its targets.
 7. **Result label**: the orchestrator sets the card's kind from what actually happened (a key that opened it
    is recovery, a reading without the key is cryptanalysis, a correction or a dataset handed on is
    contribution) and writes the "Result so far" line. README "What counts as a result" is the reference.
+   A reading produced by applying an already-published key (someone else's, credited, not recovered by us) to a sibling
+   letter is labelled `key application` (RETRO-2026-10-05 P4, applied 16 Oct 2026): counted and reported on its own, never
+   folded into recovery (whose key field is `ours` or `period`) or stretched into contribution.
 
 ## Collaborators
 
@@ -482,6 +493,11 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    job whose output is checked by another agent run on Sonnet (`claude-sonnet-5`). Reconciliation of passes,
    key reading, cipher reasoning and verifier verdicts run on the strongest model. The orchestrator sets the
    model when it creates the session; a worker sets it when it spawns subagents.
+   **Measured exception (RETRO-2026-10-05 P1, repeated RETRO-2026-10-12 P5; applied 16 Oct 2026).** Glyph and sign
+   transcription from page crops runs on the strongest model, not Sonnet: a known-answer comparison on clair349-este-guise-1556
+   read Sonnet pairs at 39.3-42.0% agreement on half-line crops against 70.7% for the strongest model, and the ledger has run
+   transcription on Opus 5.5 for two windows (638/697 rows, then 1294/1637). Sonnet stays the default for blind catalogue
+   sweeps, harvesting and any pass whose whole output a second independent pass checks.
 2. **Scripts read, models judge.** Never have a model read an Official Records volume, a 400-page dictionary
    or a 2,000-row key to find one thing. Fetch the text once, grep or parse it with a script, and give the
    model the hits. decode.py, check.py and freq.py are the pattern.
@@ -491,7 +507,7 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    fetch; later passes read the disk.
 5. **Compact outputs.** Worker results are TSV, JSON or a short markdown table with a five-line report; prose
    is for NOTES.md sections the person will read. The person has said machine-shaped files are fine.
-6. **Fan-out limits.** At most four subagents at once per worker; two transcription passes, not three, unless
+6. **Fan-out limits.** Vision calls are a counted unit: a brief that sends images to a model states `vision calls: N x USD r [+ k reconciliation] = X` and `tools/brief_price_check.py` refuses one that does not (README common tail; RETRO-2026-09-28 P4, moved here 16 Oct 2026 after four retrospectives named the same over-run). At most four subagents at once per worker; two transcription passes, not three, unless
    the two disagree on more than a tenth of the rows.
    A batch of more than about five independent jobs (one per target, one per leaf) runs as separate cloud sessions
    (create_session, or WORK-QUEUE.tsv rows for another account), not as one in-container Workflow: a session container

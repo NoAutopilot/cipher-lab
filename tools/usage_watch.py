@@ -34,6 +34,7 @@ STATUS_PHRASE = re.compile(r'(?:usage:\s*\S+\s+|(?:five[_ -]hour|seven[_ -]day|w
                            r'(allowed_warning|allowed with warning|rejected|allowed)\b'
                            r'|\b(allowed_warning|allowed with warning|rejected|allowed)\b[^.;|]{0,40}?(?:five[_ -]hour|seven[_ -]day|window|rate[_ -]?limit|by get_session)', re.I)
 WINDOW = re.compile(r'five[_ -]hour|seven[_ -]day|resets?(At)?\b|window|rate_limit|get_session', re.I)
+WINDOW_OF = re.compile(r'(five[_ -]hour|seven[_ -]day)', re.I)
 RESET = re.compile(r'resets?(?:At|\s+at)?\s*:?\s*([0-9]{1,2}:[0-9]{2}\s*UTC(?:\s+[0-9]{1,2}\s+[A-Z][a-z]{2})?|1[0-9]{9})', re.I)
 
 
@@ -58,8 +59,12 @@ def scan_room(text, now, stale_min):
             continue  # a status word in result prose ("false rejected 18/20", "allowed_warning anywhere") is not a reading
         when = dt.datetime.strptime(when_s, '%Y-%m-%d %H:%M')
         r = RESET.search(body)
+        # the window the word belongs to: the self-report phrase names it ("usage: seven_day allowed_warning"); a
+        # seven-day allowed_warning is NOT a stop by the owner's rulings of 24 and 27 Sept 2026 (BUDGETS.md), broken
+        # four times since (2, 3, 5 and 15 Oct); only five_hour allowed_warning, or rejected on any window, stops
+        win = WINDOW_OF.search(body[max(0, hit.start() - 60):hit.end() + 60])
         latest[acct] = dict(word=norm(hit.group(1) or hit.group(2)), when=when_s, age_min=int((now - when).total_seconds() // 60),
-                            reset=r.group(1) if r else '', line=body[:160])
+                            reset=r.group(1) if r else '', line=body[:160], window=(win.group(1).lower().replace('-', '_').replace(' ', '_') if win else ''))
     return latest
 
 
@@ -87,7 +92,10 @@ def main(argv=None):
     for acct in sorted(set(list(words) + list(live) + ['1', '2', '4'])):
         w = words.get(acct); n_live = len(live.get(acct, []))
         flag = ''
-        if w and w['word'] in ('allowed_warning', 'rejected') and (w['age_min'] <= 300 or n_live):
+        seven_day_warning = bool(w) and w['word'] == 'allowed_warning' and w.get('window') == 'seven_day'
+        if seven_day_warning:
+            flag = 'seven-day warning: not a stop (owner, 24 and 27 Sept 2026, BUDGETS.md); keep dispatching under the caps'
+        elif w and w['word'] in ('allowed_warning', 'rejected') and (w['age_min'] <= 300 or n_live):
             flag = 'STOP: no new workers anywhere'; worst = max(worst, 2)
         elif w and w['word'] in ('allowed_warning', 'rejected'):
             flag = f"old warning ({w['age_min']} min), idle: not current"
