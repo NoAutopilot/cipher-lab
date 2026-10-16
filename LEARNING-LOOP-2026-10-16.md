@@ -92,12 +92,12 @@ one addition in the README tail: a stop row at the same design and N is not re-b
 | Measure | Baseline 9-15 Oct |
 |---|---|
 | Ledger rows / worker USD | 1,228 / 4,386 |
-| Over-cap rows (ratio > 1) | 233 rows, USD 1,195 |
+| Over-cap rows (ratio > 1) | 234 rows, USD 1,203 (after LEDGER-RECODE, 16 Oct; was 233 / 1,195) |
 | No-repository rows | 9 rows |
 | Duplicate / already-done / stood-down dispatch | 32 rows, USD 99 |
 | Brief-error rows | 21 rows, USD 55 |
 | Retro proposals applied with a test (decided in window) | 0 of 0 decided |
-| Rows on non-test / untested / third-attempt / control-failed approaches | 116 rows, USD 450 |
+| Rows on non-test / untested / third-attempt / control-failed approaches | 115 rows, USD 453 (after LEDGER-RECODE; was 114 / 450) |
 | Targets with 3+ N rows | 21 |
 | New N3+/D2+ results | 139, all by a period (138) or published (1) key; 0 with our own key; USD 31.56 per result |
 
@@ -112,6 +112,17 @@ dispatch falls as EVIDENCE.tsv and the register are read; every retrospective pr
 non-test rows on the same target fall (the g-split and screen shapes). Not claimable from these: more solves. The baseline's 139
 results are period-key readings of Eckert telegrams; the North Star count with our own key is 0 in the window and the pilot's
 figure will be reported as it is.
+
+## Integrity fixes under the freeze (owner's final directive, 16 Oct 2026 04:3x UTC)
+
+- `tools/learning_metrics.py` dedupe keys on (session id, job label): two rows sharing an id under different job labels are
+  both kept and reported as `shared_id_distinct_jobs`, never dropped silently (test: OTHER-9 copying GOOD-1's id). The
+  9-15 Oct window has 0 such ids; the baseline JSON was regenerated after LEDGER-RECODE (totals unchanged: 1,228 rows, USD 4,386).
+- `tools/retro_check.py` (e) skips every ledger row a registered EXC row lists and every row at or before the review's own ledger
+  row, so a same-day review never re-fires on what it just read; a critical row appended after the review fires alone (test).
+- Registers for the 23 Oct review: `learning/EVIDENCE-DECISIONS.md` (an instance is entered when a lane decides differently
+  because of prior evidence, with counterfactual and saved resources; candidates stay below the line) and
+  `learning/INTERVENTIONS.tsv` (every owner correction, with the rule that already existed; seeded from Phase 1 item 5).
 
 ## Unresolved (escalated or queued)
 

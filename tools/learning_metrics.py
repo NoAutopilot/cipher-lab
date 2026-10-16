@@ -64,25 +64,42 @@ def in_window(d, start, end):
 CRYPTANALYSIS_RE = re.compile(r'family_run|homophonic|anneal|wordcode|nomenclator solver|syllabary|\bmasc\b|vigenere|running[_ -]key|hillclimb|ciphertext-only|key_repair|lattice', re.I)
 
 
+JOB_KEY_RE = re.compile(r'^\s*([A-Za-z0-9][\w.+/-]*)')
+
+
+def job_key(role):
+    """The job label a role cell opens with (HAR-41R, LANE, EXC-2026-10-16): two rows with one session id and different
+    labels are distinct jobs that copied an id, not one job written twice (owner, 16 Oct 2026, measurement integrity)."""
+    m = JOB_KEY_RE.match(role or "")
+    return (m.group(1).upper() if m else "")
+
+
 def dedupe(win):
-    """A session id written twice (a running/done pair, a self-ledger row written twice with two costs, a twin for one job)
-    double-counts in any total: 38 such ids on 16 Oct 2026, about USD 216 (learning/LEDGER-HISTORY-AUDIT-2026-10-16.md). Keep
-    the LAST row per session id that carries a numeric cost; rows without an id are kept as they are."""
+    """A session id written twice FOR THE SAME JOB (a running/done pair, a self-ledger row written twice with two costs, a twin
+    for one job) double-counts in any total: 38 such ids on 16 Oct 2026, about USD 216 (learning/LEDGER-HISTORY-AUDIT-2026-10-16.md).
+    Keep the LAST row per (session id, job label) that carries a numeric cost; rows without an id are kept as they are. Two rows
+    sharing an id under DIFFERENT job labels are both kept and counted in `shared` (an id copied into a second job's row is an
+    integrity finding to report, never a row to drop silently -- owner's directive, 16 Oct 2026)."""
     keep = {}
     out = []
     for r in win:
         sid = r.get("session")
         if sid:
-            keep[sid] = r if (r.get("cost") is not None or sid not in keep) else keep[sid]
+            k = (sid, job_key(r.get("role", "")))
+            keep[k] = r if (r.get("cost") is not None or k not in keep) else keep[k]
         else:
             out.append(r)
     dropped = sum(1 for r in win if r.get("session")) - len(keep)
-    return out + list(keep.values()), dropped
+    by_sid = {}
+    for sid, jk in keep:
+        by_sid.setdefault(sid, set()).add(jk)
+    shared = sorted(sid for sid, jks in by_sid.items() if len(jks) > 1)
+    return out + list(keep.values()), dropped, shared
 
 
 def compute(rows, results, register_rows, start, end):
     win_all = [r for r in rows if r.get("date") and in_window(r["date"], start, end)]
-    win, dropped = dedupe(win_all)
+    win, dropped, shared = dedupe(win_all)
     usd_all = sum(r["cost"] for r in win_all if r.get("cost") is not None and not pm.is_orchestrator(r.get("role", "")))
     usd = sum(r["cost"] for r in win if r.get("cost") is not None and not pm.is_orchestrator(r.get("role", "")))
     crypt_usd = sum(r["cost"] for r in win if r.get("cost") is not None and not pm.is_orchestrator(r.get("role", "")) and CRYPTANALYSIS_RE.search(r.get("role", "") + " " + r.get("lesson", "")[:200]))
@@ -143,6 +160,7 @@ def compute(rows, results, register_rows, start, end):
         "worker_usd": round(usd, 2),
         "double_written_rows_dropped": dropped,
         "double_counted_usd_removed": round(usd_all - usd, 2),
+        "shared_id_distinct_jobs": {"n": len(shared), "ids": shared[:20]},
         "cryptanalysis_share": {"usd": round(crypt_usd, 2), "share": (round(crypt_usd / usd, 3) if usd else 0.0), "bound": 0.15},
         "operational": {k: {"rows": op[k], "usd": round(op_usd[k], 2)} for k in ("over_cap", "no_repository", "duplicate_dispatch", "brief_error", "scratchpad_loss", "non_standard_code")},
         "retro_proposals": {"applied": reg["applied"], "declined": reg["declined"], "partial": reg["partial"], "open": reg["open"], "applied_with_test": reg_tested},
@@ -196,6 +214,9 @@ def render(m, base=None):
     out = [f"Learning-loop metrics {m['window'][0]} .. {m['window'][1]}: {m['rows']} ledger rows, worker USD {m['worker_usd']} "
            f"(after dropping {m['double_written_rows_dropped']} double-written session rows, USD {m['double_counted_usd_removed']})",
            f"Independent cryptanalysis share of worker spend: {m['cryptanalysis_share']['share']:.1%} (USD {m['cryptanalysis_share']['usd']}; bound {m['cryptanalysis_share']['bound']:.0%}, owner 16 Oct 2026)"]
+    sh = m.get("shared_id_distinct_jobs") or {"n": 0, "ids": []}
+    if sh["n"]:
+        out.append(f"Session ids shared by distinct jobs (kept, not deduped; an integrity finding): {sh['n']} -- {', '.join(sh['ids'])}")
     out.append("Operational (repeated failure shapes):")
     for k, v in m["operational"].items():
         out.append(f"  {k:20} rows {v['rows']:4d}  USD {v['usd']:8.2f}{cmp(('operational', k), v)}")

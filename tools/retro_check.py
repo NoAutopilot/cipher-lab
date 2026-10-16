@@ -85,7 +85,7 @@ CRITICAL = {
 OVER2X = re.compile(r'(\d+(?:\.\d+)?)\s*x\s+(?:the\s+|its\s+|a\s+)?(?:\$|USD\s*)?(?:\d+(?:\.\d+)?\s*)?cap', re.I)
 
 
-def critical_since(ledger_path, since, register_rows=()):
+def critical_since(ledger_path, since, register_rows=(), reviewed=frozenset(), after_line=0):
     """Exception-review triggers (owner, 16 Oct 2026, ASKS 171): rows dated on/after `since` that carry a critical shape --
     an X row, a no-repository death, a gate found blind -- plus a count of rows at 2x their cap or more (three or more
     trigger), and a registered lesson broken again (an applied register row whose asks_for words recur in a later Lesson)."""
@@ -97,7 +97,7 @@ def critical_since(ledger_path, since, register_rows=()):
             continue
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
         d = parse_day(cells[0]) if cells else None
-        if d is None or d < since:
+        if d is None or d < since or i in reviewed or i <= after_line:
             continue
         text = " | ".join(cells[2:])
         code = ""
@@ -161,7 +161,20 @@ def run(register, retro_dir, ledger, now, max_open_days, max_retro_days, registe
             n, usd = ledger_since(ledger, newest)
             info.append(f"(d) since {newest.isoformat()}: {n} LEDGER.md rows, about USD {usd:.0f} (cadence: weekly, owner 16 Oct 2026)")
             last_review = max([newest] + [parse_day(r.get("decided_on") or "") for r in rows if (r.get("proposal") or "").startswith("EXC") and parse_day(r.get("decided_on") or "")])
-            hits = critical_since(ledger, last_review)
+            # Owner, 16 Oct 2026 (measurement integrity): an incident a registered EXC row already lists (its ledger line numbers in
+            # asks_for/evidence), and every row at or before the review's own ledger row, is reviewed -- a same-day review must
+            # not re-fire on the rows it just read.
+            exc_rows = [r for r in rows if (r.get("retro") or "").startswith("EXC") or (r.get("proposal") or "").startswith("EXC")]
+            reviewed = set()
+            for r in exc_rows:
+                reviewed.update(int(x) for x in re.findall(r'\b(\d{3,6})\b', (r.get("asks_for") or "") + " " + (r.get("evidence") or "")))
+            after_line = 0
+            if exc_rows:
+                names = {r["retro"] for r in exc_rows if r.get("retro")}
+                for i, line in enumerate(open(ledger, encoding="utf-8").read().split("\n"), 1):
+                    if line.startswith("| ") and any(n in line.split("|")[2] for n in names if len(line.split("|")) > 2):
+                        after_line = max(after_line, i)
+            hits = critical_since(ledger, last_review, reviewed=reviewed, after_line=after_line)
             due = [k for k, v in hits.items() if v and (k != "over_2x_cap" or len(v) >= 3)]
             if due:
                 findings.append("(e) exception review due since " + last_review.isoformat() + ": " +

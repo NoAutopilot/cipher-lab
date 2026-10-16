@@ -7,6 +7,10 @@
  "worker_usd": 4386.2,
  "double_written_rows_dropped": 7,
  "double_counted_usd_removed": 0.0,
+ "shared_id_distinct_jobs": {
+  "n": 0,
+  "ids": []
+ },
  "cryptanalysis_share": {
   "usd": 147.72,
   "share": 0.034,
@@ -14,8 +18,8 @@
  },
  "operational": {
   "over_cap": {
-   "rows": 233,
-   "usd": 1194.68
+   "rows": 234,
+   "usd": 1203.34
   },
   "no_repository": {
    "rows": 8,
@@ -46,8 +50,8 @@
   "applied_with_test": 0
  },
  "repeated_approaches": {
-  "rows": 114,
-  "usd": 449.61,
+  "rows": 115,
+  "usd": 453.2,
   "targets_with_3plus_N": 21,
   "targets": {
    "oldenbarnevelt-brederode-1605": 22,
