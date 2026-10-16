@@ -2125,7 +2125,7 @@ layout, crop montage).
 
 ## CLIN-UNREAD (16 Oct 2026)
 
-Run 13:2x-13:4x UTC 16 Oct 2026 (date -u), worker CLIN-UNREAD (account 4). Disk only: no network, no image fetched, no reader, no
+Run 13:24-13:2x UTC 16 Oct 2026 (date -u), worker CLIN-UNREAD (account 4). Disk only: no network, no image fetched, no reader, no
 score. Question (owner, 16 Oct): is there a cipher page on disk that the 1778 title-page key would read and for which no period
 decipherment and no printed text is recorded? Built by grep from this NOTES.md (item tables, "Read so far", GAPS*, R10-R15, D4, UNA,
 CLIN-*), passes/*_reconciled.tsv, images/h1649/ and the on-disk Tomokiyo snapshot sources/cryptiana/web/haldimand.htm (0 requests).
