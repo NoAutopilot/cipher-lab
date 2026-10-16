@@ -1,5 +1,5 @@
 open
-- **Status:** open (HEID-1621I, 15 Oct 2026: letters still M after a crop re-read, 375-vs-379 control 38/45 = 0.844 < 0.90; period key material at NA 1.01.02 inv. 6056/6055/12578.1 not digitised, REQUEST.md + ASKS row 170; next: screen inv. 6022 for more units) -- the recipient-side standard edition, *Resolutiën der Staten-Generaal, nieuwe reeks 1610-1670*, deel 5
+- **Status:** open (HEID-1621J, 16 Oct 2026: two further Brederode letters partly in cipher located in NA 1.01.02 inv. 6022 -- 12 Aug 1623, scans 165-167 + duplicate 170-172, and about Oct 1623, scan 181 -- each with a marginal note in a smaller hand beside the block, possibly the solution by Joachimi that Resolutien NR 6 res. 1721a / 2142a records (identification M, not read); next: read the two marginal notes and transcribe the 1623 blocks) -- the recipient-side standard edition, *Resolutiën der Staten-Generaal, nieuwe reeks 1610-1670*, deel 5
   (1621-1622, ed. J. Roelevink, RGP, 1983), read through the Huygens retroboeken full-text search (term "Brederode", source 5,
   109 hits, 15 Oct 2026, HEID-1621D) and the printed pages p. 251, 252, 260, 261 (OCR html): p. 260, resolution 1644b, 23 Aug 1621,
   calendars "Brederode, dd. Heidelberg 13 aug." with no summary of its content, and note 1644c reads "S.G 6021 (orig.). Gedeeltelijk
@@ -511,3 +511,81 @@ parked state does not apply.)
 Status: open. Next row for the parent: (1) screen NA 1.01.02 inv. 6022 (Brederode 1623-1626, 595 scans) at 700 px on contact sheets with
 the OBRED-6020 sheet controls for numeral blocks in this code, cap 4 -- the pool decides whether any test can run; (2) the REQUEST.md
 draft to a CONTRIBUTIONS.md row and the gate-7 check (OUT-CHECK), then the owner's send (ASKS 170); (3) the sorter rows in parallel.
+
+## HEID-1621J (16 Oct 2026, 00:11-00:3x UTC by date -u, account 2, Opus; for the orchestrator, owner account)
+Brief: `.claude/briefs/runs/2026-10-15-acct4-depth-steps-2.md`, JOB HEID-1621J. PREREG `heid1621j/PREREG-HEID1621J.md` pushed (13d72014a)
+before any fetch; sheet calls `heid1621j/sheetcalls.txt` pushed per batch (30581b3e4, 29f5ae5a1, then batch 3) before each sheet key was
+opened. Requests: **resources.huygens.knaw.nl 22** (14 searches, 2 pages.json, 6 OCR pages; all 200) -- **2 over the brief's 20**, my
+count error, stated here; **service.archief.nl 129** (1 METS + 124 scans at 700 px + 4 at 1200 px; all 200; take/release lines in
+ROOM.md); www.nationaalarchief.nl 0. 0 vision calls, no subagent: the screen is this worker's own eye. No image committed; sha1s in
+`images/manifest.json` (`heid_6022j`); `heid1621j/regen_heid1621j.sh` re-derives scans and sheets (sheet keys `heid1621j/sheetkey{1,2,3}.json`).
+No transcription, no decode, no key, no reading.
+
+### (1) The edition list: `heid1621j/code_letters.tsv`
+Resolutien SG NR 5 (source 5), searched for "in code" (6), "in cijfer" (3), "gecodeerd" (0), "code" (6), "Gedeeltelijk" (21, two
+batches; catches "in co- de" split by the OCR), "cijfercode" (5), "geheimschrift" (1), "cijfers" (1, index), "cijfer" (3); pages 11, 275,
+578, 580, 581 read in OCR. **Only the two known Brederode letters carry a code note in 1621-1622** (13 Aug 1621, p. 260 res. 1644b; 17 Sept
+1621, p. 295 res. 1879b; both 6021, both already located). New in NR 5: p. 578 res. 3787b (July 1622, Brederode dd. Straatsburg 9 July,
+6021 kopie) -- the States General order him "dergelijke berichten voortaan in geheimschrift te sturen"; the letter itself carries no
+code note. The other code hits in NR 5 are other senders (Aitzema p. 11, SG minute p. 82, Bremen envoys p. 275, Haga, Bilderbeke, Mansfelt).
+Because step 2 names inv. 6022 (1623-1626), NR 6 (source 6) and NR 7 (source 7) were searched for "code" and "cijfer" (4 searches):
+- **NR 6 p. 260, res. 1721 (25 Aug 1623):** "Een brief dd. Straatsburg 12 aug. van Brederode bevat enkele regels in cijfer. Met een besluit
+  wordt gewacht tot dit is opgelost"; note 1721a "S.G. 6022 I (orig.). Over het aanhalen van banden met de evangelische Zwitserse kantons.
+  De oplossing van het cijfer van de hand van Joachimi." (OCR page read.)
+- **NR 6 p. 337, note 2142a:** "S.G. 6022 I (orig.). Het cijfer is opgelost door Joachimi." (search snippet only; the page, and so the
+  sender and date, not read -- the Huygens budget was spent; Brederode by the inventory, 6022 = Liassen Agent Brederode, M.)
+- NR 7 "code"/"cijfer": hits are other posts (Haga, 6898 France), none in 6022. NR 6 p. 549 "Bij het duplicaat een in code gestelde
+  mededeling" and p. 22/28/32 (orders to write "afzonderlijk in code") were not opened: their senders are not in the snippets.
+
+### (2) Screen of inv. 6022 (METS 412b1414-afa2-42fe-b56d-2b5f705e5005, 595 scans)
+Orientation probes at 700 px (scans 40, 80, 120, 160, 200; datelines M): scan 40 closes "uyt Straesburg dese 30en January 1623"; scan 160
+is German news "Den 1x Julij 1623". Screen at stride 1, 700 px, contact sheets (SHEET_SCANS=9, OBRED-6020 controls, seeds 16220-16222):
+165-218, 219-272, 152-159 + 161-164. **Controls 48 of 48 placed correctly** (14 sheets); no sheet is a non-test. **The sheets called no hit
+-- and that was wrong three times out of three:** each block below sits inside dense prose and is one to six lines long, and none was seen
+on a 525 px sheet tile. They were found on 700 px composites (six scans per 2100 px image, 700 px per scan) viewed from disk for dateline
+orientation, then re-looked at 1200 px. Composites were viewed for 161-185 only.
+- **12 Aug 1623 (res. 1721) -- located, M.** Scans 165-167: 165 opens the letter (endorsed "L. 19 Aug 1623", head "Hooge ende Mogende Heeren");
+  166 right page carries **about five and a half lines of dotted number groups inside the prose** ("... soude sijn 43. c. 22. 40. y. 61 ende
+  bequaemste occasie 69. b. 40 ...", groups up to 214, a lower-case letter after some numbers, a few clear words between); 167 closes "uyt
+  Straesburg desen 12en Augusti 1623" (day M), signed. **Duplicate:** 170-172 (address leaf 170; 171 the same opening and the same block;
+  172 signed). On 171, **a marginal note in a smaller, different hand, about eight lines, is bracketed against the block** -- placement and
+  the res. 1721a note ("De oplossing van het cijfer van de hand van Joachimi") make it a candidate for that solution; not read, M.
+- **About Oct 1623 (res. 2142) -- probably located, M.** Scan 181: a Brederode letter (head endorsement read "d. 10 / .. 31 Oct 1623", M;
+  mentions Basel and Bern in clear, M) with **one line of number groups** ("74. 10. x. 49. 43 41. x et 6. 45. 41. 12. 46. m. 22 p. 52. 67.
+  43. 17. T.", every token M) and again a short marginal note in a small hand beside that line. The match to res. 2142 rests on month and
+  inventory only (the resolution page was not read).
+- **System by eye (M):** neither 1623 block is the full pair+letter form of 375/379 (consecutive pairs plus a letter); both are mostly single
+  numbers, some followed by a letter, like the 17 Sept 1621 block on 423 ("22.x", "40.d"). Shared-looking units across 1621 and 1623 ("40" +
+  letter, "46", "22") are a lead that the same table continued, not tested.
+- **Unit count estimates (M, by eye at 1200 px):** 166/171 block about 50 tokens (numbers and letters together); 181 about 20.
+- Elsewhere in 152-272 at sheet size: Dutch letters with Brederode closes, German and French news copies and extracts, a "Relatie" title
+  leaf, address leaves; scan 227 is a page covered in pen trials (no numeral run). Datelines run July 1623 (160) to Feb 1624 (about 260).
+- Limits: the sheet method missed every small block here, so "no hit" on 186-272 (sheets only) and on the earlier stride-3 screens of 6021
+  (HEID-1621E, OBRED-6021) is weak for blocks of one to six lines inside prose; 700 px composites, not sheets, are the instrument for this.
+
+### Next row for the parent
+(1) **The two marginal notes** (171, 181): native region crops (`tools/iiif_lines.py --image`), two blind reads + one reconciliation per note
+at about USD 1.4 per pass (2 notes x 3 passes = about USD 8.4): if they are Joachimi's decipherment, they are period key material for the
+1623 system (grade H for the glossed tokens), and the parent decides what that licenses for the 1621 blocks. (2) The 1623 blocks (166, 171
+as two witnesses of one block; 181): 3 blocks x 3 passes x 1.4 = about USD 12.6. (3) Read Resolutien NR 6 p. 337 (res. 2142, 1 Huygens
+request) for the sender and date, and the NR 6 p. 22/28/32/549 entries; then a 700 px composite pass over 6022 186-595 and over 6021 for
+short blocks the sheets missed (disk-first where scans are already fetched).
+**Projected pooled N** if every located block is transcribed and the systems pool: 59 (1621: 45 + 14) + about 50 (12 Aug 1623) + about 20
+(Oct 1623) = **about 129 units**, estimate M; whether 1623 pools with 1621 is itself the first question the glosses can answer.
+
+## Remaining gaps (HEID-1621J, 16 Oct 2026)
+Read so far: 0 of about 129 units (1621: 59 transcribed, all M; 1623: about 70 located, not transcribed; nothing decoded)
+- the trailing letters of both 1621 blocks - blocker: not-attempted; 375-vs-379 control 38/45 = 0.844 < 0.90 (HEID-1621I); next: the owner's sign sorter on heid1621i/focus.tsv (backlog, never blocking), ~$0
+- the 1623 blocks and their marginal notes (6022 scans 166, 171, 181) - blocker: not-attempted; located by HEID-1621J, possibly glossed by Joachimi; next: native crops, 2 blind reads + 1 reconciliation per note and per block, ~$21
+- the pooled units - blocker: too-short; test 1 C3 0.593 / 0.777 vs gate 0.90 at N=59 (HEID-1621H); next: rerun spec test 1 on the pooled inventory after the 1623 transcription, ~$3
+- the key - blocker: waiting-on ASKS row 170 (Nationaal Archief reproduction of 1.01.02 inv. 6056, 6055, 12578.1; REQUEST.md)
+
+## Escalation (HEID-1621J, 16 Oct 2026)
+- [ ] siblings: 6022 letters of 12 Aug 1623 (165-167, dup. 170-172) and about Oct 1623 (181) located; 6022 186-595 not checked on composites; planned: composite pass, ~$2
+- [ ] clear-pages: the clear prose around all blocks once transcribed
+- [ ] known-keys: possible period decipherment beside the 1623 blocks (marginal notes on 171 and 181, Resolutien NR 6 res. 1721a/2142a); planned: read the notes, ~$8.4
+- [x] print: Resolutien NR 5 and NR 6 searched; no printed decipherment of any Brederode cipher passage (NR 6 records Joachimi's solutions, does not print them)
+- [n/a] key-rebuild: nothing in hand to rebuild from until the marginal notes are read
+- [x] image-check: 1200 px re-looks of 166, 167, 171, 181 (HEID-1621J)
+- [x] retry: the NA and Huygens hosts answered (HEID-1621J)
+Verdict: keep going: 2 internal gaps; cheapest next: read the marginal notes on 6022 scans 171 and 181, ~$8.4
