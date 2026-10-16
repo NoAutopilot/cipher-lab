@@ -6,3 +6,10 @@ b1 sheet03 CIPHER=J PLAIN=G PS=H hits=none
 b1 sheet04 CIPHER=J PLAIN=I PS=E hits=none
 b1 sheet05 CIPHER=J PLAIN=E PS=I hits=none
 b1 sheet06 CIPHER=L PLAIN=E PS=I hits=none
+# batch 2: inv. 6022 scans 219-272, seed 16221, sheets 01-06
+b2 sheet01 CIPHER=G PLAIN=H PS=L hits=none (tile F: heavy pen trials/scribbles over a page, no numeral run; recorded, not a hit)
+b2 sheet02 CIPHER=L PLAIN=A PS=B hits=none
+b2 sheet03 CIPHER=C PLAIN=A PS=L hits=none
+b2 sheet04 CIPHER=E PLAIN=B PS=I hits=none
+b2 sheet05 CIPHER=I PLAIN=F PS=H hits=none
+b2 sheet06 CIPHER=F PLAIN=I PS=K hits=none
