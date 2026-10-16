@@ -737,6 +737,6 @@ DEFAULT-account-2-20261016-1109	account-2	.claude/briefs/default-lane.md	Opus 5.
 DEFAULT-account-4-20261016-1135	account-4	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-16 11:42	2026-10-16 11:35	auto-fill: blast 1 of 1 until 2026-10-17 18:00
 DEFAULT-account-2-20261016-1210	account-2	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-16 12:25	2026-10-16 12:10	auto-fill: blast 1 of 1 until 2026-10-17 18:00
 DEFAULT-account-4-20261016-1235	account-4	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-16 12:37	2026-10-16 12:35	auto-fill: blast 1 of 1 until 2026-10-17 18:00
-DEFAULT-account-2-20261016-1314	account-2	.claude/briefs/default-lane.md	Opus 5.5	60	600	claimed session_018EurJQhjnCGNtY4pfka68y 2026-10-16 13:15	2026-10-16 13:14	auto-fill: blast 1 of 1 until 2026-10-17 18:00
+DEFAULT-account-2-20261016-1314	account-2	.claude/briefs/default-lane.md	Opus 5.5	60	600	done 2026-10-16 13:30	2026-10-16 13:14	auto-fill: blast 1 of 1 until 2026-10-17 18:00; closed 13:3x UTC: nothing changed since 12:25; owner unblast 13:17; 0 workers
 CLIN-UNREAD	account-4	.claude/briefs/runs/2026-10-16-acct4-research-steps.md	Opus 5.5	3	40	claimed session_0192URf9UKRZEkwXJSBBv6sp 2026-10-16 13:23	2026-10-16 13:22	owner 16 Oct: research steps; key-assisted (route 1)
 HEID-NA-SCREEN	account-4	.claude/briefs/runs/2026-10-16-acct4-research-steps.md	Opus 5.5	4	60	claimed session_01AhWFDJMxqTVzpFy3fp11Rk 2026-10-16 13:23	2026-10-16 13:22	owner 16 Oct: research steps; acquisition of sibling ciphertext (route 2)
