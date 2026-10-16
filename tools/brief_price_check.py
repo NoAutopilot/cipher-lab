@@ -32,13 +32,13 @@ import sys
 # 16 Oct 2026 (EXC-2026-10-16 fix A): a blind sort, a blind labelling pass, a "blind Sonnet/Opus call" and an exemplar-crop
 # check are image steps, and "disk only" (which means no network, not no images) does not exempt them: MONL-SORT, CL1161-S7,
 # MONL-VB and LIN-LAB2 (ledger 4490/4536/4537/4551, 2.2-3.0x cap) all passed as "no image step" before this.
-IMG = re.compile(r'blind (?:pass|read|sort|label\w*)|blind (?:\w+ )?(?:vision|Sonnet|Opus) (?:pass|call)|vision pass|'
+IMG = re.compile(r'blind (?:pass|read|sort|label\w*)|blind (?:\w+ )?(?:vision|Sonnet|Opus) (?:pass|call|read)|vision pass|'
                  r'\bcrops?\b|\btiles?\b|\breaders?\b|gloss read|\btranscribe[sd]?\b|'
                  r'transcription pass|iiif_lines|image reader|vision calls? (?:on|per|at most)|at most \d+ vision', re.I)
 LINE = re.compile(r'vision calls:\s*(\d+)\s*x\s*(?:USD|\$)\s*([\d.]+)(?:\s*\+\s*(\d+)\s*reconciliation)?\s*=\s*'
                   r'(?:USD\s*|\$)?([\d.]+)', re.I)
 NOIMG = re.compile(r'\bno images?\b|\bdisk only\b', re.I)
-NOIMG_OVERRIDE = re.compile(r'blind (?:pass|read|sort|label\w*)|blind (?:\w+ )?(?:vision|Sonnet|Opus) (?:pass|call)|'
+NOIMG_OVERRIDE = re.compile(r'blind (?:pass|read|sort|label\w*)|blind (?:\w+ )?(?:vision|Sonnet|Opus) (?:pass|call|read)|'
                             r'vision pass|exemplar crops?|image check|\btranscribe[sd]?\b|transcription pass', re.I)
 OPUS_UNMEASURED = re.compile(r'Opus rate unmeasured', re.I)
 CAP = re.compile(r'\bCap (?:USD ?|\$)?([\d.]+)', re.I)
@@ -69,8 +69,26 @@ def floor_check(text, floors=FLOORS):
     return out
 
 
+JOB_SPLIT = re.compile(r'^(?=#{2,3} +(?:JOB\s+)?\S)', re.M)
+
+
 def check(text):
-    """Return (rc, reason, kind) with kind in {'no-image', 'ok', 'fail'}."""
+    """Return (rc, reason, kind) with kind in {'no-image', 'ok', 'fail'}. A file with several '## JOB' / '### ' sections is checked
+    section by section and reports the worst (16 Oct 2026, CLIN-F49: a two-job file passed as "no image step" because the OTHER job
+    said "no images" -- a file-level NOIMG exempted a section with two blind Opus reads and a priced line)."""
+    parts = [p for p in JOB_SPLIT.split(text) if p.strip()]
+    if len(parts) > 1:
+        worst = (0, 'no image step', 'no-image')
+        rank = {'no-image': 0, 'ok': 1, 'fail': 2}
+        for part in parts:
+            r = check_one(part)
+            if rank[r[2]] > rank[worst[2]]:
+                worst = r
+        return worst
+    return check_one(text)
+
+
+def check_one(text):
     if not IMG.search(text) or (NOIMG.search(text) and not NOIMG_OVERRIDE.search(text)):
         return 0, 'no image step', 'no-image'
     m = LINE.search(text)

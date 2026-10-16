@@ -47,6 +47,12 @@ CASES = [
     ("MONL-VB shape: disk only, blind Sonnet calls (ledger 4537, 2.3x)",
      "### MONL-VB (Opus, cap 3, box 60 min, disk only): value-blind sort of the c268 lead cells. Blind Sonnet calls see "
      "no key value, no machine label and no decode. Apply only relabels both calls agree on.", 1),
+    ("two-job file: a disk-only section must not exempt a section with blind Opus reads (16 Oct 2026, CLIN-F49)",
+     "## JOB A (Opus; cap USD 3; box 40; disk only, no images)\nGrep the notes.\n\n## JOB B (Opus; cap USD 8; box 75)\n"
+     "Two blind Opus reads of the column crops + your reconciliation.\n", 1),
+    ("two-job file, the image section priced",
+     "## JOB A (Opus; cap USD 3; box 40; disk only, no images)\nGrep the notes.\n\n## JOB B (Opus; cap USD 8; box 75; "
+     "Price: vision calls: 3 x USD 1.3 = 3.9)\nTwo blind Opus reads of the column crops + your reconciliation.\n", 0),
     ("LIN-LAB2 shape: disk first, blind labelling pass (ledger 4551, 2.2x)",
      "### LIN-LAB2 (Opus, cap 1, box 40 min, disk first): second blind labeller on sheet_0255_c3. One blind labelling "
      "pass by a subagent over the sheet.", 1),
