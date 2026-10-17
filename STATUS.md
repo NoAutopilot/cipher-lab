@@ -10306,3 +10306,12 @@ favours frequent letters; a frequency-matched null is the fair re-test. (2) Haga
 crops, a blind sorter page for the owner and a strongest-model blind 2-way read of the same tiles with a shuffled-truth null; the (a) path
 (cells into key.tsv, re-decode, verifier) not taken (evidence entry 5). Haga **continue** -- HAGA-LEAF2 spawned (Sonnet, cap 3, orders
 321-327). Spend this check-in by program: A 0, B 2.19, C 3.51.
+
+**05:3x UTC, check-in 78.** Wave 5 closed: VIV-KSPLIT (USD 4.22, Q) and HAGA-LEAF2 (USD 2.23, N). Evidence: (1) Vivonne -- the frequency-
+matched null puts c=p, 2=m first on the b2 score (rank 1/21) but the strict-vocabulary run still ties, so the FAIL stands; the ink-40
+crops yield 36 usable tiles (label c 15, label 2 21, 3 contrast): under the registered minimum, no model read; on ink 40 the labels are
+near-pure (12/15 p, 21/21 m), so the merge may live in ink 63's reader passes rather than the hand (unverified). The owner's blind sorter
+is published (36 tiles, ASKS 173). (2) Haga -- orders 321-327 are a Venice correspondent's run, 0 cipher lines; three jobs have not pinned
+the leaf. Decisions: Vivonne **continue** -- VIV-TILES6770 spawned (cap 6: regenerate the ink 67/70 line crops into scratch, cut the 120
+packet rows' tiles incl. 44 contrast, no read yet). Haga **pivot** -- blind reads stop, status open, a listing instrument named; program C
+moves to K2: CHECK-AITZEMA spawned (Sonnet, cap 5, check-solved only). Spend this check-in by program: A 0, B 4.22, C 2.23.

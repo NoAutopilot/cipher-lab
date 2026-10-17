@@ -291,3 +291,14 @@ intake_gate_check.py not re-run (no new deep-work campaign started, only a conti
 leaf-location step). file_shrink_guard.py not run (new content appended to an existing file this worker owns
 this pass; no other tracked file touched). Hosts: www.nationaalarchief.nl (1 request, item page),
 service.archief.nl (6 image requests), >=1.5s apart, 7 total this job (20 cumulative with HAGA-LEAF).
+
+## Parent decision after HAGA-LEAF2 (17 Oct 2026, 05:3x UTC by date -u; account-4 parent)
+Three jobs (CHECK-HAGA, HAGA-LEAF, HAGA-LEAF2; USD 11.4) have not pinned the 30 April 1622 duplicate: the lias interleaves correspondents'
+bundles, so date projection from neighbouring letters is not a locating instrument here. Blind docket reads stop (rule 3's third-attempt
+clause, shape (b)). Status stays open. The next step needs a different instrument: a per-document listing of inv. 6896 (none in the NA
+finding aid at item level; a Haga-specific calendar, e.g. the Heeringa Bronnen's own footnotes citing S.G. 6896 folios, would be one), or
+a systematic docket contact sheet of all 575 scans at a legible resolution (about 48 vision calls, USD 14), to be priced only after
+the cheaper key-material checks on K2 (Aitzema). Six questions: learned that this volume is not Haga's run; depended on two anchors
+from other senders; unverified: whether Haga's own bundle sits elsewhere in the volume; alternative: the duplicate is bound with its
+original of 16 April in a Haga bundle well away from these orders; most informative next: a listing, not more reads; decision: pivot
+program C to K2.
