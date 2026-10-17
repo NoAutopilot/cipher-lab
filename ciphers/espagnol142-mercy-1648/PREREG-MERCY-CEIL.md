@@ -32,3 +32,49 @@ and the verifier decides, I do not.
 - (b1) < 126 and (c) >= 126: name the in-range clusters / key-level codes in the way and what instrument other than sense could cut
   them (spacing statistics across the letter with a control; the writer's habit on out-of-range clusters; code 25's value test).
 - (c) < 126: the clause route is closed for this item; D2 needs a different route (new material, the code clause).
+
+## Results (17 Oct 2026, 00:5x UTC by date -u; computed after the block above was pushed, commit 84bb874c6)
+
+Scratch copy of `mercym33/runs.py`, positions set to S on the command line; on-disk files read only.
+
+| scenario | positions set S | M left | longest H/C/S run (letters, span) | vs 125.9 | recounted AD (es17c) |
+|---|---|---|---|---|---|
+| (a) committed | 0 | 28 | **89** (r20:8-r24:13) | below | 125.9 |
+| (b0) licensed now | 1 (r17:5) | 27 | **89** (r20:8-r24:13) | below | 125.1 |
+| (b1) + every legibility M a gated re-read could settle | 9 | 19 | **89** (r20:8-r24:13); next 77 (v05:1-v09:6) | below | 119.4 |
+| (c) ceiling, all 28 as transcribed | 28 | 0 | **393** (r13:14-v09:6) | above | 105.9 |
+
+Finding on file evidence (b0): r17:5 is already settled by the companion rule -- both MERCY-IMG gated readers read 14, own group
+(`mercyimg/readA_tokens.tsv`, `readB_tokens.tsv`: reader_digits 14, own_group 1), and 14 = c is S in key.tsv. DV-MERCY2's 13 did not
+list it. It lies outside every candidate run, so it moves no number; for the verifier/parent, not applied here.
+Conflict found (not settled): r16:3 and r16:6 carry exceptions.tsv value c (open 14, Bourdeau 1 Oct 2026), but both gated readers read
+19 (own group) at both positions. Two gated readers against an image re-read: an M either way, logged, not resolved.
+
+Sensitivities (what the 89-run is waiting on; its bounds are r20:6-7 on the left, r24:14-15 on the right):
+| settled | run |
+|---|---|
+| r24:14-15 (26 vs 2 6) | 103 |
+| r20:6-7 (23 vs 2 3) | 106 |
+| both in-range clusters r20:6-7 + r24:14-15 | 120 (stopped by r19:10, code 25) |
+| r20:6-7 + r19:10 (code 25) | **132** (r18:7-r24:13) |
+| r20:6-7 + r19:10 + r18:5-6 | 156 |
+| all three in-range clusters + r19:10 | 170 (DV-MERCY2's figure, reproduced) |
+| b1 + code 25 only (no in-range cluster) | 94 |
+
+## Decision (as pre-registered)
+(b) < 126 and (c) >= 126: **the clause is reachable in principle but no reader job can license it.** Paying readers is not the next
+step: every legibility-only M lies outside the 89-run or adds nothing to it (b1 = 89). The smallest set that crosses the bar is two
+items, neither a legibility question: **r20:6-7** (an in-range cluster, 23 = o vs 2 3 = o p; the two gated readers already split, A two
+groups, B one; if 23 the run is 131, still above) and **r19:10** (code 25's value, key-level M; MERCY-M33's K25 test rejected u at n = 4,
+non-decisive). Without code 25 the ceiling on this side is 120, under 125.9 and under its own recounted AD (about 121).
+Instruments other than sense:
+1. r20:6-7 -- a spacing statistic across the whole letter with a control: measure the gap inside the six known glued clusters (72, 52,
+   48, 48, 186, 65; S by the out-of-range rule, the positive class) against ordinary between-token gaps (the negative class) on the
+   existing crops, gate it on held-out known pairs (it must separate them before it is read on r20:6-7, r18:5-6, r24:14-15), then read
+   the three in-range clusters. Disk only, crops exist (mercyimg/crops), no reader calls if done by pixel measurement.
+   The writer's habit is weak evidence on its own: every glued pair on file is code + single digit, which fits 2|3 and 2|6 as well as 23/26.
+2. r19:10 -- code 25's value is a key question, not a reading: a sibling in the same key (the 15 April 1648 Brussels letter, ASKS row
+   60 / SEND-QUEUE S3) or a period key; a re-run of the K25 value test at larger n is not possible on this letter (4 occurrences, one of
+   them the r10:8 re-cut). A licence for 25 = u at this one position would itself be a liberty the AD already counts.
+So D2 by the cipher clause needs (1) a gated spacing instrument for r20:6-7 **and** (2) new key evidence for code 25. Next job named:
+MERCY-GAP (pixel gap statistic with the glued-cluster control, disk only, no vision calls, about USD 2); code 25 waits on ASKS 60.

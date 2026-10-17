@@ -2904,3 +2904,11 @@ not 135.1 (es17c). Whether that meets rule 4a's D2 cipher clause depends on (i) 
 convention question (R 3.4 vs es17c), already flagged to the parent by MERCY-M33, and (iii) the verifier's own AD recount, since each
 settled M removes liberties. Still open: r20:6-7 (2 3 vs 23; readers split, image gap looks ordinary) and the two 26 groups (image cannot
 decide). No value or key question was touched.
+
+## MERCY-CEIL (17 Oct 2026)
+Is a D2 cipher clause reachable by settling M positions? Runs (PREREG-MERCY-CEIL.md, pre-registered): committed 89; every M a gated
+re-read could grant S 89; every M as transcribed 393; bar 125.9 (es17c). The clause is reachable only through r20:6-7 (in-range 23 vs
+2 3, gated readers split) **plus** r19:10 (code 25's value): together 132. No reader job helps. Next: MERCY-GAP, a pixel gap statistic
+gated on the six known glued clusters (~USD 2, disk only); code 25 waits on new key material (ASKS 60). Side findings for the verifier:
+r17:5 already meets the companion rule (both gated readers 14, own group); r16:3 and r16:6 exceptions say 14 but both gated readers read
+19 -- a conflict, logged not settled. No reading, key or AUDIT.md edit.
