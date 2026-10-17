@@ -79,3 +79,31 @@ paste them), then a fresh session fills the price columns and re-ranks by unit c
 - **Row 3 (British Library, 5 Oct enquiry, 7 items):** 6 Oct 12:05 UTC, BL Customer Services: no formal quotes; rate card applies, TIFF only for manuscripts, GBP 27.70 for the first image of a manuscript + GBP 7.25 per further image of the same manuscript. Worked: Add MS 21483 ff.1-8 = 16 images = GBP 136.45; Add MS 18982 ff.95r-96v = 4 images = GBP 49.45. Questions on items 2, 3 and 7 go to reference@bl.uk (also ask there whether images or microfilm already exist, microfilm being cheaper). Order: one online form per manuscript number (https://www.bl.uk/services/digitisation); about 8 weeks. Owner decides; image budget parked until funding.
 - **Row 11 (Bodleian, thread continued):** 5 Oct, Mike Webb (Curator of Early Modern Archives) located the 13 Mar 1655 "W.S." letter at MS. Rawl. A. 24/1 p.76 (a 10-page document, partly in cipher, undeciphered; no separate decipher) and the covering letter at p.73 (2 pp.), and forwarded the quote request to Imaging. 6 Oct 12:56 UTC: the Roe key (Clarendon State Papers Calendar I no.1486 item 14) is MS. Clarendon 19, fols. 224-225, one bifolium (4 pp. incl. endorsement "8 May 1638, Sr Thomas Row: cypher"); forwarded to Imaging, who may write for instructions. No price yet.
 - **Sächsisches Staatsarchiv Dresden (WVO 57 draft, Loc. 9941/3 Bl. 268-269; outreach/dresden-wvo57-chase-2026-10-05.md):** 6 Oct 11:11 UTC, interim reply (ref. 12-2642/624/180): the file is out of house for digitisation, so no copies at short notice; because of holiday absences they will settle how to proceed at the end of October.
+
+## Replies logged 17 Oct 2026 02:4x UTC (account-4 parent, from the owner's paste of the project and personal mailboxes; no name, address or customer number recorded, rule 9)
+
+- **Row 1, BnF Manuscrits, DEV-2610-010032** (Clairambault 574 ff.3-4, 575 p.1209, 579 p.341, 528; the 1161 line dropped, below): quote
+  AVAILABLE since 14 Oct 2026 in the owner's BnF account; order by "Commander" at the foot of the quote, then card. Price visible only
+  there. **Line "4000" (Clairambault 1161, "Avis de Flandre, chiffrés") cancelled by the BnF on 12 Oct 2026**: the Service clients
+  places the ciphered items at ff.162r-164v of the Gallica digitisation (ark btv1b90010063, view f186) and asks whether we want a
+  150 dpi colour PDF of them anyway. Answer: NO -- those are the six leaves ciphers/clair1161-avis-flandre-1688 already works from
+  (3,389 signs transcribed from Gallica; George Lasry's reading of ff.162r-164v is on cyphersolver), so no reproduction is needed.
+- **Row 1, BnF Arsenal, DEV-2610-010031** (Ms-6829 5 Jan 1708; Ms-6334 key leaf Feb 1650 + letters; Ms-4764 Lanmary 1745): quote
+  AVAILABLE since 8 Oct 2026. BnF warning on line 2000 division 9: Ms-6334 fol.17, de Noyers to Longueville, 22 Aug 1642, is "LETTRE
+  NON CHIFFREE ?!" -- do we want it? Answer: NO, drop that division; our NOTES (arsenal6334-longueville-1650-59 l.20) took the
+  catalogue's "lettre chiffrée" at face value and the BnF's eye says otherwise. Keep the key leaf first, then the 1650 and 1659 letters.
+- **British Library, DS26-3079 (Add MS 4956, f.66 r-v and ff.1-3 r-v; ciphers/courten-diary) and DS26-3080 (Mss Eur D623/41, two
+  copies of the key to Lord Mornington's cipher; ciphers/mornington-1798):** orders received by BL Digitisation Services 14 Oct 2026,
+  "started work", confirmation delayed by demand. Nothing to do until they confirm supply and price (rate card: GBP 27.70 first image +
+  7.25 per further image, TIFF).
+- **National Records of Scotland, SSD-786839 (GD406/1/2197, Hamilton cipher keys; ciphers/hamilton-1650):** 13 Oct 2026, a
+  non-refundable GBP 15 search-and-estimate fee is required before any estimate (paid online, reference NRS/SSD-786839/PSB; deducted
+  from the copy estimate; 3-5 working days to process). An earlier reply the same day (clipped in the paste) says the collection "is now
+  the property of" another party -- the owner is asked to paste that message in full, since it may carry a permission condition.
+- **BnF order VEL-2610-007904** (Arsenal Ms-6314, "Chiffre et déchiffrement de l'instruction donnée au comte Jacob de Hanau, 28 Oct
+  1635, et mémoire de La Valette", 14 pages PDF, EUR 9.80, card debited on delivery; ciphers/arsenal6314-hanau-1635): order confirmed
+  4 Oct 2026. Not recorded in the repository until now; delivery status unknown -- the owner checks the BnF account and uploads the PDF
+  here if delivered (it stays off the repository; a worker reads it).
+- **TNA page check RC8529042** (SP 105/65, Stepney to Manchester, 23 Mar 1702; ciphers/stepney-manchester-1702): result was due by
+  2 Oct 2026; no result in the paste. The owner checks the TNA account's "Your orders".
+- **Huntington ticket 19266054** (5 Oct 2026; ciphers/eckert-1864 Einaudi reply): acknowledged, no answer yet; wait.

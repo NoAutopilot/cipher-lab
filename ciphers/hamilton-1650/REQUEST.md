@@ -44,3 +44,5 @@ copy request, to the Bodleian, once the NRS answer is in.
 | 19 Sept 2026 | Request emailed to lsrhe@scotlandspeople.gov.uk: digital images of all 5 items, both sides; asked about depositor consent, microfilm frames of GD406/1/10573-10576 as fallback, and a quote | Awaiting reply |
 | | Quote received | |
 | | Images received | |
+
+- 17 Oct 2026: NRS SSD-786839 requires a GBP 15 non-refundable search-and-estimate fee before quoting GD406/1/2197 (ASKS 172); an earlier NRS reply says the collection is now the property of another party (text not yet on file).

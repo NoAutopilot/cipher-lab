@@ -87,3 +87,5 @@ letter-book copy should carry them in clear. Please copy the whole entry
 and the facing or adjacent page if it runs over. Purpose: private
 historical research.
 ```
+
+- 17 Oct 2026: no page-check result on file for RC8529042 (due 2 Oct 2026); the owner checks the TNA account (ASKS 172).

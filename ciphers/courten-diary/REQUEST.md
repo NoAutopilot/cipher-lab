@@ -50,3 +50,5 @@ electronic delivery. Rare items need curatorial permission and a preservation ch
 f.66 (Madden's key) both sides, ff.1-3 both sides (8 images, about 78 GBP) and Sloane MS 4019 f.79 both sides
 (2 images, about 35 GBP, a second item). The test shows the cipher's density per leaf and whether the key reads it;
 the rest of the diary follows if it does.
+
+- 17 Oct 2026: BL Digitisation Services order received 14 Oct 2026 (DS26-3079), "started work", supply and price to be confirmed; logged in outreach/QUOTES.md 17 Oct.

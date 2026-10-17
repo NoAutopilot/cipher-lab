@@ -82,3 +82,5 @@ electronic delivery. Rare items need curatorial permission and a preservation ch
 
 **Sizing.** D623/41 (both copies of the key) and D623/4 in full: about 10 images, roughly 95-120 GBP depending on
 whether the studio charges the first-image rate per item. Do not pay until Ingram 1970 is checked (NOTES.md).
+
+- 17 Oct 2026: BL Digitisation Services order received 14 Oct 2026 (DS26-3080), "started work", supply and price to be confirmed; logged in outreach/QUOTES.md 17 Oct.

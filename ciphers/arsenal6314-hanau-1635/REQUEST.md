@@ -18,3 +18,5 @@ cote for ordering a reproduction from the matrix). Reading the leaf needs either
 visit or a paid reproduction order against that microfilm cote.
 
 No personal data (this is an archival request only; nothing about the requester goes in this file).
+
+- 17 Oct 2026: BnF order VEL-2610-007904 (14 pages PDF, EUR 9.80, debited on delivery) confirmed 4 Oct 2026 for this item; delivery not yet checked (ASKS 172).
