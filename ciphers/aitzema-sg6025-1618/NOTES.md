@@ -135,3 +135,59 @@ cipher-block presence (cipher yes/no per sampled scan, the same method CHECK-HAG
 6896), ~USD 2; or, cheaper first, one more NA item-page check for a plausibly-numbered "Sleutels geheimschrift"
 or "Chiffres" sub-series near inv. 6025/12578 to re-attempt locating the 1617 code before any scan sampling,
 ~USD 0.5 (one item-page fetch).
+
+## AITZEMA-SHEET (17 Oct 2026)
+
+Stride contact sheet of all 589 scans, following CHECK-AITZEMA's named next step. The item page's own
+`drupal-settings-json` (`viewer.response.scans[]`) gives `order`, `uuid`, `default.url` (native JPEG),
+`thumbnail.url` (`service.archief.nl/api/file/v1/thumb/{uuid}`) and `iiif.url` directly per scan -- the
+thumbnail route is a single field read, no derivation or extra request needed (answers the brief's "say
+which"). isDownloadable: true confirmed again; 589 scans confirmed again.
+
+**Sample:** stride 10, orders 1, 11, 21, ..., 581 -- 59 of 589 scans (~10%). 1 item-page fetch to
+www.nationaalarchief.nl + 59 thumbnail fetches to service.archief.nl, >=1.6s apart, 60 requests total
+(at the 60-request cap). Thumbnails are small (168-256 px on the long side) -- `images/manifest.json` and
+`scans.tsv` record uuid, thumbnail_url and default_url (native-res) per sampled order for any later full-res
+re-read. 8 contact sheets (`images/sheet_1.jpg`-`sheet_8.jpg`, 7-8 thumbnails each, order labelled) built with
+PIL and read; `scans.tsv` has order/uuid/cipher/decipherment/note per scan.
+
+**Result: 0 of 59 sampled scans show a clear cipher block (numeral or symbol groups) at this stride and this
+resolution.** 2 scans (orders 131, 221) are marked `unsure`: 131's left page is heavily stained/darkened
+(damage or bleed-through, not legible either way at thumbnail resolution); 221 has curved ink/pencil bracket
+marks along the right-page margin that are not legible as cipher or as anything else at this resolution. The
+other 57 are ordinary Dutch cursive letters (2pp each), several folded outer-cover/docket sheets with red wax
+seals (orders 1, 531) or sideways-written address dockets (order 391), two pages under an NA-applied gray
+privacy/redaction patch (orders 401, 461, consistent with the same device seen on order 1's seal block), and a
+handful of faint/mostly-blank pages (orders 121, 211, 251, 321, 351 partial, 571). No interlinear or marginal
+decipherment was seen on any sampled scan. The 17 Feb 1618 Lubeck letter (res. 2305's known-plaintext pair)
+was not identified in this sample -- no scan carries a legible date at thumbnail resolution, and none shows a
+cipher block to match it against; its specific order within the 589 scans is still unknown.
+
+**Caveat on the negative:** this is a stride-10 sample at thumbnail resolution, not a full pass or a control-backed
+negative (rule 3 does not apply here -- there is no matched-control gate for "is a cipher block visible in a
+thumbnail", this is a presence/absence sweep, same genre as CHECK-HAGA/HAGA-LEAF). Two limits bound how much
+weight the 0/59 carries: (a) stride 10 across an 8-year, 589-scan lias (1617-1625) could plausibly miss a
+small number of cipher-bearing leaves if they cluster narrowly (e.g. only the 1617-1618 window, or only a few
+loose originals within it) -- CHECK-AITZEMA's own resolution-register finding is that only 1-3 of the lias's
+letters are named as deciphered across the whole 1617-1618 run, so cipher-bearing leaves could easily be a
+small single-digit fraction of 589 and fall entirely between stride-10 sample points; (b) thumbnails are
+168-256 px on the long side -- a numeral/symbol cipher block could in principle be mistaken for dense cursive
+at this size, though the two genuinely ambiguous scans (131, 221) suggest the failure mode in practice is
+"illegible", not "looks like plain text when it's cipher": every other sampled scan has text dense enough to
+read as ordinary joined cursive strokes, visually distinct from the blockier, more separated character shapes
+a numeral or symbol cipher produces even at low resolution (compare CHECK-HAGA/HAGA-LEAF's native-resolution
+reads on inv. 6896, which did find and rule out several cipher-looking blocks this low-res method could not
+have resolved).
+
+**Next step, named:** a full pass at stride 1 on the cipher-bearing runs is not yet applicable since no
+cipher-bearing run was found at this stride; instead, either (a) a second stride-10 contact sheet at offset 6
+(orders 6, 16, ..., 586) to double the effective coverage to ~20% before concluding presence is unlikely at
+this lias, ~USD 2 (same 60-request budget, one item-page re-fetch optional since the scan list is already on
+disk); or (b) native-resolution reads (not thumbnails) of the handful of folded-cover/docket scans (orders 1,
+381, 391, 531) and the two unsure scans (131, 221), which are the only candidates in this sample worth a
+closer look, ~USD 1 (6 native fetches); or (c) if a specific order for the 17 Feb 1618 Lubeck letter can be
+found (a finding-aid index, or a date-anchored docket read like HAGA-LEAF's calendar method), read that scan
+directly rather than continuing a blind stride sample. (b) is cheapest and lowest-risk to run before (a).
+
+Hosts: www.nationaalarchief.nl (1 request), service.archief.nl (59 requests), >=1.6s apart, 60 total. Vision:
+8 contact-sheet reads. No transcription, no decode.
