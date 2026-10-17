@@ -2,7 +2,7 @@
   "source": "https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/6896",
   "item": "NA 1.01.02 inv. 6896, unittitle 1622, 575 scans total",
   "fetch_method": "service.archief.nl/api/file/v1/default/{uuid} (native resolution JPEG), one request at a time, >=1.5s apart",
-  "fetched_by": "HAGA-LEAF worker, 17 Oct 2026",
+  "fetched_by": "HAGA-LEAF worker, 17 Oct 2026; orders 321-326 added by HAGA-LEAF2 worker, 17 Oct 2026",
   "user_agent": "cipher-lab research script (contact via repository)",
   "scans": [
     {
@@ -64,6 +64,66 @@
       "bytes_fetched": 6509154,
       "local_file": "images/s0320.jpg",
       "finding": "Docket: \"Dat 28 maert / Recep 14 april 1622\"; unrelated correspondent (troop/regiment matter). Key calendar anchor: written 28 Mar, received 14 Apr 1622."
+    },
+    {
+      "order": 321,
+      "uuid": "e3cbc886-d13b-4595-8367-bbbed0dbc22f",
+      "label": "NL-HaNA_1.01.02_6896_0321.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/e3cbc886-d13b-4595-8367-bbbed0dbc22f",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/e3cbc886-d13b-4595-8367-bbbed0dbc22f.jp2/info.json",
+      "bytes_fetched": 1542237,
+      "local_file": "images/s0321.jpg",
+      "finding": "No docket visible; continuous Dutch prose under the \"Hooghe ende Moghende Heeren\" running header, reads like a States-General resolution/memorial text rather than a letter. Not Haga, no cipher. Fetched by HAGA-LEAF2."
+    },
+    {
+      "order": 322,
+      "uuid": "2d073e4b-8edf-4971-b62d-c24e5e86525f",
+      "label": "NL-HaNA_1.01.02_6896_0322.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/2d073e4b-8edf-4971-b62d-c24e5e86525f",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/2d073e4b-8edf-4971-b62d-c24e5e86525f.jp2/info.json",
+      "bytes_fetched": 1331881,
+      "local_file": "images/s0322.jpg",
+      "finding": "\"Date: 22 april 1622\"; addressed \"Doorluchtige Hoochgeboren Vorst Genadichste Heer\" (to a Prince, not the States General); opens on Constantinople-related diplomacy. Not Haga (wrong addressee, wrong register), no cipher. Fetched by HAGA-LEAF2."
+    },
+    {
+      "order": 323,
+      "uuid": "46b0d1d3-fa41-4fd8-b6a2-eaa6602dc364",
+      "label": "NL-HaNA_1.01.02_6896_0323.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/46b0d1d3-fa41-4fd8-b6a2-eaa6602dc364",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/46b0d1d3-fa41-4fd8-b6a2-eaa6602dc364.jp2/info.json",
+      "bytes_fetched": 1499769,
+      "local_file": "images/s0323.jpg",
+      "finding": "Closes \"...te Venetien den [] April 1622\", signed with initials only (\"A.E.\" or similar); continuation/close of order 322's letter, written from Venice, mentions Constantinopel in passing. Not Haga (datelined Venice), no cipher. Fetched by HAGA-LEAF2."
+    },
+    {
+      "order": 324,
+      "uuid": "8f689962-34cc-438d-a1f5-bc1635e430c9",
+      "label": "NL-HaNA_1.01.02_6896_0324.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/8f689962-34cc-438d-a1f5-bc1635e430c9",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/8f689962-34cc-438d-a1f5-bc1635e430c9.jp2/info.json",
+      "bytes_fetched": 1395954,
+      "local_file": "images/s0324.jpg",
+      "finding": "\"Date 10 juny / Recep 2 july 1622\"; \"mijn genaedichste Heeren\"; Vlissingen garrison-payment matter (2,000 ducats owed). Not Haga, no cipher. Fetched by HAGA-LEAF2."
+    },
+    {
+      "order": 325,
+      "uuid": "9a8dd7a0-a976-4f04-9ae4-1370b1a94749",
+      "label": "NL-HaNA_1.01.02_6896_0325.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/9a8dd7a0-a976-4f04-9ae4-1370b1a94749",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/9a8dd7a0-a976-4f04-9ae4-1370b1a94749.jp2/info.json",
+      "bytes_fetched": 1098806,
+      "local_file": "images/s0325.jpg",
+      "finding": "Closes \"Hooghe Mogende Heeren ... in Venetien den [] July 1622\", signed \"Philip Calandrijn\"; continuation/close of order 324's letter, same Venice correspondent. Not Haga, no cipher. Fetched by HAGA-LEAF2."
+    },
+    {
+      "order": 326,
+      "uuid": "a96c5dc4-d94a-4db7-b71e-e50960cc8477",
+      "label": "NL-HaNA_1.01.02_6896_0326.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/a96c5dc4-d94a-4db7-b71e-e50960cc8477",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/a96c5dc4-d94a-4db7-b71e-e50960cc8477.jp2/info.json",
+      "bytes_fetched": 1097306,
+      "local_file": "images/s0326.jpg",
+      "finding": "Left page: sealed cover/address verso of the 325 letter (\"Aux Hauts et Puissants Seigneurs...\", wax seal). Right page: new letter \"Date 24 juny\" re Milan/Spanish-troop movements (Bergamasca, Messina). Not Haga, no cipher. Fetched by HAGA-LEAF2."
     },
     {
       "order": 327,

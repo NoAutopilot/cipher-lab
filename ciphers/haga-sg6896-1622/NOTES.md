@@ -236,3 +236,58 @@ the 10.1 days/order rate is only a local estimate and the true position of a sin
 
 Unblocked, as before (CHECK-HAGA, "## While waiting" above): the leaf-location step above depends on nobody
 and is the next action available to any worker or lane.
+
+## HAGA-LEAF2 (17 Oct 2026)
+
+**Scan: not found. Cipher lines: 0 across the whole window. No decipherment, because no cipher.** Orders
+321-326 fetched at native resolution (`service.archief.nl/api/file/v1/default/{uuid}`, UUIDs read fresh from
+the item page's `drupal-settings-json`, same route as HAGA-LEAF); order 327 re-examined from the existing
+fetch (no new request). All 7 scans read.
+
+| order | dateline/signature | content | cipher? |
+|---|---|---|---|
+| 321 | none visible | continuous Dutch prose, "Hooghe ende Moghende Heeren" header; looks like a States-General resolution/memorial text, not a letter | no |
+| 322 | "Date: 22 april 1622"; addressed "Doorluchtige Hoochgeboren Vorst Genadichste Heer" | a letter to a Prince (not the States General), opens discussing Constantinople-related diplomacy | no |
+| 323 | closes "...te Venetien den [] April 1622", signed "A.E." (or similar, illegible past initials) | continuation/close of 322's letter; mentions Constantinopel and France/Spain affairs; written **from Venice**, not Constantinople | no |
+| 324 | "Date 10 juny / Recep 2 july 1622"; "mijn genaedichste Heeren" | Vlissingen garrison-payment matter (2,000 ducats, troops) | no |
+| 325 | closes "Hooghe Mogende Heeren ... in Venetien den [] July 1622", signed "Philip Calandrijn" | continuation/close of 324's letter; same Venice correspondent | no |
+| 326 | left page: sealed cover/address verso of the 325 letter ("Aux Hauts et Puissants Seigneurs...", wax seal); right page new letter "Date 24 juny" | Milan/Spanish-troop movements (Bergamasca, Messina) | no |
+| 327 (re-read, no new fetch) | no dateline/signature visible in this spread (continues from the preceding, unfetched leaf) | France/Spain/Milan military movements, then "Uyt de stadt van Constantinopele werden geschreven..." (news from Constantinople: Sultan Osman/Mustafa) -- a **news-digest paragraph inside someone else's letter**, not a despatch written from Constantinople | no |
+
+**Finding: the calendar window itself is the wrong correspondent.** Orders 322-327 are not Haga material at
+all -- they are a Venice-based correspondent's letters (the 322/323 pair, unsigned past "A.E.", and the
+324/325 pair signed Philip Calandrijn), one of which relays Constantinople news secondhand (327's paragraph).
+That explains why order 327 "read" as being in the right register (CHECK-HAGA/HAGA-LEAF's inference) without
+being Haga's own hand: a Venice newsletter reporting Ottoman news reads exactly like Constantinople chatter
+at the content level. The 320/328 anchors (troop-regiment letter; Constantinopel-opening letter) bracket this
+Venice correspondent's run internally consistently by date, but that run is not Haga's despatch -- the
+volume interleaves distinct correspondents' bundles rather than filing strictly by one sender's chronology
+(as CHECK-HAGA's "mixed Levant/Barbary file" note already flagged), so a date-anchored projection from two
+*different, nearby* correspondents' letters does not reliably land inside a third correspondent's (Haga's)
+own run, even when the dates agree.
+
+**Not a reliable local rate either**: within 321-326 the dates do not run monotonically with scan order
+(22 Apr at 322, Venice/April at 323, 10 Jun at 324, Venice/~Jul at 325, 24 Jun at 326) -- bundles of a few
+leaves each are filed together, not single sheets in strict date order. The 10.1-10.5 days/order rate HAGA-LEAF
+derived from 320->328 is therefore not a dependable local clock for pinpointing one leaf inside this stretch;
+it happened to bracket a correspondent's batch, not a continuum.
+
+### Next step
+
+Vision/request budget exhausted this pass (7 vision calls, the brief's cap; 13 host requests across HAGA-LEAF
+and this job). Two candidate next steps, cheaper than more blind native-res reads:
+1. **Re-read the item page's own scan list for a boundary marker.** `drupal-settings-json` gives `label` per
+   scan (e.g. `NL-HaNA_1.01.02_6896_0321.jpg`) but no document-level title; check whether the Nationaal Archief
+   finding aid (the `/onderzoeken` page, not yet grepped for this) or the EAD/XML behind it exposes a
+   per-document index (sender, date) rather than per-scan images only -- would turn this from a blind native-res
+   sweep into a targeted fetch. One page fetch, no vision calls, near-zero cost.
+2. **If no index exists**, widen the native-res sweep away from the 320/328 anchors rather than between them:
+   try order 329 (the one gap scan between the 328 Constantinopel-opening letter and the already-checked 330
+   Milan letter) and orders 318-319 (just before the 320 troop-matter anchor), since Haga's own bundle may sit
+   adjacent to, rather than between, the two anchors that turned out to belong to the Venice correspondent.
+   ~USD 1-1.5 for 2-3 more native-res scans + reads.
+
+intake_gate_check.py not re-run (no new deep-work campaign started, only a continuation of the already-gated
+leaf-location step). file_shrink_guard.py not run (new content appended to an existing file this worker owns
+this pass; no other tracked file touched). Hosts: www.nationaalarchief.nl (1 request, item page),
+service.archief.nl (6 image requests), >=1.5s apart, 7 total this job (20 cumulative with HAGA-LEAF).
