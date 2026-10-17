@@ -115,6 +115,16 @@
    ]
   }
  ],
+ "run1618": {
+  "fetched_by": "AITZEMA-RUN1618 worker, 17 Oct 2026",
+  "job": "stride 1, orders 1-60 plus unsure orders 131, 221 from AITZEMA-SHEET, at 800px IIIF (.../full/800,/0/default.jpg), per brief 2026-10-17-acct4-research-director-9.md JOB AITZEMA-RUN1618",
+  "uuid_source": "www.nationaalarchief.nl item page re-fetched once (drupal-settings-json -> viewer.response.scans[], all 589 orders) since images/manifest.json's own scans[] only held the stride-10 sample's uuids",
+  "requests": "1 item-page fetch (www.nationaalarchief.nl) + 62 IIIF image fetches (service.archief.nl), >=1.6s apart, 62 service.archief.nl requests (at the host's own cap)",
+  "images_dir": "images/run1618/order_NNNN.jpg (800px wide JPEGs, 62 files, 3.8 MB)",
+  "contact_sheets_built_not_committed": "8 sheets (orders 1-60) + 1 unsure sheet (131, 221), built in the worker's scratchpad only, 9 vision calls",
+  "result": "0 of 62 scans show a cipher block (numeral/symbol groups); orders 35, 131, 221 (flagged unsure/marked at thumbnail or stride-10 resolution) resolve at 800px to: 35 a scribal pen-trial/paraph flourish under a signature, not cipher; 131 stained but legible Dutch prose dated 'den 15 January' (year/place not legible, not the 17 Feb 1618 Lubeck letter); 221 a signature paraph under 'Uwe Ho:Mo: Ootmoedige getrouwe Dienaer', not cipher. No decipherment seen on any of the 62. The only legible date found is order 131's '15 January'; no other date was legible enough to place in year or compare to the lias's 1617-1625 span from this sample alone.",
+  "lubeck_pair": "not found in orders 1-60/131/221 -- no scan in this sample carries a legible '17 Feb[ruari]'/'Lubeck' dateline or docket"
+ },
  "scans": [
   {
    "order": 1,

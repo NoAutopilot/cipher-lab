@@ -1,10 +1,64 @@
 order	uuid	cipher	decipherment	note
 1	fc3d66f6-04c3-4fe0-a915-c67e2008d6c4	no	no	folded outer cover/docket, two red wax seals, address block (torn/redacted gray patch) -- docket, not cipher
+2	7da8564b-5b87-47d4-89ce-b9f91780be1e	no	no	folded outer cover/docket, two red wax seal remnants, torn address block -- docket, not cipher
+3	7ebeef30-45b3-4b45-9060-fdc3e41b4f29	no	no	ordinary Dutch cursive letter, 2pp
+4	95fb63b5-7574-4191-911c-11e0ccc920bf	no	no	ordinary Dutch cursive letter with marginal note, 2pp
+5	6351ebc2-e8f3-411d-82c5-19b16e145e76	no	no	mostly blank/faint page, two round stains
+6	c34cd3cf-e71a-4e09-9ae7-4476b8007cbb	no	no	stain top-left, small marginal note, ordinary cursive right
+7	c7d6275d-cf82-4591-8e00-ca8b9867a2a6	no	no	small docket-style heading left, mostly blank right
+8	54033be3-4a39-450c-919b-150f9a16433c	no	no	dense Dutch cursive letter with marginal note, 2pp
+9	eeccd9fc-b0fc-42a3-b951-c03695081a31	no	no	small note top-left, ordinary cursive right
+10	31d92692-c5a7-4053-af57-fe0cc742d527	no	no	ordinary Dutch cursive letter, 2pp
 11	61ef6f8a-b25e-4b58-aa01-2a1e661f075b	no	no	ordinary Dutch cursive letter, 2pp
+12	f461366e-1979-4667-b03b-a21132ddedca	no	no	dense Dutch cursive letter with marginal notes, 2pp
+13	6e5fe059-6de5-4bcf-bf74-0f454a2ed957	no	no	ink dot + small note left, ordinary cursive right
+14	1ee6896d-a424-4b03-b788-0f41f4c4ead8	no	no	ordinary Dutch cursive letter, 2pp
+15	551971f6-729d-4727-bffe-a420f6b9a2d5	no	no	ink stain + small note left, dense cursive right
+16	8641a5da-f6fb-4f17-ad98-bb8bb7a6ab3b	no	no	dense Dutch cursive letter with marginal note, 2pp
+17	20a7e2f1-e9e9-42a5-a398-b80e99269619	no	no	stain + small note left, ordinary cursive right
+18	68796b91-b906-44c5-b667-cc6a9a365a4e	no	no	dense Dutch cursive letter with marginal note, 2pp
+19	f7868b1f-c426-4388-87a7-e3fbe55d0fb6	no	no	stain + small note left, sparse cursive right
+20	a5453212-f92c-4baa-9c82-42acc06cee4a	no	no	dense Dutch cursive letter with marginal note, 2pp
 21	373a0643-ae0c-418d-a59b-fdbb48c1413b	no	no	ordinary Dutch cursive letter, 2pp
+22	66f63684-785e-4a68-b2c2-da1d6e0e2fae	no	no	dense Dutch cursive letter, 2pp
+23	240a38ec-1778-455a-a36d-d8e1a34a411c	no	no	small note + wax seal remnant left, ordinary cursive right
+24	eb306c5a-68a4-4a6f-af68-eea4ac4f2dda	no	no	blank page, both sides
+25	09cd23cc-5ae8-42e9-b7ce-a409e8ef8936	no	no	ink dot + small note left, dense cursive right
+26	84cebc13-0ff1-4bc1-a36b-c6e30c45b30d	no	no	dense Dutch cursive letter with marginal note, 2pp
+27	892c9231-c127-4639-9e51-9dad2f2fd23a	no	no	stain + small note top-left, mostly blank right with a dot
+28	34f05f6b-1334-4f19-bf63-31696f45a65b	no	no	dense Dutch cursive letter, 2pp
+29	16fe2687-5928-4493-8f08-4180b5985684	no	no	small note left, dense cursive right
+30	af92f962-e278-49ee-8734-e38c28e46baf	no	no	dense Dutch cursive letter, 2pp
 31	130c7d1e-6dd7-48cf-84cd-c612e27ab841	no	no	ordinary Dutch cursive letter, 2pp
+32	92ebcfb3-17e8-4634-8de9-b9a285d51eb8	no	no	dense Dutch cursive letter with marginal note, 2pp
+33	9e0ede46-f420-45ae-8010-de49137414b4	no	no	stain + a ruled grid/box note left (docket-style, not cipher), dense cursive right
+34	c0cfe7ba-c261-4a21-93d0-f2a44c6cfe96	no	no	stain + small note left, cursive right with marginal note
+35	6ea9e1a4-3845-471f-be15-1c8452259e51	no	no	stain left; right page has diagonal pen-trial flourish strokes under a signature paraph (checked at closer crop -- scribal paraph, not cipher), not legible as cipher
+36	9c015cef-d718-4346-a695-6fb06da3b7d7	no	no	wax seal remnant + ruled box note left, dense cursive right with marginal note
+37	d1e1d1a6-7814-4b65-9bc6-7dee1da62149	no	no	blank page, both sides
+38	4cc33a52-8877-4b18-b693-9435afc608b7	no	no	ruled grid/fold-line note left, dense cursive right
+39	07e97c2b-11cc-41ce-a468-6ea4a9932c5d	no	no	dense Dutch cursive letter with marginal note and signature, 2pp
+40	03bf4161-d266-4575-a45d-09f5b201286e	no	no	ink dot left, dense cursive right
 41	cf605457-26cc-4e67-a9ac-0d0e6ff130ad	no	no	ordinary Dutch cursive letter, 2pp
+42	6b4029b9-9e9d-4da0-8bc3-f920539c560b	no	no	ink dot + small heading note left, dense cursive right with marginal note
+43	d39ba1c6-0f41-450e-9480-1861a6e0751f	no	no	dense Dutch cursive letter with marginal note bottom-right, 2pp
+44	0a51bab1-4091-4fb4-a470-1a1d7334e01a	no	no	dense Dutch cursive letter with marginal note, 2pp
+45	e1563e89-8b39-4158-9a3b-7186b652d9c9	no	no	cursive left, faint/mostly blank right with marginal note
+46	25360431-5515-432b-ba0a-5fe5fa36492e	no	no	folded outer cover/docket, gray NA redaction patch, small note
+47	8d9b65dd-8c1a-43cc-a412-6829ea5b5d21	no	no	folded outer cover/docket, gray NA redaction patch, archival number top-right corner, mostly blank
+48	faaa3617-e9fe-4eb7-af2b-879d48f6de36	no	no	folded cover with gray NA redaction patch; dense cursive letter opening "Mijn Heer"
+49	aa7808c6-0826-4200-b398-9eedba72c72b	no	no	folded cover with gray NA redaction patch top-left; dense cursive right, opening "Mijn Heer"
+50	0573a14d-676b-47e6-b57f-fd0066cde0ef	no	no	dense Dutch cursive letter with marginal notes throughout, 2pp
 51	9e6a2b58-2837-456e-8d02-11cf240d00e1	no	no	ordinary Dutch cursive letter, torn/damaged edge, 2pp
+52	f6983f2c-8778-4b14-9b31-c3db8383c004	no	no	torn left edge; dense cursive letter with signature, 2pp
+53	5b1d8bae-b580-481d-a584-1120a6f8834c	no	no	stain + small note left, dense cursive right with marginal note
+54	1bcf4351-b556-491f-b822-011cbfbf51c0	no	no	dense Dutch cursive letter with marginal note, 2pp
+55	accec697-46f3-4e21-a6e0-30ddd6d200c5	no	no	dense Dutch cursive letter with signature, 2pp
+56	71932aa9-7ab2-4bc6-9fe4-92b325707dbc	no	no	dense Dutch cursive letter with marginal note and signature, 2pp
+57	ab3411ca-83d0-4d34-87de-f2082b800e80	no	no	blank/faint left, small note + signature right
+58	13761c9f-fd07-496d-b908-d141e6bcf08e	no	no	small note + dot left, dense cursive right with signature
+59	ad007bcd-146c-4b4f-b825-d46aa46438c3	no	no	dense Dutch cursive letter with one ink-underlined word (later annotation, not cipher) and marginal note, 2pp
+60	1c2b1a9e-7d03-4a9c-ae8f-0a2f52654917	no	no	dense Dutch cursive letter with marginal note and signature, 2pp
 61	59036ef7-b888-4951-af35-ff8439377a66	no	no	ordinary Dutch cursive letter, small ink spot, 2pp
 71	0af3ec7d-ce2e-4d66-920a-a5107ddf28f4	no	no	ordinary Dutch cursive letter, 2pp
 81	e4a4ecaa-45d2-4ba0-9b6e-b3d03db23172	no	no	letter with a pasted/taped annotation strip (orange-ish), cursive text, 2pp
@@ -12,7 +66,7 @@ order	uuid	cipher	decipherment	note
 101	c03bfe81-a2fd-4c7e-baad-20fe1e7a55cf	no	no	dense Dutch cursive letter, 2pp
 111	e4eb8b2a-66d5-49fd-9d74-7c03fa88f62c	no	no	ordinary Dutch cursive letter, small ink spot, 2pp
 121	15beaafa-6bfb-40f8-b9aa-086891998973	no	no	mostly blank/faint page, little visible text
-131	abfe5b27-5540-48e5-913a-8d229b8c3164	unsure	no	left page heavily stained/darkened (damage or bleed-through), content not legible at this resolution -- unsure
+131	abfe5b27-5540-48e5-913a-8d229b8c3164	no	no	read at 800px (not thumbnail): heavily stained/darkened left page but legible Dutch prose ending "...den 15 January" -- an ordinary letter dated 15 Jan (year not legible in crop, place name uncertain), not cipher, not the 17 Feb 1618 Lubeck letter (different day/month)
 141	371443ee-c2ba-46e6-9834-56d0656c4bc4	no	no	ordinary Dutch cursive letter, 2pp
 151	66de9e54-b8b4-4b6f-86fe-40ecff0149ea	no	no	ordinary Dutch cursive letter, 2pp
 161	73c32ec7-89d5-4ccd-9f6e-9a5a85fa5231	no	no	ordinary Dutch cursive letter, 2pp
@@ -21,7 +75,7 @@ order	uuid	cipher	decipherment	note
 191	0acb1fba-48f6-459c-82ac-21f583f1f60d	no	no	cursive letter, right page faint/underexposed
 201	5c64e124-96f0-4631-b240-cbaf803001ef	no	no	ordinary Dutch cursive letter, 2pp
 211	de977a56-0875-43b5-8d1a-204ea3c98104	no	no	faint/blank-looking page, little visible text
-221	a50ab4e9-d123-4f72-a6cc-91abc633052b	unsure	no	cursive letter with curved pencil/ink bracket marks along right-page margin -- editorial marks, not legible as cipher at this resolution -- unsure
+221	a50ab4e9-d123-4f72-a6cc-91abc633052b	no	no	read at 800px: legible dense Dutch prose closing "Uwe Ho:Mo: Ootmoedige getrouwe Dienaer" with a large looping signature paraph (the curved marks noted at thumbnail size) -- scribal flourish under Aitzema's own signature, not cipher
 231	38a80fea-fce4-4ca0-bc9c-4f9cc279e67d	no	no	cursive letter with marginal note, 2pp
 241	c7ef2833-83af-4108-8b2b-64048768b240	no	no	ordinary Dutch cursive letter, 2pp
 251	c0172a5f-6bb6-43fe-bd50-c088edbf6ece	no	no	mostly blank page

@@ -191,3 +191,59 @@ directly rather than continuing a blind stride sample. (b) is cheapest and lowes
 
 Hosts: www.nationaalarchief.nl (1 request), service.archief.nl (59 requests), >=1.6s apart, 60 total. Vision:
 8 contact-sheet reads. No transcription, no decode.
+
+## AITZEMA-RUN1618 (17 Oct 2026)
+
+Following AITZEMA-SHEET's named next step (b): orders 1-60 (the 1617-1618 run, stride 1) plus the two unsure
+stride-10 scans (131, 221) read at 800 px via the IIIF route (`.../full/800,/0/default.jpg`), not thumbnails.
+`images/manifest.json`'s own `scans[]` only held the stride-10 sample's uuids, so the item page's
+`drupal-settings-json` was re-fetched once (the brief's own allowance) to get the full 589-scan
+order->uuid->iiif.url list for this job (written to the worker's scratchpad, not committed -- 589 entries would
+duplicate the manifest's own record). 62 image requests to service.archief.nl at the documented IIIF path,
+>=1.6s apart (at the host's own cap); 1 item-page request to www.nationaalarchief.nl. 9 vision calls: 8 contact
+sheets (2x4, orders 1-60, 7-8 per sheet, labelled) + 1 sheet with 131 and 221 side by side at full 800px (no
+further native crop needed -- 800px already resolved both as legible, see below).
+
+**Result: 0 of 62 scans show a cipher block (numeral or symbol groups).** Orders 1-60 are the same population
+AITZEMA-SHEET described at thumbnail size -- ordinary Dutch cursive letters (2pp), several folded outer-cover/
+docket sheets with red wax seals (orders 1, 2, 531) or sideways dockets (order 391), two pages under an NA gray
+privacy/redaction patch (orders 46-49), a handful of faint/largely blank pages (orders 5, 24, 37, and others),
+and many pages with a small marginal note or docket-style heading in addition to the main cursive text -- all
+confirmed not cipher at 800px, a clear step up in legibility from the earlier 168-256px thumbnails. No
+interlinear or marginal decipherment was seen on any of the 62.
+
+The three ambiguous scans from AITZEMA-SHEET all resolve cleanly at 800px:
+- **Order 35** (sheet_5, this run's own scratchpad): the curious diagonal marks are a scribal pen-trial/paraph
+  flourish under a signature (closer crop checked) -- not cipher, same genre as order 221 below.
+- **Order 131:** the left page's dark staining is legible prose at 800px (it was genuinely a resolution issue,
+  not damage obscuring the ink), ending "...Actum, Signatum [place uncertain] den 15 January" -- an ordinary
+  dated letter, day 15 of a month read as January (year and place name not confidently legible even at 800px).
+  Not cipher, and not the 17 Feb 1618 Lubeck letter (different day and, on this reading, a different month).
+- **Order 221:** the curved bracket marks are a large looping signature paraph under the closing formula "Uwe
+  Ho:Mo: Ootmoedige getrouwe Dienaer" ("Your High Mightinesses' humble faithful servant", the standard
+  States-General sign-off) -- ordinary, legible Dutch prose, not cipher.
+
+**The 17 Feb 1618 Lubeck letter (res. 2305's known-plaintext pair) was not identified among orders 1-60, 131 or
+221.** The only legible, placeable date found anywhere in this sample is order 131's "15 January" (year/place
+not resolved); no other scan in 1-60 carries a legible dateline at all at this resolution -- most letters open
+with "Mijn Heer"/salutation and close with a signature, with the actual place-and-date line, where present,
+written small and often in a different, harder-to-read hand (orders 1, 48, 49 show this pattern). **Whether the
+lias is chronological at all is not established by this sample**: order 131's "15 January" is consistent with
+the lias's 1617-1625 span but does not by itself confirm order (its own year is unreadable at 800px, and no
+second dated scan in 1-60 was found to compare against).
+
+**Next step, named:** orders 1-60 carry no cipher at 800px, so program C's premise (a 1617-1618 run with cipher
+to recover) is not supported by this sample of 62/589 (~10.5%) scans, concentrated in the lias's first ~10% by
+order. Two options: (a) locate the 17 Feb 1618 Lubeck letter's specific order directly -- a date-anchored docket
+read is the only way to confirm or rule out this lias as the right target, since blind stride sampling at either
+resolution has now covered ~20% of 589 scans (AITZEMA-SHEET's 59 + this job's 62, with some overlap) without
+finding it; this would need either an index/finding-aid for inv. 6025 (not found so far) or systematically
+reading dateline/docket lines across more of the lias, ~USD 3-5 depending on method; (b) given two independent
+samples (stride-10 thumbnails, stride-1 800px on the first ~60) both read 0 cipher, move program C to the named
+fallback (K3, Berck) rather than spending further budget on this lias blind -- the orchestrator's own call,
+since AITZEMA-SHEET's brief named this as the condition for the pivot. This worker recommends (b): two
+independently-resolution'd negative samples on the highest-probability (earliest) part of the lias is enough
+evidence against a wide, systematic leaf hunt being worthwhile without a date anchor first.
+
+Hosts: www.nationaalarchief.nl (1 request), service.archief.nl (62 requests), >=1.6s apart, 63 total. Vision:
+9 calls (8 contact sheets orders 1-60 + 1 unsure sheet 131/221). No transcription, no decode.
