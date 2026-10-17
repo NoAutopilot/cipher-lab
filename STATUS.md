@@ -10244,3 +10244,29 @@ Brief .claude/briefs/default-lane.md; no worker. Spawned by the account-2 dispat
 accounts 2 and 4 at 13:17 (d345d9e32: no automatic empty default lanes). Since A2-1210 closed (12:25), origin/main carries no commit under
 ciphers/, tools/, ASKS.md, VERIFY-BACKLOG, NEXT-STEPS, HOT-COLD or status.json. Gate 0a's SESSION-SWEEP-account-2 row is a stale 5 Oct
 claim (not waited on). Known-text share 0. What is left: as the 0809 handoff.
+
+## Research director (17 Oct 2026, 01:1x UTC by date -u; account-4 parent session_01D7XWmthshMVqxumdDvitPh; owner's directive of 17 Oct)
+
+Programs (starting 40/30/30, adjusted by evidence, never quotas): (A) recovery and production -- espagnol142-mercy-1648 (N4, our key, D1),
+armstrong-madison-1808 (standing, owner), brederode-heidelberg-1621, the FDR/NYPL/NA key-material acquisitions; (B) flagship
+fr16104-vivonne-spain-1572 (RESEARCH.md, written 17 Oct); (C) discovery -- SCOUT-KEYS queued for account 2 (key-beside-cipher pairs).
+
+Wave 1 (closed 01:11 UTC): VIV-SYNTH (USD 3.56 of 6, D) and MERCY-CEIL (USD 1.56 of 3, N). SCOUT-KEYS and CASES-TX still queued for the
+account-2 dispatcher (no claim yet; account 2 reads `allowed`).
+
+Evidence produced: (1) Vivonne known leaves: clerk-doubt explains 0.00-0.035 of pass-A err_true; the verifier-classed item keeps 0.139 --
+reader error about 0.14 on clean truth (3x the 0.05 standard), and no error-matched synthetic has ever shown a clause would surface at
+that error, so no ink-63 negative is yet a test; the 42-letter bar every Vivonne PREREG used is below the governing corpus-R AD
+(DV-MERCY2 convention, likely about 100 letters, never computed for this item). (2) Mercy: longest H/C/S run committed 89, every
+reader-settlable M 89, every M as transcribed 393, vs AD 125.9: a D2 clause needs r20:6-7 (in-range 23 vs 2 3) plus code 25 at r19:10
+(run 132); no reader job licenses it.
+
+Decisions: Vivonne **pivot** -- decode-side and f.191r re-reads stop until the input is trusted; ERR-SIM (error-matched synthetic +
+AD recount, disk, cap 3) spawned as wave 2; KEYCELL-READ (strongest-model key-cell reader on two known leaves, cap 8) follows if
+ERR-SIM lands on "transcription"; the USD 34 ink-52 transcription and packet 4 are held. Mercy **continue by a different instrument** --
+MERCY-IMG2 (readers) not briefed; MERCY-GAP (pixel gap statistic gated on the six known glued clusters, disk, cap 3) spawned; code 25
+waits on the Brussels sibling (ASKS 60 / S3). Armstrong **acquire** -- synthesis in its NOTES.md; nothing on disk moves it; the USD 20
+FDR order (ASKS 167) is the highest-leverage program-A action. Evidence-to-decision entries 2 and 3 in learning/EVIDENCE-DECISIONS.md.
+
+Requires the owner: ASKS 167 (FDR USD 20), the send runner (S3, S4, S7, S8), the Mercy issue post (outreach/aymeloglu-issue-mercy.md),
+ASKS 170 (NA form), ASKS 56 (BL batch); the Vivonne step-1 sort stays an optional fallback (SORT-CONSUME is armed for when it lands).

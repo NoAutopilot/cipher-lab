@@ -4362,3 +4362,30 @@ Answers ASKS 85 (outreach/armstrong-keyhunt-fdr.md, sent by the person; the repl
 What it changes for the target: (1) the Dec 1804 pair of Armstrong-to-Monroe letters is the one item H25 (28 Sept 2026) could not locate on LOC Monroe Papers reel 3, and December 1804 is the month before the first Armstrong-Monroe private-cipher letter on record (22 Jan 1805, "partially in code and deciphered", NYPL); the roll's Dec 1804 coded pages with a decoding are therefore the earliest candidate witness of that cipher, the key-rebuild material the "Remaining gaps" section is waiting on from the UMW/NYPL route. (2) If the code is instead the office table THE=972, a decoded page adds known-plaintext pairs to the 580-of-about-1600 table and sharpens the 15 Feb 1808 decode (72%, Bourdeau), which is still a gain. (3) Either way the material is a test input, not a reading: on receipt it goes through the key-rebuild step of the Escalation list (tools/interlinear_align.py on the code/decode pairs, then the target with a matched control), PREREG first, grades C for the period decodings and H for the digits.
 
 Done this session: Reply 1 recorded; follow-up draft (order confirmation; legibility, identifiers, address/docket sides; no new holdings asked for) written in the same file; CONTRIBUTIONS.md row updated; ASKS 85 done, ASKS 167 opened (the owner's order decision, recommended yes); REQUEST.md item 4; gate-7 check OUT-CHECK-FDR2 spawned. Nothing decoded; no key or reading changed; rule 10: nothing called new or first. Requests to hosts: none.
+
+## Synthesis (17 Oct 2026, 01:1x UTC by date -u; account-4 parent as research director, session_01D7XWmthshMVqxumdDvitPh)
+
+Standing program-A target (owner, 17 Oct 2026: "add the Tomokiyo target he asked for to this list, I don't want to lose it"). Status
+`open`, stage 8, N3 not yet claimed for any reading; 20 Feb 1808 letter: a unique private code plus shorthand, 72% of the 15 Feb 1808
+sibling decoded by Bourdeau under the office table THE=972 (580 of about 1,600 groups known).
+- **What is established.** The 20 Feb cipher is "one concerted with another correspondent" (Armstrong's own words); the Armstrong-Monroe
+  private cipher survives in three NYPL 1805 letters "partially in code and deciphered" (22 Jan, 5 Apr, 4 May 1805; UMW catalogue,
+  TOMO-ARM W1, H78) and, by the FDR Library's reply of 14 Oct 2026, in about 5-6 Dec 1804 pages with a period decoding on the Aldrich
+  roll (ASKS 167). Whichever table those pages carry, a code page with its period decoding is known plaintext (C-grade pairs for
+  tools/interlinear_align.py), the one route by which every counted reading in this repository has come (LESSONS.md).
+- **What is ruled out with a number.** The nomenclator family blind (ARM-C1: control below gate at N=369); the en18 judge as a gate for
+  that family at this N (it PASSed a decode of the shuffled target, rule 3); the adjacency statistic at N=28 (ARM3-ADJ: power shown only
+  at N=22,886); the per-session calibration route (ARM-S3: freq_score drift 0.211 over tolerance, non-test). None is re-briefed without
+  new material.
+- **Shared assumptions.** (1) That the 1808 private code is the same table as the 1805 Armstrong-Monroe cipher: inferred (I), untested
+  until a 1805 or Dec 1804 page is on disk. (2) Transcription: the 20 Feb digits were read by two blind passes and reconciled (H25
+  series); not benchmarked against a known answer, but a numeral hand is not the Vivonne problem. (3) That the shorthand plate is
+  readable at all by machine: the plate-only reader retired (Escalation list).
+- **Six questions.** Learned: every live route is key material from outside (NYPL images, the FDR roll), not another family. Depended on:
+  the catalogue's "partially in code and deciphered" flags, which the capture's control confirmed on known coded items (H78). Unverified:
+  assumption (1). Alternatives: the Dec 1804 pages could be the office table, which still adds pairs to THE=972 and sharpens the 15 Feb
+  decode. Most informative different experiment: interlinear_align.py on the first decoded page that arrives, with the HEID-1623CAL
+  lesson applied (the tool is untested below N=200; a Dec 1804 page of 5-6 pages likely clears that). Decision: **acquire**. No cheap
+  step on disk depends on nobody: the machine-side work (the alignment PREREG, the matched control on a synthetic private code of the
+  same N and design) is prepared only when a page is on file, not before. What requires the owner: the USD 20 FDR order (ASKS 167,
+  recommended yes; the highest-leverage program-A action on the board) and the NYPL reply (CONTRIBUTIONS 5 Oct, waiting).
