@@ -4470,3 +4470,43 @@ the labels' impurity or the score's frequency bias (s, n, l draws score highest 
 rare); alternative: c and 2 are p and m but the mean-score null is unfair to rare letters -- a frequency-matched shuffle would settle it
 (seconds, disk); most informative next: that frequency-matched null, then the tile split on packet.tsv (a tile reader priced per tile, or
 the owner's sort of about 214 tiles), then a transcription pass aimed at < 0.05 error; decision: change.
+
+## VIV-KSPLIT (17 Oct 2026)
+Worker VIV-KSPLIT (account 4; brief 2026-10-17-acct4-research-director-6.md; PREREG-VIV-KSPLIT.md pushed 0adef9268 before any scored run).
+Disk plus one Artifact page; no Gallica. pip installed opencv-python-headless, scikit-image, scikit-learn (PyPI, package tooling) for
+tools/glyph_atlas.py segment, absent in this container.
+
+**Step 1, frequency-matched null** (tx/ksplit/null_fm.py -> null_fm.json, 8 s): VIV-KCELLS2's measure() on ink 63 with c drawn from
+letters within a factor 2 of p's fr16 frequency (c, d, q, v) and 2 within a factor 2 of m's (c, d, v), 20 draws. Real c=p, 2=m: s -1.5289,
+**rank 1/21** (matched p99 -1.5344), hrunV 26 vs p99 26 (**tie**). The worker's caveat was right for s -- against frequency-matched letters
+p and m score best -- but the registered rule needs both statistics, so the verdict stays FAIL and VIV-KCELLS2's branch (c) stands. The
+band is narrow (3-4 letters; draws repeat), so the s rank says "c=p, 2=m is the best of a few rare-letter fills", not more. No key edit.
+
+**Step 2, tiles** (tx/ksplit/tiles.py; tiles/, tiles.tsv, truth.tsv, box_check.tsv). The 95 packet rows with a line crop (f102r, f102v,
+f103r; ink 40). Line crops segmented per leaf (glyph_atlas segment, --median-h pool, s1/s2 dedupe as gsplit leaf_units); the committed
+reading tx/<leaf>_rec.tsv mapped onto boxes by tools/box_token_align.build_map. First pass width-only (lam 0): 55-66 tiles 1:1, but on a
+contact sheet only about 18 of 66 showed the sign their own reader label names (map one or more signs off; the segmenter merges touching
+signs, boxes < tokens on every line). ':' tokens (two-dot marks, filed by the segmenter as marks) were then left out of the DP (declared
+deviation), and the map made label-aware (glyph_atlas classify, k 5, top 3, against tx/vivcls/train/labels_r2_both.tsv -- reader
+reference signs, no clerk letter -- on the f102r+f103r atlas of tx/vivcls/seg.py, f.201r left out as its crops are not on disk; lam LAM,
+--loo guard): 46 tiles 1:1. Box check by eye (reader labels only, no clerk letter seen): 10 dropped (6 boxes holding two signs, 2 on an m,
+a bar, a stroke). **Usable: label c 15, label 2 21** (truth, read after the page was built: c = 12 p, 2 q, 1 e; 2 = 21 m).
+
+**Branch (c)** (registered): under 30 usable tiles for label c, and only 3 contrast tiles -- no model read, 0 vision calls. Label 2 is not
+machine-testable on this material at all: on the cropped leaves the alignment never puts label 2 at a non-m letter (no contrast tile).
+
+**Step 3, the owner's sort**: tx/ksplit/sorter/sorter_viv_ksplit.html (tools/sign_sorter.py, blind: piles "tray A" (label c) and "tray B"
+(label 2), no clerk letter, no value, no model guess; 36 tiles, 31 line crops; key family vivonne-fr16104-1572 registered in
+tools/data/sorter_families.tsv). By eye on the preflight sheet, tray B shows at least two forms (the looped 2-shape and a flatter x-like
+form at f103r L13:2, L30:21), tray A a small c and a c with a lead-in stroke; this is the worker's impression, not a measurement.
+Scoring when the owner answers: ArtifactData export -> tools/sign_sorter_apply.py --labels tx/ksplit/sorter/labels.tsv --db DIR --out
+DIR/settled.tsv, then compare the owner's piles with tx/ksplit/truth.tsv (the parent; tray B is all m by the alignment, so a tray-B split
+there is either a real m variant or alignment error).
+
+Six questions: learned that the frequency bias explained the s loss but not the hrunV tie, and that the packet's 95 cropped rows yield 36
+usable tiles with 3 contrast tiles -- the split cannot be measured by machine on ink-40 crops alone; depended on the label-aware map, the
+box check by one eye, and the alignment's clerk letters as truth; unverified: whether label 2 hides a second shape at all (no non-m truth
+on cropped leaves); alternative: c and 2 are already near-pure on ink 40 (12/15 p, 21/21 m) and the merge lives on ink 63's readers, not
+the hand; most informative next: cut the ink-67/70 line crops into the repository (the 120 packet rows without crops, 44 of them contrast
+tiles) and re-run tiles.py on them, then the 2-way read priced per tile; decision: change.
+Requests: none to any archive host; PyPI for three packages. Subagent and vision calls 0.

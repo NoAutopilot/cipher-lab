@@ -1,0 +1,48 @@
+# VIV-KSPLIT box check: this worker, contact sheet of the 46 tiles with reader labels only (no clerk letter seen), 17 Oct 2026, before the page
+n	id	label	check	note
+1	f102r_L37_010	2	drop	not the labelled sign (H-like)
+2	f102v_L01_046	2	drop	box holds two signs
+3	f102v_L03_003	2	pass	whole sign
+4	f102v_L04_037	2	pass	whole sign
+5	f102v_L07_055	c	pass	whole sign
+6	f102v_L08_000	2	pass	whole sign
+7	f102v_L08_003	2	pass	whole sign
+8	f102v_L08_014	c	pass	whole sign
+9	f102v_L09_004	c	pass	whole sign
+10	f102v_L09_037	c	pass	whole sign
+11	f102v_L09_054	c	drop	dark bar, no sign
+12	f102v_L10_012	c	pass	whole sign
+13	f102v_L10_046	2	pass	whole sign
+14	f102v_L11_046	c	pass	whole sign
+15	f102v_L12_000	2	pass	whole sign
+16	f102v_L13_031	2	pass	whole sign
+17	f102v_L13_042	2	pass	whole sign
+18	f102v_L14_000	2	pass	whole sign
+19	f102v_L15_037	2	pass	whole sign
+20	f102v_L17_049	c	drop	box holds two signs
+21	f102v_L18_018	c	drop	m, not the labelled sign (map off)
+22	f102v_L20_045	2	pass	whole sign
+23	f102v_L22_043	c	drop	box holds two signs
+24	f102v_L24_034	2	pass	whole sign
+25	f102v_L25_000	2	pass	whole sign
+26	f102v_L27_009	2	pass	whole sign
+27	f102v_L28_005	c	pass	whole sign
+28	f102v_L28_047	c	pass	whole sign
+29	f102v_L29_016	2	pass	whole sign
+30	f102v_L29_042	c	pass	whole sign
+31	f102v_L30_000	c	pass	whole sign
+32	f102v_L32_011	c	pass	whole sign
+33	f102v_L34_021	2	pass	whole sign
+34	f103r_L01_022	2	pass	whole sign
+35	f103r_L01_043	c	pass	whole sign
+36	f103r_L10_019	c	pass	whole sign
+37	f103r_L12_006	2	drop	box holds two signs (sign below)
+38	f103r_L13_002	2	pass	whole sign
+39	f103r_L19_029	c	drop	m, not the labelled sign (map off)
+40	f103r_L20_042	c	pass	whole sign
+41	f103r_L24_000	c	drop	stroke, no sign
+42	f103r_L25_002	2	pass	whole sign
+43	f103r_L25_016	2	pass	whole sign
+44	f103r_L30_021	2	pass	whole sign
+45	f103r_L34_048	2	drop	box holds two signs
+46	f103r_L37_026	c	pass	whole sign

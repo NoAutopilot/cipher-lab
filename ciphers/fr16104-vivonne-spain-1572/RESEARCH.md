@@ -275,3 +275,13 @@ at 5%. Measured reader error is about 0.14. So the order of the programme is now
 frequency-matched null the worker asked for); (2) a reader that reads a known leaf below 0.05 -- the TRANSCRIPTION.md standard, which no
 pass on this hand has met -- measured by tx_bench before any ink-63 decode is scored again. Decode-side work on ink 63 stays stopped.
 The owner's sort moves from "optional fallback" to one of the two instruments for step (1).
+
+### 6d. After VIV-KSPLIT (17 Oct 2026, 04:5x UTC; worker VIV-KSPLIT)
+Section 5 update: (1) the frequency-matched null ran: against fill letters of p's and m's corpus frequency, c=p, 2=m rank 1/21 on fr16 s
+(-1.5289 vs p99 -1.5344) but still tie on hrunV (26 = 26), so VIV-KCELLS2's FAIL stands by its both-statistics rule; the s loss was the
+mean-score bias, the hrunV tie is not. (2) The split by machine could not run: the packet's 95 cropped rows (ink 40) gave 36 usable tiles
+(label c 15 = 12 p + 3 e/q; label 2 21, all m) after a label-aware box map and an eye box check -- branch (c), 0 vision calls. Label 2 has
+no contrast tile on any cropped leaf. The owner's blind sorter (https://claude.ai/artifact/6cP2xmEZertkDcPoc9uYRC, ASKS 173) is the only
+instrument for the split now. Ranked next: (a) commit the ink-67/70 line crops (VIV-67C/70C2 cut them only in scratchpads) and re-run
+tx/ksplit/tiles.py on the 120 uncropped packet rows (44 contrast tiles among them), then the 2-way read priced per tile; (b) the owner's
+sort scored against tx/ksplit/truth.tsv; (c) unchanged: a transcription pass below 0.05 per-sign error before any ink-63 clause test.
