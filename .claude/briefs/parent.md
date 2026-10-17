@@ -44,6 +44,13 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
    operational numbers and the solve count are reported apart, and no solving-effectiveness claim is made without a
    new N3+/D2+ result with our own key.
 
+0e. **Research director synthesis (owner's directive, 17 Oct 2026; CLAUDE.md pipeline 3 "Research director").** After every worker
+   report, before the next brief: write the six-question synthesis into the target's RESEARCH.md (flagship) or NOTES.md "## Synthesis
+   <date>" and decide continue / pivot / acquire / reprioritize; once a day, a cross-program synthesis in STATUS.md "## Research director"
+   (what each program learned, the flagship's state, the discovery pipeline's intake, the three programs' effort split and why). The
+   "at most two jobs in flight" rule of hub-seed/HANDOFF-ACCOUNT3-2026-10-13.md is lifted: run every genuinely independent, worthwhile
+   experiment the rate limits and account pauses allow, on every authorized account; never an empty agent. Before deprioritizing a
+   target, examine whether a materially different instrument or new evidence could change it, and record the examination.
 0c. **No cracks (owner, 5 Oct 2026).** Run `python3 tools/next_steps.py` then `python3 tools/no_cracks.py --board <export>
    --cards-json /tmp/nc-cards.json` (export the desk board's `cards` collection with ArtifactData list to a JSON file first);
    add the proposed cards (or add the folder to an existing card's `folders`, or fix the stale ASKS row it names); every

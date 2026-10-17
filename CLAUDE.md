@@ -359,11 +359,22 @@ takes none of its targets.
    Lanes fill their slots in this order: (1) key-assisted recovery (a key or codebook on disk or in reach), (2) archival
    acquisition of key material, clear copies and siblings (REQUEST.md, ASKS rows, the copy orders), (3) sibling and gloss
    alignment (`tools/interlinear_align.py`, HOT-COLD.tsv rows with a source on disk and no alignment run), and only then (4)
-   independent cryptanalysis. Cryptanalysis is not eliminated: it keeps a **bounded experimental allocation of 15% of each
-   week's worker spend** (about USD 650 at the October volume; `tools/learning_metrics.py` reports the share), spent only on a
-   problem with a written hypothesis, a matched control run first (`tools/family_run.py`) and a stop criterion in its PREREG
-   Decision block; a family that stops is not re-briefed on that target without new material (rule 3). The owner re-sets the
-   percentage; nobody else.
+   independent cryptanalysis, each with a written hypothesis, a matched control run first (`tools/family_run.py`) and a stop
+   criterion in its PREREG Decision block; a family that stops is not re-briefed on that target without new material (rule 3).
+   **Research director (owner's directive, 17 Oct 2026, supersedes the 16 Oct 15% ceiling and any "idle is fine" reading).** The
+   parent runs three programs at a starting 40/30/30 effort split, adjusted by expected scientific value, never as quotas: (A)
+   recovery and production (keys, siblings, glosses, archival recovery, beyond Eckert); (B) one flagship hard break with competing
+   hypotheses, a living `ciphers/<t>/RESEARCH.md` (question, hypotheses in play, ruled out with numbers, shared assumptions and
+   whether tested, the three most informative next experiments, recommendation) that survives workers and sessions; (C) discovery and
+   acquisition, continuous, so the pipeline is replenished before targets are exhausted. The loop is explore -> hypothesize ->
+   experiment -> verify -> synthesize -> challenge assumptions -> redirect; after every worker report the parent answers six
+   questions in the target's NOTES/RESEARCH (what was learned; assumptions the result depended on; which remain unverified;
+   alternative explanations; the most informative different experiment; continue / pivot / acquire / reprioritize). Repeated
+   negatives are read as negatives only after the input is trusted: transcription error against a known answer (`tools/tx_bench.py`,
+   BENCHMARK-TX.tsv), segmentation, variants, cipher-family classification, language, key period, instrument calibration -- the checks
+   chosen by evidence, not run mechanically. An exhausted worker budget is not an exhausted question; a parent may run every genuinely
+   independent, worthwhile experiment the rate limits and account pauses allow (no empty agents, no attempt limits as a substitute for
+   judgment); when the queue runs dry the parent finds the next opportunity rather than announcing idleness.
    Selection rule, pools first (25 Sept 2026, UPDATES.md): between two candidates of equal expected value, take the one that
    belongs to a sign pool -- one sender, office and key family with 2,000 or more signs across its letters -- over a single
    short letter; every reading on the board so far came from a period key or a pool of siblings, and the controls say our

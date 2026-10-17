@@ -742,3 +742,7 @@ CLIN-UNREAD	account-4	.claude/briefs/runs/2026-10-16-acct4-research-steps.md	Opu
 HEID-NA-SCREEN	account-4	.claude/briefs/runs/2026-10-16-acct4-research-steps.md	Opus 5.5	4	60	done 2026-10-16 13:43	2026-10-16 13:22	owner 16 Oct: research steps; acquisition of sibling ciphertext (route 2)
 CLIN-F49	account-4	.claude/briefs/runs/2026-10-16-acct4-research-steps-2.md	Opus 5.5	8	75	done 2026-10-16 14:43	2026-10-16 13:44	owner 16 Oct: key-assisted (route 1), the one unread lead from CLIN-UNREAD
 OUT-CHECK-CLAR	account-4	.claude/briefs/runs/2026-10-16-acct4-research-steps-2.md	Opus 5.5	3	40	done 2026-10-16 14:43	2026-10-16 13:44	owner 16 Oct: acquisition within authority, gate-7 check
+VIV-SYNTH	account-4	.claude/briefs/runs/2026-10-17-acct4-research-director-1.md	Opus 5.5	6	60	queued	2026-10-17 00:48	research director wave 1: flagship synthesis (program B)
+MERCY-CEIL	account-4	.claude/briefs/runs/2026-10-17-acct4-research-director-1.md	Opus 5.5	3	40	queued	2026-10-17 00:48	research director wave 1: production, D2 ceiling before readers (program A)
+SCOUT-KEYS	account-2	.claude/briefs/runs/2026-10-17-acct4-research-director-1.md	Opus 5.5	10	90	queued	2026-10-17 00:48	research director wave 1: discovery, key-beside-cipher (program C)
+CASES-TX	account-2	.claude/briefs/runs/2026-10-17-acct4-research-director-1.md	Opus 5.5	5	60	queued	2026-10-17 00:48	research director wave 1: owner's historical-cases test (directive 8.5)
