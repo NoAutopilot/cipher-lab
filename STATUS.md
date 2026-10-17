@@ -10283,3 +10283,16 @@ SCOUT-KEYS filed 10 key-beside-cipher rows, K1 Haga 1622 (NA inv. 6896, copy-fre
 (discussion pages, BNE siblings); Haga **check-solved first** (CHECK-HAGA spawned, Sonnet). Spend this check-in by program: A 4.52, B 2.29,
 C 0 (account 2's rows on its ledger). Wave 3 running: VIV-KCELLS (session_014B1AX5wXo95DAsNVoKpDr7, cap 4) and CHECK-HAGA
 (session_01FvFZ5qNR455hpGhNgwXXH2, cap 4).
+
+**03:3x UTC, check-in 76.** Wave 3 closed: VIV-KCELLS (USD 2.39, D-: known-answer control PASS 12/14 vs shuffle 2.95; the target step ran out
+of its box and the parent ran it in 24 s) and CHECK-HAGA (USD 5.63, 1.41x cap, Q: verdict open, intake gate exit 0, leaf not pinned).
+Evidence: (1) Vivonne -- the clerk's p sits under unkeyed reader label c (share 0.62, label purity 0.75) and m under unkeyed label 2
+(0.61, 0.69): the two letters that cap every clause are reader-label merges, not absent signs; b and h meet the share rule but their
+labels are dominated by e and l, so they stay M. No key edit (PREREG rule: between 1/2 and 2/3 is report-only). (2) Haga 1622 -- still
+unread in six sources read directly; inv. 6896 digitised and copy-free; the harvest's "new 1621 code" was a paraphrase, corrected.
+Decisions: Vivonne **continue** -- VIV-KCELLS2 spawned (cap 3): c=p and 2=m as trial cells on the real ink-63 reading against a
+value-shuffled control and the swapped pair, plus the ERR-SIM crossover on the extended key; the tile split (reader or the owner's eye)
+waits on that result. Haga **continue** -- HAGA-LEAF spawned (Sonnet, cap 4, 12 docket crops) to pin the leaf before any key application.
+SCOUT-KEYS and CASES-TX: done on account 2 / the owner account 01:4x UTC, their queue rows still "claimed" and unledgered at 03:2x (noted
+in ROOM, their dispatchers' close-out). Spend this check-in by program: A 0, B 2.39, C 5.63. Owner side this window: BnF Manuscrits quote
+ordered (VEL-2610-008289, EUR 21.7); SPRINT.md "Owner purchase sprint" holds every other money item.
