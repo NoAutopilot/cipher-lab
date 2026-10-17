@@ -48,3 +48,11 @@ wrong label drawn from the pass's pooled off-diagonal distribution. Levels 0.00 
 - (c) K3 <= p99(K1) on either: the labels are too impure to use as cells; the split comes first.
 - If K2 >= K3 on either statistic, (c) regardless.
 Packet (step 5) is written whatever the outcome.
+
+## Decision
+(Five-line form added after the run; Belief and Would-change restate the rules pushed in 8073e7c63 before any scored run, unchanged.)
+Belief: labels c and 2 carry the clerk's p and m (VIV-KCELLS shares 0.62/0.61), so as trial cells they should lift ink 63's reading above a value-shuffle of the same two labels.
+Would change it: K3 (c=p, 2=m) <= K1 value-shuffle p99 (20 draws) on hrunV or on the fr16 score s, or K2 swapped >= K3 -> branch (c), split first.
+Observed: ink 63 hrunV K0 24 / K1 p99 26 / K2 26 / K3 26 (tie, not >); s K0 -1.5349 / K1 p99 -1.5276 / K2 -1.5441 / K3 -1.5289 (rank 3 of 21; l,s and s,s score higher); hrun (grade-only, shuffle-invariant) 40 -> 53; inks 53/54 also fail (s rank 13/21 and 1/21, hrunV ties). Crossover on the extended key: hrun >= 94.6 in 4/5 seeds at e=0 (94-143), 0/5 at 0.05 (43-62) -> crossover < 0.05 vs measured 0.14.
+Decision: change -- branch (c): c and 2 are not usable as cells; split the labels at tx/kcells2/packet.tsv first, and the reader error (not only the cells) caps any ink-63 clause, since even a perfect p/m key reaches AD only at zero error.
+Lesson: a value-shuffle judged on mean n-gram log-prob favours frequent letters, so rare-letter trial cells (p, m) can lose to s/n/l draws without being wrong -- a frequency-matched shuffle (draw letters at p/m's corpus rate) is the fairer null for a rare-letter cell; and the all-H run is invariant under any value shuffle by construction (rule 3), so it cannot gate a cell test.

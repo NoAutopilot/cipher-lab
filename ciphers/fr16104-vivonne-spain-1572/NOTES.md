@@ -4438,3 +4438,35 @@ the exact tiles (p_positions.tsv, m_positions.tsv) for a split of labels c and 2
 Six questions: learned that p and m are reader-label merges, not absent signs; depended on the stream alignment whose control passed
 12/14; unverified: the per-pair P70 inconsistency (reader pass or hand); alternative: label c could be a homophone pair the clerk used
 for both p and e; most informative next: the ink-63 crossword test with a shuffled control; decision: continue.
+
+## VIV-KCELLS2 (17 Oct 2026)
+Worker VIV-KCELLS2 (account 4; brief 2026-10-17-acct4-research-director-5.md; PREREG-VIV-KCELLS2.md pushed 8073e7c63 before any scored
+run). Disk only, no key.tsv edit. Scripts: tx/kcells2/kcells2.py (result.json), tx/kcells2/crossover.py (crossover.json),
+tx/kcells2/packet.py (packet.tsv). Trial cells c=p, 2=m (grade S-trial, counted H) on the committed ink-63 route (viv63_decode.lines(),
+reproduces reading_piece63.tsv grades exactly) and on reading_piece53/54.tsv.
+
+| ink | stat | K0 before | K1 shuffle p99 (20) | K2 swap c=m,2=p | K3 real c=p,2=m | pass |
+|---|---|---|---|---|---|---|
+| 63 | hrunV (all-H and strict-vocab) | 24 | 26 | 26 | 26 | no (tie) |
+| 63 | fr16 s (b2 score) | -1.5349 | -1.5276 | -1.5441 | -1.5289 (rank 3/21) | no |
+| 63 | hrun (grade-only) | 40 | 53 | 53 | 53 | not gated (shuffle-invariant) |
+| 53 | hrunV / s | 26 / -1.6633 | 26 / -1.6507 | 26 / -1.6659 | 26 / -1.6645 (rank 13/21) | no |
+| 54 | hrunV / s | 20 / -1.6573 | 20 / -1.6490 | 20 / -1.6563 | 20 / -1.6479 (rank 1/21) | no (hrunV tie) |
+
+b2 (letter-order shuffle, 200) still passes on ink 63 after the cells (s -1.5289 vs order p99 -1.8560), as before (-1.5349 vs -1.8321).
+The hrun (grade-only) is identical for every letter assignment, so a value-shuffle cannot test it (rule 3, orthogonal control; declared
+in the PREREG); hrunV, the longest all-H stretch that also parses into strict fr16 vocabulary, is the letter-sensitive substitute.
+Crossover (ERR-SIM run() on key.tsv + c->p, 2->m at grade C; c, 2 and the confusion-less code e given each pass's mean keyed-sign error
+and pooled wrong-label distribution -- e was a post-registration fix, the sweep crashed on its empty row): hrun >= 94.6 in 4/5 seeds at
+e = 0 (94, 99, 108, 116, 143), 0/5 at 0.05 (43-62), 0.10 (25-33), 0.14 (20-26), 0.19, 0.23. **Crossover < 0.05** against the measured
+0.14: even a perfect p/m key reaches the AD only at zero reader error.
+Decision (registered): **(c)** -- c and 2 are not usable as cells as they stand; the split comes first. Liberties counted: the trial
+cells are themselves the liberty (two values, S-trial); no clause is written.
+Packet: tx/kcells2/packet.tsv, 214 tiles (94 c-at-p, 73 2-at-m, contrast 26 c at e/q/u and 22 2 at u/e -- every contrast tile the
+alignment has, fewer than the targets); 120 rows have no line crop under images/ (inks 67/70 leaves), no crops cut.
+Six questions: learned that c=p, 2=m do not beat a value-shuffle on ink 63 and that reader error, not only the two cells, caps any clause
+(crossover < 0.05); depended on the s statistic, the strict vocabulary and the declared confusion fill; unverified: whether the s loss is
+the labels' impurity or the score's frequency bias (s, n, l draws score highest -- a mean log-prob rewards frequent letters, and p, m are
+rare); alternative: c and 2 are p and m but the mean-score null is unfair to rare letters -- a frequency-matched shuffle would settle it
+(seconds, disk); most informative next: that frequency-matched null, then the tile split on packet.tsv (a tile reader priced per tile, or
+the owner's sort of about 214 tiles), then a transcription pass aimed at < 0.05 error; decision: change.

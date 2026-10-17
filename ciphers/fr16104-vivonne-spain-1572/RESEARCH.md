@@ -258,3 +258,11 @@ Known-answer control PASS (12/14). p sits under unkeyed label c (share 0.62, pur
 labels (T1), not absent signs. Next: VIV-KCELLS2, the crossword test on ink 63 (c=p, 2=m as trial cells vs a value-shuffled control) and
 the ERR-SIM crossover on the extended key; then split labels c and 2 at the exact tiles (tile reader, or the owner's targeted sort of
 about 100 tiles). KEYCELL-READ on whole leaves stays held.
+
+### 6c. After VIV-KCELLS2 (17 Oct 2026, 03:3x UTC; worker VIV-KCELLS2)
+Section 5 update: the crossword test ran. c=p, 2=m as trial cells do not beat a 20-draw value-shuffle on ink 63 (hrunV 26 = p99 26; fr16
+s -1.5289 vs p99 -1.5276, rank 3/21), nor on inks 53/54: branch (c), split first. The grade-only all-H run moves 40 -> 53 for any
+letters. ERR-SIM on the extended key: crossover < 0.05 (4/5 seeds >= 94.6 at zero error, 0/5 at 0.05) vs measured 0.14, so assumption
+4.4 (reader error) caps ink 63 even with p and m keyed. Ranked next: (1) a frequency-matched value-shuffle (the mean-score null favours
+s/n/l over rare p/m; disk, seconds); (2) split labels c and 2 on tx/kcells2/packet.tsv (214 tiles; tile reader or the owner's sort);
+(3) a transcription pass targeting < 0.05 per-sign error before any further ink-63 clause test. KEYCELL-READ stays held.

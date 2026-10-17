@@ -1,0 +1,2082 @@
+{
+ "63": {
+  "K0_before": {
+   "trial": {},
+   "hrun": 40,
+   "hrunV": 24,
+   "hrunV_where": [
+    "f193r",
+    1045,
+    1069,
+    "aeliltraictaaesannairesa",
+    [
+     "ael",
+     "il",
+     "tra",
+     "ict",
+     "a",
+     "a",
+     "es",
+     "ann",
+     "a",
+     "ire",
+     "sa"
+    ]
+   ],
+   "v_strict": 50,
+   "s": -1.5349,
+   "H": 12290,
+   "tokens": 15762,
+   "b2_order_p99": -1.8321
+  },
+  "K1_shuffle": [
+   {
+    "trial": {
+     "c": "b",
+     "2": "q"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estudebuiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "bui",
+      "o",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 50,
+    "s": -1.5669,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "s",
+     "2": "s"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estudesuiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "sui",
+      "o",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 50,
+    "s": -1.5276,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "d",
+     "2": "r"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f190v",
+     297,
+     323,
+     "onouaeleodeduiqeaelqaeoiou",
+     [
+      "on",
+      "o",
+      "uae",
+      "le",
+      "o",
+      "de",
+      "du",
+      "iqe",
+      "a",
+      "elq",
+      "aeo",
+      "iou"
+     ]
+    ],
+    "v_strict": 50,
+    "s": -1.5343,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "q",
+     "2": "g"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f190v",
+     297,
+     323,
+     "onouaeleodequiqeaelqaeoiou",
+     [
+      "on",
+      "o",
+      "uae",
+      "le",
+      "o",
+      "de",
+      "qu",
+      "iqe",
+      "a",
+      "elq",
+      "aeo",
+      "iou"
+     ]
+    ],
+    "v_strict": 50,
+    "s": -1.5749,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "r",
+     "2": "y"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estuderuiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "rui",
+      "o",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 50,
+    "s": -1.5437,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "f",
+     "2": "d"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estudefuiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "fui",
+      "o",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 50,
+    "s": -1.5474,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "r",
+     "2": "g"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estuderuiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "rui",
+      "o",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 50,
+    "s": -1.539,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "n",
+     "2": "s"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estudenuiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "nui",
+      "o",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 50,
+    "s": -1.531,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "l",
+     "2": "s"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estudeluiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "lui",
+      "o",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 50,
+    "s": -1.521,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "u",
+     "2": "a"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estudeuuiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "uui",
+      "o",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 55,
+    "s": -1.5404,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "i",
+     "2": "b"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estudeiuiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "iui",
+      "o",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 55,
+    "s": -1.5323,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "a",
+     "2": "a"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f190v",
+     297,
+     323,
+     "onouaeleodeauiqeaelqaeoiou",
+     [
+      "on",
+      "o",
+      "uae",
+      "le",
+      "o",
+      "de",
+      "au",
+      "iqe",
+      "a",
+      "elq",
+      "aeo",
+      "iou"
+     ]
+    ],
+    "v_strict": 50,
+    "s": -1.5421,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "z",
+     "2": "z"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estudezuiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "zui",
+      "o",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 50,
+    "s": -1.5775,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "e",
+     "2": "d"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estudeeuiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "eui",
+      "o",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 55,
+    "s": -1.5335,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "i",
+     "2": "b"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estudeiuiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "iui",
+      "o",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 55,
+    "s": -1.5323,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "x",
+     "2": "k"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estudexuiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "xui",
+      "o",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 50,
+    "s": -1.5927,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "d",
+     "2": "u"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f190v",
+     297,
+     323,
+     "onouaeleodeduiqeaelqaeoiou",
+     [
+      "on",
+      "o",
+      "uae",
+      "le",
+      "o",
+      "de",
+      "du",
+      "iqe",
+      "a",
+      "elq",
+      "aeo",
+      "iou"
+     ]
+    ],
+    "v_strict": 50,
+    "s": -1.5341,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "y",
+     "2": "c"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estudeyuiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "y",
+      "uio",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 55,
+    "s": -1.5548,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "u",
+     "2": "n"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estudeuuiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "uui",
+      "o",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 55,
+    "s": -1.5314,
+    "H": 12446,
+    "tokens": 15762
+   },
+   {
+    "trial": {
+     "c": "k",
+     "2": "g"
+    },
+    "hrun": 53,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f191v",
+     540,
+     566,
+     "estudekuiodeulqioursilesta",
+     [
+      "est",
+      "ude",
+      "kui",
+      "o",
+      "de",
+      "ulq",
+      "iou",
+      "rsi",
+      "le",
+      "sta"
+     ]
+    ],
+    "v_strict": 50,
+    "s": -1.5813,
+    "H": 12446,
+    "tokens": 15762
+   }
+  ],
+  "K1_p99_hrunV": 26,
+  "K1_p99_s": -1.5276,
+  "K1_p99_v_strict": 55,
+  "K1_p99_hrun": 53,
+  "K2_swap": {
+   "trial": {
+    "c": "m",
+    "2": "p"
+   },
+   "hrun": 53,
+   "hrunV": 26,
+   "hrunV_where": [
+    "f191v",
+    540,
+    566,
+    "estudemuiodeulqioursilesta",
+    [
+     "est",
+     "ude",
+     "mui",
+     "o",
+     "de",
+     "ulq",
+     "iou",
+     "rsi",
+     "le",
+     "sta"
+    ]
+   ],
+   "v_strict": 50,
+   "s": -1.5441,
+   "H": 12446,
+   "tokens": 15762
+  },
+  "K3_real": {
+   "trial": {
+    "c": "p",
+    "2": "m"
+   },
+   "hrun": 53,
+   "hrunV": 26,
+   "hrunV_where": [
+    "f191v",
+    540,
+    566,
+    "estudepuiodeulqioursilesta",
+    [
+     "est",
+     "ude",
+     "pui",
+     "o",
+     "de",
+     "ulq",
+     "iou",
+     "rsi",
+     "le",
+     "sta"
+    ]
+   ],
+   "v_strict": 50,
+   "s": -1.5289,
+   "H": 12446,
+   "tokens": 15762,
+   "b2_order_p99": -1.856
+  },
+  "pass": false
+ },
+ "53": {
+  "K0_before": {
+   "trial": {},
+   "hrun": 42,
+   "hrunV": 26,
+   "hrunV_where": [
+    "f171r",
+    579,
+    605,
+    "nuarontentendreceuelqaeoeo",
+    [
+     "nua",
+     "ron",
+     "ten",
+     "ten",
+     "dre",
+     "ceu",
+     "elq",
+     "a",
+     "eoe",
+     "o"
+    ]
+   ],
+   "v_strict": 42,
+   "s": -1.6633,
+   "H": 3543,
+   "tokens": 4521,
+   "b2_order_p99": -1.8444
+  },
+  "K1_shuffle": [
+   {
+    "trial": {
+     "c": "b",
+     "2": "q"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 42,
+    "s": -1.6777,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "s",
+     "2": "s"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 54,
+    "s": -1.6553,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "d",
+     "2": "r"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 59,
+    "s": -1.6554,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "q",
+     "2": "g"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 42,
+    "s": -1.6822,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "r",
+     "2": "y"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 54,
+    "s": -1.665,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "f",
+     "2": "d"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 42,
+    "s": -1.6631,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "r",
+     "2": "g"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 42,
+    "s": -1.6639,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "n",
+     "2": "s"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 54,
+    "s": -1.6535,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "l",
+     "2": "s"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 54,
+    "s": -1.6522,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "u",
+     "2": "a"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 63,
+    "s": -1.6629,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "i",
+     "2": "b"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 42,
+    "s": -1.6619,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "a",
+     "2": "a"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 63,
+    "s": -1.6677,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "z",
+     "2": "z"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 42,
+    "s": -1.6825,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "e",
+     "2": "d"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 42,
+    "s": -1.658,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "i",
+     "2": "b"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 42,
+    "s": -1.6619,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "x",
+     "2": "k"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 42,
+    "s": -1.6833,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "d",
+     "2": "u"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 64,
+    "s": -1.6507,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "y",
+     "2": "c"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 43,
+    "s": -1.6687,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "u",
+     "2": "n"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 54,
+    "s": -1.6507,
+    "H": 3586,
+    "tokens": 4521
+   },
+   {
+    "trial": {
+     "c": "k",
+     "2": "g"
+    },
+    "hrun": 42,
+    "hrunV": 26,
+    "hrunV_where": [
+     "f171r",
+     579,
+     605,
+     "nuarontentendreceuelqaeoeo",
+     [
+      "nua",
+      "ron",
+      "ten",
+      "ten",
+      "dre",
+      "ceu",
+      "elq",
+      "a",
+      "eoe",
+      "o"
+     ]
+    ],
+    "v_strict": 42,
+    "s": -1.678,
+    "H": 3586,
+    "tokens": 4521
+   }
+  ],
+  "K1_p99_hrunV": 26,
+  "K1_p99_s": -1.6507,
+  "K1_p99_v_strict": 63,
+  "K1_p99_hrun": 42,
+  "K2_swap": {
+   "trial": {
+    "c": "m",
+    "2": "p"
+   },
+   "hrun": 42,
+   "hrunV": 26,
+   "hrunV_where": [
+    "f171r",
+    579,
+    605,
+    "nuarontentendreceuelqaeoeo",
+    [
+     "nua",
+     "ron",
+     "ten",
+     "ten",
+     "dre",
+     "ceu",
+     "elq",
+     "a",
+     "eoe",
+     "o"
+    ]
+   ],
+   "v_strict": 42,
+   "s": -1.6659,
+   "H": 3586,
+   "tokens": 4521
+  },
+  "K3_real": {
+   "trial": {
+    "c": "p",
+    "2": "m"
+   },
+   "hrun": 42,
+   "hrunV": 26,
+   "hrunV_where": [
+    "f171r",
+    579,
+    605,
+    "nuarontentendreceuelqaeoeo",
+    [
+     "nua",
+     "ron",
+     "ten",
+     "ten",
+     "dre",
+     "ceu",
+     "elq",
+     "a",
+     "eoe",
+     "o"
+    ]
+   ],
+   "v_strict": 42,
+   "s": -1.6645,
+   "H": 3586,
+   "tokens": 4521,
+   "b2_order_p99": -1.8559
+  },
+  "pass": false
+ },
+ "54": {
+  "K0_before": {
+   "trial": {},
+   "hrun": 24,
+   "hrunV": 20,
+   "hrunV_where": [
+    "f173r",
+    402,
+    422,
+    "olicciteiccaaueccqea",
+    [
+     "oli",
+     "cci",
+     "te",
+     "icc",
+     "a",
+     "a",
+     "uec",
+     "cqe",
+     "a"
+    ]
+   ],
+   "v_strict": 35,
+   "s": -1.6573,
+   "H": 1476,
+   "tokens": 1990,
+   "b2_order_p99": -1.8353
+  },
+  "K1_shuffle": [
+   {
+    "trial": {
+     "c": "b",
+     "2": "q"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6573,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "s",
+     "2": "s"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6489,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "d",
+     "2": "r"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6528,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "q",
+     "2": "g"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.662,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "r",
+     "2": "y"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6516,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "f",
+     "2": "d"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6545,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "r",
+     "2": "g"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6506,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "n",
+     "2": "s"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.649,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "l",
+     "2": "s"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6501,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "u",
+     "2": "a"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.655,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "i",
+     "2": "b"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6558,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "a",
+     "2": "a"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6588,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "z",
+     "2": "z"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6608,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "e",
+     "2": "d"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6511,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "i",
+     "2": "b"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6558,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "x",
+     "2": "k"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6665,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "d",
+     "2": "u"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6502,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "y",
+     "2": "c"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6576,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "u",
+     "2": "n"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6512,
+    "H": 1487,
+    "tokens": 1990
+   },
+   {
+    "trial": {
+     "c": "k",
+     "2": "g"
+    },
+    "hrun": 26,
+    "hrunV": 20,
+    "hrunV_where": [
+     "f173r",
+     402,
+     422,
+     "olicciteiccaaueccqea",
+     [
+      "oli",
+      "cci",
+      "te",
+      "icc",
+      "a",
+      "a",
+      "uec",
+      "cqe",
+      "a"
+     ]
+    ],
+    "v_strict": 35,
+    "s": -1.6661,
+    "H": 1487,
+    "tokens": 1990
+   }
+  ],
+  "K1_p99_hrunV": 20,
+  "K1_p99_s": -1.649,
+  "K1_p99_v_strict": 35,
+  "K1_p99_hrun": 26,
+  "K2_swap": {
+   "trial": {
+    "c": "m",
+    "2": "p"
+   },
+   "hrun": 26,
+   "hrunV": 20,
+   "hrunV_where": [
+    "f173r",
+    402,
+    422,
+    "olicciteiccaaueccqea",
+    [
+     "oli",
+     "cci",
+     "te",
+     "icc",
+     "a",
+     "a",
+     "uec",
+     "cqe",
+     "a"
+    ]
+   ],
+   "v_strict": 35,
+   "s": -1.6563,
+   "H": 1487,
+   "tokens": 1990
+  },
+  "K3_real": {
+   "trial": {
+    "c": "p",
+    "2": "m"
+   },
+   "hrun": 26,
+   "hrunV": 20,
+   "hrunV_where": [
+    "f173r",
+    402,
+    422,
+    "olicciteiccaaueccqea",
+    [
+     "oli",
+     "cci",
+     "te",
+     "icc",
+     "a",
+     "a",
+     "uec",
+     "cqe",
+     "a"
+    ]
+   ],
+   "v_strict": 35,
+   "s": -1.6479,
+   "H": 1487,
+   "tokens": 1990,
+   "b2_order_p99": -1.8208
+  },
+  "pass": false
+ }
+}
