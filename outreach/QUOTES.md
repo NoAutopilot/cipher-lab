@@ -133,3 +133,26 @@ Every archive reply in the mailbox is already recorded here or in CONTRIBUTIONS.
 - **Delivered and read already:** Clements Clinton vol. 64:14-15 PDF (5 Oct, Hightail), the four WCCLS ILL files (6, 9, 15, 16 Oct).
   The 6 Oct ILL files (Serrao 1969 on Seure; "Mantova e i Gonzaga di Nevers") are cited in their targets' NOTES; LOCAL-QUEUE L33/L53
   still read "queued" and are closed below.
+
+## BnF quote prices (17 Oct 2026 03:0x UTC, read by the account-4 parent from the owner's screenshots of his BnF account; prices and shelfmarks only, nothing personal recorded)
+
+| quote | line | pages / product | EUR excl. VAT (VAT 0%) | target | status | worth it now? |
+|---|---|---|---|---|---|---|
+| DEV-2610-010031 Arsenal | Ms-6829 div. 57, ff.296-231v, 5 Jan 1708 undeciphered letter | 12 pp PDF | 8.4 | arsenal-ms6829-1708 | blocked | ciphertext only, no key: lower |
+| DEV-2610-010031 Arsenal | Ms-6334 div. 9 fol.17 (22 Aug 1642, BnF: not ciphered), div. 10 ff.18-19v (7 Jan 1650), div. 23 (key refresh Feb 1650 and the rest) | 8 pp PDF | 5.6 | arsenal6334-longueville-1650-59 | blocked | yes: a period key leaf beside its letters |
+| DEV-2610-010031 Arsenal | Ms-4764 div. 80, ff.241-242v, Lanmary to d'Allion, 9/20 Aug 1745 | 4 pp PDF | 2.8 | arsenal-dallion-lanmary-1744 | blocked | only with Ms-11639 (below); harmless at 2.8 |
+| DEV-2610-010031 total | | 24 pp | 16.8 | | | order |
+| DEV-2610-010032 Manuscrits | Clairambault 574 pp.3-5, "Chiffre employé par Brasset" | 3 pp PDF | 2.1 | clair571-estrades-1645 | open | yes: candidate key |
+| DEV-2610-010032 Manuscrits | Clairambault 575 pp.1209-1220, the whole ciphered document | 12 pp PDF | 8.4 | clair571-estrades-1645 | open | yes: the letter the keys are for |
+| DEV-2610-010032 Manuscrits | Clairambault 579 ff.341-343 and 345, "Double du chiffre de Mazarin avec M. d'Estrades" | 4 pp PDF | 2.8 | clair571-estrades-1645 | open | yes: the period key |
+| DEV-2610-010032 Manuscrits | Clairambault 528 pp.91-100, the Bouillon 1713 cipher letter | 12 pp PDF | 8.4 | clairambault528-bouillon-1713 | blocked | ciphertext only: lower, but inside the same quote |
+| DEV-2610-010032 total | | 31 pp | 21.7 | | | order |
+| third quote (HD images) | Français 3251, loose leaf between ff.178-179 (BnF corrected the position), recto and verso | 2 HD images from the original | 50.0 | nevers-birago-fr3251-1572 | partial | defer; ask for the PDF page product instead (about 1.4) and judge legibility |
+| third quote (HD images) | Français 3632 f.15 r-v | 2 HD images | 50.0 | fr3625-lauriere-1593 | found-solved | NOT needed: the target was found solved after the request; ask the BnF to drop the line |
+| fourth quote | Arsenal Ms-11639 ff.283-340v, the Allion-Lanmary cipher pieces 1744-46 | 98 pp PDF | 68.6 | arsenal-dallion-lanmary-1744 | blocked | defer: the pool is the right shape (one key, about 100 pages) but it is a cryptanalysis target, not a key source |
+
+Recommendation (17 Oct): order the Arsenal (16.8) and Manuscrits (21.7) quotes now, EUR 38.5 together; both carry key leaves beside their
+letters (Ms-6334 Feb 1650; Clairambault 574 and 579 against the 575 letter), the one route that has produced every counted reading.
+Defer Ms-11639 and the two HD images; write once to reproduction@bnf.fr to drop Français 3632 (found-solved) and requote Français 3251
+as the page PDF product. The account's billing country field is wrong (the BnF asks that the delivery contact be corrected by writing
+to reproduction@bnf.fr before ordering).
