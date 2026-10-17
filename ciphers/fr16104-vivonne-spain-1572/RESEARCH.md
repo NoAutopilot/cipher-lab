@@ -288,3 +288,11 @@ no contrast tile on any cropped leaf. The owner's blind sorter (https://claude.a
 instrument for the split now. Ranked next: (a) commit the ink-67/70 line crops (VIV-67C/70C2 cut them only in scratchpads) and re-run
 tx/ksplit/tiles.py on the 120 uncropped packet rows (44 contrast tiles among them), then the 2-way read priced per tile; (b) the owner's
 sort scored against tx/ksplit/truth.tsv; (c) unchanged: a transcription pass below 0.05 per-sign error before any ink-63 clause test.
+
+### 6d. After VIV-KSPLIT and VIV-TILES6770 (17 Oct 2026, 06:4x UTC; account-4 parent)
+The registered model read (a 2-way read that needs contrast tiles of the same label at other letters) cannot be fed from this packet:
+label c is mostly p, so e/q tiles under it are rare (13 at most), and label 2 has one u tile. That is a design limit, not a mapping one.
+Two instruments remain for the split: (1) the owner's blind sort of the 36 ink-40 tiles (published, ASKS 173), scored against truth.tsv
+when it lands; (2) a machine sort-into-shapes of the same tiles (unsupervised, no contrast needed), compared to truth the same way --
+the next machine design, not briefed until (1) has landed so the two can be compared on identical tiles. Nothing else is spawned on
+this target until then; decode-side work stays stopped (6c).

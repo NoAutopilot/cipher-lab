@@ -10315,3 +10315,12 @@ is published (36 tiles, ASKS 173). (2) Haga -- orders 321-327 are a Venice corre
 the leaf. Decisions: Vivonne **continue** -- VIV-TILES6770 spawned (cap 6: regenerate the ink 67/70 line crops into scratch, cut the 120
 packet rows' tiles incl. 44 contrast, no read yet). Haga **pivot** -- blind reads stop, status open, a listing instrument named; program C
 moves to K2: CHECK-AITZEMA spawned (Sonnet, cap 5, check-solved only). Spend this check-in by program: A 0, B 4.22, C 2.23.
+
+**06:4x UTC, check-in 79.** Wave 6 closed: VIV-TILES6770 (USD 2.23, Q) and CHECK-AITZEMA (USD 2.89, Q). Evidence: (1) Vivonne -- the ink
+67/70 crops add 20 usable tiles; pooled, label c has 25 usable with 5 contrast and label 2 30 with 1 contrast, under the registered 30/15:
+the 2-way model read cannot be fed from this packet by design (label c is mostly p, so contrast tiles are rare). (2) Aitzema 1617-18 --
+open, intake exit 0, one confirmed known-plaintext pair (17 Feb 1618 Lubeck), the 1617 code's location unknown (inv. 12578.1 is an
+Ottoman key, a harvest error corrected). Decisions: Vivonne **hold** -- the owner's blind sort (36 tiles, ASKS 173, not yet answered)
+is the instrument; the machine sort-into-shapes design waits to be compared on the same tiles; nothing spawned. Aitzema **continue** --
+AITZEMA-SHEET spawned (Sonnet, cap 4, stride contact sheets of the 589 scans for cipher blocks). Spend this check-in by program: A 0,
+B 2.23, C 2.89.
