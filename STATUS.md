@@ -10324,3 +10324,10 @@ Ottoman key, a harvest error corrected). Decisions: Vivonne **hold** -- the owne
 is the instrument; the machine sort-into-shapes design waits to be compared on the same tiles; nothing spawned. Aitzema **continue** --
 AITZEMA-SHEET spawned (Sonnet, cap 4, stride contact sheets of the 589 scans for cipher blocks). Spend this check-in by program: A 0,
 B 2.23, C 2.89.
+
+**07:4x UTC, check-in 80.** Wave 7 closed: AITZEMA-SHEET (USD 2.36, N): 0 of 59 scans sampled at stride 10 show a cipher block, 2 unsure;
+the pair not identified; the caveat (a 1617-18 minority missed by a stride at thumbnail size) is the worker's own. Owner's sort: not yet
+answered (collections empty at 07:43); Vivonne stays held. Account 4 entered its seven-day warning at 06:4x (reset 20:00 UTC 19 Oct):
+not a stop (BUDGETS rule), caps unchanged. Decision: Aitzema **one targeted pass, then stop if empty** -- AITZEMA-RUN1618 spawned
+(Sonnet, cap 4): orders 1-60 at 800 px, stride 1, plus the two unsure scans at native; a found pair goes to the known-plaintext alignment,
+nothing found moves program C to K3 (Berck). Spend this check-in by program: A 0, B 0, C 2.36.
