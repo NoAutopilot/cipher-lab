@@ -4510,3 +4510,32 @@ on cropped leaves); alternative: c and 2 are already near-pure on ink 40 (12/15 
 the hand; most informative next: cut the ink-67/70 line crops into the repository (the 120 packet rows without crops, 44 of them contrast
 tiles) and re-run tiles.py on them, then the 2-way read priced per tile; decision: change.
 Requests: none to any archive host; PyPI for three packages. Subagent and vision calls 0.
+
+## VIV-TILES6770 (17 Oct 2026)
+Worker VIV-TILES6770 (account 4; brief 2026-10-17-acct4-research-director-7.md). No model read, no sorter change.
+**Crops.** The four leaves' line crops regenerated into the session scratchpad (not committed; images/ stays as it was) with the exact
+images/manifest.json commands: viv67/vivcls (f.201r, c206, region 680,1500,2970,3700 of the 4100,350,3650,5350 fetch: 25 x 2 crops),
+viv67b (f.201v, c207: 32 x 3), viv70 (f.211r, c216: 12 bands, L10 dropped and L11/L12 renumbered as recorded: 11 x 3), viv70c (f.211v,
+c217: 33 x 3). Every count matches the recorded one. openapi.bnf.fr: 4 image requests (one native region per canvas, HTTP 200). The
+debug overlays were not looked at (the job's two vision calls went to the contact sheets); band counts equal to the recorded runs on
+the same native regions stood in for that check.
+**Tiles.** tx/ksplit/tiles.py gains leaf arguments and VIVKSPLIT_CROPS (crops from <dir>/<leaf>/cut/manifest.json; default behaviour
+unchanged). Box labels for the label-aware map: the same as VIV-KSPLIT, kNN (k 5, top 3) against tx/vivcls/train/labels_r2_both.tsv on the
+f.102r + f.103r atlas (tx/vivcls/seg.py with f.201r left out, regenerated, untracked); no reader reference signs of ff.201/211 were used,
+the readings mapped are tx/f201r_rec.tsv, f201v_rec.tsv, f211r_rec.tsv, f211v_rec.tsv. 120 packet rows -> 56 mapped 1:1 (c 27 of 66, 2 29
+of 54) -> tx/ksplit/tiles_6770.tsv, tiles/<id>.png, 56 rows appended to truth.tsv.
+**Box check** (box_check_6770.tsv; one contact sheet per reader label, a row of VIV-KSPLIT pass tiles as reference, no clerk letter
+on the sheet): 20 of 56 pass. Most drops are neighbours (m, x, oo, 6o, arcs), i.e. the 1:1 map is off by a position on these leaves.
+
+| label | kind | f201r | f201v | f211r | f211v | new usable | with VIV-KSPLIT |
+|---|---|---|---|---|---|---|---|
+| c | target | 2 | 4 | 2 | 0 | 8 | 20 |
+| c | contrast (e) | 1 | 1 | - | 0 | 2 | 5 |
+| 2 | target | 0 | 2 | - | 7 | 9 | 30 |
+| 2 | contrast (u/e) | 0 | 1 | - | 0 | 1 | 1 |
+
+Ceiling even at 100% mapping: the packet holds only 10 label-c contrast rows on these leaves (13 usable at most with VIV-KSPLIT's 3),
+under the brief's 15. **Read: no-go** -- label c 25 usable (target 30) with 5 contrast (target 15); label 2 has 30 usable but 1 contrast.
+Next step: the target is out of reach from this packet; either a packet with more e/q (c) and u (2) contrast rows drawn from the inks
+that have crops, or a box map anchored on the ff.201/211 reader signs (the f.102r/f.103r-only kNN labels place many boxes one sign off),
+~USD 3. Requests: openapi.bnf.fr 4. Vision calls 2 (the two contact sheets). PyPI for three packages (glyph_atlas dependencies).

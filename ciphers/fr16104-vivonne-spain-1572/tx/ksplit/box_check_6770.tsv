@@ -1,0 +1,58 @@
+# VIV-TILES6770 box check: this worker, one contact sheet per reader label (reader labels only, a reference row of VIV-KSPLIT pass tiles; no clerk letter seen), 17 Oct 2026
+n	id	label	check	note
+1	f201r_L14_033	c	drop	box holds the sign plus a neighbour and dots
+2	f201r_L16_022	c	pass	whole sign
+3	f201r_L17_015	c	drop	arc fragment
+4	f201r_L17_041	c	drop	oo pair
+5	f201r_L18_017	c	drop	long s, not the labelled sign
+6	f201r_L18_024	c	drop	not the labelled sign
+7	f201r_L19_017	c	pass	c with joined stroke, as reference R8
+8	f201r_L19_031	c	pass	whole sign
+9	f201r_L24_037	c	drop	L-like, not the labelled sign
+10	f201r_L25_005	c	drop	z-like fragment, unclear
+11	f201v_L02_028	c	pass	whole sign
+12	f201v_L04_008	c	drop	6o pair
+13	f201v_L06_027	c	drop	6o pair
+14	f201v_L09_036	c	drop	arc fragment
+15	f201v_L10_031	c	drop	stroke plus partial sign
+16	f201v_L13_035	c	drop	stroke fragment
+17	f201v_L16_005	c	pass	whole sign
+18	f201v_L16_041	c	pass	whole sign
+19	f201v_L17_031	c	drop	two partial signs
+20	f201v_L22_037	c	drop	q/f-like, not the labelled sign
+21	f201v_L27_009	c	pass	whole sign
+22	f201v_L28_013	c	drop	dot
+23	f201v_L29_007	c	pass	whole sign
+24	f201v_L32_013	c	drop	4-like, not the labelled sign
+25	f211r_L06_014	c	pass	whole sign
+26	f211r_L10_051	c	pass	whole sign
+27	f211v_L22_020	c	drop	L-like, not the labelled sign
+1	f201r_L04_018	2	drop	r-like stroke, not the labelled sign
+2	f201r_L04_047	2	drop	m
+3	f201r_L15_008	2	drop	small z without loop, unclear
+4	f201v_L02_051	2	pass	whole sign
+5	f201v_L04_028	2	drop	r-like stroke plus arc
+6	f201v_L07_013	2	drop	fragment
+7	f201v_L08_008	2	drop	r-like stroke
+8	f201v_L16_025	2	drop	m
+9	f201v_L18_047	2	drop	a-like
+10	f201v_L20_006	2	drop	m
+11	f201v_L22_045	2	pass	whole sign
+12	f201v_L24_036	2	pass	whole sign
+13	f201v_L27_005	2	drop	arc fragment
+14	f201v_L31_005	2	drop	stroke fragment
+15	f211v_L02_042	2	drop	oo pair
+16	f211v_L03_040	2	drop	x-like, not the labelled sign
+17	f211v_L04_016	2	drop	x-like plus stroke
+18	f211v_L04_042	2	pass	whole sign
+19	f211v_L05_029	2	pass	whole sign
+20	f211v_L07_045	2	drop	x-like
+21	f211v_L09_034	2	pass	whole sign
+22	f211v_L17_009	2	pass	whole sign
+23	f211v_L20_029	2	pass	whole sign
+24	f211v_L21_003	2	drop	fragment
+25	f211v_L21_008	2	drop	box holds two signs
+26	f211v_L21_030	2	drop	x-like
+27	f211v_L28_031	2	pass	whole sign
+28	f211v_L30_034	2	drop	m
+29	f211v_L33_010	2	pass	whole sign

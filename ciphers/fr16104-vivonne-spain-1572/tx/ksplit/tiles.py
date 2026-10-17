@@ -2,6 +2,11 @@
 """VIV-KSPLIT step 2 (PREREG-VIV-KSPLIT.md): sign tiles for tx/kcells2/packet.tsv rows that have a line crop.
 
     VIVKSPLIT_SCRATCH=<dir> python3 tx/ksplit/tiles.py
+    VIVKSPLIT_SCRATCH=<dir> VIVKSPLIT_CROPS=<dir> python3 tx/ksplit/tiles.py f201r f201v f211r f211v   # VIV-TILES6770
+
+With leaf arguments, the line crops are read from VIVKSPLIT_CROPS/<leaf>/cut/manifest.json (regenerated, uncommitted; images/
+manifest.json viv67/viv67b/viv70/viv70c 'regenerate' commands), the packet rows of those leaves are tiled whatever their crop column,
+and the output is tiles_6770.tsv plus rows appended to truth.tsv.
 
 Per leaf (f102r, f102v, f103r): tools/glyph_atlas.py segment of the line crops (--median-h pool; s1/s2 overlap deduped at its
 midpoint, as tx/vivgsplit/gsplit.py leaf_units), then tools/box_token_align.build_map (label-aware: classify top-3 box labels, lam LAM, --loo guard) of the committed
@@ -20,15 +25,19 @@ PAD = 6
 SKIP = {':', 'non]', '{flourish', 'cross}'}   # ':' = two dots, segmented as marks (tools/glyph_atlas marks.tsv), not boxes
 
 
+CROPS = os.environ.get('VIVKSPLIT_CROPS')
+
+
 def units(leaf):
-    man = os.path.join(FOLD, 'images', 'manifest.json')
+    base = os.path.join(CROPS, leaf, 'cut') if CROPS else os.path.join(FOLD, 'images')
+    man = os.path.join(base, 'manifest.json')
     cr = {}
     for e in json.load(open(man))['iiif_lines']:
         c = e['crop']
         if f'_{leaf}_L' not in c:
             continue
         ln = c.split(f'_{leaf}_')[1].split('_')[0]; sg = int(c.split('_s')[-1].split('.')[0])
-        cr[(ln, sg)] = dict(path=os.path.join(FOLD, 'images', c), x0=e['box'][0], x1=e['box'][2], page=f'{leaf}_{ln}_s{sg}')
+        cr[(ln, sg)] = dict(path=os.path.join(base, os.path.basename(c) if CROPS else c), x0=e['box'][0], x1=e['box'][2], page=f'{leaf}_{ln}_s{sg}')
     at = os.path.join(W, f'atlas_{leaf}')
     if not os.path.exists(os.path.join(at, 'signs.tsv')):
         pages = []
@@ -103,7 +112,9 @@ def read(leaf):
 
 
 def main():
-    pk = [r for r in csv.DictReader(open(os.path.join(TX, 'kcells2', 'packet.tsv')), delimiter='\t') if r['crop']]
+    leaves = sys.argv[1:]
+    pk = [r for r in csv.DictReader(open(os.path.join(TX, 'kcells2', 'packet.tsv')), delimiter='\t')
+          if (r['page'] in leaves if leaves else r['crop'])]
     os.makedirs(os.path.join(H, 'tiles'), exist_ok=True)
     tiles, truth, cnt = [], [], collections.Counter()
     for leaf in sorted({r['page'] for r in pk}):
@@ -128,14 +139,17 @@ def main():
             tid = f"{leaf}_{r['line']}_{int(r['pos']):03d}"
             im.crop(box).save(os.path.join(H, 'tiles', tid + '.png'))
             tiles.append(dict(id=tid, page=leaf, line=r['line'], pos=r['pos'], label=r['label'], sid=s,
-                              img=os.path.relpath(u['img'], FOLD), x=box[0], y=box[1], w=box[2] - box[0], h=box[3] - box[1]))
+                              img=os.path.basename(u['img']) if CROPS else os.path.relpath(u['img'], FOLD), x=box[0], y=box[1], w=box[2] - box[0], h=box[3] - box[1]))
             truth.append(dict(id=tid, clerk_letter=r['clerk_letter'], kind=r['kind']))
             cnt[(r['label'], 'tile')] += 1
     tiles.sort(key=lambda t: t['id']); truth.sort(key=lambda t: t['id'])
-    for name, rows, cols in (('tiles.tsv', tiles, ['id', 'page', 'line', 'pos', 'label', 'sid', 'img', 'x', 'y', 'w', 'h']),
-                             ('truth.tsv', truth, ['id', 'clerk_letter', 'kind'])):
-        with open(os.path.join(H, name), 'w') as f:
-            f.write('\t'.join(cols) + '\n' + ''.join('\t'.join(str(t[c]) for c in cols) + '\n' for t in rows))
+    tcols = ['id', 'page', 'line', 'pos', 'label', 'sid', 'img', 'x', 'y', 'w', 'h']
+    with open(os.path.join(H, 'tiles_6770.tsv' if leaves else 'tiles.tsv'), 'w') as f:
+        f.write('\t'.join(tcols) + '\n' + ''.join('\t'.join(str(t[c]) for c in tcols) + '\n' for t in tiles))
+    tr = os.path.join(H, 'truth.tsv'); ucols = ['id', 'clerk_letter', 'kind']
+    old = [l for l in open(tr).read().splitlines()[1:] if l.split('\t')[0] not in {t['id'] for t in truth}] if leaves else []
+    with open(tr, 'w') as f:
+        f.write('\t'.join(ucols) + '\n' + ''.join(l + '\n' for l in old) + ''.join('\t'.join(str(t[c]) for c in ucols) + '\n' for t in truth))
     print(dict(cnt))
 
 

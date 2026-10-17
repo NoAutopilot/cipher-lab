@@ -224,6 +224,9 @@ about USD 2); the fr16 corpus built from the clerk decipherments (L1, about USD 
 (acquisition, owner minutes); the ink 50/51 known-plaintext pair for f/m/p/qu anchors (USD 15; worth it only after experiment 2,
 because the anchors are limited by the labels).
 
+VIV-TILES6770 (17 Oct 2026): the ink-67/70 tiles are cut (56 mapped, 20 pass the box check); c 25 usable with 5 contrast, 2 30 usable
+with 1 contrast -- under the 30/15 the 2-way read needs, and this packet cannot reach 15 c contrast at all; the read stays no-go (NOTES).
+
 ## 6. Recommendation
 
 **Pivot**: stop decode-side and re-read work on ink 63 until the input is trusted.
