@@ -4361,3 +4361,42 @@ row (rule 4: a cryptanalytic result with a control, but at precision 0.750 an ov
 is a list of six f.191r positions (L01:20, L04:48, L07:8, L10:38, L18:15, L29:42) to put before the owner as "is this the f-shape?" questions
 in the next packet (PREREG-VIVPACKET4), beside his settled alphabet. The family rests until the owner's step-1 sort or new material; it is
 not [retired] (its last attempt passed), it is consumed. Requests: none. Cost: parent session only.
+
+## ERR-SIM (17 Oct 2026)
+Account-4 worker ERR-SIM (brief `.claude/briefs/runs/2026-10-17-acct4-research-director-2.md`), 01:15-01:2x UTC by date -u. Disk only;
+no reading, key or AUDIT edit. PREREG-ERR-SIM.md (Decision rules pushed in 5402b42e5 before any run). Scripts and outputs in tx/err_sim/.
+
+**AD recount** (`tools/depth_stats.py`, tokens63.tsv from reading_piece63.tsv, `--cipher-class 'len<=3' --shuffle classes --corpus
+tools/data/fr16`, out tx/err_sim/depth63/): R 2.116, 32 cipher codes, H_design 133.4 bits. For an all-H run (no liberty inside) the
+governing AD = 1.5 x 133.4 / 2.116 = **94.6 letters**; R 3.4 sensitivity **58.9**; the old convention about 42. The tool's item-wide
+figure (4,671.6; R 3.4: 2,908.0) charges all 3,472 M/U liberties of the 15,762-token item to one clause and is unreachable on any item
+this size, so it is reported, not used as a bar. Target now: all-H run 40, M-through run 277.
+
+**Controls (run first)** -- 15,762 letters (clerk decipherments 67, 70, 41: 14,270 letters, cycled), key.tsv at ink 63's code
+frequencies, ink 63's line and page shape:
+
+| run | seeds | longest all-H run | all-H all-correct run | V_strict | H share |
+|---|---|---|---|---|---|
+| C0, 0 error, real key | 1-5 | 54, 54, 54, 54, 54 | 54 (all) | 50 (all) | 0.89 |
+| C1, 0 error, value-shuffled key | 1-5 | 54, 54, 54, 53, 54 | 2, 4, 2, 2, 1 | 29, 28, 31, 24, 42 | 0.89 |
+| target ink 63 (as read) | - | 40 | - | 21 (f.191r L22-L36 only, F191D) | 0.78 |
+
+C0 fails its registered gate (>= 94.6 in >= 3 of 5): **NON-TEST; the 0.05-0.23 sweep was not run** (registered stop). C1 behaves (the
+correct-letter run collapses to 1-4 and V_strict drops). The pipeline is not broken: the cap comes from the key itself. Under key.tsv,
+b, h, m and z decode only from M-grade codes and f, k, p, x, y have no code at all, so even a perfect transcription cannot give an all-H
+run past 54 letters on this office's prose.
+
+**Which cells cap it** (tx/err_sim/cap_diag.py, post-hoc, descriptive, not a gate). This is the longest stretch of the synthetic
+plaintext with no letter that cannot decode H:
+
+| fixed (given an H code) | none | b | h | y | f | m | p | f+p | f+m | p+m | f+p+m | f+p+m+h+b | all M rows H | all uncoded letters coded |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| run | 54 | 61 | 61 | 60 | 67 | 90 | 95 | 117 | 110 | 143 | 224 | 280 | 164 | 131 |
+
+**Decision taken: change.** Reader error is not the binding limit on ink 63's depth. As long as the key has no H codes for p and m,
+no reader at any error level can surface a clause >= 94.6 (or >= 58.9 at R 3.4) from a text like ink 63. Every ink-63 negative on
+the all-H run statistic (VIV-F191/B/D, VIVPACKET3, GSPLIT3E, the D1 calls) was capped by the key as well as by the readers. Their
+"no stretch >= 42" bar sat below the 54 ceiling, so it could still fail differently from the target. The bar the rule now names (94.6)
+cannot. Crossover: not defined; no error level, including 0, reaches the bar on this key. Next: the key-structure wave, p and m cells
+first (RESEARCH.md section 5). Then rerun `tx/err_sim/err_sim.py` (seconds per sweep) with the extended key, to get the reader-error
+crossover that this run could not measure.

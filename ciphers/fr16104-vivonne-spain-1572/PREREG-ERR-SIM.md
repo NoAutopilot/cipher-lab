@@ -42,7 +42,7 @@ AUDIT 7 names no class, len<=3 takes every key code and no brace label). Output 
   give no run of correct letters >= 94.6 (the all-H grade run is key-grade-driven and is reported, not gated; the correct-letter run
   and V_strict can differ from the target's).
 
-## Decision
+## Decision rules (registered in 5402b42e5, before any run; heading renamed after the run so the five-line block below parses)
 - (a) If at e = 0.14 and every level above it, fewer than 3 of 5 seeds give an all-H run >= 94.6: every ink-63 negative is a
   non-test; the crossover error (largest level where >= 3 of 5 seeds still give a run >= 94.6) becomes the transcription target; decode
   side work on ink 63 stops until a known leaf reads below it.
@@ -51,3 +51,10 @@ AUDIT 7 names no class, len<=3 takes every key code and no brace label). Output 
 - Mixed (passes at 0.14, fails above): reported as (a) for the measured 0.19-0.23 and (b) at 0.14; the crossover is named and the
   parent decides. The same table at the R 3.4 bar (58.9) is reported as sensitivity, not as the gate.
 - Crossover reported either way.
+
+## Decision
+Belief: ink 63's missing clause >= AD may be a reader-error effect (0.14-0.23) rather than a property of the text or key.
+Would change it: C0 (0 error, real key) giving an all-H run >= 94.6 in >= 3 of 5 seeds; if it does not, the sweep cannot test reader error at all.
+Observed: C0 longest all-H run 54 in 5 of 5 seeds (bar 94.6; R 3.4 bar 58.9); C1 shuffled key all-H-correct run 1-4, V_strict 24-42 vs real 50; target 40. Sweep NOT run (registered stop). Post-hoc cap_diag: run 54 as the key stands, 95 with p alone given an H code, 143 with p and m, 224 with f, p, m.
+Decision: change -- reader error is not the binding limit: under key.tsv as it stands no error level can surface a clause >= AD from a text like ink 63; the next wave is the key cells (p and m first, then f), and ERR-SIM reruns against the key once those cells exist.
+Lesson: before an error-matched sweep, run it at 0 error on the key as graded: a key with uncoded or M-only letters can cap the all-H run below AD by itself, which makes every reader-error and every depth negative on that key a non-test.

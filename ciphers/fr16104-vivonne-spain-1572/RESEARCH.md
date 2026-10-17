@@ -106,6 +106,11 @@ Ink 63 was read by the same kind of reader (two blind Sonnet passes per page, re
 disagree on 0.297 of f.193r's signs (VIV-LOOKALIKE), which is worse than the known leaves. Nothing yet shows that its reader error is
 lower than 0.14.
 
+**ERR-SIM result (17 Oct 2026, PREREG-ERR-SIM, NOTES "ERR-SIM").** The zero-error synthetic control reaches only a 54-letter all-H
+run, against the recounted AD of 94.6 (58.9 at R 3.4). The cap is the key, not the reader. p, f, k, x and y have no code, and b, h, m
+and z decode only from M rows, so no reader error level can surface a clause at or above AD. Giving p and m H codes lifts the ceiling to
+143. The reader-error crossover cannot be measured until the key has those cells. What follows still holds for every negative on file.
+
 **Can an ink-63 negative be read as a negative?** No. The bar was never calibrated at this error: no synthetic text of ink 63's length,
 enciphered with this key, read with this hand's measured confusions and decoded the same way, has ever been run to show that a clause
 >= AD *would* surface. Rule 3 (SALV-DIAG) requires the injected error to bracket the target's own measured error before a FAIL counts.
@@ -143,7 +148,9 @@ DV-MERCY2 (espagnol142-mercy-1648 AUDIT, Depth re-rule 2, 15 Oct 2026) ruled the
 bar at 125.9 letters (es17c), not 84 (R 3.4). For Vivonne, `depth_stats.py` has never been run. With about 32 cipher-class codes and
 corpus R near 2, the governing AD is likely around 100 letters, more than twice the 42 every PREREG used. Because nothing reached 42,
 no verdict was too generous. But the target is further away than the lane has been working towards, and experiment 1 needs the
-right bar.
+right bar. **Recounted 17 Oct 2026 (ERR-SIM):** fr16 R 2.116, H_design 133.4 bits. AD for an all-H clause = 94.6 letters; R 3.4
+sensitivity 58.9. The tool's item-wide figure, 4,671.6, charges every M/U token of the item to one clause and cannot be reached on any
+item of this size.
 
 ### 4.5 Smaller assumptions
 - Line crops: s1/s2 halves overlapping by 400 px. T3 asks whether that makes readers write strings twice; the check so far was vacuous.
@@ -152,7 +159,12 @@ right bar.
 
 ## 5. The three most informative next experiments (ranked by expected information per USD)
 
-**1. ERR-SIM: an error-matched synthetic control for ink 63, with the AD recounted (disk only; cap USD 2.5; box 45 min).**
+**Experiment 1 RUN 17 Oct 2026, outcome: non-test by its own control (C0 run 54 < AD 94.6). The cap is the key (p and m cells), so the
+ranking changes. New first experiment: the p and m key cells (K-cells: anchor p, m and f on the clerk-decipherment pairs of inks 40/41
+and 67/68, the way VIV-ANCHOR found V = n; disk only, about USD 2-3). Then rerun ERR-SIM on the extended key (seconds). Experiment 2
+(KEYCELL-READ) stays useful, but its yardstick waits on that rerun. Experiment 3 is unchanged.**
+
+**1. ERR-SIM: an error-matched synthetic control for ink 63, with the AD recounted (disk only; cap USD 2.5; box 45 min).** [RUN, see above]
 - Assumption tested: 4.1 and 4.4. Would a clause >= AD surface from a text like ink 63 at this hand's measured error?
 - Method:
   - Recount the AD: `tools/depth_stats.py` on reading_piece63.tsv with fr16 (and a 1573 clerk-decipherment corpus if built), giving
