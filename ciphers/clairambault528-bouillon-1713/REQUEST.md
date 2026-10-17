@@ -18,3 +18,5 @@ This is the QUEUE row's lowest-confidence item of its three siblings (M26/M27/M2
 is a genuine substantial cipher, not a short annotation, before committing to a reproduction order.
 
 No personal data recorded here per rule 9.
+
+- 17 Oct 2026: BnF order VEL-2610-008289 placed by the owner (quote DEV-2610-010032): Clairambault 528 pp.91-100, the 1713 cipher letter, 12 pages PDF, due about mid-Nov 2026. No key known; on receipt a transcription pass, then design_prior.py before any family.

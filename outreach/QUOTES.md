@@ -156,3 +156,8 @@ letters (Ms-6334 Feb 1650; Clairambault 574 and 579 against the 575 letter), the
 Defer Ms-11639 and the two HD images; write once to reproduction@bnf.fr to drop Français 3632 (found-solved) and requote Français 3251
 as the page PDF product. The account's billing country field is wrong (the BnF asks that the delivery contact be corrected by writing
 to reproduction@bnf.fr before ordering).
+
+- **17 Oct 2026 03:1x UTC: quote DEV-2610-010032 (Manuscrits) ORDERED by the owner as order VEL-2610-008289**, EUR 21.7, card, PDF
+  download in 3-4 weeks (about mid-November): Clairambault 574 pp.3-5, 575 pp.1209-1220, 579 ff.341-343 and 345 (clair571-estrades-1645)
+  and Clairambault 528 pp.91-100 (clairambault528-bouillon-1713). Commercial-use question answered No (non-commercial research, source
+  credited). The Arsenal quote DEV-2610-010031 (16.8), Ms-11639 (68.6) and the HD-image quote (100) are HELD by the owner for now.

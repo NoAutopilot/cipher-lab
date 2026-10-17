@@ -73,3 +73,5 @@ Bien cordialement,
 
 **Status:** waiting on the owner. Target stays at stage 2 (verified unsolved) -- see NOTES.md's check-solved
 and Access sections. No copy order, payment or quote request goes forward until the owner sends this.
+
+- 17 Oct 2026: BnF order VEL-2610-008289 placed by the owner (quote DEV-2610-010032, EUR 21.7): Clairambault 574 pp.3-5 (Brasset key), 575 pp.1209-1220 (the ciphered document), 579 ff.341-343 and 345 (Mazarin-d Estrades key double); PDF due in 3-4 weeks (about mid-Nov 2026). On receipt: PREREG first, then apply each key to the 575 letter with a shuffled-key control (tools/decode_key.py --try per code), label key application if a period key reads it.
