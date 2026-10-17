@@ -7560,3 +7560,67 @@ prose (lines ~104-107) rather than new findings:
 - **Esterházy papers box 636** (no.344): Slovak National Archives, Esterházy family archive; "scans may not be
   online yet" per the catalogue note; no DECODE record found. Reproduction target: box 636, six cipher letters
   (one from Maria Theresa).
+
+## Key-beside-cipher candidates (17 Oct 2026)
+
+Worker SCOUT-KEYS (account 2, Opus 5.5; brief `.claude/briefs/runs/2026-10-17-acct4-research-director-1.md`, program C).
+Shape sought: a volume, reel or lias where cipher letters sit beside period decipherments or a key, and a pair
+"deciphered sibling or key -> undeciphered letter in the same key". Never promoted, never solved. Full rows with every
+quoted flag line, page read, route and prior-work line: `harvest/SCOUT-KEYS-2026-10-17.tsv`. Scores are
+`tools/scout_rubric.py`'s `score()` (declared prior, est_signs not measured so pile = 0). `tools/prior_work.py` needs a
+target folder, so it was run (offline) only for K2, K4 and K9 under the nearest existing host slug (all exit 0,
+plaintext UNCHECKED/UNCHECKED-NET; the rows it logged into those folders were removed, since they are not those
+targets' items); every row was also grepped by hand against DECODE's cached catalogue, Bourdeau's cyphersolver
+(treeless clone, `targets/` names plus `haga1620` read in full), Aymeloglu's unsolved-ciphers (shallow clone, full
+grep: no hit for any row), Tomokiyo's Cryptiana cache and this repository. Copy-free = page images reachable from the
+cloud without payment or login.
+
+| Row | Holder, item | Key evidence (quoted flag line; source) | Undeciphered partner | Copy-free | Score | First cheap test, price |
+|---|---|---|---|---|---|---|
+| K1 | NA 1.01.02 inv. 6894-6898, Cornelis Haga (Constantinople) to the States General, 1619-1626 | DECODE key R2118 + Bourdeau's `haga1620` readings of R2113/R2115 (credit: Bourdeau, github.com/dbourdeau/cyphersolver `targets/haga1620`, read 21 Sept 2026); "3332a S.G. 6894 (orig.). Aldaar ook nog een brief van 23 maart (orig.); beide met ontcijfering." (Resolutien SG NR 4 p.482) | "3504a S.G. 6896 (duplicaat met onopgeloste cijfercode op brief dd. 30 april)." (NR 5 p.536; Haga, Constantinople 16 Apr 1622); Haga's later code letters 1621-1626 (a new code reached The Hague 23 Aug 1621, NR 5 p.260) | yes (NA viewer: 6893-6898 all DIGITALIZED, 418-781 scans each) | 46 A | find the 1622 April leaves in inv. 6896 and apply R2118's alphabet and nomenclator: a fit is key application of Bourdeau's key, a miss points to the 1621 code; ~USD 2 |
+| K2 | NA 1.01.02 inv. 6025, "Liassen Agent Aitzema" (Hanse towns, 1617-1625, 589 scans) | "De griffier zal de door Aissema gemaakte code opbergen" (NR 3 p.188); "1789. De ontcijferde brief van Aitzema wordt gelezen" (p.289); "a. De ontcijferde brief van Aitzema, twee dagen eerder ontvangen" (p.307); "2305a A.R.A., S.G. 6025 (orig. dd. Lübeck 17 febr. ...)" (p.351) | Aitzema's other cipher letters in 6025 with no decipherment beside them (count unknown) | yes | 45 A | stride contact sheet of 6025 for 1617-1618 (cipher block yes/no only), then check for a decipherment leaf beside the 17 Feb 1618 letter; ~USD 2 |
+| K3 | NA 1.01.02 inv. 6897-6898, Johan Berck (Venice) to the States General, 1623-1626 | "2531a S.G. 6897 (orig.). Met een door Duyck ontcijferd bericht inzake de onderhandelingen over de Valtellina." (NR 6 p.405); the States told him to put secrets "in een geheime code waarvan hij de sleutel moet opzenden" (NR 6 p.22) | Berck's other code passages 1623-1625 in 6897-6898 | yes | 43 A | locate the 22 Dec 1623 letter and Duyck's decipherment in 6897 and count Berck's code passages; ~USD 2 |
+| K4 | TNA SP 84/165 (1662), intercepted Spanish despatches in Williamson's intelligence file | Tomokiyo (Cryptiana chauran.htm): "PRO SP 106/6 no. 34 is a decoding table of a similar cipher with a vocabulary in Spanish"; "Folio 187: King of Spain of Marqués de la Fuente. [Mainly undecoded cipher, one decoded paragraph in Spanish]." (Discovery) | "Folio 228: Undecoded cipher." and the same for ff. 231, 243, 258, 263, 306, 313, 315, 317 (Discovery) | no (TNA/SPO; SP 106/6 keys are DECODE R504-R524) | 40 A | DECODE login-free listing: does it hold any SP 84/165 intercept image and SP 106/6 no. 34; else an ASKS row for ~15 TNA images. `ciphers/sp84-chauran-1662` (not-a-cipher) covered only Chauran's covering letters, not these items; ~USD 1 |
+| K5 | TNA SP 81/37-39, Sir Henry Vane's despatches from Germany, 1631-1632 | "Folio 169: Vane to Dorchester - 3 letters with decipher of one." (Discovery) | the two undeciphered letters of 3 Dec 1631; "Folio 216: Vane to [Dorchester], with portion deciphered." | no | 40 A | print check for the 1631 despatches, then TNA item details for 81/37/169; ~USD 1 |
+| K6 | TNA SP 81/44-46, Sir Thomas Roe at Hamburg, 1638-1639 | "Folio 312: Coke to Roe, and decipher." / "Folio 88: Coke to Roe, with decipher and copy." (Discovery) | "Folio 225: Roe to Secretary of State, with postscript in cipher." / "Folio 273: Portion in cipher concerning Prince Palatine and France." | no | 38 A | TNA item details for 81/44/225 and 81/46/273 (is a decipher filed?), one print check; ~USD 1 |
+| K10 | Archives nationales, Fonds des Colonies C11A vols 76-105 (Canada, 1741-1760), calendared by Brymner | "Letter, in cipher, translated, from M. de Beauharnois and M. Hocquart to the Minister ... Fol. 119." (Report 1887); cipher despatches calendared "4 pages, say 1 1/2 p." (inferred, not checked, to mean a decipherment was copied) | none located yet: a C11A cipher despatch with no decipherment | unknown (LAC C11A microfilm on Canadiana not confirmed) | 38 A | grep the 1886-1887 Reports' C11A calendars for every cipher entry and its page reduction; ~USD 0.5 |
+| K9 | BL Add MS 21837-21838 (Haldimand Papers, B.177-2/B.178), LAC microfilm on heritage.canadiana.ca: Justus Sherwood's secret-service correspondence, Vermont 1781-1782 | "Sherwood gives a sketch of what he understands by the cypher message of Cossit and Summer. 84" / "Sends sketch of what he believes is meant (p. 84), but the cypher is written in a blundering manner." (Brymner, Report 1888) | "Cypher messages brought in by Summer 345 to 347" (Report 1888) | yes (Haldimand reels; the reel for 21837-21838 not yet identified) | 36 B | identify the reel from title leaves (about 5 requests), fetch pp.84 and 345-347, decide whether Sherwood's sketch is a decipherment or a guess; not in VHS Collections II (1871); ~USD 2 |
+| K7 | NA 1.01.02 inv. 6055 (Lias Duitsland, 1621) + TNA SP 84/102: Albert Joachimi to the States General from Mosbach and Heidelberg, June 1621 | "1156. Een brief dd. Mosbach 5 juni van Joachimi zal worden ontcijferd" (NR 5 p.183); "1251a S.G. 6055 (eigenhandig orig.). b De brief is ontcijferd." (p.195); "Folio 32: Sir H. Vere to --- and 2 copies, and decipher of Joachini's cipher (f.35)." (Discovery) | Joachimi's other 1621 code letters in inv. 6054-6056 | no (6055 PHYSICAL, 0 scans; TNA/SPO) | 35 B | TNA item details for SP 84/102/12: is f.35 a key table or a deciphered text; ~USD 1 |
+| K8 | TNA SP 78/179, Horatio Walpole (Paris) to Robert Walpole, 1723 | SP 106/7, "Ciphers used at the time of Anne to George II, names A to Z. Indexed." (Discovery) | "Folio 351: Horatio Walpole to Robert Walpole. Letter partly in undecoded cypher." (31 Dec 1723); "Folio 258: ... [Plus a paragraph of undecoded cypher]." (24 Nov 1723) | no | 32 B | IA full-text search of Coxe's Walpole memoirs (1798, 1802) for both dates first: the brothers' letters may be in print; ~USD 0.5 |
+
+**Dropped or not new.** Gachard II no. 243 (Mondoucet, BnF fr.16127, "en chiffres sans le déchiffrement" on 13 Jul 1572
+and 4 Jan 1573): Bourdeau's `mondoucet/` already read this volume's letters (LESSONS-BOURDEAU.md). Gachard nos. 244, 245
+and 247 (Saint-Gouard 1580 and 1581-82, 26 and 28 letters "suivies de leur déchiffrement"; Longlée 1586-93, 26
+decipherments) sit inside `ciphers/fr16106-vivonne-longlee-1579`'s pool (fr.16107-16110). Gachard no. 241 (Durescu and
+Malras) carries no cipher flag. Haldimand B.147/B.148 (H-1649) are `ciphers/pro3055-clinton-1779`'s. SP 106/10 and SP
+106/5 DECODE records are pooled in POOLS.tsv (Lasry read some). SP 105/58-60 (Stepney-Paget) is
+`ciphers/sp105-paget-1693`. DECODE NA pairs: Haga 1620 (Bourdeau `haga1620`), Rechteren and de Swart (Bourdeau's writeup
+names Rechteren as finished; de Swart 1782 read by Bourdeau with the Croiset key), van Reede (Bourdeau `vanreede1787`),
+Röell (`ciphers/roell-vandedem-1809`), Toulon 1803 (QUEUE B5); NA 7407-7408 are PHYSICAL anyway.
+
+**Searched with no hit.** Royal Archives CalmView (now ra.rct.uk; gpp.rct.uk redirects): "cypher" 4 rows, "cipher" 2,
+"deciphered" 2, "decipher" 0, "ciphers" 0 -- none Stuart or Gualterio-era; the Stuart Papers are catalogued online only at
+collection level, so source (5) gave no item to pair with the HMC VI keys. Brymner's Haldimand calendars (Reports
+1884-1889): outside B.147/148, B.177-2/178 (K9) and C11A (K10), the cipher mentions are single news items with no
+key or decipherment beside them; no entry anywhere says "not deciphered". Discovery: SP 80, SP 92, SP 99 no
+decipher entries; SP 75 one (75/3/227, commissioners with decipher, no undeciphered partner); SP 94/20/199 Digby 1613
+and SP 94/40/364 Aston 1638 ("decipher of part", "portion deciphered") and SP 78/90-91 Wake 1631-32 ("part decipher")
+noted but not ranked here. Resolutiën SG old series 1586-1603: decipherments of intercepted enemy letters by Van de
+Warcke, Marnix and Calvart (OR 5 p.23, OR 8 pp.171, 378, 412, 438, OR 12 p.86) -- the Taxis letter of 1594 is printed (Bor
+IV 123) and OR 12 prints the decoded passages, so not ranked. Pijnacker and Hogenhouck 1621 ("ter ontcijfering aan
+Junius gegeven omdat Z.Ex. het alfabet heeft", NR 5 p.699): inventory not identified, not ranked.
+
+**Requests by host (17 Oct 2026, 01:16-01:5x UTC).** resources.huygens.knaw.nl 42 (10 searches, 7 pages.json, 25
+OCR pages), www.nationaalarchief.nl 12 (item pages), discovery.nationalarchives.gov.uk 12, archive.org 10 (2
+advancedsearch, 8 djvu text), heritage.canadiana.ca 4, ra.rct.uk/gpp.rct.uk 7, github.com 3 clones (no API). One
+host at a time, >= 1.5 s apart. No vision calls.
+
+**Research-director questions (this job).** (1) Learned: the Staten-Generaal resolutions' editorial notes are a
+key-beside index -- they say per letter "met ontcijfering", "ontcijferd" or "onopgeloste cijfercode", and the
+Levant lias (6893-6898) and Aitzema's lias (6025) are digitised. (2) Assumed: that a lias numbered in a note still
+holds the cipher and its decipherment side by side, and that Bourdeau's 1620 Haga key covers 1622. (3) Unverified:
+both; no leaf was looked at. (4) Alternatives: the decipherments may be filed elsewhere (Secreete Kas 12.578), and the
+1622 "unsolved" code may be the new 1621 one. (5) Most informative different experiment: K1's test, one leaf, one
+key, a fit or a miss in about USD 2. (6) Reprioritize: K1-K3 (copy-free, NA, scripted route on file) before the TNA
+rows, which need an owner-side copy; next question: does the same note pattern ("met ontcijfering") run through the
+later volumes of the edition, if it continues past 1625?
