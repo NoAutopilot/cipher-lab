@@ -1,6 +1,6 @@
 # Assumption cases: could the record have caught it before the owner did? (CASES-TX, 17 Oct 2026)
 
-Brief: `.claude/briefs/runs/2026-10-17-acct4-research-director-1.md`, JOB CASES-TX (owner's directive 8.5). Disk only, no new
+Brief: `.claude/briefs/runs/2026-10-17-acct4-research-director-1.md`, JOB CASES-TX (owner's directive 8.5). Disk only, no
 experiment, no network. Written 01:2x UTC 17 Oct 2026 by `date -u`.
 
 Method: for each case, find the date the error was pointed out from outside the agent loop. Then list what was already on disk
