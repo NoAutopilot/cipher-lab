@@ -1,0 +1,110 @@
+# Kolosova 2024, El lenguaje cifrado en tiempos de Carlos V (1521-1527), Ediciones Universidad de Salamanca.
+# Cifrario 7, Lope Hurtado (main cipher, Tomokiyo's Ko.7): nomenclature pp.200-202; substitution alphabet p.200. Transcribed 17 Oct 2026 by the account-4 parent from the owner's ILL scan (OCLC 1541749253, TN 238338999; PDF off the repository, copyright).
+# Published key (grade H as a key source, rule 10 'published'); `tx` = my reading of the printed group: H clear, M doubtful (note says why).
+# Notation: the printed prefix signs are written as the Latin letter they resemble: 3 (= Bourdeau's z), y (= Bourdeau's ɣ), x, t, s (long s, = Bourdeau's ʃ), r; cifra 10 adds f, d, p. The two or three letters after the prefix are as printed.
+word	code	tx	note
+acá	3a	H	
+ahora	3e	H	
+al	3u	H	
+algún	3ib	H	
+allá	3ub	H	Bourdeau zub = alla (probable, R9656) agrees
+allí	3ac	M	last letter c or r
+almirante	3ab	H	
+antes	3ec	H	
+aquí	3ic	H	
+arzobispo	3ed	H	Bourdeau zed = arçobispo (confirmed) agrees
+así	3uc	H	
+aun	3i	H	
+aunque	3o	H	
+capitán	3uf	M	printed indistinguishable from cardenal 3uf; Bourdeau zif = capitan (possible) suggests 3if
+cardenal	3uf	H	Bourdeau zuf = cardenal (confirmed, R9649 clear copy) agrees
+con	3il	H	Bourdeau zil = con (confirmed) agrees
+condestable	3ul	H	
+da	3un	H	Bourdeau zun = da (confirmed) agrees
+de	3az	M	final letter z or r as printed; Bourdeau zar = de (confirmed, three contexts): CONFLICT logged in HYPOTHESES.md
+dicho	yo	H	
+dinero	yeb	H	
+duque	yib	H	Bourdeau ɣᵹb = duque (confirmed) agrees
+ejército	yal	H	printed with a following point
+el	yub	H	Bourdeau ɣub = el (confirmed) agrees
+elección	yic	H	
+ella	yec	H	
+emperador	yoc	H	
+en	yuc	H	Bourdeau ɣuc = en (confirmed) agrees
+es	yaf	H	Bourdeau ɣaf = es (confirmed) agrees
+espera	yuf	H	
+está	yof	H	Bourdeau ɣof = esta (confirmed) agrees
+este	yef	H	
+Florencia	yml	M	yml or ynl
+francés	yem	H	
+Francia	yon	H	Bourdeau ɣon = Francia (confirmed) agrees
+grande	xub	H	
+guerra	xac	M	printed the same as iglesia xac; one of the two is probably xaç or xar
+ha	xic	H	
+he	xod	H	
+hombre	xud	H	Bourdeau xud = hombre (confirmed) agrees
+ido	xoc	H	
+iglesia	xac	M	see guerra
+imperio	xef	H	
+inteligencia	xeg	H	
+ir	xad	H	
+Italia	xig	M	
+la	xug	H	Bourdeau xuɡ = la (confirmed) agrees
+le	xil	H	Bourdeau xil = le (confirmed) agrees
+lo	xul	H	Bourdeau xul = lo (confirmed) agrees
+lugar	xun	H	
+mal	xip	H	
+manera	xap	H	
+marqués	xup	H	
+más	xon	M	final n or m as printed; Bourdeau xon = mas (confirmed) agrees on xon
+mejor	xuq	H	
+-mente	xoq	H	
+mo	xor	M	mo and mu printed alike; Bourdeau xor = mu (confirmed, 1524)
+mu	xor	M	see mo
+mucho	xez	H	Bourdeau xer = mucho? (possible, 1524) is one letter off
+na	xur	H	Bourdeau xur = na (confirmed) agrees
+nec (parte de necesidad)	tef	M	printed like paz tef; one is probably teſ or tes
+ni	ti	H	
+ningún	to	H	
+ninguna	to ß	H	with the a sign ß; starred in the book
+no	tu	H	Bourdeau tu = no (confirmed) agrees; Bourdeau also has ta = no (confirmed), not listed here
+obispo	tic	H	
+otra	tud	H	Bourdeau tod = otro (confirmed, exact slot): CONFLICT (o/u) logged in HYPOTHESES.md
+papa	taf	H	Bourdeau taf = papa (confirmed) agrees
+para	teg	H	Bourdeau teɡ = para (confirmed) agrees
+parti	tof	H	
+passa	tuf	H	
+paz	tef	H	Bourdeau tef = paz (confirmed) agrees
+por	tog	H	Bourdeau top = por (confirmed, three contexts incl. 'top ton' = porque): CONFLICT logged in HYPOTHESES.md
+pues	tel	H	Bourdeau tel = pues (confirmed) agrees
+que	ton	H	Bourdeau ton = que (confirmed) agrees
+razón	top	H	see por
+rey	tnp	M	tnp or tup
+Rey de Francia	tor	M	printed like Ungría tor; one is probably tvr
+Roma	tit	H	
+sabe	si	H	
+se	su	H	Bourdeau ʃu = se (confirmed) agrees
+servi	sib	H	
+si	sub	H	Bourdeau sub = si (confirmed) agrees
+so	sad	H	
+son (parte de)	sadz	H	
+su	sed	H	Bourdeau ʃed = su (R9645) agrees; Bourdeau ʃʃ = su (confirmed) not listed here
+Su Beatitud	sed.3af	H	
+Su Santidad	sud sid	H	
+Su Santidad	sid	H	Bourdeau ʃid = Su Santidad (confirmed) agrees
+tan	sif	H	
+tanta	suf	H	
+tengo	seg	H	
+tiempo	sop	H	Bourdeau ʃop = bi (confirmed, 1524 letters): CONFLICT logged in HYPOTHESES.md
+todo	sal	H	Bourdeau ʃal = esta (confirmed, 1524 retry): CONFLICT logged in HYPOTHESES.md
+trata	sul	H	
+tregua	som	H	
+Ungría	tor	M	see Rey de Francia
+va	sm	M	
+venga	sep	H	
+verá	sip	H	
+visto	suq	H	
+voluntad	ra	H	
+vuestra	ru	H	
+Vuestra Majestad	rab	H	Bourdeau rab = vuestra magestad (confirmed) agrees
+yo	ric	H	

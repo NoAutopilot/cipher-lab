@@ -539,12 +539,12 @@ Read so far: 0 tokens read by this repository; by Bourdeau (dbourdeau/cyphersolv
 - R9634 residual (Bourdeau 872/1191 = 73.2% read, read_r9634.md at his HEAD a02b838, credited): ~40 single-occurrence code groups - blocker: no-key-material; no clear copy in the record or in CSP Spain ii (his NOTES "Remaining gaps"); Kolosova's Ko.7/Ko.10 tables are the only named key source (L17 / ASKS 74)
 - R9634 residual spelled words (14r12, 14v03, 14v16, 15r11, 15v05, 15v13) - blocker: illegible; DECODE's full-size file is the only image online and was re-tested 6 Oct 2026 (A4-RFLOPE section); a blind sign pass at that resolution settled none; needs the RAH images of 9/26 ff.14-16 (owner's browser on bibliotecadigital.rah.es, or a reproduction request)
 - R9646 remainder 19/118 and R9649 remainder 3/89 - blocker: illegible; Bourdeau's "Where the work is now limited": DECODE serves ~1700 px per folio, too little for per-glyph discrimination ("What would actually move this target" item 3)
-- Kolosova's Ko.7/Ko.10 tables (pp. 312, 333, 388, 405) - blocker: waiting-on LOCAL-QUEUE.tsv row L17 (the owner's read of Kolosova 2017/2024). Bertomeu Masià 2024 was read 7 Oct 2026 (B1320-A1 section below): a 1538 key of Lope Hurtado to Cobos, not a key source for the 1522 letters; ASKS row 74 answered
+- Kolosova's Ko.7/Ko.10 tables - [answered 17 Oct 2026: the 2024 book's Cifrario 7 and 10 transcribed to kolosova2024_cifra7.tsv / cifra10.tsv; applying them is LOPE-KEYAPP] was: blocker: waiting-on LOCAL-QUEUE.tsv row L17 (the owner's read of Kolosova 2017/2024). Bertomeu Masià 2024 was read 7 Oct 2026 (B1320-A1 section below): a 1538 key of Lope Hurtado to Cobos, not a key source for the 1522 letters; ASKS row 74 answered
 
 ## Escalation (GAPSFIX, 4 Oct 2026)
 - [ ] siblings: catalogue check done (R8-LOPE2, 6 Oct 2026): MSS/20212/27 (five letters 1522-1526, "Algunas parcialmente cifradas y con cifra", 14 h.) IS digitised in BNE Digital (card c3c70ca0-ac7a-42d5-8d01-f3216ed199d6), image host Cloudflare-blocked from the cloud; MSS/18697/29 (Tortosa 25 June 1522, "Parcialmente cifrada") has no digital link. next: capture the 14 leaves of MSS/20212/27 through the owner's browser (LOCAL-QUEUE viewer-capture row, as L57 for bne20211-ferdinand-1478), then a sign-inventory check against Bourdeau's 1522 and 1524 keys, ~$2
 - [x] clear-pages: R9644's and R9649's contemporary clear copies used by Bourdeau for the key (Job bLOP step 1)
-- [ ] known-keys: Kolosova Ko.7/Ko.10 reconstructions (LOCAL-QUEUE L17), not opened
+- [x] known-keys: Kolosova Ko.7/Ko.10 reconstructions opened 17 Oct 2026 (2024 book pp.200-202, 211-213; kolosova2024_*.tsv); application to R9634/R9646 = LOPE-KEYAPP, briefed
 - [x] print: CSP Spain II grepped whole-volume (bCSLOP); no. 497 flagged, not yet compared
 - [x] key-rebuild: Bourdeau's key_codes.tsv (49 confirmed) + 1524 key carried back, credited
 - [x] image-check: R9634 full-size via DECODE `--guess-fullsize` re-tested 6 Oct 2026 (A4-RFLOPE): served, but byte-identical in size to Bourdeau's file (P1 1,427,572 B, 3256x2365 per two-page opening, his NOTES 3 Oct); no larger image on DECODE. RAH Biblioteca Digital search: Anubis challenge on the search POST twice, host stopped; A-26 = 9/26 digitisation not established
@@ -653,3 +653,27 @@ Chapter: María José Bertomeu Masià, "Una cifra para negociar el matrimonio de
   Next, only if a 1530s Lope Hurtado or Cobos cipher letter enters the repo: transcribe the pp. 869-873 sign table
   (one vision call per page, ~5 x USD 0.5) and run key_crossmatch. Cite as Bertomeu Masià 2024; not a key source for
   R9634/R9646/R9649. Requests: eusal.es 5, 0 subagents, 0 vision.
+
+## Kolosova 2024 read: the two Lope Hurtado key tables (17 Oct 2026, 01:3x UTC by date -u; account-4 parent session_01D7XWmthshMVqxumdDvitPh; answers LOCAL-QUEUE L17 part (b))
+The owner's ILL scan of Olga Kolosova, *El lenguaje cifrado en tiempos de Carlos V (1521-1527)* (Salamanca 2024; OCLC 1541749253, ILL
+238338999, lender UVA) arrived 17 Oct 2026: four openings, pp.200-203 and 211-213 (PDF off the repository, copyright). They print
+**Cifrario 7, Lope Hurtado** (substitution alphabet p.200, nomenclature pp.200-202, 107 entries, nulls 'ausentes') and **Cifrario 10,
+Lope Hurtado** (alphabet p.211, nomenclature pp.212-213, 50 entries) -- Tomokiyo's Ko.7 and Ko.10 -- plus the end of Cifrario 9's
+nomenclature (p.211, 'd'-prefix groups) and Cifrario 8 (Marino Caracciolo) and 11 (the Adorni) in full. Transcribed by eye at the
+scan's native 272 ppi into `kolosova2024_cifra7.tsv`, `kolosova2024_cifra10.tsv` (word, code, our reading grade H/M, note) and
+`kolosova2024_alphabets.tsv` (every sign described in words). Grade: a published key (rule 10 `published`), credited.
+- **Cifra 7 is the 1522 Rome pool's key.** 27 of Bourdeau's confirmed word codes recur with the same value (ton que, xud hombre, 3ed
+  arçobispo, 3un da, rab Vuestra Majestad ...; list in HYPOTHESES.md), and the letter signs Bourdeau fixed on R9634 (7, ß = a; 8, H,
+  oo = e; 9 = d; 4 = n; c = s; # = f; 3 = h; α = i; ʇʇ = r) all sit in the cifra 7 columns. Five confirmed values disagree (top por/razón,
+  zar de/3az, tod otro/tud otra, ʃop bi/sop tiempo, ʃal esta/sal todo): logged as data conflicts in HYPOTHESES.md, each M until tested
+  at every occurrence (rule 4), never settled by majority.
+- **What it adds.** About 80 word codes Bourdeau never met (almirante, condestable, elección, emperador, imperio, inteligencia, Italia,
+  marqués, obispo, tregua, Ungría, Su Beatitud, Roma, ...). Bourdeau's R9634 residual (about 40 single-occurrence code groups, no clear
+  copy) is exactly the gap a published nomenclature fills -- the next job (LOPE-KEYAPP) applies it with a known-answer control on the
+  clear-copied records first.
+- **Not on these pages:** any mention of R9634/R9646/R9649, Salazar 9/26 folios, Ostia or Ferrara (the scan is the tables only; the
+  discussion is on the pages before 200); the doctoral thesis (L17 part (a)) is still unread.
+- Six questions: learned that the key for the pool is in print and matches the crib; depended on my reading of a 272 ppi halftone (M
+  rows marked); unverified: the five conflicts and the cifra-10 attribution of any 1522 record; alternative: Kolosova's values come from
+  letters of other dates, so a 'conflict' may be a key revision over time; most informative next: apply the table to R9649/R9644 as a
+  known answer, then to R9634's unread groups; decision: **continue, by key application** (pipeline 7 label), worker briefed.

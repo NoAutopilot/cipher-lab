@@ -1,0 +1,55 @@
+# Kolosova 2024, El lenguaje cifrado en tiempos de Carlos V (1521-1527), Ediciones Universidad de Salamanca.
+# Cifrario 10, Lope Hurtado (secondary cipher, Tomokiyo's Ko.10): substitution alphabet p.211, nomenclature pp.212-213. Transcribed 17 Oct 2026 by the account-4 parent from the owner's ILL scan (OCLC 1541749253, TN 238338999; PDF off the repository, copyright).
+# Published key (grade H as a key source, rule 10 'published'); `tx` = my reading of the printed group: H clear, M doubtful (note says why).
+# Notation: the printed prefix signs are written as the Latin letter they resemble: 3 (= Bourdeau's z), y (= Bourdeau's ɣ), x, t, s (long s, = Bourdeau's ʃ), r; cifra 10 adds f, d, p. The two or three letters after the prefix are as printed.
+word	code	tx	note
+al	3o	H	
+allá	3u	H	
+avis (-o/ar)	3ib	H	
+capitán	3ec	H	
+como	3ed	H	
+con	3ad	H	
+contra	3ad+sign+n	M	starred in the book: 3ad followed by a sign and n
+da	ya	H	
+de	ye	H	
+despach (-o/ar)	yp	H	
+día	po	M	prefix is a p-like sign
+dich (-o/a)	yab	H	
+dinero	yeb	H	same group as cifra 7 dinero
+ducado	yob	H	Bourdeau yob = ducado (probable, R9634 'lxx U yob z' = 70.000 ducados) agrees -- a cifra-10 value or a cifra-7 value Kolosova did not meet
+duque	yib	H	same group as cifra 7 duque
+ejército	yad	H	
+él	yub	H	same group as cifra 7 el
+ell-	yac	H	
+ella	yac+do	H	
+en	yec	H	
+es	yuc	H	
+francés	yod	H	
+Francia	yid	H	
+Génova	xa	H	
+gente	xe	H	
+gran	xo	H	
+guerra	xu	H	Bourdeau xu = gente (confirmed, R9645 gloss 'la gente de v. mgd'): CONFLICT with cifra 10 (gente = xe) unless R9645 is in cifra 7; logged
+ha	xab	H	
+he	xeb	H	
+hombre	xob	H	
+infant (-e/ería)	xac	H	
+la	xuc	H	
+le	xad	H	
+liga	xid	H	
+lo	xed	H	
+mal	to	H	
+mi	tib	H	
+Nápoles	tub	H	
+part (-e)	tof	H	
+paz	tif	H	
+por	teg	H	
+que	fib	H	
+rey	fu	H	
+Rey de Francia	fal	H	
+Rey de Portugal	fil	H	
+Roma	fez	H	
+tiempo	fut	H	
+Venecia	de	H	
+Visorrey	dab	H	
+Vuestra Majestad	dec	H	
