@@ -46,3 +46,5 @@ copy request, to the Bodleian, once the NRS answer is in.
 | | Images received | |
 
 - 17 Oct 2026: NRS SSD-786839 requires a GBP 15 non-refundable search-and-estimate fee before quoting GD406/1/2197 (ASKS 172); an earlier NRS reply says the collection is now the property of another party (text not yet on file).
+
+- 17 Oct 2026: NRS first reply of 13 Oct (SSD-786839) on file: the collection is now NRS property; permission to use copies for private research, and no objection to reproducing images as described, credited "National Records of Scotland, GD406/1/2197", copyright compliance ours (TNA flowcharts cited); frames from the microfilms GD406/1/10573-10576 can be requested later; the copy team then asked the GBP 15 search fee (ASKS 172; SPRINT.md P2).
