@@ -20,3 +20,4 @@ visit or a paid reproduction order against that microfilm cote.
 No personal data (this is an archival request only; nothing about the requester goes in this file).
 
 - 17 Oct 2026: BnF order VEL-2610-007904 (14 pages PDF, EUR 9.80, debited on delivery) confirmed 4 Oct 2026 for this item; delivery not yet checked (ASKS 172).
+- 17 Oct 2026 02:5x UTC: BnF order VEL-2610-007904 status "In progress", delivery time 1-3 weeks from 4 Oct 2026 (so by 25 Oct), 14 pages PDF by online delivery, EUR 9.80 incl. VAT; line: Ms-6314 ff.177-183 (piece 44 on f.177, piece 45 on f.182), ciphered and deciphered leaves (owner screenshot of the BnF account, 17 Oct).
