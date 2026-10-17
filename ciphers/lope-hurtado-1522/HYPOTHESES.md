@@ -23,3 +23,8 @@ Where the two disagree a code is graded M in any letter whose context does not s
 Agreements (A confirmed, B H): ton que, xud hombre, xul lo, xon mas, tu no, sub si, yaf es, 3un da, teg para, sid Su Santidad, xil le,
 xur na, yub el, taf papa, yof esta, yuc en, yon Francia, 3ed arçobispo, tef paz, su se, 3il con, rab Vuestra Majestad, yib duque,
 tel pues, 3uf cardenal, xug la, sed su -- 27 codes. Not in B: tab nunca, ɣm fue, ta no, teʒ nueva, ʃʃ su, yan fortaleza.
+
+### Tested at every occurrence (LOPE-KEYAPP, 17 Oct 2026; rows in reading_kolosova_gain.tsv; none resolved, all stay M)
+top: context admits por at 6/6 R9634 + 1/1 R9646 occurrences, razón at none; R9649's clear f.268 also has top = por; Bourdeau's tog = por x5
+in R9634. ʃop: a syllable (bi) inside spelled words at 7/7; tiempo admitted at none. tod: otro at 1/1 (*lo otro*). ʃal: both admitted at 4/4.
+zar: de at all 30 (both witnesses). xu: gente at 7/7 (not in cifra 7). The printed letters (3az, tud, top/tog) still need a re-read of the scan.

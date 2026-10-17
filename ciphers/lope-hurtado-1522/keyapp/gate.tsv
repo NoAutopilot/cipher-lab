@@ -1,0 +1,43 @@
+# primary: n=40 agree=27 disagree=1 absent=12 share=0.964 shuffle_mean=0.33 shuffle_p99=2 shuffle_max=3 gate=PASS
+# strict: n=30 agree=17 disagree=1 absent=12 share=0.944 shuffle_mean=0.22 shuffle_p99=2 shuffle_max=2 gate=PASS
+bourdeau	kolosova_notation	bourdeau_value	bourdeau_grade	witness	kolosova_words	verdict
+ton	ton	que	confirmed	R9644	que	agree
+tab	tab	nunca	confirmed	R9644		absent
+xud	xud	hombre	confirmed	R9644	hombre	agree
+xul	xul	lo	confirmed	R9644	lo	agree
+ɣm	ym	fue	confirmed	R9644		absent
+xon	xon	mas	confirmed	R9644	mas	agree
+tu	tu	no	confirmed	R9644	no	agree
+top	top	por	confirmed	R9644	razon	disagree
+xu	xu	hara	probable	R9644		absent
+ɣmᵹ	ymi	arcobispo	probable	R9644		absent
+xett	xett	gastar	probable	R9644		absent
+sub	sub	si	confirmed	R9644	si	agree
+ɣaf	yaf	es	confirmed	R9644	es	agree
+zun	3un	da	confirmed	R9644	da	agree
+zar	3ar	de	confirmed	R9644		absent
+ʃid	sid	Sa (Su Santidad)	confirmed	R9644	su santidad	agree
+ta	ta	no	confirmed	R9644		absent
+xil	xil	le (+s = les)	confirmed	R9644	le	agree
+xur	xur	na	confirmed	R9644	na	agree
+xuɡ	xug	la	confirmed	R9644	la	agree
+tod	tod	otro (+s = otros)	confirmed	R9644		absent
+tad	tad	obligado	probable	R9644		absent
+ʃuf	suf	tanta	probable	R9644	tanta	agree
+ɣᵹb	yib	duque	confirmed	R9644	duque	agree
+tel	tel	pues	confirmed	R9644	pues	agree
+ɣed	yed	embaxador	probable	R9644		absent
+ɣub	yub	el	confirmed	R9648	el	agree
+taf	taf	papa	confirmed	R9648	papa	agree
+ɣof	yof	esta	confirmed	R9648	esta	agree
+ɣuc	yuc	en	confirmed	R9648	en	agree
+ɣon	yon	Francia	confirmed	R9648	francia	agree
+zed	3ed	arçobispo	confirmed	R9648	arzobispo	agree
+tef	tef	paz	confirmed	R9648	nec/paz	agree
+ʃu	su	se	confirmed	R9648	se	agree
+zil	3il	con	confirmed	R9648	con	agree
+rab	rab	vuestra magestad	confirmed	R9648	vuestra magestad	agree
+zuf	3uf	cardenal	confirmed	R9649	capitan/cardenal	agree
+yan	yan	fortaleza	confirmed	R9649		absent
+tun	tun	querria	confirmed	R9649		absent
+ti	ti	ni	probable	R9649	ni	agree

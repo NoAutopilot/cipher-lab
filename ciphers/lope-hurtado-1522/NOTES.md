@@ -539,7 +539,7 @@ Read so far: 0 tokens read by this repository; by Bourdeau (dbourdeau/cyphersolv
 - R9634 residual (Bourdeau 872/1191 = 73.2% read, read_r9634.md at his HEAD a02b838, credited): ~40 single-occurrence code groups - blocker: no-key-material; no clear copy in the record or in CSP Spain ii (his NOTES "Remaining gaps"); Kolosova's Ko.7/Ko.10 tables are the only named key source (L17 / ASKS 74)
 - R9634 residual spelled words (14r12, 14v03, 14v16, 15r11, 15v05, 15v13) - blocker: illegible; DECODE's full-size file is the only image online and was re-tested 6 Oct 2026 (A4-RFLOPE section); a blind sign pass at that resolution settled none; needs the RAH images of 9/26 ff.14-16 (owner's browser on bibliotecadigital.rah.es, or a reproduction request)
 - R9646 remainder 19/118 and R9649 remainder 3/89 - blocker: illegible; Bourdeau's "Where the work is now limited": DECODE serves ~1700 px per folio, too little for per-glyph discrimination ("What would actually move this target" item 3)
-- Kolosova's Cifrario 7/10 values (kolosova2024_*.tsv, 17 Oct 2026) not yet applied to R9634/R9646/R9649 - blocker: not-attempted; next: LOPE-KEYAPP (known-answer control on R9649/R9644 first, then R9634's residual code groups), ~$6. Was: waiting-on LOCAL-QUEUE L17, answered 17 Oct 2026 (the 2024 book's tables; the 2017 thesis still unread)
+- Kolosova's Cifrario 7 applied (LOPE-KEYAPP, 17 Oct 2026): gate PASS, but only 2 new tokens in R9634 and 0 in R9646; the other ~40 single-occurrence R9634 code groups are absent from both printed tables - blocker: no-key-material; the 2024 book's discussion pages before p.200 and the 2017 thesis (LOCAL-QUEUE L17 part (a)) are the remaining key source
 
 ## Escalation (GAPSFIX, 4 Oct 2026)
 - [ ] siblings: catalogue check done (R8-LOPE2, 6 Oct 2026): MSS/20212/27 (five letters 1522-1526, "Algunas parcialmente cifradas y con cifra", 14 h.) IS digitised in BNE Digital (card c3c70ca0-ac7a-42d5-8d01-f3216ed199d6), image host Cloudflare-blocked from the cloud; MSS/18697/29 (Tortosa 25 June 1522, "Parcialmente cifrada") has no digital link. next: capture the 14 leaves of MSS/20212/27 through the owner's browser (LOCAL-QUEUE viewer-capture row, as L57 for bne20211-ferdinand-1478), then a sign-inventory check against Bourdeau's 1522 and 1524 keys, ~$2
@@ -549,7 +549,7 @@ Read so far: 0 tokens read by this repository; by Bourdeau (dbourdeau/cyphersolv
 - [x] key-rebuild: Bourdeau's key_codes.tsv (49 confirmed) + 1524 key carried back, credited
 - [x] image-check: R9634 full-size via DECODE `--guess-fullsize` re-tested 6 Oct 2026 (A4-RFLOPE): served, but byte-identical in size to Bourdeau's file (P1 1,427,572 B, 3256x2365 per two-page opening, his NOTES 3 Oct); no larger image on DECODE. RAH Biblioteca Digital search: Anubis challenge on the search POST twice, host stopped; A-26 = 9/26 digitisation not established
 - [n/a] retry: no attempt of ours on any of the three records to retry
-Verdict: keep going: 1 internal gap (Kolosova's Cifrario 7/10 not yet applied; LOPE-KEYAPP running since 17 Oct 2026, ~$6), otherwise 0 internal gaps on R9634 (A4-RFLOPE, 6 Oct 2026: residual is no-key-material or illegible at DECODE's only resolution); cheapest next: siblings, a LOCAL-QUEUE viewer-capture row for BNE MSS/20212/27 (digitised, BNE Digital card c3c70ca0-ac7a-42d5-8d01-f3216ed199d6; cloud blocked by Cloudflare, R8-LOPE2 6 Oct 2026), then a sign-inventory/key check, ~$2
+Verdict: keep going: 0 internal gaps after LOPE-KEYAPP (17 Oct 2026: cifra 7 applied, gate PASS, +2 tokens; residual no-key-material or illegible) on R9634 (A4-RFLOPE, 6 Oct 2026: residual is no-key-material or illegible at DECODE's only resolution); cheapest next: siblings, a LOCAL-QUEUE viewer-capture row for BNE MSS/20212/27 (digitised, BNE Digital card c3c70ca0-ac7a-42d5-8d01-f3216ed199d6; cloud blocked by Cloudflare, R8-LOPE2 6 Oct 2026), then a sign-inventory/key check, ~$2
 
 ## RUN6-LOPE (5 Oct 2026): CSP Spain II no. 497 vs Bourdeau's read_r9649.md (disk + one shallow clone; 0 network hosts besides github.com, 1 request)
 Source: dbourdeau/cyphersolver HEAD a43993754e2e (read 5 Oct 2026), `targets/lopehurtado/` read_r9649.md, read_r9644.md, NOTES.md; MIT code / CC BY 4.0 text, credited. No new reading, no decode; comparison of already-logged claims (bLOP2 section (1) above had the 497 identification; this job re-checks it against his files at the current HEAD).
@@ -677,3 +677,53 @@ scan's native 272 ppi into `kolosova2024_cifra7.tsv`, `kolosova2024_cifra10.tsv`
   rows marked); unverified: the five conflicts and the cifra-10 attribution of any 1522 record; alternative: Kolosova's values come from
   letters of other dates, so a 'conflict' may be a key revision over time; most informative next: apply the table to R9649/R9644 as a
   known answer, then to R9634's unread groups; decision: **continue, by key application** (pipeline 7 label), worker briefed.
+
+## LOPE-KEYAPP (17 Oct 2026, 01:4x UTC by date -u; account-4 worker; brief 2026-10-17-acct4-research-director-3.md): Kolosova cifra 7 applied
+Pre-registered in `PREREG-LOPE-KEYAPP.md` (3f7ee15e0, pushed before any scored run). Witness: Bourdeau, dbourdeau/cyphersolver
+`targets/lopehurtado/` at HEAD **044576987ca9336b06f7c6598aaa89a4b57fa9f4** (2026-10-14; one shallow clone, deleted after; his
+`r9634_cipher.txt` and `r9634_reading.tsv` copied into `keyapp/` with credit, CC BY 4.0 / MIT). Scripts: `keyapp/gate.py`
+(writes `keyapp/gate.tsv`) and `keyapp/apply.py` (writes `reading_kolosova_gain.tsv`), both with `--check` (rule 7).
+
+**Known-answer gate: PASS.** 40 code groups whose value Bourdeau fixed from the clear copies (R9644 ff.241-242, incl. the R9648
+duplicate; R9649 f.268): **agree 27, disagree 1, absent 12**; share 27/28 = 0.964 (gate 0.80); shuffled-word null (200, seed
+1522) mean 0.33, **p99 2**, max 3. Strict subset without R9648: 17 / 1 / 12, 0.944, p99 2: PASS. The one disagreement is `top`
+(Bourdeau por, Kolosova razón; por = tog). Absent include the two other spelling conflicts as printed (`zar`/3az, `tod`/tud) and
+tab nunca, ɣm fue, ta no, xu hara, tad obligado, ɣed embaxador, yan fortaleza, tun querria (codes Kolosova's table does not list).
+
+**Application.** Of Bourdeau's unread or probable code tokens, cifra 7 values:
+
+| record | line | token | cifra 7 | grade | before | sense |
+|---|---|---|---|---|---|---|
+| R9634 | 14v01 | zac (3ac) | allí | M (our tx of the print: c or r) | unread | *que por allí ponga V. Mt.* |
+| R9634 | 15v06 | ʃi (si) | sabe | H | unread | *no sabe con el recabdo ...* (one word; the clause stays open at `ʃq`) |
+| R9634 | 14v11 | zub (3ub) | allá | H | probable, left unread | *los xar-s allá estan apercebidos* (`xar` still unread) |
+| R9634 | 14v13 | zub (3ub) | allá | H | probable, left unread | *allá la gente es esta de frontera* |
+| R9646 | run 1 | yib | duque | H | probable | upgrade only (*con el duque de Ferrara*) |
+
+R9646's unread codes `zip`, `zob`, `ʃof`, `ʃel` are in neither table. R9634's other unread groups (ʃe, xer, zud, xep, ʃum, yat,
+yel x4, xar, ʃof, ʃud x2, xas, zɣ, yul, xen, zer, ʃab, ʃq, xin ...) are absent from cifra 7; xig8∂ and xor8 are glued (code + signs)
+and stay leads. **Gain: R9634 +2 tokens newly valued (zac M, ʃi H) and 2 probable -> H (zub); read-as-sense about 872 -> 876 /
+1191 (73.2% -> 73.6%); valued 1119 -> 1121 / 1191. R9646: +0 (97/121 unchanged), 1 probable -> H.**
+
+**Conflict codes at every occurrence (all M; full rows in `reading_kolosova_gain.tsv`):** `top` x6 in R9634 and x1 in R9646:
+context admits por at every one (razón at none; *por Flandes ni por España*, *por el*); R9649's own clear copy (f.268) also gives
+*por Ostia*, *porque* for `top`, and Bourdeau reads `tog` = por five times in R9634, so 1522 writes both. `ʃop` x6 + x1: always a
+syllable inside a spelled word (o-bi-eran, a-bi-a); tiempo breaks every word. `tod` x1 (14v08 *lo otro que le queda*): otro, not
+otra. `ʃal` x4: both values admitted at all four (15v10 *en todo esto* reads more naturally than *en esta esto*; 14r10, 14v02,
+14v13 either). `zar` x30: both witnesses give *de*; the conflict is only the printed group's last letter. `xu` x7: gente at all
+(cifra 7 has no xu; cifra 10 xu = guerra, xe = gente). No value was picked.
+
+**Cifra 10 check.** Code tokens found in cifra 7 vs cifra 10: R9634 239 vs 56 of 335; R9646 25 vs 10 of 35. Neither record fits
+cifra 10 better: not flagged. Codes only in cifra 10: xu (7), tif (2), yob ducado (2, Bourdeau's probable), xob (2, cifra 10 hombre;
+Bourdeau *grandes*), yac (1) -- consistent with Kolosova's note that some groups recur across her two Lope tables.
+
+**Decision (pre-registered (b)):** gate PASS, 2 (< 10) new tokens in R9634. The published table confirms the pool's key (27 of 28
+overlapping clear-copy codes) but reads little of what Bourdeau left: his residual is mostly codes cifra 7 does not print. What
+would move it: Kolosova's discussion pages before p.200 and her 2017 thesis (LOCAL-QUEUE L17 part (a)) for codes not in the
+summary table; the BNE siblings MSS/20212/27 (digitised, Cloudflare-blocked from the cloud) for second contexts. Label if counted:
+`key application` (pipeline 7). No key.tsv written; status stays partial. Search scope: only Bourdeau's repository files named in
+the brief and our three Kolosova TSVs; no other source opened.
+- Six questions: learned that cifra 7 is the pool's key (gate 0.964 vs null p99 2) yet adds about 0.3 points to R9634; depended on our
+  272 ppi transcription of the print and on Bourdeau's transcription of R9634; unverified: the five conflicts' printed letters
+  (only a re-read of the scan settles 3az/tud/top), zac's c/r; alternative: Kolosova's table is a summary of her edition and omits
+  rare groups, so 'absent' is not 'not in the key'; most informative next: the thesis/discussion pages; decision: acquire, not continue.
