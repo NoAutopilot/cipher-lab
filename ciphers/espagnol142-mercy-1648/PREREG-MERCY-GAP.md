@@ -37,3 +37,12 @@ Gate failure or control failure = non-test: logged, targets not read, stop.
 After a pass only: margin m = t - g (glued side positive). Smallest held-out positive margin = m0. A target with m > m0 on the glued
 side, or with -m > the smallest held-out negative margin on the split side, is a lead for the verifier (DV-MERCY3), never applied here;
 otherwise it stays M. Glued-side leads are further qualified by the diagnostic (glued vs intra-code). Reading, key, AUDIT.md unchanged.
+
+## Decision
+(Belief and Would-change restate the gate pushed in 3f58c1d96 before measurement; that commit's section headed "Decision" carried the
+brief's rule but not this tool's five-line form, added here after the run -- the gate itself is unchanged.)
+Belief: this writer leaves a visibly smaller gap inside a glued cluster than between tokens, so a pixel gap can say "spaced" for 2|3.
+Would change it: LOO with every held-out known cluster on the glued side and >= 90% of negatives on the split side, and the label-shuffled control failing that gate in >= 19 of 20.
+Observed: real LOO 5/6 known clusters glued side (held-out 65 at r24:4-5, g 0.714, falls split side), negatives 0.940 split side (N 168) -> FAIL; shuffled control fails 20/20 (control PASS); diagnostic: intra-code gaps median 0.178 (N 120) overlap the glued clusters (0.000-0.714) entirely.
+Decision: stop -- non-test by the pre-registered gate; r20:6-7, r18:5-6, r24:14-15 not read; they stay M.
+Lesson: on f.22r the glued-cluster gaps (0-0.71 digit widths) reach the low tail of between-token gaps (about 6% of 168 under 0.72, some 0.0 from touching or alignment), so six positives cannot hold a threshold under LOO; and glued 2|3 and code 23 are both "written together" (diagnostic overlap), so even a pass could only ever decide the split side.

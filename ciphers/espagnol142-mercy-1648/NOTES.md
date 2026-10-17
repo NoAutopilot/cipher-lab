@@ -2912,3 +2912,19 @@ re-read could grant S 89; every M as transcribed 393; bar 125.9 (es17c). The cla
 gated on the six known glued clusters (~USD 2, disk only); code 25 waits on new key material (ASKS 60). Side findings for the verifier:
 r17:5 already meets the companion rule (both gated readers 14, own group); r16:3 and r16:6 exceptions say 14 but both gated readers read
 19 -- a conflict, logged not settled. No reading, key or AUDIT.md edit.
+
+## MERCY-GAP (17 Oct 2026)
+Can a pixel gap statistic, gated on the six known glued clusters, cut the in-range clusters r20:6-7, r18:5-6, r24:14-15? PREREG
+(PREREG-MERCY-GAP.md, pushed 3f58c1d96 before measurement). Instrument: `mercygap/seg.py` + `mercygap/gap.py` (column ink runs on
+images/f22r_canvas58.jpg r16-r24, DP-aligned to ciphertext.tsv digits, gap normalized by the row's median digit width; `mercygap/gaps.tsv`),
+`mercygap/gate.py` (LOO threshold). Disk only, no readers, no vision calls.
+- Positives (72, 52, 48, 48, 186, 65): g = 0.253, 0.000, 0.579, 0.500, 0.156, 0.714. Negatives: 168 ordinary between-token gaps,
+  median 1.273, p10 0.843, low tail 0.000, 0.000, 0.084, 0.511 ...
+- Gate: LOO 5/6 positives glued side (65 held out lands split side), negatives 0.940 split side -> **FAIL**. Control: label-shuffled LOO
+  fails the gate 20/20 (control PASS). Diagnostic: intra-code gaps of genuine two-digit codes, median 0.178 (N 120), overlap the glued
+  clusters entirely, so "written together" cannot separate code 23 from glued 2|3 even in principle; only the split side could ever speak.
+- **Non-test.** The three targets were not read and stay M; reading, key and AUDIT.md unchanged.
+- For a verifier (DV-MERCY3): a gap instrument here needs more positives (more glued out-of-range clusters, e.g. from f.22v and r01-r15,
+  which have no row crops at this band setting yet but the page images are on disk) and a check of the 0.0 negatives (r17:18-20 "17 5 10"
+  read as one ink run: touching or an alignment error), before a re-run would be a different test rather than a tuning of this one.
+  The 23-vs-2|3 question remains a sense/key question (MERCY-CEIL), not a pixel one.
