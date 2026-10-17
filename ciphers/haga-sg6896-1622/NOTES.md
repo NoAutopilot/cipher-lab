@@ -173,3 +173,66 @@ and is the one action the next worker or lane can take without waiting.
 
 No decipherment, plaintext, or discussion of this item (NA 1.01.02 inv. 6896, the 30 April 1622 Haga duplicate)
 found in any of the seven queries across the three named blogs and open web search.
+
+## HAGA-LEAF (17 Oct 2026)
+
+**Leaf not pinned to a single scan this pass, but the search range is narrowed from CHECK-HAGA's 256-400
+(144 scans, untested at native resolution) to about order 321-327 (6-7 scans), using a calendar method rather
+than more contact-sheet sampling.**
+
+12 native-resolution single scans fetched via `service.archief.nl/api/file/v1/default/{uuid}` (the item page's
+own `drupal-settings-json` -> `viewer.response.scans` gives order -> uuid -> this URL directly, no METS/IIIF path
+construction needed; simpler than `ciphers/oldenbarnevelt-brederode-1605/screen_tools/na_fetch.py`'s pattern for
+this host). Full list, UUIDs and per-scan findings in `images/manifest.json`; images under `images/` (15 MB).
+Requests: 12 image fetches + 1 item-page fetch = 13 to www.nationaalarchief.nl/service.archief.nl, >=1.5s apart
+(two were a 3.1s cadence from an earlier probe, well clear), no 429/403/challenge.
+
+**Method.** inv. 6896 is not Haga's letters alone: it is a mixed Levant/Barbary file (Smyrna bills of exchange,
+Algiers/Tunis instructions, Ottoman-script correspondence, Livorno and Milan letters, general news digests, as
+well as Haga's own despatches), confirmed by what the 12 scans actually show (manifest "finding" field per scan).
+Many leaves carry a clerk's docket at the top of the first page in the form "Dat[um] <written date> / Rece[ptum]
+<received date> <year>" -- when present, this gives the archive's own filing date directly, which is more reliable
+than guessing from transit-time alone (CHECK-HAGA's approach). Two such dockets were read this pass and used as
+calendar anchors:
+
+| scan order | docket read | note |
+|---|---|---|
+| 320 | Dat 28 maert / Recep 14 april 1622 | unrelated correspondent (troop/regiment matter) |
+| 328 | Date 17 juny / Recepto 7 july 1622 | opens with Constantinopel news (Sultan Osman/Mustafa, the May 1622 Ottoman regicide) |
+
+Both anchors are internally consistent: written-date gap (17 Jun - 28 Mar = 81 days) over 8 scan-orders and
+received-date gap (7 Jul - 14 Apr = 84 days) over the same 8 orders agree to within 4%, giving a local rate of
+about 10.1-10.5 days per scan-order in this stretch of the volume (scan density is *not* uniform across the whole
+575-scan item -- order 330 to 350 alone spans 5 Jul to about 12-22 Aug, a much faster ~4 days/order, so this rate
+is local to orders ~320-330 only and should not be extrapolated past that window).
+
+Applying the 320 anchor's rate to the target's two written dates:
+- 16 April 1622 (the original, res. 3504): 28 Mar + 19 days -> order ~320 + 19/10.1 ~ **322**
+- 30 April 1622 (the duplicate, res. 3504a, the actual target): 28 Mar + 33 days -> order ~320 + 33/10.1 ~ **323**
+
+Order 327 (checked directly, one order before the 328 anchor) already carries Constantinopel/Ottoman-regicide
+news matching the same register as 328, supporting that orders ~325-330 are the right general neighbourhood for
+Constantinopel material reaching The Hague in June-July 1622. Order 340's docket was not fully read this pass
+(budget) but its left-margin address note appears to read "...Constantinopoli" -- plausibly a later Haga letter
+(consistent with the calendar: 340 would fall after the 328 anchor, i.e. written later than 17 June).
+
+**Not found within the 12-scan cap**: no scan actually fetched (100, 230, 252, 274, 300, 320, 327, 328, 330, 340,
+350, 450) is the 16 or 30 April Haga letter or its docket -- the two calendar anchors bracket the target to orders
+**321-327** (the span between the 14 April receipt anchor's neighbourhood and the first Constantinopel-news hit)
+without landing on it directly within this worker's cap.
+
+### Next step (HAGA-LEAF2, unblocked, cheap)
+
+Fetch native-resolution scans for orders **321, 322, 323, 324, 325, 326** (6 scans, all inside the narrowed
+window, same `service.archief.nl/api/file/v1/default/{uuid}` route via `images/manifest.json`'s per-order
+UUIDs already on file where reused, else re-read from the item page's `drupal-settings-json`); read each
+docket/first line for "Haga", "Constantinopel", "16 april" / "30 april" / "duplicaet". ~USD 2 (6 vision calls
++ overhead) at the README per-pass rate. If found: proceed to **HAGA-KEYAPP** (Bourdeau's R2118 alphabet +
+nomenclator against the cipher spans, shuffled-key control, label key application per RETRO-2026-10-05 P4) --
+about USD 2 more, per CHECK-HAGA's original estimate. If not found in 321-326: extend one order at a time
+outward (327 already checked; try 319, 318... and 329, 331... before widening past the 310-335 band), since
+the 10.1 days/order rate is only a local estimate and the true position of a single 2-3 day gap between the
+16 and 30 April letters' receipt could sit a few orders either side.
+
+Unblocked, as before (CHECK-HAGA, "## While waiting" above): the leaf-location step above depends on nobody
+and is the next action available to any worker or lane.

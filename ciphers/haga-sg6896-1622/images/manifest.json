@@ -1,0 +1,129 @@
+{
+  "source": "https://www.nationaalarchief.nl/onderzoeken/archief/1.01.02/invnr/6896",
+  "item": "NA 1.01.02 inv. 6896, unittitle 1622, 575 scans total",
+  "fetch_method": "service.archief.nl/api/file/v1/default/{uuid} (native resolution JPEG), one request at a time, >=1.5s apart",
+  "fetched_by": "HAGA-LEAF worker, 17 Oct 2026",
+  "user_agent": "cipher-lab research script (contact via repository)",
+  "scans": [
+    {
+      "order": 100,
+      "uuid": "fad9a92f-0980-4cb5-81f8-a57a3622f7ba",
+      "label": "NL-HaNA_1.01.02_6896_0100.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/fad9a92f-0980-4cb5-81f8-a57a3622f7ba",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/fad9a92f-0980-4cb5-81f8-a57a3622f7ba.jp2/info.json",
+      "bytes_fetched": 6493041,
+      "local_file": "images/s0100.jpg",
+      "finding": "Ottoman/Arabic-script document (not Dutch cursive); unrelated item in this mixed Levant file."
+    },
+    {
+      "order": 230,
+      "uuid": "1629a373-bb21-4fba-aba6-e935384763ff",
+      "label": "NL-HaNA_1.01.02_6896_0230.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/1629a373-bb21-4fba-aba6-e935384763ff",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/1629a373-bb21-4fba-aba6-e935384763ff.jp2/info.json",
+      "bytes_fetched": 7485632,
+      "local_file": "images/s0230.jpg",
+      "finding": "Italian bill-of-exchange entry, \"Laus Deo en Smirne 16 8bre 1621\"; resolution text headed \"Op huyden den 26 November 1621\", mentions Cornelio Haga and Smirna (Smyrna) but is a financial resolution, not the target letter."
+    },
+    {
+      "order": 252,
+      "uuid": "8ded609c-87b3-4ff6-bd90-6a67550eb4f6",
+      "label": "NL-HaNA_1.01.02_6896_0252.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/8ded609c-87b3-4ff6-bd90-6a67550eb4f6",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/8ded609c-87b3-4ff6-bd90-6a67550eb4f6.jp2/info.json",
+      "bytes_fetched": 7510883,
+      "local_file": "images/s0252.jpg",
+      "finding": "Dutch instruction/resolution re Algiers and Tunis negotiations; margin note \"9 february 1622\"; mentions \"den Oratuer Haga\" in passing (instruction text, not a Haga despatch)."
+    },
+    {
+      "order": 274,
+      "uuid": "3ab42691-028d-4715-9c27-7047d7605df2",
+      "label": "NL-HaNA_1.01.02_6896_0274.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/3ab42691-028d-4715-9c27-7047d7605df2",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/3ab42691-028d-4715-9c27-7047d7605df2.jp2/info.json",
+      "bytes_fetched": 6896821,
+      "local_file": "images/s0274.jpg",
+      "finding": "Docket: \"date le 10 Decembre 1621 / Recu 5 january 1622\"; a different correspondent (Cornel Baldron/Spanish-Imperial military affairs), not Haga. First clear example of the docket format (Datum/written + Recu/received)."
+    },
+    {
+      "order": 300,
+      "uuid": "eae0f154-c703-417f-b225-8de6625b3bb6",
+      "label": "NL-HaNA_1.01.02_6896_0300.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/eae0f154-c703-417f-b225-8de6625b3bb6",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/eae0f154-c703-417f-b225-8de6625b3bb6.jp2/info.json",
+      "bytes_fetched": 6178216,
+      "local_file": "images/s0300.jpg",
+      "finding": "Docket: \"Gheschreven 3 maert 1622\"; French letter re silk bales ex Venice via Amsterdam, signed Christoffel Jurriaens -- unrelated correspondent."
+    },
+    {
+      "order": 320,
+      "uuid": "6b0ee755-3f65-40bd-b956-5a08f61afedd",
+      "label": "NL-HaNA_1.01.02_6896_0320.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/6b0ee755-3f65-40bd-b956-5a08f61afedd",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/6b0ee755-3f65-40bd-b956-5a08f61afedd.jp2/info.json",
+      "bytes_fetched": 6509154,
+      "local_file": "images/s0320.jpg",
+      "finding": "Docket: \"Dat 28 maert / Recep 14 april 1622\"; unrelated correspondent (troop/regiment matter). Key calendar anchor: written 28 Mar, received 14 Apr 1622."
+    },
+    {
+      "order": 327,
+      "uuid": "f1d49cd9-b473-4a78-91b3-271abd21ea03",
+      "label": "NL-HaNA_1.01.02_6896_0327.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/f1d49cd9-b473-4a78-91b3-271abd21ea03",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/f1d49cd9-b473-4a78-91b3-271abd21ea03.jp2/info.json",
+      "bytes_fetched": 6857570,
+      "local_file": "images/s0327.jpg",
+      "finding": "No docket visible in this spread; right-hand page carries a news paragraph \"Uyt de brieven van Constantinopele\" reporting Sultan Osman's deposition/death and Sultan Mustafa's succession (the May 1622 Ottoman regicide) -- a digest/newsletter item, not an addressed despatch."
+    },
+    {
+      "order": 328,
+      "uuid": "fc79fcaf-4c1b-4ab5-b6f2-3eaa6d34f95f",
+      "label": "NL-HaNA_1.01.02_6896_0328.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/fc79fcaf-4c1b-4ab5-b6f2-3eaa6d34f95f",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/fc79fcaf-4c1b-4ab5-b6f2-3eaa6d34f95f.jp2/info.json",
+      "bytes_fetched": 6331981,
+      "local_file": "images/s0328.jpg",
+      "finding": "Docket: \"Date 17 juny / Recepto 7 july 1622\"; right-hand page again opens on Constantinopel news (Sultan Osman/Mustafa). Second key calendar anchor: written 17 Jun, received 7 Jul 1622."
+    },
+    {
+      "order": 330,
+      "uuid": "60f73517-4927-47ab-8e47-d45815194e74",
+      "label": "NL-HaNA_1.01.02_6896_0330.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/60f73517-4927-47ab-8e47-d45815194e74",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/60f73517-4927-47ab-8e47-d45815194e74.jp2/info.json",
+      "bytes_fetched": 6876234,
+      "local_file": "images/s0330.jpg",
+      "finding": "Docket: \"dd 5 juli 1622\"; Milan military-affairs letter, unrelated correspondent."
+    },
+    {
+      "order": 340,
+      "uuid": "c7c24c18-1b21-45cd-ba41-008f3fe12f09",
+      "label": "NL-HaNA_1.01.02_6896_0340.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/c7c24c18-1b21-45cd-ba41-008f3fe12f09",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/c7c24c18-1b21-45cd-ba41-008f3fe12f09.jp2/info.json",
+      "bytes_fetched": 6586558,
+      "local_file": "images/s0340.jpg",
+      "finding": "Docket not fully resolved on this pass; left-page corner carries an address note reading \"...Constantinopoli\" and the body opens \"Hooghe ende mogende Heeren\"; most likely a Haga Constantinopel letter, received around late July 1622 (consistent with the 320/328 calendar anchors) -- later than the 16/30 April target, not re-examined closely given the budget."
+    },
+    {
+      "order": 350,
+      "uuid": "bf8eb8ec-1b96-4715-8d93-adea7e684441",
+      "label": "NL-HaNA_1.01.02_6896_0350.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/bf8eb8ec-1b96-4715-8d93-adea7e684441",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/bf8eb8ec-1b96-4715-8d93-adea7e684441.jp2/info.json",
+      "bytes_fetched": 5898177,
+      "local_file": "images/s0350.jpg",
+      "finding": "Resolution dated \"s Gravenhage den 12 augusti 1622\" on the facing page; loose note dated \"Lactum 22 augusti 1622\" -- August 1622, confirms the volume continues past the target window at this order."
+    },
+    {
+      "order": 450,
+      "uuid": "f1b6d505-e3e7-481e-a740-b35b2e2b4d06",
+      "label": "NL-HaNA_1.01.02_6896_0450.jpg",
+      "default_url": "https://service.archief.nl/api/file/v1/default/f1b6d505-e3e7-481e-a740-b35b2e2b4d06",
+      "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=0f/fb/b6/05/88/59/46/fa/ad/46/28/d5/d9/0c/53/12/f1b6d505-e3e7-481e-a740-b35b2e2b4d06.jp2/info.json",
+      "bytes_fetched": 6897457,
+      "local_file": "images/s0450.jpg",
+      "finding": "Letter from Livorno, partly legible date \"...1622\"; Italian text on the facing page -- unrelated correspondent, confirms the volume mixes many Mediterranean/Levant correspondents throughout, not a single chronological Haga run."
+    }
+  ]
+}
