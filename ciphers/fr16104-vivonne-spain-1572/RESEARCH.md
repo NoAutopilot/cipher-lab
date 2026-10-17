@@ -252,3 +252,9 @@ key.tsv against an AD of 94.6, so no transcription of any quality can surface a 
 (3) only then KEYCELL-READ, scoped to the signs the alignment names. KEYCELL-READ at USD 8 is held, not briefed. If (1) finds the p/m
 positions scattered across labels, that confirms T1 for those letters and the reader brief gets the exact tiles. Counterfactual: the
 reader experiment first would have cost USD 8 to measure a floor that, on this key, cannot reach the bar at any error.
+
+### 6b. After VIV-KCELLS (17 Oct 2026, 03:2x UTC; account-4 parent)
+Known-answer control PASS (12/14). p sits under unkeyed label c (share 0.62, purity 0.75), m under unkeyed label 2 (0.61, 0.69): merged
+labels (T1), not absent signs. Next: VIV-KCELLS2, the crossword test on ink 63 (c=p, 2=m as trial cells vs a value-shuffled control) and
+the ERR-SIM crossover on the extended key; then split labels c and 2 at the exact tiles (tile reader, or the owner's targeted sort of
+about 100 tiles). KEYCELL-READ on whole leaves stays held.

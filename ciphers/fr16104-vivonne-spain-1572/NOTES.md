@@ -4414,3 +4414,27 @@ key.tsv's own note says. **Target (p, m, f; k, x, y, b, h, z) not run**: the con
 80% of the 45-minute box, so the registered stop applied; no cell proposed, no key edit, ceiling unchanged (ERR-SIM's 54).
 Next (one line): `python3 tx/kcells/kcells.py --target` (about 30 s; it refuses unless control_result.json PASSed), then the PREREG's rule
 (a)/(b), ~$1.
+
+### VIV-KCELLS target step (17 Oct 2026, 03:2x UTC by date -u; run by the account-4 parent, `tx/kcells/kcells.py --target`, 24 s, after the worker's control PASS; PREREG-VIV-KCELLS.md rule applied as registered; no key edit)
+Pooled positions where the clerk's letter is p / m / f (and b, h, x, y, z, k), the reader label found there, per-pair share and the label's own purity (what else that label carries at aligned positions), from tx/kcells/target_result.json:
+
+| letter | n | top label | share | per pair P40 / P67 / P70 | label purity | rule |
+|---|---|---|---|---|---|---|
+| p | 151 | c (unkeyed) | 0.623 | 0.704 / 0.797 / 0.152 (P70 writes the sign as o, 0.515) | p 0.746, e 0.127, q 0.071 | between 1/2 and 2/3: report, no edit |
+| m | 120 | 2 (unkeyed) | 0.608 | 0.651 / 0.464 / 0.655 | m 0.689, u 0.142 | between 1/2 and 2/3: report, no edit |
+| f | 31 | S | 0.323 | 0.526 / 0 / 0 | b 0.403, e 0.361 | scattered: T1 for f (VIV-FKEY agreed) |
+| b | 61 | S (key.tsv M) | 0.951 | 0.958 / 0.933 / 0.955 | b 0.403, e 0.361 | share met, but the label is 36% e: not a cell |
+| h | 22 | y (key.tsv M) | 1.000 | - / 1.0 / 1.0 | l 0.647, r 0.143 | share met, but the label is mostly l: not a cell |
+| x | 10 | t | 0.70 | 0 / 0 / 1.0 | x 0.259 | n at the floor, one pair: report |
+| y, z, k | 6, 5, 0 | - | - | - | - | too few |
+
+Reading: the two letters that cap the clause (ERR-SIM) are not missing from the readers' output; they sit under two labels the key never
+named, c and 2, at about three-fifths share, and those labels are three-quarters p and seven-tenths m. The rest of each label is e/q and
+u, and on ink 70 the readers wrote the p sign as o. So the gap is a merge in the reader alphabet (T1), not an absent sign. b and h look
+keyed by share alone but their labels are dominated by other letters (S is 36% e; y is 65% l), which is why key.tsv holds them at M.
+Decision (registered): no key edit here. Next, pre-registered in VIV-KCELLS2: the crossword test -- decode ink 63 with c=p and 2=m as
+trial cells against a value-shuffled control (does the all-H run move, and past 94.6?), the ERR-SIM crossover on that extended key, and
+the exact tiles (p_positions.tsv, m_positions.tsv) for a split of labels c and 2 by a tile reader or the owner's eye.
+Six questions: learned that p and m are reader-label merges, not absent signs; depended on the stream alignment whose control passed
+12/14; unverified: the per-pair P70 inconsistency (reader pass or hand); alternative: label c could be a homophone pair the clerk used
+for both p and e; most informative next: the ink-63 crossword test with a shuffled control; decision: continue.
