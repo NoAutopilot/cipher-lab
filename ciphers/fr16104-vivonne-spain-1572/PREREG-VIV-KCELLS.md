@@ -48,6 +48,6 @@ written as in (b). (c) gate fail: non-test.
 ## Decision
 Belief: the clerk pairs carry p/m/f at stable reader labels the key simply never named (VIV-ANCHOR's windows could not anchor them).
 Would change it: LOO control recovered >= 10/14 with shuffle < 4/14, then p/m labels below 1/2 share (merged signs) -> T1, tile reader next.
-Observed: <pending>
-Decision: <pending>
-Lesson: <pending>
+Observed: LOO known-answer control 12/14 recovered (l and q missed: l top label y 170 of 373, own share 0.483; q own 0.567) vs chunk-shuffle mean 2.95/14 (max 5, 20 shuffles): gate PASS; target (p/m/f) not run -- the control ended at 03:03 UTC, past 80% of the 45-min box (02:21-03:06).
+Decision: continue -- run `tx/kcells/kcells.py --target` (about 30 s, no new gate) in a fresh box and apply rule (a)/(b) as registered; no key edit by this job.
+Lesson: a key-seeded whole-stream DP passes a leave-one-letter-out known-answer gate on these pairs where the flat-start stream tool failed (VIV-K 2/30); price the 21x14 control at about 40 min on 4 CPUs, not minutes, before the box.

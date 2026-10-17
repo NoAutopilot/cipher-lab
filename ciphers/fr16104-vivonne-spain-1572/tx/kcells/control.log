@@ -1,0 +1,3 @@
+LOO real: 12/14
+shuffles: [2, 1, 3, 3, 3, 1, 4, 3, 4, 2, 3, 2, 2, 4, 5, 4, 3, 1, 5, 4]
+{"real_recovered": 12, "shuffle": [2, 1, 3, 3, 3, 1, 4, 3, 4, 2, 3, 2, 2, 4, 5, 4, 3, 1, 5, 4], "shuffle_mean": 2.95, "shuffle_max": 5, "gate": "PASS"}

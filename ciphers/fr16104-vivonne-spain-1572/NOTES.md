@@ -4400,3 +4400,17 @@ the all-H run statistic (VIV-F191/B/D, VIVPACKET3, GSPLIT3E, the D1 calls) was c
 cannot. Crossover: not defined; no error level, including 0, reaches the bar on this key. Next: the key-structure wave, p and m cells
 first (RESEARCH.md section 5). Then rerun `tx/err_sim/err_sim.py` (seconds per sweep) with the extended key, to get the reader-error
 crossover that this run could not measure.
+
+## VIV-KCELLS (17 Oct 2026)
+Account-4 worker VIV-KCELLS (brief `.claude/briefs/runs/2026-10-17-acct4-research-director-4.md`), 02:21-03:0x UTC by date -u. Disk only;
+no readers, no vision, no key edit. PREREG-VIV-KCELLS.md (Decision block pushed ced093014 before any run); script tx/kcells/kcells.py.
+Instrument: tools/stream_align.py's band_dp/emissions, emissions seeded from key.tsv's C rows only (M rows S, A, y, b, e neutral), hard EM
+per growing window; pairs P40 (f102r-103r vs dec_norm), P67 (f201r-v vs dec67+dec67b), P70 (f211r-v vs dec70); offset located with the C key.
+**Known-answer gate (leave-one-letter-out, pooled): 12/14 recovered vs 60-letter chunk-shuffle mean 2.95/14 (max 5, 20 shuffles): PASS.**
+Missed: l (top label y, 170 of 373 l positions; own labels 6/j/f 0.483) and q (to 28, c 15, @ 10; own 0.567). Recovered with shares:
+a 0.876, c 0.929, d 0.895, e 0.887, g 0.848, i 0.968, n 0.975, o 0.982, r 0.728, s 0.685, t 0.925, u 0.916 (tx/kcells/control_result.json).
+Side observation (descriptive, not a gate): label y (key.tsv M "h") sits at l positions 170 times and at r 64, s 28 -- y merges signs, as
+key.tsv's own note says. **Target (p, m, f; k, x, y, b, h, z) not run**: the control (294 alignments, about 40 min on 4 CPUs) ended past
+80% of the 45-minute box, so the registered stop applied; no cell proposed, no key edit, ceiling unchanged (ERR-SIM's 54).
+Next (one line): `python3 tx/kcells/kcells.py --target` (about 30 s; it refuses unless control_result.json PASSed), then the PREREG's rule
+(a)/(b), ~$1.
