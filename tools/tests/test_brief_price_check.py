@@ -50,6 +50,10 @@ CASES = [
     ("two-job file: a disk-only section must not exempt a section with blind Opus reads (16 Oct 2026, CLIN-F49)",
      "## JOB A (Opus; cap USD 3; box 40; disk only, no images)\nGrep the notes.\n\n## JOB B (Opus; cap USD 8; box 75)\n"
      "Two blind Opus reads of the column crops + your reconciliation.\n", 1),
+    ("multi-job file: the preamble (title naming tiles/crops) is not a job section (17 Oct 2026, wave 6)",
+     "# Wave 6: the ink 67/70 tiles; program C\nCommon tail applies.\n\n## JOB A (Opus; cap USD 6; box 45; "
+     "Price: vision calls: 2 x USD 1.3 = 2.6)\nBox check by eye on one contact sheet.\n\n## JOB B (Sonnet; cap USD 5; box 45; "
+     "Price: vision calls: 0 x USD 0 = 0)\nNo images fetched in this job.\n", 0),
     ("two-job file, the image section priced",
      "## JOB A (Opus; cap USD 3; box 40; disk only, no images)\nGrep the notes.\n\n## JOB B (Opus; cap USD 8; box 75; "
      "Price: vision calls: 3 x USD 1.3 = 3.9)\nTwo blind Opus reads of the column crops + your reconciliation.\n", 0),

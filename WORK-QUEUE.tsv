@@ -755,3 +755,5 @@ VIV-KCELLS2	account-4	.claude/briefs/runs/2026-10-17-acct4-research-director-5.m
 HAGA-LEAF	account-4	.claude/briefs/runs/2026-10-17-acct4-research-director-5.md	Sonnet 5	4	30	done 2026-10-17 04:29	2026-10-17 03:25	program C: locate the 30 Apr 1622 Haga duplicate in NA inv. 6896; ledgered 04:3x UTC
 HAGA-LEAF2	account-4	.claude/briefs/runs/2026-10-17-acct4-research-director-6.md	Sonnet 5	3	25	done 2026-10-17 05:34	2026-10-17 04:30	program C: orders 321-327; ledgered 05:3x UTC
 VIV-KSPLIT	account-4	.claude/briefs/runs/2026-10-17-acct4-research-director-6.md	Opus 5.5	14	60	done 2026-10-17 05:34	2026-10-17 04:30	flagship wave 5: split labels c and 2 (model read + owner sorter), frequency-matched null; ledgered 05:3x UTC
+VIV-TILES6770	account-4	.claude/briefs/runs/2026-10-17-acct4-research-director-7.md	Opus 5.5	6	45	queued	2026-10-17 05:35	flagship wave 6: ink 67/70 tiles for the label split
+CHECK-AITZEMA	account-4	.claude/briefs/runs/2026-10-17-acct4-research-director-7.md	Sonnet 5	5	45	queued	2026-10-17 05:35	program C: check-solved on SCOUT-KEYS K2

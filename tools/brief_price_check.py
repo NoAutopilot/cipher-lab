@@ -77,6 +77,10 @@ def check(text):
     section by section and reports the worst (16 Oct 2026, CLIN-F49: a two-job file passed as "no image step" because the OTHER job
     said "no images" -- a file-level NOIMG exempted a section with two blind Opus reads and a priced line)."""
     parts = [p for p in JOB_SPLIT.split(text) if p.strip()]
+    if len(parts) > 1 and not JOB_SPLIT.match(parts[0]):
+        # A multi-job file's preamble (title + common tail) is not a job: it prices nothing and names no step of its own
+        # (17 Oct 2026, wave 6: a title that said "tiles" failed the file). It is skipped only when a job section follows.
+        parts = parts[1:]
     if len(parts) > 1:
         worst = (0, 'no image step', 'no-image')
         rank = {'no-image': 0, 'ok': 1, 'fail': 2}
