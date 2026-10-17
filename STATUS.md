@@ -10296,3 +10296,13 @@ waits on that result. Haga **continue** -- HAGA-LEAF spawned (Sonnet, cap 4, 12 
 SCOUT-KEYS and CASES-TX: done on account 2 / the owner account 01:4x UTC, their queue rows still "claimed" and unledgered at 03:2x (noted
 in ROOM, their dispatchers' close-out). Spend this check-in by program: A 0, B 2.39, C 5.63. Owner side this window: BnF Manuscrits quote
 ordered (VEL-2610-008289, EUR 21.7); SPRINT.md "Owner purchase sprint" holds every other money item.
+
+**04:3x UTC, check-in 77.** Wave 4 closed: VIV-KCELLS2 (USD 2.19, N) and HAGA-LEAF (USD 3.51, Q). Evidence: (1) Vivonne -- the trial cells
+c=p, 2=m tie or lose a value-shuffled null on inks 63/53/54, and the ERR-SIM crossover on the extended key is below 0.05: even perfect p/m
+cells reach the AD only at zero reader error (4/5 seeds), none at 5%, against a measured 0.14. The worker's caveat: the mean log-prob null
+favours frequent letters; a frequency-matched null is the fair re-test. (2) Haga 1622 -- the 30 April duplicate projected to scan orders
+321-327 by a docket calendar (two anchors, 10 days per scan-order); inv. 6896 is a mixed Levant/Barbary file. Decisions: Vivonne
+**redirect to the transcription line** -- VIV-KSPLIT spawned (cap 14, vision 8 x 1.3): frequency-matched null, tiles cut from the ink-40
+crops, a blind sorter page for the owner and a strongest-model blind 2-way read of the same tiles with a shuffled-truth null; the (a) path
+(cells into key.tsv, re-decode, verifier) not taken (evidence entry 5). Haga **continue** -- HAGA-LEAF2 spawned (Sonnet, cap 3, orders
+321-327). Spend this check-in by program: A 0, B 2.19, C 3.51.

@@ -266,3 +266,12 @@ letters. ERR-SIM on the extended key: crossover < 0.05 (4/5 seeds >= 94.6 at zer
 4.4 (reader error) caps ink 63 even with p and m keyed. Ranked next: (1) a frequency-matched value-shuffle (the mean-score null favours
 s/n/l over rare p/m; disk, seconds); (2) split labels c and 2 on tx/kcells2/packet.tsv (214 tiles; tile reader or the owner's sort);
 (3) a transcription pass targeting < 0.05 per-sign error before any further ink-63 clause test. KEYCELL-READ stays held.
+
+### 6c. After VIV-KCELLS2 (17 Oct 2026, 04:3x UTC; account-4 parent)
+The trial cells c=p, 2=m tie or lose a value-shuffled null on every ink (ink 63 hrunV 26 vs p99 26; fr16 s rank 3/21), and the ERR-SIM
+crossover on the extended key is below 0.05: with perfect p and m cells the AD is reached in 4/5 seeds at zero reader error and in 0/5
+at 5%. Measured reader error is about 0.14. So the order of the programme is now fixed by two numbers: (1) split the merged labels
+(VIV-KSPLIT, running: a strongest-model blind 2-way read of the packet tiles and the owner's blind sorter on the same tiles, plus the
+frequency-matched null the worker asked for); (2) a reader that reads a known leaf below 0.05 -- the TRANSCRIPTION.md standard, which no
+pass on this hand has met -- measured by tx_bench before any ink-63 decode is scored again. Decode-side work on ink 63 stays stopped.
+The owner's sort moves from "optional fallback" to one of the two instruments for step (1).
