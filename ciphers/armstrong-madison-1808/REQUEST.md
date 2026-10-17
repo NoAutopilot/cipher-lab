@@ -44,6 +44,6 @@ Retrieve the **1803 Paris letter to his brother, CBH 1974.002, Box 1, Folder 25*
 
 **What the Library offered (its reply of 14 Oct 2026, ASKS 85 -> 167):** images of about 5-6 pages carrying numerical code with apparent decoding, in letters that appear to be from John Armstrong dated from December 1804, for USD 20.00 (minimum reproduction charge); screen shots or scans by legibility; payment in advance by phone with a credit card.
 
-**Ask:** (1) confirm the order by sending the checked follow-up in outreach/armstrong-keyhunt-fdr.md ("Follow-up draft", once it carries a `checked:` line); (2) pay by phone when the instructions arrive -- no card or payment detail in this repository (rule 9); (3) place the images in the private repository or the project mailbox and tell the parent, which logs the receipt by date and archive only.
+**Ask:** (1) [done 17 Oct 2026 ~01:20 UTC: the owner sent the checked follow-up in the thread] confirm the order by sending the checked follow-up in outreach/armstrong-keyhunt-fdr.md ("Follow-up draft"); (2) pay by phone when the instructions arrive -- no card or payment detail in this repository (rule 9); (3) place the images in the private repository or the project mailbox and tell the parent, which logs the receipt by date and archive only.
 
 **Why it is worth USD 20:** NOTES.md "FDR Library reply on the Aldrich (Rokeby) roll (14 Oct 2026)". Stage 8 on the board (check-solved verdict in the NOTES.md head), so the copy order is allowed under the pipeline's stage-2 rule.

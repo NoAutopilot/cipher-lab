@@ -4389,3 +4389,6 @@ sibling decoded by Bourdeau under the office table THE=972 (580 of about 1,600 g
   step on disk depends on nobody: the machine-side work (the alignment PREREG, the matched control on a synthetic private code of the
   same N and design) is prepared only when a page is on file, not before. What requires the owner: the USD 20 FDR order (ASKS 167,
   recommended yes; the highest-leverage program-A action on the board) and the NYPL reply (CONTRIBUTIONS 5 Oct, waiting).
+
+## FDR order confirmed (17 Oct 2026, 01:2x UTC by date -u; account-4 parent)
+The owner sent the checked follow-up (outreach/armstrong-keyhunt-fdr.md "Follow-up draft", OUT-CHECK-FDR2) in the Library's thread from the project mailbox at about 01:20 UTC and reported "Email sent". The USD 20.00 order for the Dec 1804 code-and-decoding pages is confirmed on our side; payment instructions awaited (ASKS 167 part done). On receipt of the images: key-rebuild step per the Escalation list (PREREG first, tools/interlinear_align.py on the code/decode pairs with the HEID-1623CAL N-floor lesson, matched control before the target). No payment detail recorded (rule 9).
