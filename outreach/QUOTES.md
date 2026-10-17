@@ -107,3 +107,29 @@ paste them), then a fresh session fills the price columns and re-ranks by unit c
 - **TNA page check RC8529042** (SP 105/65, Stepney to Manchester, 23 Mar 1702; ciphers/stepney-manchester-1702): result was due by
   2 Oct 2026; no result in the paste. The owner checks the TNA account's "Your orders".
 - **Huntington ticket 19266054** (5 Oct 2026; ciphers/eckert-1864 Einaudi reply): acknowledged, no answer yet; wait.
+
+## Mailbox sweep, 17 Oct 2026 02:5x UTC (account-4 parent, read-only through the Gmail connector on the project mailbox; 39 inbox threads since 15 Sept; nothing sent)
+
+Every archive reply in the mailbox is already recorded here or in CONTRIBUTIONS.md except the notes below. What still needs the owner's hand:
+- **Dresden, 10731 Nr. 12 (zeschau-seebach-1841), ASKS 64:** 8 Oct 2026, ref. 12-2642/615/130: copies available; fill the archive's
+  "Antrag auf Herstellung von Kopien" (archiv.sachsen.de, Fotografieren und Kopieren), sign, scan, return by email; choose "Datei --
+  einfache Qualität, 0,40 EUR je Aufnahme"; the file is unfoliated, estimate 6-10 images, EUR 4 base + 0.40 each, at most about EUR 10.
+- **Archives diplomatiques (La Courneuve), CP Allemagne 194 (decode-2678-bnf-colbert127-gravel-1665), ASKS 150:** 7 Oct 2026: they do
+  no research for readers and give no quotes by email; a reproduction needs their form with cote, dates and folio numbers (we have
+  f.44 from Auerbach 1912; ask ff.30-55); otherwise two named independent researchers (paid) or a reading-room visit. Next: fill the
+  form for ff.30-55 of CP Allemagne 194; the form is linked from their reproduction page.
+- **Landesarchiv Baden-Württemberg, Staatsarchiv Sigmaringen Dep. 30/1 T 3 Nr. 702 (stas-waldburg-1653):** order confirmed 4 Oct
+  2026 (complete, print-quality scans, download; a cost estimate comes first only if over EUR 40). No delivery mail in the inbox yet;
+  the status is in the owner's LABW Nutzungskonto.
+- **RAH Salazar y Castro (rah-salazar-soria-sanchez-1524-28, ASKS 68/105):** 28 Sept 2026 the Biblioteca sent its request form as an
+  attachment; the refreshed draft (outreach/rah-salazar-copy-order.md, item 8 added 5 Oct) is still "pending check" and the form has
+  not been returned. Next: OUT-CHECK on the refreshed draft, then the owner fills the RAH form with its items.
+- **Papers of James Madison (armstrong-madison-1808):** 12 Oct 2026, the editor-in-chief's last note ("checking the Armstrong-Madison
+  code is a great idea") closes the thread; nothing owed. CONTRIBUTIONS row of 8 Oct stands.
+- **No reply yet (sent from the project mailbox, nothing to do but wait):** Francis Bacon Society (5 Oct), Desenclos (4 Oct), NYPL
+  Manuscripts (5 Oct), New-York Historical (5 Oct, auto-ack only), UMW Monroe Papers (8 Oct), KU Spencer (5 Oct), KHA (5 Oct,
+  auto-ack), NARA RG 65 Koehler (26 Sept, auto-ack), Dresden 10024 WVO 57 (interim 6 Oct: file out for digitisation), Huntington
+  ticket (6 Oct ack), BnF manuscrits thread (owner's reply 4 Oct). A chaser is reasonable after 4 weeks for the 26 Sept-5 Oct ones.
+- **Delivered and read already:** Clements Clinton vol. 64:14-15 PDF (5 Oct, Hightail), the four WCCLS ILL files (6, 9, 15, 16 Oct).
+  The 6 Oct ILL files (Serrao 1969 on Seure; "Mantova e i Gonzaga di Nevers") are cited in their targets' NOTES; LOCAL-QUEUE L33/L53
+  still read "queued" and are closed below.
