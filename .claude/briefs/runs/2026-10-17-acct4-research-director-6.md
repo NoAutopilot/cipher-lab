@@ -1,8 +1,8 @@
 # Research director, wave 5 (17 Oct 2026, 04:3x UTC by date -u): split the merged labels; the Haga leaf, second pass
 
 Common tail: .claude/briefs/README.md applies (ROOM claim/done with the usage phrase, wall-clock box, no AskUserQuestion, never a dollar
-figure for yourself, PREREG with a `## Decision` block pushed before any scored run, `tools/experiment_log.py --check`,
-`tools/iiif_lines.py`-sized crops only, never a whole page to a vision call). Each job ends its NOTES section with the six
+figure for yourself, PREREG with a `## Decision` block pushed before any scored run, `tools/experiment_log.py --check`).
+Each job ends its NOTES section with the six
 research-director questions in one line each. Report what was found and where it was not found; no novelty class (rule 10).
 
 ## JOB VIV-KSPLIT (account 4; Opus 5.5; cap USD 14; box 60 minutes; disk plus the Artifact tool for one published page, no other network, no Gallica; Price: vision calls: 8 x USD 1.3 = 10.4)
