@@ -247,3 +247,14 @@ evidence against a wide, systematic leaf hunt being worthwhile without a date an
 
 Hosts: www.nationaalarchief.nl (1 request), service.archief.nl (62 requests), >=1.6s apart, 63 total. Vision:
 9 calls (8 contact sheets orders 1-60 + 1 unsure sheet 131/221). No transcription, no decode.
+
+## Parent decision after AITZEMA-RUN1618 (17 Oct 2026, 08:4x UTC by date -u; account-4 parent)
+Two sweeps (59 scans at stride 10, thumbnail size; 62 scans at 800 px on orders 1-60 plus the unsure ones) found no cipher block and
+did not locate the 17 Feb 1618 Lubeck letter; the lias's order is not established. This is a search result, not a negative on the
+premise: the Resolutien say the deciphered originals are in S.G. 6025, and about 80% of the scans are unread. Status stays open. Blind
+sampling stops here (USD 5.4 on two passes). Next step, when taken: a date anchor -- a dockets-only read of the dateline region on every
+scan at 400 px (one strip per scan, 589 strips in about 20 sheets, about USD 6) to find the Feb 1618 run -- or a per-document listing
+if one exists; not before the cheaper key-material candidates have had their first look. Six questions: learned that this lias is not
+visibly cipher-rich at its start; depended on a 10% sample and on the lias being roughly chronological, which one date cannot confirm;
+unverified: where the 1617-18 letters sit; alternative: the deciphered originals are filed elsewhere than inv. 6025 despite the footnote;
+most informative next: the dateline strips; decision: pivot program C to K3 (Berck, inv. 6897-6898).

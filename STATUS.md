@@ -10331,3 +10331,10 @@ answered (collections empty at 07:43); Vivonne stays held. Account 4 entered its
 not a stop (BUDGETS rule), caps unchanged. Decision: Aitzema **one targeted pass, then stop if empty** -- AITZEMA-RUN1618 spawned
 (Sonnet, cap 4): orders 1-60 at 800 px, stride 1, plus the two unsure scans at native; a found pair goes to the known-plaintext alignment,
 nothing found moves program C to K3 (Berck). Spend this check-in by program: A 0, B 0, C 2.36.
+
+**08:4x UTC, check-in 81.** Wave 8 closed: AITZEMA-RUN1618 (USD 3.08, N): 0 of 62 scans at 800 px carry cipher; the three ambiguous
+thumbnails resolve to paraphs and dated prose; the Lubeck pair not found; lias order unestablished. Owner's sort: not yet answered;
+Vivonne held. Decision: Aitzema **stop blind sampling** (two sweeps, USD 5.4; status open, a dateline-strip date anchor named, about
+USD 6, deferred); program C **to K3** -- CHECK-BERCK spawned (Sonnet, cap 5, check-solved only, the Duyck-deciphered 22 Dec 1623 letter
+as the known-plaintext pair, Berck's key leaf as the premise question). Spend this check-in by program: A 0, B 0, C 3.08. Running tally
+17 Oct 00:48-08:4x UTC, account 4: 18 workers, USD 53.6 (A 7.4, B 17.5, C 28.7), one over cap (CHECK-HAGA 1.41x).
