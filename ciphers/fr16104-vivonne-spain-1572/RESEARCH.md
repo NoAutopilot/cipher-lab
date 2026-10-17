@@ -243,3 +243,12 @@ Order:
 Counterfactual: continuing as before means packet 4 on reader-label piles, more g-split variants and more f.191r passes. On the
 record that costs about USD 20-40 and, by the 37 -> 24 history, most likely leaves the run under 42 and every negative still a
 non-test. Rule 3's third-attempt clause already bars that path for the same instrument.
+
+### 6a. Recommendation revised after ERR-SIM (17 Oct 2026, 02:2x UTC; account-4 parent)
+The pivot above was half right. Reader error is high (s.4.1) but it is not the binding limit: the zero-error control reads 54 letters on
+key.tsv against an AD of 94.6, so no transcription of any quality can surface a clause while p, m and f have no code. **Order now:**
+(1) VIV-KCELLS (running): p/m/f cells by whole-stream alignment on the deciphered pairs, known-answer control on the 14 keyed letters;
+(2) rerun err_sim on the extended key for the reader-error crossover, which is the number KEYCELL-READ needs as its yardstick;
+(3) only then KEYCELL-READ, scoped to the signs the alignment names. KEYCELL-READ at USD 8 is held, not briefed. If (1) finds the p/m
+positions scattered across labels, that confirms T1 for those letters and the reader brief gets the exact tiles. Counterfactual: the
+reader experiment first would have cost USD 8 to measure a floor that, on this key, cannot reach the bar at any error.

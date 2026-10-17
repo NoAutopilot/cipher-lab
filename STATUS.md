@@ -10270,3 +10270,16 @@ FDR order (ASKS 167) is the highest-leverage program-A action. Evidence-to-decis
 
 Requires the owner: ASKS 167 (FDR USD 20), the send runner (S3, S4, S7, S8), the Mercy issue post (outreach/aymeloglu-issue-mercy.md),
 ASKS 170 (NA form), ASKS 56 (BL batch); the Vivonne step-1 sort stays an optional fallback (SORT-CONSUME is armed for when it lands).
+
+**02:2x UTC, check-in 75.** Wave 2 closed: ERR-SIM (USD 2.29, N), MERCY-GAP (USD 1.72, N), LOPE-KEYAPP (USD 2.80, D); SCOUT-KEYS and CASES-TX
+landed on account 2 / the owner account (their ledgers). Evidence: (1) Vivonne -- the zero-error control on key.tsv reads 54 letters
+against an AD of 94.6 (R 3.4: 58.9); p, m, f have no code, b/h/z only M rows; with p and m coded the control reads 143. The binding limit
+is the key, not the readers: every ink-63 negative was capped by the key as well. (2) Mercy -- the pixel gap statistic fails its own gate
+(5/6 known clusters, control behaves) and the diagnostic shows genuine two-digit codes gap like glued pairs, so 23 vs 2|3 is not a pixel
+question at all; D2 waits on code 25 (ASKS 60 / S3). (3) Lope Hurtado -- Kolosova's Cifrario 7 passes the known-answer gate 27/28 with
+shuffle p99 2 (the published key is the pool's key) but adds only 2 tokens to R9634; cifra 10 fits neither record. (4) Program C --
+SCOUT-KEYS filed 10 key-beside-cipher rows, K1 Haga 1622 (NA inv. 6896, copy-free, 1620 key on DECODE) first. Decisions: Vivonne
+**redirect** from transcription to key cells (VIV-KCELLS spawned, KEYCELL-READ held; evidence entry 4); Mercy **acquire**; Lope **acquire**
+(discussion pages, BNE siblings); Haga **check-solved first** (CHECK-HAGA spawned, Sonnet). Spend this check-in by program: A 4.52, B 2.29,
+C 0 (account 2's rows on its ledger). Wave 3 running: VIV-KCELLS (session_014B1AX5wXo95DAsNVoKpDr7, cap 4) and CHECK-HAGA
+(session_01FvFZ5qNR455hpGhNgwXXH2, cap 4).
