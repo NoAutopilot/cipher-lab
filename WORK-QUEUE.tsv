@@ -757,4 +757,4 @@ HAGA-LEAF2	account-4	.claude/briefs/runs/2026-10-17-acct4-research-director-6.md
 VIV-KSPLIT	account-4	.claude/briefs/runs/2026-10-17-acct4-research-director-6.md	Opus 5.5	14	60	done 2026-10-17 05:34	2026-10-17 04:30	flagship wave 5: split labels c and 2 (model read + owner sorter), frequency-matched null; ledgered 05:3x UTC
 VIV-TILES6770	account-4	.claude/briefs/runs/2026-10-17-acct4-research-director-7.md	Opus 5.5	6	45	done 2026-10-17 06:39	2026-10-17 05:35	flagship wave 6: ink 67/70 tiles for the label split; ledgered 06:4x UTC
 CHECK-AITZEMA	account-4	.claude/briefs/runs/2026-10-17-acct4-research-director-7.md	Sonnet 5	5	45	done 2026-10-17 06:39	2026-10-17 05:35	program C: check-solved on SCOUT-KEYS K2; ledgered 06:4x UTC
-AITZEMA-SHEET	account-4	.claude/briefs/runs/2026-10-17-acct4-research-director-8.md	Sonnet 5	4	40	queued	2026-10-17 06:40	program C: stride contact sheets of inv. 6025 for cipher blocks
+AITZEMA-SHEET	account-4	.claude/briefs/runs/2026-10-17-acct4-research-director-8.md	Sonnet 5	4	40	claimed session_01Bpr7wrXgFJKTaJU4cuzGFo 2026-10-17 06:40	2026-10-17 06:40	program C: stride contact sheets of inv. 6025 for cipher blocks
