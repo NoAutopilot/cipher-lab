@@ -7745,7 +7745,10 @@ items fall in the gaps of an otherwise exhaustively-documented channel, not insi
 manifests confirmed reachable, no login) and explicitly catalogued as undecoded cipher passages:
 
 - **B1** [Document, 1780 October 27], Jay to Silas Deane (`ldpd:85142`): "(Part in cipher which has not been
-  decoded.)" -- 2 page images.
+  decoded.)" -- 2 page images. **found-solved (CHECK-JAYDEANE, 18 Oct 2026):** `ciphers/jay-deane-1780/NOTES.md`.
+  Selected Papers of John Jay vol. 2 (2012) pp. 315-316 prints the two coded clauses decoded by the editors using
+  the Jay-Deane nomenclator code (Jay's code memorandum, NNC EJ: 7590); the Columbia catalogue note describes the
+  manuscript's own undecoded state, not modern scholarship. F1 (catalogue does not link to the decipherment).
 - **B2** [Document, 1781 November 28], Robert R. Livingston to Jay (`ldpd:87671`): a bracketed cipher clause plus
   the cataloger's own note "The cipher is not deciphered in Wharton or Johnson" (i.e. Wharton's *Diplomatic
   Correspondence of the American Revolution* and Henry P. Johnston's edition of Jay's papers, both checked by
