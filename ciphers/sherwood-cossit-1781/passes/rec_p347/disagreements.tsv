@@ -1,0 +1,14 @@
+line	col	A	B	flagged	crop
+p347_L02	1	w:fo.	-		
+p347_L02	2	307	-		
+p347_L02	3	w:v	w:fo.307v		
+p347_L04	1	w:Combat.	w:Combat		
+p347_L05	1	312-89	312-24		
+p347_L05	6	w:them	-		
+p347_L05	8	-	w:Mondemill		
+p347_L05	9	w:Wondermill	w:them		
+p347_L06	2	w:servant.	-		
+p347_L06	3	w:?	w:Servant		
+p347_L08	1	138-28	-		
+p347_L08	2	11	138-28-11		
+p347_L09	3	w:Original.	w:Original		

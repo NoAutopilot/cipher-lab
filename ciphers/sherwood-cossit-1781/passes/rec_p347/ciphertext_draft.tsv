@@ -1,0 +1,46 @@
+line	position	sign	confidence	alt	why
+p347_L01	1	414-3	H		agree
+p347_L01	2	414-22	H		agree
+p347_L01	3	22-34	H		agree
+p347_L01	4	w:three	H		agree
+p347_L02	1	w:fo.	M	B:-	gap
+p347_L02	2	307	M	B:-	gap
+p347_L02	3	w:v	M	B:w:fo.307v	differ
+p347_L02	4	w:Lameness	H		agree
+p347_L02	5	w:ten	H		agree
+p347_L02	6	w:liable	H		agree
+p347_L02	7	w:being	H		agree
+p347_L02	8	w:left	H		agree
+p347_L03	1	203-19	H		agree
+p347_L03	2	96-16	H		agree
+p347_L03	3	210-19	H		agree
+p347_L03	4	32-1	H		agree
+p347_L03	5	209-13	H		agree
+p347_L04	1	w:Combat.	M	B:w:Combat	differ
+p347_L04	2	1	H		agree
+p347_L04	3	w:pray	H		agree
+p347_L04	4	w:formidably	H		agree
+p347_L05	1	312-89	M	B:312-24	differ
+p347_L05	2	w:low	H		agree
+p347_L05	3	215-32	H		agree
+p347_L05	4	148-22	H		agree
+p347_L05	5	364-1	H		agree
+p347_L05	6	w:them	M	B:-	gap
+p347_L05	7	2	H		agree
+p347_L05	8	w:Mondemill	M	A:-	gap
+p347_L05	9	w:Wondermill	M	B:w:them	differ
+p347_L05	10	13-13	H		agree
+p347_L05	11	419-3	H		agree
+p347_L05	12	323-9	H		agree
+p347_L06	1	w:Yours	H		agree
+p347_L06	2	w:servant.	M	B:-	gap
+p347_L06	3	w:?	M	B:w:Servant	differ
+p347_L07	1	369-31	H		agree
+p347_L07	2	174-19	H		agree
+p347_L07	3	173-5	H		agree
+p347_L08	1	138-28	M	B:-	gap
+p347_L08	2	11	M	B:138-28-11	differ
+p347_L08	3	1783	H		agree
+p347_L09	1	w:February	H		agree
+p347_L09	2	11	H		agree
+p347_L09	3	w:Original.	M	B:w:Original	differ

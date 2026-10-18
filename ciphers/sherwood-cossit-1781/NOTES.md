@@ -153,3 +153,94 @@ repository (ciphers/pro3055-clinton-1779/passes). Assumption: Sherwood's Vermont
 Mathews was Haldimand's secretary, and the dates overlap). Alternative: a separate field cipher. Most informative experiment: locate and
 fetch the four pages and apply the key against a shuffled-key control (SHERWOOD-PAGES, Opus, cap 6). Decision: continue, as a
 key-assisted route.
+
+## Pages and key-application test (SHERWOOD-PAGES, 18 Oct 2026)
+
+**Correction to the sections above.** Both Brymner entries sit under the calendar's "B. 178" running heads (djvu text
+lines 43491-45121, `reportoncanadian1888publuoft`): the sketch is **B.178 p.84** (not B.177-2), and the cypher is
+B.178 pp.345-347. B.178 = BL Add MS 21838 (the microfilm target card reads "Letters from Capt. Sherwood and Dr. Smyth,
+Commanders for exchange of Prisoners, n.d., 1781-1784, MG 21, Add. Mss. 21838 (B-178)"). The page numbers written on
+the leaves are the same as Brymner's.
+
+**Reels and images** (heritage.canadiana.ca series `oocihm.lac_mikan_105513`, 48 reels: C-1475, C-4652, H-1428-1455,
+H-1649-1655, H-1685, H-1736-1745). H-1736 starts with Add MS 21835 (B-175) and runs through 21837 pt.1-2 into 21838.
+H-1737 continues 21838. Fetched once at native size into images/ (manifest.json gives each frame's IIIF URL):
+- H-1736 frame 1539 = p.84 (fo.62): "A sketch of what I understand from the Cypher", with "See pp.345-347 infra" in the margin.
+- H-1736 frame 1540 = p.85: the end of the sketch, signed "J. Sherwood", endorsed "Messrs Cossit & Summer".
+- H-1737 frames 15-17 = pp.345-347 (fo.306-307v): the cypher. Frame 18 = p.348, a plain letter.
+Line crops were cut with `python3 tools/iiif_lines.py --image images/h1737_0015_p345_cipher.jpg --out images/crops
+--region 450,120,2150,1380 --prefix p345 --debug` (p346: `--region 450,120,2150,3900 --distance 70 --prominence 150`;
+p347: `--region 450,120,2150,1600 --distance 70 --prominence 150`). Only the crops went to the vision passes.
+Requests: heritage.canadiana.ca 14; image-uab.canadiana.ca 29; LAC Collection Search 2 (403, then a Cloudflare page:
+stopped there); loyalist.lib.unb.ca 0; archive.org 1 (the Brymner djvu text).
+
+**Sherwood's sketch is written out** (p.84-85; our reading of his hand). It covers four numbered messages:
+No.1 "A member of the House of New Hampshire informs me officially, accounts then he was there. Came to Council,
+afterwards he was below Boston and saw the French fleet & army sail for the West Indies. Reports say 600 Tory to man
+the 74 Gun ship, building by Congress at Portsmouth." Then: "Something is said in the Cypher of damage done in March by
+thunder to the ships but I cannot make any sense of it."
+No.2 "seems to be an advertisement but I cannot find head nor tail to it."
+No.3 "Acknowledges my letter in eight days, promises to observe its contents, and seems to recommend Clemency, gives
+encouragement that Mr Taylor may be brought into the plan propos'd. Says Judge Alcot will undertake with Gen.l
+Lull-or-Lamenti[?]. Leaving some letters at St. Johns, & desires they may be forwarded, but I cannot guess what letters
+he has in view. This concludes with his respects to Major Holland, who is acquainted with his manner of writing by
+En--es Gr--2[?]."
+No.4 "Wednesday last 500 Sleighs 3 men to a sleigh march'd from Albany towards Oswego, Vermont post from Albany
+alarm'd them, they expect s'd force was destin'd towards the reduction of the new state. Col. Strong reported this in
+Council, at Windsor, in my hearing on Saturday; other reports say 500 men only. A movement there certainly is.
+Feby 16th 1783."
+This is Sherwood's period reading, his own paraphrase, of a cypher whose key he evidently had. It is a crib, not a decipherment of
+every group (rule 4: his words are not aligned to groups).
+
+**Form of the cypher.** Figure pairs `P-W` (separators -, :, = or .), 214 pairs over three pages. P runs 4-472 and W runs 1-38.
+A few numbers stand alone (500, 2, 11, 1783), there is one triple (23-4-1), and some words are in letters ("A", "H", "Os°",
+"then", "One", "Two", "three", "No four", "Lameness ten liable being left", "low", "Ponderwill[?]"). The pages are
+divided into messages that end "One", "Two" (p.346), "three" (p.347) and "No four" (p.345). That order matches Sherwood's
+numbering: p.346 opens with No.1 and p.345 is No.4. p.347 carries words in letters written *over* figure groups, an
+interlinear period gloss: "Lameness / ten / liable / being / left" over 203-19 96-16 210-19 32-1 209-13, and "February"
+under 138-28 in the date line "138-28 = 11 = 1783".
+Transcription: ciphertext.tsv, from two blind Opus passes per page (passes/), reconciled with tools/reconcile_passes.py:
+p.345 46/50 agree (92.0%), p.346 146/169 (most of the 23 disagreements are line-break joins of one pair), p.347 32/45
+(the disagreements are the interlinear words and the date grouping). Disagreements were settled from the full-resolution
+image. Tokens left ambiguous are marked `?`; the 3/5 forms are the commonest doubt (131/151-22, 230/250-20).
+
+**Key-application test (title_key_test.py; output title_key_test.out; `--check` passes).** The 1778 title-page key
+(29 lines, line/letter) can read only pairs whose first figure is 29 or less. **197 of 214 pairs have a first figure
+above 29**, and only 9/214 (0.042) fall inside the page at all. English cover of the decoded stream is 0.000. The matched
+control, the same tokens with the key's line order shuffled over 20 seeds, gives in-range 0.014-0.047 and English cover 0.000. Target and
+control are the same. Reading graded: H 0, C 0, S 0, M 0 under this key. **The Cossit/Summer cypher is not the Haldimand-Clinton
+title-page system.** It is also not that system's code-list layer, whose second figure is a sublist letter, at most about 24.
+Here W reaches 38, and the first figure is ordered by spelling (next paragraph).
+
+**What it looks like instead: a dictionary page-word code (alphabetically ordered book).** Two observations:
+(1) the groups that should repeat if p.345 is No.4 do repeat where Sherwood's words repeat: 331-36 "sleigh(s)" twice,
+371-21 "towards" twice, 364-32 "the" twice, 10-34 "Albany" twice, 131-22 "from" twice, 301-26 "reported/reports",
+409-6 "was"; the figure 500 is written in clear both times Sherwood reads "500". 138-28 = "February" is glossed in the period hand on p.347
+(grade C) and closes p.345 before "16-1783", which is Sherwood's "Feby 16th 1783". The opening of p.346, w:A 225-4 246-35 364-32 176-26 246-35 / 240-12 w:H,
+fits No.1's "A member of the House of New Hampshire" with the same values for "of", "the" and "new".
+(2) The first figure rises with the word's spelling: Albany 10, alarmed 10-28 (before Albany), Colonel 65, council 81,
+destined 109, expect 131, February 138, force 146, hearing 168, house 176, last 206, men 219, my 237, new 240, of 246,
+post 274, reduction 297, reported 301, said 312, Saturday 315, sleigh 331, state 344, Strong 349, the 364, them 364-1,
+they 365-8, towards 371, Vermont 382, was 409, Wednesday 411. alpha_order_test.py (output alpha_order_test.out, `--check` passes):
+Spearman rho between first figure and alphabetical rank, sketch alignment N=34 **0.998** against a permuted-assignment
+control mean 0.003 (p<0.0001, 10,000 permutations). The p.347 period glosses on their own give N=6, rho 0.429 against 0.004 (p=0.21, not
+significant: "ten" over 96-16 breaks the order, so either the gloss or the group is wrong). Caveat: the sketch alignment is ours.
+It was made by word order and repeats, but where Sherwood paraphrases, the choice of which group carries which word was
+partly guided by the same ordering, so the 0.998 is an upper bound, not an independent test. Grades: 2 tokens C
+(138-28 February, twice); about 40 tokens M (p.345 and the first line of p.346, by alignment to the sketch); the rest unread.
+This is a cryptanalytic lead, not a reading (no H, and the sketch is a paraphrase).
+
+**Next step.** Identify the dictionary. It is an English word list or dictionary of at least 472 pages with no more than 38
+entries counted per page (or per column), alphabetical, of which "the" falls about 364/472 = 77% of the way through.
+The candidates a 1783 Loyalist would own include the common spelling dictionaries (Arnold and André used Bailey's dictionary in 1779-80).
+Test: fit the page of each anchor word (Albany 10, February 138, from 131, sleigh 331, the 364, Wednesday 411) against
+the page counts of digitised editions on archive.org, and against a word-count-per-page model, before any reading.
+About $3, a new instrument (rule 3: not another title-key variant). Second, the "No.2 advertisement" and No.3 on p.346
+(about 120 groups) are then read from the identified book at grade H/C.
+
+Six questions. Learned: the cypher is a P-W dictionary code ordered by spelling, not the 1778 title page, and Sherwood's
+own sketch of all four messages is on p.84-85. Assumption: p.345 = No.4 and p.346 opens with No.1 (the message ends "No four"/"One"/"Two"/"three"
+and the matching repeats support it). Unverified: the sketch-to-group alignment beyond the repeats; the dictionary's
+identity; the 3/5 digit forms. Alternatives: a private alphabetical word list (no printed book), or page-column-line
+rather than page-word. Most informative next experiment: anchor-word page fit against Bailey and other period spelling-dictionary editions.
+Decision: change (new instrument: book identification); the title-page route stops for this item.

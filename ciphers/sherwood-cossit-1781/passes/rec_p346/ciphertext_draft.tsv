@@ -1,0 +1,170 @@
+line	position	sign	confidence	alt	why
+p346_L01	1	w:Sr	M	B:w:&	differ
+p346_L01	2	225-4	H		agree
+p346_L01	3	246-35	H		agree
+p346_L01	4	364	H		agree
+p346_L01	5	32-176	H		agree
+p346_L01	6	26-246	H		agree
+p346_L02	1	35	M	B:35-246	differ
+p346_L02	2	246-12	M	B:12	differ
+p346_L02	3	w:H	H		agree
+p346_L02	4	191-32	H		agree
+p346_L02	5	237-10	H		agree
+p346_L02	6	246-17	H		agree
+p346_L03	1	4-31	H		agree
+p346_L03	2	412-3	H		agree
+p346_L03	3	168-2	H		agree
+p346_L03	4	409-6	H		agree
+p346_L03	5	364-22	H		agree
+p346_L04	1	47-19	H		agree
+p346_L04	2	369-15	H		agree
+p346_L04	3	84-25	H		agree
+p346_L04	4	15-2	H		agree
+p346_L04	5	9-35	H		agree
+p346_L04	6	168-2	H		agree
+p346_L05	1	409-6	H		agree
+p346_L05	2	32-12	H		agree
+p346_L05	3	459-32	H		agree
+p346_L05	4	315-1	H		agree
+p346_L05	5	364-32	H		agree
+p346_L06	1	156-23	H		agree
+p346_L06	2	143-38	H		agree
+p346_L06	3	16-2	H		agree
+p346_L06	4	20-16	H		agree
+p346_L06	5	312-24	H		agree
+p346_L06	6	364	H		agree
+p346_L07	1	32	H		agree
+p346_L07	2	412-9	H		agree
+p346_L07	3	188-7	H		agree
+p346_L07	4	301-29	H		agree
+p346_L07	5	809	H		agree
+p346_L07	6	368-33	M	B:366-33	differ
+p346_L08	1	369-15	M	B:369-16	differ
+p346_L08	2	219-37	H		agree
+p346_L08	3	366-32	H		agree
+p346_L08	4	324-8	H		agree
+p346_L08	5	w:/	H		agree
+p346_L08	6	46-11	M	B:44-11	differ
+p346_L09	1	64-12	H		agree
+p346_L09	2	72-12	H		agree
+p346_L09	3	32-12	H		agree
+p346_L09	4	x:4	M	B:x:42	differ
+p346_L09	5	2-268-37	M	B:468-37	differ
+p346_L09	6	412-35	H		agree
+p346_L10	1	312-24	H		agree
+p346_L10	2	192-38	H		agree
+p346_L10	3	220-20	H		agree
+p346_L10	4	364-32	H		agree
+p346_L10	5	367	H		agree
+p346_L11	1	11	H		agree
+p346_L11	2	89-15	H		agree
+p346_L11	3	247-6	H		agree
+p346_L11	4	246-35	H		agree
+p346_L11	5	364-32	H		agree
+p346_L12	1	365-11	H		agree
+p346_L12	2	326-30	H		agree
+p346_L12	3	w:The	M	B:w:the	differ
+p346_L13	1	7-34	H		agree
+p346_L14	1	365-13	H		agree
+p346_L14	2	418-31	H		agree
+p346_L14	3	142-8	H		agree
+p346_L14	4	138-15	H		agree
+p346_L14	5	w:and	M	B:w:then	differ
+p346_L15	1	183-24	H		agree
+p346_L15	2	149-37	H		agree
+p346_L15	3	134-31	H		agree
+p346_L15	4	211-3	H		agree
+p346_L15	5	240-23	M	B:248-23	differ
+p346_L15	6	314-3	H		agree
+p346_L15	7	165-13	M	B:168-13	differ
+p346_L15	8	415	H		agree
+p346_L15	9	218-19	H		agree
+p346_L15	10	32-33	H		agree
+p346_L15	11	369-15	M	B:369	differ
+p346_L16	1	15	M	A:-	gap
+p346_L16	2	240-12	H		agree
+p346_L16	3	168-6	H		agree
+p346_L16	4	332-10	H		agree
+p346_L16	5	366-27	H		agree
+p346_L16	6	418-31	M	B:418	differ
+p346_L17	1	31	M	A:-	gap
+p346_L17	2	342-10	H		agree
+p346_L17	3	294-22	H		agree
+p346_L17	4	472-34	H		agree
+p346_L17	5	414-22	H		agree
+p346_L17	6	223-32	H		agree
+p346_L18	1	240-28	H		agree
+p346_L18	2	371-14	H		agree
+p346_L18	3	153-7	H		agree
+p346_L18	4	321-20	H		agree
+p346_L18	5	170-5	H		agree
+p346_L19	1	237-31	H		agree
+p346_L19	2	395-15	H		agree
+p346_L19	3	w:two	H		agree
+p346_L20	1	377-12	H		agree
+p346_L20	2	95-33	H		agree
+p346_L20	3	419-3	H		agree
+p346_L20	4	192-37	H		agree
+p346_L20	5	119-13	H		agree
+p346_L21	1	90-37	H		agree
+p346_L21	2	128-32	H		agree
+p346_L21	3	54-33	H		agree
+p346_L21	4	414-21	H		agree
+p346_L21	5	31-16	H		agree
+p346_L21	6	49-30	M	B:-	gap
+p346_L21	7	245-21	M	B:-	gap
+p346_L22	1	49-30	M	A:-	gap
+p346_L22	2	245-21	M	A:-	gap
+p346_L22	3	192-37	H		agree
+p346_L22	4	364-32	H		agree
+p346_L22	5	155-27	H		agree
+p346_L22	6	216-11	M	B:218-11	differ
+p346_L22	7	60-29	H		agree
+p346_L23	1	126-12	H		agree
+p346_L23	2	202-36	H		agree
+p346_L23	3	414-21	H		agree
+p346_L23	4	31-16	H		agree
+p346_L23	5	6-26	H		agree
+p346_L23	6	7	H		agree
+p346_L24	1	364-4	H		agree
+p346_L24	2	22-20	H		agree
+p346_L24	3	364-32	H		agree
+p346_L24	4	223-32	H		agree
+p346_L24	5	414-21	H		agree
+p346_L25	1	245-38	H		agree
+p346_L25	2	303-22	H		agree
+p346_L25	3	43-10	H		agree
+p346_L25	4	364-26	H		agree
+p346_L26	1	417-9	H		agree
+p346_L26	2	246-35	H		agree
+p346_L26	3	368-13	H		agree
+p346_L26	4	168-5	H		agree
+p346_L26	5	217-21	H		agree
+p346_L27	1	353-1	H		agree
+p346_L27	2	278-8	H		agree
+p346_L27	3	369-31	H		agree
+p346_L27	4	272-8	H		agree
+p346_L27	5	90-28	H		agree
+p346_L28	1	329-8	H		agree
+p346_L28	2	168-5	H		agree
+p346_L28	3	295-11	H		agree
+p346_L28	4	324-10	H		agree
+p346_L28	5	156-24	H		agree
+p346_L29	1	385-33	H		agree
+p346_L29	2	11-18	H		agree
+p346_L29	3	192-37	H		agree
+p346_L29	4	224-4	H		agree
+p346_L29	5	418-31	H		agree
+p346_L29	6	414-22	M	B:414	differ
+p346_L30	1	22	M	A:-	gap
+p346_L30	2	402-25	H		agree
+p346_L30	3	128-32	H		agree
+p346_L30	4	20-15	H		agree
+p346_L30	5	181-14	H		agree
+p346_L30	6	9-26	H		agree
+p346_L31	1	237-10	H		agree
+p346_L31	2	305-24	H		agree
+p346_L31	3	205-1	H		agree
+p346_L31	4	w:1st	H		agree
+p346_L31	5	31-34	H		agree
+p346_L31	6	201-15	H		agree

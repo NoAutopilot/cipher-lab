@@ -1,0 +1,86 @@
+[
+ {
+  "file": "h1736_1539_p084_sketch.jpg",
+  "reel": "H-1736",
+  "frame": 1539,
+  "iiif": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0zg6g24gj3z/full/full/0/default.jpg",
+  "view": "https://heritage.canadiana.ca/view/oocihm.lac_reel_h1736/1539",
+  "size": [
+   3664,
+   4088
+  ],
+  "bytes": 2711284,
+  "shelfmark": "BL Add MS 21838 (LAC B.178), page 84",
+  "fetched": "2026-10-18"
+ },
+ {
+  "file": "h1736_1540_p085_sketch_end.jpg",
+  "reel": "H-1736",
+  "frame": 1540,
+  "iiif": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0tq5r86ts25/full/full/0/default.jpg",
+  "view": "https://heritage.canadiana.ca/view/oocihm.lac_reel_h1736/1540",
+  "size": [
+   3608,
+   4088
+  ],
+  "bytes": 2409142,
+  "shelfmark": "BL Add MS 21838 (LAC B.178), page 85",
+  "fetched": "2026-10-18"
+ },
+ {
+  "file": "h1737_0015_p345_cipher.jpg",
+  "reel": "H-1737",
+  "frame": 15,
+  "iiif": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0g73716jw5d/full/full/0/default.jpg",
+  "view": "https://heritage.canadiana.ca/view/oocihm.lac_reel_h1737/15",
+  "size": [
+   3656,
+   4088
+  ],
+  "bytes": 2021406,
+  "shelfmark": "BL Add MS 21838 (LAC B.178), page 345",
+  "fetched": "2026-10-18"
+ },
+ {
+  "file": "h1737_0016_p346_cipher.jpg",
+  "reel": "H-1737",
+  "frame": 16,
+  "iiif": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0bg2h78x42z/full/full/0/default.jpg",
+  "view": "https://heritage.canadiana.ca/view/oocihm.lac_reel_h1737/16",
+  "size": [
+   3664,
+   4088
+  ],
+  "bytes": 2185080,
+  "shelfmark": "BL Add MS 21838 (LAC B.178), page 346",
+  "fetched": "2026-10-18"
+ },
+ {
+  "file": "h1737_0017_p347_cipher.jpg",
+  "reel": "H-1737",
+  "frame": 17,
+  "iiif": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc06q1sg18b8t/full/full/0/default.jpg",
+  "view": "https://heritage.canadiana.ca/view/oocihm.lac_reel_h1737/17",
+  "size": [
+   3656,
+   4088
+  ],
+  "bytes": 1920491,
+  "shelfmark": "BL Add MS 21838 (LAC B.178), page 347",
+  "fetched": "2026-10-18"
+ },
+ {
+  "file": "h1737_0018_p348_letter.jpg",
+  "reel": "H-1737",
+  "frame": 18,
+  "iiif": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc02z12p3mk6t/full/full/0/default.jpg",
+  "view": "https://heritage.canadiana.ca/view/oocihm.lac_reel_h1737/18",
+  "size": [
+   3656,
+   4088
+  ],
+  "bytes": 2113592,
+  "shelfmark": "BL Add MS 21838 (LAC B.178), page 348",
+  "fetched": "2026-10-18"
+ }
+]
