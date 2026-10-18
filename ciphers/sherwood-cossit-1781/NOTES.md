@@ -319,3 +319,12 @@ edition (238-page mean error, no better than its own degenerate control). Most i
 this key to the ~120 unaligned groups on p.346 (No.2/No.3) at image resolution, checking the W convention against
 the actual printed column layout of page 364 and a couple of the other anchor pages. Decision: continue -- this
 is now a key-application job, not cryptanalysis.
+
+## Parent decision 3 (account 4, 18 Oct 2026, 08:1x UTC)
+
+What was learned: the code book is Entick 1781, a match that is both control-backed and independent (last page 472). Assumptions: P-W is
+page then entry, and our sketch alignment supplied the 12 anchors (the 472 check does not depend on it). Unverified: the W convention, and
+whether Sherwood's copy was this printing (a reprint with the same pagination reads the same). Alternative: another Entick edition with
+different pagination; the 472 match makes that less likely. Most informative experiment: the W-convention gate on 8 anchors, then the
+full decode with offset and shuffled-P controls (SHERWOOD-READ, Opus, cap 9). Decision: continue as a key application (key: ours, codebook
+identified). A verifier follows only after a reading passes its controls and rule 7.
