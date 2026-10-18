@@ -449,3 +449,12 @@ Assumptions: the transcription's digits, the line grid, and the en18 bigram colu
 read of the 167 book cells, and the M columns. Alternative: an Entick reprint with the same pagination, which would read the same. Most
 informative experiment: a blind rule-7 re-derivation of the cells, then the verifier (SHERWOOD-VERIFY, Opus, cap 12). Decision: verify.
 No outward wording until AUDIT.md carries a class (rule 10).
+
+## Parent decision 5 (account 4, 18 Oct 2026, 10:1x UTC)
+
+What was learned: the convention holds independently (8/8), but the solver's line grid was one line low on four pages; 6 tokens move. Entick
+as a British page/column codebook is already in print, so the design is known; Leighton and Matyas (1985) may name this very cypher.
+Assumptions still unverified: the grid on uncited pages (now irrelevant) and on cited pages that the old top check skipped. Alternative for
+"Beyond" 33-35: an encoder miscount. Most informative experiments: (1) re-issue with every cited page's top checked (SHERWOOD-FIX, Opus, cap
+5); (2) read Leighton and Matyas, which sets the N-class (ASKS 174, a free ILL request for the owner; the fix worker also tries the free
+Springer preview). Decision: fix, then verifier again for the class. Outward wording stays at AUDIT.md's safe sentence.
