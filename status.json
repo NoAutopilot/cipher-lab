@@ -16223,6 +16223,34 @@
    },
    "depth_sentence": "",
    "depth_check": "V-BAMF 11 Oct 2026: no letter stretch reads without a liberty (dittography repair, conflicted 94), 24 letter positions far below the authentication distance; 937 reads in one context only; D1 'fragments read'"
+  },
+  {
+   "date": "18 Oct 2026",
+   "kind": "recovery",
+   "claim_scope": "recovered-passages",
+   "title": "Cossit/Sumner cypher messages to Justus Sherwood, February 1783 (Haldimand Papers, BL Add MS 21838 pp.345-347): partially deciphered as a page-and-line code into Entick's New Spelling Dictionary (1781)",
+   "grade": "N3",
+   "plaintext_novelty": "N3",
+   "mapping_novelty": "N3",
+   "key": "ours (code book identified: Entick 1781, 12 anchors vs shuffled control; design published: Entick as a Haldimand-service code book, Friedman; Leighton and Matyas 1985)",
+   "text": "unknown (plaintext not located in print; the events of No.4 are in Pell 1929; Sherwood's 1783 sketch gives the gist of No.1 and No.4 in manuscript)",
+   "line": "Account 4 program C (SCOUT-KEYS K9): the Cossit/Sumner cypher reads from Entick 1781 by page and printed column line; 216 rows H 8, C 4, S 145, M 57, I 2; beats W+-1 and 20 P-shuffle controls; Sherwood's own 1783 sketch agrees on No.1 and No.4; No.2-No.3, which he could not read, now partly read.",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sherwood-cossit-1781",
+   "document_id": "BL Add MS 21838 (LAC B.178) pp.345-347, reel H-1737 fr.15-17",
+   "completeness": "216 pair rows: H 8, C 4, S 145, M 57, I 2",
+   "unresolved_spans": "57 M rows, mostly No.2-No.3 column choices; standalone figures 415, 809, 2, 11, 500 and 23-4-1; 192-88; 33-35 (Beyond?, encoder slip unrepaired)",
+   "audit_refs": [
+    "AUDIT.md '## Current verdict (SHERWOOD-VERIFY2, account 4, 18 Oct 2026)'"
+   ],
+   "audit_status": "one audit",
+   "superseded_by": "",
+   "fields_source": "sherwood-cossit-1781/AUDIT.md '## Current verdict (SHERWOOD-VERIFY2)'",
+   "reading_version": "SHERWOOD-FIX ace2a5767 (decode_entick.py --check exit 0, re-run by parent and by SHERWOOD-VERIFY2)",
+   "depth": "D2",
+   "depth_pct": "72.7",
+   "decode_status": "Partially decrypted",
+   "depth_sentence": "Message No.4 of the Cossit/Sumner cypher, dated February 1783, reports that Colonel Strong reported in council at Windsor, in the writer's hearing, on a move 'towards the reduction of the new state'.",
+   "depth_check": "rule-7 re-read 56/56 + clauses of 11-16 consecutive H/S tokens vs W+-1 and 20 P-shuffle controls; Sherwood's 1783 sketch agrees on No.1 and No.4"
   }
  ],
  "lanes": [

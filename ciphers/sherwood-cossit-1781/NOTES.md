@@ -1,4 +1,4 @@
-open
+partial
 Brymner, Report on the Canadian Archives 1888, Haldimand Collection calendar, B.177-2 pp.82-108 and B.178
 pp.336-360 read by this worker (archive.org `reportoncanadian1888publuoft`, djvu text lines 43500-43680 and
 45020-45090): the cipher content is never printed, only its existence calendared.
@@ -557,3 +557,37 @@ second verifier (SHERWOOD-VERIFY2, Opus, cap 6) for rule 7 on the re-issue and a
 Decision: verify.
 
 **Verifier note (SHERWOOD-VERIFY2, 18 Oct 2026):** the re-issue passes rule 7 (56/56 column reads agree on the 8 changed/heading cells and a seeded sample of 20 unchanged S cells, `verify2/`). Class N3 (not N4 while Leighton and Matyas 1985 is unread, ASKS 174), key ours (design published), depth D2 (H/C/S 157/216 = 72.7%). Verdict and safe sentence: AUDIT.md "Current verdict".
+
+## Parent decision 7 (account 4, 18 Oct 2026, 12:0x UTC)
+
+SHERWOOD-VERIFY2 passed rule 7 (56/56 column reads) and classed the reading N3, D2 (72.7% H/C/S), key ours with a published design. Status
+word set to `partial`, and a status.json results row was added from AUDIT.md's fields (one audit; the second opinion
+SO-SHERWOOD-COSSIT is queued). What was learned: the reading stands after an independent re-read. Assumptions: the bigram column chooser
+for 145 S tokens; the class assumes Leighton and Matyas does not print this cypher (ASKS 174). Alternative: Leighton's research files
+hold a reading. Most informative next experiment: the sibling cypher letters of Cossit and Sumner (Fryer cites B.175 pp.185-186, 30 Dec
+1782), which add ciphertext in the same code and possibly more Sherwood sketches. Decision: continue (siblings), then a contextual read of the
+M rows. The breakthrough alert waits for the second audit or the Leighton and Matyas read.
+
+## Siblings (18 Oct 2026, account-4 parent)
+Same code, same correspondents: Cossit and Sumner's other cypher letters to Sherwood and Haldimand, winter 1782-83 (Fryer 1981 cites
+B.175 pp.185-186, Cossitt and Sumner to Haldimand, 30 Dec 1782; Brymner 1888 calendars further B.175-B.178 entries). Same design, other
+correspondents: the Haldimand service's Entick and code-list letters (Leighton and Matyas 1985; Friedman), and the 1778 title-page book
+cipher already in ciphers/pro3055-clinton-1779. Planned: list the Cossit/Sumner entries from Brymner by script, fetch only those frames,
+decode with decode_entick.py (next worker, ~$5).
+
+## Remaining gaps (18 Oct 2026, account-4 parent)
+Read so far: 157/216 pair rows H/C/S = 72.7% (AUDIT.md "## Current verdict", SHERWOOD-VERIFY2)
+- 57 M rows, mostly No.2 and No.3 column choices with no context - blocker: not-attempted; the bigram chooser leaves them under a 2-nat margin (reading.tsv) ; next: a contextual read of the col 1/col 2 lattice for the M rows with the sibling letters' vocabulary, ~$4
+- standalone figures 415, 809, 2, 11, 500, the triple 23-4-1 and 192-88 - blocker: open-codes; numbers in clear or outside the book's line range, no context narrows them yet (NOTES.md "Still unread")
+- N-class above N3 - blocker: waiting-on ASKS 174; the owner's ILL request for Leighton and Matyas 1985 decides N3 vs N4
+- 33-35 "Beyond" (encoder one-line slip) - blocker: not-attempted; needs a second instance of a slip before an I repair (AUDIT.md) ; next: scan the sibling letters for the same slip pattern, ~$1
+
+## Escalation (18 Oct 2026, account-4 parent)
+- [ ] siblings: Cossit and Sumner's other cypher letters (Fryer cites B.175 pp.185-186, 30 Dec 1782; Brymner B.175-B.178 entries); planned step: list them from Brymner by script, fetch only those frames, decode with decode_entick.py
+- [x] clear-pages: Sherwood's own sketch of No.1-No.4 (B.178 pp.84-85) read and compared
+- [x] known-keys: Entick 1781 identified (SHERWOOD-BOOK) and the line convention gated (SHERWOOD-READ)
+- [x] print: AUDIT.md search log (two verifier passes)
+- [n/a] key-rebuild: the printed book is the key, nothing to rebuild
+- [x] image-check: rule 7 re-read 56/56 (SHERWOOD-VERIFY2) after the 334-read blind pass (SHERWOOD-VERIFY)
+- [ ] retry: contextual lattice read of the M rows after the siblings
+Verdict: keep going: 3 internal gaps; cheapest next: siblings list and fetch, ~$5
