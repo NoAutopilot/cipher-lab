@@ -652,4 +652,14 @@ Read so far: 157/216 pair rows H/C/S = 72.7% (AUDIT.md "## Current verdict", SHE
 - [n/a] key-rebuild: the printed book is the key, nothing to rebuild
 - [x] image-check: rule 7 re-read 56/56 (SHERWOOD-VERIFY2) after the 334-read blind pass (SHERWOOD-VERIFY)
 - [ ] retry: contextual lattice read of the M rows after the siblings
-Verdict: keep going: 3 internal gaps; cheapest next: siblings list and fetch, ~$5
+Verdict: keep going: 3 internal gaps; cheapest next: verifier pass on the 3 slip proposals (siblings/m_row_proposals.tsv) with the M-row lattice read, ~$4, held until Leighton and Matyas arrives (ASKS 174) so one verifier pass does both
+
+## Parent decision 8 (account 4, 18 Oct 2026, 13:0x UTC)
+
+What was learned: no sibling ciphertext survives in B.175-B.178. Sherwood's own letters say the encoder misnumbered pages (p.105) and made
+"errors in calculating" (p.365). That supports encoder slips as the cause of some M rows: a page-offset test with d = -1 recovers 2 of 14
+sketch words, against 0.20 per offset on the control offsets. Assumption: the slips are page slips, not digit misreadings (the worker says
+to re-read the digit 6 first). Unverified: the 3 proposals. Alternative: transcription errors in our ciphertext. Most informative next
+experiment: one verifier pass on the proposals plus the M-row lattice. It is held until the Leighton and Matyas chapter arrives (ASKS 174),
+so one session settles both. A second lead goes to program C: the wider Haldimand-service cypher pool (Brymner calendars every volume;
+same office, same key family). Decision: park this target's internal steps briefly and pivot program C to the pool.
