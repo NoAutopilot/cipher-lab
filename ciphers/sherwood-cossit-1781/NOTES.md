@@ -252,3 +252,70 @@ four messages survives. Assumptions: p.345 = No.4, and the sketch alignment, whi
 and the alignment beyond repeats. Alternatives: a private word list (no printed book), or page-column-line. Most informative experiment: an
 anchor-page fit across scanned period dictionaries against a shuffled-anchor control (SHERWOOD-BOOK, Sonnet, cap 4, scripts only). Decision:
 continue with a new instrument (book identification). If a book fits, the reading becomes a key application at grade H.
+
+## Code-book identification (SHERWOOD-BOOK, 18 Oct 2026)
+
+**The book is John Entick, *The New Spelling Dictionary* (1781 edition), archive.org `11280377bsb`.** Scripts only, no
+vision calls. `tools/ia_djvu_headwords.py` extended with an `--anchors FILE.tsv` mode (word, cipher page; finds each
+headword's scan in a window centred on the word's own alphabetical fraction -- never on the anchor page itself, so the
+window can't bias the fit -- then reads the book's own `<id>_page_numbers.json` leaf-to-printed-page map, archive-hocr-
+tools' own page-number detector, not this worker's OCR scraping). `ciphers/sherwood-cossit-1781/book_id/score_fit.py`
+scores a `*_fit.tsv` against the shuffled-anchor control (rule 3) and `--check` guards the numbers below against drift.
+
+| Edition (IA id) | n anchors in-window | mean abs page error | share within +-2 | control mean abs error (min-max, 100 shuffles) | control share within +-2 (min-max) |
+|---|---|---|---|---|---|
+| **Entick 1781, `11280377bsb`** | 12 | **0.58** | **0.917** | 104.2 (55.8-142.2) | 0.085 (0.000-0.333) |
+| Bailey 25th ed. 1783, `bim_eighteenth-century_an-universal-etymologica_bailey-n-nathan_1783` | 16 | 238.1 | 0.000 | 238.1 (238.1-238.1, degenerate: see below) | 0.002 (0.000-0.062) |
+
+Entick 1781, 12 anchors matched in-window (word: anchor page -> est. printed page, error): Colonel 65->65 (0),
+house 176->175 (1), men 219->225 (6), new 240->240 (0), of 246->246 (0), post 274->274 (0), reduction 297->297 (0),
+state 344->344 (0), Strong 349->349 (0), the 364->364 (0), them 364->364 (0), was 409->409 (0). 11/12 land within
++-2 pages of the cipher's own first figure, 9/12 exact. The matched control (the same 12 found positions, the
+anchor pages shuffled among them, 100 seeded shuffles) gives a mean error 55.8-142.2 pages and a within-+-2 share
+0-33.3%: the real fit beats every one of the 100 shuffles on both statistics. **Independent confirmation, not from
+any anchor:** this edition's own printed pagination tops out at page **472** (leaf 503 of 513, from its own
+`page_numbers.json`) -- the exact upper bound of the cipher's first-figure range (P 4-472, SHERWOOD-PAGES). The
+19 remaining anchors (Albany, alarmed, council, destined, expect, from, February, force, hearing, last, my,
+reported, said, Saturday, sleigh, they ["they" matched outside-window, 310 pages off, a false early hit on the
+word in running prose -- discarded, not the headword], towards, Vermont, Wednesday) were not found by the
+automated headword search at this time box: calendar words (February, Saturday, Wednesday) and the two place
+names (Albany, Vermont) plausibly sit in an appendix with separate pagination (the brief's own warning), and a
+spelling dictionary may simply omit several of the inflected/derived forms (destined, expect, reported, towards,
+said) under their own entry rather than under the base word's. Not chased further in this box (rule 7: `--check`
+below guards only the numbers actually reported).
+
+Bailey 1783 (25th edition, `bim_eighteenth-century_an-universal-etymologica_bailey-n-nathan_1783`) is a clean
+negative, not a non-test: 16 anchors matched in-window, mean error 238 pages, 0/16 within +-2, and its control is
+*degenerate* (238.1 for every one of the 100 shuffles) because this edition's own `page_numbers.json` is low-
+confidence (`"confidence": 11`, only 55 of 947 leaves carry a detected page number) and almost every found scan
+interpolated to the same few leaves near a single confident anchor -- the control can't discriminate here because
+the measurement itself barely varies, not because the book fits. That is logged as a genuine non-fit on its OWN
+terms (real error already matches blind guessing), not relied on for a "book excluded" claim the way Entick's
+clean separation supports a positive. 947 scans is also far larger than the cipher's own 472-page ceiling, which
+on its own makes this edition implausible regardless of the OCR quality.
+
+**W (word-within-page) fit, not yet resolved.** Page 364 ("the") OCR's to ~59 lines in two columns; the cipher's W
+tops out at 38, so W plausibly counts one column or primary headwords only (sub-entries like "Thankfulness" under
+"Thank" may not count toward W at all) -- this needs an image-resolution check against the actual printed page,
+which is the next job's work (brief: "do not decode the unaligned groups in this job").
+
+Commands: `python3 tools/ia_djvu_headwords.py 11280377bsb --anchors ciphers/sherwood-cossit-1781/book_id/anchors.tsv
+> ciphers/sherwood-cossit-1781/book_id/entick1781_fit.tsv`; `python3 ciphers/sherwood-cossit-1781/book_id/score_fit.py
+ciphers/sherwood-cossit-1781/book_id/entick1781_fit.tsv --check 12 0.583 0.917` (passes). Large OCR caches
+(`*_djvu.xml`, `*_page_numbers.json`, tens of MB each) were deleted after scoring, not committed (CLAUDE.md 30MB
+rule); a fresh run re-downloads them from archive.org.
+
+Requests this job: archive.org advancedsearch 13, archive.org metadata 3, archive.org download (djvu.xml +
+page_numbers.json) 6, all >=1.5s apart with a descriptive User-Agent, well under the 40-request cap; no
+books.googleapis.com calls needed once the archive.org route worked.
+
+Six questions. Learned: the cipher is Entick's 1781 *New Spelling Dictionary* (archive.org `11280377bsb`), not a
+private word list -- 12 anchors fit at a mean 0.58-page error against a shuffled control at 104.2, and the book's
+own last page (472) matches the cipher's own maximum first figure exactly, independent of any anchor. Assumption:
+the P-W pairing is page-then-entry-index as SHERWOOD-PAGES proposed; untested here. Unverified: the W (entry-
+within-page) count convention, and whether the 1781 printing is the exact edition Sherwood held (a reprint with
+identical pagination would read the same against these 12 anchors). Alternatives ruled out: Bailey's 1783 25th
+edition (238-page mean error, no better than its own degenerate control). Most informative next experiment: apply
+this key to the ~120 unaligned groups on p.346 (No.2/No.3) at image resolution, checking the W convention against
+the actual printed column layout of page 364 and a couple of the other anchor pages. Decision: continue -- this
+is now a key-application job, not cryptanalysis.

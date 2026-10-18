@@ -1,0 +1,32 @@
+word	anchor_page	scan	est_page	abs_error	flag	src
+Albany	10				not-found	
+alarmed	10				not-found	
+Colonel	65	96	65	0	ok	exact
+council	81				not-found	
+destined	109				not-found	
+expect	131				not-found	
+from	131				not-found	
+February	138				not-found	
+force	146				not-found	
+hearing	168				not-found	
+house	176	206	175	1	ok	exact
+last	206				not-found	
+men	219	256	225	6	ok	exact
+my	237				not-found	
+new	240	271	240	0	ok	exact
+of	246	277	246	0	ok	exact
+post	274	305	274	0	ok	exact
+reduction	297	328	297	0	ok	exact
+reported	301				not-found	
+said	312				not-found	
+Saturday	315				not-found	
+sleigh	331				not-found	
+state	344	375	344	0	ok	exact
+Strong	349	380	349	0	ok	exact
+the	364	395	364	0	ok	exact
+them	364	395	364	0	ok	exact
+they	365	86	55	310	outside-window	exact
+towards	371				not-found	
+Vermont	382				not-found	
+was	409	440	409	0	ok	exact
+Wednesday	411				not-found	

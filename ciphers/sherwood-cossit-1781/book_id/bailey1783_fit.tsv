@@ -1,0 +1,32 @@
+word	anchor_page	scan	est_page	abs_error	flag	src
+Albany	10				not-found	
+alarmed	10				not-found	
+Colonel	65				not-found	
+council	81	666	7	74	outside-window	exact
+destined	109				not-found	
+expect	131				not-found	
+from	131	256	2	129	ok	interp
+February	138				not-found	
+force	146	135	3	143	ok	interp
+hearing	168	291	2	166	ok	interp
+house	176	153	3	173	ok	interp
+last	206	430	4	202	ok	interp
+men	219	326	2	217	ok	interp
+my	237	363	2	235	ok	interp
+new	240	552	5	235	ok	interp
+of	246	383	3	243	ok	interp
+post	274	653	3	271	ok	exact
+reduction	297	705	2	295	ok	interp
+reported	301				not-found	
+said	312	663	4	308	ok	exact
+Saturday	315				not-found	
+sleigh	331				not-found	
+state	344	644	4	340	ok	interp
+Strong	349	808	95	254	ok	extrap
+the	364				not-found	
+them	364	562	5	359	ok	interp
+they	365	240	2	363	outside-window	interp
+towards	371	844	131	240	ok	extrap
+Vermont	382				not-found	
+was	409	400	3	406	outside-window	interp
+Wednesday	411				not-found	
