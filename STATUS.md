@@ -97,6 +97,12 @@ cheap to test with the two Haldimand keys on disk. HALD149 (session_01Ps4Gw1jAnn
 (intake gate), then fetches the page and tests the 1778 title key and the Entick forms against shuffled controls. The owner's sort
 (ASKS 173) is still not in.
 
+Check-in 93 (18 Oct 2026, 15:1x UTC). HALD149 (Opus, USD 2.69): found-solved by premise. B.149 p.286 carries no cipher; Brymner's "in
+cypher" line calendars a covering letter, whose enclosure is most probably the B.148 p.123 copy that pro3055 already reads. The Haldimand
+pool is parked (ranks 2-3 are a translated duplicate and an embedded phrase). Program C next: K10-GREP (session_01LoArDjQN5aiQnH7CR9d1re,
+Sonnet, cap 2), SCOUT-KEYS K10's own script test on the C11A cipher-despatch calendar. Account 4 today: 12 workers, about USD 54. Results:
+one recovery at N3/D2 (Sherwood), four check-solveds, and two pools parked with lessons.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
