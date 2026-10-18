@@ -17785,3 +17785,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-18 20:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 20:34 UTC 18 Oct: spawned 0 -- no queued account-4 rows
 2026-10-18 20:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 20:40 UTC 18 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0. usage: five_hour allowed by get_session, resets 01:20 UTC 19 Oct
 2026-10-18 20:54 | orchestrator (owner account) | check-in 203 (20:54 UTC 18 Oct): no account-1 sessions running; nothing to archive. Since 19:54: account 4 check-in 97 (19:56) quiet, nothing live, next ~21:55; dispatchers on accounts 1, 2, 4 spawned 0. Board same. Waiting on owner: ASKS 174, 173, 163/169, BLAST-account-1 row, create_session grant. usage: five_hour allowed by get_session, resets 01:20 UTC 19 Oct
+2026-10-18 21:12 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 21:12 UTC: spawned 0 (), queued left 0
