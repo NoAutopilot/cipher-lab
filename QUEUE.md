@@ -7693,3 +7693,64 @@ list (step 3 of the brief) -- next worker should run these before promoting rank
 `ciphers/sherwood-cossit-1781`. Requests: archive.org ~22 (6 advancedsearch/metadata probes, 6 djvu downloads with
 one redirect retry each = 6 wasted). `harvest/HALD-POOL-2026-10-18.tsv` has the full 76-row table (year, archive id,
 djvu line, collection, volume, page, a crude text-present heuristic, Brymner's words) for anyone re-ranking.
+
+## Book-code candidates (18 Oct 2026, SCOUT-BOOKCODE, account 4)
+
+Brief: `.claude/briefs/runs/2026-10-18-acct4-research-director-24.md`. Why: `ciphers/sherwood-cossit-1781`'s
+`decode_entick.py`/`book_id/score_fit.py` instrument (an anchor-page fit against a shuffled control for any
+printed book of the period whose scan is free online) generalises to any book/dictionary code of 1775-1815 with
+no decipherment beside it. SCOUT-KEYS is used up apart from paywalled TNA rows (K5-K8); this sweep covered
+`www.loc.gov` (JSON search), `heritage.canadiana.ca`, `quod.lib.umich.edu`/`clements.umich.edu`, `archive.org`,
+and web search, per the brief's host list.
+
+**Blocked/negative hosts, confirmed again this pass.** `quod.lib.umich.edu` and `clements.umich.edu` both still
+403 to curl (matching the 24 Sept LANE N and 25 Sept ZX2 findings already in this file) -- the Clements Library's
+Clinton Papers (the brief's named lead) remain reachable only by web-search snippet, never by direct fetch.
+LAC's Carleton Papers / British Headquarters Papers (MG23, the other brief-named LAC lead beyond the Haldimand
+B.147-178 volumes already worked) are confirmed **not digitised** by LAC's own public page ("these microfilms
+are not digitized, so they can only be viewed in person or ordered as copies") -- no free-image route exists, so
+this lead is dropped, not parked. `www.loc.gov`'s JSON search (reachable, 200, but slow/intermittent: several
+calls timed out at 20-40s and needed one retry) was re-queried with book-code-specific terms ("cipher figures
+dictionary not deciphered", "intercepted cipher not deciphered 1780", "cipher in figures manuscript letter") on
+top of the five general "cipher"/"cypher" queries the 24 Sept LANE N scLOC sweep already ran against Peter Force,
+Continental Congress and Washington Papers material (0 candidates kept there, logged above in this file) --
+every hit this pass was a printed 19th/20th-century dictionary or cryptogram book (noise), 0 manuscript hits; the
+`fa=partof:...` facet filter could not be gotten to parse correctly before the query timed out twice, so a
+collection-scoped LoC search is untested, not negative. Not a kept candidate: a 2025 academic paper (Pierrot,
+Chaline, Damoiseau-Malraux, Mekhail, Perret, NEALT Proceedings/dspace.ut.ee, unreachable from this container --
+connection reset -- read only via web-search snippet) reconstructs about 96% of one of three enciphered letters
+of the Marquis de Bellecombe, governor of Saint-Domingue, 1778-83, using a directory-based (dictionary) cipher --
+genuine period book-code material, but already worked in depth by a named outside team, not ours to claim; worth
+a citation if this project ever touches French Caribbean book codes, not a row.
+
+**Kept: the Papers of John Jay digital edition (Columbia University Rare Book & Manuscript Library,
+`dlc.library.columbia.edu/jay`), found via web search, not previously in this repository as a host** (grepped
+QUEUE.md/CATALOG.md/LANDSCAPE.md/ciphers/: one unrelated passing mention in `ciphers/sp36-ball-1745/NOTES.md`
+only). Tomokiyo's own `sources/cryptiana/web/bookcode.htm` (already on disk, read this pass) documents this
+exact correspondence set -- Jay (Spain mission, 1780-82), Gouverneur Morris, Robert R. Livingston, William
+Carmichael, Arthur Lee, the President of Congress, Francis Dana -- as a book-code family keyed to **Entick's New
+Spelling Dictionary** (page+column+line, matching `decode_entick.py`'s own convention) and, on at least one
+channel (Jay-Thomson/Livingston, Feb 1780), **Boyer's French Dictionary**; it also states "the British army
+sometimes used a book code based on the same Entick dictionary" (WE084), confirming this is the same instrument
+family as `ciphers/sherwood-cossit-1781`, not a different one. Tomokiyo's page gives many worked, dated examples
+(Jan-Mar 1780 Morris channel, 1778-79 Lee/Carmichael, Feb 1780 Livingston/Thomson, Oct 1782 Dana) but none for 27
+May 1780, 27 Oct 1780 or 28 Nov 1781 (grepped the file for "MAY27"/"OCT27"/"NOV28": no hit) -- so these three
+items fall in the gaps of an otherwise exhaustively-documented channel, not inside it. Two are digitised (IIIF
+manifests confirmed reachable, no login) and explicitly catalogued as undecoded cipher passages:
+
+- **B1** [Document, 1780 October 27], Jay to Silas Deane (`ldpd:85142`): "(Part in cipher which has not been
+  decoded.)" -- 2 page images.
+- **B2** [Document, 1781 November 28], Robert R. Livingston to Jay (`ldpd:87671`): a bracketed cipher clause plus
+  the cataloger's own note "The cipher is not deciphered in Wharton or Johnson" (i.e. Wharton's *Diplomatic
+  Correspondence of the American Revolution* and Henry P. Johnston's edition of Jay's papers, both checked by
+  the cataloger, not yet independently verified by this project) -- 10 page images.
+- **B3** [Document], 1780 May 27, Jay to Gouverneur Morris (`ldpd:500169`): "old cypher (not decipherable)" -- no
+  IIIF manifest found on the item page; catalog record only, not digitised. Parked for lack of a free image.
+
+Full table with scores and first cheap tests: `harvest/SCOUT-BOOKCODE-2026-10-18.tsv` (B1 score 44, B2 score 46,
+B3 score 22, tier A/A/B). Not checked this pass (budget): DECODE cache grep, Bourdeau/Aymeloglu shallow clones,
+and reading B1/B2's actual page images (the first cheap test, not run by a scout per pipeline step 1). Never
+promoted, never solved. Requests: `www.loc.gov` ~10 (2 timed out, retried once each per the good-citizen rule),
+`heritage.canadiana.ca` 0 (no query run -- the brief's LAC lead resolved to a non-digitised microfilm before any
+canadiana query was needed), `quod.lib.umich.edu`/`clements.umich.edu` 2 (both 403, one attempt each, not
+retried), `dlc.library.columbia.edu` ~14 (item pages, dc_xml metadata, two IIIF manifests), WebSearch 9.
