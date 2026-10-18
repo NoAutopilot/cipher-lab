@@ -555,3 +555,5 @@ The re-issue fixes the cause (head-band guard) and checks every cited column top
 the column chooser (145 S tokens). Unverified: a second blind read of the changed cells and a random sample. Most informative experiment: a
 second verifier (SHERWOOD-VERIFY2, Opus, cap 6) for rule 7 on the re-issue and a class with the Leighton and Matyas gap stated (ASKS 174).
 Decision: verify.
+
+**Verifier note (SHERWOOD-VERIFY2, 18 Oct 2026):** the re-issue passes rule 7 (56/56 column reads agree on the 8 changed/heading cells and a seeded sample of 20 unchanged S cells, `verify2/`). Class N3 (not N4 while Leighton and Matyas 1985 is unread, ASKS 174), key ours (design published), depth D2 (H/C/S 157/216 = 72.7%). Verdict and safe sentence: AUDIT.md "Current verdict".

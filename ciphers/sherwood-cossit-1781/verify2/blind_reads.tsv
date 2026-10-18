@@ -1,0 +1,33 @@
+# SHERWOOD-VERIFY2, 18 Oct 2026 11:1x-11:3x UTC: lines counted by eye from the top of each column on archive.org 11280377bsb page
+# images (zip ext=jpg reduce=0, 1405 px), every printed line counted incl. wraps and section headings; running head not counted.
+# set=reissued: cells changed by SHERWOOD-FIX (listed from git diff def0a7723..ace2a5767 of book/entries_image.tsv, so not blind to
+# the diff; the line count itself was done on the image). set=sample: verify2/sample_cells.tsv, read before opening entries_image.tsv.
+set	page	W	col1	col2	note
+reissued	33	35	Bestiality	Bezoar	Beyond is c2 line 34
+reissued	84	25	Crestfallen	Crisp	Crested is c1 line 24
+reissued	215	32	Love	Lowing	Love v. 31, Love f. 32
+reissued	278	8	Preparedly	Present	c2 line 3 is a wrap (Prescription)
+reissued	312	22	Sacrificable	Said	c1 line 10 is a wrap (Sack)
+reissued	312	24	Sacrifice	Sail	c1 Sacrifice v.; c2 Sail v.
+reissued	312	29	Sacrilegious	Saint	
+reissued	153	7	Furry	Gabel	c2 Gabel (roof) if the centred "G." heading is line 1 (it sits level with c1 line 1), else Gad
+sample	20	16	Army	Arterial	
+sample	22	20	Asseveration	Assured	c2 line 18 is a wrap (Assurance)
+sample	47	19	Caligation	Came	
+sample	95	33	Delivered	Demolish	
+sample	109	9	Distend	Distrust	
+sample	131	37	Exigence	Expect	c2 line 13 is a wrap (Exodus)
+sample	168	5	Have	Headach	
+sample	168	35	Hazardously	Hearing	c2 line 25 is a wrap (Healthful)
+sample	202	36	Justice	Keg	c2 counts the centred "K." heading (line 14, level with c1 line 14); Keeping if not counted
+sample	246	17	Ocularly	Official	
+sample	295	11	Received	Recline	
+sample	315	1	Saturate	Saw	
+sample	324	10	Several	Shagreen	wraps at c1 2, c2 3
+sample	364	1	Tew	Them	
+sample	377	12	Trustee	Tumorous	c1 line 3 is a wrap (Trunk)
+sample	414	3	Whom	Wig	
+sample	414	21	Wickedly	Will	
+sample	414	22	Wickedness	Will	c2 Will f. 21, Will v. 22
+sample	468	37	Portsmouth	Roding	list of boroughs
+sample	472	34	Witney	York	list of boroughs

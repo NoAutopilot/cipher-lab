@@ -1,0 +1,22 @@
+# SHERWOOD-VERIFY2 sample: 20 unchanged S cells (page, W, chosen col), random.seed(20261018) over sorted unique S cells excluding re-issued cells
+page	W	col
+20	16	1
+22	20	2
+47	19	2
+95	33	1
+109	9	2
+131	37	2
+168	5	1
+168	35	2
+202	36	1
+246	17	2
+295	11	1
+315	1	2
+324	10	1
+364	1	2
+377	12	1
+414	3	1
+414	21	2
+414	22	2
+468	37	1
+472	34	2
