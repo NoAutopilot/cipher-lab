@@ -83,6 +83,13 @@ breakthrough alert is held until a second audit or the Leighton and Matyas read.
 box 60) gets the sibling Cossit/Sumner cypher letters, decodes them, and proposes settlements for the M rows. Program C so far: 6
 check-solveds; one reading (K9).
 
+Check-in 91 (18 Oct 2026, 13:0x UTC). SHERWOOD-SIB (Opus, USD 3.68): no other Cossit/Sumner ciphertext survives in B.175-B.178. Sherwood's own
+letters name encoder page-number slips (p.105) and a reply he sent to Sumner in the same code (plain copy p.365). A page-offset test (d=-1)
+recovers 2 of 14 sketch words against 0.20 per control offset, so there are 3 proposals for a verifier, held until Leighton and Matyas
+arrives (ASKS 174) so that one pass settles both. The Entick key family is registered in KEY-OFFICES.tsv. Program C pivots to the pool:
+HALD-POOL (session_01MVNBNwoASZ8LzninCGLQbE, Sonnet, cap 4, scripts only) lists every Haldimand-service cypher entry in Brymner's Reports
+1884-1889 and ranks the unread ones for key application from the same code book. Sherwood total: about USD 41 over 8 sessions.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
