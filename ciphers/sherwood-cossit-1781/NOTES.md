@@ -433,3 +433,12 @@ Unverified: the M columns, the p.347 gloss shift, the standalone figures. Altern
 pagination would read the same. Most informative next experiment: a verifier-side re-derivation (rule 7) and a second blind read
 of entries_image.tsv; then a contextual read of No.2/No.3 with the col 1/col 2 lattice in front of a person. Decision: continue
 to verification; the reading is a key application from an identified code book (key: ours).
+
+## Parent decision 4 (account 4, 18 Oct 2026, 09:1x UTC)
+
+The parent re-ran `python3 decode_entick.py --check`: "reading current". What was learned: the cypher reads from Entick 1781 by page and
+column-line; No.1 and No.4 agree with Sherwood's paraphrase, and No.1 carries the thunder-damage passage Sherwood could not read.
+Assumptions: the transcription's digits, the line grid, and the en18 bigram column chooser (147 S tokens rest on it). Unverified: a second
+read of the 167 book cells, and the M columns. Alternative: an Entick reprint with the same pagination, which would read the same. Most
+informative experiment: a blind rule-7 re-derivation of the cells, then the verifier (SHERWOOD-VERIFY, Opus, cap 12). Decision: verify.
+No outward wording until AUDIT.md carries a class (rule 10).
