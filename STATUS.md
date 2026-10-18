@@ -90,6 +90,13 @@ arrives (ASKS 174) so that one pass settles both. The Entick key family is regis
 HALD-POOL (session_01MVNBNwoASZ8LzninCGLQbE, Sonnet, cap 4, scripts only) lists every Haldimand-service cypher entry in Brymner's Reports
 1884-1889 and ranks the unread ones for key application from the same code book. Sherwood total: about USD 41 over 8 sessions.
 
+Check-in 92 (18 Oct 2026, 14:0x UTC). HALD-POOL (Sonnet, USD 3.41) listed the Haldimand-service cypher entries in Brymner 1884-89 by script:
+76 rows, 43 of them already covered by existing targets (pro3055 B.147/148, sherwood B.175-178), 13 fresh and 5 genuine. The pool is
+smaller than hoped: single items, not a large unread corpus. Rank 1, B.149 p.286 ("Page 286 in cypher from Carleton", 1783-84), is
+cheap to test with the two Haldimand keys on disk. HALD149 (session_01Ps4Gw1jAnnD9BFnF9eWFWa, Opus, cap 6, box 60) runs check-solved first
+(intake gate), then fetches the page and tests the 1778 title key and the Entick forms against shuffled controls. The owner's sort
+(ASKS 173) is still not in.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
