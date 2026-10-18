@@ -31,6 +31,15 @@ located in 8 requests. SHERWOOD-PAGES (session_012WFhCTyEp92v5u8pxgYRJ4, Opus, c
 pp.345-347, and apply the key against a 20-shuffle control. This is the best key-application prospect in program C so far. The owner's
 sort (ASKS 173) is still not in.
 
+Check-in 85 (18 Oct 2026, 07:1x UTC). SHERWOOD-PAGES (Opus, USD 10.32 against a cap of 6, 1.72x) located the reels (H-1736 fr.1539-40, H-1737
+fr.15-17; the item is Add MS 21838 = B.178) and transcribed 214 P-W pairs in two blind passes. Result: the 1778 title-page key is excluded
+against a shuffled control. New lead: an alphabetical dictionary page-word code (rho 0.998 vs 0.003 on a sketch alignment that is ours).
+Sherwood's own paraphrase of all four messages survives (p.84-85), and "February" is glossed 138-28 in the period hand (grade C).
+SHERWOOD-BOOK (session_01NYRvsXcz66QxYSngddD5Rg, Sonnet, cap 4, scripts only) fits the anchor pages to scanned pre-1783 dictionaries
+(Bailey, Entick, Dyche, Johnson abridged, Perry and others) against a shuffled-anchor control. A fit would make the reading a key
+application at grade H. No other program C spawn this check-in: K5/K6/K8 are paywalled TNA, and Sherwood is the live lead. The owner's
+sort (ASKS 173) is still not in.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
