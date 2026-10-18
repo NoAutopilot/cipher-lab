@@ -209,3 +209,10 @@ one action that depends on nobody, named here for `tools/next_steps.py`.
    without an image; recommend the DECODE image re-test (cheap, no TNA paywall) as the very next step before
    any copy order, since it could settle whether this is route-priority-1 (a key already in reach) or
    route-priority-2 (archival acquisition needed) work.
+
+## Parent decision (account 4, 18 Oct 2026, 05:2x UTC)
+
+What was learned: 11 undigitised intercepts, plus a Spanish key family in the same office that is on DECODE. Assumption under test: the
+SP 106/6 Spanish pages are the key to these intercepts (only shared language and office support it, and 523 is dated 1672). Alternative: a
+different Spanish key of the same era. Most informative experiment: the DECODE key-image test (FUENTE-KEY, Opus, cap 4), which runs before
+any money goes on the TNA copy order (SPRINT.md P12, held as a candidate). Decision: acquire, gated on that test.
