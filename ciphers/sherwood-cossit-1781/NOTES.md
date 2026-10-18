@@ -575,6 +575,68 @@ correspondents: the Haldimand service's Entick and code-list letters (Leighton a
 cipher already in ciphers/pro3055-clinton-1779. Planned: list the Cossit/Sumner entries from Brymner by script, fetch only those frames,
 decode with decode_entick.py (next worker, ~$5).
 
+## Sibling letters (SHERWOOD-SIB, 18 Oct 2026)
+**Result: no sibling ciphertext survives in the volumes searched.** `siblings/list_candidates.py` split Brymner 1888's B.175-B.178
+calendar (archive.org `reportoncanadian1888publuoft` djvu text, lines 36930-45125) into entries and kept those naming
+Cossit/Sumner/Summer, a cypher or Claremont: 33 entries (`siblings/candidates.tsv`, some season-"summer" noise left in). Five carry a
+cypher word: B.176 "looked on as a cypher" (figurative), B.177-2 p.592, B.178 p.84 (the sketch), B.178 p.105 and B.178 pp.345-347 (this
+cypher). Fryer 1981 (be-api, `buckskinpimperne0000frye`; queries cypher, cipher, Cossit, Cossitt, Sumner, code, dictionary, Entick, 185,
+blundering, "secret writing") gives no other cypher letter: her note 26 is B.175 pp.185-186, Cossitt and Sumner to Haldimand, 30 Dec
+1782, which Brymner calendars by content (Enos's offer to raise a regiment; Sumner's statement to the same effect), so a plain letter
+written at Quebec, not fetched. Frames looked at (`siblings/frames.tsv`; low-resolution first, crops only for reading):
+- **B.177-2 p.592 (H-1736 frame 1338), Sherwood to Mathews, Loyal Blockhouse 18 Nov 1782** ("Asks for cypher to be used"): "I do not yet
+  understand the cyphers, perhaps I may discypher them when more at leisure, but should you find the proper key, and his Excellency
+  approve of writing to Mr Wilson in that manner, please to send me a sample properly discyphered". A different channel (Wilson,
+  with Silas Deane's letters), before Cossit and Sumner's December visit to Quebec. Not this code.
+- **B.178 p.105 (H-1736 frame 1560), Sherwood to Mathews, 1 Mar 1783**, covering the sketch: "I have not time to decypher them properly,
+  especially as they are wrote in a very blundering manner and frequent mistakes made in numbering the pages. I have, however, look'd
+  them over, and inclos'd a sketch of what I understand from them" (margin: "See pp.84-85 infra"). He also says Cossit's letter, "when
+  join'd to the initial letters of his name, plac'd in the blanks of Edgar's affidavit, which was done by Mr Sumner", leaves no
+  doubt of Tom Johnson's duplicity.
+- **B.178 p.365 (H-1737 frame 35), copy of Sherwood to Cossit, 18 Mar 1783**, plain. After the signature: "N.B. I have sent one of the same
+  tenor and date to Mr Sumner written in Cyphers, with the following addition: By errors in calculating, some passages in your letter
+  were unintelligible" (archivist's margin: "See pp.345-7 supra"). So Sherwood wrote back in the same code, and the plain text of that
+  letter is here, but its ciphertext went to Sumner and is not in this volume. If Sumner's papers survive, that letter would be a
+  known-plaintext sibling (key check: the plain copy is short, about 50 words).
+- B.178 pp.353, 364-371 (H-1737 frames 23, 34-41): all plain (Sumner 1 Jan 1783; Allen; copies to Cossit; p.367 the 8 Jan 1783 report
+  signed in a monogram, with bracketed letters but no figures).
+Requests: archive.org 1 (djvu text) + be-api 11; heritage.canadiana.ca 2 (viewer pages for the IIIF ids); image-uab.canadiana.ca 21
+(frames above, thumbnails and crops), all >=1.5 s apart, descriptive UA. Vision: 9 reads, all crops or montages of thumbnails.
+
+**Steps 3-4 of the brief (decode siblings, settle M rows): nothing to decode, so no M row is settled by a sibling** (0 rows;
+`siblings/m_row_proposals.tsv` says so in its last row). decode_entick.py was not given a second-ciphertext option: there is no second
+ciphertext to give it.
+
+**What the period letters add instead: the encoder misnumbered pages.** Sherwood names page-number mistakes (p.105) and "errors in
+calculating" (p.365). Test (`siblings/slip_offset_test.py`, `--check` passes; output `siblings/slip_offset_test.out`): for the 14 M groups
+whose word Sherwood's sketch names (expected words fixed in the script before any neighbouring page was looked at), read the OCR of
+line W on page P+d, both columns, d = -6..+6. Rule: the OCR line begins with the word's first four letters. Results: d = -1 gives 2 hits,
+both true on the OCR text: **176-26 -> p.175 col 2 line 26 "House"** (now "Hug"; sketch "the House of New Hampshire") and **16-2 -> p.15
+col 1 line 2 "And"** (now "Anomy"; sketch "French fleet & army"). d = +1 gives 1 hit, false (p.189 "Indiscreet" for "Indies"). The control
+offsets |d| = 2-6 give 2 hits over 10 offsets (mean 0.20 per offset, max 1). One is false (p.81 "Counterpoise" for "council"); the other is
+true but is a different slip, 226-30 -> p.220 col 2 line 30 "March" (sketch "march'd"): a 6 for a 0, which is a digit question for the
+cypher image before it is an encoder question. d = 0 hits 315-2 Saturday (col 1), the sketch's choice already logged above. So two true
+hits at -1 against at most one true hit at any control offset: a lead, small N (14 groups), and the expected words come from our reading of
+Sherwood's paraphrase, so it is a crib test. Nothing here changes reading.tsv or a grade. Proposals for the next verifier are in
+`siblings/m_row_proposals.tsv` (proposed grade I for all three, with the page and cypher-image checks to make first).
+`siblings/page_slip_candidates.tsv` lists the P-1/P+1 OCR lines for all 57 M rows, for No.2 and No.3 too, where there is no sketch word
+(`siblings/page_slip_candidates.py`).
+
+**The 33-35 "Beyond" question (one-line slip).** No sibling gives a second one-line slip. The period testimony is about page numbers,
+and the two -1 page hits keep the line exactly. That is a different slip from 33-35's one line, so the I repair for 33-35 still has no
+second instance.
+
+Six questions. Learned: no other Cossit/Sumner ciphertext is in B.175-B.178. Sherwood himself says the encoder misnumbered pages, and
+at two sketch-named groups a -1 page gives the sketch's word. Assumptions: Brymner flags every cypher (he flagged this one only as
+"Cypher messages", so an unflagged figure letter in these volumes is possible but unlikely); the sketch words; the OCR lines for p.175
+and p.15 (clean here, image not yet re-read). Unverified: the three proposals on the book scan and the cypher image. Alternatives: the
+two hits are chance (control rate 0.2 per offset), or transcription digit errors rather than encoder slips: all three true hits end in a 6
+that should be 5 (176/175, 16/15) or 0 (226/220), so the transcribed 6 is the first thing to re-read on the cypher frames. Most informative next experiment: a verifier reads
+p.175 and p.15 on the scan and 176-26/16-2/226-30 on the cypher frames (3 crops, about $1.5). Then, if those hold, a P-1 lattice
+option in decode_entick.py for M rows with a W+-1 and P-shuffle control (about $3). New material: Sumner's papers for the ciphertext of
+Sherwood's 18 Mar 1783 cypher letter, whose plain copy is p.365 (a scout row, not a request yet). Decision: continue (verifier check of the
+three proposals); the sibling route stops here for B.175-B.178.
+
 ## Remaining gaps (18 Oct 2026, account-4 parent)
 Read so far: 157/216 pair rows H/C/S = 72.7% (AUDIT.md "## Current verdict", SHERWOOD-VERIFY2)
 - 57 M rows, mostly No.2 and No.3 column choices with no context - blocker: not-attempted; the bigram chooser leaves them under a 2-nat margin (reading.tsv) ; next: a contextual read of the col 1/col 2 lattice for the M rows with the sibling letters' vocabulary, ~$4
@@ -583,7 +645,7 @@ Read so far: 157/216 pair rows H/C/S = 72.7% (AUDIT.md "## Current verdict", SHE
 - 33-35 "Beyond" (encoder one-line slip) - blocker: not-attempted; needs a second instance of a slip before an I repair (AUDIT.md) ; next: scan the sibling letters for the same slip pattern, ~$1
 
 ## Escalation (18 Oct 2026, account-4 parent)
-- [ ] siblings: Cossit and Sumner's other cypher letters (Fryer cites B.175 pp.185-186, 30 Dec 1782; Brymner B.175-B.178 entries); planned step: list them from Brymner by script, fetch only those frames, decode with decode_entick.py
+- [x] siblings: listed by script (SHERWOOD-SIB): no other Cossit/Sumner ciphertext in B.175-B.178; Sherwood's outgoing cypher to Sumner of 18 Mar 1783 was sent, its plain copy is B.178 p.365 (see "## Sibling letters")
 - [x] clear-pages: Sherwood's own sketch of No.1-No.4 (B.178 pp.84-85) read and compared
 - [x] known-keys: Entick 1781 identified (SHERWOOD-BOOK) and the line convention gated (SHERWOOD-READ)
 - [x] print: AUDIT.md search log (two verifier passes)
