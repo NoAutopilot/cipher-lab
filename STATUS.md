@@ -15,6 +15,14 @@ reopening conditions are in its NOTES. Program C moves to K4: CHECK-FUENTE (sess
 check-solved on the SP 84/165 Fuente intercepts and the SP 106/6 no. 34 Spanish key table on DECODE. This is key-assisted and its first test
 uses the catalogue only. The owner's sort (ASKS 173) is not in yet, so Vivonne is held.
 
+Check-in 83 (18 Oct 2026, 05:2x UTC). CHECK-FUENTE (K4) came back `open` (Sonnet, USD 3.81 against a cap of 3). It found 11 undeciphered SP 84/165
+Spanish intercepts from 1662, none digitised, and three SP 106/6 Spanish-vocabulary key records on DECODE (523, 522, 517) that are not yet
+tied to Tomokiyo's no. 34. Decision: acquire, gated on a test. FUENTE-KEY (session_01RNrKLxNUL3JtsED74mKj5y, Opus, cap 4) makes one DECODE
+login and checks the key images against Tomokiyo's description. The TNA copy order is held as SPRINT P12, a candidate the owner has not
+been asked about. In parallel, CHECK-SHERWOOD (session_01UahfsH5qGYEp22wvmoAD8X, Sonnet, cap 4) runs check-solved on K9, a copy-free
+candidate: the Sherwood/Cossit cypher, Haldimand Papers, Vermont 1781. Check-solved costs about 3.8 at Sonnet, so such jobs are now capped
+at 4. The owner's sort (ASKS 173) is still not in.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
