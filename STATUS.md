@@ -116,6 +116,13 @@ lesson is in QUEUE.md: a catalogue note naming old editions is not a check of th
 CHECK-JAYDEANE (session_015QfcgUcFWy7fwYDbKYwxd3, Sonnet, cap 3). If it too is found-solved, program C idles until the 23 Oct review and
 the owner's asks.
 
+Check-in 96 (18 Oct 2026, 17:5x UTC). CHECK-JAYDEANE (Sonnet, USD 2.73): found-solved; the Selected Papers of John Jay vol. 2 prints the
+decoding. Both Columbia "undecoded" items are solved in the modern edition, so that host is done. Program C now idles until the 23 Oct
+review or new material: SCOUT-KEYS is used up apart from paywalled TNA rows, the Haldimand pool is parked, and the book-code scout's
+candidates are found-solved. Live threads waiting on the owner: ASKS 173 (the Vivonne sort, program B) and ASKS 174 (Leighton and Matyas,
+which settles the Sherwood class). Account 4 today: 15 workers, about USD 62. Result: one recovery at N3/D2, sherwood-cossit-1781. No
+worker is live; check-ins move to a slower cadence.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
