@@ -193,3 +193,12 @@ archive reply.
 - **Continue / pivot / acquire / reprioritize:** continue on this target with the named image pass if program C
   wants a third key-beside-cipher candidate progressed to a cheap test; otherwise reprioritize to K4-K9 (TNA
   rows), which are untested and may offer a higher per-letter deciphered-pair yield for the same image-pass cost.
+
+## Parent decision (account 4, 18 Oct 2026, 04:3x UTC)
+
+Held at `open`; the dateline-strip pass is not run now. Evidence: two blind leaf hunts in the same series (HAGA-LEAF/HAGA-LEAF2 on
+inv. 6896, AITZEMA-SHEET/AITZEMA-RUN1618 on inv. 6025) found nothing, because these lias bundles interleave correspondents by date
+received, which this worker confirmed for inv. 6897 from the other direction. The one Berck pair (22 Dec 1623) is a passage Duyck
+already read, and a single pair with no attested undeciphered sibling has a low expected value. Program C moves to K4 (CHECK-FUENTE,
+SP 84/165 plus the SP 106/6 key table). What reopens this: a locating instrument (an NA inventory listing or scan-level index for
+6897), or a Haga lead from ciphers/haga-sg6896-1622 that sends someone into 6897 anyway; the three Haga cipher items above go with it.

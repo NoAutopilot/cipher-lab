@@ -8,6 +8,13 @@ Last updated: 23 September 2026, 22:24 UTC
 > **the owner is away 21 to 28 September 2026. Read `HANDOFF-WEEK.md` first: it says what he must do before
 > leaving, what a teammate can carry alone, and what waits. Anything blocked on a human is in `ASKS.md`.**
 
+Check-in 82 (18 Oct 2026, 04:3x UTC). CHECK-BERCK (K3) came back `open` (Sonnet, about USD 3.9 against a cap of 5). Inv. 6897 is a mixed
+1623-24 secret lias that also holds three Haga cipher items. The only Berck pair is 22 Dec 1623, which Duyck already deciphered, and no key
+was found. Parent decision: no dateline-strip pass, since two leaf hunts in these bundles found nothing; the target is parked open and the
+reopening conditions are in its NOTES. Program C moves to K4: CHECK-FUENTE (session_01GNxhuRdawehL8ddt7JDrBX, Sonnet, cap 3, box 40) runs
+check-solved on the SP 84/165 Fuente intercepts and the SP 106/6 no. 34 Spanish key table on DECODE. This is key-assisted and its first test
+uses the catalogue only. The owner's sort (ASKS 173) is not in yet, so Vivonne is held.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
