@@ -1,0 +1,25 @@
+{
+ "source": "LAC microfilm reel H-1650 (BL Add MS 21809 = Brymner B.149, then 21810), heritage.canadiana.ca oocihm.lac_reel_h1650",
+ "fetched": "18 Oct 2026 (HALD149, account 4)",
+ "route": "image-uab.canadiana.ca/iiif/2/{id}/full/1000,/0/default.jpg, browser UA + Referer of the viewer page",
+ "files": [
+  {
+   "file": "h1650_304.jpg",
+   "image": 304,
+   "iiif_id": "69429%2Fc02j6842820f",
+   "page": 286
+  },
+  {
+   "file": "h1650_305.jpg",
+   "image": 305,
+   "iiif_id": "69429%2Fc0xs5jb4mr10",
+   "page": 287
+  },
+  {
+   "file": "h1650_306.jpg",
+   "image": 306,
+   "iiif_id": "69429%2Fc0t43hx9t41j",
+   "page": 288
+  }
+ ]
+}
