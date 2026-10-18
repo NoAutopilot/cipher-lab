@@ -48,6 +48,15 @@ February 138-28. If it passes, the job decodes all 214 groups by script from the
 entries, runs the en18 judge against W+-1 and shuffled-P controls, and compares the result with Sherwood's paraphrase. Kind if it reads:
 recovery (key: ours, codebook identified). The owner's sort (ASKS 173) is still not in.
 
+Check-in 87 (18 Oct 2026, 09:0x UTC). SHERWOOD-READ (Opus, USD 5.46 against a cap of 9) passed its gate: page plus printed line within a
+column, with the column unwritten; 7 of 8 anchors are exact, February included. All 167 book cells were read from scan crops. Grades for the
+216 rows: H 8, C 4, S 147, M 55, I 2. The column chooser's bigram score is -10.68, against -12.78 (W+1), -13.28 (W-1) and -13.12 to -13.96
+for 20 P-shuffles. The en18 judge FAILs (-0.998 vs real_p05 -0.818), as expected for uninflected headwords, but the reading scores above
+every control. Sherwood's paraphrase agrees for No.1 and No.4, and No.1 adds the thunder-damage passage he could not read. The parent re-ran
+`decode_entick.py --check`: current. SHERWOOD-VERIFY (session_01GMaGh51xQgXUzzS4z1CHUv, Opus, cap 12, box 90) runs a blind rule-7 re-read of
+the 167 cells, then the verifier (N-class, depth, AUDIT.md). No outward wording before AUDIT.md (rule 10); the breakthrough alert is
+considered only after the class.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
