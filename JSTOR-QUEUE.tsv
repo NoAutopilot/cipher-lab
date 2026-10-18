@@ -612,3 +612,8 @@ ciphers/baluze167-davaux-1637	Bouthillier AND Avaux AND (Melander OR Milandre OR
 ciphers/baluze167-davaux-1637	(Rantzau OR Ransau) AND (Landgrave OR Landgravine) AND (Melander OR Milandre) AND 1639	2026-10-14	queued	
 ciphers/baluze167-davaux-1637	"se deffaire de Milandre" OR "se défaire de Melander" OR "se défaire de Milandre"	2026-10-14	queued	
 ciphers/baluze167-davaux-1637	"dont j'escris presentement au S. de la Boderie" OR "commandement à M. de Rantzau"	2026-10-14	queued	
+ciphers/sherwood-cossit-1781	("Cossit" OR "Cossitt") AND ("Sumner" OR "Summer") AND (cipher OR cypher)	2026-10-18	queued	
+ciphers/sherwood-cossit-1781	"Justus Sherwood" AND (cipher OR cypher OR "dictionary") AND 1783	2026-10-18	queued	
+ciphers/sherwood-cossit-1781	"cypher message of Cossit"	2026-10-18	queued	
+ciphers/sherwood-cossit-1781	"blundering manner" Sherwood	2026-10-18	queued	
+ciphers/sherwood-cossit-1781	"numeral cipher" Sumner	2026-10-18	queued	

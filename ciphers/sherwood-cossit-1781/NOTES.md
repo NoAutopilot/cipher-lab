@@ -434,6 +434,13 @@ pagination would read the same. Most informative next experiment: a verifier-sid
 of entries_image.tsv; then a contextual read of No.2/No.3 with the col 1/col 2 lattice in front of a person. Decision: continue
 to verification; the reading is a key application from an identified code book (key: ours).
 
+**Verifier note (SHERWOOD-VERIFY, 18 Oct 2026): superseded in part.** A blind rule-7 re-read (verify/entries_blind.tsv,
+verify/diff_settled.tsv, AUDIT.md) found the cells on pages 33, 84, 278 and 312 one line early in book/entries_image.tsv
+(33-35, 84-25, 278-8, 312-22, 312-24, 312-29). Correcting them changes 6 tokens, 3 of them S ("Sail" x2 and "Beyond"), so
+the grade counts above (H 8, C 4, S 147, M 55, I 2) and "all 167 cells read" no longer stand as written, and the reading
+goes back for re-issue before any N-class. The gate itself was confirmed on all eight anchors. "Summer" in this folder
+follows Brymner; the man is Captain Benjamin Sumner (Fryer 1981, Pell 1929).
+
 ## Parent decision 4 (account 4, 18 Oct 2026, 09:1x UTC)
 
 The parent re-ran `python3 decode_entick.py --check`: "reading current". What was learned: the cypher reads from Entick 1781 by page and

@@ -1,0 +1,25 @@
+# SHERWOOD-VERIFY A2, 18 Oct 2026: every disagreement between verify/entries_blind.tsv (blind, own line grid) and book/entries_image.tsv
+# (SHERWOOD-READ), settled by counting every printed line of the column from the top on the page image (verify sheets rec1/rec2, scratch).
+# settled_by: which side the full-column count supports; kind: grid = an off-by-one line placement, read = same line read differently,
+# notation = same entry, truncated or spelled differently; convention = depends on how a drop-initial block is counted.
+page	W	col	blind	solver	settled	settled_by	kind	note
+10	28	1	Aguish	Ague-fit	Ague-fit	solver	read	my transcription slip: my own crop shows A'guefit on the marked line
+11	18	2	(wrap) grains called kermes	All	All	solver	grid	line 17 is the Alkermes wrap; my grid drifted one line early
+22	20	2	(..)ured	Assured	Assured	both	notation	my crop truncated at the left
+22	34	2	(..)ay	Astray	Astray	both	notation	my crop truncated at the left
+31	16	2	(..)egone	Begone	Begone	both	notation	my crop truncated at the left
+33	35	1	Bestiality	Bestial	Bestiality	blind	grid	column starts Bepinch (line 1, checked on the page top); Bestial is line 34
+33	35	2	Bezoar	Beyond	Bezoar	blind	grid	column starts Bestowed; Beyond is line 34, Bezoar 35
+84	25	1	Crestfallen	Crested	Crestfallen	blind	grid	column starts Credit (x3); Crested is 24
+89	15	2	Dangerless	Danger	Danger	solver	grid	line 13 is the Danegelt wrap; Danger is 15
+153	7	2	Gad	Gabel	Gad if both lines beside the drop-initial G count; Gabel if the G block counts as one line	none	convention	G Ab'ardine / Gabble v. share the two-line initial
+205	1	1	Leadmutton	Laced-mutton	Laced-mutton	solver	read	same line; image reads L.ced-mutton
+205	1	2	Lair	Laid	Laid	solver	grid	my line 1 fell back two slots on this page
+230	20	2	Mistel	Mistell	Mistell?	both	notation	same line
+278	8	1	Preparedly	Prepare	Preparedly	blind	grid	Preparation 1 ... Prepare v 6, Prepare f 7, Preparedly 8
+312	22	1	Sacrificable	Sacredness	Sacrificable	blind	grid	Sabbathbreaker 1; Sack has a wrap at 10; Sacredness 21
+312	22	2	Said	Saich	Said	blind	grid	Saddlebacked 1 ... Saich 21, Said 22
+312	24	1	Sacrifice	Sacrificator	Sacrifice	blind	grid	same page shift as above
+312	29	1	Sacrilegious	Sacrilege	Sacrilegious	blind	grid	same page shift
+312	29	2	Saint	Sainfoin	Saint	blind	grid	Sainfoin 28, Saint 29
+402	25	1	Unfounded	(wrap) not orthodox	(wrap) not orthodox	solver	grid	Unsound 24, its wrap 25, Unsounded 26
