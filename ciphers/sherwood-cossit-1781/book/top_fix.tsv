@@ -1,20 +1,14 @@
-# page	col	shift	-- settled by eye on the scan tops (SHERWOOD-READ, 18 Oct 2026): +1 = the grid's line 1 was the running-head band; -1 = the grid missed the true line 1
-4	2	1
+# page	col	shift	-- settled by eye on the scan tops; applied after the builder's head guard (SHERWOOD-FIX, 18 Oct 2026).
+# +1 = the grid's line 1 was still above the true line 1; -1 = the grid missed the true line 1 (or, 153 c2, the guard dropped
+# the "G." section heading, which counts as a printed line of the column: NOTES.md "Line-count rules").
+# SHERWOOD-READ's 20 rows: 11 (+1 on 4c2, 201c1, 301c1, 303c1, 324c2, 326c2, 331c1, 332c2, 353c1, 353c2, 459c1)
+# are now caught by the head guard and were removed; the rows below are the residue the guard does not see.
 7	2	-1
 119	1	1
-201	1	1
+153	2	-1
 219	1	-1
 219	2	-1
 237	1	1
-301	1	1
-303	1	1
-324	2	1
-326	2	1
-331	1	1
-332	2	1
-353	1	1
-353	2	1
-459	1	1
 459	2	1
 468	2	1
 472	1	1

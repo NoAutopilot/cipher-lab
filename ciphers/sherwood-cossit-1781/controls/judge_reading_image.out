@@ -1,3 +1,3 @@
-FAIL language: score=-0.998, null_p99=-2.153, real_p05=-0.818, real_median=-0.739, mode=both, N=1187
-ok   words: cover=0.941, min=0.6, real_text_median_cover=0.976
+FAIL language: score=-0.998, null_p99=-2.177, real_p05=-0.804, real_median=-0.735, mode=both, N=1190
+ok   words: cover=0.94, min=0.6, real_text_median_cover=0.976
 FAIL - sherwood-cossit-1781 (a PASS is a gate for a verifier, not a reading; rule 10)

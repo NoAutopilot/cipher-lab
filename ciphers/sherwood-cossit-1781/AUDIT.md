@@ -119,3 +119,12 @@ Benjamin Sumner (Fryer, Pell, NEQ 1930), noted in NOTES.md without renaming file
    153-7 c2 (the drop-initial convention) and record the rule.
 2. Re-run `decode_entick.py`, re-grade, and re-paste the judge output; say what 33-35 "Beyond" becomes.
 3. Then a verifier assigns N-class and depth; read Leighton & Matyas 1985 first (a LOCAL-QUEUE row or library copy).
+
+## Re-issue note (SHERWOOD-FIX, 18 Oct 2026; solver side, not a verifier verdict)
+
+The reading was re-issued per "To re-issue" 1-2 (NOTES.md "## Re-issue after rule-7 send-back"): the grid fault is fixed in
+`book/build_entick_lines.py` (head guard; nine columns on pp.33, 84, 215, 278, 312 had the running head as line 1; every cited
+page's column tops checked), the six cells now match `verify/diff_settled.tsv`, `--check` passes, and the counts are H 8, C 4,
+S 145, M 57, I 2, as A2 predicted. 33-35 reads Bestiality [M]; "Beyond" is proposed as an encoder miscount, unrepaired (I if
+accepted). Leighton and Matyas snippets (Google Books) describe a Haldimand book cipher "of the form 10-19" whose code-list
+system Leighton solved; whether they name Entick or this cypher is not visible. N-class and depth remain pending for a verifier.

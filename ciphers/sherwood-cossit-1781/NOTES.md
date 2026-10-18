@@ -357,7 +357,8 @@ Commands: `python3 book/build_entick_lines.py --src DIR` (DIR = the three archiv
 Requests: archive.org 13 (metadata 1, djvu.xml 1, page_numbers.json 1, page images 9, jp2.zip 1), >=1.5 s apart, descriptive UA.
 Vision: 8 whole pages (gate), 1 cypher-crop separator check, 3 sheets of scan tops, 5 entry sheets.
 
-**Grades (216 pair rows: 214 groups + the two non-book rows 192-88 and 16-1783): H 8, C 4, S 147, M 55, I 2.**
+**Grades (216 pair rows: 214 groups + the two non-book rows 192-88 and 16-1783): H 8, C 4, S 147, M 55, I 2.** (Superseded:
+H 8, C 4, S 145, M 57, I 2 after the re-issue; see "## Re-issue after rule-7 send-back".)
 H = entry from the image and the other column's line is a wrap, so no choice was made. C = the period hand on p.347 reads the
 same word (February 138-28, twice; being 32-1; left 209-13). S = entry from the image, column chosen by the bigram chooser with
 a margin >= 2 nats. M = smaller margin, a `?` group, or no entry (192-88: W 88 is outside any column; 16-1783 is the date).
@@ -383,7 +384,7 @@ being left"; the book gives (wrap)/Kingdom, Den/Depaint, Letter/Libel, Being, Le
 miss. The glosses on the next line ("Combat I pray formidably them") sit one group to the right of the book's Formidably 148-22
 and Them 364-1, so either the glossator or the transcription has them shifted by one; not repaired here (I would be the grade).
 
-**Matched controls (rule 3), all OCR-only so the arms are alike** (controls/controls.tsv; statistic = mean en18 word-bigram
+**Matched controls (rule 3), all OCR-only so the arms are alike** (pre-fix numbers; current ones in the re-issue section) (controls/controls.tsv; statistic = mean en18 word-bigram
 log-probability per decoded word, same column chooser):
 
 | arm | mean bigram logp | decoded share |
@@ -440,6 +441,8 @@ verify/diff_settled.tsv, AUDIT.md) found the cells on pages 33, 84, 278 and 312 
 the grade counts above (H 8, C 4, S 147, M 55, I 2) and "all 167 cells read" no longer stand as written, and the reading
 goes back for re-issue before any N-class. The gate itself was confirmed on all eight anchors. "Summer" in this folder
 follows Brymner; the man is Captain Benjamin Sumner (Fryer 1981, Pell 1929).
+**Resolved by SHERWOOD-FIX (18 Oct 2026):** the grid fault is fixed at its cause and the six cells corrected; the folder's one
+current set of numbers is in "## Re-issue after rule-7 send-back" below (H 8, C 4, S 145, M 57, I 2; judge FAIL -0.998).
 
 ## Parent decision 4 (account 4, 18 Oct 2026, 09:1x UTC)
 
@@ -458,3 +461,90 @@ Assumptions still unverified: the grid on uncited pages (now irrelevant) and on 
 "Beyond" 33-35: an encoder miscount. Most informative experiments: (1) re-issue with every cited page's top checked (SHERWOOD-FIX, Opus, cap
 5); (2) read Leighton and Matyas, which sets the N-class (ASKS 174, a free ILL request for the owner; the fix worker also tries the free
 Springer preview). Decision: fix, then verifier again for the class. Outward wording stays at AUDIT.md's safe sentence.
+
+## Re-issue after rule-7 send-back (SHERWOOD-FIX, 18 Oct 2026)
+
+Worker SHERWOOD-FIX (account 4), 10:15-10:29 UTC by `date -u`. Brief: `.claude/briefs/runs/2026-10-18-acct4-research-director-18.md`.
+
+**Cause of the grid error.** `book/build_entick_lines.py` fits its line grid from the top of the column rule. On some pages the
+rule (or a speck in the rule's x-band) starts at or above the running head, so the grid's first row with ink was the head band
+(page number, catchword capitals), not the first body line. The old top check looked only at columns whose two halves disagreed
+or whose top sat outside the usual band; these pages did neither. Fix in the instrument: a **head guard** in the builder drops a
+first grid row whose left 35% is mostly bare (a body line starts at the column's left edge; the head does not) when the second
+row is a normal body line. It logs every row it drops; `--no-head-guard` gives the old grid for comparison.
+
+**Every cited page's column tops checked (126 cited pages, 252 columns).** Three sheets of line-1 bands (one tile per column,
+grid line 1 cropped at full resolution; scratch) read by eye, and a numeric left-coverage score per column. Line 1 was the
+running head on **33 c1, 33 c2, 84 c1, 84 c2, 215 c1, 278 c1, 278 c2, 312 c1, 312 c2** (nine columns, five pages: 215 c1 was
+also wrong and was not in the verifier's diff because the only cited cell, 215-32, reads "Love" on both line 31 and line 32).
+The other 243 columns were right. The same cause explains 11 of SHERWOOD-READ's 20 hand fixes (+1 on 4c2, 201c1, 301c1, 303c1,
+324c2, 326c2, 331c1, 332c2, 353c1, 353c2, 459c1), which the guard now makes unnecessary; `book/top_fix.tsv` keeps the 10 residual
+rows the guard does not see (7c2 -1, 119c1 +1, 153c2 -1, 219c1 -1, 219c2 -1, 237c1 +1, 459c2 +1, 468c2 +1, 472c1 +1, 472c2 +1).
+Check: the guarded builder plus the new top_fix.tsv, re-run on all 126 cited page images, reproduces `book/entick_lines.tsv`
+row for row (9,733 grid rows compared, 0 differing by more than 8 px). The djvu.xml OCR file answered HTTP 500 twice this session
+(one retry), so the nine columns were corrected in `entick_lines.tsv` by dropping the head row and renumbering (y and OCR kept);
+a full rebuild with OCR gives the same table.
+
+**Cells re-read from the image on the corrected grid** (line numbers drawn on the crops): 33-35 Bestiality / Bezoar (Beyond is
+line 34 of col 2); 84-25 Crestfallen / Crisp (Crisp is also line 24); 215-32 Love / Lowing (unchanged); 278-8 Preparedly /
+Present (Present is also line 7); 312-22 Sacrificable / Said; 312-24 Sacrifice / Sail (v.); 312-29 Sacrilegious / Saint.
+All agree with `verify/diff_settled.tsv`; `book/entries_image.tsv` corrected to match (6 rows).
+
+**Line-count rules (settled from the image, 153 c2).** Page 153's col 2 opens with a centred section heading "G." and then a
+two-line drop initial G beside "Ab'ardine" and "Gábble, v. n."; the lines run G. (1), Ab'ardine (2), Gábble v. (3), Gábble f.
+(4), Gábel excise (5), Gábion (6), Gábel roof (7), Gad (8). (a) The running head never counts (8/8 anchors). (b) A line beside a
+drop initial counts as one line each; the initial itself adds no line, so the verifier's "how the two-line G counts" question
+has one answer: both lines count. (c) The open question is the section heading: counted, 153-7 c2 = Gábel (roof), kept here
+(`top_fix.tsv` 153 c2 -1) because the heading sits inside the column rule like any printed line; not counted, it is Gad. No
+anchor sits under a section heading and no other cited column has one, so the rule is untested; the chooser took col 1 (Furry,
+M) either way, so no token moves.
+
+**Re-derivation.** `python3 decode_entick.py` then `--check`: "reading current", exit 0. Six tokens moved, exactly the six the
+verifier predicted: No.1 84-25 Crested -> Crestfallen (M); No.1 312-24 Sail S -> Sacrifice M (column flips); No.1 312-24 Sail
+S -> Sail M; p347 312-29? Sacrilege -> Saint (M); No.4 312-22 Sacredness M -> Said S; No.4 33-35 Beyond S -> Bestiality M.
+
+**Grades (216 pair rows): H 8, C 4, S 145, M 57, I 2.** H/C/S 157/216 = 72.7% (below D3's 80%; depth is the verifier's).
+
+**"Beyond" (No.4, 33-35).** Under the convention the cell reads Bestiality (col 1) or Bezoar (col 2), and the reading now carries
+Bestiality [M]. "Beyond" is line 34 of col 2 and fits "500 Men Only 23-4-1 Beyond February" far better (en18 bigram:
+only->x->february -18.7 for beyond vs -25.6 for either cell word). An encoder miscount by one line is the likelier explanation:
+the convention holds on all eight anchors, the error is not systematic (on page 312, where a head-counted grid would also be one
+line off, the true count gives the better word, "They Expect Said"), and Sherwood himself called the Claremonters' use of the
+cypher "blundering". Not repaired in the reading; if a verifier accepts it, it enters as **Beyond [I]** (repaired), never as S.
+
+**Controls (rule 3), all OCR-only, same chooser** (controls/controls.tsv, re-run on the corrected grid):
+
+| arm | mean bigram logp | decoded share |
+|---|---|---|
+| reading (OCR only) | **-10.67** | 0.898 |
+| W plus 1 | -12.75 | 0.898 |
+| W minus 1 | -13.29 | 0.889 |
+| P shuffled across groups, 20 seeds | -12.96 to -13.96 (all 20 below the reading) | 0.921-0.958 |
+
+`python3 tools/judge_plaintext.py specs/sherwood-cossit-1781.json --file ciphers/sherwood-cossit-1781/controls/reading_image.txt`
+(controls/reading_image.txt is now written by `decode_entick.py --controls`, so the judge input is regenerated with the reading):
+```
+FAIL language: score=-0.998, null_p99=-2.177, real_p05=-0.804, real_median=-0.735, mode=both, N=1190
+ok   words: cover=0.94, min=0.6, real_text_median_cover=0.976
+FAIL - sherwood-cossit-1781 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Same judge on every arm (controls/judge_all.tsv): reading (image) -0.998, reading OCR-only -1.245, W plus 1 -1.366, W minus 1
+-1.325, P-shuffles -1.351 to -1.528. The reading FAILs real_p05 (an uninflected headword stream cannot reach prose statistics, as
+before) and ranks above every control on both statistics.
+
+**Leighton and Matyas, "The History of Book Ciphers" (CRYPTO '84, LNCS 196, Springer 1985, pp.101-113).** Springer chapter page
+(link.springer.com/chapter/10.1007/3-540-39568-7_24, one request): HTTP 200 but a JavaScript wall, no text; the DOI was not
+otherwise confirmed. Google Books API, 6 calls (`country=US`, keyed; calls 5-6 answered "Service temporarily unavailable", not
+retried). Visible snippets of the chapter (volume ids QxyqCAAAQBAJ, NNJQAAAAMAAJ):
+- "... Haldimand, Governor of Canada, used a book cipher whose key was discovered some years ago "by an officer to whom ..."
+- "... Leighton was recently able to extend this solution by finding the system which governed the associated code list. In his
+  enciphered correspondence Haldimand was using numbers of the form 10-19 to stand for complete words. By studying ..."
+
+So Leighton and Matyas describe a Haldimand book cipher with numbers "of the form 10-19" for whole words (the shape of this
+cypher's P-W pairs) and report Leighton's own solution of its code list. Not visible: whether they name Entick, this edition,
+Cossit, Sumner, B.178 or this cypher, and whether "the system" is page-line. For the verifier this raises the chance that the
+design, and possibly this book, was identified in print in 1985; the class stays pending until the chapter is read (ASKS 174).
+Searched and not found in the snippets: "Entick", "Sherwood", "Cossit", "Sumner".
+
+Requests this job: archive.org 4 (jp2.zip 1, page_numbers.json 1, djvu.xml 2 = 500 twice), link.springer.com 1, Google Books
+API 6. Vision: 3 line-1 band sheets + 1 top-strip montage + 2 page-top crops + 1 cell sheet (scratch, not committed).

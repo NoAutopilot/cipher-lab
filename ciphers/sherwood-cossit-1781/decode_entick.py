@@ -324,6 +324,10 @@ def main():
                 f.write('%s\t%.4f\t%.3f\n' % (lab, sc, cov))
                 fn = re.sub(r'[^a-z0-9]+', '_', lab.lower()).strip('_') + '.txt'
                 open(os.path.join(HERE, 'controls', fn), 'w').write(txt + '\n')
+        # the image reading as one lower-case word stream, the judge's input (rule 7; SHERWOOD-FIX, 18 Oct 2026)
+        img_rows = decode(msgs, img, grid, lm)
+        open(os.path.join(HERE, 'controls', 'reading_image.txt'), 'w').write(
+            ' '.join(r[7].lower() for r in img_rows if r[2] == 'pair' and r[7]) + '\n')
         for lab, sc, cov, _ in out:
             print('%-22s %.4f  %.3f' % (lab, sc, cov))
         return

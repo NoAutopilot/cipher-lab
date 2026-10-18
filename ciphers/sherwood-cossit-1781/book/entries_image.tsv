@@ -1,6 +1,8 @@
 # Entick 1781 (archive.org 11280377bsb) headword on page P, column-line W, read by eye from the scan line crops (SHERWOOD-READ,
 # 18 Oct 2026; 4 montage sheets built from book/entick_lines.tsv). col1/col2 = the two candidates. "+wrap:<text>" = the line is a
 # continuation of the entry above (named in brackets where it was legible), not a headword line. Spelling as printed, long s as s.
+# SHERWOOD-FIX, 18 Oct 2026: pp.33, 84, 215 c1, 278, 312 re-read on the head-guarded grid (the running head had been line 1);
+# 6 cells changed, matching verify/diff_settled.tsv. 153-7 c2 = Gabel counts the "G." section heading as line 1 (Gad if not).
 page	W	col1	col2
 4	31	Accompt	Accustomably
 6	26	Adequate	Administer
@@ -20,7 +22,7 @@ page	W	col1	col2
 31	34	Before	Beholden
 32	12	Belial	Bender
 32	33	Bellygod	Benignity
-33	35	Bestial	Beyond
+33	35	Bestiality	Bezoar
 43	10	Brother	Bubble
 44	11	Build	Bung
 47	19	Caligation	Came
@@ -31,7 +33,7 @@ page	W	col1	col2
 65	21	Colonel	Comedian
 72	12	Confutation	Congress
 81	24	Council	Counterpoint
-84	25	Crested	Crisp
+84	25	Crestfallen	Crisp
 89	15	Damage	Danger
 90	28	Daughter	Dealer
 90	37	Day	Dearness
@@ -99,7 +101,7 @@ page	W	col1	col2
 248	23	Opinion	Opulence
 272	8	Polemic	Polytheist
 274	16	Post	Posey
-278	8	Prepare	Present
+278	8	Preparedly	Present
 294	22	Readorn	Rebel
 295	11	Received	Recline
 297	18	Reduction	Referendary
@@ -107,8 +109,8 @@ page	W	col1	col2
 301	29	Reparative	Reportingly
 303	22	Residence	Respect
 305	24	Return	Reversed
-312	22	Sacredness	Saich
-312	24	Sacrificator	Sail
+312	22	Sacrificable	Said
+312	24	Sacrifice	Sail
 314	3	Sanded	Sarcenet
 315	1	Saturate	Saw
 315	2	Saturday	Saw
@@ -165,7 +167,7 @@ page	W	col1	col2
 210	19	Letter	Libel
 32	1	Being	Bellswagger
 209	13	Left	Leisure
-312	29	Sacrilege	Sainfoin
+312	29	Sacrilegious	Saint
 215	32	Love	Lowing
 148	22	Formidably	Forward
 13	13	Alway	Ambulation

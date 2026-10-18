@@ -17,7 +17,7 @@ No.1	p346_L03	pair	409-6	409	6	2	Was	H
 No.1	p346_L03	pair	364-22	364	22	2	There	S	
 No.1	p346_L04	pair	47-19	47	19	2	Came	S	
 No.1	p346_L04	pair	369-15	369	15	1	To	S	
-No.1	p346_L04	pair	84-25	84	25	1	Crested	M	
+No.1	p346_L04	pair	84-25	84	25	1	Crestfallen	M	
 No.1	p346_L04	pair	15-2	15	2	1	And	S	
 No.1	p346_L04	pair	9-35	9	35	1	Afterward	H	
 No.1	p346_L04	pair	168-2	168	2	2	He	S	
@@ -30,7 +30,7 @@ No.1	p346_L06	pair	156-23	156	23	1	Gentilitious	M
 No.1	p346_L06	pair	143-38	143	38	1	Flawless	M	
 No.1	p346_L06	pair	16-2	16	2	1	Anomy	M	
 No.1	p346_L06	pair	20-16	20	16	1	Army	S	
-No.1	p346_L06	pair	312-24	312	24	2	Sail	S	
+No.1	p346_L06	pair	312-24	312	24	1	Sacrifice	M	
 No.1	p346_L06	pair	364-32 (joined)	364	32	1	The	I	
 No.1	p346_L07	pair	412-9	412	9	1	West	S	
 No.1	p346_L07	pair	188-7	188	7	1	Incurvate	M	
@@ -49,7 +49,7 @@ No.1	p346_L09	pair	32-12	32	12	1	Belial	M
 No.1	p346_L09	other	x:4?2						
 No.1	p346_L09	pair	468-37	468	37	1	Portsmouth	S	
 No.1	p346_L09	pair	412-33	412	33	2	Which	S	
-No.1	p346_L10	pair	312-24	312	24	2	Sail	S	
+No.1	p346_L10	pair	312-24	312	24	2	Sail	M	
 No.1	p346_L10	pair	192-38	192	38	2	Inn	S	
 No.1	p346_L10	pair	220-20	220	20	1	Mansion	M	
 No.1	p346_L10	pair	364-32	364	32	1	The	S	
@@ -169,7 +169,7 @@ p347 block	p347_L03	pair	96-16	96	16	1	Den	S	ten
 p347 block	p347_L03	pair	210-19	210	19	1	Letter	S	liable
 p347 block	p347_L03	pair	32-1	32	1	1	Being	C	being
 p347 block	p347_L03	pair	209-13	209	13	1	Left	C	left
-p347 block	p347_L05a	pair	312-29?	312	29	1	Sacrilege	M	Combat
+p347 block	p347_L05a	pair	312-29?	312	29	2	Saint	M	Combat
 p347 block	p347_L05a	clear	low						
 p347 block	p347_L05a	pair	215-32?	215	32	1	Love	M	I
 p347 block	p347_L05a	pair	148-22?	148	22	2	Forward	M	pray
@@ -209,7 +209,7 @@ No.4	p345_L04	pair	10-28	10	28	2	Alarm	S
 No.4	p345_L04	pair	364-1	364	1	2	Them	S	
 No.4	p345_L04	pair	365-8	365	8	1	They	S	
 No.4	p345_L04	pair	131-37	131	37	2	Expect	S	
-No.4	p345_L05	pair	312-22	312	22	1	Sacredness	M	
+No.4	p345_L05	pair	312-22	312	22	2	Said	S	
 No.4	p345_L05	pair	146-16	146	16	1	Football	M	
 No.4	p345_L05	pair	409-6	409	6	2	Was	H	
 No.4	p345_L05	pair	109-9	109	9	2	Distrust	S	
@@ -236,7 +236,7 @@ No.4	p345_L09	other	500
 No.4	p345_L10	pair	225-17	225	17	1	Men	S	
 No.4	p345_L10	pair	247-14	247	14	2	Only	S	
 No.4	p345_L10	other	23-4-1						
-No.4	p345_L10	pair	33-35	33	35	2	Beyond	S	
+No.4	p345_L10	pair	33-35	33	35	1	Bestiality	M	
 No.4	p345_L10	pair	138-28	138	28	1	February	C	
 No.4	p345_L11	pair	16-1783	16	1783			M	
 No.4	p345_L11	clear	Do						

@@ -61,6 +61,18 @@ def grid(profile, y0, y1):
     return pitch, y0 + phase
 
 
+HEAD_GUARD = True
+
+
+def left_cover(a, x0, x1, y, pitch):
+    """Share of pixel columns in the left 35% of a column with ink in the band of grid row y (background-relative)."""
+    lo, hi = max(int(y - pitch / 2 + 3), 0), int(y + pitch / 2 - 3)
+    thr = np.percentile(a, 50) - 60
+    xl = x0 + 10 if x0 > a.shape[1] * 0.2 else x0  # skip the column rule beside column 2
+    cov = (a[lo:hi, xl:x1] < thr).any(axis=0)
+    return float(cov[:int(len(cov) * 0.35)].mean()) if len(cov) else 0.0
+
+
 def page_lines(img, words, page_no=None):
     a = np.asarray(img.convert('L'), dtype=float)
     H, W = a.shape
@@ -92,6 +104,12 @@ def page_lines(img, words, page_no=None):
         # trim trailing blank rows
         while ys and prof[max(ys[-1] - 6, 0):ys[-1] + 7].max() <= thr:
             ys.pop()
+        # head guard (SHERWOOD-FIX, 18 Oct 2026): where the column rule (or a speck above it) starts at or above the
+        # running head, the grid's first row is the head band (page number, catchword capitals), not line 1. A body line
+        # starts at the column's left edge, so its left 35% is mostly inked; the head's is not (pp.33, 84, 215 c1, 278, 312).
+        if HEAD_GUARD and len(ys) > 1 and left_cover(a, x0, x1, ys[0], pitch) < 0.3 <= left_cover(a, x0, x1, ys[1], pitch):
+            print('page', page_no, 'col', col + 1, 'head guard: dropped grid row at y=%d' % ys[0], file=sys.stderr)
+            ys = ys[1:]
         ys = ys[FIX.get((page_no, col + 1), 0):] if FIX.get((page_no, col + 1), 0) >= 0 else \
             [ys[0] - pitch * k for k in range(-FIX[(page_no, col + 1)], 0, -1)] + ys
         ys = [int(round(y)) for y in ys]
@@ -107,7 +125,10 @@ def main():
     ap.add_argument('--src', required=True)
     ap.add_argument('--pages')
     ap.add_argument('--out', default=os.path.join(HERE, 'entick_lines.tsv'))
+    ap.add_argument('--no-head-guard', action='store_true', help='the pre-18 Oct grid (for comparison only)')
     args = ap.parse_args()
+    global HEAD_GUARD
+    HEAD_GUARD = not args.no_head_guard
     ocr = load_ocr(args.src)
     want = args.pages.split(',') if args.pages else sorted((p for p in ocr if p.isdigit()), key=int)
     rows = []
