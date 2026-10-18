@@ -145,3 +145,11 @@ sherwood-cossit-1781: open (line 1) -- edition/page or full-text-search citation
 ## While waiting
 Nobody needs to wait: the next step (LAC finding-aid lookup) depends on nobody and can run as the very next
 worker.
+
+## Parent decision (account 4, 18 Oct 2026, 06:1x UTC)
+
+What was learned: the cipher is unsolved and unprinted, and the Haldimand service's 1778 title-page book key is already transcribed in this
+repository (ciphers/pro3055-clinton-1779/passes). Assumption: Sherwood's Vermont channel used the same system (structural lead only:
+Mathews was Haldimand's secretary, and the dates overlap). Alternative: a separate field cipher. Most informative experiment: locate and
+fetch the four pages and apply the key against a shuffled-key control (SHERWOOD-PAGES, Opus, cap 6). Decision: continue, as a
+key-assisted route.

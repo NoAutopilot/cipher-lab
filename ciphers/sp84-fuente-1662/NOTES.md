@@ -254,3 +254,11 @@ thumbnails' metadata for a mark-class table running to 211-240 (Tomokiyo's no. 3
 of that record; (3) whatever the key, a single-image TNA order for f.187 only (the item with a decoded Spanish paragraph, a built-in
 crib) to see whether the intercepts are written in mark-distinguished numbers at all and to test 517 and no. 34 against that paragraph,
 before the full 11-image order.
+
+## Parent decision 2 (account 4, 18 Oct 2026, 06:1x UTC)
+
+What was learned: none of the three Spanish-tagged SP 106/6 records is no. 34. 517 shares its design family (mark-class numbered
+nomenclator), and the DECODE language tags are unreliable. Assumption still untested: that the intercepts use a mark-class numbered system
+at all. Most informative experiment: the single f.187 image (it has a crib), now SPRINT P12, optional and low priority. Paging the other 46
+DECODE records is deferred: it is cheap, but a key found there could not be tested without f.187. Decision: acquire (one image), otherwise
+parked; the target stays open.
