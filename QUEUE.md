@@ -7624,3 +7624,49 @@ both; no leaf was looked at. (4) Alternatives: the decipherments may be filed el
 key, a fit or a miss in about USD 2. (6) Reprioritize: K1-K3 (copy-free, NA, scripted route on file) before the TNA
 rows, which need an owner-side copy; next question: does the same note pattern ("met ontcijfering") run through the
 later volumes of the edition, if it continues past 1625?
+
+## Haldimand-service cypher pool (18 Oct 2026, HALD-POOL, account 4)
+
+Why: `ciphers/sherwood-cossit-1781` showed Haldimand-service cypher readable once the code book is known
+(Entick, *New Spelling Dictionary* 1781, page.column.line); `ciphers/pro3055-clinton-1779` separately holds the
+1778 title-page book key for the Clinton-Haldimand correspondence (BL Add MS 21807/21808 = Brymner's B.147/148,
+1778-1782). The 17 Oct note above ("outside B.147/148, B.177-2/178 and C11A, the cipher mentions are single news
+items with no key beside them") is superseded for the B-series specifically: with a demonstrated key family in
+hand for that correspondence, an unkeyed single-mention entry is a reel-location problem, not a dead end.
+
+**Method.** Six reports (`archive.org` djvu text: 1884 `cihm_57141`, 1885 `cihm_57142`, 1886-1889
+`reportoncanadian{YYYY}publuoft`) split into calendar entries at blank lines, tracked against the last B-volume
+header (`^B\.?\s*(\d{2,4})` or an inline `Coll. 2[01]\d{3}` BL Add MS citation) and kept against
+`cyph|ciph|decypher|decipher|in\s+figures|written\s+in\s+numbers` (case-insensitive). `harvest/HALD-POOL-2026-10-18.tsv`,
+76 rows total across the six years; 60 fall inside a B-volume (Haldimand Collection proper, as opposed to the
+pre-1760 French-regime "Correspondance Générale" despatches the same reports also calendar under "Fol." references,
+split out by the same volume-tracking and correctly excluded -- a different pool, different era, different cipher
+family, out of this job's scope).
+
+**Already worked, not counted as fresh.** B.147 (36 rows) and B.148 (3 rows) = Add MS 21807/21808, entirely
+`ciphers/pro3055-clinton-1779`'s existing campaign (keyed, several items text-known, reel H-1649 fetched).
+B.175-178 (4 rows, 1888 report) = `ciphers/sherwood-cossit-1781`'s B.177-2/B.178 (K9 above). Tomokiyo's own
+"Haldimand-Clinton Book Cipher (1778-1782)" page (`sources/cryptiana/web/haldimand.htm`) is explicitly scoped to
+exactly these two volumes (Clinton/Carleton/Robertson/Knyphausen/Germain correspondents) and names no other B-volume,
+confirming the rest of the pool is outside its coverage, not merely unindexed there.
+
+**Fresh pool (13 rows, 10 volumes/refs), after reading each hit's full entry to drop figurative uses** ("treated
+as a cypher" = a nonentity, B.154 p.23 and B.116; "decypher ... hieroglyphics"/"undecypherable" = illegible
+handwriting, not cryptography, B.222 x2 and probably B.224; "sends a message in Gaelic for want of a cypher" =
+explicitly did NOT use a cipher, B.95; "decipher articles which are now almost an enigma" = intelligence analysis,
+not cryptanalysis, B.138):
+
+| rank | item | era/channel | why | reel status | next cheap test, price |
+|---|---|---|---|---|---|
+| 1 | **B.149 p.286** (1888 report; Add MS 21809, the volume immediately after pro3055's B.148), "Page 286 in cypher from Carleton" | 1783-84, Carleton-Haldimand (Carleton succeeded Clinton); squarely the Entick window | genuine cipher mention, correspondent/channel already keyed for the adjacent volume; reel H-1649 ends at Image 1266 covering B.148 to only about p.180 (GAPS5, pro3055 NOTES.md), so B.149 p.286 is almost certainly the *next* reel (H-1650), not yet fetched by any existing target | fetch LAC MIKAN 105513 finding aid or try `oocihm.lac_reel_h1650` directly for the B.149 title leaf, then the one frame for p.286; apply the 1778 title-key and/or Entick; ~USD 2 |
+| 2 | **1884 report, BL Add MS 21,704 / 21,715 / 21,720** (cihm_57141, no B-number given, only the Add MS citation) | 1780, Germaine-Haldimand and Clinton-Haldimand cypher duplicates ("Germaine to Haldimand... A duplicate in cypher follows"; "Duplicate Clinton to Haldimand (in cypher translated) 9 Nov. 1780") | genuine, two correspondent pairs already in the keyed family (Clinton, Germaine), Add MS numbers ~100 below 21807 so almost certainly an early, unfetched reel (B-vol estimate ~B.44-60 by the B.146=21806/B.147=21807 offset) | volume number and reel unknown; pin via the B-vol-to-Add-MS offset (each B number tracks the Add MS almost 1:1) or the LAC finding aid, then fetch | ~USD 2-3 (one extra step to locate the volume first) |
+| 3 | **B.139 pp.181-187 and B.145 p.5** (1887 report, both *before* B.146, i.e. an earlier, not-yet-fetched reel than H-1649) | 1782, Vermont negotiations/Carleton channel ("He adds in cypher: 'I must inform you...'"; "Letters forwarded in cypher by an approved loyalist... Vermont excepted") | genuine, Vermont-negotiation content (the project's other live Vermont-era target, sherwood-cossit, is the same channel); B.139's hit is a short embedded quoted cipher phrase, not necessarily a full separate cipher page -- lower confidence than 1/2 that there is a distinct ciphertext to transcribe | same early reel for both (B.138/139/145 cluster); not yet identified | locate the pre-H-1649 reel for B.139-145 (LAC finding aid), then check pp.181-187/p.5 for a distinct cipher column vs. just the quoted phrase; ~USD 2 |
+
+Rows found: 76 total, 60 in a Haldimand B-volume, 43 already covered by existing targets, 13 fresh across 10
+volumes/refs, of which 5 are genuine cipher mentions after dropping 8 figurative "cypher"/"decypher" false
+positives (meaning "nonentity" or "illegible", not cryptography). Not checked this job (budget): Bourdeau/Aymeloglu
+shallow clones, DECODE cache grep, Collections of the Vermont Historical Society vol. II's own cipher-with-translation
+list (step 3 of the brief) -- next worker should run these before promoting rank 3 given its Vermont overlap with
+`ciphers/sherwood-cossit-1781`. Requests: archive.org ~22 (6 advancedsearch/metadata probes, 6 djvu downloads with
+one redirect retry each = 6 wasted). `harvest/HALD-POOL-2026-10-18.tsv` has the full 76-row table (year, archive id,
+djvu line, collection, volume, page, a crude text-present heuristic, Brymner's words) for anyone re-ranking.
