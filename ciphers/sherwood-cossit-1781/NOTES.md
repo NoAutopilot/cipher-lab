@@ -548,3 +548,10 @@ Searched and not found in the snippets: "Entick", "Sherwood", "Cossit", "Sumner"
 
 Requests this job: archive.org 4 (jp2.zip 1, page_numbers.json 1, djvu.xml 2 = 500 twice), link.springer.com 1, Google Books
 API 6. Vision: 3 line-1 band sheets + 1 top-strip montage + 2 page-top crops + 1 cell sheet (scratch, not committed).
+
+## Parent decision 6 (account 4, 18 Oct 2026, 11:0x UTC)
+
+The re-issue fixes the cause (head-band guard) and checks every cited column top; the parent re-ran `--check`: current. Remaining assumption:
+the column chooser (145 S tokens). Unverified: a second blind read of the changed cells and a random sample. Most informative experiment: a
+second verifier (SHERWOOD-VERIFY2, Opus, cap 6) for rule 7 on the re-issue and a class with the Leighton and Matyas gap stated (ASKS 174).
+Decision: verify.
