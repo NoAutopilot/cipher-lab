@@ -23,6 +23,14 @@ been asked about. In parallel, CHECK-SHERWOOD (session_01UahfsH5qGYEp22wvmoAD8X,
 candidate: the Sherwood/Cossit cypher, Haldimand Papers, Vermont 1781. Check-solved costs about 3.8 at Sonnet, so such jobs are now capped
 at 4. The owner's sort (ASKS 173) is still not in.
 
+Check-in 84 (18 Oct 2026, 06:1x UTC). FUENTE-KEY (Opus, USD 1.76): one DECODE login served all five pages full-size. 517 is in no. 34's
+design family but is not no. 34, and 523 and 522 are unrelated keys, so the TNA order is held. SPRINT P12 is cut to the single f.187 image,
+which carries a crib; it is optional and has not been asked. CHECK-SHERWOOD (Sonnet, USD 3.37): `open`; Brymner calendars the cipher but
+never prints it. The lead is the Haldimand 1778 title-page book key, already transcribed in pro3055-clinton-1779/passes. The reel was not
+located in 8 requests. SHERWOOD-PAGES (session_012WFhCTyEp92v5u8pxgYRJ4, Opus, cap 6, box 60) is to locate the reel, fetch p.84 and
+pp.345-347, and apply the key against a 20-shuffle control. This is the best key-application prospect in program C so far. The owner's
+sort (ASKS 173) is still not in.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
