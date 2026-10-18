@@ -3,7 +3,7 @@
 Common tail: .claude/briefs/README.md applies (ROOM claim/done with the usage phrase, wall-clock box, no AskUserQuestion, never a dollar
 figure for yourself, `tools/experiment_log.py --check`). This session did not solve and does not protect the solver's conclusions.
 
-## JOB SHERWOOD-VERIFY (account 4; Opus 5.5; cap USD 12; box 90 minutes; hosts: archive.org (11280377bsb page images, at most 40; full-text search), heritage.canadiana.ca (H-1737 frames 15-17 only, if needed), Google Books API (with &country=US and the key), OpenAlex/Semantic Scholar/CrossRef (keys), HathiTrust EF API, web search; JSTOR rows to JSTOR-QUEUE.tsv; Price: vision calls: 5 x USD 0.5 + 1 reconciliation = 3.5)
+## JOB SHERWOOD-VERIFY (account 4; Opus 5.5; cap USD 12; box 90 minutes; hosts: archive.org (11280377bsb page images, at most 40; full-text search), heritage.canadiana.ca (H-1737 frames 15-17 only, if needed), Google Books API (with &country=US and the key), OpenAlex/Semantic Scholar/CrossRef (keys), HathiTrust EF API, web search; JSTOR rows to JSTOR-QUEUE.tsv; Price: vision calls: 5 x USD 0.5 + 1 reconciliation = 3.0)
 
 Target ciphers/sherwood-cossit-1781 (BL Add MS 21838 pp.345-347, the Cossit/Summer cypher to Justus Sherwood, Feb 1783). Claim under audit,
 as NOTES.md "## Reading from Entick 1781" states it: the cypher is a page/column-line code into John Entick, *The New Spelling Dictionary*
