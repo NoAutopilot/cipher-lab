@@ -1,0 +1,21 @@
+# page	col	shift	-- settled by eye on the scan tops (SHERWOOD-READ, 18 Oct 2026): +1 = the grid's line 1 was the running-head band; -1 = the grid missed the true line 1
+4	2	1
+7	2	-1
+119	1	1
+201	1	1
+219	1	-1
+219	2	-1
+237	1	1
+301	1	1
+303	1	1
+324	2	1
+326	2	1
+331	1	1
+332	2	1
+353	1	1
+353	2	1
+459	1	1
+459	2	1
+468	2	1
+472	1	1
+472	2	1

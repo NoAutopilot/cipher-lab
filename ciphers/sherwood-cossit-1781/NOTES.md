@@ -328,3 +328,108 @@ whether Sherwood's copy was this printing (a reprint with the same pagination re
 different pagination; the 472 match makes that less likely. Most informative experiment: the W-convention gate on 8 anchors, then the
 full decode with offset and shuffled-P controls (SHERWOOD-READ, Opus, cap 9). Decision: continue as a key application (key: ours, codebook
 identified). A verifier follows only after a reading passes its controls and rule 7.
+
+## Reading from Entick 1781 (SHERWOOD-READ, 18 Oct 2026)
+
+**Convention (gate passed).** A pair P-W is printed page P of Entick, *The New Spelling Dictionary* 1781 (archive.org
+`11280377bsb`) and the **W-th printed line of one of the page's two columns, counted from the top of that column; a wrapped
+continuation line counts as a line.** The column is not written in the pair, so every pair has two candidates (col 1, col 2).
+W never exceeds 38 because a column holds 38 lines (page 364: col 1 Tew ... Their = 38). Checked on the page images (8 pages
+read whole at 1351 px; archive.org `page/nLEAF.jpg`): February 138-28 (col 1, line 28 because "Feature ... / like" wraps above
+it; counting entries instead gives 27), the 364-32 (col 1), them 364-1 (col 2), of 246-35 (col 1), new 240-12 (col 1), was 409-6
+(col 2), towards 371-21 (col 1): **7 of 8 exact, February included**. 331-36 is "Slay" (col 2), not "sleigh": Entick has no
+"sleigh", and the encoder used the nearest sound (the same habit shows in the p.347 period glosses below: Den for "ten", Libel
+for "liable"). Gate: February plus 6 of the other 7 fit one rule; the rule "count entries, not lines" fails February.
+Two more not in the gate, read by OCR and then the image: they 365-8 (col 1), alarm(ed) 10-28 (col 2).
+
+**Method.** One request for the book's page images (`11280377bsb_jp2.zip`, 111 MB, scratch only, not committed) plus djvu.xml and
+page_numbers.json (leaf = page + 31 throughout). `book/build_entick_lines.py` finds the column rule and fits a regular line grid
+to each column's ink profile from the top of the rule, and attaches the OCR words in each line band (`book/entick_lines.tsv`,
+36,260 lines, 470 pages; page 229 failed and is not cited). The grid's line 1 was checked by eye on the 26 cited pages whose two
+columns disagreed or sat outside the usual top band: 20 column-tops corrected (`book/top_fix.tsv`, +1 where line 1 was the
+running head, -1 where it missed line 1). The OCR is too poor to read entries from (page 371's upper half has no OCR at all), so
+**all 167 distinct (P, W) cells in the cypher were read by eye from line crops of both columns** (5 montage sheets, 4 for the
+body and 1 for the p.347 glossed groups): `book/entries_image.tsv`. `decode_entick.py` chooses the column per message by a
+Viterbi pass over a word-bigram model of tools/data/en18, the same chooser for the reading and every control.
+Commands: `python3 book/build_entick_lines.py --src DIR` (DIR = the three archive.org files, re-downloadable);
+`python3 decode_entick.py` (writes reading.tsv, reading.txt); `python3 decode_entick.py --check` (passes);
+`python3 decode_entick.py --controls --seeds 20` (controls/controls.tsv and one text per arm).
+Requests: archive.org 13 (metadata 1, djvu.xml 1, page_numbers.json 1, page images 9, jp2.zip 1), >=1.5 s apart, descriptive UA.
+Vision: 8 whole pages (gate), 1 cypher-crop separator check, 3 sheets of scan tops, 5 entry sheets.
+
+**Grades (216 pair rows: 214 groups + the two non-book rows 192-88 and 16-1783): H 8, C 4, S 147, M 55, I 2.**
+H = entry from the image and the other column's line is a wrap, so no choice was made. C = the period hand on p.347 reads the
+same word (February 138-28, twice; being 32-1; left 209-13). S = entry from the image, column chosen by the bigram chooser with
+a margin >= 2 nats. M = smaller margin, a `?` group, or no entry (192-88: W 88 is outside any column; 16-1783 is the date).
+I = two pairs split by a line break in the transcription and joined by the script (p.346 L06/L07 "364" "32" = The; L10/L11
+"367" "11" = Thunderclap, from the OCR line), never silently. The S grade is cryptanalytic (the column choice); the entry on
+each line is read from the book.
+
+**Reading (reading.txt; [grade] after each entry, clear words in quotes).** Abridged here to the stretches the sketch checks:
+- No.1: "A" Member Of The Hug[M] Of New "H" Informant Myself Official Accompt When He Was There Came To Crested[M] And Afterward He
+  Was Belial[M] Boston Saw The Gentilitious[M] Flawless[M] Anomy[M] Army Sail The[I] West Incurvate[M] ... Congress ... Portsmouth
+  Which Sail Inn Mansion The Thunderclap[I] Danger One Of The Thirteen Ship "the"
+- No.2: Advertisement Thirty Ye ... Make ... To New Haven Slip Three Ye ... Rebel York Will May Next Trade ... Sell Hemp ... Unknown "two"
+- No.3: Trustee Delivered Your ... Day Every Change Will Bee Carefully ... General ... Clatter[M] ... Justice Will Bee ... Then Assured
+  The May Will Occur Respect Brother That Work Of Time Have Made ... Since Have Received Several Gentle Visit All ... Every Art
+  Immediately After Myself Return Laid "1st" Before Judge Whom Will Assist "three"
+- p.347 block: (glossed groups) Kingdom/Den/Libel/Being[C]/Left[C] ... Your Servant "Yours Servant" Too Honorable Holland February[C] 11 1783
+- No.4: Wednesday[M] Last 500 Slay[M] ... Man Durable Slay[M] ... Aid Towards "Os°" Venturously[M] Post ... Aid Alarm Them They
+  Expect ... Was Distrust Towards The Reduction Of The New State Colonel Strong[H] Report <192-88> Council Myself Hearing Windsor
+  Saw[M] ... Report Was 500 Men Only 23-4-1 Beyond February[C] <16-1783> "Do No four"
+
+**Period glosses on p.347 against the book.** Over 203-19 96-16 210-19 32-1 209-13 the period hand wrote "Lameness ten liable
+being left"; the book gives (wrap)/Kingdom, Den/Depaint, Letter/Libel, Being, Left: two exact, two by sound (Den, Libel), one
+miss. The glosses on the next line ("Combat I pray formidably them") sit one group to the right of the book's Formidably 148-22
+and Them 364-1, so either the glossator or the transcription has them shifted by one; not repaired here (I would be the grade).
+
+**Matched controls (rule 3), all OCR-only so the arms are alike** (controls/controls.tsv; statistic = mean en18 word-bigram
+log-probability per decoded word, same column chooser):
+
+| arm | mean bigram logp | decoded share |
+|---|---|---|
+| reading (OCR only) | **-10.68** | 0.898 |
+| W plus 1 | -12.78 | 0.898 |
+| W minus 1 | -13.28 | 0.889 |
+| P shuffled across groups, 20 seeds | -13.12 to -13.96 (all 20 below the reading) | 0.921-0.958 |
+
+`tools/judge_plaintext.py specs/sherwood-cossit-1781.json --file controls/reading_image.txt` (new spec; output also in
+controls/judge_reading_image.out):
+```
+FAIL language: score=-0.998, null_p99=-2.153, real_p05=-0.818, real_median=-0.739, mode=both, N=1187
+ok   words: cover=0.941, min=0.6, real_text_median_cover=0.976
+FAIL - sherwood-cossit-1781 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Same judge on the controls (controls/judge_all.tsv): reading OCR-only -1.240, W plus 1 -1.369, W minus 1 -1.325, P-shuffles
+-1.353 to -1.509. The judge FAILs the reading (below real_p05), and it is a weak instrument here: a dictionary-word decode is
+uninflected headwords ("Informant Myself Official" for "informs me officially"), so it cannot reach prose 4-gram statistics
+whatever the key. The reading still ranks above every control on both statistics.
+
+**Comparison with Sherwood's sketch (p.84-85), message by message.**
+- No.1: **agree.** Member, of the House [Hug, M] of New H[ampshire], informs me officially, accounts, when he was there, came to
+  [council], afterward he was below [Belial] Boston, saw the [French fleet] army sail [to the] West [Indies], Congress,
+  Portsmouth. Beyond the sketch: "the Thunderclap Danger[Damage] One of the Thirteen Ship", which is the "damage done by thunder
+  to the ships" Sherwood saw but could not make sense of.
+- No.2: **Sherwood unread** ("an advertisement, head nor tail"). The decode opens with Advertisement and has New Haven, Rebel,
+  York, Trade, Sell, Hemp; not yet a sentence.
+- No.3: **partly agree.** Delivered/Received, Respect, Judge, "my respects to Major Holland" (Too Honorable Holland, p.347),
+  Clemency is col 2 of 60-29 (the chooser took Clatter). Taylor, Alcot and St Johns not found yet.
+- No.4: **agree.** Wednesday last 500 sleighs [Slay] ... towards Os[wego] ... alarm them, they expect ... was destined [Distrust?]
+  towards the reduction of the new state, Colonel Strong report[ed in] council, my hearing, Windsor, Saturday [col 2 of 315-2],
+  500 men only, February [16] 1783.
+Where the sketch and the chooser disagree on the column (10-34 Albion vs Aid for "Albany", 382-23 Vermine vs Venturously for
+"Vermont", 315-2 Saturday vs Saw, 60-29 Clemency vs Clatter, 89-15 Damage vs Danger) the grades stay as the chooser left them
+(M or S): using the sketch to choose would make it a crib for its own check.
+
+**Still unread.** 55 M rows, mostly No.2 and No.3 (column choices with no context and entries such as Firmamental, Exudation,
+Sanded that read as homophones or misnumbered groups); the standalone figures 415, 809, 2, 11, 500 and the triple 23-4-1;
+192-88; Hug for "House" (176-26: Entick's House is about ten lines above, so the group or the count is off). Not claimed as new
+or first (rule 10); a verifier assigns the class.
+
+Six questions. Learned: the code is Entick 1781, page and column-line, and it reads: all four messages decode into English that
+Sherwood's own sketch confirms where he read them, and two period glosses match exactly. Assumptions: the transcription's digits
+(the 3/5 doubt) and our line grid (20 tops corrected by eye; other pages unchecked unless cited); the en18 bigram chooser.
+Unverified: the M columns, the p.347 gloss shift, the standalone figures. Alternatives: a different printing with the same
+pagination would read the same. Most informative next experiment: a verifier-side re-derivation (rule 7) and a second blind read
+of entries_image.tsv; then a contextual read of No.2/No.3 with the col 1/col 2 lattice in front of a person. Decision: continue
+to verification; the reading is a key application from an identified code book (key: ours).

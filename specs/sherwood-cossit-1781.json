@@ -1,0 +1,15 @@
+{
+  "slug": "sherwood-cossit-1781",
+  "title": "Cossit/Summer cypher to Justus Sherwood, Feb 1783, BL Add MS 21838 pp.345-347 (LAC B.178)",
+  "ciphertext_file": "ciphers/sherwood-cossit-1781/ciphertext.tsv",
+  "source": "LAC reel H-1737 frames 15-17, heritage.canadiana.ca; transcribed SHERWOOD-PAGES 18 Oct 2026",
+  "alphabet": "page-line pairs P-W into Entick, New Spelling Dictionary 1781 (archive.org 11280377bsb); P 4-472, W 1-38",
+  "constraints": ["W = printed line within a column, column not written (SHERWOOD-READ gate, 8 anchors)"],
+  "cheap_tests": ["anchor-page fit (SHERWOOD-BOOK, done)", "W-convention gate + full decode with offset/shuffle controls (SHERWOOD-READ)"],
+  "judge": {
+    "language": "en18",
+    "min_word_cover": 0.6,
+    "control_samples": 200,
+    "corpus_caveat": "en18 is 1795-1815 American official correspondence; the target is 1783 Vermont/New Hampshire intelligence. A dictionary-word decode is English words whatever the key, so the 4-gram letter test cannot separate reading from control; the word-bigram statistic in controls/controls.tsv is the discriminating one."
+  }
+}
