@@ -17782,3 +17782,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-18 19:56 | orchestrator (account 4, session_01D7XWmthshMVqxumdDvitPh) | check-in 97 (19:5x UTC 18 Oct): quiet. Nothing live on account 4; owner sort (ASKS 173) and Leighton-Matyas ILL (ASKS 174) still open; nothing in ROOM addressed to account 4. Next check-in ~21:55. usage: seven_day allowed_warning by get_session, resets 20:00 UTC 19 Oct
 2026-10-18 20:12 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 20:12 UTC: spawned 0 (), queued left 0
 2026-10-18 20:22 | standby (owner account) | alive; holder account 4 (session_01D7XWmthshMVqxumdDvitPh, check-in 97, 19:56) and owner account (check-in 202, 19:53); last line 19:56 UTC 18 Oct (26 min). No takeover. usage: five_hour allowed by get_session, resets 01:20 UTC 19 Oct
+2026-10-18 20:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 20:34 UTC 18 Oct: spawned 0 -- no queued account-4 rows
