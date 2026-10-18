@@ -109,6 +109,13 @@ the paywalled TNA rows K5-K8. Program C replenishes along the instrument that wo
 Sonnet, cap 4) looks for undeciphered 1775-1815 book- and dictionary-code letters on free hosts (Clements, LAC MG 21/23, LoC), which
 decode_entick.py and the anchor-fit tools can test. Founders Online is excluded (swept on 24 Sept, all found-solved).
 
+Check-in 95 (18 Oct 2026, 16:5x UTC). SCOUT-BOOKCODE (Sonnet, USD 3.45) found a new host, Columbia RBML's Papers of John Jay (IIIF, free),
+with three catalogued-undecoded items. The Clements and LAC MG23 routes are dead ends, and loc.gov gave nothing new. The parent found B2
+(Livingston to Jay, 28 Nov 1781) already found-solved in LANE N's 24 Sept record: the modern Selected Papers of John Jay prints it. The
+lesson is in QUEUE.md: a catalogue note naming old editions is not a check of the modern one. B1 (Jay to Deane, 27 Oct 1780) goes to
+CHECK-JAYDEANE (session_015QfcgUcFWy7fwYDbKYwxd3, Sonnet, cap 3). If it too is found-solved, program C idles until the 23 Oct review and
+the owner's asks.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
