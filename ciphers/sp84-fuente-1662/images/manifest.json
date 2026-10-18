@@ -1,0 +1,77 @@
+[
+ {
+  "file": "IMG_R517_I3723_P1.jpg",
+  "decode_record": 517,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0123-0125)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R517_I3723_P1.png",
+  "source_px": [
+   1683,
+   2300
+  ],
+  "source_bytes": 4225304,
+  "source_sha1": "2018271e6eb297c5ce857a37c227f15aabe767b0",
+  "kept": "JPEG q82 at source dimensions (PNG not committed)",
+  "fetched": "2026-10-18 FUENTE-KEY, one browser login (tools/decode_browser_login.js --guess-fullsize)",
+  "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 517 OUT --guess-fullsize (login required for full size)"
+ },
+ {
+  "file": "IMG_R517_I3724_P2.jpg",
+  "decode_record": 517,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0123-0125)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R517_I3724_P2.png",
+  "source_px": [
+   1699,
+   2300
+  ],
+  "source_bytes": 4048046,
+  "source_sha1": "6c04bc09447f7a74aa98391f51967502612deb73",
+  "kept": "JPEG q82 at source dimensions (PNG not committed)",
+  "fetched": "2026-10-18 FUENTE-KEY, one browser login (tools/decode_browser_login.js --guess-fullsize)",
+  "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 517 OUT --guess-fullsize (login required for full size)"
+ },
+ {
+  "file": "IMG_R522_I3734_P1.jpg",
+  "decode_record": 522,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0160)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R522_I3734_P1.png",
+  "source_px": [
+   1817,
+   2300
+  ],
+  "source_bytes": 2399895,
+  "source_sha1": "fe2a314207fc32f2a9c7a4526a4317191013e6ce",
+  "kept": "JPEG q82 at source dimensions (PNG not committed)",
+  "fetched": "2026-10-18 FUENTE-KEY, one browser login (tools/decode_browser_login.js --guess-fullsize)",
+  "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 522 OUT --guess-fullsize (login required for full size)"
+ },
+ {
+  "file": "IMG_R523_I3735_P1.jpg",
+  "decode_record": 523,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0163-0164)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R523_I3735_P1.png",
+  "source_px": [
+   1808,
+   2300
+  ],
+  "source_bytes": 1907143,
+  "source_sha1": "4db3619a7e34063c4238cd8b76205c9e0ed3549b",
+  "kept": "JPEG q82 at source dimensions (PNG not committed)",
+  "fetched": "2026-10-18 FUENTE-KEY, one browser login (tools/decode_browser_login.js --guess-fullsize)",
+  "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 523 OUT --guess-fullsize (login required for full size)"
+ },
+ {
+  "file": "IMG_R523_I3736_P2.jpg",
+  "decode_record": 523,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0163-0164)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R523_I3736_P2.png",
+  "source_px": [
+   1781,
+   2300
+  ],
+  "source_bytes": 5108505,
+  "source_sha1": "d5745053c49bed3c631d46a5e9525d81448651a4",
+  "kept": "JPEG q82 at source dimensions (PNG not committed)",
+  "fetched": "2026-10-18 FUENTE-KEY, one browser login (tools/decode_browser_login.js --guess-fullsize)",
+  "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 523 OUT --guess-fullsize (login required for full size)"
+ }
+]

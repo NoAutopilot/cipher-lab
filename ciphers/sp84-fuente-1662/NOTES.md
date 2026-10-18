@@ -216,3 +216,41 @@ What was learned: 11 undigitised intercepts, plus a Spanish key family in the sa
 SP 106/6 Spanish pages are the key to these intercepts (only shared language and office support it, and 523 is dated 1672). Alternative: a
 different Spanish key of the same era. Most informative experiment: the DECODE key-image test (FUENTE-KEY, Opus, cap 4), which runs before
 any money goes on the TNA copy order (SPRINT.md P12, held as a candidate). Decision: acquire, gated on that test.
+
+## Key-image test (FUENTE-KEY, 18 Oct 2026)
+
+Route: one DECODE browser login (`tools/decode_browser_login.js 523 --guess-fullsize --fetch-page RecordsView/522,517`,
+05:26 UTC 18 Oct 2026), login accepted first time; full-size images were served (not the forbidden placeholder) for all five
+pages, plus DECODE's own transcription documents (517: two files, status "partial", transcriber NM, 14 July 2020; 522: "complete",
+DK, 7 Apr 2020; 523: "complete", DK, 2 Mar 2020). Images in `images/` as JPEG at source size (2300 px long side), 2.3 MB,
+`images/manifest.json` (source URL, source sha1, re-fetch command; full size needs the login). Requests to de-crypt.org: login + 3
+record pages + 5 thumbnails + 5 full images + 4 documents. Tomokiyo's description of SP 106/6 no. 34 is quoted under "## Source" above
+(nine mark classes: none 1-211, overbar 1-210, double bar 1-211, triple dots 1-211, m 1-210, crossed circle 1-220, grave 1-240, double
+prime 1-239, %-like 1-234; single letters scattered among the figures, no letter section).
+
+| DECODE record | Pages | What it is (read from the image; DECODE doc as check) | Numbers and marks | Letters | Vocabulary | vs no. 34 |
+|---|---|---|---|---|---|---|
+| 523 `(0163-0164)` | 2 | p.1 blank but for a pasted docket in German ("...Ziffer mit dem ... Lisola ...", dated 25 Sept 1672 as far as read); p.2 a one-part numeric table: homophonic alphabet A 3-6 ... Z 69, syllable grid ba-su 70-159, "Errantes" 161-179, numerals 180-208, particles 209-263, then names/codes on two-letter groups (aa, ac, ...) | plain numerals 1-273, no mark classes (DECODE notes a dot over every "1", a penstroke, not a class) | own section at the top (homophones per letter) | Latin and German names and particles (Anglia, Bohemia, Brandenburg, Lisola, Pomerania, Schomberg, Tamen, Etiam); DECODE's language tag "Spanish" is wrong for this sheet, its own transcription file says LA | **no match** |
+| 522 `(0160)` | 1 | "Zifra cum Lobkowiz": a two-letter code list, plain-to-code | no numbers at all (aa-er ...) | none | Spanish/Latin court names (Almirante, Cardinal Portocarrero, Don Juan de Austria, Consilium Statûs) | **no match** |
+| 517 `(0123-0125)` | 2 | p.1 a decoding table (code-to-plain, ordered by number in columns per mark class), with a separate alphabet section at its head (letter, a number carrying a curled-8 mark, and a graphic symbol per letter); p.2 the encoding side, plain-to-code, alphabetical by syllable and word (Al, Ba Be Bi Bo Bu, Ca ...) | seven classes in DECODE's partial transcription (p.1 / p.2): none 101-139, "ν" 2-38, grave 8-72, double dot 10-48, LeftMultimap 10-77, DoublePlus ("#"-like) 30-97, X (an x under the figure) 105-138; nothing above about 148 on either page by eye | own section (alphabet with symbols), plus syllables in the body | Spanish (observava, negociacion, madrid, arquiduque, Alemania, Cessarea, auesperg = Auersperg, Commissarios) | **partial: same design family, not the same sheet** |
+
+Verdict for 517: it is a Spanish mark-distinguished numbered nomenclator of the kind Tomokiyo describes (numbers re-used under
+different marks, one of them a grave), so the design family matches; but the sheet itself does not: seven classes not nine, ranges
+ending near 72-139 not 210-240, no overbar, double bar, triple dots, m, double prime or %-like class seen, and the letters form their
+own head section rather than being scattered among the figures. No. 34 is therefore not one of the three Spanish-tagged DECODE
+records; it is either among SP 106/6's other 46 DECODE Key records under a different language tag (523 shows the tags are unreliable)
+or not on DECODE at all.
+
+Dates: SP 106/6 spans the Restoration, 29 May 1660 - 6 Feb 1685 (Discovery piece range, DECODE uses the same for 517 and 522). 523's
+docket gives 1672, ten years after the 1662 intercepts, and its language and names (Lisola, Brandenburg) point to imperial diplomacy,
+not Spanish despatches. 517 carries no date on the image as read; "auesperg" (Prince Auersperg, imperial chief minister until his fall
+in Dec 1669) and "arquiduque", "Cessarea", "Alemania" suggest a Habsburg Vienna-Madrid correspondence of the 1660s, which keeps it in
+the window but does not tie it to De la Fuente's Hague traffic. Nothing on any of the five pages names De la Fuente, Gamarra, Holland or
+the Hague.
+
+Next step: the 11-image TNA copy order is **not** yet a key-assisted recovery; hold it. What would tie a key to these intercepts, in
+order of cost: (1) login-free: page DECODE's listing for the other 46 SP 106/6 Key records (`tools/decode_list.py`) and read their
+thumbnails' metadata for a mark-class table running to 211-240 (Tomokiyo's no. 34), ~USD 1; (2) if found, one more single-login fetch
+of that record; (3) whatever the key, a single-image TNA order for f.187 only (the item with a decoded Spanish paragraph, a built-in
+crib) to see whether the intercepts are written in mark-distinguished numbers at all and to test 517 and no. 34 against that paragraph,
+before the full 11-image order.
