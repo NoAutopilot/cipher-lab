@@ -73,6 +73,16 @@ reading above every control. The parent re-ran `--check`: current. SHERWOOD-VERI
 does a rule-7 blind read of the changed cells plus 20 random S cells, then gives the class and depth with the Leighton and Matyas gap stated
 (ASKS 174). Sherwood total so far: about USD 33 over 6 sessions.
 
+Check-in 90 (18 Oct 2026, 12:0x UTC). **sherwood-cossit-1781: N3, D2.** SHERWOOD-VERIFY2 (Opus, USD 4.65) passed rule 7 on the re-issue
+(56/56 column reads, including 20 seeded S cells). Class N3, not N4, because Leighton and Matyas 1985 has only been read in snippets
+(ASKS 174). Key: ours (book identified), design published. Depth D2, 72.7% H/C/S. Safe sentence (AUDIT.md): the February 1783 messages
+are partially deciphered (about 73%) as a page-and-line code into Entick's New Spelling Dictionary (1781), a book we identified; Entick
+as a Haldimand-service code book was already known; no prior decipherment of these messages located. The parent added the status.json
+results row (kind recovery, one audit) and set the folder to `partial` (gaps_check keep-going). SO-SHERWOOD-COSSIT is queued. The
+breakthrough alert is held until a second audit or the Leighton and Matyas read. SHERWOOD-SIB (session_01774u9fsnWgWTtP1hfV5xo2, Opus, cap 7,
+box 60) gets the sibling Cossit/Sumner cypher letters, decodes them, and proposes settlements for the M rows. Program C so far: 6
+check-solveds; one reading (K9).
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
