@@ -103,6 +103,12 @@ pool is parked (ranks 2-3 are a translated duplicate and an embedded phrase). Pr
 Sonnet, cap 2), SCOUT-KEYS K10's own script test on the C11A cipher-despatch calendar. Account 4 today: 12 workers, about USD 54. Results:
 one recovery at N3/D2 (Sherwood), four check-solveds, and two pools parked with lessons.
 
+Check-in 94 (18 Oct 2026, 16:0x UTC). K10-GREP (Sonnet, USD 2.15): no undeciphered candidate. All 8 C11A cipher despatches show a page
+reduction, meaning they were deciphered, and the 1746 "translated" letter is C11B, so K10 is parked. SCOUT-KEYS is now used up apart from
+the paywalled TNA rows K5-K8. Program C replenishes along the instrument that worked: SCOUT-BOOKCODE (session_019MCFZuZM2A8jFUjCWKRMVM,
+Sonnet, cap 4) looks for undeciphered 1775-1815 book- and dictionary-code letters on free hosts (Clements, LAC MG 21/23, LoC), which
+decode_entick.py and the anchor-fit tools can test. Founders Online is excluded (swept on 24 Sept, all found-solved).
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
