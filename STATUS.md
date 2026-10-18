@@ -57,6 +57,15 @@ every control. Sherwood's paraphrase agrees for No.1 and No.4, and No.1 adds the
 the 167 cells, then the verifier (N-class, depth, AUDIT.md). No outward wording before AUDIT.md (rule 10); the breakthrough alert is
 considered only after the class.
 
+Check-in 88 (18 Oct 2026, 10:1x UTC). SHERWOOD-VERIFY (Opus, USD 5.88) sent the reading back under rule 7. Its blind re-read agreed on
+314/334 column reads. Nine solver cells were one line early on pp.33, 84, 278 and 312 (the grid's line 1 was low there, and the top check
+missed it). That moves 6 tokens, 3 of them S. The gate holds 8/8 under an independent grid. Prior work: Entick as a British/Haldimand
+page-column codebook is in print (Friedman; Leighton and Matyas 1985, not yet read). Pell 1929 prints the events of No.4, and no plaintext
+of this cypher was found. N-class and depth are pending. The safe sentence is AUDIT.md's "proposed ... being re-issued". The correspondent
+is Benjamin Sumner. SHERWOOD-FIX (session_0163cSv15QHtmTCFRXZ469Wt, Opus, cap 5, box 45) fixes the grid at its cause, checks the tops of
+every cited page, re-grades and re-runs the judge and controls. ASKS 174 asks the owner for a free ILL request for Leighton and Matyas,
+which decides the class.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
