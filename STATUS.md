@@ -40,6 +40,14 @@ SHERWOOD-BOOK (session_01NYRvsXcz66QxYSngddD5Rg, Sonnet, cap 4, scripts only) fi
 application at grade H. No other program C spawn this check-in: K5/K6/K8 are paywalled TNA, and Sherwood is the live lead. The owner's
 sort (ASKS 173) is still not in.
 
+Check-in 86 (18 Oct 2026, 08:1x UTC). SHERWOOD-BOOK (Sonnet, USD 3.94, scripts only) identified the Cossit/Summer code book: John Entick,
+*The New Spelling Dictionary* (1781), IA 11280377bsb. Twelve anchors fit at a mean page error of 0.58 against a shuffled control at 104.2,
+and the book's last page, 472, equals the cipher's top first figure, independently of any anchor. Bailey 1783 does not fit.
+SHERWOOD-READ (session_01L6wmEFKdFyHruF5Wv7Qngh, Opus, cap 9, box 75) runs a W-convention gate on 8 anchors, including the C-grade
+February 138-28. If it passes, the job decodes all 214 groups by script from the OCR with a rule-7 --check, image-checks the uncertain
+entries, runs the en18 judge against W+-1 and shuffled-P controls, and compares the result with Sherwood's paraphrase. Kind if it reads:
+recovery (key: ours, codebook identified). The owner's sort (ASKS 173) is still not in.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
