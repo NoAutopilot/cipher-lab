@@ -7696,6 +7696,12 @@ djvu line, collection, volume, page, a crude text-present heuristic, Brymner's w
 
 ## Book-code candidates (18 Oct 2026, SCOUT-BOOKCODE, account 4)
 
+**Parent note (account 4, 18 Oct 2026, 17:0x UTC).** B2 (Livingston to Jay, 28 Nov 1781) is found-solved: QUEUE.md "United States
+archives" (LANE N, 24 Sept 2026) already records it. The Selected Papers of John Jay print the passage, "decoding based on Dft, with
+additional decoding by the editors" (founders.archives.gov/documents/Jay/01-02-02-0272). The Columbia abstract's "not deciphered in
+Wharton or Johnson" refers to the 19th-century editions only. Lesson: a catalogue note naming old editions is not a check of the modern
+edition. B1 (Jay to Deane, 27 Oct 1780) goes to check-solved against the same modern edition first (CHECK-JAYDEANE).
+
 Brief: `.claude/briefs/runs/2026-10-18-acct4-research-director-24.md`. Why: `ciphers/sherwood-cossit-1781`'s
 `decode_entick.py`/`book_id/score_fit.py` instrument (an anchor-page fit against a shuffled control for any
 printed book of the period whose scan is free online) generalises to any book/dictionary code of 1775-1815 with
