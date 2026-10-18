@@ -244,3 +244,11 @@ and the matching repeats support it). Unverified: the sketch-to-group alignment 
 identity; the 3/5 digit forms. Alternatives: a private alphabetical word list (no printed book), or page-column-line
 rather than page-word. Most informative next experiment: anchor-word page fit against Bailey and other period spelling-dictionary editions.
 Decision: change (new instrument: book identification); the title-page route stops for this item.
+
+## Parent decision 2 (account 4, 18 Oct 2026, 07:2x UTC)
+
+What was learned: the cypher is not the 1778 title-page system; it is a spelling-ordered page-word code, and Sherwood's own paraphrase of all
+four messages survives. Assumptions: p.345 = No.4, and the sketch alignment, which is ours and partly ordering-guided. Unverified: the book
+and the alignment beyond repeats. Alternatives: a private word list (no printed book), or page-column-line. Most informative experiment: an
+anchor-page fit across scanned period dictionaries against a shuffled-anchor control (SHERWOOD-BOOK, Sonnet, cap 4, scripts only). Decision:
+continue with a new instrument (book identification). If a book fits, the reading becomes a key application at grade H.
