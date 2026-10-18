@@ -66,6 +66,13 @@ is Benjamin Sumner. SHERWOOD-FIX (session_0163cSv15QHtmTCFRXZ469Wt, Opus, cap 5,
 every cited page, re-grades and re-runs the judge and controls. ASKS 174 asks the owner for a free ILL request for Leighton and Matyas,
 which decides the class.
 
+Check-in 89 (18 Oct 2026, 11:0x UTC). SHERWOOD-FIX (Opus, USD 4.20) re-issued the reading. The grid error came from column rules that start
+at or above the running head; a head guard was added, all 252 cited column tops were checked, and one more wrong column was found (215 c1).
+Grades: H 8, C 4, S 145, M 57, I 2. The controls still hold (-10.67 vs -12.75 to -13.96). The judge FAILs (-0.998 vs -0.804) but scores the
+reading above every control. The parent re-ran `--check`: current. SHERWOOD-VERIFY2 (session_017en4ezFaYaXMDoF9tb32jT, Opus, cap 6, box 60)
+does a rule-7 blind read of the changed cells plus 20 random S cells, then gives the class and depth with the Leighton and Matyas gap stated
+(ASKS 174). Sherwood total so far: about USD 33 over 6 sessions.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
