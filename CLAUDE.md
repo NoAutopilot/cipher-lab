@@ -997,6 +997,8 @@ nothing, not that the host is untried.
 | books.google.com (page/text view: `pg=`/`output=text`, PDF and epub download) | full page images and OCR text of a specific volume page | none | **no** -- captcha/bot-blocked from the cloud, confirmed 2 sessions for 2 (SCOUT-OWN-3, D1-CHECK, 26 Sept 2026); the separate Books API host (`www.googleapis.com/books/v1`, with `&country=US` and `GOOGLE_BOOKS_KEY`) still works for snippet/full-view search | none from the cloud for page/text view | n/a | ciphers/_triage/doria-donjuan-1568.md (D1-CHECK, 26 Sept 2026) |
 | cervantesvirtual.com (Biblioteca Virtual Miguel de Cervantes) | Spanish-language digitised texts and editions | none | **no** -- Cloudflare-blocked to curl and to `tools/browser_fetch.js` alike, confirmed 26 Sept 2026 (D1-CHECK, 3 requests) | none from the cloud; a desktop/LOCAL-QUEUE route only | n/a | ciphers/_triage/doria-donjuan-1568.md (D1-CHECK, 26 Sept 2026) |
 
+Google Books API, 19 Oct 2026 (RETRO-2026-10-19 P3): intermittent 503s on 12 and 15 Oct 2026 (5 jobs: ECK-GP13B/C, GB-PASS2/3/4) with control calls succeeding just before and after -- a transient host fault, not the access problem in its table row; retry once after a pause, then log it and move on.
+
 Hosts that need the owner's own machine (queued in `LOCAL-QUEUE.tsv`): JSTOR; HathiTrust full text/page images;
 Gallica's texteBrut text endpoint specifically (its IIIF image API works fine from the cloud); the actual page
 images inside a held Internet Archive loan (obfuscated for scripts, a person must read them in the reader);
