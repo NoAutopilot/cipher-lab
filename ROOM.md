@@ -17908,3 +17908,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-19 20:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 20:39 UTC 19 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0. usage: five_hour allowed by get_session, resets 00:20 UTC 20 Oct
 2026-10-19 20:57 | orchestrator (account 4, session_01D7XWmthshMVqxumdDvitPh) | check-in 106 (20:5x UTC 19 Oct): quiet. Seven-day warning cleared (get_session: five_hour allowed). Nothing live; ASKS 173/174 open; sorter empty. git pull hung again (timeout); fetch+rebase separately works. Next ~00:00 UTC 20 Oct. usage: five_hour allowed by get_session
 2026-10-19 21:11 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 21:11 UTC: spawned 0 (), queued left 0
+2026-10-19 21:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 21:34 UTC 19 Oct: spawned 0 -- no queued account-4 rows
