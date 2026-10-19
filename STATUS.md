@@ -123,6 +123,12 @@ candidates are found-solved. Live threads waiting on the owner: ASKS 173 (the Vi
 which settles the Sherwood class). Account 4 today: 15 workers, about USD 62. Result: one recovery at N3/D2, sherwood-cossit-1781. No
 worker is live; check-ins move to a slower cadence.
 
+Two-day report (19 Oct 2026, 01:1x UTC), from records only: research/TWO-DAY-REPORT-2026-10-19-acct4.md. One N3/D2 result (sherwood-cossit-1781).
+Mercy's D2 ceiling is reachable only with new key evidence for code 25. The flagship is diagnosed (the key caps the run; two labels are
+merged) and blocked on ASKS 173. Program C: 1 reading from 13 promoted rows. Spend USD 108 over 31 jobs: A 33%, B 16%, C 51%. CHECK-BERCK
+had been missed from the ledger and was added late; one EVIDENCE-DECISIONS entry was added for the Sherwood pivot, citing its contemporaneous
+NOTES record.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
