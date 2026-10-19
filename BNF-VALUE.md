@@ -360,3 +360,22 @@ the strongest new material (a held key or a sibling folder) once reproduced. Re-
 - Wave 36 close (06:5x UTC by date -u): BNF-GIEVRE-SORT (0.98) built the f.89 blind sorter (119 tiles, 46 focus; gesture/pan
   preflight checks to finish before publishing), ASKS 169. LANE BNF-FOCUS is idle-standing, blocked on ASKS 163 and 169, with the
   daily solver-repository re-screen kept (brief). 15 Oct spend: 0.98.
+
+## Waves 37-40 (16-19 Oct 2026): daily re-checks; two item-level matches in Bourdeau's 14-18 Oct entries
+
+- 16-18 Oct (waves 37-39): ASKS 163/169 unanswered; Bourdeau HEAD 0445769 and Aymeloglu HEAD 4d0ab23 unchanged; 16 Oct the
+  dataset refreshed one row (espagnol142 depth_pct). 18 Oct: under the 17 Oct research-director directive the queue was re-walked
+  (Q3 held by fr4715-f61-mayenne-1592, Q8 behind a person-side edition question, Q4/Q5/Q9 offline, the rest closed or keyless).
+- 19 Oct (wave 40, 06:2x UTC by date -u): Bourdeau HEAD moved to a03e5adda (per-key split of 14-15 Oct; PRs #36-#42 merged
+  18 Oct). Crossing every BNF-VALUE.tsv shelfmark against the changed targets (by folio, then by volume) found two item-level
+  matches, recorded in the folders with unmodified snapshots in sources/cyphersolver/2026-10-19-*:
+  - **fr3151-seure-1558 -> found-solved.** Angus Robinson recovered the key and deciphered all five Seure cipher letters (fr.3151
+    nos. 39-41, 43-44; PR #40, 16 Oct), checked by D. Bourdeau 18 Oct. No. 42 is Brissac's, plain (corrects our survey).
+  - **matignon-mayenne-1586, Cipher-3 leaves fr.15572 f.276 and fr.15571 f.179 -> found-solved elsewhere** (alejandrozarco,
+    PR #25, 6-7 Oct; their measure 706/734 and 473/509 signs). The folder stays `partial` for Cipher-1; two gaps removed.
+  - Other volume-level hits were splits of entries already recorded (gramont, langeac, lauriere/revol, esp318, sega/sillery,
+    macon) or siblings (fr.3985 f.88 Revol, f.58 La Verrière, f.23 Lebel), not our items; fr.3982 f.25 and fr.3985 f.89: no hit.
+- Lesson: the 13-18 Oct screens grepped Bourdeau's tree for this lane's two open shelfmarks only and missed the 7 Oct Cipher-3 read,
+  which sat under a different folder name. The daily screen now crosses all BNF-VALUE.tsv shelfmarks (folio, then volume) against
+  every target changed since the last screened HEAD (script in the wave 40 ROOM line; the lane's scratch, not a new tool --
+  architecture frozen through 22 Oct).

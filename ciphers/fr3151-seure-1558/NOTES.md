@@ -1,4 +1,5 @@
-partial
+found-solved
+Found solved 19 Oct 2026 (LANE BNF-FOCUS re-screen): key recovered and all five Seure cipher letters (fr. 3151 nos. 39-41, 43-44; no. 42 is Brissac, plain) deciphered by Angus Robinson (dbourdeau/cyphersolver PR #40, 9e01659e, 16 Oct 2026), checked by D. Bourdeau 18 Oct 2026; section "Found solved elsewhere" at the end. Was `partial` (0 tokens read here).
 Status revised 4 Oct 2026 ~19:0x UTC (account-3 orchestrator): found-solved (SEURE-WEB) withdrawn. SEURE-DEC pinned fos 84-87 by eye and found no interlinear, marginal or separate decipher; the sentence Potter 2014 prints as deciphered is clear text on fo. 85r l.1-5, so his "in cipher, with decipher" does not show a printed decipherment of the cipher passages. Open question: whether Serrao 1969 (Arq. Centro Cultural Port. 1, 455-458) or Falgairolle 1896 prints them (LOCAL-QUEUE L53).
 Potter, A Knight of Malta at the Court of Elizabeth I (Camden 5th ser. 45, 2014), introduction footnotes on de Seure's Lisbon despatches, read by this worker (Cambridge Core PDF + Google Books snippet QtbeBgAAQBAJ): fr. 3151 fo. 84-87 is cited 'in cipher, with decipher' and a deciphered sentence is printed (SEURE-WEB section below).
 
@@ -1245,3 +1246,24 @@ J. Verissimo Serrao, "Michel de Seure, embaixador frances em Portugal (1557-1559
 Waits on the owner's Morvilliers 1549 sorter answer (D1-SEURES, 6 Oct 2026) and LOCAL-QUEUE L53 (Falgairolle 1896); Serrão 1969 read 6 Oct 2026.
 - Build the owner sign sorter for Tournon fo. 22r from the tv crops (tools/sign_sorter.py, as D1-SEURES did for Morvilliers) and hand it on. S, ~$3, R12A-SEUT2's named next
 - Look for Falgairolle 1896 (Seure's St Petersburg letters, pp.49-85) on IA/Gallica/Google Books full view before L53 answers. S, ~$0.5, advancedsearch + SRU
+
+
+## Found solved elsewhere (19 Oct 2026, LANE BNF-FOCUS, account 2)
+
+Found in the daily solver-repository re-screen (BNF-VALUE.tsv shelfmarks crossed by volume against dbourdeau/cyphersolver HEAD
+a03e5adda). Bourdeau's entry `targets/seure1558` (split 14 Oct 2026 from `guiche1551` under George Lasry's one-key rule) now
+reads: "Key recovered and the five letters deciphered by Angus Robinson (GitHub AngusRobinson, PR #40, 16 Oct 2026), from cribs
+on an adjacent deciphered leaf plus simulated annealing and manual correction; checked here 18 Oct 2026." Their summary: one key
+for all five letters, 118 sign types (letter, syllable and word signs, 21 nulls, a cancellation operator), 9,405 characters in 397
+rows; no. 40's enciphered passages have surviving clear copies; N10_4 unassigned and longs_x = escuz conjectural. Their survey
+also corrects ours: no. 42 is the Maréchal de Brissac's letter, not Seure's (our leaf survey above had it as Seure's, plain prose).
+
+Snapshot (unmodified): `sources/cyphersolver/2026-10-19-seure1558/` (NOTES.md, SOLUTION.txt, KEY.svg, KEY_AND_DECRYPTION.txt).
+Walkthrough with readings and translations: https://angusrobinson.github.io/historical-decipherment/seure.
+Credit: Angus Robinson (key and decipherment); D. Bourdeau (check, entry); G. Lasry (the one-key split).
+
+Consequences here: every gap in "Remaining gaps (R12A-SEUT2)" above is overtaken; the Tournon, Morvilliers and Babou key routes
+and LOCAL-QUEUE L53 (Serrão 1969 / Falgairolle 1896) are no longer needed for this folder (the orchestrator decides whether to
+withdraw L53 and any sorter tied only to Seure). No reading is claimed here; nothing of theirs is copied into a key.tsv. If this
+project ever wants its own check, the honest route is a rule-7 re-derivation from their key and our f81R transcription, labelled
+`key application` (key published), not recovery.
