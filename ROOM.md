@@ -17808,3 +17808,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-19 01:07 | orchestrator (account 4, session_01D7XWmthshMVqxumdDvitPh) | check-in 99 (01:0x UTC 19 Oct): two-day report landed (research/TWO-DAY-REPORT-2026-10-19-acct4.md). Account 2: LEDGER rows still owed for SCOUT-KEYS and CASES-TX (run for account 4 on 17 Oct). Nothing live; ASKS 173/174 open; sorter empty. Next check-in ~04:10. usage: seven_day allowed_warning by get_session, resets 20:00 UTC 19 Oct
 2026-10-19 01:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 01:09 UTC: spawned 0 (), queued left 0
 2026-10-19 01:38 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 01:34 UTC 19 Oct: spawned 0 -- no queued account-4 rows
+2026-10-19 01:41 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 01:39 UTC 19 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0. usage: five_hour allowed by get_session, resets 06:20 UTC 19 Oct
