@@ -17892,3 +17892,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-19 17:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 17:35 UTC 19 Oct: spawned 0 -- no queued account-4 rows
 2026-10-19 17:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 17:39 UTC 19 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0. usage: five_hour allowed by get_session, resets 19:20 UTC 19 Oct
 2026-10-19 17:42 | orchestrator (account 4, session_01D7XWmthshMVqxumdDvitPh) | check-in 105 (17:4x UTC 19 Oct): quiet. Nothing live; ASKS 173/174 open; sorter empty. One git fetch hung (killed, retried clean). Next ~20:50, after the seven-day reset at 20:00. usage: seven_day allowed_warning by get_session, resets 20:00 UTC 19 Oct
+2026-10-19 18:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 18:10 UTC: spawned 0 (), queued left 0
