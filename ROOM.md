@@ -17878,3 +17878,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-19 14:32 | orchestrator (account 4, session_01D7XWmthshMVqxumdDvitPh) | check-in 104 (14:3x UTC 19 Oct): quiet. Nothing live; ASKS 173/174 open; sorter empty. Next ~17:35. usage: seven_day allowed_warning by get_session, resets 20:00 UTC 19 Oct
 2026-10-19 14:36 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 14:35 UTC 19 Oct: spawned 0 -- no queued account-4 rows
 2026-10-19 14:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 14:39 UTC 19 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0. usage: five_hour allowed by get_session, resets 16:20 UTC 19 Oct
+2026-10-19 15:11 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 15:11 UTC: spawned 0 (), queued left 0
