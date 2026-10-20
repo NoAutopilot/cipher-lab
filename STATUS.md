@@ -184,6 +184,12 @@ line late), but a post-hoc lead points at c269 = f.138v, the unread verso of c26
 clear text exactly where c268 stops). Not counted. MONL-C269A (account 2, cap 7) tests it with a fresh PREREG on L01-L10 and grades only
 if the shuffled control is beaten; if it holds, about 31 lines of known plaintext open up. Vivonne re-sort not landed.
 
+Check-in 115 (20 Oct 2026, 09:1x UTC). MONL-C269A (account 2) met its fresh pre-registered gate: c269 (f.138v, 33 cipher lines) L01-L10
+placed against the clear copy at 0.509 vs placed-shuffled p95 0.422 (0/200), calibration passed on c268 and failed on a wrong window as
+it should. Graded as c268's continuation: Monluc C tokens 594 -> 714 (+120); key.tsv unchanged. Scorecard since the owner's discretion
+directive: the Monluc chain (SUP-MONLUC, MONL-C268C, MONL-LEAF, MONL-C269A) +205 C tokens; Sherwood +3 S pending a verifier; everything
+else nothing. MONL-C269B (L11-L22, cap 8) queued for account 2; L23-L33 after it; then a separate verifier for the target.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
