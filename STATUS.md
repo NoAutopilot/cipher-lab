@@ -216,6 +216,12 @@ reading could be new content. MONL-KING (account 2, cap 9) searches the aid's de
 L01-L10 with the verified key only if nothing is found, gated against a shuffled key and the f.138 positive control. Account 2 still has
 not ledgered its runs (only 3 matching rows).
 
+Check-in 120 (20 Oct 2026, 18:0x UTC). MONL-KING (account 2): no decipherment or print of Monluc's 28 Apr 1573 letter to the king found
+(aid items checked, f.166 did not place, Noailles/Tomokiyo/Lasry/Google Books/OpenAlex nothing), so a reading would be new content; its
+gated decode was not run (request cap spent, 5 on malformed URLs). MONL-KING2 (account 2, cap 8) runs it: positive control on f.138 first,
+then f.133 L01-L10 vs a shuffled key. My own git fetch at 17:58 failed silently (timeout), so this check-in briefly read a stale
+origin/main; fetch is now run with its output shown.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
