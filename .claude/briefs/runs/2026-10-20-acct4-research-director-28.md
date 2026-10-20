@@ -17,22 +17,22 @@ full page to a reader. Solver jobs: report what was found and where it was not f
 the done line. Hosts: Gallica/openapi.bnf.fr only as each job names, one request at a time, >= 1.5 s apart; on 403/429 one retry after a
 pause, then log and stop (a blocked host is a blocker, not a negative).
 
-## JOB SUP-GIEVRE (account 1; Sonnet 5; cap USD 1.5; box 25 minutes; hosts: gallica.bnf.fr IIIF (3 views); Price: vision calls: 3 x USD 0.2 + 0 reconciliation = 0.6)
+## JOB SUP-GIEVRE (account 2; Sonnet 5; cap USD 1.5; box 25 minutes; hosts: gallica.bnf.fr IIIF (3 views); Price: vision calls: 3 x USD 0.2 + 0 reconciliation = 0.6)
 ciphers/fr3985-gievre-1593: read views 757-759 for the letter, then re-run the intake gate and set `open` if the letter is absent (the
 folder's own next step). Report: letter found or absent per view, status set, three lines.
 
-## JOB SUP-PAGET (account 1; Sonnet 5; cap USD 1.5; box 25 minutes; hosts: the pages the draft cites, one fetch each; Price: vision calls: 0 x USD 0 = 0)
+## JOB SUP-PAGET (account 2; Sonnet 5; cap USD 1.5; box 25 minutes; hosts: the pages the draft cites, one fetch each; Price: vision calls: 0 x USD 0 = 0)
 ciphers/sp105-paget-1693: gate-7 pre-send fact check of outreach/soas-paget-ppms4-enquiry.md (CLAUDE.md Outreach gate 7, outreach/README.md
 rule 1a voice). You are not the drafter. Read the draft against every file and source it cites, try to falsify each factual sentence
 (counts, dates, shelfmarks, names, what was and was not checked, the recipient address on SOAS's own contact page), fix what is wrong,
 and write the `checked:` header line naming what you corrected. Do not send anything; the owner sends. Report: corrections, three lines.
 
-## JOB SUP-ELECTION (account 1; Opus 5.5; cap USD 3; box 30 minutes; hosts: openapi.bnf.fr (1 region request); Price: vision calls: 2 x USD 0.5 + 0 reconciliation = 1.0)
+## JOB SUP-ELECTION (account 2; Opus 5.5; cap USD 3; box 30 minutes; hosts: openapi.bnf.fr (1 region request); Price: vision calls: 2 x USD 0.5 + 0 reconciliation = 1.0)
 ciphers/fr5761-election-1519: step (1) of its next step only: a native-resolution crop of f.116r l.29 (1 request) and a forced-choice
 third blind reader on it against the f.84r Lbar and the l.11 4 exemplars; apply the answer as its NOTES rule says. Step (2) (Lisch) is
 not in this job. Report: the reader's choice with confidence, grade change if any, three lines.
 
-## JOB SUP-MONLUC (account 1; Opus 5.5; cap USD 5; box 50 minutes; hosts: gallica.bnf.fr IIIF only if a crop is missing on disk; Price: vision calls: 3 x USD 0.5 + 1 reconciliation = 2.0)
+## JOB SUP-MONLUC (account 2; Opus 5.5; cap USD 5; box 50 minutes; hosts: gallica.bnf.fr IIIF only if a crop is missing on disk; Price: vision calls: 3 x USD 0.5 + 1 reconciliation = 2.0)
 ciphers/fr4735-monluc-lansac-poland-1573: (a) the eye look at the 7 split/low-confidence K04 tiles (~$1), then (b) c268 L26-L30 (~$3.5)
 as NOTES.md "## Escalation" names it, then the K14 split and K34/K62/K40 `decode_key.py --try` re-runs only if (b) gives them input.
 Stop before (b) if (a) spends more than 40% of the cap. Report: tiles settled, lines read, codes moved and their grades, five lines.
