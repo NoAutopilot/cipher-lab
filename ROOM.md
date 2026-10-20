@@ -18098,3 +18098,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-20 19:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 19:39 UTC 20 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 20:20 UTC 20 Oct
 2026-10-20 20:08 | account-4 parent | check-in 121 (20:0x UTC 20 Oct): MONL-KING2 gate PASS on f.133 L01-L10 (run 40 vs shuffled p95 31) but no S (bar 42), fragments only. MONL-KING3 queued for account 2: L11-L25, same registered gate and S bar.
 2026-10-20 20:11 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 20:11 UTC: spawned 1 (MONL-KING3 session_01UTQga2hxCFuXn9B3AETcUF), queued left 0
+2026-10-20 20:14 | MONL-KING3 (acct2 for acct4 parent): fr4735-monluc-lansac-poland-1573 | claim: f.133 (c258) L11-L25 extension of MONL-KING2, same registered gate and S bar; box ends 21:44 UTC 20 Oct; session_01UTQga2hxCFuXn9B3AETcUF
