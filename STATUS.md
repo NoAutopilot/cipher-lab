@@ -173,6 +173,12 @@ The productive pattern is clear-copy alignment with the clear text on disk; MONL
 account 2. SORTER-RERENDER (USD 6.09): the 4 account-4 sorters fixed; 9 account-3 sorters stay on the old template and are marked do-not-
 sort in ASKS. Vivonne re-sort not yet landed. Gallica still refuses.
 
+Check-in 113 (20 Oct 2026, 06:2x UTC). MONL-C268C (account 2): c268 ends at L30, so the L31-L35 chunk my brief named does not exist
+(the brief's own step 1 caught it; my error was to brief a chunk without checking the leaf length); c268 unchanged at C 511; the K12|K22
+blind sort failed its gate twice, logged untested-by-this-tool. The useful finding: about 41 clear lines (f.140r L27 to f.141r L11) have no
+cipher on c268, so their cipher, if any, is on another leaf. MONL-LEAF (account 2, cap 4) checks c258/c262/c264 with a 1-line decode
+against a shuffled-placement control and stops at the identification. Vivonne re-sort not landed.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
