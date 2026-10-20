@@ -18071,3 +18071,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-20 15:36 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 15:34 UTC 20 Oct: spawned 0 -- no queued account-4 rows
 2026-10-20 15:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 15:39 UTC 20 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 20:20 UTC 20 Oct
 2026-10-20 15:56 | account-4 parent | check-in 119 (15:5x UTC 20 Oct): MONL-CENSUS -- only the king letter (ff.132-136, 28 Apr 1573) and f.210 lack a found decipherment. MONL-KING queued for account 2: decipherment/print search first; decode f.133 L01-L10 with the verified key only if none, gated vs shuffled key and the f.138 positive control.
+2026-10-20 16:15 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 16:15 UTC: spawned 1 (MONL-KING session_01G1m42zJuvKNKx4FcQnWuPw), queued left 0
