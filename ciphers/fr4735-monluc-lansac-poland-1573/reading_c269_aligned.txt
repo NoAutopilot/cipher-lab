@@ -1,0 +1,12 @@
+# c269 (f.138v, the verso of c268) cipher lines 1-10 (MONL-C269A two blind passes + reconciliation, c269/c269_reconciled.tsv), decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py (MONL-C269A, 20 Oct 2026).
+# Grades: C = table letter equals the clear letter of ff.140r-141r (clear_f140.tsv) it faces in c269/align_c269.py (aligned after c268's end); M otherwise (conf M token, contradiction, or facing an unsure clear word); U unkeyed sign. C 120, M 167, U 23
+L01	a d p t r a d t e [W:Sepbre] l e [?double_slash] o d t a d t d u i o u r [?x[faded_end]]
+L02	p a l b a s a d e u r s l u y a u r o d t h r e p a d u e
+L03	[?h_bar] o u r o n e c l p e r a [?x[9_with_oblique_stroke_through_stem]] d e a d a d p q u i e t [?double_slash] e p u e [?x[small_box_sign_at_margin]]
+L04	y o d l e u r a u o d p [W:Mare] a [?double_slash] o r d [?x[looped_Q_with_flat_base]] u o m e [?double_slash] h o p e
+L05	q u i [?x[dot]] e s t o i t d e [?h_bar] e s a i r e l e d t r e q u i p e c l e s u
+L06	p q u o d d e l u p p r e p [?h_bar] r i r a p a p l e u e m p [?x[looped_n]] e q u i
+L07	s e d p u i s e b i e d d i s p a d [?double_slash] e r p o u r u e q q u e
+L08	l e d i t t e r m e i l p o i t e d [?h_bar] h e m i d p o i t p a r m e
+L09	p a r t e r e i e u o p u d e g r a d d e d i [?x[z_with_crossbar]] i [?double_slash] u l t e p o
+L10	l r g e d t q u i l f a u d r a q u i l r e [?double_slash] o [?h_bar] r e [?h_bar] a r [W:my]

@@ -33,4 +33,9 @@ align_c268 FILLS rules; M otherwise; U unkeyed with no fill), c269 folded into d
 target token counts before/after (C/M/U). No key.tsv edit; no c268 token relabelled.
 
 ## Decision
-(to be appended after the run)
+(appended after the run, 20 Oct 2026; the gate and decision rule above were pushed at d8b8c1d1f before any c269 fetch)
+Belief: c269 (f.138v) is the cipher of the clear text after c268's end (f.140r L26 "...entendans que l")
+Would change it: c269 L01-L10 at or below the placed-shuffled-window p95, any of 200 draws at or above it, or the whole-letter span not starting at f.140r L26-L27
+Observed: calibration power PASS (c268 L21-L30 0.650 vs p95 0.417, 0/200), wrong window FAIL (c268 L01-L10 0.384 vs p95 0.402, 53/200); pass agreement 252/317 = 0.795; c269 L01-L10 0.509 vs p95 0.422 (mean 0.394, max 0.453, 0/200), span f.140r L26 - f.140v L03, f.139 0.373; L01-L05 0.533 vs p95 0.475 (0/200), L06-L10 0.507 vs p95 0.427 (0/200)
+Decision: continue -- gate met; c269 L01-L10 graded and folded into decode.json (job c269); next: c269 L11-L33 in five-line bands
+Lesson: c269 L01 (with W:Sepbre) aligns mostly as contradictions and, unrestricted, over clear letters c268 already covers; grade a continuation leaf against the clear text after the previous leaf's aligned end

@@ -102,6 +102,58 @@
      "grade"
     ]
    ]
+  },
+  {
+   "ciphertext": "ciphertext_c269.tsv",
+   "format": "tsv",
+   "key": "key.tsv",
+   "reading": "reading_c269_aligned.txt",
+   "tokens": "reading_tokens_c269.tsv",
+   "style": "spaced",
+   "uncertain_conf": [
+    "M"
+   ],
+   "unknown_values": [],
+   "unkeyed_value": "?",
+   "m_words": [
+    "uncertain",
+    "faint",
+    "meaning uncertain",
+    "attested"
+   ],
+   "votes": {
+    "file": "votes_c269.tsv",
+    "value_column": "value"
+   },
+   "voted_grade": "C",
+   "disagree_grade": "M",
+   "unvoted_grade": "M",
+   "header": [
+    "# c269 (f.138v, the verso of c268) cipher lines 1-10 (MONL-C269A two blind passes + reconciliation, c269/c269_reconciled.tsv), decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py (MONL-C269A, 20 Oct 2026).",
+    "# Grades: C = table letter equals the clear letter of ff.140r-141r (clear_f140.tsv) it faces in c269/align_c269.py (aligned after c268's end); M otherwise (conf M token, contradiction, or facing an unsure clear word); U unkeyed sign. {grades_sorted}"
+   ],
+   "token_columns": [
+    [
+     "line",
+     "line"
+    ],
+    [
+     "pos",
+     "pos"
+    ],
+    [
+     "sign",
+     "raw"
+    ],
+    [
+     "value",
+     "value"
+    ],
+    [
+     "grade",
+     "grade"
+    ]
+   ]
   }
  ]
 }
