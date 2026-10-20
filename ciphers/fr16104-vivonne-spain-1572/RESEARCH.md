@@ -296,3 +296,28 @@ Two instruments remain for the split: (1) the owner's blind sort of the 36 ink-4
 when it lands; (2) a machine sort-into-shapes of the same tiles (unsupervised, no contrast needed), compared to truth the same way --
 the next machine design, not briefed until (1) has landed so the two can be compared on identical tiles. Nothing else is spawned on
 this target until then; decode-side work stays stopped (6c).
+
+### 6e. After VIV-MSORT (20 Oct 2026, 02:0x UTC; worker VIV-MSORT)
+Instrument (2) of 6d ran ahead of the owner's sort (ASKS 173 open three days; scoring the machine sort does not touch the blind page).
+PREREG-VIV-MSORT.md (a44a28135) before any run; sort frozen in tx/ksplit/msort_frozen.tsv (10a3c288e) before truth was read;
+tx/ksplit/msort.py --score -> tx/ksplit/msort.json. Image features only (Otsu ink crop, 32x32, blur), average-linkage cosine, k=2.
+- Positive control, all 36 tiles vs the c/2 label: ARI 0.356 (purity 0.806) vs label-shuffle p95 0.051 and random-feature p95 0.051:
+  PASS -- the features see shape at N=36.
+- Power at the target's N (15 tiles, 12+3, 20 draws): 4/20 pass (20%), under the registered 50%.
+- Tray A (label c, 15 tiles; truth 12 p, 2 q, 1 e): the sort split off one p tile (14/1); ARI -0.089, purity 0.800, vs n1 p95 -0.089
+  and n2 p95 0.278: FAIL. The e and q tiles sat with the 11 other p's.
+- Tray B (label 2, 21 m): one truth class, not testable (split 19/2).
+Decision (registered): **non-test at N=15** -- logged "untestable by this instrument at N=15" for label c's split, not a negative.
+Whether label c splits into p vs e/q is still open.
+
+Six questions. (1) Learned: a simple shape sort separates the two labels at 36 tiles but has 20% power at 15 tiles with a 3-tile
+minority, so the ink-40 packet alone cannot settle the split by machine. (2) Assumptions: the tile boxes are whole signs (eye-checked
+in VIV-KSPLIT); truth.tsv's clerk letters are right; the c/2 label difference is a fair positive control (it is a two-letter shape
+difference of the same kind). (3) Unverified: whether p vs e/q under label c differ in shape at all, or only in the clerk's reading;
+whether 32x32 blurred ink is the right feature for a small diacritic-sized difference. (4) Alternatives: the e/q tiles are p-shaped
+(the clerk read them by context, i.e. label c is one sign), or they differ by a detail this feature smooths out -- the run cannot tell
+these apart. (5) Most informative different experiment: more contrast material, not another feature -- the 44 contrast tiles among the
+120 uncropped ink-67/70 packet rows (6d ranked (a)) would lift the minority from 3 to about 15 and the power figure with it; the
+owner's sort of the same 36 tiles remains the only human instrument. (6) Decision: **acquire** (commit the 67/70 crops and re-tile,
+then re-run msort.py unchanged on the larger set with the same PREREG gates); do not tune the feature on these 15 tiles (rule 3's
+third-attempt clause).

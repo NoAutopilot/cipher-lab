@@ -1,0 +1,61 @@
+{
+ "A": {
+  "ari": -0.0891,
+  "purity": 0.8,
+  "n1_p95": -0.0891,
+  "n2_p95": 0.2775,
+  "pass_": false,
+  "sizes": [
+   1,
+   14
+  ],
+  "table": {
+   "0": [
+    "e",
+    "p",
+    "p",
+    "p",
+    "p",
+    "p",
+    "p",
+    "p",
+    "p",
+    "p",
+    "p",
+    "p",
+    "q",
+    "q"
+   ],
+   "1": [
+    "p"
+   ]
+  }
+ },
+ "B": {
+  "truth": [
+   "m"
+  ],
+  "sizes": [
+   2,
+   19
+  ],
+  "verdict": "not machine-testable at this material (one truth class)"
+ },
+ "P": {
+  "ari": 0.3556,
+  "purity": 0.8056,
+  "n1_p95": 0.0508,
+  "n2_p95": 0.0508,
+  "pass_": true,
+  "sizes": [
+   12,
+   24
+  ]
+ },
+ "power": {
+  "passed": 4,
+  "draws": 20,
+  "share": 0.2
+ },
+ "decision": "non-test at N=15 (positive control or power below gate)"
+}
