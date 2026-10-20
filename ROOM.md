@@ -18063,3 +18063,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-20 14:22 | standby (owner account) | alive; holder account 4, last line 14:11 UTC 20 Oct (check-in 118, signed 'account-4 parent', 11 min old), not a HANDOFF; newest '| orchestrator (' line 14:22; no takeover. usage: five_hour allowed by get_session, resets 15:20 UTC 20 Oct
 2026-10-20 14:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 14:34 UTC 20 Oct: spawned 0 -- no queued account-4 rows
 2026-10-20 14:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 14:39 UTC 20 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 15:20 UTC 20 Oct
+2026-10-20 15:15 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 15:15 UTC: spawned 1 (MONL-CENSUS session_01CdP2tfnhNqP48K34XcR3kv), queued left 0
