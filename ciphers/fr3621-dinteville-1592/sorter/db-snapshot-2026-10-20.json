@@ -1,0 +1,9 @@
+{
+  "artifact_url": "https://claude.ai/artifact/JXsSNDyRLhZT8AGoCMHmyD",
+  "snapshot_time_utc": "2026-10-20T03:55:00Z",
+  "taken_by": "SORTER-RERENDER (account 4)",
+  "reason": "pre-republish snapshot before re-rendering on the fixed save template (2026-10-20.1)",
+  "collections_checked": ["piles", "moves", "newpiles", "clusters", "checked", "recuts", "added"],
+  "docs_found": {},
+  "note": "no documents matched in any collection -- nobody has sorted this page yet, so there is nothing to preserve (this is the rebuilt Dinteville page, JXsSNDyRLhZT8AGoCMHmyD, distinct from the retired RxURcDEas5VU11B95kVoJo)"
+}
