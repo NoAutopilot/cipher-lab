@@ -18110,3 +18110,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-20 21:38 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 21:34 UTC 20 Oct: spawned 0 -- no queued account-4 rows
 2026-10-20 21:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 21:39 UTC 20 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 01:20 UTC 21 Oct
 2026-10-20 22:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 22:10 UTC: spawned 0 (), queued left 0
+2026-10-20 22:14 | account-4 parent | check-in 122 (22:1x UTC 20 Oct): MONL-KING3 band gate FAIL (under the clean f.138 range; beats shuffled keys), S 0. MONL-KING4 queued for account 2: one look-alike pass (TRANSCRIPTION.md), then continue or park as D1, registered before the pass.
