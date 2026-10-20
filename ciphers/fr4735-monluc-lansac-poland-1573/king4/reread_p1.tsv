@@ -1,0 +1,43 @@
+passage	pos	label	conf	second	note
+L01	1	W:molino	L	W:molina	final letter an open c-like bowl with a long flourish, no closed bowl with stem
+L01	6	K59	M	K61	tall stacked squiggle like a 3 with hooked top, no c-bowl
+L01	8	?x[vertical_stroke]	M	?x[short_vertical_stroke]	thin straight vertical stroke after the heavy long-s, roughly ascender height
+L01	9	K68	M	K37	tall ascender with loop/bowl on right, h-like, no K arms
+L01	18	K11	M	K62	cross with loop on top and a second lower bar
+L01	25	K39	L	K19	y-like forked top with long descender curling left
+L01	34	K39	M	K19	y-like forked top with curving descender, before theta
+L02	13	K04	M	K01	9-shape, round bowl with straight descender, no flat hooked foot
+L02	27	K04	M	K01	first of two 9-shapes, bowl and nearly straight descender
+L02	30	?x[short_vertical_stroke]	M	?x[vertical_stroke]	short vertical stroke inside the sweep of the preceding C
+L02	31	K64	H	?x[vertical_stroke]	small c with a dot above
+L02	32	K39	M	K38	y-like forked top with descender, no enclosing C
+L02	34	K59	M	K61	tall stacked squiggle (3-like) after long-s
+L02	43	?x[A-like_sign_at_edge]	M	K66	A-like sign cut at the gutter, pointed top
+L03	1	?x[C_with_horizontal_bar]	M	K52	small c under a long horizontal top bar with left curl, no legs
+L03	7	K39	L	K19	y-like top with zig-zag descender
+L03	14	K36	H	K14	tall stem with diamond at foot
+L03	25	K39	M	K19	y-like forked top with long curving descender
+L03	34	?x[vertical_stroke]	M	?x[short_vertical_stroke]	straight stroke reaching below baseline, longer than x-height
+L03	36	?x[looped_l]	M	?x[small_i-stroke]	looped l-like stroke between c and r
+L04	6	?x[vertical_stroke]	H	?x[short_vertical_stroke]	tall straight vertical stroke after K
+L04	19	K01	H	K04	g with closed bowl and tail curling left into a flat hook
+L04	26	K39	M	K19	y-like forked top with z-bent descender
+L04	32	K39	M	K19	y-like forked top with z-bent descender, after c
+L04	33	K59	M	K61	tall stacked squiggle, 3-like, no c-bowl
+L04	35	?x[L-shaped_stroke]	M	?x[L-shaped_bracket]	vertical stroke turning into horizontal foot, L-shape
+L04	38	K49	M	K36	small bowl at bottom with large looping ascender curving back, no diamond
+L05	1	K64	M	K15	c with a vertical tick/dot above
+L05	2	K61	M	K38	c-like stroke with curl on top, no enclosing large C
+L05	10	?x[vertical_stroke]	M	?x[short_vertical_stroke]	thin long vertical stroke between r and alpha
+L05	39	K66	L	?x[A-like_sign_at_edge]	rounded cursive a-like sign, cut at gutter after long-s
+L06	3	K15	M	K61	plain c, no dot, no top curl
+L06	5	K61	M	K38	c with curl on top, small, before alpha
+L06	26	K10	M	K11	plain double-barred cross, no loop or colon
+L07	3	K38	H	K61	large C with inner zig stroke
+L07	4	K10	M	K11	heavy double-barred cross, no top loop
+L07	22	K04	L	K12	9-shape with mostly straight descender, slight left curl at foot
+L07	26	K38	H	K61	large C with inner zig stroke
+L07	29	K10	M	K11	double-barred cross, no loop
+L07	31	K04	M	K12	9-shape with straight descender, unlike the curled-tail g before it
+L07	35	K62	L	K58	faint cross with loop at top, near gutter
+L08	3	K38	H	K61	large C with inner zig stroke after K

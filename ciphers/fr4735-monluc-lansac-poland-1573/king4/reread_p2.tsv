@@ -1,0 +1,43 @@
+passage	pos	label	conf	second	note
+L08	9	K12	M	K04	9-shape with curved descender before //, no clear dot to its left
+L08	20	K12	M	K04	9-shape after x, no dot visible to its left
+L09	2	K15	M	K64	plain open c with no hook or dot above
+L09	4	K61	M	K38	small c with hooked stroke attached at top right; not a large C with an inner stroke
+L09	7	K21	M	K09	theta with crossbar running out past the right side
+L09	10	W:8ep:bre	L	W:8cipbre	8, small letter, p, colon, superscript bre
+L09	13	K62	M	K11	vertical with loop at top and crossbar, no colon dots to its left
+L09	15	K38	M	K61	large C enclosing a z-like stroke, with a theta raised at its right
+L09	26	K61	M	K38	small c with hooked stroke at top, after omega
+L09	30	K36	M	K14	tall stem with diamond at its foot
+L09	31	K49	L	K27	short stroke then a delta-like S loop, not an 8
+L09	32	K34	M	K14	tall looped beta-like sign before g
+L10	1	K38	M	K61	large looped C enclosing z-like stroke
+L10	8	K20	M	K16	double-cross # after theta
+L10	11	K38	M	K61	large C enclosing z-like stroke after the long s
+L10	19	K15	M	K61	first plain c after pi, no hook
+L10	21	K61	M	K38	c with hook at top, third in the c-c-hook run, before x
+L10	27	K38	M	K61	large C enclosing z-like stroke after the 3-like sign
+L11	1	K24	L	K49	tall thick descender with loop at top; sign hard to separate from line start
+L11	13	K21	M	K09	theta with long crossbar running out right into x
+L11	17	K33	L	K48	m-like strokes after long s, no clear curl on first stroke
+L12	2	K38	M	K07	large C enclosing z-like stroke after the 3-like sign
+L12	7	?x[vertical_stroke]	M	?x[short_vertical_stroke]	long slanted stroke descending below the line before the 5-like sign
+L12	8	K24	M	K19	5-shape with a flat top bar
+L13	10	K49	M	K14	bowl at the bottom with a tall ascender arching over to the left
+L13	25	K49	M	K14	bowl with a tall arched ascender hooking left
+L13	32	K49	M	K14	bowl with a tall arched ascender, before Mari
+L13	33	W:Mari	M	W:Marie	Mari then a tail flourish, no distinct e
+L14	1	K49	M	K14	large arched-ascender bowl at line start
+L14	9	K14	M	K49	small b with short straight ascender
+L14	10	K49	M	K14	tall arched-ascender bowl after the small b
+L14	13	?x[short_vertical_stroke]	H	?x[vertical_stroke]	short stroke of x-height only between g and q
+L14	23	K12	M	K04	9 between theta and 8, no dot to its left
+L14	26	?x[looped_C_with_o_superscript_bre]	M	W:o^bre	looped C with long diagonal, then o, dot, superscript bre
+L14	31	K49	M	K14	arched-ascender bowl after x at line end
+L14	32	K07	L	K38	small 2-like sign in margin at the right edge
+L14	33	K05	L	K14	small x/r-like sign at the right margin
+L15	8	W:Mari	L	W:Marie	Mari with a curled ending that may be an e
+L15	13	K49	M	K14	bowl with tall arched ascender after 9
+L15	19	K61	M	K15	c with hook on top after 9, before //
+L16	10	K36	M	K49	stem with diamond foot after x, before g q
+L16	35	K21	L	K09	small theta slanted with stroke out right, before the stem-diamond
