@@ -1,0 +1,15 @@
+# SHERWOOD-CELLS, 20 Oct 2026. Blind Opus passes A and B over cells/crops (crop + line numbers only, no cipher, no sketch); agree on all 58 lines.
+# Lines of p165c1 are as the readers counted visible printed lines down the band (the band starts at the grid's phantom gap row 11).
+crop	lines	passA=passB (top to bottom)
+p360c1	31-35	Tamkin, Tamper, Tan, Tang, Tangent
+p360c2	31-35	Tarriance, Tarrier, Tarry, Tarsel, Tart
+p165c1	11-15	H. (heading), Ha (interj., drop cap), Habeas-corpus, Haberdasher, [cut fragment]
+p165c2	11-15	Hailshot, Hailstone, Haily, Hair, Hairbrained
+p53c1	33-37	Ceremony, Certain, Certainly (Certes), Certainly (Certitude), Certificate
+p53c2	33-37	Chalk s., Chalk v., Chalkcutter, Chalkpit, Chalky
+p412c1	31-37	+wrap, Wheel v., Wheelbarrow, Wheeler, Wheely, Wheeze, Whelk
+p412c2	31-37	Whey, Wheyey, Which, Whichsoever, Whiff, Whiffle, Whiffler
+p225c1	15-21	Memorize, Memory, Men, Menace, Menacer, Menage, Mend
+p225c2	15-21	Merchantman, Merciful, Mercifully, Mercifulness, Merciless, Mercilessly, Mercurial
+# Forced choice (cells/cipher, cells/crop_cipher.py, one call each): p346_L09 last group 412-3? -> 33 (moderate; heavier ink, maybe retouched);
+# p345_L10 first group 225-1? -> 17 (high; same 7 as in 247-14 and 1783 below).

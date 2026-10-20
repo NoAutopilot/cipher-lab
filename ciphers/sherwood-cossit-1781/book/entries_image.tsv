@@ -171,3 +171,12 @@ page	W	col1	col2
 215	32	Love	Lowing
 148	22	Formidably	Forward
 13	13	Alway	Ambulation
+# SHERWOOD-CELLS, 20 Oct 2026: five cells read blind by two Opus passes from line-band crops (cells/crop_cmds.sh, centres from this
+# grid); the two passes agree on all 58 band lines. 165-13 c1: the grid counts the blank above the centred "H." heading as a line;
+# on the printed count (heading counted, the 153 c2 rule) line 13 is Habeas-corpus (HA interj. is 12; Haberdasher if the heading
+# is not counted). The grid's OCR-only "interj" cell is superseded. 412-33 and 225-17 above re-read the same (Wheelbarrow/Which, Men/Mercifully).
+360	33	Tan	Tarry
+165	13	Habeas-corpus	Haily
+53	35	Certainly	Chalkcutter
+412	35	Wheely	Whiff
+225	19	Menacer	Merciless

@@ -750,3 +750,51 @@ Research-director questions.
    doubted S rows' alternative cells (412-35, 225-19), about $1; then a page/line-offset test on the 30 unchanged both-unseen rows.
 6. Decision: pivot. The digit re-read is spent on these rows (one pass at this resolution); next is the Entick-side image read above, then
    the offset/slip hypothesis for the remaining 30.
+
+## Cell check (SHERWOOD-CELLS, 20 Oct 2026)
+
+Worker SHERWOOD-CELLS (account 4, Opus). A correctness check on the counted reading after SHERWOOD-REREAD, not a depth push.
+Five Entick 1781 pages fetched once (archive.org 11280377bsb jp2, leaves 84, 196, 256, 391, 443; `cells/pages/`, not committed,
+5 requests). Line-band crops of both columns were cut with `tools/iiif_lines.py --image ... --centres <grid y>` (commands in
+`cells/crop_cmds.sh`), so the bands follow the decode_entick grid (book/entick_lines.tsv, head-guarded). Two blind Opus passes read the
+ten bands from crops and line numbers only. They agree on all 58 lines (`cells/reads.tsv`). For each doubted S group there was one
+taller cipher crop (`cells/crop_cipher.py`, the mrows/crop_slips.py way) and one blind forced-choice read. 4 vision calls, no
+reconciliation needed.
+
+- **Entick cells (col 1 / col 2):** 360-33 Tan / Tarry; 165-13 Habeas-corpus / Haily; 53-35 Certainly / Chalkcutter; 412-35 Wheely /
+  Whiff; 225-19 Menacer / Merciless. 412-33 (Wheelbarrow / Which) and 225-17 (Men / Mercifully) read the same as on file. Written to
+  book/entries_image.tsv.
+- **Grid fault found, p.165 col 1:** the grid counts the blank space above the centred "H." heading as a line, so its line 13 was
+  "HA, interj." (the OCR fragment "interj"). On the printed count (Gyve 10, H. 11, HA 12) line 13 is Habeas-corpus, which follows the
+  153 c2 rule that a heading counts as a line. If the heading is not counted, line 13 is Haberdasher. The image read overrides the grid
+  cell, so entick_lines.tsv was not edited. p.412 col 2's blank grid rows (20, 29, 30) are OCR misses on continuous print, not gaps;
+  that was checked on the image.
+- **Doubted S groups:** p346_L09 412-3? read **33** (moderate: "heavier ink, may be retouched"; no 5 on the line to compare);
+  p345_L10 225-1? read **17** (high: same 7 as in 247-14 and in 1783 on the line below). Both forced choices keep ciphertext.tsv as it
+  stands. Neither S row changes, and neither drops from S.
+- **Re-decode (decode_entick.py, chooser unchanged):** 360-33 Tan M -> S. 53-35 Chalkcutter (col 2, M) -> Certainly (col 1, S); No.4
+  now ends "500 Men Only 23-4-1 Certainly February". 165-13 interj -> Habeas-corpus, which stays M. Grades before: H 8, C 4, S 145,
+  M 57, I 2; H/C/S = 157/216 = 72.7%. After: H 8, C 4, S 147, M 55, I 2; H/C/S = 159/216 = **73.6%**. Both new S rows rest on a digit
+  correction (SHERWOOD-REREAD) read by the same model family, so they are flagged for a verifier. `decode_entick.py --check`: reading
+  current.
+- **Stale judge input found:** controls/reading_image.txt had not been regenerated after SHERWOOD-REREAD. It still read "threepiled",
+  so the 20 Oct judge line in "## Digit re-read" was scored on the pre-correction text. It has now been regenerated with
+  `decode_entick.py --controls`. Judge (rule 7), `python3 tools/judge_plaintext.py specs/sherwood-cossit-1781.json --file
+  ciphers/sherwood-cossit-1781/controls/reading_image.txt`:
+  `FAIL language: score=-0.999, null_p99=-2.19, real_p05=-0.821, real_median=-0.736, mode=both, N=1188` / `ok words: cover=0.943,
+  min=0.6, real_text_median_cover=0.975` / `FAIL`. The en corpus is of unknown reliability (EN-FOLDS).
+
+Research-director questions.
+1. Learned: the three image-confirmed digit corrections now have image-read cells. Two of them (Tan, Certainly) read in context and
+   grade S by rule. Both S known answers the blind passes doubted hold on a forced-choice read, so the earlier 412-35 and 225-19 misses
+   were reader errors, not transcription errors. One grid fault (heading gap, p.165 c1) was found and bypassed.
+2. Assumptions: the grid line count is right on the other cited columns (checked only where blank grid rows appeared). The section
+   heading counts as a line (the 153 c2 rule, still untested by an anchor). The forced-choice reader is unbiased between the two shapes.
+3. Unverified: whether Habeas-corpus (or Haberdasher) at 165-13 fits its context; the heading rule itself; and whether other columns
+   with a section heading or a blank before it carry the same phantom-line fault in the grid.
+4. Alternatives: 412-33's digit looks retouched (heavier ink), so the writer may have corrected a 5 to a 3. The reading Which keeps
+   the corrected value. The two M -> S moves may reflect bigram agreement only, not the intended words.
+5. Most informative next experiment: scan entick_lines.tsv for every column whose grid has a run of blank rows directly above a
+   centred section heading, and re-count the cited cells in those columns from the image. This is a script plus about one vision call
+   per hit, and it could change cells that are counted S today. Then the offset/slip test on the 30 unchanged both-unseen M rows.
+6. Decision: continue. The reading stands at 73.6% H/C/S with no S row dropped; next is the heading-gap scan above.

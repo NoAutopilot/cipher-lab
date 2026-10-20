@@ -1,0 +1,32 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "p165c1_l11-15_L01.jpg",
+   "source_url": "",
+   "source_file": "p165.png",
+   "box": [
+    0,
+    411,
+    662,
+    571
+   ],
+   "lines_in_crop": 5,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     17,
+     49,
+     81,
+     113,
+     145
+    ]
+   },
+   "date": "20 Oct 2026"
+  }
+ ]
+}
