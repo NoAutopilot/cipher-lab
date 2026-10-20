@@ -190,6 +190,11 @@ it should. Graded as c268's continuation: Monluc C tokens 594 -> 714 (+120); key
 directive: the Monluc chain (SUP-MONLUC, MONL-C268C, MONL-LEAF, MONL-C269A) +205 C tokens; Sherwood +3 S pending a verifier; everything
 else nothing. MONL-C269B (L11-L22, cap 8) queued for account 2; L23-L33 after it; then a separate verifier for the target.
 
+Check-in 116 (20 Oct 2026, 10:5x UTC). MONL-C269B read c269 L11-L22 (passes agree 0.816) and placed it at 0.647 vs placed-shuffled p95
+0.425 (0/200), but my brief's span clause (expected start f.140v L03-L04, taken from L10's stretched tail) was wrong by a line, so the
+registered gate failed and nothing was graded (C stays 714). To avoid fitting a rule to seen data, MONL-C269C registers a generic span
+rule first and tests it on the unread L23-L33; only if that passes is the same rule applied to L11-L22. Gallica still down.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
