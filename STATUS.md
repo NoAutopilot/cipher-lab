@@ -222,6 +222,12 @@ gated decode was not run (request cap spent, 5 on malformed URLs). MONL-KING2 (a
 then f.133 L01-L10 vs a shuffled key. My own git fetch at 17:58 failed silently (timeout), so this check-in briefly read a stale
 origin/main; fetch is now run with its output shown.
 
+Check-in 121 (20 Oct 2026, 20:0x UTC). MONL-KING2 (account 2): the f.138 positive control passed, and f.133 L01-L10 of Monluc's
+28 Apr 1573 letter to the king passed its registered gate under Tomokiyo's key (run 40 vs shuffled-key p95 31; language score in the
+known-good range), so the key reads this letter -- but no run cleared the S bar (42 letters), so S 0 / M 356, fragments only
+("la desirons ... auons delibere de"), judge FAIL. This is the first Monluc text where a reading would be new content (no decipherment or
+print found). MONL-KING3 (account 2, cap 9) extends the same instrument to L11-L25.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
