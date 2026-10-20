@@ -1,0 +1,125 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+c258	L01	1	W:molina	W:molino	W:molina	split	split	W:molino,W:molina		K40 K14 K01		
+c258	L01	6	K59	K61	K59	split	split	K61,K59	K14 K01 K04	K26 ?x[vertical_stroke] K68		
+c258	L01	8	?x[vertical_stroke]	?x[vertical_stroke]		single	single	?x[vertical_stroke],?x[short_vertical_stroke],K64	K04 K59 K26	K68 K02 K01		
+c258	L01	9	K68	K68	K37	split	split	K68,K37	K59 K26 ?x[vertical_stroke]	K02 K01 K10		
+c258	L01	18	K11	K62	K11	split	split	K62,K11	K09 K14 K05	K26 K38 K05		
+c258	L01	25	K19	K39	K19	split	split	K39,K19	K32 K04 K33	K40 K01 K29		
+c258	L01	34	K39	K39	K19	split	split	K39,K19	K26 K23 K30	K09		
+c258	L02	13	K01	K04	K01	split	split	K04,K01	K26 K11 K42	K38 ?double_slash K05		
+c258	L02	27	K01	K04	K01	split	split	K04,K01	K05 K14 K36	K04 K38 ?x[short_vertical_stroke]		
+c258	L02	30	?x[short_vertical_stroke]	?x[short_vertical_stroke]		single	single	?x[short_vertical_stroke],?x[vertical_stroke]	K01 K04 K38	K64 K39 K26		
+c258	L02	31	K64	K64	?x[vertical_stroke]	split	split	K64,?x[vertical_stroke]	K04 K38 ?x[short_vertical_stroke]	K39 K26 K59		
+c258	L02	32	K39	K39	K38	split	split	K39,K38	K38 ?x[short_vertical_stroke] K64	K26 K59 K05		
+c258	L02	34	K59	K61	K59	split	split	K61,K59	K64 K39 K26	K05 K36 K05		
+c258	L02	43	K66	?x[A-like_sign_at_edge]	K66	split	split	?x[A-like_sign_at_edge],K66	K07 K04 K33			
+c258	L03	1	K52	K52	?x[C_with_horizontal_bar]	split	split	K52,?x[C_with_horizontal_bar]		K05 K10 K26		
+c258	L03	7	K19	K39	K19	split	split	K39,K19	K26 K40 K11	K04 K14 K36		
+c258	L03	14	K14	K14	K36	split	split	K14,K36	K33 K39 K05	K02 K26 K04		
+c258	L03	25	K19	K39	K19	split	split	K39,K19	K38 K36 K05	K26 K36 K09		
+c258	L03	34	?x[short_vertical_stroke]	?x[short_vertical_stroke]	?x[vertical_stroke]	split	split	?x[short_vertical_stroke],?x[vertical_stroke]	K02 K10 K05	K15 ?x[looped_l] K05		
+c258	L03	36	?x[looped_l]	?x[small_i-stroke]	?x[looped_l]	split	split	?x[small_i-stroke],?x[looped_l]	K05 ?x[short_vertical_stroke] K15	K05		
+c258	L04	6	?x[vertical_stroke]	?x[short_vertical_stroke]	?x[vertical_stroke]	split	split	?x[short_vertical_stroke],?x[vertical_stroke]	K10 K26 K37	K06 K33 K30		
+c258	L04	19	K01	K04	K01	split	split	K04,K01	K26 K04 K06	K04 K14 K05		
+c258	L04	26	K19	K39	K19	split	split	K39,K19	K38 K04 K04	K38 K04 K04		
+c258	L04	32	K19	K39	K19	split	split	K39,K19	K04 K08 K15	K59 K10 ?x[L-shaped_stroke]		
+c258	L04	33	K59	K61	K59	split	split	K61,K59	K08 K15 K19	K10 ?x[L-shaped_stroke] K04		
+c258	L04	35	?x[L-shaped_stroke]	?x[L-shaped_stroke]	?x[L-shaped_bracket]	split	split	?x[L-shaped_stroke],?x[L-shaped_bracket]	K19 K59 K10	K04 K05 K49		
+c258	L04	38	K49	K36	K49	split	split	K36,K49	?x[L-shaped_stroke] K04 K05	K08 K05 K10		
+c258	L05	1	K64	K15	K64	split	split	K15,K64		K61 K29 K01		
+c258	L05	2	K61	K38	K61	split	split	K38,K61	K64	K29 K01 K14		
+c258	L05	10	?x[short_vertical_stroke]	?x[short_vertical_stroke]		single	single	?x[short_vertical_stroke],?x[vertical_stroke]	K36 K30 K05	K42 K04 ?double_slash		
+c258	L05	39	K66	K66		single	single	K66,?x[A-like_sign_at_edge]	K39 K05 K26			
+c258	L06	3	K15	K15		single	single	K15,K64,K61	K21 K26	K15 K61 K42		
+c258	L06	5	K61	K61	K38	split	split	K61,K38	K26 K15 K15	K42 W:Marie K30		
+c258	L06	26	K10	K11	K10	split	split	K11,K10	K14 K04 K26	K19 K02 K05		
+c258	L07	3	K61	K61	K38	split	split	K61,K38	K36 K05	K10 K26 K04		
+c258	L07	4	K10	K11	K10	split	split	K11,K10	K36 K05 K61	K26 K04 K33		
+c258	L07	22	K04	K12	K04	split	split	K12,K04	K36 W:Juno K26	K14 K33 K36		
+c258	L07	26	K38	K61	K38	split	split	K61,K38	K14 K33 K36	K05 K36 K10		
+c258	L07	29	K10	K11	K10	split	split	K11,K10	K38 K05 K36	K12 K04 K33		
+c258	L07	31	K04	K12	K04	split	split	K12,K04	K36 K10 K12	K33 K68 K26		
+c258	L07	35	K62	K58	K62	split	split	K58,K62	K33 K68 K26	K05		
+c258	L08	3	K38	K38		single	single	K38,K61,K39	K26 K37	K12 K10 K33		
+c258	L08	9	K04	K12	K04	split	split	K12,K04	K33 K09 K05	?double_slash K33 K36		
+c258	L08	20	K04	K12	K04	split	split	K12,K04	K26 K19 K05	K42 K02 K33		
+c258	L09	2	K15	K15		single	single	K15,K64,K61	K05	K15 K61 K09		
+c258	L09	4	K61	K61	K38	split	split	K61,K38	K05 K15 K15	K09 K10 K21		
+c258	L09	7	K21	K21	K09	split	split	K21,K09	K61 K09 K10	K12 W:Juillet W:8cipbre		
+c258	L09	10	W:8cipbre	W:8ep:bre	W:8cipbre	split	split	W:8ep:bre,W:8cipbre	K21 K12 W:Juillet	K04 K19 K11		
+c258	L09	13	K11	K62	K11	split	split	K62,K11	W:8cipbre K04 K19	K12 K38 K09		
+c258	L09	15	K38	K61	K38	split	split	K61,K38	K19 K11 K12	K09 K12 K19		
+c258	L09	26	K61	K61	K38	split	split	K61,K38	K05 K14 K41	K14 K33 K09		
+c258	L09	30	K14	K14	K36	split	split	K14,K36	K14 K33 K09	K49 K34 K12		
+c258	L09	31	K49	K49	K27	split	split	K49,K27	K33 K09 K14	K34 K12 K36		
+c258	L09	32	K34	K34	K14	split	split	K34,K14	K09 K14 K49	K12 K36		
+c258	L10	1	K38	K61	K38	split	split	K61,K38		K12 K26 K37		
+c258	L10	8	K20	K16	K20	split	split	K16,K20	?double_slash K36 K09	K66 K26 K38		
+c258	L10	11	K38	K61	K38	split	split	K61,K38	K20 K66 K26	K10 K12 K67		
+c258	L10	19	K15	K15		single	single	K15,K64,K61	K39 K36 K52	K15 K61 K05		
+c258	L10	21	K61	K61	K38	split	split	K61,K38	K52 K15 K15	K05 K10 K26		
+c258	L10	27	K38	K61	K38	split	split	K61,K38	K26 K25 K19	K14 K09 K05		
+c258	L11	1	K49	K24	K49	split	split	K24,K49		K11 K33 K09		
+c258	L11	13	K21	K21	K09	split	split	K21,K09	K15 K39 K05	K05 K12 K26		
+c258	L11	17	K48	K33	K48	split	split	K33,K48	K05 K12 K26	K06 K12 K09		
+c258	L12	2	K38	K07	K38	split	split	K07,K38	K19	K12 K23 K10		
+c258	L12	7	?x[vertical_stroke]		?x[vertical_stroke]	single	single	?x[vertical_stroke],?x[short_vertical_stroke],K64	K23 K10 K05	K19 K12 K36		
+c258	L12	8	K19	K24	K19	split	split	K24,K19	K10 K05 ?x[vertical_stroke]	K12 K36 K04		
+c258	L13	10	K14	K14	K49	split	split	K14,K49	K05 K30 K05	K07 K12 K08		
+c258	L13	25	K14	K14	K49	split	split	K14,K49	K07 K10 K05	K12 K05 K41		
+c258	L13	32	K14	K14	K49	split	split	K14,K49	K09 K36 K05	W:Mari		
+c258	L13	33	W:Mari	W:Mari	W:Marie	split	split	W:Mari,W:Marie	K36 K05 K14			
+c258	L14	1	K14	K14	K49	split	split	K14,K49		K05 K12 ?double_slash		
+c258	L14	9	K14	K14	K49	split	split	K14,K49	K07 K26 K39	K14 K10 K12		
+c258	L14	10	K14	K14	K49	split	split	K14,K49	K26 K39 K14	K10 K12 ?x[short_vertical_stroke]		
+c258	L14	13	?x[short_vertical_stroke]		?x[short_vertical_stroke]	single	single	?x[short_vertical_stroke],?x[vertical_stroke]	K14 K10 K12	K04 K52 K23		
+c258	L14	23	K04	K12	K04	split	split	K12,K04	K10 K33 K09	K27 W:Juing ?x[looped_C_with_o_superscript_bre]		
+c258	L14	26	?x[looped_C_with_o_superscript_bre]	?x[looped_C_with_o_superscript_bre]	W:o^bre	split	split	?x[looped_C_with_o_superscript_bre],W:o^bre	K04 K27 W:Juing	K19 K26 K41		
+c258	L14	31	K49		K49	single	single	K49,K14,K36	K26 K41 K05	K07 K05		
+c258	L14	32	K07		K07	single	single	K07,K38,K02	K41 K05 K49	K05		
+c258	L14	33	K05	K14	K05	split	split	K14,K05	K05 K49 K07			
+c258	L15	8	W:Mari	W:Mari	W:Marie	split	split	W:Mari,W:Marie	K07 K20 K05	K12 K39 K33		
+c258	L15	13	K14	K14	K49	split	split	K14,K49	K39 K33 K12	K26 K39 K23		
+c258	L15	19	K61	K61	K15	split	split	K61,K15	K23 K05 K12	?double_slash K33 K39		
+c258	L16	10	K49	K49	K36	split	split	K49,K36	K14 K14 K05	K01 K04 ?double_slash		
+c258	L16	35	K21	K21	K09	split	split	K21,K09	K37 K10 K01	K36 K26 K41		
+c258	L16	39	K10	K11	K10	split	split	K11,K10	K36 K26 K41	K01		
+c258	L17	21	K21	K21	K09	split	split	K21,K09	K05 K36 K37	K38 K05 K04		
+c258	L17	35	K19	K19	K68	split	split	K19,K68	K41 K39 K05	K38 K01 K32		
+c258	L18	3	K21	K21	K09	split	split	K21,K09	K05 K39	K14 K15 K38		
+c258	L18	8	K14	K14	K34	split	split	K14,K34	K15 K38 K19	K33 K04 K38		
+c258	L18	18	K14	K14	K34	split	split	K14,K34	K04 K05 K40	K33 K39 K36		
+c258	L18	22	K26		K26	single	single	K26,K60	K33 K39 K36	W:Maria K36 K05		
+c258	L19	11	K21	K21	K09	split	split	K21,K09	K05 K34 K39	K14 K38 K36		
+c258	L19	16	K21	K21	K09	split	split	K21,K09	K38 K36 K33	K14 W:Sep.bro K26		
+c258	L19	18	W:Sep.bro	W:Sep	W:Sep.bro	split	split	W:Sep,W:Sep.bro	K33 K21 K14	K26 K04 K06		
+c258	L19	25	K61	K38	K15	split	split	K38,K15	K01 K39 K05	K36 K04 K05		
+c258	L20	26	K21	K21	K09	split	split	K21,K09	K05 K14 K30	K36 K42 ?x[T_with_long_hooked_overbar]		
+c258	L20	29	?x[T_with_long_hooked_overbar]	?x[T_with_long_hooked_overbar]	?x[T_with_long_overbar]	split	split	?x[T_with_long_hooked_overbar],?x[T_with_long_overbar]	K21 K36 K42	K04 K34 K33		
+c258	L20	33	K62	K08	K62	split	split	K08,K62	K04 K34 K33	K01 ?double_slash K05		
+c258	L21	1	K07	K07	K02	split	split	K07,K02		K01 K36 K04		
+c258	L21	2	K01	K01	K12	split	split	K01,K12	K07	K36 K04 K05		
+c258	L21	10	K01	K01	K12	split	split	K01,K12	K25 K05 K36	K26 K37 K05		
+c258	L21	18	K61	?x[small_superscript_mark]	K05	split	split	?x[small_superscript_mark],K05	K26 K05 K04	K06 K36 K01		
+c258	L21	21	K01	K01	K12	split	split	K01,K12	K61 K06 K36	K21 K16 K05		
+c258	L21	34	K01	K01	K12	split	split	K01,K12	K26 K06 K36	K01 K19 K05		
+c258	L21	35	K01	K01	K12	split	split	K01,K12	K06 K36 K01	K19 K05		
+c258	L22	1	K17	K17	K14	split	split	K17,K14		K37 K33 K01		
+c258	L22	4	K01	K01	K15	split	split	K01,K15	K17 K37 K33	K05 K14 K26		
+c258	L22	6	K14	K17	K14	split	split	K17,K14	K33 K01 K05	K26 K37 K14		
+c258	L22	10	K01	K01	K12	split	split	K01,K12	K26 K37 K14	K36 K33 K60		
+c258	L22	13	K60	K60	K26	split	split	K60,K26	K01 K36 K33	K05 K37 W:Juing		
+c258	L22	17	K19	K19	K24	split	split	K19,K24	K05 K37 W:Juing	K05 K30 K42		
+c258	L22	28	K39	K19	K39	split	split	K19,K39	K41 K14 K10			
+c258	L23	22	K01	K01	K12	split	split	K01,K12	W:Juno K14 K30	K21 K05 K11		
+c258	L23	27	K40	K40	K33	split	split	K40,K33	K05 K11 K05	K10 K12 K39		
+c258	L23	30	K39		K39	single	single	K39,K19,K38	K40 K10 K12			
+c258	L24	5	K19	K19	K63	split	split	K19,K63	K26 K40 K39	K12 K21 K15		
+c258	L24	15	K01	K01	K12	split	split	K01,K12	K10 K05 K14	K05 K41 K21		
+c258	L24	16	K05	K03	K05	split	split	K03,K05	K05 K14 K01	K41 K21 K36		
+c258	L24	28	K01	K01	K12	split	split	K01,K12	K26 ?double_slash K41	K19 K05 ?double_slash		
+c258	L24	29	K19	K19	K63	split	split	K19,K63	?double_slash K41 K01	K05 ?double_slash W:hatiue		
+c258	L24	32	W:hatiue	W:satiu	W:hatiue	split	split	W:satiu,W:hatiue	K19 K05 ?double_slash	K29 K05		
+c258	L25	1	K44	K44	K33	split	split	K44,K33		K10 K21 K26		
+c258	L25	27	K17	K17	K14	split	split	K17,K14	K05 K21 K05	K33 K21 K05		
+c258	L25	31	K17	K17	K14	split	split	K17,K14	K33 K21 K05	K21 K59 K41		
