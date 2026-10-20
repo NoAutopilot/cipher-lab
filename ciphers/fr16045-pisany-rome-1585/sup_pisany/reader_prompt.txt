@@ -1,0 +1,15 @@
+You are a blind reader of a 16th-century handwritten cipher (symbols, not ordinary words). Look ONLY at the image files named below with the Read tool; read no other file, run no other command, use no other knowledge of this document.
+
+Directory: /home/user/cipher-lab/ciphers/fr16045-pisany-rome-1585/sup_pisany/crops/
+Files: {R}_pairX_left.png, {R}_pairX_right.png, {R}_pairY_left.png, {R}_pairY_right.png, {R}_pairZ_left.png, {R}_pairZ_right.png, {R}_window.png
+
+Part 1 (pairs X, Y, Z). Each "left" image is the END of a scanned strip of a handwritten line; each "right" image is the START of a scanned strip. Some pairs are two overlapping scans of the SAME line, so the right image begins with exactly the same ink (same pen strokes, same blots, same spacing) that appears at the end of the left image; other pairs come from different lines and share nothing. For each pair answer: SHARED yes/no; if yes, describe the shared run of signs left to right as short shape descriptions (e.g. "q-like with cross below; round o; p with cross; d-like with loop"), and say roughly where it starts in the left image (fraction of width). Judge by identical ink, not by similar-looking letters.
+
+Part 2 (window). {R}_window.png is one continuous stretch of a line. Transcribe its signs left to right as short shape descriptions, numbered, including any slash. Then say: does any group of two or more signs occur twice in a row (immediately repeated)? yes/no, and which.
+
+Reply in this exact form, nothing else:
+PAIR X: SHARED yes|no; run: ...; starts at ~...; confidence high|medium|low
+PAIR Y: ...
+PAIR Z: ...
+WINDOW: 1 ..., 2 ..., ...
+REPEAT: yes|no; ...

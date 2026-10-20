@@ -1,0 +1,9 @@
+{"job": "SUP-PISANY", "date": "2026-10-20", "prereg": "sup_pisany/PREREG-SUP-PISANY.md (commit 8d22753ee, pushed before reader calls)",
+ "geometry": "s1[:,1360:1600] == s2[:,0:240], r = 1.0000 on all nine f.244r lines",
+ "calls": {"R1": {"span": "L06", "GK": "2/2", "target_shared": true, "run": "o, crossed p, d, h", "window_group_once": true},
+           "R2": {"span": "L06", "GK": "2/2", "target_shared": true, "run": "o, crossed p, d, h", "window_group_once": true},
+           "R3": {"span": "L08", "GK": "2/2", "target_shared": true, "run": "tau, varpi, v, a", "window_group_once": true},
+           "R4": {"span": "L08", "GK": "2/2", "target_shared": true, "run": "tau, varpi, v, a", "window_group_once": true}},
+ "spans": {"G-OV6": {"GK": "PASS", "GT": "FAIL (run lacks the q in both calls; q lies left of page x 1360, outside the band)", "GW": "PASS", "gate": "FAIL", "commit": false},
+           "G-OV8": {"GK": "PASS", "GT": "FAIL (run lacks the lambda in both calls; lambda lies right of s2 x 240, outside the band)", "GW": "PASS", "gate": "FAIL", "commit": false}},
+ "note": "GT was mis-specified in the PREREG (it assumed the whole duplicated group sits in the 240 px band); the band holds o-p-d (L06) and tau-varpi-v-a (L08). Not re-gated after seeing the reads (rule 3)."}

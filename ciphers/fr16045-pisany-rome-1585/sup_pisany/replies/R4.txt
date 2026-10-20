@@ -1,0 +1,5 @@
+PAIR X: SHARED yes; run: p-like with cross below; q-like with cross below; u-like with tilde/hook above right; x-like / alpha-like loop; starts at ~0.35; confidence high
+PAIR Y: SHARED yes; run: T-like with flat top; pi-omega (barred w) shape; v-like; round a (faint slash above it in both); starts at ~0.12; confidence high
+PAIR Z: SHARED no; run: none (left ends z/3-like, d with cross stroke, a, y/n-like, slash, q with cross; right begins hook, 2, psi-like with cross, delta, x-like, y, inverted v); starts at ~n/a; confidence medium
+WINDOW: 1 round a, 2 theta-like (o with bar/cross on top), 3 T-like, 4 m-like with tail (long-legged m), 5 y-like, 6 T-like, 7 pi-omega (barred w), 8 v-like, 9 round a, 10 inverted v (lambda-like), 11 q-like with cross below, 12 y-like, 13 delta-like (round with loop up), 14 beta/B-like tall loop, 15 p-like with cross below
+REPEAT: no; no group of two or more signs is immediately repeated (T recurs at 3 and 6, and a at 1 and 9, but not as adjacent repeated groups)

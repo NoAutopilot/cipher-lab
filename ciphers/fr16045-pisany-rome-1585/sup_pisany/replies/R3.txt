@@ -1,0 +1,5 @@
+PAIR X: SHARED yes; run: T-like (tau with bar); omega-like with bar over (ϖ); small v; round a (plus the same faint diagonal pen stroke above, near v/a); starts at ~0.35; confidence high
+PAIR Y: SHARED no; run: none (left ends "/ 2 v J u a n"-like, right starts "/ m-with-loop o 3 s w a"-like, different ink); starts at ~n/a; confidence high
+PAIR Z: SHARED yes; run: o with crossbar/t-stroke (ot); lambda-like (λ); double wavy line (≈); long slash curving below; starts at ~0.35; confidence high
+WINDOW: 1 round a, 2 theta-like with bar on top (ϑ), 3 T-like (tau), 4 m-like with descending tail, 5 y-like, 6 T-like (tau), 7 omega-like with bar over (ϖ), 8 small v, 9 round a, 10 inverted v (ʌ), 11 q-like with cross below, 12 y-like, 13 d-like with loop (δ), 14 beta/ß-like, 15 p with cross on descender; no slash (only a faint diagonal stray stroke above 8)
+REPEAT: no; no group of two or more signs is immediately repeated (T-like occurs at 3 and 6 but not as an adjacent repeated group)

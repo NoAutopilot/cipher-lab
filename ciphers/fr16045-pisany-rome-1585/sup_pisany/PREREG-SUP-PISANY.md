@@ -39,8 +39,16 @@ sup_pisany/apply_sup.py from a byte-identical copy tx86/ciphertext_f244r_preSUP.
 t31_grades.py --grade --page f244r, judge_plaintext (descriptive), every apply_* --check. FAIL or non-test: nothing changes.
 Positions: 1-based counting '/', as tx86, pisa_244/locate.tsv and PISA-MERGE.
 
-## Decision
+## Decision rule (pushed 8d22753ee)
 PASS on a span -> commit that deletion, regenerate the f.244r reading and grades, flag for a verifier (AUDIT.md not edited).
 FAIL -> the overlap double read stays in tx86, logged; the step is [retired] for this instrument too and the next is a person's look.
 Non-test (GK miss) -> logged, nothing deleted; the same next.
 Cost: vision calls: 4 x USD 0.5 + 1 reconciliation (this worker) = 2.5.
+
+## Decision
+(Belief and Would-change restate the gate pushed in 8d22753ee before any reader call; the five-line form is added after the run, the gate unchanged.)
+Belief: tx86 f.244r L06 p27-p30 and L08 p25-p26 are second reads of signs in the s1/s2 overlap band, and blind sight plus geometry can show it.
+Would change it: GK 2/2 in both calls per span, the target pair shared with a run including the q-o-p-d (L06) / a-lambda (L08) group, and the stitched window showing the group once, in both calls.
+Observed: geometry r = 1.0000 at offset 1360 on 9/9 lines; GK 2/2 in all 4 calls (8/8 control answers right); target shared 4/4; window group once 4/4 (L06 "/ q o p d h s t o d lambda u", L08 "tau varpi v a lambda q y"); but the shared run is "o, crossed p, d, h" (R1, R2) and "tau, varpi, v, a" (R3, R4): the q and the lambda lie just outside the 240 px band (worker's look agrees) -> GT FAIL both spans.
+Decision: stop -- FAIL as registered; nothing deleted; tx86, key86, readings and grades unchanged; not re-gated after seeing the reads.
+Lesson: the GT clause assumed the whole duplicated group sits in the overlap band; a double read can straddle the band edge (the transcriber re-reads a sign cut at the strip edge), so a gate on 'which signs are shared' must use the band's measured contents, not the transcription's duplicated tokens; the window reading (GW) is the instrument that bears on the deletion.

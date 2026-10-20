@@ -1,0 +1,5 @@
+PAIR X: SHARED yes; run: round o; p with cross below; d-like with loop (crossed by long diagonal stroke); h-like with tail; starts at ~0.40; confidence high
+PAIR Y: SHARED yes; run: 3-like / z with tail; d-like/long-s with hook; slash; 3-like with long tail curving left; 6; starts at ~0.30; confidence high
+PAIR Z: SHARED no; run: none; starts at ~n/a; confidence high
+WINDOW: 1 x-like / r with loop, 2 double-crossed t (#-like), 3 d-like with loop, 4 6, 5 m, 6 slash, 7 q-like with cross below, 8 round o, 9 p with cross below, 10 d-like with loop (struck by long diagonal stroke), 11 h-like with tail, 12 s, 13 t, 14 round o, 15 d-like with loop, 16 lambda-like, 17 u, 18 dot, 19 A-like (cut at edge)
+REPEAT: no; no group of two or more signs immediately repeated
