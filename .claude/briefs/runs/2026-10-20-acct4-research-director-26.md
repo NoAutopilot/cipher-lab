@@ -5,7 +5,7 @@ figure for yourself, `tools/experiment_log.py --check`, `python3 tools/dup_check
 what was found and where it was not found; no novelty class (rule 10). Pre-register before computing: write
 ciphers/sherwood-cossit-1781/PREREG-SHERWOOD-MROWS.md (hypotheses, statistic, control, gate, Decision block) and push it first.
 
-## JOB SHERWOOD-MROWS (account 4; Opus 5.5; cap USD 7; box 60 minutes; hosts: archive.org (11280377bsb page images only for cells the job needs, at most 30); Price: vision calls: 4 x USD 0.5 + 1 reconciliation = 3.0)
+## JOB SHERWOOD-MROWS (account 4; Opus 5.5; cap USD 7; box 60 minutes; hosts: archive.org (11280377bsb page images only for cells the job needs, at most 30); Price: vision calls: 4 x USD 0.5 + 1 reconciliation = 2.5)
 
 ciphers/sherwood-cossit-1781 is `partial`, N3/D2: 216 rows H 8, C 4, S 145, M 57, I 2 (72.7% H/C/S), the reading from Entick's New Spelling
 Dictionary 1781 by page and printed column line (decode_entick.py; AUDIT.md "Current verdict"). D3 needs 80% H/C/S with the residue
