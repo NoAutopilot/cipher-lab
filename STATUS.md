@@ -195,6 +195,13 @@ Check-in 116 (20 Oct 2026, 10:5x UTC). MONL-C269B read c269 L11-L22 (passes agre
 registered gate failed and nothing was graded (C stays 714). To avoid fitting a rule to seen data, MONL-C269C registers a generic span
 rule first and tests it on the unread L23-L33; only if that passes is the same rule applied to L11-L22. Gallica still down.
 
+Check-in 117 (20 Oct 2026, 12:4x UTC). MONL-C269C: PREREG v3 (26a27ee85) pushed before any L23-L33 read; prospectively, unread
+c269 L23-L33 met the gate (0.482 vs placed-shuffled p95 0.385, 0/200, span delta 0) and the identical rule then passed L11-L22 (0.650
+vs 0.425, delta -1). c269 graded from one joint alignment: Monluc C 714 -> 984 (2133 tokens). Scorecard since the discretion
+directive: the Monluc chain +475 C tokens (511 -> 984 counting c268 and c269), Sherwood +3 S pending a verifier, the rest nothing.
+VERIFY-MONLUC (session_01CzeKNTJv7UYD3DLXkfwRqi, Opus, cap 7) audits rule 7, the gates, contradicting-C positions, novelty and depth;
+nothing goes to status.json before its AUDIT.md.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
