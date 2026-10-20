@@ -32,3 +32,18 @@ otherwise M. Sketch agreement reported afterwards only.
 - Gate fails -> no change; NOTES.md logs the tool as untested at this resolution; the next step names a different instrument.
 - Gate passes, change rate not above control -> no change; digit misreading is not supported by this re-read.
 - Gate passes, change rate clearly above control -> apply confirmed changes, re-decode, report M -> S moves and the new H/C/S share.
+Belief: (the hypothesis as pushed in 250794a73; this line written after the read) a share of the 33 both-unseen M rows are digit misreads.
+Would change it: the gate and acceptance rule above.
+Observed: (20 Oct 2026, appended after the read) known-answer reader error A 4/50 = 8.0%, B 5/50 = 10.0% (gate: not above 10%, PASS at the
+boundary); 2 of each pass's misses are line ends both passes read short (crop edge: p346_L01 final 35, p346_L15 final 15), and 2 are
+agreed reads on S rows (412-33 as 412-35, 225-17 as 225-19), so the known-answer A=B change rate is 2/50 = 4.0%. Targets: A=B != tx on
+4/33 = 12.1% (3.0x control, >= 3 groups: meets the pre-set bar exactly). Reconciliation confirmed 3 (366-33 -> 360-33, 166-13 -> 165-13,
+33-35 -> 53-35), rejected 1 (131-22 kept). Scoring repairs made after the passes came back, before any target was scored: p347 id
+p347_L05 -> p347_L05b; ciphertext g: tokens and trailing '?' parsed; for the two-line crop p346_L15 each reader's own other-line
+reading (from its report) joined in. Re-decode: all 3 new cells are OCR-only (Tan, "interj", Chalkcutter), grade M; 0 rows M -> S;
+H 8 C 4 S 145 M 57 I 2 = 72.7% unchanged; judge FAIL as on file.
+Decision: stop -- apply the 3 confirmed corrections to ciphertext.tsv (transcription corrections from the image, logged in tx2/changes.tsv and
+NOTES.md); no grade moves. The digit-misread hypothesis is supported for at most 3 of 33 rows and does not move depth.
+Lesson: a known-answer set built from S rows still carries the transcription's own errors (2 agreed misses here): read a both-pass
+agreement on a known answer as a lead on the known answer, not only as reader error; and check whether the corrected cell has an image
+read before expecting an S, since an OCR-only cell is M by rule whatever the digits.

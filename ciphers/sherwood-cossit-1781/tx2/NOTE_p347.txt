@@ -1,0 +1,4 @@
+# passB_p347: reader primary row was the upper line (312 by law 215-32-148-22-364-1); its own lower-line reading substituted (L05b = lower line, gloss "them").
+# passA/B_p346 row p346_L15: the crop holds two manuscript lines that ciphertext.tsv keeps as one row; A transcribed the lower and B the
+# upper, each giving the other line in its own report; that reader's own other-line reading is joined in (still blind, no tx shown).
+# p347 rows renamed p347_L05 -> p347_L05b to match ciphertext.tsv's line id.

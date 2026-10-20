@@ -7,7 +7,7 @@ def load_tx():
     for l in open(os.path.join(H, 'ciphertext.tsv')):
         if l.startswith('#') or l.startswith('line\t'): continue
         a, b = l.rstrip('\n').split('\t'); d[a] = b.split()
-    d['p347_L05'] = d['p347_L05b']; return d
+    return d
 def load_pass(p):
     d = {}
     for f in sorted(os.listdir(os.path.join(H, 'tx2'))):
@@ -19,7 +19,6 @@ norm = lambda t: t.rstrip('?')
 def cost(a, b):
     a, b = norm(a), norm(b)
     if a == b: return 0
-    if a.startswith(('w:', 'x:', 'g:')) or b.startswith(('w:', 'x:', 'g:')): return 2
     import difflib
     return 2 * (1 - difflib.SequenceMatcher(None, a, b).ratio())
 def align(ref, hyp):
@@ -36,17 +35,31 @@ def align(ref, hyp):
         else: j -= 1
     return out
 tx = load_tx(); P = {p: load_pass(p) for p in 'AB'}
+def nums(toks):
+    """Flatten a line to its sequence of numbers (chained groups such as 246-35-364 split on '-'); words dropped.
+    Returns the numbers and, per token, the index range of its numbers."""
+    out, spans = [], []
+    for t in toks:
+        if t.startswith('g:'): t = t.split('@', 1)[1]
+        if t.startswith(('w:', 'x:')): spans.append((len(out), len(out))); continue
+        ps = [p for p in norm(t).split('-') if p]; spans.append((len(out), len(out) + len(ps))); out += ps
+    return out, spans
 def lookup(line, group, k):
-    ref = tx[line]; idx = [i for i, t in enumerate(ref) if norm(t) == group][k]
-    return [(align(ref, P[p].get(line, [])) or [None] * len(ref))[idx] if line in P[p] else None for p in 'AB']
+    ref = tx[line]; group = norm(group); idx = [i for i, t in enumerate(ref) if norm(t.split('@')[-1]) == group][k]
+    rn, sp = nums(ref); a, b = sp[idx]; res = []
+    for p in 'AB':
+        if line not in P[p]: res.append(None); continue
+        hn, _ = nums(P[p][line]); al = align(rn, hn)[a:b]
+        res.append(None if any(x is None for x in al) else '-'.join(al))
+    return res
 def score(fn, out):
     rows = list(csv.DictReader(open(os.path.join(H, 'tx2', fn)), delimiter='\t')); seen = {}; res = []
     for r in rows:
         k = seen.get((r['line'], r['group']), 0); seen[(r['line'], r['group'])] = k + 1
         a, b = lookup(r['line'], r['group'], k)
         na, nb = (norm(a) if a else ''), (norm(b) if b else '')
-        res.append((r['line'], r['group'], a or '-', b or '-', int(na != r['group']), int(nb != r['group']),
-                    int(na == nb and na != r['group'] and na != '')))
+        g0 = norm(r['group']); res.append((r['line'], r['group'], a or '-', b or '-', int(na != g0), int(nb != g0),
+                    int(na == nb and na != g0 and na != '')))
     with open(os.path.join(H, 'tx2', out), 'w') as f:
         f.write('line\tgroup\tpassA\tpassB\tA_diff\tB_diff\tagree_change\n')
         for x in res: f.write('\t'.join(map(str, x)) + '\n')

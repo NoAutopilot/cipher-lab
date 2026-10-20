@@ -710,3 +710,43 @@ Research-director questions.
    and 3/5 shapes as a known-answer set from the clear groups), then re-decode; a corrected digit gives an image-backed S/H row, not an I.
 6. Decision: pivot from choosers (retired for these rows: an n-gram chooser on en18) to the cypher image: a blind transcription re-read of
    the both-unseen groups, ~$3.
+
+## Digit re-read (SHERWOOD-REREAD, 20 Oct 2026)
+
+Worker SHERWOOD-REREAD (account 4, Opus), PREREG-SHERWOOD-REREAD.md pushed first (250794a73). Two blind Opus passes of the 22 line crops
+holding the 33 rows that tie at margin 0.00 under both choosers (mrows/mrows.tsv; tx2/targets.tsv). One call per page per pass, 6 calls;
+each reader saw only crops. Then one reconciliation call that showed the crops and two digit strings, no words. Files: tx2/passA_*.tsv,
+tx2/passB_*.tsv, tx2/compare.py (number-level alignment, so chained groups such as 246-35-364 align), tx2/ka_scored.tsv,
+tx2/targets_scored.tsv, tx2/changes.tsv, tx2/NOTE_p347.txt (scoring repairs, listed in the PREREG's Observed line).
+
+- Known-answer gate (50 S groups with bigram margin >= 4 on the same lines): pass A differs on 4 (8.0%), pass B on 5 (10.0%); the gate
+  stops only above 10%, so it passed, at the boundary. Two misses in each pass are line ends both readers read short (crop edge). Two are
+  S groups that both passes read the same way and differently from us: 412-33 read 412-35 (p346_L09) and 225-17 read 225-19 (p345_L10).
+  These are leads on our own transcription, not checked here.
+- Targets: both passes agree with each other and differ from ciphertext.tsv on 4 of 33 groups (12.1%). The known-answer rate is 4.0%, so
+  the targets run at 3.0x it, exactly the pre-set bar. The reconciler confirmed 3 and rejected 1 (131-22 on p345_L02 stays; so the
+  earlier "151-22 = From" lead does not hold on the reconciler's read). Both passes also read 226-30, not 220-30, so the "March" lead is not
+  supported either.
+- **Transcription corrections from the image (not repairs; 20 Oct 2026):** p346_L07 366-33? -> 360-33; p346_L15 166-13? -> 165-13;
+  p345_L10 33-35 -> 53-35. Each is applied in ciphertext.tsv; old and new readings are in tx2/changes.tsv.
+- Re-decode (decode_entick.py, bigram chooser unchanged): the three new cells have no image read in book/entries_image.tsv, so they come
+  from the OCR grid and grade M by rule: Tan, "interj" (an OCR fragment, not a headword) and Chalkcutter. 0 rows move M -> S.
+  Grades unchanged: H 8, C 4, S 145, M 57, I 2; H/C/S = 157/216 = 72.7%. `decode_entick.py --check`: reading current.
+- Sketch agreement: not assessed; no group moved to S, so no word changed in a way the sketch could check.
+- Judge (rule 7), `python3 tools/judge_plaintext.py specs/sherwood-cossit-1781.json --file ciphers/sherwood-cossit-1781/controls/reading_image.txt`:
+  `FAIL language: score=-0.998, null_p99=-2.177, real_p05=-0.804, real_median=-0.735, mode=both, N=1190` / `ok words: cover=0.94, min=0.6,
+  real_text_median_cover=0.976` / `FAIL`. Same as on file; en corpus of unknown reliability (EN-FOLDS).
+
+Research-director questions.
+1. Learned: digit misreads explain at most 3 of the 33 both-unseen rows (9%). The other 30 read the same on a fresh blind pass, so they are
+   encoder slips, rare words, or a page/line offset, not transcription errors in the digits.
+2. Assumptions: blind Opus line reads at this crop resolution are good to about 10% per group (the gate's boundary); the S known answers are
+   correct (two of them are now in doubt); Entick image reads are right where they exist.
+3. Unverified: the three new cells' headwords (OCR only; Entick p.360 line 33, p.165 line 13, p.53 line 35 need an image read). Also the two
+   S rows both passes read differently (412-35, 225-19), and 248-23?, 230-20?, which stay as transcribed.
+4. Alternatives: the three agreed changes are a shared reader bias on the 0/6 and 3/5 shapes, not corrections. The agreed misreads on two S
+   known answers show this bias exists. The reconciler is the same model family, so its confirmations are not independent of the passes.
+5. Most informative next experiment: an image read of Entick for the three corrected cells (p.360/33, p.165/13, p.53/35) and for the two
+   doubted S rows' alternative cells (412-35, 225-19), about $1; then a page/line-offset test on the 30 unchanged both-unseen rows.
+6. Decision: pivot. The digit re-read is spent on these rows (one pass at this resolution); next is the Entick-side image read above, then
+   the offset/slip hypothesis for the remaining 30.

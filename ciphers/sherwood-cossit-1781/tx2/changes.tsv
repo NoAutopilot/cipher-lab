@@ -1,0 +1,5 @@
+line	group_old	group_new	passA	passB	reconciliation	old_cell	new_cell	grade_after
+p346_L07	366-33?	360-33	360-33	360-33	confirmed (0 closed oval, no ascender)	Threepiled	Tan (OCR cell)	M
+p346_L15	166-13?	165-13	165-13	165-13	confirmed (5: downstroke+flag+belly)	Hammer	interj (OCR cell, not a headword)	M
+p345_L10	33-35	53-35	53-35	53-35	confirmed, moderate (first digit matches final 5)	Bestiality	Chalkcutter (OCR cell)	M
+p345_L02	131-22?	(unchanged)	151-22	151-22	rejected (reconciler reads 131)	Exhale	-	M
