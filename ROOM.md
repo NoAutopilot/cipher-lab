@@ -18116,3 +18116,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-20 22:38 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 22:35 UTC 20 Oct: spawned 0 -- no queued account-4 rows
 2026-10-20 22:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 22:39 UTC 20 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 01:20 UTC 21 Oct
 2026-10-20 23:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 23:10 UTC: spawned 1 (MONL-KING4 session_01B3GHbDRwKGhFQ7z78mSkx1), queued left 0
+2026-10-20 23:12 | MONL-KING4 (acct2 for acct4 parent): fr4735-monluc-lansac-poland-1573 | claim: look-alike pass on c258 L01-L25 split positions, PREREG first, then re-score vs joint S bar 53 and f.138 control at new error; box ends 23:57 UTC 20 Oct; session_01B3GHbDRwKGhFQ7z78mSkx1. usage: five_hour allowed by get_session, resets 02:00 UTC 21 Oct
