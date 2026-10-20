@@ -20,6 +20,6 @@ Stop after L11-L25.
 Belief: f.133 is Cipher 1 under the published key (MONL-KING2 gate PASS on L01-L10); more lines give a run the chance to clear the S bar.
 Would change it: the joint L01-L25 file failing the gate (run or lm at or below shuffled-key p95, or below the f.138 range minimum) with the
 control passing; or the L11-L25 band alone failing while its noise-bracketed control still beats its null in >= 50% of draws.
-Observed: <pending>
-Decision: <pending>
-Lesson: <pending>
+Observed: band L11-L25 (494 keyed): control passes (w1 run 55 vs p95 27, lm -1.413 vs -2.284; range run 47-55, lm -1.529 to -1.342; 13.0% noise 17/20); target run 43 vs p95 35, lm -1.571 vs -2.126, beats null but below range minimum on both -> GATE FAIL. Joint L01-L25 (850): control w1 FAILS (a shuffled key reaches run 79; 2 windows) -> non-test; target run 43 vs p95 35, lm -1.583 vs -2.162. S bar on joint = max(53, 42) = 53; longest run 43 -> S 0, M 850, U 47. Judge FAIL -1.571 (band), -1.583 (joint).
+Decision: change -- stop adding lines under this S bar; reduce f.133 transcription error (third pass on the 125 reconciled positions) and re-score; a length-independent S test needs its own PREREG.
+Lesson: the S bar's shuffled-key maximum grows with N (38 at 356 keyed, 53 at 850) about as fast as the true-key run, and at N=850 the f.138 control has only 2 windows and window 1 fails; on this design more lines do not buy an S clause -- lower error does. The band's lm sat above its 13%-noise control median while missing the clean range, so the range clause reads transcription error, not key.

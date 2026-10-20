@@ -181,7 +181,7 @@
    "disagree_grade": "M",
    "unvoted_grade": "M",
    "header": [
-    "# c258 (f.133) cipher lines 1-10 (MONL-KING2, 20 Oct 2026: two blind passes + one reconciliation call, king2/), decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py.",
+    "# c258 (f.133) cipher lines 1-25 (L01-L10 MONL-KING2, king2/; L11-L25 MONL-KING3, king3/; 20 Oct 2026: two blind passes + one reconciliation call each), decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py.",
     "# Grades: S = key letter inside a lexicon run longer than the shuffled-key max and 42 letters (king2/king2_grade.py; none qualify); M = other keyed token; U = unkeyed sign. {grades_sorted}"
    ],
    "token_columns": [

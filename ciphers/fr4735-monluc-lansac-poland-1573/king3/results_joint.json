@@ -1,0 +1,49 @@
+{
+ "N_keyed": 850,
+ "windows": [
+  {
+   "run": 55,
+   "lm": -1.4415,
+   "letters": 850,
+   "run_p95": 79,
+   "lm_p95": -2.2858,
+   "beats_null": false
+  },
+  {
+   "run": 56,
+   "lm": -1.4624,
+   "letters": 850,
+   "run_p95": 23,
+   "lm_p95": -2.1434,
+   "beats_null": true
+  }
+ ],
+ "control_pass": false,
+ "range": {
+  "run": [
+   55,
+   56
+  ],
+  "lm": [
+   -1.4624,
+   -1.4415
+  ]
+ },
+ "noise": {
+  "rate": 0.143,
+  "run_median": 55.0,
+  "lm_median": -1.6755,
+  "beats_null_share": 0.3
+ },
+ "target": {
+  "run": 43,
+  "lm": -1.583,
+  "letters": 850,
+  "run_p95": 35,
+  "lm_p95": -2.1616,
+  "beats_null": true,
+  "in_range": false,
+  "decode": "ypadie | ubaladipemetendouyaideebluisiheuretpemeat | equiledtepradt | lueiere | ogdoneeleymudprouepbediteptreueritdble | q | edeles | folyetlepedfadpetddutddhquil | derheleluiaparle | ed | epaipde | eptamairepilisueenyeqque | ladesirons | auonpdeluberedelreuledoiendeniepour | edporterlndoueleestnloied | orepqueuedebougedeln | hnlbreeqquilyn | dumntinuusquepaupoiprpnrtnes | rixnetlnseureqqueledutpieurdelnnsa | rmoignernqueyeneqfnirienes | rigquineroiutnble | unrduiourquilniiunieltibnilheipnrreenquelepgnh | esgoienglepneairep | pen | egeuppln | debienloidg | ueaerged | ongxe | nuonpeubenu | oupdefrnieurseuoupdepperad | epetdepedfaultpapeslayrealaaireaue | tadhdediuersytedegedsetaueutaneuypqtupodtbeddeypoure | reuuler | esurutdepuyptroyp | edfaueurderdeptparpesletrepaduodeptedeplyre | dpola | egarderderaeseeeedufrayreduroydefraauessoaepesparooes | uele | ferapluenquedeual | auequyl | playemeylnudeyuunyquerlepaeayrepdede | aaue | iellyesirene | royrepoinequeyesoyesyial"
+ },
+ "gate": false
+}

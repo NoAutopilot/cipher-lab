@@ -2284,3 +2284,74 @@ Read so far: f.86 150 tokens C 83/M 64/U 3; f.138r-v C 780/2133 (AUDIT.md); f.13
 - [x] image-check: c258 native page fetched and the ten lines cut, overlay checked
 - [x] retry: none needed beyond the one malformed-URL 404 (not retried; the corrected URL was a new request)
 Verdict: keep going: 4 internal gaps; cheapest next: f.166 second pass, ~$1; most informative: f.133 L11-L20 band, ~$4
+
+## MONL-KING3 (20 Oct 2026)
+Account 2, Opus, for the account-4 research director, wave 42 (`.claude/briefs/runs/2026-10-20-acct4-research-director-42.md`, job MONL-KING3).
+Solver job: what was found and where it was not; no novelty class. `tools/dup_check.py`: DUP-RISK flagged only this job's own claim line.
+**PREREG addendum** `PREREG-MONL-KING3.md`, pushed at 6ff9fd485 before any L11-L25 crop was cut; king2_score.py and king2_grade.py unchanged.
+
+**Images.** openapi.bnf.fr, 1 request (the native page, full/max, the URL king2's regen uses). tools/iiif_lines.py split this region
+irregularly (pitch 53-67 at its default distance, two lines merged at --distance 90), so `king3_crops.py` places the bands from the
+deskewed row-ink profile (rotate -2.0 deg; 16 peaks, pitch 102-112; L10 as anchor, its line ends '//' as king2's L10); overlay
+`images/scratchking3/c258_king3_bands_debug.jpg` checked (L13 ends "Marie", L14 "Juing ... bre", L18 "Maria", L19 "Sep.bre", L22 "Juing
+... Maur", L23 "No.bre ... Juno", L24 "satiu"); segment 2 stops at the gutter so the facing leaf is excluded. `regen_monlking3.sh` re-derives.
+**Reads.** Two blind passes (strongest model, king2's prompt, one call per 5 lines per pass, 6 calls; king3/passA.tsv, passB.tsv);
+`tools/reconcile_passes.py` 456/524 = 87.0% agree (68 disputes, 13.0%); one reconciliation call (king3/prompt_reconcile.txt,
+rec_answers.tsv; 2 positions NONE): 520 tokens in `king3/c258_L11-L25.tsv` (456 H agreed, 64 M reconciled), appended to `ciphertext_c258.tsv`.
+
+**Gate (registered).** Band L11-L25 (494 keyed): control passes (3 f.138 windows, w1 run 55 vs p95 27, lm -1.413 vs -2.284; range run 47-55,
+lm -1.529 to -1.342; at 13.0% noise 17/20 draws beat the null, lm median -1.619). Target run 43 vs shuffled-key p95 35, lm -1.571 vs p95
+-2.126: beats the null on both, but **below the range minimum on both (43 < 47; -1.571 < -1.529) -> GATE FAIL** by the registered rule.
+Joint L01-L25 (850 keyed): **control window 1 FAILS** (one shuffled key reaches run 79 on w1; only 2 windows at N=850), so the joint gate
+is a **non-test** (rule 3); target run 43 vs p95 35, lm -1.583 vs p95 -2.162; noise 0.143: 6/20. Results king3/results_band.json, results_joint.json.
+**Grades** (king2_grade.py on the joint file): shuffled-key max run 53 -> threshold 53; longest run 43 -> **S 0, M 850, U 47**. The
+PREREG also caps grades at M on a joint gate failure; both say the same. `python3 tools/decode_key.py . --check` -> "reading up to date"
+(c258: M 850, U 47). Judge (rule 7):
+```
+L11-L25: FAIL language: score=-1.571, null_p99=-1.865, real_p05=-0.892, real_median=-0.789, mode=both, N=494
+         ok   words: cover=0.723, min=0.5, real_text_median_cover=0.945
+L01-L25: FAIL language: score=-1.583, null_p99=-1.911, real_p05=-0.877, real_median=-0.781, mode=both, N=850
+         ok   words: cover=0.718, min=0.5, real_text_median_cover=0.945
+```
+**Best decoded stretch (grade M, not a reading):** L21-L22 "...egarder de ra es ee ee du frayre du roy de fra..." (43-letter lexicon run,
+under the 53 bar); also "de fault", "fera plus que de", "diuersyte", "faueur", "lettre". Unkeyed words as transcribed: Marie/Mari x3,
+Maria, Juing x2, Juno, o/No.bre x2, Sep.bre, Ad, Maur, satiu/hatiue (Tomokiyo's jargon names).
+
+**Six questions.** (1) Learned: the L11-L25 band beats every shuffled key on both statistics by margins like L01-L10's (lm +0.56), but sits
+just under the clean f.138 range; its lm (-1.571) is above the 13%-noise control's median (-1.619), so the miss on the in-range clause
+fits the measured transcription error, not another key. No run clears the S bar, now 53 on the joint file, higher than king2's 42 because the
+shuffled-key maximum grows with N. (2) Assumptions: the range clause compares a 2-pass target to a many-pass control (named in KING2 Q2);
+that the bar's null maximum is a fixed target (it is not: it rises with N); that the fr corpus suits Monluc. (3) Unverified: 64 reconciled
+positions (single reconciler); K12/K14/K49 and K09/K21 splits in L11-L15 (the reconciler chose A, "b shape", for all 8 K14|K49 splits);
+whether L11-L25 continue L10 in one letter. (4) Alternatives: the band is Cipher 1 read with ~13% error (likeliest from the numbers); a
+different hand or key variant in L11-L15 (those lines decode worst); the joint control failure is a property of N=850 with 2 windows,
+not of the target. (5) Most informative next: a third, independent pass on L11-L25's 64 reconciled positions plus the L01-L10 look-alikes to
+lower the error (the gate's range clause and the S bar both move with error), rather than more lines: more N raises the null maximum as
+fast as the true run. A bar that does not grow with N (a per-segment authentication test, e.g. a crib-free word-run p-value) needs a new
+PREREG before use. (6) Decision: **change** -- stop adding lines under this S bar; next is error reduction on f.133, then re-score.
+Voice: "auons delibere" (L06-07) is a first-person plural of deliberation; Monluc, an ambassador, writing to the king would use "je" or the
+embassy's "nous" for the Polish estates, while "nous avons délibéré" is the king's chancery voice -- but with the clause at grade M and the
+leaf's addressee not read through, this is a question, not an attribution; L21-22's "du frayre du roy de fra[nce]" (Anjou, the candidate)
+reads naturally in a letter to the king about the election. Neither is a reading.
+
+Reading so far: f.86 150 tokens C 83/M 64/U 3; f.138r-v C 780/2133 (AUDIT.md); f.133 L01-L25 897 tokens M 850/U 47, no S. openapi.bnf.fr:
+1 request. Vision calls: 6 passes + 1 reconciliation.
+
+## Remaining gaps (MONL-KING3, 20 Oct 2026)
+Read so far: f.86 150 tokens C 83/M 64/U 3; f.138r-v C 780/2133 (AUDIT.md); f.133 L01-L25 897 tokens M 850/U 47, no S.
+- f.133 (c258) transcription error - blocker: not-attempted; outside this brief; next: third independent pass on the 125 reconciled positions of L01-L25 (king2 61 + king3 64) and re-score band and joint, ~$3
+- f.133 (c258) L26-L40 - blocker: not-attempted; outside this brief (stop after L11-L25); next: only after the error pass, same protocol, ~$5
+- S bar that does not grow with N - blocker: not-attempted; needs a new PREREG; next: per-segment run p-value against shuffled keys at the segment's own length, ~$1
+- f.132 (c257) cipher lines and c262/c264 order - blocker: not-attempted; carried; next: c257 cipher L01-L05 read and decoded, ~$3
+- f.166 clear text second pass - blocker: not-attempted; carried; next: one independent read of clear_f166.tsv, ~$1
+- ff.213-223 Cipher 2 decipherment candidates, f.87 canvas, f.84's missing cipher - blocker: not-attempted; carried from MONL-CENSUS; next: one overview look each, ~$1.5
+
+## Escalation (MONL-KING3, 20 Oct 2026)
+- [x] siblings: f.166 and ff.140-141 tested (MONL-KING2): neither
+- [x] clear-pages: no clear text for f.133 located (f.132's clear opening only)
+- [x] known-keys: key.tsv (Tomokiyo Cipher 1) applied to L11-L25; beats shuffled keys, under the clean control range
+- [x] print: carried from MONL-KING: nothing for this letter
+- [ ] key-rebuild: S-grade clause needs lower transcription error on f.133 (third pass), not more lines
+- [x] image-check: c258 L11-L25 cut from the native page, overlay checked
+- [x] retry: none needed
+Verdict: keep going: 6 internal gaps; cheapest next: f.166 second pass, ~$1; most informative: f.133 third pass on reconciled positions, ~$3

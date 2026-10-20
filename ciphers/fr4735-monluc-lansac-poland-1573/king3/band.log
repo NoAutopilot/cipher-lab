@@ -1,0 +1,32 @@
+{
+ "N_keyed": 494,
+ "control_pass": true,
+ "range": {
+  "run": [
+   47,
+   55
+  ],
+  "lm": [
+   -1.5287,
+   -1.3424
+  ]
+ },
+ "noise": {
+  "rate": 0.13,
+  "run_median": 55.0,
+  "lm_median": -1.6186,
+  "beats_null_share": 0.85
+ },
+ "target": {
+  "run": 43,
+  "lm": -1.5706,
+  "letters": 494,
+  "run_p95": 35,
+  "lm_p95": -2.1261,
+  "beats_null": true,
+  "in_range": false,
+  "decode": "rmoignernqueyeneqfnirienes | rigquineroiutnble | unrduiourquilniiunieltibnilheipnrreenquelepgnh | esgoienglepneairep | pen | egeuppln | debienloidg | ueaerged | ongxe | nuonpeubenu | oupdefrnieurseuoupdepperad | epetdepedfaultpapeslayrealaaireaue | tadhdediuersytedegedsetaueutaneuypqtupodtbeddeypoure | reuuler | esurutdepuyptroyp | edfaueurderdeptparpesletrepaduodeptedeplyre | dpola | egarderderaeseeeedufrayreduroydefraauessoaepesparooes | uele | ferapluenquedeual | auequyl | playemeylnudeyuunyquerlepaeayrepdede | aaue | iellyesirene | royrepoinequeyesoyesyial"
+ },
+ "gate": false
+}
+windows: [(55, -1.4133, 27, -2.284, True), (51, -1.5287, 28, -2.1551, True), (47, -1.3424, 43, -2.1678, True)]
