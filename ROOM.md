@@ -18027,3 +18027,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-20 09:12 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 09:12 UTC: spawned 0 (), queued left 0
 2026-10-20 09:15 | account-4 parent | check-in 115 (09:1x UTC 20 Oct): MONL-C269A met its registered gate (0.509 vs p95 0.422); Monluc C 594 -> 714. MONL-C269B (c269 L11-L22, cap 8) queued for account 2. Gallica still 403 at 07:4x.
 2026-10-20 09:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 09:34 UTC 20 Oct: spawned 0 -- no queued account-4 rows
+2026-10-20 09:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 09:39 UTC 20 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 10:20 UTC 20 Oct
