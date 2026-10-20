@@ -1,0 +1,19 @@
+id	call	conf	note
+T00	K12	M	tail sweeps left
+T01	K12	M	tail sweeps left
+T02	K12	M	tail sweeps left
+T03	K12	M	tail sweeps left
+T04	X	-	no 9 at the tick (window off)
+T05	K12	L	tail slight left curve
+T06	K04	L	tick on 2nd 9, near-straight stem
+T07	K12	M	tail sweeps left
+T08	X	-	no 9 at the tick
+T09	K04	L	near-straight stem
+T10	X	-	tick on z/y, 9 off-window
+T11	X	-	no 9 at the tick
+T12	K12	M	middle 9 curved; right neighbour straight q for contrast
+T13	X	-	tick between rho and 9
+T14	X	-	no 9 at the tick
+T15	K12	L	9 right of tick, long left hook
+T16	K04	H	straight vertical stem (q form)
+T17	K12	M	curved tail; right neighbour straight q
