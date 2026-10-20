@@ -202,6 +202,14 @@ directive: the Monluc chain +475 C tokens (511 -> 984 counting c268 and c269), S
 VERIFY-MONLUC (session_01CzeKNTJv7UYD3DLXkfwRqi, Opus, cap 7) audits rule 7, the gates, contradicting-C positions, novelty and depth;
 nothing goes to status.json before its AUDIT.md.
 
+Check-in 118 (20 Oct 2026, 14:1x UTC). VERIFY-MONLUC (USD 4.45): rule 7 holds and every gate reproduces, but the reading is **N0**: the
+clear copy ff.140r-141r is the letter's own period decipherment (finding aid: "avec chiffre et dechiffrement"), and the key is
+Tomokiyo's published table. 204 chance-length C runs regraded M: C 780/2133 (36.6%), D2, key application, not counted as a unique
+solve; status.json row added. Honest scorecard correction: the Monluc "gains" were a token-by-token check of a published key against a
+surviving decipherment, not new content -- about USD 30 over 6 jobs. What it buys: a key verified on ~2,000 signs, useful only for a
+Cipher 1 leaf whose decipherment does not survive. MONL-CENSUS (account 2, Sonnet, cap 3) lists which leaves those are before any more
+reading. Account 2's worker costs are not visible here and are not yet in LEDGER.md.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier

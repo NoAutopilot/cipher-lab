@@ -16251,6 +16251,28 @@
    "decode_status": "Partially decrypted",
    "depth_sentence": "Message No.4 of the Cossit/Sumner cypher, dated February 1783, reports that Colonel Strong reported in council at Windsor, in the writer's hearing, on a move 'towards the reduction of the new state'.",
    "depth_check": "rule-7 re-read 56/56 + clauses of 11-16 consecutive H/S tokens vs W+-1 and 20 P-shuffle controls; Sherwood's 1783 sketch agrees on No.1 and No.4"
+  },
+  {
+   "date": "20 Oct 2026",
+   "kind": "key application",
+   "key": "published",
+   "text": "known (period clear copy ff.140r-141r in the same volume; BnF finding aid: avec chiffre et dechiffrement; not found in print)",
+   "novelty": "N0",
+   "claim_scope": "recovered-passages",
+   "plaintext_novelty": "N0",
+   "mapping_novelty": "N0",
+   "audit_status": "one audit",
+   "superseded_by": "",
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr4735-monluc-lansac-poland-1573",
+   "fields_source": "fr4735-monluc-lansac-poland-1573/AUDIT.md (VERIFY-MONLUC, 20 Oct 2026), sections Verdict and 4",
+   "title": "BnF fr.4735 f.138r-v, Jean de Monluc to Catherine de Medicis, April 1573 (the Polish election): Tomokiyo's Monluc Cipher 1 table applied and checked against the letter's own period clear copy",
+   "grade": "N0 (one audit, VERIFY-MONLUC), key published (Tomokiyo, Monluc Cipher 1). 1983 tokens on f.138r-v, C 697 (35.1%) after the verifier regraded 204 chance-length confirm runs to M; target 2133 tokens, C 780 (36.6%). Placements beat placed-shuffled controls (c268 L26-L30 0.675 vs 0.446; c269 L01-L10 0.509 vs 0.422; L23-L33 0.482 vs 0.385 prospectively; L11-L22 0.650 vs 0.425 under a rule written after its data). Rule 7 re-derived in a fresh tree.",
+   "line": "Key application, not counted as a unique solve (N0: the letter's decipherment survives beside it in the manuscript). Value: a published key checked token by token on about 2,000 signs, a basis for Monluc's Cipher 1 leaves that have no clear copy (ff.84, 87, 132, 136).",
+   "depth": "D2",
+   "depth_pct": 35,
+   "depth_check": "known-plaintext alignment, placed-shuffled and other-letter controls",
+   "decode_status": "Partially decrypted",
+   "depth_sentence": "Monluc tells the queen mother that the emperor's agents canvass the Polish electors openly, sparing neither honour nor the king's reputation, and spread word that the King of Denmark is a candidate, which he never intended."
   }
  ],
  "lanes": [
