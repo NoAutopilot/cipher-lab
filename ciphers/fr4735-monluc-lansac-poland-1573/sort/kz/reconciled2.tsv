@@ -1,0 +1,18 @@
+id	token	role	known	A2	B2	result
+T00	L28:11	lead	K12|K22	K12/M	K12/M	agree K12
+T01	L27:33	lead	K12|K22	K12/L	K22/L	split
+T02	L29:29	lead	K12|K22	K12/M	K12/M	agree K12
+T03	L03:6	ref	K12	K12/L	K12/L	right,right
+T04	L27:15	lead	K12|K22	K12/L	K12/L	agree K12
+T05	L02:28	ref	K12	K12/L	K12/L	right,right
+T06	L01:26	ref	K22	K12/L	K22/L	WRONG,right
+T07	L01:29	ref	K12	K12/L	K12/L	right,right
+T08	L29:23	lead	K12|K22	K12/M	K12/M	agree K12
+T09	L28:6	lead	K12|K22	K12/M	K12/M	agree K12
+T10	L02:17	ref	K22	K12/M	K12/M	WRONG,WRONG
+T11	L02:11	ref	K22	K12/M	K12/M	WRONG,WRONG
+T12	L28:34	lead	K12|K22	K22/L	K12/L	split
+T13	L02:21	ref	K12	K12/L	K12/L	right,right
+T14	L29:3	lead	K12|K22	K12/M	K12/M	agree K12
+T15	L26:17	lead	K12|K22	K12/M	K12/M	agree K12
+T16	L03:8	ref	K22	K22/L	K12/M	right,WRONG

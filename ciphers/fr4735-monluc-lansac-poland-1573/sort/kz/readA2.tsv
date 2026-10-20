@@ -1,0 +1,18 @@
+tile	call	conf	reason
+T00	K12	M	closed bowl, open leftward hook tail
+T01	K12	L	long open sweep left; mark above could suggest K22
+T02	K12	M	closed bowl, open hook tail
+T03	K12	L	near-straight descender, slight left turn, 9-like
+T04	K12	L	straight stem with small hook; arc above
+T05	K12	L	long straight-ish stem curving left, no loop
+T06	K12	L	faint; open tail sweep left, no loop
+T07	K12	L	straight stem with slight left turn
+T08	K12	M	bowl plus open leftward hook tail
+T09	K12	M	bowl plus long open hook tail
+T10	K12	M	bowl plus short open hook tail
+T11	K12	M	bowl plus wide open tail, no loop
+T12	K22	L	g-like curling tail ending in a back-tick
+T13	K12	L	straight stem with left curve, 9-like
+T14	K12	M	bowl plus open leftward hook tail
+T15	K12	M	bowl plus long open sweep left
+T16	K22	L	g-form with tail curling back up

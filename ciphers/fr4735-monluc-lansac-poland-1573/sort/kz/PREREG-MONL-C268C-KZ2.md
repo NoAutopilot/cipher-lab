@@ -13,8 +13,8 @@ question is logged untested-by-this-tool at these tiles until a different instru
 Round 1's unanimous lead calls are not counted toward round 2.
 
 ## Decision
-Belief: <pending>
-Would change it: <pending>
-Observed: <pending>
-Decision: <pending>
-Lesson: <pending>
+Belief: with ticks on the sign, two fresh blind readers settle K12|K22 at the 9 leads against the 8 on-page references
+Would change it: any reference called the wrong id by either reader
+Observed: refs A2 5/8 right, 3 WRONG (K22 refs L01:26, L02:17, L02:11 called K12); B2 5/8 right, 3 WRONG (L02:17, L02:11, L03:8 called K12); leads: 7 agree K12, 2 split (L27:33, L28:34) -- the reverse of round 1 (refs 8/8 and 6/8+2X, leads 8 K22 + 1 K12)
+Decision: stop -- gate not met, no relabel; two rounds of model readers on the same tiles flip from all-K22 to all-K12 with the sheet cells as the only anchor, so the K12|K22 split is untested-by-this-tool (blind model sort against keysheet cells) at these tiles; next instrument is a person's sorter pile with the 8 references, not a third model round
+Lesson: on this hand the K12 and K22 keysheet cells do not anchor a model reader -- the same 17 tiles read 8/8 refs right in one round and 5/8 in the next; a model sort here needs references calibrated per round (or the person's pile), never the keysheet alone

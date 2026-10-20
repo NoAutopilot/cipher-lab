@@ -1770,3 +1770,63 @@ Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines
 - [x] image-check: c268 L01-L30 native crops cut and reconciled by eye (MONL-C268B, MONL-L11, MONL-L16, MONL-L21, SUP-MONLUC)
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 12 internal gaps; cheapest next: the value-blind K12|K22 sort of the 9 L26-L30 tiles (~$1), then c268 L31-L35 (~$3.5)
+
+## MONL-C268C: c268 ends at L30; K12|K22 model sort, two rounds, gate not met (20 Oct 2026, account 2, Opus, for the account-4 research director, wave 33)
+
+Brief: .claude/briefs/runs/2026-10-20-acct4-research-director-33.md, JOB MONL-C268C. `tools/dup_check.py`: no outstanding claim. Host: openapi.bnf.fr
+4 requests (f268 info.json; f268 overview 0,3900,4418,2590 at 1400 px; `sh regen_monll26.sh` region), all HTTP 200, >= 1.5 s apart.
+**Step 1 (the finding): c268 ends at L30.** The overview of f.138 below y 3900 shows L23 (W:Astuing) to L30 (the short line "K11 K29 K04 ... K26 K25"),
+then blank paper to the torn foot; regen_monll26.sh's own band 6 (centre 649) is that last line. So the brief's L31-L35 do not exist. The clear copy
+does continue: c268 L26-L30 face f.140r L23-L26 (SUP-MONLUC), and clear_f140.tsv runs on for f.140r L27-L30, f.140v L01-L26 and f.141r L01-L11 (about 41
+lines, "ambassadeurs luy auront [?] la couronne ..." onward). That text must face cipher on another leaf (or was never in cipher); not looked at (outside the brief).
+Steps 2-3 (crops, passes, placement) therefore had nothing to run on; no tokens added: c268 stays **1026 tokens C 511 / M 468 / U 47** (`decode_key.py . --check`
+"reading up to date").
+**Follow-on named in the brief: value-blind K12|K22 sort of the 9 L26-L30 splits** (PREREG sort/kz/PREREG-MONL-C268C-KZ.md, pushed e888e4c71 before any tile).
+No H/H K12 or K22 exists in L26-L30, so the 8 references are on-page, out-of-band H/H tokens from L01-L03 (K22 L01:26, L02:11, L02:17, L03:8; K12 L01:29,
+L02:21, L02:28 -- this one replacing L04:4 from the PREREG list -- L03:6). Tiles: sort/kz/build_kz.py (positions placed on ruler strips by this worker,
+position only; sheet checked at reading scale), 17 shuffled, map hidden from readers; readers saw only the keysheet and the sheet, strongest model, A forward, B reverse.
+| round | refs right A | refs right B | leads |
+|---|---|---|---|
+| 1 (seed 20261020) | 8/8 | 6/8, 0 wrong, 2 X (tick between signs) | both: K22 at L26:17, L27:33, L28:6, L28:11, L29:3, L29:23, L29:29 (M), L28:34 (L); K12 at L27:15 (M) |
+| 2 (seed 20261021, ticks re-placed; PREREG-...-KZ2.md pushed 91c4df8ef) | 5/8, 3 wrong | 5/8, 3 wrong | 7 agree K12, 2 split (L27:33, L28:34) |
+Gate (0 wrong, at most 1 X per reader) not met in either round: **no relabel**, key.tsv unchanged. The same tiles swing from all-K22 to all-K12 between rounds,
+so the keysheet cells do not anchor a model reader on this hand: logged untested-by-this-tool (blind model sort), next instrument a person's pile.
+Round 1's leads match pass B and the clear text (K22 = a where the clear has a at 6 of the 9), but that agreement is not a test (the gate failed) and is not counted.
+Files: sort/kz/{readA,readB,readA2,readB2,reconciled,reconciled2,map,map2}.tsv, sheet.png, sheet2.png, tiles/, tiles2/. Subagents: 4 (strongest model). Box 05:12-05:3x UTC 20 Oct by date -u.
+Cost not visible to this session.
+
+**Six questions (research director).** (1) Learned: c268 has 30 lines, all now transcribed and placed; the ff.140r-141r clear text runs about 41 lines past the
+cipher's end, so the rest of that letter's cipher (if any) is on another leaf. Blind model readers cannot settle K12|K22 against the keysheet cells here.
+(2) Assumptions: the overview's last ink line is c268 L30 (matched to regen_monll26.sh band 6 and to L30's opening signs); the 8 references are right because both
+transcription passes agreed at H; tile positions are on the intended sign. (3) Unverified: whether the clear text after f.140r L26 was ever enciphered; whether the
+references are themselves K12/K22 by the sheet's distinction or by the passes' habit. (4) Alternatives: K12 and K22 may be one written form in this hand, with the
+passes splitting on stroke weight (then the 'contradictions' are a key question, not a misread); the continuation may be c258, c262 or c264 in a misbound order.
+(5) Most informative different experiment: an overview look at the tops of c258/c262/c264 with a 1-line decode against f.140r L27, which decides where the next
+~41 clear lines of known plaintext can be spent (C tokens), more than any further sort. (6) Decision: pivot within the target -- find the continuing leaf; K12|K22
+goes to the person's sorter, not a third model round.
+
+## Remaining gaps (MONL-C268C, 20 Oct 2026)
+Read so far: (unchanged by MONL-C268C) f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines 1-30 (1026 tokens) C 511 / M 468 / U 47 against the ff.140r-141r clear text (align confirm 658/971 = 0.678 vs shuffled-clear max 0.396).
+- K12|K22 at 9 L26-L30 tokens (pass B K22 faces a at 6) - blocker: not-attempted; blind model sort untested-by-this-tool after two rounds (MONL-C268C: round 1 refs 8/8 and 6/8+2X, leads 8 K22 + 1 K12; round 2 refs 5/8 and 5/8, leads 7 K12); next: the owner's sign sorter pile of the 17 tiles in sort/kz/tiles2 (map2.tsv) through tools/sign_sorter.py, ~$1
+- K04-for-n (13 over L01-L25 + 6 in L26-L30) - blocker: not-attempted; SUP-MONLUC's eye look met no gate (c268e windows off the sign); next: re-cut the 7 tiles from levelled crops by position, then MONL-SORT2's design with in-band controls, ~$1.5
+- K14-for-s (19 + 3 in L26-L30) - blocker: not-attempted; code-wide K14=s refused (MONL-R0S); next: a K14 split test now that L26-L30 add 3 s-facing K14 (s/p-facing ratio against the table position), ~$0.5
+- K34-for-s and K62-for-m - blocker: not-attempted; L26-L30 add tokens to these sets; next: re-run k14try/run_k14try.py on L01-L30, ~$0.3
+- K40 facing z (L12:21, L24:29, L25:16) and t (L22:6) - blocker: not-attempted; shapes confirmed K40 by both MONL-SORT2 readers, no --try yet; next: a K40=z code-wide --try with its power control on L01-L30, ~$0.5
+- the cipher facing clear f.140r L27-L30, f.140v and f.141r (~41 clear lines after c268 ends at L30) and c264 facing f.140r L01-L06 - blocker: not-attempted; c268 has no line after L30 (MONL-C268C overview); next: one overview look at the tops of c258 (f.133), c262 (f.135) and c264 (f.136) and a 1-line decode of each against f.140r L27 'ambassadeurs luy auront ... la couronne' to find the leaf that continues, ~$1.5
+- the code words W:Cur, W:apuril, W:Juillet, W:Sepbre, W:Astuing, W:Juno, W:Mare, the possible "may" at L27:4-6 and the ?x / ?double_slash / ?h_bar fills - blocker: not-attempted; found by MONL-L16, MONL-L21 and SUP-MONLUC; next: a name-code pass with tools/name_candidates.py once f.140r L16-L26 is re-read, ~$1
+- the "adhuc" group (L11:6-10) - blocker: not-attempted; no second occurrence in L16-L30; next: watch for it when the continuing leaf is transcribed (rides that band, ~$0)
+- a clean clear text of ff.140r-141r away from L06-L10 - blocker: not-attempted; f.140r L11-L26 are rough A/B picks; next: an eye reconciliation of f.140r L11-L26 against the line crops, ~$1 per page
+- a judge that can see this key - blocker: too-short; the glossed material ends at 147 letters and the positive control FAILs at 50, 100 and 147 (judge_n_c172.py); the c268 alignment supplies known plaintext instead
+- print check of the clear letter in Google Books (13 of 14 phrases) - blocker: not-attempted; Google Books 503 (MONL-PC, MONL-PC2); next: `tools/print_check.py ... --only gbooks` when googleapis answers, ~$1
+- ff.211-223, f.87 margin, ff.50/56/60/80, items 17/18/112-120 - blocker: not-attempted; carried from NC-MONL2; next: one look each, ~$1.5
+- tools/lookalike_pass.py windows and tools/iiif_lines.py --centres on c268e/c268f - blocker: not-attempted; the window tick missed the sign on 6 of 7 c268e tiles and --centres gave s2 crops ~50 px off the line here; next: a tool check on these two regions (a known-position tile and a known line), ~$0.5
+
+## Escalation (MONL-C268C, 20 Oct 2026)
+- [x] siblings: clear sibling leaves ff.131, 140, 209 looked at by NC-MONL2; f.139 compared by MONLUC-KEY
+- [x] clear-pages: ff.140r-141r shown to be the clear text of c268 L01-L30 (MONL-ALIGN ... MONL-L21, SUP-MONLUC)
+- [x] known-keys: Tomokiyo's Cipher 1 table applied per cell and checked against known plaintext on c268 L01-L30
+- [x] print: Noailles vols II-III and Google Books, NC-MONL2; IA full text and OpenAlex, no hits (MONL-PC); Google Books pending (gap above)
+- [x] key-rebuild: --try rejects K12=d and K34=y (MONL-K12); code-wide K14=s refused (MONL-R0S); blind sorts L01-L25 (MONL-SORT ... MONL-SORT2); eye look on the K04 leads, gate not met (SUP-MONLUC); K12|K22 model sort on L26-L30, two rounds, gate not met (MONL-C268C)
+- [x] image-check: c268 L01-L30 native crops cut and reconciled by eye (MONL-C268B, MONL-L11, MONL-L16, MONL-L21, SUP-MONLUC)
+- [n/a] retry: nothing has failed that a plain retry would change
+Verdict: keep going: 12 internal gaps; cheapest next: find the cipher leaf that continues past c268 L30 (overview of c258/c262/c264 tops, ~$1.5), then its first 5 lines (~$3.5)
