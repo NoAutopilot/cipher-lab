@@ -156,6 +156,16 @@ Owner directive (20 Oct 2026, 03:1x UTC), standing: the account-4 parent has ful
 as little as serves the goal. Account 1 off; account 3 on hold until the support jobs show they move readings (scorecard kept from
 check-in 111: jobs, cost, readings moved vs non-tests).
 
+Check-in 111 (20 Oct 2026, 03:5x UTC). Support scorecard, wave 28 + SHERWOOD-GRID on account 2 (account 2 ledgers its own costs):
+SUP-PISANY no change; SUP-CEPPO blocked (Gallica 403); SUP-NEVREVOL non-test (control fails); SUP-PAGET no-op (the draft had already
+passed gate 7 on 15 Oct; the folder's next-step line was stale); SUP-ELECTION one pair settled (4 -> Lbar, M) and a rule-4 conflict
+logged, no key change; SUP-MONLUC running (K04 gate not met, L26-L30 passes running); SHERWOOD-GRID: line-count rule settled from the
+image, 165-13 = Ha (S on a bigram margin only), 74.1% by script, verifier flag. Counted readings moved by the support wave: none yet.
+Decision: no further wave from NEXT-STEPS tails -- the runnable and HOT rows are mostly the same exhausted steps, and most BnF rows need
+Gallica (403/reset since 02:1x). SUP-GIEVRE stays held. Sherwood depth work pauses: the Tan/Certainly/Ha moves (72.7 -> 74.1%) wait for
+one verifier pass that also reads Leighton and Matyas when the ILL arrives (status.json keeps the verified 72.7%, so nothing over-claims).
+Vivonne: sorter v3 live, owner to re-sort. SORTER-RERENDER running.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
