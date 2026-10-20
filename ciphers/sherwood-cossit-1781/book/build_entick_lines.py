@@ -4,6 +4,10 @@
 Convention (gate passed on 8 anchors, NOTES.md "## Reading from Entick 1781"): a pair P-W names printed page P
 and the W-th printed line of a column, counted from the top of that column (a wrapped continuation line counts as
 a line). The column itself is not written in the pair, so every pair has two candidates, col 1 and col 2.
+Line-count rule (SHERWOOD-GRID, 20 Oct 2026, NOTES.md "## Heading-gap scan"): every line-height of the column counts,
+a blank line-height above or below a centred section heading and the heading itself included, so the blank grid rows
+kept inside a column below are lines, not faults. Image anchors: 418-31 c2 = Ye (three cipher occurrences; Yean if the
+gaps were skipped), 237-31 c2 = Nakedly, 153 c2 "G." heading counted (top_fix.tsv).
 
 For each printed page this script finds the column rule in the scan (archive.org 11280377bsb_jp2.zip), finds the
 text lines of each column from the row ink profile on a fitted regular grid, and attaches the djvu.xml OCR text

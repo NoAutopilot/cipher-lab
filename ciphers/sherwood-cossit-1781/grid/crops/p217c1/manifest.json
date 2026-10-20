@@ -1,0 +1,42 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "p217c1_g24-38_L01.jpg",
+   "source_url": "",
+   "source_file": "p217.png",
+   "box": [
+    0,
+    843,
+    681,
+    1325
+   ],
+   "lines_in_crop": 15,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     16,
+     48,
+     81,
+     113,
+     145,
+     177,
+     209,
+     241,
+     273,
+     305,
+     337,
+     369,
+     402,
+     434,
+     466
+    ]
+   },
+   "date": "20 Oct 2026"
+  }
+ ]
+}

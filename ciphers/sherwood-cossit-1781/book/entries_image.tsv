@@ -176,7 +176,11 @@ page	W	col1	col2
 # on the printed count (heading counted, the 153 c2 rule) line 13 is Habeas-corpus (HA interj. is 12; Haberdasher if the heading
 # is not counted). The grid's OCR-only "interj" cell is superseded. 412-33 and 225-17 above re-read the same (Wheelbarrow/Which, Men/Mercifully).
 360	33	Tan	Tarry
-165	13	Habeas-corpus	Haily
+# SHERWOOD-GRID, 20 Oct 2026: line-count rule settled from the image (grid/NOTES "Heading-gap scan"): every line-height of the
+# column counts, a blank space before a centred heading and the heading itself included -- the grid's own rule. Anchors: 418-31 c2
+# = Ye only on this count (Yean if the gaps are skipped; S three times), 237-31 c2 = Nakedly, 153 c2 heading counted. So 165-13 c1
+# is grid row 13, HA interj. (the SHERWOOD-CELLS readers' own band: H. heading, Ha, Habeas-corpus below the gap row 11).
+165	13	Ha	Haily
 53	35	Certainly	Chalkcutter
 412	35	Wheely	Whiff
 225	19	Menacer	Merciless

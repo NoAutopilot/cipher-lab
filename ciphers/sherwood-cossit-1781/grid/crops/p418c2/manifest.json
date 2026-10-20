@@ -1,0 +1,61 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "p418c2_g01-34_L01.jpg",
+   "source_url": "",
+   "source_file": "p418.png",
+   "box": [
+    690,
+    50,
+    1357,
+    1195
+   ],
+   "lines_in_crop": 34,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     60,
+     93,
+     126,
+     158,
+     191,
+     223,
+     256,
+     288,
+     321,
+     353,
+     386,
+     418,
+     451,
+     483,
+     516,
+     548,
+     581,
+     613,
+     646,
+     678,
+     711,
+     743,
+     776,
+     808,
+     841,
+     873,
+     906,
+     938,
+     971,
+     1003,
+     1036,
+     1068,
+     1101,
+     1133
+    ]
+   },
+   "date": "20 Oct 2026"
+  }
+ ]
+}

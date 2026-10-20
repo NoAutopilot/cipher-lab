@@ -798,3 +798,63 @@ Research-director questions.
    centred section heading, and re-count the cited cells in those columns from the image. This is a script plus about one vision call
    per hit, and it could change cells that are counted S today. Then the offset/slip test on the 30 unchanged both-unseen M rows.
 6. Decision: continue. The reading stands at 73.6% H/C/S with no S row dropped; next is the heading-gap scan above.
+
+## Heading-gap scan (SHERWOOD-GRID, 20 Oct 2026)
+
+Worker SHERWOOD-GRID (account 4 parent worker, Opus). Question: does the blank space above a centred section heading, which
+book/entick_lines.tsv counts as a line, misplace other cited cells the way SHERWOOD-CELLS found on p.165 c1?
+
+- **Step 1, script only.** OCR initials of single columns are too noisy to place a heading (p.165 c1 OCR has almost no legible
+  headword), so `grid/heading_scan.py` (column-level, OCR initials) found only 9 columns and missed both positive controls.
+  `grid/boundary_pages.py` flags at page level instead (dominant initial of the page before differs from the page after; asserts that
+  pp.153 and 165 are flagged): **86 pages flagged** (most are gazetteer pages, whose place lists change initial constantly), **18 of
+  them cited, 27 cited cells on them** (S 19, M 7, H 1; `grid/boundary_cells.tsv`). Read against the OCR initial strings of both
+  columns, 4 pages have a section boundary (or a heading-like gap) in the column of a cited cell, above it: **p.418 c2 (W->Y; 418-31
+  Ye S x3), p.237 c2 (M->N; 237-31 Nakedly M, 237-10 Myself S x3 above), p.217 (L->M at the column change; 217-21 c2 Made S),
+  p.312 (eight OCR-blank rows at the top of c1; 312-22 Said S, 312-24 Sacrifice/Sail M, 312-29 Saint M)**. The rest: no boundary in
+  the cited column (89, 203, 205, 216, 385), the boundary is in the column not chosen (116 c2, 134 c2, 153 c2, 202 c2), I/J share a
+  section with no heading (201 c2: Itself, Jubilant run on), the cited cell is above the boundary (419 c2), or the page is the
+  market-town table, which has no headings (459, 468, 472).
+- **Step 2, image.** Four page images fetched once (archive.org 11280377bsb jp2, leaves 449, 268, 248, 343; 4 requests 1.6 s apart;
+  not committed). Column crops from the column top to past the cited line, centres from the grid (`grid/crop_cmds.sh`, the
+  `tools/iiif_lines.py --image ... --region ... --centres ...` commands). Three blind Opus calls (one per page, 217 batched with 237),
+  told nothing about the cipher, listed every row top-down as HEAD / HEADING / ENTRY / WRAP / GAP (one GAP per line-height of space).
+  - p.418 c2: Wronger ... Wry 11, wrap 12, GAP 13, **Y. 14**, GAP 15, Yacht 16 ... Ycleped 30, **Ye 31**, Yea 32 (moderate).
+  - p.237 c2: Muzzle 1 ... **Myself 10** ... Mythology 20, GAP 21, **N. 22**, Nab 23 ... Naked 30, **Nakedly 31** (moderate).
+  - p.217: c2 starts at Macaroon with no heading, **Made 21** (high); the M. heading sits at the foot of c1 under Lyrist, no gap.
+  - p.312: no heading or gap on either column (the eight blank OCR rows are printed entries the OCR missed); **Sacrifice 24 c1,
+    Said 22, Sail 24, Saint 29 c2** (high).
+- **Counting rule, decided once from the image: every line-height of the column counts, the blank above (and below) a centred
+  heading and the heading itself included -- the rule the grid already applies.** Anchors: 418-31 c2 is Ye only on this count
+  (Yean if the gaps are skipped and the heading counted, Yeanling if both are skipped), and Ye is graded S in three separate
+  cipher places; 237-31 c2 is Nakedly on this count (Naked on the other); 153 c2's "G." heading counts (top_fix.tsv). On this
+  rule the grid agrees with the image at every checked cell (418-31, 237-10, 237-31, 217-21, 312-22/24/29). It contradicts the
+  SHERWOOD-CELLS override at 165-13: their own readers listed the band from the grid's gap row 11 as H. (12), Ha (13),
+  Habeas-corpus (14), so on the slot count **165-13 c1 is HA, interj.**, the grid's own cell, not Habeas-corpus. The fault
+  SHERWOOD-CELLS reported was in the override, not the grid.
+- **Step 3, fix.** No builder change is needed: the rule is now stated in `book/build_entick_lines.py`'s docstring, and the one
+  image cell that assumed the other rule, `book/entries_image.tsv` 165-13, is corrected to Ha / Haily with a comment naming the
+  anchors (it is the image-read register, not the generated grid). `decode_entick.py` and `decode_entick.py --controls` re-run;
+  `--check`: reading current. **One cell changed: p346_L15 165-13 Habeas-corpus (M) -> Ha (S by the chooser's margin).** No S row
+  changed its word, so none drops. Grades before: H 8, C 4, S 147, M 55, I 2 (H/C/S 159/216 = 73.6%); after: H 8, C 4, S 148,
+  M 54, I 2 (H/C/S **160/216 = 74.1%** by the script). The new S is an interjection before the number 415 ("Sanded Ha 415 Make"),
+  earned on bigram margin alone; counting it as read is for a verifier (flagged in ROOM.md). Without it the figure is 73.6%.
+  Judge (rule 7), `python3 tools/judge_plaintext.py specs/sherwood-cossit-1781.json --file
+  ciphers/sherwood-cossit-1781/controls/reading_image.txt`:
+  `FAIL language: score=-0.997, null_p99=-2.158, real_p05=-0.811, real_median=-0.738, mode=both, N=1178` / `ok words: cover=0.941,
+  min=0.6, real_text_median_cover=0.975` / `FAIL`. The en corpus is of unknown reliability (EN-FOLDS).
+
+Research-director questions.
+1. Learned: the grid's counting (every line-height, gaps and headings included) is the counting the cipher's author used, on two
+   image anchors (Ye x3, Nakedly); the p.165 "grid fault" was an override built on the other rule. No other cited cell sits under a
+   misplaced heading.
+2. Assumptions: the blind reader's GAP counts are right to one line-height (it said "moderate" on both gaps at p.418); the page-level
+   boundary flag misses no boundary page that carries a cited cell; Ye is the intended word at 418-31 (S by bigram margin only).
+3. Unverified: the gap sizes on p.165 itself (not re-imaged here; the rule is applied from the 418/237 anchors); whether Ha fits
+   No.2's sense; the four alternative-column cells under a boundary (116 c2, 134 c2, 202 c2 and 153 c2), whose candidate words
+   follow the grid and so the same rule.
+4. Alternatives: the compositor's gaps may not be exactly one line-height everywhere, so a page with a 1.5-line gap could break a
+   fixed slot rule; Ye, Nakedly and Ha could each be bigram-favoured accidents, which would leave the rule resting on 153 c2 alone.
+5. Most informative next experiment: the offset/slip test on the 30 unchanged both-unseen M rows (SHERWOOD-CELLS item 5), now that
+   the grid rule is settled; a verifier's look at 165-13 (one band crop) would close the one changed cell.
+6. Decision: continue. The reading stands at 73.6% H/C/S without the new S row (74.1% with it); next is the M-row offset/slip test.
