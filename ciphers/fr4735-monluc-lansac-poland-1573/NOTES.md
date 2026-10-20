@@ -2071,3 +2071,74 @@ verifier grades them M: target C 780 / M 1245 / U 108 of 2133 (36.6%), f.138r-v 
 is described. Class **N0** (BnF aid items 53-55 "avec chiffre et déchiffrement"; the clear copy ff.140r-141r is the period plaintext), key
 `published` (Tomokiyo), text known in manuscript, not found in print where searched (Noailles I-III phrase grep, IA/OpenAlex; Google Books 503);
 result kind **key application**; depth **D2**. No SECOND-OPINIONS row (below N3). Scripts: audit/verify_runs.py, audit/verify_cruns.py.
+
+## MONL-CENSUS (20 Oct 2026, account 2, Sonnet, for the account-4 research director, wave 39)
+
+Brief `.claude/briefs/runs/2026-10-20-acct4-research-director-39.md`, JOB MONL-CENSUS. `tools/dup_check.py`: this job's own
+claim only. Census only (per brief): no transcription, no decode, no novelty class. Purpose: AUDIT.md (VERIFY-MONLUC, this
+session) established ff.138r-v read against its own period clear copy (ff.140r-141r), N0, key application -- the only way a
+further reading on this target pays off as new content is a Cipher 1 (or Cipher 2) leaf whose decipherment does **not**
+survive in-volume and is not printed. This job finds which leaves those are.
+
+**Table: `census_cipher1.tsv`** (folio, cipher system, date/addressee, extent, whether a decipherment survives, aid wording,
+whether Tomokiyo/Lasry/Noailles print the plaintext, what the repo already holds, verdict). Built from the existing per-leaf
+look (NC-MONL2, 7 Oct), the MONL-LEAF/MONL-140/AUDIT.md placement tests (14-20 Oct), and four new overview fetches this pass
+(openapi.bnf.fr, 1.5 s apart, `regen_monlcensus.sh`, `images/scratchcensus/`, untracked by any manifest key): f174 (f.87,
+re-check), f390 (f.210, the actual Cipher-2 cipher leaf), f392 (f.211) and f394 (f.212), the two canvases immediately after it.
+
+**New this pass.**
+- **f.210 confirmed by eye** (not f.209, which NC-MONL2 already had as the clear leaf): one paragraph of cipher (11 lines)
+  sits between clear prose before and after on the same leaf, dated "...de Juillet 1573" and signed "Monluc Evesque de
+  Valence"; no interlinear or marginal letters anywhere on or around the cipher block.
+- **f.211 (c392) is a different clear letter**, dated 2 July 1573 (La Rochelle siege news, the king of Poland's coronation),
+  not the 20 July letter's decipherment by date or content; **f.212 (c394) is blank**. Neither is the Cipher 2 decipherment.
+  f.213 onward (items up to 92, ff.213-223) not checked this pass.
+- **f.87 (c174) re-checked and NOT resolved**: the capture at this canvas shows an address leaf, a clear signature ("Auzon")
+  and a wax seal -- consistent with NC-MONL2's "address leaf, signature" but the "rotated cipher-looking lines with digit
+  groups next to clear text" it also reported were not visible in this crop. Canvas-to-folio identification for f.87 is
+  unconfirmed (flagged, not fixed, in the escalation below): either a different canvas or a closer region is needed.
+- **f.132/133/135/136 (the king's letter) still has no in-volume decipherment located.** Reconfirmed from existing work,
+  not re-tested: f.139 (2.9-3.2% confirm, chance level, MONLUC-KEY + AUDIT.md's own re-derivation) and c264/c258's own
+  first lines against ff.140r-141r (no run above the null, MONL-LEAF 20 Oct) are both ruled out; AUDIT.md's finding that
+  f.140r L01-06 is the *queen mother's* letter's own clear opening (not a continuation of f.136) removes the one open
+  candidate MONL-140 had flagged. No decipherment leaf for this letter has been tried from ff.50/56/60/80 or items
+  17/18/112-120 (the aid's other Monluc decipherment items).
+- f.84: the aid's cipher item (35) sits on a leaf NC-MONL2 found with no cipher visible; not re-checked this pass.
+
+**Bottom line (one line per leaf, from `census_cipher1.tsv`):**
+
+| folio | verdict |
+|---|---|
+| f.84 | unclear -- aid names cipher here, none found on the leaf |
+| f.86 | known text (own marginal gloss) |
+| f.87 | unclear -- canvas/description mismatch, unresolved |
+| f.132 | unclear, leaning new content |
+| f.133 | unclear, leaning new content |
+| f.135 | unclear |
+| f.136 | unclear, leaning new content |
+| f.138 | known text (N0, key application, already graded) |
+| f.209 | n/a (clear leaf, no cipher) |
+| f.210 (Cipher 2) | unclear, leaning new content |
+
+**Reading so far.** Unchanged by this job: f.86 150 tokens C 83/M 64/U 3; f.138r-v (c268+c269) C 780/2133 target total (AUDIT.md
+counts). No token added or graded this pass.
+
+## Remaining gaps (MONL-CENSUS, 20 Oct 2026)
+Read so far: unmeasured -- this job is a leaf census, not a reading pass; no token added or graded (f.86 150 C 83/M 64/U 3 and f.138r-v C 780/2133 target total, both from earlier jobs, unchanged).
+- f.87 canvas identification - blocker: not-attempted; the capture at canvas f174 shows an address leaf and seal, not the margin NC-MONL2 described; next: fetch the Gallica IIIF v2 manifest canvas list and try f173/f175 at native res, ~$0.5
+- ff.213-223 Cipher 2 decipherment candidates - blocker: not-attempted; only f.211 (different letter) and f.212 (blank) checked this pass; next: overview look at 2-4 more canvases (c396 up to the c422=f.226 anchor), ~$1.5
+- ff.50/56/60/80 and items 17/18/112-120, the king's-letter decipherment candidates - blocker: not-attempted; the aid's other Monluc decipherment items were never looked at; next: one overview look each, ~$1.5
+- f.84's missing cipher - blocker: not-attempted; the aid names item 35 as ciphered but NC-MONL2 found no cipher on the leaf; next: check the facing canvas and the aid's exact wording for item 35, ~$0.5
+
+## Escalation (MONL-CENSUS, 20 Oct 2026)
+- [x] siblings: f.211, f.212 checked this pass as Cipher-2 decipherment candidates; ruled out
+- [x] clear-pages: f.140r-141r (f.138, already known); f.211 (different letter, ruled out for f.210)
+- [n/a] known-keys: no key work in this job, census only
+- [x] print: Noailles/Tomokiyo/Lasry checked by earlier jobs (NC-MONL2, AUDIT.md search log); no plaintext of any residue leaf found in print
+- [n/a] key-rebuild: not applicable to a census job
+- [x] image-check: four new overview fetches this pass (f.87 re-check, f.210, f.211, f.212)
+- [n/a] retry: nothing failed that a retry would fix
+Verdict: keep going: 4 internal gaps; cheapest next: f.84's missing cipher and the f.87 canvas re-check, ~$0.5 each
+
+## Intake gate
+`python3 tools/gaps_check.py fr4735-monluc-lansac-poland-1573` -> "OK keep-going fr4735-monluc-lansac-poland-1573: keep going: 4 internal gap(s), 0 step(s) untried", exit 0.
