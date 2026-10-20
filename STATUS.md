@@ -166,6 +166,13 @@ Gallica (403/reset since 02:1x). SUP-GIEVRE stays held. Sherwood depth work paus
 one verifier pass that also reads Leighton and Matyas when the ILL arrives (status.json keeps the verified 72.7%, so nothing over-claims).
 Vivonne: sorter v3 live, owner to re-sort. SORTER-RERENDER running.
 
+Check-in 112 (20 Oct 2026, 05:0x UTC). Scorecard complete for wave 28: SUP-MONLUC moved counted tokens -- c268 L26-L30 transcribed and
+placed against the clear copy ff.140r-141r (0.675 vs shuffled p95 0.446), c268 857 -> 1026 tokens, C 426 -> 511 (grade C from the clear
+text). So wave 28: 7 jobs, 1 that moved readings (+85 C tokens), 1 small settlement, 5 nothing (blocked, non-test, no-op, no change).
+The productive pattern is clear-copy alignment with the clear text on disk; MONL-C268C (L31-L35, same method, control first) queued for
+account 2. SORTER-RERENDER (USD 6.09): the 4 account-4 sorters fixed; 9 account-3 sorters stay on the old template and are marked do-not-
+sort in ASKS. Vivonne re-sort not yet landed. Gallica still refuses.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
