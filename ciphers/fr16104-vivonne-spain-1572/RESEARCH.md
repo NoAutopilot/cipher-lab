@@ -329,3 +329,21 @@ would be 25 tiles with a 5-tile minority, still near the N=15 power failure. So 
 instruments left: the owner's blind sort (ASKS 173) and new material (more e/q tiles under label c from other inks, cut and box-checked
 first, with power computed on the pooled count before any sort). Behind both sits 6c's binding number: reader error about 0.14 against
 an ink-63 crossover below 0.05, which only a transcription pass meeting TRANSCRIPTION.md's standard can move.
+
+### 6f. The owner's blind sort (ASKS 173), scored (20 Oct 2026, 02:5x UTC; account-4 parent)
+The sort landed 02:54 UTC (6 moves, 3 new piles; tx/ksplit/owner_sort.tsv, truth joined only after reading). Tray A (label c; truth 12 p,
+2 q, 1 e): the owner left all three e/q tiles with nine p's and moved three p's out (two to a new pile A-b, one across to B-b, outside the
+"do not mix trays" instruction, so it reads as "this p looks like tray B's shape"). ARI for the p vs e/q split -0.168 vs label-shuffle p95
+0.458 (1000 draws): no separation. Tray B (label 2; 21 m): three m's moved to two new piles; one truth class, not scorable.
+Six questions. (1) Learned: the human eye, like the machine sort (6e), groups label c's e/q tiles with its p's. Two independent
+instruments see one shape. (2) Assumptions: an unmoved tile means "same or unsure" (the page told the sorter to leave unsure tiles), so
+this is an absence of a seen difference, not a measured sameness; truth.tsv's three e/q labels are the clerk's decipherment, aligned to
+tiles by VIV-KSPLIT's map. (3) Unverified: whether those three alignments are right (a one-place slip in the pair alignment would turn a
+p tile into an "e" or "q"); whether the owner's A-b pile marks a real sub-shape of p. (4) Alternatives: label c is one sign the clerk
+read as p and, by context or slip, as e/q (then c=p is the key cell, homophone-free); or the difference is a stroke detail neither a
+32x32 feature nor a quick look resolves. (5) Most informative different experiment: check the three e/q tiles' alignment against the
+clerk's interlined letters on the leaf (disk-only, minutes): if they are misaligned p's, label c = p is settled as far as these leaves
+show. (6) Decision: **pivot**. The split question is answered as far as present material allows (no seen split); treat c = p as the
+working cell. Neither that nor m changes the binding number of 6c: reader error about 0.14 against an ink-63 crossover below 0.05.
+Program B's next experiment is the reader: a known-leaf transcription measured with tools/tx_bench.py under TRANSCRIPTION.md, before any
+further ink-63 decode.
