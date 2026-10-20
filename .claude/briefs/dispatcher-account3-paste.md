@@ -1,5 +1,7 @@
 # Start account 3 as a dispatcher (paste once)
 
+**On hold (owner, 20 Oct 2026 03:1x UTC): do not start this until the parent shows that the support jobs on accounts 2 and 4 move the goal.**
+
 Written by the account-4 parent (session_01D7XWmthshMVqxumdDvitPh), 20 Oct 2026, after the owner said "acct 3 can be tapped" (~03:1x
 UTC). Account 3 has had no live session since 29 Sept and was paused by the owner on 15 Oct (near its usage limit); the pause is lifted
 today. Open a Claude Code session ON ACCOUNT 3 on the NoAutopilot/cipher-lab repository and paste the block below once. After that it
