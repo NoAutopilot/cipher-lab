@@ -31,3 +31,8 @@ have to redo it and so it never happens again on any sorter page.
 5. Do NOT change, reconstruct or guess the owner's piles from his description or the screenshot. ROOM done line names what he must do
    (open the page in the same browser and press Recover, or re-sort if recovery is impossible).
 Report: cause (one sentence), recovery possible yes/no, fix and test results, five lines.
+
+Amendment (owner, 20 Oct 2026 ~03:0x UTC, relayed to the worker by send_message): he will redo the sort, so step 2 (recovery) is
+optional. Add an explicit "Save my sort" button that batch-writes the full arrangement, reads it back and shows "Saved: N tiles in M piles
+at HH:MM" or a red error; keep autosave and the unsaved banner. Clear the stale 02:54 partial-sort docs only after the incident file
+records them, so he starts from clean trays; ROOM line when the page is ready.
