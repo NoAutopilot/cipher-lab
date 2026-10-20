@@ -1,5 +1,5 @@
-# c269 (f.138v, the verso of c268) cipher lines 1-10 (MONL-C269A two blind passes + reconciliation, c269/c269_reconciled.tsv), decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py (MONL-C269A, 20 Oct 2026).
-# Grades: C = table letter equals the clear letter of ff.140r-141r (clear_f140.tsv) it faces in c269/align_c269.py (aligned after c268's end); M otherwise (conf M token, contradiction, or facing an unsure clear word); U unkeyed sign. C 120, M 167, U 23
+# c269 (f.138v, the verso of c268) cipher lines 1-33 (two blind passes + reconciliation per band: MONL-C269A L01-L10, MONL-C269B L11-L22, MONL-C269C L23-L33; c269/c269*_reconciled.tsv), decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py; graded from one joint alignment (MONL-C269C, 20 Oct 2026).
+# Grades: C = table letter equals the clear letter of ff.140r-141r (clear_f140.tsv) it faces in c269/align_c269.py (one joint L01-L33 alignment after c268's end); M otherwise (conf M token, contradiction, or facing an unsure clear word); U unkeyed sign. C 390, M 509, U 58
 L01	a d p t r a d t e [W:Sepbre] l e [?double_slash] o d t a d t d u i o u r [?x[faded_end]]
 L02	p a l b a s a d e u r s l u y a u r o d t h r e p a d u e
 L03	[?h_bar] o u r o n e c l p e r a [?x[9_with_oblique_stroke_through_stem]] d e a d a d p q u i e t [?double_slash] e p u e [?x[small_box_sign_at_margin]]
@@ -10,3 +10,26 @@ L07	s e d p u i s e b i e d d i s p a d [?double_slash] e r p o u r u e q q u e
 L08	l e d i t t e r m e i l p o i t e d [?h_bar] h e m i d p o i t p a r m e
 L09	p a r t e r e i e u o p u d e g r a d d e d i [?x[z_with_crossbar]] i [?double_slash] u l t e p o
 L10	l r g e d t q u i l f a u d r a q u i l r e [?double_slash] o [?h_bar] r e [?h_bar] a r [W:my]
+L11	q u e l e u o p a g e l u p [?h_bar] o s t e r a b e a u [?double_slash] o u p i l f a
+L12	q i i [?x[u]] a i t d e l n r g e n t [?h_bar] o m p t a n t a s o n a
+L13	o u r p a p e r [?h_bar] e q u i e s t d e u b a u [?x[reversed_3_/_epsilon]] s o l d n t y
+L14	o n t s e r u i s u r l n f r o n t i e r e e t p o u r a t
+L15	o a i r e s p u b l i [?double_slash] q u e s [?h_bar] n r i e m n s e u r e q u e s i
+L16	e s [?x[u]] u r o p [?h_bar] e s e r n a [?h_bar] e s t e y d i t i o n [W:Mare]
+L17	u o d s e n [?double_slash] o r e s u e q u i l y d e m n d d e r o n t
+L18	[?h_bar] e u i e d d r a a u o a r t i [?double_slash] u l i e r [W:Juno] [W:Nobre] e
+L19	e r e q u a [?double_slash] h n u u d e d e m e s d a m e s a e [?x[double_angle_«]] t e b a i
+L20	t r e [?double_slash] e d s m i l e s [?double_slash] u y o u t r e l e s i o p a u [?x[epsilon]] b
+L21	s e t a b i i e m e n t s [?x[xi-like_squiggle]] e d e u o p o a s q u e p o u
+L22	r e r o p u n f i l y e t f r a i r e d e r o p e t q u i a u
+L23	f n i t d e p e r u i [?double_slash] e p n u r o p u m e l o n n e p
+L24	f a i r e u n e l o r t d n r g e n t e n [?double_slash] o r e p q u
+L25	g p t g r n n d e f n u u e [W:Juno] p y d i e u [W:Mare] d
+L26	e s t h e u r q u e d n u o u r [?double_slash] e q u e [W:Mare] d e p y r
+L27	b n h e r n p [?double_slash] h n r g e n b a l [?x[plain_plus_cross]] n p e u n u d o p e n d
+L28	d e [W:Juno] p r o p o p e r u r o i p m o p e n s d e n
+L29	r e r a u u n n u q u i l [W:Mare] e n i a u l t s a d s q u
+L30	r o p e n s o i t n u c u d e m e n t i n [?double_slash] o m o d e i
+L31	r h u e n p r e p n n u q u a p r i e r d i e u q t i l n
+L32	s t e l n b o u e e h h e u r e u s e f i d a [?double_slash] e g r n n
+L33	d p e m e n t q u i l a f a i t

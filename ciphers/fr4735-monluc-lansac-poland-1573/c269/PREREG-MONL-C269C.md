@@ -56,6 +56,6 @@ decode.json job c269 as now; `tools/decode_key.py . --check` passing; target C/M
 ## Decision
 Belief: c269 L23-L33 are the cipher of the clear text from about f.140v L10 to the letter's end, continuing L11-L22 without a gap
 Would change it: B3 at or below the placed-shuffled p95 on f.140v:L09-f.141r:L11, any of 200 draws at or above it, or |indep_start - prev_end| > 1 lines
-Observed: <pending>
-Decision: <pending>
-Lesson: <pending>
+Observed: calibration reproduced (placed-shuffled power c268 L21-L30 0.650 vs p95 0.417 PASS; wrong window 0.408 vs p95 0.418 FAIL; span power deltas 0/0, wrong band -26 FAIL); L23-L33 pass agreement 216/291 = 0.742, 290 signs H 212 / M 78; B3 0.482 vs placed-shuffled p95 0.385 (mean 0.360, max 0.414, 0/200), L23-L28 0.507 vs p95 0.415, L29-L33 0.532 vs p95 0.413 (0/200 each), f.139 0.363; span rule B3 prev_end f.140v L10, indep_start f.140v L10, delta 0 PASS; then B2 by the identical rule: window f.140v:L02-f.141r:L11, 0.650 vs p95 0.425 (max 0.437, 0/200), prev_end f.140v L03, indep_start f.140v L02, delta -1 PASS
+Decision: continue -- B3 and B2 graded from one joint L01-L33 alignment (target C 714 -> 984); c269 is fully read and graded, so the next step is a separate verifier, not another band
+Lesson: take the previous band's end from the joint alignment WITHOUT the band under test -- with it included, a wrong band drags the end to itself and passes (delta 1); and register the span rule and window on data already in hand, then test on unread lines

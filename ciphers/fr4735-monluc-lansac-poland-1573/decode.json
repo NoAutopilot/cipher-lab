@@ -129,8 +129,8 @@
    "disagree_grade": "M",
    "unvoted_grade": "M",
    "header": [
-    "# c269 (f.138v, the verso of c268) cipher lines 1-10 (MONL-C269A two blind passes + reconciliation, c269/c269_reconciled.tsv), decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py (MONL-C269A, 20 Oct 2026).",
-    "# Grades: C = table letter equals the clear letter of ff.140r-141r (clear_f140.tsv) it faces in c269/align_c269.py (aligned after c268's end); M otherwise (conf M token, contradiction, or facing an unsure clear word); U unkeyed sign. {grades_sorted}"
+    "# c269 (f.138v, the verso of c268) cipher lines 1-33 (two blind passes + reconciliation per band: MONL-C269A L01-L10, MONL-C269B L11-L22, MONL-C269C L23-L33; c269/c269*_reconciled.tsv), decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py; graded from one joint alignment (MONL-C269C, 20 Oct 2026).",
+    "# Grades: C = table letter equals the clear letter of ff.140r-141r (clear_f140.tsv) it faces in c269/align_c269.py (one joint L01-L33 alignment after c268's end); M otherwise (conf M token, contradiction, or facing an unsure clear word); U unkeyed sign. {grades_sorted}"
    ],
    "token_columns": [
     [

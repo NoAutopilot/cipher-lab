@@ -1,0 +1,1 @@
+{"tokens": 290, "keyed": 278, "window": "f.140v:L09-f.141r:L11", "window_letters": 1054, "real": 0.482, "ctl_mean": 0.3603, "p95": 0.3849, "max": 0.4137, "ge_real": 0, "gate": true, "whole_letter": {"share": 0.482, "span": ["f.140v:L10", "f.140v:L17"]}, "other_letter_c270": 0.3633}
