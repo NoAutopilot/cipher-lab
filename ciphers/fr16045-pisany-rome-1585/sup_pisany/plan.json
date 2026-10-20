@@ -1,0 +1,82 @@
+{
+ "R1": {
+  "X": {
+   "kind": "target",
+   "left": "L06 s1 x1240-1600",
+   "right": "L06 s2 x0-360",
+   "truth": "shared"
+  },
+  "Y": {
+   "kind": "ctrl_same",
+   "left": "L02 s1 x1240-1600",
+   "right": "L02 s2 x0-360",
+   "truth": "shared"
+  },
+  "Z": {
+   "kind": "ctrl_decoy",
+   "left": "L07 s1 x1240-1600",
+   "right": "L03 s2 x0-360",
+   "truth": "none"
+  }
+ },
+ "R2": {
+  "X": {
+   "kind": "target",
+   "left": "L06 s1 x1240-1600",
+   "right": "L06 s2 x0-360",
+   "truth": "shared"
+  },
+  "Y": {
+   "kind": "ctrl_same",
+   "left": "L04 s1 x1240-1600",
+   "right": "L04 s2 x0-360",
+   "truth": "shared"
+  },
+  "Z": {
+   "kind": "ctrl_decoy",
+   "left": "L09 s1 x1240-1600",
+   "right": "L01 s2 x0-360",
+   "truth": "none"
+  }
+ },
+ "R3": {
+  "X": {
+   "kind": "target",
+   "left": "L08 s1 x1240-1600",
+   "right": "L08 s2 x0-360",
+   "truth": "shared"
+  },
+  "Y": {
+   "kind": "ctrl_decoy",
+   "left": "L01 s1 x1240-1600",
+   "right": "L05 s2 x0-360",
+   "truth": "none"
+  },
+  "Z": {
+   "kind": "ctrl_same",
+   "left": "L03 s1 x1240-1600",
+   "right": "L03 s2 x0-360",
+   "truth": "shared"
+  }
+ },
+ "R4": {
+  "X": {
+   "kind": "ctrl_same",
+   "left": "L07 s1 x1240-1600",
+   "right": "L07 s2 x0-360",
+   "truth": "shared"
+  },
+  "Y": {
+   "kind": "target",
+   "left": "L08 s1 x1240-1600",
+   "right": "L08 s2 x0-360",
+   "truth": "shared"
+  },
+  "Z": {
+   "kind": "ctrl_decoy",
+   "left": "L02 s1 x1240-1600",
+   "right": "L09 s2 x0-360",
+   "truth": "none"
+  }
+ }
+}
