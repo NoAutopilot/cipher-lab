@@ -255,7 +255,7 @@ TNA Discovery /records/v1/details, fetched once each: C6822019 (SP 105/60/121), 
 Read so far: unmeasured; no image of SP 105/60 f.135 has been seen (not digitised, IMG-AUDIT)
 - an image of SP 105/60 f.135 (and f.123, the cipher-word sibling) - blocker: needs-physical-access; not digitised (Discovery `digitised` False, IMG-AUDIT), copy order in REQUEST.md, batched under ASKS 134 (TNA page-copy batch)
 - a look at SP 106/10, /40, /42 (the only undated SP 106 sheets that could hold a general table; SP106-KEY, 9 Oct 2026) against the f.123 cipher words - blocker: needs-physical-access; no image of the sheets or of f.123 has been seen, so the comparison cannot run from the catalogue (their Discovery `digitised` flags were not read by SP106-KEY or by this disk-only job); add to the TNA batch (ASKS 134) if a copy order goes ahead
-- the item lists of SOAS PP MS 4/02/47 and the unrendered sub-series 01-25 - blocker: waiting-on the reply from SOAS Special Collections to outreach/soas-paget-ppms4-enquiry.md; drafted 15 Oct 2026 (SP105-SOAS), not yet sent: a separate session writes its gate-7 `checked:` line, then the person sends it
+- the item lists of SOAS PP MS 4/02/47 and the unrendered sub-series 01-25 - blocker: waiting-on the reply from SOAS Special Collections to outreach/soas-paget-ppms4-enquiry.md; drafted 15 Oct 2026 (SP105-SOAS), gate-7 checked the same day (OUT-CHECK-SOAS, 15 Oct 03:37 UTC), queued SEND-QUEUE.tsv row S8 (16 Oct, CONTRIBUTIONS.md row written), re-verified by SUP-PAGET (20 Oct 2026): send_queue_check.py passes, mailbox json body matches the draft verbatim, recipient address and phone re-read live from SOAS's own contact page unchanged. Not yet sent -- waiting on the owner's send-queue runner.
 
 ## Escalation (GAPS-FIX, 14-15 Oct 2026; Verdict updated by SP105-SOAS, 15 Oct 2026)
 - [x] siblings: SOAS PP MS 4/02 titles walked (D2-PRINT4) and the SP 105/60 neighbours listed (Premise check (c)): f.123 cipher words with readings, f.138, f.151, f.168; item-level SOAS enquiry drafted (SP105-SOAS)
@@ -265,4 +265,33 @@ Read so far: unmeasured; no image of SP 105/60 f.135 has been seen (not digitise
 - [ ] key-rebuild: needs the image (REQUEST.md, ASKS 134)
 - [ ] image-check: copy order, REQUEST.md and ASKS 134 (needs the person)
 - [n/a] retry: no failed attempt on this item to retry yet
-Verdict: keep going: 0 internal gaps; cheapest next: gate-7 check of outreach/soas-paget-ppms4-enquiry.md by a separate session (then the person's send), ~$0.5
+Verdict: keep going: 0 internal gaps; the gate-7 check (OUT-CHECK-SOAS, 15 Oct) and re-verification (SUP-PAGET, 20 Oct) are both done and SEND-QUEUE.tsv row S8 is queued; cheapest next: the owner's own send-queue runner sends S8, ~$0.
+
+## SUP-PAGET (20 Oct 2026, 03:1x UTC by date -u; gate-7 re-verification, not the drafter)
+
+Research-director wave 28 brief assigned a fresh gate-7 pre-send fact check of outreach/soas-paget-ppms4-enquiry.md. Found this draft already
+passed gate 7 once (OUT-CHECK-SOAS, 15 Oct 2026 03:37 UTC, 4 corrections applied that day) and was queued as SEND-QUEUE.tsv row S8 (16 Oct 2026,
+CONTRIBUTIONS.md row written); the NOTES.md Remaining gaps / Escalation text above had not been updated after OUT-CHECK-SOAS ran, so the brief's
+own "next steps" tool read a stale line and re-queued the same step.
+
+Re-verification done this pass, no corrections needed:
+- `tools/send_queue_check.py SEND-QUEUE.tsv --row S8`: all rungs present (draft exists, `checked:` line matches, `[SIGN-OFF]`/disclosure present,
+  CONTRIBUTIONS.md row found).
+- `outreach/mailbox/soas-paget-ppms4-enquiry.json` body compared byte-for-byte against outreach/soas-paget-ppms4-enquiry.md's body: identical.
+- Recipient re-read live from https://www.soas.ac.uk/soas-library/special-collections (1 fetch, HTTP 200, 20 Oct 2026): `special.collections@soas.ac.uk`
+  and `+44(0)207 898 4180` both still present, unchanged from the 15 Oct checked: line.
+- Draft's factual sentences (ambassador dates, SP 105/60/121 and /135 catalogue quotes, SP 106 untraced-key note, the 8 Oct sub-series 26-64/
+  "Page not found" rendering, the file-level 27/01 and 28/01 titles, sub-series 47) checked against NOTES.md's Source, Premise check, D2-PRINT4
+  and D4-SP105 sections: all match what is on file; no drift found.
+- `tools/intake_gate_check.py sp105-paget-1693`: `open` (edition/full-text citation found); `tools/dup_check.py sp105-paget-1693`: only this
+  session's own live claim.
+
+Six questions: (1) learned -- the stale Remaining-gaps/Escalation wording, not the draft, was the actual gap; the draft itself was already
+sound. (2) assumptions this result depends on -- SOAS's contact page and catalogue tree have not changed since 15/8 Oct 2026 (re-checked live
+for the contact page only; the catalogue tree itself was not re-fetched this pass, per caution 1 in the draft's own header, which the owner's
+runner re-opens before sending). (3) unverified -- caution 2 (the PP_MS_4 "Associated material" wording) likewise not re-fetched this pass.
+(4) alternative explanation -- none; this was a bookkeeping gap, not a factual one. (5) most informative next experiment -- none on this
+target; the question is answered by SOAS's reply, which needs the owner's send. (6) continue/pivot/acquire/reprioritize -- continue waiting on
+the send and the reply; no further internal step.
+
+Status unchanged: open.
