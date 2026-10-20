@@ -228,6 +228,12 @@ known-good range), so the key reads this letter -- but no run cleared the S bar 
 ("la desirons ... auons delibere de"), judge FAIL. This is the first Monluc text where a reading would be new content (no decipherment or
 print found). MONL-KING3 (account 2, cap 9) extends the same instrument to L11-L25.
 
+Check-in 122 (20 Oct 2026, 22:1x UTC). MONL-KING3: L11-L25 beat every shuffled key (run 43 vs p95 35) but fell under the clean f.138 range,
+so the band gate failed by its registered rule; jointly S 0 / M 850; best stretch "du frayre du roy de fra" (the king's brother, Anjou).
+The miss reads as transcription error (passes disagree 13-16%). Last machine step, registered in advance: MONL-KING4 (account 2, cap 4), one
+look-alike pass on the split positions, then continue only if a run clears the S bar; otherwise the king letter is parked as fragments
+read, with the owner's sign sort as the next instrument.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
