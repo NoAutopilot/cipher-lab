@@ -336,8 +336,9 @@ The sort landed 02:54 UTC (6 moves, 3 new piles; tx/ksplit/owner_sort.tsv, truth
 "do not mix trays" instruction, so it reads as "this p looks like tray B's shape"). ARI for the p vs e/q split -0.168 vs label-shuffle p95
 0.458 (1000 draws): no separation. Tray B (label 2; 21 m): three m's moved to two new piles; one truth class, not scorable.
 Six questions. (1) Learned: the human eye, like the machine sort (6e), groups label c's e/q tiles with its p's. Two independent
-instruments see one shape. (2) Assumptions: an unmoved tile means "same or unsure" (the page told the sorter to leave unsure tiles), so
-this is an absence of a seen difference, not a measured sameness; truth.tsv's three e/q labels are the clerk's decipherment, aligned to
+instruments see one shape. (2) Assumptions: the owner's method (his own account, 20 Oct ~03:0x UTC): he went through each pile, took out every tile that did
+not fit the rest, and grouped the removed tiles with look-alikes from either tray into new piles -- so an unmoved tile was judged to fit
+its pile (stronger than "unsure"), and the database's 6 moves / 3 new piles are the whole sort unless he reports more piles on screen; truth.tsv's three e/q labels are the clerk's decipherment, aligned to
 tiles by VIV-KSPLIT's map. (3) Unverified: whether those three alignments are right (a one-place slip in the pair alignment would turn a
 p tile into an "e" or "q"); whether the owner's A-b pile marks a real sub-shape of p. (4) Alternatives: label c is one sign the clerk
 read as p and, by context or slip, as e/q (then c=p is the key cell, homophone-free); or the difference is a stroke detail neither a
