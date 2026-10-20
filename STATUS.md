@@ -135,6 +135,14 @@ decide them. Grades unchanged at 72.7% H/C/S (D3 needs about 80%). Two image lea
 digits instead. SHERWOOD-REREAD (session_01Kw99VShSN1ECFM4s3LRfiY, Opus, cap 6) now runs two blind digit re-reads of those 33 groups, gated on
 the clear groups of the same lines. Vivonne sorter still empty (ASKS 173); ASKS 174 open.
 
+Check-in 109 (20 Oct 2026, 02:1x UTC). Owner go-ahead (~01:45): wave 28 queued 7 support jobs, each a folder's own named next step, for
+accounts 1 and 2, whose dispatchers had spawned 0 since the 16 Oct unblast because nothing was queued for them. Account 2 claimed
+SUP-NEVREVOL, SUP-CEPPO and SUP-PISANY at 02:11; account 1 (SUP-GIEVRE, SUP-PAGET, SUP-ELECTION, SUP-MONLUC) fires about 02:39.
+SHERWOOD-REREAD (USD 7.91, 1.32x cap): 3 digit corrections, 0 rows moved, H/C/S 72.7%; two S rows now doubted, checked by SHERWOOD-CELLS
+(session_01MmcQ2o3fawF7tmVUdWCymh, cap 3). VIV-MSORT (USD 1.45): machine shape sort under-powered at N=15, a non-test; the extra 67/70
+tiles add only 2 contrast tiles, so no re-run. Vivonne's label split now rests on the owner's sort (ASKS 173) or new material, and behind
+it on a reader below 5% error.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
