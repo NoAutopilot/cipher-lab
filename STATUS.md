@@ -210,6 +210,12 @@ surviving decipherment, not new content -- about USD 30 over 6 jobs. What it buy
 Cipher 1 leaf whose decipherment does not survive. MONL-CENSUS (account 2, Sonnet, cap 3) lists which leaves those are before any more
 reading. Account 2's worker costs are not visible here and are not yet in LEDGER.md.
 
+Check-in 119 (20 Oct 2026, 15:5x UTC). MONL-CENSUS (account 2): f.86 and f.138 are known text; the king's letter of 28 Apr 1573
+(ff.132-136, about 1,200+ signs) and the Cipher 2 leaf f.210 have no in-volume decipherment found -- the only Monluc material where a
+reading could be new content. MONL-KING (account 2, cap 9) searches the aid's decipherment leaves and print first, and decodes f.133
+L01-L10 with the verified key only if nothing is found, gated against a shuffled key and the f.138 positive control. Account 2 still has
+not ledgered its runs (only 3 matching rows).
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
