@@ -17,3 +17,11 @@ Gate: a read is placed in f.166 when its confirm-share margin over p95 >= 0.10 A
 the positive control (c269 vs f.140) meets the same two conditions; if the control fails, the test is a non-test (rule 3).
 Decision: either read placed -> f.166 is (part of) the king's letter's decipherment: known text, stop. Neither placed with the control
 passing -> f.166 is not the decipherment of f.133/f.136's first lines; go to brief step 2.
+
+## Decision
+(Block appended after the run: the PREREG pushed at fb5e20b84 lacked it; Belief and Would change restate the pre-run text above.)
+Belief: f.166 is a separate 2 May letter to the king, not the decipherment of ff.133/136 (different opening from f.132).
+Would change it: c258 or c264 placed in f.166 (confirm-share margin >= 0.10 over p95 AND exact run > null max), with c269 vs f.140 meeting the same.
+Observed: positive control c269 vs f.140: margin +0.035 (0.535 vs p95 0.500), run 14 vs null max 10 -- share clause FAILS, run clause passes; c269 vs f.166 (wrong letter): -0.069, run 7 vs 8. Targets vs f.166: c258 margin 0.000, run 6 vs null max 8; c264 margin -0.088, run 10 vs null max 10 (tie; the run is "pourlemoin", f.166r L19 "pour le moings", a stock phrase). Registered conjoint gate: non-test (control below gate). Post hoc, run clause only (control passes it): neither target placed.
+Decision: change -- the two-line whole-letter test cannot settle f.166 either way; a 10-line decode of f.133 (brief step 2) placed against both f.166 and f.140 is the test that can.
+Lesson: at two lines (~60-75 tokens) against a ~3,000-letter whole clear letter, confirm share under align_c268.py's local DP has no headroom over word-shuffled copies even at a true placement (+0.035); the exact-run statistic separates (14 vs max 10); gate whole-letter placement on the run, or read more lines.

@@ -1,0 +1,54 @@
+[
+ {
+  "read": "c269_read.tsv",
+  "clear": "clear_f140.tsv",
+  "tokens": 59,
+  "keyed": 58,
+  "real": 0.5345,
+  "p95": 0.5,
+  "margin": 0.0345,
+  "run": 14,
+  "run_null_max": 10,
+  "run_null_p95": 8,
+  "placed": false
+ },
+ {
+  "read": "c269_read.tsv",
+  "clear": "clear_f166.tsv",
+  "tokens": 59,
+  "keyed": 58,
+  "real": 0.431,
+  "p95": 0.5,
+  "margin": -0.069,
+  "run": 7,
+  "run_null_max": 8,
+  "run_null_p95": 8,
+  "placed": false
+ },
+ {
+  "read": "c258_read.tsv",
+  "clear": "clear_f166.tsv",
+  "tokens": 77,
+  "keyed": 74,
+  "real": 0.473,
+  "p95": 0.473,
+  "margin": 0.0,
+  "run": 6,
+  "run_null_max": 8,
+  "run_null_p95": 7,
+  "placed": false
+ },
+ {
+  "read": "c264_read.tsv",
+  "clear": "clear_f166.tsv",
+  "tokens": 70,
+  "keyed": 68,
+  "real": 0.3971,
+  "p95": 0.4853,
+  "margin": -0.0882,
+  "run": 10,
+  "run_null_max": 10,
+  "run_null_p95": 7,
+  "placed": false
+ }
+]

@@ -2142,3 +2142,73 @@ Verdict: keep going: 4 internal gaps; cheapest next: f.84's missing cipher and t
 
 ## Intake gate
 `python3 tools/gaps_check.py fr4735-monluc-lansac-poland-1573` -> "OK keep-going fr4735-monluc-lansac-poland-1573: keep going: 4 internal gap(s), 0 step(s) untried", exit 0.
+
+## MONL-KING (20 Oct 2026)
+Account 2, Opus, for the account-4 research director, wave 40 (`.claude/briefs/runs/2026-10-20-acct4-research-director-40.md`).
+`tools/dup_check.py`: "ok: no outstanding claim in the last 24h". Solver job: what was found and where it was not; no novelty class.
+
+**Step 1, decipherment search (brief order). Result: no decipherment or print of the 28 Apr 1573 letter to the king found.**
+- **Finding aid** (`sources/bnf-findingaids/2026-10-09/cc57784f.html`, read on disk): items 53-55 read "Lettres de JEAN DE MONLUC ... au roi
+  Charles IX et à la reine Catherine de Médicis. Avec chiffre et déchiffrement. Varsovie, 28 avril 1573. La lettre au roi Charles IX est
+  incomplète à la fin." The brief's other candidates cannot be this letter by the aid's own lines: items 17/18 (fol. 42-43) are Monluc to
+  the palatine of Sandomir and to "Sr Andreas", 1572; items 112-120 (fol. 266-272) are Gilles de Noailles from Constantinople, 1577. The
+  NOTES line carried since 7 Oct ("items 17/18/112-120 for a Monluc 28 Apr text") was a mis-step; line 57 of this file already said so.
+  The one Monluc "déchiffrement" to the king near that date is **item 66, f.166**: "La première lettre est un déchiffrement; elle est
+  datée de Varsovie, 2 mai 1573".
+- **f.132 seen** (c257, 1000 px; folio "132" read): clear opening "Sire Nous sommes si pres de voir le bien ou le mal de ma longue
+  negotiation ...", about 17 clear lines (Lanssac's help named), then "Et singulierement" and cipher to the foot of the page (about 25 lines,
+  "Juno", "Mare", "Juing", "Aost", "Juillet Sepbre" visible). No interlinear or marginal decipherment on the page. c256 is the folded sheet's
+  blank verso with the endorsement.
+- **f.166r-v seen and read once** (c316/c317 at 2800 px; `clear_f166.tsv`, 60 lines, single pass MK1, unreconciled): a clear text in a
+  decipherer's hand with strike-outs and interlinear corrections, opening "Sire il y a huict iours que nous commencasmes a faire ceste
+  depesche ... Il vous aura pleu entendre par la lettre que i'ay escripte a la Royne l'asseurance que de nouueau i'ay prinse du palatin de
+  Sendomirie", reporting the sr André Zbarosqui's three articles from the Lithuanians and the palatine of Lasqui (the Catholic party's
+  wish for Ernest, whether Monsieur would maintain his right by force, aid of 300,000 francs for 2,000 horse for four months), the Swedish
+  ambassador, ending "De Varsouie ce ii de May 1573" (f.166v). The reference to the queen's letter matches ff.140v-141r (Sendomierz).
+  Its opening differs from f.132's, so it is not a decipherment of the whole 28 Apr letter; its own cipher is not identified in the volume.
+- **Placement test (PREREG-MONL-KING.md, `king_f166.py`, `results_king_f166.json`)**: existing MONL-LEAF blind reads of f.133 (c258)
+  and f.136 (c264) L01-L02 against f.166 under align_c268.py's DP, 200 word-shuffled f.166 copies. Positive control c269 vs f.140: share
+  margin +0.035 (fails the registered 0.10 clause), exact run 14 vs null max 10 (passes). Targets: c258 margin 0.000, run 6 vs null max 8;
+  c264 margin -0.088, run 10 vs null max 10 (the tie is "pourlemoin" = f.166r L19 "pour le moings", stock phrase). Registered conjoint gate:
+  **non-test** (control below its share clause). Post hoc on the run clause alone: neither placed.
+- **Print** (fetched once, archive.org `_djvu.txt`): Noailles 1867 vols I-III grepped for f.132's opening ("si pres de voir", "longue
+  negociation"), f.166's phrases ("huict/huit jours que nous", Zbarosqui/Zbarowski variants, "trois cens mil francs", "deux mil chevaux"),
+  "28 avril 1573"/"2 mai 1573" forms, "Juno"/"Cur adhuc": no hit for this letter (the only "douzaine" is unrelated). Google Books API
+  (country=US, key): "Monluc" "28 avril 1573" and "Montluc" "Varsovie" "28 avril 1573" -> only the BnF manuscript catalogues (1868, 1895)
+  and an unrelated Monluc study; "huit jours que nous commençasmes" -> Blaise de Monluc's Commentaires (unrelated); four phrase queries
+  answered 503 twice (transient fault, logged). OpenAlex "Monluc Valence Pologne 1573 chiffre": 44 works, none a reading of this letter.
+  Tomokiyo's henryiii page (on disk): jargon values from f.132 ("et" = le Palatin, "Juno" = vous, ...), no plaintext. Lasry snapshot
+  (`sources/cyphersolver/2026-10-14-lasry`): no fr.4735 item.
+
+**Step 2 not run.** The brief caps openapi.bnf.fr at 14 requests for the job; step 1 used all 14 (5 overviews, 1 info.json, 2+1 full
+f.166 sides including one reset retry, and 5 region requests that 404'd because this worker put `/full/` after a region -- this worker's
+error). No f.133 crops are on disk (images/scratchleaf is untracked and absent here), so no lines could be read or decoded. No tokens graded.
+
+**Six questions.** (1) Learned: the brief's "17/18/112-120" candidates are excluded by the aid; the only nearby Monluc decipherment to the
+king, f.166, is a different 2 May letter whose cipher is not located; f.132's own page carries no decipherment; print shows nothing.
+(2) Assumptions: that the aid's "avec chiffre et déchiffrement" for 53-55 is fully accounted for by the queen's letter (ff.140-141);
+that f.166's 2 May date is the letter's own; that two blind lines of f.133/f.136 are read well enough to place. (3) Unverified: whether
+ff.133-136 belong to f.132's letter at all (the leaf order 132-136 is assumed, not read through), and whether f.166 deciphers a cipher
+that sits on ff.133-136 (a two-line test cannot exclude it). (4) Alternatives: ff.133-136 are the cipher of the 2 May letter (f.166) and
+f.132's cipher stops at the foot of f.132 ("incomplete at the end"); or the king's letter's decipherment went to the court and is not in
+this volume. (5) Most informative next experiment: brief step 2's ten-line decode of f.133, placed against **both** f.166 and f.140 with
+the exact-run statistic (control passes it), plus the same for the first five cipher lines of f.132 (c257) -- if f.132's cipher places in
+f.166, f.166 is known text. (6) Decision: **continue**, with step 2 re-run as its own job with a fresh openapi.bnf.fr budget.
+
+Reading so far: unchanged (f.86 150 tokens C 83/M 64/U 3; f.138r-v C 780/2133 target total, AUDIT.md). No token added or graded.
+
+## Remaining gaps (MONL-KING, 20 Oct 2026)
+Read so far: unchanged -- f.86 150 tokens C 83/M 64/U 3 and f.138r-v C 780/2133 target total (AUDIT.md); no token added or graded this job.
+- f.133 L01-L10 decode and placement against f.166 and f.140 (brief step 2) - blocker: not-attempted; this job's openapi.bnf.fr cap was spent in step 1; next: PREREG, crops of c258 L01-L10 and c257 cipher L01-L05, two blind passes, decode, run-clause placement vs f.166/f.140 plus the brief's judge gate, ~$7
+- f.166 clear text second pass - blocker: not-attempted; single pass MK1, unreconciled; next: one independent read of clear_f166.tsv from c316/c317 at 2800 px, ~$1
+- ff.213-223 Cipher 2 decipherment candidates, f.87 canvas, f.84's missing cipher - blocker: not-attempted; carried from MONL-CENSUS; next: one overview look each, ~$1.5
+
+## Escalation (MONL-KING, 20 Oct 2026)
+- [x] siblings: f.166 (item 66, the nearest Monluc decipherment to the king) read and tested against f.133/f.136 first lines; not placed (two-line, non-test on the registered gate)
+- [x] clear-pages: f.132's own clear opening seen; f.166r-v transcribed once
+- [x] known-keys: key.tsv (Tomokiyo Cipher 1) used for the placement test
+- [x] print: Noailles I-III grep, Google Books API, OpenAlex, Tomokiyo, Lasry snapshot -- no print of this letter found
+- [ ] key-rebuild: f.133 decode with key.tsv (brief step 2) not run; host cap spent
+- [x] image-check: f.132 (c257), f.166r-v (c316/c317) seen this job
+- [x] retry: one retry after a connection reset on c316; Google Books 503s retried once
+Verdict: keep going: 3 internal gaps; cheapest next: f.166 second pass, ~$1; most informative: brief step 2 as its own job, ~$7
