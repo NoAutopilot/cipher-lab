@@ -2059,3 +2059,15 @@ Read so far: f.86 150 tokens C 83 / M 64 / U 3 against its own gloss; c268 lines
 - [x] image-check: c268 L01-L30 native crops cut and reconciled by eye (MONL-C268B, MONL-L11, MONL-L16, MONL-L21, SUP-MONLUC); c269/c264/c258 L01-L02 crops (MONL-LEAF); c269 L01-L33 levelled native crops, two passes per band reconciled (MONL-C269A, MONL-C269B, MONL-C269C)
 - [n/a] retry: nothing has failed that a plain retry would change
 Verdict: keep going: 18 internal gaps; cheapest next: the separate verifier on c269 L01-L33 (~$3), then the f.140v L11-L16 clear re-read (~$1)
+
+## VERIFY-MONLUC (20 Oct 2026, account 4, Opus; verifier, separate session): rule 7, gate audit, N-class, depth
+
+Full record in AUDIT.md. Rule 7: `decode_key.py --check` up to date in a fresh tree (C 984 / M 1041 / U 108 of 2133), `align_c269.py --check` OK,
+`align_c268.py --check` OK; L23-L33 gate (0.482 vs p95 0.385, 0/200) and both span-rule deltas (0, -1) reproduce exactly;
+every PREREG precedes its reads (only Decision blocks appended later). L11-L22 was graded under a span rule written after its data (tested
+prospectively only on L23-L33): placement accepted, its span result not a test. Contradicting decodes among C: 0 of 901. **Correction:** 204
+of the 901 C tokens on f.138r-v sit in confirm runs of 1-2 letters, which a word-shuffled clear also yields at 0.30 of keyed tokens; the
+verifier grades them M: target C 780 / M 1245 / U 108 of 2133 (36.6%), f.138r-v C 697 / 1983 (35.1%); quote these, not 984, when the reading
+is described. Class **N0** (BnF aid items 53-55 "avec chiffre et déchiffrement"; the clear copy ff.140r-141r is the period plaintext), key
+`published` (Tomokiyo), text known in manuscript, not found in print where searched (Noailles I-III phrase grep, IA/OpenAlex; Google Books 503);
+result kind **key application**; depth **D2**. No SECOND-OPINIONS row (below N3). Scripts: audit/verify_runs.py, audit/verify_cruns.py.
