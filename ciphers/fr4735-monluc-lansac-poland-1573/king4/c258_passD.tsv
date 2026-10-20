@@ -1,0 +1,898 @@
+passage	pos	sign_id	conf	note	question
+L01	1	W:molina	M	lookalike UNSETTLED	L01.1: readers W:molino/W:molina, look-alike W:molino (L); which of W:molina, W:molino?
+L01	2	K40	H	passC	
+L01	3	K14	H	passC	
+L01	4	K01	H	passC	
+L01	5	K04	H	passC	
+L01	6	K59	M	lookalike 2-of-3	
+L01	7	K26	H	passC	
+L01	8	?x[vertical_stroke]	M	lookalike confirms	
+L01	9	K68	M	lookalike 2-of-3	
+L01	10	K02	H	passC	
+L01	11	K01	H	passC	
+L01	12	K10	H	passC	
+L01	13	K41	H	passC	
+L01	14	K04	H	passC	
+L01	15	K09	H	passC	
+L01	16	K14	H	passC	
+L01	17	K05	H	passC	
+L01	18	K11	M	lookalike 2-of-3	
+L01	19	K26	H	passC	
+L01	20	K38	H	passC	
+L01	21	K05	H	passC	
+L01	22	K32	H	passC	
+L01	23	K04	H	passC	
+L01	24	K33	H	passC	
+L01	25	K19	M	lookalike UNSETTLED	L01.25: readers K39/K19, look-alike K39 (L); which of K19, K39?
+L01	26	K40	H	passC	
+L01	27	K01	H	passC	
+L01	28	K29	H	passC	
+L01	29	K04	H	passC	
+L01	30	K05	H	passC	
+L01	31	K26	H	passC	
+L01	32	K23	H	passC	
+L01	33	K30	H	passC	
+L01	34	K39	M	lookalike 2-of-3	
+L01	35	K09	H	passC	
+L02	1	K37	H	passC	
+L02	2	K09	H	passC	
+L02	3	K08	H	passC	
+L02	4	K26	H	passC	
+L02	5	K39	H	passC	
+L02	6	K36	H	passC	
+L02	7	K05	H	passC	
+L02	8	K38	H	passC	
+L02	9	K14	H	passC	
+L02	10	K26	H	passC	
+L02	11	K11	H	passC	
+L02	12	K42	H	passC	
+L02	13	K04	M	lookalike 2-of-3	
+L02	14	K38	H	passC	
+L02	15	?double_slash	H	passC	
+L02	16	K05	H	passC	
+L02	17	K15	H	passC	
+L02	18	K39	H	passC	
+L02	19	K09	H	passC	
+L02	20	K10	H	passC	
+L02	21	K26	H	passC	
+L02	22	K04	H	passC	
+L02	23	K38	H	passC	
+L02	24	K05	H	passC	
+L02	25	K14	H	passC	
+L02	26	K36	H	passC	
+L02	27	K04	M	lookalike 2-of-3	
+L02	28	K04	H	passC	
+L02	29	K38	H	passC	
+L02	30	?x[short_vertical_stroke]	M	lookalike confirms	
+L02	31	K64	H	lookalike 2-of-3	
+L02	32	K39	M	lookalike 2-of-3	
+L02	33	K26	H	passC	
+L02	34	K59	M	lookalike 2-of-3	
+L02	35	K05	H	passC	
+L02	36	K36	H	passC	
+L02	37	K05	H	passC	
+L02	38	?double_slash	H	passC	
+L02	39	K33	H	passC	
+L02	40	K07	H	passC	
+L02	41	K04	H	passC	
+L02	42	K33	H	passC	
+L02	43	?x[A-like_sign_at_edge]	M	lookalike 2-of-3	
+L03	1	?x[C_with_horizontal_bar]	M	lookalike 2-of-3	
+L03	2	K05	H	passC	
+L03	3	K10	H	passC	
+L03	4	K26	H	passC	
+L03	5	K40	H	passC	
+L03	6	K11	H	passC	
+L03	7	K19	M	lookalike UNSETTLED	L03.7: readers K39/K19, look-alike K39 (L); which of K19, K39?
+L03	8	K04	H	passC	
+L03	9	K14	H	passC	
+L03	10	K36	H	passC	
+L03	11	K33	H	passC	
+L03	12	K39	H	passC	
+L03	13	K05	H	passC	
+L03	14	K36	H	lookalike 2-of-3	
+L03	15	K02	H	passC	
+L03	16	K26	H	passC	
+L03	17	K04	H	passC	
+L03	18	K29	H	passC	
+L03	19	K38	H	passC	
+L03	20	K05	H	passC	
+L03	21	K14	H	passC	
+L03	22	K38	H	passC	
+L03	23	K36	H	passC	
+L03	24	K05	H	passC	
+L03	25	K39	M	lookalike 2-of-3	
+L03	26	K26	H	passC	
+L03	27	K36	H	passC	
+L03	28	K09	H	passC	
+L03	29	K38	H	passC	
+L03	30	K04	H	passC	
+L03	31	K02	H	passC	
+L03	32	K10	H	passC	
+L03	33	K05	H	passC	
+L03	34	?x[vertical_stroke]	M	lookalike 2-of-3	
+L03	35	K15	H	passC	
+L03	36	?x[looped_l]	M	lookalike 2-of-3	
+L03	37	K05	H	passC	
+L04	1	K04	H	passC	
+L04	2	K05	H	passC	
+L04	3	K10	H	passC	
+L04	4	K26	H	passC	
+L04	5	K37	H	passC	
+L04	6	?x[vertical_stroke]	H	lookalike 2-of-3	
+L04	7	K06	H	passC	
+L04	8	K33	H	passC	
+L04	9	K30	H	passC	
+L04	10	K40	H	passC	
+L04	11	K26	H	passC	
+L04	12	K38	H	passC	
+L04	13	K10	H	passC	
+L04	14	K05	H	passC	
+L04	15	K14	H	passC	
+L04	16	K26	H	passC	
+L04	17	K04	H	passC	
+L04	18	K06	H	passC	
+L04	19	K01	H	lookalike 2-of-3	
+L04	20	K04	H	passC	
+L04	21	K14	H	passC	
+L04	22	K05	H	passC	
+L04	23	K38	H	passC	
+L04	24	K04	H	passC	
+L04	25	K04	H	passC	
+L04	26	K39	M	lookalike 2-of-3	
+L04	27	K38	H	passC	
+L04	28	K04	H	passC	
+L04	29	K04	H	passC	
+L04	30	K08	H	passC	
+L04	31	K15	H	passC	
+L04	32	K39	M	lookalike 2-of-3	
+L04	33	K59	M	lookalike 2-of-3	
+L04	34	K10	H	passC	
+L04	35	?x[L-shaped_stroke]	M	lookalike 2-of-3	
+L04	36	K04	H	passC	
+L04	37	K05	H	passC	
+L04	38	K49	M	lookalike 2-of-3	
+L04	39	K08	H	passC	
+L04	40	K05	H	passC	
+L04	41	K10	H	passC	
+L04	42	K26	H	passC	
+L05	1	K64	M	lookalike 2-of-3	
+L05	2	K61	M	lookalike 2-of-3	
+L05	3	K29	H	passC	
+L05	4	K01	H	passC	
+L05	5	K14	H	passC	
+L05	6	K01	H	passC	
+L05	7	K36	H	passC	
+L05	8	K30	H	passC	
+L05	9	K05	H	passC	
+L05	10	?x[short_vertical_stroke]	M	lookalike UNSETTLED	L05.10: readers ?x[short_vertical_stroke]/-, look-alike ?x[vertical_stroke] (M); which of ?x[short_vertical_stroke], ?x[vertical_stroke]?
+L05	11	K42	H	passC	
+L05	12	K04	H	passC	
+L05	13	?double_slash	H	passC	
+L05	14	K05	H	passC	
+L05	15	K14	H	passC	
+L05	16	K01	H	passC	
+L05	17	K09	H	passC	
+L05	18	K14	H	passC	
+L05	19	K04	H	passC	
+L05	20	K05	H	passC	
+L05	21	?double_slash	H	passC	
+L05	22	K26	H	passC	
+L05	23	K14	H	passC	
+L05	24	K38	H	passC	
+L05	25	K41	H	passC	
+L05	26	K31	H	passC	
+L05	27	K01	H	passC	
+L05	28	K09	H	passC	
+L05	29	K36	H	passC	
+L05	30	K05	H	passC	
+L05	31	K14	H	passC	
+L05	32	K09	H	passC	
+L05	33	K10	H	passC	
+L05	34	K09	H	passC	
+L05	35	K67	H	passC	
+L05	36	K39	H	passC	
+L05	37	K05	H	passC	
+L05	38	K26	H	passC	
+L05	39	K66	M	lookalike UNSETTLED	L05.39: readers K66/-, look-alike K66 (L); which of ?x[A-like_sign_at_edge], K66?
+L06	1	K21	H	passC	
+L06	2	K26	H	passC	
+L06	3	K15	M	lookalike confirms	
+L06	4	K15	H	passC	
+L06	5	K61	M	lookalike 2-of-3	
+L06	6	K42	H	passC	
+L06	7	W:Marie	H	passC	
+L06	8	K30	H	passC	
+L06	9	K41	H	passC	
+L06	10	K25	H	passC	
+L06	11	K26	H	passC	
+L06	12	K37	H	passC	
+L06	13	K09	H	passC	
+L06	14	K49	H	passC	
+L06	15	K33	H	passC	
+L06	16	K12	H	passC	
+L06	17	K37	H	passC	
+L06	18	W:Marie	H	passC	
+L06	19	K41	H	passC	
+L06	20	K39	H	passC	
+L06	21	K33	H	passC	
+L06	22	K12	H	passC	
+L06	23	K14	H	passC	
+L06	24	K04	H	passC	
+L06	25	K26	H	passC	
+L06	26	K10	M	lookalike 2-of-3	
+L06	27	K19	H	passC	
+L06	28	K02	H	passC	
+L06	29	K05	H	passC	
+L06	30	K36	H	passC	
+L06	31	K05	H	passC	
+L06	32	K04	H	passC	
+L06	33	K26	H	passC	
+L06	34	K10	H	passC	
+L07	1	K36	H	passC	
+L07	2	K05	H	passC	
+L07	3	K38	H	lookalike 2-of-3	
+L07	4	K10	M	lookalike 2-of-3	
+L07	5	K26	H	passC	
+L07	6	K04	H	passC	
+L07	7	K33	H	passC	
+L07	8	K09	H	passC	
+L07	9	K05	H	passC	
+L07	10	K12	H	passC	
+L07	11	K25	H	passC	
+L07	12	K05	H	passC	
+L07	13	K12	H	passC	
+L07	14	K09	H	passC	
+L07	15	K05	H	passC	
+L07	16	K14	H	passC	
+L07	17	K33	H	passC	
+L07	18	K39	H	passC	
+L07	19	K36	H	passC	
+L07	20	W:Juno	H	passC	
+L07	21	K26	H	passC	
+L07	22	K04	M	lookalike UNSETTLED	L07.22: readers K12/K04, look-alike K04 (L); which of K04, K12?
+L07	23	K14	H	passC	
+L07	24	K33	H	passC	
+L07	25	K36	H	passC	
+L07	26	K38	H	lookalike 2-of-3	
+L07	27	K05	H	passC	
+L07	28	K36	H	passC	
+L07	29	K10	M	lookalike 2-of-3	
+L07	30	K12	H	passC	
+L07	31	K04	M	lookalike 2-of-3	
+L07	32	K33	H	passC	
+L07	33	K68	H	passC	
+L07	34	K26	H	passC	
+L07	35	K62	M	lookalike UNSETTLED	L07.35: readers K58/K62, look-alike K62 (L); which of K58, K62?
+L07	36	K05	H	passC	
+L08	1	K26	H	passC	
+L08	2	K37	H	passC	
+L08	3	K38	H	lookalike confirms	
+L08	4	K12	H	passC	
+L08	5	K10	H	passC	
+L08	6	K33	H	passC	
+L08	7	K09	H	passC	
+L08	8	K05	H	passC	
+L08	9	K12	M	lookalike 2-of-3	
+L08	10	?double_slash	H	passC	
+L08	11	K33	H	passC	
+L08	12	K36	H	passC	
+L08	13	K05	H	passC	
+L08	14	K14	H	passC	
+L08	15	K15	H	passC	
+L08	16	K39	H	passC	
+L08	17	K26	H	passC	
+L08	18	K19	H	passC	
+L08	19	K05	H	passC	
+L08	20	K12	M	lookalike 2-of-3	
+L08	21	K42	H	passC	
+L08	22	K02	H	passC	
+L08	23	K33	H	passC	
+L08	24	K39	H	passC	
+L08	25	K07	H	passC	
+L08	26	K26	H	passC	
+L08	27	K25	H	passC	
+L08	28	K05	H	passC	
+L08	29	K10	H	passC	
+L08	30	K12	H	passC	
+L08	31	?double_slash	H	passC	
+L08	32	K08	H	passC	
+L08	33	K12	H	passC	
+L08	34	K10	H	passC	
+L08	35	K02	H	passC	
+L08	36	K36	H	passC	
+L08	37	K05	H	passC	
+L09	1	K05	H	passC	
+L09	2	K15	M	lookalike confirms	
+L09	3	K15	H	passC	
+L09	4	K61	M	lookalike 2-of-3	
+L09	5	K09	H	passC	
+L09	6	K10	H	passC	
+L09	7	K21	M	lookalike 2-of-3	
+L09	8	K12	H	passC	
+L09	9	W:Juillet	H	passC	
+L09	10	W:8cipbre	M	lookalike UNSETTLED	L09.10: readers W:8ep:bre/W:8cipbre, look-alike W:8ep:bre (L); which of W:8cipbre, W:8ep:bre?
+L09	11	K04	H	passC	
+L09	12	K19	H	passC	
+L09	13	K62	M	lookalike 2-of-3	
+L09	14	K12	H	passC	
+L09	15	K38	M	lookalike 2-of-3	
+L09	16	K09	H	passC	
+L09	17	K12	H	passC	
+L09	18	K19	H	passC	
+L09	19	K39	H	passC	
+L09	20	K37	H	passC	
+L09	21	K15	H	passC	
+L09	22	K39	H	passC	
+L09	23	K05	H	passC	
+L09	24	K14	H	passC	
+L09	25	K41	H	passC	
+L09	26	K61	M	lookalike 2-of-3	
+L09	27	K14	H	passC	
+L09	28	K33	H	passC	
+L09	29	K09	H	passC	
+L09	30	K36	M	lookalike 2-of-3	
+L09	31	K49	M	lookalike UNSETTLED	L09.31: readers K49/K27, look-alike K49 (L); which of K27, K49?
+L09	32	K34	M	lookalike 2-of-3	
+L09	33	K12	H	passC	
+L09	34	K36	H	passC	
+L10	1	K38	M	lookalike 2-of-3	
+L10	2	K12	H	passC	
+L10	3	K26	H	passC	
+L10	4	K37	H	passC	
+L10	5	?double_slash	H	passC	
+L10	6	K36	H	passC	
+L10	7	K09	H	passC	
+L10	8	K20	M	lookalike 2-of-3	
+L10	9	K66	H	passC	
+L10	10	K26	H	passC	
+L10	11	K38	M	lookalike 2-of-3	
+L10	12	K10	H	passC	
+L10	13	K12	H	passC	
+L10	14	K67	H	passC	
+L10	15	K05	H	passC	
+L10	16	K39	H	passC	
+L10	17	K36	H	passC	
+L10	18	K52	H	passC	
+L10	19	K15	M	lookalike confirms	
+L10	20	K15	H	passC	
+L10	21	K61	M	lookalike 2-of-3	
+L10	22	K05	H	passC	
+L10	23	K10	H	passC	
+L10	24	K26	H	passC	
+L10	25	K25	H	passC	
+L10	26	K19	H	passC	
+L10	27	K38	M	lookalike 2-of-3	
+L10	28	K14	H	passC	
+L10	29	K09	H	passC	
+L10	30	K05	H	passC	
+L10	31	K39	H	passC	
+L10	32	K36	H	passC	
+L10	33	K04	H	passC	
+L10	34	K52	H	passC	
+L10	35	K30	H	passC	
+L10	36	K12	H	passC	
+L10	37	K12	H	passC	
+L10	38	K67	H	passC	
+L10	39	K41	H	passC	
+L10	40	?double_slash	H	passC	
+L11	1	K49	M	lookalike UNSETTLED	L11.1: readers K24/K49, look-alike K24 (L); which of K24, K49?
+L11	2	K11	H	passC	
+L11	3	K33	H	passC	
+L11	4	K09	H	passC	
+L11	5	K07	H	passC	
+L11	6	K12	H	passC	
+L11	7	K05	H	passC	
+L11	8	K49	H	passC	
+L11	9	K12	H	passC	
+L11	10	K15	H	passC	
+L11	11	K39	H	passC	
+L11	12	K05	H	passC	
+L11	13	K21	M	lookalike 2-of-3	
+L11	14	K05	H	passC	
+L11	15	K12	H	passC	
+L11	16	K26	H	passC	
+L11	17	K48	M	lookalike UNSETTLED	L11.17: readers K33/K48, look-alike K33 (L); which of K33, K48?
+L11	18	K06	H	passC	
+L11	19	K12	H	passC	
+L11	20	K09	H	passC	
+L11	21	K49	H	passC	
+L11	22	K09	H	passC	
+L11	23	K05	H	passC	
+L11	24	K12	H	passC	
+L11	25	K26	H	passC	
+L11	26	K37	H	passC	
+L11	27	?double_slash	H	passC	
+L11	28	K49	H	passC	
+L11	29	K09	H	passC	
+L11	30	K07	H	passC	
+L11	31	K15	H	passC	
+L11	32	K39	H	passC	
+L11	33	K09	H	passC	
+L11	34	K12	H	passC	
+L11	35	K05	H	passC	
+L11	36	K49	H	passC	
+L11	37	K33	H	passC	
+L11	38	K09	H	passC	
+L12	1	K19	H	passC	
+L12	2	K38	M	lookalike 2-of-3	
+L12	3	K12	H	passC	
+L12	4	K23	H	passC	
+L12	5	K10	H	passC	
+L12	6	K05	H	passC	
+L12	7	?x[vertical_stroke]	M	lookalike confirms	
+L12	8	K24	M	lookalike 2-of-3	
+L12	9	K12	H	passC	
+L12	10	K36	H	passC	
+L12	11	K04	H	passC	
+L12	12	K19	H	passC	
+L12	13	K59	H	passC	
+L12	14	K33	H	passC	
+L12	15	K39	H	passC	
+L12	16	K36	H	passC	
+L12	17	K15	H	passC	
+L12	18	K39	H	passC	
+L12	19	K09	H	passC	
+L12	20	K10	H	passC	
+L12	21	K12	H	passC	
+L12	22	K09	H	passC	
+L12	23	K09	H	passC	
+L12	24	K39	H	passC	
+L12	25	K12	H	passC	
+L12	26	K09	H	passC	
+L12	27	K05	H	passC	
+L12	28	K10	H	passC	
+L12	29	K38	H	passC	
+L12	30	K09	H	passC	
+L12	31	K02	H	passC	
+L12	32	K12	H	passC	
+L12	33	K09	H	passC	
+L12	34	K10	H	passC	
+L12	35	K08	H	passC	
+L12	36	K05	H	passC	
+L12	37	K09	H	passC	
+L12	38	K14	H	passC	
+L12	39	K12	H	passC	
+L12	40	K36	H	passC	
+L13	1	K36	H	passC	
+L13	2	K26	H	passC	
+L13	3	K05	H	passC	
+L13	4	K12	H	passC	
+L13	5	K15	H	passC	
+L13	6	K39	H	passC	
+L13	7	K05	H	passC	
+L13	8	K30	H	passC	
+L13	9	K05	H	passC	
+L13	10	K49	M	lookalike 2-of-3	
+L13	11	K07	H	passC	
+L13	12	K12	H	passC	
+L13	13	K08	H	passC	
+L13	14	?double_slash	H	passC	
+L13	15	K26	H	passC	
+L13	16	K37	H	passC	
+L13	17	K07	H	passC	
+L13	18	K33	H	passC	
+L13	19	K09	H	passC	
+L13	20	K05	H	passC	
+L13	21	K12	H	passC	
+L13	22	K07	H	passC	
+L13	23	K10	H	passC	
+L13	24	K05	H	passC	
+L13	25	K49	M	lookalike 2-of-3	
+L13	26	K12	H	passC	
+L13	27	K05	H	passC	
+L13	28	K41	H	passC	
+L13	29	K09	H	passC	
+L13	30	K36	H	passC	
+L13	31	K05	H	passC	
+L13	32	K49	M	lookalike 2-of-3	
+L13	33	W:Mari	M	lookalike 2-of-3	
+L14	1	K49	M	lookalike 2-of-3	
+L14	2	K05	H	passC	
+L14	3	K12	H	passC	
+L14	4	?double_slash	H	passC	
+L14	5	K05	H	passC	
+L14	6	K07	H	passC	
+L14	7	K26	H	passC	
+L14	8	K39	H	passC	
+L14	9	K14	M	lookalike 2-of-3	
+L14	10	K49	M	lookalike 2-of-3	
+L14	11	K10	H	passC	
+L14	12	K12	H	passC	
+L14	13	?x[short_vertical_stroke]	H	lookalike confirms	
+L14	14	K04	H	passC	
+L14	15	K52	H	passC	
+L14	16	K23	H	passC	
+L14	17	K09	H	passC	
+L14	18	K05	H	passC	
+L14	19	K12	H	passC	
+L14	20	K10	H	passC	
+L14	21	K33	H	passC	
+L14	22	K09	H	passC	
+L14	23	K12	M	lookalike 2-of-3	
+L14	24	K27	H	passC	
+L14	25	W:Juing	H	passC	
+L14	26	?x[looped_C_with_o_superscript_bre]	M	lookalike 2-of-3	
+L14	27	K19	H	passC	
+L14	28	K26	H	passC	
+L14	29	K41	H	passC	
+L14	30	K05	H	passC	
+L14	31	K49	M	lookalike confirms	
+L14	32	K07	M	lookalike UNSETTLED	L14.32: readers -/K07, look-alike K07 (L); which of K07, K38?
+L14	33	K05	M	lookalike UNSETTLED	L14.33: readers K14/K05, look-alike K05 (L); which of K05, K14?
+L15	1	K04	H	passC	
+L15	2	?double_slash	H	passC	
+L15	3	K33	H	passC	
+L15	4	K12	H	passC	
+L15	5	K07	H	passC	
+L15	6	K20	H	passC	
+L15	7	K05	H	passC	
+L15	8	W:Mari	M	lookalike UNSETTLED	L15.8: readers W:Mari/W:Marie, look-alike W:Mari (L); which of W:Mari, W:Marie?
+L15	9	K12	H	passC	
+L15	10	K39	H	passC	
+L15	11	K33	H	passC	
+L15	12	K12	H	passC	
+L15	13	K49	M	lookalike 2-of-3	
+L15	14	K26	H	passC	
+L15	15	K39	H	passC	
+L15	16	K23	H	passC	
+L15	17	K05	H	passC	
+L15	18	K12	H	passC	
+L15	19	K61	M	lookalike 2-of-3	
+L15	20	?double_slash	H	passC	
+L15	21	K33	H	passC	
+L15	22	K39	H	passC	
+L15	23	K14	H	passC	
+L15	24	K04	H	passC	
+L15	25	K05	H	passC	
+L15	26	K06	H	passC	
+L15	27	K36	H	passC	
+L15	28	K12	H	passC	
+L15	29	K09	H	passC	
+L15	30	K05	H	passC	
+L15	31	K39	H	passC	
+L15	32	K36	H	passC	
+L15	33	K37	H	passC	
+L15	34	K05	H	passC	
+L16	1	K68	H	passC	
+L16	2	K33	H	passC	
+L16	3	K39	H	passC	
+L16	4	K34	H	passC	
+L16	5	K25	H	passC	
+L16	6	K05	H	passC	
+L16	7	K14	H	passC	
+L16	8	K14	H	passC	
+L16	9	K05	H	passC	
+L16	10	K36	M	lookalike 2-of-3	
+L16	11	K01	H	passC	
+L16	12	K04	H	passC	
+L16	13	?double_slash	H	passC	
+L16	14	K05	H	passC	
+L16	15	K14	H	passC	
+L16	16	K26	H	passC	
+L16	17	K38	H	passC	
+L16	18	K04	H	passC	
+L16	19	K05	H	passC	
+L16	20	K14	H	passC	
+L16	21	K26	H	passC	
+L16	22	K04	H	passC	
+L16	23	K06	H	passC	
+L16	24	K01	H	passC	
+L16	25	K19	H	passC	
+L16	26	K10	H	passC	
+L16	27	K38	H	passC	
+L16	28	K34	H	passC	
+L16	29	K01	H	passC	
+L16	30	K14	H	passC	
+L16	31	K26	H	passC	
+L16	32	K37	H	passC	
+L16	33	K10	H	passC	
+L16	34	K01	H	passC	
+L16	35	K21	M	lookalike UNSETTLED	L16.35: readers K21/K09, look-alike K21 (L); which of K09, K21?
+L16	36	K36	H	passC	
+L16	37	K26	H	passC	
+L16	38	K41	H	passC	
+L16	39	K10	M	lookalike UNSETTLED	L16.39: readers K11/K10, look-alike K11 (L); which of K10, K11?
+L16	40	K01	H	passC	
+L17	1	K41	H	passC	
+L17	2	K29	H	passC	
+L17	3	K36	H	passC	
+L17	4	K05	H	passC	
+L17	5	K01	H	passC	
+L17	6	K39	H	passC	
+L17	7	K05	H	passC	
+L17	8	?double_slash	H	passC	
+L17	9	K38	H	passC	
+L17	10	K01	H	passC	
+L17	11	K04	H	passC	
+L17	12	K08	H	passC	
+L17	13	K04	H	passC	
+L17	14	K05	H	passC	
+L17	15	K25	H	passC	
+L17	16	K09	H	passC	
+L17	17	K39	H	passC	
+L17	18	K05	H	passC	
+L17	19	K36	H	passC	
+L17	20	K37	H	passC	
+L17	21	K21	M	lookalike 2-of-3	
+L17	22	K38	H	passC	
+L17	23	K05	H	passC	
+L17	24	K04	H	passC	
+L17	25	K26	H	passC	
+L17	26	K27	H	passC	
+L17	27	K05	H	passC	
+L17	28	K04	H	passC	
+L17	29	K37	H	passC	
+L17	30	K26	H	passC	
+L17	31	K38	H	passC	
+L17	32	K41	H	passC	
+L17	33	K39	H	passC	
+L17	34	K05	H	passC	
+L17	35	K68	M	lookalike 2-of-3	
+L17	36	K38	H	passC	
+L17	37	K01	H	passC	
+L17	38	K32	H	passC	
+L18	1	K05	H	passC	
+L18	2	K39	H	passC	
+L18	3	K21	M	lookalike UNSETTLED	L18.3: readers K21/K09, look-alike K21 (L); which of K09, K21?
+L18	4	K14	H	passC	
+L18	5	K15	H	passC	
+L18	6	K38	H	passC	
+L18	7	K19	H	passC	
+L18	8	K14	M	lookalike 2-of-3	
+L18	9	K33	H	passC	
+L18	10	K04	H	passC	
+L18	11	K38	H	passC	
+L18	12	K02	H	passC	
+L18	13	K05	H	passC	
+L18	14	K04	H	passC	
+L18	15	K04	H	passC	
+L18	16	K05	H	passC	
+L18	17	K40	H	passC	
+L18	18	K14	M	lookalike 2-of-3	
+L18	19	K33	H	passC	
+L18	20	K39	H	passC	
+L18	21	K36	H	passC	
+L18	22	K26	M	lookalike confirms	
+L18	23	W:Maria	H	passC	
+L18	24	K36	H	passC	
+L18	25	K05	H	passC	
+L18	26	K68	H	passC	
+L18	27	K39	H	passC	
+L18	28	K10	H	passC	
+L18	29	K05	H	passC	
+L18	30	K36	H	passC	
+L18	31	W:Ad	H	passC	
+L19	1	K26	H	passC	
+L19	2	K37	H	passC	
+L19	3	K68	H	passC	
+L19	4	K36	H	passC	
+L19	5	K19	H	passC	
+L19	6	K38	H	passC	
+L19	7	K04	H	passC	
+L19	8	K05	H	passC	
+L19	9	K34	H	passC	
+L19	10	K39	H	passC	
+L19	11	K21	M	lookalike 2-of-3	
+L19	12	K14	H	passC	
+L19	13	K38	H	passC	
+L19	14	K36	H	passC	
+L19	15	K33	H	passC	
+L19	16	K21	M	lookalike 2-of-3	
+L19	17	K14	H	passC	
+L19	18	W:Sep.bro	H	lookalike 2-of-3	
+L19	19	K26	H	passC	
+L19	20	K04	H	passC	
+L19	21	K06	H	passC	
+L19	22	K01	H	passC	
+L19	23	K39	H	passC	
+L19	24	K05	H	passC	
+L19	25	K15	M	lookalike 2-of-3	
+L19	26	K36	H	passC	
+L19	27	K04	H	passC	
+L19	28	K05	H	passC	
+L19	29	K36	H	passC	
+L19	30	K04	H	passC	
+L19	31	K05	H	passC	
+L19	32	K14	H	passC	
+L19	33	K38	H	passC	
+L20	1	K34	H	passC	
+L20	2	K01	H	passC	
+L20	3	K36	H	passC	
+L20	4	K14	H	passC	
+L20	5	K05	H	passC	
+L20	6	K37	H	passC	
+L20	7	K10	H	passC	
+L20	8	K26	H	passC	
+L20	9	K38	H	passC	
+L20	10	K36	H	passC	
+L20	11	K05	H	passC	
+L20	12	K14	H	passC	
+L20	13	K01	H	passC	
+L20	14	K04	H	passC	
+L20	15	K39	H	passC	
+L20	16	K33	H	passC	
+L20	17	K04	H	passC	
+L20	18	K05	H	passC	
+L20	19	K14	H	passC	
+L20	20	K38	H	passC	
+L20	21	K26	H	passC	
+L20	22	K04	H	passC	
+L20	23	K05	H	passC	
+L20	24	K14	H	passC	
+L20	25	K30	H	passC	
+L20	26	K21	M	lookalike UNSETTLED	L20.26: readers K21/K09, look-alike K09 (L); which of K09, K21?
+L20	27	K36	H	passC	
+L20	28	K42	H	passC	
+L20	29	?x[T_with_long_hooked_overbar]	M	lookalike 2-of-3	
+L20	30	K04	H	passC	
+L20	31	K34	H	passC	
+L20	32	K33	H	passC	
+L20	33	K62	M	lookalike 2-of-3	
+L20	34	K01	H	passC	
+L20	35	?double_slash	H	passC	
+L20	36	K05	H	passC	
+L21	1	K07	H	lookalike 2-of-3	
+L21	2	K01	M	lookalike 2-of-3	
+L21	3	K36	H	passC	
+L21	4	K04	H	passC	
+L21	5	K05	H	passC	
+L21	6	K16	H	passC	
+L21	7	K25	H	passC	
+L21	8	K05	H	passC	
+L21	9	K36	H	passC	
+L21	10	K12	M	lookalike 2-of-3	
+L21	11	K26	H	passC	
+L21	12	K37	H	passC	
+L21	13	K05	H	passC	
+L21	14	K05	H	passC	
+L21	15	K26	H	passC	
+L21	16	K05	H	passC	
+L21	17	K04	H	passC	
+L21	18	?x[small_superscript_mark]	M	lookalike 2-of-3	
+L21	19	K06	H	passC	
+L21	20	K36	H	passC	
+L21	21	K01	M	lookalike 2-of-3	
+L21	22	K21	H	passC	
+L21	23	K16	H	passC	
+L21	24	K05	H	passC	
+L21	25	K04	H	passC	
+L21	26	K63	H	passC	
+L21	27	K36	H	passC	
+L21	28	K33	H	passC	
+L21	29	K21	H	passC	
+L21	30	K25	H	passC	
+L21	31	K26	H	passC	
+L21	32	K06	H	passC	
+L21	33	K36	H	passC	
+L21	34	K01	M	lookalike 2-of-3	
+L21	35	K12	M	lookalike 2-of-3	
+L21	36	K19	H	passC	
+L21	37	K05	H	passC	
+L22	1	K17	M	lookalike 2-of-3	
+L22	2	K37	H	passC	
+L22	3	K33	H	passC	
+L22	4	K01	M	lookalike 2-of-3	
+L22	5	K05	H	passC	
+L22	6	K17	M	lookalike 2-of-3	
+L22	7	K26	H	passC	
+L22	8	K37	H	passC	
+L22	9	K14	H	passC	
+L22	10	K01	M	lookalike 2-of-3	
+L22	11	K36	H	passC	
+L22	12	K33	H	passC	
+L22	13	K60	M	lookalike 2-of-3	
+L22	14	K05	H	passC	
+L22	15	K37	H	passC	
+L22	16	W:Juing	H	passC	
+L22	17	K19	M	lookalike 2-of-3	
+L22	18	K05	H	passC	
+L22	19	K30	H	passC	
+L22	20	K42	H	passC	
+L22	21	W:Maur	H	passC	
+L22	22	K06	H	passC	
+L22	23	K05	H	passC	
+L22	24	K36	H	passC	
+L22	25	K41	H	passC	
+L22	26	K14	H	passC	
+L22	27	K10	H	passC	
+L22	28	K39	M	lookalike UNSETTLED	L22.28: readers K19/K39, look-alike K39 (L); which of K19, K39?
+L23	1	K26	H	passC	
+L23	2	K12	H	passC	
+L23	3	K15	H	passC	
+L23	4	K39	H	passC	
+L23	5	K05	H	passC	
+L23	6	K04	H	passC	
+L23	7	K26	H	passC	
+L23	8	K39	H	passC	
+L23	9	K41	H	passC	
+L23	10	K30	H	passC	
+L23	11	W:Nobre	H	passC	
+L23	12	K41	H	passC	
+L23	13	K19	H	passC	
+L23	14	K05	H	passC	
+L23	15	K15	H	passC	
+L23	16	K39	H	passC	
+L23	17	K21	H	passC	
+L23	18	K10	H	passC	
+L23	19	W:Juno	H	passC	
+L23	20	K14	H	passC	
+L23	21	K30	H	passC	
+L23	22	K01	M	lookalike 2-of-3	
+L23	23	K21	H	passC	
+L23	24	K05	H	passC	
+L23	25	K11	H	passC	
+L23	26	K05	H	passC	
+L23	27	K40	M	lookalike 2-of-3	
+L23	28	K10	H	passC	
+L23	29	K12	H	passC	
+L23	30	K39	M	lookalike UNSETTLED	L23.30: readers -/K39, look-alike K39 (L); which of K38, K39?
+L24	1	K04	H	passC	
+L24	2	K26	H	passC	
+L24	3	K40	H	passC	
+L24	4	K39	H	passC	
+L24	5	K19	M	lookalike UNSETTLED	L24.5: readers K19/K63, look-alike K19 (L); which of K19, K63?
+L24	6	K12	H	passC	
+L24	7	K21	H	passC	
+L24	8	K15	H	passC	
+L24	9	K39	H	passC	
+L24	10	K05	H	passC	
+L24	11	K36	H	passC	
+L24	12	K10	H	passC	
+L24	13	K05	H	passC	
+L24	14	K14	H	passC	
+L24	15	K01	M	lookalike 2-of-3	
+L24	16	K05	M	lookalike 2-of-3	
+L24	17	K41	H	passC	
+L24	18	K21	H	passC	
+L24	19	K36	H	passC	
+L24	20	K05	H	passC	
+L24	21	K14	H	passC	
+L24	22	K04	H	passC	
+L24	23	K05	H	passC	
+L24	24	K25	H	passC	
+L24	25	K26	H	passC	
+L24	26	?double_slash	H	passC	
+L24	27	K41	H	passC	
+L24	28	K01	M	lookalike 2-of-3	
+L24	29	K19	M	lookalike UNSETTLED	L24.29: readers K19/K63, look-alike K19 (L); which of K19, K63?
+L24	30	K05	H	passC	
+L24	31	?double_slash	H	passC	
+L24	32	W:hatiue	M	lookalike 2-of-3	
+L24	33	K29	H	passC	
+L24	34	K05	H	passC	
+L25	1	K44	M	lookalike 2-of-3	
+L25	2	K10	H	passC	
+L25	3	K21	H	passC	
+L25	4	K26	H	passC	
+L25	5	K37	H	passC	
+L25	6	K59	H	passC	
+L25	7	K36	H	passC	
+L25	8	K05	H	passC	
+L25	9	K12	H	passC	
+L25	10	K05	H	passC	
+L25	11	?double_slash	H	passC	
+L25	12	K36	H	passC	
+L25	13	K33	H	passC	
+L25	14	K21	H	passC	
+L25	15	K16	H	passC	
+L25	16	K05	H	passC	
+L25	17	K14	H	passC	
+L25	18	K33	H	passC	
+L25	19	K59	H	passC	
+L25	20	K12	H	passC	
+L25	21	K05	H	passC	
+L25	22	K15	H	passC	
+L25	23	K39	H	passC	
+L25	24	K05	H	passC	
+L25	25	K21	H	passC	
+L25	26	K05	H	passC	
+L25	27	K17	M	lookalike 2-of-3	
+L25	28	K33	H	passC	
+L25	29	K21	H	passC	
+L25	30	K05	H	passC	
+L25	31	K17	M	lookalike 2-of-3	
+L25	32	K21	H	passC	
+L25	33	K59	H	passC	
+L25	34	K41	H	passC	
+L25	35	K10	H	passC	

@@ -1,0 +1,32 @@
+{
+ "N_keyed": 847,
+ "control_pass": false,
+ "range": {
+  "run": [
+   55,
+   56
+  ],
+  "lm": [
+   -1.462,
+   -1.4373
+  ]
+ },
+ "noise": {
+  "rate": 0.05,
+  "run_median": 55.0,
+  "lm_median": -1.5238,
+  "beats_null_share": 0.05
+ },
+ "target": {
+  "run": 43,
+  "lm": -1.5669,
+  "letters": 847,
+  "run_p95": 35,
+  "lm_p95": -2.165,
+  "beats_null": true,
+  "in_range": false,
+  "decode": "ypadie | ubaladipemetendouyaideebluisiheuretpemedt | equiledteprddt | lueiere | ogdo | eleymudprouerbediteptreueritdble | q | edeles | folyetlepedfadpetddutddhquil | derheleluiaparle | ed | epaipde | eptamairepilisueenyeqque | ladesirons | auonpdeluberedelretledoiendeniepour | edporterlndoueleestnloien | orepqueuenebougedeln | hnlbreeqquilyn | dulntinuusquepaupoirrpnrtnes | rixnetlnseureqqueledutpieurdelnnsa | rmoignernqueyeneqfnirienes | rigquineroiutnble | cnrduiourquilniiunieltibnilheipnrreenquelergnh | esgoienglerneairer | ren | egeuprln | debienloing | ueaerged | ongxe | nuonreubenu | oupdefrnieurseuoupdepperad | epetdepedfaultpapeslayrealaaireaue | tadhdediuersytedegedsetaueutaneuypqtupodtbeddeypoure | reuuler | esurutdepuyptroyp | edfaueqrderdeptparpesletrepaduodeptedeplyre | dpola | egarderderneseeeed | frayreduroydefranuessoaesesparooes | uele | ferapluenquedeual | auequyl | playemeylnudeyuunyquerlepaeayrepdede | aaue | iellyesirene | royrepoinequeyesoyesyial"
+ },
+ "gate": false
+}
+windows: [(55, -1.4373, 79, -2.2829, False), (56, -1.462, 23, -2.1462, True)]

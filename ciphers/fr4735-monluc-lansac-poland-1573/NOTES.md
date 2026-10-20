@@ -2355,3 +2355,72 @@ Read so far: f.86 150 tokens C 83/M 64/U 3; f.138r-v C 780/2133 (AUDIT.md); f.13
 - [x] image-check: c258 L11-L25 cut from the native page, overlay checked
 - [x] retry: none needed
 Verdict: keep going: 6 internal gaps; cheapest next: f.166 second pass, ~$1; most informative: f.133 third pass on reconciled positions, ~$3
+
+## MONL-KING4 (20 Oct 2026)
+Brief: .claude/briefs/runs/2026-10-20-acct4-research-director-43.md, JOB MONL-KING4 (account 2 for the account-4 parent; Opus; box 23:12-23:57 UTC).
+**PREREG** `PREREG-MONL-KING4.md`, pushed at c86088b5c before any crop was re-cut or re-read; scripts king2_score.py and king2_grade.py unchanged.
+**Deviations, logged:** (1) the brief said "hosts: none (crops on disk)"; the scratch crop folders are untracked, so they were re-derived with
+the folder's own regen_monlking2.sh + regen_monlking3.sh (1 request, openapi.bnf.fr). (2) `lookalike_pass.py windows`, not `packet`: the tool's
+docstring records packet-style prompts drawing re-reads that copied passC; windows hides the tile's label (MONL-LOOK's instrument on c268).
+(3) 124 split tiles, not 125: that is what ciphertext_c258.tsv holds (pass_a != pass_b).
+**Crop step** (pasted): `python3 ciphers/fr4735-monluc-lansac-poland-1573/king4/build_tiles.py` -> "tiles 124 (split 110, single 14); candidate ids 41;
+top pairs K38|K61 11, K01|K12 9, K09|K21 8, K19|K39 7, K14|K49 7, K04|K12 5"; then `python3 tools/lookalike_pass.py windows --tiles king4/c258_tiles.tsv
+--passc king4/c258_passC.tsv --crops-glob 'king4/strips/c258_{line}.jpg' --out king4 --run c258_win --status all --desc king4/desc.tsv` -> 124 windows,
+21 montages (king4/win/, gitignored, regenerable). Strips stitch the king2/king3 segments on region x (s1 0-1550, s2 from 1400).
+**Re-read:** 3 value-blind Opus calls (42/42/40 tiles; king4/reread_p1-3.tsv -> c258_reread.tsv): H 10, M 93, L 21 (no SPLIT or X_NEW). Vision 3, reconciliation by script.
+**Fold** (`king4/fold.py`, the tool's fixed 2-of-3 rule): `{"signs": 897, "flagged": 124, "relabelled": 29, "unsettled": 22, "residual": 0.025}`.
+Relabels: K14->K49 6, K19->K39 3, K04->K12 3, K01->K04 2, K14->K36 2, K01->K12 2, others 1 each. Unsettled (king4/focus.tsv, for the owner's
+sorter): K19|K39 3, K09|K21 3, K19|K63 2, K04|K12 1, K58|K62 1, K27|K49 1, singles and clear-word spellings. Echo check: on split tiles 63/92 firm re-reads
+equal passC (68.5%, under the registered 95% line, not an echo); firm = A 57, = B 45. Pass-to-pass figure after the fold: 2.5% open (2-of-3
+agreement, not accuracy; was 13-16% two-reader disagreement); control noise r floored at 0.05 as registered.
+**Scores** (king2_score.py, --noise 0.05; king4/results_*.json):
+
+| file | keyed | control | target run / p95 | target lm / p95 | range min (run, lm) | gate |
+|---|---|---|---|---|---|---|
+| L01-L10 | 354 | pass, 5 windows, 5% noise 20/20 | 40 / 29 | -1.599 / -2.212 | 31, -1.613 | PASS (was PASS, lm -1.605) |
+| L11-L25 | 493 | pass, 3 windows, 5% noise 20/20 | 43 / 35 | -1.547 / -2.133 | 47, -1.518 | FAIL (lm was -1.571, run 43) |
+| L01-L25 | 847 | w1 FAILS (shuffled run 79) | 43 / 35 | -1.567 / -2.165 | 55, -1.462 | non-test |
+
+**Grades** (king2_grade.py, joint): "null max run 52, threshold 52; target runs > thr: []" -> **S 0, M 847, U 50**. `python3 tools/decode_key.py
+ciphers/fr4735-monluc-lansac-poland-1573 --check` -> "ciphertext_c258.tsv: tokens 897: M 847, U 50 / reading up to date" (reading regenerated after the fold).
+Best M stretch unchanged in substance: L21-22 "...egarderderneseeeed | frayreduroydefra..." (context only, not graded).
+Judge (rule 7): `python3 tools/judge_plaintext.py specs/fr4735-monluc-lansac-poland-1573.json --file king4/decode_L11-L25_letters.txt` ->
+"FAIL language: score=-1.547, null_p99=-1.86, real_p05=-0.881, real_median=-0.785, mode=both, N=493 / ok words: cover=0.708, min=0.5 / FAIL";
+`--file king4/decode_joint_letters.txt` -> "FAIL language: score=-1.567, null_p99=-1.89, real_p05=-0.864, N=847 / ok words: cover=0.712 / FAIL".
+**Decision (registered): stop -- f.133 parked at D1 (fragments read)** pending the owner's sign sort; no further machine pass on f.133.
+Requests: openapi.bnf.fr 1. Subagents: 3 (Opus).
+
+Research-director questions:
+1. Learned: settling 29 of the 124 split tiles moved the band's lm by +0.024 per letter and the longest run by 0 letters; the band stays under the
+   clean f.138 range on both statistics while the 5%-noise control sits inside it. The two-reader splits are not what holds the run down.
+2. Assumptions the result depended on: Tomokiyo's Cipher 1 table is the key for f.133 (supported by the L01-L10 gate and both bands beating
+   shuffled keys); the 68-cell sheet is the full sign inventory; the line bands carry every sign once (s1/s2 overlap handled by readers);
+   the f.138 windows are a fair clean range for a letter to the king; a 2-of-3 machine vote approximates truth on these pairs.
+3. Unverified: the inventory and the K39|K19, K61|K38, K12|K04 boundaries (no person has sorted c258 tiles); errors on positions both readers
+   agreed on (never audited; `lookalike_pass.py audit` exists); whether f.133 mixes in code groups or nulls the f.138 text lacks.
+4. Alternatives: agreed-on errors (shared reader bias on the same look-alikes) rather than split ones; a register difference (a letter to the
+   king, more formulae and names, fewer lexicon words) depressing the lexicon run; nomenclator/name codes outside the table; a key variant
+   for a few cells in this letter.
+5. Most informative different experiment: the owner's sign sort on the c258 tiles of the three look-alike pairs (a person, not a fourth model
+   read), then one re-score; second, a `lookalike_pass.py audit` with planted errors on agreed positions to measure shared-bias error.
+6. Pivot / park: f.133 parked at D1 by the registered rule; the target stays workable on its other gaps (below).
+
+## Remaining gaps (MONL-KING4, 20 Oct 2026)
+Read so far: f.86 150 tokens C 83/M 64/U 3; f.138r-v C 780/2133 (AUDIT.md); f.133 L01-L25 897 tokens M 847/U 50, no S, parked at D1 after the look-alike fold.
+- f.133 (c258) transcription - blocker: not-attempted; machine passes closed by the registered MONL-KING4 decision (king4/fold.json, PREREG-MONL-KING4.md); next: build a tools/sign_sorter.py page for the K39|K19, K61|K38, K12|K04 tiles with king4/focus.tsv as --focus and file the owner's ASKS row with its link (the owner's sign sort is the next instrument), ~$2
+- f.133 agreed-position error - blocker: not-attempted; never measured; next: lookalike_pass.py audit with 5% planted errors on agreed c258 positions, ~$2
+- f.133 (c258) L26-L40 - blocker: not-attempted; held until the sort; next: same protocol after the sort, ~$5
+- S bar that does not grow with N - blocker: not-attempted; needs a new PREREG; next: per-segment run p-value against shuffled keys at the segment's own length, ~$1
+- f.132 (c257) cipher lines and c262/c264 order - blocker: not-attempted; carried; next: c257 cipher L01-L05 read and decoded, ~$3
+- f.166 clear text second pass - blocker: not-attempted; carried; next: one independent read of clear_f166.tsv, ~$1
+- ff.213-223 Cipher 2 decipherment candidates, f.87 canvas, f.84's missing cipher - blocker: not-attempted; carried from MONL-CENSUS; next: one overview look each, ~$1.5
+
+## Escalation (MONL-KING4, 20 Oct 2026)
+- [x] siblings: f.166 and ff.140-141 tested (MONL-KING2): neither
+- [x] clear-pages: no clear text for f.133 located (f.132's clear opening only)
+- [x] known-keys: key.tsv (Tomokiyo Cipher 1) applied to L01-L25 after the fold; beats shuffled keys, band under the clean control range
+- [x] print: carried from MONL-KING: nothing for this letter
+- [ ] key-rebuild: the owner's sign sort on the three look-alike pairs (tools/sign_sorter.py), then one re-score
+- [x] image-check: look-alike window re-read of all 124 split tiles (this pass), 29 relabels, 22 open in king4/focus.tsv
+- [x] retry: none needed
+Verdict: keep going: 7 internal gaps; cheapest next: f.166 second pass, ~$1; most informative: the sign-sorter page for the owner on f.133's look-alike pairs, ~$2

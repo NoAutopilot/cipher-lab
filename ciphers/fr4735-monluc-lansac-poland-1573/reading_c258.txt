@@ -1,27 +1,27 @@
 # c258 (f.133) cipher lines 1-25 (L01-L10 MONL-KING2, king2/; L11-L25 MONL-KING3, king3/; 20 Oct 2026: two blind passes + one reconciliation call each), decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py.
-# Grades: S = key letter inside a lexicon run longer than the shuffled-key max and 42 letters (king2/king2_grade.py; none qualify); M = other keyed token; U = unkeyed sign. M 850, U 47
+# Grades: S = key letter inside a lexicon run longer than the shuffled-key max and 42 letters (king2/king2_grade.py; none qualify); M = other keyed token; U = unkeyed sign. M 847, U 50
 L01	[W:molina] y p a d i e [?x[vertical_stroke]] u b a l a d i p e m e t e n d o u y a i d e e b l u i
-L02	s i h e u r e t p e m e a t [?double_slash] e q u i l e d t e p r a d t [?x[short_vertical_stroke]] l u e i e r e [?double_slash] o g d o n
-L03	e e l e y m u d p r o u e p b e d i t e p t r e u e r i t d b l e [?x[short_vertical_stroke]] q [?x[looped_l]] e
+L02	s i h e u r e t p e m e d t [?double_slash] e q u i l e d t e p r d d t [?x[short_vertical_stroke]] l u e i e r e [?double_slash] o g d o [?x[A-like_sign_at_edge]]
+L03	[?x[C_with_horizontal_bar]] e l e y m u d p r o u e r b e d i t e p t r e u e r i t d b l e [?x[vertical_stroke]] q [?x[looped_l]] e
 L04	d e l e s [?x[vertical_stroke]] f o l y e t l e p e d f a d p e t d d u t d d h q u i l [?x[L-shaped_stroke]] d e r h e l e
 L05	l u i a p a r l e [?x[short_vertical_stroke]] e d [?double_slash] e p a i p d e [?double_slash] e p t a m a i r e p i l i s u e e n
 L06	y e q q u e [W:Marie] l a d e s i r o n s [W:Marie] a u o n p d e l u b e r e d e l
-L07	r e u l e d o i e n d e n i e p o u r [W:Juno] e d p o r t e r l n d o u e l e
-L08	e s t n l o i e d [?double_slash] o r e p q u e u e d e b o u g e d e l n [?double_slash] h n l b r e
-L09	e q q u i l y n [W:Juillet] [W:8cipbre] d u m n t i n u u s q u e p a u p o i p r p n r
+L07	r e t l e d o i e n d e n i e p o u r [W:Juno] e d p o r t e r l n d o u e l e
+L08	e s t n l o i e n [?double_slash] o r e p q u e u e n e b o u g e d e l n [?double_slash] h n l b r e
+L09	e q q u i l y n [W:Juillet] [W:8cipbre] d u l n t i n u u s q u e p a u p o i r r p n r
 L10	t n e s [?double_slash] r i x n e t l n s e u r e q q u e l e d u t p i e u r d e l n n s a [?double_slash]
 L11	r m o i g n e r n q u e y e n e q f n i r i e n e s [?double_slash] r i g q u i n e r o i
-L12	u t n b l e [?x[vertical_stroke]] u n r d u i o u r q u i l n i i u n i e l t i b n i l h e i p n r
-L13	r e e n q u e l e p g n h [?double_slash] e s g o i e n g l e p n e a i r e p [W:Mari]
-L14	p e n [?double_slash] e g e u p p l n [?x[short_vertical_stroke]] d e b i e n l o i d g [W:Juing] [?x[looped_C_with_o_superscript_bre]] u e a e r g e
-L15	d [?double_slash] o n g x e [W:Mari] n u o n p e u b e n u [?double_slash] o u p d e f r n i e u r s e
+L12	u t n b l e [?x[vertical_stroke]] c n r d u i o u r q u i l n i i u n i e l t i b n i l h e i p n r
+L13	r e e n q u e l e r g n h [?double_slash] e s g o i e n g l e r n e a i r e r [W:Mari]
+L14	r e n [?double_slash] e g e u p r l n [?x[short_vertical_stroke]] d e b i e n l o i n g [W:Juing] [?x[looped_C_with_o_superscript_bre]] u e a e r g e
+L15	d [?double_slash] o n g x e [W:Mari] n u o n r e u b e n u [?double_slash] o u p d e f r n i e u r s e
 L16	u o u p d e p p e r a d [?double_slash] e p e t d e p e d f a u l t p a p e s l a y r e a l a
 L17	a i r e a u e [?double_slash] t a d h d e d i u e r s y t e d e g e d s e t a u e u t a n
 L18	e u y p q t u p o d t b e d d e y p o u r e [W:Maria] r e u u l e r [W:Ad]
-L19	e s u r u t d e p u y p t r o y p [W:Sep.bro] e d f a u e u r d e r d e p t
+L19	e s u r u t d e p u y p t r o y p [W:Sep.bro] e d f a u e q r d e r d e p t
 L20	p a r p e s l e t r e p a d u o d e p t e d e p l y r e [?x[T_with_long_hooked_overbar]] d p o l a [?double_slash] e
-L21	g a r d e r d e r a e s e e e e d u f r a y r e d u r o y d e f r a a u e
-L22	s s o a e p e s p a r o o e s [W:Juing] u e l e [W:Maur] f e r a p l u
+L21	g a r d e r d e r n e s e e e e d [?x[small_superscript_mark]] f r a y r e d u r o y d e f r a n u e
+L22	s s o a e s e s p a r o o e s [W:Juing] u e l e [W:Maur] f e r a p l u
 L23	e n q u e d e u a l [W:Nobre] a u e q u y l [W:Juno] p l a y e m e y l n u
 L24	d e y u u n y q u e r l e p a e a y r e p d e d e [?double_slash] a a u e [?double_slash] [W:hatiue] i e
 L25	l l y e s i r e n e [?double_slash] r o y r e p o i n e q u e y e s o y e s y i a l

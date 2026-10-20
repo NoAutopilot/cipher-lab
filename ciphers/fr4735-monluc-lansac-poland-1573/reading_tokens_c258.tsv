@@ -46,7 +46,7 @@ L02	9	K14	p	M
 L02	10	K26	e	M
 L02	11	K11	m	M
 L02	12	K42	e	M
-L02	13	K01	a	M
+L02	13	K04	d	M
 L02	14	K38	t	M
 L02	15	?double_slash	?	U
 L02	16	K05	e	M
@@ -60,7 +60,7 @@ L02	23	K38	t	M
 L02	24	K05	e	M
 L02	25	K14	p	M
 L02	26	K36	r	M
-L02	27	K01	a	M
+L02	27	K04	d	M
 L02	28	K04	d	M
 L02	29	K38	t	M
 L02	30	?x[short_vertical_stroke]	?	U
@@ -76,8 +76,8 @@ L02	39	K33	o	M
 L02	40	K07	g	M
 L02	41	K04	d	M
 L02	42	K33	o	M
-L02	43	K66	n	M
-L03	1	K52	e	M
+L02	43	?x[A-like_sign_at_edge]	?	U
+L03	1	?x[C_with_horizontal_bar]	?	U
 L03	2	K05	e	M
 L03	3	K10	l	M
 L03	4	K26	e	M
@@ -90,7 +90,7 @@ L03	10	K36	r	M
 L03	11	K33	o	M
 L03	12	K39	u	M
 L03	13	K05	e	M
-L03	14	K14	p	M
+L03	14	K36	r	M
 L03	15	K02	b	M
 L03	16	K26	e	M
 L03	17	K04	d	M
@@ -101,7 +101,7 @@ L03	21	K14	p	M
 L03	22	K38	t	M
 L03	23	K36	r	M
 L03	24	K05	e	M
-L03	25	K19	u	M
+L03	25	K39	u	M
 L03	26	K26	e	M
 L03	27	K36	r	M
 L03	28	K09	i	M
@@ -110,7 +110,7 @@ L03	30	K04	d	M
 L03	31	K02	b	M
 L03	32	K10	l	M
 L03	33	K05	e	M
-L03	34	?x[short_vertical_stroke]	?	U
+L03	34	?x[vertical_stroke]	?	U
 L03	35	K15	q	M
 L03	36	?x[looped_l]	?	U
 L03	37	K05	e	M
@@ -139,13 +139,13 @@ L04	22	K05	e	M
 L04	23	K38	t	M
 L04	24	K04	d	M
 L04	25	K04	d	M
-L04	26	K19	u	M
+L04	26	K39	u	M
 L04	27	K38	t	M
 L04	28	K04	d	M
 L04	29	K04	d	M
 L04	30	K08	h	M
 L04	31	K15	q	M
-L04	32	K19	u	M
+L04	32	K39	u	M
 L04	33	K59	i	M
 L04	34	K10	l	M
 L04	35	?x[L-shaped_stroke]	?	U
@@ -231,7 +231,7 @@ L06	33	K26	e	M
 L06	34	K10	l	M
 L07	1	K36	r	M
 L07	2	K05	e	M
-L07	3	K61	u	M
+L07	3	K38	t	M
 L07	4	K10	l	M
 L07	5	K26	e	M
 L07	6	K04	d	M
@@ -273,7 +273,7 @@ L08	5	K10	l	M
 L08	6	K33	o	M
 L08	7	K09	i	M
 L08	8	K05	e	M
-L08	9	K04	d	M
+L08	9	K12	n	M
 L08	10	?double_slash	?	U
 L08	11	K33	o	M
 L08	12	K36	r	M
@@ -284,7 +284,7 @@ L08	16	K39	u	M
 L08	17	K26	e	M
 L08	18	K19	u	M
 L08	19	K05	e	M
-L08	20	K04	d	M
+L08	20	K12	n	M
 L08	21	K42	e	M
 L08	22	K02	b	M
 L08	23	K33	o	M
@@ -314,7 +314,7 @@ L09	9	W:Juillet	?	U
 L09	10	W:8cipbre	?	U
 L09	11	K04	d	M
 L09	12	K19	u	M
-L09	13	K11	m	M
+L09	13	K62	l	M
 L09	14	K12	n	M
 L09	15	K38	t	M
 L09	16	K09	i	M
@@ -331,7 +331,7 @@ L09	26	K61	u	M
 L09	27	K14	p	M
 L09	28	K33	o	M
 L09	29	K09	i	M
-L09	30	K14	p	M
+L09	30	K36	r	M
 L09	31	K49	r	M
 L09	32	K34	p	M
 L09	33	K12	n	M
@@ -421,7 +421,7 @@ L12	4	K23	b	M
 L12	5	K10	l	M
 L12	6	K05	e	M
 L12	7	?x[vertical_stroke]	?	U
-L12	8	K19	u	M
+L12	8	K24	c	M
 L12	9	K12	n	M
 L12	10	K36	r	M
 L12	11	K04	d	M
@@ -463,7 +463,7 @@ L13	6	K39	u	M
 L13	7	K05	e	M
 L13	8	K30	l	M
 L13	9	K05	e	M
-L13	10	K14	p	M
+L13	10	K49	r	M
 L13	11	K07	g	M
 L13	12	K12	n	M
 L13	13	K08	h	M
@@ -478,16 +478,16 @@ L13	21	K12	n	M
 L13	22	K07	g	M
 L13	23	K10	l	M
 L13	24	K05	e	M
-L13	25	K14	p	M
+L13	25	K49	r	M
 L13	26	K12	n	M
 L13	27	K05	e	M
 L13	28	K41	a	M
 L13	29	K09	i	M
 L13	30	K36	r	M
 L13	31	K05	e	M
-L13	32	K14	p	M
+L13	32	K49	r	M
 L13	33	W:Mari	?	U
-L14	1	K14	p	M
+L14	1	K49	r	M
 L14	2	K05	e	M
 L14	3	K12	n	M
 L14	4	?double_slash	?	U
@@ -496,7 +496,7 @@ L14	6	K07	g	M
 L14	7	K26	e	M
 L14	8	K39	u	M
 L14	9	K14	p	M
-L14	10	K14	p	M
+L14	10	K49	r	M
 L14	11	K10	l	M
 L14	12	K12	n	M
 L14	13	?x[short_vertical_stroke]	?	U
@@ -509,7 +509,7 @@ L14	19	K12	n	M
 L14	20	K10	l	M
 L14	21	K33	o	M
 L14	22	K09	i	M
-L14	23	K04	d	M
+L14	23	K12	n	M
 L14	24	K27	g	M
 L14	25	W:Juing	?	U
 L14	26	?x[looped_C_with_o_superscript_bre]	?	U
@@ -532,7 +532,7 @@ L15	9	K12	n	M
 L15	10	K39	u	M
 L15	11	K33	o	M
 L15	12	K12	n	M
-L15	13	K14	p	M
+L15	13	K49	r	M
 L15	14	K26	e	M
 L15	15	K39	u	M
 L15	16	K23	b	M
@@ -563,7 +563,7 @@ L16	6	K05	e	M
 L16	7	K14	p	M
 L16	8	K14	p	M
 L16	9	K05	e	M
-L16	10	K49	r	M
+L16	10	K36	r	M
 L16	11	K01	a	M
 L16	12	K04	d	M
 L16	13	?double_slash	?	U
@@ -628,7 +628,7 @@ L17	31	K38	t	M
 L17	32	K41	a	M
 L17	33	K39	u	M
 L17	34	K05	e	M
-L17	35	K19	u	M
+L17	35	K68	u	M
 L17	36	K38	t	M
 L17	37	K01	a	M
 L17	38	K32	n	M
@@ -687,7 +687,7 @@ L19	21	K06	f	M
 L19	22	K01	a	M
 L19	23	K39	u	M
 L19	24	K05	e	M
-L19	25	K61	u	M
+L19	25	K15	q	M
 L19	26	K36	r	M
 L19	27	K04	d	M
 L19	28	K05	e	M
@@ -741,7 +741,7 @@ L21	6	K16	r	M
 L21	7	K25	d	M
 L21	8	K05	e	M
 L21	9	K36	r	M
-L21	10	K01	a	M
+L21	10	K12	n	M
 L21	11	K26	e	M
 L21	12	K37	s	M
 L21	13	K05	e	M
@@ -749,7 +749,7 @@ L21	14	K05	e	M
 L21	15	K26	e	M
 L21	16	K05	e	M
 L21	17	K04	d	M
-L21	18	K61	u	M
+L21	18	?x[small_superscript_mark]	?	U
 L21	19	K06	f	M
 L21	20	K36	r	M
 L21	21	K01	a	M
@@ -766,7 +766,7 @@ L21	31	K26	e	M
 L21	32	K06	f	M
 L21	33	K36	r	M
 L21	34	K01	a	M
-L21	35	K01	a	M
+L21	35	K12	n	M
 L21	36	K19	u	M
 L21	37	K05	e	M
 L22	1	K17	s	M
@@ -774,7 +774,7 @@ L22	2	K37	s	M
 L22	3	K33	o	M
 L22	4	K01	a	M
 L22	5	K05	e	M
-L22	6	K14	p	M
+L22	6	K17	s	M
 L22	7	K26	e	M
 L22	8	K37	s	M
 L22	9	K14	p	M

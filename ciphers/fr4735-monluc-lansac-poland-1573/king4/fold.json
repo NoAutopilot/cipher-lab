@@ -1,0 +1,18 @@
+{
+ "reconcile": {
+  "signs": 897,
+  "flagged": 124,
+  "relabelled": 29,
+  "unsettled": 22,
+  "residual": 0.025
+ },
+ "changed_in_file": 29,
+ "firm": 103,
+ "firm_eq_A": 57,
+ "firm_eq_B": 45,
+ "firm_eq_passC": 73,
+ "split_firm": 92,
+ "split_firm_eq_passC": 63,
+ "echo_share": 0.685,
+ "r": 0.05
+}
