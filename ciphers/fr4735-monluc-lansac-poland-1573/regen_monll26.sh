@@ -7,10 +7,16 @@ UA="cipher-lab research script (contact via repository)"
 curl -sS -A "$UA" -o $D/src_c268_600_4180_3100_800.jpg "$B/f268/600,4180,3100,800/max/0/default.jpg"
 python3 ../../tools/iiif_lines.py --image $D/src_c268_600_4180_3100_800.jpg --out $D/crops --prefix c268f \
   --deskew-region --mask-neighbours --debug --max-width 1700 --overlap 150
-# SUP-MONLUC: automatic centres were off (~40 px, a spurious band); re-cut with eye centres from the debug overlay
-rm -rf $D/crops
-python3 ../../tools/iiif_lines.py --image $D/src_c268_600_4180_3100_800.jpg --out $D/crops --prefix c268f \
-  --deskew-region --mask-neighbours --debug --max-width 1700 --overlap 150 --centres 122,240,352,465,572,680
-# band c268f_L01 = c268 L25 (opens K04 K05 K10 K41 K34 K26, passes/c268e_reconciled.tsv L25), c268f_L02..L06 = c268 L26..L30
-mkdir -p $D/l26
-for i in 2 3 4 5 6; do n=$((i+24)); for s in 1 2; do cp $D/crops/c268f_L0${i}_s$s.jpg $D/l26/c268f_L${n}_s$s.jpg; done; done
+# SUP-MONLUC: tools/iiif_lines.py's auto bands were off (spurious band); with --centres its s2 segments still sat ~50 px off the
+# line (the deskew it reported, -2.70 deg, is too shallow for the right half; first two passes on those crops are void,
+# passes/void_c268f/). Crops used for the passes: the region rotated -4.3 deg (left/right ink-profile peaks agree within 3 px),
+# centre +-95 px, s1 x 0-1700, s2 x 1400-3100, no mask. Band 1 = c268 L25 (opens K04 K05 K10 K41 K34 K26), bands 2-6 = L26-L30.
+python3 - "$D" <<'PY'
+import sys, os
+from PIL import Image
+D = sys.argv[1]; im = Image.open(f'{D}/src_c268_600_4180_3100_800.jpg').convert('L')
+ro = im.rotate(-4.3, resample=Image.BICUBIC, fillcolor=255); os.makedirs(f'{D}/l26', exist_ok=True)
+for n, c in zip(range(26, 31), (202, 308, 422, 536, 649)):
+    for s, (x0, x1) in ((1, (0, 1700)), (2, (1400, 3100))):
+        ro.crop((x0, c - 95, x1, min(800, c + 95))).save(f'{D}/l26/c268f_L{n}_s{s}.jpg', quality=92)
+PY

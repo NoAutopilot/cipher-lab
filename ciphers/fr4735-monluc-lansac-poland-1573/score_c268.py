@@ -114,9 +114,11 @@ def main():
     # MONL-L11 (15 Oct 2026): c268 L11-L15 the same way (passes/c268c_reconciled.tsv, written by passes/c268c_reconcile.py).
     # MONL-L16 (15 Oct 2026): c268 L16-L20 the same way (passes/c268d_reconciled.tsv, written by passes/c268d_reconcile.py).
     # MONL-L21 (15 Oct 2026): c268 L21-L25 the same way (passes/c268e_reconciled.tsv, written by passes/c268e_reconcile.py).
+    # SUP-MONLUC (20 Oct 2026): c268 L26-L30 the same way (passes/c268f_reconciled.tsv, written by passes/c268f_reconcile.py).
     for rec, rtag in ((HERE / 'passes' / 'c268b_reconciled.tsv', 'c268b-recon'), (HERE / 'passes' / 'c268c_reconciled.tsv', 'c268c-recon'),
                       (HERE / 'passes' / 'c268d_reconciled.tsv', 'c268d-recon'),
-                      (HERE / 'passes' / 'c268e_reconciled.tsv', 'c268e-recon')):
+                      (HERE / 'passes' / 'c268e_reconciled.tsv', 'c268e-recon'),
+                      (HERE / 'passes' / 'c268f_reconciled.tsv', 'c268f-recon')):
       if rec.exists():
           bl = {}
           for ln in rec.read_text().splitlines()[1:]:
