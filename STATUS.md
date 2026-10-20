@@ -143,6 +143,15 @@ SHERWOOD-REREAD (USD 7.91, 1.32x cap): 3 digit corrections, 0 rows moved, H/C/S 
 tiles add only 2 contrast tiles, so no re-run. Vivonne's label split now rests on the owner's sort (ASKS 173) or new material, and behind
 it on a reader below 5% error.
 
+Check-in 110 (20 Oct 2026, 03:1x UTC). SHERWOOD-CELLS (USD 5.06, 1.69x cap): both doubted S rows hold; Tan and Certainly move M -> S,
+so Sherwood reads 159/216 = 73.6% H/C/S (verifier flag before status.json changes). A grid fault (a blank above a centred heading counted
+as a line) could sit under other cells: SHERWOOD-GRID queued for account 2. The owner's Vivonne sort was mostly lost by the sorter page
+(only 6 moves saved): RESEARCH 6f is void, ASKS 173 re-opened, SORTER-SAVEFIX (session_0125yNvDSkqpz1QQBc8UwCuT) fixing the page with a
+Save button; the owner will re-sort. ASKS 174 answered (ILL submitted). Account 2 finished SUP-CEPPO (blocked: Gallica 403), SUP-NEVREVOL
+(control fails, non-test), SUP-PISANY (no change); SUP-PAGET/ELECTION/MONLUC moved to account 2 (account 1 cannot create sessions; owner:
+leave account 1 off); SUP-GIEVRE held while Gallica answers 403. Owner: account 3 may be used; pause lifted, dispatcher paste in
+.claude/briefs/dispatcher-account3-paste.md for him to start.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
