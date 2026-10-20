@@ -96,6 +96,7 @@ browser, under `sorter:all`. Path 1 kept the lost changes only in memory, so a r
   test_sorter, test_s1_extras, test_ctx, test_focus, test_s2_pilemerge, test_focus_tray and test_r12_r16 all pass.
   test_s2_fix and the region/recut tests could not run here: `make_fixtures.py` needs scipy for region.html, and scipy is not
   installed in this container. That is not a failure of the change.
+- `python3 tools/sorter_preflight.py sorter_viv_ksplit.html --cipher-lines cipher_lines.tsv --step1` on the re-rendered page: preflight PASS (with --step1, the same flag as the earlier Vivonne step-1 page, since this page asks no questions; without it, check 2 fails 'focus box empty' by design).
 - `tools/cvd_check.py --audit tools/sign_sorter/template.html`: 0 flags (same 24 literals as before; the banner uses existing tokens).
 
 ## Republished (20 Oct 2026, 03:25 UTC)
