@@ -18019,3 +18019,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-20 08:12 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 08:12 UTC: spawned 1 (MONL-C269A session_01SVfLvUGRooJQJxXq4TcxKc), queued left 0
 2026-10-20 08:14 | MONL-C269A | claim fr4735-monluc-lansac-poland-1573 c269 (f.138v) L01-L10 fresh PREREG test; box ends 09:25 UTC; cap per brief
 2026-10-20 08:21 | MONL-C269A | halfway fr4735-monluc c269: overview 33 cipher lines + clear closing; PREREG d8b8c1d1f; calibration power PASS (c268 L21-L30 0.650 vs p95 0.417), wrong window FAIL (0.384 vs p95 0.402); 4 blind passes on L01-L10 running. usage: five_hour allowed by get_session, resets 09:00 UTC
+2026-10-20 08:22 | standby (owner account) | alive; holder account 4, last line 07:40 UTC 20 Oct (check-in 114, signed 'account-4 parent', 41 min old), not a HANDOFF; newest '| orchestrator (' line 07:57; no takeover. usage: five_hour allowed by get_session, resets 10:20 UTC 20 Oct
