@@ -1,0 +1,8 @@
+fold	n	all_tri	n_tri_m2	prec_tri_m2	all_bi	n_bi_m2	prec_bi_m2
+writingsalbertg01gallgoog.txt.gz	240	0.975	225	0.996	0.971	228	0.982
+writingsjamesmo02unkngoog.txt.gz	240	0.983	222	1.000	0.983	229	0.996
+writingsjamesmo11monrgoog.txt.gz	240	0.983	233	0.996	0.983	233	0.996
+writingsofjamesm0007unse_s2a1.txt.gz	240	0.983	233	0.996	0.975	232	0.991
+writingsofjamesm0008unse.txt.gz	240	0.996	235	1.000	0.996	237	0.996
+writingsofthomas09jeffiala.txt.gz	240	0.967	227	0.982	0.963	232	0.983
+POOLED	1440	0.981	1375	0.995	0.978	1391	0.991

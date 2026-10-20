@@ -17,6 +17,7 @@ pair outside the book's range. Clear-text words written in letters in the cypher
 
   python3 decode_entick.py            write reading.tsv and reading.txt
   python3 decode_entick.py --check    exit 1 if the committed reading.tsv/reading.txt are stale (rule 7)
+  python3 decode_entick.py --chooser kn3  grade counts under the trigram chooser of mrows.py (prints only)
   python3 decode_entick.py --controls [--seeds 20]   offset W+1/W-1 and P-shuffled controls, OCR-only for all arms
 """
 import argparse, csv, gzip, math, os, random, re, sys
@@ -195,7 +196,7 @@ def candidates(P, W, img, grid, use_image=True):
     return out
 
 
-def decode(msgs, img, grid, lm, transform=None, use_image=True):
+def decode(msgs, img, grid, lm, transform=None, use_image=True, chooser=None):
     rows = []
     for name, toks in msgs:
         pos, seq = [], []
@@ -219,7 +220,7 @@ def decode(msgs, img, grid, lm, transform=None, use_image=True):
                 seq.append(live)
             else:
                 r[6], r[7], r[8] = '', '', 'M'
-        pick, margin = choose(seq, lm)
+        pick, margin = (chooser or choose)(seq, lm)
         for (r, live, cands, unsure), j, mg in zip(pos, pick, margin):
             w, (col, src) = live[j]
             r[6], r[7] = col, w
@@ -282,6 +283,8 @@ def main():
     ap.add_argument('--check', action='store_true')
     ap.add_argument('--controls', action='store_true')
     ap.add_argument('--seeds', type=int, default=20)
+    ap.add_argument('--chooser', choices=['bigram', 'kn3'], default='bigram',
+                    help='kn3: the Kneser-Ney trigram of mrows.py (SHERWOOD-MROWS, 20 Oct 2026); prints grade counts only, never writes')
     a = ap.parse_args()
     lm = Bigram()
     toks = load_tokens()
@@ -330,6 +333,14 @@ def main():
             ' '.join(r[7].lower() for r in img_rows if r[2] == 'pair' and r[7]) + '\n')
         for lab, sc, cov, _ in out:
             print('%-22s %.4f  %.3f' % (lab, sc, cov))
+        return
+    if a.chooser == 'kn3':
+        import mrows
+        lm3 = mrows.KN3()
+        def ch(seq, _lm):
+            return mrows.choose3([[norm(w) for w, _ in c] for c in seq], lm3)
+        rows = decode(msgs, img, grid, lm, chooser=ch)
+        print(render(rows)[1].splitlines()[-1] + '  (kn3 chooser; committed reading unchanged)')
         return
     rows = decode(msgs, img, grid, lm)
     tsv, txt = render(rows)

@@ -1,0 +1,56 @@
+msg	line	group	col1	col2	bigram_pick	bigram_margin	trigram_pick	trigram_margin	reason	proposed	trigram_word
+No.1	p346_L01	176-26	Hug	Humoral	1	0.00	1	0.00	column-margin	M	Hug
+No.1	p346_L03	4-31	Accompt	Accustomably	1	0.00	1	0.00	column-margin	M	Accompt
+No.1	p346_L04	84-25	Crestfallen	Crisp	1	0.00	1	0.00	column-margin	M	Crestfallen
+No.1	p346_L05	32-12	Belial	Bender	1	0.00	1	0.00	column-margin	M	Belial
+No.1	p346_L06	156-23	Gentilitious	Gesture	1	0.00	1	0.00	column-margin	M	Gentilitious
+No.1	p346_L06	143-38	Flawless	Flet	1	0.00	1	0.00	column-margin	M	Flawless
+No.1	p346_L06	16-2	Anomy	Antimonarchical	1	0.00	1	0.00	column-margin	M	Anomy
+No.1	p346_L06	312-24	Sacrifice	Sail	1	0.84	1	1.54	column-margin	M	Sacrifice
+No.1	p346_L07	188-7	Incurvate	Indesinently	1	0.00	1	0.00	column-margin	M	Incurvate
+No.1	p346_L07	301-29	Reparative	Reportingly	1	0.00	1	0.00	column-margin	M	Reparative
+No.1	p346_L07	366-33?	Threepiled	Thrum	1	0.00	1	0.00	unsure-digit	M	Threepiled
+No.1	p346_L08	366-32	Threepile	Thrum	1	0.00	1	0.00	column-margin	M	Threepile
+No.1	p346_L09	64-12	Cognitive	Colbertine	1	0.00	1	0.00	column-margin	M	Cognitive
+No.1	p346_L09	32-12	Belial	Bender	1	0.00	1	0.00	column-margin	M	Belial
+No.1	p346_L10	312-24	Sacrifice	Sail	2	0.12	2	0.09	column-margin	M	Sail
+No.1	p346_L10	220-20	Mansion	Marauding	1	0.00	1	0.00	column-margin	M	Mansion
+No.2	p346_L14	142-8	Firmamental	Fives	1	0.00	1	0.00	column-margin	M	Firmamental
+No.2	p346_L14	138-15	Feat	Feet	2	1.87	2	1.23	column-margin	M	Feet
+No.2	p346_L15	183-24	Implant	Imposition	2	1.48	2	0.81	column-margin	M	Imposition
+No.2	p346_L15	149-37	Fragile	Freckle	1	0.00	1	0.00	column-margin	M	Fragile
+No.2	p346_L15	134-31	Exudation	Fabulous	1	0.00	1	0.00	column-margin	M	Exudation
+No.2	p346_L15	248-23?	Opinion	Opulence	1	7.95	1	3.87	unsure-digit	M	Opinion
+No.2	p346_L15	314-3	Sanded	Sarcenet	1	0.00	1	0.00	column-margin	M	Sanded
+No.2	p346_L15	166-13?	Hammer	Handy-handy	1	0.00	1	0.00	unsure-digit	M	Hammer
+No.2	p346_L15	32-33	Bellygod	Benignity	1	0.00	1	0.00	column-margin	M	Bellygod
+No.2	p346_L17	342-10	Springiness	Spy	1	0.00	1	0.00	column-margin	M	Springiness
+No.2	p346_L18	153-7	Furry	Gabel	1	0.00	1	0.00	column-margin	M	Furry
+No.2	p346_L19	237-31	Mutter	Nakedly	2	1.48	2	0.81	column-margin	M	Nakedly
+No.3	p346_L20	192-37	Inimical	Inn	1	0.39	2	0.07	column-margin	M	Inn
+No.3	p346_L20	119-13	Eighthly	Elector	2	1.48	2	0.81	column-margin	M	Elector
+No.3	p346_L22	245-21	Observe	Occasion	2	0.70	2	0.82	column-margin	M	Occasion
+No.3	p346_L22	192-37	Inimical	Inn	1	0.39	2	0.07	column-margin	M	Inn
+No.3	p346_L22	60-29	Clatter	Clemency	1	0.00	1	0.00	column-margin	M	Clatter
+No.3	p346_L23	126-12	Equal	Equivalent	1	1.41	1	1.15	column-margin	M	Equal
+No.3	p346_L23	6-26	Adequate	Administer	1	1.99	1	1.56	column-margin	M	Adequate
+No.3	p346_L25	245-38	Obtain	Occur	2	1.30	2	1.02	column-margin	M	Occur
+No.3	p346_L27	272-8	Polemic	Polytheist	1	0.00	1	0.00	column-margin	M	Polemic
+No.3	p346_L29	192-37	Inimical	Inn	1	0.39	2	0.07	column-margin	M	Inn
+p347 block	p347_L05a	312-29?	Sacrilegious	Saint	2	2.13	2	1.32	unsure-digit	M	Saint
+p347 block	p347_L05a	215-32?	Love	Lowing	1	1.93	1	2.07	unsure-digit	M	Love
+p347 block	p347_L05a	148-22?	Formidably	Forward	2	9.15	2	6.15	unsure-digit	M	Forward
+p347 block	p347_L05a	364-1?	Tew	Them	2	12.27	2	8.33	unsure-digit	M	Them
+p347 block	p347_L05b	13-13	Alway	Ambulation	1	0.00	1	0.00	column-margin	M	Alway
+No.4	p345_L01	411-17	Wednesday	Well	1	0.48	1	1.51	column-margin	M	Wednesday
+No.4	p345_L01	331-36	Slack	Slay	2	1.48	2	0.81	column-margin	M	Slay
+No.4	p345_L01	242-8	Nonconformist	Noseless	1	0.00	1	0.00	column-margin	M	Nonconformist
+No.4	p345_L02	331-36	Slack	Slay	2	1.48	2	0.81	column-margin	M	Slay
+No.4	p345_L02	226-30	Metamorphosis	Mice	1	0.00	1	0.00	column-margin	M	Metamorphosis
+No.4	p345_L02	131-22?	Exhale	Exorcism	1	0.00	1	0.00	unsure-digit	M	Exhale
+No.4	p345_L03	382-23	Venturously	Vermine	1	0.00	1	0.00	column-margin	M	Venturously
+No.4	p345_L03	131-22?	Exhale	Exorcism	1	0.00	1	0.00	unsure-digit	M	Exhale
+No.4	p345_L05	146-16	Football	Forcipated	1	0.00	1	0.00	column-margin	M	Football
+No.4	p345_L09	315-2	Saturday	Saw	2	1.43	2	0.60	column-margin	M	Saw
+No.4	p345_L09	230-20?	Misplace	Mistell	1	0.00	1	0.00	unsure-digit	M	Misplace
+No.4	p345_L10	33-35	Bestiality	Bezoar	1	0.00	1	0.00	column-margin	M	Bestiality

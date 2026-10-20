@@ -38,6 +38,6 @@ tools/iiif_lines.py or a local PIL crop, command pasted); a repair is grade I, n
 ## Decision
 Belief: most M rows are rare-word column ties; a trigram will settle a minority (guess 5-15 of 57), not enough for D3 (80% H/C/S needs ~173 of 216, i.e. +16 rows).
 Would change it: gate 1 >= 90% and gate 2 precision >= 90% at margin >= 2, with >= 16 M rows moving to S -> D3 share reached; either gate below 90% -> instrument untested-by-this-tool, no grade change.
-Observed: (filled in after the run)
-Decision: (filled in after the run)
-Lesson: (filled in after the run)
+Observed: gate 1 126/126 = 1.000 (full lattice and fixed context; at ceiling by construction, the bigram's own picks); gate 2 pooled precision at margin >= 2: trigram 0.995 (N=1375 of 1440; folds 0.982-1.000), bigram 0.991 -- PASS, but the synthetic distractor is easy for both models; 0 of 55 lattice M rows reach trigram margin >= 2 on an eligible row (34 of 45 column-tie rows have margin 0.00 under both models: both candidates unseen in en18); kn3 over the whole reading would give S 127 / M 75 (stricter than the bigram's S 145 / M 57); controls (trigram, mean log-prob): reading -9.166 image, -9.836 OCR, W+1 -11.298, W-1 -11.600, P-shuffle x20 mean -11.816 max -11.427.
+Decision: stop -- the instrument passes its gates but settles no M row; the column-tie residue is vocabulary (both headwords absent from period text), not context, so no n-gram chooser on en18 can move it. Committed reading unchanged (H 8 C 4 S 145 M 57 I 2, 72.7%). Next instrument: a second blind read of the 4 cypher groups the image questions (226-30 -> 220-30, 131-22? -> 151-22 x2) and a slip/misread search for the both-OOV rows, graded I.
+Lesson: before building a stronger n-gram chooser for tied rows, count how many ties are both-OOV (margin exactly 0): those are not column questions, and a synthetic gate with random distractors cannot show it.

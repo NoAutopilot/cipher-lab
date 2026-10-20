@@ -639,7 +639,7 @@ three proposals); the sibling route stops here for B.175-B.178.
 
 ## Remaining gaps (18 Oct 2026, account-4 parent)
 Read so far: 157/216 pair rows H/C/S = 72.7% (AUDIT.md "## Current verdict", SHERWOOD-VERIFY2)
-- 57 M rows, mostly No.2 and No.3 column choices with no context - blocker: not-attempted; the bigram chooser leaves them under a 2-nat margin (reading.tsv) ; next: a contextual read of the col 1/col 2 lattice for the M rows with the sibling letters' vocabulary, ~$4
+- 57 M rows, mostly No.2 and No.3 column choices with no context - blocker: not-attempted; the bigram chooser leaves them under a 2-nat margin (reading.tsv); a KN trigram chooser passed both known-answer gates and settled none (SHERWOOD-MROWS, 20 Oct 2026: 34 of 45 ties have both headwords unseen in en18) ; next: a second blind read of the 4 questioned cypher groups (226-30, 131-22? x2, mrows/slips.tsv) and a misread/slip search over the both-unseen rows, ~$3
 - standalone figures 415, 809, 2, 11, 500, the triple 23-4-1 and 192-88 - blocker: open-codes; numbers in clear or outside the book's line range, no context narrows them yet (NOTES.md "Still unread")
 - N-class above N3 - blocker: waiting-on ASKS 174; the owner's ILL request for Leighton and Matyas 1985 decides N3 vs N4
 - 33-35 "Beyond" (encoder one-line slip) - blocker: not-attempted; needs a second instance of a slip before an I repair (AUDIT.md) ; next: scan the sibling letters for the same slip pattern, ~$1
@@ -650,8 +650,8 @@ Read so far: 157/216 pair rows H/C/S = 72.7% (AUDIT.md "## Current verdict", SHE
 - [x] known-keys: Entick 1781 identified (SHERWOOD-BOOK) and the line convention gated (SHERWOOD-READ)
 - [x] print: AUDIT.md search log (two verifier passes)
 - [n/a] key-rebuild: the printed book is the key, nothing to rebuild
-- [x] image-check: rule 7 re-read 56/56 (SHERWOOD-VERIFY2) after the 334-read blind pass (SHERWOOD-VERIFY)
-- [ ] retry: contextual lattice read of the M rows after the siblings
+- [x] retry: contextual lattice read of the M rows (SHERWOOD-MROWS, 20 Oct 2026: KN trigram, gates passed, 0 settled; the n-gram column chooser on en18 is retired for these rows, the residue is vocabulary)
+- [ ] image-check: rule 7 re-read 56/56 done (SHERWOOD-VERIFY2, after SHERWOOD-VERIFY's blind pass); open: second blind read of 226-30 and 131-22? (x2), mrows/slips.tsv
 Verdict: keep going: 3 internal gaps; cheapest next: verifier pass on the 3 slip proposals (siblings/m_row_proposals.tsv) with the M-row lattice read, ~$4, held until Leighton and Matyas arrives (ASKS 174) so one verifier pass does both
 
 ## Parent decision 8 (account 4, 18 Oct 2026, 13:0x UTC)
@@ -663,3 +663,50 @@ to re-read the digit 6 first). Unverified: the 3 proposals. Alternative: transcr
 experiment: one verifier pass on the proposals plus the M-row lattice. It is held until the Leighton and Matyas chapter arrives (ASKS 174),
 so one session settles both. A second lead goes to program C: the wider Haldimand-service cypher pool (Brymner calendars every volume;
 same office, same key family). Decision: park this target's internal steps briefly and pivot program C to the pool.
+
+## M-row pass (SHERWOOD-MROWS, 20 Oct 2026)
+
+Brief: .claude/briefs/runs/2026-10-20-acct4-research-director-26.md; PREREG-SHERWOOD-MROWS.md (pushed before any run). Script:
+`mrows.py` (gate1, gate2, controls, mrows; outputs in mrows/); `decode_entick.py --chooser kn3` prints the grade counts under the new
+chooser and never writes. Committed reading unchanged; `decode_entick.py --check`: reading current.
+
+Instrument: interpolated Kneser-Ney word trigram (D 0.75) on tools/data/en18, Viterbi over the full col 1 / col 2 lattice per message,
+margin = best path minus best path forced through the other column. No sketch word in the model or the lattice.
+- Gate 1 (the brief's): the 126 S rows with bigram margin >= 4 and two image candidates: trigram picks the same column 126/126 = 1.000
+  (full lattice and fixed context). PASS, but at ceiling by construction (the answer is the bigram's own pick; rule 3's headroom caveat).
+- Gate 2 (added in the PREREG, a true known answer): 24 held-out passages of 60 words, leave-one-file-out over the 6 en18 files, each word
+  against a random Entick headword. Precision at margin >= 2: trigram 0.995 pooled (1375 of 1440 rows reach the margin; per fold
+  0.982-1.000), bigram 0.991. PASS; both models are near ceiling here, so the gate shows the chooser is sound, not that it is stronger.
+- M rows (mrows/mrows.tsv): 55 of the 57 have live candidates (the 2 others are outside the book's range); 10 are '?' digits (stay M);
+  of the 45 column ties, **0 reach trigram margin >= 2**. 34 of the 45 have margin exactly 0.00 under both models: both headwords are absent
+  from en18 (Hug/Humoral, Crestfallen/Crisp, Belial/Bender, Anomy/Antimonarchical ...), so no n-gram model on period prose can choose, and
+  a row where neither candidate is an ordinary word is more likely a slip or misread than a column question. The trigram changes the
+  column on 3 rows (192-37 Inimical -> Inn x3), all at margin < 0.1: no grade change. Over the whole reading kn3 is stricter, S 127 / M 75.
+- Controls (trigram mean log-prob/word, mrows/controls3.tsv): reading -9.166 (image), -9.836 (OCR); W+1 -11.298; W-1 -11.600; P-shuffle x20
+  mean -11.816, max -11.427. The reading separates from every control, as with the bigram.
+- Slips and image re-reads (mrows/slips.tsv; crops: `python3 mrows/crop_slips.py`, taller crops of the tools/iiif_lines.py line boxes in
+  images/crops/manifest.json, 18 Oct 2026): 176-26 and 16-2 confirmed as transcribed (the 6s close; not 5s), so the page-slip proposals
+  (House, And) pass the slip_offset_test rule as I-grade leads (d=-1; d=+-1 total 3 vs control offsets mean 0.20, max 1) -- not applied,
+  because their expected words come from the sketch. 226-30 reads 220-30 on the image (open 0 like the 0 of 30; the 6 of 36 on the same
+  line has a stem and solid loop), blind Opus read 220 (alt 6): p.220 c2 l30 is "March". The same blind read gave 131-22? as 151-22 (alt 3):
+  p.151 c1 l22 is "From". Both are transcription questions, not encoder slips; ciphertext.tsv is not edited (never silently repaired) until
+  a second blind read agrees. Count passing the slip rule: 2 (I, not applied); transcription leads: 2 groups, 3 occurrences.
+- Grades: H 8, C 4, S 145, M 57, I 2; H/C/S 157/216 = 72.7% (unchanged). D3 needs about 173.
+- Judge (rule 7), `python3 tools/judge_plaintext.py specs/sherwood-cossit-1781.json --file ciphers/sherwood-cossit-1781/controls/reading_image.txt`:
+  `FAIL language: score=-0.998, null_p99=-2.177, real_p05=-0.804, real_median=-0.735, mode=both, N=1190` / `ok words: cover=0.94, min=0.6,
+  real_text_median_cover=0.976` / `FAIL`. The reading is unchanged, so this is the same FAIL already on file: far above the null, below
+  real_p05; the en judge corpus is of unknown reliability (CLAUDE.md rule 3, EN-FOLDS).
+
+Research-director questions.
+1. Learned: the M residue is not a context problem. A trigram chooser that passes a real known-answer gate settles 0 of 45 ties; 34 ties are
+   two headwords that never occur in period prose.
+2. Assumptions the result rests on: the image candidates in book/entries_image.tsv are right; en18 (Madison, Monroe, Jefferson, Gallatin)
+   stands in for a Vermont loyalist's register; the 2-nat margin means the same thing under both models (it does not quite: kn3 is stricter).
+3. Unverified: whether the both-unseen rows are encoder slips, transcription misreads of the cypher digits, or real rare words; the two
+   transcription leads (220-30, 151-22) have one blind read each.
+4. Alternatives: the encoder used a different printing of Entick for some pages (an offset that varies by page range); or Sherwood's
+   transcribed digits are right and the encoder's line count differs on some pages (wrapped lines counted or not).
+5. Most informative next experiment: a second blind read of every cypher group whose two candidates are both unseen (34 rows, with the 0/6
+   and 3/5 shapes as a known-answer set from the clear groups), then re-decode; a corrected digit gives an image-backed S/H row, not an I.
+6. Decision: pivot from choosers (retired for these rows: an n-gram chooser on en18) to the cypher image: a blind transcription re-read of
+   the both-unseen groups, ~$3.

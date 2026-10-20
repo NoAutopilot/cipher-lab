@@ -1,0 +1,127 @@
+msg	line	group	col1	col2	bigram_pick	bigram_margin	trigram_pick	trigram_margin
+No.1	p346_L01	225-4	Member	Mercantile	1	4.10	1	5.24
+No.1	p346_L01	246-35	Of	Oil	1	14.28	1	12.76
+No.1	p346_L01	364-32	The	Thereon	1	10.21	1	9.27
+No.1	p346_L01	246-35	Of	Oil	1	11.18	1	7.25
+No.1	p346_L02	240-12	New	Niggardly	1	10.22	1	6.73
+No.1	p346_L02	237-10	Muster	Myself	2	5.05	2	3.06
+No.1	p346_L02	246-17	Ocularly	Official	2	6.54	2	3.94
+No.1	p346_L03	412-3	Wennel	When	2	11.30	2	10.94
+No.1	p346_L03	168-2	Hatefully	He	2	15.77	2	15.11
+No.1	p346_L03	364-22	Thankoffering	There	2	10.05	2	6.29
+No.1	p346_L04	47-19	Caligation	Came	2	8.82	2	6.01
+No.1	p346_L04	369-15	To	Tome	1	12.29	1	7.96
+No.1	p346_L04	15-2	And	Anise	1	11.51	1	7.64
+No.1	p346_L04	168-2	Hatefully	He	2	12.81	2	9.51
+No.1	p346_L05	459-32	Boston	Broomsgrove	1	5.66	1	3.09
+No.1	p346_L05	315-1	Saturate	Saw	2	6.73	2	5.27
+No.1	p346_L05	364-32	The	Thereon	1	9.37	1	6.29
+No.1	p346_L06	20-16	Army	Arterial	1	6.85	1	3.84
+No.1	p346_L06	364-32	The	Thereon	1	11.95	1	8.12
+No.1	p346_L07	412-9	West	Whereabouts	1	9.16	1	4.78
+No.1	p346_L08	369-15	To	Tome	1	10.56	1	7.57
+No.1	p346_L08	219-37	Man	Manifestible	1	7.95	1	6.43
+No.1	p346_L08	44-11	Build	Bung	1	4.61	1	2.22
+No.1	p346_L09	72-12	Confutation	Congress	2	8.13	2	4.48
+No.1	p346_L09	468-37	Portsmouth	Roding, High	1	4.23	1	2.74
+No.1	p346_L09	412-33	Wheelbarrow	Which	2	10.57	2	6.42
+No.1	p346_L10	364-32	The	Thereon	1	8.29	1	4.15
+No.1	p346_L11	247-6	Ointment	One	2	9.45	2	9.67
+No.1	p346_L11	246-35	Of	Oil	1	13.21	1	15.10
+No.1	p346_L11	364-32	The	Thereon	1	11.97	1	13.50
+No.1	p346_L12	326-30	Ship	Shop	1	7.53	1	4.63
+No.2	p346_L14	365-13	Thickheaded	Thirty	2	5.45	2	3.29
+No.2	p346_L15	248-23	Opinion	Opulence	1	7.95	1	3.87
+No.2	p346_L15	218-19	Magnificent	Make	2	5.69	2	2.51
+No.2	p346_L15	369-15	To	Tome	1	10.80	1	10.67
+No.2	p346_L16	240-12	New	Niggardly	1	16.49	1	17.65
+No.2	p346_L16	168-6	Haven	Headband	1	11.49	1	12.63
+No.2	p346_L17	472-34	Witney	York	2	7.76	2	3.11
+No.2	p346_L17	414-22	Wickedness	Will	2	8.24	2	4.42
+No.2	p346_L17	223-32	May	Measurable	1	10.98	1	7.93
+No.2	p346_L18	240-28	Next	Nightingale	1	8.43	1	6.35
+No.2	p346_L18	371-14	Tournament	Trade	2	8.23	2	4.19
+No.2	p346_L18	321-20	Seemer	Sell	2	5.17	2	2.66
+No.2	p346_L19	395-15	Uniparous	Unknown	2	6.18	2	4.11
+No.3	p346_L20	95-33	Delivered	Demolish	1	6.43	1	4.22
+No.3	p346_L20	419-3	Yeasty	Your	2	11.14	2	7.28
+No.3	p346_L21	90-37	Day	Dearness	1	6.27	1	3.04
+No.3	p346_L21	128-32	Evanid	Every	2	10.04	2	6.75
+No.3	p346_L21	54-33	Change	Characterize	1	7.55	1	3.86
+No.3	p346_L21	414-21	Wickedly	Will	2	8.90	2	4.99
+No.3	p346_L22	364-32	The	Thereon	1	10.26	1	6.86
+No.3	p346_L22	155-27	Gauge	General	2	8.35	2	6.99
+No.3	p346_L23	202-36	Justice	Keg	1	8.57	1	5.64
+No.3	p346_L23	414-21	Wickedly	Will	2	9.43	2	6.93
+No.3	p346_L24	364-4	Tewtaw	Then	2	7.88	2	5.33
+No.3	p346_L24	22-20	Asseveration	Assured	2	6.47	2	3.23
+No.3	p346_L24	364-32	The	Thereon	1	8.45	1	4.09
+No.3	p346_L24	223-32	May	Measurable	1	9.85	1	5.48
+No.3	p346_L24	414-21	Wickedly	Will	2	10.73	2	8.82
+No.3	p346_L25	43-10	Brother	Bubble	1	5.02	1	3.44
+No.3	p346_L25	364-26	That	Thereby	1	8.80	1	6.82
+No.3	p346_L26	246-35	Of	Oil	1	12.37	1	12.46
+No.3	p346_L26	368-13	Time	Tippet	1	10.13	1	10.59
+No.3	p346_L26	168-5	Have	Headach	1	13.01	1	9.97
+No.3	p346_L26	217-21	Luxation	Made	2	11.08	2	7.39
+No.3	p346_L27	278-8	Preparedly	Present	2	8.43	2	4.65
+No.3	p346_L27	369-31	Toil	Too	2	7.69	2	5.10
+No.3	p346_L28	329-8	Sillabub	Since	2	8.67	2	6.84
+No.3	p346_L28	168-5	Have	Headach	1	14.68	1	10.73
+No.3	p346_L28	295-11	Received	Recline	1	13.32	1	8.71
+No.3	p346_L28	324-10	Several	Shagreen	1	9.23	1	6.39
+No.3	p346_L29	385-33	Visit	Vividly	1	5.91	1	3.31
+No.3	p346_L29	11-18	Alehouse-keeper	All	2	9.30	2	5.90
+No.3	p346_L29	414-22	Wickedness	Will	2	7.63	2	4.42
+No.3	p346_L30	128-32	Evanid	Every	2	8.49	2	5.56
+No.3	p346_L30	20-15	Arms-end	Art	2	5.74	2	3.86
+No.3	p346_L30	181-14	Imbost	Immediately	2	12.07	2	8.27
+No.3	p346_L30	9-26	After	Aggrievance	1	13.01	1	8.57
+No.3	p346_L31	237-10	Muster	Myself	2	5.05	2	3.06
+No.3	p346_L31	305-24	Return	Reversed	1	4.00	1	1.76
+No.3	p346_L31	205-1	Laced-mutton	Laid	2	12.46	2	7.20
+No.3	p346_L31	31-34	Before	Beholden	1	14.32	1	9.06
+No.3	p346_L31	201-15	Irrevocably	Judge	2	6.94	2	4.25
+No.3	p347_L01	414-3	Whom	Wig	1	5.95	1	3.10
+No.3	p347_L01	414-22	Wickedness	Will	2	10.75	2	8.93
+No.3	p347_L01	22-34	Assist	Astray	1	6.21	1	6.56
+p347 block	p347_L03	210-19	Letter	Libel	1	6.17	1	2.75
+p347 block	p347_L03	32-1	Being	Bellswagger	1	11.67	1	9.07
+p347 block	p347_L03	209-13	Left	Leisure	1	4.96	1	3.99
+p347 block	p347_L05a	148-22	Formidably	Forward	2	9.15	2	6.15
+p347 block	p347_L05a	364-1	Tew	Them	2	12.27	2	8.33
+p347 block	p347_L05b	419-3	Yeasty	Your	2	9.32	2	5.86
+p347 block	p347_L05b	323-9	Sequacity	Servant	2	6.22	2	2.99
+p347 block	p347_L07	369-31	Toil	Too	2	7.69	2	5.10
+p347 block	p347_L07	174-19	Honorable	Horned	1	6.12	1	3.80
+p347 block	p347_L07	173-5	Hobbyhorse	Holland	2	6.33	2	3.64
+p347 block	p347_L08	138-28	February	Fellmonger	1	7.66	1	5.18
+No.4	p345_L01	206-33	Lankness	Last	2	8.70	2	6.28
+No.4	p345_L02	219-37	Man	Manifestible	1	7.26	1	4.34
+No.4	p345_L02	116-15	Durable	Dysury	1	4.34	1	2.88
+No.4	p345_L03	10-34	Aid	Albion	1	6.87	1	3.76
+No.4	p345_L03	371-21	Towards	Tradition	1	7.30	1	4.68
+No.4	p345_L03	274-16	Post	Posey	1	6.31	1	3.67
+No.4	p345_L04	10-34	Aid	Albion	1	6.87	1	3.76
+No.4	p345_L04	10-28	Ague-fit	Alarm	2	5.05	2	3.16
+No.4	p345_L04	364-1	Tew	Them	2	11.15	2	7.61
+No.4	p345_L04	365-8	They	Thirst	1	10.57	1	9.61
+No.4	p345_L04	131-37	Exigence	Expect	2	7.30	2	6.11
+No.4	p345_L05	312-22	Sacrificable	Said	2	7.81	2	4.35
+No.4	p345_L05	109-9	Distend	Distrust	2	4.94	2	2.84
+No.4	p345_L05	371-21	Towards	Tradition	1	9.03	1	7.65
+No.4	p345_L06	364-32	The	Thereon	1	12.53	1	12.30
+No.4	p345_L06	297-18	Reduction	Referendary	1	10.79	1	12.92
+No.4	p345_L06	246-35	Of	Oil	1	14.41	1	17.35
+No.4	p345_L06	364-32	The	Thereon	1	11.57	1	15.99
+No.4	p345_L07	240-12	New	Niggardly	1	12.52	1	15.80
+No.4	p345_L07	344-31	Star	State	2	11.44	2	10.69
+No.4	p345_L07	65-21	Colonel	Comedian	1	6.08	1	3.63
+No.4	p345_L07	301-26	Repandous	Report	2	6.88	2	3.74
+No.4	p345_L08	81-24	Council	Counterpoint	1	5.17	1	2.42
+No.4	p345_L08	237-10	Muster	Myself	2	5.05	2	3.06
+No.4	p345_L08	168-35	Hazardously	Hearing	2	4.69	2	2.76
+No.4	p345_L09	301-26	Repandous	Report	2	9.16	2	6.22
+No.4	p345_L10	225-17	Men	Mercifully	1	9.04	1	5.29
+No.4	p345_L10	247-14	Olio	Only	2	9.96	2	6.49
+No.4	p345_L10	138-28	February	Fellmonger	1	7.66	1	5.18
