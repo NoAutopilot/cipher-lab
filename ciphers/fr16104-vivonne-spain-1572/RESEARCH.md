@@ -297,7 +297,7 @@ when it lands; (2) a machine sort-into-shapes of the same tiles (unsupervised, n
 the next machine design, not briefed until (1) has landed so the two can be compared on identical tiles. Nothing else is spawned on
 this target until then; decode-side work stays stopped (6c).
 
-### 6e. After VIV-MSORT (20 Oct 2026, 02:0x UTC; worker VIV-MSORT)
+### 6e. After VIV-MSORT (20 Oct 2026, 01:5x UTC; worker VIV-MSORT)
 Instrument (2) of 6d ran ahead of the owner's sort (ASKS 173 open three days; scoring the machine sort does not touch the blind page).
 PREREG-VIV-MSORT.md (a44a28135) before any run; sort frozen in tx/ksplit/msort_frozen.tsv (10a3c288e) before truth was read;
 tx/ksplit/msort.py --score -> tx/ksplit/msort.json. Image features only (Otsu ink crop, 32x32, blur), average-linkage cosine, k=2.
