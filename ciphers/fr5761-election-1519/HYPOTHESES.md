@@ -35,3 +35,15 @@
   note mark at either, so the print gives no sign of a misreading on its side.
 - Next for this conflict: a third blind reader on S1/S2/S3 alone (three crops, forced choice: is T nearer S or Q), or a native-resolution crop
   of f.116r l.29 (pct region, 1 request) for the second reader; ~0.6.
+
+### SUP-ELECTION (20 Oct 2026, 03:2x UTC by date -u): forced-choice third reader; f.116r l.29 relabelled Lbar
+- Native-resolution crops (openapi.bnf.fr f142 right half `max`, f106 region `max`; 2 requests), PREREG `supelec/PREREG-SUP-ELECTION.md`
+  (pushed 08538c42a before any fetch). Two fresh blind readers, positions swapped, forced choice X = l.11 4 or f.84r Lbar: both said the two
+  references differ, both chose the Lbar at confidence 85 (`supelec/result.tsv`). With ELEC-27 that is three readers for Lbar and one split
+  (ELEC-2R), none for the 4 alone: elecpair/pairs.tsv f.116r l.29 relabelled 4 -> Lbar under the PREREG rule.
+- Consequence (rule 4): the conflict is now in the data, not only an observation. Lbar = Palatin (nr. 357, fr.3897 f.116r l.29, Kluckhohn
+  p.814 l.14, Joachim to Jacob and Hans, 18 June 1519) and Lbar = Trèves (nr. 356, f.84r l.21/22, p.813 l.10, same sender and addressees,
+  17 June 1519). Pooled control: Lbar 2 pairs, real_consistent False, shuffle 166/1000. 4 = Palatin rests on 1 pair (f.116r l.11), M.
+  Not resolved by frequency. Readings that would settle it: the print checked against a page image of Kluckhohn pp.813-814 (only the OCR was
+  read), a third Lbar slot with a printed name (Lisch V pp.323-347, ELEC-316 Next 1, or another Joachim letter), or the hand being a
+  scribe's variant of one sign used loosely for both electors (no evidence either way).

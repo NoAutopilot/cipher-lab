@@ -4,6 +4,6 @@ Zheavy	heavy barred Z	Saxe (Saxonia)	1	3	4	1	C	rule 3+4 met on the pooled slots 
 W	W-like sign	le roy tres-chrestien	6	1	7	0	C	unchanged grade, one more pair
 dd	double loop	le roy catholique	4	0	4	1	C	unchanged; not on f.84r
 II	two uprights with a foot hook	Couloigne	1	1	2	132	M	rule 4: shuffle >= 5%; the f.84r slot reads also as the pronoun Il, the print names Couloigne there
-4	4-like sign with cross-bar	Palatin	2	0	2	134	M	unchanged; the f.84r l.27 sign (4|flag) pairs with Mayence: if it is 4, a conflict (HYPOTHESES.md)
-flag	triangle on a stem	Mayence	1	0|1	1|2	-	M	the f.84r l.27 sign, if a flag, is a second Mayence pair; shape not settled at 2000 px
-Lbar	loop joined by a bar to an upright	Treves	0	1	1	-	M	one pair (f.84r l.22 'que [Lbar] face avec Saxe'); not seen in nr.357
+4	4-like sign with cross-bar	Palatin	1	0	1	-	M	one pair (f.116r l.11); f.116r l.29 relabelled Lbar (SUP-ELECTION, 20 Oct 2026); the f.84r l.27 sign is the flag (ELEC-2R)
+flag	triangle on a stem	Mayence	1	1	2	126	M	rule 4: shuffle >= 5%; f.84r l.27 settled flag by two readers (ELEC-27, ELEC-2R)
+Lbar	loop joined by a bar to an upright	Treves|Palatin	1	1	2	166	M	rule-4 data conflict: f.84r l.22 (nr.356) prints Treves, f.116r l.29 (nr.357) prints Palatin; not resolved by frequency (HYPOTHESES.md)

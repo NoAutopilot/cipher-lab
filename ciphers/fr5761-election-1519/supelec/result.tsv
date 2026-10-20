@@ -1,0 +1,7 @@
+step	item	source	reader	references_differ	choice	confidence	deciding_strokes
+fetch	f.116r native right half	openapi.bnf.fr btv1b90096539 f142 pct:50,0,50,100/max (4139x5834, 200)	-	-	-	-	sha1 4169d0d349d9; T crop x 2740-3060 y 4410-4570; R4 (l.11 4) x 1960-2280 y 1700-1860
+fetch	f.84r native region	openapi.bnf.fr btv1b90096539 f106 pct:57,25,42,72/max (3479x4212, 200)	-	-	-	-	sha1 5ad3c096d4f8; RL (Lbar) crop x 2010-2330 y 2890-3050
+3a	f.116r l.29 (X) vs P=R4, Q=RL	crops sha1 X baaf55db6087 P 84eb9940a0e9 Q 257662be53ce	fresh blind subagent (strongest model)	no	Lbar (Q)	85	closed loop at left on a long baseline, thin upright left of centre, heavy final vertical crossing the baseline; no raised crossbar over a second stroke
+3b	f.116r l.29 (X) vs P=RL, Q=R4 (positions swapped)	same crops	fresh blind subagent (strongest model)	no	Lbar (P)	85	lower-left loop with an ascender rising out of it, a horizontal, a heavy right vertical; R4 has no loop and a crossed upright
+decision	PREREG-SUP-ELECTION rule	-	-	both counting	relabel 4 -> Lbar in elecpair/pairs.tsv	-	readers 1 (ELEC-27), 3a, 3b: Lbar; reader 2 (ELEC-2R): grouped with both
+control	elecpair/pair_control.py + elec356/pair_control.py (seed 357, 1000)	-	-	-	4: 1 pair (Palatin), out of the >=2-pair set; Lbar pooled 2 pairs Palatin|Treves real_consistent=False, shuffle 166/1000	-	grades M; no key.tsv change

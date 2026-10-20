@@ -1,8 +1,7 @@
 slots	17
-C_candidates	4,W,barI,dd
+C_candidates	W,barI,dd
 real_all_consistent	True
 shuffle_all_consistent	0/1000
-shuffle_consistent_4	176/1000
 shuffle_consistent_W	0/1000
 shuffle_consistent_barI	167/1000
 shuffle_consistent_dd	8/1000

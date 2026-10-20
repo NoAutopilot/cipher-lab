@@ -1325,3 +1325,47 @@ Trèves (p.813 l.10) without a note. The c99 opening (f.77v-78r) is Latin treaty
 Next: (1) a forced-choice third blind reader on f.116r l.29 against the f.84r Lbar and the l.11 4, plus a native-resolution crop of l.29
 (openapi.bnf.fr pct region, 1 request), ~0.6; (2) Lisch V pp.323-347 (ELEC-316 Next 1), ~1.5; (3) more both-sided slots for flag and 4 (any
 further fr.3897 Joachim letter with set-A signs and a Kluckhohn print), the only route to < 5% shuffle, ~2.
+
+## SUP-ELECTION: forced-choice third reader on a native crop of f.116r l.29 (worker SUP-ELECTION, wave 28, account 2, 20 Oct 2026, 03:17-03:2x UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-10-20-acct4-research-director-28.md` JOB SUP-ELECTION = ELEC-2R Next (1) only; Next (2) (Lisch) not in this job.
+PREREG `supelec/PREREG-SUP-ELECTION.md` (pushed 08538c42a before any fetch). Result `supelec/result.tsv`; conflict entry in `HYPOTHESES.md`.
+- **Crops.** openapi.bnf.fr btv1b90096539 f142 `pct:50,0,50,100/max` (f.116r at native 4139 px wide; sha1 4169d0d349d9) and f106
+  `pct:57,25,42,72/max` (f.84r region; sha1 5ad3c096d4f8): 2 requests, 200 each, 3 s apart. The brief named 1; the ELEC-27/ELEC-2R reference
+  crops were scratch-only and gone, so the f.84r Lbar needed its own request (declared in the PREREG). Three crops cut locally at the same
+  scale (T = f.116r l.29, R4 = l.11 4, RL = f.84r l.21/22 Lbar), no full page to a reader; images in the scratchpad only.
+- **Readers.** Two fresh blind subagents (strongest model), neutral names, positions swapped (3a: P = 4, Q = Lbar; 3b: P = Lbar, Q = 4). Both
+  said the references differ (not a non-test); both chose **Lbar, confidence 85**: loop at the left on a long baseline, a thin upright left of
+  centre, a heavy final vertical crossing the line; the 4 has a raised crossed upright and no loop.
+- **Applied (PREREG rule).** elecpair/pairs.tsv f.116r l.29: 4 -> Lbar. Re-run (seed 357, 1000): elecpair C_candidates now W, barI, dd (4 has
+  1 pair); pooled Lbar 2 pairs, names Palatin|Trèves, real_consistent False, shuffle 166/1000. Both `--check` pass. name_signs tables updated.
+  **Grade change:** 4 = Palatin drops from 2 pairs to 1 (M stays M); Lbar gains a second pair that conflicts (Trèves in nr. 356, Palatin in
+  nr. 357): a rule-4 data conflict, recorded with witnesses in HYPOTHESES.md, not resolved by frequency. No key.tsv change.
+
+Six questions (research director). (1) Learned: on native crops and two position-swapped blind readers, the f.116r l.29 sign is the Lbar shape,
+not the 4; with ELEC-27 three readers agree and ELEC-2R's split was likely a scale effect. (2) Assumptions: that the crops are centred on the
+slot ELEC-PAIR paired (located from ELEC-27's 2400-px coordinates, checked by eye against "responce / [sign] [sign] m'advertist"); that
+Kluckhohn's OCR reads Palatin at p.814 l.14 correctly. (3) Unverified: the print itself (OCR only, no page image); whether the second sign on
+l.29 (a P-like sign before "m'advertist") is the one the print renders as Palatin. (4) Alternatives: Kluckhohn printed the wrong elector at
+one slot; the l.29 slot's name belongs to the following sign and the Lbar stands for another word; the writer used one sign loosely. (5) Most
+informative next: a page image of Kluckhohn p.814 (and p.813) to check the print and which of the two l.29 signs carries "Palatin"; then
+Lisch V pp.323-347 for a third Lbar slot. (6) Continue (the conflict is now a data fact, and two cheap checks bear on it).
+
+**Verdict (SUP-ELECTION, 20 Oct 2026):** open, unchanged. f.116r l.29 relabelled Lbar (three readers); 4 = Palatin 1 pair (M); Lbar = Trèves |
+Palatin, a recorded conflict.
+
+## Remaining gaps (SUP-ELECTION, 20 Oct 2026)
+Read so far: 4 name signs C-graded on the pooled slots (W, dd, barI, Zheavy), from elec356/name_signs_pooled.tsv
+- Lbar Palatin/Trèves conflict - blocker: not-attempted; print checked only on OCR, and which l.29 sign carries "Palatin" is unsettled; next: Kluckhohn pp.813-814 page image (archive.org bub_gb_0gFoAAAAMAAJ, 2 requests), ~$0.5
+- third Lbar / flag / 4 slot with a printed name - blocker: not-attempted; ELEC-316 Next 1; next: Lisch V pp.323-347, ~$1.5
+- II, flag, 4 below the 5% shuffle gate - blocker: open-codes; each has 1-2 pairs and needs more both-sided slots (ELEC-2R Next 3)
+
+## Escalation (SUP-ELECTION, 20 Oct 2026)
+- [x] siblings: fr.3897 Joachim items 36-39, 56, 62, 64-65, 73 searched (ELEC-3897, ELEC-39, ELEC-2R)
+- [ ] clear-pages: Kluckhohn page image of pp.813-814 against the OCR
+- [x] known-keys: fr.5761 ff.104-110 key and f.51r-53r keys checked against the name signs (ELEC-PAIR, ELEC-VERSO)
+- [ ] print: Lisch V pp.323-347 (ELEC-316 Next 1)
+- [n/a] key-rebuild: name signs are a short nomenclator read from print pairs, not a rebuildable key
+- [x] image-check: f.116r l.29 settled on native crops by two blind forced-choice readers (this job)
+- [ ] retry: more both-sided slots for II, flag and 4 (ELEC-2R Next 3)
+Verdict: keep going: 3 internal gaps; cheapest next: Kluckhohn pp.813-814 page image, ~$0.5

@@ -2,7 +2,8 @@ sign_label	shape_description	reads	both_sided_pairs	shuffle_consistent_per_1000	
 W	W-like sign	le roy tres-chrestien	6	0	C	pre-registered rule 3+4 met
 dd	double loop	le roy catholique (Latin rex/rege catholicus at 2 slots)	4	8	C	pre-registered rule 3+4 met
 barI	barred I, two cross-bars	Boheme	2	167	M	rule 4: shuffle >= 5%; one further barI slot (f.116r l.27 "prouchain, barI je besoigne") has no printed name
-4	4-like sign with cross-bar	Palatin	2	176	M	rule 4: shuffle >= 5%; shape identity of the two by one reader's eye
+4	4-like sign with cross-bar	Palatin	1	-	M	one pair (l.11); f.116r l.29 relabelled Lbar by SUP-ELECTION (20 Oct 2026: readers 1, 3a, 3b Lbar; reader 2 split)
+Lbar	loop joined by a bar to an upright	Palatin	1	-	M	one pair (f.116r l.29); the same shape pairs Treves in nr.356 f.84r: rule-4 data conflict (HYPOTHESES.md)
 II	two uprights	Couloigne	1	-	M	one pair
 Zheavy	heavy barred Z	Saxe	1	-	M	one pair; distinct from the light cursive par-abbreviation on f.116v
 flag	triangle on a stem	Mayence	1	-	M	one pair; Meance is in clear on f.116v last line
