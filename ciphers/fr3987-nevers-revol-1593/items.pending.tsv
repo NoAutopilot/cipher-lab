@@ -1,0 +1,4 @@
+# proposed by tools/prior_work.py --derive; every field catalogue-only until one review moves a row to items.tsv
+item_id	shelfmark	folio	canvas	decode	ptr	wvo	date	calendar	sender	recipient	office	place	language	kind	holder_url	clear_words	verified	source
+d1	bnf français 3987	66															catalogue-only	NOTES.md:8
+d2		2		R5													catalogue-only	NOTES.md:80
