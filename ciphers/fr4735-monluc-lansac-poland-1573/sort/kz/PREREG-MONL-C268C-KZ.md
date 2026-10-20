@@ -18,8 +18,8 @@ K22 is chosen, the K12 split closed as "K12 by shape" if K12); a split between r
 change. key.tsv is never edited. After the relabel, the L26-L30 alignment is re-run with the same statistic and control (reported, not a gate).
 
 ## Decision
-Belief: <pending>
-Would change it: <pending>
-Observed: <pending>
-Decision: <pending>
-Lesson: <pending>
+Belief: the 9 L26-L30 K12|K22 splits can be settled by shape against on-page H/H references
+Would change it: any reference called the wrong id, or more than 1 X on the 8 references by either reader
+Observed: refs A 8/8 right; B 6 right, 0 wrong, 2 X (T07 = L03:8, T11 = L02:28: 'triangle over o / over m', the tick sat between signs); leads: both readers agree on all 9 -- K22 at L26:17, L27:33, L28:6, L28:11, L29:3, L29:23, L29:29 (M/M), L28:34 (L/L); K12 at L27:15 (M/M)
+Decision: change -- gate not met (B's 2 X on references are a tick-placement fault, not a misread), no relabel; round 2 re-places the T07/T11/T10 ticks and re-runs two fresh readers under PREREG-MONL-C268C-KZ2.md
+Lesson: a tick placed from a downscaled ruler view lands between signs at 9-sized spacing; check every reference tile at sheet scale before the readers see it

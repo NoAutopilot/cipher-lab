@@ -1,0 +1,18 @@
+tile	call	conf	reason
+T16	K12	M	9-bowl, long straight descender, no tail
+T15	K22	M	g-bowl, descender sweeps into long flat left tail
+T14	K22	M	g-bowl, heavy flat leftward tail
+T13	K22	M	g-bowl, long flat left tail
+T12	K22	M	g-bowl, long flat left tail
+T11	X	L	triangle sits over m; 9 is to the right
+T10	K12	L	nearest g-like sign is 9 with plain descender, triangle between signs
+T09	K12	M	9-bowl, short descender, slight left curve, no tail
+T08	K22	M	g-bowl, descender loops into long left tail
+T07	X	L	triangle over edge of o; g is to the right
+T06	K22	M	g-bowl, flat leftward tail
+T05	K22	M	g-bowl, heavy flat left tail
+T04	K22	M	faint g-bowl, descender curls left into tail
+T03	K22	M	g-bowl, flat leftward tail
+T02	K12	M	9-bowl, plain descender, no tail
+T01	K22	L	faint q/g form, leftward tail below
+T00	K22	M	g-bowl, long flat left tail
