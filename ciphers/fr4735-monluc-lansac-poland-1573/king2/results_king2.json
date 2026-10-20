@@ -1,0 +1,73 @@
+{
+ "N_keyed": 356,
+ "windows": [
+  {
+   "run": 55,
+   "lm": -1.4091,
+   "letters": 356,
+   "run_p95": 27,
+   "lm_p95": -2.2755,
+   "beats_null": true
+  },
+  {
+   "run": 51,
+   "lm": -1.429,
+   "letters": 356,
+   "run_p95": 28,
+   "lm_p95": -2.1569,
+   "beats_null": true
+  },
+  {
+   "run": 31,
+   "lm": -1.6299,
+   "letters": 356,
+   "run_p95": 28,
+   "lm_p95": -2.1569,
+   "beats_null": true
+  },
+  {
+   "run": 47,
+   "lm": -1.2917,
+   "letters": 356,
+   "run_p95": 33,
+   "lm_p95": -2.0957,
+   "beats_null": true
+  },
+  {
+   "run": 56,
+   "lm": -1.554,
+   "letters": 356,
+   "run_p95": 40,
+   "lm_p95": -2.0069,
+   "beats_null": true
+  }
+ ],
+ "control_pass": true,
+ "range": {
+  "run": [
+   31,
+   56
+  ],
+  "lm": [
+   -1.6299,
+   -1.2917
+  ]
+ },
+ "noise": {
+  "rate": 0.161,
+  "run_median": 55.0,
+  "lm_median": -1.6631,
+  "beats_null_share": 0.95
+ },
+ "target": {
+  "run": 40,
+  "lm": -1.6048,
+  "letters": 356,
+  "run_p95": 31,
+  "lm_p95": -2.2129,
+  "beats_null": true,
+  "in_range": true,
+  "decode": "ypadie | ubaladipemetendouyaideebluisiheuretpemeat | equiledtepradt | lueiere | ogdoneeleymudprouepbediteptreueritdble | q | edeles | folyetlepedfadpetddutddhquil | derheleluiaparle | ed | epaipde | eptamairepilisueenyeqque | ladesirons | auonpdeluberedelreuledoiendeniepour | edporterlndoueleestnloied | orepqueuedebougedeln | hnlbreeqquilyn | dumntinuusquepaupoiprpnrtnes | rixnetlnseureqqueledutpieurdelnnsa"
+ },
+ "gate": true
+}

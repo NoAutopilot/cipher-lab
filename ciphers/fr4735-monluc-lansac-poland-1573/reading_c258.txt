@@ -1,0 +1,12 @@
+# c258 (f.133) cipher lines 1-10 (MONL-KING2, 20 Oct 2026: two blind passes + one reconciliation call, king2/), decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py.
+# Grades: S = key letter inside a lexicon run longer than the shuffled-key max and 42 letters (king2/king2_grade.py; none qualify); M = other keyed token; U = unkeyed sign. M 356, U 21
+L01	[W:molina] y p a d i e [?x[vertical_stroke]] u b a l a d i p e m e t e n d o u y a i d e e b l u i
+L02	s i h e u r e t p e m e a t [?double_slash] e q u i l e d t e p r a d t [?x[short_vertical_stroke]] l u e i e r e [?double_slash] o g d o n
+L03	e e l e y m u d p r o u e p b e d i t e p t r e u e r i t d b l e [?x[short_vertical_stroke]] q [?x[looped_l]] e
+L04	d e l e s [?x[vertical_stroke]] f o l y e t l e p e d f a d p e t d d u t d d h q u i l [?x[L-shaped_stroke]] d e r h e l e
+L05	l u i a p a r l e [?x[short_vertical_stroke]] e d [?double_slash] e p a i p d e [?double_slash] e p t a m a i r e p i l i s u e e n
+L06	y e q q u e [W:Marie] l a d e s i r o n s [W:Marie] a u o n p d e l u b e r e d e l
+L07	r e u l e d o i e n d e n i e p o u r [W:Juno] e d p o r t e r l n d o u e l e
+L08	e s t n l o i e d [?double_slash] o r e p q u e u e d e b o u g e d e l n [?double_slash] h n l b r e
+L09	e q q u i l y n [W:Juillet] [W:8cipbre] d u m n t i n u u s q u e p a u p o i p r p n r
+L10	t n e s [?double_slash] r i x n e t l n s e u r e q q u e l e d u t p i e u r d e l n n s a [?double_slash]

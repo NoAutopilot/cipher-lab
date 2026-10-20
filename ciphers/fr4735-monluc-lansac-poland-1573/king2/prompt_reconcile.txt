@@ -1,0 +1,36 @@
+
+You are settling disputed positions in TEN lines of a 16th-century symbol cipher, sign by sign, against a numbered reference sheet. You are
+not told what any sign means and must not guess meanings; only match shapes to sheet ids. Treat each line as its own task.
+
+Files (read each with the Read tool):
+- Reference sheet: /home/user/cipher-lab/ciphers/fr4735-monluc-lansac-poland-1573/images/keysheet_monluc1_ids.png
+  (68 cells K01-K68, each a sign shape with its id in the corner; a thick black bar at a cell's left edge is a sheet artefact).
+- For each LINE in this order: L01, L02, L03, L04, L05, L06, L07, L08, L09, L10
+  Segment 1 (left part of the line): /home/user/cipher-lab/ciphers/fr4735-monluc-lansac-poland-1573/images/scratchking2/crops/c258_{LINE}_s1.jpg
+  Segment 2 (right part of the line): /home/user/cipher-lab/ciphers/fr4735-monluc-lansac-poland-1573/images/scratchking2/crops/c258_{LINE}_s2.jpg
+
+The two segments of a line OVERLAP: segment 2 starts 300 px before segment 1 ends (segment 1 is 1700 px wide), so the signs in the
+rightmost ~300 px of segment 1 appear again at the left edge of segment 2. Transcribe segment 1 fully, then continue with segment 2
+from the first sign that is NOT already in segment 1. Each crop may show fragments of the lines above and below at its top and
+bottom edges: transcribe only the central line, the one running through the middle of the crop.
+
+Two independent readers transcribed these lines against the reference sheet. Where they agreed the sign is given; where they
+disagreed the position is shown as [n: A=... | B=...] ('(nothing)' = that reader saw no sign there). Look at the crop for each
+disputed position, compare the shape against the sheet cells named, and decide. You are not told meanings; judge shape only.
+A ?x[...] token means a sign matching no sheet cell; ?double_slash a '//' stroke; W:word a word in ordinary script.
+
+L01: [1: A=W:molino | B=W:molina] K40 K14 K01 K04 [2: A=K61 | B=K59] K26 [3: A=?x[vertical_stroke] | B=A:-] [4: A=K68 | B=K37] K02 K01 K10 K41 K04 K09 K14 K05 [5: A=K62 | B=K11] K26 K38 K05 K32 K04 K33 [6: A=K39 | B=K19] K40 K01 K29 K04 K05 K26 K23 K30 [7: A=K39 | B=K19] K09
+L02: K37 K09 K08 K26 K39 K36 K05 K38 K14 K26 K11 K42 [8: A=K04 | B=K01] K38 ?double_slash K05 K15 K39 K09 K10 K26 K04 K38 K05 K14 K36 [9: A=K04 | B=K01] K04 K38 [10: A=?x[short_vertical_stroke] | B=-] [11: A=K64 | B=?x[vertical_stroke]] [12: A=K39 | B=K38] K26 [13: A=K61 | B=K59] K05 K36 K05 ?double_slash K33 K07 K04 K33 [14: A=?x[A-like_sign_at_edge] | B=K66]
+L03: [15: A=K52 | B=?x[C_with_horizontal_bar]] K05 K10 K26 K40 K11 [16: A=K39 | B=K19] K04 K14 K36 K33 K39 K05 [17: A=K14 | B=K36] K02 K26 K04 K29 K38 K05 K14 K38 K36 K05 [18: A=K39 | B=K19] K26 K36 K09 K38 K04 K02 K10 K05 [19: A=?x[short_vertical_stroke] | B=?x[vertical_stroke]] K15 [20: A=?x[small_i-stroke] | B=?x[looped_l]] K05
+L04: K04 K05 K10 K26 K37 [21: A=?x[short_vertical_stroke] | B=?x[vertical_stroke]] K06 K33 K30 K40 K26 K38 K10 K05 K14 K26 K04 K06 [22: A=K04 | B=K01] K04 K14 K05 K38 K04 K04 [23: A=K39 | B=K19] K38 K04 K04 K08 K15 [24: A=K39 | B=K19] [25: A=K61 | B=K59] K10 [26: A=?x[L-shaped_stroke] | B=?x[L-shaped_bracket]] K04 K05 [27: A=K36 | B=K49] K08 K05 K10 K26
+L05: [28: A=K15 | B=K64] [29: A=K38 | B=K61] K29 K01 K14 K01 K36 K30 K05 [30: A=?x[short_vertical_stroke] | B=-] K42 K04 ?double_slash K05 K14 K01 K09 K14 K04 K05 ?double_slash K26 K14 K38 K41 K31 K01 K09 K36 K05 K14 K09 K10 K09 K67 K39 K05 K26 [31: A=K66 | B=-]
+L06: K21 K26 [32: A=K15 | B=-] K15 [33: A=K61 | B=K38] K42 W:Marie K30 K41 K25 K26 K37 K09 K49 K33 K12 K37 W:Marie K41 K39 K33 K12 K14 K04 K26 [34: A=K11 | B=K10] K19 K02 K05 K36 K05 K04 K26 K10
+L07: K36 K05 [35: A=K61 | B=K38] [36: A=K11 | B=K10] K26 K04 K33 K09 K05 K12 K25 K05 K12 K09 K05 K14 K33 K39 K36 W:Juno K26 [37: A=K12 | B=K04] K14 K33 K36 [38: A=K61 | B=K38] K05 K36 [39: A=K11 | B=K10] K12 [40: A=K12 | B=K04] K33 K68 K26 [41: A=K58 | B=K62] K05
+L08: K26 K37 [42: A=K38 | B=A:-] [43: A=K61 | B=K05] K12 K10 K33 K09 K05 [44: A=K12 | B=K04] ?double_slash K33 K36 K05 K14 K15 K39 K26 K19 K05 [45: A=K12 | B=K04] K42 K02 K33 K39 K07 K26 K25 K05 K10 K12 ?double_slash K08 K12 K10 K02 K36 K05
+L09: K05 [46: A=K15 | B=-] K15 [47: A=K61 | B=K38] K09 K10 [48: A=K21 | B=K09] K12 W:Juillet [49: A=W:8ep:bre | B=W:8cipbre] K04 K19 [50: A=K62 | B=K11] K12 [51: A=K61 | B=K38] K09 K12 K19 K39 K37 K15 K39 K05 K14 K41 [52: A=K61 | B=K38] K14 K33 K09 [53: A=K14 | B=K36] [54: A=K49 | B=K27] [55: A=K34 | B=K14] K12 K36
+L10: [56: A=K61 | B=K38] K12 K26 K37 ?double_slash K36 K09 [57: A=K16 | B=K20] K66 K26 [58: A=K61 | B=K38] K10 K12 K67 K05 K39 K36 K52 [59: A=K15 | B=-] K15 [60: A=K61 | B=K38] K05 K10 K26 K25 K19 [61: A=K61 | B=K38] K14 K09 K05 K39 K36 K04 K52 K30 K12 K12 K67 K41 ?double_slash
+
+Answer with one line per disputed position, in order, and nothing else:
+n<TAB>CHOICE<TAB>note
+where CHOICE is A, B, a sheet id (K01-K68) if both readers are wrong, a ?x[...] / ?double_slash token, or NONE if no sign is there.
+Note: at most 6 words on the shape that decided it.

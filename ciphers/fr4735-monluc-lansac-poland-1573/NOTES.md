@@ -2212,3 +2212,75 @@ Read so far: unchanged -- f.86 150 tokens C 83/M 64/U 3 and f.138r-v C 780/2133 
 - [x] image-check: f.132 (c257), f.166r-v (c316/c317) seen this job
 - [x] retry: one retry after a connection reset on c316; Google Books 503s retried once
 Verdict: keep going: 3 internal gaps; cheapest next: f.166 second pass, ~$1; most informative: brief step 2 as its own job, ~$7
+
+## MONL-KING2 (20 Oct 2026)
+Account 2, Opus, for the account-4 research director, wave 41 (`.claude/briefs/runs/2026-10-20-acct4-research-director-41.md`, job MONL-KING2).
+Solver job: what was found and where it was not; no novelty class. `tools/dup_check.py`: DUP-RISK flagged only this job's own claim line.
+**PREREG** `PREREG-MONL-KING2.md`, pushed at d3ab538ae before the control run and before any f.133 request; script `king2/king2_score.py`.
+
+**Positive control first (no image fetched until it passed).** f.138r-v decode (ciphertext_c268.tsv + c269, sign column, key.tsv), windows
+of the target's keyed N. At N=333 (c268 L01-L10) and again at the target's N=356: all 5 windows beat their own 20 value-shuffled keys on
+both statistics; window 1 run 55 vs p95 27, lm -1.409 vs p95 -2.276; true-key range run 31-56, lm -1.630 to -1.292. Noise bracket at the
+target's own pass disagreement (16.1%): 19/20 draws still beat the null (run median 55, lm median -1.663).
+
+**Images.** openapi.bnf.fr, 4 requests, one at a time >= 1.6 s apart: info.json (4421x6489), 1000 px overview, one 404 (tools/iiif_lines.py
+`--ark ark:/12148/...` doubles the ark prefix on the openapi host -- pass the bare id or a full URL), then the full URL, which
+iiif_lines.py fetched as the whole native page (it reads any URL as the service base); lines then cut locally:
+`python3 tools/iiif_lines.py --image images/scratchking2/src_image_v3_ark_12148_btv1b9060724s_f258_full.jpg --region 1150,720,2550,1330
+--out images/scratchking2 --prefix c258k --deskew --debug` -> 11 bands, pitch 107, deskew -0.371 deg; overlay and stacked crops checked
+(L01 opens "molina", L06 "Marie ... Marie", L07 "Juno", L09 "Juillet 8bre" as on the overview); each line re-cut to the leaf's 1700 px +
+1150 px segments (300 px overlap). `regen_monlking2.sh` re-derives page and crops (untracked).
+
+**Reads.** Two blind passes (strongest model, the c258 prompt of MONL-LEAF with five lines per call; king2/passA.tsv, passB.tsv), 4 calls;
+`tools/reconcile_passes.py` 317/378 = 83.9% agree, 61 splits, mostly the known look-alikes (K39|K19 x9, K61|K38 x9, K12|K04 x7, K11|K10 x4,
+K04|K01 x4); one reconciliation call on the 61 positions (king2/prompt_reconcile.txt, rec_answers.tsv): 377 tokens in `ciphertext_c258.tsv`
+(316 H agreed, 61 M reconciled; one position dropped).
+
+**Gate (registered): PASS.** f.133 L01-L10, 356 keyed tokens: run 40 vs shuffled-key p95 31; lm -1.605 vs p95 -2.213; both inside the
+f.138 range (run >= 31, lm >= -1.630). Results `king2/results_king2.json`.
+**Grades (`king2/king2_grade.py`, `votes_c258.tsv`, decode.json job 4):** S needs a lexicon run longer than both the shuffled-key maximum
+(38) and 42 letters (~1.5 x unicity for a 26-letter simple substitution); the longest run is 40, so **S 0, M 356, U 21**. No clause clears the
+authentication distance: fragments only. `python3 tools/decode_key.py . --check` -> "reading up to date" (c258: M 356, U 21).
+Judge (rule 7), `python3 tools/judge_plaintext.py specs/fr4735-monluc-lansac-poland-1573.json --file king2/decode_c258_letters.txt`:
+```
+FAIL language: score=-1.605, null_p99=-1.839, real_p05=-0.894, real_median=-0.782, mode=both, N=356
+ok   words: cover=0.711, min=0.5, real_text_median_cover=0.944
+FAIL - fr4735-monluc-lansac-poland-1573 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+(The judge's real_p05 is clear prose; the f.138 decode, whose plaintext is known, scores -1.29 to -1.63 by the same lm, so this FAIL is the
+key's known nulls/jargon and look-alikes at this N, not evidence against the key.)
+Decoded fragments (grade M, not a reading): L06 "...ladesirons" then "auon[s] deliber[e] de l..." (L06-L07), L07 "...pour", "porter",
+L08 "que ... de bouge de l[a]", L09 "qu'il y [a]". Unkeyed in-line words as transcribed: molina (L01; Tomokiyo's jargon list), Marie x2,
+Juno, Juillet, 8bre.
+**Exploratory placement** (`king2/king2_place.py`, not gated): exact run vs 200 word-shuffled copies -- control c268 L01-L10 vs f.140 16 vs
+max 12 (placed); f.133 vs f.166 6 vs max 9; vs ff.140-141 8 vs max 11. f.133's first lines are not the text of either clear letter.
+
+**Six questions.** (1) Learned: f.133 reads under Tomokiyo's Cipher 1 table above every shuffled key and inside the f.138 range, so the
+king's letter's cipher is Cipher 1; its first ten lines are not the text of f.166 (2 May) nor of the queen's clear copy ff.140-141.
+(2) Assumptions: that ff.132-136 are one letter (leaf order not read through); that the f.138 windows are a fair true-key range (f.138 is
+transcribed with many more sort passes than f.133's two); that the lexicon/4-gram corpus fr (Catherine de Medicis letters) suits Monluc.
+(3) Unverified: the 61 reconciled positions (single reconciler); whether the K04|K12 and K39|K19 look-alikes are reader splits or the
+scribe's homophones; the language of "molina". (4) Alternatives: the run statistic's small margin (40 vs null max 38) could be chance while
+lm carries the gate; the leaf could be the cipher of a different Monluc letter to the king in Cipher 1 (aid items 53-55 say the king letter
+is "incomplete at the end"). (5) Most informative next: read c258 L11-L40 in three 10-line bands (same protocol) so a run can clear the
+42-letter clause; with that, f.132's cipher L01-L05 (c257) to tie the leaves into one letter. (6) Decision: **continue**.
+
+Reading so far: f.86 150 tokens C 83/M 64/U 3; f.138r-v C 780/2133 target total (AUDIT.md); f.133 L01-L10 377 tokens M 356/U 21 (new,
+no S). openapi.bnf.fr: 4 requests (1 x 404). Vision calls: 4 passes + 1 reconciliation.
+
+## Remaining gaps (MONL-KING2, 20 Oct 2026)
+Read so far: f.86 150 tokens C 83/M 64/U 3; f.138r-v C 780/2133 (AUDIT.md); f.133 L01-L10 377 tokens M 356/U 21, no S.
+- f.133 (c258) L11-L40 - blocker: not-attempted; outside this brief (L01-L10 only); next: three 10-line bands, same protocol (regen_monlking2.sh region moved down, 2 passes + 1 reconciliation per band, king2_score/king2_grade on the cumulative read), ~$4 per band
+- f.132 (c257) cipher lines and c262/c264 order - blocker: not-attempted; outside this brief; next: c257 cipher L01-L05 read and decoded to tie f.132 and f.133 into one letter, ~$3
+- f.166 clear text second pass - blocker: not-attempted; single pass MK1, unreconciled; next: one independent read of clear_f166.tsv from c316/c317 at 2800 px, ~$1
+- ff.213-223 Cipher 2 decipherment candidates, f.87 canvas, f.84's missing cipher - blocker: not-attempted; carried from MONL-CENSUS; next: one overview look each, ~$1.5
+
+## Escalation (MONL-KING2, 20 Oct 2026)
+- [x] siblings: f.166 and ff.140-141 tested as the clear of f.133 L01-L10 (exploratory run statistic): neither
+- [x] clear-pages: no clear text for f.133 located (f.132's clear opening only)
+- [x] known-keys: key.tsv (Tomokiyo Cipher 1) applied; gate passed against shuffled keys with the f.138 control
+- [x] print: carried from MONL-KING (Noailles I-III, Google Books, OpenAlex, Tomokiyo, Lasry): nothing for this letter
+- [ ] key-rebuild: S-grade clause needs a longer read of f.133 (L11-L40)
+- [x] image-check: c258 native page fetched and the ten lines cut, overlay checked
+- [x] retry: none needed beyond the one malformed-URL 404 (not retried; the corrected URL was a new request)
+Verdict: keep going: 4 internal gaps; cheapest next: f.166 second pass, ~$1; most informative: f.133 L11-L20 band, ~$4

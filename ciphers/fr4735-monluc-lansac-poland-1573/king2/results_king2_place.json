@@ -1,0 +1,26 @@
+[
+ {
+  "read": "c268 L01-L10 (control)",
+  "clear": "clear_f140.tsv",
+  "run": 16,
+  "null_max": 12,
+  "null_p95": 11,
+  "placed_run": true
+ },
+ {
+  "read": "c258 L01-L10",
+  "clear": "clear_f166.tsv",
+  "run": 6,
+  "null_max": 9,
+  "null_p95": 7,
+  "placed_run": false
+ },
+ {
+  "read": "c258 L01-L10",
+  "clear": "clear_f140.tsv",
+  "run": 8,
+  "null_max": 11,
+  "null_p95": 10,
+  "placed_run": false
+ }
+]

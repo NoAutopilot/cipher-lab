@@ -154,6 +154,58 @@
      "grade"
     ]
    ]
+  },
+  {
+   "ciphertext": "ciphertext_c258.tsv",
+   "format": "tsv",
+   "key": "key.tsv",
+   "reading": "reading_c258.txt",
+   "tokens": "reading_tokens_c258.tsv",
+   "style": "spaced",
+   "uncertain_conf": [
+    "M"
+   ],
+   "unknown_values": [],
+   "unkeyed_value": "?",
+   "m_words": [
+    "uncertain",
+    "faint",
+    "meaning uncertain",
+    "attested"
+   ],
+   "votes": {
+    "file": "votes_c258.tsv",
+    "value_column": "value"
+   },
+   "voted_grade": "S",
+   "disagree_grade": "M",
+   "unvoted_grade": "M",
+   "header": [
+    "# c258 (f.133) cipher lines 1-10 (MONL-KING2, 20 Oct 2026: two blind passes + one reconciliation call, king2/), decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py.",
+    "# Grades: S = key letter inside a lexicon run longer than the shuffled-key max and 42 letters (king2/king2_grade.py; none qualify); M = other keyed token; U = unkeyed sign. {grades_sorted}"
+   ],
+   "token_columns": [
+    [
+     "line",
+     "line"
+    ],
+    [
+     "pos",
+     "pos"
+    ],
+    [
+     "sign",
+     "raw"
+    ],
+    [
+     "value",
+     "value"
+    ],
+    [
+     "grade",
+     "grade"
+    ]
+   ]
   }
  ]
 }
