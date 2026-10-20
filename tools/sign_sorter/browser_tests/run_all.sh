@@ -28,6 +28,8 @@ run test_pan test_pan.js "$OUT"
 # owner rule R10 (11 Oct 2026, desktop: "ctrl+click + mouse scroll to zoom in and out"): Ctrl + wheel (and a trackpad pinch) on the card's
 # picture zooms it around the pointer in step with the Zoom slider, the page itself does not zoom, a plain wheel scrolls, also while fixing
 run test_wheel test_wheel.js "$OUT"
+# template 2026-10-20.1 (SORTER-SAVEFIX, 20 Oct 2026): the save state machine -- read-back, NOT saved banner, retries, recovery from this browser
+run test_save test_save.js "$OUT/plain.html"
 # the edges of R09-R11 found by the adversarial checks of 11 Oct 2026 (template 2026-10-09.7): Ctrl + wheel in the strips keeps the ink under the
 # pointer, with the button held, after a lost release, over the enlarged sign; Enter after a nudge click saves; Alt/Ctrl + arrows are the
 # browser's; iOS gesture events beside a finger pinch; Fix the cut fits an iPhone SE

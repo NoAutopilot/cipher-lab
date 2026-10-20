@@ -7,7 +7,8 @@
 //     change carrying the last body; own writes echo at once (hasPendingWrites) and again when confirmed;
 //   - confirms writes after a random latency (opts.minMs..opts.maxMs), so two overlapping writes to one document can
 //     land out of order -- the contract says "one write at a time per document", and a page that ignores it loses data;
-//   - rejects a write with {code, message} when the test calls store.failNext(n);
+//   - rejects a write with {code, message} when the test calls store.failNext(n); ref.get() reads the server copy (store.lie(n):
+//     the next n reads find nothing, a write the server dropped);
 //   - store.external(page, c, id, body) plays another device's write into the page's snapshots.
 // Usage: const db = require('./mock_db'); const store = await db.install(context, {minMs: 50, maxMs: 400});
 //        store.docs -> {collection: {id: body}};  store.dump(dir) writes DIR/<collection>/<id>.json for sign_sorter_apply.py.
@@ -15,7 +16,7 @@ const fs = require('fs'), path = require('path');
 
 async function install(target, opts = {}) {
   const o = Object.assign({ connectMs: 600, minMs: 40, maxMs: 300, nullDb: false }, opts);
-  const store = { docs: {}, fail: 0, writes: 0, failNext(n = 1) { this.fail = n; },
+  const store = { docs: {}, fail: 0, lies: 0, nullDb: !!o.nullDb, writes: 0, failNext(n = 1) { this.fail = n; }, lie(n = 1) { this.lies = n; },
     // another viewer (or the same person on a second device) writes a document; the page hears it on its next refresh
     async external(page, c, id, body) { this.docs[c] = this.docs[c] || {}; if (body === null) delete this.docs[c][id]; else this.docs[c][id] = body;
       await page.evaluate(cc => window.__mockDb.refresh(cc), c); },
@@ -29,6 +30,8 @@ async function install(target, opts = {}) {
     if (body === null) delete store.docs[c][id]; else store.docs[c][id] = JSON.parse(body);
     return '';
   });
+  await target.exposeBinding('__dbNull', () => store.nullDb);   // store.nullDb = false later: storage answers on the next load
+  await target.exposeBinding('__dbLie', () => { if (store.lies > 0) { store.lies--; return true; } return false; });
   await target.exposeBinding('__dbRead', (_src, c) => JSON.stringify(store.docs[c] || {}));
   await target.addInitScript(o2 => {
     const listeners = {};            // collection -> [{fn, seen: {id: frozen body}}]
@@ -63,11 +66,15 @@ async function install(target, opts = {}) {
     const db = { collection: c => ({ path: c,
       doc: id => { if (!ID.test(id) || id === '.' || id === '..') throw new TypeError('bad doc id ' + id);
         return { id, set: d => { if (!d || typeof d !== 'object') return Promise.reject({ code: 'invalid_argument', message: 'body' }); return write(c, id, JSON.parse(JSON.stringify(d))); },
-          delete: () => write(c, id, null) }; },
+          delete: () => write(c, id, null),
+          // a read-back from the server's copy (template 2026-10-20.1 confirms every write this way); store.lie(n) makes the next n
+          // reads return an empty document, as a write the server dropped would
+          get: async () => { const lie = await window.__dbLie(); const all = JSON.parse(await window.__dbRead(c));
+            const body = lie ? undefined : all[id]; return Object.freeze({ id, exists: body !== undefined, data: () => body === undefined ? undefined : Object.freeze(body), metadata: { fromCache: false, hasPendingWrites: false } }); } }; },
       onSnapshot: (fn, err) => { const L = { fn, err, seen: {}, first: true }; (listeners[c] = listeners[c] || []).push(L);
         setTimeout(() => refresh(c), 20); return () => { listeners[c] = listeners[c].filter(x => x !== L); }; } }) };
     window.__mockDb = { pending, server, refresh };
-    window.claude = { use: name => new Promise(r => setTimeout(() => r(name === 'db' && !o2.nullDb ? db : null), o2.connectMs)) };
+    window.claude = { use: name => new Promise(r => setTimeout(async () => r(name === 'db' && !(await window.__dbNull()) ? db : null), o2.connectMs)) };
   }, o);
   return store;
 }

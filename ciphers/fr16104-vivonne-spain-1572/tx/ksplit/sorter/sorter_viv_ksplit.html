@@ -1,5 +1,5 @@
 <!doctype html>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-15.1"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="sign-sorter-template" content="2026-10-20.1"><!-- template version: bump on any change the person sees; tools/sorter_preflight.py fails pages built on an older one -->
 <title>Vivonne 1573: split two signs</title>
 <style>
 /* Layout: a sorting bench in two steps (owner, 3 Oct 2026). Step 1: clean each pile -- tap a sign that does not belong
@@ -62,6 +62,19 @@ h1{font-family:var(--f-display);font-weight:600;font-size:2.1rem;margin:0;text-w
 .cntb{display:inline-block;min-width:20px;padding:0 6px;border-radius:10px;background:var(--accent);color:var(--bg);font-size:.78rem;line-height:20px;margin-left:4px}
 .cntb.zero{background:var(--line);color:var(--muted)}
 #undo{padding:7px 10px}
+/* the save banner and the recovery box (template 2026-10-20.1, SORTER-SAVEFIX): state told by glyph, words and border, never hue alone */
+.saveban{flex:1 1 100%;margin:0;padding:6px 10px;border-radius:6px;font-weight:700;font-size:.9rem}
+.saveban.ok{border:2px solid var(--ink);background:var(--surface);color:var(--ink)}
+.saveban.wait{border:2px dashed var(--ink);background:var(--warn-soft);color:var(--ink)}
+.saveban.bad{border:3px double var(--bg);background:var(--ink);color:var(--bg)}
+.saveban button{margin-left:8px;font-weight:700}
+@media (max-width:640px){.saveban{padding:2px 8px;font-size:.8rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.saveban.bad{white-space:normal}}   /* phone: one line unless something is NOT saved */
+#recover[hidden]{display:none}
+#recover{margin-top:12px;background:var(--surface);border:3px solid var(--ink);border-radius:6px;padding:10px 12px}
+#recover .rh{font-weight:700;margin:0 0 8px}
+#recover .recg{margin-top:8px}
+#recover .recc{display:flex;gap:6px;align-items:center;margin:8px 0}
+#recGo,#recYes{font-weight:700;background:var(--ink);color:var(--bg);border-color:var(--ink);padding:8px 12px}
 .save{font-size:.78rem;color:var(--muted);flex:1 1 100%}
 .save.err{color:var(--ink);font-weight:700;border-bottom:2px dashed var(--bad)}
 .hint1{margin:10px 0 0;font-size:.95rem}
@@ -360,7 +373,9 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
     <div class="tabs" role="tablist" aria-label="Steps"><button type="button" role="tab" id="tab1" aria-selected="true">1 · Clean<span class="wide"> piles</span></button><button type="button" role="tab" id="tab2" aria-selected="false">2 · Place <span class="cntb zero" id="outN">0</span></button></div>
     <button type="button" id="undo" disabled>Undo</button>
     <span class="save" id="save">Connecting to storage…</span>
+    <p class="saveban wait" id="saveBan" role="status" aria-live="polite">⋯ Connecting to storage. Please wait for “All changes saved” before you start.</p>
   </div>
+  <section id="recover" hidden aria-label="Recover my sort from this browser"></section>
   <section id="s1">
     <p class="hint1" id="hint1"><b>Tap</b> a sign: it goes to the “Taken out” tray at the bottom (tap it there to put it back). <b>Hold</b> a sign: its card opens, large on its line, where you fix the cut, keep it (“Right pile: keep it”) or move it; a hold moves nothing. The same in every box on this page. <span id="hintQ"><span class="mouse-only">Click the <b>?</b> badge on a questioned sign to approve it.</span><span class="touch-only">To approve a questioned sign (<b>?</b>), hold it and press “Right pile: keep it”.</span></span><span class="mouse-only"> Mouse: drag a sign onto another pile (or onto the bar at the bottom: doesn’t belong / trash); the <b>✕</b> on a sign (shown on hover) trashes it: a page edge, shadow or stain, not a sign.</span></p>
     <div class="meter"><div class="track"><div class="fill" id="fill"></div></div><span id="prog">0 of 0 piles done</span></div>
@@ -1395,75 +1410,199 @@ const offerDone = () => { if (PHONE && step === 2 && $('ctx').hidden) s2Top(); }
 $('offerYes').onclick = () => { applyCluster(); offerDone(); };
 $('offerNo').onclick = () => { hideOffer(); offerDone(); };
 
-// Saving. Each document path ('m/<sid>', 'p/<pile>', ...) has one writer that reads the CURRENT state when it runs, and
-// at most one write per path is in flight (the db contract: one write at a time per document). Writes made before
-// storage answers are held and sent when it connects. A refused write is retried once; then "Not saved ... Try again".
+// Saving (template 2026-10-20.1, SORTER-SAVEFIX; ciphers/fr16104-vivonne-spain-1572/tx/ksplit/sorter/SAVE-INCIDENT-2026-10-20.md).
+// The owner's Vivonne sort of 20 Oct 2026 was mostly lost: a refused write was retried once and then dropped (kept only in
+// memory, gone on reload, shown in a small grey line), and a page that fell back to "this browser only" never handed its
+// choices to storage on a later load. Now: every change is journaled in this browser at once (localStorage JKEY, with the
+// paths not yet confirmed); each document path has one writer that reads the CURRENT state when it runs, one write per path
+// and at most WMAX in flight (the db contract: one write at a time per document; too many concurrent writes is
+// resource_exhausted); a write counts only when a read-back (doc.get()) returns what was written; a refused or unconfirmed
+// write is retried by itself with a growing pause until it lands; the banner (#saveBan) says "N changes NOT saved" while any
+// is pending or refused, and "All changes saved" only after every write was read back. Writes made before storage answers
+// are refused (notYet: nothing moves until the saved answers are in), so nothing is held in memory only.
 let dbMode = 'connecting';     // 'connecting' | 'db' | 'local'
 let open_ = 0, lastErr = '';
-const writers = {}, running = {}, again = {}, failedPaths = new Set();
+const writers = {}, running = {}, again = {}, failedPaths = new Set(), tries = {}, timers = {}, wqueue = [];
 const inflight = {};   // doc path -> true while a local change is not yet confirmed; snapshots for these are ignored
+const WMAX = 2, JKEY = 'sorter:journal', JPREV = 'sorter:journal:prev', LEGACY = 'sorter:all';
+const FATAL = new Set(['invalid_argument', 'quota_exceeded', 'revoked', 'not_granted', 'capability_disabled', 'capability_removed', 'transform_error']);
+let wactive = 0;
 const saveEl = () => $('save');
+const pendingN = () => Object.keys(writers).length;
 function note_(t){ if (failedPaths.size) return; const el = saveEl(); el.textContent = t; el.className = 'save'; }
+// the banner: one state, in words and a glyph (never by colour alone), high contrast, always in the sticky bar
+function banner(){
+  const b = $('saveBan'); if (!b) return; const n = pendingN(), w = n === 1 ? ' change' : ' changes';
+  let cls = 'ok', t = '', retry = false;
+  if (dbMode === 'connecting'){ cls = 'wait'; t = '⋯ Connecting to storage. Please wait for “All changes saved” before you start.'; }
+  else if (dbMode === 'local'){ cls = 'bad'; t = '✕ Storage is not connected: your choices are kept in THIS browser only and do not reach us. Reload the page to try again; nothing you do here is lost.'; }
+  else if (failedPaths.size){ cls = 'bad'; retry = true;
+    t = '✕ ' + n + w + ' NOT saved (' + lastErr + '). Retrying by itself; they are kept in this browser. Do not close the page.'; }
+  else if (n){ cls = 'wait'; t = '⋯ ' + n + w + ' NOT saved yet: saving…'; }
+  else { cls = 'ok'; t = '✓ All changes saved (each one read back from storage).'; }
+  b.className = 'saveban ' + cls; b.textContent = t;
+  if (retry){ const k = document.createElement('button'); k.type = 'button'; k.id = 'banRetry'; k.textContent = 'Try again now'; k.onclick = retryAll; b.append(' ', k); }
+}
+function retryAll(){ [...failedPaths].forEach(p => { failedPaths.delete(p); clearTimeout(timers[p]); delete timers[p]; pump(p); }); status(); }
 function status(){
+  banner();
   const el = saveEl(), ce = $('ctxErr');   // a refused save is shown in the open dialog too
   ce.hidden = !(failedPaths.size && dbMode === 'db'); ce.textContent = '';
   if (dbMode === 'local'){ el.textContent = 'Storage not connected: changes are kept in this browser only'; el.className = 'save err'; return; }
-  if (failedPaths.size){ el.className = 'save err'; el.textContent = 'Not saved: ' + failedPaths.size + (failedPaths.size === 1 ? ' change' : ' changes') +
-      ' (' + lastErr + '). They are still on screen. ';
+  if (failedPaths.size){ el.className = 'save err'; el.textContent = 'Not saved: ' + pendingN() + (pendingN() === 1 ? ' change' : ' changes') +
+      ' (' + lastErr + '). They are still on screen and kept in this browser. ';
     ce.textContent = el.textContent;
-    const retry = () => { [...failedPaths].forEach(p => { failedPaths.delete(p); pump(p); }); status(); };
-    [[el, 'retry'], [ce, 'ctxRetry']].forEach(([box, id]) => { const b = document.createElement('button'); b.type = 'button'; b.id = id; b.textContent = 'Try again'; b.onclick = retry; box.append(b); });
+    [[el, 'retry'], [ce, 'ctxRetry']].forEach(([box, id]) => { const b = document.createElement('button'); b.type = 'button'; b.id = id; b.textContent = 'Try again'; b.onclick = retryAll; box.append(b); });
     return; }
   el.className = 'save';
-  if (dbMode === 'connecting'){ el.textContent = Object.keys(writers).length ? 'Connecting to storage… your choices will be saved as soon as it answers' : 'Connecting to storage…'; return; }
-  el.textContent = open_ ? 'Saving ' + open_ + '…' : 'All changes saved';
+  if (dbMode === 'connecting'){ el.textContent = 'Connecting to storage…'; return; }
+  el.textContent = pendingN() ? 'Saving ' + pendingN() + '…' : 'All changes saved';
 }
+// canonical JSON (sorted keys, undefined dropped): what was written vs what the read-back returned
+const canon = v => JSON.stringify(v, (k, x) => (x && typeof x === 'object' && !Array.isArray(x)) ? Object.keys(x).sort().reduce((o, kk) => (o[kk] = x[kk], o), {}) : x);
+const sameDoc = (a, b) => canon(JSON.parse(JSON.stringify(a))) === canon(JSON.parse(JSON.stringify(b)));
+// one write plus its read-back; a writer returns {ref, body} (body null: delete)
+async function commitDoc(w){
+  if (w.body) await w.ref.set(w.body); else await w.ref.delete();
+  const snap = await w.ref.get();
+  if (w.body ? !(snap.exists && sameDoc(snap.data(), w.body)) : snap.exists)
+    throw {code: 'unconfirmed', message: 'storage did not read back what was written'};
+}
+const wait = ms => new Promise(r => setTimeout(r, ms));
+function schedule(path){   // a refused write tries again by itself: 4 s, 8 s, 16 s, then every 30 s, until it lands
+  tries[path] = (tries[path] || 0) + 1; clearTimeout(timers[path]);
+  timers[path] = setTimeout(() => { delete timers[path]; if (failedPaths.has(path)){ failedPaths.delete(path); pump(path); status(); } }, Math.min(30000, 2000 * 2 ** tries[path])); }
 function pump(path){
+  if (!writers[path] || dbMode !== 'db') return;
   if (running[path]){ again[path] = true; return; }
-  running[path] = true; open_++; status();
-  const attempt = n => Promise.resolve().then(writers[path]).catch(e => {
+  if (wactive >= WMAX){ if (!wqueue.includes(path)) wqueue.push(path); status(); return; }
+  clearTimeout(timers[path]); delete timers[path];
+  running[path] = true; wactive++; open_++; status();
+  const attempt = n => Promise.resolve().then(() => commitDoc(writers[path]())).catch(e => {
     const code = (e && e.code) || '';
-    if (n === 0 && code !== 'invalid_argument' && code !== 'quota_exceeded' && code !== 'revoked')
-      return new Promise(r => setTimeout(r, 300 + Math.random() * 500)).then(() => attempt(1));
+    if (n === 0 && !FATAL.has(code)) return wait(300 + Math.random() * 500).then(() => attempt(1));
     throw e; });
-  attempt(0).then(() => { failedPaths.delete(path); },
-    e => { failedPaths.add(path); lastErr = (e && (e.message || e.code)) || 'storage refused the write'; })
-    .finally(() => { running[path] = false; open_--;
-      if (again[path]){ again[path] = false; failedPaths.delete(path); pump(path); return; }
-      if (!failedPaths.has(path)){ delete writers[path]; delete inflight[path]; }
+  attempt(0).then(() => { failedPaths.delete(path); delete tries[path]; },
+    e => { failedPaths.add(path); lastErr = (e && (e.message || e.code)) || 'storage refused the write'; if (!FATAL.has((e && e.code) || '')) schedule(path); })
+    .finally(() => { running[path] = false; wactive--; open_--;
+      if (again[path]){ again[path] = false; failedPaths.delete(path); pump(path); }
+      else if (!failedPaths.has(path)){ delete writers[path]; delete inflight[path]; journal(); }
+      while (wactive < WMAX && wqueue.length){ const nx = wqueue.shift(); if (writers[nx] && !running[nx]) pump(nx); }
       status(); });
 }
 function track(path, fn){
   writers[path] = fn; inflight[path] = true; failedPaths.delete(path);
-  if (dbMode === 'local'){ delete writers[path]; delete inflight[path]; persistLocal(); status(); return; }
-  if (dbMode === 'connecting'){ status(); return; }   // sent when storage connects
+  if (dbMode === 'local'){ delete writers[path]; delete inflight[path]; journal(); status(); return; }
+  journal();   // in this browser at once, before storage is asked
+  if (dbMode === 'connecting'){ status(); return; }
   pump(path);
 }
+window.addEventListener('beforeunload', e => { if (dbMode === 'db' && pendingN()){ e.preventDefault(); e.returnValue = ''; } });
 const stamp = () => new Date().toISOString();
 function save(id){
   track('p/' + id, () => { const s = st(id);
-    return col.doc(key(id)).set({pile: id, verdict: s.verdict, merge_into: s.merge_into, outliers: s.outliers.slice(), note: s.note || '', updated: stamp()}); }); }
+    return {ref: col.doc(key(id)), body: {pile: id, verdict: s.verdict, merge_into: s.merge_into, outliers: s.outliers.slice(), note: s.note || '', updated: stamp()}}; }); }
 function saveMove(sid){
-  track('m/' + sid, () => moves[sid] ? mcol.doc(key(sid)).set({sid, from: homeOf[sid], to: moves[sid], updated: stamp()}) : mcol.doc(key(sid)).delete()); }
+  track('m/' + sid, () => ({ref: mcol.doc(key(sid)), body: moves[sid] ? {sid, from: homeOf[sid], to: moves[sid], updated: stamp()} : null})); }
 function saveNew(id){
-  track('n/' + id, () => newPiles[id] ? ncol.doc(key(id)).set({id, family: newPiles[id].family, from: newPiles[id].from, updated: stamp()}) : ncol.doc(key(id)).delete()); }
+  track('n/' + id, () => ({ref: ncol.doc(key(id)), body: newPiles[id] ? {id, family: newPiles[id].family, from: newPiles[id].from, updated: stamp()} : null})); }
 function saveCluster(c){
   track('c/' + c, () => { const d = clusterDec[c];
-    return d ? ccol.doc(key(c)).set({cluster: c, to: d.to, from_sid: d.from_sid, n: d.n, source: DATA.clusterSource || '', atlas: DATA.atlas || '', updated: stamp()})
-             : ccol.doc(key(c)).delete(); }); }
+    return {ref: ccol.doc(key(c)), body: d ? {cluster: c, to: d.to, from_sid: d.from_sid, n: d.n, source: DATA.clusterSource || '', atlas: DATA.atlas || '', updated: stamp()} : null}; }); }
 function saveCheck(sid){
-  track('k/' + sid, () => checked[sid] ? kcol.doc(key(sid)).set({sid, pile: checked[sid], updated: stamp()}) : kcol.doc(key(sid)).delete()); }
+  track('k/' + sid, () => ({ref: kcol.doc(key(sid)), body: checked[sid] ? {sid, pile: checked[sid], updated: stamp()} : null})); }
 function saveRecut(sid){
   track('r/' + sid, () => { const r = recuts[sid];
-    if (!r) return rcol.doc(key(sid)).delete();
+    if (!r) return {ref: rcol.doc(key(sid)), body: null};
     const body = {sid, page: itemBySid[sid].p, x: r.x, y: r.y, w: r.w, h: r.h, old: r.old.slice(), at: r.at};   // x y w h kept: older pages and tools read them
     if (r.quad){ body.quad = r.quad.map(p => p.slice()); body.mask = (r.mask || []).map(st => ({r: st.r, pts: st.pts.map(p => p.slice())})); }
-    return rcol.doc(key(sid)).set(body); }); }
+    return {ref: rcol.doc(key(sid)), body}; }); }
 function saveAdded(id){
-  track('a/' + id, () => { const a = added[id]; if (!a) return acol.doc(key(id)).delete();
-    return acol.doc(key(id)).set({id, from: a.from, kind: a.kind, page: a.page, x: a.x, y: a.y, w: a.w, h: a.h, quad: a.quad.map(p => p.slice()),
-      mask: (a.mask || []).map(st => ({r: st.r, pts: st.pts.map(p => p.slice())})), at: a.at}); }); }
-function persistLocal(){ try { localStorage.setItem('sorter:all', JSON.stringify({state, moves, newPiles, clusterDec, checked, outAt, recuts, added})); } catch(e){} }
+  track('a/' + id, () => { const a = added[id]; if (!a) return {ref: acol.doc(key(id)), body: null};
+    return {ref: acol.doc(key(id)), body: {id, from: a.from, kind: a.kind, page: a.page, x: a.x, y: a.y, w: a.w, h: a.h, quad: a.quad.map(p => p.slice()),
+      mask: (a.mask || []).map(st => ({r: st.r, pts: st.pts.map(p => p.slice())})), at: a.at}}; }); }
+// the journal: the whole arrangement and the paths storage has not confirmed, in this browser (per page origin)
+const stashOf = () => ({state, moves, newPiles, clusterDec, checked, outAt, recuts, added});
+function journal(){ try { localStorage.setItem(JKEY, JSON.stringify(Object.assign({at: Date.now(), mode: dbMode, pending: Object.keys(writers)}, stashOf()))); } catch(e){} }
+function readStash(k){ try { const v = JSON.parse(localStorage.getItem(k) || 'null'); return v && typeof v === 'object' ? v : null; } catch(e){ return null; } }
+
+// Recover my sort from this browser (SORTER-SAVEFIX): when this browser holds choices storage does not -- a journal with
+// unconfirmed paths, a journal or an older page's copy ('sorter:all') written while storage was not connected -- the page lists
+// them as piles and writes them only on the person's confirm. A choice that differs from a document storage already holds is
+// shown apart and replaced only when ticked. Nothing is ever deleted from storage here.
+const CATS = {m: 'moves', n: 'newPiles', p: 'state', k: 'checked', c: 'clusterDec', r: 'recuts', a: 'added'};
+const DEF_STATE = {verdict: null, merge_into: null, outliers: [], note: ''};
+function recoverable(){
+  const out = [], seen = {};
+  const cur = {moves, newPiles, state, checked, clusterDec, recuts, added};
+  const add = (src, v, only) => { if (!v) return;
+    Object.entries(CATS).forEach(([k, cat]) => { const o = v[cat]; if (!o || typeof o !== 'object') return;
+      Object.entries(o).forEach(([id, val]) => { const path = k + '/' + id; if (seen[path] || (only && !only.has(path))) return;
+        if (val === null || val === undefined) return;
+        if (cat === 'state' && sameDoc(Object.assign({}, DEF_STATE, val), DEF_STATE)) return;
+        if ((cat === 'moves' || cat === 'checked' || cat === 'recuts') && !itemBySid[id]) return;
+        if (cat === 'added' && !(val.from && itemBySid[val.from])) return;
+        const now = cur[cat][id];
+        if (now !== undefined && sameDoc(cat === 'state' ? Object.assign({}, DEF_STATE, now) : now, cat === 'state' ? Object.assign({}, DEF_STATE, val) : val)) return;
+        seen[path] = 1; out.push({path, cat, id, val, src, conflict: now !== undefined && !(cat === 'state' && sameDoc(Object.assign({}, DEF_STATE, now), DEF_STATE)), outAt: (v.outAt || {})[id]}); }); }); };
+  (readStash(JPREV) || []).slice().reverse().forEach(j => add('journal', j, j.mode === 'local' ? null : new Set(j.pending || [])));
+  add('older copy', readStash(LEGACY), null);
+  return out;
+}
+function offerRecovery(){
+  const box = $('recover'); if (!box || dbMode !== 'db') return;
+  const R = recoverable(); box.textContent = '';
+  const legacy = readStash(LEGACY);
+  if (!R.length){ if (legacy){ box.hidden = false; const p = document.createElement('p'); p.textContent = 'This browser’s copy of your choices matches storage: nothing to recover.'; box.append(p);
+      const x = document.createElement('button'); x.type = 'button'; x.textContent = 'OK'; x.onclick = () => { box.hidden = true; }; box.append(x); }
+    else box.hidden = true; return; }
+  box.hidden = false;
+  const h = document.createElement('p'); h.className = 'rh';
+  h.textContent = '✕ This browser kept ' + R.length + (R.length === 1 ? ' choice' : ' choices') + ' that storage does not have (they were not saved).';
+  const go = document.createElement('button'); go.type = 'button'; go.id = 'recGo'; go.textContent = 'Recover my sort from this browser';
+  const det = document.createElement('div'); det.id = 'recList'; det.hidden = true;
+  box.append(h, go, det);
+  go.onclick = () => { det.hidden = false; go.hidden = true; drawRecovery(det, R); };
+}
+function drawRecovery(det, R){
+  det.textContent = '';
+  const mv = R.filter(r => r.cat === 'moves'), byTo = {};
+  mv.forEach(r => (byTo[r.val] = byTo[r.val] || []).push(r));
+  const intro = document.createElement('p'); intro.className = 'hint';
+  intro.textContent = 'These are the piles this browser remembers. Nothing is written until you press the button below.'; det.append(intro);
+  Object.keys(byTo).sort().forEach(to => {
+    const g = document.createElement('div'); g.className = 'recg';
+    const t = document.createElement('p'); t.className = 'pid';
+    t.textContent = (to === 'OUT' ? 'Taken out (tray)' : to === 'ASIDE' ? 'Set aside' : 'Pile ' + to) + ' · ' + byTo[to].length + (byTo[to].length === 1 ? ' sign' : ' signs');
+    const tl = document.createElement('div'); tl.className = 'tiles';
+    byTo[to].forEach(r => { const d = document.createElement('div'); d.className = 't' + (r.conflict ? ' out' : ''); d.title = r.id + ' (from pile ' + homeOf[r.id] + ')' + (r.conflict ? ': storage has this sign in pile ' + moves[r.id] : '');
+      const im = document.createElement('img'); im.alt = ''; im.src = imgSrc(r.id); d.append(im); tl.append(d); });
+    g.append(t, tl); det.append(g); });
+  const other = R.length - mv.length;
+  if (other){ const o = document.createElement('p'); o.className = 'hint'; o.textContent = 'Also ' + other + ' other ' + (other === 1 ? 'choice' : 'choices') + ' (new pile names, pile verdicts, keeps, cuts).'; det.append(o); }
+  const nc = R.filter(r => r.conflict).length;
+  let cb = null;
+  if (nc){ const l = document.createElement('label'); l.className = 'recc'; cb = document.createElement('input'); cb.type = 'checkbox'; cb.id = 'recOver';
+    l.append(cb, ' Also replace ' + nc + (nc === 1 ? ' choice' : ' choices') + ' that storage holds differently (dashed tiles; storage’s copy is newer unless you know otherwise)'); det.append(l); }
+  const ok = document.createElement('button'); ok.type = 'button'; ok.id = 'recYes'; ok.textContent = 'Write these to storage';
+  const no = document.createElement('button'); no.type = 'button'; no.id = 'recNo'; no.textContent = 'Not now';
+  const row = document.createElement('div'); row.className = 'row'; row.append(ok, no); det.append(row);
+  no.onclick = () => { $('recover').hidden = true; };
+  ok.onclick = () => {
+    const take = R.filter(r => !r.conflict || (cb && cb.checked));
+    const cur = {moves, newPiles, state, checked, clusterDec, recuts, added};
+    take.forEach(r => { if (r.cat === 'state') cur.state[r.id] = Object.assign({}, DEF_STATE, r.val);
+      else if (r.cat === 'recuts'){ const x = recutFromDoc({...r.val, sid: r.id}); if (x){ recuts[r.id] = x; makeRecutImg(r.id); } else return; }
+      else if (r.cat === 'added') added[r.id] = r.val;
+      else cur[r.cat][r.id] = r.val;
+      if (r.cat === 'moves' && r.val === 'OUT') outAt[r.id] = r.outAt || Date.now();
+      ({m: saveMove, n: saveNew, p: save, k: saveCheck, c: saveCluster, r: saveRecut, a: saveAdded})[r.path[0]](r.id); });
+    try { const pv = localStorage.getItem(JPREV); if (pv){ localStorage.setItem(JPREV + ':recovered:' + stamp(), pv); localStorage.removeItem(JPREV); } } catch(e){}
+    try { const old = localStorage.getItem(LEGACY); if (old){ localStorage.setItem(LEGACY + ':recovered:' + stamp(), old); localStorage.removeItem(LEGACY); } } catch(e){}
+    $('recover').textContent = '';
+    const p = document.createElement('p'); p.textContent = '✓ Sent ' + take.length + (take.length === 1 ? ' choice' : ' choices') + ' to storage. Watch the banner at the top: “All changes saved” means each one was read back.';
+    $('recover').append(p); render(); addedUi(); status(); };
+}
 
 // ---- the larger view: a tile on its line
 let ctxSid = null, ctxPid = null;
@@ -2276,7 +2415,7 @@ function landOnTray(){ if (!TRAY_ON || userTouched || !Object.keys(trayOrder).le
   else if (!waiting && autoLanded && step === 2){ setStep(1); autoLanded = false; }
   else if (waiting && step === 2 && ready && PHONE) s2Top(); }   // the sign, now shown, right under the bar
 // the saved answers are in: questions start waiting, step 2 shows the first one still open
-function setReady(){ if (ready) return; ready = true; render(); if (!$('ctx').hidden && ctxSid) showCtx(ctxSid, pileOf(ctxSid), true); landOnTray(); }
+function setReady(){ if (ready) return; ready = true; render(); if (!$('ctx').hidden && ctxSid) showCtx(ctxSid, pileOf(ctxSid), true); landOnTray(); offerRecovery(); status(); }
 landOnTray();
 try { document.fonts && document.fonts.ready.then(() => { setBarVars(); if (step === 2 && !userTouched && PHONE) s2Top(); }); } catch (e) {}
 (function(){ const v = (document.querySelector('meta[name="sign-sorter-template"]') || {}).content || '?';
@@ -2291,16 +2430,21 @@ updateUndo();
     // no store: keep choices in this browser; what the person did before this answer wins over the stored copy
     const mine = {moves: {...moves}, state: {...state}, newPiles: {...newPiles}, clusterDec: {...clusterDec}, checked: {...checked}, recuts: {...recuts}, added: {...added}};
     const touched = Object.keys(writers);
-    try { const v = JSON.parse(localStorage.getItem('sorter:all') || 'null'); if (v){ Object.assign(state, v.state || {}); Object.assign(moves, v.moves || {}); Object.assign(newPiles, v.newPiles || {}); Object.assign(clusterDec, v.clusterDec || {}); Object.assign(checked, v.checked || {}); Object.assign(outAt, v.outAt || {}); Object.assign(recuts, v.recuts || {}); Object.assign(added, v.added || {}); } } catch(e){}
+    try { const v = readStash(JKEY) || readStash(LEGACY); if (v){ Object.assign(state, v.state || {}); Object.assign(moves, v.moves || {}); Object.assign(newPiles, v.newPiles || {}); Object.assign(clusterDec, v.clusterDec || {}); Object.assign(checked, v.checked || {}); Object.assign(outAt, v.outAt || {}); Object.assign(recuts, v.recuts || {}); Object.assign(added, v.added || {}); } } catch(e){}
     touched.forEach(p => { const [k, id] = [p.slice(0, 1), p.slice(2)];
       const pair = {m: [moves, mine.moves], p: [state, mine.state], n: [newPiles, mine.newPiles], c: [clusterDec, mine.clusterDec], k: [checked, mine.checked], r: [recuts, mine.recuts], a: [added, mine.added]}[k];
       if (!pair) return; if (id in pair[1]) pair[0][id] = pair[1][id]; else delete pair[0][id]; });
-    dbMode = 'local'; touched.forEach(p => { delete writers[p]; delete inflight[p]; }); persistLocal(); status(); setReady();
+    dbMode = 'local'; touched.forEach(p => { delete writers[p]; delete inflight[p]; }); journal(); status(); setReady();
     Object.keys(recuts).forEach(s => { const r = itemBySid[s] && recutFromDoc({...recuts[s], sid: s}); if (r){ recuts[s] = r; makeRecutImg(s); } else delete recuts[s]; }); return; }
   col = db.collection('piles'); mcol = db.collection('moves'); ncol = db.collection('newpiles'); ccol = db.collection('clusters'); kcol = db.collection('checked'); rcol = db.collection('recuts'); acol = db.collection('added');
+  // a journal from an earlier load that storage never confirmed (written while not connected, or with refused writes) is set
+  // aside before this load journals anything, and offered back by "Recover my sort from this browser" once the saved answers are in
+  { const j = readStash(JKEY);
+    if (j && ((j.mode === 'local' && Object.keys(j.moves || {}).length + Object.keys(j.newPiles || {}).length + Object.keys(j.checked || {}).length + Object.keys(j.recuts || {}).length + Object.keys(j.added || {}).length) || (j.pending || []).length)){
+      try { const prev = readStash(JPREV) || []; prev.push(j); localStorage.setItem(JPREV, JSON.stringify(prev.slice(-5))); localStorage.removeItem(JKEY); } catch(e){} } }
   dbMode = 'db';
   const held = Object.keys(writers);
-  el.textContent = 'Connected. Choices save as you go.'; el.className = 'save';
+  el.textContent = 'Connected. Choices save as you go.'; el.className = 'save'; banner();
   held.forEach(pump);   // choices made while storage was still connecting
   const fail = err => { el.textContent = 'Could not load saved choices: ' + (err && err.message || 'unknown error') + '. Reload the page.'; el.className = 'save err';
     loadErr = (err && err.message) || 'unknown error'; if (step === 2) renderS2(); };
