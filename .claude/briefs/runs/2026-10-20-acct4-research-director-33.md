@@ -4,7 +4,7 @@ Common tail: .claude/briefs/README.md applies (ROOM claim/done with the usage ph
 figure for yourself, `tools/experiment_log.py --check`, `python3 tools/dup_check.py fr4735-monluc-lansac-poland-1573` pasted). Solver
 job: report what was found and where it was not found; no novelty class (rule 10). Done line addressed for the account-4 parent.
 
-## JOB MONL-C268C (account 2; Opus 5.5; cap USD 6; box 60 minutes; hosts: openapi.bnf.fr (native-resolution region requests for c268 lines only, at most 8, one at a time, 1.5 s apart; NOT gallica.bnf.fr, which answers 403); Price: vision calls: 4 x USD 0.75 + 1 reconciliation = 4.0)
+## JOB MONL-C268C (account 2; Opus 5.5; cap USD 6; box 60 minutes; hosts: openapi.bnf.fr (native-resolution region requests for c268 lines only, at most 8, one at a time, 1.5 s apart; NOT gallica.bnf.fr, which answers 403); Price: vision calls: 4 x USD 0.75 + 1 reconciliation = 3.75)
 
 ciphers/fr4735-monluc-lansac-poland-1573 (partial). Why this job: it is the one support job of wave 28 that moved counted tokens.
 SUP-MONLUC (20 Oct 2026, NOTES.md "## SUP-MONLUC") transcribed c268 L26-L30 in two blind passes, placed them against the clear copy
