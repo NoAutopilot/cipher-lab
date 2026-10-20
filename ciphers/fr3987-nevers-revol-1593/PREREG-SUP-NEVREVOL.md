@@ -40,6 +40,6 @@ non-test at this transcription error (rule 3, SALV-DIAG).
 ## Decision
 Belief: the f.66 hand is closer to the office hand of leaf 298 than f.198's verso was (the 24 Sept unaided passes agreed 51% here vs 41% on f.198), so the atlas may carry over.
 Would change it: pass agreement under 50% or S failing either control at rank > 10/201 / below shuffled-target p95 -> the atlas instrument does not carry to f.66 either.
-Observed: <pending>
-Decision: <pending>
-Lesson: <pending>
+Observed: positive control FAILS its gate before any pass: true-key S ranks <= 10/201 vs value-shuffled keys in 7/10 passages at 0% error and 0/10 at 20/40/60% (controls_pos.txt); diagnostic (not a gate): a length-class shuffle and the shuffled-order null both give 10/10 up to 40% (controls_diag.txt); target not scored, no vision call made
+Decision: stop  -- control below its gate stops the job (brief); next: re-PREREG with the length-class null + shuffled-order null as the gate, then the two blind passes, ~USD 3
+Lesson: a value-shuffled key over a nomenclator key (syllable and word values) has no power at N~190: shuffles put whole French words in letter slots and per-letter 4-gram S rises; permute values only within a value-length class (fr3986 controls_v2 rank 194/201 used the powerless design)

@@ -1,4 +1,5 @@
 blocked
+Blocked internally (20 Oct 2026, SUP-NEVREVOL): the value-shuffled-key control named for the f.66 atlas passes has no power at this N (positive control 7/10 at 0% error, 0/10 at 20%), so the passes were not run; Gomberville *Mémoires de Nevers* seconde partie and *Mémoires de la Ligue* vols 5-6 read 24 Sept 2026, letter absent; next: re-PREREG with a length-class null, then two blind atlas passes on the six lines cut in images/v2, ~$3.
 
 **Check-solved, LANE N4 csKSb, 24 Sept 2026:** letter absent from Gomberville's *Mémoires de Nevers* seconde
 partie and from *Mémoires de la Ligue* (Goulart) vols 5-6; see the search log below. Corrects QUEUE.md row
@@ -130,3 +131,72 @@ keyhunt/2026-10-07-KH1B.tsv.
 
 ## BNF-K60-SYNC2 (13 Oct 2026, account 2)
 key.tsv synced to cyphersolver @c60e6dd (see key_changes_c60e6dd.tsv): changed 3 (`++`, `2+`, `4+`), added 2 (`n+`, `ls+`), 14 of his shapes unmapped. reading.txt and reading_tokens.tsv regenerated with decode_key.py (6 reading lines, 9 token rows changed); `--check` reading up to date. Grade counts unchanged (H 69, M 211, U 28).
+
+## SUP-NEVREVOL (20 Oct 2026, account 2, for the owner-account orchestrator)
+
+Worker SUP-NEVREVOL (Opus 5.5), brief `.claude/briefs/runs/2026-10-20-acct4-research-director-28.md`, JOB SUP-NEVREVOL. Clock
+read 02:13-02:2x UTC 20 Oct 2026. Gates at start: `dup_check` DUP-RISK on this worker's own claim only; `intake_gate_check`
+"blocked (line 1) -- already terminal, nothing to gate"; `prior_work.py --item-spec` (warn-first) verdict LOOK, 0 specific
+holds; the cyphersolver "BnF cipher research" snapshot (sources/cyphersolver/2026-10-14-lasry/) has no f.66 or fr.3987
+item (its gondi1594 mentions Revol only in a different letter). Not found-solved.
+
+**Step mismatch, stated.** The "six-line crop, two blind passes + reconcile against fr3986's sign_guide/atlas, decode,
+shuffled-key control" wording in the Keyhunt section above was written for fr.3988 f.143r-v, not for f.66. The brief
+applied it to f.66. That still makes sense: f.66 has never been read with the 264ext atlas, so it counts as new material
+for that instrument.
+
+**Crops.** `tools/iiif_lines.py --image images/src_ark_12148_btv1b90606320_f121_850_1350_3400_3600.jpg --out images/v2
+--prefix f66v2 --max-width 1900 --overlap 150 --only-lines 7,8,9,10,11,13 --top-margin 15 --overlap-note --debug`: 12 crops
+(L07-L11, L13), debug overlay checked, 0 Gallica requests (native region on disk). PREREG-SUP-NEVREVOL.md pushed before any
+score (56310dc6d).
+
+**Control first, and it failed its gate.** `controls_sup.py --positive` -> `controls_pos.txt`. The control takes a French
+passage held out from the fr16 corpus (model trained on the first 80%, passages from the last 20%), N=188 letters, and
+enciphers it into key no.60 single-letter homophones. Its true-key S is ranked against 200 value-shuffled keys:
+
+| injected sign error | true key rank <= 10/201 | gate (8/10) |
+|---|---|---|
+| 0% | 7/10 (ranks 90 53 1 1 1 1 1 31 1 1) | FAIL |
+| 20% | 0/10 | FAIL |
+| 40% | 0/10 | FAIL |
+| 60% | 0/10 | FAIL |
+
+So the named control cannot tell key no.60 from a shuffled key at this N, even on a clean transcription. Shuffling the
+values puts whole nomenclator words and syllables (comme, affaires, la, co ...) into letter slots, and those raise the
+per-letter 4-gram score. By the brief ("a control below its gate stops the job") the job stopped here. **No vision call
+was made, the target was not scored, and no token grade changed** (the 24 Sept draft stands: H 69, M 211, U 28, I 0).
+
+**Diagnostic, not a gate** (`controls_sup.py --diag` -> `controls_diag.txt`). The same passages were re-run with the values
+permuted only among signs whose value has the same length (a length-class shuffle). The true key then ranks <= 10/201 in
+10/10 passages at 0, 20 and 40% error. The 100-order shuffled-sign null also separates in 10/10 at every level. That design
+has headroom up to the ~49% disagreement the 24 Sept passes measured here. Side note: fr3986 controls_v2's value-shuffled
+rank (194/201) was computed with the powerless design, so it carries no evidence either way. Its shuffled-target column is
+the one that counts.
+
+Research-director questions:
+1. Learned: the value-shuffled-key null over key no.60 is powerless at N~190, even at 0% error. A length-class null is not.
+2. Assumptions the result depended on: the fr16 4-gram model (Catherine de Médicis letters, era-matched to within 20
+   years); single-letter homophone encipherment in the control, while the real text also uses syllable and word signs.
+3. Unverified: whether the length-class null keeps its power when the plaintext carries no.60's syllable/word signs
+   (a positive control with mixed sign classes); whether the 264ext atlas fits the f.66 hand at all.
+4. Alternative explanations: none needed for the stop. The failure is in the control's design, not in the target.
+5. Most informative different experiment: the same two blind passes gated by the length-class null plus the shuffled-order
+   null, with the positive control re-run on mixed sign classes first.
+6. Decision: stop (brief rule). Hand the re-PREREG plus passes to the next worker as "keep going".
+
+Requests: gallica.bnf.fr 0. Vision calls: 0 of 2 (+1 reconciliation) priced.
+
+## Remaining gaps (SUP-NEVREVOL, 20 Oct 2026)
+Read so far: 0 of 308 signs to a continuous text (24 Sept 2026 mechanical draft: H 69, M 211, U 28, I 0; pass agreement 51.0%).
+- f.66 cipher runs, six densest lines L07-L11 and L13 (about 188 signs, crops in images/v2) - blocker: not-attempted; the controlled atlas passes were stopped on 20 Oct 2026 because the named value-shuffled-key control failed its positive control (controls_pos.txt); next: re-PREREG with the length-class null and the shuffled-order null, positive control on mixed sign classes, then two blind Opus atlas passes + 1 reconciliation, decode with tools/keys/key60.tsv + fr3986 key_atlas_extra.tsv, ~$3
+- f.66 remaining cipher lines L14 to L18 and L20 to L21 (about 95 signs) - blocker: not-attempted; held back until the six lines show whether the atlas fits this hand; next: same passes after the six lines show the atlas fits this hand, ~$2
+
+## Escalation (SUP-NEVREVOL, 20 Oct 2026)
+- [x] siblings: fr3986 f.198 (same correspondence, atlas instrument retired there on the verso runs, 36% agreement) and the interlined fr.3985 c.264 / fr.3986 c.298 leaves (atlas source, held-out 65/65)
+- [n/a] clear-pages: no clear copy of this letter is known; Tomokiyo gives only a few tentatively read words
+- [x] known-keys: key no.60 is in hand (key.tsv; tools/keys/key60.tsv), the key is not the blocker
+- [x] print: Gomberville *Mémoires de Nevers* seconde partie and *Mémoires de la Ligue* vols 5-6 read 24 Sept 2026, letter absent
+- [x] key-rebuild: 264ext atlas exists (tools/keys/key60_atlas); the Revol-hand sorter for fr3986 waits on ASKS row 102
+- [x] image-check: canvas 121 = f.66 confirmed 24 Sept 2026; native region on disk, six lines re-cut 20 Oct 2026 (images/v2)
+- [ ] retry: two blind atlas passes on images/v2 gated by the length-class null (the instrument was never run on f.66)
+Verdict: keep going: 2 internal gaps; cheapest next: re-PREREG with the length-class null, then the six-line atlas passes, ~$3
