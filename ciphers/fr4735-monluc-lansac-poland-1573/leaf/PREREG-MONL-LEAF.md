@@ -17,3 +17,11 @@ Decision rule: margin >= 0.229 = PASS (brief's gate); 0.10 <= margin < 0.229 = L
 leaf is named as the continuation); < 0.10 = no evidence for this window (not a negative for the leaf at 1/3 power, but a negative at the
 calibrated gate, 23-26/29 power). Exploratory, not gated: where the same read lands when aligned against the whole clear letter.
 Stop on the first PASS (name the leaf, folio, line range; transcribing it is the next job).
+
+## Decision
+(Block appended after the run: the PREREG pushed at 1de32897f lacked it; Belief and Would-change restate the pre-run text above.)
+Belief: the cipher of the clear text after c268's end starts at f.140r L27 on one of the candidate leaves.
+Would change it: a candidate's two-line read reaching margin >= 0.229 (PASS) or >= 0.10 (LEAD) over the p95 of 200 placed shuffled windows against f.140r L27-L30.
+Observed: c269 (f.138v) -0.104 (p95 0.414), c264 -0.088, c258 -0.108; no PASS, no LEAD. Exploratory whole-letter alignment (registered as not gated): c269 lands at f.140r L26-L27 (confirm 0.534), c264 at L21-L22 (0.368), c258 at f.141r L08-L10 (0.419). Post hoc, not counted: window L26-L29 c269 margin +0.121 (c264 -0.088, c258 -0.027); longest exact decode run against the clear letter c269 14 letters "sadeursluiauro" (f.140r L27) vs 200 shuffled clears p95 8, max 10, 0/200; c264 6, c258 6 (within null).
+Decision: change -- the window premise was wrong (c268 ends mid f.140r L26, not at L27); c269 is a post-hoc lead, to be confirmed by a two-pass transcription of c269 L01-L05 aligned as a continuation of the c268 stream (align_c268.py's design), not by re-scoring these reads.
+Lesson: register the window from the alignment's own end point (results_align_c268.json clear_span and the last token's chunk), not from a line count; and a clear window full of [?] words is shorter than its line count implies, which lowers confirm share for a true match.

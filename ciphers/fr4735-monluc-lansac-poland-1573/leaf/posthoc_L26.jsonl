@@ -1,0 +1,3 @@
+{"line": "passes/c269_read.tsv", "window": "f.140r:L26-f.140r:L29", "keyed": 58, "tokens": 59, "real": 0.5345, "ctl_mean": 0.3409, "p95": 0.4138, "max": 0.4483, "margin": 0.1207, "gate": 0.229, "pass": false}
+{"line": "passes/c264_read.tsv", "window": "f.140r:L26-f.140r:L29", "keyed": 68, "tokens": 70, "real": 0.3235, "ctl_mean": 0.3549, "p95": 0.4118, "max": 0.4706, "margin": -0.0883, "gate": 0.229, "pass": false}
+{"line": "passes/c258_read.tsv", "window": "f.140r:L26-f.140r:L29", "keyed": 74, "tokens": 77, "real": 0.3919, "ctl_mean": 0.3587, "p95": 0.4189, "max": 0.473, "margin": -0.027, "gate": 0.229, "pass": false}
