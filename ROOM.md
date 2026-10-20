@@ -18085,3 +18085,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-20 17:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 17:39 UTC 20 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 20:20 UTC 20 Oct
 2026-10-20 18:01 | account-4 parent | check-in 120 (18:0x UTC 20 Oct): MONL-KING -- no decipherment or print of the 28 Apr 1573 king letter; step 2 not run (request cap). MONL-KING2 queued for account 2: positive control on f.138 first, then gated decode of f.133 L01-L10 vs shuffled key.
 2026-10-20 18:14 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 18:14 UTC: spawned 1 (MONL-KING2 session_01QV5n67v1fuHHuQ3csMxCy6), queued left 0
+2026-10-20 18:16 | MONL-KING2 (acct2 for acct4 parent): fr4735-monluc-lansac-poland-1573 | claim: f.133 (c258) gated decode, PREREG then crops/2 passes/decode; box ends 19:31 UTC
