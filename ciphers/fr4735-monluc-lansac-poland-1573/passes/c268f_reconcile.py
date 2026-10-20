@@ -6,8 +6,18 @@ import difflib, re
 from pathlib import Path
 P = Path(__file__).resolve().parent
 
-EYE = {  # (line, pos in pass A numbering) -> (sign, note)
+EYE = {  # (line, pos in pass A numbering) -> (sign, note); built by the rules below, each checked on the crops by eye
 }
+# Folder conventions applied by rule (c268e_reconcile.py header): stem with diamond foot = K36 (A K49 / B K36 split, both
+# diamond-foot on the crops); 'h' form = ?h_bar (both passes K68); z inside a C-curl = K38 (A K61 / B K57, a sign never used
+# in c268 L01-L25, the curl visible at every one on the crops); theta = K09 (A K09 / B K21; K21 0 times in L01-L25);
+# hash-like = K16 (A K20 / B K16; K16 6, K20 1 in L01-L25). Other splits (K12|K22, K50|?x, K16|K50 at L27:13): pass A, conf M.
+RULE_BOTH = {'K68': ('?h_bar', "eye: 'h' form, folder convention ?h_bar (both passes K68)")}
+RULE_SPLIT = {('K49', 'K36'): ('K36', 'eye: stem with diamond foot = K36 (A K49, B K36)'),
+              ('K61', 'K57'): ('K38', 'eye: z inside a C-curl = K38 (A K61, B K57)'),
+              ('K09', 'K21'): ('K09', 'theta = K09 (A K09, B K21; K21 unused in L01-L25)'),
+              ('K20', 'K16'): ('K16', 'hash form = K16 (A K20, B K16)'),
+              ('K14', 'K36'): ('K36', 'eye (L26:23, 27): stem with diamond foot = K36; = B (A K14)')}
 SPAN = {  # (line, first pos, last pos in pass A numbering) -> (token, note)
 }
 DROP = {}
@@ -45,6 +55,12 @@ for lab in sorted(A):
         if span:
             tok, note, s2 = span[0]
             out.append((tok, 'M', ' '.join(a[i:s2]), ' '.join(bpos.get(k, ('-',))[0] for k in range(i, s2)), note))
+        elif (ta, tb) in RULE_SPLIT and not eq:
+            sign, how = RULE_SPLIT[(ta, tb)]
+            out.append((sign, 'M', ta, tb, how))
+        elif eq and ta in RULE_BOTH:
+            sign, how = RULE_BOTH[ta]
+            out.append((sign, 'M', ta, tb, how))
         elif (lab, p) in EYE:
             (sign, how) = EYE[(lab, p)]
             out.append((sign, 'M', ta, tb, how))
