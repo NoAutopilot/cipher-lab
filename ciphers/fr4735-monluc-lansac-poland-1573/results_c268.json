@@ -1,26 +1,26 @@
 {
  "relabelled": 18,
- "tokens": 847,
- "signs_pass_a": 857,
- "pass_agree_h": 690,
- "decoded_letters": 814,
- "decoded": "lesperuiteursdequiniespargnentlhoneurlaraelareputationnilaonpienedupoilonfaitparlerleroidedalnelarquinupenpninlaisetdoneataenteadrequilesteeoiilatirentdelainexlupionqqilestudposiblequelonpeigdeurseutuedirpnrdeuaaqeopiepanpeauoippatisfaitearlapeodneoraipodcppfautilqueieifesequeemopednoupaautadtdopedempehemedtquafaitelupquieptndueduapdrisnrqqimandequepionneleuetlueslirequelonpreigneqefilieqqeeulopeunnpqemailspoleuudesaisepseuueleeuquodegnrdedeprnndrelsfraireduropdsfradueenleplestermesepruturqnepouruneregdrddemonpeigneurhormipquildeeomaadepaslefildenegoiatiodpedaigrileuedesapquiledaduiendrabieduotppuisieaseurerqtepilaraisonaliemsilepgedpdeboneltendelenheuquipodualateursdeleurpaurueenpoaureuilonpeigdeurelporteaepueourodauuaduqueeladepadddedieuuenepmisdirepidonqmepomepibatuidelapeureuipoheidelesperadeeuquelq",
+ "tokens": 1016,
+ "signs_pass_a": 1026,
+ "pass_agree_h": 819,
+ "decoded_letters": 971,
+ "decoded": "lesperuiteursdequiniespargnentlhoneurlaraelareputationnilaonpienedupoilonfaitparlerleroidedalnelarquinupenpninlaisetdoneataenteadrequilesteeoiilatirentdelainexlupionqqilestudposiblequelonpeigdeurseutuedirpnrdeuaaqeopiepanpeauoippatisfaitearlapeodneoraipodcppfautilqueieifesequeemopednoupaautadtdopedempehemedtquafaitelupquieptndueduapdrisnrqqimandequepionneleuetlueslirequelonpreigneqefilieqqeeulopeunnpqemailspoleuudesaisepseuueleeuquodegnrdedeprnndrelsfraireduropdsfradueenleplestermesepruturqnepouruneregdrddemonpeigneurhormipquildeeomaadepaslefildenegoiatiodpedaigrileuedesapquiledaduiendrabieduotppuisieaseurerqtepilaraisonaliemsilepgedpdeboneltendelenheuquipodualateursdeleurpaurueenpoaureuilonpeigdeurelporteaepueourodauuaduqueeladepadddedieuuenepmisdirepidonqmepomepibatuidelapeureuipoheidelesperadeeuquelqehoiequieddoiuendpedirieropquusoubponuopetronilperoitfortbiedfnitdeomnderndipourirduhemcdquilfnudrnquiltieeetdeseprepnrerapnhemiderarepseigdeursedteddentqued",
  "judge": {
   "checks": {
    "language": {
     "pass": false,
-    "score": -1.417,
-    "null_p99": -1.885,
-    "real_p05": -0.873,
-    "real_median": -0.789,
+    "score": -1.447,
+    "null_p99": -1.888,
+    "real_p05": -0.868,
+    "real_median": -0.785,
     "mode": "both",
-    "N": 814
+    "N": 971
    },
    "words": {
     "pass": true,
-    "cover": 0.776,
+    "cover": 0.759,
     "min": 0.5,
-    "real_text_median_cover": 0.945
+    "real_text_median_cover": 0.947
    }
   },
   "pass": false,
@@ -28,11 +28,11 @@
  },
  "shuffle_draws": 100,
  "shuffle_judge_pass": 0,
- "shuffle_language_scores_max": -1.907,
+ "shuffle_language_scores_max": -1.917,
  "c270_letters": 778,
- "c270_matched": 278,
- "c270_rate": 0.3415,
- "c270_shuffle_mean": 0.3264,
- "c270_shuffle_p95": 0.3428,
- "c270_shuffle_max": 0.355
+ "c270_matched": 319,
+ "c270_rate": 0.3285,
+ "c270_shuffle_mean": 0.3112,
+ "c270_shuffle_p95": 0.3234,
+ "c270_shuffle_max": 0.3285
 }

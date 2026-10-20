@@ -1,5 +1,5 @@
 # c268 (f.138) cipher lines 1-10 (L01-L05 pass A base, K38 relabel; L06-L10 MONL-C268B reconciled passes), decoded with key.tsv (Tomokiyo, published) by tools/decode_key.py (MONL-ALIGN, 14 Oct 2026).
-# Grades: C = table letter equals the clear letter of ff.140r-141r (clear_f140.tsv) it faces in align_c268.py; fills of unkeyed signs from exceptions_c268.tsv; M otherwise (conf M token, contradiction, or facing an unsure clear word). C 426, M 396, U 35
+# Grades: C = table letter equals the clear letter of ff.140r-141r (clear_f140.tsv) it faces in align_c268.py; fills of unkeyed signs from exceptions_c268.tsv; M otherwise (conf M token, contradiction, or facing an unsure clear word). C 511, M 468, U 47
 L01	l e s p e r u i t e u r s d e lempereur q u i n i e s p a r g n e n t l h o n
 L02	e u r l a r a c e l a r e p u t a t i o n n i l a c o n p c i e n c e d u
 L03	p o i l o n f a i t p a r l e r l e r o i d e d a l n e l a r c q u i n
@@ -25,3 +25,8 @@ L22	u [?h_bar] r e u y l o n p e i g d e u r [?double_slash] e l p o r t e a [?h
 L23	[W:Astuing] d a u u a d u q u e [?double_slash] e l a d e p a d d d e d i e u u e n e
 L24	[W:Juno] p m i s d i r e p i d o n q m e [W:Mare] p o m e p y b a t u y
 L25	d e l a p e u r e u y p o h e y d e l e s p e r a d [?double_slash] e e u q u e l q [?x[c_with_tail]]
+L26	e [?h_bar] h o y e q u i e d d o i u e n d p e d i r i e [?double_slash] r o p q u u s o
+L27	u b p o n u [?h_bar] o p e [?double_slash] t r o n i l p e r o i t f o r t b i e d f n i t
+L28	d e [?double_slash] o m n d [?double_slash] e r n d i p [?double_slash] o u r i r d u [?double_slash] h e m c d q u i l f n u
+L29	d r n q u i l t i e [?h_bar] e e t d e s e p r e p n r e r a p n [?double_slash] h e
+L30	m i d e r [?h_bar] a r [?double_slash] e p s e i g d e u r s e d t e d d e n t q u e d

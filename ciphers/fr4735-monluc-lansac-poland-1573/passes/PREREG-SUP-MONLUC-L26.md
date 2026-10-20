@@ -14,3 +14,11 @@ and on L01-L30. The band is placed as running on from L25 only if L26-L30 alone 
 real share; otherwise "band not placed", L26-L30 stays U/M, nothing in L01-L25 changes. The L01-L30 run is kept only if 0/200 at or above.
 No key edit, no relabel of L01-L25 tokens. Re-runs named by NOTES (k14try/run_k14try.py for K34/K62, K14 split, K40=z --try) only if this
 band adds tokens to them and cap remains; otherwise logged as next step.
+
+## Decision
+(added after the run, 20 Oct 2026; the gate and decision rule above were pushed before it)
+Belief: c268 L26-L30 continues the cipher of clear f.140r from L23 on
+Would change it: L26-L30 alone at or below its shuffled-clear p95, or any of 200 draws at or above the real share
+Observed: pass agreement 133/169 = 0.787; L26-L30 alone 106/157 = 0.675 vs shuffled-clear p95 0.446 (max 0.471, 0/200), f.139 0.382; L01-L30 658/971 = 0.678 vs max 0.396, 0/200
+Decision: continue -- band placed and kept; next: value-blind K12|K22 sort of 9 L26-L30 tiles, then c268 L31-L35
+Lesson: iiif_lines.py --centres with --deskew-region gave s2 crops ~50 px off the line on this region (first two passes void); check every s2 crop before a pass
