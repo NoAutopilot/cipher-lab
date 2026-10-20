@@ -321,3 +321,11 @@ these apart. (5) Most informative different experiment: more contrast material, 
 owner's sort of the same 36 tiles remains the only human instrument. (6) Decision: **acquire** (commit the 67/70 crops and re-tile,
 then re-run msort.py unchanged on the larger set with the same PREREG gates); do not tune the feature on these 15 tiles (rule 3's
 third-attempt clause).
+
+### 6e-parent. After VIV-MSORT (20 Oct 2026, 02:1x UTC; account-4 parent)
+The worker's step (5) assumed the 120 ink-67/70 packet rows hold about 44 contrast tiles. They do not survive the box check: VIV-TILES6770
+(17 Oct) kept 20 of 56 mapped rows, and under label c only 8 p and 2 e (box_check_6770.tsv against truth.tsv). Pooled with ink 40, label c
+would be 25 tiles with a 5-tile minority, still near the N=15 power failure. So the re-tile is not briefed. The label-c split has two
+instruments left: the owner's blind sort (ASKS 173) and new material (more e/q tiles under label c from other inks, cut and box-checked
+first, with power computed on the pooled count before any sort). Behind both sits 6c's binding number: reader error about 0.14 against
+an ink-63 crossover below 0.05, which only a transcription pass meeting TRANSCRIPTION.md's standard can move.
