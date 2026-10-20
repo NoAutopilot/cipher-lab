@@ -1,0 +1,358 @@
+line	pos	sign	conf	pass_a	pass_b	how
+L11	1	K15	H	K15	K15	both passes
+L11	2	K39	H	K39	K39	both passes
+L11	3	K26	H	K26	K26	both passes
+L11	4	K10	H	K10	K10	both passes
+L11	5	K05	H	K05	K05	both passes
+L11	6	K39	H	K39	K39	both passes
+L11	7	K33	H	K33	K33	both passes
+L11	8	K34	H	K34	K34	both passes
+L11	9	K41	H	K41	K41	both passes
+L11	10	K07	H	K07	K07	both passes
+L11	11	K05	H	K05	K05	both passes
+L11	12	K10	H	K10	K10	both passes
+L11	13	K39	H	K39	K39	both passes
+L11	14	K34	H	K34	K34	both passes
+L11	15	?h_bar	M	K68	K68	'h' form, folder convention ?h_bar (both passes K68)
+L11	16	K33	H	K33	K33	both passes
+L11	17	K17	H	K17	K17	both passes
+L11	18	K38	M	K38	K57	z inside a C-curl = K38 (A K38, B K57; c268f rule)
+L11	19	K05	H	K05	K05	both passes
+L11	20	K36	M	K14	K36	stem with diamond foot = K36 (folder rule; A K14, B K36)
+L11	21	K01	M	K01	K12	round g with closed bottom loop = K01 (A K01, B K12; MONL-C269A eye rule)
+L11	22	K02	H	K02	K02	both passes
+L11	23	K26	H	K26	K26	both passes
+L11	24	K01	M	K01	K12	round g with closed bottom loop = K01 (A K01, B K12; MONL-C269A eye rule)
+L11	25	K39	H	K39	K39	both passes
+L11	26	?double_slash	H	?double_slash	?double_slash	both passes
+L11	27	K33	H	K33	K33	both passes
+L11	28	K39	H	K39	K39	both passes
+L11	29	K34	M	K34	K14	A/B split, crop does not settle it: pass A
+L11	30	K59	H	K59	K59	both passes
+L11	31	K10	H	K10	K10	both passes
+L11	32	K06	H	K06	K06	both passes
+L11	33	K01	M	K01	K12	round g with closed bottom loop = K01 (A K01, B K12; MONL-C269A eye rule)
+L12	1	K15	H	K15	K15	both passes
+L12	2	K59	M	K59	K61	A/B split, crop does not settle it: pass A
+L12	3	K09	H	K09	K09	both passes
+L12	4	?x[u]	H	?x[u]	?x[u]	both passes
+L12	5	K41	H	K41	K41	both passes
+L12	6	K59	H	K59	K59	both passes
+L12	7	K38	M	K38	K57	z inside a C-curl = K38 (A K38, B K57; c268f rule)
+L12	8	K04	H	K04	K04	both passes
+L12	9	K05	H	K05	K05	both passes
+L12	10	K10	H	K10	K10	both passes
+L12	11	K12	H	K12	K12	both passes
+L12	12	K36	H	K36	K36	both passes
+L12	13	K07	H	K07	K07	both passes
+L12	14	K05	H	K05	K05	both passes
+L12	15	K12	H	K12	K12	both passes
+L12	16	K38	M	K38	K57	z inside a C-curl = K38 (A K38, B K57; c268f rule)
+L12	17	?h_bar	M	K68	K68	'h' form, folder convention ?h_bar (both passes K68)
+L12	18	K33	H	K33	K33	both passes
+L12	19	K11	H	K11	K11	both passes
+L12	20	K14	H	K14	K14	both passes
+L12	21	K38	M	K38	-	A/B split, crop does not settle it: pass A
+L12	22	K01	M	K01	-	A/B split, crop does not settle it: pass A
+L12	23	K12	H	K12	K12	both passes
+L12	24	K38	M	K38	-	A/B split, crop does not settle it: pass A
+L12	25	K01	M	K01	-	A/B split, crop does not settle it: pass A
+L12	26	K17	H	K17	K17	both passes
+L12	27	K33	H	K33	K33	both passes
+L12	28	K12	H	K12	K12	both passes
+L12	29	K01	M	K01	K12	round g with closed bottom loop = K01 (A K01, B K12; MONL-C269A eye rule)
+L13	1	K33	H	K33	K33	both passes
+L13	2	K39	H	K39	K39	both passes
+L13	3	K36	H	K36	K36	both passes
+L13	4	K14	H	K14	K14	both passes
+L13	5	K01	M	K01	K12	round g with closed bottom loop = K01 (A K01, B K12; MONL-C269A eye rule)
+L13	6	K34	H	K34	K34	both passes
+L13	7	K05	H	K05	K05	both passes
+L13	8	K36	H	K36	K36	both passes
+L13	9	?h_bar	M	K68	K68	'h' form, folder convention ?h_bar (both passes K68)
+L13	10	K05	H	K05	K05	both passes
+L13	11	K15	H	K15	K15	both passes
+L13	12	K39	H	K39	K39	both passes
+L13	13	K09	H	K09	K09	both passes
+L13	14	K26	H	K26	K26	both passes
+L13	15	K37	H	K37	K37	both passes
+L13	16	K38	M	K38	K57	z inside a C-curl = K38 (A K38, B K57; c268f rule)
+L13	17	K04	H	K04	K04	both passes
+L13	18	K05	H	K05	K05	both passes
+L13	19	K39	H	K39	K39	both passes
+L13	20	K02	H	K02	K02	both passes
+L13	21	K41	H	K41	K41	both passes
+L13	22	K39	H	K39	K39	both passes
+L13	23	?x[reversed_3_/_epsilon]	M	?x[reversed_3_/_epsilon]	K59	A/B split, crop does not settle it: pass A
+L13	24	K17	H	K17	K17	both passes
+L13	25	K33	H	K33	K33	both passes
+L13	26	K10	H	K10	K10	both passes
+L13	27	K04	H	K04	K04	both passes
+L13	28	K12	H	K12	K12	both passes
+L13	29	K38	M	K38	K57	z inside a C-curl = K38 (A K38, B K57; c268f rule)
+L13	30	K40	H	K40	K40	both passes
+L14	1	K33	H	K33	K33	both passes
+L14	2	K12	H	K12	K12	both passes
+L14	3	K38	M	K38	K57	z inside a C-curl = K38 (A K38, B K57; c268f rule)
+L14	4	K17	H	K17	K17	both passes
+L14	5	K05	H	K05	K05	both passes
+L14	6	K36	H	K36	K36	both passes
+L14	7	K39	H	K39	K39	both passes
+L14	8	K09	H	K09	K09	both passes
+L14	9	K37	H	K37	K37	both passes
+L14	10	K39	H	K39	K39	both passes
+L14	11	K36	H	K36	K36	both passes
+L14	12	K10	H	K10	K10	both passes
+L14	13	K12	H	K12	K12	both passes
+L14	14	K06	H	K06	K06	both passes
+L14	15	K36	H	K36	K36	both passes
+L14	16	K33	H	K33	K33	both passes
+L14	17	K12	H	K12	K12	both passes
+L14	18	K38	M	K38	K57	z inside a C-curl = K38 (A K38, B K57; c268f rule)
+L14	19	K29	H	K29	K29	both passes
+L14	20	K05	H	K05	K05	both passes
+L14	21	K36	H	K36	K36	both passes
+L14	22	K05	H	K05	K05	both passes
+L14	23	K26	H	K26	K26	both passes
+L14	24	K38	M	K38	K57	z inside a C-curl = K38 (A K38, B K57; c268f rule)
+L14	25	K14	H	K14	K14	both passes
+L14	26	K33	H	K33	K33	both passes
+L14	27	K39	H	K39	K39	both passes
+L14	28	K36	H	K36	K36	both passes
+L14	29	K01	M	K01	K12	round g with closed bottom loop = K01 (A K01, B K12; MONL-C269A eye rule)
+L14	30	K38	M	K38	K57	z inside a C-curl = K38 (A K38, B K57; c268f rule)
+L15	1	K55	H	K55	K55	both passes
+L15	2	K41	H	K41	K41	both passes
+L15	3	K29	H	K29	K29	both passes
+L15	4	K36	H	K36	K36	both passes
+L15	5	K05	H	K05	K05	both passes
+L15	6	K17	H	K17	K17	both passes
+L15	7	K14	H	K14	K14	both passes
+L15	8	K39	H	K39	K39	both passes
+L15	9	K02	H	K02	K02	both passes
+L15	10	K10	H	K10	K10	both passes
+L15	11	K29	H	K29	K29	both passes
+L15	12	?double_slash	H	?double_slash	?double_slash	both passes
+L15	13	K15	H	K15	K15	both passes
+L15	14	K39	H	K39	K39	both passes
+L15	15	K26	H	K26	K26	both passes
+L15	16	K37	H	K37	K37	both passes
+L15	17	?h_bar	M	K68	K68	'h' form, folder convention ?h_bar (both passes K68)
+L15	18	K12	H	K12	K12	both passes
+L15	19	K36	H	K36	K36	both passes
+L15	20	K09	H	K09	K09	both passes
+L15	21	K05	H	K05	K05	both passes
+L15	22	K11	H	K11	K11	both passes
+L15	23	K12	H	K12	K12	both passes
+L15	24	K67	H	K67	K67	both passes
+L15	25	K05	H	K05	K05	both passes
+L15	26	K39	H	K39	K39	both passes
+L15	27	K36	H	K36	K36	both passes
+L15	28	K05	H	K05	K05	both passes
+L15	29	K15	H	K15	K15	both passes
+L15	30	K39	H	K39	K39	both passes
+L15	31	K26	H	K26	K26	both passes
+L15	32	K37	H	K37	K37	both passes
+L15	33	K29	H	K29	K29	both passes
+L16	1	K26	H	K26	K26	both passes
+L16	2	K37	H	K37	K37	both passes
+L16	3	?x[u]	H	?x[u]	?x[u]	both passes
+L16	4	K39	H	K39	K39	both passes
+L16	5	K36	H	K36	K36	both passes
+L16	6	K33	H	K33	K33	both passes
+L16	7	K34	H	K34	K34	both passes
+L16	8	?h_bar	M	K68	K68	'h' form, folder convention ?h_bar (both passes K68)
+L16	9	K05	H	K05	K05	both passes
+L16	10	K17	H	K17	K17	both passes
+L16	11	K26	H	K26	K26	both passes
+L16	12	K36	M	K36	K17	A/B split, crop does not settle it: pass A
+L16	13	K12	H	K12	K12	both passes
+L16	14	K41	H	K41	K41	both passes
+L16	15	?h_bar	M	K68	K68	'h' form, folder convention ?h_bar (both passes K68)
+L16	16	K26	H	K26	K26	both passes
+L16	17	K17	H	K17	K17	both passes
+L16	18	K38	M	K38	K57	z inside a C-curl = K38 (A K38, B K57; c268f rule)
+L16	19	K05	H	K05	K05	both passes
+L16	20	K40	H	K40	K40	both passes
+L16	21	K04	H	K04	K04	both passes
+L16	22	K29	H	K29	K29	both passes
+L16	23	K38	M	K38	K57	z inside a C-curl = K38 (A K38, B K57; c268f rule)
+L16	24	K59	H	K59	K59	both passes
+L16	25	K33	H	K33	K33	both passes
+L16	26	K12	H	K12	K12	both passes
+L16	27	W:Mare	M	K48 W:ara	K46 W:au	eye: the clear word Mara at the line end (folder W:Mare); A K48 W:ara, B K46 W:au
+L17	1	K39	H	K39	K39	both passes
+L17	2	K33	H	K33	K33	both passes
+L17	3	K04	M	K04	K12	A/B split, crop does not settle it: pass A
+L17	4	K17	H	K17	K17	both passes
+L17	5	K26	H	K26	K26	both passes
+L17	6	K12	H	K12	K12	both passes
+L17	7	?double_slash	H	?double_slash	?double_slash	both passes
+L17	8	K33	H	K33	K33	both passes
+L17	9	K36	H	K36	K36	both passes
+L17	10	K05	H	K05	K05	both passes
+L17	11	K17	H	K17	K17	both passes
+L17	12	K68	M	K68	K24	A/B split, crop does not settle it: pass A
+L17	13	K26	H	K26	K26	both passes
+L17	14	K15	H	K15	K15	both passes
+L17	15	K39	H	K39	K39	both passes
+L17	16	K09	H	K09	K09	both passes
+L17	17	K10	H	K10	K10	both passes
+L17	18	K40	H	K40	K40	both passes
+L17	19	K04	H	K04	K04	both passes
+L17	20	K05	H	K05	K05	both passes
+L17	21	K11	M	K11	K62	A/B split, crop does not settle it: pass A
+L17	22	K12	H	K12	K12	both passes
+L17	23	K04	M	K04	K12	A/B split, crop does not settle it: pass A
+L17	24	K25	H	K25	K25	both passes
+L17	25	K05	H	K05	K05	both passes
+L17	26	K36	H	K36	K36	both passes
+L17	27	K33	H	K33	K33	both passes
+L17	28	K12	H	K12	K12	both passes
+L17	29	K38	M	K19	K38	eye (L20:1, L18:15): z inside a C-curl = K38 (A K19 read the z alone, B K38)
+L18	1	?h_bar	M	K68	K68	'h' form, folder convention ?h_bar (both passes K68)
+L18	2	K26	H	K26	K26	both passes
+L18	3	K39	H	K39	K39	both passes
+L18	4	K09	H	K09	K09	both passes
+L18	5	K05	H	K05	K05	both passes
+L18	6	K04	M	K04	K12	A/B split, crop does not settle it: pass A
+L18	7	K25	H	K25	K25	both passes
+L18	8	K36	H	K36	K36	both passes
+L18	9	K22	M	K22	K12	eye (L18:9, L18:13): g with a closed bottom loop, not a 9 with a sweeping tail (A K22, B K12)
+L18	10	K41	H	K41	K41	both passes
+L18	11	K39	H	K39	K39	both passes
+L18	12	K55	M	K55	K14	A/B split, crop does not settle it: pass A
+L18	13	K22	M	K22	K12	eye (L18:9, L18:13): g with a closed bottom loop, not a 9 with a sweeping tail (A K22, B K12)
+L18	14	K36	H	K36	K36	both passes
+L18	15	K38	M	K19	K38	eye (L20:1, L18:15): z inside a C-curl = K38 (A K19 read the z alone, B K38)
+L18	16	K09	H	K09	K09	both passes
+L18	17	?double_slash	H	?double_slash	?double_slash	both passes
+L18	18	K39	H	K39	K39	both passes
+L18	19	K10	H	K10	K10	both passes
+L18	20	K09	H	K09	K09	both passes
+L18	21	K05	H	K05	K05	both passes
+L18	22	K36	H	K36	K36	both passes
+L18	23	W:Juno	M	W:Juing	W:Juing	eye: clear 'Jung' (folder W:Juno); A/B W:Juing
+L18	24	W:Nobre	M	W:Nobre	W:No.bre	eye: clear 'No' with superscript 'bre'; A W:Nobre, B W:No.bre
+L18	25	K26	M	K26	K29	A/B split, crop does not settle it: pass A
+L19	1	K26	H	K26	K26	both passes
+L19	2	K36	H	K36	K36	both passes
+L19	3	K05	H	K05	K05	both passes
+L19	4	K15	H	K15	K15	both passes
+L19	5	K39	H	K39	K39	both passes
+L19	6	K41	H	K41	K41	both passes
+L19	7	?double_slash	H	?double_slash	?double_slash	both passes
+L19	8	K08	H	K08	K08	both passes
+L19	9	K12	H	K12	K12	both passes
+L19	10	K68	M	K68	K24	A/B split, crop does not settle it: pass A
+L19	11	K39	H	K39	K39	both passes
+L19	12	K04	M	K04	K12	A/B split, crop does not settle it: pass A
+L19	13	K05	H	K05	K05	both passes
+L19	14	K04	H	K04	K04	both passes
+L19	15	K26	H	K26	K26	both passes
+L19	16	K11	M	K11	K62	A/B split, crop does not settle it: pass A
+L19	17	K05	H	K05	K05	both passes
+L19	18	K17	H	K17	K17	both passes
+L19	19	K04	H	K04	K04	both passes
+L19	20	K41	H	K41	K41	both passes
+L19	21	K11	M	K11	K62	A/B split, crop does not settle it: pass A
+L19	22	K05	H	K05	K05	both passes
+L19	23	K17	H	K17	K17	both passes
+L19	24	K22	M	K22	K12	eye (L18:9, L18:13): g with a closed bottom loop, not a 9 with a sweeping tail (A K22, B K12)
+L19	25	K26	H	K26	K26	both passes
+L19	26	?x[double_angle_«]	M	?x[double_angle_«]	K37	A/B split, crop does not settle it: pass A
+L19	27	K38	M	K19	K38	eye (L20:1, L18:15): z inside a C-curl = K38 (A K19 read the z alone, B K38)
+L19	28	K05	H	K05	K05	both passes
+L19	29	K23	H	K23	K23	both passes
+L19	30	K41	H	K41	K41	both passes
+L19	31	K59	H	K59	K59	both passes
+L20	1	K38	M	K19	K38	eye (L20:1, L18:15): z inside a C-curl = K38 (A K19 read the z alone, B K38)
+L20	2	K36	H	K36	K36	both passes
+L20	3	K05	H	K05	K05	both passes
+L20	4	?double_slash	H	?double_slash	?double_slash	both passes
+L20	5	K05	H	K05	K05	both passes
+L20	6	K04	M	K04	K12	A/B split, crop does not settle it: pass A
+L20	7	K17	H	K17	K17	both passes
+L20	8	K11	M	K11	K62	A/B split, crop does not settle it: pass A
+L20	9	K29	H	K29	K29	both passes
+L20	10	K10	H	K10	K10	both passes
+L20	11	K26	H	K26	K26	both passes
+L20	12	K37	H	K37	K37	both passes
+L20	13	?double_slash	H	?double_slash	?double_slash	both passes
+L20	14	K39	H	K39	K39	both passes
+L20	15	K40	H	K40	K40	both passes
+L20	16	K33	H	K33	K33	both passes
+L20	17	K39	H	K39	K39	both passes
+L20	18	K38	M	K19	K38	eye (L20:1, L18:15): z inside a C-curl = K38 (A K19 read the z alone, B K38)
+L20	19	K36	H	K36	K36	both passes
+L20	20	K05	H	K05	K05	both passes
+L20	21	K10	H	K10	K10	both passes
+L20	22	K26	H	K26	K26	both passes
+L20	23	K17	H	K17	K17	both passes
+L20	24	K29	H	K29	K29	both passes
+L20	25	K33	H	K33	K33	both passes
+L20	26	K34	H	K34	K34	both passes
+L20	27	K22	M	K22	K12	eye (L18:9, L18:13): g with a closed bottom loop, not a 9 with a sweeping tail (A K22, B K12)
+L20	28	K39	H	K39	K39	both passes
+L20	29	?x[epsilon]	H	?x[epsilon]	?x[epsilon]	both passes
+L20	30	K23	H	K23	K23	both passes
+L21	1	K17	H	K17	K17	both passes
+L21	2	K26	H	K26	K26	both passes
+L21	3	K38	M	K19	K38	eye (L20:1, L18:15): z inside a C-curl = K38 (A K19 read the z alone, B K38)
+L21	4	K41	H	K41	K41	both passes
+L21	5	K02	H	K02	K02	both passes
+L21	6	K29	H	K29	K29	both passes
+L21	7	K53	M	K53	K21	A/B split, crop does not settle it: pass A
+L21	8	K05	H	K05	K05	both passes
+L21	9	K11	M	K11	K62	A/B split, crop does not settle it: pass A
+L21	10	K26	H	K26	K26	both passes
+L21	11	K12	H	K12	K12	both passes
+L21	12	K38	M	K19	K38	eye (L20:1, L18:15): z inside a C-curl = K38 (A K19 read the z alone, B K38)
+L21	13	K17	H	K17	K17	both passes
+L21	14	?x[xi-like_squiggle]	M	?x[xi-like_squiggle]	K59	A/B split, crop does not settle it: pass A
+L21	15	K05	H	K05	K05	both passes
+L21	16	K04	M	K04	K12	A/B split, crop does not settle it: pass A
+L21	17	K52	H	K52	K52	both passes
+L21	18	K39	H	K39	K39	both passes
+L21	19	K33	H	K33	K33	both passes
+L21	20	K34	H	K34	K34	both passes
+L21	21	K55	M	K55	K14	A/B split, crop does not settle it: pass A
+L21	22	K22	M	K22	K12	eye (L18:9, L18:13): g with a closed bottom loop, not a 9 with a sweeping tail (A K22, B K12)
+L21	23	K17	H	K17	K17	both passes
+L21	24	K15	H	K15	K15	both passes
+L21	25	K39	H	K39	K39	both passes
+L21	26	K26	H	K26	K26	both passes
+L21	27	K34	M	K34	K14	A/B split, crop does not settle it: pass A
+L21	28	K33	H	K33	K33	both passes
+L21	29	K39	H	K39	K39	both passes
+L22	1	K36	H	K36	K36	both passes
+L22	2	K05	H	K05	K05	both passes
+L22	3	K16	H	K16	K16	both passes
+L22	4	K33	H	K33	K33	both passes
+L22	5	K34	H	K34	K34	both passes
+L22	6	K39	H	K39	K39	both passes
+L22	7	K12	H	K12	K12	both passes
+L22	8	K06	H	K06	K06	both passes
+L22	9	K29	H	K29	K29	both passes
+L22	10	K10	H	K10	K10	both passes
+L22	11	K40	H	K40	K40	both passes
+L22	12	K26	H	K26	K26	both passes
+L22	13	K38	M	K19	K38	eye (L20:1, L18:15): z inside a C-curl = K38 (A K19 read the z alone, B K38)
+L22	14	K06	H	K06	K06	both passes
+L22	15	K36	H	K36	K36	both passes
+L22	16	K22	M	K22	K12	eye (L18:9, L18:13): g with a closed bottom loop, not a 9 with a sweeping tail (A K22, B K12)
+L22	17	K09	H	K09	K09	both passes
+L22	18	K36	H	K36	K36	both passes
+L22	19	K05	H	K05	K05	both passes
+L22	20	K04	H	K04	K04	both passes
+L22	21	K26	H	K26	K26	both passes
+L22	22	K36	H	K36	K36	both passes
+L22	23	K60	H	K60	K60	both passes
+L22	24	K34	H	K34	K34	both passes
+L22	25	K26	H	K26	K26	both passes
+L22	26	K38	M	K19	K38	eye (L20:1, L18:15): z inside a C-curl = K38 (A K19 read the z alone, B K38)
+L22	27	K15	H	K15	K15	both passes
+L22	28	K39	H	K39	K39	both passes
+L22	29	K09	H	K09	K09	both passes
+L22	30	K22	M	K22	-	A/B split, crop does not settle it: pass A
+L22	31	K19	M	K19	-	A/B split, crop does not settle it: pass A

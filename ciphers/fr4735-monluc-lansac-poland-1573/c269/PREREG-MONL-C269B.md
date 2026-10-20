@@ -33,6 +33,6 @@ decode.json job c269 outputs. key.tsv unchanged (only the target's --try rules m
 ## Decision
 Belief: c269 L11-L22 are the cipher of the clear text from f.140v L03 onward
 Would change it: L11-L22 at or below the placed-shuffled p95, any of 200 draws at or above it, or the whole-letter span not starting at f.140v L03-L04
-Observed:
-Decision:
-Lesson:
+Observed: calibration wrong window FAIL (c269 L01-L10 vs f.140v:L04-f.141r:L11 0.408 vs p95 0.418, 39/200), power reproduced (0.509 vs p95 0.422, 0/200); pass agreement 292/358 = 0.816; L11-L22 0.647 vs placed-shuffled p95 0.425 (mean 0.403, max 0.443, 0/200), L11-L16 0.677 vs p95 0.453 (0/200), L17-L22 0.616 vs p95 0.451 (0/200), f.139 0.398; whole-letter span f.140v L02 - L10 (registered: start L03 or L04)
+Decision: stop -- gate NOT met as registered (span clause): no grades, no fold into decode.json; control beaten by a wide margin, so the placement is put to the parent as a re-registration question, not graded here
+Lesson: a span clause typed from the previous band's reported span inherits that band's end error; register the span relative to the previous band's own aligned end, computed by the script, and let the next band's placement be able to revise that end
