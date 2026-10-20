@@ -179,6 +179,11 @@ blind sort failed its gate twice, logged untested-by-this-tool. The useful findi
 cipher on c268, so their cipher, if any, is on another leaf. MONL-LEAF (account 2, cap 4) checks c258/c262/c264 with a 1-line decode
 against a shuffled-placement control and stops at the identification. Vivonne re-sort not landed.
 
+Check-in 114 (20 Oct 2026, 07:4x UTC). MONL-LEAF (account 2): the registered gate failed for c258/c262/c264 (and c269 on a window one
+line late), but a post-hoc lead points at c269 = f.138v, the unread verso of c268 (same hand, ~31 lines, its first line decodes to the
+clear text exactly where c268 stops). Not counted. MONL-C269A (account 2, cap 7) tests it with a fresh PREREG on L01-L10 and grades only
+if the shuffled control is beaten; if it holds, about 31 lines of known plaintext open up. Vivonne re-sort not landed.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
