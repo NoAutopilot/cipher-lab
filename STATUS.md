@@ -152,6 +152,10 @@ Save button; the owner will re-sort. ASKS 174 answered (ILL submitted). Account 
 leave account 1 off); SUP-GIEVRE held while Gallica answers 403. Owner: account 3 may be used; pause lifted, dispatcher paste in
 .claude/briefs/dispatcher-account3-paste.md for him to start.
 
+Owner directive (20 Oct 2026, 03:1x UTC), standing: the account-4 parent has full discretion over accounts 2 and 4 -- use as much or
+as little as serves the goal. Account 1 off; account 3 on hold until the support jobs show they move readings (scorecard kept from
+check-in 111: jobs, cost, readings moved vs non-tests).
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
