@@ -348,3 +348,9 @@ show. (6) Decision: **pivot**. The split question is answered as far as present 
 working cell. Neither that nor m changes the binding number of 6c: reader error about 0.14 against an ink-63 crossover below 0.05.
 Program B's next experiment is the reader: a known-leaf transcription measured with tools/tx_bench.py under TRANSCRIPTION.md, before any
 further ink-63 decode.
+
+### 6f-correction (20 Oct 2026, 03:0x UTC; account-4 parent)
+6f scored an incomplete sort. The owner reports, with a screenshot of the reloaded page, that most of his sort was lost: he made several
+new piles; the database kept 6 moves and 3 piles, and the page now shows an arrangement he did not leave. **6f's score and its reading
+(no p vs e/q split, working cell c = p) are void** until his full sort is recovered or redone; VIV-MSORT's non-test (6e) stands on its
+own. SORTER-SAVEFIX (session_0125yNvDSkqpz1QQBc8UwCuT) diagnoses the loss, offers a browser recovery if possible, and fixes the sorter.
