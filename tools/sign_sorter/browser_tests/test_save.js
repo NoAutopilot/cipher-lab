@@ -94,5 +94,20 @@ async function open(ctx, opts, wait = true) { const page = await ctx.newPage(); 
     await page.click('#recGo'); await page.click('#recYes');
     ok('pending: written on confirm', await waitSaved(page) && store.docs.moves && store.docs.moves[s0] && store.docs.moves[s0].to === 'OUT', JSON.stringify(store.docs.moves));
     await ctx.close(); }
+  // 8. "Save my sort": rewrites the arrangement, reads it back whole, says "Saved: N tiles in M piles at HH:MM"; a refusal says NOT saved
+  { const ctx = await b.newContext(DESK); const store = await mock.install(ctx, {}); const { page } = await open(ctx, {});
+    ok('save button: before the arrangement is saved, no result line', !(await page.isVisible('#saveAllMsg')));
+    await tiles(page).first().click(); await waitSaved(page);
+    await page.click('#saveAll'); await page.waitForFunction(() => !document.getElementById('saveAll').disabled, null, { timeout: 15000 });
+    const m1 = await page.textContent('#saveAllMsg');
+    const N = await page.evaluate(() => Object.keys(itemBySid).length);
+    ok('save button: "Saved: N tiles in M piles at HH:MM"', new RegExp('Saved: ' + N + ' tiles in \\d+ piles at \\d\\d:\\d\\d').test(m1), m1);
+    store.docs.moves = {};   // storage loses the move behind the page's back: Save must notice and rewrite it
+    await page.click('#saveAll'); await page.waitForFunction(() => !document.getElementById('saveAll').disabled, null, { timeout: 15000 });
+    ok('save button: rewrites a move storage lost, then says Saved', /Saved:/.test(await page.textContent('#saveAllMsg')) && Object.keys(store.docs.moves).length === 1, await page.textContent('#saveAllMsg'));
+    store.failNext(1000); await page.click('#saveAll'); await page.waitForTimeout(2500);
+    const m3 = await page.evaluate(() => ({ t: document.getElementById('saveAllMsg').textContent, c: document.getElementById('saveAllMsg').className }));
+    ok('save button: a refusal is shown as NOT saved, in the high-contrast style', /NOT saved/.test(m3.t) && / bad/.test(m3.c), m3.c + ' ' + m3.t);
+    store.failNext(0); await ctx.close(); }
   await b.close(); console.log(fails ? fails + ' FAILED' : 'ALL PASS'); process.exit(fails ? 1 : 0);
 })();

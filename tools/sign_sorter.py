@@ -97,7 +97,8 @@ structure, not shape: eye the piles before publishing.
 Saving (SORTER-SAVEFIX, 20 Oct 2026; template 2026-10-20.1; incident ciphers/fr16104-vivonne-spain-1572/tx/ksplit/sorter/SAVE-INCIDENT-2026-10-20.md):
 every page this tool emits confirms each write with a read-back. A refused write is retried with backoff until it lands, at most two
 writes are in flight, and every change is journaled in the browser. A banner shows "N changes NOT saved" or "All changes saved", and
-"Recover my sort from this browser" offers back choices that storage never got. Test: tools/tests/test_sorter_savefix.py.
+"Recover my sort from this browser" offers back choices that storage never got. "Save my sort" rewrites the whole arrangement,
+reads it back and says "Saved: N tiles in M piles at HH:MM", or names what failed. Test: tools/tests/test_sorter_savefix.py.
 
 Size (N4-NXS, 4 Oct 2026): the page embeds every tile and every page image, so a long letter overruns the Artifact's
 16 MB (Noailles c510-516, 9,863 tiles: 92 MB at the defaults). --thumb, --tile-quality (greyscale JPEG tiles) and --page-scale /

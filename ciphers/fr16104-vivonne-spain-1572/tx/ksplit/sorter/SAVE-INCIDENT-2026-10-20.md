@@ -81,13 +81,20 @@ browser, under `sorter:all`. Path 1 kept the lost changes only in memory, so a r
   - "⋯ N changes NOT saved yet: saving…" while any write is pending;
   - "✕ N changes NOT saved (reason). Retrying by itself …" with a **Try again now** button on refusal;
   - "✓ All changes saved (each one read back from storage)." only when nothing is pending.
+- **Save my sort** (added 03:3x UTC on the owner's request, relayed by the account-4 parent): a button in the bar, labelled "Save"
+  on a phone. It rewrites the whole arrangement (every moved tile, every new pile, verdicts, keeps, clusters and cuts) through the same
+  queue and waits until each write has been read back. Then it reads the moves and new-pile collections whole and compares them with the
+  page. The line under the bar says "✓ Saved: N tiles in M piles at HH:MM (read back from storage)", or "✕ NOT saved: …" naming the
+  count and the first signs or piles that differ (the high-contrast style; dark orange and the cross, not red alone). The store has
+  no batch write (`db.d.ts` 0.2.84), so "one batch" is these writes plus the whole-collection read-back. The per-change autosave and
+  the banner stay as they are.
 - The browser asks before the tab is closed while a write is pending (`beforeunload`).
 - The new page no longer writes `sorter:all`. It reads that key, and only for recovery and the local-mode fallback.
 
 ## Tests (20 Oct 2026, 03:1x-03:2x UTC, this container)
 
-- `tools/sign_sorter/browser_tests/test_save.js` (new; `mock_db.js` gains `get()`, `store.lie(n)` for a dropped write and a
-  switchable `store.nullDb`): 26/26 PASS. Covers connecting (the banner says wait, a tap moves nothing) -> held -> pumped -> saved
+- `tools/sign_sorter/browser_tests/test_save.js` (new; `mock_db.js` gains `get()` on a document and on a collection, `store.lie(n)` for a dropped write and a
+  switchable `store.nullDb`): 26/26 PASS; with the Save my sort checks added (03:4x UTC), 30/30 PASS, and test_qa still ALL PASS (phone bar 118 px). Covers connecting (the banner says wait, a tap moves nothing) -> held -> pumped -> saved
   after read-back; refused -> visible NOT saved + retry -> lands by itself; an unconfirmed read-back is not saved; a burst of 8 taps
   peaks at 2 writes in flight and all land; local mode is labelled, then recovered on confirm; an older page's `sorter:all` is
   recovered and a differing stored doc is kept unless ticked; refused writes from a closed page are offered back.
@@ -107,6 +114,14 @@ round-trip check ran at access level `interact` through ArtifactData. A `set` of
 returned the same body, and the test doc was deleted (if_version 1). The page ignores that id (no such sid) while it exists. This
 shows that an interact-level writer can write and read back this artifact's moves collection. It does not drive the page's own code
 in the claude.ai viewer, which this session cannot open; the page's save logic is covered by test_save.js against the mock store.
+
+## Stale docs cleared for a fresh sort (03:4x UTC 20 Oct 2026)
+
+The owner chose to redo the sort (relayed by the account-4 parent at 03:0x UTC). Recovery became optional; the Recover box stays on
+the page in case his browser kept anything. After the documents were recorded in the table at the top of this file, the 11
+partial-sort documents were deleted so the trays open clean: 6 moves, 4 newpiles (tray A-b, B-b, B-c, NOT-LETTER) and 1 piles
+(NOT-LETTER). The parent's message named the 6 moves and 3 newpiles from 02:54. The 02:59 NOT-LETTER move, pile and verdict were
+cleared with them, since they were part of the same partial sort and would otherwise have left one tile out of tray A.
 
 ## Follow-up (not done here)
 

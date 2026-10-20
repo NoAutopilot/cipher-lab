@@ -69,6 +69,9 @@ h1{font-family:var(--f-display);font-weight:600;font-size:2.1rem;margin:0;text-w
 .saveban.bad{border:3px double var(--bg);background:var(--ink);color:var(--bg)}
 .saveban button{margin-left:8px;font-weight:700}
 @media (max-width:640px){.saveban{padding:2px 8px;font-size:.8rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.saveban.bad{white-space:normal}}   /* phone: one line unless something is NOT saved */
+#saveAll{font-weight:700;background:var(--ink);color:var(--bg);border-color:var(--ink);padding:7px 10px}
+@media (max-width:640px){#saveAll{padding:4px 8px}#saveAll .sw{display:none}}
+#saveAllMsg[hidden]{display:none}
 #recover[hidden]{display:none}
 #recover{margin-top:12px;background:var(--surface);border:3px solid var(--ink);border-radius:6px;padding:10px 12px}
 #recover .rh{font-weight:700;margin:0 0 8px}
@@ -372,7 +375,9 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
   <div class="bar">
     <div class="tabs" role="tablist" aria-label="Steps"><button type="button" role="tab" id="tab1" aria-selected="true">1 · Clean<span class="wide"> piles</span></button><button type="button" role="tab" id="tab2" aria-selected="false">2 · Place <span class="cntb zero" id="outN">0</span></button></div>
     <button type="button" id="undo" disabled>Undo</button>
+    <button type="button" id="saveAll" class="saveall" aria-label="Save my sort">Save<span class="sw"> my sort</span></button>
     <span class="save" id="save">Connecting to storage…</span>
+    <p class="saveban" id="saveAllMsg" role="alert" hidden></p>
     <p class="saveban wait" id="saveBan" role="status" aria-live="polite">⋯ Connecting to storage. Please wait for “All changes saved” before you start.</p>
   </div>
   <section id="recover" hidden aria-label="Recover my sort from this browser"></section>
@@ -1521,6 +1526,38 @@ function saveAdded(id){
   track('a/' + id, () => { const a = added[id]; if (!a) return {ref: acol.doc(key(id)), body: null};
     return {ref: acol.doc(key(id)), body: {id, from: a.from, kind: a.kind, page: a.page, x: a.x, y: a.y, w: a.w, h: a.h, quad: a.quad.map(p => p.slice()),
       mask: (a.mask || []).map(st => ({r: st.r, pts: st.pts.map(p => p.slice())})), at: a.at}}; }); }
+// "Save my sort" (owner, 20 Oct 2026, via the account-4 parent): an explicit save on top of the per-change autosave. It writes the
+// whole current arrangement again (every moved tile, every new pile, every pile verdict, keeps, clusters, cuts) through the same
+// queue, waits until each write is read back, then reads the moves and new-pile collections whole and compares them with the page.
+// The store has no batch write, so "one batch" is these writes plus the whole-collection read-back; the line under the bar says
+// "Saved: N tiles in M piles at HH:MM", or names what failed.
+const until = (f, ms) => new Promise(r => { const t0 = Date.now(), k = setInterval(() => { if (f() || Date.now() - t0 > ms){ clearInterval(k); r(f()); } }, 100); });
+async function saveAllNow(){
+  const msg = $('saveAllMsg'), btn = $('saveAll'), say = (cls, t) => { msg.hidden = false; msg.className = 'saveban ' + cls; msg.textContent = t; };
+  if (dbMode === 'local'){ say('bad', '✕ NOT saved: storage is not connected (your choices are kept in this browser only). Reload the page and press Save again.'); return; }
+  if (dbMode !== 'db' || !ready){ say('wait', '⋯ Storage is still connecting: nothing to save yet. Try again in a moment.'); return; }
+  btn.disabled = true; say('wait', '⋯ Saving your whole sort…');
+  try {
+    Object.keys(moves).forEach(saveMove); Object.keys(newPiles).forEach(saveNew);
+    Object.keys(state).forEach(id => { if (!sameDoc(Object.assign({}, DEF_STATE, state[id]), DEF_STATE)) save(id); });
+    Object.keys(checked).forEach(saveCheck); Object.keys(clusterDec).forEach(saveCluster); Object.keys(recuts).forEach(saveRecut); Object.keys(added).forEach(saveAdded);
+    await until(() => !pendingN() || failedPaths.size, 60000);
+    if (pendingN()){ say('bad', '✕ NOT saved: ' + pendingN() + (pendingN() === 1 ? ' change' : ' changes') + ' did not reach storage (' + (lastErr || 'no answer within a minute') + '). They retry by themselves; press Save again in a moment.'); return; }
+    const [ms, ns] = await Promise.all([mcol.get(), ncol.get()]);
+    const sm = {}, sn = new Set();
+    ms.docs.forEach(d => { const x = d.data(); if (x && x.sid && itemBySid[x.sid]) sm[x.sid] = x.to; });
+    ns.docs.forEach(d => { const x = d.data(); if (x && x.id) sn.add(x.id); });
+    const bad = Object.keys(itemBySid).filter(s => (moves[s] || null) !== (sm[s] || null));
+    const lostPiles = Object.keys(newPiles).filter(p => !sn.has(p));
+    if (bad.length || lostPiles.length){ say('bad', '✕ NOT saved: storage differs from the page on ' + bad.length + (bad.length === 1 ? ' sign' : ' signs') +
+      (lostPiles.length ? ' and ' + lostPiles.length + ' new ' + (lostPiles.length === 1 ? 'pile' : 'piles') : '') + ' (' + bad.concat(lostPiles).slice(0, 6).join(', ') + '). Press Save again.'); return; }
+    const piles = new Set(Object.keys(itemBySid).filter(s => moves[s] !== 'OUT' && moves[s] !== 'ASIDE').map(pileOf));
+    const d = new Date(), hm = String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
+    say('ok', '✓ Saved: ' + Object.keys(itemBySid).length + ' tiles in ' + piles.size + ' piles at ' + hm + ' (read back from storage).');
+  } catch(e){ say('bad', '✕ NOT saved: ' + ((e && (e.message || e.code)) || 'storage refused') + '. Press Save again.'); }
+  finally { btn.disabled = false; status(); }
+}
+$('saveAll').onclick = saveAllNow;
 // the journal: the whole arrangement and the paths storage has not confirmed, in this browser (per page origin)
 const stashOf = () => ({state, moves, newPiles, clusterDec, checked, outAt, recuts, added});
 function journal(){ try { localStorage.setItem(JKEY, JSON.stringify(Object.assign({at: Date.now(), mode: dbMode, pending: Object.keys(writers)}, stashOf()))); } catch(e){} }

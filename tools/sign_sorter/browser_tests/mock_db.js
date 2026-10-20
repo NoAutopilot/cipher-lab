@@ -71,6 +71,8 @@ async function install(target, opts = {}) {
           // reads return an empty document, as a write the server dropped would
           get: async () => { const lie = await window.__dbLie(); const all = JSON.parse(await window.__dbRead(c));
             const body = lie ? undefined : all[id]; return Object.freeze({ id, exists: body !== undefined, data: () => body === undefined ? undefined : Object.freeze(body), metadata: { fromCache: false, hasPendingWrites: false } }); } }; },
+      get: async () => { const all = JSON.parse(await window.__dbRead(c)); const docs = Object.entries(all).map(([id, body]) => Object.freeze({ id, exists: true, data: () => Object.freeze(body), metadata: { fromCache: false, hasPendingWrites: false } }));
+        return { docs, size: docs.length, empty: !docs.length, metadata: { fromCache: false, hasPendingWrites: false } }; },   // a whole-collection read ("Save my sort")
       onSnapshot: (fn, err) => { const L = { fn, err, seen: {}, first: true }; (listeners[c] = listeners[c] || []).push(L);
         setTimeout(() => refresh(c), 20); return () => { listeners[c] = listeners[c].filter(x => x !== L); }; } }) };
     window.__mockDb = { pending, server, refresh };
