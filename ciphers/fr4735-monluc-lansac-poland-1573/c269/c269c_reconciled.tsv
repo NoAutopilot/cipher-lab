@@ -1,0 +1,291 @@
+line	pos	sign	conf	pass_a	pass_b	how
+L23	1	K06	H	K06	K06	both passes
+L23	2	K12	H	K12	K12	both passes
+L23	3	K09	M	K09	K21	A/B split, crop does not settle it: pass A
+L23	4	K38	M	K19	K38	eye (L20:1, L18:15): z inside a C-curl = K38 (A K19 read the z alone, B K38)
+L23	5	K04	H	K04	K04	both passes
+L23	6	K05	H	K05	K05	both passes
+L23	7	K14	M	K14	K17	A/B split, crop does not settle it: pass A
+L23	8	K26	H	K26	K26	both passes
+L23	9	K36	H	K36	K36	both passes
+L23	10	K39	M	K39	K19	A/B split, crop does not settle it: pass A
+L23	11	K09	M	K09	K21	A/B split, crop does not settle it: pass A
+L23	12	?double_slash	H	?double_slash	?double_slash	both passes
+L23	13	K05	H	K05	K05	both passes
+L23	14	K14	M	K14	K17	A/B split, crop does not settle it: pass A
+L23	15	K12	H	K12	K12	both passes
+L23	16	K19	H	K19	K19	both passes
+L23	17	K36	H	K36	K36	both passes
+L23	18	K33	H	K33	K33	both passes
+L23	19	K34	H	K34	K34	both passes
+L23	20	K39	M	K39	K19	A/B split, crop does not settle it: pass A
+L23	21	K11	H	K11	K11	both passes
+L23	22	K05	H	K05	K05	both passes
+L23	23	K10	H	K10	K10	both passes
+L23	24	K33	H	K33	K33	both passes
+L23	25	K12	H	K12	K12	both passes
+L23	26	K12	H	K12	K12	both passes
+L23	27	K05	H	K05	K05	both passes
+L23	28	K14	H	K14	K14	both passes
+L24	1	K06	H	K06	K06	both passes
+L24	2	K41	H	K41	K41	both passes
+L24	3	K29	H	K29	K29	both passes
+L24	4	K36	H	K36	K36	both passes
+L24	5	K05	H	K05	K05	both passes
+L24	6	K39	M	K39	K19	A/B split, crop does not settle it: pass A
+L24	7	K12	H	K12	K12	both passes
+L24	8	K26	H	K26	K26	both passes
+L24	9	K10	M	K10	K55	A/B split, crop does not settle it: pass A
+L24	10	K33	H	K33	K33	both passes
+L24	11	K36	M	K36	K14	A/B split, crop does not settle it: pass A
+L24	12	K38	M	K19	K38	eye (L20:1, L18:15): z inside a C-curl = K38 (A K19 read the z alone, B K38)
+L24	13	K04	H	K04	K04	both passes
+L24	14	K12	H	K12	K12	both passes
+L24	15	K36	H	K36	K36	both passes
+L24	16	K07	H	K07	K07	both passes
+L24	17	K26	H	K26	K26	both passes
+L24	18	K12	H	K12	K12	both passes
+L24	19	K38	M	K19	K38	eye (L20:1, L18:15): z inside a C-curl = K38 (A K19 read the z alone, B K38)
+L24	20	K26	H	K26	K26	both passes
+L24	21	K12	H	K12	K12	both passes
+L24	22	?double_slash	H	?double_slash	?double_slash	both passes
+L24	23	K33	H	K33	K33	both passes
+L24	24	K36	H	K36	K36	both passes
+L24	25	K05	H	K05	K05	both passes
+L24	26	K14	M	K14	K17	A/B split, crop does not settle it: pass A
+L24	27	K15	H	K15	K15	both passes
+L24	28	K39	H	K39	K39	both passes
+L25	1	K27	H	K27	K27	both passes
+L25	2	K34	H	K34	K34	both passes
+L25	3	K38	M	K19	K38	eye (L20:1, L18:15): z inside a C-curl = K38 (A K19 read the z alone, B K38)
+L25	4	K07	H	K07	K07	both passes
+L25	5	K36	H	K36	K36	both passes
+L25	6	K12	H	K12	K12	both passes
+L25	7	K12	H	K12	K12	both passes
+L25	8	K04	H	K04	K04	both passes
+L25	9	K05	H	K05	K05	both passes
+L25	10	K06	H	K06	K06	both passes
+L25	11	K12	H	K12	K12	both passes
+L25	12	K39	M	K39	-	A/B split, crop does not settle it: pass A
+L25	13	K19	H	K19	K19	both passes
+L25	14	K05	H	K05	K05	both passes
+L25	15	W:Juno	M	W:fung	W:fung	clear 'Jung', folder W:Juno (MONL-C269B L18; both passes W:fung)
+L25	16	K14	M	K14	K17	A/B split, crop does not settle it: pass A
+L25	17	K21	H	K21	K21	both passes
+L25	18	K04	H	K04	K04	both passes
+L25	19	K29	H	K29	K29	both passes
+L25	20	K05	H	K05	K05	both passes
+L25	21	K39	M	K39	K19	A/B split, crop does not settle it: pass A
+L25	22	W:Mare	M	W:Marie	W:Marie	clear word Mara at the line, folder W:Mare (both passes W:Marie)
+L25	23	K04	H	K04	K04	both passes
+L26	1	K26	H	K26	K26	both passes
+L26	2	K37	H	K37	K37	both passes
+L26	3	K38	M	K19	K38	eye (L20:1, L18:15): z inside a C-curl = K38 (A K19 read the z alone, B K38)
+L26	4	K08	H	K08	K08	both passes
+L26	5	K05	H	K05	K05	both passes
+L26	6	K39	H	K39	K39	both passes
+L26	7	K36	H	K36	K36	both passes
+L26	8	K15	H	K15	K15	both passes
+L26	9	K39	H	K39	K39	both passes
+L26	10	K26	H	K26	K26	both passes
+L26	11	K04	H	K04	K04	both passes
+L26	12	K12	M	K12	K22	A/B split, crop does not settle it: pass A
+L26	13	K39	H	K39	K39	both passes
+L26	14	K33	H	K33	K33	both passes
+L26	15	K19	H	K19	K19	both passes
+L26	16	K36	H	K36	K36	both passes
+L26	17	?double_slash	H	?double_slash	?double_slash	both passes
+L26	18	K05	H	K05	K05	both passes
+L26	19	K15	H	K15	K15	both passes
+L26	20	K39	H	K39	K39	both passes
+L26	21	K05	H	K05	K05	both passes
+L26	22	W:Mare	M	W:Marie	W:Marie	clear word Mara at the line, folder W:Mare (both passes W:Marie)
+L26	23	K25	H	K25	K25	both passes
+L26	24	K05	H	K05	K05	both passes
+L26	25	K14	H	K14	K14	both passes
+L26	26	K21	M	K21	-	A/B split, crop does not settle it: pass A
+L26	27	K36	H	K36	K36	both passes
+L27	1	K02	H	K02	K02	both passes
+L27	2	K12	H	K12	K12	both passes
+L27	3	K08	H	K08	K08	both passes
+L27	4	K26	H	K26	K26	both passes
+L27	5	K36	H	K36	K36	both passes
+L27	6	K12	H	K12	K12	both passes
+L27	7	K34	H	K34	K34	both passes
+L27	8	?double_slash	H	?double_slash	?double_slash	both passes
+L27	9	K08	H	K08	K08	both passes
+L27	10	K12	H	K12	K12	both passes
+L27	11	K36	H	K36	K36	both passes
+L27	12	K07	H	K07	K07	both passes
+L27	13	K05	H	K05	K05	both passes
+L27	14	K12	H	K12	K12	both passes
+L27	15	K23	H	K23	K23	both passes
+L27	16	K41	H	K41	K41	both passes
+L27	17	K10	H	K10	K10	both passes
+L27	18	?x[plain_plus_cross]	M	?x[plain_plus_cross]	K10	A/B split, crop does not settle it: pass A
+L27	19	K12	H	K12	K12	both passes
+L27	20	K34	H	K34	K34	both passes
+L27	21	K26	H	K26	K26	both passes
+L27	22	K19	H	K19	K19	both passes
+L27	23	K12	M	K12	-	A/B split, crop does not settle it: pass A
+L27	24	K39	M	K39	-	A/B split, crop does not settle it: pass A
+L27	25	K04	H	K04	K04	both passes
+L27	26	K33	H	K33	K33	both passes
+L27	27	K34	H	K34	K34	both passes
+L27	28	K26	H	K26	K26	both passes
+L27	29	K12	H	K12	K12	both passes
+L27	30	K04	H	K04	K04	both passes
+L28	1	K04	H	K04	K04	both passes
+L28	2	K05	H	K05	K05	both passes
+L28	3	W:Juno	H	W:Juno	W:Juno	both passes
+L28	4	K14	H	K14	K14	both passes
+L28	5	K36	H	K36	K36	both passes
+L28	6	K33	H	K33	K33	both passes
+L28	7	K14	H	K14	K14	both passes
+L28	8	K13	H	K13	K13	both passes
+L28	9	K14	H	K14	K14	both passes
+L28	10	K05	M	K05	-	A/B split, crop does not settle it: pass A
+L28	11	K36	M	K36	-	A/B split, crop does not settle it: pass A
+L28	12	K19	M	K19	-	A/B split, crop does not settle it: pass A
+L28	13	K36	H	K36	K36	both passes
+L28	14	K33	H	K33	K33	both passes
+L28	15	K29	H	K29	K29	both passes
+L28	16	K14	M	K14	K17	A/B split, crop does not settle it: pass A
+L28	17	K11	H	K11	K11	both passes
+L28	18	K33	H	K33	K33	both passes
+L28	19	K34	H	K34	K34	both passes
+L28	20	K26	H	K26	K26	both passes
+L28	21	K12	H	K12	K12	both passes
+L28	22	K37	H	K37	K37	both passes
+L28	23	K04	H	K04	K04	both passes
+L28	24	K05	H	K05	K05	both passes
+L28	25	K12	H	K12	K12	both passes
+L29	1	K36	H	K36	K36	both passes
+L29	2	K05	H	K05	K05	both passes
+L29	3	K16	H	K16	K16	both passes
+L29	4	K41	H	K41	K41	both passes
+L29	5	K39	H	K39	K39	both passes
+L29	6	K57	M	K57	-	A/B split, crop does not settle it: pass A
+L29	7	K12	H	K12	K12	both passes
+L29	8	K12	M	K12	-	A/B split, crop does not settle it: pass A
+L29	9	K57	M	K57	-	A/B split, crop does not settle it: pass A
+L29	10	K15	H	K15	K15	both passes
+L29	11	K19	M	K19	K39	A/B split, crop does not settle it: pass A
+L29	12	K09	M	K09	K21	A/B split, crop does not settle it: pass A
+L29	13	K10	H	K10	K10	both passes
+L29	14	W:Mare	M	W:Marie	W:Marie	clear word Mara at the line, folder W:Mare (both passes W:Marie)
+L29	15	K26	H	K26	K26	both passes
+L29	16	K12	M	K12	K04	A/B split, crop does not settle it: pass A
+L29	17	K09	M	K09	K21	A/B split, crop does not settle it: pass A
+L29	18	K22	M	K22	K01	A/B split, crop does not settle it: pass A
+L29	19	K19	M	K19	K39	A/B split, crop does not settle it: pass A
+L29	20	K10	H	K10	K10	both passes
+L29	21	K38	M	K57	K38	z inside a C-curl = K38 (c268f rule, A K57, B K38)
+L29	22	K17	H	K17	K17	both passes
+L29	23	K22	M	K22	K01	A/B split, crop does not settle it: pass A
+L29	24	K04	H	K04	K04	both passes
+L29	25	K37	H	K37	K37	both passes
+L29	26	K15	H	K15	K15	both passes
+L29	27	K39	H	K39	K39	both passes
+L30	1	K36	H	K36	K36	both passes
+L30	2	K33	H	K33	K33	both passes
+L30	3	K34	H	K34	K34	both passes
+L30	4	K26	H	K26	K26	both passes
+L30	5	K12	M	K12	K04	A/B split, crop does not settle it: pass A
+L30	6	K17	H	K17	K17	both passes
+L30	7	K33	H	K33	K33	both passes
+L30	8	K59	H	K59	K59	both passes
+L30	9	K38	M	K57	K38	z inside a C-curl = K38 (c268f rule, A K57, B K38)
+L30	10	K12	M	K12	K01	A/B split, crop does not settle it: pass A
+L30	11	K19	M	K19	K39	A/B split, crop does not settle it: pass A
+L30	12	K24	M	K24	K68	A/B split, crop does not settle it: pass A
+L30	13	K19	M	K19	K39	A/B split, crop does not settle it: pass A
+L30	14	K04	H	K04	K04	both passes
+L30	15	K05	H	K05	K05	both passes
+L30	16	K11	H	K11	K11	both passes
+L30	17	K26	H	K26	K26	both passes
+L30	18	K12	M	K12	K04	A/B split, crop does not settle it: pass A
+L30	19	K38	M	K57	K38	z inside a C-curl = K38 (c268f rule, A K57, B K38)
+L30	20	K59	M	K59	K19	A/B split, crop does not settle it: pass A
+L30	21	K12	M	K12	K04	A/B split, crop does not settle it: pass A
+L30	22	?double_slash	H	?double_slash	?double_slash	both passes
+L30	23	K33	H	K33	K33	both passes
+L30	24	K65	H	K65	K65	both passes
+L30	25	K33	H	K33	K33	both passes
+L30	26	K04	H	K04	K04	both passes
+L30	27	K05	H	K05	K05	both passes
+L30	28	K59	M	K59	K19	A/B split, crop does not settle it: pass A
+L31	1	K36	H	K36	K36	both passes
+L31	2	K28	M	K28	-	A/B split, crop does not settle it: pass A
+L31	3	K57	M	K57	-	A/B split, crop does not settle it: pass A
+L31	4	K05	H	K05	K05	both passes
+L31	5	K12	M	K12	K01	A/B split, crop does not settle it: pass A
+L31	6	K14	M	K14	K34	A/B split, crop does not settle it: pass A
+L31	7	K36	H	K36	K36	both passes
+L31	8	K05	H	K05	K05	both passes
+L31	9	K14	M	K14	-	A/B split, crop does not settle it: pass A
+L31	10	K12	H	K12	K12	both passes
+L31	11	K12	M	K12	-	A/B split, crop does not settle it: pass A
+L31	12	K57	M	K57	-	A/B split, crop does not settle it: pass A
+L31	13	K15	H	K15	K15	both passes
+L31	14	K39	H	K39	K39	both passes
+L31	15	K41	H	K41	K41	both passes
+L31	16	K14	H	K14	K14	both passes
+L31	17	K36	H	K36	K36	both passes
+L31	18	K29	H	K29	K29	both passes
+L31	19	K05	H	K05	K05	both passes
+L31	20	K36	H	K36	K36	both passes
+L31	21	K25	H	K25	K25	both passes
+L31	22	K59	M	K59	K19	A/B split, crop does not settle it: pass A
+L31	23	K05	H	K05	K05	both passes
+L31	24	K39	H	K39	K39	both passes
+L31	25	K15	H	K15	K15	both passes
+L31	26	K18	M	K18	K66	A/B split, crop does not settle it: pass A
+L31	27	K59	M	K59	K19	A/B split, crop does not settle it: pass A
+L31	28	K10	H	K10	K10	both passes
+L31	29	K12	M	K12	K01	A/B split, crop does not settle it: pass A
+L32	1	K17	H	K17	K17	both passes
+L32	2	K38	M	K57	K38	z inside a C-curl = K38 (c268f rule, A K57, B K38)
+L32	3	K05	H	K05	K05	both passes
+L32	4	K10	H	K10	K10	both passes
+L32	5	K12	M	K12	K01	A/B split, crop does not settle it: pass A
+L32	6	K23	H	K23	K23	both passes
+L32	7	K33	H	K33	K33	both passes
+L32	8	K68	M	K68	K66	A/B split, crop does not settle it: pass A
+L32	9	K05	H	K05	K05	both passes
+L32	10	K26	H	K26	K26	both passes
+L32	11	K08	H	K08	K08	both passes
+L32	12	K08	H	K08	K08	both passes
+L32	13	K05	H	K05	K05	both passes
+L32	14	K39	H	K39	K39	both passes
+L32	15	K36	H	K36	K36	both passes
+L32	16	K05	H	K05	K05	both passes
+L32	17	K39	H	K39	K39	both passes
+L32	18	K17	H	K17	K17	both passes
+L32	19	K05	H	K05	K05	both passes
+L32	20	K06	H	K06	K06	both passes
+L32	21	K29	H	K29	K29	both passes
+L32	22	K04	H	K04	K04	both passes
+L32	23	K22	M	K22	K01	A/B split, crop does not settle it: pass A
+L32	24	?double_slash	H	?double_slash	?double_slash	both passes
+L32	25	K05	H	K05	K05	both passes
+L32	26	K07	H	K07	K07	both passes
+L32	27	K36	H	K36	K36	both passes
+L32	28	K12	M	K12	-	A/B split, crop does not settle it: pass A
+L32	29	K12	M	K12	-	A/B split, crop does not settle it: pass A
+L33	1	K04	H	K04	K04	both passes
+L33	2	K14	M	K14	K68	A/B split, crop does not settle it: pass A
+L33	3	K05	H	K05	K05	both passes
+L33	4	K11	H	K11	K11	both passes
+L33	5	K26	H	K26	K26	both passes
+L33	6	K12	M	K12	K04	A/B split, crop does not settle it: pass A
+L33	7	K38	M	K57	K38	z inside a C-curl = K38 (c268f rule, A K57, B K38)
+L33	8	K15	H	K15	K15	both passes
+L33	9	K19	M	K19	K39	A/B split, crop does not settle it: pass A
+L33	10	K09	M	K09	K21	A/B split, crop does not settle it: pass A
+L33	11	K10	H	K10	K10	both passes
+L33	12	K22	M	K22	K01	A/B split, crop does not settle it: pass A
+L33	13	K06	H	K06	K06	both passes
+L33	14	K22	M	K22	K01	A/B split, crop does not settle it: pass A
+L33	15	K29	H	K29	K29	both passes
+L33	16	K38	M	K57	K38	z inside a C-curl = K38 (c268f rule, A K57, B K38)
