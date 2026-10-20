@@ -129,6 +129,12 @@ merged) and blocked on ASKS 173. Program C: 1 reading from 13 promoted rows. Spe
 had been missed from the ledger and was added late; one EVIDENCE-DECISIONS entry was added for the Sherwood pivot, citing its contemporaneous
 NOTES record.
 
+Check-ins 107-108 (20 Oct 2026, 00:0x-01:1x UTC). SHERWOOD-MROWS (Opus, USD 3.69): a word-trigram column chooser passed both known-answer
+gates but settled 0 of the 45 column ties; 33 of them pair two Entick headwords that never occur in period prose, so no n-gram chooser can
+decide them. Grades unchanged at 72.7% H/C/S (D3 needs about 80%). Two image leads (220-30 = March, 151-22 = From) point to misread cypher
+digits instead. SHERWOOD-REREAD (session_01Kw99VShSN1ECFM4s3LRfiY, Opus, cap 6) now runs two blind digit re-reads of those 33 groups, gated on
+the clear groups of the same lines. Vivonne sorter still empty (ASKS 173); ASKS 174 open.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
