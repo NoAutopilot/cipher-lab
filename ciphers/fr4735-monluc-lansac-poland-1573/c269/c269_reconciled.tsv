@@ -1,0 +1,311 @@
+line	pos	sign	conf	pass_a	pass_b	how
+L01	1	K01	M	K01	K12	eye (L01:1,6, L02:2,5): round g with closed bottom loop = K01 (A K01, B K12)
+L01	2	K04	H	K04	K04	both passes
+L01	3	K14	M	K14	K49	eye (L01:3, L02:1): hooked-ascender b = folder K14 (A K14, B K49)
+L01	4	K38	M	K61	K57	z inside a C-curl = K38 (A K61, B K57; c268f rule)
+L01	5	K36	H	K36	K36	both passes
+L01	6	K01	M	K01	K12	eye (L01:1,6, L02:2,5): round g with closed bottom loop = K01 (A K01, B K12)
+L01	7	K04	H	K04	K04	both passes
+L01	8	K38	M	K61	K57	z inside a C-curl = K38 (A K61, B K57; c268f rule)
+L01	9	K05	H	K05	K05	both passes
+L01	10	W:Sepbre	M	K27 K15 K29 ?x[dot]	- - - -	eye: clear 'Sep.' with superscript 'bre' (overview); = B W:Sepbre (A K27 K15 K29 ?x[dot]); c268 has W:Sepbre
+L01	11	K10	H	K10	K10	both passes
+L01	12	K05	H	K05	K05	both passes
+L01	13	?double_slash	H	?double_slash	?double_slash	both passes
+L01	14	K33	H	K33	K33	both passes
+L01	15	K04	H	K04	K04	both passes
+L01	16	K38	M	K61	K57	z inside a C-curl = K38 (A K61, B K57; c268f rule)
+L01	17	K01	M	K01	K12	eye (L01:1,6, L02:2,5): round g with closed bottom loop = K01 (A K01, B K12)
+L01	18	K04	H	K04	K04	both passes
+L01	19	K38	M	K61	K57	z inside a C-curl = K38 (A K61, B K57; c268f rule)
+L01	20	K04	H	K04	K04	both passes
+L01	21	K19	M	K19	K39	A/B split, crop does not settle it: pass A
+L01	22	K09	M	K21	K09	theta = K09 (A K21, B K09)
+L01	23	K33	H	K33	K33	both passes
+L01	24	K39	H	K39	K39	both passes
+L01	25	K36	H	K36	K36	both passes
+L01	26	?x[faded_end]	M	W:cyrf	-	small faded signs run into the gutter (A W:cyrf, B none); unread
+L02	1	K14	M	K14	K49	eye (L01:3, L02:1): hooked-ascender b = folder K14 (A K14, B K49)
+L02	2	K01	M	K01	K12	eye (L01:1,6, L02:2,5): round g with closed bottom loop = K01 (A K01, B K12)
+L02	3	K62	H	K62	K62	both passes
+L02	4	K02	H	K02	K02	both passes
+L02	5	K01	M	K01	K12	eye (L01:1,6, L02:2,5): round g with closed bottom loop = K01 (A K01, B K12)
+L02	6	K67	H	K67	K67	both passes
+L02	7	K41	H	K41	K41	both passes
+L02	8	K04	H	K04	K04	both passes
+L02	9	K05	H	K05	K05	both passes
+L02	10	K39	H	K39	K39	both passes
+L02	11	K36	H	K36	K36	both passes
+L02	12	K37	H	K37	K37	both passes
+L02	13	K10	H	K10	K10	both passes
+L02	14	K39	H	K39	K39	both passes
+L02	15	K21	H	K21	K21	both passes
+L02	16	K01	M	K01	K12	eye (L01:1,6, L02:2,5): round g with closed bottom loop = K01 (A K01, B K12)
+L02	17	K39	H	K39	K39	both passes
+L02	18	K36	H	K36	K36	both passes
+L02	19	K33	H	K33	K33	both passes
+L02	20	K04	H	K04	K04	both passes
+L02	21	K38	M	K61	K57	z inside a C-curl = K38 (A K61, B K57; c268f rule)
+L02	22	K28	M	K28	K34	A/B split, crop does not settle it: pass A
+L02	23	K36	H	K36	K36	both passes
+L02	24	K05	H	K05	K05	both passes
+L02	25	K14	M	K14	-	A/B split, crop does not settle it: pass A
+L02	26	K01	M	K01	-	A/B split, crop does not settle it: pass A
+L02	27	K04	M	K04	-	A/B split, crop does not settle it: pass A
+L02	28	K61	M	K61	-	A/B split, crop does not settle it: pass A
+L02	29	K26	M	K26	-	A/B split, crop does not settle it: pass A
+L03	1	?h_bar	M	K68	K68	'h' form, folder convention ?h_bar (both passes K68)
+L03	2	K33	H	K33	K33	both passes
+L03	3	K39	H	K39	K39	both passes
+L03	4	K36	H	K36	K36	both passes
+L03	5	K33	H	K33	K33	both passes
+L03	6	K66	H	K66	K66	both passes
+L03	7	K05	H	K05	K05	both passes
+L03	8	K24	M	K24	K59	A/B split, crop does not settle it: pass A
+L03	9	K10	H	K10	K10	both passes
+L03	10	K14	M	K14	K49	eye (L01:3, L02:1): hooked-ascender b = folder K14 (A K14, B K49)
+L03	11	K26	H	K26	K26	both passes
+L03	12	K49	H	K49	K49	both passes
+L03	13	K41	H	K41	K41	both passes
+L03	14	?x[9_with_oblique_stroke_through_stem]	M	?x[9_with_oblique_stroke_through_stem]	K29	A/B split, crop does not settle it: pass A
+L03	15	K04	H	K04	K04	both passes
+L03	16	K05	H	K05	K05	both passes
+L03	17	K41	H	K41	K41	both passes
+L03	18	K25	H	K25	K25	both passes
+L03	19	K41	H	K41	K41	both passes
+L03	20	K04	H	K04	K04	both passes
+L03	21	K14	M	K14	K49	eye (L01:3, L02:1): hooked-ascender b = folder K14 (A K14, B K49)
+L03	22	K15	H	K15	K15	both passes
+L03	23	K39	H	K39	K39	both passes
+L03	24	K09	M	K21	K09	theta = K09 (A K21, B K09)
+L03	25	K26	H	K26	K26	both passes
+L03	26	K38	M	K61	K57	z inside a C-curl = K38 (A K61, B K57; c268f rule)
+L03	27	?double_slash	H	?double_slash	?double_slash	both passes
+L03	28	K05	H	K05	K05	both passes
+L03	29	K14	M	K14	-	A/B split, crop does not settle it: pass A
+L03	30	K61	M	K61	-	A/B split, crop does not settle it: pass A
+L03	31	K05	M	K05	-	A/B split, crop does not settle it: pass A
+L03	32	?x[small_box_sign_at_margin]	M	?x[small_box_sign_at_margin]	-	A/B split, crop does not settle it: pass A
+L04	1	K21	H	K21	K21	both passes
+L04	2	K33	H	K33	K33	both passes
+L04	3	K04	H	K04	K04	both passes
+L04	4	K10	H	K10	K10	both passes
+L04	5	K05	H	K05	K05	both passes
+L04	6	K39	H	K39	K39	both passes
+L04	7	K36	H	K36	K36	both passes
+L04	8	K01	M	K01	K12	eye (L01:1,6, L02:2,5): round g with closed bottom loop = K01 (A K01, B K12)
+L04	9	K39	H	K39	K39	both passes
+L04	10	K33	H	K33	K33	both passes
+L04	11	K04	H	K04	K04	both passes
+L04	12	K14	H	K14	K14	both passes
+L04	13	W:Mare	M	W:Maur	-	eye: the clear word Mare (overview, the folder's W:Mare); A W:Maur, B K46 K66 K05 K57
+L04	14	K01	H	K01	K01	both passes
+L04	15	?double_slash	H	?double_slash	?double_slash	both passes
+L04	16	K33	H	K33	K33	both passes
+L04	17	K36	H	K36	K36	both passes
+L04	18	K04	H	K04	K04	both passes
+L04	19	?x[looped_Q_with_flat_base]	M	?x[looped_Q_with_flat_base]	K07	A/B split, crop does not settle it: pass A
+L04	20	K68	M	K68	K19	A/B split, crop does not settle it: pass A
+L04	21	K33	H	K33	K33	both passes
+L04	22	K65	H	K65	K65	both passes
+L04	23	K05	H	K05	K05	both passes
+L04	24	?double_slash	H	?double_slash	?double_slash	both passes
+L04	25	K08	M	K08	K04	A/B split, crop does not settle it: pass A
+L04	26	K33	H	K33	K33	both passes
+L04	27	K14	M	K14	K49	eye (L01:3, L02:1): hooked-ascender b = folder K14 (A K14, B K49)
+L04	28	K05	H	K05	K05	both passes
+L05	1	K15	H	K15	K15	both passes
+L05	2	K39	H	K39	K39	both passes
+L05	3	K29	M	K29	-	A/B split, crop does not settle it: pass A
+L05	4	?x[dot]	M	?x[dot]	-	A/B split, crop does not settle it: pass A
+L05	5	K26	H	K26	K26	both passes
+L05	6	K37	H	K37	K37	both passes
+L05	7	K38	M	K61	K57	z inside a C-curl = K38 (A K61, B K57; c268f rule)
+L05	8	K33	H	K33	K33	both passes
+L05	9	K29	H	K29	K29	both passes
+L05	10	K38	M	K61	K57	z inside a C-curl = K38 (A K61, B K57; c268f rule)
+L05	11	K04	H	K04	K04	both passes
+L05	12	K05	H	K05	K05	both passes
+L05	13	?h_bar	M	K68	K68	'h' form, folder convention ?h_bar (both passes K68)
+L05	14	K26	H	K26	K26	both passes
+L05	15	K67	H	K67	K67	both passes
+L05	16	K41	H	K41	K41	both passes
+L05	17	K29	H	K29	K29	both passes
+L05	18	K36	H	K36	K36	both passes
+L05	19	K05	H	K05	K05	both passes
+L05	20	K62	H	K62	K62	both passes
+L05	21	K05	H	K05	K05	both passes
+L05	22	K04	H	K04	K04	both passes
+L05	23	K38	M	K61	K57	z inside a C-curl = K38 (A K61, B K57; c268f rule)
+L05	24	K36	H	K36	K36	both passes
+L05	25	K05	H	K05	K05	both passes
+L05	26	K15	H	K15	K15	both passes
+L05	27	K39	H	K39	K39	both passes
+L05	28	K09	M	K21	K09	theta = K09 (A K21, B K09)
+L05	29	K14	M	K14	K36	A/B split, crop does not settle it: pass A
+L05	30	K05	H	K05	K05	both passes
+L05	31	K24	M	K24	K59	A/B split, crop does not settle it: pass A
+L05	32	K10	H	K10	K10	both passes
+L05	33	K26	H	K26	K26	both passes
+L05	34	K37	M	K37	-	A/B split, crop does not settle it: pass A
+L05	35	K61	M	K61	-	A/B split, crop does not settle it: pass A
+L06	1	K34	H	K34	K34	both passes
+L06	2	K15	H	K15	K15	both passes
+L06	3	K39	H	K39	K39	both passes
+L06	4	K33	H	K33	K33	both passes
+L06	5	K04	H	K04	K04	both passes
+L06	6	K04	H	K04	K04	both passes
+L06	7	K05	H	K05	K05	both passes
+L06	8	K10	H	K10	K10	both passes
+L06	9	K39	H	K39	K39	both passes
+L06	10	K34	H	K34	K34	both passes
+L06	11	K14	H	K14	K14	both passes
+L06	12	K36	H	K36	K36	both passes
+L06	13	K05	H	K05	K05	both passes
+L06	14	K14	H	K14	K14	both passes
+L06	15	?h_bar	M	?x[h_with_long_descender]	K19	eye: 'h' with a left-curling descender = folder 'h' form ?h_bar (A ?x[h with long descender], B K19)
+L06	16	K36	H	K36	K36	both passes
+L06	17	K29	H	K29	K29	both passes
+L06	18	K16	H	K16	K16	both passes
+L06	19	K01	H	K01	K01	both passes
+L06	20	K14	H	K14	K14	both passes
+L06	21	K01	H	K01	K01	both passes
+L06	22	K14	H	K14	K14	both passes
+L06	23	K30	H	K30	K30	both passes
+L06	24	K05	H	K05	K05	both passes
+L06	25	K19	M	K19	K38	A/B split, crop does not settle it: pass A
+L06	26	K26	H	K26	K26	both passes
+L06	27	K11	H	K11	K11	both passes
+L06	28	K14	M	K14	-	A/B split, crop does not settle it: pass A
+L06	29	?x[looped_n]	M	?x[looped_n]	-	A/B split, crop does not settle it: pass A
+L06	30	K26	M	K26	-	A/B split, crop does not settle it: pass A
+L06	31	K15	H	K15	K15	both passes
+L06	32	K39	H	K39	K39	both passes
+L06	33	K09	H	K09	K09	both passes
+L07	1	K37	H	K37	K37	both passes
+L07	2	K05	H	K05	K05	both passes
+L07	3	K04	H	K04	K04	both passes
+L07	4	K14	H	K14	K14	both passes
+L07	5	K39	H	K39	K39	both passes
+L07	6	K29	H	K29	K29	both passes
+L07	7	K67	H	K67	K67	both passes
+L07	8	K05	H	K05	K05	both passes
+L07	9	K02	H	K02	K02	both passes
+L07	10	K09	H	K09	K09	both passes
+L07	11	K05	H	K05	K05	both passes
+L07	12	K04	H	K04	K04	both passes
+L07	13	K04	H	K04	K04	both passes
+L07	14	K09	H	K09	K09	both passes
+L07	15	K37	H	K37	K37	both passes
+L07	16	K14	H	K14	K14	both passes
+L07	17	K01	H	K01	K01	both passes
+L07	18	K04	H	K04	K04	both passes
+L07	19	?double_slash	H	?double_slash	?double_slash	both passes
+L07	20	K05	H	K05	K05	both passes
+L07	21	K36	H	K36	K36	both passes
+L07	22	K14	H	K14	K14	both passes
+L07	23	K33	H	K33	K33	both passes
+L07	24	K39	H	K39	K39	both passes
+L07	25	K36	H	K36	K36	both passes
+L07	26	K39	H	K39	K39	both passes
+L07	27	K05	H	K05	K05	both passes
+L07	28	K15	H	K15	K15	both passes
+L07	29	K15	H	K15	K15	both passes
+L07	30	K39	H	K39	K39	both passes
+L07	31	K05	H	K05	K05	both passes
+L08	1	K10	H	K10	K10	both passes
+L08	2	K05	H	K05	K05	both passes
+L08	3	K04	H	K04	K04	both passes
+L08	4	K59	H	K59	K59	both passes
+L08	5	K38	H	K38	K38	both passes
+L08	6	K38	H	K38	K38	both passes
+L08	7	K05	H	K05	K05	both passes
+L08	8	K36	H	K36	K36	both passes
+L08	9	K11	H	K11	K11	both passes
+L08	10	K26	H	K26	K26	both passes
+L08	11	K29	H	K29	K29	both passes
+L08	12	K10	H	K10	K10	both passes
+L08	13	K14	H	K14	K14	both passes
+L08	14	K33	H	K33	K33	both passes
+L08	15	K29	H	K29	K29	both passes
+L08	16	K38	H	K38	K38	both passes
+L08	17	K26	H	K26	K26	both passes
+L08	18	K04	H	K04	K04	both passes
+L08	19	?h_bar	M	?x[h_with_long_descender]	K19	eye: same 'h' form as L06:15 (A ?x[h with long descender], B K19)
+L08	20	K08	H	K08	K08	both passes
+L08	21	K05	H	K05	K05	both passes
+L08	22	K11	H	K11	K11	both passes
+L08	23	K29	H	K29	K29	both passes
+L08	24	K04	H	K04	K04	both passes
+L08	25	K14	H	K14	K14	both passes
+L08	26	K33	H	K33	K33	both passes
+L08	27	K59	H	K59	K59	both passes
+L08	28	K38	H	K38	K38	both passes
+L08	29	K14	M	K14	K34	A/B split, crop does not settle it: pass A
+L08	30	K01	H	K01	K01	both passes
+L08	31	K36	H	K36	K36	both passes
+L08	32	K11	H	K11	K11	both passes
+L08	33	K05	H	K05	K05	both passes
+L09	1	K34	H	K34	K34	both passes
+L09	2	K01	H	K01	K01	both passes
+L09	3	K36	H	K36	K36	both passes
+L09	4	K38	H	K38	K38	both passes
+L09	5	K26	H	K26	K26	both passes
+L09	6	K56	H	K56	K56	both passes
+L09	7	K05	H	K05	K05	both passes
+L09	8	K29	H	K29	K29	both passes
+L09	9	K05	H	K05	K05	both passes
+L09	10	K39	H	K39	K39	both passes
+L09	11	K33	H	K33	K33	both passes
+L09	12	K34	H	K34	K34	both passes
+L09	13	K39	H	K39	K39	both passes
+L09	14	K04	H	K04	K04	both passes
+L09	15	K05	H	K05	K05	both passes
+L09	16	K07	H	K07	K07	both passes
+L09	17	K36	H	K36	K36	both passes
+L09	18	K01	H	K01	K01	both passes
+L09	19	K04	H	K04	K04	both passes
+L09	20	K04	H	K04	K04	both passes
+L09	21	K05	H	K05	K05	both passes
+L09	22	K25	H	K25	K25	both passes
+L09	23	K59	H	K59	K59	both passes
+L09	24	?x[z_with_crossbar]	M	?x[z_with_crossbar]	?x[barred_z]	A/B split, crop does not settle it: pass A
+L09	25	K29	H	K29	K29	both passes
+L09	26	?double_slash	H	?double_slash	?double_slash	both passes
+L09	27	K39	H	K39	K39	both passes
+L09	28	K10	H	K10	K10	both passes
+L09	29	K38	H	K38	K38	both passes
+L09	30	K05	H	K05	K05	both passes
+L09	31	K14	H	K14	K14	both passes
+L09	32	K33	H	K33	K33	both passes
+L10	1	K10	H	K10	K10	both passes
+L10	2	K36	H	K36	K36	both passes
+L10	3	K27	H	K27	K27	both passes
+L10	4	K26	H	K26	K26	both passes
+L10	5	K04	H	K04	K04	both passes
+L10	6	K38	H	K38	K38	both passes
+L10	7	K15	H	K15	K15	both passes
+L10	8	K39	H	K39	K39	both passes
+L10	9	K09	H	K09	K09	both passes
+L10	10	K10	H	K10	K10	both passes
+L10	11	K06	H	K06	K06	both passes
+L10	12	K01	H	K01	K01	both passes
+L10	13	K39	H	K39	K39	both passes
+L10	14	K25	H	K25	K25	both passes
+L10	15	K36	H	K36	K36	both passes
+L10	16	K01	H	K01	K01	both passes
+L10	17	K15	H	K15	K15	both passes
+L10	18	K39	H	K39	K39	both passes
+L10	19	K09	H	K09	K09	both passes
+L10	20	K10	H	K10	K10	both passes
+L10	21	K36	H	K36	K36	both passes
+L10	22	K05	H	K05	K05	both passes
+L10	23	?double_slash	H	?double_slash	?double_slash	both passes
+L10	24	K33	H	K33	K33	both passes
+L10	25	?h_bar	M	K68	K68	'h' form, folder convention ?h_bar (both passes K68)
+L10	26	K36	H	K36	K36	both passes
+L10	27	K26	H	K26	K26	both passes
+L10	28	?h_bar	M	?x[h_with_long_descender]	K19	eye: same 'h' form as L06:15 (A ?x[h with long descender], B K19)
+L10	29	K01	H	K01	K01	both passes
+L10	30	K36	H	K36	K36	both passes
+L10	31	W:my	H	W:my	W:my	both passes
