@@ -18140,3 +18140,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-21 02:51 | orchestrator (owner account) | nightly key cross-match (02:49 UTC 21 Oct): rc 0; since a44a28135, 482 changed paths, 0 key files, 6 ciphertext files; 1 of 41 own-text pairs clear the gate (stat >= 3.292); 0 non-own rows clear; 0 leads. No STATUS or NEXT-STEPS change. usage: five_hour allowed by get_session, resets 06:20 UTC 21 Oct
 2026-10-21 03:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 03:09 UTC: spawned 0 (), queued left 0
 2026-10-21 03:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 03:34 UTC 21 Oct: spawned 0 -- no queued account-4 rows
+2026-10-21 03:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 03:39 UTC 21 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 06:20 UTC 21 Oct
