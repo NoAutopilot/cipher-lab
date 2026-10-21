@@ -234,6 +234,13 @@ The miss reads as transcription error (passes disagree 13-16%). Last machine ste
 look-alike pass on the split positions, then continue only if a run clears the S bar; otherwise the king letter is parked as fragments
 read, with the owner's sign sort as the next instrument.
 
+Check-in 123 (21 Oct 2026, 00:2x UTC). MONL-KING4: the look-alike pass relabelled 29 of 124 split tiles (open disagreement 13-16% -> 2.5%,
+agreement not accuracy), but L11-L25 still fails its gate and no run clears the S bar (43 vs 52): by the registered rule, f.133 is parked
+at D1 (fragments read). Next instrument is a person's sign sort on three look-alike pairs (king4/focus.tsv); I am not building that page
+or ASKS row until the owner's Vivonne re-sort is in, to keep one ask open at a time. Nothing live; no new-content job ready, so accounts 2
+and 4 are idle by choice. Day's net: one N0 key application (Monluc f.138, D2), one D1 lead (the 28 Apr 1573 king letter, not counted),
+Sherwood 73.6% pending a verifier with the ILL, sorter save bug fixed on 5 pages.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
