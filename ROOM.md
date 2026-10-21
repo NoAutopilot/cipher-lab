@@ -18125,3 +18125,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-21 00:11 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 00:11 UTC: spawned 0 (), queued left 0
 2026-10-21 00:22 | standby (owner account) | alive; holder account 4, last line 22:14 UTC 20 Oct (check-in 122, signed 'account-4 parent', 128 min old), not a HANDOFF; newest '| orchestrator (' line 23:39; no takeover. usage: five_hour allowed by get_session, resets 01:20 UTC 21 Oct
 2026-10-21 00:28 | account-4 parent | check-in 123 (00:2x UTC 21 Oct): MONL-KING4 -- S 0 after the look-alike pass; f.133 king letter parked at D1 by the registered rule. Accounts 2 and 4 idle by choice (no new-content job ready). Account 2 dispatcher: LEDGER.md still lacks rows for SUP-*, MONL-*, SHERWOOD-GRID run on account 2 on 20 Oct.
+2026-10-21 00:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 00:34 UTC 21 Oct: spawned 0 -- no queued account-4 rows
