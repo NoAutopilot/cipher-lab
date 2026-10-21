@@ -1,4 +1,5 @@
-blocked
+found-solved
+Found solved 21 Oct 2026 (LANE BNF-FOCUS re-screen): deciphered by Brice Dudout with the Henri IV-Brèves key (BnF fr.3462 view 112), checked sign by sign by D. Bourdeau, read in part (95 of 98 glyphs supported; dbourdeau/cyphersolver breves1610, 20 Oct 2026); section "Found solved elsewhere" at the end. Was `blocked`.
 
 
 **Edition check (LANE N3 csED, 24 Sept 2026 15:45 UTC):** hold lifted -- verdict `open`. No printed edition of
@@ -207,3 +208,13 @@ The opening groups agree with Bourdeau's "72 4 79" for f.19r (7̄2 4 7̄9 here);
 Requests: none (no network). Vision views: 14 crops read by this worker, 0 subagent calls.
 Next cheapest step is unchanged and outside this session: the fr.3642 key at full resolution or Lasry's R2077
 pair (ASKS 42/43); `ciphertext.tsv` is the input a key test would run on.
+
+
+## Found solved elsewhere (21 Oct 2026, LANE BNF-FOCUS, account 2)
+
+dbourdeau/cyphersolver `targets/breves1610`: "Result, 20 Oct 2026: deciphered by Brice Dudout (with Claude and Codex) with the Henri IV-Brèves
+key, BnF fr. 3462 view 112; checked here sign by sign, read in part (95 of 98 glyphs supported, 3 signs in conflict with the
+key)." The 10 Nov 1610 letter (fr.3789 no.12, f.19r ll.5-7, about 45 signs) is this folder's item; their page also covers the
+15 Sept 1610 passages (f.17r). The key's identification goes back to DECODE R2077 (Lasry, Biermann and Tomokiyo 2021;
+C. Desenclos found the key sheet at the BnF). Snapshot (unmodified): `sources/cyphersolver/2026-10-21-breves1610/NOTES.md` (their HEAD fa5374ed3).
+Credit: Brice Dudout; D. Bourdeau; G. Lasry, N. Biermann, S. Tomokiyo; C. Desenclos.

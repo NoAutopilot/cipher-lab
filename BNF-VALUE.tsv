@@ -86,7 +86,7 @@ reading	fr2980-gramont	fr.2980	BnF fr.2980 f.29r (no.21), Gramont to Villandry, 
 reading	fr2980-gramont	fr.2980	BnF fr.2980 f.30r-v (no.22), Gramont to Francis I, Rome, 20 May 1530	partial	N4	D1	84.7	published		btv1b9059994n	yes	Gramont 1530, fr.2980 f.30r-v: published key applied, 11 more signs at grade S with a matched control	ciphers/fr2980-gramont/
 reading	fr2980-gramont	fr.2980	BnF fr.3040 no.6 (Anc. 8565), ff.18r-19r, Gramont to the grand maitre, A Boulongne le XXVIIIme jour de mars [1530]	partial	N0	D2	76.9	published	known	btv1b9059994n	yes	Gramont to Montmorency, Boulogne [Bologna], 28 March 1530 (BnF fr.3040 no.6, ff.18-19): published key checked against the printed, period-deciphered text	ciphers/fr2980-gramont/
 folder	fr2980-gramont	fr.2980		partial						btv1b9059994n	yes	BnF Français 2980, ff.29-30: two cipher letters of Gabriel de Gramont, bishop of Tarbes (cardinal from 8 June 1530)	ciphers/fr2980-gramont/
-folder	fr2988-ranzo-1520s	fr.2988		open						btv1b525240150		Hieronimo Ranzo (Venice) cipher letters, 1520s — BnF fr. 2988 ff.9r-11v	ciphers/fr2988-ranzo-1520s/
+folder	fr2988-ranzo-1520s	fr.2988		found-solved						btv1b525240150		Hieronimo Ranzo (Venice) cipher letters, 1520s — BnF fr. 2988 ff.9r-11v	ciphers/fr2988-ranzo-1520s/
 folder	fr2996-morvillier	fr.2996		found-solved						bpt6k1145214		BnF Français 2996, f.53: ciphered despatch of Morvillier at Venice to the king	ciphers/fr2996-morvillier/
 folder	fr3022-garbino-1528	fr.3022		open						btv1b90601558		Unsigned letter to Seigneur Garbino, Madrid, 11 April 1528 — BnF fr. 3022 no. 20 (ff.44r-46v)	ciphers/fr3022-garbino-1528/
 folder	fr3034-landriano-1528	fr.3034		found-solved								BnF Français 3034, items 68-69 (f.154/156, "Lettre, en chiffre")	ciphers/fr3034-landriano-1528/
@@ -107,7 +107,7 @@ folder	fr3624-marchant-1593	fr.3624		blocked						btv1b52524472n		Marchant to th
 folder	fr3625-lauriere-1593	fr.3625 (key: fr.3995)		found-solved						btv1b525085665		Laurière to Nevers, Châlons, 9 July 1593 — BnF fr. 3625 no. 55 (f. 66r)	ciphers/fr3625-lauriere-1593/
 folder	fr3631-dinteville-1593	fr.3631		blocked						btv1b52524472n		Dinteville to the duc de Nevers, camp de Collaverde, 14 June 1593 -- BnF Français 3631 no.27, fol. 28	ciphers/fr3631-dinteville-1593/
 folder	fr3669-bethune-rome-1625	fr.3669		blocked						btv1b9060205q		fr3669-bethune-rome-1625: Béthune (Rome) <-> Herbault / Louis XIII, BnF fr.3669 (+ fr.3484, fr.3675)	ciphers/fr3669-bethune-rome-1625/
-folder	fr3789-mariedemedicis-savary-1610	fr.3789		blocked						btv1b9059628m		Marie de Médicis to Savary de Brèves, Rome, 10 November 1610 — BnF fr. 3789 no. 12	ciphers/fr3789-mariedemedicis-savary-1610/
+folder	fr3789-mariedemedicis-savary-1610	fr.3789		found-solved						btv1b9059628m		Marie de Médicis to Savary de Brèves, Rome, 10 November 1610 — BnF fr. 3789 no. 12	ciphers/fr3789-mariedemedicis-savary-1610/
 folder	fr3975-vieuville-1587	fr.3975		blocked						btv1b90605473		Nevers to La Vieuville, St-Aignan, 30 September 1587 — BnF Français 3975 ff. 101r–102v, DECODE R4289	ciphers/fr3975-vieuville-1587/
 folder	fr3976-nevers-f133-1586	fr.3976		found-solved						btv1b9060548h		BnF fr.3976, ff.133-134 -- unnamed Paris informant to the Nevers household, 6 June 1588	ciphers/fr3976-nevers-f133-1586/
 folder	fr3982-nevers-toscana-1592	fr.3982		open						btv1b9060543f		Nevers to the Grand Duke of Tuscany, "dal Campo sotto Provins", 26 Aug 1592 -- BnF Français 3982 f.25	ciphers/fr3982-nevers-toscana-1592/
@@ -135,7 +135,7 @@ folder	fr4715-evesque-nevers-1589	fr.4715		found-solved						btv1b52509819x		BnF
 folder	fr4715-f61-mayenne-1592	fr.4715		partial						btv1b52509819x	yes	BnF fr.4715 no.38 (f.61), "Duke of Mayenne's polyphonic cipher?"	ciphers/fr4715-f61-mayenne-1592/
 folder	fr4715-montholon-1589	fr.4715		found-solved						btv1b52509819x		BnF fr.4715, no.58 (f.81), Sieur de Montholon to an unnamed recipient, Tours, 8 November 1589	ciphers/fr4715-montholon-1589/
 folder	fr4715-vieuville-pool	fr.4715		partial						btv1b52509819x		BnF fr.4715 Vieuville-Nevers open sub-pool -- first cheap test on no.44 (f.67r), Montholon, Tours, 15 April 1590	ciphers/fr4715-vieuville-pool/
-folder	fr4735-monluc-lansac-poland-1573	fr.4735		partial						btv1b9060724s		fr4735-monluc-lansac-poland-1573 (check-solved, NC-MONL, 7 Oct 2026)	ciphers/fr4735-monluc-lansac-poland-1573/
+folder	fr4735-monluc-lansac-poland-1573	fr.4735		partial						btv1b9060724s	yes	fr4735-monluc-lansac-poland-1573 (check-solved, NC-MONL, 7 Oct 2026)	ciphers/fr4735-monluc-lansac-poland-1573/
 reading	fr5160-letellier-1653	fr.5160	BnF fr.5160 ff.86-88 (Brienne to Servien, 21 Nov 1659)	found-solved	N0	D1	31.4	period	known	btv1b9060495t	yes	Brienne to Ennemond Servien, 21 Nov 1659 (fr.5160 ff.86-88): key recovered from the contemporary decipherment on f.87	ciphers/fr5160-letellier-1653/
 reading	fr5160-letellier-1653	fr.5160	BnF fr.5160 f.67 (Brienne to Servien, 10 Oct 1659)	found-solved	N0			period		btv1b9060495t	yes	Brienne to Servien, Paris 10 Oct 1659 (BnF fr.5160 folio 67): partly read with the 1659 key recovered from the office's November letters	ciphers/fr5160-letellier-1653/
 folder	fr5160-letellier-1653	fr.5160		found-solved						btv1b9060495t	yes	BnF fr.5160 — Loménie de Brienne (père et fils) to Abel Servien, 1653-1661	ciphers/fr5160-letellier-1653/
@@ -153,5 +153,5 @@ folder	nevers-birago-fr3251-1572	fr.3251		partial						btv1b9060248g	yes	Nevers-
 folder	portugais33-saovicente-1667	Portugais 33		closed-negative						btv1b104629623		"Carta que foi por çifra" -- vice-roi de l'Inde (comte de São Vicente) to king Alphonse VI -- BnF Portugais 33	ciphers/portugais33-saovicente-1667/
 folder	sforza-duke-1447-f15	italien 1584		open						btv1b100373864		BnF italien 1584 f.15: the Duke's cipher slip, Cusago 23 Jan 1447 -- target folder (SFZ-D)	ciphers/sforza-duke-1447-f15/
 folder	sforza-italien1584-1447	italien 1584		blocked						btv1b100373864		BnF italien 1584 (Archivio Sforzesco, 1447): cipher letters of the f.68/f.70 sign family -- pool folder	ciphers/sforza-italien1584-1447/
-folder	sforza-maino-1446	italien 1583-1584		closed-negative						btv1b100373864		Sforza reply to Zorzo (Giorgio) del Maino, 4 May 1446 (BnF italien 1583 f.68, DECODE R7898) and Vincenzo	ciphers/sforza-maino-1446/
+folder	sforza-maino-1446	italien 1583-1584		found-solved						btv1b100373864		Sforza reply to Zorzo (Giorgio) del Maino, 4 May 1446 (BnF italien 1583 f.68, DECODE R7898) and Vincenzo	ciphers/sforza-maino-1446/
 folder	sforza-pusterla-1447-f13	italien 1584		partial						btv1b100373864		BnF italien 1584 f.13: Pietro de Pusterla to Francesco Sforza, Guastalla 21 Jan 1447 (cipher slip, no clear copy)	ciphers/sforza-pusterla-1447-f13/

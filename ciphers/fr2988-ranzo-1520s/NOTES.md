@@ -1,4 +1,5 @@
-open
+found-solved
+Found solved 21 Oct 2026 (LANE BNF-FOCUS re-screen): Ranzo's code key recovered ciphertext-only by George Lasry (6 Oct, contributed 14 Oct 2026) and independently by Paolo Rosson (6 Oct); fr.2988 letters 1 and 2 meet Bourdeau's read bar (ff.9r-10v 93.1%, ff.2r-v 88.7%), section "Found solved elsewhere" at the end. Was `open`.
 Molini, Documenti di storia italiana vol. 2 (1836), 'Omessi di copiare' list, no. 8513 (prefatory p. xxvi, Google Books page id PR26) (= fr.2988) read by this worker (GF4-BATCH14, 3 Oct 2026, archive.org documentidistor02moligoog djvu l.1031-1037): "a c. 9 e altra lettera dello stesso parimente in cifra, ma senza l'interpetrazione"; CSP Spain III pts 1-2 (1525-1529) full text, no Ranzo letter.
 
 **LANE N3 orchestrator, 24 Sept 2026 18:03 UTC:** open, but not a separate nomination: same Ranzo corpus as ciphers/fr3022-garbino-1528 (Bourdeau pooled both); the recovery/cryptanalysis lane should treat them as one target.
@@ -477,3 +478,14 @@ Not found: no other pair of different codes co-aligns twice or more with lift >=
 columns (r196/r296, m297/m247, q20/q10, p1/p10 ...) are RANZO-DUP's number variants and reader differences, each seen once,
 below the tool's acceptance line (n >= 2). No clear word in either copy, so no anchors and no cribs. Grades: no reading,
 no key; H 0, C 0. Novelty not classified.
+
+
+## Found solved elsewhere (21 Oct 2026, LANE BNF-FOCUS, account 2)
+
+dbourdeau/cyphersolver `targets/ranzo1528` (status "read in part", 18 Oct 2026): "key recovered from ciphertext-only by George Lasry with
+Claude Opus 5.5 and GPT-6 Astra (6 Oct 2026, on Norbert Biermann's transcription; contributed 14 Oct 2026) and, independently,
+by Paolo Rosson with Claude (6 Oct 2026, on this project's [Bourdeau's] transcription). Fr. 2988 (letters 1 and 2) and its copy
+fr. 20506 meet the read bar." Their measure of Lasry's key: R1894 = fr.2988 ff.9r-10v 1,654 of 1,776 tokens (93.1%); ff.2r-v
+724 of 816 (88.7%). Snapshot (unmodified): `sources/cyphersolver/2026-10-21-ranzo1528/NOTES.md` (their HEAD fa5374ed3).
+Credit: George Lasry, Norbert Biermann (transcription), Paolo Rosson, D. Bourdeau. The key was in their repository from 14 Oct;
+this lane's 19 Oct screen hit fr.2988 f.9 and wrongly set it aside as an already-recorded split (BNF-VALUE.md wave 41).

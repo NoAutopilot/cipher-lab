@@ -199,3 +199,12 @@ was still unsent on 19 April 1528. Pass disagreements: pass A read most tails as
 (A) vs "xxij" (B), "unnotip" (A) vs "ut sup^a" (B) are graded M on B's reading.
 
 Gate re-run (GF4-BATCH14, 3 Oct 2026): `python3 tools/intake_gate_check.py fr3022-garbino-1528` -> "fr3022-garbino-1528: open (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0 (was exit 1, no Web and blog check). `python3 tools/next_steps.py --wait-only | grep fr3022-garbino-1528` -> no line.
+
+
+## Found solved elsewhere (21 Oct 2026, LANE BNF-FOCUS, account 2)
+
+No. 20 (the "Garbino" letter, ff.44r-46v) is in Ranzo's code, whose key George Lasry recovered (contributed 14 Oct 2026)
+and Paolo Rosson recovered independently (6 Oct); dbourdeau/cyphersolver `targets/ranzo1528` lists fr.3022 no.20 as "read in part" (measured
+18 Oct 2026). Status here left `open` for the residue pending a reading of their measure for no.20 by the lane that holds this
+folder; any work on no.20 starts from their key and reading, not from scratch (premise check). Snapshot (unmodified): `sources/cyphersolver/2026-10-21-ranzo1528/NOTES.md` (their HEAD fa5374ed3).
+Credit: George Lasry, Norbert Biermann, Paolo Rosson, D. Bourdeau.

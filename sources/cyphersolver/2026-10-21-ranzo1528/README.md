@@ -1,0 +1,1 @@
+Unmodified snapshot of github.com/dbourdeau/cyphersolver targets/ranzo1528/NOTES.md at commit fa5374ed36dc16451be59f5439f1418f1ea61a7a, fetched 21 Oct 2026 by LANE BNF-FOCUS (account 2). Bourdeau repository licence: code MIT, text CC BY 4.0; contributors credited inside. Do not edit.

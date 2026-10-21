@@ -1,4 +1,5 @@
 blocked
+Re-screen 21 Oct 2026 (LANE BNF-FOCUS): candidate readings of nos.6 and 8 published by Brice Dudout (unchecked), and Tomokiyo, Cryptologia 43(1) 2019 probably covers no.6; section "Readings published elsewhere" at the end. Was `blocked`.
 No printed edition of these two pieces could be opened or ruled out by this worker: Acta Nuntiaturae Gallicae (the series' own volume list was not obtained; no Sega 1592-94 volume seen), Goujet, Memoires de la Ligue t.5 (archive.org memoiresdelaligu05goul, whole-volume grep, no hit for 14/15 May 1593) read by this worker; t.6 returned HTTP 500 twice; so the verdict is blocked, not open.
 
 # Memoir "in cipher" to Cardinal Sega, 14 May 1593, and cipher letter of Paris, 15 May 1593 -- BnF Francais 3984 nos.6 and 8
@@ -41,3 +42,14 @@ Queries: WebSearch x2 (above, ANG list and Sega 1593 edition) returned catalogue
 `blocked`, not a negative. Missing for `open`: the full ANG volume list from the publisher and Penzi's footnotes. DBI and the Manfroni text support that none of the checked editions print these pieces.
 ## While waiting
 Next step needing nobody: native-resolution look at ff.12-19 and f.22 (tools/iiif_lines.py), then check whether the figures fit the Per Cauare table (mantua.htm), ~$1.
+
+
+## Readings published elsewhere (21 Oct 2026, LANE BNF-FOCUS, account 2)
+
+dbourdeau/cyphersolver `targets/sega1593` (split 20 Oct 2026, status "in progress"): no.8 (f.22r-v, 15 May 1593) is "a homophonic substitution
+with a small nomenclator" and no.6 (ff.12-17, c. 14,500 figures) a different system; Brice Dudout publishes candidate
+readings of both at https://bdudout.github.io/europe-chiffree/en/sega-1593.html (CC BY 4.0), "still partial"; Bourdeau has
+not yet checked them against the images or against Tomokiyo 2019 (Cryptologia 43(1), "Identifying Italian ciphers from
+continuous-figure ciphertexts (1593)", probably including no.6). Status here stays `blocked`; the edition question above is
+now joined by these two prior-work items, which any brief reads first. Snapshot (unmodified): `sources/cyphersolver/2026-10-21-sega1593/NOTES.md` (their HEAD fa5374ed3).
+Credit: Brice Dudout; S. Tomokiyo; D. Bourdeau.

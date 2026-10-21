@@ -6482,3 +6482,12 @@ Requests: www.googleapis.com 2 (2 x 503), api.semanticscholar.org 2 (1 x 200, 1 
 Remaining (this step): five Google Books phrases (googleapis 503 again, now 3 sessions' requests in 5 of 5 recent 503s except one 200 at 15:2x) and one Semantic Scholar phrase
 ("jalousie au beau pere", 429). Both blocked from outside the session (host availability); next: same phrases when googleapis answers, ~$0.3.
 Verdict: keep going (host availability only; the target stays `partial`).
+
+
+## Desportes ff.186/189 read elsewhere (21 Oct 2026, LANE BNF-FOCUS, account 2)
+
+fr.3984 f.186 (to Aldobrandini) and f.189 (to Frachetta), 22 July 1593, which this folder kept as a keyless pool ("genuinely
+undeciphered", H169 line above), were deciphered by Paolo Rosson with Tomokiyo's League polyphonic key, published 1 Oct
+2026 (https://github.com/pangoleen/desportes-1593), checked by D. Bourdeau 20 Oct 2026 (dbourdeau/cyphersolver `targets/desportes1593`).
+They are no longer a pool for this folder's keyless steps except as a known-answer source with credit. Snapshot:
+`sources/cyphersolver/2026-10-21-desportes1593/NOTES.md`. Credit: Paolo Rosson; S. Tomokiyo; D. Bourdeau.

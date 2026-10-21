@@ -1,4 +1,5 @@
-blocked (fr.3984 nos.6, 8, 88, 90); found-solved (fr.3985 no.7)
+blocked (fr.3984 nos.6, 8: candidate readings published elsewhere, unchecked); found-solved (fr.3984 nos.88, 90; fr.3985 no.7)
+Re-screen 21 Oct 2026 (LANE BNF-FOCUS): nos.88/90 (Desportes to Aldobrandini and to Frachetta, ff.186, 189) deciphered by Paolo Rosson with Tomokiyo's League key (pangoleen/desportes-1593, 1 Oct 2026; checked by D. Bourdeau 20 Oct); nos.6/8 have candidate readings by Brice Dudout (unchecked); section "Found solved elsewhere" at the end. Was `blocked (fr.3984 nos.6, 8, 88, 90); found-solved (fr.3985 no.7)`.
 
 **LANE N3 csCS2c, 24 Sept 2026 (session_0113dPptSGXZiBF5uwvtKmtc):** fr.3985 no.7 confirmed against the Gallica
 leaf and split off below ("Leaf check confirms found-solved: fr.3985 no.7"). The four fr.3984 items are
@@ -272,3 +273,15 @@ Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchan
 
 Item: scholarship search for the Sega legation / Baudouin-Desportes 1593 correspondence, 10:3x UTC, for LANE LANE-AM-0914. Searched: OpenAlex (Bearer key; "Sega legation France 1593 Baudouin Desportes", "Filippo Sega legato Francia 1593 cifra", "Baudouin Desportes Clement VIII 1593 chiffre"), Semantic Scholar (x-api-key, same three; the third got HTTP 429, not retried), CrossRef (same three), HAL (3 queries incl. "Acta Nuntiaturae Gallicae Sega": 0 results each), Persée (one search-page request, HTTP 200, result list not parsed from the HTML, so counted as unsearched). Hits: none about this legation or correspondence; the returned items are unrelated (a Rabelais 1593 edition, Philippe Desportes' Pseaumes 1593, Cardinal Romanus 1225, Vincent Desportes on decision-making, Grove "Legato", the Medici exhumations book). Secondary works excerpting the Acta edition: none found by these queries. This is a search result, not a verdict; tools/print_check.py was not run (no phrases.txt for this folder). Requests: api.openalex.org 3, api.semanticscholar.org 3, api.crossref.org 3, api.archives-ouvertes.fr 3, www.persee.fr 1.
 
+
+
+## Found solved elsewhere (21 Oct 2026, LANE BNF-FOCUS, account 2)
+
+- nos.88 and 90: dbourdeau/cyphersolver `targets/desportes1593` (20 Oct 2026): "deciphered by Paolo Rosson with Tomokiyo's known key
+  (contributed result, checked here)"; Rosson's reading published 1 Oct 2026 at https://github.com/pangoleen/desportes-1593.
+- nos.6 and 8: dbourdeau/cyphersolver `targets/sega1593` (status "in progress"): candidate readings by Brice Dudout at
+  https://bdudout.github.io/europe-chiffree/en/sega-1593.html, "still partial", not yet checked by Bourdeau; prior work named
+  there: Tomokiyo, "Identifying Italian ciphers from continuous-figure ciphertexts (1593)", Cryptologia 43(1) 2019, probably
+  including no.6 (read by neither). Not found-solved yet; no work here without reading both first (premise check).
+Snapshots (unmodified): `sources/cyphersolver/2026-10-21-desportes1593/` and `-sega1593/`.
+Credit: Paolo Rosson; Brice Dudout; S. Tomokiyo; D. Bourdeau.

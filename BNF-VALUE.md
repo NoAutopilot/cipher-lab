@@ -379,3 +379,27 @@ the strongest new material (a held key or a sibling folder) once reproduced. Re-
   which sat under a different folder name. The daily screen now crosses all BNF-VALUE.tsv shelfmarks (folio, then volume) against
   every target changed since the last screened HEAD (script in the wave 40 ROOM line; the lane's scratch, not a new tool --
   architecture frozen through 22 Oct).
+
+## Wave 41 (21 Oct 2026, 06:1x-06:2x UTC by date -u): six more item-level matches in Bourdeau's 14-20 Oct entries
+
+Bourdeau HEAD 0258b8ab5 -> fa5374ed3 (PRs #45, #50, #57, #60 merged 20 Oct; Siena, Costabili, Sforza 1446, Brèves 1610,
+Desportes 1593, Sega 1593 split). The full BNF-VALUE.tsv cross (folio, then volume over changed and added targets) and a read of
+each hit gave:
+- **sforza-maino-1446 -> found-solved** (was closed-negative): George Lasry recovered the key ciphertext-only with CTTS and read
+  both letters in part (f.68 380/425 tokens as sense, f.70 341/402; PR #60, 20 Oct). status.json card still says blocked /
+  closed-negative: the orchestrator's change.
+- **fr3789-mariedemedicis-savary-1610 -> found-solved**: Brice Dudout, with the Henri IV-Brèves key (BnF fr.3462), checked by
+  Bourdeau, 95 of 98 glyphs supported (20 Oct).
+- **fr2988-ranzo-1520s -> found-solved**: Lasry's key (6 Oct, contributed 14 Oct) and Paolo Rosson's independent key; fr.2988
+  ff.9r-10v 93.1%, ff.2r-v 88.7% of tokens by Bourdeau's measure. **This was missed on 19 Oct**: the folio cross hit fr.2988 f.9
+  and this lane set it aside as an already-recorded split without reading the entry's status line. Lesson: every hit is read to
+  its status line, whatever its name.
+- **fr3984-sega-1593**: nos.88/90 (Desportes, ff.186/189) found-solved (Paolo Rosson, pangoleen/desportes-1593, 1 Oct; checked
+  20 Oct); nos.6/8 have unchecked candidate readings by Brice Dudout and probable prior work in Tomokiyo, Cryptologia 43(1) 2019.
+- **fr3984-sega-memoirs-1593** stays blocked, with the Dudout readings and Tomokiyo 2019 recorded as prior work to read first
+  (this is Q8 of the queue above).
+- **fr3022-garbino-1528** stays open with a note: no.20 is in Ranzo's code and listed "read in part" by Bourdeau with Lasry's key.
+- **fr4715-f61-mayenne-1592**: the Desportes ff.186/189 pool is now read elsewhere (note added; Q3 of the queue above).
+Snapshots: sources/cyphersolver/2026-10-21-{ranzo1528,it1583,breves1610,sega1593,desportes1593}/. BNF-VALUE.tsv refreshed
+(4 rows). fr.3982 f.25 and fr.3985 f.89: no hit. Credit as in each folder: G. Lasry, N. Biermann, P. Rosson, B. Dudout,
+S. Tomokiyo, C. Desenclos, D. Bourdeau.

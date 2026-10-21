@@ -1,4 +1,5 @@
-closed-negative
+found-solved
+Found solved 21 Oct 2026 (LANE BNF-FOCUS re-screen): George Lasry recovered the key ciphertext-only with CTTS and read both letters in part (f.68 380/425 tokens as sense, f.70 341/402; dbourdeau/cyphersolver PR #60, 20 Oct 2026); section "Found solved elsewhere" at the end. Our closed-negative of 23 Sept is superseded. Was `closed-negative`.
 
 (Conditional on Bourdeau's draft transcriptions: solver campaign of 23 Sept 2026, at the end of this file. The check-solved verdict of the same date, below, was open / Stage 2.)
 (Image gate of 23 Sept 2026, end of this file: BnF italien 1583 is not on Gallica, so the condition stands.)
@@ -478,3 +479,13 @@ github.com: one shallow clone. No other host.
 **Suggestion, not started (Usage 7).** Treat f.70 as an unglossed 1446 letter in its own key. The pool route is Amidani's other
 1446 letters, or 1446 Sforza letters with clear copies in italien 1583 (not on Gallica: microfilm MF 16151, matrix R 151450).
 They would need the SFZ-1 known-plaintext method in a 1446 label set.
+
+
+## Found solved elsewhere (21 Oct 2026, LANE BNF-FOCUS, account 2)
+
+dbourdeau/cyphersolver `targets/it1583` (PR #60, merged 20 Oct 2026): "George Lasry's CTTS key ... key recovered from ciphertext-only ...
+one key, two letters." Their table: f.68 (R7898) 425 cipher tokens, 399 assigned (93.9%), 380 read as sense (89.4%); f.70
+(R7899 P1) 402, 381 (94.8%), 341 (84.8%); system: homophonic letters plus word/syllable signs (CHE, CON, ET, PER, QVA, SE).
+Our 23 Sept joint nomenclator anneal (above) ran against the 208 Sforza keys of September, which they also found do not fit:
+our negative stands as a negative for those keys, not for the cipher. Snapshot (unmodified): `sources/cyphersolver/2026-10-21-it1583/NOTES.md` (their HEAD fa5374ed3).
+Credit: George Lasry (key, reading; CTTS), D. Bourdeau (check, write-up docs/it1583.html).
