@@ -2809,7 +2809,8 @@
    "title": "Hieronimo Ranzo cipher letter, BnF fr.20506 f.136 (DECODE R4450), a copy of fr.2988 f.9: transcription and two-witness comparison",
    "grade": "dataset: 749 tokens, 320 distinct letter+number codes; agrees with Bourdeau's fr.2988 f.9 transcription at 705 of 749 positions (94.1%)",
    "line": "Transcribed from Gallica images (fetched by LANE G2), compared with dbourdeau/cyphersolver vasto1527/n20 (ranzo_c017/c018, cited). The two copies give a second witness for the Ranzo code Bourdeau's annealer could not break; no decipherment attempted.",
-   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/decode-4450-bnf-fr20506-1525"
+   "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/decode-4450-bnf-fr20506-1525",
+   "superseded_by": "found-solved 22 Oct 2026 (BNF-FOCUS wave 42): this copy of Ranzo letter 2 is read with George Lasry's key, 1,703 of 1,746 tokens, in dbourdeau/cyphersolver (HEAD aa2e11dc0); our dataset row stands as a second-witness transcription, no reading of ours"
   },
   {
    "date": "24 Sept 2026",
