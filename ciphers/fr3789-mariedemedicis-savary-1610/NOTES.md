@@ -218,3 +218,7 @@ key)." The 10 Nov 1610 letter (fr.3789 no.12, f.19r ll.5-7, about 45 signs) is t
 15 Sept 1610 passages (f.17r). The key's identification goes back to DECODE R2077 (Lasry, Biermann and Tomokiyo 2021;
 C. Desenclos found the key sheet at the BnF). Snapshot (unmodified): `sources/cyphersolver/2026-10-21-breves1610/NOTES.md` (their HEAD fa5374ed3).
 Credit: Brice Dudout; D. Bourdeau; G. Lasry, N. Biermann, S. Tomokiyo; C. Desenclos.
+
+
+Update 22 Oct 2026 (LANE BNF-FOCUS): their breves1610 now also carries George Lasry's CTTS key and a second document in the
+key (PR #61, merged 21 Oct). Snapshot `sources/cyphersolver/2026-10-22-breves1610/NOTES.md`.

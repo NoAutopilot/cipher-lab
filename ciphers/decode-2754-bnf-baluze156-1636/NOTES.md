@@ -901,3 +901,12 @@ loose-ends gap was raised from the 24 Sept sentence "not fetched this pass" and 
 and the Verdict restored to parked. No new fetch, no new score, no PREREG (nothing scored). Requests: none. Vision calls 0.
 Status word unchanged: **open**. Not done here: a re-derivation of the f.40 glyph-to-DC8 shape match from cleaner crops
 (the 25 Sept section's own caveat (c)); a suggestion only.
+
+
+## Sibling read elsewhere (22 Oct 2026, LANE BNF-FOCUS, account 2)
+
+The fr.4134 Sabran letters this folder names as the sibling-key lead now have a contributed partial reading: dbourdeau/cyphersolver
+`targets/sabran1633` (Harumi-Matsuba, issue #56, merged 21 Oct 2026; "checked here on two leaves"; G. Lasry to be asked whether
+he holds readings). Not an item-level match for Baluze 156 f.157-158; it is the key route this folder's lead pointed to, now with
+a reading on disk to test (`decode_key.py --try` per value, control first). Snapshot `sources/cyphersolver/2026-10-22-sabran1633/`.
+Credit: Harumi-Matsuba; G. Lasry (the cipher identification); D. Bourdeau.

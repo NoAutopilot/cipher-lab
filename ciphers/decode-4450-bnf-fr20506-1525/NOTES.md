@@ -1,4 +1,5 @@
-open
+found-solved
+Found solved 22 Oct 2026 (LANE BNF-FOCUS re-screen): R4450 (fr.20506 ff.136-138) is a parallel copy of Ranzo's letter 2 (fr.2988 ff.9r-10v), read with George Lasry's key: 1,703 of 1,746 tokens (dbourdeau/cyphersolver ranzo1528, 18-21 Oct 2026); section "Found solved elsewhere" at the end. Was `open`.
 DECODE RecordsView/4450 and DocumentsList read by this worker (no attached document, confirmed again); Tomokiyo's `venetian.htm` read in full by this worker (fresh fetch, not the local snapshot, which lacks this page); Bourdeau's `vasto1527/n20/ranzo_c017.txt`/`ranzo_c018.txt` witness grepped fresh in a new shallow clone — f.136 remains a copy of the still-undeciphered Ranzo letter fr.2988 f.9, no decipherment of that system has landed anywhere searched since the 24 Sept 2026 sweep below. Desjardins *Négociations diplomatiques de la France avec la Toscane* vol.2 and Molini *Documenti di storia italiana* (both job-brief-named editions, both read in full by this worker via archive.org djvu text) carry no occurrence of the fr.2988 f.9 / fr.20506 f.136 letter or its Ranzo/Garbino code; Molini does independently attest the covername "Garbino" for a *different* family's ciphered correspondence (Girolamo Centurione, not Girolamo/Hieronimo Ranzo) -- see follow-up section below.
 
 # decode-4450-bnf-fr20506-1525
@@ -754,3 +755,12 @@ Read so far: 0% (no token read; no key)
 - [x] image-check: Gallica native images of f.136r-v and fr.2988 f.9 on disk (D2); D2 transcription done from them
 - [n/a] retry: no earlier step failed for an access reason
 Verdict: parked: every gap has an outside blocker
+
+
+## Found solved elsewhere (22 Oct 2026, LANE BNF-FOCUS, account 2)
+
+dbourdeau/cyphersolver `targets/ranzo1528` (status "in progress (read in part 18 Oct 2026)"): row "fr20506 | 2 (copy) | BnF fr. 20506 ff.
+136-138 (DECODE R4450), parallel copy of letter 2; added 18 Oct 2026, counts are letter 2's | 1,781 | 1,703 of 1,746". Key
+recovered ciphertext-only by George Lasry (6 Oct, contributed 14 Oct 2026) and independently by Paolo Rosson (6 Oct). See also
+ciphers/fr2988-ranzo-1520s (found-solved 21 Oct). Snapshot (unmodified): `sources/cyphersolver/2026-10-22-ranzo1528/NOTES.md` (their HEAD aa2e11dc0).
+Credit: George Lasry, Norbert Biermann, Paolo Rosson, D. Bourdeau.

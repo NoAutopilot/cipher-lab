@@ -2099,3 +2099,16 @@ premise test stay as logged; the While-waiting step "Cipher-3 f.179" is retired 
 status stays `partial` for Cipher-1, which their `targets/matignon1586` still lists as in progress. Our screens of 13-18 Oct
 grepped their tree for fr.3982/fr.3985 only and missed this 7 Oct read; the lane now crosses every BNF-VALUE.tsv shelfmark
 and folio against their changed targets (lesson in BNF-VALUE.md wave 40).
+
+
+## Cipher-1 and Cipher-2 contributions elsewhere (22 Oct 2026, LANE BNF-FOCUS, account 2)
+
+- Cipher-1 (this folder's live work): dbourdeau/cyphersolver `targets/matignon1586` merged Michael Brackx's issues #64, #68-#71 (21 Oct 2026) and
+  re-measured "39% of the target's cipher tokens read as sense (5,480 of ~14,082; 42% of the 12,994 transcribed; 32% after a
+  scrambled-key control)". Status there "in progress, read in part". Any next step here reads their key_contrib.json and the
+  control gap (39% vs 32%) first; values that agree with ours are corroboration, values that differ are rule-4 data conflicts.
+- Cipher-2 (fr.15572 ff.218-219, fr.15573 ff.120, 385; outside this folder's leaves): dbourdeau/cyphersolver `targets/mayenne1586c2`, "read in
+  part, contributed: 86.1% of 5,293 cipher tokens fall in runs of period French", AI transcription with no human sign check.
+- Cipher-3 gains fr.15573 ff.379-381 (Brett Burford, issue #44) in their matignon1586c3.
+Snapshots: `sources/cyphersolver/2026-10-22-matignon1586/`, `-mayenne1586c2/`. Status here stays `partial` (Cipher-1 below 50%
+there too). Credit: Michael Brackx, Brett Burford, Harumi-Matsuba (issues #44, #46, #49, #51, #64, #68-#71); D. Bourdeau.

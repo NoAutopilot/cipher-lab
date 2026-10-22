@@ -403,3 +403,18 @@ each hit gave:
 Snapshots: sources/cyphersolver/2026-10-21-{ranzo1528,it1583,breves1610,sega1593,desportes1593}/. BNF-VALUE.tsv refreshed
 (4 rows). fr.3982 f.25 and fr.3985 f.89: no hit. Credit as in each folder: G. Lasry, N. Biermann, P. Rosson, B. Dudout,
 S. Tomokiyo, C. Desenclos, D. Bourdeau.
+
+## Wave 42 (22 Oct 2026, 06:1x UTC by date -u): Bourdeau's 21 Oct merges (contributors' issues)
+
+Bourdeau HEAD fa5374ed3 -> aa2e11dc0 (issues #44-#71 merged 21 Oct: Brackx, Burford, Harumi-Matsuba; PRs #61, #66). Full
+cross plus a read of every hit's status line:
+- **esp318-sicilia-1503 -> found-solved (in part)**: Michael Brackx recovered no.94's alphabet ciphertext-only and read part of
+  its code (issue #62; about 90 code groups open there).
+- **baluze103-letellier-marca-1644 -> found-solved**: Harumi-Matsuba's reading of f.50 with Tomokiyo's Le Tellier-Marca table
+  (issue #54; 600/619 units valued; AI transcription, not yet checked by a person there).
+- **decode-4450-bnf-fr20506-1525 -> found-solved**: fr.20506 ff.136-138 is a copy of Ranzo's letter 2, 1,703 of 1,746 tokens
+  with Lasry's key (ranzo1528). status.json has a card for it: the orchestrator's change.
+- matignon-mayenne-1586 (partial): note of Brackx's Cipher-1 contributions (39% as sense vs 32% scrambled-key control) and the
+  Cipher-2 page (other leaves); fr3789: Lasry's CTTS key added there (PR #61); decode-2754-bnf-baluze156-1636: its fr.4134
+  Sabran sibling-key lead now has a contributed partial reading (issue #56) -- a key route, not an item match.
+Snapshots: sources/cyphersolver/2026-10-22-*. fr.3982 f.25 and fr.3985 f.89: no hit. ASKS 163/169 unanswered.

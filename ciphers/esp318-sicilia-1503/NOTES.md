@@ -1,4 +1,5 @@
-open
+found-solved
+Found solved in part 22 Oct 2026 (LANE BNF-FOCUS re-screen): Michael Brackx recovered no.94's alphabet ciphertext-only and read part of its code (dbourdeau/cyphersolver issue #62, 21 Oct 2026; entry esp318no94, about 90 code groups open there); section "Found solved elsewhere" at the end. Was `open`.
 Bergenroth, *Calendar of Letters, Despatches, and State Papers ... Simancas*, vol. I (1862, 1485-1509, archive.org `dli.ministry.01111`) and its *Supplement to Volumes I and II* (1868, archive.org `dli.ministry.03718`) read in full text (both volumes' `_djvu.txt` fetched to disk and grepped whole, not sampled) for "Messina"/"Mesina", "Sicily", "viceroy", and "1503": no calendar entry for this letter or for any 27 April 1503 dispatch from Sicily in either volume (both volumes calendar England-Spain diplomatic correspondence, chiefly the Puebla/Estrada embassy and the Katharine/Juana marriage papers, not the Sicilian viceroyalty's internal correspondence, so the absence is unsurprising but is a real negative on the two volumes actually searched).
 
 # BnF Espagnol 318, item 94: the viceroy of Sicily to Ferdinand, Messina, 27 April 1503
@@ -465,3 +466,12 @@ Effect: none on any committed result. Every sheet label used in `ciphertext.tsv`
 r6 s2 s3 t2 tt1 u3) is within the corrected counts; a value depends only on the row, and `gran_cifra_test.py`'s control
 permutes row->letter, not slots. `gran_cifra_test.py --check` OK and `code_overlap.py --check` OK after the change.
 For the sorter (ASKS 104): the alphabet to label against is 90 shapes, not 134. Requests: none.
+
+
+## Found solved elsewhere (22 Oct 2026, LANE BNF-FOCUS, account 2)
+
+dbourdeau/cyphersolver `targets/esp318no94` (split 21 Oct 2026): "the viceroy of Sicily to Ferdinand, Messina, 27 April 1503 -- alphabet
+recovered ciphertext-only and code partly read by Michael Brackx" (issue #62, worked with Claude Opus 5.5); status there "in
+progress (contributed reading, about 90 code groups open; the decrypt needs a line-by-line check against the scans)". Brackx also
+showed no.93 is in a different key. Any work here starts from his alphabet and reading (premise check). Snapshot (unmodified): `sources/cyphersolver/2026-10-22-esp318no94/NOTES.md` (their HEAD aa2e11dc0).
+Credit: Michael Brackx; D. Bourdeau; G. Lasry (the one-key split).

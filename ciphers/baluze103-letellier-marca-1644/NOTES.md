@@ -1,3 +1,5 @@
+found-solved
+Found solved 22 Oct 2026 (LANE BNF-FOCUS re-screen): Harumi-Matsuba read f.50 with Tomokiyo's Le Tellier-Marca table (dbourdeau/cyphersolver issue #54, 20 Oct 2026; 600 of 619 cipher units carry a key value in their reading, AI transcription, no human sign check yet); section "Found solved elsewhere" at the end. Was `partial` (line 3 below).
 # BnF Baluze 103, f.50 — Michel Le Tellier (Secretary of War) to Pierre de Marca, governor of Catalonia, April 1644
 
 Status: partial
@@ -1018,3 +1020,14 @@ Read so far: unmeasured as a reading on f.50 -- 451/630 draft tokens H (conditio
 - [x] image-check: machine re-read retired for the confusable pairs (R8-BAL103, R8-BAL103B); the owner's sign sorter rebuilt with the 9 tiles in focus and preflight-PASSed (R10-BAL103F, 6 Oct 2026), waiting on republication and the owner's pass
 - [x] retry: fr17 test of 9 = s on f.50 against position and value nulls (R10-BAL103E, 6 Oct 2026): gate FAIL, D -0.042, no change
 Verdict: parked: both gaps wait on the owner's pass over the republished f.50 sorter (account-3 orchestrator republishes; ROOM flag R10-BAL103F); f.230 (DECODE R2746) for an i-valued 9 is optional while waiting, ~$5, unlikely to move it (no i-aligned 9 on three siblings)
+
+
+## Found solved elsewhere (22 Oct 2026, LANE BNF-FOCUS, account 2)
+
+dbourdeau/cyphersolver `targets/letellier1644` (merged 21 Oct 2026): "Outcome: read with known key, read in part, contributed. Harumi-Matsuba
+applied Satoshi Tomokiyo's table of the Le Tellier-Marca Cipher (1644) ... with additions checked on the sister letter f. 230r and
+its period decipherment f. 232r, and sent a connected reading of the whole letter (issue #54, 20 Oct 2026; repository
+https://github.com/Harumi-Matsuba/letellier1644-public, data CC BY 4.0, code MIT)." Bourdeau's measure: 600 of 619 units (96.9%)
+valued; their f.171r calibration 91.3% of signs right; no human check yet. Our own key.tsv and decode here stay as logged; any
+comparison of the two readings is a rule-4 data-conflict exercise, not a priority claim. Snapshot (unmodified): `sources/cyphersolver/2026-10-22-letellier1644/NOTES.md` (their HEAD aa2e11dc0).
+Credit: Harumi-Matsuba; S. Tomokiyo (key table); D. Bourdeau.
