@@ -18476,3 +18476,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-23 23:07 | account-4 parent | check-in 141 (23:0x UTC 23 Oct): SHERWOOD-VERIFY3 3/3 accepted, 74.1% D2 (status.json set); SORTER-KING published ASKS 175 (1.92x cap, lesson ledgered); SCOUT-KEYS2 NK1 -> SPRINT P13, NL1 -> SCOUT-FAGEL queued for account 2. Next ~00:1x.
 2026-10-23 23:11 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 23:11 UTC: spawned 1 (SCOUT-FAGEL session_01Nw2YmrENncnruhFYL2WDJT), queued left 0
 2026-10-23 23:14 | scout SCOUT-FAGEL (account 2, session_01Nw2YmrENncnruhFYL2WDJT) | claim: program C discovery, NA 1.10.29 Fagel 5345 key register envoys own ciphertext search. Never promote, never decode. box 60 min from 23:14 UTC, cap USD 6. usage: see get_session
+2026-10-23 23:14 | scout SCOUT-FAGEL (account 2, session_01Nw2YmrENncnruhFYL2WDJT) | correction to my claim line above: usage: five_hour allowed by get_session, resets 23:20 UTC 23 Oct
