@@ -48,3 +48,18 @@ letter values, no decode, no machine guess on the page; `tools/sorter_preflight.
 a test write round-trips with ArtifactData and delete your test doc, then write the ASKS.md row (about 5 minutes; never blocking; link;
 "press Save at the end") and register the page in tools/data/live_sorters.tsv with the template version. Report: link, tile count,
 preflight output, five lines.
+
+## JOB SCOUT-FAGEL (account 2; Sonnet 5; cap USD 6; box 60 minutes; hosts: de-crypt.org listing cache (tools/decode_list.py, login-free), www.nationaalarchief.nl + service.archief.nl (item metadata, scans availability, <=40 requests, >=1.5 s apart), Huygens retroboeken/WVO, archive.org full text, web search; no Gallica; Price: vision calls: 0 x USD 0 = 0)
+
+Program C, the SCOUT-KEYS2 lead NL1 run as its own pass. NA 1.10.29 Familie Fagel inv.nr. 5345 holds about 60 named Dutch diplomatic
+cipher keys 1680-1758, each catalogued on DECODE (Bruyninx, Hop, Buys, Keppel, Burmania, Mauricius, Rumpf, Calmette, Larey, Bentinck,
+van Rhoon, Verelst, van Berkenrode, Gebler, Swart, Cornabe ...). Only one (R2824, "Prussia 1746") was ever tested here, against a
+different target (hellen-frederick-1752, rejected). Nobody has looked for these envoys' OWN enciphered letters. For each key: the envoy,
+post and years from DECODE's record; then the envoy's letters in NA (toegang 1.01.02 Staten-Generaal liassen, 1.01.50 Heinsius, 1.10.29
+Fagel, the envoy's own archive where one exists, e.g. Bruyninx 1.02.05, Bentinck van Rhoon 3.02.32) via the NA item pages
+(drupal-settings-json -> scans availability, CLAUDE.md host table) and the Huygens editions (Heinsius Briefwisseling, retroboeken) for
+a printed or in-archive decipherment. A candidate counts only with (a) digitised scans and (b) no surviving decipherment and no printed
+plaintext found (grep the Heinsius volumes' djvu text for the letter's date and place). Score with tools/scout_rubric.py; run
+tools/prior_work.py on each you would promote. Output: QUEUE.md "## Fagel key register: envoys' own ciphertext (23 Oct 2026,
+SCOUT-FAGEL)" table (key id, envoy, post/years, letters located, scans yes/no, decipherment/print found or not, est. signs, score) and
+harvest/SCOUT-FAGEL-2026-10-23.tsv. Never promote; never decode. Report: keys checked, candidates meeting both filters, top three, five lines.

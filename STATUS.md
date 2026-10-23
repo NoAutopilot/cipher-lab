@@ -241,6 +241,14 @@ or ASKS row until the owner's Vivonne re-sort is in, to keep one ask open at a t
 and 4 are idle by choice. Day's net: one N0 key application (Monluc f.138, D2), one D1 lead (the 28 Apr 1573 king letter, not counted),
 Sherwood 73.6% pending a verifier with the ILL, sorter save bug fixed on 5 pages.
 
+Check-in 141 (23 Oct 2026, 23:0x UTC; restart after 21-23 Oct idle, owner "keep jamming" 21:5x). SHERWOOD-VERIFY3 (USD 3.48): all three
+post-audit S gains accepted on the verifier's own image reads; Sherwood is 74.1% H/C/S, D2 (13 more S needed for D3), status.json
+updated; a new print fact for the N3 revisit (Brymner 1888 B.178 p.107 prints "reduction of the new State"). SORTER-KING (USD 7.69, 1.92x
+cap -- a Sonnet page build that read the 800 KB template; priced at 8 from now): blind look-alike sorter for Monluc's king letter
+published, ASKS 175. SCOUT-KEYS2 (account 2): one scored candidate (NK1 Longleat, Coventry keys + cipher instructions 1665, no digitised
+route -> SPRINT P13) and three leads; NL1 (the ~60 Fagel keys, envoys' own letters never searched) is the best new-content route open on
+a host that works, so SCOUT-FAGEL is queued for account 2. Vivonne re-sort still not landed.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
