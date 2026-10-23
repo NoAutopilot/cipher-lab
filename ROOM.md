@@ -18435,3 +18435,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-23 16:21 | standby (owner account) | alive; holder account 4, last line 13:28 UTC 23 Oct (check-in 138, next ~17:3x announced); newest orchestrator line 16:02 UTC (owner-account check-in 314), 19 min old, not a HANDOFF; no takeover. usage: five_hour allowed by get_session, resets 18:20 UTC 23 Oct
 2026-10-23 16:40 | key probe (tools/room.py --start, account owner) | flag: undocumented key present on account owner: BUN_TLS_EXTRA_DISTRUSTED_KEYS (KEYS.md row added; document before use)
 2026-10-23 16:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 16:39 UTC 23 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 18:20 UTC 23 Oct
+2026-10-23 16:39 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 16:34 UTC 23 Oct: spawned 0 -- no queued account-4 rows
