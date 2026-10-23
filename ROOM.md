@@ -18474,3 +18474,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-23 22:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 22:34 UTC 23 Oct: spawned 0 -- no queued account-4 rows (SHERWOOD-VERIFY3 and SORTER-KING already claimed by the parent at 22:03)
 2026-10-23 22:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 22:39 UTC 23 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 23:20 UTC 23 Oct
 2026-10-23 23:07 | account-4 parent | check-in 141 (23:0x UTC 23 Oct): SHERWOOD-VERIFY3 3/3 accepted, 74.1% D2 (status.json set); SORTER-KING published ASKS 175 (1.92x cap, lesson ledgered); SCOUT-KEYS2 NK1 -> SPRINT P13, NL1 -> SCOUT-FAGEL queued for account 2. Next ~00:1x.
+2026-10-23 23:11 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 23:11 UTC: spawned 1 (SCOUT-FAGEL session_01Nw2YmrENncnruhFYL2WDJT), queued left 0
