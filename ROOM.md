@@ -18419,3 +18419,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-23 12:58 | orchestrator (owner account) | check-in 311 (fired 12:57 UTC 23 Oct): quiet since 11:57 -- only dispatcher lines (account 2 12:14, account 4 12:34, account 1 12:40, all spawned 0) and my standby alive at 12:22; queue empty on every account, board same, no takeover (account 4 last 09:22, next ~13:2x). Waiting on owner: ASKS 173, 163, 169. usage: five_hour allowed by get_session, resets 13:20 UTC 23 Oct
 2026-10-23 13:20 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 13:20 UTC: spawned 0 (), queued left 0
 2026-10-23 13:28 | account-4 parent | check-in 138 (13:2x UTC 23 Oct): quiet -- sorter empty, ILL not arrived, no flags for the holder; accounts 2 and 4 idle by choice. Next ~17:3x.
+2026-10-23 13:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 13:34 UTC 23 Oct: spawned 0 -- no queued account-4 rows
