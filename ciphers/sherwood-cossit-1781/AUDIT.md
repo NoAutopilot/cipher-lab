@@ -6,6 +6,70 @@ reel H-1737 fr.15-17) is a page/column-line code into John Entick, *The New Spel
 `11280377bsb`), and reads as 216 pair rows graded H 8, C 4, S 147, M 55, I 2, agreeing with Sherwood's own p.84-85 sketch for
 messages 1 and 4.
 
+## Depth re-check (SHERWOOD-VERIFY3, 23 Oct 2026)
+
+Verifier session: session_01R2bihn7ytAXWrVap9G2Usu (account 4), 22:07-22:2x UTC by date -u. I am not a Sherwood solver and do not
+protect the solvers' conclusions. Under audit: the three S gains since SHERWOOD-VERIFY2 (SHERWOOD-REREAD digits, SHERWOOD-CELLS,
+SHERWOOD-GRID), script count **H 8, C 4, S 148, M 54, I 2 = 160/216 = 74.1%**. N3 is not reopened (brief); one new print fact below.
+
+**Rule 7.** Fresh clone of main: `python3 decode_entick.py --check` -> `reading current`, exit 0. After my one-cell correction below:
+`reading current`, exit 0 again (no token or grade moves).
+
+**The two cypher digits (my own reads from images/crops/p346_L07.jpg, cells/cipher/p345_L10_h2.jpg, zoomed, compared with the same
+writer's digits on the same line).**
+- p346_L07 **360-33**: third digit is a broad closed oval with no ascender, like the 0 of 301 on the line and unlike the narrow
+  teardrop 8s of 188 and 809. 360, moderate (368 the only alternative I see; 366 excluded, no ascender). Agrees with REREAD.
+- p345_L10 **53-35**: first digit has a straight rising top stroke and one belly with no middle cusp, unlike the two cusped 3s that
+  follow it and like the 5 of 35. 53, moderate. Agrees with REREAD.
+
+**The three Entick cells (my own line counts from the top of each column on the page images; archive.org 11280377bsb leaves 391, 196,
+84, plus 249; entries listed one by one, wraps counted).** I knew the committed words from NOTES.md before reading; the counts are mine.
+
+| cell | col 1, line W | col 2, line W | committed | margin (bigram, nats) | verdict |
+|---|---|---|---|---|---|
+| 360-33 | Tan (Talebearing 1 ... Tamper 32) | Tarry (Tank 1 ... Tarrier 32) | Tan / Tarry | 2.13 | **accept S** (rule met by 0.13) |
+| 165-13 | HA, interj. (Gyve 10, gap 11, H. 12; HA level with col 2's line 13) | **Hair** (Hag 1 ... Hailstone 11, Haily 12, Hair 13) | Ha / *Haily* | 3.19 against Hair (3.19 against Haily) | **accept S**, cell corrected |
+| 53-35 | Certainly, Certes, ad. (Censure 1; wraps at 6 and 32 counted) | Chalkcutter (Certify 1 ... Chalk v. 34) | Certainly / Chalkcutter | 7.03 | **accept S** |
+
+- **Correction made: book/entries_image.tsv 165-13 col 2 Haily -> Hair** (commented in the file). The OCR grid has a phantom line 1 at
+  y=81 on p.165 col 2, so every col-2 row there is one early; SHERWOOD-GRID's readers listed col 1 only from the grid band. The chosen
+  word Ha and its margin do not change, so reading.tsv/reading.txt are unchanged. A scan of every cited page for col-1/col-2 top-line
+  offsets over 14 px flagged only pp.165 and 218; p.218 is page skew, not a phantom line (Maim 1 ... Maize 18, Make 19 c2 on the image).
+- **Accepted: 3 of 3** by the folder's rule (image read matches, margin >= 2.0). Weight differs: Certainly (7.03) is also supported
+  outside the chooser -- Sherwood's 1783 sketch of No.4 ends "A movement there certainly is" (NOTES.md, B.178 p.84-85); Tan (2.13) sits
+  just over the line in an unread stretch ("809 Tan To Man Threepile Seventy"); Ha is an interjection before a bare number ("Sanded Ha
+  415 Make") in No.2, which Sherwood himself could not read: an S by rule, not by sense. All three digit corrections rest on readers of
+  one model family (REREAD's passes, its reconciler, and me).
+
+**Depth (rule 4a): D2 stands, "partially deciphered (about 74%)".** H/C/S 160/216 = **74.1%**, under D3's 80%; the 56 non-H/C/S tokens
+(M 54, I 2) are mostly column choices in No.1-No.3, not name or code groups, so D3's residue condition fails too. 13 more tokens would
+have to reach S with no losses. D2 check holds on the No.3 clause "Every Art Immediately After Myself Return Laid Before Judge"
+(consecutive S, none of them anchors) and on 237-10 Myself reading in three messages. Caveat for the record: No.4's "Towards The
+Reduction Of The New State" includes anchors chosen from Sherwood's sketch (towards 371-21, of 246-35, new 240-12), so it is weaker as
+a D2 clause than VERIFY2 treated it. `tools/depth_check.py --status` on the status row with depth_pct 74.1: one audit -> `unique solves
+0` (not counted); the same row with `audit_status: two audits` -> `unique solves (N3+ and D2+): 1 -- D4 0, D3 0, D2 1`, exit 0.
+
+**Phrase search (the one VERIFY/VERIFY2 lacked).** Google Books API (key, country=US): 5 queries, every call "Service temporarily
+unavailable"; one retry of 2 after 20 s, same; logged, not retried further. IA full text (be-api fts, all items): `"reduction of the
+new state"` -> 6 hits, 3 of them Brymner's *Report on Canadian Archives 1888* (`reportoncanadian1888publuoft` and two copies), calendar
+B.178 p.107: "The same [Sherwood] to Riedesel. Sends letters brought by Joseph White, Jan. Report of a large expedition for Oswego,
+but it was suspected that it was for the reduction of the new State (Vermont). Is under no apprehension here, the ice being very bad."
+`"Colonel Strong" AND Windsor AND Cossit` -> 0. **So the gist of No.4's key clause, in Sherwood's paraphrase, has been in print since
+1889**, in the same calendar the first audit read ("cypher calendared only"); the earlier search missed it because no phrase search
+of the decoded text was run. This does not print the cypher's plaintext or map it (a calendar summary of a different letter, Sherwood
+to Riedesel, relaying the decyphered news), so it fits N3's wording as it stands, but the verifier who revisits N3 when ASKS 174
+arrives should weigh it with the sketch; and it is a second, printed, non-statistical witness to No.4's sense.
+
+**Fields for the parent (do not copy until you decide; I did not edit status.json):** `depth: D2`, `depth_pct: 74.1`, grade counts
+`H 8, C 4, S 148, M 54, I 2`, `decode_status: Partially decrypted`, `depth_check: "rule-7 --check passes (fresh clone); 360-33, 165-13,
+53-35 re-read from cypher and Entick images by SHERWOOD-VERIFY3, 3/3 S accepted (165-13 c2 corrected to Hair, margin unchanged);
+No.3 clause of consecutive S tokens; Sherwood's 1783 sketch agrees on No.1 and No.4 (incl. 'certainly')"`, `text`: add "the phrase
+'reduction of the new State' is printed in Brymner 1888, calendar B.178 p.107 (Sherwood to Riedesel)". `audit_status`: the parent's
+call (this is a depth re-check of an audited reading, not a fresh novelty audit). Safe sentence unchanged except "about 74%".
+
+Requests: archive.org 5 (4 page images, 1 djvu text), be-api 2, Google Books API 7 (all 503). Vision reads: 11 image views of crops and
+pages by me, no subagents.
+
 ## Current verdict (SHERWOOD-VERIFY2, account 4, 18 Oct 2026, 11:08-11:3x UTC by date -u)
 
 Verifier session: session_017en4ezFaYaXMDoF9tb32jT; not the solver, not the first verifier. Reading audited: the re-issue

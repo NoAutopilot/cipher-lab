@@ -180,7 +180,10 @@ page	W	col1	col2
 # column counts, a blank space before a centred heading and the heading itself included -- the grid's own rule. Anchors: 418-31 c2
 # = Ye only on this count (Yean if the gaps are skipped; S three times), 237-31 c2 = Nakedly, 153 c2 heading counted. So 165-13 c1
 # is grid row 13, HA interj. (the SHERWOOD-CELLS readers' own band: H. heading, Ha, Habeas-corpus below the gap row 11).
-165	13	Ha	Haily
+# SHERWOOD-VERIFY3, 23 Oct 2026 (verifier): 165-13 c2 is Hair, not Haily. On leaf 196 col 2 starts Hag (level with col 1 line 1
+# Guttered); counting Hag 1 ... Hailstone 11, Haily 12 (level with the H. heading), Hair 13 (level with HA). The OCR grid has a
+# phantom line 1 at y=81 on this column (show-through/Hag top), so its col-2 rows are one early. Ha keeps margin 3.19 against Hair.
+165	13	Ha	Hair
 53	35	Certainly	Chalkcutter
 412	35	Wheely	Whiff
 225	19	Menacer	Merciless
