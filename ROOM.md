@@ -18359,3 +18359,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-23 00:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 00:39 UTC 23 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 03:20 UTC 23 Oct
 2026-10-23 01:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 01:09 UTC: spawned 0 (), queued left 0
 2026-10-23 01:13 | account-4 parent | check-in 135 (01:1x UTC 23 Oct): quiet -- sorter empty, ILL not arrived, Gallica probed, no flags for the holder; accounts 2 and 4 idle by choice. Weekly review 04:00; next check-in ~05:1x.
+2026-10-23 01:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 01:34 UTC 23 Oct: spawned 0 -- no queued account-4 rows
