@@ -7833,3 +7833,74 @@ further); `rfiea.fr`, `nationalarchives.gov.uk/blogs` 3 (WebFetch); `archive.org
 `tools/prior_work.py` was not run against a target slug: none of NK1/NL1-NL3 has a folder yet, the same gap the
 17 Oct SCOUT-KEYS row noted for K2/K4/K9; due diligence instead was an offline grep of the repo and both solver
 repositories' caches for every holder/name above (no hit for any of them, confirming none is already worked).
+
+## Fagel key register: envoys' own ciphertext (23 Oct 2026, SCOUT-FAGEL)
+
+Worker SCOUT-FAGEL (account 2, Sonnet 5; brief `.claude/briefs/runs/2026-10-23-acct4-research-director-44.md`,
+program C), running SCOUT-KEYS2's NL1 lead as its own pass. NA 1.10.29 Familie Fagel inv.nr. 5345 holds about 60
+named Dutch diplomatic cipher keys, 1680-1758 (full list in `sources/decode/keys-all-2026-09-28-merged.tsv`, DECODE
+rows R2792-R2852, already harvested 28 Sept 2026, not re-fetched). Only R2824 ("Prussia 1746") was ever tested, as a
+sibling-key lead for a *different* target (`ciphers/hellen-frederick-1752/`), and rejected -- the full DECODE record
+names it as Baron van Reede's key for the Dutch mission *to* Prussia, confirming the lesson applied here: several
+key labels in this register ("Prussia", "France", "Soissons") name a destination or subject, not the envoy who held
+the key, and are not search terms for a person.
+
+Method: for each named envoy, identified the real person and posting by WebSearch, then read the Nationaal
+Archief's own finding-aid XML for the matching legation toegang (`www.nationaalarchief.nl/onderzoeken/archief/
+<toegang>/download/xml`) to locate his correspondence by year, and checked digitisation with the item page's
+embedded `drupal-settings-json` -> `viewer.response.availability`/`scans` (CLAUDE.md host table method), one
+request at a time, >=1.5s apart. Checked eight named envoys (five with a located correspondence series: Bruyninx,
+Burmania, Mauricius -- all one Vienna fonds -- Rumpf, Hop; two partial leads needing more work: Verelst, Til; one
+checked-and-dropped name collision: van Boetzelaer). Also found two more period cipher KEYS on file at NA (not
+ciphertext) and one correction to SCOUT-KEYS2's own NL1 note. Full rows: `harvest/SCOUT-FAGEL-2026-10-23.tsv`.
+
+**Headline finding: 0 of the keys checked this pass meet both filters.** Every Nationaal Archief fonds sampled
+(NA 1.02.05 Vienna, 4 items; NA 1.10.97 Hop family, 1 item; NA 1.02.07 Sweden/Prussia/Poland/Saxony, 1 item) answers
+`"availability":"PHYSICAL","scans":[]` -- none of this register's envoys has a digitised route from this job's
+hosts. Two of the three Vienna-fonds envoys (Burmania, Mauricius) also carry a partial filter-b risk: the same fonds
+holds a later secretary's (Dorte, 1741-1742) draft period decipherments that overlap their own key years.
+
+| Row | Key id | Envoy | Post/years | Letters located | Scans | Decipherment/print found | Score |
+|---|---|---|---|---|---|---|---|
+| FG1 | R2802, "cipher_Bruyninx_1721" | Jacob Jan Hamel Bruyninx | gezant Wenen, 1700-1738 | NA 1.02.05, inv.35 "1721. Hamel Bruynincx en Schen(c)kenberg. Vol. XXXIII." (exact year match) | no (PHYSICAL) | not for 1721 itself; same fonds's inv.120 (Dorte's 1741-42 decipherment drafts) and inv.121 (Bruyninx's own 1739 key deposit) are nearby | 40 A |
+| FG2 | R2814, "cipher_Burmania_1738" | Baron van Burmania | gezant Wenen, succeeding Bruyninx, 1738-1765ish | same fonds, NA 1.02.05 | no | PARTIAL RISK: Dorte (his own secretary from 1750) left klad-ontcijferingen for 1741-42 | 40 A |
+| FG3 | R2817, "cipher_Mauricius_1742" | J.J. Mauricius (later governor of Suriname) | gezant Wenen, c.1742 | same fonds, NA 1.02.05 | no | PARTIAL RISK: Dorte's 1741-42 drafts directly overlap this key's own year | 40 A |
+| FG4 | R2818, "cipher_van_Rumpf_1743" | Carel (van) Rumpf | formerly gezant Polen/Saksen; buitengewoon gezant Zweden 1744 mei - 1749 jan | NA 1.02.07, subseries III "CAREL (VAN) RUMPF", inv.89+ | no (PHYSICAL) | not found | 43 A |
+| FG5 | R2803, "cipher_Hop_1723" | Cornelis Hop (1685-1762) | gezant Frankrijk, received at Louis XV's court 24 Jul 1719, into the 1720s | NA 1.10.97 Hop family archive, "Gezantschap naar Frankrijk, 1718-1725", inv.64+ | no (PHYSICAL) | not found | 42 A |
+
+**Leads, not candidates:**
+- **FG6 -- Dirk Hubert Verelst** (keys R2830/R2841, Turin 1750 and Berlin 1758): a real double match (a DBNL
+  biographical dictionary places him at Turin 1750, Naples 1751, Berlin from 1758), but no dedicated Turin/Sardinia
+  legation toegang was found at NA (1.02.20 is Turkije, not Turijn), and the Berlin/Prussia material likely sits
+  inside NA 1.02.07's own Prussia subseries, not yet located within this pass's reading of that fonds's XML.
+- **FG7 -- J.R. van Til** (a key naming "Til 1751"): NA 1.10.110 "Overige gezanten" has "J.R. van Til te Lissabon,
+  1736-1737" (inv.33), but the date precedes the key by 15 years and the item sits amid entries marked "Niet
+  raadpleegbaar" / physloc "Ontbreekt", which reads as a correspondent-index entry, not a confirmed letter file.
+- **Checked and dropped**: a "van Boetzelaer" hit in NA 1.10.110 is Gideon van Boetzelaer van Asperen, heer Van
+  Langerak, 1569-1634 -- three generations before the register's own 1744 "cipher_van_Boetzelaer" key, the same
+  name-collision shape rule 3's Salviati headline warns against (match the person, not only the surname).
+- **Key-only material found, not ciphertext** (same shape as SCOUT-KEYS2's NL3): NA 1.10.110 has its own "Cijfers"
+  subseries ("Cijfer voor het gezantschap in de Spaanse Nederlanden"; "'Gemeen cijfer'"; "Van Burmania, Wenen:
+  'cijffer met de ministers te Stokholm, Weenen en Petersburg'"), and NA 1.02.05 inv.121 is Bruyninx's own cipher
+  key, deposited at his 1739 retirement -- both duplicate or supplement the Fagel 5345 register itself, not a
+  ciphertext target.
+- **Correction to SCOUT-KEYS2's NL1 lead (this brief, 23 Oct 2026)**: NA toegang 3.02.32, named there as "van
+  Rhoon/Bentinck's" archive, is NOT the 1704-1774 envoy Willem Bentinck van Rhoon's papers -- it holds a different,
+  later W.G.F. Bentinck van Rhoon's papers, seized in 1795, patriottentijd material (1786-89). The envoy's 1753
+  Brussels report sits in the Staten-Generaal archive (1.01.02, inv.8775, per a DBNL bibliography citation); his
+  family papers are mainly at the Gelders Archief, Arnhem, outside this job's hosts.
+- Both solver repositories (shallow clones, grepped offline for bruynincx/bruyninx/hamel/rumpf/verelst/hop/keppel/
+  burmania/mauricius/calmette) show no prior attempt on any of these envoys' own correspondence: the hits found are
+  either the Fagel 5345 catalogue row itself, name collisions in unrelated eras (a doubtful 1535 "Mauricius?"
+  reading in `kaa4591`), or incidental mentions in reference text (a 1906 DBNL article on the French ambassador
+  D'Affry, quoted in `dbourdeau/cyphersolver/targets/affry1757/bussemaker.txt`, names several contemporaries by
+  these same common surnames).
+
+Never promoted, never decoded. `tools/prior_work.py` was not run against a target slug (none of FG1-FG7 has a
+folder yet, the same gap SCOUT-KEYS2 and the 17 Oct SCOUT-KEYS row both noted); due diligence instead was the
+solver-repository grep above. `tools/dup_check.py` does not apply (no target folder opened this pass).
+
+Requests: `www.nationaalarchief.nl` 11 (finding-aid XML downloads and item pages, >=1.5s apart); WebSearch 9;
+one shallow grep each of `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers` (kept in `/tmp`, not
+committed). No Gallica. `archive.org` and Huygens retroboeken were not used this pass -- the finding-aid reads and
+digitisation checks consumed the budget before a full-text decipherment search was needed for any FG row.
