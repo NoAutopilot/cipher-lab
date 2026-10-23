@@ -7763,3 +7763,73 @@ promoted, never solved. Requests: `www.loc.gov` ~10 (2 timed out, retried once e
 `heritage.canadiana.ca` 0 (no query run -- the brief's LAC lead resolved to a non-digitised microfilm before any
 canadiana query was needed), `quod.lib.umich.edu`/`clements.umich.edu` 2 (both 403, one attempt each, not
 retried), `dlc.library.columbia.edu` ~14 (item pages, dc_xml metadata, two IIIF manifests), WebSearch 9.
+
+## Key-beside-cipher candidates, non-BnF (23 Oct 2026, SCOUT-KEYS2)
+
+Worker SCOUT-KEYS2 (account 2, Sonnet 5; brief `.claude/briefs/runs/2026-10-23-acct4-research-director-44.md`,
+program C). Same shape as 17 Oct's SCOUT-KEYS (QUEUE.md "Key-beside-cipher candidates", 17 Oct 2026 above), run a
+second time on hosts that are not the BnF, with the stricter filter the brief named: a candidate counts only if (a)
+a key, decipherment, gloss, clear copy or codebook is on file or in reach, AND (b) the cipher item itself has no
+surviving period decipherment and no printed plaintext found. Hosts used: TNA Discovery API, Nationaal Archief /
+service.archief.nl, archive.org, Europeana and DPLA (keys), loc.gov JSON, Huygens retroboeken (checked against
+existing coverage only, not re-swept), WebSearch/WebFetch, and the two solver repositories' own caches (shallow
+clones, grepped offline, not pushed). Never promoted, never decoded. Full rows: `harvest/SCOUT-KEYS2-2026-10-23.tsv`.
+
+| Row | Holder, item | Key evidence (quoted) | Undeciphered partner | Copy-free | Score | First cheap test |
+|---|---|---|---|---|---|---|
+| NK1 | Longleat House, CO/VOL. LXXIX (keys) + CO/VOL. I (the item itself) | "Keys to political ciphers of Henry Coventry, as Envoy and Ambassador to Sweden and Secretary of State, 1664-1679 ... a few ciphered letters being added"; the catalogue cross-references the key directly for the item: "22 Dec., 1665. In cipher (for key see CO/VOL. LXXIX. f.7, and cf. LXVII. f.214). f.24." | Charles II's instructions to Coventry as envoy to Sweden, 22 Dec 1665 (CO/VOL. I f.24); no decipherment stated anywhere in either catalogue entry | no (TNA Discovery: "information for accessing this record is currently unavailable online"; microfilmed, British Manuscripts Project reels 1-65, LC/BL/IHR) | 41 A | HMC Fourth Report (1874) App. p.227 on archive.org/HathiTrust first (may already print it in clear), then a microfilm page request if not |
+
+**Leads, not candidates (no confirmed undeciphered partner located this pass, or host unreachable):**
+- **NL1 -- NA 1.10.29 Familie Fagel inv.nr. 5345**, ~60 named Dutch diplomatic cipher keys 1680-1758 catalogued
+  individually on DECODE (Bruyninx, Hop, Buys, Keppel, Burmania, Mauricius, van Rumpf, Calmette, Larey, Bentinck,
+  van Rhoon, Verelst, van Berkenrode, Gebler, Swart, Cornabe, etc.). Already surveyed once as a sibling-key source
+  for a *different* target (`ciphers/hellen-frederick-1752/NOTES.md`, which tested and rejected one of these keys,
+  R2824/"Prussia 1746", as not matching Hellen's own system) -- never searched for any of these ~59 other named
+  envoys' *own* matching ciphertext. Two quick WebSearch tries (Bruyninx at Vienna; Bentinck van Rhoon, 1749) found
+  no concrete undeciphered item within this pass's budget; worth a dedicated pass on the envoys with large personal
+  archives (Bruyninx, toegang 1.02.05; van Rhoon/Bentinck, toegang 3.02.32).
+- **NL2 -- Hungarian National Archives, fonds G 15, Caps. C. Fasc. 43-44**: "more than eighty different cipher keys
+  have survived from his [Rakoczi's] chancellery" (rfiea.fr, "Early modern ciphers as sources of history"), plus
+  Fasc. 39's "dozens of the survived one hundred letters sent to him from Dansk" beginning with the same enciphered
+  words. Not reachable from this job's hosts (Europeana has no MNL images under this fonds); flagged for a lane with
+  Hungarian-archive access.
+- **NL3 -- TNA PRO 31/17/2/2**, "Keys to ciphers used by Venetian ambassadors, 1554-1566", bought from a dealer
+  (Luigi Pasini) in 1875 with no accompanying ciphertext. The matching despatches would be at the Archivio di Stato
+  di Venezia (not reachable here) or possibly already summarised in the printed Calendar of State Papers Venice --
+  check that calendar before treating as a target.
+
+**Checked and dropped (already covered or disqualified by the stricter filter):**
+- **Cornwallis Papers, TNA PRO 30/11** (Rawdon/Balfour/Craig/Money "in cipher and undeciphered", 1780-81): already
+  a target, `ciphers/cornwallis-pro3011-1780/` (status `blocked`) -- Tomokiyo and Saberton (2019) already print the
+  cipher tables and two of the items' plaintexts, so most of this cluster fails criterion (b) outright; the rest is
+  blocked on an unopened library copy of Saberton's *Cornwallis Papers* (2010), not a fresh scout lead. PRO
+  30/11/68/28-31 + 32-35 ("duplicates in cipher ... the same that Cornwallis used in corresponding with
+  [Rawdon]") is itself known-plaintext (a clear duplicate exists), the Monluc-f.138 shape -- useful only as a key
+  source, not a target, and the key it would give is the same Common cipher Tomokiyo/Saberton already print.
+- **Atterbury Plot, TNA SP 35/35-39 and SP 35/71-72** (Layer conspiracy ciphers, 1719-1725): already covered,
+  `ciphers/sp35-townshend-key-1719/` and `ciphers/sp35-intercepts-1722/` (found-solved -- keys and decrypts printed
+  in the 1723 Report and the 1803 Committees Report App. H). New hits this pass (SP 35/36/4,7,31; SP 35/39/21,40)
+  sit inside this same already-catalogued unit.
+- **Jacobite Culloden-era ciphers, SP 36** (e.g. SP 36/95/1/105, "the key of ciphers taken after the Battle of
+  Culloden"): SP 36 is already worked (`ciphers/sp36-ball-1745/`); not pursued further to avoid duplicating that
+  lane.
+- **Dutch retroboeken editions (Heinsius, De Witt, Oldenbarnevelt, Willem III/Bentinck, Staten-Generaal resolutions)**:
+  checked against the repo rather than re-swept -- two rounds already ran every productive search term here
+  (`sources/huygens/NOTES.md`) and every candidate found (HU1-HU11) already has its own folder
+  (`heinsius-dopff-1702`, `heinsius-hermitage-1704`, `aitzema-sg6025-1618`, `berck-sg6897-1623`,
+  `vanbeuningen-dewitt-1657`, `vaudemont-willemiii-1699`, `breda-statengeneraal-1624-25`,
+  `heinsius-vanhaersolte-1703`, `rumpf-vandebie-heinsius-1716-19`, etc.).
+- **Warwickshire CRO CR 2017/C48/83** (Duc de Candale, four pages "in a large clumsy cipher"): the catalogue says
+  "(deciphered in French)" in the same breath -- fails criterion (b), not a target.
+- **Golden Dawn "Cipher Manuscript" (Museum of Freemasonry, GD 1/2/4a-b etc.)**: 19th-century occult cipher, already
+  deciphered by its own era (the catalogue cross-references "Mode of deciphering the Woodford MSS"); well outside
+  the diplomatic-correspondence shape this search targets.
+
+Requests: `discovery.nationalarchives.gov.uk` ~22 (>=1.6s apart, one at a time); `api.europeana.eu` 4 (keyed);
+`api.dp.la` 3 (keyed); `www.nationaalarchief.nl` 1 (JS-rendered shell, no server-side search result, not pursued
+further); `rfiea.fr`, `nationalarchives.gov.uk/blogs` 3 (WebFetch); `archive.org/advancedsearch.php` 3; WebSearch 5
+(standard mode); two shallow greps of `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers` (kept in
+`/tmp`, not committed). `www.loc.gov` JSON search tried once (too noisy for this shape, not pursued further).
+`tools/prior_work.py` was not run against a target slug: none of NK1/NL1-NL3 has a folder yet, the same gap the
+17 Oct SCOUT-KEYS row noted for K2/K4/K9; due diligence instead was an offline grep of the repo and both solver
+repositories' caches for every holder/name above (no hit for any of them, confirming none is already worked).
