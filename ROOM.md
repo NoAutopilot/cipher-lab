@@ -18401,3 +18401,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-23 09:13 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 09:13 UTC: spawned 0 (), queued left 0
 2026-10-23 09:22 | account-4 parent | check-in 137 (09:2x UTC 23 Oct): quiet -- sorter empty, ILL not arrived; BNF-FOCUS 06:18 no new item match (decode-2754 note agrees with our 24 Sept negative, no card change); accounts 2 and 4 idle by choice. Next ~13:2x.
 2026-10-23 09:38 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 09:35 UTC 23 Oct: spawned 0 -- no queued account-4 rows
+2026-10-23 09:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 09:39 UTC 23 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 13:20 UTC 23 Oct
