@@ -2420,7 +2420,32 @@ Read so far: f.86 150 tokens C 83/M 64/U 3; f.138r-v C 780/2133 (AUDIT.md); f.13
 - [x] clear-pages: no clear text for f.133 located (f.132's clear opening only)
 - [x] known-keys: key.tsv (Tomokiyo Cipher 1) applied to L01-L25 after the fold; beats shuffled keys, band under the clean control range
 - [x] print: carried from MONL-KING: nothing for this letter
-- [ ] key-rebuild: the owner's sign sort on the three look-alike pairs (tools/sign_sorter.py), then one re-score
+- [x] key-rebuild: owner's sign sort built and published (SORTER-KING, 23 Oct 2026, below); awaiting the owner's sort, then one re-score
 - [x] image-check: look-alike window re-read of all 124 split tiles (this pass), 29 relabels, 22 open in king4/focus.tsv
 - [x] retry: none needed
 Verdict: keep going: 7 internal gaps; cheapest next: f.166 second pass, ~$1; most informative: the sign-sorter page for the owner on f.133's look-alike pairs, ~$2
+
+## SORTER-KING (23 Oct 2026)
+Built and published the key-rebuild sorter MONL-KING4's escalation named (line 2410 above). king4/focus.tsv has 22 disputed
+positions, not 21 as the job brief said; 17 of them (12 distinct unordered pairs, 20 distinct codes) are code-vs-code splits,
+the other 5 are clear words (L01.1 molino/molina, L09.10 8ep:bre/8cipbre, L15.8 Mari/Marie) or off-sheet marks (L05.10,
+L05.39) with no keysheet cell -- not tiled. The brief's three named pairs (K39|K19, K61|K38, K12|K04) do not exactly match
+the file: K61 appears nowhere in focus.tsv; the closest are K07|K38 (L14.32) and K38|K39 (L23.30). Logged, not silently
+"corrected" -- all 12 pairs are built, the brief's naming is simply imprecise.
+Blocker found: king4/strips/ (the per-occurrence page crops build_tiles.py's own docstring calls for) is untracked and does
+not exist in a fresh clone; regenerating it needs openapi.bnf.fr (regen_monlking2.sh/regen_monlking3.sh), which this job's
+hosts excluded and which has answered 403 since 20 Oct. But the "image-check" escalation step (line 2424) is already marked
+done (the 124-tile look-alike window re-read) -- the remaining step is "key-rebuild", which is about the KEY TABLE's own
+shapes, not fresh occurrence photos. So the sorter tiles are cut from images/keysheet_monluc1_ids.png (king4/build_keysort.py,
+same 136x176/8-column grid king4/build_tiles.py already uses), one cell per distinct code, each starting in its own
+single-tile pile (blind: pile name = code id, never a letter value or decode guess). No --focus/question-tile mechanism
+(the disputed pairs and their positions are static text in the lede instead): every code already has its own pile, so there
+is no larger unsorted set to file a question tile into, and R13/R14/R15 (tools/data/sorter_owner_requirements.tsv) read
+n/a by design rather than warn/fail. preflight --step1 --owner-page: PASS (template, answerable, R12/R16, right line,
+contact sheet eyed, colour all PASS; gestures/pan not run this session -- generic to the template, not this page's content).
+Page: https://claude.ai/artifact/SJMCg5wDHE21TQ57pn7SxA (20 tiles, capabilities {"db": {}}; a test write to collection
+`moves` round-tripped via ArtifactData get, then deleted). ASKS.md row 175; tools/data/live_sorters.tsv row
+`monluc-f133-keysort` (template 2026-10-20.1). This settles whether the key's own drawn shapes are distinct; it does NOT
+settle which code actually occurs at each of the 17 positions on f.133 (that still needs real occurrence tiles once Gallica
+answers -- next: regen_monlking2.sh + regen_monlking3.sh + king4/build_tiles.py, then a proper --signs/--labels build with
+king4/focus.tsv as --focus, ~$3).
