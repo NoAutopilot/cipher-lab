@@ -418,3 +418,9 @@ cross plus a read of every hit's status line:
   Cipher-2 page (other leaves); fr3789: Lasry's CTTS key added there (PR #61); decode-2754-bnf-baluze156-1636: its fr.4134
   Sabran sibling-key lead now has a contributed partial reading (issue #56) -- a key route, not an item match.
 Snapshots: sources/cyphersolver/2026-10-22-*. fr.3982 f.25 and fr.3985 f.89: no hit. ASKS 163/169 unanswered.
+
+## Wave 43 (23 Oct 2026, 06:1x UTC by date -u)
+Bourdeau HEAD aa2e11dc0 -> 9ea1142f0 (a "full texts" pass over 343 pages; only six NOTES.md changed status lines); Aymeloglu
+4d0ab23 -> bde4ab7 (a Pillow upgrade only). No new item-level match. Two notes: decode-2754-bnf-baluze156-1636's Sabran sibling
+lead is answered against it (Baluze 156 f.157 "in another key, too short to break alone", Lasry PR 84 / Bourdeau); Matignon
+Cipher-1 re-measured there at 63.7% vs 58.7% scrambled-key control. ASKS 163/169 unanswered; fr.3982 f.25 / fr.3985 f.89 no hit.

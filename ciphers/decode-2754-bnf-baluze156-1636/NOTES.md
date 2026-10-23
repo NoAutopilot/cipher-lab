@@ -910,3 +910,9 @@ The fr.4134 Sabran letters this folder names as the sibling-key lead now have a 
 he holds readings). Not an item-level match for Baluze 156 f.157-158; it is the key route this folder's lead pointed to, now with
 a reading on disk to test (`decode_key.py --try` per value, control first). Snapshot `sources/cyphersolver/2026-10-22-sabran1633/`.
 Credit: Harumi-Matsuba; G. Lasry (the cipher identification); D. Bourdeau.
+
+Correction, 23 Oct 2026 (LANE BNF-FOCUS, account 2): Bourdeau's sabran1633 entry, rewritten 22 Oct after George Lasry's PR 84
+(his key reads all 43 imaged pages of the Louis XIII-Sabran cipher, Baluze 155 f.79, fr.4134, fr.4135), checked the leaves
+Tomokiyo lists beside them on the image and states: "Baluze 156 f. 157 (1636) is in another key, too short to break alone."
+So the sibling-key lead noted on 22 Oct above is answered against this folder by their image check: the Sabran key is not this
+leaf's key. Snapshot `sources/cyphersolver/2026-10-23-sabran1633/NOTES.md`. Credit: George Lasry; Harumi-Matsuba; D. Bourdeau.

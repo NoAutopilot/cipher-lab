@@ -1,0 +1,1 @@
+Unmodified snapshot of github.com/dbourdeau/cyphersolver targets/matignon1586/NOTES.md at commit 9ea1142f0581a6057c722e8d90e82f3b394fa5e1, fetched 23 Oct 2026 by LANE BNF-FOCUS (account 2). Licence: code MIT, text CC BY 4.0; contributors credited inside. Do not edit.

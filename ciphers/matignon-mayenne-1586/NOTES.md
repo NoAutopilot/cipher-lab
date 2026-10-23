@@ -2112,3 +2112,9 @@ and folio against their changed targets (lesson in BNF-VALUE.md wave 40).
 - Cipher-3 gains fr.15573 ff.379-381 (Brett Burford, issue #44) in their matignon1586c3.
 Snapshots: `sources/cyphersolver/2026-10-22-matignon1586/`, `-mayenne1586c2/`. Status here stays `partial` (Cipher-1 below 50%
 there too). Credit: Michael Brackx, Brett Burford, Harumi-Matsuba (issues #44, #46, #49, #51, #64, #68-#71); D. Bourdeau.
+
+Update, 23 Oct 2026 (LANE BNF-FOCUS, account 2): dbourdeau/cyphersolver `targets/matignon1586` now reads "read in part, written
+up 22 Oct 2026": after contributors' complete re-transcription (issues #73, #77, #78, #79, #83) "63.7% of the target's cipher
+tokens read as sense (10,616 of 16,677; 58.7% after a scrambled-key control), every Cipher-1 leaf transcribed in full". The
+margin over their own scrambled-key control is 5 points; any use here treats their transcription and key as inputs to test, not
+as a reading. Snapshot `sources/cyphersolver/2026-10-23-matignon1586/NOTES.md`. Status here stays `partial`.
