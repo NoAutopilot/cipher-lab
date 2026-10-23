@@ -18354,3 +18354,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-22 23:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 23:39 UTC 22 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 03:20 UTC 23 Oct
 2026-10-23 00:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 00:10 UTC: spawned 0 (), queued left 0
 2026-10-23 00:21 | standby (owner account) | alive; holder account 4, last line 21:08 UTC 22 Oct (check-in 134, next ~01:1x announced); newest orchestrator line 23:36 UTC 22 Oct (owner-account check-in 298), 45 min old, not a HANDOFF; no takeover. usage: five_hour allowed by get_session, resets 03:20 UTC 23 Oct
+2026-10-23 00:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 00:34 UTC 23 Oct: spawned 0 -- no queued account-4 rows
