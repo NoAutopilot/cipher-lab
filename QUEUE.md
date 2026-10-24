@@ -7938,7 +7938,7 @@ still all `digitised:false`.
 **Two archive.org leads (not candidates -- the physical manuscript's digitisation is unconfirmed), found by
 full-text phrase search (`be-api.us.archive.org/fts/v1/search`, `"in cipher, undeciphered"`, 80 total hits
 across every HMC/Calendar volume on IA):**
-- **LEAD-AO1**: the Pepys Papers (Sir Edward Nicholas's Civil War/exile collection) at Magdalene College,
+- **LEAD-AO1** [checked 24 Oct 2026, CHECK-PEPYSNIC: the collection is the Evelyn/Browne volumes of the Pepys MSS, not a Nicholas archive; open, not digitised, held as a lead, SPRINT P14; parent side-check: the SP 84/165 'Decoded by P.R.O.' remark below is not borne out by Discovery (0 of 85 cipher items), see ciphers/_triage/pepys-magdalene-nicholas-ciphers.md]: the Pepys Papers (Sir Edward Nicholas's Civil War/exile collection) at Magdalene College,
   Cambridge, per *Report on the Pepys Manuscripts* (HMC, 1911; `reportonpepysman0000unse_f0i4` and three
   sibling IA copies). The same two volumes (Vol. II/III) that hold the undeciphered items also hold, by the
   editors' own index at p.308, **key material for ~10 named period ciphers** (Leicester/Huggins; Secretary

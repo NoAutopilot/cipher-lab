@@ -120,3 +120,31 @@ is itself the only way to confirm digitisation status or get an image; nothing e
 either that reply or a human with a library-subscription database (JSTOR/Google Books full-view) check on the
 *Vindication* source and the Evelyn Memoirs Vol. 5 appendix for an independent sighting of these four items'
 text, which was not run this session (time/cost budget).
+
+## Parent note (account-4 parent, 24 Oct 2026, 05:2x UTC): the six questions
+
+1. **Learned.** Four 1648-51 exile-court items catalogued "in cipher" without the 1911 editors' "deciphered" mark, plus item (69)
+   "Keys of ciphers and letters" in the same Worcester sub-catalogue; the p.308 key register is real but belongs to the 1630s-40s
+   Hopton-embassy stratum and names none of the four items' correspondents; no prior plaintext in Warner vol. 1, Cryptiana, the two
+   solver repositories or Internet Archive full text; no digitisation record; the route is the Pepys Library's own enquiry address.
+   The collection is Evelyn/Browne, not a Nicholas archive (the scout's label, corrected here).
+2. **Assumptions the result rests on.** That an HMC 1911 "in cipher" entry with no "deciphered" mark is unresolved today, not merely
+   unprinted; that Warner vol. 1 covers Aug 1648 (it runs to early 1653, so yes); that item (69)'s keys are the exile-court keys
+   rather than more Hopton material (untested, M).
+3. **Unverified.** Physical survival and legibility of the five items; item (69)'s content and endorsements; *Memoirs of John Evelyn*
+   vol. 5 appendix and *Vindication* not grepped; no Google Books / OpenAlex phrase search (worker's own gap).
+4. **Alternatives.** "Letters in ciphers from The King" (303) may be Charles I letters whose plaintext is printed elsewhere (*The King's
+   Cabinet Opened*, 1645, or Evelyn's Memoirs vol. 5); "Mr. Hansnaw" (71) may be a transcription of *Fanshaw* (Richard Fanshawe was
+   with the Prince's court in 1648), which would tie this lead to LEAD-AO2's Hyde-to-Fanshaw 1659 items -- an M-grade guess, not a
+   finding.
+5. **Most informative different experiment.** Not more catalogue work: one enquiry to the Library asking whether (69), (5), (71), (303),
+   (352) survive, their extent, and photography terms (SPRINT P14, the owner's email); on our side `tools/print_check.py` with
+   "triplicate in cipher" and the Hansnaw/Fanshaw variants before any image arrives (about USD 1, next scout brief).
+6. **Decision.** Acquire (SPRINT P14); no further scouting on this lead; LEAD-AO2 not opened as its own job -- one web check of the
+   Heathcote (Conington) papers' current holder rides the next program-C brief instead.
+
+Side-check by the parent (24 Oct 2026, 05:2x UTC, 3 Discovery API requests, scratchpad only): SCOUT-OPEN's remark that "most of
+SP 84/165's own undecoded-cipher items" carry a "Decoded by P.R.O." gloss is not borne out by Discovery for that piece -- 85 items
+match "SP 84/165" cipher and 25 match "SP 84/165" decoded, 0 carry any "decoded by" gloss, and the eleven Fuente items (ff.187, 228,
+231, 243, 258, 263, 287, 306, 313, 315, 317) all still read "Undecoded cipher". The gloss, if it exists, is on SP 84/166-171 items;
+SPRINT P12 and ciphers/sp84-fuente-1662 are unchanged.

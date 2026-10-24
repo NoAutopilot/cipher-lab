@@ -266,6 +266,16 @@ Warner's Nicholas Papers and the Clarendon State Papers calendar, the Pepys Libr
 Fanshaw lead waits on it. Sorters (ASKS 173, 175) and the owner's ordered scans still awaited; Gallica still 403. Spend this check-in by
 program: A 0, B 0, C 4.79.
 
+Check-in 145 (24 Oct 2026, 05:2x UTC). CHECK-PEPYSNIC (USD 4.36, D-, 1.09x cap): LEAD-AO1 is open, not digitised, held as a
+lead. The collection is the Evelyn/Browne volumes of the Pepys MSS (the scout's 'Nicholas collection' label was wrong); the p.308 key
+register is a 1630s-40s Hopton-embassy stratum and names none of the four 1648-51 undeciphered items' correspondents, but item (69)
+'Keys of ciphers and letters' sits in the same Worcester sub-catalogue; no prior plaintext in Warner vol. 1, Cryptiana, the solver
+repositories or IA full text; route is the Pepys Library's enquiry address -> SPRINT P14 (the owner's email). Parent side-check (3
+Discovery requests): the scout's 'Decoded by P.R.O.' remark on SP 84/165 is not borne out (0 of 85 cipher items), the eleven Fuente
+items still read 'Undecoded cipher', P12 unchanged. LEAD-AO2 (Heathcote/Fanshaw) not opened as a job; a holder check rides the next
+program-C brief. Sorters (ASKS 173, 175) still empty; no owner scans yet; Gallica still 403. Nothing live. Spend this check-in by
+program: A 0, B 0, C 4.36.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
