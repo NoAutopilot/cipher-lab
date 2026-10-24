@@ -255,6 +255,17 @@ matched to located series are logged (FG1-FG5) for that. Two retrospective propo
 declined: both are machinery for keeping rows coming, retired by the 16-17 Oct directives. Nothing live; both sorters (Vivonne, Monluc
 king letter) and the owner's document scans awaited. Gallica still 403.
 
+Check-in 143 (24 Oct 2026, 02:3x UTC). SCOUT-OPEN spawned (program C, open-route hosts only, cap 5). Check-in 144 (24 Oct 2026, 03:5x UTC). SCOUT-OPEN (USD 4.79, N): TNA Discovery's search API has no working digitised filter (three
+parameter spellings silently ignored; 0 of 18 cipher items digitised when checked per item), LoC lesser collections and Europeana/DPLA
+0 candidates, two archive.org HMC leads: the Pepys Papers (Nicholas) at Magdalene College with a key register (HMC 1911 p.308, about ten
+period ciphers) beside four undeciphered items, and two 1659 Hyde-to-Fanshaw cipher passages in the Heathcote (Conington) papers; both
+physical, digitisation unconfirmed. Side-finding: most of SP 84/165 (QUEUE K4 of SCOUT-KEYS) carries a 'Decoded by P.R.O.' gloss, so it
+is mostly not a fresh target, while 9 undecoded siblings in SP 84/166, 168, 171 share the SP 106/6 key family (not digitised). Decision:
+the Pepys lead is checked before it is scored -- CHECK-PEPYSNIC spawned (Sonnet, cap 4): check-solved by holder and shelfmark against
+Warner's Nicholas Papers and the Clarendon State Papers calendar, the Pepys Library's own record and flag, the reproduction route; the
+Fanshaw lead waits on it. Sorters (ASKS 173, 175) and the owner's ordered scans still awaited; Gallica still 403. Spend this check-in by
+program: A 0, B 0, C 4.79.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
