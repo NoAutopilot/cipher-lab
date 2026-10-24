@@ -318,6 +318,15 @@ rebuilt, SPRINT P12 points at the exact folio list. Spawned KEY32-CONFLICTS (Son
 kind so the key is usable the day an image arrives. After that the pool waits on the owner's order. Sorters (ASKS 173, 175) still
 empty; no owner scans. Spend this check-in by program: A 4.27, B 0, C 0.
 
+Check-in 150 (24 Oct 2026, 12:1x UTC). KEY32-CONFLICTS (USD 3.22, D-, 1.07x cap, offline): the 429 conflict rows of the no. 32 key
+sort into 140 keys that are one value spelled two ways, 60 real disagreements (almost all person names), 1 page-boundary shift inside
+copy 509 (codes 70/71) and 9 within-source duplicates; conflict_kind column added through the build script, nothing resolved by hand,
+ranges agree with chauran.htm. sp84-wickfort-bacquoy-1660-63 is now parked on SPRINT P12 (the owner's two-folio TNA order); nothing
+inside a session advances it. Program C next: HEATHCOTE-HOLDER spawned (Sonnet, cap 3) on LEAD-AO2 -- print check of the two 1659
+Hyde-to-Fanshaw items against the Calendar of Clarendon State Papers (Hyde's letter-book may carry the clear text), holder records at
+Huntingdonshire Archives and Valence House, and whether a Clarendon 1659 key survives. Program B (Vivonne) stays on ASKS 173. Sorters
+empty; no owner scans. Spend this check-in by program: A 3.22, B 0, C 0.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
