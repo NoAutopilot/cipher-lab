@@ -397,3 +397,25 @@ was not quoted anywhere above and those pages stayed in the session scratchpad, 
    check (CHECK-SP84POOL: does CSP Domestic 1660-63 print the PRO decodes or summarise the undecoded letters?), so the key and
    the target are both settled before any TNA copy order is placed.
 6. **Decision.** Continue (two Sonnet jobs, brief -48); the 432 PNGs are taken out of the tree per sources/decode/NOTES.md.
+
+### Parent note after DECODE-KEY32B and CHECK-SP84POOL (account-4 parent, 24 Oct 2026, 09:2x UTC): the six questions
+
+1. **Learned.** SP 106/6 no. 32 is on DECODE as ids 509 (3 pp) and 506 (1 p), and DECODE already holds a complete 2020 text
+   transcription of both: a 23-mark letter alphabet, persons 20-76 (plus primed codes for foreign figures, 55' = de Wicquefort),
+   Villes 61-89, Royaulmes 90-108, word/syllable classes to about 100. None of the 18 pool letters is printed in CSP Domestic
+   1660-64; chauran.htm corroborates the 8 PRO-decoded letters' key citations by date. The 10 undecoded letters are open access,
+   not digitised, with no key cited; De Bacquoy's cipher is numerical (values to about 939, Tomokiyo's 11 contextual pairs), so
+   no. 32 is the key for Wickfort's and Chauran's letters, and for De Bacquoy's only if his numbers are the nos. 31/35 system.
+2. **Assumptions.** That DECODE's 2020 transcription is faithful (grade H rests on it; the images were not re-read); that
+   Wickfort kept no. 32 through July-Nov 1662 despite his "nouveau chiffre" remark of 14 May (f.214, itself PRO-decoded with
+   no. 32, which argues the new cipher was no. 32 or came after).
+3. **Unverified.** Whether the three undecoded Wickfort letters (SP 84/166 ff.19, 85, 213) are in no. 32 at all; which key
+   De Bacquoy used; DECODE 497; nos. 31/35's DECODE ids.
+4. **Alternatives.** The undecoded Wickfort letters may be in a later key (hence "undecoded" by the PRO, which had no. 32 in
+   hand and still did not decode them) -- the strongest alternative, and the reason a known-plaintext control on a PRO-decoded
+   sibling comes first when images arrive.
+5. **Most informative next experiment.** Build key.tsv from the DECODE transcription now (grade H, provenance to record and
+   transcriber), promote the pool to its own folder with REQUEST.md naming the TNA copy order (f.106 or f.214 as the known-
+   plaintext control beside SP 84/166 f.85), so the only remaining step is the owner's order.
+6. **Decision.** Acquire: brief -49 (KEY32-TSV-PROMOTE). Stop further DECODE passes for 497 and nos. 31/35 (f.213 is known
+   text; De Bacquoy's key is a question for the images). SPRINT P12 updated.
