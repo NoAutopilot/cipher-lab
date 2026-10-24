@@ -241,6 +241,18 @@ or ASKS row until the owner's Vivonne re-sort is in, to keep one ask open at a t
 and 4 are idle by choice. Day's net: one N0 key application (Monluc f.138, D2), one D1 lead (the 28 Apr 1573 king letter, not counted),
 Sherwood 73.6% pending a verifier with the ILL, sorter save bug fixed on 5 pages.
 
+**Daily synthesis, 24 Oct 2026 (account-4 parent, 17:4x UTC).** Twelve Sonnet workers, USD 58.9 (A 18.3, B 0, C 40.6). Program A:
+TNA SP 106/6 no. 32 (the Wickfort/Chauran cipher) is in hand as text -- DECODE records 509/506 carry a complete 2020 transcription --
+and ciphers/sp84-wickfort-bacquoy-1660-63 is promoted `blocked` with key.tsv (grade H, 1692 rows, 429 copy conflicts labelled by kind)
+and REQUEST.md naming the two-folio TNA order (SP 84/166 f.85 + the PRO-decoded SP 84/165 f.106 as known-plaintext control); none of
+the 18 pool letters is printed in CSP Domestic 1660-64. Program B: nothing; Vivonne waits on the owner's re-sort (ASKS 173). Program C:
+the two archive.org HMC leads were run to the holder -- Pepys MSS (Evelyn/Browne volumes, Magdalene; key register is a different
+stratum, item 69 'Keys of ciphers' beside four undeciphered items) and the 1659 Hyde-to-Fanshaw letters (no ciphertext in print, Hyde's
+Barwick table of 12 June 1659 transcribed as a candidate key) -- and two enquiry drafts are written and gate-7 checked (SPRINT P14,
+P15). Found-solved elsewhere: fr3621-dinteville-1592 (Zarco/Bourdeau). Two over-cap lessons: headless-browser fetches priced as curl
+(1.71x) and a dense printed table transcribed as one call per leaf (3.49x). Highest-value owner action: the two-folio TNA order (P12);
+then sending P14/P15, the two sorts (ASKS 173/175), the ordered scans and the Leighton and Matyas ILL.
+
 Check-in 141 (23 Oct 2026, 23:0x UTC; restart after 21-23 Oct idle, owner "keep jamming" 21:5x). SHERWOOD-VERIFY3 (USD 3.48): all three
 post-audit S gains accepted on the verifier's own image reads; Sherwood is 74.1% H/C/S, D2 (13 more S needed for D3), status.json
 updated; a new print fact for the N3 revisit (Brymner 1888 B.178 p.107 prints "reduction of the new State"). SORTER-KING (USD 7.69, 1.92x
@@ -353,6 +365,11 @@ Fanshaw letters and the Walker and Liddell 1999 finding aid) -- disclosure first
 institutions' own pages with the date, checked: left empty. Spawned OUT-CHECK-P14P15 (Sonnet, cap 3), a session separate from the
 drafter, to falsify every factual sentence and write the checked: lines (gate 7). Sorters (ASKS 173, 175) still empty; no owner
 scans. Spend this check-in by program: A 0, B 0, C 2.16.
+
+Check-in 154 (24 Oct 2026, 17:3x UTC). OUT-CHECK-P14P15 (USD 3.14, D-, 1.05x cap): Pepys draft clean; Valence House draft corrected
+three times (Barwick lead attributed to Tomokiyo, not HMC 1899's preface; John not Peter Barwick; the split note is on CON 7/10/2) and
+one detail softened; addresses verified live; both drafts ready for the owner to send (SPRINT P14, P15 updated; no SEND-QUEUE rows).
+Nothing live; every line waits on the owner. Cadence moves to 2-3 h. Spend this check-in by program: A 0, B 0, C 3.14.
 
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
