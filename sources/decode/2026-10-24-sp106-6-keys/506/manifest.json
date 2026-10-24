@@ -1,0 +1,38 @@
+[
+ {
+  "file": "TH_IMG_R506_I3705_P1.png",
+  "decode_record": 506,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0096)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R506_I3705_P1.png",
+  "source_px": [200, 351],
+  "source_bytes": 129563,
+  "content_type": "image/png",
+  "sha256": "dbd128bc66926f1021409745320fc7b3cc1072cb1bc312dc340dc5b52d6bf359",
+  "fetched": "2026-10-24 DECODE-KEY32B, one browser login (tools/decode_browser_login.js --fetch-page RecordsView/506 --guess-fullsize)",
+  "refetch": "no login needed for the thumbnail: curl 'https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R506_I3705_P1.png'"
+ },
+ {
+  "file": "IMG_R506_I3705_P1.png",
+  "decode_record": 506,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0096)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R506_I3705_P1.png",
+  "source_px": [1307, 2300],
+  "source_bytes": 3496279,
+  "content_type": "image/png",
+  "sha256": "7a1139bce85b8c3d10ba4899aa2431cfe5e4b3af91f0827cd981747fed813a58",
+  "fetched": "2026-10-24 DECODE-KEY32B, one browser login (tools/decode_browser_login.js --fetch-page RecordsView/506 --guess-fullsize)",
+  "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 509 OUT --fetch-page RecordsView/506 --guess-fullsize (login required for full size)"
+ },
+ {
+  "file": "DOC_R506_D2951_2951.txt",
+  "decode_record": 506,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0096)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=DOC_R506_D2951_2951.txt",
+  "source_bytes": 11161,
+  "content_type": "text/plain",
+  "sha256": "3880d5049665eeae9515a67faec2bd7e498c390fa1db55801ebb76a2d68793d1",
+  "note": "DECODE's own key transcription (transcriber AP, 10 Aug 2020, status complete), covers 3705.png",
+  "fetched": "2026-10-24 DECODE-KEY32B, one browser login",
+  "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 509 OUT --fetch-page RecordsView/506 --guess-fullsize --max-files 12 (document auto-discovered on RecordsView/506)"
+ }
+]

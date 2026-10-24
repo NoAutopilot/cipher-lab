@@ -1,0 +1,15 @@
+[
+ {
+  "file": "TH_IMG_R497_I3691_P1.png",
+  "decode_record": 497,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0073-0074)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R497_I3691_P1.png",
+  "source_px": [200, 258],
+  "source_bytes": 66847,
+  "content_type": "image/png",
+  "sha256": "d5fb34de58a5b75384c1f746f037794f7f3582be343b8f357ddbd90b20310a6f",
+  "fetched": "2026-10-24 DECODE-KEY32B, one browser login (tools/decode_browser_login.js --fetch-page RecordsView/497)",
+  "note": "thumbnail only -- the login's shared --max-files budget (12) was spent on 509's and 506's thumbnails, full images and documents before the attachment loop reached 497's full-size image or its document",
+  "refetch": "no login needed for the thumbnail: curl 'https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R497_I3691_P1.png'; a fresh login is needed for the full-size image and document (--guess-fullsize)"
+ }
+]

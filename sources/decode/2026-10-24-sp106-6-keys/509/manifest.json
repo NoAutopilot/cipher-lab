@@ -1,0 +1,98 @@
+[
+ {
+  "file": "TH_IMG_R509_I3711_P1.png",
+  "decode_record": 509,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0099-0101)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R509_I3711_P1.png",
+  "source_px": [200, 166],
+  "source_bytes": 63567,
+  "content_type": "image/png",
+  "sha256": "6a83b31f0e3a4fe065a2e6a9343017731d47933f00e9da288746c88d816c4e5a",
+  "fetched": "2026-10-24 DECODE-KEY32B, one browser login (tools/decode_browser_login.js --guess-fullsize)",
+  "refetch": "no login needed for the thumbnail: curl 'https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R509_I3711_P1.png'"
+ },
+ {
+  "file": "IMG_R509_I3711_P1.png",
+  "decode_record": 509,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0099-0101)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R509_I3711_P1.png",
+  "source_px": [2300, 1915],
+  "source_bytes": 4173678,
+  "content_type": "image/png",
+  "sha256": "dea8734f58fe7dd3d22db7ca550335b8427a2e541f0fdcb7c532ba696652861e",
+  "fetched": "2026-10-24 DECODE-KEY32B, one browser login (tools/decode_browser_login.js --guess-fullsize)",
+  "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 509 OUT --guess-fullsize (login required for full size)"
+ },
+ {
+  "file": "TH_IMG_R509_I3712_P2.png",
+  "decode_record": 509,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0099-0101)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R509_I3712_P2.png",
+  "source_px": [200, 313],
+  "source_bytes": 126741,
+  "content_type": "image/png",
+  "sha256": "2e943ceb5d4359c8db6b1b560904ea11b12859f1ad83109065944061d3939847",
+  "fetched": "2026-10-24 DECODE-KEY32B, one browser login (tools/decode_browser_login.js --guess-fullsize)",
+  "refetch": "no login needed for the thumbnail: curl 'https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R509_I3712_P2.png'"
+ },
+ {
+  "file": "IMG_R509_I3712_P2.png",
+  "decode_record": 509,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0099-0101)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R509_I3712_P2.png",
+  "source_px": [1466, 2300],
+  "source_bytes": 4169753,
+  "content_type": "image/png",
+  "sha256": "28f008acd61b8ee4a9909765e35c5ce6d854ff24b0d95fdde4590ad42d06b913",
+  "fetched": "2026-10-24 DECODE-KEY32B, one browser login (tools/decode_browser_login.js --guess-fullsize)",
+  "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 509 OUT --guess-fullsize (login required for full size)"
+ },
+ {
+  "file": "TH_IMG_R509_I3713_P3.png",
+  "decode_record": 509,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0099-0101)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R509_I3713_P3.png",
+  "source_px": [200, 334],
+  "source_bytes": 124851,
+  "content_type": "image/png",
+  "sha256": "737c6af887067dfabe52fe36ce5fc380f4261ec065334ac036fc91dd3f59e04c",
+  "fetched": "2026-10-24 DECODE-KEY32B, one browser login (tools/decode_browser_login.js --guess-fullsize)",
+  "refetch": "no login needed for the thumbnail: curl 'https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R509_I3713_P3.png'"
+ },
+ {
+  "file": "IMG_R509_I3713_P3.png",
+  "decode_record": 509,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0099-0101)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R509_I3713_P3.png",
+  "source_px": [1375, 2300],
+  "source_bytes": 3576695,
+  "content_type": "image/png",
+  "sha256": "b7ae86f1a56a1013ffcc4b65e1a8a0a64e25117a8f225f3a01ec4d8ccd45eab3",
+  "fetched": "2026-10-24 DECODE-KEY32B, one browser login (tools/decode_browser_login.js --guess-fullsize)",
+  "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 509 OUT --guess-fullsize (login required for full size)"
+ },
+ {
+  "file": "DOC_R509_D2952_2952.txt",
+  "decode_record": 509,
+  "decode_shelfmark": "TNA_SP106_6_CharlesII_(0099-0101)-1",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=DOC_R509_D2952_2952.txt",
+  "source_bytes": 12015,
+  "content_type": "text/plain",
+  "sha256": "3ee58f19fd19167b9bdfa3d0478f426c894a010661a5688447e5379e0566680e",
+  "note": "DECODE's own key transcription (transcriber AP, 13 Aug 2020, status complete), covers 3712.png-3713.png",
+  "fetched": "2026-10-24 DECODE-KEY32B, one browser login",
+  "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 509 OUT --guess-fullsize --max-files 12 (document auto-discovered on RecordsView/509)"
+ },
+ {
+  "file": "DOC_R509_D2953_2953.txt",
+  "decode_record": 509,
+  "decode_shelfmark": "TNA_SP106_6_CharlesII_(0099-0101)-2",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=DOC_R509_D2953_2953.txt",
+  "source_bytes": 3227,
+  "content_type": "text/plain",
+  "sha256": "5c524fdd9885c9f6e9c89419bf99516268e447d8bb3e0c469dfa79ef7c97888d",
+  "note": "DECODE's own key transcription (transcriber AP, 13 Aug 2020, status partial), covers 3711.png",
+  "fetched": "2026-10-24 DECODE-KEY32B, one browser login",
+  "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 509 OUT --guess-fullsize --max-files 12 (document auto-discovered on RecordsView/509)"
+ }
+]

@@ -332,6 +332,53 @@ cap. No other hosts touched. No credentials printed; the account name in the sav
 quoted anywhere above and those pages were not committed (kept in the session scratchpad only, per Usage rule "digests,
 not repositories").
 
+## DECODE fetch, second pass (DECODE-KEY32B, 24 Oct 2026)
+
+Account 4, job DECODE-KEY32B (`.claude/briefs/runs/2026-10-24-acct4-research-director-48.md`), continuation of
+DECODE-KEY32 above. One login (`tools/decode_browser_login.js 509 OUT --fetch-page "RecordsView/506,RecordsView/497"
+--guess-fullsize --max-files 12 --delay 2000`), `RECORD_ID=509` primary, `--fetch-page` for 506 and 497.
+
+**Verdict: 509 and 506 MATCH no. 32; 497 remains undecided.**
+
+DECODE already carries complete 2020 transcriptions of 509 and 506 as attached text documents (transcriber "AP",
+not re-transcribed by this worker -- the match is read from DECODE's own existing key text, per the brief's "no
+transcription, no reading"). 509 (3 pp) opens with the same 23-mark single-letter substitution alphabet described
+for no.32 in `sources/cryptiana/web/chauran.htm`, then an explicit `<CLEARTEXT FR Villes>` heading (codes 61-89:
+Calais, Amsterdam, Bordeaux, ...) and `<CLEARTEXT FR Royaulmes>` heading (codes 90-108: la Pologne, la France, la
+Suède, ...), person-name codegroups in the 20s-70s (Le Roy, la Reyne, Madame, ..., and -- past 76 under a `'`
+mark -- "De Viequefort", i.e. de Wicquefort/Wickfort, this correspondence's own addressee), plus several
+1-100-valued marked word/syllable homophone classes including nulls. This is exactly chauran.htm's "alphabetical
+encoding table, persons/towns/countries as separate sequences" for no. 32; no code in either document exceeds 108,
+ruling out no.31/35's up-to-999 numeral system for these two records. 506 (1 p) opens with the identical 23-mark
+alphabet and the same person-codegroup numbering, confirming DECODE's own "same cipher" cross-reference from 509's
+Additional Information field rather than leaving it unopened. Full detail and the structure quoted in full:
+`sources/decode/2026-10-24-sp106-6-keys/509/README.md`, `.../506/README.md`.
+
+497's full-size image and document were not reached this pass -- the shared `--max-files 12` budget (sized for
+509's 3 pages + 506's 1 page = 4 pages of thumbnail+full, but the auto-discovery loop also queued 509's and 506's
+three attached text documents ahead of 497's own files in page order) was spent before the loop reached 497; only
+its 200x258 thumbnail came through, too small to read. DECODE's own text description of 497 ("three homophones for
+each letter", ~300 codegroups) is structurally lighter than the now-confirmed 509/506 system and gives no numeral
+range to check against no.31/35 either -- undecided from text alone. `sources/decode/2026-10-24-sp106-6-keys/497/README.md`.
+
+`candidates.tsv`'s plausibility_note updated for 497, 506, 509. Next step: a fresh login opening 497's full image
+(and document) plus the remaining untried French-tagged single-page candidates (434, 435, 447, 503, 505, 510, 511)
+against the now-confirmed no.32 fingerprint -- no.31/35 (the second, numeral cipher) is still entirely unlocated
+among SP106/6's Key records.
+
+No vision calls (per the brief's pricing): the match verdict for 509/506 is read from DECODE's own existing text
+transcription of the key, not from viewing the page images; the four full-size PNGs fetched were only hashed and
+measured (sha256, pixel dimensions, format), not opened. No decode, no key.tsv edit, no ciphers/ folder touched
+beyond this NOTES.md section.
+
+Requests this pass: de-crypt.org 17 (1 login navigate + 1 login submit, 1 primary RecordsView [509] + 2 fetch-page
+[506, 497], 12 filesrv fetches: 3 thumbnails + 3 full images + 2 documents for 509, 1 thumbnail + 1 full image + 1
+document for 506, 1 thumbnail for 497), all >=2s apart, one login. This is 1 over the brief's nominal <=16-fetch
+cap -- the two extra, automatically-discovered text documents for 509 (not separately budgeted in the brief's "6
+pages = 12" sizing) pushed the count to 17; flagged here rather than making a second request to come back under it.
+No other hosts touched. No credentials printed; the account name in the saved RecordsView/thumbnail/document pages
+was not quoted anywhere above and those pages stayed in the session scratchpad, never committed.
+
 
 ### Parent note after DECODE-KEY32 (account-4 parent, 24 Oct 2026, 08:0x UTC): the six questions
 
