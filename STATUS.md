@@ -347,6 +347,13 @@ two enquiry drafts (Pepys Library P14, Valence House P15) in outreach/ with chec
 now waits on the owner: P12 TNA order, P14/P15 enquiries, ASKS 173/175 sorts, ordered scans, the Leighton and Matyas ILL. Spend this
 check-in by program: A 0, B 0, C 17.44.
 
+Check-in 153 (24 Oct 2026, 16:2x UTC). OUT-DRAFT-P14P15 (USD 2.16, D, under cap): two enquiry drafts in outreach/ -- the Pepys
+Library (P14, items 5/69/71/303/352 of HMC 1911) and the Barking and Dagenham archives at Valence House (P15, the two 1659 Hyde-to-
+Fanshaw letters and the Walker and Liddell 1999 finding aid) -- disclosure first, I/we voice, institutional addresses read from the
+institutions' own pages with the date, checked: left empty. Spawned OUT-CHECK-P14P15 (Sonnet, cap 3), a session separate from the
+drafter, to falsify every factual sentence and write the checked: lines (gate 7). Sorters (ASKS 173, 175) still empty; no owner
+scans. Spend this check-in by program: A 0, B 0, C 2.16.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
