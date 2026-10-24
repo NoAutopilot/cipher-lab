@@ -7951,6 +7951,13 @@ across every HMC/Calendar volume on IA):**
   e.g. a 1664 Bennet-to-Fanshaw cipher the editors did work out against a printed edition -- so "undeciphered"
   in this report is a real, checked state, not an unexamined label). No existing folder or mention anywhere in
   this repo (`ciphers/sp77-nicholas-1659` and `ciphers/hyde-add4166-1659` are different items, different
+  physical sources). **CHECK-PEPYSNIC (24 Oct 2026)**: `ciphers/_triage/pepys-magdalene-nicholas-ciphers.md` --
+  verdict open, not digitised, held as a lead. Note: the collection is John Evelyn's (via Sir Richard Browne),
+  not a dedicated "Sir Edward Nicholas" collection -- the HMC 1911 introduction names Evelyn/Browne as the
+  source, Nicholas is only one correspondent among many in it. No prior plaintext found for the four items
+  (Warner's *Nicholas Papers* vol.1, Cryptiana, both solver repos, archive.org full text for "Hansnaw"); no
+  digitisation record found anywhere for the physical volumes; reproduction route is the Pepys Library's own
+  Special Collections Librarian (pepyslibrary@magd.cam.ac.uk).
   physical sources). Not scored as a candidate: the catalogue is digitised (archive.org), the physical Pepys
   Papers at Magdalene's own Pepys Library are not confirmed digitised anywhere this pass.
 - **LEAD-AO2**: *Manuscripts of J.M. Heathcote, Esq., Conington Castle* (HMC, 1899; `manuscriptsofjmh00greauoft`
