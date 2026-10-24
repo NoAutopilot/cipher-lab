@@ -7975,7 +7975,7 @@ across every HMC/Calendar volume on IA):**
   Special Collections Librarian (pepyslibrary@magd.cam.ac.uk).
   physical sources). Not scored as a candidate: the catalogue is digitised (archive.org), the physical Pepys
   Papers at Magdalene's own Pepys Library are not confirmed digitised anywhere this pass.
-- **LEAD-AO2**: *Manuscripts of J.M. Heathcote, Esq., Conington Castle* (HMC, 1899; `manuscriptsofjmh00greauoft`
+- **LEAD-AO2** [24 Oct 2026, HEATHCOTE-HOLDER + HEATHCOTE-PAGES: open; no ciphertext in print (HMC 1899's italics are the editors' English); likelier holder Barking and Dagenham M51-286; Hyde's Barwick table of 12 June 1659 transcribed to ciphers/_triage/heathcote-1659-barwick-key.tsv (684 rows, one pass); parked on SPRINT P15, the owner's enquiry]: *Manuscripts of J.M. Heathcote, Esq., Conington Castle* (HMC, 1899; `manuscriptsofjmh00greauoft`
   and three sibling IA/Google-Books copies) -- almost entirely Sir Richard Fanshaw's own correspondence as
   ambassador to Portugal and Spain, 1661-66, described as a "companion series" to TNA's own SP89 Portugal class
   and to BL Harley MS 7010. Two items, pp.155-156, both Edward Hyde (later Earl of Clarendon) to Fanshaw, 1659

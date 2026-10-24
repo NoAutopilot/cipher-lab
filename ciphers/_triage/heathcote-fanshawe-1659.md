@@ -276,3 +276,21 @@ are in print for either Heathcote item (see above) and the manuscript originals 
 
 Verdict: **keep going** -- program C (flagship-adjacent lead), cheap, no blocker outside the session's own time box.
 Next: the second-pass reconciliation above, then the Barking/Dagenham manuscript chase; neither depends on anyone else.
+
+## Parent note (account-4 parent, 24 Oct 2026, 15:0x UTC): the six questions after HEATHCOTE-PAGES -- lead waits on a holder copy
+
+1. **Learned.** HMC 1899 printed its own English reconstruction of the ciphered spans, not the figures; no ciphertext of either
+   letter is in print. Hyde's Barwick table of 12 June 1659 is in print and now on disk (684 rows, one pass).
+2. **Assumptions.** That the manuscript cipher groups survive legibly in the Fanshawe papers (Barking and Dagenham, M51-286); that
+   Hyde used the Barwick table, or one like it, with Fanshaw -- the HMC editors' own partial key recovery says the cipher was readable
+   from a clue, consistent with a tabular key of this family, no more.
+3. **Unverified.** Which half of the split collection holds the two letters; the Barwick table's rows (one pass; long-s and edge
+   truncations noted by the worker); whether the editors' English reading covers the whole ciphered span.
+4. **Alternatives.** The editors may have read the spans fully (then the content is known text, N1 at best, and only the key would be
+   new); the Fanshawe papers' finding aid (Walker and Liddell 1999) may say so.
+5. **Most informative next experiment.** An enquiry to the Barking and Dagenham archives (Valence House) for the two letters: do they
+   survive, are the ciphered spans legible, what does a scan cost -- and, from the same desk, whether their finding aid notes a
+   decipherment. Nothing inside a session advances this further.
+6. **Decision.** Park on the owner's enquiry: SPRINT P15 (no money until quoted). The Barwick table stays in _triage as a published key
+   on disk (grade H as printed, rows M until a second pass), pointer in QUEUE.md LEAD-AO2. Cost note: this job ran 3.5x its cap on the
+   table transcription; lesson in the ledger.
