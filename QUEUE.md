@@ -8024,3 +8024,116 @@ target slug: neither LEAD-AO1 nor LEAD-AO2 has a folder yet; due diligence inste
 QUEUE.md, CATALOG.md, LANDSCAPE.md and `ciphers/` for Pepys/Heathcote/Fanshaw/Nicholas/Coventry/Conington
 (no hit for either lead; two unrelated existing folders for other Hyde/Nicholas items, both different physical
 sources, checked and distinguished above).
+
+## Key-beside-cipher candidates, DigitArq / ANTT (24 Oct 2026, SCOUT-ANTT)
+
+Worker SCOUT-ANTT (account 4, Sonnet 5; brief `.claude/briefs/runs/2026-10-24-acct4-research-director-55.md`,
+program C). Same filter as 17-24 Oct's SCOUT-KEYS/SCOUT-KEYS2/SCOUT-FAGEL/SCOUT-OPEN (a candidate counts only if
+(a) a key, decipherment, gloss or clear copy is on file or in reach for it, AND (b) the cipher item itself has
+no surviving period decipherment and no printed plaintext), run this time on DigitArq (digitarq.arquivos.pt,
+ANTT) -- the one host in this filter series that serves full working-resolution images today with no login
+(`tools/digitarq_fetch.py`), and the host that produced this project's one Portuguese key-beside-cipher reading
+(`antt-linhares-chave`, PP-03). Never promoted, never decoded, no `ciphers/` folder created. Full rows:
+`harvest/SCOUT-ANTT-2026-10-24.tsv`.
+
+**Step 1, already-scouted ANTT fonds (read first, not repeated):** PP-01..PP-10 (`sources/solver-diffs/
+2026-09-24-pares-digitarq.tsv`, this file's "PARES / DigitArq cipher letters" section, LANE N4 scPARES/scDIGI/
+scDIGI2) and PX-01..PX-04 plus `PT/TT/FRA/11.03/000008` (LANE PX PX-SCDIGI3/PX-SCDIGI4, this file's "Portuguese
+holdings and dictionary codes" section) -- 14 items across `PT/TT/LMP`, `PT/TT/CLNH` (maços 20, 50, 78, 86),
+`PT/TT/MSLIV` (638, 1017), `PT/TT/FCC`, `PT/TT/MMIP`, `PT/TT/CPN`, `PT/TT/MMCG/3L`, `PT/TT/MNE-ASC/R/4`,
+`PT/TT/MRM/M027.001`, `PT/TT/ASG/C/010/000013`, `PT/TT/FRA`. Of these, PP-03 (`antt-linhares-chave`) is now
+`solved`; PX-01 (`antt-msliv0638-brochado-1712`) is a `NEAR.md` row; PP-04 (FCC self-glossed worksheet) is a
+standing `recovery` lead. Also read: `ciphers/antt-linhares-chave/NOTES.md` (how the key leaf was found: a
+titled "Chave" sitting six images away from its own ciphertext fragment in the same composite archival unit --
+the search method the archive's own catalogue description, not the broken-pagination search endpoint, is what
+actually surfaces a pairing like this) and this file's PX-SCDIGI3/PX-SCDIGI4 method notes on the search API's
+fuzzy/stemmed false-friend behaviour (`decifradas`/`decifrados`/`decifração` chiefly hit `declarada(s)`/
+`declaração`; `de cifra`/`em claro` are common word sequences; a scope-note phrase, not a title word, is what
+finds a real hit).
+
+**Step 2, catalogue sweep (about 45 `GET /api/docs/search?query=` calls, all >=3.2s apart, descriptive UA,
+well under the brief's <=120 cap and the host's own no-published-limit good-citizen rule):** the six brief
+terms bare (`cifra` 1,603 already reviewed; `chave da cifra` 12 already reviewed; `cifrada` 39 already
+reviewed; `em cifra` 330, not fully reviewable past the broken-pagination top 10; `decifra` 6, all 6 read, all
+already-known rows or 20th-c./19th-c. noise; `alfabeto` 323, all of the readable top 10 are "ALFABETO DOS
+REQUERIMENTOS" -- an alphabetical petition index, a false friend, not a cipher alphabet -- and every
+`alfabeto`-compound phrase tried, `alfabeto cifra`/`alfabeto da cifra`/`alfabeto cifrado`/`cifra alfabeto`, is
+0; `alfabeto secreto`/`alfabeto numerico` are 9/1, both false friends: `alfândega` [customs house] fuzzy-matches
+`alfabeto`, and the one `numerico` hit is a 20th-c. correspondence file). Fonds-name pairing (the PX-SCDIGI3
+method, a cipher word plus a fonds/correspondent term) tried against every fonds this brief names that had not
+been paired this way before: `cifra`/`chave Corpo Cronologico` (95/136, top-10 all generic "Maço N" or
+`chave`->`Chaves`-surname false friends, no description text visible matching cipher content), `cifra`/`chave
+Gavetas` (5/60, same false-friend pattern, `Cira`/`Chaves`), `cifra`/`chave Conselho de Guerra` (5/73, the one
+genuine cipher hit, a 1704 Timor consulta, already carries its own period translation -- "Anexa outra carta com
+a tradução" -- so it is a *solved* item, excluded by condition (b), not a candidate), `cifra`/`chave Negocios
+Estrangeiros` (52/20, resurfaces PX-02's own `PT/TT/MNE-ASC/R/4` children C214/C215 "Cifra Antiga", already
+logged, not re-listed), plus the fonds *codes* themselves as bare query terms (`GAV cifra` 2, `CC cifra` 3,
+`CGR cifra` 0, `chave MMCG` 0 -- confirms the search index does not match on reference-code acronyms as free
+text, only on the fonds's expanded Portuguese name, and even that pairing returns noise rather than a true
+AND-filter on fonds membership). Key-introduction phrasing (new this pass, modelled on PX-01's own "**O final
+do volume apresenta excertos decifrados**" and the Timor item's "**Anexa outra carta com a tradução**"):
+`modo de cifrar` 5, `regra da cifra` 2, `explicação da cifra` 4, `numero da cifra` 14, `chave da cifra que` 7,
+`escrita em cifra` 32, `rascunho cifra` 6 (echoing PP-04's own "rascunho de uma copia de carta cifrada"),
+`copia cifrada`/`copia de carta cifrada` 7/4 (both resurface only already-known rows: PP-04, PX-05-equivalent
+CLNH/0032/10 [a plaintext item, false match], and PP-01's own LMP/0001) -- every small-total result read in
+full; none pairs an undeciphered item with a key not already on file. Correspondent-name sweeps for offices
+this brief's fonds list implies but PX-SCDIGI3/4 had not tried: `cifra Luis da Cunha` 2, `cifra Palmela
+Saldanha` 2 (=PX-04), `cifra Brasil` 38 (top 10 all Estado Novo telegram/Inquisition-trial noise), `cifra
+Alorna` 7, `cifra Melo e Castro` 9, `cifra Pina Manique` 0, `decifrada`/`tradução Francisco de Melo` 0/11
+(no genuine hit for either), `Vidigueira decifrada` 0, `Luis Alvares Ribeiro cifra` 0, `decifrada Miranda` 0,
+`chave Melo` 472 (too broad, top 10 all noise).
+
+**No new key-beside-cipher candidate survives the filter this pass.** Every search that returned a genuine
+cipher-plus-key pairing resurfaced a row already on file (PP-03/PX-01/PP-04, named above); every other avenue
+tried either returns false-friend noise from the search engine's fuzzy/stemmed matching (confirmed again:
+pairing a cipher word with a fonds name does not actually filter to that fonds, it just ANDs two free-text
+terms across the whole 7.5M-record index) or an item that already carries its own period translation (excluded
+by condition (b), not a candidate). `NEG-ANTT1` in the TSV.
+
+**Two leads, not candidates (condition (a) fails -- no key found for either), logged for the record rather
+than scored:**
+- **LEAD-ANTT1**: `escrita em cifra` (32 total) and `Vidigueira cifra` (2 total) surface two ANTT `PT/TT/MMCG`
+  sub-series not yet named anywhere in this repo -- `PT/TT/MMCG/2L` (Luís Álvares Ribeiro to D. Francisco de
+  Melo, 1659, same correspondent and year as PP-10's own `PT/TT/MMCG/3L` series) and `PT/TT/MMCG/4B` (Duarte
+  Nunes da Costa and Pero Mendes de Sampaio to D. Vasco Luís da Gama, 5º conde da Vidigueira, 1642) -- both
+  within the same 1658-1666 Anglo-Dutch-Portuguese embassy fonds already cross-referenced to PP-01/PP-10/QUEUE
+  row N45 (BL Add MS 38038). No key or decipherment found for this circle by any route tried this pass
+  (`decifrada`/`tradução Francisco de Melo`, `Vidigueira decifrada`, `Luis Alvares Ribeiro cifra`, `decifrada
+  Miranda` all 0 or noise) -- this expands the known unsolved-cryptanalysis pool for that embassy circle, it
+  does not supply a key for it.
+- **LEAD-ANTT2**: a fonds not named anywhere in this repo before this pass, `PT/TT/CFTR` "Casa Fronteira e
+  Alorna" (confirmed via `docs/details`, `rootParent.titles[0].value`), surfaces several early-18th-century
+  cipher letter-books under `cifra Alorna`/`cifra Melo e Castro`: `CFTR-ALM/007-7.26/0082-0083` (Conde de
+  Assumar, ambassador extraordinary to Charles III of Spain/Barcelona, 1705-1712), `007-7.40/0104` and
+  `007-7.47/0113`/`007-7.48/0114` (Conde de Tarouca at The Hague, 1720-21; Conde da Atalaia in Catalonia,
+  1710-14) -- War of the Spanish Succession diplomatic/military correspondence, a different period and office
+  from every ANTT row on file so far. Also one striking Inquisition-trial item, `CFTR/001/0003/000191`,
+  "Traslado das verbas das cartas de cifras que vieram de Roma, as quais andam no feito de que se livram os
+  Henriques e Mestre Jorge Leão" (a transcript of excerpts of ciphered letters from Rome, used as evidence in
+  a trial of "the Henriques and Master Jorge Leão" -- a New-Christian/crypto-Jewish case by the names, period
+  not dated in this listing). `docs/details` on `CFTR-ALM/007-7.26/0083` confirms `hasImages: false`; none of
+  these items is digitised, so none is copy-free or eye-confirmable this pass, and no key was found for any of
+  them either -- a copy-order lead only, named here so a future pass does not re-discover the fonds from
+  scratch.
+
+**Drop-check:** PX-SCDIGI3/4's own already-known rows (PP-01..PP-10, PX-01..PX-04, the FRA/11.03 rejection)
+resurfaced correctly across this pass's queries and were not re-listed. `PT/TT/MMCG/2L`, `PT/TT/MMCG/4B` and
+`PT/TT/CFTR` are absent from QUEUE.md, CATALOG.md, LANDSCAPE.md and every `ciphers/*/NOTES.md` (grepped
+case-insensitively for `MMCG/2L`, `MMCG/4B`, `MMCG.2L`, `MMCG.4B` and `CFTR`; no solver-repository clone run
+this pass, out of this brief's named scope -- step 3's edition check below covers the printed-series side of
+the drop-check instead).
+
+**Step 3, edition check:** not reached for a new candidate, since none survived step 2's filter; the two leads
+above are undigitised and unscored, so no printed-edition grep was spent on them this pass (per this brief's
+own step 3, an edition check follows a surviving pair, not a bare lead).
+
+**Step 4, scoring:** `tools/scout_rubric.py` not run -- no survivor to score. `NEG-ANTT1`/`LEAD-ANTT1`/
+`LEAD-ANTT2` rows in `harvest/SCOUT-ANTT-2026-10-24.tsv`.
+
+**Per-host report:** `digitarq.arquivos.pt` ~52 requests this pass (1 reachability check, ~45 search-term
+queries across six batches, 2 `docs/details` calls [one on a `cifra Alorna` hit's id, confirming the CFTR
+fonds name; details on the already-known PX-02 `MNE-ASC/R/4` children came back as search hits only, no
+separate `--list`/`--full` image pull made since nothing digitised survived to eye-check]), all >=3.2s apart,
+well under the brief's <=120 cap. No vision calls made (the six-call budget was unused -- no digitised
+candidate survived the filter to warrant a thumbnail check). `archive.org` 0 (no survivor reached the edition
+step). No WebSearch, no DECODE, no Gallica, no solver-repository clone, no credentials touched.
