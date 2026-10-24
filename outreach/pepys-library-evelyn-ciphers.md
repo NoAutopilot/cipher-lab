@@ -7,7 +7,7 @@ targets: ciphers/_triage/pepys-magdalene-nicholas-ciphers.md (triage lead, no ci
 links: triage=https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/_triage/pepys-magdalene-nicholas-ciphers.md; edition=https://archive.org/details/reportonpepys00greauoft (Historical Manuscripts Commission, Report on the Pepys Manuscripts Preserved at Magdalene College, Cambridge, 1911, E. K. Purnell)
 ask: whether items (5), (69), (71), (303), (352) survive and are legible; whether any has been deciphered or published since 1911; whether the Library can supply digital images and at what cost; the Library's preferred citation form. No payment is authorised by this draft.
 audit: none (a question; no reading or novelty claimed). Rule 10: we say only that we searched and found no prior decipherment, never "new" or "first".
-checked: 
+checked: 24 Oct 2026 16:32 UTC, OUT-CHECK-P14P15 (session separate from the drafter): no correction -- recipient name/email verified live against the cited page (Dr Jane Hughes, pepyslibrary@magd.cam.ac.uk), the archive.org identifier (reportonpepys00greauoft) confirmed to be the 1911 HMC Pepys report, and the five item quotes, the "Catalogue of Letters Taken at Worcester" section heading and the roughly-20-resolved-items figure all confirmed verbatim/in range against the report's own djvu text; recipient address confirmed at https://www.magd.cam.ac.uk/pepys/photography (24 Oct 2026)
 
 ---
 
