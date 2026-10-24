@@ -262,3 +262,12 @@ nomenclator), and the DECODE language tags are unreliable. Assumption still unte
 at all. Most informative experiment: the single f.187 image (it has a crib), now SPRINT P12, optional and low priority. Paging the other 46
 DECODE records is deferred: it is cheap, but a key found there could not be tested without f.187. Decision: acquire (one image), otherwise
 parked; the target stays open.
+
+## Neighbouring pool, 24 Oct 2026 (C-FOLLOW, parent note)
+
+Discovery per-item notes (harvest/C-FOLLOW-2026-10-24-sp84-gloss.tsv): 8 Wickfort/Chauran letters in this same piece (ff.13, 105, 106,
+184, 190, 192, 213, 214) were "Decoded by P.R.O. For key see SP 106/6, no. 32" (f.213: nos. 31 and 35) -- known text, not targets, but
+free known-plaintext controls for that key; 10 undecoded siblings in SP 84/166, 168, 171 (SPRINT P12, widened) are the key-assisted
+candidates. None of the eleven Spanish intercepts in this folder carries the gloss; this folder's premise question (which SP 106/6 record
+is Tomokiyo's no. 34, and whether it matches the Spanish items) is unchanged. Next: DECODE-KEY32 (brief -47) fetches no. 32 (and 31, 35)
+from DECODE into sources/decode/ before any TNA image arrives.

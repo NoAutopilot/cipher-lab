@@ -2133,3 +2133,10 @@ two columns came from other ciphers, and any gate that used them as Cipher-1 kno
 trusted (rule 3: input before negatives). This is a classification lead for the lane that holds this folder, not a finding.
 Also: their matignon1586c3 audit (22-23 Oct) keeps f.276 and f.179 read and puts fr.15573 ff.379-381 at "decoded, not read".
 Snapshots `sources/cyphersolver/2026-10-24-{camus1586,saintluc1586b,malicorne1586,matignon1586tuple}/`.
+
+## Classification lead, 24 Oct 2026 (LANE BNF-FOCUS flag, recorded by the account-4 parent)
+
+Bourdeau's reading audit (cyphersolver 9ea1142f0 -> 6fa6a846b, 24 Oct 2026) now splits fr.15572 into Camus, Saint-Luc, Malicorne and
+tuple ciphers besides Cipher-1. The Cipher-1 controls C1 f.111 and C1 f.260 (A2P4-MATIG) sit on leaves his split assigns to Camus
+(ff.111v-272v) and Saint-Luc (f.260r-v): they may be other ciphers, in which case a control built on them did not test Cipher-1. Not
+acted on; the next worker on this folder re-checks those two controls' leaves against his split before reusing them.

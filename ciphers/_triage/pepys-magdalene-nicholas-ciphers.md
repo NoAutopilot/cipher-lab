@@ -214,3 +214,23 @@ Net: every ia-global hit for the four single phrases traces back to the HMC repo
 of these exact items, never to an independent printed source; the two compound name-variant queries found
 nothing. This is a search result on this date by this method (CLAUDE.md rule 10), not a novelty verdict --
 Google Books specifically still needs a re-run once the host's 503s clear.
+
+### Parent correction (24 Oct 2026, 06:4x UTC, after C-FOLLOW)
+
+The side-check above was wrong, and C-FOLLOW's answer stands: the "Decoded by P.R.O. For key see SP 106/6 no. 32" gloss is real on
+SP 84/165, in Discovery's per-item *note* field (8 items: ff.13, 105, 106, 184, 190, 192, 213, 214, Wickfort and Chauran to Williamson,
+Mar-May 1662; harvest/C-FOLLOW-2026-10-24-sp84-gloss.tsv). The parent read only the search endpoint's scope-content `description`,
+which does not carry the note. Lesson: before contradicting a worker's catalogue reading, fetch `/API/records/v1/details/<id>` and
+read the note field, not the search listing. What does not change: the eleven Fuente items (ff.187, 228-317, Spanish intercepts) carry
+no gloss and stay SPRINT P12; the 9 SP 84/166, 168, 171 items (Wickfort/De Bacquoy, 1660-63) carry no gloss and no key citation, so
+they are key-assisted candidates once imaged, with SP 106/6 no. 32 (and nos. 31, 35) as the key family to test first.
+
+Six questions after C-FOLLOW: learned -- the SP 106/6 no. 32 family has 8 PRO-decoded letters (built-in known-plaintext controls) and
+10 undecoded ones in the same network; the Pepys phrases have no independent print on archive.org (Google Books not searched, 503 all
+session); the Heathcote papers split between Huntingdonshire Archives (CON) and Barking and Dagenham (M51-286). Assumptions -- that the
+PRO decodes used no. 32 for every one of the 8 (their notes say so); that the 1660-63 letters use the same key as 1662 (M). Unverified --
+which half holds the 1659 Hyde items; the DECODE images of SP 106/6 nos. 31, 32, 35. Alternatives -- the 1660 and 1663 items may use a
+later or earlier key (Wickfort's own "nouveau chiffre", f.214, May 1662). Most informative next experiment -- get the SP 106/6 no. 32
+key on disk from DECODE now (one browser login, per-record full-size test, A2-HDK), so the pool is ready when the TNA images arrive
+(brief -47, DECODE-KEY32). Decision -- acquire (SPRINT P12 widened to the SP 84/166-171 items; no new money ask); Heathcote stays an
+open triage lead with one cheap catalogue step named in its file.
