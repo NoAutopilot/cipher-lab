@@ -1,0 +1,1 @@
+Unmodified snapshot of github.com/dbourdeau/cyphersolver targets/malicorne1586/NOTES.md at commit 6fa6a846bafd3170e3433ea1a665b61b88926122, fetched 24 Oct 2026 by LANE BNF-FOCUS (account 2). Licence: code MIT, text CC BY 4.0; contributors credited inside. Do not edit.

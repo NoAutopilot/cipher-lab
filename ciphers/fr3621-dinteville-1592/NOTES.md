@@ -1,4 +1,5 @@
-partial
+found-solved
+Found solved 24 Oct 2026 (LANE BNF-FOCUS re-screen): Alex Zarco completed this folder's partial key from f.128's interlinear decipherment and read f.130, 514 of 522 tokens (dbourdeau/cyphersolver dinteville1592, PR #24, verified 7 Oct 2026); section "Found solved elsewhere" at the end. Was `partial`.
 Gomberville, *Mémoires du duc de Nevers* (1665) seconde partie (Google Books H2eV4wAmIr0C) full-text searched by this worker (GF4-BATCH9, 3 Oct 2026) for Dinteville, Dinteuille, Dintevile (0 hits), Langres (10, pp.256-390, none this letter), "deux millions", Strasbourg, "armee lorraine" -- letter absent.
 
 **Hold lifted, LANE N4 scGOM2, 24 Sept 2026:** the genuine seconde partie is Google Books `H2eV4wAmIr0C` (title
@@ -988,3 +989,15 @@ Dinteville letters of July 1592: Français 3618, 3619, 3621 (cc50071b; its list 
 folder's f.130); fr.3634 no.84 (4 July, not flagged chiffre). Not found: any Dinteville letter dated 5 or 13 July 1592 in these
 volumes. The WebSearch lead (line 116 above) stays unconfirmed by any catalogue; nothing to read. fr3631 no.27 (14 June 1593) still has
 no Gallica copy (cc50081j, "Réserver" only), so that folder stays blocked on the image.
+
+
+## Found solved elsewhere (24 Oct 2026, LANE BNF-FOCUS, account 2)
+
+dbourdeau/cyphersolver `targets/dinteville1592`: "Status: read. Key recovered from adjacent plaintext (the interlinear decipherment of f. 128) by
+an outside contributor, Alex Zarco (GitHub alejandrozarco, PR #24, 6 Oct 2026), completing a partial key published by
+NoAutopilot (github.com/noautopilot/cipher-lab, `ciphers/fr3621-dinteville-1592/`). Verified and written up here 7 Oct 2026."
+Their measure: f.130, 514 of 522 cipher tokens read as sense (98.5%), 8 open; f.128 (no.114, 1 July 1592) reads in full with
+the same key; homophonic substitution with diacritic variants and nulls, no nomenclator seen.
+So this folder's partial key was the starting point of their reading: credit Alex Zarco for the completion and the reading,
+D. Bourdeau for the verification. Missed by this lane's 13-23 Oct screens (merged 7 Oct, before the screened HEADs; no status
+change since). Snapshot `sources/cyphersolver/2026-10-24-dinteville1592/NOTES.md`.

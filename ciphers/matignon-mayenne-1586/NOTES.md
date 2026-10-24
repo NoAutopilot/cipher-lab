@@ -2118,3 +2118,18 @@ up 22 Oct 2026": after contributors' complete re-transcription (issues #73, #77,
 tokens read as sense (10,616 of 16,677; 58.7% after a scrambled-key control), every Cipher-1 leaf transcribed in full". The
 margin over their own scrambled-key control is 5 points; any use here treats their transcription and key as inputs to test, not
 as a reading. Snapshot `sources/cyphersolver/2026-10-23-matignon1586/NOTES.md`. Status here stays `partial`.
+
+
+## Premise check from Bourdeau's 23-24 Oct split of fr.15572 (24 Oct 2026, LANE BNF-FOCUS, account 2)
+
+dbourdeau/cyphersolver now gives separate entries (separate ciphers) for leaves of this volume that this folder has used as Cipher-1:
+- `camus1586`: Camus de Pontcarre to Villeroy, March-June 1586, "cipher passages in BnF fr. 15572 ff. 111v-272v (Camus's
+  cipher)", read in part from the contemporary decipherments (Michael Brackx, issue #91): f.111v 0.961, f.112r 0.974, f.151r
+  middle block 0.963; others read in part or decoded, not read.
+- `saintluc1586b`: Saint-Luc to Henri III, Brouage, June 1586, fr.15572 f.260r-v (in progress).
+- `malicorne1586` (ff.162-164) and `matignon1586tuple` (ff.234r-238v, f.234r read in part on its glosses, Brackx #86/#95).
+This folder's A2P4-MATIG table (3 Oct) scored "C1 f.111" and "C1 f.260" as Cipher-1 controls. If their split is right those
+two columns came from other ciphers, and any gate that used them as Cipher-1 known-answer leaves needs re-reading before it is
+trusted (rule 3: input before negatives). This is a classification lead for the lane that holds this folder, not a finding.
+Also: their matignon1586c3 audit (22-23 Oct) keeps f.276 and f.179 read and puts fr.15573 ff.379-381 at "decoded, not read".
+Snapshots `sources/cyphersolver/2026-10-24-{camus1586,saintluc1586b,malicorne1586,matignon1586tuple}/`.

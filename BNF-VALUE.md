@@ -424,3 +424,17 @@ Bourdeau HEAD aa2e11dc0 -> 9ea1142f0 (a "full texts" pass over 343 pages; only s
 4d0ab23 -> bde4ab7 (a Pillow upgrade only). No new item-level match. Two notes: decode-2754-bnf-baluze156-1636's Sabran sibling
 lead is answered against it (Baluze 156 f.157 "in another key, too short to break alone", Lasry PR 84 / Bourdeau); Matignon
 Cipher-1 re-measured there at 63.7% vs 58.7% scrambled-key control. ASKS 163/169 unanswered; fr.3982 f.25 / fr.3985 f.89 no hit.
+
+## Wave 44 (24 Oct 2026, 06:1x UTC by date -u)
+Bourdeau HEAD 9ea1142f0 -> 6fa6a846b (a reading audit of 22-23 Oct relabelled ~100 status lines; contributors' issues #82,
+#86, #91-#95; a Nationaal Archief sweep); Aymeloglu bde4ab7 unchanged. Status-line diff first, then the folio and volume cross:
+- **fr3621-dinteville-1592 -> found-solved**: Alex Zarco (alejandrozarco, PR #24) completed this project's published partial key
+  from f.128's interlinear decipherment and read f.130, 514 of 522 tokens; verified by Bourdeau 7 Oct. Missed by every screen
+  since 13 Oct: it predates the screened HEADs and its status line never changed. Lesson: the first screen of a lane crosses the
+  whole tree, not only commits since a HEAD; a whole-tree cross was run today and found no further unrecorded match.
+- matignon-mayenne-1586: their new fr.15572 entries (Camus's cipher ff.111v-272v, Saint-Luc f.260, Malicorne ff.162-164, the tuple
+  cipher ff.234-238) put two leaves this folder scored as Cipher-1 controls (f.111, f.260) in other ciphers -- a classification
+  lead for the holding lane.
+- sforza-maino-1446: their audit keeps f.68 read and moves f.70 to "decoded, not read" (note added).
+- Every earlier found-solved of this lane was re-checked against the audit: none rests on a downgraded entry.
+ASKS 163/169 unanswered; fr.3982 f.25 / fr.3985 f.89 no hit.

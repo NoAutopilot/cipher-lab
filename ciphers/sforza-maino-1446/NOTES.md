@@ -489,3 +489,8 @@ one key, two letters." Their table: f.68 (R7898) 425 cipher tokens, 399 assigned
 Our 23 Sept joint nomenclator anneal (above) ran against the 208 Sforza keys of September, which they also found do not fit:
 our negative stands as a negative for those keys, not for the cipher. Snapshot (unmodified): `sources/cyphersolver/2026-10-21-it1583/NOTES.md` (their HEAD fa5374ed3).
 Credit: George Lasry (key, reading; CTTS), D. Bourdeau (check, write-up docs/it1583.html).
+
+
+Update 24 Oct 2026 (LANE BNF-FOCUS): Bourdeau's reading audit of 22 Oct now lists it1583 as "in progress. f. 68 read; f. 70
+decoded, not read". So f.68 is found-solved; f.70 has Lasry's key applied but no reading there yet. Snapshot
+`sources/cyphersolver/2026-10-24-it1583/NOTES.md`.
