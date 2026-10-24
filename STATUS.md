@@ -276,6 +276,19 @@ items still read 'Undecoded cipher', P12 unchanged. LEAD-AO2 (Heathcote/Fanshaw)
 program-C brief. Sorters (ASKS 173, 175) still empty; no owner scans yet; Gallica still 403. Nothing live. Spend this check-in by
 program: A 0, B 0, C 4.36.
 
+Check-in 146 (24 Oct 2026, 06:3x UTC). C-FOLLOW (USD 3.62, D-, 1.21x cap): the SP 84/165 'Decoded by P.R.O.' gloss is real after
+all -- 8 Wickfort/Chauran letters, key SP 106/6 no. 32, in Discovery's per-item note field, which check-in 145's scope-content-only
+side-check did not read (corrected in the triage note, QUEUE.md and here; lesson in the ledger). The 9 SP 84/166, 168, 171 items carry
+no gloss and no key citation: a second key-assisted pool once imaged, so SPRINT P12 is widened (one more folio with f.187, no new money
+ask) and the 8 PRO-decoded letters are free known-plaintext controls. Pepys phrases: no independent print on archive.org; Google Books
+503 all session (not searched). Heathcote/Fanshawe papers split between Huntingdonshire Archives (CON) and Barking and Dagenham
+(M51-286), the 1659 items' half unconfirmed: open triage lead, no ask. BNF-FOCUS flag acted on: fr3621-dinteville-1592 is found-solved
+(Alex Zarco completed our partial key from f.128 and read f.130, 514/522; cyphersolver PR #24, Bourdeau verified 7 Oct) -- the status.json
+result row carries it in superseded_by, ASKS 112's sorter is moot; matignon-mayenne-1586 gets a classification lead (Bourdeau's fr.15572
+split may put the C1 f.111/f.260 controls on other ciphers). Spawned DECODE-KEY32 (Sonnet, cap 3): SP 106/6 nos. 31, 32, 35 from DECODE
+into sources/decode/ before any TNA image arrives. Sorters (ASKS 173, 175) still empty; no owner scans. Spend this check-in by program:
+A 0, B 0, C 3.62.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
