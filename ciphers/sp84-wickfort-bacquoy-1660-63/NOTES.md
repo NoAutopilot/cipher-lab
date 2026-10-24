@@ -399,3 +399,12 @@ exit: 0
    the two-folio order.
 6. **Decision.** KEY32-CONFLICTS (brief -50, Sonnet, offline) now; the copy order is the owner's (SPRINT P12); no decode until f.106 is
    on disk and the key reads it.
+
+## Parent note (account-4 parent, 24 Oct 2026, 12:1x UTC): after KEY32-CONFLICTS -- parked
+
+Learned: of 210 conflicting keys, 140 are the same value spelled two ways, 60 are real disagreements (all but a handful in the person
+class), 1 is a page-boundary shift inside copy 509 (codes 70/71). Assumption: that a letter will arbitrate the 60; nothing else can.
+Unverified: every row against a real cipher text. Alternative: both copies may be imperfect transcriptions of one sheet rather than two
+period copies -- the DECODE record pages (0096 vs 0099-0101) say two sheets, which is what the conflicts look like. Most informative
+next experiment: the TNA order (REQUEST.md); nothing inside the session advances this folder further. Decision: **parked** on SPRINT
+P12; the folder stays `blocked`; no decode until SP 84/165 f.106 is on disk and key.tsv reads it.
