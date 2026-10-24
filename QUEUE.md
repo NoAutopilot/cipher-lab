@@ -7904,3 +7904,85 @@ Requests: `www.nationaalarchief.nl` 11 (finding-aid XML downloads and item pages
 one shallow grep each of `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers` (kept in `/tmp`, not
 committed). No Gallica. `archive.org` and Huygens retroboeken were not used this pass -- the finding-aid reads and
 digitisation checks consumed the budget before a full-text decipherment search was needed for any FG row.
+
+## Open-route candidates (24 Oct 2026, SCOUT-OPEN)
+
+Worker SCOUT-OPEN (account 4, Sonnet 5; brief `.claude/briefs/runs/2026-10-23-acct4-research-director-44.md`,
+program C). Same filter as 23 Oct's SCOUT-KEYS2/SCOUT-FAGEL (key material on file or in reach AND no surviving
+decipherment/printed plaintext), run on the hosts that serve images today per the brief: TNA Discovery API
+(`digitised=true`), loc.gov JSON, archive.org, Europeana/DPLA (keys). No Gallica, no Nationaal Archief. Never
+promoted, never decoded. Full rows: `harvest/SCOUT-OPEN-2026-10-24.tsv`.
+
+**Headline negative: TNA Discovery's search API has no working `digitised` filter.** `sps.digitised=true`,
+`sps.onlyDigitised=true` and `sps.includeDigitised=true` all returned identical counts to no filter at all
+(225/225 on one test query) -- silently ignored, not applied. The only way to check is per-item, via
+`/API/records/v1/details/<id>`, which carries a real `digitised` boolean. Searched SP 78, 81, 84, 94, 105, 106
+for "cipher"/"cypher" (14 search calls, 494 unique ids; PRO 30 as a `sps.recordSeries` value returned 0 --
+the department-level `sps.department=PRO` filter works but the series-level one does not, a second Discovery
+API gap). Spot-checked `digitised` on 18 items spanning SP78/81/84/105/106 and 1627-1755: **0 of 18 are
+digitised:true.** This matches every existing QUEUE/ciphers/ TNA row (all `digitised:false`, all needing a page-
+copy order) -- TNA is not a "serves images today" host for this cipher pool, at least not reachable by any
+Discovery API filter tried.
+
+**A side-finding worth folding into existing QUEUE row K4** (SP 84/165, Williamson's Dutch-intelligence
+correspondents, key SP106/6): the same correspondent network (Wickfort, De Bacquoy, to Williamson) carries
+"Undecoded cipher"/"Part in undecoded cipher" note-field flags on **9 more items across three neighbouring
+pieces** -- SP 84/166/7,41,51,52,71,81,84,98 and SP84/168/26 and SP84/171/55, 1660-1663 -- none of which carry
+the "Decoded by P.R.O." gloss that most of SP84/165's own undecoded-cipher items do (those were already
+decoded by the Public Record Office itself using SP106/6 no.32, so most of K4's own piece is not actually a
+fresh target either, a correction to K4's "open, not solved" framing: re-check K4's own ff.228 etc. against
+this "Decoded by P.R.O." pattern before scoring it as unread). The 9 new items in 166/168/171 are, as far as
+this pass found, genuinely undecoded and unresolved -- a wider pool in the same key family than K4 captured,
+still all `digitised:false`.
+
+**Two archive.org leads (not candidates -- the physical manuscript's digitisation is unconfirmed), found by
+full-text phrase search (`be-api.us.archive.org/fts/v1/search`, `"in cipher, undeciphered"`, 80 total hits
+across every HMC/Calendar volume on IA):**
+- **LEAD-AO1**: the Pepys Papers (Sir Edward Nicholas's Civil War/exile collection) at Magdalene College,
+  Cambridge, per *Report on the Pepys Manuscripts* (HMC, 1911; `reportonpepysman0000unse_f0i4` and three
+  sibling IA copies). The same two volumes (Vol. II/III) that hold the undeciphered items also hold, by the
+  editors' own index at p.308, **key material for ~10 named period ciphers** (Leicester/Huggins; Secretary
+  Coke/Sir Henry Vane, 1638; Sir Sackville Crow's; Mr Hale's; a cipher "to be sent to Mr. Hopton in Spain" and
+  Lord of Dorchester's, used with Sir Balthasar Gerbier, 1641; Lord Aston/Dorchester; Archbishop of Canterbury,
+  1639; Jo. Tailor's; Secretary Windebank's "old Cipher"; Rowlandson's). Undeciphered partners in the same
+  volumes, none resolved by the 1911 editors: item (5) "1648, Aug 5 -- From [name in cipher] to Duke of York,
+  written mostly in cipher"; (303) "Letters in ciphers from The King"; (352) "A letter to the Prince in
+  cipher"; (71) "A triplicate in cipher from Mr. Hansnaw" (contrast several *other* items in the same report,
+  e.g. a 1664 Bennet-to-Fanshaw cipher the editors did work out against a printed edition -- so "undeciphered"
+  in this report is a real, checked state, not an unexamined label). No existing folder or mention anywhere in
+  this repo (`ciphers/sp77-nicholas-1659` and `ciphers/hyde-add4166-1659` are different items, different
+  physical sources). Not scored as a candidate: the catalogue is digitised (archive.org), the physical Pepys
+  Papers at Magdalene's own Pepys Library are not confirmed digitised anywhere this pass.
+- **LEAD-AO2**: *Manuscripts of J.M. Heathcote, Esq., Conington Castle* (HMC, 1899; `manuscriptsofjmh00greauoft`
+  and three sibling IA/Google-Books copies) -- almost entirely Sir Richard Fanshaw's own correspondence as
+  ambassador to Portugal and Spain, 1661-66, described as a "companion series" to TNA's own SP89 Portugal class
+  and to BL Harley MS 7010. Two items, pp.155-156, both Edward Hyde (later Earl of Clarendon) to Fanshaw, 1659
+  (before Fanshaw's embassy, during the exile Secretaryship period), each "[The parts/words in italics are in
+  cipher, undeciphered]" with no editorial resolution -- distinct from `ciphers/hyde-add4166-1659` (BL Add MS
+  4166, a different intercepted letter) and from the collection's own later (1664) Bennet-to-Fanshaw cipher
+  items, which the 1899 editors *did* resolve by matching them to the printed 1724 "Original Letters of ...
+  Richard Fanshaw" edition (that edition covers Jan 1664-Feb 1665 only, so the 1659 items are outside its
+  range and not in it). Key evidence is indirect for these two items specifically (no "key amongst the papers"
+  note in the same breath, unlike the 1664 items two pages later in the same collection) but the collection
+  demonstrably kept ciphers alongside letters. Current holder of the physical Heathcote/Conington Castle papers
+  not traced this pass (a private family collection as of 1899; may have been dispersed since). Not scored as a
+  candidate for the same reason as LEAD-AO1.
+
+**Checked and dropped:**
+- **loc.gov "lesser collections"** (Rufus King, David Humphreys, Jonathan Dayton, per the brief): no standalone
+  manuscript collection for any of the three exists at LoC; every cipher-flagged hit falls inside the
+  Madison/Jefferson/Washington Papers (`mjm`/`mtjbib`/`mgw` item-id prefixes), already established as inside
+  Founders Online's editorial coverage by the 24 Sept 2026 LANE N LoC sweep (QUEUE.md "Library of Congress
+  digitised manuscripts" above). No new query surfaced a non-Big-3 manuscript hit.
+- **Europeana/DPLA** (`TYPE:TEXT`, cipher/cypher/undeciphered): noise-dominated on both hosts (modern
+  cryptography papers, commercial telegraph codebooks), 0 manuscript-correspondence hits -- consistent with
+  SCOUT-KEYS2's 23 Oct finding on the same two hosts.
+
+Requests: `discovery.nationalarchives.gov.uk` ~35 (14 search + ~21 details/digitised checks, >=1.5s apart);
+`be-api.us.archive.org` 2 (full-text phrase search); `archive.org/download` 2 (djvu text, two HMC reports);
+`www.loc.gov` ~10 (JSON search, several name queries); `api.europeana.eu` 1 (keyed); `api.dp.la` 1 (keyed). No
+Gallica, no Nationaal Archief, no subagents, no logins, no credentials. `tools/prior_work.py` not run against a
+target slug: neither LEAD-AO1 nor LEAD-AO2 has a folder yet; due diligence instead was an offline grep of
+QUEUE.md, CATALOG.md, LANDSCAPE.md and `ciphers/` for Pepys/Heathcote/Fanshaw/Nicholas/Coventry/Conington
+(no hit for either lead; two unrelated existing folders for other Hyde/Nicholas items, both different physical
+sources, checked and distinguished above).
