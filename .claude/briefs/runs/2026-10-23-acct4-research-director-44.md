@@ -63,3 +63,17 @@ plaintext found (grep the Heinsius volumes' djvu text for the letter's date and 
 tools/prior_work.py on each you would promote. Output: QUEUE.md "## Fagel key register: envoys' own ciphertext (23 Oct 2026,
 SCOUT-FAGEL)" table (key id, envoy, post/years, letters located, scans yes/no, decipherment/print found or not, est. signs, score) and
 harvest/SCOUT-FAGEL-2026-10-23.tsv. Never promote; never decode. Report: keys checked, candidates meeting both filters, top three, five lines.
+
+## JOB SCOUT-OPEN (account 4; Sonnet 5; cap USD 5; box 50 minutes; hosts: discovery.nationalarchives.gov.uk (API, digitised=true), www.loc.gov (?fo=json) and tile.loc.gov, archive.org (advancedsearch + full text), Europeana and DPLA APIs (keys), crowd.loc.gov only via its public JSON if it answers; no Gallica, no nationaalarchief; one request at a time, >=1.5 s apart, <=60 per host; Price: vision calls: 0 x USD 0 = 0)
+
+Program C. The two richest routes are closed for now (Gallica 403 since 20 Oct; NA physical-only, SCOUT-FAGEL). This pass works only
+hosts that serve images today, with SCOUT-KEYS2's filter: a candidate counts only if (a) a key, decipherment, gloss, clear copy or code
+book is on file or in reach, AND (b) the cipher item itself has no surviving period decipherment and no printed plaintext you can find.
+Searches: TNA Discovery API with `digitised=true` (and the "free to download" digital microfilm series) for cipher/cypher/decipher/key
+in SP 78, 81, 84, 94, 105, 106 and PRO 30; LoC search JSON for "cipher" in manuscript divisions (Madison, Monroe, Jefferson, Franklin,
+Washington papers already read by others -- check prior_work; look instead at lesser collections: Pinckney, King, Short, Humphreys,
+Dayton); archive.org manuscripts and "calendar" volumes whose index says "in cipher, undeciphered"; Europeana/DPLA TYPE:TEXT. For each
+hit: the item description and neighbours for a decipherment, the standard editions by whole-volume grep for the plaintext,
+`tools/prior_work.py <slug>`, `tools/scout_rubric.py`. Output: QUEUE.md "## Open-route candidates (24 Oct 2026, SCOUT-OPEN)" table and
+harvest/SCOUT-OPEN-2026-10-24.tsv. Never promote; never decode. Report: candidates meeting both filters, top three with evidence, hosts
+and request counts, five lines.
