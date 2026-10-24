@@ -170,3 +170,18 @@ total below. WebSearch: 2 queries (counted in the job total below).
 (Superseded by HEATHCOTE-HOLDER above: Huntingdonshire's own online catalogue has since been searched directly
 -- 0 hits for "Hyde 1659" -- and the Barking/Dagenham side resolved to a named record, M51-286 / N13657938, with
 a named item-level finding aid, R.M. Walker & W.H. Liddell 1999, not yet opened.)
+
+## Parent note (account-4 parent, 24 Oct 2026, 13:4x UTC): the six questions after HEATHCOTE-HOLDER
+
+1. **Learned.** Both items are printed as undeciphered by editors who say they partly recovered the key from Fanshaw's own garbled
+   attempt; a published Hyde key of 12 June 1659 (Barwick) sits eight days from item 1's dateline; the 1659 letters are not in CON 7
+   at Huntingdonshire, so Barking and Dagenham (M51-286) is the likelier holder; no clear text in CSP Clarendon IV or the 1724 Letters.
+2. **Assumptions.** That HMC 1899 prints only an English gloss and not the cipher figures (the worker read OCR text, where italic
+   numerals are exactly what OCR drops -- unverified against the page image); that Hyde used the Barwick key with Fanshaw too.
+3. **Unverified.** What the italic passages on the printed page actually are (figures, or Fanshaw's garbled reading); the Barwick table's
+   printed form; CSP Clarendon vol. V; the Arlington "wrong key" letter in SP 94.
+4. **Alternatives.** The HMC editors may have printed the cipher groups themselves in italics (the usual HMC convention for
+   unresolved cipher), in which case ciphertext and a candidate key are both in print and the whole test runs from the desk.
+5. **Most informative next experiment.** Look at the printed pages, not the OCR: HMC 1899's leaves for the two letters and the Barwick
+   key pages in the Life of Dr John Barwick, both public domain on archive.org (HEATHCOTE-PAGES, brief -52).
+6. **Decision.** Continue (program C, cheap); no folder until the page look says there is ciphertext in print or a holder copy route.
