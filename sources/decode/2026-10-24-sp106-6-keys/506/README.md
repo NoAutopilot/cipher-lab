@@ -17,5 +17,15 @@ table), not the up-to-999 numeral system of nos. 31/35.
 No key.tsv edit, no decode, no reading beyond citing DECODE's own existing transcription for the match
 assessment (per brief).
 
+**Correction (job KEY32-TSV-PROMOTE, 24 Oct 2026):** the "does not carry 509's Villes/Royaulmes/word-list
+continuation" claim above is wrong. Re-reading 506's full attached text to build
+`ciphers/sp84-wickfort-bacquoy-1660-63/key.tsv` found 506 does carry its own `<CLEARTEXT FR Villes>` and
+`<CLEARTEXT FR Royaulmes>` sections and a complete word/syllable homophone list through to Z and the null row --
+506 is one physical page of very dense writing, not a partial table. Cross-checking the two sources' overlapping
+codes found 210 of 549 shared (class, code, mark) keys (38%) carry a different `meaning` string between 509 and
+506 -- mostly small spelling/reading variants on the same name (e.g. person code 21: "le Duc Danjou" in 509 vs
+"M^r le d. Danine" in 506), logged per CLAUDE.md rule 4 as data conflicts in key.tsv's `note` column, not
+resolved by majority. See `ciphers/sp84-wickfort-bacquoy-1660-63/NOTES.md` "## Key" for the full detail.
+
 Images and documents stay in the session scratchpad (`sources/decode/NOTES.md`); this folder keeps only this
 README and manifest.json for a re-fetch.

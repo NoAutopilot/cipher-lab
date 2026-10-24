@@ -1,0 +1,16 @@
+# tools/prior_work.py leaf looks, append-only: the newest row per (item, role, folio, canvas, image) is current
+utc	item_id	look_row_id	role	folio	canvas	image	source	status
+2026-10-24 09:29	adhoc-31a202	adhoc-31a202:2-leaf:e5b198	cipher-page	85r			folio arithmetic	owed
+2026-10-24 09:29	adhoc-31a202	adhoc-31a202:2-leaf:e5b198	facing	84v			folio arithmetic	owed
+2026-10-24 09:29	adhoc-31a202	adhoc-31a202:2-leaf:e5b198	before-2	84r			folio arithmetic	owed
+2026-10-24 09:29	adhoc-31a202	adhoc-31a202:2-leaf:e5b198	after-1	85v			folio arithmetic	owed
+2026-10-24 09:29	adhoc-31a202	adhoc-31a202:2-leaf:e5b198	after-2	86r			folio arithmetic	owed
+2026-10-24 09:29	adhoc-31a202	adhoc-31a202:2-leaf:e5b198	after-3	86v			folio arithmetic	owed
+2026-10-24 09:29	adhoc-31a202	adhoc-31a202:2-leaf:e5b198	after-4	87r			folio arithmetic	owed
+2026-10-24 09:29	adhoc-bce2b4	adhoc-bce2b4:2-leaf:94c2fd	cipher-page	106r			folio arithmetic	owed
+2026-10-24 09:29	adhoc-bce2b4	adhoc-bce2b4:2-leaf:94c2fd	facing	105v			folio arithmetic	owed
+2026-10-24 09:29	adhoc-bce2b4	adhoc-bce2b4:2-leaf:94c2fd	before-2	105r			folio arithmetic	owed
+2026-10-24 09:29	adhoc-bce2b4	adhoc-bce2b4:2-leaf:94c2fd	after-1	106v			folio arithmetic	owed
+2026-10-24 09:29	adhoc-bce2b4	adhoc-bce2b4:2-leaf:94c2fd	after-2	107r			folio arithmetic	owed
+2026-10-24 09:29	adhoc-bce2b4	adhoc-bce2b4:2-leaf:94c2fd	after-3	107v			folio arithmetic	owed
+2026-10-24 09:29	adhoc-bce2b4	adhoc-bce2b4:2-leaf:94c2fd	after-4	108r			folio arithmetic	owed
