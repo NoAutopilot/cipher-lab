@@ -185,3 +185,58 @@ a named item-level finding aid, R.M. Walker & W.H. Liddell 1999, not yet opened.
 5. **Most informative next experiment.** Look at the printed pages, not the OCR: HMC 1899's leaves for the two letters and the Barwick
    key pages in the Life of Dr John Barwick, both public domain on archive.org (HEATHCOTE-PAGES, brief -52).
 6. **Decision.** Continue (program C, cheap); no folder until the page look says there is ciphertext in print or a holder copy route.
+
+## Printed pages (HEATHCOTE-PAGES, 24 Oct 2026)
+
+Worker: worker HEATHCOTE-PAGES (account 4), for the account-4 parent. 24 Oct 2026, 13:3x-14:1x UTC.
+
+**(c) something else -- not cipher figures, not Fanshaw's own garbled English.** Looked at the actual HMC 1899 page images
+(`archive.org/manuscriptsofjmh00greauoft`, leaves n42/n43 for item 1, printed pp.9-10; leaf n49 for item 2, printed p.16;
+leaf numbers found via archive.org's search-inside API, `.../fulltext/inside.php?...&q=<phrase>`, which returns the real
+image leaf for a quoted phrase -- more reliable than the djvu.txt page-marker count, which is off by at least one leaf in
+places). In both items, "the parts/words in italics" are ordinary English words and phrases set in italic type, printed
+inline in the fully readable catalogue-entry prose -- not raw cipher numerals or symbols (OCR cannot have dropped digits
+here; there are none to drop) and not Fanshaw's own garbled attempt (his garbled reading is quoted separately, only in the
+preface, as "from they wara onga ha here divide gaine"). Item 1's italicized phrase includes, verbatim, **"for the wrong he
+has aone [done] you"** -- the exact phrase the preface says Fanshaw's own botched decipherment rendered as the garbled form
+above. So the italics are the HMC 1899 editors' own reconstructed plain-English reading of the passages that were in cipher
+in the manuscript, informed by (but not identical to) Fanshaw's garbled attempt and whatever key the editors partly
+recovered from it (preface, quoted in HEATHCOTE-HOLDER's section above) -- printed inline as the editors' own inferred
+plaintext, with the bracketed "[undeciphered]" apparently a retained/formulaic catalogue note rather than a literal claim
+that nothing was read. Item 2's italicized phrase: "thank me in your next for the books I sent you" (plain English,
+Postscript, leaf n49, printed p.16). **No cipher groups exist in print for either item** -- there is nothing to transcribe
+into a ciphertext TSV, and no `heathcote-1659-ciphertext.tsv` was written. Quote, item 1 (leaf n43, printed p.10): "In the
+handwriting of his son; the last few words only by himself. 1½ pp. *[The parts in italics are in cipher, undeciphered.]*"
+Quote, item 2 (leaf n49, printed p.16): "Holograph. *[The words in italics are in cipher, undeciphered.]* 1 p.†"
+
+This does not settle whether the manuscript cipher groups themselves (the actual numerals Hyde wrote) are extant and
+legible at whichever holder has the originals (Barking and Dagenham, per HEATHCOTE-HOLDER) -- only that HMC 1899 did not
+print them, printing instead its own editorial English reading of the ciphered spans.
+
+**Barwick key: yes, a full table, two legible leaves.** Found both editions on archive.org: Latin *Vita Johannis Barwick*
+(1721, `bim_eighteenth-century_vita-johannis-barwick-s_barwick-peter_1721`) and English *Life of Dr. John Barwick* (1724,
+`bim_eighteenth-century_the-life-of-the-reverend_barwick-peter_1724`). The English edition (leaf n437, printed p.408) gives
+only a prose description of the cipher's structure (numbers 1-692 in 11 columns, three numbers per letter except K/W/Y two
+and X/Z none, a 9-number specimen) and says the full table "as printed in the Appendix to the Latin Life" is the real
+source (leaf n454, printed p.454, quoting specific code values 521="Force", 351="might" against that Latin appendix). The
+Latin edition's own appendix (which prints the correspondence in its original English, not translated) carries, facing
+printed p.316, a two-page table headed "No. VIII. Tabula Cryptographica" -- leaf n386 (codes 1-441-ish, printed page
+unnumbered/table page 1) and leaf n387 (codes ~441-692, headed "...A Cryptographica", printed table page 2) -- matching
+Tomokiyo's charlesii.htm citation exactly ("facing p.316"). Both leaves are sharp, legible, 7-8 column-groups of
+`code—meaning` pairs organized by the initial letter of the meaning (A through Y, skipping J/U; K, W, Y get 2 numbers each,
+other letters 3; X and Z get none in the 1-63 range per the English edition's own structural note). This is well over 150
+rows (close to the full 1-692 run, with gaps for unused/decoy numbers), so per the brief this is a **one-pass** transcription,
+not two independent passes -- two Sonnet subagent calls, one per leaf, dispatched with explicit column-structure instructions;
+reconciled only for obvious formatting (not cross-checked against a second independent read). Written to
+`ciphers/_triage/heathcote-1659-barwick-key.tsv` (columns: code, meaning, class, source_page -- class is `letter-row` for the
+numbers 1-63 whose row groups by a single alphabet letter, `word`/`name`/`blank` otherwise as printed). Graded **H**
+(published period key, 1721/1724 print) for the mapping as printed; **not yet matched to any ciphertext**, since no cipher
+groups are in print for either Heathcote item and the manuscript originals have not been imaged (see above).
+
+Hosts/requests this job: archive.org only -- metadata 3 (HMC 1899, Barwick Latin, Barwick English), djvu.txt/djvu.xml 2
+(HMC 1899 only, to locate the italics passages before search-inside was found faster), search-inside (`fulltext/inside.php`)
+6 (2 HMC phrase queries, 1 Latin "cyphra" [0 hits], 1 Latin "Cypher" [9 hits], used to locate leaves), page images 13 (HMC
+n42/n43/n49/n50 = 4; Barwick English n436/n437/n438 = 3; Barwick Latin n383/n384/n385/n386/n387 = 5; one wasted fetch,
+n50, before correcting to n49), one 504 gateway timeout on the Latin "cyphra" search, retried once per the good-citizen
+rule and succeeded (0 hits, real). All >=1.5 s apart, one at a time. 2 Sonnet subagent vision calls (the table leaves only;
+the italics-determination leaves were read directly by this worker, not priced as subagent vision calls).
