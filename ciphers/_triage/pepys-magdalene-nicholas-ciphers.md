@@ -148,3 +148,69 @@ SP 84/165's own undecoded-cipher items" carry a "Decoded by P.R.O." gloss is not
 match "SP 84/165" cipher and 25 match "SP 84/165" decoded, 0 carry any "decoded by" gloss, and the eleven Fuente items (ff.187, 228,
 231, 243, 258, 263, 287, 306, 313, 315, 317) all still read "Undecoded cipher". The gloss, if it exists, is on SP 84/166-171 items;
 SPRINT P12 and ciphers/sp84-fuente-1662 are unchanged.
+
+## Correction (C-FOLLOW, 24 Oct 2026, 05:3x UTC): the gloss IS on SP 84/165 -- it lives in the `note` field, not `scopeContent.description`
+
+The parent's side-check above searched/read the field the Discovery search-records listing shows by default
+(`scopeContent.description`); the "Decoded by P.R.O." text is a *cataloguer's note*, returned only by the
+per-item details endpoint (`/API/records/v1/details/<id>`) as the `note` field, which the side-check did not
+fetch. Querying Discovery's full-text search for the exact phrase `"Decoded by P.R.O."` (no series filter)
+returns exactly **8** items, and querying `"SP106/6"` (no series filter) returns those same 8 plus the key
+piece itself (SP 106/6, record C3677736) -- **all 8 are in SP 84/165**, none in SP 84/166, 168 or 171:
+
+| ref | folio | date | correspondents | note (verbatim) |
+|---|---|---|---|---|
+| SP 84/165/8 | 13 | 1662 nd | [Chauran] to [Williamson] | Original document partly in undecoded cipher. Decoded by P.R.O. For Key, see SP 106/6, no. 32. |
+| SP 84/165/65 | 106 | 1662 Mar 5 | Wickfort to [Williamson] | ...Decoded by P.R.O. For key see SP 106/6, no. 32 |
+| SP 84/165/64 | 105 | 1662 May 3 | Wickfort to [Williamson] | ...Decoded by P.R.O. For key see SP 106/6, no. 32 |
+| SP 84/165/109 | 184 | 1662 Apr 19 | Wickfort to [Williamson?] | ...Decoded by P.R.O. For key see SP 106/6, no. 32. |
+| SP 84/165/114 | 190 | 1662 May 7 | [Chauran?] to [Williamson?] | ...Decoded by P.R.O. For key see SP 106/6 no. 32. |
+| SP 84/165/115 | 192 | 1662 Apr 26 | Wickfort to [Williamson?] | ...Decoded by P.R.O. For key, see SP 106/6, no. 32. |
+| SP 84/165/126 | 213 | 1662 May 5 | Wickfort to [Williamson?] | ...Decoded by P.R.O. For key, see SP 106/6, nos. 31 and 35. |
+| SP 84/165/127 | 214 | 1662 May 14 | Wickfort to [Williamson?] | ...Decoded by P.R.O. For key, see SP 106/6, no. 32. |
+
+All 8 are Wickfort/Chauran-to-Williamson, Mar-May 1662 -- a narrow slice of SP 84/165, not "most" of it (a
+separate query, `"SP 84/165" "undecoded cipher"`, returns 18 items; 8 of 18 carry the gloss, the other 10 do
+not). These 8 are **known text** at best: already decoded by the PRO itself against SP 106/6, so a reading from
+them is key application, never a fresh cryptanalytic result (CLAUDE.md rule 2 result-label note).
+
+Checked separately, by their own Discovery `note` field (not the search-listing description), the 9 items
+SCOUT-OPEN named in SP 84/166/7,41,51,52,71,81,84,98, SP 84/168/26 and SP 84/171/55: **none carry the gloss** --
+every one reads "Undecoded cipher." / "Part in undecoded cipher." / "Small part in undecoded cipher." / "...Copy."
+with no "Decoded by" text and no key citation of their own. SCOUT-OPEN's original framing for these 9 stands:
+genuinely undecoded, no key cited in their own catalogue note (the SP106/6 key is attested only on the
+SP84/165 cluster above, by the same correspondent network but not named on these 9's own records) -- a
+key-assisted *candidate* once imaged, not yet a confirmed key-in-reach item. Full table:
+`harvest/C-FOLLOW-2026-10-24-sp84-gloss.tsv`.
+
+## Print check (C-FOLLOW, 24 Oct 2026)
+
+`be-api.us.archive.org` full-text search (exact phrase, no series restriction) and the Google Books API
+(`country=US`, keyed) on five of the brief's six phrases plus the two compound queries, scratchpad
+`/tmp/cfollow_phrases.txt`, output `/tmp/cfollow_out/print-check.tsv` (not committed -- scratch, per Scratchpad
+hand-off; results logged here instead since no target folder exists to hold it):
+
+- **"triplicate in cipher"** -- ia-global 4 hits, all either the HMC 1911 Pepys report itself (three IA copies
+  of the same `reportonpepysman*`/`reportonpepys*` volume) or an unrelated 1774-series Continental Congress
+  index (`indexpapersofcon0002butl`) -- no independent prior print.
+- **"Hansnaw"** -- ia-global 83 hits, all noise (a 1949 *Literary Cavalcade* story character, a 1933 physics
+  journal, period newspapers with no connection) -- confirms CHECK-PEPYSNIC's own earlier single-query finding
+  at a wider result count; still no period hit for this name anywhere on Internet Archive.
+- **"Hanshaw" + 1648 + cipher** (compound, run by hand as `Hanshaw AND 1648 AND cipher` against
+  `be-api.us.archive.org`, since the tool's phrase wrapper cannot express a conjunction) -- **0 hits**.
+- **"Fanshaw" + "triplicate"** (same hand method) -- 10 hits, every one noise (Federal Register
+  duplicate/triplicate form-copy boilerplate; a 2003 Alaska nautical-chart "Cape Fanshaw" coordinate
+  description) -- no connection to Sir Richard Fanshawe or this correspondence.
+- **"Letters in ciphers from The King"** -- ia-global 1 hit: the same HMC 1911 Pepys report volume
+  (`reportonpepys00greauoft`) -- the catalogue entry itself, not an independent prior print.
+- **"Keys of ciphers and letters"** -- ia-global 3 hits, all three HMC 1911 report copies -- same catalogue
+  entry, not independent.
+- **Google Books API** -- unreachable all session: every call (4 phrases, two passes 3 s apart, plus the two
+  compound queries by hand, 10 calls total) returned HTTP 503 `backendFailed`, matching CLAUDE.md's documented
+  12/15 Oct 2026 intermittent-fault note (RETRO-2026-10-19 P3); one retry taken per that note's instruction,
+  then logged and moved on -- **not searched this session**, not a hit/no-hit verdict either way.
+
+Net: every ia-global hit for the four single phrases traces back to the HMC report's own catalogue description
+of these exact items, never to an independent printed source; the two compound name-variant queries found
+nothing. This is a search result on this date by this method (CLAUDE.md rule 10), not a novelty verdict --
+Google Books specifically still needs a re-run once the host's 503s clear.

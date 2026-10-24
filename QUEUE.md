@@ -7935,6 +7935,21 @@ this "Decoded by P.R.O." pattern before scoring it as unread). The 9 new items i
 this pass found, genuinely undecoded and unresolved -- a wider pool in the same key family than K4 captured,
 still all `digitised:false`.
 
+**Correction (C-FOLLOW, 24 Oct 2026): the gloss is real, it is on SP 84/165 -- it is in the `note` field,
+not `scopeContent.description`.** The account-4 parent's own side-check (ROOM.md 05:23 UTC 24 Oct) read Discovery's
+search-records listing, which shows `scopeContent.description` by default, and found 0 of 85 SP84/165 cipher
+items with the gloss -- but "Decoded by P.R.O." is a cataloguer's note, surfaced only by the per-item details
+endpoint (`/API/records/v1/details/<id>`) as the `note` field. A full-text search for the exact phrase
+`"Decoded by P.R.O."` (no series filter) returns exactly 8 items, all in **SP 84/165** (ff.13, 105, 106, 184,
+190, 192, 213, 214; Wickfort/Chauran to Williamson, Mar-May 1662), each citing SP 106/6 no.31/32/35 by name --
+confirming SP84/165's own gloss is real, narrower than "most" (8 of the 18 SP84/165 items whose note contains
+"undecoded cipher" at all), and that these 8 are known text (PRO-decoded; key application at best), not a
+fresh target. Checked the same way (their own `note` field, not the listing description), the 9 items above in
+SP 84/166/168/171 carry **no** gloss and **no** key citation of their own -- SCOUT-OPEN's original "genuinely
+undecoded" call for them stands; they are key-assisted *candidates* once imaged (same correspondent network as
+the SP106/6-keyed SP84/165 cluster, but the key is not named on their own records). Full table:
+`harvest/C-FOLLOW-2026-10-24-sp84-gloss.tsv`.
+
 **Two archive.org leads (not candidates -- the physical manuscript's digitisation is unconfirmed), found by
 full-text phrase search (`be-api.us.archive.org/fts/v1/search`, `"in cipher, undeciphered"`, 80 total hits
 across every HMC/Calendar volume on IA):**
@@ -7973,7 +7988,12 @@ across every HMC/Calendar volume on IA):**
   note in the same breath, unlike the 1664 items two pages later in the same collection) but the collection
   demonstrably kept ciphers alongside letters. Current holder of the physical Heathcote/Conington Castle papers
   not traced this pass (a private family collection as of 1899; may have been dispersed since). Not scored as a
-  candidate for the same reason as LEAD-AO1.
+  candidate for the same reason as LEAD-AO1. **C-FOLLOW (24 Oct 2026)**: the collection has split --
+  `ciphers/_triage/heathcote-fanshawe-1659.md` -- Huntingdonshire Archives (reference `CON`, series "LETTERS")
+  holds part of it (confirmed by a Discovery record's own note: "the rest of this collection is apparently now
+  at the Librarian's Dept. of the London Borough of Barking" -- i.e. Barking and Dagenham Archives, ref
+  `M51-286`); the one dated child item found at Huntingdonshire (CON 7/10/2, 1663) is inside the embassy period,
+  not demonstrably the 1659 pre-embassy items named here; not digitised at either holder; status open.
 
 **Checked and dropped:**
 - **loc.gov "lesser collections"** (Rufus King, David Humphreys, Jonathan Dayton, per the brief): no standalone
