@@ -7994,6 +7994,17 @@ across every HMC/Calendar volume on IA):**
   at the Librarian's Dept. of the London Borough of Barking" -- i.e. Barking and Dagenham Archives, ref
   `M51-286`); the one dated child item found at Huntingdonshire (CON 7/10/2, 1663) is inside the embassy period,
   not demonstrably the 1659 pre-embassy items named here; not digitised at either holder; status open.
+  **HEATHCOTE-HOLDER (24 Oct 2026)**: Huntingdonshire's own online catalogue (`archives.cambridgeshire.gov.uk`)
+  searched directly -- "Hyde 1659" 0 hits, `KCON/7` browsed in full, neither 1659 item catalogued there; Barking
+  and Dagenham's holding record is TNA Discovery `N13657938` (`M51-286`, "corresp and papers c1629-66", not
+  itemised online) whose own cited finding aid, R.M. Walker & W.H. Liddell, *The Papers of Sir Richard Fanshawe*
+  (Maney, Leeds, 1999), lists the collection at item level and has not yet been opened -- named next step. HMC
+  1899's own preface (not read by C-FOLLOW) says its editors used Fanshaw's own botched decipherment of the
+  first item's opening sentence as "a very useful clue in discovering the key of the cipher" -- a published,
+  dated Hyde cipher from exactly this period (sent to Barwick 12 June 1659, printed in *Life of Dr. John
+  Barwick*, per Tomokiyo's `charlesii.htm`) is a graded-M lead, not yet matched to any transcription since no
+  cipher groups have been transcribed from either holder. CSP Clarendon IV and the 1724 Fanshaw Letters do not
+  duplicate either item. Still open; full detail `ciphers/_triage/heathcote-fanshawe-1659.md`.
 
 **Checked and dropped:**
 - **loc.gov "lesser collections"** (Rufus King, David Humphreys, Jonathan Dayton, per the brief): no standalone
