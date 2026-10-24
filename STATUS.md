@@ -327,6 +327,16 @@ Hyde-to-Fanshaw items against the Calendar of Clarendon State Papers (Hyde's let
 Huntingdonshire Archives and Valence House, and whether a Clarendon 1659 key survives. Program B (Vivonne) stays on ASKS 173. Sorters
 empty; no owner scans. Spend this check-in by program: A 3.22, B 0, C 0.
 
+Check-in 151 (24 Oct 2026, 13:3x UTC). HEATHCOTE-HOLDER (USD 5.14, D-, 1.71x cap: three headless-browser fetches priced as curl):
+LEAD-AO2 stays open -- both 1659 Hyde-to-Fanshaw letters are printed 'in cipher, undeciphered' in HMC 1899 and not duplicated in CSP
+Clarendon IV or the 1724 Fanshaw Letters (vol. V not reached); not in CON 7 at Huntingdonshire, so Barking and Dagenham M51-286 is the
+likelier holder (finding aid Walker and Liddell 1999 not opened); HMC 1899's preface says the editors partly recovered the key from
+Fanshaw's own garbled attempt; Tomokiyo names Hyde's published cipher of 12 June 1659 (Barwick), eight days from item 1. The worker read
+OCR, which drops italic numerals, so whether the cipher groups themselves are in print is unverified. Decision: HEATHCOTE-PAGES spawned
+(Sonnet, cap 5, 8 vision calls) to read the printed leaves of HMC 1899 and the Barwick key pages on archive.org; if both are in print the
+whole key test runs from the desk and the lead is promoted. Sorters (ASKS 173, 175) still empty; no owner scans. Spend this check-in
+by program: A 0, B 0, C 5.14.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
