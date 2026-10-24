@@ -289,6 +289,15 @@ split may put the C1 f.111/f.260 controls on other ciphers). Spawned DECODE-KEY3
 into sources/decode/ before any TNA image arrives. Sorters (ASKS 173, 175) still empty; no owner scans. Spend this check-in by program:
 A 0, B 0, C 3.62.
 
+Check-in 147 (24 Oct 2026, 07:5x UTC). DECODE-KEY32 (USD 3.87, D-, 1.29x cap): the DECODE route works (one login, real full-size
+PNGs), but id 432 is not SP 106/6 no. 31/32/35 -- Tomokiyo's own record note calls it a list of 31 pseudonyms about a North American
+intrigue, a numeral coincidence; ids 509 + 506 ('the same cipher') and 497 are the unopened French candidates. The worker committed
+three 2-3 MB PNGs against the sources/decode rule; removed from the tree this check-in (manifest with sha256 kept; history unchanged).
+Decision: two Sonnet jobs in parallel (brief -48) -- DECODE-KEY32B opens 509/506/497 in one login with images kept in the scratchpad,
+and CHECK-SP84POOL runs the intake check for the SP 84/166-171 pool (does CSP Domestic 1660-64 print the 8 PRO decodes and how does it
+treat the 10 undecoded letters) so key and target are settled before any TNA copy order. Sorters (ASKS 173, 175) still empty; no owner
+scans. Spend this check-in by program: A 3.87 (key acquisition for the SP 84 pool), B 0, C 0.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
