@@ -1,0 +1,217 @@
+# 509-vs-506 disagreements in key.tsv, classified by kind (job KEY32-CONFLICTS,
+# 24 Oct 2026, .claude/briefs/runs/2026-10-24-acct4-research-director-50.md).
+# One row per (class, code, mark) key that key.tsv flags `conflict`; 509/506 pages
+# are 509 pp.3712-3713 / 506 p.3705. Never a resolution -- both key.tsv rows keep
+# their own grade-H meaning unchanged (CLAUDE.md rule 4).
+# Regenerate: python3 conflicts.py
+code	mark	class	meaning_509	meaning_506	kind	note
+14	co	letter	P	C; P	other	within-source duplicate: 509=['P'] 506=['C', 'P']
+9	'	person	M^r <ABBR Monsieur> les Estate D'holl^de	les estat d' Hollande	same-code-different-meaning	509="M^r <ABBR Monsieur> les Estate D'holl^de" 506="les estat d' Hollande"; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+11	'	person	l'Infante Desp^ne	l'Infante Despayne	spelling-variant	509="l'Infante Desp^ne" 506="l'Infante Despayne" ('linfantedespne' vs 'linfantedespayne')
+12	'	person	M^r <ABBR Monsieur> les seer^re Nicolas	M^r <ABBR Monsieur> le Secr^re Niolas	spelling-variant	509='M^r <ABBR Monsieur> les seer^re Nicolas' 506='M^r <ABBR Monsieur> le Secr^re Niolas' ('seerrenicola' vs 'secrreniola')
+13	'	person	La Maison D'austrieche	la Maison Daustriche	spelling-variant	509="La Maison D'austrieche" 506='la Maison Daustriche' ('maisondaustrieche' vs 'maisondaustriche')
+14	'	person	M^r <ABBR Monsieur> le Mini^*e Despag.^e	M^r <ABBR Monsieur> Ministre desp^re	same-code-different-meaning	509='M^r <ABBR Monsieur> le Mini^*e Despag.^e' 506='M^r <ABBR Monsieur> Ministre desp^re'; order-509: locally alphabetical; order-506: locally alphabetical
+15	'	person	M^r <ABBR Monsieur> les Sce^re Maurice	M^r <ABBR Monsieur> le se^re Maurice	spelling-variant	509='M^r <ABBR Monsieur> les Sce^re Maurice' 506='M^r <ABBR Monsieur> le se^re Maurice' ('sceremaurice' vs 'seremaurice')
+16	'	person	D. Estavane de Gamara	Don estavun de Gamare	same-code-different-meaning	509='D. Estavane de Gamara' 506='Don estavun de Gamare'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+17	'	person	l'Archiduc leopol	l'Archidue leopol	spelling-variant	509="l'Archiduc leopol" 506="l'Archidue leopol" ('larchiducleopol' vs 'larchidueleopol')
+18	'	person	l'Arch D'Inspruck	larch D Inspruck	spelling-variant	509="l'Arch D'Inspruck" 506='larch D Inspruck' ('larchdinspruck' vs 'larchinspruck')
+19	'	person	M^r <ABBR Monsieur> De Carascene	le Ma de laraseene	same-code-different-meaning	509='M^r <ABBR Monsieur> De Carascene' 506='le Ma de laraseene'; order-509: breaks local alphabetical order; order-506: locally alphabetical
+20	'	person	la Reune D'espay^e	la Repr?e Despayne	same-code-different-meaning	509="la Reune D'espay^e" 506='la Repr?e Despayne'; order-509: locally alphabetical; order-506: breaks local alphabetical order
+21		person	le Duc Danjou	M^r <ABBR Monsieur> le d. Danine	spelling-variant	509='le Duc Danjou' 506='M^r <ABBR Monsieur> le d. Danine' ('daniou' vs 'danine')
+21	'	person	la Reyne Christine	la Repne Christine	spelling-variant	509='la Reyne Christine' 506='la Repne Christine' ('reynechristine' vs 'repnechristine')
+22	'	person	le Roy Damnemort	le Roy Damnemart	spelling-variant	509='le Roy Damnemort' 506='le Roy Damnemart' ('damnemort' vs 'damnemart')
+23	'	person	Ifnante de Portugal	Infante De Portugal	spelling-variant	509='Ifnante de Portugal' 506='Infante De Portugal' ('ifnanteportugal' vs 'infanteportugal')
+25	'	person	D. Juan Daustriche	Dom Juan Daustriche	same-code-different-meaning	509='D. Juan Daustriche' 506='Dom Juan Daustriche'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+26	'	person	le Roy e suede	le Roy de Suede	spelling-variant	509='le Roy e suede' 506='le Roy de Suede' ('esuede' vs 'suede')
+27		person	M^r <ABBR Monsieur> delonqueville	M^r <ABBR Monsieur> Delonquevilles	identical-after-normalisation	509='M^r <ABBR Monsieur> delonqueville' 506='M^r <ABBR Monsieur> Delonquevilles' -> 'delonqueuille'
+27	'	person	le lecteur de Mayone	le el. De Marence	same-code-different-meaning	509='le lecteur de Mayone' 506='le el. De Marence'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+28		person	M^r <ABBR Monsieur> le Duc Dorleans	M^r <ABBR Monsieur> le D. Dorleans	identical-after-normalisation	509='M^r <ABBR Monsieur> le Duc Dorleans' 506='M^r <ABBR Monsieur> le D. Dorleans' -> 'dorlean'
+28	'	person	lesl^our de Bavier	le el de Bavierc	same-code-different-meaning	509='lesl^our de Bavier' 506='le el de Bavierc'; order-509: locally alphabetical; order-506: breaks local alphabetical order
+29		person	M^r <ABBR Monsieur> le C^al <ABBR Cardinal> De Rer	M^r <ABBR Monsieur> le Cand D Rer?	same-code-different-meaning	509='M^r <ABBR Monsieur> le C^al <ABBR Cardinal> De Rer' 506='M^r <ABBR Monsieur> le Cand D Rer?'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+29	'	person	lad^al Ruiter	La d^al  Ruit*e	same-code-different-meaning	509='lad^al Ruiter' 506='La d^al  Ruit*e'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+30		person	M^r <ABBR Monsieur> le P. francois	le Prince francoci	spelling-variant	509='M^r <ABBR Monsieur> le P. francois' 506='le Prince francoci' ('francoi' vs 'francoci')
+31		person	M^r <ABBR Monsieur> le D. Danguein	M^r <ABBR Monsieur> L. D. Denguein	spelling-variant	509='M^r <ABBR Monsieur> le D. Danguein' 506='M^r <ABBR Monsieur> L. D. Denguein' ('danguein' vs 'ldenguein')
+31	'	person	le D. De Mantove	le d. De Mantoüe	identical-after-normalisation	509='le D. De Mantove' 506='le d. De Mantoüe' -> 'mantoue'
+32		person	M^r <ABBR Monsieur> le C. D'harcour	M^r <ABBR Monsieur> le Conte Dharqur	same-code-different-meaning	509="M^r <ABBR Monsieur> le C. D'harcour" 506='M^r <ABBR Monsieur> le Conte Dharqur'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+32	'	person	le C. De Charo**	M^r <ABBR Monsieur> lel. Delharost	same-code-different-meaning	509='le C. De Charo**' 506='M^r <ABBR Monsieur> lel. Delharost'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+33		person	M^r <ABBR Monsieur> De Meaufort	M^r <ABBR Monsieur> D. Bev*ufort	same-code-different-meaning	509='M^r <ABBR Monsieur> De Meaufort' 506='M^r <ABBR Monsieur> D. Bev*ufort'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+33	'	person	le C. De S^t Argnan	M^r <ABBR Monsieur> lel. Der. Aignan	same-code-different-meaning	509='le C. De S^t Argnan' 506='M^r <ABBR Monsieur> lel. Der. Aignan'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+34		person	M^r <ABBR Monsieur> De Movillon	M^r <ABBR Monsieur> le D. DelBoüllon	same-code-different-meaning	509='M^r <ABBR Monsieur> De Movillon' 506='M^r <ABBR Monsieur> le D. DelBoüllon'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+34	'	person	le C. De Brienne	M^r <ABBR Monsieur> Brienne	identical-after-normalisation	509='le C. De Brienne' 506='M^r <ABBR Monsieur> Brienne' -> 'brienne'
+35		person	M^e la Princesse	M^r <ABBR Monsieur> la Princesse	identical-after-normalisation	509='M^e la Princesse' 506='M^r <ABBR Monsieur> la Princesse' -> 'princesse'
+35	'	person	le Roy De Portugal	le Rody De Portugal	same-code-different-meaning	509='le Roy De Portugal' 506='le Rody De Portugal'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+36		person	M^r <ABBR Monsieur> le C. Desoissons	M^r <ABBR Monsieur> le l. Deloissins	same-code-different-meaning	509='M^r <ABBR Monsieur> le C. Desoissons' 506='M^r <ABBR Monsieur> le l. Deloissins'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+37		person	M^r <ABBR Monsieur> le Duc De Maravin	M^r <ABBR Monsieur> le D. De Mararin	spelling-variant	509='M^r <ABBR Monsieur> le Duc De Maravin' 506='M^r <ABBR Monsieur> le D. De Mararin' ('marauin' vs 'mararin')
+37	'	person	D. Castel Rodrigo	Don Castel Rodriyo	same-code-different-meaning	509='D. Castel Rodrigo' 506='Don Castel Rodriyo'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+38		person	M^r <ABBR Monsieur> Debandorme	M^r <ABBR Monsieur> Dehandormes	spelling-variant	509='M^r <ABBR Monsieur> Debandorme' 506='M^r <ABBR Monsieur> Dehandormes' ('debandorme' vs 'dehandorme')
+38	'	person	la Reyne De Pologne	la Repre de Pologne	spelling-variant	509='la Reyne De Pologne' 506='la Repre de Pologne' ('reynepologne' vs 'reprepologne')
+39		person	M^r <ABBR Monsieur> De Manciry	M^r <ABBR Monsieur> le D. Dennevert	same-code-different-meaning	509='M^r <ABBR Monsieur> De Manciry' 506='M^r <ABBR Monsieur> le D. Dennevert'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+39	'	person	lest. De Brandenbourg	de el. De Brandebourg	same-code-different-meaning	509='lest. De Brandenbourg' 506='de el. De Brandebourg'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+40	'	person	M^r <ABBR Monsieur> le Tellter	M^r <ABBR Monsieur> le Tellier	spelling-variant	509='M^r <ABBR Monsieur> le Tellter' 506='M^r <ABBR Monsieur> le Tellier' ('tellter' vs 'tellier')
+41		person	M^r <ABBR Monsieur> le D. Richelieu	M^r <ABBR Monsieur> le D, Dehiehetieu	same-code-different-meaning	509='M^r <ABBR Monsieur> le D. Richelieu' 506='M^r <ABBR Monsieur> le D, Dehiehetieu'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+41	'	person	M^r <ABBR Monsieur> De Batteville	M^r <ABBR Monsieur> De Batteierlle	same-code-different-meaning	509='M^r <ABBR Monsieur> De Batteville' 506='M^r <ABBR Monsieur> De Batteierlle'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+42		person	M^r <ABBR Monsieur> le D. Deloraine	M^r <ABBR Monsieur> le Deloraine	identical-after-normalisation	509='M^r <ABBR Monsieur> le D. Deloraine' 506='M^r <ABBR Monsieur> le Deloraine' -> 'deloraine'
+42	'	person	lest. De Palatin	de el Palatin	same-code-different-meaning	509='lest. De Palatin' 506='de el Palatin'; order-509: breaks local alphabetical order; order-506: locally alphabetical
+43		person	M^r <ABBR Monsieur> le D. De Guise	M^r <ABBR Monsieur> De Guise	identical-after-normalisation	509='M^r <ABBR Monsieur> le D. De Guise' 506='M^r <ABBR Monsieur> De Guise' -> 'guise'
+43	'	person	le C. De Pigneranda	le l. DePigneranda	same-code-different-meaning	509='le C. De Pigneranda' 506='le l. DePigneranda'; order-509: locally alphabetical; order-506: locally alphabetical
+44		person	l'Archeves^e De Rhodes	l'Arche zum De Rhodes	same-code-different-meaning	509="l'Archeves^e De Rhodes" 506="l'Arche zum De Rhodes"; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+44	'	person	la Reyne de Svede	la Repre de he*dde	same-code-different-meaning	509='la Reyne de Svede' 506='la Repre de he*dde'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+45		person	M^r <ABBR Monsieur> le D. Delboeuf	M^r <ABBR Monsieur> Delboeut	spelling-variant	509='M^r <ABBR Monsieur> le D. Delboeuf' 506='M^r <ABBR Monsieur> Delboeut' ('delboeuf' vs 'delboeut')
+45	'	person	lest. De Saxe	le el. de Saxe	same-code-different-meaning	509='lest. De Saxe' 506='le el. de Saxe'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+46		person	M^r <ABBR Monsieur> les D Charles	le Prince Charles	identical-after-normalisation	509='M^r <ABBR Monsieur> les D Charles' 506='le Prince Charles' -> 'charle'
+46	'	person	la Reyne de Portugal	le Repne de Portugal	spelling-variant	509='la Reyne de Portugal' 506='le Repne de Portugal' ('reyneportugal' vs 'repneportugal')
+47		person	M^r <ABBR Monsieur> le P D Tharante	Le P. De Tharante	identical-after-normalisation	509='M^r <ABBR Monsieur> le P D Tharante' 506='Le P. De Tharante' -> 'tharante'
+47	'	person	lest De Treves	le el. de Treve	same-code-different-meaning	509='lest De Treves' 506='le el. de Treve'; order-509: breaks local alphabetical order; order-506: locally alphabetical
+48		person	M^r <ABBR Monsieur> le M^al De Villeroy	transcription le Mar^al De villeroy	same-code-different-meaning	509='M^r <ABBR Monsieur> le M^al De Villeroy' 506='transcription le Mar^al De villeroy'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+48	'	person	M^r <ABBR Monsieur> D'estrades	M^r <ABBR Monsieur> - D;estrades	spelling-variant	509="M^r <ABBR Monsieur> D'estrades" 506='M^r <ABBR Monsieur> - D;estrades' ('destrade' vs '-destrade')
+49		person	M^r <ABBR Monsieur> le M^al De Gramoru	M^r <ABBR Monsieur> le Mar^al De Gramont	same-code-different-meaning	509='M^r <ABBR Monsieur> le M^al De Gramoru' 506='M^r <ABBR Monsieur> le Mar^al De Gramont'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+49	'	person	lest. De Cologne	le el De Cologne	same-code-different-meaning	509='lest. De Cologne' 506='le el De Cologne'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+50		person	M^r <ABBR Monsieur> le M^al De Turenne	M^r <ABBR Monsieur> le Mar^al De Turenne	spelling-variant	509='M^r <ABBR Monsieur> le M^al De Turenne' 506='M^r <ABBR Monsieur> le Mar^al De Turenne' ('malturenne' vs 'maralturenne')
+50	'	person	Mad^e De Chatillon	M^r <ABBR Monsieur> De Chatillon	same-code-different-meaning	509='Mad^e De Chatillon' 506='M^r <ABBR Monsieur> De Chatillon'; order-509: breaks local alphabetical order; order-506: locally alphabetical
+51		person	M^r <ABBR Monsieur> fouquet	M^r <ABBR Monsieur> Sovequet	spelling-variant	509='M^r <ABBR Monsieur> fouquet' 506='M^r <ABBR Monsieur> Sovequet' ('fouquet' vs 'souequet')
+51	'	person	M^r <ABBR Monsieur> De Bouteville	M^r <ABBR Monsieur> De Boutevilles	identical-after-normalisation	509='M^r <ABBR Monsieur> De Bouteville' 506='M^r <ABBR Monsieur> De Boutevilles' -> 'bouteuille'
+53		person	la chambre de Justice	La chamd, De Justice	same-code-different-meaning	509='la chambre de Justice' 506='La chamd, De Justice'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+53	'	person	l'evesq De Munster	le el. De Munster	same-code-different-meaning	509="l'evesq De Munster" 506='le el. De Munster'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+54	'	person	M^r <ABBR Monsieur> De Marciri	M^r <ABBR Monsieur> De Mavern	same-code-different-meaning	509='M^r <ABBR Monsieur> De Marciri' 506='M^r <ABBR Monsieur> De Mavern'; order-509: locally alphabetical; order-506: breaks local alphabetical order
+55		person	M^r <ABBR Monsieur> le M^al fabert	M^r <ABBR Monsieur> le Mar^al De Fabert	spelling-variant	509='M^r <ABBR Monsieur> le M^al fabert' 506='M^r <ABBR Monsieur> le Mar^al De Fabert' ('malfabert' vs 'maralfabert')
+55	'	person	M^r <ABBR Monsieur> De Viequefort	M^r <ABBR Monsieur> De *niquefort	same-code-different-meaning	509='M^r <ABBR Monsieur> De Viequefort' 506='M^r <ABBR Monsieur> De *niquefort'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+56		person	M^r <ABBR Monsieur> le M^al Daumone	M^r <ABBR Monsieur> le Mar^al Daumont	same-code-different-meaning	509='M^r <ABBR Monsieur> le M^al Daumone' 506='M^r <ABBR Monsieur> le Mar^al Daumont'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+56	'	person	le M^al Dauqini court	M^r <ABBR Monsieur> le Mar^al D'auquincourt	same-code-different-meaning	509='le M^al Dauqini court' 506="M^r <ABBR Monsieur> le Mar^al D'auquincourt"; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+57		person	M^r <ABBR Monsieur> le M^al De T*hulemberg	M^r <ABBR Monsieur> le Mar^al De Schulemberg	same-code-different-meaning	509='M^r <ABBR Monsieur> le M^al De T*hulemberg' 506='M^r <ABBR Monsieur> le Mar^al De Schulemberg'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+57	'	person	le Duc de Parme	le D. De Parme	identical-after-normalisation	509='le Duc de Parme' 506='le D. De Parme' -> 'parme'
+58		person	les l?seheunis	Le Meh*****	same-code-different-meaning	509='les l?seheunis' 506='Le Meh*****'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+58	'	person	le Duc de Modene	le D, de Modene	identical-after-normalisation	509='le Duc de Modene' 506='le D, de Modene' -> 'modene'
+59		person	l'Abbe fouquet	M^r <ABBR Monsieur> Sabbefouquet	spelling-variant	509="l'Abbe fouquet" 506='M^r <ABBR Monsieur> Sabbefouquet' ('labbefouquet' vs 'sabbefouquet')
+59	'	person	M^r <ABBR Monsieur> De Thou	M^r <ABBR Monsieur> Dethou	spelling-variant	509='M^r <ABBR Monsieur> De Thou' 506='M^r <ABBR Monsieur> Dethou' ('thou' vs 'dethou')
+60		person	M^r <ABBR Monsieur> le M^al Delaferte	M^r <ABBR Monsieur> le Mar^al Delaforte	same-code-different-meaning	509='M^r <ABBR Monsieur> le M^al Delaferte' 506='M^r <ABBR Monsieur> le Mar^al Delaforte'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+60	'	person	M^r <ABBR Monsieur> De Lumbres	M^r <ABBR Monsieur> Delumbres	spelling-variant	509='M^r <ABBR Monsieur> De Lumbres' 506='M^r <ABBR Monsieur> Delumbres' ('lumbre' vs 'delumbre')
+61		person	le Prem^ce Presidene	M^r <ABBR Monsieur> le Pr. Presidene	same-code-different-meaning	509='le Prem^ce Presidene' 506='M^r <ABBR Monsieur> le Pr. Presidene'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+62		person	M^r <ABBR Monsieur> le Duc Dyorck	le Duc Diorck	spelling-variant	509='M^r <ABBR Monsieur> le Duc Dyorck' 506='le Duc Diorck' ('dyorck' vs 'diorck')
+63		person	M^r <ABBR Monsieur> le Gñal Monck	le Gen^al Monek	spelling-variant	509='M^r <ABBR Monsieur> le Gñal Monck' 506='le Gen^al Monek' ('gnalmonck' vs 'genalmonek')
+64		person	Le Roy Danyleterre	Le Roy D Angleterre	spelling-variant	509='Le Roy Danyleterre' 506='Le Roy D Angleterre' ('danyleterre' vs 'angleterre')
+65		person	M^ad hayde chance	M^r <ABBR Monsieur> ord hayde Chance	spelling-variant	509='M^ad hayde chance' 506='M^r <ABBR Monsieur> ord hayde Chance' ('madhaydechance' vs 'ordhaydechance')
+66		person	la Reyne merc dany^re	la Royne merc Dasnre	same-code-different-meaning	509='la Reyne merc dany^re' 506='la Royne merc Dasnre'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+68		person	le Prevott des Marchand	le Prev?ost de Mart	same-code-different-meaning	509='le Prevott des Marchand' 506='le Prev?ost de Mart'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+69		person	M^r <ABBR Monsieur> lel De Britolle	M^r <ABBR Monsieur> le l. De Bastille	same-code-different-meaning	509='M^r <ABBR Monsieur> lel De Britolle' 506='M^r <ABBR Monsieur> le l. De Bastille'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+70		person	M^r <ABBR Monsieur> D. Dormone	M^r <ABBR Monsieur> le D. Dormone	identical-after-normalisation	509='M^r <ABBR Monsieur> D. Dormone' 506='M^r <ABBR Monsieur> le D. Dormone' -> 'dormone'
+71		person	la Reyne Dasty leterre	la Royne Danyro	same-code-different-meaning	509='la Reyne Dasty leterre' 506='la Royne Danyro'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+72		person	M^r <ABBR Monsieur> lec Sandivich	M^r <ABBR Monsieur> le d. Sandutch	same-code-different-meaning	509='M^r <ABBR Monsieur> lec Sandivich' 506='M^r <ABBR Monsieur> le d. Sandutch'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+73		person	M^r <ABBR Monsieur> lec de Menchester	M^r <ABBR Monsieur> le C De Menchettor	same-code-different-meaning	509='M^r <ABBR Monsieur> lec de Menchester' 506='M^r <ABBR Monsieur> le C De Menchettor'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+74		person	M^r <ABBR Monsieur> lec De* Albance	M^r <ABBR Monsieur> lel Derh Albante	same-code-different-meaning	509='M^r <ABBR Monsieur> lec De* Albance' 506='M^r <ABBR Monsieur> lel Derh Albante'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+91	'	royaume	la france	le france	identical-after-normalisation	509='la france' 506='le france' -> 'france'
+92	'	royaume	la svede	la suede	identical-after-normalisation	509='la svede' 506='la suede' -> 'suede'
+94	'	royaume	la zelande	la *elande	spelling-variant	509='la zelande' 506='la *elande' ('zelande' vs '*elande')
+97	'	royaume	la slandres	la frandre	spelling-variant	509='la slandres' 506='la frandre' ('slandre' vs 'frandre')
+98	'	royaume	le spagne	l'espagne	spelling-variant	509='le spagne' 506="l'espagne" ('spagne' vs 'lespagne')
+3	^	syllable	vu	VA	spelling-variant	509='vu' 506='VA' ('uu' vs 'ua')
+39	..	syllable	qui	quu	spelling-variant	509='qui' 506='quu' ('qui' vs 'quu')
+65		syllable	fi?a	hA	spelling-variant	509='fi?a' 506='hA' ('fia' vs 'ha')
+74		syllable	si	fi	spelling-variant	509='si' 506='fi' ('si' vs 'fi')
+61	'	ville	Calais; amsterdam	Calais	other	within-source duplicate: 509=['Calais', 'amsterdam'] 506=['Calais']
+63	'	ville	Januert	anuers	spelling-variant	509='Januert' 506='anuers' ('ianuert' vs 'anuer')
+65	'	ville	Boulonge	Boulongne	spelling-variant	509='Boulonge' 506='Boulongne' ('boulonge' vs 'boulongne')
+68	'	ville	Britolles	Bristolla	spelling-variant	509='Britolles' 506='Bristolla' ('britolle' vs 'bristolla')
+69	'	ville	Douu?ves	Douvre	spelling-variant	509='Douu?ves' 506='Douvre' ('douuue' vs 'douure')
+70	'	ville	Pronne	Peronne	spelling-variant	509='Pronne' 506='Peronne' ('pronne' vs 'peronne')
+75	'	ville	la haye	lahaye	spelling-variant	509='la haye' 506='lahaye' ('haye' vs 'lahaye')
+78	'	ville	Marseille	Marseilles	identical-after-normalisation	509='Marseille' 506='Marseilles' -> 'marseille'
+79	'	ville	francfort	Sranefort	spelling-variant	509='francfort' 506='Sranefort' ('francfort' vs 'sranefort')
+83	'	ville	Roüen	Dunkerke; Roüen	other	within-source duplicate: 509=['Roüen'] 506=['Dunkerke', 'Roüen']
+84	'	ville	la havre	lehavre	spelling-variant	509='la havre' 506='lehavre' ('haure' vs 'lehaure')
+86	'	ville	Paris	Paros	spelling-variant	509='Paris' 506='Paros' ('pari' vs 'paro')
+88	'	ville	Dieppe	Dieppes	identical-after-normalisation	509='Dieppe' 506='Dieppes' -> 'dieppe'
+89	'	ville	Venise	Veniles	spelling-variant	509='Venise' 506='Veniles' ('uenise' vs 'uenile')
+1	+	word	appuy	appicy	spelling-variant	509='appuy' 506='appicy' ('appuy' vs 'appicy')
+5	^	word	lettre	leure	spelling-variant	509='lettre' 506='leure' ('lettre' vs 'leure')
+6	◡	word	oulre	outre	spelling-variant	509='oulre' 506='outre' ('oulre' vs 'outre')
+7	+	word	m eilleur	meilleur	identical-after-normalisation	509='m eilleur' 506='meilleur' -> 'meilleur'
+7	..	word	Dans	Estably	same-code-different-meaning	509='Dans' 506='Estably'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+8	^	word	caul?a?lier	cavalier	spelling-variant	509='caul?a?lier' 506='cavalier' ('caulalier' vs 'caualier')
+9		word	honnerte	honneste	spelling-variant	509='honnerte' 506='honneste' ('honnerte' vs 'honneste')
+10		word	crou	croy	spelling-variant	509='crou' 506='croy' ('crou' vs 'croy')
+14		word	este,ou,este	estre,ou,este	spelling-variant	509='este,ou,este' 506='estre,ou,este' ('esteoueste' vs 'estreoueste')
+16	+	word	importanc	Importane	spelling-variant	509='importanc' 506='Importane' ('importanc' vs 'importane')
+16	^	word	sentimene	sentiment	spelling-variant	509='sentimene' 506='sentiment' ('sentimene' vs 'sentiment')
+17	◡	word	ceru	cent	spelling-variant	509='ceru' 506='cent' ('ceru' vs 'cent')
+18		word	c'est	c'est; et	other	within-source duplicate: 509=["c'est"] 506=["c'est", 'et']
+18	^	word	houpe	troupe	spelling-variant	509='houpe' 506='troupe' ('houpe' vs 'troupe')
+19	..	word	about?e?	about	spelling-variant	509='about?e?' 506='about' ('aboute' vs 'about')
+20	^	word	vietoire	victoire	spelling-variant	509='vietoire' 506='victoire' ('uietoire' vs 'uictoire')
+21	+	word	jamait	Jamais	spelling-variant	509='jamait' 506='Jamais' ('iamait' vs 'iamai')
+21	^	word	accommodem^*	accommodem*	identical-after-normalisation	509='accommodem^*' 506='accommodem*' -> 'accommodem*'
+21	◡	word	hantemeru	hautement	same-code-different-meaning	509='hantemeru' 506='hautement'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+22		word	tt	et	spelling-variant	509='tt' 506='et' ('tt' vs 'et')
+22	+	word	M^r,ou,M^rs	Morc?,ou,M.^rs	spelling-variant	509='M^r,ou,M^rs' 506='Morc?,ou,M.^rs' ('mroumr' vs 'morcoumr')
+22	^	word	f?ave?	faut	spelling-variant	509='f?ave?' 506='faut' ('faue' vs 'faut')
+22	◡	word	Mad.^e ou Mad^*	mad^e <ABBR Madame>,ou,Mad****	same-code-different-meaning	509='Mad.^e ou Mad^*' 506='mad^e <ABBR Madame>,ou,Mad****'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+25	+	word	ses	generaux; ses	other	within-source duplicate: 509=['ses'] 506=['generaux', 'ses']
+27	◡	word	port	port; quel	other	within-source duplicate: 509=['port'] 506=['port', 'quel']
+28	+	word	fort	fort; mande	other	within-source duplicate: 509=['fort'] 506=['fort', 'mande']
+28	◡	word	opinion	oppinion	spelling-variant	509='opinion' 506='oppinion' ('opinion' vs 'oppinion')
+29		word	pui	puis	identical-after-normalisation	509='pui' 506='puis' -> 'pui'
+29	◡	word	camppagne	campagne	spelling-variant	509='camppagne' 506='campagne' ('camppagne' vs 'campagne')
+30		word	Jay reec?u lam?rdau	Jayrceuc?u ladre du	same-code-different-meaning	509='Jay reec?u lam?rdau' 506='Jayrceuc?u ladre du'; order-509: locally alphabetical; order-506: locally alphabetical
+31	..	word	tour?	tous	spelling-variant	509='tour?' 506='tous' ('tour' vs 'tou')
+32	+	word	commandem^*	commandom*	spelling-variant	509='commandem^*' 506='commandom*' ('commandem*' vs 'commandom*')
+32	◡	word	pendane	pendant	spelling-variant	509='pendane' 506='pendant' ('pendane' vs 'pendant')
+35	..	word	quos?	quon	spelling-variant	509='quos?' 506='quon' ('quo' vs 'quon')
+35	◡	word	seuremeru	seurement	spelling-variant	509='seuremeru' 506='seurement' ('seuremeru' vs 'seurement')
+36	..	word	Glore	Gloire	spelling-variant	509='Glore' 506='Gloire' ('glore' vs 'gloire')
+37		word	ju	ju; nous	other	within-source duplicate: 509=['ju'] 506=['ju', 'nous']
+37	..	word	vous?	vous	identical-after-normalisation	509='vous?' 506='vous' -> 'uou'
+37	◡	word	Porte	posse	spelling-variant	509='Porte' 506='posse' ('porte' vs 'posse')
+38	..	word	pui?	puis	identical-after-normalisation	509='pui?' 506='puis' -> 'pui'
+39		word	hayr	haÿr	identical-after-normalisation	509='hayr' 506='haÿr' -> 'hayr'
+39	^	word	tarhera	taschera	spelling-variant	509='tarhera' 506='taschera' ('tarhera' vs 'taschera')
+39	◡	word	pour?	pour	identical-after-normalisation	509='pour?' 506='pour' -> 'pour'
+40	..	word	moy?n	moyon	spelling-variant	509='moy?n' 506='moyon' ('moyn' vs 'moyon')
+40	◡	word	pres**	presse	spelling-variant	509='pres**' 506='presse' ('pres**' vs 'presse')
+41	+	word	preleru	presene	same-code-different-meaning	509='preleru' 506='presene'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+41	^	word	j	Y	spelling-variant	509='j' 506='Y' ('i' vs 'y')
+43	◡	word	necessaire	nec?ossaire	spelling-variant	509='necessaire' 506='nec?ossaire' ('necessaire' vs 'necossaire')
+44	^	word	tou*	tout	spelling-variant	509='tou*' 506='tout' ('tou*' vs 'tout')
+45	+	word	mariage	marcuye	same-code-different-meaning	509='mariage' 506='marcuye'; order-509: locally alphabetical; order-506: locally alphabetical
+45	^	word	trouvane	trouvant	spelling-variant	509='trouvane' 506='trouvant' ('trouuane' vs 'trouuant')
+46		word	inamtenanc	maintenant	same-code-different-meaning	509='inamtenanc' 506='maintenant'; order-509: breaks local alphabetical order; order-506: breaks local alphabetical order
+46	+	word	argenc	argent	spelling-variant	509='argenc' 506='argent' ('argenc' vs 'argent')
+47		word	oppeser	opposer	spelling-variant	509='oppeser' 506='opposer' ('oppeser' vs 'opposer')
+47	^	word	veulleru	veullent	spelling-variant	509='veulleru' 506='veullent' ('ueulleru' vs 'ueullent')
+48	◡	word	meme	mesmes	spelling-variant	509='meme' 506='mesmes' ('meme' vs 'mesme')
+50	◡	word	mont	mon?e	spelling-variant	509='mont' 506='mon?e' ('mont' vs 'mone')
+51	◡	word	ouvrage	ounrage	spelling-variant	509='ouvrage' 506='ounrage' ('ouurage' vs 'ounrage')
+53	◡	word	trouble	troubles	identical-after-normalisation	509='trouble' 506='troubles' -> 'trouble'
+54	+	word	asseurement	asseuremence	spelling-variant	509='asseurement' 506='asseuremence' ('asseurement' vs 'asseuremence')
+56		word	boyage	votage	spelling-variant	509='boyage' 506='votage' ('boyage' vs 'uotage')
+57		word	bous	vous	spelling-variant	509='bous' 506='vous' ('bou' vs 'uou')
+57	^	word	estoienc	estoicru	same-code-different-meaning	509='estoienc' 506='estoicru'; order-509: locally alphabetical; order-506: breaks local alphabetical order
+58	^	word	Il?s	Js?s	spelling-variant	509='Il?s' 506='Js?s' ('il' vs 'is')
+61	◡	word	**ormis	hormes	same-code-different-meaning	509='**ormis' 506='hormes'; order-509: locally alphabetical; order-506: locally alphabetical
+62	^	word	mauvais	manuaci	spelling-variant	509='mauvais' 506='manuaci' ('mauuai' vs 'manuaci')
+63	+	word	fortemeru	fortemene	spelling-variant	509='fortemeru' 506='fortemene' ('fortemeru' vs 'fortemene')
+63	^	word	Peyne	peÿne	identical-after-normalisation	509='Peyne' 506='peÿne' -> 'peyne'
+64		word	appartiene	appartient	spelling-variant	509='appartiene' 506='appartient' ('appartiene' vs 'appartient')
+65	^	word	avertissem^*	auerhissement	same-code-different-meaning	509='avertissem^*' 506='auerhissement'; order-509: locally alphabetical; order-506: locally alphabetical
+66	◡	word	tt	et	spelling-variant	509='tt' 506='et' ('tt' vs 'et')
+67	◡	word	celuy,ou,celle	celluy,ou,celle	spelling-variant	509='celuy,ou,celle' 506='celluy,ou,celle' ('celuyoucelle' vs 'celluyoucelle')
+69		word	Cavalerie	cavallerie	spelling-variant	509='Cavalerie' 506='cavallerie' ('caualerie' vs 'cauallerie')
+70	+	word	zele	ya	same-meaning-different-code	509='zele' 506='ya'; order-509: breaks local alphabetical order; order-506: locally alphabetical
+70	◡	word	gouverneur	gouverne	spelling-variant	509='gouverneur' 506='gouverne' ('gouuerneur' vs 'gouuerne')
+72		word	librement	libremene	spelling-variant	509='librement' 506='libremene' ('librement' vs 'libremene')
+72	◡	word	authorite	autorite	spelling-variant	509='authorite' 506='autorite' ('authorite' vs 'autorite')
+74	◡	word	peu	pece	spelling-variant	509='peu' 506='pece' ('peu' vs 'pece')
+76		word	z?u	eu	spelling-variant	509='z?u' 506='eu' ('zu' vs 'eu')
+76	^	word	l*anc	tant	same-code-different-meaning	509='l*anc' 506='tant'; order-509: breaks local alphabetical order; order-506: locally alphabetical
+77		word	commenc	commerce	spelling-variant	509='commenc' 506='commerce' ('commenc' vs 'commerce')
+77	^	word	touchanc	touchant	spelling-variant	509='touchanc' 506='touchant' ('touchanc' vs 'touchant')
+79	◡	word	marche	Malheur; marche	other	within-source duplicate: 509=['marche'] 506=['Malheur', 'marche']
+81	◡	word	auroc?i	auroci	identical-after-normalisation	509='auroc?i' 506='auroci' -> 'auroci'
+85		word	nonobstanc	nonobt?tane	spelling-variant	509='nonobstanc' 506='nonobt?tane' ('nonobstanc' vs 'nonobttane')
+86	◡	word	vrules	voules	spelling-variant	509='vrules' 506='voules' ('urule' vs 'uoule')
+87		word	Jalourie	Jalousi?e?	spelling-variant	509='Jalourie' 506='Jalousi?e?' ('ialourie' vs 'ialousie')
+87	◡	word	z?el	Zel	identical-after-normalisation	509='z?el' 506='Zel' -> 'zel'
+89	◡	word	sient	vient	spelling-variant	509='sient' 506='vient' ('sient' vs 'uient')
+90	◡	word	sous	vous	spelling-variant	509='sous' 506='vous' ('sou' vs 'uou')
+93		word	venir,ou,venu	venir,ou,veny	spelling-variant	509='venir,ou,venu' 506='venir,ou,veny' ('uenirouuenu' vs 'uenirouueny')
+95	◡	word	*ous	vous	spelling-variant	509='*ous' 506='vous' ('*ou' vs 'uou')
+96	◡	word	esmoigne	tesmoigne	spelling-variant	509='esmoigne' 506='tesmoigne' ('esmoigne' vs 'tesmoigne')
+97	◡	word	ur,ou,une	un,ou,one	spelling-variant	509='ur,ou,une' 506='un,ou,one' ('urouune' vs 'unouone')

@@ -148,6 +148,161 @@ applying this key to a Group A or Group B letter should expect a code's exact sp
 closer to that letter's own hand, and should check both rows before treating a mismatch as a transcription
 error on the letter side.
 
+## Conflicts (KEY32-CONFLICTS, 24 Oct 2026)
+
+Job KEY32-CONFLICTS (`.claude/briefs/runs/2026-10-24-acct4-research-director-50.md`), offline, classified the
+429 conflict-flagged rows (210 (class, code, mark) keys) above by what *kind* of 509-vs-506 disagreement each
+is, so the key is usable the day a letter image arrives. `conflicts.py` (this folder) does the classification;
+it reads the already-committed key.tsv (every meaning a conflict needs is already there -- no raw DECODE
+document required) and writes `conflicts.tsv` plus a `conflict_kind` column on key.tsv, added through
+`build_key_no32.py`'s own `write_tsv()` (never a hand-edit; `build()` itself now fills the same column, so a
+future `--check` rebuild from the raw documents stays consistent with what this pass wrote). Grade stays H on
+every row either way (rule 4): no conflict is resolved here, only labelled.
+
+**Kind definitions** (`classify_conflict_groups()` in `build_key_no32.py`): `identical-after-normalisation`
+(case/accent/caret/u-v/i-j/punctuation/whitespace/title-and-article-token folding, one trailing -s) --
+dropping title/article tokens (M^r, le, de, Duc/d., Comte/c., Cardinal/c^al, ...) can only make two strings
+look *more* alike, never less, so it cannot manufacture a false match between genuinely different referents on
+its own; `spelling-variant` (Levenshtein <= 2 after the same normalisation, which already catches the brief's
+own Reyne/Reine example as distance 1, and Dorleans/d'Orleans as identical via punctuation-folding without
+needing a curated list); `same-meaning-different-code` (the other side's value, normalised, is found under a
+*different* code of the same class elsewhere in the first side's own listing -- a numbering/page-boundary
+mismatch, not a content disagreement); `same-code-different-meaning` (none of the above: a real, unresolved
+disagreement); `one-side-blank`; `other` (one source itself carries more than one distinct value for the same
+key -- 9 cases, below, a within-source anomaly rather than a 509-vs-506 pair).
+
+**Counts** (210 keys / 429 rows):
+
+| kind | keys | rows |
+|---|---|---|
+| identical-after-normalisation | 28 | 56 |
+| spelling-variant | 112 | 224 |
+| same-code-different-meaning | 60 | 120 |
+| same-meaning-different-code | 1 | 2 |
+| one-side-blank | 0 | 0 |
+| other (within-source duplicate) | 9 | 27 |
+
+**One genuine value disagreement found this pass is a page-boundary numbering shift, not a reading error**:
+code 70 (class `word`, mark `+`) -- 509 p.3712-3713's own A-L list gives 70="zele", but both 509 p.3711's M-Z
+continuation and 506 agree 70="ya", 71="zele". This is 509's *own two pages* disagreeing with each other by one
+position, confirmed by `zele` appearing in 506 at the different code 71 -- caught by this job's
+same-meaning-different-code cross-reference index, not by eye. Flagged in key.tsv's own `note`/`conflict_kind`
+at code 70; not corrected (rule 4: a conflict is logged, never resolved by majority), and worth re-checking
+against a real letter once one is in hand (f.213's letter is already known to use a *different* cipher, nos.
+31/35, so this specific shift cannot be tested against Group A's siblings; it would show up as a one-position
+misread of any word near "zele"/"ya" in a no. 32 decode).
+
+**Within-source duplicates (`other`, 9 cases)** -- one side itself gives two distinct values for the same key,
+so there is no clean 509-vs-506 pair to classify: code 14 (`letter`, mark `co`) -- 506 alone carries both `C`
+and `P`; `ville` 61 (`'`) -- 509 alone carries both `Calais` and `amsterdam` (506 agrees with 509's `Calais`;
+`amsterdam` sits correctly at ville 62 in 506, so 509's own `amsterdam` row at 61 looks like 509's own
+duplicate/misplaced entry, not a 506 disagreement -- see `conflicts.tsv`); `ville` 83 (`'`) -- 506 alone carries
+both `Dunkerke` and `Roüen`; `word` 18/25/27/28/37/79 (various marks) -- 506 alone carries two values at six
+word codes. All nine are logged in `conflicts.tsv` with both values; none resolved.
+
+**Local-order check, and its limit.** For the 61 `same-code-different-meaning`/`same-meaning-different-code`
+pairs, `conflicts.py` also checks whether each side's own value sits alphabetically between that same side's
+own neighbours at code-1/code+1 -- a fact for the next reader, never a resolution (brief step 2). This check is
+**not meaningful for class `person`**: the person codes are ordered by rank (20 Le Roy, 26 la Reyne, 22 Madame,
+28 M^r le Duc d'Orléans, ...; `sources/decode/2026-10-24-sp106-6-keys/509/README.md`), not alphabetically, which
+is exactly why it reports "breaks local alphabetical order" on both sides for nearly every person pair above --
+that is the check failing to apply, not a finding about which copy is more consistent. For `word`/`syllable` it
+is weaker evidence than it looks, too: the word/syllable split is this script's own heuristic (not the key
+sheet's own structure, this folder's "## Key" section above), so a code's true neighbour in the original single
+alphabetical list can fall in the *other* class and be invisible to a same-class-only neighbour check. Read the
+per-pair order note in `conflicts.tsv`/the table below as a weak, class-limited signal, not as grounds to prefer
+one source's spelling over the other's.
+
+**Sanity table, per class** (`conflicts.py`'s own output; ranges disagreeing with chauran.htm's description --
+person 20-76, Villes 61-89, Royaulmes 90-108 -- would be flagged `**` below; none are):
+
+| class | code range | rows | conflict-flagged | share |
+|---|---|---|---|---|
+| letter | 10-33 | 96 | 3 | 3.1% |
+| other (null) | 1-47 | 114 | 0 | 0.0% |
+| person | 9-76 | 216 | 184 | 85.2% |
+| royaume | 90-108 | 29 | 10 | 34.5% |
+| syllable | 1-100 | 187 | 8 | 4.3% |
+| ville | 61-89 | 58 | 30 | 51.7% |
+| word | 1-100 | 931 | 194 | 20.8% |
+
+Person is the class most affected by far (85.2% of its rows conflict-flagged) -- consistent with 509's person
+list using free-text foreign-dignitary descriptions ("M^r le Mini^*e Despag.^e") that two independent 2020
+transcribers of dense period handwriting would read very differently, and with the rank-ordering noted above
+giving the local-order check no power to say which transcriber is closer. Ville is the next most affected
+(51.7%); royaume, syllable, letter, word, and the null class are all under 35%, with word the lowest-rate large
+class (20.8% of 931 rows) and the null class clean (0 of 114).
+
+**Full listing, `same-code-different-meaning` and `same-meaning-different-code` (61 pairs)**, 509 = DECODE 509
+pp.3712-3713, 506 = DECODE 506 p.3705 -- see `conflicts.tsv` for the machine-readable form with the full note:
+
+| code | mark | class | 509 | 506 | kind |
+|---|---|---|---|---|---|
+| 9 | ' | person | M^r les Estate D'holl^de | les estat d' Hollande | same-code-different-meaning |
+| 14 | ' | person | M^r le Mini^*e Despag.^e | M^r Ministre desp^re | same-code-different-meaning |
+| 16 | ' | person | D. Estavane de Gamara | Don estavun de Gamare | same-code-different-meaning |
+| 19 | ' | person | M^r De Carascene | le Ma de laraseene | same-code-different-meaning |
+| 20 | ' | person | la Reune D'espay^e | la Repr?e Despayne | same-code-different-meaning |
+| 25 | ' | person | D. Juan Daustriche | Dom Juan Daustriche | same-code-different-meaning |
+| 27 | ' | person | le lecteur de Mayone | le el. De Marence | same-code-different-meaning |
+| 28 | ' | person | lesl^our de Bavier | le el de Bavierc | same-code-different-meaning |
+| 29 |  | person | M^r le C^al De Rer | M^r le Cand D Rer? | same-code-different-meaning |
+| 29 | ' | person | lad^al Ruiter | La d^al Ruit*e | same-code-different-meaning |
+| 32 |  | person | M^r le C. D'harcour | M^r le Conte Dharqur | same-code-different-meaning |
+| 32 | ' | person | le C. De Charo** | M^r lel. Delharost | same-code-different-meaning |
+| 33 |  | person | M^r De Meaufort | M^r D. Bev*ufort | same-code-different-meaning |
+| 33 | ' | person | le C. De S^t Argnan | M^r lel. Der. Aignan | same-code-different-meaning |
+| 34 |  | person | M^r De Movillon | M^r le D. DelBoüllon | same-code-different-meaning |
+| 35 | ' | person | le Roy De Portugal | le Rody De Portugal | same-code-different-meaning |
+| 36 |  | person | M^r le C. Desoissons | M^r le l. Deloissins | same-code-different-meaning |
+| 37 | ' | person | D. Castel Rodrigo | Don Castel Rodriyo | same-code-different-meaning |
+| 39 |  | person | M^r De Manciry | M^r le D. Dennevert | same-code-different-meaning |
+| 39 | ' | person | lest. De Brandenbourg | de el. De Brandebourg | same-code-different-meaning |
+| 41 |  | person | M^r le D. Richelieu | M^r le D, Dehiehetieu | same-code-different-meaning |
+| 41 | ' | person | M^r De Batteville | M^r De Batteierlle | same-code-different-meaning |
+| 42 | ' | person | lest. De Palatin | de el Palatin | same-code-different-meaning |
+| 43 | ' | person | le C. De Pigneranda | le l. DePigneranda | same-code-different-meaning |
+| 44 |  | person | l'Archeves^e De Rhodes | l'Arche zum De Rhodes | same-code-different-meaning |
+| 44 | ' | person | la Reyne de Svede | la Repre de he*dde | same-code-different-meaning |
+| 45 | ' | person | lest. De Saxe | le el. de Saxe | same-code-different-meaning |
+| 47 | ' | person | lest De Treves | le el. de Treve | same-code-different-meaning |
+| 48 |  | person | M^r le M^al De Villeroy | transcription le Mar^al De villeroy | same-code-different-meaning |
+| 49 |  | person | M^r le M^al De Gramoru | M^r le Mar^al De Gramont | same-code-different-meaning |
+| 49 | ' | person | lest. De Cologne | le el De Cologne | same-code-different-meaning |
+| 50 | ' | person | Mad^e De Chatillon | M^r De Chatillon | same-code-different-meaning |
+| 53 |  | person | la chambre de Justice | La chamd, De Justice | same-code-different-meaning |
+| 53 | ' | person | l'evesq De Munster | le el. De Munster | same-code-different-meaning |
+| 54 | ' | person | M^r De Marciri | M^r De Mavern | same-code-different-meaning |
+| 55 | ' | person | M^r De Viequefort | M^r De *niquefort | same-code-different-meaning |
+| 56 |  | person | M^r le M^al Daumone | M^r le Mar^al Daumont | same-code-different-meaning |
+| 56 | ' | person | le M^al Dauqini court | M^r le Mar^al D'auquincourt | same-code-different-meaning |
+| 57 |  | person | M^r le M^al De T*hulemberg | M^r le Mar^al De Schulemberg | same-code-different-meaning |
+| 58 |  | person | les l?seheunis | Le Meh***** | same-code-different-meaning |
+| 60 |  | person | M^r le M^al Delaferte | M^r le Mar^al Delaforte | same-code-different-meaning |
+| 61 |  | person | le Prem^ce Presidene | M^r le Pr. Presidene | same-code-different-meaning |
+| 66 |  | person | la Reyne merc dany^re | la Royne merc Dasnre | same-code-different-meaning |
+| 68 |  | person | le Prevott des Marchand | le Prev?ost de Mart | same-code-different-meaning |
+| 69 |  | person | M^r lel De Britolle | M^r le l. De Bastille | same-code-different-meaning |
+| 71 |  | person | la Reyne Dasty leterre | la Royne Danyro | same-code-different-meaning |
+| 72 |  | person | M^r lec Sandivich | M^r le d. Sandutch | same-code-different-meaning |
+| 73 |  | person | M^r lec de Menchester | M^r le C De Menchettor | same-code-different-meaning |
+| 74 |  | person | M^r lec De* Albance | M^r lel Derh Albante | same-code-different-meaning |
+| 7 | .. | word | Dans | Estably | same-code-different-meaning |
+| 21 | ◡ | word | hantemeru | hautement | same-code-different-meaning |
+| 22 | ◡ | word | Mad.^e ou Mad^* | mad^e,ou,Mad**** | same-code-different-meaning |
+| 30 |  | word | Jay reec?u lam?rdau | Jayrceuc?u ladre du | same-code-different-meaning |
+| 41 | + | word | preleru | presene | same-code-different-meaning |
+| 45 | + | word | mariage | marcuye | same-code-different-meaning |
+| 46 |  | word | inamtenanc | maintenant | same-code-different-meaning |
+| 57 | ^ | word | estoienc | estoicru | same-code-different-meaning |
+| 61 | ◡ | word | **ormis | hormes | same-code-different-meaning |
+| 65 | ^ | word | avertissem^* | auerhissement | same-code-different-meaning |
+| 70 | + | word | zele | ya | same-meaning-different-code |
+| 76 | ^ | word | l*anc | tant | same-code-different-meaning |
+
+Regenerate this section's tables: `python3 conflicts.py` (writes `conflicts.tsv` and the `conflict_kind` column
+on `key.tsv`; prints the counts and sanity table above).
+
 Note: SP 106/6 nos. 31 and 35 (the second, numbers-to-999 cipher for SP 84/165 f.213) and DECODE id 497 are
 still unlocated on DECODE, but that is a gap in the *key-identification* work tracked in
 `ciphers/sp84-fuente-1662/NOTES.md`, not in this pool's own folder (dropped from this job's scope per the

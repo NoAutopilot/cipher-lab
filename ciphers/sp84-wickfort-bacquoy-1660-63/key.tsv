@@ -6,1697 +6,1702 @@
 # transcription of a period key document, not a cryptanalytic recovery (rule 4). The
 # 'word'/'syllable' class split is this script's own heuristic (see its docstring),
 # not part of DECODE's or Tomokiyo's description -- read it as descriptive, not graded.
+# conflict_kind (job KEY32-CONFLICTS, 24 Oct 2026) classifies each conflict-flagged row's
+# 509-vs-506 disagreement by classify_conflict_groups() in this script; see conflicts.tsv
+# and NOTES.md '## Conflicts'. Non-conflicting rows carry conflict_kind = ''.
 # Regenerate: python3 build_key_no32.py build --doc2952 .. --doc2953 .. --doc2951 ..
-code	mark	meaning	class	source	grade	note
-23	m	K	letter	509 p2-3	H	
-18	co	K	letter	509 p2-3	H	
-InvertedLazySWithCurledEnds		K	letter	509 p2-3	H	
-10	m	A	letter	509 p2-3	H	
-33	co	A	letter	509 p2-3	H	
-CapitalLetterSCrossedByACrossBar		A	letter	509 p2-3	H	
-14	m	B	letter	509 p2-3	H	
-25	co	B	letter	509 p2-3	H	
-OghamLetterUr		B	letter	509 p2-3	H	
-21	m	C	letter	509 p2-3	H	
-13	co	C	letter	509 p2-3	H	
-PlusSign		C	letter	509 p2-3	H	
-11	m	D	letter	509 p2-3	H	
-28	co	D	letter	509 p2-3	H	
-CircledMinus		D	letter	509 p2-3	H	
-28	m	E	letter	509 p2-3	H	
-10	co	E	letter	509 p2-3	H	
-Verdigris		E	letter	509 p2-3	H	
-17	m	F	letter	509 p2-3	H	
-31	co	F	letter	509 p2-3	H	
-Soap		F	letter	509 p2-3	H	
-12	m	G	letter	509 p2-3	H	
-30	co	G	letter	509 p2-3	H	
-Arsenic		G	letter	509 p2-3	H	
-25	m	H	letter	509 p2-3	H	
-11	co	H	letter	509 p2-3	H	
-NkoDigitNine		H	letter	509 p2-3	H	
-19	m	I	letter	509 p2-3	H	
-32	co	I	letter	509 p2-3	H	
-Earth		I	letter	509 p2-3	H	
-20	m	L	letter	509 p2-3	H	
-12	co	L	letter	509 p2-3	H	
-TinDominatedByJupiter		L	letter	509 p2-3	H	
-16	m	M	letter	509 p2-3	H	
-21	co	M	letter	509 p2-3	H	
-SmallLetterWWithCenteredVerticalLine		M	letter	509 p2-3	H	
-30	m	N	letter	509 p2-3	H	
-15	co	N	letter	509 p2-3	H	
-CapitalTau		N	letter	509 p2-3	H	
-32	m	O	letter	509 p2-3	H	
-27	co	O	letter	509 p2-3	H	
-Silver		O	letter	509 p2-3	H	
-33	m	P	letter	509 p2-3	H	
-14	co	P	letter	509 p2-3	H	conflict: 509 p2-3=P vs c
-CapitalEpsilon		P	letter	509 p2-3	H	
-31	m	Q	letter	509 p2-3	H	
-24	co	Q	letter	509 p2-3	H	
-CapitalPsi		Q	letter	509 p2-3	H	
-13	m	R	letter	509 p2-3	H	
-29	co	R	letter	509 p2-3	H	
-CapitaslRho		R	letter	509 p2-3	H	
-29	m	S	letter	509 p2-3	H	
-16	co	S	letter	509 p2-3	H	
-TwoLogicalOrOPperator		S	letter	509 p2-3	H	
-15	m	T	letter	509 p2-3	H	
-26	co	T	letter	509 p2-3	H	
-CapitalDelta		T	letter	509 p2-3	H	
-22	m	V	letter	509 p2-3	H	
-17	co	V	letter	509 p2-3	H	
-CapitalUpsilon		V	letter	509 p2-3	H	
-27	m	X	letter	509 p2-3	H	
-22	co	X	letter	509 p2-3	H	
-CapitalPi		X	letter	509 p2-3	H	
-24	m	Y	letter	509 p2-3	H	
-19	co	Y	letter	509 p2-3	H	
-CapitalEta		Y	letter	509 p2-3	H	
-18	m	Z	letter	509 p2-3	H	
-23	co	Z	letter	509 p2-3	H	
-ReversedCapitalPsi		Z	letter	509 p2-3	H	
-26	m	W?	letter	509 p2-3	H	
-20	co	W?	letter	509 p2-3	H	
-ReversedCapitalEpsilon		W?	letter	509 p2-3	H	
-20		Le Roy	person	509 p2-3	H	
-21		le Duc Danjou	person	509 p2-3	H	conflict: 509 p2-3=le Duc Danjou vs m^r <abbr monsieur> le d. danine
-22		Madame	person	509 p2-3	H	
-23		la Reyne mere	person	509 p2-3	H	
-24		M^r <ABBR Monsieur> le Prince	person	509 p2-3	H	
-25		M^r <ABBR Monsieur> le P. Delonty	person	509 p2-3	H	
-26		la Reyne	person	509 p2-3	H	
-27		M^r <ABBR Monsieur> delonqueville	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> delonqueville vs m^r <abbr monsieur> delonquevilles
-28		M^r <ABBR Monsieur> le Duc Dorleans	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le Duc Dorleans vs m^r <abbr monsieur> le d. dorleans
-29		M^r <ABBR Monsieur> le C^al <ABBR Cardinal> De Rer	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le C^al <ABBR Cardinal> De Rer vs m^r <abbr monsieur> le cand d rer?
-30		M^r <ABBR Monsieur> le P. francois	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le P. francois vs le prince francoci
-31		M^r <ABBR Monsieur> le D. Danguein	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le D. Danguein vs m^r <abbr monsieur> l. d. denguein
-32		M^r <ABBR Monsieur> le C. D'harcour	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le C. D'harcour vs m^r <abbr monsieur> le conte dharqur
-33		M^r <ABBR Monsieur> De Meaufort	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Meaufort vs m^r <abbr monsieur> d. bev*ufort
-34		M^r <ABBR Monsieur> De Movillon	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Movillon vs m^r <abbr monsieur> le d. delboüllon
-35		M^e la Princesse	person	509 p2-3	H	conflict: 509 p2-3=M^e la Princesse vs m^r <abbr monsieur> la princesse
-36		M^r <ABBR Monsieur> le C. Desoissons	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le C. Desoissons vs m^r <abbr monsieur> le l. deloissins
-37		M^r <ABBR Monsieur> le Duc De Maravin	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le Duc De Maravin vs m^r <abbr monsieur> le d. de mararin
-38		M^r <ABBR Monsieur> Debandorme	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> Debandorme vs m^r <abbr monsieur> dehandormes
-39		M^r <ABBR Monsieur> De Manciry	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Manciry vs m^r <abbr monsieur> le d. dennevert
-40		M^r <ABBR Monsieur> De Mercoeur	person	509 p2-3	H	
-41		M^r <ABBR Monsieur> le D. Richelieu	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le D. Richelieu vs m^r <abbr monsieur> le d, dehiehetieu
-42		M^r <ABBR Monsieur> le D. Deloraine	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le D. Deloraine vs m^r <abbr monsieur> le deloraine
-43		M^r <ABBR Monsieur> le D. De Guise	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le D. De Guise vs m^r <abbr monsieur> de guise
-44		l'Archeves^e De Rhodes	person	509 p2-3	H	conflict: 509 p2-3=l'Archeves^e De Rhodes vs l'arche zum de rhodes
-45		M^r <ABBR Monsieur> le D. Delboeuf	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le D. Delboeuf vs m^r <abbr monsieur> delboeut
-46		M^r <ABBR Monsieur> les D Charles	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> les D Charles vs le prince charles
-47		M^r <ABBR Monsieur> le P D Tharante	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le P D Tharante vs le p. de tharante
-48		M^r <ABBR Monsieur> le M^al De Villeroy	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le M^al De Villeroy vs transcription le mar^al de villeroy
-49		M^r <ABBR Monsieur> le M^al De Gramoru	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le M^al De Gramoru vs m^r <abbr monsieur> le mar^al de gramont
-50		M^r <ABBR Monsieur> le M^al De Turenne	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le M^al De Turenne vs m^r <abbr monsieur> le mar^al de turenne
-51		M^r <ABBR Monsieur> fouquet	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> fouquet vs m^r <abbr monsieur> sovequet
-52		le Parlemene	person	509 p2-3	H	
-53		la chambre de Justice	person	509 p2-3	H	conflict: 509 p2-3=la chambre de Justice vs la chamd, de justice
-54		l'empereur	person	509 p2-3	H	
-55		M^r <ABBR Monsieur> le M^al fabert	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le M^al fabert vs m^r <abbr monsieur> le mar^al de fabert
-56		M^r <ABBR Monsieur> le M^al Daumone	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le M^al Daumone vs m^r <abbr monsieur> le mar^al daumont
-57		M^r <ABBR Monsieur> le M^al De T*hulemberg	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le M^al De T*hulemberg vs m^r <abbr monsieur> le mar^al de schulemberg
-58		les l?seheunis	person	509 p2-3	H	conflict: 509 p2-3=les l?seheunis vs le meh*****
-59		l'Abbe fouquet	person	509 p2-3	H	conflict: 509 p2-3=l'Abbe fouquet vs m^r <abbr monsieur> sabbefouquet
-60		M^r <ABBR Monsieur> le M^al Delaferte	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le M^al Delaferte vs m^r <abbr monsieur> le mar^al delaforte
-61		le Prem^ce Presidene	person	509 p2-3	H	conflict: 509 p2-3=le Prem^ce Presidene vs m^r <abbr monsieur> le pr. presidene
-62		M^r <ABBR Monsieur> le Duc Dyorck	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le Duc Dyorck vs le duc diorck
-63		M^r <ABBR Monsieur> le Gñal Monck	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le Gñal Monck vs le gen^al monek
-64		Le Roy Danyleterre	person	509 p2-3	H	conflict: 509 p2-3=Le Roy Danyleterre vs le roy d angleterre
-65		M^ad hayde chance	person	509 p2-3	H	conflict: 509 p2-3=M^ad hayde chance vs m^r <abbr monsieur> ord hayde chance
-66		la Reyne merc dany^re	person	509 p2-3	H	conflict: 509 p2-3=la Reyne merc dany^re vs la royne merc dasnre
-67		l'imperatrice	person	509 p2-3	H	
-68		le Prevott des Marchand	person	509 p2-3	H	conflict: 509 p2-3=le Prevott des Marchand vs le prev?ost de mart
-69		M^r <ABBR Monsieur> lel De Britolle	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> lel De Britolle vs m^r <abbr monsieur> le l. de bastille
-70		M^r <ABBR Monsieur> D. Dormone	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> D. Dormone vs m^r <abbr monsieur> le d. dormone
-71		la Reyne Dasty leterre	person	509 p2-3	H	conflict: 509 p2-3=la Reyne Dasty leterre vs la royne danyro
-72		M^r <ABBR Monsieur> lec Sandivich	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> lec Sandivich vs m^r <abbr monsieur> le d. sandutch
-73		M^r <ABBR Monsieur> lec de Menchester	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> lec de Menchester vs m^r <abbr monsieur> le c de menchettor
-74		M^r <ABBR Monsieur> lec De* Albance	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> lec De* Albance vs m^r <abbr monsieur> lel derh albante
-75		Mad lad^elle Dyorck	person	509 p2-3	H	
-76		M^r <ABBR Monsieur> Brilliamson	person	509 p2-3	H	
-9	'	M^r <ABBR Monsieur> les Estate D'holl^de	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> les Estate D'holl^de vs les estat d' hollande
-10	'	le Roy Despayne	person	509 p2-3	H	
-11	'	l'Infante Desp^ne	person	509 p2-3	H	conflict: 509 p2-3=l'Infante Desp^ne vs l'infante despayne
-12	'	M^r <ABBR Monsieur> les seer^re Nicolas	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> les seer^re Nicolas vs m^r <abbr monsieur> le secr^re niolas
-13	'	La Maison D'austrieche	person	509 p2-3	H	conflict: 509 p2-3=La Maison D'austrieche vs la maison daustriche
-14	'	M^r <ABBR Monsieur> le Mini^*e Despag.^e	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le Mini^*e Despag.^e vs m^r <abbr monsieur> ministre desp^re
-15	'	M^r <ABBR Monsieur> les Sce^re Maurice	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> les Sce^re Maurice vs m^r <abbr monsieur> le se^re maurice
-16	'	D. Estavane de Gamara	person	509 p2-3	H	conflict: 509 p2-3=D. Estavane de Gamara vs don estavun de gamare
-17	'	l'Archiduc leopol	person	509 p2-3	H	conflict: 509 p2-3=l'Archiduc leopol vs l'archidue leopol
-18	'	l'Arch D'Inspruck	person	509 p2-3	H	conflict: 509 p2-3=l'Arch D'Inspruck vs larch d inspruck
-19	'	M^r <ABBR Monsieur> De Carascene	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Carascene vs le ma de laraseene
-20	'	la Reune D'espay^e	person	509 p2-3	H	conflict: 509 p2-3=la Reune D'espay^e vs la repr?e despayne
-21	'	la Reyne Christine	person	509 p2-3	H	conflict: 509 p2-3=la Reyne Christine vs la repne christine
-22	'	le Roy Damnemort	person	509 p2-3	H	conflict: 509 p2-3=le Roy Damnemort vs le roy damnemart
-23	'	Ifnante de Portugal	person	509 p2-3	H	conflict: 509 p2-3=Ifnante de Portugal vs infante de portugal
-24	'	l'empire	person	509 p2-3	H	
-25	'	D. Juan Daustriche	person	509 p2-3	H	conflict: 509 p2-3=D. Juan Daustriche vs dom juan daustriche
-26	'	le Roy e suede	person	509 p2-3	H	conflict: 509 p2-3=le Roy e suede vs le roy de suede
-27	'	le lecteur de Mayone	person	509 p2-3	H	conflict: 509 p2-3=le lecteur de Mayone vs le el. de marence
-28	'	lesl^our de Bavier	person	509 p2-3	H	conflict: 509 p2-3=lesl^our de Bavier vs le el de bavierc
-29	'	lad^al Ruiter	person	509 p2-3	H	conflict: 509 p2-3=lad^al Ruiter vs la d^al  ruit*e
-30	'	le Pape	person	509 p2-3	H	
-31	'	le D. De Mantove	person	509 p2-3	H	conflict: 509 p2-3=le D. De Mantove vs le d. de mantoüe
-32	'	le C. De Charo**	person	509 p2-3	H	conflict: 509 p2-3=le C. De Charo** vs m^r <abbr monsieur> lel. delharost
-33	'	le C. De S^t Argnan	person	509 p2-3	H	conflict: 509 p2-3=le C. De S^t Argnan vs m^r <abbr monsieur> lel. der. aignan
-34	'	le C. De Brienne	person	509 p2-3	H	conflict: 509 p2-3=le C. De Brienne vs m^r <abbr monsieur> brienne
-35	'	le Roy De Portugal	person	509 p2-3	H	conflict: 509 p2-3=le Roy De Portugal vs le rody de portugal
-36	'	le Roy De Pologne	person	509 p2-3	H	
-37	'	D. Castel Rodrigo	person	509 p2-3	H	conflict: 509 p2-3=D. Castel Rodrigo vs don castel rodriyo
-38	'	la Reyne De Pologne	person	509 p2-3	H	conflict: 509 p2-3=la Reyne De Pologne vs la repre de pologne
-39	'	lest. De Brandenbourg	person	509 p2-3	H	conflict: 509 p2-3=lest. De Brandenbourg vs de el. de brandebourg
-40	'	M^r <ABBR Monsieur> le Tellter	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le Tellter vs m^r <abbr monsieur> le tellier
-41	'	M^r <ABBR Monsieur> De Batteville	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Batteville vs m^r <abbr monsieur> de batteierlle
-42	'	lest. De Palatin	person	509 p2-3	H	conflict: 509 p2-3=lest. De Palatin vs de el palatin
-43	'	le C. De Pigneranda	person	509 p2-3	H	conflict: 509 p2-3=le C. De Pigneranda vs le l. depigneranda
-44	'	la Reyne de Svede	person	509 p2-3	H	conflict: 509 p2-3=la Reyne de Svede vs la repre de he*dde
-45	'	lest. De Saxe	person	509 p2-3	H	conflict: 509 p2-3=lest. De Saxe vs le el. de saxe
-46	'	la Reyne de Portugal	person	509 p2-3	H	conflict: 509 p2-3=la Reyne de Portugal vs le repne de portugal
-47	'	lest De Treves	person	509 p2-3	H	conflict: 509 p2-3=lest De Treves vs le el. de treve
-48	'	M^r <ABBR Monsieur> D'estrades	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> D'estrades vs m^r <abbr monsieur> - d;estrades
-49	'	lest. De Cologne	person	509 p2-3	H	conflict: 509 p2-3=lest. De Cologne vs le el de cologne
-50	'	Mad^e De Chatillon	person	509 p2-3	H	conflict: 509 p2-3=Mad^e De Chatillon vs m^r <abbr monsieur> de chatillon
-51	'	M^r <ABBR Monsieur> De Bouteville	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Bouteville vs m^r <abbr monsieur> de boutevilles
-52	'	le Grand Duc	person	509 p2-3	H	
-53	'	l'evesq De Munster	person	509 p2-3	H	conflict: 509 p2-3=l'evesq De Munster vs le el. de munster
-54	'	M^r <ABBR Monsieur> De Marciri	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Marciri vs m^r <abbr monsieur> de mavern
-55	'	M^r <ABBR Monsieur> De Viequefort	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Viequefort vs m^r <abbr monsieur> de *niquefort
-56	'	le M^al Dauqini court	person	509 p2-3	H	conflict: 509 p2-3=le M^al Dauqini court vs m^r <abbr monsieur> le mar^al d'auquincourt
-57	'	le Duc de Parme	person	509 p2-3	H	conflict: 509 p2-3=le Duc de Parme vs le d. de parme
-58	'	le Duc de Modene	person	509 p2-3	H	conflict: 509 p2-3=le Duc de Modene vs le d, de modene
-59	'	M^r <ABBR Monsieur> De Thou	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Thou vs m^r <abbr monsieur> dethou
-60	'	M^r <ABBR Monsieur> De Lumbres	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Lumbres vs m^r <abbr monsieur> delumbres
-61	'	Calais	ville	509 p2-3	H	conflict: 509 p2-3=Calais vs amsterdam
-61	'	amsterdam	ville	509 p2-3	H	conflict: 509 p2-3=amsterdam vs calais
-63	'	Januert	ville	509 p2-3	H	conflict: 509 p2-3=Januert vs anuers
-64	'	Bordeaux	ville	509 p2-3	H	
-65	'	Boulonge	ville	509 p2-3	H	conflict: 509 p2-3=Boulonge vs boulongne
-66	'	Bruxelles	ville	509 p2-3	H	
-67	'	Bayonne	ville	509 p2-3	H	
-68	'	Britolles	ville	509 p2-3	H	conflict: 509 p2-3=Britolles vs bristolla
-69	'	Douu?ves	ville	509 p2-3	H	conflict: 509 p2-3=Douu?ves vs douvre
-70	'	Pronne	ville	509 p2-3	H	conflict: 509 p2-3=Pronne vs peronne
-71	'	Cologne	ville	509 p2-3	H	
-72	'	Cambray	ville	509 p2-3	H	
-73	'	hambourg	ville	509 p2-3	H	
-74	'	lisbonne	ville	509 p2-3	H	
-75	'	la haye	ville	509 p2-3	H	conflict: 509 p2-3=la haye vs lahaye
-76	'	lion	ville	509 p2-3	H	
-77	'	la Rochelle	ville	509 p2-3	H	
-78	'	Marseille	ville	509 p2-3	H	conflict: 509 p2-3=Marseille vs marseilles
-79	'	francfort	ville	509 p2-3	H	conflict: 509 p2-3=francfort vs sranefort
-80	'	Madrid	ville	509 p2-3	H	
-81	'	Vesminister	ville	509 p2-3	H	
-82	'	Vienne	ville	509 p2-3	H	
-83	'	Roüen	ville	509 p2-3	H	conflict: 509 p2-3=Roüen vs dunkerke
-84	'	la havre	ville	509 p2-3	H	conflict: 509 p2-3=la havre vs lehavre
-85	'	Don Kerque	ville	509 p2-3	H	
-86	'	Paris	ville	509 p2-3	H	conflict: 509 p2-3=Paris vs paros
-87	'	londres	ville	509 p2-3	H	
-88	'	Dieppe	ville	509 p2-3	H	conflict: 509 p2-3=Dieppe vs dieppes
-89	'	Venise	ville	509 p2-3	H	conflict: 509 p2-3=Venise vs veniles
-90	'	la Pologne	royaume	509 p2-3	H	
-91	'	la france	royaume	509 p2-3	H	conflict: 509 p2-3=la france vs le france
-92	'	la svede	royaume	509 p2-3	H	conflict: 509 p2-3=la svede vs la suede
-93	'	la hollande	royaume	509 p2-3	H	
-94	'	la zelande	royaume	509 p2-3	H	conflict: 509 p2-3=la zelande vs la *elande
-95	'	le Portugal	royaume	509 p2-3	H	
-96	'	l'angleterre	royaume	509 p2-3	H	
-97	'	la slandres	royaume	509 p2-3	H	conflict: 509 p2-3=la slandres vs la frandre
-98	'	le spagne	royaume	509 p2-3	H	conflict: 509 p2-3=le spagne vs l'espagne
-99	'	la Cathalogne	royaume	509 p2-3	H	
-100	'	la Damnemare	royaume	509 p2-3	H	
-101	'	la Livonie	royaume	509 p2-3	H	
-102	'	La Moscovie	royaume	509 p2-3	H	
-103	'	la Pruce	royaume	509 p2-3	H	
-104	'	L'Italie	royaume	509 p2-3	H	
-105	'	l'Irlande	royaume	509 p2-3	H	
-106	'	les cosse	royaume	509 p2-3	H	
-107	'	la Pemmeranie	royaume	509 p2-3	H	
-108	'	l'Alsace	royaume	509 p2-3	H	
-1	..	na	syllable	509 p2-3	H	
-2	..	que	word	509 p2-3	H	
-3	..	grand	word	509 p2-3	H	
-4	..	qui	syllable	509 p2-3	H	
-5	..	beaucoup	word	509 p2-3	H	
-6	..	les	word	509 p2-3	H	
-7	..	Dans	word	509 p2-3	H	conflict: 509 p2-3=Dans vs estably
-8	..	et	word	509 p2-3	H	
-9	..	conjoncture	word	509 p2-3	H	
-10	..	despesches	word	509 p2-3	H	
-11	..	Passion	word	509 p2-3	H	
-12	..	bien	word	509 p2-3	H	
-13	..	au	word	509 p2-3	H	
-14	..	droiet	word	509 p2-3	H	
-15	..	des	word	509 p2-3	H	
-16	..	leur	word	509 p2-3	H	
-17	..	Enuiron	word	509 p2-3	H	
-18	..	nous	word	509 p2-3	H	
-19	..	about?e?	word	509 p2-3	H	conflict: 509 p2-3=about?e? vs about
-20	..	mu	syllable	509 p2-3	H	
-21	..	quel	word	509 p2-3	H	
-22	..	Conference	word	509 p2-3	H	
-23	..	rien	word	509 p2-3	H	
-24	..	bonte	word	509 p2-3	H	
-25	..	nous	word	509 p2-3	H	
-26	..	quil	word	509 p2-3	H	
-27	..	quelque	word	509 p2-3	H	
-28	..	espagnol	word	509 p2-3	H	
-29	..	dure	word	509 p2-3	H	
-30	..	mais	word	509 p2-3	H	
-31	..	tour?	word	509 p2-3	H	conflict: 509 p2-3=tour? vs tous
-32	..	pour	word	509 p2-3	H	
-33	..	ri	syllable	509 p2-3	H	
-34	..	bon	word	509 p2-3	H	
-35	..	quos?	word	509 p2-3	H	conflict: 509 p2-3=quos? vs quon
-36	..	Glore	word	509 p2-3	H	conflict: 509 p2-3=Glore vs gloire
-37	..	vous?	word	509 p2-3	H	conflict: 509 p2-3=vous? vs vous
-38	..	pui?	word	509 p2-3	H	conflict: 509 p2-3=pui? vs puis
-39	..	qui	syllable	509 p2-3	H	conflict: 509 p2-3=qui vs quu
-40	..	moy?n	word	509 p2-3	H	conflict: 509 p2-3=moy?n vs moyon
-1	^	que	word	509 p2-3	H	
-2	^	liberte	word	509 p2-3	H	
-3	^	vu	syllable	509 p2-3	H	conflict: 509 p2-3=vu vs va
-4	^	bourgeois	word	509 p2-3	H	
-5	^	lettre	word	509 p2-3	H	conflict: 509 p2-3=lettre vs leure
-6	^	sous	word	509 p2-3	H	
-7	^	ses	word	509 p2-3	H	
-8	^	caul?a?lier	word	509 p2-3	H	conflict: 509 p2-3=caul?a?lier vs cavalier
-9	^	Grace	word	509 p2-3	H	
-10	^	capitaine	word	509 p2-3	H	
-11	^	vers	word	509 p2-3	H	
-12	^	desormais	word	509 p2-3	H	
-13	^	veille	word	509 p2-3	H	
-14	^	Parlement	word	509 p2-3	H	
-15	^	des	word	509 p2-3	H	
-16	^	sentimene	word	509 p2-3	H	conflict: 509 p2-3=sentimene vs sentiment
-17	^	son	word	509 p2-3	H	
-18	^	houpe	word	509 p2-3	H	conflict: 509 p2-3=houpe vs troupe
-19	^	envoy	word	509 p2-3	H	
-20	^	vietoire	word	509 p2-3	H	conflict: 509 p2-3=vietoire vs victoire
-21	^	accommodem^*	word	509 p2-3	H	conflict: 509 p2-3=accommodem^* vs accommodem*
-22	^	f?ave?	word	509 p2-3	H	conflict: 509 p2-3=f?ave? vs faut
-23	^	qui	syllable	509 p2-3	H	
-24	^	et	word	509 p2-3	H	
-25	^	Generaux	word	509 p2-3	H	
-26	^	nous	word	509 p2-3	H	
-27	^	quel	word	509 p2-3	H	
-28	^	vous	word	509 p2-3	H	
-29	^	maintenir	word	509 p2-3	H	
-30	^	quelque	word	509 p2-3	H	
-31	^	re	syllable	509 p2-3	H	
-32	^	su	syllable	509 p2-3	H	
-33	^	tu	syllable	509 p2-3	H	
-34	^	ve	syllable	509 p2-3	H	
-35	^	veoir	word	509 p2-3	H	
-36	^	vie	word	509 p2-3	H	
-37	^	tous	word	509 p2-3	H	
-38	^	vous	word	509 p2-3	H	
-43	^	vous	word	509 p2-3	H	
-39	^	tarhera	word	509 p2-3	H	conflict: 509 p2-3=tarhera vs taschera
-40	^	veu	word	509 p2-3	H	
-41	^	j	word	509 p2-3	H	conflict: 509 p2-3=j vs y
-42	^	ses	word	509 p2-3	H	
-44	^	tou*	word	509 p2-3	H	conflict: 509 p2-3=tou* vs tout
-45	^	trouvane	word	509 p2-3	H	conflict: 509 p2-3=trouvane vs trouvant
-46	^	ville	word	509 p2-3	H	
-47	^	veulleru	word	509 p2-3	H	conflict: 509 p2-3=veulleru vs veullent
-48	^	so	syllable	509 p2-3	H	
-49	^	avec	word	509 p2-3	H	
-50	^	bruit	word	509 p2-3	H	
-51	^	establi	word	509 p2-3	H	
-52	^	ne	syllable	509 p2-3	H	
-53	^	honneur	word	509 p2-3	H	
-54	^	cause	word	509 p2-3	H	
-55	^	Gouverneur	word	509 p2-3	H	
-56	^	combien	word	509 p2-3	H	
-57	^	estoienc	word	509 p2-3	H	conflict: 509 p2-3=estoienc vs estoicru
-58	^	Il?s	word	509 p2-3	H	conflict: 509 p2-3=Il?s vs js?s
-59	^	ou	word	509 p2-3	H	
-60	^	dessein	word	509 p2-3	H	
-61	^	affaire	word	509 p2-3	H	
-62	^	mauvais	word	509 p2-3	H	conflict: 509 p2-3=mauvais vs manuaci
-63	^	Peyne	word	509 p2-3	H	conflict: 509 p2-3=Peyne vs peÿne
-64	^	des	word	509 p2-3	H	
-65	^	avertissem^*	word	509 p2-3	H	conflict: 509 p2-3=avertissem^* vs auerhissement
-66	^	catholique	word	509 p2-3	H	
-67	^	quel	word	509 p2-3	H	
-68	^	quil	word	509 p2-3	H	
-69	^	secours	word	509 p2-3	H	
-70	^	trop	word	509 p2-3	H	
-71	^	trouve	word	509 p2-3	H	
-72	^	quelque	word	509 p2-3	H	
-73	^	nos	word	509 p2-3	H	
-74	^	quoy	word	509 p2-3	H	
-75	^	nuire	word	509 p2-3	H	
-76	^	l*anc	word	509 p2-3	H	conflict: 509 p2-3=l*anc vs tant
-77	^	touchanc	word	509 p2-3	H	conflict: 509 p2-3=touchanc vs touchant
-78	^	maniere	word	509 p2-3	H	
-79	^	matheur	word	509 p2-3	H	
-80	^	general	word	509 p2-3	H	
-1	"	ca	syllable	509 p2-3	H	
-2	"	different	word	509 p2-3	H	
-3	"	Britanique	word	509 p2-3	H	
-4	"	estat	word	509 p2-3	H	
-5	"	Place	word	509 p2-3	H	
-6	"	Il	word	509 p2-3	H	
-7	"	conscience	word	509 p2-3	H	
-8	"	que	word	509 p2-3	H	
-9	"	dernier	word	509 p2-3	H	
-10	"	ment	word	509 p2-3	H	
-11	"	averty	word	509 p2-3	H	
-12	"	quel	word	509 p2-3	H	
-13	"	traicte	word	509 p2-3	H	
-14	"	vous	word	509 p2-3	H	
-15	"	qui	syllable	509 p2-3	H	
-16	"	affin	word	509 p2-3	H	
-17	"	negotiacion	word	509 p2-3	H	
-18	"	et	word	509 p2-3	H	
-19	"	ci	syllable	509 p2-3	H	
-20	"	pa	syllable	509 p2-3	H	
-21	"	Bataille	word	509 p2-3	H	
-22	"	consideration	word	509 p2-3	H	
-23	"	desordre	word	509 p2-3	H	
-24	"	gens	word	509 p2-3	H	
-25	"	nous	word	509 p2-3	H	
-26	"	palisir	word	509 p2-3	H	
-27	"	fau	word	509 p2-3	H	
-28	"	propre	word	509 p2-3	H	
-29	"	bu	word	509 p2-3	H	
-30	"	nutralite	word	509 p2-3	H	
-31	"	ruine	word	509 p2-3	H	
-32	"	si	syllable	509 p2-3	H	
-33	"	Pour	word	509 p2-3	H	
-34	"	conserver	word	509 p2-3	H	
-35	"	nostre	word	509 p2-3	H	
-36	"	co	syllable	509 p2-3	H	
-37	"	vo	syllable	509 p2-3	H	
-38	"	reussir	word	509 p2-3	H	
-39	"	Pui?	word	509 p2-3	H	
-40	"	tous	word	509 p2-3	H	
-41	"	quil	word	509 p2-3	H	
-42	"	Puissant	word	509 p2-3	H	
-43	"	to	syllable	509 p2-3	H	
-44	"	tellement	word	509 p2-3	H	
-45	"	qua	syllable	509 p2-3	H	
-46	"	ordinaire	word	509 p2-3	H	
-47	"	satisfait	word	509 p2-3	H	
-48	"	ra	syllable	509 p2-3	H	
-49	"	qui	syllable	509 p2-3	H	
-50	"	non	word	509 p2-3	H	
-51	"	ministre	word	509 p2-3	H	
-52	"	ni	syllable	509 p2-3	H	
-53	"	plus	word	509 p2-3	H	
-54	"	estane	word	509 p2-3	H	
-55	"	honte	word	509 p2-3	H	
-56	"	ta	syllable	509 p2-3	H	
-57	"	les	word	509 p2-3	H	
-58	"	ce	word	509 p2-3	H	
-59	"	lon	word	509 p2-3	H	
-60	"	avoir	word	509 p2-3	H	
-61	"	hu	word	509 p2-3	H	
-62	"	jey	word	509 p2-3	H	
-63	"	effort	word	509 p2-3	H	
-64	"	gouvernem	word	509 p2-3	H	
-65	"	aussy	word	509 p2-3	H	
-66	"	avantage	word	509 p2-3	H	
-67	"	garder	word	509 p2-3	H	
-68	"	pouvoic	word	509 p2-3	H	
-69	"	negocier	word	509 p2-3	H	
-70	"	battre	word	509 p2-3	H	
-71	"	conseille	word	509 p2-3	H	
-72	"	facon	word	509 p2-3	H	
-73	"	manque	word	509 p2-3	H	
-74	"	que	word	509 p2-3	H	
-75	"	bi	word	509 p2-3	H	
-76	"	quatre	word	509 p2-3	H	
-77	"	proposition	word	509 p2-3	H	
-78	"	beau,ou,bele	word	509 p2-3	H	
-79	"	capable	word	509 p2-3	H	
-80	"	bo	syllable	509 p2-3	H	
-1	◡	le	syllable	509 p2-3	H	
-2	◡	luy	word	509 p2-3	H	
-3	◡	du	syllable	509 p2-3	H	
-4	◡	mes	word	509 p2-3	H	
-5	◡	guerre	word	509 p2-3	H	
-6	◡	oulre	word	509 p2-3	H	conflict: 509 p2-3=oulre vs outre
-7	◡	chose	word	509 p2-3	H	
-8	◡	honnorable	word	509 p2-3	H	
-9	◡	difficulte	word	509 p2-3	H	
-10	◡	contre	word	509 p2-3	H	
-11	◡	fo	syllable	509 p2-3	H	
-12	◡	agir	word	509 p2-3	H	
-13	◡	faveur	word	509 p2-3	H	
-14	◡	ga	syllable	509 p2-3	H	
-15	◡	contraire	word	509 p2-3	H	
-16	◡	be	word	509 p2-3	H	
-17	◡	ceru	word	509 p2-3	H	conflict: 509 p2-3=ceru vs cent
-18	◡	loing	word	509 p2-3	H	
-19	◡	enuoz?e	word	509 p2-3	H	
-20	◡	ennemy	word	509 p2-3	H	
-21	◡	hantemeru	word	509 p2-3	H	conflict: 509 p2-3=hantemeru vs hautement
-22	◡	Mad.^e ou Mad^*	word	509 p2-3	H	conflict: 509 p2-3=Mad.^e ou Mad^* vs mad^e <abbr madame>,ou,mad****
-23	◡	pe	syllable	509 p2-3	H	
-24	◡	ba	syllable	509 p2-3	H	
-25	◡	particuliere	word	509 p2-3	H	
-26	◡	marque	word	509 p2-3	H	
-27	◡	port	word	509 p2-3	H	conflict: 509 p2-3=port vs quel
-28	◡	opinion	word	509 p2-3	H	conflict: 509 p2-3=opinion vs oppinion
-29	◡	camppagne	word	509 p2-3	H	conflict: 509 p2-3=camppagne vs campagne
-30	◡	ensemble	word	509 p2-3	H	
-31	◡	principal	word	509 p2-3	H	
-32	◡	pendane	word	509 p2-3	H	conflict: 509 p2-3=pendane vs pendant
-33	◡	aveun	word	509 p2-3	H	
-34	◡	mi	syllable	509 p2-3	H	
-35	◡	seuremeru	word	509 p2-3	H	conflict: 509 p2-3=seuremeru vs seurement
-36	◡	tenir	word	509 p2-3	H	
-37	◡	Porte	word	509 p2-3	H	conflict: 509 p2-3=Porte vs posse
-38	◡	tous	word	509 p2-3	H	
-39	◡	pour?	word	509 p2-3	H	conflict: 509 p2-3=pour? vs pour
-40	◡	pres**	word	509 p2-3	H	conflict: 509 p2-3=pres** vs presse
-41	◡	ti	syllable	509 p2-3	H	
-42	◡	sieur	word	509 p2-3	H	
-43	◡	necessaire	word	509 p2-3	H	conflict: 509 p2-3=necessaire vs nec?ossaire
-44	◡	se	syllable	509 p2-3	H	
-45	◡	quelque	word	509 p2-3	H	
-46	◡	reünir	word	509 p2-3	H	
-47	◡	que	word	509 p2-3	H	
-48	◡	meme	word	509 p2-3	H	conflict: 509 p2-3=meme vs mesmes
-49	◡	ses	word	509 p2-3	H	
-50	◡	mont	word	509 p2-3	H	conflict: 509 p2-3=mont vs mon?e
-51	◡	ouvrage	word	509 p2-3	H	conflict: 509 p2-3=ouvrage vs ounrage
-52	◡	les	word	509 p2-3	H	
-53	◡	trouble	word	509 p2-3	H	conflict: 509 p2-3=trouble vs troubles
-54	◡	vaisseau	word	509 p2-3	H	
-55	◡	charge	word	509 p2-3	H	
-56	◡	no	syllable	509 p2-3	H	
-57	◡	diligent	word	509 p2-3	H	
-58	◡	quel	word	509 p2-3	H	
-59	◡	jay	word	509 p2-3	H	
-60	◡	ett	word	509 p2-3	H	
-61	◡	**ormis	word	509 p2-3	H	conflict: 509 p2-3=**ormis vs hormes
-62	◡	autre	word	509 p2-3	H	
-63	◡	eux	word	509 p2-3	H	
-64	◡	cour	word	509 p2-3	H	
-65	◡	division	word	509 p2-3	H	
-66	◡	tt	word	509 p2-3	H	conflict: 509 p2-3=tt vs et
-67	◡	celuy,ou,celle	word	509 p2-3	H	conflict: 509 p2-3=celuy,ou,celle vs celluy,ou,celle
-68	◡	des	word	509 p2-3	H	
-69	◡	con	word	509 p2-3	H	
-70	◡	gouverneur	word	509 p2-3	H	conflict: 509 p2-3=gouverneur vs gouverne
-71	◡	quil	word	509 p2-3	H	
-72	◡	authorite	word	509 p2-3	H	conflict: 509 p2-3=authorite vs autorite
-73	◡	officier	word	509 p2-3	H	
-74	◡	peu	word	509 p2-3	H	conflict: 509 p2-3=peu vs pece
-75	◡	te	syllable	509 p2-3	H	
-76	◡	cu	word	509 p2-3	H	
-77	◡	premier	word	509 p2-3	H	
-78	◡	nous	word	509 p2-3	H	
-79	◡	marche	word	509 p2-3	H	conflict: 509 p2-3=marche vs malheur
-80	◡	union	word	509 p2-3	H	
-81	◡	auroc?i	word	509 p2-3	H	conflict: 509 p2-3=auroc?i vs auroci
-82	◡	xa	syllable	509 p2-3	H	
-83	◡	necessite	word	509 p2-3	H	
-84	◡	quo	syllable	509 p2-3	H	
-85	◡	se?rtir	syllable	509 p2-3	H	
-86	◡	vrules	word	509 p2-3	H	conflict: 509 p2-3=vrules vs voules
-87	◡	z?el	word	509 p2-3	H	conflict: 509 p2-3=z?el vs zel
-88	◡	temps	word	509 p2-3	H	
-89	◡	sient	word	509 p2-3	H	conflict: 509 p2-3=sient vs vient
-90	◡	sous	word	509 p2-3	H	conflict: 509 p2-3=sous vs vous
-91	◡	sort	word	509 p2-3	H	
-92	◡	zu	word	509 p2-3	H	
-93	◡	semble	word	509 p2-3	H	
-94	◡	*ru	syllable	509 p2-3	H	
-95	◡	*ous	word	509 p2-3	H	conflict: 509 p2-3=*ous vs vous
-96	◡	esmoigne	word	509 p2-3	H	conflict: 509 p2-3=esmoigne vs tesmoigne
-97	◡	ur,ou,une	word	509 p2-3	H	conflict: 509 p2-3=ur,ou,une vs un,ou,one
-98	◡	r?a	word	509 p2-3	H	
-99	◡	sa	syllable	509 p2-3	H	
-100	◡	que	word	509 p2-3	H	
-1		alliance	word	509 p2-3	H	
-2		entreprise	word	509 p2-3	H	
-3		fonde	word	509 p2-3	H	
-4		he	word	509 p2-3	H	
-5		ji	syllable	509 p2-3	H	
-6		incommode	word	509 p2-3	H	
-7		ailleurs	word	509 p2-3	H	
-8		les	word	509 p2-3	H	
-9		honnerte	word	509 p2-3	H	conflict: 509 p2-3=honnerte vs honneste
-10		crou	word	509 p2-3	H	conflict: 509 p2-3=crou vs croy
-11		ge	syllable	509 p2-3	H	
-12		encore	word	509 p2-3	H	
-13		lors	word	509 p2-3	H	
-14		este,ou,este	word	509 p2-3	H	conflict: 509 p2-3=este,ou,este vs estre,ou,este
-15		lo	syllable	509 p2-3	H	
-16		ayme	word	509 p2-3	H	
-17		en	word	509 p2-3	H	
-18		c'est	word	509 p2-3	H	conflict: 509 p2-3=c'est vs et
-19		fu	word	509 p2-3	H	
-20		dire	word	509 p2-3	H	
-21		aller	word	509 p2-3	H	
-22		tt	word	509 p2-3	H	conflict: 509 p2-3=tt vs et
-23		Intelligence	word	509 p2-3	H	
-24		ambition	word	509 p2-3	H	
-25		des	word	509 p2-3	H	
-26		et	word	509 p2-3	H	
-27		hi	syllable	509 p2-3	H	
-28		pour	word	509 p2-3	H	
-29		pui	word	509 p2-3	H	conflict: 509 p2-3=pui vs puis
-30		Jay reec?u lam?rdau	word	509 p2-3	H	conflict: 509 p2-3=Jay reec?u lam?rdau vs jayrceuc?u ladre du
-31		pas,ou,point	word	509 p2-3	H	
-32		obliger	word	509 p2-3	H	
-33		faire	word	509 p2-3	H	
-34		laisse	word	509 p2-3	H	
-35		parmy	word	509 p2-3	H	
-36		pi	syllable	509 p2-3	H	
-37		ju	word	509 p2-3	H	conflict: 509 p2-3=ju vs nous
-38		on	word	509 p2-3	H	
-39		hayr	word	509 p2-3	H	conflict: 509 p2-3=hayr vs haÿr
-40		passage	word	509 p2-3	H	
-41		composition	word	509 p2-3	H	
-42		favorable	word	509 p2-3	H	
-43		Intrigue	word	509 p2-3	H	
-44		pense	word	509 p2-3	H	
-45		qui	syllable	509 p2-3	H	
-46		inamtenanc	word	509 p2-3	H	conflict: 509 p2-3=inamtenanc vs maintenant
-47		oppeser	word	509 p2-3	H	conflict: 509 p2-3=oppeser vs opposer
-48		pourquoy	word	509 p2-3	H	
-49		pu	syllable	509 p2-3	H	
-50		go	syllable	509 p2-3	H	
-51		je	word	509 p2-3	H	
-52		lu	syllable	509 p2-3	H	
-53		les	word	509 p2-3	H	
-54		luy	word	509 p2-3	H	
-55		personne	word	509 p2-3	H	
-56		boyage	word	509 p2-3	H	conflict: 509 p2-3=boyage vs votage
-57		bous	word	509 p2-3	H	conflict: 509 p2-3=bous vs vous
-58		croyane	word	509 p2-3	H	
-59		fe	word	509 p2-3	H	
-60		comme	word	509 p2-3	H	
-61		confiri	word	509 p2-3	H	
-62		esloigne	word	509 p2-3	H	
-63		francois	word	509 p2-3	H	
-64		appartiene	word	509 p2-3	H	conflict: 509 p2-3=appartiene vs appartient
-65		fi?a	syllable	509 p2-3	H	conflict: 509 p2-3=fi?a vs ha
-66		gi	syllable	509 p2-3	H	
-67		Dommage	word	509 p2-3	H	
-68		appartenir	word	509 p2-3	H	
-69		Cavalerie	word	509 p2-3	H	conflict: 509 p2-3=Cavalerie vs cavallerie
-70		approche	word	509 p2-3	H	
-71		jo	syllable	509 p2-3	H	
-72		librement	word	509 p2-3	H	conflict: 509 p2-3=librement vs libremene
-73		entre	word	509 p2-3	H	
-74		si	syllable	509 p2-3	H	conflict: 509 p2-3=si vs fi
-75		esperance	word	509 p2-3	H	
-76		z?u	word	509 p2-3	H	conflict: 509 p2-3=z?u vs eu
-77		commenc	word	509 p2-3	H	conflict: 509 p2-3=commenc vs commerce
-78		homme	word	509 p2-3	H	
-79		fin	word	509 p2-3	H	
-80		flamand	word	509 p2-3	H	
-81		Intention	word	509 p2-3	H	
-82		que	word	509 p2-3	H	
-83		obligation	word	509 p2-3	H	
-84		Ru	syllable	509 p2-3	H	
-85		nonobstanc	word	509 p2-3	H	conflict: 509 p2-3=nonobstanc vs nonobt?tane
-86		quelque	word	509 p2-3	H	
-87		Jalourie	word	509 p2-3	H	conflict: 509 p2-3=Jalourie vs jalousi?e?
-88		protection	word	509 p2-3	H	
-89		ro	word	509 p2-3	H	
-90		me	syllable	509 p2-3	H	
-91		occasion	word	509 p2-3	H	
-92		quil	word	509 p2-3	H	
-93		venir,ou,venu	word	509 p2-3	H	conflict: 509 p2-3=venir,ou,venu vs venir,ou,veny
-94		vi	syllable	509 p2-3	H	
-95		nouvelle	word	509 p2-3	H	
-96		republique	word	509 p2-3	H	
-97		sans	word	509 p2-3	H	
-98		party	word	509 p2-3	H	
-99		ordre	word	509 p2-3	H	
-100		mo	syllable	509 p2-3	H	
-1	+	appuy	word	509 p2-3	H	conflict: 509 p2-3=appuy vs appicy
-2	+	donner	word	509 p2-3	H	
-3	+	di	syllable	509 p2-3	H	
-4	+	les	word	509 p2-3	H	
-5	+	luy	word	509 p2-3	H	
-6	+	garnison	word	509 p2-3	H	
-7	+	m eilleur	word	509 p2-3	H	conflict: 509 p2-3=m eilleur vs meilleur
-8	+	nu	word	509 p2-3	H	
-9	+	qui	syllable	509 p2-3	H	
-10	+	attache	word	509 p2-3	H	
-11	+	Joindre	word	509 p2-3	H	
-12	+	vous	word	509 p2-3	H	
-13	+	doic	word	509 p2-3	H	
-14	+	troubler	word	509 p2-3	H	
-15	+	des	word	509 p2-3	H	
-16	+	importanc	word	509 p2-3	H	conflict: 509 p2-3=importanc vs importane
-17	+	apparance	word	509 p2-3	H	
-18	+	veritable	word	509 p2-3	H	
-19	+	cela	word	509 p2-3	H	
-20	+	ho	syllable	509 p2-3	H	
-21	+	jamait	word	509 p2-3	H	conflict: 509 p2-3=jamait vs jamais
-22	+	M^r,ou,M^rs	word	509 p2-3	H	conflict: 509 p2-3=M^r,ou,M^rs vs morc?,ou,m.^rs
-23	+	quelque	word	509 p2-3	H	
-24	+	quil	word	509 p2-3	H	
-25	+	ses	word	509 p2-3	H	conflict: 509 p2-3=ses vs generaux
-26	+	et	word	509 p2-3	H	
-27	+	po	syllable	509 p2-3	H	
-28	+	fort	word	509 p2-3	H	conflict: 509 p2-3=fort vs mande
-29	+	heure	word	509 p2-3	H	
-30	+	que	word	509 p2-3	H	
-31	+	gu	syllable	509 p2-3	H	
-32	+	commandem^*	word	509 p2-3	H	conflict: 509 p2-3=commandem^* vs commandom*
-33	+	luy	word	509 p2-3	H	
-34	+	office	word	509 p2-3	H	
-35	+	do	syllable	509 p2-3	H	
-36	+	quel	word	509 p2-3	H	
-37	+	nous	word	509 p2-3	H	
-38	+	mande	word	509 p2-3	H	
-39	+	commerce	word	509 p2-3	H	
-40	+	ma	syllable	509 p2-3	H	
-41	+	preleru	word	509 p2-3	H	conflict: 509 p2-3=preleru vs presene
-42	+	puis	word	509 p2-3	H	
-43	+	quand	word	509 p2-3	H	
-44	+	mort	word	509 p2-3	H	
-45	+	mariage	word	509 p2-3	H	conflict: 509 p2-3=mariage vs marcuye
-46	+	argenc	word	509 p2-3	H	conflict: 509 p2-3=argenc vs argent
-47	+	da	syllable	509 p2-3	H	
-48	+	garde	word	509 p2-3	H	
-49	+	doresnauent	word	509 p2-3	H	
-50	+	fa	syllable	509 p2-3	H	
-51	+	interest	word	509 p2-3	H	
-52	+	ja	syllable	509 p2-3	H	
-53	+	exclusion	word	509 p2-3	H	
-54	+	asseurement	word	509 p2-3	H	conflict: 509 p2-3=asseurement vs asseuremence
-55	+	c'est	word	509 p2-3	H	
-56	+	eserire	word	509 p2-3	H	
-57	+	li	syllable	509 p2-3	H	
-58	+	libre	word	509 p2-3	H	
-59	+	de	syllable	509 p2-3	H	
-60	+	dovienc	word	509 p2-3	H	
-61	+	attaque	word	509 p2-3	H	
-62	+	vostre	word	509 p2-3	H	
-63	+	fortemeru	word	509 p2-3	H	conflict: 509 p2-3=fortemeru vs fortemene
-64	+	xe	syllable	509 p2-3	H	
-65	+	vous	word	509 p2-3	H	
-66	+	yoeux	word	509 p2-3	H	
-67	+	Z	word	509 p2-3	H	
-68	+	xi	syllable	509 p2-3	H	
-69	+	xo	syllable	509 p2-3	H	
-70	+	zele	word	509 p2-3	H	conflict: 509 p2-3=zele vs ya
-79	^	Matheur	word	509 p1	H	
-62	^	mauvai	word	509 p1	H	
-7	+	meilleur	word	509 p1	H	
-10	''	mene	word	509 p1	H	
-51	''	ministre	word	509 p1	H	
-4	◡	mes	word	509 p1	H	
-48	◡	mesmes	word	509 p1	H	
-22	+	mons,ou,M^rs	word	509 p1	H	
-50	◡	monu	word	509 p1	H	
-44	+	mort	word	509 p1	H	
-40	..	moÿon	word	509 p1	H	
-1	..	NA	syllable	509 p1	H	
-52	^	ne	syllable	509 p1	H	
-52	''	ni	syllable	509 p1	H	
-56	◡	no	syllable	509 p1	H	
-8	+	nu	word	509 p1	H	
-17	''	negotiacion	word	509 p1	H	
-69	''	negotier	word	509 p1	H	
-43	◡	necessaire	word	509 p1	H	
-83	◡	necessite	word	509 p1	H	
-85		nonostane	word	509 p1	H	
-50	''	non	word	509 p1	H	
-35	''	nostre	word	509 p1	H	
-73	^	nos	word	509 p1	H	
-18	..	nous	word	509 p1	H	
-25	..	nous	word	509 p1	H	
-26	^	nous	word	509 p1	H	
-25	''	nous	word	509 p1	H	
-78	◡	nous	word	509 p1	H	
-37		nous	word	509 p1	H	
-95		nouvelle	word	509 p1	H	
-30	''	nutralite	word	509 p1	H	
-75	^	nuire	word	509 p1	H	
-38		On	word	509 p1	H	
-32		obliger	word	509 p1	H	
-83		obligation	word	509 p1	H	
-91		occasion	word	509 p1	H	
-34	+	office	word	509 p1	H	
-73	◡	officier	word	509 p1	H	
-28	◡	opinion	word	509 p1	H	
-47		opposer	word	509 p1	H	
-99		ordre	word	509 p1	H	
-45	''	ordinaire	word	509 p1	H	
-6	◡	outre	word	509 p1	H	
-51	◡	ourage	word	509 p1	H	
-59	^	ou	word	509 p1	H	
-20	''	PA	syllable	509 p1	H	
-23	◡	pe	syllable	509 p1	H	
-36		pi	syllable	509 p1	H	
-27	+	po	syllable	509 p1	H	
-49		ou	word	509 p1	H	
-40		passage	word	509 p1	H	
-31		pas,ou,point	word	509 p1	H	
-25	◡	particuliere	word	509 p1	H	
-98		party	word	509 p1	H	
-35		parmy	word	509 p1	H	
-11	..	passion	word	509 p1	H	
-14	^	parlement	word	509 p1	H	
-63	^	peÿne	word	509 p1	H	
-44		pense	word	509 p1	H	
-32	◡	pendant	word	509 p1	H	
-74	◡	peu	word	509 p1	H	
-55		pesonne	word	509 p1	H	
-53	''	plus	word	509 p1	H	
-5	''	place	word	509 p1	H	
-26	''	plaisir	word	509 p1	H	
-68	''	pounoit	word	509 p1	H	
-37	◡	posse	word	509 p1	H	
-48		pourquoy	word	509 p1	H	
-27	◡	port	word	509 p1	H	
-28		pour	word	509 p1	H	
-33	''	pour	word	509 p1	H	
-39	◡	pour	word	509 p1	H	
-32	..	pour	word	509 p1	H	
-88		protection	word	509 p1	H	
-77	◡	premier	word	509 p1	H	
-31	◡	principal	word	509 p1	H	
-41	+	present	word	509 p1	H	
-40	◡	presse	word	509 p1	H	
-77	''	proposition	word	509 p1	H	
-28	''	propre	word	509 p1	H	
-42	''	puissant	word	509 p1	H	
-39	''	puis	word	509 p1	H	
-42	+	puis	word	509 p1	H	
-29		puis	word	509 p1	H	
-38	..	puis	word	509 p1	H	
-45	''	QUA	syllable	509 p1	H	
-82		que	word	509 p1	H	
-45		qui	syllable	509 p1	H	
-84	◡	quo	syllable	509 p1	H	
-39	..	quu	syllable	509 p1	H	
-43	+	Quand	word	509 p1	H	
-35	..	quon	word	509 p1	H	
-2	..	que	word	509 p1	H	
-1	^	que	word	509 p1	H	
-8	''	que	word	509 p1	H	
-74	''	que	word	509 p1	H	
-47	◡	que	word	509 p1	H	
-100	◡	que	word	509 p1	H	
-30	+	que	word	509 p1	H	
-76	''	quatre	word	509 p1	H	
-36	+	quel	word	509 p1	H	
-58	◡	quel	word	509 p1	H	
-12	''	quel	word	509 p1	H	
-67	^	quel	word	509 p1	H	
-27	^	quel	word	509 p1	H	
-21	..	quel	word	509 p1	H	
-30+^^	RAW	quelque	word	509 p1	H	
-72	^	quelque	word	509 p1	H	
-27	..	quelque	word	509 p1	H	
-45	◡	quelque	word	509 p1	H	
-23	+	quelque	word	509 p1	H	
-86		quelque	word	509 p1	H	
-9	+	qui	syllable	509 p1	H	
-15	''	qui	syllable	509 p1	H	
-23	^	qui	syllable	509 p1	H	
-4	..	qui	syllable	509 p1	H	
-49	''	qui	syllable	509 p1	H	
-24	+	quil	word	509 p1	H	
-41	''	quil	word	509 p1	H	
-68	^	quil	word	509 p1	H	
-26	..	quil	word	509 p1	H	
-71	◡	quil	word	509 p1	H	
-92		quil	word	509 p1	H	
-74	^	quoy	word	509 p1	H	
-48	''	RA	syllable	509 p1	H	
-31	^	re	syllable	509 p1	H	
-33	..	ri	syllable	509 p1	H	
-89		ro	word	509 p1	H	
-84		ru	syllable	509 p1	H	
-23	..	rien	word	509 p1	H	
-96		republique	word	509 p1	H	
-46	◡	reünir	word	509 p1	H	
-31	''	ruine	word	509 p1	H	
-38	''	reüssie	word	509 p1	H	
-99	◡	SA	syllable	509 p1	H	
-44	◡	se	syllable	509 p1	H	
-32	''	si	syllable	509 p1	H	
-48	^	so	syllable	509 p1	H	
-32	^	su	syllable	509 p1	H	
-27		sans	word	509 p1	H	
-47	''	satisfait	word	509 p1	H	
-16	^	sentiment	word	509 p1	H	
-69	^	secours	word	509 p1	H	
-42	^	ses	word	509 p1	H	
-7	^	ses	word	509 p1	H	
-25	+	ses	word	509 p1	H	
-49	◡	ses	word	509 p1	H	
-93	◡	semble	word	509 p1	H	
-35	◡	seurement	word	509 p1	H	
-42	◡	sieur	word	509 p1	H	
-85	◡	sortir	word	509 p1	H	
-17	^	son	word	509 p1	H	
-6	^	sous	word	509 p1	H	
-91	◡	sort	word	509 p1	H	
-98	◡	TA	syllable	509 p1	H	
-75	◡	te	syllable	509 p1	H	
-41	◡	ti	syllable	509 p1	H	
-43	''	to	syllable	509 p1	H	
-33	^	tu	syllable	509 p1	H	
-39	^	taschera	word	509 p1	H	
-76	^	tant	word	509 p1	H	
-44	''	tellement	word	509 p1	H	
-88	◡	temps	word	509 p1	H	
-36	◡	tenir	word	509 p1	H	
-96	◡	tesmoigne	word	509 p1	H	
-38	◡	tous	word	509 p1	H	
-40	''	tous	word	509 p1	H	
-37	^	tous	word	509 p1	H	
-31	..	tous	word	509 p1	H	
-44	^	tout	word	509 p1	H	
-77	^	touchant	word	509 p1	H	
-13	''	traicte	word	509 p1	H	
-70	^	trop	word	509 p1	H	
-18	^	troupe	word	509 p1	H	
-53	◡	troubles	word	509 p1	H	
-14	+	troubler	word	509 p1	H	
-45	^	trouvant	word	509 p1	H	
-71	^	trouve	word	509 p1	H	
-3	^	VA	syllable	509 p1	H	
-34	^	ve	syllable	509 p1	H	
-94		vi	syllable	509 p1	H	
-37	''	vo	syllable	509 p1	H	
-94	◡	vu	syllable	509 p1	H	
-54	◡	vaisseau	word	509 p1	H	
-18	+	verisable	word	509 p1	H	
-47	^	veullent	word	509 p1	H	
-13	^	veille	word	509 p1	H	
-93		veriniu,venu	word	509 p1	H	
-46	^	ville	word	509 p1	H	
-20	^	victoire	word	509 p1	H	
-97	◡	un,ou,une	word	509 p1	H	
-80	◡	union	word	509 p1	H	
-86	◡	voules	word	509 p1	H	
-11	^	vers	word	509 p1	H	
-40	^	veu	word	509 p1	H	
-36	^	vie	word	509 p1	H	
-89	◡	vient	word	509 p1	H	
-56		voyage	word	509 p1	H	
-35	^	veoir	word	509 p1	H	
-90	◡	vous	word	509 p1	H	
-12	+	vous	word	509 p1	H	
-57		vous	word	509 p1	H	
-14	''	vous	word	509 p1	H	
-43	^	vous	word	509 p1	H	
-37	..	vous	word	509 p1	H	
-28	^	vous	word	509 p1	H	
-38	^	vous	word	509 p1	H	
-95	◡	vous	word	509 p1	H	
-65	+	vous	word	509 p1	H	
-62	+	vostre	word	509 p1	H	
-82	◡	XA	syllable	509 p1	H	
-64	+	xe	syllable	509 p1	H	
-68	+	xi	syllable	509 p1	H	
-69	+	xo	syllable	509 p1	H	
-92	◡	xu	syllable	509 p1	H	
-41	^	Y	word	509 p1	H	
-70	+	ya	word	509 p1	H	
-66	+	yoeux	word	509 p1	H	
-67	+	Z	word	509 p1	H	
-87	◡	zel	word	509 p1	H	
-71	+	zele	word	509 p1	H	
-20	ue	<NULL>	other	509 p1	H	null
-21	ue	<NULL>	other	509 p1	H	null
-22	ue	<NULL>	other	509 p1	H	null
-23	ue	<NULL>	other	509 p1	H	null
-24	ue	<NULL>	other	509 p1	H	null
-25	ue	<NULL>	other	509 p1	H	null
-26	ue	<NULL>	other	509 p1	H	null
-27	ue	<NULL>	other	509 p1	H	null
-28	ue	<NULL>	other	509 p1	H	null
-29	ue	<NULL>	other	509 p1	H	null
-30	ue	<NULL>	other	509 p1	H	null
-31	ue	<NULL>	other	509 p1	H	null
-32	ue	<NULL>	other	509 p1	H	null
-33	ue	<NULL>	other	509 p1	H	null
-34	ue	<NULL>	other	509 p1	H	null
-1	=	<NULL>	other	509 p1	H	null
-2	=	<NULL>	other	509 p1	H	null
-3	=	<NULL>	other	509 p1	H	null
-4	=	<NULL>	other	509 p1	H	null
-5	=	<NULL>	other	509 p1	H	null
-6	=	<NULL>	other	509 p1	H	null
-7	=	<NULL>	other	509 p1	H	null
-8	=	<NULL>	other	509 p1	H	null
-9	=	<NULL>	other	509 p1	H	null
-10	=	<NULL>	other	509 p1	H	null
-11	=	<NULL>	other	509 p1	H	null
-12	=	<NULL>	other	509 p1	H	null
-13	=	<NULL>	other	509 p1	H	null
-14	=	<NULL>	other	509 p1	H	null
-15	=	<NULL>	other	509 p1	H	null
-16	=	<NULL>	other	509 p1	H	null
-17	=	<NULL>	other	509 p1	H	null
-18	=	<NULL>	other	509 p1	H	null
-19	=	<NULL>	other	509 p1	H	null
-20	=	<NULL>	other	509 p1	H	null
-21	=	<NULL>	other	509 p1	H	null
-22	=	<NULL>	other	509 p1	H	null
-28	...	<NULL>	other	509 p1	H	null
-29	...	<NULL>	other	509 p1	H	null
-30	...	<NULL>	other	509 p1	H	null
-31	...	<NULL>	other	509 p1	H	null
-32	...	<NULL>	other	509 p1	H	null
-33	...	<NULL>	other	509 p1	H	null
-34	...	<NULL>	other	509 p1	H	null
-35	...	<NULL>	other	509 p1	H	null
-36	...	<NULL>	other	509 p1	H	null
-37	...	<NULL>	other	509 p1	H	null
-38	...	<NULL>	other	509 p1	H	null
-39	...	<NULL>	other	509 p1	H	null
-40	...	<NULL>	other	509 p1	H	null
-41	...	<NULL>	other	509 p1	H	null
-42	...	<NULL>	other	509 p1	H	null
-43	...	<NULL>	other	509 p1	H	null
-44	...	<NULL>	other	509 p1	H	null
-45	...	<NULL>	other	509 p1	H	null
-46	...	<NULL>	other	509 p1	H	null
-47	...	<NULL>	other	509 p1	H	null
-10	m	A	letter	506	H	
-33	co	A	letter	506	H	
-CapitalLetterSCrossedByACrossBar		A	letter	506	H	
-14	m	B	letter	506	H	
-25	co	B	letter	506	H	
-OghamLetterUr		B	letter	506	H	
-21	m	C	letter	506	H	
-14	co	C	letter	506	H	conflict: 506=C vs p
-PlusSign		C	letter	506	H	
-11	m	D	letter	506	H	
-28	co	D	letter	506	H	
-CircledMinus		D	letter	506	H	
-28	m	E	letter	506	H	
-10	co	E	letter	506	H	
-Verdigris		E	letter	506	H	
-17	m	F	letter	506	H	
-31	co	F	letter	506	H	
-Soap		F	letter	506	H	
-12	m	G	letter	506	H	
-30	co	G	letter	506	H	
-Arsenic		G	letter	506	H	
-25	m	H	letter	506	H	
-11	co	H	letter	506	H	
-NkoDigitNine		H	letter	506	H	
-19	m	I	letter	506	H	
-32	co	I	letter	506	H	
-Earth		I	letter	506	H	
-23	m	K	letter	506	H	
-18	co	K	letter	506	H	
-InvertedLazySWithCurledEnds		K	letter	506	H	
-20	m	L	letter	506	H	
-12	co	L	letter	506	H	
-TinDominatedByJupiter		L	letter	506	H	
-16	m	M	letter	506	H	
-21	co	M	letter	506	H	
-SmallLetterWWithCenteredVerticalLine		M	letter	506	H	
-30	m	N	letter	506	H	
-15	co	N	letter	506	H	
-CapitalTau		N	letter	506	H	
-32	m	O	letter	506	H	
-27	co	O	letter	506	H	
-Silver		O	letter	506	H	
-33	m	P	letter	506	H	
-14	co	P	letter	506	H	conflict: 506=P vs c
-CapitalEpsilon		P	letter	506	H	
-31	m	Q	letter	506	H	
-24	co	Q	letter	506	H	
-CapitalPsi		Q	letter	506	H	
-13	m	R	letter	506	H	
-29	co	R	letter	506	H	
-CapitaslRho		R	letter	506	H	
-29	m	S	letter	506	H	
-16	co	S	letter	506	H	
-TwoLogicalOrOPperator		S	letter	506	H	
-15	m	T	letter	506	H	
-26	co	T	letter	506	H	
-CapitalDelta		T	letter	506	H	
-22	m	V	letter	506	H	
-17	co	V	letter	506	H	
-Gamma		V	letter	506	H	
-27	m	X	letter	506	H	
-22	co	X	letter	506	H	
-CapitalPi		X	letter	506	H	
-24	m	Y	letter	506	H	
-19	co	Y	letter	506	H	
-CapitalEta		Y	letter	506	H	
-18	m	Z	letter	506	H	
-23	co	Z	letter	506	H	
-ReversedCapitalPsi		Z	letter	506	H	
-26	m	W?	letter	506	H	
-20	co	W?	letter	506	H	
-ReversedCapitalEpsilon		W?	letter	506	H	
-20		Le Roy	person	506	H	
-26		la Reyne	person	506	H	
-23		la Reyne mere	person	506	H	
-21		M^r <ABBR Monsieur> le d. Danine	person	506	H	conflict: 506=M^r <ABBR Monsieur> le d. Danine vs le duc danjou
-28		M^r <ABBR Monsieur> le D. Dorleans	person	506	H	conflict: 506=M^r <ABBR Monsieur> le D. Dorleans vs m^r <abbr monsieur> le duc dorleans
-22		Madame	person	506	H	
-24		M^r <ABBR Monsieur> le Prince	person	506	H	
-35		M^r <ABBR Monsieur> la Princesse	person	506	H	conflict: 506=M^r <ABBR Monsieur> la Princesse vs m^e la princesse
-31		M^r <ABBR Monsieur> L. D. Denguein	person	506	H	conflict: 506=M^r <ABBR Monsieur> L. D. Denguein vs m^r <abbr monsieur> le d. danguein
-25		M^r <ABBR Monsieur> le P. Delonty	person	506	H	
-27		M^r <ABBR Monsieur> Delonquevilles	person	506	H	conflict: 506=M^r <ABBR Monsieur> Delonquevilles vs m^r <abbr monsieur> delonqueville
-29		M^r <ABBR Monsieur> le Cand D Rer?	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Cand D Rer? vs m^r <abbr monsieur> le c^al <abbr cardinal> de rer
-38		M^r <ABBR Monsieur> Dehandormes	person	506	H	conflict: 506=M^r <ABBR Monsieur> Dehandormes vs m^r <abbr monsieur> debandorme
-40		M^r <ABBR Monsieur> De Mercoeur	person	506	H	
-33		M^r <ABBR Monsieur> D. Bev*ufort	person	506	H	conflict: 506=M^r <ABBR Monsieur> D. Bev*ufort vs m^r <abbr monsieur> de meaufort
-42		M^r <ABBR Monsieur> le Deloraine	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Deloraine vs m^r <abbr monsieur> le d. deloraine
-30		le Prince francoci	person	506	H	conflict: 506=le Prince francoci vs m^r <abbr monsieur> le p. francois
-46		le Prince Charles	person	506	H	conflict: 506=le Prince Charles vs m^r <abbr monsieur> les d charles
-43		M^r <ABBR Monsieur> De Guise	person	506	H	conflict: 506=M^r <ABBR Monsieur> De Guise vs m^r <abbr monsieur> le d. de guise
-45		M^r <ABBR Monsieur> Delboeut	person	506	H	conflict: 506=M^r <ABBR Monsieur> Delboeut vs m^r <abbr monsieur> le d. delboeuf
-32		M^r <ABBR Monsieur> le Conte Dharqur	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Conte Dharqur vs m^r <abbr monsieur> le c. d'harcour
-34		M^r <ABBR Monsieur> le D. DelBoüllon	person	506	H	conflict: 506=M^r <ABBR Monsieur> le D. DelBoüllon vs m^r <abbr monsieur> de movillon
-47		Le P. De Tharante	person	506	H	conflict: 506=Le P. De Tharante vs m^r <abbr monsieur> le p d tharante
-36		M^r <ABBR Monsieur> le l. Deloissins	person	506	H	conflict: 506=M^r <ABBR Monsieur> le l. Deloissins vs m^r <abbr monsieur> le c. desoissons
-37		M^r <ABBR Monsieur> le D. De Mararin	person	506	H	conflict: 506=M^r <ABBR Monsieur> le D. De Mararin vs m^r <abbr monsieur> le duc de maravin
-39		M^r <ABBR Monsieur> le D. Dennevert	person	506	H	conflict: 506=M^r <ABBR Monsieur> le D. Dennevert vs m^r <abbr monsieur> de manciry
-41		M^r <ABBR Monsieur> le D, Dehiehetieu	person	506	H	conflict: 506=M^r <ABBR Monsieur> le D, Dehiehetieu vs m^r <abbr monsieur> le d. richelieu
-44		l'Arche zum De Rhodes	person	506	H	conflict: 506=l'Arche zum De Rhodes vs l'archeves^e de rhodes
-48		transcription le Mar^al De villeroy	person	506	H	conflict: 506=transcription le Mar^al De villeroy vs m^r <abbr monsieur> le m^al de villeroy
-50		M^r <ABBR Monsieur> le Mar^al De Turenne	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Mar^al De Turenne vs m^r <abbr monsieur> le m^al de turenne
-56		M^r <ABBR Monsieur> le Mar^al Daumont	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Mar^al Daumont vs m^r <abbr monsieur> le m^al daumone
-60		M^r <ABBR Monsieur> le Mar^al Delaforte	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Mar^al Delaforte vs m^r <abbr monsieur> le m^al delaferte
-49		M^r <ABBR Monsieur> le Mar^al De Gramont	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Mar^al De Gramont vs m^r <abbr monsieur> le m^al de gramoru
-57		M^r <ABBR Monsieur> le Mar^al De Schulemberg	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Mar^al De Schulemberg vs m^r <abbr monsieur> le m^al de t*hulemberg
-55		M^r <ABBR Monsieur> le Mar^al De Fabert	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Mar^al De Fabert vs m^r <abbr monsieur> le m^al fabert
-56	'	M^r <ABBR Monsieur> le Mar^al D'auquincourt	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Mar^al D'auquincourt vs le m^al dauqini court
-34	'	M^r <ABBR Monsieur> Brienne	person	506	H	conflict: 506=M^r <ABBR Monsieur> Brienne vs le c. de brienne
-40	'	M^r <ABBR Monsieur> le Tellier	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Tellier vs m^r <abbr monsieur> le tellter
-32	'	M^r <ABBR Monsieur> lel. Delharost	person	506	H	conflict: 506=M^r <ABBR Monsieur> lel. Delharost vs le c. de charo**
-33	'	M^r <ABBR Monsieur> lel. Der. Aignan	person	506	H	conflict: 506=M^r <ABBR Monsieur> lel. Der. Aignan vs le c. de s^t argnan
-48	'	M^r <ABBR Monsieur> - D;estrades	person	506	H	conflict: 506=M^r <ABBR Monsieur> - D;estrades vs m^r <abbr monsieur> d'estrades
-59	'	M^r <ABBR Monsieur> Dethou	person	506	H	conflict: 506=M^r <ABBR Monsieur> Dethou vs m^r <abbr monsieur> de thou
-60	'	M^r <ABBR Monsieur> Delumbres	person	506	H	conflict: 506=M^r <ABBR Monsieur> Delumbres vs m^r <abbr monsieur> de lumbres
-50	'	M^r <ABBR Monsieur> De Chatillon	person	506	H	conflict: 506=M^r <ABBR Monsieur> De Chatillon vs mad^e de chatillon
-51	'	M^r <ABBR Monsieur> De Boutevilles	person	506	H	conflict: 506=M^r <ABBR Monsieur> De Boutevilles vs m^r <abbr monsieur> de bouteville
-51		M^r <ABBR Monsieur> Sovequet	person	506	H	conflict: 506=M^r <ABBR Monsieur> Sovequet vs m^r <abbr monsieur> fouquet
-59		M^r <ABBR Monsieur> Sabbefouquet	person	506	H	conflict: 506=M^r <ABBR Monsieur> Sabbefouquet vs l'abbe fouquet
-61		M^r <ABBR Monsieur> le Pr. Presidene	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Pr. Presidene vs le prem^ce presidene
-52		Le Parlemene	person	506	H	
-53		La chamd, De Justice	person	506	H	conflict: 506=La chamd, De Justice vs la chambre de justice
-68		le Prev?ost de Mart	person	506	H	conflict: 506=le Prev?ost de Mart vs le prevott des marchand
-58		Le Meh*****	person	506	H	conflict: 506=Le Meh***** vs les l?seheunis
-64		Le Roy D Angleterre	person	506	H	conflict: 506=Le Roy D Angleterre vs le roy danyleterre
-71		la Royne Danyro	person	506	H	conflict: 506=la Royne Danyro vs la reyne dasty leterre
-66		la Royne merc Dasnre	person	506	H	conflict: 506=la Royne merc Dasnre vs la reyne merc dany^re
-62		le Duc Diorck	person	506	H	conflict: 506=le Duc Diorck vs m^r <abbr monsieur> le duc dyorck
-65		M^r <ABBR Monsieur> ord hayde Chance	person	506	H	conflict: 506=M^r <ABBR Monsieur> ord hayde Chance vs m^ad hayde chance
-63		le Gen^al Monek	person	506	H	conflict: 506=le Gen^al Monek vs m^r <abbr monsieur> le gñal monck
-70		M^r <ABBR Monsieur> le D. Dormone	person	506	H	conflict: 506=M^r <ABBR Monsieur> le D. Dormone vs m^r <abbr monsieur> d. dormone
-69		M^r <ABBR Monsieur> le l. De Bastille	person	506	H	conflict: 506=M^r <ABBR Monsieur> le l. De Bastille vs m^r <abbr monsieur> lel de britolle
-72		M^r <ABBR Monsieur> le d. Sandutch	person	506	H	conflict: 506=M^r <ABBR Monsieur> le d. Sandutch vs m^r <abbr monsieur> lec sandivich
-73		M^r <ABBR Monsieur> le C De Menchettor	person	506	H	conflict: 506=M^r <ABBR Monsieur> le C De Menchettor vs m^r <abbr monsieur> lec de menchester
-74		M^r <ABBR Monsieur> lel Derh Albante	person	506	H	conflict: 506=M^r <ABBR Monsieur> lel Derh Albante vs m^r <abbr monsieur> lec de* albance
-12	'	M^r <ABBR Monsieur> le Secr^re Niolas	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Secr^re Niolas vs m^r <abbr monsieur> les seer^re nicolas
-15	'	M^r <ABBR Monsieur> le se^re Maurice	person	506	H	conflict: 506=M^r <ABBR Monsieur> le se^re Maurice vs m^r <abbr monsieur> les sce^re maurice
-30	'	le Pape	person	506	H	
-54		l'empereur	person	506	H	
-67		l'Imperatrice	person	506	H	
-24	'	l'empire	person	506	H	
-10	'	le Roy Despayne	person	506	H	
-20	'	la Repr?e Despayne	person	506	H	conflict: 506=la Repr?e Despayne vs la reune d'espay^e
-11	'	l'Infante Despayne	person	506	H	conflict: 506=l'Infante Despayne vs l'infante desp^ne
-25	'	Dom Juan Daustriche	person	506	H	conflict: 506=Dom Juan Daustriche vs d. juan daustriche
-13	'	la Maison Daustriche	person	506	H	conflict: 506=la Maison Daustriche vs la maison d'austrieche
-14	'	M^r <ABBR Monsieur> Ministre desp^re	person	506	H	conflict: 506=M^r <ABBR Monsieur> Ministre desp^re vs m^r <abbr monsieur> le mini^*e despag.^e
-16	'	Don estavun de Gamare	person	506	H	conflict: 506=Don estavun de Gamare vs d. estavane de gamara
-19	'	le Ma de laraseene	person	506	H	conflict: 506=le Ma de laraseene vs m^r <abbr monsieur> de carascene
-41	'	M^r <ABBR Monsieur> De Batteierlle	person	506	H	conflict: 506=M^r <ABBR Monsieur> De Batteierlle vs m^r <abbr monsieur> de batteville
-37	'	Don Castel Rodriyo	person	506	H	conflict: 506=Don Castel Rodriyo vs d. castel rodrigo
-43	'	le l. DePigneranda	person	506	H	conflict: 506=le l. DePigneranda vs le c. de pigneranda
-54	'	M^r <ABBR Monsieur> De Mavern	person	506	H	conflict: 506=M^r <ABBR Monsieur> De Mavern vs m^r <abbr monsieur> de marciri
-26	'	le Roy de Suede	person	506	H	conflict: 506=le Roy de Suede vs le roy e suede
-44	'	la Repre de he*dde	person	506	H	conflict: 506=la Repre de he*dde vs la reyne de svede
-21	'	la Repne Christine	person	506	H	conflict: 506=la Repne Christine vs la reyne christine
-36	'	le Roy de Pologne	person	506	H	
-38	'	la Repre de Pologne	person	506	H	conflict: 506=la Repre de Pologne vs la reyne de pologne
-35	'	le Rody De Portugal	person	506	H	conflict: 506=le Rody De Portugal vs le roy de portugal
-46	'	le Repne de Portugal	person	506	H	conflict: 506=le Repne de Portugal vs la reyne de portugal
-22	'	le Roy Damnemart	person	506	H	conflict: 506=le Roy Damnemart vs le roy damnemort
-23	'	Infante De Portugal	person	506	H	conflict: 506=Infante De Portugal vs ifnante de portugal
-17	'	l'Archidue leopol	person	506	H	conflict: 506=l'Archidue leopol vs l'archiduc leopol
-18	'	larch D Inspruck	person	506	H	conflict: 506=larch D Inspruck vs l'arch d'inspruck
-27	'	le el. De Marence	person	506	H	conflict: 506=le el. De Marence vs le lecteur de mayone
-49	'	le el De Cologne	person	506	H	conflict: 506=le el De Cologne vs lest. de cologne
-47	'	le el. de Treve	person	506	H	conflict: 506=le el. de Treve vs lest de treves
-28	'	le el de Bavierc	person	506	H	conflict: 506=le el de Bavierc vs lesl^our de bavier
-45	'	le el. de Saxe	person	506	H	conflict: 506=le el. de Saxe vs lest. de saxe
-39	'	de el. De Brandebourg	person	506	H	conflict: 506=de el. De Brandebourg vs lest. de brandenbourg
-42	'	de el Palatin	person	506	H	conflict: 506=de el Palatin vs lest. de palatin
-53	'	le el. De Munster	person	506	H	conflict: 506=le el. De Munster vs l'evesq de munster
-52	'	le grand Duc	person	506	H	
-57	'	le D. De Parme	person	506	H	conflict: 506=le D. De Parme vs le duc de parme
-58	'	le D, de Modene	person	506	H	conflict: 506=le D, de Modene vs le duc de modene
-31	'	le d. De Mantoüe	person	506	H	conflict: 506=le d. De Mantoüe vs le d. de mantove
-9	'	les estat d' Hollande	person	506	H	conflict: 506=les estat d' Hollande vs m^r <abbr monsieur> les estate d'holl^de
-29	'	La d^al  Ruit*e	person	506	H	conflict: 506=La d^al  Ruit*e vs lad^al ruiter
-55	'	M^r <ABBR Monsieur> De *niquefort	person	506	H	conflict: 506=M^r <ABBR Monsieur> De *niquefort vs m^r <abbr monsieur> de viequefort
-62	'	Amsterdam	ville	506	H	
-63	'	anuers	ville	506	H	conflict: 506=anuers vs januert
-64	'	Bordeaux	ville	506	H	
-67	'	Bayonne	ville	506	H	
-65	'	Boulongne	ville	506	H	conflict: 506=Boulongne vs boulonge
-66	'	Bruxelles	ville	506	H	
-68	'	Bristolla	ville	506	H	conflict: 506=Bristolla vs britolles
-61	'	Calais	ville	506	H	conflict: 506=Calais vs amsterdam
-72	'	Cambray	ville	506	H	
-71	'	Cologne	ville	506	H	
-69	'	Douvre	ville	506	H	conflict: 506=Douvre vs douu?ves
-83	'	Dunkerke	ville	506	H	conflict: 506=Dunkerke vs roüen
-88	'	Dieppes	ville	506	H	conflict: 506=Dieppes vs dieppe
-79	'	Sranefort	ville	506	H	conflict: 506=Sranefort vs francfort
-73	'	hambourg	ville	506	H	
-75	'	lahaye	ville	506	H	conflict: 506=lahaye vs la haye
-84	'	lehavre	ville	506	H	conflict: 506=lehavre vs la havre
-74	'	lisbonne	ville	506	H	
-76	'	lion	ville	506	H	
-87	'	londres	ville	506	H	
-78	'	Marseilles	ville	506	H	conflict: 506=Marseilles vs marseille
-80	'	Madrid	ville	506	H	
-70	'	Peronne	ville	506	H	conflict: 506=Peronne vs pronne
-86	'	Paros	ville	506	H	conflict: 506=Paros vs paris
-77	'	la Rochelle	ville	506	H	
-83	'	Roüen	ville	506	H	conflict: 506=Roüen vs dunkerke
-81	'	Vesminister	ville	506	H	
-82	'	Vienne	ville	506	H	
-89	'	Veniles	ville	506	H	conflict: 506=Veniles vs venise
-96	'	l'Angleterre	royaume	506	H	
-99	'	la Cathalogne	royaume	506	H	
-10^'0	RAW	le Danmnemarc	royaume	506	H	
-98	'	l'espagne	royaume	506	H	conflict: 506=l'espagne vs le spagne
-10^'6	RAW	l'escosse	royaume	506	H	
-91	'	le france	royaume	506	H	conflict: 506=le france vs la france
-97	'	la frandre	royaume	506	H	conflict: 506=la frandre vs la slandres
-93	'	la hollande	royaume	506	H	
-10^'1	RAW	la luivnie	royaume	506	H	
-10^'4	RAW	l'Italie	royaume	506	H	
-10^'5	RAW	l'irlande	royaume	506	H	
-90	'	la Pologne	royaume	506	H	
-95	'	le Portugal	royaume	506	H	
-10^'3	RAW	la Pruce	royaume	506	H	
-10^'7	RAW	la Pommeranie	royaume	506	H	
-92	'	la suede	royaume	506	H	conflict: 506=la suede vs la svede
-10^'8	RAW	l;Alsace	royaume	506	H	
-94	'	la *elande	royaume	506	H	conflict: 506=la *elande vs la zelande
-10^'2	RAW	la Mscovie	royaume	506	H	
-7__6__	RAW	M^r <ABBR Monsieur> Williamson	word	506	H	
-13	..	Au	word	506	H	
-19	..	about	word	506	H	conflict: 506=about vs about?e?
-21	^	accommodem*	word	506	H	conflict: 506=accommodem* vs accommodem^*
-65	^	auerhissement	word	506	H	conflict: 506=auerhissement vs avertissem^*
-61	^	affaire	word	506	H	
-16	''	affin	word	506	H	
-12	◡	agir	word	506	H	
-1		alliance	word	506	H	
-7		ailleurs	word	506	H	
-16		ayme	word	506	H	
-21		aller	word	506	H	
-24		ambition	word	506	H	
-68		appartenir	word	506	H	
-64		appartient	word	506	H	conflict: 506=appartient vs appartiene
-70		approche	word	506	H	
-17	+	apparance	word	506	H	
-1	+	appicy	word	506	H	conflict: 506=appicy vs appuy
-46	+	argent	word	506	H	conflict: 506=argent vs argenc
-54	+	asseuremence	word	506	H	conflict: 506=asseuremence vs asseurement
-10	+	attache	word	506	H	
-61	+	attaque	word	506	H	
-66	''	avantage	word	506	H	
-49	^	avec	word	506	H	
-11	''	averty	word	506	H	
-60	''	avoir	word	506	H	
-65	''	aully	word	506	H	
-62	◡	autre	word	506	H	
-72	◡	autorite	word	506	H	conflict: 506=autorite vs authorite
-81	◡	auroci	word	506	H	conflict: 506=auroci vs auroc?i
-33	◡	aveun	word	506	H	
-24	◡	BA	syllable	506	H	
-16	◡	be	word	506	H	
-75	''	bi	word	506	H	
-80	''	bo	syllable	506	H	
-29	''	bu	word	506	H	
-21	''	battaille	word	506	H	
-70	''	baure	word	506	H	
-78	''	beau,ou,belle	word	506	H	
-5	..	beaucoup	word	506	H	
-12	..	bien	word	506	H	
-24	..	bonte	word	506	H	
-34	..	bon	word	506	H	
-4	~	bourgeois	word	506	H	
-50	^	Bruit	word	506	H	
-3	''	britanique	word	506	H	
-1	''	A	word	506	H	
-58	''	ce	word	506	H	
-19	''	ci	syllable	506	H	
-36	''	co	syllable	506	H	
-76	◡	cu	word	506	H	
-29	◡	campagne	word	506	H	conflict: 506=campagne vs camppagne
-79	''	capable	word	506	H	
-10	^	capitaine	word	506	H	
-66	^	catholique	word	506	H	
-54	^	cause	word	506	H	
-8	^	cavalier	word	506	H	conflict: 506=cavalier vs caul?a?lier
-69		cavallerie	word	506	H	conflict: 506=cavallerie vs cavalerie
-19	+	cela	word	506	H	
-55	+	c'est	word	506	H	
-18		c'est	word	506	H	conflict: 506=c'est vs et
-67	◡	celluy,ou,celle	word	506	H	conflict: 506=celluy,ou,celle vs celuy,ou,celle
-17	◡	cent	word	506	H	conflict: 506=cent vs ceru
-7	◡	chose	word	506	H	
-55	◡	charge	word	506	H	
-60		comme	word	506	H	
-77		commerce	word	506	H	conflict: 506=commerce vs commenc
-41		composition	word	506	H	
-32	+	commandom*	word	506	H	conflict: 506=commandom* vs commandem^*
-39	+	commerce	word	506	H	
-69	◡	con	word	506	H	
-56	^	combien	word	506	H	
-9	..	conjoncture	word	506	H	
-22	..	conference	word	506	H	
-7	''	conscience	word	506	H	
-22	''	consideration	word	506	H	
-34	''	conseruer	word	506	H	
-71	''	conseil	word	506	H	
-10	◡	contre	word	506	H	
-15	◡	contraire	word	506	H	
-64	◡	cour	word	506	H	
-10		croy	word	506	H	conflict: 506=croy vs crou
-58		croyane	word	506	H	
-47	+	DA	syllable	506	H	
-59	+	de	syllable	506	H	
-3	+	di	syllable	506	H	
-35	+	do	syllable	506	H	
-3	◡	du	syllable	506	H	
-7	..	Estably	word	506	H	conflict: 506=Estably vs dans
-4	''	estau	word	506	H	
-54	''	estane	word	506	H	
-57	^	estoicru	word	506	H	conflict: 506=estoicru vs estoienc
-14		estre,ou,este	word	506	H	conflict: 506=estre,ou,este vs este,ou,este
-26		et	word	506	H	
-26	+	et	word	506	H	
-24	^	et	word	506	H	
-18		et	word	506	H	conflict: 506=et vs c'est
-8	..	et	word	506	H	
-22		et	word	506	H	conflict: 506=et vs tt
-66	◡	et	word	506	H	conflict: 506=et vs tt
-76		eu	word	506	H	conflict: 506=eu vs z?u
-63	◡	eux	word	506	H	
-53	+	exclusion	word	506	H	
-50	+	fA	syllable	506	H	
-59		fe	word	506	H	
-74		fi	syllable	506	H	conflict: 506=fi vs si
-11	◡	fo	syllable	506	H	
-19		du	syllable	506	H	
-72	''	facon	word	506	H	
-33		faire	word	506	H	
-27	''	fait	word	506	H	
-22	^	faut	word	506	H	conflict: 506=faut vs f?ave?
-13	◡	faveur	word	506	H	
-42		favorable	word	506	H	
-79		fin	word	506	H	
-80		flamand	word	506	H	
-28	+	fort	word	506	H	conflict: 506=fort vs mande
-63	+	fortemene	word	506	H	conflict: 506=fortemene vs fortemeru
-3		fonde	word	506	H	
-63		francois	word	506	H	
-14	◡	GA	syllable	506	H	
-11		ge	syllable	506	H	
-66		gi	syllable	506	H	
-50		go	syllable	506	H	
-31	+	gu	syllable	506	H	
-48	+	garde	word	506	H	
-67	''	garder	word	506	H	
-24	''	gons	word	506	H	
-80	^	general	word	506	H	
-25	+	generaux	word	506	H	conflict: 506=generaux vs ses
-36	..	Gloire	word	506	H	conflict: 506=Gloire vs glore
-70	◡	gouverne	word	506	H	conflict: 506=gouverne vs gouverneur
-64	''	gouverneur	word	506	H	
-9	^	grace	word	506	H	
-3	..	grand	word	506	H	
-5	◡	guerre	word	506	H	
-6	+	garnison	word	506	H	
-65		hA	syllable	506	H	conflict: 506=hA vs fi?a
-4		he	word	506	H	
-27		hi	syllable	506	H	
-20+^+	RAW	ho	syllable	506	H	
-61	''	hu	word	506	H	
-21	◡	hautement	word	506	H	conflict: 506=hautement vs hantemeru
-39		haÿr	word	506	H	conflict: 506=haÿr vs hayr
-29	+	heure	word	506	H	
-78		homme	word	506	H	
-53	^	honneur	word	506	H	
-9		honneste	word	506	H	conflict: 506=honneste vs honnerte
-8	◡	honnorable	word	506	H	
-55	''	honte	word	506	H	
-61	◡	hormes	word	506	H	conflict: 506=hormes vs **ormis
-52	+	JA	syllable	506	H	
-51		je	word	506	H	
-5		ji	syllable	506	H	
-71		jo	syllable	506	H	
-37		ju	word	506	H	conflict: 506=ju vs nous
-87		Jalousi?e?	word	506	H	conflict: 506=Jalousi?e? vs jalourie
-21	+	Jamais	word	506	H	conflict: 506=Jamais vs jamait
-59	◡	Jay	word	506	H	
-30		Jayrceuc?u ladre du	word	506	H	conflict: 506=Jayrceuc?u ladre du vs jay reec?u lam?rdau
-62	''	Jey	word	506	H	
-6	''	Jl	word	506	H	
-58	^	Js?s	word	506	H	conflict: 506=Js?s vs il?s
-6		Incommode	word	506	H	
-16	+	Importane	word	506	H	conflict: 506=Importane vs importanc
-23		Intelligence	word	506	H	
-81		Intention	word	506	H	
-43		Intrigue	word	506	H	
-51	+	Interest	word	506	H	
-11	+	Joindre	word	506	H	
-56	''	LA	syllable	506	H	
-1	◡	le	syllable	506	H	
-57	+	li	syllable	506	H	
-15		lo	syllable	506	H	
-52		lu	syllable	506	H	
-34		laisse	word	506	H	
-8		les	word	506	H	
-53		les	word	506	H	
-4	+	les	word	506	H	
-52	◡	les	word	506	H	
-57	''	les	word	506	H	
-6	..	les	word	506	H	
-16	..	leur	word	506	H	
-5	^	leure	word	506	H	conflict: 506=leure vs lettre
-59	''	lon	word	506	H	
-13		lors	word	506	H	
-72		libremene	word	506	H	conflict: 506=libremene vs librement
-58	+	libre	word	506	H	
-2	^	liberte	word	506	H	
-18	◡	loing	word	506	H	
-2	◡	luy	word	506	H	
-5	+	luy	word	506	H	
-54		luy	word	506	H	
-33	+	luy	word	506	H	
-40	+	MA	syllable	506	H	
-90		me	syllable	506	H	
-34	◡	mi	syllable	506	H	
-100		mo	syllable	506	H	
-20	..	mu	syllable	506	H	
-30	..	mais	word	506	H	
-29	^	maintenir	word	506	H	
-46		maintenant	word	506	H	conflict: 506=maintenant vs inamtenanc
-28	+	mande	word	506	H	conflict: 506=mande vs fort
-22	◡	mad^e <ABBR Madame>,ou,Mad****	word	506	H	conflict: 506=mad^e <ABBR Madame>,ou,Mad**** vs mad.^e ou mad^*
-78	^	maniere	word	506	H	
-73	''	manqie	word	506	H	
-26	◡	marque	word	506	H	
-45	+	marcuye	word	506	H	conflict: 506=marcuye vs mariage
-79	◡	marche	word	506	H	conflict: 506=marche vs malheur
-79	◡	Malheur	word	506	H	conflict: 506=Malheur vs marche
-62	^	manuaci	word	506	H	conflict: 506=manuaci vs mauvais
-7	+	meilleur	word	506	H	conflict: 506=meilleur vs m eilleur
-10	''	mene	word	506	H	
-51	''	ministre	word	506	H	
-4	◡	mes	word	506	H	
-48	◡	mesmes	word	506	H	conflict: 506=mesmes vs meme
-22	+	Morc?,ou,M.^rs	word	506	H	conflict: 506=Morc?,ou,M.^rs vs m^r,ou,m^rs
-50	◡	mon?e	word	506	H	conflict: 506=mon?e vs mont
-44	+	mort	word	506	H	
-40	..	moyon	word	506	H	conflict: 506=moyon vs moy?n
-1	..	NA	syllable	506	H	
-52	^	ne	syllable	506	H	
-52	''	ni	syllable	506	H	
-56	◡	no	syllable	506	H	
-8	+	nu	word	506	H	
-17	''	negotiation	word	506	H	
-69	''	negotier	word	506	H	
-43	◡	nec?ossaire	word	506	H	conflict: 506=nec?ossaire vs necessaire
-83	◡	necessite	word	506	H	
-85		nonobt?tane	word	506	H	conflict: 506=nonobt?tane vs nonobstanc
-50	''	non	word	506	H	
-35	''	nostre	word	506	H	
-73	^	nos	word	506	H	
-18	..	nous	word	506	H	
-25	..	nous	word	506	H	
-26	^	nous	word	506	H	
-25	''	nous	word	506	H	
-78	◡	nous	word	506	H	
-37		nous	word	506	H	conflict: 506=nous vs ju
-95		nouvelle	word	506	H	
-30	''	nutralite	word	506	H	
-75	^	nuire	word	506	H	
-38		ON	word	506	H	
-32		obliger	word	506	H	
-83		obligation	word	506	H	
-91		occasion	word	506	H	
-34	+	office	word	506	H	
-28	◡	oppinion	word	506	H	conflict: 506=oppinion vs opinion
-47		opposer	word	506	H	conflict: 506=opposer vs oppeser
-99		ordre	word	506	H	
-46	''	Ordinaire	word	506	H	
-6	◡	outre	word	506	H	conflict: 506=outre vs oulre
-51	◡	ounrage	word	506	H	conflict: 506=ounrage vs ouvrage
-59	^	ou	word	506	H	
-20	''	PA	syllable	506	H	
-23	◡	pe	syllable	506	H	
-36		pi	syllable	506	H	
-27	+	po	syllable	506	H	
-49		pu	syllable	506	H	
-40		passage	word	506	H	
-31		pas,ou,point	word	506	H	
-25	◡	particuliere	word	506	H	
-98		party	word	506	H	
-35		parmy	word	506	H	
-11	..	passion	word	506	H	
-14	^	parlement	word	506	H	
-63	^	peÿne	word	506	H	conflict: 506=peÿne vs peyne
-44		pense	word	506	H	
-32	◡	pendant	word	506	H	conflict: 506=pendant vs pendane
-74	◡	pece	word	506	H	conflict: 506=pece vs peu
-55		personne	word	506	H	
-53	''	plus	word	506	H	
-5	''	place	word	506	H	
-26	''	plaisir	word	506	H	
-68	''	pounoit	word	506	H	
-37	◡	posse	word	506	H	conflict: 506=posse vs porte
-48		pourquoy	word	506	H	
-27	◡	port	word	506	H	conflict: 506=port vs quel
-28		pour	word	506	H	
-33	''	pour	word	506	H	
-39	◡	pour	word	506	H	conflict: 506=pour vs pour?
-32	..	pour	word	506	H	
-88		protection	word	506	H	
-77	◡	premier	word	506	H	
-31	◡	principal	word	506	H	
-41	+	presene	word	506	H	conflict: 506=presene vs preleru
-40	◡	presse	word	506	H	conflict: 506=presse vs pres**
-77	''	proposition	word	506	H	
-28	''	propre	word	506	H	
-42	''	puissant	word	506	H	
-39	''	puis	word	506	H	
-42	+	puis	word	506	H	
-29		puis	word	506	H	conflict: 506=puis vs pui
-38	..	puis	word	506	H	conflict: 506=puis vs pui?
-45	''	qua	syllable	506	H	
-82		que	word	506	H	
-45		qui	syllable	506	H	
-84	◡	quo	syllable	506	H	
-39	..	quu	syllable	506	H	conflict: 506=quu vs qui
-43	+	Quand	word	506	H	
-35	..	quon	word	506	H	conflict: 506=quon vs quos?
-2	..	que	word	506	H	
-1	^	que	word	506	H	
-8	''	que	word	506	H	
-74	''	que	word	506	H	
-47	◡	que	word	506	H	
-10	◡0	que	word	506	H	
-30	+	que	word	506	H	
-76	''	quatre	word	506	H	
-36	+	quel	word	506	H	
-58	◡	quel	word	506	H	
-12	''	quel	word	506	H	
-67	^	quel	word	506	H	
-27	◡	quel	word	506	H	conflict: 506=quel vs port
-21	..	quel	word	506	H	
-30	^	quelque	word	506	H	
-72	^	quelque	word	506	H	
-27	..	quelque	word	506	H	
-45	◡	quelque	word	506	H	
-23	+	quelque	word	506	H	
-86		quelque	word	506	H	
-9	+	qui	syllable	506	H	
-15	''	qui	syllable	506	H	
-23	^	qui	syllable	506	H	
-4	..	qui	syllable	506	H	
-49	''	qui	syllable	506	H	
-24	+	quil	word	506	H	
-41	''	quil	word	506	H	
-68	^	quil	word	506	H	
-26	..	quil	word	506	H	
-71	◡	quil	word	506	H	
-92		quil	word	506	H	
-74	^	quoy	word	506	H	
-48	''	RA	syllable	506	H	
-31	^	re	syllable	506	H	
-33	..	ri	syllable	506	H	
-89		ro	word	506	H	
-84		ru	syllable	506	H	
-23	..	rien	word	506	H	
-96		republique	word	506	H	
-46	◡	reünir	word	506	H	
-31	''	ruine	word	506	H	
-38	''	reüssie	word	506	H	
-99	◡	sa	syllable	506	H	
-44	◡	se	syllable	506	H	
-32	''	si	syllable	506	H	
-48	^	so	syllable	506	H	
-32	^	su	syllable	506	H	
-27		sans	word	506	H	
-47	''	satisfait	word	506	H	
-16	^	sentiment	word	506	H	conflict: 506=sentiment vs sentimene
-69	^	secours	word	506	H	
-42	^	ses	word	506	H	
-7	^	ses	word	506	H	
-25	+	ses	word	506	H	conflict: 506=ses vs generaux
-49◡	RAW	ses	word	506	H	
-93	◡	semble	word	506	H	
-35	◡	seurement	word	506	H	conflict: 506=seurement vs seuremeru
-42	◡	sieur	word	506	H	
-85	◡	sortir	word	506	H	
-17	^	son	word	506	H	
-6	^	sous	word	506	H	
-91	◡	sort	word	506	H	
-98	◡	TA	syllable	506	H	
-75	◡	te	syllable	506	H	
-41	◡	ti	syllable	506	H	
-43	''	to	syllable	506	H	
-33	^	tu	syllable	506	H	
-39	^	taschera	word	506	H	conflict: 506=taschera vs tarhera
-76	^	tant	word	506	H	conflict: 506=tant vs l*anc
-44	''	tellement	word	506	H	
-88	◡	temps	word	506	H	
-36	◡	tenir	word	506	H	
-96	◡	tesmoigne	word	506	H	conflict: 506=tesmoigne vs esmoigne
-38	◡	tous	word	506	H	
-40	''	tous	word	506	H	
-37	^	tous	word	506	H	
-31	..	tous	word	506	H	conflict: 506=tous vs tour?
-44	^	tout	word	506	H	conflict: 506=tout vs tou*
-77	^	touchant	word	506	H	conflict: 506=touchant vs touchanc
-13	''	traicte	word	506	H	
-70	^	trop	word	506	H	
-18	^	troupe	word	506	H	conflict: 506=troupe vs houpe
-53	◡	troubles	word	506	H	conflict: 506=troubles vs trouble
-14	+	troubler	word	506	H	
-45	^	trouvant	word	506	H	conflict: 506=trouvant vs trouvane
-71	^	trouve	word	506	H	
-3	^	VA	syllable	506	H	conflict: 506=VA vs vu
-34	^	ue	word	506	H	
-94		ui	word	506	H	
-37	''	uo	word	506	H	
-94	◡	uu	word	506	H	
-54	◡	vaisseau	word	506	H	
-18	+	veritable	word	506	H	
-47	^	veullent	word	506	H	conflict: 506=veullent vs veulleru
-13	^	veille	word	506	H	
-93		venir,ou,veny	word	506	H	conflict: 506=venir,ou,veny vs venir,ou,venu
-46	^	ville	word	506	H	
-20	^	victoire	word	506	H	conflict: 506=victoire vs vietoire
-97	◡	un,ou,one	word	506	H	conflict: 506=un,ou,one vs ur,ou,une
-80	◡	union	word	506	H	
-86	◡	voules	word	506	H	conflict: 506=voules vs vrules
-11	^	vers	word	506	H	
-40	^	veu	word	506	H	
-36	^	vie	word	506	H	
-89	◡	vient	word	506	H	conflict: 506=vient vs sient
-56		votage	word	506	H	conflict: 506=votage vs boyage
-35	^	veoir	word	506	H	
-90	◡	vous	word	506	H	conflict: 506=vous vs sous
-12	+	vous	word	506	H	
-57		vous	word	506	H	conflict: 506=vous vs bous
-14	''	vous	word	506	H	
-43	^	vous	word	506	H	
-37	..	vous	word	506	H	conflict: 506=vous vs vous?
-28	^	vous	word	506	H	
-38	^	vous	word	506	H	
-95	◡	vous	word	506	H	conflict: 506=vous vs *ous
-65	+	vous	word	506	H	
-62	+	vostre	word	506	H	
-82	◡	XA	syllable	506	H	
-64	+	xe	syllable	506	H	
-68	+	xi	syllable	506	H	
-69	+	xo	syllable	506	H	
-92	◡	xu	syllable	506	H	
-41	^	Y	word	506	H	conflict: 506=Y vs j
-70	+	ya	word	506	H	conflict: 506=ya vs zele
-66	+	yoeux	word	506	H	
-67	+	Z	word	506	H	
-87	◡	Zel	word	506	H	conflict: 506=Zel vs z?el
-71	+	Zele	word	506	H	
-20	uc	<NULL>	other	506	H	null
-21	uc	<NULL>	other	506	H	null
-22	uc	<NULL>	other	506	H	null
-23	uc	<NULL>	other	506	H	null
-24	uc	<NULL>	other	506	H	null
-25	uc	<NULL>	other	506	H	null
-26	uc	<NULL>	other	506	H	null
-27	uc	<NULL>	other	506	H	null
-28	uc	<NULL>	other	506	H	null
-29	uc	<NULL>	other	506	H	null
-30	uc	<NULL>	other	506	H	null
-31	uc	<NULL>	other	506	H	null
-32	uc	<NULL>	other	506	H	null
-33	uc	<NULL>	other	506	H	null
-34	uc	<NULL>	other	506	H	null
-1	=	<NULL>	other	506	H	null
-2	=	<NULL>	other	506	H	null
-3	=	<NULL>	other	506	H	null
-4	=	<NULL>	other	506	H	null
-5	=	<NULL>	other	506	H	null
-6	=	<NULL>	other	506	H	null
-7	=	<NULL>	other	506	H	null
-8	=	<NULL>	other	506	H	null
-9	=	<NULL>	other	506	H	null
-10	=	<NULL>	other	506	H	null
-11	=	<NULL>	other	506	H	null
-12	=	<NULL>	other	506	H	null
-13	=	<NULL>	other	506	H	null
-14	=	<NULL>	other	506	H	null
-15	=	<NULL>	other	506	H	null
-16	=	<NULL>	other	506	H	null
-17	=	<NULL>	other	506	H	null
-18	=	<NULL>	other	506	H	null
-19	=	<NULL>	other	506	H	null
-20	=	<NULL>	other	506	H	null
-21	=	<NULL>	other	506	H	null
-22	=	<NULL>	other	506	H	null
-28	...	<NULL>	other	506	H	null
-29	...	<NULL>	other	506	H	null
-30	...	<NULL>	other	506	H	null
-31	...	<NULL>	other	506	H	null
-32	...	<NULL>	other	506	H	null
-33	...	<NULL>	other	506	H	null
-34	...	<NULL>	other	506	H	null
-35	...	<NULL>	other	506	H	null
-36	...	<NULL>	other	506	H	null
-37	...	<NULL>	other	506	H	null
-38	...	<NULL>	other	506	H	null
-39	...	<NULL>	other	506	H	null
-40	...	<NULL>	other	506	H	null
-41	...	<NULL>	other	506	H	null
-42	...	<NULL>	other	506	H	null
-43	...	<NULL>	other	506	H	null
-44	...	<NULL>	other	506	H	null
-45	...	<NULL>	other	506	H	null
-46	...	<NULL>	other	506	H	null
-47	...	<NULL>	other	506	H	null
+# (conflict_kind is filled by build() itself); or, offline, python3 conflicts.py to
+# retag conflict_kind on the already-committed key.tsv without the raw documents.
+code	mark	meaning	class	source	grade	note	conflict_kind
+23	m	K	letter	509 p2-3	H		
+18	co	K	letter	509 p2-3	H		
+InvertedLazySWithCurledEnds		K	letter	509 p2-3	H		
+10	m	A	letter	509 p2-3	H		
+33	co	A	letter	509 p2-3	H		
+CapitalLetterSCrossedByACrossBar		A	letter	509 p2-3	H		
+14	m	B	letter	509 p2-3	H		
+25	co	B	letter	509 p2-3	H		
+OghamLetterUr		B	letter	509 p2-3	H		
+21	m	C	letter	509 p2-3	H		
+13	co	C	letter	509 p2-3	H		
+PlusSign		C	letter	509 p2-3	H		
+11	m	D	letter	509 p2-3	H		
+28	co	D	letter	509 p2-3	H		
+CircledMinus		D	letter	509 p2-3	H		
+28	m	E	letter	509 p2-3	H		
+10	co	E	letter	509 p2-3	H		
+Verdigris		E	letter	509 p2-3	H		
+17	m	F	letter	509 p2-3	H		
+31	co	F	letter	509 p2-3	H		
+Soap		F	letter	509 p2-3	H		
+12	m	G	letter	509 p2-3	H		
+30	co	G	letter	509 p2-3	H		
+Arsenic		G	letter	509 p2-3	H		
+25	m	H	letter	509 p2-3	H		
+11	co	H	letter	509 p2-3	H		
+NkoDigitNine		H	letter	509 p2-3	H		
+19	m	I	letter	509 p2-3	H		
+32	co	I	letter	509 p2-3	H		
+Earth		I	letter	509 p2-3	H		
+20	m	L	letter	509 p2-3	H		
+12	co	L	letter	509 p2-3	H		
+TinDominatedByJupiter		L	letter	509 p2-3	H		
+16	m	M	letter	509 p2-3	H		
+21	co	M	letter	509 p2-3	H		
+SmallLetterWWithCenteredVerticalLine		M	letter	509 p2-3	H		
+30	m	N	letter	509 p2-3	H		
+15	co	N	letter	509 p2-3	H		
+CapitalTau		N	letter	509 p2-3	H		
+32	m	O	letter	509 p2-3	H		
+27	co	O	letter	509 p2-3	H		
+Silver		O	letter	509 p2-3	H		
+33	m	P	letter	509 p2-3	H		
+14	co	P	letter	509 p2-3	H	conflict: 509 p2-3=P vs c	other
+CapitalEpsilon		P	letter	509 p2-3	H		
+31	m	Q	letter	509 p2-3	H		
+24	co	Q	letter	509 p2-3	H		
+CapitalPsi		Q	letter	509 p2-3	H		
+13	m	R	letter	509 p2-3	H		
+29	co	R	letter	509 p2-3	H		
+CapitaslRho		R	letter	509 p2-3	H		
+29	m	S	letter	509 p2-3	H		
+16	co	S	letter	509 p2-3	H		
+TwoLogicalOrOPperator		S	letter	509 p2-3	H		
+15	m	T	letter	509 p2-3	H		
+26	co	T	letter	509 p2-3	H		
+CapitalDelta		T	letter	509 p2-3	H		
+22	m	V	letter	509 p2-3	H		
+17	co	V	letter	509 p2-3	H		
+CapitalUpsilon		V	letter	509 p2-3	H		
+27	m	X	letter	509 p2-3	H		
+22	co	X	letter	509 p2-3	H		
+CapitalPi		X	letter	509 p2-3	H		
+24	m	Y	letter	509 p2-3	H		
+19	co	Y	letter	509 p2-3	H		
+CapitalEta		Y	letter	509 p2-3	H		
+18	m	Z	letter	509 p2-3	H		
+23	co	Z	letter	509 p2-3	H		
+ReversedCapitalPsi		Z	letter	509 p2-3	H		
+26	m	W?	letter	509 p2-3	H		
+20	co	W?	letter	509 p2-3	H		
+ReversedCapitalEpsilon		W?	letter	509 p2-3	H		
+20		Le Roy	person	509 p2-3	H		
+21		le Duc Danjou	person	509 p2-3	H	conflict: 509 p2-3=le Duc Danjou vs m^r <abbr monsieur> le d. danine	spelling-variant
+22		Madame	person	509 p2-3	H		
+23		la Reyne mere	person	509 p2-3	H		
+24		M^r <ABBR Monsieur> le Prince	person	509 p2-3	H		
+25		M^r <ABBR Monsieur> le P. Delonty	person	509 p2-3	H		
+26		la Reyne	person	509 p2-3	H		
+27		M^r <ABBR Monsieur> delonqueville	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> delonqueville vs m^r <abbr monsieur> delonquevilles	identical-after-normalisation
+28		M^r <ABBR Monsieur> le Duc Dorleans	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le Duc Dorleans vs m^r <abbr monsieur> le d. dorleans	identical-after-normalisation
+29		M^r <ABBR Monsieur> le C^al <ABBR Cardinal> De Rer	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le C^al <ABBR Cardinal> De Rer vs m^r <abbr monsieur> le cand d rer?	same-code-different-meaning
+30		M^r <ABBR Monsieur> le P. francois	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le P. francois vs le prince francoci	spelling-variant
+31		M^r <ABBR Monsieur> le D. Danguein	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le D. Danguein vs m^r <abbr monsieur> l. d. denguein	spelling-variant
+32		M^r <ABBR Monsieur> le C. D'harcour	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le C. D'harcour vs m^r <abbr monsieur> le conte dharqur	same-code-different-meaning
+33		M^r <ABBR Monsieur> De Meaufort	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Meaufort vs m^r <abbr monsieur> d. bev*ufort	same-code-different-meaning
+34		M^r <ABBR Monsieur> De Movillon	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Movillon vs m^r <abbr monsieur> le d. delboüllon	same-code-different-meaning
+35		M^e la Princesse	person	509 p2-3	H	conflict: 509 p2-3=M^e la Princesse vs m^r <abbr monsieur> la princesse	identical-after-normalisation
+36		M^r <ABBR Monsieur> le C. Desoissons	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le C. Desoissons vs m^r <abbr monsieur> le l. deloissins	same-code-different-meaning
+37		M^r <ABBR Monsieur> le Duc De Maravin	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le Duc De Maravin vs m^r <abbr monsieur> le d. de mararin	spelling-variant
+38		M^r <ABBR Monsieur> Debandorme	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> Debandorme vs m^r <abbr monsieur> dehandormes	spelling-variant
+39		M^r <ABBR Monsieur> De Manciry	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Manciry vs m^r <abbr monsieur> le d. dennevert	same-code-different-meaning
+40		M^r <ABBR Monsieur> De Mercoeur	person	509 p2-3	H		
+41		M^r <ABBR Monsieur> le D. Richelieu	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le D. Richelieu vs m^r <abbr monsieur> le d, dehiehetieu	same-code-different-meaning
+42		M^r <ABBR Monsieur> le D. Deloraine	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le D. Deloraine vs m^r <abbr monsieur> le deloraine	identical-after-normalisation
+43		M^r <ABBR Monsieur> le D. De Guise	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le D. De Guise vs m^r <abbr monsieur> de guise	identical-after-normalisation
+44		l'Archeves^e De Rhodes	person	509 p2-3	H	conflict: 509 p2-3=l'Archeves^e De Rhodes vs l'arche zum de rhodes	same-code-different-meaning
+45		M^r <ABBR Monsieur> le D. Delboeuf	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le D. Delboeuf vs m^r <abbr monsieur> delboeut	spelling-variant
+46		M^r <ABBR Monsieur> les D Charles	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> les D Charles vs le prince charles	identical-after-normalisation
+47		M^r <ABBR Monsieur> le P D Tharante	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le P D Tharante vs le p. de tharante	identical-after-normalisation
+48		M^r <ABBR Monsieur> le M^al De Villeroy	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le M^al De Villeroy vs transcription le mar^al de villeroy	same-code-different-meaning
+49		M^r <ABBR Monsieur> le M^al De Gramoru	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le M^al De Gramoru vs m^r <abbr monsieur> le mar^al de gramont	same-code-different-meaning
+50		M^r <ABBR Monsieur> le M^al De Turenne	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le M^al De Turenne vs m^r <abbr monsieur> le mar^al de turenne	spelling-variant
+51		M^r <ABBR Monsieur> fouquet	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> fouquet vs m^r <abbr monsieur> sovequet	spelling-variant
+52		le Parlemene	person	509 p2-3	H		
+53		la chambre de Justice	person	509 p2-3	H	conflict: 509 p2-3=la chambre de Justice vs la chamd, de justice	same-code-different-meaning
+54		l'empereur	person	509 p2-3	H		
+55		M^r <ABBR Monsieur> le M^al fabert	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le M^al fabert vs m^r <abbr monsieur> le mar^al de fabert	spelling-variant
+56		M^r <ABBR Monsieur> le M^al Daumone	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le M^al Daumone vs m^r <abbr monsieur> le mar^al daumont	same-code-different-meaning
+57		M^r <ABBR Monsieur> le M^al De T*hulemberg	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le M^al De T*hulemberg vs m^r <abbr monsieur> le mar^al de schulemberg	same-code-different-meaning
+58		les l?seheunis	person	509 p2-3	H	conflict: 509 p2-3=les l?seheunis vs le meh*****	same-code-different-meaning
+59		l'Abbe fouquet	person	509 p2-3	H	conflict: 509 p2-3=l'Abbe fouquet vs m^r <abbr monsieur> sabbefouquet	spelling-variant
+60		M^r <ABBR Monsieur> le M^al Delaferte	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le M^al Delaferte vs m^r <abbr monsieur> le mar^al delaforte	same-code-different-meaning
+61		le Prem^ce Presidene	person	509 p2-3	H	conflict: 509 p2-3=le Prem^ce Presidene vs m^r <abbr monsieur> le pr. presidene	same-code-different-meaning
+62		M^r <ABBR Monsieur> le Duc Dyorck	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le Duc Dyorck vs le duc diorck	spelling-variant
+63		M^r <ABBR Monsieur> le Gñal Monck	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le Gñal Monck vs le gen^al monek	spelling-variant
+64		Le Roy Danyleterre	person	509 p2-3	H	conflict: 509 p2-3=Le Roy Danyleterre vs le roy d angleterre	spelling-variant
+65		M^ad hayde chance	person	509 p2-3	H	conflict: 509 p2-3=M^ad hayde chance vs m^r <abbr monsieur> ord hayde chance	spelling-variant
+66		la Reyne merc dany^re	person	509 p2-3	H	conflict: 509 p2-3=la Reyne merc dany^re vs la royne merc dasnre	same-code-different-meaning
+67		l'imperatrice	person	509 p2-3	H		
+68		le Prevott des Marchand	person	509 p2-3	H	conflict: 509 p2-3=le Prevott des Marchand vs le prev?ost de mart	same-code-different-meaning
+69		M^r <ABBR Monsieur> lel De Britolle	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> lel De Britolle vs m^r <abbr monsieur> le l. de bastille	same-code-different-meaning
+70		M^r <ABBR Monsieur> D. Dormone	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> D. Dormone vs m^r <abbr monsieur> le d. dormone	identical-after-normalisation
+71		la Reyne Dasty leterre	person	509 p2-3	H	conflict: 509 p2-3=la Reyne Dasty leterre vs la royne danyro	same-code-different-meaning
+72		M^r <ABBR Monsieur> lec Sandivich	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> lec Sandivich vs m^r <abbr monsieur> le d. sandutch	same-code-different-meaning
+73		M^r <ABBR Monsieur> lec de Menchester	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> lec de Menchester vs m^r <abbr monsieur> le c de menchettor	same-code-different-meaning
+74		M^r <ABBR Monsieur> lec De* Albance	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> lec De* Albance vs m^r <abbr monsieur> lel derh albante	same-code-different-meaning
+75		Mad lad^elle Dyorck	person	509 p2-3	H		
+76		M^r <ABBR Monsieur> Brilliamson	person	509 p2-3	H		
+9	'	M^r <ABBR Monsieur> les Estate D'holl^de	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> les Estate D'holl^de vs les estat d' hollande	same-code-different-meaning
+10	'	le Roy Despayne	person	509 p2-3	H		
+11	'	l'Infante Desp^ne	person	509 p2-3	H	conflict: 509 p2-3=l'Infante Desp^ne vs l'infante despayne	spelling-variant
+12	'	M^r <ABBR Monsieur> les seer^re Nicolas	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> les seer^re Nicolas vs m^r <abbr monsieur> le secr^re niolas	spelling-variant
+13	'	La Maison D'austrieche	person	509 p2-3	H	conflict: 509 p2-3=La Maison D'austrieche vs la maison daustriche	spelling-variant
+14	'	M^r <ABBR Monsieur> le Mini^*e Despag.^e	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le Mini^*e Despag.^e vs m^r <abbr monsieur> ministre desp^re	same-code-different-meaning
+15	'	M^r <ABBR Monsieur> les Sce^re Maurice	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> les Sce^re Maurice vs m^r <abbr monsieur> le se^re maurice	spelling-variant
+16	'	D. Estavane de Gamara	person	509 p2-3	H	conflict: 509 p2-3=D. Estavane de Gamara vs don estavun de gamare	same-code-different-meaning
+17	'	l'Archiduc leopol	person	509 p2-3	H	conflict: 509 p2-3=l'Archiduc leopol vs l'archidue leopol	spelling-variant
+18	'	l'Arch D'Inspruck	person	509 p2-3	H	conflict: 509 p2-3=l'Arch D'Inspruck vs larch d inspruck	spelling-variant
+19	'	M^r <ABBR Monsieur> De Carascene	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Carascene vs le ma de laraseene	same-code-different-meaning
+20	'	la Reune D'espay^e	person	509 p2-3	H	conflict: 509 p2-3=la Reune D'espay^e vs la repr?e despayne	same-code-different-meaning
+21	'	la Reyne Christine	person	509 p2-3	H	conflict: 509 p2-3=la Reyne Christine vs la repne christine	spelling-variant
+22	'	le Roy Damnemort	person	509 p2-3	H	conflict: 509 p2-3=le Roy Damnemort vs le roy damnemart	spelling-variant
+23	'	Ifnante de Portugal	person	509 p2-3	H	conflict: 509 p2-3=Ifnante de Portugal vs infante de portugal	spelling-variant
+24	'	l'empire	person	509 p2-3	H		
+25	'	D. Juan Daustriche	person	509 p2-3	H	conflict: 509 p2-3=D. Juan Daustriche vs dom juan daustriche	same-code-different-meaning
+26	'	le Roy e suede	person	509 p2-3	H	conflict: 509 p2-3=le Roy e suede vs le roy de suede	spelling-variant
+27	'	le lecteur de Mayone	person	509 p2-3	H	conflict: 509 p2-3=le lecteur de Mayone vs le el. de marence	same-code-different-meaning
+28	'	lesl^our de Bavier	person	509 p2-3	H	conflict: 509 p2-3=lesl^our de Bavier vs le el de bavierc	same-code-different-meaning
+29	'	lad^al Ruiter	person	509 p2-3	H	conflict: 509 p2-3=lad^al Ruiter vs la d^al  ruit*e	same-code-different-meaning
+30	'	le Pape	person	509 p2-3	H		
+31	'	le D. De Mantove	person	509 p2-3	H	conflict: 509 p2-3=le D. De Mantove vs le d. de mantoüe	identical-after-normalisation
+32	'	le C. De Charo**	person	509 p2-3	H	conflict: 509 p2-3=le C. De Charo** vs m^r <abbr monsieur> lel. delharost	same-code-different-meaning
+33	'	le C. De S^t Argnan	person	509 p2-3	H	conflict: 509 p2-3=le C. De S^t Argnan vs m^r <abbr monsieur> lel. der. aignan	same-code-different-meaning
+34	'	le C. De Brienne	person	509 p2-3	H	conflict: 509 p2-3=le C. De Brienne vs m^r <abbr monsieur> brienne	identical-after-normalisation
+35	'	le Roy De Portugal	person	509 p2-3	H	conflict: 509 p2-3=le Roy De Portugal vs le rody de portugal	same-code-different-meaning
+36	'	le Roy De Pologne	person	509 p2-3	H		
+37	'	D. Castel Rodrigo	person	509 p2-3	H	conflict: 509 p2-3=D. Castel Rodrigo vs don castel rodriyo	same-code-different-meaning
+38	'	la Reyne De Pologne	person	509 p2-3	H	conflict: 509 p2-3=la Reyne De Pologne vs la repre de pologne	spelling-variant
+39	'	lest. De Brandenbourg	person	509 p2-3	H	conflict: 509 p2-3=lest. De Brandenbourg vs de el. de brandebourg	same-code-different-meaning
+40	'	M^r <ABBR Monsieur> le Tellter	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> le Tellter vs m^r <abbr monsieur> le tellier	spelling-variant
+41	'	M^r <ABBR Monsieur> De Batteville	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Batteville vs m^r <abbr monsieur> de batteierlle	same-code-different-meaning
+42	'	lest. De Palatin	person	509 p2-3	H	conflict: 509 p2-3=lest. De Palatin vs de el palatin	same-code-different-meaning
+43	'	le C. De Pigneranda	person	509 p2-3	H	conflict: 509 p2-3=le C. De Pigneranda vs le l. depigneranda	same-code-different-meaning
+44	'	la Reyne de Svede	person	509 p2-3	H	conflict: 509 p2-3=la Reyne de Svede vs la repre de he*dde	same-code-different-meaning
+45	'	lest. De Saxe	person	509 p2-3	H	conflict: 509 p2-3=lest. De Saxe vs le el. de saxe	same-code-different-meaning
+46	'	la Reyne de Portugal	person	509 p2-3	H	conflict: 509 p2-3=la Reyne de Portugal vs le repne de portugal	spelling-variant
+47	'	lest De Treves	person	509 p2-3	H	conflict: 509 p2-3=lest De Treves vs le el. de treve	same-code-different-meaning
+48	'	M^r <ABBR Monsieur> D'estrades	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> D'estrades vs m^r <abbr monsieur> - d;estrades	spelling-variant
+49	'	lest. De Cologne	person	509 p2-3	H	conflict: 509 p2-3=lest. De Cologne vs le el de cologne	same-code-different-meaning
+50	'	Mad^e De Chatillon	person	509 p2-3	H	conflict: 509 p2-3=Mad^e De Chatillon vs m^r <abbr monsieur> de chatillon	same-code-different-meaning
+51	'	M^r <ABBR Monsieur> De Bouteville	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Bouteville vs m^r <abbr monsieur> de boutevilles	identical-after-normalisation
+52	'	le Grand Duc	person	509 p2-3	H		
+53	'	l'evesq De Munster	person	509 p2-3	H	conflict: 509 p2-3=l'evesq De Munster vs le el. de munster	same-code-different-meaning
+54	'	M^r <ABBR Monsieur> De Marciri	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Marciri vs m^r <abbr monsieur> de mavern	same-code-different-meaning
+55	'	M^r <ABBR Monsieur> De Viequefort	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Viequefort vs m^r <abbr monsieur> de *niquefort	same-code-different-meaning
+56	'	le M^al Dauqini court	person	509 p2-3	H	conflict: 509 p2-3=le M^al Dauqini court vs m^r <abbr monsieur> le mar^al d'auquincourt	same-code-different-meaning
+57	'	le Duc de Parme	person	509 p2-3	H	conflict: 509 p2-3=le Duc de Parme vs le d. de parme	identical-after-normalisation
+58	'	le Duc de Modene	person	509 p2-3	H	conflict: 509 p2-3=le Duc de Modene vs le d, de modene	identical-after-normalisation
+59	'	M^r <ABBR Monsieur> De Thou	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Thou vs m^r <abbr monsieur> dethou	spelling-variant
+60	'	M^r <ABBR Monsieur> De Lumbres	person	509 p2-3	H	conflict: 509 p2-3=M^r <ABBR Monsieur> De Lumbres vs m^r <abbr monsieur> delumbres	spelling-variant
+61	'	Calais	ville	509 p2-3	H	conflict: 509 p2-3=Calais vs amsterdam	other
+61	'	amsterdam	ville	509 p2-3	H	conflict: 509 p2-3=amsterdam vs calais	other
+63	'	Januert	ville	509 p2-3	H	conflict: 509 p2-3=Januert vs anuers	spelling-variant
+64	'	Bordeaux	ville	509 p2-3	H		
+65	'	Boulonge	ville	509 p2-3	H	conflict: 509 p2-3=Boulonge vs boulongne	spelling-variant
+66	'	Bruxelles	ville	509 p2-3	H		
+67	'	Bayonne	ville	509 p2-3	H		
+68	'	Britolles	ville	509 p2-3	H	conflict: 509 p2-3=Britolles vs bristolla	spelling-variant
+69	'	Douu?ves	ville	509 p2-3	H	conflict: 509 p2-3=Douu?ves vs douvre	spelling-variant
+70	'	Pronne	ville	509 p2-3	H	conflict: 509 p2-3=Pronne vs peronne	spelling-variant
+71	'	Cologne	ville	509 p2-3	H		
+72	'	Cambray	ville	509 p2-3	H		
+73	'	hambourg	ville	509 p2-3	H		
+74	'	lisbonne	ville	509 p2-3	H		
+75	'	la haye	ville	509 p2-3	H	conflict: 509 p2-3=la haye vs lahaye	spelling-variant
+76	'	lion	ville	509 p2-3	H		
+77	'	la Rochelle	ville	509 p2-3	H		
+78	'	Marseille	ville	509 p2-3	H	conflict: 509 p2-3=Marseille vs marseilles	identical-after-normalisation
+79	'	francfort	ville	509 p2-3	H	conflict: 509 p2-3=francfort vs sranefort	spelling-variant
+80	'	Madrid	ville	509 p2-3	H		
+81	'	Vesminister	ville	509 p2-3	H		
+82	'	Vienne	ville	509 p2-3	H		
+83	'	Roüen	ville	509 p2-3	H	conflict: 509 p2-3=Roüen vs dunkerke	other
+84	'	la havre	ville	509 p2-3	H	conflict: 509 p2-3=la havre vs lehavre	spelling-variant
+85	'	Don Kerque	ville	509 p2-3	H		
+86	'	Paris	ville	509 p2-3	H	conflict: 509 p2-3=Paris vs paros	spelling-variant
+87	'	londres	ville	509 p2-3	H		
+88	'	Dieppe	ville	509 p2-3	H	conflict: 509 p2-3=Dieppe vs dieppes	identical-after-normalisation
+89	'	Venise	ville	509 p2-3	H	conflict: 509 p2-3=Venise vs veniles	spelling-variant
+90	'	la Pologne	royaume	509 p2-3	H		
+91	'	la france	royaume	509 p2-3	H	conflict: 509 p2-3=la france vs le france	identical-after-normalisation
+92	'	la svede	royaume	509 p2-3	H	conflict: 509 p2-3=la svede vs la suede	identical-after-normalisation
+93	'	la hollande	royaume	509 p2-3	H		
+94	'	la zelande	royaume	509 p2-3	H	conflict: 509 p2-3=la zelande vs la *elande	spelling-variant
+95	'	le Portugal	royaume	509 p2-3	H		
+96	'	l'angleterre	royaume	509 p2-3	H		
+97	'	la slandres	royaume	509 p2-3	H	conflict: 509 p2-3=la slandres vs la frandre	spelling-variant
+98	'	le spagne	royaume	509 p2-3	H	conflict: 509 p2-3=le spagne vs l'espagne	spelling-variant
+99	'	la Cathalogne	royaume	509 p2-3	H		
+100	'	la Damnemare	royaume	509 p2-3	H		
+101	'	la Livonie	royaume	509 p2-3	H		
+102	'	La Moscovie	royaume	509 p2-3	H		
+103	'	la Pruce	royaume	509 p2-3	H		
+104	'	L'Italie	royaume	509 p2-3	H		
+105	'	l'Irlande	royaume	509 p2-3	H		
+106	'	les cosse	royaume	509 p2-3	H		
+107	'	la Pemmeranie	royaume	509 p2-3	H		
+108	'	l'Alsace	royaume	509 p2-3	H		
+1	..	na	syllable	509 p2-3	H		
+2	..	que	word	509 p2-3	H		
+3	..	grand	word	509 p2-3	H		
+4	..	qui	syllable	509 p2-3	H		
+5	..	beaucoup	word	509 p2-3	H		
+6	..	les	word	509 p2-3	H		
+7	..	Dans	word	509 p2-3	H	conflict: 509 p2-3=Dans vs estably	same-code-different-meaning
+8	..	et	word	509 p2-3	H		
+9	..	conjoncture	word	509 p2-3	H		
+10	..	despesches	word	509 p2-3	H		
+11	..	Passion	word	509 p2-3	H		
+12	..	bien	word	509 p2-3	H		
+13	..	au	word	509 p2-3	H		
+14	..	droiet	word	509 p2-3	H		
+15	..	des	word	509 p2-3	H		
+16	..	leur	word	509 p2-3	H		
+17	..	Enuiron	word	509 p2-3	H		
+18	..	nous	word	509 p2-3	H		
+19	..	about?e?	word	509 p2-3	H	conflict: 509 p2-3=about?e? vs about	spelling-variant
+20	..	mu	syllable	509 p2-3	H		
+21	..	quel	word	509 p2-3	H		
+22	..	Conference	word	509 p2-3	H		
+23	..	rien	word	509 p2-3	H		
+24	..	bonte	word	509 p2-3	H		
+25	..	nous	word	509 p2-3	H		
+26	..	quil	word	509 p2-3	H		
+27	..	quelque	word	509 p2-3	H		
+28	..	espagnol	word	509 p2-3	H		
+29	..	dure	word	509 p2-3	H		
+30	..	mais	word	509 p2-3	H		
+31	..	tour?	word	509 p2-3	H	conflict: 509 p2-3=tour? vs tous	spelling-variant
+32	..	pour	word	509 p2-3	H		
+33	..	ri	syllable	509 p2-3	H		
+34	..	bon	word	509 p2-3	H		
+35	..	quos?	word	509 p2-3	H	conflict: 509 p2-3=quos? vs quon	spelling-variant
+36	..	Glore	word	509 p2-3	H	conflict: 509 p2-3=Glore vs gloire	spelling-variant
+37	..	vous?	word	509 p2-3	H	conflict: 509 p2-3=vous? vs vous	identical-after-normalisation
+38	..	pui?	word	509 p2-3	H	conflict: 509 p2-3=pui? vs puis	identical-after-normalisation
+39	..	qui	syllable	509 p2-3	H	conflict: 509 p2-3=qui vs quu	spelling-variant
+40	..	moy?n	word	509 p2-3	H	conflict: 509 p2-3=moy?n vs moyon	spelling-variant
+1	^	que	word	509 p2-3	H		
+2	^	liberte	word	509 p2-3	H		
+3	^	vu	syllable	509 p2-3	H	conflict: 509 p2-3=vu vs va	spelling-variant
+4	^	bourgeois	word	509 p2-3	H		
+5	^	lettre	word	509 p2-3	H	conflict: 509 p2-3=lettre vs leure	spelling-variant
+6	^	sous	word	509 p2-3	H		
+7	^	ses	word	509 p2-3	H		
+8	^	caul?a?lier	word	509 p2-3	H	conflict: 509 p2-3=caul?a?lier vs cavalier	spelling-variant
+9	^	Grace	word	509 p2-3	H		
+10	^	capitaine	word	509 p2-3	H		
+11	^	vers	word	509 p2-3	H		
+12	^	desormais	word	509 p2-3	H		
+13	^	veille	word	509 p2-3	H		
+14	^	Parlement	word	509 p2-3	H		
+15	^	des	word	509 p2-3	H		
+16	^	sentimene	word	509 p2-3	H	conflict: 509 p2-3=sentimene vs sentiment	spelling-variant
+17	^	son	word	509 p2-3	H		
+18	^	houpe	word	509 p2-3	H	conflict: 509 p2-3=houpe vs troupe	spelling-variant
+19	^	envoy	word	509 p2-3	H		
+20	^	vietoire	word	509 p2-3	H	conflict: 509 p2-3=vietoire vs victoire	spelling-variant
+21	^	accommodem^*	word	509 p2-3	H	conflict: 509 p2-3=accommodem^* vs accommodem*	identical-after-normalisation
+22	^	f?ave?	word	509 p2-3	H	conflict: 509 p2-3=f?ave? vs faut	spelling-variant
+23	^	qui	syllable	509 p2-3	H		
+24	^	et	word	509 p2-3	H		
+25	^	Generaux	word	509 p2-3	H		
+26	^	nous	word	509 p2-3	H		
+27	^	quel	word	509 p2-3	H		
+28	^	vous	word	509 p2-3	H		
+29	^	maintenir	word	509 p2-3	H		
+30	^	quelque	word	509 p2-3	H		
+31	^	re	syllable	509 p2-3	H		
+32	^	su	syllable	509 p2-3	H		
+33	^	tu	syllable	509 p2-3	H		
+34	^	ve	syllable	509 p2-3	H		
+35	^	veoir	word	509 p2-3	H		
+36	^	vie	word	509 p2-3	H		
+37	^	tous	word	509 p2-3	H		
+38	^	vous	word	509 p2-3	H		
+43	^	vous	word	509 p2-3	H		
+39	^	tarhera	word	509 p2-3	H	conflict: 509 p2-3=tarhera vs taschera	spelling-variant
+40	^	veu	word	509 p2-3	H		
+41	^	j	word	509 p2-3	H	conflict: 509 p2-3=j vs y	spelling-variant
+42	^	ses	word	509 p2-3	H		
+44	^	tou*	word	509 p2-3	H	conflict: 509 p2-3=tou* vs tout	spelling-variant
+45	^	trouvane	word	509 p2-3	H	conflict: 509 p2-3=trouvane vs trouvant	spelling-variant
+46	^	ville	word	509 p2-3	H		
+47	^	veulleru	word	509 p2-3	H	conflict: 509 p2-3=veulleru vs veullent	spelling-variant
+48	^	so	syllable	509 p2-3	H		
+49	^	avec	word	509 p2-3	H		
+50	^	bruit	word	509 p2-3	H		
+51	^	establi	word	509 p2-3	H		
+52	^	ne	syllable	509 p2-3	H		
+53	^	honneur	word	509 p2-3	H		
+54	^	cause	word	509 p2-3	H		
+55	^	Gouverneur	word	509 p2-3	H		
+56	^	combien	word	509 p2-3	H		
+57	^	estoienc	word	509 p2-3	H	conflict: 509 p2-3=estoienc vs estoicru	same-code-different-meaning
+58	^	Il?s	word	509 p2-3	H	conflict: 509 p2-3=Il?s vs js?s	spelling-variant
+59	^	ou	word	509 p2-3	H		
+60	^	dessein	word	509 p2-3	H		
+61	^	affaire	word	509 p2-3	H		
+62	^	mauvais	word	509 p2-3	H	conflict: 509 p2-3=mauvais vs manuaci	spelling-variant
+63	^	Peyne	word	509 p2-3	H	conflict: 509 p2-3=Peyne vs peÿne	identical-after-normalisation
+64	^	des	word	509 p2-3	H		
+65	^	avertissem^*	word	509 p2-3	H	conflict: 509 p2-3=avertissem^* vs auerhissement	same-code-different-meaning
+66	^	catholique	word	509 p2-3	H		
+67	^	quel	word	509 p2-3	H		
+68	^	quil	word	509 p2-3	H		
+69	^	secours	word	509 p2-3	H		
+70	^	trop	word	509 p2-3	H		
+71	^	trouve	word	509 p2-3	H		
+72	^	quelque	word	509 p2-3	H		
+73	^	nos	word	509 p2-3	H		
+74	^	quoy	word	509 p2-3	H		
+75	^	nuire	word	509 p2-3	H		
+76	^	l*anc	word	509 p2-3	H	conflict: 509 p2-3=l*anc vs tant	same-code-different-meaning
+77	^	touchanc	word	509 p2-3	H	conflict: 509 p2-3=touchanc vs touchant	spelling-variant
+78	^	maniere	word	509 p2-3	H		
+79	^	matheur	word	509 p2-3	H		
+80	^	general	word	509 p2-3	H		
+1	"	ca	syllable	509 p2-3	H		
+2	"	different	word	509 p2-3	H		
+3	"	Britanique	word	509 p2-3	H		
+4	"	estat	word	509 p2-3	H		
+5	"	Place	word	509 p2-3	H		
+6	"	Il	word	509 p2-3	H		
+7	"	conscience	word	509 p2-3	H		
+8	"	que	word	509 p2-3	H		
+9	"	dernier	word	509 p2-3	H		
+10	"	ment	word	509 p2-3	H		
+11	"	averty	word	509 p2-3	H		
+12	"	quel	word	509 p2-3	H		
+13	"	traicte	word	509 p2-3	H		
+14	"	vous	word	509 p2-3	H		
+15	"	qui	syllable	509 p2-3	H		
+16	"	affin	word	509 p2-3	H		
+17	"	negotiacion	word	509 p2-3	H		
+18	"	et	word	509 p2-3	H		
+19	"	ci	syllable	509 p2-3	H		
+20	"	pa	syllable	509 p2-3	H		
+21	"	Bataille	word	509 p2-3	H		
+22	"	consideration	word	509 p2-3	H		
+23	"	desordre	word	509 p2-3	H		
+24	"	gens	word	509 p2-3	H		
+25	"	nous	word	509 p2-3	H		
+26	"	palisir	word	509 p2-3	H		
+27	"	fau	word	509 p2-3	H		
+28	"	propre	word	509 p2-3	H		
+29	"	bu	word	509 p2-3	H		
+30	"	nutralite	word	509 p2-3	H		
+31	"	ruine	word	509 p2-3	H		
+32	"	si	syllable	509 p2-3	H		
+33	"	Pour	word	509 p2-3	H		
+34	"	conserver	word	509 p2-3	H		
+35	"	nostre	word	509 p2-3	H		
+36	"	co	syllable	509 p2-3	H		
+37	"	vo	syllable	509 p2-3	H		
+38	"	reussir	word	509 p2-3	H		
+39	"	Pui?	word	509 p2-3	H		
+40	"	tous	word	509 p2-3	H		
+41	"	quil	word	509 p2-3	H		
+42	"	Puissant	word	509 p2-3	H		
+43	"	to	syllable	509 p2-3	H		
+44	"	tellement	word	509 p2-3	H		
+45	"	qua	syllable	509 p2-3	H		
+46	"	ordinaire	word	509 p2-3	H		
+47	"	satisfait	word	509 p2-3	H		
+48	"	ra	syllable	509 p2-3	H		
+49	"	qui	syllable	509 p2-3	H		
+50	"	non	word	509 p2-3	H		
+51	"	ministre	word	509 p2-3	H		
+52	"	ni	syllable	509 p2-3	H		
+53	"	plus	word	509 p2-3	H		
+54	"	estane	word	509 p2-3	H		
+55	"	honte	word	509 p2-3	H		
+56	"	ta	syllable	509 p2-3	H		
+57	"	les	word	509 p2-3	H		
+58	"	ce	word	509 p2-3	H		
+59	"	lon	word	509 p2-3	H		
+60	"	avoir	word	509 p2-3	H		
+61	"	hu	word	509 p2-3	H		
+62	"	jey	word	509 p2-3	H		
+63	"	effort	word	509 p2-3	H		
+64	"	gouvernem	word	509 p2-3	H		
+65	"	aussy	word	509 p2-3	H		
+66	"	avantage	word	509 p2-3	H		
+67	"	garder	word	509 p2-3	H		
+68	"	pouvoic	word	509 p2-3	H		
+69	"	negocier	word	509 p2-3	H		
+70	"	battre	word	509 p2-3	H		
+71	"	conseille	word	509 p2-3	H		
+72	"	facon	word	509 p2-3	H		
+73	"	manque	word	509 p2-3	H		
+74	"	que	word	509 p2-3	H		
+75	"	bi	word	509 p2-3	H		
+76	"	quatre	word	509 p2-3	H		
+77	"	proposition	word	509 p2-3	H		
+78	"	beau,ou,bele	word	509 p2-3	H		
+79	"	capable	word	509 p2-3	H		
+80	"	bo	syllable	509 p2-3	H		
+1	◡	le	syllable	509 p2-3	H		
+2	◡	luy	word	509 p2-3	H		
+3	◡	du	syllable	509 p2-3	H		
+4	◡	mes	word	509 p2-3	H		
+5	◡	guerre	word	509 p2-3	H		
+6	◡	oulre	word	509 p2-3	H	conflict: 509 p2-3=oulre vs outre	spelling-variant
+7	◡	chose	word	509 p2-3	H		
+8	◡	honnorable	word	509 p2-3	H		
+9	◡	difficulte	word	509 p2-3	H		
+10	◡	contre	word	509 p2-3	H		
+11	◡	fo	syllable	509 p2-3	H		
+12	◡	agir	word	509 p2-3	H		
+13	◡	faveur	word	509 p2-3	H		
+14	◡	ga	syllable	509 p2-3	H		
+15	◡	contraire	word	509 p2-3	H		
+16	◡	be	word	509 p2-3	H		
+17	◡	ceru	word	509 p2-3	H	conflict: 509 p2-3=ceru vs cent	spelling-variant
+18	◡	loing	word	509 p2-3	H		
+19	◡	enuoz?e	word	509 p2-3	H		
+20	◡	ennemy	word	509 p2-3	H		
+21	◡	hantemeru	word	509 p2-3	H	conflict: 509 p2-3=hantemeru vs hautement	same-code-different-meaning
+22	◡	Mad.^e ou Mad^*	word	509 p2-3	H	conflict: 509 p2-3=Mad.^e ou Mad^* vs mad^e <abbr madame>,ou,mad****	same-code-different-meaning
+23	◡	pe	syllable	509 p2-3	H		
+24	◡	ba	syllable	509 p2-3	H		
+25	◡	particuliere	word	509 p2-3	H		
+26	◡	marque	word	509 p2-3	H		
+27	◡	port	word	509 p2-3	H	conflict: 509 p2-3=port vs quel	other
+28	◡	opinion	word	509 p2-3	H	conflict: 509 p2-3=opinion vs oppinion	spelling-variant
+29	◡	camppagne	word	509 p2-3	H	conflict: 509 p2-3=camppagne vs campagne	spelling-variant
+30	◡	ensemble	word	509 p2-3	H		
+31	◡	principal	word	509 p2-3	H		
+32	◡	pendane	word	509 p2-3	H	conflict: 509 p2-3=pendane vs pendant	spelling-variant
+33	◡	aveun	word	509 p2-3	H		
+34	◡	mi	syllable	509 p2-3	H		
+35	◡	seuremeru	word	509 p2-3	H	conflict: 509 p2-3=seuremeru vs seurement	spelling-variant
+36	◡	tenir	word	509 p2-3	H		
+37	◡	Porte	word	509 p2-3	H	conflict: 509 p2-3=Porte vs posse	spelling-variant
+38	◡	tous	word	509 p2-3	H		
+39	◡	pour?	word	509 p2-3	H	conflict: 509 p2-3=pour? vs pour	identical-after-normalisation
+40	◡	pres**	word	509 p2-3	H	conflict: 509 p2-3=pres** vs presse	spelling-variant
+41	◡	ti	syllable	509 p2-3	H		
+42	◡	sieur	word	509 p2-3	H		
+43	◡	necessaire	word	509 p2-3	H	conflict: 509 p2-3=necessaire vs nec?ossaire	spelling-variant
+44	◡	se	syllable	509 p2-3	H		
+45	◡	quelque	word	509 p2-3	H		
+46	◡	reünir	word	509 p2-3	H		
+47	◡	que	word	509 p2-3	H		
+48	◡	meme	word	509 p2-3	H	conflict: 509 p2-3=meme vs mesmes	spelling-variant
+49	◡	ses	word	509 p2-3	H		
+50	◡	mont	word	509 p2-3	H	conflict: 509 p2-3=mont vs mon?e	spelling-variant
+51	◡	ouvrage	word	509 p2-3	H	conflict: 509 p2-3=ouvrage vs ounrage	spelling-variant
+52	◡	les	word	509 p2-3	H		
+53	◡	trouble	word	509 p2-3	H	conflict: 509 p2-3=trouble vs troubles	identical-after-normalisation
+54	◡	vaisseau	word	509 p2-3	H		
+55	◡	charge	word	509 p2-3	H		
+56	◡	no	syllable	509 p2-3	H		
+57	◡	diligent	word	509 p2-3	H		
+58	◡	quel	word	509 p2-3	H		
+59	◡	jay	word	509 p2-3	H		
+60	◡	ett	word	509 p2-3	H		
+61	◡	**ormis	word	509 p2-3	H	conflict: 509 p2-3=**ormis vs hormes	same-code-different-meaning
+62	◡	autre	word	509 p2-3	H		
+63	◡	eux	word	509 p2-3	H		
+64	◡	cour	word	509 p2-3	H		
+65	◡	division	word	509 p2-3	H		
+66	◡	tt	word	509 p2-3	H	conflict: 509 p2-3=tt vs et	spelling-variant
+67	◡	celuy,ou,celle	word	509 p2-3	H	conflict: 509 p2-3=celuy,ou,celle vs celluy,ou,celle	spelling-variant
+68	◡	des	word	509 p2-3	H		
+69	◡	con	word	509 p2-3	H		
+70	◡	gouverneur	word	509 p2-3	H	conflict: 509 p2-3=gouverneur vs gouverne	spelling-variant
+71	◡	quil	word	509 p2-3	H		
+72	◡	authorite	word	509 p2-3	H	conflict: 509 p2-3=authorite vs autorite	spelling-variant
+73	◡	officier	word	509 p2-3	H		
+74	◡	peu	word	509 p2-3	H	conflict: 509 p2-3=peu vs pece	spelling-variant
+75	◡	te	syllable	509 p2-3	H		
+76	◡	cu	word	509 p2-3	H		
+77	◡	premier	word	509 p2-3	H		
+78	◡	nous	word	509 p2-3	H		
+79	◡	marche	word	509 p2-3	H	conflict: 509 p2-3=marche vs malheur	other
+80	◡	union	word	509 p2-3	H		
+81	◡	auroc?i	word	509 p2-3	H	conflict: 509 p2-3=auroc?i vs auroci	identical-after-normalisation
+82	◡	xa	syllable	509 p2-3	H		
+83	◡	necessite	word	509 p2-3	H		
+84	◡	quo	syllable	509 p2-3	H		
+85	◡	se?rtir	syllable	509 p2-3	H		
+86	◡	vrules	word	509 p2-3	H	conflict: 509 p2-3=vrules vs voules	spelling-variant
+87	◡	z?el	word	509 p2-3	H	conflict: 509 p2-3=z?el vs zel	identical-after-normalisation
+88	◡	temps	word	509 p2-3	H		
+89	◡	sient	word	509 p2-3	H	conflict: 509 p2-3=sient vs vient	spelling-variant
+90	◡	sous	word	509 p2-3	H	conflict: 509 p2-3=sous vs vous	spelling-variant
+91	◡	sort	word	509 p2-3	H		
+92	◡	zu	word	509 p2-3	H		
+93	◡	semble	word	509 p2-3	H		
+94	◡	*ru	syllable	509 p2-3	H		
+95	◡	*ous	word	509 p2-3	H	conflict: 509 p2-3=*ous vs vous	spelling-variant
+96	◡	esmoigne	word	509 p2-3	H	conflict: 509 p2-3=esmoigne vs tesmoigne	spelling-variant
+97	◡	ur,ou,une	word	509 p2-3	H	conflict: 509 p2-3=ur,ou,une vs un,ou,one	spelling-variant
+98	◡	r?a	word	509 p2-3	H		
+99	◡	sa	syllable	509 p2-3	H		
+100	◡	que	word	509 p2-3	H		
+1		alliance	word	509 p2-3	H		
+2		entreprise	word	509 p2-3	H		
+3		fonde	word	509 p2-3	H		
+4		he	word	509 p2-3	H		
+5		ji	syllable	509 p2-3	H		
+6		incommode	word	509 p2-3	H		
+7		ailleurs	word	509 p2-3	H		
+8		les	word	509 p2-3	H		
+9		honnerte	word	509 p2-3	H	conflict: 509 p2-3=honnerte vs honneste	spelling-variant
+10		crou	word	509 p2-3	H	conflict: 509 p2-3=crou vs croy	spelling-variant
+11		ge	syllable	509 p2-3	H		
+12		encore	word	509 p2-3	H		
+13		lors	word	509 p2-3	H		
+14		este,ou,este	word	509 p2-3	H	conflict: 509 p2-3=este,ou,este vs estre,ou,este	spelling-variant
+15		lo	syllable	509 p2-3	H		
+16		ayme	word	509 p2-3	H		
+17		en	word	509 p2-3	H		
+18		c'est	word	509 p2-3	H	conflict: 509 p2-3=c'est vs et	other
+19		fu	word	509 p2-3	H		
+20		dire	word	509 p2-3	H		
+21		aller	word	509 p2-3	H		
+22		tt	word	509 p2-3	H	conflict: 509 p2-3=tt vs et	spelling-variant
+23		Intelligence	word	509 p2-3	H		
+24		ambition	word	509 p2-3	H		
+25		des	word	509 p2-3	H		
+26		et	word	509 p2-3	H		
+27		hi	syllable	509 p2-3	H		
+28		pour	word	509 p2-3	H		
+29		pui	word	509 p2-3	H	conflict: 509 p2-3=pui vs puis	identical-after-normalisation
+30		Jay reec?u lam?rdau	word	509 p2-3	H	conflict: 509 p2-3=Jay reec?u lam?rdau vs jayrceuc?u ladre du	same-code-different-meaning
+31		pas,ou,point	word	509 p2-3	H		
+32		obliger	word	509 p2-3	H		
+33		faire	word	509 p2-3	H		
+34		laisse	word	509 p2-3	H		
+35		parmy	word	509 p2-3	H		
+36		pi	syllable	509 p2-3	H		
+37		ju	word	509 p2-3	H	conflict: 509 p2-3=ju vs nous	other
+38		on	word	509 p2-3	H		
+39		hayr	word	509 p2-3	H	conflict: 509 p2-3=hayr vs haÿr	identical-after-normalisation
+40		passage	word	509 p2-3	H		
+41		composition	word	509 p2-3	H		
+42		favorable	word	509 p2-3	H		
+43		Intrigue	word	509 p2-3	H		
+44		pense	word	509 p2-3	H		
+45		qui	syllable	509 p2-3	H		
+46		inamtenanc	word	509 p2-3	H	conflict: 509 p2-3=inamtenanc vs maintenant	same-code-different-meaning
+47		oppeser	word	509 p2-3	H	conflict: 509 p2-3=oppeser vs opposer	spelling-variant
+48		pourquoy	word	509 p2-3	H		
+49		pu	syllable	509 p2-3	H		
+50		go	syllable	509 p2-3	H		
+51		je	word	509 p2-3	H		
+52		lu	syllable	509 p2-3	H		
+53		les	word	509 p2-3	H		
+54		luy	word	509 p2-3	H		
+55		personne	word	509 p2-3	H		
+56		boyage	word	509 p2-3	H	conflict: 509 p2-3=boyage vs votage	spelling-variant
+57		bous	word	509 p2-3	H	conflict: 509 p2-3=bous vs vous	spelling-variant
+58		croyane	word	509 p2-3	H		
+59		fe	word	509 p2-3	H		
+60		comme	word	509 p2-3	H		
+61		confiri	word	509 p2-3	H		
+62		esloigne	word	509 p2-3	H		
+63		francois	word	509 p2-3	H		
+64		appartiene	word	509 p2-3	H	conflict: 509 p2-3=appartiene vs appartient	spelling-variant
+65		fi?a	syllable	509 p2-3	H	conflict: 509 p2-3=fi?a vs ha	spelling-variant
+66		gi	syllable	509 p2-3	H		
+67		Dommage	word	509 p2-3	H		
+68		appartenir	word	509 p2-3	H		
+69		Cavalerie	word	509 p2-3	H	conflict: 509 p2-3=Cavalerie vs cavallerie	spelling-variant
+70		approche	word	509 p2-3	H		
+71		jo	syllable	509 p2-3	H		
+72		librement	word	509 p2-3	H	conflict: 509 p2-3=librement vs libremene	spelling-variant
+73		entre	word	509 p2-3	H		
+74		si	syllable	509 p2-3	H	conflict: 509 p2-3=si vs fi	spelling-variant
+75		esperance	word	509 p2-3	H		
+76		z?u	word	509 p2-3	H	conflict: 509 p2-3=z?u vs eu	spelling-variant
+77		commenc	word	509 p2-3	H	conflict: 509 p2-3=commenc vs commerce	spelling-variant
+78		homme	word	509 p2-3	H		
+79		fin	word	509 p2-3	H		
+80		flamand	word	509 p2-3	H		
+81		Intention	word	509 p2-3	H		
+82		que	word	509 p2-3	H		
+83		obligation	word	509 p2-3	H		
+84		Ru	syllable	509 p2-3	H		
+85		nonobstanc	word	509 p2-3	H	conflict: 509 p2-3=nonobstanc vs nonobt?tane	spelling-variant
+86		quelque	word	509 p2-3	H		
+87		Jalourie	word	509 p2-3	H	conflict: 509 p2-3=Jalourie vs jalousi?e?	spelling-variant
+88		protection	word	509 p2-3	H		
+89		ro	word	509 p2-3	H		
+90		me	syllable	509 p2-3	H		
+91		occasion	word	509 p2-3	H		
+92		quil	word	509 p2-3	H		
+93		venir,ou,venu	word	509 p2-3	H	conflict: 509 p2-3=venir,ou,venu vs venir,ou,veny	spelling-variant
+94		vi	syllable	509 p2-3	H		
+95		nouvelle	word	509 p2-3	H		
+96		republique	word	509 p2-3	H		
+97		sans	word	509 p2-3	H		
+98		party	word	509 p2-3	H		
+99		ordre	word	509 p2-3	H		
+100		mo	syllable	509 p2-3	H		
+1	+	appuy	word	509 p2-3	H	conflict: 509 p2-3=appuy vs appicy	spelling-variant
+2	+	donner	word	509 p2-3	H		
+3	+	di	syllable	509 p2-3	H		
+4	+	les	word	509 p2-3	H		
+5	+	luy	word	509 p2-3	H		
+6	+	garnison	word	509 p2-3	H		
+7	+	m eilleur	word	509 p2-3	H	conflict: 509 p2-3=m eilleur vs meilleur	identical-after-normalisation
+8	+	nu	word	509 p2-3	H		
+9	+	qui	syllable	509 p2-3	H		
+10	+	attache	word	509 p2-3	H		
+11	+	Joindre	word	509 p2-3	H		
+12	+	vous	word	509 p2-3	H		
+13	+	doic	word	509 p2-3	H		
+14	+	troubler	word	509 p2-3	H		
+15	+	des	word	509 p2-3	H		
+16	+	importanc	word	509 p2-3	H	conflict: 509 p2-3=importanc vs importane	spelling-variant
+17	+	apparance	word	509 p2-3	H		
+18	+	veritable	word	509 p2-3	H		
+19	+	cela	word	509 p2-3	H		
+20	+	ho	syllable	509 p2-3	H		
+21	+	jamait	word	509 p2-3	H	conflict: 509 p2-3=jamait vs jamais	spelling-variant
+22	+	M^r,ou,M^rs	word	509 p2-3	H	conflict: 509 p2-3=M^r,ou,M^rs vs morc?,ou,m.^rs	spelling-variant
+23	+	quelque	word	509 p2-3	H		
+24	+	quil	word	509 p2-3	H		
+25	+	ses	word	509 p2-3	H	conflict: 509 p2-3=ses vs generaux	other
+26	+	et	word	509 p2-3	H		
+27	+	po	syllable	509 p2-3	H		
+28	+	fort	word	509 p2-3	H	conflict: 509 p2-3=fort vs mande	other
+29	+	heure	word	509 p2-3	H		
+30	+	que	word	509 p2-3	H		
+31	+	gu	syllable	509 p2-3	H		
+32	+	commandem^*	word	509 p2-3	H	conflict: 509 p2-3=commandem^* vs commandom*	spelling-variant
+33	+	luy	word	509 p2-3	H		
+34	+	office	word	509 p2-3	H		
+35	+	do	syllable	509 p2-3	H		
+36	+	quel	word	509 p2-3	H		
+37	+	nous	word	509 p2-3	H		
+38	+	mande	word	509 p2-3	H		
+39	+	commerce	word	509 p2-3	H		
+40	+	ma	syllable	509 p2-3	H		
+41	+	preleru	word	509 p2-3	H	conflict: 509 p2-3=preleru vs presene	same-code-different-meaning
+42	+	puis	word	509 p2-3	H		
+43	+	quand	word	509 p2-3	H		
+44	+	mort	word	509 p2-3	H		
+45	+	mariage	word	509 p2-3	H	conflict: 509 p2-3=mariage vs marcuye	same-code-different-meaning
+46	+	argenc	word	509 p2-3	H	conflict: 509 p2-3=argenc vs argent	spelling-variant
+47	+	da	syllable	509 p2-3	H		
+48	+	garde	word	509 p2-3	H		
+49	+	doresnauent	word	509 p2-3	H		
+50	+	fa	syllable	509 p2-3	H		
+51	+	interest	word	509 p2-3	H		
+52	+	ja	syllable	509 p2-3	H		
+53	+	exclusion	word	509 p2-3	H		
+54	+	asseurement	word	509 p2-3	H	conflict: 509 p2-3=asseurement vs asseuremence	spelling-variant
+55	+	c'est	word	509 p2-3	H		
+56	+	eserire	word	509 p2-3	H		
+57	+	li	syllable	509 p2-3	H		
+58	+	libre	word	509 p2-3	H		
+59	+	de	syllable	509 p2-3	H		
+60	+	dovienc	word	509 p2-3	H		
+61	+	attaque	word	509 p2-3	H		
+62	+	vostre	word	509 p2-3	H		
+63	+	fortemeru	word	509 p2-3	H	conflict: 509 p2-3=fortemeru vs fortemene	spelling-variant
+64	+	xe	syllable	509 p2-3	H		
+65	+	vous	word	509 p2-3	H		
+66	+	yoeux	word	509 p2-3	H		
+67	+	Z	word	509 p2-3	H		
+68	+	xi	syllable	509 p2-3	H		
+69	+	xo	syllable	509 p2-3	H		
+70	+	zele	word	509 p2-3	H	conflict: 509 p2-3=zele vs ya	same-meaning-different-code
+79	^	Matheur	word	509 p1	H		
+62	^	mauvai	word	509 p1	H		
+7	+	meilleur	word	509 p1	H		
+10	''	mene	word	509 p1	H		
+51	''	ministre	word	509 p1	H		
+4	◡	mes	word	509 p1	H		
+48	◡	mesmes	word	509 p1	H		
+22	+	mons,ou,M^rs	word	509 p1	H		
+50	◡	monu	word	509 p1	H		
+44	+	mort	word	509 p1	H		
+40	..	moÿon	word	509 p1	H		
+1	..	NA	syllable	509 p1	H		
+52	^	ne	syllable	509 p1	H		
+52	''	ni	syllable	509 p1	H		
+56	◡	no	syllable	509 p1	H		
+8	+	nu	word	509 p1	H		
+17	''	negotiacion	word	509 p1	H		
+69	''	negotier	word	509 p1	H		
+43	◡	necessaire	word	509 p1	H		
+83	◡	necessite	word	509 p1	H		
+85		nonostane	word	509 p1	H		
+50	''	non	word	509 p1	H		
+35	''	nostre	word	509 p1	H		
+73	^	nos	word	509 p1	H		
+18	..	nous	word	509 p1	H		
+25	..	nous	word	509 p1	H		
+26	^	nous	word	509 p1	H		
+25	''	nous	word	509 p1	H		
+78	◡	nous	word	509 p1	H		
+37		nous	word	509 p1	H		
+95		nouvelle	word	509 p1	H		
+30	''	nutralite	word	509 p1	H		
+75	^	nuire	word	509 p1	H		
+38		On	word	509 p1	H		
+32		obliger	word	509 p1	H		
+83		obligation	word	509 p1	H		
+91		occasion	word	509 p1	H		
+34	+	office	word	509 p1	H		
+73	◡	officier	word	509 p1	H		
+28	◡	opinion	word	509 p1	H		
+47		opposer	word	509 p1	H		
+99		ordre	word	509 p1	H		
+45	''	ordinaire	word	509 p1	H		
+6	◡	outre	word	509 p1	H		
+51	◡	ourage	word	509 p1	H		
+59	^	ou	word	509 p1	H		
+20	''	PA	syllable	509 p1	H		
+23	◡	pe	syllable	509 p1	H		
+36		pi	syllable	509 p1	H		
+27	+	po	syllable	509 p1	H		
+49		ou	word	509 p1	H		
+40		passage	word	509 p1	H		
+31		pas,ou,point	word	509 p1	H		
+25	◡	particuliere	word	509 p1	H		
+98		party	word	509 p1	H		
+35		parmy	word	509 p1	H		
+11	..	passion	word	509 p1	H		
+14	^	parlement	word	509 p1	H		
+63	^	peÿne	word	509 p1	H		
+44		pense	word	509 p1	H		
+32	◡	pendant	word	509 p1	H		
+74	◡	peu	word	509 p1	H		
+55		pesonne	word	509 p1	H		
+53	''	plus	word	509 p1	H		
+5	''	place	word	509 p1	H		
+26	''	plaisir	word	509 p1	H		
+68	''	pounoit	word	509 p1	H		
+37	◡	posse	word	509 p1	H		
+48		pourquoy	word	509 p1	H		
+27	◡	port	word	509 p1	H		
+28		pour	word	509 p1	H		
+33	''	pour	word	509 p1	H		
+39	◡	pour	word	509 p1	H		
+32	..	pour	word	509 p1	H		
+88		protection	word	509 p1	H		
+77	◡	premier	word	509 p1	H		
+31	◡	principal	word	509 p1	H		
+41	+	present	word	509 p1	H		
+40	◡	presse	word	509 p1	H		
+77	''	proposition	word	509 p1	H		
+28	''	propre	word	509 p1	H		
+42	''	puissant	word	509 p1	H		
+39	''	puis	word	509 p1	H		
+42	+	puis	word	509 p1	H		
+29		puis	word	509 p1	H		
+38	..	puis	word	509 p1	H		
+45	''	QUA	syllable	509 p1	H		
+82		que	word	509 p1	H		
+45		qui	syllable	509 p1	H		
+84	◡	quo	syllable	509 p1	H		
+39	..	quu	syllable	509 p1	H		
+43	+	Quand	word	509 p1	H		
+35	..	quon	word	509 p1	H		
+2	..	que	word	509 p1	H		
+1	^	que	word	509 p1	H		
+8	''	que	word	509 p1	H		
+74	''	que	word	509 p1	H		
+47	◡	que	word	509 p1	H		
+100	◡	que	word	509 p1	H		
+30	+	que	word	509 p1	H		
+76	''	quatre	word	509 p1	H		
+36	+	quel	word	509 p1	H		
+58	◡	quel	word	509 p1	H		
+12	''	quel	word	509 p1	H		
+67	^	quel	word	509 p1	H		
+27	^	quel	word	509 p1	H		
+21	..	quel	word	509 p1	H		
+30+^^	RAW	quelque	word	509 p1	H		
+72	^	quelque	word	509 p1	H		
+27	..	quelque	word	509 p1	H		
+45	◡	quelque	word	509 p1	H		
+23	+	quelque	word	509 p1	H		
+86		quelque	word	509 p1	H		
+9	+	qui	syllable	509 p1	H		
+15	''	qui	syllable	509 p1	H		
+23	^	qui	syllable	509 p1	H		
+4	..	qui	syllable	509 p1	H		
+49	''	qui	syllable	509 p1	H		
+24	+	quil	word	509 p1	H		
+41	''	quil	word	509 p1	H		
+68	^	quil	word	509 p1	H		
+26	..	quil	word	509 p1	H		
+71	◡	quil	word	509 p1	H		
+92		quil	word	509 p1	H		
+74	^	quoy	word	509 p1	H		
+48	''	RA	syllable	509 p1	H		
+31	^	re	syllable	509 p1	H		
+33	..	ri	syllable	509 p1	H		
+89		ro	word	509 p1	H		
+84		ru	syllable	509 p1	H		
+23	..	rien	word	509 p1	H		
+96		republique	word	509 p1	H		
+46	◡	reünir	word	509 p1	H		
+31	''	ruine	word	509 p1	H		
+38	''	reüssie	word	509 p1	H		
+99	◡	SA	syllable	509 p1	H		
+44	◡	se	syllable	509 p1	H		
+32	''	si	syllable	509 p1	H		
+48	^	so	syllable	509 p1	H		
+32	^	su	syllable	509 p1	H		
+27		sans	word	509 p1	H		
+47	''	satisfait	word	509 p1	H		
+16	^	sentiment	word	509 p1	H		
+69	^	secours	word	509 p1	H		
+42	^	ses	word	509 p1	H		
+7	^	ses	word	509 p1	H		
+25	+	ses	word	509 p1	H		
+49	◡	ses	word	509 p1	H		
+93	◡	semble	word	509 p1	H		
+35	◡	seurement	word	509 p1	H		
+42	◡	sieur	word	509 p1	H		
+85	◡	sortir	word	509 p1	H		
+17	^	son	word	509 p1	H		
+6	^	sous	word	509 p1	H		
+91	◡	sort	word	509 p1	H		
+98	◡	TA	syllable	509 p1	H		
+75	◡	te	syllable	509 p1	H		
+41	◡	ti	syllable	509 p1	H		
+43	''	to	syllable	509 p1	H		
+33	^	tu	syllable	509 p1	H		
+39	^	taschera	word	509 p1	H		
+76	^	tant	word	509 p1	H		
+44	''	tellement	word	509 p1	H		
+88	◡	temps	word	509 p1	H		
+36	◡	tenir	word	509 p1	H		
+96	◡	tesmoigne	word	509 p1	H		
+38	◡	tous	word	509 p1	H		
+40	''	tous	word	509 p1	H		
+37	^	tous	word	509 p1	H		
+31	..	tous	word	509 p1	H		
+44	^	tout	word	509 p1	H		
+77	^	touchant	word	509 p1	H		
+13	''	traicte	word	509 p1	H		
+70	^	trop	word	509 p1	H		
+18	^	troupe	word	509 p1	H		
+53	◡	troubles	word	509 p1	H		
+14	+	troubler	word	509 p1	H		
+45	^	trouvant	word	509 p1	H		
+71	^	trouve	word	509 p1	H		
+3	^	VA	syllable	509 p1	H		
+34	^	ve	syllable	509 p1	H		
+94		vi	syllable	509 p1	H		
+37	''	vo	syllable	509 p1	H		
+94	◡	vu	syllable	509 p1	H		
+54	◡	vaisseau	word	509 p1	H		
+18	+	verisable	word	509 p1	H		
+47	^	veullent	word	509 p1	H		
+13	^	veille	word	509 p1	H		
+93		veriniu,venu	word	509 p1	H		
+46	^	ville	word	509 p1	H		
+20	^	victoire	word	509 p1	H		
+97	◡	un,ou,une	word	509 p1	H		
+80	◡	union	word	509 p1	H		
+86	◡	voules	word	509 p1	H		
+11	^	vers	word	509 p1	H		
+40	^	veu	word	509 p1	H		
+36	^	vie	word	509 p1	H		
+89	◡	vient	word	509 p1	H		
+56		voyage	word	509 p1	H		
+35	^	veoir	word	509 p1	H		
+90	◡	vous	word	509 p1	H		
+12	+	vous	word	509 p1	H		
+57		vous	word	509 p1	H		
+14	''	vous	word	509 p1	H		
+43	^	vous	word	509 p1	H		
+37	..	vous	word	509 p1	H		
+28	^	vous	word	509 p1	H		
+38	^	vous	word	509 p1	H		
+95	◡	vous	word	509 p1	H		
+65	+	vous	word	509 p1	H		
+62	+	vostre	word	509 p1	H		
+82	◡	XA	syllable	509 p1	H		
+64	+	xe	syllable	509 p1	H		
+68	+	xi	syllable	509 p1	H		
+69	+	xo	syllable	509 p1	H		
+92	◡	xu	syllable	509 p1	H		
+41	^	Y	word	509 p1	H		
+70	+	ya	word	509 p1	H		
+66	+	yoeux	word	509 p1	H		
+67	+	Z	word	509 p1	H		
+87	◡	zel	word	509 p1	H		
+71	+	zele	word	509 p1	H		
+20	ue	<NULL>	other	509 p1	H	null	
+21	ue	<NULL>	other	509 p1	H	null	
+22	ue	<NULL>	other	509 p1	H	null	
+23	ue	<NULL>	other	509 p1	H	null	
+24	ue	<NULL>	other	509 p1	H	null	
+25	ue	<NULL>	other	509 p1	H	null	
+26	ue	<NULL>	other	509 p1	H	null	
+27	ue	<NULL>	other	509 p1	H	null	
+28	ue	<NULL>	other	509 p1	H	null	
+29	ue	<NULL>	other	509 p1	H	null	
+30	ue	<NULL>	other	509 p1	H	null	
+31	ue	<NULL>	other	509 p1	H	null	
+32	ue	<NULL>	other	509 p1	H	null	
+33	ue	<NULL>	other	509 p1	H	null	
+34	ue	<NULL>	other	509 p1	H	null	
+1	=	<NULL>	other	509 p1	H	null	
+2	=	<NULL>	other	509 p1	H	null	
+3	=	<NULL>	other	509 p1	H	null	
+4	=	<NULL>	other	509 p1	H	null	
+5	=	<NULL>	other	509 p1	H	null	
+6	=	<NULL>	other	509 p1	H	null	
+7	=	<NULL>	other	509 p1	H	null	
+8	=	<NULL>	other	509 p1	H	null	
+9	=	<NULL>	other	509 p1	H	null	
+10	=	<NULL>	other	509 p1	H	null	
+11	=	<NULL>	other	509 p1	H	null	
+12	=	<NULL>	other	509 p1	H	null	
+13	=	<NULL>	other	509 p1	H	null	
+14	=	<NULL>	other	509 p1	H	null	
+15	=	<NULL>	other	509 p1	H	null	
+16	=	<NULL>	other	509 p1	H	null	
+17	=	<NULL>	other	509 p1	H	null	
+18	=	<NULL>	other	509 p1	H	null	
+19	=	<NULL>	other	509 p1	H	null	
+20	=	<NULL>	other	509 p1	H	null	
+21	=	<NULL>	other	509 p1	H	null	
+22	=	<NULL>	other	509 p1	H	null	
+28	...	<NULL>	other	509 p1	H	null	
+29	...	<NULL>	other	509 p1	H	null	
+30	...	<NULL>	other	509 p1	H	null	
+31	...	<NULL>	other	509 p1	H	null	
+32	...	<NULL>	other	509 p1	H	null	
+33	...	<NULL>	other	509 p1	H	null	
+34	...	<NULL>	other	509 p1	H	null	
+35	...	<NULL>	other	509 p1	H	null	
+36	...	<NULL>	other	509 p1	H	null	
+37	...	<NULL>	other	509 p1	H	null	
+38	...	<NULL>	other	509 p1	H	null	
+39	...	<NULL>	other	509 p1	H	null	
+40	...	<NULL>	other	509 p1	H	null	
+41	...	<NULL>	other	509 p1	H	null	
+42	...	<NULL>	other	509 p1	H	null	
+43	...	<NULL>	other	509 p1	H	null	
+44	...	<NULL>	other	509 p1	H	null	
+45	...	<NULL>	other	509 p1	H	null	
+46	...	<NULL>	other	509 p1	H	null	
+47	...	<NULL>	other	509 p1	H	null	
+10	m	A	letter	506	H		
+33	co	A	letter	506	H		
+CapitalLetterSCrossedByACrossBar		A	letter	506	H		
+14	m	B	letter	506	H		
+25	co	B	letter	506	H		
+OghamLetterUr		B	letter	506	H		
+21	m	C	letter	506	H		
+14	co	C	letter	506	H	conflict: 506=C vs p	other
+PlusSign		C	letter	506	H		
+11	m	D	letter	506	H		
+28	co	D	letter	506	H		
+CircledMinus		D	letter	506	H		
+28	m	E	letter	506	H		
+10	co	E	letter	506	H		
+Verdigris		E	letter	506	H		
+17	m	F	letter	506	H		
+31	co	F	letter	506	H		
+Soap		F	letter	506	H		
+12	m	G	letter	506	H		
+30	co	G	letter	506	H		
+Arsenic		G	letter	506	H		
+25	m	H	letter	506	H		
+11	co	H	letter	506	H		
+NkoDigitNine		H	letter	506	H		
+19	m	I	letter	506	H		
+32	co	I	letter	506	H		
+Earth		I	letter	506	H		
+23	m	K	letter	506	H		
+18	co	K	letter	506	H		
+InvertedLazySWithCurledEnds		K	letter	506	H		
+20	m	L	letter	506	H		
+12	co	L	letter	506	H		
+TinDominatedByJupiter		L	letter	506	H		
+16	m	M	letter	506	H		
+21	co	M	letter	506	H		
+SmallLetterWWithCenteredVerticalLine		M	letter	506	H		
+30	m	N	letter	506	H		
+15	co	N	letter	506	H		
+CapitalTau		N	letter	506	H		
+32	m	O	letter	506	H		
+27	co	O	letter	506	H		
+Silver		O	letter	506	H		
+33	m	P	letter	506	H		
+14	co	P	letter	506	H	conflict: 506=P vs c	other
+CapitalEpsilon		P	letter	506	H		
+31	m	Q	letter	506	H		
+24	co	Q	letter	506	H		
+CapitalPsi		Q	letter	506	H		
+13	m	R	letter	506	H		
+29	co	R	letter	506	H		
+CapitaslRho		R	letter	506	H		
+29	m	S	letter	506	H		
+16	co	S	letter	506	H		
+TwoLogicalOrOPperator		S	letter	506	H		
+15	m	T	letter	506	H		
+26	co	T	letter	506	H		
+CapitalDelta		T	letter	506	H		
+22	m	V	letter	506	H		
+17	co	V	letter	506	H		
+Gamma		V	letter	506	H		
+27	m	X	letter	506	H		
+22	co	X	letter	506	H		
+CapitalPi		X	letter	506	H		
+24	m	Y	letter	506	H		
+19	co	Y	letter	506	H		
+CapitalEta		Y	letter	506	H		
+18	m	Z	letter	506	H		
+23	co	Z	letter	506	H		
+ReversedCapitalPsi		Z	letter	506	H		
+26	m	W?	letter	506	H		
+20	co	W?	letter	506	H		
+ReversedCapitalEpsilon		W?	letter	506	H		
+20		Le Roy	person	506	H		
+26		la Reyne	person	506	H		
+23		la Reyne mere	person	506	H		
+21		M^r <ABBR Monsieur> le d. Danine	person	506	H	conflict: 506=M^r <ABBR Monsieur> le d. Danine vs le duc danjou	spelling-variant
+28		M^r <ABBR Monsieur> le D. Dorleans	person	506	H	conflict: 506=M^r <ABBR Monsieur> le D. Dorleans vs m^r <abbr monsieur> le duc dorleans	identical-after-normalisation
+22		Madame	person	506	H		
+24		M^r <ABBR Monsieur> le Prince	person	506	H		
+35		M^r <ABBR Monsieur> la Princesse	person	506	H	conflict: 506=M^r <ABBR Monsieur> la Princesse vs m^e la princesse	identical-after-normalisation
+31		M^r <ABBR Monsieur> L. D. Denguein	person	506	H	conflict: 506=M^r <ABBR Monsieur> L. D. Denguein vs m^r <abbr monsieur> le d. danguein	spelling-variant
+25		M^r <ABBR Monsieur> le P. Delonty	person	506	H		
+27		M^r <ABBR Monsieur> Delonquevilles	person	506	H	conflict: 506=M^r <ABBR Monsieur> Delonquevilles vs m^r <abbr monsieur> delonqueville	identical-after-normalisation
+29		M^r <ABBR Monsieur> le Cand D Rer?	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Cand D Rer? vs m^r <abbr monsieur> le c^al <abbr cardinal> de rer	same-code-different-meaning
+38		M^r <ABBR Monsieur> Dehandormes	person	506	H	conflict: 506=M^r <ABBR Monsieur> Dehandormes vs m^r <abbr monsieur> debandorme	spelling-variant
+40		M^r <ABBR Monsieur> De Mercoeur	person	506	H		
+33		M^r <ABBR Monsieur> D. Bev*ufort	person	506	H	conflict: 506=M^r <ABBR Monsieur> D. Bev*ufort vs m^r <abbr monsieur> de meaufort	same-code-different-meaning
+42		M^r <ABBR Monsieur> le Deloraine	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Deloraine vs m^r <abbr monsieur> le d. deloraine	identical-after-normalisation
+30		le Prince francoci	person	506	H	conflict: 506=le Prince francoci vs m^r <abbr monsieur> le p. francois	spelling-variant
+46		le Prince Charles	person	506	H	conflict: 506=le Prince Charles vs m^r <abbr monsieur> les d charles	identical-after-normalisation
+43		M^r <ABBR Monsieur> De Guise	person	506	H	conflict: 506=M^r <ABBR Monsieur> De Guise vs m^r <abbr monsieur> le d. de guise	identical-after-normalisation
+45		M^r <ABBR Monsieur> Delboeut	person	506	H	conflict: 506=M^r <ABBR Monsieur> Delboeut vs m^r <abbr monsieur> le d. delboeuf	spelling-variant
+32		M^r <ABBR Monsieur> le Conte Dharqur	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Conte Dharqur vs m^r <abbr monsieur> le c. d'harcour	same-code-different-meaning
+34		M^r <ABBR Monsieur> le D. DelBoüllon	person	506	H	conflict: 506=M^r <ABBR Monsieur> le D. DelBoüllon vs m^r <abbr monsieur> de movillon	same-code-different-meaning
+47		Le P. De Tharante	person	506	H	conflict: 506=Le P. De Tharante vs m^r <abbr monsieur> le p d tharante	identical-after-normalisation
+36		M^r <ABBR Monsieur> le l. Deloissins	person	506	H	conflict: 506=M^r <ABBR Monsieur> le l. Deloissins vs m^r <abbr monsieur> le c. desoissons	same-code-different-meaning
+37		M^r <ABBR Monsieur> le D. De Mararin	person	506	H	conflict: 506=M^r <ABBR Monsieur> le D. De Mararin vs m^r <abbr monsieur> le duc de maravin	spelling-variant
+39		M^r <ABBR Monsieur> le D. Dennevert	person	506	H	conflict: 506=M^r <ABBR Monsieur> le D. Dennevert vs m^r <abbr monsieur> de manciry	same-code-different-meaning
+41		M^r <ABBR Monsieur> le D, Dehiehetieu	person	506	H	conflict: 506=M^r <ABBR Monsieur> le D, Dehiehetieu vs m^r <abbr monsieur> le d. richelieu	same-code-different-meaning
+44		l'Arche zum De Rhodes	person	506	H	conflict: 506=l'Arche zum De Rhodes vs l'archeves^e de rhodes	same-code-different-meaning
+48		transcription le Mar^al De villeroy	person	506	H	conflict: 506=transcription le Mar^al De villeroy vs m^r <abbr monsieur> le m^al de villeroy	same-code-different-meaning
+50		M^r <ABBR Monsieur> le Mar^al De Turenne	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Mar^al De Turenne vs m^r <abbr monsieur> le m^al de turenne	spelling-variant
+56		M^r <ABBR Monsieur> le Mar^al Daumont	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Mar^al Daumont vs m^r <abbr monsieur> le m^al daumone	same-code-different-meaning
+60		M^r <ABBR Monsieur> le Mar^al Delaforte	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Mar^al Delaforte vs m^r <abbr monsieur> le m^al delaferte	same-code-different-meaning
+49		M^r <ABBR Monsieur> le Mar^al De Gramont	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Mar^al De Gramont vs m^r <abbr monsieur> le m^al de gramoru	same-code-different-meaning
+57		M^r <ABBR Monsieur> le Mar^al De Schulemberg	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Mar^al De Schulemberg vs m^r <abbr monsieur> le m^al de t*hulemberg	same-code-different-meaning
+55		M^r <ABBR Monsieur> le Mar^al De Fabert	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Mar^al De Fabert vs m^r <abbr monsieur> le m^al fabert	spelling-variant
+56	'	M^r <ABBR Monsieur> le Mar^al D'auquincourt	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Mar^al D'auquincourt vs le m^al dauqini court	same-code-different-meaning
+34	'	M^r <ABBR Monsieur> Brienne	person	506	H	conflict: 506=M^r <ABBR Monsieur> Brienne vs le c. de brienne	identical-after-normalisation
+40	'	M^r <ABBR Monsieur> le Tellier	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Tellier vs m^r <abbr monsieur> le tellter	spelling-variant
+32	'	M^r <ABBR Monsieur> lel. Delharost	person	506	H	conflict: 506=M^r <ABBR Monsieur> lel. Delharost vs le c. de charo**	same-code-different-meaning
+33	'	M^r <ABBR Monsieur> lel. Der. Aignan	person	506	H	conflict: 506=M^r <ABBR Monsieur> lel. Der. Aignan vs le c. de s^t argnan	same-code-different-meaning
+48	'	M^r <ABBR Monsieur> - D;estrades	person	506	H	conflict: 506=M^r <ABBR Monsieur> - D;estrades vs m^r <abbr monsieur> d'estrades	spelling-variant
+59	'	M^r <ABBR Monsieur> Dethou	person	506	H	conflict: 506=M^r <ABBR Monsieur> Dethou vs m^r <abbr monsieur> de thou	spelling-variant
+60	'	M^r <ABBR Monsieur> Delumbres	person	506	H	conflict: 506=M^r <ABBR Monsieur> Delumbres vs m^r <abbr monsieur> de lumbres	spelling-variant
+50	'	M^r <ABBR Monsieur> De Chatillon	person	506	H	conflict: 506=M^r <ABBR Monsieur> De Chatillon vs mad^e de chatillon	same-code-different-meaning
+51	'	M^r <ABBR Monsieur> De Boutevilles	person	506	H	conflict: 506=M^r <ABBR Monsieur> De Boutevilles vs m^r <abbr monsieur> de bouteville	identical-after-normalisation
+51		M^r <ABBR Monsieur> Sovequet	person	506	H	conflict: 506=M^r <ABBR Monsieur> Sovequet vs m^r <abbr monsieur> fouquet	spelling-variant
+59		M^r <ABBR Monsieur> Sabbefouquet	person	506	H	conflict: 506=M^r <ABBR Monsieur> Sabbefouquet vs l'abbe fouquet	spelling-variant
+61		M^r <ABBR Monsieur> le Pr. Presidene	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Pr. Presidene vs le prem^ce presidene	same-code-different-meaning
+52		Le Parlemene	person	506	H		
+53		La chamd, De Justice	person	506	H	conflict: 506=La chamd, De Justice vs la chambre de justice	same-code-different-meaning
+68		le Prev?ost de Mart	person	506	H	conflict: 506=le Prev?ost de Mart vs le prevott des marchand	same-code-different-meaning
+58		Le Meh*****	person	506	H	conflict: 506=Le Meh***** vs les l?seheunis	same-code-different-meaning
+64		Le Roy D Angleterre	person	506	H	conflict: 506=Le Roy D Angleterre vs le roy danyleterre	spelling-variant
+71		la Royne Danyro	person	506	H	conflict: 506=la Royne Danyro vs la reyne dasty leterre	same-code-different-meaning
+66		la Royne merc Dasnre	person	506	H	conflict: 506=la Royne merc Dasnre vs la reyne merc dany^re	same-code-different-meaning
+62		le Duc Diorck	person	506	H	conflict: 506=le Duc Diorck vs m^r <abbr monsieur> le duc dyorck	spelling-variant
+65		M^r <ABBR Monsieur> ord hayde Chance	person	506	H	conflict: 506=M^r <ABBR Monsieur> ord hayde Chance vs m^ad hayde chance	spelling-variant
+63		le Gen^al Monek	person	506	H	conflict: 506=le Gen^al Monek vs m^r <abbr monsieur> le gñal monck	spelling-variant
+70		M^r <ABBR Monsieur> le D. Dormone	person	506	H	conflict: 506=M^r <ABBR Monsieur> le D. Dormone vs m^r <abbr monsieur> d. dormone	identical-after-normalisation
+69		M^r <ABBR Monsieur> le l. De Bastille	person	506	H	conflict: 506=M^r <ABBR Monsieur> le l. De Bastille vs m^r <abbr monsieur> lel de britolle	same-code-different-meaning
+72		M^r <ABBR Monsieur> le d. Sandutch	person	506	H	conflict: 506=M^r <ABBR Monsieur> le d. Sandutch vs m^r <abbr monsieur> lec sandivich	same-code-different-meaning
+73		M^r <ABBR Monsieur> le C De Menchettor	person	506	H	conflict: 506=M^r <ABBR Monsieur> le C De Menchettor vs m^r <abbr monsieur> lec de menchester	same-code-different-meaning
+74		M^r <ABBR Monsieur> lel Derh Albante	person	506	H	conflict: 506=M^r <ABBR Monsieur> lel Derh Albante vs m^r <abbr monsieur> lec de* albance	same-code-different-meaning
+12	'	M^r <ABBR Monsieur> le Secr^re Niolas	person	506	H	conflict: 506=M^r <ABBR Monsieur> le Secr^re Niolas vs m^r <abbr monsieur> les seer^re nicolas	spelling-variant
+15	'	M^r <ABBR Monsieur> le se^re Maurice	person	506	H	conflict: 506=M^r <ABBR Monsieur> le se^re Maurice vs m^r <abbr monsieur> les sce^re maurice	spelling-variant
+30	'	le Pape	person	506	H		
+54		l'empereur	person	506	H		
+67		l'Imperatrice	person	506	H		
+24	'	l'empire	person	506	H		
+10	'	le Roy Despayne	person	506	H		
+20	'	la Repr?e Despayne	person	506	H	conflict: 506=la Repr?e Despayne vs la reune d'espay^e	same-code-different-meaning
+11	'	l'Infante Despayne	person	506	H	conflict: 506=l'Infante Despayne vs l'infante desp^ne	spelling-variant
+25	'	Dom Juan Daustriche	person	506	H	conflict: 506=Dom Juan Daustriche vs d. juan daustriche	same-code-different-meaning
+13	'	la Maison Daustriche	person	506	H	conflict: 506=la Maison Daustriche vs la maison d'austrieche	spelling-variant
+14	'	M^r <ABBR Monsieur> Ministre desp^re	person	506	H	conflict: 506=M^r <ABBR Monsieur> Ministre desp^re vs m^r <abbr monsieur> le mini^*e despag.^e	same-code-different-meaning
+16	'	Don estavun de Gamare	person	506	H	conflict: 506=Don estavun de Gamare vs d. estavane de gamara	same-code-different-meaning
+19	'	le Ma de laraseene	person	506	H	conflict: 506=le Ma de laraseene vs m^r <abbr monsieur> de carascene	same-code-different-meaning
+41	'	M^r <ABBR Monsieur> De Batteierlle	person	506	H	conflict: 506=M^r <ABBR Monsieur> De Batteierlle vs m^r <abbr monsieur> de batteville	same-code-different-meaning
+37	'	Don Castel Rodriyo	person	506	H	conflict: 506=Don Castel Rodriyo vs d. castel rodrigo	same-code-different-meaning
+43	'	le l. DePigneranda	person	506	H	conflict: 506=le l. DePigneranda vs le c. de pigneranda	same-code-different-meaning
+54	'	M^r <ABBR Monsieur> De Mavern	person	506	H	conflict: 506=M^r <ABBR Monsieur> De Mavern vs m^r <abbr monsieur> de marciri	same-code-different-meaning
+26	'	le Roy de Suede	person	506	H	conflict: 506=le Roy de Suede vs le roy e suede	spelling-variant
+44	'	la Repre de he*dde	person	506	H	conflict: 506=la Repre de he*dde vs la reyne de svede	same-code-different-meaning
+21	'	la Repne Christine	person	506	H	conflict: 506=la Repne Christine vs la reyne christine	spelling-variant
+36	'	le Roy de Pologne	person	506	H		
+38	'	la Repre de Pologne	person	506	H	conflict: 506=la Repre de Pologne vs la reyne de pologne	spelling-variant
+35	'	le Rody De Portugal	person	506	H	conflict: 506=le Rody De Portugal vs le roy de portugal	same-code-different-meaning
+46	'	le Repne de Portugal	person	506	H	conflict: 506=le Repne de Portugal vs la reyne de portugal	spelling-variant
+22	'	le Roy Damnemart	person	506	H	conflict: 506=le Roy Damnemart vs le roy damnemort	spelling-variant
+23	'	Infante De Portugal	person	506	H	conflict: 506=Infante De Portugal vs ifnante de portugal	spelling-variant
+17	'	l'Archidue leopol	person	506	H	conflict: 506=l'Archidue leopol vs l'archiduc leopol	spelling-variant
+18	'	larch D Inspruck	person	506	H	conflict: 506=larch D Inspruck vs l'arch d'inspruck	spelling-variant
+27	'	le el. De Marence	person	506	H	conflict: 506=le el. De Marence vs le lecteur de mayone	same-code-different-meaning
+49	'	le el De Cologne	person	506	H	conflict: 506=le el De Cologne vs lest. de cologne	same-code-different-meaning
+47	'	le el. de Treve	person	506	H	conflict: 506=le el. de Treve vs lest de treves	same-code-different-meaning
+28	'	le el de Bavierc	person	506	H	conflict: 506=le el de Bavierc vs lesl^our de bavier	same-code-different-meaning
+45	'	le el. de Saxe	person	506	H	conflict: 506=le el. de Saxe vs lest. de saxe	same-code-different-meaning
+39	'	de el. De Brandebourg	person	506	H	conflict: 506=de el. De Brandebourg vs lest. de brandenbourg	same-code-different-meaning
+42	'	de el Palatin	person	506	H	conflict: 506=de el Palatin vs lest. de palatin	same-code-different-meaning
+53	'	le el. De Munster	person	506	H	conflict: 506=le el. De Munster vs l'evesq de munster	same-code-different-meaning
+52	'	le grand Duc	person	506	H		
+57	'	le D. De Parme	person	506	H	conflict: 506=le D. De Parme vs le duc de parme	identical-after-normalisation
+58	'	le D, de Modene	person	506	H	conflict: 506=le D, de Modene vs le duc de modene	identical-after-normalisation
+31	'	le d. De Mantoüe	person	506	H	conflict: 506=le d. De Mantoüe vs le d. de mantove	identical-after-normalisation
+9	'	les estat d' Hollande	person	506	H	conflict: 506=les estat d' Hollande vs m^r <abbr monsieur> les estate d'holl^de	same-code-different-meaning
+29	'	La d^al  Ruit*e	person	506	H	conflict: 506=La d^al  Ruit*e vs lad^al ruiter	same-code-different-meaning
+55	'	M^r <ABBR Monsieur> De *niquefort	person	506	H	conflict: 506=M^r <ABBR Monsieur> De *niquefort vs m^r <abbr monsieur> de viequefort	same-code-different-meaning
+62	'	Amsterdam	ville	506	H		
+63	'	anuers	ville	506	H	conflict: 506=anuers vs januert	spelling-variant
+64	'	Bordeaux	ville	506	H		
+67	'	Bayonne	ville	506	H		
+65	'	Boulongne	ville	506	H	conflict: 506=Boulongne vs boulonge	spelling-variant
+66	'	Bruxelles	ville	506	H		
+68	'	Bristolla	ville	506	H	conflict: 506=Bristolla vs britolles	spelling-variant
+61	'	Calais	ville	506	H	conflict: 506=Calais vs amsterdam	other
+72	'	Cambray	ville	506	H		
+71	'	Cologne	ville	506	H		
+69	'	Douvre	ville	506	H	conflict: 506=Douvre vs douu?ves	spelling-variant
+83	'	Dunkerke	ville	506	H	conflict: 506=Dunkerke vs roüen	other
+88	'	Dieppes	ville	506	H	conflict: 506=Dieppes vs dieppe	identical-after-normalisation
+79	'	Sranefort	ville	506	H	conflict: 506=Sranefort vs francfort	spelling-variant
+73	'	hambourg	ville	506	H		
+75	'	lahaye	ville	506	H	conflict: 506=lahaye vs la haye	spelling-variant
+84	'	lehavre	ville	506	H	conflict: 506=lehavre vs la havre	spelling-variant
+74	'	lisbonne	ville	506	H		
+76	'	lion	ville	506	H		
+87	'	londres	ville	506	H		
+78	'	Marseilles	ville	506	H	conflict: 506=Marseilles vs marseille	identical-after-normalisation
+80	'	Madrid	ville	506	H		
+70	'	Peronne	ville	506	H	conflict: 506=Peronne vs pronne	spelling-variant
+86	'	Paros	ville	506	H	conflict: 506=Paros vs paris	spelling-variant
+77	'	la Rochelle	ville	506	H		
+83	'	Roüen	ville	506	H	conflict: 506=Roüen vs dunkerke	other
+81	'	Vesminister	ville	506	H		
+82	'	Vienne	ville	506	H		
+89	'	Veniles	ville	506	H	conflict: 506=Veniles vs venise	spelling-variant
+96	'	l'Angleterre	royaume	506	H		
+99	'	la Cathalogne	royaume	506	H		
+10^'0	RAW	le Danmnemarc	royaume	506	H		
+98	'	l'espagne	royaume	506	H	conflict: 506=l'espagne vs le spagne	spelling-variant
+10^'6	RAW	l'escosse	royaume	506	H		
+91	'	le france	royaume	506	H	conflict: 506=le france vs la france	identical-after-normalisation
+97	'	la frandre	royaume	506	H	conflict: 506=la frandre vs la slandres	spelling-variant
+93	'	la hollande	royaume	506	H		
+10^'1	RAW	la luivnie	royaume	506	H		
+10^'4	RAW	l'Italie	royaume	506	H		
+10^'5	RAW	l'irlande	royaume	506	H		
+90	'	la Pologne	royaume	506	H		
+95	'	le Portugal	royaume	506	H		
+10^'3	RAW	la Pruce	royaume	506	H		
+10^'7	RAW	la Pommeranie	royaume	506	H		
+92	'	la suede	royaume	506	H	conflict: 506=la suede vs la svede	identical-after-normalisation
+10^'8	RAW	l;Alsace	royaume	506	H		
+94	'	la *elande	royaume	506	H	conflict: 506=la *elande vs la zelande	spelling-variant
+10^'2	RAW	la Mscovie	royaume	506	H		
+7__6__	RAW	M^r <ABBR Monsieur> Williamson	word	506	H		
+13	..	Au	word	506	H		
+19	..	about	word	506	H	conflict: 506=about vs about?e?	spelling-variant
+21	^	accommodem*	word	506	H	conflict: 506=accommodem* vs accommodem^*	identical-after-normalisation
+65	^	auerhissement	word	506	H	conflict: 506=auerhissement vs avertissem^*	same-code-different-meaning
+61	^	affaire	word	506	H		
+16	''	affin	word	506	H		
+12	◡	agir	word	506	H		
+1		alliance	word	506	H		
+7		ailleurs	word	506	H		
+16		ayme	word	506	H		
+21		aller	word	506	H		
+24		ambition	word	506	H		
+68		appartenir	word	506	H		
+64		appartient	word	506	H	conflict: 506=appartient vs appartiene	spelling-variant
+70		approche	word	506	H		
+17	+	apparance	word	506	H		
+1	+	appicy	word	506	H	conflict: 506=appicy vs appuy	spelling-variant
+46	+	argent	word	506	H	conflict: 506=argent vs argenc	spelling-variant
+54	+	asseuremence	word	506	H	conflict: 506=asseuremence vs asseurement	spelling-variant
+10	+	attache	word	506	H		
+61	+	attaque	word	506	H		
+66	''	avantage	word	506	H		
+49	^	avec	word	506	H		
+11	''	averty	word	506	H		
+60	''	avoir	word	506	H		
+65	''	aully	word	506	H		
+62	◡	autre	word	506	H		
+72	◡	autorite	word	506	H	conflict: 506=autorite vs authorite	spelling-variant
+81	◡	auroci	word	506	H	conflict: 506=auroci vs auroc?i	identical-after-normalisation
+33	◡	aveun	word	506	H		
+24	◡	BA	syllable	506	H		
+16	◡	be	word	506	H		
+75	''	bi	word	506	H		
+80	''	bo	syllable	506	H		
+29	''	bu	word	506	H		
+21	''	battaille	word	506	H		
+70	''	baure	word	506	H		
+78	''	beau,ou,belle	word	506	H		
+5	..	beaucoup	word	506	H		
+12	..	bien	word	506	H		
+24	..	bonte	word	506	H		
+34	..	bon	word	506	H		
+4	~	bourgeois	word	506	H		
+50	^	Bruit	word	506	H		
+3	''	britanique	word	506	H		
+1	''	A	word	506	H		
+58	''	ce	word	506	H		
+19	''	ci	syllable	506	H		
+36	''	co	syllable	506	H		
+76	◡	cu	word	506	H		
+29	◡	campagne	word	506	H	conflict: 506=campagne vs camppagne	spelling-variant
+79	''	capable	word	506	H		
+10	^	capitaine	word	506	H		
+66	^	catholique	word	506	H		
+54	^	cause	word	506	H		
+8	^	cavalier	word	506	H	conflict: 506=cavalier vs caul?a?lier	spelling-variant
+69		cavallerie	word	506	H	conflict: 506=cavallerie vs cavalerie	spelling-variant
+19	+	cela	word	506	H		
+55	+	c'est	word	506	H		
+18		c'est	word	506	H	conflict: 506=c'est vs et	other
+67	◡	celluy,ou,celle	word	506	H	conflict: 506=celluy,ou,celle vs celuy,ou,celle	spelling-variant
+17	◡	cent	word	506	H	conflict: 506=cent vs ceru	spelling-variant
+7	◡	chose	word	506	H		
+55	◡	charge	word	506	H		
+60		comme	word	506	H		
+77		commerce	word	506	H	conflict: 506=commerce vs commenc	spelling-variant
+41		composition	word	506	H		
+32	+	commandom*	word	506	H	conflict: 506=commandom* vs commandem^*	spelling-variant
+39	+	commerce	word	506	H		
+69	◡	con	word	506	H		
+56	^	combien	word	506	H		
+9	..	conjoncture	word	506	H		
+22	..	conference	word	506	H		
+7	''	conscience	word	506	H		
+22	''	consideration	word	506	H		
+34	''	conseruer	word	506	H		
+71	''	conseil	word	506	H		
+10	◡	contre	word	506	H		
+15	◡	contraire	word	506	H		
+64	◡	cour	word	506	H		
+10		croy	word	506	H	conflict: 506=croy vs crou	spelling-variant
+58		croyane	word	506	H		
+47	+	DA	syllable	506	H		
+59	+	de	syllable	506	H		
+3	+	di	syllable	506	H		
+35	+	do	syllable	506	H		
+3	◡	du	syllable	506	H		
+7	..	Estably	word	506	H	conflict: 506=Estably vs dans	same-code-different-meaning
+4	''	estau	word	506	H		
+54	''	estane	word	506	H		
+57	^	estoicru	word	506	H	conflict: 506=estoicru vs estoienc	same-code-different-meaning
+14		estre,ou,este	word	506	H	conflict: 506=estre,ou,este vs este,ou,este	spelling-variant
+26		et	word	506	H		
+26	+	et	word	506	H		
+24	^	et	word	506	H		
+18		et	word	506	H	conflict: 506=et vs c'est	other
+8	..	et	word	506	H		
+22		et	word	506	H	conflict: 506=et vs tt	spelling-variant
+66	◡	et	word	506	H	conflict: 506=et vs tt	spelling-variant
+76		eu	word	506	H	conflict: 506=eu vs z?u	spelling-variant
+63	◡	eux	word	506	H		
+53	+	exclusion	word	506	H		
+50	+	fA	syllable	506	H		
+59		fe	word	506	H		
+74		fi	syllable	506	H	conflict: 506=fi vs si	spelling-variant
+11	◡	fo	syllable	506	H		
+19		du	syllable	506	H		
+72	''	facon	word	506	H		
+33		faire	word	506	H		
+27	''	fait	word	506	H		
+22	^	faut	word	506	H	conflict: 506=faut vs f?ave?	spelling-variant
+13	◡	faveur	word	506	H		
+42		favorable	word	506	H		
+79		fin	word	506	H		
+80		flamand	word	506	H		
+28	+	fort	word	506	H	conflict: 506=fort vs mande	other
+63	+	fortemene	word	506	H	conflict: 506=fortemene vs fortemeru	spelling-variant
+3		fonde	word	506	H		
+63		francois	word	506	H		
+14	◡	GA	syllable	506	H		
+11		ge	syllable	506	H		
+66		gi	syllable	506	H		
+50		go	syllable	506	H		
+31	+	gu	syllable	506	H		
+48	+	garde	word	506	H		
+67	''	garder	word	506	H		
+24	''	gons	word	506	H		
+80	^	general	word	506	H		
+25	+	generaux	word	506	H	conflict: 506=generaux vs ses	other
+36	..	Gloire	word	506	H	conflict: 506=Gloire vs glore	spelling-variant
+70	◡	gouverne	word	506	H	conflict: 506=gouverne vs gouverneur	spelling-variant
+64	''	gouverneur	word	506	H		
+9	^	grace	word	506	H		
+3	..	grand	word	506	H		
+5	◡	guerre	word	506	H		
+6	+	garnison	word	506	H		
+65		hA	syllable	506	H	conflict: 506=hA vs fi?a	spelling-variant
+4		he	word	506	H		
+27		hi	syllable	506	H		
+20+^+	RAW	ho	syllable	506	H		
+61	''	hu	word	506	H		
+21	◡	hautement	word	506	H	conflict: 506=hautement vs hantemeru	same-code-different-meaning
+39		haÿr	word	506	H	conflict: 506=haÿr vs hayr	identical-after-normalisation
+29	+	heure	word	506	H		
+78		homme	word	506	H		
+53	^	honneur	word	506	H		
+9		honneste	word	506	H	conflict: 506=honneste vs honnerte	spelling-variant
+8	◡	honnorable	word	506	H		
+55	''	honte	word	506	H		
+61	◡	hormes	word	506	H	conflict: 506=hormes vs **ormis	same-code-different-meaning
+52	+	JA	syllable	506	H		
+51		je	word	506	H		
+5		ji	syllable	506	H		
+71		jo	syllable	506	H		
+37		ju	word	506	H	conflict: 506=ju vs nous	other
+87		Jalousi?e?	word	506	H	conflict: 506=Jalousi?e? vs jalourie	spelling-variant
+21	+	Jamais	word	506	H	conflict: 506=Jamais vs jamait	spelling-variant
+59	◡	Jay	word	506	H		
+30		Jayrceuc?u ladre du	word	506	H	conflict: 506=Jayrceuc?u ladre du vs jay reec?u lam?rdau	same-code-different-meaning
+62	''	Jey	word	506	H		
+6	''	Jl	word	506	H		
+58	^	Js?s	word	506	H	conflict: 506=Js?s vs il?s	spelling-variant
+6		Incommode	word	506	H		
+16	+	Importane	word	506	H	conflict: 506=Importane vs importanc	spelling-variant
+23		Intelligence	word	506	H		
+81		Intention	word	506	H		
+43		Intrigue	word	506	H		
+51	+	Interest	word	506	H		
+11	+	Joindre	word	506	H		
+56	''	LA	syllable	506	H		
+1	◡	le	syllable	506	H		
+57	+	li	syllable	506	H		
+15		lo	syllable	506	H		
+52		lu	syllable	506	H		
+34		laisse	word	506	H		
+8		les	word	506	H		
+53		les	word	506	H		
+4	+	les	word	506	H		
+52	◡	les	word	506	H		
+57	''	les	word	506	H		
+6	..	les	word	506	H		
+16	..	leur	word	506	H		
+5	^	leure	word	506	H	conflict: 506=leure vs lettre	spelling-variant
+59	''	lon	word	506	H		
+13		lors	word	506	H		
+72		libremene	word	506	H	conflict: 506=libremene vs librement	spelling-variant
+58	+	libre	word	506	H		
+2	^	liberte	word	506	H		
+18	◡	loing	word	506	H		
+2	◡	luy	word	506	H		
+5	+	luy	word	506	H		
+54		luy	word	506	H		
+33	+	luy	word	506	H		
+40	+	MA	syllable	506	H		
+90		me	syllable	506	H		
+34	◡	mi	syllable	506	H		
+100		mo	syllable	506	H		
+20	..	mu	syllable	506	H		
+30	..	mais	word	506	H		
+29	^	maintenir	word	506	H		
+46		maintenant	word	506	H	conflict: 506=maintenant vs inamtenanc	same-code-different-meaning
+28	+	mande	word	506	H	conflict: 506=mande vs fort	other
+22	◡	mad^e <ABBR Madame>,ou,Mad****	word	506	H	conflict: 506=mad^e <ABBR Madame>,ou,Mad**** vs mad.^e ou mad^*	same-code-different-meaning
+78	^	maniere	word	506	H		
+73	''	manqie	word	506	H		
+26	◡	marque	word	506	H		
+45	+	marcuye	word	506	H	conflict: 506=marcuye vs mariage	same-code-different-meaning
+79	◡	marche	word	506	H	conflict: 506=marche vs malheur	other
+79	◡	Malheur	word	506	H	conflict: 506=Malheur vs marche	other
+62	^	manuaci	word	506	H	conflict: 506=manuaci vs mauvais	spelling-variant
+7	+	meilleur	word	506	H	conflict: 506=meilleur vs m eilleur	identical-after-normalisation
+10	''	mene	word	506	H		
+51	''	ministre	word	506	H		
+4	◡	mes	word	506	H		
+48	◡	mesmes	word	506	H	conflict: 506=mesmes vs meme	spelling-variant
+22	+	Morc?,ou,M.^rs	word	506	H	conflict: 506=Morc?,ou,M.^rs vs m^r,ou,m^rs	spelling-variant
+50	◡	mon?e	word	506	H	conflict: 506=mon?e vs mont	spelling-variant
+44	+	mort	word	506	H		
+40	..	moyon	word	506	H	conflict: 506=moyon vs moy?n	spelling-variant
+1	..	NA	syllable	506	H		
+52	^	ne	syllable	506	H		
+52	''	ni	syllable	506	H		
+56	◡	no	syllable	506	H		
+8	+	nu	word	506	H		
+17	''	negotiation	word	506	H		
+69	''	negotier	word	506	H		
+43	◡	nec?ossaire	word	506	H	conflict: 506=nec?ossaire vs necessaire	spelling-variant
+83	◡	necessite	word	506	H		
+85		nonobt?tane	word	506	H	conflict: 506=nonobt?tane vs nonobstanc	spelling-variant
+50	''	non	word	506	H		
+35	''	nostre	word	506	H		
+73	^	nos	word	506	H		
+18	..	nous	word	506	H		
+25	..	nous	word	506	H		
+26	^	nous	word	506	H		
+25	''	nous	word	506	H		
+78	◡	nous	word	506	H		
+37		nous	word	506	H	conflict: 506=nous vs ju	other
+95		nouvelle	word	506	H		
+30	''	nutralite	word	506	H		
+75	^	nuire	word	506	H		
+38		ON	word	506	H		
+32		obliger	word	506	H		
+83		obligation	word	506	H		
+91		occasion	word	506	H		
+34	+	office	word	506	H		
+28	◡	oppinion	word	506	H	conflict: 506=oppinion vs opinion	spelling-variant
+47		opposer	word	506	H	conflict: 506=opposer vs oppeser	spelling-variant
+99		ordre	word	506	H		
+46	''	Ordinaire	word	506	H		
+6	◡	outre	word	506	H	conflict: 506=outre vs oulre	spelling-variant
+51	◡	ounrage	word	506	H	conflict: 506=ounrage vs ouvrage	spelling-variant
+59	^	ou	word	506	H		
+20	''	PA	syllable	506	H		
+23	◡	pe	syllable	506	H		
+36		pi	syllable	506	H		
+27	+	po	syllable	506	H		
+49		pu	syllable	506	H		
+40		passage	word	506	H		
+31		pas,ou,point	word	506	H		
+25	◡	particuliere	word	506	H		
+98		party	word	506	H		
+35		parmy	word	506	H		
+11	..	passion	word	506	H		
+14	^	parlement	word	506	H		
+63	^	peÿne	word	506	H	conflict: 506=peÿne vs peyne	identical-after-normalisation
+44		pense	word	506	H		
+32	◡	pendant	word	506	H	conflict: 506=pendant vs pendane	spelling-variant
+74	◡	pece	word	506	H	conflict: 506=pece vs peu	spelling-variant
+55		personne	word	506	H		
+53	''	plus	word	506	H		
+5	''	place	word	506	H		
+26	''	plaisir	word	506	H		
+68	''	pounoit	word	506	H		
+37	◡	posse	word	506	H	conflict: 506=posse vs porte	spelling-variant
+48		pourquoy	word	506	H		
+27	◡	port	word	506	H	conflict: 506=port vs quel	other
+28		pour	word	506	H		
+33	''	pour	word	506	H		
+39	◡	pour	word	506	H	conflict: 506=pour vs pour?	identical-after-normalisation
+32	..	pour	word	506	H		
+88		protection	word	506	H		
+77	◡	premier	word	506	H		
+31	◡	principal	word	506	H		
+41	+	presene	word	506	H	conflict: 506=presene vs preleru	same-code-different-meaning
+40	◡	presse	word	506	H	conflict: 506=presse vs pres**	spelling-variant
+77	''	proposition	word	506	H		
+28	''	propre	word	506	H		
+42	''	puissant	word	506	H		
+39	''	puis	word	506	H		
+42	+	puis	word	506	H		
+29		puis	word	506	H	conflict: 506=puis vs pui	identical-after-normalisation
+38	..	puis	word	506	H	conflict: 506=puis vs pui?	identical-after-normalisation
+45	''	qua	syllable	506	H		
+82		que	word	506	H		
+45		qui	syllable	506	H		
+84	◡	quo	syllable	506	H		
+39	..	quu	syllable	506	H	conflict: 506=quu vs qui	spelling-variant
+43	+	Quand	word	506	H		
+35	..	quon	word	506	H	conflict: 506=quon vs quos?	spelling-variant
+2	..	que	word	506	H		
+1	^	que	word	506	H		
+8	''	que	word	506	H		
+74	''	que	word	506	H		
+47	◡	que	word	506	H		
+10	◡0	que	word	506	H		
+30	+	que	word	506	H		
+76	''	quatre	word	506	H		
+36	+	quel	word	506	H		
+58	◡	quel	word	506	H		
+12	''	quel	word	506	H		
+67	^	quel	word	506	H		
+27	◡	quel	word	506	H	conflict: 506=quel vs port	other
+21	..	quel	word	506	H		
+30	^	quelque	word	506	H		
+72	^	quelque	word	506	H		
+27	..	quelque	word	506	H		
+45	◡	quelque	word	506	H		
+23	+	quelque	word	506	H		
+86		quelque	word	506	H		
+9	+	qui	syllable	506	H		
+15	''	qui	syllable	506	H		
+23	^	qui	syllable	506	H		
+4	..	qui	syllable	506	H		
+49	''	qui	syllable	506	H		
+24	+	quil	word	506	H		
+41	''	quil	word	506	H		
+68	^	quil	word	506	H		
+26	..	quil	word	506	H		
+71	◡	quil	word	506	H		
+92		quil	word	506	H		
+74	^	quoy	word	506	H		
+48	''	RA	syllable	506	H		
+31	^	re	syllable	506	H		
+33	..	ri	syllable	506	H		
+89		ro	word	506	H		
+84		ru	syllable	506	H		
+23	..	rien	word	506	H		
+96		republique	word	506	H		
+46	◡	reünir	word	506	H		
+31	''	ruine	word	506	H		
+38	''	reüssie	word	506	H		
+99	◡	sa	syllable	506	H		
+44	◡	se	syllable	506	H		
+32	''	si	syllable	506	H		
+48	^	so	syllable	506	H		
+32	^	su	syllable	506	H		
+27		sans	word	506	H		
+47	''	satisfait	word	506	H		
+16	^	sentiment	word	506	H	conflict: 506=sentiment vs sentimene	spelling-variant
+69	^	secours	word	506	H		
+42	^	ses	word	506	H		
+7	^	ses	word	506	H		
+25	+	ses	word	506	H	conflict: 506=ses vs generaux	other
+49◡	RAW	ses	word	506	H		
+93	◡	semble	word	506	H		
+35	◡	seurement	word	506	H	conflict: 506=seurement vs seuremeru	spelling-variant
+42	◡	sieur	word	506	H		
+85	◡	sortir	word	506	H		
+17	^	son	word	506	H		
+6	^	sous	word	506	H		
+91	◡	sort	word	506	H		
+98	◡	TA	syllable	506	H		
+75	◡	te	syllable	506	H		
+41	◡	ti	syllable	506	H		
+43	''	to	syllable	506	H		
+33	^	tu	syllable	506	H		
+39	^	taschera	word	506	H	conflict: 506=taschera vs tarhera	spelling-variant
+76	^	tant	word	506	H	conflict: 506=tant vs l*anc	same-code-different-meaning
+44	''	tellement	word	506	H		
+88	◡	temps	word	506	H		
+36	◡	tenir	word	506	H		
+96	◡	tesmoigne	word	506	H	conflict: 506=tesmoigne vs esmoigne	spelling-variant
+38	◡	tous	word	506	H		
+40	''	tous	word	506	H		
+37	^	tous	word	506	H		
+31	..	tous	word	506	H	conflict: 506=tous vs tour?	spelling-variant
+44	^	tout	word	506	H	conflict: 506=tout vs tou*	spelling-variant
+77	^	touchant	word	506	H	conflict: 506=touchant vs touchanc	spelling-variant
+13	''	traicte	word	506	H		
+70	^	trop	word	506	H		
+18	^	troupe	word	506	H	conflict: 506=troupe vs houpe	spelling-variant
+53	◡	troubles	word	506	H	conflict: 506=troubles vs trouble	identical-after-normalisation
+14	+	troubler	word	506	H		
+45	^	trouvant	word	506	H	conflict: 506=trouvant vs trouvane	spelling-variant
+71	^	trouve	word	506	H		
+3	^	VA	syllable	506	H	conflict: 506=VA vs vu	spelling-variant
+34	^	ue	word	506	H		
+94		ui	word	506	H		
+37	''	uo	word	506	H		
+94	◡	uu	word	506	H		
+54	◡	vaisseau	word	506	H		
+18	+	veritable	word	506	H		
+47	^	veullent	word	506	H	conflict: 506=veullent vs veulleru	spelling-variant
+13	^	veille	word	506	H		
+93		venir,ou,veny	word	506	H	conflict: 506=venir,ou,veny vs venir,ou,venu	spelling-variant
+46	^	ville	word	506	H		
+20	^	victoire	word	506	H	conflict: 506=victoire vs vietoire	spelling-variant
+97	◡	un,ou,one	word	506	H	conflict: 506=un,ou,one vs ur,ou,une	spelling-variant
+80	◡	union	word	506	H		
+86	◡	voules	word	506	H	conflict: 506=voules vs vrules	spelling-variant
+11	^	vers	word	506	H		
+40	^	veu	word	506	H		
+36	^	vie	word	506	H		
+89	◡	vient	word	506	H	conflict: 506=vient vs sient	spelling-variant
+56		votage	word	506	H	conflict: 506=votage vs boyage	spelling-variant
+35	^	veoir	word	506	H		
+90	◡	vous	word	506	H	conflict: 506=vous vs sous	spelling-variant
+12	+	vous	word	506	H		
+57		vous	word	506	H	conflict: 506=vous vs bous	spelling-variant
+14	''	vous	word	506	H		
+43	^	vous	word	506	H		
+37	..	vous	word	506	H	conflict: 506=vous vs vous?	identical-after-normalisation
+28	^	vous	word	506	H		
+38	^	vous	word	506	H		
+95	◡	vous	word	506	H	conflict: 506=vous vs *ous	spelling-variant
+65	+	vous	word	506	H		
+62	+	vostre	word	506	H		
+82	◡	XA	syllable	506	H		
+64	+	xe	syllable	506	H		
+68	+	xi	syllable	506	H		
+69	+	xo	syllable	506	H		
+92	◡	xu	syllable	506	H		
+41	^	Y	word	506	H	conflict: 506=Y vs j	spelling-variant
+70	+	ya	word	506	H	conflict: 506=ya vs zele	same-meaning-different-code
+66	+	yoeux	word	506	H		
+67	+	Z	word	506	H		
+87	◡	Zel	word	506	H	conflict: 506=Zel vs z?el	identical-after-normalisation
+71	+	Zele	word	506	H		
+20	uc	<NULL>	other	506	H	null	
+21	uc	<NULL>	other	506	H	null	
+22	uc	<NULL>	other	506	H	null	
+23	uc	<NULL>	other	506	H	null	
+24	uc	<NULL>	other	506	H	null	
+25	uc	<NULL>	other	506	H	null	
+26	uc	<NULL>	other	506	H	null	
+27	uc	<NULL>	other	506	H	null	
+28	uc	<NULL>	other	506	H	null	
+29	uc	<NULL>	other	506	H	null	
+30	uc	<NULL>	other	506	H	null	
+31	uc	<NULL>	other	506	H	null	
+32	uc	<NULL>	other	506	H	null	
+33	uc	<NULL>	other	506	H	null	
+34	uc	<NULL>	other	506	H	null	
+1	=	<NULL>	other	506	H	null	
+2	=	<NULL>	other	506	H	null	
+3	=	<NULL>	other	506	H	null	
+4	=	<NULL>	other	506	H	null	
+5	=	<NULL>	other	506	H	null	
+6	=	<NULL>	other	506	H	null	
+7	=	<NULL>	other	506	H	null	
+8	=	<NULL>	other	506	H	null	
+9	=	<NULL>	other	506	H	null	
+10	=	<NULL>	other	506	H	null	
+11	=	<NULL>	other	506	H	null	
+12	=	<NULL>	other	506	H	null	
+13	=	<NULL>	other	506	H	null	
+14	=	<NULL>	other	506	H	null	
+15	=	<NULL>	other	506	H	null	
+16	=	<NULL>	other	506	H	null	
+17	=	<NULL>	other	506	H	null	
+18	=	<NULL>	other	506	H	null	
+19	=	<NULL>	other	506	H	null	
+20	=	<NULL>	other	506	H	null	
+21	=	<NULL>	other	506	H	null	
+22	=	<NULL>	other	506	H	null	
+28	...	<NULL>	other	506	H	null	
+29	...	<NULL>	other	506	H	null	
+30	...	<NULL>	other	506	H	null	
+31	...	<NULL>	other	506	H	null	
+32	...	<NULL>	other	506	H	null	
+33	...	<NULL>	other	506	H	null	
+34	...	<NULL>	other	506	H	null	
+35	...	<NULL>	other	506	H	null	
+36	...	<NULL>	other	506	H	null	
+37	...	<NULL>	other	506	H	null	
+38	...	<NULL>	other	506	H	null	
+39	...	<NULL>	other	506	H	null	
+40	...	<NULL>	other	506	H	null	
+41	...	<NULL>	other	506	H	null	
+42	...	<NULL>	other	506	H	null	
+43	...	<NULL>	other	506	H	null	
+44	...	<NULL>	other	506	H	null	
+45	...	<NULL>	other	506	H	null	
+46	...	<NULL>	other	506	H	null	
+47	...	<NULL>	other	506	H	null	
