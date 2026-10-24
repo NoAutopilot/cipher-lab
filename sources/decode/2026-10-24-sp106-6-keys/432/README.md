@@ -25,3 +25,5 @@ mixed secretary hand, as expected for an SP 106/6 wrapper page.
 
 Held here as a documented negative so a future worker does not re-spend a login fetching this same id again
 under the same hypothesis.
+
+Images removed from the tree by the account-4 parent, 24 Oct 2026 08:0x UTC (sources/decode/NOTES.md: raw DECODE images stay in the session scratchpad, not committed); manifest.json keeps url, bytes and sha256 for a re-fetch. The three PNGs remain in history at a92216867.

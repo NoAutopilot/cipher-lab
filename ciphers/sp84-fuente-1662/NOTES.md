@@ -332,3 +332,21 @@ cap. No other hosts touched. No credentials printed; the account name in the sav
 quoted anywhere above and those pages were not committed (kept in the session scratchpad only, per Usage rule "digests,
 not repositories").
 
+
+### Parent note after DECODE-KEY32 (account-4 parent, 24 Oct 2026, 08:0x UTC): the six questions
+
+1. **Learned.** DECODE id 432 is not SP 106/6 no. 31/32/35 (Tomokiyo's own note: a list of 31 pseudonyms, North American
+   colonial intrigue); ids 509 + 506 ("the same cipher", homophonic with nomenclatures, graphic and numerical signs) and 497
+   are the surviving French candidates, unopened; 17 French-tagged records in all. The route itself works: one login, real
+   full-size PNGs served (A2-HDK holds for this record too).
+2. **Assumptions.** That nos. 31/32/35 are among DECODE's 49 SP 106/6 records at all (DECODE's shelfmark field is its own
+   scan-page numbering, not TNA's item numbers); that Tomokiyo's chauran.htm structural description identifies the sheet at a
+   glance.
+3. **Unverified.** 509/506/497 against the mark-class fingerprint; whether the 1660 and 1663 letters in the pool used the same
+   key as the 1662 ones (Wickfort's "nouveau chiffre", SP 84/165 f.214, May 1662).
+4. **Alternatives.** The three keys may be among the 31 English-or-mixed-tagged records (language tag from the cleartext column,
+   which could be English glosses on a French key); or not on DECODE at all.
+5. **Most informative next experiment.** Open 509, 506, 497 in one login (DECODE-KEY32B), and in parallel the pool's intake
+   check (CHECK-SP84POOL: does CSP Domestic 1660-63 print the PRO decodes or summarise the undecoded letters?), so the key and
+   the target are both settled before any TNA copy order is placed.
+6. **Decision.** Continue (two Sonnet jobs, brief -48); the 432 PNGs are taken out of the tree per sources/decode/NOTES.md.
