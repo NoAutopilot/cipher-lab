@@ -371,6 +371,12 @@ three times (Barwick lead attributed to Tomokiyo, not HMC 1899's preface; John n
 one detail softened; addresses verified live; both drafts ready for the owner to send (SPRINT P14, P15 updated; no SEND-QUEUE rows).
 Nothing live; every line waits on the owner. Cadence moves to 2-3 h. Spend this check-in by program: A 0, B 0, C 3.14.
 
+Check-in 155 (24 Oct 2026, 20:2x UTC). Nothing landed: sorters empty (ASKS 173, 175), no owner scans, no reply on P12/P14/P15,
+no flag from the other accounts; orphan_check clean apart from the long-standing account-1 dropped request of 15 Oct. One experiment
+that needs no owner input: SCOUT-ANTT spawned (Sonnet, cap 5) -- the key-beside-cipher filter run on DigitArq / ANTT, the one host in
+this week's sweeps that serves full images from the cloud and already gave the project its Portuguese key-leaf reading (Linhares);
+never promotes. The Barwick second pass is deferred until the P15 route answers. Spend this check-in by program: A 0, B 0, C 0 so far.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
