@@ -249,6 +249,12 @@ published, ASKS 175. SCOUT-KEYS2 (account 2): one scored candidate (NK1 Longleat
 route -> SPRINT P13) and three leads; NL1 (the ~60 Fagel keys, envoys' own letters never searched) is the best new-content route open on
 a host that works, so SCOUT-FAGEL is queued for account 2. Vivonne re-sort still not landed.
 
+Check-in 142 (24 Oct 2026, 00:2x UTC). SCOUT-FAGEL (account 2): 8 Fagel-register envoys checked, 0 meet both filters -- every Nationaal
+Archief fonds sampled is physical-only, no scans -- so the Dutch key-register route needs copy orders (SPRINT), not scouting; 5 envoys
+matched to located series are logged (FG1-FG5) for that. Two retrospective proposals open 8 days (wait-only count; 24-hour no-row flag)
+declined: both are machinery for keeping rows coming, retired by the 16-17 Oct directives. Nothing live; both sorters (Vivonne, Monluc
+king letter) and the owner's document scans awaited. Gallica still 403.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
