@@ -309,6 +309,15 @@ ciphers/sp84-wickfort-bacquoy-1660-63 as `blocked` with REQUEST.md naming the mi
 SP 84/165 f.106 as known-plaintext control); SPRINT P12 updated. After that the pool waits on the owner's copy order. Sorters (ASKS
 173, 175) still empty; no owner scans. Spend this check-in by program: A 6.90 (key acquisition + intake for the SP 84 pool), B 0, C 0.
 
+Check-in 149 (24 Oct 2026, 10:4x UTC). KEY32-TSV-PROMOTE (USD 4.27, D, under cap): key.tsv for SP 106/6 no. 32 at grade H, 1692
+rows from DECODE 509+506's transcriptions with a rule-7 build script (429 rows flagged conflict where the two period copies disagree,
+kept per rule 4); ciphers/sp84-wickfort-bacquoy-1660-63 promoted `blocked`/parked with REQUEST.md (minimum TNA order SP 84/166 f.85 +
+PRO-decoded SP 84/165 f.106 as known-plaintext control; full order the other nine folios); gates run (gaps_check OK parked, intake gate
+terminal). Parent: status.json target card added (stage 7, blocked, waiting on you, kind recovery), KEY-OFFICES.tsv row and KEY-DESIGN
+rebuilt, SPRINT P12 points at the exact folio list. Spawned KEY32-CONFLICTS (Sonnet, cap 3, offline): classify the 429 conflicts by
+kind so the key is usable the day an image arrives. After that the pool waits on the owner's order. Sorters (ASKS 173, 175) still
+empty; no owner scans. Spend this check-in by program: A 4.27, B 0, C 0.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
