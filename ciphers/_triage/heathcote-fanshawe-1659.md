@@ -240,3 +240,39 @@ n42/n43/n49/n50 = 4; Barwick English n436/n437/n438 = 3; Barwick Latin n383/n384
 n50, before correcting to n49), one 504 gateway timeout on the Latin "cyphra" search, retried once per the good-citizen
 rule and succeeded (0 hits, real). All >=1.5 s apart, one at a time. 2 Sonnet subagent vision calls (the table leaves only;
 the italics-determination leaves were read directly by this worker, not priced as subagent vision calls).
+
+**Table written, codes 1-692, 684 data rows**, `ciphers/_triage/heathcote-1659-barwick-key.tsv` (code, meaning, class,
+source_page). Codes 1-440 from leaf n386's own pass (which marked its own rightmost column's code numbers `UNREADABLE`,
+page-edge cut off, but read the words themselves); codes 441-692 from leaf n387's own pass, which has both the numbers
+and words for that same range (the facing/continuation page) -- leaf n386's redundant `UNREADABLE`-numbered rows were
+dropped in favour of leaf n387's numbered rows for that overlap span rather than merged positionally, since the two
+passes' row orders for that span do not line up word-for-word (cross-checked three positions, no match), so a positional
+merge would silently mix unrelated entries. **Caveats, named rather than re-run given the 40-minute box**: (1) this is
+one pass per leaf, not two independent passes reconciled (the brief's own allowance for >150 rows, logged per rule 7)
+-- no second blind pass has checked either leaf; (2) long-s normalization (ſ->s) was applied inconsistently between the
+two passes (leaf386's own agent normalized explicitly and said so; leaf387's did not flag it and left at least one
+visible miss, code 452 "deftroy" for "destroy" -- grep `/tools/data` long-s patterns before using row text for a
+language judge or print-check); (3) several short codes near the page edges on both leaves are truncated word
+fragments as printed, not full words (e.g. 441 "y", 444 "eak", 445 "ray") -- these are faithful to what prints at
+the crop edge, not reading errors, but are useless as crib text until confirmed against a second crop or a wider
+scan; (4) rows 47 and 59 (Q and V's irregular third sub-rows) are sparse by design (per leaf386's agent, most columns
+genuinely blank there), not missed entries. **Grade H** (published period key, 1721 print) for the table as printed;
+**M** for any specific row until a second pass confirms it; **not yet matched to any ciphertext** -- no cipher groups
+are in print for either Heathcote item (see above) and the manuscript originals have not been imaged.
+
+## Remaining gaps
+
+- A second independent pass over leaf n386 and n387 (images already in this worker's scratchpad, not committed --
+  re-fetch with `tools/iiif_lines.py`-style direct download, see the URLs in this section's job log above) to reconcile
+  against the first pass and upgrade confident rows from the one-pass default to a checked grade; particular attention
+  to the long-s normalization inconsistency and the page-edge truncations named above.
+- Chase the manuscript originals at Barking and Dagenham Archives (M51-286) or via the 1999 Walker & Liddell finding
+  aid (named in HEATHCOTE-HOLDER above) to see whether Hyde's actual cipher numerals (not HMC's editorial English
+  gloss) survive and are legible -- only then can this Barwick key be tried against real ciphertext for these two items.
+- CSP Clarendon vol. V (not reached this session or HEATHCOTE-HOLDER's) and the PRO/TNA Arlington "wrong key" letter
+  (SP 94, named in HMC 1899's own preface) remain unchecked.
+
+## Escalation
+
+Verdict: **keep going** -- program C (flagship-adjacent lead), cheap, no blocker outside the session's own time box.
+Next: the second-pass reconciliation above, then the Barking/Dagenham manuscript chase; neither depends on anyone else.
