@@ -298,6 +298,17 @@ and CHECK-SP84POOL runs the intake check for the SP 84/166-171 pool (does CSP Do
 treat the 10 undecoded letters) so key and target are settled before any TNA copy order. Sorters (ASKS 173, 175) still empty; no owner
 scans. Spend this check-in by program: A 3.87 (key acquisition for the SP 84 pool), B 0, C 0.
 
+Check-in 148 (24 Oct 2026, 09:1x UTC). DECODE-KEY32B (USD 3.37, D-, 1.12x cap): DECODE ids 509 and 506 are TNA SP 106/6 no. 32,
+and DECODE already holds a complete 2020 text transcription of both (23-mark letter alphabet, persons 20-76, Villes 61-89, Royaulmes
+90-108) -- the key is in hand as text, no image transcription needed; 497 undecided, nos. 31/35 unlocated, both dropped (f.213 is known
+text). CHECK-SP84POOL (USD 3.53, D): none of the 18 pool letters is printed in CSP Domestic 1660-64 (three volumes whole-volume read);
+chauran.htm corroborates the 8 PRO decodes' key citations by date; the 10 undecoded letters are open access, not digitised, no key cited;
+De Bacquoy's cipher is numerical, so no. 32 is Wickfort's and Chauran's key, not demonstrably his. Verdict open. Decision: KEY32-TSV-
+PROMOTE spawned (Sonnet, cap 6): build key.tsv at grade H from the DECODE transcription with a rule-7 script, promote
+ciphers/sp84-wickfort-bacquoy-1660-63 as `blocked` with REQUEST.md naming the minimum TNA order (SP 84/166 f.85 + the PRO-decoded
+SP 84/165 f.106 as known-plaintext control); SPRINT P12 updated. After that the pool waits on the owner's copy order. Sorters (ASKS
+173, 175) still empty; no owner scans. Spend this check-in by program: A 6.90 (key acquisition + intake for the SP 84 pool), B 0, C 0.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
