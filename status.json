@@ -852,6 +852,18 @@
    "holder": "Nationaal Archief",
    "next": "No further 1623 read: interlinear_align.py's positive control passes 0/20 at N=64 and 85, 2/20 at 120 and 200 (HEID-1623CAL), untestable by this tool below N=200; the 12 Aug 1623 passage is a text-known period decipherment on the leaf (171 marginal note), AUDIT-ready for a verifier as N0-class, not a reading of ours. The 1621 pair (96 + 14 units, letters M at 0.844) waits on two outside routes: the owner's sign sorter for the 8 letter splits (heid1621i/focus.tsv) and the NA copy request for the period key material (ASKS 170, held behind form S4). Untried instrument, not queued: a letter-level hand alignment of the 1623 note to its block with its own control (would give a 1623 key at C, a different system from 1621). Scan 58 of 6021 (French, 2-digit groups + name codes) is a separate intake candidate.",
    "note": "Found 15 Oct 2026 by OBRED-6021 (account 2) in a stride-6 screen of inv. 6021; sender read on the signed letter (HEID-1621B); Resolutien SG nieuwe reeks 5 p.260 res. 1644b calendars it as 'Gedeeltelijk in code' with no decipherment (HEID-1621D); not in DECODE, Cryptiana or either solver repository (HEID-1621C). Design lead: two-digit consecutive-pair groups each followed by a letter, one unit per word."
+  },
+  {
+   "name": "Wickfort and De Bacquoy to Williamson, Nicholas and Bennet, TNA SP 84/166, 168, 171 (10 undecoded letters, 1660-63), key SP 106/6 no. 32",
+   "year": "1660-1663",
+   "ref": "TNA SP 84/166 ff.19, 85, 106, 108, 167, 184, 188, 213; SP 84/168 f.60; SP 84/171 f.123; key SP 106/6 no. 32 (DECODE 509/506)",
+   "folder": "ciphers/sp84-wickfort-bacquoy-1660-63",
+   "stage": 7,
+   "state": "blocked",
+   "holder": "waiting on you",
+   "next": "TNA copy order per REQUEST.md: minimum SP 84/166 f.85 + SP 84/165 f.106 (PRO-decoded with no. 32, the known-plaintext control); key.tsv (grade H, 1692 rows, 429 conflict-flagged) is applied to nothing until an image exists; De Bacquoy's letters use a numerical cipher whose key is not identified",
+   "note": "Row added 24 Oct 2026 by the account-4 parent after CHECK-SP84POOL (check-solved open: none of 18 items in CSP Domestic 1660-64) and KEY32-TSV-PROMOTE; promoted from ciphers/_triage/sp84-wickfort-bacquoy-1660-63.md; SPRINT P12 carries the money side",
+   "kind": "recovery"
   }
  ],
  "workers": [

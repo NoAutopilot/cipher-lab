@@ -227,3 +227,20 @@ exit: 0
 ```
 (empty)
 ```
+
+## Parent note (account-4 parent, 24 Oct 2026, 10:5x UTC): the six questions after KEY32-TSV-PROMOTE
+
+1. **Learned.** The no. 32 key is on disk as text at grade H (1692 rows); the two DECODE copies (509, 506) disagree on 210 of 549
+   shared codes, mostly person-name spellings; the folder is blocked on a TNA copy order whose minimum is two folios (REQUEST.md).
+2. **Assumptions.** DECODE's transcriber read the sheets correctly (no image check here); the 'word'/'syllable' split is the build
+   script's heuristic, not the sheet's; Wickfort's Aug-Nov 1662 letters are in no. 32 (the PRO, holding no. 32, left them undecoded,
+   which is the main reason to doubt it).
+3. **Unverified.** Every row, against a real letter: nothing has been applied; the nature of the 429 conflicts (variant spelling vs a
+   different value); De Bacquoy's key.
+4. **Alternatives.** The undecoded letters may be in Wickfort's "nouveau chiffre" or a De Bacquoy-style numerical cipher; then no. 32
+   reads only the control f.106 and the pool becomes a cryptanalysis target with 8 known-plaintext siblings -- still a pool.
+5. **Most informative next experiment without the owner.** Classify the 429 conflicts by kind (identical after normalisation, spelling
+   variant, same code different meaning, same meaning different code) so the key is usable the day an image arrives; with the owner:
+   the two-folio order.
+6. **Decision.** KEY32-CONFLICTS (brief -50, Sonnet, offline) now; the copy order is the owner's (SPRINT P12); no decode until f.106 is
+   on disk and the key reads it.
