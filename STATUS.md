@@ -337,6 +337,16 @@ OCR, which drops italic numerals, so whether the cipher groups themselves are in
 whole key test runs from the desk and the lead is promoted. Sorters (ASKS 173, 175) still empty; no owner scans. Spend this check-in
 by program: A 0, B 0, C 5.14.
 
+Check-in 152 (24 Oct 2026, 15:0x UTC). HEATHCOTE-PAGES (USD 17.44, D-, 3.49x cap: two subagent calls transcribed a 684-row printed
+table as one call per leaf, the GOLD-4D shape; lesson in the ledger -- a dense table is priced per ~50 rows with column crops, never
+as a page look). Findings: the italic passages in HMC 1899 are the editors' own English reconstruction, so no ciphertext of the two 1659
+Hyde-to-Fanshaw letters is in print; Hyde's Barwick cipher table of 12 June 1659 (Vita Johannis Barwick 1721) is in print and now on
+disk, one pass (ciphers/_triage/heathcote-1659-barwick-key.tsv, grade H as printed, rows M). Decision: LEAD-AO2 parks on the owner's
+enquiry to Barking and Dagenham (Valence House) -- SPRINT P15, no money until quoted. Spawned OUT-DRAFT-P14P15 (Sonnet, cap 3): the
+two enquiry drafts (Pepys Library P14, Valence House P15) in outreach/ with checked: empty for a separate gate-7 session. Every line
+now waits on the owner: P12 TNA order, P14/P15 enquiries, ASKS 173/175 sorts, ordered scans, the Leighton and Matyas ILL. Spend this
+check-in by program: A 0, B 0, C 17.44.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
