@@ -1,0 +1,41 @@
+[
+ {
+  "file": "IMG_R432_I3545_P1.png",
+  "decode_record": 432,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0040-0042)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R432_I3545_P1.png",
+  "source_px": [2300, 1689],
+  "source_bytes": 2203534,
+  "content_type": "image/png",
+  "sha256": "c734095de401aaac1310ce8c470501210f40460452d2a2dd6658e0c71ee48a89",
+  "sha1": "4c1f38046461ec1e756b042239fd033779d4fed2",
+  "fetched": "2026-10-24 DECODE-KEY32, one browser login (tools/decode_browser_login.js --guess-fullsize)",
+  "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 432 OUT --guess-fullsize (login required for full size)"
+ },
+ {
+  "file": "IMG_R432_I3546_P2.png",
+  "decode_record": 432,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0040-0042)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R432_I3546_P2.png",
+  "source_px": [2300, 1764],
+  "source_bytes": 2882542,
+  "content_type": "image/png",
+  "sha256": "5ab878b5ccbd2658d97c59ac79e5ffcf27393f57a16cd73dbb2366dc3549f87e",
+  "sha1": "0e8768a54df80ff6f2143ba1ebdf9563e7d16825",
+  "fetched": "2026-10-24 DECODE-KEY32, one browser login (tools/decode_browser_login.js --guess-fullsize)",
+  "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 432 OUT --guess-fullsize (login required for full size)"
+ },
+ {
+  "file": "IMG_R432_I3547_P3.png",
+  "decode_record": 432,
+  "decode_shelfmark": "TNA_SP106/6_CharlesII_(0040-0042)",
+  "source_url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R432_I3547_P3.png",
+  "source_px": [1614, 2300],
+  "source_bytes": 2321969,
+  "content_type": "image/png",
+  "sha256": "abbac0b3762afdf955c7359e6eb1024d6273d39f0386245e711facbdcecc72f0",
+  "sha1": "3469501f3f6351c2840e418de55e7de249accf21",
+  "fetched": "2026-10-24 DECODE-KEY32, one browser login (tools/decode_browser_login.js --guess-fullsize)",
+  "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 432 OUT --guess-fullsize (login required for full size)"
+ }
+]

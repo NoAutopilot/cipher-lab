@@ -271,3 +271,64 @@ free known-plaintext controls for that key; 10 undecoded siblings in SP 84/166, 
 candidates. None of the eleven Spanish intercepts in this folder carries the gloss; this folder's premise question (which SP 106/6 record
 is Tomokiyo's no. 34, and whether it matches the Spanish items) is unchanged. Next: DECODE-KEY32 (brief -47) fetches no. 32 (and 31, 35)
 from DECODE into sources/decode/ before any TNA image arrives.
+
+## DECODE fetch (DECODE-KEY32, 24 Oct 2026)
+
+Account 4, job DECODE-KEY32 (`.claude/briefs/runs/2026-10-24-acct4-research-director-47.md`). Goal: get SP 106/6 nos. 31,
+32, 35 (the Chauran/Wickfort/De Bacquoy key, distinct from no. 34's Spanish-vocabulary key already ruled out for
+517/522/523 in "## Key-image test (FUENTE-KEY, 18 Oct 2026)" above) on disk from DECODE ahead of any TNA copy order.
+Tomokiyo's own structural descriptions for nos. 31/32/35 (`sources/cryptiana/web/chauran.htm`, already on disk, re-read
+this pass rather than refetched): no. 32 is an **encoding table** (plain-to-code, alphabetical by word/syllable, persons/
+towns/countries as separate sequences) paired with no. 33 (**decoding table**, not needed for this job) for the main
+Chauran/Wickfort cipher; no. 31 is a **decoding table** and no. 35 the matching **encoding table** for a second, different
+cipher using numbers up to 999 across nine mark classes (overbar 30-271, breve 401-507, plus 500-618, circumflex 400-508,
+a polliwog-like mark 500-557, no diacritic 800-999, prime 801-980 for proper names; 1-135/1-137 under four more marks for
+single letters/syllables).
+
+**Step 1 (login-free, from cache).** All 49 SP106/6 Key records (ids 421-1502, `sources/decode/keys-all-2026-09-28-merged.tsv`,
+crawled 28 Sept 2026, no new requests) listed and ranked by shelfmark/date/language, not title alone (DECODE's shelfmark
+field is its own scan-page numbering, already shown unreliable as a proxy for Tomokiyo's item numbers by the no.34
+investigation): `sources/decode/2026-10-24-sp106-6-keys/candidates.tsv`. 3 Spanish-tagged and 1 Latin-tagged record
+excluded as already checked (517/522/523/524, FUENTE-KEY); 31 English-or-mixed-tagged records scored low (the
+Chauran/Wickfort correspondence is French); the remaining ~14 French-tagged records were the candidate pool. id 432
+(shelfmark 0040-0042, 3pp, the only SP106/6 key record dated exactly 1662-1662, cleartext field blank -- a decoding-table
+shape) scored HIGH on metadata alone and was fetched first.
+
+**Step 2 (one browser login, `tools/decode_browser_login.js 432 ... --fetch-page "RecordsView/509,RecordsView/497"
+--guess-fullsize --max-files 6 --delay 2000`).** Login accepted first time. Fetched: RecordsView/432 (primary) + its 3
+pages' thumbnails and full-size images (6 files, filling the max-files budget), plus RecordsView/509 and RecordsView/497
+(text only, no images -- the budget was spent on 432's three pages before the loop reached theirs). All three full-size
+images for 432 came back real (PNG, 2300 px long side, none matching the `035489a0...` forbidden-placeholder sha1).
+
+**Result: id 432 is NOT a match -- a documented negative.** DECODE's own "Additional Information" field for 432 (written
+by Satoshi Tomokiyo, 21 Jan 2024, quoted in full in `sources/decode/2026-10-24-sp106-6-keys/432/README.md`) identifies it
+as "A list of 31 pseudonyms in French. Names ans places suggest a colonial intrigue of some kind, related to North
+America, involving the Dutch and the highest levels of state, e.g. the King and Lord Arlington" -- the "31" is a count of
+pseudonyms on the sheet, not TNA's catalogue item number, and the subject has nothing to do with the Spanish-ambassador
+traffic or the Chauran/Wickfort correspondence. At a glance, page 1 is the dorse/endorsement side of a folded document
+(docket "No 2", date "1660" in a secretary hand); no transcription attempted. This is a genuine coincidence (a sheet
+labelled with 31 items, confused for "item no. 31") worth recording so no future worker re-spends a login on the same
+hypothesis.
+
+**509 and 497, text-only (unconfirmed, no image fetched this pass).** Both carry DECODE's own Cipher Type tag "Homophonic
+substitution, Nomenclatures" / Symbol Sets "Graphic signs, Numerical" (432 had both fields blank -- a data-entry gap, not
+a type signal). 509's Additional Information names id 506 (`TNA_SP106/6_CharlesII_(0096)`, French, 1pp) as carrying "the
+same cipher" -- a linked pair, and together with 509's own 3-page, multi-sheet "sometimes incomplete nomenclatures"
+description this is the strongest surviving candidate for one of the three target keys, but unconfirmed against
+chauran.htm's mark-class fingerprint without opening the image. 497's note (homophonic, 3 homophones/letter, ~300
+codegroups, nomenclature of names/places/syllables, a row of "esoteric symbols") does not obviously match either no.31/35's
+nine-mark-class numeral system or no.32's alphabetical two-part-code description, but is not ruled out.
+
+**Verdict: open, key not yet on disk.** None of SP 106/6 nos. 31, 32 or 35 was identified or imaged this pass; one
+plausible candidate (432) was ruled out with a documented reason, and two more (509/506, 497) remain open leads. Per the
+brief's host cap (<=12 record fetches, one login), the next step needs a fresh login: open 509, 506 and 497's full-size
+images (and, if still unresolved, the remaining ~9 untried French-tagged single-page records: 434, 435, 447, 503, 505,
+510, 511, 512, 513) and check each against chauran.htm's mark-class/structure fingerprint. The TNA copy order for the
+SP 84/165 Fuente intercepts (unrelated key, no.34) stays a separate, still-open question from "## Key-image test" above.
+
+Requests this pass: de-crypt.org 11 (1 login navigate + 1 login submit, 3 RecordsView pages [432 primary, 509, 497
+fetch-page], 3 thumbnails + 3 full images for 432), all >=2s apart, one login, well under the brief's <=12-record-fetch
+cap. No other hosts touched. No credentials printed; the account name in the saved RecordsView HTML pages was not
+quoted anywhere above and those pages were not committed (kept in the session scratchpad only, per Usage rule "digests,
+not repositories").
+

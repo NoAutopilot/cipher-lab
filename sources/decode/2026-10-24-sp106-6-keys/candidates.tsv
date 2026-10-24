@@ -1,0 +1,50 @@
+id	shelfmark_code	date_range	cleartext_lang	plaintext_lang	pages	plausibility_note
+421	TNA_SP106/6_CharlesII_(0008)			1	low -- language blank
+422	TNA_SP106/6_CharlesII_(0010-0015)	1672 - 1684	English	English	6	low -- English, not Chauran/Wickfort French cipher
+423	TNA_SP106/6_CharlesII_(0017)	1660 - 1685	English	English	1	low -- English
+424	TNA_SP106/6_CharlesII_(0019)	1660 - 1685	English	English	1	low -- English
+425	TNA_SP106/6_CharlesII_(0021)	1660 - 1685	English	English	1	low -- English
+426	TNA_SP106/6_CharlesII_(0023-0024)	1660 - 1685	English	English	2	low -- English
+427	TNA_SP106/6_CharlesII_(0026-0028)	1672 - 1674	English	English	3	low -- English
+428	TNA_SP106/6_CharlesII_(0030-0031)	1660 - 1685	English	English	2	low -- English
+429	TNA_SP106/6_CharlesII_(0032-0033)	1675 - 1675	English	English	2	low -- English, wrong decade
+430	TNA_SP106/6_CharlesII_(0038)	1660 - 1685	English	English	1	low -- English
+431	TNA_SP106/6_CharlesII_(0036)	1660 - 1685	English	English	1	low -- English
+432	TNA_SP106/6_CharlesII_(0040-0042)	1662 - 1662	no cleartext present	French	3	RULED OUT (fetched 24 Oct 2026, DECODE-KEY32) -- DECODE's own Additional Information (Tomokiyo, 21 Jan 2024) names it "A list of 31 pseudonyms in French", a North America/Dutch colonial-intrigue item unrelated to Chauran/Wickfort; the "31" is a pseudonym count, not TNA item no.31. See 432/README.md.
+433	TNA_SP106/6_CharlesII_(0044-0046)	1660 - 1685	English	English	3	low -- English
+434	TNA_SP106/6_CharlesII_(0047)	1660 - 1685	French	French	1	medium -- French, 1 page only (chauran.htm's two candidate ciphers both need several mark-class sections; a 1-page table is a weak fit but not excluded)
+435	TNA_SP106/6_CharlesII_(0049)	1660 - 1685	French	French	1	medium -- as 434
+436	TNA_SP106/6_CharlesII_(0061-0062)	1660 - 1685	English and Latin	English	2	low -- not French
+437	TNA_SP106/6_CharlesII_(0053)	1660 - 1685	English	English	1	low -- English
+447	TNA_SP106/6_CharlesII_(0055)	1660 - 1685	French	French	1	medium -- as 434
+465	TNA_SP106/6_CharlesII_(0057-0062)	1673 - 1673	French	French	5	medium-high -- French, multi-page (fits a many-mark-class table), but dated 1673 not 1662 (DECODE's per-record dates have already been shown unreliable for this piece, FUENTE-KEY 18 Oct 2026)
+476	TNA_SP106/6_CharlesII_(0065)	1660 - 1685	English	English	1	low -- English
+477	TNA_SP106/6_CharlesII_(0068)	1660 - 1685	English	English	1	low -- English
+481	TNA_SP106/6_CharlesII_(0072)	1660 - 1685	English	English	1	low -- English
+497	TNA_SP106/6_CharlesII_(0073-0074)	1660 - 1685	French	French	2	UNCONFIRMED, RecordsView text only (24 Oct 2026, no images fetched -- login's max-files budget spent on 432): Cipher Type "Homophonic substitution, Nomenclatures", Symbol Sets "Graphic signs, Numerical". DECODE's own note: "A homophonic substitution cipher with three homophones for each letter and a nomenclature, comprising of slightly less than 300 codegroups... entries for names and places and also for syllables, but very few for frequently occurring words. The third row of homophones... esoteric symbols... On the reverse page a few additional codegroups are scribbled." Does not obviously match either no.31/35's 9-mark-class 1-999 numeral system or no.32's alphabetical two-part code as chauran.htm describes them; needs the image.
+498	TNA_SP106/6_CharlesII_(0076)	1660 - 1685	English	English	1	low -- English
+499	TNA_SP106/6_CharlesII_(0078-0079)	1667 - 1667	English	French	2	low-medium -- mixed tags, wrong decade (1667)
+500	TNA_SP106/6_CharlesII_(0080-0083)	1673 - 1673	English	English	4	low -- English, wrong decade
+501	TNA_SP106/6_CharlesII_(0086)	1660 - 1685	English	English	1	low -- English
+502	TNA_SP106/6_CharlesII_(0088)	1660 - 1685	English	English	1	low -- English
+503	TNA_SP106/6_CharlesII_(0090)	1660 - 1685	French	French	1	medium -- as 434
+504	TNA_SP106/6_CharlesII_(0092)	1660 - 1685	English	English	1	low -- English
+505	TNA_SP106/6_CharlesII_(0094)	1660 - 1685	French	French	1	medium -- as 434
+506	TNA_SP106/6_CharlesII_(0096)	1660 - 1685	French	French	1	medium-high -- id 509's own Additional Information names this record as carrying "the same cipher" [POINTER: 506]; not independently opened this pass
+509	TNA_SP106/6_CharlesII_(0099-0101)	1660 - 1685	French	French	3	UNCONFIRMED, RecordsView text only (24 Oct 2026, no images fetched): Cipher Type "Homophonic substitution, Nomenclatures", Symbol Sets "Graphic signs, Numerical". DECODE's own note: "The three sheets carry sometimes incomplete nomenclatures with identical substitution ciphers and/or identical sets of nulls... The same cipher can be found in: TNA_SP106/6_CharlesII_(0096) [POINTER: id 506]." A linked pair with 506 (also French, 1 page, 0096) -- the strongest surviving candidate pair for this job, unconfirmed against chauran.htm's structural description without the image.
+510	TNA_SP106/6_CharlesII_(0104)	1660 - 1685	French	French	1	medium -- as 434
+511	TNA_SP106/6_CharlesII_(0106)	1660 - 1685	French	French	1	medium -- as 434
+512	TNA_SP106/6_CharlesII_(0108)	1660 - 1685	French	French	1	medium -- as 434
+513	TNA_SP106/6_CharlesII_(0110-0111)	1659 - 1659	French	French	2	medium -- French, 2 pages, 1659 (close to but not 1662)
+514	TNA_SP106/6_CharlesII_(0113)	1660 - 1685	English	English	1	low -- English
+515	TNA_SP106/6_CharlesII_(0115)	1660 - 1685	English	English	1	low -- English
+516	TNA_SP106/6_CharlesII_(0117-0118)	1659 - 1659	English	English	2	low -- English
+517	TNA_SP106/6_CharlesII_(0123-0125)	1660 - 1685	Spanish	Spanish	2	excluded -- already fetched and ruled out as Tomokiyo's no.34 region (FUENTE-KEY, 18 Oct 2026): design-family match only, not the sheet
+518	TNA_SP106/6_CharlesII_(0127-0128)	1657 - 1657	English	English	2	low -- English
+519	TNA_SP106/6_CharlesII_(0129-0130)	1657 - 1657	English	English	2	low -- English
+1501	TNA_SP106/6_CharlesII_(0140-0141)-1	1660 - 1685	English	English	1	low -- English
+1502	TNA_SP106/6_CharlesII_(0140-0141)-2	1660 - 1685	English	English	1	low -- English
+521	TNA_SP106/6_CharlesII_(0146-0148)	1658 -	English	English	3	low -- English
+522	TNA_SP106/6_CharlesII_(0160)	1660 - 1685	Spanish	Spanish	1	excluded -- already fetched (FUENTE-KEY): "Zifra cum Lobkowiz", unrelated Habsburg-court key
+523	TNA_SP106/6_CharlesII_(0163-0164)	1672 - 1672	Spanish	Spanish	2	excluded -- already fetched (FUENTE-KEY): 1672 imperial-diplomacy docket (Lisola, Brandenburg), unrelated
+524	TNA_SP106/6_CharlesII_(0165)	1660 - 1685	Latin	Latin	1	excluded -- wrong language
