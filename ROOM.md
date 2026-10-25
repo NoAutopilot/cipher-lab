@@ -18660,3 +18660,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-25 02:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 02:34 UTC 25 Oct: spawned 0 -- no queued account-4 rows
 2026-10-25 02:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 02:39 UTC 25 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 05:20 UTC 25 Oct
 2026-10-25 02:51 | orchestrator (owner account) | nightly key cross-match (fired 02:49 UTC 25 Oct, run with fetch+checkout, not stash): --since-hours 25 saw 69 changed paths, 1 key file, 0 ciphertext files; 0 own-text pairs, 0 non-own rows clear the gate; 0 leads. KEY-CROSSMATCH.tsv unchanged; nothing for NEXT-STEPS. usage: five_hour allowed by get_session, resets 05:20 UTC 25 Oct
+2026-10-25 03:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 03:09 UTC: spawned 0 (), queued left 0
