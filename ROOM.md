@@ -18681,3 +18681,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-25 06:35 | account-4 parent | check-in 159 (fired 06:31 UTC 25 Oct): BNF-FOCUS wave 45 read -- no new match, no account-4 flag. No owner input (sorters empty, no scans, P12/P14/P15 unanswered); nothing live, nothing spawned by design. Next check-in ~09:3x. usage: five_hour allowed by get_session, resets 08:30 UTC 25 Oct
 2026-10-25 06:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 06:34 UTC 25 Oct: spawned 0 -- no queued account-4 rows
 2026-10-25 06:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 06:39 UTC 25 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 10:20 UTC 25 Oct
+2026-10-25 07:12 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 07:12 UTC: spawned 0 (), queued left 0
