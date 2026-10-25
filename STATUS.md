@@ -391,6 +391,10 @@ Check-in 158 (25 Oct 2026, 03:5x UTC). Quiet: no owner input (sorters empty, no 
 nightly key cross-match (02:49) found 0 leads. Nothing live, nothing spawned by design. Next check-in lands after BNF-FOCUS (~06:1x).
 Spend this check-in: 0.
 
+Check-in 159 (25 Oct 2026, 06:3x UTC). BNF-FOCUS wave 45 (06:18): no new item-level match, no account-4 flag (Bourdeau's five
+status changes are none of ours; the Dinteville reading row left BNF-VALUE after the card was superseded). No owner input (sorters
+empty, no scans, P12/P14/P15 unanswered). Nothing live, nothing spawned by design. Spend this check-in: 0.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
