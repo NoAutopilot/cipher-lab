@@ -387,6 +387,10 @@ BNF-FOCUS flag read at the ~06:1x window. Spend this check-in by program: A 0, B
 Check-in 157 (25 Oct 2026, 00:4x UTC). Quiet: no owner input (sorters empty, no scans, P12/P14/P15 unanswered), no flags, nothing
 live, nothing spawned by design. Next: BNF-FOCUS flag read after its ~06:1x run. Spend this check-in: 0.
 
+Check-in 158 (25 Oct 2026, 03:5x UTC). Quiet: no owner input (sorters empty, no scans, P12/P14/P15 unanswered), no flags; the
+nightly key cross-match (02:49) found 0 leads. Nothing live, nothing spawned by design. Next check-in lands after BNF-FOCUS (~06:1x).
+Spend this check-in: 0.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
