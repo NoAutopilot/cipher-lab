@@ -435,6 +435,10 @@ the window's D- rows into 7 near-cap and 5 real misses (3.49x, 1.92x, 1.71x, 1.6
 All five retro rows applied. No owner input (sorters empty, no scans, P12/P14/P15 unanswered), no flags. Nothing live, nothing
 spawned by design. Spend this check-in: 3.70 overhead, A/B/C 0.
 
+Check-in 169 (26 Oct 2026, 12:4x UTC). Quiet: no owner input (sorters empty, no scans, P12/P14/P15 unanswered), no flags. Three
+stale account-4 WORK-QUEUE claims from 5-9 Oct (FER1478-SORTER, TXE-S, TXE-T2; sessions archived and ledgered) closed as housekeeping.
+Nothing live, nothing spawned by design. Spend this check-in: 0.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
