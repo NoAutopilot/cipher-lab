@@ -56,6 +56,15 @@ Usage:
     locate the Cost cell at all, so a row with both an unresolved cost and a
     non-standard outcome code needs the main check's own pass too.
 
+  tools/ledger_check.py --over-cap-severity FROM_ROW
+    RETRO-2026-10-26 P2. A blended "N of M over cap" percentage conflates two different problems
+    (RETRO-2026-10-26 section 2: 12 of 23 D- rows one window, 8 of them under 1.3x -- "one extra tool
+    call or a slightly longer read", not a pricing failure worth a lesson). For every D- row at or
+    after FROM_ROW whose Lesson cell carries a "<N>x" (or "<N>x cap") ratio, prints the rows split into
+    "near-cap" (ratio < 1.3) and "real miss" (ratio >= 1.3); a D- row whose Lesson carries no such
+    ratio is listed under "unparsed". Printed only -- always exits 0, the same as --placeholder-report:
+    a retrospective reads this report, no push is blocked on it.
+
   Baseline (16 Oct 2026). The main check reports only rows after the line number stored in
     tools/data/ledger_check_baseline.txt and exits 0 when those are clean; `--all` reports the whole
     file. See read_baseline() for why. A blank line inside the table body no longer ends the table
@@ -103,6 +112,10 @@ SESSION_ID_RE = re.compile(r'^session_[A-Za-z0-9]+$')
 MODEL_CELL_RE = re.compile(r'^(Fable|Opus|Sonnet|Haiku)\b', re.IGNORECASE)
 ACCOUNT_CELL_RE = re.compile(r'^(account-\d|owner|other|third|ytbiz)$', re.IGNORECASE)
 SEPARATOR_ROW_RE = re.compile(r'^:?-+:?$')
+# RETRO-2026-10-26 P2: the "<N>x" (or "<N>x cap") over-cap ratio a D- row's own Lesson cell already
+# states (e.g. "ran 1.69x its USD 3 cap"), reused to split the over-cap rate by severity.
+RATIO_RE = re.compile(r'(\d+(?:\.\d+)?)\s*x\b', re.I)
+SEVERITY_THRESHOLD = 1.3
 
 
 def split_row(line):
@@ -227,6 +240,52 @@ def row_cost_and_session(fields):
     if outcome_i is None or outcome_i == 0:
         return None, session_id
     return fields[outcome_i - 1], session_id
+
+
+def find_outcome_and_lesson(fields):
+    """Return (outcome_token, lesson_text) for a row: the outcome cell is located the same way
+    row_cost_and_session() finds it (an exact VALID_CODES match on leading_token, scanning from index
+    3), and the lesson text is the row's last field (the ledger's own column order always puts Lesson
+    last). Returns (None, None) when no outcome-shaped cell is found."""
+    for i in range(3, len(fields)):
+        if leading_token(fields[i]) in VALID_CODES:
+            return fields[i], fields[-1] if fields else ""
+    return None, None
+
+
+def over_cap_severity(lines, from_row):
+    """RETRO-2026-10-26 P2: among D- rows at or after from_row, split by the Lesson cell's own "<N>x"
+    ratio into near-cap (< SEVERITY_THRESHOLD) and real-miss (>= SEVERITY_THRESHOLD); a D- row whose
+    Lesson has no parseable ratio goes under 'unparsed'. Returns (near, real, unparsed), each a list
+    of (lineno, ratio) for near/real and lineno alone for unparsed."""
+    near, real, unparsed = [], [], []
+    for lineno, fields in split_table(lines, from_row):
+        outcome, lesson = find_outcome_and_lesson(fields)
+        if outcome != 'D-':
+            continue
+        m = RATIO_RE.search(lesson or '')
+        if not m:
+            unparsed.append(lineno)
+            continue
+        ratio = float(m.group(1))
+        (near if ratio < SEVERITY_THRESHOLD else real).append((lineno, ratio))
+    return near, real, unparsed
+
+
+def print_over_cap_severity(lines, from_row):
+    near, real, unparsed = over_cap_severity(lines, from_row)
+    total = len(near) + len(real) + len(unparsed)
+    print(f"Over-cap severity, D- rows >= line {from_row} ({total} rows):")
+    print(f"  near-cap (<{SEVERITY_THRESHOLD}x): {len(near)}")
+    for lineno, ratio in near:
+        print(f"    line {lineno}: {ratio}x")
+    print(f"  real miss (>={SEVERITY_THRESHOLD}x): {len(real)}")
+    for lineno, ratio in real:
+        print(f"    line {lineno}: {ratio}x")
+    if unparsed:
+        print(f"  unparsed (no ratio in Lesson): {len(unparsed)}")
+        for lineno in unparsed:
+            print(f"    line {lineno}")
 
 
 def find_placeholder_rows(lines):
@@ -451,10 +510,20 @@ def main(argv=None):
         type=int,
         help="print the S/A/V/C effort table for rows at or after FROM_ROW, plus parent-vs-worker spend (see module docstring); the main duplicate/outcome-code check still runs",
     )
+    ap.add_argument(
+        "--over-cap-severity",
+        metavar="FROM_ROW",
+        type=int,
+        help="print D- rows at or after FROM_ROW split into near-cap (<1.3x) and real-miss (>=1.3x) by their Lesson cell's own ratio (see module docstring); printed only, always exits 0",
+    )
     args = ap.parse_args(argv)
 
     with open(LEDGER, encoding="utf-8") as f:
         lines = f.readlines()
+
+    if args.over_cap_severity is not None:
+        print_over_cap_severity(lines, args.over_cap_severity)
+        return 0
 
     if args.split is not None:
         print_split(lines, args.split)

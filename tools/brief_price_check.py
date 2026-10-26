@@ -14,6 +14,19 @@ Must NOT block: a brief with no image step (a gate-fix, a print check, a family_
 only reads an existing transcription file), or a brief that says "no images" / "disk only" with no blind-pass or
 transcribe verb (tests cover both, plus F36-GLOSS's own text as the failing case). A worker's report wording
 such as "report vision calls used" is not an image step on its own.
+
+Dense-source row check (RETRO-2026-10-26 P1, see dense_check()): a section with an image step that names a
+dense source ("table", "register", "dense leaf/page", "tabula") must also state an estimated row or entry
+count near that mention, and the gate requires vision-call N >= ceil(rows / 50) (the ~50-rows-per-call rate
+HEATHCOTE-PAGES's own lesson names). Must catch: a section naming a table/register/tabula with no nearby row
+estimate ("TABLE <job>: no row estimate") -- brief -52 (HEATHCOTE-PAGES), whose "transcribe the table ... two
+passes if under 150 rows" names only a pass-count threshold, never an actual size estimate, and whose 8 calls
+were priced for page looks, not a 684-row table; and a section with a row estimate but too few calls ("TABLE
+<job>: <rows> rows need >= <N> ..."). Must NOT block: a section whose "table" is the worker's own markdown
+output-table spec ("Output: ... with a table (id, item, ...)" or "... (columns ...)") -- brief -55 (SCOUT-ANTT)
+is the worked passing case; a section with no image step at all -- brief -53 (OUT-DRAFT-P14P15, vision calls:
+0) is the worked passing case; and a section naming a dense source with a genuine nearby estimate ("the dense
+leaf, about 600 rows") backed by enough calls.
 Rates: Sonnet about USD 1.5 a call on native crops (AX-COMP2); Opus about USD 1.3 a call on top of the 3.0 session floor
 (HAR-41R, ledger 4772: 5 reader calls measured, 16 Oct 2026, EXC-2026-10-16 fix B). The "Opus rate unmeasured" wording is
 retired (it let HAR-41R through at 2.1x): an Opus image brief writes the line with r = 1.3 like any other.
@@ -54,6 +67,15 @@ SECTION = re.compile(r'^#{2,3} +(\S+).*$', re.M)
 MODEL = re.compile(r'\b(Fable|Opus|Sonnet)\b', re.I)
 SCAP = re.compile(r'\bcap (?:USD ?|\$)?([\d.]+)', re.I)
 
+# RETRO-2026-10-26 P1: a brief describing a source as a "table", "register" or "dense leaf/page" (not a plain
+# page) must also state an estimated row or entry count; the gate then requires vision calls >= ceil(rows / 50)
+# for that unit, not merely a self-consistent N x r = X line (HEATHCOTE-PAGES, LEDGER.md row 4881: 8 calls priced
+# for page looks let a 684-row Barwick table leaf be transcribed in one call each, 3.49x its cap).
+TABLE_RE = re.compile(r'\btable\b|\bregister\b|\bdense (?:leaf|page)\b|\btabula\b', re.I)
+ROWS_RE = re.compile(r'(\d+)\s*(?:rows?|entries)\b', re.I)
+JOBNAME_RE = re.compile(r'^#{2,3}\s+(?:JOB\s+)?(\S+)', re.M)
+ROWS_PER_CALL = 50
+
 
 def floor_check(text, floors=FLOORS):
     """Per '## JOB -- ...' heading (or its first 200 body characters): a named model whose cap is under its floor.
@@ -67,6 +89,67 @@ def floor_check(text, floors=FLOORS):
         if mm and cm and mm.group(1).lower() in floors and float(cm.group(1).rstrip('.')) < floors[mm.group(1).lower()]:
             out.append((m.group(1), mm.group(1), float(cm.group(1).rstrip('.')), floors[mm.group(1).lower()]))
     return out
+
+
+def _job_name(text):
+    m = JOBNAME_RE.search(text)
+    return m.group(1) if m else 'JOB'
+
+
+def _dense_matches(text):
+    """TABLE_RE matches that are not the worker's own markdown output-table spec: a "table" word
+    followed within 40 chars by "(id" or "columns" names a table the worker will WRITE (an id/item
+    row layout for a report), not a source it must transcribe, and is skipped (brief -55, SCOUT-ANTT:
+    "a table (id, fonds and docId, item, ...)")."""
+    out = []
+    for m in TABLE_RE.finditer(text):
+        window = text[m.end():m.end() + 40].lower()
+        if '(id' in window or 'columns' in window:
+            continue
+        out.append(m)
+    return out
+
+
+THRESHOLD_BEFORE_RE = re.compile(r'\b(?:under|over|less than|more than|at least|up to)\s*$', re.I)
+
+
+def _is_row_estimate(text, start):
+    """A ROWS_RE match is a real size estimate, not a pass-count threshold phrase ("two passes if
+    under 150 rows", brief -52) -- checked by the word immediately before the number."""
+    before = text[max(0, start - 30):start]
+    return not THRESHOLD_BEFORE_RE.search(before)
+
+
+def _nearby_rows(text, m, before=60, after=150):
+    """The row/entry count stated close to a dense-source mention, not anywhere in the section, and
+    not a threshold phrase (see _is_row_estimate) -- brief -52 (HEATHCOTE-PAGES)'s only "rows" mention
+    is "two passes if under 150 rows", a pass-count threshold, never a stated size of the table."""
+    lo, hi = max(0, m.start() - before), m.end() + after
+    window = text[lo:hi]
+    for rm in ROWS_RE.finditer(window):
+        if _is_row_estimate(text, lo + rm.start()):
+            return int(rm.group(1))
+    return None
+
+
+def dense_check(text, n):
+    """RETRO-2026-10-26 P1: return (rc, reason, 'fail') if a dense-source mention lacks a nearby row
+    estimate, or has one that N vision calls cannot cover at ROWS_PER_CALL; else None."""
+    matches = _dense_matches(text)
+    if not matches:
+        return None
+    job = _job_name(text)
+    rows = None
+    for m in matches:
+        r = _nearby_rows(text, m)
+        if r is not None:
+            rows = r if rows is None else max(rows, r)
+    if rows is None:
+        return 1, f'TABLE {job}: no row estimate', 'fail'
+    need = -(-rows // ROWS_PER_CALL)  # ceil
+    if n < need:
+        return 1, f'TABLE {job}: {rows} rows need >= {need} vision calls (~{ROWS_PER_CALL} rows/call), got {n}', 'fail'
+    return None
 
 
 JOB_SPLIT = re.compile(r'^(?=#{2,3} +(?:JOB\s+)?\S)', re.M)
@@ -106,6 +189,9 @@ def check_one(text):
     cap = CAP.search(text)
     if cap and x > float(cap.group(1).rstrip('.')) * 1.0001:
         return 1, f'vision calls price {x} exceeds cap {cap.group(1).rstrip(".")}', 'fail'
+    dense = dense_check(text, n)
+    if dense:
+        return dense
     return 0, 'ok', 'ok'
 
 

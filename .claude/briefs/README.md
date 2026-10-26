@@ -217,6 +217,12 @@ applied unchanged, and three named cycle-3 briefs written from it.
   (HAR-41R, ledger 4772) -- "Opus rate unmeasured" is retired. "Disk only" means no network, not no images: a blind
   sort, a blind labelling pass, a "blind Sonnet call" or an exemplar-crop check is an image step and carries the line
   (MONL-SORT, CL1161-S7, MONL-VB, LIN-LAB2 passed the gate as no-image at 2.2-3.0x cap; the gate now catches all four).
+  A sorter-build job renders through `tools/sign_sorter.py` directly; a worker that reads the page template into its
+  own context to build it is pricing the template's size, not the job (RETRO-2026-10-26 P3; SORTER-KING, ledger
+  row 4870: a Sonnet page-build job that read the 800 KB sorter template into context ran 1.92x its USD 4 cap).
+  A browser-fetch step on a client-rendered catalogue prices each fetch at about USD 0.7, the same way a vision call
+  is a counted unit above -- a curl-shaped price on a browser-shaped step undercounts it (RETRO-2026-10-26 P3;
+  HEATHCOTE-HOLDER, ledger row 4880: three headless-browser fetches ran 1.71x its USD 3 cap).
 - **A key file is opened before it is named as a key (16 Oct 2026, EXC-2026-10-16, ledger 4443 X).** A key-application
   brief names its key file only after the orchestrator has opened it, and says in one clause what it shows (a table of
   values, a decipherment, a cipher crop). F4687-LKEY's brief called `lasry_p033_1.png` "his key"; at full size it is a

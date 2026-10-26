@@ -12,6 +12,11 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 import brief_price_check as b  # noqa: E402
 
 F36 = os.path.join(ROOT, ".claude/briefs/runs/2026-10-03-acct3-f36-gloss.md")
+# RETRO-2026-10-26 P1 worked cases: -52 (HEATHCOTE-PAGES) now fails the dense-source row check;
+# -55 (SCOUT-ANTT) and -53 (OUT-DRAFT-P14P15) pass it (output-table spec, no image step).
+HEATHCOTE_PAGES = os.path.join(ROOT, ".claude/briefs/runs/2026-10-24-acct4-research-director-52.md")
+SCOUT_ANTT = os.path.join(ROOT, ".claude/briefs/runs/2026-10-24-acct4-research-director-55.md")
+OUT_DRAFT = os.path.join(ROOT, ".claude/briefs/runs/2026-10-24-acct4-research-director-53.md")
 
 CASES = [
     ("gate-fix, no image step",
@@ -62,6 +67,22 @@ CASES = [
      "pass by a subagent over the sheet.", 1),
     ("image step, no line",
      "# TR-V: transcribe f.12r from crops cut with tools/iiif_lines.py. Cap $4.", 1),
+    # RETRO-2026-10-26 P1: dense-source row check (tools/dense_check via check_one).
+    ("dense table, no nearby row estimate (the HEATHCOTE-PAGES shape in miniature)",
+     "## JOB TB-1 (Sonnet; cap USD 5)\ntranscribe the table only if legible, two passes if under 150 rows, "
+     "else one pass.\nvision calls: 8 x USD 0.5 = 4\n", 1),
+    ("dense register with a stated estimate but too few calls",
+     "## JOB TB-2 (Sonnet; cap USD 6)\nTranscribe the dense register (about 600 rows) from its crops.\n"
+     "vision calls: 2 x USD 1.5 = 3\n", 1),
+    ("dense tabula with a stated estimate and enough calls",
+     "## JOB TB-3 (Sonnet; cap USD 15)\nTranscribe the tabula (about 300 rows) from its crops.\n"
+     "vision calls: 6 x USD 1.5 = 9\n", 0),
+    ("table word is the worker's own output-table spec, not a source",
+     "## JOB TB-4 (Sonnet; cap USD 3)\nTranscribe the crops; write a table (id, item, value) of the results.\n"
+     "vision calls: 2 x USD 1.5 = 3\n", 0),
+    ("table word followed by 'columns', also an output-table spec",
+     "## JOB TB-5 (Sonnet; cap USD 3)\nRead the crops and report a table with columns (id, line, sign).\n"
+     "vision calls: 2 x USD 1.5 = 3\n", 0),
 ]
 
 
@@ -72,6 +93,17 @@ def main():
     if rc != 1:
         print(f"FAIL: F36-GLOSS brief should fail, got rc={rc} ({why})")
         fails += 1
+    with open(HEATHCOTE_PAGES, encoding="utf-8") as f:
+        rc, why, _ = b.check(f.read())
+    if rc != 1 or not why.startswith("TABLE"):
+        print(f"FAIL: HEATHCOTE-PAGES brief (-52) should FAIL the dense-source row check, got rc={rc} ({why})")
+        fails += 1
+    for path, label in ((SCOUT_ANTT, "SCOUT-ANTT (-55)"), (OUT_DRAFT, "OUT-DRAFT-P14P15 (-53)")):
+        with open(path, encoding="utf-8") as f:
+            rc, why, _ = b.check(f.read())
+        if rc != 0:
+            print(f"FAIL: {label} brief should pass, got rc={rc} ({why})")
+            fails += 1
     for name, text, want in CASES:
         rc, why, _ = b.check(text)
         if rc != want:
