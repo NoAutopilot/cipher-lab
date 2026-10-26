@@ -428,6 +428,13 @@ matched Tomokiyo's Nevers key no.25 to Champagne fr.3623 no.25, read in part by 
 already applied no.25 (80/102 H, N4) and its gaps are illegibility, so no job. No owner input (sorters empty, no scans, P12/P14/P15
 unanswered). Spend this check-in by program: 0 so far (the apply job is overhead).
 
+Check-in 168 (26 Oct 2026, 09:3x UTC). RETRO-APPLY-1026 (USD 3.70, D, under cap): RETRO-2026-10-26 P1-P3 applied with offline tests --
+brief_price_check's dense-table rule fails HEATHCOTE-PAGES's brief as intended and, retroactively, seven earlier briefs (none live), with
+one false positive on the apply brief itself (it quotes the rule's words; paraphrase next time); ledger_check --over-cap-severity splits
+the window's D- rows into 7 near-cap and 5 real misses (3.49x, 1.92x, 1.71x, 1.69x, 1.32x); two pricing sentences in the common tail.
+All five retro rows applied. No owner input (sorters empty, no scans, P12/P14/P15 unanswered), no flags. Nothing live, nothing
+spawned by design. Spend this check-in: 3.70 overhead, A/B/C 0.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
