@@ -865,3 +865,12 @@ One Opus call on `sibling_f27/gloss/f27g_L01_s1.jpg`, `_s2.jpg` (crop paths only
 - Third reader on the same crops, same gate, every number flat (K1 3/14 three times): blind model reads of this gloss are [retired]
   under rule 3's third-attempt clause. Next: a person reading the gloss under `43 18 1 32` (the same two crops).
 Vision: 1 Opus subagent call (2 crops); 0 own looks. Requests: none. Not found in print: nothing searched (sibling read job).
+
+## Key no.25 applied elsewhere (26 Oct 2026, LANE BNF-FOCUS, account 2)
+
+Not an item match for f.35r. dbourdeau/cyphersolver `targets/champagne1590` (25 Oct 2026) reads the Champagne news-letter
+fr.3623 no.25 (June 1590) in part with Tomokiyo's Nevers key no.25, the key this folder names (fr.3995 f.50-51, Gallica
+btv1b525085665 canvas 104); the match is Michael Brackx's (issue #96). Their own gap list says only six barred entries of the
+no.25 sheet (fr.3995 f.51r) are transcribed. So the key route for this folder has a worked sibling and a partial sheet
+transcription to start from (key-assisted recovery, route 1 of CLAUDE.md pipeline 3); nothing is read here.
+Snapshot `sources/cyphersolver/2026-10-26-champagne1590/NOTES.md`. Credit: Michael Brackx; S. Tomokiyo; D. Bourdeau.

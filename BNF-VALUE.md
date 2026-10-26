@@ -438,3 +438,9 @@ Bourdeau HEAD 9ea1142f0 -> 6fa6a846b (a reading audit of 22-23 Oct relabelled ~1
 - sforza-maino-1446: their audit keeps f.68 read and moves f.70 to "decoded, not read" (note added).
 - Every earlier found-solved of this lane was re-checked against the audit: none rests on a downgraded entry.
 ASKS 163/169 unanswered; fr.3982 f.25 / fr.3985 f.89 no hit.
+
+## Wave 46 (26 Oct 2026, 06:1x UTC by date -u)
+Bourdeau 37750f5f6 -> d679f05f0 (mostly Nationaal Archief / KHA work); Aymeloglu bde4ab7 unchanged. No item-level match.
+Queue item Q11 (fr.3623 nos.24, 25, 60, Champagne news-letters 1590): their champagne1590 now reads no.25 in part with
+Tomokiyo's Nevers key no.25 (Brackx, issue #96); nos.24/60 decoded, not read. The same key (fr.3995 f.50-51) is the one
+fr3416-nevers-fils-1589 (partial) needs: key-route note added there. ASKS 163/169 unanswered.

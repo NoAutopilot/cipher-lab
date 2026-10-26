@@ -1,0 +1,1 @@
+Unmodified snapshot of github.com/dbourdeau/cyphersolver targets/champagne1590/NOTES.md at commit d679f05f03dcd266b0dbe27fe40b421e0e7be42b, fetched 26 Oct 2026 by LANE BNF-FOCUS (account 2). Licence: code MIT, text CC BY 4.0; contributors credited inside. Do not edit.
