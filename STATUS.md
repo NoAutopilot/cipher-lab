@@ -439,6 +439,10 @@ Check-in 169 (26 Oct 2026, 12:4x UTC). Quiet: no owner input (sorters empty, no 
 stale account-4 WORK-QUEUE claims from 5-9 Oct (FER1478-SORTER, TXE-S, TXE-T2; sessions archived and ledgered) closed as housekeeping.
 Nothing live, nothing spawned by design. Spend this check-in: 0.
 
+Check-in 170 (26 Oct 2026, 15:4x UTC). Quiet: no owner input (sorters empty, no scans, P12/P14/P15 unanswered), no flags. Two more
+stale account-4 WORK-QUEUE claims from 9 Oct closed (LANE-TX-ENGINEER-2, TX-RED; sessions archived); no account-4 row is claimed now.
+Nothing live, nothing spawned by design. Spend this check-in: 0.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
