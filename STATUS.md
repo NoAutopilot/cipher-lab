@@ -416,6 +416,9 @@ live, nothing spawned by design. Spend this check-in: 0.
 Check-in 165 (26 Oct 2026, 01:1x UTC). Quiet: no owner input (sorters empty, no scans, P12/P14/P15 unanswered), no flags. Nothing
 live, nothing spawned by design. The fetch now runs in the background at every check-in (it hung twice). Spend this check-in: 0.
 
+Check-in 166 (26 Oct 2026, 04:1x UTC). Quiet: no owner input (sorters empty, no scans, P12/P14/P15 unanswered), no flags; nightly
+key cross-match (02:49) 0 leads. Nothing live, nothing spawned by design. Next check-in after BNF-FOCUS. Spend this check-in: 0.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
