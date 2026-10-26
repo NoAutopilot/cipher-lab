@@ -1,5 +1,11 @@
 # Queue of targets to attempt
 
+<!-- 26 Oct 2026, RETRO-2026-10-26 P4 (applied by the account-4 parent): since the owner's research-director directive of 17 Oct
+     2026 (CLAUDE.md pipeline 3), this ranking no longer gates what a parent picks. The parent fills its slots by the route
+     priority (key-assisted recovery, acquisition, sibling/gloss alignment, then cryptanalysis) across programs A/B/C at a
+     40/30/30 starting split; QUEUE.md is the reference order and evidence store within a route, and 'did the top five produce
+     anything' is answered per program in STATUS.md's daily synthesis, not by this file's rank order. -->
+
 ## Re-rank for LANE B5, 26 Sept 2026, 00:03 UTC
 
 Worker SCOUT-RERANK (Sonnet), for parent 7d (session_01744aLgcLnadR1XQckyHwcu). LANE B4 closed 23:57 UTC 25 Sept 2026
