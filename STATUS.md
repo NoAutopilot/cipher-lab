@@ -419,6 +419,15 @@ live, nothing spawned by design. The fetch now runs in the background at every c
 Check-in 166 (26 Oct 2026, 04:1x UTC). Quiet: no owner input (sorters empty, no scans, P12/P14/P15 unanswered), no flags; nightly
 key cross-match (02:49) 0 leads. Nothing live, nothing spawned by design. Next check-in after BNF-FOCUS. Spend this check-in: 0.
 
+Check-in 167 (26 Oct 2026, 06:4x UTC). The weekly retrospective (RETRO-2026-10-26, owner account) landed with five proposals; all
+five registered in RETRO-PROPOSALS.tsv (retro_check clean again). P4 applied by hand: QUEUE.md's header now says the 17 Oct route
+priority and 40/30/30 split gate what a parent picks, and QUEUE.md is the reference order within a route. P5 is the registration
+itself. P1-P3 (brief_price_check's dense-table row-count rule, ledger_check --over-cap-severity, two common-tail pricing sentences)
+go to RETRO-APPLY-1026 (Sonnet, cap 4, offline, with tests; brief -56). BNF-FOCUS wave 46: no new match; its fr3416 lead (Brackx
+matched Tomokiyo's Nevers key no.25 to Champagne fr.3623 no.25, read in part by Bourdeau) adds no material for f.35r -- that folder
+already applied no.25 (80/102 H, N4) and its gaps are illegibility, so no job. No owner input (sorters empty, no scans, P12/P14/P15
+unanswered). Spend this check-in by program: 0 so far (the apply job is overhead).
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
