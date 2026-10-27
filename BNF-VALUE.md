@@ -444,3 +444,10 @@ Bourdeau 37750f5f6 -> d679f05f0 (mostly Nationaal Archief / KHA work); Aymeloglu
 Queue item Q11 (fr.3623 nos.24, 25, 60, Champagne news-letters 1590): their champagne1590 now reads no.25 in part with
 Tomokiyo's Nevers key no.25 (Brackx, issue #96); nos.24/60 decoded, not read. The same key (fr.3995 f.50-51) is the one
 fr3416-nevers-fils-1589 (partial) needs: key-route note added there. ASKS 163/169 unanswered.
+
+## Wave 47 (27 Oct 2026, 06:1x UTC by date -u)
+Bourdeau d679f05f0 -> 0aee22ad3 (13 new non-BnF targets: Dresden, Riksarkivet, NARA, KHA, Simancas); Aymeloglu bde4ab7 unchanged.
+No item-level match; no earlier found-solved rests on a downgraded entry. Queue item Q11: Bourdeau's bienvenut1590 (fr.3623
+no.23, Bienvenut to Nevers, Paris, 28 Feb 1590, DECODE R9453) now reads "read (26 Oct 2026): ff. 35r-v transcribed in full and
+read with the key slip, read_share 0.985" -- Q11's no.23 is found-solved elsewhere (this project has no folder for it); nos.24,
+25, 60 are the champagne1590 entry (wave 46). ASKS 163/169 unanswered.
