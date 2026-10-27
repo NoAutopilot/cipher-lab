@@ -455,6 +455,11 @@ account-4 row claimed. Nothing live, nothing spawned by design. Spend this check
 Check-in 174 (27 Oct 2026, 03:5x UTC). Quiet: no owner input (sorters empty, no scans, P12/P14/P15 unanswered), no flags; nightly
 key cross-match (02:49) 0 leads. Nothing live, nothing spawned by design. Next check-in after BNF-FOCUS. Spend this check-in: 0.
 
+Check-in 175 (27 Oct 2026, 06:3x UTC). BNF-FOCUS wave 47 (06:18): no item-level match; it still lists the decode-4450 card and the
+fr3416 key no.25 lead as open -- both were answered by this account (check-ins 160 and 167: decode-4450 is found-solved in all three
+registers; the no.25 lead adds nothing for f.35r); no new action. No owner input (sorters empty, no scans, P12/P14/P15 unanswered).
+Nothing live, nothing spawned by design. Spend this check-in: 0.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
