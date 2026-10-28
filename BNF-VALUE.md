@@ -451,3 +451,9 @@ No item-level match; no earlier found-solved rests on a downgraded entry. Queue 
 no.23, Bienvenut to Nevers, Paris, 28 Feb 1590, DECODE R9453) now reads "read (26 Oct 2026): ff. 35r-v transcribed in full and
 read with the key slip, read_share 0.985" -- Q11's no.23 is found-solved elsewhere (this project has no folder for it); nos.24,
 25, 60 are the champagne1590 entry (wave 46). ASKS 163/169 unanswered.
+
+## Wave 48 (28 Oct 2026, 06:1x UTC by date -u)
+Bourdeau 0aee22ad3 -> bcb305b49 (about 90 new targets, mostly NARA/KHA/Dresden/Riksarkivet/ANTT and Brice Dudout's and WAINUT's
+contributed telegrams; 13 blocked/closed catalogue attempts recorded); Aymeloglu bde4ab7 unchanged. No item-level match. Prior-work
+note: fr3151-noailles-1558 (open) -- Michael Brackx transcribed it and largely recovered the key (issue #113), decode not yet
+reproduced there. No earlier found-solved rests on a downgraded entry. ASKS 163/169 unanswered.

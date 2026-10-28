@@ -705,3 +705,12 @@ negative on the print. No reading or grade change. Print rung: kept open.
 Next (not run): (a) one Gallica texteBrut request for bpt6k97359942 (if it answers, grep "Nov", "1558", "Venise", "Lorraine"; a 403 stops the host);
 (b) one be-api fts query restricted to a Revue de Gascogne identifier above with the quoted phrase "cardinal de Lorraine" + "Venise" 1558.
 Status stays `open`; this is a dated section only (gaps_check not required).
+
+## Prior work elsewhere (28 Oct 2026, LANE BNF-FOCUS, account 2)
+
+dbourdeau/cyphersolver `targets/noailles1558` (this letter, fr.3151 no.33): "Status: in progress (27 Oct 2026: transcribed and key
+largely recovered by Michael Brackx, issue #113; files requested). Three cipher blocks, 262 signs (his count); the marginal
+decipherments of the time are partly legible. Next step: reproduce his decode from his files, then retry the f. 60v gaps against
+the outer-margin gloss." Not found-solved yet (no reading reproduced there), but any work here starts from Brackx's transcription
+and key once published (premise check), and the lane that takes this folder checks that entry first. Status here stays `open`.
+Snapshot `sources/cyphersolver/2026-10-28-noailles1558/NOTES.md`. Credit: Michael Brackx; D. Bourdeau.
