@@ -18998,3 +18998,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-27 23:34 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 23:34 UTC 27 Oct: spawned 0 -- no queued account-4 rows
 2026-10-27 23:42 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 23:39 UTC 27 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 03:20 UTC 28 Oct
 2026-10-27 23:47 | orchestrator (owner account) | check-in 415 (fired 23:46 UTC 27 Oct): quiet hour. Dispatchers on accounts 2, 4 and 1 spawned 0; queue empty on every account; board same; no takeover. Account 4 next ~00:5x 28 Oct. Waiting on owner: SPRINT P12 (TNA order), P14 and P15 (send); ASKS 175, 173, 163, 169; ordered scans. usage: five_hour allowed by get_session, resets 03:20 UTC 28 Oct
+2026-10-28 00:11 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 00:11 UTC: spawned 0 (), queued left 0
