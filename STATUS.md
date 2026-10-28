@@ -482,6 +482,12 @@ account-4 row claimed. Nothing live, nothing spawned by design. Spend this check
 Check-in 182 (28 Oct 2026, 03:5x UTC). Quiet: no owner input (sorters empty, no scans, P12/P14/P15 unanswered), no flags; nightly
 key cross-match (02:49) 0 leads. Nothing live, nothing spawned by design. Next check-in after BNF-FOCUS. Spend this check-in: 0.
 
+Check-in 183 (28 Oct 2026, 06:4x UTC). BNF-FOCUS wave 48 (06:21): no item-level match. Its prior-work note on fr3151-noailles-1558
+(open, not on the board, no live claim): Michael Brackx has transcribed it and largely recovered the key (cyphersolver issue #113,
+files requested by Bourdeau, decode not yet reproduced) -- an outside solver's work in progress, so no job from this account; the
+folder waits for his files and a likely found-solved. No owner input (sorters empty, no scans, P12/P14/P15 unanswered). Nothing live,
+nothing spawned by design. Spend this check-in: 0.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
