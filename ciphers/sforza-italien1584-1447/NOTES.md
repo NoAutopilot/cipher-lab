@@ -1,4 +1,5 @@
-blocked
+blocked (f.259); found-solved (f.13, f.15; f.143 in part)
+Re-screen 29 Oct 2026 (LANE BNF-FOCUS): f.13 (Pusterla) and f.143 (Barbavara and Arrigoni, read in part, 5 of 51 runs open) are read in dbourdeau/cyphersolver barbavara1447 (R1857 key, period clear copies and glosses); f.15 (the Duke) in visconti1446 (R5324, 95.0%); f.259 is in neither table. Section "Found solved elsewhere" at the end. Was `blocked`.
 Osio, Documenti diplomatici tratti dagli archivj milanesi vol. III (Milan 1872, IA bub_gb_88IStucIdgAC, 1.93 M characters of OCR) grepped whole by this worker for the names, places and dates of all four items, letters absent from its printed regests (OCR-conditional); Battioni's Carteggio degli oratori sforzeschi alla corte pontificia I (Roma nel Rinascimento 2013, 912 pp., Rome letters from 27 Feb 1447) was not opened (no full text on IA, Google Books API NO_PAGES) and covers f.143's date and place, so f.143 is blocked.
 
 # BnF italien 1584 (Archivio Sforzesco, 1447): cipher letters of the f.68/f.70 sign family -- pool folder
@@ -141,3 +142,13 @@ via WebFetch.
 - SFZ-1 (7 Oct 2026, 21:4x UTC): Amidani 1447 known-plaintext key in `amidani/` (ff.366/365, 367/368, 148/147; key.tsv 65 labels, 35 at C); held-out gate G1 PASS (0.776/0.775/0.739 vs shuffle p95 0.38-0.42); f.70 (italien 1583, 1446) test FAIL under a description-only mapping of Bourdeau's codes (not a test of the 1446 key: needs f.70 re-read from an image). See amidani/NOTES.md.
 - SFZ-D (7 Oct 2026, 22:0x UTC): the Duke's 1447 key from f.5/f.7 and f.8/f.10 in `duke/`; S1 (Amidani key on f.8) FAIL 0.267 vs p95 0.334; G1 FAIL 0.441 mean (gate 0.60); f.15 not decoded. Pairing correction: f.6 and f.9 are the contemporary translations (Mazzatinti). See duke/NOTES.md and ../sforza-duke-1447-f15/NOTES.md.
 - SFZ-P (7 Oct 2026, 22:2x UTC): Pietro de Pusterla 1447 key in `pusterla/` (f.81/f.80, f.42/f.41; not Amidani's key: S1 FAIL 0.241 vs p95 0.275); G1 PASS 0.733/0.589 vs shuffle p95 0.39; f.13 test in ciphers/sforza-pusterla-1447-f13 (shared-key PASS vs shuffled keys, judge FAIL, signature decodes "de Pusterla"). Osio III no. CCCXCI prints f.71's text (OCR "Posteria"). See pusterla/NOTES.md.
+
+
+## Found solved elsewhere (29 Oct 2026, LANE BNF-FOCUS, account 2)
+
+- f.13 and f.15: see ciphers/sforza-pusterla-1447-f13 and ciphers/sforza-duke-1447-f15 (both found-solved 29 Oct 2026).
+- f.143 (Barbavara and Arrigoni, Rome, 4 May 1447): dbourdeau/cyphersolver barbavara1447 "f. 143 read in part (5 of 51 runs open)", from the
+  fifteenth-century interlinear glosses in part and the R1857 key for the runs.
+- f.259: not in visconti1446's or barbavara1447's tables as of their HEAD d18e9ed96; it stays this pool's open item, and the
+  R1857 and R5323/R5324 keys are the first instruments to try on it (key-assisted recovery, route 1).
+Snapshots `sources/cyphersolver/2026-10-29-{visconti1446,barbavara1447}/`. Credit: D. Bourdeau; DECODE R1857, R5323, R5324.

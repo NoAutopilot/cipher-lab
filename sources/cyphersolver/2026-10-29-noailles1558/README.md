@@ -1,0 +1,1 @@
+Unmodified snapshot of github.com/dbourdeau/cyphersolver targets/noailles1558/NOTES.md at commit d18e9ed9647fee09ef0a47ac14dcebfa4f5f9f68, fetched 29 Oct 2026 by LANE BNF-FOCUS (account 2). Licence: code MIT, text CC BY 4.0; contributors credited inside. Do not edit.

@@ -1,4 +1,5 @@
-open
+found-solved
+Found solved 29 Oct 2026 (LANE BNF-FOCUS re-screen): Michael Brackx transcribed the letter and recovered the key (dbourdeau/cyphersolver issue #113); D. Bourdeau reproduced his decode on 28 Oct (244 of 260 non-null signs valued, 93.8%, 12 tentative); section "Found solved elsewhere" at the end. Was `open`.
 
 Charrière, Négociations de la France dans le Levant, tome II (Paris, 1848; archive.org `ngociationsdel02charuoft`) read as full text (grep, whole volume) by this worker for "Noailles"/"Acqs"/date and place terms, 26 Sept 2026: no decipherment or clear-text rendering of this letter. Ribier, Lettres et mémoires d'estat (Paris, 1666), both tomes, already cached full text on disk (`sources/ia-fulltext/print-check/bub_gb_{bOnmNv2ZLVoC,qWTswSr32NYC}_djvu.txt.gz`) re-grepped by this worker for "Noailles"/"d'Acqs": zero hits in either tome.
 
@@ -714,3 +715,13 @@ decipherments of the time are partly legible. Next step: reproduce his decode fr
 the outer-margin gloss." Not found-solved yet (no reading reproduced there), but any work here starts from Brackx's transcription
 and key once published (premise check), and the lane that takes this folder checks that entry first. Status here stays `open`.
 Snapshot `sources/cyphersolver/2026-10-28-noailles1558/NOTES.md`. Credit: Michael Brackx; D. Bourdeau.
+
+
+## Found solved elsewhere (29 Oct 2026, LANE BNF-FOCUS, account 2)
+
+dbourdeau/cyphersolver `targets/noailles1558`: "Status: in progress (28 Oct 2026: Brackx's files of issue #113 copied into `brackx/` and the
+decode reproduced here by `check_brackx.py`; three cipher blocks, 260 non-null signs, 244 valued = 93.8%, 12 on tentative
+values). Next step: retry the f. 60v gaps against the outer-margin gloss and check the key values on the images." This folder's
+own notes (the marginal decipherment of the time, partly legible) stand as logged; the prior-work note of 28 Oct above becomes
+this found-solved. Snapshot (unmodified): `sources/cyphersolver/2026-10-29-noailles1558/NOTES.md` (their HEAD d18e9ed96).
+Credit: Michael Brackx; D. Bourdeau.

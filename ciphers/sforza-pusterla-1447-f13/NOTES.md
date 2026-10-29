@@ -1,4 +1,5 @@
-partial
+found-solved
+Found solved 29 Oct 2026 (LANE BNF-FOCUS re-screen): Pusterla f.13 (Gualdo, 21 Jan 1447) has its decipherment filed beside it on f.14 (a late clear copy) and is read with the R1857 key (DECODE; ASMi Cifrari copy) in dbourdeau/cyphersolver barbavara1447, written up 29 Oct 2026; section "Found solved elsewhere" at the end. Was `partial`.
 Osio, Documenti diplomatici tratti dagli archivj milanesi vol. III (Milan 1872, IA bub_gb_88IStucIdgAC, whole-volume djvu text) full-text searched by this worker (SFZ-P, 7 Oct 2026) for Pusterla/Posteria/Puslcrla/Pustcrla, Guastalla/Guali and every January 1447 dateline (text lines 28600-30530): the letter of f.13 (Guastalla 21 Jan 1447) is absent (OCR-conditional); Battioni 2013 (Rome orators, from 27 Feb 1447) does not cover a Guastalla letter of January; Cerioni 1970 and Mazzatinti 1883 not opened.
 
 # BnF italien 1584 f.13: Pietro de Pusterla to Francesco Sforza, Guastalla 21 Jan 1447 (cipher slip, no clear copy)
@@ -469,3 +470,12 @@ Read so far: 0 lines read as Italian; lattice decode rank 1/201 on it16dip and i
 - [ ] image-check: label-convention sorting across the key slips and the f.13 look-alike tiles wait on the owner's sorter
 - [x] retry: lattice_decode.py under the re-pooled key on it16dip and it15, rank 1/201 both, judge FAIL both
 Verdict: keep going: 5 internal gaps; cheapest next: f.77 per-sign tiles for the Pusterla sorter (pusterla/f77/rec/focus.tsv), ~$1, then the owner sort; Cerioni 1970 / ASMi key-hunt row, ~$2
+
+
+## Found solved elsewhere (29 Oct 2026, LANE BNF-FOCUS, account 2)
+
+dbourdeau/cyphersolver `targets/barbavara1447` ("Barbavara and Pusterla to Francesco Sforza, Jan - May 1447: the R1857 key"): "read from existing
+decipherments ... Every cipher letter of both men in the volume has a decipherment: clear copies in one late italic hand ... each
+filed beside its cipher leaf." Their table row: "Pusterla | f. 13 | 21 Jan 1447, Gualdo | f. 14 | 15-16" (canvases). Pusterla's
+notes were folded into that entry on 28 Oct 2026 (former `targets/pusterla1447/`). Snapshot (unmodified): `sources/cyphersolver/2026-10-29-barbavara1447/NOTES.md` (their HEAD d18e9ed96).
+Credit: D. Bourdeau; DECODE R1857.

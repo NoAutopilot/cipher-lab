@@ -457,3 +457,13 @@ Bourdeau 0aee22ad3 -> bcb305b49 (about 90 new targets, mostly NARA/KHA/Dresden/R
 contributed telegrams; 13 blocked/closed catalogue attempts recorded); Aymeloglu bde4ab7 unchanged. No item-level match. Prior-work
 note: fr3151-noailles-1558 (open) -- Michael Brackx transcribed it and largely recovered the key (issue #113), decode not yet
 reproduced there. No earlier found-solved rests on a downgraded entry. ASKS 163/169 unanswered.
+
+## Wave 49 (29 Oct 2026, 06:1x UTC by date -u)
+Bourdeau bcb305b49 -> d18e9ed96 (178 commits); Aymeloglu bde4ab7 unchanged. Four item-level matches, recorded in the folders:
+- **fr3151-noailles-1558 -> found-solved**: Brackx's key (issue #113) reproduced by Bourdeau 28 Oct, 244/260 signs valued.
+- **sforza-duke-1447-f15 -> found-solved**: visconti1446, key DECODE R5324, f.15 95.0%, 96.0% agreement with the contemporary
+  clear text on f.16.
+- **sforza-pusterla-1447-f13 -> found-solved**: barbavara1447, R1857 key, decipherment filed beside it on f.14 (a late clear copy).
+  This folder's NEAR.md row says "no clear copy": that premise was wrong -- the orchestrator's NEAR.md/board change.
+- **sforza-italien1584-1447** (pool): f.13, f.15 found-solved, f.143 read in part (barbavara1447); f.259 open (in neither table).
+Snapshots sources/cyphersolver/2026-10-29-*. ASKS 163/169 unanswered.

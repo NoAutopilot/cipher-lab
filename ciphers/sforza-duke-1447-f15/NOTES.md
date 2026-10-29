@@ -1,4 +1,5 @@
-open
+found-solved
+Found solved 29 Oct 2026 (LANE BNF-FOCUS re-screen): f.15 (Cusago, 23 Jan 1447) read at 95.0% with the key found on DECODE R5324, agreeing 96.0% with the contemporary clear text on f.16 (dbourdeau/cyphersolver visconti1446, 28-29 Oct 2026); section "Found solved elsewhere" at the end. Was `open`.
 Check-solved for this one letter (SFZ-D, 7 Oct 2026): Osio, Documenti diplomatici tratti dagli archivj milanesi vol. III (Milan 1872, IA bub_gb_88IStucIdgAC), the standard printed edition of the Visconti state letters, was searched whole by full-text grep (SFZ-0, same day: Cusago 32 hits, all 1431; no regest of a 23 Jan 1447 letter of the Duke); Mazzatinti, "Inventario delle carte dell'Archivio sforzesco contenute nei codici italiani 1583-1593 della Biblioteca nazionale di Parigi", Archivio storico lombardo X (1883), IA archiviostoricol10cava, read at its entry for cod. 1584 (printed p. 233-234, djvu text lines 10736-10780): "15. [Lettera] del Duca al medesimo (Cusago 23 gennaio). In cifre : membran." -- listed as cipher, with no "Traduzione" entry after it (contrast f.5/f.6 and f.8/f.9, "Traduzione della lettera precedente"); no decipherment of f.15 located.
 
 # BnF italien 1584 f.15: the Duke's cipher slip, Cusago 23 Jan 1447 -- target folder (SFZ-D)
@@ -618,3 +619,12 @@ Read so far: 0 signs of f.15 transcribed or read; the Duke key gate G1 failed (0
 - [x] image-check: second machine reader tried and retired (SFZ-DUKE, 8 Oct); owner sign-sorter packet for f.5+f.8 built (SFZ-SORT, 13 Oct), waiting on the owner's sort (ASKS 165)
 - [ ] retry: a person's cell-by-cell read of R5323 through the g1 scorer; the unheaded 1597 sheets through the stock-overlap test
 Verdict: keep going: 4 internal gaps; cheapest next: draft the ASKS row for a person's cell-by-cell read of R5323's alphabet block, ~$0.5
+
+
+## Found solved elsewhere (29 Oct 2026, LANE BNF-FOCUS, account 2)
+
+dbourdeau/cyphersolver `targets/visconti1446` ("Filippo Maria Visconti to Francesco Sforza, cipher slips of Nov 1446 - Mar 1447"): "Key found
+on DECODE (R5323) and confirmed against three contemporary translations; 15 slips ..." Their row: "1584 f. 15 | 23 Jan 1447 |
+R5324 | 95.0% | f. 16 clear (contemporary): 96.0% | check". So the leaf has a contemporary clear text filed beside it (f.16) and a
+key on DECODE; the reading is a key application checked against a period clear copy. Snapshot (unmodified): `sources/cyphersolver/2026-10-29-visconti1446/NOTES.md` (their HEAD d18e9ed96).
+Credit: D. Bourdeau; the DECODE R5323/R5324 key records (DECODE project).
