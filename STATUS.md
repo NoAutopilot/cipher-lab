@@ -505,6 +505,8 @@ account-4 row claimed. Nothing live, nothing spawned by design. Spend this check
 
 **Check-in 189 (29 Oct 2026, 01:0x UTC, account-4 parent).** Quiet. No owner input since 23 Oct: both sorters' `moves` collections empty (Vivonne ASKS 173, Monluc king ASKS 175), no ordered scans dropped, SPRINT P12 (TNA SP 84/166 f.85 + SP 84/165 f.106) unordered, P14/P15 enquiries unsent. No ROOM flags, no ASKS rows dated 28-29 Oct, no account-4 WORK-QUEUE claim, origin advanced only by the owner-account check-in 439 line. retro_check ok, ledger_check ok, orphan_check: 0 sessions/triggers/unledgered (the standing dropped-request noise only). Nothing live, nothing spawned by design (no new hypothesis to test without the owner's material). Next check-in ~04:0x UTC 29 Oct; the one after lands past BNF-FOCUS wave 49 (~06:1x).
 
+**Check-in 190 (29 Oct 2026, 04:0x UTC, account-4 parent).** Quiet. No owner input (sorters empty, no scans, SPRINT P12 unordered, P14/P15 unsent). ROOM since 01:0x: only the owner-account nightly key cross-match (0 pairs, 0 leads) and check-in 442. No flags, no ASKS rows, no account-4 WORK-QUEUE claim. retro_check, ledger_check, orphan_check ok. Nothing live, nothing spawned by design. Next check-in ~07:0x UTC 29 Oct, reading BNF-FOCUS wave 49's daily line.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
