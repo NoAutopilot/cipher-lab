@@ -467,3 +467,10 @@ Bourdeau bcb305b49 -> d18e9ed96 (178 commits); Aymeloglu bde4ab7 unchanged. Four
   This folder's NEAR.md row says "no clear copy": that premise was wrong -- the orchestrator's NEAR.md/board change.
 - **sforza-italien1584-1447** (pool): f.13, f.15 found-solved, f.143 read in part (barbavara1447); f.259 open (in neither table).
 Snapshots sources/cyphersolver/2026-10-29-*. ASKS 163/169 unanswered.
+
+## Wave 50 (30 Oct 2026, 06:1x UTC by date -u)
+Bourdeau d18e9ed96 -> 1315873fb (48 commits: visconti1446 written up, visconti1447 split for f.15, birago1448 = ital. 1585 f.33,
+and a leaf-by-leaf check of ital. 1584-1585 finding a decipherment beside every cipher leaf). Correction: sforza-italien1584-1447's
+f.259 has its clear copy on f.258r (this folder's own notes said so; Bourdeau confirms complete), so the pool line 1 is now
+found-solved for all four items (f.143 in part). Aymeloglu unchanged. The account-4 parent closed the wave-49 NEAR.md flag
+(07:14 29 Oct). ASKS 163/169 unanswered.

@@ -1,4 +1,5 @@
-blocked (f.259); found-solved (f.13, f.15; f.143 in part)
+found-solved (f.13, f.15, f.259; f.143 in part)
+Correction 30 Oct 2026 (LANE BNF-FOCUS): yesterday's line 1 left f.259 open, but this folder's own section 1 already records f.258 as its clear copy ("f.259 (Guarna) is not a survivor"), and Bourdeau's leaf-by-leaf check of ital. 1584 (research/venice_milan_print/ital1584_copies_A.md, 29 Oct 2026) confirms it: "late clear copy f. 258r ... Milan 22 août 1447; complete, no dotted blanks". All four items now have a reading or a period decipherment. Was `blocked (f.259); found-solved (f.13, f.15; f.143 in part)`.
 Re-screen 29 Oct 2026 (LANE BNF-FOCUS): f.13 (Pusterla) and f.143 (Barbavara and Arrigoni, read in part, 5 of 51 runs open) are read in dbourdeau/cyphersolver barbavara1447 (R1857 key, period clear copies and glosses); f.15 (the Duke) in visconti1446 (R5324, 95.0%); f.259 is in neither table. Section "Found solved elsewhere" at the end. Was `blocked`.
 Osio, Documenti diplomatici tratti dagli archivj milanesi vol. III (Milan 1872, IA bub_gb_88IStucIdgAC, 1.93 M characters of OCR) grepped whole by this worker for the names, places and dates of all four items, letters absent from its printed regests (OCR-conditional); Battioni's Carteggio degli oratori sforzeschi alla corte pontificia I (Roma nel Rinascimento 2013, 912 pp., Rome letters from 27 Feb 1447) was not opened (no full text on IA, Google Books API NO_PAGES) and covers f.143's date and place, so f.143 is blocked.
 
@@ -152,3 +153,8 @@ via WebFetch.
 - f.259: not in visconti1446's or barbavara1447's tables as of their HEAD d18e9ed96; it stays this pool's open item, and the
   R1857 and R5323/R5324 keys are the first instruments to try on it (key-assisted recovery, route 1).
 Snapshots `sources/cyphersolver/2026-10-29-{visconti1446,barbavara1447}/`. Credit: D. Bourdeau; DECODE R1857, R5323, R5324.
+
+
+Update 30 Oct 2026 (LANE BNF-FOCUS): f.259 = Guarna, Milan 22 Aug 1447, decipherment filed at the time as the late clear copy
+f.258r, complete (dbourdeau/cyphersolver research/venice_milan_print/ital1584_copies_A.md, lead 1315; their summary: every ital.
+1584 cipher leaf checked has a decipherment in the volume). Snapshot `sources/cyphersolver/2026-10-30-ital1584_copies/`.

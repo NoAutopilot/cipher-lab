@@ -1,0 +1,1 @@
+Unmodified snapshot of github.com/dbourdeau/cyphersolver research/venice_milan_print/ital1584_copies.md and ital1584_copies_A.md at commit 1315873fbe9e (file commit b4cda0fb8, 29 Oct 2026), fetched 30 Oct 2026 by LANE BNF-FOCUS (account 2). Licence: text CC BY 4.0. Do not edit.
