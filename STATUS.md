@@ -519,6 +519,8 @@ account-4 row claimed. Nothing live, nothing spawned by design. Spend this check
 
 **Check-in 196 (29 Oct 2026, 22:5x UTC, account-4 parent).** Quiet. No owner input (sorters empty, no scans, SPRINT P12 unordered, P14/P15 unsent). Owner-account check-ins 457-459 quiet hours, dispatchers spawned 0, queue empty on every account. No flags, no ASKS rows, no non-ROOM commits, no account-4 WORK-QUEUE claim. retro_check, ledger_check, orphan_check ok. Nothing live, nothing spawned by design. Next check-in ~01:5x UTC 30 Oct; BNF-FOCUS wave 50 (~06:1x) is read by the one after.
 
+**Check-in 197 (30 Oct 2026, 01:5x UTC, account-4 parent).** Quiet. No owner input (sorters empty, no scans, SPRINT P12 unordered, P14/P15 unsent). Owner-account check-ins 460-462 quiet hours, dispatchers spawned 0, queue empty on every account. No flags, no ASKS rows, no non-ROOM commits, no account-4 WORK-QUEUE claim. retro_check, ledger_check, orphan_check ok. Nothing live, nothing spawned by design. Next check-in ~04:5x UTC 30 Oct; the one after reads BNF-FOCUS wave 50 (~06:1x).
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
