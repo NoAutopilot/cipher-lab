@@ -19305,3 +19305,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-30 14:37 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 14:36 UTC 30 Oct: spawned 0 -- no queued account-4 rows
 2026-10-30 14:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 14:40 UTC 30 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 15:20 UTC 30 Oct
 2026-10-30 14:50 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 14:50 UTC: spawned 0 (), queued left 0
+2026-10-30 15:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 15:39 UTC 30 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 15:20 UTC 30 Oct (get_session at 15:40 still shows that past reset)
