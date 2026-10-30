@@ -19240,3 +19240,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-30 01:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 01:09 UTC: spawned 0 (), queued left 0
 2026-10-30 01:35 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 01:34 UTC 30 Oct: spawned 0 -- no queued account-4 rows
 2026-10-30 01:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 01:39 UTC 30 Oct: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: five_hour allowed by get_session, resets 05:20 UTC 30 Oct
+2026-10-30 01:56 | account-4 parent | check-in 197 (fired 01:53 UTC 30 Oct): quiet -- no owner input (sorters empty, no scans, P12/P14/P15 unanswered), no flags, no ASKS rows; nothing live, nothing spawned by design. Next check-in ~04:5x 30 Oct. usage: five_hour allowed by get_session, resets 06:30 UTC 30 Oct
