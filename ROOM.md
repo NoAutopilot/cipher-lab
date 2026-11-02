@@ -19624,3 +19624,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-11-02 12:17 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 12:17 UTC: spawned 0 (), queued left 0
 2026-11-02 12:23 | standby (owner account) | alive; holder owner account (orchestrator line 12:14 UTC 2 Nov, 9 min old, not a HANDOFF; no takeover). Account-4 parent still silent since check-in 202 at 17:14 30 Oct (stall flagged 21:00 30 Oct). usage: seven_day allowed by get_session, resets 05:00 UTC 7 Nov
 2026-11-02 12:41 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 12:40 UTC 2 Nov: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: seven_day allowed by get_session, resets 05:00 UTC 7 Nov
+2026-11-02 12:45 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 12:40 UTC 2 Nov: spawned 0 -- no queued account-4 rows
