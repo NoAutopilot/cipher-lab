@@ -1,5 +1,5 @@
 open
-Open (3 Nov 2026, NEVREVOL-PREREG): the internal block of 20 Oct is lifted. A mixed-class positive control with the length-class and shuffled-order nulls PASSes (controls_mixed*.txt). Two Opus passes (74.5% agreement) then failed the gate (rank 2/201 against the key shuffles, 119/201 against the order shuffles), a control-backed non-reading for sign_guide tags + key.tsv. Next: passes with the 264ext atlas labels. Earlier block (20 Oct): the value-shuffled-key control had no power at this N. Check-solved citation (24 Sept 2026, search log below): Gomberville *Mémoires de Nevers* seconde partie, Google Books `H2eV4wAmIr0C` full-text SearchWithinVolume for "Despernon", "deliuranse" and "Nouembre 1593" (p.692 already carries Mars 1594), cross-checked on Gallica `bpt6k64451005` ContentSearch; Goulart *Mémoires de la Ligue* vol. 5 and vol. 6 archive.org full text; letter absent.
+Open (3 Nov 2026, NEVREVOL-ATLAS-2): f.66 is untestable-by-this-instrument at this N (rule 3) and waits on the Revol-hand sorter, ASKS 102. Labelled directly with key60's 41 atlas tags, the six lines rank 1/201 against the key shuffles but 34/201 against the order shuffles (gate <= 10), with only 110 of 188 signs keyed, a non-test at that coverage. Before that, sign_guide tags + key.tsv ranked 2 and 119/201 (NEVREVOL-PREREG). Earlier block (20 Oct): the value-shuffled-key control had no power at this N. Check-solved citation (24 Sept 2026, search log below): Gomberville *Mémoires de Nevers* seconde partie, Google Books `H2eV4wAmIr0C` full-text SearchWithinVolume for "Despernon", "deliuranse" and "Nouembre 1593" (p.692 already carries Mars 1594), cross-checked on Gallica `bpt6k64451005` ContentSearch; Goulart *Mémoires de la Ligue* vol. 5 and vol. 6 archive.org full text; letter absent.
 
 **Check-solved, LANE N4 csKSb, 24 Sept 2026:** letter absent from Gomberville's *Mémoires de Nevers* seconde
 partie and from *Mémoires de la Ligue* (Goulart) vols 5-6; see the search log below. Corrects QUEUE.md row
@@ -396,11 +396,44 @@ Six questions:
 
 Usage: vision calls 0. Requests: none (disk only).
 
+## NEVREVOL-ATLAS-2 (3 Nov 2026, account 4 worker for the account-4 parent, briefs 59/58)
+
+Intake gate pasted at start: `fr3987-nevers-revol-1593: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+The order was kept. PREREG-NEVREVOL-3.md was pushed first (bb2be4dbc), naming the label set (41 atlas264/264ext tags or `?`) and a
+coverage limit (a FAIL with fewer than 150 keyed signs is a non-test). Pass A, the worker reading the 12 crops one at a time, was
+committed (3f9bce41c) before pass B was launched. Pass B was 6 Opus subagents, one per line pair, given only the crops, the contact
+sheet and the atlas TSVs. 42 disagreement spans were settled from the crops, never from the key (reconcile_v3.tsv). Four were taken
+from pass B; the rest kept pass A where pass B's tag did not match the ink. ciphertext_v3.tsv: 188 signs, H 86, M 24, `?` 78.
+The control was cited, not re-run: controls_mixed.txt, the same key, both-null pass 10/10 at 0-30% error, 8/10 at 50%.
+
+Target (`controls_sup.py --v3` -> controls_v3.txt, pasted):
+
+    signs 188; unkeyed tags 1 (78 tokens): ?
+    decoded letters 165
+    real S -1.2206
+    length-class shuffled keys (200): mean -2.0097 sd 0.1936 max -1.5064; real rank 1/201
+    shuffled orders (200): mean -1.2713 p95 -1.3386 max -1.1352; real rank 34/201
+    judge on real decode: FAIL {"language": {"N": 165, "mode": "both", "null_p99": -1.768, "pass": false, "real_median": -0.785, "real_p05": -0.909, "score": -1.221}, "words": {"cover": 0.836, "min": 0.5, "pass": true, "real_text_median_cover": 0.945}}
+    gate (rank <= 10/201 against both): DOES NOT BEAT CONTROL
+
+**Gate: FAIL; one run, stopped.** No decode_key run, no reading, no grade changed (the 24 Sept draft stands). A/B agreement was
+61.6% (117/190 aligned tokens), lower than the sign_guide passes' 74.5%, because the 41-tag atlas leaves much of the hand unlabelled.
+With 110 keyed signs, below the 150 the PREREG set, this is a non-test at this coverage, not a control-backed negative.
+
+Six questions:
+1. Learned: atlas labels move the order rank from 119 to 34/201, but not inside 10. The 41 tags cover only 59% of the f.66 signs (110/188); the frequent figure-like shapes (4, 2, 6, 7, s2, o, theta) have no exemplar.
+2. Assumptions: the leaf-264 hand's exemplars stand for Revol's hand; a `?` can be dropped without breaking the order statistic; the control's N=188 full-key coverage stands in for 110 keyed signs.
+3. Unverified: all three. The control was never subsampled to 110 keyed signs, and nothing checks the atlas against this hand.
+4. Alternatives: the missing signs carry most of the order signal (dropping 41% of tokens joins non-adjacent plaintext); lookalike confusions (9/g, 4/ll4); clear words or nulls in the runs; a key other than no.60.
+5. Most informative different experiment: a Revol-hand sign inventory sorted by a person (ASKS 102), so every f.66 shape has a settled label and key60 value before any further pass. A different instrument, not a re-run.
+6. Decision: stop (rule 3; this was the last instrument named before ASKS 102). Target stays `open`; next step waits on the sorter.
+
+Usage: vision calls 12 crop reads (pass A) + 6 pass-B subagent calls + 1 reconciliation from crops already in view. Requests: none (disk only).
+
 ## Remaining gaps (NEVREVOL-PREREG, 3 Nov 2026)
 Read so far: 0 of 308 signs to a continuous text (24 Sept 2026 mechanical draft: H 69, M 211, U 28, I 0). The six-line v2 transcription (191 signs, A/B agreement 74.5%) fails the gate with sign_guide tags + key.tsv: rank 2/201 against the length-class shuffles, 119/201 against the order shuffles (controls_sup_localkey.txt).
-- check-solved web-and-blog step (check-solved.md, CHECK-SOLVED-WEB) - blocker: not-attempted; the intake gate fails without it (NEVREVOL-ATLAS, 3 Nov 2026), and no deep work runs until it passes; next: a check-solved web-and-blog worker (four plain searches, site searches of Cipherbrain, the Cryptiana blog and Cipher Mysteries, comment threads read), ~$1
-- f.66 cipher runs, six densest lines L07-L11 and L13 (191 signs, ciphertext_v2.tsv) - blocker: not-attempted; held behind the intake gate (web-and-blog step, 3 Nov 2026); ASCII-tag passes with key.tsv are a control-backed non-reading (3 Nov 2026); next: two blind passes with key60.tsv's own 264ext atlas labels (contact_sheet_264ext.png), scored by the PREREG-NEVREVOL-2 gate with the key60 control row already on file, ~$3
-- f.66 remaining cipher lines L14 to L18 and L20 to L21 (about 95 signs) - blocker: not-attempted; held back until a six-line instrument beats both nulls; next: same passes on these lines once one does, ~$2
+- f.66 cipher runs, six densest lines L07-L11 and L13 (188 signs, ciphertext_v3.tsv) - blocker: waiting-on ASKS 102 (the Revol-hand sorter); untestable-by-this-instrument at this N (rule 3); the sign_guide-tag passes (ranks 2 and 119/201) and the 264ext atlas-label passes (ranks 1 and 34/201, 110/188 keyed; NEVREVOL-ATLAS-2, 3 Nov 2026) both fail the both-null gate
+- f.66 remaining cipher lines L14 to L18 and L20 to L21 (about 95 signs) - blocker: waiting-on ASKS 102 (the Revol-hand sorter); held back until a six-line instrument beats both nulls, and both available instruments have failed (3 Nov 2026)
 
 ## Escalation (NEVREVOL-PREREG, 3 Nov 2026)
 - [x] siblings: fr3986 f.198 (same correspondence, atlas instrument retired there on the verso runs, 36% agreement) and the interlined fr.3985 c.264 / fr.3986 c.298 leaves (atlas source, held-out 65/65)
@@ -409,8 +442,8 @@ Read so far: 0 of 308 signs to a continuous text (24 Sept 2026 mechanical draft:
 - [x] print: Gomberville *Mémoires de Nevers* seconde partie and *Mémoires de la Ligue* vols 5-6 read 24 Sept 2026, letter absent
 - [x] key-rebuild: 264ext atlas exists (tools/keys/key60_atlas); the Revol-hand sorter for fr3986 waits on ASKS row 102
 - [x] image-check: canvas 121 = f.66 confirmed 24 Sept 2026; native region on disk, six lines re-cut 20 Oct 2026 (images/v2)
-- [ ] retry: sign_guide-tag passes + key.tsv done 3 Nov 2026 (gate FAIL, control passed); untried instrument: passes labelled with key60.tsv's 264ext atlas labels
-Verdict: keep going: 3 internal gaps; cheapest next: the check-solved web-and-blog step (~$1), then two blind 264ext-atlas-label passes on images/v2 under the PREREG-NEVREVOL-2 gate, ~$3
+- [retired] retry: instrument transcription passes scored by the both-null gate under key no.60, closed after the sign_guide-tag passes (3 Nov 2026, ranks 2 and 119/201) and the 264ext atlas-label passes (NEVREVOL-ATLAS-2, 3 Nov 2026, ranks 1 and 34/201); only the Revol-hand sorter (ASKS 102) or new material reopens it
+Verdict: parked: f.66 waits on ASKS 102 (the Revol-hand sorter); the remaining lines are held behind the same instrument
 
 ### Parent notes (account-4 parent, 3 Nov 2026, after NEVREVOL-PREREG)
 1. Learned: with a control that genuinely has power (mixed-class, both nulls, 10/10 to 20% error), the six lines under sign_guide tags + key.tsv beat the key shuffles but not the order shuffles: the sign-to-tag mapping, not key no.60, is the live suspect.

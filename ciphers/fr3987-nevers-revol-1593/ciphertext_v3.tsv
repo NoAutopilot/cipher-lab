@@ -1,0 +1,190 @@
+# f.66 six-line v3 draft, NEVREVOL-ATLAS-2 3 Nov 2026: pass A (worker, crops one at a time, committed before B) + pass B (6 Opus subagents, crops + contact_sheet_264ext + atlas TSVs only); tags = the 41 atlas264/264ext tags or ? (unkeyed, dropped in the decode)
+line	position	sign	confidence	alt	why
+f66_L07	1	8	M	8	settled
+f66_L07	2	L40	H		agree
+f66_L07	3	?	U	T	settled
+f66_L07	4	?	U	T	settled
+f66_L07	5	x	H		agree
+f66_L07	6	g	H		agree
+f66_L07	7	pi	H		agree
+f66_L07	8	?	U	T	settled
+f66_L07	9	++	H		agree
+f66_L07	10	inT	H		agree
+f66_L07	11	?	U		agree
+f66_L07	12	?	U		settled
+f66_L07	13	T	M		settled
+f66_L07	14	pl	M		settled
+f66_L07	15	10	H		agree
+f66_L07	16	++	H		agree
+f66_L07	17	?	U	do	settled
+f66_L07	18	g	H		agree
+f66_L07	19	?	U	ll4 ll4	settled
+f66_L07	20	?	U	ll4 ll4	settled
+f66_L07	21	?	U	ll4 ll4	settled
+f66_L07	22	v	H		agree
+f66_L07	23	?	U		agree
+f66_L07	24	?	U		agree
+f66_L07	25	g	H		agree
+f66_L07	26	lam	H		agree
+f66_L07	27	alpha	H		agree
+f66_L07	28	inT	H		agree
+f66_L07	29	x	H		agree
+f66_L07	30	pl	M	sigma n	settled
+f66_L07	31	x	M	sigma n	settled
+f66_L07	32	?	U		agree
+f66_L07	33	?	U	X++	settled
+f66_L07	34	X+	M	X++	settled
+f66_L07	35	T	H		agree
+f66_L07	36	n	H		agree
+f66_L07	37	?	U	f r	settled
+f66_L07	38	?	U	f r	settled
+f66_L07	39	?	U		agree
+f66_L07	40	E	H		agree
+f66_L07	41	20	H		agree
+f66_L08	1	?	U	ll4 g T	settled
+f66_L08	2	?	U	ll4 g T	settled
+f66_L08	3	?	U	ll4 g T	settled
+f66_L08	4	?	U		agree
+f66_L08	5	++	H		agree
+f66_L08	6	y	H		agree
+f66_L08	7	?	U		agree
+f66_L08	8	?	U	T g X+	settled
+f66_L08	9	?	U	T g X+	settled
+f66_L08	10	x	H		agree
+f66_L08	11	r	M	do	settled
+f66_L08	12	do	H		agree
+f66_L08	13	pl	H		agree
+f66_L08	14	?	U	beta ++	settled
+f66_L08	15	?	U	beta ++	settled
+f66_L09	1	+o	H		agree
+f66_L09	2	?	U		agree
+f66_L09	3	x	H		agree
+f66_L09	4	x	H		agree
+f66_L09	5	g	H		agree
+f66_L09	6	E	H		agree
+f66_L09	7	x	M	r	settled
+f66_L09	8	?	U		agree
+f66_L09	9	?	U		agree
+f66_L09	10	?	U	g	settled
+f66_L09	11	?	U	g	settled
+f66_L09	12	y	H		agree
+f66_L09	13	pl	H		agree
+f66_L09	14	?	U		agree
+f66_L09	15	?	U		settled
+f66_L09	16	?	U		settled
+f66_L09	17	x	M		settled
+f66_L09	18	pl	M		settled
+f66_L09	19	T	H		agree
+f66_L09	20	8	H		agree
+f66_L09	21	lam	H		agree
+f66_L09	22	r	H		agree
+f66_L09	23	?	U		agree
+f66_L09	24	++	H		agree
+f66_L09	25	?	U		agree
+f66_L09	26	c	H		agree
+f66_L09	27	?	U	∠ lam to	settled
+f66_L09	28	v	M	∠ lam to	settled
+f66_L09	29	n	H		agree
+f66_L09	30	++	H		agree
+f66_L09	31	?	U		agree
+f66_L09	32	g	M	g pi	settled
+f66_L09	33	pl	M	g pi	settled
+f66_L09	34	v	H		agree
+f66_L09	35	?	U	ue	settled
+f66_L09	36	r	M	ue	settled
+f66_L09	37	?	U		agree
+f66_L09	38	?	U		agree
+f66_L09	39	do	H		agree
+f66_L09	40	pl	M	pi	settled
+f66_L09	41	x	H		agree
+f66_L10	1	alpha	H		agree
+f66_L10	2	?	U	sigma	settled
+f66_L10	3	n	H		agree
+f66_L10	4	?	U	e	settled
+f66_L10	5	g	H		agree
+f66_L10	6	g	H		agree
+f66_L10	7	c	H		agree
+f66_L10	8	g	H		agree
+f66_L10	9	?	U	T f	settled
+f66_L10	10	?	U	T f	settled
+f66_L10	11	do	H		agree
+f66_L10	12	?	U	+	settled
+f66_L10	13	n	H		agree
+f66_L10	14	g	H		agree
+f66_L10	15	?	U	e	settled
+f66_L10	16	?	U		agree
+f66_L10	17	g	H		agree
+f66_L10	18	?	U		agree
+f66_L10	19	g	H		agree
+f66_L10	20	?	U		agree
+f66_L10	21	?	U	lam	settled
+f66_L10	22	x	H		agree
+f66_L10	23	E	H		agree
+f66_L10	24	g	H		agree
+f66_L10	25	?	U		agree
+f66_L10	26	?	U		agree
+f66_L10	27	?	U	n +	settled
+f66_L10	28	x	M	n +	settled
+f66_L10	29	x	M	n +	settled
+f66_L10	30	g	M	n +	settled
+f66_L10	31	?	U	n +	settled
+f66_L10	32	g	M	n +	settled
+f66_L10	33	?	U	n +	settled
+f66_L10	34	g	M	n +	settled
+f66_L10	35	g	H		agree
+f66_L10	36	g	H		agree
+f66_L10	37	g	H		agree
+f66_L10	38	+o	H		agree
+f66_L10	39	r	H		agree
+f66_L10	40	v	H		agree
+f66_L10	41	T	H		agree
+f66_L10	42	v	H		agree
+f66_L11	1	++	H		agree
+f66_L11	2	v	H		agree
+f66_L11	3	c	H		agree
+f66_L11	4	?	U		agree
+f66_L11	5	r	H		agree
+f66_L11	6	?	U		agree
+f66_L11	7	?	U		agree
+f66_L11	8	n	H		agree
+f66_L11	9	?	U		agree
+f66_L11	10	?	U	do	settled
+f66_L11	11	?	U		agree
+f66_L11	12	?	U		agree
+f66_L11	13	inT	H		agree
+f66_L11	14	?	U		agree
+f66_L11	15	x	H		agree
+f66_L11	16	8o	H		agree
+f66_L11	17	do	H		agree
+f66_L11	18	8	H		agree
+f66_L11	19	?	U		agree
+f66_L13	1	?	U	ll4	settled
+f66_L13	2	?	U	ll4	settled
+f66_L13	3	?	U	ll4	settled
+f66_L13	4	?	U		agree
+f66_L13	5	//	H		agree
+f66_L13	6	v	H		agree
+f66_L13	7	f	M	f	settled
+f66_L13	8	E	H		agree
+f66_L13	9	?	U	do pi ll4 X	settled
+f66_L13	10	pl	M	do pi ll4 X	settled
+f66_L13	11	?	U	do pi ll4 X	settled
+f66_L13	12	?	U	do pi ll4 X	settled
+f66_L13	13	x	M	do pi ll4 X	settled
+f66_L13	14	T	H		agree
+f66_L13	15	x	H		agree
+f66_L13	16	?	U	∠	settled
+f66_L13	17	r	H		agree
+f66_L13	18	?	U	do	settled
+f66_L13	19	g	H		agree
+f66_L13	20	?	U		agree
+f66_L13	21	?	U	do ++	settled
+f66_L13	22	?	U	do ++	settled
+f66_L13	23	?	U	do ++	settled
+f66_L13	24	?	U	do ++	settled
+f66_L13	25	g	H		agree
+f66_L13	26	E	H		agree
+f66_L13	27	alpha	M	alpha	settled
+f66_L13	28	r	H		agree
+f66_L13	29	g	H		agree
+f66_L13	30	y	H		agree

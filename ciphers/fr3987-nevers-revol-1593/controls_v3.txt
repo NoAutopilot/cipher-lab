@@ -1,0 +1,7 @@
+signs 188; unkeyed tags 1 (78 tokens): ?
+decoded letters 165
+real S -1.2206
+length-class shuffled keys (200): mean -2.0097 sd 0.1936 max -1.5064; real rank 1/201
+shuffled orders (200): mean -1.2713 p95 -1.3386 max -1.1352; real rank 34/201
+judge on real decode: FAIL {"language": {"N": 165, "mode": "both", "null_p99": -1.768, "pass": false, "real_median": -0.785, "real_p05": -0.909, "score": -1.221}, "words": {"cover": 0.836, "min": 0.5, "pass": true, "real_text_median_cover": 0.945}}
+gate (rank <= 10/201 against both): DOES NOT BEAT CONTROL

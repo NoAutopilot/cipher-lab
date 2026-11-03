@@ -1,0 +1,44 @@
+# NEVREVOL-ATLAS-2 reconciliation (3 Nov 2026): every disagreement settled from the images/v2 crops, never from the key
+line	passA	passB	chosen	why
+f66_L07	?	8	8	first sign after clear "donne": 8 with a cross stroke; A54 8 fits best of the 41
+f66_L07	? ?	T	? ?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L07	?	T	?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L07	-	ll4 ll4 T	-	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L07	? T pl	-	? T pl	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L07	?	do	?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L07	? ? ?	ll4 ll4	? ? ?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L07	-	e	-	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L07	-	X+ phi	-	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L07	pl x	sigma n	pl x	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L07	? X+	X++	? X+	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L07	? ?	f r	? ?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L08	? ? ?	ll4 g T	? ? ?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L08	? ?	T g X+	? ?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L08	r	do	r	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L08	? ?	beta ++	? ?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L09	x	r	x	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L09	-	lam	-	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L09	? ?	g	? ?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L09	-	do ll4 e	-	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L09	? ? x pl	-	? ? x pl	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L09	? v	∠ lam to	? v	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L09	? pl	g pi	g pl	q/9 shape read g as elsewhere in both passes; next sign has the stroke through the descender (A31 pl), not pi
+f66_L09	? r	ue	? r	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L09	pl	pi	pl	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L10	?	sigma	?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L10	?	e	?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L10	? ?	T f	? ?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L10	?	+	?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L10	?	e	?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L10	?	lam	?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L10	-	? 10 3 g X X+	-	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L10	? x x g ? g ? g	n +	? x x g ? g ? g	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L10	-	+	-	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L11	?	do	?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L13	? ? ?	ll4	? ? ?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L13	?	f	f	looped long stroke after v matches A22 f
+f66_L13	? pl ? ? x	do pi ll4 X	? pl ? ? x	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L13	?	∠	?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L13	?	do	?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L13	? ? ? ?	do ++	? ? ? ?	crop: B span does not match the ink (shape outside the 41 exemplars or a split/merge); A kept
+f66_L13	?	alpha	alpha	open a with fish loop, A03/A18 alpha
