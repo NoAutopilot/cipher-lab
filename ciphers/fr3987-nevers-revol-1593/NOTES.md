@@ -287,3 +287,11 @@ Verdict: keep going: 3 internal gaps; cheapest next: the check-solved web-and-bl
 4. Alternatives: a consistent mis-tagging; nulls or clear words inside the runs; a key other than no.60.
 5. Most informative different experiment: two blind passes labelled with key60's own 264ext atlas (contact_sheet_264ext.png), which removes the mapping step and lets the existing key60 control row apply directly (wave 58, NEVREVOL-ATLAS); if that also fails both nulls, the target is untestable-by-this-instrument at this N (rule 3) and waits on the Revol-hand sorter (ASKS 102).
 6. Decision: pivot to the atlas-label instrument, one run, then stop if it fails.
+
+### Parent notes (account-4 parent, 3 Nov 2026, after NEVREVOL-ATLAS stopped at the gate)
+1. Learned: my brief let NEVREVOL-PREREG flip the head from blocked to open and then briefed deep work without re-running the intake gate; the worker stopped correctly at step 0.
+2. Assumption that failed: that a target once gated stays gated; a status-word change re-opens the intake check (Pipeline 2).
+3. Unverified: nothing new on the cipher; the web-and-blog check-solved step has never been run on this folder.
+4. Alternatives: none; this is process.
+5. Most informative next: CHECK-WEB-3987 (four plain searches plus site searches of Cipherbrain, Cryptiana and Cipher Mysteries, comment threads read), then NEVREVOL-ATLAS re-run unchanged (brief 59).
+6. Decision: continue, in that order; the parent pastes the gate output in brief 59 itself.

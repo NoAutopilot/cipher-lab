@@ -1587,3 +1587,11 @@ Verdict: keep going: 3 internal gaps; cheapest next: the forced-choice PREREG re
 4. Alternatives: the Lbar/4 question may need SUP-ELECTION's own forced-choice protocol re-run on this job's new crop, rather than another open-ended description, to produce a result the PREREG rule can act on.
 5. Most informative next: forced-choice PREREG re-run (new crop + re-cut l.11/Lbar reference crops) on this conflict; a page-image (not OCR) read of Lisch V pp.323-347.
 6. Decision: continue; the target stays open; both named next steps are cheap and neither needs new material.
+
+### Parent notes (account-4 parent, 3 Nov 2026, after ELEC-L29)
+1. Learned: on a fresh native crop two blind readers see a 4-shaped sign before m'advertist, where SUP-ELECTION's three forced-choice readers relabelled Lbar; the manuscript clause runs in the opposite order from Kluckhohn's print, so the word-count test cannot grade C. The Lbar/4 question is now a rule-4 data conflict with witnesses on both sides (HYPOTHESES.md).
+2. Assumptions: the retuned line count (36 lines, Treschiers = l.1) is right; the print's sentence and the manuscript's are the same clause reordered, not two sentences.
+3. Unverified: which reading protocol is right -- open-ended blind description (ELEC-L29) or forced choice (SUP-ELECTION); neither has run on the same crop.
+4. Alternatives: the writer used two different signs for the two electors in a reordered clause; one reading team is wrong about the shape.
+5. Most informative next: SUP-ELECTION's own forced-choice protocol on the committed crop images/f116r_l29_crop.jpg, three readers, ~$2 -- new material (the crop is now in git), not a re-run; Lisch V needs a better scan or a person (archive.org OCR garbled).
+6. Decision: hold the target open with the conflict logged; the forced-choice re-read is queued for a later wave behind cheaper rows; no key edit.
