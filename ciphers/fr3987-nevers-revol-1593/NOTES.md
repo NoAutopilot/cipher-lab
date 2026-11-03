@@ -351,3 +351,11 @@ Verdict: keep going: 3 internal gaps; cheapest next: the check-solved web-and-bl
 4. Alternatives: none; this is process.
 5. Most informative next: CHECK-WEB-3987 (four plain searches plus site searches of Cipherbrain, Cryptiana and Cipher Mysteries, comment threads read), then NEVREVOL-ATLAS re-run unchanged (brief 59).
 6. Decision: continue, in that order; the parent pastes the gate output in brief 59 itself.
+
+### Parent notes (account-4 parent, 3 Nov 2026, after CHECK-WEB-3987)
+1. Learned: nobody on the open web, the three blogs, DECODE or the two solver repositories has read f.66; Bourdeau's revol1593 covers seven other Revol letters.
+2. Assumptions: the folder's own edition read (24 Sept) stands; the gate's remaining complaint is the premise check only.
+3. Unverified: premise check (a)-(d) -- mentioned decipherments, other solvers' working files on this leaf, the neighbouring canvases of f.66 at native resolution (a clerk's decipherment or slip beside it), recipient-side editions.
+4. Alternatives: none new.
+5. Most informative next: PREMISE-3987 (brief 60), then NEVREVOL-ATLAS-2.
+6. Decision: continue; one more gate job, briefed with every section the gate names.
