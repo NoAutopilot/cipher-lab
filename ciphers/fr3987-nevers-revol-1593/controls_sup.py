@@ -13,9 +13,13 @@ Key: tools/keys/key60.tsv merged with ../fr3986-nevers-revol-1593/key_atlas_extr
   --diag       diagnostic (not a gate, never scored on the target): the same positive control at 0/20/40% with a
                length-class shuffle (values permuted only among signs whose value has the same length) and the
                100-order shuffled-sign null. -> controls_diag.txt
+  --mixed      positive control for PREREG-NEVREVOL-2 (NEVREVOL-PREREG, 3 Nov 2026): held-out passages enciphered with
+               letter, syllable and word signs at the 24 Sept draft's class shares (63.6/33.9/2.5%), N=188 signs,
+               0/10/20% injected error, 10 seeds; gate per passage = rank <= 10/201 vs 200 length-class value
+               shuffles AND vs 200 shuffled-order nulls; PASS iff >= 8/10 at 0% and >= 6/10 at 10%. -> controls_mixed.txt
   --check      exit 1 if the committed output differs. Deterministic.
 """
-import json, os, random, statistics, sys
+import collections, json, os, random, statistics, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, os.path.join(ROOT, 'tools'))
@@ -109,6 +113,61 @@ def diag(key, model, corpus_text):
                    f'{sum(1 for r in ranks if r <= 10)}/10; real > shuffled-order p95 in {above}/10')
     return out
 
+def mixed_encipher(key, words, rng, p_word, p_syl, N):
+    by = {}
+    for s, r in key.items():
+        v = jp.fold(r['value'].split('|')[0])
+        if v: by.setdefault(v, []).append(s)
+    signs, cls = [], []
+    for w in words:
+        if len(signs) >= N: break
+        if len(w) >= 4 and w in by and rng.random() < p_word:
+            signs.append(rng.choice(by[w])); cls.append('word'); continue
+        i = 0
+        while i < len(w):
+            done = False
+            for L in (3, 2):
+                ch = w[i:i + L]
+                if len(ch) == L and ch in by and rng.random() < p_syl:
+                    signs.append(rng.choice(by[ch])); cls.append('syl'); i += L; done = True; break
+            if not done:
+                if w[i] in by:
+                    signs.append(rng.choice(by[w[i]])); cls.append('letter')
+                i += 1
+    return signs[:N], cls[:N]
+
+def mixed(key, model, corpus_text, p_word=1.0, p_syl=0.83):
+    words = [w for w in (jp.fold(x) for x in corpus_text.split()) if w]
+    signs_all = sorted(key); N = 188
+    out = [f'mixed positive control (PREREG-NEVREVOL-2): N={N} signs per passage, held-out fr16 passages, letter+syllable+word '
+           f'signs (p_word {p_word}, p_syl {p_syl}; target shares 63.6/33.9/2.5), nulls: 200 length-class value shuffles, '
+           f'200 shuffled orders; passage passes iff rank <= 10/201 against both']
+    verdicts = {}
+    for err in (0.0, 0.1, 0.2, 0.3, 0.4, 0.5):
+        ra, rb, ok = [], [], 0; shares = collections.Counter()
+        for seed in range(1, 11):
+            rng = random.Random(1000 + seed)
+            start = rng.randrange(0, len(words) - 400)
+            signs, cls = mixed_encipher(key, words[start:start + 400], rng, p_word, p_syl, N)
+            shares.update(cls)
+            signs = [rng.choice(signs_all) if rng.random() < err else s for s in signs]
+            real = model.score(decode(key, signs))
+            sa = [model.score(decode(k2, signs)) for k2 in lenclass_keys(key)]
+            sb = []
+            for s2 in range(1, 201):
+                x = signs[:]; random.Random(s2).shuffle(x); sb.append(model.score(decode(key, x)))
+            a = 1 + sum(1 for x in sa if x >= real); b = 1 + sum(1 for x in sb if x >= real)
+            ra.append(a); rb.append(b); ok += (a <= 10 and b <= 10)
+        tot = sum(shares.values())
+        need = 8 if err == 0 else 6 if err == 0.1 else None
+        verdicts[err] = ok >= need if need else None
+        sh = ' '.join(f'{k} {100*shares[k]/tot:.1f}%' for k in ('letter', 'syl', 'word'))
+        out.append(f'error {int(err*100)}%: shares {sh}; length-class ranks {" ".join(map(str, ra))}; '
+                   f'shuffled-order ranks {" ".join(map(str, rb))}; both <= 10/201 in {ok}/10'
+                   + (f' (need {need}) -> {"PASS" if verdicts[err] else "FAIL"}' if need else ' (reported, not gated)'))
+    out.append(f'control gate (>= 8/10 at 0% AND >= 6/10 at 10%): {"PASS -- passes may run" if verdicts[0.0] and verdicts[0.1] else "FAIL -- control below gate, passes not run"}')
+    return out
+
 def target(key, model):
     rows = [l.rstrip('\n').split('\t') for l in open(os.path.join(HERE, 'ciphertext_v2.tsv'))
             if l.strip() and not l.startswith('#')][1:]
@@ -140,6 +199,9 @@ def main():
         # held out: the model is trained on the first 80% of the corpus, passages come from the last 20%
         cut = int(len(texts[0]) * 0.8)
         lines, name = positive(key, jp.NgramModel([texts[0][:cut]]), texts[0][cut:]), 'controls_pos.txt'
+    elif '--mixed' in sys.argv:
+        cut = int(len(texts[0]) * 0.8)
+        lines, name = mixed(key, jp.NgramModel([texts[0][:cut]]), texts[0][cut:]), 'controls_mixed.txt'
     elif '--diag' in sys.argv:
         cut = int(len(texts[0]) * 0.8)
         lines, name = diag(key, jp.NgramModel([texts[0][:cut]]), texts[0][cut:]), 'controls_diag.txt'

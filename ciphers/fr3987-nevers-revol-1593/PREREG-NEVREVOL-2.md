@@ -1,4 +1,4 @@
-# PREREG NEVREVOL-2 (3 Nov 2026, 02:5x UTC by date -u; account 4 worker NEVREVOL-PREREG, brief .claude/briefs/runs/2026-11-03-acct4-research-director-57.md)
+# PREREG NEVREVOL-2 (3 Nov 2026, 02:4x UTC by date -u; account 4 worker NEVREVOL-PREREG, brief .claude/briefs/runs/2026-11-03-acct4-research-director-57.md)
 
 Pushed before the positive control runs and before any vision pass. Supersedes the gate of PREREG-SUP-NEVREVOL.md (whose
 value-shuffled-key null was shown powerless at N~190, controls_pos.txt); the statistic and the material are unchanged.
@@ -37,6 +37,6 @@ Decode and grade only if the target gate passes, with judge output pasted.
 ## Decision
 Belief: the length-class null keeps the power on mixed sign classes that it showed on single-letter homophones (controls_diag.txt 10/10 to 40%), so the control should pass at 0% and 10%.
 Would change it: fewer than 8/10 at 0% or 6/10 at 10% -> word and syllable signs (which carry whole French words in any key) blunt the per-letter S, and this statistic cannot test the atlas on f.66 at N=188.
-Observed: (filled after the control runs)
-Decision: (filled after the control runs)
+Observed: positive control (controls_mixed.txt, achieved shares letter 62.9 / syl 34.7 / word 2.3%) both-null rank <= 10/201 in 10/10 at 0%, 10/10 at 10%, 10/10 at 20%; report-only sweep added after the gated levels: 10/10 at 30%, 9/10 at 40%, 8/10 at 50%
+Decision: continue -- control PASSES its gate; the two blind passes may run. The control still separates at 50% uniform error, which brackets the 24 Sept 49% disagreement, so a target FAIL at that agreement would be control-backed (uniform random errors, not lookalike errors: an assumption)
 Lesson: (filled after the control runs)
