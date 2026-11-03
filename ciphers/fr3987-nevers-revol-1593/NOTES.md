@@ -86,6 +86,82 @@ cannot run yet.
 
 No solution, plaintext, key, or model-solve claim found anywhere in this web-and-blog pass. Head stays `open`.
 
+## Premise check (PREMISE-3987, 3 Nov 2026)
+
+Adversarial pass (check-solved.md, 2 Oct 2026): trying to PROVE canvas 121 (f.66) is already read, before any further
+instrument runs. date checked with `date -u`: 3 Nov 2026 05:30 UTC.
+
+**(a) The folder's own mentions -- not found.** Grepped NOTES.md, HYPOTHESES.md, PREREG-NEVREVOL-2.md and
+PREREG-SUP-NEVREVOL.md for `decipher|gloss|interlin|clear copy|dechiffr|en clair|tomokiyo gives|attached|deciffr`
+(case-insensitive). HYPOTHESES.md and both PREREG files: zero hits. NOTES.md has three hits, all already opened and
+already incorporated into the folder's own work, none a new decipherment: (1) line 148, "No interlinear or marginal
+decipherment on the leaf (the margin '+' marks are insertion marks)" -- this is the 24 Sept 2026 eye-check of canvas
+121 itself, re-confirmed below in (c); (2) lines 29-31 and (3) the Escalation line "Tomokiyo gives only a few
+tentatively read words" -- both refer to Tomokiyo's own henryiv2.htm fragment ("tous sont de opinion que le pape
+veul ... conposer avec Mr. Despernon pour la deliuranse de son frer"), already quoted in the folder's head and
+already used as the only external lead; it is a tentative partial word-guess by Tomokiyo himself, not a located
+decipherment, gloss or clear copy, and nothing beyond that fragment exists in this folder. No REQUEST.md exists for
+this target. Nothing found that the folder has not already opened and weighed.
+
+**(b) Other solvers' working files for this leaf -- not found; key no.60 has not been applied by anyone to f.66.**
+`gh api search/code` (github.com, read-only, no clone; 4 of 6 host requests) against `dbourdeau/cyphersolver` for
+`f66`, `"f.66"`, `revol1593`, `key60`: every file that actually renders or decodes a Revol letter in key no.60 names
+a different leaf -- `targets/revol1593/ct_3986_f157v.txt`, `targets/revol1593/f88/ct_3985_f88.txt`,
+`targets/revol1593/ct_3986_f146v.txt`, `targets/revol1593/decode60.py`, `targets/revol1593/atlas60.md` -- none for
+f.66 or fr.3987. `targets/revol1593/NOTES.md` (already read in full by CHECK-WEB-3987, 3 Nov 2026, cited above) names
+fr.3987 f.66 only inside Tomokiyo's own inventory line, never as a transcribed or decoded leaf. Cross-checked against
+a second, independent source (2 of 6 host requests, raw.githubusercontent.com, public, no auth):
+`research/vetting_2026-10/{in,out}_L07.json`, a 2 Nov 2026 reading-audit catalogue entry for "Nevers to Revol and to
+Pisany, seven copies" (shelfmark "BnF fr. 3985 nos. 66, 88, 116; fr. 3986 nos. 68, 75, 81, 101" -- fr.3987 is not
+even in that shelfmark list) gives its own `open` leaves as "Revol: f. 146v (nine lines), f. 157v, f. 88r-v, f. 115,
+f. 176, f. 198 not transcribed or not decoded through" -- f.66 of fr.3987 is absent from that list too, i.e. it is
+outside the set Bourdeau's repository treats as part of this correspondence at all. `aaymeloglu/unsolved-ciphers`:
+not re-searched here (host budget; CHECK-WEB-3987, 3 Nov 2026, already grepped `3987`, `revol`, `nevers` there and
+found no dedicated target or catalogue entry -- cited, not re-run). Github host requests used: 6 of 6. **Key no.60
+has been applied by Bourdeau to three other Revol leaves (f.88, f.146v, f.157v) but never to f.66** -- no ciphertext,
+decode output or rendering of f.66 exists in either repository.
+
+**(c) Physical neighbours at native resolution -- not found.** Fetched canvases 119, 120, 122, 123 of ark
+`btv1b90606320` plus canvas 121 (the cipher leaf) itself once each via `openapi.bnf.fr`'s IIIF image API (Gallica's
+own native-image host answered a Cloudflare challenge page to curl this pass; openapi.bnf.fr, named in this job's own
+host list, served all five at 1400px wide, full page, no crop -- 5 of 8 host requests), looked at as 3 vision calls
+(119+120 as one composite look, 122+123 as one composite look, 121 alone as the third, re-examining the whole page
+beyond the six already-read cipher lines for a pasted slip or facing decipherment):
+
+| canvas | folio | what it holds | cipher present | clear copy / decipherment of f.66 present |
+|---|---|---|---|---|
+| 119 | unlabelled (NP) | a different letter, clear French cursive throughout, a different date in the closing line than f.66's "10 de Nove 1593" | No | No -- unrelated content |
+| 120 | "66" (pencil, visible top right; dated "10 de Nove 1593") | a separate letter of the same dispatch, addressed "Sire" (to the King), entirely in clear French prose, no cipher glyphs anywhere | No | No -- a different letter sharing the same old foliation, not a decipherment of the cipher letter (matches the 24 Sept 2026 finding already in this folder's head) |
+| 121 | "66" (the target leaf) | opens "Monsieur de Revol" in clear cursive, dense cipher body across the middle lines, clear closing; a few marginal "+" insertion marks only, no values or words written beside them | Yes (the target cipher) | No -- no slip, no interlinear gloss, no facing decipherment on the page itself; nothing beyond the margin marks already noted at line 148 |
+| 122 | unlabelled (NP) | a clear-text letter (prose, closing dated around "...Novembre 1593"), no cipher glyphs | No | No -- unrelated content |
+| 123 | "67" (pencil, visible top right) | essentially blank page, next leaf's foliation only, a faint bleed-through of text from the facing side | No | No -- blank |
+
+No decipherment, gloss, interlinear reading or pasted slip beside canvas 121 on either side. Canvas 120, the one
+candidate sharing f.66's own foliation, is a wholly separate clear letter, not a rendering of the cipher text.
+
+**(d) The recipient's side -- not found; cited, not re-read.** Gomberville's *Mémoires de messire Louys de Gonzague,
+duc de Nevers* seconde partie (Google Books `H2eV4wAmIr0C` / Gallica `bpt6k64451005`) and Goulart's *Mémoires de la
+Ligue* vols 5-6 (archive.org full text) were already read for this exact letter on 24 Sept 2026 (search log items 2-3
+below); letter absent from both -- cited here, not re-read. This correspondence is Duke of Nevers (sender) to Louis
+Revol, French secretary of state for war (recipient): both sides are French state papers, so "the recipient's side"
+is the same national series already covered, not a separate country's editions. One archive.org advancedsearch (1 of
+8 host requests; 7 of 8 Gallica/BnF host requests used across (c) and this item) for `title:("lettres missives") AND
+"Henri IV"` found the relevant volume, `recueildeslettre04henr` (*Recueil des lettres missives de Henri IV*, used but
+not yet queried for this letter's own text in the 7 Oct 2026 keyhunt, which read it only for Dec 1593 fr.3988
+material). One full-text check (be-api fts, 2 of 8 Gallica/BnF-family host requests... counted under archive.org: 2
+of 4) for Tomokiyo's distinctive fragment "deliuranse" against that volume: 0 hits. Expected -- this is Henri IV's
+own outgoing correspondence, not Nevers's, so a Nevers-to-Revol letter would only appear there as an editorial quote,
+and none exists. No reading of this letter located on the recipient's side either.
+
+**Gate, re-run after this section was written:**
+
+    fr3987-nevers-revol-1593: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+    exit: 0
+
+**Verdict of this pass:** no find on any of (a)-(d). The item does not move to calibration or found-solved. Head
+stays `open`; the next step is the already-queued 264ext atlas-label instrument (NEVREVOL-ATLAS-2), not blocked by
+this pass.
+
 ## Six-source search log (24 September 2026, date checked with `date -u`)
 
 1. **Tomokiyo/Cryptiana.** `henryiv2.htm` quoted above (WebFetch, two independent verbatim passes to cross-check
