@@ -39,6 +39,17 @@ Five checks, each printed one line per problem found:
       field, not an exact address book, the same approximation (g)'s lineage count already accepts --
       it errs toward flagging, the same direction (d) STALE CLAIM's own docstring already chooses.
 
+Parent-stall early-warning (3 Nov 2026, RETRO-2026-11-02 P1/P2, RETRO-APPLY-1102): counts
+  (i) PARENT STALL -- the newest ROOM.md line whose actor field matches "parent" or "orchestrator (owner
+      account)" (any account's own parent check-in line), printed with how many hours old it is, when
+      that is over 6 hours (the same threshold CLAUDE.md "Collaborators" already uses for an ordinary
+      claim). Motivating incident: RETRO-2026-11-02 section 1 -- the account-4 parent sat silent for over
+      61 hours with the only record of that fact a repeating ROOM.md line from a *different* role (the
+      owner-account orchestrator's own check-in), and no ASKS.md row telling the owner to re-arm it. This
+      check is a mechanical trip-wire for the same shape, not a fix for the ASKS.md row itself (that is
+      parent.md's own duty, P1's other half); it is informational, like (g): it never affects this
+      script's exit code, only (a)-(f) and (h) do.
+
 Depth early-warning (26 Sept 2026, RETRO-2026-09-26i item 2, LANE V10/B12 failure at depth 8): counts
   (g) LINEAGE DEPTH WARNING -- "hand-over to <X>" mentions in each account's STATUS.md "## Parent handoff"
       section, back to the most recent one saying the successor was "created ... the UI" (a depth-0
@@ -462,6 +473,23 @@ def check_dropped_requests(room_lines, now):
     return problems
 
 
+PARENT_STALL_RE = re.compile(r'\bparent\b|orchestrator \(owner account\)', re.I)
+
+
+def check_parent_stall(room_lines, now, threshold_hours=6):
+    """(i) PARENT STALL -- see the module docstring's "Parent-stall early-warning" section. Informational
+    only, like (g); never included in run_all()'s (a)-(h) tuple, so it never changes main()'s exit code."""
+    matching = [l for l in room_lines if l["ts_dt"] is not None and PARENT_STALL_RE.search(l["actor"])]
+    if not matching:
+        return []
+    newest = max(matching, key=lambda l: l["ts_dt"])
+    age = now - newest["ts_dt"]
+    if age <= datetime.timedelta(hours=threshold_hours):
+        return []
+    hours = age.total_seconds() / 3600
+    return [f"(i) PARENT STALL: {newest['actor']} last check-in line {hours:.0f} h ago (> {threshold_hours} h)"]
+
+
 def run_all(sessions, triggers, room_lines, assignments_text, assignment_rows, now):
     a = check_orphan_sessions(sessions, room_lines, assignments_text, now)
     b = check_stale_sessions(sessions, room_lines, now)
@@ -510,9 +538,13 @@ def main():
         for p in g:
             print(p)
 
+    i = check_parent_stall(room_lines, now)
+    for p in i:
+        print(p)
+
     summary = (f"orphans: {len(a) + len(b)} sessions, {len(c)} triggers, {len(d)} claims, "
                f"{len(e)} unledgered, {len(f)} title-mismatches, {len(g)} lineage-depth warnings, "
-               f"{len(h)} dropped requests")
+               f"{len(h)} dropped requests, {len(i)} parent-stall warnings")
     print(summary)
 
     if args.room:

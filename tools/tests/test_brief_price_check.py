@@ -17,6 +17,10 @@ F36 = os.path.join(ROOT, ".claude/briefs/runs/2026-10-03-acct3-f36-gloss.md")
 HEATHCOTE_PAGES = os.path.join(ROOT, ".claude/briefs/runs/2026-10-24-acct4-research-director-52.md")
 SCOUT_ANTT = os.path.join(ROOT, ".claude/briefs/runs/2026-10-24-acct4-research-director-55.md")
 OUT_DRAFT = os.path.join(ROOT, ".claude/briefs/runs/2026-10-24-acct4-research-director-53.md")
+# RETRO-2026-11-02 P4: brief -57's own "record hits as a table (columns: ...)" line was edited on 3 Nov
+# 2026 to dodge the dense-table rule via the existing "(columns" output-table exemption, not via the
+# quote/fence fix added here -- it must still pass unaffected by this change.
+BRIEF_57 = os.path.join(ROOT, ".claude/briefs/runs/2026-11-03-acct4-research-director-57.md")
 
 CASES = [
     ("gate-fix, no image step",
@@ -83,6 +87,17 @@ CASES = [
     ("table word followed by 'columns', also an output-table spec",
      "## JOB TB-5 (Sonnet; cap USD 3)\nRead the crops and report a table with columns (id, line, sign).\n"
      "vision calls: 2 x USD 1.5 = 3\n", 0),
+    # RETRO-2026-11-02 P4: a "table"/"register" word inside a markdown quote line is prose about a rule
+    # or a past job, not this job's own source -- must not trip the dense-table check (RETRO-APPLY-1026's
+    # own false positive, which the brief -56 fix addresses the same day).
+    ("dense-table word only inside a '> ' quote line must pass",
+     "## JOB TB-6 (Sonnet; cap USD 2)\nTranscribe the crop at f.10r (tools/iiif_lines.py cut crops).\n"
+     "> RETRO-2026-10-26 P1 lesson: the dense register (about 600 rows) needs vision calls >= ceil(rows/50).\n"
+     "vision calls: 1 x USD 1.5 = 1.5\n", 0),
+    ("dense-table word only inside a fenced code block must pass",
+     "## JOB TB-7 (Sonnet; cap USD 2)\nTranscribe the crop at f.11r (tools/iiif_lines.py cut crops).\n"
+     "```\nexample lesson text: the dense register (about 600 rows) needs more calls\n```\n"
+     "vision calls: 1 x USD 1.5 = 1.5\n", 0),
 ]
 
 
@@ -98,7 +113,7 @@ def main():
     if rc != 1 or not why.startswith("TABLE"):
         print(f"FAIL: HEATHCOTE-PAGES brief (-52) should FAIL the dense-source row check, got rc={rc} ({why})")
         fails += 1
-    for path, label in ((SCOUT_ANTT, "SCOUT-ANTT (-55)"), (OUT_DRAFT, "OUT-DRAFT-P14P15 (-53)")):
+    for path, label in ((SCOUT_ANTT, "SCOUT-ANTT (-55)"), (OUT_DRAFT, "OUT-DRAFT-P14P15 (-53)"), (BRIEF_57, "ELEC-KLUCK (-57)")):
         with open(path, encoding="utf-8") as f:
             rc, why, _ = b.check(f.read())
         if rc != 0:

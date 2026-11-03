@@ -11,6 +11,11 @@ Do not apply the changes: the orchestrator applies the safe ones and puts the re
 routine's email carries the five proposals in plain words. + common tail.
 Report tools/progress_metrics.py's week-on-week trend (USD per D2+ result, share D) before proposing changes.
 
+Heartbeat volume (3 Nov 2026, RETRO-2026-11-02 P5): alongside the ledger-row and spend totals for the window, also
+report `git log --since <last retro> --oneline | wc -l` and a rough split of commit message prefixes ("ROOM: check-in",
+"ROOM: fired", vs. everything else), so a thin ledger week is legible as quiet rather than mistaken for efficient
+(RETRO-2026-11-02: 843 commits vs. 1 ledger row read as either, until ROOM.md showed which).
+
 Register first (16 Oct 2026): read RETRO-PROPOSALS.tsv and run `python3 tools/retro_check.py`; every proposal this retrospective writes
 gets a row (status open, decided_on blank) in the same commit as RETRO-<date>.md; a proposal already in the register as open or
 partial is not re-proposed -- it is named once as a finding with its row, and the parent's duty 0d applies or escalates it. Also run

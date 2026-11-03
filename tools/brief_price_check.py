@@ -26,7 +26,11 @@ were priced for page looks, not a 684-row table; and a section with a row estima
 output-table spec ("Output: ... with a table (id, item, ...)" or "... (columns ...)") -- brief -55 (SCOUT-ANTT)
 is the worked passing case; a section with no image step at all -- brief -53 (OUT-DRAFT-P14P15, vision calls:
 0) is the worked passing case; and a section naming a dense source with a genuine nearby estimate ("the dense
-leaf, about 600 rows") backed by enough calls.
+leaf, about 600 rows") backed by enough calls. A "table"/"register"/"tabula" word inside a markdown quote
+line ("> ...") or a fenced code block (RETRO-2026-11-02 P4, see _strip_quoted_fenced()) is prose *about* a
+rule or a past job, never a job's own source description, and is excluded from this scan -- brief -56
+(RETRO-APPLY-1026) found its own false positive this way: a brief that quotes another brief's transcription
+wording trips the gate as if the quote were a job to transcribe.
 Rates: Sonnet about USD 1.5 a call on native crops (AX-COMP2); Opus about USD 1.3 a call on top of the 3.0 session floor
 (HAR-41R, ledger 4772: 5 reader calls measured, 16 Oct 2026, EXC-2026-10-16 fix B). The "Opus rate unmeasured" wording is
 retired (it let HAR-41R through at 2.1x): an Opus image brief writes the line with r = 1.3 like any other.
@@ -75,6 +79,23 @@ TABLE_RE = re.compile(r'\btable\b|\bregister\b|\bdense (?:leaf|page)\b|\btabula\
 ROWS_RE = re.compile(r'(\d+)\s*(?:rows?|entries)\b', re.I)
 JOBNAME_RE = re.compile(r'^#{2,3}\s+(?:JOB\s+)?(\S+)', re.M)
 ROWS_PER_CALL = 50
+
+# RETRO-2026-11-02 P4: a markdown quote line ("> ...") or a fenced code block is prose about a rule or a
+# past job, never a job's own source description -- exclude both from TABLE_RE/ROWS_RE scanning.
+FENCE_RE = re.compile(r'```.*?```', re.S)
+QUOTE_LINE_RE = re.compile(r'^[ \t]*>.*$', re.M)
+
+
+def _strip_quoted_fenced(text):
+    """Blank markdown quote lines ('> ...') and fenced code blocks before TABLE_RE/ROWS_RE scanning
+    (RETRO-2026-11-02 P4; RETRO-APPLY-1026's own finding: a brief that quotes another brief's
+    transcription wording -- CLAUDE.md prose, a lesson, an example -- trips the dense-table rule as if
+    the quote itself were a job to transcribe, not a job that merely mentions one). Replacement keeps
+    every character's position (spaces for quoted/fenced text, real newlines kept as newlines) so the
+    offsets _nearby_rows's window math uses still line up with the unfiltered text used elsewhere."""
+    text = FENCE_RE.sub(lambda m: re.sub(r'[^\n]', ' ', m.group(0)), text)
+    text = QUOTE_LINE_RE.sub(lambda m: ' ' * len(m.group(0)), text)
+    return text
 
 
 def floor_check(text, floors=FLOORS):
@@ -134,14 +155,16 @@ def _nearby_rows(text, m, before=60, after=150):
 
 def dense_check(text, n):
     """RETRO-2026-10-26 P1: return (rc, reason, 'fail') if a dense-source mention lacks a nearby row
-    estimate, or has one that N vision calls cannot cover at ROWS_PER_CALL; else None."""
-    matches = _dense_matches(text)
+    estimate, or has one that N vision calls cannot cover at ROWS_PER_CALL; else None. Scans a
+    quote/fence-blanked copy of text (RETRO-2026-11-02 P4, _strip_quoted_fenced), not text itself."""
+    scan_text = _strip_quoted_fenced(text)
+    matches = _dense_matches(scan_text)
     if not matches:
         return None
     job = _job_name(text)
     rows = None
     for m in matches:
-        r = _nearby_rows(text, m)
+        r = _nearby_rows(scan_text, m)
         if r is not None:
             rows = r if rows is None else max(rows, r)
     if rows is None:

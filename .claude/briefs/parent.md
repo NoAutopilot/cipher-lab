@@ -34,6 +34,17 @@ its state is only what it committed, so read its handoff and its lanes' ROOM lin
    every check-in; a row it lists is a job to queue that hour (a WAIT-PASS worker writes the section from the
    folder's own NOTES/AUDIT/NEAR evidence), never a row to leave.
 
+0d0. **Parent stall -> ASKS (2 Nov 2026, RETRO-2026-11-02 P1).** The first check-in to find a parent's own
+   check-in line older than six hours (the same threshold CLAUDE.md already uses for an ordinary ROOM.md claim)
+   writes one ASKS.md row -- "<account> parent silent since <time>; re-arm its check-in or say why not" --
+   once, not on every subsequent check-in; a later check-in updates that same row's hours-silent figure in
+   place rather than adding a new one.
+
+0d1. **Stall back-off (2 Nov 2026, RETRO-2026-11-02 P2).** Once a check-in's own line says a parent has been
+   silent for more than six hours with no change from the previous check-in, the next check-in is scheduled at
+   4x the normal interval (capped at 6 hours) rather than the default cadence, until something changes (the
+   parent reports in, the owner answers the new ASKS row, or a worker's dispatcher finds queued work again).
+
 0d. **Learning loop (16 Oct 2026, owner's mission "Close the Learning Loop").** Run `python3 tools/retro_check.py` at every
    check-in: an open RETRO-PROPOSALS.tsv row past 7 days is applied in this check-in (briefs, tools, workflows only, with a
    test) or escalated as an ASKS row with a one-line recommendation, never carried into a third retrospective; an

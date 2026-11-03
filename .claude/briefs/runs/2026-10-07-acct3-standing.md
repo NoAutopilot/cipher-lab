@@ -34,6 +34,10 @@ link) -- a contribution dataset in the shape a library can ingest (TSV + a one-p
 BnF records that do not say "chiffre" where we found cipher, or that misdate/misattribute a letter we read -- each with
 evidence; (3) the BnF cipher items still unread that the tie-breaker rule favours, ranked by expected value. Then work (3)
 as a standing queue, highest value first. Outward contact is the orchestrator's only (gates 1-8); the lane drafts nothing.
+Before naming an ASKS row as still open in the daily line, check that row's own priority column; a row tagged `backlog`
+is omitted from the daily restatement (it stays visible in ASKS.md itself) unless its status has changed since the last
+report (3 Nov 2026, RETRO-2026-11-02 P3: wave 49-53's daily line restated ASKS 163/169 as "unanswered" for over two
+weeks although both rows are tagged `backlog, never blocking` in their own text).
 
 ## DEB-RUN (account 4), standing: ciphers/debosnys-1883
 Owner, 7 Oct: by 10 Oct 18:00 UTC write ciphers/debosnys-1883/ATTEMPTS.md -- a plain-English record of every approach

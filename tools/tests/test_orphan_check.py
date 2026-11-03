@@ -307,6 +307,34 @@ def test_dropped_request_resolved_by_a_later_matching_actor_within_two_hours(tmp
     assert oc.check_dropped_requests(room_lines, later) == []
 
 
+def test_parent_stall_fires_past_six_hours_not_before(tmp_path):
+    # 5 h old (NOW is 2026-09-26 05:00): must NOT fire.
+    fresh = [{"ts": "2026-09-26 00:00", "ts_dt": datetime.datetime(2026, 9, 26, 0, 0),
+              "actor": "account-4 parent", "signal": "check-in 202", "raw": "line"}]
+    assert oc.check_parent_stall(fresh, NOW) == []
+
+    # 7 h old: must fire, naming the stale role and the hour count.
+    stale = [{"ts": "2026-09-25 22:00", "ts_dt": datetime.datetime(2026, 9, 25, 22, 0),
+              "actor": "account-4 parent", "signal": "check-in 202", "raw": "line"}]
+    i = oc.check_parent_stall(stale, NOW)
+    assert len(i) == 1
+    assert "account-4 parent" in i[0] and "7 h ago" in i[0]
+
+    # The owner-account orchestrator's own check-in line also matches the role.
+    stale_orch = [{"ts": "2026-09-25 22:00", "ts_dt": datetime.datetime(2026, 9, 25, 22, 0),
+                   "actor": "orchestrator (owner account)", "signal": "check-in 537", "raw": "line"}]
+    i2 = oc.check_parent_stall(stale_orch, NOW)
+    assert len(i2) == 1 and "orchestrator (owner account)" in i2[0]
+
+    # No matching role at all -- clean (vacuous), not a crash.
+    assert oc.check_parent_stall([{"ts": "2026-09-25 22:00", "ts_dt": datetime.datetime(2026, 9, 25, 22, 0),
+                                    "actor": "LANE BNF-FOCUS", "signal": "wave 53", "raw": "line"}], NOW) == []
+
+    # Informational only: run_all()'s tuple is unaffected (exit code unchanged).
+    a, b, c, d, e, f, h = oc.run_all([], [], stale, "", [], NOW)
+    assert (a, b, c, d, e, f, h) == ([], [], [], [], [], [], [])
+
+
 def test_dropped_request_excludes_done_and_check_in_reports(tmp_path):
     write_text(tmp_path / "ROOM.md",
                "2026-09-26 12:00 | worker A | done: for the parent -- finished the job, nothing owed\n"
