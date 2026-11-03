@@ -20,6 +20,8 @@ Key: tools/keys/key60.tsv merged with ../fr3986-nevers-revol-1593/key_atlas_extr
   --local-key  use this folder's key.tsv (key no.60 mapped to sign_guide.md's ASCII tags, the tags the NEVREVOL-PREREG
                passes wrote) instead of key60.tsv + key_atlas_extra.tsv; outputs get a _localkey suffix. The target
                branch then also gates on the 200 length-class shuffles and 200 shuffled orders (PREREG-NEVREVOL-2).
+  --v3         PREREG-NEVREVOL-3 (NEVREVOL-ATLAS-2, 3 Nov 2026): the target2 gate (both nulls) under key60.tsv +
+               key_atlas_extra.tsv on ciphertext_v3.tsv (passes written in the 264ext atlas tags). -> controls_v3.txt
   --check      exit 1 if the committed output differs. Deterministic.
 """
 import collections, json, os, random, statistics, sys
@@ -171,9 +173,9 @@ def mixed(key, model, corpus_text, p_word=1.0, p_syl=0.83):
     out.append(f'control gate (>= 8/10 at 0% AND >= 6/10 at 10%): {"PASS -- passes may run" if verdicts[0.0] and verdicts[0.1] else "FAIL -- control below gate, passes not run"}')
     return out
 
-def target2(key, model):
+def target2(key, model, fname='ciphertext_v2.tsv'):
     """PREREG-NEVREVOL-2 gate: real S rank <= 10/201 vs 200 length-class value shuffles AND vs 200 shuffled orders."""
-    rows = [l.rstrip('\n').split('\t') for l in open(os.path.join(HERE, 'ciphertext_v2.tsv'))
+    rows = [l.rstrip('\n').split('\t') for l in open(os.path.join(HERE, fname))
             if l.strip() and not l.startswith('#')][1:]
     signs = [r[2] for r in rows]
     txt = decode(key, signs); real = model.score(txt)
@@ -231,6 +233,8 @@ def main():
     elif '--diag' in sys.argv:
         cut = int(len(texts[0]) * 0.8)
         lines, name = diag(key, jp.NgramModel([texts[0][:cut]]), texts[0][cut:]), 'controls_diag.txt'
+    elif '--v3' in sys.argv:
+        lines, name = target2(key, model, 'ciphertext_v3.tsv'), 'controls_v3.txt'
     elif local:
         lines, name = target2(key, model), 'controls_sup.txt'
     else:
