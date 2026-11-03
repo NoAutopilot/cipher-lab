@@ -571,8 +571,9 @@ M rows. The breakthrough alert waits for the second audit or the Leighton and Ma
 ## Siblings (18 Oct 2026, account-4 parent)
 Same code, same correspondents: Cossit and Sumner's other cypher letters to Sherwood and Haldimand, winter 1782-83 (Fryer 1981 cites
 B.175 pp.185-186, Cossitt and Sumner to Haldimand, 30 Dec 1782; Brymner 1888 calendars further B.175-B.178 entries). Same design, other
-correspondents: the Haldimand service's Entick and code-list letters (Leighton and Matyas 1985; Friedman), and the 1778 title-page book
-cipher already in ciphers/pro3055-clinton-1779. Planned: list the Cossit/Sumner entries from Brymner by script, fetch only those frames,
+correspondents: the Haldimand service's code-list letters (Leighton and Matyas 1985 p.106, Add MSS 21807-21808) and the 1778 title-page book
+cipher already in ciphers/pro3055-clinton-1779; an Entick-based Haldimand letter rests on Friedman alone, unverified (SHERWOOD-VERIFY4,
+3 Nov 2026: Leighton and Matyas name Entick only for Cornwallis and Clinton, 1781, 1777 edition). Planned: list the Cossit/Sumner entries from Brymner by script, fetch only those frames,
 decode with decode_entick.py (next worker, ~$5).
 
 ## Sibling letters (SHERWOOD-SIB, 18 Oct 2026)
