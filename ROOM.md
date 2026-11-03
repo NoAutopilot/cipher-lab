@@ -19749,3 +19749,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-11-03 10:38 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 10:36 UTC 3 Nov (scheduled 10:34): spawned 0 -- no queued account-4 rows
 2026-11-03 10:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 10:39 UTC 3 Nov: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: seven_day allowed by get_session, resets 05:00 UTC 7 Nov
 2026-11-03 11:06 | account-4 parent | check-in 208 (fired 11:01 UTC 3 Nov): quiet -- no worker live, sorters empty, no holder reply in the mailbox (read only), purchases on hold, no flags, no ASKS rows; nothing spawned by design (free queue exhausted until ASKS 102/173/175 or the hold lifts). Next check-in ~14:0x 3 Nov. usage: seven_day allowed by get_session, resets 9 Nov 08:00 UTC
+2026-11-03 11:12 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 11:12 UTC: spawned 0 (), queued left 0
