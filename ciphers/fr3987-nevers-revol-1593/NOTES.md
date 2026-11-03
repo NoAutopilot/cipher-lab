@@ -1,5 +1,5 @@
-blocked
-Blocked internally (20 Oct 2026, SUP-NEVREVOL): the value-shuffled-key control named for the f.66 atlas passes has no power at this N (positive control 7/10 at 0% error, 0/10 at 20%), so the passes were not run; Gomberville *Mémoires de Nevers* seconde partie and *Mémoires de la Ligue* vols 5-6 read 24 Sept 2026, letter absent; next: re-PREREG with a length-class null, then two blind atlas passes on the six lines cut in images/v2, ~$3.
+open
+Open (3 Nov 2026, NEVREVOL-PREREG): the internal block of 20 Oct is lifted. A mixed-class positive control with the length-class and shuffled-order nulls PASSes (controls_mixed*.txt). Two Opus passes (74.5% agreement) then failed the gate (rank 2/201 against the key shuffles, 119/201 against the order shuffles), a control-backed non-reading for sign_guide tags + key.tsv. Next: passes with the 264ext atlas labels. Earlier block (20 Oct): the value-shuffled-key control had no power at this N.
 
 **Check-solved, LANE N4 csKSb, 24 Sept 2026:** letter absent from Gomberville's *Mémoires de Nevers* seconde
 partie and from *Mémoires de la Ligue* (Goulart) vols 5-6; see the search log below. Corrects QUEUE.md row
@@ -186,17 +186,68 @@ Research-director questions:
 
 Requests: gallica.bnf.fr 0. Vision calls: 0 of 2 (+1 reconciliation) priced.
 
-## Remaining gaps (SUP-NEVREVOL, 20 Oct 2026)
-Read so far: 0 of 308 signs to a continuous text (24 Sept 2026 mechanical draft: H 69, M 211, U 28, I 0; pass agreement 51.0%).
-- f.66 cipher runs, six densest lines L07-L11 and L13 (about 188 signs, crops in images/v2) - blocker: not-attempted; the controlled atlas passes were stopped on 20 Oct 2026 because the named value-shuffled-key control failed its positive control (controls_pos.txt); next: re-PREREG with the length-class null and the shuffled-order null, positive control on mixed sign classes, then two blind Opus atlas passes + 1 reconciliation, decode with tools/keys/key60.tsv + fr3986 key_atlas_extra.tsv, ~$3
-- f.66 remaining cipher lines L14 to L18 and L20 to L21 (about 95 signs) - blocker: not-attempted; held back until the six lines show whether the atlas fits this hand; next: same passes after the six lines show the atlas fits this hand, ~$2
+## NEVREVOL-PREREG (3 Nov 2026, account 4 worker for the account-4 parent, brief 57)
 
-## Escalation (SUP-NEVREVOL, 20 Oct 2026)
+**Order kept: PREREG, control, passes.** PREREG-NEVREVOL-2.md (Decision block) was pushed before the control ran (b32cebbe9).
+The new gate: real S ranks <= 10/201 against 200 length-class value shuffles AND against 200 shuffled orders.
+
+**Positive control, mixed sign classes** (`controls_sup.py --mixed` -> controls_mixed.txt). Held-out fr16 passages, N=188 signs,
+greedy letter/syllable/word encipherment. Both-null pass count per 10 passages:
+
+| key | achieved shares letter/syl/word | 0% | 10% | 20% | 30% | 40% | 50% |
+|---|---|---|---|---|---|---|---|
+| key60.tsv + key_atlas_extra (PREREG) | 62.9 / 34.7 / 2.3 | 10/10 | 10/10 | 10/10 | 10/10 | 9/10 | 8/10 |
+| key.tsv, the ASCII tags the passes used (`--local-key`) | 81.0 / 18.9 / 0.1 | 10/10 | 10/10 | 10/10 | 10/10 | 9/10 | 5/10 |
+
+Gate (>= 8/10 at 0%, >= 6/10 at 10%): PASS for both keys. The second row was added after the passes: sign_guide.md's tags
+are the ones in this folder's key.tsv, not key60.tsv's Unicode tags, so the target is scored with key.tsv. Its control was run
+on that same key before the target was scored. key.tsv has fewer syllable and word signs, so its achieved shares sit below the
+target shares.
+
+**Passes.** Pass A: the worker read the 12 crops one at a time. Pass B: 6 Opus subagents, one per line, crops and
+sign_guide.md only. Both are in passes/nevrevol2_pass{A,B}.tsv. Agreement was 149/200 signs (74.5%), against 51.0% for the
+24 Sept unaided passes. **Blindness breach:** pass B's L10 and L13 lines came back before the worker read those crops, so pass A
+is not blind on 2 of 6 lines. L07, L08, L09 and L11 were read blind. All 51 disagreements were settled from the crops, never from
+the key (reconcile_v2.tsv). ciphertext_v2.tsv has 191 signs: 149 H (agreed), 42 M (settled).
+
+**Target** (`controls_sup.py --local-key` -> controls_sup_localkey.txt, pasted):
+
+    signs 191; unkeyed tags 13 (25 tokens): 24 I a b' h i j m+ n' s' x' x+ z
+    decoded letters 280
+    real S -1.5098
+    length-class shuffled keys (200): mean -1.7416 sd 0.0878 max -1.4672; real rank 2/201
+    shuffled orders (200): mean -1.4967 p95 -1.4672 max -1.3551; real rank 119/201
+    judge on real decode: FAIL {"language": {"N": 280, "mode": "both", "null_p99": -1.837, "pass": false, "real_median": -0.774, "real_p05": -0.883, "score": -1.51}, "words": {"cover": 0.743, "min": 0.5, "pass": true, "real_text_median_cover": 0.943}}
+    gate (rank <= 10/201 against both): DOES NOT BEAT CONTROL
+
+**Gate: FAIL.** The target ranks 2/201 against the key shuffles but 119/201 against the order shuffles. Its letter frequencies
+look French, but its letter order is no better than its own signs scrambled. No decode_key run, no reading, and no grade
+changed (the 24 Sept draft stands). The measured disagreement is about 25%. At 20-30% uniform error the key.tsv control still
+passes 10/10, so this is a **control-backed non-reading for this instrument on this transcription**. It is not a test of key
+no.60 on f.66 (see assumptions below). The judge line was broken by the script's flat SPEC dict and is now fixed: the spec is
+wrapped in a "judge" block.
+
+Six questions:
+1. Learned: with sign_guide tags + key.tsv, the six f.66 lines reach French-like letter frequencies but not French order: rank 2 against the key shuffles, 119 against the order shuffles. Two Opus passes agree 74.5%.
+2. Assumptions behind the result: (i) the sign_guide shape -> key.tsv tag mapping of 24 Sept is right; (ii) the control's random uniform errors stand in for the hand's errors; (iii) 25 unkeyed tokens (13%) can be dropped; (iv) the six lines are one continuous cipher run in page order.
+3. Not yet verified: (i), which nothing tests, and a systematic mis-tagging is not modelled by the control; (ii) and (iv). The lookalike pairs 9/g and 6/b recur in the disagreements.
+4. Other explanations: a consistent shape-to-tag error, in the 24 Sept key.tsv mapping or in both passes; clear words or nulls inside the runs; a key other than no.60 for this letter.
+5. Most informative different experiment: pass with key60.tsv's own atlas labels (the 264ext contact sheet, not sign_guide's ASCII tags), so the mapping step goes away and the existing key60 control row applies directly. Or a check of the key.tsv shape mapping against the fr.3995 key-sheet images.
+6. Decision: pivot. Do not re-run the same instrument (rule 3). Next is a different instrument (atlas-label passes); the target stays open.
+
+Usage: vision calls 12 counted + 1 reconciliation, plus 1 subagent call stopped at launch (a placeholder line id) before it read a crop. Requests: none (disk only).
+
+## Remaining gaps (NEVREVOL-PREREG, 3 Nov 2026)
+Read so far: 0 of 308 signs to a continuous text (24 Sept 2026 mechanical draft: H 69, M 211, U 28, I 0). The six-line v2 transcription (191 signs, A/B agreement 74.5%) fails the gate with sign_guide tags + key.tsv: rank 2/201 against the length-class shuffles, 119/201 against the order shuffles (controls_sup_localkey.txt).
+- f.66 cipher runs, six densest lines L07-L11 and L13 (191 signs, ciphertext_v2.tsv) - blocker: not-attempted; ASCII-tag passes with key.tsv are a control-backed non-reading (3 Nov 2026); next: two blind passes with key60.tsv's own 264ext atlas labels (contact_sheet_264ext.png), scored by the PREREG-NEVREVOL-2 gate with the key60 control row already on file, ~$3
+- f.66 remaining cipher lines L14 to L18 and L20 to L21 (about 95 signs) - blocker: not-attempted; held back until a six-line instrument beats both nulls; next: same passes on these lines once one does, ~$2
+
+## Escalation (NEVREVOL-PREREG, 3 Nov 2026)
 - [x] siblings: fr3986 f.198 (same correspondence, atlas instrument retired there on the verso runs, 36% agreement) and the interlined fr.3985 c.264 / fr.3986 c.298 leaves (atlas source, held-out 65/65)
 - [n/a] clear-pages: no clear copy of this letter is known; Tomokiyo gives only a few tentatively read words
 - [x] known-keys: key no.60 is in hand (key.tsv; tools/keys/key60.tsv), the key is not the blocker
 - [x] print: Gomberville *Mémoires de Nevers* seconde partie and *Mémoires de la Ligue* vols 5-6 read 24 Sept 2026, letter absent
 - [x] key-rebuild: 264ext atlas exists (tools/keys/key60_atlas); the Revol-hand sorter for fr3986 waits on ASKS row 102
 - [x] image-check: canvas 121 = f.66 confirmed 24 Sept 2026; native region on disk, six lines re-cut 20 Oct 2026 (images/v2)
-- [ ] retry: two blind atlas passes on images/v2 gated by the length-class null (the instrument was never run on f.66)
-Verdict: keep going: 2 internal gaps; cheapest next: re-PREREG with the length-class null, then the six-line atlas passes, ~$3
+- [ ] retry: sign_guide-tag passes + key.tsv done 3 Nov 2026 (gate FAIL, control passed); untried instrument: passes labelled with key60.tsv's 264ext atlas labels
+Verdict: keep going: 2 internal gaps; cheapest next: two blind 264ext-atlas-label passes on images/v2 under the PREREG-NEVREVOL-2 gate, ~$3

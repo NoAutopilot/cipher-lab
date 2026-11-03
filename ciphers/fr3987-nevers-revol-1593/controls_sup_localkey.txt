@@ -1,0 +1,7 @@
+signs 191; unkeyed tags 13 (25 tokens): 24 I a b' h i j m+ n' s' x' x+ z
+decoded letters 280
+real S -1.5098
+length-class shuffled keys (200): mean -1.7416 sd 0.0878 max -1.4672; real rank 2/201
+shuffled orders (200): mean -1.4967 p95 -1.4672 max -1.3551; real rank 119/201
+judge on real decode: FAIL {"language": {"N": 280, "mode": "both", "null_p99": -1.837, "pass": false, "real_median": -0.774, "real_p05": -0.883, "score": -1.51}, "words": {"cover": 0.743, "min": 0.5, "pass": true, "real_text_median_cover": 0.943}}
+gate (rank <= 10/201 against both): DOES NOT BEAT CONTROL

@@ -1,0 +1,193 @@
+# f.66 six-line v2 draft, NEVREVOL-PREREG 3 Nov 2026: pass A (worker, Opus 5.5, crops one at a time) + pass B (6 Opus subagents, crops only, no key) reconciled on the crops, never from the key; tags = sign_guide.md (ASCII, key.tsv). Pass A for L10 and L13 was read after pass B's line for it had reached the worker (not blind).
+line	position	sign	confidence	alt	why
+f66_L07	1	8+	H		agree
+f66_L07	2	L	H		agree
+f66_L07	3	I	H		agree
+f66_L07	4	ls	H		agree
+f66_L07	5	x	H		agree
+f66_L07	6	9	M	A:9 B:g	9-loop closed, descender straight
+f66_L07	7	pi	H		agree
+f66_L07	8	7	H		agree
+f66_L07	9	dbl	H		agree
+f66_L07	10	inT	H		agree
+f66_L07	11	2+	M	A:2+ B:2	cross on 2 visible
+f66_L07	12	4	H		agree
+f66_L07	13	T	H		agree
+f66_L07	14	+	H		agree
+f66_L07	15	10	M	A:10 B:1 o	1 and o written close: one group
+f66_L07	16	dbl	H		agree
+f66_L07	17	inT	H		agree
+f66_L07	18	inT	M	A:9 B:inT? q 2	a second inverted-T upright then q before the two 4s
+f66_L07	19	q	M	A:9 B:inT? q 2	a second inverted-T upright then q before the two 4s
+f66_L07	20	4	H		agree
+f66_L07	21	4	M	A:4 v+ del? B:u+? e	second 4, v with cross, e
+f66_L07	22	v+	M	A:4 v+ del? B:u+? e	second 4, v with cross, e
+f66_L07	23	e	M	A:4 v+ del? B:u+? e	second 4, v with cross, e
+f66_L07	24	4+	H		agree
+f66_L07	25	g	H		agree
+f66_L07	26	lam	H		agree
+f66_L07	27	alpha	H		agree
+f66_L07	28	inT	H		agree
+f66_L07	29	x+	M	A:x+ pl? B:x +	cross joined to x, then p with looped descender
+f66_L07	30	pl	M	A:x+ pl? B:x +	cross joined to x, then p with looped descender
+f66_L07	31	x	H		agree
+f66_L07	32	o	H		agree
+f66_L07	33	u+	H		agree
+f66_L07	34	X	M	A:x' B:X?	large x with tilde, read capital
+f66_L07	35	T	H		agree
+f66_L07	36	n	H		agree
+f66_L07	37	++	M	A:++? B:+	one upright two bars
+f66_L07	38	h	H		agree
+f66_L07	39	6	H		agree
+f66_L07	40	3	H		agree
+f66_L07	41	20	H		agree
+f66_L08	1	4+	H		agree
+f66_L08	2	j	H		agree
+f66_L08	3	7	H		agree
+f66_L08	4	h	H		agree
+f66_L08	5	dbl	H		agree
+f66_L08	6	y	H		agree
+f66_L08	7	s'	M	A:s' I B:s 2? t	superscript 2 is a mark on s; t-like stroke
+f66_L08	8	t	M	A:s' I B:s 2? t	superscript 2 is a mark on s; t-like stroke
+f66_L08	9	j	H		agree
+f66_L08	10	x	M	A:x' B:x	mark is a dot of the line above
+f66_L08	11	r	H		agree
+f66_L08	12	del	H		agree
+f66_L08	13	++	M	A:++ B:n? 4+	single sign, one upright two bars
+f66_L08	14	b	H		agree
+f66_L08	15	24	M	A:24 B:2 #?	two digits written close: one group
+f66_L09	1	+	H		agree
+f66_L09	2	o	H		agree
+f66_L09	3	6	H		agree
+f66_L09	4	x	H		agree
+f66_L09	5	x	H		agree
+f66_L09	6	9	H		agree
+f66_L09	7	E	H		agree
+f66_L09	8	x	H		agree
+f66_L09	9	o	H		agree
+f66_L09	10	t	M	A:c? B:t?	tau-like t
+f66_L09	11	///	H		agree
+f66_L09	12	q	H		agree
+f66_L09	13	y	H		agree
+f66_L09	14	pl	H		agree
+f66_L09	15	dbl	M	A:inT? B:#	two uprights, two crossbars
+f66_L09	16	4	H		agree
+f66_L09	17	e	H		agree
+f66_L09	18	r	M	A:x? B:r?	r with loop
+f66_L09	19	T	H		agree
+f66_L09	20	8	H		agree
+f66_L09	21	lam	H		agree
+f66_L09	22	r	H		agree
+f66_L09	23	o	H		agree
+f66_L09	24	dbl	H		agree
+f66_L09	25	s'	H		agree
+f66_L09	26	c	H		agree
+f66_L09	27	l	M	A: B:l?	tall l between c and del
+f66_L09	28	del	H		agree
+f66_L09	29	v+	H		agree
+f66_L09	30	n	H		agree
+f66_L09	31	dbl	H		agree
+f66_L09	32	4	H		agree
+f66_L09	33	q	H		agree
+f66_L09	34	phi	M	A:pl B:phi	circle with stroke through
+f66_L09	35	v	H		agree
+f66_L09	36	u	H		agree
+f66_L09	37	r	H		agree
+f66_L09	38	s	H		agree
+f66_L09	39	o	H		agree
+f66_L09	40	del	H		agree
+f66_L09	41	pl	H		agree
+f66_L09	42	x'	H		agree
+f66_L10	1	alpha	H		agree
+f66_L10	2	o	H		agree
+f66_L10	3	n	H		agree
+f66_L10	4	6	M	A:6 B:b	loop closed at bottom, top open: 6
+f66_L10	5	q	H		agree
+f66_L10	6	9	M	A:9 B:g	9-loop
+f66_L10	7	c	H		agree
+f66_L10	8	q	H		agree
+f66_L10	9	7	H		agree
+f66_L10	10	ls	H		agree
+f66_L10	11	del	H		agree
+f66_L10	12	o	H		agree
+f66_L10	13	+	M	A:++ B:+ r	cross then r before n'
+f66_L10	14	r	M	A:++ B:+ r	cross then r before n'
+f66_L10	15	n'	H		agree
+f66_L10	16	q	H		agree
+f66_L10	17	6	M	A:6 B:b	loop closed at bottom, top open: 6
+f66_L10	18	j	H		agree
+f66_L10	19	9	M	A:9 B:g	9-loop
+f66_L10	20	b'	H		agree
+f66_L10	21	q	H		agree
+f66_L10	22	1	H		agree
+f66_L10	23	l	H		agree
+f66_L10	24	x	H		agree
+f66_L10	25	E	H		agree
+f66_L10	26	g	H		agree
+f66_L10	27	l	H		agree
+f66_L10	28	o	H		agree
+f66_L10	29	z	H		agree
+f66_L10	30	x	M	A:x B:X	small x
+f66_L10	31	x'	H		agree
+f66_L10	32	q	H		agree
+f66_L10	33	1	H		agree
+f66_L10	34	q	H		agree
+f66_L10	35	m+	M	A:m+ B:m +	cross joined to m
+f66_L10	36	q	H		agree
+f66_L10	37	g	H		agree
+f66_L10	38	g	H		agree
+f66_L10	39	q	H		agree
+f66_L10	40	+	H		agree
+f66_L10	41	o	H		agree
+f66_L10	42	r	H		agree
+f66_L10	43	V	H		agree
+f66_L10	44	T	H		agree
+f66_L10	45	V+	M	A:V+ B:V +	cross joined to V
+f66_L11	1	dbl	H		agree
+f66_L11	2	v	H		agree
+f66_L11	3	c	H		agree
+f66_L11	4	o	H		agree
+f66_L11	5	x	H		agree
+f66_L11	6	j	H		agree
+f66_L11	7	s'	M	A:s' B:s 2?	superscript 2 is a mark on s
+f66_L11	8	n	H		agree
+f66_L11	9	24	M	A:24 B:2+?	two digits close
+f66_L11	10	del	H		agree
+f66_L11	11	2+	H		agree
+f66_L11	12	tri	H		agree
+f66_L11	13	inT	H		agree
+f66_L11	14	l	H		agree
+f66_L11	15	x	H		agree
+f66_L11	16	oo+	M	A:oo' del B:oo+ d?	cross above oo; round d curling left
+f66_L11	17	del	M	A:oo' del B:oo+ d?	cross above oo; round d curling left
+f66_L11	18	8	H		agree
+f66_L11	19	h	H		agree
+f66_L13	1	j	M	A:j s' B:3? r? 2'	dotted j, s with superscript mark
+f66_L13	2	s'	M	A:j s' B:3? r? 2'	dotted j, s with superscript mark
+f66_L13	3	4	H		agree
+f66_L13	4	2	H		agree
+f66_L13	5	//	H		agree
+f66_L13	6	v	H		agree
+f66_L13	7	e	H		agree
+f66_L13	8	E	H		agree
+f66_L13	9	tri+	H		agree
+f66_L13	10	pi	H		agree
+f66_L13	11	i	H		agree
+f66_L13	12	4	H		agree
+f66_L13	13	x	H		agree
+f66_L13	14	T	H		agree
+f66_L13	15	x	M	A:x+ B:x +?	short stroke separate from x
+f66_L13	16	+	M	A:x+ B:x +?	short stroke separate from x
+f66_L13	17	r	H		agree
+f66_L13	18	o	H		agree
+f66_L13	19	q	H		agree
+f66_L13	20	L	M	A:s' B:L? 5?	looped L-like sign then s with mark
+f66_L13	21	s'	M	A:s' B:L? 5?	looped L-like sign then s with mark
+f66_L13	22	tri+	H		agree
+f66_L13	23	dbl	H		agree
+f66_L13	24	q	H		agree
+f66_L13	25	E	H		agree
+f66_L13	26	a	H		agree
+f66_L13	27	x	M	A:x? B:k?	x with hooked arm
+f66_L13	28	g	H		agree
+f66_L13	29	y	H		agree

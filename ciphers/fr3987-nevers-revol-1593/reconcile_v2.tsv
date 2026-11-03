@@ -1,0 +1,34 @@
+# NEVREVOL-PREREG 3 Nov 2026: every A/B disagreement settled from the crop image (images/v2), never from the key
+line	passA	passB	settled	why
+f66_L07	9	g	9	9-loop closed, descender straight
+f66_L07	2+	2	2+	cross on 2 visible
+f66_L07	10	1 o	10	1 and o written close: one group
+f66_L07	9	inT? q 2	inT q	a second inverted-T upright then q before the two 4s
+f66_L07	4 v+ del?	u+? e	4 v+ e	second 4, v with cross, e
+f66_L07	x+ pl?	x +	x+ pl	cross joined to x, then p with looped descender
+f66_L07	x'	X?	X	large x with tilde, read capital
+f66_L07	++?	+	++	one upright two bars
+f66_L08	s' I	s 2? t	s' t	superscript 2 is a mark on s; t-like stroke
+f66_L08	x'	x	x	mark is a dot of the line above
+f66_L08	++	n? 4+	++	single sign, one upright two bars
+f66_L08	24	2 #?	24	two digits written close: one group
+f66_L09	c?	t?	t	tau-like t
+f66_L09	inT?	#	dbl	two uprights, two crossbars
+f66_L09	x?	r?	r	r with loop
+f66_L09		l?	l	tall l between c and del
+f66_L09	pl	phi	phi	circle with stroke through
+f66_L10	6	b	6	loop closed at bottom, top open: 6
+f66_L10	9	g	9	9-loop
+f66_L10	++	+ r	+ r	cross then r before n'
+f66_L10	6	b	6	loop closed at bottom, top open: 6
+f66_L10	9	g	9	9-loop
+f66_L10	x	X	x	small x
+f66_L10	m+	m +	m+	cross joined to m
+f66_L10	V+	V +	V+	cross joined to V
+f66_L11	s'	s 2?	s'	superscript 2 is a mark on s
+f66_L11	24	2+?	24	two digits close
+f66_L11	oo' del	oo+ d?	oo+ del	cross above oo; round d curling left
+f66_L13	j s'	3? r? 2'	j s'	dotted j, s with superscript mark
+f66_L13	x+	x +?	x +	short stroke separate from x
+f66_L13	s'	L? 5?	L s'	looped L-like sign then s with mark
+f66_L13	x?	k?	x	x with hooked arm

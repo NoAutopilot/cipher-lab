@@ -17,6 +17,9 @@ Key: tools/keys/key60.tsv merged with ../fr3986-nevers-revol-1593/key_atlas_extr
                letter, syllable and word signs at the 24 Sept draft's class shares (63.6/33.9/2.5%), N=188 signs,
                0/10/20% injected error, 10 seeds; gate per passage = rank <= 10/201 vs 200 length-class value
                shuffles AND vs 200 shuffled-order nulls; PASS iff >= 8/10 at 0% and >= 6/10 at 10%. -> controls_mixed.txt
+  --local-key  use this folder's key.tsv (key no.60 mapped to sign_guide.md's ASCII tags, the tags the NEVREVOL-PREREG
+               passes wrote) instead of key60.tsv + key_atlas_extra.tsv; outputs get a _localkey suffix. The target
+               branch then also gates on the 200 length-class shuffles and 200 shuffled orders (PREREG-NEVREVOL-2).
   --check      exit 1 if the committed output differs. Deterministic.
 """
 import collections, json, os, random, statistics, sys
@@ -27,7 +30,7 @@ import decode_key as dk
 import judge_plaintext as jp
 
 KEYS = ['../../tools/keys/key60.tsv', '../fr3986-nevers-revol-1593/key_atlas_extra.tsv']
-SPEC = {'language': 'fr', 'min_word_cover': 0.5, 'control_samples': 200}
+SPEC = {'judge': {'language': 'fr', 'min_word_cover': 0.5, 'control_samples': 200}}  # judge block (NEVREVOL-PREREG fix: the flat dict had no 'judge' key)
 
 def val(key, s):
     return key[s]['value'].split('|')[0] if s in key else ''
@@ -168,6 +171,27 @@ def mixed(key, model, corpus_text, p_word=1.0, p_syl=0.83):
     out.append(f'control gate (>= 8/10 at 0% AND >= 6/10 at 10%): {"PASS -- passes may run" if verdicts[0.0] and verdicts[0.1] else "FAIL -- control below gate, passes not run"}')
     return out
 
+def target2(key, model):
+    """PREREG-NEVREVOL-2 gate: real S rank <= 10/201 vs 200 length-class value shuffles AND vs 200 shuffled orders."""
+    rows = [l.rstrip('\n').split('\t') for l in open(os.path.join(HERE, 'ciphertext_v2.tsv'))
+            if l.strip() and not l.startswith('#')][1:]
+    signs = [r[2] for r in rows]
+    txt = decode(key, signs); real = model.score(txt)
+    sa = [model.score(decode(k2, signs)) for k2 in lenclass_keys(key)]
+    sb = []
+    for s2 in range(1, 201):
+        x = signs[:]; random.Random(s2).shuffle(x); sb.append(model.score(decode(key, x)))
+    a = 1 + sum(1 for x in sa if x >= real); b = 1 + sum(1 for x in sb if x >= real)
+    unk = sorted({s for s in signs if s not in key})
+    jr = jp.judge(SPEC, txt)
+    return [f'signs {len(signs)}; unkeyed tags {len(unk)} ({sum(1 for s in signs if s not in key)} tokens): {" ".join(unk)}',
+            f'decoded letters {len(jp.fold(txt))}',
+            f'real S {real:.4f}',
+            f'length-class shuffled keys (200): mean {statistics.mean(sa):.4f} sd {statistics.pstdev(sa):.4f} max {max(sa):.4f}; real rank {a}/201',
+            f'shuffled orders (200): mean {statistics.mean(sb):.4f} p95 {jp.pct(sb, 95):.4f} max {max(sb):.4f}; real rank {b}/201',
+            f'judge on real decode: {"PASS" if jr["pass"] else "FAIL"} {json.dumps(jr["checks"], sort_keys=True)}',
+            f'gate (rank <= 10/201 against both): {"BEATS CONTROL" if a <= 10 and b <= 10 else "DOES NOT BEAT CONTROL"}']
+
 def target(key, model):
     rows = [l.rstrip('\n').split('\t') for l in open(os.path.join(HERE, 'ciphertext_v2.tsv'))
             if l.strip() and not l.startswith('#')][1:]
@@ -191,8 +215,9 @@ def target(key, model):
             f'gate (rank <= 10/201 AND real > shuffled-target p95): {"BEATS CONTROL" if beats else "DOES NOT BEAT CONTROL"}']
 
 def main():
-    key = dk.load_keys(HERE, KEYS)
-    corp = jp.LANG_CORPORA[SPEC['language']]
+    local = '--local-key' in sys.argv
+    key = dk.load_keys(HERE, ['key.tsv'] if local else KEYS)
+    corp = jp.LANG_CORPORA[SPEC['judge']['language']]
     texts = [jp.read_corpus(p) for p in corp]
     model = jp.NgramModel(texts)
     if '--positive' in sys.argv:
@@ -202,11 +227,15 @@ def main():
     elif '--mixed' in sys.argv:
         cut = int(len(texts[0]) * 0.8)
         lines, name = mixed(key, jp.NgramModel([texts[0][:cut]]), texts[0][cut:]), 'controls_mixed.txt'
+        if local: lines[0] = 'key: key.tsv (ASCII tags) -- ' + lines[0]
     elif '--diag' in sys.argv:
         cut = int(len(texts[0]) * 0.8)
         lines, name = diag(key, jp.NgramModel([texts[0][:cut]]), texts[0][cut:]), 'controls_diag.txt'
+    elif local:
+        lines, name = target2(key, model), 'controls_sup.txt'
     else:
         lines, name = target(key, model), 'controls_sup.txt'
+    if local: name = name.replace('.txt', '_localkey.txt')
     txt = '\n'.join(lines) + '\n'
     p = os.path.join(HERE, name)
     if '--check' in sys.argv:
