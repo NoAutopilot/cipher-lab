@@ -140,7 +140,7 @@ NOTES.md head still reads `open`; with a D2 reading the rule-5 word is `partial`
 | IA be-api full text | Fryer `buckskinpimperne0000frye`: "B 178", "B.178", cipher, cypher, Sherwood cypher, Sumner -- no note on B.178 pp.345-347; Sumner and Cossitt cited only from B.175 pp.185-186 |
 | web search | 2 queries (Leighton Matyas Haldimand Entick; Sherwood Cossit Sumner cypher Entick) -- no page names this cypher; Klausis Krypto Kolumne 2018 asks where Leighton's research files went |
 | editions of Sherwood's/Haldimand's 1783 correspondence | none beyond Brymner's calendar and VHS Collections II (searched by SHERWOOD-VERIFY); none found this session |
-| not reached | Leighton and Matyas full text (ASKS 174); Leighton's files; Pemberton, "Justus Sherwood, Vermont Loyalist" (thesis, unread); JSTOR rows queued by SHERWOOD-VERIFY |
+| not reached | Leighton and Matyas full text (ASKS 174) -- **read in full 3 Nov 2026**, see the SHERWOOD-VERIFY4 section at the end; Leighton's files; Pemberton, "Justus Sherwood, Vermont Loyalist" (thesis, unread); JSTOR rows queued by SHERWOOD-VERIFY |
 
 ## Verdict (SHERWOOD-VERIFY, first issue -- superseded by "Current verdict" above)
 
@@ -216,14 +216,16 @@ sound-alike for "sleigh", as NOTES.md says). The two extras also hold (they 365-
 | *Vermont History* 48:2 (1980), article on Ranna Cossit | IA full text `vermont-history_spring-1980_48_2` | "Sherwood was sometimes baffled by the Claremonters' 'blundering' use of the cypher with which they had been furnished": no reading |
 | *New England Quarterly* 3:4 (Oct 1930) | IA full text `sim_new-england-quarterly_1930-10_3_4` | "Sumner and Cossit, whose letters, mostly in numeral cipher, were often unintelligible": no reading |
 | Ranna Cossit scholarship (Claremont; Cape Breton) | Google Books "Ranna Cossit" (259 hits, first 8 read); OpenAlex | Eleven Exiles, DCB, Eastern Diocese, Granite Monthly, Royal Society of Canada 1914: nothing on the cypher in the snippets |
-| Loyalist secret service and dictionary codes | web search; Google Books; OpenAlex/S2 | Entick as a British Revolutionary War codebook is in print: Friedman's lecture notes list "Dictionaries: 1 Entick's, 2 Bailey's" with a Sept 1781 Entick (1782 ed.) message; Leighton & Matyas, "The history of book ciphers" (CRYPTO '84, Springer 1985), snippet: Haldimand ... "using a system based on page, column ..." with Entick's Dictionary -- **not read** (no open copy reached) |
+| Loyalist secret service and dictionary codes | web search; Google Books; OpenAlex/S2 | Entick as a British Revolutionary War codebook is in print: Friedman's lecture notes list "Dictionaries: 1 Entick's, 2 Bailey's" with a Sept 1781 Entick (1782 ed.) message; Leighton & Matyas, "The history of book ciphers" (CRYPTO '84, Springer 1985), snippet: Haldimand ... "using a system based on page, column ..." with Entick's Dictionary -- **not read** (no open copy reached) [read in full 3 Nov 2026 by SHERWOOD-VERIFY4, last section: the chapter does not put Entick in Haldimand's hands; Entick there is Cornwallis and Clinton 1781 on the 1777 edition] |
 | Google Books phrase searches | "Thunderclap" "One of the Thirteen" (1 unrelated hit); "Colonel Strong" Windsor sleighs 1783; "five hundred sleighs" 1783 Vermont; "Cossit" cypher (7) | no plaintext of this cypher; several calls answered "Service temporarily unavailable" and were retried once only |
 | Open indexes | OpenAlex (5 queries), Semantic Scholar (3), CrossRef (2) | nothing on this cypher; "Thomas Johnson: Gentleman, Vermonter, Patriot" (2015) not read |
 | Cryptiana, Cipherbrain/Klausis, Cipher Mysteries; DECODE; both solver repositories | web search this session; CHECK-SHERWOOD's logged site searches and cache greps (NOTES.md "Web and blog check", "Other sources") | no page on this item |
 | JSTOR | 5 rows appended to `JSTOR-QUEUE.tsv` (family (i): names + cipher; family (ii): "cypher message of Cossit", "blundering manner" Sherwood, "numeral cipher" Sumner) | queued |
 
 **Prior work on the key family.** That the Haldimand service, and British intelligence generally, used Entick's dictionary
-as a page/column codebook is published (Friedman; Leighton & Matyas 1985). So "identifying Entick" is the identification
+as a page/column codebook is published (Friedman; Leighton & Matyas 1985). [SHERWOOD-VERIFY4, 3 Nov 2026: on the full text, Leighton and Matyas
+attribute Entick to Cornwallis and Clinton (1781, 1777 ed.) and Burr (1805), not to Haldimand; "British intelligence generally" stands,
+"the Haldimand service" rests on Friedman alone, unverified -- see the last section.] So "identifying Entick" is the identification
 of an already-known design applied to this item. Until Leighton & Matyas is read, it is not known whether they name this
 cypher or this edition.
 
@@ -264,3 +266,80 @@ page's column tops checked), the six cells now match `verify/diff_settled.tsv`, 
 S 145, M 57, I 2, as A2 predicted. 33-35 reads Bestiality [M]; "Beyond" is proposed as an encoder miscount, unrepaired (I if
 accepted). Leighton and Matyas snippets (Google Books) describe a Haldimand book cipher "of the form 10-19" whose code-list
 system Leighton solved; whether they name Entick or this cypher is not visible. N-class and depth remain pending for a verifier.
+
+## Leighton and Matyas read in full (SHERWOOD-VERIFY4, 3 Nov 2026)
+
+Verifier session: a separate account-4 verifier subagent, 02:24-02:5x UTC by `date -u`. I did not solve this and do not protect the
+solvers' conclusions. The ILL scan requested in ASKS 174 arrived; I read the chapter itself, every page (Albert C. Leighton and Stephen
+M. Matyas, "The History of Book Ciphers", in G. R. Blakley and D. Chaum, eds., *Advances in Cryptology: CRYPTO '84*, LNCS 196, Springer
+1985, pp. 101-113: text pp. 101-111, footnotes 1-47 pp. 111-113). The scan is copyrighted and stays outside the repository; only the
+sentences below are quoted, with page numbers.
+
+**What it says.**
+- (a) Haldimand and the 1781-1783 secret service in Canada: one paragraph, p. 106. Haldimand "used a book cipher whose key was
+  discovered some years ago 'by an officer to whom Wm. F. Friedman ... was indebted'" (fn 28: Friedman, *Six Lectures on Cryptology*,
+  NSA 1963, pp. 41-3); "It turned out to be the title page of a British Army List" (fn 29: *A List of the General and Field Officers
+  as they rank in the Army*, London 1778). Leighton "was recently able to extend this solution by finding the system which governed the
+  associated code list": numbers "of the form 10-19" stand for whole words, the second part the initial letter, the first the word's
+  position in that letter's sublist of "forty to fifty words", worked out "by studying the numbers and associated words found in some
+  examples of Haldimand's deciphered messages" (fn 30: Public Archives Canada, Haldimand Papers MG 21, **Add MSS 21807 and 21808**,
+  microfilm A-741, "Correspondence with Sir Henry Clinton and others at New York, 1777-1783"). That is the Haldimand-Clinton cipher
+  already on file in `ciphers/pro3055-clinton-1779` and Tomokiyo's haldimand.htm, a different volume pair and correspondent pair from
+  this target. **Sherwood, Vermont, the Loyal Blockhouse, Cossit, Sumner, Mathews, Riedesel, Add MS 21837/21838, B.178 and any 1783
+  item are not named anywhere in the chapter** (checked on every page; the pdftotext dump greps clean for each name as well).
+- (b) Entick and dictionary codes of the Revolution: p. 101 describes the design in general ("The simplest, and least secure method,
+  is to take a dictionary and use the numbers of the page, column and line on which the desired word is found. This is equivalent to
+  a one-part code"); p. 106 gives the only Entick sentence: Arnold and Andre used "Bailey's Dictionary, 21st edition, 1770, using a
+  system based on page, column, and line numbers with a plus one displacement" ("Zoroaster" 928.2.2 not 927.1.1), and "Two other famous
+  British generals, Cornwallis and Clinton, in 1781, based a code on the 1777 edition of Entick's Dictionary, while Aaron Burr, in 1805,
+  used a similar method based on the 1800 edition of the same book" (fn 31: van Doren, *Secret History of the American Revolution*,
+  1969 printing, pp. 200, 204; Kahn, *The Codebreakers*, pp. 177-8, 183, 186). **Neither Entick's 1781 edition nor Entick in the
+  Haldimand service appears.** The Google Books snippet VERIFY read on 18 Oct 2026 ("Haldimand ... using a system based on page,
+  column ..." with Entick) ran two sentences together: on the full page the page/column/line system is Arnold's on Bailey, and Entick
+  belongs to Cornwallis and Clinton. p. 108 adds only Jefferson Davis's proposed dictionary code and Victorian magazine dictionary codes.
+- (c) Leighton's own Haldimand solution: as in (a), the 10-19 code list of the Haldimand-Clinton correspondence, p. 106, fn 30. It is
+  a different Haldimand-papers item (Add MSS 21807-21808), a different design (title-page letter cipher plus a code list indexed by
+  initial letter, first number under 50) and a different book (the 1778 Army List), not this cypher, not its book, not a dictionary.
+
+**Reclassification (rule 10).** The chapter prints no plaintext, no decipherment and no mapping of BL Add MS 21838 pp. 345-347, does not
+name the item, its correspondents or its book, and its only Entick statement is about another command and another edition. Nothing in
+it makes this item N0, N1 or N2. **N3 stands** (no prior plaintext or decipherment located after the logged search). Not N4 yet: the
+chapter was the named gap, but Ian Pemberton's thesis on Sherwood, Leighton's research files (whereabouts unknown, Klausis Krypto
+Kolumne 2018) and the Kahn and van Doren pages the chapter cites for Entick are still unread, and the five JSTOR rows of 18 Oct 2026
+are unanswered (a queued row never blocks on its own, but Pemberton is a principal source on Sherwood and must be read first). Two
+corrections to earlier wording follow from the full text: (1) "Entick as a Haldimand-service code book was already known" (the VERIFY2
+safe sentence, status.json `key`) over-attributes: Leighton and Matyas publish Entick as a *British-service* code book (Cornwallis and
+Clinton 1781, 1777 ed.) and Haldimand's own cipher as the Army List and code list; whether Friedman pp. 41-43 ties an Entick message
+to Haldimand is unverified here (NOTES.md line 47 cites those pages only for Knepper's Army-List find). (2) The design is prior work
+(p. 101, p. 106); the book edition for this channel is not: `key: ours` for the book identification stands, with the design `published`.
+
+**Named by Leighton and Matyas, not yet checked for this item:** Friedman, *Six Lectures on Cryptology* (NSA 1963), pp. 41-3 (fn 28:
+re-check whether any Entick message there is Haldimand's); Public Archives Canada MG 21, Add MSS 21807-21808, microfilm A-741 (fn 30:
+the Haldimand-Clinton deciphered messages Leighton used; only relevant if a 1783 Vermont item sits among them); Carl van Doren, *Secret
+History of the American Revolution* (1941; 1969 printing), pp. 200, 204 (fn 31); David Kahn, *The Codebreakers* (1967), pp. 177-8, 183,
+186 (fn 31: the Entick-Cornwallis-Clinton-Burr source). Not relevant to this item and not queued: Leighton and Matyas, "The Search for
+the Key Book to Nicholas Trist's Book Ciphers", *Cryptologia* 7:4 (1983) 297-314 (fn 37; Trist, 1847); Leighton, "Ciphers in Bavarian
+Archives" (1979, fn 35); Leighton, "Secret Communication among the Greeks and Romans", *Technology and Culture* 10:2 (1969, fn 2). None
+of the relevant four is JSTOR-hosted; two JSTOR-QUEUE.tsv rows are appended today anyway (family (i): Leighton AND Haldimand AND
+("code list" OR "book cipher"), to catch any separate Leighton publication of the 10-19 solution; family (ii), bare phrase:
+"reduction of the new State", Brymner's printed wording that VERIFY3 found on IA and no JSTOR row had carried).
+
+**Safe sentence (updated):** "The Cossit/Sumner cypher messages of February 1783 (Haldimand Papers, BL Add MS 21838 pp.345-347) are
+partially deciphered (about 74% of groups read from the code book or with a control) as a page-and-line code into Entick's *New
+Spelling Dictionary* (1781), a book we identified; that British commanders of the Revolution used Entick's dictionary as a code book
+was already in print (Leighton and Matyas 1985 p. 106, Cornwallis and Clinton in 1781 on the 1777 edition; Friedman), and the one
+Haldimand cipher described there is a different one (the 1778 Army List title page with a code list, Add MSS 21807-21808). No prior
+decipherment of these messages located (N3, searched 18 Oct 2026; Leighton and Matyas 1985 read in full 3 Nov 2026; Pemberton's thesis
+and the Kahn and van Doren pages it cites unread)."
+**Unsafe:** "deciphered", "first decipherment", "previously unread", "key identified" (outward sense), "the key was unknown", any
+N4/N5 wording, "Beyond" as read, "Leighton and Matyas name this cypher", "Entick was Haldimand's code book" (not shown by any source
+read in full).
+
+**Search log, this family:** | Leighton and Matyas, "The History of Book Ciphers" (1985) | read in full, 3 Nov 2026 (ILL scan, pp. 101-113,
+every page) | names Haldimand's Army-List cipher and code list (Add MSS 21807-21808) and Entick for Cornwallis and Clinton 1781
+(1777 ed.); this cypher, its book edition and its text absent |
+
+**Propagated:** status.json sherwood row (`key` reworded as above, `audit_refs` extended, grade unchanged N3); the queued second-opinion
+prompt `second-opinions/PROMPT-chatgpt.md` ("full chapter not read" -> read in full, with what it says); ASKS.md row 174 answer cell.
+NOTES.md's "Siblings" line 574 ("the Haldimand service's Entick and code-list letters (Leighton and Matyas 1985; Friedman)") carries
+the same over-attribution and is left for the solver side with this pointer, not edited by me. Requests: none (the scan was on disk).

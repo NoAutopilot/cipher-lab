@@ -16245,7 +16245,7 @@
    "grade": "N3",
    "plaintext_novelty": "N3",
    "mapping_novelty": "N3",
-   "key": "ours (code book identified: Entick 1781, 12 anchors vs shuffled control; design published: Entick as a Haldimand-service code book, Friedman; Leighton and Matyas 1985)",
+   "key": "ours (code book identified: Entick 1781, 12 anchors vs shuffled control; design published: Entick as a British-service code book of the Revolution, Leighton and Matyas 1985 p.106 (Cornwallis and Clinton 1781, 1777 ed.) and Friedman; the chapter's Haldimand cipher is the 1778 Army List and code list, Add MSS 21807-21808, not Entick -- SHERWOOD-VERIFY4, 3 Nov 2026)",
    "text": "unknown (plaintext not located in print; the events of No.4 are in Pell 1929; Sherwood's 1783 sketch gives the gist of No.1 and No.4 in manuscript)",
    "line": "Account 4 program C (SCOUT-KEYS K9): the Cossit/Sumner cypher reads from Entick 1781 by page and printed column line; 216 rows H 8, C 4, S 148, M 54, I 2; beats W+-1 and 20 P-shuffle controls; Sherwood's own 1783 sketch agrees on No.1 and No.4; No.2-No.3, which he could not read, now partly read.",
    "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/sherwood-cossit-1781",
@@ -16253,7 +16253,8 @@
    "completeness": "216 pair rows: H 8, C 4, S 148, M 54, I 2",
    "unresolved_spans": "57 M rows, mostly No.2-No.3 column choices; standalone figures 415, 809, 2, 11, 500 and 23-4-1; 192-88; 33-35 (Beyond?, encoder slip unrepaired)",
    "audit_refs": [
-    "AUDIT.md '## Current verdict (SHERWOOD-VERIFY2, account 4, 18 Oct 2026)'"
+    "AUDIT.md '## Current verdict (SHERWOOD-VERIFY2, account 4, 18 Oct 2026)'",
+    "AUDIT.md '## Leighton and Matyas read in full (SHERWOOD-VERIFY4, 3 Nov 2026)' (N3 stands; chapter read every page)"
    ],
    "audit_status": "one audit",
    "superseded_by": "",

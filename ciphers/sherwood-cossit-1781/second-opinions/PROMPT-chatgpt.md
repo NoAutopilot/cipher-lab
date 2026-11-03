@@ -13,8 +13,8 @@ THE ITEM
   calendars them ("Cypher messages brought in by Summer 345 to 347") without the text.
 - Key: John Entick, The New Spelling Dictionary (London, 1781), archive.org/details/11280377bsb: first number = page, second = printed
   line within a column, column not written (we choose it by context). Entick as a British code book is itself published (Friedman's
-  lectures; Leighton and Matyas, "The History of Book Ciphers", CRYPTO '84, LNCS 196, 1985), but we have not found this cypher's
-  book or text named anywhere.
+  lectures; Leighton and Matyas, "The History of Book Ciphers", CRYPTO '84, LNCS 196, 1985, p.106: Cornwallis and Clinton 1781, 1777
+  edition), but we have not found this cypher's book edition or text named anywhere.
 - Reading (excerpt, No.4): "Wednesday last 500 [sleighs?] ... aid towards Os[wego] ... alarm them they expect ... was [destined?]
   towards the reduction of the new state Colonel Strong report[ed in] council myself hearing Windsor ... 500 men only ... February".
   No.1 mentions a member of the House of New H[ampshire], Boston, an army sailing to the West, Congress, Portsmouth, and damage by
@@ -25,7 +25,9 @@ THE ITEM
   https://raw.githubusercontent.com/NoAutopilot/cipher-lab/main/ciphers/sherwood-cossit-1781/AUDIT.md
 - Already searched (18 Oct 2026): Brymner 1888; Collections of the Vermont Historical Society I-II; Records of the Governor and Council
   of Vermont III; Fryer, Buckskin Pimpernel (1981); Pell, Ethan Allen (1929); Vermont History 48:2 (1980); New England Quarterly 3:4
-  (1930); Google Books snippets of Leighton and Matyas 1985 (full chapter not read); OpenAlex, Semantic Scholar, CrossRef.
+  (1930); Leighton and Matyas 1985 read in full on 3 Nov 2026 (it names Haldimand's Army-List cipher and code list, Add MSS
+  21807-21808, and Entick for Cornwallis and Clinton 1781 on the 1777 edition; this cypher, its book and its text are absent); OpenAlex,
+  Semantic Scholar, CrossRef.
 
 HOW TO ANSWER
 - Write your answer as one markdown file at ciphers/sherwood-cossit-1781/second-opinions/SO-SHERWOOD-COSSIT.md in the repository
