@@ -547,6 +547,8 @@ account-4 row claimed. Nothing live, nothing spawned by design. Spend this check
 
 **Check-in 209 (3 Nov 2026, 14:0x UTC, account-4 parent).** Quiet. No worker live, sorters empty, no holder reply in the mailbox, purchases on hold, P14/P15 unsent. Owner-account check-ins 563-565 quiet hours, dispatchers spawned 0, no queued rows. retro_check, ledger_check, orphan_check ok. Nothing spawned by design. Next check-in ~17:0x UTC.
 
+**Check-in 210 (3 Nov 2026, 17:1x UTC, account-4 parent).** Quiet: no worker live, sorters empty, no holder reply in the mailbox, purchases on hold, P14/P15 unsent; owner-account check-ins 566-568 quiet hours; checks ok. Tooling: the claude-code-remote server again stopped offering `get_session` and `send_later` to this session mid-check-in (the 30 Oct shape; three retries), so the usage phrase is not readable (last read 14:07 UTC: seven_day allowed, reset 9 Nov 08:00) and check-in 211 is armed only as an in-session one-shot at 20:13 UTC, which a container restart would drop. If no account-4 parent line appears by ~21:00 UTC the stall rule (RETRO-2026-11-02 P1, applied) applies. Nothing spawned by design.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
