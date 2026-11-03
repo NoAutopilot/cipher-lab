@@ -1467,3 +1467,123 @@ Verdict: keep going: 3 internal gaps; cheapest next: a BnF-scoped job to re-cut 
 4. Alternatives: Kluckhohn's source manuscript differs from fr.3897 at this word; the writer used one name sign loosely.
 5. Most informative next: re-cut the f.116r l.29 crop from openapi.bnf.fr with tools/iiif_lines.py, count words against the print, grade; then Lisch V with a corrected archive.org search (wave 58, ELEC-L29).
 6. Decision: continue, one more cheap step; the target stays open.
+
+## ELEC-L29: l.29 sign re-read on a fresh native crop; Lisch V volume found but the right pages read as a negative on bad OCR (worker ELEC-L29, wave 58, account 4, 3 Nov 2026, 03:1x-03:3x UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-11-03-acct4-research-director-58.md` JOB ELEC-L29. Intake gate:
+`python3 tools/intake_gate_check.py fr5761-election-1519` -> `open (line 1) -- edition/page or
+full-text-search citation found within 6 lines`, exit 0. Reachability: `openapi.bnf.fr` root path alone
+reset the connection, but the actual IIIF image-service endpoint used by every prior job on this target
+answered 200 after one retry (the root path is not the route this job needs); proceeded.
+
+- **l.29 position (step 1).** `tools/iiif_lines.py`'s default autocorrelation on the right half of canvas
+  f142 (btv1b90096539, region 4139,0,4140,5834, one `openapi.bnf.fr` request, cached) found only 10 lines at
+  pitch 289 -- about half the real count, merging pairs of physical lines. Retuning to `--distance 130
+  --prominence 150` (no new fetch, same cached region) found 36 lines, matching a hand-count of "Treschiers
+  bons amys..." as line 1 against the folio's own "116" heading. By that count, line 29 is the short line
+  "obtenir finable responce" (ends there, nothing follows on that line); the sign and "m'advertist" that
+  pairs.tsv's row 29 context names sit on the *next* physical line, which also carries row 30's "que [barI]
+  est bon" context -- the two rows ELEC-PAIR/ELEC-27/SUP-ELECTION labelled "l.29" and "l.30" are adjacent
+  physical lines of a short, wrapped clause, not two full-width lines each carrying one slot.
+  Cut a single crop spanning both physical lines (native box 0,4320,4140,310 of the cached region, scaled to
+  2400 px wide) and **committed it**: `ciphers/fr5761-election-1519/images/f116r_l29_crop.jpg`, recorded in
+  `images/manifest.json` under `iiif_lines` (regen command and box in the entry).
+  **Two blind readers** (this worker; one fresh Sonnet subagent via the Agent tool, shown only the crop and
+  the same question, no answer given) independently described the line as: "...[loop, probably the common
+  'que' abbreviation][Ŧ-shaped sign with two cross-bars] est bon [a tick, probably plain punctuation][an
+  open loop/curl at the base rising into an upstroke crossed by a horizontal bar near the top] m'advertist...".
+  **Both readers describe the sign immediately before "m'advertist" the same way, and that description
+  matches this target's "4" shape (4-like sign with cross-bar, open diagonal angle), not SUP-ELECTION's
+  "Lbar" (loop joined by a bar to an upright).** Neither reader reported a loop-on-upright shape anywhere
+  in this crop. The earlier "Ŧ" sign (two cross-bars on an upright, before "est bon") matches "barI", which
+  pairs.tsv already has pairing with Boheme at this position (row 30).
+  **Word-count check (the brief's own grading rule): not exact.** Kluckhohn's print (p.814 l.14, image-
+  confirmed by ELEC-KLUCK) reads "...responce. Palatin m'advertist que Boheme est bon (pour) le roy
+  catholique...", with "m'advertist" coming *before* "que Boheme est bon". The manuscript line reads the
+  opposite order: "...[barI=Boheme] est bon [4-shaped sign] m'advertist...". Since the brief's own rule is
+  "Grade C only if both agree and the word count is exact; else M", this does not clear C: **grade stays M**,
+  unchanged from SUP-ELECTION's own M on the 4=Palatin witness. The new fact is logged as an observation in
+  HYPOTHESES.md (ELEC-L29, 3 Nov 2026), not a resolution of the Lbar/4 rule-4 conflict: it is a second,
+  independently-read data point that points the other way from SUP-ELECTION's relabel, on a crop SUP-ELECTION's
+  own crops (gone from the repo, per ELEC-KLUCK) could not be checked against directly. No key.tsv edit, no
+  `--try` run (the candidate value is unchanged, "4" was already in elecpair's current state before
+  SUP-ELECTION relabelled to Lbar; this job does not re-apply SUP-ELECTION's own PREREG rule on its own
+  authority since that would need the same forced-choice protocol, not two open-ended blind reads).
+- **Lisch V pp.323-347 (step 2).** `archive.org/advancedsearch.php`, two queries (2 requests): a narrow title
+  query matching the brief's wording returned 0 docs (as ELEC-KLUCK found); a broader `title:(Jahrbücher) AND
+  title:(Mecklenburgische)` query returned 21 docs including `mecklenburgisch08unkngoog`, year 1840. Its
+  metadata (1 request) confirms `volume: 5` -- **this is Lisch's Jahrgang V, 1840**, the exact volume the
+  brief names. Fetched `_djvu.txt` (937,504 bytes; first attempt came back empty/500, one retry after a pause
+  succeeded, per the good-citizen single-retry rule; 2 requests). Grepped the **whole volume** (not only
+  pp.323-347, since the OCR carries no reliable per-page markers) for every name Kluckhohn's letters use for
+  the electors and the correspondents: Palatin, Pfalz, Trier, Trèves/Treves, Mainz, Maguence/Mayence,
+  Köln/Coeln/Couloigne, Sachsen/Saxe, Brandenburg, Bonnivet, Orval, Guillart -- **zero hits for all of them**.
+  "Joachim" occurs twice, both unrelated (a 16th-century scholar at Treptow, and a 19th-century chamber
+  secretary named Joachim Plesse) -- neither is Joachim of Brandenburg. A check for "1519" found one hit, an
+  unrelated bibliographic list entry.
+  **This is not a clean negative.** The OCR on this volume is badly garbled Fraktur/Gothic type (sample from
+  the front matter: "erhielt ©imon geupolb Töof^i^* fcf)einlid) in ^^rcttin" for what is almost certainly
+  ordinary German prose) -- a name search against text this corrupted can miss real occurrences, so "zero
+  hits" means "not found by this search", not "not present". The requests budget for this step was already at
+  its 3-query ceiling plus the two djvu fetches (archive.org requests this job: 2 advancedsearch + 1 metadata
+  + 2 djvu.txt [1 failed empty, 1 succeeded] = 5, under the 8-request cap); reading the actual pp.323-347 page
+  images (not OCR, per rule 2) is the next step, not a further grep of this OCR.
+- No key.tsv change. Requests: `openapi.bnf.fr` 3 (manifest.json 404 [wrong path, not used further],
+  info.json 1 retry needed, the f142 region image 1, all cached after first fetch; well under the 6-request
+  cap); `archive.org` 5 (2 advancedsearch, 1 metadata, 2 djvu.txt), under the 8-request cap; >= 1.5 s apart,
+  descriptive UA throughout; no 403/429 seen (one transient connection reset on openapi.bnf.fr and one
+  transient 500 on archive.org, both cleared on the single allowed retry). Vision: 2 calls (this worker's own
+  read of the crop, plus one Sonnet subagent blind read via the Agent tool), matching the brief's "vision
+  calls: 2 x USD 0.30 = 0.60" line.
+
+Six questions (research director). (1) Learned: the sign immediately before "m'advertist" on a fresh,
+properly-centred native crop reads 4-shaped on two independent blind reads, not Lbar-shaped as SUP-ELECTION's
+now-lost crops found; but the manuscript's word order on this line runs opposite to Kluckhohn's print order,
+so no C-grade word-count match follows from this job. The Lisch V Jahrgang V, 1840 volume is now correctly
+located and on file, but a whole-volume name grep against its own badly-garbled OCR found nothing, which is
+inconclusive rather than a true negative. (2) Assumptions: that this worker's hand-count of physical lines
+(Treschiers = l.1) matches the convention ELEC-PAIR used when it wrote "l.29"/"l.30" into pairs.tsv; that
+Kluckhohn's print itself preserves the clerk's actual word order rather than silently smoothing it for
+19th-century readability. (3) Unverified: why the manuscript and print orders are reversed (Kluckhohn
+reordering vs. a misidentified sentence vs. this worker's own line-reading error); whether pp.323-347 of the
+Lisch volume, read as page images rather than OCR, would surface a third Lbar/4/flag slot. (4) Alternatives:
+the "4-shaped" sign both readers saw could itself be a stylistic variant close to Lbar that neither reader's
+verbal description fully disambiguates without a side-by-side reference crop (this job showed no reference
+crop of the l.11 "4" or the f.84r Lbar alongside it, unlike SUP-ELECTION's forced-choice protocol). (5) Most
+informative next: (a) a forced-choice re-run of SUP-ELECTION's own PREREG protocol using this job's new,
+committed f116r_l29_crop.jpg as the test image (now that SUP-ELECTION's own crops are gone, this is the one
+in the repository), which would let the Lbar/4 question be settled by the pre-registered rule rather than by
+open-ended description; (b) a page-image read (not OCR) of Lisch V pp.323-347, since the archive.org copy is
+on file and the OCR search here cannot be trusted as a true negative. (6) Continue: both legs are cheap and
+named below; the target stays open.
+
+**Verdict (ELEC-L29, 3 Nov 2026):** open, unchanged. New native crop of f.116r ll.29-30 committed
+(`images/f116r_l29_crop.jpg`); two independent blind reads agree the sign before "m'advertist" is 4-shaped,
+conflicting with SUP-ELECTION's Lbar relabel, but the word order mismatch against the print means grade stays
+M, not C. Lisch V Jahrgang V (1840) located (archive.org `mecklenburgisch08unkngoog`) and its djvu.txt fetched,
+but a whole-volume name grep returned no hits on OCR too garbled to trust as a negative; pp.323-347 need a
+page-image read, not another OCR search.
+
+## Remaining gaps (ELEC-L29, 3 Nov 2026)
+Read so far: 4 name signs C-graded on the pooled slots (W, dd, barI, Zheavy); print image-confirmed (ELEC-KLUCK); a fresh committed crop and two blind reads now disagree with SUP-ELECTION's Lbar relabel on the sign shape, but word order blocks a C grade (this job)
+- Lbar/4 conflict at f.116r l.29 - blocker: not-attempted; this job's two open-ended blind reads of the new crop both describe a 4-shaped sign next to "m'advertist", disagreeing with SUP-ELECTION's forced-choice Lbar relabel, but an open description is not the PREREG's own protocol; next: re-run SUP-ELECTION's own forced-choice PREREG protocol using the now-committed `images/f116r_l29_crop.jpg` (plus reference crops of the l.11 "4" and the f.84r Lbar, both of which also need re-cutting since the originals are gone), ~$1
+- third Lbar / flag / 4 slot with a printed name - blocker: not-attempted; this job located and fetched the correct Lisch V Jahrgang V 1840 volume (archive.org mecklenburgisch08unkngoog) but its OCR is too garbled for a name grep to count as a negative (zero relevant hits across the whole volume, sample OCR unreadable even for ordinary prose); next: Lisch V pp.323-347 read as page images, not OCR, ~$1.5
+- II, flag, 4 below the 5% shuffle gate - blocker: open-codes; each has 1-2 pairs and needs more both-sided slots (ELEC-2R Next 3)
+
+## Escalation (ELEC-L29, 3 Nov 2026)
+- [x] siblings: fr.3897 Joachim items 36-39, 56, 62, 64-65, 73 searched (ELEC-3897, ELEC-39, ELEC-2R)
+- [x] clear-pages: Kluckhohn page images of pp.813-814 read against the OCR, both confirmed (ELEC-KLUCK)
+- [x] known-keys: fr.5761 ff.104-110 key and f.51r-53r keys checked against the name signs (ELEC-PAIR, ELEC-VERSO)
+- [ ] print: Lisch V located and on file (this job), but its OCR is too garbled to trust a grep-based negative; page images not yet read, planned next
+- [n/a] key-rebuild: name signs are a short nomenclator read from print pairs, not a rebuildable key
+- [x] image-check: a fresh native crop of f.116r l.29-30 cut, committed and read by two independent blind readers (this job)
+- [ ] retry: more both-sided slots for II, flag and 4 (ELEC-2R Next 3); a forced-choice PREREG re-run on the new crop for the Lbar/4 conflict itself
+Verdict: keep going: 3 internal gaps; cheapest next: the forced-choice PREREG re-run on the new committed crop, ~$1
+
+### Parent notes (account-4 parent, 3 Nov 2026, after ELEC-L29)
+1. Learned: a properly line-tuned crop and two independent blind reads point to "4"-shaped, not Lbar-shaped, for the sign next to "m'advertist" -- the opposite of SUP-ELECTION's finding -- but the manuscript's word order runs opposite to the print's, so this job cannot award C either way.
+2. Assumptions: this worker's physical-line count (Treschiers = l.1) matches the convention behind pairs.tsv's existing l.29/l.30 rows; Kluckhohn's print preserves the clerk's own word order.
+3. Unverified: whether the reversed word order is an editorial reordering by Kluckhohn, a different sentence, or a line-count error in this job; whether Lisch V pp.323-347 (not yet read as images) names a third slot.
+4. Alternatives: the Lbar/4 question may need SUP-ELECTION's own forced-choice protocol re-run on this job's new crop, rather than another open-ended description, to produce a result the PREREG rule can act on.
+5. Most informative next: forced-choice PREREG re-run (new crop + re-cut l.11/Lbar reference crops) on this conflict; a page-image (not OCR) read of Lisch V pp.323-347.
+6. Decision: continue; the target stays open; both named next steps are cheap and neither needs new material.

@@ -360,6 +360,21 @@
     "prominence": 80.4
    },
    "date": "24 Sep 2026"
+  },
+  {
+   "crop": "f116r_l29_crop.jpg",
+   "source_url": "https://openapi.bnf.fr/iiif/image/v3/ark:/12148/btv1b90096539/f142/4139,4320,4140,310/max/0/default.jpg",
+   "source_file": "src_image_v3_ark_12148_btv1b90096539_f142_4139_0_4140_5834.jpg",
+   "box": [
+    0,
+    4320,
+    4140,
+    310
+   ],
+   "lines_in_crop": 2,
+   "method": "manual PIL crop from the cached openapi.bnf.fr region (tools/iiif_lines.py autodetected a 289px pitch that merges two physical lines; retuned to --distance 130 --prominence 150 for a 36-line count, matched against hand count from Treschiers=l.1; this crop spans the physical lines carrying l.29 (obtenir finable responce) and the line below it (que[barI]est bon...[sign]madvertist), scaled to 2400px wide from native 4140",
+   "note": "ELEC-L29 worker, 3 Nov 2026; committed crop for the l.29 sign-position question (CLAUDE.md rule 2, image over transcription)",
+   "date": "3 Nov 2026"
   }
  ],
  "kluckhohn_print": [

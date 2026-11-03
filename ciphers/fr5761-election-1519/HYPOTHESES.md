@@ -47,3 +47,22 @@
   Not resolved by frequency. Readings that would settle it: the print checked against a page image of Kluckhohn pp.813-814 (only the OCR was
   read), a third Lbar slot with a printed name (Lisch V pp.323-347, ELEC-316 Next 1, or another Joachim letter), or the hand being a
   scribe's variant of one sign used loosely for both electors (no evidence either way).
+
+### ELEC-L29 (3 Nov 2026, 03:2x UTC by date -u): fresh f.116r l.29 crop re-cut; sign next to "m'advertist" reads 4-shaped, not Lbar-shaped
+- Print leg already closed by image (ELEC-KLUCK, 3 Nov 2026): p.814 l.14 reads "...n'ay peu obtenir finable responce. Palatin m'advertist que
+  Boheme est bon (pour) le roy catholique..." confirmed on the page image, no note mark.
+- Fresh native-resolution crop of the two physical manuscript lines carrying this text (openapi.bnf.fr btv1b90096539 f142, region
+  4139,4320,4140,310, scaled to 2400 px; `ciphers/fr5761-election-1519/images/f116r_l29_crop.jpg`, committed this job). Two independent
+  readers (this worker, one fresh Sonnet subagent, blind to the other's answer): line 1 = "obtenir finable responce" (ends the line, nothing
+  follows); line 2 = "[loop/"que"-abbrev][Ŧ-shaped barI] est bon [tick, probably plain punctuation] [open-loop-and-upstroke-with-crossbar sign]
+  m'advertist...". Both readers independently describe the sign immediately before "m'advertist" the same way: an open loop/curl at the base
+  rising into an upstroke crossed by a horizontal bar near the top -- matching this target's "4" description (4-like sign with cross-bar, open
+  diagonal angle), NOT SUP-ELECTION's "Lbar" (loop joined by a bar to an upright). Neither reader saw a loop-on-upright shape in that position.
+  The "barI" sign (two cross-bars on an upright) sits earlier on the same line, before "est bon", matching the pairs.tsv row 30 "que/barI/est
+  bon = Boheme" pattern (the loop before it is plausibly the common "que" abbreviation, not a counted name-sign).
+- Caveat (M grade stands, not a resolution): manuscript word order on this line reads "...[barI=Boheme] est bon [4-sign] m'advertist", while
+  Kluckhohn's print reads "Palatin m'advertist que Boheme est bon" (m'advertist first). The two orders are reversed, so an exact word-count
+  match across the clause was not achieved; the position leg of the conflict is not settled to C, only a new, better-resourced observation
+  that the immediate-neighbour sign reads 4-shaped, conflicting with SUP-ELECTION's relabel from crops that are no longer in the repository.
+  No key.tsv edit; proposed as a `--try` note only (`decode_key.py <t> --try` not yet run on this candidate). Next: a worker who can also
+  re-examine whether the reversed word order reflects Kluckhohn silently reordering the clause, or a different sentence altogether.
