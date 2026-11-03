@@ -1,5 +1,7 @@
 # Proof sprint (27 Sept 2026, 20:2x UTC, the owner's decision): four campaigns, 48 hours, one number at the end
 
+> **Owner, 3 Nov 2026 02:3x UTC: all purchases on hold** ("I can't afford it, and weighing costs"). No copy order, quote acceptance or paid request is confirmed, queued or sent by any session until the owner lifts this. Open quotes waiting on this decision: Dresden HStA Loc. 9941/3 (about EUR 21.40, form needed, 28 Oct reply), Royal House Archives The Hague (EUR 25 for 4 letters, 28 Oct reply), Staatsarchiv Sigmaringen Dep. 30/1 T 3 Nr. 702 (about EUR 32, 21 Oct estimate), TNA SP 84 copies (P12, unordered). Free routes (ILL, enquiries without a fee, digitised sources) are unaffected.
+
 **The question:** can this pipeline turn a letter that has a key, an image and a known-answer sibling into a verified
 reading (N3 or better after two audits)? Four campaigns run continuously until 29 Sept 2026, 21:00 UTC. The number
 reported at the end is verified readings per dollar. That number, not the target count, is what the owner shows before
