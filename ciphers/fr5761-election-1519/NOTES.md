@@ -1369,3 +1369,93 @@ Read so far: 4 name signs C-graded on the pooled slots (W, dd, barI, Zheavy), fr
 - [x] image-check: f.116r l.29 settled on native crops by two blind forced-choice readers (this job)
 - [ ] retry: more both-sided slots for II, flag and 4 (ELEC-2R Next 3)
 Verdict: keep going: 3 internal gaps; cheapest next: Kluckhohn pp.813-814 page image, ~$0.5
+
+## ELEC-KLUCK: Kluckhohn pp.813-814 page images read; Lisch V not attempted (worker ELEC-KLUCK, wave 57, account 4, 3 Nov 2026, 02:4x-02:5x UTC by date -u)
+
+Brief: `.claude/briefs/runs/2026-11-03-acct4-research-director-57.md` JOB ELEC-KLUCK Next (1); Next (2) (Lisch V) attempted
+but not completed (request budget). Intake gate: `python3 tools/intake_gate_check.py fr5761-election-1519` -> `open (line 1)
+-- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+- **Leaf lookup.** archive.org item `bub_gb_0gFoAAAAMAAJ`'s own `_page_numbers.json` (fetched once) maps printed
+  page to leaf directly: pageNumber "813" -> leafNum 821, "814" -> leafNum 822 (no extrapolation from the
+  search-inside index needed; an earlier attempt to derive the offset from `fulltext/inside.php` Palatin matches
+  gave inconsistent offsets, 8 vs 9 vs ~16 leaves, at different points in the volume -- the plain page_numbers.json
+  file settles it directly and should be the first thing checked next time, before any search-inside cross-check).
+- **Page images.** Fetched `archive.org/download/bub_gb_0gFoAAAAMAAJ/page/n821_w1600.jpg` and `.../n822_w1600.jpg`
+  (served at native 2500 px wide regardless of the `_w1600` suffix); saved as `images/kluckhohn_p813.jpg` and
+  `images/kluckhohn_p814.jpg`, recorded in `images/manifest.json` under a new `kluckhohn_print` list.
+- **Read against the OCR (2 vision calls, this session, no subagent).** Both pages are clean and fully legible,
+  no obscured text. Line-by-line recount against the page's own printed marginal numerals (every 5th line, "5",
+  "10", "15" printed at the line's own right margin -- confirmed by a local crop of p.814 lines 11-15, since a
+  first full-page read misassigned "Palatin m'advertist" to the line bearing the "15" marker one line later):
+  - **p.813 l.10** (marginal "10" at line-end, counting from "avec Bohème..." as l.1): "tenez la main bien
+    accertes et adilligente que **Trèves** face avec Saxe, que la chose soit seure..." -- print reads "Trèves"
+    clearly, no footnote mark attached to the word or its line.
+  - **p.814 l.14** (one line before the "15" marker, counting from "roy catholique..." as l.1): "maix encorres
+    n'ay peu obtenir finable responce. **Palatin** m'advertist que Bohème est bon (pour) le roy catholique..." --
+    print reads "Palatin" clearly, no footnote mark attached to the word or its line (footnote "a)" on this page
+    attaches to "darnière" at l.6, "1)"/"2)" attach to "Hessen"/"omnibus" far below, not here).
+  - Both readings match the djvu.txt OCR exactly in substance (the OCR's "Palatiu ni'advertist" and "Treves face
+    avec Saxo" are noise on the same letters, not a different word) and match ELEC-2R's and SUP-ELECTION's prior
+    OCR-only quotes verbatim. **Print confirmed by image, not only OCR**: the printed edition itself shows no
+    sign of ambiguity or error at either word.
+- **l.29 sign-position comparison -- not done this job.** The brief's step 1 also calls for comparing this
+  against "the two l.29 signs on the committed crops (elec356/ or elec2r/ crops)", but no such crops exist in
+  the repository: `elec356/`, `elec2r/` and `supelec/` hold only their TSVs, PREREGs and Python scripts, never
+  the jpg crops themselves -- ELEC-2R's and SUP-ELECTION's own text says their images were "in the scratchpad
+  only; none in git" (NOTES.md lines ~1320, ~1336), i.e. gone with those sessions' containers. Re-fetching them
+  needs `openapi.bnf.fr` (the f.116r/f.84r canvases), which is outside this job's host scope (archive.org only,
+  12 requests); fetching from BnF would also have put the job over its request cap. So this job can confirm the
+  print is genuine and unambiguous at both words, but cannot say which of the two l.29 signs (the one now
+  relabelled Lbar, or the neighbouring 4) sits at the position the printed sentence's word-count would predict.
+  Grade stays **M** (position unresolved), unchanged from SUP-ELECTION; only the print-reliability leg of the
+  gap is now settled (image, not OCR). The Lbar = Trèves | Palatin data conflict (rule 4) stands as recorded.
+- **Lisch V, pp.323-347 -- not attempted.** In scope by host (archive.org) and by time (11 minutes elapsed,
+  well under the 60%-of-box threshold), but an `advancedsearch.php` query for "title:(Jahrbücher Verein
+  meklenburgische Geschichte) AND mediatype:texts" returned 0 docs (request count: 11 of 12 already spent on
+  step 1's leaf lookup, OCR cross-check and the two page fetches). With 1 request left in this job's cap, finding
+  the right archive.org identifier and fetching its `_djvu.txt` could not be done safely inside the remaining
+  budget; left for the next worker with a wider search query as the first step.
+- No key.tsv change (image comparison only); no `--try` line proposed this job since the sign-position question
+  was not reached. Requests: archive.org 11 (metadata.json 1, `_djvu.txt` 2 [one redirect retry], `fulltext/inside.php`
+  3, `_page_numbers.json` 1, two leaf jpgs 2, `advancedsearch.php` 1, plus 1 reachability check), >= 1.5 s apart,
+  descriptive UA; no other host. Vision: 2 calls (the two Kluckhohn page reads); the planned 2 l.29-crop calls
+  were not used (crops unavailable, see above).
+
+Six questions (research director). (1) Learned: the print at both p.813 l.10 and p.814 l.14 is genuine and
+unambiguous on image, not merely on OCR -- "Trèves" and "Palatin" are both exactly what Kluckhohn set, with no
+note mark at either; the data conflict is real print, not a misreading or an OCR artefact on Kluckhohn's side.
+(2) Assumptions: that `_page_numbers.json`'s leaf mapping is itself correct (it carried no `confidence` value for
+leaves 820-822, unlike leaf 823's recorded 94; not cross-checked against a third source this job, though the
+page images retrieved at those leaves do show "813" and "814" printed in their own running heads, which is a
+check in itself). (3) Unverified: which of the f.116r l.29 signs (now-Lbar or the neighbouring 4) the print's word
+position actually falls on -- this needs the BnF crops, out of this job's host scope. (4) Alternatives: the
+Kluckhohn edition's own source copy (fr.3897, a different manuscript from fr.5761 by the brief's own account)
+could itself carry a different name at the matching point than our cipher's clerk wrote, independent of any
+transcription question on our side -- worth checking fr.3897's own text, not only our cipher, next time this
+is picked up. (5) Most informative next: either (a) a worker with BnF (openapi.bnf.fr) in its host scope re-cuts
+the f.116r l.29 and f.84r Lbar crops and redoes the position count against this job's now-confirmed print lines,
+or (b) a worker with a wider archive.org search locates Lisch V and greps pp.323-347 for a third independent
+Lbar/flag/4 occurrence with a printed name, which does not depend on crops at all. (6) Continue: the print leg of
+the gap is closed; the position leg and the Lisch V lead are both still open and both cheap.
+
+**Verdict (ELEC-KLUCK, 3 Nov 2026):** open, unchanged. Print confirmed by image at both p.813 l.10 ("Trèves") and
+p.814 l.14 ("Palatin"), no note mark either place; grade on the l.29 sign position stays M (position comparison
+needs BnF access, out of this job's scope). Lisch V not attempted (request budget spent on step 1; next worker
+starts with a wider archive.org search).
+
+## Remaining gaps (ELEC-KLUCK, 3 Nov 2026)
+Read so far: 4 name signs C-graded on the pooled slots (W, dd, barI, Zheavy), from elec356/name_signs_pooled.tsv; print now image-confirmed at both p.813 l.10 and p.814 l.14 (this job)
+- Lbar Palatin/Trèves conflict, position leg - blocker: not-attempted; print leg closed (ELEC-KLUCK, image-confirmed), but which l.29 sign carries "Palatin" is still unsettled; next: re-cut f.116r l.29 and f.84r Lbar crops via openapi.bnf.fr (a job with BnF in its host scope, not archive.org-only) and count the word position against this job's confirmed print lines, ~$0.5
+- third Lbar / flag / 4 slot with a printed name - blocker: not-attempted; ELEC-316 Next 1; next: Lisch V pp.323-347 (archive.org, wider advancedsearch query than this job's 0-result one), ~$1.5
+- II, flag, 4 below the 5% shuffle gate - blocker: open-codes; each has 1-2 pairs and needs more both-sided slots (ELEC-2R Next 3)
+
+## Escalation (ELEC-KLUCK, 3 Nov 2026)
+- [x] siblings: fr.3897 Joachim items 36-39, 56, 62, 64-65, 73 searched (ELEC-3897, ELEC-39, ELEC-2R)
+- [x] clear-pages: Kluckhohn page images of pp.813-814 read against the OCR, both confirmed (this job)
+- [x] known-keys: fr.5761 ff.104-110 key and f.51r-53r keys checked against the name signs (ELEC-PAIR, ELEC-VERSO)
+- [ ] print: Lisch V pp.323-347 (ELEC-316 Next 1; this job's own archive.org search came back empty, next worker widens it)
+- [n/a] key-rebuild: name signs are a short nomenclator read from print pairs, not a rebuildable key
+- [ ] image-check: f.116r l.29 vs f.84r Lbar position recount against the now-confirmed print lines (needs BnF, out of this job's scope)
+- [ ] retry: more both-sided slots for II, flag and 4 (ELEC-2R Next 3)
+Verdict: keep going: 3 internal gaps; cheapest next: a BnF-scoped job to re-cut the l.29/Lbar crops and recount the print position, ~$0.5

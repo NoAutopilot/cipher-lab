@@ -361,5 +361,27 @@
    },
    "date": "24 Sep 2026"
   }
+ ],
+ "kluckhohn_print": [
+  {
+   "file": "kluckhohn_p813.jpg",
+   "item": "bub_gb_0gFoAAAAMAAJ (Kluckhohn, Deutsche Reichstagsakten unter Karl V, Bd. 1)",
+   "printed_page": "813",
+   "leaf": 821,
+   "source_url": "https://archive.org/download/bub_gb_0gFoAAAAMAAJ/page/n821_w1600.jpg",
+   "leaf_source": "bub_gb_0gFoAAAAMAAJ_page_numbers.json (pageNumber \"813\" -> leafNum 821)",
+   "bytes": 632428,
+   "fetched": "2026-11-03"
+  },
+  {
+   "file": "kluckhohn_p814.jpg",
+   "item": "bub_gb_0gFoAAAAMAAJ (Kluckhohn, Deutsche Reichstagsakten unter Karl V, Bd. 1)",
+   "printed_page": "814",
+   "leaf": 822,
+   "source_url": "https://archive.org/download/bub_gb_0gFoAAAAMAAJ/page/n822_w1600.jpg",
+   "leaf_source": "bub_gb_0gFoAAAAMAAJ_page_numbers.json (pageNumber \"814\" -> leafNum 822)",
+   "bytes": 671589,
+   "fetched": "2026-11-03"
+  }
  ]
 }
