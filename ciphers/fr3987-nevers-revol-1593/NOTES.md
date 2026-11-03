@@ -30,6 +30,62 @@ portions in cipher, undeciphered, which appear to include words such as 'tous so
 frer'."* Tomokiyo has already tentatively read a few words directly off the cipher himself (grade M/S territory,
 not a full decipherment); no full plaintext located this pass.
 
+## Web and blog check (CHECK-WEB-3987, 3 Nov 2026)
+
+Four plain web searches (WebSearch tool, standard mode, date checked with `date -u`): (1) `Nevers Revol 1593 chiffre
+déchiffré` -- no hit on this letter; closest is Desenclos and Lasry's "An early French digit cipher: deciphering a
+letter from the King of France to the Duke of Nevers (1592)" (dspace.ut.ee), which is BnF fr.3620 f.70-71, 12 Sept
+1592, Henri IV to Nevers -- a different shelfmark, sender direction and year, not this letter. (2) `"fr.3987" cipher
+OR chiffre OR cifra Nevers` -- no hit naming fr.3987; same Desenclos/Lasry paper surfaces again (it names fr.3995's
+68 cipher tables, not fr.3987). (3) `"deliuranse de son frer" Despernon` (Tomokiyo's own quoted fragment from this
+letter, henryiv2.htm) -- zero hits anywhere on the web; the phrase is not quoted or discussed by anyone else online.
+(4) `Nevers to Revol Rome 10 November 1593 BnF fr.3987 cipher` (the folder's descriptive title) -- no hit on this
+letter; the same Desenclos/Lasry paper and an unrelated Histocrypt paper on a Rome-based League ambassador's cipher
+(Sennecey, BnF Colbert 500/33) surface, neither is this item.
+
+Site searches of the three named blogs, read for a post or comment thread: **Cipherbrain**
+(`site:scienceblogs.de klausis-krypto-kolumne Nevers Revol`) -- no post naming Nevers or Revol; nearest unrelated hit
+is a WWII Loiret cryptogram post. **Cryptiana blog** (`site:cryptiana.blogspot.com Nevers Revol 3987`) -- zero hits
+on that domain at all (the query returned only unrelated Nevers-the-town results); Tomokiyo's own dedicated page
+(henryiv2.htm, on cryptiana.web.fc2.com, not the blogspot blog) is already the source cited in this folder's head and
+carries no comments section or reader response, confirmed 24 Sept 2026 and unchanged. **Cipher Mysteries**
+(`site:ciphermysteries.com Nevers Revol fr.3987`) -- no post naming this letter; nearest unrelated hits are the
+Moustier church cryptograms and a Nostradamus thread. A fifth search for a model-solve announcement
+(`"fr.3987" solves Claude OR GPT cipher`) found only unrelated AI-solves-a-different-cipher stories (Urquhart's
+Cyphral Distich, WWI ADFGVX, Enigma) -- no model-solve claim exists for this letter.
+
+**DECODE listing by shelfmark.** Grepped every on-disk DECODE catalogue snapshot (`sources/decode/*.tsv`,
+`sources/decode/*/*.tsv`: the merged keys catalogue, the non-decrypted/decrypted/partially-decrypted record lists,
+28 Sept-2 Oct 2026, covering the full site by status) case-insensitively for `revol`: zero hits anywhere. A
+word-boundary grep for `3987` hits exactly one unrelated record (DECODE id 3987, Kew TNA SP 53 box 23, English,
+undated key) -- a coincidental id match, not this shelfmark. No DECODE record for fr.3987, confirming the 24 Sept
+2026 finding.
+
+**Solver repositories, grepped (github.com search API, read-only, no clone).** `dbourdeau/cyphersolver`: searched
+`3987` and `revol`. A `targets/revol1593/NOTES.md` exists (split 14 Oct 2026 from `targets/nevers1593/`, covering key
+no.60, the Court symbol cipher) -- fetched and read in full (`raw.githubusercontent.com`, public, no auth). It
+covers seven Revol letters in key no.60: fr.3985 ff.88, 115, 176 and fr.3986 ff.146v, 157v, 198, two (f.88r partial,
+via a contributor's transcription) decoded-not-read and the rest not yet transcribed. fr.3987 f.66 appears exactly
+once, inside the same Tomokiyo inventory list already quoted in this folder's head ("fr. 3987 f. 66" among the full
+run of key-no.60 letters) -- it is not among his worked pair, not in his "Remaining gaps", and not named as a
+planned next step anywhere in the file. No duplicate-effort risk: this letter is not that repository's stated next
+target. `aaymeloglu/unsolved-ciphers`: searched `3987`, `revol`, `nevers` -- no dedicated target or catalogue entry;
+every hit is incidental (an unrelated PARES catalogue file, a lexicon word list containing the substring "revol").
+
+Gate: `python3 tools/intake_gate_check.py fr3987-nevers-revol-1593` (pasted below). It now confirms the citation and
+the web/blog check both pass, but fails on a separate, later-added requirement (CLAUDE.md, 2 Oct 2026: the gate also
+requires a "## Premise check" section) that this job's brief (CHECK-WEB-3987, hosts: web search and the three blogs
+only, no vision calls) does not cover and does not authorize extending into -- the Premise check's step (c) needs
+native-resolution image review of the physical neighbours. Flagged in ROOM.md for the parent; JOB NEVREVOL-ATLAS-2
+cannot run yet.
+
+    fr3987-nevers-revol-1593: open (line 1) passes the citation and web/blog checks but has no '## Premise check'
+    section -- run check-solved.md's adversarial Premise check (mentioned decipherments opened, other solvers'
+    working files, neighbouring leaves, recipient-side editions) before any first test
+    exit: 1
+
+No solution, plaintext, key, or model-solve claim found anywhere in this web-and-blog pass. Head stays `open`.
+
 ## Six-source search log (24 September 2026, date checked with `date -u`)
 
 1. **Tomokiyo/Cryptiana.** `henryiv2.htm` quoted above (WebFetch, two independent verbatim passes to cross-check
