@@ -543,6 +543,8 @@ account-4 row claimed. Nothing live, nothing spawned by design. Spend this check
 
 **Check-in 207 (3 Nov 2026, 08:0x UTC, account-4 parent).** NEVREVOL-ATLAS-2 (D-, 1.35x cap, 9 min) ran the atlas-label instrument once in the right order: A/B agreement 61.6%, 110 of 188 signs keyed, rank 1/201 against key shuffles but 34/201 against order shuffles (119 under sign_guide tags), judge FAIL; below its own 150-keyed-sign floor, so a non-test at this coverage. Stopped per rule 3; fr3987 stays `open`, untestable-by-this-instrument, waiting on the Revol-hand sorter (ASKS 102). Six questions in the folder's parent notes. Tonight's run of free rows is over: seven workers since 02:40 (about USD 40), one gate repaired, one data conflict logged with new material (fr5761 l.29 crop), one retrospective applied, no reading; the remaining hot rows end in the owner's eye or sorter (ASKS 102, 173, 175), physical access, or the purchase hold. No worker live; cadence back to 3 h; the next check-in reads the project mailbox for holder replies (read only). Sorters empty.
 
+**Check-in 208 (3 Nov 2026, 11:0x UTC, account-4 parent).** Quiet. No worker live. Sorters empty (ASKS 102, 173, 175 still the unblockers), purchases on hold, P14/P15 unsent. Project mailbox: nothing from a holder in the last day (two service notices only). Owner-account check-ins 560-562 quiet hours, dispatchers spawned 0, no queued rows. retro_check, ledger_check, orphan_check ok. Nothing spawned by design: the free machine-runnable queue is exhausted (check-in 207). Next check-in ~14:0x UTC.
+
 ## Goal, restated by the owner on 23 September 2026, 17:20 UTC
 
 **Maximise the number of unique solves. Nothing else is sacred.** A unique solve is a reading a separate verifier
