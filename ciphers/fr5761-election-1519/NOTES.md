@@ -1459,3 +1459,11 @@ Read so far: 4 name signs C-graded on the pooled slots (W, dd, barI, Zheavy), fr
 - [ ] image-check: f.116r l.29 vs f.84r Lbar position recount against the now-confirmed print lines (needs BnF, out of this job's scope)
 - [ ] retry: more both-sided slots for II, flag and 4 (ELEC-2R Next 3)
 Verdict: keep going: 3 internal gaps; cheapest next: a BnF-scoped job to re-cut the l.29/Lbar crops and recount the print position, ~$0.5
+
+### Parent notes (account-4 parent, 3 Nov 2026, after ELEC-KLUCK)
+1. Learned: the Lbar = Treves | Palatin conflict is Kluckhohn's print, confirmed by image at both places; it is a data fact (rule 4), not an OCR slip.
+2. Assumptions: the two f.116r l.29 signs were correctly relabelled by SUP-ELECTION's readers; the print's word order matches the manuscript's.
+3. Unverified: which l.29 sign the printed word falls on (needs the fr.3897 f.116r crop, never committed); Lisch V pp.323-347 unread.
+4. Alternatives: Kluckhohn's source manuscript differs from fr.3897 at this word; the writer used one name sign loosely.
+5. Most informative next: re-cut the f.116r l.29 crop from openapi.bnf.fr with tools/iiif_lines.py, count words against the print, grade; then Lisch V with a corrected archive.org search (wave 58, ELEC-L29).
+6. Decision: continue, one more cheap step; the target stays open.

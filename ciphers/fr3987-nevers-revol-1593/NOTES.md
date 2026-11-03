@@ -251,3 +251,11 @@ Read so far: 0 of 308 signs to a continuous text (24 Sept 2026 mechanical draft:
 - [x] image-check: canvas 121 = f.66 confirmed 24 Sept 2026; native region on disk, six lines re-cut 20 Oct 2026 (images/v2)
 - [ ] retry: sign_guide-tag passes + key.tsv done 3 Nov 2026 (gate FAIL, control passed); untried instrument: passes labelled with key60.tsv's 264ext atlas labels
 Verdict: keep going: 2 internal gaps; cheapest next: two blind 264ext-atlas-label passes on images/v2 under the PREREG-NEVREVOL-2 gate, ~$3
+
+### Parent notes (account-4 parent, 3 Nov 2026, after NEVREVOL-PREREG)
+1. Learned: with a control that genuinely has power (mixed-class, both nulls, 10/10 to 20% error), the six lines under sign_guide tags + key.tsv beat the key shuffles but not the order shuffles: the sign-to-tag mapping, not key no.60, is the live suspect.
+2. Assumptions the result rests on: the 24 Sept shape-to-tag mapping; uniform random error as a stand-in for the hand's systematic lookalike errors (9/g, 6/b); 25 unkeyed tokens droppable.
+3. Unverified: the mapping itself, which nothing has tested; pass A blind on only 4 of 6 lines.
+4. Alternatives: a consistent mis-tagging; nulls or clear words inside the runs; a key other than no.60.
+5. Most informative different experiment: two blind passes labelled with key60's own 264ext atlas (contact_sheet_264ext.png), which removes the mapping step and lets the existing key60 control row apply directly (wave 58, NEVREVOL-ATLAS); if that also fails both nulls, the target is untestable-by-this-instrument at this N (rule 3) and waits on the Revol-hand sorter (ASKS 102).
+6. Decision: pivot to the atlas-label instrument, one run, then stop if it fails.
