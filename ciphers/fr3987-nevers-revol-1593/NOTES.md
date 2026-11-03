@@ -468,3 +468,11 @@ Verdict: parked: f.66 waits on ASKS 102 (the Revol-hand sorter); the remaining l
 4. Alternatives: none new.
 5. Most informative next: PREMISE-3987 (brief 60), then NEVREVOL-ATLAS-2.
 6. Decision: continue; one more gate job, briefed with every section the gate names.
+
+### Parent notes (account-4 parent, 3 Nov 2026, after NEVREVOL-ATLAS-2)
+1. Learned: two instruments, both run in the right order with a control that has power, fail the order-shuffle null (119 then 34 of 201) while beating the key-shuffle null; atlas labels cover only 59% of f.66's signs. The transcription is the limit, not key no.60.
+2. Assumptions: the 264-leaf hand's exemplars stand for Revol's; dropped '?' tokens do not destroy the order statistic (they probably do: 41% of tokens gone joins non-adjacent plaintext).
+3. Unverified: the atlas-to-hand fit; the control subsampled to 110 keyed signs; the lookalike pairs.
+4. Alternatives: a Revol-hand sign inventory with every shape labelled (the sorter); nulls or clear words inside the runs; a different key.
+5. Most informative different experiment: the owner's sign sort of the Revol hand (ASKS 102), then one pass under settled labels. Nothing machine-runnable remains on this leaf under rule 3.
+6. Decision: park `open`, untestable-by-this-instrument at this N; no re-brief without the sorter or new material.
