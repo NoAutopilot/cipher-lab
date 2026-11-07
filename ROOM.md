@@ -20174,3 +20174,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-11-07 16:36 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 16:34 UTC 7 Nov: spawned 0 -- no queued account-4 rows
 2026-11-07 16:37 | orchestrator (owner account) | check-in 619 (fired 16:37 UTC 7 Nov, scheduled 16:35): account-4 parent still silent since 17:15 UTC 3 Nov (95.4 h); ASKS 176 updated; no queued rows on any account; dispatchers on accounts 2 and 4 firing with spawned 0. Back-off: next check-in 620 at 18:35 UTC 7 Nov. usage: seven_day allowed by get_session, resets 05:00 UTC 14 Nov
 2026-11-07 16:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 16:39 UTC 7 Nov: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: seven_day allowed by get_session, resets 05:00 UTC 14 Nov
+2026-11-07 17:08 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 17:08 UTC: spawned 0 (), queued left 0
