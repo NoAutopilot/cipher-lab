@@ -1,0 +1,22 @@
+# Related-cipher priorities after WVO 57 — 9 October 2026
+
+## Finding
+The family approach is justified, but the existing work already covers the known cipher-bearing August correspondence in the checked 1558–1567 catalogue window. Do not infer a large untouched same-key batch from WVO 57 alone.
+
+## Evidence checked
+Fresh repository reads: ciphers/august-van-saksen-1561-64/NOTES.md (Keyhunt 7 Oct and Siblings 8 Oct); ciphers/willem-van-hessen-1567/NOTES.md (through KH4-C); ciphers/wvo-hessen-1564/NOTES.md (through FAM-WVOH). Fresh browser catalogue reads: https://resources.huygens.knaw.nl/wvo/app/brief?nr=1127 and https://resources.huygens.knaw.nl/wvo/app/brief?nr=1068.
+
+## Priorities
+1. WVO 1127, Wilhelm IV of Hesse to Orange, Kassel 28 January 1567. Fresh catalogue confirms: original KHA A11/XIV B/15-43 partly in unresolved cipher; minute Marburg Bestand 3II, Nassau-Niederlande, Korr.1567 f.151r–152v gives complete text; loose undated note in original. Original has no image link in WVO. Repository minute transcription and normalised crib already exist (R10-WVHMIN, 6 Oct). Exact next step: obtain/use the original scan, align its actual enciphered passages to the draft, check revisions rather than assume identical wording, reconstruct the key and then test it on distinct surviving ciphertexts. This is an excellent key-recovery case, but the target's plain text already survives; it is not evidence of previously unavailable historical content. Existing scan request documented in repo; no message sent in this session.
+2. WVO 1068, Orange to Wilhelm IV, Brussels 13 March 1563. Fresh catalogue confirms cipher postscript, newsletter from France, original at Marburg Korr.1563 f.27r–30v, image link. The catalogue does not explicitly say deciphered; the repository's 7 Oct image inspection reports full interlinear decipherment, missed by the initial cijfer-only harvest. Next useful independent task: align ciphertext and decipherment to build an Orange-to-Hesse key; compare visual sign forms and values against sibling 1069 and the WVO1109 gloss key. Treat shared key as a test, not an assumption. This is a key source, not a new unread-history target.
+3. WVO 153, Orange–August correspondence, 1 September 1566. The current August NOTES lists two contemporary decipherments and no completed key_153 alignment in KEY-DESIGN. Next useful task: reconcile those independent decipherments against the ciphertext, build a separate dated key, and test overlap against existing keys. Useful for robust family mapping, not a claimed newly deciphered letter.
+4. Archival extension: other leaves of Dresden Locat9941/3 and Locat8510/5, and Marburg Nassau-Niederlande correspondence bundles. These are defined search areas, not confirmed unread targets. Extend by date/correspondent and inspect actual leaves for enclosures, cipher runs, glosses and clear duplicates before adding any target.
+
+## Already done / stale leads
+August NOTES Keyhunt 7 Oct explicitly reports 0 unread siblings for key/key_53/key_74/key_98 in its catalogue window (198 August letters checked by correspondent plus geheimschrift/geheim terms). Current Siblings 8 Oct still describes WVO53 p2 as unread, but later transcription/reading work has already covered both pages; do not rerun from that stale row. WVO58 has a contemporary decipherment and was sampled, so use as a control rather than count it as an unread recovery. WVO124 already has a controlled reading.
+WVO1109, Orange to Hesse 18 September 1564, was initially misdescribed as having no gloss; later image work establishes a contemporary interlinear decipherment. Its remaining work is segmentation/alignment repair, not recovering historical content from an otherwise unread leaf. FAM-WVOH 8 Oct identifies a mixed sign pile and merged cuts, with no key values changed. Avoid applying August's key simply because the correspondents belong to the same circle.
+
+## Search strategy
+Search catalogue remarks for cijfer, geheimschrift, geheim and ontcijfering; check all witnesses, not just the imaged received letter. Group by sign repertoire, direction, date and independently witnessed key values. Validate a key on a separate letter before extending it. A contemporary decipherment can unlock a key family; it also means that letter's plaintext already survives. Publication-history assessment is a separate step for each target.
+
+One new report only. No queue, status or existing file altered. No priority claim and no cipher solution produced in this task.
