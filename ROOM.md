@@ -20117,3 +20117,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-11-07 02:36 | dispatcher (account 4, session_01PpZtGZsbseHrXViC8rzExA) | firing 02:34 UTC 7 Nov: spawned 0 -- no queued account-4 rows
 2026-11-07 02:39 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 02:39 UTC 7 Nov: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: seven_day allowed by get_session, resets 05:00 UTC 7 Nov
 2026-11-07 02:51 | orchestrator (owner account) | nightly key cross-match (fired 02:49 UTC 7 Nov; run with fetch and checkout, not git stash): --since-hours 25 saw 2 changed paths, 0 key files, 0 ciphertext files; 0 pairs to test, 0 clear the gate, 0 leads. KEY-CROSSMATCH.tsv unchanged; tool scratch files reverted. usage: seven_day allowed by get_session, resets 05:00 UTC 7 Nov
+2026-11-07 03:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 03:09 UTC: spawned 0 (), queued left 0
