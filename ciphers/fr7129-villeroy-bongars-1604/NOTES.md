@@ -812,3 +812,12 @@ Cipher no.2 (f.274): no letter using it located. Full list: `keyhunt/2026-10-07-
 BnF fr.7126 f.274r-275v (Gallica btv1b8571076p, canvases 553-556; labels 274r/274v/275r/275v) carry four pages of numeral cipher in a letter opening "Mons de Bongars, Je fais response ...", with a pale interlinear decipherment between the cipher lines (read at 1800 px on f.274r). Not the f.274 key page of fr.7129. Key: fr.7129 f.274 (Tomokiyo no.2) is the candidate; the interlinear text would give known-plaintext pairs. Next step: a transcription pass on the leaves plus tools/interlinear_align.py, ~USD 6. Screen only, no decode; detail in keyhunt/2026-10-07-SAG.tsv.
 
 Correction (KH-CS3, 8 Oct 2026, for the SA-G line above): fr.7126 f.274 is in Bongars cipher **no.15**, glossed. Tomokiyo, bongars.htm: no.15 "is used in many letters in 1594-1603 (BnF fr.7126, f.61-f.308 ...)". It is not a no.2/no.3 known-plaintext source, so the "next step" above (transcription + interlinear_align for key_f274) does not apply to the no.2 key.
+
+## Re-screen note, 12 Nov 2026 (LANE BNF-FOCUS, wave 63)
+
+dbourdeau/cyphersolver `targets/bongars1597` (Brice Dudout, read in part 11 Nov 2026; Bern Burgerbibliothek letters of
+26 Jan 1597) matched its cipher to the Bongars table BnF fr.7131 f.548r-v (Cryptiana no.29, Gallica views 1106-1107) and
+committed a partial transcription of that table (`key_fr7131_f548.tsv`, MIT/CC BY 4.0, credit Dudout and Bourdeau). Not an
+item-level match for f.268: Tomokiyo attributes Villeroy's July-November 1604 letters to Bongars' Cipher no.3 (f.275,
+line 26 above). Recorded only as a second Bongars table now transcribed elsewhere, a possible cross-check for any future
+f.275/f.268 pass; status unchanged (`blocked`).
