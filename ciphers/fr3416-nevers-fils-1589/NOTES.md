@@ -874,3 +874,15 @@ btv1b525085665 canvas 104); the match is Michael Brackx's (issue #96). Their own
 no.25 sheet (fr.3995 f.51r) are transcribed. So the key route for this folder has a worked sibling and a partial sheet
 transcription to start from (key-assisted recovery, route 1 of CLAUDE.md pipeline 3); nothing is read here.
 Snapshot `sources/cyphersolver/2026-10-26-champagne1590/NOTES.md`. Credit: Michael Brackx; S. Tomokiyo; D. Bourdeau.
+
+## Second transcription of the key no.25 sheet (13 Nov 2026, LANE BNF-FOCUS re-screen, wave 64)
+
+dbourdeau/cyphersolver commit ec7592ecb08 (11 Nov 2026) adds Andrew Beling's own transcription of the fr.3995 f.51r sheet
+(`targets/champagne1590/beling/transcription/key25_noms_generaux.tsv`, `key25_noms_propres.tsv`, `key25_villes.tsv`;
+148 codes; MIT/CC BY 4.0, credit Beling, Brackx, Bourdeau), made independently of `keys/key_no25_nomenclator.tsv` here.
+A loose offline diff (102 shared codes) agrees on the entries apart from abbreviation and spelling, with two
+substantive splits, both in the barred-figure names: **50** ours "Mr Recol" (H) vs theirs "M[onsieu]r Revol"; **34** ours
+unsettled "Mr de Heure"/"Mr de Seure" (M) vs theirs "M[onsieu]r de Gesvre [?Geure]". Neither figure occurs in f.35r
+(`f35r_codewords.tsv`), so no token of this folder's reading changes; the two rows are left as they are pending an image
+check on the sheet (Revol and Gesvres were both secretaries of state in 1589, which favours the second transcription,
+an inference, grade I). Not an item match; status unchanged (`partial`).
