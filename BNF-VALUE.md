@@ -474,3 +474,13 @@ and a leaf-by-leaf check of ital. 1584-1585 finding a decipherment beside every 
 f.259 has its clear copy on f.258r (this folder's own notes said so; Bourdeau confirms complete), so the pool line 1 is now
 found-solved for all four items (f.143 in part). Aymeloglu unchanged. The account-4 parent closed the wave-49 NEAR.md flag
 (07:14 29 Oct). ASKS 163/169 unanswered.
+
+**Wave 66 (15 Nov 2026, re-screen).** Bourdeau fe5d813bb -> 6ed6a559e (246 commits). His sweep
+`research/sweep_2026-11-14_omont_bnf/` (14 Nov; 21 "avec chiffre" pieces from the Omont/Delisle printed catalogue, scored from
+the printed entry, none viewed or read) overlaps three of our folders: **fr3624-marchant-1593** (same items, fr.3624 nos.47, 51,
+67, ff.53, 57, 78, plus Lairière no.53 f.66 and fr.3614/3634/3646 siblings; ours `blocked`), **fr4137-sabran** (his no.112
+f.128 against our f.129, probably the same piece; ours `closed-negative`), and fr.2996 (his no.23 f.33, Morvillier 1546, a
+different leaf from our found-solved fr2996-morvillier f.53). Candidate lists only, no reading: no status change here. The rest
+of his 21 rows (fr.3057, 3652, 3374, 3422, 3329, 3027, 2935, 3043, 3373, 3638, 3689, 3837, 3796, 4733, 3437, 3826, 3231-3232)
+are BnF pieces with no folder of ours, a ready-made list for the ranked queue (credit D. Bourdeau). bethune (fr.3484) status
+moved (Halphen 1889 prints two letters); not ours. Aymeloglu 579c487 -> 26378c7, no BnF line. ASKS 163/169 unanswered.
