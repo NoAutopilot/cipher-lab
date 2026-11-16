@@ -20881,3 +20881,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-11-16 02:50 | orchestrator (owner account) | nightly key cross-match (fired 02:49 UTC 16 Nov, --since-hours 25): 3 changed paths, 0 key files, 0 ciphertext files; 0 pairs cleared the gate (stat >= 3.292); 0 leads. No STATUS or NEXT-STEPS change. usage: get_session at 05:39 UTC 14 Nov shows session running, no seven_day field reported
 2026-11-16 03:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 03:09 UTC: spawned 0 (), queued left 0
 2026-11-16 03:40 | dispatcher (account 1, session_01FXDfYR3CvGk7tcid1Aav1n) | fired 03:39 UTC 16 Nov: spawned 0 (--next --no-autofill printed no rows), queued left 0 for account 1. usage: get_session at 05:39 UTC 14 Nov shows session running, no seven_day field reported
+2026-11-16 04:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 04:09 UTC: spawned 0 (), queued left 0
