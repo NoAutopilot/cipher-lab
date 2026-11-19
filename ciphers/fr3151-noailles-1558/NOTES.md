@@ -725,3 +725,13 @@ values). Next step: retry the f. 60v gaps against the outer-margin gloss and che
 own notes (the marginal decipherment of the time, partly legible) stand as logged; the prior-work note of 28 Oct above becomes
 this found-solved. Snapshot (unmodified): `sources/cyphersolver/2026-10-29-noailles1558/NOTES.md` (their HEAD d18e9ed96).
 Credit: Michael Brackx; D. Bourdeau.
+
+## Re-screen note, 19 Nov 2026 (LANE BNF-FOCUS, wave 70)
+
+dbourdeau/cyphersolver ran a decrypt audit of every key-recovered target (`research/decrypt_audit/`, 16 Nov 2026, prompted
+by C. Pierrot and C. Desenclos's check of `memoire1560`). For `noailles1558` the script reported "many unmarked
+departures" (25 of 71 compared words); Bourdeau's own review in `targets/noailles1558/NOTES.md` ("Decrypt audit, 16 Nov
+2026") traces most of that figure to the script (a key row beginning `#` read as a comment, line labels read as text) and
+leaves three words where Brackx's reading departs from the key's output (ritailles, viennent, ny), now listed in the
+header of `reading.md`. Key, transcription and reading unchanged; status there still "read in part". The found-solved
+above stands; the three departures are the reading's, not ours to repair (credit M. Brackx, D. Bourdeau).
